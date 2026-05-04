@@ -1,5 +1,41 @@
 # 观澜AI 工作进度账本
 
+## 2026-05-04 网站模块与设计规范联合梳理验收
+
+调度中枢已验收 `P0-10A / WSD-20260504-27-site-module-design-review`，状态更新为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-27-site-module-design-review-closeout.md`
+
+主报告：
+- `agent-workflow/reports/site-module-design-review-2026-05-04.md`
+
+完成结论：
+- 当前前台主线 `首页 / Daily Brief / Signals / The Point / Opportunities / Trends` 继续成立。
+- 当前不建议新增模块；优先修全站高级感、模块主次、页面母版和前后台边界。
+- 首页旧雷达图、四张 poster 卡和泛营销利益表达不符合“高端商业情报产品”调性，应在 P0-10 / P0-11 中处理。
+- `scoring.html` 和 `tags.html` 虽不在主导航，但仍可直接访问；建议分别后台化 / 合并进 Opportunities 与栏目筛选能力。
+- `Signals` 应从后台仪表盘感收敛为商业信号检索台。
+- `Opportunities` 右侧 `机会排行` 应弱化榜单感，改向 `优先观察` / `验证序列`。
+- `styles.css` 已有多轮样式堆叠，P0-10 必须先输出 DESIGN v2、页面母版和组件边界，再进入 Dev。
+
+调度中枢复核：
+- closeout 与主报告均存在，UTF-8 可读。
+- 产出覆盖模块地图、PM 模块生命周期决策表、新增功能门禁记录与 WAVE 评分、Design Director 全站页面规范审计表、DESIGN v2 修改建议、Copy 风险清单和后续任务拆分建议。
+- 改动范围符合派发单，只写入 `agent-workflow/reports/`。
+- 未修改 `04-Site/`、内容源 Markdown、同步脚本、检查脚本、自动化配置或 Netlify 配置。
+- 调度中枢复跑 `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-153020.md`。
+
+下一步：
+- 执行 `P0-10 / WSD-20260504-25-site-ui-design-direction`，并要求读取本报告。
+- `P0-10 accepted` 后再执行 `P0-11`。
+- P0-6 必须覆盖 `signals.html` 隐藏编辑弹窗、`scoring.html`、`tags.html`、`apply.html` 访问边界。
+
+自动化影响：
+- `ai-the-point`：不影响。
+- `ai-2`：不影响。
+- `ai-3`：不影响。
+
 ## 2026-05-04 GitHub 与 Netlify 更新任务派发
 
 根据用户要求，调度中枢已新增 GitHub 同步与 Netlify 更新任务，用于把已验收、应进入版本管理的网站代码和项目工作流文件推送到 GitHub，并更新 Netlify 预览站点部署。

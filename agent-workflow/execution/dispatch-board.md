@@ -44,8 +44,8 @@ owner：`pm` / `workflow`
 | P0-8A | WSD-20260504-22-priority-engine-2-fast-track-implementation | accepted | pm / data / dev / workflow / qa | 合并 PM 确认、ai-2 提示词升级、Judgment Node 解析实现和 QA 验收，尽快开发上线 | `agent-workflow/execution/WSD-20260504-22-priority-engine-2-fast-track-implementation.md` | `agent-workflow/reports/WSD-20260504-22-priority-engine-2-fast-track-implementation-closeout.md` | 已验收，本地可运行；Netlify 重新部署待授权链路处理 |
 | P0-8B | WSD-20260504-23-ai-3-judgment-node-sync-gate | accepted | workflow / dev / data / qa | 升级 ai-3 统一同步闸门，加入 Priority Engine 2.0 Judgment Node 覆盖率与硬错误检查 | `agent-workflow/execution/WSD-20260504-23-ai-3-judgment-node-sync-gate.md` | `agent-workflow/reports/WSD-20260504-23-ai-3-judgment-node-sync-gate-closeout.md` | 已验收，ai-3 自动化本体与执行文档均已更新 |
 | P0-9 | WSD-20260504-24-login-register-page-optimization | accepted | ui-ue / copy / dev / qa | 登录 / 注册页面优化，按页面与文案类新闸门完成设计、文案、开发和桌面 / 移动验收 | `agent-workflow/execution/WSD-20260504-24-login-register-page-optimization.md` | `agent-workflow/reports/WSD-20260504-24-login-register-page-optimization-closeout.md` | 已在当前窗口执行并验收；截图、交互检查和 syntax Quality Gate 均通过 |
-| P0-10A | WSD-20260504-27-site-module-design-review | ready | pm / ui-ue | 升级后的 PM Agent 与 UI / UE Design Director 联合梳理网站模块、页面体系和设计规范，提出模块取舍、DESIGN v2 和后续优化建议 | `agent-workflow/execution/WSD-20260504-27-site-module-design-review.md` | `agent-workflow/reports/WSD-20260504-27-site-module-design-review-closeout.md` | 等待 `执行：P0-10A`；建议先于 P0-10 执行 |
-| P0-10 | WSD-20260504-25-site-ui-design-direction | ready | ui-ue / strategy / pm / copy | 网站 UI 优化：由 Design Director 先输出全站 Art Direction、页面母版、DESIGN v2 草案和验收基线 | `agent-workflow/execution/WSD-20260504-25-site-ui-design-direction.md` | `agent-workflow/reports/WSD-20260504-25-site-ui-design-direction-closeout.md` | 等待 `执行：P0-10` |
+| P0-10A | WSD-20260504-27-site-module-design-review | accepted | pm / ui-ue | 升级后的 PM Agent 与 UI / UE Design Director 联合梳理网站模块、页面体系和设计规范，提出模块取舍、DESIGN v2 和后续优化建议 | `agent-workflow/execution/WSD-20260504-27-site-module-design-review.md` | `agent-workflow/reports/WSD-20260504-27-site-module-design-review-closeout.md` | 已验收；P0-10 应基于本报告输出 DESIGN v2 与页面母版 |
+| P0-10 | WSD-20260504-25-site-ui-design-direction | ready | ui-ue / strategy / pm / copy | 网站 UI 优化：由 Design Director 先输出全站 Art Direction、页面母版、DESIGN v2 草案和验收基线 | `agent-workflow/execution/WSD-20260504-25-site-ui-design-direction.md` | `agent-workflow/reports/WSD-20260504-25-site-ui-design-direction-closeout.md` | 等待 `执行：P0-10`；必须读取 P0-10A 报告 |
 | P0-11 | WSD-20260504-26-homepage-desk-visual-asset | ready | ui-ue / copy / dev / qa | 首页右侧海报图 / Intelligence Desk 样张优化，小任务聚焦首页右侧主视觉资产与移动端裁切 | `agent-workflow/execution/WSD-20260504-26-homepage-desk-visual-asset.md` | `agent-workflow/reports/WSD-20260504-26-homepage-desk-visual-asset-closeout.md` | 等待 P0-10 方向确认后再执行 |
 | P1-1 | WSD-20260504-10-mobile-design-system | ready | ui-ue / qa | 移动端设计独立任务：全站移动端设计规则与关键页面验收 | `agent-workflow/execution/WSD-20260504-10-mobile-design-system.md` | `agent-workflow/reports/WSD-20260504-10-mobile-design-system-closeout.md` | 等待 `执行：P1-1` |
 | P1-2 | WSD-20260504-12-ai-assistant-product-plan | ready | strategy / pm | 观澜AI 助理产品规划：网页端或手机端与客户对话交流 | `agent-workflow/execution/WSD-20260504-12-ai-assistant-product-plan.md` | `agent-workflow/reports/WSD-20260504-12-ai-assistant-product-plan-closeout.md` | 等待 `执行：P1-2` |
@@ -57,13 +57,12 @@ owner：`pm` / `workflow`
 
 当前建议先执行：
 
-1. `执行：P0-10A`
-2. 如需立即更新远端站点，执行 `P0-4B`
-3. `P0-10A accepted` 后执行或更新 `P0-10`
-4. P0-10 accepted 后再执行 `P0-11`
-5. `执行：P0-6`
-6. `执行：P0-5`
-7. `执行：P0-4`
+1. `执行：P0-10`
+2. P0-10 accepted 后再执行 `P0-11`
+3. 如需立即更新远端站点，执行 `P0-4B`
+4. `执行：P0-6`
+5. `执行：P0-5`
+6. `执行：P0-4`
 
 如果需要新增任务，用：
 

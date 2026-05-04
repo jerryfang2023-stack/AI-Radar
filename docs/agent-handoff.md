@@ -22,6 +22,32 @@ tagline: 观AI之澜，识商业之势
 
 补充治理：`SYS-5` / `WSD-pm-module-governance` 已 accepted。后续任何产品功能类任务必须先由 PM Agent 输出新增功能门禁记录、WAVE 评分和模块决策表；未通过门禁的功能不得直接进入 Dev。
 
+## 0A. 2026-05-04 网站模块与设计规范联合梳理
+
+最新状态：`P0-10A / WSD-20260504-27-site-module-design-review` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-27-site-module-design-review-closeout.md`
+
+主报告：
+- `agent-workflow/reports/site-module-design-review-2026-05-04.md`
+
+关键结论：
+- 当前前台主线 `首页 / Daily Brief / Signals / The Point / Opportunities / Trends` 继续成立。
+- 当前不建议新增模块；优先修全站高级感、模块主次、页面母版和前后台边界。
+- 首页旧雷达图、四张 poster 卡和泛营销利益表达不符合“高端商业情报产品”调性，应在 P0-10 / P0-11 中处理。
+- `scoring.html` 和 `tags.html` 虽不在主导航，但仍可直接访问；建议分别后台化 / 合并进 Opportunities 与栏目筛选能力。
+- `Signals` 应从后台仪表盘感收敛为商业信号检索台。
+- `Opportunities` 右侧 `机会排行` 应弱化榜单感，改向 `优先观察` / `验证序列`。
+- `styles.css` 已有多轮样式堆叠，P0-10 必须先输出 DESIGN v2、页面母版和组件边界，再进入 Dev。
+
+后续任务：
+- `P0-10 / WSD-20260504-25-site-ui-design-direction` 执行时必须读取 P0-10A 报告。
+- `P0-10 accepted` 后再执行 `P0-11`。
+- `P0-6` 必须覆盖 `signals.html` 隐藏编辑弹窗、`scoring.html`、`tags.html`、`apply.html` 访问边界。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
 ## 1. 当前项目状态
 
 观澜AI｜WaveSight AI 当前定位为面向商业决策者的 AI 机会判断系统，不是 AI 新闻站、工具站或内部资料库。核心产品逻辑是：从每日 AI 热点中筛出商业信号，再通过评分、趋势和机会卡形成可追踪的判断依据。
