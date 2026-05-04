@@ -914,3 +914,45 @@ Agent 安排：
 - 如果新窗口仍提示本地环境不可用，先确认窗口是否打开在 `01-WaveSight` 根目录，并确认是否能读取 `.git`。
 
 自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 GitHub 仓库基线同步交接
+
+最新状态：观澜AI项目基线已同步到 GitHub 仓库的部署准备分支。
+
+GitHub 仓库：
+- `jerryfang2023-stack/AI-Radar`
+- `https://github.com/jerryfang2023-stack/AI-Radar`
+
+已完成：
+- 本地 `01-WaveSight` 仓库已绑定远端 `origin`。
+- 远端 `main` 已有测试提交，因此没有强推覆盖。
+- 当前完整项目基线已推送到：
+
+```text
+wavesight-baseline-20260504
+```
+
+Pull Request 地址：
+
+```text
+https://github.com/jerryfang2023-stack/AI-Radar/pull/new/wavesight-baseline-20260504
+```
+
+同步范围：
+- `04-Site/` 网站代码、页面、样式、脚本、静态资产和当前数据。
+- `agent-workflow/` 长期 Agent 工作流、治理、派发单、PRD、产品规范、脚本和报告。
+- `docs/agent-handoff.md`。
+- `01-Signals/`、`02-Scoring/`、`03-Trends/`、`05-point/`、`07-Opportunities/`。
+- `AGENTS.md`、`.gitignore`、`.gitattributes`、`提示词/`、`测试期文档/`。
+
+已排除：
+- 依赖、缓存、备份、大型截图验收文件和本地环境变量。
+
+报告：
+- `agent-workflow/reports/github-baseline-sync-2026-05-04.md`
+
+接手注意：
+- 后续云端部署可以先从 `wavesight-baseline-20260504` 分支测试。
+- 是否把该分支合并为正式 `main`，需要用户确认是否保留远端已有测试文件。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。

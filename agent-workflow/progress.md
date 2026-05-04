@@ -1350,3 +1350,31 @@ Agent 安排：
 - `agent-workflow/reports/local-environment-worktree-fix-2026-05-04.md`
 
 自动化影响：本次只修复本地版本管理与派生工作树能力，不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 GitHub 仓库基线同步
+
+用户已安装 GitHub 插件，并创建 `radar` 相关仓库。调度中枢确认可访问 GitHub 仓库：
+
+- `jerryfang2023-stack/AI-Radar`
+- `https://github.com/jerryfang2023-stack/AI-Radar`
+
+已完成：
+- 本地仓库已绑定远端 `origin`。
+- 远端 `main` 已有测试提交，因此未强推覆盖。
+- 已将当前观澜AI完整项目基线推送到分支：`wavesight-baseline-20260504`。
+- GitHub PR 地址：`https://github.com/jerryfang2023-stack/AI-Radar/pull/new/wavesight-baseline-20260504`
+
+同步范围：
+- `04-Site/` 网站代码、页面、样式、脚本、静态资产和当前数据文件。
+- `agent-workflow/` 长期 Agent 工作流、治理、派发单、PRD、产品规范、脚本和报告。
+- `docs/agent-handoff.md`。
+- 当前内容源目录：`01-Signals/`、`02-Scoring/`、`03-Trends/`、`05-point/`、`07-Opportunities/`。
+- `AGENTS.md`、`.gitignore`、`.gitattributes`、`提示词/`、`测试期文档/`。
+
+已排除：
+- 依赖、缓存、备份、大型截图验收文件和本地环境变量。
+
+报告：
+- `agent-workflow/reports/github-baseline-sync-2026-05-04.md`
+
+自动化影响：本次只同步版本管理仓库和必要文件，不影响 `ai-the-point`、`ai-2`、`ai-3`。
