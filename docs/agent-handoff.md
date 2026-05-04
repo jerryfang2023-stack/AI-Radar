@@ -925,17 +925,18 @@ GitHub 仓库：
 
 已完成：
 - 本地 `01-WaveSight` 仓库已绑定远端 `origin`。
-- 远端 `main` 已有测试提交，因此没有强推覆盖。
-- 当前完整项目基线已推送到：
+- 起初远端 `main` 已有测试提交，因此先把当前完整项目基线推送到：
 
 ```text
 wavesight-baseline-20260504
 ```
 
-Pull Request 地址：
+- 用户确认远端测试 / 命名规则文件没有价值，可以删除。
+- 已使用 `--force-with-lease` 将观澜AI正式基线推送为远端 `main`。
+- 当前远端 `main` 提交：
 
 ```text
-https://github.com/jerryfang2023-stack/AI-Radar/pull/new/wavesight-baseline-20260504
+504a155 chore: document GitHub baseline sync
 ```
 
 同步范围：
@@ -952,7 +953,7 @@ https://github.com/jerryfang2023-stack/AI-Radar/pull/new/wavesight-baseline-2026
 - `agent-workflow/reports/github-baseline-sync-2026-05-04.md`
 
 接手注意：
-- 后续云端部署可以先从 `wavesight-baseline-20260504` 分支测试。
-- 是否把该分支合并为正式 `main`，需要用户确认是否保留远端已有测试文件。
+- 后续云端部署可以直接从 `main` 测试。
+- `wavesight-baseline-20260504` 分支仍保留，如无需要可后续删除，避免混淆。
 
 自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。

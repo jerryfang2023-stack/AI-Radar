@@ -2,7 +2,7 @@
 title: GitHub Baseline Sync
 date: 2026-05-04
 type: deployment-prep
-status: synced
+status: main-synced
 owner: dev / workflow
 encoding: UTF-8
 project: 观澜AI｜WaveSight AI
@@ -50,6 +50,18 @@ GitHub 提示可从该分支创建 Pull Request：
 https://github.com/jerryfang2023-stack/AI-Radar/pull/new/wavesight-baseline-20260504
 ```
 
+追加处理：
+
+- 用户确认远端 `main` 中原有测试 / 命名规则文件没有价值，可以删除。
+- 已使用 `--force-with-lease` 将当前观澜AI正式基线推送为远端 `main`。
+- 远端 `main` 当前提交：
+
+```text
+504a155 chore: document GitHub baseline sync
+```
+
+- 原远端测试文件已从 `main` 删除。
+
 ## 3. 已同步范围
 
 已同步到 GitHub 分支的核心范围：
@@ -87,7 +99,13 @@ https://github.com/jerryfang2023-stack/AI-Radar/pull/new/wavesight-baseline-2026
 baf3a28 chore: document local worktree environment fix
 ```
 
-远端同步分支：
+远端正式分支：
+
+```text
+origin/main = 504a155
+```
+
+远端保留的基线分支：
 
 ```text
 origin/wavesight-baseline-20260504
@@ -97,11 +115,10 @@ origin/wavesight-baseline-20260504
 
 建议下一步由 Dev / PM 确认：
 
-1. 是否将 `wavesight-baseline-20260504` 合并为 GitHub 默认部署分支。
-2. 是否保留远端 `main` 中现有测试文件，还是清理后以观澜AI基线作为正式 `main`。
-3. 云端部署选型：静态托管、Vercel / Netlify、或自有服务器。
-4. 是否需要把 `04-Site/` 设为部署根目录。
-5. 是否需要建立 GitHub Actions：语法检查、同步检查、构建检查、部署前备份。
+1. 云端部署选型：静态托管、Vercel / Netlify、或自有服务器。
+2. 是否需要把 `04-Site/` 设为部署根目录。
+3. 是否需要建立 GitHub Actions：语法检查、同步检查、构建检查、部署前备份。
+4. 是否删除临时保留的 `wavesight-baseline-20260504` 分支，避免后续混淆。
 
 ## 7. 自动化影响
 

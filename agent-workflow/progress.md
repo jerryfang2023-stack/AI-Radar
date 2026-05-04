@@ -1360,9 +1360,10 @@ Agent 安排：
 
 已完成：
 - 本地仓库已绑定远端 `origin`。
-- 远端 `main` 已有测试提交，因此未强推覆盖。
-- 已将当前观澜AI完整项目基线推送到分支：`wavesight-baseline-20260504`。
-- GitHub PR 地址：`https://github.com/jerryfang2023-stack/AI-Radar/pull/new/wavesight-baseline-20260504`
+- 起初发现远端 `main` 已有测试提交，因此先将当前观澜AI完整项目基线推送到分支：`wavesight-baseline-20260504`。
+- 用户确认远端测试 / 命名规则文件没有价值，可以删除。
+- 已使用 `--force-with-lease` 将观澜AI正式基线推送为远端 `main`。
+- 当前远端 `main` 提交：`504a155 chore: document GitHub baseline sync`。
 
 同步范围：
 - `04-Site/` 网站代码、页面、样式、脚本、静态资产和当前数据文件。
