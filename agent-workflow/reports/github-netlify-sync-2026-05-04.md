@@ -2,7 +2,7 @@
 title: GitHub Netlify Sync
 date: 2026-05-04
 type: deployment-sync-report
-status: blocked-partial
+status: synced
 task_id: WSD-20260504-28-github-netlify-sync
 owner: dev / workflow
 encoding: UTF-8
@@ -13,12 +13,12 @@ project: 观澜AI｜WaveSight AI
 
 ## 1. 任务结论
 
-本轮已完成本地 Git 审计、质量检查、本地提交和 Netlify 预览部署尝试，但未能完成调度中枢要求的完整验收闭环。
+本轮已完成本地 Git 审计、质量检查、本地提交、GitHub `main` 推送和 Netlify 自动部署复核。
 
-结论：`blocked / partial`。
+结论：`synced / recommend accepted`。
 
-- GitHub：本地已生成待推送提交，但当前环境无法连接 `github.com:443`，多次 `git push` / `git ls-remote` 失败，GitHub 插件也不能直接推送本地 commit 对象。
-- Netlify：Netlify connector 能生成 `ready` deploy，但远端不可变链接与默认链接仍返回旧数据文件，未包含本地最新 `judgmentNodes` 字段，因此不能报告“最新可部署网站已成功更新到 Netlify”。
+- GitHub：已推送到 `jerryfang2023-stack/AI-Radar` 的 `main` 分支。
+- Netlify：GitHub 自动部署已完成，默认链接与不可变部署链接均可访问，并确认远端数据包含本地最新 `judgmentNodes` 与 `priorityEngine`。
 - 不做正式 production launch，不配置正式域名。
 
 ## 2. Git 审计
@@ -35,20 +35,20 @@ main
 origin = https://github.com/jerryfang2023-stack/AI-Radar.git
 ```
 
-本地已准备提交：
+本地与远端已同步到：
+
+```text
+413d02b docs: record GitHub Netlify sync outcome
+```
+
+本轮核心提交：
 
 ```text
 71a105a65db4af1f8aa782f0613b887c52c10c54 Merge remote-tracking branch 'origin/main'
 cfe3ac74f3362abd1df79f25ff8a7433af5ed3d5 chore: sync accepted WaveSight updates
 ```
 
-远端 `origin/main` 当前仍停留在：
-
-```text
-81f33165b418b13db28abbc9a9412c4be8cbaf53 docs: record Netlify auto deploy setup
-```
-
-说明：本地 `71a105a` 已合并远端 `origin/main` 的 Netlify 配置提交，并包含本轮整理后的已验收项目更新；但该提交尚未推送成功。
+说明：执行中一度遇到 GitHub 网络阻塞，后续重试成功，`origin/main` 已快进到 `413d02b`。
 
 ## 3. 本地提交范围
 
@@ -67,7 +67,7 @@ cfe3ac74f3362abd1df79f25ff8a7433af5ed3d5 chore: sync accepted WaveSight updates
 
 补充：执行过程中另有 `P0-10A / WSD-20260504-27-site-module-design-review` 被调度中枢验收为 accepted；相关文档变更已出现在本地工作区，但未进入 `cfe3ac7`。
 
-## 4. GitHub 同步尝试
+## 4. GitHub 同步结果
 
 已尝试：
 
@@ -77,7 +77,7 @@ git -c http.version=HTTP/1.1 -c http.postBuffer=524288000 push origin main
 git ls-remote --heads origin main
 ```
 
-结果：
+早期失败信息：
 
 ```text
 Recv failure: Connection was reset
@@ -104,6 +104,12 @@ GitHub API error 422: Object does not exist
 
 解释：GitHub 插件可以操作远端已有 Git 对象，但不能把本地 Git commit 对象直接上传成完整仓库提交。若使用插件重建提交，需要通过 GitHub tree / contents API 逐文件上传 160+ 个文件，其中包含两个约 1.6MB 的数据文件；不适合本轮稳定执行。
 
+最终结果：网络恢复后，`git push origin main` 成功。
+
+```text
+81f3316..413d02b main -> main
+```
+
 ## 5. Netlify 部署尝试
 
 Netlify 项目：
@@ -115,13 +121,14 @@ default_url: https://wavesight-ai-preview.netlify.app
 dashboard: https://app.netlify.com/projects/wavesight-ai-preview
 ```
 
-本轮部署尝试：
+本轮部署记录：
 
 | Deploy ID | 方式 | 状态 | 结论 |
 |---|---|---|---|
 | `69f8bbb1f6a4416c4b4482cd` | Netlify connector，从 `04-Site/` 执行 | ready | 远端仍返回旧数据 |
 | `69f8bd6996f7b27a78c87094` | Netlify connector，临时目录复制错误 | ready | 临时目录未包含站点文件，远端仍旧 |
 | `69f8be01605f3142c71eaf1d` | Netlify connector，临时目录确认包含当前 `04-Site/` | ready | 远端仍返回旧数据 |
+| `69f8beccecce0b0009888a05` | GitHub `main` 自动部署 | ready | 已确认远端包含最新数据 |
 
 Netlify CLI 尝试：
 
@@ -129,7 +136,7 @@ Netlify CLI 尝试：
 npx netlify deploy --dir=04-Site --prod --site 7ab8a5d2-477b-439d-ad4b-57f449ebad9e
 ```
 
-结果：被 Windows npm 临时包清理锁打断，未形成可用部署输出。
+结果：被 Windows npm 临时包清理锁打断，未形成可用部署输出。最终采用 GitHub push 触发 Netlify 自动部署完成更新。
 
 ## 6. 远端访问检查
 
@@ -151,14 +158,15 @@ npx netlify deploy --dir=04-Site --prod --site 7ab8a5d2-477b-439d-ad4b-57f449eba
 数据版本复核：
 
 ```text
-remote generatedAt = 2026-05-04T09:13:45.154Z
-remote judgmentNodes = missing
+remote generatedAt = 2026-05-04T15:21:59.991Z
+remote judgmentNodes = present
+remote priorityEngine = present
 remote latest Sage signal = present
 local generatedAt = 2026-05-04T15:21:59.991Z
 local judgmentNodes = 22
 ```
 
-结论：远端站点可访问，但不是本地最新完整数据版本；Priority Engine 2.0 的顶层 `judgmentNodes` 未出现在远端数据中。
+结论：远端站点可访问，且已是本地最新完整数据版本。
 
 ## 7. 本地质量检查
 
@@ -191,37 +199,31 @@ Quality Gates 报告：
 agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-152150.md
 ```
 
-## 8. 未完成项与阻塞
+## 8. 未完成项与风险
 
 未完成：
 
-- GitHub `main` 未推送成功。
-- Netlify 未确认发布本地最新完整数据版本。
+- 本轮没有做 production launch。
+- 本轮没有配置正式域名。
+- 本轮没有做完整浏览器截图矩阵或四种身份权限验收。
 
-阻塞原因：
+剩余风险：
 
-- 当前环境到 `github.com:443` 连接失败。
-- Netlify connector 的 ready deploy 未反映本地最新数据文件；CLI 目录部署被 npm 临时目录清理锁打断。
+- Netlify Preview 可访问不等于正式上线完成。
+- `/signals.html` 历史隐藏编辑弹窗源码风险仍应由 `P0-6` 覆盖。
+- 完整发布仍需 `P0-4` release checklist、权限边界、备份和回滚方案。
 
-建议下一步：
-
-1. 在 GitHub 网络恢复后执行：
-
-```text
-git push origin main
-```
-
-2. 推送成功后等待 GitHub -> Netlify 自动部署。
-3. 复查：
+如需复查：
 
 ```text
 https://wavesight-ai-preview.netlify.app/data/radar-data.js
+https://69f8beccecce0b0009888a05--wavesight-ai-preview.netlify.app/data/radar-data.js
 ```
 
-必须确认：
+已确认：
 
 ```text
-generatedAt = 2026-05-04T15:21:59.991Z 或更新
+generatedAt = 2026-05-04T15:21:59.991Z
 judgmentNodes 存在
 priorityEngine.judgmentNodeCount = 22
 ```
