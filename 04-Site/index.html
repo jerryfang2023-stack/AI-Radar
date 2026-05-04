@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>观澜AI｜WaveSight AI</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  </head>
+  <body data-page="home">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="观澜AI WaveSight AI">
+        <img class="brand-logo" src="./assets/logo.svg" alt="" />
+        <span>
+          <strong>观澜AI｜WaveSight AI</strong>
+          <small>观AI之澜，识商业之势</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html" class="nav-link active">首页</a>
+        <a href="./daily.html" class="nav-link">Daily Brief</a>
+        <a href="./signals.html" class="nav-link">Signals</a>
+        <a href="./the-point.html" class="nav-link">The Point</a>
+        <a href="./opportunities.html" class="nav-link">Opportunities</a>
+        <a href="./trends.html" class="nav-link">Trends</a>
+      </nav>
+      <div class="toolbar"></div>
+    </header>
+
+    <main>
+      <section class="hero public-hero" aria-labelledby="heroTitle">
+        <div>
+          <h1 id="heroTitle">从 AI 浪潮里，看见商业胜负手</h1>
+          <div class="hero-actions">
+            <a class="primary-btn as-link" href="./register.html">注册</a>
+            <a class="ghost-btn as-link" href="#overview">查看今日简报</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="雷达概览">
+          <img class="hero-visual" src="./assets/hero-radar.svg" alt="观澜AI将信号、评分、趋势和机会卡连接成商业决策流程" />
+        </div>
+      </section>
+
+      <section class="audience-posters" aria-label="核心客户利益点">
+        <article class="poster-card poster-dark">
+          <span>看见窗口</span>
+          <h2>早半步看见机会</h2>
+          <p>在媒体共识和资本共识形成前，捕捉已经出现客户、收入或产业落地的 AI 变化。</p>
+        </article>
+        <article class="poster-card">
+          <span>形成判断</span>
+          <h2>把信息变成议程</h2>
+          <p>把碎片新闻压缩成老板能开会讨论的判断、问题清单和优先级。</p>
+        </article>
+        <article class="poster-card poster-accent">
+          <span>连接资源</span>
+          <h2>让资源找到落点</h2>
+          <p>识别谁有需求、谁有产品、谁有渠道、谁值得被连接。</p>
+        </article>
+        <article class="poster-card">
+          <span>穿透概念</span>
+          <h2>少追概念，多看验证</h2>
+          <p>不按声量追热点，重点看收入、客户、融资、复购和真实部署。</p>
+        </article>
+      </section>
+
+      <section id="overview" class="section decision-section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Decision Brief</p>
+            <h2 id="decisionTitle">今日关键信号</h2>
+          </div>
+        </div>
+        <div class="decision-board">
+          <aside class="method-rail" aria-label="判断路径">
+            <p class="eyebrow">判断路径</p>
+            <a href="./signals.html"><span>01</span><strong>看变化</strong><small>发生了什么，是否有真实采用。</small></a>
+            <a href="./the-point.html"><span>02</span><strong>看观点</strong><small>一线 AI 创造者正在判断什么，分歧在哪里。</small></a>
+            <a href="./opportunities.html"><span>03</span><strong>看来源</strong><small>融资、客户、收入和落地是否互相支撑。</small></a>
+            <a href="./opportunities.html"><span>04</span><strong>看边界</strong><small>哪些关键信息还没出现，仍需保留观察。</small></a>
+          </aside>
+          <div id="homeHighlights" class="home-highlights"></div>
+        </div>
+      </section>
+
+      <section class="section public-cta">
+        <div>
+          <p class="eyebrow">Membership</p>
+          <h2>把别人还在讨论的热点，变成你可以提前验证的机会</h2>
+          <p>注册后查看 Daily Brief、Signals、Trends 与 Opportunities 的完整信号脉络。</p>
+        </div>
+        <a class="primary-btn as-link" href="./register.html">注册</a>
+      </section>
+    </main>
+
+    <script src="./data/radar-data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理后台｜观澜AI｜WaveSight AI</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  </head>
+  <body data-page="admin">
+    <header class="topbar">
+      <a class="brand" href="./index.html"><img class="brand-logo" src="./assets/logo.svg" alt="" /><span><strong>观澜AI｜WaveSight AI</strong><small>观AI之澜，识商业之势</small></span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html" class="nav-link">首页</a>
+        <a href="./daily.html" class="nav-link">Daily Brief</a>
+        <a href="./signals.html" class="nav-link">Signals</a>
+        <a href="./scoring.html" class="nav-link">Priorities</a>
+        <a href="./trends.html" class="nav-link">Trends</a>
+        <a href="./opportunities.html" class="nav-link">Opportunities</a>
+        <a href="./tags.html" class="nav-link">Tags</a>
+      </nav>
+      <div class="toolbar"></div>
+    </header>
+    <main>
+      <section class="admin-hero">
+        <div>
+          <p class="eyebrow">Admin Console</p>
+          <h1>本地控制台</h1>
+          <p>同步每日情报、管理注册用户、调整阅读与订阅权限。所有操作集中在这里完成。</p>
+        </div>
+        <div class="admin-hero-card">
+          <span>Today</span>
+          <strong>Ready for update</strong>
+          <small>新增 Markdown 后，先同步，再查看 Daily 和 Tags。</small>
+        </div>
+      </section>
+      <section class="admin-console-grid">
+        <article class="admin-sync-panel">
+          <div>
+            <p class="eyebrow">Local Sync</p>
+            <h2>同步最新数据</h2>
+            <p>解析新增 Markdown，并刷新 Signals、Priorities、Trends、Opportunities、Daily 与 Tags。</p>
+            <div id="syncStatus" class="sync-status">等待同步。</div>
+          </div>
+          <button id="runSyncBtn" class="primary-btn">一键同步</button>
+        </article>
+        <article class="admin-access-panel">
+          <p class="eyebrow">Access</p>
+          <h2>本机访问权限</h2>
+          <p>用于管理员预览所有受保护栏目。需要在页面上直接修改内容时，请从下方入口进入，普通访问路径不显示编辑工具。</p>
+          <div class="admin-action-stack">
+            <button id="grantLocalAccessBtn" class="ghost-btn">开通本浏览器</button>
+            <button id="syncHelpBtn" class="ghost-btn">查看同步说明</button>
+            <button id="resetBtn" class="danger-btn">清除本机编辑缓存</button>
+          </div>
+          <div class="admin-visual-links" aria-label="可视化编辑入口">
+            <a class="ghost-btn as-link" href="./signals.html?admin=1">编辑 Signals</a>
+            <a class="ghost-btn as-link" href="./scoring.html?admin=1">编辑 Priorities</a>
+            <a class="ghost-btn as-link" href="./trends.html?admin=1">编辑 Trends</a>
+            <a class="ghost-btn as-link" href="./opportunities.html?admin=1">编辑 Opportunities</a>
+          </div>
+        </article>
+      </section>
+      <section class="section admin-content-panel">
+        <div class="section-head">
+          <div><p class="eyebrow">Content Manager</p><h2>栏目与卡片编辑</h2></div>
+          <p class="section-note">通过本地管理服务打开时，修改会写入网站数据文件；直接打开文件时仅保存到当前浏览器。</p>
+        </div>
+        <div class="admin-editor-grid">
+          <aside class="admin-editor-sidebar">
+            <label class="field"><span>栏目</span><select id="adminContentType">
+              <option value="signals">Signals</option>
+              <option value="scoring">Priorities</option>
+              <option value="trends">Trends</option>
+              <option value="opportunities">Opportunities</option>
+            </select></label>
+            <label class="field"><span>卡片 / 条目</span><select id="adminContentItem"></select></label>
+            <div class="admin-action-stack">
+              <button id="adminSaveContentBtn" class="primary-btn">保存修改</button>
+              <button id="adminDuplicateContentBtn" class="ghost-btn">复制为新条目</button>
+              <button id="adminDeleteContentBtn" class="danger-btn">删除条目</button>
+            </div>
+          </aside>
+          <article class="admin-editor-main">
+            <label class="field"><span>JSON 内容</span><textarea id="adminContentJson" rows="22"></textarea></label>
+            <div id="adminContentStatus" class="sync-status">选择条目后可编辑。</div>
+          </article>
+        </div>
+      </section>
+      <section class="section admin-membership-panel">
+        <div class="section-head">
+          <div><p class="eyebrow">Members</p><h2>用户与阅读权限</h2></div>
+          <div class="trial-setting">
+            <label class="field"><span>默认注册有效天数</span><input id="trialDaysInput" type="number" min="1" value="7" /></label>
+            <button id="saveTrialSettingsBtn" class="ghost-btn">保存</button>
+          </div>
+        </div>
+        <div id="memberStatus" class="sync-status">注册用户会在这里显示。</div>
+        <div id="memberList" class="member-list"></div>
+      </section>
+      <section class="section admin-orders-panel">
+        <div class="section-head">
+          <div><p class="eyebrow">Orders</p><h2>订阅记录</h2></div>
+        </div>
+        <div id="orderList" class="order-list"></div>
+      </section>
+    </main>
+    <dialog id="helpDialog" class="dialog small">
+      <form method="dialog">
+        <div class="section-head compact">
+          <div><p class="eyebrow">Sync</p><h2>每日同步方式</h2></div>
+          <button class="icon-btn" value="cancel" aria-label="关闭">x</button>
+        </div>
+        <p class="help-copy">推荐使用本页“一键同步”。如果需要手动同步，在 `01-Daily` 根目录运行：</p>
+        <pre><code>node 04-Site/scripts/sync-data.mjs</code></pre>
+      </form>
+    </dialog>
+    <script src="./data/radar-data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

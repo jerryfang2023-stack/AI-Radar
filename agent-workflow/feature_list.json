@@ -1,0 +1,587 @@
+{
+  "project": "观澜AI｜WaveSight AI",
+  "updatedAt": "2026-05-04",
+  "method": "agent-workflow + PM review + staged acceptance",
+  "statusLegend": {
+    "pending": "尚未开始",
+    "in_progress": "正在处理",
+    "blocked": "有阻塞",
+    "verify": "等待验证",
+    "passed": "已完成并验证"
+  },
+  "automationLevels": {
+    "agent_can_execute": "agent 可直接执行并提交验证结果",
+    "agent_draft_human_approve": "agent 产出草案，必须由人确认",
+    "human_only": "必须人工判断或审批"
+  },
+  "features": [
+    {
+      "id": "GL-M0-001",
+      "milestone": "M0",
+      "title": "建立 PM Agent 产品总控机制",
+      "owner": "pm",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "passed",
+      "problem": "观澜AI已从页面优化扩展为内容、数据、产品、权限、云端部署的长期系统，需要统一产品判断机制。",
+      "solution": "新增 PM Agent 职责、PRD 模板、栏目决策规则、路线图和验收机制。",
+      "acceptance": [
+        "PM Agent 职责边界清晰",
+        "每次新增栏目或功能必须先经过 PM 判断",
+        "重大产品决策有记录、有验收、有下一步任务"
+      ],
+      "verification": "查看 agent-workflow/product、prd、roadmap、governance 下的新增规范。"
+    },
+    {
+      "id": "GL-M0-002",
+      "milestone": "M0",
+      "title": "统一项目定位与对外表达",
+      "owner": "strategy",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "passed",
+      "problem": "网站容易被误解为 AI 新闻站、工具站或内部资料库。",
+      "solution": "明确观澜AI是面向商业决策者的 AI 机会判断系统。",
+      "acceptance": [
+        "品牌名为 观澜AI｜WaveSight AI",
+        "定位语为 观AI之澜，识商业之势",
+        "对外表达强调信号、判断、机会、证据和行动",
+        "普通页面不出现 Markdown、同步、字段、JSON 等内部语言"
+      ],
+      "verification": "抽查首页、栏目页、申请页文案。"
+    },
+    {
+      "id": "GL-M1-001",
+      "milestone": "M1",
+      "title": "补齐核心 Markdown frontmatter 与稳定 ID",
+      "owner": "content",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "verify",
+      "problem": "云端部署需要稳定字段，否则同步和详情页会出现错位。",
+      "solution": "Signals、Priorities、Trends、Opportunities 统一补齐 type、schema_version、id、slug、status、tags 等字段。",
+      "acceptance": [
+        "所有机会卡有唯一 opportunity_id 和 slug",
+        "所有 signal 有稳定 signal_id 或可派生 ID",
+        "所有评分项可关联机会方向或赛道",
+        "字段缺失会进入质量报告"
+      ],
+      "verification": "运行 schema-check 后无高危错误。"
+    },
+    {
+      "id": "GL-M1-002",
+      "milestone": "M1",
+      "title": "建立标签体系字典",
+      "owner": "content",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "pending",
+      "problem": "Tags 当前容易变成标签堆砌，无法真正连接 signal、priority、trend、opportunity。",
+      "solution": "建立标签分层：赛道、职能、客户、场景、阶段、地域、证据、行动。",
+      "acceptance": [
+        "每个标签有 tag_id、name、aliases、description、group",
+        "Tags 页面按标签簇展示，并支持热门标签和搜索",
+        "每条核心内容至少能关联一个赛道标签和一个场景/行动标签"
+      ],
+      "verification": "抽样检查 10 个标签能跨栏目找到相关内容。"
+    },
+    {
+      "id": "GL-M1-003",
+      "milestone": "M1",
+      "title": "清理 Opportunities 公司名标题",
+      "owner": "content",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "verify",
+      "problem": "机会卡代表未来机会，不应以具体公司名命名。",
+      "solution": "机会标题保留方向，公司名放入代表案例、来源或相关 Signals。",
+      "acceptance": [
+        "机会卡文件名和 title 不出现公司后缀",
+        "公司名作为 evidence 或 representative_case 展示",
+        "同步后网站机会卡仍能打开独立 URL"
+      ],
+      "verification": "运行 content-quality-check 或人工抽查机会卡标题。"
+    },
+    {
+      "id": "GL-M1-004",
+      "milestone": "M1",
+      "title": "建立 Signals 定义、监测来源与评分算法",
+      "owner": "signal-intelligence",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "verify",
+      "problem": "Signals 需要从新闻和公司动态中独立出来，成为可监测、可评分、可优化的商业信号系统。",
+      "solution": "定义 Signal 标准，建立来源分层、关键词自优化机制和 Signal Score 算法。",
+      "acceptance": [
+        "能清楚区分新闻、公司动态与 Signal",
+        "每条 Signal 必须包含事件、证据和商业含义",
+        "监测来源分为一手证据、高质量媒体、产业数据三层",
+        "关键词表支持新增、降权、合并和噪音识别",
+        "Signal Score 有明确维度、权重和入选阈值"
+      ],
+      "verification": "查看 product/signal-system.md，并抽样判断 10 条内容是否符合 Signal 标准。"
+    },
+    {
+      "id": "GL-M1-005",
+      "milestone": "M1",
+      "title": "Daily Brief 产品化",
+      "owner": "daily-brief",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "in_progress",
+      "problem": "Daily 当前容易变成每日内容列表，缺少付费级独立报告的观点、结构和行动建议。",
+      "solution": "将 Daily Brief 固定为今日结论、关键 Signals、优先验证机会、趋势变化、行动建议、风险提醒六段式结构。",
+      "acceptance": [
+        "每天 Brief 有明确观点，不只是摘要",
+        "每条关键内容有证据和商业含义",
+        "Brief 能作为 newsletter 或 signals letter 发送",
+        "用户读完知道今天最该关注和验证什么"
+      ],
+      "verification": "查看 product/daily-brief-product.md，并用最新一天数据生成 Brief 样稿。"
+    },
+    {
+      "id": "GL-M1-006",
+      "milestone": "M1",
+      "title": "Trends 趋势判断模型升级",
+      "owner": "trend-intelligence",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "verify",
+      "problem": "Trends 当前容易停留在上升/下降描述，无法体现高端商业判断所需的趋势阶段、反证和机会温度。",
+      "solution": "建立趋势状态、证据阶梯、采用曲线、机会温度、趋势分化和反证清单。",
+      "acceptance": [
+        "每个趋势能解释为什么升温、分化、降温或进入风险区",
+        "核心趋势可关联 Signals 和 Opportunities",
+        "趋势详情页有证据阶梯、机会温度和反证观察点",
+        "风险变量不混同为普通机会"
+      ],
+      "verification": "查看 product/trend-model.md，并抽样重构 3 个趋势方向。"
+    },
+    {
+      "id": "GL-M2-001",
+      "milestone": "M2",
+      "title": "将 Priorities 合并进 Opportunities",
+      "owner": "opportunity-engine",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "verify",
+      "problem": "Priorities 和 Opportunities 对用户来说有重叠；没有评分或优先级的机会，本质上还不是正式机会。",
+      "solution": "Scoring 保留为后台 Priority Engine，前台将评分、优先级、证据等级、趋势状态和验证动作合并进每张 Opportunity Card。",
+      "acceptance": [
+        "普通用户导航不再出现 Scoring 或 Priorities 作为一级栏目名",
+        "机会卡必须展示优先级、证据等级、趋势状态和下一步验证动作",
+        "公司名只作为代表证据，不作为机会标题",
+        "旧 Priorities 页面有清晰迁移或降级方案",
+        "每个正式 Opportunity 至少能关联一个 Signal 或 Trend"
+      ],
+      "verification": "打开前台导航和机会详情页，检查是否由 Opportunities 承接评分与优先级。"
+    },
+    {
+      "id": "GL-M2-002",
+      "milestone": "M2",
+      "title": "建立 Signal-Priority-Trend-Opportunity 关系检查",
+      "owner": "automation",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "pending",
+      "problem": "当前内容已经跨多个栏目，关系不稳会导致网站展示错位。",
+      "solution": "新增 relation-check.mjs，检查 slug、tag、track、related IDs 的双向关系。",
+      "acceptance": [
+        "能发现孤立 Opportunity",
+        "能发现无法关联的评分项",
+        "能发现没有证据来源的趋势",
+        "检查报告写入 agent-workflow/logs"
+      ],
+      "verification": "运行脚本后生成关系质量报告。"
+    },
+    {
+      "id": "GL-M2-003",
+      "milestone": "M2",
+      "title": "每日自动化监测闭环",
+      "owner": "automation",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "verify",
+      "problem": "每日内容更新需要稳定进入 Obsidian 和网站，且能发现异常。",
+      "solution": "内容生成任务先根据监测提示词和关键词列表生成 Signals、机会评分、趋势和机会卡 Markdown；统一同步闸门在内容就绪后一次性同步网站并产出健康报告。",
+      "acceptance": [
+        "Signals 命名符合 YYYY-MM-DD-AI商业雷达.md",
+        "评分命名符合 YYYY-MM-DD-AI机会评分.md",
+        "导入 Obsidian 时保留笔记属性",
+        "异常进入 daily-run-log 和 feature_list 后续任务",
+        "内容生成任务不直接写网站数据，统一由同步闸门检查后入站"
+      ],
+      "verification": "查看当天 Markdown、网站数据、daily-run-log 和 unified-site-sync 报告。"
+    },
+    {
+      "id": "GL-M2-004",
+      "milestone": "M2",
+      "title": "建立内容质量与关键词质量检查",
+      "owner": "automation",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "pending",
+      "problem": "每日监测需要不断优化关键词和来源，否则会被低价值新闻、重复内容和噪音拖累。",
+      "solution": "新增 keyword-quality-report 和 brief-quality-check，记录高产词、低效词、新增词、噪音来源和 Brief 质量。",
+      "acceptance": [
+        "能识别高分 Signal 的高产关键词",
+        "能标记连续产生噪音的低效关键词",
+        "能发现 Daily Brief 是否缺少观点、证据、行动建议或风险提醒",
+        "检查结果写入 agent-workflow/logs"
+      ],
+      "verification": "运行质量检查后生成关键词与 Brief 质量报告。"
+    },
+    {
+      "id": "GL-M3-001",
+      "milestone": "M3",
+      "title": "普通端与管理员端彻底分离",
+      "owner": "site",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "verify",
+      "problem": "普通页面曾出现编辑浮窗、访问状态、恢复原始数据等后台痕迹。",
+      "solution": "普通端只保留阅读、注册、登录和权限提示；Admin 独立承担同步、编辑、用户权限、恢复等操作。",
+      "acceptance": [
+        "index、daily、signals、opportunities 等普通页面无编辑入口",
+        "同步、恢复、JSON 编辑只出现在 admin",
+        "未登录用户看到注册/登录入口，已登录用户不再重复申请访问",
+        "管理员可视化编辑优先于 JSON 编辑"
+      ],
+      "verification": "分别以普通入口和 admin.html 检查页面权限。"
+    },
+    {
+      "id": "GL-M3-002",
+      "milestone": "M3",
+      "title": "优化首页为高价值判断入口",
+      "owner": "design",
+      "priority": "medium",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "in_progress",
+      "problem": "首页容易展示过多内容，影响高端商业判断感。",
+      "solution": "首页少而有序，突出品牌主张、今日判断、代表机会和注册/登录入口。",
+      "acceptance": [
+        "5 秒内能看懂观澜AI的价值",
+        "首页不再像资讯流或后台数据页",
+        "文案强调商业判断、证据链和机会验证",
+        "桌面和移动端排版都不拥挤"
+      ],
+      "verification": "用浏览器截图检查桌面和移动端。"
+    },
+    {
+      "id": "GL-M3-003",
+      "milestone": "M3",
+      "title": "补齐会员制官网商业化模块",
+      "owner": "commercial-site",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "verify",
+      "problem": "当前官网仍偏内容展示，普通内容访问曾依赖申请访问流程，缺少清晰的注册、登录、阅读权限、订阅套餐、购买支付占位和会员权限管理。",
+      "solution": "取消普通内容申请访问和申请试读入口，改为未登录/已登录两种基础状态；用户注册后获得默认阅读有效期；新增注册、登录、账户、订阅套餐、购买支付页面。Admin 后台能力拆为独立任务，不再混入会员模块。",
+      "acceptance": [
+        "首页有注册和登录入口，首屏与尾部不再出现申请访问按钮",
+        "未登录用户访问受限内容时只出现注册/登录提示",
+        "注册后获得默认阅读有效期",
+        "补齐注册页、登录页、账户页、订阅套餐页、购买与支付占位页",
+        "阅读权限到期后提示购买月/季/年订阅",
+        "规划 newsletter / signals letter 订阅入口",
+        "明确样例报告、隐私政策、服务条款和非投资建议声明",
+        "已登录用户不再出现申请访问流程"
+      ],
+      "verification": "查看 PRD-005，并分别以未登录、已登录有效、已登录到期、管理员四种状态验收。"
+    },
+    {
+      "id": "GL-M2-005",
+      "milestone": "M2",
+      "title": "The Point 建造者观点栏目",
+      "owner": "pm",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "verify",
+      "problem": "观澜AI目前有 Signals、Daily Brief、Trends、Opportunities，但缺少一个结构化追踪 AI 建造者观点的产品层，无法系统观察大牛观点、观点热度、观点分歧以及它们对趋势和机会判断的影响。",
+      "solution": "基于 follow-builders skill 建立 The Point 栏目：每日追踪 AI 一线人物观点，先写入 05-Point/YYYY-MM-DD-The-Point.md，并通过 05-Point/sources/ 沉淀 YouTube / Blog / X 素材层；网站展示栏目页、每日集合页、人物详情页和素材阅读页，首页 Decision Brief、Daily Brief、Signals 引用 The Point；网站入站由商业雷达统一同步流程完成，避免自动化任务冲突。",
+      "acceptance": [
+        "安装并学习 follow-builders skill",
+        "输出 The Point 数据模型",
+        "输出 The Point PRD",
+        "确认 The Point 进入前台一级导航，位置在 Signals 之后",
+        "补充 The Point 详情页开发需求",
+        "定义每日 08:30 自动更新任务",
+        "定义 05-Point Markdown 输出目录与命名规则",
+        "定义 The Point 先写入 Obsidian、再由商业雷达统一同步入站的协同机制",
+        "明确 The Point 任务不单独运行网站同步，避免与商业雷达任务冲突",
+        "明确 Daily Brief、Trends、Opportunities、首页 Decision Brief 的融合规则",
+        "定义 Point Score、每日 Top10 和长期观点热度算法",
+        "列出进入开发前需要用户确认的问题",
+        "用户已确认开始开发，进入 Data / Workflow / UI / Copy / Dev / QA 分派阶段",
+        "长期 Agent 分派文件已创建，并明确设计、文案、开发和自动化边界",
+        "完成 The Point P0 网站链路：the-point.html / point-daily.html / point.html / point-source.html",
+        "首页 Decision Brief、Daily Brief、Signals 卡片已接入 The Point",
+        "同一人物多条观点在人物详情页合并展示，并为每条观点保留独立来源链接",
+        "新增 05-Point/sources/ 素材层，支持 全文文档 / 全文译文 / 来源与版权",
+        "sync-data.mjs 输出 points / pointTopics / pointSources",
+        "清理 YouTube speaker/timecode 与 X t.co 短链，避免来源信息混入观点正文",
+        "The Point 自动化与统一同步闸门已落地，后续需观察第一次真实定时运行"
+      ],
+      "verification": "查看 product/the-point-model.md、PRD-008-the-point.md、execution/the-point-sprint-2026-05-03.md、reports/the-point-handoff-2026-05-03.md；运行 node 04-Site/scripts/sync-data.mjs 与 node 04-Site/scripts/check-relations.mjs。"
+    },
+    {
+      "id": "GL-M3-005",
+      "milestone": "M3",
+      "title": "Admin 管理后台独立升级",
+      "owner": "admin-console",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "pending",
+      "problem": "Admin 当前仍是本地控制台原型，功能分散、信息架构和管理效率还不足，后续需要作为独立后台持续开发。",
+      "solution": "将 Admin 从会员模块拆出，单独规划管理后台功能、设计、页面、文案和运营工作流，集中承接内容同步、内容管理、用户权限、订阅订单、质量检查和发布准备。",
+      "acceptance": [
+        "Admin 有独立 PRD 和后续开发任务",
+        "普通前台不暴露 Admin 导航、编辑、同步、JSON 或质量检查入口",
+        "Admin 首页能展示今日待办、同步状态、质量检查和用户权限概览",
+        "内容管理不只依赖纯 JSON 编辑",
+        "用户权限、订阅订单、质量检查和发布 checklist 有清晰入口",
+        "高风险操作有明确提示或二次确认",
+        "后台文案面向管理任务，方便快速操作"
+      ],
+      "verification": "查看 PRD-007-admin-console.md，并用普通入口和 admin.html 分别验收权限边界与后台工作流。"
+    },
+    {
+      "id": "GL-M3-004",
+      "milestone": "M3",
+      "title": "内部方法论资产沉淀",
+      "owner": "strategy",
+      "priority": "medium",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "pending",
+      "problem": "观澜 AI 需要有稳定方法论支撑内容、样例报告和销售沟通，但现阶段不需要对外单独开放 Method 页面。",
+      "solution": "内部沉淀 Signal 标准、证据模型、机会评分、趋势模型和非投资建议边界，暂不进入前台导航。",
+      "acceptance": [
+        "方法论能支撑销售沟通、样例报告和未来信任内容",
+        "清楚说明如何从热点形成商业判断",
+        "解释机会不是投资建议",
+        "暂不作为当前对外独立页面"
+      ],
+      "verification": "产出内部方法论框架，人工确认是否未来需要产品化为对外页面。"
+    },
+    {
+      "id": "GL-M3-006",
+      "milestone": "M3",
+      "title": "Data Agent 升级为 Intelligence Data Agent",
+      "owner": "data",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "in_progress",
+      "problem": "观澜AI的长期价值越来越依赖 Signal、Priority、Trend、Opportunity、The Point 的关系网络和判断资产模型，原 Data Agent 只覆盖字段、标签和质量报告，无法充分承接商业判断系统的底层护城河。",
+      "solution": "在不改变当前 8 个长期 agent 结构的前提下，将 Data Agent 升级为 Intelligence Data Agent，负责 Signal Intelligence、Trend Intelligence、Opportunity Intelligence、The Point Intelligence、Relation Intelligence 和 Quality Intelligence。",
+      "acceptance": [
+        "保留 data-agent id，不新增临时 agent",
+        "agent-registry.json 中 data-agent 名称升级为 Intelligence Data Agent",
+        "data-agent.md 明确 Signal、Trend、Opportunity、The Point 和关系网络的判断资产职责",
+        "新增 Intelligence Data 执行分派文件，包含 P0/P1/P2 任务",
+        "P0 任务覆盖关系软提醒、The Point 质量规则、Signal/Trend/Opportunity 统一判断资产清单",
+        "明确 Intelligence Data Agent 不替代 Strategy、PM、Copy、UI/UE、Dev、QA、Workflow 的职责",
+        "后续 Data Agent 工作按 Intelligence Data Agent 岗位说明执行",
+        "输出 intelligence-data-model.md 统一 Signal / Trend / Opportunity / Point 入库和质量标准",
+        "关系软提醒有收口报告，The Point 质量规则有固化报告"
+      ],
+      "verification": "查看 agents/data-agent.md、agents/agent-registry.json、execution/intelligence-data-agent-upgrade-2026-05-03.md、product/intelligence-data-model.md、reports/intelligence-data-relation-review-2026-05-03.md、reports/intelligence-data-point-rules-2026-05-03.md；校验 feature_list.json 能被正常解析。"
+    },
+    {
+      "id": "GL-M3-007",
+      "milestone": "M3",
+      "title": "建立多 Agent Operating System 治理机制",
+      "owner": "workflow",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "passed",
+      "problem": "观澜AI已经有长期 agent 与 Intelligence Data Agent，但还需要把多 agent 协作升级为可记忆、可规划、可校验、可降级、可交接、可校准的长期运营系统。",
+      "solution": "基于《执行摘要》中 Plan-first、共享记忆、质量闸门、自动化降级、交接模板和月度校准的思路，建立观澜AI版 Agent Operating System 治理文件。",
+      "acceptance": [
+        "建立 governance/README.md 作为 Agent Operating System 总入口",
+        "建立 agent-memory.md，沉淀长期规则和纠偏经验",
+        "建立 plan-first-policy.md，规定重大任务先计划再执行",
+        "建立 quality-gates.md，规定内容、页面、自动化、数据模型和发布前检查",
+        "建立 automation-fallback-policy.md，规定自动化失败、部分失败和阻塞失败的降级路径",
+        "建立 agent-handoff-template.md，规范长期 agent 交接格式",
+        "建立 intelligence-model-calibration.md，定义月度数据智能校准机制",
+        "更新 AGENTS.md 启动规则，纳入 The Point、Intelligence Data Agent 和新治理文件",
+        "建立 execution/PLAN-template.md，作为重大任务计划模板",
+        "建立 tools/run-quality-gates.mjs，作为 Quality Gates 统一脚本入口",
+        "run-quality-gates syntax 模式通过",
+        "新增治理文件写入 docs/agent-handoff.md 和 progress.md",
+        "feature_list.json 可正常解析"
+      ],
+      "verification": "查看 governance/README.md、governance/agent-memory.md、governance/plan-first-policy.md、governance/quality-gates.md、governance/automation-fallback-policy.md、governance/agent-handoff-template.md、governance/intelligence-model-calibration.md、execution/PLAN-template.md、tools/run-quality-gates.mjs；运行 node agent-workflow/tools/run-quality-gates.mjs syntax；校验 feature_list.json。"
+    },
+    {
+      "id": "GL-M3-008",
+      "milestone": "M3",
+      "title": "执行 Agent Operating System 5-9 优化",
+      "owner": "pm",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "passed",
+      "problem": "Agent Operating System 已有入口、计划模板和质量闸门，但仍需要补齐自动化首跑验收、机会评分缺口评审、来源治理、商业化模型和标签资产化治理，并同步检查三段式自动化是否受影响。",
+      "solution": "按 Plan-first 执行 5-9：建立 2026-05-04 自动化首跑验收计划，评审 5 张无评分证据 Opportunity，新增 source-intelligence.md、commercial-operating-model.md、tag-taxonomy.md，并更新 ai-the-point、ai-2、ai-3 自动化提示词。",
+      "acceptance": [
+        "新增 automation-first-run-2026-05-04.md，明确首跑检查和通过/阻塞标准",
+        "新增 opportunity-priority-gap-review-2026-05-03.md，对 5 张无 Priority 机会给出处理结论",
+        "新增 source-intelligence.md，治理来源、关键词和 Builder 池",
+        "新增 commercial-operating-model.md，定义会员、试读、newsletter、企业版和样例内容策略",
+        "新增 tag-taxonomy.md，将 Tags 变成可搜索、可筛选、可关系网络化资产",
+        "更新 ai-the-point、ai-2、ai-3 自动化，使其读取 source-intelligence 与 tag-taxonomy",
+        "新增 automation-impact-review-2026-05-03.md，记录自动化影响和更新结果",
+        "运行 syntax Quality Gate 通过"
+      ],
+      "verification": "查看 reports/automation-first-run-2026-05-04.md、reports/opportunity-priority-gap-review-2026-05-03.md、product/source-intelligence.md、product/commercial-operating-model.md、product/tag-taxonomy.md、reports/automation-impact-review-2026-05-03.md；运行 node agent-workflow/tools/run-quality-gates.mjs syntax。"
+    },
+    {
+      "id": "GL-M3-011",
+      "milestone": "M3",
+      "title": "建立调度中枢窗口机制",
+      "owner": "workflow",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "passed",
+      "problem": "用户希望当前窗口只负责分配任务和接收各执行窗口的收口文件，具体任务单独打开窗口执行，结束后回到当前窗口汇报并更新进度。",
+      "solution": "建立 Window Dispatch Hub 机制，新增派发单模板、收口模板和 dispatch-board，并升级为任务看板驱动。看板支持预生成任务卡、按编号执行、收口、状态、下一批、加入看板和阻塞等快捷口令。",
+      "acceptance": [
+        "调度中枢窗口职责清楚：只做派发、收口验收和进度回填",
+        "每个任务有稳定 Task ID 和派发单",
+        "每个执行窗口必须生成 UTF-8 closeout 文件",
+        "收口时检查派发单一致性、改动范围、Quality Gates 和自动化影响",
+        "用户可用执行、派发、收口、状态、看板、下一批、加入看板、阻塞等短口令操作",
+        "首批 P0/P1 任务已预生成派发单，可直接通过 P0-1、P0-2 等编号领取",
+        "机制写入 AGENTS、governance、Workflow Agent、Agent Memory 和 progress"
+      ],
+      "verification": "查看 governance/window-dispatch-hub.md、execution/dispatch-board.md、execution/TASK-window-dispatch-template.md、reports/TASK-window-closeout-template.md、execution/WSD-20260504-01-copy-audit.md 等首批派发单；运行 node agent-workflow/tools/run-quality-gates.mjs syntax。"
+    },
+    {
+      "id": "GL-M3-012",
+      "milestone": "M3",
+      "title": "补充看板任务池并综合排序",
+      "owner": "pm",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "passed",
+      "problem": "用户新增 The Point 首页、Admin 后台、首页首屏、移动端设计、上线准备和 AI 助理等任务，需要进入调度中枢任务池并按优先级排序。",
+      "solution": "将 6 个新增任务写入 dispatch-board，并预生成派发单。涉及重大产品、上线或 AI 助理能力的任务先由 Strategy / PM 做方向与需求规划，再进入 UI / Copy / Dev / QA 执行。",
+      "acceptance": [
+        "新增任务全部进入 dispatch-board",
+        "每个新增任务都有 Task ID、看板编号、牵头 Agent、派发单和收口路径",
+        "The Point 首页改版先由 Strategy / PM 定方向",
+        "Admin 后台先由 PM 输出开发需求",
+        "首页首屏、移动端、上线准备和 AI 助理均有独立派发单",
+        "看板按前台价值、运营后台、上线准备、跨端体验和新产品能力综合排序"
+      ],
+      "verification": "查看 execution/dispatch-board.md、execution/WSD-20260504-07-the-point-home-redesign-plan.md、execution/WSD-20260504-08-admin-console-requirements.md、execution/WSD-20260504-09-homepage-hero-optimization-plan.md、execution/WSD-20260504-10-mobile-design-system.md、execution/WSD-20260504-11-launch-readiness-plan.md、execution/WSD-20260504-12-ai-assistant-product-plan.md；运行 node agent-workflow/tools/run-quality-gates.mjs syntax。"
+    },
+    {
+      "id": "GL-M3-013",
+      "milestone": "M3",
+      "title": "长期 Agent GitHub 外部能力学习与安全审查",
+      "owner": "workflow",
+      "priority": "medium",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "passed",
+      "problem": "长期 Agent 能力训练窗口已安装并学习外部 GitHub skill，需要回填到主调度窗口，避免外部能力只停留在聊天中，也需要形成安全审查规则。",
+      "solution": "验收能力训练 closeout，将 GitHub 学习结果写入八个长期 Agent、Agent Memory、学习报告和调度看板，并把外部 GitHub skill / repo 安全审查要求加入派发与收口机制。",
+      "acceptance": [
+        "能力训练窗口提交 UTF-8 closeout 文件",
+        "GitHub 学习报告进入 reports",
+        "八个长期 Agent 岗位文件补充外部能力学习边界",
+        "Agent Memory 记录 GitHub 外部能力学习规则",
+        "dispatch-board 补登记并标记 accepted",
+        "派发模板要求外部 GitHub skill / repo 必须说明来源、路径、静态安全检查、风险等级和适配边界",
+        "不影响 04-Site、内容源 Markdown、同步脚本或三个长期自动化任务"
+      ],
+      "verification": "查看 reports/WSD-agent-github-capability-learning-closeout-2026-05-04.md、reports/agent-github-capability-learning-2026-05-04.md、execution/WSD-agent-github-capability-learning.md、execution/dispatch-board.md、execution/TASK-window-dispatch-template.md、governance/window-dispatch-hub.md；运行 node agent-workflow/tools/run-quality-gates.mjs syntax，并校验 feature_list.json 可解析。"
+    },
+    {
+      "id": "GL-M4-001",
+      "milestone": "M4",
+      "title": "云端部署准备",
+      "owner": "dev",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "pending",
+      "problem": "当前仍以本地 Obsidian 和静态站为主，需要为云端运营准备路径、权限、构建和备份。",
+      "solution": "完成部署检查、配置化路径、权限策略、数据备份、回滚和发布验收。",
+      "acceptance": [
+        "内容路径全部配置化",
+        "构建脚本能在云端环境运行",
+        "普通访问、登录注册、会员权限、管理员权限边界清楚",
+        "上线前有 release checklist 和回滚方案"
+      ],
+      "verification": "运行 deploy-check 并通过发布验收清单。"
+    },
+    {
+      "id": "GL-M3-009",
+      "milestone": "M3",
+      "title": "Tag Taxonomy ????????????",
+      "owner": "data",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "passed",
+      "problem": "?? Markdown ????? tags ????????????????????????????????",
+      "solution": "?? tag-taxonomy.md ?????? Markdown frontmatter tags????????????? tags ????????? check-tags.mjs ?????????",
+      "acceptance": [
+        "?? Markdown ? AI???? ???? Opportunity ????",
+        "AI-Agent?AI???AI-Coding?AI???Voice-AI??????????????????????",
+        "???? tags ?????????????????? taxonomy ??????",
+        "check-tags.mjs ?? forbidden_alias_hits=0 ? unknown_public_tag_hits=0",
+        "ai-the-point?ai-2?ai-3 ????????????????"
+      ],
+      "verification": "?? reports/tag-taxonomy-source-cleanup-2026-05-03.md??? node 04-Site/scripts/check-tags.mjs?node 04-Site/scripts/check-relations.mjs?node agent-workflow/tools/unified-site-sync.mjs --date=2026-05-03?"
+    },
+    {
+      "id": "GL-M3-010",
+      "milestone": "M3",
+      "title": "Signals homepage evidence radar redesign",
+      "owner": "pm",
+      "priority": "high",
+      "automation_level": "agent_draft_human_approve",
+      "approval_required": true,
+      "status": "verify",
+      "problem": "The current Signals homepage still feels like a list or internal workspace. It lacks date review, event-type filtering, evidence strength, and visible Opportunity / Trend links, so users may read it as a news list.",
+      "solution": "Signals homepage is implemented as an evidence radar and navigation entry. Full reading moved to independent signal.html detail pages; homepage now shows date groups, filter controls, compact cards, current-view summary, selected preview, and detail links.",
+      "acceptance": [
+        "Signals homepage defaults to date-grouped browsing",
+        "Top summary shows current-view signals, strong evidence, and linked judgments",
+        "Filters cover date, event type, evidence strength, track, and relation status",
+        "Signal cards show event, evidence, commercial meaning, linked Opportunity or Trend, source label, and a signal.html detail link",
+        "Homepage right panel is a radar summary and selected preview, not the full detail page",
+        "Independent signal.html detail page shows full evidence, source links, opportunity breakdown, scoring basis, Opportunity / Trend links, and related Signals",
+        "Public frontend shows no Admin, JSON, sync, edit, or restore traces",
+        "Desktop and mobile browser checks show no horizontal overflow"
+      ],
+      "verification": "Passed node --check for app and sync script, sync-data, check-relations hard errors 0, check-tags forbidden/unknown 0, quality-gates syntax, and Playwright desktop/mobile checks for signals.html and signal.html."
+    }
+  ]
+}

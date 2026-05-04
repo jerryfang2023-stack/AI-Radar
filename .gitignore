@@ -1,0 +1,32 @@
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+.next/
+.vite/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Logs and caches
+*.log
+.cache/
+.tmp/
+tmp/
+temp/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated local backups and heavyweight visual evidence
+agent-workflow/backups/
+agent-workflow/reports/**/*.png
+agent-workflow/reports/**/*.jpg
+agent-workflow/reports/**/*.jpeg
+agent-workflow/reports/**/*.webp
+

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录｜观澜AI｜WaveSight AI</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  </head>
+  <body data-page="login">
+    <header class="topbar">
+      <a class="brand" href="./index.html"><img class="brand-logo" src="./assets/logo.svg" alt="" /><span><strong>观澜AI｜WaveSight AI</strong><small>观AI之澜，识商业之势</small></span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html" class="nav-link">首页</a>
+        <a href="./daily.html" class="nav-link">Daily Brief</a>
+        <a href="./signals.html" class="nav-link">Signals</a>
+        <a href="./the-point.html" class="nav-link">The Point</a>
+        <a href="./opportunities.html" class="nav-link">Opportunities</a>
+        <a href="./trends.html" class="nav-link">Trends</a>
+      </nav>
+      <div class="toolbar"></div>
+    </header>
+    <main>
+      <section class="page-title">
+        <p class="eyebrow">Login</p>
+        <h1>登录观澜AI</h1>
+        <p>继续查看每日商业信号、趋势脉络和机会拆解，把 AI 变化转成更清晰的经营议题。</p>
+      </section>
+      <section class="auth-layout">
+        <form id="loginForm" class="auth-form">
+          <div class="auth-form-head">
+            <p class="eyebrow">Member Login</p>
+            <h2>账号登录</h2>
+          </div>
+          <label class="field"><span>邮箱</span><input name="contact" type="email" autocomplete="email" required /></label>
+          <label class="field"><span>密码</span><input name="password" type="password" autocomplete="current-password" required /></label>
+          <button class="primary-btn" type="submit">登录</button>
+          <div id="authStatus" class="sync-status"></div>
+        </form>
+        <aside class="auth-side">
+          <p class="eyebrow">New Here</p>
+          <h2>没有账号？先注册，把今天的信号看完整。</h2>
+          <p>观澜AI把热点、来源、趋势和机会卡串起来，减少重复搜集信息的时间。</p>
+          <a class="ghost-btn as-link" href="./register.html">注册</a>
+        </aside>
+      </section>
+    </main>
+    <script src="./data/radar-data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

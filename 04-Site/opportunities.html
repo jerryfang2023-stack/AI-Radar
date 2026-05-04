@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opportunities｜观澜AI｜WaveSight AI</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  </head>
+  <body data-page="opportunities" data-protected="true">
+    <header class="topbar">
+      <a class="brand" href="./index.html"><img class="brand-logo" src="./assets/logo.svg" alt="" /><span><strong>观澜AI｜WaveSight AI</strong><small>观AI之澜，识商业之势</small></span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html" class="nav-link">首页</a>
+        <a href="./daily.html" class="nav-link">Daily Brief</a>
+        <a href="./signals.html" class="nav-link">Signals</a>
+        <a href="./the-point.html" class="nav-link">The Point</a>
+        <a href="./opportunities.html" class="nav-link active">Opportunities</a>
+        <a href="./trends.html" class="nav-link">Trends</a>
+      </nav>
+      <div class="toolbar"></div>
+    </header>
+    <main>
+      <section class="page-title">
+        <p class="eyebrow">Opportunities</p>
+        <h1>把商业信号，变成机会卡</h1>
+      </section>
+      <section class="section protected-content">
+        <div class="opportunity-command">
+          <div class="opportunity-controls">
+            <label class="field"><span>搜索机会</span><input id="opportunitySearch" type="search" placeholder="机会、行业、场景、标签" /></label>
+            <label class="field"><span>行业</span><select id="opportunityIndustry"></select></label>
+            <label class="field"><span>优先级</span><select id="opportunityPriority"></select></label>
+          </div>
+          <div id="opportunityStats" class="opportunity-stats"></div>
+        </div>
+        <div class="opportunity-content-layout">
+          <div class="opportunity-card-region">
+            <div id="opportunityList" class="opportunity-list"></div>
+          </div>
+          <aside class="opportunity-leaderboard">
+            <div class="section-head compact">
+              <div><p class="eyebrow">Priority</p><h2>机会排行</h2></div>
+            </div>
+            <div id="priorityEngine" class="priority-engine-panel"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <script src="./data/radar-data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+

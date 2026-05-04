@@ -1,0 +1,102 @@
+<svg width="940" height="720" viewBox="0 0 940 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="观澜AI商业雷达可视化">
+  <defs>
+    <radialGradient id="radarGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(456 346) rotate(90) scale(260)">
+      <stop offset="0" stop-color="#E8FBFF"/>
+      <stop offset="0.46" stop-color="#86C7FF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dial" x1="282" y1="150" x2="646" y2="533" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FCFF"/>
+      <stop offset="0.4" stop-color="#D9ECFF"/>
+      <stop offset="0.7" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#262FB2"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#EFF7FF" stop-opacity="0.76"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-40" y="-40" width="260" height="170" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#174EA6" flood-opacity="0.16"/>
+    </filter>
+    <filter id="stageShadow" x="120" y="104" width="670" height="560" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="40" flood-color="#1D4ED8" flood-opacity="0.18"/>
+    </filter>
+    <clipPath id="dialClip">
+      <circle cx="468" cy="344" r="195"/>
+    </clipPath>
+  </defs>
+  <rect width="940" height="720" rx="36" fill="#F5F9FF"/>
+  <path d="M0 608C118 553 219 561 311 604C415 653 515 644 620 586C733 524 829 530 940 578V720H0V608Z" fill="#E5F1FF"/>
+  <path d="M0 655C122 603 249 612 371 648C507 688 623 666 737 608C813 570 876 565 940 587V720H0V655Z" fill="#D8E9FF"/>
+  <circle cx="468" cy="344" r="280" fill="url(#radarGlow)"/>
+  <g opacity="0.6">
+    <path d="M170 344H762" stroke="#B2D9FF" stroke-width="1"/>
+    <path d="M468 46V642" stroke="#B2D9FF" stroke-width="1"/>
+    <path d="M258 134L678 554" stroke="#D6E8FF" stroke-width="1"/>
+    <path d="M678 134L258 554" stroke="#D6E8FF" stroke-width="1"/>
+  </g>
+  <g filter="url(#stageShadow)">
+    <circle cx="468" cy="344" r="210" fill="white" opacity="0.86"/>
+    <circle cx="468" cy="344" r="195" fill="url(#dial)" opacity="0.96"/>
+    <g clip-path="url(#dialClip)">
+      <rect x="468" y="130" width="230" height="430" fill="#0B49D9" opacity="0.3"/>
+      <path d="M468 344L662 290C680 357 656 444 585 500C535 539 479 548 423 536L468 344Z" fill="#0F46D9" opacity="0.68"/>
+      <path d="M468 344L599 187C652 232 681 285 683 344H468Z" fill="#26D9FF" opacity="0.45"/>
+    </g>
+    <circle cx="468" cy="344" r="195" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="468" cy="344" r="154" stroke="#FFFFFF" stroke-width="1.4" opacity="0.75"/>
+    <circle cx="468" cy="344" r="113" stroke="#FFFFFF" stroke-width="1.4" opacity="0.65"/>
+    <circle cx="468" cy="344" r="72" stroke="#FFFFFF" stroke-width="1.4" opacity="0.58"/>
+    <circle cx="468" cy="344" r="31" stroke="#FFFFFF" stroke-width="1.4" opacity="0.7"/>
+    <path d="M468 344L646 232" stroke="#CFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="468" cy="344" r="13" fill="white"/>
+    <circle cx="468" cy="344" r="7" fill="#2563EB"/>
+  </g>
+  <g opacity="0.78">
+    <path d="M185 344C185 189 312 62 468 62C623 62 750 189 750 344" stroke="#73C9FF" stroke-width="1.2" stroke-dasharray="2 8"/>
+    <path d="M138 344C138 162 286 14 468 14C650 14 798 162 798 344" stroke="#AADFFF" stroke-width="1.2"/>
+    <path d="M214 344C214 203 328 89 468 89C609 89 723 203 723 344" stroke="#CDEBFF" stroke-width="1.1" stroke-dasharray="3 7"/>
+  </g>
+  <g>
+    <circle cx="305" cy="257" r="6" fill="#22D3EE"/>
+    <circle cx="388" cy="199" r="5" fill="#2563EB"/>
+    <circle cx="618" cy="244" r="6" fill="#7C6DF2"/>
+    <circle cx="633" cy="442" r="7" fill="#22D3EE"/>
+    <circle cx="390" cy="466" r="6" fill="#60A5FA"/>
+    <circle cx="517" cy="218" r="4" fill="#FFFFFF"/>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="670" y="94" width="190" height="92" rx="18" fill="url(#glass)" stroke="#D9E8FF"/>
+    <text x="690" y="126" font-family="'Noto Sans SC','Microsoft YaHei',Arial,sans-serif" font-size="17" font-weight="800" fill="#12306B">趋势洞察</text>
+    <path d="M690 158C709 158 710 132 732 132C752 132 747 164 772 164C795 164 799 138 827 138" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+    <text x="801" y="124" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#2563EB">+32.8%</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="718" y="312" width="152" height="128" rx="18" fill="url(#glass)" stroke="#D9E8FF"/>
+    <text x="740" y="348" font-family="'Noto Sans SC','Microsoft YaHei',Arial,sans-serif" font-size="17" font-weight="800" fill="#12306B">机会评分</text>
+    <circle cx="794" cy="391" r="39" stroke="#DDEAFF" stroke-width="12"/>
+    <path d="M794 352A39 39 0 1 1 763 414" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+    <text x="779" y="398" font-family="Arial,sans-serif" font-size="28" font-weight="800" fill="#0C2C76">92</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="110" y="430" width="244" height="112" rx="18" fill="url(#glass)" stroke="#D9E8FF"/>
+    <text x="132" y="464" font-family="'Noto Sans SC','Microsoft YaHei',Arial,sans-serif" font-size="17" font-weight="800" fill="#12306B">热点信号</text>
+    <circle cx="136" cy="492" r="6" fill="#38BDF8"/>
+    <text x="153" y="497" font-family="'Noto Sans SC','Microsoft YaHei',Arial,sans-serif" font-size="13" fill="#4C638E">AI应用落地加速</text>
+    <text x="284" y="497" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2563EB">92 ↑</text>
+    <circle cx="136" cy="520" r="6" fill="#7C6DF2"/>
+    <text x="153" y="525" font-family="'Noto Sans SC','Microsoft YaHei',Arial,sans-serif" font-size="13" fill="#4C638E">消费需求升级</text>
+    <text x="284" y="525" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2563EB">88 ↑</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="660" y="492" width="226" height="112" rx="18" fill="url(#glass)" stroke="#D9E8FF"/>
+    <text x="686" y="526" font-family="'Noto Sans SC','Microsoft YaHei',Arial,sans-serif" font-size="17" font-weight="800" fill="#12306B">风险预警</text>
+    <path d="M714 551L736 590H692L714 551Z" fill="#F43F5E"/>
+    <rect x="756" y="552" width="92" height="8" rx="4" fill="#BFD5FF"/>
+    <rect x="756" y="574" width="64" height="8" rx="4" fill="#D4E3FF"/>
+  </g>
+  <g filter="url(#cardShadow)">
+    <circle cx="248" cy="206" r="36" fill="url(#glass)" stroke="#D9E8FF"/>
+    <path d="M238 217V203M248 217V192M258 217V198" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

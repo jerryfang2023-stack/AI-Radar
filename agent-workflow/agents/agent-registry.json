@@ -1,0 +1,56 @@
+{
+  "project": "观澜AI｜WaveSight AI",
+  "updatedAt": "2026-05-03",
+  "rule": "长期 agent 以岗位说明书长期存在，临时子线程可关闭，但结论必须沉淀到 workflow。",
+  "agents": [
+    {
+      "id": "strategy-agent",
+      "name": "Strategy Agent",
+      "file": "agents/strategy-agent.md",
+      "starts_first": true,
+      "primary_outputs": ["战略判断", "边界提醒", "商业化阶段建议"]
+    },
+    {
+      "id": "pm-agent",
+      "name": "PM Agent",
+      "file": "agents/pm-agent.md",
+      "primary_outputs": ["PRD", "任务拆解", "路线图", "验收标准"]
+    },
+    {
+      "id": "ui-ue-agent",
+      "name": "UI / UE Agent",
+      "file": "agents/ui-ue-agent.md",
+      "primary_outputs": ["页面结构", "视觉规范", "截图验收建议"]
+    },
+    {
+      "id": "copy-agent",
+      "name": "Copy Agent",
+      "file": "agents/copy-agent.md",
+      "primary_outputs": ["页面文案", "CTA", "禁用语"]
+    },
+    {
+      "id": "data-agent",
+      "name": "Intelligence Data Agent",
+      "file": "agents/data-agent.md",
+      "primary_outputs": ["判断资产模型", "关系网络", "标签字典", "数据智能质量报告"]
+    },
+    {
+      "id": "dev-agent",
+      "name": "Dev Agent",
+      "file": "agents/dev-agent.md",
+      "primary_outputs": ["代码改动", "验证结果", "风险说明"]
+    },
+    {
+      "id": "qa-agent",
+      "name": "QA / Acceptance Agent",
+      "file": "agents/qa-agent.md",
+      "primary_outputs": ["验收报告", "风险等级", "发布建议"]
+    },
+    {
+      "id": "workflow-agent",
+      "name": "Workflow / Automation Agent",
+      "file": "agents/workflow-agent.md",
+      "primary_outputs": ["进度更新", "任务状态", "交接记录"]
+    }
+  ]
+}

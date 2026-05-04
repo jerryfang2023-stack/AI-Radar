@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signals｜观澜AI｜WaveSight AI</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  </head>
+  <body data-page="signals" data-protected="true">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="观澜AI WaveSight AI">
+        <img class="brand-logo" src="./assets/logo.svg" alt="" />
+        <span><strong>观澜AI｜WaveSight AI</strong><small>观AI之澜，识商业之势</small></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html" class="nav-link">首页</a>
+        <a href="./daily.html" class="nav-link">Daily Brief</a>
+        <a href="./signals.html" class="nav-link active">Signals</a>
+        <a href="./the-point.html" class="nav-link">The Point</a>
+        <a href="./opportunities.html" class="nav-link">Opportunities</a>
+        <a href="./trends.html" class="nav-link">Trends</a>
+      </nav>
+      <div class="toolbar"></div>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <p class="eyebrow">Signals</p>
+        <h1>从 AI 变化中，筛出商业信号</h1>
+      </section>
+
+      <section class="signals-radar section protected-content">
+        <div class="signals-radar-metrics" id="signalStats"></div>
+
+        <div class="signals-radar-controls">
+          <label class="field"><span>搜索</span><input id="searchInput" type="search" placeholder="产品、赛道、标签、判断" /></label>
+          <label class="field"><span>日期</span><select id="dateFilter"></select></label>
+          <label class="field"><span>变化类型</span><select id="eventTypeFilter"></select></label>
+          <label class="field"><span>信源状态</span><select id="evidenceFilter"></select></label>
+          <label class="field"><span>赛道</span><select id="trackFilter"></select></label>
+          <label class="field"><span>关联状态</span><select id="relationFilter"></select></label>
+          <button id="newSignalBtn" class="icon-btn hidden" title="新增 Signal" aria-label="新增 Signal">+</button>
+        </div>
+
+        <div class="signals-radar-layout">
+          <section class="signals-timeline" aria-label="Signals 日期分组">
+            <div id="signalList" class="signal-list"></div>
+          </section>
+          <article class="detail-panel" id="signalDetail"></article>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="editorDialog" class="dialog wide">
+      <form method="dialog" id="editorForm">
+        <div class="section-head compact">
+          <div><p class="eyebrow">Edit</p><h2 id="editorTitle">编辑 Signal</h2></div>
+          <button class="icon-btn" value="cancel" aria-label="关闭">x</button>
+        </div>
+        <div class="form-grid">
+          <label class="field"><span>产品</span><input name="product" required /></label>
+          <label class="field"><span>赛道</span><input name="track" required /></label>
+          <label class="field wide"><span>标题</span><input name="title" required /></label>
+          <label class="field"><span>日期</span><input name="date" type="date" /></label>
+          <label class="field"><span>判断</span><input name="verdict" /></label>
+          <label class="field"><span>评分</span><input name="total" type="number" min="0" max="30" /></label>
+          <label class="field wide"><span>标签</span><input name="tags" placeholder="用 ｜ 分隔" /></label>
+          <label class="field wide"><span>新闻类型</span><input name="newsType" /></label>
+          <label class="field wide"><span>简介</span><textarea name="summary" rows="5"></textarea></label>
+        </div>
+        <div class="content-block">
+          <h3>机会拆解</h3>
+          <div id="opportunityEditor" class="opportunity-editor"></div>
+        </div>
+        <div class="dialog-actions">
+          <button id="deleteSignalBtn" class="danger-btn" type="button">删除</button>
+          <span></span>
+          <button class="ghost-btn" value="cancel">取消</button>
+          <button class="primary-btn" id="saveSignalBtn" value="default">保存</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./data/radar-data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+
