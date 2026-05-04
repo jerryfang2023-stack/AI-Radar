@@ -169,6 +169,14 @@
 
 ## 14. 执行窗口启动提示词
 
+如果派生工作树界面中不方便复制长提示词，可让执行窗口直接读取：
+
+```text
+agent-workflow/execution/WSD-20260504-13-homepage-hero-carousel-assets-window-prompt.md
+```
+
+然后执行其中任务。
+
 ```text
 请按 01-WaveSight 项目的长期 agent-workflow 执行任务。
 
