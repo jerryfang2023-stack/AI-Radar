@@ -1329,3 +1329,24 @@ Agent 安排：
 - 不改内容源 Markdown、网站数据、同步脚本、关系检查脚本、统一同步脚本或自动化任务。
 
 自动化影响：预计不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 本地环境与派生工作树修复
+
+用户反馈派生工作树任务初始化失败，提示本地环境不可用。经核查，项目根目录 `01-WaveSight` 不是 git 仓库，缺少 `.git`，因此无法创建派生工作树。
+
+已修复：
+- 初始化 git 仓库，默认分支为 `main`。
+- 新增 `.gitignore`，排除依赖、缓存、备份和大型截图类验收文件。
+- 新增 `.gitattributes`，固定文本换行策略并标记图片等二进制文件。
+- 设置本仓库 `core.autocrlf=false`，降低 Windows 环境下 Markdown 文档换行被反复转换的风险。
+- 创建初始提交：`5428909 chore: initialize WaveSight repository baseline`。
+
+验证：
+- 已创建临时派生工作树并读取 git 状态，随后移除临时 worktree 和测试分支。
+- 冒烟测试结果：`WORKTREE_SMOKE_OK`。
+- 已运行 `node agent-workflow/tools/run-quality-gates.mjs syntax` 并通过。
+
+报告：
+- `agent-workflow/reports/local-environment-worktree-fix-2026-05-04.md`
+
+自动化影响：本次只修复本地版本管理与派生工作树能力，不影响 `ai-the-point`、`ai-2`、`ai-3`。

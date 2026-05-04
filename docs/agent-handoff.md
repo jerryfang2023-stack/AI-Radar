@@ -885,3 +885,32 @@ Agent 安排：
 - 必须做桌面端和移动端截图验收，确认无横向溢出，3 张图都能加载与切换。
 
 自动化影响：预计不影响 `ai-the-point`、`ai-2`、`ai-3`，因为本任务只修改首页展示层和静态图片资产。
+
+## 2026-05-04 本地环境与派生工作树修复交接
+
+最新状态：派生工作树初始化失败的问题已修复。
+
+原因：
+- `01-WaveSight` 原本不是 git 仓库。
+- 项目根目录没有 `.git`，因此无法创建派生工作树。
+
+已修复：
+- 初始化 git 仓库，默认分支为 `main`。
+- 新增 `.gitignore`，排除依赖、缓存、备份和大型截图类验收文件。
+- 新增 `.gitattributes`，固定文本换行策略并标记图片等二进制文件。
+- 设置本仓库 `core.autocrlf=false`。
+- 创建初始提交：`5428909 chore: initialize WaveSight repository baseline`。
+
+验证：
+- 已成功创建临时 worktree、创建临时分支、读取状态，再移除临时 worktree 和测试分支。
+- 冒烟测试结果：`WORKTREE_SMOKE_OK`。
+- `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+
+报告：
+- `agent-workflow/reports/local-environment-worktree-fix-2026-05-04.md`
+
+接手注意：
+- 后续派生工作树任务应从当前 `main` 基线创建。
+- 如果新窗口仍提示本地环境不可用，先确认窗口是否打开在 `01-WaveSight` 根目录，并确认是否能读取 `.git`。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
