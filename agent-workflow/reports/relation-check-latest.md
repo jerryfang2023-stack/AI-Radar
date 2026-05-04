@@ -1,17 +1,18 @@
 # Signal-Priority-Trend-Opportunity 关系检查
 
-生成时间：2026/5/4 17:19:47
+生成时间：2026/5/4 23:22:11
 
 ## 检查结论
 
 - 硬错误：0
 - 软提醒：12
-- 当前数据：33 Signals / 39 Priority Rows / 13 Trends / 34 Points / 27 Opportunities
+- 当前数据：33 Signals / 39 Priority Rows / 22 Judgment Nodes / 13 Trends / 34 Points / 27 Opportunities
 
 ## 关系覆盖率
 
 | 关系 | 覆盖 | 说明 |
 | Priority -> Signal | 39/39 (100%) | 评分项是否能回到原始商业信号 |
+| Priority -> Judgment Node | 39/39 (100%) | 评分项是否进入后台判断节点 |
 | Priority -> Opportunity | 39/39 (100%) | 评分项是否能进入机会卡 |
 | Priority -> Trend | 38/39 (97%) | 评分项是否被趋势模型吸收 |
 | Signal -> Opportunity | 33/33 (100%) | 信号是否能落到机会方向 |
@@ -22,6 +23,10 @@
 | Point -> Signal | 34/34 (100%) | 一线观点是否能回到信号证据 |
 | Point -> Trend | 29/34 (85%) | 一线观点是否进入趋势观察 |
 | Point -> Opportunity | 32/34 (94%) | 一线观点是否能辅助机会判断 |
+| Judgment Node -> Priority | 22/22 (100%) | 判断节点是否有评分来源 |
+| Judgment Node -> Signal | 22/22 (100%) | 判断节点是否能回到事实信号 |
+| Judgment Node -> Trend | 22/22 (100%) | 判断节点是否进入趋势网络 |
+| Judgment Node -> Opportunity | 22/22 (100%) | 判断节点是否落到机会卡 |
 | Opportunity -> Priority | 22/27 (81%) | 机会卡是否有评分支撑 |
 | Opportunity -> Signal | 22/27 (81%) | 机会卡是否有信号证据 |
 | Opportunity -> Trend | 27/27 (100%) | 机会卡是否进入趋势网络 |
@@ -50,4 +55,5 @@
 - 硬错误需要 Dev/Data 立即修复，通常是 ID 或 slug 断链。
 - 软提醒是运营复核项，不一定是错误，可能是新机会、新趋势或早期信号尚未形成闭环。
 - Signal / Opportunity / Trend 的弱关联可能来自标签相似度，本检查只校验引用是否存在，不逐条要求双向完全一致。
+- The Point 只作为观点共识、分歧或边界信号，不作为 Judgment Node 的事实证据直接加权。
 - 每次运行同步脚本后，应再运行本检查，确认新增内容没有断链。

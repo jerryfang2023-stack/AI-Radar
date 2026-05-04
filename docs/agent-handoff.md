@@ -9,6 +9,19 @@ tagline: 观AI之澜，识商业之势
 
 # 观澜AI Agent Handoff
 
+## 0. 2026-05-04 调度中心交接指针
+
+当前主调度窗口内容已过长，后续应切换到新窗口继续作为调度中枢。新窗口先读取：
+
+- `agent-workflow/reports/dispatch-hub-handoff-2026-05-04.md`
+- `agent-workflow/execution/dispatch-board.md`
+- `agent-workflow/progress.md`
+- `agent-workflow/feature_list.json`
+
+该交接文件已沉淀今天的任务成功 / 失败记录、作废任务、常用派发提示词、closeout 验收提示词和接手经验教训。新窗口不要把 `P0-2B` 当成首页成功版本；下一步优先执行 `P0-10`，待其 accepted 后再执行 `P0-11`。
+
+补充治理：`SYS-5` / `WSD-pm-module-governance` 已 accepted。后续任何产品功能类任务必须先由 PM Agent 输出新增功能门禁记录、WAVE 评分和模块决策表；未通过门禁的功能不得直接进入 Dev。
+
 ## 1. 当前项目状态
 
 观澜AI｜WaveSight AI 当前定位为面向商业决策者的 AI 机会判断系统，不是 AI 新闻站、工具站或内部资料库。核心产品逻辑是：从每日 AI 热点中筛出商业信号，再通过评分、趋势和机会卡形成可追踪的判断依据。
@@ -576,6 +589,136 @@ Copy Agent 下一步：
 
 自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
 
+## 2026-05-04 Admin P0 工作台落地验收交接
+
+最新状态：`P0-3A / WSD-20260504-16-admin-console-p0-workbench-implementation` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-16-admin-console-p0-workbench-implementation-closeout.md`
+
+已完成：
+- `admin.html` 从本地控制台原型升级为后台专属单页工作台。
+- 已覆盖运营仪表盘、内容管理、用户与权限、订阅与订单、邀请码、质量检查和系统设置。
+- 内容管理升级为新闻 CMS 式列表筛选、频道切换和独立稿件编辑页；JSON 降为高级模式。
+- 用户与权限、订阅与订单、质量检查、系统设置均作为独立视图呈现。
+- 新增邀请码模块，支持生成、筛选、复制、暂停 / 启用、删除、申请审批和通过后生成单次邀请码。
+- 新增本地访问统计，用于 Admin 运营仪表盘展示 PV / UV 和栏目热度。
+
+验证：
+- closeout 提供 Admin 桌面 / 移动端、多模块间距、内容管理、邀请码、控件对齐等截图，截图文件均存在。
+- 调度中枢补跑 `node agent-workflow/tools/run-quality-gates.mjs syntax`，6 项检查通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-145011.md`。
+- `feature_list.json` 中 `GL-M3-005` 已更新为 `verify`，表示 Admin P0 工作台已落地，仍等待权限边界复查。
+
+范围与风险：
+- 本轮范围扩展到邀请码、邀请申请审批、本地访问统计和注册邀请码闭环；调度中枢接受本次扩展。
+- 邀请码、邀请申请和访问统计仍为本地浏览器演示数据，不是正式云端系统。
+- 四种身份完整权限边界仍需由 `P0-6 / WSD-20260504-03-admin-boundary-qa` 独立覆盖。
+- `signals.html` 隐藏编辑弹窗源码风险仍需纳入 P0-6。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 首页 UI / Copy 重设计失败收口交接
+
+最新状态：`P0-2B / WSD-20260504-18-homepage-ui-copy-redesign` 已由调度中枢按失败任务收口，状态为 `failed / not accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-18-homepage-ui-copy-redesign-closeout.md`
+
+结论：
+- 用户复核后判定 `failed`。
+- 当前结果仍未达到参考 demo 的首页质感要求。
+- 本任务不合并、不作为首页最终方向。
+- closeout 中引用的截图未同步到主工作树，调度中枢无法完成截图复核。
+- `WSD-20260504-18` 编号曾被 Priority Engine 2.0 PM 边界任务使用，后续不再复用该编号派发首页任务。
+
+看板回填：
+- `dispatch-board.md` 已新增 `P0-2B / WSD-20260504-18-homepage-ui-copy-redesign`，状态为 `failed / not accepted`。
+- 已新增 `P0-10 / WSD-20260504-25-site-ui-design-direction`：网站 UI 优化，由 Design Director 先输出全站 Art Direction、页面母版、DESIGN v2 草案和验收基线。
+- 已新增 `P0-11 / WSD-20260504-26-homepage-desk-visual-asset`：首页右侧海报图 / Intelligence Desk 样张优化，等待 P0-10 accepted 后执行。
+- 2026-05-04 22:48 调度中枢补跑 `node agent-workflow/tools/run-quality-gates.mjs syntax`，6 项检查通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-144808.md`。
+
+接手注意：
+- 下一步不要继续沿用 P0-2B 的执行结果返修。
+- 先执行 P0-10，完成全站 UI 方向和母版，再决定首页右侧主视觉如何落地。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 UI / UE Design Director 升级交接
+
+最新状态：计划外长期 Agent 能力升级任务 `SYS-4 / WSD-ui-ue-design-director-upgrade` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-ui-ue-design-director-upgrade-closeout-2026-05-04.md`
+
+已更新：
+- `agent-workflow/agents/ui-ue-agent.md`
+- `agent-workflow/agents/agent-registry.json`
+- `agent-workflow/governance/agent-memory.md`
+- `agent-workflow/execution/ui-ue-design-director-upgrade-2026-05-04.md`
+- `agent-workflow/reports/ui-ue-design-director-upgrade-2026-05-04.md`
+- `agent-workflow/execution/dispatch-board.md`
+
+核心变化：
+- 不新增第九个长期 Agent，仍保留八 Agent 架构。
+- `ui-ue-agent` 原地升级为 `UI / UE Design Director`。
+- 新 primary outputs：Art Direction、DESIGN v2、页面母版、视觉资产规则、截图验收矩阵。
+- Design Director 对全站 UI、首页、栏目体系、Admin、移动端和海报 / 首屏视觉任务拥有前置设计权与审美阻塞权。
+
+接手注意：
+- 后续首页首屏 P0、全站 UI 重设计、栏目体系重设计、Admin 重设计、移动端设计和海报 / 首屏视觉任务，不得直接进入 Dev。
+- 必须先由 Design Director 输出 Art Direction、页面母版、字体 / 间距系统、视觉资产规则、审美阻塞项和 UI/UE 页面规范表。
+- 如果执行窗口只做局部 CSS 调整、没有 Design Director 规范表和截图验收，调度中枢不得标记 `accepted`。
+
+验证：
+- `agent-registry.json` 与 `feature_list.json` 解析正常。
+- 2026-05-04 22:41 调度中枢补跑 `node agent-workflow/tools/run-quality-gates.mjs syntax`，6 项检查通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-144158.md`。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 登录 / 注册页面优化任务验收交接
+
+最新状态：`P0-9 / WSD-20260504-24-login-register-page-optimization` 已由调度中枢复核并验收为 `accepted`。
+
+任务：
+- 看板编号：`P0-9`
+- Task ID：`WSD-20260504-24-login-register-page-optimization`
+- 派发单：`agent-workflow/execution/WSD-20260504-24-login-register-page-optimization.md`
+- 执行窗口短提示：`agent-workflow/execution/WSD-20260504-24-login-register-page-optimization-window-prompt.md`
+- 收口文件：`agent-workflow/reports/WSD-20260504-24-login-register-page-optimization-closeout.md`
+
+已完成：
+- 登录页升级为“回到今日 AI 商业判断”的账号返回页。
+- 注册页升级为“创建账号，开始阅读 AI 商业信号”的账号创建页。
+- 注册页明确默认 7 天阅读有效期。
+- 注册页新增邀请码输入；没有有效邀请码不能创建新账号。
+- 邀请码申请拆到 `04-Site/invite-request.html`，用于收集邮箱、公司 / 机构、身份和申请理由。
+- Admin 邀请码页新增申请记录列表，可复制邮箱、标记已发放或删除记录。
+- 登录 / 注册后的本地跳转逻辑已调整：有效账号默认进入 `daily.html`，到期账号进入 `account.html`。
+- 普通前台已清理 Admin、JSON、同步、编辑、恢复、字段、后台、申请访问、申请试读等表达。
+
+主要改动：
+- `04-Site/login.html`
+- `04-Site/register.html`
+- `04-Site/invite-request.html`
+- `04-Site/admin.html`
+- `04-Site/css/styles.css`
+- `04-Site/js/app.js`
+
+验证：
+- closeout 包含 UI/UE 页面规范表、Copy 文案规范表、Dev 逐条实现说明、QA 桌面 / 移动截图和文案验收，满足页面 / 文案类硬闸门。
+- 登录页、注册页和邀请码申请页桌面 / 移动端截图已生成。
+- Playwright / Chrome 验证无横向溢出，注册和登录交互通过。
+- 无效邀请码不创建用户；有效邀请码注册成功并消耗一次；未设密码旧账号不能绕过邀请码校验。
+- 邀请码申请可写入本地演示数据；Admin `#invites` 可查看申请记录。
+- 调度中枢补跑 `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-143023.md`。
+
+范围与风险：
+- 原派发单主要允许登录 / 注册页面与相关交互逻辑；执行中扩展到 `invite-request.html` 与 `admin.html` 邀请码申请 / 发放链路。调度中枢接受本次扩展，但后续 Admin 邀请码管理应归入 Admin 或权限边界任务。
+- 邀请码与申请记录仍为本地浏览器演示数据，不是云端账号或邮件发放系统。
+- 四种身份完整权限验收仍归 `P0-6 / WSD-20260504-03-admin-boundary-qa`。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
 ## 2026-05-04 Signal 指向机会数量显示交接
 
 最新状态：底层关系和网站展示层均已收口到“每条 Signal 指向 1 个主 Opportunity”。
@@ -955,5 +1098,422 @@ wavesight-baseline-20260504
 接手注意：
 - 后续云端部署可以直接从 `main` 测试。
 - `wavesight-baseline-20260504` 分支仍保留，如无需要可后续删除，避免混淆。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 The Point 首页改版规划收口与落地派发交接
+
+最新状态：`P0-1 / WSD-20260504-07-the-point-home-redesign-plan` 已由调度中枢验收为 `accepted`，并已派发后续页面落地任务。
+
+已接受文件：
+- `agent-workflow/reports/WSD-20260504-07-the-point-home-redesign-plan-closeout.md`
+- `agent-workflow/reports/the-point-home-redesign-plan-2026-05-04.md`
+
+规划结论：
+- The Point 首页不应是观点列表、人物墙或来源聚合页。
+- The Point 首页应成为“一线观点如何解释商业变化、补充判断证据、提示共识与分歧”的判断入口。
+- H1 固定为：`从一线观点中，看见 AI 共识、分歧与边界。`
+- 首屏不加小字导语，不解释栏目功能。
+- 今日一线观点区是页面核心，必须突出人物 / 机构、来源类型和原文出处链接。
+- 观澜解读是第二层增值，不能盖过一线来源。
+
+已派发后续任务：
+- 看板编号：`P0-1A`
+- Task ID：`WSD-20260504-14-the-point-home-redesign-implementation`
+- 派发单：`agent-workflow/execution/WSD-20260504-14-the-point-home-redesign-implementation.md`
+- 执行窗口短提示：`agent-workflow/execution/WSD-20260504-14-the-point-home-redesign-implementation-window-prompt.md`
+- 收口文件：`agent-workflow/reports/WSD-20260504-14-the-point-home-redesign-implementation-closeout.md`
+
+执行要求：
+- 一个执行窗口连续完成 Copy、UI / UE、Dev、QA。
+- 不要中途回调度窗口；全部页面修改、检查和截图完成后，再提交 closeout。
+- 允许改动 `04-Site/the-point.html`、`04-Site/js/app.js`、`04-Site/css/styles.css`。
+- 禁止改动 `05-point/`、内容源、网站数据、同步脚本和自动化任务。
+
+自动化影响：规划收口与后续派发本身不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 每日 Signal 关键词与来源优化派发交接
+
+最新状态：调度中枢已根据用户要求派发 Intelligence Data Agent 任务，用于优化每日 AI 商业雷达的监测关键词和来源策略。
+
+任务：
+- 看板编号：`P0-7`
+- Task ID：`WSD-20260504-15-signal-keyword-source-optimization`
+- 派发单：`agent-workflow/execution/WSD-20260504-15-signal-keyword-source-optimization.md`
+- 执行窗口短提示：`agent-workflow/execution/WSD-20260504-15-signal-keyword-source-optimization-window-prompt.md`
+- 收口文件：`agent-workflow/reports/WSD-20260504-15-signal-keyword-source-optimization-closeout.md`
+
+牵头 Agent：
+- Intelligence Data Agent
+
+目标：
+- 每日 Signal 不再只偏向大企业、大融资和高曝光新闻。
+- 增强对早期融资、新趋势、新投资方向、技术迭代、开源 / 开发者生态、垂直行业早期采用和反证信号的发现能力。
+- 更新关键词库、监测提示词和 Source Intelligence。
+
+自动化影响：
+- 可能影响 `ai-2` 每日商业雷达生成口径。
+- 默认不影响 `ai-the-point`。
+- 默认不影响 `ai-3`，除非后续改同步闸门或检查规则。
+
+## 2026-05-04 The Point 首页改版落地验收交接
+
+最新状态：`P0-1A / WSD-20260504-14-the-point-home-redesign-implementation` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-14-the-point-home-redesign-implementation-closeout.md`
+
+已落地：
+- The Point 首页 H1 固定为 `从一线观点中，看见 AI 共识、分歧与边界。`
+- 首页从日期归档列表升级为判断入口，阅读路径为栏目标题、主观点、共识 / 分歧 / 早期信号、今日一线观点、往期观点和主题侧栏。
+- 今日观点展示 10 条少而精内容，突出一线人物 / 机构、来源类型、出处、原始观点转述和观澜解读。
+- 单条观点只保留 `查看观点` 一个动作。
+- `往期观点` 可进入历史日期集合页。
+- `正在升温的主题` 已改为可点击主题集合。
+- 首页底部不再展示不明指向的 `相关判断` 聚合。
+- 每日集合页序号已修复，超过 10 条时不会重置为 `01`。
+- The Point 栏目标题区已回到全站一级栏目统一规范。
+
+调度中枢复核：
+- 改动范围符合派发单，集中在 `04-Site/the-point.html`、`04-Site/js/app.js`、`04-Site/css/styles.css` 和报告截图。
+- 截图存在：
+  - `agent-workflow/reports/WSD-20260504-14-the-point-home-redesign-desktop.png`
+  - `agent-workflow/reports/WSD-20260504-14-the-point-home-redesign-mobile.png`
+- `node --check 04-Site/js/app.js` 通过。
+- `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-112652.md`。
+
+接手注意：
+- 后续不要把 The Point 首页退回人物墙、观点热榜或日期列表。
+- The Point 首页展示一线观点和观澜解读，但来源、出处和原始观点转述仍是可信度核心。
+- 具体观点的关联 Signal / Trend / Opportunity 仍由详情页承担，首页不堆不明指向的关联卡片。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 Admin 后台需求规划收口交接
+
+最新状态：`P0-3 / WSD-20260504-08-admin-console-requirements` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-08-admin-console-requirements-closeout.md`
+
+需求产出：
+- `agent-workflow/prd/active/PRD-007-admin-console.md`
+- `agent-workflow/reports/admin-console-requirements-2026-05-04.md`
+
+结论：
+- Admin 后台应从本地控制台原型升级为独立管理工作台。
+- Admin P0 仍保留单页 `admin.html`，但要形成后台专属信息架构。
+- P0 模块包括：今日工作台、内容管理、用户与权限、订阅与订单、质量检查、发布准备、系统设置。
+- P1 再考虑拆多页后台、操作日志、真实数据表映射和云端权限预留。
+- `feature_list.json` 中 `GL-M3-005` 已更新为 `in_progress`。
+
+后续任务：
+- 看板编号：`P0-3A`
+- Task ID：`WSD-20260504-16-admin-console-p0-workbench-implementation`
+- 派发单：`agent-workflow/execution/WSD-20260504-16-admin-console-p0-workbench-implementation.md`
+- 执行窗口短提示：`agent-workflow/execution/WSD-20260504-16-admin-console-p0-workbench-implementation-window-prompt.md`
+- 收口文件：`agent-workflow/reports/WSD-20260504-16-admin-console-p0-workbench-implementation-closeout.md`
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 首页首屏与海报图规划收口交接
+
+最新状态：`P0-2 / WSD-20260504-09-homepage-hero-optimization-plan` 已由调度中枢验收为 `accepted`，其结论已并入 P0-2A 首页轮播图落地任务。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-09-homepage-hero-optimization-plan-closeout.md`
+
+规划报告：
+- `agent-workflow/reports/homepage-hero-optimization-plan-2026-05-04.md`
+
+关键结论：
+- 首页首屏主视觉从抽象雷达转向“情报桌面 + 真实判断样张”。
+- 首页首屏需要在 5 秒内说明：观澜AI不是 AI 新闻站，而是面向商业决策者的 AI 机会判断系统。
+- 推荐 H1：`在市场形成共识前，看见 AI 商业变化`。
+- 推荐副标题：`每天从融资、客户采用、产品落地和产业变化中筛出关键信号，形成可追踪的机会观察与趋势判断。`
+- 推荐 CTA：`查看今日简报` / `申请进入完整情报层`。
+
+用户认可的视觉参考：
+- 展示图路径：`C:\Users\86186\.codex\generated_images\019def03-4307-7030-9f0c-2652d44d41c3\ig_0cfd0bd9306732b40169f88439f79c8191b41ca3226c8b9d39.png`
+- 参考气质：象牙白底、深石墨文字、深墨绿重点面板、少量铜棕强调。
+- 右侧视觉应展示 Signals、Opportunity Watch、Trend Status 与 Brief 的判断关系。
+- 避免霓虹科技风、大屏监控风、后台数据面板、抽象氛围图。
+
+后续任务：
+- P0-2A 后续已作废，不再作为首页首屏落地路径。
+- `GL-M3-002` 继续保持 `in_progress`，等待重新派发新的首页首屏 P0 落地任务。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 首页首屏轮播图任务作废交接
+
+最新状态：`P0-2A / WSD-20260504-13-homepage-hero-carousel-assets` 已提前终止，由调度中枢标记为 `void / abandoned`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-13-homepage-hero-carousel-assets-closeout.md`
+
+作废原因：
+- 当前首页首屏轮播方向未被采用，需要重新派发新的首页首屏 P0 方向任务。
+- 本任务没有交付物，不可合并。
+- 不再继续设计、生成图片、改页面或优化代码。
+- 不合并、不推送、不把本任务成果带回主工作树。
+- 不删除派生工作树，保留现场供后续参考。
+
+调度结论：
+- P0-2 首页首屏规划仍保留为参考。
+- P0-2A 的“三张轮播图替换首屏”实现假设不再沿用。
+- 后续应重新派发首页首屏 P0 落地任务，先确认最终首屏表达和视觉承载形式，再由 UI / UE、Copy、Dev、QA 连续完成开发与验收。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 Netlify 预览部署任务派发交接
+
+最新状态：调度中枢已新增 Netlify 预览部署任务，目标是把当前项目部署到 Netlify Preview，并返回可访问链接。
+
+任务：
+- 看板编号：`P0-4A`
+- Task ID：`WSD-20260504-17-netlify-preview-deploy`
+- 派发单：`agent-workflow/execution/WSD-20260504-17-netlify-preview-deploy.md`
+- 执行窗口短提示：`agent-workflow/execution/WSD-20260504-17-netlify-preview-deploy-window-prompt.md`
+- 收口文件：`agent-workflow/reports/WSD-20260504-17-netlify-preview-deploy-closeout.md`
+
+Agent 安排：
+- Dev Agent 牵头。
+- PM Agent 控制范围，确认这是 preview deploy，不是 production launch。
+- QA / Acceptance Agent 做部署后页面访问检查。
+- Workflow / Automation Agent 记录部署方式、URL、检查结果和自动化影响。
+
+执行边界：
+- 优先将 `04-Site/` 作为发布目录。
+- 优先使用 Netlify 插件 / connector；不可用时再使用 Netlify CLI 或 Web 流程。
+- 不配置正式域名，不接入真实数据库，不做生产发布切换。
+- 不改内容源、同步脚本、统一同步闸门或自动化任务。
+- 不合并已作废的 P0-2A 首页轮播图任务成果。
+
+自动化影响：
+- 本任务可能影响上线准备路径。
+- 默认不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 Priority Engine 2.0 快速落地交接
+
+最新状态：Priority Engine 2.0 第一版模型已由调度中枢验收，用户要求把 PM 确认、ai-2 提示词升级、Dev 解析实现、QA 验收四个后续任务合并为一个任务，并提高优先级、尽快开发上线。
+
+已验收产物：
+- `agent-workflow/execution/PLAN-priority-engine-2-2026-05-04.md`
+- `agent-workflow/product/priority-engine-2.md`
+- `agent-workflow/reports/priority-engine-2-2026-05-04.md`
+
+核心模型：
+- Priority Engine 2.0 是后台判断引擎，不新增前台栏目。
+- `Judgment Node = 赛道 + 能力 + 客户场景 + 证据阶段`。
+- The Point 不作为事实证据直接加权，只作为观点共识、分歧和边界信号。
+- 对外状态为：优先验证、持续观察、早期观察、谨慎观察、暂缓关注。
+
+合并任务：
+- 看板编号：`P0-8A`
+- Task ID：`WSD-20260504-22-priority-engine-2-fast-track-implementation`
+- 派发单：`agent-workflow/execution/WSD-20260504-22-priority-engine-2-fast-track-implementation.md`
+- 执行窗口短提示：`agent-workflow/execution/WSD-20260504-22-priority-engine-2-fast-track-implementation-window-prompt.md`
+- 收口文件：`agent-workflow/reports/WSD-20260504-22-priority-engine-2-fast-track-implementation-closeout.md`
+
+已合并不再单独执行：
+- `WSD-20260504-18-priority-engine-2-pm-boundary`
+- `WSD-20260504-19-ai-2-priority-engine-2-prompt-upgrade`
+- `WSD-20260504-20-judgment-node-dev-plan`
+- `WSD-20260504-21-priority-engine-2-qa-criteria`
+
+接手注意：
+- 本任务优先级已提升为 P0 / highest。
+- 必须保留旧 30 分评分表兼容。
+- 不新增普通前台栏目，不输出投资建议或确定性表达。
+- Dev 实现应采用兼容降级策略，历史 Markdown 没有 2.0 字段时可从旧评分标题、赛道、Opportunity / Trend 关系派生候选 Judgment Node。
+
+自动化影响：
+- `ai-2`：有影响。
+- `ai-the-point`：本轮不强制改，但需说明后续轻量增强项。
+- `ai-3`：短期不改闸门；若 Judgment Node 字段进入同步结果，需要后续补检查口径。
+
+## 2026-05-04 Netlify 预览部署验收交接
+
+最新状态：`P0-4A / WSD-20260504-17-netlify-preview-deploy` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-17-netlify-preview-deploy-closeout.md`
+
+可访问链接：
+- 不可变部署链接：`https://69f88cb84d559e9a6e9354bd--wavesight-ai-preview.netlify.app`
+- 站点默认链接：`https://wavesight-ai-preview.netlify.app`
+- Netlify 项目后台：`https://app.netlify.com/projects/wavesight-ai-preview`
+
+部署信息：
+- Netlify 站点名称：`wavesight-ai-preview`
+- Site ID：`7ab8a5d2-477b-439d-ad4b-57f449ebad9e`
+- Deploy ID：`69f88cb84d559e9a6e9354bd`
+- 发布目录：`04-Site/`
+- 新增 `netlify.toml`，内容仅为 `[build] publish = "04-Site"`。
+
+调度中枢复核：
+- 外部 HTTP 抽查首页、Daily、Signals、The Point、Opportunities、Trends、CSS、JS、data 均返回 200。
+- `GL-M4-001` 已更新为 `in_progress`，表示已完成预览部署阶段；正式上线仍需 release checklist、权限边界、备份和回滚方案。
+
+遗留风险：
+- `/signals.html` 源码中仍有历史遗留隐藏 `editorDialog` 编辑弹窗。
+- 该问题不阻塞本次 Netlify Preview 验收，但必须进入 `P0-6 / WSD-20260504-03-admin-boundary-qa` 处理。
+
+自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。
+
+## 2026-05-04 Priority Engine 2.0 快速落地验收交接
+
+最新状态：`P0-8A / WSD-20260504-22-priority-engine-2-fast-track-implementation` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-22-priority-engine-2-fast-track-implementation-closeout.md`
+
+已落地：
+- Priority Engine 2.0 保持后台判断能力，不新增普通前台栏目。
+- `ai-2` 提示词已保留旧 30 分表，并新增 Priority Engine 2.0 Judgment Node 拆解段。
+- `sync-data.mjs` 已输出 `judgmentNodes` 与 `priorityEngine` 摘要。
+- `check-relations.mjs` 已覆盖 `Priority -> Judgment Node` 和 `Judgment Node -> Priority / Signal / Trend / Opportunity`。
+- 网站数据已包含 `22` 个 Judgment Nodes，`39` 条 Priority Rows 全部进入 Judgment Node。
+
+调度中枢复核：
+- `node 04-Site/scripts/sync-data.mjs` 通过。
+- `node 04-Site/scripts/check-relations.mjs` 通过，硬错误 0，软提醒 12。
+- `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-123257.md`。
+- `GL-M2-006` 已更新为 `verify`。
+
+非阻塞遗留：
+- Netlify 未重新部署本轮 Priority Engine 2.0 数据；远端部署遇到授权 / 绑定问题，不冒充上线。
+- 旧 `04-Site/scoring.html` 中存在否定式文案 `不是投资建议`，后续 Copy / Admin 边界 QA 可处理。
+
+自动化影响：
+- `ai-2`：已影响，提示词已升级。
+- `ai-the-point`：本轮未改，后续可轻量增强观点立场、Judgment Node 和可验证边界。
+- `ai-3`：本轮未改统一同步闸门；后续需要把 Priority Row -> Judgment Node 检查摘要纳入闸门口径。
+
+## 2026-05-04 ai-3 Judgment Node 同步闸门派发交接
+
+最新状态：调度中枢已根据用户要求派发 P0 任务，用于升级 `ai-3` 统一网站同步闸门，加入 Priority Engine 2.0 Judgment Node 覆盖率与硬错误检查。
+
+任务：
+- 看板编号：`P0-8B`
+- Task ID：`WSD-20260504-23-ai-3-judgment-node-sync-gate`
+- 派发单：`agent-workflow/execution/WSD-20260504-23-ai-3-judgment-node-sync-gate.md`
+- 执行窗口短提示：`agent-workflow/execution/WSD-20260504-23-ai-3-judgment-node-sync-gate-window-prompt.md`
+- 收口文件：`agent-workflow/reports/WSD-20260504-23-ai-3-judgment-node-sync-gate-closeout.md`
+
+Agent 安排：
+- Workflow / Automation Agent、Dev Agent 牵头。
+- Intelligence Data Agent、QA / Acceptance Agent、PM Agent 协作。
+
+执行要求：
+- 在 `agent-workflow/tools/unified-site-sync.mjs` 中补充 Judgment Node 覆盖率与硬错误检查。
+- 必须确认 `priorityRows`、`judgmentNodes`、`priorityEngine` 摘要存在且互相一致。
+- Priority Row 无 Judgment Node、Judgment Node 无 Priority、覆盖率摘要缺失或不一致、Judgment Node 断链应阻止入站。
+- 同步后检查失败必须恢复同步前备份，不覆盖上一版有效数据。
+- 更新 `ai-3` 运行说明或实际自动化提示词；如果无法直接更新实际自动化配置，必须在 closeout 说明阻塞和替代文档。
+
+自动化影响：
+- 本任务可能影响自动化任务。
+- `ai-the-point`：默认不影响。
+- `ai-2`：间接影响，后续每日评分必须持续输出 Judgment Node 或可解析候选。
+- `ai-3`：直接影响，统一同步闸门口径将升级。
+
+调度中枢检查：
+- 已运行 `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-125015.md`。
+
+## 2026-05-04 ai-3 Judgment Node 同步闸门执行验收交接
+
+最新状态：`P0-8B / WSD-20260504-23-ai-3-judgment-node-sync-gate` 已进入执行并验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-23-ai-3-judgment-node-sync-gate-closeout.md`
+
+已完成：
+- `agent-workflow/tools/unified-site-sync.mjs` 已新增 Priority Engine 2.0 Judgment Node 硬闸门。
+- `ai-3` 实际自动化本体提示词已更新，新增 Judgment Node 覆盖率、硬错误代码和成功汇总要求。
+- `agent-workflow/execution/daily-automation-coordination-2026-05-03.md` 已更新 `ai-3` 运行说明。
+- `dispatch-board.md` 已将 `P0-8B` 标记为 `accepted`。
+
+硬闸门规则：
+- Priority Row -> Judgment Node 覆盖率必须为 100%。
+- 每个 Judgment Node 必须至少关联一个 Priority Row。
+- Judgment Node 关联的 Priority / Signal / Trend / Opportunity / Point 不得断链。
+- `priorityEngine` 摘要必须与实际数据一致。
+- The Point 只能作为观点共识、分歧或边界信号，不能作为事实证据直接加权。
+
+验证结果：
+- `node agent-workflow/tools/run-quality-gates.mjs automation --date=2026-05-04 --run-sync-gate` 通过。
+- `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-125900.md`。
+- `ai-3` 真实闸门状态：`synced`。
+- Priority Rows：39。
+- Judgment Nodes：22。
+- Priority Row -> Judgment Node 覆盖率：39/39。
+- 备份目录：`agent-workflow/backups/unified-site-sync/20260504-125611`。
+- 报告：`agent-workflow/reports/unified-site-sync-2026-05-04.md`。
+
+自动化影响：
+- `ai-the-point`：不影响。
+- `ai-2`：间接影响，后续每日评分必须持续输出 Judgment Node 或可解析候选。
+- `ai-3`：直接影响，统一同步闸门已升级并验证通过。
+
+## 2026-05-04 Signal 关键词与来源优化验收交接
+
+最新状态：`P0-7 / WSD-20260504-15-signal-keyword-source-optimization` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260504-15-signal-keyword-source-optimization-closeout.md`
+
+完成产物：
+- `提示词/关键词列表.md`：V4.2。
+- `提示词/监测提示词V4.0.md`：V4.2。
+- `agent-workflow/product/source-intelligence.md`：补充早期、开发者、投资、垂直行业和反证来源分层。
+- `agent-workflow/reports/signal-keyword-source-optimization-2026-05-04.md`。
+
+关键变化：
+- 每日 AI 商业雷达不再只偏向大企业、大融资和高曝光新闻。
+- 候选池固定为六类：成熟信号、早期融资 / 新投资方向、技术迭代、开源 / 开发者生态、垂直行业早期采用、反证与降温。
+- 下一次 `ai-2` 运行应观察早期信号覆盖率、反证覆盖率、高产词和低效词。
+- 每条 Signal 后续应记录 `触发查询` 和 `监测维度`，并保持 1 个主 Opportunity 与 6 点机会拆解。
+
+接手注意：
+- `GL-M2-004` 已更新为 `in_progress`，表示关键词策略已优化，但关键词质量检查脚本 / 周期复盘仍未完全完成。
+- 本任务未修改自动化配置对象；如后续发现 `ai-2` 没有充分读取 V4.2 文件，需要由 Workflow Agent 更新 `ai-2` 自动化提示摘要。
+
+自动化影响：
+- `ai-2`：有影响。
+- `ai-the-point`：不影响。
+- `ai-3`：不影响。
+
+## 2026-05-04 页面类任务派发闸门规则验收交接
+
+最新状态：计划外治理任务 `SYS-3 / WSD-page-dispatch-gate-rules` 已由调度中枢验收为 `accepted`。
+
+收口文件：
+- `agent-workflow/reports/WSD-page-dispatch-gate-rules-closeout-2026-05-04.md`
+
+规则报告：
+- `agent-workflow/reports/page-dispatch-gate-rules-2026-05-04.md`
+
+已更新：
+- `agent-workflow/governance/window-dispatch-hub.md`
+- `agent-workflow/execution/TASK-window-dispatch-template.md`
+- `agent-workflow/reports/TASK-window-closeout-template.md`
+- `agent-workflow/governance/agent-memory.md`
+- `agent-workflow/execution/dispatch-board.md`
+
+新硬规则：
+- 涉及首页、栏目页、详情页、会员页、Admin、移动端、`04-Site/*.html` 或 `04-Site/css/styles.css` 页面体验改动的任务，一律视为页面类任务。
+- 页面类任务必须经过：`PM 范围确认 -> UI/UE 页面规范表 -> Dev 按表实现 -> QA 独立截图/测量验收 -> Workflow 收口`。
+- 页面类任务 closeout 必须包含 UI/UE 页面规范表、Dev 逐条实现说明、QA 桌面 / 移动端截图和坐标 / 字号 / 间距 / 首屏节奏验收。
+- 缺少任一项时，调度中枢不得代补事实，不得标记 `accepted`，应退回执行窗口补齐。
+
+接手注意：
+- 重新派发首页首屏 P0 时必须先产出 UI/UE 页面规范表，不沿用旧轮播任务。
+- `P0-3A` Admin 工作台 closeout 需要按新页面类闸门验收；如果缺少规范表、逐条实现说明或截图/测量验收，不得 accepted。
+- 后续栏目标题矩阵、移动端设计和页面返修任务均必须套用新模板。
+
+验证：
+- 2026-05-04 21:26 调度中枢补跑 `node agent-workflow/tools/run-quality-gates.mjs syntax`，6 项检查通过，报告为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-132602.md`。
 
 自动化影响：不影响 `ai-the-point`、`ai-2`、`ai-3`。

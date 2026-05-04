@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>登录｜观澜AI｜WaveSight AI</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v=auth-refine-20260504" />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
   </head>
   <body data-page="login">
@@ -22,26 +22,33 @@
     </header>
     <main>
       <section class="page-title">
-        <p class="eyebrow">Login</p>
-        <h1>登录观澜AI</h1>
-        <p>继续查看每日商业信号、趋势脉络和机会拆解，把 AI 变化转成更清晰的经营议题。</p>
+        <p class="eyebrow">Account</p>
+        <h1>继续追踪 AI 商业信号</h1>
+        <p>把零散变化压缩成可讨论的商业判断。</p>
       </section>
       <section class="auth-layout">
         <form id="loginForm" class="auth-form">
           <div class="auth-form-head">
-            <p class="eyebrow">Member Login</p>
-            <h2>账号登录</h2>
+            <p class="eyebrow">Sign In</p>
+            <h2>登录账号</h2>
+            <p class="auth-note">登录后进入今日简报；权限到期时可在账户页续订。</p>
           </div>
           <label class="field"><span>邮箱</span><input name="contact" type="email" autocomplete="email" required /></label>
           <label class="field"><span>密码</span><input name="password" type="password" autocomplete="current-password" required /></label>
-          <button class="primary-btn" type="submit">登录</button>
-          <div id="authStatus" class="sync-status"></div>
+          <button class="primary-btn" type="submit">登录并继续阅读</button>
+          <p class="auth-secondary">还没有账号？<a href="./register.html">创建账号</a></p>
+          <div id="authStatus" class="sync-status" role="status" aria-live="polite"></div>
         </form>
         <aside class="auth-side">
-          <p class="eyebrow">New Here</p>
-          <h2>没有账号？先注册，把今天的信号看完整。</h2>
-          <p>观澜AI把热点、来源、趋势和机会卡串起来，减少重复搜集信息的时间。</p>
-          <a class="ghost-btn as-link" href="./register.html">注册</a>
+          <p class="eyebrow">Reading Access</p>
+          <h2>少看热闹，多看信号。</h2>
+          <p>每天把 AI 变化整理成可讨论的商业观察。</p>
+          <ul class="auth-facts">
+            <li><strong>今日主线</strong><span>先看最值得关注的变化</span></li>
+            <li><strong>来源边界</strong><span>区分事实、观点和反证</span></li>
+            <li><strong>机会观察</strong><span>判断哪些方向值得跟踪</span></li>
+          </ul>
+          <p class="auth-boundary">内容用于观察 AI 商业变化，不构成经营、投资或合作建议。</p>
         </aside>
       </section>
     </main>

@@ -79,7 +79,7 @@
       "priority": "high",
       "automation_level": "agent_draft_human_approve",
       "approval_required": true,
-      "status": "pending",
+      "status": "verify",
       "problem": "Tags 当前容易变成标签堆砌，无法真正连接 signal、priority、trend、opportunity。",
       "solution": "建立标签分层：赛道、职能、客户、场景、阶段、地域、证据、行动。",
       "acceptance": [
@@ -135,7 +135,7 @@
       "priority": "high",
       "automation_level": "agent_draft_human_approve",
       "approval_required": true,
-      "status": "in_progress",
+      "status": "verify",
       "problem": "Daily 当前容易变成每日内容列表，缺少付费级独立报告的观点、结构和行动建议。",
       "solution": "将 Daily Brief 固定为今日结论、关键 Signals、优先验证机会、趋势变化、行动建议、风险提醒六段式结构。",
       "acceptance": [
@@ -193,7 +193,7 @@
       "priority": "high",
       "automation_level": "agent_can_execute",
       "approval_required": false,
-      "status": "pending",
+      "status": "in_progress",
       "problem": "当前内容已经跨多个栏目，关系不稳会导致网站展示错位。",
       "solution": "新增 relation-check.mjs，检查 slug、tag、track、related IDs 的双向关系。",
       "acceptance": [
@@ -232,7 +232,7 @@
       "priority": "high",
       "automation_level": "agent_can_execute",
       "approval_required": false,
-      "status": "pending",
+      "status": "in_progress",
       "problem": "每日监测需要不断优化关键词和来源，否则会被低价值新闻、重复内容和噪音拖累。",
       "solution": "新增 keyword-quality-report 和 brief-quality-check，记录高产词、低效词、新增词、噪音来源和 Brief 质量。",
       "acceptance": [
@@ -276,7 +276,7 @@
       "acceptance": [
         "5 秒内能看懂观澜AI的价值",
         "首页不再像资讯流或后台数据页",
-        "文案强调商业判断、证据链和机会验证",
+        "文案强调商业判断、来源关系和观察边界",
         "桌面和移动端排版都不拥挤"
       ],
       "verification": "用浏览器截图检查桌面和移动端。"
@@ -348,7 +348,7 @@
       "priority": "high",
       "automation_level": "agent_draft_human_approve",
       "approval_required": true,
-      "status": "pending",
+      "status": "verify",
       "problem": "Admin 当前仍是本地控制台原型，功能分散、信息架构和管理效率还不足，后续需要作为独立后台持续开发。",
       "solution": "将 Admin 从会员模块拆出，单独规划管理后台功能、设计、页面、文案和运营工作流，集中承接内容同步、内容管理、用户权限、订阅订单、质量检查和发布准备。",
       "acceptance": [
@@ -522,6 +522,27 @@
       "verification": "查看 reports/WSD-agent-github-capability-learning-closeout-2026-05-04.md、reports/agent-github-capability-learning-2026-05-04.md、execution/WSD-agent-github-capability-learning.md、execution/dispatch-board.md、execution/TASK-window-dispatch-template.md、governance/window-dispatch-hub.md；运行 node agent-workflow/tools/run-quality-gates.mjs syntax，并校验 feature_list.json 可解析。"
     },
     {
+      "id": "GL-M2-006",
+      "milestone": "M2",
+      "title": "Priority Engine 2.0 判断节点快速落地",
+      "owner": "data",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": true,
+      "status": "verify",
+      "problem": "现有 Priority Engine 主要承接每日评分表和 Opportunity 匹配，还不足以形成可追踪、可复盘、可校准的后台判断引擎。",
+      "solution": "将 PM 边界确认、ai-2 提示词升级、Judgment Node 解析实现和 QA 验收合并为 P0 快速落地任务，在保留旧 30 分表兼容的前提下引入 Priority Engine 2.0。",
+      "acceptance": [
+        "Priority Engine 2.0 明确保持后台判断能力，不新增前台栏目",
+        "ai-2 提示词保留旧 30 分表并新增 2.0 拆解段",
+        "同步脚本能解析或派生 Judgment Node 兼容字段",
+        "关系检查覆盖 Priority Row 到 Judgment Node 的基础关系",
+        "QA 抽查评分解释、反证校准、The Point 非事实证据边界和非投资化表达",
+        "说明 ai-the-point、ai-2、ai-3 自动化影响"
+      ],
+      "verification": "查看 reports/WSD-20260504-22-priority-engine-2-fast-track-implementation-closeout.md；运行 sync-data、check-relations 和 node agent-workflow/tools/run-quality-gates.mjs syntax。"
+    },
+    {
       "id": "GL-M4-001",
       "milestone": "M4",
       "title": "云端部署准备",
@@ -531,7 +552,7 @@
       "approval_required": true,
       "status": "pending",
       "problem": "当前仍以本地 Obsidian 和静态站为主，需要为云端运营准备路径、权限、构建和备份。",
-      "solution": "完成部署检查、配置化路径、权限策略、数据备份、回滚和发布验收。",
+      "solution": "完成部署检查、配置化路径、权限策略、数据备份、回滚和发布验收。当前已完成 Netlify Preview 部署，正式上线仍需 release checklist、权限边界、备份和回滚方案。",
       "acceptance": [
         "内容路径全部配置化",
         "构建脚本能在云端环境运行",

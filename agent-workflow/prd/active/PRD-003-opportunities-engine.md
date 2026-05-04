@@ -68,6 +68,17 @@ Opportunities 是观澜 AI 的长期资产。新的产品方向是：Scoring 不
 - `risks`
 - `status`
 
+Priority Engine 2.0 兼容字段：
+
+- `judgment_id`
+- `priority_score_v2`
+- `priority_status_v2`
+- `evidence_quality_score`
+- `momentum_score`
+- `point_support_score`
+- `counter_evidence_score`
+- `review_7d_status`
+
 避免字段：
 
 - `company_as_title`
@@ -106,4 +117,4 @@ Opportunities 是观澜 AI 的长期资产。新的产品方向是：Scoring 不
 - 机会标题不含公司名后缀。
 - 管理员保存后刷新不丢失。
 - 评分对象显示为机会方向或赛道，不显示为公司榜单。
-
+- Priority Engine 2.0 字段进入网站数据时，仍只对外表达为优先验证、持续观察、早期观察、谨慎观察或暂缓关注，不展示投资化判断。

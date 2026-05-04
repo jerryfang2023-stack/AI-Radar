@@ -5,6 +5,10 @@ const userKey = "wavesight-users";
 const sessionKey = "wavesight-session";
 const settingsKey = "wavesight-membership-settings";
 const ordersKey = "wavesight-orders";
+const invitesKey = "wavesight-invite-codes";
+const inviteRequestsKey = "wavesight-invite-requests";
+const analyticsKey = "wavesight-analytics";
+const visitorKey = "wavesight-visitor-id";
 const defaultQuestions = ["解决什么具体问题？", "目标客户是谁？", "替代或优化什么流程？", "商业模式（怎么赚钱）", "为什么现在值得关注？", "是否可迁移中国市场？"];
 const planCatalog = {
   monthly: {
@@ -187,6 +191,88 @@ function saveOrders(orders) {
   localStorage.setItem(ordersKey, JSON.stringify(orders));
 }
 
+function getInvites() {
+  try {
+    return JSON.parse(localStorage.getItem(invitesKey) || "[]");
+  } catch {
+    return [];
+  }
+}
+
+function saveInvites(invites) {
+  localStorage.setItem(invitesKey, JSON.stringify(invites));
+}
+
+function getInviteRequests() {
+  try {
+    return JSON.parse(localStorage.getItem(inviteRequestsKey) || "[]");
+  } catch {
+    return [];
+  }
+}
+
+function saveInviteRequests(requests) {
+  localStorage.setItem(inviteRequestsKey, JSON.stringify(requests));
+}
+
+function normalizeInviteCode(code = "") {
+  return String(code).trim().toUpperCase().replace(/\s+/g, "");
+}
+
+function inviteStatus(invite = {}) {
+  if (invite.status === "paused") return "paused";
+  if (invite.expiresAt && invite.expiresAt < todayDate()) return "expired";
+  if (Number(invite.usedCount || 0) >= Number(invite.maxUses || 1)) return "used";
+  return "active";
+}
+
+function generateInviteCode() {
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  let code = "WS-";
+  for (let index = 0; index < 8; index += 1) code += alphabet[Math.floor(Math.random() * alphabet.length)];
+  return code;
+}
+
+function createInvite({ maxUses = 1, days = 30, note = "", requestId = "", email = "" } = {}) {
+  const existing = new Set(getInvites().map((invite) => normalizeInviteCode(invite.code)));
+  let code = generateInviteCode();
+  while (existing.has(code)) code = generateInviteCode();
+  return {
+    id: `invite-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    code,
+    status: "active",
+    maxUses: Math.max(1, Number(maxUses || 1)),
+    usedCount: 0,
+    usedBy: [],
+    note,
+    requestId,
+    email,
+    expiresAt: addDays(todayDate(), Math.max(1, Number(days || 30))),
+    createdAt: new Date().toISOString(),
+  };
+}
+
+function consumeInviteCode(code, contact) {
+  const normalized = normalizeInviteCode(code);
+  const invites = getInvites();
+  const index = invites.findIndex((invite) => normalizeInviteCode(invite.code) === normalized);
+  if (index === -1) return { ok: false, message: "邀请码不存在，请检查后重试。" };
+  const invite = invites[index];
+  const status = inviteStatus(invite);
+  if (status === "paused") return { ok: false, message: "这个邀请码已暂停使用。" };
+  if (status === "expired") return { ok: false, message: "这个邀请码已过期，请联系观澜AI团队。" };
+  if (status === "used") return { ok: false, message: "这个邀请码已被使用完。" };
+  const usedBy = Array.isArray(invite.usedBy) ? invite.usedBy : [];
+  invites[index] = {
+    ...invite,
+    usedCount: Number(invite.usedCount || 0) + 1,
+    usedBy: [...usedBy, { contact, usedAt: new Date().toISOString() }],
+    updatedAt: new Date().toISOString(),
+  };
+  saveInvites(invites);
+  return { ok: true, invite: invites[index] };
+}
+
 function currentSessionId() {
   return localStorage.getItem(sessionKey) || "";
 }
@@ -229,6 +315,87 @@ function hasAccess() {
 
 function currentReturnPath() {
   return encodeURIComponent(`${location.pathname.split("/").pop() || "index.html"}${location.search || ""}`);
+}
+
+function pageAnalyticsMeta() {
+  const map = {
+    home: { key: "home", label: "首页", group: "入口" },
+    daily: { key: "daily", label: "Daily Brief", group: "栏目" },
+    "daily-detail": { key: "daily", label: "Daily Brief", group: "栏目详情" },
+    signals: { key: "signals", label: "Signals", group: "栏目" },
+    "signal-detail": { key: "signals", label: "Signals", group: "栏目详情" },
+    "the-point": { key: "point", label: "The Point", group: "栏目" },
+    "point-detail": { key: "point", label: "The Point", group: "栏目详情" },
+    "point-daily": { key: "point", label: "The Point", group: "栏目详情" },
+    "point-source": { key: "point", label: "The Point", group: "栏目详情" },
+    opportunities: { key: "opportunities", label: "Opportunities", group: "栏目" },
+    "opportunity-detail": { key: "opportunities", label: "Opportunities", group: "栏目详情" },
+    trends: { key: "trends", label: "Trends", group: "栏目" },
+    "trend-detail": { key: "trends", label: "Trends", group: "栏目详情" },
+    pricing: { key: "pricing", label: "Pricing", group: "转化" },
+    register: { key: "register", label: "注册", group: "转化" },
+    login: { key: "login", label: "登录", group: "转化" },
+    account: { key: "account", label: "账户", group: "会员" },
+    checkout: { key: "checkout", label: "Checkout", group: "转化" },
+  };
+  return map[page] || { key: page || "unknown", label: page || "未知页面", group: "其他" };
+}
+
+function getVisitorId() {
+  let id = localStorage.getItem(visitorKey);
+  if (!id) {
+    id = `visitor-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+    localStorage.setItem(visitorKey, id);
+  }
+  return id;
+}
+
+function getAnalytics() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(analyticsKey) || "{}") || {};
+    return {
+      totalPv: Number(parsed.totalPv || 0),
+      visitors: Array.isArray(parsed.visitors) ? parsed.visitors : [],
+      days: parsed.days || {},
+      columns: parsed.columns || {},
+      recent: Array.isArray(parsed.recent) ? parsed.recent : [],
+    };
+  } catch {
+    return { totalPv: 0, visitors: [], days: {}, columns: {}, recent: [] };
+  }
+}
+
+function saveAnalytics(analytics) {
+  localStorage.setItem(analyticsKey, JSON.stringify(analytics));
+}
+
+function trackPageView() {
+  if (page === "admin") return;
+  const visitorId = getVisitorId();
+  const meta = pageAnalyticsMeta();
+  const today = todayDate();
+  const analytics = getAnalytics();
+  const visitors = new Set(analytics.visitors || []);
+  visitors.add(visitorId);
+  const day = analytics.days[today] || { pv: 0, visitors: [] };
+  const dayVisitors = new Set(day.visitors || []);
+  dayVisitors.add(visitorId);
+  const column = analytics.columns[meta.key] || { label: meta.label, group: meta.group, pv: 0, visitors: [] };
+  const columnVisitors = new Set(column.visitors || []);
+  columnVisitors.add(visitorId);
+  analytics.totalPv += 1;
+  analytics.visitors = [...visitors];
+  analytics.days[today] = { pv: Number(day.pv || 0) + 1, visitors: [...dayVisitors] };
+  analytics.columns[meta.key] = {
+    ...column,
+    label: meta.label,
+    group: meta.group,
+    pv: Number(column.pv || 0) + 1,
+    visitors: [...columnVisitors],
+    updatedAt: new Date().toISOString(),
+  };
+  analytics.recent = [{ page, key: meta.key, label: meta.label, at: new Date().toISOString() }, ...(analytics.recent || [])].slice(0, 100);
+  saveAnalytics(analytics);
 }
 
 function userAccessLabel(user = currentUser()) {
@@ -619,9 +786,11 @@ function scoreTrackFallback(row = {}) {
 
 function verdictLabel(value = "") {
   const raw = clean(typeof value === "object" ? value.verdict : value);
-  if (/做多|优先/.test(raw)) return "优先验证";
-  if (/观察|跟踪|中性/.test(raw)) return "持续观察";
-  if (/谨慎|回避|暂缓|做空/.test(raw)) return "暂缓投入";
+  if (/priority_verify|优先/.test(raw)) return "优先验证";
+  if (/active_watch|持续|观察|跟踪|中性/.test(raw)) return "持续观察";
+  if (/early_watch|早期/.test(raw)) return "早期观察";
+  if (/cautious|谨慎/.test(raw)) return "谨慎观察";
+  if (/downgrade|回避|暂缓/.test(raw)) return "暂缓关注";
   return raw || "-";
 }
 
@@ -720,6 +889,7 @@ function dailyUrl(date = "") {
 
 function init() {
   renderAuthControls();
+  trackPageView();
   if (!requireAccess()) return;
   if (page === "home") renderHome();
   if (page === "daily") renderDailyPage();
@@ -737,6 +907,7 @@ function init() {
   if (page === "opportunity-detail") renderOpportunityDetailPage();
   if (page === "tags") renderTagsPage();
   if (page === "register") renderRegisterPage();
+  if (page === "invite-request") renderInviteRequestPage();
   if (page === "login") renderLoginPage();
   if (page === "account") renderAccountPage();
   if (page === "pricing") renderPricingPage();
@@ -748,6 +919,7 @@ function init() {
 
 function bindGlobalEvents() {
   $("#resetBtn")?.addEventListener("click", () => {
+    if (page === "admin" && !window.confirm("清除本机编辑缓存后，未写入网站数据文件的改动会丢失。确认继续？")) return;
     localStorage.removeItem(storageKey);
     state = structuredClone(seedData);
     selectedId = state.signals[0]?.id || null;
@@ -791,7 +963,7 @@ function renderHome() {
 function renderStats() {
   const scores = state.signals.map(scoreOf).filter(Boolean);
   if ($("#statSignals")) $("#statSignals").textContent = state.signals.length;
-  if ($("#statLong")) $("#statLong").textContent = scores.filter((score) => score.verdict === "做多").length;
+  if ($("#statLong")) $("#statLong").textContent = scores.filter((score) => score.priorityStatusV2 === "priority_verify" || score.total >= 25).length;
   if ($("#statTopScore")) $("#statTopScore").textContent = Math.max(0, ...scores.map((score) => score.total));
   if ($("#statTrends")) $("#statTrends").textContent = state.trends.length;
   if ($("#statOpportunities")) $("#statOpportunities").textContent = state.opportunities.length;
@@ -1033,6 +1205,264 @@ function pointsForOpportunity(opp = {}) {
     .slice(0, 5);
 }
 
+function publicPoints() {
+  return (state.points || []).filter((point) => !["hidden", "needs_review"].includes(String(point.status || "").toLowerCase()));
+}
+
+function pointSourceTypeLabel(point = {}) {
+  const source = clean(point.source || point.sourceType || "");
+  if (/youtube/i.test(source)) return "YouTube";
+  if (/\bx\b|twitter/i.test(source)) return "X";
+  if (/podcast/i.test(source)) return "Podcast";
+  if (/blog|official/i.test(source)) return "Blog";
+  return source.split("/")[0]?.trim() || "Source";
+}
+
+function pointSourceDisplay(point = {}) {
+  return [pointPersonDisplay(point), pointSourceTypeLabel(point)].filter(Boolean).join(" · ");
+}
+
+function pointReadableQuote(point = {}, max = 180) {
+  return pointReadableText(point, max) || pointOriginal(point, max) || shortText(point.pointSummary || pointTitle(point), max);
+}
+
+function pointHomeTitle(point = {}, max = 40) {
+  const title = pointTitle(point)
+    .replace(/[“”"]/g, "")
+    .replace(/ 的工程量会创造更多工作，而不是一键替代/, "：工程量会创造更多工作")
+    .replace(/ 的体验在 12 月后出现跃迁式变化/, "：体验出现跃迁式变化")
+    .replace(/ 更擅长自动化可验证的工作，能力锯齿化会长期存在/, "：更擅长可验证工作")
+    .replace(/^把 AI 当作公用事业，而不是生命体$/, "把 AI 当作公用事业")
+    .replace(/^全网最强并行 Agent 工厂正在发生在在线 IDE 里$/, "并行 Agent 工厂正在进入在线 IDE");
+  return shortText(title, max);
+}
+
+function pointStatusKind(point = {}, topicCounts = new Map()) {
+  const text = normalizeText([point.stance, point.boundary, point.interpretation, point.commercialMeaning, point.title].join(" "));
+  if (/cautious|critical|skeptical|debate|risk|谨慎|分歧|风险|反证|边界|不确定/.test(text)) return "debate";
+  const repeatedTopic = (point.topics || []).some((topic) => (topicCounts.get(topic) || 0) > 1);
+  if (repeatedTopic) return "consensus";
+  return "early";
+}
+
+function pointStatusLabel(kind = "") {
+  return {
+    consensus: "正在形成共识",
+    debate: "出现分歧",
+    early: "早期信号",
+  }[kind] || "早期信号";
+}
+
+function pointStatusCopy(kind = "") {
+  return {
+    consensus: "多位高质量来源正在反复谈到同一方向。",
+    debate: "观点提示了路径差异、风险或采用边界。",
+    early: "单条观点质量较高，但还需要继续观察。",
+  }[kind] || "单条观点质量较高，但还需要继续观察。";
+}
+
+function latestPublicPointDate() {
+  return [...new Set(publicPoints().map((point) => point.date).filter(Boolean))].sort().at(-1) || "";
+}
+
+function publicPointsForDate(date = "") {
+  return publicPoints()
+    .filter((point) => !date || point.date === date)
+    .sort((a, b) => (b.pointScore || 0) - (a.pointScore || 0) || (a.rank || 99) - (b.rank || 99));
+}
+
+function pointTopicCounts(points = []) {
+  const counts = new Map();
+  points.forEach((point) => (point.topics || []).forEach((topic) => counts.set(topic, (counts.get(topic) || 0) + 1)));
+  return counts;
+}
+
+function uniqueBy(items = [], keyFn = (item) => item.id) {
+  const map = new Map();
+  items.forEach((item) => {
+    const key = keyFn(item);
+    if (key && !map.has(key)) map.set(key, item);
+  });
+  return [...map.values()];
+}
+
+function relatedSignalsForPoint(point = {}, max = 3) {
+  const ids = new Set(point.relatedSignalIds || []);
+  return (state.signals || []).filter((signal) => ids.has(signal.id)).slice(0, max);
+}
+
+function relatedTrendsForPoint(point = {}, max = 3) {
+  const ids = new Set(point.relatedTrendIds || []);
+  return (state.trends || []).filter((trend) => ids.has(trend.track) || ids.has(trend.id)).slice(0, max);
+}
+
+function relatedOpportunitiesForPoint(point = {}, max = 3) {
+  const ids = new Set(point.relatedOpportunityIds || []);
+  return (state.opportunities || []).filter((opp) => ids.has(opp.id) || ids.has(opp.opportunityId)).slice(0, max);
+}
+
+function renderPointRelationLinks(point = {}) {
+  return point?.id ? `<div class="point-relation-links"><a href="${pointUrl(point)}">查看观点</a></div>` : "";
+}
+
+function renderPointSourceActions(point = {}) {
+  return `
+    <div class="point-source-actions">
+      <a href="${pointUrl(point)}">查看观点</a>
+    </div>
+  `;
+}
+
+function renderPointHomeCard(point = {}, topicCounts = new Map(), compact = false) {
+  const kind = pointStatusKind(point, topicCounts);
+  return `
+    <article class="${compact ? "point-judgment-card" : "point-home-row"}">
+      <div class="point-home-row-meta">
+        <span>${escapeHtml(pointStatusLabel(kind))}</span>
+        <strong>${escapeHtml(pointSourceDisplay(point))}</strong>
+        <small>${escapeHtml([point.date, pointTopicLabel(point)].filter(Boolean).join(" · "))}</small>
+      </div>
+      <div class="point-home-row-body">
+        <h3><a href="${pointUrl(point)}">${escapeHtml(pointHomeTitle(point, compact ? 32 : 42))}</a></h3>
+        <p class="point-original-summary">${escapeHtml(pointReadableQuote(point, compact ? 118 : 176))}</p>
+        <p class="point-guanlan-note"><b>观澜解读</b>${escapeHtml(pointBrief(point, compact ? 90 : 132))}</p>
+      </div>
+      ${renderPointSourceActions(point)}
+    </article>
+  `;
+}
+
+function renderPointJudgmentGroups(points = []) {
+  const topicCounts = pointTopicCounts(points);
+  const grouped = { consensus: [], debate: [], early: [] };
+  points.forEach((point) => grouped[pointStatusKind(point, topicCounts)].push(point));
+  const fallback = points.slice(0, 3);
+  const groups = [
+    ["consensus", grouped.consensus.length ? grouped.consensus : fallback],
+    ["debate", grouped.debate.length ? grouped.debate : fallback.slice(0, 2)],
+    ["early", grouped.early.length ? grouped.early : fallback.slice(1, 3)],
+  ];
+  return `
+    <section class="point-judgment-grid" aria-label="The Point 判断分组">
+      ${groups
+        .map(([kind, items]) => {
+          const point = items[0];
+          return `
+            <article class="point-judgment-panel ${kind}">
+              <span>${escapeHtml(pointStatusLabel(kind))}</span>
+              <p>${escapeHtml(pointStatusCopy(kind))}</p>
+              ${point ? renderPointHomeCard(point, topicCounts, true) : `<div class="empty-state">暂无可展示观点。</div>`}
+            </article>
+          `;
+        })
+        .join("")}
+    </section>
+  `;
+}
+
+function collectPointRelatedAssets(points = []) {
+  const signals = uniqueBy(points.flatMap((point) => relatedSignalsForPoint(point, 2)), (item) => item.id).slice(0, 4);
+  const trends = uniqueBy(points.flatMap((point) => relatedTrendsForPoint(point, 2)), (item) => item.track || item.id).slice(0, 4);
+  const opportunities = uniqueBy(points.flatMap((point) => relatedOpportunitiesForPoint(point, 2)), (item) => item.id || item.opportunityId).slice(0, 4);
+  return { signals, trends, opportunities };
+}
+
+function renderPointRelatedLane(title, eyebrow, items = [], renderItem) {
+  return `
+    <section class="point-related-lane">
+      <div class="point-related-lane-head">
+        <span>${escapeHtml(eyebrow)}</span>
+        <h3>${escapeHtml(title)}</h3>
+      </div>
+      <div class="point-related-list">
+        ${items.length ? items.map((item, index) => renderItem(item, index)).join("") : `<p>暂无关联内容。</p>`}
+      </div>
+    </section>
+  `;
+}
+
+function renderPointRelatedAssets(points = []) {
+  const assets = collectPointRelatedAssets(points);
+  return `
+    <section class="point-related-assets">
+      <header class="point-related-head">
+        <div>
+          <p class="eyebrow">Related Judgment</p>
+          <h2>相关判断</h2>
+        </div>
+        <p>从今日一线观点延展出的事实、趋势与机会方向。</p>
+      </header>
+      <div class="point-related-frame">
+        ${renderPointRelatedLane("相关信号", "Signals", assets.signals, (signal, index) => `
+          <a class="point-related-item" href="${signalUrl(signal)}">
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <div><strong>${escapeHtml(shortText(signalHeadline(signal), 46))}</strong><small>${escapeHtml(signalMeaningText(signal))}</small></div>
+          </a>
+        `)}
+        ${renderPointRelatedLane("相关趋势", "Trends", assets.trends, (trend, index) => `
+          <a class="point-related-item" href="${trendUrl(trend)}">
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <div><strong>${escapeHtml(shortText(trend.track, 30))}</strong><small>${escapeHtml(shortText(trend.verdict || trend.thirtyDay || trend.sevenDay, 64))}</small></div>
+          </a>
+        `)}
+        ${renderPointRelatedLane("相关机会", "Opportunities", assets.opportunities, (opp, index) => `
+          <a class="point-related-item" href="${opportunityUrl(opp)}">
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <div><strong>${escapeHtml(shortText(opp.title, 32))}</strong><small>${escapeHtml(shortText(opportunityBrief(opp), 64))}</small></div>
+          </a>
+        `)}
+      </div>
+    </section>
+  `;
+}
+
+function renderPointDates() {
+  const box = $("#pointDates");
+  if (!box) return;
+  const dates = [...new Set(publicPoints().map((point) => point.date).filter(Boolean))].sort().reverse().slice(0, 8);
+  box.innerHTML = dates.length
+    ? dates
+        .map((date) => {
+          const points = publicPointsForDate(date);
+          const people = groupPointsByPerson(points).length;
+          return `<a href="${pointDailyUrl(date)}"><strong>${escapeHtml(date)}</strong><span>${escapeHtml(`${points.length} 条观点 · ${people} 位来源`)}</span></a>`;
+        })
+        .join("")
+    : `<div class="empty-state">暂无往期观点。</div>`;
+}
+
+function pointTopicUrl(topic = "") {
+  return `./the-point.html?topic=${encodeURIComponent(topic)}`;
+}
+
+function topicPoints(topic = "") {
+  const target = normalizeText(topic);
+  if (!target) return [];
+  return publicPoints()
+    .filter((point) => (point.topics || []).some((item) => normalizeText(item) === target))
+    .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")) || (b.pointScore || 0) - (a.pointScore || 0));
+}
+
+function renderPointTopicCollection(topic = "") {
+  const points = topicPoints(topic).slice(0, 12);
+  if (!topic || !points.length) return "";
+  const topicCounts = pointTopicCounts(points);
+  return `
+    <section class="point-topic-collection">
+      <header class="point-topic-collection-head">
+        <div>
+          <p class="eyebrow">Topic Collection</p>
+          <h2>${escapeHtml(topic)}</h2>
+        </div>
+        <a href="./the-point.html">返回最新观点</a>
+      </header>
+      <div class="point-topic-collection-list">
+        ${points.map((point) => renderPointHomeCard(point, topicCounts)).join("")}
+      </div>
+    </section>
+  `;
+}
+
 function renderHomeHighlights() {
   const box = $("#homeHighlights");
   if (!box) return;
@@ -1097,39 +1527,47 @@ function renderThePointPage() {
   const archive = $("#pointArchive");
   const topicBox = $("#pointTopics");
   if (!archive) return;
-  const dates = [...new Set((state.points || []).map((point) => point.date).filter(Boolean))].sort().reverse();
-  archive.innerHTML = dates.length
-    ? dates
-        .map((date) => {
-          const points = pointsForDate(date);
-          const groups = groupPointsByPerson(points);
-          return `
-            <section class="point-date-section">
-              <a class="point-date-head" href="${pointDailyUrl(date)}">
-                <strong>${escapeHtml(date)}</strong>
-                <span>${escapeHtml(String(points.length))} 条观点 · ${escapeHtml(String(groups.length))} 位人物</span>
-              </a>
-              <div class="point-person-grid">
-                ${groups.map((group) => {
-                  const primary = group.points[0];
-                  return `<article class="point-person-mini">
-                    <a class="point-person-main" href="${pointUrl(primary)}">
-                      <div class="point-person-identity">
-                        <strong>${escapeHtml(group.person)}</strong>
-                        ${group.title ? `<span>${escapeHtml(group.title)}</span>` : ""}
-                      </div>
-                      <p>${escapeHtml(pointTranslatedPreview(primary, 150))}</p>
-                      <small>${escapeHtml([group.points.length > 1 ? `${group.points.length} 条观点` : "1 条观点", pointTopicLabel(primary)].filter(Boolean).join(" · "))}</small>
-                    </a>
-                    ${groupPrimaryUrl(group) ? `<div class="point-mini-source">${pointSourceLink({ originalUrl: groupPrimaryUrl(group) })}</div>` : ""}
-                  </article>`;
-                }).join("")}
-              </div>
-            </section>
-          `;
-        })
-        .join("")
-    : `<div class="empty-state">暂无 The Point。内容更新后，这里会按日期呈现。</div>`;
+  const latestDate = latestPublicPointDate();
+  const latestPoints = publicPointsForDate(latestDate);
+  const topicCounts = pointTopicCounts(latestPoints);
+  const lead = latestPoints[0];
+  const todayRows = latestPoints.slice(0, 10);
+  const selectedTopic = params.get("topic") || "";
+  const topicCollection = renderPointTopicCollection(selectedTopic);
+  archive.innerHTML = lead
+    ? topicCollection || `
+      <section class="point-home-lead">
+        <div class="point-lead-copy">
+          <div class="point-lead-meta">
+            <span>${escapeHtml(pointStatusLabel(pointStatusKind(lead, topicCounts)))}</span>
+            <strong>${escapeHtml(pointSourceDisplay(lead))}</strong>
+            <small>${escapeHtml([pointSourceTypeLabel(lead), lead.date].filter(Boolean).join(" · "))}</small>
+          </div>
+          <h2>${escapeHtml(pointHomeTitle(lead, 34))}</h2>
+          <blockquote>${escapeHtml(pointReadableQuote(lead, 210))}</blockquote>
+          <div class="point-lead-interpretation">
+            <span>观澜解读</span>
+            <p>${escapeHtml(pointBrief(lead, 156))}</p>
+          </div>
+          ${renderPointSourceActions(lead)}
+        </div>
+        <div class="point-lead-lines">
+          ${["consensus", "debate", "early"].map((kind) => `<article><span>${escapeHtml(pointStatusLabel(kind))}</span><p>${escapeHtml(pointStatusCopy(kind))}</p></article>`).join("")}
+        </div>
+      </section>
+      ${renderPointJudgmentGroups(latestPoints)}
+      <section class="point-today-section">
+        <div class="point-home-section-head">
+          <p class="eyebrow">Today</p>
+          <h2>${escapeHtml(latestDate)} 今日一线观点</h2>
+        </div>
+        <div class="point-home-list">
+          ${todayRows.map((point) => renderPointHomeCard(point, topicCounts)).join("")}
+        </div>
+      </section>
+    `
+    : `<div class="empty-state">暂无一线观点。下一次内容发布后会在这里呈现。</div>`;
+  renderPointDates();
   renderPointTopics(topicBox);
 }
 
@@ -1142,7 +1580,7 @@ function renderPointDailyPage() {
   const groups = groupPointsByPerson(allPoints);
   const topGroups = groups.slice(0, 10);
   const remainingGroups = groups.slice(10);
-  const renderGroupCards = (items) =>
+  const renderGroupCards = (items, startIndex = 0) =>
     items
       .map(
           (group, index) => {
@@ -1150,7 +1588,7 @@ function renderPointDailyPage() {
             return `
             <article class="point-card point-person-card">
               <a href="${pointUrl(primary)}">
-                <span class="point-rank">${String(index + 1).padStart(2, "0")}</span>
+                <span class="point-rank">${String(startIndex + index + 1).padStart(2, "0")}</span>
                 <div>
                   <p class="eyebrow">${escapeHtml(pointTopicLabel(primary))}</p>
                   <div class="point-person-row">
@@ -1182,7 +1620,7 @@ function renderPointDailyPage() {
             ${renderGroupCards(topGroups)}
           </section>
           <section class="point-section">
-            ${remainingGroups.length ? renderGroupCards(remainingGroups) : `<div class="empty-state">今日暂无更多观点。</div>`}
+            ${remainingGroups.length ? renderGroupCards(remainingGroups, topGroups.length) : `<div class="empty-state">今日暂无更多观点。</div>`}
           </section>
         </div>
         <aside class="point-ranking-panel">
@@ -1203,11 +1641,11 @@ function renderPointTopics(topicBox) {
       ? topics
           .map(
             (topic) => `
-              <article>
+              <a href="${pointTopicUrl(topic.name)}">
                 <span>${escapeHtml(topic.momentum === "rising" ? "升温" : "观察")}</span>
                 <strong>${escapeHtml(topic.name)}</strong>
                 <small>7日热度 ${escapeHtml(topic.heat_7d || 0)} · 30日热度 ${escapeHtml(topic.heat_30d || 0)}</small>
-              </article>
+              </a>
             `
           )
           .join("")
@@ -2708,8 +3146,7 @@ function refreshCurrentPage() {
 function renderRegisterPage() {
   const form = $("#registerForm");
   const status = $("#authStatus");
-  if (!form) return;
-  form.addEventListener("submit", (event) => {
+  if (form) form.addEventListener("submit", (event) => {
     event.preventDefault();
     const contact = form.contact.value.trim().toLowerCase();
     const password = form.password.value;
@@ -2722,6 +3159,11 @@ function renderRegisterPage() {
       setStatusMessage(status, "两次输入的密码不一致。");
       return;
     }
+    const inviteCode = normalizeInviteCode(form.inviteCode?.value || "");
+    if (!inviteCode) {
+      setStatusMessage(status, "请填写邀请码。");
+      return;
+    }
     const users = getUsers();
     const existing = users.find((user) => String(user.contact || "").trim().toLowerCase() === contact);
     if (existing) {
@@ -2729,32 +3171,45 @@ function renderRegisterPage() {
         setStatusMessage(status, "这个邮箱已经注册，请直接登录。");
         return;
       }
-      const updatedUser = updateUser(existing.id, {
-        name: form.name.value.trim() || existing.name,
-        contact,
-        password,
-        company: form.company.value.trim() || existing.company,
-        roleTitle: form.roleTitle.value.trim() || existing.roleTitle,
-      });
-      setCurrentUser(updatedUser);
-      setStatusMessage(status, "密码已设置，正在进入账户。");
-      window.setTimeout(() => {
-        location.href = params.get("return") || "./account.html";
-      }, 400);
+    }
+    const inviteResult = consumeInviteCode(inviteCode, contact);
+    if (!inviteResult.ok) {
+      setStatusMessage(status, inviteResult.message);
       return;
     }
     const settings = getMembershipSettings();
     const now = todayDate();
+    if (existing) {
+      const updatedUser = updateUser(existing.id, {
+        name: form.name.value.trim() || existing.name,
+        contact,
+        password,
+        company: form.company?.value?.trim() || existing.company,
+        roleTitle: form.roleTitle?.value?.trim() || existing.roleTitle,
+        inviteCode,
+        status: existing.status || "trial",
+        plan: existing.plan || "trial",
+        trialStart: existing.trialStart || now,
+        accessUntil: existing.accessUntil || addDays(now, settings.trialDays),
+      });
+      setCurrentUser(updatedUser);
+      setStatusMessage(status, "密码已设置，正在进入账户。");
+      window.setTimeout(() => {
+        location.href = params.get("return") || "./daily.html";
+      }, 400);
+      return;
+    }
     const user = {
       id: `user-${Date.now()}`,
       name: form.name.value.trim(),
       contact,
       password,
-      company: form.company.value.trim(),
-      roleTitle: form.roleTitle.value.trim(),
+      company: form.company?.value?.trim() || "",
+      roleTitle: form.roleTitle?.value?.trim() || "",
       role: "user",
       status: "trial",
       plan: "trial",
+      inviteCode,
       trialStart: now,
       accessUntil: addDays(now, settings.trialDays),
       createdAt: new Date().toISOString(),
@@ -2763,8 +3218,44 @@ function renderRegisterPage() {
     setCurrentUser(user);
     setStatusMessage(status, `注册成功，阅读权限有效期至 ${formatDate(user.accessUntil)}。`);
     window.setTimeout(() => {
-      location.href = params.get("return") || "./account.html";
+      location.href = params.get("return") || "./daily.html";
     }, 400);
+  });
+}
+
+function renderInviteRequestPage() {
+  const requestForm = $("#inviteRequestForm");
+  const requestStatus = $("#inviteRequestStatus");
+  if (requestForm) requestForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const email = requestForm.requestEmail.value.trim().toLowerCase();
+    const company = requestForm.requestCompany.value.trim();
+    const roleTitle = requestForm.requestRoleTitle.value.trim();
+    const reason = requestForm.requestReason.value.trim();
+    if (!email || !company || !roleTitle || !reason) {
+      setStatusMessage(requestStatus, "请补充邮箱、公司、身份和申请理由。");
+      return;
+    }
+    const requests = getInviteRequests();
+    const existingIndex = requests.findIndex((request) => String(request.email || "").trim().toLowerCase() === email && request.status !== "sent");
+    const nextRequest = {
+      id: existingIndex >= 0 ? requests[existingIndex].id : `invite-request-${Date.now()}`,
+      email,
+      company,
+      roleTitle,
+      reason,
+      status: "pending",
+      createdAt: existingIndex >= 0 ? requests[existingIndex].createdAt : new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    if (existingIndex >= 0) {
+      requests[existingIndex] = nextRequest;
+      saveInviteRequests(requests);
+    } else {
+      saveInviteRequests([nextRequest, ...requests]);
+    }
+    requestForm.reset();
+    setStatusMessage(requestStatus, "已提交。审核后，邀请码会通过邮箱发放。");
   });
 }
 
@@ -2790,7 +3281,7 @@ function renderLoginPage() {
       return;
     }
     setCurrentUser(user);
-    location.href = params.get("return") || "./account.html";
+    location.href = params.get("return") || (isPermissionActive(user) ? "./daily.html" : "./account.html");
   });
 }
 
@@ -2922,10 +3413,214 @@ function renderAdminPage() {
       renderAdminPage();
     });
   }
+  renderAdminWorkbench();
   bindSyncButton();
   bindAdminContentManager();
   renderAdminMembership();
+  renderAdminInvites();
   renderAdminOrders();
+  bindAdminViews();
+}
+
+function adminCurrentView() {
+  const allowed = new Set(["dashboard", "content", "content-edit", "members", "invites", "orders", "quality", "settings"]);
+  const view = String(location.hash || "#dashboard").replace("#", "") || "dashboard";
+  return allowed.has(view) ? view : "dashboard";
+}
+
+const adminViewMeta = {
+  dashboard: { eyebrow: "Operations Dashboard", title: "项目运营仪表盘", summary: "查看网站访问、会员、收入、邀请转化、栏目热度和发布风险。" },
+  content: { eyebrow: "Content Manager", title: "内容管理", summary: "按栏目和主题快速定位内容，再处理具体条目。" },
+  "content-edit": { eyebrow: "Content Editor", title: "稿件编辑", summary: "用表单和预览处理单条内容，JSON 仅作为高级模式保留。" },
+  members: { eyebrow: "Members", title: "用户与权限", summary: "查看阅读有效期、到期状态和权限调整。" },
+  invites: { eyebrow: "Invite Codes", title: "邀请码", summary: "生成和管理邀请注册使用的邀请码。" },
+  orders: { eyebrow: "Orders", title: "订阅与订单", summary: "管理套餐订单、支付状态和手动确认。" },
+  quality: { eyebrow: "Quality", title: "质量检查", summary: "集中查看发布前风险、检查入口和待复核项。" },
+  settings: { eyebrow: "Settings", title: "系统设置", summary: "管理本地服务、缓存、备份与自动化边界。" },
+};
+
+function bindAdminViews() {
+  if (document.body.dataset.adminViewsBound !== "true") {
+    document.body.dataset.adminViewsBound = "true";
+    window.addEventListener("hashchange", renderAdminView);
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("[data-admin-target]");
+      if (!link) return;
+      const target = link.dataset.adminTarget;
+      if (!target) return;
+      event.preventDefault();
+      if (location.hash === `#${target}`) renderAdminView();
+      else location.hash = target;
+    });
+  }
+  renderAdminView();
+}
+
+function renderAdminView() {
+  const active = adminCurrentView();
+  const meta = adminViewMeta[active] || adminViewMeta.dashboard;
+  const eyebrow = $("#adminModuleEyebrow");
+  const title = $("#adminModuleTitle");
+  const summary = $("#adminModuleSummary");
+  if (eyebrow) eyebrow.textContent = meta.eyebrow;
+  if (title) title.textContent = meta.title;
+  if (summary) summary.textContent = meta.summary;
+  document.querySelectorAll("[data-admin-view]").forEach((section) => {
+    section.hidden = section.dataset.adminView !== active;
+  });
+  document.querySelectorAll("[data-admin-target]").forEach((link) => {
+    link.classList.toggle("active", link.dataset.adminTarget === (active === "content-edit" ? "content" : active));
+  });
+  if (active === "content-edit") renderAdminContentEditor();
+  window.requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0 }));
+}
+
+function adminServiceLabel() {
+  if (canWriteSiteData()) return "本地管理服务可写入";
+  if (location.protocol === "file:") return "文件模式，仅保存到浏览器";
+  return "浏览器模式，仅保存到浏览器";
+}
+
+function adminStatusTone(value) {
+  if (value === "ok") return "ok";
+  if (value === "warn") return "warn";
+  return "muted";
+}
+
+function renderAdminWorkbench() {
+  const service = $("#adminServiceStatus");
+  if (service) {
+    service.textContent = adminServiceLabel();
+    service.dataset.tone = canWriteSiteData() ? "ok" : "warn";
+  }
+  const users = getUsers();
+  const orders = getOrders();
+  const invites = getInvites();
+  const inviteRequests = getInviteRequests();
+  const analytics = getAnalytics();
+  const todayStats = analytics.days[todayDate()] || { pv: 0, visitors: [] };
+  const activeUsers = users.filter((user) => isPermissionActive(user)).length;
+  const expiredUsers = users.filter((user) => !isPermissionActive(user)).length;
+  const activeInvites = invites.filter((invite) => inviteStatus(invite) === "active").length;
+  const usedInvites = invites.filter((invite) => Number(invite.usedCount || 0) > 0).length;
+  const pendingInviteRequests = inviteRequests.filter((request) => (request.status || "pending") === "pending").length;
+  const paidOrders = orders.filter((order) => ["paid", "manual_confirmed"].includes(order.status || "paid"));
+  const revenue = paidOrders.reduce((sum, order) => sum + Number(order.price || 0), 0);
+  const contentCount = (state.signals?.length || 0) + (state.scoring?.rows?.length || 0) + (state.trends?.length || 0) + (state.opportunities?.length || 0) + (state.points?.length || 0);
+  const statusGrid = $("#adminStatusGrid");
+  if (statusGrid) {
+    const cards = [
+      { label: "累计 PV / UV", value: `${analytics.totalPv} / ${analytics.visitors.length}`, note: "本地记录的公开网站访问量和独立访客", tone: analytics.totalPv ? "ok" : "warn" },
+      { label: "今日 PV / UV", value: `${todayStats.pv || 0} / ${(todayStats.visitors || []).length}`, note: "今天的访问热度，后台访问不计入", tone: todayStats.pv ? "ok" : "warn" },
+      { label: "会员 / 邀请", value: `${activeUsers} / ${activeInvites}`, note: `有效会员与可用邀请码；待审批 ${pendingInviteRequests}，已使用 ${usedInvites}`, tone: expiredUsers || !activeInvites || pendingInviteRequests ? "warn" : "ok" },
+      { label: "收入 / 订单", value: `￥${revenue}`, note: `${paidOrders.length} 个已支付或手动确认订单`, tone: revenue ? "ok" : "warn" },
+    ];
+    statusGrid.innerHTML = cards
+      .map(
+        (card) => `
+          <article class="admin-status-card" data-tone="${adminStatusTone(card.tone)}">
+            <span>${escapeHtml(card.label)}</span>
+            <strong>${escapeHtml(card.value)}</strong>
+            <small>${escapeHtml(card.note)}</small>
+          </article>`
+      )
+      .join("");
+  }
+  const publishStatus = $("#adminPublishStatus");
+  const publishSummary = $("#adminPublishSummary");
+  const trafficSignal = analytics.totalPv ? `累计 ${analytics.totalPv} PV / ${analytics.visitors.length} UV` : "暂无访问记录";
+  if (publishStatus) publishStatus.textContent = `${trafficSignal}，${activeUsers} 个有效会员`;
+  if (publishSummary) publishSummary.textContent = `今日 ${todayStats.pv || 0} PV / ${(todayStats.visitors || []).length} UV；收入 ￥${revenue}；可用邀请码 ${activeInvites}，待审批 ${pendingInviteRequests}；到期用户 ${expiredUsers}。`;
+  renderAdminFunnel();
+  renderAdminMetrics();
+}
+
+function adminMetricCards() {
+  const analytics = getAnalytics();
+  const columns = Object.entries(analytics.columns || {})
+    .map(([key, item]) => ({ key, ...item, uv: (item.visitors || []).length }))
+    .sort((a, b) => b.pv - a.pv)
+    .slice(0, 6);
+  if (!columns.length) {
+    return [
+      { label: "栏目热度", value: "暂无", note: "访问公开页面后会开始记录 PV / UV" },
+    ];
+  }
+  return columns.map((column, index) => ({
+    label: `${index + 1}. ${column.label}`,
+    value: `${column.pv} PV`,
+    note: `${column.uv} UV · 最近 ${formatDate(column.updatedAt)}`,
+  }));
+}
+
+function renderAdminMetrics() {
+  const grid = $("#adminMetricGrid");
+  if (!grid) return;
+  grid.innerHTML = adminMetricCards()
+    .map(
+      (card) => `
+        <article class="admin-metric-card">
+          <span>${escapeHtml(card.label)}</span>
+          <strong>${escapeHtml(card.value)}</strong>
+          <small>${escapeHtml(card.note)}</small>
+        </article>`
+    )
+    .join("");
+}
+
+function renderAdminFunnel() {
+  const grid = $("#adminFunnelGrid");
+  if (!grid) return;
+  const analytics = getAnalytics();
+  const users = getUsers();
+  const invites = getInvites();
+  const orders = getOrders();
+  const activeUsers = users.filter((user) => isPermissionActive(user)).length;
+  const usedInvites = invites.filter((invite) => Number(invite.usedCount || 0) > 0).length;
+  const paidOrders = orders.filter((order) => ["paid", "manual_confirmed"].includes(order.status || "paid"));
+  const revenue = paidOrders.reduce((sum, order) => sum + Number(order.price || 0), 0);
+  const cards = [
+    { title: "访问", value: `${analytics.totalPv} PV`, note: `${analytics.visitors.length} UV，衡量网站触达规模`, href: "#content" },
+    { title: "注册", value: `${users.length} 用户`, note: `${usedInvites}/${invites.length} 个邀请码已使用`, href: "#invites" },
+    { title: "付费", value: `￥${revenue}`, note: `${paidOrders.length}/${orders.length} 个订单已确认`, href: "#orders" },
+    { title: "权限", value: `${activeUsers} 有效`, note: `${users.length - activeUsers} 个用户待续期或未开通`, href: "#members" },
+  ];
+  grid.innerHTML = cards
+    .map(
+      (card) => `
+        <a href="${escapeHtml(card.href)}" data-admin-target="${escapeHtml(card.href.replace("#", ""))}" class="admin-ops-card">
+          <span>${escapeHtml(card.title)}</span>
+          <strong>${escapeHtml(card.value)}</strong>
+          <small>${escapeHtml(card.note)}</small>
+        </a>`
+    )
+    .join("");
+}
+
+function renderAdminTodos() {
+  const list = $("#adminTodoList");
+  if (!list) return;
+  const users = getUsers();
+  const analytics = getAnalytics();
+  const expiredUsers = users.filter((user) => !isPermissionActive(user)).length;
+  const activeInvites = getInvites().filter((invite) => inviteStatus(invite) === "active").length;
+  const pendingInviteRequests = getInviteRequests().filter((request) => (request.status || "pending") === "pending").length;
+  const todayStats = analytics.days[todayDate()] || { pv: 0, visitors: [] };
+  const todos = [
+    { title: todayStats.pv ? `今日 ${todayStats.pv} PV` : "暂无今日访问", note: todayStats.pv ? "观察今日访问来自哪些栏目。" : "先通过前台预览检查访问记录。", tone: todayStats.pv ? "ok" : "warn" },
+    { title: pendingInviteRequests ? `审批 ${pendingInviteRequests} 条邀请申请` : activeInvites ? `${activeInvites} 个邀请码可用` : "补充可用邀请码", note: pendingInviteRequests ? "进入邀请码模块通过或拒绝申请。" : activeInvites ? "新用户可通过邀请码注册。" : "进入邀请码模块生成邀请批次。", tone: pendingInviteRequests || !activeInvites ? "warn" : "ok" },
+    { title: expiredUsers ? `复核 ${expiredUsers} 个到期用户` : "用户权限无到期积压", note: expiredUsers ? "进入用户与权限处理延期或到期状态。" : "当前没有到期用户积压。", tone: expiredUsers ? "warn" : "ok" },
+    { title: canWriteSiteData() ? "发布服务可写入" : "启动本地管理服务", note: canWriteSiteData() ? "同步和保存可写入网站数据。" : "当前仅保存到浏览器，不建议发布。", tone: canWriteSiteData() ? "ok" : "warn" },
+  ];
+  list.innerHTML = todos
+    .map(
+      (todo) => `
+        <article data-tone="${escapeHtml(todo.tone)}">
+          <strong>${escapeHtml(todo.title)}</strong>
+          <span>${escapeHtml(todo.note)}</span>
+        </article>`
+    )
+    .join("");
 }
 
 function renderAdminMembership() {
@@ -2944,15 +3639,33 @@ function renderAdminMembership() {
   const list = $("#memberList");
   if (!list) return;
   const users = getUsers();
-  list.innerHTML = users.length
-    ? users
+  const filter = $("#memberFilter");
+  if (filter && !filter.dataset.bound) {
+    filter.dataset.bound = "true";
+    filter.addEventListener("change", renderAdminMembership);
+  }
+  const selectedFilter = filter?.value || "all";
+  const filteredUsers = users.filter((user) => {
+    if (selectedFilter === "active") return isPermissionActive(user) && user.role !== "admin";
+    if (selectedFilter === "admin") return user.role === "admin";
+    if (selectedFilter === "expired") return !isPermissionActive(user);
+    if (selectedFilter === "expiring") {
+      if (!isPermissionActive(user) || user.role === "admin") return false;
+      const daysLeft = Math.ceil((new Date(user.accessUntil) - new Date(todayDate())) / 86400000);
+      return daysLeft <= 7;
+    }
+    return true;
+  });
+  list.innerHTML = filteredUsers.length
+    ? filteredUsers
         .map(
           (user) => `
-            <article class="member-card">
+            <article class="member-card" data-status="${isPermissionActive(user) ? "active" : "expired"}">
               <div>
                 <h3>${escapeHtml(user.name || "未命名用户")}</h3>
                 <p>${escapeHtml(user.contact || "-")} · ${escapeHtml(user.company || "-")} · ${escapeHtml(user.roleTitle || "-")}</p>
                 <span class="badge">${escapeHtml(userAccessLabel(user))}</span>
+                <small>注册：${escapeHtml(formatDate(user.createdAt))} · 更新：${escapeHtml(formatDate(user.updatedAt || user.createdAt))}</small>
               </div>
               <div class="member-actions">
                 <button class="ghost-btn" data-extend="week" data-user="${escapeHtml(user.id)}">加一周</button>
@@ -2971,6 +3684,7 @@ function renderAdminMembership() {
     const userId = event.target.dataset.user || expire;
     if (!userId) return;
     if (expire) {
+      if (!window.confirm("这会缩短该用户的阅读权限，并立即设为到期。确认继续？")) return;
       updateUser(userId, { accessUntil: addDays(todayDate(), -1), status: "expired" });
     } else if (extend) {
       const user = getUsers().find((item) => item.id === userId);
@@ -2979,6 +3693,210 @@ function renderAdminMembership() {
       updateUser(userId, { accessUntil: nextDate, status: "member" });
     }
     renderAdminMembership();
+    renderAdminWorkbench();
+  };
+}
+
+function renderAdminInvites() {
+  const form = $("#adminInviteForm");
+  const list = $("#inviteList");
+  const status = $("#inviteStatus");
+  const filter = $("#inviteFilter");
+  if (!list) return;
+  if (form && !form.dataset.bound) {
+    form.dataset.bound = "true";
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const count = Math.min(50, Math.max(1, Number($("#inviteCountInput")?.value || 1)));
+      const days = Math.max(1, Number($("#inviteDaysInput")?.value || 30));
+      const maxUses = Math.max(1, Number($("#inviteMaxUsesInput")?.value || 1));
+      const note = $("#inviteNoteInput")?.value?.trim() || "";
+      const next = [];
+      while (next.length < count) {
+        const invite = createInvite({ maxUses, days, note });
+        if (next.some((item) => normalizeInviteCode(item.code) === normalizeInviteCode(invite.code))) continue;
+        next.push(invite);
+      }
+      saveInvites([...next, ...getInvites()]);
+      setStatusMessage(status, `已生成 ${next.length} 个邀请码。`);
+      renderAdminInvites();
+      renderAdminInviteRequests();
+    });
+  }
+  if (filter && !filter.dataset.bound) {
+    filter.dataset.bound = "true";
+    filter.addEventListener("change", renderAdminInvites);
+  }
+  const selected = filter?.value || "all";
+  const invites = getInvites();
+  const filtered = invites.filter((invite) => selected === "all" || inviteStatus(invite) === selected);
+  list.innerHTML = filtered.length
+    ? filtered
+        .map((invite) => {
+          const statusText = inviteStatus(invite);
+          const usedBy = (invite.usedBy || []).map((usage) => usage.contact).filter(Boolean).join("，") || "-";
+          return `
+            <article class="admin-invite-card" data-status="${escapeHtml(statusText)}">
+              <div>
+                <strong>${escapeHtml(invite.code)}</strong>
+                <p>${escapeHtml(invite.note || "未填写备注")}</p>
+                <small>有效期：${escapeHtml(formatDate(invite.expiresAt))} · 使用：${Number(invite.usedCount || 0)} / ${Number(invite.maxUses || 1)} · 使用者：${escapeHtml(usedBy)}</small>
+              </div>
+              <span>${escapeHtml(statusText === "active" ? "可用" : statusText === "used" ? "已用完" : statusText === "paused" ? "已暂停" : "已过期")}</span>
+              <div class="admin-invite-actions">
+                <button class="ghost-btn" data-copy-invite="${escapeHtml(invite.code)}">复制</button>
+                <button class="ghost-btn" data-toggle-invite="${escapeHtml(invite.id)}">${statusText === "paused" ? "启用" : "暂停"}</button>
+                <button class="danger-btn" data-delete-invite="${escapeHtml(invite.id)}">删除</button>
+              </div>
+            </article>`;
+        })
+        .join("")
+    : `<div class="empty-state">暂无邀请码。</div>`;
+  list.onclick = async (event) => {
+    const copyCode = event.target.dataset.copyInvite;
+    const toggleId = event.target.dataset.toggleInvite;
+    const deleteId = event.target.dataset.deleteInvite;
+    if (copyCode) {
+      try {
+        await navigator.clipboard.writeText(copyCode);
+        setStatusMessage(status, `已复制邀请码：${copyCode}`);
+      } catch {
+        setStatusMessage(status, `请手动复制邀请码：${copyCode}`);
+      }
+      return;
+    }
+    if (toggleId) {
+      const next = getInvites().map((invite) => (invite.id === toggleId ? { ...invite, status: invite.status === "paused" ? "active" : "paused", updatedAt: new Date().toISOString() } : invite));
+      saveInvites(next);
+      renderAdminInvites();
+      return;
+    }
+    if (deleteId) {
+      if (!window.confirm("删除这个邀请码后无法恢复。确认继续？")) return;
+      saveInvites(getInvites().filter((invite) => invite.id !== deleteId));
+      renderAdminInvites();
+    }
+  };
+  renderAdminInviteRequests();
+}
+
+function renderAdminInviteRequests() {
+  const list = $("#inviteRequestList");
+  const status = $("#inviteStatus");
+  if (!list) return;
+  const statusLabel = {
+    pending: "待审批",
+    approved: "已通过",
+    rejected: "已拒绝",
+    sent: "已发放",
+  };
+  const requests = getInviteRequests().sort((a, b) => {
+    const order = { pending: 0, approved: 1, rejected: 2, sent: 3 };
+    return (order[a.status || "pending"] ?? 9) - (order[b.status || "pending"] ?? 9) || String(b.createdAt || "").localeCompare(String(a.createdAt || ""));
+  });
+  list.innerHTML = requests.length
+    ? requests
+        .map(
+          (request) => {
+            const currentStatus = request.status || "pending";
+            const code = request.approvedInviteCode || "";
+            const approvedActions =
+              currentStatus === "approved" || currentStatus === "sent"
+                ? `<button class="ghost-btn" data-copy-invite="${escapeHtml(code)}">复制码</button>
+                   ${currentStatus === "approved" ? `<button class="ghost-btn" data-mark-request-sent="${escapeHtml(request.id)}">标记发放</button>` : ""}`
+                : "";
+            const pendingActions =
+              currentStatus === "pending"
+                ? `<button class="primary-btn" data-approve-request="${escapeHtml(request.id)}">通过生成码</button>
+                   <button class="danger-btn" data-reject-request="${escapeHtml(request.id)}">拒绝</button>`
+                : "";
+            return `
+              <article class="admin-invite-card admin-request-card" data-status="${escapeHtml(currentStatus)}">
+                <div>
+                  <strong>${escapeHtml(request.email || "-")}</strong>
+                  <p>${escapeHtml(request.company || "-")} · ${escapeHtml(request.roleTitle || "-")}</p>
+                  <small>${escapeHtml(request.reason || "-")} · 提交：${escapeHtml(formatDate(request.createdAt))}${code ? ` · 邀请码：${escapeHtml(code)}` : ""}</small>
+                </div>
+                <span>${escapeHtml(statusLabel[currentStatus] || "待处理")}</span>
+                <div class="admin-invite-actions">
+                  <button class="ghost-btn" data-copy-request-email="${escapeHtml(request.email || "")}">复制邮箱</button>
+                  ${pendingActions}
+                  ${approvedActions}
+                  <button class="danger-btn" data-delete-request="${escapeHtml(request.id)}">删除</button>
+                </div>
+              </article>
+            `;
+          }
+        )
+        .join("")
+    : `<div class="empty-state">暂无邀请码申请。</div>`;
+  list.onclick = async (event) => {
+    const email = event.target.dataset.copyRequestEmail;
+    const approveId = event.target.dataset.approveRequest;
+    const rejectId = event.target.dataset.rejectRequest;
+    const sentId = event.target.dataset.markRequestSent;
+    const deleteId = event.target.dataset.deleteRequest;
+    const copyCode = event.target.dataset.copyInvite;
+    if (email) {
+      try {
+        await navigator.clipboard.writeText(email);
+        setStatusMessage(status, `已复制邮箱：${email}`);
+      } catch {
+        setStatusMessage(status, `请手动复制邮箱：${email}`);
+      }
+      return;
+    }
+    if (copyCode) {
+      try {
+        await navigator.clipboard.writeText(copyCode);
+        setStatusMessage(status, `已复制邀请码：${copyCode}`);
+      } catch {
+        setStatusMessage(status, `请手动复制邀请码：${copyCode}`);
+      }
+      return;
+    }
+    if (approveId) {
+      const requests = getInviteRequests();
+      const request = requests.find((item) => item.id === approveId);
+      if (!request) return;
+      let code = request.approvedInviteCode;
+      if (!code) {
+        const invite = createInvite({
+          maxUses: 1,
+          days: 30,
+          note: `审批通过：${request.company || request.email || "邀请码申请"}`,
+          requestId: request.id,
+          email: request.email,
+        });
+        code = invite.code;
+        saveInvites([invite, ...getInvites()]);
+      }
+      saveInviteRequests(
+        requests.map((item) =>
+          item.id === approveId
+            ? { ...item, status: "approved", approvedInviteCode: code, approvedAt: new Date().toISOString(), updatedAt: new Date().toISOString() }
+            : item
+        )
+      );
+      setStatusMessage(status, `已通过申请并生成邀请码：${code}`);
+      renderAdminInvites();
+      return;
+    }
+    if (rejectId) {
+      if (!window.confirm("确认拒绝这条邀请码申请？")) return;
+      saveInviteRequests(getInviteRequests().map((request) => (request.id === rejectId ? { ...request, status: "rejected", rejectedAt: new Date().toISOString(), updatedAt: new Date().toISOString() } : request)));
+      renderAdminInviteRequests();
+      return;
+    }
+    if (sentId) {
+      saveInviteRequests(getInviteRequests().map((request) => (request.id === sentId ? { ...request, status: "sent", sentAt: new Date().toISOString(), updatedAt: new Date().toISOString() } : request)));
+      renderAdminInviteRequests();
+      return;
+    }
+    if (deleteId) {
+      saveInviteRequests(getInviteRequests().filter((request) => request.id !== deleteId));
+      renderAdminInviteRequests();
+    }
   };
 }
 
@@ -2993,57 +3911,432 @@ function renderAdminOrders() {
         .map((order) => {
           const user = userMap.get(order.userId) || {};
           const plan = planCatalog[order.plan] || {};
-          return `<article class="order-card"><div><h3>${escapeHtml(plan.name || order.plan)}</h3><p>${escapeHtml(user.name || "-")} · ${escapeHtml(user.contact || "-")}</p></div><strong>￥${escapeHtml(order.price || "-")}</strong><span>${escapeHtml(formatDate(order.accessUntil))}</span></article>`;
+          const status = order.status || "paid";
+          return `
+            <article class="order-card" data-status="${escapeHtml(status)}">
+              <div>
+                <h3>${escapeHtml(plan.name || order.plan || "未命名套餐")}</h3>
+                <p>${escapeHtml(user.name || "-")} · ${escapeHtml(user.contact || "-")}</p>
+                <small>${escapeHtml(order.id || "-")} · ${escapeHtml(formatDate(order.createdAt))}</small>
+              </div>
+              <strong>￥${escapeHtml(order.price || "-")}</strong>
+              <span>${escapeHtml(status === "manual_confirmed" ? "手动确认" : status === "paid" ? "已支付" : status)}</span>
+              <button class="ghost-btn" data-confirm-order="${escapeHtml(order.id || "")}">手动确认支付</button>
+            </article>`;
         })
         .join("")
     : `<div class="empty-state">暂无订阅记录。</div>`;
+  list.onclick = (event) => {
+    const orderId = event.target.dataset.confirmOrder;
+    if (!orderId) return;
+    if (!window.confirm("确认该订单已完成支付，并同步更新用户阅读权限？")) return;
+    const nextOrders = getOrders().map((order) => (order.id === orderId ? { ...order, status: "manual_confirmed", paidAt: new Date().toISOString(), updatedAt: new Date().toISOString() } : order));
+    const order = nextOrders.find((item) => item.id === orderId);
+    if (order?.userId) updateUser(order.userId, { status: "member", plan: order.plan, accessUntil: order.accessUntil });
+    saveOrders(nextOrders);
+    renderAdminOrders();
+    renderAdminMembership();
+    renderAdminWorkbench();
+  };
+}
+
+const adminContentGroups = {
+  column: [
+    { value: "signals", label: "Signals" },
+    { value: "scoring", label: "Priority Engine" },
+    { value: "points", label: "The Point" },
+    { value: "trends", label: "Trends" },
+    { value: "opportunities", label: "Opportunities" },
+  ],
+  topic: [
+    { value: "trends", label: "趋势主题" },
+    { value: "pointTopics", label: "The Point 主题" },
+  ],
+};
+
+function adminPageModules() {
+  return [
+    { id: "page-home", title: "首页", status: "published", route: "./index.html", editRoute: "./index.html", summary: "品牌首屏、项目入口和代表性判断。首页不承载具体内容编辑，适合从这里检查项目第一印象。", tags: ["首页", "统计入口"] },
+    { id: "page-daily", title: "Daily Brief", status: "protected", route: "./daily.html", editRoute: "./daily.html", summary: "每日判断内参列表和详情页。内容来自 Signals、Trends、Opportunities 和 The Point 的同步数据。", tags: ["栏目", "每日简报"] },
+    { id: "page-signals", title: "Signals", status: "protected", route: "./signals.html", editRoute: "./signals.html?admin=1", summary: "商业信号筛选与详情入口，可进入显式 Admin 模式调整 Signal 卡片。", tags: ["栏目", "可视化编辑"] },
+    { id: "page-point", title: "The Point", status: "protected", route: "./the-point.html", editRoute: "./the-point.html", summary: "一线观点判断入口。内容来自 The Point 数据层，主题和观点可在栏目 / 主题分类中管理。", tags: ["栏目", "观点"] },
+    { id: "page-opportunities", title: "Opportunities", status: "protected", route: "./opportunities.html", editRoute: "./opportunities.html?admin=1", summary: "机会库和 Priority Engine 承接页，可进入显式 Admin 模式调整机会卡。", tags: ["栏目", "可视化编辑"] },
+    { id: "page-trends", title: "Trends", status: "protected", route: "./trends.html", editRoute: "./trends.html?admin=1", summary: "趋势判断模型入口，可进入显式 Admin 模式调整趋势卡片。", tags: ["栏目", "可视化编辑"] },
+  ];
 }
 
 function getAdminCollection(type) {
+  if (type.startsWith("page-")) return adminPageModules().filter((item) => item.id === type);
   if (type === "signals") return state.signals;
   if (type === "scoring") return state.scoring.rows || [];
+  if (type === "points") return state.points || [];
+  if (type === "pointTopics") return state.pointTopics || [];
   if (type === "trends") return state.trends || [];
   if (type === "opportunities") return state.opportunities || [];
   return [];
 }
 
 function setAdminCollection(type, items) {
+  if (type.startsWith("page-")) return;
   if (type === "signals") state.signals = items;
   if (type === "scoring") state.scoring = { ...state.scoring, rows: items };
+  if (type === "points") state.points = items;
+  if (type === "pointTopics") state.pointTopics = items;
   if (type === "trends") state.trends = items;
   if (type === "opportunities") state.opportunities = items;
 }
 
 function adminItemLabel(item = {}, index = 0) {
-  return item.product || item.title || item.track || item.id || `条目 ${index + 1}`;
+  return item.product || item.title || item.topic || item.name || item.person || item.track || item.id || `条目 ${index + 1}`;
+}
+
+function adminItemMeta(type, item = {}) {
+  const meta = [];
+  if (type.startsWith("page-")) {
+    meta.push("页面");
+    meta.push(item.route || "page");
+  } else if (type === "signals") {
+    meta.push(item.date || item.eventType || "Signal");
+    meta.push(item.sourceTier || item.sourceName || item.source || "信源待补");
+  } else if (type === "scoring") {
+    meta.push("Priority Engine");
+    meta.push(item.track || item.market || "赛道待补");
+  } else if (type === "points") {
+    meta.push(item.date || "The Point");
+    meta.push(item.person || item.sourceType || item.sourceTitle || "来源待补");
+  } else if (type === "pointTopics") {
+    meta.push("The Point 主题");
+    meta.push(item.count ? `${item.count} 条观点` : "主题集合");
+  } else if (type === "trends") {
+    meta.push(item.statusLabel || item.status || "趋势状态");
+    meta.push(item.track || item.name || "Trend");
+  } else {
+    meta.push(item.priorityRank ? `Rank ${item.priorityRank}` : "Opportunity");
+    meta.push(item.status || item.evidenceLevel || "状态待补");
+  }
+  return meta.filter(Boolean).join(" · ");
+}
+
+function adminItemSummary(type, item = {}) {
+  return item.summary || item.description || item.commercialMeaning || item.original || item.interpretation || item.signal || item.reason || item.thesis || item.opportunity || item.definition || adminItemMeta(type, item);
+}
+
+function adminContentScopeLabel(scope) {
+  return { page: "页面", column: "栏目", topic: "主题" }[scope] || "内容";
+}
+
+function adminContentTypeLabel(type) {
+  return Object.values(adminContentGroups)
+    .flat()
+    .find((option) => option.value === type)?.label || type;
+}
+
+function adminItemStatusText(item = {}) {
+  return String(item.status || item.statusLabel || "active");
+}
+
+function adminItemDateText(item = {}) {
+  return String(item.date || item.publishedAt || item.createdAt || item.updatedAt || "-").slice(0, 10);
+}
+
+function adminContentEditUrl(scope, type, index) {
+  const params = new URLSearchParams();
+  params.set("scope", scope || "column");
+  params.set("type", type || "signals");
+  params.set("index", String(Math.max(0, Number(index) || 0)));
+  params.set("v", "admin-editor-wysiwyg-20260504");
+  return `./admin.html?${params.toString()}#content-edit`;
+}
+
+function adminContentEditParams() {
+  const params = new URLSearchParams(location.search);
+  return {
+    scope: params.get("scope") || "column",
+    type: params.get("type") || "signals",
+    index: Math.max(0, Number(params.get("index") || 0)),
+  };
+}
+
+function adminEditableFields(type, item = {}) {
+  const base = [
+    { key: "title", label: "标题", placeholder: "用于列表和详情页展示的标题" },
+    { key: "product", label: "标题 / 产品名", placeholder: "Signal 或机会卡主标题" },
+    { key: "name", label: "名称", placeholder: "趋势、主题或条目名称" },
+    { key: "topic", label: "主题", placeholder: "主题名称" },
+    { key: "date", label: "日期", type: "date" },
+    { key: "status", label: "状态", type: "select", options: ["active", "published", "review", "needs_review", "draft", "archived", "protected"] },
+    { key: "statusLabel", label: "状态文字" },
+    { key: "track", label: "赛道 / 方向" },
+    { key: "market", label: "市场" },
+    { key: "sourceName", label: "来源名称" },
+    { key: "source", label: "来源" },
+    { key: "sourceTier", label: "来源层级" },
+    { key: "person", label: "人物 / 机构" },
+    { key: "sourceTitle", label: "来源标题" },
+    { key: "summary", label: "摘要", type: "textarea", wide: true },
+    { key: "description", label: "描述", type: "textarea", wide: true },
+    { key: "commercialMeaning", label: "商业含义", type: "textarea", wide: true },
+    { key: "definition", label: "机会定义", type: "textarea", wide: true },
+    { key: "thesis", label: "判断 / Thesis", type: "textarea", wide: true },
+    { key: "reason", label: "理由", type: "textarea", wide: true },
+    { key: "original", label: "原文 / 引用", type: "textarea", wide: true },
+    { key: "interpretation", label: "观澜解读", type: "textarea", wide: true },
+    { key: "opportunity", label: "机会描述", type: "textarea", wide: true },
+    { key: "evidenceLevel", label: "证据等级" },
+    { key: "priorityRank", label: "优先级", type: "number" },
+    { key: "total", label: "总分", type: "number" },
+    { key: "count", label: "数量", type: "number" },
+    { key: "tags", label: "标签", type: "tags", wide: true, placeholder: "用逗号分隔，例如：AI Agent, 企业服务" },
+  ];
+  const preferred = {
+    signals: ["product", "date", "status", "eventType", "sourceName", "sourceTier", "summary", "commercialMeaning", "opportunity", "tags"],
+    scoring: ["product", "track", "market", "status", "priorityRank", "total", "reason", "tags"],
+    points: ["title", "date", "person", "sourceTitle", "status", "original", "interpretation", "tags"],
+    trends: ["name", "track", "status", "statusLabel", "summary", "thesis", "tags"],
+    opportunities: ["title", "definition", "status", "evidenceLevel", "priorityRank", "summary", "thesis", "tags"],
+    pointTopics: ["topic", "name", "count", "summary", "tags"],
+  }[type] || ["title", "name", "date", "status", "summary", "description", "tags"];
+  const known = new Map(base.map((field) => [field.key, field]));
+  const keys = [...new Set([...preferred, ...Object.keys(item).filter((key) => ["title", "product", "name", "topic", "date", "status", "summary", "description", "tags"].includes(key))])];
+  return keys.map((key) => known.get(key) || { key, label: key }).filter((field) => field.key in item || preferred.includes(field.key));
+}
+
+function adminFormValue(item, field) {
+  const value = item?.[field.key];
+  if (field.type === "tags") return Array.isArray(value) ? value.join(", ") : String(value || "");
+  return value == null ? "" : String(value);
+}
+
+function renderAdminField(field, item = {}) {
+  const value = adminFormValue(item, field);
+  const common = `data-admin-form-field="${escapeHtml(field.key)}"`;
+  if (field.type === "select") {
+    const options = field.options || [];
+    return `<label class="field${field.wide ? " wide" : ""}"><span>${escapeHtml(field.label)}</span><select ${common}>${options.map((option) => `<option value="${escapeHtml(option)}" ${value === option ? "selected" : ""}>${escapeHtml(option)}</option>`).join("")}</select></label>`;
+  }
+  if (field.type === "textarea") {
+    return `<label class="field wide"><span>${escapeHtml(field.label)}</span><textarea ${common} rows="5" placeholder="${escapeHtml(field.placeholder || "")}">${escapeHtml(value)}</textarea></label>`;
+  }
+  return `<label class="field${field.wide ? " wide" : ""}"><span>${escapeHtml(field.label)}</span><input ${common} type="${escapeHtml(field.type || "text")}" value="${escapeHtml(value)}" placeholder="${escapeHtml(field.placeholder || "")}" /></label>`;
+}
+
+function readAdminEditorForm(item, container) {
+  const next = { ...item };
+  container.querySelectorAll("[data-admin-form-field]").forEach((input) => {
+    const key = input.dataset.adminFormField;
+    const raw = input.value;
+    if (Array.isArray(item[key])) next[key] = raw.split(/[,，]/).map((tag) => tag.trim()).filter(Boolean);
+    else if (typeof item[key] === "number") next[key] = Number(raw || 0);
+    else next[key] = raw;
+  });
+  return next;
+}
+
+function renderAdminContentPreview(type, item = {}, index = 0) {
+  const preview = $("#adminContentPreview");
+  if (!preview) return;
+  if (!item || !Object.keys(item).length) {
+    preview.innerHTML = `<div class="empty-state">暂无可编辑条目。</div>`;
+    return;
+  }
+  const title = adminItemLabel(item, index);
+  const meta = adminItemMeta(type, item);
+  const summary = shortText(adminItemSummary(type, item), 520);
+  const tags = Array.isArray(item.tags) ? item.tags.slice(0, 6) : [];
+  const pageActions = type.startsWith("page-")
+    ? `<div class="admin-preview-actions"><a class="primary-btn as-link" href="${escapeHtml(item.route || "./index.html")}">打开页面</a><a class="ghost-btn as-link" href="${escapeHtml(item.editRoute || item.route || "./index.html")}">打开编辑入口</a></div>`
+    : "";
+  preview.innerHTML = `
+    <div class="admin-preview-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(type === "scoring" ? "Priority Engine" : type)}</p>
+        <h3>${escapeHtml(title)}</h3>
+        <p>${escapeHtml(meta)}</p>
+      </div>
+      <span class="badge">${escapeHtml(item.status || item.statusLabel || "active")}</span>
+    </div>
+    <p>${escapeHtml(summary)}</p>
+    ${pageActions}
+    <dl class="admin-preview-facts">
+      <div><dt>ID</dt><dd>${escapeHtml(item.id || item.slug || item.opportunityId || "-")}</dd></div>
+      <div><dt>关联机会</dt><dd>${escapeHtml([...(item.relatedOpportunityNames || []), item.opportunityTitle].filter(Boolean).slice(0, 2).join(" / ") || "-")}</dd></div>
+      <div><dt>标签</dt><dd>${tags.length ? tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("") : "-"}</dd></div>
+    </dl>
+  `;
 }
 
 function bindAdminContentManager() {
+  const scopeSelect = $("#adminContentScope");
   const typeSelect = $("#adminContentType");
   const itemSelect = $("#adminContentItem");
   const jsonBox = $("#adminContentJson");
   const status = $("#adminContentStatus");
-  if (!typeSelect || !itemSelect || !jsonBox || typeSelect.dataset.bound) return;
+  const search = $("#adminContentSearch");
+  const statusFilter = $("#adminContentStatusFilter");
+  const dateFilter = $("#adminContentDateFilter");
+  const count = $("#adminContentCount");
+  const list = $("#adminContentList");
+  const scopeTabs = $("#adminContentScopeTabs");
+  const typeNav = $("#adminContentTypeList");
+  const resetBtn = $("#adminContentResetBtn");
+  if (!scopeSelect || !typeSelect || !itemSelect || typeSelect.dataset.bound) return;
   typeSelect.dataset.bound = "true";
 
+  const renderScopeTabs = () => {
+    scopeTabs?.querySelectorAll("[data-admin-scope]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.adminScope === scopeSelect.value);
+    });
+  };
+
+  const renderTypeOptions = () => {
+    const options = adminContentGroups[scopeSelect.value] || adminContentGroups.column;
+    const previous = typeSelect.value;
+    typeSelect.innerHTML = options.map((option) => `<option value="${escapeHtml(option.value)}">${escapeHtml(option.label)}</option>`).join("");
+    if (options.some((option) => option.value === previous)) typeSelect.value = previous;
+    if (typeNav) {
+      typeNav.innerHTML = options
+        .map((option) => {
+          const total = getAdminCollection(option.value).length;
+          return `<button type="button" data-admin-type="${escapeHtml(option.value)}"><span>${escapeHtml(option.label)}</span><small>${total}</small></button>`;
+        })
+        .join("");
+    }
+    renderScopeTabs();
+  };
+
+  const filteredItems = () => {
+    const query = String(search?.value || "").trim().toLowerCase();
+    const selectedStatus = statusFilter?.value || "all";
+    const selectedDate = String(dateFilter?.value || "").trim();
+    return getAdminCollection(typeSelect.value)
+      .map((item, index) => ({ item, index }))
+      .filter(({ item }) => {
+        const statusText = String(item.status || item.statusLabel || "active").toLowerCase();
+        const dateText = String(item.date || item.publishedAt || item.createdAt || "").slice(0, 10);
+        const statusMatch =
+          selectedStatus === "all" ||
+          (selectedStatus === "active" && ["active", "published", ""].includes(statusText)) ||
+          (selectedStatus === "review" && ["review", "needs_review"].includes(statusText)) ||
+          statusText === selectedStatus;
+        const dateMatch = !selectedDate || dateText.includes(selectedDate);
+        if (!statusMatch || !dateMatch) return false;
+        if (!query) return true;
+        return [adminItemLabel(item), adminItemMeta(typeSelect.value, item), adminItemSummary(typeSelect.value, item), item.status, item.statusLabel, dateText, ...(item.tags || [])]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase()
+          .includes(query);
+      });
+  };
+
   const renderItems = () => {
-    const items = getAdminCollection(typeSelect.value);
-    itemSelect.innerHTML = items.map((item, index) => `<option value="${index}">${escapeHtml(adminItemLabel(item, index))}</option>`).join("");
+    const items = filteredItems();
+    const previous = itemSelect.value;
+    itemSelect.innerHTML = items.map(({ item, index }) => `<option value="${index}">${escapeHtml(adminItemLabel(item, index))}</option>`).join("");
+    if (items.some(({ index }) => String(index) === previous)) itemSelect.value = previous;
+    else if (items.length) itemSelect.value = String(items[0].index);
+    const total = getAdminCollection(typeSelect.value).length;
+    if (count) count.textContent = `${items.length} / ${total} 条`;
+    typeNav?.querySelectorAll("[data-admin-type]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.adminType === typeSelect.value);
+    });
+    if (list) {
+      list.innerHTML = items.length
+        ? `
+          <div class="admin-cms-table-head" role="row">
+            <span>选</span><span>标题</span><span>频道</span><span>状态</span><span>日期</span><span>操作</span>
+          </div>
+          ${items
+            .slice(0, 80)
+            .map(({ item, index }) => {
+              const isActive = String(index) === itemSelect.value;
+              const statusText = adminItemStatusText(item);
+              return `
+                <div class="admin-cms-row${isActive ? " active" : ""}" data-admin-select="${index}" role="row" tabindex="0">
+                  <input type="radio" name="adminContentCurrent" ${isActive ? "checked" : ""} aria-label="选择 ${escapeHtml(adminItemLabel(item, index))}" />
+                  <div class="admin-cms-title-cell">
+                    <strong>${escapeHtml(adminItemLabel(item, index))}</strong>
+                    <span>${escapeHtml(shortText(adminItemSummary(typeSelect.value, item), 96))}</span>
+                  </div>
+                  <small>${escapeHtml(adminContentTypeLabel(typeSelect.value))}</small>
+                  <span class="admin-cms-status" data-tone="${escapeHtml(statusText.toLowerCase())}">${escapeHtml(statusText)}</span>
+                  <small>${escapeHtml(adminItemDateText(item))}</small>
+                  <a class="admin-cms-edit-link" href="${escapeHtml(adminContentEditUrl(scopeSelect.value, typeSelect.value, index))}">编辑</a>
+                </div>`;
+            })
+            .join("")}`
+        : `<div class="admin-cms-table-head" role="row"><span>选</span><span>标题</span><span>频道</span><span>状态</span><span>日期</span><span>操作</span></div><div class="empty-state">没有匹配条目。</div>`;
+    }
     renderJson();
   };
 
   const renderJson = () => {
     const items = getAdminCollection(typeSelect.value);
+    if (!itemSelect.options.length) {
+      jsonBox.value = "{}";
+      renderAdminContentPreview(typeSelect.value, {}, 0);
+      if (status) status.textContent = "没有匹配条目。";
+      return;
+    }
     const item = items[Number(itemSelect.value)] || items[0] || {};
-    jsonBox.value = JSON.stringify(item, null, 2);
-    if (status) status.textContent = item.id ? `正在编辑：${adminItemLabel(item)}` : "暂无条目。";
+    if (jsonBox) {
+      jsonBox.value = JSON.stringify(item, null, 2);
+      jsonBox.disabled = typeSelect.value.startsWith("page-");
+    }
+    renderAdminContentPreview(typeSelect.value, item, Number(itemSelect.value));
+    if (status) status.textContent = Object.keys(item).length ? `${adminContentScopeLabel(scopeSelect.value)} / ${adminContentTypeLabel(typeSelect.value)} / ${adminItemLabel(item)}` : "暂无条目。";
   };
 
+  scopeSelect.addEventListener("change", () => {
+    renderTypeOptions();
+    if (search) search.value = "";
+    renderItems();
+  });
   typeSelect.addEventListener("change", renderItems);
   itemSelect.addEventListener("change", renderJson);
+  search?.addEventListener("input", renderItems);
+  statusFilter?.addEventListener("change", renderItems);
+  dateFilter?.addEventListener("input", renderItems);
+  resetBtn?.addEventListener("click", () => {
+    if (search) search.value = "";
+    if (statusFilter) statusFilter.value = "all";
+    if (dateFilter) dateFilter.value = "";
+    renderItems();
+  });
+  scopeTabs?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-admin-scope]");
+    if (!button) return;
+    scopeSelect.value = button.dataset.adminScope;
+    scopeSelect.dispatchEvent(new Event("change"));
+  });
+  typeNav?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-admin-type]");
+    if (!button) return;
+    typeSelect.value = button.dataset.adminType;
+    renderItems();
+  });
+  list?.addEventListener("click", (event) => {
+    const row = event.target.closest("[data-admin-select]");
+    if (!row) return;
+    if (event.target.closest("a")) return;
+    itemSelect.value = row.dataset.adminSelect;
+    location.href = adminContentEditUrl(scopeSelect.value, typeSelect.value, row.dataset.adminSelect);
+  });
+  list?.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    const row = event.target.closest("[data-admin-select]");
+    if (!row) return;
+    event.preventDefault();
+    itemSelect.value = row.dataset.adminSelect;
+    location.href = adminContentEditUrl(scopeSelect.value, typeSelect.value, row.dataset.adminSelect);
+  });
   $("#adminSaveContentBtn")?.addEventListener("click", async () => {
+    if (typeSelect.value.startsWith("page-")) {
+      if (status) status.textContent = "页面类内容请进入对应页面或显式编辑入口处理。";
+      return;
+    }
     try {
-      const parsed = JSON.parse(jsonBox.value);
+      const parsed = JSON.parse(jsonBox?.value || "{}");
       const items = [...getAdminCollection(typeSelect.value)];
       const index = Number(itemSelect.value);
       items[index] = parsed;
@@ -3057,8 +4350,13 @@ function bindAdminContentManager() {
     }
   });
   $("#adminDuplicateContentBtn")?.addEventListener("click", async () => {
+    if (typeSelect.value.startsWith("page-")) {
+      if (status) status.textContent = "页面类内容不支持复制为数据条目。";
+      return;
+    }
     try {
-      const parsed = JSON.parse(jsonBox.value);
+      const source = getAdminCollection(typeSelect.value)[Number(itemSelect.value)] || {};
+      const parsed = jsonBox?.value ? JSON.parse(jsonBox.value) : source;
       const copy = { ...parsed, id: `${parsed.id || typeSelect.value}-${Date.now()}`, slug: localSlug(`${parsed.slug || parsed.title || parsed.product || parsed.track || typeSelect.value}-${Date.now()}`) };
       const items = [...getAdminCollection(typeSelect.value), copy];
       setAdminCollection(typeSelect.value, items);
@@ -3071,15 +4369,136 @@ function bindAdminContentManager() {
     }
   });
   $("#adminDeleteContentBtn")?.addEventListener("click", async () => {
+    if (typeSelect.value.startsWith("page-")) {
+      if (status) status.textContent = "页面类内容不支持从数据管理器删除。";
+      return;
+    }
     const items = [...getAdminCollection(typeSelect.value)];
     const index = Number(itemSelect.value);
     if (!items.length || index < 0) return;
+    if (!window.confirm(`删除「${adminItemLabel(items[index], index)}」后将写入当前数据状态。确认继续？`)) return;
     items.splice(index, 1);
     setAdminCollection(typeSelect.value, items);
     renderItems();
     await persistState(status, "已删除并写入数据文件。");
   });
+  renderTypeOptions();
   renderItems();
+}
+
+function renderAdminContentEditor() {
+  const shell = $("#adminContentEditShell");
+  if (!shell) return;
+  const params = adminContentEditParams();
+  const items = getAdminCollection(params.type);
+  const item = items[params.index] || {};
+  const typeLabel = adminContentTypeLabel(params.type);
+  const scopeLabel = adminContentScopeLabel(params.scope);
+  if (!Object.keys(item).length) {
+    shell.innerHTML = `
+      <div class="empty-state">
+        没有找到这条内容。<a href="./admin.html?v=admin-editor-wysiwyg-20260504#content">返回内容列表</a>
+      </div>`;
+    return;
+  }
+  const isPage = params.type.startsWith("page-");
+  const fields = adminEditableFields(params.type, item);
+  const title = adminItemLabel(item, params.index);
+  const meta = shortText(adminItemMeta(params.type, item), 180);
+  shell.innerHTML = `
+    <div class="admin-editor-headline">
+      <div>
+        <p class="eyebrow">${escapeHtml(scopeLabel)} / ${escapeHtml(typeLabel)}</p>
+        <h3>${escapeHtml(title)}</h3>
+        <p>${escapeHtml(meta)}</p>
+      </div>
+      <div class="admin-editor-headline-actions">
+        ${isPage ? `<a class="primary-btn as-link" href="${escapeHtml(item.route || "./index.html")}">打开页面</a>` : ""}
+        <a class="ghost-btn as-link" href="./admin.html?v=admin-editor-wysiwyg-20260504#content">返回列表</a>
+      </div>
+    </div>
+    <div class="admin-visual-editor-grid">
+      <form id="adminContentEditForm" class="admin-form-editor">
+        ${fields.map((field) => renderAdminField(field, item)).join("")}
+      </form>
+      <aside class="admin-live-preview">
+        <p class="eyebrow">Preview</p>
+        <h4 id="adminEditPreviewTitle">${escapeHtml(title)}</h4>
+        <p id="adminEditPreviewMeta">${escapeHtml(meta)}</p>
+        <div id="adminEditPreviewBody">${escapeHtml(shortText(adminItemSummary(params.type, item), 700))}</div>
+      </aside>
+    </div>
+    <details class="admin-json-details admin-editor-json">
+      <summary>高级 JSON</summary>
+      <label class="field"><span>JSON 内容</span><textarea id="adminContentEditJson" rows="16">${escapeHtml(JSON.stringify(item, null, 2))}</textarea></label>
+    </details>
+    <div class="admin-editor-actions">
+      <button id="adminSaveVisualContentBtn" class="primary-btn" type="button" ${isPage ? "disabled" : ""}>保存表单修改</button>
+      <button id="adminSyncJsonToFormBtn" class="ghost-btn" type="button" ${isPage ? "disabled" : ""}>用 JSON 覆盖表单</button>
+      <button id="adminDuplicateEditContentBtn" class="ghost-btn" type="button" ${isPage ? "disabled" : ""}>复制为新条目</button>
+      <button id="adminDeleteEditContentBtn" class="danger-btn" type="button" ${isPage ? "disabled" : ""}>删除条目</button>
+    </div>
+    <div id="adminContentEditStatus" class="sync-status">${isPage ? "页面类内容请从对应页面或显式编辑入口处理。" : "表单可直接编辑；JSON 仅用于高级修正。"}</div>
+  `;
+
+  const form = $("#adminContentEditForm");
+  const jsonBox = $("#adminContentEditJson");
+  const status = $("#adminContentEditStatus");
+  const updatePreview = () => {
+    const draft = readAdminEditorForm(item, form);
+    const nextTitle = adminItemLabel(draft, params.index);
+    const titleEl = $("#adminEditPreviewTitle");
+    const metaEl = $("#adminEditPreviewMeta");
+    const bodyEl = $("#adminEditPreviewBody");
+    if (titleEl) titleEl.textContent = nextTitle;
+    if (metaEl) metaEl.textContent = adminItemMeta(params.type, draft);
+    if (bodyEl) bodyEl.textContent = shortText(adminItemSummary(params.type, draft), 700);
+    if (jsonBox && document.activeElement !== jsonBox) jsonBox.value = JSON.stringify(draft, null, 2);
+  };
+  form?.addEventListener("input", updatePreview);
+  $("#adminSyncJsonToFormBtn")?.addEventListener("click", () => {
+    try {
+      const parsed = JSON.parse(jsonBox.value);
+      const items = [...getAdminCollection(params.type)];
+      items[params.index] = parsed;
+      setAdminCollection(params.type, items);
+      renderAdminContentEditor();
+    } catch (error) {
+      if (status) status.textContent = `JSON 格式错误：${error.message}`;
+    }
+  });
+  $("#adminSaveVisualContentBtn")?.addEventListener("click", async () => {
+    try {
+      const draft = jsonBox?.value ? JSON.parse(jsonBox.value) : readAdminEditorForm(item, form);
+      const items = [...getAdminCollection(params.type)];
+      items[params.index] = draft;
+      setAdminCollection(params.type, items);
+      await persistState(status, "已保存表单修改到网站数据文件。");
+      renderAdminWorkbench();
+    } catch (error) {
+      if (status) status.textContent = `保存失败：${error.message}`;
+    }
+  });
+  $("#adminDuplicateEditContentBtn")?.addEventListener("click", async () => {
+    try {
+      const draft = jsonBox?.value ? JSON.parse(jsonBox.value) : readAdminEditorForm(item, form);
+      const copy = { ...draft, id: `${draft.id || params.type}-${Date.now()}`, slug: localSlug(`${draft.slug || draft.title || draft.product || draft.name || params.type}-${Date.now()}`) };
+      const nextItems = [...getAdminCollection(params.type), copy];
+      setAdminCollection(params.type, nextItems);
+      await persistState(status, "已复制为新条目。");
+      location.href = adminContentEditUrl(params.scope, params.type, nextItems.length - 1);
+    } catch (error) {
+      if (status) status.textContent = `复制失败：${error.message}`;
+    }
+  });
+  $("#adminDeleteEditContentBtn")?.addEventListener("click", async () => {
+    if (!window.confirm(`删除「${adminItemLabel(item, params.index)}」后将写入当前数据状态。确认继续？`)) return;
+    const nextItems = [...getAdminCollection(params.type)];
+    nextItems.splice(params.index, 1);
+    setAdminCollection(params.type, nextItems);
+    await persistState(status, "已删除条目。");
+    location.href = "./admin.html?v=admin-editor-wysiwyg-20260504#content";
+  });
 }
 
 function bindSyncButton() {

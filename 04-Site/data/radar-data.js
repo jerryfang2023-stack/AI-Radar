@@ -1,5 +1,5 @@
 window.AI_RADAR_DATA = {
-  "generatedAt": "2026-05-04T09:13:45.154Z",
+  "generatedAt": "2026-05-04T15:21:59.991Z",
   "signals": [
     {
       "id": "2026-04-29-signal-1",
@@ -112,7 +112,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 4,
         "total": 28,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-1",
         "taxonomy": {
           "tracks": [
@@ -156,7 +157,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI营销",
             "融资证据",
             "成熟化",
@@ -182,14 +183,45 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI营销Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI营销Agent",
+        "judgmentId": "jn-ai营销agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 93,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 100,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "Hightouch",
         "opportunityName": "Hightouch",
         "representativeCase": "",
         "scoreText": "28/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR超过1亿美元，说明已完成明确商业化验证，不是概念型AI工具。",
           "客户包括PetSmart、DraftKings、HelloFresh，具备真实企业客户基础。",
@@ -227,12 +259,12 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（Hightouch 大额融资强化“数据激活→行动闭环”主线）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+        "verdict": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
         "products": [
           {
             "product": "Hightouch",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "大额融资继续验证“数据激活→触达→转化”闭环；核心价值在可量化ROI而非内容生成"
           },
           {
@@ -404,13 +436,13 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+        "summary": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
         "topScoringRows": [
           {
             "id": "2026-05-04-AI营销Agent（Hightouch）",
             "date": "2026-05-04",
             "score": 26,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI营销Agent",
             "opportunitySlug": "20260429-07-ai营销agent",
             "representativeCase": "Hightouch"
@@ -446,12 +478,22 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-30-AI营销平台（Hightouch）",
             "date": "2026-04-30",
             "score": 27,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI营销Agent",
             "opportunitySlug": "20260429-07-ai营销agent",
             "representativeCase": "Hightouch"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai营销agent",
+          "jn-ai增长agent",
+          "jn-ai互动内容平台",
+          "jn-中小商家ai营销对话平台"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 74,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -602,7 +644,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-2",
         "taxonomy": {
           "tracks": [
@@ -644,7 +687,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Agent",
             "融资证据",
             "升温",
@@ -670,14 +713,58 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI Agent基础设施服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI Agent基础设施服务",
+        "judgmentId": "jn-ai-agent基础设施服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-13",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "Parallel Web Systems",
         "opportunityName": "Parallel Web Systems",
         "representativeCase": "",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "1亿美元融资、20亿美元估值，且投资方质量高，资金强度非常明确。",
           "已有10万开发者使用，并被Harvey等AI原生公司采用，具备早期生态验证。",
@@ -841,7 +928,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 4,
         "total": 27,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-3",
         "taxonomy": {
           "tracks": [
@@ -889,7 +977,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI客服",
             "融资证据",
             "升温",
@@ -918,14 +1006,39 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI语音客服首轮分流助手",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI语音客服首轮分流助手",
+        "judgmentId": "jn-ai语音客服首轮分流助手",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 90,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 93,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI客服/语音Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-5"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "Avoca",
         "opportunityName": "Avoca",
         "representativeCase": "",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "融资超过1.25亿美元，估值10亿美元，资本信号明确。",
           "场景聚焦本地服务业电话接待、预约、报价、回访，直接影响成交收入。",
@@ -935,7 +1048,7 @@ window.AI_RADAR_DATA = {
           "语音Agent对稳定性、行业话术、系统集成要求高，一旦误约或误答，会直接影响客户体验。",
           "中国市场可能不是电话为主入口，需要转向微信、企微、抖音、小红书私信等多渠道线索接待。"
         ],
-        "change": "初始。本次新增进入评分表，直接进入做多清单，是今日最重要新增信号之一。"
+        "change": "初始。本次新增进入评分表，直接进入优先验证清单，是今日最重要新增信号之一。"
       },
       "trend": {
         "track": "AI客服/语音Agent",
@@ -963,18 +1076,18 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（多 Agent 编排继续强化“客服执行层”路线）",
         "thirtyDay": "上升（进入企业执行层）",
-        "verdict": "做多。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
+        "verdict": "优先验证。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
         "products": [
           {
             "product": "Avoca",
             "score": "27/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "融资超1.25亿美元、估值10亿美元，聚焦本地服务业电话接待→预约→回访流程"
           },
           {
             "product": "Netomi",
             "score": "27/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "1.1亿美元C轮+Accenture领投，聚焦航空/媒体等高客诉行业中等复杂度客服请求，从回答问题升级为执行处理流程"
           },
           {
@@ -1134,7 +1247,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
+        "summary": "优先验证。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
         "topScoringRows": [
           {
             "id": "2026-05-04-AI企业客服执行Agent（ASAPP）",
@@ -1158,7 +1271,7 @@ window.AI_RADAR_DATA = {
             "id": "2026-05-01-AI客服Agent（Netomi）",
             "date": "2026-05-01",
             "score": 27,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI企业客服执行Agent",
             "opportunitySlug": "20260501-01-ai企业客服执行agent",
             "representativeCase": "Netomi"
@@ -1167,12 +1280,20 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-29-Avoca",
             "date": "2026-04-29",
             "score": 27,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI语音客服首轮分流助手",
             "opportunitySlug": "20260429-02-ai语音客服首轮分流助手",
             "representativeCase": ""
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai语音客服首轮分流助手",
+          "jn-ai企业客服执行agent"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "normal_watch",
+        "trendConfidence": 82,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -1344,6 +1465,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 21,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-04-29-signal-4",
         "taxonomy": {
           "tracks": [
@@ -1420,7 +1542,30 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI增长Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI增长Agent",
+        "judgmentId": "jn-ai增长agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 70,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 53,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI增长"
+        ],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "LeapMind Growth",
@@ -1437,7 +1582,7 @@ window.AI_RADAR_DATA = {
           "当前缺融资金额、客户案例、收入数据和明确ROI验证，商业化证据不足。",
           "增长问题往往不只来自策略，还来自产品、销售承接、内容执行和组织能力，AI不一定能单独解决。"
         ],
-        "change": "初始。本次新增进入评分表，暂列观察，不进入做多清单，后续重点看客户案例和ROI数据。"
+        "change": "初始。本次新增进入评分表，暂列观察，不进入优先验证清单，后续重点看客户案例和ROI数据。"
       },
       "trend": null,
       "taxonomy": {
@@ -1600,6 +1745,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-04-29-signal-5",
         "taxonomy": {
           "tracks": [
@@ -1660,7 +1806,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI基础设施托管服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI基础设施托管服务",
+        "judgmentId": "jn-ai基础设施托管服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 80,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "Cognizant 收购 Astreya",
@@ -1939,7 +2112,17 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260430-01-ai基础设施托管服务",
             "representativeCase": ""
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai基础设施托管服务",
+          "jn-ai记忆层基础设施",
+          "jn-ai工程仿真软件",
+          "jn-端侧推理芯片与软件栈"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 65,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -2082,7 +2265,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 25,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-6",
         "taxonomy": {
           "tracks": [
@@ -2119,7 +2303,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Agent",
             "产品发布",
             "升温",
@@ -2143,14 +2327,67 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AICoding驱动一人公司工具链",
         "opportunityMatchScore": 72,
         "opportunityMatchReason": "taxonomy",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AICoding驱动一人公司工具链",
+        "judgmentId": "jn-aicoding驱动一人公司工具链",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 83,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-9",
+          "2026-05-04-point-5",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-9",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-17",
+          "2026-05-03-point-14",
+          "2026-05-03-point-18",
+          "2026-05-03-point-19",
+          "2026-05-03-point-16",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "OpenAI Workspace Agents",
         "opportunityName": "OpenAI Workspace Agents",
         "representativeCase": "",
         "scoreText": "25/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "Workspace Agents 把Agent从个人工具推进到组织级协作场景，方向具备平台级意义。",
           "接入AWS Bedrock后，企业Agent获得更强云生态分发能力，有利于开发者和企业客户采用。",
@@ -2305,6 +2542,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-04-30-signal-2",
         "taxonomy": {
           "tracks": [
@@ -2367,7 +2605,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业文档与财务流程Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业文档与财务流程Agent",
+        "judgmentId": "jn-企业文档与财务流程agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业文档AI Agent（Box Automate）",
@@ -2531,7 +2812,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-30-signal-3",
         "taxonomy": {
           "tracks": [
@@ -2575,7 +2857,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "企业工作流",
             "收入增长",
             "成熟化",
@@ -2602,14 +2884,49 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 159,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业AI治理（Vanta）",
         "opportunityName": "企业AI治理",
         "representativeCase": "Vanta",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR 3亿美元 + 高增长，需求已规模化验证",
           "“Shadow AI”成为企业刚需问题",
@@ -2776,6 +3093,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 15,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-04-30-signal-6",
         "taxonomy": {
           "tracks": [
@@ -2852,7 +3170,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI记忆层基础设施",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI记忆层基础设施",
+        "judgmentId": "jn-ai记忆层基础设施",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 50,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 33,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "AI记忆层基础设施（MemoraX）",
@@ -3130,7 +3475,17 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260430-01-ai基础设施托管服务",
             "representativeCase": ""
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai基础设施托管服务",
+          "jn-ai记忆层基础设施",
+          "jn-ai工程仿真软件",
+          "jn-端侧推理芯片与软件栈"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 65,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -3280,7 +3635,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-30-signal-7",
         "taxonomy": {
           "tracks": [
@@ -3314,7 +3670,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Agent",
             "融资证据",
             "升温",
@@ -3336,14 +3692,57 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业级Agent操作系统（中数睿智）",
         "opportunityName": "企业级Agent操作系统",
         "representativeCase": "中数睿智",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "已盈利 + 央国企客户 + 高复购",
           "Agent直接嵌入业务流程，非工具层",
@@ -3384,24 +3783,24 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（金融客户采用、企业数据控制平面和身份治理同时强化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "verdict": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "products": [
           {
             "product": "中数睿智",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "企业级智能体操作系统，已盈利+100% YoY增长+60%头部央国企覆盖率，中国Agent商业化标志性样本"
           },
           {
             "product": "Parallel Web Systems",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "1亿美元B轮、20亿美元估值，10万开发者+Harvey等客户，卡位Agent网页执行层"
           },
           {
             "product": "OpenAI Workspace Agents",
             "score": "25/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "从个人工具推进到组织协作，接入AWS Bedrock增强云生态分发"
           },
           {
@@ -3637,7 +4036,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "summary": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "topScoringRows": [
           {
             "id": "2026-05-04-企业Agent工作平台（Google Cloud）",
@@ -3684,7 +4083,20 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260502-01-无人系统任务执行智能体平台",
             "representativeCase": "Scout AI"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai-agent基础设施服务",
+          "jn-aicoding驱动一人公司工具链",
+          "jn-企业agent工作平台",
+          "jn-企业文档与财务流程agent",
+          "jn-无人系统任务执行智能体平台",
+          "jn-agent治理与权限审计服务",
+          "jn-企业数据智能体控制平面"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 75,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -3825,7 +4237,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 27,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-01-signal-1",
         "taxonomy": {
           "tracks": [
@@ -3864,7 +4277,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI客服",
             "融资证据",
             "成熟化",
@@ -3889,14 +4302,40 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI企业客服执行Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI企业客服执行Agent",
+        "judgmentId": "jn-ai企业客服执行agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 90,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI客服/语音Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9",
+          "2026-05-03-point-2"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "AI客服Agent（Netomi）",
         "opportunityName": "AI客服Agent",
         "representativeCase": "Netomi",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "大额融资 + Accenture渠道，具备企业分发能力",
           "客户为航空/媒体等高频客服行业，付费能力强",
@@ -4055,7 +4494,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-01-signal-2",
         "taxonomy": {
           "tracks": [
@@ -4102,7 +4542,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Coding",
             "融资证据",
             "升温",
@@ -4130,14 +4570,57 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AICoding驱动一人公司工具链",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AICoding驱动一人公司工具链",
+        "judgmentId": "jn-aicoding驱动一人公司工具链",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI编程"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-9",
+          "2026-05-04-point-5",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-9",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-17",
+          "2026-05-03-point-14",
+          "2026-05-03-point-18",
+          "2026-05-03-point-19",
+          "2026-05-03-point-16",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "AI编程Agent（Factory）",
         "opportunityName": "AI编程Agent",
         "representativeCase": "Factory",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "15亿美元估值+顶级VC，资本强共识",
           "已进入金融/安全等高价值企业研发体系",
@@ -4305,7 +4788,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 25,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-01-signal-4",
         "taxonomy": {
           "tracks": [
@@ -4353,7 +4837,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "企业工作流",
             "融资证据",
             "升温",
@@ -4383,14 +4867,46 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI用户研究Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI用户研究Agent",
+        "judgmentId": "jn-ai用户研究agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 83,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 80,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI用户研究"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-5",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-7"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "AI用户研究（Mizzen）",
         "opportunityName": "AI用户研究",
         "representativeCase": "Mizzen",
         "scoreText": "25/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "4个月300+企业客户，验证极强",
           "明确替代市场研究/咨询预算",
@@ -4559,6 +5075,7 @@ window.AI_RADAR_DATA = {
         "competition": 1,
         "total": 16,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-01-signal-5",
         "taxonomy": {
           "tracks": [
@@ -4630,7 +5147,35 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI互动内容平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI互动内容平台",
+        "judgmentId": "jn-ai互动内容平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 53,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 67,
+        "demandRealityScore": 40,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 40,
+        "counterEvidenceScore": 80,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销",
+          "AI工具类"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-8",
+          "2026-05-03-point-11",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "AI Native互动内容（Loopit）",
@@ -4674,12 +5219,12 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（Hightouch 大额融资强化“数据激活→行动闭环”主线）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+        "verdict": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
         "products": [
           {
             "product": "Hightouch",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "大额融资继续验证“数据激活→触达→转化”闭环；核心价值在可量化ROI而非内容生成"
           },
           {
@@ -4851,13 +5396,13 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+        "summary": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
         "topScoringRows": [
           {
             "id": "2026-05-04-AI营销Agent（Hightouch）",
             "date": "2026-05-04",
             "score": 26,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI营销Agent",
             "opportunitySlug": "20260429-07-ai营销agent",
             "representativeCase": "Hightouch"
@@ -4893,12 +5438,22 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-30-AI营销平台（Hightouch）",
             "date": "2026-04-30",
             "score": 27,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI营销Agent",
             "opportunitySlug": "20260429-07-ai营销agent",
             "representativeCase": "Hightouch"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai营销agent",
+          "jn-ai增长agent",
+          "jn-ai互动内容平台",
+          "jn-中小商家ai营销对话平台"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 74,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -5047,6 +5602,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-01-signal-6",
         "taxonomy": {
           "tracks": [
@@ -5103,7 +5659,30 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "具身智能物流机器人",
         "opportunityMatchScore": 102,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "具身智能物流机器人",
+        "judgmentId": "jn-具身智能物流机器人",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "具身智能/机器人"
+        ],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "具身智能物流（星动纪元）",
@@ -5265,6 +5844,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-01-signal-7",
         "taxonomy": {
           "tracks": [
@@ -5340,7 +5920,35 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI工程仿真软件",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI工程仿真软件",
+        "judgmentId": "jn-ai工程仿真软件",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9",
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "AI工程仿真（JuliaHub）",
@@ -5618,7 +6226,17 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260430-01-ai基础设施托管服务",
             "representativeCase": ""
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai基础设施托管服务",
+          "jn-ai记忆层基础设施",
+          "jn-ai工程仿真软件",
+          "jn-端侧推理芯片与软件栈"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 65,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -5778,6 +6396,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-02-signal-1",
         "taxonomy": {
           "tracks": [
@@ -5841,7 +6460,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业桌面端 Agent 执行层（Amazon Quick）",
@@ -5890,24 +6552,24 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（金融客户采用、企业数据控制平面和身份治理同时强化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "verdict": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "products": [
           {
             "product": "中数睿智",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "企业级智能体操作系统，已盈利+100% YoY增长+60%头部央国企覆盖率，中国Agent商业化标志性样本"
           },
           {
             "product": "Parallel Web Systems",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "1亿美元B轮、20亿美元估值，10万开发者+Harvey等客户，卡位Agent网页执行层"
           },
           {
             "product": "OpenAI Workspace Agents",
             "score": "25/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "从个人工具推进到组织协作，接入AWS Bedrock增强云生态分发"
           },
           {
@@ -6143,7 +6805,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "summary": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "topScoringRows": [
           {
             "id": "2026-05-04-企业Agent工作平台（Google Cloud）",
@@ -6190,7 +6852,20 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260502-01-无人系统任务执行智能体平台",
             "representativeCase": "Scout AI"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai-agent基础设施服务",
+          "jn-aicoding驱动一人公司工具链",
+          "jn-企业agent工作平台",
+          "jn-企业文档与财务流程agent",
+          "jn-无人系统任务执行智能体平台",
+          "jn-agent治理与权限审计服务",
+          "jn-企业数据智能体控制平面"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 75,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -6338,6 +7013,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 17,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-2",
         "taxonomy": {
           "tracks": [
@@ -6395,7 +7071,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "无人系统任务执行智能体平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "无人系统任务执行智能体平台",
+        "judgmentId": "jn-无人系统任务执行智能体平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 57,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 60,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 53,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "国防无人系统任务型基础模型（Scout AI）",
@@ -6444,24 +7163,24 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（金融客户采用、企业数据控制平面和身份治理同时强化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "verdict": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "products": [
           {
             "product": "中数睿智",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "企业级智能体操作系统，已盈利+100% YoY增长+60%头部央国企覆盖率，中国Agent商业化标志性样本"
           },
           {
             "product": "Parallel Web Systems",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "1亿美元B轮、20亿美元估值，10万开发者+Harvey等客户，卡位Agent网页执行层"
           },
           {
             "product": "OpenAI Workspace Agents",
             "score": "25/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "从个人工具推进到组织协作，接入AWS Bedrock增强云生态分发"
           },
           {
@@ -6697,7 +7416,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "summary": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "topScoringRows": [
           {
             "id": "2026-05-04-企业Agent工作平台（Google Cloud）",
@@ -6744,7 +7463,20 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260502-01-无人系统任务执行智能体平台",
             "representativeCase": "Scout AI"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai-agent基础设施服务",
+          "jn-aicoding驱动一人公司工具链",
+          "jn-企业agent工作平台",
+          "jn-企业文档与财务流程agent",
+          "jn-无人系统任务执行智能体平台",
+          "jn-agent治理与权限审计服务",
+          "jn-企业数据智能体控制平面"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 75,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -6892,6 +7624,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-02-signal-3",
         "taxonomy": {
           "tracks": [
@@ -6951,7 +7684,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "合规引擎/Agent 治理（Haast）",
@@ -6996,12 +7764,12 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（Agent OS/控制平面融资强化治理前置化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+        "verdict": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
         "products": [
           {
             "product": "Vanta",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "ARR超3亿美元（两年3倍增长），定位Agentic Trust Platform，增长来自企业使用Claude/Cursor后的Shadow AI治理需求"
           },
           {
@@ -7173,7 +7941,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+        "summary": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
         "topScoringRows": [
           {
             "id": "2026-05-04-Agent治理与权限审计服务（Sycamore）",
@@ -7206,12 +7974,19 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-30-企业AI治理（Vanta）",
             "date": "2026-04-30",
             "score": 26,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "Agent治理与权限审计服务",
             "opportunitySlug": "20260428-02-agent治理与权限审计服务",
             "representativeCase": "Vanta"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-agent治理与权限审计服务"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 76,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -7358,6 +8133,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 17,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-4",
         "taxonomy": {
           "tracks": [
@@ -7416,7 +8192,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "端侧推理芯片与软件栈",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "端侧推理芯片与软件栈",
+        "judgmentId": "jn-端侧推理芯片与软件栈",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 57,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 53,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "端侧推理芯片 + 软件栈（原粒半导体）",
@@ -7695,7 +8498,17 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260430-01-ai基础设施托管服务",
             "representativeCase": ""
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai基础设施托管服务",
+          "jn-ai记忆层基础设施",
+          "jn-ai工程仿真软件",
+          "jn-端侧推理芯片与软件栈"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 65,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -7846,6 +8659,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 15,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-5",
         "taxonomy": {
           "tracks": [
@@ -7913,7 +8727,52 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 50,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 40,
+        "demandRealityScore": 60,
+        "momentumScore": 20,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 60,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-21",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "跨境并购与监管变量（Manus 并购受阻）",
@@ -7930,7 +8789,7 @@ window.AI_RADAR_DATA = {
           "它本身不是可直接复制的商业机会，更像风险信号。",
           "公开细节有限，仍需持续观察后续监管和交易层面的补充信息。"
         ],
-        "change": "相对 Day1 基线是：初始。 当前先作为风险约束纳入，不把它当成独立做多方向。"
+        "change": "相对 Day1 基线是：初始。 当前先作为风险约束纳入，不把它当成独立优先验证方向。"
       },
       "trend": {
         "track": "AI Agent",
@@ -7962,24 +8821,24 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（金融客户采用、企业数据控制平面和身份治理同时强化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "verdict": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "products": [
           {
             "product": "中数睿智",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "企业级智能体操作系统，已盈利+100% YoY增长+60%头部央国企覆盖率，中国Agent商业化标志性样本"
           },
           {
             "product": "Parallel Web Systems",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "1亿美元B轮、20亿美元估值，10万开发者+Harvey等客户，卡位Agent网页执行层"
           },
           {
             "product": "OpenAI Workspace Agents",
             "score": "25/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "从个人工具推进到组织协作，接入AWS Bedrock增强云生态分发"
           },
           {
@@ -8215,7 +9074,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "summary": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "topScoringRows": [
           {
             "id": "2026-05-04-企业Agent工作平台（Google Cloud）",
@@ -8262,7 +9121,20 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260502-01-无人系统任务执行智能体平台",
             "representativeCase": "Scout AI"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai-agent基础设施服务",
+          "jn-aicoding驱动一人公司工具链",
+          "jn-企业agent工作平台",
+          "jn-企业文档与财务流程agent",
+          "jn-无人系统任务执行智能体平台",
+          "jn-agent治理与权限审计服务",
+          "jn-企业数据智能体控制平面"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 75,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -8416,6 +9288,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 16,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-6",
         "taxonomy": {
           "tracks": [
@@ -8480,7 +9353,32 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "具身智能控制栈与评测平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "具身智能控制栈与评测平台",
+        "judgmentId": "jn-具身智能控制栈与评测平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 53,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 47,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 60,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "具身智能/机器人"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "具身智能“脑”层软件栈（Meta × ARI 并购）",
@@ -8652,7 +9550,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-03-signal-1",
         "taxonomy": {
           "tracks": [
@@ -8699,7 +9598,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "专业服务AI",
             "融资证据",
             "升温",
@@ -8729,14 +9628,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "专业服务AI工作流平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "专业服务AI工作流平台",
+        "judgmentId": "jn-专业服务ai工作流平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "专业服务AI"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-2",
+          "2026-05-03-point-9",
+          "2026-05-03-point-18",
+          "2026-05-03-point-22"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "专业服务AI工作流平台（Legora）",
         "opportunityName": "专业服务AI工作流平台",
         "representativeCase": "Legora",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "法律 AI 出现高估值和头部竞争，说明专业服务 AI 已经具备大客户预算和资本关注。",
           "法律场景知识密度高、交付价值明确，容易从“工具”升级为工作流系统。",
@@ -8746,7 +9673,7 @@ window.AI_RADAR_DATA = {
           "Harvey、Legora 等头部公司已经卡位，后来者需要避开通用法律助手。",
           "中国市场迁移需要本地法库、合规、律师协作习惯和交付能力。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "专业服务AI",
@@ -8758,12 +9685,12 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "新赛道启动（法律 AI 头部估值与竞争强化）",
         "thirtyDay": "上升",
-        "verdict": "做多。专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
+        "verdict": "优先验证。专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
         "products": [
           {
             "product": "Legora",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "估值升至56亿美元级别，法律AI头部竞争加剧，验证专业服务AI从工具进入工作流预算"
           }
         ],
@@ -8898,18 +9825,25 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
+        "summary": "优先验证。专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
         "topScoringRows": [
           {
             "id": "2026-05-03-专业服务AI工作流平台（Legora）",
             "date": "2026-05-03",
             "score": 26,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "专业服务AI工作流平台",
             "opportunitySlug": "20260503-01-professional-service-ai-workflow",
             "representativeCase": "Legora"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-专业服务ai工作流平台"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "normal_watch",
+        "trendConfidence": 87,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -9067,6 +10001,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-2",
         "taxonomy": {
           "tracks": [
@@ -9125,7 +10060,30 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "临床影像AI辅助诊断平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "临床影像AI辅助诊断平台",
+        "judgmentId": "jn-临床影像ai辅助诊断平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "医疗AI"
+        ],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "临床影像AI辅助诊断平台（Aidoc）",
@@ -9142,7 +10100,7 @@ window.AI_RADAR_DATA = {
           "医疗采购周期长，临床责任、审批和医保支付仍会拖慢商业化。",
           "中国市场需要监管许可、医院渠道和临床数据闭环。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "医疗AI",
@@ -9290,7 +10248,14 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260503-02-clinical-imaging-ai-platform",
             "representativeCase": "Aidoc"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-临床影像ai辅助诊断平台"
+        ],
+        "pointConsensusState": "not_applied",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 80,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -9438,6 +10403,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-3",
         "taxonomy": {
           "tracks": [
@@ -9497,7 +10463,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 219,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业Agent工作平台（Citi）",
@@ -9514,7 +10523,7 @@ window.AI_RADAR_DATA = {
           "公开细节有限，暂时无法判断规模、预算和实际使用部门。",
           "金融行业复制难度高，销售和合规周期都较长。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "AI Agent",
@@ -9546,24 +10555,24 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（金融客户采用、企业数据控制平面和身份治理同时强化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "verdict": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "products": [
           {
             "product": "中数睿智",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "企业级智能体操作系统，已盈利+100% YoY增长+60%头部央国企覆盖率，中国Agent商业化标志性样本"
           },
           {
             "product": "Parallel Web Systems",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "1亿美元B轮、20亿美元估值，10万开发者+Harvey等客户，卡位Agent网页执行层"
           },
           {
             "product": "OpenAI Workspace Agents",
             "score": "25/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "从个人工具推进到组织协作，接入AWS Bedrock增强云生态分发"
           },
           {
@@ -9799,7 +10808,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+        "summary": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
         "topScoringRows": [
           {
             "id": "2026-05-04-企业Agent工作平台（Google Cloud）",
@@ -9846,7 +10855,20 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260502-01-无人系统任务执行智能体平台",
             "representativeCase": "Scout AI"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai-agent基础设施服务",
+          "jn-aicoding驱动一人公司工具链",
+          "jn-企业agent工作平台",
+          "jn-企业文档与财务流程agent",
+          "jn-无人系统任务执行智能体平台",
+          "jn-agent治理与权限审计服务",
+          "jn-企业数据智能体控制平面"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 75,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -9995,6 +11017,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 23,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-4",
         "taxonomy": {
           "tracks": [
@@ -10054,7 +11077,51 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业数据智能体控制平面",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业数据智能体控制平面",
+        "judgmentId": "jn-企业数据智能体控制平面",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 77,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 73,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent",
+          "企业数据/RAG"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业数据智能体控制平面（Snowflake）",
@@ -10071,7 +11138,7 @@ window.AI_RADAR_DATA = {
           "头部平台会压缩独立产品空间，创业公司必须找垂直行业或跨平台切口。",
           "真实客户采用与付费增量还需跟踪。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "企业数据/RAG",
@@ -10249,7 +11316,14 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260503-03-enterprise-data-agent-control-plane",
             "representativeCase": "Snowflake"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-企业数据智能体控制平面"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "normal_watch",
+        "trendConfidence": 72,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -10396,6 +11470,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 23,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-5",
         "taxonomy": {
           "tracks": [
@@ -10457,7 +11532,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 207,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 77,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 73,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "Agent治理与权限审计服务（Okta）",
@@ -10474,7 +11584,7 @@ window.AI_RADAR_DATA = {
           "身份安全巨头入场会压缩轻量创业工具空间。",
           "独立团队更适合做本地化、行业策略模板和审计服务，而非通用 IAM。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "AI治理",
@@ -10502,12 +11612,12 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（Agent OS/控制平面融资强化治理前置化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+        "verdict": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
         "products": [
           {
             "product": "Vanta",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "ARR超3亿美元（两年3倍增长），定位Agentic Trust Platform，增长来自企业使用Claude/Cursor后的Shadow AI治理需求"
           },
           {
@@ -10679,7 +11789,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+        "summary": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
         "topScoringRows": [
           {
             "id": "2026-05-04-Agent治理与权限审计服务（Sycamore）",
@@ -10712,12 +11822,19 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-30-企业AI治理（Vanta）",
             "date": "2026-04-30",
             "score": 26,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "Agent治理与权限审计服务",
             "opportunitySlug": "20260428-02-agent治理与权限审计服务",
             "representativeCase": "Vanta"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-agent治理与权限审计服务"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 76,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -10880,6 +11997,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-6",
         "taxonomy": {
           "tracks": [
@@ -10951,7 +12069,33 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI企业客服执行Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI企业客服执行Agent",
+        "judgmentId": "jn-ai企业客服执行agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI客服/语音Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9",
+          "2026-05-03-point-2"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "AI企业客服执行Agent（ASAPP）",
@@ -10968,7 +12112,7 @@ window.AI_RADAR_DATA = {
           "客服 AI 竞争拥挤，差异化必须落到具体行业和处理率数据。",
           "企业客户对误答、升级和合规会有较高要求。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "AI客服/语音Agent",
@@ -10996,18 +12140,18 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（多 Agent 编排继续强化“客服执行层”路线）",
         "thirtyDay": "上升（进入企业执行层）",
-        "verdict": "做多。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
+        "verdict": "优先验证。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
         "products": [
           {
             "product": "Avoca",
             "score": "27/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "融资超1.25亿美元、估值10亿美元，聚焦本地服务业电话接待→预约→回访流程"
           },
           {
             "product": "Netomi",
             "score": "27/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "1.1亿美元C轮+Accenture领投，聚焦航空/媒体等高客诉行业中等复杂度客服请求，从回答问题升级为执行处理流程"
           },
           {
@@ -11167,7 +12311,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
+        "summary": "优先验证。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
         "topScoringRows": [
           {
             "id": "2026-05-04-AI企业客服执行Agent（ASAPP）",
@@ -11191,7 +12335,7 @@ window.AI_RADAR_DATA = {
             "id": "2026-05-01-AI客服Agent（Netomi）",
             "date": "2026-05-01",
             "score": 27,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI企业客服执行Agent",
             "opportunitySlug": "20260501-01-ai企业客服执行agent",
             "representativeCase": "Netomi"
@@ -11200,12 +12344,20 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-29-Avoca",
             "date": "2026-04-29",
             "score": 27,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI语音客服首轮分流助手",
             "opportunitySlug": "20260429-02-ai语音客服首轮分流助手",
             "representativeCase": ""
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai语音客服首轮分流助手",
+          "jn-ai企业客服执行agent"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "normal_watch",
+        "trendConfidence": 82,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -11360,6 +12512,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 21,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-7",
         "taxonomy": {
           "tracks": [
@@ -11424,7 +12577,33 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "中小商家AI营销对话平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "中小商家AI营销对话平台",
+        "judgmentId": "jn-中小商家ai营销对话平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 70,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 67,
+        "demandRealityScore": 80,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "中小商家AI营销对话平台（Meta Business AI）",
@@ -11441,7 +12620,7 @@ window.AI_RADAR_DATA = {
           "Meta 平台自身会掌握入口，独立团队平台依赖较强。",
           "需要证明 AI 对话能带来真实转化增量，而不只是消息量。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "AI营销",
@@ -11469,12 +12648,12 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（Hightouch 大额融资强化“数据激活→行动闭环”主线）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+        "verdict": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
         "products": [
           {
             "product": "Hightouch",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "大额融资继续验证“数据激活→触达→转化”闭环；核心价值在可量化ROI而非内容生成"
           },
           {
@@ -11646,13 +12825,13 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+        "summary": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
         "topScoringRows": [
           {
             "id": "2026-05-04-AI营销Agent（Hightouch）",
             "date": "2026-05-04",
             "score": 26,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI营销Agent",
             "opportunitySlug": "20260429-07-ai营销agent",
             "representativeCase": "Hightouch"
@@ -11688,12 +12867,22 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-30-AI营销平台（Hightouch）",
             "date": "2026-04-30",
             "score": 27,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "AI营销Agent",
             "opportunitySlug": "20260429-07-ai营销agent",
             "representativeCase": "Hightouch"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-ai营销agent",
+          "jn-ai增长agent",
+          "jn-ai互动内容平台",
+          "jn-中小商家ai营销对话平台"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 74,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -11845,6 +13034,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-04-signal-1",
         "taxonomy": {
           "tracks": [
@@ -11910,7 +13100,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 231,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业Agent工作平台（Google Cloud）",
@@ -11927,7 +13160,7 @@ window.AI_RADAR_DATA = {
           "云厂商掌握入口与底层能力，创业窗口主要在垂直场景与工程化交付层，不在基础能力层。",
           "竞争强度极高，产品差异化必须落到可交付的 ROI 与治理标准。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": null,
       "taxonomy": {
@@ -12083,6 +13316,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-04-signal-3",
         "taxonomy": {
           "tracks": [
@@ -12152,7 +13386,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 183,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 73,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "Agent治理与权限审计服务（Sycamore）",
@@ -12169,7 +13438,7 @@ window.AI_RADAR_DATA = {
           "公开客户与收入证据不足，仍需验证采购路径与可复制交付方式。",
           "平台/大厂可能快速覆盖通用能力，独立团队需要本地化与行业策略包切入。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "AI治理",
@@ -12197,12 +13466,12 @@ window.AI_RADAR_DATA = {
         ],
         "sevenDay": "上升（Agent OS/控制平面融资强化治理前置化）",
         "thirtyDay": "持续上升",
-        "verdict": "做多。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+        "verdict": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
         "products": [
           {
             "product": "Vanta",
             "score": "26/30",
-            "verdict": "做多",
+            "verdict": "优先验证",
             "basis": "ARR超3亿美元（两年3倍增长），定位Agentic Trust Platform，增长来自企业使用Claude/Cursor后的Shadow AI治理需求"
           },
           {
@@ -12374,7 +13643,7 @@ window.AI_RADAR_DATA = {
           "融资只能说明资本关注",
           "仍需等待产品交付和商业化验证。"
         ],
-        "summary": "治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+        "summary": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
         "topScoringRows": [
           {
             "id": "2026-05-04-Agent治理与权限审计服务（Sycamore）",
@@ -12407,12 +13676,19 @@ window.AI_RADAR_DATA = {
             "id": "2026-04-30-企业AI治理（Vanta）",
             "date": "2026-04-30",
             "score": 26,
-            "verdict": "做多",
+            "verdict": "优先验证",
             "opportunityTitle": "Agent治理与权限审计服务",
             "opportunitySlug": "20260428-02-agent治理与权限审计服务",
             "representativeCase": "Vanta"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-agent治理与权限审计服务"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "watch_counter_evidence",
+        "trendConfidence": 76,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -12566,6 +13842,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-04-signal-4",
         "taxonomy": {
           "tracks": [
@@ -12627,7 +13904,36 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业数据智能体控制平面",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业数据智能体控制平面",
+        "judgmentId": "jn-企业数据智能体控制平面",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 80,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "企业数据/RAG"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-1",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-7",
+          "2026-05-03-point-12"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业数据智能体控制平面（GoodData）",
@@ -12644,7 +13950,7 @@ window.AI_RADAR_DATA = {
           "需要持续证明客户采用与付费增量，否则容易停留在功能发布层面。",
           "语义层与数据平台竞争激烈，差异化要落在行业指标包与落地交付效率。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": {
         "track": "企业数据/RAG",
@@ -12822,7 +14128,14 @@ window.AI_RADAR_DATA = {
             "opportunitySlug": "20260503-03-enterprise-data-agent-control-plane",
             "representativeCase": "Snowflake"
           }
-        ]
+        ],
+        "judgmentIds": [
+          "jn-企业数据智能体控制平面"
+        ],
+        "pointConsensusState": "viewpoint_signal_present",
+        "counterEvidenceState": "normal_watch",
+        "trendConfidence": 72,
+        "lastCalibrationDate": ""
       },
       "taxonomy": {
         "tracks": [
@@ -12970,6 +14283,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-04-signal-6",
         "taxonomy": {
           "tracks": [
@@ -13035,7 +14349,28 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业文档与财务流程Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业文档与财务流程Agent",
+        "judgmentId": "jn-企业文档与财务流程agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "机会前移",
+        "evidenceQualityScore": 67,
+        "demandRealityScore": 80,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       "scoringDetail": {
         "product": "企业文档与财务流程Agent（Sage）",
@@ -13052,7 +14387,7 @@ window.AI_RADAR_DATA = {
           "平台方加速内置会压缩通用工具空间，独立团队必须聚焦细分流程或本地化交付。",
           "采购与合规周期长，销售成本高。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "trend": null,
       "taxonomy": {
@@ -13122,7 +14457,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 4,
         "total": 28,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-1",
         "taxonomy": {
           "tracks": [
@@ -13166,7 +14502,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI营销",
             "融资证据",
             "成熟化",
@@ -13192,7 +14528,38 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI营销Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI营销Agent",
+        "judgmentId": "jn-ai营销agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 93,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 100,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-29-Avoca",
@@ -13210,7 +14577,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 4,
         "total": 27,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-3",
         "taxonomy": {
           "tracks": [
@@ -13258,7 +14626,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI客服",
             "融资证据",
             "升温",
@@ -13287,7 +14655,32 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI语音客服首轮分流助手",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI语音客服首轮分流助手",
+        "judgmentId": "jn-ai语音客服首轮分流助手",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 90,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 93,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI客服/语音Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-5"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-29-Parallel Web Systems",
@@ -13305,7 +14698,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-2",
         "taxonomy": {
           "tracks": [
@@ -13347,7 +14741,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Agent",
             "融资证据",
             "升温",
@@ -13373,7 +14767,51 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI Agent基础设施服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI Agent基础设施服务",
+        "judgmentId": "jn-ai-agent基础设施服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-13",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-29-OpenAI Workspace Agents",
@@ -13391,7 +14829,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 25,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-6",
         "taxonomy": {
           "tracks": [
@@ -13428,7 +14867,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Agent",
             "产品发布",
             "升温",
@@ -13452,7 +14891,60 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AICoding驱动一人公司工具链",
         "opportunityMatchScore": 72,
         "opportunityMatchReason": "taxonomy",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AICoding驱动一人公司工具链",
+        "judgmentId": "jn-aicoding驱动一人公司工具链",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 83,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-9",
+          "2026-05-04-point-5",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-9",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-17",
+          "2026-05-03-point-14",
+          "2026-05-03-point-18",
+          "2026-05-03-point-19",
+          "2026-05-03-point-16",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-29-Cognizant 收购 Astreya",
@@ -13471,6 +14963,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-04-29-signal-5",
         "taxonomy": {
           "tracks": [
@@ -13531,7 +15024,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI基础设施托管服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI基础设施托管服务",
+        "judgmentId": "jn-ai基础设施托管服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 80,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-29-LeapMind Growth",
@@ -13550,6 +15070,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 21,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-04-29-signal-4",
         "taxonomy": {
           "tracks": [
@@ -13626,7 +15147,30 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI增长Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI增长Agent",
+        "judgmentId": "jn-ai增长agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 70,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 53,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI增长"
+        ],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-30-AI营销平台（Hightouch）",
@@ -13644,7 +15188,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 27,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-1",
         "taxonomy": {
           "tracks": [
@@ -13688,7 +15233,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI营销",
             "融资证据",
             "成熟化",
@@ -13714,7 +15259,38 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI营销Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI营销Agent",
+        "judgmentId": "jn-ai营销agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 90,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 100,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-30-企业AI治理（Vanta）",
@@ -13732,7 +15308,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-30-signal-3",
         "taxonomy": {
           "tracks": [
@@ -13776,7 +15353,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "企业工作流",
             "收入增长",
             "成熟化",
@@ -13803,7 +15380,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 159,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-30-企业级Agent操作系统（中数睿智）",
@@ -13821,7 +15433,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-30-signal-7",
         "taxonomy": {
           "tracks": [
@@ -13855,7 +15468,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Agent",
             "融资证据",
             "升温",
@@ -13877,7 +15490,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-30-企业文档AI Agent（Box Automate）",
@@ -13896,6 +15552,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-04-30-signal-2",
         "taxonomy": {
           "tracks": [
@@ -13958,7 +15615,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业文档与财务流程Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业文档与财务流程Agent",
+        "judgmentId": "jn-企业文档与财务流程agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-30-AI基础设施服务并购（Cognizant）",
@@ -13977,6 +15677,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-04-29-signal-5",
         "taxonomy": {
           "tracks": [
@@ -14039,7 +15740,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI基础设施托管服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI基础设施托管服务",
+        "judgmentId": "jn-ai基础设施托管服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 80,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-30-AI增长Agent（LeapMind）",
@@ -14058,6 +15786,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 19,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-04-29-signal-4",
         "taxonomy": {
           "tracks": [
@@ -14134,7 +15863,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI增长Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI增长Agent",
+        "judgmentId": "jn-ai增长agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 63,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 53,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销",
+          "AI增长"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-04-30-AI记忆层基础设施（MemoraX）",
@@ -14153,6 +15909,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 15,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-04-30-signal-6",
         "taxonomy": {
           "tracks": [
@@ -14229,7 +15986,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI记忆层基础设施",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI记忆层基础设施",
+        "judgmentId": "jn-ai记忆层基础设施",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 50,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 33,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-01-AI客服Agent（Netomi）",
@@ -14247,7 +16031,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 27,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-01-signal-1",
         "taxonomy": {
           "tracks": [
@@ -14286,7 +16071,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI客服",
             "融资证据",
             "成熟化",
@@ -14311,7 +16096,33 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI企业客服执行Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI企业客服执行Agent",
+        "judgmentId": "jn-ai企业客服执行agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 90,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI客服/语音Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9",
+          "2026-05-03-point-2"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-01-AI编程Agent（Factory）",
@@ -14329,7 +16140,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-01-signal-2",
         "taxonomy": {
           "tracks": [
@@ -14376,7 +16188,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI Coding",
             "融资证据",
             "升温",
@@ -14404,7 +16216,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AICoding驱动一人公司工具链",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AICoding驱动一人公司工具链",
+        "judgmentId": "jn-aicoding驱动一人公司工具链",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI编程"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-9",
+          "2026-05-04-point-5",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-9",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-17",
+          "2026-05-03-point-14",
+          "2026-05-03-point-18",
+          "2026-05-03-point-19",
+          "2026-05-03-point-16",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-01-AI用户研究（Mizzen）",
@@ -14422,7 +16277,8 @@ window.AI_RADAR_DATA = {
         "replicability": 5,
         "competition": 3,
         "total": 25,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-01-signal-4",
         "taxonomy": {
           "tracks": [
@@ -14470,7 +16326,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "企业工作流",
             "融资证据",
             "升温",
@@ -14500,7 +16356,39 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI用户研究Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI用户研究Agent",
+        "judgmentId": "jn-ai用户研究agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 83,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 80,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI用户研究"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-5",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-7"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-01-具身智能物流（星动纪元）",
@@ -14519,6 +16407,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-01-signal-6",
         "taxonomy": {
           "tracks": [
@@ -14575,7 +16464,30 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "具身智能物流机器人",
         "opportunityMatchScore": 102,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "具身智能物流机器人",
+        "judgmentId": "jn-具身智能物流机器人",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "具身智能/机器人"
+        ],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-01-AI增长Agent（LeapMind）",
@@ -14594,6 +16506,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 18,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-04-29-signal-4",
         "taxonomy": {
           "tracks": [
@@ -14670,7 +16583,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI增长Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI增长Agent",
+        "judgmentId": "jn-ai增长agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 60,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 47,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销",
+          "AI增长"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-01-AI工程仿真（JuliaHub）",
@@ -14689,6 +16629,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-01-signal-7",
         "taxonomy": {
           "tracks": [
@@ -14764,7 +16705,35 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI工程仿真软件",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI工程仿真软件",
+        "judgmentId": "jn-ai工程仿真软件",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9",
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-01-AI Native互动内容（Loopit）",
@@ -14783,6 +16752,7 @@ window.AI_RADAR_DATA = {
         "competition": 1,
         "total": 16,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-01-signal-5",
         "taxonomy": {
           "tracks": [
@@ -14854,7 +16824,35 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI互动内容平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI互动内容平台",
+        "judgmentId": "jn-ai互动内容平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 53,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 67,
+        "demandRealityScore": 40,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 40,
+        "counterEvidenceScore": 80,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销",
+          "AI工具类"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-8",
+          "2026-05-03-point-11",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-02-企业桌面端 Agent 执行层（Amazon Quick）",
@@ -14873,6 +16871,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-02-signal-1",
         "taxonomy": {
           "tracks": [
@@ -14936,7 +16935,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-02-合规引擎/Agent 治理（Haast）",
@@ -14955,6 +16997,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-02-signal-3",
         "taxonomy": {
           "tracks": [
@@ -15014,7 +17057,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-02-国防无人系统任务型基础模型（Scout AI）",
@@ -15033,6 +17111,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 17,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-2",
         "taxonomy": {
           "tracks": [
@@ -15090,7 +17169,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "无人系统任务执行智能体平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "无人系统任务执行智能体平台",
+        "judgmentId": "jn-无人系统任务执行智能体平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 57,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 60,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 53,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-02-端侧推理芯片 + 软件栈（原粒半导体）",
@@ -15109,6 +17231,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 17,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-4",
         "taxonomy": {
           "tracks": [
@@ -15167,7 +17290,34 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "端侧推理芯片与软件栈",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "端侧推理芯片与软件栈",
+        "judgmentId": "jn-端侧推理芯片与软件栈",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 57,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 53,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI基础设施"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-3",
+          "2026-05-03-point-15",
+          "2026-05-03-point-13"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-02-具身智能“脑”层软件栈（Meta × ARI 并购）",
@@ -15186,6 +17336,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 16,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-6",
         "taxonomy": {
           "tracks": [
@@ -15250,7 +17401,32 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "具身智能控制栈与评测平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "具身智能控制栈与评测平台",
+        "judgmentId": "jn-具身智能控制栈与评测平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 53,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 47,
+        "demandRealityScore": 80,
+        "momentumScore": 40,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 60,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "具身智能/机器人"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-02-跨境并购与监管变量（Manus 并购受阻）",
@@ -15269,6 +17445,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 15,
         "verdict": "谨慎",
+        "priorityStatusV2": "cautious",
         "relatedSignalId": "2026-05-02-signal-5",
         "taxonomy": {
           "tracks": [
@@ -15336,7 +17513,52 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 50,
+        "judgmentType": "反证增强",
+        "evidenceQualityScore": 40,
+        "demandRealityScore": 60,
+        "momentumScore": 20,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 60,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-21",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-03-专业服务AI工作流平台（Legora）",
@@ -15354,7 +17576,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-05-03-signal-1",
         "taxonomy": {
           "tracks": [
@@ -15401,7 +17624,7 @@ window.AI_RADAR_DATA = {
             "中高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "专业服务AI",
             "融资证据",
             "升温",
@@ -15431,7 +17654,35 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "专业服务AI工作流平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "专业服务AI工作流平台",
+        "judgmentId": "jn-专业服务ai工作流平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "专业服务AI"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-2",
+          "2026-05-03-point-9",
+          "2026-05-03-point-18",
+          "2026-05-03-point-22"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-03-临床影像AI辅助诊断平台（Aidoc）",
@@ -15450,6 +17701,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-2",
         "taxonomy": {
           "tracks": [
@@ -15508,7 +17760,30 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "临床影像AI辅助诊断平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "临床影像AI辅助诊断平台",
+        "judgmentId": "jn-临床影像ai辅助诊断平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "医疗AI"
+        ],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-03-企业Agent工作平台（Citi）",
@@ -15527,6 +17802,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-3",
         "taxonomy": {
           "tracks": [
@@ -15586,7 +17862,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 219,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 80,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-03-企业数据智能体控制平面（Snowflake）",
@@ -15605,6 +17924,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 23,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-4",
         "taxonomy": {
           "tracks": [
@@ -15664,7 +17984,51 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业数据智能体控制平面",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业数据智能体控制平面",
+        "judgmentId": "jn-企业数据智能体控制平面",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 77,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 73,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent",
+          "企业数据/RAG"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-03-Agent治理与权限审计服务（Okta）",
@@ -15683,6 +18047,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 23,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-5",
         "taxonomy": {
           "tracks": [
@@ -15744,7 +18109,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 207,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 77,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 73,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-03-AI企业客服执行Agent（ASAPP）",
@@ -15763,6 +18163,7 @@ window.AI_RADAR_DATA = {
         "competition": 4,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-6",
         "taxonomy": {
           "tracks": [
@@ -15834,7 +18235,33 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI企业客服执行Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI企业客服执行Agent",
+        "judgmentId": "jn-ai企业客服执行agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 87,
+        "counterEvidenceScore": 20,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI客服/语音Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9",
+          "2026-05-03-point-2"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-03-中小商家AI营销对话平台（Meta Business AI）",
@@ -15853,6 +18280,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 21,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-7",
         "taxonomy": {
           "tracks": [
@@ -15917,7 +18345,33 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "中小商家AI营销对话平台",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "中小商家AI营销对话平台",
+        "judgmentId": "jn-中小商家ai营销对话平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 70,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 67,
+        "demandRealityScore": 80,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-04-AI营销Agent（Hightouch）",
@@ -15935,7 +18389,8 @@ window.AI_RADAR_DATA = {
         "replicability": 4,
         "competition": 3,
         "total": 26,
-        "verdict": "做多",
+        "verdict": "优先验证",
+        "priorityStatusV2": "priority_verify",
         "relatedSignalId": "2026-04-29-signal-1",
         "taxonomy": {
           "tracks": [
@@ -15982,7 +18437,7 @@ window.AI_RADAR_DATA = {
             "高分信号"
           ],
           "topics": [
-            "做多",
+            "优先验证",
             "AI营销",
             "融资证据",
             "成熟化",
@@ -16009,7 +18464,38 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI营销Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI营销Agent",
+        "judgmentId": "jn-ai营销agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 87,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 93,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI营销"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-3",
+          "2026-05-04-point-7",
+          "2026-05-04-point-4",
+          "2026-05-03-point-8",
+          "2026-05-03-point-24"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-04-企业Agent工作平台（Google Cloud）",
@@ -16028,6 +18514,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 24,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-04-signal-1",
         "taxonomy": {
           "tracks": [
@@ -16093,7 +18580,50 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业Agent工作平台",
         "opportunityMatchScore": 231,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业Agent工作平台",
+        "judgmentId": "jn-企业agent工作平台",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 80,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 87,
+        "demandRealityScore": 100,
+        "momentumScore": 100,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-2",
+          "2026-05-04-point-5",
+          "2026-05-04-point-4",
+          "2026-05-03-point-1",
+          "2026-05-03-point-2",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-6",
+          "2026-05-03-point-7",
+          "2026-05-03-point-8",
+          "2026-05-03-point-10",
+          "2026-05-03-point-20",
+          "2026-05-03-point-11",
+          "2026-05-03-point-12",
+          "2026-05-03-point-22",
+          "2026-05-03-point-24",
+          "2026-05-03-point-23"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-04-AI企业客服执行Agent（ASAPP）",
@@ -16112,6 +18642,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-03-signal-6",
         "taxonomy": {
           "tracks": [
@@ -16183,7 +18714,33 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "AI企业客服执行Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "AI企业客服执行Agent",
+        "judgmentId": "jn-ai企业客服执行agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 67,
+        "demandRealityScore": 100,
+        "momentumScore": 80,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 80,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI客服/语音Agent"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-9",
+          "2026-05-03-point-2"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-04-Agent治理与权限审计服务（Sycamore）",
@@ -16202,6 +18759,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 22,
         "verdict": "观察",
+        "priorityStatusV2": "active_watch",
         "relatedSignalId": "2026-05-04-signal-3",
         "taxonomy": {
           "tracks": [
@@ -16271,7 +18829,42 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "Agent治理与权限审计服务",
         "opportunityMatchScore": 183,
         "opportunityMatchReason": "title",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "Agent治理与权限审计服务",
+        "judgmentId": "jn-agent治理与权限审计服务",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 73,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 73,
+        "demandRealityScore": 100,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "AI治理"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-04-point-1",
+          "2026-05-04-point-3",
+          "2026-05-04-point-10",
+          "2026-05-04-point-7",
+          "2026-05-04-point-8",
+          "2026-05-04-point-6",
+          "2026-05-03-point-1",
+          "2026-05-03-point-4",
+          "2026-05-03-point-5",
+          "2026-05-03-point-14",
+          "2026-05-03-point-21"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-04-企业数据智能体控制平面（GoodData）",
@@ -16290,6 +18883,7 @@ window.AI_RADAR_DATA = {
         "competition": 3,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-04-signal-4",
         "taxonomy": {
           "tracks": [
@@ -16351,7 +18945,36 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业数据智能体控制平面",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业数据智能体控制平面",
+        "judgmentId": "jn-企业数据智能体控制平面",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "方向升温",
+        "evidenceQualityScore": 60,
+        "demandRealityScore": 80,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 73,
+        "counterEvidenceScore": 40,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [
+          "企业数据/RAG"
+        ],
+        "relatedJudgmentPointIds": [
+          "2026-05-03-point-1",
+          "2026-05-03-point-3",
+          "2026-05-03-point-4",
+          "2026-05-03-point-7",
+          "2026-05-03-point-12"
+        ],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       },
       {
         "id": "2026-05-04-企业文档与财务流程Agent（Sage）",
@@ -16370,6 +18993,7 @@ window.AI_RADAR_DATA = {
         "competition": 2,
         "total": 20,
         "verdict": "观察",
+        "priorityStatusV2": "early_watch",
         "relatedSignalId": "2026-05-04-signal-6",
         "taxonomy": {
           "tracks": [
@@ -16435,7 +19059,28 @@ window.AI_RADAR_DATA = {
         "opportunityTitle": "企业文档与财务流程Agent",
         "opportunityMatchScore": 100,
         "opportunityMatchReason": "rule",
-        "opportunityMatchStatus": "matched"
+        "opportunityMatchStatus": "matched",
+        "judgmentTitle": "企业文档与财务流程Agent",
+        "judgmentId": "jn-企业文档与财务流程agent",
+        "judgmentNodeSource": "derived",
+        "priorityScoreV2": 67,
+        "judgmentType": "机会前移",
+        "evidenceQualityScore": 67,
+        "demandRealityScore": 80,
+        "momentumScore": 60,
+        "pointIntelligenceScore": null,
+        "opportunityFitScore": 67,
+        "counterEvidenceScore": 60,
+        "reviewStatus": "pending_7d_review",
+        "reviewHints": {
+          "sevenDay": "观察是否出现新的客户、采购、部署或产品采用证据。",
+          "thirtyDay": "观察该方向是否形成连续 Signal，而不是单日热度。",
+          "ninetyDay": "观察是否出现收入、复购、规模化客户或明确反证。"
+        },
+        "relatedJudgmentTrendIds": [],
+        "relatedJudgmentPointIds": [],
+        "pointIntelligenceMode": "viewpoint_only",
+        "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
       }
     ],
     "details": {
@@ -16444,7 +19089,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "Hightouch",
         "representativeCase": "",
         "scoreText": "28/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR超过1亿美元，说明已完成明确商业化验证，不是概念型AI工具。",
           "客户包括PetSmart、DraftKings、HelloFresh，具备真实企业客户基础。",
@@ -16461,7 +19106,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "Hightouch",
         "representativeCase": "",
         "scoreText": "28/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR超过1亿美元，说明已完成明确商业化验证，不是概念型AI工具。",
           "客户包括PetSmart、DraftKings、HelloFresh，具备真实企业客户基础。",
@@ -16478,7 +19123,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "Avoca",
         "representativeCase": "",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "融资超过1.25亿美元，估值10亿美元，资本信号明确。",
           "场景聚焦本地服务业电话接待、预约、报价、回访，直接影响成交收入。",
@@ -16488,14 +19133,14 @@ window.AI_RADAR_DATA = {
           "语音Agent对稳定性、行业话术、系统集成要求高，一旦误约或误答，会直接影响客户体验。",
           "中国市场可能不是电话为主入口，需要转向微信、企微、抖音、小红书私信等多渠道线索接待。"
         ],
-        "change": "初始。本次新增进入评分表，直接进入做多清单，是今日最重要新增信号之一。"
+        "change": "初始。本次新增进入评分表，直接进入优先验证清单，是今日最重要新增信号之一。"
       },
       "Avoca": {
         "product": "Avoca",
         "opportunityName": "Avoca",
         "representativeCase": "",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "融资超过1.25亿美元，估值10亿美元，资本信号明确。",
           "场景聚焦本地服务业电话接待、预约、报价、回访，直接影响成交收入。",
@@ -16505,14 +19150,14 @@ window.AI_RADAR_DATA = {
           "语音Agent对稳定性、行业话术、系统集成要求高，一旦误约或误答，会直接影响客户体验。",
           "中国市场可能不是电话为主入口，需要转向微信、企微、抖音、小红书私信等多渠道线索接待。"
         ],
-        "change": "初始。本次新增进入评分表，直接进入做多清单，是今日最重要新增信号之一。"
+        "change": "初始。本次新增进入评分表，直接进入优先验证清单，是今日最重要新增信号之一。"
       },
       "2026-04-29::Parallel Web Systems": {
         "product": "Parallel Web Systems",
         "opportunityName": "Parallel Web Systems",
         "representativeCase": "",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "1亿美元融资、20亿美元估值，且投资方质量高，资金强度非常明确。",
           "已有10万开发者使用，并被Harvey等AI原生公司采用，具备早期生态验证。",
@@ -16529,7 +19174,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "Parallel Web Systems",
         "representativeCase": "",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "1亿美元融资、20亿美元估值，且投资方质量高，资金强度非常明确。",
           "已有10万开发者使用，并被Harvey等AI原生公司采用，具备早期生态验证。",
@@ -16546,7 +19191,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "OpenAI Workspace Agents",
         "representativeCase": "",
         "scoreText": "25/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "Workspace Agents 把Agent从个人工具推进到组织级协作场景，方向具备平台级意义。",
           "接入AWS Bedrock后，企业Agent获得更强云生态分发能力，有利于开发者和企业客户采用。",
@@ -16563,7 +19208,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "OpenAI Workspace Agents",
         "representativeCase": "",
         "scoreText": "25/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "Workspace Agents 把Agent从个人工具推进到组织级协作场景，方向具备平台级意义。",
           "接入AWS Bedrock后，企业Agent获得更强云生态分发能力，有利于开发者和企业客户采用。",
@@ -16624,7 +19269,7 @@ window.AI_RADAR_DATA = {
           "当前缺融资金额、客户案例、收入数据和明确ROI验证，商业化证据不足。",
           "增长问题往往不只来自策略，还来自产品、销售承接、内容执行和组织能力，AI不一定能单独解决。"
         ],
-        "change": "初始。本次新增进入评分表，暂列观察，不进入做多清单，后续重点看客户案例和ROI数据。"
+        "change": "初始。本次新增进入评分表，暂列观察，不进入优先验证清单，后续重点看客户案例和ROI数据。"
       },
       "LeapMind Growth": {
         "product": "LeapMind Growth",
@@ -16641,14 +19286,14 @@ window.AI_RADAR_DATA = {
           "当前缺融资金额、客户案例、收入数据和明确ROI验证，商业化证据不足。",
           "增长问题往往不只来自策略，还来自产品、销售承接、内容执行和组织能力，AI不一定能单独解决。"
         ],
-        "change": "初始。本次新增进入评分表，暂列观察，不进入做多清单，后续重点看客户案例和ROI数据。"
+        "change": "初始。本次新增进入评分表，暂列观察，不进入优先验证清单，后续重点看客户案例和ROI数据。"
       },
       "2026-04-30::AI营销平台（Hightouch）": {
         "product": "AI营销平台（Hightouch）",
         "opportunityName": "AI营销平台",
         "representativeCase": "Hightouch",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR1亿美元 + 估值翻倍，商业化与资本验证极强",
           "直接绑定营销ROI，属于收入驱动型AI",
@@ -16664,7 +19309,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "AI营销平台",
         "representativeCase": "Hightouch",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR1亿美元 + 估值翻倍，商业化与资本验证极强",
           "直接绑定营销ROI，属于收入驱动型AI",
@@ -16680,7 +19325,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "企业AI治理",
         "representativeCase": "Vanta",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR 3亿美元 + 高增长，需求已规模化验证",
           "“Shadow AI”成为企业刚需问题",
@@ -16696,7 +19341,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "企业AI治理",
         "representativeCase": "Vanta",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "ARR 3亿美元 + 高增长，需求已规模化验证",
           "“Shadow AI”成为企业刚需问题",
@@ -16712,7 +19357,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "企业级Agent操作系统",
         "representativeCase": "中数睿智",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "已盈利 + 央国企客户 + 高复购",
           "Agent直接嵌入业务流程，非工具层",
@@ -16728,7 +19373,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "企业级Agent操作系统",
         "representativeCase": "中数睿智",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "已盈利 + 央国企客户 + 高复购",
           "Agent直接嵌入业务流程，非工具层",
@@ -16868,7 +19513,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "AI客服Agent",
         "representativeCase": "Netomi",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "大额融资 + Accenture渠道，具备企业分发能力",
           "客户为航空/媒体等高频客服行业，付费能力强",
@@ -16884,7 +19529,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "AI客服Agent",
         "representativeCase": "Netomi",
         "scoreText": "27/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "大额融资 + Accenture渠道，具备企业分发能力",
           "客户为航空/媒体等高频客服行业，付费能力强",
@@ -16900,7 +19545,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "AI编程Agent",
         "representativeCase": "Factory",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "15亿美元估值+顶级VC，资本强共识",
           "已进入金融/安全等高价值企业研发体系",
@@ -16916,7 +19561,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "AI编程Agent",
         "representativeCase": "Factory",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "15亿美元估值+顶级VC，资本强共识",
           "已进入金融/安全等高价值企业研发体系",
@@ -16932,7 +19577,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "AI用户研究",
         "representativeCase": "Mizzen",
         "scoreText": "25/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "4个月300+企业客户，验证极强",
           "明确替代市场研究/咨询预算",
@@ -16948,7 +19593,7 @@ window.AI_RADAR_DATA = {
         "opportunityName": "AI用户研究",
         "representativeCase": "Mizzen",
         "scoreText": "25/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "4个月300+企业客户，验证极强",
           "明确替代市场研究/咨询预算",
@@ -17256,7 +19901,7 @@ window.AI_RADAR_DATA = {
           "它本身不是可直接复制的商业机会，更像风险信号。",
           "公开细节有限，仍需持续观察后续监管和交易层面的补充信息。"
         ],
-        "change": "相对 Day1 基线是：初始。 当前先作为风险约束纳入，不把它当成独立做多方向。"
+        "change": "相对 Day1 基线是：初始。 当前先作为风险约束纳入，不把它当成独立优先验证方向。"
       },
       "跨境并购与监管变量（Manus 并购受阻）": {
         "product": "跨境并购与监管变量（Manus 并购受阻）",
@@ -17273,14 +19918,14 @@ window.AI_RADAR_DATA = {
           "它本身不是可直接复制的商业机会，更像风险信号。",
           "公开细节有限，仍需持续观察后续监管和交易层面的补充信息。"
         ],
-        "change": "相对 Day1 基线是：初始。 当前先作为风险约束纳入，不把它当成独立做多方向。"
+        "change": "相对 Day1 基线是：初始。 当前先作为风险约束纳入，不把它当成独立优先验证方向。"
       },
       "2026-05-03::专业服务AI工作流平台（Legora）": {
         "product": "专业服务AI工作流平台（Legora）",
         "opportunityName": "专业服务AI工作流平台",
         "representativeCase": "Legora",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "法律 AI 出现高估值和头部竞争，说明专业服务 AI 已经具备大客户预算和资本关注。",
           "法律场景知识密度高、交付价值明确，容易从“工具”升级为工作流系统。",
@@ -17290,14 +19935,14 @@ window.AI_RADAR_DATA = {
           "Harvey、Legora 等头部公司已经卡位，后来者需要避开通用法律助手。",
           "中国市场迁移需要本地法库、合规、律师协作习惯和交付能力。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "专业服务AI工作流平台（Legora）": {
         "product": "专业服务AI工作流平台（Legora）",
         "opportunityName": "专业服务AI工作流平台",
         "representativeCase": "Legora",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "法律 AI 出现高估值和头部竞争，说明专业服务 AI 已经具备大客户预算和资本关注。",
           "法律场景知识密度高、交付价值明确，容易从“工具”升级为工作流系统。",
@@ -17307,7 +19952,7 @@ window.AI_RADAR_DATA = {
           "Harvey、Legora 等头部公司已经卡位，后来者需要避开通用法律助手。",
           "中国市场迁移需要本地法库、合规、律师协作习惯和交付能力。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-03::临床影像AI辅助诊断平台（Aidoc）": {
         "product": "临床影像AI辅助诊断平台（Aidoc）",
@@ -17324,7 +19969,7 @@ window.AI_RADAR_DATA = {
           "医疗采购周期长，临床责任、审批和医保支付仍会拖慢商业化。",
           "中国市场需要监管许可、医院渠道和临床数据闭环。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "临床影像AI辅助诊断平台（Aidoc）": {
         "product": "临床影像AI辅助诊断平台（Aidoc）",
@@ -17341,7 +19986,7 @@ window.AI_RADAR_DATA = {
           "医疗采购周期长，临床责任、审批和医保支付仍会拖慢商业化。",
           "中国市场需要监管许可、医院渠道和临床数据闭环。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-03::企业Agent工作平台（Citi）": {
         "product": "企业Agent工作平台（Citi）",
@@ -17358,7 +20003,7 @@ window.AI_RADAR_DATA = {
           "公开细节有限，暂时无法判断规模、预算和实际使用部门。",
           "金融行业复制难度高，销售和合规周期都较长。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "企业Agent工作平台（Citi）": {
         "product": "企业Agent工作平台（Citi）",
@@ -17375,7 +20020,7 @@ window.AI_RADAR_DATA = {
           "公开细节有限，暂时无法判断规模、预算和实际使用部门。",
           "金融行业复制难度高，销售和合规周期都较长。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-03::企业数据智能体控制平面（Snowflake）": {
         "product": "企业数据智能体控制平面（Snowflake）",
@@ -17392,7 +20037,7 @@ window.AI_RADAR_DATA = {
           "头部平台会压缩独立产品空间，创业公司必须找垂直行业或跨平台切口。",
           "真实客户采用与付费增量还需跟踪。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "企业数据智能体控制平面（Snowflake）": {
         "product": "企业数据智能体控制平面（Snowflake）",
@@ -17409,7 +20054,7 @@ window.AI_RADAR_DATA = {
           "头部平台会压缩独立产品空间，创业公司必须找垂直行业或跨平台切口。",
           "真实客户采用与付费增量还需跟踪。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-03::Agent治理与权限审计服务（Okta）": {
         "product": "Agent治理与权限审计服务（Okta）",
@@ -17426,7 +20071,7 @@ window.AI_RADAR_DATA = {
           "身份安全巨头入场会压缩轻量创业工具空间。",
           "独立团队更适合做本地化、行业策略模板和审计服务，而非通用 IAM。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "Agent治理与权限审计服务（Okta）": {
         "product": "Agent治理与权限审计服务（Okta）",
@@ -17443,7 +20088,7 @@ window.AI_RADAR_DATA = {
           "身份安全巨头入场会压缩轻量创业工具空间。",
           "独立团队更适合做本地化、行业策略模板和审计服务，而非通用 IAM。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-03::AI企业客服执行Agent（ASAPP）": {
         "product": "AI企业客服执行Agent（ASAPP）",
@@ -17460,7 +20105,7 @@ window.AI_RADAR_DATA = {
           "客服 AI 竞争拥挤，差异化必须落到具体行业和处理率数据。",
           "企业客户对误答、升级和合规会有较高要求。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "AI企业客服执行Agent（ASAPP）": {
         "product": "AI企业客服执行Agent（ASAPP）",
@@ -17477,7 +20122,7 @@ window.AI_RADAR_DATA = {
           "客服 AI 竞争拥挤，差异化必须落到具体行业和处理率数据。",
           "企业客户对误答、升级和合规会有较高要求。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-03::中小商家AI营销对话平台（Meta Business AI）": {
         "product": "中小商家AI营销对话平台（Meta Business AI）",
@@ -17494,7 +20139,7 @@ window.AI_RADAR_DATA = {
           "Meta 平台自身会掌握入口，独立团队平台依赖较强。",
           "需要证明 AI 对话能带来真实转化增量，而不只是消息量。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "中小商家AI营销对话平台（Meta Business AI）": {
         "product": "中小商家AI营销对话平台（Meta Business AI）",
@@ -17511,14 +20156,14 @@ window.AI_RADAR_DATA = {
           "Meta 平台自身会掌握入口，独立团队平台依赖较强。",
           "需要证明 AI 对话能带来真实转化增量，而不只是消息量。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-04::AI营销Agent（Hightouch）": {
         "product": "AI营销Agent（Hightouch）",
         "opportunityName": "AI营销Agent",
         "representativeCase": "Hightouch",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "1.5 亿美元融资说明“数据激活 + 自动化触达”的增长中台仍处于强景气区间。",
           "价值链路更接近收入与 ROI（分群→触达→转化→复购），比纯内容生成更容易进入预算。",
@@ -17528,14 +20173,14 @@ window.AI_RADAR_DATA = {
           "渠道侧（广告平台/CRM）和数据平台会持续内置能力，独立产品需要靠连接器深度与行业策略模板建立壁垒。",
           "中国市场迁移需要适配渠道生态与合规环境。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "AI营销Agent（Hightouch）": {
         "product": "AI营销Agent（Hightouch）",
         "opportunityName": "AI营销Agent",
         "representativeCase": "Hightouch",
         "scoreText": "26/30",
-        "verdict": "做多",
+        "verdict": "优先验证",
         "upside": [
           "1.5 亿美元融资说明“数据激活 + 自动化触达”的增长中台仍处于强景气区间。",
           "价值链路更接近收入与 ROI（分群→触达→转化→复购），比纯内容生成更容易进入预算。",
@@ -17545,7 +20190,7 @@ window.AI_RADAR_DATA = {
           "渠道侧（广告平台/CRM）和数据平台会持续内置能力，独立产品需要靠连接器深度与行业策略模板建立壁垒。",
           "中国市场迁移需要适配渠道生态与合规环境。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-04::企业Agent工作平台（Google Cloud）": {
         "product": "企业Agent工作平台（Google Cloud）",
@@ -17562,7 +20207,7 @@ window.AI_RADAR_DATA = {
           "云厂商掌握入口与底层能力，创业窗口主要在垂直场景与工程化交付层，不在基础能力层。",
           "竞争强度极高，产品差异化必须落到可交付的 ROI 与治理标准。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "企业Agent工作平台（Google Cloud）": {
         "product": "企业Agent工作平台（Google Cloud）",
@@ -17579,7 +20224,7 @@ window.AI_RADAR_DATA = {
           "云厂商掌握入口与底层能力，创业窗口主要在垂直场景与工程化交付层，不在基础能力层。",
           "竞争强度极高，产品差异化必须落到可交付的 ROI 与治理标准。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-04::AI企业客服执行Agent（ASAPP）": {
         "product": "AI企业客服执行Agent（ASAPP）",
@@ -17596,7 +20241,7 @@ window.AI_RADAR_DATA = {
           "赛道拥挤，差异化取决于处理率、转人工质量与行业深度，而非模型能力。",
           "企业客户对误答与合规有高要求，交付与运维成本可能上升。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-04::Agent治理与权限审计服务（Sycamore）": {
         "product": "Agent治理与权限审计服务（Sycamore）",
@@ -17613,7 +20258,7 @@ window.AI_RADAR_DATA = {
           "公开客户与收入证据不足，仍需验证采购路径与可复制交付方式。",
           "平台/大厂可能快速覆盖通用能力，独立团队需要本地化与行业策略包切入。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "Agent治理与权限审计服务（Sycamore）": {
         "product": "Agent治理与权限审计服务（Sycamore）",
@@ -17630,7 +20275,7 @@ window.AI_RADAR_DATA = {
           "公开客户与收入证据不足，仍需验证采购路径与可复制交付方式。",
           "平台/大厂可能快速覆盖通用能力，独立团队需要本地化与行业策略包切入。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-04::企业数据智能体控制平面（GoodData）": {
         "product": "企业数据智能体控制平面（GoodData）",
@@ -17647,7 +20292,7 @@ window.AI_RADAR_DATA = {
           "需要持续证明客户采用与付费增量，否则容易停留在功能发布层面。",
           "语义层与数据平台竞争激烈，差异化要落在行业指标包与落地交付效率。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "企业数据智能体控制平面（GoodData）": {
         "product": "企业数据智能体控制平面（GoodData）",
@@ -17664,7 +20309,7 @@ window.AI_RADAR_DATA = {
           "需要持续证明客户采用与付费增量，否则容易停留在功能发布层面。",
           "语义层与数据平台竞争激烈，差异化要落在行业指标包与落地交付效率。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "2026-05-04::企业文档与财务流程Agent（Sage）": {
         "product": "企业文档与财务流程Agent（Sage）",
@@ -17681,7 +20326,7 @@ window.AI_RADAR_DATA = {
           "平台方加速内置会压缩通用工具空间，独立团队必须聚焦细分流程或本地化交付。",
           "采购与合规周期长，销售成本高。"
         ],
-        "change": ""
+        "change": "早期观察"
       },
       "企业文档与财务流程Agent（Sage）": {
         "product": "企业文档与财务流程Agent（Sage）",
@@ -17698,7 +20343,7 @@ window.AI_RADAR_DATA = {
           "平台方加速内置会压缩通用工具空间，独立团队必须聚焦细分流程或本地化交付。",
           "采购与合规周期长，销售成本高。"
         ],
-        "change": ""
+        "change": "早期观察"
       }
     }
   },
@@ -17729,12 +20374,12 @@ window.AI_RADAR_DATA = {
       ],
       "sevenDay": "上升（Hightouch 大额融资强化“数据激活→行动闭环”主线）",
       "thirtyDay": "持续上升",
-      "verdict": "做多。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+      "verdict": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
       "products": [
         {
           "product": "Hightouch",
           "score": "26/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "大额融资继续验证“数据激活→触达→转化”闭环；核心价值在可量化ROI而非内容生成"
         },
         {
@@ -17906,13 +20551,13 @@ window.AI_RADAR_DATA = {
         "融资只能说明资本关注",
         "仍需等待产品交付和商业化验证。"
       ],
-      "summary": "资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
+      "summary": "优先验证。资金继续押注“数据激活 + 自动化行动”，说明 AI 营销的预算核心正在从内容生成转向 ROI 闭环；独立机会更适合做行业策略模板、渠道连接器与可解释归因。",
       "topScoringRows": [
         {
           "id": "2026-05-04-AI营销Agent（Hightouch）",
           "date": "2026-05-04",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "AI营销Agent",
           "opportunitySlug": "20260429-07-ai营销agent",
           "representativeCase": "Hightouch"
@@ -17948,12 +20593,22 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-30-AI营销平台（Hightouch）",
           "date": "2026-04-30",
           "score": 27,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "AI营销Agent",
           "opportunitySlug": "20260429-07-ai营销agent",
           "representativeCase": "Hightouch"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-ai营销agent",
+        "jn-ai增长agent",
+        "jn-ai互动内容平台",
+        "jn-中小商家ai营销对话平台"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "watch_counter_evidence",
+      "trendConfidence": 74,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI客服/语音Agent",
@@ -17981,18 +20636,18 @@ window.AI_RADAR_DATA = {
       ],
       "sevenDay": "上升（多 Agent 编排继续强化“客服执行层”路线）",
       "thirtyDay": "上升（进入企业执行层）",
-      "verdict": "做多。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
+      "verdict": "优先验证。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
       "products": [
         {
           "product": "Avoca",
           "score": "27/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "融资超1.25亿美元、估值10亿美元，聚焦本地服务业电话接待→预约→回访流程"
         },
         {
           "product": "Netomi",
           "score": "27/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "1.1亿美元C轮+Accenture领投，聚焦航空/媒体等高客诉行业中等复杂度客服请求，从回答问题升级为执行处理流程"
         },
         {
@@ -18152,7 +20807,7 @@ window.AI_RADAR_DATA = {
         "融资只能说明资本关注",
         "仍需等待产品交付和商业化验证。"
       ],
-      "summary": "客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
+      "summary": "优先验证。客服 AI 正从回答问题升级为多 Agent 流程编排，重点看处理率、转人工质量和行业模板。",
       "topScoringRows": [
         {
           "id": "2026-05-04-AI企业客服执行Agent（ASAPP）",
@@ -18176,7 +20831,7 @@ window.AI_RADAR_DATA = {
           "id": "2026-05-01-AI客服Agent（Netomi）",
           "date": "2026-05-01",
           "score": 27,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "AI企业客服执行Agent",
           "opportunitySlug": "20260501-01-ai企业客服执行agent",
           "representativeCase": "Netomi"
@@ -18185,12 +20840,20 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-29-Avoca",
           "date": "2026-04-29",
           "score": 27,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "AI语音客服首轮分流助手",
           "opportunitySlug": "20260429-02-ai语音客服首轮分流助手",
           "representativeCase": ""
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-ai语音客服首轮分流助手",
+        "jn-ai企业客服执行agent"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "normal_watch",
+      "trendConfidence": 82,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI Agent",
@@ -18222,24 +20885,24 @@ window.AI_RADAR_DATA = {
       ],
       "sevenDay": "上升（金融客户采用、企业数据控制平面和身份治理同时强化）",
       "thirtyDay": "持续上升",
-      "verdict": "做多。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+      "verdict": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
       "products": [
         {
           "product": "中数睿智",
           "score": "26/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "企业级智能体操作系统，已盈利+100% YoY增长+60%头部央国企覆盖率，中国Agent商业化标志性样本"
         },
         {
           "product": "Parallel Web Systems",
           "score": "26/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "1亿美元B轮、20亿美元估值，10万开发者+Harvey等客户，卡位Agent网页执行层"
         },
         {
           "product": "OpenAI Workspace Agents",
           "score": "25/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "从个人工具推进到组织协作，接入AWS Bedrock增强云生态分发"
         },
         {
@@ -18475,7 +21138,7 @@ window.AI_RADAR_DATA = {
         "融资只能说明资本关注",
         "仍需等待产品交付和商业化验证。"
       ],
-      "summary": "云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
+      "summary": "优先验证。云厂商披露 AI 经营指标把“企业 Agent 化”拉进经营指标视角，价值中心进一步向连接器、治理与数据控制面集中。",
       "topScoringRows": [
         {
           "id": "2026-05-04-企业Agent工作平台（Google Cloud）",
@@ -18522,7 +21185,20 @@ window.AI_RADAR_DATA = {
           "opportunitySlug": "20260502-01-无人系统任务执行智能体平台",
           "representativeCase": "Scout AI"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-ai-agent基础设施服务",
+        "jn-aicoding驱动一人公司工具链",
+        "jn-企业agent工作平台",
+        "jn-企业文档与财务流程agent",
+        "jn-无人系统任务执行智能体平台",
+        "jn-agent治理与权限审计服务",
+        "jn-企业数据智能体控制平面"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "watch_counter_evidence",
+      "trendConfidence": 75,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI治理",
@@ -18550,12 +21226,12 @@ window.AI_RADAR_DATA = {
       ],
       "sevenDay": "上升（Agent OS/控制平面融资强化治理前置化）",
       "thirtyDay": "持续上升",
-      "verdict": "做多。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+      "verdict": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
       "products": [
         {
           "product": "Vanta",
           "score": "26/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "ARR超3亿美元（两年3倍增长），定位Agentic Trust Platform，增长来自企业使用Claude/Cursor后的Shadow AI治理需求"
         },
         {
@@ -18727,7 +21403,7 @@ window.AI_RADAR_DATA = {
         "融资只能说明资本关注",
         "仍需等待产品交付和商业化验证。"
       ],
-      "summary": "治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
+      "summary": "优先验证。治理层从“安全加分项”升级为上线门槛：权限、审计、策略与成本控制会成为企业扩容多 Agent 的前置条件。",
       "topScoringRows": [
         {
           "id": "2026-05-04-Agent治理与权限审计服务（Sycamore）",
@@ -18760,12 +21436,19 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-30-企业AI治理（Vanta）",
           "date": "2026-04-30",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "Agent治理与权限审计服务",
           "opportunitySlug": "20260428-02-agent治理与权限审计服务",
           "representativeCase": "Vanta"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-agent治理与权限审计服务"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "watch_counter_evidence",
+      "trendConfidence": 76,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI用户研究",
@@ -18777,12 +21460,12 @@ window.AI_RADAR_DATA = {
       ],
       "sevenDay": "新赛道启动（强客户验证）",
       "thirtyDay": "上升",
-      "verdict": "做多。Mizzen Insight 4个月300+企业客户验证强刚需，覆盖阿里/小米/美团等头部客户，AI用户研究可能成为AI企业服务中最早规模化收入的垂直方向。",
+      "verdict": "优先验证。Mizzen Insight 4个月300+企业客户验证强刚需，覆盖阿里/小米/美团等头部客户，AI用户研究可能成为AI企业服务中最早规模化收入的垂直方向。",
       "products": [
         {
           "product": "Mizzen Insight",
           "score": "25/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "4个月300+企业客户、近千万美元融资，自动访谈提纲→筛选用户→动态追问→结构化分析全流程自动化"
         }
       ],
@@ -18900,18 +21583,25 @@ window.AI_RADAR_DATA = {
         "融资只能说明资本关注",
         "仍需等待产品交付和商业化验证。"
       ],
-      "summary": "Mizzen Insight 4个月300+企业客户验证强刚需，覆盖阿里/小米/美团等头部客户，AI用户研究可能成为AI企业服务中最早规模化收入的垂直方向。",
+      "summary": "优先验证。Mizzen Insight 4个月300+企业客户验证强刚需，覆盖阿里/小米/美团等头部客户，AI用户研究可能成为AI企业服务中最早规模化收入的垂直方向。",
       "topScoringRows": [
         {
           "id": "2026-05-01-AI用户研究（Mizzen）",
           "date": "2026-05-01",
           "score": 25,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "AI用户研究Agent",
           "opportunitySlug": "20260501-04-ai用户研究agent",
           "representativeCase": "Mizzen"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-ai用户研究agent"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "normal_watch",
+      "trendConfidence": 83,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI基础设施",
@@ -19173,7 +21863,17 @@ window.AI_RADAR_DATA = {
           "opportunitySlug": "20260430-01-ai基础设施托管服务",
           "representativeCase": ""
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-ai基础设施托管服务",
+        "jn-ai记忆层基础设施",
+        "jn-ai工程仿真软件",
+        "jn-端侧推理芯片与软件栈"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "watch_counter_evidence",
+      "trendConfidence": 65,
+      "lastCalibrationDate": ""
     },
     {
       "track": "具身智能/机器人",
@@ -19353,7 +22053,15 @@ window.AI_RADAR_DATA = {
           "opportunitySlug": "20260501-06-具身智能物流机器人",
           "representativeCase": "星动纪元"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-具身智能物流机器人",
+        "jn-具身智能控制栈与评测平台"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "normal_watch",
+      "trendConfidence": 67,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI编程",
@@ -19369,12 +22077,12 @@ window.AI_RADAR_DATA = {
       ],
       "sevenDay": "上升（Factory 15亿美元估值+企业级交付验证）",
       "thirtyDay": "上升（企业化加速）",
-      "verdict": "做多。Factory 15亿美元估值+融资1.5亿美元，已进入Morgan Stanley/EY等金融安全企业研发体系，AI编程从个人工具升级为企业研发效能基础设施。",
+      "verdict": "优先验证。Factory 15亿美元估值+融资1.5亿美元，已进入Morgan Stanley/EY等金融安全企业研发体系，AI编程从个人工具升级为企业研发效能基础设施。",
       "products": [
         {
           "product": "Factory",
           "score": "26/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "15亿美元估值+1.5亿美元融资，客户含Morgan Stanley/EY/Palo Alto Networks，多模型切换架构，定位企业级AI编程Agent"
         }
       ],
@@ -19508,18 +22216,25 @@ window.AI_RADAR_DATA = {
         "融资只能说明资本关注",
         "仍需等待产品交付和商业化验证。"
       ],
-      "summary": "Factory 15亿美元估值+融资1.5亿美元，已进入Morgan Stanley/EY等金融安全企业研发体系，AI编程从个人工具升级为企业研发效能基础设施。",
+      "summary": "优先验证。Factory 15亿美元估值+融资1.5亿美元，已进入Morgan Stanley/EY等金融安全企业研发体系，AI编程从个人工具升级为企业研发效能基础设施。",
       "topScoringRows": [
         {
           "id": "2026-05-01-AI编程Agent（Factory）",
           "date": "2026-05-01",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "AICoding驱动一人公司工具链",
           "opportunitySlug": "20260429-03-aicoding驱动一人公司工具链",
           "representativeCase": "Factory"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-aicoding驱动一人公司工具链"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "normal_watch",
+      "trendConfidence": 87,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI增长",
@@ -19710,7 +22425,14 @@ window.AI_RADAR_DATA = {
           "opportunitySlug": "20260429-06-ai增长agent",
           "representativeCase": ""
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-ai增长agent"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "watch_counter_evidence",
+      "trendConfidence": 64,
+      "lastCalibrationDate": ""
     },
     {
       "track": "AI工具类",
@@ -19846,7 +22568,14 @@ window.AI_RADAR_DATA = {
           "opportunitySlug": "20260501-05-ai互动内容平台",
           "representativeCase": "Loopit"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-ai互动内容平台"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "watch_counter_evidence",
+      "trendConfidence": 53,
+      "lastCalibrationDate": ""
     },
     {
       "track": "专业服务AI",
@@ -19858,12 +22587,12 @@ window.AI_RADAR_DATA = {
       ],
       "sevenDay": "新赛道启动（法律 AI 头部估值与竞争强化）",
       "thirtyDay": "上升",
-      "verdict": "做多。专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
+      "verdict": "优先验证。专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
       "products": [
         {
           "product": "Legora",
           "score": "26/30",
-          "verdict": "做多",
+          "verdict": "优先验证",
           "basis": "估值升至56亿美元级别，法律AI头部竞争加剧，验证专业服务AI从工具进入工作流预算"
         }
       ],
@@ -19998,18 +22727,25 @@ window.AI_RADAR_DATA = {
         "融资只能说明资本关注",
         "仍需等待产品交付和商业化验证。"
       ],
-      "summary": "专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
+      "summary": "优先验证。专业服务 AI 具备高客单价、高知识密度和明确流程痛点，法律 AI 是当前最清晰的垂直样板之一。",
       "topScoringRows": [
         {
           "id": "2026-05-03-专业服务AI工作流平台（Legora）",
           "date": "2026-05-03",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "opportunityTitle": "专业服务AI工作流平台",
           "opportunitySlug": "20260503-01-professional-service-ai-workflow",
           "representativeCase": "Legora"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-专业服务ai工作流平台"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "normal_watch",
+      "trendConfidence": 87,
+      "lastCalibrationDate": ""
     },
     {
       "track": "医疗AI",
@@ -20157,7 +22893,14 @@ window.AI_RADAR_DATA = {
           "opportunitySlug": "20260503-02-clinical-imaging-ai-platform",
           "representativeCase": "Aidoc"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-临床影像ai辅助诊断平台"
+      ],
+      "pointConsensusState": "not_applied",
+      "counterEvidenceState": "watch_counter_evidence",
+      "trendConfidence": 80,
+      "lastCalibrationDate": ""
     },
     {
       "track": "企业数据/RAG",
@@ -20335,7 +23078,14 @@ window.AI_RADAR_DATA = {
           "opportunitySlug": "20260503-03-enterprise-data-agent-control-plane",
           "representativeCase": "Snowflake"
         }
-      ]
+      ],
+      "judgmentIds": [
+        "jn-企业数据智能体控制平面"
+      ],
+      "pointConsensusState": "viewpoint_signal_present",
+      "counterEvidenceState": "normal_watch",
+      "trendConfidence": 72,
+      "lastCalibrationDate": ""
     }
   ],
   "points": [
@@ -23667,6 +26417,923 @@ window.AI_RADAR_DATA = {
       "momentum": "rising"
     }
   ],
+  "judgmentNodes": [
+    {
+      "id": "jn-ai营销agent",
+      "title": "AI营销Agent",
+      "judgmentNodeSource": "derived",
+      "track": "AI营销",
+      "capability": "数据连接",
+      "customer": "消费品牌",
+      "scenario": "用户分群与触达",
+      "stage": "priority_verify",
+      "relatedScoringIds": [
+        "2026-04-29-Hightouch",
+        "2026-04-30-AI营销平台（Hightouch）",
+        "2026-05-04-AI营销Agent（Hightouch）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-29-signal-1"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-3",
+        "2026-05-04-point-7",
+        "2026-05-04-point-4",
+        "2026-05-03-point-8",
+        "2026-05-03-point-24"
+      ],
+      "relatedTrendIds": [
+        "AI营销"
+      ],
+      "relatedOpportunityIds": [
+        "20260429-07-AI营销Agent"
+      ],
+      "latestPriorityScore": 26,
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-04",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-企业agent工作平台",
+      "title": "企业Agent工作平台",
+      "judgmentNodeSource": "derived",
+      "track": "企业工作流",
+      "capability": "Agent工作流",
+      "customer": "",
+      "scenario": "",
+      "stage": "active_watch",
+      "relatedScoringIds": [
+        "2026-04-30-企业级Agent操作系统（中数睿智）",
+        "2026-05-02-企业桌面端 Agent 执行层（Amazon Quick）",
+        "2026-05-03-企业Agent工作平台（Citi）",
+        "2026-05-04-企业Agent工作平台（Google Cloud）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-30-signal-7",
+        "2026-05-02-signal-1",
+        "2026-05-03-signal-3",
+        "2026-05-04-signal-1"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-5",
+        "2026-05-04-point-4",
+        "2026-05-03-point-1",
+        "2026-05-03-point-2",
+        "2026-05-03-point-3",
+        "2026-05-03-point-4",
+        "2026-05-03-point-5",
+        "2026-05-03-point-6",
+        "2026-05-03-point-7",
+        "2026-05-03-point-8",
+        "2026-05-03-point-10",
+        "2026-05-03-point-20",
+        "2026-05-03-point-11",
+        "2026-05-03-point-12",
+        "2026-05-03-point-22",
+        "2026-05-03-point-24",
+        "2026-05-03-point-23"
+      ],
+      "relatedTrendIds": [
+        "AI Agent"
+      ],
+      "relatedOpportunityIds": [
+        "20260429-05-企业Agent工作平台"
+      ],
+      "latestPriorityScore": 24,
+      "priorityScoreV2": 80,
+      "priorityStatusV2": "active_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-04",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-agent治理与权限审计服务",
+      "title": "Agent治理与权限审计服务",
+      "judgmentNodeSource": "derived",
+      "track": "AI治理",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "企业知识工作流",
+      "stage": "active_watch",
+      "relatedScoringIds": [
+        "2026-04-30-企业AI治理（Vanta）",
+        "2026-05-02-合规引擎/Agent 治理（Haast）",
+        "2026-05-02-跨境并购与监管变量（Manus 并购受阻）",
+        "2026-05-03-Agent治理与权限审计服务（Okta）",
+        "2026-05-04-Agent治理与权限审计服务（Sycamore）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-30-signal-3",
+        "2026-05-02-signal-3",
+        "2026-05-02-signal-5",
+        "2026-05-03-signal-5",
+        "2026-05-04-signal-3"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-3",
+        "2026-05-04-point-10",
+        "2026-05-04-point-7",
+        "2026-05-04-point-8",
+        "2026-05-04-point-6",
+        "2026-05-03-point-1",
+        "2026-05-03-point-4",
+        "2026-05-03-point-5",
+        "2026-05-03-point-14",
+        "2026-05-03-point-21",
+        "2026-05-04-point-2",
+        "2026-05-04-point-5",
+        "2026-05-04-point-4",
+        "2026-05-03-point-2",
+        "2026-05-03-point-3",
+        "2026-05-03-point-6",
+        "2026-05-03-point-7",
+        "2026-05-03-point-8",
+        "2026-05-03-point-10",
+        "2026-05-03-point-20",
+        "2026-05-03-point-11",
+        "2026-05-03-point-12",
+        "2026-05-03-point-22",
+        "2026-05-03-point-24",
+        "2026-05-03-point-23"
+      ],
+      "relatedTrendIds": [
+        "AI治理",
+        "AI Agent"
+      ],
+      "relatedOpportunityIds": [
+        "20260428-02-Agent治理与权限审计服务"
+      ],
+      "latestPriorityScore": 22,
+      "priorityScoreV2": 73,
+      "priorityStatusV2": "active_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-04",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai企业客服执行agent",
+      "title": "AI企业客服执行Agent",
+      "judgmentNodeSource": "derived",
+      "track": "AI客服",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "",
+      "stage": "active_watch",
+      "relatedScoringIds": [
+        "2026-05-01-AI客服Agent（Netomi）",
+        "2026-05-03-AI企业客服执行Agent（ASAPP）",
+        "2026-05-04-AI企业客服执行Agent（ASAPP）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-01-signal-1",
+        "2026-05-03-signal-6"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-9",
+        "2026-05-03-point-2"
+      ],
+      "relatedTrendIds": [
+        "AI客服/语音Agent"
+      ],
+      "relatedOpportunityIds": [
+        "20260501-01-AI企业客服执行Agent"
+      ],
+      "latestPriorityScore": 22,
+      "priorityScoreV2": 73,
+      "priorityStatusV2": "active_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-04",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-企业文档与财务流程agent",
+      "title": "企业文档与财务流程Agent",
+      "judgmentNodeSource": "derived",
+      "track": "企业工作流",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "企业知识工作流",
+      "stage": "early_watch",
+      "relatedScoringIds": [
+        "2026-04-30-企业文档AI Agent（Box Automate）",
+        "2026-05-04-企业文档与财务流程Agent（Sage）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-30-signal-2",
+        "2026-05-04-signal-6"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-5",
+        "2026-05-04-point-4",
+        "2026-05-03-point-1",
+        "2026-05-03-point-2",
+        "2026-05-03-point-3",
+        "2026-05-03-point-4",
+        "2026-05-03-point-5",
+        "2026-05-03-point-6",
+        "2026-05-03-point-7",
+        "2026-05-03-point-8",
+        "2026-05-03-point-10",
+        "2026-05-03-point-20",
+        "2026-05-03-point-11",
+        "2026-05-03-point-12",
+        "2026-05-03-point-22",
+        "2026-05-03-point-24",
+        "2026-05-03-point-23"
+      ],
+      "relatedTrendIds": [
+        "AI Agent"
+      ],
+      "relatedOpportunityIds": [
+        "20260428-01-企业文档与财务流程Agent"
+      ],
+      "latestPriorityScore": 20,
+      "priorityScoreV2": 67,
+      "priorityStatusV2": "early_watch",
+      "judgmentType": "机会前移",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-04",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-企业数据智能体控制平面",
+      "title": "企业数据智能体控制平面",
+      "judgmentNodeSource": "derived",
+      "track": "企业数据/RAG",
+      "capability": "Agent工作流",
+      "customer": "",
+      "scenario": "",
+      "stage": "early_watch",
+      "relatedScoringIds": [
+        "2026-05-03-企业数据智能体控制平面（Snowflake）",
+        "2026-05-04-企业数据智能体控制平面（GoodData）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-03-signal-4",
+        "2026-05-04-signal-4"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-5",
+        "2026-05-04-point-4",
+        "2026-05-03-point-1",
+        "2026-05-03-point-2",
+        "2026-05-03-point-3",
+        "2026-05-03-point-4",
+        "2026-05-03-point-5",
+        "2026-05-03-point-6",
+        "2026-05-03-point-7",
+        "2026-05-03-point-8",
+        "2026-05-03-point-10",
+        "2026-05-03-point-20",
+        "2026-05-03-point-11",
+        "2026-05-03-point-12",
+        "2026-05-03-point-22",
+        "2026-05-03-point-24",
+        "2026-05-03-point-23"
+      ],
+      "relatedTrendIds": [
+        "AI Agent",
+        "企业数据/RAG"
+      ],
+      "relatedOpportunityIds": [
+        "20260503-03-企业数据智能体控制平面"
+      ],
+      "latestPriorityScore": 20,
+      "priorityScoreV2": 67,
+      "priorityStatusV2": "early_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-04",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-专业服务ai工作流平台",
+      "title": "专业服务AI工作流平台",
+      "judgmentNodeSource": "derived",
+      "track": "专业服务AI",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "企业知识工作流",
+      "stage": "priority_verify",
+      "relatedScoringIds": [
+        "2026-05-03-专业服务AI工作流平台（Legora）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-03-signal-1"
+      ],
+      "relatedPointIds": [
+        "2026-05-03-point-2",
+        "2026-05-03-point-9",
+        "2026-05-03-point-18",
+        "2026-05-03-point-22"
+      ],
+      "relatedTrendIds": [
+        "专业服务AI"
+      ],
+      "relatedOpportunityIds": [
+        "20260503-01-专业服务AI工作流平台"
+      ],
+      "latestPriorityScore": 26,
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-03",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-临床影像ai辅助诊断平台",
+      "title": "临床影像AI辅助诊断平台",
+      "judgmentNodeSource": "derived",
+      "track": "医疗AI",
+      "capability": "自动化执行",
+      "customer": "互联网",
+      "scenario": "",
+      "stage": "active_watch",
+      "relatedScoringIds": [
+        "2026-05-03-临床影像AI辅助诊断平台（Aidoc）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-03-signal-2"
+      ],
+      "relatedPointIds": [],
+      "relatedTrendIds": [
+        "医疗AI"
+      ],
+      "relatedOpportunityIds": [
+        "20260503-02-临床影像AI辅助诊断平台"
+      ],
+      "latestPriorityScore": 24,
+      "priorityScoreV2": 80,
+      "priorityStatusV2": "active_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-03",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-中小商家ai营销对话平台",
+      "title": "中小商家AI营销对话平台",
+      "judgmentNodeSource": "derived",
+      "track": "AI营销",
+      "capability": "语音交互",
+      "customer": "",
+      "scenario": "用户分群与触达",
+      "stage": "active_watch",
+      "relatedScoringIds": [
+        "2026-05-03-中小商家AI营销对话平台（Meta Business AI）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-03-signal-7"
+      ],
+      "relatedPointIds": [
+        "2026-05-03-point-8",
+        "2026-05-03-point-24"
+      ],
+      "relatedTrendIds": [
+        "AI营销"
+      ],
+      "relatedOpportunityIds": [
+        "20260503-04-中小商家AI营销对话平台"
+      ],
+      "latestPriorityScore": 21,
+      "priorityScoreV2": 70,
+      "priorityStatusV2": "active_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-03",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-无人系统任务执行智能体平台",
+      "title": "无人系统任务执行智能体平台",
+      "judgmentNodeSource": "derived",
+      "track": "AI Agent",
+      "capability": "Agent工作流",
+      "customer": "",
+      "scenario": "代码生成与交付",
+      "stage": "cautious",
+      "relatedScoringIds": [
+        "2026-05-02-国防无人系统任务型基础模型（Scout AI）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-02-signal-2"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-5",
+        "2026-05-04-point-4",
+        "2026-05-03-point-1",
+        "2026-05-03-point-2",
+        "2026-05-03-point-3",
+        "2026-05-03-point-4",
+        "2026-05-03-point-5",
+        "2026-05-03-point-6",
+        "2026-05-03-point-7",
+        "2026-05-03-point-8",
+        "2026-05-03-point-10",
+        "2026-05-03-point-20",
+        "2026-05-03-point-11",
+        "2026-05-03-point-12",
+        "2026-05-03-point-22",
+        "2026-05-03-point-24",
+        "2026-05-03-point-23"
+      ],
+      "relatedTrendIds": [
+        "AI Agent"
+      ],
+      "relatedOpportunityIds": [
+        "20260502-01-无人系统任务执行智能体平台"
+      ],
+      "latestPriorityScore": 17,
+      "priorityScoreV2": 57,
+      "priorityStatusV2": "cautious",
+      "judgmentType": "反证增强",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-02",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-端侧推理芯片与软件栈",
+      "title": "端侧推理芯片与软件栈",
+      "judgmentNodeSource": "derived",
+      "track": "AI基础设施",
+      "capability": "Agent工作流",
+      "customer": "",
+      "scenario": "",
+      "stage": "cautious",
+      "relatedScoringIds": [
+        "2026-05-02-端侧推理芯片 + 软件栈（原粒半导体）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-02-signal-4"
+      ],
+      "relatedPointIds": [
+        "2026-05-03-point-3",
+        "2026-05-03-point-15",
+        "2026-05-03-point-13"
+      ],
+      "relatedTrendIds": [
+        "AI基础设施"
+      ],
+      "relatedOpportunityIds": [
+        "20260502-02-端侧推理芯片与软件栈"
+      ],
+      "latestPriorityScore": 17,
+      "priorityScoreV2": 57,
+      "priorityStatusV2": "cautious",
+      "judgmentType": "反证增强",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-02",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-具身智能控制栈与评测平台",
+      "title": "具身智能控制栈与评测平台",
+      "judgmentNodeSource": "derived",
+      "track": "具身智能",
+      "capability": "研究分析",
+      "customer": "",
+      "scenario": "",
+      "stage": "cautious",
+      "relatedScoringIds": [
+        "2026-05-02-具身智能“脑”层软件栈（Meta × ARI 并购）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-02-signal-6"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-9"
+      ],
+      "relatedTrendIds": [
+        "具身智能/机器人"
+      ],
+      "relatedOpportunityIds": [
+        "20260502-03-具身智能控制栈与评测平台"
+      ],
+      "latestPriorityScore": 16,
+      "priorityScoreV2": 53,
+      "priorityStatusV2": "cautious",
+      "judgmentType": "反证增强",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-02",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-aicoding驱动一人公司工具链",
+      "title": "AICoding驱动一人公司工具链",
+      "judgmentNodeSource": "derived",
+      "track": "AI Coding",
+      "capability": "Agent工作流",
+      "customer": "",
+      "scenario": "",
+      "stage": "priority_verify",
+      "relatedScoringIds": [
+        "2026-04-29-OpenAI Workspace Agents",
+        "2026-05-01-AI编程Agent（Factory）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-29-signal-6",
+        "2026-05-01-signal-2"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-3",
+        "2026-05-04-point-9",
+        "2026-05-04-point-5",
+        "2026-05-04-point-7",
+        "2026-05-04-point-4",
+        "2026-05-04-point-6",
+        "2026-05-03-point-1",
+        "2026-05-03-point-2",
+        "2026-05-03-point-3",
+        "2026-05-03-point-4",
+        "2026-05-03-point-5",
+        "2026-05-03-point-6",
+        "2026-05-03-point-7",
+        "2026-05-03-point-8",
+        "2026-05-03-point-9",
+        "2026-05-03-point-10",
+        "2026-05-03-point-20",
+        "2026-05-03-point-11",
+        "2026-05-03-point-12",
+        "2026-05-03-point-17",
+        "2026-05-03-point-14",
+        "2026-05-03-point-18",
+        "2026-05-03-point-19",
+        "2026-05-03-point-16",
+        "2026-05-03-point-22",
+        "2026-05-03-point-24",
+        "2026-05-03-point-23"
+      ],
+      "relatedTrendIds": [
+        "AI Agent",
+        "AI编程"
+      ],
+      "relatedOpportunityIds": [
+        "20260429-03-AICoding驱动一人公司工具链"
+      ],
+      "latestPriorityScore": 26,
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-01",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai用户研究agent",
+      "title": "AI用户研究Agent",
+      "judgmentNodeSource": "derived",
+      "track": "企业工作流",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "用户洞察",
+      "stage": "priority_verify",
+      "relatedScoringIds": [
+        "2026-05-01-AI用户研究（Mizzen）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-01-signal-4"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-3",
+        "2026-05-04-point-5",
+        "2026-05-04-point-7",
+        "2026-05-04-point-4",
+        "2026-05-04-point-6",
+        "2026-05-03-point-7"
+      ],
+      "relatedTrendIds": [
+        "AI用户研究"
+      ],
+      "relatedOpportunityIds": [
+        "20260501-04-AI用户研究Agent"
+      ],
+      "latestPriorityScore": 25,
+      "priorityScoreV2": 83,
+      "priorityStatusV2": "priority_verify",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-01",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-具身智能物流机器人",
+      "title": "具身智能物流机器人",
+      "judgmentNodeSource": "derived",
+      "track": "企业工作流",
+      "capability": "",
+      "customer": "企业服务",
+      "scenario": "企业知识工作流",
+      "stage": "active_watch",
+      "relatedScoringIds": [
+        "2026-05-01-具身智能物流（星动纪元）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-01-signal-6"
+      ],
+      "relatedPointIds": [],
+      "relatedTrendIds": [
+        "具身智能/机器人"
+      ],
+      "relatedOpportunityIds": [
+        "20260501-06-具身智能物流机器人"
+      ],
+      "latestPriorityScore": 24,
+      "priorityScoreV2": 80,
+      "priorityStatusV2": "active_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-01",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai工程仿真软件",
+      "title": "AI工程仿真软件",
+      "judgmentNodeSource": "derived",
+      "track": "AI基础设施",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "企业知识工作流",
+      "stage": "early_watch",
+      "relatedScoringIds": [
+        "2026-05-01-AI工程仿真（JuliaHub）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-01-signal-7"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-9",
+        "2026-05-03-point-3",
+        "2026-05-03-point-15",
+        "2026-05-03-point-13"
+      ],
+      "relatedTrendIds": [
+        "AI基础设施"
+      ],
+      "relatedOpportunityIds": [
+        "20260501-07-AI工程仿真软件"
+      ],
+      "latestPriorityScore": 20,
+      "priorityScoreV2": 67,
+      "priorityStatusV2": "early_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-01",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai增长agent",
+      "title": "AI增长Agent",
+      "judgmentNodeSource": "derived",
+      "track": "AI营销",
+      "capability": "Agent工作流",
+      "customer": "消费品牌",
+      "scenario": "",
+      "stage": "early_watch",
+      "relatedScoringIds": [
+        "2026-04-29-LeapMind Growth",
+        "2026-04-30-AI增长Agent（LeapMind）",
+        "2026-05-01-AI增长Agent（LeapMind）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-29-signal-4"
+      ],
+      "relatedPointIds": [
+        "2026-05-03-point-8",
+        "2026-05-03-point-24"
+      ],
+      "relatedTrendIds": [
+        "AI增长",
+        "AI营销"
+      ],
+      "relatedOpportunityIds": [
+        "20260429-06-AI增长Agent"
+      ],
+      "latestPriorityScore": 18,
+      "priorityScoreV2": 60,
+      "priorityStatusV2": "early_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-01",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai互动内容平台",
+      "title": "AI互动内容平台",
+      "judgmentNodeSource": "derived",
+      "track": "AI营销",
+      "capability": "语音交互",
+      "customer": "",
+      "scenario": "代码生成与交付",
+      "stage": "cautious",
+      "relatedScoringIds": [
+        "2026-05-01-AI Native互动内容（Loopit）"
+      ],
+      "relatedSignalIds": [
+        "2026-05-01-signal-5"
+      ],
+      "relatedPointIds": [
+        "2026-05-03-point-8",
+        "2026-05-03-point-11",
+        "2026-05-03-point-24"
+      ],
+      "relatedTrendIds": [
+        "AI营销",
+        "AI工具类"
+      ],
+      "relatedOpportunityIds": [
+        "20260501-05-AI互动内容平台"
+      ],
+      "latestPriorityScore": 16,
+      "priorityScoreV2": 53,
+      "priorityStatusV2": "cautious",
+      "judgmentType": "反证增强",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-05-01",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai基础设施托管服务",
+      "title": "AI基础设施托管服务",
+      "judgmentNodeSource": "derived",
+      "track": "AI基础设施",
+      "capability": "自动化执行",
+      "customer": "互联网",
+      "scenario": "",
+      "stage": "active_watch",
+      "relatedScoringIds": [
+        "2026-04-29-Cognizant 收购 Astreya",
+        "2026-04-30-AI基础设施服务并购（Cognizant）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-29-signal-5"
+      ],
+      "relatedPointIds": [
+        "2026-05-03-point-3",
+        "2026-05-03-point-15",
+        "2026-05-03-point-13"
+      ],
+      "relatedTrendIds": [
+        "AI基础设施"
+      ],
+      "relatedOpportunityIds": [
+        "20260430-01-AI基础设施托管服务"
+      ],
+      "latestPriorityScore": 22,
+      "priorityScoreV2": 73,
+      "priorityStatusV2": "active_watch",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-04-30",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai记忆层基础设施",
+      "title": "AI记忆层基础设施",
+      "judgmentNodeSource": "derived",
+      "track": "AI基础设施",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "企业知识工作流",
+      "stage": "cautious",
+      "relatedScoringIds": [
+        "2026-04-30-AI记忆层基础设施（MemoraX）"
+      ],
+      "relatedSignalIds": [
+        "2026-04-30-signal-6"
+      ],
+      "relatedPointIds": [
+        "2026-05-03-point-3",
+        "2026-05-03-point-15",
+        "2026-05-03-point-13"
+      ],
+      "relatedTrendIds": [
+        "AI基础设施"
+      ],
+      "relatedOpportunityIds": [
+        "20260430-02-AI记忆层基础设施"
+      ],
+      "latestPriorityScore": 15,
+      "priorityScoreV2": 50,
+      "priorityStatusV2": "cautious",
+      "judgmentType": "反证增强",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-04-30",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai语音客服首轮分流助手",
+      "title": "AI语音客服首轮分流助手",
+      "judgmentNodeSource": "derived",
+      "track": "AI客服/语音Agent",
+      "capability": "Agent工作流",
+      "customer": "企业服务",
+      "scenario": "企业知识工作流",
+      "stage": "priority_verify",
+      "relatedScoringIds": [
+        "2026-04-29-Avoca"
+      ],
+      "relatedSignalIds": [
+        "2026-04-29-signal-3"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-5"
+      ],
+      "relatedTrendIds": [
+        "AI客服/语音Agent"
+      ],
+      "relatedOpportunityIds": [
+        "20260429-02-AI语音客服首轮分流助手"
+      ],
+      "latestPriorityScore": 27,
+      "priorityScoreV2": 90,
+      "priorityStatusV2": "priority_verify",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-04-29",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    },
+    {
+      "id": "jn-ai-agent基础设施服务",
+      "title": "AI Agent基础设施服务",
+      "judgmentNodeSource": "derived",
+      "track": "AI Agent基础设施",
+      "capability": "Agent工作流",
+      "customer": "",
+      "scenario": "",
+      "stage": "priority_verify",
+      "relatedScoringIds": [
+        "2026-04-29-Parallel Web Systems"
+      ],
+      "relatedSignalIds": [
+        "2026-04-29-signal-2"
+      ],
+      "relatedPointIds": [
+        "2026-05-04-point-1",
+        "2026-05-04-point-2",
+        "2026-05-04-point-5",
+        "2026-05-04-point-4",
+        "2026-05-03-point-1",
+        "2026-05-03-point-2",
+        "2026-05-03-point-3",
+        "2026-05-03-point-4",
+        "2026-05-03-point-5",
+        "2026-05-03-point-6",
+        "2026-05-03-point-7",
+        "2026-05-03-point-8",
+        "2026-05-03-point-10",
+        "2026-05-03-point-20",
+        "2026-05-03-point-11",
+        "2026-05-03-point-12",
+        "2026-05-03-point-22",
+        "2026-05-03-point-24",
+        "2026-05-03-point-13",
+        "2026-05-03-point-23"
+      ],
+      "relatedTrendIds": [
+        "AI Agent"
+      ],
+      "relatedOpportunityIds": [
+        "20260429-04-AI Agent基础设施服务"
+      ],
+      "latestPriorityScore": 26,
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "judgmentType": "方向升温",
+      "reviewStatus": "pending_7d_review",
+      "updatedAt": "2026-04-29",
+      "pointEvidenceBoundary": "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。"
+    }
+  ],
+  "priorityEngine": {
+    "version": "2.0",
+    "judgmentNodeCount": 22,
+    "priorityRowsWithJudgmentNode": 39,
+    "explicitJudgmentRows": 0,
+    "derivedJudgmentRows": 39,
+    "pointEvidenceMode": "viewpoint_only_not_fact_weight"
+  },
   "opportunities": [
     {
       "id": "20260429-03-AICoding驱动一人公司工具链",
@@ -23929,7 +27596,7 @@ window.AI_RADAR_DATA = {
           "id": "2026-05-01-AI编程Agent（Factory）",
           "date": "2026-05-01",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 2,
           "representativeCase": "Factory"
         },
@@ -23937,14 +27604,14 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-29-OpenAI Workspace Agents",
           "date": "2026-04-29",
           "score": 25,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 4,
           "representativeCase": ""
         }
       ],
       "priorityScore": 26,
       "priorityScoreDate": "2026-05-01",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-05-01-AI编程Agent（Factory）",
       "representativeCases": [
         "Factory"
@@ -23961,7 +27628,20 @@ window.AI_RADAR_DATA = {
         "AI营销",
         "AI客服/语音Agent",
         "AI治理"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-aicoding驱动一人公司工具链"
+      ],
+      "judgmentId": "jn-aicoding驱动一人公司工具链",
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 87,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260427-01-AI招投标Agent",
@@ -24234,7 +27914,18 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "专业服务AI",
         "AI治理"
-      ]
+      ],
+      "relatedJudgmentIds": [],
+      "judgmentId": "",
+      "priorityScoreV2": null,
+      "priorityStatusV2": "",
+      "evidenceQualityScore": null,
+      "momentumScore": null,
+      "pointSupportScore": null,
+      "counterEvidenceScore": null,
+      "review7dStatus": "",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260501-04-AI用户研究Agent",
@@ -24508,14 +28199,14 @@ window.AI_RADAR_DATA = {
           "id": "2026-05-01-AI用户研究（Mizzen）",
           "date": "2026-05-01",
           "score": 25,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 3,
           "representativeCase": "Mizzen"
         }
       ],
       "priorityScore": 25,
       "priorityScoreDate": "2026-05-01",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-05-01-AI用户研究（Mizzen）",
       "representativeCases": [
         "觅深科技 Mizzen Insight（红杉中国种子基金领投",
@@ -24534,7 +28225,20 @@ window.AI_RADAR_DATA = {
         "专业服务AI",
         "AI营销",
         "AI编程"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai用户研究agent"
+      ],
+      "judgmentId": "jn-ai用户研究agent",
+      "priorityScoreV2": 83,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 87,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260429-07-AI营销Agent",
@@ -24800,7 +28504,7 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-29-Hightouch",
           "date": "2026-04-29",
           "score": 28,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 1,
           "representativeCase": ""
         },
@@ -24808,7 +28512,7 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-30-AI营销平台（Hightouch）",
           "date": "2026-04-30",
           "score": 27,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 1,
           "representativeCase": "Hightouch"
         },
@@ -24816,14 +28520,14 @@ window.AI_RADAR_DATA = {
           "id": "2026-05-04-AI营销Agent（Hightouch）",
           "date": "2026-05-04",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 1,
           "representativeCase": "Hightouch"
         }
       ],
       "priorityScore": 28,
       "priorityScoreDate": "2026-04-29",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-04-29-Hightouch",
       "representativeCases": [
         "Hightouch（ARR1 亿美元",
@@ -24842,7 +28546,20 @@ window.AI_RADAR_DATA = {
         "AI Agent",
         "AI增长",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai营销agent"
+      ],
+      "judgmentId": "jn-ai营销agent",
+      "priorityScoreV2": 93,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 100,
+      "momentumScore": 100,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 20,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260429-02-AI语音客服首轮分流助手",
@@ -25108,14 +28825,14 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-29-Avoca",
           "date": "2026-04-29",
           "score": 27,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 2,
           "representativeCase": ""
         }
       ],
       "priorityScore": 27,
       "priorityScoreDate": "2026-04-29",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-04-29-Avoca",
       "representativeCases": [],
       "priorityRank": 3,
@@ -25129,7 +28846,20 @@ window.AI_RADAR_DATA = {
         "AI增长",
         "AI Agent",
         "AI治理"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai语音客服首轮分流助手"
+      ],
+      "judgmentId": "jn-ai语音客服首轮分流助手",
+      "priorityScoreV2": 90,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 87,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 20,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260428-02-Agent治理与权限审计服务",
@@ -25389,7 +29119,7 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-30-企业AI治理（Vanta）",
           "date": "2026-04-30",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 2,
           "representativeCase": "Vanta"
         },
@@ -25428,7 +29158,7 @@ window.AI_RADAR_DATA = {
       ],
       "priorityScore": 26,
       "priorityScoreDate": "2026-04-30",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-04-30-企业AI治理（Vanta）",
       "representativeCases": [
         "Vanta（ARR 超 3 亿美元",
@@ -25455,7 +29185,20 @@ window.AI_RADAR_DATA = {
         "AI治理",
         "AI编程",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-agent治理与权限审计服务"
+      ],
+      "judgmentId": "jn-agent治理与权限审计服务",
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 93,
+      "momentumScore": 100,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260503-01-专业服务AI工作流平台",
@@ -25680,14 +29423,14 @@ window.AI_RADAR_DATA = {
           "id": "2026-05-03-专业服务AI工作流平台（Legora）",
           "date": "2026-05-03",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 1,
           "representativeCase": "Legora"
         }
       ],
       "priorityScore": 26,
       "priorityScoreDate": "2026-05-03",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-05-03-专业服务AI工作流平台（Legora）",
       "representativeCases": [
         "Legora",
@@ -25704,7 +29447,20 @@ window.AI_RADAR_DATA = {
         "AI客服/语音Agent",
         "AI编程",
         "AI治理"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-专业服务ai工作流平台"
+      ],
+      "judgmentId": "jn-专业服务ai工作流平台",
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 93,
+      "momentumScore": 100,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260429-01-企业AI工作流样板库",
@@ -25983,7 +29739,18 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "AI治理",
         "AI增长"
-      ]
+      ],
+      "relatedJudgmentIds": [],
+      "judgmentId": "",
+      "priorityScoreV2": null,
+      "priorityStatusV2": "",
+      "evidenceQualityScore": null,
+      "momentumScore": null,
+      "pointSupportScore": null,
+      "counterEvidenceScore": null,
+      "review7dStatus": "",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260429-05-企业Agent工作平台",
@@ -26257,7 +30024,7 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-30-企业级Agent操作系统（中数睿智）",
           "date": "2026-04-30",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 3,
           "representativeCase": "中数睿智"
         },
@@ -26288,7 +30055,7 @@ window.AI_RADAR_DATA = {
       ],
       "priorityScore": 26,
       "priorityScoreDate": "2026-04-30",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-04-30-企业级Agent操作系统（中数睿智）",
       "representativeCases": [
         "中数睿智（企业级智能体操作系统",
@@ -26314,7 +30081,20 @@ window.AI_RADAR_DATA = {
         "专业服务AI",
         "AI编程",
         "AI增长"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-企业agent工作平台"
+      ],
+      "judgmentId": "jn-企业agent工作平台",
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 93,
+      "momentumScore": 100,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260428-01-企业文档与财务流程Agent",
@@ -26612,7 +30392,20 @@ window.AI_RADAR_DATA = {
         "专业服务AI",
         "AI编程",
         "AI营销"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-企业文档与财务流程agent"
+      ],
+      "judgmentId": "jn-企业文档与财务流程agent",
+      "priorityScoreV2": 80,
+      "priorityStatusV2": "active_watch",
+      "evidenceQualityScore": 80,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260501-01-AI企业客服执行Agent",
@@ -26886,7 +30679,7 @@ window.AI_RADAR_DATA = {
           "id": "2026-05-01-AI客服Agent（Netomi）",
           "date": "2026-05-01",
           "score": 27,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 1,
           "representativeCase": "Netomi"
         },
@@ -26909,7 +30702,7 @@ window.AI_RADAR_DATA = {
       ],
       "priorityScore": 27,
       "priorityScoreDate": "2026-05-01",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-05-01-AI客服Agent（Netomi）",
       "representativeCases": [
         "Netomi（C 轮 1.1 亿美元",
@@ -26930,7 +30723,20 @@ window.AI_RADAR_DATA = {
         "AI Agent",
         "AI增长",
         "AI编程"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai企业客服执行agent"
+      ],
+      "judgmentId": "jn-ai企业客服执行agent",
+      "priorityScoreV2": 90,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 93,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260427-02-AI客服质检与工单智能Agent",
@@ -27205,7 +31011,18 @@ window.AI_RADAR_DATA = {
         "专业服务AI",
         "AI治理",
         "AI编程"
-      ]
+      ],
+      "relatedJudgmentIds": [],
+      "judgmentId": "",
+      "priorityScoreV2": null,
+      "priorityStatusV2": "",
+      "evidenceQualityScore": null,
+      "momentumScore": null,
+      "pointSupportScore": null,
+      "counterEvidenceScore": null,
+      "review7dStatus": "",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260503-03-企业数据智能体控制平面",
@@ -27465,7 +31282,20 @@ window.AI_RADAR_DATA = {
         "专业服务AI",
         "AI客服/语音Agent",
         "企业数据/RAG"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-企业数据智能体控制平面"
+      ],
+      "judgmentId": "jn-企业数据智能体控制平面",
+      "priorityScoreV2": 77,
+      "priorityStatusV2": "active_watch",
+      "evidenceQualityScore": 73,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260429-04-AI Agent基础设施服务",
@@ -27722,14 +31552,14 @@ window.AI_RADAR_DATA = {
           "id": "2026-04-29-Parallel Web Systems",
           "date": "2026-04-29",
           "score": 26,
-          "verdict": "做多",
+          "verdict": "优先验证",
           "rank": 3,
           "representativeCase": ""
         }
       ],
       "priorityScore": 26,
       "priorityScoreDate": "2026-04-29",
-      "priorityVerdict": "做多",
+      "priorityVerdict": "优先验证",
       "priorityRowId": "2026-04-29-Parallel Web Systems",
       "representativeCases": [
         "Parallel Web Systems（前 Twitter CEO 创办",
@@ -27747,7 +31577,20 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "AI治理",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai-agent基础设施服务"
+      ],
+      "judgmentId": "jn-ai-agent基础设施服务",
+      "priorityScoreV2": 87,
+      "priorityStatusV2": "priority_verify",
+      "evidenceQualityScore": 93,
+      "momentumScore": 100,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260427-03-AI商业洞察与销售赋能Agent",
@@ -28018,7 +31861,18 @@ window.AI_RADAR_DATA = {
         "AI基础设施",
         "专业服务AI",
         "AI用户研究"
-      ]
+      ],
+      "relatedJudgmentIds": [],
+      "judgmentId": "",
+      "priorityScoreV2": null,
+      "priorityStatusV2": "",
+      "evidenceQualityScore": null,
+      "momentumScore": null,
+      "pointSupportScore": null,
+      "counterEvidenceScore": null,
+      "review7dStatus": "",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260501-07-AI工程仿真软件",
@@ -28299,7 +32153,20 @@ window.AI_RADAR_DATA = {
         "AI营销",
         "AI客服/语音Agent",
         "AI治理"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai工程仿真软件"
+      ],
+      "judgmentId": "jn-ai工程仿真软件",
+      "priorityScoreV2": 67,
+      "priorityStatusV2": "early_watch",
+      "evidenceQualityScore": 60,
+      "momentumScore": 40,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 20,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260503-04-中小商家AI营销对话平台",
@@ -28547,7 +32414,20 @@ window.AI_RADAR_DATA = {
         "AI增长",
         "AI Agent",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-中小商家ai营销对话平台"
+      ],
+      "judgmentId": "jn-中小商家ai营销对话平台",
+      "priorityScoreV2": 70,
+      "priorityStatusV2": "active_watch",
+      "evidenceQualityScore": 67,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260503-02-临床影像AI辅助诊断平台",
@@ -28784,7 +32664,20 @@ window.AI_RADAR_DATA = {
         "专业服务AI",
         "AI治理",
         "AI编程"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-临床影像ai辅助诊断平台"
+      ],
+      "judgmentId": "jn-临床影像ai辅助诊断平台",
+      "priorityScoreV2": 80,
+      "priorityStatusV2": "active_watch",
+      "evidenceQualityScore": 93,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 60,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260501-06-具身智能物流机器人",
@@ -29066,7 +32959,20 @@ window.AI_RADAR_DATA = {
         "专业服务AI",
         "AI用户研究",
         "AI基础设施"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-具身智能物流机器人"
+      ],
+      "judgmentId": "jn-具身智能物流机器人",
+      "priorityScoreV2": 80,
+      "priorityStatusV2": "active_watch",
+      "evidenceQualityScore": 80,
+      "momentumScore": 60,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260502-01-无人系统任务执行智能体平台",
@@ -29305,7 +33211,20 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "AI客服/语音Agent",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-无人系统任务执行智能体平台"
+      ],
+      "judgmentId": "jn-无人系统任务执行智能体平台",
+      "priorityScoreV2": 57,
+      "priorityStatusV2": "cautious",
+      "evidenceQualityScore": 60,
+      "momentumScore": 40,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260502-02-端侧推理芯片与软件栈",
@@ -29552,7 +33471,20 @@ window.AI_RADAR_DATA = {
         "AI营销",
         "AI编程",
         "AI治理"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-端侧推理芯片与软件栈"
+      ],
+      "judgmentId": "jn-端侧推理芯片与软件栈",
+      "priorityScoreV2": 57,
+      "priorityStatusV2": "cautious",
+      "evidenceQualityScore": 60,
+      "momentumScore": 40,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 60,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260428-03-行业专家知识Agent化",
@@ -29823,7 +33755,18 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "AI治理",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [],
+      "judgmentId": "",
+      "priorityScoreV2": null,
+      "priorityStatusV2": "",
+      "evidenceQualityScore": null,
+      "momentumScore": null,
+      "pointSupportScore": null,
+      "counterEvidenceScore": null,
+      "review7dStatus": "",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260430-01-AI基础设施托管服务",
@@ -30110,7 +34053,20 @@ window.AI_RADAR_DATA = {
         "AI治理",
         "AI编程",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai基础设施托管服务"
+      ],
+      "judgmentId": "jn-ai基础设施托管服务",
+      "priorityScoreV2": 80,
+      "priorityStatusV2": "active_watch",
+      "evidenceQualityScore": 80,
+      "momentumScore": 60,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260429-06-AI增长Agent",
@@ -30421,7 +34377,20 @@ window.AI_RADAR_DATA = {
         "AI客服/语音Agent",
         "AI用户研究",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai增长agent"
+      ],
+      "judgmentId": "jn-ai增长agent",
+      "priorityScoreV2": 70,
+      "priorityStatusV2": "active_watch",
+      "evidenceQualityScore": 53,
+      "momentumScore": 40,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 20,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260430-02-AI记忆层基础设施",
@@ -30711,7 +34680,20 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "AI治理",
         "专业服务AI"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai记忆层基础设施"
+      ],
+      "judgmentId": "jn-ai记忆层基础设施",
+      "priorityScoreV2": 50,
+      "priorityStatusV2": "cautious",
+      "evidenceQualityScore": 33,
+      "momentumScore": 40,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 60,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260502-03-具身智能控制栈与评测平台",
@@ -30950,7 +34932,20 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "AI客服/语音Agent",
         "AI治理"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-具身智能控制栈与评测平台"
+      ],
+      "judgmentId": "jn-具身智能控制栈与评测平台",
+      "priorityScoreV2": 53,
+      "priorityStatusV2": "cautious",
+      "evidenceQualityScore": 47,
+      "momentumScore": 40,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 40,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     },
     {
       "id": "20260501-05-AI互动内容平台",
@@ -31240,7 +35235,20 @@ window.AI_RADAR_DATA = {
         "AI编程",
         "AI基础设施",
         "AI增长"
-      ]
+      ],
+      "relatedJudgmentIds": [
+        "jn-ai互动内容平台"
+      ],
+      "judgmentId": "jn-ai互动内容平台",
+      "priorityScoreV2": 53,
+      "priorityStatusV2": "cautious",
+      "evidenceQualityScore": 67,
+      "momentumScore": 80,
+      "pointSupportScore": null,
+      "counterEvidenceScore": 80,
+      "review7dStatus": "pending_7d_review",
+      "review30dStatus": "",
+      "review90dStatus": ""
     }
   ],
   "relations": {
@@ -31251,6 +35259,12 @@ window.AI_RADAR_DATA = {
       "unmatchedScoreIds": [],
       "opportunitiesWithScore": 22,
       "opportunitiesWithoutScore": 5
+    },
+    "priorityJudgmentNode": {
+      "total": 39,
+      "linked": 39,
+      "judgmentNodes": 22,
+      "derived": 39
     }
   }
 };

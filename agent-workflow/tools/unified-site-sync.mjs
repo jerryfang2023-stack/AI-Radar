@@ -53,9 +53,13 @@ const requiredBreakdownQuestions = [
 ];
 
 const read = (file) => fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n");
+const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const existsNonEmpty = (file) => fs.existsSync(file) && fs.statSync(file).size > 200;
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const add = (items, scope, message) => items.push({ scope, message });
+const node = process.platform === "win32" ? "node" : process.execPath;
+const asList = (value) => (Array.isArray(value) ? value.filter(Boolean) : value ? [value] : []);
+const byId = (items) => new Map(asList(items).filter((item) => item?.id).map((item) => [item.id, item]));
 
 const extractFrontmatterValue = (text, key) => {
   const fm = text.match(/^---\n([\s\S]*?)\n---/);
@@ -162,6 +166,130 @@ const validatePoint = (issues, notes) => {
   return { count: points.length };
 };
 
+const validatePriorityEngine = (issues, notes) => {
+  if (!existsNonEmpty(paths.dataJson)) {
+    add(issues, "missing_priority_engine_summary", `网站数据文件缺失或为空：${rel(paths.dataJson)}`);
+    return;
+  }
+
+  let data;
+  try {
+    data = readJson(paths.dataJson);
+  } catch (error) {
+    add(issues, "missing_priority_engine_summary", `网站数据 JSON 无法解析：${error.message}`);
+    return;
+  }
+
+  const priorityRows = asList(data.scoring?.rows);
+  const judgmentNodes = asList(data.judgmentNodes);
+  const summary = data.priorityEngine || {};
+  const signalsById = byId(data.signals);
+  const prioritiesById = byId(priorityRows);
+  const pointsById = byId(data.points);
+  const opportunitiesById = byId(data.opportunities);
+  const trendsByTrack = new Map(asList(data.trends).filter((trend) => trend?.track).map((trend) => [trend.track, trend]));
+  const judgmentById = byId(judgmentNodes);
+
+  if (priorityRows.length > 0 && !summary.version) {
+    add(issues, "missing_priority_engine_summary", "priorityEngine 摘要缺失，无法确认 Priority Engine 2.0 入站状态。");
+  }
+  if (priorityRows.length > 0 && !judgmentNodes.length) {
+    add(issues, "missing_judgment_nodes", "存在 Priority Rows，但 radar-data.json 中没有 judgmentNodes。");
+  }
+
+  const rowsWithJudgment = priorityRows.filter((row) => row.judgmentId);
+  const missingRows = priorityRows.filter((row) => !row.judgmentId);
+  for (const row of missingRows.slice(0, 20)) {
+    add(issues, "priority_without_judgment_node", `Priority Row 缺少 judgmentId：${row.id || row.product || "unknown"}`);
+  }
+  if (missingRows.length > 20) {
+    add(issues, "priority_without_judgment_node", `另有 ${missingRows.length - 20} 条 Priority Rows 缺少 judgmentId。`);
+  }
+
+  const brokenPriorityToJudgment = priorityRows.filter((row) => row.judgmentId && !judgmentById.has(row.judgmentId));
+  for (const row of brokenPriorityToJudgment.slice(0, 20)) {
+    add(
+      issues,
+      "judgment_node_broken_relation",
+      `Priority Row 指向不存在的 Judgment Node：${row.id || row.product || "unknown"} -> ${row.judgmentId}`
+    );
+  }
+  if (brokenPriorityToJudgment.length > 20) {
+    add(issues, "judgment_node_broken_relation", `另有 ${brokenPriorityToJudgment.length - 20} 条 Priority -> Judgment Node 断链。`);
+  }
+
+  for (const nodeItem of judgmentNodes) {
+    const relatedScores = asList(nodeItem.relatedScoringIds);
+    if (!relatedScores.length) {
+      add(issues, "judgment_node_without_priority", `Judgment Node 缺少评分来源：${nodeItem.id || nodeItem.title || "unknown"}`);
+    }
+    for (const scoreId of relatedScores) {
+      if (!prioritiesById.has(scoreId)) {
+        add(issues, "judgment_node_broken_relation", `Judgment Node 关联的 Priority Row 不存在：${nodeItem.id} -> ${scoreId}`);
+      }
+    }
+    for (const signalId of asList(nodeItem.relatedSignalIds)) {
+      if (!signalsById.has(signalId)) {
+        add(issues, "judgment_node_broken_relation", `Judgment Node 关联的 Signal 不存在：${nodeItem.id} -> ${signalId}`);
+      }
+    }
+    for (const track of asList(nodeItem.relatedTrendIds)) {
+      if (!trendsByTrack.has(track)) {
+        add(issues, "judgment_node_broken_relation", `Judgment Node 关联的 Trend 不存在：${nodeItem.id} -> ${track}`);
+      }
+    }
+    for (const opportunityId of asList(nodeItem.relatedOpportunityIds)) {
+      if (!opportunitiesById.has(opportunityId)) {
+        add(issues, "judgment_node_broken_relation", `Judgment Node 关联的 Opportunity 不存在：${nodeItem.id} -> ${opportunityId}`);
+      }
+    }
+    for (const pointId of asList(nodeItem.relatedPointIds)) {
+      if (!pointsById.has(pointId)) {
+        add(issues, "judgment_node_broken_relation", `Judgment Node 关联的 Point 不存在：${nodeItem.id} -> ${pointId}`);
+      }
+    }
+  }
+
+  const coverage = priorityRows.length ? rowsWithJudgment.length / priorityRows.length : 1;
+  if (coverage < 1) {
+    add(
+      issues,
+      "judgment_coverage_below_required_threshold",
+      `Priority Row -> Judgment Node 覆盖率低于 100%：${rowsWithJudgment.length}/${priorityRows.length}`
+    );
+  }
+
+  const explicitRows = priorityRows.filter((row) => row.judgmentNodeSource === "explicit").length;
+  const derivedRows = priorityRows.filter((row) => row.judgmentNodeSource === "derived").length;
+  const summaryChecks = [
+    ["judgmentNodeCount", judgmentNodes.length],
+    ["priorityRowsWithJudgmentNode", rowsWithJudgment.length],
+    ["explicitJudgmentRows", explicitRows],
+    ["derivedJudgmentRows", derivedRows],
+  ];
+  for (const [key, actual] of summaryChecks) {
+    if (summary[key] !== undefined && summary[key] !== actual) {
+      add(issues, "priority_engine_summary_mismatch", `priorityEngine.${key}=${summary[key]}，实际为 ${actual}。`);
+    }
+  }
+  if (summary.version && summary.version !== "2.0") {
+    add(issues, "priority_engine_summary_mismatch", `priorityEngine.version 应为 2.0，当前为 ${summary.version}。`);
+  }
+  if (summary.pointEvidenceMode && summary.pointEvidenceMode !== "viewpoint_only_not_fact_weight") {
+    add(
+      issues,
+      "priority_engine_summary_mismatch",
+      `The Point 证据边界异常：priorityEngine.pointEvidenceMode=${summary.pointEvidenceMode}`
+    );
+  }
+
+  add(
+    notes,
+    "Priority Engine 2.0",
+    `Judgment Node 闸门检查：Priority Rows ${priorityRows.length}，Judgment Nodes ${judgmentNodes.length}，覆盖率 ${rowsWithJudgment.length}/${priorityRows.length || 0}。`
+  );
+};
+
 const commandLines = [];
 const run = (cmd, cmdArgs) => {
   const rendered = [cmd, ...cmdArgs].join(" ");
@@ -237,6 +365,7 @@ ${runLines}
 - 只有 AI商业雷达、AI机会评分、The Point 三类当天 Markdown 同时就绪，才允许同步网站。
 - 任一内容缺失、空跑、失败、待补充或字段不完整，均阻止入站。
 - 同步前先备份网站数据文件；同步后关系检查或 The Point 质量检查出现硬错误，则恢复备份。
+- Priority Engine 2.0 的 Judgment Node 覆盖率是 ai-3 硬闸门：Priority Row 必须 100% 进入 Judgment Node，Judgment Node 不得断链，priorityEngine 摘要必须与实际数据一致。
 - 内容生产任务不得直接运行网站同步，统一由本闸门执行。
 `;
 
@@ -301,14 +430,14 @@ const main = () => {
     copyIfExists(paths.dataJs, path.join(paths.backupDir, "radar-data.js"));
 
     const runs = [
-      run(process.execPath, ["--check", "04-Site/scripts/sync-data.mjs"]),
-      run(process.execPath, ["--check", "04-Site/scripts/check-relations.mjs"]),
-      run(process.execPath, ["--check", "04-Site/scripts/check-point-quality.mjs"]),
-      run(process.execPath, ["--check", "04-Site/scripts/check-tags.mjs"]),
-      run(process.execPath, ["04-Site/scripts/sync-data.mjs"]),
-      run(process.execPath, ["04-Site/scripts/check-relations.mjs"]),
-      run(process.execPath, ["04-Site/scripts/check-point-quality.mjs"]),
-      run(process.execPath, ["04-Site/scripts/check-tags.mjs"]),
+      run(node, ["--check", "04-Site/scripts/sync-data.mjs"]),
+      run(node, ["--check", "04-Site/scripts/check-relations.mjs"]),
+      run(node, ["--check", "04-Site/scripts/check-point-quality.mjs"]),
+      run(node, ["--check", "04-Site/scripts/check-tags.mjs"]),
+      run(node, ["04-Site/scripts/sync-data.mjs"]),
+      run(node, ["04-Site/scripts/check-relations.mjs"]),
+      run(node, ["04-Site/scripts/check-point-quality.mjs"]),
+      run(node, ["04-Site/scripts/check-tags.mjs"]),
     ];
 
     const failed = runs.filter((item) => item.status !== 0);
@@ -322,7 +451,17 @@ const main = () => {
       return;
     }
 
-    add(notes, "统一同步", "网站数据同步、关系检查、The Point 质量检查和 Tag Quality Check 均通过。");
+    validatePriorityEngine(issues, notes);
+    if (issues.length) {
+      restoreBackup();
+      const { report } = writeReport("failed_restored", issues, notes, runs);
+      appendRunLog("failed_restored", issues);
+      console.log(report);
+      process.exitCode = 1;
+      return;
+    }
+
+    add(notes, "统一同步", "网站数据同步、关系检查、The Point 质量检查、Tag Quality Check 和 Priority Engine 2.0 Judgment Node 闸门均通过。");
     const { report } = writeReport("synced", issues, notes, runs);
     appendRunLog("synced", issues);
     console.log(report);

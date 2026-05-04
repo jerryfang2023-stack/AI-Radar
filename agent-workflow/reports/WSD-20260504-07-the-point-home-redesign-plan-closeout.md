@@ -2,7 +2,7 @@
 
 日期：2026-05-04  
 owner：`strategy` / `pm`  
-状态：review  
+状态：accepted  
 编码：UTF-8
 
 ## 1. 对应派发单
@@ -15,7 +15,8 @@ owner：`strategy` / `pm`
 - 读取并遵守 `AGENTS.md`、`docs/agent-handoff.md`、`window-dispatch-hub.md` 和本任务派发单。
 - 读取 Strategy / PM 岗位说明，以及 `the-point-model.md`、`strategy-single-source.md`、`DESIGN.md`、`COPY.md`。
 - 形成 The Point 首页改版战略判断：The Point 不应是观点列表、人物墙或来源聚合页，而应是“一线观点如何解释商业变化、补充判断证据、提示共识与分歧”的解释层。
-- 输出 PM 页面模块建议：首屏主观点、共识 / 分歧 / 早期信号分组、精选观点列表、关联 Signal / Trend / Opportunity、素材来源轻入口。
+- 根据后续 Strategy / PM 讨论修订页面定义：H1 固定为“从一线观点中，看见 AI 共识、分歧与边界。”；首屏不加小字导语；今日一线观点区是页面核心，必须突出 builders / 机构、来源类型和原文出处链接，观澜解读作为第二层增值。
+- 输出 PM 页面模块建议：首屏定位区、今日一线观点、观澜解读、共识 / 分歧 / 边界分组、关联 Signal / Trend / Opportunity、出处与素材入口。
 - 拆出后续 Copy / UI / Dev / QA 派发建议和验收标准。
 - 明确本任务不改页面、不改内容源、不改数据模型、不改自动化规则。
 
@@ -23,8 +24,10 @@ owner：`strategy` / `pm`
 
 - `agent-workflow/execution/WSD-20260504-07-the-point-home-redesign-plan.md`：将状态更新为 `review`，补充本执行窗口输出索引。
 - `agent-workflow/reports/the-point-home-redesign-plan-2026-05-04.md`：新增 The Point 首页改版方向与执行需求报告。
-- `agent-workflow/reports/WSD-20260504-07-the-point-home-redesign-plan-closeout.md`：新增本任务 UTF-8 收口文件。
+- `agent-workflow/reports/the-point-home-redesign-plan-2026-05-04.md`：按用户讨论结论补充修订，明确一线观点和原文出处仍是核心，观澜注解是第二层增值。
+- `agent-workflow/reports/WSD-20260504-07-the-point-home-redesign-plan-closeout.md`：新增并更新本任务 UTF-8 收口文件。
 - `agent-workflow/reports/quality-gates-syntax-2026-05-03-20260503-180634.md`：运行 Quality Gates 时由统一脚本自动生成的语法检查报告。
+- `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-102709.md`：根据讨论修订后重新运行 Quality Gates 时由统一脚本自动生成的语法检查报告。
 
 未修改：
 
@@ -39,7 +42,8 @@ owner：`strategy` / `pm`
 
 已运行：
 
-- `node agent-workflow/tools/run-quality-gates.mjs syntax`：通过，6 项检查全部 passed，失败项 0；报告路径为 `agent-workflow/reports/quality-gates-syntax-2026-05-03-20260503-180634.md`。
+- `node agent-workflow/tools/run-quality-gates.mjs syntax`：初次通过，6 项检查全部 passed，失败项 0；报告路径为 `agent-workflow/reports/quality-gates-syntax-2026-05-03-20260503-180634.md`。
+- `node agent-workflow/tools/run-quality-gates.mjs syntax`：根据用户讨论修订规划后再次通过，6 项检查全部 passed，失败项 0；报告路径为 `agent-workflow/reports/quality-gates-syntax-2026-05-04-20260504-102709.md`。
 
 未运行：
 
@@ -57,7 +61,7 @@ owner：`strategy` / `pm`
 ## 6. 风险与遗留
 
 - 风险：规划中的“共识 / 分歧 / 早期信号”第一版可能需要用现有字段和人工策展展示，不能为了页面效果硬改数据模型。
-- 软提醒：The Point 首页文案需要 Copy Agent 继续压缩，避免“观点层”“入口”“帮助用户”等内部或泛化表达。
+- 软提醒：后续 Copy / UI 需要同时守住两个边界：一线来源和出处要突出；外部全文不能被包装成观澜自有付费内容。
 - 需要用户确认：后续是否按本报告拆出 The Point 首页 Copy / UI / Dev / QA 四个连续任务。
 
 ## 7. 建议调度中枢更新
@@ -71,7 +75,7 @@ owner：`strategy` / `pm`
 
 建议下一个任务：
 
-- 先派发 Copy Agent：重写 The Point 首页 H1、导语、分组命名、观点卡片字段和 CTA。
+- 先派发 Copy Agent：保留固定 H1，重写模块标题、分组命名、观点卡片字段和 CTA。
 - 再派发 UI / UE Agent：基于 Copy 文案和本报告输出桌面端 / 移动端结构方案。
 - Copy 和 UI 收口后，再派发 Dev Agent 实现页面展示层。
 - Dev 完成后，由 QA / Acceptance Agent 做浏览器截图和权限边界验收。

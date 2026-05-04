@@ -40,8 +40,10 @@
 5. `agent-workflow/product/DESIGN.md`
 6. `agent-workflow/product/COPY.md`
 7. `agent-workflow/execution/WSD-20260504-09-homepage-hero-optimization-plan.md`
+8. `agent-workflow/reports/homepage-hero-optimization-plan-2026-05-04.md`
+9. `agent-workflow/reports/WSD-20260504-09-homepage-hero-optimization-plan-closeout.md`
 
-如果 `WSD-20260504-09-homepage-hero-optimization-plan` 尚未完成 closeout，本任务仍可执行，但必须在 closeout 中说明：本轮为首屏视觉执行，不替代 P0-2 的整体首页方向规划。
+`WSD-20260504-09-homepage-hero-optimization-plan` 已由调度中枢验收为 `accepted`。本任务必须承接其规划结论，不再另起首页首屏方向。
 
 ## 5. 允许改动范围
 
@@ -62,6 +64,14 @@
 - 不在轮播图片中嵌入文字；文字应由 HTML/CSS 承载，保证可访问、可响应、可修改。
 
 ## 7. 视觉方向
+
+P0-2 已确认的主方向：
+
+- 首页首屏从抽象雷达流程图转向“情报桌面 + 真实判断样张”。
+- 用户已明确喜欢本轮展示图风格，后续应参考其象牙白底、深石墨文字、深墨绿重点面板和少量铜棕强调。
+- 展示图仅作风格参考，不是最终站点资产：`C:\Users\86186\.codex\generated_images\019def03-4307-7030-9f0c-2652d44d41c3\ig_0cfd0bd9306732b40169f88439f79c8191b41ca3226c8b9d39.png`
+- 右侧视觉应展示 Signals、Opportunity Watch、Trend Status 与 Brief 的判断关系。
+- 不做霓虹科技风、大屏监控风、后台数据面板或抽象氛围图。
 
 三张图建议分别表达：
 
@@ -190,11 +200,17 @@ agent-workflow/execution/WSD-20260504-13-homepage-hero-carousel-assets-window-pr
 5. agent-workflow/product/DESIGN.md
 6. agent-workflow/product/COPY.md
 7. agent-workflow/execution/WSD-20260504-09-homepage-hero-optimization-plan.md
+8. agent-workflow/reports/homepage-hero-optimization-plan-2026-05-04.md
+9. agent-workflow/reports/WSD-20260504-09-homepage-hero-optimization-plan-closeout.md
 
 你是本任务的独立执行窗口，牵头角色为 UI / UE Agent，协作角色为 Copy Agent、Dev Agent、QA Agent。
 
 任务目标：
 在派生工作树中制作 3 张首页首屏轮播图，并替换现在首页首屏画面。轮播图要体现观澜AI“面向商业决策者的 AI 机会判断系统”的价值，而不是普通 AI 科技感背景、资讯站首屏或后台仪表盘。
+
+P0-2 已验收结论：
+首页首屏主视觉必须从抽象雷达转向“情报桌面 + 真实判断样张”。用户已喜欢展示图风格，参考路径为：
+C:\Users\86186\.codex\generated_images\019def03-4307-7030-9f0c-2652d44d41c3\ig_0cfd0bd9306732b40169f88439f79c8191b41ca3226c8b9d39.png
 
 执行要求：
 1. 先确认当前是否能使用派生工作树；如果不能，停止并在 closeout 写明阻塞原因。

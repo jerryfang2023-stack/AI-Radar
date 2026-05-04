@@ -2,7 +2,7 @@
 
 日期：2026-05-04  
 owner：`pm`  
-状态：review  
+状态：accepted  
 编码：UTF-8
 
 ## 1. 对应派发单

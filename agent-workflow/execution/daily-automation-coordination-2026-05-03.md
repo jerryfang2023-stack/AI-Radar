@@ -68,6 +68,16 @@ node agent-workflow/tools/unified-site-sync.mjs
 - `node 04-Site/scripts/sync-data.mjs`
 - `node 04-Site/scripts/check-relations.mjs`
 - `node 04-Site/scripts/check-point-quality.mjs`
+- `node 04-Site/scripts/check-tags.mjs`
+
+同步后还会由 `ai-3` 直接读取 `04-Site/data/radar-data.json`，执行 Priority Engine 2.0 Judgment Node 硬闸门：
+
+- `priorityRows`、`judgmentNodes`、`priorityEngine` 摘要必须存在。
+- Priority Row -> Judgment Node 覆盖率必须为 100%。
+- 每个 Judgment Node 必须至少关联一个 Priority Row。
+- Judgment Node 关联的 Priority / Signal / Trend / Opportunity / Point 不得断链。
+- `priorityEngine` 摘要中的节点数、覆盖数、显式 / 派生数量必须与实际数据一致。
+- The Point 只能作为观点共识、分歧或边界信号，不能被记录为事实证据直接加权。
 
 任一检查失败则恢复同步前备份。
 
@@ -80,6 +90,8 @@ node agent-workflow/tools/unified-site-sync.mjs
 5. 商业雷达失败时不能生成空文件，不能覆盖已有非空文件。
 6. The Point 失败时不能生成空文件，不能覆盖已有非空文件。
 7. 所有失败必须写入 `agent-workflow/daily-run-log.md`，并说明尝试路径、降级方式和失败原因。
+8. Priority Engine 2.0 Judgment Node 缺失、覆盖率不足、摘要不一致或关系断链属于 `ai-3` 硬错误，必须阻止入站并恢复备份。
+9. 关系软提醒不能为了清零而硬绑无效 Judgment Node；软提醒应进入报告并交给 Intelligence Data Agent 复核。
 
 ## 当前验证
 

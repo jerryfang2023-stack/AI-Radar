@@ -161,6 +161,18 @@ const uniqueTerms = (items = []) => {
     });
 };
 
+const uniqueValues = (items = []) => {
+  const seen = new Set();
+  return flattenValues(items)
+    .map(plain)
+    .filter((item) => {
+      const key = item.toLowerCase().replace(/\s+/g, "");
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+};
+
 const eventTypeRules = [
   { label: "融资", patterns: [/融资|投资|领投|估值|资本|轮\b|Series/i] },
   { label: "客户采用", patterns: [/企业采用|客户采用|客户案例|部署|签约|落地|央国企|医院|金融机构/] },
@@ -260,6 +272,124 @@ const anyField = (block, labels) => fieldV4(block, labels) || field(block, label
 const numberFrom = (value = "") => {
   const match = String(value || "").match(/-?\d+(?:\.\d+)?/);
   return match ? Number(match[0]) : null;
+};
+
+const clampNumber = (value, min = 0, max = 100) => {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return null;
+  return Math.max(min, Math.min(max, Math.round(number)));
+};
+
+const legacyScoreToPercent = (value) => {
+  const number = Number(value);
+  return Number.isFinite(number) ? clampNumber(number * 20) : null;
+};
+
+const averageNumbers = (...values) => {
+  const numbers = values.map(Number).filter(Number.isFinite);
+  return numbers.length ? numbers.reduce((sum, value) => sum + value, 0) / numbers.length : null;
+};
+
+const priorityStatusFromLegacy = (total, verdict = "") => {
+  const text = plain(verdict);
+  const score = Number(total);
+  if (/暂缓|回避|降级/.test(text)) return "downgrade";
+  if (/谨慎/.test(text)) return "cautious";
+  if (/早期/.test(text)) return "early_watch";
+  if (/持续|观察/.test(text) && score >= 21) return "active_watch";
+  if (/优先|做多/.test(text)) return "priority_verify";
+  if (!Number.isFinite(score)) return "early_watch";
+  if (score >= 25) return "priority_verify";
+  if (score >= 21) return "active_watch";
+  if (score >= 18) return "early_watch";
+  if (score >= 12) return "cautious";
+  return "downgrade";
+};
+
+const normalizePriorityStatusV2 = (value = "", fallbackTotal = null, fallbackVerdict = "") => {
+  const text = plain(value);
+  if (/priority_verify|优先验证/.test(text)) return "priority_verify";
+  if (/active_watch|持续观察/.test(text)) return "active_watch";
+  if (/early_watch|早期观察/.test(text)) return "early_watch";
+  if (/cautious|谨慎观察|谨慎/.test(text)) return "cautious";
+  if (/downgrade|暂缓关注|暂缓|回避|降级/.test(text)) return "downgrade";
+  return priorityStatusFromLegacy(fallbackTotal, fallbackVerdict);
+};
+
+const priorityStatusLabelV2 = (status = "") =>
+  ({
+    priority_verify: "优先验证",
+    active_watch: "持续观察",
+    early_watch: "早期观察",
+    cautious: "谨慎观察",
+    downgrade: "暂缓关注",
+  })[status] || "早期观察";
+
+const publicJudgmentText = (value = "", fallbackStatus = "") => {
+  const text = plain(value)
+    .replace(/做多/g, "优先验证")
+    .replace(/做空/g, "暂缓关注")
+    .replace(/必投|稳赚|确定性机会/g, "")
+    .trim();
+  return text || priorityStatusLabelV2(fallbackStatus);
+};
+
+const judgmentTypeFromText = (value = "", total = null) => {
+  const text = plain(value);
+  if (/暂缓|回避|降级/.test(text)) return "暂缓关注";
+  if (/反证|风险|监管|诉讼|处罚|流失|成本|谨慎/.test(text)) return "反证增强";
+  if (/分化|震荡|拥挤|竞争|红海/.test(text)) return "方向分化";
+  if (/客户|采购|部署|收入|ARR|复购|预算|需求/.test(text)) return "需求验证";
+  if (/扩散|创业|开源|生态|前移|替代|流程/.test(text)) return "机会前移";
+  if (Number(total) < 12) return "暂缓关注";
+  return "方向升温";
+};
+
+const parsePriorityV2Details = (text = "", date = "") => {
+  const startMatch = text.match(/^##\s*(?:七|八|九|十)?[、.\s]*(?:Priority Engine 2\.0|判断节点)[^\n]*$/m);
+  if (!startMatch) return new Map();
+  const start = startMatch.index + startMatch[0].length;
+  const rest = text.slice(start);
+  const next = rest.search(/^##\s+/m);
+  const part = next === -1 ? rest : rest.slice(0, next);
+  const sections = [...part.matchAll(/^###\s+(?:\d+\.\s*)?(.+)$/gm)];
+  const details = new Map();
+  for (let i = 0; i < sections.length; i += 1) {
+    const blockStart = sections[i].index;
+    const blockEnd = i + 1 < sections.length ? sections[i + 1].index : part.length;
+    const body = part.slice(blockStart, blockEnd);
+    const product = plain(sections[i][1].split("｜")[0]);
+    const judgmentTitle = plain(anyField(body, ["Judgment Node", "判断节点"])) || cleanScoringOpportunityName(product);
+    const priorityStatusV2 = normalizePriorityStatusV2(anyField(body, ["Priority 状态", "Priority Status", "优先状态"]));
+    const detail = {
+      judgmentTitle,
+      judgmentId: plain(anyField(body, ["Judgment Node ID", "judgment_id", "judgmentId", "判断节点ID"])),
+      judgmentNodeSource: "explicit",
+      priorityStatusV2,
+      judgmentType: plain(anyField(body, ["判断类型", "Judgment Type"])) || judgmentTypeFromText(body),
+      evidenceQualityScore: clampNumber(numberFrom(anyField(body, ["证据质量", "Evidence Quality"]))),
+      demandRealityScore: clampNumber(numberFrom(anyField(body, ["需求真实度", "Demand Reality"]))),
+      momentumScore: clampNumber(numberFrom(anyField(body, ["趋势动量", "Momentum"]))),
+      pointIntelligenceScore: /N\/A|NA|无|未使用/i.test(anyField(body, ["观点智能", "Point Intelligence"]))
+        ? null
+        : clampNumber(numberFrom(anyField(body, ["观点智能", "Point Intelligence"]))),
+      opportunityFitScore: clampNumber(numberFrom(anyField(body, ["机会适配度", "Opportunity Fit"]))),
+      counterEvidenceScore: clampNumber(numberFrom(anyField(body, ["反证强度", "Counter Evidence"]))),
+      pointEvidenceBoundary:
+        plain(anyField(body, ["The Point 边界", "The Point Boundary"])) ||
+        "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。",
+      reviewHints: {
+        sevenDay: plain(anyField(body, ["7天回测提示", "7 天回测提示"])),
+        thirtyDay: plain(anyField(body, ["30天回测提示", "30 天回测提示"])),
+        ninetyDay: plain(anyField(body, ["90天回测提示", "90 天回测提示"])),
+      },
+      reviewStatus: "pending_7d_review",
+      date,
+    };
+    details.set(product, detail);
+    details.set(cleanScoringOpportunityName(product), detail);
+  }
+  return details;
 };
 
 const splitSignalTags = (value = "") =>
@@ -485,12 +615,15 @@ const parseScoring = () => {
   for (const file of files) {
     const text = read(file);
     const date = parseDate(text, file);
+    const priorityV2Details = parsePriorityV2Details(text, date);
     const table = text.split("## 二、逐条评分说明")[0] || text;
     const rows = parseTableRows(table).filter((row) => /^\d+$/.test(row[0]));
     for (const row of rows) {
       const [rank, signalTrack, funding, commercialization, growth, demand, replicability, competition, total, verdict] = row;
       const [product, track = ""] = signalTrack.split("｜");
       const rawProduct = plain(product);
+      const priorityV2 = priorityV2Details.get(rawProduct) || priorityV2Details.get(cleanScoringOpportunityName(rawProduct)) || null;
+      const priorityStatusV2 = priorityV2?.priorityStatusV2 || priorityStatusFromLegacy(total, verdict);
       scoreRows.push({
         id: `${date}-${rawProduct}`,
         date,
@@ -507,7 +640,9 @@ const parseScoring = () => {
         replicability: Number(replicability),
         competition: Number(competition),
         total: Number(total),
-        verdict: plain(verdict),
+        verdict: publicJudgmentText(verdict, priorityStatusV2),
+        priorityStatusV2,
+        ...(priorityV2 || {}),
       });
     }
 
@@ -522,10 +657,10 @@ const parseScoring = () => {
         opportunityName: cleanScoringOpportunityName(product),
         representativeCase: extractParenthetical(product),
         scoreText: plain(body.match(/- 总分[:：]\s*([^\n]+)/)?.[1] || ""),
-        verdict: plain(body.match(/- 判断[:：]\s*([^\n]+)/)?.[1] || ""),
-        upside: collectList(body, "加分点"),
-        downside: collectList(body, "扣分点"),
-        change: plain(body.match(/- 评分变化[:：]\s*([\s\S]*?)(?=\n---|\n###|\n##|$)/)?.[1] || ""),
+        verdict: publicJudgmentText(body.match(/- 判断[:：]\s*([^\n]+)/)?.[1] || ""),
+        upside: collectList(body, "加分点").map((item) => publicJudgmentText(item)),
+        downside: collectList(body, "扣分点").map((item) => publicJudgmentText(item)),
+        change: publicJudgmentText(body.match(/- 评分变化[:：]\s*([\s\S]*?)(?=\n---|\n###|\n##|$)/)?.[1] || ""),
       };
       details[`${date}::${product}`] = detail;
       if (!details[product]) details[product] = detail;
@@ -560,7 +695,7 @@ const parseTrends = () => {
       .map(([product, score, verdict, basis]) => ({
         product: plain(product),
         score: plain(score),
-        verdict: plain(verdict),
+        verdict: publicJudgmentText(verdict),
         basis: plain(basis),
       }));
     trends.push({
@@ -568,7 +703,7 @@ const parseTrends = () => {
       scores: scoreRows.map(([date, score]) => ({ date, score: Number(score) || null })),
       sevenDay: plain(body.match(/\*\*7天趋势\*\*[:：]\s*([^\n]+)/)?.[1] || ""),
       thirtyDay: plain(body.match(/\*\*30天趋势\*\*[:：]\s*([^\n]+)/)?.[1] || ""),
-      verdict: plain(body.match(/\*\*判断\*\*[:：]\s*([^\n]+)/)?.[1] || ""),
+      verdict: publicJudgmentText(body.match(/\*\*判断\*\*[:：]\s*([^\n]+)/)?.[1] || ""),
       products,
     });
   }
@@ -1465,6 +1600,159 @@ const linkTrendEngine = (data) => {
   }
 };
 
+const inferPriorityV2Scores = (row = {}) => ({
+  evidenceQualityScore:
+    row.evidenceQualityScore ?? clampNumber((averageNumbers(row.funding, row.commercialization, row.growth) / 5) * 100),
+  demandRealityScore: row.demandRealityScore ?? legacyScoreToPercent(row.demand),
+  momentumScore: row.momentumScore ?? legacyScoreToPercent(row.growth),
+  pointIntelligenceScore: row.pointIntelligenceScore ?? null,
+  opportunityFitScore:
+    row.opportunityFitScore ?? clampNumber((averageNumbers(row.demand, row.replicability, row.competition) / 5) * 100),
+  counterEvidenceScore: row.counterEvidenceScore ?? clampNumber((5 - Number(row.competition || 0)) * 20),
+});
+
+const reviewHintsFromRow = (row = {}) =>
+  row.reviewHints || {
+    sevenDay: "观察是否出现新的客户、采购、部署或产品采用证据。",
+    thirtyDay: "观察该方向是否形成连续 Signal，而不是单日热度。",
+    ninetyDay: "观察是否出现收入、复购、规模化客户或明确反证。",
+  };
+
+const inferPointRelationsForJudgment = (row = {}, data = {}, relatedTrendIds = []) =>
+  (data.points || [])
+    .filter(
+      (point) =>
+        (point.relatedOpportunityIds || []).includes(row.relatedOpportunityId) ||
+        (point.relatedTrendIds || []).some((track) => relatedTrendIds.includes(track))
+    )
+    .map((point) => point.id);
+
+const ensureRowJudgmentV2 = (row = {}, data = {}) => {
+  const relatedTrendIds = (data.trends || []).filter((trend) => (trend.relatedScoringIds || []).includes(row.id)).map((trend) => trend.track);
+  const relatedPointIds = inferPointRelationsForJudgment(row, data, relatedTrendIds);
+  const judgmentTitle = plain(row.judgmentTitle || row.opportunityTitle || row.opportunityName || row.track || row.product);
+  const status = normalizePriorityStatusV2(row.priorityStatusV2, row.total, row.verdict);
+  const type = row.judgmentType || judgmentTypeFromText(textFromValues(row.verdict, row.product, row.opportunityName, row.track), row.total);
+  const scores = inferPriorityV2Scores(row);
+
+  row.judgmentTitle = judgmentTitle;
+  row.judgmentId = row.judgmentId || `jn-${slugify(judgmentTitle, slugify(row.id, "judgment-node"))}`;
+  row.judgmentNodeSource = row.judgmentNodeSource === "explicit" ? "explicit" : "derived";
+  row.priorityScoreV2 = row.priorityScoreV2 ?? clampNumber((Number(row.total || 0) / 30) * 100);
+  row.priorityStatusV2 = status;
+  row.judgmentType = type;
+  row.evidenceQualityScore = scores.evidenceQualityScore;
+  row.demandRealityScore = scores.demandRealityScore;
+  row.momentumScore = scores.momentumScore;
+  row.pointIntelligenceScore = scores.pointIntelligenceScore;
+  row.opportunityFitScore = scores.opportunityFitScore;
+  row.counterEvidenceScore = scores.counterEvidenceScore;
+  row.reviewStatus = row.reviewStatus || "pending_7d_review";
+  row.reviewHints = reviewHintsFromRow(row);
+  row.relatedJudgmentTrendIds = relatedTrendIds;
+  row.relatedJudgmentPointIds = relatedPointIds;
+  row.pointIntelligenceMode = "viewpoint_only";
+  row.pointEvidenceBoundary =
+    row.pointEvidenceBoundary || "The Point 仅作为观点共识、分歧或边界信号，不作为事实证据直接加权。";
+  return row;
+};
+
+const mergeNodeLists = (node, row) => {
+  node.relatedScoringIds = uniqueValues([node.relatedScoringIds, row.id]);
+  node.relatedSignalIds = uniqueValues([node.relatedSignalIds, row.relatedSignalId || []]);
+  node.relatedTrendIds = uniqueValues([node.relatedTrendIds, row.relatedJudgmentTrendIds || []]);
+  node.relatedOpportunityIds = uniqueValues([node.relatedOpportunityIds, row.relatedOpportunityId || []]);
+  node.relatedPointIds = uniqueValues([node.relatedPointIds, row.relatedJudgmentPointIds || []]);
+};
+
+const linkJudgmentNodes = (data) => {
+  const nodes = new Map();
+  for (const row of data.scoring.rows) {
+    ensureRowJudgmentV2(row, data);
+    const existing = nodes.get(row.judgmentId);
+    const latest = !existing || String(row.date || "").localeCompare(String(existing.updatedAt || "")) >= 0;
+    const node =
+      existing ||
+      {
+        id: row.judgmentId,
+        title: row.judgmentTitle,
+        judgmentNodeSource: row.judgmentNodeSource,
+        track: row.track || "",
+        capability: row.taxonomy?.capabilities?.[0] || "",
+        customer: row.taxonomy?.industries?.[0] || "",
+        scenario: row.taxonomy?.scenarios?.[0] || "",
+        stage: row.priorityStatusV2,
+        relatedScoringIds: [],
+        relatedSignalIds: [],
+        relatedPointIds: [],
+        relatedTrendIds: [],
+        relatedOpportunityIds: [],
+      };
+    mergeNodeLists(node, row);
+    if (latest) {
+      node.title = row.judgmentTitle;
+      node.track = row.track || node.track;
+      node.stage = row.priorityStatusV2;
+      node.latestPriorityScore = row.total;
+      node.priorityScoreV2 = row.priorityScoreV2;
+      node.priorityStatusV2 = row.priorityStatusV2;
+      node.judgmentType = row.judgmentType;
+      node.reviewStatus = row.reviewStatus;
+      node.updatedAt = row.date;
+      node.pointEvidenceBoundary = row.pointEvidenceBoundary;
+    }
+    nodes.set(row.judgmentId, node);
+  }
+
+  data.judgmentNodes = [...nodes.values()].sort(
+    (a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")) || (b.priorityScoreV2 || 0) - (a.priorityScoreV2 || 0)
+  );
+
+  for (const opportunity of data.opportunities) {
+    const rows = data.scoring.rows.filter((row) => row.relatedOpportunityId === opportunity.id);
+    opportunity.relatedJudgmentIds = uniqueValues(rows.map((row) => row.judgmentId));
+    const primary = rows.find((row) => row.id === opportunity.priorityRowId) || rows[0];
+    opportunity.judgmentId = primary?.judgmentId || "";
+    opportunity.priorityScoreV2 = primary?.priorityScoreV2 ?? null;
+    opportunity.priorityStatusV2 = primary?.priorityStatusV2 || "";
+    opportunity.evidenceQualityScore = primary?.evidenceQualityScore ?? null;
+    opportunity.momentumScore = primary?.momentumScore ?? null;
+    opportunity.pointSupportScore = primary?.pointIntelligenceScore ?? null;
+    opportunity.counterEvidenceScore = primary?.counterEvidenceScore ?? null;
+    opportunity.review7dStatus = primary?.reviewStatus || "";
+    opportunity.review30dStatus = "";
+    opportunity.review90dStatus = "";
+  }
+
+  for (const trend of data.trends) {
+    const rows = data.scoring.rows.filter((row) => (trend.relatedScoringIds || []).includes(row.id));
+    trend.judgmentIds = uniqueValues(rows.map((row) => row.judgmentId));
+    trend.pointConsensusState = rows.some((row) => (row.relatedJudgmentPointIds || []).length) ? "viewpoint_signal_present" : "not_applied";
+    trend.counterEvidenceState = rows.some((row) => (row.counterEvidenceScore || 0) >= 60) ? "watch_counter_evidence" : "normal_watch";
+    trend.trendConfidence = rows.length ? clampNumber(averageNumbers(...rows.map((row) => row.priorityScoreV2))) : null;
+    trend.lastCalibrationDate = "";
+  }
+
+  data.priorityEngine = {
+    version: "2.0",
+    judgmentNodeCount: data.judgmentNodes.length,
+    priorityRowsWithJudgmentNode: data.scoring.rows.filter((row) => row.judgmentId).length,
+    explicitJudgmentRows: data.scoring.rows.filter((row) => row.judgmentNodeSource === "explicit").length,
+    derivedJudgmentRows: data.scoring.rows.filter((row) => row.judgmentNodeSource === "derived").length,
+    pointEvidenceMode: "viewpoint_only_not_fact_weight",
+  };
+
+  data.relations = {
+    ...(data.relations || {}),
+    priorityJudgmentNode: {
+      total: data.scoring.rows.length,
+      linked: data.scoring.rows.filter((row) => row.judgmentId).length,
+      judgmentNodes: data.judgmentNodes.length,
+      derived: data.scoring.rows.filter((row) => row.judgmentNodeSource === "derived").length,
+    },
+  };
+};
+
 const resolvePointRelations = (data) => {
   for (const point of data.points || []) {
     const pointText = textFromValues(point.title, point.pointSummary, point.interpretation, point.commercialMeaning, point.topics);
@@ -1683,6 +1971,7 @@ const enrichTaxonomy = (data) => {
 
   linkTrendEngine(data);
   resolvePointRelations(data);
+  linkJudgmentNodes(data);
   data.pointTopics = buildPointTopics(data.points || []);
 };
 
@@ -1694,6 +1983,8 @@ const data = {
   points: parsePoints(),
   pointSources: parsePointSources(),
   pointTopics: [],
+  judgmentNodes: [],
+  priorityEngine: {},
   opportunities: parseOpportunities(),
 };
 

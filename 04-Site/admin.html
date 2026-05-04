@@ -3,119 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>管理后台｜观澜AI｜WaveSight AI</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v=admin-control-align-20260504" />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
   </head>
   <body data-page="admin">
-    <header class="topbar">
-      <a class="brand" href="./index.html"><img class="brand-logo" src="./assets/logo.svg" alt="" /><span><strong>观澜AI｜WaveSight AI</strong><small>观AI之澜，识商业之势</small></span></a>
-      <nav class="nav" aria-label="主导航">
-        <a href="./index.html" class="nav-link">首页</a>
-        <a href="./daily.html" class="nav-link">Daily Brief</a>
-        <a href="./signals.html" class="nav-link">Signals</a>
-        <a href="./scoring.html" class="nav-link">Priorities</a>
-        <a href="./trends.html" class="nav-link">Trends</a>
-        <a href="./opportunities.html" class="nav-link">Opportunities</a>
-        <a href="./tags.html" class="nav-link">Tags</a>
-      </nav>
-      <div class="toolbar"></div>
-    </header>
-    <main>
-      <section class="admin-hero">
-        <div>
-          <p class="eyebrow">Admin Console</p>
-          <h1>本地控制台</h1>
-          <p>同步每日情报、管理注册用户、调整阅读与订阅权限。所有操作集中在这里完成。</p>
+    <div class="admin-workbench">
+      <aside class="admin-rail" aria-label="Admin 导航">
+        <a class="admin-brand" href="./admin.html">
+          <img class="brand-logo" src="./assets/logo.svg" alt="" />
+          <span><strong>观澜AI</strong><small>Admin Console</small></span>
+        </a>
+        <nav class="admin-rail-nav">
+          <a href="#dashboard" data-admin-target="dashboard">项目统计</a>
+          <a href="#content" data-admin-target="content">内容管理</a>
+          <a href="#members" data-admin-target="members">用户与权限</a>
+          <a href="#invites" data-admin-target="invites">邀请码</a>
+          <a href="#orders" data-admin-target="orders">订阅与订单</a>
+          <a href="#quality" data-admin-target="quality">质量检查</a>
+          <a href="#settings" data-admin-target="settings">系统设置</a>
+        </nav>
+        <div class="admin-rail-footer">
+          <a href="./index.html">前台预览</a>
+          <button id="syncHelpBtn" type="button">同步说明</button>
         </div>
-        <div class="admin-hero-card">
-          <span>Today</span>
-          <strong>Ready for update</strong>
-          <small>新增 Markdown 后，先同步，再查看 Daily 和 Tags。</small>
-        </div>
-      </section>
-      <section class="admin-console-grid">
-        <article class="admin-sync-panel">
+      </aside>
+
+      <main class="admin-main">
+        <header class="admin-commandbar">
           <div>
-            <p class="eyebrow">Local Sync</p>
-            <h2>同步最新数据</h2>
-            <p>解析新增 Markdown，并刷新 Signals、Priorities、Trends、Opportunities、Daily 与 Tags。</p>
-            <div id="syncStatus" class="sync-status">等待同步。</div>
+            <p class="eyebrow">Admin Console</p>
+            <h1>管理后台</h1>
+            <p class="admin-command-summary">左侧选择模块，右侧处理具体内容。</p>
           </div>
-          <button id="runSyncBtn" class="primary-btn">一键同步</button>
-        </article>
-        <article class="admin-access-panel">
-          <p class="eyebrow">Access</p>
-          <h2>本机访问权限</h2>
-          <p>用于管理员预览所有受保护栏目。需要在页面上直接修改内容时，请从下方入口进入，普通访问路径不显示编辑工具。</p>
-          <div class="admin-action-stack">
+          <div class="admin-command-actions">
+            <span id="adminServiceStatus" class="admin-chip">本地状态检查中</span>
             <button id="grantLocalAccessBtn" class="ghost-btn">开通本浏览器</button>
-            <button id="syncHelpBtn" class="ghost-btn">查看同步说明</button>
-            <button id="resetBtn" class="danger-btn">清除本机编辑缓存</button>
+            <button id="runSyncBtn" class="primary-btn">同步最新数据</button>
           </div>
-          <div class="admin-visual-links" aria-label="可视化编辑入口">
-            <a class="ghost-btn as-link" href="./signals.html?admin=1">编辑 Signals</a>
-            <a class="ghost-btn as-link" href="./scoring.html?admin=1">编辑 Priorities</a>
-            <a class="ghost-btn as-link" href="./trends.html?admin=1">编辑 Trends</a>
-            <a class="ghost-btn as-link" href="./opportunities.html?admin=1">编辑 Opportunities</a>
+        </header>
+
+        <section class="admin-dashboard admin-view" data-admin-view="dashboard">
+          <div class="section-head">
+            <div><p class="eyebrow">Operations Dashboard</p><h2>项目运营仪表盘</h2></div>
           </div>
-        </article>
-      </section>
-      <section class="section admin-content-panel">
-        <div class="section-head">
-          <div><p class="eyebrow">Content Manager</p><h2>栏目与卡片编辑</h2></div>
-          <p class="section-note">通过本地管理服务打开时，修改会写入网站数据文件；直接打开文件时仅保存到当前浏览器。</p>
-        </div>
-        <div class="admin-editor-grid">
-          <aside class="admin-editor-sidebar">
-            <label class="field"><span>栏目</span><select id="adminContentType">
-              <option value="signals">Signals</option>
-              <option value="scoring">Priorities</option>
-              <option value="trends">Trends</option>
-              <option value="opportunities">Opportunities</option>
-            </select></label>
-            <label class="field"><span>卡片 / 条目</span><select id="adminContentItem"></select></label>
-            <div class="admin-action-stack">
-              <button id="adminSaveContentBtn" class="primary-btn">保存修改</button>
-              <button id="adminDuplicateContentBtn" class="ghost-btn">复制为新条目</button>
-              <button id="adminDeleteContentBtn" class="danger-btn">删除条目</button>
-            </div>
-          </aside>
-          <article class="admin-editor-main">
-            <label class="field"><span>JSON 内容</span><textarea id="adminContentJson" rows="22"></textarea></label>
-            <div id="adminContentStatus" class="sync-status">选择条目后可编辑。</div>
+          <article class="admin-release-panel">
+            <p class="eyebrow">Today</p>
+            <strong id="adminPublishStatus">运营状态检查中</strong>
+            <p id="adminPublishSummary">围绕会员、收入、邀请转化、内容供给和发布风险判断今天的运营动作。</p>
+            <div id="syncStatus" class="sync-status">等待同步。</div>
           </article>
-        </div>
-      </section>
-      <section class="section admin-membership-panel">
-        <div class="section-head">
-          <div><p class="eyebrow">Members</p><h2>用户与阅读权限</h2></div>
-          <div class="trial-setting">
-            <label class="field"><span>默认注册有效天数</span><input id="trialDaysInput" type="number" min="1" value="7" /></label>
-            <button id="saveTrialSettingsBtn" class="ghost-btn">保存</button>
+          <div id="adminStatusGrid" class="admin-status-grid admin-kpi-grid" aria-label="运营关键指标"></div>
+          <div id="adminFunnelGrid" class="admin-ops-grid" aria-label="运营漏斗"></div>
+          <article class="admin-panel admin-heat-panel">
+            <div class="section-head compact">
+              <div><p class="eyebrow">Column Heat</p><h2>栏目热度</h2></div>
+            </div>
+            <div id="adminMetricGrid" class="admin-metric-grid admin-health-grid" aria-label="栏目热度"></div>
+          </article>
+        </section>
+
+        <section class="admin-section admin-content-panel admin-view" data-admin-view="content" hidden>
+          <div class="section-head">
+            <div><p class="eyebrow">Content Manager</p><h2>内容管理</h2></div>
+            <p class="section-note">按频道、状态、日期和关键词快速定位稿件，再进入单条处理。</p>
           </div>
-        </div>
-        <div id="memberStatus" class="sync-status">注册用户会在这里显示。</div>
-        <div id="memberList" class="member-list"></div>
-      </section>
-      <section class="section admin-orders-panel">
-        <div class="section-head">
-          <div><p class="eyebrow">Orders</p><h2>订阅记录</h2></div>
-        </div>
-        <div id="orderList" class="order-list"></div>
-      </section>
-    </main>
+          <div class="admin-cms-layout">
+            <aside class="admin-cms-channel">
+              <div class="admin-cms-side-head">
+                <strong>内容库</strong>
+                <span id="adminContentCount">0 条</span>
+              </div>
+              <div id="adminContentScopeTabs" class="admin-cms-tabs" aria-label="内容分类">
+                <button type="button" data-admin-scope="column">栏目</button>
+                <button type="button" data-admin-scope="topic">主题</button>
+              </div>
+              <select id="adminContentScope" hidden>
+                <option value="column" selected>栏目</option>
+                <option value="topic">主题</option>
+              </select>
+              <select id="adminContentType" hidden></select>
+              <div id="adminContentTypeList" class="admin-cms-channel-list" aria-label="频道列表"></div>
+            </aside>
+
+            <div class="admin-cms-main">
+              <div class="admin-cms-toolbar">
+                <label class="field admin-cms-search"><span>关键词</span><input id="adminContentSearch" type="search" placeholder="搜标题、摘要、标签、来源" /></label>
+                <label class="field"><span>状态</span><select id="adminContentStatusFilter">
+                  <option value="all">全部状态</option>
+                  <option value="active">active / published</option>
+                  <option value="review">review / needs_review</option>
+                  <option value="draft">draft</option>
+                  <option value="archived">archived</option>
+                </select></label>
+                <label class="field"><span>日期</span><input id="adminContentDateFilter" type="search" placeholder="YYYY-MM-DD" /></label>
+                <button id="adminContentResetBtn" class="ghost-btn" type="button">重置筛选</button>
+              </div>
+              <div class="admin-cms-bulkbar">
+                <select id="adminContentItem" hidden></select>
+                <span id="adminContentStatus">选择一条内容查看详情。</span>
+                <div>
+                  <button id="adminDuplicateContentBtn" class="ghost-btn" type="button">复制为新条目</button>
+                  <button id="adminDeleteContentBtn" class="danger-btn" type="button">删除条目</button>
+                </div>
+              </div>
+              <div id="adminContentList" class="admin-content-list admin-cms-table" role="table" aria-label="内容条目列表"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-section admin-content-edit-panel admin-view" data-admin-view="content-edit" hidden>
+          <div class="section-head">
+            <div><p class="eyebrow">Content Editor</p><h2>稿件编辑</h2></div>
+            <a class="ghost-btn as-link" href="./admin.html?v=admin-editor-wysiwyg-20260504#content">返回内容列表</a>
+          </div>
+          <div id="adminContentEditShell" class="admin-visual-editor"></div>
+        </section>
+
+        <section class="admin-section admin-invites-panel admin-view" data-admin-view="invites" hidden>
+          <div class="section-head">
+            <div><p class="eyebrow">Invite Codes</p><h2>邀请码</h2></div>
+            <p class="section-note">用于邀请注册制度。新用户必须使用有效邀请码创建账号。</p>
+          </div>
+          <div class="admin-invite-layout">
+            <form id="adminInviteForm" class="admin-invite-form">
+              <label class="field"><span>生成数量</span><input id="inviteCountInput" type="number" min="1" max="50" value="5" /></label>
+              <label class="field"><span>有效天数</span><input id="inviteDaysInput" type="number" min="1" value="30" /></label>
+              <label class="field"><span>每码可用次数</span><input id="inviteMaxUsesInput" type="number" min="1" value="1" /></label>
+              <label class="field wide"><span>备注</span><input id="inviteNoteInput" placeholder="例如：5 月内测、投资人批次、合作伙伴" /></label>
+              <button class="primary-btn" type="submit">生成邀请码</button>
+            </form>
+            <div class="admin-invite-main">
+              <div class="admin-invite-toolbar">
+                <label class="field"><span>状态</span><select id="inviteFilter">
+                  <option value="all">全部邀请码</option>
+                  <option value="active">可用</option>
+                  <option value="used">已用完</option>
+                  <option value="paused">已暂停</option>
+                  <option value="expired">已过期</option>
+                </select></label>
+                <div id="inviteStatus" class="sync-status">邀请码仅保存在当前管理端浏览器。</div>
+              </div>
+              <div class="admin-invite-board">
+                <section class="admin-invite-block">
+                  <div class="section-head compact">
+                    <div><p class="eyebrow">Code Pool</p><h3>邀请码池</h3></div>
+                  </div>
+                  <div id="inviteList" class="admin-invite-list"></div>
+                </section>
+                <section class="admin-invite-block admin-invite-requests">
+                  <div class="section-head compact">
+                    <div><p class="eyebrow">Invite Requests</p><h3>申请审批</h3></div>
+                    <p class="section-note">通过后自动生成邀请码，可复制发给申请人。</p>
+                  </div>
+                  <div id="inviteRequestList" class="admin-invite-list"></div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-section admin-membership-panel admin-view" data-admin-view="members" hidden>
+          <div class="section-head">
+            <div><p class="eyebrow">Members</p><h2>用户与权限</h2></div>
+            <div class="trial-setting">
+              <label class="field"><span>默认注册有效天数</span><input id="trialDaysInput" type="number" min="1" value="7" /></label>
+              <button id="saveTrialSettingsBtn" class="ghost-btn">保存</button>
+            </div>
+          </div>
+          <div class="admin-filter-row">
+            <label class="field"><span>状态筛选</span><select id="memberFilter">
+              <option value="all">全部用户</option>
+              <option value="active">有效</option>
+              <option value="expiring">7 天内到期</option>
+              <option value="expired">已到期</option>
+              <option value="admin">管理员</option>
+            </select></label>
+          </div>
+          <div id="memberStatus" class="sync-status">注册用户会在这里显示。</div>
+          <div id="memberList" class="member-list"></div>
+        </section>
+
+        <section class="admin-section admin-orders-panel admin-view" data-admin-view="orders" hidden>
+          <div class="section-head">
+            <div><p class="eyebrow">Orders</p><h2>订阅与订单</h2></div>
+          </div>
+          <div id="orderList" class="order-list"></div>
+        </section>
+
+        <section class="admin-section admin-quality-panel admin-view" data-admin-view="quality" hidden>
+          <div class="section-head">
+            <div><p class="eyebrow">Quality</p><h2>质量检查</h2></div>
+            <p class="section-note">这里集中放发布风险入口，不进入普通前台。</p>
+          </div>
+          <div class="admin-quality-grid">
+            <article><strong>关系检查</strong><span>硬错误需为 0</span><code>check-relations.mjs</code></article>
+            <article><strong>标签检查</strong><span>未知公开标签需复核</span><code>check-tags.mjs</code></article>
+            <article><strong>The Point</strong><span>检查短链、speaker 标记和素材状态</span><code>check-point-quality.mjs</code></article>
+            <article><strong>Signal 完整性</strong><span>每日雷达需包含 6 点机会拆解</span><code>sync-data.mjs</code></article>
+          </div>
+          <div class="admin-checklist module-checklist">
+            <label><input type="checkbox" checked disabled /> 同步状态可辨认</label>
+            <label><input type="checkbox" checked disabled /> 质量检查硬错误为 0 后再发布</label>
+            <label><input type="checkbox" disabled /> 软提醒已有处理结论</label>
+            <label><input type="checkbox" disabled /> 普通前台无后台入口</label>
+            <label><input type="checkbox" disabled /> 数据文件已备份</label>
+          </div>
+        </section>
+
+        <section class="admin-section admin-settings-panel admin-view" data-admin-view="settings" hidden>
+          <div class="section-head">
+            <div><p class="eyebrow">Settings</p><h2>系统设置</h2></div>
+          </div>
+          <div class="admin-settings-grid">
+            <article>
+              <strong>本地管理服务</strong>
+              <p>使用本地服务打开时，保存会写入网站数据文件；直接打开文件时仅保存到当前浏览器。</p>
+              <div class="admin-action-row">
+                <button id="resetBtn" class="danger-btn">清除本机编辑缓存</button>
+              </div>
+            </article>
+            <article>
+              <strong>备份与恢复</strong>
+              <p>发布前保留上一版有效数据。涉及同步脚本或字段规则时先回调度中枢确认。</p>
+            </article>
+            <article>
+              <strong>自动化任务</strong>
+              <p>本后台页面不改变 ai-the-point、ai-2、ai-3 的运行口径。</p>
+            </article>
+            <article>
+              <strong>可视化编辑</strong>
+              <p>需要直接修改页面卡片时，从对应入口进入显式 Admin 模式。</p>
+              <div class="admin-action-row">
+                <a class="ghost-btn as-link" href="./signals.html?admin=1">编辑 Signals</a>
+                <a class="ghost-btn as-link" href="./opportunities.html?admin=1">编辑 Opportunities</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
     <dialog id="helpDialog" class="dialog small">
       <form method="dialog">
         <div class="section-head compact">
           <div><p class="eyebrow">Sync</p><h2>每日同步方式</h2></div>
           <button class="icon-btn" value="cancel" aria-label="关闭">x</button>
         </div>
-        <p class="help-copy">推荐使用本页“一键同步”。如果需要手动同步，在 `01-Daily` 根目录运行：</p>
+        <p class="help-copy">推荐使用本页“同步最新数据”。如果需要手动同步，在项目根目录运行：</p>
         <pre><code>node 04-Site/scripts/sync-data.mjs</code></pre>
       </form>
     </dialog>
     <script src="./data/radar-data.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js?v=admin-control-align-20260504"></script>
   </body>
 </html>

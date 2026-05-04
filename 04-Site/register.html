@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>注册｜观澜AI｜WaveSight AI</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v=auth-refine-20260504" />
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
   </head>
   <body data-page="register">
@@ -23,33 +23,42 @@
     <main>
       <section class="page-title">
         <p class="eyebrow">Create Account</p>
-        <h1>注册观澜AI</h1>
-        <p>把 AI 热点压缩成可验证的商业信号、趋势判断和机会卡，帮助你更早看见值得跟踪的变化。</p>
+        <h1>创建账号，开始阅读 AI 商业信号</h1>
+        <p>邀请注册。已有邀请码可直接创建账号；没有邀请码可先提交申请。</p>
       </section>
       <section class="auth-layout">
         <form id="registerForm" class="auth-form">
           <div class="auth-form-head">
             <p class="eyebrow">Register</p>
             <h2>创建账号</h2>
+            <p class="auth-note">常用邮箱 + 有效邀请码。权限跟随账号。</p>
           </div>
-          <label class="field"><span>姓名</span><input name="name" required /></label>
-          <label class="field"><span>邮箱</span><input name="contact" type="email" autocomplete="email" required /></label>
-          <label class="field"><span>设置密码</span><input name="password" type="password" autocomplete="new-password" minlength="6" required /></label>
-          <label class="field"><span>确认密码</span><input name="confirmPassword" type="password" autocomplete="new-password" minlength="6" required /></label>
-          <label class="field"><span>公司/机构</span><input name="company" /></label>
-          <label class="field"><span>身份</span><input name="roleTitle" placeholder="创始人、投资人、业务负责人等" /></label>
-          <button class="primary-btn" type="submit">注册</button>
-          <div id="authStatus" class="sync-status"></div>
+          <div class="auth-field-grid">
+            <label class="field"><span>姓名</span><input name="name" required /></label>
+            <label class="field"><span>邮箱</span><input name="contact" type="email" autocomplete="email" required /></label>
+            <label class="field wide"><span>邀请码（必填）</span><input name="inviteCode" autocomplete="one-time-code" placeholder="输入收到的邀请码" required /></label>
+            <label class="field"><span>设置密码</span><input name="password" type="password" autocomplete="new-password" minlength="6" required /></label>
+            <label class="field"><span>确认密码</span><input name="confirmPassword" type="password" autocomplete="new-password" minlength="6" required /></label>
+          </div>
+          <button class="primary-btn" type="submit">创建账号并开始阅读</button>
+          <p class="auth-secondary">没有邀请码？<a href="./invite-request.html">申请邀请码</a></p>
+          <p class="auth-secondary">已有账号？<a href="./login.html">登录并继续阅读</a></p>
+          <div id="authStatus" class="sync-status" role="status" aria-live="polite"></div>
         </form>
         <aside class="auth-side">
-          <p class="eyebrow">What You Get</p>
-          <h2>每天少读一点噪音，多看一点信号。</h2>
-          <p>注册后可查看 Daily Brief、Signals、Trends 与 Opportunities，把分散热点整理成能开会讨论的判断材料。</p>
-          <a class="ghost-btn as-link" href="./login.html">已有账号，去登录</a>
+          <p class="eyebrow">Readable Layers</p>
+          <h2>从热闹里筛信号。</h2>
+          <p>把融资、客户采用和产品变化整理成商业观察。</p>
+          <ul class="auth-facts">
+            <li><strong>邀请制</strong><span>需要有效邀请码完成注册</span></li>
+            <li><strong>5 个栏目</strong><span>简报、信号、观点、机会、趋势</span></li>
+            <li><strong>持续观察</strong><span>保留来源边界和反证空间</span></li>
+          </ul>
+          <p class="auth-boundary">内容用于观察 AI 商业变化，不构成经营、投资或合作建议。</p>
         </aside>
       </section>
     </main>
     <script src="./data/radar-data.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js?v=auth-refine-20260504"></script>
   </body>
 </html>
