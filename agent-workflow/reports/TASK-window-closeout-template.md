@@ -5,6 +5,34 @@ owner：`<agent-id>`
 状态：review / accepted / blocked  
 编码：UTF-8
 
+## 0. 调度摘要
+
+```yaml
+task_id: <TASK-ID>
+board_id: <BOARD-ID>
+status: review
+recommended_status: accepted / blocked / evidence-required / not-accepted
+dispatch_path: agent-workflow/execution/<TASK-ID>.md
+closeout_path: agent-workflow/reports/<TASK-ID>-closeout.md
+changed_files:
+  - path/to/file
+gates:
+  syntax: pass / fail / not-run
+  browser_desktop: pass / fail / not-run / n/a
+  browser_mobile: pass / fail / not-run / n/a
+  design_director: pass / fail / not-run / n/a
+  pm_gate: pass / fail / not-run / n/a
+automation_impact:
+  ai-the-point: none / changed / risk
+  ai-2: none / changed / risk
+  ai-3: none / changed / risk
+blockers:
+  - none
+next_action: 调度中枢验收并回填 / 退回补证据 / 重新派发
+```
+
+调度摘要必须出现在正文前 40 行内。它只用于快速验收索引，不能替代后文硬闸门证据。
+
 ## 1. 对应派发单
 
 - 派发单：`agent-workflow/execution/<TASK-ID>.md`
@@ -47,6 +75,39 @@ owner：`<agent-id>`
 - 桌面端验收点：
 - 移动端验收点：
 - 禁止项：
+
+### 4A.1A Design Director 证据化风格美观质检表
+
+页面类任务必须填写。页面已实现或已有可访问页面时，必须提供桌面截图、移动端截图、逐项扣分原因、必须重做清单和 Dev 实现偏差清单。
+
+页面类型通过线：
+
+- 首页 / 全站母版 / 核心首屏 / 海报 / 视觉资产：低于 `85` 必须重做。
+- 一级栏目页 / 详情页 / 会员页：低于 `80` 必须重做。
+- Admin 工作台和后台模块：低于 `75` 必须重做。
+- 任一单项低于 `14`、Squint Test 不通过或存在审美阻塞项时，必须重做，状态不得写 accepted。
+
+| 质检项 | 得分 | 说明 |
+|---|---:|---|
+| Style Purity / 风格一致性与纯净度 |  |
+| Proportion & Rhythm / 比例与韵律感 |  |
+| Color Sophistication / 色彩深度与平衡 |  |
+| Craftsmanship / 细节的艺术处理 |  |
+| Emotional Resonance / 情感共鸣 |  |
+| Squint Test / 眯眼测试 | 通过 / 不通过 |
+| 总分 |  |
+| 结论 | 通过 / 重做 |
+| 必须重做的问题 |  |
+| 可延后优化的问题 |  |
+
+证据字段：
+
+- 设计基准引用：
+- 桌面端截图：
+- 移动端截图：
+- 逐项扣分原因：
+- Dev 实现偏差清单：
+- QA 复核建议：
 
 ### 4A.2 Dev 按表实现情况
 
