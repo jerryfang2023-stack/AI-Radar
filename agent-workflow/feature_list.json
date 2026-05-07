@@ -60,7 +60,7 @@
       "priority": "high",
       "automation_level": "agent_can_execute",
       "approval_required": false,
-      "status": "verify",
+      "status": "passed",
       "problem": "云端部署需要稳定字段，否则同步和详情页会出现错位。",
       "solution": "Signals、Priorities、Trends、Opportunities 统一补齐 type、schema_version、id、slug、status、tags 等字段。",
       "acceptance": [
@@ -918,20 +918,22 @@
       "approval_required": true,
       "status": "verify",
       "problem": "V2 开发前需要可信 baseline，但当前工作树混有 accepted、test-only、review / not accepted、abandoned / stopped、生产内容、网站数据、外部本地目录和大量质量报告，不能直接全部提交。",
-      "solution": "V2-5A 完成 Git 状态检查和文件归属分类，未贸然提交、打 tag、建 branch 或建 worktree，转入用户确认提交范围阶段。",
+      "solution": "V2-5A 完成 Git 状态检查和文件归属分类；用户确认后，调度中枢已提交 Batch 1、归档 Batch 3，并创建 V1.0 baseline tag。Batch 2 与默认排除项继续暂缓。",
       "acceptance": [
         "V2-5A closeout 已收到",
         "文件归属分类表已完成",
         "Git 状态、tag、branch、worktree 检查已完成",
         "未创建不可信 baseline commit",
-        "未创建 v1.0-baseline-20260507 tag",
+        "Batch 1 已提交为 e75d90b docs: record accepted v2 planning baseline",
+        "Batch 3 已归档提交为 a46226d chore: archive v2 monitoring test pipeline",
+        "已创建 v1.0-baseline-20260507 tag，指向 e75d90b",
         "未创建 codex/v2-planning branch",
         "未创建 V2 worktree",
         "已提出三段提交策略",
         "已明确 P0-11、P0-2A、P0-2B、P1-4B 和未确认外部目录不得混入 accepted baseline",
-        "当前状态为 review / user-confirmation-required"
+        "Batch 2 生产内容与生成数据仍需 Data / Workflow 另行确认"
       ],
-      "verification": "查看 reports/WSD-20260507-08-v1-accepted-baseline-tag-branch-closeout.md、dispatch-board、progress 和 docs/agent-handoff.md；执行窗口 syntax Quality Gate 报告 quality-gates-syntax-2026-05-07-20260507-091301.md，调度中枢复验报告 quality-gates-syntax-2026-05-07-20260507-091533.md。"
+      "verification": "查看 reports/WSD-20260507-08-v1-accepted-baseline-tag-branch-closeout.md、dispatch-board、progress 和 docs/agent-handoff.md；Batch 1 提交前 syntax Quality Gate 报告 quality-gates-syntax-2026-05-07-20260507-102625.md，Batch 3 归档前 syntax Quality Gate 报告 quality-gates-syntax-2026-05-07-20260507-102813.md。"
     },
     {
       "id": "GL-M4-009",

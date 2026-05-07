@@ -1,5 +1,29 @@
 # 观澜AI 工作进度账本
 
+## 2026-05-07 V2-5A baseline Batch 1 / Batch 3 提交完成
+
+用户确认执行：排除默认项，提交 Batch 1，归档 Batch 3。
+
+完成结果：
+- Batch 1 已提交：`e75d90b docs: record accepted v2 planning baseline`
+- Batch 3 已归档提交：`a46226d chore: archive v2 monitoring test pipeline`
+- 已创建 tag：`v1.0-baseline-20260507`，指向 `e75d90b`
+
+范围说明：
+- Batch 1 纳入 accepted V2 planning、governance、V2 isolation skeleton、V2 closeout / stage summary 与 2026-05-07 syntax gate 报告。
+- Batch 3 纳入 P0-12 / daily monitoring v2 test-only pipeline 历史归档。
+- 默认排除项仍未提交：`09-ai-news-radar/`、P0-11、P0-2A、P0-2B、P1-4B、未确认临时审计目录、未验收页面实现。
+- Batch 2 未提交：2026-05-05 / 2026-05-06 生产内容、生成网站数据与同步报告仍需 Data / Workflow 另行确认。
+
+未执行：
+- 未创建 `codex/v2-planning` branch。
+- 未创建外部 V2 worktree。
+- 未执行生产自动化切换、V2 网站同步、Netlify 发布或生产路径迁移。
+
+Quality Gates：
+- Batch 1 提交前 syntax 通过，报告 `agent-workflow/reports/quality-gates-syntax-2026-05-07-20260507-102625.md`。
+- Batch 3 归档前 syntax 通过，报告 `agent-workflow/reports/quality-gates-syntax-2026-05-07-20260507-102813.md`。
+
 ## 2026-05-07 V2-PREFLIGHT 预备治理验收
 
 调度中枢收到并验收 `V2-PREFLIGHT / WSD-20260507-11-v2-preflight-governance-autopilot`，状态更新为 `accepted / preflight-complete`。

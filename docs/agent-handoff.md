@@ -9,6 +9,30 @@ tagline: 观AI之澜，识商业之势
 
 # 观澜AI Agent Handoff
 
+## 0AD. 2026-05-07 V2-5A baseline Batch 1 / Batch 3 已处理
+
+用户确认口径：排除默认项，提交 Batch 1，归档 Batch 3，直接处理。
+
+调度中枢已完成：
+- Batch 1 已提交：`e75d90b docs: record accepted v2 planning baseline`
+- Batch 3 已归档提交：`a46226d chore: archive v2 monitoring test pipeline`
+- V1.0 baseline tag 已创建：`v1.0-baseline-20260507`，指向 Batch 1 commit `e75d90b`
+
+提交边界：
+- Batch 1 只纳入 accepted V2 planning、governance、V2 isolation skeleton、V2 closeout / stage summary 与 2026-05-07 syntax gate 报告。
+- Batch 3 只纳入 P0-12 / daily monitoring v2 test-only pipeline 的历史归档文件。
+- 默认排除项未提交：`09-ai-news-radar/`、P0-11、P0-2A、P0-2B、P1-4B、未确认临时审计目录、未验收页面实现。
+- Batch 2 未提交：2026-05-05 / 2026-05-06 生产内容、生成网站数据与相关同步报告仍需 Data / Workflow 另行确认。
+
+当前限制：
+- 未创建 `codex/v2-planning` branch。
+- 未创建外部 V2 worktree。
+- 未执行生产自动化切换、V2 网站同步、Netlify 发布或生产 `content-paths.json` 迁移。
+
+Quality Gate：
+- Batch 1 提交前 syntax 通过，报告 `agent-workflow/reports/quality-gates-syntax-2026-05-07-20260507-102625.md`。
+- Batch 3 归档前 syntax 通过，报告 `agent-workflow/reports/quality-gates-syntax-2026-05-07-20260507-102813.md`。
+
 ## 0AC. 2026-05-07 V2-PREFLIGHT 已验收
 
 最新状态：`V2-PREFLIGHT / WSD-20260507-11-v2-preflight-governance-autopilot` 已由调度中枢验收为 `accepted / preflight-complete`。
