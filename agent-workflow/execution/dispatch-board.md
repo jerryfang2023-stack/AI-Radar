@@ -112,6 +112,7 @@ owner：`pm` / `workflow`
 | V2-COPY-STYLE-SYSTEM | WSD-20260511-01-wavesight-copy-style-system | accepted / user-retained-scope-overrun | copy / pm / ui-ue / data / qa / workflow | 观澜AI V2 文案风格规范：新版 `COPY.md`、项目内 writing style skill 与相关站点文案改动已由用户确认接受并保留 | `agent-workflow/execution/WSD-20260511-01-wavesight-copy-style-system.md` | `agent-workflow/reports/WSD-20260511-01-wavesight-copy-style-system-closeout.md`；`agent-workflow/reports/WSD-20260511-01-wavesight-copy-style-system-dispatch-review.md` | 调度曾识别两阶段确认与写入范围越界；2026-05-11 用户明确“接受，改动保留”，因此 accepted。后续页面质量仍需走独立质检，不得自验自收 |
 | V2-MEMBER-AUTH-PAGES | WSD-20260511-02-v2-member-auth-pages-redesign | ready / desktop-first | ui-ue / dev / pm / copy / qa / workflow | 将 V1 会员注册、登录、申请访问、账户、价格和确认流程按当前 V2 UI / VI 重新设计，并接入 `01-SiteV2/site/` | `agent-workflow/execution/WSD-20260511-02-v2-member-auth-pages-redesign.md` | `agent-workflow/reports/WSD-20260511-02-v2-member-auth-pages-redesign-closeout.md` | 等待派发到独立窗口；V1 仅作流程参考，不继承旧 UI；桌面端设计 / 实现 / 截图 QA 为硬闸门，移动端专项暂缓；不接入真实支付或后端认证 |
 | V2-PAGE-COPY-QUALITY-SKILL | WSD-20260511-03-v2-page-copy-quality-review-skill | accepted / independent-quality-gate-ready | qa / ui-ue / copy / pm / workflow | 创建观澜AI页面与文案独立质检 Skill：按定位、信息架构、商业判断、文案自然度、视觉体验、页面节奏、可信度打分，防止开发窗口自验自收 | `agent-workflow/execution/WSD-20260511-03-v2-page-copy-quality-review-skill.md` | `agent-workflow/reports/WSD-20260511-03-v2-page-copy-quality-review-skill-closeout.md` | 已验收；后续页面 / 文案开发必须另派独立质检窗口，accepted 门槛为总分不少于 58/70 且定位、商业判断、文案自然度、可信度均不低于 8；开发窗口自验结论无效 |
+| V2-ADMIN-PAGES | WSD-20260511-04-v2-admin-pages-redesign | ready / desktop-first / independent-review-required | ui-ue / dev / pm / copy / qa / workflow | 将 V1 Admin 页面能力按当前 V2 UI / VI / 文案规范重新设计为内部管理台，并接入 `01-SiteV2/site/` | `agent-workflow/execution/WSD-20260511-04-v2-admin-pages-redesign.md` | `agent-workflow/reports/WSD-20260511-04-v2-admin-pages-redesign-closeout.md` | 等待派发到独立窗口；V1 Admin 只作功能参考，不继承旧 UI；默认实现 `admin.html` 且不加入公开前台导航；完成后必须另派独立页面与文案质检 |
 
 ## 使用建议
 
@@ -133,6 +134,7 @@ owner：`pm` / `workflow`
 14. 当前 V2 网站开发采用桌面端优先：页面任务默认只把桌面设计、桌面实现和桌面截图 QA 作为硬闸门；移动端专项设计 / 开发 / 截图暂缓，除非派发单明确要求。
 15. `V2-MEMBER-AUTH-PAGES` 已 ready，可派发；该任务把 V1 会员入口流程重新设计并接入 V2 新站，但不做真实支付、真实后端认证或移动端专项。
 16. `V2-PAGE-COPY-QUALITY-SKILL` 已 accepted；后续页面 / 文案开发不能自验自收，必须另派独立质检窗口按观澜AI定位、商业判断、真人文案感和可信度单独评分，独立质检未 accepted 前调度窗口不得验收页面 / 文案任务。
+17. `V2-ADMIN-PAGES` 已 ready，可派发；该任务把 V1 Admin 能力按 V2 内部管理台重新设计并接入新站，不加入公开导航，不做真实后端认证、部署、自动化或 schema 改造。
 
 如果需要新增任务，用：
 
