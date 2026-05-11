@@ -5155,13 +5155,13 @@ Agent 安排：
 
 # 2026-05-11 V2 会员入口页面开发收口转独立质检
 
-- 状态：review / needs-independent-quality-review / scope-overrun-note。
+- 状态：accepted / user-manual-confirmed / qa-waived。
 - 原开发任务：`V2-MEMBER-AUTH-PAGES / WSD-20260511-02-v2-member-auth-pages-redesign`。
 - 收口文件：`agent-workflow/reports/WSD-20260511-02-v2-member-auth-pages-redesign-closeout.md`。
 - 开发窗口交付：`login.html`、`register.html`、`invite-request.html`、`account.html`、`pricing.html`、`checkout.html`、`assets/styles.css`、`assets/app.js`，并补充桌面截图。
 - 调度复验：`node --check 01-SiteV2/site/assets/app.js` 通过；`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过；截图目录存在；公开 HTML 扫描未发现 Admin / JSON / 同步 / 恢复 / 编辑 / 后台等后台痕迹。
-- 验收判断：暂不 accepted。根据 2026-05-11 新硬闸门，页面 / 文案开发窗口不得自验自收；开发 closeout 中自称 `accepted` 不作为最终结论。
-- 范围问题：`invite-request.html` 不在原派发单允许写入列表中，需由独立质检判断是否有产品必要、是否与注册页重复、是否保留或合并。
-- 已新增独立质检任务：`V2-MEMBER-AUTH-QA / WSD-20260511-05-v2-member-auth-pages-quality-review`。
-- 下一步：派发 `V2-MEMBER-AUTH-QA` 到独立 QA 窗口；七维评分通过后，调度窗口才可将会员入口页面任务最终 accepted。
+- 验收判断：用户于 2026-05-11 明确说明“这个任务我手工确认过，不用再质检”，调度窗口按用户手工确认覆盖独立质检流程，接受本任务改动。
+- 范围问题：`invite-request.html` 不在原派发单允许写入列表中，但作为用户手工确认范围保留。
+- 独立质检任务处理：`V2-MEMBER-AUTH-QA / WSD-20260511-05-v2-member-auth-pages-quality-review` 标记为 `void / user-waived`，不再派发。
+- 后续约束：本次为单任务用户手工确认例外，不取消后续页面 / 文案任务的独立质检默认规则。
 
