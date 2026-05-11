@@ -4123,3 +4123,39 @@ Agent 安排：
 - 后续会员入口页、机会解码页、商业内参页、小程序诊断页等页面任务，开发完成后必须另派独立质检任务。
 - 独立质检任务使用 `agent-workflow/execution/TASK-page-copy-quality-review-template.md`。
 
+## 2026-05-11 V2 会员入口页面开发收口待独立质检
+
+最新状态：`V2-MEMBER-AUTH-PAGES / WSD-20260511-02-v2-member-auth-pages-redesign` 已收到开发 closeout，但不得直接 accepted。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260511-02-v2-member-auth-pages-redesign-closeout.md`
+
+开发交付：
+- `01-SiteV2/site/login.html`
+- `01-SiteV2/site/register.html`
+- `01-SiteV2/site/invite-request.html`
+- `01-SiteV2/site/account.html`
+- `01-SiteV2/site/pricing.html`
+- `01-SiteV2/site/checkout.html`
+- `01-SiteV2/site/assets/styles.css`
+- `01-SiteV2/site/assets/app.js`
+
+调度复验：
+- `node --check 01-SiteV2/site/assets/app.js` 通过。
+- `node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+- 桌面截图目录存在：`agent-workflow/reports/screenshots/WSD-20260511-02-v2-member-auth-pages-redesign/`。
+- 公开 HTML 扫描未发现 Admin / JSON / 同步 / 恢复 / 编辑 / 后台等后台痕迹。
+
+不能直接 accepted 的原因：
+- 2026-05-11 后页面 / 文案开发窗口不得自验自收，开发 closeout 中的 `accepted` 不作为最终结论。
+- 开发新增 `invite-request.html`，该文件不在原派发单允许写入列表，需要独立质检判断是否必要、是否重复、是否应保留或合并。
+
+已新增独立质检任务：
+- `V2-MEMBER-AUTH-QA / WSD-20260511-05-v2-member-auth-pages-quality-review`
+- 派发单：`agent-workflow/execution/WSD-20260511-05-v2-member-auth-pages-quality-review.md`
+
+接手注意：
+- 下一步优先派发 `V2-MEMBER-AUTH-QA`。
+- 独立质检未 accepted 前，不要把 `V2-MEMBER-AUTH-PAGES` 标记为 accepted。
+- 不要回滚会员页开发改动，除非独立质检或用户明确要求。
+
