@@ -5141,3 +5141,15 @@ Agent 安排：
 - 当前处理：新版 `COPY.md`、`skills/guanlan-writing-style/` 和相关站点文案改动保留；看板更新为 `accepted / user-retained-scope-overrun`。
 - 后续约束：本次接受不替代后续页面质量验收；页面 / 文案仍需按独立质检 Skill 审查，不得自验自收。
 
+# 2026-05-11 页面与文案独立质检 Skill 验收
+
+- 状态：accepted / independent-quality-gate-ready。
+- 任务：`V2-PAGE-COPY-QUALITY-SKILL / WSD-20260511-03-v2-page-copy-quality-review-skill`。
+- 收口文件：`agent-workflow/reports/WSD-20260511-03-v2-page-copy-quality-review-skill-closeout.md`。
+- 已完成：新增 `agent-workflow/governance/page-copy-quality-review-skill.md`，建立观澜AI页面与文案七维独立质检标准。
+- 已完成：新增 `agent-workflow/execution/TASK-page-copy-quality-review-template.md`，后续可直接派发独立质检窗口。
+- 已更新：`AGENTS.md`、`agent-workflow/governance/current-context.md`、`agent-workflow/agents/qa-agent.md`、`agent-workflow/execution/dispatch-board.md`。
+- 硬闸门：页面 / 文案 accepted 需总分不少于 58 / 70，且定位一致性、商业判断、文案自然度、可信度均不低于 8；开发窗口自验自收无效。
+- 质量检查：`feature_list.json` JSON 解析通过，`closeout-queue.jsonl` 解析通过，收口箱已登记。
+- 后续约束：页面 / 文案开发 closeout 后必须另派独立质检任务；独立质检未 accepted 前，调度窗口不得将页面 / 文案任务 accepted。
+

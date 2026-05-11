@@ -4095,3 +4095,31 @@ Agent 安排：
 - 本次接受不代表后续页面质量自动通过；页面 / 文案质量仍需按独立质检 Skill 审查。
 - 后续页面任务不得因本次用户接受而恢复自验自收。
 
+## 2026-05-11 页面与文案独立质检 Skill 验收
+
+最新状态：`V2-PAGE-COPY-QUALITY-SKILL / WSD-20260511-03-v2-page-copy-quality-review-skill` 已由调度中枢验收为 `accepted / independent-quality-gate-ready`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260511-03-v2-page-copy-quality-review-skill-closeout.md`
+
+核心产物：
+- `agent-workflow/governance/page-copy-quality-review-skill.md`
+- `agent-workflow/execution/TASK-page-copy-quality-review-template.md`
+
+已更新：
+- `AGENTS.md`
+- `agent-workflow/governance/current-context.md`
+- `agent-workflow/agents/qa-agent.md`
+- `agent-workflow/execution/dispatch-board.md`
+
+新硬闸门：
+- 页面 / 文案开发窗口不得自验自收。
+- 开发 closeout 后，调度窗口必须另派独立 QA / Acceptance 窗口按 `page-copy-quality-review-skill.md` 质检。
+- 七维评分：定位一致性、信息架构、商业判断、文案自然度、视觉体验、页面节奏、可信度，总分 70。
+- `accepted` 门槛：总分不少于 58 / 70，且定位一致性、商业判断、文案自然度、可信度均不低于 8，其他维度不低于 7。
+- 页面不像观澜AI、文案明显像 AI 模板、公开前台出现后台痕迹、把趋势/融资/单一新闻写成确定机会时，即使语法和截图通过，也不得 accepted。
+
+接手注意：
+- 后续会员入口页、机会解码页、商业内参页、小程序诊断页等页面任务，开发完成后必须另派独立质检任务。
+- 独立质检任务使用 `agent-workflow/execution/TASK-page-copy-quality-review-template.md`。
+

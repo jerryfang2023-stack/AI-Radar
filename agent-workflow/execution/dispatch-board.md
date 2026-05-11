@@ -111,7 +111,7 @@ owner：`pm` / `workflow`
 | V2-OPPORTUNITY-BRIEF-IMPLEMENT | WSD-20260510-12-v2-opportunity-brief-implementation | ready | dev / ui-ue / copy / data / qa | 机会中心/机会解码与商业内参设计开发：按两个已验收设计规范实现机会解码列表/详情、商业内参入口/热力图/会员态，并完成桌面与移动截图 QA | `agent-workflow/execution/WSD-20260510-12-v2-opportunity-brief-implementation.md` | `agent-workflow/reports/WSD-20260510-12-v2-opportunity-brief-implementation-closeout.md` | 等待派发到独立窗口；autopilot_chain 分 Stage A 机会解码、Stage B 商业内参、Stage C QA；不得改 schema、自动化、会员定价、支付、VI 资产或部署 |
 | V2-COPY-STYLE-SYSTEM | WSD-20260511-01-wavesight-copy-style-system | accepted / user-retained-scope-overrun | copy / pm / ui-ue / data / qa / workflow | 观澜AI V2 文案风格规范：新版 `COPY.md`、项目内 writing style skill 与相关站点文案改动已由用户确认接受并保留 | `agent-workflow/execution/WSD-20260511-01-wavesight-copy-style-system.md` | `agent-workflow/reports/WSD-20260511-01-wavesight-copy-style-system-closeout.md`；`agent-workflow/reports/WSD-20260511-01-wavesight-copy-style-system-dispatch-review.md` | 调度曾识别两阶段确认与写入范围越界；2026-05-11 用户明确“接受，改动保留”，因此 accepted。后续页面质量仍需走独立质检，不得自验自收 |
 | V2-MEMBER-AUTH-PAGES | WSD-20260511-02-v2-member-auth-pages-redesign | ready / desktop-first | ui-ue / dev / pm / copy / qa / workflow | 将 V1 会员注册、登录、申请访问、账户、价格和确认流程按当前 V2 UI / VI 重新设计，并接入 `01-SiteV2/site/` | `agent-workflow/execution/WSD-20260511-02-v2-member-auth-pages-redesign.md` | `agent-workflow/reports/WSD-20260511-02-v2-member-auth-pages-redesign-closeout.md` | 等待派发到独立窗口；V1 仅作流程参考，不继承旧 UI；桌面端设计 / 实现 / 截图 QA 为硬闸门，移动端专项暂缓；不接入真实支付或后端认证 |
-| V2-PAGE-COPY-QUALITY-SKILL | WSD-20260511-03-v2-page-copy-quality-review-skill | review / closeout-ready | qa / ui-ue / copy / pm / workflow | 创建观澜AI页面与文案独立质检 Skill：按定位、信息架构、商业判断、文案自然度、视觉体验、页面节奏、可信度打分，防止开发窗口自验自收 | `agent-workflow/execution/WSD-20260511-03-v2-page-copy-quality-review-skill.md` | `agent-workflow/reports/WSD-20260511-03-v2-page-copy-quality-review-skill-closeout.md` | 已创建质检 Skill、独立质检任务模板并更新 QA / AGENTS / current-context；等待调度窗口验收 |
+| V2-PAGE-COPY-QUALITY-SKILL | WSD-20260511-03-v2-page-copy-quality-review-skill | accepted / independent-quality-gate-ready | qa / ui-ue / copy / pm / workflow | 创建观澜AI页面与文案独立质检 Skill：按定位、信息架构、商业判断、文案自然度、视觉体验、页面节奏、可信度打分，防止开发窗口自验自收 | `agent-workflow/execution/WSD-20260511-03-v2-page-copy-quality-review-skill.md` | `agent-workflow/reports/WSD-20260511-03-v2-page-copy-quality-review-skill-closeout.md` | 已验收；后续页面 / 文案开发必须另派独立质检窗口，accepted 门槛为总分不少于 58/70 且定位、商业判断、文案自然度、可信度均不低于 8；开发窗口自验结论无效 |
 
 ## 使用建议
 
@@ -132,7 +132,7 @@ owner：`pm` / `workflow`
 13. `V2-COPY-STYLE-SYSTEM` 已由用户确认接受并保留改动，状态为 `accepted / user-retained-scope-overrun`；新版 `COPY.md` 与项目内 writing style skill 可作为后续文案任务依据，但页面质量仍需独立质检。
 14. 当前 V2 网站开发采用桌面端优先：页面任务默认只把桌面设计、桌面实现和桌面截图 QA 作为硬闸门；移动端专项设计 / 开发 / 截图暂缓，除非派发单明确要求。
 15. `V2-MEMBER-AUTH-PAGES` 已 ready，可派发；该任务把 V1 会员入口流程重新设计并接入 V2 新站，但不做真实支付、真实后端认证或移动端专项。
-16. `V2-PAGE-COPY-QUALITY-SKILL` 已进入 review / closeout-ready；等待调度窗口按 closeout 验收，后续页面 / 文案开发不能自验自收，必须按观澜AI定位、商业判断、真人文案感和可信度单独评分。
+16. `V2-PAGE-COPY-QUALITY-SKILL` 已 accepted；后续页面 / 文案开发不能自验自收，必须另派独立质检窗口按观澜AI定位、商业判断、真人文案感和可信度单独评分，独立质检未 accepted 前调度窗口不得验收页面 / 文案任务。
 
 如果需要新增任务，用：
 
