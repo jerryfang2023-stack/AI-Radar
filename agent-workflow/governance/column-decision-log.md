@@ -35,24 +35,44 @@
 
 ## 2026-05-02：Priority Engine 合并进入 Opportunities
 
-决策：
+状态：已被 2026-05-10 V2 栏目治理细化。
+
+当时决策（历史口径，不作为 2026-05-10 之后的当前执行标准）：
 
 - 前台不再保留独立 `Scoring` 或 `Priorities` 一级栏目。
 - `02-Scoring/` 保留为后台数据源。
 - `Priority Engine` 作为后台评分和优先级判断能力。
-- `Opportunities` 承接评分、优先级、证据等级、趋势状态和下一步验证动作。
+- `Opportunities` 当时承接评分、优先级、证据等级、趋势状态和验证动作。
 
 原因：
 
 - 用户关心最终可验证的机会，而不是单独阅读评分榜。
 - 没有评分、证据等级或验证动作的内容，不应作为正式机会展示。
-- 前台栏目越少，越能突出 Daily Brief、Signals、Opportunities、Trends 的决策闭环。
+- 前台栏目越少，越能突出当时 Daily Brief、Signals、Opportunities、Trends 的决策闭环。
 
 后续任务：
 
 - 旧 `scoring.html` 需要迁移、隐藏或降级为后台/兼容入口。
-- Opportunity Card 字段需要补齐评分、证据等级、趋势状态和验证动作。
+- Opportunity Card 字段当时需要补齐评分、证据等级、趋势状态和验证动作；当前改为机会解码报告的证据、风险、观察边界和后续观察问题。
 - 文档中残留的前台 `Priorities` 表达需要统一清理。
+
+## 2026-05-10：V2 前台栏目与降级模块确认
+
+决策：
+
+- V2 当前前台主结构为：今日要点 / 关键信号 / 机会解码 / 商业内参。
+- The Point 不作为一级栏目，进入 `关键信号 > Builders 观点` 和各栏目观点校准模块。
+- Trends 不作为一级栏目，作为趋势背景、热力输入和商业内参材料。
+- Priority Engine 后台化，不作为普通前台栏目。
+- Tags 不作为一线栏目，作为搜索、筛选和关系网络能力。
+- 机会解码不是机会卡列表，而是商业机会深度分析报告。
+- 商业内参不是单个 Deep Dive，而是跨周期组合判断报告。
+
+执行依据：
+
+- `agent-workflow/governance/v2-current-rule-overrides.md`
+- `agent-workflow/product/column-architecture.md`
+- `agent-workflow/reports/WSD-20260510-08-v2-daily-pipeline-column-knowledge-governance-stage-C.md`
 
 ## 2026-05-02：Method 暂不作为前台栏目
 

@@ -1,6 +1,6 @@
 # Quality Gates
 
-更新时间：2026-05-03  
+更新时间：2026-05-10
 owner：`qa` / `workflow`  
 状态：长期生效
 
@@ -20,21 +20,40 @@ owner：`qa` / `workflow`
 - 是否需要更新 `progress.md`、`docs/agent-handoff.md` 或 `reports/`。
 - 是否有未说明的人工确认项。
 
-## 3. 内容更新闸门
+### 2.1 V2-only 路径口径
 
-适用于 Signals、Scoring、Trends、The Point、Opportunities 的内容新增或修改。
+当前项目默认处于 V2-only 生产开发：
 
-必须执行：
+- V2 网站工程：`01-SiteV2/site/`。
+- V2 内容生产线：`01-SiteV2/content/`。
+- V1 旧站 `04-Site/` 已归档到 `10-Archive/v1.0/site/04-Site/`，只作历史参考。
+- 本文件中旧 `04-Site` 检查命令只适用于追溯 V1 归档或兼容历史报告；V2 当前任务不得把旧命令当作完成条件。
+
+V2 当前常用入口：
 
 ```powershell
-node 04-Site/scripts/sync-data.mjs
-node 04-Site/scripts/check-relations.mjs
+node agent-workflow/tools/run-quality-gates.mjs syntax
+node agent-workflow/tools/run-quality-gates.mjs v2content --date=YYYY-MM-DD
+node agent-workflow/tools/v2-source-quality-gate.mjs --date=YYYY-MM-DD
+node --check 01-SiteV2/site/assets/app.js
+node --check 01-SiteV2/site/dev-server.mjs
 ```
 
-如涉及 The Point，必须执行：
+## 3. 内容更新闸门
+
+适用于 V2 Signals、Trend Context、Point Calibration、Opportunity、Commercial Brief 等内容新增或修改。
+
+V2 内容任务必须优先执行：
 
 ```powershell
-node 04-Site/scripts/check-point-quality.mjs
+node agent-workflow/tools/run-quality-gates.mjs v2content --date=YYYY-MM-DD
+node agent-workflow/tools/run-quality-gates.mjs syntax
+```
+
+如涉及来源或接口升级，必须执行：
+
+```powershell
+node agent-workflow/tools/v2-source-quality-gate.mjs --date=YYYY-MM-DD
 ```
 
 必须人工或脚本检查：
@@ -90,6 +109,34 @@ agent-workflow/reports/<page-or-module>-browser-qa-YYYY-MM-DD.md
 - 有输入、输出、失败原因和下一步。
 - 不产生前台污染。
 
+### 5.1 V2 Source Registry 闸门
+
+适用于 V2 每日内容抓取来源、接口、source registry、source probe 和来源降级策略。
+
+必须执行：
+
+```powershell
+node --check agent-workflow/tools/v2-source-probe.mjs
+node --check agent-workflow/tools/v2-source-quality-gate.mjs
+node agent-workflow/tools/v2-source-quality-gate.mjs --date=YYYY-MM-DD
+```
+
+建议执行：
+
+```powershell
+node agent-workflow/tools/v2-source-probe.mjs --date=YYYY-MM-DD
+```
+
+通过标准：
+
+- `source-registry-v2.json` 可解析。
+- 默认启用来源字段完整，且至少覆盖 4 类来源。
+- S / A / B 来源均存在。
+- `requires-key` / `requires-consent` 来源默认不启用。
+- C 级来源不能标记为事实主证据。
+- probe 结果只用于诊断，不进入公开前台。
+- 公开接口失败时必须写清失败来源、错误、降级路径和后续处理。
+
 ## 6. 数据模型闸门
 
 适用于字段、schema、标签、关系网络、检查脚本调整。
@@ -104,9 +151,10 @@ agent-workflow/reports/<page-or-module>-browser-qa-YYYY-MM-DD.md
 
 通过标准：
 
-- `sync-data.mjs` 可运行。
-- `check-relations.mjs` 可运行。
+- V2 schema、内容目录和生成器能被对应 quality gate 读取。
+- `v2content` 闸门通过，或写清未运行原因和风险。
 - 新字段在产品模型或 PRD 中有定义。
+- 如果改动仍涉及 V1 归档脚本，需说明它是历史兼容工作，不得影响 V2 当前入口。
 
 ## 7. 开发闸门
 
@@ -115,11 +163,9 @@ agent-workflow/reports/<page-or-module>-browser-qa-YYYY-MM-DD.md
 常用检查：
 
 ```powershell
-node --check 04-Site/scripts/sync-data.mjs
-node --check 04-Site/scripts/check-relations.mjs
-node --check 04-Site/js/app.js
-node 04-Site/scripts/sync-data.mjs
-node 04-Site/scripts/check-relations.mjs
+node agent-workflow/tools/run-quality-gates.mjs syntax
+node --check 01-SiteV2/site/assets/app.js
+node --check 01-SiteV2/site/dev-server.mjs
 ```
 
 如修改特定脚本，必须对该脚本运行 `node --check`。
@@ -127,8 +173,7 @@ node 04-Site/scripts/check-relations.mjs
 通过标准：
 
 - 语法检查通过。
-- 同步通过。
-- 关系检查硬错误为 0。
+- 涉及内容或数据生成时，V2 内容闸门通过。
 - 改动范围与任务目标一致。
 
 ## 8. 发布前闸门

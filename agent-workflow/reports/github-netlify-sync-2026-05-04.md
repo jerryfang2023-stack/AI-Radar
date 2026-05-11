@@ -2,7 +2,7 @@
 title: GitHub Netlify Sync
 date: 2026-05-04
 type: deployment-sync-report
-status: synced
+status: accepted
 task_id: WSD-20260504-28-github-netlify-sync
 owner: dev / workflow
 encoding: UTF-8
@@ -15,7 +15,7 @@ project: 观澜AI｜WaveSight AI
 
 本轮已完成本地 Git 审计、质量检查、本地提交、GitHub `main` 推送和 Netlify 自动部署复核。
 
-结论：`synced / recommend accepted`。
+结论：`accepted`。
 
 - GitHub：已推送到 `jerryfang2023-stack/AI-Radar` 的 `main` 分支。
 - Netlify：GitHub 自动部署已完成，默认链接与不可变部署链接均可访问，并确认远端数据包含本地最新 `judgmentNodes` 与 `priorityEngine`。
@@ -237,3 +237,36 @@ priorityEngine.judgmentNodeCount = 22
 原因：本任务没有修改 Markdown 命名、字段规则、同步脚本口径或自动化提示词。已运行同步与关系检查只是为了验证当前待发布数据自洽。
 
 本轮影响的是版本管理与 Netlify 预览站点更新路径；不等于正式 production launch。
+
+## 10. 调度中枢复核补充
+
+收口验收时，调度中枢复核到 `origin/main` 已前进到：
+
+```text
+925f2e9 chore: record final sync quality gate
+```
+
+本地 `HEAD` 与远端 `origin/main` 一致：
+
+```text
+925f2e9ccbd6cb2a63b5790d594f89e4efb01d9c
+```
+
+Netlify 默认站点复核通过：
+
+```text
+https://wavesight-ai-preview.netlify.app/
+```
+
+首页、Daily、Signals、The Point、Opportunities、Trends、CSS、JS、`data/radar-data.js` 均返回 200。
+
+远端数据复核：
+
+```text
+generatedAt=2026-05-04T15:21:59.991Z
+judgmentNodes=true
+priorityEngine=true
+judgmentNodeCount=22
+```
+
+当前工作树仍有 P0-10 相关未提交文件和新的 syntax 报告，不属于本次已部署的远端版本。

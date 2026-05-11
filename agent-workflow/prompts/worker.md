@@ -14,7 +14,7 @@
 - 一次只选择一个明确任务推进。
 - 不要改动与任务无关的页面、数据和视觉风格。
 - 普通页面与管理员页面权限必须分离。
-- 如果涉及前端风格、排版、文案，必须使用 frontend-design skill。
+- 如果涉及前端风格、排版、文案，必须读取项目 VI、`DESIGN.md` 和 Copy 规范；页面审美参考 `design-taste-frontend` / `gpt-taste` / `redesign-existing-projects` / `high-end-visual-design` / `awesome-design-md`，不得使用 `frontend-design`。
 - 如果发现重复数据、空字段、命名不规范，不要静默忽略，要写入进度账本。
 - 只有经过验证的事项，才能标记为 passed。
 
@@ -30,4 +30,3 @@
 - 修改了哪些文件。
 - 用什么方式验证。
 - 剩余风险是什么。
-

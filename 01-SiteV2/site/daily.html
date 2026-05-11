@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今日要点｜观澜AI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header></header>
+  <main class="daily-newsletter" data-daily-brief>
+    <section class="daily-newsletter-issue" id="issue">
+      <div class="daily-newsletter-issue-main">
+        <span class="daily-newsletter-memo">DAILY BRIEF</span>
+        <h1><span data-daily-date>2026.05.10</span></h1>
+        <p>给企业经营者看的每日商业提醒</p>
+      </div>
+      <nav class="daily-newsletter-date-nav" aria-label="日期切换">
+        <a href="#previous">上一日</a>
+        <a href="#week">周视图</a>
+        <a href="#month">月视图</a>
+        <a href="#next">下一日</a>
+      </nav>
+      <div class="daily-newsletter-issue-side" data-daily-issue-status></div>
+    </section>
+
+    <div class="daily-newsletter-layout">
+      <aside class="daily-newsletter-side" aria-label="页面辅助导航">
+        <nav class="daily-newsletter-anchor" aria-label="页面目录">
+          <a href="#issue">日期</a>
+          <a href="#judgment">今日判断</a>
+          <a href="#signal-brief">今日信号简报</a>
+          <a href="#trend-risk">趋势与风险</a>
+          <a href="#opportunity-watch">机会观察</a>
+          <a href="#index">索引</a>
+        </nav>
+        <section class="daily-newsletter-side-tags" aria-label="关键词小标签栏">
+          <span class="daily-newsletter-memo">KEYWORDS</span>
+          <div class="daily-newsletter-filter-row" data-daily-keyword-filters></div>
+          <div class="daily-newsletter-keyword-grid" data-daily-keywords></div>
+        </section>
+      </aside>
+
+      <div class="daily-newsletter-main">
+        <section class="daily-newsletter-judgment" id="judgment">
+          <article class="daily-newsletter-judgment-copy">
+            <span class="daily-newsletter-memo">TODAY JUDGMENT</span>
+            <div class="daily-newsletter-rule"></div>
+            <h2 data-daily-title>企业会先为可控的 Agent 付费</h2>
+            <div class="daily-newsletter-copy" data-daily-judgment></div>
+          </article>
+          <aside class="daily-newsletter-summary">
+            <div data-daily-summary></div>
+            <div class="daily-newsletter-spark" data-daily-mini-chart aria-hidden="true"></div>
+            <div class="daily-newsletter-calibration" data-daily-calibration></div>
+          </aside>
+        </section>
+
+        <section class="daily-newsletter-section daily-newsletter-signals" id="signal-brief">
+          <div class="daily-newsletter-section-head">
+            <div>
+              <span class="daily-newsletter-memo">SIGNAL BRIEF</span>
+              <h2>今日商业信号</h2>
+            </div>
+            <p>只保留对判断有增量的信息。</p>
+          </div>
+          <div class="daily-newsletter-signal-grid" data-daily-primary-signals></div>
+          <div class="daily-newsletter-fact-strip" data-daily-compressed-facts></div>
+        </section>
+
+        <section class="daily-newsletter-section daily-newsletter-trend-risk" id="trend-risk">
+          <div class="daily-newsletter-section-head compact">
+            <div>
+              <span class="daily-newsletter-memo">TREND & RISK</span>
+              <h2>趋势温度与风险边界</h2>
+            </div>
+            <p>热度只作提醒，判断仍要回到证据和风险。</p>
+          </div>
+          <div class="daily-newsletter-trend-risk-grid">
+            <div class="daily-newsletter-trend-panel" data-daily-trend-panel></div>
+            <div class="daily-newsletter-risk-panel" data-daily-risk-panel></div>
+          </div>
+        </section>
+
+        <section class="daily-newsletter-section daily-newsletter-opportunity-watch" id="opportunity-watch">
+          <div class="daily-newsletter-section-head compact">
+            <div>
+              <span class="daily-newsletter-memo">OPPORTUNITY & WATCH</span>
+              <h2>机会观察</h2>
+            </div>
+            <p>能不能做，先看适合谁、缺什么、从哪里试。</p>
+          </div>
+          <div class="daily-newsletter-opportunity-list" data-daily-opportunities></div>
+          <div class="daily-newsletter-watchline" data-daily-watch></div>
+        </section>
+
+        <section class="daily-newsletter-section daily-newsletter-index" id="index">
+          <div class="daily-newsletter-section-head compact">
+            <div>
+              <span class="daily-newsletter-memo">INDEX</span>
+              <h2>索引与延伸阅读</h2>
+            </div>
+            <p>把相关信号、趋势背景和观点校准放在一起，方便回看。</p>
+          </div>
+          <div class="daily-newsletter-related-list" data-daily-related></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer data-footer></footer>
+  <script src="data/site-content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

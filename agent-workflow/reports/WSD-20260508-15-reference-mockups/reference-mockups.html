@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WaveSight AI Reference Mockups</title>
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --paper: #fffefa;
+      --ink: #071827;
+      --muted: #697888;
+      --line: rgba(7, 24, 39, 0.12);
+      --line-soft: rgba(7, 24, 39, 0.07);
+      --gold: #c8a766;
+      --navy: #082033;
+      --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+      --sans: "Inter", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      --mono: "SFMono-Regular", Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    ::-webkit-scrollbar { display: none; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      overflow: hidden;
+    }
+
+    .board {
+      width: 1440px;
+      min-height: 1040px;
+      padding: 36px 48px 56px;
+      background:
+        linear-gradient(90deg, rgba(7, 24, 39, 0.022) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(7, 24, 39, 0.016) 1px, transparent 1px),
+        radial-gradient(ellipse at 76% 18%, rgba(200, 167, 102, 0.13), transparent 38%),
+        linear-gradient(180deg, #fffefa 0%, #f7f4ee 68%, #f1ece3 100%);
+      background-size: 96px 96px, 96px 96px, auto, auto;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: 220px 1fr 118px;
+      align-items: center;
+      gap: 48px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .logo {
+      width: 178px;
+      height: auto;
+      display: block;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 34px;
+      color: rgba(7, 24, 39, 0.62);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav b {
+      color: var(--ink);
+      position: relative;
+    }
+
+    .nav b::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -14px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .access {
+      justify-self: end;
+      padding: 13px 17px;
+      border: 1px solid rgba(200, 167, 102, 0.54);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 0.58fr) minmax(420px, 0.42fr);
+      gap: 82px;
+      padding-top: 82px;
+      align-items: start;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 24px;
+      color: #7f612f;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 42px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    h1 {
+      max-width: 860px;
+      font-family: var(--serif);
+      font-size: 78px;
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      max-width: 680px;
+      margin-top: 28px;
+      color: rgba(7, 24, 39, 0.72);
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+    .path {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 74px;
+      border-top: 1px solid var(--line);
+    }
+
+    .path div {
+      min-height: 88px;
+      padding: 20px 28px 0 0;
+      border-right: 1px solid var(--line-soft);
+    }
+
+    .path span, .index {
+      display: block;
+      color: #8a682f;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .path strong {
+      display: block;
+      margin-top: 9px;
+      font-size: 18px;
+    }
+
+    .visual-panel {
+      min-height: 500px;
+      position: relative;
+      border-top: 1px solid rgba(200, 167, 102, 0.55);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.65), transparent),
+        radial-gradient(ellipse at 54% 32%, rgba(200, 167, 102, 0.18), transparent 38%);
+      overflow: hidden;
+    }
+
+    .wave {
+      position: absolute;
+      inset: 80px -40px auto 0;
+      height: 220px;
+      border-bottom: 1px solid rgba(200, 167, 102, 0.42);
+      transform: skewY(-9deg);
+      background:
+        repeating-linear-gradient(178deg, transparent 0 18px, rgba(7, 24, 39, 0.08) 19px, transparent 20px),
+        linear-gradient(90deg, transparent, rgba(200, 167, 102, 0.16), transparent);
+      opacity: 0.86;
+    }
+
+    .brief-sheet {
+      position: absolute;
+      right: 36px;
+      bottom: 44px;
+      width: 330px;
+      padding: 26px;
+      background: rgba(255, 254, 250, 0.86);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .brief-sheet h3 {
+      margin-top: 18px;
+      font-family: var(--serif);
+      font-size: 31px;
+      line-height: 1.25;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 52px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric {
+      min-height: 108px;
+      padding: 22px 26px;
+      border-right: 1px solid var(--line-soft);
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 12px;
+      font-family: var(--serif);
+      font-size: 34px;
+      font-weight: 600;
+    }
+
+    .section {
+      margin-top: 64px;
+      border-top: 1px solid var(--line);
+      padding-top: 28px;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 72px;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      font-family: var(--serif);
+      font-size: 38px;
+      font-weight: 600;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.76;
+    }
+
+    .rows {
+      border-top: 1px solid var(--line);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 92px minmax(320px, 0.38fr) minmax(420px, 0.46fr) 150px;
+      gap: 34px;
+      align-items: start;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .row h3 {
+      font-size: 24px;
+      line-height: 1.46;
+    }
+
+    .row p {
+      color: rgba(44, 62, 78, 0.88);
+      font-size: 15px;
+      line-height: 1.78;
+    }
+
+    .chip {
+      display: inline-flex;
+      width: fit-content;
+      border: 1px solid rgba(200, 167, 102, 0.45);
+      padding: 5px 10px;
+      color: #8a682f;
+      font-size: 12px;
+    }
+
+    .matrix {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 42px;
+    }
+
+    .cover {
+      min-height: 520px;
+      padding: 56px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.76), rgba(255,253,248,0.28)),
+        radial-gradient(ellipse at 80% 18%, rgba(200,167,102,0.18), transparent 38%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover h2 {
+      max-width: 760px;
+      font-family: var(--serif);
+      font-size: 58px;
+      line-height: 1.16;
+      font-weight: 600;
+    }
+
+    .cover p {
+      max-width: 560px;
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .side {
+      border-top: 1px solid var(--line);
+    }
+
+    .side-item {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .side-item strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 19px;
+      line-height: 1.5;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 820px) 300px;
+      gap: 92px;
+      padding-top: 96px;
+    }
+
+    .article h1 {
+      font-size: 72px;
+    }
+
+    .article .quote {
+      margin-top: 74px;
+      padding: 28px 34px;
+      border-left: 3px solid var(--gold);
+      background: rgba(255, 255, 255, 0.56);
+      font-family: var(--serif);
+      font-size: 29px;
+      line-height: 1.58;
+    }
+
+    .article-block {
+      margin-top: 54px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .article-block h2 {
+      font-size: 19px;
+      margin-bottom: 18px;
+    }
+
+    .article-block p {
+      color: rgba(44, 62, 78, 0.9);
+      font-size: 17px;
+      line-height: 1.92;
+    }
+
+    .rail {
+      position: sticky;
+      top: 24px;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+
+    .rail .side-item {
+      padding: 18px 0;
+    }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <main id="app"></main>
+
+  <script>
+    const logo = "../../../01-SiteV2/site/assets/brand/logo-wavesight-reference-horizontal.svg";
+    const page = new URLSearchParams(location.search).get("page") || "home";
+    const nav = {
+      home: "首页",
+      daily: "今日要点",
+      signals: "关键信号",
+      opportunities: "机会解码",
+      brief: "商业内参",
+      "daily-detail": "今日要点",
+      "signal-detail": "关键信号",
+      "opportunity-detail": "机会解码"
+    };
+
+    function topbar(active = "首页") {
+      const items = ["今日要点", "关键信号", "机会解码", "商业内参"];
+      return `
+        <header class="topbar">
+          <img class="logo" src="${logo}" alt="观澜AI">
+          <nav class="nav">${items.map(item => item === active ? `<b>${item}</b>` : `<span>${item}</span>`).join("")}</nav>
+          <div class="access">会员内参</div>
+        </header>
+      `;
+    }
+
+    const rows = `
+      <div class="rows">
+        <div class="row">
+          <span class="index">SIGNAL 01</span>
+          <h3>MCP 工具连接层进入云厂商 GA</h3>
+          <p>从协议讨论转入企业产品接口，安全、治理和权限成为落地第一门槛。</p>
+          <span class="chip">升温</span>
+        </div>
+        <div class="row">
+          <span class="index">SIGNAL 02</span>
+          <h3>Agent 工作流从单点工具转向交付链</h3>
+          <p>产品团队开始把 Agent 放进销售、客服、研发和运营流程，而不是独立工具入口。</p>
+          <span class="chip">观察</span>
+        </div>
+        <div class="row">
+          <span class="index">SIGNAL 03</span>
+          <h3>企业 AI 预算从试用转向治理型采购</h3>
+          <p>采购关注点从模型能力转向权限、审计、数据驻留和跨部门可控性。</p>
+          <span class="chip">验证</span>
+        </div>
+      </div>`;
+
+    const templates = {
+      home: `
+        <div class="board">
+          ${topbar("首页")}
+          <section class="hero">
+            <div>
+              <span class="eyebrow">WAVESIGHT AI BUSINESS BRIEF</span>
+              <h1>观 AI 之澜，<br>识商业之势</h1>
+              <p class="lede">从 AI 热点中筛出商业信号，从信号形成判断，从判断发现机会。首页优先呈现“今天最值得老板看的一件事”。</p>
+              <div class="path">
+                <div><span>01</span><strong>信号筛选</strong></div>
+                <div><span>02</span><strong>影响判断</strong></div>
+                <div><span>03</span><strong>机会观察</strong></div>
+              </div>
+            </div>
+            <div class="visual-panel">
+              <div class="wave"></div>
+              <div class="brief-sheet"><span class="index">Issue 008</span><h3>Agent 控制层正在成为企业 AI 的新入口</h3></div>
+            </div>
+          </section>
+          <div class="metric-grid">
+            <div class="metric"><span class="index">今日主判断</span><strong>3 条主线</strong></div>
+            <div class="metric"><span class="index">商业相关度</span><strong>高</strong></div>
+            <div class="metric"><span class="index">机会窗口</span><strong>90 天</strong></div>
+          </div>
+        </div>`,
+
+      daily: `
+        <div class="board">
+          ${topbar("今日要点")}
+          <section class="hero">
+            <div>
+              <span class="eyebrow">DAILY DECISION MEMO</span>
+              <h1>今日只看<br>三条判断线</h1>
+              <p class="lede">把新闻流压缩为老板和投资人可以快速判断的变化：发生了什么、影响谁、还需要观察什么。</p>
+            </div>
+            <div class="side">
+              <div class="side-item"><span class="index">DATE</span><strong>2026.05.08</strong></div>
+              <div class="side-item"><span class="index">READING</span><strong>8 分钟完成今日判断</strong></div>
+              <div class="side-item"><span class="index">BOUNDARY</span><strong>不替代投资、采购和合作决策</strong></div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section-head"><h2>判断路径</h2><p>每条要点都按“事实信号 -> 商业影响 -> 风险边界”组织，避免新闻摘要感。</p></div>
+            ${rows}
+          </section>
+        </div>`,
+
+      signals: `
+        <div class="board">
+          ${topbar("关键信号")}
+          <section class="hero">
+            <div>
+              <span class="eyebrow">SIGNAL INDEX</span>
+              <h1>从热点里筛出<br>可追踪的商业信号</h1>
+              <p class="lede">信号页不是新闻列表，而是一张可扫读的情报索引台：强度、来源、关联机会和判断边界一屏可读。</p>
+            </div>
+            <div class="metric-grid" style="margin-top:0">
+              <div class="metric"><span class="index">ACTIVE</span><strong>12</strong></div>
+              <div class="metric"><span class="index">HEATING</span><strong>5</strong></div>
+              <div class="metric"><span class="index">WATCH</span><strong>7</strong></div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section-head"><h2>信号台</h2><p>序号和状态不是装饰，而是帮助读者快速判断“先看哪条”。</p></div>
+            ${rows}
+          </section>
+        </div>`,
+
+      opportunities: `
+        <div class="board">
+          ${topbar("机会解码")}
+          <section class="hero">
+            <div>
+              <span class="eyebrow">OPPORTUNITY BRIEFING</span>
+              <h1>机会不是公司名，<br>而是正在变化的商业入口</h1>
+              <p class="lede">机会页以“客户、流程、付费、时机、迁移边界”为骨架，避免把热点包装成确定性答案。</p>
+            </div>
+            <div class="cover"><span class="index">LATEST BRIEF</span><h2>企业 AI 控制层的服务机会</h2><p>从工具采购转向治理型交付，新的服务商空间正在出现。</p></div>
+          </section>
+          <section class="section matrix">
+            <div>${rows}</div>
+            <div class="side">
+              <div class="side-item"><span class="index">客户</span><strong>中大型企业 / 软件服务商 / 渠道伙伴</strong></div>
+              <div class="side-item"><span class="index">替代流程</span><strong>工具堆叠、人工权限审计、分散采购</strong></div>
+              <div class="side-item"><span class="index">中国迁移</span><strong>需要结合私有化和行业数据边界</strong></div>
+            </div>
+          </section>
+        </div>`,
+
+      brief: `
+        <div class="board">
+          ${topbar("商业内参")}
+          <section class="cover" style="min-height:660px;padding:72px">
+            <span class="eyebrow">MEMBER INTELLIGENCE</span>
+            <h2>AI 趋势内参：从工具热潮到企业控制层</h2>
+            <p>面向商业决策者的周期性判断文件。公开层给方向，会员层给来源、反证、关系网络和机会边界。</p>
+            <div class="path" style="position:absolute;left:72px;right:72px;bottom:58px">
+              <div><span>HEAT</span><strong>Agent 控制层升温</strong></div>
+              <div><span>RISK</span><strong>安全治理前置</strong></div>
+              <div><span>WATCH</span><strong>企业交付链重组</strong></div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section-head"><h2>本期热力</h2><p>热力行要像 Bloomberg 终端里的摘要，可扫读、可比较、可继续追踪。</p></div>
+            ${rows}
+          </section>
+        </div>`,
+
+      "daily-detail": `
+        <div class="board">
+          ${topbar("今日要点")}
+          <section class="article-layout">
+            <article class="article">
+              <span class="eyebrow">DAILY DETAIL</span>
+              <h1>今日 AI 商业判断：企业控制层开始重排</h1>
+              <p class="lede">这不是一天的新闻集合，而是把多条信号压缩成一份可阅读的经营判断。</p>
+              <div class="quote">核心变化：企业开始把 AI 采购从“工具试用”转向“可治理的流程入口”。</div>
+              <div class="article-block"><h2>核心判断</h2><p>控制权、权限、审计和交付责任正在成为企业 AI 的第一层议题。</p></div>
+              <div class="article-block"><h2>仍需留意</h2><p>短期内存在供应商宣传过热、采购口径不清、内部数据权限难统一等风险。</p></div>
+            </article>
+            <aside class="rail">
+              <div class="side-item"><span class="index">DATE</span><strong>2026.05.08</strong></div>
+              <div class="side-item"><span class="index">RELATED</span><strong>3 条信号 / 2 个机会方向</strong></div>
+              <div class="side-item"><span class="index">AUDIENCE</span><strong>企业老板、产品负责人、投资人</strong></div>
+            </aside>
+          </section>
+        </div>`,
+
+      "signal-detail": `
+        <div class="board">
+          ${topbar("关键信号")}
+          <section class="article-layout">
+            <article class="article">
+              <span class="eyebrow">SIGNAL DETAIL</span>
+              <h1>MCP 工具连接层进入云厂商 GA，但安全与治理成为第一门槛</h1>
+              <p class="lede">信号详情页应让读者马上知道：这件事为什么重要、影响谁、还缺什么证据。</p>
+              <div class="quote">一句话判断：协议层的成熟正在把 Agent 从演示推向企业流程，但真正的商业化门槛在治理。</div>
+              <div class="article-block"><h2>机会拆解</h2><p>围绕连接层、权限控制、审计记录、行业模板和交付服务，可能出现新的 B2B 服务机会。</p></div>
+              <div class="article-block"><h2>反向观察</h2><p>若企业内部权限体系尚未统一，MCP 普及可能先放大集成成本，而不是立刻提升生产率。</p></div>
+            </article>
+            <aside class="rail">
+              <div class="side-item"><span class="index">SOURCE</span><strong>8 条原始线索</strong></div>
+              <div class="side-item"><span class="index">STAGE</span><strong>风险变量 / 升温</strong></div>
+              <div class="side-item"><span class="index">CUSTOMER</span><strong>开发团队 / 大中型企业</strong></div>
+            </aside>
+          </section>
+        </div>`,
+
+      "opportunity-detail": `
+        <div class="board">
+          ${topbar("机会解码")}
+          <section class="article-layout">
+            <article class="article">
+              <span class="eyebrow">OPPORTUNITY DETAIL</span>
+              <h1>企业 AI 控制层：从工具采购到治理型交付</h1>
+              <p class="lede">机会详情页不写“必然爆发”，而是把客户、流程、付费方式、时机和迁移边界拆开。</p>
+              <div class="quote">机会判断：传统企业不缺 AI 工具，缺的是可控、可审计、可交付的 AI 工作流治理层。</div>
+              <div class="article-block"><h2>目标客户</h2><p>中大型企业、行业软件商、咨询交付团队和掌握客户资源的渠道型伙伴。</p></div>
+              <div class="article-block"><h2>商业模式</h2><p>咨询诊断、行业模板、权限治理组件、私有化部署和持续运维服务可以组合收费。</p></div>
+            </article>
+            <aside class="rail">
+              <div class="side-item"><span class="index">PAYMENT</span><strong>项目制 + 订阅运维</strong></div>
+              <div class="side-item"><span class="index">TIMING</span><strong>90-180 天观察窗口</strong></div>
+              <div class="side-item"><span class="index">BOUNDARY</span><strong>强依赖行业数据和组织成熟度</strong></div>
+            </aside>
+          </section>
+        </div>`
+    };
+
+    document.getElementById("app").innerHTML = templates[page] || templates.home;
+  </script>
+</body>
+</html>

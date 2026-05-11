@@ -1,6 +1,6 @@
 # Agent Operating System
 
-更新时间：2026-05-03  
+更新时间：2026-05-10
 owner：`workflow` / `pm`  
 状态：长期生效
 
@@ -36,6 +36,9 @@ owner：`workflow` / `pm`
 | `agent-memory.md` | 长期规则、反复错误和纠偏经验 | 每轮开始、改内容/页面/自动化前 |
 | `plan-first-policy.md` | 重大任务先计划再执行 | 新栏目、权限、模型、自动化、部署前 |
 | `quality-gates.md` | 完成前必须通过哪些检查 | 任务收尾、QA、发布前 |
+| `v2-current-rule-overrides.md` | V2 当前规则覆盖表，解决旧 PRD / 旧派发单 / V1 / test-only 口径冲突 | 新窗口接手、发现规则冲突、E 类清理后 |
+| `skill-pattern-gate.md` | 为每个任务标注 Tool Wrapper / Generator / Reviewer / Inversion / Pipeline 执行模式 | 派发任务前、收口验收前 |
+| `dispatch-state-reconciliation.md` | 解决看板、feature、progress、handoff、closeout 状态冲突，禁止继承失败任务 | 派发任务前、收口验收前、看板刷新时 |
 | `automation-fallback-policy.md` | 自动化失败如何降级 | 自动化异常、内容缺失、同步失败 |
 | `agent-handoff-template.md` | agent 如何写交接报告 | 阶段结束、交给下一个 agent 前 |
 | `window-dispatch-hub.md` | 当前窗口如何分配任务、接收独立窗口收口并回填进度 | 使用多窗口并行执行任务时 |
@@ -103,6 +106,12 @@ node agent-workflow/tools/run-quality-gates.mjs automation --date=YYYY-MM-DD --r
 ```
 
 ## 7. 自动化影响提醒
+
+V2-only 生产开发阶段的默认口径：
+
+- 后续任务不再判断是否影响已停止的 V1 旧自动化 `ai-the-point`、`ai-2`、`ai-3`。
+- 但凡影响 V2 每日 09:00 内容自动化、`01-SiteV2/content/`、`01-SiteV2/site/` 数据生成器、source registry、V2 quality gates、Netlify 或 GitHub 发布，仍必须说明影响、降级路径和回滚方式。
+- 治理文件中的 `04-Site` 命令仅作 V1 历史参考；V2 当前任务默认读取 `01-SiteV2/` 和 V2 脚本。
 
 如果任务影响以下内容，必须先提醒用户“可能影响自动化任务”，并在完成后更新相关自动化说明或执行文档：
 

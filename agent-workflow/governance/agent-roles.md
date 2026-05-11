@@ -1,5 +1,7 @@
 # Agent 角色与交付物
 
+> 历史说明：本文件是早期角色记录，仅在追溯历史角色时读取。V2 当前长期 Agent 以 `AGENTS.md`、`agent-workflow/agents/`、`agent-workflow/governance/v2-current-rule-overrides.md` 为准。
+
 ## PM Agent
 
 职责：
@@ -41,7 +43,7 @@ PM Agent 不直接做：
 
 职责：
 
-- 按 `frontend-design` 和 `awesome-design-md` 优化视觉、排版、页面结构。
+- 按 `DESIGN.md`、`docs/brand/wavesight-ai-vi/`、`design-taste-frontend` / `gpt-taste` / `redesign-existing-projects` / `high-end-visual-design` 和 `awesome-design-md` 优化视觉、排版、页面结构；不再使用 `frontend-design`。
 - 负责官网页面设计、视觉系统、logo、首屏风格图、海报、卡片视觉、会员页与报告视觉模板。
 - 保证普通端高级、克制、可信。
 - 保证管理端清晰、稳定、可操作。
@@ -74,7 +76,7 @@ PM Agent 不直接做：
 
 职责：
 
-- 管理 Signals、Priorities、Trends、Opportunities、Tags 的字段和关系。
+- 管理关键信号、Priority Engine、趋势温度、机会解码、商业内参、Tags 的字段和关系。
 - 检查重复项、空字段、错位关联。
 - 输出质量报告。
 
@@ -99,17 +101,17 @@ PM Agent 不直接做：
 - 关键词质量报告。
 - Signal 评分阈值建议。
 
-## Daily Brief Agent
+## 今日要点 / Daily Brief Agent
 
 职责：
 
 - 将每日新增内容整理成付费级独立报告。
-- 保证 Daily Brief 有观点、有证据、有优先级、有行动建议。
+- 保证今日要点有主判断、有证据、有趋势温度、有关键词和搜索入口，不输出替用户决策的行动建议。
 - 设计 newsletter / signals letter 的结构。
 
 交付物：
 
-- Daily Brief 模板。
+- 今日要点模板。
 - 每日 Brief 质量检查表。
 - 邮件版结构建议。
 
@@ -117,13 +119,13 @@ PM Agent 不直接做：
 
 职责：
 
-- 将 Priorities 评分能力合并进 Opportunities。
-- 维护机会卡的优先级、证据等级、趋势状态和验证动作。
+- 将 Priorities 评分能力合并进机会解码。
+- 维护机会解码的优先级、证据等级、趋势状态、风险边界和后续观察问题。
 - 判断机会是否足够成熟，避免把普通想法误当机会。
 
 交付物：
 
-- 机会卡字段升级方案。
+- 机会解码字段升级方案。
 - Priority Engine 与 Opportunity 的关系方案。
 - 机会合并与降级规则。
 
@@ -133,7 +135,7 @@ PM Agent 不直接做：
 
 - 建立趋势判断模型。
 - 维护趋势状态、证据阶梯、机会温度、反证清单。
-- 让 Trends 与 Signals、Opportunities 形成双向关系。
+- 让趋势温度与关键信号、机会解码、商业内参形成双向关系。
 
 交付物：
 

@@ -14,7 +14,8 @@ Signal 记录发生了什么
 Priority 判断现在值不值得优先看
 Trend 判断方向是否形成势能
 Opportunity 判断可验证的商业机会
-Point 记录一线建造者怎么看
+Point 记录一线建造者怎么看；前台归属到「关键信号 > Builders 观点」
+AIBriefIssue 记录跨周期、跨栏目、可归档的商业组合判断
 ```
 
 ## 2. 统一状态
@@ -94,10 +95,12 @@ Trend 是商业势能判断，不是标签列表。
 
 Opportunity 是可验证的商业机会方向，不是公司报道。
 
+C-3 确认后，前台「机会解码」的核心形态是 Deep Dive 商业内参级机会判断报告，而不是机会卡列表。Deep Dive 必须达到 6000-10000 中文字，能够单独辅助老板判断是否值得继续投入注意力、资源、人脉、试点或内部讨论。
+
 最小合格标准：
 
 - 标题必须是方向、客户场景或能力，不写公司名。
-- 有目标客户、具体问题、替代流程、商业模式、验证动作和风险边界。
+- 有目标客户、具体问题、替代流程、商业模式、判断结论和风险边界。
 - 至少能关联 Signal、Trend、Priority 或 Point 中的一类证据。
 - 正式机会应尽量有 Priority 评分；早期机会可标为 watch。
 - 公司名只进入代表案例、来源或证据。
@@ -113,9 +116,33 @@ Opportunity 是可验证的商业机会方向，不是公司报道。
 
 Opportunity -> Priority 不能为了清零而硬绑。没有评分证据的早期机会应输出处理结论：补评分、观察、合并或降级。
 
+Deep Dive 机会判断报告必须包含：
+
+- 老板先看。
+- 机会判断。
+- 为什么现在值得看。
+- 目标客户与付费方。
+- 真实问题。
+- AI 替代或增强的流程。
+- 商业模式。
+- 代表案例与证据。
+- 关联信号与趋势。
+- 风险与反证。
+- 判断结论。
+- 后续观察。
+
+不再把“中国迁移难点”作为固定必填模块。
+
 ## 7. The Point Intelligence
 
 Point 是结构化建造者观点，不等同新闻。
+
+前台归属：
+
+- The Point 不作为一级栏目。
+- Point 在前台展示为「关键信号 > Builders 观点」。
+- Builder 详情页按人物 / title / 发言时间线组织，展示观点的延续、修正、转向和冲突。
+- Point 只作为判断校准，不作为事实主证据。
 
 最小合格标准：
 
@@ -133,6 +160,26 @@ Point 是结构化建造者观点，不等同新闻。
 - 原文/译文完整性：不得用摘要、标题或观澜判断替代原文/译文。
 - 清理规则：不得残留 X `t.co` 短链、YouTube speaker/timecode。
 - 授权说明：第三方全文入库前必须确认授权或自有导出边界。
+
+## 7.5 AIBriefIssue Intelligence
+
+AIBriefIssue 是商业内参的判断资产对象。
+
+最小合格标准：
+
+- 围绕一个主题、赛道、趋势或周期形成组合判断。
+- 至少关联 Signal / Trend / Opportunity / Point 中的两类资产。
+- 明确覆盖周期：7 天、30 天、90 天、月度、季度或专题周期。
+- 有执行摘要、信号链、机会组合、趋势判断、Builders 观点分歧、风险与反证、判断结论、后续观察和来源附录。
+- 所有事实、数据和案例必须有来源名、来源等级、原始外链和增量事实。
+- Builder 观点只能作为观点校准，不替代事实主证据。
+
+质量规则：
+
+- 单个 Opportunity Deep Dive 不能直接等同于 AIBriefIssue。
+- 热度不能直接推导机会成立，必须说明商业证据和证据缺口。
+- 内参可以形成判断，但不替用户下最终经营、投资或合作判断。
+- 缺少来源附录或证据边界的内参不得进入正式会员层。
 
 ## 8. 关系网络
 
@@ -154,6 +201,10 @@ Point -> Source
 Point -> Signal
 Point -> Trend
 Point -> Opportunity
+AIBriefIssue -> Signal
+AIBriefIssue -> Trend
+AIBriefIssue -> Opportunity
+AIBriefIssue -> Point
 ```
 
 硬错误：
@@ -170,6 +221,7 @@ Point -> Opportunity
 - Signal 尚未进入 Trend。
 - Podcast / Blog / YouTube 缺素材笔记。
 - 来源授权说明不足。
+- AIBriefIssue 缺少关联 Signal / Trend / Opportunity / Point 中的任意两类支撑。
 
 软提醒必须有处理结论，不要求全部强行清零。
 

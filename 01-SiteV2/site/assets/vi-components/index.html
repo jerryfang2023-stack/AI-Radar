@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>观澜AI 可执行 SVG 规范拆解</title>
+  <style>
+    body { margin: 0; padding: 40px; background: #f7f4ef; color: #071827; font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+    h1 { font-family: "Noto Serif SC", "Songti SC", serif; font-size: 34px; margin: 0 0 12px; }
+    p { color: #6f7f8f; margin: 0 0 28px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+    .item { padding: 14px; border: 1px solid #e5e8ec; border-radius: 10px; background: rgba(255,255,255,.78); }
+    .item img { display: block; width: 100%; border-radius: 8px; background: white; }
+    .item strong { display: block; margin-top: 10px; font-size: 14px; }
+    .item small { color: #6f7f8f; font-family: "IBM Plex Sans", Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <h1>观澜AI 可执行 SVG 规范拆解</h1>
+  <p>由四张 VI 规范图拆解为单项 SVG。每个文件可直接打开、引用或进入站点组件实现。</p>
+  <div class="grid">
+    <a class="item" href="01-symbol-system/signal.svg"><img src="01-symbol-system/signal.svg" alt="Signal 信号"><strong>Signal 信号</strong><small>01-symbol-system/signal.svg</small></a>
+    <a class="item" href="01-symbol-system/key-judgment.svg"><img src="01-symbol-system/key-judgment.svg" alt="Point 关键判断"><strong>Point 关键判断</strong><small>01-symbol-system/key-judgment.svg</small></a>
+    <a class="item" href="01-symbol-system/trend.svg"><img src="01-symbol-system/trend.svg" alt="Trend 趋势"><strong>Trend 趋势</strong><small>01-symbol-system/trend.svg</small></a>
+    <a class="item" href="01-symbol-system/opportunity.svg"><img src="01-symbol-system/opportunity.svg" alt="Opportunity 机会"><strong>Opportunity 机会</strong><small>01-symbol-system/opportunity.svg</small></a>
+    <a class="item" href="01-symbol-system/quote.svg"><img src="01-symbol-system/quote.svg" alt="Quote 引述"><strong>Quote 引述</strong><small>01-symbol-system/quote.svg</small></a>
+    <a class="item" href="01-symbol-system/divider.svg"><img src="01-symbol-system/divider.svg" alt="Divider 分隔线"><strong>Divider 分隔线</strong><small>01-symbol-system/divider.svg</small></a>
+    <a class="item" href="01-symbol-system/timeline-node.svg"><img src="01-symbol-system/timeline-node.svg" alt="Timeline Node 时间节点"><strong>Timeline Node 时间节点</strong><small>01-symbol-system/timeline-node.svg</small></a>
+    <a class="item" href="01-symbol-system/data-snapshot.svg"><img src="01-symbol-system/data-snapshot.svg" alt="Data Snapshot 数据快照"><strong>Data Snapshot 数据快照</strong><small>01-symbol-system/data-snapshot.svg</small></a>
+    <a class="item" href="01-symbol-system/rating-chip.svg"><img src="01-symbol-system/rating-chip.svg" alt="Rating Chip 评级标签"><strong>Rating Chip 评级标签</strong><small>01-symbol-system/rating-chip.svg</small></a>
+    <a class="item" href="01-symbol-system/source-note.svg"><img src="01-symbol-system/source-note.svg" alt="Source Note 来源说明"><strong>Source Note 来源说明</strong><small>01-symbol-system/source-note.svg</small></a>
+    <a class="item" href="02-information-elements/issue-number.svg"><img src="02-information-elements/issue-number.svg" alt="Issue Number 期号编号"><strong>Issue Number 期号编号</strong><small>02-information-elements/issue-number.svg</small></a>
+    <a class="item" href="02-information-elements/date-chip.svg"><img src="02-information-elements/date-chip.svg" alt="Date 日期"><strong>Date 日期</strong><small>02-information-elements/date-chip.svg</small></a>
+    <a class="item" href="02-information-elements/member-brief-tag.svg"><img src="02-information-elements/member-brief-tag.svg" alt="Member Brief Tag 会员内参标签"><strong>Member Brief Tag 会员内参标签</strong><small>02-information-elements/member-brief-tag.svg</small></a>
+    <a class="item" href="02-information-elements/reading-time.svg"><img src="02-information-elements/reading-time.svg" alt="Reading Time 阅读时长"><strong>Reading Time 阅读时长</strong><small>02-information-elements/reading-time.svg</small></a>
+    <a class="item" href="02-information-elements/key-judgment-block.svg"><img src="02-information-elements/key-judgment-block.svg" alt="Key Judgment Block 核心判断框"><strong>Key Judgment Block 核心判断框</strong><small>02-information-elements/key-judgment-block.svg</small></a>
+    <a class="item" href="02-information-elements/quote-block.svg"><img src="02-information-elements/quote-block.svg" alt="Quote Block 引述框"><strong>Quote Block 引述框</strong><small>02-information-elements/quote-block.svg</small></a>
+    <a class="item" href="02-information-elements/data-card.svg"><img src="02-information-elements/data-card.svg" alt="Data Card 数据卡"><strong>Data Card 数据卡</strong><small>02-information-elements/data-card.svg</small></a>
+    <a class="item" href="02-information-elements/trend-timeline.svg"><img src="02-information-elements/trend-timeline.svg" alt="Trend Timeline 趋势时间线"><strong>Trend Timeline 趋势时间线</strong><small>02-information-elements/trend-timeline.svg</small></a>
+    <a class="item" href="02-information-elements/opportunity-matrix.svg"><img src="02-information-elements/opportunity-matrix.svg" alt="Matrix Card 机会矩阵"><strong>Matrix Card 机会矩阵</strong><small>02-information-elements/opportunity-matrix.svg</small></a>
+    <a class="item" href="02-information-elements/source-footer.svg"><img src="02-information-elements/source-footer.svg" alt="Source Footer 数据来源脚注"><strong>Source Footer 数据来源脚注</strong><small>02-information-elements/source-footer.svg</small></a>
+    <a class="item" href="03-layout-principles/cover-page.svg"><img src="03-layout-principles/cover-page.svg" alt="Cover Page 封面页"><strong>Cover Page 封面页</strong><small>03-layout-principles/cover-page.svg</small></a>
+    <a class="item" href="03-layout-principles/article-detail-page.svg"><img src="03-layout-principles/article-detail-page.svg" alt="Article Detail Page 正文详情页"><strong>Article Detail Page 正文详情页</strong><small>03-layout-principles/article-detail-page.svg</small></a>
+    <a class="item" href="03-layout-principles/side-decision-rail.svg"><img src="03-layout-principles/side-decision-rail.svg" alt="Side Decision Rail 侧边决策栏"><strong>Side Decision Rail 侧边决策栏</strong><small>03-layout-principles/side-decision-rail.svg</small></a>
+    <a class="item" href="04-application-samples/brief-cover.svg"><img src="04-application-samples/brief-cover.svg" alt="Brief Cover 内参封面"><strong>Brief Cover 内参封面</strong><small>04-application-samples/brief-cover.svg</small></a>
+    <a class="item" href="04-application-samples/data-card-set.svg"><img src="04-application-samples/data-card-set.svg" alt="Data Card Set 数据卡片组"><strong>Data Card Set 数据卡片组</strong><small>04-application-samples/data-card-set.svg</small></a>
+    <a class="item" href="04-application-samples/report-spread.svg"><img src="04-application-samples/report-spread.svg" alt="Report Spread 报告内页"><strong>Report Spread 报告内页</strong><small>04-application-samples/report-spread.svg</small></a>
+    <a class="item" href="05-motion-guidelines/wave-line-drift.svg"><img src="05-motion-guidelines/wave-line-drift.svg" alt="Wave-line Drift 波纹线微动"><strong>Wave-line Drift 波纹线微动</strong><small>05-motion-guidelines/wave-line-drift.svg</small></a>
+    <a class="item" href="05-motion-guidelines/nav-underline-slide.svg"><img src="05-motion-guidelines/nav-underline-slide.svg" alt="Nav Underline Slide 导航下划线滑动"><strong>Nav Underline Slide 导航下划线滑动</strong><small>05-motion-guidelines/nav-underline-slide.svg</small></a>
+    <a class="item" href="05-motion-guidelines/button-hover.svg"><img src="05-motion-guidelines/button-hover.svg" alt="Button Hover 按钮悬浮反馈"><strong>Button Hover 按钮悬浮反馈</strong><small>05-motion-guidelines/button-hover.svg</small></a>
+    <a class="item" href="05-motion-guidelines/card-hover-lift.svg"><img src="05-motion-guidelines/card-hover-lift.svg" alt="Card Hover Lift 卡片悬浮抬升"><strong>Card Hover Lift 卡片悬浮抬升</strong><small>05-motion-guidelines/card-hover-lift.svg</small></a>
+    <a class="item" href="05-motion-guidelines/count-up.svg"><img src="05-motion-guidelines/count-up.svg" alt="Count Up 数字递增"><strong>Count Up 数字递增</strong><small>05-motion-guidelines/count-up.svg</small></a>
+    <a class="item" href="03-layout-principles/three-column-summary.svg"><img src="03-layout-principles/three-column-summary.svg" alt="Three-column Summary 三栏摘要页"><strong>Three-column Summary 三栏摘要页</strong><small>03-layout-principles/three-column-summary.svg</small></a>
+    <a class="item" href="03-layout-principles/report-section-header.svg"><img src="03-layout-principles/report-section-header.svg" alt="Report Section Header 报告章节页"><strong>Report Section Header 报告章节页</strong><small>03-layout-principles/report-section-header.svg</small></a>
+    <a class="item" href="05-motion-guidelines/motion-token-strip.svg"><img src="05-motion-guidelines/motion-token-strip.svg" alt="Motion Tokens 基础动效参数"><strong>Motion Tokens 基础动效参数</strong><small>05-motion-guidelines/motion-token-strip.svg</small></a>
+    <a class="item" href="05-motion-guidelines/accordion-expand.svg"><img src="05-motion-guidelines/accordion-expand.svg" alt="Accordion Expand 手风琴展开"><strong>Accordion Expand 手风琴展开</strong><small>05-motion-guidelines/accordion-expand.svg</small></a>
+    <a class="item" href="05-motion-guidelines/modal-fade.svg"><img src="05-motion-guidelines/modal-fade.svg" alt="Modal Fade 弹窗淡入淡出"><strong>Modal Fade 弹窗淡入淡出</strong><small>05-motion-guidelines/modal-fade.svg</small></a>
+    <a class="item" href="05-motion-guidelines/avoid-motion-set.svg"><img src="05-motion-guidelines/avoid-motion-set.svg" alt="Avoid Motion 禁用动效"><strong>Avoid Motion 禁用动效</strong><small>05-motion-guidelines/avoid-motion-set.svg</small></a>
+    <a class="item" href="05-motion-guidelines/reading-experience.svg"><img src="05-motion-guidelines/reading-experience.svg" alt="Reading Experience 内参阅读体验"><strong>Reading Experience 内参阅读体验</strong><small>05-motion-guidelines/reading-experience.svg</small></a>
+    <a class="item" href="06-site-design-system/navigation-bar.svg"><img src="06-site-design-system/navigation-bar.svg" alt="Navigation Bar 导航系统"><strong>Navigation Bar 导航系统</strong><small>06-site-design-system/navigation-bar.svg</small></a>
+    <a class="item" href="06-site-design-system/buttons.svg"><img src="06-site-design-system/buttons.svg" alt="Buttons 按钮规范"><strong>Buttons 按钮规范</strong><small>06-site-design-system/buttons.svg</small></a>
+    <a class="item" href="06-site-design-system/tags.svg"><img src="06-site-design-system/tags.svg" alt="Tags 标签规范"><strong>Tags 标签规范</strong><small>06-site-design-system/tags.svg</small></a>
+    <a class="item" href="06-site-design-system/cards.svg"><img src="06-site-design-system/cards.svg" alt="Cards 卡片规范"><strong>Cards 卡片规范</strong><small>06-site-design-system/cards.svg</small></a>
+    <a class="item" href="06-site-design-system/section-header.svg"><img src="06-site-design-system/section-header.svg" alt="Section Header 章节标题"><strong>Section Header 章节标题</strong><small>06-site-design-system/section-header.svg</small></a>
+    <a class="item" href="06-site-design-system/search-bar.svg"><img src="06-site-design-system/search-bar.svg" alt="Search Bar 搜索框"><strong>Search Bar 搜索框</strong><small>06-site-design-system/search-bar.svg</small></a>
+    <a class="item" href="06-site-design-system/quote-block.svg"><img src="06-site-design-system/quote-block.svg" alt="Quote Block 引用框"><strong>Quote Block 引用框</strong><small>06-site-design-system/quote-block.svg</small></a>
+    <a class="item" href="06-site-design-system/page-template-desktop.svg"><img src="06-site-design-system/page-template-desktop.svg" alt="Page Template Desktop 桌面页面模板"><strong>Page Template Desktop 桌面页面模板</strong><small>06-site-design-system/page-template-desktop.svg</small></a>
+    <a class="item" href="06-site-design-system/page-template-mobile.svg"><img src="06-site-design-system/page-template-mobile.svg" alt="Page Template Mobile 移动页面模板"><strong>Page Template Mobile 移动页面模板</strong><small>06-site-design-system/page-template-mobile.svg</small></a>
+    <a class="item" href="06-site-design-system/data-visualization.svg"><img src="06-site-design-system/data-visualization.svg" alt="Data Visualization 数据图表风格"><strong>Data Visualization 数据图表风格</strong><small>06-site-design-system/data-visualization.svg</small></a>
+  </div>
+</body>
+</html>

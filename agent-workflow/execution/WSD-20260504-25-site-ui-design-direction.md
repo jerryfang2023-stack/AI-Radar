@@ -1,7 +1,7 @@
 # WSD-20260504-25-site-ui-design-direction 派发单
 
 日期：2026-05-04  
-状态：ready  
+状态：accepted  
 调度窗口：当前主窗口  
 牵头 Agent：`ui-ue / strategy / pm / copy`
 
@@ -38,6 +38,8 @@
 6. `agent-workflow/product/COPY.md`
 7. `agent-workflow/reports/WSD-20260504-18-homepage-ui-copy-redesign-closeout.md`
 8. `agent-workflow/reports/homepage-hero-optimization-plan-2026-05-04.md`
+9. `agent-workflow/reports/site-module-design-review-2026-05-04.md`
+10. `agent-workflow/reports/WSD-20260504-27-site-module-design-review-closeout.md`
 
 ## 5. 允许改动范围
 
@@ -86,6 +88,7 @@
 3. agent-workflow/governance/window-dispatch-hub.md
 4. agent-workflow/agents/ui-ue-agent.md
 5. agent-workflow/execution/WSD-20260504-25-site-ui-design-direction.md
+6. agent-workflow/reports/site-module-design-review-2026-05-04.md
 
 你是本任务的独立执行窗口，由 UI / UE Design Director 牵头。任务是重新定义观澜AI网站 UI 优化方向，不要直接改网站代码。
 

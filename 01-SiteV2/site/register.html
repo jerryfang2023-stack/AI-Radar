@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>申请访问｜观澜AI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header></header>
+  <main class="auth-page auth-register-page">
+    <section class="auth-hero">
+      <div class="auth-hero-copy">
+        <span class="auth-kicker">REQUEST ACCESS</span>
+        <h1>申请进入完整情报层</h1>
+        <p>适合需要持续观察 AI 商业信号、证据边界和机会变化的经营者、业务负责人和投资观察者。</p>
+        <div class="auth-hero-links">
+          <a href="pricing.html">查看会员方案</a>
+          <a href="login.html">已有账号登录</a>
+        </div>
+      </div>
+      <aside class="auth-insight-panel" aria-label="申请说明">
+        <img src="assets/vi-components/02-information-elements/key-judgment-block.svg" alt="">
+        <span>ACCESS REVIEW</span>
+        <strong>我们会优先邀请关注 AI 商业决策、产业观察或业务验证的读者。</strong>
+        <p>申请访问不是支付动作，也不代表权限已经开通。</p>
+      </aside>
+    </section>
+
+    <section class="auth-shell">
+      <form class="auth-form-v2" data-auth-form data-success="申请已在页面中记录。后续真实审核和邮件发放需要另接服务。">
+        <div class="auth-form-head">
+          <span class="auth-kicker">APPLICATION</span>
+          <h2>访问申请</h2>
+          <p>请留下便于判断阅读场景的信息。</p>
+        </div>
+        <div class="auth-field-grid-v2">
+          <label class="auth-field">
+            <span>姓名</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label class="auth-field">
+            <span>邮箱</span>
+            <input name="email" type="email" autocomplete="email" required placeholder="name@company.com">
+          </label>
+          <label class="auth-field">
+            <span>公司 / 机构</span>
+            <input name="company" autocomplete="organization" required>
+          </label>
+          <label class="auth-field">
+            <span>身份</span>
+            <input name="role" required placeholder="创始人、业务负责人、投资观察者等">
+          </label>
+          <label class="auth-field auth-field-wide">
+            <span>关注议题</span>
+            <textarea name="reason" rows="4" required placeholder="简要说明你正在观察的 AI 商业议题"></textarea>
+            <small>例如企业 Agent、AI 治理、行业工作流、客户采用变化。</small>
+          </label>
+        </div>
+        <div class="auth-actions">
+          <button class="button primary" type="submit">提交访问申请</button>
+          <a class="button secondary" href="checkout.html">查看确认页</a>
+        </div>
+        <p class="auth-boundary">当前不接入真实审核、邀请码或支付服务。</p>
+        <div class="auth-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <aside class="auth-side-note">
+        <span>WHAT CHANGES</span>
+        <ol>
+          <li><strong>信号更早</strong><p>从热点里筛出少数值得继续看的变化。</p></li>
+          <li><strong>证据更清楚</strong><p>区分事实、观点和仍需观察的缺口。</p></li>
+          <li><strong>机会更系统</strong><p>把单点变化放回行业、岗位和流程中。</p></li>
+        </ol>
+      </aside>
+    </section>
+  </main>
+  <footer data-footer></footer>
+  <script src="data/site-content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

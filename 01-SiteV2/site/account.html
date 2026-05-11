@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>账户状态｜观澜AI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header></header>
+  <main class="auth-page account-page">
+    <section class="auth-hero account-hero">
+      <div class="auth-hero-copy">
+        <span class="auth-kicker">ACCOUNT STATUS</span>
+        <h1>查看你的访问状态</h1>
+        <p>当前账户页展示会员访问层级预览，方便后续接入真实认证、权限和订阅服务。</p>
+      </div>
+      <aside class="account-status-card" data-account-status></aside>
+    </section>
+
+    <section class="account-grid">
+      <article class="account-panel">
+        <span class="auth-kicker">ACCESS LAYER</span>
+        <h2>当前可读内容</h2>
+        <div class="account-access-list" data-account-access></div>
+      </article>
+      <article class="account-panel">
+        <span class="auth-kicker">NEXT STEP</span>
+        <h2>继续阅读路径</h2>
+        <div class="account-paths">
+          <a href="brief.html">返回商业内参</a>
+          <a href="pricing.html">查看会员方案</a>
+          <a href="register.html">补充访问申请</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer data-footer></footer>
+  <script src="data/site-content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

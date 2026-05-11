@@ -1,0 +1,259 @@
+{
+  "task_id": "WSD-20260508-10-v2-source-interface-upgrade-autopilot",
+  "date": "2026-05-10",
+  "generated_at": "2026-05-10T05:44:21.763Z",
+  "registry_path": "01-SiteV2/content/10-databases/source-registry-v2.json",
+  "registry_source_count": 27,
+  "probe_count": 5,
+  "success_count": 5,
+  "failed_count": 0,
+  "empty_count": 0,
+  "publish_policy": "Raw probe results are diagnostics only and must not be published to the public site.",
+  "results": [
+    {
+      "source_id": "gdelt-doc-ai-commercial",
+      "source_name": "GDELT DOC 2.0",
+      "source_type": "news",
+      "interface_type": "official-api",
+      "status": "success",
+      "started_at": "2026-05-10T05:44:03.601Z",
+      "finished_at": "2026-05-10T05:44:16.969Z",
+      "item_count": 10,
+      "sample_items": [
+        {
+          "title": "CTONE Group Unveils AI Strategy and New Agent Computer Series",
+          "url": "https://www.prnewswire.com/news-releases/ctone-group-unveils-ai-strategy-and-new-agent-computer-series-302767499.html",
+          "source": "prnewswire.com",
+          "date": "20260509T134500Z"
+        },
+        {
+          "title": "Meet VC firm new rising stars",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/meet-vc-firms-rising-stars-190055155.html",
+          "source": "finance.yahoo.com",
+          "date": "20260510T013000Z"
+        },
+        {
+          "title": "CTONE Group Unveils AI Strategy and New Agent Computer Series",
+          "url": "https://www.manilatimes.net/2026/05/09/tmt-newswire/pr-newswire/ctone-group-unveils-ai-strategy-and-new-agent-computer-series/2339988",
+          "source": "manilatimes.net",
+          "date": "20260509T161500Z"
+        },
+        {
+          "title": "Perplexity announces Personal Computer feature for Mac app : Here what users get",
+          "url": "https://www.moneycontrol.com/technology/perplexity-announces-personal-computer-feature-for-mac-app-here-s-what-users-get-article-13913622.html",
+          "source": "moneycontrol.com",
+          "date": "20260509T103000Z"
+        },
+        {
+          "title": "Cloudflare cuts 20 % workforce while posting record revenue",
+          "url": "https://www.thenews.com.pk/latest/1401992-cloudflare-cuts-20-workforce-while-posting-record-revenue",
+          "source": "thenews.com.pk",
+          "date": "20260509T143000Z"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "source_id": "aihot-virxact-selected",
+      "source_name": "AI HOT selected items",
+      "source_type": "news",
+      "interface_type": "official-api",
+      "status": "success",
+      "started_at": "2026-05-10T05:44:16.969Z",
+      "finished_at": "2026-05-10T05:44:17.128Z",
+      "item_count": 20,
+      "sample_items": [
+        {
+          "title": "普通人如何用AI构建月入7万的一人公司：七个月行动路线图",
+          "url": "https://x.com/AYi_AInotes/status/2053317162664673306",
+          "source": "X：阿易 AI Notes (@AYi_AInotes)",
+          "date": "2026-05-10T03:32:15.000Z",
+          "summary": "Anthropic联合创始人预测首个十亿美元一人公司即将出现，而普通人利用AI实现月入1万美元（约7万人民币）则更为切实可行。核心路径包括：选择具体、可重复的付费任务；将系统提示词编写为详细岗位描述；通过MCP工具链连接实际工作流实现自动化；持续迭代优化提示词；最终实现系统自动运行，创始人仅需每周花少量时间处理异常。成功关键在于找到付费痛点并快速交付可用方案，而非追求技术完美。当前是利用AI创建自动化小生意的关键窗口期。",
+          "category": "tip"
+        },
+        {
+          "title": "Lee Robinson 的 11 条求职建议",
+          "url": "https://x.com/shao__meng/status/2053300303634862271",
+          "source": "X：邵猛 (@shao__meng)",
+          "date": "2026-05-10T02:25:15.000Z",
+          "summary": "Lee Robinson 从大量审阅简历的经验出发，提出让工程师求职脱颖而出的关键建议。简历需简洁专业：限制一页、避免照片、GitHub 应展示代码而非装饰。网络形象至关重要：拥有用心的个人网站能显著提升竞争力，需认真维护 LinkedIn 并清理 X 内容。申请内容应定制化，针对不同公司调整重点；务必提及 AI 技能以顺应趋势；项目注重质量而非数量；避免使用 AI 生成求职信和简历以保持真实；同时展示个人爱好，帮助建立人际连接。",
+          "category": "tip"
+        },
+        {
+          "title": "SpaceXAI 正式官宣了！",
+          "url": "https://x.com/berryxia/status/2053260623136604554",
+          "source": "X：Berry Xia (@berryxia)",
+          "date": "2026-05-09T23:47:34.000Z",
+          "summary": "商标申请文件显示，\"SpaceXAI\"已于2026年5月6日提交申请，目前状态为待审查。该日期与Elon Musk宣布将xAI并入SpaceX的时间点吻合，标志着xAI的AI能力将与SpaceX的航天业务进行品牌统一，旨在将打造多行星文明与发展超级智能两大目标合并于单一实体之下。",
+          "category": "industry"
+        },
+        {
+          "title": "Google 开放 Fitbit Air 的全新 Health API",
+          "url": "https://x.com/berryxia/status/2053256690498433146",
+          "source": "X：Berry Xia (@berryxia)",
+          "date": "2026-05-09T23:31:57.000Z",
+          "summary": "Google 随新款 Fitbit Air 发布了全新的 Health API 并向开发者开放。该 API 提供了涵盖运动、睡眠、心率、血氧等维度的 31 种健康数据点，支持 Webhooks 实时数据推送、精细的读写权限控制以及按时间范围查询和汇总数据。开发者可利用该 API 基于个人真实健康数据构建 AI Agent、MCP Server、CLI 或实时监控系统等应用，从而创建实用的个人健康自动化工作流。官方已发布包含首次调用教学的入门指南。",
+          "category": "ai-products"
+        },
+        {
+          "title": "OncoAgent：一个用于隐私保护肿瘤临床决策支持的双层多智能体框架",
+          "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
+          "source": "Hugging Face：Blog（RSS）",
+          "date": "2026-05-09T18:09:28.000Z",
+          "summary": "研究团队发布了开源肿瘤临床决策支持系统OncoAgent。该系统采用双层多智能体框架，结合LangGraph拓扑与四阶段Corrective RAG流程，检索超过70份权威临床指南。系统根据查询复杂度，将任务路由至9B参数的速度优化模型或27B参数的深度推理模型，两者均通过QLoRA在AMD MI300X硬件上使用包含26万余病例的数据集进行微调。系统强制执行严格的零受保护健康信息政策，并通过三层反射安全验证器确保安全，支持完全本地部署以保护患者数据主权。",
+          "category": "paper"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "source_id": "hacker-news-algolia-ai",
+      "source_name": "Hacker News Algolia",
+      "source_type": "developer",
+      "interface_type": "official-api",
+      "status": "success",
+      "started_at": "2026-05-10T05:44:17.128Z",
+      "finished_at": "2026-05-10T05:44:18.701Z",
+      "item_count": 10,
+      "sample_items": [
+        {
+          "title": "In CRHQ, agents don't just reply with text. They ship live HTML artifacts",
+          "url": "https://andrej.crhq.ai/artifact/Us0QJs48JGh3dK3uoEDQLw",
+          "source": "news.ycombinator.com",
+          "date": "2026-05-10T00:08:39Z",
+          "points": 3
+        },
+        {
+          "title": "ToolOps: One Decorator Away from Production-Ready AI Agents",
+          "url": "https://github.com/hedimanai-pro/toolops",
+          "source": "news.ycombinator.com",
+          "date": "2026-05-09T23:20:59Z",
+          "points": 2
+        },
+        {
+          "title": "Show HN: Sigma Guard – deterministic contradiction checks for graph memory",
+          "url": "https://news.ycombinator.com/item?id=48078195",
+          "source": "news.ycombinator.com",
+          "date": "2026-05-09T20:58:08Z",
+          "points": 1
+        },
+        {
+          "title": "Mirage · Unified Virtual Filesystem for AI Agents – Strukto",
+          "url": "https://www.strukto.ai/mirage",
+          "source": "news.ycombinator.com",
+          "date": "2026-05-09T20:24:06Z",
+          "points": 1
+        },
+        {
+          "title": "Show HN: Mlx-code – I built a \"backyard shed\" AI coding agent for Mac",
+          "url": "https://github.com/JosefAlbers/mlx-code",
+          "source": "news.ycombinator.com",
+          "date": "2026-05-09T19:28:01Z",
+          "points": 1
+        }
+      ],
+      "error": ""
+    },
+    {
+      "source_id": "github-search-ai-agent",
+      "source_name": "GitHub Search API",
+      "source_type": "developer",
+      "interface_type": "official-api",
+      "status": "success",
+      "started_at": "2026-05-10T05:44:18.701Z",
+      "finished_at": "2026-05-10T05:44:19.592Z",
+      "item_count": 10,
+      "sample_items": [
+        {
+          "title": "h4ckf0r0day/obscura",
+          "url": "https://github.com/h4ckf0r0day/obscura",
+          "source": "github.com",
+          "date": "2026-04-13T10:31:41Z",
+          "stars": 11313,
+          "summary": "The headless browser for AI agents and web scraping"
+        },
+        {
+          "title": "yizhiyanhua-ai/fireworks-tech-graph",
+          "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+          "source": "github.com",
+          "date": "2026-04-10T15:07:10Z",
+          "stars": 5789,
+          "summary": "Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support, and AI/Agent workflow patterns."
+        },
+        {
+          "title": "TencentCloud/CubeSandbox",
+          "url": "https://github.com/TencentCloud/CubeSandbox",
+          "source": "github.com",
+          "date": "2026-04-10T03:00:31Z",
+          "stars": 5221,
+          "summary": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents."
+        },
+        {
+          "title": "EKKOLearnAI/hermes-web-ui",
+          "url": "https://github.com/EKKOLearnAI/hermes-web-ui",
+          "source": "github.com",
+          "date": "2026-04-11T07:38:18Z",
+          "stars": 4200,
+          "summary": "Web dashboard for Hermes Agent — multi-platform AI chat, session management, scheduled jobs, usage analytics & channel configuration (Telegram, Discord, Slack, WhatsApp)"
+        },
+        {
+          "title": "cloudflare/agentic-inbox",
+          "url": "https://github.com/cloudflare/agentic-inbox",
+          "source": "github.com",
+          "date": "2026-04-10T00:26:27Z",
+          "stars": 2826,
+          "summary": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "source_id": "arxiv-api-ai-agent",
+      "source_name": "arXiv API",
+      "source_type": "research",
+      "interface_type": "official-api",
+      "status": "success",
+      "started_at": "2026-05-10T05:44:19.592Z",
+      "finished_at": "2026-05-10T05:44:21.763Z",
+      "item_count": 10,
+      "sample_items": [
+        {
+          "title": "StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction",
+          "url": "http://arxiv.org/abs/2605.06642v1",
+          "source": "arxiv.org",
+          "date": "2026-05-07T17:51:16Z",
+          "summary": "Large language models (LLMs) are increasingly used as interactive agents, but optimizing them for long-horizon decision making remains difficult because current methods are largely purely reactive, which weakens both exploration and credit assignment over extended trajectories. In this work, we present Strategic Trajectory Abstraction (StraTA), a simple framework that introduces an explicit trajectory-level strategy into agentic reinforcement learning (RL). StraTA samples a compact strategy from the initial task state, conditions subsequent actions on that strategy, and trains strategy generation and action execution jointly with a hierarchical GRPO-style rollout design, further enhanced by diverse strategy rollout and critical self-judgment. Experiments on ALFWorld, WebShop, and SciWorld show that StraTA consistently improves both sample efficiency and final performance over strong baselines. StraTA reaches success rates of 93.1% on ALFWorld and 84.2% on WebShop. On SciWorld, StraTA attains a 63.5% overall score, outperforming frontier closed-source models."
+        },
+        {
+          "title": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
+          "url": "http://arxiv.org/abs/2605.06635v1",
+          "source": "arxiv.org",
+          "date": "2026-05-07T17:46:45Z",
+          "summary": "Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency. We introduce the first source attribution evaluation framework that uses a reproducible AST parser to extract and evaluate inline citations from LLM-generated Markdown reports at scale. Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source. Citations are evaluated along three dimensions. (1) Link Works verifies URL accessibility, (2) Relevant Content measures topical alignment, and (3) Fact Check validates factual accuracy against source content. We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review. Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting. Ablation studies on research depth show that Fact Check accuracy drops by approximately 42% on average across two frontier models as tool calls scale from 2 to 150, demonstrating that more retrieval does not produce more accurate citations. These findings reveal a critical disconnect between surface-level citation quality and factual reliability, and our framework provides the evaluation infrastructure to assess the disconnect."
+        },
+        {
+          "title": "MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems",
+          "url": "http://arxiv.org/abs/2605.06623v1",
+          "source": "arxiv.org",
+          "date": "2026-05-07T17:35:26Z",
+          "summary": "Large language model (LLM)-based Multi-agent systems (MAS) have shown promise in tackling complex collaborative tasks, where agents are typically orchestrated via role-specific prompts. While the quality of these prompts is pivotal, jointly optimizing them across interacting agents remains a non-trivial challenge, primarily due to the misalignment between local agent objectives and holistic system goals. To address this, we introduce MASPO, a novel framework designed to automatically and iteratively refine prompts across the entire system. A core innovation of MASPO is its joint evaluation mechanism, which assesses prompts not merely by their local validity, but by their capacity to facilitate downstream success for successor agents. This effectively bridges the gap between local interactions and global outcomes without relying on ground-truth labels. Furthermore, MASPO employs a data-driven evolutionary beam search to efficiently navigate the high-dimensional prompt space. Extensive empirical evaluations across 6 diverse tasks demonstrate that MASPO consistently outperforms state-of-the-art prompt optimization methods, achieving an average accuracy improvement of 2.9. We release our code at https://github.com/wangzx1219/MASPO."
+        },
+        {
+          "title": "How Many Iterations to Jailbreak? Dynamic Budget Allocation for Multi-Turn LLM Evaluation",
+          "url": "http://arxiv.org/abs/2605.06605v1",
+          "source": "arxiv.org",
+          "date": "2026-05-07T17:25:15Z",
+          "summary": "Evaluating and predicting the performance of large language models (LLMs) in multi-turn conversational settings is critical yet computationally expensive; key events -- e.g., jailbreaks or successful task completion by an agent -- often emerge only after repeated interactions. These events might be rare, and under any feasible computational budget, remain unobserved. Recent conformal survival frameworks construct reliable lower predictive bounds (LPBs) on the number of iterations to trigger the event of interest, but rely on static budget allocation that is inefficient in multi-turn setups. To address this, we introduce \\emph{Dynamic Allocation via PRojected Optimization} (DAPRO), the first theoretically valid dynamic budget allocation framework for bounding the time-to-event in multi-turn LLM interactions. We prove that DAPRO satisfies the budget constraint and provides distribution-free, finite-sample coverage guarantees without requiring the conditional independence between censoring and event times assumed by prior conformal survival approaches. A key theoretical contribution is a novel coverage bound that scales with the square root of the mean censoring weight rather than the worst-case weight, yielding provably tighter guarantees than prior work. Furthermore, DAPRO can be employed to obtain unbiased, low-variance estimates of population-level evaluation metrics, such as the jailbreak rate, under limited computing resources. Comprehensive experiments across agentic task success, adversarial jailbreaks, toxic content generation, and RAG hallucinations using LLMs such as Llama 3.1 and Qwen 2.5 demonstrate that DAPRO consistently achieves coverage closer to the nominal level with lower variance than static baselines, while satisfying the budget constraint."
+        },
+        {
+          "title": "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?",
+          "url": "http://arxiv.org/abs/2605.06527v1",
+          "source": "arxiv.org",
+          "date": "2026-05-07T16:31:15Z",
+          "summary": "Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval, overlooking the ability to revise stored beliefs when new evidence emerges. We identify a critical and underexplored failure mode, Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect. To rigorously evaluate this capability, we introduce STALE, a benchmark of 400 expert-validated conflict scenarios (1,200 evaluation queries across three probing dimensions) spanning over 100 everyday topics with contexts up to 150K tokens. We propose a three-dimensional probing framework that tests State Resolution (detecting that a prior belief is outdated), Premise Resistance (rejecting queries that falsely presuppose a stale state), and Implicit Policy Adaptation (proactively applying updated states in downstream behavior). A systematic evaluation of frontier LLMs and specialized memory frameworks reveals a pervasive gap between retrieving updated evidence and acting on it, with even the best evaluated model achieving only 55.2% overall accuracy. Models often accept outdated assumptions embedded in a user's query, and they struggle to recognize when a change in one aspect of the user's state should invalidate related memories. To establish an initial baseline for state-aware memory, we further present CUPMem, a prototype that strengthens write-time revision through structured state consolidation and propagation-aware search, suggesting that explicit state adjudication is a promising direction for robust agentic memory."
+        }
+      ],
+      "error": ""
+    }
+  ]
+}

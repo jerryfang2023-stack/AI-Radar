@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-label="Tags 标签规范">
+  <title>Tags 标签规范</title>
+  <defs>
+    <linearGradient id="paperShade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7F4EF"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.4" refY="4" orient="auto">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#0D355C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    
+  </defs>
+  <style>
+  :root {
+    --gl-ink: #071827;
+    --gl-deep: #0B1D2A;
+    --gl-blue: #0D355C;
+    --gl-wave: #1F5D8C;
+    --gl-gray: #6F7F8F;
+    --gl-mountain: #A7ADB4;
+    --gl-border: #E5E8EC;
+    --gl-bg: #F7F4EF;
+    --gl-paper: #FFFFFF;
+    --gl-gold: #C8A766;
+  }
+  * { box-sizing: border-box; }
+  text { font-family: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: var(--gl-ink); letter-spacing: 0; }
+  .serif { font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif; }
+  .mono { font-family: "Inter", "IBM Plex Sans", "Avenir", Arial, sans-serif; letter-spacing: .12em; }
+  .label { fill: var(--gl-gray); font-size: 12px; }
+  .title { fill: var(--gl-ink); font-size: 22px; font-weight: 700; }
+  .subtitle { fill: var(--gl-gray); font-size: 11px; }
+  .caption { fill: var(--gl-gray); font-size: 10px; }
+  .fine { stroke: var(--gl-border); stroke-width: 1; }
+  .gold { stroke: var(--gl-gold); }
+  .blue { stroke: var(--gl-blue); }
+  .wave { stroke: var(--gl-wave); }
+  .card { fill: rgba(255,255,255,.86); stroke: var(--gl-border); stroke-width: 1; }
+  .soft { filter: drop-shadow(0 10px 24px rgba(7,24,39,.06)); }
+  .no-fill { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+  <rect width="360" height="220" fill="url(#paperShade)"/>
+  <g transform="translate(36 62)"><rect width="42" height="28" rx="14" fill="#FFFFFF" stroke="#E5E8EC"/><text x="21" y="18" font-size="11" text-anchor="middle">宏观</text></g><g transform="translate(88 62)"><rect width="42" height="28" rx="14" fill="#FFFFFF" stroke="#E5E8EC"/><text x="21" y="18" font-size="11" text-anchor="middle">行业</text></g><g transform="translate(140 62)"><rect width="42" height="28" rx="14" fill="#FFFFFF" stroke="#E5E8EC"/><text x="21" y="18" font-size="11" text-anchor="middle">企业</text></g><g transform="translate(192 112)"><rect width="42" height="28" rx="14" fill="#FFFFFF" stroke="#E5E8EC"/><text x="21" y="18" font-size="11" text-anchor="middle">消费</text></g><g transform="translate(244 112)"><rect width="42" height="28" rx="14" fill="#FFFFFF" stroke="#E5E8EC"/><text x="21" y="18" font-size="11" text-anchor="middle">科技</text></g><g transform="translate(296 112)"><rect width="42" height="28" rx="14" fill="#FFFFFF" stroke="#E5E8EC"/><text x="21" y="18" font-size="11" text-anchor="middle">洞察</text></g>
+      <text x="36" y="176" class="caption">标签只做筛选和关系网络，不作为一线栏目；使用圆角胶囊但保持轻量。</text>
+</svg>

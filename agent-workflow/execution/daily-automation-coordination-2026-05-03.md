@@ -93,6 +93,54 @@ node agent-workflow/tools/unified-site-sync.mjs
 8. Priority Engine 2.0 Judgment Node 缺失、覆盖率不足、摘要不一致或关系断链属于 `ai-3` 硬错误，必须阻止入站并恢复备份。
 9. 关系软提醒不能为了清零而硬绑无效 Judgment Node；软提醒应进入报告并交给 Intelligence Data Agent 复核。
 
+## V2 测试管线说明（2026-05-05）
+
+日常监测算法 v2 已建立为测试管线，只进入：
+
+- `06-content/`
+- `04-Site/signal-lab.html`
+- `04-Site/data/signal-lab-data.json`
+- `04-Site/data/signal-lab-data.js`
+
+测试同步脚本：
+
+```powershell
+node 04-Site/scripts/sync-signal-lab.mjs
+```
+
+`06-content/` 已升级为编号目录：
+
+```text
+00-inbox -> 01-raw -> 02-pool -> 03-structured-signals -> 04-selected-signals
+-> 05-trend-chain -> 06-insights -> 07-points -> 08-opportunities
+-> 09-mvp-validation -> 10-databases -> 11-content-distribution -> 12-feedback
+```
+
+手工启动口令：
+
+```text
+启动：日常监测v2
+启动：日常监测v2-采集
+启动：日常监测v2-入库
+启动：日常监测v2-精选
+启动：日常监测v2-深挖
+启动：日常监测v2-趋势
+启动：日常监测v2-复核
+```
+
+手工启动规则见：
+
+- `agent-workflow/execution/WSD-20260505-02-daily-monitoring-v2-manual-runbook.md`
+- `agent-workflow/product/daily-monitoring-algorithm-v2.md`
+- `06-content/README.md`
+
+边界：
+
+- 不替换 `ai-2` 当前生产口径。
+- 不写入正式 `01-Signals/`、`02-Scoring/`、`03-Trends/AI趋势总表.md` 或 `07-Opportunities/`。
+- 不进入 `ai-3` 统一同步闸门。
+- 成熟条件为连续 7 天稳定产出、QA 证明前台 3 条质量优于现有 Signals，并由 PM / Data / QA 另行派发正式入站任务。
+
 ## 当前验证
 
 已用 2026-05-03 内容运行：

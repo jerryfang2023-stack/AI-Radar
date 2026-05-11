@@ -3,7 +3,7 @@ title: WSD-20260504-28 GitHub Netlify Sync Closeout
 date: 2026-05-04
 type: task-closeout
 task_id: WSD-20260504-28-github-netlify-sync
-status: synced
+status: accepted
 owner: dev / workflow
 encoding: UTF-8
 project: 观澜AI｜WaveSight AI
@@ -187,7 +187,7 @@ tag-check: 47 unique tags, 0 forbidden alias hits, 0 unknown public tag hits
 
 ## 9. 建议调度中枢处理
 
-建议状态：`accepted`。
+调度中枢复核状态：`accepted`。
 
 原因：
 
@@ -209,6 +209,39 @@ tag-check: 47 unique tags, 0 forbidden alias hits, 0 unknown public tag hits
 "priorityEngine"
 generatedAt >= 2026-05-04T15:21:59.991Z
 ```
+
+## 10. 调度中枢复核补充
+
+调度中枢在收口时复核到远端 `origin/main` 已进一步前进到：
+
+```text
+925f2e9 chore: record final sync quality gate
+```
+
+本地 `HEAD` 与 `origin/main` 一致：
+
+```text
+925f2e9ccbd6cb2a63b5790d594f89e4efb01d9c
+```
+
+Netlify 默认站点复核通过：
+
+```text
+https://wavesight-ai-preview.netlify.app/
+```
+
+首页、Daily、Signals、The Point、Opportunities、Trends、CSS、JS、`data/radar-data.js` 均返回 200。
+
+远端数据复核：
+
+```text
+generatedAt=2026-05-04T15:21:59.991Z
+judgmentNodes=true
+priorityEngine=true
+judgmentNodeCount=22
+```
+
+当前工作树仍有 P0-10 相关未提交文件和新的 syntax 报告，这些不属于本次已部署的远端版本。后续如要继续同步，需要另行执行 GitHub / Netlify 更新任务。
 
 回调度中枢口令：
 

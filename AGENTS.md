@@ -1,6 +1,6 @@
 # 观澜AI｜WaveSight AI 项目级 Agent 规则
 
-本项目必须按长期 `agent-workflow` 执行。新窗口、新会话或上下文恢复时，先读取本文件，再读取下方核心文件，以恢复八个长期 agent 的角色、分工、技能和交接状态。
+本项目必须按长期 `agent-workflow` 执行。新窗口、新会话或上下文恢复时，先读取本文件，再读取 `agent-workflow/governance/current-context.md` 和当前任务派发单。旧长清单不再作为默认启动要求，只有派发单指定或追溯冲突时再补读。
 
 ## 1. 项目定位
 
@@ -8,24 +8,43 @@
 - 定位语：观AI之澜，识商业之势
 - 产品定位：面向商业决策者的 AI 机会判断系统
 - 核心逻辑：从 AI 热点中筛出商业信号，从信号形成判断，从判断发现机会
-- 当前前台导航：首页 / Daily Brief / Signals / The Point / Opportunities / Trends
+- 当前开发阶段：V2-only 生产开发，V1.0 网站与旧内容日更不再更新
+- V2 建议前台导航：今日要点 / 关键信号 / 机会解码 / 商业内参
+- The Point 降级为观点校准模块，Trends 降级为趋势背景和热力输入，不再作为 V2 一级导航
 - Scoring 后台化为 Priority Engine，不作为普通前台栏目
 - Tags 暂不作为一线栏目，作为搜索、筛选和关系网络能力
 
+### V2 当前开发节奏
+
+- 当前网站开发采用桌面端优先口径：先集中完成桌面端信息架构、视觉质感、栏目页和详情页体验，以加速 V2 生产开发。
+- 除非派发单明确要求移动端，本阶段页面类任务默认不做移动端专项设计和开发，移动端截图不作为当前任务 accepted 的硬阻塞。
+- 当前页面 QA 默认要求桌面端截图和核心交互检查；移动端只做基础不崩坏 / 无严重横向溢出的非阻塞观察，后续另派移动端专项统一处理。
+- 页面 / 文案开发窗口不得自验自收。开发 closeout 后，必须另派独立 QA / Acceptance 窗口按 `agent-workflow/governance/page-copy-quality-review-skill.md` 做页面与文案质检，调度窗口只能在独立质检通过后 accepted。
+
+### V2 目录口径
+
+- V2 新站和新文件默认入口：`01-SiteV2/`
+- V2 新网站工程入口：`01-SiteV2/site/`
+- V2 内容生产线入口：`01-SiteV2/content/`
+- V1 旧网站只读归档：`10-Archive/v1.0/site/04-Site/`
+- V1 内容只读归档：`10-Archive/v1.0/`
+- `agent-workflow/`、`docs/`、`AGENTS.md` 继续保留在项目根目录，用于长期 agent、调度、交接和质量门禁
+
 ## 2. 新会话启动必读
 
-每次新窗口进入本项目后，先读取：
+每次新窗口进入本项目后，默认只读取：
 
-- `docs/agent-handoff.md`
-- `agent-workflow/governance/README.md`
-- `agent-workflow/agents/agent-registry.json`
-- `agent-workflow/governance/long-term-agent-dispatch-policy.md`
-- `agent-workflow/governance/agent-memory.md`
-- `agent-workflow/governance/plan-first-policy.md`
-- `agent-workflow/governance/quality-gates.md`
-- `agent-workflow/governance/automation-fallback-policy.md`
-- `agent-workflow/progress.md`
-- `agent-workflow/feature_list.json`
+- `AGENTS.md`
+- `agent-workflow/governance/current-context.md`
+- 当前任务派发单：`agent-workflow/execution/<TASK-ID>.md`
+
+补读规则：
+
+- `docs/agent-handoff.md`：只在上下文恢复、收口验收、追溯最新状态时读取。
+- `agent-workflow/progress.md`：只在回填进度、查近期变更或收口验收时读取。
+- `agent-workflow/feature_list.json`：只在产品 / 功能 / 看板状态需要更新或验证时读取。
+- `agent-workflow/governance/*.md`：只按任务类型或派发单指定补读。
+- 各长期 Agent 岗位说明：只在该 Agent 牵头且派发单要求时读取。
 
 读取或保存 handoff / 交接类文件时，统一使用 UTF-8 编码。Windows PowerShell 环境下读取中文 Markdown 时优先使用 `-Encoding UTF8`，避免把 `docs/agent-handoff.md`、`agent-workflow/progress.md`、`agent-workflow/reports/*handoff*.md` 读成乱码；新增或更新交接文件也必须保存为 UTF-8。
 
@@ -75,12 +94,14 @@
 - `执行：<看板编号或 Task ID>`：从 `dispatch-board.md` 领取已预生成任务，输出独立执行窗口提示词。
 - `派发：<任务描述>`：生成任务 ID、派发单和执行窗口提示词。
 - `收口：<closeout 文件路径>`：读取收口文件，验收并回填进度。
+- `检查收口箱`：读取 `agent-workflow/inbox/closeout-queue.jsonl`，发现执行窗口已登记的 closeout。
+- `验收收口箱`：按收口箱队列逐个读取 closeout 并执行标准验收。
 - `状态`：查看调度看板。
 - `看板`：查看 ready / running / review 任务。
 - `下一批`：列出建议派发顺序。
 - `加入看板：<优先级> <牵头 Agent> <任务描述>`：追加任务到看板，必要时生成派发单。
 
-独立执行窗口结束前必须写 UTF-8 收口文件，默认路径为 `agent-workflow/reports/<TASK-ID>-closeout.md`，再回到调度中枢窗口汇报。
+独立执行窗口结束前必须写 UTF-8 收口文件，默认路径为 `agent-workflow/reports/<TASK-ID>-closeout.md`，并向 `agent-workflow/inbox/closeout-queue.jsonl` 追加登记；调度窗口可通过收口箱自动发现，但仍必须按派发单硬闸门验收。
 
 如果确需临时 agent，必须先说明：
 
@@ -128,11 +149,20 @@
 
 - `agent-workflow/agents/ui-ue-agent.md`
 - `agent-workflow/product/DESIGN.md`
+- `docs/brand/wavesight-ai-vi/USAGE.md`
+- `docs/brand/wavesight-ai-vi/visual-identity-guidelines.md`
+- `docs/brand/wavesight-ai-vi/typography-guidelines.md`
+- `docs/brand/wavesight-ai-vi/brand-tokens.css`
+- `docs/brand/wavesight-ai-vi/motion-tokens.css`
+- `docs/brand/wavesight-ai-vi/executable-svg/README.md`
 - `docs/agent-handoff.md`
 
 要求：
 
-- 每次页面或视觉调整必须使用 `frontend-design` 规范。
+- 每次页面或视觉调整禁止继续使用 `frontend-design` 作为项目技能或设计口径；当前有效口径为“观澜 AI VI + Apple / Linear / Stripe 高级商业网站方向 + `design-taste-frontend` / `gpt-taste` / `redesign-existing-projects` / `high-end-visual-design` + `awesome-design-md` 真实设计系统参考”。
+- 每次页面、视觉、商业内参和动效调整必须读取 `docs/brand/wavesight-ai-vi/`，并按真实 SVG、`typography-guidelines.md` 与 `brand-tokens.css` 执行；Logo 不允许用 CSS、图标库或手写 SVG 重新绘制。
+- 设计相关工作必须读取 VI、字体规范及 SVG 组件相关文件；不要根据截图重画元素；所有 Logo、符号、信息卡片和动效分镜都优先引用 SVG 资产；页面颜色和字体使用 `brand-tokens.css`；公开页面全局背景按最新收口统一为 `#fffdf8` / `--gl-bg-page`，卡片保留半透明纸面层次；页面字体角色使用 `typography-guidelines.md`；动效使用 `motion-tokens.css`；新增组件必须基于现有 SVG 风格扩展，保持深海蓝、暖白、雾灰和少量香槟金。
+- Logo 使用最新高还原 SVG 资产：正式横版 Logo 默认不低于 `160px`；小于 `120px` 宽时优先使用 symbol；不得改变香槟金地平线、三道主澜线、中文字标和 `WAVESIGHT AI` 英文字标。
 - 需要时参考 `awesome-design-md`。
 - 普通前台不能出现 Admin、JSON、同步、恢复、编辑等后台痕迹。
 - 栏目页标题必须与其他一级栏目保持同一套位置、字号、行高和首屏节奏；标题背景默认与页面背景一致，不随意添加突兀色块。
@@ -238,7 +268,23 @@
 
 ## 6. 每日雷达自动化特殊要求
 
-每日观澜AI商业雷达任务必须遵守：
+V2 每日监测当前生产口径由 `v2-content-site-daily-update` 执行，必须遵守：
+
+- 默认每天 09:00 运行。
+- Raw 原始候选：80-150 条；低信号或关键接口失败日可降级为 50-80，但必须写明原因。
+- Pool：20-30 条。
+- Structured Signals：8-15 条。
+- Front Signals：3-5 条。
+- Opportunity Deep Dive：1-2 条，证据不足时不得硬凑。
+- Trend Updates：3-5 条。
+- 必须合并 AI HOT、follow-builders、HN、GitHub、GDELT、官方产品 / 平台、A 级媒体、融资 / VC、developer / research、market / customer / regulation 等来源。
+- AI HOT、follow-builders、HN、X、Reddit 等只作为 M 级 discovery / source-router，不直接作为事实主证据。
+- 每条线索必须回看原始 URL，并按原始来源重新分级为 S/A/B/C/D；C 级或 M 级通道不得作为事实主证据。
+- 每日日志必须写入 `source_distribution`、`failed_sources`、`fallback_used`、`evidence_gaps`、`raw_count_by_source_type`、`front_signal_sab_source_count`。
+- Front Signal 必须二搜，且每条至少 3 个解析后的 S/A/B 原始来源。
+- Deep Dive 必须至少 5 个来源，其中至少 2 个 S 级或一手来源。
+
+V1 历史商业雷达文件如需读取，保留以下旧格式约束；不得把它当作 V2 每日生产漏斗：
 
 - Signals 命名：`YYYY-MM-DD-AI商业雷达.md`
 - Scoring 命名：`YYYY-MM-DD-AI机会评分.md`
@@ -258,36 +304,34 @@
 在 `01-WaveSight` 目录下常用：
 
 ```powershell
-node 04-Site/scripts/sync-data.mjs
-node 04-Site/scripts/check-relations.mjs
-node 04-Site/scripts/check-tags.mjs
-node --check 04-Site/scripts/sync-data.mjs
-node --check 04-Site/js/app.js
 node agent-workflow/tools/run-quality-gates.mjs syntax
+node agent-workflow/tools/run-quality-gates.mjs v2content
+node --check 01-SiteV2/site/assets/app.js
 ```
+
+V1 旧脚本只在读取或修复归档内容时作为历史参考，不作为 V2 当前生产线默认验证。
 
 当前关系检查报告：
 
 - `agent-workflow/reports/relation-check-latest.md`
 
-## 8. 自动化影响检查
+## 8. V2-only 生产开发口径
 
-本项目已有长期自动化任务：
+从 2026-05-07 起，本项目进入 V2.0 专注开发模式：
 
-- `ai-the-point`：The Point 每日观点生成，只写 Markdown。
-- `ai-2`：AI 商业雷达每日内容生成，只写 Markdown。
-- `ai-3`：每日统一网站同步闸门，负责检查内容就绪后统一同步网站。
+- V1.0 网站不再更新。
+- 旧自动化任务 `ai-the-point`、`ai-2`、`ai-3` 已停止，不再作为后续任务的影响判断对象。
+- 后续调度不再要求说明“是否影响旧自动化 / V1 网站 / 旧内容日更”。
+- 不再围绕旧 V1 链路做兼容性优先判断；默认目标是推进 V2.0 正式生产线。
 
-任何后续操作如果影响以下内容，必须先提示用户“可能影响自动化任务”，并在完成后同步更新对应自动化提示词或执行文档：
+仍需保留的 V2 生产开发要求：
 
-- Markdown 文件命名、目录或 frontmatter。
-- Signal / Priority / Trend / Opportunity / Point 字段规则。
-- `sync-data.mjs`、`check-relations.mjs`、`check-point-quality.mjs`、`unified-site-sync.mjs` 的运行口径。
-- The Point 来源、素材笔记、原文/译文、授权说明规则。
-- 每日商业雷达机会拆解、评分表、趋势或机会卡生成规则。
-- 自动化时间线、入站顺序、备份、回滚或发布闸门。
-
-若改动只影响普通页面样式、文案或非自动化数据展示，也应在最终回复中明确说明“未影响自动化任务”。
+- 生产线改造必须写清楚当前 V2 目标、改动范围、质量检查、备份和回滚。
+- 页面类任务仍必须经过 UI / UE Design Director、Copy、Dev、QA 桌面端截图验收；移动端专项设计 / 开发 / 截图验收暂缓，除非派发单明确要求。
+- 页面 / 文案开发任务必须接入独立质检流程：开发 closeout -> 调度窗口派发独立质检 -> 按定位一致性、信息架构、商业判断、文案自然度、视觉体验、页面节奏和可信度 7 维评分 -> 未达标退回 Dev / Copy -> 独立质检 accepted 后调度窗口才可 accepted。
+- 独立质检硬闸门：总分不少于 58 / 70，且定位一致性、商业判断、文案自然度、可信度均不低于 8；页面不像观澜AI或文案明显像 AI 模板时，即使语法、链接和截图通过，也不得 accepted。
+- 产品功能类任务仍必须经过 PM 门禁、WAVE 评分和模块决策表。
+- 自动化、同步脚本、内容路径和数据 schema 的后续改动，只按 V2.0 新生产线验收，不再按 V1 影响口径阻塞。
 
 ## 9. 下一步接手顺序
 

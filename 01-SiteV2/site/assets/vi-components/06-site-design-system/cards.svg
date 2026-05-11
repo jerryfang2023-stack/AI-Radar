@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-label="Cards 卡片规范">
+  <title>Cards 卡片规范</title>
+  <defs>
+    <linearGradient id="paperShade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7F4EF"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.4" refY="4" orient="auto">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#0D355C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    
+  </defs>
+  <style>
+  :root {
+    --gl-ink: #071827;
+    --gl-deep: #0B1D2A;
+    --gl-blue: #0D355C;
+    --gl-wave: #1F5D8C;
+    --gl-gray: #6F7F8F;
+    --gl-mountain: #A7ADB4;
+    --gl-border: #E5E8EC;
+    --gl-bg: #F7F4EF;
+    --gl-paper: #FFFFFF;
+    --gl-gold: #C8A766;
+  }
+  * { box-sizing: border-box; }
+  text { font-family: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: var(--gl-ink); letter-spacing: 0; }
+  .serif { font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif; }
+  .mono { font-family: "Inter", "IBM Plex Sans", "Avenir", Arial, sans-serif; letter-spacing: .12em; }
+  .label { fill: var(--gl-gray); font-size: 12px; }
+  .title { fill: var(--gl-ink); font-size: 22px; font-weight: 700; }
+  .subtitle { fill: var(--gl-gray); font-size: 11px; }
+  .caption { fill: var(--gl-gray); font-size: 10px; }
+  .fine { stroke: var(--gl-border); stroke-width: 1; }
+  .gold { stroke: var(--gl-gold); }
+  .blue { stroke: var(--gl-blue); }
+  .wave { stroke: var(--gl-wave); }
+  .card { fill: rgba(255,255,255,.86); stroke: var(--gl-border); stroke-width: 1; }
+  .soft { filter: drop-shadow(0 10px 24px rgba(7,24,39,.06)); }
+  .no-fill { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+  <rect width="360" height="220" fill="url(#paperShade)"/>
+  <g transform="translate(34 48)"><rect width="112" height="116" rx="8" class="card soft"/><rect width="112" height="62" rx="8" fill="#DCE5EC"/><path d="M0 54 C26 36 54 42 80 50 C98 56 108 48 112 42 V62 H0 Z" fill="#A7ADB4" opacity=".45"/><text x="12" y="86" font-size="12">中国AI应用商业化进入增长拐点</text><text x="12" y="106" class="caption">宏观 · 科技</text></g>
+      <g transform="translate(166 48)"><rect width="78" height="116" rx="8" class="card"/><text x="14" y="26" class="serif" font-size="20" fill="#0D355C">P</text><text x="14" y="58" font-size="13">关于AI驱动下的组织平衡</text><text x="14" y="100" class="caption">5月20日</text></g>
+      <g transform="translate(264 48)"><rect width="62" height="116" rx="8" class="card"/><text x="12" y="38" class="caption">行业景气指数</text><text x="12" y="74" class="serif" font-size="25" fill="#0D355C">128.6</text><polyline points="12,100 24,94 36,98 48,88 58,82" fill="none" stroke="#0D355C"/></g>
+</svg>

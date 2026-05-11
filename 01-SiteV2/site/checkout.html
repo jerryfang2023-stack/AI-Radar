@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>访问确认｜观澜AI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header></header>
+  <main class="auth-page checkout-page">
+    <section class="auth-hero checkout-hero">
+      <div class="auth-hero-copy">
+        <span class="auth-kicker">ACCESS CONFIRMATION</span>
+        <h1>确认申请，不在这里付款</h1>
+        <p>在真实支付接入前，确认页只说明申请信息、阅读边界和后续处理方式。</p>
+      </div>
+      <aside class="checkout-summary-card">
+        <span>SELECTED ACCESS</span>
+        <strong>商业内参会员</strong>
+        <p>完整内参、来源摘要、热力变化和机会观察。</p>
+      </aside>
+    </section>
+
+    <section class="auth-shell checkout-shell">
+      <form class="auth-form-v2" data-auth-form data-success="确认已完成页面演示。真实支付和权限开通需要后续专项接入。">
+        <div class="auth-form-head">
+          <span class="auth-kicker">CONFIRM</span>
+          <h2>确认访问申请</h2>
+          <p>请确认联系人和阅读场景。这里不会收款。</p>
+        </div>
+        <label class="auth-field">
+          <span>联系人邮箱</span>
+          <input name="email" type="email" autocomplete="email" required placeholder="name@company.com">
+        </label>
+        <label class="auth-field">
+          <span>访问类型</span>
+          <select name="plan" required>
+            <option value="">请选择</option>
+            <option>商业内参会员</option>
+            <option>团队阅读沟通</option>
+          </select>
+        </label>
+        <label class="auth-check">
+          <input name="boundary" type="checkbox" required>
+          <span>我知道当前页面不接入真实支付，也不代表权限已经开通。</span>
+        </label>
+        <div class="auth-actions">
+          <button class="button primary" type="submit">确认访问申请</button>
+          <a class="button secondary" href="account.html">查看账户状态</a>
+        </div>
+        <div class="auth-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <aside class="auth-side-note">
+        <span>AFTER CONFIRMATION</span>
+        <ol>
+          <li><strong>审核阅读场景</strong><p>确认是否适合当前会员层内容。</p></li>
+          <li><strong>沟通访问方式</strong><p>真实权限、付款和发票另行处理。</p></li>
+          <li><strong>开通后阅读</strong><p>回到账户页查看可读内容。</p></li>
+        </ol>
+      </aside>
+    </section>
+  </main>
+  <footer data-footer></footer>
+  <script src="data/site-content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -10,20 +10,37 @@
 - 看板编号：`<BOARD-ID>`
 - Task ID：`<TASK-ID>`
 - 任务类型：页面类 / 文案类 / 产品功能类 / 数据类 / 开发类 / QA 类 / 自动化类 / 治理类
+- 派发模式：quick_fix / formal_task / autopilot_chain
 - 派发单：`agent-workflow/execution/<TASK-ID>.md`
 - 默认 closeout：`agent-workflow/reports/<TASK-ID>-closeout.md`
+- 收口箱登记：`agent-workflow/inbox/closeout-queue.jsonl`
 - 调度口令：`收口：<TASK-ID>`
 - 是否可能影响自动化：是 / 否
+- 是否需要更新 `current-context.md`：是 / 否
+- 是否写入收口箱：是 / 否
+- Skill Pattern：Tool Wrapper / Generator / Reviewer / Inversion / Pipeline / Compose
+- Pattern 顺序：
+- 硬停顿：
+- Reviewer：
 
 执行窗口最短启动提示词：
 
 ```text
 执行任务：<TASK-ID>
-请读取 AGENTS.md 和 agent-workflow/execution/<TASK-ID>.md。
+请读取 AGENTS.md、agent-workflow/governance/current-context.md 和 agent-workflow/execution/<TASK-ID>.md。
 只处理派发单允许范围。
 完成后写 UTF-8 closeout：agent-workflow/reports/<TASK-ID>-closeout.md。
+追加收口登记到 agent-workflow/inbox/closeout-queue.jsonl。
 回调度窗口：收口：<TASK-ID>
 ```
+
+派发模式说明：
+
+- `quick_fix`：很小且安全的治理 / 文档修正，可在当前调度窗口直接完成；仍需运行必要检查并写入进度。
+- `formal_task`：标准独立执行窗口任务；默认使用三文件轻量启动。
+- `autopilot_chain`：可连贯执行的多阶段任务；执行窗口按阶段写 stage summary，遇硬停顿再回调度窗口。
+
+轻量启动不等于轻量验收；页面、产品、自动化、部署、外部 skill / repo 等硬闸门仍按本派发单完整执行。
 
 ## 1. 任务目标
 
@@ -45,16 +62,19 @@
 ## 4. 执行窗口必须读取
 
 1. `AGENTS.md`
-2. `docs/agent-handoff.md`
-3. `agent-workflow/governance/window-dispatch-hub.md`
-4. 本派发单
+2. `agent-workflow/governance/current-context.md`
+3. 本派发单
 
-按任务类型补充：
+按任务类型最小补读。只列与本任务直接相关的 1-4 个单一真源，不再复制历史长清单：
 
-- `agent-workflow/product/DESIGN.md`
-- `agent-workflow/product/COPY.md`
-- `agent-workflow/product/intelligence-data-model.md`
-- `agent-workflow/reports/relation-check-latest.md`
+- 页面 / 视觉：`agent-workflow/product/DESIGN.md`、`docs/brand/wavesight-ai-vi/USAGE.md`、`docs/brand/wavesight-ai-vi/brand-tokens.css`
+- 文案：`agent-workflow/product/COPY.md`、`agent-workflow/product/strategy-single-source.md`
+- 产品 / 栏目：`agent-workflow/v2/v2-product-architecture-prd.md`、`agent-workflow/v2/v2-navigation-column-finalization.md`
+- 数据 / 内容：`agent-workflow/governance/v2-current-rule-overrides.md`、`agent-workflow/product/source-intelligence.md`、对应 content / knowledge README
+- 开发 / 自动化：`agent-workflow/governance/quality-gates.md`、相关脚本或 README
+- QA / 收口：`agent-workflow/governance/window-dispatch-hub.md`、`agent-workflow/governance/dispatch-state-reconciliation.md`
+
+如需读取更多文件，必须在派发单说明为什么需要，避免启动成本失控。
 
 ## 5. 允许改动范围
 
@@ -71,6 +91,39 @@
 
 - 主交付物：
 - 收口文件：`agent-workflow/reports/<TASK-ID>-closeout.md`
+- 收口箱登记：完成后向 `agent-workflow/inbox/closeout-queue.jsonl` 追加一行 JSONL：
+
+```json
+{"task_id":"<TASK-ID>","board_id":"<BOARD-ID>","closeout_path":"agent-workflow/reports/<TASK-ID>-closeout.md","status":"ready_for_review","created_at":"YYYY-MM-DDTHH:mm:ss+08:00","owner":"<lead-agent>"}
+```
+
+## 7S. Skill Pattern Gate
+
+所有任务必须填写本节。规则见 `agent-workflow/governance/skill-pattern-gate.md`。
+
+### 7S.1 Pattern 标注
+
+| 项目 | 结论 |
+|---|---|
+| 主 Pattern | Tool Wrapper / Generator / Reviewer / Inversion / Pipeline / Compose |
+| Pattern 组合顺序 |  |
+| 为什么选这个 Pattern |  |
+| 必须读取的 Tool Wrapper / 规范 |  |
+| 必须生成的 Generator 产物 |  |
+| 必须独立执行的 Reviewer |  |
+| 必须先诊断 / 先确认的 Inversion 节点 |  |
+| Pipeline 阶段顺序 |  |
+| 硬停顿 |  |
+| closeout 必须提供的 Pattern 证据 |  |
+
+### 7S.2 Pattern 硬闸门
+
+- 页面类任务默认必须包含 `Tool Wrapper + Inversion/Pipeline + Reviewer`。
+- 产品功能类任务默认必须包含 `Inversion + Reviewer`。
+- 自动化、内容入库、部署和迁移任务默认必须包含 `Pipeline + Reviewer`。
+- 派发 / 收口 / 治理任务默认必须包含 `Generator + Reviewer`。
+- 引用外部 skill / repo 时，必须补安全审查和适配边界。
+- 缺少 Pattern 字段或 closeout 未提供对应证据，不得标记为 accepted。
 
 ## 7P. 产品功能类任务硬性要求
 
@@ -125,7 +178,7 @@ WAVE 通过线：
 
 ## 7A. 页面类任务硬性要求
 
-如本任务涉及首页、栏目页、详情页、The Point、Daily Brief、Signals、Opportunities、Trends、会员页、Admin、移动端或任何 `04-Site/*.html` / `04-Site/css/styles.css` 页面体验改动，本节必须保留并填写；如非页面类任务，可标注“不适用”。
+如本任务涉及首页、栏目页、详情页、The Point、Daily Brief、Signals、Opportunities、Trends、会员页、Admin、移动端或任何 `01-SiteV2/site/*.html` / `01-SiteV2/site/assets/*.css` / `01-SiteV2/site/assets/*.js` 页面体验改动，本节必须保留并填写；如非页面类任务，可标注“不适用”。`04-Site/` 仅作为 V1 归档参考，不作为当前页面开发入口。
 
 ### 7A.1 UI/UE 页面规范表
 
@@ -271,13 +324,14 @@ QA Agent 必须独立按 UI/UE 页面规范表和 Copy 文案规范表验收：
 根据任务类型勾选：
 
 - [ ] `node agent-workflow/tools/run-quality-gates.mjs syntax`
-- [ ] `node 04-Site/scripts/sync-data.mjs`
-- [ ] `node 04-Site/scripts/check-relations.mjs`
-- [ ] `node 04-Site/scripts/check-tags.mjs`
+- [ ] 页面 / 前端类：`node --check 01-SiteV2/site/assets/app.js`
+- [ ] 内容 / 数据类：`node agent-workflow/tools/run-quality-gates.mjs v2content`
+- [ ] 内容 / 数据类：`node agent-workflow/tools/run-quality-gates.mjs syntax`
 - [ ] 浏览器桌面 / 移动端检查
 - [ ] 多身份权限检查
 - [ ] 产品功能类任务：新增功能门禁记录
 - [ ] 产品功能类任务：模块决策表
+- [ ] Skill Pattern Gate：Pattern 标注、硬停顿和 Reviewer 证据
 - [ ] 页面类任务：UI/UE 页面规范表
 - [ ] 页面类任务：Design Director 证据化风格美观质检表，按页面类型通过线验收
 - [ ] 页面类任务：Copy 文案规范表
@@ -288,11 +342,10 @@ QA Agent 必须独立按 UI/UE 页面规范表和 Copy 文案规范表验收：
 
 未运行的检查必须在收口文件中说明原因和风险。
 
-## 9. 自动化影响
+## 9. V2 自动化影响
 
-- 是否可能影响 `ai-the-point`：
-- 是否可能影响 `ai-2`：
-- 是否可能影响 `ai-3`：
+- 是否可能影响 `v2-content-site-daily-update`：
+- 是否可能影响内容入库、知识库、站点生成或部署：
 - 如影响，需要同步更新的文件或提示词：
 
 ## 10. 外部 GitHub skill / repo 安全审查
@@ -311,10 +364,11 @@ QA Agent 必须独立按 UI/UE 页面规范表和 Copy 文案规范表验收：
 
 ```text
 执行任务：<TASK-ID>
-请读取 AGENTS.md 和 agent-workflow/execution/<TASK-ID>.md。
+请读取 AGENTS.md、agent-workflow/governance/current-context.md 和 agent-workflow/execution/<TASK-ID>.md。
 只处理派发单允许范围。
 完成后写 UTF-8 closeout：
 agent-workflow/reports/<TASK-ID>-closeout.md
+追加收口登记到 agent-workflow/inbox/closeout-queue.jsonl。
 回调度窗口：收口：<TASK-ID>
 ```
 

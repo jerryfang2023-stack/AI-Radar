@@ -41,6 +41,7 @@ V2.0 仍归属当前 `01-WaveSight` 项目，不另建孤立项目。建议：
 - `v2-transition-charter.md`：V2.0 转场宪章。
 - `v2-preflight-roadmap.md`：V2.0 前置路线图。
 - `v2-workspace-strategy.md`：当前目录、分支和 worktree 策略。
+- `v2-workflow-skill-graph.md`：V2 长期 Agent、项目规范、技能 / 插件能力和质量闸门的调度图谱。
 - `references/guanlan-ai-brief-heatmap-premium-plan.md`：用户提供的 AI商业内参 + 热力图增值产品原始规划。
 - `briefs/v2-agent-system-brief.md`：新 Agent 体系任务简报。
 - `briefs/v2-algorithm-brief.md`：新算法任务简报。

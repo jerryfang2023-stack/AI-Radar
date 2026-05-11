@@ -221,3 +221,189 @@
 - 状态：synced
 - 阻塞项：0
 - 报告：agent-workflow/reports/unified-site-sync-2026-05-04.md
+
+### 2026/5/5 19:54:17 统一网站同步闸门
+
+- 日期：2026-05-05
+- 状态：blocked
+- 阻塞项：3
+- 报告：agent-workflow/reports/unified-site-sync-2026-05-05.md
+- 阻塞原因：
+  - AI商业雷达：缺少当天 Signals 文件或文件为空：01-Signals/2026-05-05-AI商业雷达.md
+  - AI机会评分：缺少当天 Scoring 文件或文件为空：02-Scoring/2026-05-05-AI机会评分.md
+  - The Point：缺少当天 The Point 文件或文件为空：05-Point/2026-05-05-The-Point.md
+
+### 2026/5/5 19:56:17 The Point 每日观点生成
+
+- 日期：2026-05-05
+- 自动化：`ai-the-point`
+- 状态：failed（feed_fetch_failed）
+- 产物：未生成（未写入 `05-Point/2026-05-05-The-Point.md`）
+- 来源准备：
+  - 命令：`node C:\Users\86186\.skill-store\follow-builders\scripts\prepare-digest.js`
+  - 结果：X/Podcast/Blog 返回空数组；errors 指向远端 feed 与 prompts 拉取失败
+  - 降级：检测到本地缓存 feed（generatedAt=2026-05-02Z）但过旧，不用于“今日观点”生成；按 Fallback Policy 不生成空文件
+- 报告：`agent-workflow/reports/the-point-run-2026-05-05.md`
+
+### 2026/5/5 19:57:34 The Point 每日观点生成（尝试）
+
+- 日期：2026-05-05
+- 自动化：`ai-the-point`
+- 状态：failed (feed_fetch_failed)
+- 说明：follow-builders `prepare-digest.js` 返回空内容（podcasts/x/blogs 均为 0），错误包含 Could not fetch * feed；为避免冒充今日内容，未写入 `05-Point/2026-05-05-The-Point.md`。
+- 报告：`agent-workflow/reports/the-point-run-2026-05-05.md`
+
+### 2026/5/5 19:57:34 AI商业雷达每日内容生成（未执行）
+
+- 日期：2026-05-05
+- 自动化：`ai-2`
+- 状态：blocked (missing_sources)
+- 说明：当前环境无法获取当天来源素材，未生成 `01-Signals/2026-05-05-AI商业雷达.md` 与 `02-Scoring/2026-05-05-AI机会评分.md`，避免空跑覆盖。
+- 报告：`agent-workflow/reports/daily-radar-run-2026-05-05.md`
+
+### 2026/5/5 19:58:31 统一网站同步闸门
+
+- 日期：2026-05-05
+- 状态：blocked
+- 阻塞项：3
+- 报告：agent-workflow/reports/unified-site-sync-2026-05-05.md
+- 阻塞原因：
+  - AI商业雷达：缺少当天 Signals 文件或文件为空：01-Signals/2026-05-05-AI商业雷达.md
+  - AI机会评分：缺少当天 Scoring 文件或文件为空：02-Scoring/2026-05-05-AI机会评分.md
+  - The Point：缺少当天 The Point 文件或文件为空：05-Point/2026-05-05-The-Point.md
+
+### 2026/5/5 20:40:00 The Point 每日观点生成（重试成功）
+
+- 日期：2026-05-05
+- 自动化：`ai-the-point`
+- 状态：success
+- 产物：`05-Point/2026-05-05-The-Point.md`（`pending_unified_sync`）
+- 来源准备：
+  - 命令：`node C:\Users\86186\.skill-store\follow-builders\scripts\prepare-digest.js`
+  - 本次 digest：`agent-workflow/reports/follow-builders-digest-2026-05-05.json`
+- 报告：`agent-workflow/reports/the-point-run-2026-05-05.md`
+
+### 2026/5/5 20:41:00 AI商业雷达每日内容生成（重试成功）
+
+- 日期：2026-05-05
+- 自动化：`ai-2`
+- 状态：generated
+- 产物：
+  - `01-Signals/2026-05-05-AI商业雷达.md`（status: pending_unified_sync）
+  - `02-Scoring/2026-05-05-AI机会评分.md`（status: pending_unified_sync）
+  - `agent-workflow/reports/daily-radar-run-2026-05-05.md`
+- 说明：
+  - 本轮仅生成内容 Markdown，不执行网站入站与关系/标签检查（统一同步由 `ai-3` 执行）。
+  - 已确保每条 Signal 含“机会拆解（6点｜必须详细拆解）”，且每条 Signal 仅指向 1 个主 Opportunity。
+
+### 2026/5/5 20:17:17 统一网站同步闸门（重试成功）
+
+- 日期：2026-05-05
+- 状态：synced
+- 阻塞项：0
+- 报告：agent-workflow/reports/unified-site-sync-2026-05-05.md
+- 备份目录：agent-workflow/backups/unified-site-sync/20260505-121717
+
+### 2026/5/5 20:08:53 AI商业雷达每日内容生成
+
+- 日期：2026-05-05
+- 自动化：`ai-2`
+- 状态：generated
+- 产物：
+  - `01-Signals/2026-05-05-AI商业雷达.md`（status: pending_unified_sync）
+  - `02-Scoring/2026-05-05-AI机会评分.md`（status: pending_unified_sync）
+  - `07-Opportunities/企业客户体验Agent平台.md`（status: spotted）
+  - Updated `03-Trends/AI趋势总表.md`（status: updated）
+- 报告：`agent-workflow/reports/daily-radar-run-2026-05-05.md`
+
+### 2026/5/6 14:46:30 AI商业雷达每日内容生成
+
+- 日期：2026-05-06
+- 自动化：`ai-2`
+- 状态：blocked (missing_sources)
+- 产物：未生成（避免空跑）
+  - `01-Signals/2026-05-06-AI商业雷达.md`
+  - `02-Scoring/2026-05-06-AI机会评分.md`
+- 来源准备：
+  - 命令：`node C:\Users\86186\.skill-store\follow-builders\scripts\prepare-digest.js`
+  - 本次 digest：`agent-workflow/reports/follow-builders-digest-2026-05-06.json`（podcasts/x/blogs 全部为空，包含 fetch 失败错误）
+- 报告：`agent-workflow/reports/daily-radar-run-2026-05-06.md`
+
+### 2026/5/5 20:17:17 统一网站同步闸门
+
+- 日期：2026-05-05
+- 状态：synced
+- 阻塞项：0
+- 报告：agent-workflow/reports/unified-site-sync-2026-05-05.md
+
+## 2026-05-06
+
+### 2026/5/6 14:44:55 The Point 每日观点生成
+
+- 日期：2026-05-06
+- 自动化：`ai-the-point`
+- 状态：failed（feed_fetch_failed）
+- 产物：未生成（未写入 `05-Point/2026-05-06-The-Point.md`）
+- 来源准备：
+  - 命令：`node C:\Users\86186\.skill-store\follow-builders\scripts\prepare-digest.js --date=2026-05-06`
+  - 结果：podcasts/x/blogs 均为 0；errors 包含 feed 拉取失败与 prompt 加载失败
+- 报告：`agent-workflow/reports/the-point-run-2026-05-06.md`
+
+### 2026/5/6 14:44:55 AI商业雷达每日内容生成
+
+- 日期：2026-05-06
+- 自动化：`ai-2`
+- 状态：blocked（missing_sources）
+- 产物：未生成（未写入 `01-Signals/2026-05-06-AI商业雷达.md` 与 `02-Scoring/2026-05-06-AI机会评分.md`）
+- 说明：follow-builders digest 为空，按 Fallback Policy 不生成空跑文件、不覆盖既有非空文件
+- 报告：`agent-workflow/reports/daily-radar-run-2026-05-06.md`
+
+### 2026/5/6 14:46:07 统一网站同步闸门
+
+- 日期：2026-05-06
+- 状态：blocked
+- 阻塞项：3
+- 报告：agent-workflow/reports/unified-site-sync-2026-05-06.md
+- 阻塞原因：
+  - AI商业雷达：缺少当天 Signals 文件或文件为空：01-Signals/2026-05-06-AI商业雷达.md
+  - AI机会评分：缺少当天 Scoring 文件或文件为空：02-Scoring/2026-05-06-AI机会评分.md
+  - The Point：缺少当天 The Point 文件或文件为空：05-Point/2026-05-06-The-Point.md
+
+### 2026/5/6 14:57:40 The Point 每日观点生成（重试成功）
+
+- 日期：2026-05-06
+- 自动化：`ai-the-point`
+- 状态：success
+- 产物：`05-Point/2026-05-06-The-Point.md`（`pending_unified_sync`）
+- digest：`agent-workflow/reports/follow-builders-digest-2026-05-06.json`
+- 报告：`agent-workflow/reports/the-point-run-2026-05-06.md`
+
+### 2026/5/6 14:58:20 AI商业雷达每日内容生成（重试成功）
+
+- 日期：2026-05-06
+- 自动化：`ai-2`
+- 状态：generated
+- 产物：
+  - `01-Signals/2026-05-06-AI商业雷达.md`（status: pending_unified_sync）
+  - `02-Scoring/2026-05-06-AI机会评分.md`（status: pending_unified_sync）
+  - `agent-workflow/reports/daily-radar-run-2026-05-06.md`
+- 说明：
+  - 本轮仅生成内容 Markdown，不执行网站入站与关系/标签检查（统一同步由 `ai-3` 执行）。
+
+### 2026/5/6 14:59:30 统一网站同步闸门（重试成功）
+
+- 日期：2026-05-06
+- 状态：synced
+- 阻塞项：0
+- 报告：agent-workflow/reports/unified-site-sync-2026-05-06.md
+- 备份目录：agent-workflow/backups/unified-site-sync/20260506-065930
+- Judgment Node 覆盖率：Priority Rows 50，Judgment Nodes 22，覆盖率 50/50
+- The Point 质量检查：硬错误 0
+- Tag Quality Check：forbidden_alias_hits=0，unknown_public_tag_hits=0
+
+### 2026/5/6 14:59:30 统一网站同步闸门
+
+- 日期：2026-05-06
+- 状态：synced
+- 阻塞项：0
+- 报告：agent-workflow/reports/unified-site-sync-2026-05-06.md

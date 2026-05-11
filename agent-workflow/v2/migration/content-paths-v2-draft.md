@@ -1,31 +1,37 @@
 # content-paths V2 Draft
 
-Status: draft only. Do not replace `04-Site/config/content-paths.json`.
+Status: V2 production-path draft after `01-SiteV2/` root normalization. Do not restore old `04-Site/` as the active V2 site.
 
 ```json
 {
   "legacy": {
-    "outDir": "04-Site/data",
-    "signalDir": "01-Signals",
-    "scoringDir": "02-Scoring",
-    "trendsFile": "03-Trends/AI趋势总表.md",
-    "pointDir": "05-Point",
-    "opportunitiesDir": "07-Opportunities"
+    "archiveDir": "10-Archive/v1.0",
+    "siteDir": "10-Archive/v1.0/site/04-Site",
+    "sourceDirs": "10-Archive/v1.0/source-dirs",
+    "contentArchive": "10-Archive/v1.0/v1.0-content-archive.md",
+    "mode": "read-only"
   },
   "v2": {
-    "contentDir": "06-content/v2",
-    "rawDir": "06-content/v2/00-raw",
-    "poolDir": "06-content/v2/01-pool",
-    "structuredDir": "06-content/v2/02-structured",
-    "frontSignalsDir": "06-content/v2/03-front-signals",
-    "heatEvidenceDir": "06-content/v2/06-heat-evidence",
-    "heatCardsDir": "06-content/v2/07-heat-cards",
-    "aiBriefDir": "06-content/v2/08-ai-brief",
-    "legacyIndexDir": "06-content/v2/12-legacy-index",
-    "isolatedOutDir": "04-Site/data/v2"
+    "rootDir": "01-SiteV2",
+    "contentDir": "01-SiteV2/content",
+    "siteDir": "01-SiteV2/site",
+    "rawDir": "01-SiteV2/content/01-raw",
+    "rawOriginalsDir": "01-SiteV2/content/01-raw/originals",
+    "poolDir": "01-SiteV2/content/02-pool",
+    "structuredDir": "01-SiteV2/content/03-structured-signals",
+    "frontSignalsDir": "01-SiteV2/content/04-selected-signals",
+    "trendChainDir": "01-SiteV2/content/05-trend-chain",
+    "insightsDir": "01-SiteV2/content/06-insights",
+    "pointsDir": "01-SiteV2/content/07-points",
+    "opportunitiesDir": "01-SiteV2/content/08-opportunities/deep-dive",
+    "mvpValidationDir": "01-SiteV2/content/09-mvp-validation",
+    "databasesDir": "01-SiteV2/content/10-databases",
+    "distributionDir": "01-SiteV2/content/11-content-distribution",
+    "feedbackDir": "01-SiteV2/content/12-feedback",
+    "archiveDir": "01-SiteV2/content/_archive",
+    "futureDataDir": "01-SiteV2/site/data"
   }
 }
 ```
 
-This draft is for future Dev planning only.
-
+This draft is the active V2 path reference for new production-line work. It is not a Netlify deploy config and does not publish content by itself.

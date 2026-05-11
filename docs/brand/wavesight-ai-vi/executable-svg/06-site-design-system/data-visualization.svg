@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-label="Data Visualization 数据图表风格">
+  <title>Data Visualization 数据图表风格</title>
+  <defs>
+    <linearGradient id="paperShade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7F4EF"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.4" refY="4" orient="auto">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#0D355C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    
+  </defs>
+  <style>
+  :root {
+    --gl-ink: #071827;
+    --gl-deep: #0B1D2A;
+    --gl-blue: #0D355C;
+    --gl-wave: #1F5D8C;
+    --gl-gray: #6F7F8F;
+    --gl-mountain: #A7ADB4;
+    --gl-border: #E5E8EC;
+    --gl-bg: #F7F4EF;
+    --gl-paper: #FFFFFF;
+    --gl-gold: #C8A766;
+  }
+  * { box-sizing: border-box; }
+  text { font-family: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: var(--gl-ink); letter-spacing: 0; }
+  .serif { font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif; }
+  .mono { font-family: "Inter", "IBM Plex Sans", "Avenir", Arial, sans-serif; letter-spacing: .12em; }
+  .label { fill: var(--gl-gray); font-size: 12px; }
+  .title { fill: var(--gl-ink); font-size: 22px; font-weight: 700; }
+  .subtitle { fill: var(--gl-gray); font-size: 11px; }
+  .caption { fill: var(--gl-gray); font-size: 10px; }
+  .fine { stroke: var(--gl-border); stroke-width: 1; }
+  .gold { stroke: var(--gl-gold); }
+  .blue { stroke: var(--gl-blue); }
+  .wave { stroke: var(--gl-wave); }
+  .card { fill: rgba(255,255,255,.86); stroke: var(--gl-border); stroke-width: 1; }
+  .soft { filter: drop-shadow(0 10px 24px rgba(7,24,39,.06)); }
+  .no-fill { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+  <rect width="360" height="220" fill="url(#paperShade)"/>
+  <g transform="translate(36 52)"><text y="0" font-size="13" font-weight="700">折线图</text><polyline points="0,82 42,72 84,78 126,56" fill="none" stroke="#0D355C" stroke-width="2"/><line y1="96" x2="132" y2="96" stroke="#E5E8EC"/><line y1="28" x2="132" y2="28" stroke="#E5E8EC"/></g>
+      <g transform="translate(194 52)"><text y="0" font-size="13" font-weight="700">柱状图</text><rect x="0" y="30" width="12" height="66" fill="#0D355C"/><rect x="22" y="42" width="12" height="54" fill="#0D355C"/><rect x="44" y="54" width="12" height="42" fill="#A7ADB4"/><rect x="66" y="64" width="12" height="32" fill="#A7ADB4"/><rect x="88" y="72" width="12" height="24" fill="#A7ADB4"/></g>
+      <text x="36" y="190" class="caption">图表使用深澜蓝主线、远山灰辅助，不使用高饱和渐变或装饰性网格。</text>
+</svg>

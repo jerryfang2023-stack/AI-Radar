@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>登录｜观澜AI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header></header>
+  <main class="auth-page auth-login-page">
+    <section class="auth-hero">
+      <div class="auth-hero-copy">
+        <span class="auth-kicker">MEMBER ACCESS</span>
+        <h1>回到你的 AI 商业判断层</h1>
+        <p>登录后继续查看商业内参预览、账户访问状态和已保存的阅读路径。</p>
+        <div class="auth-hero-links">
+          <a href="pricing.html">了解会员方案</a>
+          <a href="brief.html">返回商业内参</a>
+        </div>
+      </div>
+      <aside class="auth-insight-panel" aria-label="会员阅读说明">
+        <img src="assets/vi-components/02-information-elements/member-brief-tag.svg" alt="">
+        <span>WAVESIGHT AI BUSINESS BRIEF</span>
+        <strong>更早发现信号，更清楚理解证据，更系统跟踪机会。</strong>
+        <p>当前页面只提供访问状态预览，不连接真实账户服务。</p>
+      </aside>
+    </section>
+
+    <section class="auth-shell">
+      <form class="auth-form-v2" data-auth-form data-success="已记录登录演示状态。你可以继续查看账户访问状态。">
+        <div class="auth-form-head">
+          <span class="auth-kicker">SIGN IN</span>
+          <h2>登录账号</h2>
+          <p>使用常用邮箱继续阅读。真实认证会在后续专项接入。</p>
+        </div>
+        <label class="auth-field">
+          <span>邮箱</span>
+          <input name="email" type="email" autocomplete="email" required placeholder="name@company.com">
+          <small>用于识别你的会员访问申请。</small>
+        </label>
+        <label class="auth-field">
+          <span>密码</span>
+          <input name="password" type="password" autocomplete="current-password" required>
+          <small>当前为页面状态预览，信息不会离开当前页面。</small>
+        </label>
+        <div class="auth-actions">
+          <button class="button primary" type="submit">登录并继续阅读</button>
+          <a class="button secondary" href="register.html">申请访问</a>
+        </div>
+        <p class="auth-boundary">尚未开放真实账户认证。提交后只显示本地页面反馈。</p>
+        <div class="auth-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <aside class="auth-side-note">
+        <span>READING PATH</span>
+        <ol>
+          <li><strong>了解会员价值</strong><p>先看会员方案和内参预览。</p></li>
+          <li><strong>提交申请</strong><p>留下邮箱、身份和关注议题。</p></li>
+          <li><strong>查看状态</strong><p>在账户页确认当前访问层级。</p></li>
+        </ol>
+      </aside>
+    </section>
+  </main>
+  <footer data-footer></footer>
+  <script src="data/site-content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
