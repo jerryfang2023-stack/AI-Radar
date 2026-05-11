@@ -4160,3 +4160,44 @@ Agent 安排：
 - 不要回滚会员页开发改动。
 - 本次是单任务用户手工确认例外，不取消后续页面 / 文案任务默认独立质检规则。
 
+## 2026-05-11 V2 商业信号页面体系独立质检未通过
+
+最新状态：`V2-KEY-SIGNALS-QA / WSD-20260511-06-v2-key-signals-pages-quality-review` 已完成，结论为 `completed / needs-revision`。
+
+收口文件：
+- `agent-workflow/reports/WSD-20260511-06-v2-key-signals-pages-quality-review-closeout.md`
+
+检查页面：
+- `01-SiteV2/site/signals.html`
+- `01-SiteV2/site/signal-detail.html`
+- `01-SiteV2/site/structured-signal.html`
+- `01-SiteV2/site/builders.html`
+- `01-SiteV2/site/builder-detail.html`
+
+质检结果：
+- 总分：52 / 70。
+- 定位一致性：8。
+- 信息架构：7。
+- 商业判断：8。
+- 文案自然度：7。
+- 视觉体验：8。
+- 页面节奏：7。
+- 可信度：7。
+- 未通过原因：文案自然度和可信度低于核心维度 8 分要求。
+
+主要问题：
+- Builders 体系仍像 KOL / source 聚合页。
+- `builder-detail.html` 首屏身份和相关内容有裸域名 / 资料库感。
+- 英文和内部字段式标签过多。
+- Structured Signal 来源事实模板化。
+- Signal / Front Signal / Structured Signal / Builders / Opportunity / Business Brief 的关系表达不够清楚。
+
+已新增返修任务：
+- `V2-KEY-SIGNALS-REVISION / WSD-20260511-07-v2-key-signals-pages-revision`
+- 派发单：`agent-workflow/execution/WSD-20260511-07-v2-key-signals-pages-revision.md`
+
+接手注意：
+- 下一步优先派发 `V2-KEY-SIGNALS-REVISION`。
+- 返修完成后必须再次派发独立页面与文案质检。
+- 不要把 `V2-KEY-SIGNALS-SYSTEM` 的阶段性验收误认为本轮商业信号页面质量已最终 accepted。
+

@@ -5165,3 +5165,15 @@ Agent 安排：
 - 独立质检任务处理：`V2-MEMBER-AUTH-QA / WSD-20260511-05-v2-member-auth-pages-quality-review` 标记为 `void / user-waived`，不再派发。
 - 后续约束：本次为单任务用户手工确认例外，不取消后续页面 / 文案任务的独立质检默认规则。
 
+# 2026-05-11 V2 商业信号页面体系独立质检
+
+- 状态：completed / needs-revision。
+- 任务：`V2-KEY-SIGNALS-QA / WSD-20260511-06-v2-key-signals-pages-quality-review`。
+- 收口文件：`agent-workflow/reports/WSD-20260511-06-v2-key-signals-pages-quality-review-closeout.md`。
+- 检查页面：`signals.html`、`signal-detail.html`、`structured-signal.html`、`builders.html`、`builder-detail.html`。
+- 质检结论：总分 52 / 70，未达到 accepted 硬闸门；定位一致性 8、商业判断 8，但文案自然度 7、可信度 7，低于核心维度 8 分要求。
+- 主要问题：Builders 体系仍像 KOL / source 聚合页；英文和内部字段式标签过多；Structured Signal 来源事实模板化；信号进入机会解码 / 商业内参的关系不够清楚；部分相关内容有资料库和裸 URL 感。
+- 证据：5 个目标页面均完成桌面渲染检查，截图已生成到 `agent-workflow/reports/WSD-20260511-06-render-*.png`；横向溢出检查通过。
+- 已新增返修任务：`V2-KEY-SIGNALS-REVISION / WSD-20260511-07-v2-key-signals-pages-revision`。
+- 下一步：派发 `V2-KEY-SIGNALS-REVISION` 到独立执行窗口；返修完成后必须再次派发独立页面与文案质检。
+
