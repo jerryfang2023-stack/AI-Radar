@@ -1020,6 +1020,7 @@ function regenerateDate(date) {
 
   const opinions = regenerateOpinions(date, changeCards.map((item) => item.id));
   const trends = writeTrendAndCluster(date, changeCards, caseCards, changeRecords);
+  write(path.join(dirs.businessSignals, `${date}-change-cluster-candidates.md`), clusterCandidatesMarkdown(date, trends));
   write(path.join(dirs.businessSignals, `${date}-selected-change-cards.md`), selectedMarkdown(date, changeCards, changeRecords, caseCards, opinions));
   write(path.join(dirs.caseResearch, `${date}--case-research--regenerated-l1-index.md`), caseResearchMarkdown(date, caseCards.map((item) => ({ id: item.id, title: item.title }))));
 
