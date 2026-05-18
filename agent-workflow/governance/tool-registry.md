@@ -1,4 +1,4 @@
-# 工具登记表
+﻿# 工具登记表
 
 ## 已纳入工作流的工具/方法
 
@@ -24,7 +24,7 @@
 | dedupe-check.mjs | 查重复 signal、slug、机会方向 | M2 开发 |
 | content-quality-check.mjs | 检查公司名标题、内部话术、空字段 | M2 开发 |
 | deploy-check.mjs | 云端部署前检查 | M4 开发 |
-| brief-quality-check.mjs | 检查今日要点是否有主判断、证据、趋势温度、关键词、来源和风险边界 | M2 开发 |
+| brief-quality-check.mjs | 检查今日观察是否有主判断、证据、趋势温度、关键词、来源和风险边界 | M2 开发 |
 | keyword-quality-report.mjs | 检查关键词高产、低效、噪音和新增建议 | M2 开发 |
 | public-admin-check.mjs | 检查普通页面是否泄露 Admin 控件 | M3 开发 |
 

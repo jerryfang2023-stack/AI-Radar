@@ -1,11 +1,11 @@
-# Intelligence Data Model
+﻿# Intelligence Data Model
 
 更新时间：2026-05-03  
 owner：Intelligence Data Agent
 
 ## 1. 定位
 
-本模型定义观澜AI的统一判断资产标准。它把 Signal、Priority、Trend、Opportunity、Point 组织成一张可追溯、可评分、可复核、可持续优化的商业判断网络。
+本模型定义观澜AI的统一判断资产标准。它把 Signal、Priority、Trend、Trend Report、Point 组织成一张可追溯、可评分、可复核、可持续优化的商业判断网络。
 
 观澜AI不把内容当作孤立文章管理，而把每条内容沉淀为判断资产：
 
@@ -13,8 +13,8 @@ owner：Intelligence Data Agent
 Signal 记录发生了什么
 Priority 判断现在值不值得优先看
 Trend 判断方向是否形成势能
-Opportunity 判断可验证的商业机会
-Point 记录一线建造者怎么看；前台归属到「关键信号 > Builders 观点」
+Trend Report 形成可验证的趋势判断，并在文章中承接机会判断
+Point 记录关键建造者、投资人、研究者和一线操盘者怎么看；前台归属到「商业信号 > 前沿观点」
 AIBriefIssue 记录跨周期、跨栏目、可归档的商业组合判断
 ```
 
@@ -43,7 +43,7 @@ Signal 是有商业证据的 AI 商业变化，不是普通新闻。
 - 有商业含义：说明某方向升温、分化、成熟、受阻或出现机会。
 - 有来源层级：S / A / B / C / D。
 - 有 Signal Score 或可复核的评分拆解。
-- 有相关 Opportunity 或 Trend。
+- 有相关 Trend Report 或 Trend。
 - 每日商业雷达 Signal 必须包含 6 点机会拆解。
 
 硬性质量规则：
@@ -60,7 +60,7 @@ Priority 是后台评分项，不作为普通前台栏目。
 最小合格标准：
 
 - 能回链到原始 Signal。
-- 能进入 Opportunity。
+- 能进入 Trend Report。
 - 能被 Trend 吸收为评分证据。
 - 保留原始评分名称、机会方向、代表案例、赛道、总分和判断。
 - 公司名必须拆为代表案例，不作为机会方向。
@@ -80,7 +80,7 @@ Trend 是商业势能判断，不是标签列表。
 - 有趋势状态：rising / splitting / cooling / emerging / mature / risk / invalidating。
 - 有 7 天与 30 天判断。
 - 有评分证据或 Signal 证据。
-- 有相关 Opportunity。
+- 有相关 Trend Report。
 - 有具体产品或代表案例。
 - 有反证观察点。
 
@@ -91,32 +91,53 @@ Trend 是商业势能判断，不是标签列表。
 - 新趋势可先标记为 emerging，但不能长期缺少证据。
 - 缺 Signal 证据的 Trend 进入软提醒，需 Data Agent 复核。
 
-## 6. Opportunity Intelligence
+## 6. Trend Report Intelligence
 
-Opportunity 是可验证的商业机会方向，不是公司报道。
+Trend Report 是可验证的趋势判断文章，不是公司报道，也不是旧独立卡片。
 
-C-3 确认后，前台「机会解码」的核心形态是 Deep Dive 商业内参级机会判断报告，而不是机会卡列表。Deep Dive 必须达到 6000-10000 中文字，能够单独辅助老板判断是否值得继续投入注意力、资源、人脉、试点或内部讨论。
+C-3 确认后，前台「机会判断」的核心形态是趋势深度报告和商业内参中的文章段落，而不是独立卡片列表。趋势深度报告必须达到 6000-10000 中文字，能够单独辅助老板判断是否值得继续投入注意力、资源、人脉、试点或内部讨论。
+
+Trend Report 有两种形态：
+
+| kind | 前台名称 | 规则 |
+|---|---|---|
+| `flash` | 趋势快报 | 2000-3500 中文字，急件候选触发，公开或登录可读，30 天 follow-up |
+| `full` | 深度报告 | 6000-10000 中文字，周任务或快报升级触发，会员重点内容 |
+
+ID 和状态规则：
+
+| 字段 | 规则 |
+|---|---|
+| `id` | `TRD-FLASH-YYYYMMDD-XX` 或 `TRD-FULL-YYYYMMDD-XX` |
+| `status` | `watching` / `upgraded` / `archived` / `revised` |
+| `front_status` | `visible` / `hidden` |
+| `urgent_candidate_id` | `UTCAND-YYYYMMDD-XX` |
+| `upgrade_target` | 快报升级后的正式报告 ID |
+| `upgraded_from` | 正式报告回链快报 ID |
+
+前台第一版只显示 `watching` 和 `upgraded`。`archived` / `revised` 后台保留，商业内参可以引用，用于复盘判断变化。
 
 最小合格标准：
 
 - 标题必须是方向、客户场景或能力，不写公司名。
 - 有目标客户、具体问题、替代流程、商业模式、判断结论和风险边界。
 - 至少能关联 Signal、Trend、Priority 或 Point 中的一类证据。
-- 正式机会应尽量有 Priority 评分；早期机会可标为 watch。
+- 正式深度报告应尽量有 Priority 评分；早期方向可先以趋势快报或 Trend Card 保留。
 - 公司名只进入代表案例、来源或证据。
 
-机会分层：
+Trend Report 分层：
 
 | 类型 | 标准 | 处理 |
 |---|---|---|
-| 正式机会 | 有评分、有 Signal、有 Trend | 前台展示 |
-| 观察机会 | 有 Signal 或 Point，但暂无评分 | 可保留，进入软提醒 |
-| 候选机会 | 只有单次弱证据 | 暂不前台强化 |
-| 重叠机会 | 与已有机会高度重合 | 建议合并或降级 |
+| 深度报告 | 有评分、有 Signal、有 Trend、有反证 | 前台展示，会员重点内容 |
+| 趋势快报 | 急件候选通过，来源质量达标但尚未完整展开 | 前台展示，30 天 follow-up |
+| 观察方向 | 有 Signal 或 Point，但暂无评分或反证不足 | 进入 Trend Card 或软提醒 |
+| 候选方向 | 只有单次弱证据 | 暂不前台强化 |
+| 重叠方向 | 与已有报告高度重合 | 建议合并或降级 |
 
-Opportunity -> Priority 不能为了清零而硬绑。没有评分证据的早期机会应输出处理结论：补评分、观察、合并或降级。
+Trend Report -> Priority 不能为了清零而硬绑。没有评分证据的早期方向应输出处理结论：补评分、观察、合并或降级。
 
-Deep Dive 机会判断报告必须包含：
+趋势深度报告 机会判断报告必须包含：
 
 - 老板先看。
 - 机会判断。
@@ -135,14 +156,14 @@ Deep Dive 机会判断报告必须包含：
 
 ## 7. The Point Intelligence
 
-Point 是结构化建造者观点，不等同新闻。
+Point 是结构化前沿观点，不等同新闻。
 
 前台归属：
 
 - The Point 不作为一级栏目。
-- Point 在前台展示为「关键信号 > Builders 观点」。
-- Builder 详情页按人物 / title / 发言时间线组织，展示观点的延续、修正、转向和冲突。
-- Point 只作为判断校准，不作为事实主证据。
+- Point 在前台展示为「商业信号 > 前沿观点」。
+- 前沿观点详情页按人物 / title / 发言时间线组织，展示观点的延续、修正、转向和冲突。
+- Point 只作为判断参照，不作为事实主证据。
 
 最小合格标准：
 
@@ -151,7 +172,7 @@ Point 是结构化建造者观点，不等同新闻。
 - Podcast 使用原始发言段 / 发言段译文。
 - Blog 使用原始段落 / 原始段落译文。
 - Podcast / Blog / YouTube 必须绑定站内素材笔记。
-- Point 应关联 Signal、Trend 或 Opportunity。
+- Point 应关联 Signal、Trend 或 Trend Report。
 
 质量规则：
 
@@ -168,15 +189,15 @@ AIBriefIssue 是商业内参的判断资产对象。
 最小合格标准：
 
 - 围绕一个主题、赛道、趋势或周期形成组合判断。
-- 至少关联 Signal / Trend / Opportunity / Point 中的两类资产。
+- 至少关联 Signal / Trend / Trend Report / Point 中的两类资产。
 - 明确覆盖周期：7 天、30 天、90 天、月度、季度或专题周期。
-- 有执行摘要、信号链、机会组合、趋势判断、Builders 观点分歧、风险与反证、判断结论、后续观察和来源附录。
+- 有执行摘要、信号链、机会组合、趋势判断、前沿观点分歧、风险与反证、判断结论、后续观察和来源附录。
 - 所有事实、数据和案例必须有来源名、来源等级、原始外链和增量事实。
-- Builder 观点只能作为观点校准，不替代事实主证据。
+- 前沿观点只能作为判断参照，不替代事实主证据。
 
 质量规则：
 
-- 单个 Opportunity Deep Dive 不能直接等同于 AIBriefIssue。
+- 单个 趋势深度报告 不能直接等同于 AIBriefIssue。
 - 热度不能直接推导机会成立，必须说明商业证据和证据缺口。
 - 内参可以形成判断，但不替用户下最终经营、投资或合作判断。
 - 缺少来源附录或证据边界的内参不得进入正式会员层。
@@ -186,24 +207,24 @@ AIBriefIssue 是商业内参的判断资产对象。
 核心关系：
 
 ```text
-Signal -> Opportunity
+Signal -> Trend Report
 Signal -> Trend
 Priority -> Signal
-Priority -> Opportunity
+Priority -> Trend Report
 Priority -> Trend
 Trend -> Signal
 Trend -> Priority
-Trend -> Opportunity
-Opportunity -> Signal
-Opportunity -> Priority
-Opportunity -> Trend
+Trend -> Trend Report
+Trend Report -> Signal
+Trend Report -> Priority
+Trend Report -> Trend
 Point -> Source
 Point -> Signal
 Point -> Trend
-Point -> Opportunity
+Point -> Trend Report
 AIBriefIssue -> Signal
 AIBriefIssue -> Trend
-AIBriefIssue -> Opportunity
+AIBriefIssue -> Trend Report
 AIBriefIssue -> Point
 ```
 
@@ -216,30 +237,31 @@ AIBriefIssue -> Point
 
 软提醒：
 
-- Opportunity 暂无 Priority。
+- Trend Report 暂无 Priority。
 - Trend 证据过少。
 - Signal 尚未进入 Trend。
 - Podcast / Blog / YouTube 缺素材笔记。
 - 来源授权说明不足。
-- AIBriefIssue 缺少关联 Signal / Trend / Opportunity / Point 中的任意两类支撑。
+- AIBriefIssue 缺少关联 Signal / Trend / Trend Report / Point 中的任意两类支撑。
 
 软提醒必须有处理结论，不要求全部强行清零。
 
 ## 9. 发布闸门
 
-每日入站必须通过统一同步闸门：
+V2.1 每日入站不再使用旧 `unified-site-sync.mjs`。当前发布前检查按任务类型执行：
 
 ```powershell
-node agent-workflow/tools/unified-site-sync.mjs
+node agent-workflow/tools/run-quality-gates.mjs syntax
+node agent-workflow/tools/run-quality-gates.mjs v2content --date=YYYY-MM-DD
 ```
 
 闸门检查：
 
-- 当天 AI商业雷达、AI机会评分、The Point 同时就绪。
-- 每条当天 Signal 包含 6 点机会拆解。
-- The Point 满足 Top10、无短链、无 timecode。
-- 同步前备份网站数据。
-- 同步后运行关系检查和 The Point 质量检查。
+- Raw / Pool / Card 是否满足 Raw-first / Evidence-first 证据门槛。
+- 前台事实是否能回到 Raw 快照、原始 URL、关键摘录和 S/A/B 来源。
+- 今日观察、商业信号、趋势追踪和商业内参是否没有把 AI HOT、follow-builders、社区或聚合源当作事实主证据。
+- 站点数据同步后必须能通过相关语法和内容检查。
+- 旧 V1 `AI商业雷达 / AI机会评分 / The Point` 同步闸门只作为历史记录，不作为 V2.1 当前验收条件。
 
 ## 10. 长期报告
 

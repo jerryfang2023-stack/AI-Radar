@@ -1,4 +1,4 @@
-# Signals 定义、监测与运营模型
+﻿# Signals 定义、监测与运营模型
 
 更新时间：2026-05-02
 
@@ -36,8 +36,8 @@ Signals 系统采用“规则评分 + 人工复核 + 运营反馈”的混合模
 模型目标不是替人做最终判断，而是帮助团队完成四件事：
 
 1. 从每日监测中筛出高价值候选。
-2. 让 Daily Brief 选择更稳定。
-3. 让 Opportunities 和 Trends 有证据链。
+2. 让今日观察选择更稳定。
+3. 让 Trend Reports 和 Trend Cards 有来源与事实支撑。
 4. 反向优化关键词、网站和数据源。
 
 ## 4. Signal Score
@@ -51,7 +51,7 @@ Signal Score 使用 100 分制。
 | 来源可信度 | 15 | 是否来自一手来源、高质量媒体或可靠产业数据 |
 | 赛道相关性 | 15 | 是否落在观澜 AI 当前重点关注赛道或机会方向 |
 | 新变化程度 | 10 | 是否代表新阶段、新客户、新动作、新变量 |
-| 关联价值 | 10 | 是否能关联已有 Opportunity、Trend 或高价值标签 |
+| 关联价值 | 10 | 是否能关联已有 Trend Report、Trend 或高价值标签 |
 | 反证与风险提示 | 5 | 是否包含会削弱判断的风险变量或反证线索 |
 
 ## 5. 运营状态
@@ -59,7 +59,7 @@ Signal Score 使用 100 分制。
 | 分数 | 状态 | 处理方式 |
 |---:|---|---|
 | 85-100 | `core_signal` | 进入 Daily Brief 候选，必须人工复核 |
-| 70-84 | `valid_signal` | 进入 Signals 库，可关联 Opportunity 或 Trend |
+| 70-84 | `valid_signal` | 进入 Signals 库，可关联 Trend Report 或 Trend |
 | 55-69 | `watch_signal` | 进入观察池，等待更多证据 |
 | 40-54 | `weak_signal` | 暂存，不进入前台 |
 | 0-39 | `noise` | 标记噪音，用于优化关键词和来源 |
@@ -83,7 +83,7 @@ Signal Score 使用 100 分制。
 - `summary`
 - `evidence`
 - `source_urls`
-- `related_opportunity_ids`
+- `related_trend_report_ids`
 - `related_trend_ids`
 - `tags`
 - `status`
@@ -104,7 +104,7 @@ Signal Score 使用 100 分制。
 - `feedback_tags`
 - `rejection_reason`
 - `converted_to_daily`
-- `converted_to_opportunity`
+- `converted_to_trend_report`
 - `converted_to_trend`
 
 ## 7. 监测来源分层
@@ -166,7 +166,7 @@ Signal Score 使用 100 分制。
 - 噪音率。
 - 重复率。
 - 进入 Daily Brief 的数量。
-- 转化为 Opportunity 或 Trend 的数量。
+- 转化为 Trend Report 或 Trend 的数量。
 - 主要来源域名。
 
 来源指标：
@@ -245,7 +245,7 @@ agent-workflow/reports/signal-model-calibration-YYYY-MM.md
 
 内容：
 
-- 哪些高分 Signal 最终形成 Opportunity 或 Trend。
+- 哪些高分 Signal 最终形成 Trend Report 或 Trend。
 - 哪些高分 Signal 被证明只是热度。
 - 哪些低分 Signal 后续变重要。
 - 是否需要调整权重。
@@ -265,7 +265,6 @@ agent-workflow/reports/signal-model-calibration-YYYY-MM.md
 - Signal 标题必须是“事件 + 商业含义”，不能只是公司名。
 - 公司名、产品名是证据字段，不是判断本身。
 - 每个 Signal 要说明“为什么值得关注”。
-- 每个 Signal 尽量关联 Opportunity 或 Trend。
+- 每个 Signal 尽量关联 Trend Report 或 Trend。
 - 重复 Signal 不新增第二条，应合并更新或补充证据。
 - 前台不展示完整算法细节，只展示证据强度、趋势关联和判断依据。
-

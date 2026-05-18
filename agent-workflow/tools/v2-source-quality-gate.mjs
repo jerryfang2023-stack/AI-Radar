@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const registryPath = path.join(root, "01-SiteV2", "content", "10-databases", "source-registry-v2.json");
+const registryPath = path.join(root, "01-SiteV2", "content", "09-databases", "source-registry-v2.json");
 const reportsDir = path.join(root, "agent-workflow", "reports");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");

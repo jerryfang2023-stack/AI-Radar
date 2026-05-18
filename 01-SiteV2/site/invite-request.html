@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>申请邀请码｜观澜AI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page-invite-request">
+  <header class="site-header" data-header></header>
+  <main class="auth-page auth-register-page">
+    <section class="auth-hero">
+      <div class="auth-hero-copy">
+        <span class="auth-kicker">INVITE REQUEST</span>
+        <h1>申请邀请码</h1>
+        <p>填写邮箱、公司、身份和申请理由。审核后，邀请码会通过邮箱发放。</p>
+      </div>
+    </section>
+
+    <section class="auth-shell">
+      <form class="auth-form-v2" data-auth-form data-no-login="true" data-success="申请已提交。通过后，邀请码会通过邮箱发放。">
+        <div class="auth-form-head">
+          <span class="auth-kicker">REQUEST</span>
+          <h2>申请信息</h2>
+          <p>请用常用邮箱，便于接收邀请码。</p>
+        </div>
+        <div class="auth-field-grid-v2">
+          <label class="auth-field auth-field-wide">
+            <span>邮箱</span>
+            <input name="requestEmail" type="email" autocomplete="email" required>
+          </label>
+          <label class="auth-field">
+            <span>公司/机构</span>
+            <input name="requestCompany" required>
+          </label>
+          <label class="auth-field">
+            <span>身份</span>
+            <input name="requestRoleTitle" placeholder="创始人、投资人、业务负责人等" required>
+          </label>
+          <label class="auth-field auth-field-wide">
+            <span>申请理由</span>
+            <textarea name="requestReason" rows="4" placeholder="简要说明你关注的 AI 商业议题" required></textarea>
+          </label>
+        </div>
+        <div class="auth-actions">
+          <button class="button primary" type="submit">提交申请</button>
+          <a class="button secondary" href="register.html">已有邀请码，创建账号</a>
+        </div>
+        <div class="auth-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <aside class="auth-side-note">
+        <span>REVIEW</span>
+        <ol>
+          <li><strong>填写申请</strong><p>邮箱、公司、身份、理由。</p></li>
+          <li><strong>邮箱发放</strong><p>通过后接收邀请码。</p></li>
+          <li><strong>创建账号</strong><p>使用邀请码完成注册。</p></li>
+        </ol>
+      </aside>
+    </section>
+  </main>
+  <footer data-footer></footer>
+  <script src="data/site-content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# V2 Skill Pattern Gate
+﻿# V2 Skill Pattern Gate
 
 日期：2026-05-10  
 状态：accepted  
@@ -83,7 +83,7 @@ Skill Pattern 只描述任务执行方法，不改变长期 Agent 分工：
 - V2 页面任务不得继承用户不满意的旧页面验收作为质量基线；必须重新诊断和评分。
 - VI 相关任务必须优先读取 `docs/brand/wavesight-ai-vi/` 和 `V2-VI-SVG-RESTORE` 产物。
 - `follow-builders`、`AI HOT` 等采集通道属于 Tool Wrapper / source-router，不能作为事实主证据。
-- V2 daily 自动化属于 Pipeline，必须包含 Raw / Pool / Structured / Front / Deep Dive / Trend 阶段和失败降级。
+- V2 daily 自动化属于 Pipeline，必须包含 Raw / Pool / Structured / Front / 趋势深度报告 / Trend 阶段和失败降级。
 - 页面、内容、自动化和部署任务都必须把 Reviewer 证据写入 closeout。
 
 ## 8. 收口要求

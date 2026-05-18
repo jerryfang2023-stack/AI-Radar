@@ -1,4 +1,4 @@
-# Strategy Agent
+﻿# Strategy Agent
 
 ## 岗位定位
 
@@ -36,7 +36,7 @@ Strategy Agent 是观澜AI的战略总控，负责判断项目是否仍在正确
 - `product/product-strategy.md`
 - `product/strategy-single-source.md`
 - `product/column-architecture.md`
-- `product/commercial-site-modules.md`
+- `product/product-strategy.md`
 - `feature_list.json`
 - 用户新想法、新需求、市场变化
 - 竞品或外部参考

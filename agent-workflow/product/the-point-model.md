@@ -1,4 +1,4 @@
-# The Point 观点层模型
+﻿# The Point 观点层模型
 
 更新时间：2026-05-03  
 owner：`pm` / `data`  
@@ -26,18 +26,18 @@ The Point 是观澜AI的“建造者观点层”。
 
 ## 2.1 前台导航位置
 
-The Point 不再进入前台一级导航。前台归属为「关键信号 > Builders 观点」，后台仍保留 Point 数据模型和自动化生产口径。
+The Point 不再进入前台一级导航。前台归属为「商业信号 > 前沿观点」，后台仍保留 Point 数据模型和自动化生产口径。
 
 导航顺序：
 
 ```text
-今日要点 / 关键信号 / 机会解码 / 商业内参
+今日观察 / 商业信号 / 机会判断 / 商业内参
 ```
 
 放在 Signals 之后的原因：
 
 - Signals 是事实与商业事件层。
-- The Point 是后台建造者观点与解释层；前台表达为 Builders 观点 / 观点与思考。
+- The Point 是后台建造者观点与解释层；前台统一表达为「前沿观点」。
 - 用户先看“发生了什么”，再看“关键建造者怎么看”，最后进入机会与趋势判断。
 
 ## 3. 来源原则
@@ -282,7 +282,7 @@ priority_score_adjusted = priority_score + point_support_bonus - point_risk_pena
 builder.html?id=<builder_id>
 ```
 
-详情页用于承接今日要点、关键信号、趋势和机会中对观点的引用。
+详情页用于承接今日观察、商业信号、趋势和机会中对观点的引用。
 
 页面以人物 / title / 发言时间线为基线：
 
@@ -290,7 +290,7 @@ builder.html?id=<builder_id>
 - 当前观点摘要：近 7 / 30 / 90 天核心判断。
 - 发言时间线：日期、当时 title、来源平台、原始外链、原文摘录或摘要、中文转述、观澜解读、关联 Signal / Trend / Opportunity、观点状态。
 - 观点变化：延续、修正、转向、冲突，以及变化发生在哪个变量上。
-- 关联内容：Front Signal、Structured Signal、Trend、Opportunity、Deep Dive。
+- 关联内容：精选变化卡、变化卡、Trend、Opportunity、趋势深度报告。
 - 来源与边界：观点只能作为判断校准，不替代公司公告、客户证据、财报、监管文件等事实来源。
 
 详情页必须回答：

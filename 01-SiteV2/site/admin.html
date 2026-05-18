@@ -1,0 +1,375 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>管理后台｜观澜AI</title>
+  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="admin-v2-page">
+  <main class="admin-v2-shell" data-admin-v2>
+    <aside class="admin-v2-rail" aria-label="Admin 导航">
+      <a class="admin-v2-brand" href="admin.html" aria-label="观澜AI 管理后台">
+        <img src="assets/brand/logo-wavesight-reference-symbol.svg" alt="观澜AI">
+        <span>
+          <strong>观澜AI</strong>
+          <small>Admin Console</small>
+        </span>
+      </a>
+      <nav class="admin-v2-nav" aria-label="后台模块">
+        <button type="button" data-admin-tab="dashboard" aria-current="true">项目统计</button>
+        <button type="button" data-admin-tab="content">内容管理</button>
+        <button type="button" data-admin-tab="members">用户与权限</button>
+        <button type="button" data-admin-tab="invites">邀请码</button>
+        <button type="button" data-admin-tab="orders">订阅与订单</button>
+        <button type="button" data-admin-tab="quality">质量检查</button>
+        <button type="button" data-admin-tab="settings">系统设置</button>
+      </nav>
+      <div class="admin-v2-rail-note">
+        <a href="index.html">前台预览</a>
+      </div>
+    </aside>
+
+    <section class="admin-v2-workspace">
+      <header class="admin-v2-topbar">
+        <div class="admin-v2-topbar-inner">
+          <div class="admin-v2-current-module">
+            <span data-admin-current-kicker>OPERATIONS DASHBOARD</span>
+            <strong data-admin-current-title>项目统计</strong>
+          </div>
+          <div class="admin-v2-statusline" aria-label="状态摘要">
+          </div>
+        </div>
+      </header>
+
+      <section class="admin-v2-panel" data-admin-panel="dashboard">
+        <div class="admin-v2-section-head admin-v2-section-head-compact">
+          <div>
+            <p class="admin-v2-kicker">Operations Dashboard</p>
+            <h2>项目统计</h2>
+          </div>
+        </div>
+        <div class="admin-v2-dashboard">
+          <section class="admin-v2-kpi-grid" data-admin-kpis></section>
+          <section class="admin-v2-dashboard-main">
+            <article class="admin-v2-chart-card">
+              <div class="admin-v2-chart-head">
+                <span>TRAFFIC TREND</span>
+                <strong>访问增长</strong>
+              </div>
+              <div class="admin-v2-line-chart" data-admin-traffic-chart></div>
+            </article>
+            <article class="admin-v2-chart-card">
+              <div class="admin-v2-chart-head">
+                <span>MEMBERSHIP FUNNEL</span>
+                <strong>会员转化</strong>
+              </div>
+              <div class="admin-v2-funnel" data-admin-funnel></div>
+            </article>
+          </section>
+          <section class="admin-v2-dashboard-main">
+            <article class="admin-v2-chart-card">
+              <div class="admin-v2-chart-head">
+                <span>CONTENT ASSETS</span>
+                <strong>内容资产</strong>
+              </div>
+              <div class="admin-v2-asset-bars" data-admin-assets></div>
+            </article>
+            <article class="admin-v2-chart-card">
+              <div class="admin-v2-chart-head">
+                <span>LAST 7 DAYS</span>
+                <strong>运营概览</strong>
+              </div>
+              <div class="admin-v2-ops-list" data-admin-ops></div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section class="admin-v2-panel" data-admin-panel="content">
+        <div class="admin-v2-section-head admin-v2-section-head-compact">
+          <div>
+            <p class="admin-v2-kicker">Content Manager</p>
+            <h2>内容管理</h2>
+          </div>
+        </div>
+        <div class="admin-v2-cms" aria-label="内容发布管理">
+          <div class="admin-v2-cms-toolbar">
+            <div class="admin-v2-content-tools">
+              <label>
+                <span>内容类型</span>
+                <select data-admin-content-type>
+                  <option value="dates">今日观察</option>
+                  <option value="signals">商业信号</option>
+                  <option value="trendReports">趋势追踪</option>
+                  <option value="points">观点校准</option>
+                  <option value="trends">趋势背景</option>
+                </select>
+              </label>
+              <label>
+                <span>关键词</span>
+                <input data-admin-content-search type="search" placeholder="搜标题、摘要、标签、来源">
+              </label>
+              <label>
+                <span>状态</span>
+                <select data-admin-content-status>
+                  <option value="all">全部</option>
+                  <option value="review">review</option>
+                  <option value="ready">ready</option>
+                  <option value="draft">draft</option>
+                  <option value="archived">archived</option>
+                </select>
+              </label>
+            </div>
+            <div class="admin-v2-content-count" data-admin-content-count>内容读取中。</div>
+          </div>
+          <div class="admin-v2-cms-layout">
+            <section class="admin-v2-cms-table-wrap">
+              <div class="admin-v2-cms-table" role="table" aria-label="内容列表">
+                <div class="admin-v2-cms-row admin-v2-cms-head" role="row">
+                  <span>标题</span>
+                  <span>类型</span>
+                  <span>日期</span>
+                  <span>状态</span>
+                  <span>操作</span>
+                </div>
+                <div data-admin-content-items></div>
+              </div>
+            </section>
+          </div>
+          <section class="admin-v2-editor-page" data-admin-editor-page hidden>
+            <div class="admin-v2-editor-toolbar">
+              <button type="button" data-admin-editor-back>返回列表</button>
+              <span data-admin-content-draft-state>未选择</span>
+            </div>
+            <form class="admin-v2-content-form admin-v2-visual-form" data-admin-content-form>
+              <input type="hidden" name="key">
+              <section class="admin-v2-edit-module">
+                <div class="admin-v2-edit-module-head">
+                  <span>01</span>
+                  <h3>基础信息</h3>
+                </div>
+                <div class="admin-v2-edit-grid">
+                  <label>
+                    <span>标题</span>
+                    <input name="title" required>
+                  </label>
+                  <label>
+                    <span>日期</span>
+                    <input name="date">
+                  </label>
+                  <label>
+                    <span>状态</span>
+                    <select name="status">
+                      <option value="review">review</option>
+                      <option value="ready">ready</option>
+                      <option value="draft">draft</option>
+                      <option value="archived">archived</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>备注</span>
+                    <input name="note">
+                  </label>
+                </div>
+              </section>
+              <section class="admin-v2-edit-module">
+                <div class="admin-v2-edit-module-head">
+                  <span>02</span>
+                  <h3>摘要 / 判断</h3>
+                </div>
+                <textarea name="summary" rows="8"></textarea>
+              </section>
+              <section class="admin-v2-edit-module">
+                <div class="admin-v2-edit-module-head">
+                  <span>03</span>
+                  <h3>正文模块</h3>
+                </div>
+                <div data-admin-section-editor></div>
+              </section>
+              <section class="admin-v2-edit-module">
+                <div class="admin-v2-edit-module-head">
+                  <span>04</span>
+                  <h3>来源 / 关系 / 标签</h3>
+                </div>
+                <div class="admin-v2-edit-grid">
+                  <label>
+                    <span>来源</span>
+                    <textarea name="sources" rows="5"></textarea>
+                  </label>
+                  <label>
+                    <span>关系</span>
+                    <textarea name="relations" rows="5"></textarea>
+                  </label>
+                  <label>
+                    <span>标签</span>
+                    <textarea name="tags" rows="5"></textarea>
+                  </label>
+                  <label>
+                    <span>反证 / 缺口</span>
+                    <textarea name="counter" rows="5"></textarea>
+                  </label>
+                </div>
+              </section>
+              <div class="admin-v2-content-actions">
+                <button type="submit">保存</button>
+                <button type="button" data-admin-content-reset>撤销</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section class="admin-v2-panel admin-v2-member-panel" data-admin-panel="members">
+        <div class="admin-v2-section-head admin-v2-section-head-compact">
+          <div>
+            <p class="admin-v2-kicker">Members</p>
+            <h2>用户与权限</h2>
+          </div>
+        </div>
+        <div class="admin-v2-user-stats" data-admin-user-stats></div>
+        <div class="admin-v2-user-toolbar">
+          <label>
+            <span>用户状态</span>
+            <select data-admin-user-filter>
+              <option value="all">全部</option>
+              <option value="active">active</option>
+              <option value="paused">paused</option>
+              <option value="expired">expired</option>
+            </select>
+          </label>
+          <button type="button" data-admin-user-seed>补充演示用户</button>
+        </div>
+        <div class="admin-v2-user-table" role="table" aria-label="用户与权限列表">
+          <div class="admin-v2-user-row admin-v2-user-head" role="row">
+            <span>用户</span>
+            <span>角色</span>
+            <span>会员状态</span>
+            <span>账号状态</span>
+            <span>操作</span>
+          </div>
+          <div data-admin-user-list></div>
+        </div>
+      </section>
+
+      <section class="admin-v2-panel" data-admin-panel="invites">
+        <div class="admin-v2-section-head admin-v2-section-head-compact">
+          <div>
+            <p class="admin-v2-kicker">Invite Codes</p>
+            <h2>邀请码</h2>
+          </div>
+        </div>
+        <div class="admin-v2-invite-lab" aria-label="邀请码生成">
+          <form class="admin-v2-invite-form" data-admin-invite-form>
+            <div>
+              <p class="admin-v2-kicker">Code Generator</p>
+              <h3>生成邀请码</h3>
+            </div>
+            <label>
+              <span>生成数量</span>
+              <input name="count" type="number" min="1" max="20" value="5">
+            </label>
+            <label>
+              <span>有效天数</span>
+              <input name="days" type="number" min="1" max="365" value="30">
+            </label>
+            <label>
+              <span>备注</span>
+              <input name="note">
+            </label>
+            <button type="submit">生成</button>
+          </form>
+          <div class="admin-v2-invite-actions">
+            <span data-admin-invite-status>邀请码列表读取中。</span>
+            <button type="button" data-admin-invite-clear>清空</button>
+          </div>
+          <div class="admin-v2-invite-list" data-admin-invite-list></div>
+        </div>
+      </section>
+
+      <section class="admin-v2-panel" data-admin-panel="orders">
+        <div class="admin-v2-section-head admin-v2-section-head-compact">
+          <div>
+            <p class="admin-v2-kicker">Orders</p>
+            <h2>订阅与订单</h2>
+          </div>
+        </div>
+        <div class="admin-v2-order-stats" data-admin-order-stats></div>
+        <div class="admin-v2-dashboard-main admin-v2-order-dashboard">
+          <article class="admin-v2-chart-card">
+            <div class="admin-v2-chart-head">
+              <span>DAILY PAID TREND</span>
+              <strong>日付费趋势</strong>
+            </div>
+            <div class="admin-v2-line-chart" data-admin-order-trend></div>
+          </article>
+          <article class="admin-v2-chart-card">
+            <div class="admin-v2-chart-head">
+              <span>PLAN AMOUNT</span>
+              <strong>分类金额</strong>
+            </div>
+            <div class="admin-v2-asset-bars" data-admin-order-plans></div>
+          </article>
+        </div>
+        <div class="admin-v2-order-toolbar">
+          <label>
+            <span>订单状态</span>
+            <select data-admin-order-filter>
+              <option value="all">全部</option>
+              <option value="paid">paid</option>
+              <option value="pending">pending</option>
+              <option value="refunded">refunded</option>
+            </select>
+          </label>
+        </div>
+        <div class="admin-v2-order-table" role="table" aria-label="付费会员列表">
+          <div class="admin-v2-order-row admin-v2-order-head" role="row">
+            <span>会员</span>
+            <span>方案</span>
+            <span>金额</span>
+            <span>日期</span>
+            <span>状态</span>
+            <span>操作</span>
+          </div>
+          <div data-admin-order-list></div>
+        </div>
+      </section>
+
+      <section class="admin-v2-panel" data-admin-panel="quality">
+        <div class="admin-v2-section-head admin-v2-section-head-compact">
+          <div>
+            <p class="admin-v2-kicker">Quality</p>
+            <h2>质量检查</h2>
+          </div>
+        </div>
+        <div class="admin-v2-checks">
+          <label><input type="checkbox" checked disabled><span>同步状态可辨认</span></label>
+          <label><input type="checkbox" checked disabled><span>硬错误为 0</span></label>
+          <label><input type="checkbox" disabled><span>软提醒已处理</span></label>
+          <label><input type="checkbox" disabled><span>普通前台无后台入口</span></label>
+          <label><input type="checkbox" disabled><span>数据文件已备份</span></label>
+        </div>
+      </section>
+
+      <section class="admin-v2-panel" data-admin-panel="settings">
+        <div class="admin-v2-section-head admin-v2-section-head-compact">
+          <div>
+            <p class="admin-v2-kicker">Settings</p>
+            <h2>系统设置</h2>
+          </div>
+        </div>
+        <div class="admin-v2-checks">
+          <label><input type="checkbox" disabled><span>本地管理服务</span></label>
+          <label><input type="checkbox" disabled><span>备份与恢复</span></label>
+          <label><input type="checkbox" disabled><span>自动化任务</span></label>
+          <label><input type="checkbox" disabled><span>可视化编辑</span></label>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="data/site-content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

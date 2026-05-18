@@ -1,10 +1,10 @@
 # V2 Source Quality Gate
 
-生成时间：2026/5/11 12:37:56
+生成时间：2026/5/14 15:17:18
 
 ## 结论
 
-- 日期：2026-05-11
+- 日期：2026-05-14
 - 状态：passed
 - 检查项：8
 - 失败项：0
@@ -13,7 +13,7 @@
 
 | 检查 | 状态 | 说明 |
 |---|---|---|
-| source-registry-v2.json parses | passed | 01-SiteV2/content/10-databases/source-registry-v2.json |
+| source-registry-v2.json parses | passed | 01-SiteV2/content/09-databases/source-registry-v2.json |
 | registry has sources | passed | 27 sources |
 | source_id values are unique | passed | unique |
 | required fields are complete | passed | complete |

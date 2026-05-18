@@ -1,0 +1,229 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-021",
+  "title": "Show HN: ContextFort – Visibility and controls for browser agents",
+  "original_url": "https://contextfort.ai/",
+  "canonical_url": "https://contextfort.ai",
+  "source_name": "Hacker News",
+  "source_type": "community",
+  "source_level": "C",
+  "acquisition_source_level": "",
+  "acquisition_channel": "hn",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-01-14T09:22:42Z",
+  "collected_at": "2026-05-18T07:52:02.253Z",
+  "language": "mixed",
+  "full_text": "ContextFort\nBacked by Y\nCombinator\nVisibility and Controls for AI Agents in the Endpoint\nKnow exactly what coding agents are doing\non your engineers' machines.\nCursor\nClaude Code\nEvery file touched\nNetwork connections\nProcesses spawned\nBook a demo View GitHub\nThe problem What AI coding agents can access\nWhen an engineer runs Cursor or Claude Code, the agent inherits their full system permissions. No sandbox. No restrictions. Every file, every credential, every network connection.\nSecrets & Keys\nSSH & Git\nFilesystem\nNetwork\nShell Execution\nData Exfiltration\nEnvironment variables & secrets\nAWS keys, database credentials, API tokens in .env files — all readable by the agent as context. The agent doesn't need to be malicious. It reads .env to \"understand your project\" and sends it to the AI provider's API.\n$ cat .env\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG...\nDATABASE_URL=postgres://admin:password@prod.db...\nSTRIPE_SECRET_KEY=sk_live_51H7...\nTraditional EDR\nContextFort\nDetects malware & known threats\nLogs all AI agent activity — malicious or not\nAsks: \"Is this process malicious?\"\nAsks: \"What did this agent access?\"\nNo concept of AI-generated actions\nBuilt specifically for AI coding agents\nAgent self-reported logs\nIndependent OS-level monitoring\nNo audit trail for AI actions\nComplete audit trail of every agent action\nThe gap Why CrowdStrike isn't enough\nEDR detects threats. It doesn't audit what AI agents are doing. These are fundamentally different questions — one asks “is this malicious?”, the other asks “what did this agent do?”\nThe solution OS-level telemetry for AI coding agents\nContextFort monitors from the kernel — independently of the agent. Built with eBPF on Linux, Endpoint Security Framework on macOS, and ETW + Minifilter on Windows.\nTelemetry Sandboxing Platforms\nFile access telemetry\nEvery file the agent reads or writes — .env, credentials, SSH keys, source code.\nNetwork monitoring\nEvery outbound connection — what data is sent, where it goes, which process initiated it.\nProcess tree tracking\nFull visibility into every subprocess — shell commands, package installs, builds.\nIndependent audit trail\nOS-level logs the agent can't tamper with. Know exactly what happened and when.\nBook a demo View GitHub",
+  "clean_text": "ContextFort\nBacked by Y\nCombinator\nVisibility and Controls for AI Agents in the Endpoint\nKnow exactly what coding agents are doing\non your engineers' machines.\nCursor\nClaude Code\nEvery file touched\nNetwork connections\nProcesses spawned\nBook a demo View GitHub\nThe problem What AI coding agents can access\nWhen an engineer runs Cursor or Claude Code, the agent inherits their full system permissions. No sandbox. No restrictions. Every file, every credential, every network connection.\nSecrets & Keys\nSSH & Git\nFilesystem\nNetwork\nShell Execution\nData Exfiltration\nEnvironment variables & secrets\nAWS keys, database credentials, API tokens in .env files — all readable by the agent as context. The agent doesn't need to be malicious. It reads .env to \"understand your project\" and sends it to the AI provider's API.\n$ cat .env\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG...\nDATABASE_URL=postgres://admin:password@prod.db...\nSTRIPE_SECRET_KEY=sk_live_51H7...\nTraditional EDR\nContextFort\nDetects malware & known threats\nLogs all AI agent activity — malicious or not\nAsks: \"Is this process malicious?\"\nAsks: \"What did this agent access?\"\nNo concept of AI-generated actions\nBuilt specifically for AI coding agents\nAgent self-reported logs\nIndependent OS-level monitoring\nNo audit trail for AI actions\nComplete audit trail of every agent action\nThe gap Why CrowdStrike isn't enough\nEDR detects threats. It doesn't audit what AI agents are doing. These are fundamentally different questions — one asks “is this malicious?”, the other asks “what did this agent do?”\nThe solution OS-level telemetry for AI coding agents\nContextFort monitors from the kernel — independently of the agent. Built with eBPF on Linux, Endpoint Security Framework on macOS, and ETW + Minifilter on Windows.\nTelemetry Sandboxing Platforms\nFile access telemetry\nEvery file the agent reads or writes — .env, credentials, SSH keys, source code.\nNetwork monitoring\nEvery outbound connection — what data is sent, where it goes, which process initiated it.\nProcess tree tracking\nFull visibility into every subprocess — shell commands, package installs, builds.\nIndependent audit trail\nOS-level logs the agent can't tamper with. Know exactly what happened and when.\nBook a demo View GitHub",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-18/r-021-show-hn-contextfort-visibility-and-controls-for-browser-agents.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-18/r-021-show-hn-contextfort-visibility-and-controls-for-browser-agents.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-clean-text",
+  "extraction_quality": "medium",
+  "has_full_text": true,
+  "content_length": 2248,
+  "fetch_error": "",
+  "source_volatility": "high",
+  "community_name": "Hacker News",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "primary_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "187b523e58bfa735",
+  "content_hash": "5cdc23394532fd2c",
+  "full_text_hash": "5cdc23394532fd2c",
+  "semantic_hash": "0ecbc4c5217eb2c2",
+  "duplicate_of": "",
+  "first_seen_at": "2026-01-14T09:22:42Z",
+  "last_seen_at": "2026-05-18T07:52:02.253Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "14 points / 1 comments / query=open source AI agent enterprise adoption",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "ContextFort Backed by Y Combinator Visibility and Controls for AI Agents in the Endpoint Know exactly what coding agents are doing on your engineers' machines.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Cursor Claude Code Every file touched Network connections Processes spawned Book a demo View GitHub The problem What AI coding agents can access When an engineer runs Cursor or Claude Code, the agent inherits their full system permissions.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Every file, every credential, every network connection.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Secrets & Keys SSH & Git Filesystem Network Shell Execution Data Exfiltration Environment variables & secrets AWS keys, database credentials, API tokens in .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "env files — all readable by the agent as context.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News",
+      "GitHub",
+      "AWS",
+      "Cursor"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Agents",
+      "Cursor",
+      "Claude",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "14",
+      "1",
+      "7M",
+      "51",
+      "7"
+    ],
+    "quotes": [
+      "understand your project",
+      "Is this process malicious?",
+      "What did this agent access?",
+      "is this malicious?",
+      "what did this agent do?"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "14 points / 1 comments / query=open source AI agent enterprise adoption",
+      "ContextFort Backed by Y Combinator Visibility and Controls for AI Agents in the Endpoint Know exactly what coding agents are doing on your engineers' machines.",
+      "Every file, every credential, every network connection."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Cursor Claude Code Every file touched Network connections Processes spawned Book a demo View GitHub The problem What AI coding agents can access When an engineer runs Cursor or Claude Code, the agent inherits their full system permissions."
+    ],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "commercial_value": 3,
+    "novelty": 3,
+    "evidence_strength": 3,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": false,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "缺少一手来源或可靠转述来源"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Show HN: ContextFort – Visibility and controls for browser agents\n\n- raw_id: R-021\n- original_url: https://contextfort.ai/\n- source_name: Hacker News\n- collected_at: 2026-05-18T07:52:02.253Z\n\n## clean_text\n\nContextFort\nBacked by Y\nCombinator\nVisibility and Controls for AI Agents in the Endpoint\nKnow exactly what coding agents are doing\non your engineers' machines.\nCursor\nClaude Code\nEvery file touched\nNetwork connections\nProcesses spawned\nBook a demo View GitHub\nThe problem What AI coding agents can access\nWhen an engineer runs Cursor or Claude Code, the agent inherits their full system permissions. No sandbox. No restrictions. Every file, every credential, every network connection.\nSecrets & Keys\nSSH & Git\nFilesystem\nNetwork\nShell Execution\nData Exfiltration\nEnvironment variables & secrets\nAWS keys, database credentials, API tokens in .env files — all readable by the agent as context. The agent doesn't need to be malicious. It reads .env to \"understand your project\" and sends it to the AI provider's API.\n$ cat .env\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG...\nDATABASE_URL=postgres://admin:password@prod.db...\nSTRIPE_SECRET_KEY=sk_live_51H7...\nTraditional EDR\nContextFort\nDetects malware & known threats\nLogs all AI agent activity — malicious or not\nAsks: \"Is this process malicious?\"\nAsks: \"What did this agent access?\"\nNo concept of AI-generated actions\nBuilt specifically for AI coding agents\nAgent self-reported logs\nIndependent OS-level monitoring\nNo audit trail for AI actions\nComplete audit trail of every agent action\nThe gap Why CrowdStrike isn't enough\nEDR detects threats. It doesn't audit what AI agents are doing. These are fundamentally different questions — one asks “is this malicious?”, the other asks “what did this agent do?”\nThe solution OS-level telemetry for AI coding agents\nContextFort monitors from the kernel — independently of the agent. Built with eBPF on Linux, Endpoint Security Framework on macOS, and ETW + Minifilter on Windows.\nTelemetry Sandboxing Platforms\nFile access telemetry\nEvery file the agent reads or writes — .env, credentials, SSH keys, source code.\nNetwork monitoring\nEvery outbound connection — what data is sent, where it goes, which process initiated it.\nProcess tree tracking\nFull visibility into every subprocess — shell commands, package installs, builds.\nIndependent audit trail\nOS-level logs the agent can't tamper with. Know exactly what happened and when.\nBook a demo View GitHub\n\n## full_text\n\nContextFort\nBacked by Y\nCombinator\nVisibility and Controls for AI Agents in the Endpoint\nKnow exactly what coding agents are doing\non your engineers' machines.\nCursor\nClaude Code\nEvery file touched\nNetwork connections\nProcesses spawned\nBook a demo View GitHub\nThe problem What AI coding agents can access\nWhen an engineer runs Cursor or Claude Code, the agent inherits their full system permissions. No sandbox. No restrictions. Every file, every credential, every network connection.\nSecrets & Keys\nSSH & Git\nFilesystem\nNetwork\nShell Execution\nData Exfiltration\nEnvironment variables & secrets\nAWS keys, database credentials, API tokens in .env files — all readable by the agent as context. The agent doesn't need to be malicious. It reads .env to \"understand your project\" and sends it to the AI provider's API.\n$ cat .env\nAWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG...\nDATABASE_URL=postgres://admin:password@prod.db...\nSTRIPE_SECRET_KEY=sk_live_51H7...\nTraditional EDR\nContextFort\nDetects malware & known threats\nLogs all AI agent activity — malicious or not\nAsks: \"Is this process malicious?\"\nAsks: \"What did this agent access?\"\nNo concept of AI-generated actions\nBuilt specifically for AI coding agents\nAgent self-reported logs\nIndependent OS-level monitoring\nNo audit trail for AI actions\nComplete audit trail of every agent action\nThe gap Why CrowdStrike isn't enough\nEDR detects threats. It doesn't audit what AI agents are doing. These are fundamentally different questions — one asks “is this malicious?”, the other asks “what did this agent do?”\nThe solution OS-level telemetry for AI coding agents\nContextFort monitors from the kernel — independently of the agent. Built with eBPF on Linux, Endpoint Security Framework on macOS, and ETW + Minifilter on Windows.\nTelemetry Sandboxing Platforms\nFile access telemetry\nEvery file the agent reads or writes — .env, credentials, SSH keys, source code.\nNetwork monitoring\nEvery outbound connection — what data is sent, where it goes, which process initiated it.\nProcess tree tracking\nFull visibility into every subprocess — shell commands, package installs, builds.\nIndependent audit trail\nOS-level logs the agent can't tamper with. Know exactly what happened and when.\nBook a demo View GitHub\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / medium] 14 points / 1 comments / query=open source AI agent enterprise adoption\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] ContextFort Backed by Y Combinator Visibility and Controls for AI Agents in the Endpoint Know exactly what coding agents are doing on your engineers' machines.\n3. [workflow_change / daily_observation, heatmap, change, case, trend / medium] Cursor Claude Code Every file touched Network connections Processes spawned Book a demo View GitHub The problem What AI coding agents can access When an engineer runs Cursor or Claude Code, the agent inherits their full system permissions.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] Every file, every credential, every network connection.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] Secrets & Keys SSH & Git Filesystem Network Shell Execution Data Exfiltration Environment variables & secrets AWS keys, database credentials, API tokens in .\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] env files — all readable by the agent as context.\n"
+}

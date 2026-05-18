@@ -1,0 +1,812 @@
+---
+date: 2026-05-17
+stage: pool
+status: source-router-pool
+pool_count: 20
+generated_at: 2026-05-17T10:59:52.581Z
+keyword_monitoring_config: 01-SiteV2/content/09-databases/keyword-monitoring-v2.json
+---
+
+# 2026-05-17 Pool Candidates
+
+说明：本文件是 Raw 后的候选池，供 asset-card-generator 生成 L1 变化卡、L1 案例卡、观点卡候选，并供 daily-observation-writer 理解当日市场行情。Pool 仍不是事实结论。
+
+## P-001｜突发！OpenAI 大规模重组，总裁 Brockman 夺权挂帅
+
+- raw_ref: R-001
+- raw_original_id: cmp81gwxx0ezsslnze6fa6wif
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-001-突发-openai-大规模重组-总裁-brockman-夺权挂帅.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-001-突发-openai-大规模重组-总裁-brockman-夺权挂帅.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/951/258.htm
+- source_url: https://www.ithome.com/0/951/258.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: primary_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 11ff8587d1c17fea
+- raw_full_text_hash: 11ff8587d1c17fea
+- raw_semantic_hash: 6d0f2306877a39bd
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"OpenAI宣布进行史上最大规模重组，将ChatGPT、Codex和API三大核心产品线合并为统一组织。联合创始人兼总裁Greg Brockman正式全面接管产品战略，成为实际掌权者，而ChatGPT原负责人Nick Turley被调离核心岗位。此次重组旨在整合资源，聚焦\"智能体时代\"，并秘密开发集成多项功能的\"超级应用\"桌面端产品。与此同时，竞争对手Anthropic估值飙升至9000亿美元，使OpenAI面临严峻挑战。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"OpenAI 大规模重组，总裁 Brockman 夺权挂帅 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 突发！","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI 大规模重组，总裁 Brockman 夺权挂帅 新智元 2026/5/16 14:55:45 责编： 故渊 评论： 感谢IT之家网友 刺客 的线索投递！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"IT之家 5 月 16 日消息，就在刚刚，周六早上的科技圈又曝出重磅消息。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI 官方毫无预兆地宣布了公司历史上在 IPO 前夕最大规模、最剧烈的一次组织架构大重组。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ChatGPT、Codex 以及开发者生态的命脉 ——API，三大核心产品线被全部打碎，原地合并为一个统一的产品组织！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenAI宣布进行史上最大规模重组，将ChatGPT、Codex和API三大核心产品线合并为统一组织。联合创始人兼总裁Greg Brockman正式全面接管产品战略，成为实际掌权者，而ChatGPT原负责人Nick Turley被调离核心岗位。此次重组旨在整合资源，聚焦\"智能体时代\"，并秘密开发集成多项功能的\"超级应用\"桌面端产品。与此同时，竞争对手Anthropic估值飙升至9000亿美元，使OpenAI面临严峻挑战。","OpenAI 大规模重组，总裁 Brockman 夺权挂帅 新智元 2026/5/16 14:55:45 责编： 故渊 评论： 感谢IT之家网友 刺客 的线索投递！","IT之家 5 月 16 日消息，就在刚刚，周六早上的科技圈又曝出重磅消息。"],"case_details":["OpenAI 大规模重组，总裁 Brockman 夺权挂帅 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 突发！"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-002｜最新开源成果（#21）：开源模型盛宴！Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5、GLM-5.1 等。基于CAISI的V4评估。
+
+- raw_ref: R-002
+- raw_original_id: cmp8miqno0jrsslnzj4y4ud9v
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-002-最新开源成果-21-开源模型盛宴-gemma-4-deepseek-v4-kimi-k2-6-mimo-2-5-glm-5-1-等-基于ca.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-002-最新开源成果-21-开源模型盛宴-gemma-4-deepseek-v4-kimi-k2-6-mimo-2-5-glm-5-1-等-基于ca.json`
+- source: Nathan Lambert：Interconnects（RSS）｜https://www.interconnects.ai/p/latest-open-artifacts-21-open-model
+- source_url: https://www.interconnects.ai/p/latest-open-artifacts-21-open-model
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: primary_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 19db6899a7588be7
+- raw_full_text_hash: 19db6899a7588be7
+- raw_semantic_hash: 5606cf4c72a34652
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 5.9
+- raw_capture_priority: 19.9
+- usable_for: case, change, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"本月开源AI模型领域迎来密集发布，包括Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5和GLM-5.1等一系列重要新版本。这些模型均在CAISI的V4评估框架下进行了性能评测。多个团队几乎同期推出旗舰级更新，反映出开源社区当前高速迭代的竞争态势。","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Latest open artifacts (#21): Open model bonanza!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Gemma 4, DeepSeek V4, Kimi K2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"1 & others Subscribe Sign in Latest open artifacts (#21): Open model bonanza!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"On CAISI's V4 assessment.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["本月开源AI模型领域迎来密集发布，包括Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5和GLM-5.1等一系列重要新版本。这些模型均在CAISI的V4评估框架下进行了性能评测。多个团队几乎同期推出旗舰级更新，反映出开源社区当前高速迭代的竞争态势。","Latest open artifacts (#21): Open model bonanza!","Gemma 4, DeepSeek V4, Kimi K2."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-003｜Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration
+
+- raw_ref: R-003
+- raw_original_id: 48124436
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-003-launch-hn-ardent-yc-p26-postgres-sandboxes-in-seconds-with-zero-migrat.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-003-launch-hn-ardent-yc-p26-postgres-sandboxes-in-seconds-with-zero-migrat.json`
+- source: Hacker News｜https://www.tryardent.com/
+- source_url: https://www.tryardent.com/
+- acquisition_channel: hn
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- acquisition_source_level: not_applicable
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool, user_feedback_pool
+- raw_content_hash: dfed4b745965ace5
+- raw_full_text_hash: dfed4b745965ace5
+- raw_semantic_hash: 95d993a4dc895028
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 5.4
+- raw_capture_priority: 19.4
+- usable_for: case, change, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"risk","text":"96 points / 50 comments / query=AI coding agent security sandbox","supports":["daily_observation","heatmap","change","trend"],"importance":"medium","confidence":"high"},{"type":"risk","text":"Ardent — Database branching for coding agents Backed by Y Combinator Use coding agents on real data with no risk Create copies of any Postgres database in under 6 seconds so coding agents can verify their code works in prod Get started Book a Demo Stop breakages Validate code before it reaches production Let Coding agents test their database code on a 1:1 copy of your production postgres Book a Demo Zero blast radius Test with zero risk to production Each clone is isolated at both the compute and storage level.","supports":["daily_observation","heatmap","change","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Clones never impact production.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Ever Book a Demo Speed at scale Cloning that never slows down even at terabyte scale Clones load in 6s, scale to 0, autoscale compute and do not duplicate storage.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Zero management needed Book a Demo Features Let agents solve your toughest data problems without fear Give every agent a copy of production to test everything.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"number","text":"Contact us Data cleaning Let agents clean, deduplicate and standardize data on an exact copy of production Migration testing Backfills Verify changes Features Built to be infinitely scalable and fast Ardent clones load in seconds and are massively storage and compute efficient even at terabyte scale Contact us Cloning Speed 30,960X faster cloning per TB Hours Traditional <6s always Ardent Traditional Ardent Extreme storage efficiency Only pay for changes made Traditional Ardent Compute that scales with agent worklo","supports":["daily_observation","heatmap","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Clones never impact production.","Ever Book a Demo Speed at scale Cloning that never slows down even at terabyte scale Clones load in 6s, scale to 0, autoscale compute and do not duplicate storage.","Zero management needed Book a Demo Features Let agents solve your toughest data problems without fear Give every agent a copy of production to test everything."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["96 points / 50 comments / query=AI coding agent security sandbox","Ardent — Database branching for coding agents Backed by Y Combinator Use coding agents on real data with no risk Create copies of any Postgres database in under 6 seconds so coding agents can verify their code works in prod Get started Book a Demo Stop breakages Validate code before it reaches production Let Coding agents test their database code on a 1:1 copy of your production postgres Book a Demo Zero blast radius Test with zero risk to production Each clone is isolated at both the compute and storage level."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-004｜英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施
+
+- raw_ref: R-004
+- raw_original_id: cmp735uqj072oslnzjq1bedvf
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-004-英国多部门联合警告-当前最先进-ai-模型网络攻击能力已远超专业人员-企业应做好防范措施.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-004-英国多部门联合警告-当前最先进-ai-模型网络攻击能力已远超专业人员-企业应做好防范措施.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/951/144.htm
+- source_url: https://www.ithome.com/0/951/144.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: medium
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: primary_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 3e11f5b6b78cd77e
+- raw_full_text_hash: 3e11f5b6b78cd77e
+- raw_semantic_hash: 22b07aad110e6963
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 8.4
+- raw_capture_priority: 18.9
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"risk","text":"英国财政部、英格兰银行及金融行为监管局联合警告，当前最先进的AI模型已具备远超普通专业人员的网络攻击能力，其攻击速度更快、范围更广、成本更低。若被恶意利用，将严重威胁企业运营安全、客户数据、金融市场稳定性乃至整个金融体系。英格兰银行行长安德鲁·贝利此前已点名Anthropic的Mythos产品，网络安全专家亦警告此类AI可能强化复杂攻击，对银行业及金融技术体系构成新挑战。","supports":["daily_observation","heatmap","change","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 网络 英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施 2026/5/15 23:06:10 来源： IT之家 作者： 清源 责编： 清源 评论： 感谢IT之家网友 斯文当不了饭吃 的线索投递！","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"risk","text":"IT之家 5 月 15 日消息，据路透社报道，当地时间周五（今天），英国财政部、英格兰银行以及英国金融行为监管局发布联合警告称，英国企业需要提前针对新一代 AI 模型建立风险应对机制，并做好相关防范准备。","supports":["daily_observation","heatmap","change","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"三家机构在声明中指出，目前最先进的 AI 模型，在网络攻击领域已经展现出 远超普通专业人员的能力 ，而且攻击速度更快、覆盖范围更大，成本也明显更低。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"risk","text":"声明强调，一旦这些能力被恶意利用， 企业运营安全、客户数据、金融市场稳定性以及整个金融体系 ，都可能面临更严重的网络安全威胁。","supports":["daily_observation","heatmap","change","trend"],"importance":"high","confidence":"medium"},{"type":"risk","text":"英格兰银行行长安德鲁 · 贝利上个月也曾点名提到 Anthropic 的 Mythos 产品，并认为这一技术已经带来显著网络安全风险。","supports":["daily_observation","heatmap","change","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["三家机构在声明中指出，目前最先进的 AI 模型，在网络攻击领域已经展现出 远超普通专业人员的能力 ，而且攻击速度更快、覆盖范围更大，成本也明显更低。"],"case_details":["英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 网络 英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施 2026/5/15 23:06:10 来源： IT之家 作者： 清源 责编： 清源 评论： 感谢IT之家网友 斯文当不了饭吃 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["英国财政部、英格兰银行及金融行为监管局联合警告，当前最先进的AI模型已具备远超普通专业人员的网络攻击能力，其攻击速度更快、范围更广、成本更低。若被恶意利用，将严重威胁企业运营安全、客户数据、金融市场稳定性乃至整个金融体系。英格兰银行行长安德鲁·贝利此前已点名Anthropic的Mythos产品，网络安全专家亦警告此类AI可能强化复杂攻击，对银行业及金融技术体系构成新挑战。","IT之家 5 月 15 日消息，据路透社报道，当地时间周五（今天），英国财政部、英格兰银行以及英国金融行为监管局发布联合警告称，英国企业需要提前针对新一代 AI 模型建立风险应对机制，并做好相关防范准备。","声明强调，一旦这些能力被恶意利用， 企业运营安全、客户数据、金融市场稳定性以及整个金融体系 ，都可能面临更严重的网络安全威胁。"]}
+- missing_information: none
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-005｜Garry Tan｜Saturday morning and it’s a good time to think a bit about how our functional systems are
+
+- raw_ref: R-005
+- raw_original_id: 2055674791873630650
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-005-garry-tan-saturday-morning-and-it-s-a-good-time-to-think-a-bit-about-h.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-005-garry-tan-saturday-morning-and-it-s-a-good-time-to-think-a-bit-about-h.json`
+- source: follow-builders / X / Garry Tan｜https://x.com/garrytan/status/2055674791873630650
+- source_url: https://x.com/garrytan/status/2055674791873630650
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Garry Tan
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool, user_feedback_pool
+- raw_content_hash: 28a3ef5bbc62d532
+- raw_full_text_hash: 28a3ef5bbc62d532
+- raw_semantic_hash: 6cd144a358e3ce6a
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7.7
+- raw_capture_priority: 18.2
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people wh","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Medicine, engineering, law, science.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power.","Medicine, engineering, law, science.","Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build."],"case_details":[],"workflow_changes":["Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people wh","Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有可核验原文引述
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-006｜Show HN: Llmswap v3.0 – CLI and SDK for OpenAI, Claude, Gemini, Watsonx
+
+- raw_ref: R-006
+- raw_original_id: 44964030
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-006-show-hn-llmswap-v3-0-cli-and-sdk-for-openai-claude-gemini-watsonx.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-006-show-hn-llmswap-v3-0-cli-and-sdk-for-openai-claude-gemini-watsonx.json`
+- source: Hacker News｜https://pypi.org/project/llmswap/
+- source_url: https://pypi.org/project/llmswap/
+- acquisition_channel: hn
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- acquisition_source_level: not_applicable
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool, user_feedback_pool
+- raw_content_hash: 87871fa1971a39f2
+- raw_full_text_hash: f2c93db3ea70f337
+- raw_semantic_hash: ee8af917bcde07b0
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 3.9
+- raw_capture_priority: 17.9
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"2 points / 0 comments / query=AI SDK developer adoption startup","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"llmswap · PyPI Skip to main content Switch to mobile version Warning You are using an unsupported browser, upgrade to a newer version.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"Search PyPI search-focus#focusSearchField\" data-search-focus-target=\"searchField\"> Search Search PyPI Search llmswap 5.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"6 pip install llmswap Copy PIP instructions Latest version Released: Feb 21, 2026 Python SDK + CLI for 11 LLM providers: Claude Sonnet 4.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6, Llama 4 Maverick, GPT-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"2, Gemini 3 Flash, Grok 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["2 points / 0 comments / query=AI SDK developer adoption startup","6 pip install llmswap Copy PIP instructions Latest version Released: Feb 21, 2026 Python SDK + CLI for 11 LLM providers: Claude Sonnet 4.","6, Llama 4 Maverick, GPT-5."],"case_details":[],"workflow_changes":["llmswap · PyPI Skip to main content Switch to mobile version Warning You are using an unsupported browser, upgrade to a newer version."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-007｜Show HN: Prefab – A generative UI framework for Python
+
+- raw_ref: R-007
+- raw_original_id: 47697566
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-007-show-hn-prefab-a-generative-ui-framework-for-python.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-007-show-hn-prefab-a-generative-ui-framework-for-python.json`
+- source: Hacker News｜https://prefab.prefect.io/docs/welcome
+- source_url: https://prefab.prefect.io/docs/welcome
+- acquisition_channel: hn
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: community
+- source_level: C
+- acquisition_source_level: not_applicable
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, user_feedback_pool, watchlist
+- raw_content_hash: 68469b0a5be275aa
+- raw_full_text_hash: 68469b0a5be275aa
+- raw_semantic_hash: 734353a875ab879e
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.1
+- raw_capture_priority: 17.1
+- usable_for: case, change, daily_observation, heatmap, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"5 points / 0 comments / query=MCP agent protocol developer adoption","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Welcome to Prefab 🎨 - Prefab Skip to main content Prefab home page Prefab Search.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Navigation Get Started Welcome to Prefab 🎨 Search the docs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"⌘ K Prefab UI Docs Get Started Welcome Installation Quickstart Concepts Core Concepts Components State Expressions Actions Apps PrefabApp Themes CSS Helpers Custom Handlers Running Prefab Playground Local Preview Static Export API Server FastMCP Examples Interactivity Data & Visualization Apps Reference Layout Components Inputs Charts Actions Special Variables Get Started Welcome to Prefab 🎨 Copy page The generative UI framework that even humans can use.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Copy page Documentation Index Fetch the complete documentation index at: https://prefab.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"txt Use this file to discover all available pages before exploring further.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["5 points / 0 comments / query=MCP agent protocol developer adoption","Welcome to Prefab 🎨 - Prefab Skip to main content Prefab home page Prefab Search.","Navigation Get Started Welcome to Prefab 🎨 Search the docs."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；缺少一手来源或可靠转述来源
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-008｜杭州基地启用，机器人有了国家级职业技能训练场
+
+- raw_ref: R-008
+- raw_original_id: cmp8ghucy0iflslnzvk74bcu0
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-008-杭州基地启用-机器人有了国家级职业技能训练场.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-008-杭州基地启用-机器人有了国家级职业技能训练场.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/951/390.htm
+- source_url: https://www.ithome.com/0/951/390.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: medium
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: primary_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 84ff196ec5239e38
+- raw_full_text_hash: 84ff196ec5239e38
+- raw_semantic_hash: a1f5b2bc33e29e74
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 4.4
+- raw_capture_priority: 14.9
+- usable_for: viewpoint, case, change, daily_observation, heatmap, watchlist
+- key_excerpts: [{"type":"number","text":"国家人工智能应用中试基地（具身智能）5月16日在浙江杭州挂牌启用，为机器人提供国家级职业技能训练场。该基地是集场景体验、技术展示、研发合作、产业赋能于一体的综合性平台，旨在推动具身智能技术从实验室迈向现实应用。杭州市于5月1日施行首部具身智能机器人地方性法规，支持核心研发、平台建设和场景开放。目前杭州已集聚机器人产业相关企业700余家，2025年具身智能产业集群产值达1068亿元。","supports":["daily_observation","heatmap","case","trend"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"杭州基地启用，机器人有了国家级职业技能训练场 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 杭州基地启用，机器人有了国家级职业技能训练场 2026/5/16 21:46:46 来源： IT之家 作者： 浩渺 责编： 浩渺 评论： 感谢IT之家网友 斯文当不了饭吃 、 HH_KK 的线索投递！","supports":["daily_observation","heatmap","case"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"IT之家 5 月 16 日消息，据新华社报道，5 月 16 日，国家人工智能应用中试基地（具身智能）在浙江杭州挂牌启用，机器人有了国家级职业技能训练场。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"报道称，具身智能是人工智能从虚拟走向现实的重要发展方向，正快速从实验室走向场景应用新阶段。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"“十五五”规划纲要明确提出“前瞻布局未来产业”，推动具身智能等成为新的经济增长点。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"中试基地则是国家“人工智能 +”战略部署的重要落子与载体。","supports":["daily_observation","heatmap","case"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 5 月 16 日消息，据新华社报道，5 月 16 日，国家人工智能应用中试基地（具身智能）在浙江杭州挂牌启用，机器人有了国家级职业技能训练场。"],"case_details":["杭州基地启用，机器人有了国家级职业技能训练场 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 杭州基地启用，机器人有了国家级职业技能训练场 2026/5/16 21:46:46 来源： IT之家 作者： 浩渺 责编： 浩渺 评论： 感谢IT之家网友 斯文当不了饭吃 、 HH_KK 的线索投递！","中试基地则是国家“人工智能 +”战略部署的重要落子与载体。"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-009｜Nikunj Kothari｜A lot of young people ask me if they should move to venture and my answer is typically no*
+
+- raw_ref: R-009
+- raw_original_id: 2055648134819450907
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-009-nikunj-kothari-a-lot-of-young-people-ask-me-if-they-should-move-to-ven.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-009-nikunj-kothari-a-lot-of-young-people-ask-me-if-they-should-move-to-ven.json`
+- source: follow-builders / X / Nikunj Kothari｜https://x.com/nikunj/status/2055648134819450907
+- source_url: https://x.com/nikunj/status/2055648134819450907
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Nikunj Kothari
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool, user_feedback_pool
+- raw_content_hash: b45b835363dd6231
+- raw_full_text_hash: b45b835363dd6231
+- raw_semantic_hash: 665039fa1ee287f1
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 4.2
+- raw_capture_priority: 14.7
+- usable_for: viewpoint, case, change, daily_observation, heatmap, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"quote","text":"A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.. It’s hard to truly understand what “excellence” means unless you’re deeply embedded and working for founders who are truly excellent. Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out. I wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others. I ","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"It’s hard to truly understand what “excellence” means unless you’re deeply embedded and working for founders who are truly excellent.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I wouldn’t know anything about design if it were not for @kurtvarner @MicahSivitz @xiakv and others.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.","Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out.","I wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-010｜Garry Tan｜What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives
+
+- raw_ref: R-010
+- raw_original_id: 2055670533451366479
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-010-garry-tan-what-is-gbrain-my-open-source-project-is-a-knowledge-system-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-010-garry-tan-what-is-gbrain-my-open-source-project-is-a-knowledge-system-.json`
+- source: follow-builders / X / Garry Tan｜https://x.com/garrytan/status/2055670533451366479
+- source_url: https://x.com/garrytan/status/2055670533451366479
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Garry Tan
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: d81cd710e54d0805
+- raw_full_text_hash: d81cd710e54d0805
+- raw_semantic_hash: 57a10fd3eb69caf4
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7.2
+- raw_capture_priority: 12.2
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"My open source project is a knowledge system, not RAG in a box.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Personal AI becomes possible.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80","My open source project is a knowledge system, not RAG in a box.","It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可核验原文引述
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-011｜Zara Zhang｜AI psychosis: cycling between two mental states every single day ↑ after using coding agen
+
+- raw_ref: R-011
+- raw_original_id: 2055728641913536762
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-011-zara-zhang-ai-psychosis-cycling-between-two-mental-states-every-single.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-011-zara-zhang-ai-psychosis-cycling-between-two-mental-states-every-single.json`
+- source: follow-builders / X / Zara Zhang｜https://x.com/zarazhangrui/status/2055728641913536762
+- source_url: https://x.com/zarazhangrui/status/2055728641913536762
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Zara Zhang
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: dcce26cf9e357571
+- raw_full_text_hash: dcce26cf9e357571
+- raw_semantic_hash: 26131a23e2273191
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 6.7
+- raw_capture_priority: 11.7
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"AI psychosis: cycling between two mental states every single day ↑ after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life. ↓ after scrolling twitter: holy shit I'm completely behind. everyone's ahead. the wave is moving and I'm going to get left. Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w likes=136; retweets=16; replies=28","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AI psychosis: cycling between two mental states every single day ↑ after using coding agents: holy shit I'm omnipotent.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I can build anything.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I've never felt this powerful in my life.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"↓ after scrolling twitter: holy shit I'm completely behind.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"the wave is moving and I'm going to get left.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["AI psychosis: cycling between two mental states every single day ↑ after using coding agents: holy shit I'm omnipotent.","I can build anything.","I've never felt this powerful in my life."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有可核验原文引述
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-012｜Madhu Guru｜I have friends who made $10M+ and are miserable. I have friends who made that much and fou
+
+- raw_ref: R-012
+- raw_original_id: 2055708451670798839
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-012-madhu-guru-i-have-friends-who-made-10m-and-are-miserable-i-have-friend.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-012-madhu-guru-i-have-friends-who-made-10m-and-are-miserable-i-have-friend.json`
+- source: follow-builders / X / Madhu Guru｜https://x.com/realmadhuguru/status/2055708451670798839
+- source_url: https://x.com/realmadhuguru/status/2055708451670798839
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Madhu Guru
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 39bf1ba0b5b3c5a2
+- raw_full_text_hash: 39bf1ba0b5b3c5a2
+- raw_semantic_hash: 654c5d90956f47ef
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 4.2
+- raw_capture_priority: 9.2
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"number","text":"I have friends who made $10M+ and are miserable. I have friends who made that much and found calm - they don’t need to run anymore. I have friends who made far less and are just happy. Whether something is enough is up to you. Whether you’re happy is independent of your bank account. You can want to be wealthy and still be content now. You don’t need to chase it from a place of lack and desperation. Silicon Valley treats ambition and happiness as mutually exclusive. As if wanting more means you can’t be satisfied n","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"I have friends who made $10M+ and are miserable.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I have friends who made that much and found calm - they don’t need to run anymore.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I have friends who made far less and are just happy.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Whether something is enough is up to you.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Whether you’re happy is independent of your bank account.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["I have friends who made that much and found calm - they don’t need to run anymore.","I have friends who made far less and are just happy.","Whether something is enough is up to you."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可核验原文引述
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-013｜Peter Yang｜If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other pl
+
+- raw_ref: R-013
+- raw_original_id: 2055663937061007762
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-013-peter-yang-if-you-re-stuck-in-the-bay-area-tech-rat-race-psychosis-mak.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-013-peter-yang-if-you-re-stuck-in-the-bay-area-tech-rat-race-psychosis-mak.json`
+- source: follow-builders / X / Peter Yang｜https://x.com/petergyang/status/2055663937061007762
+- source_url: https://x.com/petergyang/status/2055663937061007762
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Peter Yang
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: b57747215f49121f
+- raw_full_text_hash: b57747215f49121f
+- raw_semantic_hash: d2e7a48a97659873
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 2.2
+- raw_capture_priority: 7.199999999999999
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"quote","text":"If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other places. Go to a small town in Europe or visit Asia - you'll see that life can be about much more than whether you're IC7 or IC8 or what company you work for. Don't be the person to put on your tombstone: \"He got divorced and neglected his kids but at least he made D2 at FAANG\" Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKTmGVH14 | Product at Roblox likes=3090; retweets=151; replie","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other places.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Go to a small town in Europe or visit Asia - you'll see that life can be about much more than whether you're IC7 or IC8 or what company you work for.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"Don't be the person to put on your tombstone: \"He got divorced and neglected his kids but at least he made D2 at FAANG\" Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"co/XYKTmGVH14 | Product at Roblox likes=3090; retweets=151; replies=113","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other places.","Go to a small town in Europe or visit Asia - you'll see that life can be about much more than whether you're IC7 or IC8 or what company you work for.","co/XYKTmGVH14 | Product at Roblox likes=3090; retweets=151; replies=113"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备市场线索或主题热度，需进一步补证后再判断是否入库。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-014｜Show HN: Agentic interface for mainframes and COBOL
+
+- raw_ref: R-014
+- raw_original_id: 48111143
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-014-show-hn-agentic-interface-for-mainframes-and-cobol.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-014-show-hn-agentic-interface-for-mainframes-and-cobol.json`
+- source: keyword search / HN community feedback｜https://news.ycombinator.com/item?id=48111143
+- source_url: https://news.ycombinator.com/item?id=48111143
+- acquisition_channel: keyword-search
+- search_intent: find_user_feedback
+- search_path: community_feedback
+- source_type: industry
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: keyword search / HN community feedback
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 0d761e9812b9a42c
+- raw_full_text_hash: 0d761e9812b9a42c
+- raw_semantic_hash: 628246da012c5ed1
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.4
+- raw_capture_priority: 5.4
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"97 points / 50 comments / linked_url=https://www.hypercubic.ai/hopper / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"97 points / 50 comments / linked_url=https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"ai/hopper / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["97 points / 50 comments / linked_url=https://www.hypercubic.ai/hopper / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","97 points / 50 comments / linked_url=https://www.","ai/hopper / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-015｜Show HN: We built free adversarial security testing for agents (OpenClaw too)
+
+- raw_ref: R-015
+- raw_original_id: 47165626
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-015-show-hn-we-built-free-adversarial-security-testing-for-agents-openclaw.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-015-show-hn-we-built-free-adversarial-security-testing-for-agents-openclaw.json`
+- source: keyword search / HN community feedback｜https://news.ycombinator.com/item?id=47165626
+- source_url: https://news.ycombinator.com/item?id=47165626
+- acquisition_channel: keyword-search
+- search_intent: find_user_feedback
+- search_path: community_feedback
+- source_type: industry
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: keyword search / HN community feedback
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 7ced2d3378d226a3
+- raw_full_text_hash: 7ced2d3378d226a3
+- raw_semantic_hash: 04f4d9cc13a093ce
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.4
+- raw_capture_priority: 5.4
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"1 points / 1 comments / linked_url=https://ziosec.com / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 points / 1 comments / linked_url=https://ziosec.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"com / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["1 points / 1 comments / linked_url=https://ziosec.com / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","1 points / 1 comments / linked_url=https://ziosec.","com / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-016｜Show HN: BarrierX: Win back lost enterprise deals by analyzing that others close
+
+- raw_ref: R-016
+- raw_original_id: 46796514
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-016-show-hn-barrierx-win-back-lost-enterprise-deals-by-analyzing-that-othe.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-016-show-hn-barrierx-win-back-lost-enterprise-deals-by-analyzing-that-othe.json`
+- source: keyword search / HN community feedback｜https://news.ycombinator.com/item?id=46796514
+- source_url: https://news.ycombinator.com/item?id=46796514
+- acquisition_channel: keyword-search
+- search_intent: find_user_feedback
+- search_path: community_feedback
+- source_type: industry
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: keyword search / HN community feedback
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: b808c1172a2a8398
+- raw_full_text_hash: b808c1172a2a8398
+- raw_semantic_hash: f12983bb3e1827f3
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.4
+- raw_capture_priority: 5.4
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"1 points / 0 comments / linked_url=https://barrierx.ai/ / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 points / 0 comments / linked_url=https://barrierx.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"ai/ / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["1 points / 0 comments / linked_url=https://barrierx.ai/ / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","1 points / 0 comments / linked_url=https://barrierx.","ai/ / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-017｜Show HN: Zyler – AI agent for marketing data that doesn't hallucinate
+
+- raw_ref: R-017
+- raw_original_id: 44364508
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-017-show-hn-zyler-ai-agent-for-marketing-data-that-doesn-t-hallucinate.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-017-show-hn-zyler-ai-agent-for-marketing-data-that-doesn-t-hallucinate.json`
+- source: keyword search / HN community feedback｜https://news.ycombinator.com/item?id=44364508
+- source_url: https://news.ycombinator.com/item?id=44364508
+- acquisition_channel: keyword-search
+- search_intent: find_user_feedback
+- search_path: community_feedback
+- source_type: industry
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: keyword search / HN community feedback
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: cbd6aaef2704cb2f
+- raw_full_text_hash: cbd6aaef2704cb2f
+- raw_semantic_hash: c8c5f232e04ef560
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.4
+- raw_capture_priority: 5.4
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"7 points / 4 comments / linked_url=https://www.zyler.ai / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"7 points / 4 comments / linked_url=https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"ai / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["7 points / 4 comments / linked_url=https://www.zyler.ai / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback","7 points / 4 comments / linked_url=https://www.","ai / query=AI Agent funding enterprise customers / intent=find_user_feedback / path=community_feedback"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-018｜Show HN: ContextFort – Visibility and controls for browser agents
+
+- raw_ref: R-018
+- raw_original_id: 46614015
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-018-show-hn-contextfort-visibility-and-controls-for-browser-agents.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-018-show-hn-contextfort-visibility-and-controls-for-browser-agents.json`
+- source: keyword search / HN community feedback｜https://news.ycombinator.com/item?id=46614015
+- source_url: https://news.ycombinator.com/item?id=46614015
+- acquisition_channel: keyword-search
+- search_intent: find_user_feedback
+- search_path: community_feedback
+- source_type: industry
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: keyword search / HN community feedback
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 9a70af5f5c9d77d5
+- raw_full_text_hash: 9a70af5f5c9d77d5
+- raw_semantic_hash: c9f60a3637e75860
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.9
+- raw_capture_priority: 2.9000000000000004
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"14 points / 1 comments / linked_url=https://contextfort.ai/ / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"14 points / 1 comments / linked_url=https://contextfort.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"ai/ / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["14 points / 1 comments / linked_url=https://contextfort.ai/ / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","14 points / 1 comments / linked_url=https://contextfort.","ai/ / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-019｜Show HN: VeriMed – open-source medical license verification
+
+- raw_ref: R-019
+- raw_original_id: 46366409
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-019-show-hn-verimed-open-source-medical-license-verification.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-019-show-hn-verimed-open-source-medical-license-verification.json`
+- source: keyword search / HN community feedback｜https://news.ycombinator.com/item?id=46366409
+- source_url: https://news.ycombinator.com/item?id=46366409
+- acquisition_channel: keyword-search
+- search_intent: find_user_feedback
+- search_path: community_feedback
+- source_type: industry
+- source_level: B
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: keyword search / HN community feedback
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: db8df0727af544f9
+- raw_full_text_hash: db8df0727af544f9
+- raw_semantic_hash: d5899d7f78ae477d
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.9
+- raw_capture_priority: 2.9000000000000004
+- usable_for: heatmap, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"4 points / 0 comments / linked_url=https://github.com/daretechie/verimed / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"4 points / 0 comments / linked_url=https://github.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"com/daretechie/verimed / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["4 points / 0 comments / linked_url=https://github.com/daretechie/verimed / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","4 points / 0 comments / linked_url=https://github.","com/daretechie/verimed / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-020｜Show HN: Airlock – self-upgrading compiled AI agents
+
+- raw_ref: R-020
+- raw_original_id: 48051931
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-17/r-020-show-hn-airlock-self-upgrading-compiled-ai-agents.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-17/r-020-show-hn-airlock-self-upgrading-compiled-ai-agents.json`
+- source: Hacker News｜https://github.com/airlockrun/airlock/
+- source_url: https://github.com/airlockrun/airlock/
+- acquisition_channel: hn
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- acquisition_source_level: not_applicable
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 74c0766ce561017a
+- raw_full_text_hash: 74c0766ce561017a
+- raw_semantic_hash: b8ea2f36041b44ae
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.9
+- raw_capture_priority: 2.9000000000000004
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"case_detail","text":"4 points / 2 comments / query=AI coding agent enterprise deployment","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":[],"case_details":["4 points / 2 comments / query=AI coding agent enterprise deployment"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有可用全文快照
+- 入池理由：解释价值较高，可能形成变化卡或案例卡候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。

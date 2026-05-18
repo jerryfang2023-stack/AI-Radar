@@ -1,5 +1,49 @@
 ﻿# 观澜AI 工作进度账本
 
+## 2026-05-18 neat-freak 工作区清理
+
+- 状态：`accepted / workspace-cleanup`。
+- 收口报告：`agent-workflow/reports/WSD-20260518-neat-freak-workspace-cleanup-closeout.md`。
+- 已清理：旧每日自动化派发单、失败全站质量自动包非失败产物、旧机会中心派发单、已停用页面文案质检 closeout、旧商业信号返修派发单、旧 `v2-content-site-daily-update` / source-router / `unified-site-sync` 报告、未被当前索引引用的零散旧报告。
+- 已批量清理：未跟踪的 timestamped `quality-gates-*` / `v2-content-gate-*` 临时报告 328 个，以及 timestamped `writer-style-gate-*` 临时报告 70 个。
+- 已同步：`.gitignore` 忽略 timestamped 临时质量报告但保留 `*-latest.md`；`dispatch-board.md`、`closeout-queue.jsonl`、`daily-run-log.md` 和本进度账本中的相关引用已改为 `physically-cleaned` / `do-not-dispatch` / 历史说明。
+- 未触碰：`09-ai-news-radar/`、当前 V2.1 内容库、知识库、站点页面、六线程自动化规则。
+- 当前说明：`git status` 中仍有大量 `D`，原因是旧历史 Raw / originals 等文件已经物理删除但尚未提交；继续删除不会减少这些状态，需要后续统一提交，或由用户明确要求恢复。
+- 验证：JSONL 收口箱解析、`feature_list.json` 解析、`app.js` / `sync-v2-site-data.mjs` 语法检查和 `run-quality-gates syntax` 均通过。
+
+## 2026-05-18 V2.1 规则冲突与工作台二次清理
+
+- 状态：`accepted / v2.1-rule-cleanup`。
+- 收口报告：`agent-workflow/reports/WSD-20260518-v21-rule-workbench-cleanup-closeout.md`。
+- 已清理：页面派发模板、调度中枢规则、Agent 记忆、UI/UE 岗位说明和 DESIGN 中的旧硬闸门冲突；当前统一为桌面端优先、Copy-first、UI/UE 桌面证据和调度复核。
+- 已隔离：`v2-content-site-daily-update`、SYS-11、SYS-16、`V2-DAILY-AUTO` 均标记为 historical / superseded，当前每日生产链路以 SYS-17 `guanlan-daily-monitor` 六线程为准。
+- 已阻断：`V2-OPPORTUNITY-BRIEF-IMPLEMENT` 从 ready 改为 `stale / do-not-dispatch`；机会判断不再作为一级机会中心直接开发。
+- 已清理收口箱：`agent-workflow/inbox/closeout-queue.jsonl` 中旧 `ready_for_review` / `ready_for_independent_review` 记录已改为 processed / historical / void，避免重复验收废弃任务。
+- 已修复：`sync-v2-site-data.mjs` 风险库路径从旧 `10-databases` 改为当前 `09-databases`；站点代码中旧机会函数名和失败任务注释已清理。
+- 验证：`app.js`、`sync-v2-site-data.mjs` 语法通过；JSON / JS 数据解析通过；`run-quality-gates syntax` 通过，报告 `agent-workflow/reports/quality-gates-syntax-latest.md`。
+
+## 2026-05-18 V2.1 基座升级与历史冲突清理
+
+- 状态：`accepted / v2.1-baseline / conflicts-cleaned`。
+- 基座文件：`agent-workflow/reports/WSD-20260518-grillme-strategy-product-closeout.md` + `agent-workflow/reports/WSD-20260518-raw-pool-card-rules-closeout.md`。
+- 已验收：`WSD-20260518-GRILLME-STRATEGY-PRODUCT`，作为 V2.1 战略、产品、栏目、写作、数据证据和自动化总口径。
+- 已清理活文档冲突：`daily-monitor-router`、`v2-content-site-daily-update`、`unified-site-sync`、V2.0 当前版本号、V1 归档路径和前台 `可信边界` 表达。
+- 已更新：`AGENTS.md`、`current-context.md`、`docs/agent-handoff.md`、`docs/README.md`、`01-SiteV2/README.md`、`01-SiteV2/site/README.md`、`TASK-window-dispatch-template.md`、`intelligence-data-model.md`、Raw / Pool / source / daily monitoring 相关规则文档。
+- 已升级网站版本：`01-SiteV2/site/scripts/sync-v2-site-data.mjs` 输出 `meta.version=V2.1`；当前 `site-content.json/.js` 已写入 `V2.1`；页脚显示 `© 2026 WaveSight AI · V2.1`。
+- 收口报告：`agent-workflow/reports/WSD-20260518-v21-baseline-conflict-cleanup-closeout.md`。
+- 保留说明：历史派发单、旧报告、旧 progress 深处仍可出现旧名词，作为历史记录不再批量重写；新窗口继承只以 AGENTS、current-context、handoff 和两个 2026-05-18 closeout 为准。
+- 后续任务：旧资产 schema 迁移与 Raw 回填；按新规则重跑 writer；基于补厚卡片重构商业信号前台页面。
+
+## 2026-05-18 Raw / Pool / Card 证据规则总收口验收
+
+- 状态：`accepted / governance-current / migration-gap-recorded`。
+- 收口文件：`agent-workflow/reports/WSD-20260518-raw-pool-card-rules-closeout.md`。
+- 验收结论：accepted。本轮目标是统一 Raw / Pool / 变化卡 / 案例卡 / 观点卡 / 趋势卡的证据规则和自动化提示，不包含旧资产批量迁移。
+- 已确认：关键规则文件、自动化提示、知识库模板和 `guanlan-daily-monitor` skill 均存在。
+- 复验：`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过，报告 `agent-workflow/reports/quality-gates-syntax-2026-05-18-20260518-064346.md`。
+- 调度备注：检索到的 `daily-monitor-router`、`v2-content-site-daily-update`、`unified-site-sync`、`Structured / Front Signal` 等残留主要位于历史派发单、旧进度记录、旧归档内容或 feature 历史项，不作为当前运行口径；`docs/agent-handoff.md` 已修正六线程第一项为 `guanlan-daily-monitor`。
+- 遗留任务：旧变化卡 / 案例卡 / 观点卡 schema 迁移与 Raw 回填；迁移后再重跑 `asset-card-generator` 并同步商业信号前台数据。
+
 ## 2026-05-18 案例卡 / 观点卡 / 趋势卡模板按 Raw / Pool 规则重设
 
 - 状态：`implemented / syntax-passed / migration-gap-recorded`。
@@ -5301,7 +5345,7 @@ Agent 安排：
 
 - 状态：accepted / independent-quality-gate-ready。
 - 任务：`V2-PAGE-COPY-QUALITY-SKILL / WSD-20260511-03-v2-page-copy-quality-review-skill`。
-- 收口文件：`agent-workflow/reports/WSD-20260511-03-v2-page-copy-quality-review-skill-closeout.md`。
+- 收口文件：历史 closeout 已物理删除；独立页面文案质检流程已停用。
 - 已完成：新增 `agent-workflow/governance/page-copy-quality-review-skill.md`，建立观澜AI页面与文案七维独立质检标准。
 - 已完成：新增 `agent-workflow/execution/TASK-page-copy-quality-review-template.md`，后续可直接派发独立质检窗口。
 - 已更新：`AGENTS.md`、`agent-workflow/governance/current-context.md`、`agent-workflow/agents/qa-agent.md`、`agent-workflow/execution/dispatch-board.md`。
@@ -5325,7 +5369,7 @@ Agent 安排：
 
 - 状态：completed / needs-revision。
 - 任务：`V2-KEY-SIGNALS-QA / WSD-20260511-06-v2-key-signals-pages-quality-review`。
-- 收口文件：`agent-workflow/reports/WSD-20260511-06-v2-key-signals-pages-quality-review-closeout.md`。
+- 收口文件：历史 closeout 已物理删除；商业信号后续按 V2.1 Raw-first 规则重新派发。
 - 检查页面：`signals.html`、`signal-detail.html`、`structured-signal.html`、`builders.html`、`builder-detail.html`。
 - 质检结论：总分 52 / 70，未达到 accepted 硬闸门；定位一致性 8、商业判断 8，但文案自然度 7、可信度 7，低于核心维度 8 分要求。
 - 主要问题：Builders 体系仍像 KOL / source 聚合页；英文和内部字段式标签过多；Structured Signal 来源事实模板化；信号进入机会解码 / 商业内参的关系不够清楚；部分相关内容有资料库和裸 URL 感。
@@ -5358,7 +5402,7 @@ Agent 安排：
 
 - 状态：accepted / local-polish-verified。
 - 任务：`V2-OPPORTUNITY-BRIEF-POLISH / opportunity-brief-detail-polish-20260511`。
-- 收口文件：`agent-workflow/reports/opportunity-brief-detail-polish-20260511-closeout.md`。
+- 收口文件：历史 closeout 已物理删除；页面细节结果已并入当前代码与看板历史记录。
 - 改动范围：`opportunities.html`、`brief.html`、`assets/app.js`、`assets/styles.css`、`assets/generated/`。
 - 已完成：删除机会解码和商业内参入口顶部介绍行；压缩机会入口、机会详情、商业内参、关键信号详情的过大字号；将两个栏目内容型 SVG 配图替换为 imagegen 位图。
 - 新增/使用位图：`business-brief-control-layer-imagegen.png`、`brief-framework-evidence-imagegen.png`、`opportunity-report-cover-imagegen.png`、`opportunity-framework-path-imagegen.png`。

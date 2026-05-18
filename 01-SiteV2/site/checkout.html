@@ -6,58 +6,53 @@
   <title>访问确认｜观澜AI</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body class="page-checkout">
   <header class="site-header" data-header></header>
   <main class="auth-page checkout-page">
     <section class="auth-hero checkout-hero">
       <div class="auth-hero-copy">
-        <span class="auth-kicker">ACCESS CONFIRMATION</span>
-        <h1>确认申请，不在这里付款</h1>
-        <p>在真实支付接入前，确认页只说明申请信息、阅读边界和后续处理方式。</p>
+        <span class="auth-kicker">CHECKOUT</span>
+        <h1>确认订阅</h1>
+        <p>确认订阅方案和联系邮箱。</p>
       </div>
-      <aside class="checkout-summary-card">
-        <span>SELECTED ACCESS</span>
-        <strong>商业内参会员</strong>
-        <p>完整内参、来源摘要、热力变化和机会观察。</p>
-      </aside>
     </section>
 
     <section class="auth-shell checkout-shell">
-      <form class="auth-form-v2" data-auth-form data-success="确认已完成页面演示。真实支付和权限开通需要后续专项接入。">
+      <form class="auth-form-v2" data-auth-form data-success="订阅已确认，已记录会员状态。">
         <div class="auth-form-head">
-          <span class="auth-kicker">CONFIRM</span>
-          <h2>确认访问申请</h2>
-          <p>请确认联系人和阅读场景。这里不会收款。</p>
+          <span class="auth-kicker">CHECKOUT</span>
+          <h2>确认订阅</h2>
+          <p>请确认邮箱和订阅方案。</p>
         </div>
         <label class="auth-field">
-          <span>联系人邮箱</span>
-          <input name="email" type="email" autocomplete="email" required placeholder="name@company.com">
+          <span>邮箱</span>
+          <input name="contact" type="email" autocomplete="email" required>
         </label>
         <label class="auth-field">
-          <span>访问类型</span>
+          <span>订阅方案</span>
           <select name="plan" required>
             <option value="">请选择</option>
-            <option>商业内参会员</option>
-            <option>团队阅读沟通</option>
+            <option>月度会员</option>
+            <option>年度会员</option>
           </select>
         </label>
         <label class="auth-check">
           <input name="boundary" type="checkbox" required>
-          <span>我知道当前页面不接入真实支付，也不代表权限已经开通。</span>
+          <span>我知道内容用于观察 AI 商业变化，不构成经营、投资或合作建议。</span>
         </label>
         <div class="auth-actions">
-          <button class="button primary" type="submit">确认访问申请</button>
+          <button class="button primary" type="submit">确认订阅</button>
           <a class="button secondary" href="account.html">查看账户状态</a>
         </div>
         <div class="auth-status" role="status" aria-live="polite"></div>
       </form>
 
       <aside class="auth-side-note">
-        <span>AFTER CONFIRMATION</span>
+        <span>CHECKOUT</span>
         <ol>
-          <li><strong>审核阅读场景</strong><p>确认是否适合当前会员层内容。</p></li>
-          <li><strong>沟通访问方式</strong><p>真实权限、付款和发票另行处理。</p></li>
-          <li><strong>开通后阅读</strong><p>回到账户页查看可读内容。</p></li>
+          <li><strong>确认方案</strong><p>选择月度或年度会员。</p></li>
+          <li><strong>确认邮箱</strong><p>权限跟随账号邮箱。</p></li>
+          <li><strong>继续阅读</strong><p>回到账户页查看阅读权限。</p></li>
         </ol>
       </aside>
     </section>

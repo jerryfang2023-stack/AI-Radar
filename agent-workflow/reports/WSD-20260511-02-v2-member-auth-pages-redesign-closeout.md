@@ -111,3 +111,55 @@
 ## 10. closeout queue 登记状态
 
 已向 `agent-workflow/inbox/closeout-queue.jsonl` 追加登记，等待调度窗口验收。
+
+## 11. 2026-05-11 追加调整记录
+
+用户反馈后已补充完成以下收敛调整：
+
+- 导航栏会员入口统一到所有 V2 页面：
+  - 未登录：`注册/登录` 指向 `register.html`。
+  - AI 图标指向 `login.html`。
+  - 登录 / 注册 / 确认后：入口与头像指向 `account.html`。
+  - 有用户头像时显示头像；无头像时显示默认 `AI` 图标。
+- 修复会员相关页面错误高亮“商业内参”的问题：
+  - 原因是 `login.html`、`register.html`、`account.html`、`pricing.html`、`checkout.html` 被映射为 `brief.html` 当前导航状态。
+  - 已移除该错误映射。
+- 会员页内容改为沿用 V1 版本的话术、逻辑和页面内容：
+  - `login.html`：继续追踪 AI 商业信号 / 登录账号。
+  - `register.html`：创建账号 / 邀请码必填 / 设置密码 / 确认密码。
+  - `invite-request.html`：申请邀请码 / 邮箱、公司、身份、申请理由。
+  - `account.html`：账户与阅读权限。
+  - `pricing.html`：订阅观澜AI / 免费、月度会员、年度会员。
+  - `checkout.html`：确认订阅。
+- 删除每个会员页面首屏右上角含义模糊的说明模块。
+- 压缩会员页顶部留白，确保核心内容进入桌面首屏。
+
+追加修改文件：
+
+- `01-SiteV2/site/invite-request.html`
+- `01-SiteV2/site/login.html`
+- `01-SiteV2/site/register.html`
+- `01-SiteV2/site/account.html`
+- `01-SiteV2/site/pricing.html`
+- `01-SiteV2/site/checkout.html`
+- `01-SiteV2/site/assets/styles.css`
+- `01-SiteV2/site/assets/app.js`
+
+追加 QA：
+
+- 浏览器检查 6 个会员页面：`login.html`、`register.html`、`invite-request.html`、`account.html`、`pricing.html`、`checkout.html`。
+- 右上角说明模块数量均为 `0`。
+- 核心内容进入桌面首屏：
+  - 登录 / 注册：核心表单约 `341px`。
+  - 申请邀请码 / 账户 / 确认订阅：核心内容约 `285px`。
+  - 订阅方案：方案卡约 `314px`。
+- 导航链接检查通过：
+  - `注册/登录` -> `register.html`
+  - `AI` 图标 -> `login.html`
+
+追加质量检查：
+
+- `node --check 01-SiteV2/site/assets/app.js`：passed
+- `node agent-workflow/tools/run-quality-gates.mjs syntax`：passed
+
+最新结论：accepted，等待调度窗口验收。

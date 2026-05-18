@@ -1,4 +1,15 @@
-# 每日运行记录
+﻿# 每日运行记录
+
+## 2026-05-11
+
+### 18:05 V2 关键词监测与 source-router 算法修复
+
+- 状态：accepted / automation-updated。
+- 问题：关键词监测表此前只存在于 `source-intelligence.md`，没有进入 `run-v2-daily-pipeline.mjs` 执行链路，导致 2026-05-06 至 2026-05-11 Front Signals 明显偏向企业 Agent / MCP / 治理主题。
+- 修复：新增 `01-SiteV2/content/10-databases/keyword-monitoring-v2.json`，并让 `agent-workflow/tools/run-v2-daily-pipeline.mjs` 读取该配置。
+- 新增日志字段：`keyword_group_distribution`、`theme_distribution`、`theme_concentration_warning`、`front_signal_theme_gate`。
+- 自动化：Codex automation `v2-content-site-daily-update` 已更新，后续每日 09:00 使用新关键词配置和主题多样性闸门。
+- 验证：脚本语法通过，关键词 JSON 解析通过，小样本 dry-run 通过，`run-quality-gates.mjs syntax` 通过。
 
 ## 2026-05-02
 
@@ -407,3 +418,14 @@
 - 状态：synced
 - 阻塞项：0
 - 报告：agent-workflow/reports/unified-site-sync-2026-05-06.md
+
+### 2026/5/15 18:51:56 统一网站同步闸门
+
+- 日期：2026-05-15
+- 状态：blocked
+- 阻塞项：3
+- 报告：历史 unified-site-sync 报告已物理删除；当前不再运行旧统一同步闸门。
+- 阻塞原因：
+  - AI商业雷达：缺少当天 Signals 文件或文件为空：01-Signals/2026-05-15-AI商业雷达.md
+  - AI机会评分：缺少当天 Scoring 文件或文件为空：02-Scoring/2026-05-15-AI机会评分.md
+  - The Point：缺少当天 The Point 文件或文件为空：05-Point/2026-05-15-The-Point.md

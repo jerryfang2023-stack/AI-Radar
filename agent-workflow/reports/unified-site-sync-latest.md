@@ -1,75 +1,27 @@
 # 统一网站同步闸门
 
-生成时间：2026/5/6 14:59:30
+生成时间：2026/5/15 18:51:56
 
 ## 结论
 
-- 日期：2026-05-06
-- 状态：synced
-- 阻塞项：0
-- 备份目录：agent-workflow/backups/unified-site-sync/20260506-065930
+- 日期：2026-05-15
+- 状态：blocked
+- 阻塞项：3
+- 备份目录：未创建
 
 ## 内容就绪检查
 
-1. **AI商业雷达**：Signals 文件就绪：01-Signals/2026-05-06-AI商业雷达.md，Signal 数量 5
-2. **AI机会评分**：Scoring 文件就绪：02-Scoring/2026-05-06-AI机会评分.md，评分行 5
-3. **The Point**：The Point 文件就绪：05-Point/2026-05-06-The-Point.md，Point 数量 10
-4. **Priority Engine 2.0**：Judgment Node 闸门检查：Priority Rows 50，Judgment Nodes 22，覆盖率 50/50。
-5. **统一同步**：网站数据同步、关系检查、The Point 质量检查、Tag Quality Check 和 Priority Engine 2.0 Judgment Node 闸门均通过。
+无
 
 ## 阻塞项
 
-无
+1. **AI商业雷达**：缺少当天 Signals 文件或文件为空：01-Signals/2026-05-15-AI商业雷达.md
+2. **AI机会评分**：缺少当天 Scoring 文件或文件为空：02-Scoring/2026-05-15-AI机会评分.md
+3. **The Point**：缺少当天 The Point 文件或文件为空：05-Point/2026-05-15-The-Point.md
 
 ## 执行命令
 
-1. `node --check 04-Site/scripts/sync-data.mjs` -> exit 0
-
-   stdout: -
-
-   stderr: -
-
-2. `node --check 04-Site/scripts/check-relations.mjs` -> exit 0
-
-   stdout: -
-
-   stderr: -
-
-3. `node --check 04-Site/scripts/check-point-quality.mjs` -> exit 0
-
-   stdout: -
-
-   stderr: -
-
-4. `node --check 04-Site/scripts/check-tags.mjs` -> exit 0
-
-   stdout: -
-
-   stderr: -
-
-5. `node 04-Site/scripts/sync-data.mjs` -> exit 0
-
-   stdout: Synced 42 signals, 50 score rows, 13 trends, 54 points, 9 point sources, 28 opportunities.
-
-   stderr: -
-
-6. `node 04-Site/scripts/check-relations.mjs` -> exit 0
-
-   stdout: - Signal / Opportunity / Trend 的弱关联可能来自标签相似度，本检查只校验引用是否存在，不逐条要求双向完全一致。 / - The Point 只作为观点共识、分歧或边界信号，不作为 Judgment Node 的事实证据直接加权。 / - 每次运行同步脚本后，应再运行本检查，确认新增内容没有断链。
-
-   stderr: -
-
-7. `node 04-Site/scripts/check-point-quality.mjs` -> exit 0
-
-   stdout: - X 观点不强制绑定站内素材笔记；Podcast / Blog / YouTube 观点建议绑定素材笔记。 / - 第三方全文入库前必须确认授权或自有导出边界；没有全文时，素材页使用结构化阅读摘要和高价值原文段。 / - 每次运行同步脚本和关系检查后，建议继续运行本检查。
-
-   stderr: -
-
-8. `node 04-Site/scripts/check-tags.mjs` -> exit 0
-
-   stdout: Tag check complete: 47 unique tags, 0 forbidden alias hits, 0 unknown public tag hits
-
-   stderr: -
+未执行同步命令。
 
 ## 处理规则
 

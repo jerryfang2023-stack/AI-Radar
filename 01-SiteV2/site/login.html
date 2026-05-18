@@ -6,25 +6,19 @@
   <title>登录｜观澜AI</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body class="page-login">
   <header class="site-header" data-header></header>
   <main class="auth-page auth-login-page">
     <section class="auth-hero">
       <div class="auth-hero-copy">
-        <span class="auth-kicker">MEMBER ACCESS</span>
-        <h1>回到你的 AI 商业判断层</h1>
-        <p>登录后继续查看商业内参预览、账户访问状态和已保存的阅读路径。</p>
+        <span class="auth-kicker">ACCOUNT</span>
+        <h1>继续追踪 AI 商业信号</h1>
+        <p>把零散变化压缩成可讨论的商业判断。</p>
         <div class="auth-hero-links">
           <a href="pricing.html">了解会员方案</a>
           <a href="brief.html">返回商业内参</a>
         </div>
       </div>
-      <aside class="auth-insight-panel" aria-label="会员阅读说明">
-        <img src="assets/vi-components/02-information-elements/member-brief-tag.svg" alt="">
-        <span>WAVESIGHT AI BUSINESS BRIEF</span>
-        <strong>更早发现信号，更清楚理解证据，更系统跟踪机会。</strong>
-        <p>当前页面只提供访问状态预览，不连接真实账户服务。</p>
-      </aside>
     </section>
 
     <section class="auth-shell">
@@ -32,32 +26,30 @@
         <div class="auth-form-head">
           <span class="auth-kicker">SIGN IN</span>
           <h2>登录账号</h2>
-          <p>使用常用邮箱继续阅读。真实认证会在后续专项接入。</p>
+          <p>登录后进入今日观察；权限到期时可在账户页续订。</p>
         </div>
         <label class="auth-field">
           <span>邮箱</span>
-          <input name="email" type="email" autocomplete="email" required placeholder="name@company.com">
-          <small>用于识别你的会员访问申请。</small>
+          <input name="contact" type="email" autocomplete="email" required>
         </label>
         <label class="auth-field">
           <span>密码</span>
           <input name="password" type="password" autocomplete="current-password" required>
-          <small>当前为页面状态预览，信息不会离开当前页面。</small>
         </label>
         <div class="auth-actions">
           <button class="button primary" type="submit">登录并继续阅读</button>
           <a class="button secondary" href="register.html">申请访问</a>
         </div>
-        <p class="auth-boundary">尚未开放真实账户认证。提交后只显示本地页面反馈。</p>
+        <p class="auth-boundary">内容用于观察 AI 商业变化，不构成经营、投资或合作建议。</p>
         <div class="auth-status" role="status" aria-live="polite"></div>
       </form>
 
       <aside class="auth-side-note">
-        <span>READING PATH</span>
+        <span>READING ACCESS</span>
         <ol>
-          <li><strong>了解会员价值</strong><p>先看会员方案和内参预览。</p></li>
-          <li><strong>提交申请</strong><p>留下邮箱、身份和关注议题。</p></li>
-          <li><strong>查看状态</strong><p>在账户页确认当前访问层级。</p></li>
+          <li><strong>今日主线</strong><p>先看最值得关注的变化。</p></li>
+          <li><strong>来源边界</strong><p>区分事实、观点和反证。</p></li>
+          <li><strong>机会判断</strong><p>判断哪些方向值得跟踪。</p></li>
         </ol>
       </aside>
     </section>

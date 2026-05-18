@@ -10,7 +10,7 @@ const dataDir = path.join(siteRoot, "data");
 const requestedDate = process.argv.find((arg) => arg.startsWith("--date="))?.slice("--date=".length);
 
 function withoutFrontmatter(markdown) {
-  return markdown.replace(/^---[\s\S]*?---\s*/u, "");
+  return markdown.replace(/^\uFEFF?/u, "").replace(/^---[\s\S]*?---\s*/u, "");
 }
 
 function splitSections(markdown) {
@@ -62,7 +62,10 @@ function cleanPublicText(text = "") {
     .replace(/下一步验证/g, "观察变量")
     .replace(/机会确定/g, "机会判断")
     .replace(/确定性/g, "证据状态")
-    .replace(/观点校准/g, "观点参照")
+    .replace(/Builders?\s*观点/giu, "前沿观点")
+    .replace(/builder\s*观点/giu, "前沿观点")
+    .replace(/一线观点/g, "前沿观点")
+    .replace(/观点校准/g, "前沿观点")
     .replace(/趋势背景/g, "趋势线索")
     .replace(/判断资产/g, "观察")
     .replace(/判断链/g, "观察线索")
@@ -85,9 +88,11 @@ function parseRelationTokens(text = "") {
     signals: "signal",
     trends: "trend",
     points: "point",
-    opportunities: "opportunity",
+    cases: "case",
+    trendReports: "trendReport",
   }[value.trim()] || value.trim());
   text
+    .replaceAll("`", "")
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean)
@@ -103,6 +108,21 @@ function parseRelationTokens(text = "") {
       }
     });
   return tokens;
+}
+
+function extractReferenceIds(text = "", prefixes = []) {
+  const allowed = prefixes.length ? prefixes.join("|") : "CHG|CASE|OPN|BP|TRD|PUB";
+  const pattern = new RegExp(`\\b(?:${allowed})-\\d{8}-\\d{2}\\b`, "gu");
+  return [...new Set(String(text).replaceAll("`", "").match(pattern) || [])];
+}
+
+function relationFieldFromSelectedCards(caseText = "", opinionText = "") {
+  const cases = extractReferenceIds(caseText, ["CASE"]);
+  const points = extractReferenceIds(opinionText, ["OPN", "BP"]);
+  return [
+    cases.length ? `cases:${cases.join(",")}` : "",
+    points.length ? `points:${points.join(",")}` : "",
+  ].filter(Boolean).join(",");
 }
 
 const tagTaxonomy = [
@@ -132,7 +152,7 @@ const tagTaxonomy = [
   { id: "scenario-bidding-response", name: "标书响应", group: "scenario", aliases: ["标书解析", "应标响应"] },
   { id: "scenario-clinical-imaging", name: "临床影像辅助", group: "scenario", aliases: ["影像诊断"] },
   { id: "scenario-agent-governance", name: "Agent 权限治理", group: "scenario", aliases: ["审计", "权限", "风险控制"] },
-  { id: "scenario-builder-point", name: "建造者观点", group: "scenario", aliases: ["The Point", "观点证据"] },
+  { id: "scenario-builder-point", name: "前沿观点", group: "scenario", aliases: ["The Point", "观点证据", "建造者观点"] },
   { id: "customer-smb", name: "中小企业", group: "customer", aliases: ["SMB", "中小商家"] },
   { id: "customer-enterprise", name: "大中型企业", group: "customer", aliases: ["企业客户"] },
   { id: "customer-public-sector", name: "政府 / 国企", group: "customer", aliases: ["政府", "央国企"] },
@@ -145,7 +165,7 @@ const tagTaxonomy = [
   { id: "evidence-revenue", name: "收入增长", group: "evidence", aliases: ["ARR", "营收"] },
   { id: "evidence-regulation", name: "监管政策", group: "evidence", aliases: ["政策", "合规"] },
   { id: "evidence-procurement", name: "招投标 / 采购", group: "evidence", aliases: ["招标", "政府采购"] },
-  { id: "evidence-builder-view", name: "建造者观点", group: "evidence", aliases: ["The Point", "观点"] },
+  { id: "evidence-builder-view", name: "前沿观点", group: "evidence", aliases: ["The Point", "观点", "建造者观点"] },
   { id: "stage-emerging", name: "新出现", group: "stage", aliases: ["emerging"] },
   { id: "stage-rising", name: "升温", group: "stage", aliases: ["rising"] },
   { id: "stage-splitting", name: "分化", group: "stage", aliases: ["splitting"] },
@@ -201,8 +221,9 @@ function inferTags(item = {}, type = "signal") {
   const has = (pattern) => pattern.test(text);
 
   if (type === "signal") add("source-first-party", "evidence-product-launch");
+  if (type === "case") add("source-first-party", "evidence-customer-adoption");
   if (type === "trend") add("stage-rising");
-  if (type === "opportunity") add("function-operations", "stage-watch", "region-china");
+  if (type === "trendReport") add("function-operations", "stage-watch", "region-china");
   if (type === "point") {
     add("scenario-builder-point", "evidence-builder-view", "source-social");
     if (has(/Coding|代码|编程|工程/u)) add("point-ai-coding");
@@ -369,7 +390,7 @@ function parsePoints(markdown) {
       relations,
       relatedSignals: relations.filter((item) => item.startsWith("signal:")).map((item) => item.split(":")[1]),
       relatedTrends: relations.filter((item) => item.startsWith("trend:")).map((item) => item.split(":")[1]),
-      relatedOpportunities: relations.filter((item) => item.startsWith("opportunity:")).map((item) => item.split(":")[1]),
+      relatedTrendReports: relations.filter((item) => item.startsWith("trendReport:")).map((item) => item.split(":")[1]),
     };
     return { ...point, tags: inferTags(point, "point") };
   });
@@ -390,15 +411,19 @@ function parseTrends(markdown, currentDate) {
   }).filter((item) => !/^今日趋势判断/u.test(item.title));
 }
 
-function parseOpportunity(markdown, currentDate) {
+function parseTrendReport(markdown, currentDate, sourcePath = "") {
   const h1Title = withoutFrontmatter(markdown).match(/^#\s+(.+)$/mu)?.[1]?.trim() || "";
   const sectionsAll = splitSections(withoutFrontmatter(markdown));
+  const kind = frontmatterField(markdown, "kind") || "";
+  const frontStatus = frontmatterField(markdown, "front_status") || "visible";
+  if (frontStatus === "hidden") return null;
+  if (kind === "no_report_decision") return null;
   const first = sectionsAll.find((section) => !/^摘要$/u.test(section.heading)) || sectionsAll[0];
   if (!first) return null;
-  const sectionTitle = first.heading.replace(/^OPP-\d+-\d+\s*[｜|]\s*/u, "").replace(/｜.+$/u, "").trim();
+  const sectionTitle = first.heading.replace(/^TRD-(?:FLASH|FULL)?-?\d+-\d+\s*[｜|]\s*/u, "").replace(/｜.+$/u, "").trim();
   const rawTitle = /^一、|^机会定义|^事件背景/u.test(sectionTitle)
     ? h1Title.replace(/^\d{4}-\d{2}-\d{2}\s*/u, "").replace(/深挖机会卡/u, "AI 客服 Agent 运营控制层").trim()
-    : sectionTitle;
+    : (frontmatterField(markdown, "title") || h1Title || sectionTitle);
   const title = cleanPublicText(rawTitle);
   const six = parseNumberedList(sectionText(first.body, "六维分析"));
   const fallbackSections = sectionsAll
@@ -410,32 +435,66 @@ function parseOpportunity(markdown, currentDate) {
     .slice(0, 18);
   const sections = [
     ["机会判断", sectionText(first.body, "机会判断") || sectionText(withoutFrontmatter(markdown), "摘要")],
+    ["老板先看", h2SectionText(sectionsAll, ["老板先看"])],
+    ["今天为什么突然升温", h2SectionText(sectionsAll, ["今天为什么突然升温"])],
+    ["变化背景", h2SectionText(sectionsAll, ["变化背景"])],
     ...six,
-    ["趋势线索", "相关趋势说明这条变化并非孤立出现。"],
-    ["观点参照", "相关观点可作为补充视角，不替代事实来源。"],
-    ["反证与限制", sectionText(first.body, "风险与反证")],
-    ["观察变量", sectionText(first.body, "下一步验证")],
+    ["技术路线的商业含义", h2SectionText(sectionsAll, ["技术路线"])],
+    ["同类产品与竞品", h2SectionText(sectionsAll, ["同类产品", "市面上谁在动"])],
+    ["趋势线索", h2SectionText(sectionsAll, ["关联信号", "变化背景"], "相关趋势说明这条变化并非孤立出现。")],
+    ["观点参照", h2SectionText(sectionsAll, ["关联信号与观点", "观点"], "相关观点可作为补充视角，不替代事实来源。")],
+    ["反证与限制", sectionText(first.body, "风险与反证") || h2SectionText(sectionsAll, ["反证", "风险", "信息缺口"])],
+    ["观察变量", sectionText(first.body, "下一步验证") || h2SectionText(sectionsAll, ["后续观察", "30 天后看什么"])],
     ...deepSections,
     ...fallbackSections,
   ].filter(([sectionName, text], index, arr) => text && arr.findIndex(([titleKey]) => titleKey === sectionName) === index);
 
-  const opportunity = {
-    id: field(first.body, "stable_id") || field(withoutFrontmatter(markdown), "opportunity_id") || `OPP-${currentDate.replaceAll("-", "")}-01`,
-    slug: slugify(title),
+  const paragraphs = introParagraphs(markdown, 3);
+  const firstJudgment =
+    h2SectionText(sectionsAll, ["老板先看"]).split(/\n/u).find((line) => line.trim()) ||
+    h2SectionText(sectionsAll, ["今天为什么突然升温", "变化背景"]).split("。")[0] ||
+    sectionText(first.body, "机会判断") ||
+    sectionText(withoutFrontmatter(markdown), "摘要") ||
+    paragraphs[0] ||
+    paragraphAfterFields(first.body);
+  const reportId = frontmatterField(markdown, "id") ||
+    field(first.body, "stable_id") ||
+    field(withoutFrontmatter(markdown), "trend_report_id") ||
+    `TRD-${currentDate.replaceAll("-", "")}-01`;
+  const status = frontmatterField(markdown, "status") || "watching";
+  const reportKind = kind || (reportId.includes("FLASH") ? "flash" : (reportId.includes("FULL") ? "full" : "legacy"));
+  const evidenceGaps = field(first.body, "evidence_gaps") ||
+    h2SectionText(sectionsAll, ["反证", "风险", "信息缺口"]) ||
+    (frontmatterField(markdown, "has_counter_evidence") === "true"
+      ? "报告已包含反证，详见正文。"
+      : "仍需继续观察客户采用、付费意愿和交付成本。");
+  const relationFields = field(first.body, "relation_fields") || frontmatterField(markdown, "relation_fields");
+  const trendReport = {
+    id: reportId,
+    slug: frontmatterField(markdown, "slug") || slugify(title),
     title,
-    oneLine: cleanPublicText((sectionText(first.body, "机会判断") || sectionText(withoutFrontmatter(markdown), "摘要") || paragraphAfterFields(first.body)).split("。")[0] + "。"),
-    score: "观察偏上",
-    stage: "信息增加中",
-    date: currentDate,
-    updated: currentDate.replaceAll("-", "."),
-    sourcePath: field(first.body, "source_paths"),
-    relationFields: field(first.body, "relation_fields"),
-    relations: parseRelationTokens(field(first.body, "relation_fields")),
-    evidenceGaps: field(first.body, "evidence_gaps"),
+    kind: reportKind,
+    status,
+    frontStatus,
+    oneLine: cleanPublicText(firstJudgment.endsWith("。") ? firstJudgment : `${firstJudgment}。`),
+    score: reportKind === "flash" ? "趋势快报" : (reportKind === "full" ? "深度报告" : "继续观察"),
+    stage: status === "upgraded" ? "已升级为深度报告" : (reportKind === "flash" ? "继续观察" : "证据正在增强"),
+    date: frontmatterField(markdown, "date") || currentDate,
+    updated: (frontmatterField(markdown, "date") || currentDate).replaceAll("-", "."),
+    sourcePath: sourcePath || field(first.body, "source_paths"),
+    urgentCandidateId: frontmatterField(markdown, "urgent_candidate_id"),
+    upgradeTarget: frontmatterField(markdown, "upgrade_target"),
+    upgradedFrom: frontmatterField(markdown, "upgraded_from"),
+    sourceCount: frontmatterField(markdown, "source_count"),
+    primarySourceCount: frontmatterField(markdown, "primary_source_count"),
+    hasCounterEvidence: frontmatterField(markdown, "has_counter_evidence"),
+    relationFields,
+    relations: parseRelationTokens(relationFields),
+    evidenceGaps: cleanPublicText(evidenceGaps),
     sections,
-    link: "opportunity-detail.html",
+    link: "trend-detail.html",
   };
-  return { ...opportunity, tags: inferTags(opportunity, "opportunity") };
+  return { ...trendReport, tags: inferTags(trendReport, "trendReport") };
 }
 
 function hasPublishReady(body) {
@@ -470,7 +529,7 @@ function parseRefinedSignals(markdown, currentDate) {
       dateRefs: refinedDateRefs(body, itemDate),
       brief: sectionText(body, "导语") || paragraphAfterFields(body),
       judgment: sectionText(body, "导语") || paragraphAfterFields(body),
-      sources: "V1 历史归档 + V2 精修",
+      sources: "历史归档 + V2.1 精修",
       sourcePath: field(body, "source_paths"),
       audience: "商业决策者 / 产品负责人 / 企业服务创业者",
       coordinates: relationFields.split(",").map((item) => item.split(":")[1]?.trim() || item.trim()).filter(Boolean).slice(0, 3),
@@ -505,7 +564,7 @@ function parseRefinedPoints(markdown, currentDate) {
       relations,
       relatedSignals: relations.filter((item) => item.startsWith("signal:")).map((item) => item.split(":")[1]),
       relatedTrends: relations.filter((item) => item.startsWith("trend:")).map((item) => item.split(":")[1]),
-      relatedOpportunities: relations.filter((item) => item.startsWith("opportunity:")).map((item) => item.split(":")[1]),
+      relatedTrendReports: relations.filter((item) => item.startsWith("trendReport:")).map((item) => item.split(":")[1]),
       legacy: true,
     };
     return { ...point, tags: inferTags(point, "point") };
@@ -532,11 +591,11 @@ function parseRefinedTrends(markdown, currentDate) {
   }).filter(Boolean);
 }
 
-function parseRefinedOpportunities(markdown, currentDate) {
+function parseRefinedTrendReports(markdown, currentDate) {
   return splitSections(withoutFrontmatter(markdown)).map(({ heading, body }, index) => {
     if (!hasPublishReady(body)) return null;
-    const title = cleanPublicText(heading.replace(/^LEGACY-OPP-\d+-\d+\s*[｜|]\s*/u, "").trim());
-    const stableId = field(body, "stable_id") || `LEGACY-OPP-${currentDate.replaceAll("-", "")}-${String(index + 1).padStart(2, "0")}`;
+    const title = cleanPublicText(heading.replace(/^LEGACY-TRD-\d+-\d+\s*[｜|]\s*/u, "").trim());
+    const stableId = field(body, "stable_id") || `LEGACY-TRD-${currentDate.replaceAll("-", "")}-${String(index + 1).padStart(2, "0")}`;
     const relationFields = field(body, "relation_fields");
     const itemDate = refinedItemDate(body, currentDate);
     const six = parseNumberedList(sectionText(body, "六维分析"));
@@ -548,7 +607,7 @@ function parseRefinedOpportunities(markdown, currentDate) {
       ["反证与限制", sectionText(body, "反证与限制")],
       ["观察变量", sectionText(body, "观察变量")],
     ].filter(([, text]) => text);
-    const opportunity = {
+    const trendReport = {
       id: stableId,
       slug: slugify(title),
       title,
@@ -563,10 +622,10 @@ function parseRefinedOpportunities(markdown, currentDate) {
       relations: parseRelationTokens(relationFields),
       evidenceGaps: field(body, "evidence_gaps"),
       sections,
-      link: "opportunity-detail.html",
+      link: "trend-detail.html",
       legacy: true,
     };
-    return { ...opportunity, tags: inferTags(opportunity, "opportunity") };
+    return { ...trendReport, tags: inferTags(trendReport, "trendReport") };
   }).filter(Boolean);
 }
 
@@ -602,92 +661,304 @@ async function readOptionalDirMarkdown(dir) {
   }
 }
 
-async function discoverDates() {
-  const dir = path.join(contentRoot, "04-selected-signals");
-  const names = await readdir(dir);
-  return names
-    .map((name) => name.match(/^(\d{4}-\d{2}-\d{2})-front-signals\.md$/u)?.[1])
+async function markdownNames(dir) {
+  try {
+    const names = await readdir(dir);
+    return names.filter((name) => name.endsWith(".md")).sort();
+  } catch {
+    return [];
+  }
+}
+
+async function readDateMarkdown(dir, currentDate, includes = []) {
+  const names = await markdownNames(dir);
+  const matches = names.filter((name) => {
+    if (!name.startsWith(currentDate)) return false;
+    return includes.length ? includes.some((token) => name.includes(token)) : true;
+  });
+  const preferred = matches[0];
+  return preferred ? readOptional(path.join(dir, preferred)) : "";
+}
+
+async function readDateMarkdownFromDirs(dirs, currentDate, includes = []) {
+  for (const dir of dirs) {
+    const names = await markdownNames(dir);
+    const matches = names.filter((name) => {
+      if (!name.startsWith(currentDate)) return false;
+      return includes.length ? includes.some((token) => name.includes(token)) : true;
+    });
+    const preferred = matches[0];
+    if (preferred) {
+      return {
+        markdown: await readOptional(path.join(dir, preferred)),
+        sourcePath: path.relative(projectRoot, path.join(dir, preferred)).replaceAll("\\", "/"),
+      };
+    }
+  }
+  return { markdown: "", sourcePath: "" };
+}
+
+function trendReportDirs() {
+  const root = path.join(contentRoot, "06-trend-reports");
+  return {
+    full: path.join(root, "full"),
+    flash: path.join(root, "flash"),
+    legacy: root,
+    noReportDecisions: path.join(root, "no-report-decisions"),
+  };
+}
+
+async function readTrendReportMarkdown(currentDate) {
+  const dirs = trendReportDirs();
+  return readDateMarkdownFromDirs([dirs.full, dirs.flash, dirs.legacy], currentDate);
+}
+
+function frontmatterField(markdown, name) {
+  const frontmatter = markdown.match(/^---\s*([\s\S]*?)---/u)?.[1] || "";
+  const match = frontmatter.match(new RegExp(`^${name}:\\s*(.+)$`, "mu"));
+  return cleanPublicText(match?.[1]?.trim().replace(/^["']|["']$/gu, "") || "");
+}
+
+function firstHeading(markdown) {
+  return cleanPublicText(withoutFrontmatter(markdown).match(/^#\s+(.+)$/mu)?.[1] || "");
+}
+
+function h2SectionText(sections, names, fallback = "") {
+  const found = sections.find((section) => names.some((name) => section.heading.includes(name)));
+  return cleanPublicText(found?.body || fallback);
+}
+
+function introParagraphs(markdown, limit = 2) {
+  const body = withoutFrontmatter(markdown)
+    .replace(/^#\s+.+$/mu, "")
+    .split(/^##\s+/mu)[0] || "";
+  return body
+    .split(/\n{2,}/u)
+    .map((item) => cleanPublicText(item.replace(/\s+/gu, " ").trim()))
     .filter(Boolean)
-    .sort();
+    .slice(0, limit);
+}
+
+function parseDailyObservation(markdown, currentDate) {
+  if (!markdown) return null;
+  const title = frontmatterField(markdown, "title") || firstHeading(markdown) || `${currentDate} 今日观察`;
+  const paragraphs = introParagraphs(markdown, 3);
+  const sections = splitSections(withoutFrontmatter(markdown)).map(({ heading, body }) => ({
+    title: cleanPublicText(heading),
+    body: cleanPublicText(body),
+  }));
+  return {
+    id: `daily-${currentDate}`,
+    slug: `daily-${currentDate}`,
+    title,
+    issue: frontmatterField(markdown, "issue"),
+    period: frontmatterField(markdown, "period"),
+    contentType: frontmatterField(markdown, "type"),
+    judgment: paragraphs[0] || "今日观察已发布，市场主线仍需结合来源继续阅读。",
+    dek: paragraphs.slice(0, 2).join("\n\n") || "今日观察已发布，市场主线仍需结合来源继续阅读。",
+    summary: paragraphs,
+    sections,
+  };
+}
+
+function parseSelectedChangeCards(markdown, currentDate) {
+  if (!markdown) return [];
+  const body = withoutFrontmatter(markdown);
+  const matches = [...body.matchAll(/(?:^|\n)- `([^`]+)`[｜|]([^\n]+)\n([\s\S]*?)(?=\n- `|\n## |\n# |$)/gu)];
+  return matches.map((match, index) => {
+    const id = match[1].trim();
+    const title = cleanPublicText(match[2].trim());
+    const block = match[3] || "";
+    const reason = cleanPublicText(block.match(/^\s*入选理由[：:]\s*(.+)$/mu)?.[1] || "这条变化被选入今日观察，适合继续跟踪它影响的客户、场景和预算变化。");
+    const event = cleanPublicText(block.match(/^\s*事件[：:]\s*(.+)$/mu)?.[1] || "");
+    const businessMeaning = cleanPublicText(block.match(/^\s*商业含义[：:]\s*(.+)$/mu)?.[1] || "");
+    const rawRef = cleanPublicText(block.match(/^\s*Raw[：:]\s*(.+)$/mu)?.[1] || "");
+    const relatedCases = cleanPublicText(block.match(/^\s*关联案例[：:]\s*(.+)$/mu)?.[1]?.replaceAll("`", "") || "");
+    const relatedOpinions = cleanPublicText(block.match(/^\s*关联观点[：:]\s*(.+)$/mu)?.[1]?.replaceAll("`", "") || "");
+    const relationFields = relationFieldFromSelectedCards(relatedCases, relatedOpinions);
+    const sourceUrl = block.match(/^\s*来源[：:]\s*(https?:\/\/\S+)/mu)?.[1] || "";
+    const analysis = [
+      ["为什么值得看", reason],
+      ["发生了什么", event],
+      ["影响谁", businessMeaning],
+      ["来源依据", rawRef || (sourceUrl ? `原文：${sourceUrl}` : "来源见今日观察原文与变化卡")],
+    ].filter(([, text]) => text);
+    const signal = {
+      id,
+      slug: slugify(title) || `change-${index + 1}`,
+      title,
+      date: currentDate,
+      brief: businessMeaning || event || reason,
+      judgment: reason,
+      event,
+      businessMeaning,
+      sourceUrl,
+      sources: sourceUrl ? "原始出处已记录" : "来源见今日观察原文与变化卡",
+      rawRef,
+      sourcePath: `01-SiteV2/content/04-business-signals/${currentDate}-selected-change-cards.md#${id}`,
+      audience: "商业决策者 / 产品负责人 / 企业服务创业者",
+      coordinates: [],
+      structuredRefs: [id],
+      relations: parseRelationTokens(relationFields),
+      relationFields,
+      analysis,
+      calibration: "观点只作判断参照，不替代事实来源。",
+      counter: relatedCases
+        ? `已关联 ${relatedCases}；仍需继续补客户采用、ROI、复核成本和反证材料。`
+        : "暂无公开信息补足反证边界，后续由案例与信号研究线程继续补证。",
+      link: `signal-detail.html?id=${slugify(title) || `change-${index + 1}`}`,
+    };
+    return { ...signal, tags: inferTags(signal, "signal") };
+  });
+}
+
+function parseCaseResearch(markdown, currentDate, sourcePath = "") {
+  if (!markdown) return [];
+  const body = withoutFrontmatter(markdown);
+  const matches = [...body.matchAll(/^- `?(CASE-\d{8}-\d{2})`?\s*（(.+?)）[：:]\s*(.+)$/gmu)];
+  return matches.map((match, index) => {
+    const id = match[1].trim();
+    const caseDate = `${id.slice(5, 9)}-${id.slice(9, 11)}-${id.slice(11, 13)}`;
+    const title = cleanPublicText(match[2].trim());
+    const summary = cleanPublicText(match[3].trim());
+    const item = {
+      id,
+      slug: slugify(title) || `case-${currentDate}-${index + 1}`,
+      title,
+      date: caseDate || currentDate,
+      dateRefs: [caseDate || currentDate, currentDate].filter(Boolean),
+      brief: summary,
+      judgment: summary,
+      sourcePath,
+      sourceUrl: "",
+      relationFields: "",
+      relations: [],
+      link: "",
+    };
+    return { ...item, tags: inferTags(item, "case") };
+  });
+}
+
+function uniqueById(items) {
+  const map = new Map();
+  items.forEach((item) => {
+    const key = item.id || item.slug || item.title;
+    if (!key) return;
+    map.set(key, { ...(map.get(key) || {}), ...item });
+  });
+  return [...map.values()];
+}
+
+function parseOpinionCandidates(markdown, currentDate) {
+  if (!markdown) return [];
+  return splitSections(withoutFrontmatter(markdown)).map(({ heading, body }) => {
+    const relations = parseRelationTokens(field(body, "relation_fields"));
+    const point = {
+      id: field(body, "stable_id") || heading.split("｜")[0]?.trim(),
+      title: cleanPublicText(heading.replace(/^BP-\d+-\d+\s*[｜|]\s*/u, "").trim()),
+      date: currentDate,
+      sourcePath: field(body, "source_path"),
+      sourceUrl: field(body, "source_url"),
+      originalDate: field(body, "original_date"),
+      originalView: cleanPublicText(body.match(/^原始观点\/摘要[：:]\s*(.+)$/mu)?.[1] || paragraphAfterFields(body)),
+      interpretation: cleanPublicText(body.match(/^原始观点\/摘要[：:]\s*(.+)$/mu)?.[1] || "暂无可用公开摘录，保留为观点线索。"),
+      calibrates: "用于观察建造者观点变化，不作为事实主证据。",
+      usage: "用于今日观察或趋势追踪中的前沿观点参照。",
+      relations,
+      relatedSignals: [],
+      relatedTrends: [],
+      relatedTrendReports: [],
+    };
+    return { ...point, tags: inferTags(point, "point") };
+  }).filter((item) => item.id && item.title);
+}
+
+function parseChangeClusterCandidates(markdown, currentDate) {
+  if (!markdown) return [];
+  return splitSections(withoutFrontmatter(markdown)).map(({ heading, body }, index) => {
+    const title = cleanPublicText(heading.replace(/^CLU-CAND-\d+-\d+\s*[｜|]\s*/u, "").trim());
+    const trend = {
+      id: field(body, "stable_id") || heading.split("｜")[0]?.trim() || `TREND-CAND-${currentDate.replaceAll("-", "")}-${String(index + 1).padStart(2, "0")}`,
+      title,
+      date: currentDate,
+      judgment: cleanPublicText(body.match(/^观察理由[：:]\s*(.+)$/mu)?.[1] || "暂未形成正式趋势结论，继续观察来源、客户和场景变化。"),
+      sourcePath: field(body, "source_refs"),
+      relationFields: "",
+      relations: [],
+      evidenceGaps: "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
+    };
+    return { ...trend, tags: inferTags(trend, "trend") };
+  }).filter((item) => item.title);
+}
+
+async function discoverDates() {
+  const trendDirs = trendReportDirs();
+  const dirs = [
+    path.join(contentRoot, "03-daily-observation"),
+    path.join(contentRoot, "04-business-signals"),
+    path.join(contentRoot, "05-case-research"),
+    trendDirs.full,
+    trendDirs.flash,
+    trendDirs.legacy,
+    path.join(contentRoot, "07-business-briefs"),
+  ];
+  const names = (await Promise.all(dirs.map(markdownNames))).flat();
+  return [...new Set(names
+    .map((name) => name.match(/^(\d{4}-\d{2}-\d{2})/u)?.[1])
+    .filter(Boolean)
+  )].sort();
 }
 
 function dateFiles(currentDate) {
   return {
-    front: path.join(contentRoot, "04-selected-signals", `${currentDate}-front-signals.md`),
-    structured: path.join(contentRoot, "03-structured-signals", `${currentDate}-structured-signals.md`),
-    insights: path.join(contentRoot, "06-insights", `${currentDate}-insights.md`),
-    points: path.join(contentRoot, "07-points", `${currentDate}-point-calibration.md`),
-    opportunity: path.join(contentRoot, "08-opportunities", "deep-dive", `${currentDate}-opportunity-deep-dive.md`),
-    trends: path.join(contentRoot, "05-trend-chain", `${currentDate}-trend-classification.md`),
-    risks: path.join(contentRoot, "10-databases", "risks", `${currentDate}-risk-database-update.md`),
+    dailyDir: path.join(contentRoot, "03-daily-observation"),
+    businessSignalsDir: path.join(contentRoot, "04-business-signals"),
+    caseResearchDir: path.join(contentRoot, "05-case-research"),
+    businessBriefsDir: path.join(contentRoot, "07-business-briefs"),
+    risks: path.join(contentRoot, "09-databases", "risks", `${currentDate}-risk-database-update.md`),
   };
 }
 
 async function buildDay(currentDate) {
   const files = dateFiles(currentDate);
-  const [front, structured, insights, points, opportunity, trends, risks] = await Promise.all([
-    readOptional(files.front),
-    readOptional(files.structured),
-    readOptional(files.insights),
-    readOptional(files.points),
-    readOptional(files.opportunity),
-    readOptional(files.trends),
+  const [dailyObservation, selectedChangeCards, opinionCandidates, clusterCandidates, caseResearch, trendReportEntry, businessBrief, risks] = await Promise.all([
+    readDateMarkdown(files.dailyDir, currentDate, ["daily-observation"]),
+    readDateMarkdown(files.businessSignalsDir, currentDate, ["selected-change-cards"]),
+    readDateMarkdown(files.businessSignalsDir, currentDate, ["opinion-candidates"]),
+    readDateMarkdown(files.businessSignalsDir, currentDate, ["change-cluster-candidates"]),
+    readDateMarkdownFromDirs([files.caseResearchDir], currentDate, ["case-research"]),
+    readTrendReportMarkdown(currentDate),
+    readDateMarkdown(files.businessBriefsDir, currentDate),
     readOptional(files.risks),
   ]);
-  const structuredMap = structured ? parseStructured(structured) : new Map();
-  const signals = front ? parseFrontSignals(front, structuredMap, currentDate) : [];
-  const parsedInsights = insights ? parseInsights(insights) : [];
-  const parsedPoints = points ? parsePoints(points).map((item) => ({ ...item, date: currentDate })) : [];
-  const parsedTrends = trends ? parseTrends(trends, currentDate) : [];
-  const parsedOpportunity = opportunity ? parseOpportunity(opportunity, currentDate) : null;
+  const dailyArticle = parseDailyObservation(dailyObservation, currentDate);
+  const signals = selectedChangeCards ? parseSelectedChangeCards(selectedChangeCards, currentDate) : [];
+  const parsedInsights = dailyArticle
+    ? [{ id: dailyArticle.id, title: dailyArticle.title, judgment: dailyArticle.judgment, relatedSignals: signals.map((item) => item.id).join(", ") }]
+    : [];
+  const parsedPoints = opinionCandidates ? parseOpinionCandidates(opinionCandidates, currentDate) : [];
+  const parsedCases = caseResearch.markdown ? parseCaseResearch(caseResearch.markdown, currentDate, caseResearch.sourcePath) : [];
+  const parsedTrends = trendReportEntry.markdown
+    ? [parseDailyObservation(trendReportEntry.markdown, currentDate)].filter(Boolean).map((item) => ({ ...item, tags: inferTags(item, "trend") }))
+    : (clusterCandidates ? parseChangeClusterCandidates(clusterCandidates, currentDate) : []);
+  const parsedTrendReport = parseTrendReport(trendReportEntry.markdown, currentDate, trendReportEntry.sourcePath);
   const parsedRisks = risks ? parseRisks(risks).map((item) => ({ ...item, date: currentDate })) : [];
-  const title = parsedInsights[0]?.title || signals[0]?.title || parsedOpportunity?.title || `${currentDate} 观澜判断`;
-  const dek = parsedInsights[0]?.judgment || signals[0]?.judgment || parsedOpportunity?.oneLine || "当日内容仍在整理，暂以已入库信号作为观察样本。";
+  const title = dailyArticle?.title || parsedInsights[0]?.title || signals[0]?.title || parsedTrendReport?.title || `${currentDate} 观澜判断`;
+  const dek = dailyArticle?.dek || parsedInsights[0]?.judgment || signals[0]?.judgment || parsedTrendReport?.oneLine || "当日内容仍在整理，暂以已入库信号作为观察样本。";
   return {
     date: currentDate,
     label: currentDate.replaceAll("-", "."),
     title,
     dek,
+    article: dailyArticle,
+    businessBrief: parseDailyObservation(businessBrief, currentDate),
     signals,
     insights: parsedInsights,
     points: parsedPoints,
+    cases: parsedCases,
     trends: parsedTrends,
-    opportunity: parsedOpportunity,
+    trendReport: parsedTrendReport,
     risks: parsedRisks,
-  };
-}
-
-async function buildRefinedPackage() {
-  const refinedDate = "2026-05-08";
-  const files = {
-    signals: path.join(contentRoot, "03-structured-signals", "refined", "legacy-signals-publish-ready-2026-05-08.md"),
-    historySignals: path.join(contentRoot, "03-structured-signals", "history-refined"),
-    points: path.join(contentRoot, "07-points", "refined", "legacy-point-calibration-publish-ready-2026-05-08.md"),
-    historyPoints: path.join(contentRoot, "07-points", "history-refined"),
-    trends: path.join(contentRoot, "05-trend-chain", "refined", "legacy-trend-context-publish-ready-2026-05-08.md"),
-    historyTrends: path.join(contentRoot, "05-trend-chain", "history-refined"),
-    opportunities: path.join(contentRoot, "08-opportunities", "deep-dive", "refined", "legacy-opportunities-publish-ready-2026-05-08.md"),
-    historyOpportunities: path.join(contentRoot, "08-opportunities", "deep-dive", "history-refined"),
-  };
-  const [signals, historySignals, points, historyPoints, trends, historyTrends, opportunities, historyOpportunities] = await Promise.all([
-    readOptional(files.signals),
-    readOptionalDirMarkdown(files.historySignals),
-    readOptional(files.points),
-    readOptionalDirMarkdown(files.historyPoints),
-    readOptional(files.trends),
-    readOptionalDirMarkdown(files.historyTrends),
-    readOptional(files.opportunities),
-    readOptionalDirMarkdown(files.historyOpportunities),
-  ]);
-  const signalMarkdown = [signals, historySignals].filter(Boolean).join("\n\n");
-  const pointMarkdown = [points, historyPoints].filter(Boolean).join("\n\n");
-  const trendMarkdown = [trends, historyTrends].filter(Boolean).join("\n\n");
-  const opportunityMarkdown = [opportunities, historyOpportunities].filter(Boolean).join("\n\n");
-  return {
-    signals: signalMarkdown ? parseRefinedSignals(signalMarkdown, refinedDate) : [],
-    points: pointMarkdown ? parseRefinedPoints(pointMarkdown, refinedDate) : [],
-    trends: trendMarkdown ? parseRefinedTrends(trendMarkdown, refinedDate) : [],
-    opportunities: opportunityMarkdown ? parseRefinedOpportunities(opportunityMarkdown, refinedDate) : [],
   };
 }
 
@@ -704,7 +975,7 @@ function buildContentDateIndex(dayPackages, assets) {
         signalCount: 0,
         pointCount: 0,
         trendCount: 0,
-        hasOpportunity: false,
+        hasTrendReport: false,
       });
     }
     return byDate.get(date);
@@ -720,7 +991,7 @@ function buildContentDateIndex(dayPackages, assets) {
       signalCount: 0,
       pointCount: 0,
       trendCount: 0,
-      hasOpportunity: false,
+      hasTrendReport: false,
     });
   });
 
@@ -751,11 +1022,11 @@ function buildContentDateIndex(dayPackages, assets) {
       if (!row.dek || /^历史内容已完成/u.test(row.dek)) row.dek = item.judgment || row.dek;
     });
   });
-  assets.opportunities.forEach((item) => {
+  assets.trendReports.forEach((item) => {
     itemDates(item).forEach((date) => {
       const row = ensure(date);
       if (!row) return;
-      row.hasOpportunity = true;
+      row.hasTrendReport = true;
       if (!row.title || /观澜判断$/u.test(row.title)) row.title = item.title;
       if (!row.dek || /^历史内容已完成/u.test(row.dek)) row.dek = item.oneLine || row.dek;
     });
@@ -764,26 +1035,55 @@ function buildContentDateIndex(dayPackages, assets) {
   return [...byDate.values()].sort((a, b) => b.date.localeCompare(a.date));
 }
 
+function fallbackTrendReportFromDay(day, currentDate) {
+  const base = day.trends[0] || day.signals[0] || {};
+  const title = base.title ? `${base.title}｜继续观察` : `${currentDate} 趋势追踪仍在补证`;
+  const oneLine = base.judgment || base.brief || "今日暂无足够公开信息支撑深度趋势报告，先保留为继续观察方向。";
+  const trendReport = {
+    id: `TRD-WATCH-${currentDate.replaceAll("-", "")}`,
+    slug: slugify(title) || `trend-watch-${currentDate}`,
+    title: cleanPublicText(title),
+    oneLine: cleanPublicText(oneLine),
+    score: "继续观察",
+    stage: "暂无公开信息补足深挖条件",
+    date: currentDate,
+    updated: currentDate.replaceAll("-", "."),
+    sourcePath: base.sourcePath || "",
+    relationFields: "",
+    relations: [],
+    evidenceGaps: "暂未监测到足够同类案例、客户付费信息或多源证据，不能写成正式趋势结论。",
+    sections: [
+      ["机会判断", "今日暂无公开信息支撑完整机会判断，保留为趋势追踪候选。"],
+      ["同类产品", "暂未监测到同类案例。"],
+      ["后续观察", "继续看客户采用、预算归属、真实部署、定价变化和同类公司进展。"],
+    ],
+    link: "trend-detail.html",
+  };
+  return { ...trendReport, tags: inferTags(trendReport, "trendReport") };
+}
+
 const dates = await discoverDates();
 const activeDate = requestedDate || dates.at(-1) || "2026-05-07";
 const dayPackages = await Promise.all(dates.map(buildDay));
-const refinedPackage = await buildRefinedPackage();
 const activeDay = dayPackages.find((item) => item.date === activeDate) || dayPackages.at(-1);
 const signals = activeDay.signals;
 const parsedInsights = activeDay.insights;
 const parsedPoints = activeDay.points;
 const parsedTrends = activeDay.trends;
-const parsedOpportunity = activeDay.opportunity;
+const parsedTrendReport = activeDay.trendReport;
 const parsedRisks = activeDay.risks;
-const allOpportunities = [...refinedPackage.opportunities, ...dayPackages.map((item) => item.opportunity).filter(Boolean).reverse()];
-const allSignals = [...dayPackages.flatMap((item) => item.signals), ...refinedPackage.signals];
-const allPoints = [...refinedPackage.points, ...dayPackages.flatMap((item) => item.points).reverse()];
-const allTrends = [...refinedPackage.trends, ...dayPackages.flatMap((item) => item.trends).reverse()];
+const allTrendReports = dayPackages.map((item) => item.trendReport).filter(Boolean).reverse();
+const visibleTrendReports = allTrendReports.length ? allTrendReports : [fallbackTrendReportFromDay(activeDay, activeDate)];
+const allSignals = dayPackages.flatMap((item) => item.signals);
+const allCases = uniqueById(dayPackages.flatMap((item) => item.cases || []).reverse());
+const allPoints = dayPackages.flatMap((item) => item.points).reverse();
+const allTrends = dayPackages.flatMap((item) => item.trends).reverse();
 const contentDates = buildContentDateIndex(dayPackages, {
   signals: allSignals,
+  cases: allCases,
   points: allPoints,
   trends: allTrends,
-  opportunities: allOpportunities,
+  trendReports: visibleTrendReports,
 });
 
 const siteData = {
@@ -791,40 +1091,39 @@ const siteData = {
     date: activeDate.replaceAll("-", "."),
     sourceLabel: `Generated from 01-SiteV2/content (${contentDates.length} dates)`,
     brand: "观澜AI",
+    version: "V2.1",
     generatedAt: new Date().toISOString(),
     contentRoot: "01-SiteV2/content",
-    legacyRefined: {
-      signals: refinedPackage.signals.length,
-      points: refinedPackage.points.length,
-      trends: refinedPackage.trends.length,
-      opportunities: refinedPackage.opportunities.length,
-    },
   },
   tagTaxonomy,
   contentIndex: {
     activeDate,
     dates: contentDates,
     signals: allSignals,
+    cases: allCases,
     points: allPoints,
     trends: allTrends,
-    opportunities: allOpportunities,
+    trendReports: visibleTrendReports,
   },
   signals,
   daily: {
+    ...(activeDay.article || {}),
     slug: `daily-${activeDate}`,
-    title: "企业会先为可控的 Agent 付费",
+    title: activeDay.title || parsedInsights[0]?.title || signals[0]?.title || `${activeDate} 观澜判断`,
     dek: parsedInsights[0]?.judgment || "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
     points: parsedInsights.slice(0, 3).map((item) => item.judgment),
     risk: parsedRisks.map((item) => item.reason).filter(Boolean).slice(0, 3).join("；") || "客户采用、预算归属和部署周期仍需继续观察。",
     calibration: parsedPoints.slice(0, 2),
     link: "daily-detail.html",
   },
-  opportunity: parsedOpportunity || allOpportunities[0],
+  trendReport: parsedTrendReport || visibleTrendReports[0],
   brief: {
-    issue: "Preview.001",
-    period: activeDate.replaceAll("-", "."),
-    title: "Agent 控制层、工程治理与企业交付链",
-    summary: (parsedInsights.length ? parsedInsights : activeDay.signals).slice(0, 3).map((item) => item.judgment || item.brief),
+    issue: activeDay.businessBrief?.issue || "Preview.001",
+    period: activeDay.businessBrief?.period || activeDate.replaceAll("-", "."),
+    title: activeDay.businessBrief?.title || activeDay.title || parsedInsights[0]?.title || signals[0]?.title || `${activeDate.replaceAll("-", ".")} 主题摘要`,
+    summary: activeDay.businessBrief?.summary?.length
+      ? activeDay.businessBrief.summary.slice(0, 3)
+      : (parsedInsights.length ? parsedInsights : activeDay.signals).slice(0, 3).map((item) => item.judgment || item.brief),
     heat: parsedTrends.slice(0, 3).map((item) => [item.title, item.title.includes("Coding") ? "争议" : "升温", item.judgment]),
     evidence: {
       points: parsedPoints.slice(0, 3),

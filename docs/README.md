@@ -1,18 +1,18 @@
-# 观澜AI｜WaveSight 文档入口
+﻿# 观澜AI｜WaveSight 文档入口
 
-状态：V2-only 生产开发模式  
-更新时间：2026-05-07
+状态：V2.1 / V2-only 生产开发模式  
+更新时间：2026-05-18
 
 ## 当前口径
 
-V1.0 网站不再更新，旧自动化任务已停止。后续文档、任务和开发默认服务 V2.0 正式生产线。
+V1.0 网站不再更新，旧自动化任务已停止。V1 旧站代码与旧文章归档已从当前仓库物理移除。后续文档、任务和开发默认服务 V2.1 正式生产线。
 
-V1.0 内容和旧站工程已归档到：
+V2.1 当前基座：
 
-- `10-Archive/v1.0/v1.0-content-archive.md`
-- `10-Archive/v1.0/site/04-Site/`
+- `agent-workflow/reports/WSD-20260518-grillme-strategy-product-closeout.md`
+- `agent-workflow/reports/WSD-20260518-raw-pool-card-rules-closeout.md`
 
-V2.0 后续新文件默认进入：
+V2.1 后续新文件默认进入：
 
 - `01-SiteV2/`
 
@@ -27,24 +27,23 @@ V2.0 后续新文件默认进入：
 | 功能账本 | `agent-workflow/feature_list.json` |
 | 文档目录架构 | `agent-workflow/v2/v2-documentation-directory-architecture.md` |
 | V2 产品架构 | `agent-workflow/v2/v2-product-architecture-prd.md` |
-| V2 算法与来源 | `agent-workflow/v2/v2-algorithm-source-architecture.md` |
+| V2 算法与来源 | `agent-workflow/product/source-intelligence.md` |
 | V2 VI 方向 | `agent-workflow/v2/v2-vi-design-direction.md` |
-| V2 目录架构 | `agent-workflow/v2/v2-directory-content-architecture.md` |
+| V2 目录架构 | `01-SiteV2/content/README.md` |
 
 ## V2 当前主线
 
 | 主线 | 当前文件 | 状态 |
 |---|---|---|
 | 产品架构 | `agent-workflow/v2/v2-product-architecture-prd.md` | accepted / architecture |
-| 算法与来源 | `agent-workflow/v2/v2-algorithm-source-architecture.md` | accepted / architecture |
+| 算法与来源 | `agent-workflow/product/source-intelligence.md` | accepted / architecture |
 | VI 与设计方向 | `agent-workflow/v2/v2-vi-design-direction.md` | accepted |
-| 内容目录 | `agent-workflow/v2/v2-directory-content-architecture.md` | accepted / architecture |
+| 内容目录 | `01-SiteV2/content/README.md` | accepted / architecture |
 | V2 内容库 | `01-SiteV2/content/README.md` | active content library |
 | V2 Obsidian 知识库 | `01-SiteV2/knowledge/README.md` | active knowledge layer |
 | 文档目录 | `agent-workflow/v2/v2-documentation-directory-architecture.md` | documentation index |
-| V1 内容归档 | `10-Archive/v1.0/v1.0-content-archive.md` | read-only archive |
 | V2 新根目录 | `01-SiteV2/README.md` | active-v2-root |
-| V2 生产线切换 | `agent-workflow/v2/v2-production-pipeline-cutover.md` | active-production-path |
+| V2 生产线切换 | `01-SiteV2/content/README.md` | active-production-path |
 | V2 内容闸门 | `agent-workflow/tools/v2-content-gate.mjs` | executable gate |
 
 ## 目录分工
@@ -60,9 +59,8 @@ V2.0 后续新文件默认进入：
 | `01-SiteV2/content/` | V2 内容生产线内容库 |
 | `01-SiteV2/knowledge/` | Obsidian 长期知识库层，沉淀观点库 / 案例库 / 信号库 |
 | `01-SiteV2/site/` | V2 新网站工程入口 |
-| `10-Archive/v1.0/site/04-Site/` | V1 旧网站工程，只读历史参考 |
-| `10-Archive/v1.0/` | V1.0 内容合并归档，只读 |
-| `01-SiteV2/` | 后续 V2.0 新文件默认入口 |
+| `01-SiteV2/` | 后续 V2.1 新文件默认入口 |
+| `09-ai-news-radar/` | 暂按 external / local radar candidate 处理，不直接并入 V2.1 正式内容库 |
 
 ## 文件层级判断
 
@@ -73,11 +71,11 @@ V2.0 后续新文件默认进入：
 | 治理层 | 调度、质量门禁、自动化降级 | 以 `agent-workflow/governance/` 为准 |
 | 执行层 | 领取任务或核对范围 | 以 `agent-workflow/execution/` 为准 |
 | 收口层 | 验收、回溯、质量报告 | 以 `agent-workflow/reports/` 为准 |
-| 历史层 | 追溯 V1 内容或旧决策 | 只读，不作为 V2 默认生产入口 |
+| 历史层 | 追溯 V1 内容或旧决策 | 当前仓库不再保留 V1 旧站和旧文章归档；必要时只通过 Git 历史查看，不作为 V2.1 默认生产入口 |
 
 ## 历史目录
 
-以下目录保留为历史资产或待迁移来源，不再作为 V1 日更生产入口：
+以下旧目录已不作为当前生产入口；若本地或历史提交中仍出现，只能作为迁移线索，不得作为 V2.1 规则来源：
 
 - `01-Signals/`
 - `02-Scoring/`

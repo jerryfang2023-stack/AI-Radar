@@ -174,18 +174,9 @@ closeout 必须包含：
 7. 公开前台 / Admin 边界检查结果。
 8. 已运行的质量检查和结果。
 9. 未做事项与风险。
-10. 是否准备进入独立页面与文案质检。
+10. 是否准备进入调度复核 / 用户确认。
 
-执行窗口不得自称 accepted。完成后状态只能是：
-
-`ready_for_independent_page_copy_quality_review`
-
-调度窗口必须另派独立 QA / Acceptance 窗口读取：
-
-- `agent-workflow/governance/page-copy-quality-review-skill.md`
-- `agent-workflow/execution/TASK-page-copy-quality-review-template.md`
-
-独立质检通过后，本任务才允许最终 accepted。
+说明：2026-05-12 起，通用页面与文案独立质检 Skill 和强制七维评分流程已停用并移除。本历史派发单不再要求另派独立页面文案质检窗口。
 
 ## 5. 验收硬闸门
 
@@ -199,7 +190,7 @@ closeout 必须包含：
 6. `app.js` 语法检查和 syntax gate 通过。
 7. 没有修改 `09-ai-news-radar/`、`10-Archive/` 原文件、自动化任务、部署配置或内容 schema。
 8. 没有临时文件、死文件、死代码或无意义目录。
-9. 独立页面与文案质检通过：总分不少于 58 / 70，且定位一致性、商业判断、文案自然度、可信度均不低于 8。
+9. 用户确认或调度窗口按截图、核心交互、VI / DESIGN / COPY 规范完成复核。
 
 ## 6. 独立窗口短提示词
 
@@ -224,7 +215,7 @@ closeout 必须包含：
 - 桌面端设计 / 实现 / 截图 QA 是硬闸门；移动端专项暂缓。
 - 不做真实后端认证、支付、部署、自动化本体、schema 或内容生产线改造。
 - 不处理 `09-ai-news-radar/`，不修改 `10-Archive/` 原文件。
-- 开发窗口不得自验自收。完成后只写 ready_for_independent_page_copy_quality_review，等待调度窗口另派独立质检。
+- 完成后写 closeout，等待调度窗口复核或用户确认；不再进入已删除的通用独立质检流程。
 
 完成后写 UTF-8 closeout：
 agent-workflow/reports/WSD-20260511-04-v2-admin-pages-redesign-closeout.md

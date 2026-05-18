@@ -1,6 +1,6 @@
-# Source Intelligence Model
+﻿# Source Intelligence Model
 
-更新时间：2026-05-04  
+更新时间：2026-05-18  
 owner：`data-agent` / `workflow`  
 状态：active
 
@@ -10,16 +10,17 @@ Source Intelligence 是观澜AI的输入质量治理模型。
 
 它负责管理：
 
-- 每日 Signals 的监测来源。
-- The Point 的 Builder / Podcast / Blog 来源。
+- 每日 Raw / Pool / 商业信号的监测来源。
+- 前沿观点的人物、观点和原文来源。
 - 关键词池。
 - 查询组合。
 - 噪音来源。
 - 来源升权、降权和淘汰。
+- Raw 原始证据的可用性门槛。当前 Raw 结构以 `agent-workflow/product/raw-evidence-schema.md` 为准。
 
 目标是让观澜AI不是被热点牵着走，而是持续拥有更高质量、更早、更可验证的 AI 商业判断输入。
 
-2026-05-04 之后，Signals 来源治理必须同时覆盖：
+来源治理必须同时覆盖：
 
 ```text
 成熟信号：大企业、大融资、大平台动作
@@ -30,24 +31,138 @@ Source Intelligence 是观澜AI的输入质量治理模型。
 反证信号：关闭、流失、毛利压力、诉讼、安全、隐私、监管执法
 ```
 
-## 2. 来源分层
+2026-05-17 当前可执行关键词表先把每日 Raw 入口压实为 4 个必须覆盖的监测层：
 
-| 层级 | 类型 | 处理规则 |
+```text
+成熟信号：大企业、大融资、并购、平台发布、客户采用、收入、定价和生态发布
+早期信号：pre-seed、seed、angel、grant、YC、accelerator、stealth、spinout 和新投资方向
+技术迭代信号：成本、能力、部署、协议、工具链、运行时、沙箱和评测变化
+开发者生态信号：开源、SDK、框架、插件市场、GitHub 采用、云市场上架和开发者分发
+```
+
+这 4 类是日常监测入口的硬覆盖，不等于放弃销售、客服、营销、RAG、机器人等赛道。它们通过 `p0_core_tracks` 和 `p1_evidence_terms` 嵌入每类查询组合。
+
+P0 赛道词是锚点，不是边界。每日监测必须保留外围探索层，持续扫描当前 P0 没覆盖的新行业、新岗位、新流程、新客户和弱变化。2026-05-17 起，关键词表加入 `outside-core-exploration`，用于防止所有内容被固定赛道锁死。
+
+keyword-search 不能再使用单一路径。2026-05-17 起，keyword-search 必须按搜索意图走多路搜索：官方原始路径、开发生态路径、资本与创业公司路径、行业落地路径、采购 / 招投标 / Marketplace 路径、A 级媒体 / GDELT 路径、社区反馈路径。HN / Reddit / X 等社区路径只说明讨论、反馈、痛点和热度，不能作为唯一 keyword-search 结果，也不能单独支撑事实判断。
+
+## 2. 来源等级与采集通道
+
+S / A / B / C / D 是“来源证据等级”，只回答一件事：这条 Raw 能不能作为事实依据。它不回答“值不值得写”，也不等同于内容重要性。
+
+M 不是事实证据等级，而是采集通道等级。AI HOT、follow-builders、搜索聚合、RSS 聚合流等默认写入 `acquisition_source_level=M`；回到原始页面或原帖后，再给正式 Raw 判定 `source_level=S/A/B/C/D`。
+
+来源可信度和商业信号价值必须拆开：
+
+- 一条 C 级来源，如果 `emerging_signal_score` 高，可以进入 Emerging Pool、User Feedback Pool 或 Watchlist。
+- 一条 S 级来源，如果只是官方通稿、没有商业变化，也可以不进入 Pool。
+- Pool 分流由商业价值、早期信号、证据强度、案例细节、趋势相关度共同决定，不能由来源等级单独决定。
+- Pool 分流的唯一细则文档是 `agent-workflow/product/pool-routing-rules.md`；本文件只定义来源治理和采集通道，不另行定义 Pool 入池标准。
+
+| 标记 | 类型 | 处理规则 |
 |---|---|---|
-| S | 一手证据 | 优先采信，可进入高分 Signal 候选 |
-| A | 高质量商业媒体 / 通讯社 | 可作为 Signal 证据，但尽量回找一手来源 |
-| B | 垂直行业媒体 / 数据库 / 市场 listing | 适合补行业场景、融资、采用和需求侧信号 |
-| C | 社媒 / 社区 / 聚合 / GitHub trending | 只作为线索，不直接作为高证据 |
+| S | 一手事实来源 | 可作为事实主证据，但必须区分“官方说法”和“真实客户采用” |
+| A | 高质量转述 / 权威研究 | 可作为事实证据，重要事件尽量回找 S 级原始来源 |
+| B | 行业 / 生态 / 垂直来源 | 适合发现行业场景、客户采用、融资、生态变化和早期产品 |
+| C | 社区 / 社媒 / 聚合 / 讨论来源 | 适合发现线索、情绪、开发者反馈、用户痛点和早期热度 |
+| M | 混合获取通道 / 发现入口 | 只用于 `acquisition_source_level`，不是正式事实证据等级 |
 | D | 噪音或低可信来源 | 降权或移除 |
 
-采信原则：
+### S｜一手事实来源
 
-- S/A 来源可以作为正式 Signal 主证据。
-- B 来源可以作为垂直场景、采购、融资、客户采用和开发者生态证据，但重要内容应补 S/A 佐证。
-- C 来源可以触发检索，不可单独支撑高分 Signal。
-- D 来源只用于识别噪音，不进入前台判断。
+包括：
 
-## 3. Signals 来源池
+- 公司官网、官方博客、新闻稿。
+- 产品文档、API 文档、SDK changelog、价格页。
+- 客户案例、合作公告、上线公告。
+- 监管文件、采购公告、证券披露。
+- 官方 GitHub release、README、changelog、官方仓库说明。
+- 项目方官方 Hugging Face 模型页。
+- 项目方官方 npm / PyPI 包页面。
+- 小创业公司官网、产品页、Demo 页面。
+- 创始人 / 高管 / 项目方原帖。
+
+创始人 X 原帖可视为 S 级一手来源，但 `source_volatility=high`，必须保存截图或快照、当时可见文本和抓取时间。
+
+### A｜高质量转述 / 权威研究
+
+包括：
+
+- Reuters、Bloomberg、FT、WSJ、The Information、Axios、TechCrunch 等。
+- 权威研究机构、大学、CNCF、行业协会。
+- 投资机构深度研究。
+- 高质量商业媒体的独家报道或深度报道。
+- 正式技术报告、会议论文、权威 benchmark 报告。
+
+arXiv 预印本必须标记 `research_status=preprint`，不能直接等同于已验证结论。
+
+### B｜行业 / 生态 / 垂直来源
+
+包括：
+
+- 垂直行业媒体。
+- Crunchbase、Dealroom、PitchBook 等融资数据库。
+- YC、VC 机构公告或项目介绍。
+- Product Hunt 项目页。
+- Hugging Face / npm / PyPI / 云市场 / 插件市场中的非官方榜单、推荐页、评论区。
+- 第三方开源项目整理页、awesome list、生态地图。
+- 垂直行业报告、Newsletter 深度整理。
+
+如果页面是项目方官方发布页，应上调为 S；如果只是榜单、推荐或评论，保持 B/C。
+
+### C｜社区 / 社媒 / 聚合 / 讨论来源
+
+包括：
+
+- X / Twitter、Reddit、Hacker News、Discord / Telegram。
+- GitHub Trending。
+- AI newsletter 的转述段落。
+- 二次搬运、聚合站。
+- 普通社群讨论、用户评论、论坛反馈。
+
+C 级可以说明“有人在讨论”“开发者有反馈”“某个痛点升温”“某个方向开始被关注”，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
+
+C 级不是低价值。C 级可以进入 Emerging Pool、User Feedback Pool 或 Watchlist；进入正式前台内容前必须回源补证。
+
+### M｜混合获取通道 / 发现入口
+
+包括：
+
+- AI HOT。
+- follow-builders。
+- 搜索聚合结果。
+- 自动化摘要源。
+- RSS 聚合流。
+- 榜单聚合页。
+
+M 只用于发现候选线索，不直接作为正式事实证据。系统必须提取 `origin_url`，优先回到原始页面抓取全文、快照、关键证据和商业要素。原始页面抓取成功后，以原始页面重新判定 S/A/B/C/D。无法回源时，M 来源可见文本只能作为 `discovery_only` / `weak_signal`，不得作为案例库、变化库、今日观察或商业内参的核心证据。
+
+### 采信原则
+
+- 变化卡、案例卡、趋势报告、今日观察和商业内参里的事实判断，必须同时满足 Raw 证据门槛：`has_full_text=true`、`extraction_quality=high|medium`，并且能从 `key_excerpts`、`business_elements` 或 `evidence_seed` 回源。
+- 观点卡的主证据是“谁在何时何处说了什么”：必须保存人物 / title、原文链接、原文摘录或当时可见文本、发布时间、抓取时间和观察边界 / `capture_scope`。观点里的公司动作、客户采用、融资、收入、市场规模等事实主张，必须另找 S/A/B 来源补证。
+- S/A/B 可作为事实证据，但仍要看是否有商业变化；没有变化的材料只保留索引或归档。
+- C 级来源和 M 级采集通道可触发早期观察、用户反馈观察和补证任务，但不得单独写成事实结论。
+- 不满足 Raw 证据门槛的材料只作为 discovery、热度或待补证线索。不能因为来源名看起来可靠就跳过正文质量检查。
+
+## 3. Raw / 商业信号来源池
+
+### 3.0 三段式默认入口
+
+每日 Raw 默认采用三段式入口：
+
+```text
+AI HOT 全量
+→ follow-builders 全量
+→ 关键词规则补齐
+→ 不足或重要卡片缺证时，启动外部多路搜索
+```
+
+- AI HOT 使用最近 24 小时 `mode=all`，作为 Raw 主发现入口。它先经过类目、关键词、商业动作和噪音过滤；`industry`、`ai-products`、`ai-models` 默认进入候选；`paper` 必须命中技术迭代词、商业动作、开发者生态词或明确应用场景才进入候选；`tip` 必须命中关键词或商业动作才进入候选。
+- AI HOT 不是事实来源。它只回答“哪里有线索”，不回答“事实是否成立”。进入重要卡片、今日观察、趋势报告或商业内参前，必须回到 `origin_url` / `original_url` 抓取全文并重新判定 S/A/B/C/D。
+- follow-builders 每日全量进入前沿观点库，用于沉淀人物观点、观点时间线、分歧、转向和被验证 / 被反证线索。Builder 观点可以触发变化卡和趋势观察，但涉及公司动作、客户采用、融资、收入、市场规模等事实时，必须另找 S/A/B 来源。
+- 关键词规则负责补齐 P0 赛道、P1 证据词、四类信号和外围探索，不再只做精确短语匹配。它要识别公司动作、产品变化、融资、部署、定价、客户、工作流、合规、开发生态等商业要素。
+- 外部多路搜索是补齐和补证工具，不是默认抢主入口。只有默认入口不足 Raw 目标、某类信号缺口明显、或重要卡片没有 S/A/B 证据时才启动。
 
 ### 3.1 S 级优先来源
 
@@ -202,7 +317,7 @@ Source Intelligence 是观澜AI的输入质量治理模型。
 
 - 指向新投资方向，如 vertical AI、agent infra、AI security、AI evals、AI memory、robotics、on-device AI、small models、AI workflow、AI compliance。
 - 出现设计伙伴、试点客户、首批客户、开源采用、开发者采用或研究转化证据。
-- 能解释为什么该方向可能进入 Trend emerging 或 Opportunity watch。
+- 能解释为什么该方向可能进入趋势观察、趋势快报或商业内参的观察池。
 
 降级条件：
 
@@ -295,7 +410,7 @@ Source Intelligence 是观澜AI的输入质量治理模型。
 
 可入选条件：
 
-- 能削弱某个 Trend、Opportunity 或商业模式判断。
+- 能削弱某个趋势判断、商业内参判断或商业模式判断。
 - 能说明成本、合规、客户留存或安全风险正在改变赛道优先级。
 
 降级条件：
@@ -309,7 +424,7 @@ Source Intelligence 是观澜AI的输入质量治理模型。
 
 | 类别 | 作用 | 示例 |
 |---|---|---|
-| 赛道词 | 定位方向 | AI Agent、AI Coding、AI营销、企业知识库 |
+| 赛道词 | 定位方向 | 以 P0 赛道表为准；示例不能当作边界 |
 | 成熟证据词 | 捕捉强商业证据 | 融资、客户、ARR、并购、平台发布 |
 | 早期证据词 | 捕捉早期变化 | pre-seed、seed、angel、grant、spinout |
 | 技术迭代词 | 捕捉能力与成本变化 | inference cost、MCP、evals、model routing |
@@ -317,7 +432,34 @@ Source Intelligence 是观澜AI的输入质量治理模型。
 | 需求侧词 | 捕捉垂直落地 | design partner、pilot customer、tender |
 | 反证词 | 捕捉风险与降温 | churn、lawsuit、security incident、privacy enforcement |
 
-关键词不直接等于 Tags。只有当关键词能稳定连接多个 Signal、Point、Trend 或 Opportunity，才可进入 `tag-taxonomy.md` 的正式标签字典。
+关键词不直接等于 Tags。只有当关键词能稳定连接多个 Raw、商业信号、前沿观点、趋势报告或商业内参判断，才可进入 `tag-taxonomy.md` 的正式标签字典。
+
+### 5.1 P0 赛道词
+
+P0 赛道词是每日监测的锚点，不是搜索边界。当前完整 P0 赛道如下：
+
+| ID | 赛道 | 覆盖方向 |
+|---|---|---|
+| `agent-workflow` | AI Agent / 企业工作流 | Agentic AI、企业级智能体、垂直 Agent、工作流编排、MCP、工具调用、Agent 协议 |
+| `sales-service-marketing` | 销售 / 客服 / 营销 | AI SDR、销售智能体、客服智能体、语音智能体、联络中心 AI、营销自动化、广告自动化 |
+| `coding-devtools` | AI 编程 / 开发者工具 | AI coding agent、软件工程智能体、AI app builder、vibe coding、开发工具、SDK、API、插件市场 |
+| `knowledge-rag-memory` | 企业知识库 / RAG / AI Memory | 企业搜索、RAG 平台、AI 检索、长期记忆、知识管理 |
+| `infra-model-routing` | AI 基础设施 / 模型路由 | Agent infra、LLM infra、推理平台、推理成本、模型部署、模型路由、可观测、评测、合成数据、向量数据库 |
+| `model-capability-edge` | 模型能力 / 端侧 AI / 小模型 | 模型发布、开源模型、小语言模型、端侧推理、上下文窗口、多模态、语音模型、视频模型 |
+| `security-governance-compliance` | AI 安全 / 治理 / 合规 | AI 安全、合规、治理、权限控制、审计、Agent 治理、安全评测 |
+| `robotics-ai-native` | 机器人 / AI Native 公司 | robotics AI、具身智能、机器人基础模型、仓储机器人、AI 原生公司、一人公司 |
+
+### 5.2 外围探索层
+
+除 P0 赛道外，每日必须保留 `outside-core-exploration`。它负责扫描当前 P0 没覆盖的新行业、新岗位、新流程、新客户和弱变化，例如财务运营、人力资源、供应链、保险理赔、建筑软件、教育运营、能源调度、物流规划、零售运营、政务采购等。
+
+执行上，P0 赛道不允许把搜索范围锁死。`keyword-monitoring-v2.json` 中已设置：
+
+- `p0_tracks_are_anchors_not_boundaries=true`
+- `exploration_query_share=0.15`
+- `outside_core_track_min_raw=10`
+
+如果某日 Raw 全部集中在 P0 赛道，source-router 必须写入集中度警告，并用外围探索层补齐。
 
 ## 6. 查询组合策略
 
@@ -395,7 +537,7 @@ AI 客户流失 智能体
 - 噪音率。
 - 早期信号产出率。
 - 反证信号产出率。
-- 关联 Opportunity / Trend 转化率。
+- 关联趋势报告 / 商业内参判断转化率。
 
 ### 关键词指标
 
@@ -406,14 +548,14 @@ AI 客户流失 智能体
 - 重复率。
 - 成熟 / 早期 / 技术 / 开发者 / 垂直 / 反证覆盖率。
 - 进入 Daily Brief 的数量。
-- 转化为 Opportunity / Trend 的数量。
+- 转化为趋势报告 / 商业内参判断的数量。
 
-### Builder 指标
+### 前沿观点指标
 
-- 高分 Point 数量。
+- 高价值前沿观点数量。
 - 原创性。
 - 商业相关性。
-- 观点后续被 Signal / Trend / Opportunity 吸收的比例。
+- 观点后续被商业信号、趋势报告或商业内参判断吸收的比例。
 - 观点分歧或反证价值。
 
 ## 8. 升权、降权和淘汰
@@ -425,7 +567,7 @@ AI 客户流失 智能体
 - 连续 3 次产出高分 Signal。
 - 率先提供客户采用、收入、招投标、监管、开源采用或早期投资方向证据。
 - 多次进入 Daily Brief。
-- 支撑新 Opportunity 或 Trend。
+- 支撑新的趋势报告或商业内参判断。
 - 能补足早期融资、技术迭代、开发者生态、垂直行业采用或反证信号。
 - Builder 观点形成长期共识或重要反证。
 
@@ -479,35 +621,19 @@ agent-workflow/reports/source-intelligence-weekly-YYYY-WW.md
 
 ## 10. 自动化应用
 
-### 对 `ai-the-point`
+### 对 V2 source-router
 
-- 读取本文件与 `the-point-model.md`。
-- 使用 Builder 池准入和降权原则。
-- 不因单个来源失败生成空文件。
-- 将来源质量问题写入 `daily-run-log.md` 或运行报告。
-
-本次 2026-05-04 更新默认不改变 The Point Builder 池。
-
-### 对 `ai-2`
-
-- 读取本文件、`signal-system.md`、`提示词/关键词列表.md` 和 `提示词/监测提示词V4.0.md`。
-- 每日候选池必须覆盖成熟信号、早期融资 / 新投资方向、技术迭代、开源 / 开发者生态、垂直早期采用、反证与降温。
-- 优先使用 S / A 来源。
-- 对 C 级社媒、GitHub trending 和聚合线索必须回找 S/A/B 证据。
-- 记录高产词、低效词、噪音来源和早期信号覆盖率。
-- 不因早期信号降低 Signal 标准；早期内容必须说明新方向、新客户、新技术路径、新生态或反证价值。
-
-### 对 `ai-3`
-
-- 不直接使用来源池。
-- 同步报告应保留来源质量软提醒。
-- 若内容状态为 `needs_review`，不得入站。
-- 本次 2026-05-04 更新不改变同步闸门、脚本入口或关系检查规则。
+- 当前 V2 每日 source-router 必须读取 `01-SiteV2/content/09-databases/keyword-monitoring-v2.json`。
+- `keyword-monitoring-v2.json` 是本文件“关键词池”和“查询组合策略”的可执行版本；更新关键词或主题配额时，应同步更新该 JSON，而不是只改文档。
+- 每日运行日志必须输出 `keyword_group_distribution`、`theme_distribution`、`theme_concentration_warning`。
+- 精选变化卡 默认同一主题最多 1 条；确需做主题日时，必须显式标记 `theme_day=true`，并说明为什么今天同一主题值得占 2 条。
+- AI HOT 使用 24 小时 `mode=all` 作为 Raw 主入口；follow-builders 每日全量进入前沿观点库；外部多路搜索只在默认入口不足、覆盖缺口明显或重要卡片缺 S/A/B 来源时启动。
+- 进入公开前台的事实判断必须回源到 Raw 全文、Markdown 快照或补证后的 S/A/B 来源；M 级采集通道和 C 级社区讨论只能说明线索、热度和反馈。
 
 ## 11. 与 Tags 的关系
 
 来源和关键词不直接等于 Tags。
 
-只有当关键词能稳定连接多个 Signal、Point、Trend 或 Opportunity，才可进入 `tag-taxonomy.md` 的正式标签字典。
+只有当关键词能稳定连接多个商业信号、前沿观点、趋势报告或商业内参判断，才可进入 `tag-taxonomy.md` 的正式标签字典。
 
 新增早期关键词若只出现一次，应进入候选关键词或运行报告，不直接进入正式标签。

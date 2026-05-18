@@ -12,7 +12,9 @@ encoding: UTF-8
 ## 当前口径
 
 - 项目：观澜AI｜WaveSight AI。
-- 阶段：V2-only 生产开发。
+- 阶段：V2.1 生产开发。
+- 当前基座：`WSD-20260518-GRILLME-STRATEGY-PRODUCT` + `WSD-20260518-RAW-POOL-CARD-RULES`。
+- 定位：面向商业决策者的 AI 机会判断系统，不是 AI 新闻站、热点导航、工具目录或简单日报。
 - 前台导航：`今日观察 / 商业信号 / 趋势追踪 / 商业内参`。
 - 旧 `机会判断` 不再作为一级导航，只作为趋势追踪和商业内参里的机会判断段落。
 - The Point 不作为一级导航，前台表达为 Builders 观点 / 前沿观点 / 观点参照。
@@ -26,6 +28,23 @@ encoding: UTF-8
 - 判断资产：`01-SiteV2/knowledge/`
 - V1 旧站与旧文章归档：已从当前仓库物理移除；如需追溯，只能查看 Git 历史。
 - 旧内容归档：`01-SiteV2/content/_archive/2026-05-12-pre-reframe-content/`
+
+## 2026-05-18 V2.1 规则与工作台清理
+
+- 最新清理报告：`agent-workflow/reports/WSD-20260518-v21-rule-workbench-cleanup-closeout.md`。
+- 页面任务当前硬口径：桌面端优先、Copy-first、UI/UE 桌面证据、Dev 按表实现、调度复核和用户确认。移动端专项只有在派发单明确要求时才作为硬阻塞。
+- 旧 Design Director 证据化质检 / 移动端截图通用硬阻塞已从当前活规则中清理，不再作为默认派发要求。
+- 旧每日自动化 `v2-content-site-daily-update`、SYS-11、SYS-16 和 `V2-DAILY-AUTO` 均已被 SYS-17 `guanlan-daily-monitor` 六线程生产链路取代。
+- `V2-OPPORTUNITY-BRIEF-IMPLEMENT` 已改为 `stale / do-not-dispatch`；机会判断不再作为一级机会中心直接派发，只能作为趋势追踪或商业内参中的判断段落重新过 PM / Copy-first / UI/UE。
+
+## 2026-05-18 neat-freak 工作区清理
+
+- 清理报告：`agent-workflow/reports/WSD-20260518-neat-freak-workspace-cleanup-closeout.md`。
+- 已物理删除：旧每日自动化派发单、失败全站质量自动包非失败产物、旧机会中心派发单、已停用页面文案质检 closeout、旧商业信号返修派发单、旧 `v2-content-site-daily-update` / source-router / `unified-site-sync` 报告、无当前索引引用的零散旧报告。
+- 已清理临时产物：未跟踪的 timestamped `quality-gates-*` / `v2-content-gate-*` 报告 328 个，timestamped `writer-style-gate-*` 报告 70 个；`.gitignore` 已保留 `*-latest.md`，忽略 timestamped 临时报告。
+- `dispatch-board.md`、`closeout-queue.jsonl`、`daily-run-log.md` 和 `progress.md` 已同步改为 `physically-cleaned` / `do-not-dispatch` / 历史说明。
+- `git status` 中仍有大量 `D` 是已经物理删除但尚未提交的旧历史 Raw / originals 文件；不要把这些判断为仍需继续删除的垃圾。要让 Git 面板干净，需要后续统一提交，或用户明确要求恢复。
+- `09-ai-news-radar/` 未处理，仍按用户要求保留。
 
 ## 2026-05-18 V1 旧站物理移除
 
@@ -50,7 +69,7 @@ encoding: UTF-8
 
 ## 六线程生产线
 
-1. `daily-monitor-router`：广泛监测、Raw、Pool、来源分布。
+1. `guanlan-daily-monitor`：广泛监测、Raw、Pool、来源分布。
 2. `asset-card-generator`：变化卡、案例卡、观点卡候选、变化簇。
 3. `daily-observation-writer`：今日观察长文。
 4. `case-signal-researcher`：案例、同类产品、市场竞争、客户需求和二搜补证。
@@ -65,6 +84,22 @@ Raw -> Pool -> Change / Case / Opinion Cards -> Change Clusters
 -> Trend Reports
 -> Business Briefs
 ```
+
+## 2026-05-18 Raw / Pool / Card 规则验收
+
+- `WSD-20260518-RAW-POOL-CARD-RULES` 已 accepted。
+- Raw 已升级为事实证据底座，`full_text` / `clean_text` / `full_text_hash` / `source_level` / `extraction_quality` / `usable_for` / `missing_information` 是后续卡片和前台事实的关键字段。
+- Pool 已明确为候选分流层，分为 `core_pool / emerging_pool / user_feedback_pool / watchlist / index_only / discard`。
+- 正式 / 前台变化卡、案例卡、观点卡和趋势卡必须 Raw-first / Evidence-first；AI HOT、follow-builders、社区和聚合来源只能作发现入口，不能单独作事实主证据。
+- 当前遗留：旧变化卡、案例卡、观点卡缺新版 Raw 回源字段；需另派旧资产 schema 迁移与 Raw 回填任务。
+
+## 2026-05-18 V2.1 口径升级
+
+- `WSD-20260518-GRILLME-STRATEGY-PRODUCT` 作为战略、栏目、写作、前台方向和自动化协同的新基座。
+- 当前网站版本升级为 V2.1；之前 V2.0 只作为历史阶段名称保留在旧报告和旧派发单中。
+- V2.1 不再沿用“新闻资讯 / 机会列表 / 评分前台化 / daily-monitor-router / v2-content-site-daily-update / unified-site-sync”口径。
+- 前台事实表达必须回源；AI HOT、follow-builders、社区和聚合来源只作发现入口或观点校准，不单独支撑事实判断。
+- 冲突清理收口：`agent-workflow/reports/WSD-20260518-v21-baseline-conflict-cleanup-closeout.md`。
 
 ## 当前内容目录
 

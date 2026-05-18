@@ -1,57 +1,230 @@
 ---
 title: WaveSight Knowledge
-date: 2026-05-10
+date: 2026-05-12
 status: active-knowledge-layer
 type: obsidian-knowledge-root
 encoding: UTF-8
 ---
 
-# WaveSight Knowledge｜观澜AI 长期知识库
+# WaveSight Knowledge｜观澜AI 判断资产主库
 
-本目录用于在 Obsidian 中长期沉淀观澜 AI 的观点库、案例库、信号库、机会库和来源库。
+本目录是观澜 AI 的长期判断资产主库，优先服务 Obsidian / 本地知识库使用。
 
-它不是每日生产漏斗。每日自动化仍写入：
+它不是每日 Raw 生产漏斗，也不是网站发布目录。每日监测、文章、报告和刊物分别写入 `01-SiteV2/content/`；本目录沉淀可复用、可追溯、可关联的判断资产。
 
-```text
-01-SiteV2/content/
-```
+## 1. 当前目录结构
 
-本目录只接收经过筛选、可复用、可双链的知识资产。
-
-## 目录分工
-
-| 目录 | 用途 | 入库条件 |
+| 目录 | 用途 | 资产性质 |
 |---|---|---|
-| `00-MOC/` | 总索引、主题索引、每日判断索引 | 手工维护、阶段性更新或每日生成 Daily Brief Index |
-| `01-Signals/` | 长期信号库 | 来自 Front / Structured，需有稳定 ID 和来源 |
-| `02-Points/` | 观点库 | Builder / VC / Founder / Research 观点，需保留原文链接 |
-| `03-Cases/` | 案例库 | 公司、产品、客户、部署、融资、失败案例 |
-| `04-Opportunities/` | 机会库 | 经过六维分析或 Deep Dive 的机会判断 |
-| `05-Trends/` | 趋势库 | 多条 Signal 支撑的长期趋势 |
-| `06-Sources/` | 来源库 | 官网、媒体、论文、X、播客、报告、数据库 |
-| `07-Companies/` | 公司库 | 公司、产品、团队、融资、客户线索 |
-| `08-People/` | 人物库 | Builder、投资人、研究员、创始人、专家 |
-| `09-Templates/` | Obsidian 模板 | 新建知识卡片时复制使用 |
-| `10-AIBriefs/` | 商业内参库 | AIBriefIssue，跨周期组合判断报告 |
-| `11-Heat-Candidates/` | 热度候选观察库 | 未升级 Heat Candidate，作为观察型知识资产 |
-| `99-Archive/` | 过期或废弃知识卡片 | 不删除，保留历史判断 |
+| `00-MOC/` | 总索引、主题索引、人物索引、周期索引 | 手工维护或自动生成的导航层 |
+| `01-Change-Cards/` | 变化卡 | 正式长期资产，主库母体 |
+| `02-Case-Cards/` | 案例卡 | 正式长期资产，支撑变化解释 |
+| `03-Opinion-Cards/` | 观点卡 | 正式长期资产，前沿观点最小单元 |
+| `04-Trend-Cards/` | 趋势卡 | 正式长期资产，聚合一组变化后的阶段性判断 |
+| `05-Change-Clusters/` | 变化簇 | 临时工作资产，自动聚合、可升级或沉降 |
+| `06-Sources/` | 来源库 | 原始出处、专业报道、市场线索、数据源 |
+| `07-People/` | 人物库 | Builder、投资人、研究者、企业负责人等人物档案 |
+| `08-Companies/` | 公司 / 机构库 | 公司、产品、机构与组织对象 |
+| `09-Publication-Index/` | 发布索引 | 今日观察、趋势报告、商业内参等前台内容的索引 |
+| `10-Templates/` | 模板 | Obsidian 卡片模板 |
+| `99-Archive/` | 归档 | 废弃、过期、历史兼容或迁移残留资产 |
 
-## 与内容生产线的关系
+## 2. 三层系统关系
+
+观澜 AI 当前采用三层系统：
 
 ```text
-content/01-raw        -> 一般不进入 knowledge
-content/02-pool       -> 仅少数候选可进入 Sources / Cases
-content/03-structured -> 可沉淀为 Signals / Trends
-content/04-selected   -> 优先沉淀为 Signals
-content/05-trend-chain -> Heat Candidates / Trends
-content/07-points     -> 优先沉淀为 Points / People
-content/08-opportunities -> 优先沉淀为 Opportunities / Cases
-content/10-databases  -> 可映射到 Trends / Companies / Sources
-content/08-ai-brief 或 AIBriefIssue -> AIBriefs
-today daily brief -> 00-MOC daily brief index
+自动化 / 数据处理层 -> knowledge 判断资产主库 -> content / site 发布层
 ```
 
-## 命名规则
+- 自动化 / 数据处理层：搜索、抓取、初筛、Raw / Pool 管理、卡片草稿生成、自动关联和二创候选输出。
+- `knowledge/`：沉淀变化卡、案例卡、观点卡、趋势卡、变化簇、来源、人物和公司对象。
+- `content/`：承载今日观察、趋势追踪报告、商业内参刊物等前台文章和生产过程文件。
+- `site/`：网站展示层。
+
+## 3. 核心资产
+
+### 3.1 变化卡
+
+变化卡记录一个 AI 商业变化，是知识库母体。它写“发生了什么变化”，不写公司百科，也不替代趋势报告。
+
+变化卡必须从 Raw / Pool 回源生成。Pool 只能说明“这条线索可能值得处理”，不能直接支撑变化卡事实；正式变化卡必须回到 Raw 的原文、快照、关键摘录和结构化商业要素。
+
+正式 / 前台变化卡的证据门槛：
+
+1. 至少 1 条核心 Raw 证据通过门槛：`has_full_text=true`、`extraction_quality=high|medium`、`source_level=S|A|B`。
+2. 必须保留 `raw_ref`、`raw_archive`、`raw_json`、`source_url`、`full_text_hash`、`key_excerpts`、`evidence_seed`、`missing_information`。
+3. 必须确认 `usable_for.change=true`，且 Raw 中能说明公司动作、产品变化、工作流变化、商业动作、风险或约束之一。
+4. C / M / 社区 / 聚合来源只能作为发现线索、用户反馈或前沿观点参照；未补到 S/A/B 原始证据前，不得作为前台事实变化卡。
+
+变化卡对外必填 7 项：
+
+1. 变化标题。
+2. 明确变化。
+3. 原始出处。
+4. 数据来源。
+5. 一句解释。
+6. 技术路线 / 方法变化。
+7. 同类产品 / 相邻案例。
+
+变化标题必须先讲事件，不先下判断。优先写“公司 / 产品 / 机构 + 动作 + 对象 / 场景”，不得写成半截话、口号或内部判断标签。
+
+数据来源不允许为空。没有可靠来源时写：
+
+```text
+数据来源：暂无公开信息
+```
+
+同类产品 / 相邻案例不允许为空。未发现时写：
+
+```text
+暂未监测到同类案例
+```
+
+这句话只表示当前公开资料不足，不能反向编造案例。系统应同时标记 `related_case_status=needs_research`，并交给 `case-signal-researcher` 补证。
+
+变化卡内部必须记录证据缺口。Raw 的 `missing_information` 是禁区提示：缺真实客户、缺成本数字、缺变化前流程、缺付费数据，就明确写缺口，不能由模型补戏。
+
+### 3.2 案例卡
+
+案例卡记录“谁在怎么做”，用于支撑变化卡、趋势追踪和商业内参。
+
+案例卡不是公司百科，也不是纯产品资料。它必须说明该对象如何帮助解释某种 AI 商业变化。
+
+正式 / 前台案例卡必须从 Raw / Pool 回源生成。Pool 只能提供候选对象；案例事实必须回到 Raw 原文、快照、关键摘录和结构化商业要素。
+
+案例卡证据门槛：
+
+1. 至少 1 条核心 Raw 证据通过门槛：`has_full_text=true`、`extraction_quality=high|medium`、`source_level=S|A|B`。
+2. 必须保留 `raw_ref`、`raw_archive`、`raw_json`、`source_url`、`full_text_hash`、`key_excerpts`、`evidence_seed`、`missing_information`。
+3. 必须确认 Raw 或二搜来源能说明对象、事件、客户 / 场景、产品做法、商业动作或风险反证之一。
+4. C / M / 社区 / 聚合来源只能作为发现线索；未补到 S/A/B 原始证据前，不得作为前台案例卡。
+
+案例卡采用 L1 / L2 / L3 分层深度：
+
+- L1 监测卡：每日监测阶段轻量入库。
+- L2 研究卡：二次搜索后补全同行、竞品、赛道前景、规模、客户需求、商业模式和风险反证。
+- L3 深度案例分析：升级为趋势报告、商业内参材料或独立深度案例文章。
+
+### 3.3 观点卡
+
+观点卡记录重要人物或机构观点，是前沿观点的最小单元。
+
+观点卡不作为事实主证据，但可以作为判断触发器和行业预期信号。
+
+观点卡的证据逻辑不同于变化卡 / 案例卡。观点卡证明的是“谁在何时何处说了什么”，不是证明观点里的事实成立。
+
+观点卡必须保存：
+
+- 人物 / 机构 / 当时 title。
+- 原文链接。
+- 原文摘录或当时可见文本。
+- 发表时间和抓取时间。
+- 平台、可见范围和 capture_scope。
+- 高波动来源的截图或快照。
+
+观点中出现公司动作、客户采用、收入、融资、市场规模等事实主张时，必须另补 S/A/B 来源。没有补证前，这些事实不得进入变化卡、案例卡、趋势卡或前台文章的事实段落。
+
+前台优先展示：
+
+- 人物 / 机构。
+- 当时 title / 身份。
+- 原文摘录。
+- 发表时间。
+- 原文出处。
+- 观澜解读。
+- tags。
+- 关联资产。
+
+后台保留结构化观点主张、观点状态、观点倾向、观点对象、是否高影响观点、是否触发变化卡候选和关联质量。
+
+### 3.4 趋势卡
+
+趋势卡记录一组变化背后的阶段性趋势判断。
+
+趋势卡不由单条新闻或单个观点生成。最低门槛：
+
+- 至少 3 张相关变化卡。
+- 至少 2 个不同案例或对象。
+- 至少 2 类来源。
+- 至少 1 条技术路线或场景进程说明。
+- 必须说明属于早期趋势、增强趋势、分化趋势或风险趋势。
+
+趋势卡必须汇总底层变化卡、案例卡、观点卡和 Raw 证据。未完成 Raw 回填的旧变化卡 / 案例卡只能作背景，不能作为趋势成立主证据。
+
+趋势卡里的事实判断必须来自核心 Raw 证据或已完成证据门槛的变化卡 / 案例卡。观点卡只用于说明行业预期、叙事变化、产品路线或资本关注点，不能单独推动趋势成立。
+
+### 3.5 变化簇
+
+变化簇是临时工作资产，用于自动聚合相关变化卡，观察某个方向是否正在形成。
+
+变化簇可以合并、拆分、沉降、升级或归档。它不是正式长期知识卡。
+
+## 4. 前台栏目映射
+
+| 前台栏目 | 一等对象 | 知识库支撑 |
+|---|---|---|
+| 今日观察 | 每日行情长文 + 精选变化卡 | 变化卡、观点卡、案例卡、来源 |
+| 商业信号 | 变化卡 + 案例卡 | 变化卡、案例卡、来源、公司 |
+| 趋势追踪 | 趋势深度报告 + 趋势卡 | 趋势卡、变化簇、变化卡、案例卡、观点卡 |
+| 商业内参 | 周期刊物文章 | 今日观察索引、趋势卡、变化卡、案例卡、观点卡 |
+| 前沿观点 | 聚合页，不进主导航 | 观点卡、人物档案、关联资产 |
+
+## 5. 关系规则
+
+新卡生成后，系统自动建立关联，不要求人工逐条确认。
+
+关联类型包括：
+
+- 同类产品。
+- 相同技术路线。
+- 同一场景。
+- 相同客户需求。
+- 同一趋势。
+- 同一公司 / 人物 / 机构。
+- 同一数据源或来源链。
+- 同一内容选题。
+
+前台只展示稳定、高置信或经批量审查保留的关系。
+
+每日 `asset-card-generator` 完成后，必须在 `00-MOC/` 生成或更新当天关系索引，至少包含：
+
+- 进入前台的变化卡。
+- 关联案例卡。
+- 关联前沿观点。
+- Raw / 本地快照。
+- 需要继续补证的缺口。
+
+如果某条变化只有标题、标签和一句判断，而没有可追溯事件、商业含义、案例依据和来源依据，不得作为前台完整信号发布，只能保留为内部候选。
+
+## 6. Tags 规则
+
+沿用 `agent-workflow/product/tag-taxonomy.md` 的正式标签体系，不重建失控标签。
+
+底层标签 group：
+
+- `track`
+- `function`
+- `scenario`
+- `customer`
+- `evidence`
+- `stage`
+- `region`
+- `source`
+- `point`
+
+变化卡建议至少包含：
+
+- 1 个 `track`。
+- 1 个 `scenario` 或 `function`。
+- 1 个 `evidence`。
+- 1 个 `source`。
+- 如涉及观点，加 `point`。
+- 如可判断阶段，加 `stage`。
+
+前台不展示内部 tag_id，不展示机械 group 名称。前台表达为自然筛选，例如看方向、看场景、看行业 / 客户、看依据、看观点、看阶段。
+
+## 7. 命名建议
 
 建议文件名：
 
@@ -62,226 +235,46 @@ YYYY-MM-DD--type--slug.md
 示例：
 
 ```text
-2026-05-10--signal--cx-agent-delivery-economics.md
-2026-05-10--point--html-is-new-markdown.md
-2026-05-10--case--sierra-cx-agent-platform.md
+2026-05-12--change--enterprise-agent-governance-control-plane.md
+2026-05-12--case--collibra-ai-command-center.md
+2026-05-12--opinion--builder-agent-workflow-control-plane.md
+2026-05-12--trend--enterprise-agent-governance.md
 ```
 
-## 稳定 ID
+## 8. 稳定 ID
 
-每张卡片必须保留原始稳定 ID：
+正式资产应保留稳定 ID：
 
-- Signal：`FS-YYYYMMDD-xx` 或 `S-YYYYMMDD-xx`
-- Point：`PT-YYYYMMDD-xx`
-- Case：`CASE-YYYYMMDD-xx`
-- Opportunity：`OPP-...`
-- Trend：`TRD-...`
-- Source：`SRC-...`
-- Company：`CO-...`
-- Person：`PER-...`
-- AIBriefIssue：`BRIEF-...`
-- Heat Candidate：`HC-...`
+- 变化卡：`CHG-YYYYMMDD-xx`
+- 案例卡：`CASE-YYYYMMDD-xx`
+- 观点卡：`OPN-YYYYMMDD-xx`
+- 趋势卡：`TRD-YYYYMMDD-xx`
+- 变化簇：`CLU-YYYYMMDD-xx`
+- 来源：`SRC-YYYYMMDD-xx`
+- 人物：`PER-...`
+- 公司 / 机构：`ORG-...`
 
-## 双链规则
+## 9. 生命周期
 
-每张卡片至少连接 2 类关系：
+变化卡后台状态：
 
-```text
-related_signals:
-related_points:
-related_cases:
-related_opportunities:
-related_trends:
-related_sources:
-related_companies:
-related_people:
-related_briefs:
-related_heat_candidates:
-```
+- 新出现。
+- 持续出现。
+- 形成变化簇。
+- 趋势候选。
+- 并入趋势。
+- 历史沉淀。
 
-正文中建议使用 Obsidian wikilink：
+前台简化展示：
 
-```markdown
-[[2026-05-10--signal--cx-agent-delivery-economics]]
-[[sierra]]
-[[cx-agent-platform-consolidation]]
-```
+- 最近观察。
+- 正在升温。
+- 趋势追踪。
 
-## 入库原则
+历史沉淀不作为显性前台状态展示，但仍可被搜索、引用和关联。
 
-- 不把 Raw 80-150 全部搬入知识库。
-- Pool 默认不入库，只保留每日筛选过程。
-- 未升级 Heat Candidate 不进入 Signals / Trends / Opportunities，但进入 `11-Heat-Candidates/` 作为观察型知识资产。
-- 今日要点不全文入库，只沉淀 Daily Brief Index 到 `00-MOC/`。
-- Heat Candidate 升级为 Signal / Trend 后必须双向回链：原候选写 `converted_to`，新资产写 `origin_heat_candidates`。
-- 不把社媒观点当作事实证据。
-- 每条观点必须保留 `source_url` 和 `original_view`。
-- 每条案例必须说明“为什么是案例”，不是只存公司名。
-- 每条信号必须说明商业变量：客户、成本、收入、效率、风险、采购、渠道或竞争位置。
-- 每条机会必须保留反证和证据缺口。
-- 每期商业内参必须关联 Signal / Trend / Opportunity / Point 中至少两类资产。
-- 过时判断不删除，移动到 `99-Archive/` 并写明 archive reason。
+## 10. 归档规则
 
-## Frontmatter 最小字段
+过时判断、废弃卡片、旧体系迁移残留不删除正文内容时，可进入 `99-Archive/`。
 
-所有正式知识卡必须包含通用基础字段。允许空数组，但不允许缺字段。
-
-```yaml
-id:
-type:
-title:
-date:
-status:
-source_level:
-source_urls:
-formal_tags:
-evidence_status:
-related_signals:
-related_trends:
-related_opportunities:
-related_points:
-related_people:
-related_briefs:
-related_heat_candidates:
-last_reviewed:
-```
-
-硬规则：
-
-- `id` 必须稳定，不能随标题变化。
-- `type` 允许值：`signal`、`point`、`person`、`opportunity`、`trend`、`source`、`company`、`case`、`ai_brief_issue`、`heat_candidate`。
-- `source_urls`、`formal_tags`、`last_reviewed` 不允许缺字段。
-- `M` 不能作为事实证据来源等级，只能作为 `source_role: source-router`。
-
-### Signal 增量字段
-
-```yaml
-signal_id:
-signal_level: structured | front
-event_type:
-business_variables:
-source_cluster:
-counter_evidence_status:
-trend_candidate:
-origin_heat_candidates:
-converted_from:
-```
-
-### Point 增量字段
-
-```yaml
-point_id:
-person_id:
-person_name:
-person_title:
-platform:
-source_url:
-original_view:
-translated_view:
-guanlan_interpretation:
-view_status: new | continuing | revised | shifted | conflicting
-```
-
-### Person / Builder 增量字段
-
-```yaml
-person_id:
-name:
-title:
-organization:
-role_type:
-focus_areas:
-timeline_points:
-current_view_summary:
-view_change_status:
-```
-
-### Opportunity 增量字段
-
-```yaml
-opportunity_id:
-opportunity_stage:
-target_customer:
-payer:
-workflow_changed:
-business_model:
-evidence_level:
-risk_status:
-representative_cases:
-related_deep_dive:
-```
-
-### Trend / Risk Trend 增量字段
-
-```yaml
-trend_id:
-trend_type: normal | risk
-trend_status: emerging | rising | splitting | cooling | mature | risk
-time_window:
-supporting_signals:
-supporting_heat_candidates:
-counter_evidence:
-upgrade_trigger:
-downgrade_trigger:
-```
-
-### Source 增量字段
-
-```yaml
-source_id:
-source_name:
-source_type:
-source_level:
-original_url:
-publisher:
-author:
-published_at:
-source_role: fact-main | fact-support | lead-only | point-only | source-router
-```
-
-### Company / Case 增量字段
-
-```yaml
-company_id:
-company_name:
-case_id:
-case_type:
-product:
-customer:
-funding_stage:
-evidence_facts:
-related_sources:
-```
-
-### AIBriefIssue 增量字段
-
-```yaml
-brief_id:
-period:
-brief_type:
-covered_signals:
-covered_trends:
-covered_opportunities:
-covered_points:
-covered_people:
-evidence_summary:
-risk_summary:
-judgment_status:
-```
-
-### Heat Candidate 增量字段
-
-```yaml
-heat_id:
-first_seen:
-last_seen:
-seen_count_7d:
-seen_count_30d:
-heat_status: 热度上升 | 证据不足 | 继续观察 | 风险升温
-source_type_count:
-source_samples:
-candidate_tags:
-upgrade_trigger:
-downgrade_reason:
-converted_to:
-```
+本次 2026-05-12 知识库目录重建已删除旧目录结构，后续新资产必须按本 README 执行。

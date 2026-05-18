@@ -35,11 +35,14 @@ Prefer short, specific, human sentences. It is better to be incomplete but true 
 
 Avoid obvious AI-generated texture:
 
-- Do not mechanically structure with "首先 / 其次 / 最后 / 总之 / 综上所述".
+- Do not mechanically structure with "首先 / 其次 / 最后 / 总之 / 值得注意的是 / 显而易见 / 不可否认 / 总而言之 / 综上所述 / 由此可见".
 - Do not repeat the same sentence frame across a page, especially "不是……而是……", "这意味着……", "核心在于……", "对企业来说……".
 - Do not stack abstract claims such as "AI 正在重塑各行各业", "企业必须拥抱 AI", "未来已来".
 - Do not pad paragraphs with concept words: 赋能、闭环、生态、范式、底座、抓手、价值链路、数智化升级.
 - Do not over-complete every answer. Let some sentences breathe.
+- For the three writer threads, do not use abstract nouns ending in “XX感 / XX性 / XX化” in article prose. Replace them with a concrete action, workflow, cost, customer, price, role, or risk.
+- Use short sentences. Vary rhythm. Do not write more than three neat parallel sentences in a row.
+- Sound like a sharp senior columnist talking business in a cafe, not a neutral textbook.
 
 When rewriting AI-ish copy, keep the fact, remove the performance.
 
@@ -80,27 +83,49 @@ When copy feels like AI, marketing, or a news digest:
 
 ## Column Voice
 
-### 今日要点
+### 今日观察
 
-Sound like a morning note for a decision-maker. Short, steady, and useful.
+Sound like a daily market read for a decision-maker. It should explain the day's AI business weather, not summarize headlines.
 
 Answer what changed today, why it matters, and which industry, role, or workflow may feel it first.
+
+For the main 今日观察 article, write like a commercial observer, not a page explainer. The reader should understand:
+
+- what changed today
+- why it matters
+- what the judgment is based on
+- which industries, roles, workflows, or decisions may be affected
+
+Do not present this as a numbered Q&A, checklist, bordered cards, or "结论先放在前面".
 
 Good texture:
 
 > 今天更值得关注的，不是某个模型参数又提升了多少。真正的变化是，AI 正在从单点工具，慢慢进入企业流程。
 
-### 关键信号
+Better main-judgment texture:
+
+> 企业会先为“可控”付费，再为“更强”付费。今天值得看的变化，不是又多了几个能调用工具的 Agent，而是连接器和 Agent 平台正在把权限、审计、回滚和停用推到产品核心。Agent 一旦进入客服、销售、采购、财务或研发流程，就不再只是回答问题，而是在接触客户、数据和系统。企业真正要判断的，是它能否被授权、被限制、被复盘，并在出错时及时止损。
+
+### 商业信号
 
 Do not stop at "what happened." Explain why this belongs in 观澜AI.
+
+Title rule:
+
+- Write the title as an event first: company / product / institution + action + object or scene.
+- Do not use judgment labels as titles. Bad examples: `账单开始按用量走`, `围栏成了采购前提`, `门禁进入工具链`, `采用率开始被数据盯上`.
+- Do not truncate titles with `...` or `…`. A title may wrap to two lines, but the meaning must remain complete.
+- Put the commercial judgment in the body, after the fact is clear.
 
 Good texture:
 
 > 这条信息表面上是一款新产品发布。放到企业里看，它更像一个岗位动作被系统接管的早期信号。
 
-### 机会解码
+### 趋势追踪
 
-Do not call everything an opportunity. Say who it fits, who it does not fit, what must already be true, and where the risk sits.
+Write a deep report, not a card pile. Use changes, cases, opinion shifts, technical routes, customer needs, competitors, and counterevidence to explain whether a direction is becoming a real trend.
+
+The opportunity judgment inside the report should say who may pay, which workflow changes first, what budget moves, and where delivery gets stuck.
 
 Good texture:
 
@@ -126,8 +151,8 @@ Use calm actions:
 
 - 查看今日判断
 - 阅读商业信号
-- 查看影响路径
-- 进入机会分析
+- 查看趋势追踪
+- 阅读机会判断
 - 阅读完整内参
 - 查看热力图
 - 生成企业诊断

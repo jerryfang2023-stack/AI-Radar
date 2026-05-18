@@ -1,17 +1,17 @@
 ---
 title: WaveSight 01-SiteV2
-date: 2026-05-07
+date: 2026-05-18
 status: active-v2-root
 encoding: UTF-8
 ---
 
 # 观澜AI｜WaveSight 01-SiteV2
 
-本目录是 2026-05-07 起 V2.0 新文件、内容库和新站工程的默认入口。
+本目录是 V2.1 新文件、内容库和新站工程的默认入口。V2.1 以 `WSD-20260518-GRILLME-STRATEGY-PRODUCT` 和 `WSD-20260518-RAW-POOL-CARD-RULES` 为当前战略、产品和证据生产线基座。
 
 ## 使用规则
 
-- 后续新建 V2.0 文档、规范、内容样张、页面实现方案和生产线文件，优先放入本目录。
+- 后续新建 V2.1 文档、规范、内容样张、页面实现方案和生产线文件，优先放入本目录。
 - `content/` 保留为内容生产线子目录，不把 raw / pool / structured / reports 文件平铺到站点根目录。
 - `knowledge/` 保留为 Obsidian 长期知识库层，用于沉淀观点库、案例库、信号库、机会库和来源库；不要把每日 Raw 全量搬入知识库。
 - 已存在的 `AGENTS.md`、`docs/`、`agent-workflow/` 暂保留在项目根目录，用于新窗口接手、调度治理和长期记录。

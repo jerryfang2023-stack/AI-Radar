@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -6,17 +6,17 @@
   <title>观澜AI｜WaveSight AI</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body class="page-index">
   <header class="site-header" data-header></header>
   <main class="home-template home-v2">
     <section class="home-v2-hero">
       <div class="home-v2-copy">
         <span class="home-v2-kicker">AI BUSINESS DECISION INTELLIGENCE</span>
-        <h1>观AI之澜，<br>识商业之势</h1>
-        <p>每天从 AI 变化里筛出少数要紧信号，帮企业经营者看懂影响，找到可以先试的业务位置。</p>
+        <h1>观AI之澜<br>识商业之势</h1>
+        <p>从 AI 热点里，看见商业变化。</p>
         <div class="home-v2-actions">
-          <a class="home-v2-button home-v2-button-primary" href="daily.html">查看今日要点</a>
-          <a class="home-v2-button home-v2-button-secondary" href="brief.html">阅读商业内参</a>
+          <a class="home-v2-button home-v2-button-primary" href="daily.html">查看今日观察</a>
+          <a class="home-v2-button home-v2-button-secondary" href="trend-tracking.html">进入趋势追踪</a>
         </div>
       </div>
       <div class="home-v2-visual" aria-hidden="true">
@@ -24,40 +24,39 @@
       </div>
     </section>
 
-    <section class="home-v2-section home-v2-daily" aria-label="今日要点">
+    <section class="home-v2-section home-v2-daily" aria-label="今日观察">
       <div class="home-v2-section-head">
-        <span>01 / 今日要点</span>
-        <h2>早上先看这几件事</h2>
-        <p>少一点热闹，多一点和业务有关的判断。</p>
+        <h2><a href="daily.html">今日观察</a></h2>
       </div>
-      <div class="home-v2-daily-grid">
-        <article class="home-v2-core" data-home-daily-core></article>
-        <div class="home-v2-daily-cards" data-home-daily-cards></div>
+      <div class="home-v2-daily-board">
+        <article class="home-v2-core home-v2-daily-editorial" data-home-daily-core></article>
+        <aside class="home-v2-daily-side" aria-label="今日观察判断">
+          <div class="home-v2-daily-rationale" data-home-daily-rationale></div>
+        </aside>
       </div>
     </section>
 
-    <section class="home-v2-section" aria-label="关键信号">
+    <section class="home-v2-section home-v2-business-signals" aria-label="商业信号">
       <div class="home-v2-section-head">
-        <span>02 / 关键信号</span>
-        <h2>哪些变化真的碰到了企业流程</h2>
-        <p>产品、资本、客户和治理的变化，只有影响到真实工作，才值得继续看。</p>
+        <h2><a href="signals.html">商业信号</a></h2>
       </div>
       <div class="home-v2-signal-grid" data-home-signals></div>
     </section>
 
-    <section class="home-v2-section home-v2-opportunities" aria-label="机会解码">
+    <section class="home-v2-section home-v2-trend-reports" aria-label="趋势追踪">
       <div class="home-v2-section-head">
-        <span>03 / 机会解码</span>
-        <h2>哪些方向可以先小范围试</h2>
-        <p>不把热度包装成机会，先看适合谁、卡在哪里、从哪个流程开始。</p>
+        <h2><a href="trend-tracking.html">趋势追踪</a></h2>
       </div>
-      <div class="home-v2-opportunity-grid">
-        <article class="home-v2-opportunity-feature" data-home-featured-opportunity></article>
-        <div class="home-v2-opportunity-list" data-home-more-opportunities></div>
+      <div class="home-v2-trend-report-grid">
+        <article class="home-v2-trend-report-feature" data-home-featured-trend-report></article>
+        <div class="home-v2-trend-report-list" data-home-more-trend-reports></div>
       </div>
     </section>
 
     <section class="home-v2-section home-v2-brief" aria-label="商业内参">
+      <div class="home-v2-section-head">
+        <h2><a href="brief.html">商业内参</a></h2>
+      </div>
       <div class="home-v2-brief-layout">
         <article class="home-v2-report-cover" data-home-brief-cover aria-label="商业内参封面"></article>
         <div class="home-v2-brief-card" data-home-brief></div>
@@ -65,11 +64,11 @@
     </section>
 
     <section class="home-v2-final-cta" aria-label="加入观澜AI">
-      <h2>把混乱的信息压缩成判断</h2>
-      <p>给企业经营者、行业操盘手和资源型合伙人，一套持续更新的 AI 商业观察。</p>
+      <h2>把信息压缩成判断</h2>
+      <p>先看今天发生了什么，再看哪些变化值得继续跟。</p>
       <div class="home-v2-actions">
-        <a class="home-v2-button home-v2-button-primary" href="pricing.html">了解商业内参会员</a>
-        <a class="home-v2-button home-v2-button-secondary" href="daily.html">查看今日判断</a>
+        <a class="home-v2-button home-v2-button-primary" href="daily.html">查看今日观察</a>
+        <a class="home-v2-button home-v2-button-secondary" href="brief.html">了解商业内参</a>
       </div>
     </section>
   </main>

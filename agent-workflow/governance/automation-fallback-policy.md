@@ -1,10 +1,10 @@
 ﻿# Automation Fallback Policy
 
-更新时间：2026-05-03  
+更新时间：2026-05-18  
 owner：`workflow` / `dev`  
 状态：V1 旧自动化已停止；V2 每日内容自动化已启用
 
-## 0. 2026-05-07 V2-only 更新
+## 0. 2026-05-18 V2.1 更新
 
 用户明确：
 
@@ -12,7 +12,8 @@ owner：`workflow` / `dev`
 - V1.0 旧站代码和旧文章归档已从当前仓库移除。
 - 旧自动化任务停止。
 - 后续不再判断动作是否影响旧自动化或 V1 链路。
-- 项目调度专注 V2.0 版开发。
+- 项目调度专注 V2.1 版开发。
+- V2.1 当前基座为 `WSD-20260518-GRILLME-STRATEGY-PRODUCT` 与 `WSD-20260518-RAW-POOL-CARD-RULES`。
 
 已停止的旧自动化：
 
@@ -20,13 +21,13 @@ owner：`workflow` / `dev`
 - `ai-2`
 - `ai-3`
 
-本文件中关于旧每日雷达、The Point 和统一同步闸门的规则，保留为历史参考，不再作为 V2 后续任务的阻塞口径。V2 自动化当前以 `V2-DAILY-AUTO / WSD-20260508-02-v2-content-site-daily-automation` 为准。
+本文件中关于旧每日雷达、The Point、`v2-content-site-daily-update` 和统一同步闸门的规则，保留为历史参考，不再作为 V2.1 后续任务的阻塞口径。V2.1 自动化当前以 `guanlan-daily-monitor` 六线程生产链为准。
 
-V2 当前自动化口径：
+V2.1 当前自动化口径：
 
-- 每天 09:00 执行 V2 内容抓取、入库和本地网站数据更新。
+- 每天 09:00 执行 `guanlan-daily-monitor`，随后进入 `asset-card-generator`、`daily-observation-writer`、`case-signal-researcher`、`trend-report-writer`、`brief-periodical-writer`。
 - 默认写入 `01-SiteV2/content/`。
-- 默认读取 `01-SiteV2/content/10-databases/source-registry-v2.json` 和 V2 source strategy。
+- 默认读取 `01-SiteV2/content/09-databases/source-registry-v2.json`、`01-SiteV2/content/09-databases/keyword-monitoring-v2.json` 和 V2 source strategy。
 - 默认运行 V2 quality gates；不再运行旧 `04-Site` 同步作为完成标准。
 - 不做 production deploy，除非用户单独确认。
 

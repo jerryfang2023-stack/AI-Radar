@@ -3,9 +3,9 @@ const data = window.WaveSightContent || {};
 
 const navItems = [
   ["index.html", "首页"],
-  ["daily.html", "今日要点"],
-  ["signals.html", "关键信号"],
-  ["opportunities.html", "机会解码"],
+  ["daily.html", "今日观察"],
+  ["signals.html", "商业信号"],
+  ["trend-tracking.html", "趋势追踪"],
   ["brief.html", "商业内参"],
 ];
 
@@ -62,8 +62,7 @@ function mountHeader() {
   const current = {
     "daily-detail.html": "daily.html",
     "signal-detail.html": "signals.html",
-    "structured-signal.html": "signals.html",
-    "opportunity-detail.html": "opportunities.html",
+    "trend-detail.html": "trend-tracking.html",
     "builders.html": "signals.html",
     "builder-detail.html": "signals.html",
   }[page] || page;
@@ -79,7 +78,7 @@ function mountHeader() {
       <div class="nav-tools">
         <form class="nav-search-form" action="signals.html" role="search">
           <label class="sr-only" for="siteSearch">搜索</label>
-          <input id="siteSearch" name="q" type="search" placeholder="搜索信号 / 机会" autocomplete="off">
+          <input id="siteSearch" name="q" type="search" placeholder="搜索信号 / 趋势" autocomplete="off">
         </form>
         <a class="nav-action" href="${memberHref}">${memberLabel}</a>
         <a class="nav-avatar" href="${avatarHref}" aria-label="${avatarLabel}">${navAvatarMarkup(isSignedIn)}</a>
@@ -106,7 +105,13 @@ function mountFooter() {
         <a class="footer-mark" href="index.html" aria-label="观澜AI 首页">
           <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜AI Wavesight AI">
         </a>
-        <span class="footer-copy">© 2026 WaveSight AI</span>
+        <div class="footer-legal">
+          <span class="footer-copy">© 2026 WaveSight AI · V2.1</span>
+          <a class="footer-icp" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true"></span>
+            粤ICP备2021076703号-3
+          </a>
+        </div>
       </div>
     </div>
   `;
@@ -130,7 +135,20 @@ function summaryText(item, fallback = "这条观察仍在整理中。") {
     .map(cleanText)
     .filter(Boolean);
   const picked = candidates.find((text) => !["导语", "发生了什么"].includes(text)) || fallback;
-  return picked.length > 96 ? `${picked.slice(0, 96)}...` : picked;
+  return picked.length > 96 ? `${picked.slice(0, 96)}…` : picked;
+}
+
+function publicSummaryText(item, fallback = "这条内容用于补充判断背景。") {
+  const text = summaryText(item, fallback)
+    .replace(/https?:\/\/[^\s)]+/g, "")
+    .replace(/\s*[-｜|]\s*$/u, "")
+    .trim();
+  if (text) return text;
+  const type = item?.type || "相关内容";
+  if (/机会/u.test(type)) return "这条内容帮助判断信号是否已经指向同一类客户、流程或预算变化。";
+  if (/观点/u.test(type)) return "这条观点只用于判断参照，不替代客户采用、公司公告或监管材料。";
+  if (/趋势/u.test(type)) return "这条背景用于观察证据是否在一段时间内持续增强。";
+  return "这条内容补充来源、事实和接下来要看的线索。";
 }
 
 function articleText(value = "") {
@@ -211,9 +229,9 @@ function smallAssetCard(item, index, type) {
   const date = item.label || item.date?.replaceAll("-", ".") || data.meta.date;
   const title = item.title || item.id || "未命名资产";
   const body = summaryText(item);
-  const href = type === "opportunity" ? `opportunity-detail.html?id=${item.slug}` : null;
+  const href = type === "trendReport" ? `trend-detail.html?id=${item.slug}` : null;
   const icon = {
-    opportunity: "assets/vi-components/01-symbol-system/opportunity.svg",
+    trendReport: "assets/vi-components/01-symbol-system/trend.svg",
     trend: "assets/vi-components/01-symbol-system/trend.svg",
     point: "assets/vi-components/01-symbol-system/key-judgment.svg",
   }[type] || "assets/vi-components/01-symbol-system/data-snapshot.svg";
@@ -231,7 +249,7 @@ function dateIndexCard(item, index) {
     item.signalCount ? `${item.signalCount} 信号` : "",
     item.trendCount ? `${item.trendCount} 趋势` : "",
     item.pointCount ? `${item.pointCount} 观点` : "",
-    item.hasOpportunity ? "深度分析" : "",
+    item.hasTrendReport ? "深度分析" : "",
   ].filter(Boolean).join(" / ") || "观察归档";
   return `
     <article class="time-card fade-in" style="animation-delay:${index * 35}ms">
@@ -259,7 +277,7 @@ function pointCard(item, index) {
   const relationText = [
     ...(item.relatedSignals || []).map((value) => `Signal ${value}`),
     ...(item.relatedTrends || []).map((value) => `Trend ${value}`),
-    ...(item.relatedOpportunities || []).map((value) => `Opportunity ${value}`),
+    ...(item.relatedTrendReports || []).map((value) => `TrendReport ${value}`),
   ].join(" · ") || "暂无延伸";
   const source = cleanText(item.originalView || "来源观点已归档。");
   const reading = cleanText(item.interpretation || item.calibrates || item.usage || "作为补充视角，不替代事实来源。");
@@ -305,7 +323,7 @@ function homeDailyTitle(text, index) {
   const presets = ["先看什么", "影响哪里", "从哪开始"];
   const cleaned = cleanText(text);
   if (cleaned.length <= 18) return cleaned;
-  return presets[index] || `今日要点 ${String(index + 1).padStart(2, "0")}`;
+  return presets[index] || `今日观察 ${String(index + 1).padStart(2, "0")}`;
 }
 
 function homeSourceTime(item) {
@@ -318,7 +336,7 @@ function homeField(label, value) {
 
 function homeShort(value = "", limit = 68) {
   const text = cleanText(value);
-  return text.length > limit ? `${text.slice(0, limit)}...` : text;
+  return text.length > limit ? `${text.slice(0, limit)}…` : text;
 }
 
 function homeMemo(label) {
@@ -328,8 +346,8 @@ function homeMemo(label) {
 function insightToc() {
   const items = [
     ["01", "今日判断", "先看这件事和业务有没有关系"],
-    ["02", "关键信号", "把热闹压成少数要紧变化"],
-    ["03", "机会解码", "看哪些流程可以先试"],
+    ["02", "商业信号", "把热闹压成少数要紧变化"],
+    ["03", "趋势追踪", "看哪些流程可以先试"],
     ["04", "风险提示", "看清数据、交付和责任边界"],
     ["05", "起步位置", "找到一个小范围试法"],
   ];
@@ -380,7 +398,9 @@ function reportCoverMarkup() {
     <div class="home-v2-cover-rule"></div>
     <h3>AI 商业内参</h3>
     <p>本期主题：AI Agent 进入企业流程</p>
-    ${illustrationCard("radar")}
+    <figure class="home-v2-cover-image">
+      <img src="assets/generated/business-brief-control-layer-imagegen.png" alt="AI 商业内参控制层与判断路径示意图">
+    </figure>
     <div class="home-v2-cover-keyline">
       <span>关键词</span>
       <strong>Agent / Workflow / Decision / Growth</strong>
@@ -398,36 +418,43 @@ function mountHomeV2() {
   const root = document.querySelector(".home-v2");
   if (!root) return false;
 
-  const primarySignal = data.signals?.[0] || {};
-  const secondSignal = data.signals?.[1] || {};
-  const thirdSignal = data.signals?.[2] || {};
+  const activeDate = data.contentIndex?.activeDate || "";
+  const todaySignals = (data.contentIndex?.signals || data.signals || [])
+    .filter((signal) => !activeDate || signal.date === activeDate)
+    .slice(0, 3);
+  const dailyEventSignals = todaySignals.length >= 3 ? todaySignals : (data.signals || []).slice(0, 3);
+  const primarySignal = dailyEventSignals[0] || {};
+  const secondSignal = dailyEventSignals[1] || {};
+  const thirdSignal = dailyEventSignals[2] || {};
+  const homeDailyJudgment = dailyHomeJudgmentText(dailyEventSignals);
+  const dailyProfile = dailyJudgmentProfile(data.daily || {}, dailyEventSignals);
 
   const heroPreview = root.querySelector("[data-home-hero-preview]");
   if (heroPreview) {
     heroPreview.innerHTML = `
       <div class="home-v2-preview-card">
         <div class="home-v2-preview-head">
-          ${homeMemo("DECISION POINT")}
+          ${homeMemo("今日判断")}
           <span>${data.brief.issue || "Issue 05"} · ${data.meta.date}</span>
         </div>
         <h2>今日商业内参预览</h2>
-        <p>${data.daily.dek}</p>
+        <p>${homeShort(homeDailyJudgment, 116)}</p>
         <div class="home-v2-preview-grid">
           ${[primarySignal, secondSignal, thirdSignal].map((signal, index) => `
             <div>
               <span>${String(index + 1).padStart(2, "0")}</span>
-              <strong>${signal.title || "关键信号待更新"}</strong>
+              <strong>${dailySignalShortTitle(signal) || "商业信号待更新"}</strong>
             </div>
           `).join("")}
         </div>
         <div class="home-v2-preview-bottom">
           <div>
-            ${homeMemo("OPPORTUNITY")}
-            <strong>${data.opportunity?.title || "机会解码"}</strong>
+            ${homeMemo("趋势线索")}
+            <strong>${data.trendReport?.title || "趋势追踪"}</strong>
           </div>
           <div>
-            ${homeMemo("RISK")}
-            <strong>责任边界、流程承接和付费意愿还要继续看</strong>
+            ${homeMemo("仍需验证")}
+            <strong>责任边界、流程承接和付费意愿仍未落定</strong>
           </div>
         </div>
         ${illustrationCard("map")}
@@ -437,104 +464,223 @@ function mountHomeV2() {
 
   const dailyCore = root.querySelector("[data-home-daily-core]");
   if (dailyCore) {
+    const mainLine = dailyProfile.title || cleanText(data.daily?.title || "今日观察").replace(/^今日观察[｜|]\s*/u, "");
+    const detailCopy = dailyProfile.impact || data.daily?.dek || "今天的几条变化被放在一起看，是因为它们指向同一个经营问题。";
     dailyCore.innerHTML = `
-      ${homeMemo("EDITORIAL NOTE")}
-      <span class="home-v2-label">编辑部判断</span>
-      <h3>${data.daily.title}</h3>
-      <p>${data.daily.dek}</p>
-      <a class="home-v2-text-link" href="${data.daily.link}">阅读完整判断</a>
+      <span class="home-v2-label">${data.meta.date || "今日"}</span>
+      <strong class="home-v2-daily-line">${mainLine}</strong>
+      <p>${homeShort(homeDailyJudgment, 190)}</p>
+      <p>${homeShort(detailCopy, 170)}</p>
+      <a class="home-v2-text-link" href="${data.daily.link || "daily.html"}">查看今日观察</a>
+    `;
+  }
+
+  const dailyRationale = root.querySelector("[data-home-daily-rationale]");
+  if (dailyRationale) {
+    const dailyItems = [
+      {
+        label: "采购",
+        title: "老板先问谁兜底",
+        body: "大组织部署很诱人，但 Agent 一旦碰流程，采购会先追问权限、日志和停用按钮。",
+      },
+      {
+        label: "产品",
+        title: "控制层变成卖点",
+        body: "运行时隔离、权限拦截和人工批准都在补同一块：让 Agent 能动手，也能被管住。",
+      },
+      {
+        label: "账单",
+        title: "热闹终归要算钱",
+        body: "计费讨论把问题拉回现实：AI 从座席订阅走向用量消耗，预算会被摊到流程上。",
+      },
+    ];
+    dailyRationale.innerHTML = `
+      <div class="home-v2-side-head">
+        ${homeMemo("今日看点")}
+        <strong>${dailyProfile.thesis || homeShort(homeDailyJudgment, 88)}</strong>
+      </div>
+      ${dailyItems.map((item, index) => `
+      <article class="home-v2-mini-card home-v2-rationale-card fade-in" style="animation-delay:${index * 70}ms">
+        <div class="home-v2-card-kicker">${homeMemo(item.label)}<span class="home-v2-index">${String(index + 1).padStart(2, "0")}</span></div>
+        <h3>${homeShort(item.title, 42)}</h3>
+        <p>${homeShort(item.body, 138)}</p>
+      </article>
+      `).join("")}
     `;
   }
 
   const dailyCards = root.querySelector("[data-home-daily-cards]");
   if (dailyCards) {
-    dailyCards.innerHTML = data.daily.points.slice(0, 3).map((point, index) => `
-      <article class="home-v2-mini-card fade-in" style="animation-delay:${index * 70}ms">
-        ${homeMemo(index === 0 ? "NOTE" : index === 1 ? "WATCH" : "DECISION POINT")}
-        <span class="home-v2-index">${String(index + 1).padStart(2, "0")}</span>
-        <h3>${homeDailyTitle(point, index)}</h3>
-        <p>${cleanText(point)}</p>
-        <dl>
-          ${homeField("影响对象", ["企业老板", "产品负责人", "业务操盘手"][index] || "决策者")}
-          ${homeField("重要等级", ["高", "中高", "中高"][index] || "中")}
-          ${homeField("阅读时间", `${index + 2} 分钟`)}
-        </dl>
-      </article>
-    `).join("");
+    dailyCards.innerHTML = dailyEventSignals.map((signal, index) => {
+      const href = signal.link || (signal.slug ? `signal-detail.html?id=${encodeURIComponent(signal.slug)}` : "signals.html");
+      return `
+      <a class="home-v2-mini-card home-v2-daily-signal fade-in" href="${safeAttribute(href)}" style="animation-delay:${index * 70}ms">
+        <div class="home-v2-card-kicker">${homeMemo("精选变化")}<span class="home-v2-index">${String(index + 1).padStart(2, "0")}</span></div>
+        <h3>${homeDailyFeaturedTitle(signal, index)}</h3>
+        <p>${homeShort(homeDailyCardBody(signal), 112)}</p>
+        <span class="home-v2-read-link">查看变化</span>
+      </a>
+    `;
+    }).join("");
   }
 
   const signalGrid = root.querySelector("[data-home-signals]");
   if (signalGrid) {
-    signalGrid.innerHTML = data.signals.slice(0, 3).map((signal, index) => {
-      const signalType = compactJoin([tagsByGroup(signal, "track", 1), tagsByGroup(signal, "source", 1)], "商业信号");
-      const impact = compactJoin([
-        tagsByGroup(signal, "track", 2),
-        tagsByGroup(signal, "function", 2),
-        tagsByGroup(signal, "scenario", 1),
-      ], "企业服务 / AI工作流");
-      const trends = compactJoin([tagsByGroup(signal, "point", 2), tagsByGroup(signal, "stage", 1)], "可控运营");
-      return `
-        <article class="home-v2-signal-card fade-in" style="animation-delay:${index * 80}ms">
-          ${homeMemo("SIGNAL")}
-          <span class="home-v2-label">${signalType}</span>
-          <div class="home-v2-signal-id">SIGNAL ID GL-${String(index + 1).padStart(3, "0")}</div>
-          <h3>${signal.title}</h3>
-          <p class="home-v2-meta">${homeSourceTime(signal)}</p>
-          <p>${homeShort(summaryText(signal, signal.judgment), 86)}</p>
-          <div class="home-v2-signal-metrics">
-            <div><span>影响等级</span><strong>${["高", "中高", "中高"][index] || "中"}</strong></div>
-            <div><span>观察窗口</span><strong>${["30-90 天", "2-6 周", "1-3 个月"][index] || "持续"}</strong></div>
-            <div><span>相关行业</span><strong>${impact.split(" / ").slice(0, 2).join(" / ")}</strong></div>
+    const activeDate = activeSignalDate();
+    const activeSignals = (data.contentIndex?.signals || data.signals || []).filter((item) => signalMatchesDate(item, activeDate));
+    const homeSignals = (activeSignals.length ? activeSignals : data.contentIndex?.signals || data.signals || []).slice(0, 4);
+    const lead = homeSignals[0];
+    const sideSignals = homeSignals.slice(1, 4);
+    const activeCases = (data.contentIndex?.cases || []).filter((item) => !activeDate || item.date === activeDate);
+    const activePoints = (data.contentIndex?.points || []).filter((item) => !activeDate || item.date === activeDate);
+    const leadTags = lead ? signalTagNames(lead, 5) : [];
+    const leadCases = lead ? signalCaseNames(lead, 2) : [];
+    const leadSources = lead ? signalSourceNames(lead, 2) : [];
+    const isCopilotLead = /copilot/i.test(String(lead?.title || ""));
+    const evidenceJudgment = isCopilotLead
+      ? "这条材料不能直接证明 GitHub 已经改价，但它把开发者最敏感的一件事捅出来了。"
+      : signalWhyLine(lead, 108);
+    const evidenceStatus = isCopilotLead ? "讨论升温 / 仍需补证" : "材料充足 / 继续观察";
+    const watchWindows = isCopilotLead ? [
+      ["7D", "看是否出现更多一手讨论"],
+      ["30D", "看是否影响开发者付费预期"],
+      ["90D", "看是否沉淀为 AI 编程工具计费趋势"],
+    ] : [
+      ["7D", "看是否出现更多一手材料"],
+      ["30D", "看客户采用和付费反馈"],
+      ["90D", "看是否沉淀为连续趋势"],
+    ];
+    const sideRow = (signal, index) => `
+      <a class="home-signal-row fade-in" href="${safeAttribute(signalHref(signal))}" style="animation-delay:${(index + 1) * 70}ms">
+        <span class="home-signal-row-index">${String(index + 2).padStart(2, "0")}</span>
+        <div>
+          <strong>${dailySignalShortTitle(signal)}</strong>
+          <p>${signalEventLine(signal, 74)}</p>
+          <div class="home-signal-row-tags">
+            ${signalTagNames(signal, 2).map((tag) => `<span>${tag}</span>`).join("")}
           </div>
-          <div class="home-v2-why">
-            <span>为什么重要</span>
-            <p>${homeShort(signal.judgment || signal.brief || "这条变化正在靠近企业真实流程。", 92)}</p>
+        </div>
+      </a>
+    `;
+    signalGrid.innerHTML = lead ? `
+      <div class="home-signal-workbench">
+        <a class="home-signal-lead fade-in" href="${safeAttribute(signalHref(lead))}">
+          <div class="home-signal-lead-head">
+            <span>DAILY SIGNAL BRIEF</span>
+            <em>${lead.id || "FS"} · ${signalSystemDate(lead.date)}</em>
           </div>
-        </article>
-      `;
-    }).join("");
+          <h3>${dailySignalShortTitle(lead)}</h3>
+          <p class="home-signal-lead-copy">${signalEventLine(lead, 172)}</p>
+          <p class="home-signal-interpretation">${evidenceJudgment}</p>
+          <div class="home-signal-evidence" aria-label="Evidence Summary">
+            <div>
+              <span>EVIDENCE NOTE</span>
+              <strong>${evidenceJudgment}</strong>
+            </div>
+            <div>
+              <span>案例</span>
+              <strong>${leadCases.join(" / ") || "暂未监测到同类案例"}</strong>
+            </div>
+            <div>
+              <span>来源</span>
+              <strong>${leadSources.join(" / ") || "暂无公开信息"}</strong>
+            </div>
+          </div>
+          <div class="home-signal-statusline">
+            <span>${evidenceStatus}</span>
+            <span>观察窗口：7D / 30D / 90D</span>
+          </div>
+          <div class="home-signal-watchline" aria-label="Watch Window">
+            ${watchWindows.map(([label, text]) => `
+            <div>
+              <span>${label}</span>
+              <strong>${text}</strong>
+            </div>
+            `).join("")}
+          </div>
+          <div class="home-signal-lower">
+            <div class="home-signal-tags">
+              ${(leadTags.length ? leadTags : ["AI Coding", "开发者工具", "计费模型"]).map((tag) => `<span>${tag}</span>`).join("")}
+            </div>
+            <svg class="home-signal-sparkline" viewBox="0 0 180 44" aria-hidden="true">
+              <path d="M8 34 H172" />
+              <polyline points="10,31 46,27 82,28 118,18 160,10" />
+              <circle cx="160" cy="10" r="3.5" />
+            </svg>
+          </div>
+          <div class="home-signal-boundary">
+            <span>当前为讨论升温信号，不等同于官方定价变化。</span>
+            <em>查看信号 ↗</em>
+          </div>
+        </a>
+        <aside class="home-signal-aside" aria-label="更多商业信号">
+          <div class="home-signal-aside-head">
+            <span>SIGNAL BRIEF</span>
+            <strong>今日信号简报</strong>
+          </div>
+          <div class="home-signal-counts">
+            <div><strong>${homeSignals.length}</strong><span>今日信号</span></div>
+            <div><strong>${activeCases.length}</strong><span>案例卡</span></div>
+            <div><strong>${activePoints.length}</strong><span>前沿观点</span></div>
+          </div>
+          <div class="home-signal-row-list">
+            ${sideSignals.map(sideRow).join("")}
+          </div>
+          <a class="home-signal-library-link" href="signals.html">进入完整信号库</a>
+        </aside>
+      </div>
+    ` : "";
   }
 
-  const featuredOpportunity = root.querySelector("[data-home-featured-opportunity]");
-  if (featuredOpportunity && data.opportunity) {
-    const audience = compactJoin([tagsByGroup(data.opportunity, "customer", 2), tagsByGroup(data.opportunity, "function", 2)], "企业老板 / 业务负责人");
-    const entry = data.opportunity.link || "opportunities.html";
-    featuredOpportunity.innerHTML = `
-      ${homeMemo("OPPORTUNITY")}
-      <span class="home-v2-label">今日重点机会</span>
-      <h3>${data.opportunity.title}</h3>
-      <p>${homeShort(data.opportunity.oneLine || summaryText(data.opportunity), 96)}</p>
+  const featuredTrendReport = root.querySelector("[data-home-featured-trend-report]");
+  if (featuredTrendReport && data.trendReport) {
+    const reportId = String(data.trendReport.id || "");
+    const hasFormalReport = /^TRD-(FLASH|FULL)-\d{8}-\d{2}$/.test(reportId);
+    const audience = compactJoin([tagsByGroup(data.trendReport, "customer", 2), tagsByGroup(data.trendReport, "function", 2)], "企业老板 / 业务负责人");
+    const entry = hasFormalReport ? (data.trendReport.link || "trend-tracking.html") : "trend-tracking.html";
+    const reportLabel = hasFormalReport
+      ? (data.trendReport.kind === "full" ? "最新深度报告" : "正在升温")
+      : "趋势仍在补证";
+    const reportTitle = hasFormalReport ? data.trendReport.title : "今天的趋势判断还在补证";
+    const reportCopy = hasFormalReport
+      ? homeShort(data.trendReport.oneLine || summaryText(data.trendReport), 96)
+      : "观澜会把多条变化、案例、观点和来源密度放在一起看。证据不够时，不把单条新闻包装成趋势。";
+    featuredTrendReport.innerHTML = `
+      ${homeMemo("趋势追踪")}
+      <span class="home-v2-label">${reportLabel}</span>
+      <h3>${reportTitle}</h3>
+      <p>${reportCopy}</p>
       <div class="home-v2-fit-grid">
-        <div><span>适合谁</span><p>${audience}</p></div>
-        <div><span>不适合谁</span><p>流程还说不清、只想追模型演示的团队</p></div>
-        <div><span>前置条件</span><p>${data.opportunity.stage || "已有具体流程和可观察数据"}</p></div>
+        <div><span>看什么</span><p>${audience}</p></div>
+        <div><span>缺什么</span><p>${data.trendReport.evidenceGaps || "客户采用、付费意愿和交付成本"}</p></div>
+        <div><span>状态</span><p>${data.trendReport.stage || "继续观察"}</p></div>
       </div>
-      <div class="home-v2-opportunity-notes">
-        <p><span>潜在价值</span>降低试错成本</p>
-        <p><span>风险提醒</span>先看责任边界</p>
-        <p><span>起步方式</span>先从一个高频流程试</p>
+      <div class="home-v2-trend-report-notes">
+        <p><span>来源</span>多源密度</p>
+        <p><span>客户</span>真实采用</p>
+        <p><span>反证</span>成本边界</p>
       </div>
-      <a class="home-v2-button home-v2-button-primary" href="${entry}">查看机会解码</a>
+      <a class="home-v2-button home-v2-button-primary" href="${entry}">查看趋势追踪</a>
     `;
   }
 
-  const opportunityList = root.querySelector("[data-home-more-opportunities]");
-  if (opportunityList) {
-    const opportunities = (data.contentIndex?.opportunities || []).slice(0, 3);
-    const items = opportunities.length ? opportunities : data.signals.slice(0, 3).map((signal) => ({
+  const trendReportList = root.querySelector("[data-home-more-trend-reports]");
+  if (trendReportList) {
+    const trendReports = (data.contentIndex?.trendReports || []).slice(0, 3);
+    const items = trendReports.length ? trendReports : data.signals.slice(0, 3).map((signal) => ({
       title: signal.title,
       oneLine: summaryText(signal),
       link: signal.link || "signals.html",
       tags: signal.tags || [],
     }));
-    opportunityList.innerHTML = items.map((item, index) => `
-      <a class="home-v2-opportunity-row fade-in" href="${item.link || `opportunity-detail.html?id=${item.slug}`}" style="animation-delay:${index * 60}ms">
+    trendReportList.innerHTML = items.map((item, index) => `
+      <a class="home-v2-trend-report-row fade-in" href="${item.link || `trend-detail.html?id=${item.slug}`}" style="animation-delay:${index * 60}ms">
         <span>${String(index + 1).padStart(2, "0")}</span>
         <div>
-          ${homeMemo(index === 0 ? "OPPORTUNITY" : "WATCH")}
+          ${homeMemo(item.kind === "full" ? "深度报告" : (item.kind === "flash" ? "正在升温" : "继续观察"))}
           <h3>${item.title}</h3>
           <p>${homeShort(item.oneLine || summaryText(item), 74)}</p>
-          <small>${compactJoin([tagsByGroup(item, "customer", 1), tagsByGroup(item, "track", 1)], "机会方向")} · ${item.stage || "观察中"}</small>
+          <small>${compactJoin([tagsByGroup(item, "customer", 1), tagsByGroup(item, "track", 1)], "观察线索")} · ${item.stage || "观察中"}</small>
         </div>
       </a>
     `).join("");
@@ -550,7 +696,7 @@ function mountHomeV2() {
     const coreQuestion = data.brief.summary?.[0] || "哪些AI变化正在影响企业的投入顺序？";
     briefCard.innerHTML = `
       <div class="home-v2-brief-copy">
-        ${homeMemo("INSIGHT BRIEF")}
+        ${homeMemo("商业内参")}
         <span class="home-v2-label">${data.brief.issue || "商业内参"}</span>
         <div class="home-v2-brief-rule"></div>
         <h2><span>Agent 控制层、</span><span>工程治理与企业交付链</span></h2>
@@ -560,9 +706,9 @@ function mountHomeV2() {
       <div class="home-v2-brief-facts">
         <div><span>本期问题</span><p>${homeShort(coreQuestion, 62)}</p></div>
         <div><span>适合谁读</span><p>企业老板 / 行业操盘手 / 投资观察者</p></div>
-        <div><span>阅读重点</span><p>流程影响 / 机会边界 / 后续观察</p></div>
+        <div><span>阅读重点</span><p>流程影响 / 机会判断 / 后续观察</p></div>
       </div>
-      <a class="home-v2-button home-v2-button-secondary" href="brief.html">查看详情 <span aria-hidden="true">→</span></a>
+      <a class="home-v2-button home-v2-button-secondary" href="brief.html">阅读商业内参 <span aria-hidden="true">→</span></a>
     `;
   }
 
@@ -585,9 +731,9 @@ function parseRelationTokens(text = "") {
     signals: "signal",
     trends: "trend",
     points: "point",
-    opportunities: "opportunity",
+    trendReports: "trendReport",
   }[value.trim()] || value.trim());
-  text.split(",").map((item) => item.trim()).filter(Boolean).forEach((part) => {
+  text.replaceAll("`", "").split(",").map((item) => item.trim()).filter(Boolean).forEach((part) => {
     const [maybeType, ...rest] = part.split(":");
     if (rest.length) {
       currentType = normalizeType(maybeType);
@@ -605,22 +751,29 @@ function relationTokens(item) {
   return [
     ...(item.relations || []),
     ...parseRelationTokens(item.relationFields || ""),
-  ].map((token) => token.replace(/^signals:/, "signal:").replace(/^trends:/, "trend:").replace(/^points:/, "point:").replace(/^opportunities:/, "opportunity:"));
+  ].map((token) => token
+    .replace(/^signals:/, "signal:")
+    .replace(/^cases:/, "case:")
+    .replace(/^trends:/, "trend:")
+    .replace(/^points:/, "point:")
+    .replace(/^trendReports:/, "trendReport:"));
 }
 
 function assetKeys(item, type) {
   const base = [`${type}:${item.id}`];
   if (type === "signal") base.push(...(item.structuredRefs || []).map((id) => `signal:${id}`));
-  if (type === "opportunity") base.push(`opportunity:${item.slug}`);
+  if (type === "case") base.push(`case:${item.slug}`);
+  if (type === "trendReport") base.push(`trendReport:${item.slug}`);
   return base.filter(Boolean);
 }
 
 function assetStore() {
   return {
     signal: data.contentIndex?.signals || data.signals || [],
+    case: data.contentIndex?.cases || [],
     point: data.contentIndex?.points || [],
     trend: data.contentIndex?.trends || [],
-    opportunity: data.contentIndex?.opportunities || [data.opportunity].filter(Boolean),
+    trendReport: data.contentIndex?.trendReports || [data.trendReport].filter(Boolean),
   };
 }
 
@@ -641,8 +794,8 @@ function relatedAssets(target, targetType) {
 }
 
 function relationItemCard(item, type, index) {
-  const href = type === "signal" ? item.link : (type === "opportunity" ? `opportunity-detail.html?id=${item.slug}` : null);
-  const typeLabel = { signal: "信号", point: "观点", trend: "趋势", opportunity: "机会" }[type];
+  const href = type === "signal" ? item.link : (type === "trendReport" ? `trend-detail.html?id=${item.slug}` : null);
+  const typeLabel = { signal: "信号", case: "案例", point: "前沿观点", trend: "趋势", trendReport: "机会" }[type];
   const body = summaryText(item, "它与当前观察指向相近。");
   const inner = `
     <span class="kicker">${typeLabel} ${String(index + 1).padStart(2, "0")}</span>
@@ -657,9 +810,10 @@ function relationPanel(target, targetType) {
   const related = relatedAssets(target, targetType);
   const groups = [
     ["signal", "相关信号"],
+    ["case", "相关案例"],
     ["point", "相关观点"],
     ["trend", "趋势线索"],
-    ["opportunity", "相关机会"],
+    ["trendReport", "相关趋势"],
   ].filter(([type]) => type !== targetType && related[type]?.length);
   if (!groups.length) return "";
   return `
@@ -680,7 +834,7 @@ function activeRelationRows(limit = 3) {
     const counts = [
       ["观点", related.point],
       ["趋势", related.trend],
-      ["机会", related.opportunity],
+      ["机会", related.trendReport],
     ];
     const leads = counts
       .filter(([, items]) => items.length)
@@ -732,14 +886,24 @@ function mountAuthForms() {
         }
         return;
       }
+      const password = form.querySelector('[name="password"]');
+      const confirmPassword = form.querySelector('[name="confirmPassword"]');
+      if (password && confirmPassword && password.value !== confirmPassword.value) {
+        confirmPassword.focus();
+        if (status) {
+          status.textContent = "两次输入的密码不一致。";
+          status.classList.add("is-error");
+        }
+        return;
+      }
       if (status) {
         status.textContent = form.dataset.success || "已记录页面演示状态。";
         status.classList.remove("is-error");
       }
-      if (["login.html", "register.html", "checkout.html"].includes(getPageName())) {
-        window.localStorage?.setItem("wavesight-member-state", "logged-in");
+      if (["login.html", "register.html", "checkout.html"].includes(getPageName()) && form.dataset.noLogin !== "true") {
+        window.localStorage?.setItem("wavesight-member-state", getPageName() === "checkout.html" ? "member" : "logged-in");
         const formData = new FormData(form);
-        const email = cleanText(formData.get("email") || "");
+        const email = cleanText(formData.get("email") || formData.get("contact") || formData.get("requestEmail") || "");
         const name = cleanText(formData.get("name") || "");
         const existing = getStoredUser();
         window.localStorage?.setItem("wavesight-user-profile", JSON.stringify({
@@ -758,28 +922,28 @@ function mountAccountPage() {
   const state = getMemberState();
   const copy = {
     public: {
-      label: "PUBLIC PREVIEW",
-      title: "当前是公开预览状态",
-      body: "你可以阅读今日要点、部分关键信号和商业内参样张。",
-      action: "申请访问",
+      label: "FREE ACCESS",
+      title: "当前为免费阅读状态",
+      body: "可阅读今日观察摘要、部分商业信号和部分趋势判断。",
+      action: "创建账号",
       href: "register.html",
-      items: ["今日要点公开页", "关键信号列表", "商业内参样张", "会员申请页"],
+      items: ["今日观察摘要", "部分商业信号", "部分趋势判断", "创建账号"],
     },
     "logged-in": {
-      label: "ACCESS REQUESTED",
-      title: "当前是申请访问状态",
-      body: "页面已记录本地登录或申请状态。真实审核、邀请码和权限需要后续服务接入。",
-      action: "确认访问申请",
-      href: "checkout.html",
-      items: ["商业内参预览", "账户访问状态", "会员方案说明", "申请确认页"],
+      label: "SIGNED IN",
+      title: "已登录账号",
+      body: "登录后可进入今日观察；权限到期时可在账户页续订。",
+      action: "查看订阅方案",
+      href: "pricing.html",
+      items: ["今日观察", "商业信号", "趋势追踪", "订阅方案"],
     },
     member: {
-      label: "MEMBER PREVIEW",
-      title: "当前是会员完整态预览",
-      body: "这只是页面预览状态，用于确认完整会员层页面节奏。",
-      action: "阅读商业内参",
-      href: "brief.html?state=member",
-      items: ["完整内参预览", "来源摘要", "热力变化", "机会观察", "往期参照"],
+      label: "MEMBER",
+      title: "会员权限有效",
+      body: "当前账号可阅读完整今日观察、商业信号、趋势追踪和商业内参。",
+      action: "进入今日观察",
+      href: "daily.html",
+      items: ["完整今日观察", "完整商业信号", "趋势追踪", "商业内参"],
     },
   }[state];
   const status = document.querySelector("[data-account-status]");
@@ -815,7 +979,7 @@ function mountSignalBuildersEntry() {
   if (!host) return;
   const points = (data.contentIndex?.points || []).filter(isBuilderPoint);
   if (!points.length) {
-    host.innerHTML = `<div class="section-head"><div><span class="eyebrow">Builders</span><h2>Builders 观点</h2></div><p>暂无可展示的 builder 观点。</p></div>`;
+    host.innerHTML = `<div class="section-head"><div><span class="eyebrow">Frontier Views</span><h2>前沿观点</h2></div><p>暂无可展示的前沿观点。</p></div>`;
     return;
   }
   const activeDate = data.contentIndex?.activeDate || "";
@@ -824,10 +988,10 @@ function mountSignalBuildersEntry() {
   host.innerHTML = `
     <div class="section-head">
       <div>
-        <span class="eyebrow">Builders</span>
-        <h2>Builders 观点</h2>
+        <span class="eyebrow">Frontier Views</span>
+        <h2>前沿观点</h2>
       </div>
-      <p>作为判断校准，不替代事实来源。<a href="builders.html" style="text-decoration:underline">查看观点变化</a></p>
+      <p>作为判断参照，不替代事实来源。<a href="builders.html" style="text-decoration:underline">查看观点变化</a></p>
     </div>
     <div class="asset-grid">
       ${sample.map((item, index) => pointCard(item, index)).join("")}
@@ -864,6 +1028,13 @@ function isBuilderPoint(point) {
   if (/follow-builders/i.test(path)) return true;
   const tags = (point?.tags || []).map((t) => t.id || t.name || "").join(" ");
   return /source-social|builder/i.test(tags);
+}
+
+function isFollowBuilderPoint(point) {
+  const path = String(point?.sourcePath || point?.source_path || "");
+  if (/follow-builders/i.test(path)) return true;
+  const url = String(point?.sourceUrl || point?.source_url || "");
+  return Boolean(builderUsername(url));
 }
 
 function groupBy(items, keyFn) {
@@ -999,14 +1170,14 @@ function mountBuilders() {
       const header = `<div class="builder-day-head"><h3>${day.replaceAll("-", ".")}</h3><span>${items.length} 条</span></div>`;
       const cards = `<div class="asset-grid">${items.map((item, index) => pointCard(item, index)).join("")}</div>`;
       return `<section class="builder-day" id="builder-day-${day}">${header}${cards}</section>`;
-    }).join("") || `<p>暂无匹配的 builders 观点。</p>`;
+    }).join("") || `<p>暂无匹配的前沿观点。</p>`;
 
     if (dateIndex) {
       dateIndex.innerHTML = sortedDays.map((day, index) => {
         const items = byDay.get(day) || [];
         const people = new Set(items.map((p) => builderUsername(p.sourceUrl || p.source_url)).filter(Boolean));
         const metrics = `${items.length} 观点${people.size ? ` / ${people.size} 人` : ""}`;
-        const title = cleanText(items[0]?.title || "Builders 观点");
+        const title = cleanText(items[0]?.title || "前沿观点");
         return `
           <a class="time-card fade-in" href="#builder-day-${day}" style="animation-delay:${index * 35}ms">
             <div class="time-date">${day.replaceAll("-", ".")}</div>
@@ -1029,7 +1200,7 @@ function mountBuilders() {
 }
 
 const signalSystemCopy = {
-  sourceBoundary: "一线观点能帮助修正判断，但不能替代公司公告、客户证据、财报、监管文件或一手材料。",
+  sourceBoundary: "前沿观点能帮助修正判断，但不能替代公司公告、客户证据、财报、监管文件或一手材料。",
   noData: "本轮未发现可确认数据。",
 };
 
@@ -1044,12 +1215,269 @@ function signalSystemTags(item, group, limit = 3) {
     .map((tag) => tag.name);
 }
 
+const signalTagFilterIds = [
+  "track-ai-agent",
+  "track-enterprise-workflow",
+  "evidence-customer-adoption",
+  "source-first-party",
+  "stage-risk",
+  "point-agent-workflow",
+];
+
+function taxonomyTagById(id) {
+  return (data.tagTaxonomy || []).find((tag) => tag.id === id);
+}
+
+function signalTagFilters() {
+  return signalTagFilterIds
+    .map((id) => taxonomyTagById(id))
+    .filter(Boolean)
+    .map((tag) => ({
+      id: tag.id,
+      label: tag.name,
+      group: tag.group,
+      terms: [tag.id, tag.name, ...(tag.aliases || [])],
+    }));
+}
+
+function signalFilterParams() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    date: params.get("date") || "",
+    tag: params.get("tag") || "",
+  };
+}
+
+function signalFilterHref(next = {}) {
+  const params = signalFilterParams();
+  const date = Object.prototype.hasOwnProperty.call(next, "date") ? next.date : params.date;
+  const tag = Object.prototype.hasOwnProperty.call(next, "tag") ? next.tag : params.tag;
+  const query = new URLSearchParams();
+  if (date) query.set("date", date);
+  if (tag) query.set("tag", tag);
+  const queryString = query.toString();
+  return queryString ? `signals.html?${queryString}` : "signals.html";
+}
+
+function builderFilterHref(tag = "") {
+  const query = new URLSearchParams();
+  if (tag) query.set("tag", tag);
+  return `builders.html${tag ? `?${query.toString()}` : ""}`;
+}
+
+function signalDateLinks() {
+  const dates = data.contentIndex?.dates || [];
+  return dates;
+}
+
+function activeSignalDate(date = "") {
+  return date || data.contentIndex?.activeDate || data.contentIndex?.dates?.[0]?.date || data.meta?.date || "";
+}
+
+function signalRangeLabel(date = "") {
+  const activeDate = activeSignalDate(date);
+  const first = data.contentIndex?.dates?.[0]?.date;
+  if (activeDate === first) return "今日";
+  return signalSystemDate(activeDate);
+}
+
+function activeSignalDateMeta(date = "") {
+  const dates = data.contentIndex?.dates || [];
+  const activeDate = activeSignalDate(date);
+  return dates.find((item) => item.date === activeDate) || dates[0] || {};
+}
+
+function signalLeadTitle(signal, date, tag) {
+  const dateMeta = activeSignalDateMeta(date);
+  if (activeSignalDate(date) === data.contentIndex?.dates?.[0]?.date && !tag && dateMeta.title) return dateMeta.title;
+  return signal?.title || dateMeta.title || "值得继续看的 AI 商业变化";
+}
+
+function signalMatchesDate(item, date) {
+  return item.date === activeSignalDate(date);
+}
+
+function signalMatchesTag(item, tagId) {
+  if (!tagId) return true;
+  const filter = signalTagFilters().find((entry) => entry.id === tagId);
+  if (!filter) return false;
+  return (item.tags || []).some((tag) => {
+    const values = [tag.id, tag.name, ...(tag.aliases || [])].map((value) => String(value || "").toLowerCase());
+    return filter.terms.some((term) => values.includes(String(term).toLowerCase()));
+  });
+}
+
+function signalDropdown(kind, label, activeLabel, searchPlaceholder, items, footer = "") {
+  return `
+    <div class="signal-dropdown signal-dropdown-${kind}">
+      <span>${label}</span>
+      <details>
+        <summary>${activeLabel}</summary>
+        <div class="signal-dropdown-menu">
+          <label class="sr-only" for="signal-${kind}-search">${searchPlaceholder}</label>
+          <input id="signal-${kind}-search" type="search" placeholder="${searchPlaceholder}" data-signal-dropdown-search>
+          <div class="signal-dropdown-list">
+            ${items.join("")}
+          </div>
+          ${footer}
+        </div>
+      </details>
+    </div>
+  `;
+}
+
+function signalDatePicker(date = "") {
+  const dates = data.contentIndex?.dates || [];
+  const active = activeSignalDate(date);
+  const parts = active.split("-");
+  const years = [...new Set(dates.map((item) => item.date.slice(0, 4)))];
+  const months = [...new Set(dates.filter((item) => item.date.startsWith(parts[0] || "")).map((item) => item.date.slice(5, 7)))];
+  const days = [...new Set(dates.filter((item) => item.date.startsWith(`${parts[0]}-${parts[1]}`)).map((item) => item.date.slice(8, 10)))];
+  return `
+    <form class="signal-picker signal-date-picker" data-signal-date-picker>
+      <span>日期</span>
+      <div>
+        <select name="year" aria-label="年份">
+          ${years.map((year) => `<option value="${year}" ${year === parts[0] ? "selected" : ""}>${year}</option>`).join("")}
+        </select>
+        <select name="month" aria-label="月份">
+          ${months.map((month) => `<option value="${month}" ${month === parts[1] ? "selected" : ""}>${month}月</option>`).join("")}
+        </select>
+        <select name="day" aria-label="日期">
+          ${days.map((day) => `<option value="${day}" ${day === parts[2] ? "selected" : ""}>${day}日</option>`).join("")}
+        </select>
+        <button type="submit">查看</button>
+      </div>
+    </form>
+  `;
+}
+
+function signalTagPicker(tagId = "") {
+  const tags = signalTagFilters();
+  const groups = [...new Set(tags.map((tag) => tag.group))];
+  const active = tags.find((tag) => tag.id === tagId);
+  return `
+    <form class="signal-picker signal-tag-picker" data-signal-tag-picker>
+      <span>标签</span>
+      <div>
+        <select name="group" aria-label="标签分类">
+          <option value="">全部分类</option>
+          ${groups.map((group) => `<option value="${group}" ${active?.group === group ? "selected" : ""}>${tagGroupLabel(group)}</option>`).join("")}
+        </select>
+        <input name="keyword" type="search" list="signalTagOptions" placeholder="输入关键词或选择标签" value="${active?.label || ""}" autocomplete="off">
+        <datalist id="signalTagOptions">
+          ${tags.map((tag) => `<option value="${tag.label}" data-id="${tag.id}">${tagGroupLabel(tag.group)}</option>`).join("")}
+        </datalist>
+        <button type="submit">查看信号</button>
+        <a class="signal-picker-alt" href="${active ? builderFilterHref(active.id) : "builders.html"}">相关观点</a>
+      </div>
+    </form>
+  `;
+}
+
+function tagGroupLabel(group = "") {
+  return {
+    track: "赛道",
+    function: "职能",
+    scenario: "场景",
+    customer: "客户",
+    evidence: "证据",
+    stage: "阶段",
+    region: "市场",
+    source: "来源",
+    point: "观点",
+  }[group] || "标签";
+}
+
 function signalSystemUrlDomain(url) {
   try {
     return new URL(url).hostname.replace(/^www\./, "");
   } catch {
     return "";
   }
+}
+
+function sourceDisplayName(url = "", fallback = "") {
+  const domain = signalSystemUrlDomain(url) || String(fallback || "").replace(/^www\./, "");
+  const lower = `${domain} ${url}`.toLowerCase();
+  if (/techcrunch/.test(lower)) return "TechCrunch";
+  if (/theinformation/.test(lower)) return "The Information";
+  if (/bloomberg/.test(lower)) return "Bloomberg";
+  if (/sierra\.ai\/customers|customers/.test(lower)) return "Sierra 客户页面";
+  if (/sierra\.ai/.test(lower)) return "Sierra 官方材料";
+  if (/openai\.com/.test(lower)) return "OpenAI 官方材料";
+  if (/anthropic\.com|claude\.com/.test(lower)) return "Anthropic 官方材料";
+  if (/microsoft\.com/.test(lower)) return "Microsoft 官方材料";
+  if (/collibra\.com/.test(lower)) return "Collibra 官方材料";
+  if (/servicenow/.test(lower)) return "ServiceNow 官方材料";
+  if (/soundhound/.test(lower)) return "SoundHound 官方材料";
+  if (/twilio/.test(lower)) return "Twilio 官方材料";
+  if (/greenhouse/.test(lower)) return "Greenhouse 官方材料";
+  if (/prnewswire/.test(lower)) return "发布通道";
+  if (/youtube/.test(lower)) return "公开视频材料";
+  if (/x\.com|twitter/.test(lower)) return "社媒观点线索";
+  if (/github/.test(lower)) return "GitHub 项目材料";
+  if (/aws|bedrock/.test(lower)) return "云平台材料";
+  return domain || "公开来源";
+}
+
+function sourceGroupName(value = "") {
+  const lower = String(value || "").toLowerCase();
+  if (/x\.com|twitter/.test(lower)) return "社媒线索组";
+  if (/youtube|podcast/.test(lower)) return "视频与播客线索组";
+  if (/prnewswire|businesswire/.test(lower)) return "发布通道线索组";
+  if (lower.includes(".")) return "公司公告线索组";
+  return cleanText(value) || "公开来源线索组";
+}
+
+function publicSourceLabel(value = "") {
+  const clean = String(value || "").replace(/^www\./, "");
+  if (!clean) return "公开观点来源";
+  if (clean.includes(".")) return `观点来源：${sourceGroupName(clean)}`;
+  return clean;
+}
+
+function sourceFactForUrl(url = "", index = 0, item = {}) {
+  const domain = signalSystemUrlDomain(url);
+  const title = cleanText(item?.title || item?.event || "");
+  const lower = `${domain} ${url} ${title}`.toLowerCase();
+  if (/techcrunch|theinformation|bloomberg|wsj|ft\.com|axios|cnbc/.test(lower)) {
+    return "补充融资规模、市场关注度和外部报道语境，适合判断这件事是否已进入商业讨论。";
+  }
+  if (/sierra\.ai\/customers|customers|case-stud/.test(lower)) {
+    return "提供客户采用和服务场景线索，可用于观察是否已经进入真实客服或运营流程。";
+  }
+  if (/sierra\.ai|anthropic\.com|microsoft\.com|collibra\.com|servicenow|soundhound|twilio|greenhouse|nvidia/.test(lower)) {
+    return "确认产品定位、发布主体和平台能力边界，是判断事件真实性的主要依据。";
+  }
+  if (/pricing|api|docs|developer|github|cloud|bedrock/.test(lower)) {
+    return "补充价格、接口或交付条件，帮助判断后续成本和接入门槛。";
+  }
+  if (/regulation|gov|security|five-eyes|csa|risk|lawsuit/.test(lower)) {
+    return "提供监管、安全或平台限制信息，用来保留反证和风险边界。";
+  }
+  if (/youtube|x\.com|twitter|reddit|news\.ycombinator/.test(lower)) {
+    return "提供一线讨论或观点变化，只作判断参照，不作为事实主证据。";
+  }
+  const fallbacks = [
+    "确认事件主体和发生时间，适合做基础事实核对。",
+    "补充客户采用、渠道合作或市场反馈中的关键变化。",
+    "提供外部反证或背景语境，帮助判断这条信号是否过热。",
+    "补充交付成本、平台限制或接下来要看的线索。",
+  ];
+  return fallbacks[index] || "补充判断所需的来源信息和观察边界。";
+}
+
+function sourceRoleForUrl(url = "", index = 0) {
+  const lower = `${signalSystemUrlDomain(url)} ${url}`.toLowerCase();
+  if (/customers|case-stud/.test(lower)) return "客户采用";
+  if (/techcrunch|theinformation|bloomberg|wsj|ft\.com|axios|cnbc/.test(lower)) return "外部报道";
+  if (/pricing|api|docs|developer|github|cloud|bedrock/.test(lower)) return "成本条件";
+  if (/regulation|gov|security|five-eyes|csa|risk|lawsuit/.test(lower)) return "风险限制";
+  if (/x\.com|twitter|youtube|reddit|news\.ycombinator/.test(lower)) return "前沿观点";
+  if (/prnewswire|businesswire/.test(lower)) return "发布通道";
+  if (/sierra\.ai|anthropic\.com|microsoft\.com|collibra\.com|servicenow|soundhound|twilio|greenhouse|nvidia|openai\.com/.test(lower)) return "产品定位";
+  return ["产品定位", "客户采用", "外部反证", "成本限制"][index] || "补充线索";
 }
 
 function signalSystemSourceFallback(signal) {
@@ -1083,16 +1511,16 @@ function signalSystemSourceFallback(signal) {
 }
 
 function signalSystemSources(item) {
-  const text = String(item?.brief || "");
+  const text = [item?.sourceUrl, item?.brief, item?.judgment, item?.event, item?.sourcePath].filter(Boolean).join(" ");
   const urls = [...text.matchAll(/https?:\/\/[^\s)]+/g)].map((match) => match[0].replace(/[，。；]+$/u, ""));
   if (!urls.length) {
     return signalSystemSourceFallback(item).map(([name, grade, url, fact]) => ({ name, grade, url, fact }));
   }
   return urls.slice(0, 5).map((url, index) => ({
-    name: signalSystemUrlDomain(url) || `来源 ${index + 1}`,
+    name: sourceDisplayName(url, `来源 ${index + 1}`),
     grade: index === 0 ? "S级" : index === 1 ? "A级" : "B级",
     url,
-    fact: "补充事件、产品、客户采用或市场反馈中的关键信息。",
+    fact: sourceFactForUrl(url, index, item),
   }));
 }
 
@@ -1105,7 +1533,7 @@ function signalSystemEvidence(item) {
     a: count("A级"),
     b: count("B级"),
     total: sources.length,
-    status: sources.some((source) => source.grade === "S级") ? "已核对来源" : "继续观察",
+    status: sources.some((source) => source.grade === "S级") ? "多源支撑" : "继续观察",
   };
 }
 
@@ -1121,6 +1549,58 @@ function signalSystemMetricCard(label, value, hint = "") {
 
 function evidenceBadge(label, tone = "") {
   return `<span class="signal-system-badge ${tone}">${label}</span>`;
+}
+
+function signalHref(signal = {}) {
+  return signal.link || (signal.slug ? `signal-detail.html?id=${encodeURIComponent(signal.slug)}` : "signals.html");
+}
+
+function signalAnalysisValue(signal = {}, labels = [], fallback = "") {
+  const matched = (signal.analysis || []).find(([label]) => labels.some((name) => String(label || "").includes(name)));
+  return cleanText(matched?.[1] || fallback || signal.businessMeaning || signal.event || signal.judgment || summaryText(signal));
+}
+
+function signalBusinessLine(signal = {}, limit = 132) {
+  const text = signalAnalysisValue(signal, ["商业含义", "为什么值得看"], signal.businessMeaning || signal.judgment);
+  return homeShort(text, limit);
+}
+
+function signalEventLine(signal = {}, limit = 132) {
+  const text = signalAnalysisValue(signal, ["事件", "发生了什么"], signal.event || signal.brief);
+  return homeShort(text, limit);
+}
+
+function signalWhyLine(signal = {}, limit = 132) {
+  const text = signalAnalysisValue(signal, ["入选理由", "为什么值得看"], signal.judgment || signal.businessMeaning);
+  return homeShort(text, limit);
+}
+
+function signalCaseNames(signal = {}, limit = 2) {
+  return relatedCaseAssets(signal, limit)
+    .map((item) => cleanText(item.title || item.id))
+    .filter(Boolean);
+}
+
+function signalSourceNames(signal = {}, limit = 2) {
+  return signalSystemSources(signal)
+    .slice(0, limit)
+    .map((item) => cleanText(item.name))
+    .filter(Boolean);
+}
+
+function signalTagNames(signal = {}, limit = 3) {
+  return [
+    ...signalSystemTags(signal, "track", 1),
+    ...signalSystemTags(signal, "scenario", 1),
+    ...signalSystemTags(signal, "customer", 1),
+    ...signalSystemTags(signal, "function", 1),
+  ].filter(Boolean).slice(0, limit);
+}
+
+function signalSupportLine(signal = {}) {
+  const cases = signalCaseNames(signal, 1);
+  const sources = signalSourceNames(signal, 1);
+  return compactJoin([cases[0], sources[0]], "来源和案例继续补证");
 }
 
 function sourceListDrawer(item, compact = false) {
@@ -1146,14 +1626,14 @@ function sourceLedgerMini(evidence) {
   return `
     <div class="source-ledger-mini" aria-label="来源账本">
       <div>
-        <span>Source Ledger</span>
+        <span>来源概况</span>
         <strong>${evidence.total} 条来源</strong>
       </div>
       <div class="source-ledger-bars">
         ${[
-          ["S", evidence.s, "一手材料"],
-          ["A", evidence.a, "可信报道"],
-          ["B", evidence.b, "背景观察"],
+          ["一手", evidence.s, "官方或原始材料"],
+          ["报道", evidence.a, "可信报道"],
+          ["背景", evidence.b, "背景观察"],
         ].map(([grade, count, label]) => `
           <span><i>${grade}</i><b style="--v:${Math.max(12, count * 28)}%"></b><em>${count} · ${label}</em></span>
         `).join("")}
@@ -1165,7 +1645,7 @@ function sourceLedgerMini(evidence) {
 function trackingFilterStrip() {
   return `
     <div class="tracking-filter-strip" aria-label="追踪筛选">
-      ${["同公司反复出现", "同趋势持续升温", "同机会开始成形", "线索正在扩散", "7D / 30D / 90D"].map((label, index) => `
+      ${["同一公司", "同一趋势", "相关趋势判断", "讨论升温", "观察窗口"].map((label, index) => `
         <button type="button"><i>${String(index + 1).padStart(2, "0")}</i>${label}</button>
       `).join("")}
     </div>
@@ -1178,26 +1658,10 @@ function signalClusterMap(item) {
     ...signalSystemTags(item, "scenario", 2),
     ...signalSystemTags(item, "function", 1),
   ].filter(Boolean).slice(0, 5);
-  const labels = tags.length ? tags : ["信号", "趋势", "机会", "一线观点", "风险"];
+  const labels = tags.length ? tags : ["信号", "趋势", "机会", "前沿观点", "风险"];
   return `
-    <div class="signal-cluster-map" aria-label="信号关系图">
-      <svg viewBox="0 0 420 260" role="img">
-        <defs>
-          <linearGradient id="signalLine" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stop-color="#c8a766" stop-opacity=".85"/>
-            <stop offset="1" stop-color="#0d355c" stop-opacity=".34"/>
-          </linearGradient>
-        </defs>
-        <path d="M56 190 C126 108 172 150 218 92 S324 72 366 132" fill="none" stroke="url(#signalLine)" stroke-width="1.5"/>
-        <path d="M58 214 C132 172 184 190 242 150 S324 138 374 82" fill="none" stroke="rgba(7,24,39,.18)" stroke-width="1.2"/>
-        ${[[56,190],[158,128],[236,92],[318,108],[366,132]].map(([cx, cy], index) => `
-          <circle cx="${cx}" cy="${cy}" r="${index === 0 ? 7 : 5}" fill="${index === 0 ? "#071827" : "#c8a766"}"/>
-        `).join("")}
-        <g opacity=".45">
-          ${[70,130,190,250,310,370].map((x) => `<line x1="${x}" y1="40" x2="${x}" y2="220" stroke="#071827" stroke-width=".5"/>`).join("")}
-          ${[64,104,144,184].map((y) => `<line x1="42" y1="${y}" x2="382" y2="${y}" stroke="#071827" stroke-width=".5"/>`).join("")}
-        </g>
-      </svg>
+    <div class="signal-cluster-map signal-image-card" aria-label="信号关系图">
+      <img src="assets/generated/key-signal-editorial-map-imagegen.png" alt="AI 商业信号从来源汇聚到判断的位图插画">
       <div class="signal-cluster-labels">
         ${labels.map((label, index) => `<span><i>${String(index + 1).padStart(2, "0")}</i>${label}</span>`).join("")}
       </div>
@@ -1209,15 +1673,8 @@ function insightChart(type = "trend") {
   const bars = [74, 46, 31];
   return `
     <div class="signal-system-chart signal-system-chart-${type}">
-      <svg viewBox="0 0 420 160" role="img">
-        <path d="M34 118 C76 90 100 96 138 68 S210 72 254 46 S324 58 382 28" fill="none" stroke="#071827" stroke-width="2"/>
-        <path d="M34 130 C92 122 130 112 180 100 S258 84 382 78" fill="none" stroke="rgba(7,24,39,.24)" stroke-width="1.4"/>
-        ${[34,138,254,382].map((x, index) => `<circle cx="${x}" cy="${[118,68,46,28][index]}" r="4.5" fill="#c8a766"/>`).join("")}
-        <line x1="34" y1="132" x2="390" y2="132" stroke="rgba(7,24,39,.16)"/>
-        <line x1="34" y1="28" x2="34" y2="132" stroke="rgba(7,24,39,.16)"/>
-      </svg>
       <div class="signal-system-stack">
-        ${["S级来源", "A级来源", "B级来源"].map((label, index) => `
+        ${["一手材料", "可信报道", "背景观察"].map((label, index) => `
           <div><span>${label}</span><i style="width:${bars[index]}%"></i></div>
         `).join("")}
       </div>
@@ -1250,6 +1707,7 @@ function commercialVariableGrid(item) {
 function signalFrontCard(signal, index) {
   const evidence = signalSystemEvidence(signal);
   const variables = signalSystemTags(signal, "function", 2).concat(signalSystemTags(signal, "scenario", 1)).slice(0, 3);
+  const supportLabel = evidence.status === "多源支撑" ? "事实来源" : evidence.status;
   return `
     <article class="front-signal-card">
       <a href="${signal.link || `signal-detail.html?id=${signal.slug}`}">
@@ -1260,8 +1718,8 @@ function signalFrontCard(signal, index) {
         <h3>${signal.title}</h3>
         <p>${summaryText(signal, signal.judgment)}</p>
         <div class="signal-system-chipline">
-          ${evidenceBadge(`${evidence.s}S / ${evidence.a}A / ${evidence.b}B`)}
-          ${evidenceBadge(evidence.status)}
+          ${evidenceBadge("多源支撑")}
+          ${evidenceBadge(supportLabel)}
           ${variables.map((tag) => evidenceBadge(tag)).join("")}
         </div>
       </a>
@@ -1282,11 +1740,12 @@ function structuredSignalAdapter(item, index) {
     event: cleanText(item.title || "结构化信号"),
     variable,
     sourceGrade: evidence.sources[0]?.grade || "B级",
+    sourceLabel: evidence.sources[0]?.grade === "S级" ? "一手材料" : evidence.sources[0]?.grade === "A级" ? "可信报道" : "背景观察",
     sourceName: evidence.sources[0]?.name || "来源整理中",
     sourceUrl: evidence.sources[0]?.url || "#",
     incrementalFact: evidence.sources[0]?.fact || summaryText(item),
     trendCandidate: track,
-    opportunityCandidate: signalSystemTags(item, "scenario", 1)[0] || "继续观察",
+    trendReportCandidate: signalSystemTags(item, "scenario", 1)[0] || "继续观察",
     depthStatus: index < 3 ? "值得细看" : index < 8 ? "继续观察" : "线索记录",
   };
 }
@@ -1294,11 +1753,11 @@ function structuredSignalAdapter(item, index) {
 function structuredSignalRow(item, index) {
   const signal = structuredSignalAdapter(item, index);
   return `
-    <a class="structured-signal-row" href="structured-signal.html?id=${signal.slug || signal.id}">
+    <a class="structured-signal-row" href="signal-detail.html?id=${signal.slug || signal.id}">
       <span>${signal.structuredId}</span>
       <strong>${signal.event}</strong>
       <p>${signal.variable}</p>
-      <em>${signal.sourceGrade} · ${signal.sourceName}</em>
+      <em>${signal.sourceLabel} · ${signal.sourceName}</em>
       <i>${signal.depthStatus}</i>
     </a>
   `;
@@ -1329,12 +1788,26 @@ function signalSystemBuilderProfiles() {
 function builderIdentityForPoint(point = {}, fallback = {}) {
   const url = String(point.sourceUrl || point.source_url || "");
   const title = String(point.title || "");
+  const domain = signalSystemUrlDomain(url) || (String(fallback.handle || fallback.name || "").includes(".") ? String(fallback.handle || fallback.name) : "");
+  const sourceLabel = sourceGroupName(domain || fallback.org || fallback.handle || fallback.name || "公开来源");
   if (/steipete/i.test(url)) return { name: "Peter Steinberger", title: "Developer Tools Founder" };
   if (/sama/i.test(url)) return { name: "Sam Altman", title: "OpenAI CEO" };
   if (/levie/i.test(url)) return { name: "Aaron Levie", title: "Box CEO" };
-  if (/karpathy|youtube/i.test(url + title)) return { name: "Andrej Karpathy", title: "AI Researcher / Builder" };
+  if (/alexalbert__/i.test(url)) return { name: "Alex Albert", title: "Anthropic Developer Relations" };
+  if (/trq212/i.test(url)) return { name: "Thariq", title: "AI Builder / Product Engineer" };
+  if (/claudeai/i.test(url)) return { name: "Claude 官方观点", title: "Anthropic Product Channel" };
+  if (/petergyang/i.test(url)) return { name: "Peter Yang", title: "Product & AI Writer" };
+  if (/zarazhangrui/i.test(url)) return { name: "Zara Zhang", title: "AI Operator / Builder" };
+  if (/claude|anthropic/i.test(title) && /youtube/i.test(url)) return { name: "Claude Platform Team", title: "Anthropic Product / Platform Team" };
+  if (/karpathy/i.test(url + title)) return { name: "Andrej Karpathy", title: "AI Researcher / Builder" };
   if (/anthropic\.com\/engineering/i.test(url)) return { name: "Anthropic Engineering", title: "Claude Code Team" };
   if (/claude\.com|anthropic/i.test(url + title)) return { name: "Anthropic", title: "Claude Product Team" };
+  if (domain || String(fallback.name || "").includes(".")) {
+    return {
+      name: `公开观点来源：${sourceLabel}`,
+      title: "身份待补，不作为个人背书",
+    };
+  }
   return {
     name: fallback.name || "一线观察者",
     title: fallback.title || fallback.org || "公开观点来源",
@@ -1362,7 +1835,7 @@ function builderOpinionCard(profile, index) {
             <strong>${identity.name}</strong>
             <span>${status}</span>
           </div>
-          <small class="builder-role">${identity.title} · ${profile.org} · ${signalSystemDate(latest.date)}</small>
+          <small class="builder-role">${identity.title} · ${publicSourceLabel(profile.org)} · ${signalSystemDate(latest.date)}</small>
           <p class="builder-original">${original}</p>
           <p>${cleanText(latest.interpretation || latest.calibrates || latest.usage || latest.title || "这条观点可作为判断参照。")}</p>
           <small>${profile.focus}</small>
@@ -1404,7 +1877,7 @@ function perspectiveCard(profile, index, mode = "regular") {
           <div class="builder-avatar">${identity.name.slice(0, 2).toUpperCase()}</div>
           <div>
             <strong>${identity.name}</strong>
-            <small>${identity.title} · ${profile.org}</small>
+            <small>${identity.title} · ${publicSourceLabel(profile.org)}</small>
           </div>
           <span>${status}</span>
         </div>
@@ -1421,20 +1894,16 @@ function perspectiveCard(profile, index, mode = "regular") {
 }
 
 function perspectiveHeader() {
+  const params = signalFilterParams();
   return `
     <section class="perspective-header">
-      <div>
-        <span class="signal-system-label">BUILDER PERSPECTIVES</span>
-        <h1>行业一线怎么看</h1>
-        <p>用一线建造者、投资人和研究者的观点，修正我们对 AI 商业变化的判断。</p>
-      </div>
       <div class="perspective-controls">
         <form class="signal-search-bar" role="search">
-          <label class="sr-only" for="builderSearch">搜索一线观点</label>
-          <input id="builderSearch" type="search" placeholder="人物、公司、关注领域、观点状态">
+          <label class="sr-only" for="builderSearch">搜索前沿观点</label>
+          <input id="builderSearch" type="search" placeholder="搜索">
         </form>
         <div class="signal-filter-bar">
-          ${["建造者", "创始人", "投资人", "研究者", "新看法", "判断修正", "转向", "冲突观点"].map((label) => `<button type="button">${label}</button>`).join("")}
+          ${signalTagFilters().map((filter) => `<a href="${builderFilterHref(params.tag === filter.id ? "" : filter.id)}" class="${params.tag === filter.id ? "active" : ""}">${filter.label}</a>`).join("")}
         </div>
       </div>
     </section>
@@ -1446,10 +1915,10 @@ function featuredPerspectives(profiles) {
     <section class="featured-perspectives">
       <div class="signal-system-section-head compact-head">
         <div>
-          <span class="signal-system-label">PERSPECTIVE INDEX</span>
-          <h2>今日最值得看的观点</h2>
+          <span class="signal-system-label">判断参照</span>
+          <h2>这组前沿观点在看什么</h2>
         </div>
-        <p>先看会改变判断权重的几条，再进入完整观点流。</p>
+        <p>先看它支持、质疑或修正哪条商业信号，再决定是否需要回到事实来源继续核对。</p>
       </div>
       <div class="featured-perspective-grid">
         ${profiles.slice(0, 4).map((profile, index) => perspectiveCard(profile, index, "featured")).join("")}
@@ -1463,12 +1932,13 @@ function perspectiveGrid(profiles) {
     <section class="perspective-grid-section">
       <div class="signal-system-section-head compact-head">
         <div>
-          <span class="signal-system-label">VIEW STREAM</span>
-          <h2>人物观点流</h2>
+          <span class="signal-system-label">后续观察</span>
+          <h2>正在改变判断权重的看法</h2>
         </div>
+        <p>只保留会影响客户、流程、预算或风险边界判断的观点。</p>
       </div>
       <div class="perspective-grid">
-        ${profiles.slice(4, 10).map((profile, index) => perspectiveCard(profile, index + 4)).join("")}
+        ${profiles.slice(4, 8).map((profile, index) => perspectiveCard(profile, index + 4)).join("")}
       </div>
     </section>
   `;
@@ -1484,9 +1954,9 @@ function calibrationSnapshot(profiles) {
   return `
     <section class="calibration-snapshot">
       <div>
-        <span class="signal-system-label">CALIBRATION</span>
+        <span class="signal-system-label">校准边界</span>
         <h2>最近怎么看</h2>
-        <p>观点是判断校准来源，不是事实主证据。</p>
+        <p>观点是判断参照，不是事实主证据。</p>
       </div>
       <div class="calibration-window-list">
         ${["7天：有没有新判断", "30天：判断是否延续或修正", "90天：变量有没有转向"].map((text, index) => `
@@ -1508,20 +1978,20 @@ function builderProfileHeader(profile, identity) {
       <div class="builder-profile-identity">
         <div class="builder-avatar large">${identity.name.slice(0, 2).toUpperCase()}</div>
         <div>
-          <span class="signal-system-label">BUILDER PROFILE</span>
-          <h1>${identity.name || "一线观点"}</h1>
-          <p>${identity.title} · ${profile.org || "公开观点来源"}</p>
+          <span class="signal-system-label">公开观点来源</span>
+          <h1>${identity.name || "前沿观点"}</h1>
+          <p>${identity.title} · ${publicSourceLabel(profile.org)}</p>
           <div class="signal-system-chipline">
-            ${["Builder", "Founder", "VC", "Research", "Operator"].slice(0, 3).map(evidenceBadge).join("")}
+            ${["前沿观点", "不作背书", "回到事实核对"].map(evidenceBadge).join("")}
           </div>
         </div>
       </div>
       <aside class="builder-profile-summary">
         ${[
-          ["近 7 天", "看是否出现新判断"],
-          ["近 30 天", "看判断是否延续或修正"],
-          ["近 90 天", "看变量是否转向"],
-          ["最近状态", "新看法 / 延续 / 修正"],
+          ["校准对象", "相关信号的客户采用、交付成本和责任边界"],
+          ["来源边界", "身份待补时不作为个人背书"],
+          ["判断权重", "只作判断参照，不替代一手事实"],
+          ["继续观察", "是否出现公司公告、客户采用或监管材料"],
         ].map(([label, value]) => `<p><span>${label}</span><strong>${value}</strong></p>`).join("")}
         <div class="perspective-tags">
           ${topics.map((tag) => `<em>${tag}</em>`).join("") || `<em>AI 商业变化</em>`}
@@ -1535,11 +2005,12 @@ function currentViewPanel(rows) {
   return `
     <section class="current-view-panel">
       <div class="report-section-head">
-        <span>CURRENT VIEW</span>
+        <span>当前判断</span>
         <h2>当前观点摘要</h2>
+        <p>这些内容只说明观点如何变化。是否提高判断权重，还要看公司公告、客户采用、财务数据和监管材料。</p>
       </div>
       <div class="current-view-list">
-        ${rows.slice(0, 4).map((row, index) => `
+        ${rows.slice(0, 3).map((row, index) => `
           <article>
             <span>${String(index + 1).padStart(2, "0")}</span>
             <p>${homeShort(cleanText(row.interpretation || row.calibrates || row.title), 118)}</p>
@@ -1558,11 +2029,12 @@ function viewTimelinePanel(rows) {
   return `
     <section class="view-timeline-section">
       <div class="report-section-head">
-        <span>VIEW TIMELINE</span>
-        <h2>观点时间线</h2>
+        <span>重点记录</span>
+        <h2>最近三条观点变化</h2>
+        <p>时间线默认只展示重点变化，避免把来源整理误读成人物背书。</p>
       </div>
       <div class="view-timeline">
-        ${rows.slice(0, 6).map((row, index) => `
+        ${rows.slice(0, 3).map((row, index) => `
           <article class="view-timeline-item">
             <time>${signalSystemDate(row.date)}</time>
             <div>
@@ -1587,14 +2059,14 @@ function shiftAnalysisPanel(rows) {
   return `
     <section class="shift-analysis-panel">
       <div class="report-section-head">
-        <span>SHIFT ANALYSIS</span>
+        <span>判断影响</span>
         <h2>观点变化</h2>
       </div>
       <div class="shift-analysis-grid">
         ${[
           ["最近变化类型", "新判断正在出现，但仍需要和事实来源分开看。"],
           ["变化发生在哪个变量", perspectiveTopics({}, first).join(" / ") || "客户采用 / 商业化 / 组织采用"],
-          ["变化的意义", "它帮助校准主判断的边界，而不是替代公司公告或客户证据。"],
+          ["变化的意义", "它帮助校准本期判断，而不是替代公司公告或客户证据。"],
           ["是否影响今日判断", "作为补充视角保留，若后续出现一手材料再提高权重。"],
         ].map(([title, text], index) => `
           <article>
@@ -1612,16 +2084,16 @@ function builderRelatedLinks() {
   return `
     <section class="builder-related-links">
       <div class="report-section-head">
-        <span>RELATED LINKS</span>
+        <span>回到信号</span>
         <h2>关联主题与内容</h2>
-        <p>X / Podcast / YouTube / Blog 只作为观点来源，不能替代公司公告、客户证据、财报、监管文件或一手材料。</p>
+        <p>这些内容只说明观点如何变化。是否提高判断权重，还要看公司公告、客户采用、财务数据和监管材料。</p>
       </div>
       <div class="structured-related-list">
         ${trackingIndexItems().slice(0, 6).map((item, index) => `
           <a href="${item.href || item.link || "#"}">
             <span>${item.type || "相关"} · ${String(index + 1).padStart(2, "0")}</span>
             <strong>${item.title || item.id}</strong>
-            <p>${summaryText(item)}</p>
+            <p>${publicSummaryText(item)}</p>
           </a>
         `).join("")}
       </div>
@@ -1636,9 +2108,32 @@ function relatedContentBlock(items = []) {
         <a href="${item.href || item.link || "#"}">
           <span>${item.type || "INDEX"} ${String(index + 1).padStart(2, "0")}</span>
           <strong>${item.title || item.id}</strong>
-          <p>${summaryText(item)}</p>
+          <p>${publicSummaryText(item)}</p>
         </a>
       `).join("")}
+    </div>
+  `;
+}
+
+function signalRelationshipBar() {
+  const steps = [
+    ["变化卡", "观察线索", "单条变化进入观察，先看来源差异、客户采用和反证缺口。"],
+    ["精选信号", "商业信号", "多源事实指向同一客户、流程、预算或风险边界时，进入深读判断。"],
+    ["Trend Report", "趋势追踪", "多条信号持续指向同一变化，才写成趋势报告；趋势判断只作为报告中的一部分。"],
+    ["Business Brief", "商业内参", "当一组信号形成周期性组合判断，进入内参，讨论本周或本月的主线。"],
+  ];
+  return `
+    <div class="signal-relationship-bar" aria-label="信号到趋势和内参的关系">
+      <p>商业信号不是结论。多条信号持续指向同一客户、流程或预算变化时，才会进入趋势追踪；当这些变化形成周期性组合判断，才会进入商业内参。</p>
+      <div>
+        ${steps.map(([label, title, text], index) => `
+          <article>
+            <span>${String(index + 1).padStart(2, "0")} · ${label}</span>
+            <strong>${title}</strong>
+            <em>${text}</em>
+          </article>
+        `).join("")}
+      </div>
     </div>
   `;
 }
@@ -1646,20 +2141,20 @@ function relatedContentBlock(items = []) {
 function trackingIndexItems() {
   const signals = (data.contentIndex?.signals || data.signals || []).slice(0, 4).map((item) => ({ ...item, type: "信号", href: item.link || `signal-detail.html?id=${item.slug}` }));
   const trends = (data.contentIndex?.trends || []).slice(0, 3).map((item) => ({ ...item, type: "趋势", href: "signals.html#calibration" }));
-  const opportunities = (data.contentIndex?.opportunities || []).slice(0, 3).map((item) => ({ ...item, type: "机会", href: `opportunity-detail.html?id=${item.slug}` }));
+  const trendReports = (data.contentIndex?.trendReports || []).slice(0, 3).map((item) => ({ ...item, type: "趋势", href: `trend-detail.html?id=${item.slug}` }));
   const builders = signalSystemBuilderProfiles().slice(0, 3).map((profile) => ({
-    type: "一线观点",
+    type: "前沿观点",
     title: builderIdentityForPoint(profile.latest, profile).name,
     brief: profile.latest?.interpretation || profile.latest?.title,
     href: `builder-detail.html?id=${encodeURIComponent(profile.handle)}`,
   }));
-  return [...signals, ...trends, ...opportunities, ...builders];
+  return [...signals, ...trends, ...trendReports, ...builders];
 }
 
 function trackingIndexCompact() {
   const signals = data.contentIndex?.signals || data.signals || [];
   const trends = data.contentIndex?.trends || [];
-  const opportunities = data.contentIndex?.opportunities || [];
+  const trendReports = data.contentIndex?.trendReports || [];
   const builders = signalSystemBuilderProfiles();
   const groups = [
     {
@@ -1681,16 +2176,16 @@ function trackingIndexCompact() {
       })),
     },
     {
-      title: "机会方向成形",
-      items: opportunities.slice(0, 3).map((item, index) => ({
+      title: "趋势方向成形",
+      items: trendReports.slice(0, 3).map((item, index) => ({
         name: item.title,
         date: signalSystemDate(item.date),
         count: `${index + 1} 条信号`,
-        href: `opportunity-detail.html?id=${item.slug || item.id}`,
+        href: `trend-detail.html?id=${item.slug || item.id}`,
       })),
     },
     {
-      title: "一线观点变化",
+      title: "前沿观点变化",
       items: builders.slice(0, 3).map((profile, index) => ({
         name: builderIdentityForPoint(profile.latest, profile).name,
         date: signalSystemDate(profile.latest?.date),
@@ -1718,10 +2213,7 @@ function trackingIndexCompact() {
 }
 
 function reportTitleHtml(title = "") {
-  const clean = cleanText(title);
-  if (!clean.includes("：")) return clean;
-  const [lead, rest] = clean.split(/：(.+)/);
-  return `${lead}：<br><span>${rest}</span>`;
+  return cleanText(title);
 }
 
 function reportMetaBar(signal, evidence) {
@@ -1734,9 +2226,7 @@ function reportMetaBar(signal, evidence) {
     <div class="report-meta-bar" aria-label="报告信息">
       ${[
         ["日期", signalSystemDate(signal.date)],
-        ["阅读时间", "12 分钟"],
         ["来源结构", `${evidence.s}S / ${evidence.a}A / ${evidence.b}B`],
-        ["观察窗口", "7D / 30D / 90D"],
         ["事件类型", eventTags],
         ["证据状态", evidence.status],
       ].map(([label, value]) => `
@@ -1754,7 +2244,7 @@ function editorialJudgmentCard(signal, evidence) {
   return `
     <section class="editorial-judgment-card">
       <div>
-        <span class="signal-system-label">EDITORIAL JUDGMENT</span>
+        <span class="signal-system-label">编辑判断</span>
         <p>${signal.judgment || summaryText(signal)}</p>
       </div>
       <aside>
@@ -1770,7 +2260,7 @@ function editorialJudgmentCard(signal, evidence) {
 }
 
 function factLedger(signal) {
-  const roles = ["确认事件主体与官方表述", "补充客户采用线索", "提供第三方报道与传播热度", "补充市场语境"];
+  const roles = ["事件主体", "客户采用", "外部语境", "成本或限制"];
   return `
     <div class="fact-ledger">
       ${signalSystemSources(signal).slice(0, 5).map((source, index) => `
@@ -1788,6 +2278,108 @@ function factLedger(signal) {
   `;
 }
 
+function relationTextTokens(item = {}) {
+  return [
+    item.title,
+    item.brief,
+    item.judgment,
+    item.event,
+    item.sourceUrl,
+    item.sourcePath,
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+
+function caseRelationScore(signal, caseItem) {
+  const signalText = relationTextTokens(signal);
+  const caseText = relationTextTokens(caseItem);
+  const keywordGroups = [
+    ["codex", "sandbox", "围栏", "权限", "隔离"],
+    ["genkit", "middleware", "门禁", "拦截"],
+    ["copilot", "billing", "github", "账单", "用量"],
+    ["claude", "legal", "法律", "法务"],
+    ["pwc", "anthropic", "普华永道", "合作"],
+    ["tanstack", "npm", "供应链"],
+    ["cursor", "cloud agents"],
+  ];
+  let score = 0;
+  keywordGroups.forEach((group) => {
+    const signalHit = group.some((keyword) => signalText.includes(keyword));
+    const caseHit = group.some((keyword) => caseText.includes(keyword));
+    if (signalHit && caseHit) score += 3;
+  });
+  return score;
+}
+
+function relatedCaseAssets(signal, limit = 4) {
+  const exact = relatedAssets(signal, "signal").case || [];
+  const allCases = data.contentIndex?.cases || [];
+  const ranked = allCases
+    .filter((item) => !exact.some((exactItem) => exactItem.id === item.id))
+    .map((item) => ({ item, score: caseRelationScore(signal, item) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(({ item }) => item);
+  const seen = new Set();
+  return [...exact, ...ranked].filter((item) => {
+    const key = item.id || item.slug || item.title;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, limit);
+}
+
+function signalSourceBasisCards(signal) {
+  return signalSystemSources(signal).slice(0, 3).map((source, index) => ({
+    id: `SRC-${String(index + 1).padStart(2, "0")}`,
+    title: source.name,
+    brief: source.fact,
+    sourceUrl: source.url,
+    grade: source.grade,
+  }));
+}
+
+function signalCaseEvidenceSection(signal) {
+  const cases = relatedCaseAssets(signal, 4);
+  const sourceCards = signalSourceBasisCards(signal);
+  if (!cases.length && !sourceCards.length) return "";
+  return `
+    <section class="report-section signal-case-evidence-section">
+      <div class="report-section-head">
+        <span>相关案例</span>
+        <h2>这条变化依据什么案例</h2>
+        <p>先看能核对的事件和相邻案例，再判断它是不是孤立新闻。</p>
+      </div>
+      <div class="signal-case-evidence-grid">
+        ${sourceCards.length ? `
+          <div class="signal-case-evidence-column">
+            <span class="signal-case-eyebrow">来源依据</span>
+            ${sourceCards.map((source) => `
+              <a class="signal-case-source-card" href="${safeAttribute(source.sourceUrl)}" ${source.sourceUrl === "#" ? "" : 'target="_blank" rel="noreferrer"'}>
+                <strong>${source.title}</strong>
+                <p>${source.brief}</p>
+                <em>${source.grade}</em>
+              </a>
+            `).join("")}
+          </div>
+        ` : ""}
+        ${cases.length ? `
+          <div class="signal-case-evidence-column">
+            <span class="signal-case-eyebrow">相关案例卡</span>
+            ${cases.map((item, index) => `
+              <article class="signal-case-card">
+                <span>${item.id || `CASE-${String(index + 1).padStart(2, "0")}`}</span>
+                <h3>${item.title}</h3>
+                <p>${summaryText(item, item.brief)}</p>
+                ${tagRow(item, 3)}
+              </article>
+            `).join("")}
+          </div>
+        ` : ""}
+      </div>
+    </section>
+  `;
+}
+
 function businessVariableMap(signal) {
   const nodes = [
     "客户采用",
@@ -1798,20 +2390,8 @@ function businessVariableMap(signal) {
     "企业预算",
   ];
   return `
-    <div class="business-variable-map" aria-label="商业变量关系图">
-      <svg viewBox="0 0 520 300" role="img">
-        <g opacity=".36">
-          ${[80,160,240,320,400,480].map((x) => `<line x1="${x}" y1="42" x2="${x}" y2="258" stroke="#071827" stroke-width=".5"/>`).join("")}
-          ${[76,126,176,226].map((y) => `<line x1="42" y1="${y}" x2="478" y2="${y}" stroke="#071827" stroke-width=".5"/>`).join("")}
-        </g>
-        <circle cx="260" cy="150" r="42" fill="rgba(255,253,248,.9)" stroke="#071827" stroke-width="1.2"/>
-        <text x="260" y="145" text-anchor="middle" fill="#071827" font-size="13" font-weight="700">CX Agent</text>
-        <text x="260" y="164" text-anchor="middle" fill="rgba(7,24,39,.58)" font-size="11">平台变量</text>
-        ${[[112,88],[408,78],[432,208],[96,214],[260,48],[260,254]].map(([x,y], index) => `
-          <line x1="260" y1="150" x2="${x}" y2="${y}" stroke="${index < 2 ? "#c8a766" : "rgba(7,24,39,.34)"}" stroke-width="1"/>
-          <circle cx="${x}" cy="${y}" r="7" fill="${index < 2 ? "#c8a766" : "#071827"}"/>
-        `).join("")}
-      </svg>
+    <div class="business-variable-map signal-image-card" aria-label="商业变量关系图">
+      <img src="assets/generated/key-signal-editorial-map-imagegen.png" alt="客户、流程、预算和风险边界汇聚成商业判断的位图插画">
       <div>
         ${nodes.map((label, index) => `<span><i>${String(index + 1).padStart(2, "0")}</i>${label}</span>`).join("")}
       </div>
@@ -1821,9 +2401,9 @@ function businessVariableMap(signal) {
 
 function evidenceBoundaryList(signal) {
   const items = [
-    ["Evidence Gap", "缺少可公开核对的客户采用规模和持续付费数据。"],
-    ["Risk Boundary", signal.counter || "仍需观察真实采用规模、付费意愿和责任边界。"],
-    ["Watch Variable", "上线周期、事故成本和人工接管机制仍会影响商业化速度。"],
+    ["证据缺口", "缺少可公开核对的客户采用规模和持续付费数据。"],
+    ["风险边界", signal.counter || "仍需观察真实采用规模、付费意愿和责任边界。"],
+    ["观察变量", "上线周期、事故成本和人工接管机制仍会影响商业化速度。"],
   ];
   return `
     <div class="evidence-boundary-list">
@@ -1842,14 +2422,14 @@ function watchNextPanel(signal) {
   return `
     <section class="watch-next-panel">
       <div>
-        <span class="signal-system-label">WATCH NEXT</span>
+        <span class="signal-system-label">后续观察</span>
         <h2>接下来怎么看</h2>
         <div class="tracking-tags">
           ${tags.map((tag, index) => `<span><i>${String(index + 1).padStart(2, "0")}</i>${tag}</span>`).join("")}
         </div>
       </div>
       <div class="watch-next-timeline">
-        ${["7天：看是否有更多一手材料", "30天：看客户采用和付费迹象", "90天：看能否沉淀为趋势或机会"].map((text, index) => `
+        ${["7天：看官方是否补充客户、权限和动作边界。", "30天：看是否出现采购、试点或渠道合作信号。", "90天：如果多条信号继续指向同一流程，再考虑进入趋势追踪或商业内参。"].map((text, index) => `
           <div><span>${index === 0 ? "7D" : index === 1 ? "30D" : "90D"}</span><p>${text}</p></div>
         `).join("")}
       </div>
@@ -1872,15 +2452,15 @@ function structuredDossier(signal) {
         </div>
       </div>
       <aside class="structured-status-card">
-        <span class="signal-system-label">Signal Status</span>
+        <span class="signal-system-label">当前判断</span>
         <h2>${signal.depthStatus === "值得细看" ? "继续观察，接近升级线" : signal.depthStatus}</h2>
         <div>
           ${[
             ["当前判断", signal.depthStatus === "值得细看" ? "继续观察，接近升级线" : signal.depthStatus],
-            ["信号状态", signal.sourceGrade === "S级" ? "已核对来源" : "继续观察"],
-            ["来源结构", signal.sourceGrade],
+            ["来源状态", signal.sourceGrade === "S级" ? "一手来源已出现" : "继续观察"],
+            ["主要来源", signal.sourceGrade],
             ["关联趋势", signal.trendCandidate],
-            ["可能机会", signal.opportunityCandidate],
+            ["趋势判断", signal.trendReportCandidate],
             ["观察窗口", "7D / 30D / 90D"],
           ].map(([label, value]) => `<p><span>${label}</span><strong>${value}</strong></p>`).join("")}
         </div>
@@ -1890,13 +2470,12 @@ function structuredDossier(signal) {
 }
 
 function structuredSourceLedger(signal) {
-  const roles = ["确认事件主体", "补充外部关注", "提供背景线索"];
   return `
     <section class="structured-source-ledger">
       <div class="report-section-head">
-        <span>Source Ledger</span>
+        <span>来源与事实</span>
         <h2>来源与关键事实</h2>
-        <p>只展示对本信号判断有帮助的信息。</p>
+        <p>同一条信号需要拆开看：谁确认了事件，谁提供客户采用，谁补充反证或成本边界。</p>
       </div>
       <div class="structured-ledger-list">
         ${signalSystemSources(signal).slice(0, 4).map((source, index) => `
@@ -1907,7 +2486,7 @@ function structuredSourceLedger(signal) {
               <p>${source.fact}</p>
             </div>
             <em>${source.grade}</em>
-            <i>${roles[index] || "补充判断线索"}</i>
+            <i>${sourceRoleForUrl(source.url, index)}</i>
           </a>
         `).join("")}
       </div>
@@ -1916,22 +2495,10 @@ function structuredSourceLedger(signal) {
 }
 
 function structuredMiniMap(signal) {
-  const nodes = [signal.variable, signal.trendCandidate, signal.opportunityCandidate, "证据边界"].filter(Boolean);
+  const nodes = [signal.variable, signal.trendCandidate, signal.trendReportCandidate, "还缺什么"].filter(Boolean);
   return `
-    <div class="structured-mini-map" aria-label="信号关系图">
-      <svg viewBox="0 0 380 220" role="img">
-        <g opacity=".34">
-          ${[72,144,216,288].map((x) => `<line x1="${x}" y1="32" x2="${x}" y2="188" stroke="#071827" stroke-width=".5"/>`).join("")}
-          ${[64,110,156].map((y) => `<line x1="42" y1="${y}" x2="338" y2="${y}" stroke="#071827" stroke-width=".5"/>`).join("")}
-        </g>
-        <circle cx="190" cy="110" r="34" fill="rgba(255,253,248,.92)" stroke="#071827" stroke-width="1.1"/>
-        <text x="190" y="106" text-anchor="middle" fill="#071827" font-size="12" font-weight="700">Signal</text>
-        <text x="190" y="123" text-anchor="middle" fill="rgba(7,24,39,.58)" font-size="10">${signal.structuredId}</text>
-        ${[[72,64],[308,72],[304,164],[82,160]].map(([x,y], index) => `
-          <line x1="190" y1="110" x2="${x}" y2="${y}" stroke="${index < 2 ? "#c8a766" : "rgba(7,24,39,.34)"}" stroke-width="1"/>
-          <circle cx="${x}" cy="${y}" r="6" fill="${index < 2 ? "#c8a766" : "#071827"}"/>
-        `).join("")}
-      </svg>
+    <div class="structured-mini-map signal-image-card" aria-label="信号关系图">
+      <img src="assets/generated/key-signal-editorial-map-imagegen.png" alt="结构化信号进入后续观察的位图插画">
       <div>
         ${nodes.slice(0, 4).map((label, index) => `<span><i>${String(index + 1).padStart(2, "0")}</i>${label}</span>`).join("")}
       </div>
@@ -1943,14 +2510,14 @@ function structuredCommercialRead(signal) {
   const cards = [
     ["影响变量", `${signal.variable}。这条信号主要影响客户采用、流程承接和责任边界。`],
     ["为什么入池", "它不是单条新闻，而是企业开始把 Agent 放进真实服务场景的迹象。"],
-    ["证据边界", signal.counter || "仍需补充更多客户采用、付费意愿和长期效果数据。"],
-    ["趋势候选", `${signal.trendCandidate}，但目前仍按继续观察处理。`],
+    ["还缺什么", signal.counter || "仍需补充更多客户采用、付费意愿和长期效果数据。"],
+    ["趋势判断", `${signal.trendReportCandidate || "客户体验 Agent 平台"}。目前更接近客服前台运营层的早期变化，仍按继续观察处理。`],
   ];
   return `
     <section class="structured-commercial-read">
       <div>
         <div class="report-section-head">
-          <span>Commercial Read</span>
+          <span>商业解读</span>
           <h2>商业解读</h2>
         </div>
         <div class="structured-read-grid">
@@ -1972,15 +2539,15 @@ function structuredUpgradeWatch(signal) {
   return `
     <section class="structured-upgrade-watch">
       <div class="report-section-head">
-        <span>Upgrade Watch</span>
-        <h2>是否升级为深度信号？</h2>
+        <span>证据缺口</span>
+        <h2>还差哪些证据</h2>
       </div>
       <div class="upgrade-watch-grid">
         ${[
           ["当前建议", signal.depthStatus === "值得细看" ? "继续观察，接近升级线" : "继续观察，暂不升级"],
-          ["升级理由", "已出现商业变量，但公开证据还不足以支撑深度报告。"],
+          ["为什么还不够", "它已经指向真实流程变化，但客户续约、交付成本和平台挤压还没有被充分验证。"],
           ["缺口证据", "需要更多客户采用、产品数据、企业采购或监管材料。"],
-          ["触发条件", "后续出现一手材料，或多来源互相印证时，可进入深度分析。"],
+          ["触发条件", "后续出现一手材料，或多来源互相印证时，可进入商业信号深读。"],
         ].map(([label, text], index) => `
           <div>
             <span>${String(index + 1).padStart(2, "0")} · ${label}</span>
@@ -2000,15 +2567,16 @@ function structuredRelatedPath() {
   return `
     <section class="structured-related-path">
       <div class="report-section-head">
-        <span>Related Path</span>
+        <span>判断路径</span>
         <h2>相关追踪</h2>
+        <p>结构化信号先进入观察；证据持续增强后，才会进入商业信号、趋势追踪或商业内参。</p>
       </div>
       <div class="structured-related-list">
         ${items.map((item, index) => `
           <a href="${item.href || item.link || "#"}">
             <span>${item.type || "相关"} · ${String(index + 1).padStart(2, "0")}</span>
             <strong>${item.title || item.id}</strong>
-            <p>${summaryText(item)}</p>
+            <p>${publicSummaryText(item)}</p>
           </a>
         `).join("")}
       </div>
@@ -2019,116 +2587,136 @@ function structuredRelatedPath() {
 function mountSignalSystemPage() {
   const root = document.querySelector("[data-signal-system]");
   if (!root) return;
-  const frontSignals = (data.signals || []).slice(0, 5);
+  const params = signalFilterParams();
+  const allSignals = data.contentIndex?.signals || data.signals || [];
+  const baseSignals = allSignals.filter((item) => {
+    if (params.date) return signalMatchesDate(item, params.date);
+    if (params.tag) return true;
+    return signalMatchesDate(item, activeSignalDate());
+  });
+  const scopedSignals = baseSignals.filter((item) => signalMatchesTag(item, params.tag));
+  const displaySignals = scopedSignals.length ? scopedSignals : baseSignals.length ? baseSignals : allSignals;
+  const frontSignals = displaySignals.slice(0, 5);
   const lead = frontSignals[0] || data.contentIndex?.signals?.[0] || {};
+  const activeFilter = params.tag ? signalTagFilters().find((entry) => entry.id === params.tag) : null;
+  const pageTitle = activeFilter ? `${activeFilter.label}相关信号` : "商业信号";
+  const leadTitle = lead?.title || signalLeadTitle(lead, params.date, params.tag);
   const leadEvidence = signalSystemEvidence(lead);
-  const structured = (data.contentIndex?.signals || []).slice(0, 8);
+  const structured = displaySignals.slice(0, 8);
   const builders = signalSystemBuilderProfiles().slice(0, 2);
+  const leadCases = relatedCaseAssets(lead, 3);
+  const leadSources = signalSystemSources(lead).slice(0, 3);
   root.innerHTML = `
-    <section class="signal-page-header signal-filter-header">
-      <div class="signal-header-title">
-        <strong>关键信号</strong>
-        <span>从 AI 热点中筛出值得继续跟踪的商业变化</span>
+    <section class="signal-workbench-hero">
+      <div>
+        <span class="signal-system-label">商业信号 · ${signalRangeLabel(params.date)}</span>
+        <h1>${pageTitle}</h1>
+        <p>${signalRangeLabel(params.date)}先看事实和事件，再看判断、案例和前沿观点。这里不堆新闻，只保留已经碰到客户、流程、预算或责任边界的变化。</p>
       </div>
-      <div class="signal-header-controls signal-header-controls-wide">
-        <div class="date-range-switcher" aria-label="日期范围">
-          ${["今日", "昨日", "近7天", "近30天"].map((label, index) => `<button type="button" class="${index === 0 ? "active" : ""}">${label}</button>`).join("")}
-        </div>
-        <form class="signal-search-bar" role="search">
-          <label class="sr-only" for="signalSearch">搜索关键信号</label>
-          <input id="signalSearch" type="search" placeholder="公司、产品、人物、关键词、商业变量">
-        </form>
-        <div class="signal-filter-bar">
-          ${["AI Agent", "企业工作流", "客户采用", "来源等级", "风险", "观点人物"].map((label) => `<button type="button">${label}</button>`).join("")}
-        </div>
+      <div class="signal-header-controls signal-workbench-controls">
+        ${signalDatePicker(params.date)}
+        ${signalTagPicker(params.tag)}
       </div>
     </section>
 
-    <section class="lead-signal-panel">
-      <div class="lead-signal-copy">
-        <span class="signal-system-label">今日最值得看的信号 · ${lead.id || "FS.001"}</span>
-        <h2>${lead.title}</h2>
-        <p class="lead-signal-judgment">${lead.judgment || summaryText(lead)}</p>
-        <p>${summaryText(lead, lead.counter)}</p>
-        <div class="signal-system-chipline">
-          ${evidenceBadge(`${leadEvidence.total} 条来源`)}
-          ${evidenceBadge(`${leadEvidence.s}S / ${leadEvidence.a}A / ${leadEvidence.b}B`)}
-          ${evidenceBadge("已核对来源")}
-          ${evidenceBadge("观察窗口 7D / 30D / 90D")}
+    <section class="signal-ledger">
+      <article class="signal-ledger-lead">
+        <div class="signal-ledger-kicker">
+          <span>今日精选</span>
+          <em>${lead.id || "CHG"}</em>
         </div>
-        <div class="lead-signal-actions">
-          <a class="signal-primary-action" href="${lead.link || `signal-detail.html?id=${lead.slug}`}">阅读完整判断</a>
-          <button type="button" class="signal-secondary-action" data-open-sources>查看来源</button>
+        <h2>${dailySignalShortTitle(lead)}</h2>
+        <p class="signal-ledger-event">${signalEventLine(lead, 260)}</p>
+        <div class="signal-ledger-brief">
+          <section>
+            <span>影响</span>
+            <strong>${signalBusinessLine(lead, 150)}</strong>
+          </section>
+          <section>
+            <span>为什么收进来</span>
+            <strong>${signalWhyLine(lead, 140)}</strong>
+          </section>
         </div>
-      </div>
-      <div class="lead-signal-visual">
-        ${signalClusterMap(lead)}
-        ${sourceLedgerMini(leadEvidence)}
-        <p class="lead-boundary-note"><strong>Risk Boundary</strong>${lead.counter || "仍需观察真实采用规模、付费意愿和责任边界。"}</p>
-      </div>
-    </section>
-
-    <section class="signal-library" id="library">
-      <div class="signal-system-section-head">
-        <div>
-          <span class="signal-system-label">信号台账</span>
-          <h2>精选深读与结构化扫描</h2>
-        </div>
-      </div>
-      <div class="front-signal-grid">
-        ${frontSignals.slice(0, 3).map(signalFrontCard).join("")}
-      </div>
-      <div class="structured-signal-panel">
-        ${trackingFilterStrip()}
-        <div class="structured-signal-head">
-          <span>结构化扫描</span>
-          <strong>${structured.length} 条值得继续看的变化</strong>
-        </div>
-        <div class="structured-signal-list">
-          ${structured.map(structuredSignalRow).join("")}
-        </div>
-      </div>
-    </section>
-
-    <section class="calibration-panel" id="calibration">
-      <div class="calibration-panel-head">
-        <span class="signal-system-label">Evidence & Calibration</span>
-        <h2>证据和一线看法</h2>
-      </div>
-      <div class="calibration-left">
-        <span class="signal-system-label">Source Ledger</span>
-        <h3>这件事有多实</h3>
-        <p>热度上升不等于结论成立。先看来源，再看还缺什么。</p>
-        ${insightChart("trend")}
-        <div class="evidence-summary-strip">
-          ${signalSystemMetricCard("S级来源", leadEvidence.s, "一手材料")}
-          ${signalSystemMetricCard("A级来源", leadEvidence.a, "可信报道")}
-          ${signalSystemMetricCard("证据状态", leadEvidence.status, "仍保留边界")}
-        </div>
-      </div>
-      <div class="calibration-right">
-        <div class="signal-system-section-head compact-head">
+        <div class="signal-ledger-foot">
           <div>
-            <span class="signal-system-label">Builder Calibration</span>
-            <h3>行业一线怎么看</h3>
+            <span>案例</span>
+            <strong>${leadCases.map((item) => item.title).join(" / ") || "暂未监测到同类案例"}</strong>
           </div>
-          <a href="builders.html">查看全部</a>
+          <div>
+            <span>来源</span>
+            <strong>${leadSources[0]?.name || "来源待复核"}</strong>
+          </div>
+          <a class="signal-primary-action" href="${safeAttribute(signalHref(lead))}">查看信号</a>
         </div>
-        <div class="builder-opinion-list">
+      </article>
+      <div class="signal-ledger-list">
+        ${frontSignals.slice(1, 6).map((signal, index) => `
+          <a class="signal-ledger-row" href="${safeAttribute(signalHref(signal))}">
+            <span>${String(index + 2).padStart(2, "0")}</span>
+            <div>
+              <strong>${dailySignalShortTitle(signal)}</strong>
+              <p>${signalEventLine(signal, 118)}</p>
+            </div>
+            <em>${signalBusinessLine(signal, 76)}</em>
+          </a>
+        `).join("")}
+      </div>
+    </section>
+
+    <section class="signal-evidence-board" id="library">
+      <div class="signal-evidence-column">
+        <span class="signal-system-label">来源依据</span>
+        <h2>先看材料从哪来</h2>
+        <div class="signal-source-stack">
+          ${leadSources.map((source, index) => `
+            <a href="${safeAttribute(source.url)}" ${source.url === "#" ? "" : 'target="_blank" rel="noreferrer"'}>
+              <span>${String(index + 1).padStart(2, "0")} · ${source.grade}</span>
+              <strong>${source.name}</strong>
+              <p>${source.fact}</p>
+            </a>
+          `).join("")}
+        </div>
+      </div>
+      <div class="signal-evidence-column">
+        <span class="signal-system-label">案例卡</span>
+        <h2>有没有真实对象支撑</h2>
+        <div class="signal-case-mini-stack">
+          ${leadCases.map((item) => `
+            <article>
+              <strong>${item.title}</strong>
+              <p>${summaryText(item, item.brief)}</p>
+              ${tagRow(item, 2)}
+            </article>
+          `).join("") || "<p>暂未监测到同类案例。</p>"}
+        </div>
+      </div>
+      <div class="signal-evidence-column">
+        <span class="signal-system-label">前沿观点</span>
+        <h2>一线人在讨论什么</h2>
+        <div class="builder-opinion-list compact">
           ${builders.map(builderOpinionCard).join("")}
         </div>
-        <p class="source-boundary-note">${signalSystemCopy.sourceBoundary}</p>
       </div>
     </section>
 
-    <section class="tracking-index" id="tracking">
+    <section class="signal-library signal-library-redesigned">
       <div class="signal-system-section-head">
         <div>
-          <span class="signal-system-label">Tracking Index</span>
-          <h2>追踪索引</h2>
+          <span class="signal-system-label">继续看</span>
+          <h2>更多信号</h2>
         </div>
+        ${trackingFilterStrip()}
       </div>
-      ${trackingIndexCompact()}
+      <div class="signal-table-list">
+        ${structured.map((signal, index) => `
+          <a class="signal-table-row" href="${safeAttribute(signalHref(signal))}">
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <strong>${dailySignalShortTitle(signal)}</strong>
+            <p>${signalEventLine(signal, 96)}</p>
+            <em>${signalBusinessLine(signal, 58)}</em>
+          </a>
+        `).join("")}
+      </div>
     </section>
     <div class="signal-system-drawer" hidden>
       ${sourceListDrawer(lead)}
@@ -2138,6 +2726,33 @@ function mountSignalSystemPage() {
   root.querySelector("[data-open-sources]")?.addEventListener("click", () => {
     drawer.hidden = !drawer.hidden;
     if (!drawer.hidden) drawer.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+  root.querySelectorAll("[data-signal-dropdown-search]").forEach((input) => {
+    input.addEventListener("input", () => {
+      const value = input.value.trim().toLowerCase();
+      input.closest(".signal-dropdown-menu")?.querySelectorAll(".signal-dropdown-list a").forEach((link) => {
+        const text = `${link.textContent} ${link.dataset.searchText || ""}`.toLowerCase();
+        link.hidden = value ? !text.includes(value) : false;
+      });
+    });
+  });
+  root.querySelector("[data-signal-date-picker]")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const date = `${form.elements.year.value}-${form.elements.month.value}-${form.elements.day.value}`;
+    window.location.href = signalFilterHref({ date });
+  });
+  root.querySelector("[data-signal-tag-picker]")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const group = form.querySelector('[name="group"]')?.value || "";
+    const keyword = cleanText(form.querySelector('[name="keyword"]')?.value || "").toLowerCase();
+    const tags = signalTagFilters().filter((tag) => !group || tag.group === group);
+    const matched = tags.find((tag) => {
+      const values = [tag.id, tag.label, tagGroupLabel(tag.group), ...tag.terms].map((value) => String(value || "").toLowerCase());
+      return keyword && (values.includes(keyword) || values.some((value) => value.includes(keyword) || keyword.includes(value)));
+    }) || (group ? tags[0] : null);
+    window.location.href = signalFilterHref({ tag: matched?.id || "" });
   });
 }
 
@@ -2149,56 +2764,111 @@ function mountFrontSignalDetail() {
   const all = [...(data.signals || []), ...(data.contentIndex?.signals || [])];
   const signal = all.find((item) => item.slug === slug || item.id === slug) || data.signals?.[0] || {};
   const evidence = signalSystemEvidence(signal);
+  const related = relatedAssets(signal, "signal");
+  const relatedPoints = (related.point || []).slice(0, 4);
   const builders = signalSystemBuilderProfiles().slice(0, 2);
+  const pointBlocks = relatedPoints.length
+    ? relatedPoints.map((item) => `
+      <article class="signal-point-card">
+        <span>${item.person || item.author || "前沿观点"}</span>
+        <h3>${item.title}</h3>
+        <p>${summaryText(item, item.brief)}</p>
+        ${item.sourceUrl ? `<a href="${safeAttribute(item.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a>` : ""}
+      </article>
+    `).join("")
+    : builders.map(builderOpinionCard).join("");
+  const sourceCards = signalSystemSources(signal).slice(0, 5);
   root.innerHTML = `
-    <article class="front-signal-detail">
-      <header class="report-header">
-        <span class="signal-system-label">FRONT SIGNAL REPORT · ${signal.id || "FS-20260510-01"}</span>
+    <article class="front-signal-detail signal-detail-report">
+      <header class="signal-detail-hero">
+        <span class="signal-system-label">商业信号 · ${signal.id || "CHG"}</span>
         <h1>${reportTitleHtml(signal.title)}</h1>
-        <p>${summaryText(signal, signal.judgment)}</p>
-        ${reportMetaBar(signal, evidence)}
-      </header>
-      ${editorialJudgmentCard(signal, evidence)}
-      <section class="report-section">
-        <div class="report-section-head">
-          <span>FACT LEDGER</span>
-          <h2>发生了什么</h2>
-          <p>只保留对判断有帮助的信息。</p>
+        <p>${signalEventLine(signal, 240)}</p>
+        <div class="signal-detail-meta">
+          <span>${signalSystemDate(signal.date)}</span>
+          <span>${evidence.total} 条来源</span>
+          <span>${signalCaseNames(signal, 1)[0] || "案例继续补证"}</span>
         </div>
-        ${factLedger(signal)}
+      </header>
+
+      <section class="signal-detail-narrative">
+        <div>
+          <h2>把这件事放回生意里看</h2>
+          <p>${signalBusinessLine(signal, 280)}</p>
+          <p>${signalWhyLine(signal, 260)}</p>
+        </div>
+        <aside>
+          <span>观察坐标</span>
+          <strong>${signalTagNames(signal, 3).join(" / ") || "AI 商业变化"}</strong>
+          <p>${signal.counter || "继续观察客户采用、付费方式和责任边界。"}</p>
+        </aside>
       </section>
+
+      <section class="report-section signal-detail-two-up signal-detail-proof">
+        <div class="signal-detail-column">
+          <div class="report-section-head">
+            <span>来源依据</span>
+            <h2>材料从哪来</h2>
+            <p>这里放能追到原文的来源。观点可以参考，事实仍要回到原始材料。</p>
+          </div>
+          <div class="signal-source-stack">
+            ${sourceCards.map((source, index) => `
+              <a href="${safeAttribute(source.url)}" ${source.url === "#" ? "" : 'target="_blank" rel="noreferrer"'}>
+                <span>${String(index + 1).padStart(2, "0")} · ${source.grade}</span>
+                <strong>${source.name}</strong>
+                <p>${source.fact}</p>
+              </a>
+            `).join("")}
+          </div>
+        </div>
+        <div class="signal-detail-column signal-detail-column-accent">
+          <div class="report-section-head">
+            <span>前沿观点</span>
+            <h2>谁在提前说这件事</h2>
+            <p>它们不替代事实，但能看出行业焦虑、兴奋和分歧在哪里。</p>
+          </div>
+          <div class="signal-point-list">
+            ${pointBlocks}
+          </div>
+        </div>
+      </section>
+
+      ${signalCaseEvidenceSection(signal)}
+
       <section class="report-section">
         <div class="report-section-head">
-          <span>WHY IT MATTERS</span>
-          <h2>为什么值得看</h2>
-          <p>放到企业里看，重点不只在融资本身，而在它碰到的商业变量。</p>
+          <span>商业含义</span>
+          <h2>它会改谁的账本</h2>
+          <p>观澜看商业信号，不只看公司发了什么，更看它碰到了哪张预算表、哪条流程和哪类责任。</p>
         </div>
         ${commercialVariableGrid(signal)}
       </section>
+
       <section class="report-section business-variable-section">
         <div>
-          <div class="report-section-head"><span>COMMERCIAL VARIABLES</span><h2>商业变量拆解</h2></div>
-          <p>${summaryText(signal, signal.counter)}</p>
+          <div class="report-section-head"><span>继续观察</span><h2>还不能急着下判断</h2></div>
+          <p>${signal.counter || "还要继续看真实采用、付费意愿、部署成本和事故处理材料。"}</p>
           <div class="variable-brief-list">
-            ${["客户是谁：大中型企业和企业服务负责人", "谁可能付费：承担服务效率与流程成本的业务负责人", "替代什么流程：客服、售后、工单与质检中的重复执行环节", "为什么现在发生：模型能力、平台交付和企业工作流同时成熟"].map((text, index) => `<div><span>${String(index + 1).padStart(2, "0")}</span><p>${text}</p></div>`).join("")}
+            ${[
+              `影响对象：${signalSystemTags(signal, "customer", 2).join(" / ") || "企业客户和业务负责人"}`,
+              `涉及流程：${signalSystemTags(signal, "scenario", 2).join(" / ") || "客户、数据或工作流"}`,
+              `支撑案例：${signalCaseNames(signal, 2).join(" / ") || "暂未监测到同类案例"}`,
+              `继续看：${signalSystemTags(signal, "evidence", 1)[0] || "客户采用和公开材料"}`
+            ].map((text, index) => `<div><span>${String(index + 1).padStart(2, "0")}</span><p>${text}</p></div>`).join("")}
           </div>
         </div>
         ${businessVariableMap(signal)}
       </section>
+
       <section class="report-section evidence-calibration-report">
         <div>
-          <div class="report-section-head"><span>EVIDENCE BOUNDARY</span><h2>还不能下结论的部分</h2></div>
+          <div class="report-section-head"><span>还缺什么</span><h2>还不能下结论的部分</h2></div>
           ${evidenceBoundaryList(signal)}
         </div>
-        <div>
-          <div class="report-section-head"><span>BUILDER CALIBRATION</span><h2>行业一线怎么看</h2></div>
-          <div class="builder-opinion-list compact">
-            ${builders.map(builderOpinionCard).join("")}
-          </div>
-          <p class="source-boundary-note">${signalSystemCopy.sourceBoundary}</p>
-        </div>
       </section>
+
       ${watchNextPanel(signal)}
+      ${relationPanel(signal, "signal")}
     </article>
   `;
 }
@@ -2223,12 +2893,13 @@ function mountStructuredSignalDetail() {
 function mountBuildersSystem() {
   const root = document.querySelector("[data-builders-system]");
   if (!root) return;
-  const profiles = signalSystemBuilderProfiles();
+  const params = signalFilterParams();
+  const profiles = signalSystemBuilderProfiles().filter((profile) => !params.tag || signalMatchesTag(profile.latest || {}, params.tag));
+  const displayProfiles = profiles.length ? profiles : signalSystemBuilderProfiles();
   root.innerHTML = `
     ${perspectiveHeader()}
-    ${featuredPerspectives(profiles)}
-    ${perspectiveGrid(profiles)}
-    ${calibrationSnapshot(profiles)}
+    ${featuredPerspectives(displayProfiles)}
+    ${perspectiveGrid(displayProfiles)}
   `;
 }
 
@@ -2291,15 +2962,15 @@ function mountHome() {
     `;
   }
 
-  const opportunity = document.querySelector("[data-opportunity-preview]");
-  if (opportunity) {
-    opportunity.innerHTML = `
+  const trendReport = document.querySelector("[data-trend-report-preview]");
+  if (trendReport) {
+    trendReport.innerHTML = `
       <article class="card">
-        <a class="card-inner" href="${data.opportunity.link}">
-          <span class="kicker"><img class="kicker-icon" src="assets/vi-components/01-symbol-system/opportunity.svg" alt="">机会观察</span>
-          <h3>${data.opportunity.title}</h3>
-          <p>${data.opportunity.oneLine}</p>
-          ${tagRow(data.opportunity)}
+        <a class="card-inner" href="${data.trendReport.link}">
+          <span class="kicker"><img class="kicker-icon" src="assets/vi-components/01-symbol-system/trend.svg" alt="">趋势判断</span>
+          <h3>${data.trendReport.title}</h3>
+          <p>${data.trendReport.oneLine}</p>
+          ${tagRow(data.trendReport)}
         </a>
       </article>
     `;
@@ -2311,6 +2982,109 @@ function mountHome() {
 
 function dailyMetaByGroup(item, group, fallback, limit = 2) {
   return compactJoin(tagsByGroup(item, group, limit), fallback);
+}
+
+function dailyDateLabel(value = "") {
+  return String(value || "").replaceAll("-", ".");
+}
+
+function dailyDateParam(value = "") {
+  return String(value || "").replaceAll(".", "-").slice(0, 10);
+}
+
+function dailyIssueList() {
+  return Array.isArray(data.contentIndex?.dates) ? data.contentIndex.dates : [];
+}
+
+function selectedDailyIssue() {
+  const issues = dailyIssueList();
+  const params = new URLSearchParams(window.location.search);
+  const requested = dailyDateParam(params.get("date") || data.contentIndex?.activeDate || data.meta?.date);
+  return issues.find((item) => item.date === requested) || issues[0] || {
+    date: dailyDateParam(data.meta?.date),
+    label: data.meta?.date,
+    title: data.daily?.title,
+    dek: data.daily?.dek,
+  };
+}
+
+function isActiveDailyIssue(issue) {
+  const active = dailyDateParam(data.contentIndex?.activeDate || data.meta?.date);
+  return dailyDateParam(issue?.date || issue?.label) === active;
+}
+
+function selectedDailyContent(issue) {
+  if (isActiveDailyIssue(issue)) return data.daily || {};
+  return {
+    date: issue?.date,
+    label: issue?.label,
+    title: issue?.title || data.daily?.title || "今日观察",
+    dek: issue?.dek || "这一天的要点已进入归档，可继续查看相关信号与来源。",
+    points: [issue?.dek || "这一天的要点已进入归档，可继续查看相关信号与来源。"],
+    risk: "归档日仍以当日信号、来源状态和接下来要看的线索为准。",
+    calibration: [],
+  };
+}
+
+function selectedDailySignals(issue) {
+  const date = dailyDateParam(issue?.date || issue?.label);
+  const all = [...(data.contentIndex?.signals || []), ...(data.signals || [])];
+  const seen = new Set();
+  const matched = all.filter((signal) => {
+    const key = signal.id || signal.slug || signal.title;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return dailyDateParam(signal.date) === date;
+  });
+  if (matched.length) return matched;
+  return all.slice(0, Math.max(3, issue?.signalCount || 3));
+}
+
+function selectedDailyPoints(issue, builderOnly = false) {
+  const date = dailyDateParam(issue?.date || issue?.label);
+  const all = data.contentIndex?.points || [];
+  const sameDay = all.filter((item) => dailyDateParam(item.date) === date);
+  const pool = builderOnly ? sameDay.filter(isFollowBuilderPoint) : sameDay;
+  if (pool.length) return pool;
+  return builderOnly ? [] : sameDay;
+}
+
+function selectedDailyTrends(issue) {
+  const date = dailyDateParam(issue?.date || issue?.label);
+  return (data.contentIndex?.trends || []).filter((item) => dailyDateParam(item.date) === date);
+}
+
+function selectedDailyTrendReports(issue) {
+  const date = dailyDateParam(issue?.date || issue?.label);
+  return (data.contentIndex?.trendReports || []).filter((item) => {
+    const raw = item.date || item.updated || item.label || "";
+    return dailyDateParam(raw) === date;
+  });
+}
+
+function dailyDateHref(issue) {
+  return `daily.html?date=${encodeURIComponent(dailyDateParam(issue?.date || issue?.label))}`;
+}
+
+function dailyDetailHref(issue) {
+  return `daily-detail.html?date=${encodeURIComponent(dailyDateParam(issue?.date || issue?.label))}`;
+}
+
+function mountDailyDateNav(issue) {
+  const nav = document.querySelector("[data-daily-date-nav]");
+  if (!nav) return;
+  const issues = dailyIssueList();
+  const index = issues.findIndex((item) => item.date === issue.date);
+  const previous = issues[index + 1];
+  const next = issues[index - 1];
+  const link = (item, label) => item
+    ? `<a href="${dailyDateHref(item)}">${label}</a>`
+    : `<span aria-disabled="true">${label}</span>`;
+  nav.innerHTML = `
+    ${link(previous, "上一日")}
+    <a href="daily.html">今日</a>
+    ${link(next, "下一日")}
+  `;
 }
 
 function dailySourceName(item, index) {
@@ -2329,6 +3103,119 @@ function dailySourceGrade(index) {
 
 function dailyExternalLink(item) {
   return item?.sourceUrl || item?.source_url || item?.link || "signals.html";
+}
+
+function dailySignalShortTitle(signal = {}) {
+  const title = cleanText(signal.title || "");
+  const id = signal.id || "";
+  const fixed = {
+    "FS-20260511-01": "Agent 动作执行治理",
+    "FS-20260511-02": "可运营的学习流程",
+    "FS-20260511-03": "治理进入运行时",
+    "FS-20260510-01": "CX Agent 交付成本",
+    "FS-20260510-02": "语音 Agent 进入运营",
+    "FS-20260510-03": "客户体验平台化",
+    "FS-20260509-01": "记忆与编排定价",
+    "FS-20260509-02": "客服 Agent 规模交付",
+    "FS-20260509-03": "Agent 资产审计",
+    "FS-20260508-01": "MCP 上生产门槛",
+    "FS-20260508-02": "金融流程 Agent",
+    "FS-20260508-03": "工业 Agent 执行",
+    "FS-20260507-01": "Agent 控制平面",
+    "FS-20260507-02": "编程工具安全治理",
+    "FS-20260507-03": "企业 AI 交付链",
+    "FS-20260506-01": "Agent 管理平面",
+    "FS-20260506-02": "采购财务自动化",
+    "FS-20260506-03": "客服运营平台",
+    "FS-20260505-001": "客服 Agent 基础设施",
+    "FS-20260505-002": "AI 成本治理",
+    "FS-20260505-003": "算力锁定周期",
+    "LS-20260508-01": "客户前台运营",
+    "LS-20260508-02": "历史治理信号",
+    "LS-20260508-03": "营销收入系统",
+    "LS-20260508-04": "专业服务工作流",
+    "LS-20260508-05": "Agent 工程治理",
+    "LS-20260508-06": "数据语义层",
+  };
+  if (fixed[id]) return fixed[id];
+  const withoutPrefix = title
+    .replace(/^.+?[：:]\s*/u, "")
+    .replace(/[“”"]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return withoutPrefix || title;
+}
+
+function homeDailyFeaturedTitle(signal = {}, index = 0) {
+  const title = dailySignalShortTitle(signal);
+  const fixedById = {
+    "FS-20260507-01": "Agent 开始要权限",
+    "FS-20260507-02": "代码仓库被接管",
+    "FS-20260507-03": "交付体系开始扩张",
+  };
+  if (fixedById[signal.id]) return fixedById[signal.id];
+  const fixedByKeyword = [
+    ["中间件", "Agent 开始要权限"],
+    ["编码代理", "代码仓库被接管"],
+    ["大模型部署", "交付体系开始扩张"],
+  ];
+  const matched = fixedByKeyword.find(([keyword]) => title.includes(keyword));
+  if (matched) return matched[1];
+  const fallbacks = ["Agent 开始要权限", "代码仓库被接管", "交付体系开始扩张"];
+  return homeShort(title || fallbacks[index] || "变化值得观察", 16).replace(/[，。,.、].*$/u, "");
+}
+
+function homeDailyCardBody(signal = {}) {
+  const preset = {
+    "FS-20260511-01": "ServiceNow 把企业 Agent 从单点 Copilot 推向系统级行动平台，重点不是多一个助手，而是让 Agent 能在企业系统里执行动作，并接受连接、权限、审计和控制。对企业来说，真正要评估的是动作能不能被授权、回放和停用；这会影响 IT、业务系统、客服、采购和财务流程，也会改变产品负责人对连接器与权限边界的判断。短期看平台能否把 MCP、工具调用和审批策略接成闭环，长期看企业是否愿意把关键流程交给可审计的 Agent 执行。",
+    "FS-20260511-02": "SoundHound 的 OASYS 把语音 Agent 从一次性问答推向可编排、可学习的平台叙事。它提醒企业：客服和销售自动化的竞争点正在从回答质量，转到流程是否能持续运营、持续优化，并被业务团队接管。短期要看模板复用、人工接管和上线周期，长期要看它能否沉淀为企业自己的服务流程。如果学习、编排和复盘不能进入管理界面，语音 Agent 仍会停留在前台体验，而不是运营系统。",
+    "FS-20260511-03": "Collibra 将 AI Command Center 定位为实时监督和持续控制能力，说明治理不再只是上线前的政策、流程或报表，而是进入运行时。企业需要关注模型漂移、权限扩散、责任追溯和异常停用这些实际运营问题；受影响的不只是数据团队，还包括合规、风控、IT 运维和业务负责人。短期看它能否接入真实用例、权限和日志，长期看 Agent 治理会不会成为企业 AI 采购的默认条件。",
+  };
+  return preset[signal.id] || cleanText(signal.judgment || signal.brief || summaryText(signal));
+}
+
+function dailyJudgmentProfile(dailyContent = {}, signals = []) {
+  const date = dailyDateParam(dailyContent.date || dailyContent.label || selectedDailyIssue()?.date || "");
+  const profiles = {};
+  const fallback = {
+    title: cleanText(dailyContent.title || "这一天的商业变化值得继续回看。").replace(/^Insight-\d{4}-\d{2}-\d{2}-\d+\s*[｜|]\s*/u, ""),
+    thesis: cleanText(dailyContent.dek || dailyContent.title || "这一天的信号已经进入归档，仍可作为后续判断参照。"),
+    body: "回看这类内容时，重点不是复述当天发生了什么，而是看它是否持续影响客户采用、预算归属、交付成本和企业流程。只有当这些变化进入真实部署、采购标准或组织分工，它才从热点变成商业信号。",
+    impact: "它会影响相关业务负责人、产品负责人和企业服务采购。短期看客户侧材料，长期防的是把发布、融资和观点误读成已经成熟的需求。",
+    note: "归档日需要继续看后续证据是否补足，而不是只保留当天判断。",
+  };
+  const profile = profiles[date] || fallback;
+  const names = signals.slice(0, 3).map(dailySignalShortTitle).filter(Boolean);
+  return {
+    ...profile,
+    basis: names.length ? `当日信号包括：${names.join("、")}。` : "",
+  };
+}
+
+function dailyHomeJudgmentText(signals = []) {
+  const signalNames = signals.slice(0, 3).map(dailySignalShortTitle).filter(Boolean);
+  const basis = signalNames.length ? `今天被拎出来的几条材料，落在 ${signalNames.join("、")} 上。` : "";
+  return `今天真正该看的，不是模型又多会了什么，而是 AI 是否已经碰到客户、流程、预算或责任边界。${basis}一旦它能动手，企业会先问权限、记录、停用和账单。`;
+}
+
+function dailyJudgmentMarkup(dailyContent = {}, signals = []) {
+  const profile = dailyJudgmentProfile(dailyContent, signals);
+  const signalNames = signals.slice(0, 3).map(dailySignalShortTitle);
+  const basis = signalNames.length
+    ? `今天被拎出来的几条材料，落在 ${signalNames.join("、")} 上。`
+    : "今天的判断来自几类公司动作：大组织采用、工具边界和成本讨论。";
+  const isCurrent = dailyContent.slug === data.daily?.slug || dailyContent.title === data.daily?.title;
+  if (!isCurrent) {
+    return `
+      <p class="daily-newsletter-thesis">${profile.thesis}</p>
+      <p class="daily-newsletter-observation">${profile.body}</p>
+      <p class="daily-newsletter-observation">${profile.impact}${profile.basis ? ` ${profile.basis}` : ""}</p>
+    `;
+  }
+  return `
+    <p class="daily-newsletter-observation">${profile.body}</p>
+    <p class="daily-newsletter-observation">${profile.impact}${basis ? ` ${basis}` : ""}</p>
+  `;
 }
 
 function dailySparkline(values = [22, 30, 28, 42, 48, 56, 68]) {
@@ -2354,61 +3241,75 @@ function dailySparkline(values = [22, 30, 28, 42, 48, 56, 68]) {
   `;
 }
 
-function dailyStatusRail() {
-  const labels = ["05.04", "05.05", "05.06", "05.07", "05.08", "05.09", "05.10"];
-  const states = ["完整日", "降级日", "完整日", "证据不足日", "无深挖日", "完整日", "完整日"];
+function dailyStatusRail(issue = selectedDailyIssue()) {
+  const issues = dailyIssueList().slice(0, 7).reverse();
+  const labels = issues.length ? issues.map((item) => dailyDateLabel(item.label || item.date).slice(5)) : ["05.05", "05.06", "05.07", "05.08", "05.09", "05.10", "05.11"];
+  const states = issues.length ? issues.map((item) => `${item.signalCount || 0} 信号`) : ["归档", "归档", "归档", "归档", "归档", "归档", "当前"];
+  const active = dailyDateParam(issue?.date || issue?.label);
   return `
     <div class="daily-brief-status-current">
       <span></span>
-      <strong>完整日</strong>
-      <em>Evidence checked</em>
+      <strong>${isActiveDailyIssue(issue) ? "当前日" : "归档日"}</strong>
+      <em>${dailyDateLabel(issue?.label || issue?.date)}</em>
     </div>
     <div class="daily-brief-status-rail">
       ${labels.map((label, index) => `
-        <div class="daily-brief-status-day ${index === labels.length - 1 ? "is-active" : ""}">
+        <a class="daily-brief-status-day ${issues[index]?.date === active ? "is-active" : ""}" href="${issues[index] ? dailyDateHref(issues[index]) : "#"}">
           <i></i>
           <span>${label}</span>
           <small>${states[index]}</small>
-        </div>
+        </a>
       `).join("")}
     </div>
   `;
 }
 
-function dailyIssueStatus() {
+function dailyIssueStatus(issue = selectedDailyIssue()) {
+  const issueNo = `DB.${dailyDateParam(issue?.date || issue?.label).replaceAll("-", "")}`;
   return `
     <div class="daily-newsletter-issue-meta">
-      <div><span>Issue No.</span><strong>DB.20260510</strong></div>
-      <div><span>Published</span><strong>${data.meta.date}</strong></div>
+      <div><span>Issue No.</span><strong>${issueNo}</strong></div>
+      <div><span>Published</span><strong>${dailyDateLabel(issue?.label || issue?.date)}</strong></div>
       <div><span>Window</span><strong>24H / 7D / 30D</strong></div>
-      <div><span>Status</span><strong>完整日 · 来源已核对</strong></div>
+      <div><span>Status</span><strong>${isActiveDailyIssue(issue) ? "当前日" : "归档日"} · 可回看</strong></div>
     </div>
-    ${dailyStatusRail()}
+    ${dailyStatusRail(issue)}
   `;
 }
 
-function dailySummaryCard() {
+function dailySummaryCard(dailyContent = data.daily) {
+  const profile = dailyJudgmentProfile(dailyContent, selectedDailySignals(selectedDailyIssue()));
   const keywords = ["Agent", "可控运营", "治理", "交付成本", "企业工作流"];
   return `
     <dl>
-      <div><dt>今日主线</dt><dd>${data.daily.title}</dd></div>
+      <div><dt>今日主线</dt><dd>${profile.title.replace(/^今日观察[｜|]\s*/u, "")}</dd></div>
       <div><dt>判断强度</dt><dd>中高</dd></div>
       <div><dt>观察窗口</dt><dd>24H / 7D / 30D</dd></div>
       <div><dt>当前状态</dt><dd>升温，仍需边界校准</dd></div>
+      <div class="daily-newsletter-tags-field">
+        <dt>Tags</dt>
+        <dd class="daily-brief-key-chips">${keywords.map((item) => `<span>${item}</span>`).join("")}</dd>
+      </div>
     </dl>
-    <div class="daily-brief-key-chips">
-      ${keywords.map((item) => `<span>${item}</span>`).join("")}
-    </div>
   `;
 }
 
-function dailyCalibrationNote() {
-  const item = (data.daily.calibration || [])[0];
-  if (!item) return "";
+function dailyCalibrationNote(dailyContent = data.daily) {
+  const profile = dailyJudgmentProfile(dailyContent, selectedDailySignals(selectedDailyIssue()));
+  const item = (dailyContent.calibration || [])[0];
+  if (!item) {
+    return `
+      <div class="daily-newsletter-note">
+        <span>补充判断</span>
+        <strong>仍要看后续证据</strong>
+        <p>${homeShort(profile.note, 110)}</p>
+      </div>
+    `;
+  }
   return `
     <div class="daily-newsletter-note">
-      <span>EDITOR NOTE</span>
-      <strong>判断校准：强化</strong>
+      <span>补充判断</span>
+      <strong>仍要看运行时控制</strong>
       <p>${homeShort(item.interpretation || item.calibrates || item.originalView, 96)}</p>
     </div>
   `;
@@ -2447,7 +3348,7 @@ function dailySignalBrief(signal, index) {
         <span class="daily-brief-number">${String(index + 1).padStart(2, "0")}</span>
         <span class="daily-brief-memo">SIGNAL</span>
       </div>
-      <h3>${signal.title}</h3>
+      <h3>${dailySignalShortTitle(signal)}</h3>
       <p>${homeShort(signal.judgment || summaryText(signal), 112)}</p>
       <div class="daily-brief-signal-meta">
         <span>影响对象：${impact}</span>
@@ -2470,7 +3371,7 @@ function dailyNewsletterSignal(signal, index) {
         <span class="daily-newsletter-number">${String(index + 1).padStart(2, "0")}</span>
         <span class="daily-newsletter-memo">SIGNAL</span>
       </div>
-      <h3>${signal.title}</h3>
+      <h3>${dailySignalShortTitle(signal)}</h3>
       <p>${homeShort(signal.judgment || summaryText(signal), 112)}</p>
       <dl>
         <div><dt>影响对象</dt><dd>${impact}</dd></div>
@@ -2489,7 +3390,7 @@ function dailyCompressedFact(signal, index) {
   return `
     <a class="daily-newsletter-fact-row" href="${dailyExternalLink(signal)}" target="_blank" rel="noreferrer">
       <span>${String(index + 4).padStart(2, "0")}</span>
-      <strong>${signal.title}</strong>
+      <strong>${dailySignalShortTitle(signal)}</strong>
       <em>${dailySourceName(signal, index + 3)} · ${dailySourceGrade(index + 3)}</em>
       <p>${homeShort(signal.judgment || summaryText(signal), 74)}</p>
     </a>
@@ -2536,32 +3437,26 @@ function dailyTemperatureMarkup() {
 
 function dailyNewsletterTrendPanel() {
   return `
-    <span class="daily-newsletter-memo">TREND TEMPERATURE</span>
-    <h3>热度正在从模型能力转向企业可控运营</h3>
-    ${dailySparkline([24, 30, 34, 41, 50, 58, 72])}
-    <div class="daily-newsletter-stackbar">
-      <i style="--w:38%"><span>官方</span></i>
-      <i style="--w:31%"><span>媒体</span></i>
-      <i style="--w:19%"><span>观点</span></i>
-      <i style="--w:12%"><span>社区</span></i>
-    </div>
-    <div class="daily-newsletter-status-tags">
-      <span>Rising</span>
-      <span>Limited Evidence</span>
-      <span>Watch</span>
+    <span class="daily-newsletter-memo">MARKET READ</span>
+    <h3>讨论正在从“能不能做”转向“敢不敢放进流程”</h3>
+    <p>今天的材料更像一个采购前夜的信号：供应商开始把“可控”写进产品，客户侧还在等部署结果、事故成本和接管机制。</p>
+    <div class="daily-newsletter-market-strip">
+      <span><strong>官方发布增多</strong><em>产品叙事已经转向治理</em></span>
+      <span><strong>客户采用待补</strong><em>真实上线材料仍少</em></span>
+      <span><strong>继续看交付</strong><em>成本和责任边界未定</em></span>
     </div>
   `;
 }
 
 function dailyNewsletterRiskPanel() {
   const risks = [
-    ["来源偏差", "融资、发布和媒体报道更容易被看见，真实部署摩擦可能滞后出现。"],
-    ["证据缺口", data.daily.risk || "客户采用、预算归属和部署周期仍需继续观察。"],
-    ["商业变量", "可控运营是否成为采购标准，还取决于责任边界、权限和人类接管机制。"],
+    ["先别只看发布", "融资、发布和媒体报道会先出现，真实部署里的权限、接管和事故处理往往滞后披露。"],
+    ["还缺客户侧材料", data.daily.risk || "客户采用、预算归属和部署周期仍需继续观察。"],
+    ["采购标准还没定型", "“可控”能否成为企业采购条件，还取决于责任边界、权限默认值和人工接管机制。"],
   ];
   return `
-    <span class="daily-newsletter-memo">RISK BOUNDARY</span>
-    <h3>风险不是警报，是判断边界</h3>
+    <span class="daily-newsletter-memo">WHAT TO WATCH</span>
+    <h3>现在还不能下定论的地方</h3>
     <div class="daily-newsletter-risk-list">
       ${risks.map(([title, text], index) => `
         <div>
@@ -2574,11 +3469,11 @@ function dailyNewsletterRiskPanel() {
   `;
 }
 
-function dailyOpportunityMarkup() {
-  const opportunities = (data.contentIndex?.opportunities || []).slice(0, 3);
-  const fallback = data.opportunity ? [data.opportunity] : [];
-  return (opportunities.length ? opportunities : fallback).map((item, index) => `
-    <article class="daily-brief-opportunity">
+function dailyTrendReportMarkup() {
+  const trendReports = (data.contentIndex?.trendReports || []).slice(0, 3);
+  const fallback = data.trendReport ? [data.trendReport] : [];
+  return (trendReports.length ? trendReports : fallback).map((item, index) => `
+    <article class="daily-brief-trend-report">
       <span class="daily-brief-number">${String(index + 1).padStart(2, "0")}</span>
       <div>
         <h3>${item.title}</h3>
@@ -2588,28 +3483,38 @@ function dailyOpportunityMarkup() {
           <div><dt>客户场景</dt><dd>${dailyMetaByGroup(item, "customer", "中大型企业 / 业务团队", 2)}</dd></div>
           <div><dt>边界条件</dt><dd>责任、数据和部署周期仍需观察</dd></div>
         </dl>
-        <a href="${item.link || `opportunity-detail.html?id=${item.slug}`}">进入机会解码</a>
+        <a href="${item.link || `trend-detail.html?id=${item.slug}`}">进入趋势追踪</a>
       </div>
     </article>
   `).join("");
 }
 
-function dailyNewsletterOpportunityMarkup() {
-  const opportunities = (data.contentIndex?.opportunities || []).slice(0, 3);
-  const fallback = data.opportunity ? [data.opportunity] : [];
-  return (opportunities.length ? opportunities : fallback).map((item, index) => `
-    <article class="daily-newsletter-opportunity">
+function dailyNewsletterTrendReportMarkup(issue = selectedDailyIssue()) {
+  const trendReports = selectedDailyTrendReports(issue);
+  if (!trendReports.length) {
+    return `
+      <article class="daily-newsletter-trend-report is-empty">
+        <span class="daily-newsletter-number">--</span>
+        <div>
+          <h3>当天暂无独立趋势追踪</h3>
+          <p>这一天的内容先保留为信号和观点观察，等客户采用、预算归属或交付边界更清楚后，再进入趋势追踪。</p>
+        </div>
+      </article>
+    `;
+  }
+  return trendReports.slice(0, 3).map((item, index) => `
+    <article class="daily-newsletter-trend-report">
       <span class="daily-newsletter-number">${String(index + 1).padStart(2, "0")}</span>
       <div>
         <h3>${item.title}</h3>
         <p>${homeShort(item.oneLine || summaryText(item), 96)}</p>
-        <div class="daily-newsletter-opportunity-meta">
+        <div class="daily-newsletter-trend-report-meta">
           <span>商业变量：${dailyMetaByGroup(item, "scenario", "流程承接与付费边界", 1)}</span>
           <span>客户场景：${dailyMetaByGroup(item, "customer", "中大型企业", 1)}</span>
           <span>边界：责任、数据和部署周期</span>
         </div>
       </div>
-      <a href="${item.link || `opportunity-detail.html?id=${item.slug}`}">机会解码 ↗</a>
+      <a href="${item.link || `trend-detail.html?id=${item.slug}`}">趋势追踪 ↗</a>
     </article>
   `).join("");
 }
@@ -2629,8 +3534,8 @@ function dailyNewsletterWatchMarkup() {
   `).join("");
 }
 
-function dailyViewMarkup() {
-  const points = (data.daily.calibration || data.contentIndex?.points || []).slice(0, 3);
+function dailyViewMarkup(issue = selectedDailyIssue()) {
+  const points = selectedDailyPoints(issue).slice(0, 3);
   return points.map((item, index) => `
     <article class="daily-brief-view">
       <span class="daily-brief-memo">${["强化", "修正", "补充"][index] || "独立思考"}</span>
@@ -2684,7 +3589,7 @@ function dailyKeywordItems() {
     current.weight += weight;
     groups.set(key, current);
   };
-  [...(data.signals || []), ...(data.contentIndex?.opportunities || [])].forEach((item) => {
+  [...(data.signals || []), ...(data.contentIndex?.trendReports || [])].forEach((item) => {
     (item.tags || []).forEach((tag) => add(tag.group || "tag", tag.name, 1));
   });
   ["Sierra", "Microsoft 365", "Anthropic", "Collibra", "Agent", "Workflow", "Decision"].forEach((name) => add("正式标签", name, 2));
@@ -2733,18 +3638,45 @@ function mountDailyKeywords() {
   render();
 }
 
-function dailyRelatedMarkup() {
+function dailyBuilderViewMarkup(issue = selectedDailyIssue()) {
+  const points = selectedDailyPoints(issue, true).slice(0, 3);
+  if (!points.length) {
+    return `<article class="daily-newsletter-builder-card"><span>前沿观点</span><h3>当天暂无精选观点</h3><p>这一日先以事实信号为主，后续补足前沿观点后再校准。</p></article>`;
+  }
+  return points.map((item, index) => {
+    const identity = builderIdentityForPoint(item);
+    return `
+      <article class="daily-newsletter-builder-card">
+        <div class="daily-newsletter-builder-person">
+          <span>前沿观点 · ${String(index + 1).padStart(2, "0")}</span>
+          <h3>${identity.name}</h3>
+          <small>${identity.title}</small>
+        </div>
+        <p class="daily-newsletter-builder-original">${homeShort(cleanText(item.originalView || item.title), 100)}</p>
+        <strong>${homeShort(cleanText(item.interpretation || item.calibrates || summaryText(item)), 112)}</strong>
+        ${item.sourceUrl ? `<a href="${item.sourceUrl}" target="_blank" rel="noreferrer">查看来源 ↗</a>` : ""}
+      </article>
+    `;
+  }).join("");
+}
+
+function dailyRelatedMarkup(issue = selectedDailyIssue(), signals = selectedDailySignals(issue)) {
+  const trends = selectedDailyTrends(issue);
+  const trendReports = selectedDailyTrendReports(issue);
+  const points = selectedDailyPoints(issue, true);
   const related = [
-    ...(data.signals || []).slice(0, 2).map((item) => ({ ...item, type: "Front Signal", href: item.link || "signals.html" })),
-    ...(data.contentIndex?.signals || []).slice(0, 1).map((item) => ({ ...item, type: "Structured Signal", href: item.link || "signals.html" })),
-    ...(data.contentIndex?.trends || []).slice(0, 1).map((item) => ({ ...item, type: "Trend", href: "brief.html" })),
-    ...(data.contentIndex?.opportunities || []).slice(0, 1).map((item) => ({ ...item, type: "Opportunity", href: item.link || `opportunity-detail.html?id=${item.slug}` })),
-    ...(data.daily.calibration || []).slice(0, 1).map((item) => ({ ...item, type: "Point", href: item.sourceUrl || "builders.html" })),
-  ];
+    ...signals.slice(0, 2).map((item) => ({ ...item, type: "Signal", href: item.link || "signals.html" })),
+    ...trends.slice(0, 1).map((item) => ({ ...item, type: "Trend", href: "brief.html" })),
+    ...trendReports.slice(0, 1).map((item) => ({ ...item, type: "TrendReport", href: item.link || `trend-detail.html?id=${item.slug}` })),
+    ...points.slice(0, 1).map((item) => ({ ...item, type: "前沿观点", href: item.sourceUrl || "builders.html" })),
+  ].slice(0, 5);
+  if (!related.length) {
+    return `<article class="daily-newsletter-related-card"><span>Index</span><h3>当天暂无延申条目</h3><p>这一日暂以本期判断和商业信号为主。</p><small>${dailyDateLabel(issue?.label || issue?.date)}</small></article>`;
+  }
   return related.map((item, index) => `
     <a class="daily-newsletter-related-card" href="${item.href}">
       <span>${item.type} · ${String(index + 1).padStart(2, "0")}</span>
-      <h3>${item.title}</h3>
+      <h3>${dailySignalShortTitle(item) || homeShort(cleanText(item.title), 34)}</h3>
       <p>${homeShort(summaryText(item, item.interpretation || item.oneLine), 92)}</p>
       <small>${(item.date || item.originalDate || data.meta.date).replaceAll("-", ".")}</small>
     </a>
@@ -2754,10 +3686,10 @@ function dailyRelatedMarkup() {
 function textFromSection(item, names = [], fallback = "") {
   const sections = item?.sections || [];
   const picked = sections.find(([title]) => names.some((name) => String(title).includes(name)));
-  return opportunitySafeText(picked?.[1] || fallback);
+  return trendReportSafeText(picked?.[1] || fallback);
 }
 
-function opportunitySafeText(value = "") {
+function trendReportSafeText(value = "") {
   return cleanText(value)
     .replace(/\s*date:\s*\d{4}[\s\S]*$/i, "")
     .replaceAll(`任${"务"}`, "工作")
@@ -2769,40 +3701,40 @@ function opportunitySafeText(value = "") {
     .replaceAll("必须入场", "值得继续观察");
 }
 
-function opportunityHref(item) {
-  return item?.slug ? `opportunity-detail.html?id=${encodeURIComponent(item.slug)}` : (item?.link || "opportunity-detail.html");
+function trendReportHref(item) {
+  return item?.slug ? `trend-detail.html?id=${encodeURIComponent(item.slug)}` : (item?.link || "trend-detail.html");
 }
 
-function opportunityId(item, index = 0) {
+function trendReportId(item, index = 0) {
   const rawDate = String(item?.date || item?.updated || data.meta?.date || "2026.05.11").replaceAll(".", "").replaceAll("-", "").slice(0, 8);
   return `OP-${rawDate}-${String(index + 1).padStart(2, "0")}`;
 }
 
-function opportunityAudience(item) {
+function trendReportAudience(item) {
   return compactJoin([tagsByGroup(item, "customer", 2), tagsByGroup(item, "function", 2)], "业务负责人 / 产品与运营团队");
 }
 
-function opportunityScene(item) {
+function trendReportScene(item) {
   return compactJoin([tagsByGroup(item, "scenario", 2), tagsByGroup(item, "function", 2)], "客户场景开始清晰");
 }
 
-function opportunityEvidenceState(item) {
+function trendReportEvidenceState(item) {
   const stage = cleanText(item?.stage || "");
   if (/观察|缺|不足|风险/.test(stage) || item?.evidenceGaps) return "观察中方向";
   return stage || "证据正在增强";
 }
 
-function opportunityStatus(index, item) {
-  const state = opportunityEvidenceState(item);
+function trendReportStatus(index, item) {
+  const state = trendReportEvidenceState(item);
   if (/不足|缺/.test(state) || item?.evidenceGaps) return index % 3 === 0 ? "仍需补证" : "观察中";
   return index % 2 === 0 ? "证据增强" : "可进入深挖";
 }
 
-function opportunityGap(item) {
-  return opportunitySafeText(item?.evidenceGaps || textFromSection(item, ["反证", "限制"], "仍需观察客户采用、付费意愿和交付成本。"));
+function trendReportGap(item) {
+  return trendReportSafeText(item?.evidenceGaps || textFromSection(item, ["反证", "限制"], "仍需观察客户采用、付费意愿和交付成本。"));
 }
 
-function opportunityVariableItems(item) {
+function trendReportVariableItems(item) {
   const raw = textFromSection(item, ["观察变量", "建议关注变量"], "客户上线规模、公开定价锚点、效果指标、责任条款、模板复用率。");
   return raw
     .split(/[；;。]/)
@@ -2811,81 +3743,65 @@ function opportunityVariableItems(item) {
     .slice(0, 5);
 }
 
-function opportunitySources(item) {
-  const related = relatedAssets(item, "opportunity");
+function trendReportSources(item) {
+  const related = relatedAssets(item, "trendReport");
   const signals = (related.signal || data.signals || []).slice(0, 2);
   const trends = (related.trend || data.contentIndex?.trends || []).slice(0, 1);
   return [...signals.map((signal) => ["Signal", signal.title]), ...trends.map((trend) => ["Trend", trend.title])].slice(0, 3);
 }
 
-function opportunityWatchItems() {
-  const list = data.contentIndex?.opportunities || [];
-  const primary = data.opportunity?.slug;
+function trendReportWatchItems() {
+  const list = data.contentIndex?.trendReports || [];
+  const primary = data.trendReport?.slug;
   const picked = list.filter((item) => item.slug !== primary).slice(0, 6);
   if (picked.length) return picked;
   return list.slice(1, 7);
 }
 
-function opportunityCoverGraphic() {
+function trendReportCoverGraphic() {
   return `
-    <div class="opportunity-cover-graphic" aria-hidden="true">
-      <svg viewBox="0 0 520 280" role="presentation" focusable="false">
-        <path class="cover-grid" d="M32 50H488M32 106H488M32 162H488M32 218H488M108 28V246M214 28V246M320 28V246M426 28V246" />
-        <path class="cover-muted" d="M42 218 C110 174 176 188 244 132 S360 94 478 120" />
-        <path class="cover-main" d="M42 230 C124 162 178 172 246 116 S350 72 478 62" />
-        <circle cx="124" cy="162" r="5" />
-        <circle cx="246" cy="116" r="5" />
-        <circle cx="478" cy="62" r="5" />
-      </svg>
+    <div class="trend-report-cover-graphic">
+      <img src="assets/generated/trend-report-report-cover-imagegen.png" alt="客户体验 Agent 平台机会报告配图">
     </div>
   `;
 }
 
-function opportunitySourceStrip(item) {
-  const sources = opportunitySources(item);
+function trendReportSourceStrip(item) {
+  const sources = trendReportSources(item);
   if (!sources.length) return "";
   return `
-    <div class="opportunity-source-strip">
+    <div class="trend-report-source-strip">
       ${sources.map(([type, title]) => `
-        <span><em>${type}</em>${opportunitySafeText(homeShort(title, 34))}</span>
+        <span><em>${type}</em>${trendReportSafeText(homeShort(title, 34))}</span>
       `).join("")}
     </div>
   `;
 }
 
-function opportunityFrameworkMarkup() {
+function trendReportFrameworkMarkup() {
   const dimensions = [
     ["01", "信号密度", "是否有多个独立信号指向同一方向？"],
     ["02", "客户场景", "是否对应真实客户痛点，而不是概念热度？"],
     ["03", "付费变量", "是否可能影响收入、成本、效率、风险或预算？"],
-    ["04", "证据边界", "哪些数据仍然缺失，哪些判断还不能下结论？"],
+    ["04", "还缺什么", "哪些数据仍然缺失，哪些判断还不能下结论？"],
     ["05", "观察窗口", "7 / 30 / 90 天分别要看什么？"],
   ];
   return `
-    <div class="opportunity-section-head">
+    <div class="trend-report-section-head">
       <div>
-        <span class="opportunity-section-kicker">OPPORTUNITY FRAMEWORK</span>
+        <span class="trend-report-section-kicker">OPPORTUNITY FRAMEWORK</span>
         <h2>我们如何判断一个方向是否值得解码</h2>
       </div>
       <p>观澜AI不贩卖机会答案，只把信号、趋势、场景、变量和边界放到同一张判断图里。</p>
     </div>
-    <div class="opportunity-framework-grid">
-      <div class="opportunity-path-card">
-        <span class="opportunity-card-label">OPPORTUNITY PATH</span>
-        <div class="opportunity-path-graphic" aria-label="信号到机会路径图">
-          ${["信号", "趋势", "客户场景", "商业变量", "机会方向"].map((item, index) => `<span style="--i:${index}">${item}</span>`).join("")}
-          <svg viewBox="0 0 620 260" role="presentation" focusable="false">
-            <path class="path-grid" d="M54 58H568M54 130H568M54 202H568M154 34V226M278 34V226M402 34V226M526 34V226" />
-            <path class="path-main" d="M64 182 C136 110 206 120 278 92 S406 80 468 126 S538 166 582 78" />
-            <path class="path-muted" d="M64 202 C154 162 224 178 300 138 S432 112 582 132" />
-            <circle cx="64" cy="182" r="5" />
-            <circle cx="278" cy="92" r="5" />
-            <circle cx="468" cy="126" r="5" />
-            <circle cx="582" cy="78" r="5" />
-          </svg>
+    <div class="trend-report-framework-grid">
+      <div class="trend-report-path-card">
+        <span class="trend-report-card-label">OPPORTUNITY PATH</span>
+        <div class="trend-report-path-graphic" aria-label="信号到机会路径图">
+          <img src="assets/generated/trend-report-framework-path-imagegen.png" alt="从信号到机会方向的判断路径图">
         </div>
       </div>
-      <div class="opportunity-dimension-list">
+      <div class="trend-report-dimension-list">
         ${dimensions.map(([num, title, text]) => `
           <article>
             <span>${num}</span>
@@ -2894,15 +3810,15 @@ function opportunityFrameworkMarkup() {
           </article>
         `).join("")}
       </div>
-      <div class="opportunity-evidence-card">
-        <span class="opportunity-card-label">EVIDENCE GAP</span>
+      <div class="trend-report-evidence-card">
+        <span class="trend-report-card-label">EVIDENCE GAP</span>
         <h3>证据缺口图</h3>
         ${[["已有证据", 62], ["缺失证据", 38], ["继续观察", 74]].map(([label, value]) => `
-          <div class="opportunity-proof-bar"><span>${label}</span><i style="--w:${value}%"></i><em>${value}%</em></div>
+          <div class="trend-report-proof-bar"><span>${label}</span><i style="--w:${value}%"></i><em>${value}%</em></div>
         `).join("")}
       </div>
-      <div class="opportunity-timeline-card">
-        <span class="opportunity-card-label">WATCH STATUS</span>
+      <div class="trend-report-timeline-card">
+        <span class="trend-report-card-label">WATCH STATUS</span>
         <h3>7 / 30 / 90 观察轴</h3>
         ${[["7D", "看是否出现新增客户案例"], ["30D", "看定价锚点和预算归属"], ["90D", "看交付成本、留存和责任条款"]].map(([time, text]) => `
           <div><span>${time}</span><p>${text}</p></div>
@@ -2936,7 +3852,7 @@ function briefStateCopy(state) {
       label: "普通用户",
       cta: "订阅商业内参",
       title: "免费预览",
-      body: "可阅读本期标题、主判断、部分来源摘要、热力变化概览和往期标题。",
+      body: "可阅读本期标题、本期判断、部分来源摘要、热力变化概览和往期标题。",
       note: "完整内参、来源账本、风险边界和往期判断追踪保留在会员层。",
     },
     "logged-in": {
@@ -2944,13 +3860,13 @@ function briefStateCopy(state) {
       cta: "阅读本期完整内参",
       title: "目录与试读",
       body: "可阅读完整目录、更多来源摘要和部分精读预览。",
-      note: "完整热力变化、证据边界和机会观察保留在会员层。",
+      note: "完整热力变化、未定部分和趋势判断保留在会员层。",
     },
     member: {
       label: "会员",
       cta: "阅读完整内参",
       title: "会员完整态",
-      body: "可阅读完整正文、完整来源账本、热力变化、证据边界、机会观察和往期参照。",
+      body: "可阅读完整正文、完整来源账本、热力变化、未定部分、趋势判断和往期参照。",
       note: "本期判断不替代最终经营、投资或合作判断。",
     },
   }[state];
@@ -2972,12 +3888,12 @@ function briefIssueKeywords() {
 
 function briefTocItems() {
   return [
-    ["01", "主判断", "本期最值得先看的变化"],
+    ["01", "本期判断", "本期最值得先看的变化"],
     ["02", "关键来源摘要", "哪些事实推动判断变化"],
     ["03", "热力变化", "哪些方向升温或进入争议"],
     ["04", "商业变量", "哪些事会影响预算、流程和团队"],
-    ["05", "证据边界", "哪些地方还缺材料"],
-    ["06", "机会观察", "哪些方向进入内参跟踪"],
+    ["05", "还缺什么", "哪些地方还缺材料"],
+    ["06", "趋势判断", "哪些方向进入内参跟踪"],
     ["07", "后续追踪", "7 / 30 / 90 天继续看什么"],
     ["08", "往期参照", "判断如何延续、修正或加强"],
   ];
@@ -3001,10 +3917,10 @@ function briefSourceNotes() {
     name: item.title,
     grade: index === 0 ? "A" : "B",
     fact: briefSafeText(item.judgment || item.evidenceGaps || summaryText(item)),
-    role: index === 0 ? "加强本期主判断" : "补充观察边界",
+    role: index === 0 ? "加强本期判断" : "补充观察边界",
   }));
   const pointItems = (data.brief?.evidence?.points || []).slice(0, 3).map((item, index) => ({
-    type: "观点校准",
+    type: "前沿观点",
     name: item.title,
     grade: index === 0 ? "A" : "B",
     fact: briefSafeText(item.calibrates || item.interpretation || summaryText(item)),
@@ -3025,50 +3941,46 @@ function briefArchiveItems() {
 
 function briefCoverGraphic() {
   return `
-    <div class="brief-cover-graphic" aria-hidden="true">
-      <svg viewBox="0 0 520 260" role="presentation" focusable="false">
-        <path class="grid-line" d="M28 42H492M28 96H492M28 150H492M28 204H492M88 24V228M188 24V228M288 24V228M388 24V228" />
-        <path class="trend-line muted" d="M34 194 C102 168 138 176 196 136 S302 92 378 116 S458 76 492 54" />
-        <path class="trend-line" d="M34 206 C118 162 150 170 214 118 S316 62 390 88 S458 58 492 38" />
-        <circle cx="214" cy="118" r="5" />
-        <circle cx="390" cy="88" r="5" />
-        <circle cx="492" cy="38" r="5" />
-      </svg>
+    <div class="brief-cover-graphic">
+      <img src="assets/generated/business-brief-control-layer-imagegen.png" alt="Agent 控制层、工程治理与企业交付链的抽象研究图">
     </div>
   `;
 }
 
 function mountDaily() {
   if (getPageName() !== "daily.html") return;
-  setText("[data-daily-date]", data.meta.date);
-  setText("[data-daily-title]", data.daily.title);
+  const issue = selectedDailyIssue();
+  const dailyContent = selectedDailyContent(issue);
+  const signals = selectedDailySignals(issue);
+  setText("[data-daily-date]", dailyDateLabel(issue.label || issue.date));
+  setText("[data-daily-title]", dailyJudgmentProfile(dailyContent, signals).title.replace(/^今日观察[｜|]\s*/u, ""));
+  const titleLink = document.querySelector("[data-daily-title-link]");
+  if (titleLink) titleLink.href = dailyDetailHref(issue);
+  mountDailyDateNav(issue);
 
   const status = document.querySelector("[data-daily-issue-status]");
-  if (status) status.innerHTML = dailyIssueStatus();
+  if (status) status.innerHTML = dailyIssueStatus(issue);
 
   const judgment = document.querySelector("[data-daily-judgment]");
   if (judgment) {
-    const points = data.daily.points || [];
-    judgment.innerHTML = `
-      <p>${data.daily.dek}</p>
-      ${points.map((item) => `<p>${item}</p>`).join("")}
-    `;
+    judgment.innerHTML = dailyJudgmentMarkup(dailyContent, signals);
+    judgment.insertAdjacentHTML("beforeend", `<a class="daily-newsletter-read-link" href="${dailyDetailHref(issue)}">查看详情</a>`);
   }
 
   const summary = document.querySelector("[data-daily-summary]");
-  if (summary) summary.innerHTML = dailySummaryCard();
+  if (summary) summary.innerHTML = dailySummaryCard(dailyContent);
 
   const chart = document.querySelector("[data-daily-mini-chart]");
-  if (chart) chart.innerHTML = dailySparkline([18, 24, 26, 35, 45, 52, 66]);
+  if (chart) chart.innerHTML = "";
 
   const calibration = document.querySelector("[data-daily-calibration]");
-  if (calibration) calibration.innerHTML = dailyCalibrationNote();
+  if (calibration) calibration.innerHTML = dailyCalibrationNote(dailyContent);
 
   const primarySignals = document.querySelector("[data-daily-primary-signals]");
-  if (primarySignals) primarySignals.innerHTML = (data.signals || []).slice(0, 3).map(dailyNewsletterSignal).join("");
+  if (primarySignals) primarySignals.innerHTML = signals.slice(0, 3).map(dailyNewsletterSignal).join("");
 
   const compressedFacts = document.querySelector("[data-daily-compressed-facts]");
-  if (compressedFacts) compressedFacts.innerHTML = (data.signals || []).slice(3, 8).map(dailyCompressedFact).join("");
+  if (compressedFacts) compressedFacts.innerHTML = signals.slice(3, 8).map(dailyCompressedFact).join("");
 
   const trend = document.querySelector("[data-daily-trend-panel]");
   if (trend) trend.innerHTML = dailyNewsletterTrendPanel();
@@ -3076,57 +3988,60 @@ function mountDaily() {
   const risk = document.querySelector("[data-daily-risk-panel]");
   if (risk) risk.innerHTML = dailyNewsletterRiskPanel();
 
-  const opportunities = document.querySelector("[data-daily-opportunities]");
-  if (opportunities) opportunities.innerHTML = dailyNewsletterOpportunityMarkup();
+  const trendReports = document.querySelector("[data-daily-trend-reports]");
+  if (trendReports) trendReports.innerHTML = dailyNewsletterTrendReportMarkup(issue);
 
   const watch = document.querySelector("[data-daily-watch]");
   if (watch) watch.innerHTML = dailyNewsletterWatchMarkup();
 
+  const builderViews = document.querySelector("[data-daily-builder-views]");
+  if (builderViews) builderViews.innerHTML = dailyBuilderViewMarkup(issue);
+
   const related = document.querySelector("[data-daily-related]");
-  if (related) related.innerHTML = dailyRelatedMarkup();
+  if (related) related.innerHTML = dailyRelatedMarkup(issue, signals);
 
   mountDailyKeywords();
 }
 
-function mountOpportunity() {
-  const node = document.querySelector("[data-opportunity-card]");
+function mountTrendReport() {
+  const node = document.querySelector("[data-trend-report-card]");
   if (!node) return;
-  const opportunity = data.opportunity || data.contentIndex?.opportunities?.[0];
-  if (!opportunity) return;
-  const summary = opportunitySafeText(textFromSection(opportunity, ["机会判断", "价值来源"], "客户场景开始清晰，但商业变量尚未完全验证，适合进入后续机会解码。"));
+  const trendReport = data.trendReport || data.contentIndex?.trendReports?.[0];
+  if (!trendReport) return;
+  const summary = trendReportSafeText(textFromSection(trendReport, ["趋势判断", "价值来源"], "客户场景开始清晰，但商业变量尚未完全验证，适合进入后续趋势追踪。"));
   node.innerHTML = `
-    <article class="opportunity-feature-card">
-      <div class="opportunity-feature-copy">
-        <span class="opportunity-section-kicker">LATEST OPPORTUNITY REPORT</span>
-        <div class="opportunity-id-row">
-          <span>${opportunityId(opportunity, 0)}</span>
-          <span>${opportunity.updated || opportunity.date || data.meta.date}</span>
+    <article class="trend-report-feature-card">
+      <div class="trend-report-feature-copy">
+        <span class="trend-report-section-kicker">LATEST TREND REPORT</span>
+        <div class="trend-report-id-row">
+          <span>${trendReportId(trendReport, 0)}</span>
+          <span>${trendReport.updated || trendReport.date || data.meta.date}</span>
         </div>
-        <h2>${opportunitySafeText(opportunity.title)}</h2>
-        <p class="opportunity-feature-lede">${opportunitySafeText(opportunity.oneLine || summaryText(opportunity))}</p>
-        <p class="opportunity-feature-summary">${homeShort(summary, 220)}</p>
-        <dl class="opportunity-facts">
-          <div><dt>证据状态</dt><dd>${opportunityEvidenceState(opportunity)}</dd></div>
-          <div><dt>适合关注</dt><dd>${opportunityAudience(opportunity)}</dd></div>
-          <div><dt>主要反证</dt><dd>${opportunityGap(opportunity)}</dd></div>
+        <h2>${trendReportSafeText(trendReport.title)}</h2>
+        <p class="trend-report-feature-lede">${trendReportSafeText(trendReport.oneLine || summaryText(trendReport))}</p>
+        <p class="trend-report-feature-summary">${homeShort(summary, 220)}</p>
+        <dl class="trend-report-facts">
+          <div><dt>证据状态</dt><dd>${trendReportEvidenceState(trendReport)}</dd></div>
+          <div><dt>适合关注</dt><dd>${trendReportAudience(trendReport)}</dd></div>
+          <div><dt>主要反证</dt><dd>${trendReportGap(trendReport)}</dd></div>
           <div><dt>观察窗口</dt><dd>7D / 30D / 90D</dd></div>
         </dl>
-        ${opportunitySourceStrip(opportunity)}
-        <a class="button primary" href="${opportunityHref(opportunity)}">阅读报告</a>
+        ${trendReportSourceStrip(trendReport)}
+        <a class="button primary" href="${trendReportHref(trendReport)}">阅读报告</a>
       </div>
-      <aside class="opportunity-report-cover" aria-label="机会报告封面">
-        <div class="opportunity-cover-brand">
+      <aside class="trend-report-report-cover" aria-label="趋势报告封面">
+        <div class="trend-report-cover-brand">
           <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜AI Wavesight AI">
-          <span>WAVESIGHT AI OPPORTUNITY</span>
+          <span>WAVESIGHT AI TREND</span>
         </div>
-        <div class="opportunity-cover-meta">
-          <span>${opportunity.updated || opportunity.date || data.meta.date}</span>
-          <span>${opportunityId(opportunity, 0)}</span>
+        <div class="trend-report-cover-meta">
+          <span>${trendReport.updated || trendReport.date || data.meta.date}</span>
+          <span>${trendReportId(trendReport, 0)}</span>
         </div>
-        <h3>${opportunitySafeText(opportunity.title)}</h3>
-        <p>${homeShort(opportunitySafeText(opportunity.oneLine || summaryText(opportunity)), 86)}</p>
-        ${opportunityCoverGraphic()}
-        <div class="opportunity-cover-tags">${tagRow(opportunity, 4)}</div>
+        <h3>${trendReportSafeText(trendReport.title)}</h3>
+        <p>${homeShort(trendReportSafeText(trendReport.oneLine || summaryText(trendReport)), 86)}</p>
+        ${trendReportCoverGraphic()}
+        <div class="trend-report-cover-tags">${tagRow(trendReport, 4)}</div>
       </aside>
     </article>
   `;
@@ -3148,65 +4063,65 @@ function mountSignalRelations() {
   node.innerHTML = activeRelationRows(3);
 }
 
-function mountOpportunityIndex() {
-  const node = document.querySelector("[data-opportunity-index]");
-  if (!node || !data.contentIndex?.opportunities) return;
-  node.innerHTML = data.contentIndex.opportunities.slice(0, 8).map((item, index) => `
-    <a class="opportunity-history-row" href="${opportunityHref(item)}">
-      <span>${opportunityId(item, index)}</span>
+function mountTrendReportIndex() {
+  const node = document.querySelector("[data-trend-report-index]");
+  if (!node || !data.contentIndex?.trendReports) return;
+  node.innerHTML = data.contentIndex.trendReports.slice(0, 8).map((item, index) => `
+    <a class="trend-report-history-row" href="${trendReportHref(item)}">
+      <span>${trendReportId(item, index)}</span>
       <div>
-        <strong>${opportunitySafeText(item.title)}</strong>
-        <p>${homeShort(opportunitySafeText(item.oneLine || summaryText(item)), 120)}</p>
+        <strong>${trendReportSafeText(item.title)}</strong>
+        <p>${homeShort(trendReportSafeText(item.oneLine || summaryText(item)), 120)}</p>
       </div>
-      <em>${opportunityStatus(index, item)}</em>
+      <em>${trendReportStatus(index, item)}</em>
     </a>
   `).join("");
 }
 
-function mountOpportunityRelations() {
-  const node = document.querySelector("[data-opportunity-relations]");
-  if (!node || !data.contentIndex?.opportunities) return;
+function mountTrendReportRelations() {
+  const node = document.querySelector("[data-trend-report-relations]");
+  if (!node || !data.contentIndex?.trendReports) return;
   const relations = ["延续", "加强", "待补证", "修正"];
-  node.innerHTML = data.contentIndex.opportunities.slice(0, 4).map((opportunity, index) => `
-    <article class="opportunity-brief-link">
+  node.innerHTML = data.contentIndex.trendReports.slice(0, 4).map((trendReport, index) => `
+    <article class="trend-report-brief-link">
       <span>${String(index + 1).padStart(2, "0")}</span>
       <div>
-        <h3>${opportunitySafeText(opportunity.title)}</h3>
-        <p>${index === 0 ? "与本期商业内参的 Agent 控制层判断形成参照。" : homeShort(opportunitySafeText(opportunity.oneLine || summaryText(opportunity)), 96)}</p>
-        <small>${relations[index] || "继续观察"} · ${opportunityEvidenceState(opportunity)}</small>
+        <h3>${trendReportSafeText(trendReport.title)}</h3>
+        <p>${index === 0 ? "与本期商业内参的 Agent 控制层判断形成参照。" : homeShort(trendReportSafeText(trendReport.oneLine || summaryText(trendReport)), 96)}</p>
+        <small>${relations[index] || "继续观察"} · ${trendReportEvidenceState(trendReport)}</small>
       </div>
     </article>
   `).join("");
 }
 
-function mountOpportunityWatch() {
-  const node = document.querySelector("[data-opportunity-watch]");
+function mountTrendReportWatch() {
+  const node = document.querySelector("[data-trend-report-watch]");
   if (!node) return;
-  const items = opportunityWatchItems();
+  const items = trendReportWatchItems();
   node.innerHTML = items.map((item, index) => `
-    <article class="opportunity-watch-item">
+    <article class="trend-report-watch-item">
       <span>${String(index + 1).padStart(2, "0")}</span>
       <div>
-        <div class="opportunity-watch-title">
-          <h3>${opportunitySafeText(item.title)}</h3>
-          <em>${opportunityStatus(index, item)}</em>
+        <div class="trend-report-watch-title">
+          <h3>${trendReportSafeText(item.title)}</h3>
+          <em>${trendReportStatus(index, item)}</em>
         </div>
-        <p>${homeShort(opportunitySafeText(item.oneLine || summaryText(item)), 132)}</p>
+        <p>${homeShort(trendReportSafeText(item.oneLine || summaryText(item)), 132)}</p>
         <dl>
-          <div><dt>适用场景</dt><dd>${opportunityScene(item)}</dd></div>
-          <div><dt>证据缺口</dt><dd>${opportunityGap(item)}</dd></div>
-          <div><dt>继续看</dt><dd>${opportunityVariableItems(item).slice(0, 2).map(opportunitySafeText).join(" / ")}</dd></div>
+          <div><dt>适用场景</dt><dd>${trendReportScene(item)}</dd></div>
+          <div><dt>证据缺口</dt><dd>${trendReportGap(item)}</dd></div>
+          <div><dt>继续看</dt><dd>${trendReportVariableItems(item).slice(0, 2).map(trendReportSafeText).join(" / ")}</dd></div>
         </dl>
       </div>
-      <a href="${opportunityHref(item)}">查看观察</a>
+      <a href="${trendReportHref(item)}">查看观察</a>
     </article>
   `).join("");
 }
 
-function mountOpportunityFramework() {
-  const node = document.querySelector("[data-opportunity-framework]");
+function mountTrendReportFramework() {
+  const node = document.querySelector("[data-trend-report-framework]");
   if (!node) return;
-  node.innerHTML = opportunityFrameworkMarkup();
+  node.innerHTML = trendReportFrameworkMarkup();
 }
 
 function mountBriefAssets() {
@@ -3232,7 +4147,7 @@ function mountBrief() {
 
   const benefits = document.querySelector("[data-brief-benefits]");
   if (benefits) {
-    const benefitItems = ["阅读完整内参", "查看来源与证据", "获取趋势热力变化", "追踪往期判断", "解锁机会解码"];
+    const benefitItems = ["阅读完整内参", "查看来源与证据", "获取趋势热力变化", "追踪往期判断", "解锁趋势追踪"];
     benefits.innerHTML = `
       <span class="brief-card-label">MEMBER ACCESS</span>
       <h2>会员权益</h2>
@@ -3272,7 +4187,7 @@ function mountBrief() {
   if (executive) {
     executive.innerHTML = `
       <span class="brief-card-label">EXECUTIVE JUDGMENT</span>
-      <h2>本期主判断</h2>
+      <h2>本期判断</h2>
       <p class="brief-main-judgment">${briefSafeText(data.brief.summary?.[0] || data.brief.title)}</p>
       <div class="brief-executive-list">
         ${briefCoreJudgments().map(([title, text], index) => `
@@ -3287,7 +4202,7 @@ function mountBrief() {
         <div><span>证据状态</span><strong>判断正在加强，仍需补证</strong></div>
         <div><span>观察窗口</span><strong>7D / 30D / 90D</strong></div>
         <div><span>适合谁读</span><strong>企业经营者 / 业务负责人 / 投资观察者</strong></div>
-        <div><span>会员可解锁</span><strong>完整来源账本、热力变化、证据边界</strong></div>
+        <div><span>会员可解锁</span><strong>完整来源账本、热力变化、未定部分</strong></div>
       </div>
     `;
   }
@@ -3310,8 +4225,8 @@ function mountBrief() {
   const member = document.querySelector("[data-brief-member]");
   if (member) {
     const rows = state === "member"
-      ? ["完整正文", "完整来源账本", "完整热力变化", "证据边界", "机会观察", "往期参照", "下载 / 收藏 / 分享"]
-      : ["标题与主判断", "部分来源摘要", "热力变化概览", "往期标题", "完整内参"];
+      ? ["完整正文", "完整来源账本", "完整热力变化", "未定部分", "趋势判断", "往期参照", "下载 / 收藏 / 分享"]
+      : ["标题与本期判断", "部分来源摘要", "热力变化概览", "往期标题", "完整内参"];
     member.className = `brief-member-card member-${state}`;
     member.innerHTML = `
       <div>
@@ -3345,7 +4260,7 @@ function mountBrief() {
   if (core) {
     core.innerHTML = `
       <span class="brief-card-label">A. CORE JUDGMENT</span>
-      <h3>主判断</h3>
+      <h3>本期判断</h3>
       ${briefCoreJudgments().map(([title, text, meta], index) => `
         <article class="brief-judgment-item">
           <span>${String(index + 1).padStart(2, "0")}</span>
@@ -3375,7 +4290,7 @@ function mountBrief() {
           <small>${item.role}</small>
         </article>
       `).join("")}
-      ${locked ? `<div class="brief-soft-lock">完整来源账本和证据边界保留在会员层。</div>` : ""}
+      ${locked ? `<div class="brief-soft-lock">完整来源账本和未定部分保留在会员层。</div>` : ""}
     `;
   }
 
@@ -3426,16 +4341,7 @@ function mountBrief() {
       <span class="brief-card-label">JUDGMENT FRAMEWORK</span>
       <h3>AI 商业判断顺序</h3>
       <div class="brief-framework-graph" aria-label="信号、来源、证据、趋势、机会、风险和后续观察的关系图">
-        ${["信号", "来源", "证据", "趋势", "机会", "风险", "后续观察"].map((item, index) => `<span style="--i:${index}">${item}</span>`).join("")}
-        <svg viewBox="0 0 520 260" role="presentation" focusable="false">
-          <path d="M74 130 C138 56 212 58 270 126 S382 198 452 94" />
-          <path d="M74 130 C146 176 224 188 300 128 S386 64 452 94" />
-          <circle cx="74" cy="130" r="5" />
-          <circle cx="185" cy="72" r="5" />
-          <circle cx="270" cy="126" r="5" />
-          <circle cx="370" cy="178" r="5" />
-          <circle cx="452" cy="94" r="5" />
-        </svg>
+        <img src="assets/generated/brief-framework-evidence-imagegen.png" alt="来源、证据、趋势、机会和风险的研究材料图">
       </div>
       <div class="brief-watch-timeline">
         ${[["7D", "看客户案例是否继续出现"], ["30D", "看权限、审计和治理叙事"], ["90D", "看上线周期、模板复用率和事故成本"]].map(([time, text]) => `
@@ -3461,7 +4367,7 @@ function mountBrief() {
 
   const subscription = document.querySelector("[data-brief-subscription]");
   if (subscription) {
-    const rights = ["每期完整内参", "趋势热力变化", "证据与来源账本", "机会观察", "风险边界", "往期判断追踪"];
+    const rights = ["每期完整内参", "趋势热力变化", "证据与来源账本", "趋势判断", "风险边界", "往期判断追踪"];
     subscription.innerHTML = `
       <span class="brief-card-label">SUBSCRIPTION</span>
       <h2>成为会员，持续阅读 AI 商业判断。</h2>
@@ -3491,7 +4397,7 @@ function mountSignalDetail() {
     ? `<div class="dimension-grid">
           ${signal.analysis.map(([label, text]) => `<div class="dimension"><strong>${label}</strong><span>${text}</span></div>`).join("")}
         </div>`
-    : "<p>暂无可展示的机会拆解。</p>";
+    : "<p>暂无可展示的趋势判断。</p>";
   root.innerHTML = `
     <article class="article">
       <span class="eyebrow">Signal</span>
@@ -3502,9 +4408,10 @@ function mountSignalDetail() {
         <div class="judgment-box">${signal.judgment}</div>
       </div>
       <div class="article-section">
-        <h2>机会拆解</h2>
+        <h2>趋势判断</h2>
         ${analysisSection}
       </div>
+      ${signalCaseEvidenceSection(signal)}
       <div class="article-section">
         <h2>观点参照</h2>
         ${pointSection}
@@ -3524,7 +4431,7 @@ function mountSignalDetail() {
         <div><dt>日期</dt><dd>${data.meta.date}</dd></div>
         <div><dt>适合关注</dt><dd>${signal.audience}</dd></div>
         <div><dt>信息来源</dt><dd>${signal.sources}</dd></div>
-        <div><dt>延伸阅读</dt><dd><a href="${data.opportunity.link}">${data.opportunity.title}</a></dd></div>
+        <div><dt>延伸阅读</dt><dd><a href="${data.trendReport.link}">${data.trendReport.title}</a></dd></div>
         ${groupedTagList(signal)}
       </dl>
     </aside>
@@ -3534,51 +4441,162 @@ function mountSignalDetail() {
 function mountDailyDetail() {
   const root = document.querySelector("[data-daily-detail]");
   if (!root) return;
+  const issue = selectedDailyIssue();
+  const dailyContent = selectedDailyContent(issue);
+  const signals = selectedDailySignals(issue);
+  const builderViews = selectedDailyPoints(issue, true).slice(0, 3);
+  const trendReports = selectedDailyTrendReports(issue).slice(0, 2);
+  const profile = dailyJudgmentProfile(dailyContent, signals);
+  const dateLabel = dailyDateLabel(issue.label || issue.date || data.meta.date);
+  const dailyTitle = cleanText(dailyContent.title || data.daily?.title || "今日观察");
+  const paragraphHtml = (text = "") => {
+    const source = cleanText(text);
+    if (!source) return "";
+    return source
+      .split(/(?<=。|！|？)\s+(?=[^，。！？]{6,})/u)
+      .map((item) => cleanText(item))
+      .filter(Boolean)
+      .map((item) => `<p>${item}</p>`)
+      .join("");
+  };
+  const sourceLinksHtml = (body = "") => {
+    const rows = String(body || "")
+      .split(/\n+/u)
+      .map((line) => line.trim())
+      .map((line) => line.replace(/^-\s*/u, ""))
+      .map((line) => {
+        const match = line.match(/^(.+?)[：:]\s*(https?:\/\/\S+)$/u);
+        if (!match) return null;
+        const label = cleanText(match[1]);
+        const url = match[2].trim();
+        let domain = "查看原文";
+        try {
+          domain = new URL(url).hostname.replace(/^www\./u, "");
+        } catch {
+          domain = "查看原文";
+        }
+        return { label, url, domain };
+      })
+      .filter(Boolean);
+    if (!rows.length) return paragraphHtml(body);
+    return `
+      <div class="daily-detail-source-links">
+        ${rows.map((row) => `
+          <a href="${safeAttribute(row.url)}" target="_blank" rel="noopener noreferrer">
+            <strong>${row.label}</strong>
+            <span>${row.domain} ↗</span>
+          </a>
+        `).join("")}
+      </div>
+    `;
+  };
+  const sourceSections = Array.isArray(dailyContent.sections) ? dailyContent.sections : [];
+  const articleIntro = (dailyContent.summary || []).slice(0, 3).map(paragraphHtml).join("");
+  const articleSections = sourceSections
+    .filter((section) => section.title && !/^今日观察/u.test(section.title))
+    .map((section) => `
+      <h2>${section.title}</h2>
+      ${/相关原文|参考来源|原文链接/u.test(section.title) ? sourceLinksHtml(section.body) : paragraphHtml(section.body)}
+    `)
+    .join("");
+  const articleBody = articleIntro || articleSections
+    ? `${articleIntro}${articleSections}`
+    : `<p>${profile.body}</p><p>${profile.impact}</p>`;
+  const signalRows = signals.slice(0, 5).map((signal, index) => {
+    const href = signal.link || (signal.slug ? `signal-detail.html?id=${encodeURIComponent(signal.slug)}` : "signals.html");
+    return `
+      <a class="daily-detail-signal-row" href="${safeAttribute(href)}">
+        <span>${String(index + 1).padStart(2, "0")}</span>
+        <div>
+          <strong>${homeDailyFeaturedTitle(signal, index)}</strong>
+          <p>${homeShort(homeDailyCardBody(signal), 132)}</p>
+          <small>${compactJoin([homeSourceTime(signal), signal.sourceTier], "来源待复核")}</small>
+        </div>
+      </a>
+    `;
+  }).join("");
+  const builderSection = builderViews.length ? `
+    <section class="daily-detail-bottom-card">
+      <span>前沿观点</span>
+      <h2>前沿观点说了什么</h2>
+      <div class="daily-detail-bottom-grid">
+        ${builderViews.map((item) => `
+          <article>
+            <strong>${homeShort(item.title || "前沿观点", 64)}</strong>
+            <p>${homeShort(item.originalView || item.interpretation || item.calibrates || summaryText(item), 150)}</p>
+            ${item.sourceUrl ? `<a href="${safeAttribute(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原文</a>` : ""}
+          </article>
+        `).join("")}
+      </div>
+    </section>
+  ` : "";
+  const trendCards = trendReports.length ? `
+    <section class="daily-detail-side-card">
+      <span>TREND</span>
+      <h2>趋势追踪</h2>
+        ${trendReports.map((item) => `
+          <a href="${trendReportHref(item)}">
+            <span>${trendReportId(item)}</span>
+            <strong>${trendReportSafeText(item.title)}</strong>
+            <p>${homeShort(trendReportSafeText(item.oneLine || summaryText(item)), 132)}</p>
+          </a>
+        `).join("")}
+    </section>
+  ` : "";
   root.innerHTML = `
-    <article class="article">
-      <span class="eyebrow">Daily</span>
-      <h1>${data.daily.title}</h1>
-      <p class="article-lede">${data.daily.dek}</p>
-      <div class="article-section"><h2>主判断</h2><ul class="point-list">${data.daily.points.map((item) => `<li>${item}</li>`).join("")}</ul></div>
-      <div class="article-section"><h2>今日关键信号</h2><div class="grid">${data.signals.map(signalCard).join("")}</div></div>
-      <div class="article-section"><h2>相关观察</h2>${activeRelationRows(3)}</div>
-      <div class="article-section"><h2>仍需留意</h2><p>${data.daily.risk}</p></div>
+    <article class="article daily-detail-article">
+      <span class="eyebrow">Daily Observation / ${dateLabel}</span>
+      <h1>${dailyTitle.replace(/^今日观察[｜|]\s*/u, "")}</h1>
+      <div class="daily-detail-prose">
+        ${articleBody}
+        ${builderSection}
+      </div>
     </article>
-    <aside class="side-rail">
-      <h2>今日侧记</h2>
-      <dl>
-        <div><dt>日期</dt><dd>${data.meta.date}</dd></div>
-        <div><dt>阅读时长</dt><dd>8 分钟</dd></div>
-        <div><dt>延伸阅读</dt><dd><a href="${data.opportunity.link}">${data.opportunity.title}</a></dd></div>
-      </dl>
+    <aside class="side-rail daily-detail-rail">
+      <section class="daily-detail-side-card">
+        <span>NOTE</span>
+        <h2>今日侧记</h2>
+        <dl>
+          <div><dt>日期</dt><dd>${dateLabel}</dd></div>
+          <div><dt>形态</dt><dd>每日市场综述长文</dd></div>
+          <div><dt>精选变化</dt><dd>${signals.length} 条</dd></div>
+          <div><dt>观点参照</dt><dd>${builderViews.length ? `${builderViews.length} 条` : "今日未采用"}</dd></div>
+        </dl>
+      </section>
+      <section class="daily-detail-side-card">
+        <span>SIGNALS</span>
+        <h2>引用变化</h2>
+        <div class="daily-detail-signal-list">${signalRows || "<p>暂无可展示变化卡。</p>"}</div>
+      </section>
+      ${trendCards}
     </aside>
   `;
 }
 
-function mountOpportunityDetail() {
-  const root = document.querySelector("[data-opportunity-detail]");
+function mountTrendReportDetail() {
+  const root = document.querySelector("[data-trend-report-detail]");
   if (!root) return;
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("id");
-  const opportunity = data.contentIndex?.opportunities?.find((item) => item.slug === slug) || data.opportunity;
-  const related = relatedAssets(opportunity, "opportunity");
+  const trendReport = data.contentIndex?.trendReports?.find((item) => item.slug === slug) || data.trendReport;
+  const related = relatedAssets(trendReport, "trendReport");
   const trendItems = (related.trend?.length ? related.trend : data.contentIndex?.trends || []).slice(0, 2);
   const pointItems = (related.point?.length ? related.point : data.contentIndex?.points || []).slice(0, 2);
-  const variables = opportunityVariableItems(opportunity);
+  const variables = trendReportVariableItems(trendReport);
   const section = (names, title, fallback) => `
     <div class="article-section">
       <h2>${title}</h2>
-      ${articleText(textFromSection(opportunity, names, fallback))}
+      ${articleText(textFromSection(trendReport, names, fallback))}
     </div>
   `;
   root.innerHTML = `
-    <article class="article opportunity-report">
-      <span class="eyebrow">Opportunity Report</span>
-      <h1>${opportunity.title}</h1>
-      <p class="article-lede">${opportunity.oneLine}</p>
+    <article class="article trend-report-report">
+      <span class="eyebrow">Trend Report</span>
+      <h1>${trendReport.title}</h1>
+      <p class="article-lede">${trendReport.oneLine}</p>
       <div class="article-section">
-        <h2>一句话机会判断</h2>
-        <div class="judgment-box">${opportunity.oneLine || summaryText(opportunity)}</div>
+        <h2>一句话趋势判断</h2>
+        <div class="judgment-box">${trendReport.oneLine || summaryText(trendReport)}</div>
       </div>
       ${section(["触发信号", "变化背景"], "变化背景", "相关变化正在从单点发布走向流程、客户和交付层面的连续观察。")}
       ${section(["具体问题", "首要感受者"], "问题与对象", "这个方向会先影响那些流程清楚、客户响应压力大的组织。")}
@@ -3586,17 +4604,17 @@ function mountOpportunityDetail() {
       ${section(["价值来源"], "价值来源", "价值来自响应效率、服务一致性和可复用交付能力。")}
       <div class="article-section">
         <h2>趋势背景</h2>
-        <div class="opportunity-evidence-stack">
-          ${trendItems.map((item) => `<p><strong>${item.title}</strong>${cleanText(item.judgment || item.evidenceGaps || summaryText(item))}</p>`).join("") || articleText(textFromSection(opportunity, ["趋势"], "趋势证据仍在积累，暂不强行画图。"))}
+        <div class="trend-report-evidence-stack">
+          ${trendItems.map((item) => `<p><strong>${item.title}</strong>${cleanText(item.judgment || item.evidenceGaps || summaryText(item))}</p>`).join("") || articleText(textFromSection(trendReport, ["趋势"], "趋势证据仍在积累，暂不强行画图。"))}
         </div>
       </div>
       <div class="article-section">
-        <h2>观点校准</h2>
-        <div class="opportunity-evidence-stack">
-          ${pointItems.map((item) => `<p><strong>${item.title}</strong>${cleanText(item.calibrates || item.interpretation || summaryText(item))}</p>`).join("") || articleText(textFromSection(opportunity, ["观点"], "外部观点只作为判断校准，不替代事实来源。"))}
+        <h2>前沿观点</h2>
+        <div class="trend-report-evidence-stack">
+          ${pointItems.map((item) => `<p><strong>${item.title}</strong>${cleanText(item.calibrates || item.interpretation || summaryText(item))}</p>`).join("") || articleText(textFromSection(trendReport, ["观点"], "外部观点只作为判断参照，不替代事实来源。"))}
         </div>
       </div>
-      ${section(["反证", "限制"], "风险 / 反证", opportunityGap(opportunity))}
+      ${section(["反证", "限制"], "风险 / 反证", trendReportGap(trendReport))}
       <div class="article-section">
         <h2>成立边界</h2>
         <p>当前更像早期信号，仍需观察客户采用、商业化证据、交付成本和责任条款是否同时改善。</p>
@@ -3607,20 +4625,629 @@ function mountOpportunityDetail() {
       </div>
       <div class="article-section">
         <h2>关联内容</h2>
-        ${relationPanel(opportunity, "opportunity") || "<p>暂无更多延伸观察。</p>"}
+        ${relationPanel(trendReport, "trendReport") || "<p>暂无更多延伸观察。</p>"}
       </div>
     </article>
     <aside class="side-rail">
       <h2>报告侧记</h2>
       <dl>
-        <div><dt>发布时间</dt><dd>${opportunity.updated}</dd></div>
-        <div><dt>证据状态</dt><dd>${opportunityEvidenceState(opportunity)}</dd></div>
-        <div><dt>适合关注</dt><dd>${opportunityAudience(opportunity)}</dd></div>
-        <div><dt>主要缺口</dt><dd>${opportunityGap(opportunity)}</dd></div>
-        ${groupedTagList(opportunity)}
+        <div><dt>发布时间</dt><dd>${trendReport.updated}</dd></div>
+        <div><dt>证据状态</dt><dd>${trendReportEvidenceState(trendReport)}</dd></div>
+        <div><dt>适合关注</dt><dd>${trendReportAudience(trendReport)}</dd></div>
+        <div><dt>主要缺口</dt><dd>${trendReportGap(trendReport)}</dd></div>
+        ${groupedTagList(trendReport)}
       </dl>
     </aside>
   `;
+}
+
+function mountAdminV2() {
+  const root = document.querySelector("[data-admin-v2]");
+  if (!root) return;
+
+  const panels = Array.from(root.querySelectorAll("[data-admin-panel]"));
+  const tabs = Array.from(root.querySelectorAll("[data-admin-tab]"));
+  const currentTitle = root.querySelector("[data-admin-current-title]");
+  const currentKicker = root.querySelector("[data-admin-current-kicker]");
+  const moduleMeta = {
+    dashboard: ["OPERATIONS DASHBOARD", "项目统计"],
+    content: ["CONTENT MANAGER", "内容管理"],
+    members: ["MEMBERS", "用户与权限"],
+    invites: ["INVITE CODES", "邀请码"],
+    orders: ["ORDERS", "订阅与订单"],
+    quality: ["QUALITY", "质量检查"],
+    settings: ["SETTINGS", "系统设置"],
+  };
+  const showPanel = (name) => {
+    panels.forEach((panel) => {
+      panel.hidden = panel.dataset.adminPanel !== name;
+    });
+    tabs.forEach((tab) => {
+      const active = tab.dataset.adminTab === name;
+      tab.setAttribute("aria-current", String(active));
+    });
+    if (currentKicker) currentKicker.textContent = moduleMeta[name]?.[0] || "";
+    if (currentTitle) currentTitle.textContent = moduleMeta[name]?.[1] || "";
+  };
+  tabs.forEach((tab) => tab.addEventListener("click", () => showPanel(tab.dataset.adminTab)));
+  showPanel("dashboard");
+
+  const content = window.WaveSightContent || {};
+  const index = content.contentIndex || {};
+  const counts = {
+    daily: Array.isArray(index.dates) ? index.dates.length : Array.isArray(content.dailyBriefs) ? content.dailyBriefs.length : content.daily ? 1 : 0,
+    signals: (index.signals?.length || 0) + (index.frontSignals?.length || 0),
+    trendReports: index.trendReports?.length || 0,
+    knowledge: (index.points?.length || 0) + (index.trends?.length || 0) + (content.tagTaxonomy?.length || 0),
+  };
+
+  Object.entries(counts).forEach(([key, value]) => {
+    const target = root.querySelector(`[data-admin-count="${key}"]`);
+    if (target) target.textContent = String(value);
+  });
+
+  const storedInvites = (() => {
+    try {
+      return JSON.parse(window.localStorage?.getItem("wavesight-admin-invite-codes") || "[]");
+    } catch {
+      return [];
+    }
+  })();
+  const memberStateForDashboard = getMemberState();
+  const dashboardMetrics = [
+    ["UV", 1286, "+12.4%"],
+    ["PV", 6420, "+18.7%"],
+    ["会员数", memberStateForDashboard === "member" ? 238 : 237, "+9"],
+    ["付费数", memberStateForDashboard === "member" ? 86 : 85, "+4"],
+    ["付费转化", "6.6%", "+0.8pp"],
+    ["邀请码", storedInvites.length, `${storedInvites.filter((item) => item.status === "active").length} active`],
+  ];
+  const kpiRoot = root.querySelector("[data-admin-kpis]");
+  if (kpiRoot) {
+    kpiRoot.innerHTML = dashboardMetrics.map(([label, value, delta]) => `
+      <article>
+        <span>${safeHtml(label)}</span>
+        <strong>${safeHtml(value)}</strong>
+        <em>${safeHtml(delta)}</em>
+      </article>
+    `).join("");
+  }
+  const traffic = [820, 940, 1060, 1188, 1104, 1240, 1286];
+  const trafficRoot = root.querySelector("[data-admin-traffic-chart]");
+  if (trafficRoot) {
+    const max = Math.max(...traffic);
+    trafficRoot.innerHTML = traffic.map((value, index) => `
+      <span style="height:${Math.max(12, Math.round((value / max) * 100))}%">
+        <i>${safeHtml(value)}</i>
+        <b>${index + 1}</b>
+      </span>
+    `).join("");
+  }
+  const funnelRoot = root.querySelector("[data-admin-funnel]");
+  if (funnelRoot) {
+    const funnel = [["访问", 6420], ["注册", 237], ["会员", 86], ["付费", 85]];
+    const max = funnel[0][1];
+    funnelRoot.innerHTML = funnel.map(([label, value]) => `
+      <div>
+        <span>${safeHtml(label)}</span>
+        <strong>${safeHtml(value)}</strong>
+        <i style="width:${Math.max(8, Math.round((value / max) * 100))}%"></i>
+      </div>
+    `).join("");
+  }
+  const assetRoot = root.querySelector("[data-admin-assets]");
+  if (assetRoot) {
+    const assets = [["今日观察", counts.daily], ["商业信号", counts.signals], ["趋势追踪", counts.trendReports], ["判断资产", counts.knowledge]];
+    const max = Math.max(...assets.map(([, value]) => Number(value) || 0), 1);
+    assetRoot.innerHTML = assets.map(([label, value]) => `
+      <div>
+        <span>${safeHtml(label)}</span>
+        <strong>${safeHtml(value)}</strong>
+        <i style="width:${Math.max(8, Math.round((value / max) * 100))}%"></i>
+      </div>
+    `).join("");
+  }
+  const opsRoot = root.querySelector("[data-admin-ops]");
+  if (opsRoot) {
+    const ops = [
+      ["今日观察", counts.daily],
+      ["内容更新", counts.signals + counts.trendReports],
+      ["会员状态", memberStateForDashboard],
+      ["付费方案", "月度 / 年度"],
+    ];
+    opsRoot.innerHTML = ops.map(([label, value]) => `<div><span>${safeHtml(label)}</span><strong>${safeHtml(value)}</strong></div>`).join("");
+  }
+
+  const generated = cleanText(content.meta?.generatedAt || content.meta?.date || "");
+  const generatedTarget = root.querySelector("[data-admin-generated]");
+  if (generatedTarget) generatedTarget.textContent = generated ? `内容索引 ${generated}` : "未读取到内容索引";
+
+  const total = counts.daily + counts.signals + counts.trendReports + counts.knowledge;
+  const status = root.querySelector("[data-admin-primary-status]");
+  const statusCopy = root.querySelector("[data-admin-primary-copy]");
+  if (status) status.textContent = total > 0 ? "可进入今日复核" : "内容索引不可用";
+  if (statusCopy) {
+    statusCopy.textContent = total > 0
+      ? "当前数据可支撑内部状态预览，发布仍需完成语法检查、桌面截图和独立质检。"
+      : "请检查 V2 内容索引是否生成。";
+  }
+
+  const sourceRoot = root.querySelector("[data-admin-sources]");
+  if (sourceRoot) {
+    const sourceItems = [
+      ["官方 / 研究 / 监管", "适合作为主支撑", "优先回看原始 URL 与发布时间。"],
+      ["A 级媒体 / 财报 / 融资", "可作为商业变化证据", "需要说明客户采用和商业化状态。"],
+      ["AI HOT / follow-builders", "只作线索发现", "进入前台前必须二搜和重新分级。"],
+    ];
+    sourceRoot.innerHTML = sourceItems.map(([name, state, note]) => `
+      <article>
+        <strong>${name}</strong>
+        <span>${state}</span>
+        <p>${note}</p>
+      </article>
+    `).join("");
+  }
+
+  const release = root.querySelector("[data-admin-release='content']");
+  if (release) release.textContent = total > 0 ? "内容索引已读取" : "等待内容索引";
+
+  const draftKey = "wavesight-admin-content-drafts";
+  const readDrafts = () => {
+    try {
+      return JSON.parse(window.localStorage?.getItem(draftKey) || "{}");
+    } catch {
+      return {};
+    }
+  };
+  const writeDrafts = (drafts) => {
+    window.localStorage?.setItem(draftKey, JSON.stringify(drafts));
+  };
+  const contentType = root.querySelector("[data-admin-content-type]");
+  const contentSearch = root.querySelector("[data-admin-content-search]");
+  const contentStatus = root.querySelector("[data-admin-content-status]");
+  const contentItemsRoot = root.querySelector("[data-admin-content-items]");
+  const contentCount = root.querySelector("[data-admin-content-count]");
+  const contentForm = root.querySelector("[data-admin-content-form]");
+  const draftState = root.querySelector("[data-admin-content-draft-state]");
+  const cmsToolbar = root.querySelector(".admin-v2-cms-toolbar");
+  const cmsLayout = root.querySelector(".admin-v2-cms-layout");
+  const editorPage = root.querySelector("[data-admin-editor-page]");
+  const sectionEditor = root.querySelector("[data-admin-section-editor]");
+  const contentGroups = {
+    dates: index.dates || [],
+    signals: index.signals || [],
+    trendReports: index.trendReports || [],
+    points: index.points || [],
+    trends: index.trends || [],
+  };
+  const contentLabels = {
+    dates: "今日观察",
+    signals: "商业信号",
+    trendReports: "趋势追踪",
+    points: "前沿观点",
+    trends: "趋势背景",
+  };
+  const itemKey = (type, item, fallbackIndex = 0) => `${type}:${item.id || item.slug || item.date || fallbackIndex}`;
+  const itemSummary = (item) => cleanText(item.dek || item.brief || item.judgment || item.oneLine || item.calibrates || item.evidenceGaps || "");
+  const itemSources = (item) => cleanText(Array.isArray(item.sources) ? item.sources.join("\n") : item.sources || item.sourceUrl || item.sourcePath || "");
+  const itemRelations = (item) => cleanText(Array.isArray(item.relations) ? item.relations.join("\n") : item.relationFields || "");
+  const itemTagsText = (item) => (item.tags || []).map((tag) => cleanText(tag.name || tag)).filter(Boolean).join("\n");
+  const itemCounter = (item) => cleanText(item.counter || item.evidenceGaps || item.gaps || "");
+  const itemSections = (item) => {
+    if (Array.isArray(item.sections) && item.sections.length) {
+      return item.sections.map((section, index) => ({
+        title: cleanText(Array.isArray(section) ? section[0] : section.title || `模块 ${index + 1}`),
+        body: cleanText(Array.isArray(section) ? section[1] : section.body || section.content || ""),
+      }));
+    }
+    const pairs = [
+      ["事实背景", item.background],
+      ["商业判断", item.judgment || item.oneLine],
+      ["前沿观点", item.calibration || item.calibrates || item.interpretation],
+      ["反证与缺口", item.counter || item.evidenceGaps],
+    ].filter(([, value]) => cleanText(value));
+    return pairs.map(([title, body]) => ({ title, body: cleanText(body) }));
+  };
+  const openEditorPage = () => {
+    if (cmsToolbar) cmsToolbar.hidden = true;
+    if (cmsLayout) cmsLayout.hidden = true;
+    if (editorPage) editorPage.hidden = false;
+  };
+  const closeEditorPage = () => {
+    if (cmsToolbar) cmsToolbar.hidden = false;
+    if (cmsLayout) cmsLayout.hidden = false;
+    if (editorPage) editorPage.hidden = true;
+  };
+  const applyDraft = (type, item, fallbackIndex = 0) => {
+    const key = itemKey(type, item, fallbackIndex);
+    return { ...item, ...(readDrafts()[key] || {}), __draftKey: key };
+  };
+  const fillContentForm = (type, item) => {
+    if (!contentForm) return;
+    const key = item.__draftKey;
+    contentForm.elements.key.value = key;
+    contentForm.elements.title.value = cleanText(item.title || item.label || "");
+    contentForm.elements.summary.value = itemSummary(item);
+    contentForm.elements.status.value = item.status || "review";
+    contentForm.elements.note.value = item.note || "";
+    if (contentForm.elements.date) contentForm.elements.date.value = cleanText(item.date || item.updated || "");
+    if (contentForm.elements.sources) contentForm.elements.sources.value = itemSources(item);
+    if (contentForm.elements.relations) contentForm.elements.relations.value = itemRelations(item);
+    if (contentForm.elements.tags) contentForm.elements.tags.value = itemTagsText(item);
+    if (contentForm.elements.counter) contentForm.elements.counter.value = itemCounter(item);
+    if (sectionEditor) {
+      const sections = itemSections(item);
+      sectionEditor.innerHTML = sections.length ? sections.map((section, index) => `
+        <article class="admin-v2-section-edit">
+          <label>
+            <span>模块标题</span>
+            <input name="sectionTitle${index}" value="${safeAttribute(section.title)}">
+          </label>
+          <label>
+            <span>已有内容</span>
+            <textarea name="sectionBody${index}" rows="6">${safeHtml(section.body)}</textarea>
+          </label>
+        </article>
+      `).join("") : `<div class="admin-v2-content-empty">暂无正文模块。</div>`;
+    }
+    if (draftState) draftState.textContent = readDrafts()[key] ? "本机草稿" : "原始内容";
+    openEditorPage();
+  };
+  const renderContentItems = () => {
+    const type = contentType?.value || "signals";
+    const query = cleanText(contentSearch?.value || "").toLowerCase();
+    const statusFilter = contentStatus?.value || "all";
+    const drafts = readDrafts();
+    const items = (contentGroups[type] || []).map((item, itemIndex) => applyDraft(type, item, itemIndex));
+    const filtered = items.filter((item) => {
+      const haystack = cleanText(`${item.title || item.label || ""} ${item.date || ""} ${itemSummary(item)}`).toLowerCase();
+      const status = item.status || "review";
+      return (!query || haystack.includes(query)) && (statusFilter === "all" || status === statusFilter);
+    });
+    if (contentCount) contentCount.textContent = `${contentLabels[type]}：${filtered.length} / ${items.length} 条`;
+    if (!contentItemsRoot) return;
+    contentItemsRoot.innerHTML = filtered.length ? filtered.map((item) => `
+      <button class="admin-v2-cms-row" type="button" data-admin-content-key="${safeAttribute(item.__draftKey)}" role="row">
+        <span>
+          <strong>${safeHtml(cleanText(item.title || item.label || "未命名内容"))}</strong>
+          <small>${safeHtml(itemSummary(item).slice(0, 72) || "暂无摘要")}</small>
+        </span>
+        <span>${safeHtml(contentLabels[type])}</span>
+        <span>${safeHtml(item.date || item.updated || "未标日期")}</span>
+        <span><em>${safeHtml(item.status || "review")}</em>${drafts[item.__draftKey] ? "<i>草稿</i>" : ""}</span>
+        <span>编辑</span>
+      </button>
+    `).join("") : `<div class="admin-v2-content-empty">没有找到匹配内容。</div>`;
+  };
+
+  contentType?.addEventListener("change", renderContentItems);
+  contentSearch?.addEventListener("input", renderContentItems);
+  contentStatus?.addEventListener("change", renderContentItems);
+  contentItemsRoot?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-admin-content-key]");
+    if (!button) return;
+    const type = contentType?.value || "signals";
+    const items = (contentGroups[type] || []).map((item, itemIndex) => applyDraft(type, item, itemIndex));
+    const item = items.find((candidate) => candidate.__draftKey === button.dataset.adminContentKey);
+    if (item) fillContentForm(type, item);
+  });
+  contentForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const key = contentForm.elements.key.value;
+    if (!key) return;
+    const drafts = readDrafts();
+    drafts[key] = {
+      title: cleanText(contentForm.elements.title.value),
+      judgment: cleanText(contentForm.elements.summary.value),
+      dek: cleanText(contentForm.elements.summary.value),
+      oneLine: cleanText(contentForm.elements.summary.value),
+      status: contentForm.elements.status.value,
+      note: cleanText(contentForm.elements.note.value),
+      date: cleanText(contentForm.elements.date?.value || ""),
+      sources: cleanText(contentForm.elements.sources?.value || ""),
+      relationFields: cleanText(contentForm.elements.relations?.value || ""),
+      counter: cleanText(contentForm.elements.counter?.value || ""),
+      tagsText: cleanText(contentForm.elements.tags?.value || ""),
+      editedAt: new Date().toISOString(),
+    };
+    const sectionDrafts = Array.from(contentForm.querySelectorAll(".admin-v2-section-edit")).map((block, index) => [
+      cleanText(contentForm.elements[`sectionTitle${index}`]?.value || ""),
+      cleanText(contentForm.elements[`sectionBody${index}`]?.value || ""),
+    ]).filter(([title, body]) => title || body);
+    if (sectionDrafts.length) drafts[key].sections = sectionDrafts;
+    writeDrafts(drafts);
+    renderContentItems();
+  });
+  root.querySelector("[data-admin-content-reset]")?.addEventListener("click", () => {
+    const key = contentForm?.elements.key.value;
+    if (!key) return;
+    const drafts = readDrafts();
+    delete drafts[key];
+    writeDrafts(drafts);
+    renderContentItems();
+  });
+  root.querySelector("[data-admin-editor-back]")?.addEventListener("click", closeEditorPage);
+  closeEditorPage();
+  renderContentItems();
+
+  const memberState = getMemberState();
+  const memberCopy = {
+    public: ["访客状态", "当前浏览器未记录登录或会员状态。"],
+    "logged-in": ["已登录", "当前浏览器已记录账号，可继续查看账户与订阅路径。"],
+    member: ["会员完整态", "当前浏览器已记录会员状态，可预览完整阅读层。"],
+  }[memberState] || ["访客状态", "当前浏览器未记录登录或会员状态。"];
+  const stateTarget = root.querySelector("[data-admin-member-state]");
+  const copyTarget = root.querySelector("[data-admin-member-copy]");
+  if (stateTarget) stateTarget.textContent = memberCopy[0];
+  if (copyTarget) copyTarget.textContent = memberCopy[1];
+  const userTarget = root.querySelector("[data-admin-member-user]");
+  if (userTarget) {
+    const user = getStoredUser();
+    userTarget.textContent = user.email || user.name || "未登录";
+  }
+
+  const usersKey = "wavesight-admin-users";
+  const defaultUsers = () => {
+    const currentUser = getStoredUser();
+    return [
+      {
+        id: "u-founder",
+        name: "运营管理员",
+        email: currentUser.email || "admin@wavesight.ai",
+        role: "admin",
+        membership: memberState,
+        status: "active",
+      },
+      { id: "u-001", name: "林澈", email: "lin.chen@example.com", role: "editor", membership: "member", status: "active" },
+      { id: "u-002", name: "周岩", email: "zhou.yan@example.com", role: "member", membership: "member", status: "active" },
+      { id: "u-003", name: "许然", email: "xu.ran@example.com", role: "member", membership: "logged-in", status: "expired" },
+      { id: "u-004", name: "顾宁", email: "gu.ning@example.com", role: "viewer", membership: "public", status: "paused" },
+    ];
+  };
+  const readUsers = () => {
+    try {
+      const users = JSON.parse(window.localStorage?.getItem(usersKey) || "[]");
+      return Array.isArray(users) && users.length ? users : defaultUsers();
+    } catch {
+      return defaultUsers();
+    }
+  };
+  const writeUsers = (users) => window.localStorage?.setItem(usersKey, JSON.stringify(users));
+  const userStatsRoot = root.querySelector("[data-admin-user-stats]");
+  const userListRoot = root.querySelector("[data-admin-user-list]");
+  const userFilter = root.querySelector("[data-admin-user-filter]");
+  const renderUsers = () => {
+    const users = readUsers();
+    const filtered = users.filter((user) => (userFilter?.value || "all") === "all" || user.status === userFilter.value);
+    if (userStatsRoot) {
+      const stats = [
+        ["用户数", users.length],
+        ["管理员", users.filter((user) => user.role === "admin").length],
+        ["会员", users.filter((user) => user.membership === "member").length],
+        ["暂停", users.filter((user) => user.status === "paused").length],
+      ];
+      userStatsRoot.innerHTML = stats.map(([label, value]) => `<article><span>${safeHtml(label)}</span><strong>${safeHtml(value)}</strong></article>`).join("");
+    }
+    if (!userListRoot) return;
+    userListRoot.innerHTML = filtered.map((user) => `
+      <div class="admin-v2-user-row" role="row" data-admin-user-id="${safeAttribute(user.id)}">
+        <span><strong>${safeHtml(user.name)}</strong><small>${safeHtml(user.email)}</small></span>
+        <span>
+          <select data-admin-user-field="role">
+            ${["admin", "editor", "member", "viewer"].map((value) => `<option value="${value}" ${user.role === value ? "selected" : ""}>${value}</option>`).join("")}
+          </select>
+        </span>
+        <span>
+          <select data-admin-user-field="membership">
+            ${["public", "logged-in", "member"].map((value) => `<option value="${value}" ${user.membership === value ? "selected" : ""}>${value}</option>`).join("")}
+          </select>
+        </span>
+        <span>
+          <select data-admin-user-field="status">
+            ${["active", "paused", "expired"].map((value) => `<option value="${value}" ${user.status === value ? "selected" : ""}>${value}</option>`).join("")}
+          </select>
+        </span>
+        <span><button type="button" data-admin-user-save>保存</button></span>
+      </div>
+    `).join("");
+  };
+  userFilter?.addEventListener("change", renderUsers);
+  root.querySelector("[data-admin-user-seed]")?.addEventListener("click", () => {
+    writeUsers(defaultUsers());
+    renderUsers();
+  });
+  userListRoot?.addEventListener("click", (event) => {
+    const save = event.target.closest("[data-admin-user-save]");
+    if (!save) return;
+    const row = save.closest("[data-admin-user-id]");
+    const id = row?.dataset.adminUserId;
+    const users = readUsers().map((user) => {
+      if (user.id !== id) return user;
+      return {
+        ...user,
+        role: row.querySelector('[data-admin-user-field="role"]').value,
+        membership: row.querySelector('[data-admin-user-field="membership"]').value,
+        status: row.querySelector('[data-admin-user-field="status"]').value,
+      };
+    });
+    writeUsers(users);
+    renderUsers();
+  });
+  renderUsers();
+
+  const ordersKey = "wavesight-admin-orders";
+  const defaultOrders = () => [
+    { id: "o-20260511-01", name: "林澈", email: "lin.chen@example.com", plan: "monthly", amount: 99, date: "2026-05-11", status: "paid" },
+    { id: "o-20260511-02", name: "周岩", email: "zhou.yan@example.com", plan: "yearly", amount: 799, date: "2026-05-11", status: "paid" },
+    { id: "o-20260510-01", name: "许然", email: "xu.ran@example.com", plan: "monthly", amount: 99, date: "2026-05-10", status: "pending" },
+    { id: "o-20260509-01", name: "顾宁", email: "gu.ning@example.com", plan: "yearly", amount: 799, date: "2026-05-09", status: "paid" },
+    { id: "o-20260508-01", name: "陈默", email: "chen.mo@example.com", plan: "monthly", amount: 99, date: "2026-05-08", status: "refunded" },
+    { id: "o-20260507-01", name: "王屿", email: "wang.yu@example.com", plan: "monthly", amount: 99, date: "2026-05-07", status: "paid" },
+  ];
+  const readOrders = () => {
+    try {
+      const orders = JSON.parse(window.localStorage?.getItem(ordersKey) || "[]");
+      return Array.isArray(orders) && orders.length ? orders : defaultOrders();
+    } catch {
+      return defaultOrders();
+    }
+  };
+  const writeOrders = (orders) => window.localStorage?.setItem(ordersKey, JSON.stringify(orders));
+  const orderStatsRoot = root.querySelector("[data-admin-order-stats]");
+  const orderTrendRoot = root.querySelector("[data-admin-order-trend]");
+  const orderPlansRoot = root.querySelector("[data-admin-order-plans]");
+  const orderListRoot = root.querySelector("[data-admin-order-list]");
+  const orderFilter = root.querySelector("[data-admin-order-filter]");
+  const renderOrders = () => {
+    const orders = readOrders();
+    const paidOrders = orders.filter((order) => order.status === "paid");
+    const planGroups = paidOrders.reduce((acc, order) => {
+      acc[order.plan] ||= { count: 0, amount: 0 };
+      acc[order.plan].count += 1;
+      acc[order.plan].amount += Number(order.amount) || 0;
+      return acc;
+    }, {});
+    const totalAmount = paidOrders.reduce((sum, order) => sum + (Number(order.amount) || 0), 0);
+    const stats = [
+      ["付费会员", paidOrders.length],
+      ["分类数", Object.keys(planGroups).length],
+      ["总金额", `¥${totalAmount}`],
+      ["月度金额", `¥${planGroups.monthly?.amount || 0}`],
+      ["年度金额", `¥${planGroups.yearly?.amount || 0}`],
+    ];
+    if (orderStatsRoot) {
+      orderStatsRoot.innerHTML = stats.map(([label, value]) => `<article><span>${safeHtml(label)}</span><strong>${safeHtml(value)}</strong></article>`).join("");
+    }
+    if (orderTrendRoot) {
+      const days = ["2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11"];
+      const values = days.map((day) => paidOrders.filter((order) => order.date === day).reduce((sum, order) => sum + order.amount, 0));
+      const max = Math.max(...values, 1);
+      orderTrendRoot.innerHTML = values.map((value, index) => `
+        <span style="height:${Math.max(12, Math.round((value / max) * 100))}%">
+          <i>¥${safeHtml(value)}</i>
+          <b>${index + 7}</b>
+        </span>
+      `).join("");
+    }
+    if (orderPlansRoot) {
+      const planRows = [["monthly", planGroups.monthly?.amount || 0], ["yearly", planGroups.yearly?.amount || 0]];
+      const max = Math.max(...planRows.map(([, value]) => value), 1);
+      orderPlansRoot.innerHTML = planRows.map(([label, value]) => `
+        <div>
+          <span>${safeHtml(label)}</span>
+          <strong>¥${safeHtml(value)}</strong>
+          <i style="width:${Math.max(8, Math.round((value / max) * 100))}%"></i>
+        </div>
+      `).join("");
+    }
+    const filtered = orders.filter((order) => (orderFilter?.value || "all") === "all" || order.status === orderFilter.value);
+    if (orderListRoot) {
+      orderListRoot.innerHTML = filtered.map((order) => `
+        <div class="admin-v2-order-row" role="row" data-admin-order-id="${safeAttribute(order.id)}">
+          <span><strong>${safeHtml(order.name)}</strong><small>${safeHtml(order.email)}</small></span>
+          <span>${safeHtml(order.plan)}</span>
+          <span>¥${safeHtml(order.amount)}</span>
+          <span>${safeHtml(order.date)}</span>
+          <span>
+            <select data-admin-order-status>
+              ${["paid", "pending", "refunded"].map((value) => `<option value="${value}" ${order.status === value ? "selected" : ""}>${value}</option>`).join("")}
+            </select>
+          </span>
+          <span><button type="button" data-admin-order-save>保存</button></span>
+        </div>
+      `).join("");
+    }
+  };
+  orderFilter?.addEventListener("change", renderOrders);
+  orderListRoot?.addEventListener("click", (event) => {
+    const save = event.target.closest("[data-admin-order-save]");
+    if (!save) return;
+    const row = save.closest("[data-admin-order-id]");
+    const id = row?.dataset.adminOrderId;
+    const orders = readOrders().map((order) => order.id === id ? { ...order, status: row.querySelector("[data-admin-order-status]").value } : order);
+    writeOrders(orders);
+    renderOrders();
+  });
+  renderOrders();
+
+  const inviteKey = "wavesight-admin-invite-codes";
+  const readInvites = () => {
+    try {
+      return JSON.parse(window.localStorage?.getItem(inviteKey) || "[]");
+    } catch {
+      return [];
+    }
+  };
+  const writeInvites = (items) => {
+    window.localStorage?.setItem(inviteKey, JSON.stringify(items));
+  };
+  const inviteList = root.querySelector("[data-admin-invite-list]");
+  const inviteStatus = root.querySelector("[data-admin-invite-status]");
+  const renderInvites = () => {
+    const invites = readInvites();
+    if (inviteStatus) inviteStatus.textContent = invites.length ? `本机已有 ${invites.length} 个邀请码。` : "本机暂无邀请码。";
+    if (!inviteList) return;
+    inviteList.innerHTML = invites.length ? invites.map((item) => `
+      <article>
+        <div>
+          <strong>${safeHtml(item.code)}</strong>
+          <span>${safeHtml(item.status)} · ${safeHtml(item.note || "未备注")}</span>
+        </div>
+        <p>生成 ${safeHtml(item.createdAt)} / 到期 ${safeHtml(item.expiresAt)}</p>
+        <button type="button" data-admin-invite-toggle="${safeAttribute(item.code)}">${item.status === "paused" ? "恢复" : "暂停"}</button>
+      </article>
+    `).join("") : `
+      <article class="is-empty">
+        <div>
+          <strong>还没有邀请码</strong>
+          <span>生成后会显示在这里</span>
+        </div>
+        <p>当前只保存在这台设备的浏览器里。</p>
+      </article>
+    `;
+  };
+
+  root.querySelector("[data-admin-invite-form]")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const count = Math.max(1, Math.min(20, Number(formData.get("count") || 1)));
+    const days = Math.max(1, Math.min(365, Number(formData.get("days") || 30)));
+    const note = cleanText(formData.get("note") || "");
+    const now = new Date();
+    const expires = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
+    const existing = readInvites();
+    const nextItems = Array.from({ length: count }, () => {
+      const chunk = Math.random().toString(36).slice(2, 6).toUpperCase();
+      const suffix = Math.random().toString(36).slice(2, 6).toUpperCase();
+      return {
+        code: `GLAI-${chunk}-${suffix}`,
+        status: "active",
+        note,
+        createdAt: now.toISOString().slice(0, 10),
+        expiresAt: expires.toISOString().slice(0, 10),
+      };
+    });
+    writeInvites([...nextItems, ...existing]);
+    event.currentTarget.reset();
+    renderInvites();
+  });
+
+  root.querySelector("[data-admin-invite-clear]")?.addEventListener("click", () => {
+    writeInvites([]);
+    renderInvites();
+  });
+
+  inviteList?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-admin-invite-toggle]");
+    if (!button) return;
+    const code = button.dataset.adminInviteToggle;
+    const invites = readInvites().map((item) => item.code === code
+      ? { ...item, status: item.status === "paused" ? "active" : "paused" }
+      : item);
+    writeInvites(invites);
+    renderInvites();
+  });
+  renderInvites();
 }
 
 function boot() {
@@ -3630,6 +5257,7 @@ function boot() {
   mountAuthForms();
   mountAccountPage();
   mountBuilders();
+  mountAdminV2();
   if (!hasSiteData) {
     const main = document.querySelector("main");
     if (main) {
@@ -3657,18 +5285,18 @@ function boot() {
   mountSignalBuildersEntry();
   mountHome();
   mountDaily();
-  mountOpportunity();
-  mountOpportunityWatch();
-  mountOpportunityFramework();
+  mountTrendReport();
+  mountTrendReportWatch();
+  mountTrendReportFramework();
   mountSignalArchive();
   mountSignalRelations();
-  mountOpportunityIndex();
-  mountOpportunityRelations();
+  mountTrendReportIndex();
+  mountTrendReportRelations();
   mountBrief();
   mountBriefAssets();
   mountSignalDetail();
   mountDailyDetail();
-  mountOpportunityDetail();
+  mountTrendReportDetail();
 }
 
 document.addEventListener("DOMContentLoaded", boot);

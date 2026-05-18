@@ -1,6 +1,6 @@
 {
   "project": "观澜AI｜WaveSight AI",
-  "updatedAt": "2026-05-10",
+  "updatedAt": "2026-05-18",
   "method": "agent-workflow + PM review + staged acceptance",
   "statusLegend": {
     "pending": "尚未开始",
@@ -82,7 +82,7 @@
       "priority": "high",
       "automation_level": "agent_draft_human_approve",
       "approval_required": true,
-      "status": "verify",
+      "status": "review",
       "problem": "Tags 当前容易变成标签堆砌，无法真正连接 signal、priority、trend、opportunity。",
       "solution": "建立标签分层：赛道、职能、客户、场景、阶段、地域、证据、行动。",
       "acceptance": [
@@ -100,7 +100,7 @@
       "priority": "high",
       "automation_level": "agent_can_execute",
       "approval_required": false,
-      "status": "verify",
+      "status": "passed",
       "problem": "机会卡代表未来机会，不应以具体公司名命名。",
       "solution": "机会标题保留方向，公司名放入代表案例、来源或相关 Signals。",
       "acceptance": [
@@ -363,7 +363,7 @@
         "高风险操作有明确提示或二次确认",
         "后台文案面向管理任务，方便快速操作"
       ],
-      "verification": "查看 PRD-007-admin-console.md，并用普通入口和 admin.html 分别验收权限边界与后台工作流。"
+      "verification": "2026-05-11 已收到 WSD-20260511-04-v2-admin-pages-redesign-closeout.md；用户手工确认 Admin 页面，不再质检。V2 Admin 开发改动保留，WSD-20260511-09-v2-admin-pages-quality-review 标记为 void / user-waived。"
     },
     {
       "id": "GL-M3-004",
@@ -1976,6 +1976,56 @@
         "未做 Netlify / Git 发布"
       ],
       "verification": "查看 agent-workflow/reports/WSD-20260510-key-signals-compression-closeout.md、agent-workflow/reports/WSD-20260511-front-signal-report-closeout.md、agent-workflow/reports/WSD-20260511-structured-signal-card-closeout.md、agent-workflow/reports/WSD-20260511-builder-perspective-system-closeout.md、dispatch-board、progress 和 docs/agent-handoff。"
+    },
+    {
+      "id": "GL-M4-049",
+      "milestone": "M4",
+      "title": "V2 Raw / Pool / Card 证据规则统一",
+      "owner": "workflow / data",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "passed",
+      "problem": "每日监测、Pool 分流、变化卡、案例卡、观点卡和趋势卡之间存在旧规则、旧字段和证据门槛不一致的问题，容易让 AI HOT、社区讨论或聚合来源被误用为事实主证据。",
+      "solution": "通过 WSD-20260518-RAW-POOL-CARD-RULES 统一 Raw-first / Evidence-first 规则，重建 guanlan-daily-monitor，明确 Pool 分流、Raw 回源字段、卡片证据门槛和旧资产迁移缺口。",
+      "acceptance": [
+        "Raw 明确为事实证据底座，保留 full_text、clean_text、full_text_hash、source_level、extraction_quality、usable_for 和 missing_information",
+        "Pool 明确为候选分流层，分为 core_pool、emerging_pool、user_feedback_pool、watchlist、index_only 和 discard",
+        "AI HOT、follow-builders、社区和聚合来源只能作为 discovery / source-router，不得单独作为事实主证据",
+        "变化卡、案例卡、观点卡和趋势卡模板已按 Raw / Pool 证据规则重设",
+        "guanlan-daily-monitor skill 和相关自动化提示已同步",
+        "syntax Quality Gate 复验通过",
+        "旧变化卡 / 案例卡 / 观点卡 schema 迁移与 Raw 回填已记录为后续任务"
+      ],
+      "verification": "查看 agent-workflow/reports/WSD-20260518-raw-pool-card-rules-closeout.md、agent-workflow/product/raw-evidence-schema.md、agent-workflow/product/pool-routing-rules.md、agent-workflow/product/daily-monitoring-playbook.md、01-SiteV2/knowledge/10-Templates/、dispatch-board、progress 和 docs/agent-handoff。"
+    },
+    {
+      "id": "GL-M4-050",
+      "milestone": "M4",
+      "title": "V2.1 战略产品基座与历史冲突清理",
+      "owner": "strategy / pm / workflow",
+      "priority": "high",
+      "automation_level": "agent_can_execute",
+      "approval_required": false,
+      "status": "passed",
+      "problem": "grill-me 战略产品收口和 Raw / Pool / Card 规则收口后，历史活文档中仍残留 V2.0、旧自动化名、旧同步闸门、V1 归档路径和前台可信边界等冲突口径。",
+      "solution": "以 WSD-20260518-GRILLME-STRATEGY-PRODUCT 和 WSD-20260518-RAW-POOL-CARD-RULES 为 V2.1 当前基座，清理 AGENTS、current-context、handoff、docs README、站点 README、派发模板、数据模型和 Raw / Pool 相关规则中的冲突表达，并将网站版本升级为 V2.1。",
+      "acceptance": [
+        "grill-me 战略产品 closeout 已标记 accepted",
+        "V2.1 当前基座已写入 AGENTS、current-context、handoff 和 progress",
+        "旧 daily-monitor-router、v2-content-site-daily-update、unified-site-sync 不再作为当前活文档口径",
+        "SYS-11、SYS-16 和 V2-DAILY-AUTO 已标记为 historical / superseded，当前以 SYS-17 guanlan-daily-monitor 六线程为准",
+        "页面任务默认改为桌面端优先、Copy-first、UI/UE 桌面证据和调度复核；移动端专项仅在派发单明确要求时硬阻塞",
+        "V2-OPPORTUNITY-BRIEF-IMPLEMENT 已从 ready 改为 stale / do-not-dispatch，机会判断不再作为一级机会中心直接派发",
+        "V1 旧站和旧文章归档路径不再作为当前仓库读取路径",
+        "前台表达不再使用可信边界，改为观察边界或 capture_scope",
+        "站点脚本和当前站点数据写入 meta.version=V2.1",
+        "页脚显示 V2.1",
+        "neat-freak 工作区清理已完成，旧派发单、旧报告、失败任务非必要产物和 timestamped 临时质量报告已物理删除或忽略",
+        "dispatch-board、closeout-queue、progress、daily-run-log 已同步标记 physically-cleaned / do-not-dispatch / 历史说明",
+        "syntax Quality Gate 通过"
+      ],
+      "verification": "查看 agent-workflow/reports/WSD-20260518-grillme-strategy-product-closeout.md、agent-workflow/reports/WSD-20260518-raw-pool-card-rules-closeout.md、agent-workflow/reports/WSD-20260518-v21-rule-workbench-cleanup-closeout.md、agent-workflow/reports/WSD-20260518-neat-freak-workspace-cleanup-closeout.md、AGENTS.md、agent-workflow/governance/current-context.md、docs/agent-handoff.md、01-SiteV2/site/data/site-content.json、01-SiteV2/site/assets/app.js、dispatch-board 和 progress。"
     }
   ]
 }
