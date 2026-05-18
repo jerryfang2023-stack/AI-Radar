@@ -115,6 +115,15 @@ function yamlArray(values = []) {
   return `[${items.map(yamlString).join(", ")}]`;
 }
 
+function toList(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (!value) return [];
+  if (typeof value === "object") return Object.entries(value)
+    .filter(([, enabled]) => enabled)
+    .map(([key]) => key);
+  return [String(value)];
+}
+
 function excerpt(record, type = "") {
   const excerpts = Array.isArray(record.key_excerpts) ? record.key_excerpts : [];
   return excerpts.find((item) => !type || item.type === type)?.text || excerpts[0]?.text || record.clean_text || record.full_text || record.title || "";
@@ -148,7 +157,7 @@ function isCoreEvidence(record) {
 }
 
 function usable(record, type) {
-  return Array.isArray(record.usable_for) && record.usable_for.includes(type);
+  return toList(record.usable_for).includes(type);
 }
 
 function poolCandidates(records) {
@@ -930,17 +939,17 @@ function poolMarkdown(date, records) {
       `- source_role: ${record.source_role || ""}`,
       `- origin_fetch_status: ${record.origin_fetch_status || ""}`,
       `- raw_status: pooled`,
-      `- pool_routes: ${(record.pool_routes || ["core_pool"]).join(", ")}`,
+      `- pool_routes: ${(toList(record.pool_routes).length ? toList(record.pool_routes) : ["core_pool"]).join(", ")}`,
       `- raw_content_hash: ${record.content_hash || ""}`,
       `- raw_full_text_hash: ${record.full_text_hash || ""}`,
       `- raw_semantic_hash: ${record.semantic_hash || ""}`,
       `- theme: ${record.theme_label || record.theme || ""}`,
       `- keyword_group: ${record.keyword_group || ""}`,
       `- score: ${scoreOf(record).toFixed(1)}`,
-      `- usable_for: ${(record.usable_for || []).join(", ")}`,
+      `- usable_for: ${toList(record.usable_for).join(", ")}`,
       `- key_excerpts: ${JSON.stringify((record.key_excerpts || []).slice(0, 4))}`,
       `- evidence_seed: ${JSON.stringify(record.evidence_seed || {})}`,
-      `- missing_information: ${(record.missing_information || []).join("；") || "none"}`,
+      `- missing_information: ${toList(record.missing_information).join("；") || "none"}`,
       `- 入池理由：${reasonLine(record)}`,
       `- 淘汰风险：${missing(record)}`,
       ""

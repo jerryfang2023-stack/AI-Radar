@@ -4,7 +4,7 @@ window.WaveSightContent = {
     "sourceLabel": "Generated from 01-SiteV2/content (2 dates)",
     "brand": "观澜AI",
     "version": "V2.1",
-    "generatedAt": "2026-05-18T07:29:29.621Z",
+    "generatedAt": "2026-05-18T08:06:33.267Z",
     "contentRoot": "01-SiteV2/content"
   },
   "tagTaxonomy": [
@@ -564,11 +564,11 @@ window.WaveSightContent = {
       {
         "date": "2026-05-18",
         "label": "2026.05.18",
-        "title": "Peter Yang｜I ended up buying this looks promising https://t.co/xZ9CD9HMKf",
-        "dek": "当日内容仍在整理，暂以已入库信号作为观察样本。",
-        "signalCount": 0,
-        "pointCount": 5,
-        "trendCount": 12,
+        "title": "Garry Tan｜Saturday morning and it’s a good time to …",
+        "dek": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+        "signalCount": 8,
+        "pointCount": 19,
+        "trendCount": 2,
         "hasTrendReport": true
       },
       {
@@ -576,25 +576,25 @@ window.WaveSightContent = {
         "label": "2026.05.17",
         "title": "今日观察｜AI 进了工作流，控制权和风险先浮出水面",
         "dek": "今天的 AI 新闻没有一个漂亮的中心。没有那种一看就能上热搜的模型发布，也没有一句能被到处转发的宏大口号。\n\n但几条材料摆在一起，味道很清楚：AI 正在从“会回答”往“会动手”挪。它一旦动手，就会碰产品组织、代码仓库、数据库、金融风控和供应商选择。热闹少了一点，生意味反而更重。",
-        "signalCount": 5,
+        "signalCount": 1,
         "pointCount": 5,
-        "trendCount": 12,
+        "trendCount": 1,
         "hasTrendReport": false
       }
     ],
     "signals": [
       {
         "id": "CHG-20260517-01",
-        "slug": "openai-把-chatgpt-codex-和-api-产品线收拢",
-        "title": "OpenAI 把 ChatGPT、Codex 和 API 产品线收拢",
+        "slug": "开发者平台环境继续扩张",
+        "title": "开发者平台环境继续扩张",
         "date": "2026-05-17",
-        "brief": "Agent 时代的大模型公司，不只比模型能力，也比谁能把入口、工具和企业接入连成一套产品。",
-        "judgment": "这不是普通人事新闻，而是 OpenAI 把聊天入口、编码代理和开发者接口放进同一套产品节奏里。",
-        "event": "媒体转述称 OpenAI 将 ChatGPT、Codex 和 API 合并为统一产品组织，由 Greg Brockman 接管产品战略。",
-        "businessMeaning": "Agent 时代的大模型公司，不只比模型能力，也比谁能把入口、工具和企业接入连成一套产品。",
-        "sourceUrl": "https://www.ithome.com/0/951/258.htm",
+        "brief": "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：合同审阅 / 法律研究。",
+        "judgment": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+        "event": "2 points / 0 comments / query=AI SDK developer adoption startup",
+        "businessMeaning": "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：合同审阅 / 法律研究。",
+        "sourceUrl": "https://pypi.org/project/llmswap/",
         "sources": "原始出处已记录",
-        "rawRef": "`R-001`",
+        "rawRef": "`R-006`｜01-SiteV2/content/01-raw/originals/2026-05-17/r-006-show-hn-llmswap-v3-0-cli-and-sdk-for-openai-claude-gemini-watsonx.md",
         "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-17-selected-change-cards.md#CHG-20260517-01",
         "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
         "coordinates": [],
@@ -602,30 +602,31 @@ window.WaveSightContent = {
           "CHG-20260517-01"
         ],
         "relations": [
-          "case:CASE-20260517-01"
+          "case:CASE-20260517-01",
+          "point:OPN-20260517-09"
         ],
-        "relationFields": "cases:CASE-20260517-01",
+        "relationFields": "cases:CASE-20260517-01,points:OPN-20260517-09",
         "analysis": [
           [
             "为什么值得看",
-            "这不是普通人事新闻，而是 OpenAI 把聊天入口、编码代理和开发者接口放进同一套产品节奏里。"
+            "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。"
           ],
           [
             "发生了什么",
-            "媒体转述称 OpenAI 将 ChatGPT、Codex 和 API 合并为统一产品组织，由 Greg Brockman 接管产品战略。"
+            "2 points / 0 comments / query=AI SDK developer adoption startup"
           ],
           [
             "影响谁",
-            "Agent 时代的大模型公司，不只比模型能力，也比谁能把入口、工具和企业接入连成一套产品。"
+            "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：合同审阅 / 法律研究。"
           ],
           [
             "来源依据",
-            "`R-001`"
+            "`R-006`｜01-SiteV2/content/01-raw/originals/2026-05-17/r-006-show-hn-llmswap-v3-0-cli-and-sdk-for-openai-claude-gemini-watsonx.md"
           ]
         ],
         "calibration": "观点只作判断参照，不替代事实来源。",
         "counter": "已关联 CASE-20260517-01；仍需继续补客户采用、ROI、复核成本和反证材料。",
-        "link": "signal-detail.html?id=openai-把-chatgpt-codex-和-api-产品线收拢",
+        "link": "signal-detail.html?id=开发者平台环境继续扩张",
         "tags": [
           {
             "id": "source-first-party",
@@ -673,34 +674,6 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI治理",
-            "group": "track",
-            "aliases": [
-              "Agent治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
             "id": "track-enterprise-workflow",
             "name": "企业工作流",
             "group": "track",
@@ -718,222 +691,205 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-ai-infra",
-            "name": "AI基础设施",
-            "group": "track",
-            "aliases": [
-              "AI Infra",
-              "模型基础设施"
-            ]
-          },
-          {
-            "id": "region-us",
-            "name": "美国",
-            "group": "region",
-            "aliases": [
-              "US"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CHG-20260517-02",
-        "slug": "ardent-为代码智能体做-postgres-沙箱",
-        "title": "Ardent 为代码智能体做 Postgres 沙箱",
-        "date": "2026-05-17",
-        "brief": "代码智能体想进真实研发流程，需要试验场、隔离层和责任边界。",
-        "judgment": "这条材料把编码代理的风险问题落到了数据库层。AI 可以写代码不稀奇，敢不敢让它碰真实数据才是企业会卡住的地方。",
-        "event": "Ardent 发布面向 coding agents 的 Postgres 数据库克隆产品，主张在几秒内复制生产数据库，供智能体测试代码。",
-        "businessMeaning": "代码智能体想进真实研发流程，需要试验场、隔离层和责任边界。",
-        "sourceUrl": "https://www.tryardent.com/",
-        "sources": "原始出处已记录",
-        "rawRef": "`R-003`",
-        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-17-selected-change-cards.md#CHG-20260517-02",
-        "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
-        "coordinates": [],
-        "structuredRefs": [
-          "CHG-20260517-02"
-        ],
-        "relations": [
-          "case:CASE-20260517-02",
-          "point:OPN-20260517-01"
-        ],
-        "relationFields": "cases:CASE-20260517-02,points:OPN-20260517-01",
-        "analysis": [
-          [
-            "为什么值得看",
-            "这条材料把编码代理的风险问题落到了数据库层。AI 可以写代码不稀奇，敢不敢让它碰真实数据才是企业会卡住的地方。"
-          ],
-          [
-            "发生了什么",
-            "Ardent 发布面向 coding agents 的 Postgres 数据库克隆产品，主张在几秒内复制生产数据库，供智能体测试代码。"
-          ],
-          [
-            "影响谁",
-            "代码智能体想进真实研发流程，需要试验场、隔离层和责任边界。"
-          ],
-          [
-            "来源依据",
-            "`R-003`"
-          ]
-        ],
-        "calibration": "观点只作判断参照，不替代事实来源。",
-        "counter": "已关联 CASE-20260517-02；仍需继续补客户采用、ROI、复核成本和反证材料。",
-        "link": "signal-detail.html?id=ardent-为代码智能体做-postgres-沙箱",
-        "tags": [
-          {
-            "id": "source-first-party",
-            "name": "一手来源",
-            "group": "source",
-            "aliases": [
-              "官网",
-              "官方博客"
-            ]
-          },
-          {
-            "id": "evidence-product-launch",
-            "name": "产品发布",
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
             "group": "evidence",
             "aliases": [
-              "功能发布",
-              "平台发布"
+              "部署",
+              "上线",
+              "合作"
             ]
           },
           {
-            "id": "track-ai-coding",
-            "name": "AI Coding",
-            "group": "track",
-            "aliases": [
-              "AI-Coding",
-              "AI编程"
-            ]
-          },
-          {
-            "id": "function-engineering",
-            "name": "工程研发",
-            "group": "function",
-            "aliases": [
-              "开发",
-              "仿真",
-              "工程"
-            ]
-          },
-          {
-            "id": "customer-developer-team",
-            "name": "开发团队",
-            "group": "customer",
-            "aliases": [
-              "工程团队"
-            ]
-          },
-          {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI治理",
-            "group": "track",
-            "aliases": [
-              "Agent治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
-            "id": "track-enterprise-workflow",
-            "name": "企业工作流",
-            "group": "track",
-            "aliases": [
-              "企业AI工作流",
-              "工作流自动化"
-            ]
-          },
-          {
-            "id": "customer-enterprise",
-            "name": "大中型企业",
-            "group": "customer",
-            "aliases": [
-              "企业客户"
-            ]
-          },
-          {
-            "id": "track-enterprise-data",
-            "name": "企业数据智能",
-            "group": "track",
-            "aliases": [
-              "企业数据",
-              "RAG",
-              "企业知识库"
-            ]
-          },
-          {
-            "id": "stage-risk",
-            "name": "风险变量",
+            "id": "stage-rising",
+            "name": "升温",
             "group": "stage",
             "aliases": [
-              "risk"
+              "rising"
             ]
           }
         ]
       },
       {
-        "id": "CHG-20260517-03",
-        "slug": "英国金融监管部门警告-ai-网络攻击风险",
-        "title": "英国金融监管部门警告 AI 网络攻击风险",
-        "date": "2026-05-17",
-        "brief": "金融机构采购 AI 时，安全审查会从数据泄露扩展到攻防能力、供应商责任和应急流程。",
-        "judgment": "这条材料说明监管视角正在从“AI 会不会出错”推进到“AI 会不会降低攻击成本、放大系统风险”。",
-        "event": "英国财政部、英格兰银行与 FCA 被报道联合警告先进 AI 模型的网络攻击能力风险。",
-        "businessMeaning": "金融机构采购 AI 时，安全审查会从数据泄露扩展到攻防能力、供应商责任和应急流程。",
-        "sourceUrl": "https://www.ithome.com/0/951/144.htm",
+        "id": "CHG-20260518-01",
+        "slug": "garry-tan",
+        "title": "Garry Tan｜Saturday morning and it’s a good time to …",
+        "date": "2026-05-18",
+        "brief": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+        "judgment": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+        "event": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Der…",
+        "businessMeaning": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+        "sourceUrl": "https://x.com/garrytan/status/2055674791873630650",
         "sources": "原始出处已记录",
-        "rawRef": "`R-004`",
-        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-17-selected-change-cards.md#CHG-20260517-03",
+        "rawRef": "`R-012`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-012-garry-tan-saturday-morning-and-it-s-a-good-time-to-think-a-bit-about-h.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-01",
         "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
         "coordinates": [],
         "structuredRefs": [
-          "CHG-20260517-03"
+          "CHG-20260518-01"
         ],
         "relations": [
-          "case:CASE-20260517-03"
+          "case:CASE-20260518-01",
+          "point:OPN-20260518-01"
         ],
-        "relationFields": "cases:CASE-20260517-03",
+        "relationFields": "cases:CASE-20260518-01,points:OPN-20260518-01",
         "analysis": [
           [
             "为什么值得看",
-            "这条材料说明监管视角正在从“AI 会不会出错”推进到“AI 会不会降低攻击成本、放大系统风险”。"
+            "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。"
           ],
           [
             "发生了什么",
-            "英国财政部、英格兰银行与 FCA 被报道联合警告先进 AI 模型的网络攻击能力风险。"
+            "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Der…"
           ],
           [
             "影响谁",
-            "金融机构采购 AI 时，安全审查会从数据泄露扩展到攻防能力、供应商责任和应急流程。"
+            "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。"
           ],
           [
             "来源依据",
-            "`R-004`"
+            "`R-012`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-012-garry-tan-saturday-morning-and-it-s-a-good-time-to-think-a-bit-about-h.md"
           ]
         ],
         "calibration": "观点只作判断参照，不替代事实来源。",
-        "counter": "已关联 CASE-20260517-03；仍需继续补客户采用、ROI、复核成本和反证材料。",
-        "link": "signal-detail.html?id=英国金融监管部门警告-ai-网络攻击风险",
+        "counter": "已关联 CASE-20260518-01；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=garry-tan",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CHG-20260518-02",
+        "slug": "汽车之家",
+        "title": "汽车之家|2026汽车报价大全|新能源汽车",
+        "date": "2026-05-18",
+        "brief": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：采购 / 招投标。",
+        "judgment": "它把 AI 从“买一个座席”推向“谁在调用、用在哪、烧多少钱”的管理问题。",
+        "event": "����֮��|2026�������۴�ȫ|����Դ���� ����֮�� ���� ��Ϣ ��վ���� ���� ���� ���Һ� ��Ƶ ֱ�� ���ͶԱ� ͼƬ ���� ���̳� ���� ������ ���ֳ� ���� ��̳ ��ѡ �ڱ� �ó� ���� �ƶ�App �����…",
+        "businessMeaning": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：采购 / 招投标。",
+        "sourceUrl": "https://car.autohome.com.cn/",
+        "sources": "原始出处已记录",
+        "rawRef": "`R-001`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-001-汽车之家-2026汽车报价大全-新能源汽车.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-02",
+        "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+        "coordinates": [],
+        "structuredRefs": [
+          "CHG-20260518-02"
+        ],
+        "relations": [
+          "case:CASE-20260518-02",
+          "point:OPN-20260518-02"
+        ],
+        "relationFields": "cases:CASE-20260518-02,points:OPN-20260518-02",
+        "analysis": [
+          [
+            "为什么值得看",
+            "它把 AI 从“买一个座席”推向“谁在调用、用在哪、烧多少钱”的管理问题。"
+          ],
+          [
+            "发生了什么",
+            "����֮��|2026�������۴�ȫ|����Դ���� ����֮�� ���� ��Ϣ ��վ���� ���� ���� ���Һ� ��Ƶ ֱ�� ���ͶԱ� ͼƬ ���� ���̳� ���� ������ ���ֳ� ���� ��̳ ��ѡ �ڱ� �ó� ���� �ƶ�App �����…"
+          ],
+          [
+            "影响谁",
+            "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：采购 / 招投标。"
+          ],
+          [
+            "来源依据",
+            "`R-001`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-001-汽车之家-2026汽车报价大全-新能源汽车.md"
+          ]
+        ],
+        "calibration": "观点只作判断参照，不替代事实来源。",
+        "counter": "已关联 CASE-20260518-02；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=汽车之家",
         "tags": [
           {
             "id": "source-first-party",
@@ -971,13 +927,113 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-enterprise-data",
-            "name": "企业数据智能",
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CHG-20260518-03",
+        "slug": "汽车之家-看车-买车-用车-换车-省时省心省钱",
+        "title": "汽车之家_看车 买车 用车 换车,省时省心省钱!",
+        "date": "2026-05-18",
+        "brief": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：计费 / 预算管理。",
+        "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+        "event": "汽车之家_看车 买车 用车 换车,省时省心省钱!",
+        "businessMeaning": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：计费 / 预算管理。",
+        "sourceUrl": "https://www.autohome.com.cn/?platform-key=pc",
+        "sources": "原始出处已记录",
+        "rawRef": "`R-002`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-002-汽车之家-看车-买车-用车-换车-省时省心省钱.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-03",
+        "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+        "coordinates": [],
+        "structuredRefs": [
+          "CHG-20260518-03"
+        ],
+        "relations": [
+          "case:CASE-20260518-03",
+          "point:OPN-20260518-03"
+        ],
+        "relationFields": "cases:CASE-20260518-03,points:OPN-20260518-03",
+        "analysis": [
+          [
+            "为什么值得看",
+            "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+          ],
+          [
+            "发生了什么",
+            "汽车之家_看车 买车 用车 换车,省时省心省钱!"
+          ],
+          [
+            "影响谁",
+            "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：计费 / 预算管理。"
+          ],
+          [
+            "来源依据",
+            "`R-002`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-002-汽车之家-看车-买车-用车-换车-省时省心省钱.md"
+          ]
+        ],
+        "calibration": "观点只作判断参照，不替代事实来源。",
+        "counter": "已关联 CASE-20260518-03；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=汽车之家-看车-买车-用车-换车-省时省心省钱",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
             "group": "track",
             "aliases": [
-              "企业数据",
-              "RAG",
-              "企业知识库"
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
             ]
           },
           {
@@ -1009,56 +1065,523 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "stage-risk",
-            "name": "风险变量",
+            "id": "stage-rising",
+            "name": "升温",
             "group": "stage",
             "aliases": [
-              "risk"
+              "rising"
             ]
           }
         ]
       },
       {
-        "id": "CHG-20260517-04",
-        "slug": "开源模型发布节奏继续加快",
-        "title": "开源模型发布节奏继续加快",
-        "date": "2026-05-17",
-        "brief": "更多模型会压低试错门槛，也会让企业面对模型选择、替换和治理的新成本。",
-        "judgment": "模型供应端还在快速加厚，但这条变化更适合提醒老板：发布密度不是采用证明，真正要看客户是否把它放进流程和预算。",
-        "event": "Interconnects 整理 Gemma、DeepSeek、Kimi、MiMo、GLM 等开源模型与评测线索。",
-        "businessMeaning": "更多模型会压低试错门槛，也会让企业面对模型选择、替换和治理的新成本。",
-        "sourceUrl": "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
+        "id": "CHG-20260518-04",
+        "slug": "openai-产品线转向-agent-组织",
+        "title": "OpenAI 产品线转向 Agent 组织",
+        "date": "2026-05-18",
+        "brief": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+        "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+        "event": "Co-founder and president Greg Brockman is officially taking over the company's product strategy, Wired reports .",
+        "businessMeaning": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+        "sourceUrl": "https://the-decoder.com/greg-brockman-consolidates-openais-product-teams-to-build-an-agentic-future",
         "sources": "原始出处已记录",
-        "rawRef": "`R-002`",
-        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-17-selected-change-cards.md#CHG-20260517-04",
+        "rawRef": "`R-004`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-004-greg-brockman-整合-openai-产品团队以构建-智能体未来.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-04",
         "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
         "coordinates": [],
         "structuredRefs": [
-          "CHG-20260517-04"
+          "CHG-20260518-04"
         ],
-        "relations": [],
-        "relationFields": "",
+        "relations": [
+          "case:CASE-20260518-04",
+          "point:OPN-20260518-04"
+        ],
+        "relationFields": "cases:CASE-20260518-04,points:OPN-20260518-04",
         "analysis": [
           [
             "为什么值得看",
-            "模型供应端还在快速加厚，但这条变化更适合提醒老板：发布密度不是采用证明，真正要看客户是否把它放进流程和预算。"
+            "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
           ],
           [
             "发生了什么",
-            "Interconnects 整理 Gemma、DeepSeek、Kimi、MiMo、GLM 等开源模型与评测线索。"
+            "Co-founder and president Greg Brockman is officially taking over the company's product strategy, Wired reports ."
           ],
           [
             "影响谁",
-            "更多模型会压低试错门槛，也会让企业面对模型选择、替换和治理的新成本。"
+            "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。"
           ],
           [
             "来源依据",
-            "`R-002`"
+            "`R-004`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-004-greg-brockman-整合-openai-产品团队以构建-智能体未来.md"
           ]
         ],
         "calibration": "观点只作判断参照，不替代事实来源。",
-        "counter": "已关联 暂无公开信息；仍需继续补客户采用、ROI、复核成本和反证材料。",
-        "link": "signal-detail.html?id=开源模型发布节奏继续加快",
+        "counter": "已关联 CASE-20260518-04；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=openai-产品线转向-agent-组织",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI治理",
+            "group": "track",
+            "aliases": [
+              "Agent治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CHG-20260518-05",
+        "slug": "pre-html-超文本标记语言",
+        "title": "< pre > - HTML（超文本标记语言） | MDN",
+        "date": "2026-05-18",
+        "brief": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+        "judgment": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+        "event": "<pre> - HTML（超文本标记语言） | MDN 跳转到主要内容 跳转到搜索 切换侧边栏 面向开发者的 Web 技术 HTML（超文本标记语言） HTML 参考 HTML 元素参考 <pre> 主题 跟随系统 浅色 深色 中文 (简体) 记住语言 了解更多 Deutsch English (US) Españo…",
+        "businessMeaning": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+        "sourceUrl": "https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/pre",
+        "sources": "原始出处已记录",
+        "rawRef": "`R-003`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-003-pre-html-超文本标记语言-mdn.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-05",
+        "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+        "coordinates": [],
+        "structuredRefs": [
+          "CHG-20260518-05"
+        ],
+        "relations": [
+          "case:CASE-20260518-05",
+          "point:OPN-20260518-05"
+        ],
+        "relationFields": "cases:CASE-20260518-05,points:OPN-20260518-05",
+        "analysis": [
+          [
+            "为什么值得看",
+            "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。"
+          ],
+          [
+            "发生了什么",
+            "<pre> - HTML（超文本标记语言） | MDN 跳转到主要内容 跳转到搜索 切换侧边栏 面向开发者的 Web 技术 HTML（超文本标记语言） HTML 参考 HTML 元素参考 <pre> 主题 跟随系统 浅色 深色 中文 (简体) 记住语言 了解更多 Deutsch English (US) Españo…"
+          ],
+          [
+            "影响谁",
+            "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。"
+          ],
+          [
+            "来源依据",
+            "`R-003`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-003-pre-html-超文本标记语言-mdn.md"
+          ]
+        ],
+        "calibration": "观点只作判断参照，不替代事实来源。",
+        "counter": "已关联 CASE-20260518-05；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=pre-html-超文本标记语言",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-customer-service",
+            "name": "AI客服",
+            "group": "track",
+            "aliases": [
+              "Voice-AI",
+              "语音客服"
+            ]
+          },
+          {
+            "id": "function-customer-service",
+            "name": "客服售后",
+            "group": "function",
+            "aliases": [
+              "客服",
+              "售后",
+              "质检"
+            ]
+          },
+          {
+            "id": "scenario-customer-ticket",
+            "name": "工单与质检",
+            "group": "scenario",
+            "aliases": [
+              "工单",
+              "质检",
+              "智能派单"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CHG-20260518-06",
+        "slug": "ai-人工智能学习网站大全",
+        "title": "AI 人工智能学习网站大全 | AI 工具集",
+        "date": "2026-05-18",
+        "brief": "受影响的不是泛泛的企业用户，而是要交付、审批、复核和买单的人。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+        "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+        "event": "AI人工智能学习网站大全 | AI工具集 AI写作工具 AI图像工具 常用AI图像工具 AI图片插画生成 AI图片背景移除 AI图片物体抹除 AI图片无损放大 AI图片优化修复 AI商品图生成 AI 3D模型生成 AI视频工具 AI办公工具 AI幻灯片和演示 AI表格数据处理 AI思维导图 AI文档工具 AI会议工具…",
+        "businessMeaning": "受影响的不是泛泛的企业用户，而是要交付、审批、复核和买单的人。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+        "sourceUrl": "https://ai-bot.cn/favorites/websites-to-learn-ai/",
+        "sources": "原始出处已记录",
+        "rawRef": "`R-005`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-005-ai-人工智能学习网站大全-ai-工具集.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-06",
+        "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+        "coordinates": [],
+        "structuredRefs": [
+          "CHG-20260518-06"
+        ],
+        "relations": [
+          "case:CASE-20260518-06",
+          "point:OPN-20260518-06"
+        ],
+        "relationFields": "cases:CASE-20260518-06,points:OPN-20260518-06",
+        "analysis": [
+          [
+            "为什么值得看",
+            "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+          ],
+          [
+            "发生了什么",
+            "AI人工智能学习网站大全 | AI工具集 AI写作工具 AI图像工具 常用AI图像工具 AI图片插画生成 AI图片背景移除 AI图片物体抹除 AI图片无损放大 AI图片优化修复 AI商品图生成 AI 3D模型生成 AI视频工具 AI办公工具 AI幻灯片和演示 AI表格数据处理 AI思维导图 AI文档工具 AI会议工具…"
+          ],
+          [
+            "影响谁",
+            "受影响的不是泛泛的企业用户，而是要交付、审批、复核和买单的人。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。"
+          ],
+          [
+            "来源依据",
+            "`R-005`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-005-ai-人工智能学习网站大全-ai-工具集.md"
+          ]
+        ],
+        "calibration": "观点只作判断参照，不替代事实来源。",
+        "counter": "已关联 CASE-20260518-06；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=ai-人工智能学习网站大全",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-customer-service",
+            "name": "AI客服",
+            "group": "track",
+            "aliases": [
+              "Voice-AI",
+              "语音客服"
+            ]
+          },
+          {
+            "id": "function-customer-service",
+            "name": "客服售后",
+            "group": "function",
+            "aliases": [
+              "客服",
+              "售后",
+              "质检"
+            ]
+          },
+          {
+            "id": "scenario-customer-ticket",
+            "name": "工单与质检",
+            "group": "scenario",
+            "aliases": [
+              "工单",
+              "质检",
+              "智能派单"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CHG-20260518-07",
+        "slug": "每日-ai-资讯-猫目",
+        "title": "每日 AI 资讯 - 猫目",
+        "date": "2026-05-18",
+        "brief": "受影响的人会先落在销售 / 客服、销售 / 客服。流程变化集中在：权限 / 安全治理。",
+        "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+        "event": "每日AI资讯 - 猫目 小贴士：按下Ctrl+D 或 ⌘+D，一键收藏本站，方便下次快速访问！",
+        "businessMeaning": "受影响的人会先落在销售 / 客服、销售 / 客服。流程变化集中在：权限 / 安全治理。",
+        "sourceUrl": "https://maomu.com/news",
+        "sources": "原始出处已记录",
+        "rawRef": "`R-006`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-006-每日-ai-资讯-猫目.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-07",
+        "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+        "coordinates": [],
+        "structuredRefs": [
+          "CHG-20260518-07"
+        ],
+        "relations": [
+          "point:OPN-20260518-07"
+        ],
+        "relationFields": "points:OPN-20260518-07",
+        "analysis": [
+          [
+            "为什么值得看",
+            "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+          ],
+          [
+            "发生了什么",
+            "每日AI资讯 - 猫目 小贴士：按下Ctrl+D 或 ⌘+D，一键收藏本站，方便下次快速访问！"
+          ],
+          [
+            "影响谁",
+            "受影响的人会先落在销售 / 客服、销售 / 客服。流程变化集中在：权限 / 安全治理。"
+          ],
+          [
+            "来源依据",
+            "`R-006`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-006-每日-ai-资讯-猫目.md"
+          ]
+        ],
+        "calibration": "观点只作判断参照，不替代事实来源。",
+        "counter": "已关联 暂未建立正式案例关联；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=每日-ai-资讯-猫目",
         "tags": [
           {
             "id": "source-first-party",
@@ -1124,77 +1647,87 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-ai-infra",
-            "name": "AI基础设施",
+            "id": "track-ai-customer-service",
+            "name": "AI客服",
             "group": "track",
             "aliases": [
-              "AI Infra",
-              "模型基础设施"
+              "Voice-AI",
+              "语音客服"
             ]
           },
           {
-            "id": "evidence-customer-adoption",
-            "name": "客户采用",
-            "group": "evidence",
+            "id": "function-customer-service",
+            "name": "客服售后",
+            "group": "function",
             "aliases": [
-              "部署",
-              "上线",
-              "合作"
+              "客服",
+              "售后",
+              "质检"
             ]
           },
           {
-            "id": "stage-rising",
-            "name": "升温",
+            "id": "scenario-customer-ticket",
+            "name": "工单与质检",
+            "group": "scenario",
+            "aliases": [
+              "工单",
+              "质检",
+              "智能派单"
+            ]
+          },
+          {
+            "id": "stage-risk",
+            "name": "风险变量",
             "group": "stage",
             "aliases": [
-              "rising"
+              "risk"
             ]
           }
         ]
       },
       {
-        "id": "CHG-20260517-05",
-        "slug": "llmswap-把多模型调用做成-cli-和-sdk",
-        "title": "llmswap 把多模型调用做成 CLI 和 SDK",
-        "date": "2026-05-17",
-        "brief": "企业 AI 应用未来不会只问“用哪个模型”，还会问“模型出问题或涨价时，系统能不能换得动”。",
-        "judgment": "模型越多，开发团队越需要把供应商从业务代码里拆出来。这个方向目前小，但指向长期成本问题。",
-        "event": "llmswap v3.0 在 PyPI 发布，提供面向多个 LLM provider 的 CLI 与 Python SDK。",
-        "businessMeaning": "企业 AI 应用未来不会只问“用哪个模型”，还会问“模型出问题或涨价时，系统能不能换得动”。",
-        "sourceUrl": "https://pypi.org/project/llmswap/",
+        "id": "CHG-20260518-08",
+        "slug": "linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok",
+        "title": "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？",
+        "date": "2026-05-18",
+        "brief": "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：权限 / 安全治理。",
+        "judgment": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+        "event": "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？",
+        "businessMeaning": "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：权限 / 安全治理。",
+        "sourceUrl": "https://www.ithome.com/0/951/682.htm",
         "sources": "原始出处已记录",
-        "rawRef": "`R-006`",
-        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-17-selected-change-cards.md#CHG-20260517-05",
+        "rawRef": "`R-007`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-007-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.md",
+        "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-08",
         "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
         "coordinates": [],
         "structuredRefs": [
-          "CHG-20260517-05"
+          "CHG-20260518-08"
         ],
         "relations": [
-          "case:CASE-20260517-04"
+          "point:OPN-20260518-08"
         ],
-        "relationFields": "cases:CASE-20260517-04",
+        "relationFields": "points:OPN-20260518-08",
         "analysis": [
           [
             "为什么值得看",
-            "模型越多，开发团队越需要把供应商从业务代码里拆出来。这个方向目前小，但指向长期成本问题。"
+            "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。"
           ],
           [
             "发生了什么",
-            "llmswap v3.0 在 PyPI 发布，提供面向多个 LLM provider 的 CLI 与 Python SDK。"
+            "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？"
           ],
           [
             "影响谁",
-            "企业 AI 应用未来不会只问“用哪个模型”，还会问“模型出问题或涨价时，系统能不能换得动”。"
+            "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：权限 / 安全治理。"
           ],
           [
             "来源依据",
-            "`R-006`"
+            "`R-007`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-007-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.md"
           ]
         ],
         "calibration": "观点只作判断参照，不替代事实来源。",
-        "counter": "已关联 CASE-20260517-04；仍需继续补客户采用、ROI、复核成本和反证材料。",
-        "link": "signal-detail.html?id=llmswap-把多模型调用做成-cli-和-sdk",
+        "counter": "已关联 暂未建立正式案例关联；仍需继续补客户采用、ROI、复核成本和反证材料。",
+        "link": "signal-detail.html?id=linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok",
         "tags": [
           {
             "id": "source-first-party",
@@ -1242,6 +1775,34 @@ window.WaveSightContent = {
             ]
           },
           {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI治理",
+            "group": "track",
+            "aliases": [
+              "Agent治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
             "id": "track-enterprise-workflow",
             "name": "企业工作流",
             "group": "track",
@@ -1259,19 +1820,421 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-ai-infra",
-            "name": "AI基础设施",
-            "group": "track",
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
             "aliases": [
-              "AI Infra",
-              "模型基础设施"
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-risk",
+            "name": "风险变量",
+            "group": "stage",
+            "aliases": [
+              "risk"
             ]
           }
         ]
       }
     ],
-    "cases": [],
+    "cases": [
+      {
+        "id": "CASE-20260518-06",
+        "slug": "keyword-search-ai-人工智能学习网站大全",
+        "title": "keyword search：AI 人工智能学习网站大全 | AI 工具集",
+        "date": "2026-05-18",
+        "dateRefs": [
+          "2026-05-18",
+          "2026-05-18"
+        ],
+        "brief": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "judgment": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "sourcePath": "01-SiteV2/content/05-case-research/2026-05-18--case-research--regenerated-l1-index.md",
+        "sourceUrl": "",
+        "relationFields": "",
+        "relations": [],
+        "link": "",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CASE-20260518-05",
+        "slug": "keyword-search-pre-html-超文本标记语言",
+        "title": "keyword search：< pre > - HTML（超文本标记语言） | MDN",
+        "date": "2026-05-18",
+        "dateRefs": [
+          "2026-05-18",
+          "2026-05-18"
+        ],
+        "brief": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "judgment": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "sourcePath": "01-SiteV2/content/05-case-research/2026-05-18--case-research--regenerated-l1-index.md",
+        "sourceUrl": "",
+        "relationFields": "",
+        "relations": [],
+        "link": "",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CASE-20260518-04",
+        "slug": "the-decoder-greg-brockman-整合-openai-产品团队以构建-智能体未来",
+        "title": "The Decoder：Greg Brockman 整合 OpenAI 产品团队以构建\"智能体未来\"",
+        "date": "2026-05-18",
+        "dateRefs": [
+          "2026-05-18",
+          "2026-05-18"
+        ],
+        "brief": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "judgment": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "sourcePath": "01-SiteV2/content/05-case-research/2026-05-18--case-research--regenerated-l1-index.md",
+        "sourceUrl": "",
+        "relationFields": "",
+        "relations": [],
+        "link": "",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI治理",
+            "group": "track",
+            "aliases": [
+              "Agent治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CASE-20260518-03",
+        "slug": "keyword-search-汽车之家-看车-买车-用车-换车-省时省心省钱",
+        "title": "keyword search：汽车之家_看车 买车 用车 换车,省时省心省钱!",
+        "date": "2026-05-18",
+        "dateRefs": [
+          "2026-05-18",
+          "2026-05-18"
+        ],
+        "brief": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "judgment": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "sourcePath": "01-SiteV2/content/05-case-research/2026-05-18--case-research--regenerated-l1-index.md",
+        "sourceUrl": "",
+        "relationFields": "",
+        "relations": [],
+        "link": "",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CASE-20260518-02",
+        "slug": "keyword-search-汽车之家",
+        "title": "keyword search：汽车之家|2026汽车报价大全|新能源汽车",
+        "date": "2026-05-18",
+        "dateRefs": [
+          "2026-05-18",
+          "2026-05-18"
+        ],
+        "brief": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "judgment": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "sourcePath": "01-SiteV2/content/05-case-research/2026-05-18--case-research--regenerated-l1-index.md",
+        "sourceUrl": "",
+        "relationFields": "",
+        "relations": [],
+        "link": "",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CASE-20260518-01",
+        "slug": "follow-garry-tan",
+        "title": "follow：Garry Tan｜Saturday morning and it’s a good …",
+        "date": "2026-05-18",
+        "dateRefs": [
+          "2026-05-18",
+          "2026-05-18"
+        ],
+        "brief": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "judgment": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "sourcePath": "01-SiteV2/content/05-case-research/2026-05-18--case-research--regenerated-l1-index.md",
+        "sourceUrl": "",
+        "relationFields": "",
+        "relations": [],
+        "link": "",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CASE-20260517-01",
+        "slug": "hacker-news-show-hn-llmswap-v3-0-cli-and-sdk-for-ope",
+        "title": "Hacker News：Show HN: Llmswap v3.0 – CLI and SDK for Ope…",
+        "date": "2026-05-17",
+        "dateRefs": [
+          "2026-05-17",
+          "2026-05-17"
+        ],
+        "brief": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "judgment": "基于 Raw 生成的 L1 案例，需要后续二搜补同行、客户和商业模式。",
+        "sourcePath": "01-SiteV2/content/05-case-research/2026-05-17--case-research--regenerated-l1-index.md",
+        "sourceUrl": "",
+        "relationFields": "",
+        "relations": [],
+        "link": "",
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      }
+    ],
     "points": [
+      {
+        "id": "BP-20260518-19",
+        "title": "Peter Yang｜If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other pl",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/petergyang/status/2055663937061007762",
+        "originalDate": "2026-05-16",
+        "originalView": "If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other places. Go to a small town in Europe or visit Asia - you'll see that life can be about much more than whether you're IC7 or IC8 or what company you work for. Don't be the person to put on your tombstone: \"He got divorced and neglected his kids but at least he made D2 at FAANG\" Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKTmGVH14 | Product at Roblox likes=3090; retweets=151; replies=113",
+        "interpretation": "If you're stuck in the Bay Area tech rat race / psychosis, make time to travel to other places. Go to a small town in Europe or visit Asia - you'll see that life can be about much more than whether you're IC7 or IC8 or what company you work for. Don't be the person to put on your tombstone: \"He got divorced and neglected his kids but at least he made D2 at FAANG\" Practical AI tutorials and interviews for busy people | Join 140K+ readers at https://t.co/XYKTmGVH14 | Product at Roblox likes=3090; retweets=151; replies=113",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
       {
         "id": "BP-20260518-18",
         "title": "Peter Yang｜I ended up buying this looks promising https://t.co/xZ9CD9HMKf",
@@ -1419,6 +2382,225 @@ window.WaveSightContent = {
         ]
       },
       {
+        "id": "BP-20260518-16",
+        "title": "Dan Shipper｜Successfully Codex-pilling the world one text at a time https://t.co/slutMhp63u https://t.",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/danshipper/status/2055715359244566552",
+        "originalDate": "2026-05-16",
+        "originalView": "Successfully Codex-pilling the world one text at a time https://t.co/slutMhp63u https://t.co/wTSOEjtK3W ceo @every | the only subscription you need to stay at the edge of AI likes=100; retweets=3; replies=14",
+        "interpretation": "Successfully Codex-pilling the world one text at a time https://t.co/slutMhp63u https://t.co/wTSOEjtK3W ceo @every | the only subscription you need to stay at the edge of AI likes=100; retweets=3; replies=14",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-15",
+        "title": "Dan Shipper｜If you use a bicycle it weakens your walking abilities, too! https://t.co/MSkwuoHYzC",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/danshipper/status/2055727669900141017",
+        "originalDate": "2026-05-16",
+        "originalView": "If you use a bicycle it weakens your walking abilities, too! https://t.co/MSkwuoHYzC ceo @every | the only subscription you need to stay at the edge of AI likes=61; retweets=0; replies=15",
+        "interpretation": "If you use a bicycle it weakens your walking abilities, too! https://t.co/MSkwuoHYzC ceo @every | the only subscription you need to stay at the edge of AI likes=61; retweets=0; replies=15",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-14",
+        "title": "Nikunj Kothari｜A lot of young people ask me if they should move to venture and my answer is typically no*",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/nikunj/status/2055648134819450907",
+        "originalDate": "2026-05-16",
+        "originalView": "A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.. It’s hard to truly understand what “excellence” means unless you’re deeply embedded and working for founders who are truly excellent. Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out. I wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others. I wouldn’t know anything about design if it were not for @kurtvarner @MicahSivitz @xiakv and others. I wouldn’t know anything about operational excellence if it were not for @rabois @danubata and others. Only because of these experiences and reading deeply, I was able to create some heuristics of what great founders and companies look like. And I have to keep updating it as I meet more and more founders and technology shifts beneath us. Those experiences also helped me earn the right to win the right to be a part of founders cap table. The other main reason to not be a junior investor is for most firms you’re just sourcing founders that match the GPs taste vs. truly thinking from first principles on what makes great founders & companies. If you really want to invest in founders, work at a great company and start by being be an angel. It’s such a fun way to learn and be part of founders journey. * The one exception to this is you’re absolutely obsessed with the craft of investing and you really cannot fathom doing any other job. If that’s your true pas",
+        "interpretation": "A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.. It’s hard to truly understand what “excellence” means unless you’re deeply embedded and working for founders who are truly excellent. Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out. I wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others. I wouldn’t know anything about design if it were not for @kurtvarner @MicahSivitz @xiakv and others. I wouldn’t know anything about operational excellence if it were not for @rabois @danubata and others. Only because of these experiences and reading deeply, I was able to create some heuristics of what great founders and companies look like. And I have to keep updating it as I meet more and more founders and technology shifts beneath us. Those experiences also helped me earn the right to win the right to be a part of founders cap table. The other main reason to not be a junior investor is for most firms you’re just sourcing founders that match the GPs taste vs. truly thinking from first principles on what makes great founders & companies. If you really want to invest in founders, work at a great company and start by being be an angel. It’s such a fun way to learn and be part of founders journey. * The one exception to this is you’re absolutely obsessed with the craft of investing and you really cannot fathom doing any other job. If that’s your true pas",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
         "id": "BP-20260518-13",
         "title": "Thariq｜HTML continues to be undefeated https://t.co/veyAAEWKrT",
         "date": "2026-05-18",
@@ -1487,6 +2669,161 @@ window.WaveSightContent = {
             "aliases": [
               "官网",
               "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-12",
+        "title": "Madhu Guru｜I have friends who made $10M+ and are miserable. I have friends who made that much and fou",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/realmadhuguru/status/2055708451670798839",
+        "originalDate": "2026-05-16",
+        "originalView": "I have friends who made $10M+ and are miserable. I have friends who made that much and found calm - they don’t need to run anymore. I have friends who made far less and are just happy. Whether something is enough is up to you. Whether you’re happy is independent of your bank account. You can want to be wealthy and still be content now. You don’t need to chase it from a place of lack and desperation. Silicon Valley treats ambition and happiness as mutually exclusive. As if wanting more means you can’t be satisfied now. That’s the trap. You can be both Product Leader at Google - Gemini, Veo, Nano Banana. All opinions mine. likes=166; retweets=8; replies=8",
+        "interpretation": "I have friends who made $10M+ and are miserable. I have friends who made that much and found calm - they don’t need to run anymore. I have friends who made far less and are just happy. Whether something is enough is up to you. Whether you’re happy is independent of your bank account. You can want to be wealthy and still be content now. You don’t need to chase it from a place of lack and desperation. Silicon Valley treats ambition and happiness as mutually exclusive. As if wanting more means you can’t be satisfied now. That’s the trap. You can be both Product Leader at Google - Gemini, Veo, Nano Banana. All opinions mine. likes=166; retweets=8; replies=8",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-11",
+        "title": "Swyx｜@Gavriel_Cohen i have to say his social media team is better than mine wtf. first pull on",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/swyx/status/2055612276208709731",
+        "originalDate": "2026-05-16",
+        "originalView": "@Gavriel_Cohen i have to say his social media team is better than mine wtf. first pull on youtube. https://t.co/h2dXUgDLzL achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=7; retweets=0; replies=0",
+        "interpretation": "@Gavriel_Cohen i have to say his social media team is better than mine wtf. first pull on youtube. https://t.co/h2dXUgDLzL achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=7; retweets=0; replies=0",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "source-podcast",
+            "name": "播客",
+            "group": "source",
+            "aliases": [
+              "YouTube",
+              "访谈"
             ]
           }
         ]
@@ -1616,6 +2953,739 @@ window.WaveSightContent = {
             "aliases": [
               "多 Agent",
               "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-08",
+        "title": "Peter Steinberger｜deslop your Claude code if you haven’t yet switched to Codex. https://t.co/nJYkYASohj",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/steipete/status/2055747016727167035",
+        "originalDate": "2026-05-16",
+        "originalView": "deslop your Claude code if you haven’t yet switched to Codex. https://t.co/nJYkYASohj Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=344; retweets=19; replies=24",
+        "interpretation": "deslop your Claude code if you haven’t yet switched to Codex. https://t.co/nJYkYASohj Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=344; retweets=19; replies=24",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-07",
+        "title": "Peter Steinberger｜my brain: don't read the hacker news comments, don't read the hacker news comments me: re",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/steipete/status/2055775661755715974",
+        "originalDate": "2026-05-16",
+        "originalView": "my brain: don't read the hacker news comments, don't read the hacker news comments me: reads the hacker news comments Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=542; retweets=11; replies=64",
+        "interpretation": "my brain: don't read the hacker news comments, don't read the hacker news comments me: reads the hacker news comments Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=542; retweets=11; replies=64",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-06",
+        "title": "Garry Tan｜GBrain is free open source. It’s MIT license. You can find it and install it in your age",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/garrytan/status/2055670797596012657",
+        "originalDate": "2026-05-16",
+        "originalView": "GBrain is free open source. It’s MIT license. You can find it and install it in your agent with one command. https://t.co/yFpFU4pn5b President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=109; retweets=6; replies=11",
+        "interpretation": "GBrain is free open source. It’s MIT license. You can find it and install it in your agent with one command. https://t.co/yFpFU4pn5b President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=109; retweets=6; replies=11",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-05",
+        "title": "No Priors｜Pax Silica: Inside the Trump Administration’s Tech Strategy with US Under Secretary of State for Economic Affairs Jacob Helberg",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://www.youtube.com/watch?v=xjlYpGaxIPA",
+        "originalDate": "2026-05-14",
+        "originalView": "Speaker 1 | 00:00 - 00:33 We're not gonna do government operated supply chains because that's not how we shine as a country. Our superpower is really our private sector and our companies. The old Steve Jobs quote that American products enchant and delight users around the world by the billions. That is really is our edge as a country. And so the answer's been trying to work in lockstep with our private companies and our builders to build platforms that are commercially viable and that can ultimately live outside of the government as a private service. Speaker 2 | 00:41 - 00:58 The Danno Prize were joined by Jacob Helberg, the Undersecretary of state for economic affairs. We spoke with Jacob before he was confirmed in this role, we're very excited to have him back to discuss, Pax Silica, which is a multinational effort to secure the AI supply chain for The United States and its allies. Speaker 3 | 00:58 - 01:00 Jacob, thanks so much for being here. Speaker 2 | 01:00 - 01:01 Yeah. Thanks for joining us. Speaker 1 | 01:01 - 01:02 Thanks for having me. Speaker 3 | 01:02 - 01:11 So let's get right into it. Three months ago, you announced Paxilica, a super ambitious coalition. Can y",
+        "interpretation": "Speaker 1 | 00:00 - 00:33 We're not gonna do government operated supply chains because that's not how we shine as a country. Our superpower is really our private sector and our companies. The old Steve Jobs quote that American products enchant and delight users around the world by the billions. That is really is our edge as a country. And so the answer's been trying to work in lockstep with our private companies and our builders to build platforms that are commercially viable and that can ultimately live outside of the government as a private service. Speaker 2 | 00:41 - 00:58 The Danno Prize were joined by Jacob Helberg, the Undersecretary of state for economic affairs. We spoke with Jacob before he was confirmed in this role, we're very excited to have him back to discuss, Pax Silica, which is a multinational effort to secure the AI supply chain for The United States and its allies. Speaker 3 | 00:58 - 01:00 Jacob, thanks so much for being here. Speaker 2 | 01:00 - 01:01 Yeah. Thanks for joining us. Speaker 1 | 01:01 - 01:02 Thanks for having me. Speaker 3 | 01:02 - 01:11 So let's get right into it. Three months ago, you announced Paxilica, a super ambitious coalition. Can y",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "source-podcast",
+            "name": "播客",
+            "group": "source",
+            "aliases": [
+              "YouTube",
+              "访谈"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-04",
+        "title": "Peter Steinberger｜BlackBar 0.2.0 is live for @useblacksmith 📈 24h vCPU + workflow graphs 🔔 opt-in status",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/steipete/status/2055685581758206139",
+        "originalDate": "2026-05-16",
+        "originalView": "BlackBar 0.2.0 is live for @useblacksmith 📈 24h vCPU + workflow graphs 🔔 opt-in status/job notifications 🧰 richer Blacksmith job rows 🟢 compact status badge Tiny menu bar, less CI guesswork. https://t.co/LAAyHy8aDQ https://t.co/178w9igZTW Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=172; retweets=7; replies=16",
+        "interpretation": "BlackBar 0.2.0 is live for @useblacksmith 📈 24h vCPU + workflow graphs 🔔 opt-in status/job notifications 🧰 richer Blacksmith job rows 🟢 compact status badge Tiny menu bar, less CI guesswork. https://t.co/LAAyHy8aDQ https://t.co/178w9igZTW Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=172; retweets=7; replies=16",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-03",
+        "title": "Zara Zhang｜AI psychosis: cycling between two mental states every single day ↑ after using coding agen",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/zarazhangrui/status/2055728641913536762",
+        "originalDate": "2026-05-16",
+        "originalView": "AI psychosis: cycling between two mental states every single day ↑ after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life. ↓ after scrolling twitter: holy shit I'm completely behind. everyone's ahead. the wave is moving and I'm going to get left. Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w likes=136; retweets=16; replies=28",
+        "interpretation": "AI psychosis: cycling between two mental states every single day ↑ after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life. ↓ after scrolling twitter: holy shit I'm completely behind. everyone's ahead. the wave is moving and I'm going to get left. Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w likes=136; retweets=16; replies=28",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "point",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-02",
+        "title": "Garry Tan｜What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/garrytan/status/2055670533451366479",
+        "originalDate": "2026-05-16",
+        "originalView": "What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80",
+        "interpretation": "What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-model-infra",
+            "name": "模型基础设施观点",
+            "group": "point",
+            "aliases": [
+              "Infra",
+              "推理",
+              "记忆"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI治理",
+            "group": "track",
+            "aliases": [
+              "Agent治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-data",
+            "name": "企业数据智能",
+            "group": "track",
+            "aliases": [
+              "企业数据",
+              "RAG",
+              "企业知识库"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BP-20260518-01",
+        "title": "Garry Tan｜Saturday morning and it’s a good time to think a bit about how our functional systems are",
+        "date": "2026-05-18",
+        "sourcePath": "follow-builders",
+        "sourceUrl": "https://x.com/garrytan/status/2055674791873630650",
+        "originalDate": "2026-05-16",
+        "originalView": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect. America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF. That didn't happen because we forgot the engineering. It happened because we built an entire intellectual class whose job is to interrogate every system rather than improve one. Derrida: His move is that every commitment contains its own contradiction, so you can never land on firm meaning. Run that as societal firmware and you get the bureaucratic paralysis we now live in. Infrastructure projects stuck in 15 years of environmental review because every statement of purpose deconstructs under the next round of stakeholder input. Institutions that can't say what they're for because every draft mission statement gets wordsmithed into mush by people trained to find the hidden hierarchy in any clear sentence. Derrida is the OS behind a civilization that can write a 4,000 page environmental impact report but can't pour concrete. The real damage is th",
+        "interpretation": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect. America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF. That didn't happen because we forgot the engineering. It happened because we built an entire intellectual class whose job is to interrogate every system rather than improve one. Derrida: His move is that every commitment contains its own contradiction, so you can never land on firm meaning. Run that as societal firmware and you get the bureaucratic paralysis we now live in. Infrastructure projects stuck in 15 years of environmental review because every statement of purpose deconstructs under the next round of stakeholder input. Institutions that can't say what they're for because every draft mission statement gets wordsmithed into mush by people trained to find the hidden hierarchy in any clear sentence. Derrida is the OS behind a civilization that can write a 4,000 page environmental impact report but can't pour concrete. The real damage is th",
+        "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
+        "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-builder-point",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "The Point",
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-builder-view",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "The Point",
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "point-model-infra",
+            "name": "模型基础设施观点",
+            "group": "point",
+            "aliases": [
+              "Infra",
+              "推理",
+              "记忆"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
             ]
           },
           {
@@ -2005,591 +4075,11 @@ window.WaveSightContent = {
     ],
     "trends": [
       {
-        "id": "CLU-CAND-20260518-12",
-        "title": "Show HN: Permit MCP Gateway – Fine-Grained Authorization and IGA for MCP",
+        "id": "CLU-20260518-02",
+        "title": "CLU-20260518-02｜track-ai-coding",
         "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.permit.io/mcp-gateway",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-11",
-        "title": "Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.tryardent.com/",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-10",
-        "title": "消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值约 1 亿美元",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.ithome.com/0/951/600.htm",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "evidence-funding",
-            "name": "融资证据",
-            "group": "evidence",
-            "aliases": [
-              "投资",
-              "种子轮"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-09",
-        "title": "Show HN: Torrix, self hosted, LLM Observability,(no Postgres, no Redis)",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://github.com/torrix-ai/install",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-08",
-        "title": "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.ithome.com/0/951/682.htm",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-07",
-        "title": "Show HN: Hazmat – I made unrestricted Claude Code safe on macOS",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://github.com/dredozubov/hazmat",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-06",
-        "title": "千问 - 阿里Qwen大模型打造的 AI 对话助手",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://qianwen.aigc.cn/",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "track-ai-infra",
-            "name": "AI基础设施",
-            "group": "track",
-            "aliases": [
-              "AI Infra",
-              "模型基础设施"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-05",
-        "title": "Mistral CEO Arthur Mensch 警告法国勿让 Anthropic 的 Mythos 扫描军事代码库",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "track-ai-coding",
-            "name": "AI Coding",
-            "group": "track",
-            "aliases": [
-              "AI-Coding",
-              "AI编程"
-            ]
-          },
-          {
-            "id": "function-engineering",
-            "name": "工程研发",
-            "group": "function",
-            "aliases": [
-              "开发",
-              "仿真",
-              "工程"
-            ]
-          },
-          {
-            "id": "customer-developer-team",
-            "name": "开发团队",
-            "group": "customer",
-            "aliases": [
-              "工程团队"
-            ]
-          },
-          {
-            "id": "region-us",
-            "name": "美国",
-            "group": "region",
-            "aliases": [
-              "US"
-            ]
-          },
-          {
-            "id": "region-global",
-            "name": "全球",
-            "group": "region",
-            "aliases": [
-              "海外"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-04",
-        "title": "Oppo 开源 Android AI 代理 X-OmniClaw，无需离开手机即可调用摄像头、屏幕与语音",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://the-decoder.com/oppo-open-sources-android-ai-agent-x-omniclaw-that-uses-your-camera-screen-and-voice-without-leaving-the-phone",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "track-ai-customer-service",
-            "name": "AI客服",
-            "group": "track",
-            "aliases": [
-              "Voice-AI",
-              "语音客服"
-            ]
-          },
-          {
-            "id": "function-customer-service",
-            "name": "客服售后",
-            "group": "function",
-            "aliases": [
-              "客服",
-              "售后",
-              "质检"
-            ]
-          },
-          {
-            "id": "scenario-customer-ticket",
-            "name": "工单与质检",
-            "group": "scenario",
-            "aliases": [
-              "工单",
-              "质检",
-              "智能派单"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-03",
-        "title": "Greg Brockman 整合 OpenAI 产品团队以构建\"智能体未来\"",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://the-decoder.com/greg-brockman-consolidates-openais-product-teams-to-build-an-agentic-future",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI治理",
-            "group": "track",
-            "aliases": [
-              "Agent治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
-            "id": "evidence-product-launch",
-            "name": "产品发布",
-            "group": "evidence",
-            "aliases": [
-              "功能发布",
-              "平台发布"
-            ]
-          },
-          {
-            "id": "region-us",
-            "name": "美国",
-            "group": "region",
-            "aliases": [
-              "US"
-            ]
-          },
-          {
-            "id": "region-global",
-            "name": "全球",
-            "group": "region",
-            "aliases": [
-              "海外"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-02",
-        "title": "< pre > - HTML（超文本标记语言） | MDN",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/pre",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260518-01",
-        "title": "AI 工具集官网 | 1000+ AI 工具集合，国内外 AI 工具集导航大全",
-        "date": "2026-05-18",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://ai-bot.cn/",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "source-first-party",
-            "name": "一手来源",
-            "group": "source",
-            "aliases": [
-              "官网",
-              "官方博客"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-12",
-        "title": "Show HN: VeriMed – open-source medical license verification",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://news.ycombinator.com/item?id=46366409",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-11",
-        "title": "Show HN: ContextFort – Visibility and controls for browser agents",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://news.ycombinator.com/item?id=46614015",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-10",
-        "title": "Show HN: Zyler – AI agent for marketing data that doesn't hallucinate",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://news.ycombinator.com/item?id=44364508",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-09",
-        "title": "Show HN: BarrierX: Win back lost enterprise deals by analyzing that others close",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://news.ycombinator.com/item?id=46796514",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-08",
-        "title": "Show HN: We built free adversarial security testing for agents (OpenClaw too)",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://news.ycombinator.com/item?id=47165626",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-07",
-        "title": "Show HN: Agentic interface for mainframes and COBOL",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://news.ycombinator.com/item?id=48111143",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI治理",
-            "group": "track",
-            "aliases": [
-              "Agent治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-06",
-        "title": "杭州基地启用，机器人有了国家级职业技能训练场",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.ithome.com/0/951/390.htm",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-05",
-        "title": "Show HN: Prefab – A generative UI framework for Python",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://prefab.prefect.io/docs/welcome",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-04",
-        "title": "英国多部门联合警告：当前最先进 AI 模型网络攻击能力已远超专业人员，企业应做好防范措施",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.ithome.com/0/951/144.htm",
+        "judgment": "track-ai-coding 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。",
+        "sourcePath": "R-002, R-004, R-003, R-005, R-006, R-007",
         "relationFields": "",
         "relations": [],
         "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
@@ -2620,12 +4110,143 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-ai-infra",
-            "name": "AI基础设施",
+            "id": "track-enterprise-data",
+            "name": "企业数据智能",
             "group": "track",
             "aliases": [
-              "AI Infra",
-              "模型基础设施"
+              "企业数据",
+              "RAG",
+              "企业知识库"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-risk",
+            "name": "风险变量",
+            "group": "stage",
+            "aliases": [
+              "risk"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CLU-20260518-01",
+        "title": "CLU-20260518-01｜track-ai-agent",
+        "date": "2026-05-18",
+        "judgment": "track-ai-agent 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。",
+        "sourcePath": "R-012, R-001",
+        "relationFields": "",
+        "relations": [],
+        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
+        "tags": [
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-enterprise-data",
+            "name": "企业数据智能",
+            "group": "track",
+            "aliases": [
+              "企业数据",
+              "RAG",
+              "企业知识库"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-risk",
+            "name": "风险变量",
+            "group": "stage",
+            "aliases": [
+              "risk"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CLU-20260517-01",
+        "title": "CLU-20260517-01｜专业服务 AI 开始进入交付流程",
+        "date": "2026-05-17",
+        "judgment": "专业服务 AI 开始进入交付流程 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。",
+        "sourcePath": "R-006",
+        "relationFields": "",
+        "relations": [],
+        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
+        "tags": [
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-enterprise-data",
+            "name": "企业数据智能",
+            "group": "track",
+            "aliases": [
+              "企业数据",
+              "RAG",
+              "企业知识库"
             ]
           },
           {
@@ -2637,90 +4258,23 @@ window.WaveSightContent = {
               "咨询AI",
               "专家知识Agent"
             ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-03",
-        "title": "Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.tryardent.com/",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
+          },
           {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
             "aliases": [
-              "rising"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-02",
-        "title": "最新开源成果（#21）：开源模型盛宴！Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5、GLM-5.1 等。基于CAISI的V4评估。",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
-            "group": "stage",
-            "aliases": [
-              "rising"
+              "部署",
+              "上线",
+              "合作"
             ]
           },
           {
-            "id": "track-ai-infra",
-            "name": "AI基础设施",
-            "group": "track",
-            "aliases": [
-              "AI Infra",
-              "模型基础设施"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "CLU-CAND-20260517-01",
-        "title": "突发！OpenAI 大规模重组，总裁 Brockman 夺权挂帅",
-        "date": "2026-05-17",
-        "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-        "sourcePath": "https://www.ithome.com/0/951/258.htm",
-        "relationFields": "",
-        "relations": [],
-        "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-        "tags": [
-          {
-            "id": "stage-rising",
-            "name": "升温",
+            "id": "stage-risk",
+            "name": "风险变量",
             "group": "stage",
             "aliases": [
-              "rising"
-            ]
-          },
-          {
-            "id": "region-us",
-            "name": "美国",
-            "group": "region",
-            "aliases": [
-              "US"
-            ]
-          },
-          {
-            "id": "region-global",
-            "name": "全球",
-            "group": "region",
-            "aliases": [
-              "海外"
+              "risk"
             ]
           }
         ]
@@ -2729,14 +4283,14 @@ window.WaveSightContent = {
     "trendReports": [
       {
         "id": "TRD-WATCH-20260518",
-        "slug": "ai-工具集官网",
-        "title": "AI 工具集官网 | 1000+ AI 工具集合，国内外 AI 工具集导航大全｜继续观察",
-        "oneLine": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
+        "slug": "clu-20260518-01",
+        "title": "CLU-20260518-01｜track-ai-agent｜继续观察",
+        "oneLine": "track-ai-agent 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。",
         "score": "继续观察",
         "stage": "暂无公开信息补足深挖条件",
         "date": "2026-05-18",
         "updated": "2026.05.18",
-        "sourcePath": "https://ai-bot.cn/",
+        "sourcePath": "R-012, R-001",
         "relationFields": "",
         "relations": [],
         "evidenceGaps": "暂未监测到足够同类案例、客户付费信息或多源证据，不能写成正式趋势结论。",
@@ -2783,35 +4337,1201 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "source-first-party",
-            "name": "一手来源",
-            "group": "source",
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
             "aliases": [
-              "官网",
-              "官方博客"
+              "企业AI工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-enterprise-data",
+            "name": "企业数据智能",
+            "group": "track",
+            "aliases": [
+              "企业数据",
+              "RAG",
+              "企业知识库"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-risk",
+            "name": "风险变量",
+            "group": "stage",
+            "aliases": [
+              "risk"
             ]
           }
         ]
       }
     ]
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": "CHG-20260518-01",
+      "slug": "garry-tan",
+      "title": "Garry Tan｜Saturday morning and it’s a good time to …",
+      "date": "2026-05-18",
+      "brief": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+      "judgment": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+      "event": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Der…",
+      "businessMeaning": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+      "sourceUrl": "https://x.com/garrytan/status/2055674791873630650",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-012`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-012-garry-tan-saturday-morning-and-it-s-a-good-time-to-think-a-bit-about-h.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-01",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-01"
+      ],
+      "relations": [
+        "case:CASE-20260518-01",
+        "point:OPN-20260518-01"
+      ],
+      "relationFields": "cases:CASE-20260518-01,points:OPN-20260518-01",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。"
+        ],
+        [
+          "发生了什么",
+          "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Der…"
+        ],
+        [
+          "影响谁",
+          "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。"
+        ],
+        [
+          "来源依据",
+          "`R-012`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-012-garry-tan-saturday-morning-and-it-s-a-good-time-to-think-a-bit-about-h.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 CASE-20260518-01；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=garry-tan",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "source-social",
+          "name": "社媒线索",
+          "group": "source",
+          "aliases": [
+            "X",
+            "社区"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHG-20260518-02",
+      "slug": "汽车之家",
+      "title": "汽车之家|2026汽车报价大全|新能源汽车",
+      "date": "2026-05-18",
+      "brief": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：采购 / 招投标。",
+      "judgment": "它把 AI 从“买一个座席”推向“谁在调用、用在哪、烧多少钱”的管理问题。",
+      "event": "����֮��|2026�������۴�ȫ|����Դ���� ����֮�� ���� ��Ϣ ��վ���� ���� ���� ���Һ� ��Ƶ ֱ�� ���ͶԱ� ͼƬ ���� ���̳� ���� ������ ���ֳ� ���� ��̳ ��ѡ �ڱ� �ó� ���� �ƶ�App �����…",
+      "businessMeaning": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：采购 / 招投标。",
+      "sourceUrl": "https://car.autohome.com.cn/",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-001`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-001-汽车之家-2026汽车报价大全-新能源汽车.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-02",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-02"
+      ],
+      "relations": [
+        "case:CASE-20260518-02",
+        "point:OPN-20260518-02"
+      ],
+      "relationFields": "cases:CASE-20260518-02,points:OPN-20260518-02",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它把 AI 从“买一个座席”推向“谁在调用、用在哪、烧多少钱”的管理问题。"
+        ],
+        [
+          "发生了什么",
+          "����֮��|2026�������۴�ȫ|����Դ���� ����֮�� ���� ��Ϣ ��վ���� ���� ���� ���Һ� ��Ƶ ֱ�� ���ͶԱ� ͼƬ ���� ���̳� ���� ������ ���ֳ� ���� ��̳ ��ѡ �ڱ� �ó� ���� �ƶ�App �����…"
+        ],
+        [
+          "影响谁",
+          "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：采购 / 招投标。"
+        ],
+        [
+          "来源依据",
+          "`R-001`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-001-汽车之家-2026汽车报价大全-新能源汽车.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 CASE-20260518-02；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=汽车之家",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHG-20260518-03",
+      "slug": "汽车之家-看车-买车-用车-换车-省时省心省钱",
+      "title": "汽车之家_看车 买车 用车 换车,省时省心省钱!",
+      "date": "2026-05-18",
+      "brief": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：计费 / 预算管理。",
+      "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+      "event": "汽车之家_看车 买车 用车 换车,省时省心省钱!",
+      "businessMeaning": "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：计费 / 预算管理。",
+      "sourceUrl": "https://www.autohome.com.cn/?platform-key=pc",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-002`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-002-汽车之家-看车-买车-用车-换车-省时省心省钱.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-03",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-03"
+      ],
+      "relations": [
+        "case:CASE-20260518-03",
+        "point:OPN-20260518-03"
+      ],
+      "relationFields": "cases:CASE-20260518-03,points:OPN-20260518-03",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+        ],
+        [
+          "发生了什么",
+          "汽车之家_看车 买车 用车 换车,省时省心省钱!"
+        ],
+        [
+          "影响谁",
+          "受影响的人会先落在采购负责人、采购负责人。流程变化集中在：计费 / 预算管理。"
+        ],
+        [
+          "来源依据",
+          "`R-002`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-002-汽车之家-看车-买车-用车-换车-省时省心省钱.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 CASE-20260518-03；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=汽车之家-看车-买车-用车-换车-省时省心省钱",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHG-20260518-04",
+      "slug": "openai-产品线转向-agent-组织",
+      "title": "OpenAI 产品线转向 Agent 组织",
+      "date": "2026-05-18",
+      "brief": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+      "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+      "event": "Co-founder and president Greg Brockman is officially taking over the company's product strategy, Wired reports .",
+      "businessMeaning": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。",
+      "sourceUrl": "https://the-decoder.com/greg-brockman-consolidates-openais-product-teams-to-build-an-agentic-future",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-004`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-004-greg-brockman-整合-openai-产品团队以构建-智能体未来.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-04",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-04"
+      ],
+      "relations": [
+        "case:CASE-20260518-04",
+        "point:OPN-20260518-04"
+      ],
+      "relationFields": "cases:CASE-20260518-04,points:OPN-20260518-04",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+        ],
+        [
+          "发生了什么",
+          "Co-founder and president Greg Brockman is officially taking over the company's product strategy, Wired reports ."
+        ],
+        [
+          "影响谁",
+          "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。流程变化集中在：合同审阅 / 法律研究。"
+        ],
+        [
+          "来源依据",
+          "`R-004`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-004-greg-brockman-整合-openai-产品团队以构建-智能体未来.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 CASE-20260518-04；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=openai-产品线转向-agent-组织",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI治理",
+          "group": "track",
+          "aliases": [
+            "Agent治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "region-us",
+          "name": "美国",
+          "group": "region",
+          "aliases": [
+            "US"
+          ]
+        },
+        {
+          "id": "region-global",
+          "name": "全球",
+          "group": "region",
+          "aliases": [
+            "海外"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHG-20260518-05",
+      "slug": "pre-html-超文本标记语言",
+      "title": "< pre > - HTML（超文本标记语言） | MDN",
+      "date": "2026-05-18",
+      "brief": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+      "judgment": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+      "event": "<pre> - HTML（超文本标记语言） | MDN 跳转到主要内容 跳转到搜索 切换侧边栏 面向开发者的 Web 技术 HTML（超文本标记语言） HTML 参考 HTML 元素参考 <pre> 主题 跟随系统 浅色 深色 中文 (简体) 记住语言 了解更多 Deutsch English (US) Españo…",
+      "businessMeaning": "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+      "sourceUrl": "https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/pre",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-003`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-003-pre-html-超文本标记语言-mdn.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-05",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-05"
+      ],
+      "relations": [
+        "case:CASE-20260518-05",
+        "point:OPN-20260518-05"
+      ],
+      "relationFields": "cases:CASE-20260518-05,points:OPN-20260518-05",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。"
+        ],
+        [
+          "发生了什么",
+          "<pre> - HTML（超文本标记语言） | MDN 跳转到主要内容 跳转到搜索 切换侧边栏 面向开发者的 Web 技术 HTML（超文本标记语言） HTML 参考 HTML 元素参考 <pre> 主题 跟随系统 浅色 深色 中文 (简体) 记住语言 了解更多 Deutsch English (US) Españo…"
+        ],
+        [
+          "影响谁",
+          "受影响的人会先落在开发者 / 工程团队、开发者 / 工程团队。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。"
+        ],
+        [
+          "来源依据",
+          "`R-003`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-003-pre-html-超文本标记语言-mdn.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 CASE-20260518-05；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=pre-html-超文本标记语言",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-customer-service",
+          "name": "AI客服",
+          "group": "track",
+          "aliases": [
+            "Voice-AI",
+            "语音客服"
+          ]
+        },
+        {
+          "id": "function-customer-service",
+          "name": "客服售后",
+          "group": "function",
+          "aliases": [
+            "客服",
+            "售后",
+            "质检"
+          ]
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "name": "工单与质检",
+          "group": "scenario",
+          "aliases": [
+            "工单",
+            "质检",
+            "智能派单"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHG-20260518-06",
+      "slug": "ai-人工智能学习网站大全",
+      "title": "AI 人工智能学习网站大全 | AI 工具集",
+      "date": "2026-05-18",
+      "brief": "受影响的不是泛泛的企业用户，而是要交付、审批、复核和买单的人。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+      "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+      "event": "AI人工智能学习网站大全 | AI工具集 AI写作工具 AI图像工具 常用AI图像工具 AI图片插画生成 AI图片背景移除 AI图片物体抹除 AI图片无损放大 AI图片优化修复 AI商品图生成 AI 3D模型生成 AI视频工具 AI办公工具 AI幻灯片和演示 AI表格数据处理 AI思维导图 AI文档工具 AI会议工具…",
+      "businessMeaning": "受影响的不是泛泛的企业用户，而是要交付、审批、复核和买单的人。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。",
+      "sourceUrl": "https://ai-bot.cn/favorites/websites-to-learn-ai/",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-005`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-005-ai-人工智能学习网站大全-ai-工具集.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-06",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-06"
+      ],
+      "relations": [
+        "case:CASE-20260518-06",
+        "point:OPN-20260518-06"
+      ],
+      "relationFields": "cases:CASE-20260518-06,points:OPN-20260518-06",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+        ],
+        [
+          "发生了什么",
+          "AI人工智能学习网站大全 | AI工具集 AI写作工具 AI图像工具 常用AI图像工具 AI图片插画生成 AI图片背景移除 AI图片物体抹除 AI图片无损放大 AI图片优化修复 AI商品图生成 AI 3D模型生成 AI视频工具 AI办公工具 AI幻灯片和演示 AI表格数据处理 AI思维导图 AI文档工具 AI会议工具…"
+        ],
+        [
+          "影响谁",
+          "受影响的不是泛泛的企业用户，而是要交付、审批、复核和买单的人。真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。"
+        ],
+        [
+          "来源依据",
+          "`R-005`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-005-ai-人工智能学习网站大全-ai-工具集.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 CASE-20260518-06；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=ai-人工智能学习网站大全",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-customer-service",
+          "name": "AI客服",
+          "group": "track",
+          "aliases": [
+            "Voice-AI",
+            "语音客服"
+          ]
+        },
+        {
+          "id": "function-customer-service",
+          "name": "客服售后",
+          "group": "function",
+          "aliases": [
+            "客服",
+            "售后",
+            "质检"
+          ]
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "name": "工单与质检",
+          "group": "scenario",
+          "aliases": [
+            "工单",
+            "质检",
+            "智能派单"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHG-20260518-07",
+      "slug": "每日-ai-资讯-猫目",
+      "title": "每日 AI 资讯 - 猫目",
+      "date": "2026-05-18",
+      "brief": "受影响的人会先落在销售 / 客服、销售 / 客服。流程变化集中在：权限 / 安全治理。",
+      "judgment": "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。",
+      "event": "每日AI资讯 - 猫目 小贴士：按下Ctrl+D 或 ⌘+D，一键收藏本站，方便下次快速访问！",
+      "businessMeaning": "受影响的人会先落在销售 / 客服、销售 / 客服。流程变化集中在：权限 / 安全治理。",
+      "sourceUrl": "https://maomu.com/news",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-006`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-006-每日-ai-资讯-猫目.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-07",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-07"
+      ],
+      "relations": [
+        "point:OPN-20260518-07"
+      ],
+      "relationFields": "points:OPN-20260518-07",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+        ],
+        [
+          "发生了什么",
+          "每日AI资讯 - 猫目 小贴士：按下Ctrl+D 或 ⌘+D，一键收藏本站，方便下次快速访问！"
+        ],
+        [
+          "影响谁",
+          "受影响的人会先落在销售 / 客服、销售 / 客服。流程变化集中在：权限 / 安全治理。"
+        ],
+        [
+          "来源依据",
+          "`R-006`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-006-每日-ai-资讯-猫目.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 暂未建立正式案例关联；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=每日-ai-资讯-猫目",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI治理",
+          "group": "track",
+          "aliases": [
+            "Agent治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-customer-service",
+          "name": "AI客服",
+          "group": "track",
+          "aliases": [
+            "Voice-AI",
+            "语音客服"
+          ]
+        },
+        {
+          "id": "function-customer-service",
+          "name": "客服售后",
+          "group": "function",
+          "aliases": [
+            "客服",
+            "售后",
+            "质检"
+          ]
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "name": "工单与质检",
+          "group": "scenario",
+          "aliases": [
+            "工单",
+            "质检",
+            "智能派单"
+          ]
+        },
+        {
+          "id": "stage-risk",
+          "name": "风险变量",
+          "group": "stage",
+          "aliases": [
+            "risk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHG-20260518-08",
+      "slug": "linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok",
+      "title": "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？",
+      "date": "2026-05-18",
+      "brief": "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：权限 / 安全治理。",
+      "judgment": "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+      "event": "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？",
+      "businessMeaning": "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：权限 / 安全治理。",
+      "sourceUrl": "https://www.ithome.com/0/951/682.htm",
+      "sources": "原始出处已记录",
+      "rawRef": "`R-007`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-007-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.md",
+      "sourcePath": "01-SiteV2/content/04-business-signals/2026-05-18-selected-change-cards.md#CHG-20260518-08",
+      "audience": "商业决策者 / 产品负责人 / 企业服务创业者",
+      "coordinates": [],
+      "structuredRefs": [
+        "CHG-20260518-08"
+      ],
+      "relations": [
+        "point:OPN-20260518-08"
+      ],
+      "relationFields": "points:OPN-20260518-08",
+      "analysis": [
+        [
+          "为什么值得看",
+          "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。"
+        ],
+        [
+          "发生了什么",
+          "Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方案，OK？"
+        ],
+        [
+          "影响谁",
+          "受影响的人会先落在CIO / IT 负责人、开发者 / 工程团队、CIO / IT 负责人。流程变化集中在：权限 / 安全治理。"
+        ],
+        [
+          "来源依据",
+          "`R-007`｜01-SiteV2/content/01-raw/originals/2026-05-18/r-007-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.md"
+        ]
+      ],
+      "calibration": "观点只作判断参照，不替代事实来源。",
+      "counter": "已关联 暂未建立正式案例关联；仍需继续补客户采用、ROI、复核成本和反证材料。",
+      "link": "signal-detail.html?id=linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok",
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI治理",
+          "group": "track",
+          "aliases": [
+            "Agent治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业AI工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-risk",
+          "name": "风险变量",
+          "group": "stage",
+          "aliases": [
+            "risk"
+          ]
+        }
+      ]
+    }
+  ],
   "daily": {
     "slug": "daily-2026-05-18",
-    "title": "2026-05-18 观澜判断",
+    "title": "Garry Tan｜Saturday morning and it’s a good time to …",
     "dek": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
     "points": [],
     "risk": "客户采用、预算归属和部署周期仍需继续观察。",
     "calibration": [
       {
-        "id": "BP-20260518-09",
-        "title": "Swyx｜@sarahookr @calcsam",
+        "id": "BP-20260518-01",
+        "title": "Garry Tan｜Saturday morning and it’s a good time to think a bit about how our functional systems are",
         "date": "2026-05-18",
         "sourcePath": "follow-builders",
-        "sourceUrl": "https://x.com/swyx/status/2055906613316432247",
-        "originalDate": "2026-05-17",
-        "originalView": "@sarahookr @calcsam achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=0; retweets=0; replies=0",
-        "interpretation": "@sarahookr @calcsam achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=0; retweets=0; replies=0",
+        "sourceUrl": "https://x.com/garrytan/status/2055674791873630650",
+        "originalDate": "2026-05-16",
+        "originalView": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect. America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF. That didn't happen because we forgot the engineering. It happened because we built an entire intellectual class whose job is to interrogate every system rather than improve one. Derrida: His move is that every commitment contains its own contradiction, so you can never land on firm meaning. Run that as societal firmware and you get the bureaucratic paralysis we now live in. Infrastructure projects stuck in 15 years of environmental review because every statement of purpose deconstructs under the next round of stakeholder input. Institutions that can't say what they're for because every draft mission statement gets wordsmithed into mush by people trained to find the hidden hierarchy in any clear sentence. Derrida is the OS behind a civilization that can write a 4,000 page environmental impact report but can't pour concrete. The real damage is th",
+        "interpretation": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect. America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF. That didn't happen because we forgot the engineering. It happened because we built an entire intellectual class whose job is to interrogate every system rather than improve one. Derrida: His move is that every commitment contains its own contradiction, so you can never land on firm meaning. Run that as societal firmware and you get the bureaucratic paralysis we now live in. Infrastructure projects stuck in 15 years of environmental review because every statement of purpose deconstructs under the next round of stakeholder input. Institutions that can't say what they're for because every draft mission statement gets wordsmithed into mush by people trained to find the hidden hierarchy in any clear sentence. Derrida is the OS behind a civilization that can write a 4,000 page environmental impact report but can't pour concrete. The real damage is th",
         "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
         "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
         "relations": [],
@@ -2849,12 +5569,22 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "point-agent-workflow",
-            "name": "Agent 工作流观点",
+            "id": "point-model-infra",
+            "name": "模型基础设施观点",
             "group": "point",
             "aliases": [
-              "多 Agent",
-              "工作流"
+              "Infra",
+              "推理",
+              "记忆"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
             ]
           },
           {
@@ -2877,14 +5607,14 @@ window.WaveSightContent = {
         ]
       },
       {
-        "id": "BP-20260518-10",
-        "title": "Swyx｜AIE coming to India soon! https://t.co/bAbATz4IFb",
+        "id": "BP-20260518-02",
+        "title": "Garry Tan｜What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives",
         "date": "2026-05-18",
         "sourcePath": "follow-builders",
-        "sourceUrl": "https://x.com/swyx/status/2055889947136237595",
-        "originalDate": "2026-05-17",
-        "originalView": "AIE coming to India soon! https://t.co/bAbATz4IFb achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=78; retweets=3; replies=21",
-        "interpretation": "AIE coming to India soon! https://t.co/bAbATz4IFb achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=78; retweets=3; replies=21",
+        "sourceUrl": "https://x.com/garrytan/status/2055670533451366479",
+        "originalDate": "2026-05-16",
+        "originalView": "What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80",
+        "interpretation": "What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80",
         "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
         "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
         "relations": [],
@@ -2922,12 +5652,51 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "point-agent-workflow",
-            "name": "Agent 工作流观点",
+            "id": "point-model-infra",
+            "name": "模型基础设施观点",
             "group": "point",
             "aliases": [
-              "多 Agent",
-              "工作流"
+              "Infra",
+              "推理",
+              "记忆"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI治理",
+            "group": "track",
+            "aliases": [
+              "Agent治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-data",
+            "name": "企业数据智能",
+            "group": "track",
+            "aliases": [
+              "企业数据",
+              "RAG",
+              "企业知识库"
             ]
           },
           {
@@ -2954,14 +5723,14 @@ window.WaveSightContent = {
   },
   "trendReport": {
     "id": "TRD-WATCH-20260518",
-    "slug": "ai-工具集官网",
-    "title": "AI 工具集官网 | 1000+ AI 工具集合，国内外 AI 工具集导航大全｜继续观察",
-    "oneLine": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
+    "slug": "clu-20260518-01",
+    "title": "CLU-20260518-01｜track-ai-agent｜继续观察",
+    "oneLine": "track-ai-agent 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。",
     "score": "继续观察",
     "stage": "暂无公开信息补足深挖条件",
     "date": "2026-05-18",
     "updated": "2026.05.18",
-    "sourcePath": "https://ai-bot.cn/",
+    "sourcePath": "R-012, R-001",
     "relationFields": "",
     "relations": [],
     "evidenceGaps": "暂未监测到足够同类案例、客户付费信息或多源证据，不能写成正式趋势结论。",
@@ -3008,12 +5777,48 @@ window.WaveSightContent = {
         ]
       },
       {
-        "id": "source-first-party",
-        "name": "一手来源",
-        "group": "source",
+        "id": "track-enterprise-workflow",
+        "name": "企业工作流",
+        "group": "track",
         "aliases": [
-          "官网",
-          "官方博客"
+          "企业AI工作流",
+          "工作流自动化"
+        ]
+      },
+      {
+        "id": "customer-enterprise",
+        "name": "大中型企业",
+        "group": "customer",
+        "aliases": [
+          "企业客户"
+        ]
+      },
+      {
+        "id": "track-enterprise-data",
+        "name": "企业数据智能",
+        "group": "track",
+        "aliases": [
+          "企业数据",
+          "RAG",
+          "企业知识库"
+        ]
+      },
+      {
+        "id": "evidence-customer-adoption",
+        "name": "客户采用",
+        "group": "evidence",
+        "aliases": [
+          "部署",
+          "上线",
+          "合作"
+        ]
+      },
+      {
+        "id": "stage-risk",
+        "name": "风险变量",
+        "group": "stage",
+        "aliases": [
+          "risk"
         ]
       }
     ]
@@ -3021,36 +5826,35 @@ window.WaveSightContent = {
   "brief": {
     "issue": "Preview.001",
     "period": "2026.05.18",
-    "title": "2026-05-18 观澜判断",
-    "summary": [],
+    "title": "Garry Tan｜Saturday morning and it’s a good time to …",
+    "summary": [
+      "它不是普通发布，而是让客户、流程、预算或责任边界露出变化。",
+      "它把 AI 从“买一个座席”推向“谁在调用、用在哪、烧多少钱”的管理问题。",
+      "它说明会动手的 AI 正在逼近真实流程，控制、日志和回退不再是配角。"
+    ],
     "heat": [
       [
-        "AI 工具集官网 | 1000+ AI 工具集合，国内外 AI 工具集导航大全",
+        "CLU-20260518-01｜track-ai-agent",
         "升温",
-        "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。"
+        "track-ai-agent 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。"
       ],
       [
-        "< pre > - HTML（超文本标记语言） | MDN",
+        "CLU-20260518-02｜track-ai-coding",
         "升温",
-        "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。"
-      ],
-      [
-        "Greg Brockman 整合 OpenAI 产品团队以构建\"智能体未来\"",
-        "升温",
-        "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。"
+        "track-ai-coding 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。"
       ]
     ],
     "evidence": {
       "points": [
         {
-          "id": "BP-20260518-09",
-          "title": "Swyx｜@sarahookr @calcsam",
+          "id": "BP-20260518-01",
+          "title": "Garry Tan｜Saturday morning and it’s a good time to think a bit about how our functional systems are",
           "date": "2026-05-18",
           "sourcePath": "follow-builders",
-          "sourceUrl": "https://x.com/swyx/status/2055906613316432247",
-          "originalDate": "2026-05-17",
-          "originalView": "@sarahookr @calcsam achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=0; retweets=0; replies=0",
-          "interpretation": "@sarahookr @calcsam achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=0; retweets=0; replies=0",
+          "sourceUrl": "https://x.com/garrytan/status/2055674791873630650",
+          "originalDate": "2026-05-16",
+          "originalView": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect. America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF. That didn't happen because we forgot the engineering. It happened because we built an entire intellectual class whose job is to interrogate every system rather than improve one. Derrida: His move is that every commitment contains its own contradiction, so you can never land on firm meaning. Run that as societal firmware and you get the bureaucratic paralysis we now live in. Infrastructure projects stuck in 15 years of environmental review because every statement of purpose deconstructs under the next round of stakeholder input. Institutions that can't say what they're for because every draft mission statement gets wordsmithed into mush by people trained to find the hidden hierarchy in any clear sentence. Derrida is the OS behind a civilization that can write a 4,000 page environmental impact report but can't pour concrete. The real damage is th",
+          "interpretation": "Saturday morning and it’s a good time to think a bit about how our functional systems are being torn down by a mind virus by two philosophers: Foucault and Derrida Foucault: His framework tells you that every institution claiming to know something is really just exercising power. Medicine, engineering, law, science. Apply that at civilizational scale and you get exactly what Dan Wang warns about: a society that lost the will to build. Process knowledge — the tacit know-how that only exists in the hands of people who actually make things — dies when a culture decides that all knowledge claims are suspect. America went from building the Interstate Highway System and the Apollo rockets to being unable to build a train from LA to SF. That didn't happen because we forgot the engineering. It happened because we built an entire intellectual class whose job is to interrogate every system rather than improve one. Derrida: His move is that every commitment contains its own contradiction, so you can never land on firm meaning. Run that as societal firmware and you get the bureaucratic paralysis we now live in. Infrastructure projects stuck in 15 years of environmental review because every statement of purpose deconstructs under the next round of stakeholder input. Institutions that can't say what they're for because every draft mission statement gets wordsmithed into mush by people trained to find the hidden hierarchy in any clear sentence. Derrida is the OS behind a civilization that can write a 4,000 page environmental impact report but can't pour concrete. The real damage is th",
           "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
           "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
           "relations": [],
@@ -3088,12 +5892,22 @@ window.WaveSightContent = {
               ]
             },
             {
-              "id": "point-agent-workflow",
-              "name": "Agent 工作流观点",
+              "id": "point-model-infra",
+              "name": "模型基础设施观点",
               "group": "point",
               "aliases": [
-                "多 Agent",
-                "工作流"
+                "Infra",
+                "推理",
+                "记忆"
+              ]
+            },
+            {
+              "id": "track-ai-infra",
+              "name": "AI基础设施",
+              "group": "track",
+              "aliases": [
+                "AI Infra",
+                "模型基础设施"
               ]
             },
             {
@@ -3116,14 +5930,14 @@ window.WaveSightContent = {
           ]
         },
         {
-          "id": "BP-20260518-10",
-          "title": "Swyx｜AIE coming to India soon! https://t.co/bAbATz4IFb",
+          "id": "BP-20260518-02",
+          "title": "Garry Tan｜What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives",
           "date": "2026-05-18",
           "sourcePath": "follow-builders",
-          "sourceUrl": "https://x.com/swyx/status/2055889947136237595",
-          "originalDate": "2026-05-17",
-          "originalView": "AIE coming to India soon! https://t.co/bAbATz4IFb achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=78; retweets=3; replies=21",
-          "interpretation": "AIE coming to India soon! https://t.co/bAbATz4IFb achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=78; retweets=3; replies=21",
+          "sourceUrl": "https://x.com/garrytan/status/2055670533451366479",
+          "originalDate": "2026-05-16",
+          "originalView": "What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80",
+          "interpretation": "What is GBrain? My open source project is a knowledge system, not RAG in a box. It gives agents 8 layers that work together to improve memory in a way that makes your already smart OpenClaw or Hermes Agent feel clairvoyant about who you are. Personal AI becomes possible. https://t.co/XNVIw5ZfpO President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=1231; retweets=89; replies=80",
           "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
           "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
           "relations": [],
@@ -3161,12 +5975,51 @@ window.WaveSightContent = {
               ]
             },
             {
-              "id": "point-agent-workflow",
-              "name": "Agent 工作流观点",
+              "id": "point-model-infra",
+              "name": "模型基础设施观点",
               "group": "point",
               "aliases": [
-                "多 Agent",
-                "工作流"
+                "Infra",
+                "推理",
+                "记忆"
+              ]
+            },
+            {
+              "id": "track-ai-agent",
+              "name": "AI Agent",
+              "group": "track",
+              "aliases": [
+                "AI-Agent",
+                "智能体"
+              ]
+            },
+            {
+              "id": "track-ai-governance",
+              "name": "AI治理",
+              "group": "track",
+              "aliases": [
+                "Agent治理",
+                "权限审计"
+              ]
+            },
+            {
+              "id": "scenario-agent-governance",
+              "name": "Agent 权限治理",
+              "group": "scenario",
+              "aliases": [
+                "审计",
+                "权限",
+                "风险控制"
+              ]
+            },
+            {
+              "id": "track-enterprise-data",
+              "name": "企业数据智能",
+              "group": "track",
+              "aliases": [
+                "企业数据",
+                "RAG",
+                "企业知识库"
               ]
             },
             {
@@ -3189,14 +6042,14 @@ window.WaveSightContent = {
           ]
         },
         {
-          "id": "BP-20260518-13",
-          "title": "Thariq｜HTML continues to be undefeated https://t.co/veyAAEWKrT",
+          "id": "BP-20260518-03",
+          "title": "Zara Zhang｜AI psychosis: cycling between two mental states every single day ↑ after using coding agen",
           "date": "2026-05-18",
           "sourcePath": "follow-builders",
-          "sourceUrl": "https://x.com/trq212/status/2055903660476129723",
-          "originalDate": "2026-05-17",
-          "originalView": "HTML continues to be undefeated https://t.co/veyAAEWKrT Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=64; retweets=1; replies=17",
-          "interpretation": "HTML continues to be undefeated https://t.co/veyAAEWKrT Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=64; retweets=1; replies=17",
+          "sourceUrl": "https://x.com/zarazhangrui/status/2055728641913536762",
+          "originalDate": "2026-05-16",
+          "originalView": "AI psychosis: cycling between two mental states every single day ↑ after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life. ↓ after scrolling twitter: holy shit I'm completely behind. everyone's ahead. the wave is moving and I'm going to get left. Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w likes=136; retweets=16; replies=28",
+          "interpretation": "AI psychosis: cycling between two mental states every single day ↑ after using coding agents: holy shit I'm omnipotent. I can build anything. I've never felt this powerful in my life. ↓ after scrolling twitter: holy shit I'm completely behind. everyone's ahead. the wave is moving and I'm going to get left. Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w likes=136; retweets=16; replies=28",
           "calibrates": "用于观察建造者观点变化，不作为事实主证据。",
           "usage": "用于今日观察或趋势追踪中的前沿观点参照。",
           "relations": [],
@@ -3265,11 +6118,11 @@ window.WaveSightContent = {
       "risks": [],
       "trends": [
         {
-          "id": "CLU-CAND-20260518-01",
-          "title": "AI 工具集官网 | 1000+ AI 工具集合，国内外 AI 工具集导航大全",
+          "id": "CLU-20260518-01",
+          "title": "CLU-20260518-01｜track-ai-agent",
           "date": "2026-05-18",
-          "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-          "sourcePath": "https://ai-bot.cn/",
+          "judgment": "track-ai-agent 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。",
+          "sourcePath": "R-012, R-001",
           "relationFields": "",
           "relations": [],
           "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
@@ -3283,115 +6136,58 @@ window.WaveSightContent = {
               ]
             },
             {
-              "id": "source-first-party",
-              "name": "一手来源",
-              "group": "source",
-              "aliases": [
-                "官网",
-                "官方博客"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "CLU-CAND-20260518-02",
-          "title": "< pre > - HTML（超文本标记语言） | MDN",
-          "date": "2026-05-18",
-          "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-          "sourcePath": "https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/pre",
-          "relationFields": "",
-          "relations": [],
-          "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-          "tags": [
-            {
-              "id": "stage-rising",
-              "name": "升温",
-              "group": "stage",
-              "aliases": [
-                "rising"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "CLU-CAND-20260518-03",
-          "title": "Greg Brockman 整合 OpenAI 产品团队以构建\"智能体未来\"",
-          "date": "2026-05-18",
-          "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-          "sourcePath": "https://the-decoder.com/greg-brockman-consolidates-openais-product-teams-to-build-an-agentic-future",
-          "relationFields": "",
-          "relations": [],
-          "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
-          "tags": [
-            {
-              "id": "stage-rising",
-              "name": "升温",
-              "group": "stage",
-              "aliases": [
-                "rising"
-              ]
-            },
-            {
-              "id": "track-ai-agent",
-              "name": "AI Agent",
+              "id": "track-enterprise-workflow",
+              "name": "企业工作流",
               "group": "track",
               "aliases": [
-                "AI-Agent",
-                "智能体"
+                "企业AI工作流",
+                "工作流自动化"
               ]
             },
             {
-              "id": "track-ai-governance",
-              "name": "AI治理",
+              "id": "customer-enterprise",
+              "name": "大中型企业",
+              "group": "customer",
+              "aliases": [
+                "企业客户"
+              ]
+            },
+            {
+              "id": "track-enterprise-data",
+              "name": "企业数据智能",
               "group": "track",
               "aliases": [
-                "Agent治理",
-                "权限审计"
+                "企业数据",
+                "RAG",
+                "企业知识库"
               ]
             },
             {
-              "id": "scenario-agent-governance",
-              "name": "Agent 权限治理",
-              "group": "scenario",
-              "aliases": [
-                "审计",
-                "权限",
-                "风险控制"
-              ]
-            },
-            {
-              "id": "evidence-product-launch",
-              "name": "产品发布",
+              "id": "evidence-customer-adoption",
+              "name": "客户采用",
               "group": "evidence",
               "aliases": [
-                "功能发布",
-                "平台发布"
+                "部署",
+                "上线",
+                "合作"
               ]
             },
             {
-              "id": "region-us",
-              "name": "美国",
-              "group": "region",
+              "id": "stage-risk",
+              "name": "风险变量",
+              "group": "stage",
               "aliases": [
-                "US"
-              ]
-            },
-            {
-              "id": "region-global",
-              "name": "全球",
-              "group": "region",
-              "aliases": [
-                "海外"
+                "risk"
               ]
             }
           ]
         },
         {
-          "id": "CLU-CAND-20260518-04",
-          "title": "Oppo 开源 Android AI 代理 X-OmniClaw，无需离开手机即可调用摄像头、屏幕与语音",
+          "id": "CLU-20260518-02",
+          "title": "CLU-20260518-02｜track-ai-coding",
           "date": "2026-05-18",
-          "judgment": "该条目热度或相关性较高，但当前仍需 S/A/B 来源补证，暂不升级为正式变化卡或趋势卡。",
-          "sourcePath": "https://the-decoder.com/oppo-open-sources-android-ai-agent-x-omniclaw-that-uses-your-camera-screen-and-voice-without-leaving-the-phone",
+          "judgment": "track-ai-coding 仍在候选阶段。当前能看到同一类客户、流程或技术路线反复出现，但还需要客户采用、付费数据和反证材料继续补厚。",
+          "sourcePath": "R-002, R-004, R-003, R-005, R-006, R-007",
           "relationFields": "",
           "relations": [],
           "evidenceGaps": "暂未形成正式趋势结论，需补足 S/A/B 来源和同类案例。",
@@ -3405,32 +6201,48 @@ window.WaveSightContent = {
               ]
             },
             {
-              "id": "track-ai-customer-service",
-              "name": "AI客服",
+              "id": "track-enterprise-workflow",
+              "name": "企业工作流",
               "group": "track",
               "aliases": [
-                "Voice-AI",
-                "语音客服"
+                "企业AI工作流",
+                "工作流自动化"
               ]
             },
             {
-              "id": "function-customer-service",
-              "name": "客服售后",
-              "group": "function",
+              "id": "customer-enterprise",
+              "name": "大中型企业",
+              "group": "customer",
               "aliases": [
-                "客服",
-                "售后",
-                "质检"
+                "企业客户"
               ]
             },
             {
-              "id": "scenario-customer-ticket",
-              "name": "工单与质检",
-              "group": "scenario",
+              "id": "track-enterprise-data",
+              "name": "企业数据智能",
+              "group": "track",
               "aliases": [
-                "工单",
-                "质检",
-                "智能派单"
+                "企业数据",
+                "RAG",
+                "企业知识库"
+              ]
+            },
+            {
+              "id": "evidence-customer-adoption",
+              "name": "客户采用",
+              "group": "evidence",
+              "aliases": [
+                "部署",
+                "上线",
+                "合作"
+              ]
+            },
+            {
+              "id": "stage-risk",
+              "name": "风险变量",
+              "group": "stage",
+              "aliases": [
+                "risk"
               ]
             }
           ]
