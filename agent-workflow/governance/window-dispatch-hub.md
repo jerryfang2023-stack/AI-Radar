@@ -1,4 +1,4 @@
-# Window Dispatch Hub
+﻿# Window Dispatch Hub
 
 更新时间：2026-05-06  
 owner：`pm` / `workflow`  
@@ -140,7 +140,7 @@ owner：`pm` / `workflow`
 - `failed / not-accepted / closed` 任务不得继续派发原 Task ID。
 - 并入 failed 任务的子项不得视为已解决，必须改为 `review / needs-successor-after-failed-merge` 或重新派发继任任务。
 - “使用建议 / 下一步”不得推荐已经 completed / accepted 的任务、failed 任务、abandoned 任务或被 failed 任务吞并的任务。
-- V2-only 阶段默认入口是 `01-SiteV2/`，不得把旧 `04-Site/` 当作当前开发入口。
+- V2-only 阶段默认入口是 `01-SiteV2/`，旧 `04-Site/` 已从当前仓库移除，不得恢复为当前开发入口。
 
 ## 2. 任务 ID
 
@@ -348,7 +348,7 @@ agent-workflow/execution/TASK-window-dispatch-template.md
 
 ### 5.1 页面类任务派发硬规则
 
-凡任务涉及首页、栏目页、详情页、今日要点、关键信号、机会解码、商业内参、The Point / Trends 降级模块、会员页、Admin、移动端或任何 `01-SiteV2/site/*.html` / `01-SiteV2/site/assets/*.css` / `01-SiteV2/site/assets/*.js` 页面体验改动，调度中枢必须把该任务标记为“页面类任务”，并在派发单中加入以下硬性要求。旧 `04-Site/` 只作为 V1 归档参考，不再作为 V2 页面类任务的默认改动范围。
+凡任务涉及首页、栏目页、详情页、今日观察、商业信号、机会判断、商业内参、The Point / Trends 降级模块、会员页、Admin、移动端或任何 `01-SiteV2/site/*.html` / `01-SiteV2/site/assets/*.css` / `01-SiteV2/site/assets/*.js` 页面体验改动，调度中枢必须把该任务标记为“页面类任务”，并在派发单中加入以下硬性要求。旧 `04-Site/` 已从当前仓库移除，不再作为 V2 页面类任务参考或改动范围。
 
 页面类任务不得只写“读取 `DESIGN.md`”或“使用 UI/UE 规范”。必须要求 UI/UE Agent 先产出可验收的页面规范表，再允许 Dev 实现。
 页面类任务如果涉及任何对外或后台可见文案，也必须要求 Copy Agent 先产出可验收的文案规范表；Dev 不得自行补写、改写或扩写关键文案。

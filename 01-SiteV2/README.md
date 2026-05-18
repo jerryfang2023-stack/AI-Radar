@@ -15,8 +15,7 @@ encoding: UTF-8
 - `content/` 保留为内容生产线子目录，不把 raw / pool / structured / reports 文件平铺到站点根目录。
 - `knowledge/` 保留为 Obsidian 长期知识库层，用于沉淀观点库、案例库、信号库、机会库和来源库；不要把每日 Raw 全量搬入知识库。
 - 已存在的 `AGENTS.md`、`docs/`、`agent-workflow/` 暂保留在项目根目录，用于新窗口接手、调度治理和长期记录。
-- V1.0 内容归档见 `../10-Archive/v1.0/v1.0-content-archive.md`。
-- V1 旧站工程见 `../10-Archive/v1.0/site/04-Site/`，只作历史参考。
+- V1.0 内容归档与旧站工程已从当前仓库移除；如需追溯只能查看 Git 历史。
 
 ## 建议结构
 

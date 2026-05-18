@@ -1,5 +1,148 @@
 ﻿# 观澜AI 工作进度账本
 
+## 2026-05-18 变化卡与 Raw / Pool 规则对齐清理
+
+- 状态：`implemented / syntax-passed / migration-gap-recorded`。
+- 背景：用户要求先检查当前变化卡与更新后的 Raw / Pool 规则文档是否冲突，并清理历史遗留和隐患。
+- 已发现：旧变化卡模板缺少 `raw_json`、`full_text_hash`、`evidence_seed`、`missing_information` 等 Raw 回源字段；仍保留 `data_level`、`credibility_boundary`、`可二创角度`、`可升级为内参的理由` 等旧字段；生成规则对 C / M / 社区 / 聚合来源的前台准入门槛不够硬。
+- 已更新：`01-SiteV2/knowledge/README.md`，明确变化卡必须 Raw-first，正式 / 前台变化卡需通过核心 Raw 证据门槛。
+- 已重写：`01-SiteV2/knowledge/10-Templates/change-card-template.md`，新增 `asset_level`、`evidence_gate`、`raw_refs`、`primary_raw`、`source_evidence`、`key_excerpts`、`business_elements`、`evidence_seed`、`missing_information`，删除下游写作和二创字段。
+- 已更新：`agent-workflow/automation-prompts/asset-card-generator.md`，要求正式 / 前台变化卡必须满足 `has_full_text=true`、`extraction_quality=high|medium`、`source_level=S|A|B`、`usable_for.change=true`；C / M / 社区 / 聚合线索补不到原始证据时只能进入 `watchlist_only` 或内部候选。
+- 遗留：现有变化卡普遍缺少新版 Raw 回源字段，后续需单独做 schema 迁移和 Raw 回填；案例卡、观点卡、趋势卡模板也有同类旧字段，待分模块处理。
+- 收口报告：`agent-workflow/reports/change-card-raw-pool-alignment-2026-05-18.md`。
+- 验证：`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+
+## 2026-05-18 V1 旧站代码与旧文章归档物理删除
+
+- 状态：`netlify-deployed / github-pending`。
+- 执行范围：删除 V1 旧站代码、旧文章归档、历史改写入库目录和 V1 专用同步 / QA 脚本。
+- 已删除：`10-Archive/v1.0/`、`01-SiteV2/content/00-inbox/legacy-import/`、`01-SiteV2/content/00-inbox/legacy-full-import/`、`agent-workflow/tools/unified-site-sync.mjs`、`agent-workflow/tools/the-point-browser-qa.mjs`。
+- 已保留：`01-SiteV2/` 当前 V2 站点与内容生产线、`09-ai-news-radar/`、`10-Archive/legacy/`、根目录长期调度文件。
+- 已更新：`AGENTS.md`、`current-context.md`、`quality-gates.md`、`dispatch-state-reconciliation.md`、`window-dispatch-hub.md`、`agent-memory.md`、`governance/README.md`、`automation-fallback-policy.md`、Dev / Data Agent 岗位说明、V2 README 与站点 README。
+- 已调整：`run-quality-gates.mjs` 不再引用 V1 `unified-site-sync`，`automation` 检查改为 V2 生产线脚本。
+- 验证：`node --check run-quality-gates.mjs`、`node --check v2-content-gate.mjs`、`run-quality-gates syntax`、`run-quality-gates site`、`run-quality-gates automation` 通过。
+- 备注：`run-quality-gates v2content` 失败来自 2026-05-18 当日内容生产缺口（今日观察长文 / 变化卡未产出），与 V1 删除无关。
+- 收口报告：`agent-workflow/reports/WSD-20260518-01-v1-physical-removal-github-netlify-closeout.md`。
+- Netlify：已发布到 `https://wavesight-ai-preview.netlify.app`，deploy `6a0ab245547906e0cbead985`。
+
+## 2026-05-18 今日每日监测任务执行
+
+- 状态：`executed / syntax-passed / evidence-gaps-recorded`。
+- 执行任务：按 `guanlan-daily-monitor` skill 执行 2026-05-18 每日监测。
+- 产出：Raw 100 条，Pool 30 条；输出 `01-SiteV2/content/01-raw/2026-05-18-raw-candidates.md`、`01-SiteV2/content/02-pool/2026-05-18-pool-candidates.md`、`01-SiteV2/content/04-business-signals/2026-05-18-change-cluster-candidates.md`、`01-SiteV2/content/04-business-signals/2026-05-18-opinion-candidates.md` 和 `agent-workflow/reports/2026-05-18-v2-daily-source-router-log.md`。
+- 来源结构：AI HOT 53 条、HN 20 条、follow-builders 18 条、keyword-search 9 条；外部搜索已触发。
+- 信号结构：开发者生态 22、技术迭代 21、成熟信号 21、早期信号 8、外围探索 11、未分类 17；`signal_coverage_gaps=none`。
+- 证据缺口：keyword-search 实际只返回社区反馈，非社区搜索多处 timeout / GDELT 429；这些条目只能进入 Watchlist / User Feedback，不可直接支撑前台事实判断。
+- 已修正：`run-v2-daily-pipeline.mjs` 增加“必覆盖信号类不足时启动外部搜索”的触发条件，并让补齐来源进入 Raw 选择；`01-SiteV2/content/README.md` 清理残留 `daily-monitor-router` 表述；`guanlan-daily-monitor` skill 与自动化提示已改为有边界的外部搜索参数，避免补证阶段长时间卡死。
+- 验证：`node --check agent-workflow/tools/run-v2-daily-pipeline.mjs` 通过；`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+
+## 2026-05-18 独立每日监测任务重建
+
+- 状态：`implemented / syntax-passed`。
+- 背景：用户确认每日监测应作为独立任务，不再兼容旧卡片规则和旧 writer 规则，旧监测任务与旧表达可删除。
+- 已新增：`agent-workflow/product/daily-monitoring-playbook.md`，作为每日监测任务主规则。
+- 已新增：`skills/guanlan-daily-monitor/SKILL.md`，并同步到本地 skill-store：`C:\Users\86186\.skill-store\guanlan-daily-monitor\SKILL.md`。
+- 已新增：`agent-workflow/automation-prompts/guanlan-daily-monitor.md`。
+- 已删除：旧监测 prompt `agent-workflow/automation-prompts/daily-monitor-router.md`。
+- 已删除：旧 Codex automation `v2-content-site-daily-update`。
+- 已新建：Codex automation `guanlan-daily-monitor`，每天 09:00 运行，状态 `ACTIVE`。
+- 已删除：历史 V1 自动化 `ai-the-point`、`ai-2`、`ai-3`。
+- 已同步：`AGENTS.md` 与 `current-context.md` 的六线程第一项从 `daily-monitor-router` 改为 `guanlan-daily-monitor`。
+- 收口报告：`agent-workflow/reports/guanlan-daily-monitor-rebuild-2026-05-18.md`。
+- 验证：旧监测任务名 / 兼容表述检索无残留；当前自动化目录仅保留 V2 六线程；`node --check agent-workflow/tools/run-v2-daily-pipeline.mjs` 通过；`run-quality-gates syntax` 通过。
+
+## 2026-05-18 Pool 独立分流规则与 Raw 三文档对齐
+
+- 状态：`implemented / syntax-passed`。
+- 背景：用户要求确认 Pool 是否有独立文档，并检查 Pool 相关文档与更新后的 Raw 三个文档是否存在冲突、遗留问题和隐患。
+- 已确认：此前没有当前生效的独立 Pool 主规则；Pool 规则散落在 Raw schema、source intelligence、content README、daily-monitor-router prompt 和脚本提示语中。
+- 已新增：`agent-workflow/product/pool-routing-rules.md`，作为 Pool 分流唯一细则文档，明确 `core_pool / emerging_pool / user_feedback_pool / watchlist / index_only / discard` 的入池、降级、淘汰和禁止项。
+- 已同步：`raw-evidence-schema.md`、`source-intelligence.md`、`01-SiteV2/content/README.md`、`daily-monitor-router.md`、`asset-card-generator.md` 均引用 `pool-routing-rules.md`，不再各自定义一套 Pool 标准。
+- 已清理：修正 AI HOT `paper` 类默认入候选的旧口径；清理当前工具中的 `Structured / Front Signal`、`Point 阶段`、旧 `10-databases` 路径和 Pool `12-20` 降级硬范围。
+- 已同步自动化：`v2-content-site-daily-update` / `daily-monitor-router` 定时任务已显式读取 `pool-routing-rules.md`，并把 `full_text`、`usable_for`、`pool_routes`、`core_pool` 门槛和 `pool_route_distribution` 写入执行要求。
+- 收口报告：`agent-workflow/reports/pool-routing-rules-alignment-2026-05-18.md`。
+- 验证：`node --check run-v2-daily-pipeline.mjs`、`node --check v2-content-gate.mjs`、`node --check v2-source-probe.mjs`、builders 观点生成脚本和手工 Raw 回填脚本均通过。
+
+## 2026-05-17 Raw 来源证据等级规则拆分
+
+- 状态：`implemented / syntax-passed`。
+- 背景：用户确认 S / A / B / C / M 是“来源证据等级”，只能判断事实可靠度，不能混同为商业信号价值、内容重要性或 Pool 入池资格。
+- 已更新：`source-intelligence.md` 重写 S / A / B / C / M 规则，明确 C 级不是低价值、M 级只是发现入口、S 级也不自动入池。
+- 已更新：`raw-evidence-schema.md` 新增 `acquisition_source_level`、`research_status`、`emerging_signal_score`、`pool_routes`，支持 Emerging Pool、User Feedback Pool 和 Watchlist。
+- 已更新：`source-registry-v2.json` 升级到 `v2-source-registry-1.1`，加入社区来源、高波动原帖、聚合源回源和 arXiv preprint 规则。
+- 已更新：`daily-monitor-router.md` 和 `run-v2-daily-pipeline.mjs`，后续监测按“来源可靠度”和“商业价值”分开分流；C 级高潜线索可以保留观察，S 级无变化通稿可以只建索引。
+- 已更新：`v2-raw-evidence-gate.mjs` 接受新增 Raw 字段和分流方向。
+- 收口报告：`agent-workflow/reports/raw-source-evidence-level-update-2026-05-17.md`。
+- 验证：`node --check run-v2-daily-pipeline.mjs` 通过；`node --check v2-raw-evidence-gate.mjs` 通过；`run-quality-gates syntax` 通过。
+
+## 2026-05-17 Raw 全文保存与关键词探索层更新
+
+- 状态：`implemented / syntax-passed`。
+- 背景：用户担心固定赛道词导致抓取范围收窄，并指出 Raw 原文证据不能只有 `clean_text`，需要尽量保存全文作为依据。
+- 已确认：当前关键词表不是 5 个赛道，而是 8 个 P0 赛道锚点；但仍需要防止 P0 被误用为内容边界。
+- 已更新：`keyword-monitoring-v2.json` 新增 `outside-core-exploration` 外围探索信号主题组，keyword-search 查询从 42 条增至 50 条；新增 `p0_tracks_are_anchors_not_boundaries`、`exploration_query_share`、`outside_core_track_min_raw`。
+- 已更新：Raw schema 和 pipeline 新增 `full_text`、`full_text_hash`，Markdown 原文档案同时保存 `clean_text` 与 `full_text`；Pool 增加 `raw_full_text_hash`。
+- 已同步：`daily-monitor-router`、`content/README.md`、`source-intelligence.md` 明确 `full_text` 是证据底座，`clean_text` 是分析入口。
+- 收口报告：`agent-workflow/reports/raw-full-text-and-keyword-expansion-2026-05-17.md`。
+- 验证：关键词 JSON 解析通过；`node --check run-v2-daily-pipeline.mjs` 通过；`node --check v2-raw-evidence-gate.mjs` 通过；`run-quality-gates syntax` 通过。
+
+## 2026-05-17 Keyword Search 多路搜索规则固化
+
+- 状态：`implemented / syntax-passed`。
+- 背景：用户确认 keyword-search 不得只依赖 HN / Reddit / X 等社区来源；社区来源只能说明讨论、反馈、痛点和早期热度，不能单独支撑事实判断。
+- 已更新：`collectKeywordSearch()` 从 HN 单一路径改为多路搜索，覆盖官方原始、开发生态、资本创业、行业落地、采购 / marketplace、A 级媒体 / GDELT、社区反馈七类路径。
+- 已新增：keyword-search Raw 记录 `search_intent`、`search_path`、`search_path_label`；日志新增 `keyword_search_path_distribution`、`keyword_search_intent_distribution`、`keyword_search_non_community_count`。
+- 已固化：社区-only 搜索结果不得生成正式 Pool、观点卡、案例卡、变化卡或今日观察；只能进入 Watchlist / User Feedback Pool，并继续补官方、生态、融资、行业、采购或 A 级媒体来源。
+- 已同步：`raw-evidence-schema.md`、`daily-monitor-router.md`、`source-intelligence.md`、`content/README.md`、`keyword-monitoring-v2.json`。
+- 收口报告：`agent-workflow/reports/keyword-search-multipath-evidence-2026-05-17.md`。
+- 验证：`node --check run-v2-daily-pipeline.mjs` 通过；`node --check v2-raw-evidence-gate.mjs` 通过；关键词 JSON 解析通过。
+
+## 2026-05-16 商业信号首页 / 栏目页 / 详情页重构
+
+- 状态：`implemented / verification-passed`。
+- 背景：用户指出商业信号模块左侧空、排版杂乱、筛选标签突兀，详情页缺少关联案例、来源依据和前沿观点支撑。
+- 已更新：首页商业信号从旧卡片墙改为信号工作台，左侧主信号展示事件、案例、来源，右侧展示次级信号和当日信号 / 案例 / 前沿观点数量。
+- 已更新：`signals.html` 动态栏目页改为商业信号工作台，包含主信号、信号列表、来源依据、案例卡和前沿观点，不再以大空卡片和突兀筛选标签为主。
+- 已更新：`signal-detail.html` 动态详情页改为报告式阅读结构，展示发生了什么、为什么值得看、来源依据、相关案例、前沿观点、商业含义和继续观察边界。
+- 已同步：新增 `01-SiteV2/knowledge/00-MOC/2026-05-16--business-signal-relation-index.md`，将当日 10 条变化卡与案例卡、观点卡、Raw 快照建立索引；`knowledge/README.md` 增加每日关系索引要求。
+- 已固化：`asset-card-generator` 与 `case-signal-researcher` 自动化说明增加“卡片厚度硬要求”，要求每张前台卡可支撑首页、栏目页和详情页展示。
+- 顺序修正：商业信号前台和自动化规则统一为“先事实 / 事件，再判断 / 观点，再关联结构化资产”；首页、栏目页、详情页均已改为先呈现事件，再展开商业判断。
+- 统一命名：普通前台可见的 Builders 相关栏目继续收束为“前沿观点”，并修正今日观察页锚点文案。
+- 验证：`node 01-SiteV2/site/scripts/sync-v2-site-data.mjs` 通过；`node --check 01-SiteV2/site/assets/app.js` 通过；`node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs` 通过；`run-quality-gates syntax / v2content / style` 均通过；本地 `index.html / signals.html / signal-detail.html` HTTP 访问均返回 200。
+
+## 2026-05-16 Raw 快照与卡片补厚链路完成
+
+- 状态：`accepted / content-linkage-updated`。
+- 背景：用户指出 Pool 只有标签和观澜判断，卡片内容单薄，前台缺少可展示的事件、案例、来源依据和关联资产。
+- 已更新：`run-v2-daily-pipeline.mjs` 保存 Raw 本地正文 / 快照；Pool 只作为索引，进入卡片和文章时必须回看 `raw_archive`、`source_url` 与 `key_excerpt`。
+- 已补厚：2026-05-16 的 10 张变化卡、10 张案例卡、6 张观点卡 / 前沿观点材料，并补齐 `事件`、`商业含义`、`Raw`、`关联案例`、`关联观点`。
+- 已新增 / 对齐：Genkit middleware、PwC × Anthropic 两张正式变化卡；PwC、Codex sandbox、Genkit 等案例卡的关联变化 ID 已校正。
+- 已改前台同步：商业信号详情可读取 `商业含义 / Raw / 关联案例 / 关联观点`，并在详情页呈现来源依据与相关案例卡；Builders 相关前台标签继续收束为“前沿观点”。
+- 验证：`node 01-SiteV2/site/scripts/sync-v2-site-data.mjs` 通过；`node --check 01-SiteV2/site/assets/app.js` 通过；`node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs` 通过；`run-quality-gates syntax / v2content / style` 均通过。
+
+## 2026-05-11 V2 关键词监测表接入与主题多样性算法修复
+
+- 任务：`WSD-20260511-10-v2-keyword-monitoring-algorithm-fix`。
+- 状态：`accepted / automation-updated`。
+- 修复原因：5 月 6 日至 5 月 11 日 Front Signals 连续偏向企业 Agent / MCP / 治理，排查发现关键词监测表存在但未进入 `run-v2-daily-pipeline.mjs` 执行链路。
+- 已新增：`01-SiteV2/content/10-databases/keyword-monitoring-v2.json`，将关键词监测拆为 7 个可执行主题组。
+- 已修改：`agent-workflow/tools/run-v2-daily-pipeline.mjs` 改为读取关键词配置，输出 `keyword_group_distribution`、`theme_distribution`、`theme_concentration_warning` 和 `front_signal_theme_gate`，并给外部 fetch 增加超时。
+- 已更新：`agent-workflow/governance/v2-current-rule-overrides.md`、`agent-workflow/product/source-intelligence.md` 和 Codex automation `v2-content-site-daily-update`。
+- 新闸门：Front Signal 默认同一主题最多 1 条；主题日最多 2 条且必须说明 `theme_day=true`；不得无说明地连续输出 3 条同主题企业 Agent 信号。
+- 验证：`node --check agent-workflow/tools/run-v2-daily-pipeline.mjs` 通过；关键词 JSON 解析通过；source-router 小样本 dry-run 输出多主题分布；`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+- 收口：`agent-workflow/reports/WSD-20260511-10-v2-keyword-monitoring-algorithm-fix-closeout.md`。
+
+## 2026-05-11 Copy-first 页面文案硬闸门升级
+
+- 任务：`WSD-20260511-12-copy-first-page-gate-upgrade`。
+- 状态：`accepted / governance-updated`。
+- 背景：用户指出页面新增 / 修改文案仍充满 AI 味和拼凑感，根因是文案 Skill 没有变成开发前硬闸门。
+- 已新增：`agent-workflow/governance/copy-first-page-gate.md`。
+- 已更新：`AGENTS.md`、`current-context.md`、`quality-gates.md`、`page-copy-quality-review-skill.md`、`copy-agent.md`、`COPY.md`、派发单模板、独立质检模板和 closeout 模板。
+- 新规则：页面 / 文案类任务进入 Dev 前必须有可直接落地的 Copy 文案规范表；Dev 只能按表实现，不得临场补写关键文案；缺 Copy 表或 Dev 自行新增关键文案时不得 accepted。
+- 验证：`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+- 收口：`agent-workflow/reports/WSD-20260511-12-copy-first-page-gate-upgrade-closeout.md`。
+
 ## 2026-05-11 关键信号页面体系阶段性设计优化已验收
 
 - 任务汇总：`V2-KEY-SIGNALS-SYSTEM / WSD-20260511-key-signals-page-system`。
@@ -5177,3 +5320,204 @@ Agent 安排：
 - 已新增返修任务：`V2-KEY-SIGNALS-REVISION / WSD-20260511-07-v2-key-signals-pages-revision`。
 - 下一步：派发 `V2-KEY-SIGNALS-REVISION` 到独立执行窗口；返修完成后必须再次派发独立页面与文案质检。
 
+# 2026-05-11 V2 Admin 页面开发收口转独立质检
+
+- 状态：review / ready_for_independent_quality_review。
+- 原开发任务：`V2-ADMIN-PAGES / WSD-20260511-04-v2-admin-pages-redesign`。
+- 收口文件：`agent-workflow/reports/WSD-20260511-04-v2-admin-pages-redesign-closeout.md`。
+- 开发交付：新增 `01-SiteV2/site/admin.html`，并在 `assets/app.js` / `assets/styles.css` 接入 V2 内部管理台；覆盖项目统计 Dashboard、内容管理、单条编辑、用户权限、邀请码、订阅订单、质量检查台等模块。
+- 开发窗口结论：`ready_for_independent_page_copy_quality_review`，未自称 accepted，符合页面 / 文案开发不得自验自收规则。
+- 调度处理：不直接 accepted；已新增独立质检任务 `V2-ADMIN-QA / WSD-20260511-09-v2-admin-pages-quality-review`。
+- feature_list：`GL-M3-005 Admin 管理后台独立升级` 已更新为 `review`。
+- 下一步：派发 `V2-ADMIN-QA` 到独立 QA 窗口；若质检 accepted，再回填 Admin 开发任务为最终 accepted；若 needs-revision，则生成 Admin 返修任务。
+
+# 2026-05-11 V2 Admin 页面用户手工确认接受
+
+- 状态：accepted / user-manual-confirmed / qa-waived。
+- 原开发任务：`V2-ADMIN-PAGES / WSD-20260511-04-v2-admin-pages-redesign`。
+- 收口文件：`agent-workflow/reports/WSD-20260511-04-v2-admin-pages-redesign-closeout.md`。
+- 用户确认：2026-05-11 用户明确表示“手工确认，不再质检”。
+- 当前处理：Admin 页面开发改动保留，`V2-ADMIN-PAGES` 标记为 accepted；`V2-ADMIN-QA / WSD-20260511-09-v2-admin-pages-quality-review` 标记为 `void / user-waived`，不再派发。
+- feature_list：`GL-M3-005 Admin 管理后台独立升级` 已更新为 `passed`。
+- 后续约束：本次为单任务用户手工确认例外，不取消后续页面 / 文案任务默认独立质检规则。
+
+# 2026-05-11 机会解码 / 商业内参细节精修收口
+
+- 状态：accepted / local-polish-verified。
+- 任务：`V2-OPPORTUNITY-BRIEF-POLISH / opportunity-brief-detail-polish-20260511`。
+- 收口文件：`agent-workflow/reports/opportunity-brief-detail-polish-20260511-closeout.md`。
+- 改动范围：`opportunities.html`、`brief.html`、`assets/app.js`、`assets/styles.css`、`assets/generated/`。
+- 已完成：删除机会解码和商业内参入口顶部介绍行；压缩机会入口、机会详情、商业内参、关键信号详情的过大字号；将两个栏目内容型 SVG 配图替换为 imagegen 位图。
+- 新增/使用位图：`business-brief-control-layer-imagegen.png`、`brief-framework-evidence-imagegen.png`、`opportunity-report-cover-imagegen.png`、`opportunity-framework-path-imagegen.png`。
+- 调度复验：`node --check 01-SiteV2/site/assets/app.js` 通过；`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过；浏览器抽查 `opportunities.html`、`brief.html`、`opportunity-detail.html` 均无横向溢出，目标内容图已使用 generated PNG，仅保留品牌 Logo SVG。
+- 验证截图：`agent-workflow/reports/WSD-20260511-opportunities-polish-review-1440.png`、`agent-workflow/reports/WSD-20260511-brief-polish-review-1440.png`、`agent-workflow/reports/WSD-20260511-opportunity-detail-polish-review-1440.png`。
+- 边界：未改内容源、数据 schema、自动化、部署配置或 VI Logo SVG。
+
+# 2026-05-11 V2 网站细节修改 live 收口进入独立质检
+
+- 状态：review / ready_for_independent_quality_review。
+- 任务：`V2-DETAIL-POLISH-LIVE / WSD-20260511-08-v2-site-detail-polish-live`。
+- 收口文件：`agent-workflow/reports/WSD-20260511-08-v2-site-detail-polish-live-closeout.md`。
+- 开发交付：首页 `今日判断` 模块、今日要点日期联动、Builders 观点模块、延伸阅读 / 机会观察布局、页脚间距、局部文案和排版细节。
+- 调度复验：`node --check 01-SiteV2/site/assets/app.js` 通过；`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+- 验收判断：closeout 明确说明执行窗口不做独立 QA accepted，因此不直接 accepted。
+- 已新增独立质检任务：`V2-DETAIL-POLISH-QA / WSD-20260511-13-v2-site-detail-polish-quality-review`。
+- 下一步：派发独立质检；重点检查首页今日判断与关键信号分工、今日要点日期联动、Builders 来源口径、文案自然度、可信度和桌面视觉节奏。
+
+# 2026-05-12 页面文案独立质检 Skill 与强制流程删除
+
+- 状态：governance-updated / quality-process-removed。
+- 用户判断：通用页面 / 文案独立质检 Skill 当前测试效果不佳，要求删除。
+- 收口文件：`agent-workflow/reports/WSD-20260512-01-page-copy-quality-review-removal-closeout.md`。
+- 已删除：`agent-workflow/governance/page-copy-quality-review-skill.md`。
+- 已删除：`agent-workflow/execution/TASK-page-copy-quality-review-template.md`。
+- 已删除：`WSD-20260511-03`、`WSD-20260511-05`、`WSD-20260511-06`、`WSD-20260511-09`、`WSD-20260511-13` 相关页面文案质检派发单。
+- 已更新：`AGENTS.md`、`current-context.md`、`quality-gates.md`、`qa-agent.md`、`copy-first-page-gate.md`、`dispatch-board.md`、`agent-handoff.md`。
+- 看板处理：`V2-PAGE-COPY-QUALITY-SKILL` 标记为 `void / removed-by-user`；`V2-DETAIL-POLISH-QA` 标记为 `void / removed-by-user`；`V2-DETAIL-POLISH-LIVE` 改为 `accepted / local-polish-verified`。
+- 后续口径：不再强制另派通用页面文案独立质检，不再使用七维评分；保留 Copy-first，页面验收回到调度复核、用户确认、桌面截图 / 核心交互检查和必要专项 QA。
+
+# 2026-05-12 mattpocock grill-me skill 本地安装确认
+
+- 状态：accepted / installed-local。
+- 来源：`https://github.com/mattpocock/skills`，commit `9f2e0bd0ea776eb6372eb81fa8a4a47814a8404a`。
+- 源路径：`skills/productivity/grill-me/SKILL.md`。
+- 本地路径：`C:\Users\86186\.skill-store\grill-me\SKILL.md`。
+- 安全检查：目录仅包含 `SKILL.md`，未发现脚本、依赖安装、远程执行、文件删除或凭证读取内容。
+- 收口文件：`agent-workflow/reports/WSD-20260512-02-grill-me-skill-install-closeout.md`。
+- 注意：当前会话 Skill 列表未加载它，新窗口或重启会话后通常才能作为本地 skill 出现；当前窗口如需使用，可直接读取本地 `SKILL.md` 并严格按其规则执行。
+
+# 2026-05-14 V2 完整 Schema 迁移：趋势报告
+
+- 状态：accepted / local-verified。
+- 收口文件：`agent-workflow/reports/wavesight-schema-migration-trend-report-2026-05-14.md`。
+- 已完成：旧 `opportunity / opportunities` 当前生产 schema 迁移为 `trendReport / trendReports`；前台挂载点改为 `data-trend-report-*`；Admin 内容类型改为 `trendReports`；关系字段改为 `relatedTrendReports` / `hasTrendReport`。
+- 已完成：`trend-tracking.html` / `trend-detail.html` 保持为当前趋势追踪路径；旧 `opportunities.html` / `opportunity-detail.html` 继续 404。
+- 已完成：`site-content.json` / `site-content.js` 重新生成，当前 generated data 输出 `contentIndex.trendReports` 和顶层 `trendReport`。
+- 已完成：当前入口规范和产品数据规范已更新，旧英文 schema 只保留在历史 closeout / 日志审计轨迹中，不作为当前生产口径。
+- 验证：`sync-v2-site-data --date=2026-05-14`、`syntax`、`style`、`v2content --date=2026-05-14`、`v2-source-quality-gate --date=2026-05-14` 均通过；HTTP 检查新路径 200、旧路径 404。
+
+# 2026-05-14 Grill 80-120 固化与承接性检查
+
+- 状态：accepted / product-docs-updated。
+- 收口文件：`agent-workflow/reports/wavesight-grill-80-120-solidification-2026-05-14.md`。
+- 已完成：将 80 题之后确认的趋势报告机制、趋势快报、急件触发、30 天升级窗口、权限分层和写作规则固化到项目文档。
+- 已完成：检查并修正与 1-79 题已确认口径的承接关系；确认不改变一级导航、不新增第七自动化线程、不恢复旧 Opportunity Card 体系。
+- 已更新：`trend-model.md`、`column-architecture.md`、`COPY.md`、`intelligence-data-model.md`、`signal-system.md`、`strategy-single-source.md`、`current-context.md`、`docs/agent-handoff.md`、`AGENTS.md`。
+- 结论：80-120 题是对 1-79 框架的补充，不是推翻；后续以 Trend Card / Trend Report 双层结构执行。
+
+# 2026-05-15 Trend Report 模板与急件候选规则
+
+- 状态：accepted / templates-created。
+- 收口文件：`agent-workflow/reports/wavesight-trend-report-template-urgent-candidate-2026-05-15.md`。
+- 已创建：`01-SiteV2/knowledge/10-Templates/trend-report-flash-template.md`。
+- 已创建：`01-SiteV2/knowledge/10-Templates/trend-report-full-template.md`。
+- 已创建：`01-SiteV2/content/09-databases/urgent-trend-candidates/README.md`。
+- 已固化：`TRD-FLASH-YYYYMMDD-XX` / `TRD-FULL-YYYYMMDD-XX` / `UTCAND-YYYYMMDD-XX` ID 规则。
+- 已固化：前台第一版只展示 `watching` / `upgraded`；后台保留 `archived` / `revised` 供商业内参复盘。
+- 已固化：`approve_flash` 必须有人工作出最终放行，记录角色和窗口，不记录真实姓名。
+
+# 2026-05-15 Trend Report Writer 路由与输出规则
+
+- 状态：accepted / rules-solidified。
+- 收口文件：`agent-workflow/reports/wavesight-trend-report-writer-routing-rules-2026-05-15.md`。
+- 已创建：`01-SiteV2/content/06-trend-reports/flash/`、`full/`、`no-report-decisions/`。
+- 已固化：`trend-report-writer` 每次最多产出 1 篇；weekly mode 最多 1 篇深度报告，urgent mode 最多 1 篇趋势快报。
+- 已固化：急件候选排序为 `多源密度 > 观澜重点赛道 > 商业影响 > 来源质量 > 时间新鲜度`。
+- 已固化：未选候选写入当天 `Deferred Candidates`，最多延后 2 次，第三次必须落状态。
+- 已固化：没有足够证据写报告时必须输出 `no_report_decision`，不进入前台索引。
+- 已固化：同步脚本后续应优先读 `full/`、再读 `flash/`、短期兼容根目录旧文件，不读 `no-report-decisions/` 入前台。
+
+# 2026-05-15 trend-report-writer Prompt 与自动化任务更新
+
+- 状态：accepted / automation-prompt-updated。
+- 收口文件：`agent-workflow/reports/wavesight-trend-report-writer-prompt-update-2026-05-15.md`。
+- 已更新：`agent-workflow/automation-prompts/trend-report-writer.md`。
+- 已更新：`01-SiteV2/content/README.md` 中 trend-report-writer 段落，移除旧字数、旧根目录输出和旧轻量追踪更新口径。
+- 已更新 Codex 自动化任务：`trend-report-writer`，保持 `ACTIVE`，每周二 10:00，`gpt-5.2`，`high`。
+- 新自动化口径：每次运行只能产出 1 篇 `TRD-FULL-*` / `TRD-FLASH-*`，或输出 1 份 `no_report_decision`；不再用旧的简短运行报告作为跳过结果。
+- 已固化到任务正文：急件候选必须 `approve_flash` 后才能写趋势快报，排序按 `多源密度 > 观澜重点赛道 > 商业影响 > 来源质量 > 时间新鲜度`，未选候选写入 `Deferred Candidates`。
+- 验证：`syntax`、`style`、`v2content --date=2026-05-15` 均通过。
+- 边界：未改同步脚本，下一步应让同步优先读取 `full/`、再读取 `flash/`，并排除 `no-report-decisions/`。
+
+# 2026-05-15 Trend Report 同步脚本更新
+
+- 状态：accepted / sync-updated。
+- 收口文件：`agent-workflow/reports/wavesight-trend-report-sync-script-update-2026-05-15.md`。
+- 已更新：`01-SiteV2/site/scripts/sync-v2-site-data.mjs`。
+- 已更新：`agent-workflow/tools/v2-content-gate.mjs`。
+- 已更新：`agent-workflow/tools/writer-style-gate.mjs`。
+- 已重新生成：`01-SiteV2/site/data/site-content.json`、`01-SiteV2/site/data/site-content.js`。
+- 同步读取优先级已改为 `06-trend-reports/full/ -> 06-trend-reports/flash/ -> 06-trend-reports/` 根目录旧文件。
+- `no-report-decisions/` 不进入前台同步；`writer-style-gate` 也跳过该目录。
+- Trend Report 解析已支持 `kind`、`status`、`front_status`、`urgent_candidate_id`、`upgrade_target`、`upgraded_from`、`source_count`、`primary_source_count`、`has_counter_evidence`。
+- 已用临时 `TRD-FULL-20260515-99` 文件验证 `full/` 可被同步读取；测试文件已删除并重新同步真实数据。
+- 验证：`node --check sync-v2-site-data.mjs`、`node --check v2-content-gate.mjs`、`node --check writer-style-gate.mjs`、`syntax`、`style`、`v2content --date=2026-05-15` 均通过。
+- 当前没有真实 `full/` 或 `flash/` 报告，前台数据仍使用 `TRD-WATCH-20260515` fallback，符合当前内容状态。
+
+# 2026-05-16 daily-observation-writer 执行与首页修复
+
+- 状态：accepted / writer-run-and-homepage-fixed。
+- 收口文件：`agent-workflow/reports/wavesight-homepage-daily-observation-redesign-2026-05-15.md`。
+- 已更新 Codex 自动化任务：`daily-observation-writer`，增加 Raw 包完整性、主题簇、来源分布、精选依据和噪音丢弃理由检查；Raw 数量不能被当作市场理解证明。
+- 已更新：`agent-workflow/automation-prompts/daily-observation-writer.md`，明确 Raw 不完整、来源质量不足、主题过散、卡片信息截断时的降级 / 阻塞规则。
+- 已执行 2026-05-16 今日观察：生成 `AI 进了专业流程，账单和围栏先露出来`，并同步 5 张公开变化卡。
+- 已修复首页仍显示 2026-05-15 旧标题的问题：`mountHomeV2` 不再硬编码旧主线，改从当日 `dailyJudgmentProfile` / `data.daily` 读取。
+- 已更新相关写作 Skill：`edit-article`、`article-writer`、`copy-editing`、`humanizer` 先遵守项目写作规范，再执行通用流程。
+- 验证：`syntax`、`style` 均通过；截图：`agent-workflow/reports/home-2026-05-16-daily-writer-fixed.png`、`agent-workflow/reports/daily-detail-2026-05-16-writer-fixed.png`。
+- 补充：已删除首页今日观察下方重复的 `精选变化` 卡片区，商业变化卡统一由 `商业信号` 模块承接；截图：`agent-workflow/reports/home-remove-selected-change-cards-2026-05-16.png`。
+
+# 2026-05-16 商业信号首页对齐、案例关联与前沿观点命名
+
+- 状态：accepted / local-verified。
+- 收口文件：`agent-workflow/reports/wavesight-homepage-daily-observation-redesign-2026-05-15.md`。
+- 已修复：首页商业信号左右卡片底部对齐，下方突兀的 `筛选信号` 标签行已移除。
+- 已更新：商业信号详情页新增 `相关案例` 区，呈现 `来源依据` 和 `相关案例卡`；案例来自 `05-case-research` 同步后的 `contentIndex.cases`。
+- 已更新：同步脚本解析 2026-05-16 精选变化卡的事件与原始来源链接，避免详情页只剩标题和空泛判断。
+- 已统一：公开前台与产品文档中 Builders 相关栏目名统一为 `前沿观点`；后台函数名和历史路径不作为前台命名。
+- 验证：`sync-v2-site-data --date=2026-05-16`、`node --check app.js`、`node --check sync-v2-site-data.mjs`、`syntax`、`style` 均通过；截图：`agent-workflow/reports/home-signal-aligned-cases-2026-05-16.png`、`agent-workflow/reports/signal-detail-cases-frontier-2026-05-16.png`。
+
+# 2026-05-16｜Raw 快照策略与当日自动化重跑
+
+- 已按新口径更新 Raw / Pool 边界：Raw 保存本地正文快照、关键摘录、抓取状态和 hash；Pool 只做候选索引，不再作为写作事实依据。
+- 已更新脚本 `agent-workflow/tools/run-v2-daily-pipeline.mjs`，并重跑 2026-05-16 source-router：100 条 Raw、30 条 Pool、100 个本地原文档案。
+- 已更新自动化提示词和 Codex 自动化任务：daily-monitor-router、asset-card-generator、daily-observation-writer、case-signal-researcher。
+- 已重新生成 2026-05-16 今日观察、精选变化卡、案例研究、4 张案例卡和 3 张前沿观点卡，并同步 `01-SiteV2/site/data/site-content.json`。
+- 质量检查：syntax / v2content / style 均 passed。报告见 `agent-workflow/reports/raw-snapshot-rerun-2026-05-16.md`。
+
+# 2026-05-17｜Raw Evidence Schema 升级
+
+- 状态：completed / schema-and-router-updated。
+- 收口文件：`agent-workflow/reports/raw-evidence-schema-upgrade-2026-05-17.md`。
+- 已新增：`agent-workflow/product/raw-evidence-schema.md`，定义 `raw-evidence-v2`、核心证据门槛、结构化摘录、商业要素、`evidence_seed`、观澜评分、`usable_for`、`missing_information` 和 `raw_status`。
+- 已更新：`agent-workflow/tools/run-v2-daily-pipeline.mjs`，后续每条 Raw 同时生成 Markdown 人工档案和 JSON 机器证据对象；Pool 带 `raw_json`、`extraction_quality`、`has_full_text`、`usable_for`、`evidence_seed`、`missing_information`。
+- 已新增：`agent-workflow/tools/v2-raw-evidence-gate.mjs`，并接入 `run-quality-gates.mjs raw`。
+- 已更新：content README、source intelligence、daily-monitor-router、asset-card-generator、daily-observation-writer、case-signal-researcher、trend-report-writer、brief-periodical-writer。
+- 新规则：只有 `has_full_text=true`、`extraction_quality=high|medium`、`source_level=S|A|B` 的 Raw 才可作为事实主证据；其他 Raw 只能作线索、热度或待补证材料。
+- 追加规则：X / HN / Reddit 等高波动来源按实际抓取结果标记，不按来源类型默认降级；AI HOT 作为 `discovery_source`，优先回抓原始页面，失败时才保存可见文本 fallback。
+- 验证：`node --check` 三项通过；`syntax` passed；`raw --date=2026-05-17` 因当天暂无 Raw originals 目录而 skipped。
+
+# 2026-05-17｜关键词表四类信号重构
+
+- 状态：completed / keyword-config-updated。
+- 收口文件：`agent-workflow/reports/keyword-monitoring-four-signal-classes-2026-05-17.md`。
+- 已重写：`01-SiteV2/content/09-databases/keyword-monitoring-v2.json`，版本升级为 `v2-keyword-monitoring-1.1`。
+- 当前可执行监测层改为 4 类硬覆盖：成熟信号、早期信号、技术迭代信号、开发者生态信号。
+- 已新增 `p0_core_tracks` 和 `p1_evidence_terms`，将 AI Agent、销售 / 客服 / 营销、AI Coding、RAG / Memory、基础设施、模型能力、安全治理、机器人 / AI Native 等核心赛道嵌入查询组合。
+- 已更新：`daily-monitor-router.md`，要求 Raw 每类常规不少于 8 条，Pool 每类常规不少于 3 条；不足时写入证据缺口，不能用大企业新闻补齐。
+- 已更新：`source-intelligence.md`，明确 4 类为当前日常监测入口硬覆盖。
+- 已更新：`run-v2-daily-pipeline.mjs` 新监测层正式标签映射。
+- 验证：关键词 JSON parse passed；`run-v2-daily-pipeline.mjs` syntax passed；`syntax` passed。
+- 风险：当前脚本的 `keyword_search` 仍使用 HN Algolia，不是真正广域搜索；后续应升级执行层。
+
+# 2026-05-17｜今日自动化监测与内容生成
+
+- 状态：completed_with_degraded_source_router / content-generated。
+- 收口文件：`agent-workflow/reports/daily-automation-run-2026-05-17.md`。
+- 已执行 source-router 降级运行：生成 60 条 Raw、20 条 Pool，并写入 `01-SiteV2/content/01-raw/originals/2026-05-17/`。
+- 已生成今日精选变化卡 5 张、案例卡 4 张、前沿观点卡 1 张、变化簇 1 个和关系索引。
+- 已生成今日观察：`01-SiteV2/content/03-daily-observation/2026-05-17--daily-observation--ai-enters-workflow-control-and-risk-show-up.md`。
+- 已生成发布索引：`01-SiteV2/content/08-publication-index/2026-05-17--publication-index--daily-observation.md` 与 `01-SiteV2/knowledge/09-Publication-Index/2026-05-17--publication-index--daily-observation.md`。
+- 已同步站点数据：`01-SiteV2/site/data/site-content.json`。
+- 已修正 6 条 Raw 的证据标记，避免弱 X / discovery 线索被当成核心事实。
+- 验证：`syntax` passed；`v2content --date=2026-05-17` passed；`raw --date=2026-05-17` passed；`style --date=2026-05-17` passed。
+- 边界：今日非社区 keyword-search 路径失败，GDELT 出现 429 和 query invalid；社区来源只作讨论热度 / 早期反馈，不能作为公司动作主证据。今日运行可用但不是完整 100 条生产日更。

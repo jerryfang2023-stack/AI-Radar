@@ -1,4 +1,4 @@
-# Automation Fallback Policy
+﻿# Automation Fallback Policy
 
 更新时间：2026-05-03  
 owner：`workflow` / `dev`  
@@ -9,6 +9,7 @@ owner：`workflow` / `dev`
 用户明确：
 
 - V1.0 网站不再更新。
+- V1.0 旧站代码和旧文章归档已从当前仓库移除。
 - 旧自动化任务停止。
 - 后续不再判断动作是否影响旧自动化或 V1 链路。
 - 项目调度专注 V2.0 版开发。
@@ -40,7 +41,7 @@ V2 当前自动化口径：
 适用于：
 
 - V2 每日内容自动化。
-- Raw / Pool / Structured / Front Signal / Deep Dive / Trend Updates 入库。
+- Raw / Pool / Structured / 精选变化卡 / 趋势深度报告 / Trend Updates 入库。
 - Source registry、source probe、source quality gate。
 - Point Calibration / builder viewpoint 入库。
 - V2 内容同步、生成器和本地网站数据更新。
@@ -111,9 +112,9 @@ V2 当前自动化口径：
 
 V2 每日内容自动化必须满足：
 
-- Raw 候选、Pool、Structured、Front Signals、Deep Dive / Opportunity、Trend Updates 的数量和质量符合派发单或自动化文档。
-- Front Signal 必须有商业解释、二次搜索来源和清晰证据边界。
-- Deep Dive 每日最多 1-2 条，宁缺毋滥。
+- Raw 候选、Pool、Structured、精选变化卡、趋势深度报告 / Opportunity、Trend Updates 的数量和质量符合派发单或自动化文档。
+- 精选变化卡 必须有商业解释、二次搜索来源和清晰证据边界。
+- 趋势深度报告 每日最多 1-2 条，宁缺毋滥。
 - C 级来源不得作为事实主证据。
 - AI HOT / follow-builders 等 M 级通道只作为线索或观点来源，不自动等同事实来源。
 - 旧 Raw 30-50 口径已废止；V2 当前完整运行必须达到 Raw 80-150，低信号或关键接口失败日可降级为 50-80 并写明原因。
@@ -173,7 +174,7 @@ V2 内容同步或生成器失败时：
 - 硬错误：停止发布。
 - 软提醒：可进入复核，但必须记录处理路径。
 
-旧 `04-Site/data/radar-data.json` 规则只适用于 V1 归档追溯，不再作为 V2 默认同步入口。
+旧 `04-Site/data/radar-data.json` 规则已随 V1 旧站移除，不再作为 V2 同步入口。
 
 ## 8. 记录格式
 

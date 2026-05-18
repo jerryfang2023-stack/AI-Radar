@@ -29,7 +29,7 @@ const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 // can fail with EPERM even though invoking `node` via PATH works. Prefer the PATH command on Windows.
 const node = process.platform === "win32" ? "node" : process.execPath;
 
-const knownModes = new Set(["syntax", "content", "point", "site", "automation", "v2content", "all"]);
+const knownModes = new Set(["syntax", "content", "point", "site", "automation", "v2content", "style", "typography", "raw", "all"]);
 
 if (!knownModes.has(mode)) {
   console.error(`Unknown quality gate mode: ${mode}`);
@@ -41,12 +41,14 @@ const commandSets = {
   syntax: [
     [node, ["--check", "01-SiteV2/site/assets/app.js"], "v2 frontend app syntax"],
     [node, ["--check", "01-SiteV2/site/dev-server.mjs"], "v2 dev-server syntax"],
-    [node, ["--check", "agent-workflow/tools/unified-site-sync.mjs"], "unified-site-sync syntax"],
     [node, ["--check", "agent-workflow/tools/run-quality-gates.mjs"], "run-quality-gates syntax"],
     [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-source-probe.mjs"], "v2-source-probe syntax"],
     [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
     [node, ["--check", "agent-workflow/tools/run-v2-daily-pipeline.mjs"], "v2 daily pipeline source-router syntax"],
+    [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
+    [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
+    [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
   ],
   content: [
     [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
@@ -60,6 +62,18 @@ const commandSets = {
     [node, ["--check", "01-SiteV2/site/assets/app.js"], "v2 frontend app syntax"],
     [node, ["--check", "01-SiteV2/site/dev-server.mjs"], "v2 dev-server syntax"],
   ],
+  style: [
+    [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
+    [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
+  ],
+  typography: [
+    [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
+    [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
+  ],
+  raw: [
+    [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
+    [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
+  ],
 };
 
 const buildCommands = () => {
@@ -67,19 +81,19 @@ const buildCommands = () => {
     return [
       ...commandSets.syntax,
       [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 content gate"],
+      [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
+      [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
+      [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
     ];
   }
 
   if (mode === "automation") {
-    const commands = [[node, ["--check", "agent-workflow/tools/unified-site-sync.mjs"], "unified-site-sync syntax"]];
-    if (flags.get("run-sync-gate") === "true") {
-      commands.push([
-        node,
-        ["agent-workflow/tools/unified-site-sync.mjs", `--date=${date}`],
-        "run unified site sync gate",
-      ]);
-    }
-    return commands;
+    return [
+      [node, ["--check", "agent-workflow/tools/run-v2-daily-pipeline.mjs"], "v2 daily pipeline source-router syntax"],
+      [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
+      [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
+      [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
+    ];
   }
 
   if (mode === "v2content") {
@@ -113,6 +127,9 @@ const runCommand = async ([cmd, args, label]) => {
   if (process.platform === "win32" && cmd === "node") {
     const isSyntaxProbe = args.includes("--check") || /syntax/i.test(label);
     const isV2ContentGateRun = args[0] === "agent-workflow/tools/v2-content-gate.mjs";
+    const isWriterStyleGateRun = args[0] === "agent-workflow/tools/writer-style-gate.mjs";
+    const isTypographyGateRun = args[0] === "agent-workflow/tools/v2-typography-gate.mjs";
+    const isRawEvidenceGateRun = args[0] === "agent-workflow/tools/v2-raw-evidence-gate.mjs";
 
     if (isV2ContentGateRun) {
       try {
@@ -155,6 +172,103 @@ const runCommand = async ([cmd, args, label]) => {
         endedAt: new Date(),
       };
     }
+
+    if (isTypographyGateRun) {
+      try {
+        const gateModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "v2-typography-gate.mjs")).href;
+        const gateModule = await import(`${gateModuleUrl}?t=${Date.now()}`);
+        const result = gateModule.runV2TypographyGate?.();
+        const statusCode = result?.status === "passed" ? 0 : 1;
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: statusCode,
+          stdout: result?.report || "",
+          stderr: statusCode === 0 ? "" : "v2 typography gate failed",
+          startedAt,
+          endedAt: new Date(),
+        };
+      } catch (error) {
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: 1,
+          stdout: "",
+          stderr: `fallback import failed: ${error?.message || String(error)}`,
+          startedAt,
+          endedAt: new Date(),
+        };
+      }
+    }
+
+    if (isWriterStyleGateRun) {
+      try {
+        const styleModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "writer-style-gate.mjs")).href;
+        const originalArgv = process.argv;
+        process.argv = [process.execPath, path.join(root, "agent-workflow", "tools", "writer-style-gate.mjs"), ...args.slice(1)];
+        let stdout = "";
+        const originalLog = console.log;
+        console.log = (...items) => {
+          stdout += `${items.join(" ")}\n`;
+        };
+        const originalExitCode = process.exitCode;
+        process.exitCode = 0;
+        await import(`${styleModuleUrl}?t=${Date.now()}`);
+        const statusCode = process.exitCode || 0;
+        process.argv = originalArgv;
+        console.log = originalLog;
+        process.exitCode = originalExitCode;
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: statusCode,
+          stdout,
+          stderr: statusCode === 0 ? "" : "writer style gate failed",
+          startedAt,
+          endedAt: new Date(),
+        };
+      } catch (error) {
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: 1,
+          stdout: "",
+          stderr: `fallback import failed: ${error?.message || String(error)}`,
+          startedAt,
+          endedAt: new Date(),
+        };
+      }
+    }
+
+    if (isRawEvidenceGateRun) {
+      try {
+        const dateFlag = args.find((arg) => arg.startsWith("--date="));
+        const gateDate = dateFlag ? dateFlag.slice("--date=".length) : date;
+        const gateModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "v2-raw-evidence-gate.mjs")).href;
+        const gateModule = await import(`${gateModuleUrl}?t=${Date.now()}`);
+        const result = gateModule.runV2RawEvidenceGate?.({ date: gateDate });
+        const statusCode = result?.status === "failed" ? 1 : 0;
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: statusCode,
+          stdout: result?.report || "",
+          stderr: statusCode === 0 ? "" : "v2 raw evidence gate failed",
+          startedAt,
+          endedAt: new Date(),
+        };
+      } catch (error) {
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: 1,
+          stdout: "",
+          stderr: `fallback import failed: ${error?.message || String(error)}`,
+          startedAt,
+          endedAt: new Date(),
+        };
+      }
+    }
   }
 
   const result = spawnSync(cmd, args, {
@@ -187,8 +301,8 @@ const writeReport = (runs) => {
   const failed = runs.filter((run) => run.status !== 0);
   const status = failed.length ? "failed" : "passed";
   const automationNote =
-    mode === "automation" && flags.get("run-sync-gate") !== "true"
-      ? "\n- 自动化模式默认只检查统一同步闸门脚本语法；如需真实运行，使用 `--run-sync-gate`。"
+    mode === "automation"
+      ? "\n- 自动化模式检查 V2 每日生产线相关脚本语法；旧统一同步闸门已移除。"
       : "";
 
   const commandLines = runs
@@ -223,9 +337,10 @@ ${commandLines || "无"}
 
 - 本脚本是 \`quality-gates.md\` 的统一入口。
 - V2-only 阶段默认检查 \`01-SiteV2/site/\` 与 \`agent-workflow/tools/v2-*.mjs\`。
-- 旧 \`04-Site\` 已归档，不再作为 \`content\`、\`site\` 或 \`all\` 模式的默认目标。
+- 旧 \`04-Site\` / V1 归档已从当前仓库移除，不再作为 \`content\`、\`site\`、\`automation\` 或 \`all\` 模式的目标。
 - \`content\`、\`point\` 和 \`all\` 会运行 V2 content gate；需要指定日期时使用 \`--date=YYYY-MM-DD\`。
-- \`automation\` 默认不真实运行统一同步闸门；需要显式传 \`--run-sync-gate\`。
+- \`style\` 会检查三个 writer 的文章产物是否出现禁词、抽象名词和高频重复句式。
+- \`automation\` 检查 V2 每日生产线相关脚本语法，不再运行旧统一同步闸门。
 - 未覆盖的浏览器截图、多身份权限和人工内容判断，仍需 QA Agent 单独验收。
 `;
 

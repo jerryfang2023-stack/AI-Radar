@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
@@ -38,6 +38,24 @@ const findDailyLog = (date) => {
     .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)[0] || "";
 };
 
+const findDatedMarkdown = (dirs, date) => {
+  for (const dir of dirs) {
+    if (!fs.existsSync(dir)) continue;
+    const name = fs
+      .readdirSync(dir)
+      .filter((item) => item.startsWith(date) && item.endsWith(".md"))
+      .sort()[0];
+    if (name) return path.join(dir, name);
+  }
+  return "";
+};
+
+const frontmatterValue = (text, name) => {
+  const frontmatter = text.match(/^---\s*([\s\S]*?)---/u)?.[1] || "";
+  const match = frontmatter.match(new RegExp(`^${name}:\\s*(.+)$`, "mu"));
+  return match?.[1]?.trim().replace(/^["']|["']$/gu, "") || "";
+};
+
 const splitByHeading = (text, pattern) => {
   const matches = [...text.matchAll(pattern)];
   return matches.map((match, index) => {
@@ -52,13 +70,25 @@ const splitByHeading = (text, pattern) => {
 export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) } = {}) {
   const fileFor = {
     raw: path.join(contentRoot, "01-raw", `${date}-raw-candidates.md`),
-    pool: path.join(contentRoot, "02-pool", `${date}-signal-pool.md`),
-    structured: path.join(contentRoot, "03-structured-signals", `${date}-structured-signals.md`),
-    front: path.join(contentRoot, "04-selected-signals", `${date}-front-signals.md`),
-    heat: path.join(contentRoot, "05-trend-chain", `${date}-heat-candidates.md`),
-    opportunity: path.join(contentRoot, "08-opportunities", "deep-dive", `${date}-opportunity-deep-dive.md`),
-    points: path.join(contentRoot, "07-points", `${date}-point-calibration.md`),
+    pool: path.join(contentRoot, "02-pool", `${date}-pool-candidates.md`),
+    dailyObservation: path.join(contentRoot, "03-daily-observation"),
+    selectedChangeCards: path.join(contentRoot, "04-business-signals", `${date}-selected-change-cards.md`),
+    opinionCandidates: path.join(contentRoot, "04-business-signals", `${date}-opinion-candidates.md`),
+    clusterCandidates: path.join(contentRoot, "04-business-signals", `${date}-change-cluster-candidates.md`),
+    changeCards: path.join(root, "01-SiteV2", "knowledge", "01-Change-Cards"),
+    caseCards: path.join(root, "01-SiteV2", "knowledge", "02-Case-Cards"),
+    opinionCards: path.join(root, "01-SiteV2", "knowledge", "03-Opinion-Cards"),
+    changeClusters: path.join(root, "01-SiteV2", "knowledge", "05-Change-Clusters"),
+    heat: path.join(contentRoot, "04-business-signals", `${date}-change-cluster-candidates.md`),
+    builders: path.join(contentRoot, "04-business-signals", `${date}-opinion-candidates.md`),
   };
+  const trendReportRoot = path.join(contentRoot, "06-trend-reports");
+  const trendReportFile = findDatedMarkdown([
+    path.join(trendReportRoot, "full"),
+    path.join(trendReportRoot, "flash"),
+    trendReportRoot,
+  ], date);
+  const noReportDecisionFile = findDatedMarkdown([path.join(trendReportRoot, "no-report-decisions")], date);
 
   const dailyLogPath = findDailyLog(date);
   const dailyLogText = readText(dailyLogPath);
@@ -72,9 +102,27 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
     raw: countMatches(fileFor.raw, /^###\s+/gm),
     originals: originalCount,
     pool: countMatches(fileFor.pool, /^##\s+/gm),
-    structured: countMatches(fileFor.structured, /^##\s+S-/gm),
-    front: countMatches(fileFor.front, /^##\s+Signal\s+/gm),
+    structured: fs.existsSync(fileFor.changeCards)
+      ? fs.readdirSync(fileFor.changeCards).filter((name) => name.startsWith(date) && name.endsWith(".md")).length
+      : 0,
+    front: countMatches(fileFor.selectedChangeCards, /^-\s+`CHG-/gm),
+    caseCards: fs.existsSync(fileFor.caseCards)
+      ? fs.readdirSync(fileFor.caseCards).filter((name) => name.startsWith(date) && name.endsWith(".md")).length
+      : 0,
+    opinionCards: fs.existsSync(fileFor.opinionCards)
+      ? fs.readdirSync(fileFor.opinionCards).filter((name) => name.startsWith(date) && name.endsWith(".md")).length
+      : 0,
+    changeClusters: fs.existsSync(fileFor.changeClusters)
+      ? fs.readdirSync(fileFor.changeClusters).filter((name) => name.startsWith(date) && name.endsWith(".md")).length
+      : 0,
   };
+  const dailyObservationFiles = fs.existsSync(fileFor.dailyObservation)
+    ? fs.readdirSync(fileFor.dailyObservation).filter((name) => name.startsWith(date) && name.endsWith(".md"))
+    : [];
+  const dailyObservationText = dailyObservationFiles.length
+    ? readText(path.join(fileFor.dailyObservation, dailyObservationFiles[0]))
+    : "";
+  const dailyObservationLength = cjkLength(dailyObservationText);
 
   const poolText = readText(fileFor.pool);
   const poolSections = splitByHeading(poolText, /^##\s+P-\d+/gm);
@@ -87,16 +135,20 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
     return failures;
   });
 
-  const structuredText = readText(fileFor.structured);
-  const structuredSections = splitByHeading(structuredText, /^##\s+S-\d+/gm);
+  const changeCardFiles = fs.existsSync(fileFor.changeCards)
+    ? fs.readdirSync(fileFor.changeCards).filter((name) => name.startsWith(date) && name.endsWith(".md")).map((name) => path.join(fileFor.changeCards, name))
+    : [];
+  const structuredSections = changeCardFiles.map((file) => ({ heading: rel(file), body: readText(file) }));
   const structuredFailures = structuredSections.flatMap((section, index) => {
     const failures = [];
-    const len = cjkLength(section.body);
-    if (len < 1200 || len > 2000) failures.push(`Structured ${index + 1} is ${len} Chinese chars, expected 1200-2000`);
-    if (!/conversion_reason[：:]/u.test(section.body) && !/事件/u.test(section.body))
-      failures.push(`Structured ${index + 1} missing event / conversion_reason`);
-    if (!/商业变量|客户|成本|收入|效率|风险|采购|渠道|竞争/u.test(section.body))
-      failures.push(`Structured ${index + 1} missing business variables`);
+    if (!/##\s+明确变化/u.test(section.body)) failures.push(`Change card ${index + 1} missing 明确变化`);
+    if (!/##\s+原始出处/u.test(section.body) || !hasExternalUrl(section.body))
+      failures.push(`Change card ${index + 1} missing original source URL`);
+    if (!/##\s+数据来源/u.test(section.body)) failures.push(`Change card ${index + 1} missing 数据来源`);
+    if (!/##\s+技术路线 \/ 方法变化/u.test(section.body))
+      failures.push(`Change card ${index + 1} missing 技术路线 / 方法变化`);
+    if (!/##\s+同类产品 \/ 相邻案例/u.test(section.body))
+      failures.push(`Change card ${index + 1} missing 同类产品 / 相邻案例`);
     if (
       !hasAny(section.body, [
         /source_tiers?[：:]/u,
@@ -106,90 +158,101 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
         /S\s*级|A\s*级|B\s*级/u,
       ])
     )
-      failures.push(`Structured ${index + 1} missing source tier`);
-    if (!/反证|counter_evidence_status|Evidence Gaps|证据缺口/u.test(section.body))
-      failures.push(`Structured ${index + 1} missing counter-evidence status / evidence gaps`);
-    if (!/trend:/u.test(section.body) && !/趋势候选|related_trend/u.test(section.body))
-      failures.push(`Structured ${index + 1} missing trend candidate`);
-    if (!hasExternalUrl(section.body)) failures.push(`Structured ${index + 1} missing original external URL`);
-    if (!hasIncrementalFact(section.body)) failures.push(`Structured ${index + 1} missing incremental fact from source`);
+      failures.push(`Change card ${index + 1} missing source tier`);
     return failures;
   });
 
-  const frontText = readText(fileFor.front);
-  const frontSections = splitByHeading(frontText, /^##\s+Signal\s+\d+/gm);
+  const frontText = readText(fileFor.selectedChangeCards);
+  const frontSections = splitByHeading(frontText, /^-\s+`CHG-/gm);
   const frontDepthFailures = frontSections.flatMap((section, index) => {
     const failures = [];
-    const len = cjkLength(section.body);
-    const secondaryBullets =
-      section.body
-        .match(/###\s+二次搜索补强[\s\S]*?(?=^###\s+|^##\s+|(?![\s\S]))/mu)?.[0]
-        ?.match(/^\s*-\s+/gm)?.length || 0;
-    const secondarySection =
-      section.body.match(/###\s+二次搜索补强[\s\S]*?(?=^###\s+|^##\s+|(?![\s\S]))/mu)?.[0] || "";
-    const sabSourceCount = (secondarySection.match(/S\s*级|A\s*级|B\s*级/gu) || []).length;
-    if (len < 3000 || len > 5000) failures.push(`Signal ${index + 1} is ${len} Chinese chars, expected 3000-5000`);
-    if (!/###\s+二次搜索补强/u.test(section.body)) failures.push(`Signal ${index + 1} missing secondary search section`);
-    if (secondaryBullets < 3)
-      failures.push(`Signal ${index + 1} has ${secondaryBullets} secondary-search sources, expected >= 3`);
-    if (sabSourceCount < 3)
-      failures.push(`Signal ${index + 1} has ${sabSourceCount} explicit S/A/B sources, expected >= 3`);
-    if (!hasExternalUrl(secondarySection || section.body)) failures.push(`Signal ${index + 1} missing original external URL`);
-    if (!hasIncrementalFact(secondarySection || section.body))
-      failures.push(`Signal ${index + 1} missing incremental fact from cited sources`);
-    if (!/###\s+反证与边界|证据边界|counter_evidence_status/u.test(section.body))
-      failures.push(`Signal ${index + 1} missing evidence boundary / counter-evidence status`);
-    if (!/###\s+后续观察/u.test(section.body)) failures.push(`Signal ${index + 1} missing follow-up observation section`);
+    if (!/入选理由/u.test(section.body)) failures.push(`Selected change card ${index + 1} missing 入选理由`);
     return failures;
   });
 
-  const opportunityText = readText(fileFor.opportunity);
-  const opportunityLength = cjkLength(opportunityText);
-  const hasOpportunity =
-    fs.existsSync(fileFor.opportunity) && !/今日暂无足够证据支撑深挖内参/u.test(opportunityText);
+  const trendReportText = trendReportFile ? readText(trendReportFile) : "";
+  const trendReportLength = cjkLength(trendReportText);
+  const hasTrendReport = Boolean(trendReportFile) && !/今日暂无足够证据支撑深挖内参/u.test(trendReportText);
+  const trendReportKind = frontmatterValue(trendReportText, "kind") || (trendReportText.includes("TRD-FLASH") ? "flash" : "full");
+  const sourceCountFromFrontmatter = Number(frontmatterValue(trendReportText, "source_count") || 0);
+  const primarySourceCountFromFrontmatter = Number(frontmatterValue(trendReportText, "primary_source_count") || 0);
   const evidenceChainSection =
-    opportunityText.match(/#{2,3}\s+证据链[\s\S]*?(?=^#{2,3}\s+|(?![\s\S]))/mu)?.[0] || "";
-  const evidenceSourceCount = (evidenceChainSection.match(/^\s*-\s+/gm) || []).length;
-  const evidenceSSourceCount = (evidenceChainSection.match(/S\s*级|一手来源|官方|官网|监管|公告/gu) || []).length;
-  const opportunityDepthFailures = hasOpportunity
-    ? [
-        opportunityLength >= 6000 && opportunityLength <= 10000
-          ? ""
-          : `Opportunity deep dive is ${opportunityLength} Chinese chars, expected 6000-10000`,
-        /#{2,3}\s+证据链/u.test(opportunityText) ? "" : "Opportunity deep dive missing evidence chain",
-        evidenceSourceCount >= 5 ? "" : `Opportunity evidence chain has ${evidenceSourceCount} sources, expected >= 5`,
-        evidenceSSourceCount >= 2
-          ? ""
-          : `Opportunity evidence chain has ${evidenceSSourceCount} S-tier / first-party sources, expected >= 2`,
-        hasExternalUrl(evidenceChainSection) ? "" : "Opportunity evidence chain missing original external URLs",
-        hasIncrementalFact(evidenceChainSection) ? "" : "Opportunity evidence chain missing incremental facts from sources",
-        /#{2,3}\s+反向证据|本轮未发现关键反证/u.test(opportunityText)
-          ? ""
-          : "Opportunity deep dive missing counter-evidence statement",
-        /代表公司/u.test(opportunityText) ? "" : "Opportunity deep dive missing representative company validation",
-        /融资信号/u.test(opportunityText) ? "" : "Opportunity deep dive missing funding validation",
-        /客户场景/u.test(opportunityText) ? "" : "Opportunity deep dive missing customer scenario validation",
-        /定价\s*\/\s*商业模式/u.test(opportunityText) ? "" : "Opportunity deep dive missing pricing / business model validation",
-        /中国迁移卡点/u.test(opportunityText) ? "" : "Opportunity deep dive missing China transfer validation",
-      ].filter(Boolean)
+    trendReportText.match(/#{2,3}\s+(证据链|来源与事实|来源附录)[\s\S]*?(?=^#{2,3}\s+|(?![\s\S]))/mu)?.[0] || "";
+  const evidenceSourceCount = Math.max(
+    sourceCountFromFrontmatter,
+    (evidenceChainSection.match(/^\s*-\s+/gm) || []).length,
+    (evidenceChainSection.match(/^\|[^|\n]+\|/gm) || []).filter((line) => !/---|来源/u.test(line)).length,
+    (evidenceChainSection.match(/https?:\/\//gu) || []).length
+  );
+  const evidenceSSourceCount = Math.max(
+    primarySourceCountFromFrontmatter,
+    (evidenceChainSection.match(/S\s*级|一手来源|官方|官网|监管|公告/gu) || []).length
+  );
+  const trendReportDepthFailures = hasTrendReport
+    ? (trendReportKind === "flash"
+        ? [
+            trendReportLength >= 2000 && trendReportLength <= 3500
+              ? ""
+              : `TrendReport flash is ${trendReportLength} Chinese chars, expected 2000-3500`,
+            /#{2,3}\s+(来源与事实|来源附录|证据链)/u.test(trendReportText) ? "" : "TrendReport flash missing source appendix",
+            evidenceSourceCount >= 3 ? "" : `TrendReport flash has ${evidenceSourceCount} sources, expected >= 3`,
+            evidenceSSourceCount >= 1
+              ? ""
+              : `TrendReport flash has ${evidenceSSourceCount} S/A or first-party sources, expected >= 1`,
+            hasExternalUrl(evidenceChainSection) ? "" : "TrendReport flash missing original external URLs",
+            /#{2,3}\s+(反证|信息缺口|风险)/u.test(trendReportText)
+              ? ""
+              : "TrendReport flash missing counter-evidence / information gap",
+            /#{2,3}\s+30 天后看什么|30\s*天/u.test(trendReportText)
+              ? ""
+              : "TrendReport flash missing 30-day watch variables",
+          ]
+        : [
+            trendReportLength >= 6000 && trendReportLength <= 10000
+              ? ""
+              : `TrendReport full report is ${trendReportLength} Chinese chars, expected 6000-10000`,
+            /#{2,3}\s+(来源与事实|来源附录|证据链)/u.test(trendReportText) ? "" : "TrendReport full report missing source appendix",
+            evidenceSourceCount >= 5 ? "" : `TrendReport full report has ${evidenceSourceCount} sources, expected >= 5`,
+            evidenceSSourceCount >= 2
+              ? ""
+              : `TrendReport full report has ${evidenceSSourceCount} S-tier / first-party sources, expected >= 2`,
+            hasExternalUrl(evidenceChainSection) ? "" : "TrendReport full report missing original external URLs",
+            hasIncrementalFact(evidenceChainSection) ? "" : "TrendReport full report missing incremental facts from sources",
+            /#{2,3}\s+(风险与反证|反证|信息缺口)|本轮未发现关键反证/u.test(trendReportText)
+              ? ""
+              : "TrendReport full report missing counter-evidence statement",
+            /#{2,3}\s+同类产品|竞品/u.test(trendReportText) ? "" : "TrendReport full report missing competitor section",
+            /客户|场景|付费|预算/u.test(trendReportText) ? "" : "TrendReport full report missing customer / payment discussion",
+            /7\s*天|30\s*天|90\s*天/u.test(trendReportText)
+              ? ""
+              : "TrendReport full report missing 7/30/90-day watch variables",
+          ]).filter(Boolean)
     : [];
 
-  const pointsText = readText(fileFor.points);
-  const pointSections = splitByHeading(pointsText, /^##\s+PT-\d+/gm);
-  const pointFailures = pointSections.flatMap((section, index) => {
-    const failures = [];
-    if (!/source_url[：:]/u.test(section.body)) failures.push(`Point ${index + 1} missing source_url`);
-    if (!/conversion_reason[：:]/u.test(section.body)) failures.push(`Point ${index + 1} missing original-view summary`);
-    if (!/^Point[：:]/mu.test(section.body)) failures.push(`Point ${index + 1} missing Guanlan interpretation`);
-    if (!/^V2 用法[：:]/mu.test(section.body)) failures.push(`Point ${index + 1} missing usage`);
-    if (!/relation_fields[：:]/u.test(section.body)) failures.push(`Point ${index + 1} missing relations`);
-    return failures;
-  });
+  const pointSections = [];
+  const pointFailures = [];
+
+  const buildersText = readText(fileFor.builders);
+  const hasBuildersFile = fs.existsSync(fileFor.builders);
+  const buildersSections = splitByHeading(buildersText, /^##\s+BP-\d+/gm);
+  const buildersCount = (() => {
+    const match = buildersText.match(/^builder_items_count:\s*(\d+)\s*$/mu);
+    return match ? Number(match[1]) : null;
+  })();
+  const buildersFailures = [];
+  if (!hasBuildersFile) buildersFailures.push("Builders viewpoints file missing");
+  if (hasBuildersFile && !/^stage:\s*builders-viewpoints\s*$/mu.test(buildersText)) {
+    buildersFailures.push("Builders viewpoints file missing stage: builders-viewpoints in frontmatter");
+  }
+  if (hasBuildersFile && buildersCount === null) buildersFailures.push("Builders viewpoints file missing builder_items_count in frontmatter");
+  if (hasBuildersFile && buildersCount !== null && buildersCount !== buildersSections.length) {
+    buildersFailures.push(`Builders viewpoints count mismatch (frontmatter=${buildersCount}, sections=${buildersSections.length})`);
+  }
 
   const heatText = readText(fileFor.heat);
   const hasHeatFile = fs.existsSync(fileFor.heat);
   const noHeatClaimed = /无高热候选|no heat candidates|heat_candidates:\s*(none|0|无)/iu.test(dailyLogText);
-  const heatSections = splitByHeading(heatText, /^##\s+HC-/gm);
+  const heatSections = splitByHeading(heatText, /^##\s+(?:HC-|CLU-CAND-)/gm);
   const heatFailures = hasHeatFile
     ? heatSections.flatMap((section, index) => {
         const failures = [];
@@ -215,7 +278,7 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
     { field: "raw_count_by_source_type", patterns: [/raw_count_by_source_type[：:]/iu, /Raw Count By Source Type/iu] },
     {
       field: "front_signal_sab_source_count",
-      patterns: [/front_signal_sab_source_count[：:]/iu, /##\s*Front Signal SAB Source Count/iu],
+      patterns: [/front_signal_sab_source_count[：:]/iu, /frontstage_sab_source_count[：:]/iu, /##\s*Frontstage SAB Source Count/iu],
     },
   ];
   const logFailures = logRequired
@@ -244,8 +307,15 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
       detail: `${metrics.originals} originals for ${metrics.raw} raw candidates`,
     },
     {
-      label: "Pool count is 20-30, or documented fallback 12-20",
-      passed: metrics.pool > 0,
+      label: "Daily observation article exists and has enough substance",
+      passed: dailyObservationFiles.length > 0 && dailyObservationLength >= 1200,
+      detail: dailyObservationFiles.length
+        ? `${dailyObservationFiles[0]} (${dailyObservationLength} Chinese chars)`
+        : "missing daily observation article",
+    },
+    {
+      label: "Pool count is 20-40, or severe documented fallback is declared",
+      passed: (metrics.pool >= 20 && metrics.pool <= 40) || (metrics.pool > 0 && /fallback|降级|断流|severe/u.test(dailyLogText)),
       detail: `${metrics.pool} pool items`,
     },
     {
@@ -254,44 +324,49 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
       detail: poolFailures.length ? poolFailures.join("; ") : `${poolSections.length} pool items meet quality gate`,
     },
     {
-      label: "Structured count is 8-15, or documented fallback 5-8",
+      label: "Change cards are generated into knowledge",
       passed: metrics.structured > 0,
-      detail: `${metrics.structured} structured signals`,
+      detail: `${metrics.structured} change cards`,
     },
     {
-      label: "Structured Signals include event, business variables, source tier, evidence boundary, citations and trend candidate",
+      label: "Change cards include source, data, technical route and similar-product fields",
       passed: structuredFailures.length === 0,
       detail: structuredFailures.length
         ? structuredFailures.join("; ")
-        : `${structuredSections.length} structured signals meet quality gate`,
+        : `${structuredSections.length} change cards meet quality gate`,
     },
     {
-      label: "Front Signals count is 3-5, or documented fallback 2-3",
-      passed: metrics.front >= 2 && metrics.front <= 5,
-      detail: `${metrics.front} front signals`,
+      label: "Selected change cards count is 3-8, or high-signal day documents more",
+      passed: (metrics.front >= 3 && metrics.front <= 8) || (metrics.front > 8 && /高信号|high signal/u.test(dailyLogText)),
+      detail: `${metrics.front} selected change cards`,
     },
     {
-      label: "Front Signals meet secondary-search depth, citations and 3000-5000 Chinese-character range",
-      passed: metrics.front >= 2 && frontDepthFailures.length === 0,
-      detail: frontDepthFailures.length ? frontDepthFailures.join("; ") : `${metrics.front} front signals meet depth gate`,
+      label: "Selected change cards include reasons for inclusion",
+      passed: metrics.front >= 3 && frontDepthFailures.length === 0,
+      detail: frontDepthFailures.length ? frontDepthFailures.join("; ") : `${metrics.front} selected change cards meet selection gate`,
     },
     {
-      label: "Opportunity deep dive meets 6000-10000 Chinese-character evidence-chain gate or is explicitly absent",
-      passed: opportunityDepthFailures.length === 0,
-      detail: hasOpportunity
-        ? opportunityDepthFailures.length
-          ? opportunityDepthFailures.join("; ")
-          : `${opportunityLength} Chinese chars with evidence chain`
-        : "no deep dive claimed for this date",
+      label: "Trend report meets flash/full evidence gate or has no-report decision / explicit absence",
+      passed: trendReportDepthFailures.length === 0,
+      detail: hasTrendReport
+        ? trendReportDepthFailures.length
+          ? trendReportDepthFailures.join("; ")
+          : `${rel(trendReportFile)} (${trendReportKind}, ${trendReportLength} Chinese chars)`
+        : (noReportDecisionFile ? `no_report_decision: ${rel(noReportDecisionFile)}` : "no trend report claimed for this date"),
     },
     {
-      label: "Point calibration includes source, original view, interpretation, usage and relations",
-      passed: !fs.existsSync(fileFor.points) || pointFailures.length === 0,
-      detail: fs.existsSync(fileFor.points)
-        ? pointFailures.length
-          ? pointFailures.join("; ")
-          : `${pointSections.length} point items meet relation gate`
-        : "no point calibration file for this date",
+      label: "Opinion candidates are handled through business signals",
+      passed: pointFailures.length === 0,
+      detail: "opinion candidates are checked in the builders viewpoint gate",
+    },
+    {
+      label: "Frontier viewpoints are fully captured from follow-builders items",
+      passed: hasBuildersFile && buildersFailures.length === 0,
+      detail: !hasBuildersFile
+        ? "missing builders viewpoints file"
+        : buildersFailures.length
+          ? buildersFailures.join("; ")
+          : `${buildersSections.length} builder viewpoints captured`,
     },
     {
       label: "Heat Candidates file exists or daily log explicitly says no high-heat candidates",
@@ -351,11 +426,15 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
 | Raw Candidates | ${metrics.raw} |
 | Raw Originals | ${metrics.originals} |
 | Pool Items | ${metrics.pool} |
-| Structured Signals | ${metrics.structured} |
-| Front Signals | ${metrics.front} |
-| Opportunity Deep Dive Chinese Chars | ${hasOpportunity ? opportunityLength : 0} |
-| Point Items | ${pointSections.length} |
-| Heat Candidates | ${heatSections.length} |
+| Daily Observation Chinese Chars | ${dailyObservationLength} |
+| Change Cards | ${metrics.structured} |
+| Selected Change Cards | ${metrics.front} |
+| Case Cards | ${metrics.caseCards} |
+| Opinion Cards | ${metrics.opinionCards} |
+| Change Clusters | ${metrics.changeClusters} |
+| Trend Report Chinese Chars | ${hasTrendReport ? trendReportLength : 0} |
+| Builders / Opinion Candidates | ${buildersSections.length} |
+| Cluster Candidates | ${heatSections.length} |
 
 ## 检查明细
 
@@ -367,9 +446,9 @@ ${lines}
 
 - 本闸门检查当前 V2 内容生产路径 \`01-SiteV2/content/\`。
 - 它不运行旧 \`04-Site\` 同步，也不部署 Netlify。
-- 旧 \`04-Site\` 已归档，本检查只确认 V2 生产内容链路是否具备可入站基础。
+- 旧 \`04-Site\` 已从当前仓库移除，本检查只确认 V2 生产内容链路是否具备可入站基础。
 - Raw 低于 80 会被视为降级或严重降级，但仍检查是否有本地原文档案和缺口记录。
-- B 类治理后，本闸门检查 Heat Candidate、daily log 必填字段、来源等级、Front S/A/B 数量与字数门槛。
+- 当前六线程口径下，本闸门检查 Raw、Pool、今日观察、变化卡、案例卡、观点候选、变化簇候选和 daily log 必填字段。
 `;
 
   const datedPath = path.join(reportsDir, `v2-content-gate-${date}-${stamp}.md`);

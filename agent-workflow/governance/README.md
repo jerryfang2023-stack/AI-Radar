@@ -111,13 +111,13 @@ V2-only 生产开发阶段的默认口径：
 
 - 后续任务不再判断是否影响已停止的 V1 旧自动化 `ai-the-point`、`ai-2`、`ai-3`。
 - 但凡影响 V2 每日 09:00 内容自动化、`01-SiteV2/content/`、`01-SiteV2/site/` 数据生成器、source registry、V2 quality gates、Netlify 或 GitHub 发布，仍必须说明影响、降级路径和回滚方式。
-- 治理文件中的 `04-Site` 命令仅作 V1 历史参考；V2 当前任务默认读取 `01-SiteV2/` 和 V2 脚本。
+- 旧 `04-Site` 与 V1 归档已从当前仓库移除；V2 当前任务默认读取 `01-SiteV2/` 和 V2 脚本。
 
 如果任务影响以下内容，必须先提醒用户“可能影响自动化任务”，并在完成后更新相关自动化说明或执行文档：
 
 - Markdown 命名、目录、frontmatter。
 - Signal / Priority / Trend / Opportunity / Point 字段。
-- `sync-data.mjs`、`check-relations.mjs`、`check-point-quality.mjs`、`unified-site-sync.mjs`。
+- V2 内容生成、source registry、V2 quality gates、writer style gate、typography gate、raw evidence gate。
 - The Point 来源、素材笔记、原文/译文、授权说明。
 - 每日雷达机会拆解、评分表、趋势或机会卡生成规则。
 - 自动化时间线、入站顺序、备份、回滚或发布闸门。

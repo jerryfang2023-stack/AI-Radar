@@ -1,4 +1,4 @@
-# Agent Memory
+﻿# Agent Memory
 
 更新时间：2026-05-03  
 owner：`workflow` / `pm`  
@@ -47,9 +47,9 @@ owner：`workflow` / `pm`
 - Tags 不作为当前一线栏目，只作为搜索、筛选和关系网络能力。
 - Method 暂不作为前台栏目，作为内部方法论资产。
 
-### 今日要点 / Daily Brief
+### 今日观察 / Daily Brief
 
-- 今日要点是 AI 商业判断 Newsletter，不是新闻列表。
+- 今日观察是 AI 商业判断 Newsletter，不是新闻列表。
 - 固定结构为：日期导航、今日判断、发生了什么、值得关注、趋势温度、机会观察、观点与思考、风险与边界、后续观察、关键词表、相关内容索引、来源与证据状态。
 - 不输出行动指令，不替用户下投资、经营或合作判断。
 - 可以提示“值得观察”“需要验证”“证据增强”“仍需反证”，不能说“必须马上做”。
@@ -67,7 +67,7 @@ owner：`workflow` / `pm`
 - Opportunity 是可验证机会方向，不是公司档案。
 - Opportunity 标题不能出现具体公司名。
 - 公司名只能作为代表案例、证据、来源或相关 Signal。
-- 正式 Opportunity / 机会解码应有成熟度、证据等级、趋势状态、风险边界和后续观察。
+- 正式 Opportunity / 机会判断应有成熟度、证据等级、趋势状态、风险边界和后续观察。
 - 没有评分、证据或关联关系的机会应进入观察或复核，不直接作为强机会展示。
 
 ### Trends
@@ -79,7 +79,7 @@ owner：`workflow` / `pm`
 
 ### Builders 观点 / The Point
 
-- The Point 不作为 V2 一级栏目；前台归入 `关键信号 > Builders 观点` 和各栏目观点校准模块。
+- The Point 不作为 V2 一级栏目；前台归入 `商业信号 > Builders 观点` 和各栏目观点校准模块。
 - Builders 观点追踪一线 AI 建造者观点，不做网红观点搬运。
 - 原文和译文不能用摘要、观澜判断或截断句替代。
 - X/Twitter 短链 `t.co` 不应出现在前台正文。
@@ -160,7 +160,7 @@ owner：`workflow` / `pm`
 - `failed / not-accepted / closed` 任务不得继续用原 Task ID 派发；stage summary、截图、reference mockups、local-site-quality-pass 和局部实现只能作为失败样本或复盘材料。
 - 被 failed 任务合并过的子项不得自动视为已解决，必须改为 `review / needs-successor-after-failed-merge` 或新建继任任务。
 - `dispatch-board.md` 的“使用建议”必须随收口刷新，不得继续推荐已经 completed / accepted、failed、abandoned、stopped、void 或被 failed 任务吞并的任务。
-- V2-only 阶段，页面、样式、脚本、内容生成和截图验收默认入口是 `01-SiteV2/`；旧 `04-Site/` 只作 V1 归档参考。
+- V2-only 阶段，页面、样式、脚本、内容生成和截图验收默认入口是 `01-SiteV2/`；旧 `04-Site/` 已从当前仓库移除，不再作为参考源。
 
 ### 长期 Agent 能力训练
 

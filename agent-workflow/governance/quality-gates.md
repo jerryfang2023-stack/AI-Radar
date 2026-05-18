@@ -1,6 +1,6 @@
 # Quality Gates
 
-更新时间：2026-05-10
+更新时间：2026-05-12
 owner：`qa` / `workflow`  
 状态：长期生效
 
@@ -26,13 +26,14 @@ owner：`qa` / `workflow`
 
 - V2 网站工程：`01-SiteV2/site/`。
 - V2 内容生产线：`01-SiteV2/content/`。
-- V1 旧站 `04-Site/` 已归档到 `10-Archive/v1.0/site/04-Site/`，只作历史参考。
-- 本文件中旧 `04-Site` 检查命令只适用于追溯 V1 归档或兼容历史报告；V2 当前任务不得把旧命令当作完成条件。
+- V1 旧站 `04-Site/` 与 `10-Archive/v1.0/` 归档已从当前仓库移除。
+- 本文件不再保留旧 `04-Site` 检查命令；V2 当前任务必须使用 V2 路径和 V2 quality gates。
 
 V2 当前常用入口：
 
 ```powershell
 node agent-workflow/tools/run-quality-gates.mjs syntax
+node agent-workflow/tools/run-quality-gates.mjs style
 node agent-workflow/tools/run-quality-gates.mjs v2content --date=YYYY-MM-DD
 node agent-workflow/tools/v2-source-quality-gate.mjs --date=YYYY-MM-DD
 node --check 01-SiteV2/site/assets/app.js
@@ -47,6 +48,7 @@ V2 内容任务必须优先执行：
 
 ```powershell
 node agent-workflow/tools/run-quality-gates.mjs v2content --date=YYYY-MM-DD
+node agent-workflow/tools/run-quality-gates.mjs style --date=YYYY-MM-DD
 node agent-workflow/tools/run-quality-gates.mjs syntax
 ```
 
@@ -64,6 +66,7 @@ node agent-workflow/tools/v2-source-quality-gate.mjs --date=YYYY-MM-DD
 - Trend 是否有证据、状态和反证。
 - The Point 是否无 `t.co`、无 speaker/timecode 残留、无摘要冒充译文。
 - 普通前台文案是否无 Markdown、JSON、同步、脚本、字段等后台语。
+- 三个 writer 的文章是否通过 writer style gate：无禁用过渡词、无明显抽象名词泡沫、无高频重复句式。
 
 通过标准：
 
@@ -75,6 +78,27 @@ node agent-workflow/tools/v2-source-quality-gate.mjs --date=YYYY-MM-DD
 ## 4. 页面与体验闸门
 
 适用于首页、Daily Brief、Signals、The Point、Opportunities、Trends、Admin、会员页等页面调整。
+
+### 4.0 Copy-first 文案前置闸门
+
+页面 / 文案类任务进入 Dev 前，必须先通过 `agent-workflow/governance/copy-first-page-gate.md`。
+
+必须检查：
+
+- 是否由 Copy Agent 输出可直接落地的 Copy 文案规范表。
+- Copy 表是否覆盖页面 H1、模块标题、卡片标题、摘要、CTA、空状态、锁定态、提示语和新增英文标签。
+- Copy 表是否明确字数 / 行数 / 容器约束。
+- Dev 是否只按表实现，未临场新增或改写关键可见文案。
+- 如 Dev 认为 Copy 表不适配布局，是否停止并回退给 Copy / UI，而不是自行补写。
+
+阻塞条件：
+
+- 缺 Copy 表。
+- Copy 表只有原则，没有最终文案。
+- Dev 自行新增首页首屏、栏目标题、详情页 H1、CTA、卡片标题、会员转化或关键说明。
+- 页面出现明显 AI 味、内部流程语、字段说明、空泛营销或模板句式。
+
+Copy-first 是开发前闸门。2026-05-12 起，通用页面与文案独立质检 Skill 和强制七维评分流程已停用；页面任务不再因缺少该独立质检报告而阻塞。
 
 必须检查：
 
@@ -154,7 +178,7 @@ node agent-workflow/tools/v2-source-probe.mjs --date=YYYY-MM-DD
 - V2 schema、内容目录和生成器能被对应 quality gate 读取。
 - `v2content` 闸门通过，或写清未运行原因和风险。
 - 新字段在产品模型或 PRD 中有定义。
-- 如果改动仍涉及 V1 归档脚本，需说明它是历史兼容工作，不得影响 V2 当前入口。
+- 如果任务提到 V1 归档脚本，应先确认该脚本已不在当前仓库，不得恢复 V1 代码作为当前入口。
 
 ## 7. 开发闸门
 

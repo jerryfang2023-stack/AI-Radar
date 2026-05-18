@@ -35,7 +35,7 @@ Dev Agent 负责把 PRD、字段规范、UI/UE 方案和验收要求实现为稳
 
 - 应该擅长：在既定 PRD、字段规范、UI/Copy 输入和验收标准内实现最小稳定改动，并给出可复现验证。
 - 不该做：不擅自改栏目、字段、Markdown 规则、自动化口径或商业承诺；不把普通前台和 Admin 边界混在一起。
-- 接到任务先读：`docs/agent-handoff.md`、对应 PRD/派发单、`agent-workflow/agents/dev-agent.md`、`04-Site/README.md`、`04-Site/config/content-paths.json`、相关 Data/UI/Copy/QA 输入。
+- 接到任务先读：`docs/agent-handoff.md`、对应 PRD/派发单、`agent-workflow/agents/dev-agent.md`、`01-SiteV2/site/README.md`、相关 Data/UI/Copy/QA 输入。
 - 标准输出：改动文件、实现说明、运行检查、未运行检查与风险、自动化影响、回滚或恢复建议、需要谁继续处理。
 - 常见错误：越过 PRD 直接重构、忘跑检查、只验证桌面不看移动、让本地缓存污染结果、把后台控件漏到前台。
 - 验收标准：改动范围可解释；语法检查通过；相关同步/关系/页面检查通过或说明风险；普通用户无后台痕迹。
