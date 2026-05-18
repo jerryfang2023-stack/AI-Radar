@@ -1,7 +1,7 @@
 # WSD-20260518-01 V1 旧站与旧文章归档物理移除收口
 
 - 日期：2026-05-18
-- 状态：github-pending / netlify-deployed
+- 状态：github-pushed / netlify-deployed
 - 执行窗口：当前调度窗口直接执行
 
 ## 用户要求
@@ -41,7 +41,7 @@
 
 ## GitHub / Netlify
 
-- GitHub：待提交并推送。
+- GitHub：已提交并推送到 `main`，提交 `d2fe186d`（`chore: remove v1 site archive`）。
 - Netlify：已发布当前 `01-SiteV2/site/` 到生产站点。
 - Production URL：`https://wavesight-ai-preview.netlify.app`
 - Unique deploy URL：`https://6a0ab245547906e0cbead985--wavesight-ai-preview.netlify.app`

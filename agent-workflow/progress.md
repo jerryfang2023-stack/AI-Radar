@@ -1,5 +1,17 @@
 ﻿# 观澜AI 工作进度账本
 
+## 2026-05-18 案例卡 / 观点卡 / 趋势卡模板按 Raw / Pool 规则重设
+
+- 状态：`implemented / syntax-passed / migration-gap-recorded`。
+- 背景：用户要求按变化卡同一套 Raw / Pool 证据规则，逐一重设案例卡、观点卡和趋势卡模板。
+- 已重写：`01-SiteV2/knowledge/10-Templates/case-card-template.md`，新增 `asset_level`、`evidence_gate`、`raw_refs`、`primary_raw`、`source_evidence`、`key_excerpts`、`business_elements`、`evidence_seed`、`missing_information` 等字段，删除旧的下游二创 / 内参升级字段。
+- 已重写：`01-SiteV2/knowledge/10-Templates/opinion-card-template.md`，新增 `opinion_evidence_gate`、`opinion_capture`、`source_volatility`、`capture_scope`、`fact_claim_support` 等字段，明确观点卡证明“谁在何时何处说了什么”，不证明观点里的事实成立。
+- 已重写：`01-SiteV2/knowledge/10-Templates/trend-card-template.md`，新增 `trend_evidence_gate`、`threshold`、`evidence_summary`、`primary_raw_refs`、`supporting_raw_refs`、`raw_source_levels`、`watch_windows` 等字段，明确趋势卡不得由单条新闻、单个观点或未回填 Raw 的旧资产生成。
+- 已同步：`01-SiteV2/knowledge/README.md`、`asset-card-generator.md`、`case-signal-researcher.md`、`trend-report-writer.md`。
+- 遗留：现有 23 张案例卡、30 张观点卡均缺少新版 Raw 回源字段，后续需单独做 schema 迁移和 Raw / 原文捕获回填；趋势卡目录当前为空。
+- 收口报告：`agent-workflow/reports/case-opinion-trend-template-raw-pool-reset-2026-05-18.md`。
+- 验证：`node agent-workflow/tools/run-quality-gates.mjs syntax` 通过。
+
 ## 2026-05-18 变化卡与 Raw / Pool 规则对齐清理
 
 - 状态：`implemented / syntax-passed / migration-gap-recorded`。
@@ -14,7 +26,7 @@
 
 ## 2026-05-18 V1 旧站代码与旧文章归档物理删除
 
-- 状态：`netlify-deployed / github-pending`。
+- 状态：`github-pushed / netlify-deployed`。
 - 执行范围：删除 V1 旧站代码、旧文章归档、历史改写入库目录和 V1 专用同步 / QA 脚本。
 - 已删除：`10-Archive/v1.0/`、`01-SiteV2/content/00-inbox/legacy-import/`、`01-SiteV2/content/00-inbox/legacy-full-import/`、`agent-workflow/tools/unified-site-sync.mjs`、`agent-workflow/tools/the-point-browser-qa.mjs`。
 - 已保留：`01-SiteV2/` 当前 V2 站点与内容生产线、`09-ai-news-radar/`、`10-Archive/legacy/`、根目录长期调度文件。
@@ -24,6 +36,7 @@
 - 备注：`run-quality-gates v2content` 失败来自 2026-05-18 当日内容生产缺口（今日观察长文 / 变化卡未产出），与 V1 删除无关。
 - 收口报告：`agent-workflow/reports/WSD-20260518-01-v1-physical-removal-github-netlify-closeout.md`。
 - Netlify：已发布到 `https://wavesight-ai-preview.netlify.app`，deploy `6a0ab245547906e0cbead985`。
+- GitHub：已推送到 `main`，提交 `d2fe186d`。
 
 ## 2026-05-18 今日每日监测任务执行
 
