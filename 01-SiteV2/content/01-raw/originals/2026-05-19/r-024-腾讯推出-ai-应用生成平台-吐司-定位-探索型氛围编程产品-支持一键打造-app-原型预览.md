@@ -1,0 +1,320 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-024
+title: "腾讯推出 AI 应用生成平台\"吐司\"：定位\"探索型氛围编程产品\"、支持一键打造 App 原型预览"
+original_url: "https://www.ithome.com/0/952/009.htm"
+canonical_url: "https://www.ithome.com/0/952/009.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-18T11:55:35.000Z"
+collected_at: 2026-05-19T05:27:29.920Z
+language: mixed
+full_text_hash: 891d2f360d214edd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-19/r-024-腾讯推出-ai-应用生成平台-吐司-定位-探索型氛围编程产品-支持一键打造-app-原型预览.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-19/r-024-腾讯推出-ai-应用生成平台-吐司-定位-探索型氛围编程产品-支持一键打造-app-原型预览.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-clean-text
+extraction_quality: medium
+has_full_text: true
+content_length: 1311
+fetch_error: ""
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"腾讯推出 AI 应用生成平台\"吐司\"：定位\"探索型氛围编程产品\"、支持一键打造 App 原型预览","discovery_summary":"腾讯于5月18日推出AI应用生成平台\"吐司\"，定位为探索型氛围编程产品。安卓版已上线，iOS版稍后推出，公测期间限时免费，后续通过分享任务提供更多次数。用户可用自然语言描述想法，AI自动拆解功能、生成原型并一键打包成App。平台提供创造应用、社交分享、灵感广场和应用搜索四大能力，聚焦灵感实现与共创，让无代码基础的用户也能创建应用，形成从想法到分发的闭环生态。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/952/009.htm","discovered_at":"2026-05-19T05:22:41.586Z","rank_on_page":116,"discovery_status":"discovered"}
+source_role: primary_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 16c3a9a6f5061f7f
+content_hash: 891d2f360d214edd
+semantic_hash: d70db31ae8bdcb96
+duplicate_of: ""
+first_seen_at: "2026-05-18T11:55:35.000Z"
+last_seen_at: 2026-05-19T05:27:29.920Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+guanlan_scores: {"commercial_value":4,"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":4,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["5","18","10","11","2026","19","55","35"],"quotes":["探索型氛围编程产品","探索型氛围编程产品","探索型氛围编程产品","探索型氛围编程（Vibe Coding）产品","想法 → 应用 → 分发 → 共创"]}
+evidence_seed: {"company_actions":["腾讯于5月18日推出AI应用生成平台\"吐司\"，定位为探索型氛围编程产品。安卓版已上线，iOS版稍后推出，公测期间限时免费，后续通过分享任务提供更多次数。用户可用自然语言描述想法，AI自动拆解功能、生成原型并一键打包成App。平台提供创造应用、社交分享、灵感广场和应用搜索四大能力，聚焦灵感实现与共创，让无代码基础的用户也能创建应用，形成从想法到分发的闭环生态。","后续将通过分享任务等方式提供更多次数 。","据腾讯介绍，用户只需用自然语言描述自己的想法，AI 便能自动拆解功能、生成原型，并最终一键打包成 App 并安装进手机，具体提供如下四大能力： 创造应用：用户输入想法 → AI 自动拆解为功能点 → 多轮对话调整细节 → 一键打包成 APK（安卓手机安装包） 社交分享：用户制作出来的 App，支持通过链接 / 二维码 / 安装包分享给他人 灵感广场：用户公开自己的应用作为模板，他人可一键做同款 应用搜索：点击「问吐司」，可以搜到别人发布的灵感，也可以通过描述需求，让 AI 帮找符合自己要求的应用 腾讯表示，“吐司”并未过度强调技术门槛的降低，而是聚焦于“灵感实现”与“共创”两大核心，旨在让没有任何代码基础的人，也能把自己的一个念头变成一个真实可用的 App。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"腾讯于5月18日推出AI应用生成平台\"吐司\"，定位为探索型氛围编程产品。安卓版已上线，iOS版稍后推出，公测期间限时免费，后续通过分享任务提供更多次数。用户可用自然语言描述想法，AI自动拆解功能、生成原型并一键打包成App。平台提供创造应用、社交分享、灵感广场和应用搜索四大能力，聚焦灵感实现与共创，让无代码基础的用户也能创建应用，形成从想法到分发的闭环生态。","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览 2026/5/18 19:55:35 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 5 月 18 日消息，腾讯宣布推出一款 AI 应用生成平台“吐司”，该平台定位为“探索型氛围编程（Vibe Coding）产品”，目前 安卓 版已正式上线，iOS 版本将于稍后推出， 公测期间以限时免费形式开放。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"后续将通过分享任务等方式提供更多次数 。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"据腾讯介绍，用户只需用自然语言描述自己的想法，AI 便能自动拆解功能、生成原型，并最终一键打包成 App 并安装进手机，具体提供如下四大能力： 创造应用：用户输入想法 → AI 自动拆解为功能点 → 多轮对话调整细节 → 一键打包成 APK（安卓手机安装包） 社交分享：用户制作出来的 App，支持通过链接 / 二维码 / 安装包分享给他人 灵感广场：用户公开自己的应用作为模板，他人可一键做同款 应用搜索：点击「问吐司」，可以搜到别人发布的灵感，也可以通过描述需求，让 AI 帮找符合自己要求的应用 腾讯表示，“吐司”并未过度强调技术门槛的降低，而是聚焦于“灵感实现”与“共创”两大核心，旨在让没有任何代码基础的人，也能把自己的一个念头变成一个真实可用的 App。","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"用户可以将自己创作的应用发布到广场供他人体验，其他用户也能基于已有的应用模板进行二次创作，未来也支持上架与下载，形成“想法 → 应用 → 分发 → 共创”的闭环生态。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 腾讯推出 AI 应用生成平台"吐司"：定位"探索型氛围编程产品"、支持一键打造 App 原型预览
+
+## clean_text
+
+腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 智能时代 > 人工智能
+腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览
+2026/5/18 19:55:35
+来源： IT之家
+作者： 漾仔
+责编： 漾仔
+评论：
+IT之家 5 月 18 日消息，腾讯宣布推出一款 AI 应用生成平台“吐司”，该平台定位为“探索型氛围编程（Vibe Coding）产品”，目前 安卓 版已正式上线，iOS 版本将于稍后推出， 公测期间以限时免费形式开放。后续将通过分享任务等方式提供更多次数 。
+据腾讯介绍，用户只需用自然语言描述自己的想法，AI 便能自动拆解功能、生成原型，并最终一键打包成 App 并安装进手机，具体提供如下四大能力：
+创造应用：用户输入想法 → AI 自动拆解为功能点 → 多轮对话调整细节 → 一键打包成 APK（安卓手机安装包）
+社交分享：用户制作出来的 App，支持通过链接 / 二维码 / 安装包分享给他人
+灵感广场：用户公开自己的应用作为模板，他人可一键做同款
+应用搜索：点击「问吐司」，可以搜到别人发布的灵感，也可以通过描述需求，让 AI 帮找符合自己要求的应用
+腾讯表示，“吐司”并未过度强调技术门槛的降低，而是聚焦于“灵感实现”与“共创”两大核心，旨在让没有任何代码基础的人，也能把自己的一个念头变成一个真实可用的 App。用户可以将自己创作的应用发布到广场供他人体验，其他用户也能基于已有的应用模板进行二次创作，未来也支持上架与下载，形成“想法 → 应用 → 分发 → 共创”的闭环生态。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 腾讯
+腾讯马化腾称一年前以为上了 AI 的船结果发现漏水了，现在站上去但还坐不下去
+腾讯开源 OpenSearch-VL，突破多模态搜索 AI 智能体训练瓶颈
+AI 从短剧杀入长剧：腾讯副总裁孙忠怀透露全 AI 制作长剧 / 电影今年第三季度上线
+腾讯总裁刘炽平：去年腾讯在 AI 新产品上投入 180 亿元，今年至少翻倍
+AI 除夕夜辱骂用户，腾讯元宝回应称系模型处理多轮对话时异常输出导致
+腾讯元宝否认“抢红包会导致微信闪退”：不存在“静默监控”“默认开启 AI”“自动举报”情况
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 智能时代 > 人工智能
+腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览
+2026/5/18 19:55:35
+来源： IT之家
+作者： 漾仔
+责编： 漾仔
+评论：
+IT之家 5 月 18 日消息，腾讯宣布推出一款 AI 应用生成平台“吐司”，该平台定位为“探索型氛围编程（Vibe Coding）产品”，目前 安卓 版已正式上线，iOS 版本将于稍后推出， 公测期间以限时免费形式开放。后续将通过分享任务等方式提供更多次数 。
+据腾讯介绍，用户只需用自然语言描述自己的想法，AI 便能自动拆解功能、生成原型，并最终一键打包成 App 并安装进手机，具体提供如下四大能力：
+创造应用：用户输入想法 → AI 自动拆解为功能点 → 多轮对话调整细节 → 一键打包成 APK（安卓手机安装包）
+社交分享：用户制作出来的 App，支持通过链接 / 二维码 / 安装包分享给他人
+灵感广场：用户公开自己的应用作为模板，他人可一键做同款
+应用搜索：点击「问吐司」，可以搜到别人发布的灵感，也可以通过描述需求，让 AI 帮找符合自己要求的应用
+腾讯表示，“吐司”并未过度强调技术门槛的降低，而是聚焦于“灵感实现”与“共创”两大核心，旨在让没有任何代码基础的人，也能把自己的一个念头变成一个真实可用的 App。用户可以将自己创作的应用发布到广场供他人体验，其他用户也能基于已有的应用模板进行二次创作，未来也支持上架与下载，形成“想法 → 应用 → 分发 → 共创”的闭环生态。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 腾讯
+腾讯马化腾称一年前以为上了 AI 的船结果发现漏水了，现在站上去但还坐不下去
+腾讯开源 OpenSearch-VL，突破多模态搜索 AI 智能体训练瓶颈
+AI 从短剧杀入长剧：腾讯副总裁孙忠怀透露全 AI 制作长剧 / 电影今年第三季度上线
+腾讯总裁刘炽平：去年腾讯在 AI 新产品上投入 180 亿元，今年至少翻倍
+AI 除夕夜辱骂用户，腾讯元宝回应称系模型处理多轮对话时异常输出导致
+腾讯元宝否认“抢红包会导致微信闪退”：不存在“静默监控”“默认开启 AI”“自动举报”情况
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=medium
+   腾讯于5月18日推出AI应用生成平台"吐司"，定位为探索型氛围编程产品。安卓版已上线，iOS版稍后推出，公测期间限时免费，后续通过分享任务提供更多次数。用户可用自然语言描述想法，AI自动拆解功能、生成原型并一键打包成App。平台提供创造应用、社交分享、灵感广场和应用搜索四大能力，聚焦灵感实现与共创，让无代码基础的用户也能创建应用，形成从想法到分发的闭环生态。
+
+2. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=medium
+   腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 腾讯推出 AI 应用生成平台“吐司”：定位“探索型氛围编程产品”、支持一键打造 App 原型预览 2026/5/18 19:55:35 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 5 月 18 日消息，腾讯宣布推出一款 AI 应用生成平台“吐司”，该平台定位为“探索型氛围编程（Vibe Coding）产品”，目前 安卓 版已正式上线，iOS 版本将于稍后推出， 公测期间以限时免费形式开放。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   后续将通过分享任务等方式提供更多次数 。
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=medium
+   据腾讯介绍，用户只需用自然语言描述自己的想法，AI 便能自动拆解功能、生成原型，并最终一键打包成 App 并安装进手机，具体提供如下四大能力： 创造应用：用户输入想法 → AI 自动拆解为功能点 → 多轮对话调整细节 → 一键打包成 APK（安卓手机安装包） 社交分享：用户制作出来的 App，支持通过链接 / 二维码 / 安装包分享给他人 灵感广场：用户公开自己的应用作为模板，他人可一键做同款 应用搜索：点击「问吐司」，可以搜到别人发布的灵感，也可以通过描述需求，让 AI 帮找符合自己要求的应用 腾讯表示，“吐司”并未过度强调技术门槛的降低，而是聚焦于“灵感实现”与“共创”两大核心，旨在让没有任何代码基础的人，也能把自己的一个念头变成一个真实可用的 App。
+
+5. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=medium
+   用户可以将自己创作的应用发布到广场供他人体验，其他用户也能基于已有的应用模板进行二次创作，未来也支持上架与下载，形成“想法 → 应用 → 分发 → 共创”的闭环生态。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 5, 18, 10, 11, 2026, 19, 55, 35
+- quotes: 探索型氛围编程产品 / 探索型氛围编程产品 / 探索型氛围编程产品 / 探索型氛围编程（Vibe Coding）产品 / 想法 → 应用 → 分发 → 共创
+
+## evidence_seed
+
+- company_actions: 腾讯于5月18日推出AI应用生成平台"吐司"，定位为探索型氛围编程产品。安卓版已上线，iOS版稍后推出，公测期间限时免费，后续通过分享任务提供更多次数。用户可用自然语言描述想法，AI自动拆解功能、生成原型并一键打包成App。平台提供创造应用、社交分享、灵感广场和应用搜索四大能力，聚焦灵感实现与共创，让无代码基础的用户也能创建应用，形成从想法到分发的闭环生态。 / 后续将通过分享任务等方式提供更多次数 。 / 据腾讯介绍，用户只需用自然语言描述自己的想法，AI 便能自动拆解功能、生成原型，并最终一键打包成 App 并安装进手机，具体提供如下四大能力： 创造应用：用户输入想法 → AI 自动拆解为功能点 → 多轮对话调整细节 → 一键打包成 APK（安卓手机安装包） 社交分享：用户制作出来的 App，支持通过链接 / 二维码 / 安装包分享给他人 灵感广场：用户公开自己的应用作为模板，他人可一键做同款 应用搜索：点击「问吐司」，可以搜到别人发布的灵感，也可以通过描述需求，让 AI 帮找符合自己要求的应用 腾讯表示，“吐司”并未过度强调技术门槛的降低，而是聚焦于“灵感实现”与“共创”两大核心，旨在让没有任何代码基础的人，也能把自己的一个念头变成一个真实可用的 App。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- commercial_value: 4
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: primary_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"腾讯推出 AI 应用生成平台\"吐司\"：定位\"探索型氛围编程产品\"、支持一键打造 App 原型预览","discovery_summary":"腾讯于5月18日推出AI应用生成平台\"吐司\"，定位为探索型氛围编程产品。安卓版已上线，iOS版稍后推出，公测期间限时免费，后续通过分享任务提供更多次数。用户可用自然语言描述想法，AI自动拆解功能、生成原型并一键打包成App。平台提供创造应用、社交分享、灵感广场和应用搜索四大能力，聚焦灵感实现与共创，让无代码基础的用户也能创建应用，形成从想法到分发的闭环生态。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/952/009.htm","discovered_at":"2026-05-19T05:22:41.586Z","rank_on_page":116,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+腾讯于5月18日推出AI应用生成平台"吐司"，定位为探索型氛围编程产品。安卓版已上线，iOS版稍后推出，公测期间限时免费，后续通过分享任务提供更多次数。用户可用自然语言描述想法，AI自动拆解功能、生成原型并一键打包成App。平台提供创造应用、社交分享、灵感广场和应用搜索四大能力，聚焦灵感实现与共创，让无代码基础的用户也能创建应用，形成从想法到分发的闭环生态。
+
+## 采集备注
+
+该条目由 aihot 发现，事实来源等级初判为 B。S/A/B/C/D 只判断事实可靠度，不判断商业价值；M 只表示 acquisition_source_level，即 AI HOT / 搜索聚合等采集通道。M 级通道必须回源；HN / Reddit / X 等 C 级社区材料可用于讨论升温、用户反馈和早期观察，但进入事实主证据前必须寻找官方公告、产品页、客户案例、论文、A 级媒体或其他 S/A/B 来源补证。创始人 / 高管 / 项目方原帖可作为 S 级一手来源，但高波动平台必须保存快照和抓取时间。

@@ -1,0 +1,180 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-043",
+  "title": "开源工具揭露AI API中转站安全风险与检测差异",
+  "original_url": "",
+  "canonical_url": "",
+  "source_name": "X：Berry Xia (@berryxia)",
+  "source_type": "web",
+  "source_level": "B",
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-05-19T05:27:30.019Z",
+  "language": "mixed",
+  "full_text": "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
+  "clean_text": "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-19/r-043-开源工具揭露ai-api中转站安全风险与检测差异.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-19/r-043-开源工具揭露ai-api中转站安全风险与检测差异.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "no-url-summary-only",
+  "extraction_quality": "failed",
+  "has_full_text": false,
+  "content_length": 184,
+  "fetch_error": "",
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "summary_only",
+  "visible_range": "采集通道提供的标题与摘要",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "开源工具揭露AI API中转站安全风险与检测差异",
+    "discovery_summary": "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
+    "source_name": "X：Berry Xia (@berryxia)",
+    "origin_url": "",
+    "discovered_at": "2026-05-19T05:22:41.332Z",
+    "rank_on_page": 5,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e3b0c44298fc1c14",
+  "content_hash": "97af494e774bdbdc",
+  "full_text_hash": "97af494e774bdbdc",
+  "semantic_hash": "6bfb291d2fc4daa4",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-19T05:27:30.019Z",
+  "last_seen_at": "2026-05-19T05:27:30.019Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "risk",
+      "text": "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "risk",
+      "text": "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "ai等工具，其透明度和可审计性更为可靠。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "Berry Xia (@berryxia)"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "1",
+      "2"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "ai等工具，其透明度和可审计性更为可靠。",
+      "项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": [
+      "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。",
+      "针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。"
+    ]
+  },
+  "guanlan_scores": {
+    "commercial_value": 5,
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 3,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": true,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 开源工具揭露AI API中转站安全风险与检测差异\n\n- raw_id: R-043\n- original_url: no-url\n- source_name: X：Berry Xia (@berryxia)\n- collected_at: 2026-05-19T05:27:30.019Z\n\n## clean_text\n\n针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。\n\n## full_text\n\n针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。\n\n## key_excerpts\n\n1. [risk / daily_observation, heatmap, change, trend / high] 针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。对比hvoy.ai和cctest.ai等工具，其透明度和可审计性更为可靠。项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。\n2. [risk / daily_observation, heatmap, change, trend / high] 针对AI API中转站可能存在的“掺水”、“造假”等安全风险，开源项目api-relay-audit通过双论文锚定路线，对AC-1工具调用改写、AC-2错误响应泄漏、上下文截断等常见攻击进行可验证的三态判定，并提供透明日志。\n3. [company_action / daily_observation, heatmap, change, case, trend / high] ai等工具，其透明度和可审计性更为可靠。\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 项目作者已将完整方法论、对比结果和功能速查表公开，并开源了该检测工具。\n"
+}

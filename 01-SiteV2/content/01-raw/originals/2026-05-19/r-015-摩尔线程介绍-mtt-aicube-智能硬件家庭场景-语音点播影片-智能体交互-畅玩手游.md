@@ -1,0 +1,315 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-015
+title: "摩尔线程介绍 MTT AICUBE 智能硬件家庭场景：语音点播影片、智能体交互、畅玩手游…"
+original_url: "https://www.ithome.com/0/951/999.htm"
+canonical_url: "https://www.ithome.com/0/951/999.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-18T11:22:59.000Z"
+collected_at: 2026-05-19T05:27:29.855Z
+language: mixed
+full_text_hash: 9446491d3412cebf
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-19/r-015-摩尔线程介绍-mtt-aicube-智能硬件家庭场景-语音点播影片-智能体交互-畅玩手游.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-19/r-015-摩尔线程介绍-mtt-aicube-智能硬件家庭场景-语音点播影片-智能体交互-畅玩手游.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-clean-text
+extraction_quality: medium
+has_full_text: true
+content_length: 1414
+fetch_error: ""
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"摩尔线程介绍 MTT AICUBE 智能硬件家庭场景：语音点播影片、智能体交互、畅玩手游…","discovery_summary":"摩尔线程发布了MTT AICUBE智能硬件，聚焦家庭应用场景。该产品内置小麦智能体，支持用户通过语音指令点播影片、规划旅行行程，并可连接手柄畅玩《王者荣耀》《原神》等手游。其依托全功能GPU提供低延迟操控与即插即用体验，旨在填补国产GPU在端侧安卓生态的应用空白，并为开发者提供高性价比测试平台，以推动国产GPU生态的规模化落地。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/951/999.htm","discovered_at":"2026-05-19T05:22:41.587Z","rank_on_page":122,"discovery_status":"discovered"}
+source_role: primary_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 153fd18ada6af474
+content_hash: 9446491d3412cebf
+semantic_hash: 708a511b00021085
+duplicate_of: ""
+first_seen_at: "2026-05-18T11:22:59.000Z"
+last_seen_at: 2026-05-19T05:27:29.855Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+guanlan_scores: {"commercial_value":5,"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["6","18","5","10","11","2026","19","22"],"quotes":[]}
+evidence_seed: {"company_actions":["摩尔线程发布了MTT AICUBE智能硬件，聚焦家庭应用场景。该产品内置小麦智能体，支持用户通过语音指令点播影片、规划旅行行程，并可连接手柄畅玩《王者荣耀》《原神》等手游。其依托全功能GPU提供低延迟操控与即插即用体验，旨在填补国产GPU在端侧安卓生态的应用空白，并为开发者提供高性价比测试平台，以推动国产GPU生态的规模化落地。","摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游.","2026/5/18 19:22:59 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 5 月 18 日消息，在目前正在进行的摩尔线程发布会上，官方介绍了 MTT AICUBE 智能硬件产品在家庭场景方面的能力，并宣布该机将于 6 月 18 日开启预售。"],"case_details":["- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 奇趣电子 摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游."],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"摩尔线程发布了MTT AICUBE智能硬件，聚焦家庭应用场景。该产品内置小麦智能体，支持用户通过语音指令点播影片、规划旅行行程，并可连接手柄畅玩《王者荣耀》《原神》等手游。其依托全功能GPU提供低延迟操控与即插即用体验，旨在填补国产GPU在端侧安卓生态的应用空白，并为开发者提供高性价比测试平台，以推动国产GPU生态的规模化落地。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 奇趣电子 摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"2026/5/18 19:22:59 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 5 月 18 日消息，在目前正在进行的摩尔线程发布会上，官方介绍了 MTT AICUBE 智能硬件产品在家庭场景方面的能力，并宣布该机将于 6 月 18 日开启预售。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据官方介绍，MTT AICUBE 可带来客厅语音点播新体验。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"无需打字、无需翻页，只需向小麦智能体说出想看的片名或类型，无论是热播剧集，还是经典老片，都能一语直达，即刻播放。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 摩尔线程介绍 MTT AICUBE 智能硬件家庭场景：语音点播影片、智能体交互、畅玩手游…
+
+## clean_text
+
+摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游... - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 奇趣电子
+摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游...
+2026/5/18 19:22:59
+来源： IT之家
+作者： 漾仔
+责编： 漾仔
+评论：
+IT之家 5 月 18 日消息，在目前正在进行的摩尔线程发布会上，官方介绍了 MTT AICUBE 智能硬件产品在家庭场景方面的能力，并宣布该机将于 6 月 18 日开启预售。
+据官方介绍，MTT AICUBE 可带来客厅语音点播新体验。无需打字、无需翻页，只需向小麦智能体说出想看的片名或类型，无论是热播剧集，还是经典老片，都能一语直达，即刻播放。
+官方还举例旅行规划场景，MTT AICUBE 内置的小麦智能体可帮助家庭告别繁琐的攻略查阅与零散的行程规划，用户无需手动搜索、反复比价，只需向小麦智能体说出目的地与偏好，都能一键生成专属旅行攻略。
+在娱乐方面，MTT AICUBE 号称拥有轻量化手游畅玩新体验。无需模拟器复杂配置、无需担忧硬件兼容，只需连接手柄、即可畅玩《王者荣耀》《原神》等游戏。
+官方强调，MTT AICUBE 同时支持 安卓 容器环境下的高效运行，依托全功能 GPU 强大图形渲染能力，实现低延迟操控与即插即用，让客厅秒变游戏娱乐中心。凭借强劲端侧异构算力，它承担起家庭娱乐、办公交互等场景的智能中枢角色，填补国产 GPU 在端侧安卓生态的应用空白，为开发者提供高性价比测试平台，赋能国产全功能 GPU 生态规模化落地。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 摩尔线程 ， 国产 GPU ， MTT AICUBE ， 小麦智能体
+摩尔线程携手智源 FlagOS，为 MTT S5000 GPU 完成 DeepSeek-V4 模型 Day-0 适配
+摩尔线程完成 MiniMax M2.7 大模型 Day-0 适配，支持 MTT S5000 训推一体全功能 GPU
+摩尔线程 MTT S5000 适配 FlagOS 训练全要素软件栈，实现 Qwen3-0.6B 端到端无中断训练
+摩尔线程完成 MiniMax M2.5 模型 Day-0 适配，支持 MTT S5000 GPU
+摩尔线程实现智谱 GLM-5 大模型 Day-0 适配，国产 GPU 生态兼容再进一步
+摩尔线程：预计 2025 年营收同比增长 230.70% 至 246.67%，GPU 智算卡 S5000 已实现规模量产
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游... - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 奇趣电子
+摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游...
+2026/5/18 19:22:59
+来源： IT之家
+作者： 漾仔
+责编： 漾仔
+评论：
+IT之家 5 月 18 日消息，在目前正在进行的摩尔线程发布会上，官方介绍了 MTT AICUBE 智能硬件产品在家庭场景方面的能力，并宣布该机将于 6 月 18 日开启预售。
+据官方介绍，MTT AICUBE 可带来客厅语音点播新体验。无需打字、无需翻页，只需向小麦智能体说出想看的片名或类型，无论是热播剧集，还是经典老片，都能一语直达，即刻播放。
+官方还举例旅行规划场景，MTT AICUBE 内置的小麦智能体可帮助家庭告别繁琐的攻略查阅与零散的行程规划，用户无需手动搜索、反复比价，只需向小麦智能体说出目的地与偏好，都能一键生成专属旅行攻略。
+在娱乐方面，MTT AICUBE 号称拥有轻量化手游畅玩新体验。无需模拟器复杂配置、无需担忧硬件兼容，只需连接手柄、即可畅玩《王者荣耀》《原神》等游戏。
+官方强调，MTT AICUBE 同时支持 安卓 容器环境下的高效运行，依托全功能 GPU 强大图形渲染能力，实现低延迟操控与即插即用，让客厅秒变游戏娱乐中心。凭借强劲端侧异构算力，它承担起家庭娱乐、办公交互等场景的智能中枢角色，填补国产 GPU 在端侧安卓生态的应用空白，为开发者提供高性价比测试平台，赋能国产全功能 GPU 生态规模化落地。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 摩尔线程 ， 国产 GPU ， MTT AICUBE ， 小麦智能体
+摩尔线程携手智源 FlagOS，为 MTT S5000 GPU 完成 DeepSeek-V4 模型 Day-0 适配
+摩尔线程完成 MiniMax M2.7 大模型 Day-0 适配，支持 MTT S5000 训推一体全功能 GPU
+摩尔线程 MTT S5000 适配 FlagOS 训练全要素软件栈，实现 Qwen3-0.6B 端到端无中断训练
+摩尔线程完成 MiniMax M2.5 模型 Day-0 适配，支持 MTT S5000 GPU
+摩尔线程实现智谱 GLM-5 大模型 Day-0 适配，国产 GPU 生态兼容再进一步
+摩尔线程：预计 2025 年营收同比增长 230.70% 至 246.67%，GPU 智算卡 S5000 已实现规模量产
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   摩尔线程发布了MTT AICUBE智能硬件，聚焦家庭应用场景。该产品内置小麦智能体，支持用户通过语音指令点播影片、规划旅行行程，并可连接手柄畅玩《王者荣耀》《原神》等手游。其依托全功能GPU提供低延迟操控与即插即用体验，旨在填补国产GPU在端侧安卓生态的应用空白，并为开发者提供高性价比测试平台，以推动国产GPU生态的规模化落地。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游.
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 奇趣电子 摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游.
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   2026/5/18 19:22:59 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 5 月 18 日消息，在目前正在进行的摩尔线程发布会上，官方介绍了 MTT AICUBE 智能硬件产品在家庭场景方面的能力，并宣布该机将于 6 月 18 日开启预售。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   据官方介绍，MTT AICUBE 可带来客厅语音点播新体验。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   无需打字、无需翻页，只需向小麦智能体说出想看的片名或类型，无论是热播剧集，还是经典老片，都能一语直达，即刻播放。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 6, 18, 5, 10, 11, 2026, 19, 22
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 摩尔线程发布了MTT AICUBE智能硬件，聚焦家庭应用场景。该产品内置小麦智能体，支持用户通过语音指令点播影片、规划旅行行程，并可连接手柄畅玩《王者荣耀》《原神》等手游。其依托全功能GPU提供低延迟操控与即插即用体验，旨在填补国产GPU在端侧安卓生态的应用空白，并为开发者提供高性价比测试平台，以推动国产GPU生态的规模化落地。 / 摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游. / 2026/5/18 19:22:59 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 5 月 18 日消息，在目前正在进行的摩尔线程发布会上，官方介绍了 MTT AICUBE 智能硬件产品在家庭场景方面的能力，并宣布该机将于 6 月 18 日开启预售。
+- case_details: - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 奇趣电子 摩尔线程 MTT AICUBE 智能硬件 6 月 18 日预售：语音点播影片、智能体交互、畅玩手游.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- commercial_value: 5
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: primary_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"摩尔线程介绍 MTT AICUBE 智能硬件家庭场景：语音点播影片、智能体交互、畅玩手游…","discovery_summary":"摩尔线程发布了MTT AICUBE智能硬件，聚焦家庭应用场景。该产品内置小麦智能体，支持用户通过语音指令点播影片、规划旅行行程，并可连接手柄畅玩《王者荣耀》《原神》等手游。其依托全功能GPU提供低延迟操控与即插即用体验，旨在填补国产GPU在端侧安卓生态的应用空白，并为开发者提供高性价比测试平台，以推动国产GPU生态的规模化落地。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/951/999.htm","discovered_at":"2026-05-19T05:22:41.587Z","rank_on_page":122,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+摩尔线程发布了MTT AICUBE智能硬件，聚焦家庭应用场景。该产品内置小麦智能体，支持用户通过语音指令点播影片、规划旅行行程，并可连接手柄畅玩《王者荣耀》《原神》等手游。其依托全功能GPU提供低延迟操控与即插即用体验，旨在填补国产GPU在端侧安卓生态的应用空白，并为开发者提供高性价比测试平台，以推动国产GPU生态的规模化落地。
+
+## 采集备注
+
+该条目由 aihot 发现，事实来源等级初判为 B。S/A/B/C/D 只判断事实可靠度，不判断商业价值；M 只表示 acquisition_source_level，即 AI HOT / 搜索聚合等采集通道。M 级通道必须回源；HN / Reddit / X 等 C 级社区材料可用于讨论升温、用户反馈和早期观察，但进入事实主证据前必须寻找官方公告、产品页、客户案例、论文、A 级媒体或其他 S/A/B 来源补证。创始人 / 高管 / 项目方原帖可作为 S 级一手来源，但高波动平台必须保存快照和抓取时间。
