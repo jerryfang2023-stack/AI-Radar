@@ -14,13 +14,22 @@ upgrade_target:
 upgraded_from:
 source_count:
 primary_source_count:
-has_counter_evidence:
+has_boundary_note:
 source_tiers:
 related_signal_ids:
 related_trend_card_ids:
 related_case_card_ids:
 related_opinion_card_ids:
-tags:
+formal_tags:
+  track: []
+  function: []
+  scenario: []
+  customer: []
+  evidence: []
+  stage: []
+  region: []
+  source: []
+  opinion: []
 ---
 
 # {{title}}
@@ -32,7 +41,7 @@ tags:
 - 篇幅：6000-10000 中文字。
 - 来源：至少 5 个来源。
 - 一手 / S 级来源：至少 2 个。
-- 必须有反证。
+- 必须写清风险边界或证据缺口。
 - 必须覆盖行业、赛道、公司、竞品、技术路线、客户需求、商业案例、风险和时机。
 - 公司只能作为代表案例、证据或来源，不作为标题结论。
 - 机会判断是报告中的文章段落，不是独立 schema。
@@ -45,7 +54,7 @@ tags:
 - 现在处于什么阶段。
 - 谁最先受影响。
 - 还缺什么证据。
-- 30 / 90 天后最该看什么。
+- 后续最该看什么。
 
 ## 变化背景
 
@@ -53,7 +62,7 @@ tags:
 
 必须讲清楚：
 
-- 过去 7 / 30 / 90 天发生了什么。
+- 近期发生了什么。
 - 哪些信号连成同一方向。
 - 哪些信号只是热度，哪些有商业证据。
 
@@ -140,17 +149,17 @@ tags:
 
 关联：
 
-- 精选变化卡。
-- 变化卡。
-- Trend Card。
+- 成熟变化短专题。
+- 变化候选 / 变化短专题。
+- 趋势候选。
 - Case Card。
 - Opinion Card / Builders 观点。
 
-Builders 观点只能作为判断校准，不替代事实来源。
+Builders 观点只能作为判断校准，不替代事实来源。前沿观点必须来自已完成四档评级的观点卡：`feature` / `sidebar` 可作为前台参照，`archive` 仅作内部校准，`discard` 不得引用。
 
-## 风险与反证
+## 风险边界与证据缺口
 
-必须写。
+建议写清。
 
 可包含：
 
@@ -176,11 +185,7 @@ Builders 观点只能作为判断校准，不替代事实来源。
 
 ## 后续观察
 
-分别写：
-
-- 7 天看什么。
-- 30 天看什么。
-- 90 天看什么。
+写清后续最该观察的证据、案例、客户采用或成本变化。
 
 ## 来源附录
 
@@ -189,4 +194,3 @@ Builders 观点只能作为判断校准，不替代事实来源。
 | 来源 | 等级 | 原始链接 | 增量事实 | 支撑段落 |
 |---|---|---|---|---|
 |  | S/A/B/C/D |  |  |  |
-

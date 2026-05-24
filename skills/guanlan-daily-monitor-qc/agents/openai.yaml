@@ -1,0 +1,3 @@
+display_name: "观澜每日监测 QC"
+short_description: "质检每日监测 Raw / Pool 的原文证据、页面类型、信号覆盖和下游放行状态。"
+default_prompt: "Use $guanlan-daily-monitor-qc to audit a Guanlan daily-monitor run. Check original evidence, page-type routing, AI HOT daily and follow-builders source separation, six required importance_type lanes, and output allow / allow_with_degradation / block with a Markdown QC report."

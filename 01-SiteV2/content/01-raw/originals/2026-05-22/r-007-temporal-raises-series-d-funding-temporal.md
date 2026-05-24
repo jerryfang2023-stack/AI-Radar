@@ -1,0 +1,237 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-007
+title: "Temporal raises Series D funding | Temporal"
+original_url: "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies"
+canonical_url: "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-05-22T05:10:29.185Z
+language: mixed
+full_text_hash: 74cb86598e6c9021
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-22/r-007-temporal-raises-series-d-funding-temporal.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-22/r-007-temporal-raises-series-d-funding-temporal.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4905,"paragraph_count":21,"sentence_count":23,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"main"}
+has_full_text: true
+content_length: 4905
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"74cb86598e6c9021","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1f69885afd5fc439
+content_hash: 74cb86598e6c9021
+semantic_hash: 504a61c45bbf9051
+duplicate_of: ""
+first_seen_at: "2026-05-22T05:10:29.185Z"
+last_seen_at: 2026-05-22T05:10:29.185Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI"],"products":["agents","Agent"],"people":[],"industries":["医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["$300M","17","2026","$300 million","$5 billion","16","380%","350%"],"quotes":["A gentic AI doesn’t fail because the models aren’t good enough ,"]}
+evidence_seed: {"company_actions":["Temporal raises Series D funding | Temporal # Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, a","Press Release 02/17/2026 Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation.","The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify."],"case_details":["As companies race to adopt agentic AI, most efforts stall at the pilot stage."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"Temporal raises Series D funding | Temporal # Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, a","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Press Release 02/17/2026 Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"As companies race to adopt agentic AI, most efforts stall at the pilot stage.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Temporal is changing that.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"By providing a durable execution layer for long-running, stateful AI systems, Temporal enables companies across every sector to turn agentic AI from a promising idea into a production reality by addressing the gap between experimentation and adoption.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Temporal raises Series D funding | Temporal
+
+## clean_text
+
+Press Release
+02/17/2026
+Temporal Raises $300M Series D to Make Agentic AI Real for Companies
+SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify.
+As companies race to adopt agentic AI, most efforts stall at the pilot stage. Temporal is changing that. By providing a durable execution layer for long-running, stateful AI systems, Temporal enables companies across every sector to turn agentic AI from a promising idea into a production reality by addressing the gap between experimentation and adoption.
+" Durable Execution is a core requirement for modern AI systems, and Temporal offers a compelling platform to help build it in from the start. As AI systems become more complex and long-running, durability is as important as performance. Temporal plays a role in how we think about reliable execution at scale, supporting teams in focusing on product development, " says Venkat Venkataramani , VP App Infrastructure, OpenAI .
+Over the past year, demand for Temporal’s open-source platform and cloud service has surged as companies move beyond AI prototypes toward mission-critical deployments. Temporal reported >380% year-over-year revenue growth, a 350% increase in weekly active usage, and a 500% increase in installations, now exceeding 20 million installs per month and 9.1 trillion lifetime action executions on their Cloud product alone, 1.86 trillion for AI-native companies.
+“A gentic AI doesn’t fail because the models aren’t good enough ,” said Samar Abbas , CEO and co-founder of Temporal. “ It fails because the systems around them can’t handle real-world execution. And rather than create new problems, agentic AI tends to expose old ones such as managing state and failures. We’ve been solving these same problems for years. Temporal exists to make agentic AI work in production as well as any other class of application, reliably, predictably, and at scale.”
+Temporal customers use the platform to:
+Run agents that execute for days or weeks without losing state, because they safely recover from failures
+Control GPU, LLM, and other infrastructure costs as AI workloads scale
+Increase product delivery velocity and quality by simplifying developer experiences and infrastructure management
+Improve observability in agentic loops by tracing steps and failures at every step in the workflow
+Here is how Temporal powers some of the world’s most advanced agentic applications, spanning AI labs, startups, and global enterprises across industries:
+OpenAI, Replit, and Lovable build reliable agents at mass scale
+ADP powers human-in-the-loop agentic processes to improve HR practices
+Healthcare disruptors like Abridge use Temporal to provide Ambient AI to over 200 health care systems
+Media companies like the Washington Post: Power their AI pipeline that powers video scene detection
+Financial Services companies like Block create agentic frameworks that accelerate developer productivity
+“Building for speed or reliability in agentic applications are often at odds with each other, but building with Temporal’s SDKs make it so they don't have to be. Building with Temporal’s programming model dramatically increases our dev’s productivity and the Cloud platform ensures our systems are running reliably at scale. Our devs spend all their time on innovation instead of messy and undifferentiated infrastructure problems." - Matt McDole , CTO, Yum! Brands (Taco Bell, KFC).
+In one instance, customers relying on Temporal’s high-availability architecture continued operating through major cloud outages without data loss or manual intervention. In another, Temporal handled sudden traffic spikes exceeding 150,000 actions per second with no advance notice—enabling agentic systems to continue operating uninterrupted.
+Temporal’s growing ecosystem of partnerships and framework integrations—including OpenAI, Pydantic, and Vercel—makes it easy for teams to move from experimentation to production without re-architecting their systems. Important R&D initiatives such as Large Payload Storage, Task Queue Priority and Fairness, Execution History Branching, Durable Application Communication (A.K.A Temporal Nexus) and Serverless Execution further reduce the operational burden of running AI at scale and meaningfully enhance developer productivity for all classes of developer—from vibe coders to backend distributed systems engineers.
+With the new funding, Temporal will continue investing in open source, expanding its cloud platform, and enabling companies everywhere to move agentic AI out of the lab and into the real world.
+
+## full_text
+
+Press Release
+02/17/2026
+Temporal Raises $300M Series D to Make Agentic AI Real for Companies
+SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify.
+As companies race to adopt agentic AI, most efforts stall at the pilot stage. Temporal is changing that. By providing a durable execution layer for long-running, stateful AI systems, Temporal enables companies across every sector to turn agentic AI from a promising idea into a production reality by addressing the gap between experimentation and adoption.
+" Durable Execution is a core requirement for modern AI systems, and Temporal offers a compelling platform to help build it in from the start. As AI systems become more complex and long-running, durability is as important as performance. Temporal plays a role in how we think about reliable execution at scale, supporting teams in focusing on product development, " says Venkat Venkataramani , VP App Infrastructure, OpenAI .
+Over the past year, demand for Temporal’s open-source platform and cloud service has surged as companies move beyond AI prototypes toward mission-critical deployments. Temporal reported >380% year-over-year revenue growth, a 350% increase in weekly active usage, and a 500% increase in installations, now exceeding 20 million installs per month and 9.1 trillion lifetime action executions on their Cloud product alone, 1.86 trillion for AI-native companies.
+“A gentic AI doesn’t fail because the models aren’t good enough ,” said Samar Abbas , CEO and co-founder of Temporal. “ It fails because the systems around them can’t handle real-world execution. And rather than create new problems, agentic AI tends to expose old ones such as managing state and failures. We’ve been solving these same problems for years. Temporal exists to make agentic AI work in production as well as any other class of application, reliably, predictably, and at scale.”
+Temporal customers use the platform to:
+Run agents that execute for days or weeks without losing state, because they safely recover from failures
+Control GPU, LLM, and other infrastructure costs as AI workloads scale
+Increase product delivery velocity and quality by simplifying developer experiences and infrastructure management
+Improve observability in agentic loops by tracing steps and failures at every step in the workflow
+Here is how Temporal powers some of the world’s most advanced agentic applications, spanning AI labs, startups, and global enterprises across industries:
+OpenAI, Replit, and Lovable build reliable agents at mass scale
+ADP powers human-in-the-loop agentic processes to improve HR practices
+Healthcare disruptors like Abridge use Temporal to provide Ambient AI to over 200 health care systems
+Media companies like the Washington Post: Power their AI pipeline that powers video scene detection
+Financial Services companies like Block create agentic frameworks that accelerate developer productivity
+“Building for speed or reliability in agentic applications are often at odds with each other, but building with Temporal’s SDKs make it so they don't have to be. Building with Temporal’s programming model dramatically increases our dev’s productivity and the Cloud platform ensures our systems are running reliably at scale. Our devs spend all their time on innovation instead of messy and undifferentiated infrastructure problems." - Matt McDole , CTO, Yum! Brands (Taco Bell, KFC).
+In one instance, customers relying on Temporal’s high-availability architecture continued operating through major cloud outages without data loss or manual intervention. In another, Temporal handled sudden traffic spikes exceeding 150,000 actions per second with no advance notice—enabling agentic systems to continue operating uninterrupted.
+Temporal’s growing ecosystem of partnerships and framework integrations—including OpenAI, Pydantic, and Vercel—makes it easy for teams to move from experimentation to production without re-architecting their systems. Important R&D initiatives such as Large Payload Storage, Task Queue Priority and Fairness, Execution History Branching, Durable Application Communication (A.K.A Temporal Nexus) and Serverless Execution further reduce the operational burden of running AI at scale and meaningfully enhance developer productivity for all classes of developer—from vibe coders to backend distributed systems engineers.
+With the new funding, Temporal will continue investing in open source, expanding its cloud platform, and enabling companies everywhere to move agentic AI out of the lab and into the real world.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4905,"paragraph_count":21,"sentence_count":23,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Temporal raises Series D funding | Temporal # Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, a
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Press Release 02/17/2026 Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify.
+
+4. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   As companies race to adopt agentic AI, most efforts stall at the pilot stage.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Temporal is changing that.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   By providing a durable execution layer for long-running, stateful AI systems, Temporal enables companies across every sector to turn agentic AI from a promising idea into a production reality by addressing the gap between experimentation and adoption.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI
+- products: agents, Agent
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: $300M, 17, 2026, $300 million, $5 billion, 16, 380%, 350%
+- quotes: A gentic AI doesn’t fail because the models aren’t good enough ,
+
+## evidence_seed
+
+- company_actions: Temporal raises Series D funding | Temporal # Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, a / Press Release 02/17/2026 Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. / The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify.
+- case_details: As companies race to adopt agentic AI, most efforts stall at the pilot stage.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Temporal raises Series D funding | Temporal # Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February 17, 2026 — Temporal, the open-source platform powering the world’s most reliable agentic applications, today announced a $300 million Series D financing at a $5 billion valuation. The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures, with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify. providing a durable running, state Over the past year, demand for Temporal’s open-source platform and cloud service has surged as companies move beyond AI prototypes toward mission-critical deployments. Temporal reported >380% year-over-year revenue growth, a 350% increase in weekly active usage, and a 500% increase in installations, now exceeding 20 million installs per month and 9.1 trillion lifetime action executions on their Cloud product alone, 1.86 trillion for AI-native companies. Temporal customers use the platform to: - Replay 2026 - Run agents that execute for days or weeks without losing state, because they safely recover from failures - Control GPU, LLM, and other infrastructure costs as AI workloads scale - Increase product delivery velocity and quality by simplifying developer experiences and infrastructure management - Improve observability in agentic loops by tracing steps and failures at every step in the workflow Here is how Temporal powers some of the world’s most advanced agentic applications, spanning AI labs, startups, and global enterprises across industries: - OpenAI, Replit, and Lovable build reliable agents at mass scale - ADP powers human-in-the-loop agentic processes to improve HR practices - Healthcare disruptors like Abridge use Temporal to provide Ambient AI to over 200 health care systems - Media companies like the Washington Post: Power their AI pipeline that powers video scene detection - Financial Services companies like Block create agentic frameworks that accelerate developer productivity “Building for speed or reliability in agentic applications are often at odds with each other, but building with Temporal’s SDKs make it so they don't have to be. Building with Temporal’s programming model dramatically increases our dev’s productivity and the Cloud platform ensures our systems are running reliably at scale. Our devs spend all their time on innovation instead of messy and undifferentiated infrastructure problems." - Matt McDole, CTO, Yum! Brands(Taco Bell, KFC). In one instance, customers relying on Temporal’s high-availability architecture continued operating through major cloud outages without data loss or manual intervention. In another, Temporal handled sudden traffic spikes exceeding 150,000 actions per second with no advance notice—enabling agentic systems to continue operating uninterrupted. Temporal’s growing ecosystem of partnerships and framework integrations—including OpenAI, Pydantic, and Vercel—makes it easy for teams to move from experimentation to production without re-architecting their systems. Important R&D initiatives such as Large Payload Storage, Task Queue Priority and Fairness, Execution History Branching, Durable Application Communication (A.K.A Temporal Nexus) and Serverless Execution further reduce the operational burden of running AI at scale and meaningfully enhance developer productivity for all classes of developer—from vibe coders to backend distributed systems engineers. With the new funding, Temporal will continue investing in open source, expanding its cloud platform, and enabling companies everywhere to move agentic AI out of the lab and into the real world. / score=70.167 / query=AI Agent funding enterprise customers / intent=find_startups / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

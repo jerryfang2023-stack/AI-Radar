@@ -1,0 +1,253 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-001",
+  "title": "huggingface/inference-playground",
+  "original_url": "https://github.com/huggingface/inference-playground",
+  "canonical_url": "https://github.com/huggingface/inference-playground",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-05-22T05:10:29.148Z",
+  "language": "mixed",
+  "full_text": "huggingface\ninference-playground\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n49\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n657 Commits\n657 Commits\n.github/ workflows\n.github/ workflows\ne2e\ne2e\neslint-rules\neslint-rules\nscripts\nscripts\nsrc\nsrc\nstatic\nstatic\n.env.example\n.env.example\n.gitignore\n.gitignore\n.npmrc\n.npmrc\n.prettierignore\n.prettierignore\n.prettierrc.mjs\n.prettierrc.mjs\nAGENTS.md\nAGENTS.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\neslint.config.mts\neslint.config.mts\nopencode.json\nopencode.json\npackage.json\npackage.json\nplan.md\nplan.md\nplaywright.config.ts\nplaywright.config.ts\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.js\npostcss.config.js\nsvelte.config.js\nsvelte.config.js\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest-setup-client.ts\nvitest-setup-client.ts\nView all files\nRepository files navigation\ntitle\nInference Playground\nemoji\n🔋\ncolorFrom\nblue\ncolorTo\npink\nsdk\ndocker\npinned\nfalse\napp_port\n3000\nThis application provides a user interface to interact with various large language models, leveraging the @huggingface/inference library. It allows you to easily test and compare models hosted on Hugging Face, connect to different third-party Inference Providers, and even configure your own custom OpenAI-compatible endpoints.\nLocal Setup\nTL;DR: After cloning, run pnpm i && pnpm run dev --open\nPrerequisites\nBefore you begin, ensure you have the following installed:\nNode.js: Version 20 or later is recommended.\npnpm: Install it globally via npm install -g pnpm .\nHugging Face Account & Token: You'll need a free Hugging Face account and an access token to interact with models. Generate a token with at least read permissions from hf.co/settings/tokens .\nFollow these steps to get the Inference Playground running on your local machine:\nClone the Repository:\ngit clone https://github.com/huggingface/inference-playground.git\ncd inference-playground\nInstall Dependencies:\npnpm install\nStart the Development Server:\npnpm run dev\nAccess the Playground:\nOpen your web browser and navigate to http://localhost:5173 (or the port indicated in your terminal).\nFeatures\nModel Interaction: Chat with a wide range of models available through Hugging Face Inference.\nProvider Support: Connect to various third-party inference providers (like Together, Fireworks, Replicate, etc.).\nCustom Endpoints: Add and use your own OpenAI-compatible API endpoints.\nComparison View: Run prompts against two different models or configurations side-by-side.\nConfiguration: Adjust generation parameters like temperature, max tokens, and top-p.\nSession Management: Save and load your conversation setups using Projects and Checkpoints.\nCode Snippets: Generate code snippets for various languages to replicate your inference calls.\nOrganization Billing: Specify an organization to bill usage to for Team and Enterprise accounts.\nOrganization Billing\nFor Team and Enterprise Hugging Face Hub organizations, you can centralize billing for all users by specifying an organization to bill usage to. This feature allows:\nCentralized Billing: All inference requests can be billed to your organization instead of individual user accounts\nUsage Tracking: Track inference usage across your organization from the organization's billing page\nSpending Controls: Organization administrators can set spending limits and manage provider access\nHow to Use Organization Billing\nIn the UI: Navigate to the settings panel and enter your organization name in the \"Billing Organization\" field\nIn Code Snippets: Generated code examples will automatically include the billing organization parameter\nAPI Integration: The playground will include the X-HF-Bill-To header in API requests when an organization is specified\nRequirements\nYou must be a member of a Team or Enterprise Hugging Face Hub organization\nThe organization must have billing enabled\nYou need appropriate permissions to bill usage to the organization\nFor more information about organization billing, see the Hugging Face documentation .\nWe hope you find the Inference Playground useful for exploring and experimenting with language models!\nAbout\nhf.co/playground\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n49\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nSvelte\n56.2%\nTypeScript\n40.9%\nJavaScript\n1.4%\nCSS\n0.9%\nHTML\n0.3%\nShell\n0.2%\nDockerfile\n0.1%",
+  "clean_text": "huggingface\ninference-playground\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n49\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n657 Commits\n657 Commits\n.github/ workflows\n.github/ workflows\ne2e\ne2e\neslint-rules\neslint-rules\nscripts\nscripts\nsrc\nsrc\nstatic\nstatic\n.env.example\n.env.example\n.gitignore\n.gitignore\n.npmrc\n.npmrc\n.prettierignore\n.prettierignore\n.prettierrc.mjs\n.prettierrc.mjs\nAGENTS.md\nAGENTS.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\neslint.config.mts\neslint.config.mts\nopencode.json\nopencode.json\npackage.json\npackage.json\nplan.md\nplan.md\nplaywright.config.ts\nplaywright.config.ts\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.js\npostcss.config.js\nsvelte.config.js\nsvelte.config.js\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest-setup-client.ts\nvitest-setup-client.ts\nView all files\nRepository files navigation\ntitle\nInference Playground\nemoji\n🔋\ncolorFrom\nblue\ncolorTo\npink\nsdk\ndocker\npinned\nfalse\napp_port\n3000\nThis application provides a user interface to interact with various large language models, leveraging the @huggingface/inference library. It allows you to easily test and compare models hosted on Hugging Face, connect to different third-party Inference Providers, and even configure your own custom OpenAI-compatible endpoints.\nLocal Setup\nTL;DR: After cloning, run pnpm i && pnpm run dev --open\nPrerequisites\nBefore you begin, ensure you have the following installed:\nNode.js: Version 20 or later is recommended.\npnpm: Install it globally via npm install -g pnpm .\nHugging Face Account & Token: You'll need a free Hugging Face account and an access token to interact with models. Generate a token with at least read permissions from hf.co/settings/tokens .\nFollow these steps to get the Inference Playground running on your local machine:\nClone the Repository:\ngit clone https://github.com/huggingface/inference-playground.git\ncd inference-playground\nInstall Dependencies:\npnpm install\nStart the Development Server:\npnpm run dev\nAccess the Playground:\nOpen your web browser and navigate to http://localhost:5173 (or the port indicated in your terminal).\nFeatures\nModel Interaction: Chat with a wide range of models available through Hugging Face Inference.\nProvider Support: Connect to various third-party inference providers (like Together, Fireworks, Replicate, etc.).\nCustom Endpoints: Add and use your own OpenAI-compatible API endpoints.\nComparison View: Run prompts against two different models or configurations side-by-side.\nConfiguration: Adjust generation parameters like temperature, max tokens, and top-p.\nSession Management: Save and load your conversation setups using Projects and Checkpoints.\nCode Snippets: Generate code snippets for various languages to replicate your inference calls.\nOrganization Billing: Specify an organization to bill usage to for Team and Enterprise accounts.\nOrganization Billing\nFor Team and Enterprise Hugging Face Hub organizations, you can centralize billing for all users by specifying an organization to bill usage to. This feature allows:\nCentralized Billing: All inference requests can be billed to your organization instead of individual user accounts\nUsage Tracking: Track inference usage across your organization from the organization's billing page\nSpending Controls: Organization administrators can set spending limits and manage provider access\nHow to Use Organization Billing\nIn the UI: Navigate to the settings panel and enter your organization name in the \"Billing Organization\" field\nIn Code Snippets: Generated code examples will automatically include the billing organization parameter\nAPI Integration: The playground will include the X-HF-Bill-To header in API requests when an organization is specified\nRequirements\nYou must be a member of a Team or Enterprise Hugging Face Hub organization\nThe organization must have billing enabled\nYou need appropriate permissions to bill usage to the organization\nFor more information about organization billing, see the Hugging Face documentation .\nWe hope you find the Inference Playground useful for exploring and experimenting with language models!\nAbout\nhf.co/playground\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n49\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nSvelte\n56.2%\nTypeScript\n40.9%\nJavaScript\n1.4%\nCSS\n0.9%\nHTML\n0.3%\nShell\n0.2%\nDockerfile\n0.1%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-22/r-001-huggingface-inference-playground.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-22/r-001-huggingface-inference-playground.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 4956,
+    "paragraph_count": 51,
+    "sentence_count": 30,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.001,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 4956,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7a3ce25b4ab9c20c",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "8d99a894782dfbfe",
+  "content_hash": "7a3ce25b4ab9c20c",
+  "full_text_hash": "7a3ce25b4ab9c20c",
+  "semantic_hash": "a9c1bbd5c846439c",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-22T05:10:29.148Z",
+  "last_seen_at": "2026-05-22T05:10:29.148Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "--- / score=73.417 / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "huggingface inference-playground Public Notifications You must be signed in to change notification settings Fork Star 49 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 657 Commits 657 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows e2e e2e eslint-rules eslint-rules scripts scripts src src static static .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md CODE_OF_CONDUCT.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "GitHub"
+    ],
+    "products": [
+      "AGENTS"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "73.417",
+      "49\nm",
+      "657",
+      "2",
+      "3000",
+      "20",
+      "5173",
+      "49"
+    ],
+    "quotes": [
+      "Billing Organization"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "--- / score=73.417 / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=developer_ecosystem",
+      "huggingface inference-playground Public Notifications You must be signed in to change notification settings Fork Star 49 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 657 Commits 657 Commits .",
+      "md CODE_OF_CONDUCT."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "github/ workflows .",
+      "github/ workflows e2e e2e eslint-rules eslint-rules scripts scripts src src static static ."
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# huggingface/inference-playground\n\n- raw_id: R-001\n- original_url: https://github.com/huggingface/inference-playground\n- source_name: keyword search / Anysearch\n- collected_at: 2026-05-22T05:10:29.148Z\n\n## clean_text\n\nhuggingface\ninference-playground\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n49\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n657 Commits\n657 Commits\n.github/ workflows\n.github/ workflows\ne2e\ne2e\neslint-rules\neslint-rules\nscripts\nscripts\nsrc\nsrc\nstatic\nstatic\n.env.example\n.env.example\n.gitignore\n.gitignore\n.npmrc\n.npmrc\n.prettierignore\n.prettierignore\n.prettierrc.mjs\n.prettierrc.mjs\nAGENTS.md\nAGENTS.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\neslint.config.mts\neslint.config.mts\nopencode.json\nopencode.json\npackage.json\npackage.json\nplan.md\nplan.md\nplaywright.config.ts\nplaywright.config.ts\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.js\npostcss.config.js\nsvelte.config.js\nsvelte.config.js\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest-setup-client.ts\nvitest-setup-client.ts\nView all files\nRepository files navigation\ntitle\nInference Playground\nemoji\n🔋\ncolorFrom\nblue\ncolorTo\npink\nsdk\ndocker\npinned\nfalse\napp_port\n3000\nThis application provides a user interface to interact with various large language models, leveraging the @huggingface/inference library. It allows you to easily test and compare models hosted on Hugging Face, connect to different third-party Inference Providers, and even configure your own custom OpenAI-compatible endpoints.\nLocal Setup\nTL;DR: After cloning, run pnpm i && pnpm run dev --open\nPrerequisites\nBefore you begin, ensure you have the following installed:\nNode.js: Version 20 or later is recommended.\npnpm: Install it globally via npm install -g pnpm .\nHugging Face Account & Token: You'll need a free Hugging Face account and an access token to interact with models. Generate a token with at least read permissions from hf.co/settings/tokens .\nFollow these steps to get the Inference Playground running on your local machine:\nClone the Repository:\ngit clone https://github.com/huggingface/inference-playground.git\ncd inference-playground\nInstall Dependencies:\npnpm install\nStart the Development Server:\npnpm run dev\nAccess the Playground:\nOpen your web browser and navigate to http://localhost:5173 (or the port indicated in your terminal).\nFeatures\nModel Interaction: Chat with a wide range of models available through Hugging Face Inference.\nProvider Support: Connect to various third-party inference providers (like Together, Fireworks, Replicate, etc.).\nCustom Endpoints: Add and use your own OpenAI-compatible API endpoints.\nComparison View: Run prompts against two different models or configurations side-by-side.\nConfiguration: Adjust generation parameters like temperature, max tokens, and top-p.\nSession Management: Save and load your conversation setups using Projects and Checkpoints.\nCode Snippets: Generate code snippets for various languages to replicate your inference calls.\nOrganization Billing: Specify an organization to bill usage to for Team and Enterprise accounts.\nOrganization Billing\nFor Team and Enterprise Hugging Face Hub organizations, you can centralize billing for all users by specifying an organization to bill usage to. This feature allows:\nCentralized Billing: All inference requests can be billed to your organization instead of individual user accounts\nUsage Tracking: Track inference usage across your organization from the organization's billing page\nSpending Controls: Organization administrators can set spending limits and manage provider access\nHow to Use Organization Billing\nIn the UI: Navigate to the settings panel and enter your organization name in the \"Billing Organization\" field\nIn Code Snippets: Generated code examples will automatically include the billing organization parameter\nAPI Integration: The playground will include the X-HF-Bill-To header in API requests when an organization is specified\nRequirements\nYou must be a member of a Team or Enterprise Hugging Face Hub organization\nThe organization must have billing enabled\nYou need appropriate permissions to bill usage to the organization\nFor more information about organization billing, see the Hugging Face documentation .\nWe hope you find the Inference Playground useful for exploring and experimenting with language models!\nAbout\nhf.co/playground\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n49\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nSvelte\n56.2%\nTypeScript\n40.9%\nJavaScript\n1.4%\nCSS\n0.9%\nHTML\n0.3%\nShell\n0.2%\nDockerfile\n0.1%\n\n## full_text\n\nhuggingface\ninference-playground\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n49\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n657 Commits\n657 Commits\n.github/ workflows\n.github/ workflows\ne2e\ne2e\neslint-rules\neslint-rules\nscripts\nscripts\nsrc\nsrc\nstatic\nstatic\n.env.example\n.env.example\n.gitignore\n.gitignore\n.npmrc\n.npmrc\n.prettierignore\n.prettierignore\n.prettierrc.mjs\n.prettierrc.mjs\nAGENTS.md\nAGENTS.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\neslint.config.mts\neslint.config.mts\nopencode.json\nopencode.json\npackage.json\npackage.json\nplan.md\nplan.md\nplaywright.config.ts\nplaywright.config.ts\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.js\npostcss.config.js\nsvelte.config.js\nsvelte.config.js\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest-setup-client.ts\nvitest-setup-client.ts\nView all files\nRepository files navigation\ntitle\nInference Playground\nemoji\n🔋\ncolorFrom\nblue\ncolorTo\npink\nsdk\ndocker\npinned\nfalse\napp_port\n3000\nThis application provides a user interface to interact with various large language models, leveraging the @huggingface/inference library. It allows you to easily test and compare models hosted on Hugging Face, connect to different third-party Inference Providers, and even configure your own custom OpenAI-compatible endpoints.\nLocal Setup\nTL;DR: After cloning, run pnpm i && pnpm run dev --open\nPrerequisites\nBefore you begin, ensure you have the following installed:\nNode.js: Version 20 or later is recommended.\npnpm: Install it globally via npm install -g pnpm .\nHugging Face Account & Token: You'll need a free Hugging Face account and an access token to interact with models. Generate a token with at least read permissions from hf.co/settings/tokens .\nFollow these steps to get the Inference Playground running on your local machine:\nClone the Repository:\ngit clone https://github.com/huggingface/inference-playground.git\ncd inference-playground\nInstall Dependencies:\npnpm install\nStart the Development Server:\npnpm run dev\nAccess the Playground:\nOpen your web browser and navigate to http://localhost:5173 (or the port indicated in your terminal).\nFeatures\nModel Interaction: Chat with a wide range of models available through Hugging Face Inference.\nProvider Support: Connect to various third-party inference providers (like Together, Fireworks, Replicate, etc.).\nCustom Endpoints: Add and use your own OpenAI-compatible API endpoints.\nComparison View: Run prompts against two different models or configurations side-by-side.\nConfiguration: Adjust generation parameters like temperature, max tokens, and top-p.\nSession Management: Save and load your conversation setups using Projects and Checkpoints.\nCode Snippets: Generate code snippets for various languages to replicate your inference calls.\nOrganization Billing: Specify an organization to bill usage to for Team and Enterprise accounts.\nOrganization Billing\nFor Team and Enterprise Hugging Face Hub organizations, you can centralize billing for all users by specifying an organization to bill usage to. This feature allows:\nCentralized Billing: All inference requests can be billed to your organization instead of individual user accounts\nUsage Tracking: Track inference usage across your organization from the organization's billing page\nSpending Controls: Organization administrators can set spending limits and manage provider access\nHow to Use Organization Billing\nIn the UI: Navigate to the settings panel and enter your organization name in the \"Billing Organization\" field\nIn Code Snippets: Generated code examples will automatically include the billing organization parameter\nAPI Integration: The playground will include the X-HF-Bill-To header in API requests when an organization is specified\nRequirements\nYou must be a member of a Team or Enterprise Hugging Face Hub organization\nThe organization must have billing enabled\nYou need appropriate permissions to bill usage to the organization\nFor more information about organization billing, see the Hugging Face documentation .\nWe hope you find the Inference Playground useful for exploring and experimenting with language models!\nAbout\nhf.co/playground\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n49\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nSvelte\n56.2%\nTypeScript\n40.9%\nJavaScript\n1.4%\nCSS\n0.9%\nHTML\n0.3%\nShell\n0.2%\nDockerfile\n0.1%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / high] --- / score=73.417 / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=developer_ecosystem\n2. [company_action / daily_observation, heatmap, change, case, trend / high] huggingface inference-playground Public Notifications You must be signed in to change notification settings Fork Star 49 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 657 Commits 657 Commits .\n3. [workflow_change / daily_observation, heatmap, change, case, trend / high] github/ workflows .\n4. [workflow_change / daily_observation, heatmap, change, case, trend / high] github/ workflows e2e e2e eslint-rules eslint-rules scripts scripts src src static static .\n5. [company_action / daily_observation, heatmap, change, case, trend / high] md CODE_OF_CONDUCT.\n"
+}

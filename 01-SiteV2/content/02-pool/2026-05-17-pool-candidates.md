@@ -3,7 +3,7 @@ date: 2026-05-17
 stage: pool
 status: regenerated-from-existing-raw
 pool_count: 1
-generated_at: 2026-05-18T08:05:32.085Z
+generated_at: 2026-05-19T05:28:07.837Z
 source: existing_raw_files
 ---
 
@@ -11,7 +11,7 @@ source: existing_raw_files
 
 说明：本文件基于 5.17 / 5.18 已保存 Raw 原文与 JSON 证据对象重建。Pool 仍是候选索引，不替代 Raw 全文。
 
-## P-001｜Show HN: Llmswap v3.0 – CLI and SDK for OpenAI, Cla…
+## P-001｜Show HN: Llmswap v3.0 – CLI and SDK for OpenAI, Claude, Gemini, Watsonx
 
 - raw_ref: R-006
 - raw_original_id: 6b3cdfce6f34e811

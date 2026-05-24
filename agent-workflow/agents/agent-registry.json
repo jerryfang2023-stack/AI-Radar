@@ -1,56 +1,66 @@
 {
   "project": "观澜AI｜WaveSight AI",
-  "updatedAt": "2026-05-03",
-  "rule": "长期 agent 以岗位说明书长期存在，临时子线程可关闭，但结论必须沉淀到 workflow。",
+  "updatedAt": "2026-05-21",
+  "projectDefinition": "观澜 AI 是一个由 Agent 驱动的 AI 商业情报系统。它持续监测全球 AI 商业变化，将外部信息转化为结构化情报资产，再生成面向企业老板、资源型合伙人、行业操盘手的商业信号、机会判断、AI 内参和 AI 商业热力图。",
+  "model": "process-driven-light-agents + reusable-skills",
+  "rule": "Agent 按流程节点设置，Skill 按能力模块沉淀；栏目能力优先做 Skill，不新增常驻 Agent；Agent 之间通过结构化 handoff、质量门和自动化任务形成 AI Native 联动。",
+  "execution_harness": {
+    "file": "../../context/06-execution-harness.md",
+    "applies_to": [
+      "daily_monitoring_raw_pool",
+      "raw_pool_card_assets",
+      "page_copy_typography"
+    ],
+    "requirement": "高风险流程派发、执行和 closeout 必须说明使用的 harness、固定读取、质量门和下游放行结论。"
+  },
   "agents": [
     {
-      "id": "strategy-agent",
-      "name": "Strategy Agent",
-      "file": "agents/strategy-agent.md",
+      "id": "product-commander",
+      "name": "Product Commander",
+      "file": "agents/product-commander-agent.md",
+      "process_node": "intake_decision_dispatch",
       "starts_first": true,
-      "primary_outputs": ["战略判断", "边界提醒", "商业化阶段建议"]
+      "primary_outputs": ["产品判断", "任务拆解", "派发单", "验收标准", "看板状态"]
     },
     {
-      "id": "pm-agent",
-      "name": "PM Agent",
-      "file": "agents/pm-agent.md",
-      "primary_outputs": ["PRD", "新增功能门禁记录", "模块决策表", "任务拆解", "路线图", "验收标准"]
-    },
-    {
-      "id": "ui-ue-agent",
-      "name": "UI / UE Design Director",
-      "file": "agents/ui-ue-agent.md",
-      "primary_outputs": ["Art Direction", "DESIGN v2", "页面母版", "视觉资产规则", "截图验收矩阵"]
-    },
-    {
-      "id": "copy-agent",
-      "name": "Copy Agent",
-      "file": "agents/copy-agent.md",
-      "primary_outputs": ["页面文案", "CTA", "禁用语"]
-    },
-    {
-      "id": "data-agent",
-      "name": "Intelligence Data Agent",
+      "id": "intelligence-engine",
+      "name": "Intelligence Engine",
       "file": "agents/data-agent.md",
-      "primary_outputs": ["判断资产模型", "关系网络", "标签字典", "数据智能质量报告"]
+      "process_node": "source_evidence_pool_card",
+      "primary_outputs": ["来源规则", "Raw / Pool 规则", "Card 资产规则", "结构化素材资产", "标签关系", "质量报告"]
     },
     {
-      "id": "dev-agent",
-      "name": "Dev Agent",
-      "file": "agents/dev-agent.md",
-      "primary_outputs": ["代码改动", "验证结果", "风险说明"]
+      "id": "experience-editorial",
+      "name": "Experience & Editorial",
+      "file": "agents/experience-editorial-agent.md",
+      "process_node": "content_ux_expression",
+      "primary_outputs": ["页面结构表", "Typography 表", "Copy-first 文案表", "栏目表达规则", "桌面验收点"]
     },
     {
-      "id": "qa-agent",
-      "name": "QA / Acceptance Agent",
-      "file": "agents/qa-agent.md",
-      "primary_outputs": ["验收报告", "风险等级", "发布建议"]
-    },
-    {
-      "id": "workflow-agent",
-      "name": "Workflow / Automation Agent",
-      "file": "agents/workflow-agent.md",
-      "primary_outputs": ["进度更新", "任务状态", "交接记录"]
+      "id": "build-release",
+      "name": "Build & Release",
+      "file": "agents/build-release-agent.md",
+      "process_node": "build_gate_release",
+      "primary_outputs": ["代码改动", "脚本实现", "质量门结果", "发布状态", "风险说明"]
     }
+  ],
+  "removed_agent_types": [
+    "strategy-agent",
+    "pm-agent",
+    "ui-ue-agent",
+    "copy-agent",
+    "dev-agent",
+    "qa-agent",
+    "workflow-agent",
+    "column-specific-agent"
+  ],
+  "skill_first_modules": [
+    "daily-monitor",
+    "monitor-qc",
+    "copy-style",
+    "copy-qc",
+    "daily-observation",
+    "typography-qc",
+    "future-column-writing"
   ]
 }

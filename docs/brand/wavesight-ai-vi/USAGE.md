@@ -10,9 +10,9 @@ Logo 规范源图：
 docs/brand/wavesight-ai-vi/reference-images/visual-identity-system.png
 ```
 
-说明：用户提供的 VI 源图是当前正式基准。早先 `wavesight_ai_svg_pack.zip` 中的 Logo 文件已判定不作为后续基准，旧 Logo / app icon SVG 已删除并由 `tools/generate-logo-system-svg.mjs` 重新生成。
+说明：用户提供的 VI 源图是当前正式基准。`wavesight_ai_svg_pack.zip` 中的 Logo 文件不作为后续基准；Logo / app icon SVG 由 `tools/generate-logo-system-svg.mjs` 生成。
 
-项目归档目录：
+项目规范目录：
 
 ```text
 docs/brand/wavesight-ai-vi/
@@ -24,7 +24,7 @@ docs/brand/wavesight-ai-vi/
 01-SiteV2/site/assets/brand/
 ```
 
-源图归档目录：
+源图目录：
 
 ```text
 docs/brand/wavesight-ai-vi/reference-images/
@@ -40,6 +40,7 @@ docs/brand/wavesight-ai-vi/executable-svg/
 
 - `brand-tokens.css`：品牌色、圆角、阴影、字体 token 和字号 token。V2 页面 CSS 必须优先引用这些变量。
 - `typography-guidelines.md`：正式字体规范，覆盖中文标题、正文、英文、数字、Logo、栏目、内参详情页、按钮标签和 CSS token。页面、报告和内参排版必须遵守。
+- `page-typography-position-guidelines.md`：页面位置字体规范，覆盖导航栏、首页、栏目页、详情页、侧栏、页脚的字号、字重、行高、位置和验收口径。后续页面任务必须在生成前读取，并先输出 Typography 页面位置表。
 - `motion-tokens.css`：网站动效 token。页面动效、hover、reveal、drift、fade 必须优先引用这些变量。
 - `visual-identity-guidelines.md`：Logo、字体、色彩、辅助图形、图标和应用物料的正式规范。
 - `svg-restoration-guidelines.md`：VI 源图转可执行 SVG 的还原说明、失真处理和验收口径。
@@ -74,7 +75,8 @@ docs/brand/wavesight-ai-vi/executable-svg/
 5. 页面配色必须优先使用 `brand-tokens.css` 中的 `--gl-*` token。
 6. V2 公开页面全局背景使用 `#FFFDF8` / `--gl-bg-page`，与导航栏融合；卡片和内容容器使用半透明暖白纸面或 `--gl-paper`，不要把栏目 / 卡片背景直接铺成导航栏色。
 7. 正式横版 Logo 网页默认宽度不低于 `160px`，报告封面建议不低于 `220px`；小于 `120px` 宽时优先使用 symbol。
-8. 页面字体必须使用 `typography-guidelines.md` 与 `brand-tokens.css` 中的字体 token：中文标题用衬线，正文与界面用黑体，英文标签用 Inter 系，数字数据用 Mono 系。
+8. 页面字体必须使用 `typography-guidelines.md`、`page-typography-position-guidelines.md` 与 `brand-tokens.css` 中的字体 token：中文标题用衬线，正文与界面用黑体，英文标签用 Inter 系，数字数据用 Mono 系。
+9. 页面生成前必须执行 Typography-first：先按 `agent-workflow/governance/typography-first-page-gate.md` 输出 Typography 页面位置表，再进入 Build & Release；不得等页面生成后才检查字体。
 9. 英文品牌名统一为 `WAVESIGHT AI`，不得写成 `WaveSight AI`、`WavesightAI`、`WAVE SIGHT AI` 或 `wavesight ai`。
 10. 页面动效必须优先使用 `motion-tokens.css` 中的 `--gl-motion-*` 和 `--gl-ease-*` token。
 11. 规范源图只能作为对照资料；需要进入页面或组件库的视觉元素，必须拆为 `executable-svg/` 下的单项 SVG。
@@ -90,6 +92,8 @@ docs/brand/wavesight-ai-vi/executable-svg/
 - 使用了哪些 SVG 资产。
 - 是否引用或映射 `brand-tokens.css`。
 - 是否遵守 `typography-guidelines.md`，包括中文标题、中文正文、英文标签和数字字体。
+- 是否遵守 `page-typography-position-guidelines.md`，包括导航、首页、栏目页、详情页、侧栏和页脚的位置级字号 / 字重 / 行高。
+- 是否在 Build 前输出 Typography 页面位置表，并用 `$guanlan-typography-qc` 做 Build 前审查。
 - 是否引用或映射 `motion-tokens.css`。
 - 截图中 Logo、色彩、符号系统、页面节奏是否符合 VI。
 

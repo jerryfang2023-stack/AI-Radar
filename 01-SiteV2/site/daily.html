@@ -1,107 +1,44 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>今日观察｜观澜AI</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css?v=20260524-1328">
 </head>
 <body class="page-daily">
   <header class="site-header" data-header></header>
-  <main class="daily-newsletter" data-daily-brief>
-    <section class="daily-newsletter-issue" id="issue">
-      <div class="daily-newsletter-issue-main">
-        <span class="daily-newsletter-memo">DAILY BRIEF</span>
-        <h1><span data-daily-date>2026.05.10</span></h1>
+  <main class="daily-newsletter daily-article-home" data-daily-brief>
+    <section class="daily-article-datebar" aria-label="日期筛选与标签归类">
+      <nav class="daily-article-date-actions" aria-label="按年月日筛选" data-daily-date-nav></nav>
+      <div class="daily-article-tags" aria-label="标签归类">
+        <span class="daily-article-tags-label">标签归类</span>
+        <div class="daily-newsletter-filter-row" data-daily-keyword-filters></div>
+        <div class="daily-newsletter-keyword-grid" data-daily-keywords></div>
       </div>
-      <nav class="daily-newsletter-date-nav" aria-label="日期切换" data-daily-date-nav>
-        <a href="#previous">上一日</a>
-        <a href="daily.html">今日</a>
-        <a href="#next">下一日</a>
-      </nav>
-      <div class="daily-newsletter-issue-side" data-daily-issue-status></div>
     </section>
 
-    <div class="daily-newsletter-layout">
-      <aside class="daily-newsletter-side" aria-label="页面辅助导航">
-        <nav class="daily-newsletter-anchor" aria-label="页面目录">
-          <a href="#issue">日期</a>
-          <a href="#judgment">今日判断</a>
-          <a href="#signal-brief">今日信号简报</a>
-          <a href="#builder-views">前沿观点</a>
-          <a href="#index">延申阅读</a>
-          <a href="#trend-report-watch">趋势判断</a>
-        </nav>
-        <section class="daily-newsletter-side-tags" aria-label="关键词小标签栏">
-          <span class="daily-newsletter-memo">KEYWORDS</span>
-          <div class="daily-newsletter-filter-row" data-daily-keyword-filters></div>
-          <div class="daily-newsletter-keyword-grid" data-daily-keywords></div>
-        </section>
-      </aside>
+    <section class="daily-issue-band" aria-label="当前日期内容统计" data-daily-issue-band></section>
 
-      <div class="daily-newsletter-main">
-        <section class="daily-newsletter-judgment" id="judgment">
-          <article class="daily-newsletter-judgment-copy">
-            <span class="daily-newsletter-memo">TODAY JUDGMENT</span>
-            <div class="daily-newsletter-rule"></div>
-            <h2><a class="daily-newsletter-title-link" data-daily-title-link href="daily-detail.html"><span data-daily-title>企业会先为可控的 Agent 付费</span></a></h2>
-            <div class="daily-newsletter-copy" data-daily-judgment></div>
-          </article>
-          <aside class="daily-newsletter-summary">
-            <div data-daily-summary></div>
-            <div class="daily-newsletter-spark" data-daily-mini-chart aria-hidden="true"></div>
-            <div class="daily-newsletter-calibration" data-daily-calibration></div>
-          </aside>
-        </section>
-
-        <section class="daily-newsletter-section daily-newsletter-signals" id="signal-brief">
-          <div class="daily-newsletter-section-head">
-            <div>
-              <span class="daily-newsletter-memo">SIGNAL BRIEF</span>
-              <h2>商业信号</h2>
-            </div>
-          </div>
-          <div class="daily-newsletter-signal-grid" data-daily-primary-signals></div>
-          <div class="daily-newsletter-fact-strip" data-daily-compressed-facts></div>
-        </section>
-
-        <div class="daily-newsletter-two-column-row">
-          <section class="daily-newsletter-section daily-newsletter-builder-views" id="builder-views">
-            <div class="daily-newsletter-section-head compact">
-              <div>
-                <span class="daily-newsletter-memo">FRONTIER VIEWS</span>
-                <h2>前沿观点</h2>
-              </div>
-            </div>
-            <div class="daily-newsletter-builder-list" data-daily-builder-views></div>
-          </section>
-
-          <section class="daily-newsletter-section daily-newsletter-index" id="index">
-            <div class="daily-newsletter-section-head compact">
-              <div>
-                <span class="daily-newsletter-memo">INDEX</span>
-                <h2>延申阅读</h2>
-              </div>
-            </div>
-            <div class="daily-newsletter-related-list" data-daily-related></div>
-          </section>
+    <section class="daily-article-hero" id="article">
+      <article class="daily-article-lead" data-daily-article-card>
+        <div class="daily-article-main">
+          <span class="daily-newsletter-memo">ARTICLE / <span data-daily-date>2026.05.22</span></span>
+          <h1><a data-daily-title-link href="daily-detail.html"><span data-daily-title>今日观察文章</span></a></h1>
+          <div class="daily-article-deck" data-daily-article-deck></div>
+          <div class="daily-article-original" data-daily-article-original></div>
+          <a class="daily-article-read-link" data-daily-read-link href="daily-detail.html">阅读原文</a>
         </div>
+        <aside class="daily-article-rail" aria-label="今日素材">
+          <div class="daily-article-assets" data-daily-article-assets></div>
+        </aside>
+      </article>
+    </section>
 
-        <section class="daily-newsletter-section daily-newsletter-trend-report-watch" id="trend-report-watch">
-          <div class="daily-newsletter-section-head compact">
-            <div>
-              <span class="daily-newsletter-memo">TREND JUDGMENT</span>
-              <h2>趋势判断</h2>
-            </div>
-          </div>
-          <div class="daily-newsletter-trend-report-list" data-daily-trend-reports></div>
-          <div class="daily-newsletter-watchline" data-daily-watch></div>
-        </section>
-      </div>
-    </div>
+    <section class="daily-day-stack" id="archive" data-daily-day-modules></section>
   </main>
   <footer data-footer></footer>
-  <script src="data/site-content.js"></script>
-  <script src="assets/app.js"></script>
+  <script src="data/site-content.js?v=20260524-1258"></script>
+  <script src="assets/app.js?v=20260524-1318"></script>
 </body>
 </html>

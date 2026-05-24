@@ -1,0 +1,254 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-020",
+  "title": "tonkotsu-ai/handle",
+  "original_url": "https://github.com/tonkotsu-ai/handle",
+  "canonical_url": "https://github.com/tonkotsu-ai/handle",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-05-23T04:13:32.811Z",
+  "language": "mixed",
+  "full_text": "tonkotsu-ai\nhandle\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n34\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n178 Commits\n178 Commits\n.github\n.github\next\next\nmcp\nmcp\nshared\nshared\n.gitignore\n.gitignore\nAGENTS.md\nAGENTS.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nPULL_REQUEST_TEMPLATE.md\nPULL_REQUEST_TEMPLATE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nHandle\nhandle-ext.mp4\nRefine UI Directly in Your Browser Instead of Describing it With Prompts\nHandle bridges the gap between visual design and AI coding agents. Built for frontend devs, design engineers, and UX designers. Instead of endlessly reprompting your agent for UI tweaks, just point directly at elements in the browser and edit — and your agent receives structured, actionable feedback it can act on immediately.\nHow It Works\nCreate UI with your coding agent, then type /handle\nRefine directly inside Chrome using the extension\nYour coding agent lands your changes into code\nNo more \"on the landing page, in the testimonials unit, in the bottom right corner, make the button a bit more to the right\" — just point and do it.\nGetting Started\nFor users\n1. Install the MCP server\nRun the setup command to auto-configure your coding agent:\nnpx handle-ext@latest init\nSupported agents: Claude Code , Codex , Cursor , GitHub Copilot , Windsurf , Gemini CLI , Rovo Dev , Antigravity\nRestart your agent after setup to activate Handle.\n2. Install the Chrome extension\nDownload the Handle extension from the Chrome Web Store and pin it to your toolbar.\n3. Use it\nTrigger Handle in your coding agent using the command for your agent:\nAgent\nCommand\nClaude Code\n/handle\nCursor\n/handle\nCodex\n$handle\nGemini CLI\n/user.handle or ask handle for design feedback\nAntigravity\nask handle for design feedback\nRovo Dev\n/prompts handle\nChrome will launch. Click on the Handle extension button to open the side panel. Click any element to inspect and annotate it, then send your feedback.\nFor contributors\nThis is a monorepo with three packages:\next/ Chrome extension (WXT + React + Tailwind)\nmcp/ MCP server (Node.js + Socket.IO)\nshared/ Shared components and utilities\nInstall dependencies (from the root):\nnpm install\nRun the extension in dev mode:\ncd ext\nnpm run dev\nThen load ext/.output/chrome-mv3 as an unpacked extension in Chrome ( chrome://extensions → \"Load unpacked\").\nRun the MCP server:\ncd mcp\nnpm run build\nnpm start\nOr wire it up via npx handle-ext setup as described above.\nSee CONTRIBUTING.md for guidelines on submitting changes.\nArchitecture\nHandle has three moving parts:\nChrome extension — content script that captures DOM structure, styles, and React component names; side panel UI for annotating changes\nMCP server — runs on stdio, spawned by your coding agent; exposes the get_design_feedback tool and starts a local Socket.IO server for extension communication\nDiscovery server — a lightweight HTTP server on port 58932 that lets the extension find active MCP sessions\nLicense\nMIT — see LICENSE\nAbout\nRefine UI directly in the browser and feed the changes to your coding agent.\ngethandle.ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n34\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHandle Extension v1.0.1\nLatest\nApr 5, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.9%\nOther\n0.7%",
+  "clean_text": "tonkotsu-ai\nhandle\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n34\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n178 Commits\n178 Commits\n.github\n.github\next\next\nmcp\nmcp\nshared\nshared\n.gitignore\n.gitignore\nAGENTS.md\nAGENTS.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nPULL_REQUEST_TEMPLATE.md\nPULL_REQUEST_TEMPLATE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nHandle\nhandle-ext.mp4\nRefine UI Directly in Your Browser Instead of Describing it With Prompts\nHandle bridges the gap between visual design and AI coding agents. Built for frontend devs, design engineers, and UX designers. Instead of endlessly reprompting your agent for UI tweaks, just point directly at elements in the browser and edit — and your agent receives structured, actionable feedback it can act on immediately.\nHow It Works\nCreate UI with your coding agent, then type /handle\nRefine directly inside Chrome using the extension\nYour coding agent lands your changes into code\nNo more \"on the landing page, in the testimonials unit, in the bottom right corner, make the button a bit more to the right\" — just point and do it.\nGetting Started\nFor users\n1. Install the MCP server\nRun the setup command to auto-configure your coding agent:\nnpx handle-ext@latest init\nSupported agents: Claude Code , Codex , Cursor , GitHub Copilot , Windsurf , Gemini CLI , Rovo Dev , Antigravity\nRestart your agent after setup to activate Handle.\n2. Install the Chrome extension\nDownload the Handle extension from the Chrome Web Store and pin it to your toolbar.\n3. Use it\nTrigger Handle in your coding agent using the command for your agent:\nAgent\nCommand\nClaude Code\n/handle\nCursor\n/handle\nCodex\n$handle\nGemini CLI\n/user.handle or ask handle for design feedback\nAntigravity\nask handle for design feedback\nRovo Dev\n/prompts handle\nChrome will launch. Click on the Handle extension button to open the side panel. Click any element to inspect and annotate it, then send your feedback.\nFor contributors\nThis is a monorepo with three packages:\next/ Chrome extension (WXT + React + Tailwind)\nmcp/ MCP server (Node.js + Socket.IO)\nshared/ Shared components and utilities\nInstall dependencies (from the root):\nnpm install\nRun the extension in dev mode:\ncd ext\nnpm run dev\nThen load ext/.output/chrome-mv3 as an unpacked extension in Chrome ( chrome://extensions → \"Load unpacked\").\nRun the MCP server:\ncd mcp\nnpm run build\nnpm start\nOr wire it up via npx handle-ext setup as described above.\nSee CONTRIBUTING.md for guidelines on submitting changes.\nArchitecture\nHandle has three moving parts:\nChrome extension — content script that captures DOM structure, styles, and React component names; side panel UI for annotating changes\nMCP server — runs on stdio, spawned by your coding agent; exposes the get_design_feedback tool and starts a local Socket.IO server for extension communication\nDiscovery server — a lightweight HTTP server on port 58932 that lets the extension find active MCP sessions\nLicense\nMIT — see LICENSE\nAbout\nRefine UI directly in the browser and feed the changes to your coding agent.\ngethandle.ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n34\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHandle Extension v1.0.1\nLatest\nApr 5, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.9%\nOther\n0.7%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-23/r-020-tonkotsu-ai-handle.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-23/r-020-tonkotsu-ai-handle.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 89,
+  "extractor_diagnostics": {
+    "readability_score": 89,
+    "text_length": 3907,
+    "paragraph_count": 40,
+    "sentence_count": 22,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0026,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3907,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8aadfad570c08714",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ab5b9a2f32993838",
+  "content_hash": "8aadfad570c08714",
+  "full_text_hash": "8aadfad570c08714",
+  "semantic_hash": "e8fb946d576f7185",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-23T04:13:32.811Z",
+  "last_seen_at": "2026-05-23T04:13:32.811Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Repository: tonkotsu-ai/handle Refine UI directly in the browser and feed the changes to your coding agent. - Stars: 34 - Forks: 3 - Watchers: 0 - Open issues: 4 - Primary language: TypeScript - Languages: TypeScript (97.3%), JavaScript (1.9%), CSS (0.6%), HTML (0.1%) - License: MIT License (MIT) - Default branch: main - Homepage: https://gethandle.ai - Created: 2026-03-10T18:24:36Z - Last push: 2026-05-21T11:16:24Z - Contributors: 2 (top: derekcheng08, songsterq) - Releases: 2 - Latest release: ext-1.0.1 (2026-04-",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "tonkotsu-ai handle Public Notifications You must be signed in to change notification settings Fork Star 34 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 178 Commits 178 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github ext ext mcp mcp shared shared .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md CODE_OF_CONDUCT.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md LICENSE LICENSE PULL_REQUEST_TEMPLATE.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "Claude",
+      "Codex",
+      "Cursor",
+      "Copilot",
+      "Gemini",
+      "Agent",
+      "mcp",
+      "MCP"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "34",
+      "3",
+      "0",
+      "4",
+      "97.3%",
+      "1.9%",
+      "0.6%",
+      "0.1%"
+    ],
+    "quotes": [
+      "on the landing page, in the testimonials unit, in the bottom right corner, make the button a bit more to the right",
+      "Load unpacked"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "tonkotsu-ai handle Public Notifications You must be signed in to change notification settings Fork Star 34 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 178 Commits 178 Commits .",
+      "github ext ext mcp mcp shared shared .",
+      "md CODE_OF_CONDUCT."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_funding",
+    "importance_score": 5,
+    "importance_reason": "funding or investment event; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# tonkotsu-ai/handle\n\n- raw_id: R-020\n- original_url: https://github.com/tonkotsu-ai/handle\n- source_name: keyword search / Anysearch\n- collected_at: 2026-05-23T04:13:32.811Z\n\n## clean_text\n\ntonkotsu-ai\nhandle\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n34\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n178 Commits\n178 Commits\n.github\n.github\next\next\nmcp\nmcp\nshared\nshared\n.gitignore\n.gitignore\nAGENTS.md\nAGENTS.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nPULL_REQUEST_TEMPLATE.md\nPULL_REQUEST_TEMPLATE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nHandle\nhandle-ext.mp4\nRefine UI Directly in Your Browser Instead of Describing it With Prompts\nHandle bridges the gap between visual design and AI coding agents. Built for frontend devs, design engineers, and UX designers. Instead of endlessly reprompting your agent for UI tweaks, just point directly at elements in the browser and edit — and your agent receives structured, actionable feedback it can act on immediately.\nHow It Works\nCreate UI with your coding agent, then type /handle\nRefine directly inside Chrome using the extension\nYour coding agent lands your changes into code\nNo more \"on the landing page, in the testimonials unit, in the bottom right corner, make the button a bit more to the right\" — just point and do it.\nGetting Started\nFor users\n1. Install the MCP server\nRun the setup command to auto-configure your coding agent:\nnpx handle-ext@latest init\nSupported agents: Claude Code , Codex , Cursor , GitHub Copilot , Windsurf , Gemini CLI , Rovo Dev , Antigravity\nRestart your agent after setup to activate Handle.\n2. Install the Chrome extension\nDownload the Handle extension from the Chrome Web Store and pin it to your toolbar.\n3. Use it\nTrigger Handle in your coding agent using the command for your agent:\nAgent\nCommand\nClaude Code\n/handle\nCursor\n/handle\nCodex\n$handle\nGemini CLI\n/user.handle or ask handle for design feedback\nAntigravity\nask handle for design feedback\nRovo Dev\n/prompts handle\nChrome will launch. Click on the Handle extension button to open the side panel. Click any element to inspect and annotate it, then send your feedback.\nFor contributors\nThis is a monorepo with three packages:\next/ Chrome extension (WXT + React + Tailwind)\nmcp/ MCP server (Node.js + Socket.IO)\nshared/ Shared components and utilities\nInstall dependencies (from the root):\nnpm install\nRun the extension in dev mode:\ncd ext\nnpm run dev\nThen load ext/.output/chrome-mv3 as an unpacked extension in Chrome ( chrome://extensions → \"Load unpacked\").\nRun the MCP server:\ncd mcp\nnpm run build\nnpm start\nOr wire it up via npx handle-ext setup as described above.\nSee CONTRIBUTING.md for guidelines on submitting changes.\nArchitecture\nHandle has three moving parts:\nChrome extension — content script that captures DOM structure, styles, and React component names; side panel UI for annotating changes\nMCP server — runs on stdio, spawned by your coding agent; exposes the get_design_feedback tool and starts a local Socket.IO server for extension communication\nDiscovery server — a lightweight HTTP server on port 58932 that lets the extension find active MCP sessions\nLicense\nMIT — see LICENSE\nAbout\nRefine UI directly in the browser and feed the changes to your coding agent.\ngethandle.ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n34\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHandle Extension v1.0.1\nLatest\nApr 5, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.9%\nOther\n0.7%\n\n## full_text\n\ntonkotsu-ai\nhandle\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n34\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n178 Commits\n178 Commits\n.github\n.github\next\next\nmcp\nmcp\nshared\nshared\n.gitignore\n.gitignore\nAGENTS.md\nAGENTS.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nPULL_REQUEST_TEMPLATE.md\nPULL_REQUEST_TEMPLATE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nHandle\nhandle-ext.mp4\nRefine UI Directly in Your Browser Instead of Describing it With Prompts\nHandle bridges the gap between visual design and AI coding agents. Built for frontend devs, design engineers, and UX designers. Instead of endlessly reprompting your agent for UI tweaks, just point directly at elements in the browser and edit — and your agent receives structured, actionable feedback it can act on immediately.\nHow It Works\nCreate UI with your coding agent, then type /handle\nRefine directly inside Chrome using the extension\nYour coding agent lands your changes into code\nNo more \"on the landing page, in the testimonials unit, in the bottom right corner, make the button a bit more to the right\" — just point and do it.\nGetting Started\nFor users\n1. Install the MCP server\nRun the setup command to auto-configure your coding agent:\nnpx handle-ext@latest init\nSupported agents: Claude Code , Codex , Cursor , GitHub Copilot , Windsurf , Gemini CLI , Rovo Dev , Antigravity\nRestart your agent after setup to activate Handle.\n2. Install the Chrome extension\nDownload the Handle extension from the Chrome Web Store and pin it to your toolbar.\n3. Use it\nTrigger Handle in your coding agent using the command for your agent:\nAgent\nCommand\nClaude Code\n/handle\nCursor\n/handle\nCodex\n$handle\nGemini CLI\n/user.handle or ask handle for design feedback\nAntigravity\nask handle for design feedback\nRovo Dev\n/prompts handle\nChrome will launch. Click on the Handle extension button to open the side panel. Click any element to inspect and annotate it, then send your feedback.\nFor contributors\nThis is a monorepo with three packages:\next/ Chrome extension (WXT + React + Tailwind)\nmcp/ MCP server (Node.js + Socket.IO)\nshared/ Shared components and utilities\nInstall dependencies (from the root):\nnpm install\nRun the extension in dev mode:\ncd ext\nnpm run dev\nThen load ext/.output/chrome-mv3 as an unpacked extension in Chrome ( chrome://extensions → \"Load unpacked\").\nRun the MCP server:\ncd mcp\nnpm run build\nnpm start\nOr wire it up via npx handle-ext setup as described above.\nSee CONTRIBUTING.md for guidelines on submitting changes.\nArchitecture\nHandle has three moving parts:\nChrome extension — content script that captures DOM structure, styles, and React component names; side panel UI for annotating changes\nMCP server — runs on stdio, spawned by your coding agent; exposes the get_design_feedback tool and starts a local Socket.IO server for extension communication\nDiscovery server — a lightweight HTTP server on port 58932 that lets the extension find active MCP sessions\nLicense\nMIT — see LICENSE\nAbout\nRefine UI directly in the browser and feed the changes to your coding agent.\ngethandle.ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n34\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHandle Extension v1.0.1\nLatest\nApr 5, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.9%\nOther\n0.7%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 89\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Repository: tonkotsu-ai/handle Refine UI directly in the browser and feed the changes to your coding agent. - Stars: 34 - Forks: 3 - Watchers: 0 - Open issues: 4 - Primary language: TypeScript - Languages: TypeScript (97.3%), JavaScript (1.9%), CSS (0.6%), HTML (0.1%) - License: MIT License (MIT) - Default branch: main - Homepage: https://gethandle.ai - Created: 2026-03-10T18:24:36Z - Last push: 2026-05-21T11:16:24Z - Contributors: 2 (top: derekcheng08, songsterq) - Releases: 2 - Latest release: ext-1.0.1 (2026-04-\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] tonkotsu-ai handle Public Notifications You must be signed in to change notification settings Fork Star 34 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 178 Commits 178 Commits .\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] github ext ext mcp mcp shared shared .\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] md CODE_OF_CONDUCT.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] md LICENSE LICENSE PULL_REQUEST_TEMPLATE.\n"
+}

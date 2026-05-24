@@ -1,349 +1,222 @@
 ---
 title: Daily Monitoring Playbook
-date: 2026-05-18
-status: active
-owner: workflow-agent / intelligence-data-agent
+date: 2026-05-22
+status: active-v2.1
+owner: intelligence-engine / build-release
 skill: guanlan-daily-monitor
 ---
 
-# Daily Monitoring Playbook｜每日监测任务规则
+# Daily Monitoring Playbook
 
-每日监测是独立任务，不是 Raw schema、Pool 分流、卡片生成或今日观察写作的附属步骤。
+每日监测只产出 Raw、Pool、监测日志和 QC 输入，不写文章，不生成卡片，不同步网站。
 
-它只回答四件事：
+## 1. 默认入口
 
-- 今天 AI 商业世界出现了哪些可追踪变化。
-- 哪些材料有原文证据，哪些只是线索。
-- 哪些 Raw 值得进入 Pool，哪些只保留索引、观察或丢弃。
-- 哪些证据缺口会影响后续内容资产和文章生产。
-
-每日监测不写今日观察，不生成完整卡片，不写趋势报告，不做深度竞品研究。
-
-## 1. 执行入口
-
-执行技能：
+执行顺序：
 
 ```text
-skills/guanlan-daily-monitor/SKILL.md
+AI HOT daily selected
+→ AI HOT recent 24h mode=all
+→ follow-builders
+→ keyword multi-path search
+→ 必要时外部补采
 ```
 
-当前自动化：
+## 2. 精选入口权重
 
-```text
-guanlan-daily-monitor
-```
+AI HOT daily 是每日精选：
 
-默认时间：
+- 必须全量进入 Raw 候选和 Pool index。
+- 可以获得更高采集优先级。
+- 不自动进入 `core_pool`。
+- 进入事实资产前必须看原文、快照、证据对象和页面类型。
 
-```text
-09:00 Asia/Shanghai
-```
+follow-builders 是精选 Builder 入口：
 
-## 2. 必读顺序
+- 必须全量扫描。
+- 可以获得更高采集优先级。
+- 默认先进入 `opinion_intake`，并在入库时写入中文翻译。
+- 只能证明“谁在何时何处说了什么”。
+- 涉及公司动作、客户、收入、融资、采购、监管或市场规模时，必须按原文来源重新判定。
+- 每日监测不决定观点卡前台位置；前台展示必须由资产链补齐四档评级后决定。
 
-每日监测执行前必须读取：
+精选权重不等于 `S/A/B/C/D/M` 加分。
 
-1. `AGENTS.md`
-2. `agent-workflow/governance/current-context.md`
-3. `skills/guanlan-daily-monitor/SKILL.md`
-4. `agent-workflow/product/daily-monitoring-playbook.md`
-5. `agent-workflow/product/source-intelligence.md`
-6. `agent-workflow/product/raw-evidence-schema.md`
-7. `agent-workflow/product/pool-routing-rules.md`
-8. `01-SiteV2/content/README.md`
-9. `01-SiteV2/content/09-databases/keyword-monitoring-v2.json`
-10. `01-SiteV2/content/09-databases/source-registry-v2.json`
+## 3. 来源类型
 
-其中：
+`S/A/B/C/D/M` 只区分来源类型，不是价值评级。
 
-- 本 Playbook 定义每日怎么监测。
-- `source-intelligence.md` 定义来源等级、采集通道、关键词和来源治理。
-- `raw-evidence-schema.md` 定义 Raw 必填字段和证据门槛。
-- `pool-routing-rules.md` 定义 Pool 分流细则。
-- `keyword-monitoring-v2.json` 是关键词和主题覆盖的可执行版本。
-- `source-registry-v2.json` 是来源池和降权规则的可执行版本。
-
-## 3. 默认三段式入口
-
-每日默认按三段式执行：
-
-```text
-AI HOT 全量
-→ follow-builders 全量
-→ 关键词规则补齐
-→ 不足或重要卡片缺证时启动外部多路搜索
-```
-
-### AI HOT
-
-- 拉取最近 24 小时 `mode=all` 全量。
-- AI HOT 是 Raw 主发现入口，不是事实主证据。
-- 先按类目、P0/P1 关键词、商业动作和噪音规则筛选。
-- `industry`、`ai-products`、`ai-models` 可默认进入候选。
-- `paper` 必须命中技术迭代、商业动作、开发者生态或明确应用场景。
-- `tip` 必须命中关键词、P0/P1 赛道词或商业动作。
-- 进入重要卡片、今日观察、趋势报告或商业内参前，必须回到 `origin_url` / `original_url` 抓全文并重新判定 S/A/B/C/D。
-
-### follow-builders
-
-- 每日全量扫描。
-- 全量写入 `01-SiteV2/knowledge/03-Opinion-Cards/` 前沿观点库或对应候选目录。
-- 它用于观点、人物时间线、实践线索、分歧、转向和早期变化。
-- Builder 观点不能直接证明公司动作、客户采用、收入、融资或市场规模。
-- 观点卡的核心证据是“谁在何时何处说了什么”，必须保存人物 / title / 原文链接 / 原文摘录或当时可见文本 / 发布时间 / 抓取时间 / 观察边界或 `capture_scope`。
-
-### 关键词补齐
-
-关键词规则负责补齐：
-
-- P0 赛道锚点。
-- P1 证据词。
-- 成熟信号、早期信号、技术迭代信号、开发者生态信号。
-- 外围探索层，避免内容被大厂和固定赛道锁死。
-
-关键词搜索必须多路检索，不得只依赖 HN / Reddit / X。
-
-## 4. 何时启动外部搜索
-
-只有出现以下情况，才启动外部多路搜索：
-
-- AI HOT + follow-builders 不足 Raw 目标。
-- 四类信号覆盖明显不足。
-- P0 / P1 关键词覆盖缺口明显。
-- 重要卡片缺 S/A/B 原始来源。
-- 社区讨论升温，但没有官方、生态、融资、行业、采购或 A 级媒体证据。
-- 需要反大厂偏置，补中小创业公司、开源项目、垂直 SaaS、marketplace、客户故事或招投标线索。
-
-外部搜索只补缺口和补证，不得把搜索结果页本身当事实主证据。
-
-## 5. Raw 目标
-
-常规日：
-
-```text
-Raw 80-150 条
-```
-
-低信号日或关键接口失败日：
-
-```text
-Raw 50-80 条
-```
-
-如果低于 50 条，必须在 source-router log 写明：
-
-- 哪些来源失败。
-- 尝试过哪些 fallback。
-- 哪些信号类别缺口最大。
-- 后续是否需要手工补抓或延后今日观察。
-
-## 6. Raw 保存要求
-
-每条 Raw 必须尽量保存：
-
-- `raw_id`
-- `title`
-- `original_url`
-- `canonical_url`
-- `source_name`
-- `source_type`
-- `source_level`
-- `acquisition_source_level`
-- `author`
-- `published_at`
-- `collected_at`
-- `language`
-- `full_text`
-- `clean_text`
-- `markdown_snapshot`
-- `html_snapshot_path`
-- `screenshot_path`
-- `fetch_status`
-- `extraction_quality`
-- `has_full_text`
-- `content_length`
-- `fetch_error`
-- `url_hash`
-- `content_hash`
-- `full_text_hash`
-- `semantic_hash`
-- `duplicate_of`
-- `first_seen_at`
-- `last_seen_at`
-- `update_detected`
-- `key_excerpts`
-- `business_elements`
-- `evidence_seed`
-- `guanlan_scores`
-- `emerging_signal_score`
-- `usable_for`
-- `pool_routes`
-- `missing_information`
-- `raw_status`
-
-`full_text` 是证据底座。`clean_text` 是分析入口。后续卡片和文章不能只看 Pool 摘要。
-
-## 7. 高波动与聚合来源
-
-X、HN、Reddit、Discord、Telegram、Product Hunt 评论、GitHub issue 等来源不得按来源类型默认降级为 `summary_only` 或 `failed`。
-
-抓到正文、讨论串、评论或当时可见文本时，必须保存：
-
-- 当时可见文本。
-- 抓取时间。
-- 原始 URL。
-- 作者 / 社区 / 发布时间。
-- 可见范围。
-- 必要截图或快照。
-
-并标记：
-
-- `source_volatility`
-- `capture_scope`
-- `evidence_level`
-
-AI HOT 等聚合来源只保存 discovery record。必须优先回源。原始页面抓取失败时，才允许保存聚合源可见文本作为 fallback，且只能作为 `discovery_only` / `weak_signal`。
-
-## 8. Pool 目标
-
-常规 Pool：
-
-```text
-20-40 条
-```
-
-Pool 是候选索引，不是事实正文。每条 Pool 必须能回到 Raw：
-
-- `raw_ref`
-- `raw_archive`
-- `raw_json`
-- `source_url`
-- `full_text_hash`
-- `key_excerpts`
-- `business_elements`
-- `evidence_seed`
-- `missing_information`
-
-Pool 分流只允许：
-
-- `core_pool`
-- `emerging_pool`
-- `user_feedback_pool`
-- `watchlist`
-- `index_only`
-- `discard`
-
-不得为了凑数量把 `index_only`、`watchlist`、C 级社区材料或 M 级发现通道硬升为 `core_pool`。
-
-## 9. core_pool 门槛
-
-进入 `core_pool` 必须同时满足：
-
-```text
-has_full_text = true
-extraction_quality = high | medium
-source_level = S | A | B
-有明确商业变化
-commercial_value >= 3
-guanlan_relevance >= 3
-```
-
-`core_pool` 可作为变化卡、案例卡、趋势报告、今日观察和商业内参的事实候选，但进入前台前仍要检查 `missing_information`，必要时补证。
-
-## 10. 早期与社区线索
-
-`emerging_pool` 可接纳 B/C 级早期线索，但需要：
-
-```text
-emerging_signal_score >= 4
-```
-
-`user_feedback_pool` 接纳：
-
-- 讨论升温。
-- 开发者阻力。
-- 客户痛点。
-- 用户反馈。
-- 反证观察。
-
-它们不得单独证明公司动作、客户采用、收入、融资或市场规模。
-
-只找到社区讨论时，不得生成正式 Pool、变化卡、案例卡、趋势报告或今日观察。若满足观点证据门槛，可以进入前沿观点候选。
-
-## 11. 多样性硬要求
-
-每日监测必须覆盖四类信号：
-
-- 成熟信号：大企业、大融资、并购、平台发布、客户采用、收入、定价、生态发布。
-- 早期信号：pre-seed、seed、angel、grant、YC、accelerator、stealth、spinout。
-- 技术迭代信号：成本、能力、部署、协议、工具链、运行时、沙箱、评测。
-- 开发者生态信号：开源、SDK、框架、插件市场、GitHub 采用、云市场上架、开发者分发。
-
-常规目标：
-
-- Raw 每类信号不少于 8 条候选。
-- Pool 每类信号不少于 3 条候选。
-- Raw 单一主题默认不得超过 35%。
-- Pool 单一主题默认不得超过 40%。
-
-不足时写入 `evidence_gaps`，不能用大企业新闻硬补齐。
-
-## 12. 输出
-
-每日监测输出：
-
-```text
-01-SiteV2/content/01-raw/
-01-SiteV2/content/01-raw/originals/
-01-SiteV2/content/02-pool/
-01-SiteV2/content/04-business-signals/
-01-SiteV2/knowledge/03-Opinion-Cards/
-agent-workflow/reports/<YYYY-MM-DD>-v2-daily-source-router-log.md
-```
-
-## 13. 日志必填
-
-source-router log 必须包含：
+- S：海外一手事件源。
+- A：高质量报道或研究。
+- B：垂直行业、融资、生态、创业公司来源。
+- C：社区、观点、反馈、讨论。
+- D：噪音、SEO、无事件页面。
+- M：采集入口。
+
+内容价值只看六类重要性：重要案例、重要融资事件、重要技术趋势、重要产品和服务产生、重要垂直行业解决方案、影响行业的重要发言 / 观点 / 文章。
+
+## 4. S 类边界
+
+S 只看海外一手事件源。
+
+可用 S：
+
+- 官方公告、新闻、release note、changelog。
+- 客户案例、合作公告、上线公告。
+- 监管文件、采购公告、证券披露。
+- 官方仓库 release / changelog / security advisory。
+- 可核验的创始人、高管或项目方原帖。
+
+不可用 S：
+
+- 官网首页。
+- 产品页、Demo 页、产品目录。
+- 文档首页、API / SDK 目录。
+- 价格导航页。
+- GitHub README / repo index。
+- Hugging Face / npm / PyPI 包页或模型页。
+- 控制台、登录页、搜索结果页。
+- 百度、阿里云、腾讯云、华为云、火山引擎等国内官网和 SEO 页面。
+
+这些页面如无明确时间、主体、可核验事实或完整观点正文，只能 `index_only`。
+
+## 5. B 类边界
+
+B 类有原文即可采信，不要求强制回到 S/A 补证。
+
+B 类仍必须有具体变化：
+
+- 融资。
+- 产品发布。
+- 客户或试点。
+- 部署或集成。
+- 开源采用。
+- Marketplace 分发。
+- 垂直行业落地。
+- 预算、采购或岗位流程变化。
+
+只有项目页、包页、模型页、公司介绍或榜单时，不能当作事实变化。
+
+## 6. 关键词检索
+
+关键词检索必须补足：
+
+- 海外大厂事件。
+- 垂直赛道产品新闻。
+- 创业公司融资。
+- 客户采用和行业落地。
+- 开发生态发布。
+- 采购、监管和反证信号。
+
+HN / Reddit / X 只作为社区反馈补充，不得成为关键词结果的主体。
+
+搜索路径只代表采集意图，不代表证据等级。命中页面仍按页面类型、原文和证据对象判定。
+
+## 7. Raw 数量
+
+Raw 是区间目标，不是固定 100。
+
+- 正常日：80-150。
+- 低信号或来源失败日：50-80，并写明原因。
+- 低于 50：下游默认暂停，除非 QC 明确允许降级使用。
+
+每日监测应该保留足够多的有效候选，不要为了稳定输出而把数量截死在 100。
+
+## 8. 重要性覆盖
+
+每日必须覆盖六类 `importance_type`：
+
+- `important_case`
+- `important_funding`
+- `important_technical_trend`
+- `important_product_or_service`
+- `important_vertical_solution`
+- `important_viewpoint_or_article`
+
+缺口必须写入 `importance_coverage_gaps`，不能用首页、SEO、工具导航、社区热帖、入口摘要或低信息页面补数。
+
+## 9. Pool 原则
+
+Source Layer Governance includes Raw-to-Pool routing governance. Raw-to-Pool 属于本流程；Pool-to-Content 属于下一个流程。
+
+Pool 是候选索引，不是事实正文。
+
+`core_pool` 至少需要：
+
+- 有原始 URL。
+- 有全文。
+- 抽取质量为 high / medium。
+- 证据对象不是 index-only 类型。
+- 有 content hash 和 full text hash。
+- 有关键摘录。
+- `raw_qc_decision=allow`。
+- `importance_score >= 4`。
+- `importance_type` 属于六类核心重要性。
+
+B 类材料可直接入候选，只要原文证据足够；不需要强制 S/A 补证。
+
+`importance_score` 不是黑箱排序。1-2 分只能归档、索引或 supporting context；3 分是潜在线索但不能核心化；4 分是明确重要变化；5 分是平台级、头部客户、知名机构、前沿能力或行业判断框架变化。
+
+非核心路由：
+
+- `watchlist`：有明确主体、方向或早期信号，但缺全文、快照、hash、关键摘录或二搜确认，只能追踪和补采。
+- `index_only`：首页、目录、产品页、包页、模型页、搜索结果、SEO 页或精选入口摘要，只保留索引和回溯，不作为事实证据。
+- `discard`：无 URL、无可用快照、明显噪音或 `raw_qc_decision=block`，保存排除记录但不进入下游。
+- AI HOT daily selected 全量保留进 Pool index，但没有 `raw_qc_decision=allow` 和核心证据门槛时不得进入 `core_pool`。
+- `allow_with_degradation` 只能进入非核心路由；资产链、今日观察、商业信号、趋势追踪和商业内参必须等最终 QC 列明可用范围。
+
+降级上限：
+
+- `missing_full_text` / `missing_snapshot`：最高 `watchlist`，入口摘要只能 `index_only`。
+- `missing_hash` / `missing_excerpt`：最高 `watchlist`。
+- `index_only_or_directory_page`：最高 `index_only`。
+- `discovery_or_feedback_source_boundary`：社区材料最高 `user_feedback_pool`，聚合入口最高 `index_only`，除非回源成功。
+- `raw_qc_decision=block`：`discard`；AI HOT daily selected 可保留为 `index_only`，但仍不得下游使用。
+
+日志必须拆分 Pool 指标：`pool_index_count`、`routed_pool_count`、`core_pool_count`、`index_only_pool_count`、`aihot_index_only_count`、`aihot_core_count`。不得只用 `pool_count` 判断 Pool 健康度。
+
+## 10. 监测日志
+
+日志必须写清：
 
 - `source_distribution`
 - `raw_count_by_channel`
 - `raw_count_by_source_type`
-- `aihot_discovered_count`
-- `aihot_rejected_by_raw_entry_rules`
-- `external_search_activated`
-- `keyword_group_distribution`
+- `source_level_distribution`
+- `keyword_search_path_distribution`
+- `keyword_search_non_community_count`
 - `theme_distribution`
 - `theme_concentration_warning`
-- `source_level_distribution`
 - `pool_route_distribution`
-- `raw_snapshot_status_distribution`
+- `pool_index_route_distribution`
+- `pool_index_count`
+- `routed_pool_count`
+- `non_core_pool_count`
+- `index_only_pool_count`
+- `aihot_index_only_count`
+- `aihot_core_count`
+- `importance_coverage_gaps`
+- `pool_importance_coverage_gaps`
 - `failed_sources`
 - `fallback_used`
 - `evidence_gaps`
 
-## 14. 禁止项
+## 11. 禁止项
 
+- 禁止把 `S/A/B/C/D/M` 当价值分。
 - 禁止把 AI HOT 摘要当事实。
-- 禁止把 HN / Reddit / X 讨论当公司事实。
-- 禁止把搜索结果页当事实来源。
-- 禁止只凭 Pool 标签写变化卡、案例卡、今日观察、趋势报告或商业内参。
-- 禁止为凑数量把低证据线索硬升为 `core_pool`。
-- 禁止因大厂新闻多就让全天信号被大厂占满。
-- 禁止每日监测直接写今日观察长文或深度趋势报告。
+- 禁止把 follow-builders 观点当公司事实。
+- 禁止把未评级、缺中文翻译、`archive` 或 `discard` 的观点卡当作前台可展示内容。
+- 禁止让 HN / 社区结果挤占关键词检索主体。
+- 禁止把国内官网首页、SEO 首页、产品陈列页当 S。
+- 禁止用首页、目录、README、包页、模型页、搜索结果页补 Raw / Pool 数量。
+- 禁止把 Raw 固定截成 100。
 
-## 15. 验证
+## Layered Search Provider Runtime Sync
 
-完成后至少运行：
+Runtime provider order after WSD-20260520-05:
 
-```powershell
-node --check agent-workflow/tools/run-v2-daily-pipeline.mjs
-node agent-workflow/tools/run-quality-gates.mjs syntax
-```
+- Semantic keyword discovery: Anysearch -> Tavily -> Exa -> DuckDuckGo -> Bing fallback.
+- A-media / news verification: GDELT -> Anysearch -> Tavily / Exa -> DuckDuckGo / Bing fallback.
 
-如果运行失败，必须写明：
-
-- 失败来源。
-- 失败阶段。
-- fallback 是否启用。
-- Raw / Pool 是否达标。
-- 哪些下游任务应暂停或降级。
+NewsAPI is retired from the current monitoring path and must not be treated as an active provider or environment requirement. Provider availability is detected from local environment variables and project-local ignored env files. Missing providers are skipped automatically. Provider output is discovery only until original evidence is fetched, captured, checked by Raw QC, and routed through the six-lane importance gate.

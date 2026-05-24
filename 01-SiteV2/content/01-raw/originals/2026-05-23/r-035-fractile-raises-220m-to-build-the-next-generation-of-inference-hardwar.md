@@ -1,0 +1,227 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-035
+title: "Fractile raises $220M to build the next generation of inference hardware"
+original_url: "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware"
+canonical_url: "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-05-23T04:13:32.997Z
+language: mixed
+full_text_hash: 49c881bff41c0376
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-035-fractile-raises-220m-to-build-the-next-generation-of-inference-hardwar.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-035-fractile-raises-220m-to-build-the-next-generation-of-inference-hardwar.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6178,"paragraph_count":17,"sentence_count":37,"boilerplate_hits":0,"symbol_ratio":0.0003,"method":"main"}
+has_full_text: true
+content_length: 6178
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"49c881bff41c0376","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 62071134d28f47b9
+content_hash: 49c881bff41c0376
+semantic_hash: fa1344c2ca090911
+duplicate_of: ""
+first_seen_at: "2026-05-23T04:13:32.997Z"
+last_seen_at: 2026-05-23T04:13:32.997Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["$220M","2022","100 million","40","1","200","21","01"],"quotes":[]}
+evidence_seed: {"company_actions":["Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on. Ever since, we have been building chips and systems t","May 2026 • 5 mins read Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs.","We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on. Ever since, we have been building chips and systems t","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"May 2026 • 5 mins read Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Ever since, we have been building chips and systems that tackle this problem.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Since then, raw AI capability has already reached the point where time from query to output is the key limit to frontier capabilities.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"As models have improved, so has their ability to be orchestrated over increasingly long output sequences.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Fractile raises $220M to build the next generation of inference hardware
+
+## clean_text
+
+May 2026 • 5 mins read
+Fractile raises $220M to build the next generation of inference hardware
+Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on. Ever since, we have been building chips and systems that tackle this problem.
+Since then, raw AI capability has already reached the point where time from query to output is the key limit to frontier capabilities. As models have improved, so has their ability to be orchestrated over increasingly long output sequences. The toughest problems demand generating many tens of millions of tokens, and we see continual capability returns to generating longer outputs. At the same time, the unit economics of inference have become a brutal constraint. Inference is both the revenue engine of the AI industry and the rate-limiting factor on expanding it.
+The positive correlation between performance and the amount of compute deployed at inference time has been a longstanding hallmark of frontier AI systems. DeepMind’s AlphaGo achieved superhuman performance through not just running a neural network once to pick one particular next move, but running a tree search over many possible futures, with each future explored by sequential, repeated inference of a neural network. The emergence of reasoning models in 2024 made clear that similar principles applied to LLMs. What we are seeing now, though, with some of the most valuable applications of AI consuming many millions of tokens, is also a reflection of a fundamental property of hard work. Serious intellectual work involves many sequential steps, each dependent on the last.
+For very hard work, these sequential steps can sum to an extraordinary body of intermediate output, yet lead to incredibly valuable outcomes when those outputs are synthesised. After years of work on Fermat’s Last Theorem, Andrew Wiles realised that the approach he was working on that day looked like a dead end, but fit perfectly to resolve an approach he had explored three years earlier. (A film taken shortly afterwards illustrates it perfectly, showing reams of paper filled with working, dead ends and fruitful directions, spilling across his desk.) The ability to operate over long context, exploring different directions in sequence – and the enormous stack of papers Wiles accumulated – is what we are starting to push frontier LLMs towards doing as we throw them at our hardest problems.
+Today’s LLMs are already producing up to 100 million tokens in pursuit of tackling these hard problems. At the ~40 tokens per second or so at which these models tend to run on existing chips, a single output of this length takes a month to complete. The technical and economic limits on inference speed, above all from memory bandwidth that has failed to scale on current architectures, are what is constraining progress. To compress that month into a day, we will need to generate output at ~1,200 tokens per second, while handling the complexity and capacity challenges of operating large models at very long contexts. This is exactly the problem Fractile has been building from the ground up to tackle.
+However, what is most exciting about the hardware moonshot is not accelerating the workloads of today, but rather the entirely new workloads that we will enable. Compressing a month of work into a day, a weekend of lab computation into a coffee break, will make all that work happen radically faster, but it will also make far more ambitious AI use cases economically viable. Agentic coding is only the start of the story. The defining work of the 21st century will be marked by the engine of inference delivering immense and diffuse chains of intellectual inquiry, in drug discovery, in software engineering, in materials discovery, in any field where humanity will benefit from sheer intellectual work to resolve complex problems. As with any technological revolution, those who drive this progress fastest, who push the frontier furthest, will capture the greatest share of the value. The workloads that push to the limits of the current frontier are already transformational. The ones that lie beyond that frontier, that we are about to break open, will stretch our imaginations and redefine the entire economy. Fractile is seeking to increase the clock speed of global progress, one chip at a time.
+Making this possible begins with people. Since founding, we’ve been working across the full stack, from foundational AI research to foundry process innovation to chip micro-architecture, to aggressively chase the most promising solutions and develop systems that break the trade-off curve, reject the inference pareto frontier of cost-versus-latency, and chart a course to changing what we can do with the world’s best AI models.
+Today, we are delighted to share that we have raised $220M to accelerate the path to getting our first chips and systems into customers’ hands, in a financing round led by Accel, Factorial Funds, and Founders Fund, with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC, investing alongside our brilliant existing backers.
+Fractile's journey has only just begun, and the most important work lies ahead. We are hiring across the UK (London, Bristol), the US (San Francisco), and Taiwan (Taipei). If you are looking for the opportunity to join on a singularly ambitious, hard and consequential mission, we want to hear from you.
+Featured articles
+May 2026 • 5 mins read Wall Street Journal
+Chips Startup Fractile Raises $220 Million to Speed Up AI Queries
+Factorial Funds, Accel and Peter Thiel’s Founders Fund invested in the company.
+February 2026 • 2 mins read tech.eu
+UK tech startups urged to take bold risks, by AI minister, as chip startup Fractile invests £100M
+AI minister Kanishka Narayan is calling on more UK tech startups to follow UK chip startup Fractile in investing in the UK.
+
+## full_text
+
+May 2026 • 5 mins read
+Fractile raises $220M to build the next generation of inference hardware
+Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on. Ever since, we have been building chips and systems that tackle this problem.
+Since then, raw AI capability has already reached the point where time from query to output is the key limit to frontier capabilities. As models have improved, so has their ability to be orchestrated over increasingly long output sequences. The toughest problems demand generating many tens of millions of tokens, and we see continual capability returns to generating longer outputs. At the same time, the unit economics of inference have become a brutal constraint. Inference is both the revenue engine of the AI industry and the rate-limiting factor on expanding it.
+The positive correlation between performance and the amount of compute deployed at inference time has been a longstanding hallmark of frontier AI systems. DeepMind’s AlphaGo achieved superhuman performance through not just running a neural network once to pick one particular next move, but running a tree search over many possible futures, with each future explored by sequential, repeated inference of a neural network. The emergence of reasoning models in 2024 made clear that similar principles applied to LLMs. What we are seeing now, though, with some of the most valuable applications of AI consuming many millions of tokens, is also a reflection of a fundamental property of hard work. Serious intellectual work involves many sequential steps, each dependent on the last.
+For very hard work, these sequential steps can sum to an extraordinary body of intermediate output, yet lead to incredibly valuable outcomes when those outputs are synthesised. After years of work on Fermat’s Last Theorem, Andrew Wiles realised that the approach he was working on that day looked like a dead end, but fit perfectly to resolve an approach he had explored three years earlier. (A film taken shortly afterwards illustrates it perfectly, showing reams of paper filled with working, dead ends and fruitful directions, spilling across his desk.) The ability to operate over long context, exploring different directions in sequence – and the enormous stack of papers Wiles accumulated – is what we are starting to push frontier LLMs towards doing as we throw them at our hardest problems.
+Today’s LLMs are already producing up to 100 million tokens in pursuit of tackling these hard problems. At the ~40 tokens per second or so at which these models tend to run on existing chips, a single output of this length takes a month to complete. The technical and economic limits on inference speed, above all from memory bandwidth that has failed to scale on current architectures, are what is constraining progress. To compress that month into a day, we will need to generate output at ~1,200 tokens per second, while handling the complexity and capacity challenges of operating large models at very long contexts. This is exactly the problem Fractile has been building from the ground up to tackle.
+However, what is most exciting about the hardware moonshot is not accelerating the workloads of today, but rather the entirely new workloads that we will enable. Compressing a month of work into a day, a weekend of lab computation into a coffee break, will make all that work happen radically faster, but it will also make far more ambitious AI use cases economically viable. Agentic coding is only the start of the story. The defining work of the 21st century will be marked by the engine of inference delivering immense and diffuse chains of intellectual inquiry, in drug discovery, in software engineering, in materials discovery, in any field where humanity will benefit from sheer intellectual work to resolve complex problems. As with any technological revolution, those who drive this progress fastest, who push the frontier furthest, will capture the greatest share of the value. The workloads that push to the limits of the current frontier are already transformational. The ones that lie beyond that frontier, that we are about to break open, will stretch our imaginations and redefine the entire economy. Fractile is seeking to increase the clock speed of global progress, one chip at a time.
+Making this possible begins with people. Since founding, we’ve been working across the full stack, from foundational AI research to foundry process innovation to chip micro-architecture, to aggressively chase the most promising solutions and develop systems that break the trade-off curve, reject the inference pareto frontier of cost-versus-latency, and chart a course to changing what we can do with the world’s best AI models.
+Today, we are delighted to share that we have raised $220M to accelerate the path to getting our first chips and systems into customers’ hands, in a financing round led by Accel, Factorial Funds, and Founders Fund, with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC, investing alongside our brilliant existing backers.
+Fractile's journey has only just begun, and the most important work lies ahead. We are hiring across the UK (London, Bristol), the US (San Francisco), and Taiwan (Taipei). If you are looking for the opportunity to join on a singularly ambitious, hard and consequential mission, we want to hear from you.
+Featured articles
+May 2026 • 5 mins read Wall Street Journal
+Chips Startup Fractile Raises $220 Million to Speed Up AI Queries
+Factorial Funds, Accel and Peter Thiel’s Founders Fund invested in the company.
+February 2026 • 2 mins read tech.eu
+UK tech startups urged to take bold risks, by AI minister, as chip startup Fractile invests £100M
+AI minister Kanishka Narayan is calling on more UK tech startups to follow UK chip startup Fractile in investing in the UK.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6178,"paragraph_count":17,"sentence_count":37,"boilerplate_hits":0,"symbol_ratio":0.0003,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on. Ever since, we have been building chips and systems t
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   May 2026 • 5 mins read Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Ever since, we have been building chips and systems that tackle this problem.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Since then, raw AI capability has already reached the point where time from query to output is the key limit to frontier capabilities.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   As models have improved, so has their ability to be orchestrated over increasingly long output sequences.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: $220M, 2022, 100 million, 40, 1, 200, 21, 01
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on. Ever since, we have been building chips and systems t / May 2026 • 5 mins read Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. / We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Fractile raises $220M to build the next generation of inference hardware Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs. We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on. Ever since, we have been building chips and systems that tackle this problem. Since then, raw AI capability has already reached the point where time from query to output is the key limit to frontier capabilities. As models have improved, so has their ability to be orchestrated over increasingly long output sequences. The toughest problems demand generating many tens of millions of tokens, and we see continual capability returns to generating longer outputs. At the same time, the unit economics of inference have become a brutal constraint. Inference is both the revenue engine of the AI industry and the rate-limiting factor on expanding it. Today’s LLMs are already producing up to 100 million tokens in pursuit of tackling these hard problems. At the ~40 tokens per second or so at which these models tend to run on existing chips, a single output of this length takes a month to complete. The technical and economic limits on inference speed, above all from memory bandwidth that has failed to scale on current architectures, are what is constraining progress. To compress that month into a day, we will need to generate output at ~1,200 tokens per second, while handling the complexity and capacity challenges of operating large models at very long contexts. This is exactly the problem Fractile has been building from the ground up to tackle. exciting about the hardware moonshot is not accelerating the workloads of today, but rather the entirely new workloads that we will enable. Compressing a month of work into a weekend of lab computation into coffee break, will make all that work happen radically faster, but it will also make far more ambitious AI use cases economically viable. Agentic coding is only the start of the story. The work of the 21st century will be marked by the engine of inference delivering immense and diffuse chains of intellectual inquiry, in drug discovery, in software engineering, in materials discovery, in work to resolve complex problems. As with any technological revolution, those who drive this progress fastest, who push the frontier , will capture the of the value. The workloads that push to the limits of the current frontier are already ational. The ones that lie beyond that frontier, that we are about to break open, will our imaginations and , one chip at a Making this possible begins with people. Since founding, we’ve been working across the full stack, from foundational AI research to foundry process innovation to chip micro-architecture, to aggressively chase the most promising solutions and develop systems that break the trade-off curve, reject the inference pareto frontier of cost-versus-latency, and chart a course to changing what we can do with the world’s best AI models. Today, we are delighted to share that we have raised $220M to accelerate the path to getting our first chips and systems into customers’ hands, in a financing round led by Accel, Factorial Funds, and Founders Fund, with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC, investing alongside our brilliant existing backers. ### Chips Startup Fractile Raises $220 Million to Speed Up AI Queries May 2026 • 5 mins readWall Street JournalFactorial Funds, Accel and Peter Thiel’s Founders Fund invested in the company. ### UK tech startups urged to take bold risks, by AI minister, as chip startup Fractile invests £100M / score=70.167 / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

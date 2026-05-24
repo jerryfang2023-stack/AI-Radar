@@ -6,16 +6,20 @@
 
 写一期商业内参周期刊物，对一个周期内的观察、案例、趋势和前沿观点进行融合、修正和升级。
 
+前沿观点只引用已完成中文翻译和四档评级的观点卡。`feature` / `sidebar` 可作为公开或内参参照，`archive` 仅作内部校准，`discard` 不得引用；观点里的事实主张仍需另有事实证据。
+
 ## 必读
 
 - `AGENTS.md`
-- `agent-workflow/governance/current-context.md`
-- `agent-workflow/reports/wavesight-strategy-reframe-2026-05-12.md`
-- `agent-workflow/automation-prompts/writer-style-guide.md`
-- `agent-workflow/product/raw-evidence-schema.md`
+- `context/01-product-map.md`
+- `context/03-copy-style.md`
 - `01-SiteV2/content/README.md`
 - `01-SiteV2/knowledge/README.md`
 - `01-SiteV2/knowledge/10-Templates/publication-index-template.md`
+
+按需补读：
+
+- `agent-workflow/product/evidence-and-routing-rules.md`
 
 ## 节奏
 
@@ -27,10 +31,10 @@
 ## 输入
 
 - 周期内今日观察。
-- 变化卡。
-- 案例卡。
+- 商业信号。
+- 成熟变化短专题。
 - 趋势报告。
-- 趋势卡。
+- 趋势报告 / 趋势候选。
 - 前沿观点。
 - 二创反馈。
 - 用户问题和反馈。
@@ -52,9 +56,9 @@
 
 ## 输出
 
-- `01-SiteV2/content/07-business-briefs/`
-- `01-SiteV2/content/08-publication-index/`
-- `01-SiteV2/knowledge/09-Publication-Index/`
+- `01-SiteV2/content/09-business-briefs/`
+- `01-SiteV2/content/10-publication-index/`
+- `01-SiteV2/knowledge/04-Publication-Index/`
 - 内容选题池
 
 完成后运行：

@@ -2,6 +2,14 @@
 
 本文件是观澜 AI V2 的正式字体规范。官网、商业内参、报告、PPT、海报、页面组件、站点 CSS、Logo 说明和后续设计任务必须以本文件为准。
 
+页面位置级字号、字重、行高、导航位置、首页 / 栏目页 / 详情页 / 侧栏 / 页脚的具体排版规则，见：
+
+```text
+docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md
+```
+
+后续页面任务必须同时读取本文件和页面位置字体规范。通用字体角色以本文件为准；具体页面位置以 `page-typography-position-guidelines.md` 为准。
+
 字体系统服务于品牌定位：
 
 ```text

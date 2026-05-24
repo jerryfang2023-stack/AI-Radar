@@ -161,7 +161,7 @@ docs/brand/wavesight-ai-vi/brand-footer-motto-line.svg
 01-SiteV2/site/assets/brand/
 ```
 
-如需更新 Logo，必须修改生成脚本后重新运行脚本，保证项目归档目录和站点引用目录同步。页面不得根据截图临时重画 Logo。
+如需更新 Logo，必须修改生成脚本后重新运行脚本，保证项目规范目录和站点引用目录同步。页面不得根据截图临时重画 Logo。
 
 ### 可执行 SVG 组件
 

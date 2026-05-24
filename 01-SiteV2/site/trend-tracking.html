@@ -1,44 +1,66 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>趋势追踪｜观澜AI</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css?v=20260524-1328">
 </head>
 <body class="page-trend-tracking">
   <header class="site-header" data-header></header>
-  <main class="main-shell trend-report-product">
-    <section class="trend-report-featured-report" data-trend-report-card></section>
+  <main class="main-shell trend-lab-shell">
+    <section class="trend-lab-command daily-article-datebar" aria-label="趋势筛选" data-trend-lab-filter></section>
 
-    <section class="trend-report-watchlist-section">
-      <div class="trend-report-section-head">
-        <div>
-          <span class="trend-report-section-kicker">TREND WATCHLIST</span>
-          <h2>观察中方向</h2>
-        </div>
-        <p>进入观察池，但还没有成为强结论的方向，只展示判断、缺口和后续观察。</p>
-      </div>
-      <div class="trend-report-watch-list" data-trend-report-watch></div>
-    </section>
+    <section class="trend-lab-layout" aria-label="趋势判断台">
+      <main class="trend-lab-main">
+        <section class="trend-lab-focus" data-trend-lab-focus></section>
+        <section class="trend-lab-section" aria-label="判断演变">
+          <div class="trend-lab-section-head">
+            <span>EVOLUTION</span>
+            <h2>判断如何变化</h2>
+          </div>
+          <div class="trend-lab-timeline" data-trend-lab-timeline></div>
+        </section>
+        <section class="trend-lab-section" aria-label="证据与案例">
+          <div class="trend-lab-section-head">
+            <span>EVIDENCE</span>
+            <h2>证据、案例和产品卡</h2>
+          </div>
+          <div class="trend-lab-evidence" data-trend-lab-evidence></div>
+        </section>
+      </main>
 
-    <section class="trend-report-framework-section" data-trend-report-framework></section>
-
-    <section class="trend-report-archive-links">
-      <div class="trend-report-archive-panel">
-        <span class="trend-report-section-kicker">ARCHIVE</span>
-        <h2>历史趋势报告</h2>
-        <div class="trend-report-history-list" data-trend-report-index></div>
-      </div>
-      <aside class="trend-report-link-panel">
-        <span class="trend-report-section-kicker">BRIEF LINKS</span>
-        <h2>内参关联</h2>
-        <div class="trend-report-brief-links" data-trend-report-relations></div>
+      <aside class="trend-lab-rail">
+        <section class="trend-lab-panel trend-lab-stats-panel">
+          <span>LINKED TO CURRENT</span>
+          <h2>当前趋势关联</h2>
+          <div data-trend-lab-stats></div>
+        </section>
+        <section class="trend-lab-panel">
+          <span>QUEUE</span>
+          <h2>其他趋势</h2>
+          <div class="trend-lab-trend-list" data-trend-lab-list></div>
+        </section>
+        <section class="trend-lab-panel">
+          <span>POINTS</span>
+          <h2>观点参照</h2>
+          <div data-trend-lab-points></div>
+        </section>
+        <section class="trend-lab-panel">
+          <span>REPORTS</span>
+          <h2>正式报告</h2>
+          <div data-trend-lab-reports></div>
+        </section>
+        <section class="trend-lab-panel">
+          <span>LINKS</span>
+          <h2>站内关联</h2>
+          <div data-trend-lab-related></div>
+        </section>
       </aside>
     </section>
   </main>
   <footer data-footer></footer>
-  <script src="data/site-content.js"></script>
-  <script src="assets/app.js"></script>
+  <script src="data/site-content.js?v=20260524-1258"></script>
+  <script src="assets/app.js?v=20260524-1318"></script>
 </body>
 </html>

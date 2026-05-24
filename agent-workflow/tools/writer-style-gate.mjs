@@ -19,8 +19,8 @@ const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
 const defaultTargets = [
   "01-SiteV2/content/03-daily-observation",
-  "01-SiteV2/content/06-trend-reports",
-  "01-SiteV2/content/07-business-briefs",
+  "01-SiteV2/content/08-trend-reports",
+  "01-SiteV2/content/09-business-briefs",
 ];
 
 const targets = flags.has("path")
@@ -61,7 +61,17 @@ const commonAbstractWords = [
 ];
 
 const abstractSuffixPattern = /[\u4e00-\u9fa5A-Za-z0-9]{2,}(感|性|化)/g;
-const abstractAllowList = new Set(["变化", "转化", "消化", "分化", "淡化", "强化", "公开化"]);
+const abstractAllowList = new Set([
+  "变化",
+  "转化",
+  "消化",
+  "分化",
+  "淡化",
+  "强化",
+  "公开化",
+  "自动化",
+  "浏览器自动化",
+]);
 
 const repeatedPatterns = [
   /不是[^。！？\n]{0,60}而是/g,
@@ -80,7 +90,7 @@ const listFiles = (target) => {
   const walk = (dir) => {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       if (entry.name.startsWith(".")) continue;
-      if (entry.name === "_archive" || entry.name === "99-Archive") continue;
+      if (entry.name === "_archive") continue;
       if (entry.name === "no-report-decisions") continue;
       const next = path.join(dir, entry.name);
       if (entry.isDirectory()) {
@@ -91,7 +101,16 @@ const listFiles = (target) => {
     }
   };
   walk(abs);
-  return files;
+  const datePrefix = date ? `${date}` : "";
+  const includeDrafts = flags.get("include-drafts") === "true";
+  const filtered = datePrefix
+    ? files.filter((file) => path.basename(file).startsWith(datePrefix))
+    : files;
+  if (includeDrafts) return filtered;
+  return filtered.filter((file) => {
+    const name = path.basename(file).toLowerCase();
+    return !(name.includes("--draft") || name.includes("--revise"));
+  });
 };
 
 const findLine = (lines, needle) => {

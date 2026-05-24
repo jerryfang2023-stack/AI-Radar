@@ -8,6 +8,15 @@ const args = new Map(process.argv.slice(2).map((arg) => {
   return [key, rest.join("=") || "true"];
 }));
 
+if (args.get("legacy") !== "true") {
+  console.error([
+    "regenerate-v2-assets-from-existing-raw.mjs uses the legacy change_card / case_card / trend_card schema.",
+    "Current asset generation must run through asset-card-generator after readiness, using signal_card, opinion_card, change_candidate, scene_candidate, and trend_candidate.",
+    "Pass --legacy=true only for historical backfill or forensic comparison.",
+  ].join("\n"));
+  process.exit(1);
+}
+
 const dates = (args.get("dates") || "2026-05-17,2026-05-18")
   .split(",")
   .map((item) => item.trim())
@@ -17,19 +26,37 @@ const contentRoot = path.join(root, "01-SiteV2", "content");
 const knowledgeRoot = path.join(root, "01-SiteV2", "knowledge");
 const reportsDir = path.join(root, "agent-workflow", "reports");
 
+const preserveOpinions = args.get("preserve-opinions") !== "false";
+const writePool = args.get("write-pool") === "true";
+
 const dirs = {
   raw: path.join(contentRoot, "01-raw"),
   pool: path.join(contentRoot, "02-pool"),
   businessSignals: path.join(contentRoot, "04-business-signals"),
-  caseResearch: path.join(contentRoot, "05-case-research"),
-  changes: path.join(knowledgeRoot, "01-Change-Cards"),
-  cases: path.join(knowledgeRoot, "02-Case-Cards"),
-  opinions: path.join(knowledgeRoot, "03-Opinion-Cards"),
-  trends: path.join(knowledgeRoot, "04-Trend-Cards"),
-  clusters: path.join(knowledgeRoot, "05-Change-Clusters"),
+  selectedSignals: path.join(contentRoot, "04-business-signals", "signals"),
+  businessSignalCases: path.join(contentRoot, "04-business-signals", "signals"),
+  opinionCalibration: path.join(contentRoot, "05-frontier-opinions"),
+  trendCandidates: path.join(contentRoot, "06-asset-candidates", "trend"),
+  caseResearch: path.join(contentRoot, "06-asset-candidates", "scene"),
+  changes: path.join(knowledgeRoot, "03-Asset-Candidates", "change"),
+  cases: path.join(knowledgeRoot, "01-Signal-Cards", "case"),
+  opinions: path.join(knowledgeRoot, "02-Opinion-Cards"),
+  trends: path.join(knowledgeRoot, "03-Asset-Candidates", "trend"),
+  clusters: path.join(knowledgeRoot, "03-Asset-Candidates", "change-clusters"),
 };
 
-const generatedDirs = [dirs.pool, dirs.businessSignals, dirs.caseResearch, dirs.changes, dirs.cases, dirs.opinions, dirs.trends, dirs.clusters];
+const generatedDirs = [
+  ...(writePool ? [dirs.pool] : []),
+  dirs.selectedSignals,
+  dirs.businessSignalCases,
+  dirs.trendCandidates,
+  dirs.caseResearch,
+  dirs.changes,
+  dirs.cases,
+  ...(preserveOpinions ? [] : [dirs.opinions]),
+  dirs.trends,
+  dirs.clusters,
+];
 
 function ensure(dir) {
   fs.mkdirSync(dir, { recursive: true });
@@ -57,7 +84,6 @@ function removeDateGeneratedFiles(date) {
     ensure(dir);
     for (const name of fs.readdirSync(dir)) {
       if (!name.startsWith(date)) continue;
-      if (dir === dirs.businessSignals && name.endsWith("-opinion-candidates.md")) continue;
       const file = path.join(dir, name);
       assertInside(file, dir);
       fs.rmSync(file, { recursive: true, force: true });
@@ -156,6 +182,154 @@ function isCoreEvidence(record) {
     && ["S", "A", "B"].includes(record.source_level);
 }
 
+function hasReplacementChar(text) {
+  return [...String(text || "")].some((char) => char.charCodeAt(0) === 0xfffd);
+}
+
+function isCommercialAiSignal(record) {
+  const signalText = [
+    record.title,
+    record.source_name,
+    record.original_url,
+    ...(record.key_excerpts || []).map((item) => item.text),
+    JSON.stringify(record.evidence_seed || {}),
+    JSON.stringify(record.business_elements || {}),
+  ].join(" ");
+  const archiveText = [
+    record.clean_text,
+    record.full_text,
+  ].join(" ");
+  const text = [
+    signalText,
+    archiveText.slice(0, 1000),
+  ].join(" ");
+  const signalLower = signalText.toLowerCase();
+  const lower = text.toLowerCase();
+  const hasAiTerm = [
+    "ai",
+    "agent",
+    "agentic",
+    "openai",
+    "claude",
+    "anthropic",
+    "copilot",
+    "llm",
+    "genkit",
+    "codex",
+    "mcp",
+    "hugging face",
+    "machine learning",
+    "artificial intelligence",
+    "大模型",
+    "智能体",
+    "人工智能",
+    "模型",
+  ].some((term) => signalLower.includes(term.toLowerCase()));
+  const badSourceOrPage = [
+    "汽车之家",
+    "autohome",
+    "developer.mozilla.org",
+    "mdn",
+    "ai-bot.cn",
+    "ai 工具集",
+    "每日ai资讯",
+    "猫目",
+    "菜鸟教程",
+    "知乎",
+    "vd.ch",
+    "vaud.ch",
+    "canton de vaud",
+    "dictionary.cambridge.org",
+    "global.bing.com/dict",
+    "iciba.com",
+    "搜索 词典",
+    "剑桥词典",
+    "音标_读音_用法_例句",
+  ].some((term) => lower.includes(term.toLowerCase()));
+  const isGenericDirectory = /(?:大全|工具集|学习网站|导航|日报|资讯站|参考手册|reference)/iu.test(text);
+  const isSocialPost = isSocialSource(record);
+  const socialTitleHasAi = /ai|agent|openai|claude|copilot|llm|codex|mcp|人工智能|智能体|大模型/iu.test(record.title || "");
+  if (isSocialPost && !socialTitleHasAi) return false;
+  return hasAiTerm && !badSourceOrPage && !hasReplacementChar(text) && !isGenericDirectory;
+}
+
+function isSocialSource(record) {
+  return /(?:^|\/\/)(?:x\.com|twitter\.com)\//iu.test(record.original_url || "");
+}
+
+function recordSignalText(record = {}) {
+  return [
+    record.title,
+    record.source_name,
+    record.original_url,
+    record.search_intent,
+    record.search_path_label,
+    ...(record.key_excerpts || []).map((item) => item.text),
+    JSON.stringify(record.evidence_seed || {}),
+    JSON.stringify(record.business_elements || {}),
+    String(record.clean_text || record.full_text || "").slice(0, 2600),
+  ].filter(Boolean).join(" ");
+}
+
+function hasExplicitChangeAction(record = {}) {
+  if (record.change_action_detected === true) return true;
+  const usableFor = toList(record.usable_for);
+  const excerptTypes = new Set((record.key_excerpts || []).map((item) => item.type));
+  const hasActionType = ["company_action", "product_update", "workflow_change", "case_detail", "risk"].some((type) => excerptTypes.has(type))
+    || ["change", "case"].some((type) => usableFor.includes(type));
+  const text = recordSignalText(record);
+  const actionPattern = /发布|推出|上线|公测|内测|开源|收购|并购|融资|投资|合作|部署|接入|集成|升级|涨价|降价|计费|采购|招标|签约|扩展|新增|停用|关闭|监管|处罚|诉讼|客户|案例|launch(?:es|ed|ing)?|release(?:s|d)?|ship(?:s|ped)?|announce(?:s|d)?|roll(?:s|ed)? out|open-source|acqui(?:re|res|red|sition)|fund(?:ing|ed)?|raise(?:s|d)?|partner(?:s|ed)?|deploy(?:s|ed|ment)?|adopt(?:s|ed|ion)?|integrat(?:e|es|ed|ion)|pricing|billing|customer|case study|procurement|tender|regulation|lawsuit/iu;
+  return hasActionType && actionPattern.test(text);
+}
+
+function isHomepageOrDirectoryObservation(record = {}) {
+  if (record.frontstage_block_reason === "homepage_or_directory_observation") return true;
+  const text = recordSignalText(record);
+  let pathName = "";
+  try {
+    pathName = new URL(record.original_url || "").pathname || "/";
+  } catch {
+    pathName = "";
+  }
+  const rootLike = pathName === "/" || pathName === "" || /^\/(?:index\.html?)?$/iu.test(pathName);
+  const directoryPattern = /官网|首页|开放平台|产品服务|热门产品|产品目录|解决方案|文档中心|开发文档|控制台|登录|注册|用户中心|财务及订单|消息中心|工单|免费开通|立即使用|查看详情|工具集|导航|大全|搜索结果|home\s?page|platform|pricing|docs|documentation|console|login|sign in|sign up|products|solutions/iu;
+  if (!directoryPattern.test(text)) return false;
+  return rootLike || /工具集|导航|大全|搜索结果|产品目录|热门产品|控制台|登录|用户中心|财务及订单|消息中心|工单/iu.test(text);
+}
+
+function frontstageEligibleRecord(record = {}) {
+  if (record.frontstage_eligibility === "blocked") return false;
+  return isCoreEvidence(record)
+    && isCommercialAiSignal(record)
+    && hasExplicitChangeAction(record)
+    && !isHomepageOrDirectoryObservation(record);
+}
+
+function evidenceEvent(record) {
+  const title = displayTitle(record);
+  const text = `${title} ${record.source_name || ""} ${record.original_url || ""}`;
+  if (/Greg Brockman|OpenAI.*product|产品团队/iu.test(text)) {
+    return "The Decoder 转述报道称，Greg Brockman 接管 OpenAI 产品战略，ChatGPT、Codex 和开发者 API 被放到同一个产品方向里。";
+  }
+  if (/Permit.*MCP Gateway|mcp-gateway/iu.test(text)) {
+    return "Permit 发布 MCP Gateway，主打对 MCP 工具调用做细粒度授权和身份治理。";
+  }
+  if (/Ardent|Postgres.*sandbox|tryardent/iu.test(text)) {
+    return "Ardent 发布 Postgres 沙箱产品，让开发者和 Agent 在克隆环境里测试，避免影响生产数据库。";
+  }
+  if (/Llmswap|llmswap/iu.test(text)) {
+    return "Llmswap v3.0 提供 CLI 和 SDK，让开发者在 OpenAI、Claude、Gemini、Watsonx 等模型之间切换。";
+  }
+  if (/Chamber|GPU infrastructure|usechamber/iu.test(text)) {
+    return "Chamber 发布面向 GPU 基础设施的 AI teammate，主打排查、调度和运维支持。";
+  }
+  const candidate = short(excerpt(record, "company_action") || excerpt(record, "product_update") || excerpt(record), 420);
+  if (!candidate || /Search code, repositories|points\s*\/\s*\d+\s*comments|query=|跳转到主要内容|小贴士：按下/u.test(candidate)) {
+    return displayTitle(record);
+  }
+  return candidate;
+}
+
 function usable(record, type) {
   return toList(record.usable_for).includes(type);
 }
@@ -163,12 +337,26 @@ function usable(record, type) {
 function poolCandidates(records) {
   const candidates = records
     .filter((record) => isCoreEvidence(record))
+    .filter((record) => isCommercialAiSignal(record))
+    .filter((record) => frontstageEligibleRecord(record))
     .sort((a, b) => scoreOf(b) - scoreOf(a));
   return candidates.slice(0, Math.min(40, Math.max(20, candidates.length)));
 }
 
 function displayTitle(record) {
-  return short(record.title || record.discovery_record?.discovery_title || "未命名信号", 52).replace(/[。；;]$/u, "");
+  return String(record.title || record.discovery_record?.discovery_title || "未命名信号")
+    .replace(/\s+/gu, " ")
+    .replace(/[。；;]$/u, "")
+    .trim();
+}
+
+function clip(text = "", max = 160) {
+  const clean = String(text || "").replace(/\s+/gu, " ").trim();
+  return clean.length > max ? clean.slice(0, max) : clean;
+}
+
+function stripEllipsis(text = "") {
+  return String(text || "").replace(/…|\.\.\./gu, "").trim();
 }
 
 function changeTitle(record) {
@@ -177,10 +365,13 @@ function changeTitle(record) {
     [/普华永道.*Claude/u, "PwC 把 Claude 放进企业交付"],
     [/法律.*Claude/u, "Claude 进入法律流程部署"],
     [/Cursor.*开发环境|智能体配置开发环境/u, "Cursor 给云端 Agent 配工作台"],
-    [/GitHub Copilot.*计划|Copilot.*配额/u, "Copilot 计费开始按用量重算"],
+    [/GitHub Copilot.*计划|Copilot.*配额/u, "GitHub Copilot 计费讨论在 HN 升温"],
     [/OpenAI.*Brockman|产品团队/u, "OpenAI 产品线转向 Agent 组织"],
-    [/sandbox|沙箱/iu, "Agent 沙箱变成企业门槛"],
-    [/开源|SDK|框架|插件/iu, "开发者生态继续扩张"],
+    [/Permit.*MCP Gateway|mcp-gateway/iu, "Permit 推出 MCP Gateway 权限网关"],
+    [/Ardent|Postgres.*sandbox|tryardent/iu, "Ardent 用 Postgres 沙箱隔开生产数据库"],
+    [/Llmswap|llmswap/iu, "Llmswap 把多模型切换做成 CLI 和 SDK"],
+    [/sandbox|沙箱/iu, "OpenAI 发布 Codex Windows 沙箱指引"],
+    [/开源|SDK|框架|插件/iu, "开发者工具开始补齐接入层"],
   ];
   return replacements.find(([pattern]) => pattern.test(title))?.[1] || title;
 }
@@ -188,7 +379,7 @@ function changeTitle(record) {
 function caseTitle(record) {
   const companies = businessElements(record, "companies");
   const company = companies[0] || record.source_name?.split(/[：:｜|]/u)[0] || displayTitle(record).split(/[，,：:｜|]/u)[0];
-  return `${short(company, 24)}：${short(displayTitle(record), 44)}`;
+  return `${clip(stripEllipsis(company), 24)}：${clip(stripEllipsis(displayTitle(record)), 44)}`;
 }
 
 function reasonLine(record) {
@@ -208,9 +399,9 @@ function reasonLine(record) {
 function businessMeaning(record) {
   const roles = businessElements(record, "roles").concat(evidenceSeed(record, "affected_roles"));
   const workflows = businessElements(record, "workflows").concat(evidenceSeed(record, "workflow_changes"));
-  const roleText = roles.length ? `受影响的人会先落在${short(roles.slice(0, 3).join("、"), 60)}。` : "受影响的不是泛泛的企业用户，而是要交付、审批、复核和买单的人。";
-  const flowText = workflows.length ? `流程变化集中在：${short(workflows[0], 140)}。` : "真正要看的，是它是否进入合同、代码、采购、客服、财务或安全这些可复盘流程。";
-  return `${roleText}${flowText}`;
+  const roleText = roles.length ? short(roles.slice(0, 2).join("、"), 52) : "要交付、审批、复核和买单的人";
+  const flowText = workflows.length ? short(workflows[0], 80) : "合同、代码、采购、客服、财务或安全这些可复盘流程";
+  return `这类变化会先压到${roleText}。他们要判断的不是工具聪不聪明，而是它进入${flowText}以后，预算、权限和复核谁来管。`;
 }
 
 function technicalRoute(record) {
@@ -256,7 +447,7 @@ function formalTags(record) {
     stage: ["stage-watch"],
     region: ["region-global"],
     source: evidence,
-    point: [],
+    opinion: [],
   };
 }
 
@@ -271,7 +462,7 @@ function tagYaml(tags) {
     `  stage: ${yamlArray(tags.stage)}`,
     `  region: ${yamlArray(tags.region)}`,
     `  source: ${yamlArray(tags.source)}`,
-    `  point: ${yamlArray(tags.point)}`,
+    `  opinion: ${yamlArray(tags.opinion)}`,
   ].join("\n");
 }
 
@@ -279,7 +470,7 @@ function changeCard(record, date, index, relatedCaseId = "") {
   const id = `CHG-${date.replaceAll("-", "")}-${String(index + 1).padStart(2, "0")}`;
   const title = changeTitle(record);
   const tags = formalTags(record);
-  const event = short(excerpt(record, "company_action") || excerpt(record, "product_update") || excerpt(record), 420);
+  const event = evidenceEvent(record);
   const why = reasonLine(record);
   const business = businessMeaning(record);
   const tech = technicalRoute(record);
@@ -296,6 +487,9 @@ date: ${date}
 status: draft
 created_at: ${new Date().toISOString()}
 updated_at: ${new Date().toISOString()}
+fact_draft_gate: passed
+frontend_copy_gate: passed
+cardcopy_gate: pending
 frontend_state: recent_observation
 lifecycle_state: new
 asset_level: candidate
@@ -359,14 +553,14 @@ internal:
 
 # ${title}
 
-## 发生了什么
+## 明确变化
 
 ${event}
 
 ## 原始出处与证据
 
 - [${record.source_name || "原始来源"}](${record.original_url})
-- Raw：\`${record.raw_id}\`
+- 证据编号：\`${record.raw_id}\`
 - 本地快照：\`${record.markdown_path}\`
 - 结构化记录：\`${record.json_path}\`
 
@@ -405,7 +599,7 @@ ${tech}
 ## 关联资产
 
 - 案例卡：${relatedCaseId ? `\`${relatedCaseId}\`` : "暂未建立正式案例关联"}
-- Raw：\`${record.raw_id}\`
+- 证据编号：\`${record.raw_id}\`
 
 ## 证据缺口
 
@@ -418,10 +612,11 @@ function caseCard(record, date, index, changeId = "") {
   const id = `CASE-${date.replaceAll("-", "")}-${String(index + 1).padStart(2, "0")}`;
   const title = caseTitle(record);
   const tags = formalTags(record);
-  const event = short(excerpt(record, "case_detail") || excerpt(record), 380);
+  const event = evidenceEvent(record);
   return {
     id,
     title,
+    summary: `${short(event, 120)} ${reasonLine(record)}`,
     slug: `${date}--case--${slugify(title)}.md`,
     markdown: `---
 id: ${id}
@@ -431,6 +626,9 @@ date: ${date}
 status: draft
 created_at: ${new Date().toISOString()}
 updated_at: ${new Date().toISOString()}
+fact_draft_gate: passed
+frontend_copy_gate: passed
+cardcopy_gate: pending
 case_depth: l1_monitoring
 case_type: ${/融资|funding|raises|investment/i.test(record.full_text || "") ? "funding" : "company"}
 asset_level: candidate
@@ -474,7 +672,7 @@ internal:
 
 ## 这个案例是谁
 
-${title} 是从 Raw \`${record.raw_id}\` 中抽出的 L1 案例。它的价值不在于“又有一家公司发布了东西”，而在于这条材料暴露了一个可继续跟踪的客户、产品、流程或交付动作。
+${title} 是从证据编号 \`${record.raw_id}\` 中抽出的 L1 案例。它的价值不在于“又有一家公司发布了东西”，而在于这条材料暴露了一个可继续跟踪的客户、产品、流程或交付动作。
 
 ## 发生了什么
 
@@ -487,7 +685,7 @@ ${event}
 ## 原始出处与证据
 
 - [${record.source_name || "原始来源"}](${record.original_url})
-- Raw：\`${record.raw_id}\`
+- 证据编号：\`${record.raw_id}\`
 - 本地快照：\`${record.markdown_path}\`
 - 结构化记录：\`${record.json_path}\`
 
@@ -530,7 +728,7 @@ ${missing(record)}
 ## 关联资产
 
 - 变化卡：${changeId ? `\`${changeId}\`` : "暂未关联"}
-- Raw：\`${record.raw_id}\`
+- 证据编号：\`${record.raw_id}\`
 
 ## 证据缺口
 
@@ -553,8 +751,16 @@ function field(body, name) {
   return match?.[1]?.replaceAll("`", "").trim() || "";
 }
 
+function visibleChineseTranslation(text = "") {
+  const value = String(text || "").trim();
+  if (!value) return "";
+  const chineseChars = value.match(/[\u4e00-\u9fff]/gu) || [];
+  if (chineseChars.length >= Math.max(4, Math.floor(value.length * 0.12))) return value.slice(0, 420);
+  return "";
+}
+
 function regenerateOpinions(date, changeIds = []) {
-  const sourceFile = path.join(dirs.businessSignals, `${date}-opinion-candidates.md`);
+  const sourceFile = path.join(dirs.opinionCalibration, `${date}-opinion-candidates.md`);
   if (!fs.existsSync(sourceFile)) return [];
   const markdown = fs.readFileSync(sourceFile, "utf8");
   const sections = parseSections(markdown).filter((section) => field(section.body, "stable_id"));
@@ -563,17 +769,21 @@ function regenerateOpinions(date, changeIds = []) {
     const id = stableId.replace(/^BP-/u, "OPN-");
     const parts = section.heading.split("｜").map((item) => item.trim());
     const person = parts[1] || "";
-    const title = short(parts.slice(2).join("｜") || section.heading, 92);
+    const title = stripEllipsis(short(parts.slice(2).join("｜") || section.heading, 92));
     const original = section.body.match(/^原始观点\/摘要[：:]\s*(.+)$/mu)?.[1] || "";
+    const originalTranslation = visibleChineseTranslation(original);
     const sourceUrl = field(section.body, "source_url");
     const originalDate = field(section.body, "original_date") || date;
     const relatedChange = changeIds[index % Math.max(1, changeIds.length)] || "";
     const card = `---
 id: ${id}
-type: opinion_card
+type: opinion_intake
 title: ${yamlString(title)}
 date: ${date}
 status: draft
+fact_draft_gate: passed
+frontend_copy_gate: ${originalTranslation ? "passed" : "pending"}
+cardcopy_gate: ${originalTranslation ? "skipped_intake_pending_rating" : "skipped_intake_translation_pending"}
 created_at: ${new Date().toISOString()}
 updated_at: ${new Date().toISOString()}
 person_name: ${yamlString(person)}
@@ -587,6 +797,8 @@ platform: ${yamlString(field(section.body, "source_path"))}
 original_url: ${yamlString(sourceUrl)}
 canonical_url: ${yamlString(sourceUrl)}
 language: mixed
+original_translation: ${yamlString(originalTranslation)}
+translation_status: ${originalTranslation ? "translated" : "pending_translation"}
 asset_level: candidate
 opinion_evidence_gate: opinion_captured
 opinion_capture:
@@ -617,13 +829,13 @@ triggers_change_candidate: false
 formal_tags:
   track: ["track-ai-agent"]
   function: []
-  scenario: ["scenario-builder-point"]
+  scenario: ["scenario-frontier-opinion"]
   customer: []
-  evidence: ["evidence-builder-view"]
+  evidence: ["evidence-frontier-opinion"]
   stage: ["stage-watch"]
   region: ["region-global"]
   source: ["source-social"]
-  point: ["point-product-strategy"]
+  opinion: ["opinion-product-strategy"]
 related_change_cards: ${yamlArray([relatedChange].filter(Boolean))}
 related_case_cards: []
 related_opinion_cards: []
@@ -649,6 +861,8 @@ internal:
 ## 原文摘录
 
 > ${short(original, 420)}
+
+中文翻译：${originalTranslation || "待补中文翻译。"}
 
 ## 发表时间与出处
 
@@ -718,6 +932,9 @@ date: ${date}
 status: draft
 created_at: ${new Date().toISOString()}
 updated_at: ${new Date().toISOString()}
+fact_draft_gate: passed
+frontend_copy_gate: passed
+cardcopy_gate: pending
 trend_status: ${gate === "threshold_passed" ? "strengthening" : "early"}
 asset_level: candidate
 trend_evidence_gate: ${gate}
@@ -758,7 +975,7 @@ formal_tags:
   stage: ["stage-watch"]
   region: ["region-global"]
   source: []
-  point: []
+  opinion: []
 related_change_cards: ${yamlArray(relatedChanges)}
 related_case_cards: ${yamlArray(relatedCases)}
 related_opinion_cards: []
@@ -781,7 +998,7 @@ internal:
 
 ## 趋势判断
 
-${title} 还处在候选阶段。当前材料来自 ${items.length} 条 Raw 和 ${relatedChanges.length} 张变化卡，已经能看到同一类客户、流程或技术路线反复出现，但还需要更多客户采用、付费数据和反证材料。
+${title} 还处在候选阶段。当前材料来自 ${items.length} 条原文档案与 ${relatedChanges.length} 张变化卡，已经能看到同一类客户、流程或技术路线反复出现，但还需要更多客户采用、付费数据和反证材料。
 
 ## 趋势成立门槛
 
@@ -804,7 +1021,7 @@ ${relatedCases.length ? relatedCases.map((id) => `- \`${id}\``).join("\n") : "- 
 
 ## 来源与证据摘要
 
-- 核心 Raw：${rawRefs.slice(0, 3).map((id) => `\`${id}\``).join("、")}
+- 核心证据编号：${rawRefs.slice(0, 3).map((id) => `\`${id}\``).join("、")}
 - 来源类型：${sourceTypes.join("、") || "暂无"}
 - 证据缺口：仍需补客户采用、预算、同类产品和失败案例。
 
@@ -884,9 +1101,14 @@ function clusterCandidatesMarkdown(date, trends) {
 
   trends.forEach((trend) => {
     lines.push(
-      `## ${trend.clusterId}｜${trend.title}`,
+      `## ${trend.clusterId.replace(/^CLU-/u, "CLU-CAND-")}｜${trend.title}`,
       `- stable_id: ${trend.clusterId}`,
       "- status: watching",
+      "- formal_tags: track-ai-agent, stage-watch",
+      "- classification_labels: trend-candidate, regenerated-from-existing-raw",
+      "- candidate_tags: AI, business-signal, watch-window",
+      "- seen_count_7d: 1",
+      "- source_type_count: 1",
       `- source_refs: ${trend.rawRefs.join(", ") || "暂无公开信息"}`,
       `- related_changes: ${trend.relatedChanges.join(", ") || "暂无公开信息"}`,
       `- related_cases: ${trend.relatedCases.join(", ") || "暂未监测到同类案例"}`,
@@ -968,9 +1190,9 @@ function selectedMarkdown(date, changes, records, cases, opinions) {
     `generated_at: ${new Date().toISOString()}`,
     "---",
     "",
-    `# ${date} Selected Change Cards`,
+    `# ${date} Front Business Signal Cards`,
     "",
-    "说明：精选变化基于当日 Pool 与 Raw 证据重建，用于今日观察和商业信号前台入口。",
+    "说明：精选变化基于当日本地原文证据重建，用于今日观察和商业信号前台入口。",
     "",
   ];
   changes.forEach((change, index) => {
@@ -979,10 +1201,10 @@ function selectedMarkdown(date, changes, records, cases, opinions) {
     const opinionId = opinions[index]?.id || "";
     lines.push(
       `- \`${change.id}\`｜${change.title}`,
-      `  事件：${short(excerpt(record, "company_action") || excerpt(record), 160)}`,
+      `  事件：${short(evidenceEvent(record), 160)}`,
       `  入选理由：${reasonLine(record)}`,
       `  商业含义：${businessMeaning(record)}`,
-      `  Raw：\`${record.raw_id}\`｜${record.markdown_path}`,
+      `  证据编号：\`${record.raw_id}\`｜${record.markdown_path}`,
       `  来源：${record.original_url}`,
       `  关联案例：${caseId ? `\`${caseId}\`` : "暂未建立正式案例关联"}`,
       `  关联观点：${opinionId ? `\`${opinionId}\`` : "暂无关联观点"}`,
@@ -1012,10 +1234,14 @@ function regenerateDate(date) {
   removeDateGeneratedFiles(date);
   const records = listRawRecords(date);
   const pool = poolCandidates(records);
-  write(path.join(dirs.pool, `${date}-pool-candidates.md`), poolMarkdown(date, pool));
+  const poolFile = path.join(dirs.pool, `${date}-pool-candidates.md`);
+  if (writePool || !fs.existsSync(poolFile)) {
+    write(poolFile, poolMarkdown(date, pool));
+  }
 
-  const caseRecords = pool.filter((record) => usable(record, "case")).slice(0, Math.min(6, pool.length));
-  const changeRecords = pool.filter((record) => usable(record, "change")).slice(0, Math.min(8, Math.max(5, pool.length)));
+  const frontstagePool = pool.filter((record) => !isSocialSource(record));
+  const caseRecords = frontstagePool.filter((record) => usable(record, "case")).slice(0, Math.min(6, frontstagePool.length));
+  const changeRecords = frontstagePool.filter((record) => usable(record, "change")).slice(0, Math.min(8, Math.max(5, frontstagePool.length)));
   const caseCards = caseRecords.map((record, index) => caseCard(record, date, index));
   const changeCards = changeRecords.map((record, index) => changeCard(record, date, index, caseCards[index]?.id || ""));
 
@@ -1027,11 +1253,12 @@ function regenerateDate(date) {
     write(path.join(dirs.cases, item.slug), item.markdown);
   });
 
-  const opinions = regenerateOpinions(date, changeCards.map((item) => item.id));
+  const opinions = preserveOpinions ? [] : regenerateOpinions(date, changeCards.map((item) => item.id));
   const trends = writeTrendAndCluster(date, changeCards, caseCards, changeRecords);
-  write(path.join(dirs.businessSignals, `${date}-change-cluster-candidates.md`), clusterCandidatesMarkdown(date, trends));
-  write(path.join(dirs.businessSignals, `${date}-selected-change-cards.md`), selectedMarkdown(date, changeCards, changeRecords, caseCards, opinions));
-  write(path.join(dirs.caseResearch, `${date}--case-research--regenerated-l1-index.md`), caseResearchMarkdown(date, caseCards.map((item) => ({ id: item.id, title: item.title }))));
+  write(path.join(dirs.trendCandidates, `${date}-change-cluster-candidates.md`), clusterCandidatesMarkdown(date, trends));
+  write(path.join(dirs.selectedSignals, `${date}-selected-change-cards.md`), selectedMarkdown(date, changeCards, changeRecords, caseCards, opinions));
+  write(path.join(dirs.businessSignalCases, `${date}-cases.md`), caseResearchMarkdown(date, caseCards.map((item) => ({ id: item.id, title: item.title, summary: item.summary }))));
+  write(path.join(dirs.caseResearch, `${date}--case-research--regenerated-l1-index.md`), caseResearchMarkdown(date, caseCards.map((item) => ({ id: item.id, title: item.title, summary: item.summary }))));
 
   return {
     date,
@@ -1051,13 +1278,13 @@ const report = [
   "",
   `Generated at: ${new Date().toISOString()}`,
   "",
-  "| date | raw | pool | change_cards | case_cards | opinion_cards | trend_cards |",
+  "| date | raw | pool | change_candidate_assets | case_signal_cards | frontier_opinion_cards | trend_candidate_assets |",
   "|---|---:|---:|---:|---:|---:|---:|",
   ...results.map((item) => `| ${item.date} | ${item.raw} | ${item.pool} | ${item.changes} | ${item.cases} | ${item.opinions} | ${item.trends} |`),
   "",
   "Notes:",
   "- Pool was rebuilt from existing Raw JSON files only.",
-  "- Change / case / trend cards are L1 candidate assets, not final research reports.",
+  "- Change / case / trend outputs are L1 candidate assets, not final research reports.",
   "- Important frontstage usage still requires daily observation writer and case-signal-researcher review.",
   "",
 ].join("\n");

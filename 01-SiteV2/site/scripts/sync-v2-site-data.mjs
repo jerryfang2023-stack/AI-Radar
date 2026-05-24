@@ -1,13 +1,20 @@
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { readTagTaxonomy, toSiteTag } from "../../../agent-workflow/tools/tag-taxonomy-utils.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const siteRoot = path.resolve(scriptDir, "..");
 const projectRoot = path.resolve(siteRoot, "..", "..");
 const contentRoot = path.join(projectRoot, "01-SiteV2", "content");
+const knowledgeRoot = path.join(projectRoot, "01-SiteV2", "knowledge");
 const dataDir = path.join(siteRoot, "data");
 const requestedDate = process.argv.find((arg) => arg.startsWith("--date="))?.slice("--date=".length);
+const publicSiteStartDate = "2026-05-20";
+
+function publicDate(date) {
+  return date && date >= publicSiteStartDate ? date : "";
+}
 
 function withoutFrontmatter(markdown) {
   return markdown.replace(/^\uFEFF?/u, "").replace(/^---[\s\S]*?---\s*/u, "");
@@ -125,69 +132,7 @@ function relationFieldFromSelectedCards(caseText = "", opinionText = "") {
   ].filter(Boolean).join(",");
 }
 
-const tagTaxonomy = [
-  { id: "track-ai-agent", name: "AI Agent", group: "track", aliases: ["AI-Agent", "智能体"] },
-  { id: "track-ai-coding", name: "AI Coding", group: "track", aliases: ["AI-Coding", "AI编程"] },
-  { id: "track-enterprise-workflow", name: "企业工作流", group: "track", aliases: ["企业AI工作流", "工作流自动化"] },
-  { id: "track-enterprise-data", name: "企业数据智能", group: "track", aliases: ["企业数据", "RAG", "企业知识库"] },
-  { id: "track-ai-marketing", name: "AI营销", group: "track", aliases: ["AI增长", "销售赋能"] },
-  { id: "track-ai-customer-service", name: "AI客服", group: "track", aliases: ["Voice-AI", "语音客服"] },
-  { id: "track-ai-governance", name: "AI治理", group: "track", aliases: ["Agent治理", "权限审计"] },
-  { id: "track-ai-infra", name: "AI基础设施", group: "track", aliases: ["AI Infra", "模型基础设施"] },
-  { id: "track-embodied-ai", name: "具身智能", group: "track", aliases: ["机器人", "无人系统"] },
-  { id: "track-medical-ai", name: "医疗AI", group: "track", aliases: ["临床AI", "影像AI"] },
-  { id: "track-professional-services-ai", name: "专业服务AI", group: "track", aliases: ["法务AI", "咨询AI", "专家知识Agent"] },
-  { id: "function-sales", name: "销售", group: "function", aliases: ["销售赋能", "CRM"] },
-  { id: "function-marketing", name: "市场营销", group: "function", aliases: ["增长", "投放"] },
-  { id: "function-customer-service", name: "客服售后", group: "function", aliases: ["客服", "售后", "质检"] },
-  { id: "function-operations", name: "运营流程", group: "function", aliases: ["运营", "流程"] },
-  { id: "function-finance", name: "财务", group: "function", aliases: ["票据", "报销", "财务流程"] },
-  { id: "function-legal-compliance", name: "法务合规", group: "function", aliases: ["合规", "审计"] },
-  { id: "function-procurement-bidding", name: "采购投标", group: "function", aliases: ["招投标", "采购"] },
-  { id: "function-engineering", name: "工程研发", group: "function", aliases: ["开发", "仿真", "工程"] },
-  { id: "scenario-document-workflow", name: "文档流程", group: "scenario", aliases: ["文档处理", "合同提取"] },
-  { id: "scenario-knowledge-base", name: "知识库问答", group: "scenario", aliases: ["RAG", "企业知识库"] },
-  { id: "scenario-customer-ticket", name: "工单与质检", group: "scenario", aliases: ["工单", "质检", "智能派单"] },
-  { id: "scenario-sales-briefing", name: "销售日报", group: "scenario", aliases: ["销售周报", "线索跟进"] },
-  { id: "scenario-bidding-response", name: "标书响应", group: "scenario", aliases: ["标书解析", "应标响应"] },
-  { id: "scenario-clinical-imaging", name: "临床影像辅助", group: "scenario", aliases: ["影像诊断"] },
-  { id: "scenario-agent-governance", name: "Agent 权限治理", group: "scenario", aliases: ["审计", "权限", "风险控制"] },
-  { id: "scenario-builder-point", name: "前沿观点", group: "scenario", aliases: ["The Point", "观点证据", "建造者观点"] },
-  { id: "customer-smb", name: "中小企业", group: "customer", aliases: ["SMB", "中小商家"] },
-  { id: "customer-enterprise", name: "大中型企业", group: "customer", aliases: ["企业客户"] },
-  { id: "customer-public-sector", name: "政府 / 国企", group: "customer", aliases: ["政府", "央国企"] },
-  { id: "customer-developer-team", name: "开发团队", group: "customer", aliases: ["工程团队"] },
-  { id: "customer-healthcare-provider", name: "医疗机构", group: "customer", aliases: ["医院", "诊所"] },
-  { id: "customer-heavy-industry", name: "重资产行业", group: "customer", aliases: ["能源", "电力", "制造", "建筑"] },
-  { id: "evidence-funding", name: "融资证据", group: "evidence", aliases: ["投资", "种子轮"] },
-  { id: "evidence-customer-adoption", name: "客户采用", group: "evidence", aliases: ["部署", "上线", "合作"] },
-  { id: "evidence-product-launch", name: "产品发布", group: "evidence", aliases: ["功能发布", "平台发布"] },
-  { id: "evidence-revenue", name: "收入增长", group: "evidence", aliases: ["ARR", "营收"] },
-  { id: "evidence-regulation", name: "监管政策", group: "evidence", aliases: ["政策", "合规"] },
-  { id: "evidence-procurement", name: "招投标 / 采购", group: "evidence", aliases: ["招标", "政府采购"] },
-  { id: "evidence-builder-view", name: "前沿观点", group: "evidence", aliases: ["The Point", "观点", "建造者观点"] },
-  { id: "stage-emerging", name: "新出现", group: "stage", aliases: ["emerging"] },
-  { id: "stage-rising", name: "升温", group: "stage", aliases: ["rising"] },
-  { id: "stage-splitting", name: "分化", group: "stage", aliases: ["splitting"] },
-  { id: "stage-mature", name: "成熟化", group: "stage", aliases: ["mature"] },
-  { id: "stage-risk", name: "风险变量", group: "stage", aliases: ["risk"] },
-  { id: "stage-watch", name: "观察", group: "stage", aliases: ["watch"] },
-  { id: "region-global", name: "全球", group: "region", aliases: ["海外"] },
-  { id: "region-china", name: "中国适配", group: "region", aliases: ["中国", "本土"] },
-  { id: "region-us", name: "美国", group: "region", aliases: ["US"] },
-  { id: "region-eu", name: "欧洲", group: "region", aliases: ["EU"] },
-  { id: "source-first-party", name: "一手来源", group: "source", aliases: ["官网", "官方博客"] },
-  { id: "source-business-media", name: "商业媒体", group: "source", aliases: ["高质量媒体"] },
-  { id: "source-industry-data", name: "产业数据", group: "source", aliases: ["数据库", "招投标"] },
-  { id: "source-social", name: "社媒线索", group: "source", aliases: ["X", "社区"] },
-  { id: "source-podcast", name: "播客", group: "source", aliases: ["YouTube", "访谈"] },
-  { id: "source-blog", name: "技术博客", group: "source", aliases: ["Blog"] },
-  { id: "point-ai-coding", name: "AI Coding 观点", group: "point", aliases: ["编程", "开发者工具"] },
-  { id: "point-agent-workflow", name: "Agent 工作流观点", group: "point", aliases: ["多 Agent", "工作流"] },
-  { id: "point-model-infra", name: "模型基础设施观点", group: "point", aliases: ["Infra", "推理", "记忆"] },
-  { id: "point-product-strategy", name: "产品策略观点", group: "point", aliases: ["PM", "产品"] },
-  { id: "point-ai-safety-governance", name: "AI 安全治理观点", group: "point", aliases: ["安全", "权限", "治理"] },
-];
+const tagTaxonomy = readTagTaxonomy(projectRoot).map(toSiteTag);
 
 const tagById = new Map(tagTaxonomy.map((tag) => [tag.id, tag]));
 
@@ -225,11 +170,11 @@ function inferTags(item = {}, type = "signal") {
   if (type === "trend") add("stage-rising");
   if (type === "trendReport") add("function-operations", "stage-watch", "region-china");
   if (type === "point") {
-    add("scenario-builder-point", "evidence-builder-view", "source-social");
-    if (has(/Coding|代码|编程|工程/u)) add("point-ai-coding");
-    else if (has(/安全|治理|权限|审计/u)) add("point-ai-safety-governance");
-    else if (has(/模型|算力|memory|记忆|Infra/u)) add("point-model-infra");
-    else add("point-agent-workflow");
+    add("scenario-frontier-opinion", "evidence-frontier-opinion", "source-social");
+    if (has(/Coding|代码|编程|工程/u)) add("opinion-ai-coding");
+    else if (has(/安全|治理|权限|审计/u)) add("opinion-ai-safety-governance");
+    else if (has(/模型|算力|memory|记忆|Infra/u)) add("opinion-model-infra");
+    else add("opinion-agent-workflow");
   }
 
   if (has(/Coding|代码|编程|开发|IDE|仓库|CI|工程/u)) add("track-ai-coding", "function-engineering", "customer-developer-team");
@@ -373,29 +318,6 @@ function parseInsights(markdown) {
   }));
 }
 
-function parsePoints(markdown) {
-  return splitSections(withoutFrontmatter(markdown)).map(({ heading, body }) => {
-    const relations = parseRelationTokens(field(body, "relation_fields"));
-    const point = {
-      id: field(body, "stable_id"),
-      title: cleanPublicText(heading.replace(/^PT-\d+-\d+\s*[｜|]\s*/u, "").trim()),
-      sourcePath: field(body, "source_path"),
-      sourceUrl: field(body, "source_url"),
-      originalDate: field(body, "original_date"),
-      convertedAt: field(body, "converted_at"),
-      originalView: cleanPublicText(field(body, "conversion_reason")),
-      interpretation: cleanPublicText(body.match(/^Point[：:]\s*(.+)$/mu)?.[1] || paragraphAfterFields(body)),
-      calibrates: cleanPublicText(body.match(/^Point[：:]\s*(.+)$/mu)?.[1] || paragraphAfterFields(body)),
-      usage: cleanPublicText(body.match(/^V2 用法[：:]\s*(.+)$/mu)?.[1] || ""),
-      relations,
-      relatedSignals: relations.filter((item) => item.startsWith("signal:")).map((item) => item.split(":")[1]),
-      relatedTrends: relations.filter((item) => item.startsWith("trend:")).map((item) => item.split(":")[1]),
-      relatedTrendReports: relations.filter((item) => item.startsWith("trendReport:")).map((item) => item.split(":")[1]),
-    };
-    return { ...point, tags: inferTags(point, "point") };
-  });
-}
-
 function parseTrends(markdown, currentDate) {
   return splitSections(withoutFrontmatter(markdown)).map(({ heading, body }) => {
     const trend = {
@@ -431,7 +353,7 @@ function parseTrendReport(markdown, currentDate, sourcePath = "") {
     .slice(0, 14)
     .map((section) => [cleanPublicText(section.heading.replace(/^第?[一二三四五六七八九十]+[、.]/u, "")), cleanPublicText(section.body)]);
   const deepSections = splitSubsections(first.body)
-    .filter(([sectionName]) => !["机会判断", "六维分析", "风险与反证", "下一步验证"].includes(sectionName))
+    .filter(([sectionName]) => !["机会判断", "六维分析", "风险边界", "风险边界与证据缺口", "下一步验证"].includes(sectionName))
     .slice(0, 18);
   const sections = [
     ["机会判断", sectionText(first.body, "机会判断") || sectionText(withoutFrontmatter(markdown), "摘要")],
@@ -443,7 +365,7 @@ function parseTrendReport(markdown, currentDate, sourcePath = "") {
     ["同类产品与竞品", h2SectionText(sectionsAll, ["同类产品", "市面上谁在动"])],
     ["趋势线索", h2SectionText(sectionsAll, ["关联信号", "变化背景"], "相关趋势说明这条变化并非孤立出现。")],
     ["观点参照", h2SectionText(sectionsAll, ["关联信号与观点", "观点"], "相关观点可作为补充视角，不替代事实来源。")],
-    ["反证与限制", sectionText(first.body, "风险与反证") || h2SectionText(sectionsAll, ["反证", "风险", "信息缺口"])],
+    ["风险边界与证据缺口", sectionText(first.body, "风险边界与证据缺口") || h2SectionText(sectionsAll, ["风险边界", "风险", "信息缺口"])],
     ["观察变量", sectionText(first.body, "下一步验证") || h2SectionText(sectionsAll, ["后续观察", "30 天后看什么"])],
     ...deepSections,
     ...fallbackSections,
@@ -465,7 +387,7 @@ function parseTrendReport(markdown, currentDate, sourcePath = "") {
   const reportKind = kind || (reportId.includes("FLASH") ? "flash" : (reportId.includes("FULL") ? "full" : "legacy"));
   const evidenceGaps = field(first.body, "evidence_gaps") ||
     h2SectionText(sectionsAll, ["反证", "风险", "信息缺口"]) ||
-    (frontmatterField(markdown, "has_counter_evidence") === "true"
+    (frontmatterField(markdown, "has_boundary_note") === "true"
       ? "报告已包含反证，详见正文。"
       : "仍需继续观察客户采用、付费意愿和交付成本。");
   const relationFields = field(first.body, "relation_fields") || frontmatterField(markdown, "relation_fields");
@@ -487,7 +409,7 @@ function parseTrendReport(markdown, currentDate, sourcePath = "") {
     upgradedFrom: frontmatterField(markdown, "upgraded_from"),
     sourceCount: frontmatterField(markdown, "source_count"),
     primarySourceCount: frontmatterField(markdown, "primary_source_count"),
-    hasCounterEvidence: frontmatterField(markdown, "has_counter_evidence"),
+    hasBoundaryNote: frontmatterField(markdown, "has_boundary_note"),
     relationFields,
     relations: parseRelationTokens(relationFields),
     evidenceGaps: cleanPublicText(evidenceGaps),
@@ -543,31 +465,6 @@ function parseRefinedSignals(markdown, currentDate) {
       legacy: true,
     };
     return { ...signal, tags: inferTags(signal, "signal") };
-  }).filter(Boolean);
-}
-
-function parseRefinedPoints(markdown, currentDate) {
-  return splitSections(withoutFrontmatter(markdown)).map(({ heading, body }) => {
-    if (!hasPublishReady(body)) return null;
-    const relations = parseRelationTokens(field(body, "relation_fields"));
-    const itemDate = refinedItemDate(body, currentDate);
-    const point = {
-      id: field(body, "stable_id"),
-      title: cleanPublicText(heading.replace(/^LPT-\d+-\d+\s*[｜|]\s*/u, "").trim()),
-      date: itemDate,
-      dateRefs: refinedDateRefs(body, itemDate),
-      sourceUrl: field(body, "source_url"),
-      originalView: cleanPublicText(field(body, "conversion_reason")),
-      interpretation: cleanPublicText(body.match(/^Point[：:]\s*(.+)$/mu)?.[1] || paragraphAfterFields(body)),
-      calibrates: cleanPublicText(body.match(/^Point[：:]\s*(.+)$/mu)?.[1] || paragraphAfterFields(body)),
-      usage: cleanPublicText(body.match(/^V2 用法[：:]\s*(.+)$/mu)?.[1] || "用于修正判断边界，不作为事实主证据。"),
-      relations,
-      relatedSignals: relations.filter((item) => item.startsWith("signal:")).map((item) => item.split(":")[1]),
-      relatedTrends: relations.filter((item) => item.startsWith("trend:")).map((item) => item.split(":")[1]),
-      relatedTrendReports: relations.filter((item) => item.startsWith("trendReport:")).map((item) => item.split(":")[1]),
-      legacy: true,
-    };
-    return { ...point, tags: inferTags(point, "point") };
   }).filter(Boolean);
 }
 
@@ -661,6 +558,16 @@ async function readOptionalDirMarkdown(dir) {
   }
 }
 
+async function rawTitleForSignalCard(markdown = "") {
+  const rawArchive = nestedFrontmatterField(markdown, "raw_archive");
+  if (!rawArchive) return "";
+  const rawPath = path.isAbsolute(rawArchive)
+    ? rawArchive
+    : path.join(projectRoot, rawArchive.replace(/^01-SiteV2[\\/]/u, "01-SiteV2/"));
+  const rawMarkdown = await readOptional(rawPath);
+  return publicCardText(frontmatterField(rawMarkdown, "title"));
+}
+
 async function markdownNames(dir) {
   try {
     const names = await readdir(dir);
@@ -676,7 +583,7 @@ async function readDateMarkdown(dir, currentDate, includes = []) {
     if (!name.startsWith(currentDate)) return false;
     return includes.length ? includes.some((token) => name.includes(token)) : true;
   });
-  const preferred = matches[0];
+  const preferred = await preferredMarkdownName(dir, matches);
   return preferred ? readOptional(path.join(dir, preferred)) : "";
 }
 
@@ -687,7 +594,7 @@ async function readDateMarkdownFromDirs(dirs, currentDate, includes = []) {
       if (!name.startsWith(currentDate)) return false;
       return includes.length ? includes.some((token) => name.includes(token)) : true;
     });
-    const preferred = matches[0];
+    const preferred = await preferredMarkdownName(dir, matches);
     if (preferred) {
       return {
         markdown: await readOptional(path.join(dir, preferred)),
@@ -698,8 +605,37 @@ async function readDateMarkdownFromDirs(dirs, currentDate, includes = []) {
   return { markdown: "", sourcePath: "" };
 }
 
+async function preferredMarkdownName(dir, names = []) {
+  if (!names.length) return "";
+  const scored = await Promise.all(names.map(async (name, index) => {
+    const markdown = await readOptional(path.join(dir, name));
+    const status = frontmatterField(markdown, "status").toLowerCase();
+    const quality = Number(frontmatterField(markdown, "quality_score") || 0);
+    const updated = frontmatterField(markdown, "updated_at") || frontmatterField(markdown, "last_reviewed") || "";
+    const statusScore = /published|live|qc_passed|approved/u.test(status)
+      ? 40
+      : /revise|review/u.test(status)
+        ? 10
+        : /draft/u.test(status)
+          ? -20
+          : 0;
+    return {
+      name,
+      score: statusScore + quality,
+      updated,
+      index,
+    };
+  }));
+  scored.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    if (b.updated !== a.updated) return b.updated.localeCompare(a.updated);
+    return a.index - b.index;
+  });
+  return scored[0]?.name || names[0];
+}
+
 function trendReportDirs() {
-  const root = path.join(contentRoot, "06-trend-reports");
+  const root = path.join(contentRoot, "08-trend-reports");
   return {
     full: path.join(root, "full"),
     flash: path.join(root, "flash"),
@@ -713,14 +649,466 @@ async function readTrendReportMarkdown(currentDate) {
   return readDateMarkdownFromDirs([dirs.full, dirs.flash, dirs.legacy], currentDate);
 }
 
+async function readTrendCandidateMarkdowns(dir, currentDate) {
+  const names = (await markdownNames(dir))
+    .filter((name) => name.startsWith(currentDate) && name.includes("trend-candidate"));
+  return Promise.all(names.map(async (name) => ({
+    markdown: await readOptional(path.join(dir, name)),
+    sourcePath: path.relative(projectRoot, path.join(dir, name)).replaceAll("\\", "/"),
+  })));
+}
+
 function frontmatterField(markdown, name) {
   const frontmatter = markdown.match(/^---\s*([\s\S]*?)---/u)?.[1] || "";
   const match = frontmatter.match(new RegExp(`^${name}:\\s*(.+)$`, "mu"));
   return cleanPublicText(match?.[1]?.trim().replace(/^["']|["']$/gu, "") || "");
 }
 
+function frontmatterBlock(markdown) {
+  return markdown.match(/^---\s*([\s\S]*?)---/u)?.[1] || "";
+}
+
+function inlineArrayField(markdown, name) {
+  const frontmatter = frontmatterBlock(markdown);
+  const value = frontmatter.match(new RegExp(`^${name}:\\s*\\[(.*)\\]`, "mu"))?.[1] || "";
+  return parseInlineArrayValue(value);
+}
+
+function parseInlineArrayValue(value = "") {
+  return value
+    .split(",")
+    .map((item) => cleanPublicText(item.trim().replace(/^["']|["']$/gu, "")))
+    .filter(Boolean);
+}
+
+function nestedInlineArrayFields(markdown, blockName) {
+  const lines = frontmatterBlock(markdown).split(/\r?\n/u);
+  const result = {};
+  let inBlock = false;
+  for (const line of lines) {
+    if (new RegExp(`^${blockName}:\\s*$`, "u").test(line)) {
+      inBlock = true;
+      continue;
+    }
+    if (inBlock && /^\S/u.test(line)) break;
+    if (!inBlock) continue;
+    const match = line.match(/^\s+([A-Za-z0-9_]+):\s*\[(.*)\]\s*$/u);
+    if (!match) continue;
+    result[match[1]] = parseInlineArrayValue(match[2]);
+  }
+  return result;
+}
+
+function nestedFrontmatterField(markdown, name) {
+  const frontmatter = frontmatterBlock(markdown);
+  const match = frontmatter.match(new RegExp(`^\\s+${name}:\\s*(.+)$`, "mu"));
+  return cleanPublicText(frontmatterScalar(match?.[1] || ""));
+}
+
+function frontmatterScalar(raw = "") {
+  const value = String(raw || "").trim();
+  if (!value) return "";
+  try {
+    if (/^["']/.test(value)) return JSON.parse(value);
+  } catch {
+    // Keep a permissive fallback for hand-written frontmatter.
+  }
+  return value.replace(/^["']|["']$/gu, "").replace(/\\n/gu, "\n");
+}
+
+function frontendBlock(markdown) {
+  const frontmatter = frontmatterBlock(markdown);
+  const lines = frontmatter.split(/\r?\n/u);
+  const result = {};
+  let inFrontend = false;
+  for (const line of lines) {
+    if (/^frontend:\s*$/u.test(line)) {
+      inFrontend = true;
+      continue;
+    }
+    if (inFrontend && /^\S/u.test(line)) break;
+    if (!inFrontend) continue;
+    const match = line.match(/^\s+([A-Za-z0-9_]+):\s*(.*)$/u);
+    if (!match) continue;
+    const [, key, rawValue] = match;
+    const value = cleanPublicText(frontmatterScalar(rawValue));
+    if (value && value !== "[]" && value !== "{}") result[key] = value;
+  }
+  return result;
+}
+
+function hasUsableFrontend(card = {}, required = ["displayTitle"]) {
+  if (!card.frontend) return false;
+  return required.every((fieldName) => Boolean(card.frontend[fieldName]));
+}
+
+function hasPublicOpinionTranslation(value = "") {
+  const text = cleanPublicText(String(value || "")).trim();
+  return Boolean(text)
+    && /\p{Script=Han}/u.test(text)
+    && !/(pending|todo|missing|not translated|translation pending)/iu.test(text);
+}
+
+function isXSourceUrl(value = "") {
+  return /\bx\.com\b|\btwitter\.com\b/iu.test(String(value || ""));
+}
+
+function hasCompleteOpinionTranslation(source = "", translation = "", sourceUrl = "") {
+  if (!hasPublicOpinionTranslation(translation)) return false;
+  if (!isXSourceUrl(sourceUrl)) return true;
+  const sourceLength = cleanPublicText(String(source || "").replace(/https?:\/\/\S+/gu, "")).length;
+  if (sourceLength < 500) return true;
+  const translationLength = cleanPublicText(translation).length;
+  const minimumLength = Math.min(260, Math.floor(sourceLength * 0.28));
+  return translationLength >= minimumLength;
+}
+
+async function parseChangeKnowledgeCards(currentDate) {
+  const dir = path.join(knowledgeRoot, "03-Asset-Candidates", "change");
+  const names = (await markdownNames(dir)).filter((name) => name.startsWith(currentDate));
+  const entries = await Promise.all(names.map(async (name) => {
+    const markdown = await readOptional(path.join(dir, name));
+    const id = frontmatterField(markdown, "id");
+    if (!id) return null;
+    const missing = inlineArrayField(markdown, "missing_information");
+    const relatedCases = inlineArrayField(markdown, "related_case_cards");
+    const relatedOpinions = inlineArrayField(markdown, "related_opinion_cards");
+    const sourceUrl = nestedFrontmatterField(markdown, "source_url") || (markdown.match(/https?:\/\/[^\s)"]+/u)?.[0] || "");
+    const sourceName = markdown.match(/name:\s*["']?([^"'\n]+)["']?/u)?.[1] || "";
+    return [id, {
+      id,
+      status: frontmatterField(markdown, "status"),
+      factDraftGate: frontmatterField(markdown, "fact_draft_gate"),
+      frontendCopyGate: frontmatterField(markdown, "frontend_copy_gate"),
+      cardcopyGate: frontmatterField(markdown, "cardcopy_gate"),
+      frontendState: frontmatterField(markdown, "frontend_state"),
+      assetLevel: frontmatterField(markdown, "asset_level"),
+      event: frontmatterField(markdown, "event"),
+      businessMeaning: frontmatterField(markdown, "business_meaning"),
+      whySelected: frontmatterField(markdown, "why_selected"),
+      technicalRoute: frontmatterField(markdown, "technical_route_business_meaning"),
+      frontend: frontendBlock(markdown),
+      evidenceBoundary: frontmatterField(markdown, "evidence_boundary") || nestedFrontmatterField(markdown, "evidence_boundary") || missing.join("；"),
+      missingInformation: missing,
+      relatedCases,
+      relatedOpinions,
+      sourceUrl,
+      sourceName: cleanPublicText(sourceName),
+      sourceLevel: nestedFrontmatterField(markdown, "source_level") || frontmatterField(markdown, "source_level"),
+      extractionQuality: nestedFrontmatterField(markdown, "extraction_quality"),
+      hasFullText: nestedFrontmatterField(markdown, "has_full_text"),
+      sourcePath: path.relative(projectRoot, path.join(dir, name)).replaceAll("\\", "/"),
+    }];
+  }));
+  return new Map(entries.filter(Boolean));
+}
+
+async function parseCaseKnowledgeCards(currentDate) {
+  const dir = path.join(knowledgeRoot, "01-Signal-Cards", "case");
+  const names = (await markdownNames(dir)).filter((name) => name.startsWith(currentDate));
+  const entries = await Promise.all(names.map(async (name) => {
+    const markdown = await readOptional(path.join(dir, name));
+    const id = frontmatterField(markdown, "id");
+    if (!id) return null;
+    return [id, {
+      id,
+      status: frontmatterField(markdown, "status"),
+      factDraftGate: frontmatterField(markdown, "fact_draft_gate"),
+      frontendCopyGate: frontmatterField(markdown, "frontend_copy_gate"),
+      cardcopyGate: frontmatterField(markdown, "cardcopy_gate"),
+      assetLevel: frontmatterField(markdown, "asset_level"),
+      frontend: frontendBlock(markdown),
+    }];
+  }));
+  return new Map(entries.filter(Boolean));
+}
+
+function publicCardText(text = "") {
+  return cleanPublicText(text)
+    .replace(/后台流程/g, "企业流程")
+    .replace(/后台/g, "内部流程")
+    .replace(/入库/g, "进入资料库")
+    .replace(/补证/g, "补充验证")
+    .replace(/强证据/g, "较强信号");
+}
+
+async function parseSignalKnowledgeCards(currentDate) {
+  const dirs = ["funding", "case", "product-service"].map((name) => path.join(knowledgeRoot, "01-Signal-Cards", name));
+  const entries = (await Promise.all(dirs.map(async (dir) => {
+    const names = (await markdownNames(dir)).filter((name) => name.startsWith(currentDate));
+    return Promise.all(names.map(async (name) => {
+      const markdown = await readOptional(path.join(dir, name));
+      const frontend = frontendBlock(markdown);
+      const sourceUrl = nestedFrontmatterField(markdown, "source_url") || markdown.match(/https?:\/\/[^\s)"']+/u)?.[0] || "";
+      const sourceName = sourceLabelFromUrl(sourceUrl) || "原文出处";
+      const sourceTitle = await rawTitleForSignalCard(markdown);
+      const slug = name.replace(/\.md$/u, "").replace(new RegExp(`^${currentDate}--signal--`, "u"), "");
+      const card = {
+        id: frontmatterField(markdown, "id"),
+        type: frontmatterField(markdown, "type"),
+        signalType: frontmatterField(markdown, "signal_type"),
+        title: frontmatterField(markdown, "title"),
+        date: frontmatterField(markdown, "date") || currentDate,
+        status: frontmatterField(markdown, "status"),
+        assetLevel: frontmatterField(markdown, "asset_level"),
+        evidenceGate: frontmatterField(markdown, "evidence_gate"),
+        factDraftGate: frontmatterField(markdown, "fact_draft_gate"),
+        frontendCopyGate: frontmatterField(markdown, "frontend_copy_gate"),
+        cardcopyGate: frontmatterField(markdown, "cardcopy_gate"),
+        event: frontmatterField(markdown, "event"),
+        businessMeaning: frontmatterField(markdown, "business_meaning"),
+        whySelected: frontmatterField(markdown, "why_selected"),
+        signalOwner: frontmatterField(markdown, "signal_owner"),
+        evidenceBoundary: frontend.evidenceBoundary || frontmatterField(markdown, "evidence_boundary"),
+        watchReason: frontend.watchWindow || frontmatterField(markdown, "watch_reason"),
+        frontend,
+        sourceUrl,
+        sourceName,
+        sourceTitle,
+        sourceLevel: nestedFrontmatterField(markdown, "source_level") || sourceLevelFromUrl(sourceUrl),
+        sourcePath: path.relative(projectRoot, path.join(dir, name)).replaceAll("\\", "/"),
+      };
+      if (!card.id || !frontstageSignalReady(card)) return null;
+      const title = publicCardText(frontend.displayTitle || card.title);
+      const eventLine = publicCardText(frontend.eventLine || card.event);
+      const whyWatch = publicCardText(frontend.whyWatch || card.whySelected);
+      const businessMeaning = publicCardText(frontend.businessMeaning || card.businessMeaning);
+      const evidenceBoundary = publicCardText(frontend.evidenceBoundary || card.evidenceBoundary || "当前材料能确认事件方向，具体客户效果仍需继续观察。");
+      const signal = {
+        id: card.id,
+        slug: slugify(title) || slug,
+        title,
+        date: card.date,
+        signalType: card.signalType,
+        brief: businessMeaning || eventLine || whyWatch,
+        judgment: whyWatch || businessMeaning || eventLine,
+        event: eventLine,
+        businessMeaning,
+        sourceUrl,
+        sourceTitle,
+        sources: sourceUrl ? `原文出处：${sourceName}` : "原文出处已记录",
+        sourcePath: card.sourcePath,
+        audience: "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        coordinates: [card.signalType].filter(Boolean),
+        structuredRefs: [card.id],
+        relations: [],
+        relationFields: "",
+        analysis: [
+          ["发生了什么", eventLine],
+          ["为什么值得看", whyWatch],
+          ["影响谁", businessMeaning],
+          ["证据边界", evidenceBoundary],
+        ].filter(([, value]) => value),
+        calibration: "观点只能作为判断参照，不替代事实来源。",
+        counter: evidenceBoundary,
+        link: `signal-detail.html?id=${slugify(title) || slug}`,
+        frontend: {
+          displayTitle: title,
+          sourceTitle,
+          eventLine,
+          whyWatch,
+          businessMeaning,
+          evidenceNote: sourceUrl ? `${card.sourceLevel} 级来源，当前材料来自 ${sourceName}。` : "来源仍在整理，不能作为单独结论。",
+          sourceLinks: sourceUrl ? [{ label: sourceName, url: sourceUrl, level: card.sourceLevel, note: eventLine }] : [],
+          watchWindow: card.watchReason ? [{ label: "继续观察", text: card.watchReason }] : watchWindowForSignal({ ...card, event: eventLine, businessMeaning }),
+          evidenceBoundary: compactEvidenceBoundary(evidenceBoundary),
+        },
+      };
+      return { ...signal, tags: inferTags(signal, "signal") };
+    }));
+  }))).flat().filter(Boolean);
+  return entries.sort((a, b) => a.id.localeCompare(b.id));
+}
+
+async function hasOpinionKnowledgeCards(currentDate) {
+  const dir = path.join(knowledgeRoot, "02-Opinion-Cards");
+  const names = (await markdownNames(dir)).filter((name) => name.startsWith(currentDate) && !name.includes("index"));
+  return names.length > 0;
+}
+
+async function parseOpinionKnowledgeCards(currentDate) {
+  const dir = path.join(knowledgeRoot, "02-Opinion-Cards");
+  const names = (await markdownNames(dir)).filter((name) => name.startsWith(currentDate));
+  const entries = await Promise.all(names.map(async (name) => {
+    const markdown = await readOptional(path.join(dir, name));
+    const frontend = frontendBlock(markdown);
+    const sourceUrl = frontmatterField(markdown, "canonical_url")
+      || frontmatterField(markdown, "original_url")
+      || nestedFrontmatterField(markdown, "source_url")
+      || markdown.match(/https?:\/\/[^\s)"']+/u)?.[0]
+      || "";
+    const card = {
+      id: frontmatterField(markdown, "id"),
+      type: frontmatterField(markdown, "type"),
+      title: frontmatterField(markdown, "title"),
+      date: frontmatterField(markdown, "date") || currentDate,
+      status: frontmatterField(markdown, "status"),
+      factDraftGate: frontmatterField(markdown, "fact_draft_gate"),
+      frontendCopyGate: frontmatterField(markdown, "frontend_copy_gate"),
+      cardcopyGate: frontmatterField(markdown, "cardcopy_gate"),
+      opinionTier: frontmatterField(markdown, "opinion_tier"),
+      displayLane: frontmatterField(markdown, "display_lane"),
+      selectionReason: frontmatterField(markdown, "selection_reason"),
+      ratingScore: Number(frontmatterField(markdown, "opinion_rating_score") || 0),
+      publishStatus: frontmatterField(markdown, "publish_status"),
+      translationStatus: frontmatterField(markdown, "translation_status"),
+      originalTranslation: publicCardText(frontend.originalTranslation || frontend.translationZh || frontmatterField(markdown, "original_translation") || ""),
+      frontend,
+      sourceUrl,
+      personName: frontmatterField(markdown, "person_name"),
+      organization: frontmatterField(markdown, "organization"),
+      publishedAt: frontmatterField(markdown, "published_at"),
+      sourcePath: path.relative(projectRoot, path.join(dir, name)).replaceAll("\\", "/"),
+    };
+    if (!card.id || !frontstageOpinionReady(card)) return null;
+    const point = {
+      id: card.id,
+      slug: slugify(frontend.displayTitle || card.title) || card.id.toLowerCase(),
+      title: publicCardText(frontend.displayTitle || card.title),
+      date: card.date,
+      sourcePath: card.sourcePath,
+      sourceUrl,
+      originalDate: publicDate(card.publishedAt),
+      speakerLine: publicCardText(frontend.speakerLine || [card.personName, card.organization].filter(Boolean).join(" / ")),
+      originalView: publicCardText(frontend.originalQuote || ""),
+      originalTranslation: card.originalTranslation,
+      interpretation: publicCardText(frontend.interpretation),
+      calibrates: publicCardText(frontend.factBoundary),
+      opinionTier: card.opinionTier,
+      displayLane: card.displayLane,
+      selectionReason: publicCardText(card.selectionReason),
+      ratingScore: card.ratingScore,
+      publishStatus: card.publishStatus,
+      usage: "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+      relations: [],
+      relatedSignals: [],
+      relatedTrends: [],
+      relatedTrendReports: [],
+    };
+    return { ...point, tags: inferTags(point, "point") };
+  }));
+  const laneOrder = { daily_feature: 0, signal_sidebar: 1, archive_only: 2, hidden: 3 };
+  return entries.filter(Boolean).sort((a, b) => {
+    const laneDelta = (laneOrder[a.displayLane] ?? 9) - (laneOrder[b.displayLane] ?? 9);
+    if (laneDelta) return laneDelta;
+    const scoreDelta = Number(b.ratingScore || 0) - Number(a.ratingScore || 0);
+    return scoreDelta || a.id.localeCompare(b.id);
+  });
+}
+
+function frontstageAssetReady(card = {}) {
+  return card.factDraftGate === "passed"
+    && card.frontendCopyGate === "passed"
+    && card.cardcopyGate === "passed"
+    && card.assetLevel
+    && !["candidate", "draft"].includes(card.assetLevel)
+    && card.status !== "draft"
+    && card.frontendState !== "hidden"
+    && hasUsableFrontend(card);
+}
+
+function frontstageSignalReady(card = {}) {
+  return card.type === "signal_card"
+    && card.factDraftGate === "passed"
+    && card.frontendCopyGate === "passed"
+    && card.cardcopyGate === "passed"
+    && card.evidenceGate === "core_evidence_passed"
+    && card.status !== "hidden"
+    && card.frontendState !== "hidden"
+    && hasUsableFrontend(card, ["displayTitle", "eventLine", "whyWatch", "businessMeaning"]);
+}
+
+function frontstageOpinionReady(card = {}) {
+  const tier = card.opinionTier || "";
+  const lane = card.displayLane || "";
+  const publishStatus = card.publishStatus || "";
+  const translationStatus = card.translationStatus || "";
+  const translation = card.originalTranslation || card.frontend?.originalTranslation || card.frontend?.translationZh || "";
+  return card.type === "opinion_card"
+    && card.factDraftGate === "passed"
+    && card.frontendCopyGate === "passed"
+    && card.cardcopyGate === "passed"
+    && ["feature", "sidebar"].includes(tier)
+    && ["daily_feature", "signal_sidebar"].includes(lane)
+    && ["frontstage_feature", "frontstage_sidebar"].includes(publishStatus)
+    && translationStatus !== "pending_translation"
+    && hasCompleteOpinionTranslation(card.frontend?.originalQuote || "", translation, card.sourceUrl)
+    && card.status !== "hidden"
+    && card.frontendState !== "hidden"
+    && hasUsableFrontend(card, ["displayTitle", "interpretation", "factBoundary"]);
+}
+
+function compactEvidenceBoundary(text = "") {
+  return cleanPublicText(text)
+    .split(/[；;。\n]/u)
+    .map((item) => cleanPublicText(item))
+    .filter(Boolean)
+    .slice(0, 4);
+}
+
+function watchWindowForSignal(signal = {}) {
+  const text = `${signal.title || ""} ${signal.event || ""} ${signal.businessMeaning || ""}`;
+  if (/知识库|Obsidian|Claude Code|工作台/u.test(text)) {
+    return [
+      { label: "7D", text: "看是否出现更多一手用法、产品教程或开源脚本。" },
+      { label: "30D", text: "看小团队是否把它放进真实研究、写作或交付流程。" },
+      { label: "90D", text: "看它是否沉淀为 AI 工作台和知识库集成趋势。" },
+    ];
+  }
+  if (/权限|网关|沙箱|数据库|治理|审计/u.test(text)) {
+    return [
+      { label: "7D", text: "看官方是否补充权限、日志和停用边界。" },
+      { label: "30D", text: "看是否出现客户试点、采购讨论或部署案例。" },
+      { label: "90D", text: "看治理、沙箱和回滚是否变成企业采购门槛。" },
+    ];
+  }
+  return [
+    { label: "7D", text: "看是否出现更多一手材料。" },
+    { label: "30D", text: "看是否影响客户采用、预算或渠道合作。" },
+    { label: "90D", text: "看它是否进入变化簇，升级为趋势追踪。" },
+  ];
+}
+
+function buildSignalFrontend(signal, knowledge = {}) {
+  const frontend = knowledge.frontend || {};
+  const sourceUrl = knowledge.sourceUrl || signal.sourceUrl || "";
+  const sourceLabel = knowledge.sourceName || sourceLabelFromUrl(sourceUrl) || "原始出处";
+  const sourceLevel = knowledge.sourceLevel || sourceLevelFromUrl(sourceUrl);
+  const eventLine = frontend.eventLine || knowledge.event || "";
+  const whyWatch = frontend.whyWatch || knowledge.whySelected || "";
+  const businessMeaning = frontend.businessMeaning || knowledge.businessMeaning || "";
+  const evidenceBoundary = compactEvidenceBoundary(frontend.evidenceBoundary || knowledge.evidenceBoundary || signal.counter);
+  return {
+    displayTitle: frontend.displayTitle || signal.title,
+    eventLine,
+    whyWatch,
+    businessMeaning,
+    techRouteMeaning: frontend.techRouteMeaning || knowledge.technicalRoute || "",
+    evidenceNote: sourceUrl
+      ? `${sourceLevel} 级来源，当前材料来自 ${sourceLabel}。`
+      : "来源仍在整理，不能作为单独结论。",
+    sourceLinks: sourceUrl ? [{
+      label: sourceLabel,
+      url: sourceUrl,
+      level: sourceLevel,
+      note: eventLine,
+    }] : [],
+    relatedCases: knowledge.relatedCases?.length ? knowledge.relatedCases : extractReferenceIds(signal.relationFields, ["CASE"]),
+    relatedOpinions: knowledge.relatedOpinions?.length ? knowledge.relatedOpinions : extractReferenceIds(signal.relationFields, ["OPN", "BP"]),
+    watchWindow: watchWindowForSignal({ ...signal, event: eventLine, businessMeaning }),
+    evidenceBoundary: evidenceBoundary.length ? evidenceBoundary : ["暂无公开客户采用数据", "仍需继续观察付费、成本和复核材料"],
+  };
+}
+
 function firstHeading(markdown) {
   return cleanPublicText(withoutFrontmatter(markdown).match(/^#\s+(.+)$/mu)?.[1] || "");
+}
+
+function dailyArticleTitle(markdown, currentDate) {
+  return cleanPublicText(frontmatterField(markdown, "title") || firstHeading(markdown) || `${currentDate} 今日观察`)
+    .replace(/^(?:今日观察|每日观察)\s*[｜|:：]\s*/u, "")
+    .replace(/^(?:今日观察|每日观察)\s+/u, "")
+    .trim();
 }
 
 function h2SectionText(sections, names, fallback = "") {
@@ -739,14 +1127,99 @@ function introParagraphs(markdown, limit = 2) {
     .slice(0, limit);
 }
 
+function isDailyDisplaySection(heading = "") {
+  return /^(?:网站展示内容|首页与栏目页内容|前台展示内容|Frontstage Content)$/iu.test(String(heading).trim());
+}
+
+function splitListText(text = "") {
+  return cleanPublicText(text)
+    .split(/[，,、/｜|]/u)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function parseMarkdownTable(text = "") {
+  const lines = String(text || "")
+    .split(/\n/u)
+    .map((line) => line.trim())
+    .filter((line) => /^\|.+\|$/u.test(line));
+  if (lines.length < 2) return [];
+  const cells = (line) => line
+    .replace(/^\|/u, "")
+    .replace(/\|$/u, "")
+    .split("|")
+    .map((cell) => cleanPublicText(cell.trim()));
+  const headers = cells(lines[0]).map((header) => header.toLowerCase());
+  return lines
+    .slice(2)
+    .map(cells)
+    .filter((row) => row.some(Boolean))
+    .map((row) => Object.fromEntries(headers.map((header, index) => [header, row[index] || ""])));
+}
+
+function dailyDisplayContent(markdown, title, paragraphs) {
+  const sections = splitSections(withoutFrontmatter(markdown));
+  const display = sections.find((section) => isDailyDisplaySection(section.heading));
+  const subsections = display ? splitSubsections(display.body) : [];
+  const subBody = (names = [], fallback = "") => {
+    const found = subsections.find(([heading]) => names.some((name) => heading.includes(name)));
+    return cleanPublicText(found?.[1] || fallback);
+  };
+  const homeCards = parseMarkdownTable(subBody(["首页右侧卡片", "首页卡片"]))
+    .map((item) => ({
+      label: item.label || item["类别"] || item.category || "",
+      title: item.title || item["标题"] || "",
+      body: item.body || item["正文"] || item.copy || "",
+    }))
+    .filter((item) => item.title && item.body)
+    .slice(0, 3);
+  const watchItems = parseMarkdownTable(subBody(["栏目页观察项", "观察项"]))
+    .map((item) => ({
+      period: item.period || item["周期"] || "",
+      title: item.title || item["标题"] || "",
+      body: item.body || item["正文"] || item.copy || "",
+    }))
+    .filter((item) => item.title && item.body)
+    .slice(0, 3);
+  const riskItems = parseMarkdownTable(subBody(["栏目页风险", "风险边界"]))
+    .map((item) => ({
+      title: item.title || item["标题"] || "",
+      body: item.body || item["正文"] || item.copy || "",
+    }))
+    .filter((item) => item.title && item.body)
+    .slice(0, 3);
+  return {
+    homeTitle: subBody(["首页主标题", "首页标题"], title),
+    homeSummary: subBody(["首页左侧摘要", "首页摘要"], paragraphs.slice(0, 2).join("\n\n")),
+    homeCards,
+    columnPage: {
+      title: subBody(["栏目页标题"], title),
+      thesis: subBody(["栏目页主判断", "栏目页看点"], paragraphs[0] || title),
+      body: subBody(["栏目页正文一", "栏目页第一段"], paragraphs[1] || paragraphs[0] || ""),
+      impact: subBody(["栏目页正文二", "栏目页影响"], paragraphs[2] || paragraphs[1] || ""),
+      note: subBody(["栏目页侧记", "栏目页边界"], ""),
+      keywords: splitListText(subBody(["栏目页标签", "标签"])).slice(0, 6),
+      strength: subBody(["判断强度"], ""),
+      state: subBody(["当前状态"], ""),
+      trendTitle: subBody(["栏目页市场读标题", "市场读标题"], ""),
+      trendBody: subBody(["栏目页市场读正文", "市场读正文"], ""),
+      watchItems,
+      riskItems,
+    },
+  };
+}
+
 function parseDailyObservation(markdown, currentDate) {
   if (!markdown) return null;
-  const title = frontmatterField(markdown, "title") || firstHeading(markdown) || `${currentDate} 今日观察`;
+  const title = dailyArticleTitle(markdown, currentDate);
   const paragraphs = introParagraphs(markdown, 3);
-  const sections = splitSections(withoutFrontmatter(markdown)).map(({ heading, body }) => ({
-    title: cleanPublicText(heading),
-    body: cleanPublicText(body),
-  }));
+  const displayContent = dailyDisplayContent(markdown, title, paragraphs);
+  const sections = splitSections(withoutFrontmatter(markdown))
+    .filter(({ heading }) => !isDailyDisplaySection(heading))
+    .map(({ heading, body }) => ({
+      title: cleanPublicText(heading),
+      body: cleanPublicText(body),
+    }));
   return {
     id: `daily-${currentDate}`,
     slug: `daily-${currentDate}`,
@@ -754,14 +1227,31 @@ function parseDailyObservation(markdown, currentDate) {
     issue: frontmatterField(markdown, "issue"),
     period: frontmatterField(markdown, "period"),
     contentType: frontmatterField(markdown, "type"),
-    judgment: paragraphs[0] || "今日观察已发布，市场主线仍需结合来源继续阅读。",
-    dek: paragraphs.slice(0, 2).join("\n\n") || "今日观察已发布，市场主线仍需结合来源继续阅读。",
+    judgment: paragraphs[0] || "今日观察已发布，请结合公开来源继续阅读。",
+    dek: paragraphs.slice(0, 2).join("\n\n") || "今日观察已发布，请结合公开来源继续阅读。",
     summary: paragraphs,
     sections,
+    ...displayContent,
   };
 }
 
-function parseSelectedChangeCards(markdown, currentDate) {
+function sourceLabelFromUrl(url = "") {
+  try {
+    return url ? new URL(url).hostname.replace(/^www\./, "") : "";
+  } catch {
+    return "";
+  }
+}
+
+function sourceLevelFromUrl(url = "") {
+  const lower = String(url || "").toLowerCase();
+  if (!lower) return "待补";
+  if (/the-decoder|techcrunch|wired|bloomberg|wsj|ft\.com|axios|reuters|cnbc|theinformation/u.test(lower)) return "A";
+  if (/news\.ycombinator|reddit|x\.com|twitter|youtube/u.test(lower)) return "C";
+  return "S";
+}
+
+function parseSelectedChangeCards(markdown, currentDate, knowledgeCards = new Map()) {
   if (!markdown) return [];
   const body = withoutFrontmatter(markdown);
   const matches = [...body.matchAll(/(?:^|\n)- `([^`]+)`[｜|]([^\n]+)\n([\s\S]*?)(?=\n- `|\n## |\n# |$)/gu)];
@@ -772,7 +1262,7 @@ function parseSelectedChangeCards(markdown, currentDate) {
     const reason = cleanPublicText(block.match(/^\s*入选理由[：:]\s*(.+)$/mu)?.[1] || "这条变化被选入今日观察，适合继续跟踪它影响的客户、场景和预算变化。");
     const event = cleanPublicText(block.match(/^\s*事件[：:]\s*(.+)$/mu)?.[1] || "");
     const businessMeaning = cleanPublicText(block.match(/^\s*商业含义[：:]\s*(.+)$/mu)?.[1] || "");
-    const rawRef = cleanPublicText(block.match(/^\s*Raw[：:]\s*(.+)$/mu)?.[1] || "");
+    const rawRef = cleanPublicText(block.match(/^\s*(?:Raw|来源档案)[：:]\s*(.+)$/mu)?.[1] || "");
     const relatedCases = cleanPublicText(block.match(/^\s*关联案例[：:]\s*(.+)$/mu)?.[1]?.replaceAll("`", "") || "");
     const relatedOpinions = cleanPublicText(block.match(/^\s*关联观点[：:]\s*(.+)$/mu)?.[1]?.replaceAll("`", "") || "");
     const relationFields = relationFieldFromSelectedCards(relatedCases, relatedOpinions);
@@ -783,19 +1273,23 @@ function parseSelectedChangeCards(markdown, currentDate) {
       ["影响谁", businessMeaning],
       ["来源依据", rawRef || (sourceUrl ? `原文：${sourceUrl}` : "来源见今日观察原文与变化卡")],
     ].filter(([, text]) => text);
+    const knowledgeCandidate = knowledgeCards.get(id);
+    if (!frontstageAssetReady(knowledgeCandidate)) return null;
+    const knowledge = knowledgeCandidate;
     const signal = {
       id,
       slug: slugify(title) || `change-${index + 1}`,
       title,
       date: currentDate,
       brief: businessMeaning || event || reason,
-      judgment: reason,
-      event,
-      businessMeaning,
-      sourceUrl,
-      sources: sourceUrl ? "原始出处已记录" : "来源见今日观察原文与变化卡",
+      judgment: knowledge.whySelected || reason,
+      event: knowledge.event || event,
+      businessMeaning: knowledge.businessMeaning || businessMeaning,
+      technicalRouteMeaning: knowledge.technicalRoute || "",
+      sourceUrl: knowledge.sourceUrl || sourceUrl,
+      sources: (knowledge.sourceUrl || sourceUrl) ? "原始出处已记录" : "来源见今日观察原文与商业信号卡",
       rawRef,
-      sourcePath: `01-SiteV2/content/04-business-signals/${currentDate}-selected-change-cards.md#${id}`,
+      sourcePath: knowledge.sourcePath || `01-SiteV2/content/04-business-signals/signals/${currentDate}-selected-change-cards.md#${id}`,
       audience: "商业决策者 / 产品负责人 / 企业服务创业者",
       coordinates: [],
       structuredRefs: [id],
@@ -808,16 +1302,18 @@ function parseSelectedChangeCards(markdown, currentDate) {
         : "暂无公开信息补足反证边界，后续由案例与信号研究线程继续补证。",
       link: `signal-detail.html?id=${slugify(title) || `change-${index + 1}`}`,
     };
-    return { ...signal, tags: inferTags(signal, "signal") };
-  });
+    const withFrontend = { ...signal, frontend: buildSignalFrontend(signal, knowledge) };
+    return { ...withFrontend, tags: inferTags(withFrontend, "signal") };
+  }).filter(Boolean);
 }
 
-function parseCaseResearch(markdown, currentDate, sourcePath = "") {
+function parseCaseResearch(markdown, currentDate, sourcePath = "", knowledgeCards = new Map()) {
   if (!markdown) return [];
   const body = withoutFrontmatter(markdown);
   const matches = [...body.matchAll(/^- `?(CASE-\d{8}-\d{2})`?\s*（(.+?)）[：:]\s*(.+)$/gmu)];
   return matches.map((match, index) => {
     const id = match[1].trim();
+    if (!frontstageAssetReady(knowledgeCards.get(id))) return null;
     const caseDate = `${id.slice(5, 9)}-${id.slice(9, 11)}-${id.slice(11, 13)}`;
     const title = cleanPublicText(match[2].trim());
     const summary = cleanPublicText(match[3].trim());
@@ -836,7 +1332,7 @@ function parseCaseResearch(markdown, currentDate, sourcePath = "") {
       link: "",
     };
     return { ...item, tags: inferTags(item, "case") };
-  });
+  }).filter(Boolean);
 }
 
 function uniqueById(items) {
@@ -859,8 +1355,9 @@ function parseOpinionCandidates(markdown, currentDate) {
       date: currentDate,
       sourcePath: field(body, "source_path"),
       sourceUrl: field(body, "source_url"),
-      originalDate: field(body, "original_date"),
+      originalDate: publicDate(field(body, "original_date")),
       originalView: cleanPublicText(body.match(/^原始观点\/摘要[：:]\s*(.+)$/mu)?.[1] || paragraphAfterFields(body)),
+      originalTranslation: cleanPublicText(body.match(/^中文翻译[：:]\s*(.+)$/mu)?.[1] || field(body, "original_translation")),
       interpretation: cleanPublicText(body.match(/^原始观点\/摘要[：:]\s*(.+)$/mu)?.[1] || "暂无可用公开摘录，保留为观点线索。"),
       calibrates: "用于观察建造者观点变化，不作为事实主证据。",
       usage: "用于今日观察或趋势追踪中的前沿观点参照。",
@@ -891,60 +1388,149 @@ function parseChangeClusterCandidates(markdown, currentDate) {
   }).filter((item) => item.title);
 }
 
+function trendCandidateRelationFields(markdown) {
+  const signals = inlineArrayField(markdown, "related_signal_cards");
+  const opinions = inlineArrayField(markdown, "related_opinion_cards");
+  const scenes = inlineArrayField(markdown, "supporting_scenes");
+  return [
+    signals.length ? `signals:${signals.join(",")}` : "",
+    opinions.length ? `points:${opinions.join(",")}` : "",
+    scenes.length ? `scenes:${scenes.join(",")}` : "",
+  ].filter(Boolean).join(",");
+}
+
+function trendCandidateJudgment(markdown) {
+  const raw = frontmatterField(markdown, "trend_hypothesis") ||
+    withoutFrontmatter(markdown).match(/^##\s+趋势候选\s*\n([\s\S]*?)(?=^##\s+|$)/mu)?.[1]?.trim() ||
+    paragraphAfterFields(withoutFrontmatter(markdown));
+  return cleanPublicText(raw
+    .replace(/^两天材料共同指向一个候选方向[：:]\s*/u, "")
+    .replace(/^\d+\s*月\s*\d+\s*日的.+?信号指向同一个问题[：:]\s*/u, ""));
+}
+
+function parseTrendCandidate(markdown, currentDate, sourcePath = "") {
+  if (!markdown || frontmatterField(markdown, "type") !== "trend_candidate") return null;
+  const id = frontmatterField(markdown, "id");
+  const title = frontmatterField(markdown, "title") ||
+    withoutFrontmatter(markdown).match(/^#\s+(.+)$/mu)?.[1]?.trim() ||
+    id;
+  const formalTags = nestedInlineArrayFields(markdown, "formal_tags");
+  const formalTagIds = Object.values(formalTags).flat();
+  const relationFields = trendCandidateRelationFields(markdown);
+  const date = frontmatterField(markdown, "date") || currentDate;
+  const updatedAt = frontmatterField(markdown, "updated_at");
+  const relatedSignalCards = inlineArrayField(markdown, "related_signal_cards");
+  const relatedOpinionCards = inlineArrayField(markdown, "related_opinion_cards");
+  const supportingScenes = inlineArrayField(markdown, "supporting_scenes");
+  const frontend = frontendBlock(markdown);
+  const candidate = {
+    id,
+    type: "trend_candidate",
+    title: cleanPublicText(title),
+    date,
+    updated: (updatedAt || date).slice(0, 10).replaceAll("-", "."),
+    status: frontmatterField(markdown, "status"),
+    assetLevel: frontmatterField(markdown, "asset_level") || "candidate",
+    trendEvidenceGate: frontmatterField(markdown, "trend_evidence_gate"),
+    stage: "正在形成的趋势",
+    score: "材料正在累积",
+    oneLine: trendCandidateJudgment(markdown),
+    judgment: trendCandidateJudgment(markdown),
+    nextObservation: cleanPublicText(frontmatterField(markdown, "next_observation")),
+    boundaryNotes: cleanPublicText(frontmatterField(markdown, "boundary_notes")),
+    frontend,
+    whyForming: publicCardText(frontend.whyForming || frontend.why_forming || ""),
+    relationSummary: publicCardText(frontend.relationSummary || frontend.relation_summary || ""),
+    publicBoundary: publicCardText(frontend.publicBoundary || frontend.public_boundary || ""),
+    sourceTypes: inlineArrayField(markdown, "source_types"),
+    relatedSignalCards,
+    relatedOpinionCards,
+    supportingScenes,
+    formalTags,
+    sourcePath,
+    relationFields,
+    relations: parseRelationTokens(relationFields),
+  };
+  return { ...candidate, tags: formalTagIds.length ? tagsFromIds(formalTagIds) : inferTags(candidate, "trend") };
+}
+
+function parseTrendCandidates(entries = [], currentDate) {
+  return entries
+    .map((entry) => parseTrendCandidate(entry.markdown, currentDate, entry.sourcePath))
+    .filter(Boolean);
+}
+
 async function discoverDates() {
   const trendDirs = trendReportDirs();
   const dirs = [
     path.join(contentRoot, "03-daily-observation"),
-    path.join(contentRoot, "04-business-signals"),
-    path.join(contentRoot, "05-case-research"),
+    path.join(contentRoot, "04-business-signals", "signals"),
+    path.join(contentRoot, "05-frontier-opinions"),
+    path.join(contentRoot, "06-asset-candidates", "scene"),
+    path.join(contentRoot, "06-asset-candidates", "trend"),
     trendDirs.full,
     trendDirs.flash,
     trendDirs.legacy,
-    path.join(contentRoot, "07-business-briefs"),
+    path.join(contentRoot, "09-business-briefs"),
   ];
   const names = (await Promise.all(dirs.map(markdownNames))).flat();
   return [...new Set(names
     .map((name) => name.match(/^(\d{4}-\d{2}-\d{2})/u)?.[1])
-    .filter(Boolean)
+    .filter((date) => date && date >= publicSiteStartDate)
   )].sort();
 }
 
 function dateFiles(currentDate) {
   return {
     dailyDir: path.join(contentRoot, "03-daily-observation"),
-    businessSignalsDir: path.join(contentRoot, "04-business-signals"),
-    caseResearchDir: path.join(contentRoot, "05-case-research"),
-    businessBriefsDir: path.join(contentRoot, "07-business-briefs"),
-    risks: path.join(contentRoot, "09-databases", "risks", `${currentDate}-risk-database-update.md`),
+    businessSignalsDir: path.join(contentRoot, "04-business-signals", "signals"),
+    opinionCalibrationDir: path.join(contentRoot, "05-frontier-opinions"),
+    trendCandidatesDir: path.join(contentRoot, "06-asset-candidates", "trend"),
+    caseResearchDir: path.join(contentRoot, "06-asset-candidates", "scene"),
+    businessBriefsDir: path.join(contentRoot, "09-business-briefs"),
+    risks: path.join(contentRoot, "11-databases", "risks", `${currentDate}-risk-database-update.md`),
   };
 }
 
 async function buildDay(currentDate) {
   const files = dateFiles(currentDate);
-  const [dailyObservation, selectedChangeCards, opinionCandidates, clusterCandidates, caseResearch, trendReportEntry, businessBrief, risks] = await Promise.all([
+  const [dailyObservation, selectedChangeCards, opinionCandidates, clusterCandidates, trendCandidateEntries, caseResearch, trendReportEntry, businessBrief, risks, changeKnowledgeCards, caseKnowledgeCards, signalKnowledgeCards, opinionKnowledgeCards, hasOpinionKnowledge] = await Promise.all([
     readDateMarkdown(files.dailyDir, currentDate, ["daily-observation"]),
     readDateMarkdown(files.businessSignalsDir, currentDate, ["selected-change-cards"]),
-    readDateMarkdown(files.businessSignalsDir, currentDate, ["opinion-candidates"]),
-    readDateMarkdown(files.businessSignalsDir, currentDate, ["change-cluster-candidates"]),
-    readDateMarkdownFromDirs([files.caseResearchDir], currentDate, ["case-research"]),
+    readDateMarkdown(files.opinionCalibrationDir, currentDate, ["opinion-candidates"]),
+    readDateMarkdown(files.trendCandidatesDir, currentDate, ["change-cluster-candidates"]),
+    readTrendCandidateMarkdowns(files.trendCandidatesDir, currentDate),
+    readDateMarkdownFromDirs([files.businessSignalsDir, files.caseResearchDir], currentDate, ["cases", "case-research"]),
     readTrendReportMarkdown(currentDate),
     readDateMarkdown(files.businessBriefsDir, currentDate),
     readOptional(files.risks),
+    parseChangeKnowledgeCards(currentDate),
+    parseCaseKnowledgeCards(currentDate),
+    parseSignalKnowledgeCards(currentDate),
+    parseOpinionKnowledgeCards(currentDate),
+    hasOpinionKnowledgeCards(currentDate),
   ]);
   const dailyArticle = parseDailyObservation(dailyObservation, currentDate);
-  const signals = selectedChangeCards ? parseSelectedChangeCards(selectedChangeCards, currentDate) : [];
+  const signals = signalKnowledgeCards.length
+    ? signalKnowledgeCards
+    : (selectedChangeCards ? parseSelectedChangeCards(selectedChangeCards, currentDate, changeKnowledgeCards) : []);
   const parsedInsights = dailyArticle
     ? [{ id: dailyArticle.id, title: dailyArticle.title, judgment: dailyArticle.judgment, relatedSignals: signals.map((item) => item.id).join(", ") }]
     : [];
-  const parsedPoints = opinionCandidates ? parseOpinionCandidates(opinionCandidates, currentDate) : [];
-  const parsedCases = caseResearch.markdown ? parseCaseResearch(caseResearch.markdown, currentDate, caseResearch.sourcePath) : [];
-  const parsedTrends = trendReportEntry.markdown
-    ? [parseDailyObservation(trendReportEntry.markdown, currentDate)].filter(Boolean).map((item) => ({ ...item, tags: inferTags(item, "trend") }))
-    : (clusterCandidates ? parseChangeClusterCandidates(clusterCandidates, currentDate) : []);
+  const parsedOpinions = hasOpinionKnowledge
+    ? opinionKnowledgeCards
+    : (opinionCandidates ? parseOpinionCandidates(opinionCandidates, currentDate) : []);
+  const parsedCases = caseResearch.markdown ? parseCaseResearch(caseResearch.markdown, currentDate, caseResearch.sourcePath, caseKnowledgeCards) : [];
+  const trendCandidates = parseTrendCandidates(trendCandidateEntries, currentDate);
+  const parsedTrends = trendCandidates.length
+    ? trendCandidates
+    : (trendReportEntry.markdown
+      ? [parseDailyObservation(trendReportEntry.markdown, currentDate)].filter(Boolean).map((item) => ({ ...item, tags: inferTags(item, "trend") }))
+      : (clusterCandidates ? parseChangeClusterCandidates(clusterCandidates, currentDate) : []));
   const parsedTrendReport = parseTrendReport(trendReportEntry.markdown, currentDate, trendReportEntry.sourcePath);
   const parsedRisks = risks ? parseRisks(risks).map((item) => ({ ...item, date: currentDate })) : [];
   const title = dailyArticle?.title || parsedInsights[0]?.title || signals[0]?.title || parsedTrendReport?.title || `${currentDate} 观澜判断`;
-  const dek = dailyArticle?.dek || parsedInsights[0]?.judgment || signals[0]?.judgment || parsedTrendReport?.oneLine || "当日内容仍在整理，暂以已入库信号作为观察样本。";
+  const dek = dailyArticle?.dek || parsedInsights[0]?.judgment || signals[0]?.judgment || parsedTrendReport?.oneLine || "当日内容仍在整理，暂以已整理信号作为观察样本。";
   return {
     date: currentDate,
     label: currentDate.replaceAll("-", "."),
@@ -954,7 +1540,7 @@ async function buildDay(currentDate) {
     businessBrief: parseDailyObservation(businessBrief, currentDate),
     signals,
     insights: parsedInsights,
-    points: parsedPoints,
+    points: parsedOpinions,
     cases: parsedCases,
     trends: parsedTrends,
     trendReport: parsedTrendReport,
@@ -1068,7 +1654,7 @@ const dayPackages = await Promise.all(dates.map(buildDay));
 const activeDay = dayPackages.find((item) => item.date === activeDate) || dayPackages.at(-1);
 const signals = activeDay.signals;
 const parsedInsights = activeDay.insights;
-const parsedPoints = activeDay.points;
+const parsedOpinions = activeDay.points;
 const parsedTrends = activeDay.trends;
 const parsedTrendReport = activeDay.trendReport;
 const parsedRisks = activeDay.risks;
@@ -1076,12 +1662,21 @@ const allTrendReports = dayPackages.map((item) => item.trendReport).filter(Boole
 const visibleTrendReports = allTrendReports.length ? allTrendReports : [fallbackTrendReportFromDay(activeDay, activeDate)];
 const allSignals = dayPackages.flatMap((item) => item.signals);
 const allCases = uniqueById(dayPackages.flatMap((item) => item.cases || []).reverse());
-const allPoints = dayPackages.flatMap((item) => item.points).reverse();
+const allDailyArticles = dayPackages.map((item) => item.article).filter(Boolean).reverse();
+const opinionLaneOrder = { daily_feature: 0, signal_sidebar: 1, archive_only: 2, hidden: 3 };
+const allOpinions = dayPackages.flatMap((item) => item.points).sort((a, b) => {
+  const dateDelta = String(b.date || "").localeCompare(String(a.date || ""));
+  if (dateDelta) return dateDelta;
+  const laneDelta = (opinionLaneOrder[a.displayLane] ?? 9) - (opinionLaneOrder[b.displayLane] ?? 9);
+  if (laneDelta) return laneDelta;
+  const scoreDelta = Number(b.ratingScore || 0) - Number(a.ratingScore || 0);
+  return scoreDelta || String(a.id || "").localeCompare(String(b.id || ""));
+});
 const allTrends = dayPackages.flatMap((item) => item.trends).reverse();
 const contentDates = buildContentDateIndex(dayPackages, {
   signals: allSignals,
   cases: allCases,
-  points: allPoints,
+  points: allOpinions,
   trends: allTrends,
   trendReports: visibleTrendReports,
 });
@@ -1101,7 +1696,8 @@ const siteData = {
     dates: contentDates,
     signals: allSignals,
     cases: allCases,
-    points: allPoints,
+    dailyArticles: allDailyArticles,
+    points: allOpinions,
     trends: allTrends,
     trendReports: visibleTrendReports,
   },
@@ -1113,7 +1709,7 @@ const siteData = {
     dek: parsedInsights[0]?.judgment || "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
     points: parsedInsights.slice(0, 3).map((item) => item.judgment),
     risk: parsedRisks.map((item) => item.reason).filter(Boolean).slice(0, 3).join("；") || "客户采用、预算归属和部署周期仍需继续观察。",
-    calibration: parsedPoints.slice(0, 2),
+    calibration: parsedOpinions.slice(0, 2),
     link: "daily-detail.html",
   },
   trendReport: parsedTrendReport || visibleTrendReports[0],
@@ -1126,7 +1722,7 @@ const siteData = {
       : (parsedInsights.length ? parsedInsights : activeDay.signals).slice(0, 3).map((item) => item.judgment || item.brief),
     heat: parsedTrends.slice(0, 3).map((item) => [item.title, item.title.includes("Coding") ? "争议" : "升温", item.judgment]),
     evidence: {
-      points: parsedPoints.slice(0, 3),
+      points: parsedOpinions.slice(0, 3),
       risks: parsedRisks.slice(0, 3),
       trends: parsedTrends.slice(0, 4),
     },

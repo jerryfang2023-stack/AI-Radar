@@ -13,6 +13,7 @@ build/
 # Logs and caches
 *.log
 .cache/
+.tmp-*.png
 .tmp/
 tmp/
 temp/
@@ -25,15 +26,21 @@ Thumbs.db
 
 # Generated local backups and heavyweight visual evidence
 agent-workflow/backups/
+agent-workflow/cache/
 agent-workflow/reports/**/*.png
 agent-workflow/reports/**/*.jpg
 agent-workflow/reports/**/*.jpeg
 agent-workflow/reports/**/*.webp
+agent-workflow/reports/**/*.dom.txt
 agent-workflow/reports/quality-gates-*-[0-9]*.md
 agent-workflow/reports/v2-content-gate-*-[0-9]*.md
 agent-workflow/reports/writer-style-gate-*-[0-9]*.md
+agent-workflow/reports/card-copy-style-gate-*-[0-9]*.md
+agent-workflow/reports/*-daily-observation-qc-r*.md
+agent-workflow/reports/*-daily-assets-chain-blocked.md
+agent-workflow/reports/quality-gates-*-latest.md
+agent-workflow/reports/card-copy-style-gate-latest.md
 agent-workflow/reports/writer-style-gate-latest.md
-!agent-workflow/reports/quality-gates-*-latest.md
 !agent-workflow/reports/v2-content-gate-latest.md
 
 # Local Netlify folder

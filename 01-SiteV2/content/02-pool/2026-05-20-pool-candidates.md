@@ -1,0 +1,2644 @@
+---
+date: 2026-05-20
+stage: pool
+status: guanlan-daily-monitor-pool
+pool_count: 50
+aihot_daily_pool_count: 34
+generated_at: 2026-05-20T17:25:07.727Z
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
+---
+
+# 2026-05-20 Pool Candidates
+
+说明：本文件是 Raw 后的候选索引，供 guanlan-daily-assets-chain 与 writers 回看 Raw 全文后继续加工。Pool 不替代 Raw，也不直接等于变化卡、案例卡、观点卡或今日观察结论。
+
+## P-001｜Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch
+
+- raw_ref: R-001
+- raw_original_id: https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-001-trace-raises-3m-to-solve-the-ai-agent-adoption-problem-in-enterprise-t.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-001-trace-raises-3m-to-solve-the-ai-agent-adoption-problem-in-enterprise-t.json`
+- source: keyword search / Exa｜https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/
+- source_url: https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: e4cbb749fbbc41c4
+- raw_full_text_hash: e4cbb749fbbc41c4
+- raw_semantic_hash: f88ff4e1c9487a18
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e4cbb749fbbc41c4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch [...] # Trace raises $3M to solve the AI agent adoption problem in enterprise [...] For all their potential, AI agents have been slow to make an impact in the enterprise, and one new startup is betting that the reason they haven’t is a lack of context. [...] Launched as part of Y Combinator’s 2025 summer cohort, Trace is a workflow orchestration startup aimed at filling that gap. The company maps complex corporate environments and pr","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch TechCrunch Desktop Logo TechCrunch Mobile Logo Search Submit Site Search Toggle Mega Menu Toggle Topics Latest AI Amazon Apps Biotech & Health Climate Cloud Computing Commerce Crypto Enterprise EVs Fintech Fundraising Gadgets Gaming Google Government & Policy Hardware Instagram Layoffs Media & Entertainment Meta Microsoft Privacy Robotics Security Social Space Startups TikTok Transportation Venture More from TechCrunch Staff Events S","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Launched as part of Y Combinator’s 2025 summer cohort, Trace is a workflow orchestration startup aimed at filling that gap.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The company maps complex corporate environments and processes so that agents have the context they need to scale quickly.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"“OpenAI and Anthropic are building these brilliant interns that can be leveraged within the company,” says Trace CEO Tim Cherkasov, referring to the AI labs&#8217; tools.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"“We’re building the manager that knows where to put them.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch [...] # Trace raises $3M to solve the AI agent adoption problem in enterprise [...] For all their potential, AI agents have been slow to make an impact in the enterprise, and one new startup is betting that the reason they haven’t is a lack of context. [...] Launched as part of Y Combinator’s 2025 summer cohort, Trace is a workflow orchestration startup aimed at filling that gap. The company maps complex corporate environments and pr","Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch TechCrunch Desktop Logo TechCrunch Mobile Logo Search Submit Site Search Toggle Mega Menu Toggle Topics Latest AI Amazon Apps Biotech & Health Climate Cloud Computing Commerce Crypto Enterprise EVs Fintech Fundraising Gadgets Gaming Google Government & Policy Hardware Instagram Layoffs Media & Entertainment Meta Microsoft Privacy Robotics Security Social Space Startups TikTok Transportation Venture More from TechCrunch Staff Events S","“We’re building the manager that knows where to put them."],"case_details":[],"workflow_changes":["Launched as part of Y Combinator’s 2025 summer cohort, Trace is a workflow orchestration startup aimed at filling that gap.","The company maps complex corporate environments and processes so that agents have the context they need to scale quickly."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-002｜How Agentic AI is Transforming Enterprise Platforms | BCG
+
+- raw_ref: R-002
+- raw_original_id: https://www.bcg.com/publications/2025/how-agentic-ai-is-transforming-enterprise-platforms
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-002-how-agentic-ai-is-transforming-enterprise-platforms-bcg.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-002-how-agentic-ai-is-transforming-enterprise-platforms-bcg.json`
+- source: keyword search / Exa｜https://www.bcg.com/publications/2025/how-agentic-ai-is-transforming-enterprise-platforms
+- source_url: https://www.bcg.com/publications/2025/how-agentic-ai-is-transforming-enterprise-platforms
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 3bba32a3decb45ee
+- raw_full_text_hash: 3428aacacc439c56
+- raw_semantic_hash: 2a6358b8b3fc0fd6
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3428aacacc439c56","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"But implementing these new [...] with the right level [...] autonomy, constraints, and goals [...] BCG has developed a step [...] by-step playbook for agent-based workflow transformation. [...] Businesses across industries and functions are integrating agentic AI into a variety of workflows, sometimes leveraging platforms such as Salesforce’s Einstein AI and AgentForce platforms, which use predictive analytics and automation to enhance sales, marketing, and customer service workflows. In addition, ServiceNow’s AI a","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"How Agentic AI is Transforming Enterprise Platforms | BCG Skip to Main Log in Log error View Profile Edit Profile Manage Subscriptions My Saved Content Logout Artificial Intelligence How Agentic AI Is Transforming Enterprise Platforms By Neveen Awad , Mahmood Serry , and Joe Vasquez Article October 13, 2025 12 MIN read Key Takeaways Agentic AI is redefining how businesses operate, installing intelligent virtual assistants that can analyze data and make decisions without human intervention.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Effective AI agents can accelerate business processes by 30% to 50%.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"These agents are transforming core tech platforms from relatively static systems to dynamic ecosystems that can optimize and adapt instantaneously.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"To scale agents safely and credibly, companies must find the right balance between AI autonomy and human oversight.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Organizations must embed a coherent set of controls across the value chain from day one as they design, build, and operate this complex new technology.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["How Agentic AI is Transforming Enterprise Platforms | BCG Skip to Main Log in Log error View Profile Edit Profile Manage Subscriptions My Saved Content Logout Artificial Intelligence How Agentic AI Is Transforming Enterprise Platforms By Neveen Awad , Mahmood Serry , and Joe Vasquez Article October 13, 2025 12 MIN read Key Takeaways Agentic AI is redefining how businesses operate, installing intelligent virtual assistants that can analyze data and make decisions without human intervention.","These agents are transforming core tech platforms from relatively static systems to dynamic ecosystems that can optimize and adapt instantaneously.","To scale agents safely and credibly, companies must find the right balance between AI autonomy and human oversight."],"case_details":["But implementing these new [...] with the right level [...] autonomy, constraints, and goals [...] BCG has developed a step [...] by-step playbook for agent-based workflow transformation. [...] Businesses across industries and functions are integrating agentic AI into a variety of workflows, sometimes leveraging platforms such as Salesforce’s Einstein AI and AgentForce platforms, which use predictive analytics and automation to enhance sales, marketing, and customer service workflows. In addition, ServiceNow’s AI a"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-003｜Lio – The worlds first multi agent system for procurement
+
+- raw_ref: R-003
+- raw_original_id: https://lio.ai/newsroom/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-003-lio-the-worlds-first-multi-agent-system-for-procurement.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-003-lio-the-worlds-first-multi-agent-system-for-procurement.json`
+- source: keyword search / Exa｜https://lio.ai/newsroom/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement
+- source_url: https://lio.ai/newsroom/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: procurement_marketplace
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: cdf2027e62748839
+- raw_full_text_hash: cdf2027e62748839
+- raw_semantic_hash: e8900f88e66d0b9b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cdf2027e62748839","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"# Lio Technologies Raises $30M Series A to Bring Agentic AI to Enterprise Procurement [...] Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator. [...] ## Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Backed by Andreessen Horowitz, the AI-native company is redefining procurement with a v","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Lio &ndash; The worlds first multi agent system for procurement Announcing Lio's $30M Series A, led by Andreessen Horowitz!","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Get all insights here!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Lio Technologies Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Mar 05, 2026 Press Press Release Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Backed by Andreessen Horowitz, the AI-native company is redefining procurement with a virtual workforce that executes purchasing end-to-end New York, New York, March 5, 2026 — Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbin","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The new capital brings Lio’s total funding to $33 million and will be used to accelerate product development and support its expansion into the U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["# Lio Technologies Raises $30M Series A to Bring Agentic AI to Enterprise Procurement [...] Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator. [...] ## Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Backed by Andreessen Horowitz, the AI-native company is redefining procurement with a v","Lio &ndash; The worlds first multi agent system for procurement Announcing Lio's $30M Series A, led by Andreessen Horowitz!","Get all insights here!"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-004｜Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises \ Anthropic
+
+- raw_ref: R-004
+- raw_original_id: https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-004-snowflake-and-anthropic-announce-200-million-partnership-to-bring-agen.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-004-snowflake-and-anthropic-announce-200-million-partnership-to-bring-agen.json`
+- source: keyword search / Exa｜https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership
+- source_url: https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: official_original
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 58dd30accdf5060e
+- raw_full_text_hash: 58dd30accdf5060e
+- raw_semantic_hash: 9d0efbad309c6c31
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"58dd30accdf5060e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"# Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises [...] Today, we announce a significant expansion of our strategic partnership with Snowflake. The multi-year, $200 million agreement will not only make Anthropic’s Claude models available in the Snowflake platform to more than 12,600 global customers across Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Azure, but also establishes a joint go-to-market (GTM) initiative focused on deploying AI agents across th","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Skip to main content Skip to footer Try Claude Announcements Product Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises Dec 3, 2025 Today, we announce a significant expansion of our strategic partnership with Snowflake.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The multi-year, $200 million agreement will not only make Anthropic’s Claude models available in the Snowflake platform to more than 12,600 global customers across Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Azure, but also establishes a joint go-to-market (GTM) initiative focused on deploying AI agents across the world's largest enterprises.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The partnership enables enterprises to gain insights from both structured and unstructured data using Claude, while maintaining rigorous security standards.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Snowflake uses Claude widely for internal operations as well.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Claude Code enhances developer productivity and innovation across Snowflake's engineering organization, while a Claude-powered GTM AI Assistant built on Snowflake Intelligence enables sales teams to centralize data, ask questions in natural language, and find the answers that speed up deal cycles.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Snowflake uses Claude widely for internal operations as well."],"case_details":[],"workflow_changes":["Claude Code enhances developer productivity and innovation across Snowflake's engineering organization, while a Claude-powered GTM AI Assistant built on Snowflake Intelligence enables sales teams to centralize data, ask questions in natural language, and find the answers that speed up deal cycles."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["The partnership enables enterprises to gain insights from both structured and unstructured data using Claude, while maintaining rigorous security standards."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-005｜NHS Shared Business Services and Salesforce Deploy AI-powered Platform to Transform Corporate Services across the NHS - Salesforce
+
+- raw_ref: R-005
+- raw_original_id: https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-005-nhs-shared-business-services-and-salesforce-deploy-ai-powered-platform.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-005-nhs-shared-business-services-and-salesforce-deploy-ai-powered-platform.json`
+- source: keyword search / Exa｜https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai/
+- source_url: https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: industry_landing
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 026eb0d436116a91
+- raw_full_text_hash: 026eb0d436116a91
+- raw_semantic_hash: 56b77cb2fd71df15
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"026eb0d436116a91","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"is at the forefront of integrated AI for [...] LONDON, UK, 20 May 2026 – NHS Shared Business Services, England’s leading provider of corporate services to the health service, plays a central role in supporting the country’s critical national infrastructure. Processing £395bn of NHS funding each year, it keeps money flowing through the system, ensuring the people, products and services that patients need are paid for efficiently. [...] Through its strategic partnership with Salesforce, the world’s #1 AI CRM, NHS SBS","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"NHS Shared Business Services and Salesforce Deploy AI-powered Platform to Transform Corporate Services across the NHS - Salesforce Skip to Content Skip to Footer 0% Agentic Enterprise NHS Shared Business Services and Salesforce Deploy AI-powered Platform to Transform Corporate Services across the NHS May 20, 2026 4 min read Working with Salesforce, NHS Shared Business Services (NHS SBS) is transforming the experience of NHS staff and suppliers Media Library Working with Salesforce, NHS Shared Business Services (NHS","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Processing £395bn of NHS funding each year, it keeps money flowing through the system, ensuring the people, products and services that patients need are paid for efficiently.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Through its strategic partnership with Salesforce, the world’s #1 AI CRM, NHS SBS is now combining its shared services expertise, processing model and investment with Salesforce’s AI, data and cloud capabilities.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The result is a better experience for users, swifter resolutions, and a platform designed for pace and scale, resulting in essential goods and services reaching the NHS faster.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"As part of NHS SBS’s multi-million pound investment into its new unified finance and procurement service, it has created SBS One, a new AI powered digital help centre that changes the way it interacts with customers.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["is at the forefront of integrated AI for [...] LONDON, UK, 20 May 2026 – NHS Shared Business Services, England’s leading provider of corporate services to the health service, plays a central role in supporting the country’s critical national infrastructure. Processing £395bn of NHS funding each year, it keeps money flowing through the system, ensuring the people, products and services that patients need are paid for efficiently. [...] Through its strategic partnership with Salesforce, the world’s #1 AI CRM, NHS SBS","Processing £395bn of NHS funding each year, it keeps money flowing through the system, ensuring the people, products and services that patients need are paid for efficiently.","The result is a better experience for users, swifter resolutions, and a platform designed for pace and scale, resulting in essential goods and services reaching the NHS faster."],"case_details":["As part of NHS SBS’s multi-million pound investment into its new unified finance and procurement service, it has created SBS One, a new AI powered digital help centre that changes the way it interacts with customers."],"workflow_changes":["Through its strategic partnership with Salesforce, the world’s #1 AI CRM, NHS SBS is now combining its shared services expertise, processing model and investment with Salesforce’s AI, data and cloud capabilities."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-006｜Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement
+
+- raw_ref: R-006
+- raw_original_id: https://www.prnewswire.com/news-releases/lio-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement-302705236.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-006-lio-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-006-lio-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement.json`
+- source: keyword search / Exa｜https://www.prnewswire.com/news-releases/lio-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement-302705236.html
+- source_url: https://www.prnewswire.com/news-releases/lio-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement-302705236.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: procurement_marketplace
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 0da481ecb7cee620
+- raw_full_text_hash: 0da481ecb7cee620
+- raw_semantic_hash: ae8882ac83c88cc4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0da481ecb7cee620","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"NEW YORK, March 5, 2026 /PRNewswire/ -- Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator. The new capital brings Lio's total funding to $33 million and will be used to accelerate product development and support its expansion into the U.S. [...] Lio addresses this challenge by introducing Agent Operating Proc","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Accessibility Statement Skip Navigation Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement USA - English USA - English Deutschland - English Deutschland - Deutsch News provided by Lio Technologies GmbH Mar 05, 2026, 08:30 ET Share this article Share to X Share this article Share to X Backed by Andreessen Horowitz, the AI-native company is redefining procurement with a virtual workforce that executes purchasing end-to-end NEW ","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The new capital brings Lio's total funding to $33 million and will be used to accelerate product development and support its expansion into the U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Continue Reading Lio announces $30M Series A led by Andreessen Horowitz Speed Speed --> Procurement is one of the largest spend categories in the enterprise, yet it still runs like an administrative back-office function.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Enterprises spend over $180 billion annually on procurement talent, compared to roughly $10 billion on procurement software, reflecting how much work still happens manually around existing systems.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Workflows remain slow and manual, with requests moving through layers of systems, rules, and approvals.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["NEW YORK, March 5, 2026 /PRNewswire/ -- Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator. The new capital brings Lio's total funding to $33 million and will be used to accelerate product development and support its expansion into the U.S. [...] Lio addresses this challenge by introducing Agent Operating Proc","Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Accessibility Statement Skip Navigation Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement USA - English USA - English Deutschland - English Deutschland - Deutsch News provided by Lio Technologies GmbH Mar 05, 2026, 08:30 ET Share this article Share to X Share this article Share to X Backed by Andreessen Horowitz, the AI-native company is redefining procurement with a virtual workforce that executes purchasing end-to-end NEW ","The new capital brings Lio's total funding to $33 million and will be used to accelerate product development and support its expansion into the U."],"case_details":[],"workflow_changes":["Workflows remain slow and manual, with requests moving through layers of systems, rules, and approvals."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-007｜Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets
+
+- raw_ref: R-007
+- raw_original_id: https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-007-wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-007-wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in.json`
+- source: keyword search / Exa｜https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html
+- source_url: https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 011f1f263a22dd8d
+- raw_full_text_hash: 011f1f263a22dd8d
+- raw_semantic_hash: 87eccb64b03317a8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"011f1f263a22dd8d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"AMSTERDAM, March 12, 2026 /PRNewswire/ -- Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners, with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures. The new capital will enable Wonderful to continue investing in its agentic platform and accelerate global expansion, scaling headcount from 350 to approximately 900 by year-end to serve more enterprises","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets Accessibility Statement Skip Navigation Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets News provided by Wonderful Mar 12, 2026, 06:58 ET Share this article Share to X Share this article Share to X Insight Partners leads the round as Wonderful scales its hyper-local operating model worldwide AMSTERDAM , March 12, 2026 /PRNewswire/ -- Wonderful , the enterprise AI agent platform, today announced it","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The new capital will enable Wonderful to continue investing in its agentic platform and accelerate global expansion, scaling headcount from 350 to approximately 900 by year-end to serve more enterprises with locally embedded deployment teams.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In the eight months since emerging from stealth, Wonderful has rapidly expanded, scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America and deploying production-grade agents for enterprises in telecom, financial services, manufacturing, and healthcare.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This expansion is driven by the success of Wonderful's thesis: enterprise AI will not scale through technology alone.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It requires a state-of-the-art agentic platform paired with locally embedded teams that can deploy agents inside complex organizations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AMSTERDAM, March 12, 2026 /PRNewswire/ -- Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners, with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures. The new capital will enable Wonderful to continue investing in its agentic platform and accelerate global expansion, scaling headcount from 350 to approximately 900 by year-end to serve more enterprises","Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets Accessibility Statement Skip Navigation Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets News provided by Wonderful Mar 12, 2026, 06:58 ET Share this article Share to X Share this article Share to X Insight Partners leads the round as Wonderful scales its hyper-local operating model worldwide AMSTERDAM , March 12, 2026 /PRNewswire/ -- Wonderful , the enterprise AI agent platform, today announced it","In the eight months since emerging from stealth, Wonderful has rapidly expanded, scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America and deploying production-grade agents for enterprises in telecom, financial services, manufacturing, and healthcare."],"case_details":["The new capital will enable Wonderful to continue investing in its agentic platform and accelerate global expansion, scaling headcount from 350 to approximately 900 by year-end to serve more enterprises with locally embedded deployment teams."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-008｜Nexus Raises $4.3M Seed Round to Help Business Teams Deploy
+
+- raw_ref: R-008
+- raw_original_id: https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-008-nexus-raises-4-3m-seed-round-to-help-business-teams-deploy.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-008-nexus-raises-4-3m-seed-round-to-help-business-teams-deploy.json`
+- source: keyword search / Exa｜https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html
+- source_url: https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: ed9ee46cde0da7e9
+- raw_full_text_hash: ed9ee46cde0da7e9
+- raw_semantic_hash: a2b9502fea82d7c9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ed9ee46cde0da7e9","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Nexus Raises $4.3M Seed Round to Help Business Teams Deploy [...] BRUSSELS and SAN FRANCISCO, March 31, 2026 (GLOBE NEWSWIRE) -- Nexus, an agentic AI platform enabling enterprises to deploy autonomous agents, today announced a $4.3 million seed funding round. The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz. [...] Nexus, a Y Combinator-backed company foun","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"3M Seed Round to Help Business Teams Deploy --> Accessibility: Skip TopNav Englisch Franz&#246;sisch Deutsch Niederl&#228;ndisch Nexus Raises $4.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"3M Seed Round to Help Business Teams Deploy AI Agents 31.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"M&#228;rz 2026 07:00 ET | Quelle: Nexus Enterprises, Inc Nexus Enterprises, Inc BRUSSELS and SAN FRANCISCO, March 31, 2026 (GLOBE NEWSWIRE) -- Nexus , an agentic AI platform enabling enterprises to deploy autonomous agents, today announced a $4.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"3 million seed funding round.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Nexus Raises $4.3M Seed Round to Help Business Teams Deploy [...] BRUSSELS and SAN FRANCISCO, March 31, 2026 (GLOBE NEWSWIRE) -- Nexus, an agentic AI platform enabling enterprises to deploy autonomous agents, today announced a $4.3 million seed funding round. The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz. [...] Nexus, a Y Combinator-backed company foun","3M Seed Round to Help Business Teams Deploy --> Accessibility: Skip TopNav Englisch Franz&#246;sisch Deutsch Niederl&#228;ndisch Nexus Raises $4.","3M Seed Round to Help Business Teams Deploy AI Agents 31."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-009｜German AI startup Parloa triples valuation to $3 billion in latest fundraise | Reuters
+
+- raw_ref: R-009
+- raw_original_id: http://polling.reuters.com/business/german-ai-startup-parloa-triples-valuation-3-billion-latest-fundraise-2026-01-15/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-009-german-ai-startup-parloa-triples-valuation-to-3-billion-in-latest-fund.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-009-german-ai-startup-parloa-triples-valuation-to-3-billion-in-latest-fund.json`
+- source: keyword search / Exa｜http://polling.reuters.com/business/german-ai-startup-parloa-triples-valuation-3-billion-latest-fundraise-2026-01-15/
+- source_url: http://polling.reuters.com/business/german-ai-startup-parloa-triples-valuation-3-billion-latest-fundraise-2026-01-15/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- extraction_method: plain-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 31564820d0ba245a
+- raw_full_text_hash: 31564820d0ba245a
+- raw_semantic_hash: 87f1c28352d3cf03
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"31564820d0ba245a","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 17.9
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Jan 15 (Reuters) - German startup Parloa has raised $350 million in a late-stage round that tripled the valuation of the artificial intelligence-driven customer service platform to $3 billion in less than a year. [...] The Series D round, announced on Thursday, was led by General Catalyst and joined by existing investors such as EQT Ventures, Altimeter Capital and Durable Capital Partners. [...] It takes the startup's total fundraise to more than $560 million, including a $120 million Series C in July 2025 where it","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"Jan 15 (Reuters) - German startup Parloa has raised $350 million in a late-stage round that tripled the valuation of the artificial intelligence-driven customer service platform to $3 billion in less than a year.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"] The Series D round, announced on Thursday, was led by General Catalyst and joined by existing investors such as EQT Ventures, Altimeter Capital and Durable Capital Partners.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"] It takes the startup's total fundraise to more than $560 million, including a $120 million Series C in July 2025 where it was valued at $1 billion.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"] The eight-year-old firm is among the startups developing an AI platform that can automate customer service for large enterprises with little to no coding, including tasks such as tracking packages and processing returns.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"] Parloa said its customers include Microsoft (MSFT.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Jan 15 (Reuters) - German startup Parloa has raised $350 million in a late-stage round that tripled the valuation of the artificial intelligence-driven customer service platform to $3 billion in less than a year. [...] The Series D round, announced on Thursday, was led by General Catalyst and joined by existing investors such as EQT Ventures, Altimeter Capital and Durable Capital Partners. [...] It takes the startup's total fundraise to more than $560 million, including a $120 million Series C in July 2025 where it","Jan 15 (Reuters) - German startup Parloa has raised $350 million in a late-stage round that tripled the valuation of the artificial intelligence-driven customer service platform to $3 billion in less than a year.","] The Series D round, announced on Thursday, was led by General Catalyst and joined by existing investors such as EQT Ventures, Altimeter Capital and Durable Capital Partners."],"case_details":["] The eight-year-old firm is among the startups developing an AI platform that can automate customer service for large enterprises with little to no coding, including tasks such as tracking packages and processing returns.","] Parloa said its customers include Microsoft (MSFT."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-010｜Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters
+
+- raw_ref: R-010
+- raw_original_id: https://today.reuters.com/business/finance/goldman-sachs-teams-up-with-anthropic-automate-banking-tasks-with-ai-agents-cnbc-2026-02-06/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-010-goldman-sachs-teams-up-with-anthropic-to-automate-banking-tasks-with-a.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-010-goldman-sachs-teams-up-with-anthropic-to-automate-banking-tasks-with-a.json`
+- source: keyword search / Exa｜https://today.reuters.com/business/finance/goldman-sachs-teams-up-with-anthropic-automate-banking-tasks-with-ai-agents-cnbc-2026-02-06/
+- source_url: https://today.reuters.com/business/finance/goldman-sachs-teams-up-with-anthropic-automate-banking-tasks-with-ai-agents-cnbc-2026-02-06/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- extraction_method: plain-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 167af60138c49fcd
+- raw_full_text_hash: 167af60138c49fcd
+- raw_semantic_hash: 4ba3f6edc6cb92f1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"167af60138c49fcd","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 17.9
+- usable_for: change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters [...] Feb 6 (Reuters) - Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions, CNBC reported on Friday, citing the bank’s chief information officer. [...] The Wall Street bank has spent the past six months collaborating with Anthropic engineers embedded within its teams to build autonomous agents for ","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters [.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"] Feb 6 (Reuters) - Goldman Sachs (GS.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions, CNBC reported on Friday, citing the bank’s chief information officer.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"] The Wall Street bank has spent the past six months collaborating with Anthropic engineers embedded within its teams to build autonomous agents for tasks including trade and transaction accounting as well as client due diligence and onboarding, Marco Argenti told CNBC.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"] Goldman is still in the early stages of developing agents based on Anthropic’s Claude model, but the technology is expected to significantly reduce the time required to complete core operational processes, Argenti told CNBC.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters [...] Feb 6 (Reuters) - Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions, CNBC reported on Friday, citing the bank’s chief information officer. [...] The Wall Street bank has spent the past six months collaborating with Anthropic engineers embedded within its teams to build autonomous agents for ","Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters [.","] Feb 6 (Reuters) - Goldman Sachs (GS."],"case_details":[],"workflow_changes":["] Goldman is still in the early stages of developing agents based on Anthropic’s Claude model, but the technology is expected to significantly reduce the time required to complete core operational processes, Argenti told CNBC."],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-011｜microsoft/Agents-for-js
+
+- raw_ref: R-011
+- raw_original_id: https://github.com/microsoft/Agents-for-js
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-011-microsoft-agents-for-js.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-011-microsoft-agents-for-js.json`
+- source: keyword search / Exa｜https://github.com/microsoft/Agents-for-js
+- source_url: https://github.com/microsoft/Agents-for-js
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- extraction_method: plain-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 7add87c3dff76c64
+- raw_full_text_hash: 7add87c3dff76c64
+- raw_semantic_hash: 61ca24802c26c4d0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7add87c3dff76c64","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 17.9
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat. We also offer integrations with 3rd parties such as Facebook Messenger, Slack, or Twilio. The SDK provides developers with the building blocks to create agents that handle user interactions, orchestrate requests, reason responses, and collaborate with other agents. [...] The M365 Agent SDK is a comprehensive framework for building enterprise-grade agents, enablin","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"We also offer integrations with 3rd parties such as Facebook Messenger, Slack, or Twilio.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The SDK provides developers with the building blocks to create agents that handle user interactions, orchestrate requests, reason responses, and collaborate with other agents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"] The M365 Agent SDK is a comprehensive framework for building enterprise-grade agents, enabling developers to integrate components from the Azure AI Foundry SDK, Semantic Kernel, as well as AI components from other vendors.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"] We offer the following NPM packages to create conversational experiences based on Agents: [.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["We also offer integrations with 3rd parties such as Facebook Messenger, Slack, or Twilio.","The SDK provides developers with the building blocks to create agents that handle user interactions, orchestrate requests, reason responses, and collaborate with other agents.","] The M365 Agent SDK is a comprehensive framework for building enterprise-grade agents, enabling developers to integrate components from the Azure AI Foundry SDK, Semantic Kernel, as well as AI components from other vendors."],"case_details":["The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat. We also offer integrations with 3rd parties such as Facebook Messenger, Slack, or Twilio. The SDK provides developers with the building blocks to create agents that handle user interactions, orchestrate requests, reason responses, and collaborate with other agents. [...] The M365 Agent SDK is a comprehensive framework for building enterprise-grade agents, enablin","The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-012｜Aaron Levie｜Gemini 3.5 Flash is out, and it's a major jump over Gemini 3 Flash in model capability for
+
+- raw_ref: R-012
+- raw_original_id: 2056804573449474527
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-012-aaron-levie-gemini-3-5-flash-is-out-and-it-s-a-major-jump-over-gemini-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-012-aaron-levie-gemini-3-5-flash-is-out-and-it-s-a-major-jump-over-gemini-.json`
+- source: follow-builders / X / Aaron Levie｜https://x.com/levie/status/2056804573449474527
+- source_url: https://x.com/levie/status/2056804573449474527
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- extraction_method: plain-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Aaron Levie
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: frontier_opinion_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 01958b472e095de6
+- raw_full_text_hash: 01958b472e095de6
+- raw_semantic_hash: bad4487720e43847
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"01958b472e095de6","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8
+- raw_capture_priority: 17.5
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"product_update","text":"Gemini 3.5 Flash is out, and it's a major jump over Gemini 3 Flash in model capability for knowledge work. We've been evaluating it on our Box AI Complex Work Eval in early release, and the model delivers a 12 percentage point jump on complex document tasks. For testing this model, we give the Box AI Agent (using Gemini 3.5) complex problems to solve that represent common but difficult knowledge worker tasks in banking, consulting, public sector, healthcare, and other industries. These tasks can be things like draf","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5 Flash is out, and it's a major jump over Gemini 3 Flash in model capability for knowledge work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"We've been evaluating it on our Box AI Complex Work Eval in early release, and the model delivers a 12 percentage point jump on complex document tasks.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"For testing this model, we give the Box AI Agent (using Gemini 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5) complex problems to solve that represent common but difficult knowledge worker tasks in banking, consulting, public sector, healthcare, and other industries.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"These tasks can be things like drafting reports, doing due diligence, and more, given a set of relevant documents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Gemini 3.5 Flash is out, and it's a major jump over Gemini 3 Flash in model capability for knowledge work. We've been evaluating it on our Box AI Complex Work Eval in early release, and the model delivers a 12 percentage point jump on complex document tasks. For testing this model, we give the Box AI Agent (using Gemini 3.5) complex problems to solve that represent common but difficult knowledge worker tasks in banking, consulting, public sector, healthcare, and other industries. These tasks can be things like draf","5 Flash is out, and it's a major jump over Gemini 3 Flash in model capability for knowledge work.","We've been evaluating it on our Box AI Complex Work Eval in early release, and the model delivers a 12 percentage point jump on complex document tasks."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可核验原文引述
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-013｜Google Labs｜Have you explored Project Genie yet? 🌎 We just launched a huge set of updates! You can no
+
+- raw_ref: R-013
+- raw_original_id: 2056872996988756228
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-013-google-labs-have-you-explored-project-genie-yet-we-just-launched-a-hug.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-013-google-labs-have-you-explored-project-genie-yet-we-just-launched-a-hug.json`
+- source: follow-builders / X / Google Labs｜https://x.com/GoogleLabs/status/2056872996988756228
+- source_url: https://x.com/GoogleLabs/status/2056872996988756228
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- extraction_method: plain-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Google Labs
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: frontier_opinion_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: ca9eb6e21927c2d3
+- raw_full_text_hash: ca9eb6e21927c2d3
+- raw_semantic_hash: 407fb356d87af442
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ca9eb6e21927c2d3","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.4
+- raw_capture_priority: 14.9
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"quote","text":"Have you explored Project Genie yet? 🌎 We just launched a huge set of updates! You can now simulate worlds grounded in @GoogleMaps Street View, manage your creations in a new library, and share them externally. Let's dive in: 1️⃣ Street View Grounding: You can now generate worlds starting from real places! Just tap the Maps pin to choose a location in the US and you can pick a style like \"Desert Sands\" or \"Ocean World.\" Describe your character, and Genie ties your starting location to real-world imagery. 2️⃣ Libra","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Have you explored Project Genie yet?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"🌎 We just launched a huge set of updates!","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"You can now simulate worlds grounded in @GoogleMaps Street View, manage your creations in a new library, and share them externally.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Let's dive in: 1️⃣ Street View Grounding: You can now generate worlds starting from real places!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"Just tap the Maps pin to choose a location in the US and you can pick a style like \"Desert Sands\" or \"Ocean World.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Have you explored Project Genie yet?","🌎 We just launched a huge set of updates!","You can now simulate worlds grounded in @GoogleMaps Street View, manage your creations in a new library, and share them externally."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-014｜Anthropic’s more than $20 billion funding to close as soon as next week, Bloomberg News reports | Reuters
+
+- raw_ref: R-014
+- raw_original_id: http://today.reuters.com/technology/anthropics-more-than-20-billion-funding-close-soon-next-week-bloomberg-news-2026-02-07/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-014-anthropic-s-more-than-20-billion-funding-to-close-as-soon-as-next-week.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-014-anthropic-s-more-than-20-billion-funding-to-close-as-soon-as-next-week.json`
+- source: keyword search / Exa｜http://today.reuters.com/technology/anthropics-more-than-20-billion-funding-close-soon-next-week-bloomberg-news-2026-02-07/
+- source_url: http://today.reuters.com/technology/anthropics-more-than-20-billion-funding-close-soon-next-week-bloomberg-news-2026-02-07/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: fe3eb5e4ab42b646
+- raw_full_text_hash: fe3eb5e4ab42b646
+- raw_semantic_hash: 0c882c344598c0d3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fe3eb5e4ab42b646","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 12.4
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"funding","text":"Anthropic’s more than $20 billion funding to close as soon as next week, Bloomberg News reports | Reuters [...] Feb 6 (Reuters) - AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week, Bloomberg News reported on Friday, citing sources. [...] The Claude chatbot maker was initially seeking $10 billion but is now on track to raise more than double that amount at a $350 billion valuation, due to excess investor interest, t","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"Anthropic’s more than $20 billion funding to close as soon as next week, Bloomberg News reports | Reuters [.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"] Feb 6 (Reuters) - AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week, Bloomberg News reported on Friday, citing sources.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"] The Claude chatbot maker was initially seeking $10 billion but is now on track to raise more than double that amount at a $350 billion valuation, due to excess investor interest, the report added.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"] Businesscategory Anthropic signs $1.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"8 billion AI cloud deal with Akamai, Bloomberg News reports / query=AI Agent funding enterprise customers / intent=find_market_trend / path=a_media_gdelt","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Anthropic’s more than $20 billion funding to close as soon as next week, Bloomberg News reports | Reuters [...] Feb 6 (Reuters) - AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week, Bloomberg News reported on Friday, citing sources. [...] The Claude chatbot maker was initially seeking $10 billion but is now on track to raise more than double that amount at a $350 billion valuation, due to excess investor interest, t","Anthropic’s more than $20 billion funding to close as soon as next week, Bloomberg News reports | Reuters [.","] Feb 6 (Reuters) - AI startup Anthropic is ironing out the final details on a funding round likely to raise more than $20 billion and slated to close as soon as next week, Bloomberg News reported on Friday, citing sources."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-015｜Swyx｜there's 4 parts to this AI SDLC 1. have ~50 tests in place, with instructions to add more
+
+- raw_ref: R-015
+- raw_original_id: 2056877529991205072
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-015-swyx-there-s-4-parts-to-this-ai-sdlc-1-have-50-tests-in-place-with-ins.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-015-swyx-there-s-4-parts-to-this-ai-sdlc-1-have-50-tests-in-place-with-ins.json`
+- source: follow-builders / X / Swyx｜https://x.com/swyx/status/2056877529991205072
+- source_url: https://x.com/swyx/status/2056877529991205072
+- acquisition_channel: follow-builders
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- extraction_method: plain-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: high
+- community_name: follow-builders / X / Swyx
+- capture_scope: summary_only
+- evidence_level: weak_signal
+- source_role: frontier_opinion_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 16bb16dee019c8d8
+- raw_full_text_hash: 16bb16dee019c8d8
+- raw_semantic_hash: 58418b8fe327bb45
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16bb16dee019c8d8","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.7999999999999998
+- raw_capture_priority: 11.3
+- usable_for: viewpoint, case, change, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"quote","text":"there's 4 parts to this AI SDLC 1. have ~50 tests in place, with instructions to add more, including \"make a memory that whenever you do browser e2e tests, use computer vision to visually spot check design and ux issues as well on mobile/desktop/ipad/ultrawide resolutions\" 2. \"/plan break up & edit hot paths so you isolate files for easier editing and reading. add proper logging and error boundaries/handling while you do it. what else should we refactor for maintainability/performance/ai editing?\" 3. (with plan) \"y","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"there's 4 parts to this AI SDLC 1.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"have ~50 tests in place, with instructions to add more, including \"make a memory that whenever you do browser e2e tests, use computer vision to visually spot check design and ux issues as well on mobile/desktop/ipad/ultrawide resolutions\" 2.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"\"/plan break up & edit hot paths so you isolate files for easier editing and reading.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"add proper logging and error boundaries/handling while you do it.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"what else should we refactor for maintainability/performance/ai editing?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["there's 4 parts to this AI SDLC 1.","\"/plan break up & edit hot paths so you isolate files for easier editing and reading.","add proper logging and error boundaries/handling while you do it."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-016｜Google Workspace 推出全新创建方式与高效工作功能
+
+- raw_ref: R-033
+- raw_original_id: daily-12
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-033-google-workspace-推出全新创建方式与高效工作功能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-033-google-workspace-推出全新创建方式与高效工作功能.json`
+- source: Google Blog：AI（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: f5be8759754be5f3
+- raw_full_text_hash: f5be8759754be5f3
+- raw_semantic_hash: 74f0b0564b5a0abf
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f5be8759754be5f3","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"Google 在最新更新中为 Gmail、Docs 和 Keep 增添了新的语音功能，并推出了一款名为 Google Pics 的全新设计工具。同时，其 AI Inbox 功能也得到了升级与优化。这些更新旨在进一步提升用户在工作场景中的协作效率与创作体验，通过集成更智能的工具和交互方式，帮助用户更便捷地完成多项任务。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Google 在最新更新中为 Gmail、Docs 和 Keep 增添了新的语音功能，并推出了一款名为 Google Pics 的全新设计工具。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"同时，其 AI Inbox 功能也得到了升级与优化。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"这些更新旨在进一步提升用户在工作场景中的协作效率与创作体验，通过集成更智能的工具和交互方式，帮助用户更便捷地完成多项任务。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Google 在最新更新中为 Gmail、Docs 和 Keep 增添了新的语音功能，并推出了一款名为 Google Pics 的全新设计工具。同时，其 AI Inbox 功能也得到了升级与优化。这些更新旨在进一步提升用户在工作场景中的协作效率与创作体验，通过集成更智能的工具和交互方式，帮助用户更便捷地完成多项任务。","Google 在最新更新中为 Gmail、Docs 和 Keep 增添了新的语音功能，并推出了一款名为 Google Pics 的全新设计工具。","同时，其 AI Inbox 功能也得到了升级与优化。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-017｜I/O 2026: 欢迎来到自主的 Gemini 时代
+
+- raw_ref: R-034
+- raw_original_id: daily-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-034-i-o-2026-欢迎来到自主的-gemini-时代.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-034-i-o-2026-欢迎来到自主的-gemini-时代.json`
+- source: Google Blog：AI（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 9fac729708cfdef4
+- raw_full_text_hash: 9fac729708cfdef4
+- raw_semantic_hash: d2432719f424ae7b
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9fac729708cfdef4","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_viewpoint_or_article
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"workflow_change","text":"Google 在 I/O 2026 大会上宣布 Gemini 进入自主代理时代，新功能使其能够自动执行复杂任务，显著提升用户工作效率。大会展示了 Gemini 如何通过代理操作简化工作流程，实现自动化处理，例如自动管理邮件、安排日程或生成报告，帮助用户从重复性工作中解放出来，专注于创造性任务。这一更新基于先进机器学习模型，强调准确性与效率，标志着 AI 助手向更智能、更自主的方向发展。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Google 在 I/O 2026 大会上宣布 Gemini 进入自主代理时代，新功能使其能够自动执行复杂任务，显著提升用户工作效率。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"大会展示了 Gemini 如何通过代理操作简化工作流程，实现自动化处理，例如自动管理邮件、安排日程或生成报告，帮助用户从重复性工作中解放出来，专注于创造性任务。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"这一更新基于先进机器学习模型，强调准确性与效率，标志着 AI 助手向更智能、更自主的方向发展。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Google 在 I/O 2026 大会上宣布 Gemini 进入自主代理时代，新功能使其能够自动执行复杂任务，显著提升用户工作效率。","这一更新基于先进机器学习模型，强调准确性与效率，标志着 AI 助手向更智能、更自主的方向发展。"],"case_details":[],"workflow_changes":["Google 在 I/O 2026 大会上宣布 Gemini 进入自主代理时代，新功能使其能够自动执行复杂任务，显著提升用户工作效率。大会展示了 Gemini 如何通过代理操作简化工作流程，实现自动化处理，例如自动管理邮件、安排日程或生成报告，帮助用户从重复性工作中解放出来，专注于创造性任务。这一更新基于先进机器学习模型，强调准确性与效率，标志着 AI 助手向更智能、更自主的方向发展。","大会展示了 Gemini 如何通过代理操作简化工作流程，实现自动化处理，例如自动管理邮件、安排日程或生成报告，帮助用户从重复性工作中解放出来，专注于创造性任务。"],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-018｜Google I/O 2026
+
+- raw_ref: R-035
+- raw_original_id: daily-20
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-035-google-i-o-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-035-google-i-o-2026.json`
+- source: Google Blog：AI（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 96a26abf4852c764
+- raw_full_text_hash: 96a26abf4852c764
+- raw_semantic_hash: 850cc3f13665f663
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"96a26abf4852c764","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。","在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。","这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-019｜安德烈·卡帕西加入Anthropic
+
+- raw_ref: R-036
+- raw_original_id: daily-18
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-036-安德烈-卡帕西加入anthropic.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-036-安德烈-卡帕西加入anthropic.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: cf96dd3ee6b49a00
+- raw_full_text_hash: cf96dd3ee6b49a00
+- raw_semantic_hash: 611bc1e6f24a42b0
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cf96dd3ee6b49a00","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"supporting_context","text":"AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。","AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。","卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-020｜谷歌发布Gemini Omni多模态生成模型
+
+- raw_ref: R-037
+- raw_original_id: daily-2
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-037-谷歌发布gemini-omni多模态生成模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-037-谷歌发布gemini-omni多模态生成模型.json`
+- source: X：Gemini (@GeminiApp)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: f7806380dc0dd1b3
+- raw_full_text_hash: f7806380dc0dd1b3
+- raw_semantic_hash: 6c3c0d446668a736
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f7806380dc0dd1b3","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。 借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。#GoogleIO","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。 借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。#GoogleIO","介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。","借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-021｜NVIDIA开源首个4-bit超长视频生成基础设施
+
+- raw_ref: R-038
+- raw_original_id: daily-28
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-038-nvidia开源首个4-bit超长视频生成基础设施.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-038-nvidia开源首个4-bit超长视频生成基础设施.json`
+- source: X：Berry Xia (@berryxia)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 782dd5242fd21732
+- raw_full_text_hash: 782dd5242fd21732
+- raw_semantic_hash: d3fa52f781db8d83
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"782dd5242fd21732","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"case_detail","text":"NVIDIA研究员开源LongLive 2.0，这是首个支持4-bit量化、覆盖训练与推理全流程的端到端长视频生成基础设施。其核心技术包括FP4量化与并行加速，在5B模型上实现45.7 FPS的生成速度。该框架支持真实视频训练、蒸馏、多镜头生成、序列并行、KV缓存优化及异步解码部署，旨在解决以往长视频生成速度慢或仅限短片的瓶颈。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"NVIDIA研究员开源LongLive 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"0，这是首个支持4-bit量化、覆盖训练与推理全流程的端到端长视频生成基础设施。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"其核心技术包括FP4量化与并行加速，在5B模型上实现45.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"该框架支持真实视频训练、蒸馏、多镜头生成、序列并行、KV缓存优化及异步解码部署，旨在解决以往长视频生成速度慢或仅限短片的瓶颈。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["NVIDIA研究员开源LongLive 2.","其核心技术包括FP4量化与并行加速，在5B模型上实现45."],"case_details":["NVIDIA研究员开源LongLive 2.0，这是首个支持4-bit量化、覆盖训练与推理全流程的端到端长视频生成基础设施。其核心技术包括FP4量化与并行加速，在5B模型上实现45.7 FPS的生成速度。该框架支持真实视频训练、蒸馏、多镜头生成、序列并行、KV缓存优化及异步解码部署，旨在解决以往长视频生成速度慢或仅限短片的瓶颈。","该框架支持真实视频训练、蒸馏、多镜头生成、序列并行、KV缓存优化及异步解码部署，旨在解决以往长视频生成速度慢或仅限短片的瓶颈。"],"workflow_changes":["0，这是首个支持4-bit量化、覆盖训练与推理全流程的端到端长视频生成基础设施。"],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-022｜Gemini月活用户超9亿，回顾年度重大功能发布
+
+- raw_ref: R-039
+- raw_original_id: daily-24
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-039-gemini月活用户超9亿-回顾年度重大功能发布.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-039-gemini月活用户超9亿-回顾年度重大功能发布.json`
+- source: X：Gemini (@GeminiApp)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: c0d8f9605eda3b01
+- raw_full_text_hash: c0d8f9605eda3b01
+- raw_semantic_hash: 41b0773239e7b1f3
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c0d8f9605eda3b01","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"每月有超过9亿用户使用Gemini应用。 这一增长的重要部分源于我们快速的发布节奏。以下是过去一年我们推出的一些最重要功能的回顾。🧵 #GoogleIO","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"每月有超过9亿用户使用Gemini应用。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"这一增长的重要部分源于我们快速的发布节奏。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"以下是过去一年我们推出的一些最重要功能的回顾。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["这一增长的重要部分源于我们快速的发布节奏。","以下是过去一年我们推出的一些最重要功能的回顾。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-023｜Gemini Omni发布：物理推理与多模态生成新突破
+
+- raw_ref: R-040
+- raw_original_id: daily-4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-040-gemini-omni发布-物理推理与多模态生成新突破.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-040-gemini-omni发布-物理推理与多模态生成新突破.json`
+- source: X：Sundar Pichai (@sundarpichai)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: cafd33225f73d0de
+- raw_full_text_hash: cafd33225f73d0de
+- raw_semantic_hash: f7eebd6f72ea0a40
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cafd33225f73d0de","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。 今日起，通过@Geminiapp + Google Flow和@YouTube Shorts，向全球Google AI Plus、Pro和Ultra订阅用户推出视频生成功能。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"今日起，通过@Geminiapp + Google Flow和@YouTube Shorts，向全球Google AI Plus、Pro和Ultra订阅用户推出视频生成功能。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。 今日起，通过@Geminiapp + Google Flow和@YouTube Shorts，向全球Google AI Plus、Pro和Ultra订阅用户推出视频生成功能。","Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。","它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-024｜ChatGPT图像生成周使用量突破15亿次
+
+- raw_ref: R-041
+- raw_original_id: daily-32
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-041-chatgpt图像生成周使用量突破15亿次.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-041-chatgpt图像生成周使用量突破15亿次.json`
+- source: X：OpenAI (@OpenAI)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 6b19c2f55335ae8b
+- raw_full_text_hash: 6b19c2f55335ae8b
+- raw_semantic_hash: 7ed6fab672b13540
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6b19c2f55335ae8b","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"人们每周在ChatGPT中生成超过15亿张图像。 研究员 @kenjihata 与产品负责人 @adele__li 及主持人 @AndrewMayne 一起，探讨自 Images 2.0 发布以来出现的新用例和趋势。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"人们每周在ChatGPT中生成超过15亿张图像。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"研究员 @kenjihata 与产品负责人 @adele__li 及主持人 @AndrewMayne 一起，探讨自 Images 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["研究员 @kenjihata 与产品负责人 @adele__li 及主持人 @AndrewMayne 一起，探讨自 Images 2."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-025｜Gemini Omni发布：多模态生成新突破
+
+- raw_ref: R-042
+- raw_original_id: daily-5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-042-gemini-omni发布-多模态生成新突破.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-042-gemini-omni发布-多模态生成新突破.json`
+- source: X：Google DeepMind (@GoogleDeepMind)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 00e383ab769ab8d8
+- raw_full_text_hash: 00e383ab769ab8d8
+- raw_semantic_hash: 34473fb311331c74
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"00e383ab769ab8d8","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"我们推出Gemini Omni：这是迈向一个能从任何内容生成任何内容的模型的第一步——从视频开始。 它结合了Gemini的智能与我们的生成式媒体系统——代表了在世界理解、多模态和编辑方面的飞跃🧵","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"我们推出Gemini Omni：这是迈向一个能从任何内容生成任何内容的模型的第一步——从视频开始。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"它结合了Gemini的智能与我们的生成式媒体系统——代表了在世界理解、多模态和编辑方面的飞跃🧵","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["我们推出Gemini Omni：这是迈向一个能从任何内容生成任何内容的模型的第一步——从视频开始。 它结合了Gemini的智能与我们的生成式媒体系统——代表了在世界理解、多模态和编辑方面的飞跃🧵","我们推出Gemini Omni：这是迈向一个能从任何内容生成任何内容的模型的第一步——从视频开始。","它结合了Gemini的智能与我们的生成式媒体系统——代表了在世界理解、多模态和编辑方面的飞跃🧵"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-026｜谷歌 Gemini Omni 全能模型发布：可从任意输入生成任意输出，一句话让 AI 修改视频
+
+- raw_ref: R-043
+- raw_original_id: daily-6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-043-谷歌-gemini-omni-全能模型发布-可从任意输入生成任意输出-一句话让-ai-修改视频.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-043-谷歌-gemini-omni-全能模型发布-可从任意输入生成任意输出-一句话让-ai-修改视频.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 2cbb7359fbef4ed8
+- raw_full_text_hash: 2cbb7359fbef4ed8
+- raw_semantic_hash: 34081dbb583f30c1
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2cbb7359fbef4ed8","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"quote","text":"在2026年谷歌I/O开发者大会上，谷歌正式推出Gemini Omni模型。该模型代表了Gemini家族迄今最全面的能力，“Omni”意为全能，能够无缝处理文本、图像、音频和视频等多种信息模态，实现“从任何输入生成任何输出”。其核心亮点在于支持对话式编辑，用户可通过自然语言指令轻松修改视频元素。同时，谷歌发布了首款衍生模型Gemini Omni Flash，现已在Gemini App、Google Flow和YouTube Shorts中可用，后续将提供API服务。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"在2026年谷歌I/O开发者大会上，谷歌正式推出Gemini Omni模型。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"quote","text":"该模型代表了Gemini家族迄今最全面的能力，“Omni”意为全能，能够无缝处理文本、图像、音频和视频等多种信息模态，实现“从任何输入生成任何输出”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"其核心亮点在于支持对话式编辑，用户可通过自然语言指令轻松修改视频元素。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"同时，谷歌发布了首款衍生模型Gemini Omni Flash，现已在Gemini App、Google Flow和YouTube Shorts中可用，后续将提供API服务。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["在2026年谷歌I/O开发者大会上，谷歌正式推出Gemini Omni模型。","其核心亮点在于支持对话式编辑，用户可通过自然语言指令轻松修改视频元素。","同时，谷歌发布了首款衍生模型Gemini Omni Flash，现已在Gemini App、Google Flow和YouTube Shorts中可用，后续将提供API服务。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-027｜谷歌推出全新AI智能搜索框，支持多模态交互
+
+- raw_ref: R-044
+- raw_original_id: daily-9
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-044-谷歌推出全新ai智能搜索框-支持多模态交互.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-044-谷歌推出全新ai智能搜索框-支持多模态交互.json`
+- source: X：Google AI (@GoogleAI)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 901c79ca3374b196
+- raw_full_text_hash: 901c79ca3374b196
+- raw_semantic_hash: df44c38092b43669
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"901c79ca3374b196","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"product_update","text":"谷歌宣布推出基于Gemini 3.5模型的全新智能搜索框。该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。该新功能已在全球桌面和移动设备端同步上线。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"该新功能已在全球桌面和移动设备端同步上线。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["谷歌宣布推出基于Gemini 3.5模型的全新智能搜索框。该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。该新功能已在全球桌面和移动设备端同步上线。","该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。","用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-028｜Claude智能体托管平台新增自托管沙箱与MCP隧道功能
+
+- raw_ref: R-045
+- raw_original_id: daily-10
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-045-claude智能体托管平台新增自托管沙箱与mcp隧道功能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-045-claude智能体托管平台新增自托管沙箱与mcp隧道功能.json`
+- source: Claude：Blog（网页）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 7a9ffa52ba47820b
+- raw_full_text_hash: 7a9ffa52ba47820b
+- raw_semantic_hash: bbce2c1330516b0c
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7a9ffa52ba47820b","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"supporting_context","text":"Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。目前沙箱功能已进入公测，隧道处于研究预览阶段。这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"目前沙箱功能已进入公测，隧道处于研究预览阶段。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["目前沙箱功能已进入公测，隧道处于研究预览阶段。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。目前沙箱功能已进入公测，隧道处于研究预览阶段。这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。","Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。","这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-029｜Gemini Omni助力Google Flow创作电影级故事
+
+- raw_ref: R-046
+- raw_original_id: daily-14
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-046-gemini-omni助力google-flow创作电影级故事.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-046-gemini-omni助力google-flow创作电影级故事.json`
+- source: X：Google DeepMind (@GoogleDeepMind)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: b9580e9a1ead17b9
+- raw_full_text_hash: b9580e9a1ead17b9
+- raw_semantic_hash: 404cc23737d18275
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b9580e9a1ead17b9","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Google Flow 🤝 Gemini Omni 使用我们的最新模型创作更具电影感的故事，它带来了批量编辑、改进的角色一致性等功能。以下是@FlowbyGoogle的其他新功能 → https://goo.gle/42K2nge #GoogleIO","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Google Flow 🤝 Gemini Omni 使用我们的最新模型创作更具电影感的故事，它带来了批量编辑、改进的角色一致性等功能。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"以下是@FlowbyGoogle的其他新功能 → https://goo.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"gle/42K2nge #GoogleIO","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Google Flow 🤝 Gemini Omni 使用我们的最新模型创作更具电影感的故事，它带来了批量编辑、改进的角色一致性等功能。以下是@FlowbyGoogle的其他新功能 → https://goo.gle/42K2nge #GoogleIO","Google Flow 🤝 Gemini Omni 使用我们的最新模型创作更具电影感的故事，它带来了批量编辑、改进的角色一致性等功能。","以下是@FlowbyGoogle的其他新功能 → https://goo."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-030｜前OpenAI核心成员Andrej Karpathy选择Anthropic重返前沿LLM研究
+
+- raw_ref: R-047
+- raw_original_id: daily-19
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-047-前openai核心成员andrej-karpathy选择anthropic重返前沿llm研究.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-047-前openai核心成员andrej-karpathy选择anthropic重返前沿llm研究.json`
+- source: The Decoder：AI News（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: c74c07b48ce18a62
+- raw_full_text_hash: c74c07b48ce18a62
+- raw_semantic_hash: 273daff5b5962c1f
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c74c07b48ce18a62","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_viewpoint_or_article
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"case_detail","text":"著名AI研究人员Andrej Karpathy已加入Anthropic。这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究“尤其具有塑造性”。他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"著名AI研究人员Andrej Karpathy已加入Anthropic。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究“尤其具有塑造性”。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["著名AI研究人员Andrej Karpathy已加入Anthropic。","他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。"],"case_details":["著名AI研究人员Andrej Karpathy已加入Anthropic。这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究“尤其具有塑造性”。他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。","这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究“尤其具有塑造性”。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-031｜Forge：通过防护机制大幅提升8B模型性能的可靠性层
+
+- raw_ref: R-048
+- raw_original_id: daily-27
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-048-forge-通过防护机制大幅提升8b模型性能的可靠性层.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-048-forge-通过防护机制大幅提升8b模型性能的可靠性层.json`
+- source: Hacker News：AI 热帖｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News：AI 热帖
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 3670caec3ee3dfb9
+- raw_full_text_hash: 3670caec3ee3dfb9
+- raw_semantic_hash: aeb1ba9b64c20475
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3670caec3ee3dfb9","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"Forge 是一个为自托管大语言模型设计的可靠性层，专注于提升工具调用能力。它通过错误解析、重试提示、步骤强制等防护机制以及高效的上下文管理，成功将8B参数模型在复杂多步骤智能体任务中的表现从53%大幅提升至99%。其核心配置（Ministral-3 8B模型）在自建的26项评估中综合得分达86.5%。Forge 提供三种集成方式：作为全托管工作流运行器、多智能体架构的共享调度器，或嵌入自有编排循环的防护中间件，并附带一个可透明接入的OpenAI兼容代理服务器。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Forge 是一个为自托管大语言模型设计的可靠性层，专注于提升工具调用能力。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"它通过错误解析、重试提示、步骤强制等防护机制以及高效的上下文管理，成功将8B参数模型在复杂多步骤智能体任务中的表现从53%大幅提升至99%。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"其核心配置（Ministral-3 8B模型）在自建的26项评估中综合得分达86.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Forge 提供三种集成方式：作为全托管工作流运行器、多智能体架构的共享调度器，或嵌入自有编排循环的防护中间件，并附带一个可透明接入的OpenAI兼容代理服务器。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Forge 是一个为自托管大语言模型设计的可靠性层，专注于提升工具调用能力。","其核心配置（Ministral-3 8B模型）在自建的26项评估中综合得分达86.","Forge 提供三种集成方式：作为全托管工作流运行器、多智能体架构的共享调度器，或嵌入自有编排循环的防护中间件，并附带一个可透明接入的OpenAI兼容代理服务器。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-032｜宣布Claude Managed Agents登陆Cloudflare
+
+- raw_ref: R-053
+- raw_original_id: daily-15
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-053-宣布claude-managed-agents登陆cloudflare.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-053-宣布claude-managed-agents登陆cloudflare.json`
+- source: Cloudflare Blog｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 3f0994e153ae7cb8
+- raw_full_text_hash: 3f0994e153ae7cb8
+- raw_semantic_hash: 160b49d76441a433
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3f0994e153ae7cb8","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Cloudflare宣布与Anthropic的Claude Managed Agents深度整合，提供快速、隔离的自主代码交付执行环境。该集成使开发者能够在全球范围内扩展代理工作流，同时严格控制私有后端访问权限，并支持灵活自定义代理工具及运行时配置。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"Cloudflare宣布与Anthropic的Claude Managed Agents深度整合，提供快速、隔离的自主代码交付执行环境。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"该集成使开发者能够在全球范围内扩展代理工作流，同时严格控制私有后端访问权限，并支持灵活自定义代理工具及运行时配置。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["该集成使开发者能够在全球范围内扩展代理工作流，同时严格控制私有后端访问权限，并支持灵活自定义代理工具及运行时配置。"],"case_details":[],"workflow_changes":["Cloudflare宣布与Anthropic的Claude Managed Agents深度整合，提供快速、隔离的自主代码交付执行环境。该集成使开发者能够在全球范围内扩展代理工作流，同时严格控制私有后端访问权限，并支持灵活自定义代理工具及运行时配置。","Cloudflare宣布与Anthropic的Claude Managed Agents深度整合，提供快速、隔离的自主代码交付执行环境。"],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-033｜开源古代汉字视觉感知评估基准Chronicles-OCR
+
+- raw_ref: R-054
+- raw_original_id: daily-26
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-054-开源古代汉字视觉感知评估基准chronicles-ocr.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-054-开源古代汉字视觉感知评估基准chronicles-ocr.json`
+- source: X：腾讯混元 (@TencentHunyuan)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: domestic_vendor
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 8199d4031809db1b
+- raw_full_text_hash: 8199d4031809db1b
+- raw_semantic_hash: 3554cfb13e3757ec
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8199d4031809db1b","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。评估涵盖字形定位、细粒度识别、古代文本解析和字体分类四项核心任务，旨在探究视觉分布随时间的变化如何影响模型感知。相关论文与代码已开源。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"评估涵盖字形定位、细粒度识别、古代文本解析和字体分类四项核心任务，旨在探究视觉分布随时间的变化如何影响模型感知。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。评估涵盖字形定位、细粒度识别、古代文本解析和字体分类四项核心任务，旨在探究视觉分布随时间的变化如何影响模型感知。相关论文与代码已开源。","开源了评估视觉大语言模型（VLLM）对古代汉字视觉感知能力的基准测试Chronicles-OCR。","该数据集覆盖了从甲骨文到草书的3000年演变历程，包含7种历史书体与2800张均衡图像。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-034｜AI代理集成新方案：Membrane推出单一技能连接万种API
+
+- raw_ref: R-055
+- raw_original_id: daily-29
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-055-ai代理集成新方案-membrane推出单一技能连接万种api.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-055-ai代理集成新方案-membrane推出单一技能连接万种api.json`
+- source: X：Rohan Paul (@rohanpaul_ai)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 239e02a23e8e6c5a
+- raw_full_text_hash: 239e02a23e8e6c5a
+- raw_semantic_hash: 14b1c024ee618333
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"239e02a23e8e6c5a","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"AI代理在实际应用中需为每个外部服务重复构建集成逻辑，成为其发展的主要瓶颈。针对此问题，Membrane推出了一种通用“技能”解决方案。通过该单一技能，Claude Code、ChatGPT、Cursor等主流AI代理能够用一条指令调用超过10万个不同的API，涵盖从Stripe支付服务到NASA火星车数据等各类服务。这极大简化了开发流程，将定制化集成转变为通用的连接能力，降低了使用门槛。同时，Membrane正发起社区挑战，鼓励用户提交小众API以获得演示和免费额度激励，旨在持续扩展其连接生态。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"AI代理在实际应用中需为每个外部服务重复构建集成逻辑，成为其发展的主要瓶颈。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"针对此问题，Membrane推出了一种通用“技能”解决方案。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"number","text":"通过该单一技能，Claude Code、ChatGPT、Cursor等主流AI代理能够用一条指令调用超过10万个不同的API，涵盖从Stripe支付服务到NASA火星车数据等各类服务。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"这极大简化了开发流程，将定制化集成转变为通用的连接能力，降低了使用门槛。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"同时，Membrane正发起社区挑战，鼓励用户提交小众API以获得演示和免费额度激励，旨在持续扩展其连接生态。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["AI代理在实际应用中需为每个外部服务重复构建集成逻辑，成为其发展的主要瓶颈。","针对此问题，Membrane推出了一种通用“技能”解决方案。","同时，Membrane正发起社区挑战，鼓励用户提交小众API以获得演示和免费额度激励，旨在持续扩展其连接生态。"],"case_details":[],"workflow_changes":["这极大简化了开发流程，将定制化集成转变为通用的连接能力，降低了使用门槛。"],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-035｜Gemini Omni发布，迈向AGI新进展
+
+- raw_ref: R-056
+- raw_original_id: daily-7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-056-gemini-omni发布-迈向agi新进展.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-056-gemini-omni发布-迈向agi新进展.json`
+- source: X：Kim (@kimmonismus)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 303eeb6612d286e3
+- raw_full_text_hash: 303eeb6612d286e3
+- raw_semantic_hash: 92026b21f024d377
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"303eeb6612d286e3","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"„迈向AGI的进展“：Gemini Omni - 世界模型 -Gemini Omni官方发布！！ 它可以从任何输入创建任何内容！！！","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"„迈向AGI的进展“：Gemini Omni - 世界模型 -Gemini Omni官方发布！","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["„迈向AGI的进展“：Gemini Omni - 世界模型 -Gemini Omni官方发布！！ 它可以从任何输入创建任何内容！！！","„迈向AGI的进展“：Gemini Omni - 世界模型 -Gemini Omni官方发布！"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-036｜首个实时多agent世界模型发布，人类可与AI同屏互动
+
+- raw_ref: R-057
+- raw_original_id: daily-8
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-057-首个实时多agent世界模型发布-人类可与ai同屏互动.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-057-首个实时多agent世界模型发布-人类可与ai同屏互动.json`
+- source: X：Berry Xia (@berryxia)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 751741687cca6412
+- raw_full_text_hash: 751741687cca6412
+- raw_semantic_hash: d5ad1206c70cf90e
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"751741687cca6412","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"奥德赛实验室推出Agora-1，这是全球首个实时多agent世界模型，允许多人与AI同时在同一个模拟世界中实时互动并相互影响。该模型以经典游戏GoldenEye死亡竞赛为演示场景，提供可玩研究预览，用户现在即可体验与AI共同参与动态生成的模拟世界。这标志着从单人生成视频向多人共享“活世界”的转变，长期来看可能重塑游戏、模拟、教育、机器人及AI协作等领域，使人类从旁观者变为与AI共同生活的参与者。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"奥德赛实验室推出Agora-1，这是全球首个实时多agent世界模型，允许多人与AI同时在同一个模拟世界中实时互动并相互影响。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该模型以经典游戏GoldenEye死亡竞赛为演示场景，提供可玩研究预览，用户现在即可体验与AI共同参与动态生成的模拟世界。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这标志着从单人生成视频向多人共享“活世界”的转变，长期来看可能重塑游戏、模拟、教育、机器人及AI协作等领域，使人类从旁观者变为与AI共同生活的参与者。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["奥德赛实验室推出Agora-1，这是全球首个实时多agent世界模型，允许多人与AI同时在同一个模拟世界中实时互动并相互影响。该模型以经典游戏GoldenEye死亡竞赛为演示场景，提供可玩研究预览，用户现在即可体验与AI共同参与动态生成的模拟世界。这标志着从单人生成视频向多人共享“活世界”的转变，长期来看可能重塑游戏、模拟、教育、机器人及AI协作等领域，使人类从旁观者变为与AI共同生活的参与者。","奥德赛实验室推出Agora-1，这是全球首个实时多agent世界模型，允许多人与AI同时在同一个模拟世界中实时互动并相互影响。","该模型以经典游戏GoldenEye死亡竞赛为演示场景，提供可玩研究预览，用户现在即可体验与AI共同参与动态生成的模拟世界。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-037｜Claude推出自托管沙箱与MCP隧道功能
+
+- raw_ref: R-058
+- raw_original_id: daily-16
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-058-claude推出自托管沙箱与mcp隧道功能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-058-claude推出自托管沙箱与mcp隧道功能.json`
+- source: X：Claude (@claudeai)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 4a511a2a3e345c06
+- raw_full_text_hash: 4a511a2a3e345c06
+- raw_semantic_hash: c45c2047d821601b
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4a511a2a3e345c06","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"supporting_context","text":"来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。 在您自己的安全边界内运行代理，默认应用您的安全控制。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"在您自己的安全边界内运行代理，默认应用您的安全控制。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。 在您自己的安全边界内运行代理，默认应用您的安全控制。","在您自己的安全边界内运行代理，默认应用您的安全控制。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-038｜研究发现人类说服技巧对AI同样有效
+
+- raw_ref: R-059
+- raw_original_id: daily-25
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-059-研究发现人类说服技巧对ai同样有效.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-059-研究发现人类说服技巧对ai同样有效.json`
+- source: X：Ethan Mollick (@emollick)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 617abe0732119077
+- raw_full_text_hash: 617abe0732119077
+- raw_semantic_hash: 80c217d387974fdc
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"617abe0732119077","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"🚨我们的论文已在PNAS发表：我们发现经典的人类说服技巧以一种“类人”的方式对AI有效，使其同意不当请求（将顺从率从35%提高到51%） 该技巧对一系列主流大语言模型有效，尽管较新的模型抵抗力更强 https://www.pnas.org/doi/10.1073/pnas.2535868123","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"🚨我们的论文已在PNAS发表：我们发现经典的人类说服技巧以一种“类人”的方式对AI有效，使其同意不当请求（将顺从率从35%提高到51%） 该技巧对一系列主流大语言模型有效，尽管较新的模型抵抗力更强 https://www.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":[],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-039｜Claude实现真实界面操作的生产实践指南
+
+- raw_ref: R-061
+- raw_original_id: daily-31
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-061-claude实现真实界面操作的生产实践指南.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-061-claude实现真实界面操作的生产实践指南.json`
+- source: X：Claude Devs (@ClaudeDevs)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 6c396d0fbb83e8b2
+- raw_full_text_hash: 6c396d0fbb83e8b2
+- raw_semantic_hash: bf100613156721f7
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6c396d0fbb83e8b2","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_viewpoint_or_article
+- importance_score: 3
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.299999999999999
+- raw_capture_priority: -1.700000000000001
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"计算机使用功能使Claude成为能够操作真实用户界面的智能体。 新博客文章探讨如何在生产环境中确保其可靠性：包括提高点击准确性、选择思考努力级别、在长会话中保持上下文，以及记录Claude可重放的演示操作： https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"计算机使用功能使Claude成为能够操作真实用户界面的智能体。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"新博客文章探讨如何在生产环境中确保其可靠性：包括提高点击准确性、选择思考努力级别、在长会话中保持上下文，以及记录Claude可重放的演示操作： https://claude.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"com/blog/best-practices-for-computer-and-browser-use-with-claude","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["计算机使用功能使Claude成为能够操作真实用户界面的智能体。 新博客文章探讨如何在生产环境中确保其可靠性：包括提高点击准确性、选择思考努力级别、在长会话中保持上下文，以及记录Claude可重放的演示操作： https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude","计算机使用功能使Claude成为能够操作真实用户界面的智能体。","新博客文章探讨如何在生产环境中确保其可靠性：包括提高点击准确性、选择思考努力级别、在长会话中保持上下文，以及记录Claude可重放的演示操作： https://claude."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-040｜Anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕
+
+- raw_ref: R-062
+- raw_original_id: daily-23
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-062-anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-062-anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 49b5aa6cfad0ef04
+- raw_full_text_hash: 49b5aa6cfad0ef04
+- raw_semantic_hash: c51da6a09c5465ad
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"49b5aa6cfad0ef04","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 3
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.299999999999999
+- raw_capture_priority: -1.700000000000001
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"quote","text":"Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首个人工智能通谕“magnifica humanitas”。这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首个人工智能通谕“magnifica humanitas”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。","通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-041｜Ramp利用Gemini API构建高级财务代理
+
+- raw_ref: R-071
+- raw_original_id: daily-13
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-071-ramp利用gemini-api构建高级财务代理.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-071-ramp利用gemini-api构建高级财务代理.json`
+- source: X：Google AI for Developers (@googleaidevs)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 8a41dc28e3c26896
+- raw_full_text_hash: 8a41dc28e3c26896
+- raw_semantic_hash: cd29fd34eee093b1
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8a41dc28e3c26896","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。 了解更多 ↓","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。 了解更多 ↓","通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-042｜谷歌每月处理超 3200 万亿 Token，同比增长 7 倍
+
+- raw_ref: R-072
+- raw_original_id: daily-22
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-072-谷歌每月处理超-3200-万亿-token-同比增长-7-倍.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-072-谷歌每月处理超-3200-万亿-token-同比增长-7-倍.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: ee23bde634166e6c
+- raw_full_text_hash: ee23bde634166e6c
+- raw_semantic_hash: cc1e8f39ae3b25cd
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ee23bde634166e6c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"在2026年谷歌I/O开发者大会上，谷歌宣布其AI业务关键指标大幅增长。2026年5月，谷歌每月处理的Token数量超过3200万亿，同比增长达7倍。其Gemini App月度活跃用户已突破9亿，同比增长超过一倍，每日请求量增长超7倍。此外，Nano Banana模型已累计生成超过500亿张图片。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在2026年谷歌I/O开发者大会上，谷歌宣布其AI业务关键指标大幅增长。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"number","text":"2026年5月，谷歌每月处理的Token数量超过3200万亿，同比增长达7倍。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"其Gemini App月度活跃用户已突破9亿，同比增长超过一倍，每日请求量增长超7倍。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"此外，Nano Banana模型已累计生成超过500亿张图片。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["在2026年谷歌I/O开发者大会上，谷歌宣布其AI业务关键指标大幅增长。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-043｜Gemini Omni：迈向AGI的世界模型
+
+- raw_ref: R-073
+- raw_original_id: daily-3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-073-gemini-omni-迈向agi的世界模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-073-gemini-omni-迈向agi的世界模型.json`
+- source: X：Kim (@kimmonismus)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 1e4e3b2f71b76472
+- raw_full_text_hash: 1e4e3b2f71b76472
+- raw_semantic_hash: 35909cbb6f051050
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1e4e3b2f71b76472","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"真正的“哇”时刻是 Gemini Omni。一个迈向 AGI 的世界模型。 它可以从任何输入创建任何内容。这太疯狂了。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"真正的“哇”时刻是 Gemini Omni。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["真正的“哇”时刻是 Gemini Omni。一个迈向 AGI 的世界模型。 它可以从任何输入创建任何内容。这太疯狂了。","真正的“哇”时刻是 Gemini Omni。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-044｜Claude Code的HTML输出：非凡的有效性
+
+- raw_ref: R-074
+- raw_original_id: daily-30
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-074-claude-code的html输出-非凡的有效性.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-074-claude-code的html输出-非凡的有效性.json`
+- source: Claude：Blog（网页）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: d6e5fff4116b7938
+- raw_full_text_hash: d6e5fff4116b7938
+- raw_semantic_hash: 20fcbbed238918e6
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d6e5fff4116b7938","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Claude Code团队正从Markdown转向HTML作为主要输出格式。Markdown虽简洁，但在信息密度、阅读性、分享和交互方面存在局限。HTML能支持表格、CSS样式、SVG图表和JavaScript交互，提供更清晰的视觉结构和高信息密度。由于HTML文件可通过浏览器直接打开和分享，便于团队协作审阅。Claude Code利用其广泛的上下文获取能力生成实用的HTML制品，适用于项目规划、文档编写和验证等多种场景，显著提升了AI生成内容的可读性与实用性。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Claude Code团队正从Markdown转向HTML作为主要输出格式。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Markdown虽简洁，但在信息密度、阅读性、分享和交互方面存在局限。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"HTML能支持表格、CSS样式、SVG图表和JavaScript交互，提供更清晰的视觉结构和高信息密度。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"由于HTML文件可通过浏览器直接打开和分享，便于团队协作审阅。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Claude Code利用其广泛的上下文获取能力生成实用的HTML制品，适用于项目规划、文档编写和验证等多种场景，显著提升了AI生成内容的可读性与实用性。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Claude Code团队正从Markdown转向HTML作为主要输出格式。Markdown虽简洁，但在信息密度、阅读性、分享和交互方面存在局限。HTML能支持表格、CSS样式、SVG图表和JavaScript交互，提供更清晰的视觉结构和高信息密度。由于HTML文件可通过浏览器直接打开和分享，便于团队协作审阅。Claude Code利用其广泛的上下文获取能力生成实用的HTML制品，适用于项目规划、文档编写和验证等多种场景，显著提升了AI生成内容的可读性与实用性。","Claude Code团队正从Markdown转向HTML作为主要输出格式。","Markdown虽简洁，但在信息密度、阅读性、分享和交互方面存在局限。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-045｜拓宽关于前沿AI的对话
+
+- raw_ref: R-075
+- raw_original_id: daily-34
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-075-拓宽关于前沿ai的对话.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-075-拓宽关于前沿ai的对话.json`
+- source: Anthropic：Newsroom（网页）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: cad4dd64700b3637
+- raw_full_text_hash: cad4dd64700b3637
+- raw_semantic_hash: 9401af70a49c55bd
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cad4dd64700b3637","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Anthropic为构建负责任的先进AI，正与全球多元群体展开对话。首轮讨论汇集了超过15个宗教、哲学及跨文化传统的学者与伦理学者，旨在为Claude等模型的道德形成与价值观对齐提供多元视角。受“外部良知”概念启发，团队开发并测试了伦理承诺提醒工具，初步实验显示其能有效降低模型不对齐行为。公司计划未来将对话拓展至法律、心理学及公民社会等领域，以共同应对AI对社会结构的重塑。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic为构建负责任的先进AI，正与全球多元群体展开对话。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"首轮讨论汇集了超过15个宗教、哲学及跨文化传统的学者与伦理学者，旨在为Claude等模型的道德形成与价值观对齐提供多元视角。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"受“外部良知”概念启发，团队开发并测试了伦理承诺提醒工具，初步实验显示其能有效降低模型不对齐行为。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"公司计划未来将对话拓展至法律、心理学及公民社会等领域，以共同应对AI对社会结构的重塑。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Anthropic为构建负责任的先进AI，正与全球多元群体展开对话。首轮讨论汇集了超过15个宗教、哲学及跨文化传统的学者与伦理学者，旨在为Claude等模型的道德形成与价值观对齐提供多元视角。受“外部良知”概念启发，团队开发并测试了伦理承诺提醒工具，初步实验显示其能有效降低模型不对齐行为。公司计划未来将对话拓展至法律、心理学及公民社会等领域，以共同应对AI对社会结构的重塑。","Anthropic为构建负责任的先进AI，正与全球多元群体展开对话。","首轮讨论汇集了超过15个宗教、哲学及跨文化传统的学者与伦理学者，旨在为Claude等模型的道德形成与价值观对齐提供多元视角。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-046｜Gemini Spark：全天候个人AI代理
+
+- raw_ref: R-076
+- raw_original_id: daily-11
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-076-gemini-spark-全天候个人ai代理.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-076-gemini-spark-全天候个人ai代理.json`
+- source: X：Gemini (@GeminiApp)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 92a73837168a94db
+- raw_full_text_hash: 92a73837168a94db
+- raw_semantic_hash: 6c47eb2ea57fdc76
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"92a73837168a94db","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Gemini Spark 是您的全天候个人AI代理，帮助您驾驭数字生活。 它将 Gemini 从一个回答您问题的助手，转变为一个在您的指导下、代表您完成工作的助手。#GoogleIO","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Gemini Spark 是您的全天候个人AI代理，帮助您驾驭数字生活。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"它将 Gemini 从一个回答您问题的助手，转变为一个在您的指导下、代表您完成工作的助手。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Gemini Spark 是您的全天候个人AI代理，帮助您驾驭数字生活。 它将 Gemini 从一个回答您问题的助手，转变为一个在您的指导下、代表您完成工作的助手。#GoogleIO","Gemini Spark 是您的全天候个人AI代理，帮助您驾驭数字生活。","它将 Gemini 从一个回答您问题的助手，转变为一个在您的指导下、代表您完成工作的助手。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-047｜Karpathy加入Anthropic团队
+
+- raw_ref: R-077
+- raw_original_id: daily-17
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-077-karpathy加入anthropic团队.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-077-karpathy加入anthropic团队.json`
+- source: X：Claude Devs (@ClaudeDevs)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 0f1f1204b2dd02f9
+- raw_full_text_hash: 0f1f1204b2dd02f9
+- raw_semantic_hash: 85796222ef105f6e
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0f1f1204b2dd02f9","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"欢迎加入团队，Andrej！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["欢迎加入团队，Andrej！"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-048｜Andrej加入Anthropic，马斯克也点赞
+
+- raw_ref: R-078
+- raw_original_id: daily-21
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-078-andrej加入anthropic-马斯克也点赞.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-078-andrej加入anthropic-马斯克也点赞.json`
+- source: X：Yuchen Jin (@Yuchenj_UW)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: b5e37173dbf0b090
+- raw_full_text_hash: b5e37173dbf0b090
+- raw_semantic_hash: 38f383dec2866879
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b5e37173dbf0b090","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"opinion","text":"Andrej加入了Anthropic。 连Elon都忍不住称赞Anthropic。 Anthropic今天在Google I/O上真是气场全开。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Andrej加入了Anthropic。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"连Elon都忍不住称赞Anthropic。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic今天在Google I/O上真是气场全开。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Andrej加入了Anthropic。","Anthropic今天在Google I/O上真是气场全开。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-049｜DAA：智能体时代的核心指标
+
+- raw_ref: R-079
+- raw_original_id: daily-33
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-079-daa-智能体时代的核心指标.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-079-daa-智能体时代的核心指标.json`
+- source: X：百度 Baidu (@Baidu_Inc)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: domestic_vendor
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: cc8897468f7e0a42
+- raw_full_text_hash: cc8897468f7e0a42
+- raw_semantic_hash: 7ec55b5101ae0552
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cc8897468f7e0a42","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"opinion","text":"这里快速补充一个指标新词：DAA。 全称 Daily Active Agents（每日活跃智能体），相当于智能体时代的 DAU。 如果说代币经济学追踪成本，那么 DAA 追踪产出——智能体实际完成了多少工作。 完整对比见下文 ↓","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"全称 Daily Active Agents（每日活跃智能体），相当于智能体时代的 DAU。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"如果说代币经济学追踪成本，那么 DAA 追踪产出——智能体实际完成了多少工作。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["如果说代币经济学追踪成本，那么 DAA 追踪产出——智能体实际完成了多少工作。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-050 | Veltris Launches VeltrisOne -- A Vertical AI Orchestration Platform Purpose-Built to Power Micro-Industries
+
+- raw_ref: R-081
+- raw_original_id: https://www.prnewswire.com/news-releases/veltris-launches-veltrisone--a-vertical-ai-orchestration-platform-purpose-built-to-power-micro-industries-302777915.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-05-20/r-081-veltris-launches-veltrisone-vertical-ai-orchestration-platform.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-05-20/r-081-veltris-launches-veltrisone-vertical-ai-orchestration-platform.json`
+- source: PRNewswire / Veltris | https://www.prnewswire.com/news-releases/veltris-launches-veltrisone--a-vertical-ai-orchestration-platform-purpose-built-to-power-micro-industries-302777915.html
+- source_url: https://www.prnewswire.com/news-releases/veltris-launches-veltrisone--a-vertical-ai-orchestration-platform-purpose-built-to-power-micro-industries-302777915.html
+- acquisition_channel: keyword-search
+- search_intent: find_vertical_solution
+- search_path: industry_landing
+- source_type: media
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-clean-text
+- extraction_quality: high
+- extraction_method: plain-text
+- readability_score: 84
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 783dffa55d9ae219
+- raw_full_text_hash: 783dffa55d9ae219
+- raw_semantic_hash: 3a61f2d9b22d4345
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"783dffa55d9ae219","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: named vertical AI solution with healthcare, telecom and manufacturing workflows; rubric=5 multi-industry deployment evidence with business outcome metrics
+- supporting_signals: adoption_context, commercial_or_risk_context
+- theme: mature-commercial-signal
+- keyword_group: mature-commercial-signal
+- score: 8.8
+- raw_capture_priority: 22.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Veltris announced VeltrisOne, a live Vertical AI Orchestration Platform to AI-enable micro-industry workflows in healthcare, industrials and technology sectors.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"VeltrisOne applications include HelixFlow for healthcare administration, EngageCare AI for patient and front-office operations, FaultAnalyze AI for secure networking and DefectQC AI for smart manufacturing.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Across live deployments, Veltris reports a 32% average reduction in healthcare claim denials and a 68% improvement in telecom MTTR.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The release describes a smart manufacturing deployment with 99.7% defect detection accuracy, 92% fewer false rejects and triple inspection speed.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The platform is built on Microsoft Azure AI and Databricks, connects to existing enterprise systems and supports on-premises deployment.","supports":["daily_observation","heatmap","change","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Veltris announced VeltrisOne, a live Vertical AI Orchestration Platform to AI-enable micro-industry workflows in healthcare, industrials and technology sectors.","The platform is built on Microsoft Azure AI and Databricks, connects to existing enterprise systems and supports on-premises deployment."],"case_details":["VeltrisOne applications include HelixFlow for healthcare administration, EngageCare AI for patient and front-office operations, FaultAnalyze AI for secure networking and DefectQC AI for smart manufacturing.","Across live deployments, Veltris reports a 32% average reduction in healthcare claim denials and a 68% improvement in telecom MTTR.","The release describes a smart manufacturing deployment with 99.7% defect detection accuracy, 92% fewer false rejects and triple inspection speed."],"workflow_changes":["Healthcare administration workflows: RCM, prior authorization, claims intelligence and denial management.","Telecom secure networking workflow: outage analysis and MTTR reduction.","Smart manufacturing workflow: visual defect detection and inspection acceleration."],"before_after_clues":["Healthcare claims and revenue-cycle teams move from fragmented manual workflows to AI-assisted denial management and claim intelligence.","Telecom network operations move from slower outage diagnosis to AI-assisted fault analysis.","Manufacturing inspection moves from manual or slower visual QC to AI-assisted defect detection."],"affected_roles":["healthcare operations lead","revenue cycle management team","network operations team","manufacturing quality team","CIO / IT lead"],"risks_or_constraints":["Requires industry data readiness, compliance alignment and integration with existing enterprise systems."]}
+- missing_information: none
+- pool_reason: lane-specific backfill; original URL, readable text, snapshot/hash, key excerpts, non-index evidence object and vertical workflow evidence are present.
+- rejection_risk: Re-open original URL before stronger customer-case claims; use this as vertical solution evidence.

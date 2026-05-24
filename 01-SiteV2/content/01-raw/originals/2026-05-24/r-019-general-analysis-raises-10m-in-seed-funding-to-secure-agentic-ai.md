@@ -1,0 +1,288 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-019
+title: "General Analysis Raises $10M in Seed Funding to Secure Agentic AI"
+original_url: "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI"
+canonical_url: "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-05-24T04:09:10.649Z
+language: mixed
+full_text_hash: fc9f406ab2427abb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-24/r-019-general-analysis-raises-10m-in-seed-funding-to-secure-agentic-ai.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-24/r-019-general-analysis-raises-10m-in-seed-funding-to-secure-agentic-ai.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6839,"paragraph_count":29,"sentence_count":37,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 6839
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fc9f406ab2427abb","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2513b5897a02dd3c
+content_hash: fc9f406ab2427abb
+semantic_hash: 04e011a0afc31740
+duplicate_of: ""
+first_seen_at: "2026-05-24T04:09:10.649Z"
+last_seen_at: 2026-05-24T04:09:10.649Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Nvidia","Cursor"],"products":["agents","agent","Agent","Cursor"],"people":[],"industries":["金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["$10M","$10 million","645","50","55 b","2025","1996","81.833"],"quotes":["prompt injection,","lethal trifecta","We hear from security teams that they want agents that are secure by design,"," said Maximilian Li, co-founder of General Analysis. ","One advantage of agents is that they are much easier to study systematically than the human workflows they are beginning to replace,"]}
+evidence_seed: {"company_actions":["General Analysis Raises $10M in Seed Funding to Secure Agentic AI # General Analysis Raises $10M in Seed Funding to Secure Agentic AI SAN FRANCISCO--(BUSINESS WIRE)-- General Analysis, a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to c","General Analysis Raises $10M in Seed Funding to Secure Agentic AI Share The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production SAN FRANCISCO--( BUSINESS WIRE )-- General Analysis , a company building secur","Out of 55 bots tested, only five refused."],"case_details":["General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production."]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"General Analysis Raises $10M in Seed Funding to Secure Agentic AI # General Analysis Raises $10M in Seed Funding to Secure Agentic AI SAN FRANCISCO--(BUSINESS WIRE)-- General Analysis, a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to c","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"General Analysis Raises $10M in Seed Funding to Secure Agentic AI Share The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production SAN FRANCISCO--( BUSINESS WIRE )-- General Analysis , a company building secur","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"In March, General Analysis’s adversarial agent convinced 50 live customer service AI agents to give away more than $10 million in fabricated perks — million-dollar gift cards, years of free home security, whatever it could extract — in roughly three minutes per target.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Out of 55 bots tested, only five refused.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# General Analysis Raises $10M in Seed Funding to Secure Agentic AI
+
+## clean_text
+
+General Analysis Raises $10M in Seed Funding to Secure Agentic AI
+Share
+The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production
+The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production
+SAN FRANCISCO--( BUSINESS WIRE )-- General Analysis , a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production. General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users.
+In March, General Analysis’s adversarial agent convinced 50 live customer service AI agents to give away more than $10 million in fabricated perks — million-dollar gift cards, years of free home security, whatever it could extract — in roughly three minutes per target. Out of 55 bots tested, only five refused. That kind of stress test, along with the defenses it informs, is what General Analysis runs for enterprise customers before their agents reach production.
+General Analysis was founded by Rez Havaei, previously an AI researcher at Cohere and NVIDIA, with Maximilian Li, AI safety researcher from Harvard, and Rex Liu, machine learning researcher at Caltech. The trio built the company on the view that securing AI agents is a distinct technical discipline requiring skills and methods different from traditional cybersecurity. Agentic systems behave non-deterministically, and their failures cannot be anticipated by reading code alone.
+Across nearly every industry, enterprises are deploying AI agents into increasingly consequential workflows. The upside is large enough that delaying deployment is often not a serious option, and the burden of making these systems safe has largely fallen on security teams. But there is not yet a mature playbook for securing agentic AI.
+Last summer, researchers at General Analysis showed that a widely used Supabase integration in Cursor, a code generation AI agent, could allow an internal agent to be hijacked by a single malicious support ticket, tricking it into leaking a complete private database. Simon Willison, the British engineer who coined the term “prompt injection,” cited the finding as a case of the “lethal trifecta” — an AI system that simultaneously holds private data, ingests untrusted content, and can communicate externally.
+Security teams are often stuck choosing between agents that are locked down to the point of uselessness and agents whose risks they cannot actually see. “We hear from security teams that they want agents that are secure by design,” said Rez Havaei, CEO of General Analysis. “What that often turns into in practice is a stack of isolation layers and ad hoc context restrictions that makes a system feel more controlled. Those measures either fail to eliminate the underlying vulnerability or constrain the agent enough to limit its usefulness. The problem is that feeling safer and being safer are not the same thing.”
+“Our position is that security for AI systems is an empirical problem. It has to be grounded in rigorous measurement of how those systems behave under realistic and adversarial conditions. You cannot prove an agent is safe," said Maximilian Li, co-founder of General Analysis. "You can only measure how often it fails, and how badly, and drive both numbers down."
+From that premise, General Analysis aims to help enterprises configure defenses through realistic empirical measurement. Different defensive layers carry different tradeoffs, and there is no universal configuration that makes every agentic system robust. The company combines adversarial evaluations with a broad defensive toolkit to identify the failure modes present in a deployment, measure the effect of different interventions, and help customers determine which configurations materially reduce risk.
+“One advantage of agents is that they are much easier to study systematically than the human workflows they are beginning to replace,” said Rex Liu, co-founder of General Analysis. “Many of those workflows were never especially secure to begin with, and their failures are often hard to observe or improve rigorously. But as those workflows become agentic, they also become more measurable and more improvable — which creates a path for businesses to become more secure in practice than they were before.”
+“Agentic systems represent a paradigm shift in security. Safety and security in the AI era demand continuous adversarial testing rooted in deep research, not static rule sets,” said Tae Yoon, Partner at Altos Ventures. “Rez, Rex, and Max are exactly the kind of team this moment calls for: technically brilliant, deeply scrappy, and moving incredibly fast. We’re proud to lead this round and partner with them from the earliest days.”
+To get in touch with the General Analysis team, reach out at info@generalanalysis.com .
+About General Analysis
+General Analysis is an AI security company that helps enterprises deploy agentic AI safely through adversarial evaluation and defensive tooling. Founded in 2025 and based in San Francisco, the company is backed by Altos Ventures, 645 Ventures, Menlo Ventures, and Y Combinator. Learn more at generalanalysis.com .
+About Altos Ventures
+Founded in 1996, Altos Ventures is a technology investment firm based in Silicon Valley. Through patient and pragmatic investing, Altos partners with early to growth stage technology companies operating in consumer and enterprise sectors, with the goal of building durable and compounding businesses over decades. As a registered investment advisor (RIA) with the SEC, Altos has a uniquely flexible, long-term, and concentrated approach to venture capital, supporting the full lifecycle of companies from inception to global growth and profitability. For more information, please visit www.altos.vc .
+Contacts
+Media Contact
+press@generalanalysis.com
+Industry:
+Professional Services
+Security
+Technology
+Start-Up
+Software
+Artificial Intelligence
+General Analysis
+Release Versions
+English
+Contacts
+Media Contact
+press@generalanalysis.com
+Social Media Profiles
+General Analysis on LinkedIn
+General Analysis on X
+Back to Newsroom
+General Analysis
+Release Versions
+English
+Contacts
+Media Contact
+press@generalanalysis.com
+Social Media Profiles
+General Analysis on LinkedIn
+General Analysis on X
+
+## full_text
+
+General Analysis Raises $10M in Seed Funding to Secure Agentic AI
+Share
+The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production
+The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production
+SAN FRANCISCO--( BUSINESS WIRE )-- General Analysis , a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production. General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users.
+In March, General Analysis’s adversarial agent convinced 50 live customer service AI agents to give away more than $10 million in fabricated perks — million-dollar gift cards, years of free home security, whatever it could extract — in roughly three minutes per target. Out of 55 bots tested, only five refused. That kind of stress test, along with the defenses it informs, is what General Analysis runs for enterprise customers before their agents reach production.
+General Analysis was founded by Rez Havaei, previously an AI researcher at Cohere and NVIDIA, with Maximilian Li, AI safety researcher from Harvard, and Rex Liu, machine learning researcher at Caltech. The trio built the company on the view that securing AI agents is a distinct technical discipline requiring skills and methods different from traditional cybersecurity. Agentic systems behave non-deterministically, and their failures cannot be anticipated by reading code alone.
+Across nearly every industry, enterprises are deploying AI agents into increasingly consequential workflows. The upside is large enough that delaying deployment is often not a serious option, and the burden of making these systems safe has largely fallen on security teams. But there is not yet a mature playbook for securing agentic AI.
+Last summer, researchers at General Analysis showed that a widely used Supabase integration in Cursor, a code generation AI agent, could allow an internal agent to be hijacked by a single malicious support ticket, tricking it into leaking a complete private database. Simon Willison, the British engineer who coined the term “prompt injection,” cited the finding as a case of the “lethal trifecta” — an AI system that simultaneously holds private data, ingests untrusted content, and can communicate externally.
+Security teams are often stuck choosing between agents that are locked down to the point of uselessness and agents whose risks they cannot actually see. “We hear from security teams that they want agents that are secure by design,” said Rez Havaei, CEO of General Analysis. “What that often turns into in practice is a stack of isolation layers and ad hoc context restrictions that makes a system feel more controlled. Those measures either fail to eliminate the underlying vulnerability or constrain the agent enough to limit its usefulness. The problem is that feeling safer and being safer are not the same thing.”
+“Our position is that security for AI systems is an empirical problem. It has to be grounded in rigorous measurement of how those systems behave under realistic and adversarial conditions. You cannot prove an agent is safe," said Maximilian Li, co-founder of General Analysis. "You can only measure how often it fails, and how badly, and drive both numbers down."
+From that premise, General Analysis aims to help enterprises configure defenses through realistic empirical measurement. Different defensive layers carry different tradeoffs, and there is no universal configuration that makes every agentic system robust. The company combines adversarial evaluations with a broad defensive toolkit to identify the failure modes present in a deployment, measure the effect of different interventions, and help customers determine which configurations materially reduce risk.
+“One advantage of agents is that they are much easier to study systematically than the human workflows they are beginning to replace,” said Rex Liu, co-founder of General Analysis. “Many of those workflows were never especially secure to begin with, and their failures are often hard to observe or improve rigorously. But as those workflows become agentic, they also become more measurable and more improvable — which creates a path for businesses to become more secure in practice than they were before.”
+“Agentic systems represent a paradigm shift in security. Safety and security in the AI era demand continuous adversarial testing rooted in deep research, not static rule sets,” said Tae Yoon, Partner at Altos Ventures. “Rez, Rex, and Max are exactly the kind of team this moment calls for: technically brilliant, deeply scrappy, and moving incredibly fast. We’re proud to lead this round and partner with them from the earliest days.”
+To get in touch with the General Analysis team, reach out at info@generalanalysis.com .
+About General Analysis
+General Analysis is an AI security company that helps enterprises deploy agentic AI safely through adversarial evaluation and defensive tooling. Founded in 2025 and based in San Francisco, the company is backed by Altos Ventures, 645 Ventures, Menlo Ventures, and Y Combinator. Learn more at generalanalysis.com .
+About Altos Ventures
+Founded in 1996, Altos Ventures is a technology investment firm based in Silicon Valley. Through patient and pragmatic investing, Altos partners with early to growth stage technology companies operating in consumer and enterprise sectors, with the goal of building durable and compounding businesses over decades. As a registered investment advisor (RIA) with the SEC, Altos has a uniquely flexible, long-term, and concentrated approach to venture capital, supporting the full lifecycle of companies from inception to global growth and profitability. For more information, please visit www.altos.vc .
+Contacts
+Media Contact
+press@generalanalysis.com
+Industry:
+Professional Services
+Security
+Technology
+Start-Up
+Software
+Artificial Intelligence
+General Analysis
+Release Versions
+English
+Contacts
+Media Contact
+press@generalanalysis.com
+Social Media Profiles
+General Analysis on LinkedIn
+General Analysis on X
+Back to Newsroom
+General Analysis
+Release Versions
+English
+Contacts
+Media Contact
+press@generalanalysis.com
+Social Media Profiles
+General Analysis on LinkedIn
+General Analysis on X
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6839,"paragraph_count":29,"sentence_count":37,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   General Analysis Raises $10M in Seed Funding to Secure Agentic AI # General Analysis Raises $10M in Seed Funding to Secure Agentic AI SAN FRANCISCO--(BUSINESS WIRE)-- General Analysis, a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to c
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   General Analysis Raises $10M in Seed Funding to Secure Agentic AI Share The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production SAN FRANCISCO--( BUSINESS WIRE )-- General Analysis , a company building secur
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production.
+
+4. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users.
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   In March, General Analysis’s adversarial agent convinced 50 live customer service AI agents to give away more than $10 million in fabricated perks — million-dollar gift cards, years of free home security, whatever it could extract — in roughly three minutes per target.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Out of 55 bots tested, only five refused.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Nvidia, Cursor
+- products: agents, agent, Agent, Cursor
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: $10M, $10 million, 645, 50, 55 b, 2025, 1996, 81.833
+- quotes: prompt injection, / lethal trifecta / We hear from security teams that they want agents that are secure by design, /  said Maximilian Li, co-founder of General Analysis.  / One advantage of agents is that they are much easier to study systematically than the human workflows they are beginning to replace,
+
+## evidence_seed
+
+- company_actions: General Analysis Raises $10M in Seed Funding to Secure Agentic AI # General Analysis Raises $10M in Seed Funding to Secure Agentic AI SAN FRANCISCO--(BUSINESS WIRE)-- General Analysis, a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to c / General Analysis Raises $10M in Seed Funding to Secure Agentic AI Share The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production The SF-based startup, founded by former NVIDIA, Cohere, and DeepMind researchers, is working to close a widening security gap as companies race to put autonomous agents into production SAN FRANCISCO--( BUSINESS WIRE )-- General Analysis , a company building secur / Out of 55 bots tested, only five refused.
+- case_details: General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+General Analysis Raises $10M in Seed Funding to Secure Agentic AI # General Analysis Raises $10M in Seed Funding to Secure Agentic AI SAN FRANCISCO--(BUSINESS WIRE)-- General Analysis, a company building security infrastructure for agentic AI, today announced $10 million in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels. The company was founded by former NVIDIA, Cohere, and DeepMind researchers and is working to close a widening security gap as companies race to put autonomous agents into production. General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users. In March, General Analysis’s adversarial agent convinced 50 live customer service AI agents to give away more than $10 million in fabricated perks — million-dollar gift cards, years of free home security, whatever it could extract — in roughly three minutes per target. Out of 55 bots tested, only five refused. That kind of stress test, along with the defenses it informs, is what General Analysis runs for enterprise customers before their agents reach production. “Agentic systems represent a paradigm shift in security. Safety and security in AI era demand continuous adversarial testing rooted in deep research, not static rule sets,” said Tae Yoon, Partner at Altos Ventures. “Rez, Rex, and Max are exactly the kind of team this moment calls for: technically brilliant, deeply scrappy, and moving incredibly fast. We’re proud to lead this round and partner with them from the earliest days.” General Analysis is an AI security company that helps enterprises deploy agentic AI safely through adversarial evaluation and defensive tooling. Founded in 2025 and based in San Francisco, the company is backed by Altos Ventures, 645 Ventures, Menlo Ventures, and Y Combinator. Learn more at generalanalysis.com. Founded in 1996, Altos Ventures investment firm based in Silicon Valley. Through patient and investing, Altos with early to operating in consumer and enterprise , with the and compounding businesses over decades. As a registered investment (RIA) with the , Altos has a uniquely -term, and concentrated capital, supporting the / score=81.833 / query=AI Agent funding enterprise customers / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,213 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-045
+title: "修不过来：Anthropic 披露 AI 抓虫首月战报，揪出超 1 万个高危漏洞"
+original_url: "https://www.ithome.com/0/954/272.htm"
+canonical_url: "https://www.ithome.com/0/954/272.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-23T02:56:26.000Z"
+collected_at: 2026-05-23T04:13:33.141Z
+language: mixed
+full_text_hash: 865523a27d77fbfe
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-045-修不过来-anthropic-披露-ai-抓虫首月战报-揪出超-1-万个高危漏洞.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-045-修不过来-anthropic-披露-ai-抓虫首月战报-揪出超-1-万个高危漏洞.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 59
+extractor_diagnostics: {"readability_score":59,"text_length":920,"paragraph_count":11,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 920
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"865523a27d77fbfe","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"修不过来：Anthropic 披露 AI 抓虫首月战报，揪出超 1 万个高危漏洞","discovery_summary":"Anthropic于5月22日披露，其Project Glasswing项目上线一个月内，已携手约50家合作伙伴，在关键软件中挖掘出超过1万个高危与关键漏洞。合作方反馈显示，Claude Mythos Preview模型显著提升了漏洞发现效率，部分团队速度提升超10倍，当前瓶颈已转向漏洞的验证与修补环节。具体案例中，Cloudflare发现2000个漏洞（含400个高危），Mozilla在Firefox 150中修复了271个漏洞。外部评测显示，该模型在攻防测试中表现突出。针对开源项目，Anthropic已扫描超1000个项目，发现逾2.3万个漏洞，其中高危漏洞真实率达90.6%。但漏洞修补面临压力，高危漏洞从发现到修补平均需2周，部分开源维护者处理能力已近极限。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/954/272.htm","discovered_at":"2026-05-23T04:03:55.760Z","rank_on_page":36,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1a3c3ad9ec7a1e9c
+content_hash: 865523a27d77fbfe
+semantic_hash: 15061fcbaca5c41a
+duplicate_of: ""
+first_seen_at: "2026-05-23T02:56:26.000Z"
+last_seen_at: 2026-05-23T04:13:33.141Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","Anthropic"],"products":["Claude"],"people":[],"industries":[],"roles":[],"workflows":["合同审阅 / 法律研究","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["1 万","5","22","50家","1万","10倍","2000","400"],"quotes":["验证、披露与修补漏洞"]}
+evidence_seed: {"company_actions":["Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。","Mozilla 在 Firefox 150 中修复 271 个漏洞，这一数量超过使用 Claude Opus 4."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Anthropic于5月22日披露，其Project Glasswing项目上线一个月内，已携手约50家合作伙伴，在关键软件中挖掘出超过1万个高危与关键漏洞。合作方反馈显示，Claude Mythos Preview模型显著提升了漏洞发现效率，部分团队速度提升超10倍，当前瓶颈已转向漏洞的验证与修补环节。具体案例中，Cloudflare发现2000个漏洞（含400个高危），Mozilla在Firefox 150中修复了271个漏洞。外部评测显示，该模型在攻防测试中表现突出。针对开源项目，Anthropic已扫描超1000个项目，发现逾2.3万个漏洞，其中高危漏洞真实率达90.6%。但漏洞修补面临压力，高危漏洞从发现到修补平均需2周，部分开源维护者处理能力已近极限。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"IT之家 5 月 23 日消息，Anthropic 昨日（5 月 22 日）发布公告，披露称 Project Glasswing 项目上线 1 个月后，携手约 50 家合作伙伴， 已在关键软件中挖掘出超过 1 万个高危（High）和关键（Critical）级别漏洞。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"根据 Project Glasswing 项目合作方的反馈，Claude Mythos Preview 模型已显著提升漏洞发现能力，部分团队的找漏洞速度提升超过 10 倍， 当前瓶颈已从“发现漏洞”转向“验证、披露与修补漏洞”。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Mozilla 在 Firefox 150 中修复 271 个漏洞，这一数量超过使用 Claude Opus 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"6 测试 Firefox 148 时的 10 倍。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 修不过来：Anthropic 披露 AI 抓虫首月战报，揪出超 1 万个高危漏洞
+
+## clean_text
+
+IT之家 5 月 23 日消息，Anthropic 昨日（5 月 22 日）发布公告，披露称 Project Glasswing 项目上线 1 个月后，携手约 50 家合作伙伴， 已在关键软件中挖掘出超过 1 万个高危（High）和关键（Critical）级别漏洞。
+根据 Project Glasswing 项目合作方的反馈，Claude Mythos Preview 模型已显著提升漏洞发现能力，部分团队的找漏洞速度提升超过 10 倍， 当前瓶颈已从“发现漏洞”转向“验证、披露与修补漏洞”。
+Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。
+Mozilla 在 Firefox 150 中修复 271 个漏洞，这一数量超过使用 Claude Opus 4.6 测试 Firefox 148 时的 10 倍。
+在外部评测中，Mythos Preview 也表现突出。英国 AI Security Institute 称其是首个端到端攻破 2 个网络攻防靶场的模型。
+独立安全平台 XBOW 认为，该模型在网页利用基准上的表现明显强于现有模型，并具备极高精度。
+IT之家援引博文介绍，针对开源软件，Anthropic 过去几个月已扫描 1000 多个开源项目，合计发现 23019 个漏洞（包括中危和低危），其中 6202 个被模型估计为高危或严重级别。
+当前已有 1752 个高危或严重漏洞完成人工复核， 确认其中 1587 个为真实漏洞，真实率达 90.6% ；其中 1094 个被确认仍属高危或严重级别，占比 62.4%。
+按当前复核后命中率估算，即便后续不再新增漏洞，最终也可能沉淀出近 3900 个开源高危或严重漏洞。
+真正困难的环节在修补。Anthropic 称，高危或严重漏洞从发现到补丁落地，平均需要 2 周，部分开源维护者甚至要求放慢披露节奏，其处理 AI 生成漏洞报告的能力已接近上限。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 5 月 23 日消息，Anthropic 昨日（5 月 22 日）发布公告，披露称 Project Glasswing 项目上线 1 个月后，携手约 50 家合作伙伴， 已在关键软件中挖掘出超过 1 万个高危（High）和关键（Critical）级别漏洞。
+根据 Project Glasswing 项目合作方的反馈，Claude Mythos Preview 模型已显著提升漏洞发现能力，部分团队的找漏洞速度提升超过 10 倍， 当前瓶颈已从“发现漏洞”转向“验证、披露与修补漏洞”。
+Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。
+Mozilla 在 Firefox 150 中修复 271 个漏洞，这一数量超过使用 Claude Opus 4.6 测试 Firefox 148 时的 10 倍。
+在外部评测中，Mythos Preview 也表现突出。英国 AI Security Institute 称其是首个端到端攻破 2 个网络攻防靶场的模型。
+独立安全平台 XBOW 认为，该模型在网页利用基准上的表现明显强于现有模型，并具备极高精度。
+IT之家援引博文介绍，针对开源软件，Anthropic 过去几个月已扫描 1000 多个开源项目，合计发现 23019 个漏洞（包括中危和低危），其中 6202 个被模型估计为高危或严重级别。
+当前已有 1752 个高危或严重漏洞完成人工复核， 确认其中 1587 个为真实漏洞，真实率达 90.6% ；其中 1094 个被确认仍属高危或严重级别，占比 62.4%。
+按当前复核后命中率估算，即便后续不再新增漏洞，最终也可能沉淀出近 3900 个开源高危或严重漏洞。
+真正困难的环节在修补。Anthropic 称，高危或严重漏洞从发现到补丁落地，平均需要 2 周，部分开源维护者甚至要求放慢披露节奏，其处理 AI 生成漏洞报告的能力已接近上限。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 59
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":59,"text_length":920,"paragraph_count":11,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   Anthropic于5月22日披露，其Project Glasswing项目上线一个月内，已携手约50家合作伙伴，在关键软件中挖掘出超过1万个高危与关键漏洞。合作方反馈显示，Claude Mythos Preview模型显著提升了漏洞发现效率，部分团队速度提升超10倍，当前瓶颈已转向漏洞的验证与修补环节。具体案例中，Cloudflare发现2000个漏洞（含400个高危），Mozilla在Firefox 150中修复了271个漏洞。外部评测显示，该模型在攻防测试中表现突出。针对开源项目，Anthropic已扫描超1000个项目，发现逾2.3万个漏洞，其中高危漏洞真实率达90.6%。但漏洞修补面临压力，高危漏洞从发现到修补平均需2周，部分开源维护者处理能力已近极限。
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   IT之家 5 月 23 日消息，Anthropic 昨日（5 月 22 日）发布公告，披露称 Project Glasswing 项目上线 1 个月后，携手约 50 家合作伙伴， 已在关键软件中挖掘出超过 1 万个高危（High）和关键（Critical）级别漏洞。
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   根据 Project Glasswing 项目合作方的反馈，Claude Mythos Preview 模型已显著提升漏洞发现能力，部分团队的找漏洞速度提升超过 10 倍， 当前瓶颈已从“发现漏洞”转向“验证、披露与修补漏洞”。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Mozilla 在 Firefox 150 中修复 271 个漏洞，这一数量超过使用 Claude Opus 4.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   6 测试 Firefox 148 时的 10 倍。
+
+## business_elements
+
+- companies: IT之家（RSS）, Anthropic
+- products: Claude
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 1 万, 5, 22, 50家, 1万, 10倍, 2000, 400
+- quotes: 验证、披露与修补漏洞
+
+## evidence_seed
+
+- company_actions: Cloudflare 披露，其在关键路径系统中发现 2000 个漏洞，其中 400 个属于高危或严重级别，且误报率优于人工测试。 / Mozilla 在 Firefox 150 中修复 271 个漏洞，这一数量超过使用 Claude Opus 4.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"修不过来：Anthropic 披露 AI 抓虫首月战报，揪出超 1 万个高危漏洞","discovery_summary":"Anthropic于5月22日披露，其Project Glasswing项目上线一个月内，已携手约50家合作伙伴，在关键软件中挖掘出超过1万个高危与关键漏洞。合作方反馈显示，Claude Mythos Preview模型显著提升了漏洞发现效率，部分团队速度提升超10倍，当前瓶颈已转向漏洞的验证与修补环节。具体案例中，Cloudflare发现2000个漏洞（含400个高危），Mozilla在Firefox 150中修复了271个漏洞。外部评测显示，该模型在攻防测试中表现突出。针对开源项目，Anthropic已扫描超1000个项目，发现逾2.3万个漏洞，其中高危漏洞真实率达90.6%。但漏洞修补面临压力，高危漏洞从发现到修补平均需2周，部分开源维护者处理能力已近极限。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/954/272.htm","discovered_at":"2026-05-23T04:03:55.760Z","rank_on_page":36,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Anthropic于5月22日披露，其Project Glasswing项目上线一个月内，已携手约50家合作伙伴，在关键软件中挖掘出超过1万个高危与关键漏洞。合作方反馈显示，Claude Mythos Preview模型显著提升了漏洞发现效率，部分团队速度提升超10倍，当前瓶颈已转向漏洞的验证与修补环节。具体案例中，Cloudflare发现2000个漏洞（含400个高危），Mozilla在Firefox 150中修复了271个漏洞。外部评测显示，该模型在攻防测试中表现突出。针对开源项目，Anthropic已扫描超1000个项目，发现逾2.3万个漏洞，其中高危漏洞真实率达90.6%。但漏洞修补面临压力，高危漏洞从发现到修补平均需2周，部分开源维护者处理能力已近极限。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

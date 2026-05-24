@@ -6,6 +6,7 @@
 
 - `visual-identity-guidelines.md`：品牌视觉识别系统规范，覆盖 Logo、色彩、字体、辅助图形、图标和应用。
 - `typography-guidelines.md`：正式字体规范，覆盖中文标题、正文、英文、数字、Logo、栏目、内参详情页、按钮标签和 CSS token。
+- `page-typography-position-guidelines.md`：页面位置字体规范，覆盖导航栏、首页、栏目页、详情页、侧栏、页脚的字号、字重、行高和位置。
 - `USAGE.md`：所有设计任务的读取与验收要求。
 - `svg-restoration-guidelines.md`：三张 VI 规范图到可执行 SVG 的还原说明、失真处理和验收口径。
 - `brand-tokens.css`：色彩、圆角、阴影、字体 token。
@@ -35,5 +36,6 @@
 - Logo、符号、信息卡片和动效分镜优先引用 SVG 资产。
 - 页面颜色使用 `brand-tokens.css`。
 - 页面字体使用 `typography-guidelines.md` 与 `brand-tokens.css` 中的字体 token。
+- 页面位置字体使用 `page-typography-position-guidelines.md`，不得自行放大栏目页、详情页、卡片或导航字号。
 - 动效使用 `motion-tokens.css`。
 - 新组件基于现有 SVG 风格扩展，保持深海蓝、云白、雾灰和少量香槟金。

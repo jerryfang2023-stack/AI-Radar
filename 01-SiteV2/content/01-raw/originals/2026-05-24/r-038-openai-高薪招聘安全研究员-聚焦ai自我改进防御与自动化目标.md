@@ -1,0 +1,206 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-038
+title: "OpenAI 高薪招聘安全研究员，聚焦AI自我改进防御与自动化目标"
+original_url: "https://www.ithome.com/0/954/455.htm"
+canonical_url: "https://www.ithome.com/0/954/455.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-23T15:49:19.000Z"
+collected_at: 2026-05-24T04:09:10.897Z
+language: mixed
+full_text_hash: 8276cc2210a1d3bd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-24/r-038-openai-高薪招聘安全研究员-聚焦ai自我改进防御与自动化目标.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-24/r-038-openai-高薪招聘安全研究员-聚焦ai自我改进防御与自动化目标.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 42
+extractor_diagnostics: {"readability_score":42,"text_length":859,"paragraph_count":7,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 859
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8276cc2210a1d3bd","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 高薪招聘安全研究员，聚焦AI自我改进防御与自动化目标","discovery_summary":"OpenAI 正为其 Preparedness 安全团队招聘安全研究员，年薪高达 29.5 万至 44.5 万美元。该岗位旨在寻找能够支持递归式自我改进准备工作的技术专家，要求具备对未来潜在问题进行推理的\"良好品味和策略\"。研究员将重点研究防御\"数据投毒\"攻击、开发模型推理过程解释工具，并追踪技术岗位自动化进展。此次招聘与 OpenAI 的长期目标呼应，即实现AI研发自动化，包括在2028年前推出\"真正的自动化AI研究员\"。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/954/455.htm","discovered_at":"2026-05-24T04:04:36.076Z","rank_on_page":70,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0c8f9296341ba921
+content_hash: 8276cc2210a1d3bd
+semantic_hash: 5d20fb5b41312f9e
+duplicate_of: ""
+first_seen_at: "2026-05-23T15:49:19.000Z"
+last_seen_at: 2026-05-24T04:09:10.897Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":3,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":[],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["29.5 万","44.5 万","2028","5","23","200.8 万","303 万","10"],"quotes":["。研究员将重点研究防御","攻击、开发模型推理过程解释工具，并追踪技术岗位自动化进展。此次招聘与 OpenAI 的长期目标呼应，即实现AI研发自动化，包括在2028年前推出","。\nIT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本"," 能够支持递归式自我改进准备工作的强大技术执行者 ","这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。因此，这一岗位尤其需要具备 良好品味和策略 （tasteful and strategic）的人才。"]}
+evidence_seed: {"company_actions":["招聘信息写道：“这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["IT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本”时可能出现的问题。","职位聚合网站显示，这则招聘信息面向 OpenAI Preparedness 安全团队，本月上线。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"OpenAI 正为其 Preparedness 安全团队招聘安全研究员，年薪高达 29.5 万至 44.5 万美元。该岗位旨在寻找能够支持递归式自我改进准备工作的技术专家，要求具备对未来潜在问题进行推理的\"良好品味和策略\"。研究员将重点研究防御\"数据投毒\"攻击、开发模型推理过程解释工具，并追踪技术岗位自动化进展。此次招聘与 OpenAI 的长期目标呼应，即实现AI研发自动化，包括在2028年前推出\"真正的自动化AI研究员\"。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"IT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本”时可能出现的问题。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"职位聚合网站显示，这则招聘信息面向 OpenAI Preparedness 安全团队，本月上线。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"number","text":"5 万美元 （IT之家注：现汇率约合 200.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"8 万至 303 万元人民币），目标是寻找“ 能够支持递归式自我改进准备工作的强大技术执行者 ”。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"招聘信息写道：“这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 高薪招聘安全研究员，聚焦AI自我改进防御与自动化目标
+
+## clean_text
+
+IT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本”时可能出现的问题。
+职位聚合网站显示，这则招聘信息面向 OpenAI Preparedness 安全团队，本月上线。该岗位年薪高达 29.5 万至 44.5 万美元 （IT之家注：现汇率约合 200.8 万至 303 万元人民币），目标是寻找“ 能够支持递归式自我改进准备工作的强大技术执行者 ”。
+招聘信息写道：“这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。因此，这一岗位尤其需要具备 良好品味和策略 （tasteful and strategic）的人才。”
+当前，OpenAI 正着眼于实现自身研究工作的自动化的目标。去年 10 月，CEO 奥尔特曼曾表示，OpenAI 的目标是在今年 9 月前 利用数十万枚芯片运行“自动化 AI 研究实习生” ，并在 2028 年 3 月前实现“ 真正的自动化 AI 研究员 ”。他补充说，“我们完全有可能无法实现这一目标。但考虑到潜在影响极其巨大，我们认为公开说明这些目标符合公众利益。”
+Anthropic 今年 4 月发布研究，尝试 利用 AI 模型监督更强大的 AI 模型 ，并取得了有限但积极的结果。今年 5 月，Anthropic 联合创始人兼政策主管杰克 · 克拉克提出观点：到 2028 年底前，AI 研发完全脱离人类参与的概率“大约为 60%”。
+OpenAI 的这则招聘信息提到，研究员预计需要 重点研究如何防御“数据投毒”攻击 ，即攻击者通过训练数据破坏 AI 模型的行为；需要开发用于 解释模型推理过程 的工具，或通过实验理解模型的安全性与潜在风险；需要“追踪技术岗位自动化进展”，其中包括衡量 AI 编程工具的使用情况。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本”时可能出现的问题。
+职位聚合网站显示，这则招聘信息面向 OpenAI Preparedness 安全团队，本月上线。该岗位年薪高达 29.5 万至 44.5 万美元 （IT之家注：现汇率约合 200.8 万至 303 万元人民币），目标是寻找“ 能够支持递归式自我改进准备工作的强大技术执行者 ”。
+招聘信息写道：“这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。因此，这一岗位尤其需要具备 良好品味和策略 （tasteful and strategic）的人才。”
+当前，OpenAI 正着眼于实现自身研究工作的自动化的目标。去年 10 月，CEO 奥尔特曼曾表示，OpenAI 的目标是在今年 9 月前 利用数十万枚芯片运行“自动化 AI 研究实习生” ，并在 2028 年 3 月前实现“ 真正的自动化 AI 研究员 ”。他补充说，“我们完全有可能无法实现这一目标。但考虑到潜在影响极其巨大，我们认为公开说明这些目标符合公众利益。”
+Anthropic 今年 4 月发布研究，尝试 利用 AI 模型监督更强大的 AI 模型 ，并取得了有限但积极的结果。今年 5 月，Anthropic 联合创始人兼政策主管杰克 · 克拉克提出观点：到 2028 年底前，AI 研发完全脱离人类参与的概率“大约为 60%”。
+OpenAI 的这则招聘信息提到，研究员预计需要 重点研究如何防御“数据投毒”攻击 ，即攻击者通过训练数据破坏 AI 模型的行为；需要开发用于 解释模型推理过程 的工具，或通过实验理解模型的安全性与潜在风险；需要“追踪技术岗位自动化进展”，其中包括衡量 AI 编程工具的使用情况。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 42
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":42,"text_length":859,"paragraph_count":7,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   OpenAI 正为其 Preparedness 安全团队招聘安全研究员，年薪高达 29.5 万至 44.5 万美元。该岗位旨在寻找能够支持递归式自我改进准备工作的技术专家，要求具备对未来潜在问题进行推理的"良好品味和策略"。研究员将重点研究防御"数据投毒"攻击、开发模型推理过程解释工具，并追踪技术岗位自动化进展。此次招聘与 OpenAI 的长期目标呼应，即实现AI研发自动化，包括在2028年前推出"真正的自动化AI研究员"。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   IT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本”时可能出现的问题。
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   职位聚合网站显示，这则招聘信息面向 OpenAI Preparedness 安全团队，本月上线。
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   5 万美元 （IT之家注：现汇率约合 200.
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   8 万至 303 万元人民币），目标是寻找“ 能够支持递归式自我改进准备工作的强大技术执行者 ”。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   招聘信息写道：“这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 29.5 万, 44.5 万, 2028, 5, 23, 200.8 万, 303 万, 10
+- quotes: 。研究员将重点研究防御 / 攻击、开发模型推理过程解释工具，并追踪技术岗位自动化进展。此次招聘与 OpenAI 的长期目标呼应，即实现AI研发自动化，包括在2028年前推出 / 。
+IT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本 /  能够支持递归式自我改进准备工作的强大技术执行者  / 这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。因此，这一岗位尤其需要具备 良好品味和策略 （tasteful and strategic）的人才。
+
+## evidence_seed
+
+- company_actions: 招聘信息写道：“这项工作依赖于对未来可能存在、但当前未必已经存在的问题进行推理。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: IT之家 5 月 23 日消息，据《商业内幕》23 日（今天）下午报道，OpenAI 发布了安全研究员的招聘信息，研究当 AI 能够训练出自己的“更强版本”时可能出现的问题。 / 职位聚合网站显示，这则招聘信息面向 OpenAI Preparedness 安全团队，本月上线。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 高薪招聘安全研究员，聚焦AI自我改进防御与自动化目标","discovery_summary":"OpenAI 正为其 Preparedness 安全团队招聘安全研究员，年薪高达 29.5 万至 44.5 万美元。该岗位旨在寻找能够支持递归式自我改进准备工作的技术专家，要求具备对未来潜在问题进行推理的\"良好品味和策略\"。研究员将重点研究防御\"数据投毒\"攻击、开发模型推理过程解释工具，并追踪技术岗位自动化进展。此次招聘与 OpenAI 的长期目标呼应，即实现AI研发自动化，包括在2028年前推出\"真正的自动化AI研究员\"。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/954/455.htm","discovered_at":"2026-05-24T04:04:36.076Z","rank_on_page":70,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 正为其 Preparedness 安全团队招聘安全研究员，年薪高达 29.5 万至 44.5 万美元。该岗位旨在寻找能够支持递归式自我改进准备工作的技术专家，要求具备对未来潜在问题进行推理的"良好品味和策略"。研究员将重点研究防御"数据投毒"攻击、开发模型推理过程解释工具，并追踪技术岗位自动化进展。此次招聘与 OpenAI 的长期目标呼应，即实现AI研发自动化，包括在2028年前推出"真正的自动化AI研究员"。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

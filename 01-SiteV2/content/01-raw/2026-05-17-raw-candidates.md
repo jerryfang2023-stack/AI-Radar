@@ -6,13 +6,13 @@ raw_count: 20
 aihot_count: 26
 keyword_search_count: 8
 follow_builders_count: 15
-keyword_monitoring_config: 01-SiteV2/content/09-databases/keyword-monitoring-v2.json
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
 generated_at: 2026-05-17T10:59:52.423Z
 ---
 
 # 2026-05-17 Raw Candidates
 
-说明：本文件由 `agent-workflow/tools/run-v2-daily-pipeline.mjs` 生成。AI HOT 与联网关键词搜索承担主数量池；follow-builders 全量扫描但不设固定比例，主要作为 Builder 观点、早期行为和观点卡线索入口。三者都属于 discovery / source-router，其摘要不作为事实主证据，进入变化卡、案例卡或今日观察事实判断前必须回看原始 URL 并重新判定来源等级。
+说明：本文件为 V2.1 Raw 候选记录。AI HOT 与联网关键词搜索承担主数量池；follow-builders 全量扫描但不设固定比例，主要作为 Builder 观点、早期行为和观点卡线索入口。三者都属于发现入口，其摘要不作为事实主证据，进入变化卡、案例卡或今日观察事实判断前必须回看原始 URL 并重新判定来源等级。
 
 ### R-006｜Show HN: Llmswap v3.0 – CLI and SDK for OpenAI, Claude, Gemini, Watsonx
 

@@ -14,13 +14,22 @@ upgrade_target:
 upgraded_from:
 source_count:
 primary_source_count:
-has_counter_evidence:
+has_boundary_note:
 source_tiers:
 related_signal_ids:
 related_trend_card_ids:
 related_case_card_ids:
 related_opinion_card_ids:
-tags:
+formal_tags:
+  track: []
+  function: []
+  scenario: []
+  customer: []
+  evidence: []
+  stage: []
+  region: []
+  source: []
+  opinion: []
 ---
 
 # {{title}}
@@ -32,8 +41,8 @@ tags:
 - 篇幅：2000-3500 中文字。
 - 来源：至少 3 个独立来源。
 - 一手 / S/A 来源：至少 1 个。
-- 必须有反证或信息缺口。
-- 必须写 30 天后继续看什么。
+- 建议写明风险边界或信息缺口。
+- 建议写清后续继续看什么。
 - 不能只靠 AI HOT、X、HN、Reddit 或 builders 观点。
 - builders 观点只能作为判断参照，不能作为事实主证据。
 - 前台只显示 `watching` 和 `upgraded` 两种状态。
@@ -124,4 +133,3 @@ tags:
 | 来源 | 等级 | 原始链接 | 增量事实 | 支撑段落 |
 |---|---|---|---|---|
 |  | S/A/B/C/D |  |  |  |
-

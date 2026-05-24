@@ -25,11 +25,12 @@ const stamp = now
   .replace("T", "-");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
+const optionalFlag = (name) => (flags.has(name) ? [`--${name}=${flags.get(name)}`] : []);
 // On some Windows environments, spawning `process.execPath` (e.g. under `C:\Program Files\...`)
 // can fail with EPERM even though invoking `node` via PATH works. Prefer the PATH command on Windows.
 const node = process.platform === "win32" ? "node" : process.execPath;
 
-const knownModes = new Set(["syntax", "content", "point", "site", "automation", "v2content", "style", "typography", "raw", "all"]);
+const knownModes = new Set(["syntax", "content", "site", "automation", "v2content", "style", "cardcopy", "typography", "raw", "tags", "all"]);
 
 if (!knownModes.has(mode)) {
   console.error(`Unknown quality gate mode: ${mode}`);
@@ -45,18 +46,18 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-source-probe.mjs"], "v2-source-probe syntax"],
     [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
-    [node, ["--check", "agent-workflow/tools/run-v2-daily-pipeline.mjs"], "v2 daily pipeline source-router syntax"],
+    [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "guanlan monitor quality gate syntax"],
+    [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "guanlan daily monitor syntax"],
+    [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"], "guanlan daily monitor with qc syntax"],
     [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
+    [node, ["--check", "agent-workflow/tools/card-copy-style-gate.mjs"], "card-copy-style-gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
+    [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
   ],
   content: [
     [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
     [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 content gate"],
-  ],
-  point: [
-    [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
-    [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 point calibration content gate"],
   ],
   site: [
     [node, ["--check", "01-SiteV2/site/assets/app.js"], "v2 frontend app syntax"],
@@ -66,6 +67,19 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
     [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
   ],
+  cardcopy: [
+    [node, ["--check", "agent-workflow/tools/card-copy-style-gate.mjs"], "card-copy-style-gate syntax"],
+    [
+      node,
+      [
+        "agent-workflow/tools/card-copy-style-gate.mjs",
+        `--date=${date}`,
+        ...optionalFlag("strict"),
+        ...optionalFlag("require-gates"),
+      ],
+      "run card copy style gate",
+    ],
+  ],
   typography: [
     [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
     [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
@@ -73,6 +87,10 @@ const commandSets = {
   raw: [
     [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
     [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
+  ],
+  tags: [
+    [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
+    [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
   ],
 };
 
@@ -82,14 +100,18 @@ const buildCommands = () => {
       ...commandSets.syntax,
       [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 content gate"],
       [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
+      [node, ["agent-workflow/tools/card-copy-style-gate.mjs", `--date=${date}`], "run card copy style gate"],
       [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
       [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
+      [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
     ];
   }
 
   if (mode === "automation") {
     return [
-      [node, ["--check", "agent-workflow/tools/run-v2-daily-pipeline.mjs"], "v2 daily pipeline source-router syntax"],
+      [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "guanlan daily monitor syntax"],
+      [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "guanlan monitor quality gate syntax"],
+      [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"], "guanlan daily monitor with qc syntax"],
       [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
       [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
       [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
@@ -100,6 +122,7 @@ const buildCommands = () => {
     return [
       [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
       [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 content gate"],
+      [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
     ];
   }
 
@@ -128,6 +151,7 @@ const runCommand = async ([cmd, args, label]) => {
     const isSyntaxProbe = args.includes("--check") || /syntax/i.test(label);
     const isV2ContentGateRun = args[0] === "agent-workflow/tools/v2-content-gate.mjs";
     const isWriterStyleGateRun = args[0] === "agent-workflow/tools/writer-style-gate.mjs";
+    const isCardCopyStyleGateRun = args[0] === "agent-workflow/tools/card-copy-style-gate.mjs";
     const isTypographyGateRun = args[0] === "agent-workflow/tools/v2-typography-gate.mjs";
     const isRawEvidenceGateRun = args[0] === "agent-workflow/tools/v2-raw-evidence-gate.mjs";
 
@@ -240,6 +264,45 @@ const runCommand = async ([cmd, args, label]) => {
       }
     }
 
+    if (isCardCopyStyleGateRun) {
+      try {
+        const cardCopyModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "card-copy-style-gate.mjs")).href;
+        const originalArgv = process.argv;
+        process.argv = [process.execPath, path.join(root, "agent-workflow", "tools", "card-copy-style-gate.mjs"), ...args.slice(1)];
+        let stdout = "";
+        const originalLog = console.log;
+        console.log = (...items) => {
+          stdout += `${items.join(" ")}\n`;
+        };
+        const originalExitCode = process.exitCode;
+        process.exitCode = 0;
+        await import(`${cardCopyModuleUrl}?t=${Date.now()}`);
+        const statusCode = process.exitCode || 0;
+        process.argv = originalArgv;
+        console.log = originalLog;
+        process.exitCode = originalExitCode;
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: statusCode,
+          stdout,
+          stderr: statusCode === 0 ? "" : "card copy style gate failed",
+          startedAt,
+          endedAt: new Date(),
+        };
+      } catch (error) {
+        return {
+          label,
+          command: [cmd, ...args].join(" "),
+          status: 1,
+          stdout: "",
+          stderr: `fallback import failed: ${error?.message || String(error)}`,
+          startedAt,
+          endedAt: new Date(),
+        };
+      }
+    }
+
     if (isRawEvidenceGateRun) {
       try {
         const dateFlag = args.find((arg) => arg.startsWith("--date="));
@@ -302,7 +365,7 @@ const writeReport = (runs) => {
   const status = failed.length ? "failed" : "passed";
   const automationNote =
     mode === "automation"
-      ? "\n- 自动化模式检查 V2 每日生产线相关脚本语法；旧统一同步闸门已移除。"
+      ? "\n- 自动化模式检查 V2.2 每日生产线相关脚本语法。"
       : "";
 
   const commandLines = runs
@@ -336,12 +399,12 @@ ${commandLines || "无"}
 ## 说明
 
 - 本脚本是 \`quality-gates.md\` 的统一入口。
-- V2-only 阶段默认检查 \`01-SiteV2/site/\` 与 \`agent-workflow/tools/v2-*.mjs\`。
-- 旧 \`04-Site\` / V1 归档已从当前仓库移除，不再作为 \`content\`、\`site\`、\`automation\` 或 \`all\` 模式的目标。
-- \`content\`、\`point\` 和 \`all\` 会运行 V2 content gate；需要指定日期时使用 \`--date=YYYY-MM-DD\`。
+- V2.2 阶段默认检查 \`01-SiteV2/site/\` 与当前 \`agent-workflow/tools/\` 脚本。
+- \`content\`、\`v2content\` 和 \`all\` 会运行 V2 content gate；需要指定日期时使用 \`--date=YYYY-MM-DD\`。
 - \`style\` 会检查三个 writer 的文章产物是否出现禁词、抽象名词和高频重复句式。
-- \`automation\` 检查 V2 每日生产线相关脚本语法，不再运行旧统一同步闸门。
-- 未覆盖的浏览器截图、多身份权限和人工内容判断，仍需 QA Agent 单独验收。
+- \`cardcopy\` 会检查商业信号、前沿观点、变化候选、场景候选和趋势候选文案是否出现机械标题、内部词和空泛表达。
+- \`automation\` 检查 V2.2 每日生产线相关脚本语法。
+- 未覆盖的浏览器截图、多身份权限和人工内容判断，仍需 Build & Release 发布检查或 Product Commander 专项复核。
 `;
 
   const datedPath = path.join(reportsDir, `quality-gates-${mode}-${date}-${stamp}.md`);

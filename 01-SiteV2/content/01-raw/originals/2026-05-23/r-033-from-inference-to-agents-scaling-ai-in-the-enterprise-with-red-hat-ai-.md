@@ -1,0 +1,384 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-033
+title: "From inference to agents: Scaling AI in the enterprise with Red Hat AI 3.4"
+original_url: "https://www.redhat.com/en/blog/inference-agentic-ai-scaling-enterprise-foundation-red-hat-ai-34"
+canonical_url: "https://www.redhat.com/en/blog/inference-agentic-ai-scaling-enterprise-foundation-red-hat-ai-34"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-05-23T04:13:32.970Z
+language: mixed
+full_text_hash: 5890d206235e355c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-033-from-inference-to-agents-scaling-ai-in-the-enterprise-with-red-hat-ai-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-033-from-inference-to-agents-scaling-ai-in-the-enterprise-with-red-hat-ai-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":16647,"paragraph_count":68,"sentence_count":100,"boilerplate_hits":1,"symbol_ratio":0.0035,"method":"article"}
+has_full_text: true
+content_length: 16647
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5890d206235e355c","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0bb0c42e4c890bd0
+content_hash: 5890d206235e355c
+semantic_hash: 7b6b9a5cdfe90e31
+duplicate_of: ""
+first_seen_at: "2026-05-23T04:13:32.970Z"
+last_seen_at: 2026-05-23T04:13:32.970Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Google","Microsoft","AWS","Mistral"],"products":["agents","agent","MCP","Agent"],"people":[],"industries":["法律 / 法务","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","采购","销售 / 客服"],"numbers":["3.4","2x","3x","355X","350","4.0","3.2","24B"],"quotes":[]}
+evidence_seed: {"company_actions":["From inference to agents: Scaling AI in the enterprise with Red Hat AI 3.","4 May 12, 2026 Jennifer Vargas , Carlos Condado , Younes Ben Brahim , Will McGrath 7 -minute read Artificial intelligence Share Subscribe to RSS Enterprise AI is shifting from simple chatbots toward agentic AI.","These systems use independent reasoning and multistep planning to complete complex tasks in an autonomous way."],"case_details":[],"workflow_changes":["The foundation of any AI-enabled application is the inference engine. To build effective agents, developers need low latency and high throughput to support chain of thought reasoning. Red Hat AI 3.4 introduces tools to provide this performance while maintaining economic sustainability. general availability, -service token ], usage tracking and showback - Distributed inference with llm-d: This release makes distributed inference easier to operate and more cost-efficient at scale. Users deploying models through the u"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"The foundation of any AI-enabled application is the inference engine. To build effective agents, developers need low latency and high throughput to support chain of thought reasoning. Red Hat AI 3.4 introduces tools to provide this performance while maintaining economic sustainability. general availability, -service token ], usage tracking and showback - Distributed inference with llm-d: This release makes distributed inference easier to operate and more cost-efficient at scale. Users deploying models through the u","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"From inference to agents: Scaling AI in the enterprise with Red Hat AI 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"4 May 12, 2026 Jennifer Vargas , Carlos Condado , Younes Ben Brahim , Will McGrath 7 -minute read Artificial intelligence Share Subscribe to RSS Enterprise AI is shifting from simple chatbots toward agentic AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"These systems use independent reasoning and multistep planning to complete complex tasks in an autonomous way.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"To build these AI-enabled applications, AI engineers and agent developers require immediate access to models via reliable API endpoints running as high-performance workloads.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Autonomous agents are resource intensive by design.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# From inference to agents: Scaling AI in the enterprise with Red Hat AI 3.4
+
+## clean_text
+
+From inference to agents: Scaling AI in the enterprise with Red Hat AI 3.4
+May 12, 2026 Jennifer Vargas , Carlos Condado , Younes Ben Brahim , Will McGrath 7 -minute read
+Artificial intelligence
+Share
+Subscribe to RSS
+Enterprise AI is shifting from simple chatbots toward agentic AI. These systems use independent reasoning and multistep planning to complete complex tasks in an autonomous way. To build these AI-enabled applications, AI engineers and agent developers require immediate access to models via reliable API endpoints running as high-performance workloads.
+Autonomous agents are resource intensive by design. They operate 24x7 at scale and can hit infrastructure dozens of times to resolve a single task, driving both sustained load and sharp spikes in compute demand. Without a dedicated foundation, performance slows and costs rise, and when combined with the security and governance demands of sensitive enterprise data, these pressures become serious barriers to production.
+Red Hat AI helps address these challenges by delivering a unified, metal-to-agent platform that simplifies the deployment of AI solutions. By providing a consistent framework for both builders and operators, Red Hat helps enable organizations to transition from being token consumers to token providers. This shift empowers enterprises to scale autonomous systems while maintaining the hardware efficiency and compute cost control required to turn AI experiments into production-ready assets.
+From static serving to precision orchestration: Driving down inference costs
+The foundation of any AI-enabled application is the inference engine. To build effective agents, developers need low latency and high throughput to support chain of thought reasoning. Red Hat AI 3.4 introduces tools to provide this performance while maintaining economic sustainability.
+Model-as-a-Service (MaaS) for the enterprise : In this new release, MaaS provides platform engineers with a user interface [general availability, GA] to enable self-service token key management for role based administration [GA], usage tracking and showback [technical preview, TP], and enforce security standards while using both self-hosted [GA] and cloud-based models [TP].
+Distributed inference with llm-d : This release makes distributed inference easier to operate and more cost-efficient at scale. Users deploying models through the user interface (UI) can now discover Gateways that are available in their namespace and select one or more for their deployment — removing the dependency on a single cluster-wide default [TP]. A built-in YAML editor lets users inspect and edit the underlying resources [TP]. Request prioritization [TP] lets llm-d distinguish between interactive and background traffic on the same endpoint, processing latency-sensitive requests first and shedding lower-priority work under saturation. Autoscaling [TP] adjusts replicas automatically based on active request count, queue depth, and GPU utilization. OpenAI-compatible Batch Inference [developer preview, DP] adds a persistent, fire-and-forget path for high-volume workloads like document classification or log analysis.
+Speculative decoding for performance [GA] : The Red Hat AI platform integrates vLLM inference server, which now includes support for speculative decoding. By using highly efficient draft models to accelerate processing, this technique can increase response speeds by 2x–3x without quality loss, directly lowering the cost per interaction.
+Hardware flexibility across GPUs, CPUs, and NPUs : Red Hat AI 3.4 expands accelerator choice for enterprise inference with new AMD support across both GPUs and CPUs, including AMD Instinct MI355X GPU support, preview support for AMD Instinct MI350P PCIe, and generally available vLLM CPU serving on AMD EPYC processors. The release also includes general availability of vLLM CPU serving on Intel Xeon processors and a certified Rebellions container for ATOM NPU. This gives organizations more flexibility to match each workload to the right compute tier: GPUs for demanding reasoning workloads, CPUs for lightweight and always-on inference, and NPUs for power-efficient, high-throughput serving. Together, these capabilities help reduce cost per interaction, improve infrastructure utilization, and provide a consistent Red Hat AI experience across heterogeneous accelerator environments.
+Red Hat AI Inference, which provides enterprise support for vLLM and access to Red Hat validated and optimized models, now adds distributed inference capabilities with llm-d on both Red Hat OpenShift and third-party Kubernetes distributions [TP]. The initial release includes availability on CoreWeave and Azure’s managed Kubernetes services . Organizations can now run the same inference stack across environments without rearchitecting for each provider. This means AI operations remain consistent and use the same high-performant and open foundation regardless of the underlying hardware or cloud provider.
+Validating model integrity through evaluation-driven development
+A model is only as effective as the data that grounds it. Red Hat AI 3.4 focuses on evaluation-driven development (EDD), replacing subjective testing with concrete data and benchmarks to verify that models and agents are fully ready for production.
+Experiment tracking with MLflow [GA] : MLflow integration serves as the backbone to automatically log metrics, parameters, and artifacts to enable reproducibility and make it easy to compare results across both predictive and generative workloads. This includes prompt management, which treats prompts as versioned, governed corporate assets.
+Automated experiences [TP] : Tools like AutoRAG and AutoML automate complex AI tasks to reduce expensive guesswork and manual trial-and-error. AutoRAG automates the selection of embedding models and chunking strategies for retrieval-augmented generation (RAG), helping teams go from raw data to a high-performing pipeline much more quickly. Similarly, AutoML handles feature engineering and model selection for predictive analytics, freeing developers to focus on business outcomes rather than data prep.
+Eval hub [TP] : Red Hat AI 3.4 introduces eval hub, a framework-agnostic unified AI evaluation control plane for evaluating large language models (LLMs), AI applications, and agents. It replaces fragmented testing methods using a unified REST API and Kubernetes controller by offering curated and custom evaluation collections, a dashboard with embedded MLflow, and command line interface (CLI) and software development kit (SDK) access. By utilizing Open Container Initiative (OCI) model cards for governance and a Model Context Protocol (MCP) server for agent-discoverable evaluations, it provides a cluster-native environment for practitioners to scale reproducible benchmarking from laptops to production pipelines.
+De-risking the agentic enterprise: Maturity and traceability
+Autonomous agents require high levels of visibility, traceability, and governed access to tools so they remain within prescribed operational boundaries. Red Hat AI provides the AgentOps framework so these systems are observable and protected.
+Governed prompt management [TP] : The MLflow integration also powers new prompt management capabilities within the gen AI studio playground, a centralized environment where developers can prototype prompts, compare models, and check security without jumping between multiple tools. This allows developers to version, test, and refine agent prompts as governed assets. Managing prompts as code helps organizations accelerate time to value while maintaining consistency.
+Identity management [DP] : Red Hat AI implements SPIFFE / SPIRE for cryptographic agent identities, using short-lived tokens to eliminate hardcoded keys. This enables zero-trust security and allows agents to operate under least-privilege principles in production environments.
+Lifecycle management with Kagenti [DP] : For enterprises managing evolving agentic assets, the platform introduces Kagenti, a lifecycle management tool that allows teams to deploy, scale, and govern agents without changing the underlying code. Kagenti allows for the discovery and onboarding of agents across their lifecycle, supporting the transition from developer to production.
+Agent traceability via MLflow [GA] : MLflow provides end to end agent traceability. The system traces every LLM call, every tool execution, and every decision step. This is a fundamental requirement for debugging, auditing, and evaluating autonomous systems.
+Enterprise MCP management [DP/TP] : Red Hat AI introduces a platform approach for governing MCP-based tool access. The MCP catalog [DP] enables teams to discover and deploy trusted MCP servers from Red Hat and technology partners. The MCP lifecycle operator [DP] manages them as Kubernetes-native workloads. The MCP gateway [TP] provides centralized authentication, tool-level access control, and observability, so agents are only able to access authorized tools.
+Expanding the foundation: Safety and observability
+For AI to be sustainable, it must run on a stable, transparent foundation. Red Hat AI 3.4 serves as a comprehensive operations hub, integrating MLOps, GenAIOps, and AgentOps into a single platform.
+Integrated authoring with prompt lab and registry [GA] : The platform provides unified tools for building and managing prompts, so the logic driving agentic behavior is stored in a central registry, providing a single source of truth for both developers and administrators.
+AI safety and red teaming [TP] : Red Hat AI 3.4 integrates automated adversarial scanning directly into the development lifecycle. Leveraging technology from the Chatterbox Labs acquisition , the platform utilizes Garak to screen models and agentic systems for risks like jailbreaks, prompt injections, and bias. This capability provides advanced risk analysis to catch security flaws in model logic during the development phase rather than at runtime. By identifying and mitigating vulnerabilities early, teams can evaluate the integrity of their AI applications to enable a safer transition to production deployment.
+Centralized metrics and observability [TP] : This release delivers a zero-configuration, unified Prometheus instance with native foundational dashboards. Cluster administrators can monitor hardware utilization and MaaS metrics [TP] from a single console. It also adds the ability to see an agent's step-by-step execution traces, reasoning chains, tool calls, and LLM interactions directly in the console [DP]. The platform retains the flexibility to route these metrics to existing third-party observability sinks.
+Red Hat AI on cloud marketplaces
+Red Hat AI Enterprise is coming soon for procurement directly through the AWS Marketplace, Microsoft Azure Marketplace, and Google Cloud Marketplace. This gives enterprise organizations a faster, more flexible path to deploying AI infrastructure on their preferred cloud. Organizations can now apply existing Enterprise Discount Programs (EDPs) and committed cloud spend toward Red Hat AI subscriptions, which simplifies the financial and procurement process.
+This availability represents an expansion of existing Red Hat AI cloud options. Red Hat already offers Red Hat Enterprise Linux AI on all 3 major marketplaces for organizations focused on running LLMs in Red Hat Enterprise Linux image mode.
+Red Hat AI Inference on IBM Cloud
+In combination with IBM Cloud, we are also announcing the availability of Red Hat AI Inference on IBM Cloud , a fully managed inference service that lets clients run production‑grade AI models. It offers fast, cost‑efficient access to foundation open source models with built-in governance such as enterprise‑grade access controls, auditing, and usage governance. Current model catalog examples include Granite 4.0 H Small (IBM), Mistral‑Small‑3.2‑24B‑Instruct, Llama 3.3 70B Instruct, and GPT‑OSS‑120B.
+Final thoughts
+Red Hat AI 3.4 expands the functionality required to move from experimental chatbots to a fully realized agentic enterprise. By integrating distributed inference, automated data pipelines, framework-agnostic AgentOps, and proactive AI safety, Red Hat delivers a comprehensive foundation for the hybrid cloud. This release extends the tools to build autonomous systems that are predictable, security-focused, and economically sustainable in any environment. As a comprehensive platform for the agentic era, Red Hat AI helps organizations scale innovation while maintaining complete control over their AI assets.
+Learn more about Red Hat AI and discover how you can build AI for your world. Red Hat AI 3.4 is expected to be available later this month.
+Resource
+The adaptable enterprise: Why AI readiness is disruption readiness
+This e-book, written by Michael Ferris, Red Hat COO and CSO, navigates the pace of change and technological disruption with AI that faces IT leaders today.
+Get the resource
+About the authors
+Jennifer Vargas
+Principal Product Marketing Manager
+Jennifer Vargas is a marketer — with previous experience in consulting and sales — who enjoys solving business and technical challenges that seem disconnected at first. In the last five years, she has been working in Red Hat as a product marketing manager supporting the launch of a new set of cloud services. Her areas of expertise are AI/ML, IoT, Integration and Mobile Solutions.
+Read full bio
+Carlos Condado
+Sr. Product Marketing Manager
+Carlos Condado is a Senior Product Marketing Manager for Red Hat AI. He helps organizations navigate the path from AI experimentation to enterprise-scale deployment by guiding the adoption of MLOps practices and integration of AI models into existing hybrid cloud infrastructures. As part of the Red Hat AI team, he works across engineering, product, and go-to-market functions to help shape strategy, messaging, and customer enablement around Red Hat’s open, flexible, and consistent AI portfolio.
+With a diverse background spanning data analytics, integration, cybersecurity, and AI, Carlos brings a cross-functional perspective to emerging technologies. He is passionate about technological innovations and helping enterprises unlock the value of their data and gain a competitive advantage through scalable, production-ready AI solutions.
+Read full bio
+Younes Ben Brahim
+Principal Product Marketing Manager
+Younes Ben Brahim is a Principal Product Marketing Manager at Red Hat, focusing on the strategic positioning and market adoption of Red Hat's AI platform offerings. Younes has spent over 15 years in the IT industry leading product marketing initiatives, managing product lifecycles for HPC & AI, and delivering consulting services.
+Prior to Red Hat, he has worked with companies like NetApp, Dimension Data, and Cisco Systems, providing technical solutions and product strategy for enterprise infrastructure and software projects.
+Read full bio
+Will McGrath
+Senior Principal Product Marketing Manager
+Will McGrath is a Senior Principal Product Marketing Manager at Red Hat. He is responsible for marketing strategy, developing content, and driving marketing initiatives for Red Hat OpenShift AI. He has more than 30 years of experience in the IT industry. Before Red Hat, Will worked for 12 years as strategic alliances manager for media and entertainment technology partners.
+Read full bio
+More like this
+Blog post
+What even is the harness in AI?
+Blog post
+Building trust through AI red teaming: Red Hat's approach to testing model safety
+Original podcast
+Technically Speaking | Build a production-ready AI toolbox
+Original podcast
+Technically Speaking | Platform engineering for AI agents
+Keep exploring
+What is agentic AI? Article
+Predictive AI vs. generative AI Article
+Top considerations for building a production-ready AI/ML environment E-book
+Generative AI, the Ansible way Video
+Innovate and transform with a modern application platform E-book
+Browse by channel
+Explore all channels
+Automation
+The latest on IT automation for tech, teams, and environments
+Artificial intelligence
+Updates on the platforms that free customers to run AI workloads anywhere
+Open hybrid cloud
+Explore how we build a more flexible future with hybrid cloud
+Security
+The latest on how we reduce risks across environments and technologies
+Edge computing
+Updates on the platforms that simplify operations at the edge
+Infrastructure
+The latest on the world’s leading enterprise Linux platform
+Applications
+Inside our solutions to the toughest application challenges
+Virtualization
+The future of enterprise virtualization for your workloads on-premise or across clouds
+
+## full_text
+
+From inference to agents: Scaling AI in the enterprise with Red Hat AI 3.4
+May 12, 2026 Jennifer Vargas , Carlos Condado , Younes Ben Brahim , Will McGrath 7 -minute read
+Artificial intelligence
+Share
+Subscribe to RSS
+Enterprise AI is shifting from simple chatbots toward agentic AI. These systems use independent reasoning and multistep planning to complete complex tasks in an autonomous way. To build these AI-enabled applications, AI engineers and agent developers require immediate access to models via reliable API endpoints running as high-performance workloads.
+Autonomous agents are resource intensive by design. They operate 24x7 at scale and can hit infrastructure dozens of times to resolve a single task, driving both sustained load and sharp spikes in compute demand. Without a dedicated foundation, performance slows and costs rise, and when combined with the security and governance demands of sensitive enterprise data, these pressures become serious barriers to production.
+Red Hat AI helps address these challenges by delivering a unified, metal-to-agent platform that simplifies the deployment of AI solutions. By providing a consistent framework for both builders and operators, Red Hat helps enable organizations to transition from being token consumers to token providers. This shift empowers enterprises to scale autonomous systems while maintaining the hardware efficiency and compute cost control required to turn AI experiments into production-ready assets.
+From static serving to precision orchestration: Driving down inference costs
+The foundation of any AI-enabled application is the inference engine. To build effective agents, developers need low latency and high throughput to support chain of thought reasoning. Red Hat AI 3.4 introduces tools to provide this performance while maintaining economic sustainability.
+Model-as-a-Service (MaaS) for the enterprise : In this new release, MaaS provides platform engineers with a user interface [general availability, GA] to enable self-service token key management for role based administration [GA], usage tracking and showback [technical preview, TP], and enforce security standards while using both self-hosted [GA] and cloud-based models [TP].
+Distributed inference with llm-d : This release makes distributed inference easier to operate and more cost-efficient at scale. Users deploying models through the user interface (UI) can now discover Gateways that are available in their namespace and select one or more for their deployment — removing the dependency on a single cluster-wide default [TP]. A built-in YAML editor lets users inspect and edit the underlying resources [TP]. Request prioritization [TP] lets llm-d distinguish between interactive and background traffic on the same endpoint, processing latency-sensitive requests first and shedding lower-priority work under saturation. Autoscaling [TP] adjusts replicas automatically based on active request count, queue depth, and GPU utilization. OpenAI-compatible Batch Inference [developer preview, DP] adds a persistent, fire-and-forget path for high-volume workloads like document classification or log analysis.
+Speculative decoding for performance [GA] : The Red Hat AI platform integrates vLLM inference server, which now includes support for speculative decoding. By using highly efficient draft models to accelerate processing, this technique can increase response speeds by 2x–3x without quality loss, directly lowering the cost per interaction.
+Hardware flexibility across GPUs, CPUs, and NPUs : Red Hat AI 3.4 expands accelerator choice for enterprise inference with new AMD support across both GPUs and CPUs, including AMD Instinct MI355X GPU support, preview support for AMD Instinct MI350P PCIe, and generally available vLLM CPU serving on AMD EPYC processors. The release also includes general availability of vLLM CPU serving on Intel Xeon processors and a certified Rebellions container for ATOM NPU. This gives organizations more flexibility to match each workload to the right compute tier: GPUs for demanding reasoning workloads, CPUs for lightweight and always-on inference, and NPUs for power-efficient, high-throughput serving. Together, these capabilities help reduce cost per interaction, improve infrastructure utilization, and provide a consistent Red Hat AI experience across heterogeneous accelerator environments.
+Red Hat AI Inference, which provides enterprise support for vLLM and access to Red Hat validated and optimized models, now adds distributed inference capabilities with llm-d on both Red Hat OpenShift and third-party Kubernetes distributions [TP]. The initial release includes availability on CoreWeave and Azure’s managed Kubernetes services . Organizations can now run the same inference stack across environments without rearchitecting for each provider. This means AI operations remain consistent and use the same high-performant and open foundation regardless of the underlying hardware or cloud provider.
+Validating model integrity through evaluation-driven development
+A model is only as effective as the data that grounds it. Red Hat AI 3.4 focuses on evaluation-driven development (EDD), replacing subjective testing with concrete data and benchmarks to verify that models and agents are fully ready for production.
+Experiment tracking with MLflow [GA] : MLflow integration serves as the backbone to automatically log metrics, parameters, and artifacts to enable reproducibility and make it easy to compare results across both predictive and generative workloads. This includes prompt management, which treats prompts as versioned, governed corporate assets.
+Automated experiences [TP] : Tools like AutoRAG and AutoML automate complex AI tasks to reduce expensive guesswork and manual trial-and-error. AutoRAG automates the selection of embedding models and chunking strategies for retrieval-augmented generation (RAG), helping teams go from raw data to a high-performing pipeline much more quickly. Similarly, AutoML handles feature engineering and model selection for predictive analytics, freeing developers to focus on business outcomes rather than data prep.
+Eval hub [TP] : Red Hat AI 3.4 introduces eval hub, a framework-agnostic unified AI evaluation control plane for evaluating large language models (LLMs), AI applications, and agents. It replaces fragmented testing methods using a unified REST API and Kubernetes controller by offering curated and custom evaluation collections, a dashboard with embedded MLflow, and command line interface (CLI) and software development kit (SDK) access. By utilizing Open Container Initiative (OCI) model cards for governance and a Model Context Protocol (MCP) server for agent-discoverable evaluations, it provides a cluster-native environment for practitioners to scale reproducible benchmarking from laptops to production pipelines.
+De-risking the agentic enterprise: Maturity and traceability
+Autonomous agents require high levels of visibility, traceability, and governed access to tools so they remain within prescribed operational boundaries. Red Hat AI provides the AgentOps framework so these systems are observable and protected.
+Governed prompt management [TP] : The MLflow integration also powers new prompt management capabilities within the gen AI studio playground, a centralized environment where developers can prototype prompts, compare models, and check security without jumping between multiple tools. This allows developers to version, test, and refine agent prompts as governed assets. Managing prompts as code helps organizations accelerate time to value while maintaining consistency.
+Identity management [DP] : Red Hat AI implements SPIFFE / SPIRE for cryptographic agent identities, using short-lived tokens to eliminate hardcoded keys. This enables zero-trust security and allows agents to operate under least-privilege principles in production environments.
+Lifecycle management with Kagenti [DP] : For enterprises managing evolving agentic assets, the platform introduces Kagenti, a lifecycle management tool that allows teams to deploy, scale, and govern agents without changing the underlying code. Kagenti allows for the discovery and onboarding of agents across their lifecycle, supporting the transition from developer to production.
+Agent traceability via MLflow [GA] : MLflow provides end to end agent traceability. The system traces every LLM call, every tool execution, and every decision step. This is a fundamental requirement for debugging, auditing, and evaluating autonomous systems.
+Enterprise MCP management [DP/TP] : Red Hat AI introduces a platform approach for governing MCP-based tool access. The MCP catalog [DP] enables teams to discover and deploy trusted MCP servers from Red Hat and technology partners. The MCP lifecycle operator [DP] manages them as Kubernetes-native workloads. The MCP gateway [TP] provides centralized authentication, tool-level access control, and observability, so agents are only able to access authorized tools.
+Expanding the foundation: Safety and observability
+For AI to be sustainable, it must run on a stable, transparent foundation. Red Hat AI 3.4 serves as a comprehensive operations hub, integrating MLOps, GenAIOps, and AgentOps into a single platform.
+Integrated authoring with prompt lab and registry [GA] : The platform provides unified tools for building and managing prompts, so the logic driving agentic behavior is stored in a central registry, providing a single source of truth for both developers and administrators.
+AI safety and red teaming [TP] : Red Hat AI 3.4 integrates automated adversarial scanning directly into the development lifecycle. Leveraging technology from the Chatterbox Labs acquisition , the platform utilizes Garak to screen models and agentic systems for risks like jailbreaks, prompt injections, and bias. This capability provides advanced risk analysis to catch security flaws in model logic during the development phase rather than at runtime. By identifying and mitigating vulnerabilities early, teams can evaluate the integrity of their AI applications to enable a safer transition to production deployment.
+Centralized metrics and observability [TP] : This release delivers a zero-configuration, unified Prometheus instance with native foundational dashboards. Cluster administrators can monitor hardware utilization and MaaS metrics [TP] from a single console. It also adds the ability to see an agent's step-by-step execution traces, reasoning chains, tool calls, and LLM interactions directly in the console [DP]. The platform retains the flexibility to route these metrics to existing third-party observability sinks.
+Red Hat AI on cloud marketplaces
+Red Hat AI Enterprise is coming soon for procurement directly through the AWS Marketplace, Microsoft Azure Marketplace, and Google Cloud Marketplace. This gives enterprise organizations a faster, more flexible path to deploying AI infrastructure on their preferred cloud. Organizations can now apply existing Enterprise Discount Programs (EDPs) and committed cloud spend toward Red Hat AI subscriptions, which simplifies the financial and procurement process.
+This availability represents an expansion of existing Red Hat AI cloud options. Red Hat already offers Red Hat Enterprise Linux AI on all 3 major marketplaces for organizations focused on running LLMs in Red Hat Enterprise Linux image mode.
+Red Hat AI Inference on IBM Cloud
+In combination with IBM Cloud, we are also announcing the availability of Red Hat AI Inference on IBM Cloud , a fully managed inference service that lets clients run production‑grade AI models. It offers fast, cost‑efficient access to foundation open source models with built-in governance such as enterprise‑grade access controls, auditing, and usage governance. Current model catalog examples include Granite 4.0 H Small (IBM), Mistral‑Small‑3.2‑24B‑Instruct, Llama 3.3 70B Instruct, and GPT‑OSS‑120B.
+Final thoughts
+Red Hat AI 3.4 expands the functionality required to move from experimental chatbots to a fully realized agentic enterprise. By integrating distributed inference, automated data pipelines, framework-agnostic AgentOps, and proactive AI safety, Red Hat delivers a comprehensive foundation for the hybrid cloud. This release extends the tools to build autonomous systems that are predictable, security-focused, and economically sustainable in any environment. As a comprehensive platform for the agentic era, Red Hat AI helps organizations scale innovation while maintaining complete control over their AI assets.
+Learn more about Red Hat AI and discover how you can build AI for your world. Red Hat AI 3.4 is expected to be available later this month.
+Resource
+The adaptable enterprise: Why AI readiness is disruption readiness
+This e-book, written by Michael Ferris, Red Hat COO and CSO, navigates the pace of change and technological disruption with AI that faces IT leaders today.
+Get the resource
+About the authors
+Jennifer Vargas
+Principal Product Marketing Manager
+Jennifer Vargas is a marketer — with previous experience in consulting and sales — who enjoys solving business and technical challenges that seem disconnected at first. In the last five years, she has been working in Red Hat as a product marketing manager supporting the launch of a new set of cloud services. Her areas of expertise are AI/ML, IoT, Integration and Mobile Solutions.
+Read full bio
+Carlos Condado
+Sr. Product Marketing Manager
+Carlos Condado is a Senior Product Marketing Manager for Red Hat AI. He helps organizations navigate the path from AI experimentation to enterprise-scale deployment by guiding the adoption of MLOps practices and integration of AI models into existing hybrid cloud infrastructures. As part of the Red Hat AI team, he works across engineering, product, and go-to-market functions to help shape strategy, messaging, and customer enablement around Red Hat’s open, flexible, and consistent AI portfolio.
+With a diverse background spanning data analytics, integration, cybersecurity, and AI, Carlos brings a cross-functional perspective to emerging technologies. He is passionate about technological innovations and helping enterprises unlock the value of their data and gain a competitive advantage through scalable, production-ready AI solutions.
+Read full bio
+Younes Ben Brahim
+Principal Product Marketing Manager
+Younes Ben Brahim is a Principal Product Marketing Manager at Red Hat, focusing on the strategic positioning and market adoption of Red Hat's AI platform offerings. Younes has spent over 15 years in the IT industry leading product marketing initiatives, managing product lifecycles for HPC & AI, and delivering consulting services.
+Prior to Red Hat, he has worked with companies like NetApp, Dimension Data, and Cisco Systems, providing technical solutions and product strategy for enterprise infrastructure and software projects.
+Read full bio
+Will McGrath
+Senior Principal Product Marketing Manager
+Will McGrath is a Senior Principal Product Marketing Manager at Red Hat. He is responsible for marketing strategy, developing content, and driving marketing initiatives for Red Hat OpenShift AI. He has more than 30 years of experience in the IT industry. Before Red Hat, Will worked for 12 years as strategic alliances manager for media and entertainment technology partners.
+Read full bio
+More like this
+Blog post
+What even is the harness in AI?
+Blog post
+Building trust through AI red teaming: Red Hat's approach to testing model safety
+Original podcast
+Technically Speaking | Build a production-ready AI toolbox
+Original podcast
+Technically Speaking | Platform engineering for AI agents
+Keep exploring
+What is agentic AI? Article
+Predictive AI vs. generative AI Article
+Top considerations for building a production-ready AI/ML environment E-book
+Generative AI, the Ansible way Video
+Innovate and transform with a modern application platform E-book
+Browse by channel
+Explore all channels
+Automation
+The latest on IT automation for tech, teams, and environments
+Artificial intelligence
+Updates on the platforms that free customers to run AI workloads anywhere
+Open hybrid cloud
+Explore how we build a more flexible future with hybrid cloud
+Security
+The latest on how we reduce risks across environments and technologies
+Edge computing
+Updates on the platforms that simplify operations at the edge
+Infrastructure
+The latest on the world’s leading enterprise Linux platform
+Applications
+Inside our solutions to the toughest application challenges
+Virtualization
+The future of enterprise virtualization for your workloads on-premise or across clouds
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 94
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":16647,"paragraph_count":68,"sentence_count":100,"boilerplate_hits":1,"symbol_ratio":0.0035,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The foundation of any AI-enabled application is the inference engine. To build effective agents, developers need low latency and high throughput to support chain of thought reasoning. Red Hat AI 3.4 introduces tools to provide this performance while maintaining economic sustainability. general availability, -service token ], usage tracking and showback - Distributed inference with llm-d: This release makes distributed inference easier to operate and more cost-efficient at scale. Users deploying models through the u
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   From inference to agents: Scaling AI in the enterprise with Red Hat AI 3.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   4 May 12, 2026 Jennifer Vargas , Carlos Condado , Younes Ben Brahim , Will McGrath 7 -minute read Artificial intelligence Share Subscribe to RSS Enterprise AI is shifting from simple chatbots toward agentic AI.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   These systems use independent reasoning and multistep planning to complete complex tasks in an autonomous way.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   To build these AI-enabled applications, AI engineers and agent developers require immediate access to models via reliable API endpoints running as high-performance workloads.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Autonomous agents are resource intensive by design.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Google, Microsoft, AWS, Mistral
+- products: agents, agent, MCP, Agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 3.4, 2x, 3x, 355X, 350, 4.0, 3.2, 24B
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: From inference to agents: Scaling AI in the enterprise with Red Hat AI 3. / 4 May 12, 2026 Jennifer Vargas , Carlos Condado , Younes Ben Brahim , Will McGrath 7 -minute read Artificial intelligence Share Subscribe to RSS Enterprise AI is shifting from simple chatbots toward agentic AI. / These systems use independent reasoning and multistep planning to complete complex tasks in an autonomous way.
+- case_details: 暂无公开信息
+- workflow_changes: The foundation of any AI-enabled application is the inference engine. To build effective agents, developers need low latency and high throughput to support chain of thought reasoning. Red Hat AI 3.4 introduces tools to provide this performance while maintaining economic sustainability. general availability, -service token ], usage tracking and showback - Distributed inference with llm-d: This release makes distributed inference easier to operate and more cost-efficient at scale. Users deploying models through the u
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+The foundation of any AI-enabled application is the inference engine. To build effective agents, developers need low latency and high throughput to support chain of thought reasoning. Red Hat AI 3.4 introduces tools to provide this performance while maintaining economic sustainability. general availability, -service token ], usage tracking and showback - Distributed inference with llm-d: This release makes distributed inference easier to operate and more cost-efficient at scale. Users deploying models through the user interface (UI) can now discover Gateways that are available in their namespace and select one or more for their deployment — removing the dependency on a single cluster-wide default [TP]. A built-in YAML editor lets users inspect and edit the underlying resources [TP]. Request prioritization [TP] lets llm-d distinguish between interactive and background traffic on the same endpoint, processing latency-sensitive requests first and shedding lower-priority work under saturation. Autoscaling [TP] adjusts replicas automatically based on active request count, queue depth, and GPU utilization. OpenAI-compatible Batch Inference [developer preview, DP] adds a persistent, fire-and-forget path for high-volume workloads like document classification or log analysis. - Speculative decoding for performance [GA]: The Red Hat AI platform integrates vLLM inference server, which now includes support for speculative decoding. By using highly efficient draft models to accelerate processing, this technique can increase response speeds by 2x–3x without quality loss, directly lowering the cost per interaction. - Hardware flexibility across GPUs, CPUs, and NPUs: Red Hat AI 3.4 expands accelerator choice for enterprise inference with new AMD support across both GPUs and CPUs, including AMD Instinct MI355X GPU support, preview support for AMD Instinct MI350P PCIe, and generally available vLLM CPU serving on AMD EPYC processors. The release also includes general availability of vLLM CPU serving on Intel Xeon processors and a certified Rebellions container for ATOM NPU. This gives organizations more flexibility to match each workload to the right compute tier: GPUs for demanding reasoning workloads, CPUs for lightweight and always-on inference, and NPUs for power-efficient, high-throughput serving. Together, these capabilities help reduce cost per interaction, improve infrastructure utilization, and provide a consistent Red Hat AI experience across heterogeneous accelerator environments. Red Hat AI Inference, which provides enterprise support for vLLM and access to Red Hat validated and optimized models, now adds distributed inference capabilities with llm-d on both Red Hat OpenShift and third-party Kubernetes distributions [TP]. The initial release includes availability on CoreWeave and Azure’s managed Kubernetes services. Organizations can now run the same inference stack across environments without rearchitecting for each provider. This means AI operations remain consistent and use the same high-performant and open foundation regardless of the underlying hardware or cloud provider. is coming soon for procurement Microsoft Azure Marketplace their preferred cloud. Organizations can now apply existing Enterprise Discount Programs (EDPs) and committed cloud spend toward Red Hat AI subscriptions, which simplifies financial and procurement process. In combination with IBM Cloud, we are also announcing the availability of Red Hat AI Inference on IBM Cloud, a fully managed inference service that lets clients run production‑grade AI models. It offers fast, cost‑efficient access to foundation open source models with built-in governance such as enterprise‑grade access controls, auditing, and usage governance. Current model catalog examples include Granite 4.0 H Small (IBM), Mistral‑Small‑3.2‑24B‑Instruct, Llama 3.3 70B Instruct, and GPT‑OSS‑120B. / score=76.000 / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

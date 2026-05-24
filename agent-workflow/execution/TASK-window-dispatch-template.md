@@ -1,376 +1,47 @@
-# <TASK-ID> 派发单
+---
+task_id: <TASK-ID>
+title: <任务标题>
+status: ready
+owner: <Agent>
+encoding: UTF-8
+---
 
-日期：YYYY-MM-DD  
-状态：dispatched  
-调度窗口：当前主窗口  
-牵头 Agent：`pm` / `workflow` / `data` / `ui-ue` / `copy` / `dev` / `qa` / `strategy`
-
-## 0. 快速执行卡
-
-- 看板编号：`<BOARD-ID>`
-- Task ID：`<TASK-ID>`
-- 任务类型：页面类 / 文案类 / 产品功能类 / 数据类 / 开发类 / QA 类 / 自动化类 / 治理类
-- 派发模式：quick_fix / formal_task / autopilot_chain
-- 派发单：`agent-workflow/execution/<TASK-ID>.md`
-- 默认 closeout：`agent-workflow/reports/<TASK-ID>-closeout.md`
-- 收口箱登记：`agent-workflow/inbox/closeout-queue.jsonl`
-- 调度口令：`收口：<TASK-ID>`
-- 是否可能影响自动化：是 / 否
-- 是否需要更新 `current-context.md`：是 / 否
-- 是否写入收口箱：是 / 否
-- Skill Pattern：Tool Wrapper / Generator / Reviewer / Inversion / Pipeline / Compose
-- Pattern 顺序：
-- 硬停顿：
-- Reviewer：
-
-执行窗口最短启动提示词：
-
-```text
-执行任务：<TASK-ID>
-请读取 AGENTS.md、agent-workflow/governance/current-context.md 和 agent-workflow/execution/<TASK-ID>.md。
-只处理派发单允许范围。
-完成后写 UTF-8 closeout：agent-workflow/reports/<TASK-ID>-closeout.md。
-追加收口登记到 agent-workflow/inbox/closeout-queue.jsonl。
-回调度窗口：收口：<TASK-ID>
-```
-
-派发模式说明：
-
-- `quick_fix`：很小且安全的治理 / 文档修正，可在当前调度窗口直接完成；仍需运行必要检查并写入进度。
-- `formal_task`：标准独立执行窗口任务；默认使用三文件轻量启动。
-- `autopilot_chain`：可连贯执行的多阶段任务；执行窗口按阶段写 stage summary，遇硬停顿再回调度窗口。
-
-轻量启动不等于轻量验收；页面、产品、自动化、部署、外部 skill / repo 等硬闸门仍按本派发单完整执行。
+# <TASK-ID>｜<任务标题>
 
 ## 1. 任务目标
 
-- 要解决什么问题。
-- 用户期望看到什么结果。
+<说明本任务要解决的问题。>
 
-## 2. 非目标
-
-- 本任务不做什么。
-- 哪些事项必须等下一轮或用户确认。
-
-## 3. 牵头与协作
-
-| Agent | 职责 |
-|---|---|
-| PM Agent | 定义范围和验收 |
-| Workflow / Automation Agent | 记录进度和收口 |
-
-## 4. 执行窗口必须读取
+## 2. 最小读取
 
 1. `AGENTS.md`
-2. `agent-workflow/governance/current-context.md`
-3. 本派发单
+2. `context/context-index.md`
+3. `<本派发单路径>`
+4. `<任务相关的 1-3 个 current 文件或 Skill>`
+5. 高风险流程必须加入 `context/06-execution-harness.md`
 
-按任务类型最小补读。只列与本任务直接相关的 1-4 个单一真源，不再复制历史长清单：
+不要自行扩大读取范围。上下文不足时先说明缺什么。
 
-- 页面 / 视觉：`agent-workflow/product/DESIGN.md`、`docs/brand/wavesight-ai-vi/USAGE.md`、`docs/brand/wavesight-ai-vi/brand-tokens.css`
-- 文案：`agent-workflow/product/COPY.md`、`agent-workflow/product/strategy-single-source.md`
-- 产品 / 栏目：`agent-workflow/v2/v2-product-architecture-prd.md`、`agent-workflow/v2/v2-navigation-column-finalization.md`
-- 数据 / 内容：`agent-workflow/governance/v2-current-rule-overrides.md`、`agent-workflow/product/source-intelligence.md`、对应 content / knowledge README
-- 开发 / 自动化：`agent-workflow/governance/quality-gates.md`、相关脚本或 README
-- QA / 收口：`agent-workflow/governance/window-dispatch-hub.md`、`agent-workflow/governance/dispatch-state-reconciliation.md`
+## 3. 执行边界
 
-如需读取更多文件，必须在派发单说明为什么需要，避免启动成本失控。
+允许：
 
-## 5. 允许改动范围
+- <允许修改或检查的范围>
 
-- `path/to/file`
-- `path/to/folder/`
+不允许：
 
-## 6. 禁止改动范围
+- 推送 GitHub，除非用户明确要求。
+- 部署 Netlify，除非用户明确要求。
+- 恢复已删除链路。
+- 顺手处理与本任务无关的内容漂移。
 
-- 不改动与本任务无关的文件。
-- 不改变自动化运行顺序，除非派发单明确允许。
-- 不改变 Markdown 字段或同步脚本口径，除非派发单明确允许。
+## 4. 输出
 
-## 7. 预期输出
+- <交付物 1>
+- <交付物 2>
+- closeout：`agent-workflow/reports/<TASK-ID>-closeout.md`
+- 高风险流程 closeout 必须说明使用的 harness、固定读取、质量门和下游放行结论。
 
-- 主交付物：
-- 收口文件：`agent-workflow/reports/<TASK-ID>-closeout.md`
-- 收口箱登记：完成后向 `agent-workflow/inbox/closeout-queue.jsonl` 追加一行 JSONL：
+## 5. 验证
 
-```json
-{"task_id":"<TASK-ID>","board_id":"<BOARD-ID>","closeout_path":"agent-workflow/reports/<TASK-ID>-closeout.md","status":"ready_for_review","created_at":"YYYY-MM-DDTHH:mm:ss+08:00","owner":"<lead-agent>"}
-```
-
-## 7S. Skill Pattern Gate
-
-所有任务必须填写本节。规则见 `agent-workflow/governance/skill-pattern-gate.md`。
-
-### 7S.1 Pattern 标注
-
-| 项目 | 结论 |
-|---|---|
-| 主 Pattern | Tool Wrapper / Generator / Reviewer / Inversion / Pipeline / Compose |
-| Pattern 组合顺序 |  |
-| 为什么选这个 Pattern |  |
-| 必须读取的 Tool Wrapper / 规范 |  |
-| 必须生成的 Generator 产物 |  |
-| 必须独立执行的 Reviewer |  |
-| 必须先诊断 / 先确认的 Inversion 节点 |  |
-| Pipeline 阶段顺序 |  |
-| 硬停顿 |  |
-| closeout 必须提供的 Pattern 证据 |  |
-
-### 7S.2 Pattern 硬闸门
-
-- 页面类任务默认必须包含 `Tool Wrapper + Inversion/Pipeline + Reviewer`。
-- 产品功能类任务默认必须包含 `Inversion + Reviewer`。
-- 自动化、内容入库、部署和迁移任务默认必须包含 `Pipeline + Reviewer`。
-- 派发 / 收口 / 治理任务默认必须包含 `Generator + Reviewer`。
-- 引用外部 skill / repo 时，必须补安全审查和适配边界。
-- 缺少 Pattern 字段或 closeout 未提供对应证据，不得标记为 accepted。
-
-## 7P. 产品功能类任务硬性要求
-
-如本任务涉及新增前台导航、页面、详情页、卡片视图、筛选器、榜单、图谱、报告形态、后台模块、管理动作、会员权益、付费入口、样例报告、newsletter、企业版能力、资源连接流程、自动化产物或数据维度，本节必须保留并填写；如非产品功能类任务，可标注“不适用”。
-
-产品功能类任务不得直接进入 Dev。执行窗口必须先由 PM Agent 输出新增功能门禁记录和模块决策表。
-
-### 7P.1 新增功能门禁记录
-
-| 门禁项 | 结论 |
-|---|---|
-| 功能名称 |  |
-| 功能类型 | 前台 / 后台 / 会员 / 数据 / 自动化 / 商业化 |
-| 对应用户任务 | 今天看什么 / 为什么值得看 / 下一步验证什么 / 是否持续成立 / 账号会员 / 内部运营 |
-| 目标用户场景 |  |
-| 预期商业结果 |  |
-| 现有模块为什么不能承载 |  |
-| 是否可改为已有模块内视图 |  |
-| WAVE 评分 | W / A / V / E / 总分 |
-| 数据与运营依赖 |  |
-| 体验路径 |  |
-| 前台 / 后台边界 |  |
-| 非目标 |  |
-| 决策 | 进入 PRD / 原型验证 / 合并进已有模块 / 后台化 / 延期复核 / 不做 |
-| 下一步 owner |  |
-
-WAVE 通过线：
-
-- W - Worth paying for：>= 2
-- A - Alignment：>= 2
-- V - Validation：>= 1
-- E - Experience / Effort：>= 2
-
-任一项为 0 或未达到通过线，不得进入 Dev。
-
-### 7P.2 模块决策表
-
-| 决策项 | 结论 |
-|---|---|
-| 模块名称 |  |
-| 用户是谁 |  |
-| 用户为什么需要 |  |
-| 商业价值 |  |
-| 与现有模块是否重复 |  |
-| 是否可通过加强现有模块解决 |  |
-| 用户是否愿意付费或持续使用 |  |
-| 使用路径是否顺畅 |  |
-| 是否贴合观澜战略核心 |  |
-| 决策 | 新增 / 保留 / 强化 / 合并 / 优化已有 / 后台化 / 隐藏 / 延期复核 / 淘汰 / 不做 |
-| 非目标 |  |
-| 需要交接的 Agent |  |
-
-## 7A. 页面类任务硬性要求
-
-如本任务涉及首页、今日观察、商业信号、趋势追踪、商业内参、前沿观点、会员页、Admin，或任何 `01-SiteV2/site/*.html` / `01-SiteV2/site/assets/*.css` / `01-SiteV2/site/assets/*.js` 页面体验改动，本节必须保留并填写；如非页面类任务，可标注“不适用”。旧 `The Point / Daily Brief / Signals / Opportunities / Trends / Front Signal / Structured Signal / 04-Site` 不作为当前页面范围或开发入口。
-
-### 7A.1 UI/UE 页面规范表
-
-执行窗口必须先由 UI/UE Agent 输出页面规范表，至少包含：
-
-- 页面类型：
-- 页面目标：
-- 设计基准：
-- 布局基准：
-- 字体层级：
-- 间距基准：
-- 组件克制规则：
-- 前台 / Admin 边界：
-- 桌面端验收点：
-- 移动端验收点：
-- 禁止项：
-
-没有该规范表，不得进入 Dev 实现；已进入实现的，closeout 不得标记为完成。
-
-### 7A.1A UI/UE 审美标准与桌面证据表
-
-页面类任务必须把以下标准作为创作要求和交付后的复核依据。执行窗口应由 UI/UE Agent 输出审美标准表；页面已实现或已有可访问页面时，必须包含桌面截图、逐项扣分原因、必须重做清单和 Dev 实现偏差清单。当前 V2.1 采用桌面端优先，移动端仅在派发单明确要求时作为硬阻塞；否则只记录基础不崩坏 / 无严重横向溢出的非阻塞观察。
-
-页面类型通过线：
-
-- 首页 / 全站母版 / 核心首屏 / 海报 / 视觉资产：低于 `85` 必须重做。
-- 一级栏目页 / 详情页 / 会员页：低于 `80` 必须重做。
-- Admin 工作台和后台模块：低于 `75` 必须重做。
-- 任一单项低于 `14`、Squint Test 不通过或出现审美阻塞项时，必须重做。
-
-| 质检项 | 得分 | 说明 |
-|---|---:|---|
-| Style Purity / 风格一致性与纯净度 |  |
-| Proportion & Rhythm / 比例与韵律感 |  |
-| Color Sophistication / 色彩深度与平衡 |  |
-| Craftsmanship / 细节的艺术处理 |  |
-| Emotional Resonance / 情感共鸣 |  |
-| Squint Test / 眯眼测试 | 通过 / 不通过 |
-| 总分 |  |
-| 结论 | 通过 / 重做 |
-| 必须重做的问题 |  |
-| 可延后优化的问题 |  |
-
-证据字段：
-
-- 设计基准引用：
-- 桌面端截图：
-- 移动端观察：如本任务明确要求移动端专项，则填写截图路径；否则记录基础观察或“不适用”。
-- 逐项扣分原因：
-- Dev 实现偏差清单：
-- QA 复核建议：
-
-评分说明：
-
-- `90-100`：优秀，可作为母版或参考样张。
-- `80-89`：通过，可进入 Dev 或 QA，但记录可优化项。
-- `70-79`：勉强通过，只能在无阻塞项时继续，必须列出后续优化点。
-- `<70`：不通过，必须重做。
-
-### 7A.2 Copy 文案规范表
-
-如本任务涉及任何可见文案，执行窗口必须先由 Copy Agent 输出文案规范表，至少包含：
-
-本节同时受 `agent-workflow/governance/copy-first-page-gate.md` 约束。没有可直接落地的 Copy 表，不得进入 Dev。
-
-| 页面/模块 | 用户任务 | 最终文案 | 字数/行数约束 | 证据边界 | 禁用语检查 | Dev 实现说明 |
-|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |
-
-没有该规范表，Dev 不得自行补写首页首屏、栏目标题、详情页 H1、CTA、卡片标题、会员转化、Admin 高风险提示、空状态、锁定态、提示语等关键文案。
-
-### 7A.3 Dev 按表实现
-
-Dev Agent 必须逐条说明 UI/UE 页面规范表和 Copy 文案规范表的实现情况：
-
-- 已实现条目：
-- 未实现条目及原因：
-- 是否新增临时样式或偏离规范：
-- 是否自行新增或改写 Copy 未提供的关键文案：
-- 如有表外文案，是否已停止并回退 Copy 复核：
-- 是否影响其他栏目 / Admin 模块 / 移动端：
-
-### 7A.4 QA 独立验收
-
-QA Agent 必须独立按 UI/UE 页面规范表和 Copy 文案规范表验收：
-
-- 桌面端截图：
-- 移动端观察：如派发单明确要求移动端专项，则填写截图路径；否则记录基础不崩坏 / 无严重横向溢出观察。
-- 对比页面或模块：
-- 标题位置 / 字号 / 行高 / 模块起点：
-- 首屏主次：
-- 字体层级：
-- 间距一致性：
-- 无横向溢出：
-- 普通前台无后台痕迹：
-- 禁用语检查：
-- 判断边界检查：
-- 标题长度与容器适配：
-
-以下任一情况即阻塞，不得验收通过：
-
-- 栏目标题位置、字号、行高或首屏节奏不一致。
-- Admin 模块顶部、模块框、模块标题起点或标题区高度不一致。
-- 页面粗糙、简陋、像模板页、像后台组件堆叠或临时拼装页。
-- 字体大小随意、层级不清。
-- 桌面端或移动端横向溢出、遮挡或重叠。
-- 普通前台出现 Admin、JSON、同步、编辑、恢复、字段、后台等痕迹。
-- 公开前台出现内部流程语、空泛营销词、过度承诺或替用户下最终判断。
-- 今日观察 / 商业信号 / 趋势追踪 / 商业内参 / 前沿观点违反 `COPY.md` 专项规则。
-- 文案过长导致标题断行难看、按钮拥挤、卡片压迫或移动端遮挡。
-
-## 7B. 文案类任务硬性要求
-
-如本任务只涉及文案，不涉及页面结构或样式，本节必须保留并填写；如非文案类任务，可标注“不适用”。
-
-### 7B.1 Copy 文案规范表
-
-- 页面/模块：
-- 用户任务：
-- 当前文案问题：
-- 替换后文案：
-- 禁用语检查：
-- 判断边界：
-- 标题长度与容器适配：
-- QA 文案验收点：
-
-### 7B.2 QA 文案验收
-
-- 是否读取 `COPY.md`：
-- 是否无内部流程语：
-- 是否无空泛营销：
-- 是否无过度承诺：
-- 是否不替用户下最终判断：
-- 是否符合栏目专项规则：
-- 是否适配 UI 容器：
-- 阻塞项：
-
-## 8. 必跑检查
-
-根据任务类型勾选：
-
-- [ ] `node agent-workflow/tools/run-quality-gates.mjs syntax`
-- [ ] 页面 / 前端类：`node --check 01-SiteV2/site/assets/app.js`
-- [ ] 内容 / 数据类：`node agent-workflow/tools/run-quality-gates.mjs v2content`
-- [ ] 内容 / 数据类：`node agent-workflow/tools/run-quality-gates.mjs syntax`
-- [ ] 浏览器桌面检查
-- [ ] 移动端基础观察，或派发单明确要求的移动端专项检查
-- [ ] 多身份权限检查
-- [ ] 产品功能类任务：新增功能门禁记录
-- [ ] 产品功能类任务：模块决策表
-- [ ] Skill Pattern Gate：Pattern 标注、硬停顿和 Reviewer 证据
-- [ ] 页面类任务：UI/UE 页面规范表
-- [ ] 页面类任务：UI/UE 审美标准与桌面证据表，按页面类型通过线复核
-- [ ] 页面类任务：Copy 文案规范表
-- [ ] 页面类任务：Copy-first 文案前置闸门，Dev 未自行新增 / 改写关键文案
-- [ ] 页面类任务：Dev 按表实现说明
-- [ ] 页面类任务：QA 桌面截图和坐标/字号/间距/文案验收；移动端专项仅在派发单明确要求时硬阻塞
-- [ ] 文案类任务：Copy 文案规范表
-- [ ] 文案类任务：Copy-first 文案前置闸门
-- [ ] 文案类任务：QA 禁用语、判断边界和容器适配验收
-
-未运行的检查必须在收口文件中说明原因和风险。
-
-## 9. V2.1 自动化影响
-
-- 是否可能影响 `guanlan-daily-monitor`：
-- 是否可能影响 `asset-card-generator`、`daily-observation-writer`、`case-signal-researcher`、`trend-report-writer` 或 `brief-periodical-writer`：
-- 是否可能影响内容入库、知识库、站点生成或部署：
-- 如影响，需要同步更新的文件或提示词：
-
-## 10. 外部 GitHub skill / repo 安全审查
-
-如本任务涉及安装、更新、学习或引用外部 GitHub skill / repo，执行窗口必须在 closeout 中写清：
-
-- 来源 URL、安装路径或读取路径。
-- 是否包含脚本、依赖安装、远程执行、凭证读取或破坏性文件操作。
-- 静态安全检查方式和风险等级。
-- 哪些规则可吸收，哪些规则不适合观澜AI。
-- 是否需要重启 Codex 或后续复查。
-
-未完成上述说明的外部 skill / repo 任务，不得在调度中枢标记为 `accepted`。
-
-## 11. 执行窗口启动提示词
-
-```text
-执行任务：<TASK-ID>
-请读取 AGENTS.md、agent-workflow/governance/current-context.md 和 agent-workflow/execution/<TASK-ID>.md。
-只处理派发单允许范围。
-完成后写 UTF-8 closeout：
-agent-workflow/reports/<TASK-ID>-closeout.md
-追加收口登记到 agent-workflow/inbox/closeout-queue.jsonl。
-回调度窗口：收口：<TASK-ID>
-```
-
-说明：完整执行规则、硬闸门、必跑检查、禁止范围和收口要求均以本派发单为准。执行窗口不得因为启动提示词变短而省略页面类、文案类、产品功能类、自动化影响类或外部 GitHub skill / repo 的必填证据。
+按任务类型运行最小验证，并在 closeout 中说明。

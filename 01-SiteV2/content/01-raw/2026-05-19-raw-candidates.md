@@ -14,7 +14,7 @@ external_search_activated: true
 aihot_count: 55
 keyword_search_count: 9
 follow_builders_count: 9
-keyword_monitoring_config: 01-SiteV2/content/09-databases/keyword-monitoring-v2.json
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
 generated_at: 2026-05-19T05:27:29.768Z
 ---
 

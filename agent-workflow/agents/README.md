@@ -1,50 +1,278 @@
-# 长期 Agent 岗位库
+# Agent System｜观澜 AI 新 Agent 使用指引
 
-这里存放观澜AI的长期 agent 岗位说明书。
+观澜 AI 当前采用：
 
-这些文件不是一次性任务说明，而是可版本管理、可恢复、可复制的岗位定义。任何新会话、新 agent 或新 worker 接手项目时，都应先读取本目录，再读取 `progress.md`、`feature_list.json` 和相关 PRD。
+```text
+流程驱动的轻 Agent + 可复用 Skill
+```
 
-## 当前长期 Agent
+Agent 不再按栏目、页面或传统岗位碎片拆分。Agent 只负责生产流程中的关键责任节点；栏目写作、文案、字体、监测 QC、今日观察等可复用能力沉淀为 Skill。
 
-1. `strategy-agent.md`：战略总控，负责定位、商业化路径和边界判断。
-2. `pm-agent.md`：产品总控，负责栏目规划、PRD、路线图和任务分解。
-3. `ui-ue-agent.md`：UI/UE 与品牌体验，负责页面结构、视觉系统和用户体验。
-4. `copy-agent.md`：文案与转化，负责对外表达、CTA、会员转化和禁用语。
-5. `data-agent.md`：内容与数据治理，负责字段、标签、关系、去重和质量报告。
-6. `dev-agent.md`：开发与工程实现，负责网站、脚本、权限、部署和回滚。
-7. `qa-agent.md`：验收与质量，负责验收清单、测试、风险和发布检查。
-8. `workflow-agent.md`：工作流与自动化，负责每日运行、日志、交接和 agent 状态维护。
+观澜 AI 的目标是 AI Native。Agent 不只是分工表，而要形成联动：持续感知外部变化，把来源和证据转化为结构化情报资产，再经由表达、实现、发布、复盘进入下一轮生产。所有 Agent 协作优先通过结构化 handoff、质量门和自动化任务衔接，避免靠长提示词和人工转述维持流程。
 
-## 调度原则
+高风险流程统一套用 `context/06-execution-harness.md`：
 
-每一轮新工作按以下顺序启动：
+- 每日监测 / Raw / Pool。
+- Raw / Pool / Card 资产生成。
+- 页面 / 文案 / Typography 生成或大改。
 
-1. Strategy Agent：先确认方向是否正确。
-2. PM Agent：把方向转成栏目、PRD、路线图和任务优先级。
-3. Data Agent：确认内容源、字段、关系和质量约束。
-4. UI/UE Agent + Copy Agent：在产品边界确定后优化体验和表达。
-5. Dev Agent：按 PRD 和验收标准实现。
-6. QA Agent：独立验收，不参与实现。
-7. Workflow Agent：更新进度、日志、任务状态和交接。
+派发、执行和 closeout 都必须说明使用的 harness、固定读取、质量门和下游放行结论。
 
-## 不轻易删除原则
+## 1. 四个 Agent 的定位
 
-长期 agent 不等于一直保持一个活跃子线程。它的“长期存在”体现在：
+| Agent | 一句话职责 | 典型问题 |
+|---|---|---|
+| Product Commander | 入口、判断、派发、验收 | 要不要做？先做哪步？谁来做？怎么算完成？ |
+| Intelligence Engine | 来源、证据、Raw / Pool / Card | 信息从哪里来？证据够不够？能不能入库？卡片怎么关联？ |
+| Experience & Editorial | 内容、页面、表达、Copy / Typography | 页面怎么组织？文案怎么说？字体位置是否合规？像不像观澜？ |
+| Build & Release | 实现、质量门、发布 | 怎么落到代码和脚本？检查是否通过？能不能发布？ |
 
-- 岗位说明书长期保留。
-- 每次任务有交接记录。
-- 每次决策写入日志。
-- 每次改动对应 PRD 或 feature。
-- 临时子 agent 关闭后，可按岗位说明书恢复。
+## 2. 推荐工作流
 
-只有当岗位职责被正式合并、废弃或替换时，才可以修改或归档对应 agent 文件。
+### 标准任务流
 
-## 工具探索规则
+```text
+Product Commander
+  -> Intelligence Engine
+  -> Experience & Editorial
+  -> Build & Release
+  -> Product Commander 验收
+```
 
-每个 agent 可以去 GitHub、技能库、文档或项目资料中寻找合适工具，但必须满足：
+不是每个任务都要走完整链路。调度时按任务性质取最短路径。
 
-1. 先说明为什么需要这个工具。
-2. 只选择与本岗位交付物直接相关的工具。
-3. 新外部技能或脚本使用前先做安全审查。
-4. 工具进入长期使用前，写入 `governance/tool-registry.md`。
-5. 工具不能替代人工审批事项。
+AI Native 联动闭环：
+
+```text
+感知 -> 判断 -> 表达 -> 发布 -> 复盘 -> 规则更新
+```
+
+其中 Intelligence Engine 负责感知和证据资产，Product Commander 负责判断和取舍，Experience & Editorial 负责表达，Build & Release 负责实现和发布，复盘结果再回到规则、Skill、自动化和 Agent handoff 中。
+
+### 页面 / 栏目任务
+
+```text
+Product Commander 定范围
+  -> 套用 页面 / 文案 / Typography Harness
+  -> Experience & Editorial 出结构、Typography 表、Copy 表
+  -> Build & Release 按表实现
+  -> Product Commander 验收
+```
+
+页面任务不能让 Build & Release 临场补核心文案、临场定字号、临场改产品结构。
+
+### 每日监测 / 内容资产任务
+
+```text
+Product Commander 定边界
+  -> 套用 每日监测 或 Raw / Pool / Card 资产 Harness
+  -> Intelligence Engine 定来源、证据、Raw / Pool / Card 规则
+  -> Build & Release 改脚本和质量门
+  -> Product Commander 验收
+```
+
+如果涉及前台展示文案，再插入 Experience & Editorial。
+
+### 自动化 / 脚本 / 发布任务
+
+```text
+Product Commander 定允许范围
+  -> Intelligence Engine 提供数据规则
+  -> Build & Release 实现、检查、说明风险
+  -> Product Commander 验收
+```
+
+GitHub / Netlify 推送或部署必须等用户明确确认。
+
+## 3. 各 Agent 怎么用
+
+### Product Commander
+
+使用场景：
+
+- 新任务进入。
+- 任务拆分、合并、排序。
+- 判断是否需要先计划。
+- 判断是否进入开发。
+- 输出派发单。
+- 接收 closeout。
+- 验收是否 accepted。
+- 更新看板、进度和当前状态。
+
+输出：
+
+- 产品判断。
+- 任务边界。
+- 派发单。
+- 验收标准。
+- 看板状态。
+
+不做：
+
+- 不直接写页面。
+- 不直接改代码。
+- 不替 Intelligence Engine 编造证据。
+- 不替 Experience & Editorial 临场写前台文案。
+
+### Intelligence Engine
+
+使用场景：
+
+- 每日监测规则。
+- 来源等级。
+- Raw / Pool 生成。
+- 变化卡、案例卡、观点卡、趋势卡；观点卡必须执行 `feature` / `sidebar` / `archive` / `discard` 四档评级。
+- 标签、关系、去重。
+- 内容资产能否进入前台。
+- 证据是否足够。
+
+输出：
+
+- 来源规则。
+- 证据规则。
+- Raw / Pool / Card 结构。
+- 质量报告。
+- 标签和关系建议。
+
+不做：
+
+- 不决定一级栏目商业取舍。
+- 不写最终前台表达。
+- 不为了凑数量把弱来源包装成强证据。
+
+### Experience & Editorial
+
+使用场景：
+
+- 首页、栏目页、详情页、内参页结构。
+- 页面信息架构。
+- VI、字体、排版、节奏。
+- Copy-first 文案表。
+- Typography 页面位置表。
+- 普通页面文案、按钮、标签、空状态。
+- 内容是否像观澜 AI。
+
+输出：
+
+- 页面结构表。
+- Typography 表。
+- Copy 表。
+- 栏目表达建议。
+- 桌面端体验验收点。
+
+不做：
+
+- 不改监测算法。
+- 不部署。
+- 不绕过 Copy / Typography 表。
+- 不把页面写成普通新闻站、工具站或营销页。
+
+### Build & Release
+
+使用场景：
+
+- 网站页面实现。
+- 脚本和自动化实现。
+- 数据同步。
+- 质量门运行。
+- GitHub / Netlify 状态处理。
+- 发布风险说明。
+
+输出：
+
+- 代码或脚本改动。
+- 验证结果。
+- 发布风险。
+- 回滚说明。
+- closeout。
+
+不做：
+
+- 不自行改变产品范围。
+- 不临场补关键文案。
+- 不自行新增字体体系。
+- 不绕过质量门。
+- 不在未确认时推送或部署。
+
+## 4. Skill 怎么插入
+
+Skill 是能力模块，不是流程 owner。
+
+| 能力 | 优先使用 |
+|---|---|
+| 每日监测 | `skills/guanlan-daily-monitor/SKILL.md` |
+| 监测预闸门 | `skills/guanlan-monitor-quality-gate/SKILL.md` |
+| Raw / Pool 质检 | `skills/guanlan-daily-monitor-qc/SKILL.md` |
+| 全站基础文案 | `skills/guanlan-copy-style/SKILL.md` |
+| 全站基础文案 QC | `skills/guanlan-copy-style-qc/SKILL.md` |
+| 今日观察选题 / 写作 / QC | `guanlan-daily-observation*` 系列 Skill |
+| 字体位置审查 | `guanlan-typography-qc` |
+
+原则：
+
+- Agent 决定流程和责任。
+- Skill 提供专门能力。
+- 栏目能力优先做 Skill，不新增常驻 Agent。
+- 新 Skill 必须有明确适用场景、输入、输出和不适用场景。
+
+## 5. 常见任务怎么派
+
+| 用户任务 | 牵头 Agent | 需要的 Skill / 规则 |
+|---|---|---|
+| 新增栏目或调整导航 | Product Commander | Plan-first、产品结构 |
+| 优化首页 / 栏目页 / 详情页 | Experience & Editorial -> Build & Release | 页面 / 文案 / Typography Harness、VI、Typography、Copy |
+| 修改普通页面文案 | Experience & Editorial | `guanlan-copy-style` |
+| 每日监测规则调整 | Intelligence Engine -> Build & Release | 每日监测 Harness、daily monitor、monitor QC |
+| Raw / Pool 质量下降 | Intelligence Engine | 每日监测 Harness、monitor quality gate、source rules |
+| 自动化脚本改造 | Build & Release | 对应自动化 prompt / quality gates |
+| 内容卡片规则调整 | Intelligence Engine | Raw / Pool / Card 资产 Harness、card copy governance、tag taxonomy |
+| 发布 / 部署 | Build & Release | quality gates，用户确认 |
+| closeout 验收 | Product Commander | 派发单硬闸门 |
+
+## 6. 调度窗口使用口诀
+
+```text
+先问 Product Commander：要不要做、谁来做、怎么算完成。
+证据和入库问 Intelligence Engine。
+页面和表达问 Experience & Editorial。
+代码、脚本、检查和发布问 Build & Release。
+具体能力优先找 Skill。
+```
+
+## 7. 什么时候不能直接执行
+
+以下情况必须先由 Product Commander 判断：
+
+- 新增、删除或合并一级栏目。
+- 改变每日监测生产线。
+- 改变 Raw / Pool / Card schema。
+- 改变会员、权限、Admin、支付或发布路径。
+- 改变 GitHub / Netlify / 部署策略。
+- 用户没有确认但任务会影响正式网站。
+
+## 8. 不再恢复的模式
+
+以下拆分不再作为常驻 Agent：
+
+- Strategy Agent
+- PM Agent
+- UI / UE Agent
+- Copy Agent
+- Dev Agent
+- QA Agent
+- Workflow Agent
+- Column-specific Agent
+
+这些能力现在由 4 个流程 Agent + 对应 Skill 承接。
+
+## 9. 新增 Agent 的门槛
+
+只有同时满足以下条件，才考虑新增常驻 Agent：
+
+- 它对应稳定流程节点，而不是临时任务。
+- 现有 4 个 Agent + Skill 不能覆盖。
+- 有明确输入、输出、验收和写入边界。
+- 不会增加新窗口启动阅读负担。
+- 用户明确同意。
+
+默认情况下，新增能力应写成 Skill，而不是新增 Agent。

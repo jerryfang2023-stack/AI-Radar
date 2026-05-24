@@ -50,6 +50,16 @@ const findDatedMarkdown = (dirs, date) => {
   return "";
 };
 
+const datedMarkdownFiles = (dir, date) => {
+  if (!fs.existsSync(dir)) return [];
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  return entries.flatMap((entry) => {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) return datedMarkdownFiles(fullPath, date);
+    return entry.name.startsWith(date) && entry.name.endsWith(".md") ? [fullPath] : [];
+  });
+};
+
 const frontmatterValue = (text, name) => {
   const frontmatter = text.match(/^---\s*([\s\S]*?)---/u)?.[1] || "";
   const match = frontmatter.match(new RegExp(`^${name}:\\s*(.+)$`, "mu"));
@@ -72,17 +82,18 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
     raw: path.join(contentRoot, "01-raw", `${date}-raw-candidates.md`),
     pool: path.join(contentRoot, "02-pool", `${date}-pool-candidates.md`),
     dailyObservation: path.join(contentRoot, "03-daily-observation"),
-    selectedChangeCards: path.join(contentRoot, "04-business-signals", `${date}-selected-change-cards.md`),
-    opinionCandidates: path.join(contentRoot, "04-business-signals", `${date}-opinion-candidates.md`),
-    clusterCandidates: path.join(contentRoot, "04-business-signals", `${date}-change-cluster-candidates.md`),
-    changeCards: path.join(root, "01-SiteV2", "knowledge", "01-Change-Cards"),
-    caseCards: path.join(root, "01-SiteV2", "knowledge", "02-Case-Cards"),
-    opinionCards: path.join(root, "01-SiteV2", "knowledge", "03-Opinion-Cards"),
-    changeClusters: path.join(root, "01-SiteV2", "knowledge", "05-Change-Clusters"),
-    heat: path.join(contentRoot, "04-business-signals", `${date}-change-cluster-candidates.md`),
-    builders: path.join(contentRoot, "04-business-signals", `${date}-opinion-candidates.md`),
+    selectedChangeCards: path.join(contentRoot, "04-business-signals", "signals", `${date}-selected-change-cards.md`),
+    opinionCandidates: path.join(contentRoot, "05-frontier-opinions", `${date}-opinion-candidates.md`),
+    clusterCandidates: path.join(contentRoot, "06-asset-candidates", "trend", `${date}-change-cluster-candidates.md`),
+    signalCards: path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"),
+    changeCards: path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "change"),
+    caseCards: path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "case"),
+    opinionCards: path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards"),
+    changeClusters: path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "change-clusters"),
+    heat: path.join(contentRoot, "06-asset-candidates", "trend", `${date}-change-cluster-candidates.md`),
+    builders: path.join(contentRoot, "05-frontier-opinions", `${date}-opinion-candidates.md`),
   };
-  const trendReportRoot = path.join(contentRoot, "06-trend-reports");
+  const trendReportRoot = path.join(contentRoot, "08-trend-reports");
   const trendReportFile = findDatedMarkdown([
     path.join(trendReportRoot, "full"),
     path.join(trendReportRoot, "flash"),
@@ -105,6 +116,7 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
     structured: fs.existsSync(fileFor.changeCards)
       ? fs.readdirSync(fileFor.changeCards).filter((name) => name.startsWith(date) && name.endsWith(".md")).length
       : 0,
+    signalCards: datedMarkdownFiles(fileFor.signalCards, date).length,
     front: countMatches(fileFor.selectedChangeCards, /^-\s+`CHG-/gm),
     caseCards: fs.existsSync(fileFor.caseCards)
       ? fs.readdirSync(fileFor.caseCards).filter((name) => name.startsWith(date) && name.endsWith(".md")).length
@@ -200,12 +212,12 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
               ? ""
               : `TrendReport flash has ${evidenceSSourceCount} S/A or first-party sources, expected >= 1`,
             hasExternalUrl(evidenceChainSection) ? "" : "TrendReport flash missing original external URLs",
-            /#{2,3}\s+(反证|信息缺口|风险)/u.test(trendReportText)
+            /#{2,3}\s+(风险|信息缺口|边界|后续变量|继续观察)/u.test(trendReportText)
               ? ""
-              : "TrendReport flash missing counter-evidence / information gap",
-            /#{2,3}\s+30 天后看什么|30\s*天/u.test(trendReportText)
+              : "TrendReport flash missing risk boundary / information gap",
+            /后续|继续观察|变量|下一步/u.test(trendReportText)
               ? ""
-              : "TrendReport flash missing 30-day watch variables",
+              : "TrendReport flash missing follow-up variables",
           ]
         : [
             trendReportLength >= 6000 && trendReportLength <= 10000
@@ -218,14 +230,14 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
               : `TrendReport full report has ${evidenceSSourceCount} S-tier / first-party sources, expected >= 2`,
             hasExternalUrl(evidenceChainSection) ? "" : "TrendReport full report missing original external URLs",
             hasIncrementalFact(evidenceChainSection) ? "" : "TrendReport full report missing incremental facts from sources",
-            /#{2,3}\s+(风险与反证|反证|信息缺口)|本轮未发现关键反证/u.test(trendReportText)
+            /#{2,3}\s+(风险|信息缺口|边界|后续变量|继续观察)/u.test(trendReportText)
               ? ""
-              : "TrendReport full report missing counter-evidence statement",
+              : "TrendReport full report missing risk boundary statement",
             /#{2,3}\s+同类产品|竞品/u.test(trendReportText) ? "" : "TrendReport full report missing competitor section",
             /客户|场景|付费|预算/u.test(trendReportText) ? "" : "TrendReport full report missing customer / payment discussion",
-            /7\s*天|30\s*天|90\s*天/u.test(trendReportText)
+            /后续|继续观察|变量|下一步/u.test(trendReportText)
               ? ""
-              : "TrendReport full report missing 7/30/90-day watch variables",
+              : "TrendReport full report missing follow-up variables",
           ]).filter(Boolean)
     : [];
 
@@ -324,8 +336,13 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
       detail: poolFailures.length ? poolFailures.join("; ") : `${poolSections.length} pool items meet quality gate`,
     },
     {
-      label: "Change cards are generated into knowledge",
-      passed: metrics.structured > 0,
+      label: "Formal signal cards are generated into knowledge",
+      passed: metrics.signalCards > 0,
+      detail: `${metrics.signalCards} signal cards`,
+    },
+    {
+      label: "Change candidate assets are optional unless a change topic is claimed",
+      passed: metrics.structured === 0 || structuredFailures.length === 0,
       detail: `${metrics.structured} change cards`,
     },
     {
@@ -336,14 +353,18 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
         : `${structuredSections.length} change cards meet quality gate`,
     },
     {
-      label: "Selected change cards count is 3-8, or high-signal day documents more",
-      passed: (metrics.front >= 3 && metrics.front <= 8) || (metrics.front > 8 && /高信号|high signal/u.test(dailyLogText)),
-      detail: `${metrics.front} selected change cards`,
+      label: "Selected change-card list is optional under current signal-card frontstage rule",
+      passed: true,
+      detail: metrics.front
+        ? `${metrics.front} selected change cards`
+        : "not required when formal signal cards are present",
     },
     {
       label: "Selected change cards include reasons for inclusion",
-      passed: metrics.front >= 3 && frontDepthFailures.length === 0,
-      detail: frontDepthFailures.length ? frontDepthFailures.join("; ") : `${metrics.front} selected change cards meet selection gate`,
+      passed: metrics.front === 0 || frontDepthFailures.length === 0,
+      detail: metrics.front === 0
+        ? "not required when formal signal cards are present"
+        : frontDepthFailures.length ? frontDepthFailures.join("; ") : `${metrics.front} selected change cards meet selection gate`,
     },
     {
       label: "Trend report meets flash/full evidence gate or has no-report decision / explicit absence",
@@ -427,11 +448,12 @@ export function runV2ContentGate({ date = new Date().toISOString().slice(0, 10) 
 | Raw Originals | ${metrics.originals} |
 | Pool Items | ${metrics.pool} |
 | Daily Observation Chinese Chars | ${dailyObservationLength} |
-| Change Cards | ${metrics.structured} |
+| Change Candidate Assets | ${metrics.structured} |
+| Front Business Signal Cards | ${metrics.signalCards} |
 | Selected Change Cards | ${metrics.front} |
-| Case Cards | ${metrics.caseCards} |
-| Opinion Cards | ${metrics.opinionCards} |
-| Change Clusters | ${metrics.changeClusters} |
+| Case Signal Cards | ${metrics.caseCards} |
+| Frontier Opinion Assets | ${metrics.opinionCards} |
+| Trend Candidate Clusters | ${metrics.changeClusters} |
 | Trend Report Chinese Chars | ${hasTrendReport ? trendReportLength : 0} |
 | Builders / Opinion Candidates | ${buildersSections.length} |
 | Cluster Candidates | ${heatSections.length} |
@@ -444,11 +466,10 @@ ${lines}
 
 ## 说明
 
-- 本闸门检查当前 V2 内容生产路径 \`01-SiteV2/content/\`。
-- 它不运行旧 \`04-Site\` 同步，也不部署 Netlify。
-- 旧 \`04-Site\` 已从当前仓库移除，本检查只确认 V2 生产内容链路是否具备可入站基础。
+- 本闸门检查当前 V2.2 内容生产路径 \`01-SiteV2/content/\`。
+- 它只检查内容入站基础，不部署 Netlify。
 - Raw 低于 80 会被视为降级或严重降级，但仍检查是否有本地原文档案和缺口记录。
-- 当前六线程口径下，本闸门检查 Raw、Pool、今日观察、变化卡、案例卡、观点候选、变化簇候选和 daily log 必填字段。
+- 当前六线程口径下，本闸门检查 Raw、Pool、今日观察、商业信号、前沿观点、变化候选、场景候选、趋势候选和 daily log 必填字段。
 `;
 
   const datedPath = path.join(reportsDir, `v2-content-gate-${date}-${stamp}.md`);

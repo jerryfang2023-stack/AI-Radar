@@ -1,0 +1,193 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-018
+title: "0xdesign/design-plugin"
+original_url: "https://github.com/0xdesign/design-plugin"
+canonical_url: "https://github.com/0xdesign/design-plugin"
+source_name: "keyword search / Anysearch"
+source_type: developer
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "developer_ecosystem"
+search_path_label: "开发生态路径"
+author: ""
+published_at: ""
+collected_at: 2026-05-23T04:13:32.800Z
+language: mixed
+full_text_hash: ddd5732ad67d7ace
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-018-0xdesign-design-plugin.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-23/r-018-0xdesign-design-plugin.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: high
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: true
+content_length: 3708
+fetch_error: "The operation was aborted due to timeout"
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_snapshot","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ddd5732ad67d7ace","missing":["missing_snapshot"]}
+source_volatility: medium
+community_name: ""
+capture_scope: summary_only
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: discovery_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a8fd7e2ddfbaefe9
+content_hash: ddd5732ad67d7ace
+semantic_hash: 3ab2ad511d6bf088
+duplicate_of: ""
+first_seen_at: "2026-05-23T04:13:32.800Z"
+last_seen_at: 2026-05-23T04:13:32.800Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":4,"importance_reason":"real customer or adoption case; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["Claude"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究"],"business_actions":["合作 / 联盟"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["0x","692","35","2","98.2%","1.8%","2026","01"],"quotes":["Add Feedback","Submit Feedback","St 's clarity","Add Feedback","Submit Feedback"]}
+evidence_seed: {"company_actions":["Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them side-by-side in your browser, collects your feedback on what you like about each, and synthesizes a refined version—repeating until you're confident in the result.","Instead of guessing at - Starting a new component or page — explore different approaches before committing - Redesigning existing UI — see alternatives to what you have today - Stuck on a design direction — generate options when you're not sure what you want - Getting stakeholder buy-in — show concrete variations instead of describing ideas - Learning what works — see how different layouts, densities, and patterns feel in your actual codebase ## Why Use It 1.","Uses your existing design system — infers colors, typography, spacing from your Tailwind config, CSS variables, or component library 2."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Repository: 0xdesign/design-plugin - Stars: 692 - Forks: 35 - Watchers: 692 - Open issues: 2 - Primary language: TypeScript - Languages: TypeScript (98.2%), Shell (1.8%) - Default branch: main - Created: 2026-01-15T01:46:04Z - Last push: 2026-01-24T22:20:34Z - Contributors: 1 (top: 0xdesign) # Design and Refine A Claude Code plugin that helps you make confident UI design decisions through rapid iteration. Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them si","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Repository: 0xdesign/design-plugin - Stars: 692 - Forks: 35 - Watchers: 692 - Open issues: 2 - Primary language: TypeScript - Languages: TypeScript (98.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"8%) - Default branch: main - Created: 2026-01-15T01:46:04Z - Last push: 2026-01-24T22:20:34Z - Contributors: 1 (top: 0xdesign) # Design and Refine A Claude Code plugin that helps you make confident UI design decisions through rapid iteration.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them side-by-side in your browser, collects your feedback on what you like about each, and synthesizes a refined version—repeating until you're confident in the result.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Instead of guessing at - Starting a new component or page — explore different approaches before committing - Redesigning existing UI — see alternatives to what you have today - Stuck on a design direction — generate options when you're not sure what you want - Getting stakeholder buy-in — show concrete variations instead of describing ideas - Learning what works — see how different layouts, densities, and patterns feel in your actual codebase ## Why Use It 1.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Uses your existing design system — infers colors, typography, spacing from your Tailwind config, CSS variables, or component library 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 0xdesign/design-plugin
+
+## clean_text
+
+Repository: 0xdesign/design-plugin - Stars: 692 - Forks: 35 - Watchers: 692 - Open issues: 2 - Primary language: TypeScript - Languages: TypeScript (98.2%), Shell (1.8%) - Default branch: main - Created: 2026-01-15T01:46:04Z - Last push: 2026-01-24T22:20:34Z - Contributors: 1 (top: 0xdesign) # Design and Refine A Claude Code plugin that helps you make confident UI design decisions through rapid iteration. Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them side-by-side in your browser, collects your feedback on what you like about each, and synthesizes a refined version—repeating until you're confident in the result. Instead of guessing at - Starting a new component or page — explore different approaches before committing - Redesigning existing UI — see alternatives to what you have today - Stuck on a design direction — generate options when you're not sure what you want - Getting stakeholder buy-in — show concrete variations instead of describing ideas - Learning what works — see how different layouts, densities, and patterns feel in your actual codebase ## Why Use It 1. Uses your existing design system — infers colors, typography, spacing from your Tailwind config, CSS variables, or component library 2. Generates real code — not mockups, actual working components in your framework 3. Side-by-side comparison — view all variations at /__design_lab in your dev server 4. Iterative refinement — tell it what you like about each, get a synthesized version 5. Clean handoff — outputs DESIGN_PLAN.md with implementation steps when you're done 6. No mess left behind — automatically cleans up all temporary files ### 1. Add the marketplace In Claude Code, run: /plugin marketplace add 0xdesign/design-plugin ### 2. Install the plugin /plugin install design-and-refine@design-plugins That's it. The plugin is now available in any project. 1. Preflight — detects your framework (Next.js, Vite, etc.) and styling system (Tailwind, MUI, etc.) 1. Style inference — reads your existing design tokens from Tailwind config, CSS variables, or theme files 1. Interview — asks about: - What you're designing (component vs page, new vs redesign) - Pain points and what should improve - Visual and interaction inspiration - Target user and key tasks 1. Generation — creates 5 distinct variations exploring different: - Information hierarchy - Layout models (cards, lists, tables, split-pane) - Density (compact vs spacious) - Interaction patterns (modal, inline, drawer) - Visual expression 1. Review — open http://localhost:3000/__design_lab (or your dev server port) to see all variations side-by-side 1. Feedback — use the interactive feedback overlay or describe what you like: - Click "Add Feedback" to enter feedback mode -style) - Click "Submit Feedback" to what you like about each variation in chat 1. Iterate — repeat until you're confident 1. Finalize — all temp files are deleted, DESIGN_PLAN.md is generated with implementation steps ## Supported Frameworks - Next.js (App Router & Pages Router) - Vite (React, Vue) - Remix - Astro - Create React App ## Supported Styling - Tailwind CSS - CSS Modules - Material UI (MUI) - Chakra UI - Ant Design - styled-components - Emotion Tips for Best Results pain points, target users, and inspiration, the more distinct and useful the 's density" or "St 's clarity" gives Claude concrete direction like about each Check the DESIGN_PLAN.md. After finalizing, this file contains the implementation steps, component API, accessibility checklist, and testing guidance. 0xdesigner / score=60.083 / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem
+
+## full_text
+
+Repository: 0xdesign/design-plugin - Stars: 692 - Forks: 35 - Watchers: 692 - Open issues: 2 - Primary language: TypeScript - Languages: TypeScript (98.2%), Shell (1.8%) - Default branch: main - Created: 2026-01-15T01:46:04Z - Last push: 2026-01-24T22:20:34Z - Contributors: 1 (top: 0xdesign) # Design and Refine A Claude Code plugin that helps you make confident UI design decisions through rapid iteration. Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them side-by-side in your browser, collects your feedback on what you like about each, and synthesizes a refined version—repeating until you're confident in the result. Instead of guessing at - Starting a new component or page — explore different approaches before committing - Redesigning existing UI — see alternatives to what you have today - Stuck on a design direction — generate options when you're not sure what you want - Getting stakeholder buy-in — show concrete variations instead of describing ideas - Learning what works — see how different layouts, densities, and patterns feel in your actual codebase ## Why Use It 1. Uses your existing design system — infers colors, typography, spacing from your Tailwind config, CSS variables, or component library 2. Generates real code — not mockups, actual working components in your framework 3. Side-by-side comparison — view all variations at /__design_lab in your dev server 4. Iterative refinement — tell it what you like about each, get a synthesized version 5. Clean handoff — outputs DESIGN_PLAN.md with implementation steps when you're done 6. No mess left behind — automatically cleans up all temporary files ### 1. Add the marketplace In Claude Code, run: /plugin marketplace add 0xdesign/design-plugin ### 2. Install the plugin /plugin install design-and-refine@design-plugins That's it. The plugin is now available in any project. 1. Preflight — detects your framework (Next.js, Vite, etc.) and styling system (Tailwind, MUI, etc.) 1. Style inference — reads your existing design tokens from Tailwind config, CSS variables, or theme files 1. Interview — asks about: - What you're designing (component vs page, new vs redesign) - Pain points and what should improve - Visual and interaction inspiration - Target user and key tasks 1. Generation — creates 5 distinct variations exploring different: - Information hierarchy - Layout models (cards, lists, tables, split-pane) - Density (compact vs spacious) - Interaction patterns (modal, inline, drawer) - Visual expression 1. Review — open http://localhost:3000/__design_lab (or your dev server port) to see all variations side-by-side 1. Feedback — use the interactive feedback overlay or describe what you like: - Click "Add Feedback" to enter feedback mode -style) - Click "Submit Feedback" to what you like about each variation in chat 1. Iterate — repeat until you're confident 1. Finalize — all temp files are deleted, DESIGN_PLAN.md is generated with implementation steps ## Supported Frameworks - Next.js (App Router & Pages Router) - Vite (React, Vue) - Remix - Astro - Create React App ## Supported Styling - Tailwind CSS - CSS Modules - Material UI (MUI) - Chakra UI - Ant Design - styled-components - Emotion Tips for Best Results pain points, target users, and inspiration, the more distinct and useful the 's density" or "St 's clarity" gives Claude concrete direction like about each Check the DESIGN_PLAN.md. After finalizing, this file contains the implementation steps, component API, accessibility checklist, and testing guidance. 0xdesigner / score=60.083 / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: high
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Repository: 0xdesign/design-plugin - Stars: 692 - Forks: 35 - Watchers: 692 - Open issues: 2 - Primary language: TypeScript - Languages: TypeScript (98.2%), Shell (1.8%) - Default branch: main - Created: 2026-01-15T01:46:04Z - Last push: 2026-01-24T22:20:34Z - Contributors: 1 (top: 0xdesign) # Design and Refine A Claude Code plugin that helps you make confident UI design decisions through rapid iteration. Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them si
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Repository: 0xdesign/design-plugin - Stars: 692 - Forks: 35 - Watchers: 692 - Open issues: 2 - Primary language: TypeScript - Languages: TypeScript (98.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   8%) - Default branch: main - Created: 2026-01-15T01:46:04Z - Last push: 2026-01-24T22:20:34Z - Contributors: 1 (top: 0xdesign) # Design and Refine A Claude Code plugin that helps you make confident UI design decisions through rapid iteration.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them side-by-side in your browser, collects your feedback on what you like about each, and synthesizes a refined version—repeating until you're confident in the result.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Instead of guessing at - Starting a new component or page — explore different approaches before committing - Redesigning existing UI — see alternatives to what you have today - Stuck on a design direction — generate options when you're not sure what you want - Getting stakeholder buy-in — show concrete variations instead of describing ideas - Learning what works — see how different layouts, densities, and patterns feel in your actual codebase ## Why Use It 1.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Uses your existing design system — infers colors, typography, spacing from your Tailwind config, CSS variables, or component library 2.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: Claude
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究
+- business_actions: 合作 / 联盟
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 0x, 692, 35, 2, 98.2%, 1.8%, 2026, 01
+- quotes: Add Feedback / Submit Feedback / St 's clarity / Add Feedback / Submit Feedback
+
+## evidence_seed
+
+- company_actions: Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them side-by-side in your browser, collects your feedback on what you like about each, and synthesizes a refined version—repeating until you're confident in the result. / Instead of guessing at - Starting a new component or page — explore different approaches before committing - Redesigning existing UI — see alternatives to what you have today - Stuck on a design direction — generate options when you're not sure what you want - Getting stakeholder buy-in — show concrete variations instead of describing ideas - Learning what works — see how different layouts, densities, and patterns feel in your actual codebase ## Why Use It 1. / Uses your existing design system — infers colors, typography, spacing from your Tailwind config, CSS variables, or component library 2.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 4
+- importance_reason: real customer or adoption case; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Repository: 0xdesign/design-plugin - Stars: 692 - Forks: 35 - Watchers: 692 - Open issues: 2 - Primary language: TypeScript - Languages: TypeScript (98.2%), Shell (1.8%) - Default branch: main - Created: 2026-01-15T01:46:04Z - Last push: 2026-01-24T22:20:34Z - Contributors: 1 (top: 0xdesign) # Design and Refine A Claude Code plugin that helps you make confident UI design decisions through rapid iteration. Design and Refine generates multiple distinct UI variations for any component or page, lets you compare them side-by-side in your browser, collects your feedback on what you like about each, and synthesizes a refined version—repeating until you're confident in the result. Instead of guessing at - Starting a new component or page — explore different approaches before committing - Redesigning existing UI — see alternatives to what you have today - Stuck on a design direction — generate options when you're not sure what you want - Getting stakeholder buy-in — show concrete variations instead of describing ideas - Learning what works — see how different layouts, densities, and patterns feel in your actual codebase ## Why Use It 1. Uses your existing design system — infers colors, typography, spacing from your Tailwind config, CSS variables, or component library 2. Generates real code — not mockups, actual working components in your framework 3. Side-by-side comparison — view all variations at /__design_lab in your dev server 4. Iterative refinement — tell it what you like about each, get a synthesized version 5. Clean handoff — outputs DESIGN_PLAN.md with implementation steps when you're done 6. No mess left behind — automatically cleans up all temporary files ### 1. Add the marketplace In Claude Code, run: /plugin marketplace add 0xdesign/design-plugin ### 2. Install the plugin /plugin install design-and-refine@design-plugins That's it. The plugin is now available in any project. 1. Preflight — detects your framework (Next.js, Vite, etc.) and styling system (Tailwind, MUI, etc.) 1. Style inference — reads your existing design tokens from Tailwind config, CSS variables, or theme files 1. Interview — asks about: - What you're designing (component vs page, new vs redesign) - Pain points and what should improve - Visual and interaction inspiration - Target user and key tasks 1. Generation — creates 5 distinct variations exploring different: - Information hierarchy - Layout models (cards, lists, tables, split-pane) - Density (compact vs spacious) - Interaction patterns (modal, inline, drawer) - Visual expression 1. Review — open http://localhost:3000/__design_lab (or your dev server port) to see all variations side-by-side 1. Feedback — use the interactive feedback overlay or describe what you like: - Click "Add Feedback" to enter feedback mode -style) - Click "Submit Feedback" to what you like about each variation in chat 1. Iterate — repeat until you're confident 1. Finalize — all temp files are deleted, DESIGN_PLAN.md is generated with implementation steps ## Supported Frameworks - Next.js (App Router & Pages Router) - Vite (React, Vue) - Remix - Astro - Create React App ## Supported Styling - Tailwind CSS - CSS Modules - Material UI (MUI) - Chakra UI - Ant Design - styled-components - Emotion Tips for Best Results pain points, target users, and inspiration, the more distinct and useful the 's density" or "St 's clarity" gives Claude concrete direction like about each Check the DESIGN_PLAN.md. After finalizing, this file contains the implementation steps, component API, accessibility checklist, and testing guidance. 0xdesigner / score=60.083 / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -14,13 +14,13 @@ external_search_activated: true
 aihot_count: 21
 keyword_search_count: 21
 follow_builders_count: 19
-keyword_monitoring_config: 01-SiteV2/content/09-databases/keyword-monitoring-v2.json
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
 generated_at: 2026-05-18T07:52:02.151Z
 ---
 
 # 2026-05-18 Raw Candidates
 
-说明：本文件由 `agent-workflow/tools/run-v2-daily-pipeline.mjs` 生成。默认采用三段式策略：AI HOT 最近 24 小时全量作为 Raw 主入口，先按类目、关键词、商业动作和噪音规则筛选；follow-builders 每日全量进入前沿观点库，并择优进入 Raw；当 AI HOT + follow-builders 不足 Raw 目标时，才启动外部多路搜索补齐。三者都属于 discovery / source-router，其摘要不作为事实主证据，进入重要卡片、今日观察或商业内参前必须回看原始 URL 并补足 S/A/B 来源。
+说明：本文件为 V2.1 Raw 候选记录。AI HOT 最近 24 小时全量作为 Raw 主入口，先按类目、关键词、商业动作和噪音规则筛选；follow-builders 每日全量进入前沿观点库，并择优进入 Raw；当 AI HOT + follow-builders 不足 Raw 目标时，才启动外部多路搜索补齐。三者都属于发现入口，其摘要不作为事实主证据，进入重要卡片、今日观察或商业内参前必须回看原始 URL 并补足 S/A/B 来源。
 
 ### R-001｜汽车之家|2026汽车报价大全|新能源汽车
 

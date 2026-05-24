@@ -1,201 +1,258 @@
 ---
 name: guanlan-daily-monitor
-description: Use when running, updating, auditing, or repairing WaveSight AI daily monitoring. It executes the independent daily monitor task: source discovery, Raw capture, Pool routing, source-router logs, and evidence gaps. It does not write articles or generate full cards.
+description: "Use when running, updating, auditing, or repairing WaveSight AI daily monitoring. It handles source discovery, Raw capture, Pool candidates, monitor logs, evidence gaps, and QC handoff. It does not write articles or generate full cards."
 ---
 
 # Guanlan Daily Monitor
 
-This skill runs the WaveSight AI daily monitoring task as an independent job.
+## Use For
 
-Use it for:
+- Running daily monitoring.
+- Updating monitoring source rules.
+- Auditing Raw / Pool quality.
+- Repairing monitor runs.
+- Preparing downstream QC handoff.
 
-- Running the daily monitor.
-- Updating daily monitor rules.
-- Auditing Raw / Pool monitoring quality.
-- Repairing failed source-router runs.
-- Creating or updating the independent Guanlan daily monitoring automation.
-
-Do not use it to write 今日观察, generate full cards, or produce trend reports. Those belong to downstream tasks and will follow their own rules.
+Do not use this skill to write 今日观察, generate cards, write trend reports, publish the site, deploy, or push GitHub.
 
 ## Required Reads
 
-Read in this order:
+Daily startup reads only:
 
 1. `AGENTS.md`
-2. `agent-workflow/governance/current-context.md`
-3. `agent-workflow/product/daily-monitoring-playbook.md`
-4. `agent-workflow/product/source-intelligence.md`
-5. `agent-workflow/product/raw-evidence-schema.md`
-6. `agent-workflow/product/pool-routing-rules.md`
-7. `01-SiteV2/content/README.md`
-8. `01-SiteV2/content/09-databases/keyword-monitoring-v2.json`
-9. `01-SiteV2/content/09-databases/source-registry-v2.json`
+2. `context/05-daily-monitoring.md`
+3. `context/07-card-asset-stage-model.md`
+4. `skills/guanlan-monitor-quality-gate/SKILL.md`
+5. `skills/guanlan-daily-monitor-qc/SKILL.md`
 
-The playbook is the daily monitoring source of truth. Raw schema defines evidence fields. Pool routing rules define candidate routing. Do not redefine those standards inside task notes.
+Open these only when changing rules or debugging a specific failure:
 
-## Mission
-
-Produce the day's monitoring base:
-
-- Raw candidates and local evidence archives.
-- Pool candidates and routing reasons.
-- Frontier viewpoint intake from follow-builders.
-- Change-cluster and viewpoint candidates for downstream tasks.
-- Source-router log with failures, fallback, evidence gaps, and distribution.
+- `agent-workflow/product/daily-monitoring-playbook.md`
+- `agent-workflow/product/source-intelligence.md`
+- `agent-workflow/product/evidence-and-routing-rules.md`
+- `01-SiteV2/content/11-databases/keyword-monitoring-v2.json`
+- `01-SiteV2/content/11-databases/source-registry-v2.json`
+- `01-SiteV2/content/11-databases/monitor-quality-gate-v2.json`
 
 ## Execution
 
-Run:
-
 ```powershell
-node agent-workflow/tools/run-v2-daily-pipeline.mjs --date=<YYYY-MM-DD> --search-limit=30 --search-path-query-limit=1 --gdelt-query-limit=4 --hn-limit=20 --fetch-timeout-ms=10000 --snapshot-timeout-ms=8000
+node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=80 --max-cycles=3 --search-limit=70 --search-path-query-limit=2 --gdelt-query-limit=8 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000
 ```
 
 Use Asia/Shanghai date unless the user gives another date.
 
-External search is a bounded补证 lane. If non-community paths timeout or return rate limits, preserve the failure in `failed_sources` and keep community-only results in Watchlist / User Feedback rather than treating them as fact evidence.
+## Source Rules
 
-## Default Source Strategy
+`S/A/B/C/D/M` only identifies source type. It is not a value score and not a core-evidence hard gate.
 
-Use the three-lane default:
+- S: overseas first-party event source.
+- A: high-quality reporting or research.
+- B: vertical, funding, ecosystem, startup, marketplace or industry source.
+- C: community, opinion, feedback or discussion.
+- D: noise, SEO or non-event page.
+- M: acquisition entrance.
 
-1. AI HOT recent 24h `mode=all` as the main Raw discovery entrance.
-2. follow-builders full daily scan into the frontier opinion library.
-3. keyword rules to fill P0/P1 tracks, four signal classes, and outside-core exploration.
+Do not add value because a source is S/A/B, and do not require S/A/B for core evidence. Value comes from six WaveSight importance types: important cases, important funding events, important technical trends, important products or services, important vertical industry solutions, and important viewpoints / articles.
 
-Only activate external multi-path search when default lanes are insufficient, a signal class is thin, or important cards need S/A/B evidence.
+Procurement, budget, revenue, regulation, lawsuits, compliance and risk are supporting signals only. They must not promote an item by themselves.
 
-## Raw Rules
+## Curated Entrances
 
-Every useful Raw must preserve:
+AI HOT daily:
 
-- `full_text`
-- `clean_text`
-- Markdown snapshot
-- JSON evidence object
-- source URL and origin URL
-- fetch status and extraction quality
-- source level S/A/B/C/D
-- acquisition source level M when discovered through AI HOT, follow-builders, search aggregation, RSS, or other routers
-- key excerpts with type/support/importance/confidence
-- business elements
-- evidence seed
-- missing information
-- usable_for
-- pool_routes
-- raw_status
+- full retention in Raw candidate and Pool index;
+- higher capture priority;
+- not automatic `core_pool`;
+- must be checked against original text, page type and usable evidence object.
 
-`full_text` is the evidence base. `clean_text` is the analysis input.
+follow-builders:
 
-## Pool Rules
+- full daily scan;
+- higher capture priority;
+- default output is frontier opinion;
+- proves who said what, not company facts.
 
-Pool is only a candidate index. It cannot replace Raw.
+## Search Rules
 
-Allowed routes:
+Keyword search must emphasize:
 
-- `core_pool`
-- `emerging_pool`
-- `user_feedback_pool`
-- `watchlist`
-- `index_only`
-- `discard`
+- important cases;
+- important funding events;
+- important technical trends;
+- important product or service launches;
+- important vertical industry solutions;
+- important industry-shaping viewpoints, speeches or articles;
+- selective procurement / regulation / counter-evidence only when it supports an important case, technical trend, vertical solution or market-shaping article.
 
-`core_pool` requires:
+HN / Reddit / X are community feedback only. They must not dominate keyword-search results.
 
-```text
-has_full_text = true
-extraction_quality = high | medium
-source_level = S | A | B
-clear commercial change
-commercial_value >= 3
-guanlan_relevance >= 3
-```
+Search paths describe intent only. The fetched page still needs page-type and evidence checks.
 
-Do not promote weak evidence to `core_pool` just to reach quantity targets.
+## Layered Search And Lane Governance
 
-## Community And Aggregator Rules
+Daily monitoring uses six importance lanes, not one random shared search pool:
 
-AI HOT, follow-builders, HN, X, Reddit, newsletters, RSS and search aggregators are discovery channels until the original source is captured.
+- `important_case`: customer cases, deployments and repeatable workflow changes.
+- `important_funding`: funding events, investors, rounds, valuation and market direction.
+- `important_technical_trend`: model, benchmark, paper, open-source, infrastructure and cost-structure changes.
+- `important_product_or_service`: product launches, APIs, platforms and commercialized capabilities.
+- `important_vertical_solution`: named industry plus deliverable solution, workflow or customer scene.
+- `important_viewpoint_or_article`: industry-shaping speeches, essays, interviews or research opinions.
 
-Community materials can support:
+Raw must try to cover all six lanes. Core Pool must not force quota filling: each lane may contribute up to 2-3 strong items, but a lane with no qualified item remains empty and is reported as a coverage gap.
 
-- discussion heat
-- user feedback
-- developer resistance
-- early watch signals
-- viewpoint cards when original visible text is preserved
+Search priority:
 
-They cannot alone prove company action, customer adoption, revenue, financing, market size, or procurement.
+1. AI HOT, follow-builders, registered RSS and official source registry.
+2. Whitelisted official / high-signal domains.
+3. Vertical APIs or structured databases when configured.
+4. GDELT / A-media verification.
+5. Semantic or agent search providers such as Anysearch / Tavily / Exa when configured.
+6. Bing or generic web search only as fallback discovery.
 
-## Targets
+Anysearch, Tavily, Exa, Bing, DuckDuckGo or any generic search result is discovery only. It must resolve to original evidence, pass Raw QC, pass page-type checks and match a six-lane importance type before `core_pool`.
 
-Normal day:
+Active provider order:
 
-- Raw: 80-150
-- Pool: 20-40
+- Semantic keyword discovery: Anysearch -> Tavily -> Exa -> DuckDuckGo -> Bing fallback.
+- A-media / news verification: GDELT -> Anysearch -> Tavily / Exa -> DuckDuckGo / Bing fallback.
+- NewsAPI is retired from the current path; do not require or document `NEWSAPI_KEY`.
 
-Low-signal or source-failure day:
+Freshness and dedupe:
 
-- Raw: 50-80 with explicit fallback notes
-- Pool shortage must be explained through evidence gaps
+- Tavily / Exa / Anysearch / GDELT must normalize provider date fields into `published_at` before freshness comparison.
+- Invalid dates, isolated years, tracking ids and social activity ids must stay blank rather than being treated as publication dates.
+- Search results must dedupe across provider entrances by canonical URL and by source-family title/date fingerprint, especially Reuters, financing-wire posts, product pages and company announcements.
 
-Coverage must include mature signals, early signals, technical iteration signals, and developer ecosystem signals.
+Keyword-search result pre-gate must reject dictionary, translation, pronunciation, HTML tag reference, tutorial, search result, directory, SEO and tool-navigation pages before Raw capture.
 
-## Required Log Fields
+## Hard Downgrades
 
-The source-router log must include:
+Default to `index_only` unless the same page contains a dated concrete action:
 
-- `source_distribution`
-- `raw_count_by_channel`
-- `raw_count_by_source_type`
-- `aihot_discovered_count`
-- `aihot_rejected_by_raw_entry_rules`
-- `external_search_activated`
-- `keyword_group_distribution`
-- `theme_distribution`
-- `theme_concentration_warning`
-- `source_level_distribution`
-- `pool_route_distribution`
-- `raw_snapshot_status_distribution`
-- `failed_sources`
-- `fallback_used`
-- `evidence_gaps`
+- official homepage;
+- product / demo page;
+- product directory;
+- docs / API / SDK directory;
+- pricing navigation page;
+- GitHub README / repo index;
+- Hugging Face / npm / PyPI package or model page;
+- marketplace listing;
+- console / login page;
+- search-result page;
+- AI tool directory;
+- Chinese SEO page;
+- Baidu / Alibaba Cloud / Tencent Cloud / Huawei Cloud / Volcengine homepage.
+
+## Raw Targets
+
+Raw is a range, not a fixed count.
+
+- Normal: 80-150.
+- Degraded: 50-80 with written reason.
+- Below 50: downstream blocked unless QC explicitly allows degradation.
+
+Do not cap normal days at 100 just for stability.
+
+## B Source Rule
+
+B sources with original text can be used as evidence. They do not need mandatory S/A backfill.
+
+They still need concrete event or change evidence. A page existing is not enough.
+
+## Raw-to-Pool Routing
+
+Source Layer Governance includes Raw-to-Pool routing governance.
+
+Run Raw-to-Pool as an evidence gate before any content use:
+
+1. Normalize `source_level` and `acquisition_source_level`; do not use S/A/B/C/D/M as value bonuses or core-evidence hard gates.
+2. Hard-downgrade homepage, directory, README, package, model, pricing-navigation, login, marketplace listing, search-result and SEO pages to `index_only` unless the same page proves a dated concrete action.
+3. Allow `core_pool` only when the Raw item has original URL, readable full text, `extraction_method`, `readability_score >= 24`, high/medium extraction quality, non-index evidence object, content hash, full text hash, key excerpts, `raw_qc_decision=allow`, `importance_score >= 4`, and `importance_type` is one of the six core importance types.
+4. Route non-core items explicitly: `watchlist` for trackable but incomplete leads, `index_only` for homepage/directory/package/model/search/SEO or entrance-only records, and `discard` for blocked or unusable records. `discard` means excluded from downstream use, not file deletion.
+5. Route HN / Reddit / X / forum / issue feedback labels must not prove company facts alone.
+6. Keep AI HOT daily and follow-builders selected items as higher-priority candidates, but evidence-gate them before `core_pool`.
+7. After routing, check six `importance_type` coverage. Fill gaps by refetching or searching, not by promoting weak pages.
+
+Detailed rules live in `agent-workflow/product/evidence-and-routing-rules.md`.
+
+`importance_score` rubric:
+
+- 1-2: archive, index or supporting context only.
+- 3: plausible but not core-ready.
+- 4: concrete important change in one of the six importance types.
+- 5: major platform, frontier lab, large customer, known investor, industry-shaping technical shift or high-impact market judgment.
+
+Degradation caps:
+
+- missing full text / snapshot: max `watchlist` or `index_only`.
+- missing extraction method / low readability score: max `watchlist` or `index_only`.
+- missing hash / excerpt: max `watchlist`.
+- index-only or directory page: max `index_only`.
+- discovery / feedback boundary: max `user_feedback_pool` for community material, otherwise `index_only` until origin evidence is captured.
+- Raw QC block: `discard`, except AI HOT daily selected may remain `index_only`.
 
 ## Output Paths
 
-Write only monitoring outputs:
+Write monitoring outputs only:
 
 ```text
 01-SiteV2/content/01-raw/
 01-SiteV2/content/01-raw/originals/
 01-SiteV2/content/02-pool/
-01-SiteV2/content/04-business-signals/
-01-SiteV2/knowledge/03-Opinion-Cards/
+01-SiteV2/content/05-frontier-opinions/
+01-SiteV2/knowledge/02-Opinion-Cards/
 agent-workflow/reports/
 ```
 
-## Failure Handling
+`05-frontier-opinions/` is the front-stage opinion stream index. `knowledge/02-Opinion-Cards/` is the long-term opinion asset library. Daily monitoring may prepare opinion entries, but it must not convert opinion claims into company facts.
 
-If sources fail, do not pretend the run succeeded.
+## Required Log Fields
 
-Report:
-
-- failed source
-- failed stage
-- fallback used
-- Raw / Pool count
-- evidence gaps
-- downstream tasks that should pause or downgrade
-
-Do not ask writers to produce a normal 今日观察 from empty or thin Raw / Pool.
+- `source_distribution`
+- `raw_count_by_channel`
+- `raw_count_by_source_type`
+- `source_level_distribution`
+- `keyword_search_path_distribution`
+- `keyword_search_non_community_count`
+- `theme_distribution`
+- `theme_concentration_warning`
+- `pool_route_distribution`
+- `pool_index_route_distribution`
+- `pool_index_count`
+- `routed_pool_count`
+- `non_core_pool_count`
+- `index_only_pool_count`
+- `aihot_index_only_count`
+- `aihot_core_count`
+- `importance_coverage_gaps`
+- `pool_importance_coverage_gaps`
+- `failed_sources`
+- `fallback_used`
+- `evidence_gaps`
 
 ## Verification
 
 At minimum run:
 
 ```powershell
-node --check agent-workflow/tools/run-v2-daily-pipeline.mjs
+node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
+node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
+node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs
 node agent-workflow/tools/run-quality-gates.mjs syntax
 ```
 
-If a check cannot run, state why and whether it blocks downstream tasks.
+If any check cannot run, state why and whether it blocks downstream use.
+
+## Lane Volume Backfill
+
+Six-lane monitoring must keep enough Raw candidates for Pool selection:
+
+- Raw minimum per required importance type: 3.
+- Raw target per required importance type: 5.
+- Pool minimum per required importance type: 1.
+- Core Pool maximum per required importance type: 3.
+- Core Pool must not be force-filled.
+
+When a lane is below 3 Raw candidates, expand only that lane with provider/search backfill. Do not relax evidence, page-type, Raw QC or Core Pool gates.

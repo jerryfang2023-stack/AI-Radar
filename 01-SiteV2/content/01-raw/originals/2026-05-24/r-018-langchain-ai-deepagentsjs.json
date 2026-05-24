@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-018",
+  "title": "langchain-ai/deepagentsjs",
+  "original_url": "https://github.com/langchain-ai/deepagentsjs/",
+  "canonical_url": "https://github.com/langchain-ai/deepagentsjs",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event_on_official_page",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-05-24T04:09:10.637Z",
+  "language": "mixed",
+  "full_text": "langchain-ai\ndeepagentsjs\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n200\nStar\n1.3k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n490 Commits\n490 Commits\n.agents/ skills\n.agents/ skills\n.changeset\n.changeset\n.github\n.github\n.vscode\n.vscode\nevals\nevals\nexamples\nexamples\ninternal/ eval-harness\ninternal/ eval-harness\nlibs\nlibs\n.codespellignore\n.codespellignore\n.env.example\n.env.example\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.nvmrc\n.nvmrc\n.oxfmtrc.jsonc\n.oxfmtrc.jsonc\n.oxlintrc.jsonc\n.oxlintrc.jsonc\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nThe batteries-included agent harness.\nDeep Agents is an agent harness. An opinionated, ready-to-run agent out of the box. Instead of wiring prompts, tools, and context management yourself, you get a working agent immediately and customize what you need.\nWhat's included:\nPlanning — write_todos for task breakdown and progress tracking\nFilesystem — read_file , write_file , edit_file , ls , glob , grep for working memory\nSub-agents — task for delegating work with isolated context windows\nSmart defaults — built-in prompt and middleware that make these tools useful out of the box\nContext management — file-based workflows to keep long tasks manageable\nNote\nLooking for the Python package? See langchain-ai/deepagents .\nQuickstart\nnpm install deepagents\n# or\npnpm add deepagents\n# or\nyarn add deepagents\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( ) ;\nconst result = await agent . invoke ( {\nmessages : [\nrole : \"user\" ,\ncontent : \"Research LangGraph and write a summary in summary.md\" ,\n} ,\n] ,\n} ) ;\nThe agent can plan, read/write files, and manage longer tasks with sub-agents and filesystem tools.\nTip\nFor developing, debugging, and deploying AI agents and LLM applications, see LangSmith .\nCustomization\nAdd tools, swap models, and customize prompts as needed:\nimport { ChatOpenAI } from \"@langchain/openai\" ;\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( {\nmodel : new ChatOpenAI ( { model : \"gpt-5\" , temperature : 0 } ) ,\ntools : [ myCustomTool ] ,\nsystemPrompt : \"You are a research assistant.\" ,\n} ) ;\nSee the JavaScript Deep Agents docs for full configuration options.\nLangGraph Native\ncreateDeepAgent returns a compiled LangGraph graph, so you can use streaming, Studio, checkpointers, and other LangGraph features.\nWhy Use It\n100% open source — MIT licensed and extensible\nProvider agnostic — works with tool-calling chat models\nBuilt on LangGraph — production runtime with streaming and persistence\nBatteries included — planning, file access, sub-agents, and defaults out of the box\nFast to start — install and run with sensible defaults\nEasy to customize — add tools/models/prompts when you need to\nDocumentation\ndocs.langchain.com - Concepts and guides\nExamples - Working agents and patterns\nLangChain Forum - Community discussion and support\nSecurity\nDeep Agents follows a \"trust the LLM\" model. The agent can do anything its tools allow. Enforce boundaries at the tool/sandbox level, not by expecting the model to self-police. See the security policy for more information.\nAbout\nThe batteries included agent harness.\ndocs.langchain.com/oss/javascript/deepagents/overview\nTopics\nai\nlangchain\nlanggraph\ndeepagents\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n1.3k\nstars\nWatchers\nwatching\nForks\n200\nforks\nReport repository\nReleases\n89\ndeepagents@1.10.2\nLatest\nMay 13, 2026\n+ 88 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n100.0%",
+  "clean_text": "langchain-ai\ndeepagentsjs\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n200\nStar\n1.3k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n490 Commits\n490 Commits\n.agents/ skills\n.agents/ skills\n.changeset\n.changeset\n.github\n.github\n.vscode\n.vscode\nevals\nevals\nexamples\nexamples\ninternal/ eval-harness\ninternal/ eval-harness\nlibs\nlibs\n.codespellignore\n.codespellignore\n.env.example\n.env.example\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.nvmrc\n.nvmrc\n.oxfmtrc.jsonc\n.oxfmtrc.jsonc\n.oxlintrc.jsonc\n.oxlintrc.jsonc\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nThe batteries-included agent harness.\nDeep Agents is an agent harness. An opinionated, ready-to-run agent out of the box. Instead of wiring prompts, tools, and context management yourself, you get a working agent immediately and customize what you need.\nWhat's included:\nPlanning — write_todos for task breakdown and progress tracking\nFilesystem — read_file , write_file , edit_file , ls , glob , grep for working memory\nSub-agents — task for delegating work with isolated context windows\nSmart defaults — built-in prompt and middleware that make these tools useful out of the box\nContext management — file-based workflows to keep long tasks manageable\nNote\nLooking for the Python package? See langchain-ai/deepagents .\nQuickstart\nnpm install deepagents\n# or\npnpm add deepagents\n# or\nyarn add deepagents\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( ) ;\nconst result = await agent . invoke ( {\nmessages : [\nrole : \"user\" ,\ncontent : \"Research LangGraph and write a summary in summary.md\" ,\n} ,\n] ,\n} ) ;\nThe agent can plan, read/write files, and manage longer tasks with sub-agents and filesystem tools.\nTip\nFor developing, debugging, and deploying AI agents and LLM applications, see LangSmith .\nCustomization\nAdd tools, swap models, and customize prompts as needed:\nimport { ChatOpenAI } from \"@langchain/openai\" ;\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( {\nmodel : new ChatOpenAI ( { model : \"gpt-5\" , temperature : 0 } ) ,\ntools : [ myCustomTool ] ,\nsystemPrompt : \"You are a research assistant.\" ,\n} ) ;\nSee the JavaScript Deep Agents docs for full configuration options.\nLangGraph Native\ncreateDeepAgent returns a compiled LangGraph graph, so you can use streaming, Studio, checkpointers, and other LangGraph features.\nWhy Use It\n100% open source — MIT licensed and extensible\nProvider agnostic — works with tool-calling chat models\nBuilt on LangGraph — production runtime with streaming and persistence\nBatteries included — planning, file access, sub-agents, and defaults out of the box\nFast to start — install and run with sensible defaults\nEasy to customize — add tools/models/prompts when you need to\nDocumentation\ndocs.langchain.com - Concepts and guides\nExamples - Working agents and patterns\nLangChain Forum - Community discussion and support\nSecurity\nDeep Agents follows a \"trust the LLM\" model. The agent can do anything its tools allow. Enforce boundaries at the tool/sandbox level, not by expecting the model to self-police. See the security policy for more information.\nAbout\nThe batteries included agent harness.\ndocs.langchain.com/oss/javascript/deepagents/overview\nTopics\nai\nlangchain\nlanggraph\ndeepagents\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n1.3k\nstars\nWatchers\nwatching\nForks\n200\nforks\nReport repository\nReleases\n89\ndeepagents@1.10.2\nLatest\nMay 13, 2026\n+ 88 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n100.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-24/r-018-langchain-ai-deepagentsjs.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-24/r-018-langchain-ai-deepagentsjs.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 4078,
+    "paragraph_count": 45,
+    "sentence_count": 25,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0059,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 4078,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "bc15f4ca9ac7970b",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "fba27af3ca1e8600",
+  "content_hash": "bc15f4ca9ac7970b",
+  "full_text_hash": "bc15f4ca9ac7970b",
+  "semantic_hash": "8881b350d8f7640a",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-24T04:09:10.637Z",
+  "last_seen_at": "2026-05-24T04:09:10.637Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Repository: langchain-ai/deepagentsjs Agent harness built with LangChain and LangGraph. Equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - well-equipped to handle complex agentic tasks. - Stars: 1142 - Forks: 181 - Watchers: 7 - Open issues: 50 - Primary language: TypeScript - Languages: TypeScript - License: MIT License (MIT) - Topics: ai, deepagents, langchain, langgraph - Default branch: main - Homepage: https://docs.langchain.com/oss/javascript/deepagents/overview - Create",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "langchain-ai deepagentsjs Public Notifications You must be signed in to change notification settings Fork 200 Star 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 490 Commits 490 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vscode evals evals examples examples internal/ eval-harness internal/ eval-harness libs libs .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "jsonc LICENSE LICENSE README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "yaml pnpm-workspace.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "GitHub"
+    ],
+    "products": [
+      "Agent",
+      "agents",
+      "agent",
+      "Agents",
+      "gpt-5"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1142",
+      "181",
+      "7",
+      "50",
+      "2025",
+      "08",
+      "04",
+      "15"
+    ],
+    "quotes": [
+      "deepagents",
+      " ,\ncontent : ",
+      "@langchain/openai",
+      "deepagents",
+      " , temperature : 0 } ) ,\ntools : [ myCustomTool ] ,\nsystemPrompt : "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Repository: langchain-ai/deepagentsjs Agent harness built with LangChain and LangGraph. Equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - well-equipped to handle complex agentic tasks. - Stars: 1142 - Forks: 181 - Watchers: 7 - Open issues: 50 - Primary language: TypeScript - Languages: TypeScript - License: MIT License (MIT) - Topics: ai, deepagents, langchain, langgraph - Default branch: main - Homepage: https://docs.langchain.com/oss/javascript/deepagents/overview - Create",
+      "langchain-ai deepagentsjs Public Notifications You must be signed in to change notification settings Fork 200 Star 1.",
+      "3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 490 Commits 490 Commits ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# langchain-ai/deepagentsjs\n\n- raw_id: R-018\n- original_url: https://github.com/langchain-ai/deepagentsjs/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-05-24T04:09:10.637Z\n\n## clean_text\n\nlangchain-ai\ndeepagentsjs\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n200\nStar\n1.3k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n490 Commits\n490 Commits\n.agents/ skills\n.agents/ skills\n.changeset\n.changeset\n.github\n.github\n.vscode\n.vscode\nevals\nevals\nexamples\nexamples\ninternal/ eval-harness\ninternal/ eval-harness\nlibs\nlibs\n.codespellignore\n.codespellignore\n.env.example\n.env.example\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.nvmrc\n.nvmrc\n.oxfmtrc.jsonc\n.oxfmtrc.jsonc\n.oxlintrc.jsonc\n.oxlintrc.jsonc\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nThe batteries-included agent harness.\nDeep Agents is an agent harness. An opinionated, ready-to-run agent out of the box. Instead of wiring prompts, tools, and context management yourself, you get a working agent immediately and customize what you need.\nWhat's included:\nPlanning — write_todos for task breakdown and progress tracking\nFilesystem — read_file , write_file , edit_file , ls , glob , grep for working memory\nSub-agents — task for delegating work with isolated context windows\nSmart defaults — built-in prompt and middleware that make these tools useful out of the box\nContext management — file-based workflows to keep long tasks manageable\nNote\nLooking for the Python package? See langchain-ai/deepagents .\nQuickstart\nnpm install deepagents\n# or\npnpm add deepagents\n# or\nyarn add deepagents\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( ) ;\nconst result = await agent . invoke ( {\nmessages : [\nrole : \"user\" ,\ncontent : \"Research LangGraph and write a summary in summary.md\" ,\n} ,\n] ,\n} ) ;\nThe agent can plan, read/write files, and manage longer tasks with sub-agents and filesystem tools.\nTip\nFor developing, debugging, and deploying AI agents and LLM applications, see LangSmith .\nCustomization\nAdd tools, swap models, and customize prompts as needed:\nimport { ChatOpenAI } from \"@langchain/openai\" ;\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( {\nmodel : new ChatOpenAI ( { model : \"gpt-5\" , temperature : 0 } ) ,\ntools : [ myCustomTool ] ,\nsystemPrompt : \"You are a research assistant.\" ,\n} ) ;\nSee the JavaScript Deep Agents docs for full configuration options.\nLangGraph Native\ncreateDeepAgent returns a compiled LangGraph graph, so you can use streaming, Studio, checkpointers, and other LangGraph features.\nWhy Use It\n100% open source — MIT licensed and extensible\nProvider agnostic — works with tool-calling chat models\nBuilt on LangGraph — production runtime with streaming and persistence\nBatteries included — planning, file access, sub-agents, and defaults out of the box\nFast to start — install and run with sensible defaults\nEasy to customize — add tools/models/prompts when you need to\nDocumentation\ndocs.langchain.com - Concepts and guides\nExamples - Working agents and patterns\nLangChain Forum - Community discussion and support\nSecurity\nDeep Agents follows a \"trust the LLM\" model. The agent can do anything its tools allow. Enforce boundaries at the tool/sandbox level, not by expecting the model to self-police. See the security policy for more information.\nAbout\nThe batteries included agent harness.\ndocs.langchain.com/oss/javascript/deepagents/overview\nTopics\nai\nlangchain\nlanggraph\ndeepagents\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n1.3k\nstars\nWatchers\nwatching\nForks\n200\nforks\nReport repository\nReleases\n89\ndeepagents@1.10.2\nLatest\nMay 13, 2026\n+ 88 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n100.0%\n\n## full_text\n\nlangchain-ai\ndeepagentsjs\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n200\nStar\n1.3k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n490 Commits\n490 Commits\n.agents/ skills\n.agents/ skills\n.changeset\n.changeset\n.github\n.github\n.vscode\n.vscode\nevals\nevals\nexamples\nexamples\ninternal/ eval-harness\ninternal/ eval-harness\nlibs\nlibs\n.codespellignore\n.codespellignore\n.env.example\n.env.example\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.nvmrc\n.nvmrc\n.oxfmtrc.jsonc\n.oxfmtrc.jsonc\n.oxlintrc.jsonc\n.oxlintrc.jsonc\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nThe batteries-included agent harness.\nDeep Agents is an agent harness. An opinionated, ready-to-run agent out of the box. Instead of wiring prompts, tools, and context management yourself, you get a working agent immediately and customize what you need.\nWhat's included:\nPlanning — write_todos for task breakdown and progress tracking\nFilesystem — read_file , write_file , edit_file , ls , glob , grep for working memory\nSub-agents — task for delegating work with isolated context windows\nSmart defaults — built-in prompt and middleware that make these tools useful out of the box\nContext management — file-based workflows to keep long tasks manageable\nNote\nLooking for the Python package? See langchain-ai/deepagents .\nQuickstart\nnpm install deepagents\n# or\npnpm add deepagents\n# or\nyarn add deepagents\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( ) ;\nconst result = await agent . invoke ( {\nmessages : [\nrole : \"user\" ,\ncontent : \"Research LangGraph and write a summary in summary.md\" ,\n} ,\n] ,\n} ) ;\nThe agent can plan, read/write files, and manage longer tasks with sub-agents and filesystem tools.\nTip\nFor developing, debugging, and deploying AI agents and LLM applications, see LangSmith .\nCustomization\nAdd tools, swap models, and customize prompts as needed:\nimport { ChatOpenAI } from \"@langchain/openai\" ;\nimport { createDeepAgent } from \"deepagents\" ;\nconst agent = createDeepAgent ( {\nmodel : new ChatOpenAI ( { model : \"gpt-5\" , temperature : 0 } ) ,\ntools : [ myCustomTool ] ,\nsystemPrompt : \"You are a research assistant.\" ,\n} ) ;\nSee the JavaScript Deep Agents docs for full configuration options.\nLangGraph Native\ncreateDeepAgent returns a compiled LangGraph graph, so you can use streaming, Studio, checkpointers, and other LangGraph features.\nWhy Use It\n100% open source — MIT licensed and extensible\nProvider agnostic — works with tool-calling chat models\nBuilt on LangGraph — production runtime with streaming and persistence\nBatteries included — planning, file access, sub-agents, and defaults out of the box\nFast to start — install and run with sensible defaults\nEasy to customize — add tools/models/prompts when you need to\nDocumentation\ndocs.langchain.com - Concepts and guides\nExamples - Working agents and patterns\nLangChain Forum - Community discussion and support\nSecurity\nDeep Agents follows a \"trust the LLM\" model. The agent can do anything its tools allow. Enforce boundaries at the tool/sandbox level, not by expecting the model to self-police. See the security policy for more information.\nAbout\nThe batteries included agent harness.\ndocs.langchain.com/oss/javascript/deepagents/overview\nTopics\nai\nlangchain\nlanggraph\ndeepagents\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n1.3k\nstars\nWatchers\nwatching\nForks\n200\nforks\nReport repository\nReleases\n89\ndeepagents@1.10.2\nLatest\nMay 13, 2026\n+ 88 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n100.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / medium] Repository: langchain-ai/deepagentsjs Agent harness built with LangChain and LangGraph. Equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - well-equipped to handle complex agentic tasks. - Stars: 1142 - Forks: 181 - Watchers: 7 - Open issues: 50 - Primary language: TypeScript - Languages: TypeScript - License: MIT License (MIT) - Topics: ai, deepagents, langchain, langgraph - Default branch: main - Homepage: https://docs.langchain.com/oss/javascript/deepagents/overview - Create\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] langchain-ai deepagentsjs Public Notifications You must be signed in to change notification settings Fork 200 Star 1.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] 3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 490 Commits 490 Commits .\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] vscode evals evals examples examples internal/ eval-harness internal/ eval-harness libs libs .\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] jsonc LICENSE LICENSE README.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] yaml pnpm-workspace.\n"
+}

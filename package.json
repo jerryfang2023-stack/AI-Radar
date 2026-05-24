@@ -1,0 +1,29 @@
+{
+  "name": "01-wavesight",
+  "version": "2.2.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerryfang2023-stack/AI-Radar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jerryfang2023-stack/AI-Radar/issues"
+  },
+  "homepage": "https://github.com/jerryfang2023-stack/AI-Radar#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "playwright": "^1.60.0"
+  }
+}

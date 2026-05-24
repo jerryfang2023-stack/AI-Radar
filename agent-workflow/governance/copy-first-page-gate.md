@@ -2,7 +2,7 @@
 title: Copy First Page Gate
 date: 2026-05-11
 status: active
-owner: copy / qa / workflow
+owner: experience-editorial / build-release / product-commander
 encoding: UTF-8
 ---
 
@@ -10,9 +10,11 @@ encoding: UTF-8
 
 ## 1. 定位
 
-本闸门把 Copy Agent 从“后置润色”升级为“开发前置输入”。只要任务涉及公开可见文案，就必须先形成 Copy 表，再进入 Dev。
+本闸门把 Experience & Editorial 的文案判断放在开发前置。只要任务涉及公开可见文案，就必须先形成 Copy 表，再进入 Build & Release。
 
-过去页面任务经常先由 Dev 完成结构、卡片和字段，再临场补文案。结果是页面能跑，但外部表达像后台字段、AI 模板或拼凑说明。本闸门用于切断这种路径。
+过去页面任务经常先完成结构、卡片和字段，再临场补文案。结果是页面能跑，但外部表达像后台字段、AI 模板或拼凑说明。本闸门用于切断这种路径。
+
+页面任务还必须并行执行 `agent-workflow/governance/typography-first-page-gate.md`。Copy-first 解决“写什么”，Typography-first 解决“放在页面上以什么字号、行高、字重和位置呈现”。两张表都完成前，不得进入 Build & Release。
 
 ## 2. 适用范围
 
@@ -33,39 +35,41 @@ encoding: UTF-8
 
 页面 / 文案类任务派发单必须包含：
 
-1. Copy Agent 已读取 `agent-workflow/product/COPY.md`。
-2. Copy Agent 已输出 `Copy 文案规范表`。
+1. Experience & Editorial 已读取 `agent-workflow/product/COPY.md`。
+2. Experience & Editorial 已输出 `Copy 文案规范表`。
 3. 表中包含最终可落地文案，而不是“优化文案”“提升高级感”等方向词。
-4. 表中明确哪些文案允许 Dev 原样实现，哪些文案仍需用户确认。
+4. 表中明确哪些文案允许 Build & Release 原样实现，哪些文案仍需用户确认。
 5. 表中明确标题长度、卡片容器限制和按钮字数限制。
 
-没有 Copy 表，不得进入 Dev。
+没有 Copy 表，不得进入 Build & Release。
 
-## 4. Dev 权限边界
+如任务涉及页面生成、页面重构或样式实现，还必须同时具备 Typography 页面位置表；只有 Copy 表没有 Typography 表，也不得进入 Build & Release。
 
-Dev Agent 只能按 Copy 表实现。
+## 4. Build & Release 权限边界
 
-Dev 允许：
+Build & Release 只能按 Copy 表实现。
+
+Build & Release 允许：
 
 - 原样放入 Copy 表中的标题、正文、按钮和标签。
 - 为适配代码结构做不改变意思的标点或空格调整。
-- 在 closeout 中指出 Copy 表不适配布局，并回退给 Copy / UI。
+- 在 closeout 中指出 Copy 表不适配布局，并回退给 Experience & Editorial。
 
-Dev 不允许：
+Build & Release 不允许：
 
 - 临场新增首页首屏、栏目标题、详情页 H1、CTA、卡片标题、会员转化或关键说明。
 - 为了填空自行扩写“辅助性描述”。
 - 把内部字段名、模块说明、后台语、同步语、证据表演词写到前台。
 - 用 AI 模板句补齐页面。
 
-如果 Dev 必须新增未在 Copy 表中的可见文案，任务状态必须改为 `blocked / copy-required`，不得继续实现。
+如果 Build & Release 必须新增未在 Copy 表中的可见文案，任务状态必须改为 `blocked / copy-required`，不得继续实现。
 
 ## 5. Copy 表最小格式
 
 ```markdown
 ## Copy 文案规范表
 
-| 页面/模块 | 用户任务 | 最终文案 | 字数/行数约束 | 证据边界 | 禁用语检查 | Dev 实现说明 |
+| 页面/模块 | 用户任务 | 最终文案 | 字数/行数约束 | 证据边界 | 禁用语检查 | Build & Release 实现说明 |
 |---|---|---|---|---|---|---|
 |  |  |  |  |  |  |  |
 ```
@@ -86,7 +90,7 @@ Dev 不允许：
 
 - 缺 Copy 表。
 - Copy 表只有原则，没有最终文案。
-- Dev 自行新增或改写关键文案。
+- Build & Release 自行新增或改写关键文案。
 - 页面出现明显 AI 味、模板句、内部流程语、过度说明或空泛营销。
 - 页面文案没有商业判断，只是功能说明或新闻摘要。
 
@@ -95,7 +99,7 @@ Dev 不允许：
 页面 / 文案类 closeout 必须说明：
 
 - Copy 表路径或 Copy 表正文。
-- Dev 是否 100% 按表实现。
+- Build & Release 是否 100% 按表实现。
 - 是否新增 Copy 表外可见文案。
 - 若新增，新增内容是什么、为什么新增、是否经过 Copy 复核。
 - 禁用语扫描结果。
@@ -107,4 +111,4 @@ Dev 不允许：
 
 2026-05-12 起，通用页面与文案独立质检 Skill 和强制七维评分流程已停用并移除。
 
-Copy-first 仍是开发前闸门。开发完成后，由调度窗口按用户反馈、VI / DESIGN / COPY 规范、桌面截图、核心交互和必要专项 QA 复核；如用户明确要求，可临时做专项审查，但不得引用已删除的 page-copy-quality-review 流程。
+Copy-first 仍是开发前闸门。开发完成后，由调度窗口按用户反馈、VI / DESIGN / COPY 规范、桌面截图、核心交互和必要专项复核；如用户明确要求，可临时做专项审查，但不得引用已删除的 page-copy-quality-review 流程。

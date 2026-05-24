@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>生产漏斗 Dashboard｜观澜AI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page-pipeline-dashboard">
+  <main class="pipeline-dashboard">
+    <section class="pipeline-hero" aria-labelledby="pipeline-title">
+      <div>
+        <span class="pipeline-kicker">PIPELINE CONTROL BOARD</span>
+        <h1 id="pipeline-title">信号工程图</h1>
+        <p>记录 Raw 广泛监测、Pool 候选筛选、资产卡沉淀和前台关系索引之间的数量变化与连接状态。</p>
+      </div>
+    </section>
+
+    <section class="pipeline-section" aria-labelledby="funnel-title">
+      <div class="pipeline-section-head">
+        <div>
+          <span class="pipeline-kicker">DAILY FUNNEL</span>
+          <h2 id="funnel-title">每日数量概览</h2>
+        </div>
+        <p>从发现入口到候选池，再到变化、案例、观点和趋势资产。</p>
+      </div>
+      <div class="pipeline-day-grid">
+        <article class="pipeline-day-card is-featured">
+          <div class="pipeline-day-head">
+            <span>2026.05.19</span>
+            <strong>最新生产日</strong>
+          </div>
+          <div class="pipeline-metric-row">
+            <div><span>RAW</span><strong>100</strong></div>
+            <div><span>POOL</span><strong>23</strong></div>
+            <div><span>CARDS</span><strong>38</strong></div>
+          </div>
+          <div class="pipeline-funnel-bars" aria-label="2026.05.19 漏斗">
+            <span style="--bar:100"><i>Raw 100</i></span>
+            <span style="--bar:23"><i>Pool 23</i></span>
+            <span style="--bar:8"><i>Change 8</i></span>
+            <span style="--bar:6"><i>Case 6</i></span>
+            <span style="--bar:22"><i>Opinion 22</i></span>
+            <span style="--bar:2"><i>Trend 2</i></span>
+          </div>
+        </article>
+        <article class="pipeline-day-card">
+          <div class="pipeline-day-head">
+            <span>2026.05.18</span>
+            <strong>资产链运行</strong>
+          </div>
+          <div class="pipeline-metric-row">
+            <div><span>RAW</span><strong>100</strong></div>
+            <div><span>POOL</span><strong>18</strong></div>
+            <div><span>CARDS</span><strong>10</strong></div>
+          </div>
+          <div class="pipeline-funnel-bars" aria-label="2026.05.18 漏斗">
+            <span style="--bar:100"><i>Raw 100</i></span>
+            <span style="--bar:18"><i>Pool 18</i></span>
+            <span style="--bar:5"><i>Change 5</i></span>
+            <span style="--bar:4"><i>Case 4</i></span>
+            <span style="--bar:1"><i>Opinion 1</i></span>
+          </div>
+        </article>
+        <article class="pipeline-day-card">
+          <div class="pipeline-day-head">
+            <span>2026.05.17</span>
+            <strong>低样本日</strong>
+          </div>
+          <div class="pipeline-metric-row">
+            <div><span>RAW</span><strong>20</strong></div>
+            <div><span>POOL</span><strong>1</strong></div>
+            <div><span>CARDS</span><strong>8</strong></div>
+          </div>
+          <div class="pipeline-funnel-bars" aria-label="2026.05.17 漏斗">
+            <span style="--bar:20"><i>Raw 20</i></span>
+            <span style="--bar:1"><i>Pool 1</i></span>
+            <span style="--bar:1"><i>Change 1</i></span>
+            <span style="--bar:1"><i>Case 1</i></span>
+            <span style="--bar:5"><i>Opinion 5</i></span>
+            <span style="--bar:1"><i>Trend 1</i></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pipeline-section pipeline-two-column" aria-label="来源与 Pool 分类">
+      <div class="pipeline-panel">
+        <div class="pipeline-section-head compact">
+          <div>
+            <span class="pipeline-kicker">RAW SOURCE</span>
+            <h2>Raw 来源分类</h2>
+          </div>
+        </div>
+        <div class="pipeline-source-board">
+          <div class="pipeline-source-day">
+            <span>05.19</span>
+            <div><strong>55</strong><em>AI HOT</em></div>
+            <div><strong>9</strong><em>关键词搜索</em></div>
+            <div><strong>9</strong><em>Builder 观点</em></div>
+          </div>
+          <div class="pipeline-source-day">
+            <span>05.18</span>
+            <div><strong>21</strong><em>AI HOT</em></div>
+            <div><strong>21</strong><em>关键词搜索</em></div>
+            <div><strong>19</strong><em>Builder 观点</em></div>
+          </div>
+          <div class="pipeline-source-day">
+            <span>05.17</span>
+            <div><strong>26</strong><em>AI HOT</em></div>
+            <div><strong>8</strong><em>关键词搜索</em></div>
+            <div><strong>15</strong><em>Builder 观点</em></div>
+          </div>
+        </div>
+      </div>
+      <div class="pipeline-panel">
+        <div class="pipeline-section-head compact">
+          <div>
+            <span class="pipeline-kicker">POOL ROUTING</span>
+            <h2>Pool 分流分类</h2>
+          </div>
+        </div>
+        <div class="pipeline-route-list">
+          <div><span>core_pool</span><strong>23</strong><i style="--route:100"></i><em>05.19 核心候选</em></div>
+          <div><span>user_feedback_pool</span><strong>11</strong><i style="--route:48"></i><em>05.19 用户反馈 / 市场线索</em></div>
+          <div><span>emerging_pool</span><strong>7</strong><i style="--route:30"></i><em>05.19 早期方向</em></div>
+          <div><span>core_evidence_candidate</span><strong>12</strong><i style="--route:52"></i><em>05.19 证据候选</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pipeline-section" aria-labelledby="engine-title">
+      <div class="pipeline-section-head">
+        <div>
+          <span class="pipeline-kicker">SEARCH QUALITY</span>
+          <h2 id="engine-title">搜索入口质量对比</h2>
+        </div>
+        <p>对 Tavily、Exa、NewsAPI、GDELT、AnySearch、Firecrawl、AI HOT 和 Follow Builders 的 Raw 命中做同口径比较。</p>
+      </div>
+      <div class="pipeline-engine-board">
+        <div class="pipeline-engine-note">等待自动数据写入后显示入口样本、48 小时新鲜度、跨入口重复率、官方源命中率和 Raw Card 候选率。</div>
+      </div>
+    </section>
+
+    <section class="pipeline-section" aria-labelledby="asset-title">
+      <div class="pipeline-section-head">
+        <div>
+          <span class="pipeline-kicker">ASSET LEDGER</span>
+          <h2 id="asset-title">卡片资产数量与分类</h2>
+        </div>
+        <p>卡片本体沉淀在 knowledge 库，商业信号目录只保存发布索引与组织材料。</p>
+      </div>
+      <div class="pipeline-asset-grid">
+        <article>
+          <span>CASE</span>
+          <strong>4</strong>
+          <p>案例信号卡：按最新生产日自动读取 signal_type、status、asset_level 与 evidence_gate。</p>
+        </article>
+        <article>
+          <span>FUNDING</span>
+          <strong>10</strong>
+          <p>融资信号卡：按 01-Signal-Cards/funding 最新文件统计。</p>
+        </article>
+        <article>
+          <span>PRODUCT / SERVICE</span>
+          <strong>8</strong>
+          <p>产品服务信号卡：按 01-Signal-Cards/product-service 最新文件统计。</p>
+        </article>
+        <article>
+          <span>OPINION</span>
+          <strong>26</strong>
+          <p>观点卡：按 02-Opinion-Cards 最新文件统计，保留 status 与 asset_level。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pipeline-section" aria-labelledby="relation-title">
+      <div class="pipeline-section-head">
+        <div>
+          <span class="pipeline-kicker">RELATION MAP</span>
+          <h2 id="relation-title">生产链路与关系关联</h2>
+        </div>
+        <p>Raw 是证据底座，Pool 是筛选入口，资产卡负责沉淀判断，发布索引负责前台表达。</p>
+      </div>
+      <div class="pipeline-relation-map" aria-label="Raw 到发布索引关系图">
+        <div class="pipeline-node source">
+          <span>01</span>
+          <strong>Raw</strong>
+          <p>100 条广泛监测候选，保留来源、快照、摘录和可用方向。</p>
+        </div>
+        <div class="pipeline-link"><span>筛选</span></div>
+        <div class="pipeline-node pool">
+          <span>02</span>
+          <strong>Pool</strong>
+          <p>23 条候选池，按 core、emerging、user_feedback 等路径分流。</p>
+        </div>
+        <div class="pipeline-link"><span>生成</span></div>
+        <div class="pipeline-node asset">
+          <span>03</span>
+          <strong>Asset Cards</strong>
+          <p>变化卡、案例卡、观点卡、趋势卡建立 raw_refs / pool_refs / related_*。</p>
+        </div>
+        <div class="pipeline-link"><span>索引</span></div>
+        <div class="pipeline-node publish">
+          <span>04</span>
+          <strong>Publication</strong>
+          <p>今日观察、商业信号、趋势追踪、商业内参读取已过门禁资产。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="data/pipeline-dashboard.js"></script>
+  <script src="assets/pipeline-dashboard.js"></script>
+</body>
+</html>

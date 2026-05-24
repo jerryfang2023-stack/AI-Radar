@@ -1,0 +1,81 @@
+---
+schema_version: "raw-evidence-v2"
+raw_id: "R-081"
+title: "Veltris Launches VeltrisOne -- A Vertical AI Orchestration Platform Purpose-Built to Power Micro-Industries"
+original_url: "https://www.prnewswire.com/news-releases/veltris-launches-veltrisone--a-vertical-ai-orchestration-platform-purpose-built-to-power-micro-industries-302777915.html"
+canonical_url: "https://www.prnewswire.com/news-releases/veltris-launches-veltrisone--a-vertical-ai-orchestration-platform-purpose-built-to-power-micro-industries-302777915.html"
+source_name: "PRNewswire / Veltris"
+source_type: "media"
+source_level: "B"
+source_level_role: "traceability_only_not_value_score_or_core_gate"
+evidence_object_type: "event"
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: "keyword-search"
+research_status: "not_research"
+search_intent: "find_vertical_solution"
+search_path: "industry_landing"
+search_path_label: "industry landing path"
+author: ""
+published_at: "2026-05-20T11:33:00-04:00"
+collected_at: "2026-05-20T18:10:00.000Z"
+language: "en"
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-20/r-081-veltris-launches-veltrisone-vertical-ai-orchestration-platform.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-20/r-081-veltris-launches-veltrisone-vertical-ai-orchestration-platform.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: "fetched-clean-text"
+extraction_method: "plain-text"
+extraction_quality: "high"
+readability_score: 84
+extractor_diagnostics: {"paragraph_count":18,"sentence_count":34,"boilerplate_ratio":0.16,"symbol_ratio":0.03}
+has_full_text: true
+content_length: 6207
+fetch_error: ""
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"783dffa55d9ae219","missing":[]}
+raw_qc_decision: "allow"
+raw_qc_downstream_use: "eligible_after_qc"
+degradation_reasons: []
+source_volatility: "low"
+community_name: ""
+capture_scope: "article_text"
+visible_range: "captured readable article text"
+evidence_level: "core_evidence_candidate"
+discovery_source: "keyword-search vertical solution lane backfill"
+discovery_record: "null"
+source_role: "resolved_original_source"
+origin_fetch_status: "success"
+paywall_status: "none"
+block_status: "none"
+duplicate_status: "unique"
+url_hash: "c056335e73a87ff7"
+content_hash: "783dffa55d9ae219"
+full_text_hash: "783dffa55d9ae219"
+semantic_hash: "3a61f2d9b22d4345"
+duplicate_of: ""
+first_seen_at: "2026-05-20T18:10:00.000Z"
+last_seen_at: "2026-05-20T18:10:00.000Z"
+update_detected: false
+key_excerpts: [{"type":"workflow_change","text":"Veltris announced VeltrisOne, a live Vertical AI Orchestration Platform to AI-enable micro-industry workflows in healthcare, industrials and technology sectors.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"VeltrisOne applications include HelixFlow for healthcare administration, EngageCare AI for patient and front-office operations, FaultAnalyze AI for secure networking and DefectQC AI for smart manufacturing.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Across live deployments, Veltris reports a 32% average reduction in healthcare claim denials and a 68% improvement in telecom MTTR.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The release describes a smart manufacturing deployment with 99.7% defect detection accuracy, 92% fewer false rejects and triple inspection speed.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The platform is built on Microsoft Azure AI and Databricks, connects to existing enterprise systems and supports on-premises deployment.","supports":["daily_observation","heatmap","change","trend"],"importance":"high","confidence":"high"}]
+business_elements: {"companies":["Veltris","Microsoft","Databricks","HFS Research","Constellation Research"],"products":["VeltrisOne","HelixFlow","EngageCare AI","FaultAnalyze AI","DefectQC AI"],"people":["Hiral Chandrana","Dr. Vishwakarma J S","Saurabh Gupta"],"industries":["healthcare","industrial / manufacturing","telecom / networking","enterprise services"],"roles":["healthcare operations lead","revenue cycle management team","network operations team","manufacturing quality team","CIO / IT lead"],"workflows":["revenue cycle management","claims denial management","patient scheduling","network fault analysis","manufacturing quality inspection"],"business_actions":["launch","deployment","vertical solution rollout"],"affected_departments":["operations","IT / security","front office","manufacturing / quality"],"numbers":["2026","32%","68%","99.7%","92%","50%","5-7%"],"quotes":["Embedding AI into micro-industry workflows makes Vertical AI real by bridging the gap from hype to reality."]}
+evidence_seed: {"company_actions":["Veltris announced VeltrisOne, a live Vertical AI Orchestration Platform to AI-enable micro-industry workflows in healthcare, industrials and technology sectors.","The platform is built on Microsoft Azure AI and Databricks, connects to existing enterprise systems and supports on-premises deployment."],"case_details":["VeltrisOne applications include HelixFlow for healthcare administration, EngageCare AI for patient and front-office operations, FaultAnalyze AI for secure networking and DefectQC AI for smart manufacturing.","Across live deployments, Veltris reports a 32% average reduction in healthcare claim denials and a 68% improvement in telecom MTTR.","The release describes a smart manufacturing deployment with 99.7% defect detection accuracy, 92% fewer false rejects and triple inspection speed."],"workflow_changes":["Healthcare administration workflows: RCM, prior authorization, claims intelligence and denial management.","Telecom secure networking workflow: outage analysis and MTTR reduction.","Smart manufacturing workflow: visual defect detection and inspection acceleration."],"before_after_clues":["Healthcare claims and revenue-cycle teams move from fragmented manual workflows to AI-assisted denial management and claim intelligence.","Telecom network operations move from slower outage diagnosis to AI-assisted fault analysis.","Manufacturing inspection moves from manual or slower visual QC to AI-assisted defect detection."],"affected_roles":["healthcare operations lead","revenue cycle management team","network operations team","manufacturing quality team","CIO / IT lead"],"risks_or_constraints":["Requires industry data readiness, compliance alignment and integration with existing enterprise systems."]}
+missing_information: []
+raw_status: "pooled"
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: "eligible"
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"named vertical AI solution with healthcare, telecom and manufacturing workflows; rubric=5 multi-industry deployment evidence with business outcome metrics","supporting_signals":["adoption_context","commercial_or_risk_context"],"novelty":4,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":5,"emerging_signal_score":4}
+theme: "mature-commercial-signal"
+keyword_group: "mature-commercial-signal"
+copyright_note: "local research archive only"
+---
+
+# Veltris Launches VeltrisOne -- A Vertical AI Orchestration Platform Purpose-Built to Power Micro-Industries
+
+## clean_text
+
+Veltris Launches VeltrisOne™ -- A Vertical AI Orchestration Platform Purpose-Built to Power Micro-Industries News provided by Veltris May 20, 2026, 11:33 ET Share this article Share to X Share this article Share to X SAN FRANCISCO , May 20, 2026 /PRNewswire/ -- Veltris , an AI-first digital product engineering services firm recognized by both Constellation Research and HFS Research for its Vertical AI leadership, today announced the launch of VeltrisOne™ — a live Vertical AI Orchestration Platform to AI-enable micro-industry workflows in highly specialized sectors within Healthcare (HealthTech, PBM, Dental, Retail Health, RCM), Industrials (Smart Manufacturing, Mobility Tech & Logistics, Construction, Industry X.0), and Technology (Secure Networking & Connectivity, XTech Platforms). The name VeltrisOne reflects the platform's core promise: the VEL ocity to activate in days, the TR ust of enterprise-grade security and compliance, the I nnovation of Vertical AI orchestration, and S ustainability of outcomes that grow over time, all in one unified platform. Now live at veltris.ai, VeltrisOne enables mid-market companies, enterprises and PE portfolios to discover, deploy, and scale Vertical AI solutions tailored to their industry workflows and business processes with an infrastructure for rapid integration. According to HFS Research, only 5–7% of enterprises are fully scaling AI solutions today, held back by data readiness gaps, process complexity, and the high cost of technology debt. Generic tools don't understand their industry. Custom development takes too long and costs too much. VeltrisOne changes that. "Embedding AI into micro-industry workflows makes Vertical AI real by bridging the gap from hype to reality and accelerating monetization of platform and product investments." — Hiral Chandrana, CEO and Board Member, Veltris Vertical AI Applications Delivering Business Outcomes Each AI solution on VeltrisOne is purpose-built for the workflows, data models, and compliance requirements of a specific micro-industry. Across live deployments, the platform has delivered a 32% average reduction in healthcare claim denials and 68% improvement in telecom MTTR. HelixFlow — RCM & Healthcare Administratio n HelixFlow is the operating system for healthcare administration from care to claims, unifying RCM, prior authorization, claims intelligence, and denial management applicable to HealthTech, PBM and Dental platforms, HelixFlow targets a 30–35% reduction in claim denials and 25–30% improvement in revenue cycle efficiency. EngageCare AI — Multi-Unit Health & PBM EngageCare AI unifies patient experience and front office operations across dental and multi-unit retail health, PBM, delivering real-time member guidance, patient scheduling, and intelligent front office assistance. EngageCare AI targets a 40–50% reduction in staff onboarding and ~35% improvement in member engagement. FaultAnalyze AI — Secure Networking A major telecom operator reduced MTTR for network outages by 68%, cut false positives by 85%, and achieved 99.97% platform uptime. FaultAnalyze AI fast tracks Autonomous network operations where secure digital connectivity is critical. DefectQC AI — Smart Manufacturing/Industry X.0 A leading parts manufacturer achieved 99.7% defect detection accuracy, reduced false rejects by 92%, and tripled inspection speed. Similar vision and twin models can be applied for preventive maintenance, supply chain operations with Edge AI. "The gap between AI interest and AI impact has never been about technology — it has been about industry fit. VeltrisOne closes that gap by giving organizations Vertical AI that already understands their workflows, their data, and their compliance requirements." — Dr. Vishwakarma J S, Chief AI Evangelist, Veltris An Orchestration Platform Purpose-Built for Micro-Industries VeltrisOne brings together Vertical AI applications, autonomous agents, and pre-built workflows in one unified orchestration platform — giving organizations a direct path from their most pressing operational problem to a working business solution enabled with AI, without lengthy implementation cycles or starting from scratch. Built on Microsoft Azure AI and Databricks — reduces deployment time by over 50% Connects natively to existing platforms & enterprise systems — no rip-and-replace Fully on-premises deployment available — data never leaves your environment As services continue to evolve into software and digital labor reshapes how industries operate, organizations need an orchestration engine — one that connects their existing systems, curated industry data, and proven Vertical AI solutions. VeltrisOne is available in "As-a-Service", "Managed AI Platform", and "Enterprise AI Transformation" pricing models with a focus on business outcomes for our clients. "Unlocking the full ROI from AI demands fundamental reinvention, not just of the tech stack, but of how organizations are structured, how talent is deployed, how processes are sequenced, how data is governed, and how outcome-driven partnerships are built." — Saurabh Gupta, President, Research and Advisory Services, HFS Research Learn more and request a demo at www.veltris.ai . About Veltris Veltris is an AI-first Digital Product Engineering Services partner delivering Vertical AI solutions across micro industries in healthcare (HealthTech, PBM, Dental & Retail Health, RCM), technology (Secure Networking & Connectivity, Xtech platforms), and industrials (Smart Manufacturing, Mobility Tech & Logistics, Engineering & Construction, Industry X.0). Veltris provides AI Augmented Engineering, AI Readiness and Data Modernization, and AI Monetization services through its Build–Modernize–Monetize framework — helping clients scale modern AI-native platforms and products and unlock new revenue streams. VeltrisOne™ is Veltris's Vertical AI Orchestration platform that securely AI enables micro-industry workflows delivering business outcomes. Veltris has been recognized by HFS Research in its Challengers' Code report and named to Constellation Research's Top 30 AI-First Consulting Firms for its Vertical AI leadership. Media Inquiries: [email&#160;protected] SOURCE Veltris

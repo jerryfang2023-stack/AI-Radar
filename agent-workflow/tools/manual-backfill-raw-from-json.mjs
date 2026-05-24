@@ -56,14 +56,14 @@ const header = [
   "aihot_count: 0",
   `keyword_search_count: ${items.length}`,
   "follow_builders_count: 0",
-  "keyword_monitoring_config: 01-SiteV2/content/09-databases/keyword-monitoring-v2.json",
+  "keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json",
   `generated_at: ${generatedAt}`,
   "---",
   "",
   `# ${date} Raw Candidates`,
   "",
   "说明：本文件由 `agent-workflow/tools/manual-backfill-raw-from-json.mjs` 生成，用于在 source-router fetch 失败时手工回填候选清单。",
-  "注意：本清单的每条仅作为线索；进入 Pool、变化卡、案例卡、趋势报告或今日观察前必须回看原始 URL 并重新判定 S/A/B/C/D。",
+  "注意：本清单的每条仅作为线索；进入 Pool、商业信号、变化短专题、趋势报告或今日观察前必须回看原始 URL 并重新判定 S/A/B/C/D。",
   "",
 ].join("\n");
 

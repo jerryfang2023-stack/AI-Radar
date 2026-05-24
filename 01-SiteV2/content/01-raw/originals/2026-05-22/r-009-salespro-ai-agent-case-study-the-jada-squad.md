@@ -1,0 +1,193 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-009
+title: "SalesPro AI Agent Case Study | The JADA Squad"
+original_url: "https://www.jadasquad.com/case-study/salespro-ai-agent"
+canonical_url: "https://www.jadasquad.com/case-study/salespro-ai-agent"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-05-22T05:10:29.203Z
+language: mixed
+full_text_hash: d983333057152f24
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-22/r-009-salespro-ai-agent-case-study-the-jada-squad.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-22/r-009-salespro-ai-agent-case-study-the-jada-squad.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: high
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: true
+content_length: 2863
+fetch_error: "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)"
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_snapshot","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d983333057152f24","missing":["missing_snapshot"]}
+source_volatility: low
+community_name: ""
+capture_scope: summary_only
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: discovery_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2ffd3cab145509d5
+content_hash: d983333057152f24
+semantic_hash: 0d5f5a89568fe180
+duplicate_of: ""
+first_seen_at: "2026-05-22T05:10:29.203Z"
+last_seen_at: 2026-05-22T05:10:29.203Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["Agent","agent","Agents"],"people":[],"industries":[],"roles":["销售 / 客服"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["2B","75%","5","000","8","10","3x","10x"],"quotes":["raw lead","meeting-ready","raw lead","meeting-ready"]}
+evidence_seed: {"company_actions":["Every recommendation comes with the data and logic trail our auditors need.","Inefficient Client Research Reps spend hours manually digging for prospect data instead of focused selling."],"case_details":[],"workflow_changes":["## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client profiling Zero missed leads Shorter sales cycle ## What was breaking in the workflow?","Generic Sales Messaging Without tailored guidance, pitches fail to resonate with specific client personas or needs."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"SalesPro AI Agent Case Study | The JADA Squad # How JADA’s SalesPro AI Agent scaled lead conversion for high-growth B2B firms 75% Higher lead to conversion ratio More cross-s The agent doesn't just speed things up, it makes our decisions more consistent and defensible. Every recommendation comes with the data and logic trail our auditors need. ## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client pr","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"SalesPro AI Agent Case Study | The JADA Squad # How JADA’s SalesPro AI Agent scaled lead conversion for high-growth B2B firms 75% Higher lead to conversion ratio More cross-s The agent doesn't just speed things up, it makes our decisions more consistent and defensible.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Every recommendation comes with the data and logic trail our auditors need.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client profiling Zero missed leads Shorter sales cycle ## What was breaking in the workflow?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Inefficient Client Research Reps spend hours manually digging for prospect data instead of focused selling.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Generic Sales Messaging Without tailored guidance, pitches fail to resonate with specific client personas or needs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# SalesPro AI Agent Case Study | The JADA Squad
+
+## clean_text
+
+SalesPro AI Agent Case Study | The JADA Squad # How JADA’s SalesPro AI Agent scaled lead conversion for high-growth B2B firms 75% Higher lead to conversion ratio More cross-s The agent doesn't just speed things up, it makes our decisions more consistent and defensible. Every recommendation comes with the data and logic trail our auditors need. ## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client profiling Zero missed leads Shorter sales cycle ## What was breaking in the workflow? Inefficient Client Research Reps spend hours manually digging for prospect data instead of focused selling. Generic Sales Messaging Without tailored guidance, pitches fail to resonate with specific client personas or needs. Buried Insights Key client details stay buried in the CRM, making reps miss insights needed to close deals. Generic AI was not enough Gives surface-level client information and advice that lacks the depth for sales conversations. ## How we built a Custom SalesPro AI Agentin just 10 days! ### Workflow mapping Architected the transition from "raw lead" to "meeting-ready" by identifying exactly where reps lose momentum. ### Data connections and normalization Connected the agent to internal CRMs and the open web to pull real-time client intelligence. ### Rule-driven decision logic Configured logic to build clear client profiles and identify high-value decision signals automatically. ### Governance and human-in-the-loop Integrated a Human AI Desk to ensure role-play simulations and pitch suggestions remain brand-accurate and effective. ## We build your bespoke AI Assistant using off-the-shelf technologies ## Day-to-day impact of the AI Agent for our client Pulls CRM and open-web data to generate detailed Client Profiles instantly. Identifies core needs, decision signals, and tailored hooks for every lead. Recommends the optimal sales approach and identifies cross-sell opportunities. Delivers real-time performance reviews to refine messaging before every meeting. ## The JADA Difference We build, deploy and manage AI Agents that integrate with your systems, follow business policy and deliver measurable outcomes. Missed cross-sells 3x cross-sell growth | Metric | Before | After | | --- | --- | --- | | Client Research | | Pitch Quality | | Rep Readiness | | Success Rate | ## Ready to 10x your Sales Efficiency? We'll map your workflows, define success metrics, and ship a pilot in just 3 days! Join leading organizations who've accelerated their Data and AI initiatives with The JADA Squad. Supercharge your business operations with JADA’s human-in-the-loop AI Agents. We deploy your custom agent in just 10 days! / score=79.000 / query=AI sales agent ARR customers / intent=find_customer_case / path=industry_landing
+
+## full_text
+
+SalesPro AI Agent Case Study | The JADA Squad # How JADA’s SalesPro AI Agent scaled lead conversion for high-growth B2B firms 75% Higher lead to conversion ratio More cross-s The agent doesn't just speed things up, it makes our decisions more consistent and defensible. Every recommendation comes with the data and logic trail our auditors need. ## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client profiling Zero missed leads Shorter sales cycle ## What was breaking in the workflow? Inefficient Client Research Reps spend hours manually digging for prospect data instead of focused selling. Generic Sales Messaging Without tailored guidance, pitches fail to resonate with specific client personas or needs. Buried Insights Key client details stay buried in the CRM, making reps miss insights needed to close deals. Generic AI was not enough Gives surface-level client information and advice that lacks the depth for sales conversations. ## How we built a Custom SalesPro AI Agentin just 10 days! ### Workflow mapping Architected the transition from "raw lead" to "meeting-ready" by identifying exactly where reps lose momentum. ### Data connections and normalization Connected the agent to internal CRMs and the open web to pull real-time client intelligence. ### Rule-driven decision logic Configured logic to build clear client profiles and identify high-value decision signals automatically. ### Governance and human-in-the-loop Integrated a Human AI Desk to ensure role-play simulations and pitch suggestions remain brand-accurate and effective. ## We build your bespoke AI Assistant using off-the-shelf technologies ## Day-to-day impact of the AI Agent for our client Pulls CRM and open-web data to generate detailed Client Profiles instantly. Identifies core needs, decision signals, and tailored hooks for every lead. Recommends the optimal sales approach and identifies cross-sell opportunities. Delivers real-time performance reviews to refine messaging before every meeting. ## The JADA Difference We build, deploy and manage AI Agents that integrate with your systems, follow business policy and deliver measurable outcomes. Missed cross-sells 3x cross-sell growth | Metric | Before | After | | --- | --- | --- | | Client Research | | Pitch Quality | | Rep Readiness | | Success Rate | ## Ready to 10x your Sales Efficiency? We'll map your workflows, define success metrics, and ship a pilot in just 3 days! Join leading organizations who've accelerated their Data and AI initiatives with The JADA Squad. Supercharge your business operations with JADA’s human-in-the-loop AI Agents. We deploy your custom agent in just 10 days! / score=79.000 / query=AI sales agent ARR customers / intent=find_customer_case / path=industry_landing
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: high
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   SalesPro AI Agent Case Study | The JADA Squad # How JADA’s SalesPro AI Agent scaled lead conversion for high-growth B2B firms 75% Higher lead to conversion ratio More cross-s The agent doesn't just speed things up, it makes our decisions more consistent and defensible. Every recommendation comes with the data and logic trail our auditors need. ## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client pr
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   SalesPro AI Agent Case Study | The JADA Squad # How JADA’s SalesPro AI Agent scaled lead conversion for high-growth B2B firms 75% Higher lead to conversion ratio More cross-s The agent doesn't just speed things up, it makes our decisions more consistent and defensible.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Every recommendation comes with the data and logic trail our auditors need.
+
+4. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client profiling Zero missed leads Shorter sales cycle ## What was breaking in the workflow?
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Inefficient Client Research Reps spend hours manually digging for prospect data instead of focused selling.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Generic Sales Messaging Without tailored guidance, pitches fail to resonate with specific client personas or needs.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: Agent, agent, Agents
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 2B, 75%, 5, 000, 8, 10, 3x, 10x
+- quotes: raw lead / meeting-ready / raw lead / meeting-ready
+
+## evidence_seed
+
+- company_actions: Every recommendation comes with the data and logic trail our auditors need. / Inefficient Client Research Reps spend hours manually digging for prospect data instead of focused selling.
+- case_details: 暂无公开信息
+- workflow_changes: ## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client profiling Zero missed leads Shorter sales cycle ## What was breaking in the workflow? / Generic Sales Messaging Without tailored guidance, pitches fail to resonate with specific client personas or needs.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+SalesPro AI Agent Case Study | The JADA Squad # How JADA’s SalesPro AI Agent scaled lead conversion for high-growth B2B firms 75% Higher lead to conversion ratio More cross-s The agent doesn't just speed things up, it makes our decisions more consistent and defensible. Every recommendation comes with the data and logic trail our auditors need. ## Who, where and what changed ### About the company B2B SaaS 5,000+ client profiles per month N8N, Python, Multimodal LLMs ### Success metrics Instant and accurate client profiling Zero missed leads Shorter sales cycle ## What was breaking in the workflow? Inefficient Client Research Reps spend hours manually digging for prospect data instead of focused selling. Generic Sales Messaging Without tailored guidance, pitches fail to resonate with specific client personas or needs. Buried Insights Key client details stay buried in the CRM, making reps miss insights needed to close deals. Generic AI was not enough Gives surface-level client information and advice that lacks the depth for sales conversations. ## How we built a Custom SalesPro AI Agentin just 10 days! ### Workflow mapping Architected the transition from "raw lead" to "meeting-ready" by identifying exactly where reps lose momentum. ### Data connections and normalization Connected the agent to internal CRMs and the open web to pull real-time client intelligence. ### Rule-driven decision logic Configured logic to build clear client profiles and identify high-value decision signals automatically. ### Governance and human-in-the-loop Integrated a Human AI Desk to ensure role-play simulations and pitch suggestions remain brand-accurate and effective. ## We build your bespoke AI Assistant using off-the-shelf technologies ## Day-to-day impact of the AI Agent for our client Pulls CRM and open-web data to generate detailed Client Profiles instantly. Identifies core needs, decision signals, and tailored hooks for every lead. Recommends the optimal sales approach and identifies cross-sell opportunities. Delivers real-time performance reviews to refine messaging before every meeting. ## The JADA Difference We build, deploy and manage AI Agents that integrate with your systems, follow business policy and deliver measurable outcomes. Missed cross-sells 3x cross-sell growth | Metric | Before | After | | --- | --- | --- | | Client Research | | Pitch Quality | | Rep Readiness | | Success Rate | ## Ready to 10x your Sales Efficiency? We'll map your workflows, define success metrics, and ship a pilot in just 3 days! Join leading organizations who've accelerated their Data and AI initiatives with The JADA Squad. Supercharge your business operations with JADA’s human-in-the-loop AI Agents. We deploy your custom agent in just 10 days! / score=79.000 / query=AI sales agent ARR customers / intent=find_customer_case / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -37,7 +37,7 @@ Signals 系统采用“规则评分 + 人工复核 + 运营反馈”的混合模
 
 1. 从每日监测中筛出高价值候选。
 2. 让今日观察选择更稳定。
-3. 让 Trend Reports 和 Trend Cards 有来源与事实支撑。
+3. 让 Trend Reports 和 趋势候选s 有来源与事实支撑。
 4. 反向优化关键词、网站和数据源。
 
 ## 4. Signal Score
