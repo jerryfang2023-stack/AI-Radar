@@ -1,0 +1,62 @@
+name: Deploy Daily Brief to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "01-SiteV2/site/public-daily-brief/**"
+      - ".github/workflows/github-pages.yml"
+  workflow_dispatch:
+    inputs:
+      public_brief_date:
+        description: "Optional date to regenerate before deploy, for example 2026-05-24"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Publish Daily Brief
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.public_brief_date != '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.public_brief_date != '' }}
+        run: npm ci
+
+      - name: Generate public Daily Brief
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.public_brief_date != '' }}
+        run: npm run export:public-daily-brief -- --date=${{ inputs.public_brief_date }}
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Daily Brief artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 01-SiteV2/site/public-daily-brief
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
