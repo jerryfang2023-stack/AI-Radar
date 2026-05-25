@@ -21,6 +21,7 @@ const autoSignalEnabled = args.get("auto-signals") !== "false" && args.get("manu
 const signalTarget = args.has("signal-target")
   ? nonNegativeInt(args.get("signal-target"), Number.POSITIVE_INFINITY)
   : Number.POSITIVE_INFINITY;
+const generateTrendCandidates = args.get("trend-candidates") === "true";
 
 const signalSpecs = {
   "2026-05-20": [
@@ -1350,7 +1351,7 @@ function main() {
     written.push(path.relative(root, contentFile).replace(/\\/g, "/"));
   }
 
-  if (candidates.trend) {
+  if (candidates.trend && generateTrendCandidates) {
     const knowledgeFile = path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "trend", `${date}--trend-candidate--${candidates.trend.slug}.md`);
     const contentFile = path.join(root, "01-SiteV2", "content", "06-asset-candidates", "trend", `${date}--trend-candidate--${candidates.trend.slug}.md`);
     const text = trendCandidate(candidates.trend);
@@ -1358,6 +1359,8 @@ function main() {
     write(contentFile, text);
     written.push(path.relative(root, knowledgeFile).replace(/\\/g, "/"));
     written.push(path.relative(root, contentFile).replace(/\\/g, "/"));
+  } else if (candidates.trend) {
+    skipped.push("trend_candidate: skipped; run agent-workflow/tools/run-trend-candidate-decision.mjs after Card / Opinion generation");
   }
 
   writeSignalIndexes(signalIndexSpecs);
