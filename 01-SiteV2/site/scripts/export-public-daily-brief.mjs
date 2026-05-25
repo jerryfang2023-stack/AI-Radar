@@ -118,6 +118,61 @@ const pointName = (point = {}) => cleanText(point.name || point.speaker || point
 const pointTitle = (point = {}) => cleanText(point.identityTitle || point.role || point.title || point.sourceName || "公开观点来源");
 const pointQuote = (point = {}) => short(point.translatedQuote || point.quoteChinese || point.quote || point.rawText || point.interpretation || point.calibrates || "这条观点值得继续跟踪。", 210);
 
+const signalText = (signal = {}) => cleanText([
+  signal.frontend?.sourceTitle,
+  signal.frontend?.displayTitle,
+  signal.frontend?.eventLine,
+  signal.title,
+].filter(Boolean).join(" "));
+
+const strictEditorComment = (signal = {}, limit = 190) => {
+  const text = signalText(signal);
+  const lower = text.toLowerCase();
+
+  if (/webwright/u.test(lower)) {
+    return short("这不是又一个浏览器代理 demo，而是把网页操作变成可测试、可复现、可计分的工程对象。真正值得看的是：企业未来采购的可能不是“会点网页的 Agent”，而是一层能进测试、审计和交付流程的操作能力。", limit);
+  }
+  if (/claude code|缩放算法|scaling algorithms/u.test(lower)) {
+    return short("这仍是研究信号，不是可直接采购的产品。但它重要在于：代码代理开始进入算法搜索本身。如果这种探索能稳定复现，模型团队的差距会从“谁更会调参”转向“谁能把研究过程自动化”。", limit);
+  }
+  if (/gated deltanet|linear attention|nvidia/u.test(lower)) {
+    return short("这类底层结构离老板很远，但离成本很近。它的价值要落到更低推理成本、更长上下文或更高吞吐；落不到这些指标上，就只是论文和工程社区里的技术热闹。", limit);
+  }
+  if (/multi-agent ai sales|sales crew|sql conversion|dreamztech/u.test(lower)) {
+    return short("这更像销售自动化案例，不应被粗暴理解成融资信号。可看的不是“多 Agent”概念，而是线索筛选、CRM 写回、销售跟进和收入归因是否真的连成闭环。没有客户留存和复购数据前，只能当案例线索。", limit);
+  }
+  if (/telli|phone operations|livekit|enterprise phone/u.test(lower)) {
+    return short("语音 Agent 的商业价值不在能不能接电话，而在能不能处理打断、噪声、转人工、质检和合规留痕。高频电话场景有预算，下一步要看它能否把失败收尾和人工接管做成稳定流程。", limit);
+  }
+  if (/cheap ai|openai|anthropic|ipo/u.test(lower)) {
+    return short("这不是资本市场八卦，而是模型公司商业模式的压力测试。低价模型会迫使企业把能力、成本、供应商锁定和数据边界放在同一张表里比较，高估值公司的护城河会被重新审问。", limit);
+  }
+  if (/compute commit|capacity|3-year|算力承诺/u.test(lower)) {
+    return short("这条信号的核心不是 Capacity，而是算力采购正在合同化。多年算力承诺换来价格确定性，也把模型路线变化和需求预测误差提前写进合同；这会把 CFO 拉进 AI 决策桌。", limit);
+  }
+  if (/字节跳动|bytedance|多模态|长文档/u.test(lower)) {
+    return short("这不是融资新闻，而是训练方法信号：长文档能力可能不只靠更多文本堆料，而要让模型直接理解版面、图表和上下文结构。对企业知识库来说，文档解析质量会比向量库参数更关键。", limit);
+  }
+  if (/stepaudio|voice model|语音模型/u.test(lower)) {
+    return short("语音模型的看点不在拟真，而在能否承接真实服务流程：情绪、停顿、方言、转人工和质检。客服、销售和培训会先试，真正的分水岭是错了以后谁接手、怎么补救。", limit);
+  }
+  if (/constraint|约束|后端代码|backend code/u.test(lower)) {
+    return short("这条信号提醒企业：AI 编程的风险不是代码不会生成，而是越做越容易忘掉约束。真正的采购重点应转向测试、审查、任务拆分和回滚机制，而不是单纯比较生成速度。", limit);
+  }
+
+  const title = titleForSignal(signal);
+  if (signal.signalType === "funding") {
+    return short(`先别只看融资金额，要看钱会不会换来可重复交付。${title}只有同时出现客户名单、明确场景和收入留存，才算商业信号；否则只是市场对 AI 叙事的再押注。`, limit);
+  }
+  if (signal.signalType === "case") {
+    return short(`这条案例的价值不在“用了 AI”，而在它是否改写了岗位分工、交付责任和成本结构。没有上线范围、失败处理和效果指标，就只能作为观察样本，不能当成熟趋势。`, limit);
+  }
+  if (signal.signalType === "product_service" || signal.signalType === "product-service") {
+    return short(`产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。`, limit);
+  }
+  return short(signal.frontend?.whyWatch || signal.frontend?.businessMeaning || signal.businessMeaning || "这条材料可以保留为观察线索，但还不足以支撑商业结论。继续看客户采用、付费意愿、交付责任和可复用场景是否出现。", limit);
+};
+
 const dateSelector = (currentDate = "", availableDates = [], prefix = "./") => {
   const dates = availableDates
     .map((item) => dateParam(item.date || item))
@@ -163,8 +218,7 @@ const renderSignal = ({ signal }, index) => `
     <div class="body">
       <h3>${escapeHtml(titleForSignal(signal))}</h3>
       <dl>
-        <div><dt>介绍</dt><dd>${escapeHtml(introLine(signal))}</dd></div>
-        <div><dt>点评</dt><dd>${escapeHtml(commentLine(signal))}</dd></div>
+        <div><dt>点评</dt><dd>${escapeHtml(strictEditorComment(signal))}</dd></div>
       </dl>
     </div>
     <footer>${sourceUrl(signal) !== "#" ? `<a href="${sourceUrl(signal)}" target="_blank" rel="noreferrer">阅读原文 →</a>` : ""}</footer>
