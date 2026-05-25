@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"
+    "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
+    "export:public-daily-brief": "node 01-SiteV2/site/scripts/export-public-daily-brief.mjs"
   },
   "repository": {
     "type": "git",
