@@ -1,0 +1,154 @@
+name: WaveSight Daily Monitor Dry Run
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Asia/Shanghai date to run, formatted as YYYY-MM-DD. Leave empty for today."
+        required: false
+        type: string
+      pass_score:
+        description: "Script pre-gate pass score."
+        required: false
+        default: "80"
+        type: string
+  schedule:
+    # 09:10 Asia/Shanghai.
+    - cron: "10 1 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wavesight-daily-monitor-dry-run-${{ github.event.inputs.date || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    name: Generate Raw / Pool Artifacts
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      TZ: Asia/Shanghai
+      ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Resolve run date
+        id: run-date
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            run_date="${{ github.event.inputs.date }}"
+          else
+            run_date="$(TZ=Asia/Shanghai date +%F)"
+          fi
+
+          if ! [[ "$run_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "Invalid date: $run_date" >&2
+            exit 2
+          fi
+
+          echo "date=$run_date" >> "$GITHUB_OUTPUT"
+          echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
+
+      - name: Report cloud dependency state
+        shell: bash
+        run: |
+          {
+            echo "# GitHub Daily Monitor Dry Run"
+            echo
+            echo "- date: ${RUN_DATE}"
+            echo "- generated_at: $(date -Is)"
+            echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
+            echo "- tavily_secret: $([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing)"
+            echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
+            echo "- follow_builders_local_skill: $([ -f "$HOME/.skill-store/follow-builders/scripts/prepare-digest.js" ] && echo present || echo missing)"
+            echo
+            echo "This workflow is a dry run. It uploads artifacts only and never commits, pushes, opens PRs, or deploys."
+          } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-monitor-dry-run.md"
+
+      - name: Syntax checks
+        shell: bash
+        run: |
+          node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
+          node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
+          node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs
+          node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
+
+      - name: Run daily monitor with pre-gate
+        id: monitor
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs \
+            --date="${RUN_DATE}" \
+            --pass-score="${{ github.event.inputs.pass_score || '80' }}" \
+            --max-cycles=3 \
+            --search-limit=70 \
+            --search-path-query-limit=2 \
+            --gdelt-query-limit=8 \
+            --hn-limit=8 \
+            --fetch-timeout-ms=20000 \
+            --snapshot-timeout-ms=16000 \
+            --monitor-timeout-ms=840000 \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-monitor-run.log"
+
+      - name: Check monitor readiness
+        id: readiness
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-guanlan-automation-readiness.mjs \
+            --command=monitor \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-monitor-readiness.log"
+
+      - name: Upload dry-run artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wavesight-daily-monitor-${{ steps.run-date.outputs.date }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-*.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-*.log
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-monitor-readiness-blocked.md
+            01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
+            01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
+            01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
+            01-SiteV2/content/05-frontier-opinions/${{ steps.run-date.outputs.date }}-opinion-candidates.md
+            01-SiteV2/knowledge/02-Opinion-Cards/${{ steps.run-date.outputs.date }}--frontier-opinion*.md
+
+      - name: Dry-run result
+        if: always()
+        shell: bash
+        run: |
+          if [ "${{ steps.monitor.outcome }}" != "success" ]; then
+            echo "Daily monitor dry-run failed. Inspect uploaded artifacts before enabling commit or PR mode." >&2
+            exit 1
+          fi
+
+          if [ "${{ steps.readiness.outcome }}" != "success" ]; then
+            echo "Daily monitor generated artifacts, but readiness did not pass. Keep this run as diagnostics only." >&2
+            exit 1
+          fi
+
+          echo "Daily monitor dry-run passed. Artifacts were uploaded; no repository changes were committed."
