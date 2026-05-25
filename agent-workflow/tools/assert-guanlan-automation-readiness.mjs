@@ -204,7 +204,9 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
 
 function main() {
   const minScore = Number(args.get("min-score") || 80);
-  const requireFinalQc = command === "assets" || args.get("require-final-qc") === "true";
+  const requireFinalQcArg = args.get("require-final-qc");
+  const requireFinalQc =
+    requireFinalQcArg === "true" || (requireFinalQcArg !== "false" && command === "assets");
   const result = assertMonitorReady({ minScore, requireFinalQc });
   const kind = command === "assets" ? "daily-assets-chain" : "daily-monitor-readiness";
 

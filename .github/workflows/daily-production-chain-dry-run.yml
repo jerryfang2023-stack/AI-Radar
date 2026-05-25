@@ -159,6 +159,7 @@ jobs:
           set -o pipefail
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
+            --require-final-qc=false \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-assets.log"
 

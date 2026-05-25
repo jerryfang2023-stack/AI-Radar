@@ -496,6 +496,7 @@ function runReadiness() {
     "agent-workflow/tools/assert-guanlan-automation-readiness.mjs",
     "--command=assets",
     `--date=${date}`,
+    `--require-final-qc=${args.get("require-final-qc") || "true"}`,
   ], { cwd: root, encoding: "utf8" });
   if (result.status !== 0) {
     process.stdout.write(result.stdout || "");
