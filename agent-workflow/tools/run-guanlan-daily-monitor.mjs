@@ -2933,7 +2933,14 @@ async function collectHN() {
 }
 
 async function collectFollowBuildersProxy() {
-  const queries = laneQueries("builder_proxy", [
+  const webQueries = laneQueries("builder_proxy", [
+    "AI founder essay agent workflow",
+    "AI coding agent founder opinion",
+    "AI agent product strategy founder interview",
+    "AI agents enterprise workflow analysis founder",
+    "Claude Code developer workflow essay",
+  ]);
+  const hnQueries = laneQueries("builder_proxy", [
     "AI agent builder product launch",
     "AI coding agent founder",
     "agentic workflow builder",
@@ -2942,21 +2949,63 @@ async function collectFollowBuildersProxy() {
   ]);
   const items = [];
   const failures = [];
-  for (const queryConfig of queries) {
+  const seen = new Set();
+  const keepItem = (url = "", title = "") => {
+    const key = canonicalUrl(url || title).toLowerCase() || String(title || "").toLowerCase();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  };
+
+  for (const queryConfig of webQueries) {
+    try {
+      const results = await searchLayeredWeb(queryConfig.query, Math.max(2, Math.ceil(buildersTarget / webQueries.length)));
+      for (const result of results) {
+        const gate = keywordSearchResultPreGate(result, queryConfig, { id: "builder_proxy" });
+        if (!gate.keep) continue;
+        if (!keepItem(result.url, result.title)) continue;
+        items.push({
+          acquisition_channel: "follow-builders",
+          original_id: result.id || result.url || `${queryConfig.query}:${result.title}`,
+          title: result.title || "",
+          summary: [
+            result.snippet || "",
+            `query=${queryConfig.query}`,
+            "cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+          ].filter(Boolean).join("\n\n").slice(0, 1600),
+          url: result.url || "",
+          source: `follow-builders cloud fallback / ${result.source || "web search"}`,
+          published_at: result.published_at || result.publishedAt || "",
+          category: "builder-article",
+          query_theme: queryConfig.query_theme,
+          keyword_group: queryConfig.keyword_group,
+        });
+      }
+    } catch (error) {
+      failures.push(`follow-builders cloud fallback ${queryConfig.query}: ${error.message}`);
+    }
+  }
+
+  if (items.length >= buildersTarget) return { items: items.slice(0, buildersTarget), failures };
+
+  for (const queryConfig of hnQueries) {
     const url = new URL("https://hn.algolia.com/api/v1/search_by_date");
     url.searchParams.set("query", queryConfig.query);
     url.searchParams.set("tags", "story");
-    url.searchParams.set("hitsPerPage", String(Math.ceil(buildersTarget / queries.length)));
+    url.searchParams.set("hitsPerPage", String(Math.ceil(buildersTarget / hnQueries.length)));
     try {
       const data = await fetchJson(url.toString());
       const hits = Array.isArray(data.hits) ? data.hits : [];
       for (const item of hits) {
+        const resultUrl = item.url || `https://news.ycombinator.com/item?id=${item.objectID}`;
+        const title = item.title || item.story_title || "";
+        if (!keepItem(resultUrl, title)) continue;
         items.push({
           acquisition_channel: "follow-builders",
           original_id: item.objectID,
-          title: item.title || item.story_title || "",
+          title,
           summary: `${item.points || 0} points / ${item.num_comments || 0} comments / query=${queryConfig.query}`,
-          url: item.url || `https://news.ycombinator.com/item?id=${item.objectID}`,
+          url: resultUrl,
           source: "follow-builders proxy / HN builder query",
           published_at: item.created_at || "",
           category: "builder",
@@ -3047,9 +3096,13 @@ async function collectFollowBuilders() {
   const fromSkill = await collectFollowBuildersSkill();
   if (fromSkill.items.length) return fromSkill;
   const fromProxy = await collectFollowBuildersProxy();
+  const skillMissingOnly = fromSkill.failures.length
+    && fromSkill.failures.every((failure) => /skill script not found/iu.test(failure));
   return {
     items: fromProxy.items,
-    failures: [...fromSkill.failures, ...fromProxy.failures],
+    failures: fromProxy.items.length && skillMissingOnly
+      ? fromProxy.failures
+      : [...fromSkill.failures, ...fromProxy.failures],
   };
 }
 
