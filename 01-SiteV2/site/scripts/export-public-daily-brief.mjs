@@ -173,6 +173,90 @@ const strictEditorComment = (signal = {}, limit = 190) => {
   return short(signal.frontend?.whyWatch || signal.frontend?.businessMeaning || signal.businessMeaning || "这条材料可以保留为观察线索，但还不足以支撑商业结论。继续看客户采用、付费意愿、交付责任和可复用场景是否出现。", limit);
 };
 
+const cleanBriefTitle = (value = "") => cleanText(value)
+  .replace(/\s*[|｜]\s*继续观察\s*$/u, "")
+  .replace(/\s+发布面向[^。；;|｜]{2,40}的 AI 能力\s*$/u, "")
+  .trim();
+
+const concreteTrend = (trend = {}, signal = {}) => {
+  const text = [trend.title, trend.oneLine, trend.judgment, signalText(signal)].filter(Boolean).join(" ").toLowerCase();
+
+  if (/webwright/u.test(text)) {
+    return {
+      title: "微软研究院推出 Webwright 终端原生浏览器代理框架",
+      oneLine: "Webwright 的价值不在“会打开网页”，而在把网页操作变成可在终端里运行、测试和打分的工程流程。浏览器 Agent 若要进企业，先要能被复现、审计和回放。",
+      nextObservation: "下一步看两个验证点：它能不能接入现有测试或运维流程，以及是否出现真实客户把它用于采购、数据录入、后台操作等重复任务。",
+    };
+  }
+  if (/superclaude/u.test(text)) {
+    return {
+      title: "SuperClaude 把命令、代理、模式和会话记忆组合成工作流框架",
+      oneLine: "这条线索的看点不是又多了一个开发者配置包，而是它试图把分散的提示词、角色、上下文和执行模式收进一套可复用流程。企业真正缺的往往不是单个 AI 工具，而是稳定的协作惯例。",
+      nextObservation: "后续可以看它是否减少跨工具切换、重复配置和上下文丢失，并被团队沉淀成项目级规范。",
+    };
+  }
+  if (/gated deltanet|linear attention|nvidia/u.test(text)) {
+    return {
+      title: "NVIDIA 发布 Gated DeltaNet，继续压低长上下文推理成本",
+      oneLine: "底层结构改进离老板很远，但离账单很近。若线性注意力能换来更低延迟、更高吞吐或更长上下文，企业选择模型时就不只比较效果，也会重新比较单位成本。",
+      nextObservation: "值得跟踪的是它是否进入主流推理框架、云厂商套餐和真实企业负载，而不是停留在论文指标里。",
+    };
+  }
+
+  const fallback = cleanBriefTitle(trend.title || titleForSignal(signal) || "趋势线索");
+  const rawOneLine = trend.oneLine || trend.judgment || trend.whyForming || "";
+  const rawNext = trend.nextObservation || trend.evidenceGaps || "";
+  const isTemplate = (value = "") => /这类发布|这条材料|客户是否愿意|暂未监测|正式趋势结论|模型部署和算力调用/u.test(value);
+  return {
+    title: fallback,
+    oneLine: short(rawOneLine && !isTemplate(rawOneLine) ? rawOneLine : strictEditorComment(signal, 160), 160),
+    nextObservation: short(rawNext && !isTemplate(rawNext) ? rawNext : "如果它能进入真实客户流程，值得记录的是它改变了哪一段交付、谁负责维护，以及是否能被团队反复使用。", 130),
+  };
+};
+
+const trendSignalFor = (trend = {}, rankedSignals = []) => {
+  const trendText = [trend.title, trend.oneLine, trend.judgment].filter(Boolean).join(" ").toLowerCase();
+  const matched = rankedSignals.find(({ signal }) => {
+    const text = signalText(signal).toLowerCase();
+    return (trendText.includes("webwright") && text.includes("webwright"))
+      || (trendText.includes("superclaude") && text.includes("superclaude"))
+      || (trendText.includes("claude code") && text.includes("claude code"))
+      || (trendText.includes("gated deltanet") && text.includes("gated deltanet"))
+      || (trendText.includes("nvidia") && text.includes("nvidia"));
+  });
+  return matched?.signal || rankedSignals[0]?.signal || {};
+};
+
+const discussionTitle = (topic = {}, signal = {}) => {
+  const explicit = cleanBriefTitle(topic.question || topic.discussionQuestion || "");
+  if (explicit) return explicit;
+
+  const text = signalText(signal).toLowerCase();
+  if (/claude code|scaling algorithms|缩放算法/u.test(text)) return "AI 研发开始把“找算法”交给代理，团队分工会怎么变？";
+  if (/webwright/u.test(text)) return "浏览器 Agent 走向工程化，谁会先把它放进生产流程？";
+  if (/gated deltanet|linear attention|nvidia/u.test(text)) return "模型效率的底层改进，最后会不会体现在企业账单上？";
+  if (/superclaude/u.test(text)) return "AI 工作流框架会先改变个人效率，还是团队协作规范？";
+  if (/cheap ai|openai|anthropic|ipo/u.test(text)) return "低价模型会怎样重写企业采购和模型公司的估值叙事？";
+  if (/stepaudio|voice model|语音模型/u.test(text)) return "语音 Agent 的分水岭，是拟真，还是能接住服务流程？";
+  if (/constraint|约束|backend code/u.test(text)) return "AI 编程真正该买速度，还是买可控性？";
+  return "这条信号真正改变的是哪一段业务流程？";
+};
+
+const discussionContext = (topic = {}, signal = {}) => {
+  const explicit = topic.comment || topic.editorComment || topic.background;
+  if (explicit && !/这类发布|这件事|材料把 AI|客户是否愿意/u.test(explicit)) return short(explicit, 165);
+
+  const text = signalText(signal).toLowerCase();
+  if (/claude code|scaling algorithms|缩放算法/u.test(text)) return "Claude Code 被用来发现人类不容易设计出的缩放算法，重点不是一次实验胜出，而是研发流程里“提出方案、跑实验、筛结果”开始被代理化。";
+  if (/webwright/u.test(text)) return "Webwright 把网页操作放到终端和测试框架里处理，意味着 Agent 不只是点页面，而是能被记录、复现和评分。";
+  if (/gated deltanet|linear attention|nvidia/u.test(text)) return "Gated DeltaNet 指向线性注意力和长上下文效率，真正有商业意义的是推理延迟、吞吐和单位成本能否下降。";
+  if (/superclaude/u.test(text)) return "SuperClaude 的价值在于把命令、代理角色、模式和会话记忆组织成一套协作方式，让团队少靠个人提示词手艺，多靠可复用流程。";
+  if (/cheap ai|openai|anthropic|ipo/u.test(text)) return "低价模型会迫使企业把能力、成本、供应商锁定和数据边界放在同一张表里比较，高估值模型公司的护城河也会被重新审问。";
+  if (/stepaudio|voice model|语音模型/u.test(text)) return "语音模型的商业价值不在拟真，而在客服、销售和培训流程里能否处理停顿、打断、转人工、质检和补救。";
+  if (/constraint|约束|backend code/u.test(text)) return "AI 编程越深入后端，越容易因为上下文约束衰减而产出看似能跑、实际难维护的代码。价值开始从生成速度转向测试、审查和回滚。";
+  return strictEditorComment(signal, 165);
+};
+
 const dateSelector = (currentDate = "", availableDates = [], prefix = "./") => {
   const dates = availableDates
     .map((item) => dateParam(item.date || item))
@@ -216,7 +300,7 @@ const renderSignal = ({ signal }, index) => `
   <article class="signal">
     <div class="num"><span>${String(index + 1).padStart(2, "0")}</span><em>${escapeHtml(typeLabel(signal.signalType || signal.type))}</em></div>
     <div class="body">
-      <h3>${escapeHtml(titleForSignal(signal))}</h3>
+      <h3>${escapeHtml(cleanBriefTitle(titleForSignal(signal)))}</h3>
       <dl>
         <div><dt>点评</dt><dd>${escapeHtml(strictEditorComment(signal))}</dd></div>
       </dl>
@@ -238,10 +322,9 @@ const renderPoint = (point = {}, index = 0) => `
 const renderTopic = (topic = {}, index = 0, signal = {}) => `
   <article class="topic">
     <span>${String(index + 1).padStart(2, "0")}</span>
-    <h3>${escapeHtml(topic.title || titleForSignal(signal))}</h3>
-    <p><b>背景</b>${escapeHtml(topic.comment || topic.editorComment || introLine(signal, 170))}</p>
-    <p><b>讨论问题</b>${escapeHtml(topic.conflict || "这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？")}</p>
-    <small><b>相关信号</b>${escapeHtml(titleForSignal(signal))}</small>
+    <h3>${escapeHtml(discussionTitle(topic, signal))}</h3>
+    <p><b>点评</b>${escapeHtml(discussionContext(topic, signal))}</p>
+    <small><b>相关信号</b>${escapeHtml(cleanBriefTitle(titleForSignal(signal)))}</small>
   </article>
 `;
 
@@ -280,6 +363,7 @@ const stylesheet = `
   a { color:#0d355c; font-size:12px; font-weight:700; text-decoration:none; }
   .side-card, .trend, .topic { border:1px solid var(--line); border-left:2px solid rgba(200,167,102,.42); background:rgba(255,253,248,.74); padding:14px; }
   .side-card .role, .trend p, .topic p, .topic small { color:var(--muted); font-size:12px; line-height:20px; }
+  .trend-link { display:inline-flex; margin-top:8px; color:#0d355c; font-size:12px; font-weight:700; text-decoration:none; }
   blockquote { margin:10px 0 8px; color:rgba(7,24,39,.72); font-size:12px; line-height:20px; }
   .topic-grid { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:12px; }
   .topic span { color:var(--gold); font-family:Georgia,"Times New Roman",serif; font-size:12px; }
@@ -373,6 +457,9 @@ const buildDailyBriefHtml = (date = selectedDate, selectorPrefix = "../") => {
     oneLine: introLine(signals[0]?.signal, 150),
     nextObservation: "继续观察客户采用、预算归属和交付责任是否发生变化。",
   };
+  const trendSourceSignal = trendSignalFor(primaryTrend, signals);
+  const trendBrief = concreteTrend(primaryTrend, trendSourceSignal);
+  const trendLink = sourceUrl(trendSourceSignal);
 
   return `<!doctype html>
 <html lang="zh-CN">
@@ -411,9 +498,10 @@ const buildDailyBriefHtml = (date = selectedDate, selectorPrefix = "../") => {
           <div class="section-head"><span class="kicker">TRENDS</span><h2>趋势 / 话题</h2></div>
           <article class="trend">
             <span class="kicker">正在形成</span>
-            <h3>${escapeHtml(primaryTrend.title || "趋势线索")}</h3>
-            <p>${escapeHtml(short(primaryTrend.oneLine || primaryTrend.judgment || primaryTrend.whyForming || introLine(signals[0]?.signal), 160))}</p>
-            <p>${escapeHtml(short(primaryTrend.nextObservation || primaryTrend.evidenceGaps || "继续观察客户采用、预算归属和交付责任是否发生变化。", 130))}</p>
+            <h3>${escapeHtml(trendBrief.title || "趋势线索")}</h3>
+            <p>${escapeHtml(short(trendBrief.oneLine, 170))}</p>
+            <p>${escapeHtml(short(trendBrief.nextObservation, 145))}</p>
+            ${trendLink !== "#" ? `<a class="trend-link" href="${trendLink}" target="_blank" rel="noreferrer">继续观察 →</a>` : ""}
           </article>
         </section>
       </aside>

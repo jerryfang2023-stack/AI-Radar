@@ -40,6 +40,7 @@
   a { color:#0d355c; font-size:12px; font-weight:700; text-decoration:none; }
   .side-card, .trend, .topic { border:1px solid var(--line); border-left:2px solid rgba(200,167,102,.42); background:rgba(255,253,248,.74); padding:14px; }
   .side-card .role, .trend p, .topic p, .topic small { color:var(--muted); font-size:12px; line-height:20px; }
+  .trend-link { display:inline-flex; margin-top:8px; color:#0d355c; font-size:12px; font-weight:700; text-decoration:none; }
   blockquote { margin:10px 0 8px; color:rgba(7,24,39,.72); font-size:12px; line-height:20px; }
   .topic-grid { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:12px; }
   .topic span { color:var(--gold); font-family:Georgia,"Times New Roman",serif; font-size:12px; }
@@ -90,7 +91,7 @@
   <article class="signal">
     <div class="num"><span>01</span><em>产品</em></div>
     <div class="body">
-      <h3>研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布面向模型部署和算力调用的 AI 能力</h3>
+      <h3>研究人员让Claude Code发现人类可能不会设计的AI缩放算法</h3>
       <dl>
         <div><dt>点评</dt><dd>这仍是研究信号，不是可直接采购的产品。但它重要在于：代码代理开始进入算法搜索本身。如果这种探索能稳定复现，模型团队的差距会从“谁更会调参”转向“谁能把研究过程自动化”。</dd></div>
       </dl>
@@ -101,7 +102,7 @@
   <article class="signal">
     <div class="num"><span>02</span><em>产品</em></div>
     <div class="body">
-      <h3>微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力</h3>
+      <h3>微软研究院推出Webwright终端原生浏览器代理框架</h3>
       <dl>
         <div><dt>点评</dt><dd>这不是又一个浏览器代理 demo，而是把网页操作变成可测试、可复现、可计分的工程对象。真正值得看的是：企业未来采购的可能不是“会点网页的 Agent”，而是一层能进测试、审计和交付流程的操作能力。</dd></div>
       </dl>
@@ -112,7 +113,7 @@
   <article class="signal">
     <div class="num"><span>03</span><em>产品</em></div>
     <div class="body">
-      <h3>NVIDIA发布Gated DeltaNet 发布面向模型部署和算力调用的 AI 能力</h3>
+      <h3>NVIDIA发布Gated DeltaNet</h3>
       <dl>
         <div><dt>点评</dt><dd>这类底层结构离老板很远，但离成本很近。它的价值要落到更低推理成本、更长上下文或更高吞吐；落不到这些指标上，就只是论文和工程社区里的技术热闹。</dd></div>
       </dl>
@@ -231,9 +232,10 @@
           <div class="section-head"><span class="kicker">TRENDS</span><h2>趋势 / 话题</h2></div>
           <article class="trend">
             <span class="kicker">正在形成</span>
-            <h3>微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力｜继续观察</h3>
-            <p>这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。</p>
-            <p>暂未监测到足够同类案例、客户付费信息或多源证据，不能写成正式趋势结论。</p>
+            <h3>微软研究院推出 Webwright 终端原生浏览器代理框架</h3>
+            <p>Webwright 的价值不在“会打开网页”，而在把网页操作变成可在终端里运行、测试和打分的工程流程。浏览器 Agent 若要进企业，先要能被复现、审计和回放。</p>
+            <p>下一步看两个验证点：它能不能接入现有测试或运维流程，以及是否出现真实客户把它用于采购、数据录入、后台操作等重复任务。</p>
+            <a class="trend-link" href="https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5" target="_blank" rel="noreferrer">继续观察 →</a>
           </article>
         </section>
       </aside>
@@ -243,26 +245,23 @@
       <div class="topic-grid">
   <article class="topic">
     <span>01</span>
-    <h3>研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布面向模型部署和算力调用的 AI 能力</h3>
-    <p><b>背景</b>这类发布把 AI 能力落在模型部署和算力调用，重点看它能否进入具体岗位、系统调用和交付责任。</p>
-    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
-    <small><b>相关信号</b>研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布面向模型部署和算力调用的 AI 能力</small>
+    <h3>AI 研发开始把“找算法”交给代理，团队分工会怎么变？</h3>
+    <p><b>点评</b>Claude Code 被用来发现人类不容易设计出的缩放算法，重点不是一次实验胜出，而是研发流程里“提出方案、跑实验、筛结果”开始被代理化。</p>
+    <small><b>相关信号</b>研究人员让Claude Code发现人类可能不会设计的AI缩放算法</small>
   </article>
 
   <article class="topic">
     <span>02</span>
-    <h3>微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力</h3>
-    <p><b>背景</b>这类发布把 AI 能力落在模型部署和算力调用，重点看它能否进入具体岗位、系统调用和交付责任。</p>
-    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
-    <small><b>相关信号</b>微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力</small>
+    <h3>浏览器 Agent 走向工程化，谁会先把它放进生产流程？</h3>
+    <p><b>点评</b>Webwright 把网页操作放到终端和测试框架里处理，意味着 Agent 不只是点页面，而是能被记录、复现和评分。</p>
+    <small><b>相关信号</b>微软研究院推出Webwright终端原生浏览器代理框架</small>
   </article>
 
   <article class="topic">
     <span>03</span>
-    <h3>NVIDIA发布Gated DeltaNet 发布面向模型部署和算力调用的 AI 能力</h3>
-    <p><b>背景</b>这类发布把 AI 能力落在模型部署和算力调用，重点看它能否进入具体岗位、系统调用和交付责任。</p>
-    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
-    <small><b>相关信号</b>NVIDIA发布Gated DeltaNet 发布面向模型部署和算力调用的 AI 能力</small>
+    <h3>模型效率的底层改进，最后会不会体现在企业账单上？</h3>
+    <p><b>点评</b>Gated DeltaNet 指向线性注意力和长上下文效率，真正有商业意义的是推理延迟、吞吐和单位成本能否下降。</p>
+    <small><b>相关信号</b>NVIDIA发布Gated DeltaNet</small>
   </article>
 </div>
     </section>

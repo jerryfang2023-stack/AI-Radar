@@ -40,6 +40,7 @@
   a { color:#0d355c; font-size:12px; font-weight:700; text-decoration:none; }
   .side-card, .trend, .topic { border:1px solid var(--line); border-left:2px solid rgba(200,167,102,.42); background:rgba(255,253,248,.74); padding:14px; }
   .side-card .role, .trend p, .topic p, .topic small { color:var(--muted); font-size:12px; line-height:20px; }
+  .trend-link { display:inline-flex; margin-top:8px; color:#0d355c; font-size:12px; font-weight:700; text-decoration:none; }
   blockquote { margin:10px 0 8px; color:rgba(7,24,39,.72); font-size:12px; line-height:20px; }
   .topic-grid { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:12px; }
   .topic span { color:var(--gold); font-family:Georgia,"Times New Roman",serif; font-size:12px; }
@@ -90,7 +91,7 @@
   <article class="signal">
     <div class="num"><span>01</span><em>产品</em></div>
     <div class="body">
-      <h3>构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力</h3>
+      <h3>构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆</h3>
       <dl>
         <div><dt>点评</dt><dd>产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。</dd></div>
       </dl>
@@ -101,7 +102,7 @@
   <article class="signal">
     <div class="num"><span>02</span><em>产品</em></div>
     <div class="body">
-      <h3>microsoft/Agents 发布面向地产开发和建筑设计流程的 AI 能力</h3>
+      <h3>microsoft/Agents</h3>
       <dl>
         <div><dt>点评</dt><dd>产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。</dd></div>
       </dl>
@@ -112,7 +113,7 @@
   <article class="signal">
     <div class="num"><span>03</span><em>产品</em></div>
     <div class="body">
-      <h3>OPLOG 发布面向销售和收入团队流程的 AI 能力</h3>
+      <h3>OPLOG</h3>
       <dl>
         <div><dt>点评</dt><dd>语音 Agent 的商业价值不在能不能接电话，而在能不能处理打断、噪声、转人工、质检和合规留痕。高频电话场景有预算，下一步要看它能否把失败收尾和人工接管做成稳定流程。</dd></div>
       </dl>
@@ -134,7 +135,7 @@
   <article class="signal">
     <div class="num"><span>05</span><em>产品</em></div>
     <div class="body">
-      <h3>AI Agents Buyers Guide 2026 Executive Summary 发布面向地产开发和建筑设计流程的 AI 能力</h3>
+      <h3>AI Agents Buyers Guide 2026 Executive Summary</h3>
       <dl>
         <div><dt>点评</dt><dd>产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。</dd></div>
       </dl>
@@ -145,7 +146,7 @@
   <article class="signal">
     <div class="num"><span>06</span><em>产品</em></div>
     <div class="body">
-      <h3>AWS Marketplace 发布面向销售和收入团队流程的 AI 能力</h3>
+      <h3>AWS Marketplace</h3>
       <dl>
         <div><dt>点评</dt><dd>产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。</dd></div>
       </dl>
@@ -178,7 +179,7 @@
   <article class="signal">
     <div class="num"><span>09</span><em>产品</em></div>
     <div class="body">
-      <h3>langchain 发布面向企业智能体协作流程的 AI 能力</h3>
+      <h3>langchain</h3>
       <dl>
         <div><dt>点评</dt><dd>产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。</dd></div>
       </dl>
@@ -189,7 +190,7 @@
   <article class="signal">
     <div class="num"><span>10</span><em>产品</em></div>
     <div class="body">
-      <h3>AWS Marketplace 发布面向地产开发和建筑设计流程的 AI 能力</h3>
+      <h3>AWS Marketplace</h3>
       <dl>
         <div><dt>点评</dt><dd>产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。</dd></div>
       </dl>
@@ -231,9 +232,10 @@
           <div class="section-head"><span class="kicker">TRENDS</span><h2>趋势 / 话题</h2></div>
           <article class="trend">
             <span class="kicker">正在形成</span>
-            <h3>构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力</h3>
-            <p>这类发布把 AI 能力落在模型部署和算力调用，重点看它能否进入具体岗位、系统调用和交付责任。</p>
-            <p>继续观察客户采用、预算归属和交付责任是否发生变化。</p>
+            <h3>SuperClaude 把命令、代理、模式和会话记忆组合成工作流框架</h3>
+            <p>这条线索的看点不是又多了一个开发者配置包，而是它试图把分散的提示词、角色、上下文和执行模式收进一套可复用流程。企业真正缺的往往不是单个 AI 工具，而是稳定的协作惯例。</p>
+            <p>后续可以看它是否减少跨工具切换、重复配置和上下文丢失，并被团队沉淀成项目级规范。</p>
+            <a class="trend-link" href="https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory" target="_blank" rel="noreferrer">继续观察 →</a>
           </article>
         </section>
       </aside>
@@ -243,26 +245,23 @@
       <div class="topic-grid">
   <article class="topic">
     <span>01</span>
-    <h3>构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力</h3>
-    <p><b>背景</b>这类发布把 AI 能力落在模型部署和算力调用，重点看它能否进入具体岗位、系统调用和交付责任。</p>
-    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
-    <small><b>相关信号</b>构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力</small>
+    <h3>AI 工作流框架会先改变个人效率，还是团队协作规范？</h3>
+    <p><b>点评</b>SuperClaude 的价值在于把命令、代理角色、模式和会话记忆组织成一套协作方式，让团队少靠个人提示词手艺，多靠可复用流程。</p>
+    <small><b>相关信号</b>构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆</small>
   </article>
 
   <article class="topic">
     <span>02</span>
-    <h3>microsoft/Agents 发布面向地产开发和建筑设计流程的 AI 能力</h3>
-    <p><b>背景</b>这类发布把 AI 能力落在地产开发和建筑设计流程，重点看它能否进入具体岗位、系统调用和交付责任。</p>
-    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
-    <small><b>相关信号</b>microsoft/Agents 发布面向地产开发和建筑设计流程的 AI 能力</small>
+    <h3>这条信号真正改变的是哪一段业务流程？</h3>
+    <p><b>点评</b>产品发布只有在进入真实流程时才重要。接下来要看它是否给出客户场景、部署路径、权限设计和计费方式；没有这些，能力再新也只是供应商展示。</p>
+    <small><b>相关信号</b>microsoft/Agents</small>
   </article>
 
   <article class="topic">
     <span>03</span>
-    <h3>OPLOG 发布面向销售和收入团队流程的 AI 能力</h3>
-    <p><b>背景</b>这类发布把 AI 能力落在销售和收入团队流程，重点看它能否进入具体岗位、系统调用和交付责任。</p>
-    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
-    <small><b>相关信号</b>OPLOG 发布面向销售和收入团队流程的 AI 能力</small>
+    <h3>这条信号真正改变的是哪一段业务流程？</h3>
+    <p><b>点评</b>语音 Agent 的商业价值不在能不能接电话，而在能不能处理打断、噪声、转人工、质检和合规留痕。高频电话场景有预算，下一步要看它能否把失败收尾和人工接管做成稳定流程。</p>
+    <small><b>相关信号</b>OPLOG</small>
   </article>
 </div>
     </section>

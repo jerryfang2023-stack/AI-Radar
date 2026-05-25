@@ -15,7 +15,10 @@ const types = {
 
 createServer(async (request, response) => {
   const rawPath = decodeURIComponent((request.url || "/").split("?")[0]);
-  const urlPath = rawPath === "/" || rawPath === "" ? "/index.html" : rawPath;
+  const requestedPath = rawPath === "/" || rawPath === "" ? "/index.html" : rawPath;
+  const urlPath = requestedPath.endsWith("/")
+    ? `${requestedPath}index.html`
+    : path.extname(requestedPath) ? requestedPath : `${requestedPath}/index.html`;
   const filePath = path.join(root, urlPath);
 
   if (!filePath.startsWith(root)) {
