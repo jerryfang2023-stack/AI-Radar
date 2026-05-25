@@ -275,4 +275,5 @@ const html = `<!doctype html>
 
 await mkdir(outputDir, { recursive: true });
 await writeFile(path.join(outputDir, "index.html"), html, "utf8");
+await writeFile(path.join(outputRoot, "index.html"), html, "utf8");
 console.log(`Exported ${path.relative(projectRoot, path.join(outputDir, "index.html"))}`);
