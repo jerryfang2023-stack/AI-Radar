@@ -48,6 +48,8 @@ if (args.has("help") || args.has("h")) {
       "  --raw-target=120",
       "  --raw-min=80",
       "  --raw-max=150",
+      "  --historical-dedupe=true",
+      "  --raw-dedupe-buffer=40",
       "  --aihot-limit=500",
       "  --aihot-mode=all",
       "  --aihot-window-hours=24",
@@ -74,6 +76,8 @@ const hnTarget = Number(args.get("hn-limit") || 8);
 const rawTargetOverride = args.has("raw-target") ? Number(args.get("raw-target")) : null;
 const rawMinTarget = Number(args.get("raw-min") || 80);
 const rawMaxTarget = Number(args.get("raw-max") || 150);
+const historicalDedupeEnabled = args.get("historical-dedupe") !== "false";
+const rawDedupeBuffer = Number(args.get("raw-dedupe-buffer") || 40);
 const dryRun = args.get("dry-run") === "true";
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
@@ -129,6 +133,10 @@ const rawEntryPolicy = keywordMonitoring.raw_entry_policy || {};
 const anysearchApiKey = process.env.ANYSEARCH_API_KEY || "";
 const tavilyApiKey = process.env.TAVILY_API_KEY || "";
 const exaApiKey = process.env.EXA_API_KEY || "";
+let historicalRawIndexCache = null;
+let historicalDedupePreFetchRemoved = 0;
+let historicalDedupePostFetchRemoved = 0;
+let historicalDedupeRecordsChecked = 0;
 const providerFallbackNotes = [];
 let anysearchDisabledForRun = false;
 let tavilyDisabledForRun = false;
@@ -1298,6 +1306,127 @@ function dedupeSearchItems(items = []) {
   }
   if (duplicateCount) providerFallbackNotes.push(`Search cross-entry dedupe removed ${duplicateCount} duplicate provider hits before Raw selection.`);
   return [...byPrimary.values()];
+}
+
+function listJsonFilesRecursive(dir) {
+  if (!fs.existsSync(dir)) return [];
+  const files = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const next = path.join(dir, entry.name);
+    if (entry.isDirectory()) files.push(...listJsonFilesRecursive(next));
+    else if (entry.name.endsWith(".json")) files.push(next);
+  }
+  return files;
+}
+
+function rawDateFromArchivePath(file) {
+  const normalized = file.replace(/\\/g, "/");
+  const match = normalized.match(/\/originals\/(\d{4}-\d{2}-\d{2})\//u);
+  return match ? match[1] : "";
+}
+
+function addIndexValue(map, key, value) {
+  if (!key) return;
+  if (!map.has(key)) map.set(key, []);
+  map.get(key).push(value);
+}
+
+function buildHistoricalRawIndex() {
+  if (historicalRawIndexCache) return historicalRawIndexCache;
+  const urls = new Map();
+  const hashes = new Map();
+  const originalsRoot = path.join(rawDir, "originals");
+  let records = 0;
+  for (const file of listJsonFilesRecursive(originalsRoot)) {
+    const archiveDate = rawDateFromArchivePath(file);
+    if (!archiveDate || archiveDate >= date) continue;
+    const record = readJson(file, null);
+    if (!record || typeof record !== "object") continue;
+    records += 1;
+    const pointer = {
+      date: archiveDate,
+      raw_id: record.raw_id || "",
+      title: record.title || "",
+      path: rel(file),
+    };
+    const url = canonicalUrl(record.canonical_url || record.original_url || record.source_url || record.url || "").toLowerCase();
+    addIndexValue(urls, url, pointer);
+    for (const hash of [
+      record.content_hash,
+      record.full_text_hash,
+      record.evidence_completeness?.evidence_hash,
+    ].filter(Boolean)) {
+      addIndexValue(hashes, String(hash).toLowerCase(), pointer);
+    }
+  }
+  historicalRawIndexCache = { urls, hashes, records };
+  historicalDedupeRecordsChecked = records;
+  return historicalRawIndexCache;
+}
+
+function firstHistoricalMatch(map, key) {
+  if (!key || !map.has(key)) return null;
+  const matches = map.get(key) || [];
+  return matches
+    .slice()
+    .sort((left, right) => String(left.date).localeCompare(String(right.date)) || String(left.raw_id).localeCompare(String(right.raw_id)))[0] || null;
+}
+
+function historicalDuplicateMatchFor(item = {}, includeSnapshotHash = false) {
+  if (!historicalDedupeEnabled) return null;
+  const index = buildHistoricalRawIndex();
+  const url = canonicalUrl(item.canonical_url || item.original_url || item.source_url || item.url || item.raw_original_id || "").toLowerCase();
+  const urlMatch = firstHistoricalMatch(index.urls, url);
+  if (urlMatch) return { kind: "url", match: urlMatch };
+
+  if (!includeSnapshotHash) return null;
+  const snapshot = item.snapshot || {};
+  for (const hash of [
+    item.content_hash,
+    item.full_text_hash,
+    snapshot.hash,
+    snapshot.full_text_hash,
+  ].filter(Boolean)) {
+    const hashMatch = firstHistoricalMatch(index.hashes, String(hash).toLowerCase());
+    if (hashMatch) return { kind: "hash", match: hashMatch };
+  }
+  return null;
+}
+
+function filterHistoricalDuplicatesBeforeRaw(items = []) {
+  if (!historicalDedupeEnabled) return items;
+  const kept = [];
+  let removed = 0;
+  for (const item of items) {
+    if (historicalDuplicateMatchFor(item, false)) {
+      removed += 1;
+      continue;
+    }
+    kept.push(item);
+  }
+  historicalDedupePreFetchRemoved = removed;
+  if (removed) {
+    providerFallbackNotes.push(`Historical Raw dedupe removed ${removed} URL duplicate candidate(s) before Raw selection.`);
+  }
+  return kept;
+}
+
+function filterHistoricalDuplicatesAfterFetch(items = []) {
+  if (!historicalDedupeEnabled) return items;
+  const kept = [];
+  let removed = 0;
+  for (const item of items) {
+    if (historicalDuplicateMatchFor(item, true)) {
+      removed += 1;
+      continue;
+    }
+    kept.push(item);
+  }
+  historicalDedupePostFetchRemoved = removed;
+  if (removed) {
+    providerFallbackNotes.push(`Historical Raw dedupe removed ${removed} fetched hash duplicate candidate(s) before Raw writing.`);
+  }
+  return kept;
 }
 
 function shortHash(text = "") {
@@ -3374,16 +3503,20 @@ function normalize(items) {
         ...normalizeDeveloperKeywordGroup(themed),
       };
     });
-  const normalized = dedupeSearchItems(prepared)
+  const historicallyUnique = filterHistoricalDuplicatesBeforeRaw(prepared);
+  const normalized = dedupeSearchItems(historicallyUnique)
     .map((item) => ({ ...item, score: score(item) }))
     .sort((a, b) => b.score - a.score);
 
   const picked = [];
   const pickedKeys = new Set();
   const dailySelectedCount = normalized.filter(isAIHotDailySelected).length;
-  const target = rawTargetOverride
+  const baseTarget = rawTargetOverride
     ? Math.min(Math.max(rawTargetOverride, dailySelectedCount), normalized.length)
     : Math.min(Math.max(rawMinTarget, dailySelectedCount), rawMaxTarget, normalized.length);
+  const target = rawTargetOverride
+    ? baseTarget
+    : Math.min(Math.max(baseTarget + rawDedupeBuffer, baseTarget), rawMaxTarget, normalized.length);
 
   // Keep curated AIHOT daily items first so they are never starved by other channels.
   for (const item of normalized) {
@@ -3675,6 +3808,11 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "aihot_daily_pool_policy: full_daily_selected_to_pool_index",
     `aihot_rejected_by_raw_entry_rules: ${runMeta.aihot_rejected_count ?? "unknown"}`,
     `external_search_activated: ${runMeta.search_activated ? "true" : "false"}`,
+    `historical_dedupe_enabled: ${runMeta.historical_dedupe_enabled ? "true" : "false"}`,
+    `historical_raw_records_checked: ${runMeta.historical_raw_records_checked ?? 0}`,
+    `historical_duplicates_removed_before_fetch: ${runMeta.historical_duplicates_removed_before_fetch ?? 0}`,
+    `historical_duplicates_removed_after_fetch: ${runMeta.historical_duplicates_removed_after_fetch ?? 0}`,
+    `raw_dedupe_buffer: ${rawDedupeBuffer}`,
     `aihot_count: ${items.filter((item) => item.acquisition_channel === "aihot").length}`,
     `keyword_search_count: ${items.filter((item) => item.acquisition_channel === "keyword-search").length}`,
     `follow_builders_count: ${items.filter((item) => item.acquisition_channel === "follow-builders").length}`,
@@ -3920,6 +4058,10 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "status: guanlan-daily-monitor-pool",
     `pool_count: ${poolItems.length}`,
     `aihot_daily_pool_count: ${aihotDailyPoolCount}`,
+    `historical_dedupe_enabled: ${runMeta.historical_dedupe_enabled ? "true" : "false"}`,
+    `historical_raw_records_checked: ${runMeta.historical_raw_records_checked ?? 0}`,
+    `historical_duplicates_removed_before_fetch: ${runMeta.historical_duplicates_removed_before_fetch ?? 0}`,
+    `historical_duplicates_removed_after_fetch: ${runMeta.historical_duplicates_removed_after_fetch ?? 0}`,
     `generated_at: ${new Date().toISOString()}`,
     `keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     "---",
@@ -4047,6 +4189,11 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "- aihot_daily_pool_policy: AI HOT daily selected items are all kept in the Pool index; their route remains evidence-gated and may be core_pool, emerging_pool, user_feedback_pool, watchlist, or index_only.",
     `- aihot_rejected_by_raw_entry_rules: ${runMeta.aihot_rejected_count ?? "unknown"}`,
     `- external_search_activated: ${runMeta.search_activated ? "true" : "false"}`,
+    `- historical_dedupe_enabled: ${runMeta.historical_dedupe_enabled ? "true" : "false"}`,
+    `- historical_raw_records_checked: ${runMeta.historical_raw_records_checked ?? 0}`,
+    `- historical_duplicates_removed_before_fetch: ${runMeta.historical_duplicates_removed_before_fetch ?? 0}`,
+    `- historical_duplicates_removed_after_fetch: ${runMeta.historical_duplicates_removed_after_fetch ?? 0}`,
+    `- raw_dedupe_buffer: ${rawDedupeBuffer}`,
     `- aihot_count: ${items.filter((item) => item.acquisition_channel === "aihot").length}`,
     `- keyword_search_count: ${items.filter((item) => item.acquisition_channel === "keyword-search").length}`,
     `- keyword_search_non_community_count: ${keywordNonCommunity}`,
@@ -4147,7 +4294,9 @@ async function main() {
     coverageGaps = importanceCoverageGaps(normalizedItems);
   }
   const failures = [...aihot.failures, ...builders.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures];
-  const items = dryRun ? normalizedItems : prioritizeAfterFetch(await enrichSnapshots(normalizedItems));
+  const items = dryRun
+    ? normalizedItems
+    : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedItems)));
 
   if (!dryRun) {
     makeRawFiles(items, failures, {
@@ -4160,6 +4309,10 @@ async function main() {
       aihot_rejected_count: aihot.rejected_count,
       search_activated: searchActivated,
       importance_coverage_gaps: coverageGaps,
+      historical_dedupe_enabled: historicalDedupeEnabled,
+      historical_raw_records_checked: historicalDedupeRecordsChecked,
+      historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
+      historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
     });
     await makeBuildersViewpointsFile(builderItemsAll);
   }
@@ -4178,6 +4331,10 @@ async function main() {
         aihot_daily_included_count: aihot.included_count_daily,
         aihot_rejected_by_raw_entry_rules: aihot.rejected_count,
         external_search_activated: searchActivated,
+        historical_dedupe_enabled: historicalDedupeEnabled,
+        historical_raw_records_checked: historicalDedupeRecordsChecked,
+        historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
+        historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
         importance_coverage_gaps: coverageGaps,
         aihot_count: items.filter((item) => item.acquisition_channel === "aihot").length,
         follow_builders_count: items.filter((item) => item.acquisition_channel === "follow-builders").length,
