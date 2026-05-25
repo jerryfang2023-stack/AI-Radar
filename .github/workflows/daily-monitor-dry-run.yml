@@ -12,9 +12,6 @@ on:
         required: false
         default: "80"
         type: string
-  schedule:
-    # 09:10 Asia/Shanghai.
-    - cron: "10 1 * * *"
 
 permissions:
   contents: read

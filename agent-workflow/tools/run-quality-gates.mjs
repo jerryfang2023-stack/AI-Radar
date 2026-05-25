@@ -54,6 +54,11 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
     [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe gate syntax"],
+    [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
+    [node, ["--check", "agent-workflow/tools/run-daily-observation-chain.mjs"], "daily observation chain syntax"],
+    [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
   ],
   content: [
     [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
@@ -115,6 +120,11 @@ const buildCommands = () => {
       [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
       [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
       [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
+      [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
+      [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe gate syntax"],
+      [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
+      [node, ["--check", "agent-workflow/tools/run-daily-observation-chain.mjs"], "daily observation chain syntax"],
+      [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
     ];
   }
 
