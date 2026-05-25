@@ -50,7 +50,7 @@ function parseNumber(text = "", key) {
 }
 
 function countSections(text = "", prefix) {
-  return (text.match(new RegExp(`^##\\s+${prefix}-\\d+\\b`, "gmu")) || []).length;
+  return (text.match(new RegExp(`^#{2,6}\\s+${prefix}-\\d+\\b`, "gmu")) || []).length;
 }
 
 function listFiles(dir, predicate = () => true) {
