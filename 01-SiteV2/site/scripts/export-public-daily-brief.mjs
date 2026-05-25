@@ -116,7 +116,18 @@ const sourceUrl = (item = {}) => safeUrl(item.sourceUrl || item.source_url || it
 
 const pointName = (point = {}) => cleanText(point.name || point.speaker || point.speakerLine || point.author || "Builder");
 const pointTitle = (point = {}) => cleanText(point.identityTitle || point.role || point.title || point.sourceName || "公开观点来源");
-const pointQuote = (point = {}) => short(point.translatedQuote || point.quoteChinese || point.quote || point.rawText || point.interpretation || point.calibrates || "这条观点值得继续跟踪。", 210);
+const pointQuote = (point = {}) => short(
+  point.originalTranslation
+  || point.translatedQuote
+  || point.quoteChinese
+  || point.translatedOriginal
+  || point.quote
+  || point.originalView
+  || point.rawText
+  || cleanText(point.title || "").replace(/^.*?：/u, "")
+  || "暂无可展示原文。",
+  320,
+);
 
 const signalText = (signal = {}) => cleanText([
   signal.frontend?.sourceTitle,
