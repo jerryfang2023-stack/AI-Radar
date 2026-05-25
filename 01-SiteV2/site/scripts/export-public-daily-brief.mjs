@@ -118,6 +118,45 @@ const pointName = (point = {}) => cleanText(point.name || point.speaker || point
 const pointTitle = (point = {}) => cleanText(point.identityTitle || point.role || point.title || point.sourceName || "公开观点来源");
 const pointQuote = (point = {}) => short(point.translatedQuote || point.quoteChinese || point.quote || point.rawText || point.interpretation || point.calibrates || "这条观点值得继续跟踪。", 210);
 
+const dateSelector = (currentDate = "", availableDates = [], prefix = "./") => {
+  const dates = availableDates
+    .map((item) => dateParam(item.date || item))
+    .filter(Boolean);
+  const current = dates.includes(currentDate) ? currentDate : dates[0] || currentDate;
+  const [currentYear = "", currentMonth = "", currentDay = ""] = current.split("-");
+  const years = [...new Set(dates.map((date) => date.split("-")[0]))];
+  const months = [...new Set(dates
+    .filter((date) => date.startsWith(`${currentYear}-`))
+    .map((date) => date.split("-")[1]))];
+  const days = [...new Set(dates
+    .filter((date) => date.startsWith(`${currentYear}-${currentMonth}-`))
+    .map((date) => date.split("-")[2]))];
+  const routes = dates.map((date) => ({ date, href: `${prefix}${date}/` }));
+
+  return `
+  <div class="date-picker" data-routes="${escapeHtml(JSON.stringify(routes))}">
+    <label>
+      <span>年</span>
+      <select data-date-part="year" aria-label="选择年份">
+        ${years.map((year) => `<option value="${year}" ${year === currentYear ? "selected" : ""}>${year}</option>`).join("")}
+      </select>
+    </label>
+    <label>
+      <span>月</span>
+      <select data-date-part="month" aria-label="选择月份">
+        ${months.map((month) => `<option value="${month}" ${month === currentMonth ? "selected" : ""}>${Number(month)}月</option>`).join("")}
+      </select>
+    </label>
+    <label>
+      <span>日</span>
+      <select data-date-part="day" aria-label="选择日期">
+        ${days.map((day) => `<option value="${day}" ${day === currentDay ? "selected" : ""}>${Number(day)}日</option>`).join("")}
+      </select>
+    </label>
+  </div>
+`;
+};
+
 const renderSignal = ({ signal }, index) => `
   <article class="signal">
     <div class="num"><span>${String(index + 1).padStart(2, "0")}</span><em>${escapeHtml(typeLabel(signal.signalType || signal.type))}</em></div>
@@ -159,8 +198,14 @@ const stylesheet = `
   main { width:min(1240px,calc(100% - 104px)); margin:34px auto 70px; padding:30px 34px 38px; border:1px solid var(--line); background:var(--paper); }
   header.hero { display:grid; grid-template-columns:1fr auto; gap:28px; align-items:center; padding:18px 0 22px; border-bottom:1px solid var(--line); }
   .kicker { color:rgba(7,24,39,.5); font-family:Georgia,"Times New Roman",serif; font-size:10px; font-weight:700; letter-spacing:.16em; }
+  .title-row { display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
   h1 { margin:6px 0 0; font-family:Georgia,"Times New Roman","Noto Serif SC",serif; font-size:44px; line-height:50px; background:linear-gradient(95deg,#071827 0%,#0d355c 58%,#9b742e 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-  .date { color:var(--muted); font-family:Georgia,"Times New Roman",serif; font-size:14px; }
+  .date-tools { display:grid; justify-items:end; gap:10px; }
+  .date { color:var(--gold); font-family:Georgia,"Times New Roman",serif; font-size:14px; font-weight:700; }
+  .date-picker { display:flex; align-items:center; gap:8px; padding:8px 10px; border:1px solid var(--line); border-radius:999px; background:rgba(247,244,239,.72); }
+  .date-picker label { display:inline-flex; align-items:center; gap:5px; }
+  .date-picker span { color:rgba(7,24,39,.5); font-size:12px; }
+  .date-picker select { min-height:30px; border:1px solid rgba(7,24,39,.12); border-radius:999px; background:var(--paper); color:var(--ink); font:700 12px/18px Georgia,"Times New Roman",serif; padding:4px 26px 4px 10px; }
   .layout { display:grid; grid-template-columns:minmax(0,1fr) 342px; gap:24px; margin-top:22px; }
   section { margin-top:34px; }
   .layout section { margin-top:0; }
@@ -185,47 +230,97 @@ const stylesheet = `
   .topic-grid { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:12px; }
   .topic span { color:var(--gold); font-family:Georgia,"Times New Roman",serif; font-size:12px; }
   .topic b { display:block; margin-bottom:3px; color:rgba(7,24,39,.46); font-weight:500; }
-  @media (max-width: 960px) { main { width:min(100% - 32px,1240px); padding:22px; } header.hero, .layout, .topic-grid { grid-template-columns:1fr; } }
-  @media (max-width: 640px) { main { width:min(100% - 24px,1240px); padding:18px; } h1 { font-size:36px; line-height:42px; } .signal { grid-template-columns:42px minmax(0,1fr); } footer { grid-column:1/-1; justify-content:start; padding:8px 10px 12px 56px; border-left:0; border-top:1px solid rgba(7,24,39,.075); } }
+  @media (max-width: 960px) { main { width:min(100% - 32px,1240px); padding:22px; } header.hero, .layout, .topic-grid { grid-template-columns:1fr; } .date-tools { justify-items:start; } }
+  @media (max-width: 640px) { main { width:min(100% - 24px,1240px); padding:18px; } h1 { font-size:36px; line-height:42px; } .date-picker { flex-wrap:wrap; border-radius:16px; } .signal { grid-template-columns:42px minmax(0,1fr); } footer { grid-column:1/-1; justify-content:start; padding:8px 10px 12px 56px; border-left:0; border-top:1px solid rgba(7,24,39,.075); } }
+`;
+
+const dateScript = `
+<script>
+(() => {
+  const unique = (values) => [...new Set(values.filter(Boolean))];
+  const replaceOptions = (select, values, suffix = "") => {
+    const previous = select.value;
+    select.innerHTML = values.map((value) => {
+      const label = suffix ? String(Number(value)) + suffix : value;
+      return '<option value="' + value + '">' + label + '</option>';
+    }).join("");
+    select.value = values.includes(previous) ? previous : values[0] || "";
+  };
+
+  document.querySelectorAll(".date-picker").forEach((root) => {
+    const routes = JSON.parse(root.dataset.routes || "[]");
+    const selects = {
+      year: root.querySelector('[data-date-part="year"]'),
+      month: root.querySelector('[data-date-part="month"]'),
+      day: root.querySelector('[data-date-part="day"]'),
+    };
+
+    const sync = () => {
+      const year = selects.year.value;
+      const months = unique(routes.filter((route) => route.date.startsWith(year + "-")).map((route) => route.date.split("-")[1]));
+      replaceOptions(selects.month, months, "月");
+      const month = selects.month.value;
+      const days = unique(routes.filter((route) => route.date.startsWith(year + "-" + month + "-")).map((route) => route.date.split("-")[2]));
+      replaceOptions(selects.day, days, "日");
+    };
+
+    const navigate = () => {
+      sync();
+      const date = [selects.year.value, selects.month.value, selects.day.value].join("-");
+      const target = routes.find((route) => route.date === date);
+      if (target && target.href) window.location.href = target.href;
+    };
+
+    Object.values(selects).forEach((select) => select.addEventListener("change", navigate));
+  });
+})();
+</script>
 `;
 
 const data = JSON.parse(await readFile(dataPath, "utf8"));
-const requestedDate = args.get("date") || data.contentIndex?.activeDate || data.meta?.date;
-const date = dateParam(requestedDate);
+const availableDates = (data.contentIndex?.dates || [])
+  .filter((item) => Number(item.signalCount || 0) > 0)
+  .map((item) => ({
+    ...item,
+    date: dateParam(item.date || item.label),
+  }))
+  .filter((item) => item.date);
+const requestedDate = args.get("date") || availableDates[0]?.date || data.contentIndex?.activeDate || data.meta?.date;
+const selectedDate = dateParam(requestedDate);
 const outputRoot = path.resolve(projectRoot, args.get("out") || path.join("01-SiteV2", "site", "public-daily-brief"));
-const outputDir = path.join(outputRoot, date);
 
-const signals = (data.contentIndex?.signals || [])
-  .filter((signal) => dateParam(signal.date || signal.originalDate) === date)
-  .map((signal, index) => ({ signal, score: signalScore(signal, index) }))
-  .sort((a, b) => b.score - a.score || String(a.signal.id || "").localeCompare(String(b.signal.id || "")))
-  .slice(0, 10);
+const buildDailyBriefHtml = (date = selectedDate, selectorPrefix = "../") => {
+  const signals = (data.contentIndex?.signals || [])
+    .filter((signal) => dateParam(signal.date || signal.originalDate) === date)
+    .map((signal, index) => ({ signal, score: signalScore(signal, index) }))
+    .sort((a, b) => b.score - a.score || String(a.signal.id || "").localeCompare(String(b.signal.id || "")))
+    .slice(0, 10);
 
-if (!signals.length) {
-  throw new Error(`No public Daily Brief signals found for ${date}. Please run the content/card pipeline or export a date that exists in site-content.json.`);
-}
+  if (!signals.length) {
+    throw new Error(`No public Daily Brief signals found for ${date}. Please run the content/card pipeline or export a date that exists in site-content.json.`);
+  }
 
-const points = (data.contentIndex?.points || [])
-  .filter((point) => dateParam(point.date || point.originalDate) === date)
-  .slice(0, 3);
+  const points = (data.contentIndex?.points || [])
+    .filter((point) => dateParam(point.date || point.originalDate) === date)
+    .slice(0, 3);
 
-const trends = [
-  ...(data.contentIndex?.trends || []),
-  ...(data.contentIndex?.trendReports || []),
-].filter((trend) => dateParam(trend.date || trend.originalDate || trend.period) === date);
+  const trends = [
+    ...(data.contentIndex?.trends || []),
+    ...(data.contentIndex?.trendReports || []),
+  ].filter((trend) => dateParam(trend.date || trend.originalDate || trend.period) === date);
 
-const topics = (data.contentIndex?.pitchTopics || [])
-  .filter((topic) => dateParam(topic.date) === date)
-  .sort((a, b) => Number(b.score || 0) - Number(a.score || 0))
-  .slice(0, 3);
+  const topics = (data.contentIndex?.pitchTopics || [])
+    .filter((topic) => dateParam(topic.date) === date)
+    .sort((a, b) => Number(b.score || 0) - Number(a.score || 0))
+    .slice(0, 3);
 
-const primaryTrend = trends[0] || {
-  title: titleForSignal(signals[0]?.signal),
-  oneLine: introLine(signals[0]?.signal, 150),
-  nextObservation: "继续观察客户采用、预算归属和交付责任是否发生变化。",
-};
+  const primaryTrend = trends[0] || {
+    title: titleForSignal(signals[0]?.signal),
+    oneLine: introLine(signals[0]?.signal, 150),
+    nextObservation: "继续观察客户采用、预算归属和交付责任是否发生变化。",
+  };
 
-const html = `<!doctype html>
+  return `<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -239,9 +334,14 @@ const html = `<!doctype html>
     <header class="hero">
       <div>
         <span class="kicker">DAILY BRIEF</span>
-        <h1>今日简报</h1>
+        <div class="title-row">
+          <h1>今日简报</h1>
+          <div class="date">${escapeHtml(dateLabel(date))}</div>
+        </div>
       </div>
-      <div class="date">${escapeHtml(dateLabel(date))}</div>
+      <div class="date-tools">
+        ${dateSelector(date, availableDates, selectorPrefix)}
+      </div>
     </header>
     <div class="layout">
       <section>
@@ -269,11 +369,28 @@ const html = `<!doctype html>
       <div class="topic-grid">${(topics.length ? topics : signals.slice(0, 3).map(({ signal }) => ({ title: titleForSignal(signal) }))).slice(0, 3).map((topic, index) => renderTopic(topic, index, signals[index]?.signal)).join("")}</div>
     </section>
   </main>
+  ${dateScript}
 </body>
 </html>
 `;
+};
 
-await mkdir(outputDir, { recursive: true });
-await writeFile(path.join(outputDir, "index.html"), html, "utf8");
-await writeFile(path.join(outputRoot, "index.html"), html, "utf8");
-console.log(`Exported ${path.relative(projectRoot, path.join(outputDir, "index.html"))}`);
+const datesToExport = args.get("all") === "true"
+  ? availableDates.map((item) => item.date)
+  : [selectedDate];
+
+if (!datesToExport.length) {
+  throw new Error("No public Daily Brief dates found in site-content.json.");
+}
+
+await mkdir(outputRoot, { recursive: true });
+
+for (const date of datesToExport) {
+  const outputDir = path.join(outputRoot, date);
+  await mkdir(outputDir, { recursive: true });
+  await writeFile(path.join(outputDir, "index.html"), buildDailyBriefHtml(date, "../"), "utf8");
+  console.log(`Exported ${path.relative(projectRoot, path.join(outputDir, "index.html"))}`);
+}
+
+const rootDate = datesToExport.includes(selectedDate) ? selectedDate : datesToExport[0];
+await writeFile(path.join(outputRoot, "index.html"), buildDailyBriefHtml(rootDate, "./"), "utf8");

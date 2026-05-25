@@ -1,10 +1,10 @@
 window.WaveSightContent = {
   "meta": {
-    "date": "2026.05.24",
-    "sourceLabel": "Generated from 01-SiteV2/content (5 dates)",
+    "date": "2026.05.25",
+    "sourceLabel": "Generated from 01-SiteV2/content (6 dates)",
     "brand": "观澜AI",
     "version": "V2.1",
-    "generatedAt": "2026-05-24T05:17:21.575Z",
+    "generatedAt": "2026-05-25T14:15:35.890Z",
     "contentRoot": "01-SiteV2/content"
   },
   "tagTaxonomy": [
@@ -557,8 +557,18 @@ window.WaveSightContent = {
     }
   ],
   "contentIndex": {
-    "activeDate": "2026-05-24",
+    "activeDate": "2026-05-25",
     "dates": [
+      {
+        "date": "2026-05-25",
+        "label": "2026.05.25",
+        "title": "销售 AI 的第一笔生意，是那条线索流水线",
+        "dek": "12,000 多条 MQL 进来，25 名 SDR 排队处理。\n\n真正耗时间的，不一定是那封销售邮件，而是邮件发出之前的一串脏活：查公司、补画像、判意图、找切入点、写进 CRM，再确认哪些话不能乱说。",
+        "signalCount": 30,
+        "pointCount": 14,
+        "trendCount": 0,
+        "hasTrendReport": true
+      },
       {
         "date": "2026-05-24",
         "label": "2026.05.24",
@@ -567,7 +577,7 @@ window.WaveSightContent = {
         "signalCount": 17,
         "pointCount": 11,
         "trendCount": 0,
-        "hasTrendReport": true
+        "hasTrendReport": false
       },
       {
         "date": "2026-05-23",
@@ -4264,8 +4274,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "材料确认融资金额、投资方、平台定位和若干客户名称",
             "客户部署深度、续约数据和具体 ROI 仍需后续材料补充验证"
-          ],
-          "sourceTitleTranslation": "Netomi 获 Accenture Ventures、Adobe Ventures 和 WndrCo 1.1 亿美元融资，用于在复杂企业环境部署 Agentic 客户体验"
+          ]
         },
         "tags": [
           {
@@ -4379,8 +4388,7 @@ window.WaveSightContent = {
               "合作"
             ]
           }
-        ],
-        "sourceTitleTranslation": "Netomi 获 Accenture Ventures、Adobe Ventures 和 WndrCo 1.1 亿美元融资，用于在复杂企业环境部署 Agentic 客户体验"
+        ]
       },
       {
         "id": "SIG-20260523-02",
@@ -4450,8 +4458,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "AWS Marketplace 页面可确认产品、参与方和功能描述",
             "真实客户效果、处理量和成本改善仍需独立案例补充验证"
-          ],
-          "sourceTitleTranslation": "AWS Marketplace 上线 Agentic AI Ordering Agent"
+          ]
         },
         "tags": [
           {
@@ -4561,8 +4568,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "AWS Marketplace 上线 Agentic AI Ordering Agent"
+        ]
       },
       {
         "id": "SIG-20260523-A01",
@@ -4632,8 +4638,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "Davis 完成 550 万美元 Pre-Seed 融资"
+          ]
         },
         "tags": [
           {
@@ -4744,8 +4749,7 @@ window.WaveSightContent = {
               "合作"
             ]
           }
-        ],
-        "sourceTitleTranslation": "Davis 完成 550 万美元 Pre-Seed 融资"
+        ]
       },
       {
         "id": "SIG-20260523-A02",
@@ -4815,8 +4819,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "前 Coatue 合伙人为企业 AI Agent 创业公司融得 6500 万美元种子轮融资"
+          ]
         },
         "tags": [
           {
@@ -4928,8 +4931,7 @@ window.WaveSightContent = {
               "合作"
             ]
           }
-        ],
-        "sourceTitleTranslation": "前 Coatue 合伙人为企业 AI Agent 创业公司融得 6500 万美元种子轮融资"
+        ]
       },
       {
         "id": "SIG-20260523-A03",
@@ -4999,8 +5001,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "AWS Marketplace：BentoCloud"
+          ]
         },
         "tags": [
           {
@@ -5091,8 +5092,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "AWS Marketplace：BentoCloud"
+        ]
       },
       {
         "id": "SIG-20260523-A04",
@@ -5162,8 +5162,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "多人协作 AI 创业公司 Dust 融资 4000 万美元，帮助企业走出孤立 AI 助手"
+          ]
         },
         "tags": [
           {
@@ -5275,8 +5274,7 @@ window.WaveSightContent = {
               "合作"
             ]
           }
-        ],
-        "sourceTitleTranslation": "多人协作 AI 创业公司 Dust 融资 4000 万美元，帮助企业走出孤立 AI 助手"
+        ]
       },
       {
         "id": "SIG-20260523-A05",
@@ -5346,8 +5344,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "将 Microsoft Foundry 模型部署到按量计费的托管算力"
+          ]
         },
         "tags": [
           {
@@ -5438,8 +5435,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "将 Microsoft Foundry 模型部署到按量计费的托管算力"
+        ]
       },
       {
         "id": "SIG-20260523-A06",
@@ -5509,8 +5505,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "为什么投资 Sierra：企业 Agent 的未来"
+          ]
         },
         "tags": [
           {
@@ -5610,8 +5605,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "为什么投资 Sierra：企业 Agent 的未来"
+        ]
       },
       {
         "id": "SIG-20260523-A07",
@@ -5681,8 +5675,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "Realm 获得 450 万美元种子轮融资，推进企业销售中的 AI"
+          ]
         },
         "tags": [
           {
@@ -5782,8 +5775,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "Realm 获得 450 万美元种子轮融资，推进企业销售中的 AI"
+        ]
       },
       {
         "id": "SIG-20260523-A08",
@@ -5853,8 +5845,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "Featherless.ai 融资 2000 万美元，扩展开源 AI 模型的无服务器托管"
+          ]
         },
         "tags": [
           {
@@ -5954,8 +5945,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "Featherless.ai 融资 2000 万美元，扩展开源 AI 模型的无服务器托管"
+        ]
       },
       {
         "id": "SIG-20260523-A09",
@@ -6025,8 +6015,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "Nexus 完成 General Catalyst 领投的 430 万美元种子轮融资"
+          ]
         },
         "tags": [
           {
@@ -6126,8 +6115,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "Nexus 完成 General Catalyst 领投的 430 万美元种子轮融资"
+        ]
       },
       {
         "id": "SIG-20260524-A01",
@@ -6197,8 +6185,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "构建基于 SuperClaude 框架的工作流：融合命令、代理、模式与会话记忆"
+          ]
         },
         "tags": [
           {
@@ -6311,8 +6298,7 @@ window.WaveSightContent = {
               "合作"
             ]
           }
-        ],
-        "sourceTitleTranslation": "构建基于 SuperClaude 框架的工作流：融合命令、代理、模式与会话记忆"
+        ]
       },
       {
         "id": "SIG-20260524-A03",
@@ -6382,8 +6368,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "用 Amazon Bedrock AgentCore 构建商业智能 AI Agents"
+          ]
         },
         "tags": [
           {
@@ -6483,8 +6468,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "用 Amazon Bedrock AgentCore 构建商业智能 AI Agents"
+        ]
       },
       {
         "id": "SIG-20260524-A06",
@@ -6554,8 +6538,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "独家：Fazeshift 融资 1700 万美元，投资人看好从应收账款切入的 AI 财务运营"
+          ]
         },
         "tags": [
           {
@@ -6655,8 +6638,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "独家：Fazeshift 融资 1700 万美元，投资人看好从应收账款切入的 AI 财务运营"
+        ]
       },
       {
         "id": "SIG-20260524-A07",
@@ -6726,8 +6708,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "《2026 AI Agents 买方指南》执行摘要"
+          ]
         },
         "tags": [
           {
@@ -6838,8 +6819,7 @@ window.WaveSightContent = {
               "采购"
             ]
           }
-        ],
-        "sourceTitleTranslation": "《2026 AI Agents 买方指南》执行摘要"
+        ]
       },
       {
         "id": "SIG-20260524-A08",
@@ -6909,8 +6889,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "microsoft/Agents"
+          ]
         },
         "tags": [
           {
@@ -7021,8 +7000,7 @@ window.WaveSightContent = {
               "采购"
             ]
           }
-        ],
-        "sourceTitleTranslation": "microsoft/Agents"
+        ]
       },
       {
         "id": "SIG-20260524-A09",
@@ -7092,8 +7070,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "在 AWS Marketplace 发现 AI Agents 和工具"
+          ]
         },
         "tags": [
           {
@@ -7193,8 +7170,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "在 AWS Marketplace 发现 AI Agents 和工具"
+        ]
       },
       {
         "id": "SIG-20260524-A10",
@@ -7264,8 +7240,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "Tribal AI 获得 1000 万美元种子轮融资，将元数据原生 Agents 带入企业"
+          ]
         },
         "tags": [
           {
@@ -7365,8 +7340,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "Tribal AI 获得 1000 万美元种子轮融资，将元数据原生 Agents 带入企业"
+        ]
       },
       {
         "id": "SIG-20260524-A11",
@@ -7436,8 +7410,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "SnapLogic 的 Jean-Paul AI Agent 创造超过 300 万美元业务价值"
+          ]
         },
         "tags": [
           {
@@ -7549,8 +7522,7 @@ window.WaveSightContent = {
               "合作"
             ]
           }
-        ],
-        "sourceTitleTranslation": "SnapLogic 的 Jean-Paul AI Agent 创造超过 300 万美元业务价值"
+        ]
       },
       {
         "id": "SIG-20260524-A12",
@@ -7620,8 +7592,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "AWS Marketplace 中 AI Agents 与工具的合作伙伴指南"
+          ]
         },
         "tags": [
           {
@@ -7731,8 +7702,7 @@ window.WaveSightContent = {
               "rising"
             ]
           }
-        ],
-        "sourceTitleTranslation": "AWS Marketplace 中 AI Agents 与工具的合作伙伴指南"
+        ]
       },
       {
         "id": "SIG-20260524-A13",
@@ -7802,8 +7772,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "AI 同事创业公司 Viktor 完成 6470 万欧元 A 轮融资，发布 10 周收入运行率达 1290 万欧元"
+          ]
         },
         "tags": [
           {
@@ -7903,8 +7872,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "AI 同事创业公司 Viktor 完成 6470 万欧元 A 轮融资，发布 10 周收入运行率达 1290 万欧元"
+        ]
       },
       {
         "id": "SIG-20260524-A14",
@@ -7974,8 +7942,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "langchain-ai/deepagentsjs"
+          ]
         },
         "tags": [
           {
@@ -8086,8 +8053,7 @@ window.WaveSightContent = {
               "rising"
             ]
           }
-        ],
-        "sourceTitleTranslation": "langchain-ai/deepagentsjs"
+        ]
       },
       {
         "id": "SIG-20260524-A15",
@@ -8157,8 +8123,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "General Analysis 获得 1000 万美元种子轮融资，用于保障 Agentic AI 安全"
+          ]
         },
         "tags": [
           {
@@ -8269,8 +8234,7 @@ window.WaveSightContent = {
               "采购"
             ]
           }
-        ],
-        "sourceTitleTranslation": "General Analysis 获得 1000 万美元种子轮融资，用于保障 Agentic AI 安全"
+        ]
       },
       {
         "id": "SIG-20260524-A16",
@@ -8340,8 +8304,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "C.H. Robinson 如何用 LangChain AI Agents 每天自动处理 5500 批货运"
+          ]
         },
         "tags": [
           {
@@ -8432,8 +8395,7 @@ window.WaveSightContent = {
               "watch"
             ]
           }
-        ],
-        "sourceTitleTranslation": "C.H. Robinson 如何用 LangChain AI Agents 每天自动处理 5500 批货运"
+        ]
       },
       {
         "id": "SIG-20260524-A18",
@@ -8503,8 +8465,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "formulahendry/vscode-agent-skills"
+          ]
         },
         "tags": [
           {
@@ -8615,8 +8576,7 @@ window.WaveSightContent = {
               "rising"
             ]
           }
-        ],
-        "sourceTitleTranslation": "formulahendry/vscode-agent-skills"
+        ]
       },
       {
         "id": "SIG-20260524-A19",
@@ -8686,8 +8646,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "PwC 正在部署 Claude，为客户构建技术、执行交易并重塑企业职能"
+          ]
         },
         "tags": [
           {
@@ -8798,8 +8757,7 @@ window.WaveSightContent = {
               "rising"
             ]
           }
-        ],
-        "sourceTitleTranslation": "PwC 正在部署 Claude，为客户构建技术、执行交易并重塑企业职能"
+        ]
       },
       {
         "id": "SIG-20260524-A21",
@@ -8869,8 +8827,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "Conversion Agents 发布"
+          ]
         },
         "tags": [
           {
@@ -8981,8 +8938,7 @@ window.WaveSightContent = {
               "采购"
             ]
           }
-        ],
-        "sourceTitleTranslation": "Conversion Agents 发布"
+        ]
       },
       {
         "id": "SIG-20260524-A22",
@@ -9052,8 +9008,7 @@ window.WaveSightContent = {
           "evidenceBoundary": [
             "当前材料保留了原始链接、全文和哈希",
             "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-          ],
-          "sourceTitleTranslation": "Zalos 融资 360 万美元，构建可操作财务系统的 Computer Agents"
+          ]
         },
         "tags": [
           {
@@ -9153,12 +9108,5150 @@ window.WaveSightContent = {
               "watch"
             ]
           }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A01",
+        "slug": "微软研究院推出webwright终端原生浏览器代理框架-发布面向模型部署和算力调用的-ai-能力",
+        "title": "微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
+        "sourceTitle": "微软研究院推出Webwright终端原生浏览器代理框架",
+        "sources": "原文出处：marktechpost.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--webwright-auto-signal-p-001.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
         ],
-        "sourceTitleTranslation": "Zalos 融资 360 万美元，构建可操作财务系统的 Computer Agents"
+        "structuredRefs": [
+          "SIG-20260525-A01"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=微软研究院推出webwright终端原生浏览器代理框架-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "微软研究院推出Webwright终端原生浏览器代理框架",
+          "eventLine": "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+          "sourceLinks": [
+            {
+              "label": "marktechpost.com",
+              "url": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
+              "level": "B",
+              "note": "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A02",
+        "slug": "研究人员让claude-code发现人类可能不会设计的ai缩放算法-发布面向模型部署和算力调用的-ai-能力",
+        "title": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed",
+        "sourceTitle": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法",
+        "sources": "原文出处：the-decoder.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--claude-code-ai-auto-signal-p-002.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A02"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=研究人员让claude-code发现人类可能不会设计的ai缩放算法-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法",
+          "eventLine": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "A 级来源，当前材料来自 the-decoder.com。",
+          "sourceLinks": [
+            {
+              "label": "the-decoder.com",
+              "url": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed",
+              "level": "A",
+              "note": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A03",
+        "slug": "nvidia发布gated-deltanet-发布面向模型部署和算力调用的-ai-能力",
+        "title": "NVIDIA发布Gated DeltaNet 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule",
+        "sourceTitle": "NVIDIA发布Gated DeltaNet-2：解耦Delta规则中擦除与写入的线性注意力层",
+        "sources": "原文出处：marktechpost.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--nvidia-gated-deltanet-auto-signal-p-003.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A03"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=nvidia发布gated-deltanet-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "NVIDIA发布Gated DeltaNet 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "NVIDIA发布Gated DeltaNet-2：解耦Delta规则中擦除与写入的线性注意力层",
+          "eventLine": "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+          "sourceLinks": [
+            {
+              "label": "marktechpost.com",
+              "url": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule",
+              "level": "B",
+              "note": "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A04",
+        "slug": "multi-融资-押注销售和收入团队流程",
+        "title": "Multi 融资，押注销售和收入团队流程",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/",
+        "sourceTitle": "Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech",
+        "sources": "原文出处：dreamztech.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--multi-auto-signal-p-004.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A04"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=multi-融资-押注销售和收入团队流程",
+        "frontend": {
+          "displayTitle": "Multi 融资，押注销售和收入团队流程",
+          "sourceTitle": "Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech",
+          "eventLine": "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 dreamztech.com。",
+          "sourceLinks": [
+            {
+              "label": "dreamztech.com",
+              "url": "https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/",
+              "level": "B",
+              "note": "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A05",
+        "slug": "how-telli-automates-high-volume-enterprise-phone-operati-融资-押注销售和收入团队流程",
+        "title": "How telli automates high-volume enterprise phone operati 融资，押注销售和收入团队流程",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://livekit.com/blog/telli-automates-high-volume-enterprise-phone-operations-with-livekit-ai-coustics",
+        "sourceTitle": "How telli automates high-volume enterprise phone operations with LiveKit and ai-coustics | LiveKit",
+        "sources": "原文出处：livekit.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--how-telli-automates-high-volume-enterprise-phone-operati-auto-signal-p-005.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A05"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=how-telli-automates-high-volume-enterprise-phone-operati-融资-押注销售和收入团队流程",
+        "frontend": {
+          "displayTitle": "How telli automates high-volume enterprise phone operati 融资，押注销售和收入团队流程",
+          "sourceTitle": "How telli automates high-volume enterprise phone operations with LiveKit and ai-coustics | LiveKit",
+          "eventLine": "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 livekit.com。",
+          "sourceLinks": [
+            {
+              "label": "livekit.com",
+              "url": "https://livekit.com/blog/telli-automates-high-volume-enterprise-phone-operations-with-livekit-ai-coustics",
+              "level": "B",
+              "note": "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A06",
+        "slug": "cnbc-披露低价-ai-竞争冲击-openai-与-anthropic-上市预期",
+        "title": "CNBC 披露低价 AI 竞争冲击 OpenAI 与 Anthropic 上市预期",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。",
+        "judgment": "当企业能以更低成本获得接近能力，模型公司的商业故事会从能力领先转向价格、毛利和客户锁定。",
+        "event": "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。",
+        "businessMeaning": "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。",
+        "sourceUrl": "https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html",
+        "sourceTitle": "Cheap AI could derail OpenAI and Anthropic IPOs",
+        "sources": "原文出处：cnbc.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--cheap-ai-could-derail-openai-and-anthropic-ipos-auto-signal-p-006.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A06"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。"
+          ],
+          [
+            "为什么值得看",
+            "当企业能以更低成本获得接近能力，模型公司的商业故事会从能力领先转向价格、毛利和客户锁定。"
+          ],
+          [
+            "影响谁",
+            "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=cnbc-披露低价-ai-竞争冲击-openai-与-anthropic-上市预期",
+        "frontend": {
+          "displayTitle": "CNBC 披露低价 AI 竞争冲击 OpenAI 与 Anthropic 上市预期",
+          "sourceTitle": "Cheap AI could derail OpenAI and Anthropic IPOs",
+          "eventLine": "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。",
+          "whyWatch": "当企业能以更低成本获得接近能力，模型公司的商业故事会从能力领先转向价格、毛利和客户锁定。",
+          "businessMeaning": "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。",
+          "evidenceNote": "B 级来源，当前材料来自 cnbc.com。",
+          "sourceLinks": [
+            {
+              "label": "cnbc.com",
+              "url": "https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html",
+              "level": "B",
+              "note": "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-risk",
+            "name": "风险变量",
+            "group": "stage",
+            "aliases": [
+              "risk"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A07",
+        "slug": "capacity-部署-ai-到销售和收入团队流程",
+        "title": "Capacity 部署 AI 到销售和收入团队流程",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.beri.net/article/openai-guaranteed-capacity-3-year-compute-commit-calculator-2026",
+        "sourceTitle": "OpenAI's 3-Year Compute Commit: Discount or Trap? | THE D[AI]LY BRIEF",
+        "sources": "原文出处：beri.net",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--capacity-auto-signal-p-007.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A07"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=capacity-部署-ai-到销售和收入团队流程",
+        "frontend": {
+          "displayTitle": "Capacity 部署 AI 到销售和收入团队流程",
+          "sourceTitle": "OpenAI's 3-Year Compute Commit: Discount or Trap? | THE D[AI]LY BRIEF",
+          "eventLine": "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 beri.net。",
+          "sourceLinks": [
+            {
+              "label": "beri.net",
+              "url": "https://www.beri.net/article/openai-guaranteed-capacity-3-year-compute-commit-calculator-2026",
+              "level": "B",
+              "note": "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A08",
+        "slug": "字节跳动研究发现-向多模态大模型提问比转录文本更利于长文档训练-融资-押注模型部署和算力调用",
+        "title": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 融资，押注模型部署和算力调用",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://the-decoder.com/bytedance-study-finds-that-asking-lmms-questions-beats-making-it-transcribe-text-for-long-document-training",
+        "sourceTitle": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练",
+        "sources": "原文出处：the-decoder.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--auto-signal-auto-signal-p-008.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A08"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=字节跳动研究发现-向多模态大模型提问比转录文本更利于长文档训练-融资-押注模型部署和算力调用",
+        "frontend": {
+          "displayTitle": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 融资，押注模型部署和算力调用",
+          "sourceTitle": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练",
+          "eventLine": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "A 级来源，当前材料来自 the-decoder.com。",
+          "sourceLinks": [
+            {
+              "label": "the-decoder.com",
+              "url": "https://the-decoder.com/bytedance-study-finds-that-asking-lmms-questions-beats-making-it-transcribe-text-for-long-document-training",
+              "level": "A",
+              "note": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A09",
+        "slug": "阶跃星辰发布stepaudio-2-5-realtime-一款具有角色扮演rlhf和副语言理解的端到端语音模型-发布面向模型部署和算力调用的-ai-能力",
+        "title": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension",
+        "sourceTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+        "sources": "原文出处：marktechpost.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--stepaudio-2-5-realtime-rlhf-auto-signal-p-009.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A09"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=阶跃星辰发布stepaudio-2-5-realtime-一款具有角色扮演rlhf和副语言理解的端到端语音模型-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+          "eventLine": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+          "sourceLinks": [
+            {
+              "label": "marktechpost.com",
+              "url": "https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension",
+              "level": "B",
+              "note": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "track-ai-customer-service",
+            "name": "AI 客服",
+            "group": "track",
+            "aliases": [
+              "Voice AI",
+              "语音客服"
+            ]
+          },
+          {
+            "id": "function-customer-service",
+            "name": "客服售后",
+            "group": "function",
+            "aliases": [
+              "客服",
+              "售后",
+              "质检"
+            ]
+          },
+          {
+            "id": "scenario-customer-ticket",
+            "name": "工单与质检",
+            "group": "scenario",
+            "aliases": [
+              "工单",
+              "质检",
+              "智能派单"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A10",
+        "slug": "论文披露-llm-代理生成后端代码时会逐步丢失约束",
+        "title": "论文披露 LLM 代理生成后端代码时会逐步丢失约束",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。",
+        "judgment": "如果这类问题在企业开发中反复出现，AI 编程采购会更重视测试、审查和任务拆分，而不只是生成速度。",
+        "event": "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。",
+        "businessMeaning": "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。",
+        "sourceUrl": "https://arxiv.org/abs/2605.06445",
+        "sourceTitle": "约束衰减：大型语言模型代理在后端代码生成中的脆弱性",
+        "sources": "原文出处：arxiv.org",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-010.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A10"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。"
+          ],
+          [
+            "为什么值得看",
+            "如果这类问题在企业开发中反复出现，AI 编程采购会更重视测试、审查和任务拆分，而不只是生成速度。"
+          ],
+          [
+            "影响谁",
+            "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=论文披露-llm-代理生成后端代码时会逐步丢失约束",
+        "frontend": {
+          "displayTitle": "论文披露 LLM 代理生成后端代码时会逐步丢失约束",
+          "sourceTitle": "约束衰减：大型语言模型代理在后端代码生成中的脆弱性",
+          "eventLine": "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。",
+          "whyWatch": "如果这类问题在企业开发中反复出现，AI 编程采购会更重视测试、审查和任务拆分，而不只是生成速度。",
+          "businessMeaning": "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。",
+          "evidenceNote": "B 级来源，当前材料来自 arxiv.org。",
+          "sourceLinks": [
+            {
+              "label": "arxiv.org",
+              "url": "https://arxiv.org/abs/2605.06445",
+              "level": "B",
+              "note": "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A11",
+        "slug": "marktechpost-发布-langfuse-应用评估流程教程",
+        "title": "MarkTechPost 发布 Langfuse 应用评估流程教程",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。",
+        "judgment": "企业把 AI 应用接入业务后，需要知道每次调用为什么失败、如何评分，以及哪个提示词版本带来更好结果。",
+        "event": "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。",
+        "businessMeaning": "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。",
+        "sourceUrl": "https://www.marktechpost.com/2026/05/24/build-a-complete-langfuse-observability-and-evaluation-pipeline-for-tracing-prompt-management-scoring-and-experiments",
+        "sourceTitle": "构建完整的 Langfuse 可观测性与评估流水线以实现追踪、提示词管理、评分与实验",
+        "sources": "原文出处：marktechpost.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--langfuse-auto-signal-p-011.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A11"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。"
+          ],
+          [
+            "为什么值得看",
+            "企业把 AI 应用接入业务后，需要知道每次调用为什么失败、如何评分，以及哪个提示词版本带来更好结果。"
+          ],
+          [
+            "影响谁",
+            "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=marktechpost-发布-langfuse-应用评估流程教程",
+        "frontend": {
+          "displayTitle": "MarkTechPost 发布 Langfuse 应用评估流程教程",
+          "sourceTitle": "构建完整的 Langfuse 可观测性与评估流水线以实现追踪、提示词管理、评分与实验",
+          "eventLine": "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。",
+          "whyWatch": "企业把 AI 应用接入业务后，需要知道每次调用为什么失败、如何评分，以及哪个提示词版本带来更好结果。",
+          "businessMeaning": "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。",
+          "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+          "sourceLinks": [
+            {
+              "label": "marktechpost.com",
+              "url": "https://www.marktechpost.com/2026/05/24/build-a-complete-langfuse-observability-and-evaluation-pipeline-for-tracing-prompt-management-scoring-and-experiments",
+              "level": "B",
+              "note": "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A12",
+        "slug": "为何不应在copilot等ai工具中依赖默认模型选择-部署-ai-到模型部署和算力调用",
+        "title": "为何不应在Copilot等AI工具中依赖默认模型选择 部署 AI 到模型部署和算力调用",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://the-decoder.com/why-you-shouldnt-leave-model-selection-on-default-in-copilot-gemini-and-other-ai-tools",
+        "sourceTitle": "为何不应在Copilot等AI工具中依赖默认模型选择",
+        "sources": "原文出处：the-decoder.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--copilot-ai-auto-signal-p-012.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A12"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=为何不应在copilot等ai工具中依赖默认模型选择-部署-ai-到模型部署和算力调用",
+        "frontend": {
+          "displayTitle": "为何不应在Copilot等AI工具中依赖默认模型选择 部署 AI 到模型部署和算力调用",
+          "sourceTitle": "为何不应在Copilot等AI工具中依赖默认模型选择",
+          "eventLine": "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "A 级来源，当前材料来自 the-decoder.com。",
+          "sourceLinks": [
+            {
+              "label": "the-decoder.com",
+              "url": "https://the-decoder.com/why-you-shouldnt-leave-model-selection-on-default-in-copilot-gemini-and-other-ai-tools",
+              "level": "A",
+              "note": "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A13",
+        "slug": "kritird-cortex-发布面向模型部署和算力调用的-ai-能力",
+        "title": "kritird/Cortex 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://github.com/kritird/cortex-agent-framework",
+        "sourceTitle": "kritird/Cortex-Agent-Framework",
+        "sources": "原文出处：github.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--kritird-cortex-auto-signal-p-013.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A13"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=kritird-cortex-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "kritird/Cortex 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "kritird/Cortex-Agent-Framework",
+          "eventLine": "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 github.com。",
+          "sourceLinks": [
+            {
+              "label": "github.com",
+              "url": "https://github.com/kritird/cortex-agent-framework",
+              "level": "B",
+              "note": "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A14",
+        "slug": "plansync-部署-ai-到地产开发和建筑设计流程",
+        "title": "PlanSync 部署 AI 到地产开发和建筑设计流程",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://agentmelt.com/case-studies/ai-sales-agent-b2b-saas/",
+        "sourceTitle": "AI Sales Agent for B2B SaaS Company: 3x Pipeline Coverage in 90 Days | Agentmelt",
+        "sources": "原文出处：agentmelt.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--plansync-auto-signal-p-014.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A14"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=plansync-部署-ai-到地产开发和建筑设计流程",
+        "frontend": {
+          "displayTitle": "PlanSync 部署 AI 到地产开发和建筑设计流程",
+          "sourceTitle": "AI Sales Agent for B2B SaaS Company: 3x Pipeline Coverage in 90 Days | Agentmelt",
+          "eventLine": "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 agentmelt.com。",
+          "sourceLinks": [
+            {
+              "label": "agentmelt.com",
+              "url": "https://agentmelt.com/case-studies/ai-sales-agent-b2b-saas/",
+              "level": "B",
+              "note": "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A15",
+        "slug": "pymnts-部署-ai-到销售和收入团队流程",
+        "title": "PYMNTS 部署 AI 到销售和收入团队流程",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.pymnts.com/artificial-intelligence-2/2026/better-coms-ai-agent-resolved-35-of-mortgage-calls-alone/",
+        "sourceTitle": "PYMNTS | Better.com's AI Agent Resolved 35% of Mortgage Calls Al…",
+        "sources": "原文出处：pymnts.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--pymnts-auto-signal-p-016.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A15"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=pymnts-部署-ai-到销售和收入团队流程",
+        "frontend": {
+          "displayTitle": "PYMNTS 部署 AI 到销售和收入团队流程",
+          "sourceTitle": "PYMNTS | Better.com's AI Agent Resolved 35% of Mortgage Calls Al…",
+          "eventLine": "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 pymnts.com。",
+          "sourceLinks": [
+            {
+              "label": "pymnts.com",
+              "url": "https://www.pymnts.com/artificial-intelligence-2/2026/better-coms-ai-agent-resolved-35-of-mortgage-calls-alone/",
+              "level": "B",
+              "note": "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A16",
+        "slug": "concepts-融资-押注企业智能体协作流程",
+        "title": "Concepts 融资，押注企业智能体协作流程",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.founderstoday.news/first-concepts-raises-1-million-pre-seed/",
+        "sourceTitle": "First Concepts raises $1M pre-seed to develop AI workspace for creative teams - FoundersToday",
+        "sources": "原文出处：founderstoday.news",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--concepts-auto-signal-p-017.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A16"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=concepts-融资-押注企业智能体协作流程",
+        "frontend": {
+          "displayTitle": "Concepts 融资，押注企业智能体协作流程",
+          "sourceTitle": "First Concepts raises $1M pre-seed to develop AI workspace for creative teams - FoundersToday",
+          "eventLine": "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 founderstoday.news。",
+          "sourceLinks": [
+            {
+              "label": "founderstoday.news",
+              "url": "https://www.founderstoday.news/first-concepts-raises-1-million-pre-seed/",
+              "level": "B",
+              "note": "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A17",
+        "slug": "foundey-部署-ai-到销售和收入团队流程",
+        "title": "Foundey 部署 AI 到销售和收入团队流程",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://foundey.com/",
+        "sourceTitle": "Foundey",
+        "sources": "原文出处：foundey.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--foundey-auto-signal-p-018.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A17"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=foundey-部署-ai-到销售和收入团队流程",
+        "frontend": {
+          "displayTitle": "Foundey 部署 AI 到销售和收入团队流程",
+          "sourceTitle": "Foundey",
+          "eventLine": "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 foundey.com。",
+          "sourceLinks": [
+            {
+              "label": "foundey.com",
+              "url": "https://foundey.com/",
+              "level": "B",
+              "note": "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A18",
+        "slug": "huggingface-huggingface-发布面向模型部署和算力调用的-ai-能力",
+        "title": "huggingface/huggingface 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://github.com/huggingface/huggingface-vscode-chat",
+        "sourceTitle": "huggingface/huggingface-vscode-chat",
+        "sources": "原文出处：github.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--huggingface-huggingface-auto-signal-p-019.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A18"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=huggingface-huggingface-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "huggingface/huggingface 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "huggingface/huggingface-vscode-chat",
+          "eventLine": "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "S 级来源，当前材料来自 github.com。",
+          "sourceLinks": [
+            {
+              "label": "github.com",
+              "url": "https://github.com/huggingface/huggingface-vscode-chat",
+              "level": "S",
+              "note": "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A19",
+        "slug": "cerebras-brings-kimi-k2-6-inference-to-enterprises-发布面向销售和收入团队流程的-ai-能力",
+        "title": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布面向销售和收入团队流程的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.cerebras.ai/blog/cerebras-kimi-k2-Enterprise",
+        "sourceTitle": "Cerebras Brings Kimi K2.6 Inference to Enterprises",
+        "sources": "原文出处：cerebras.ai",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--cerebras-brings-kimi-k2-6-inference-to-enterprises-auto-signal-p-021.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A19"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=cerebras-brings-kimi-k2-6-inference-to-enterprises-发布面向销售和收入团队流程的-ai-能力",
+        "frontend": {
+          "displayTitle": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布面向销售和收入团队流程的 AI 能力",
+          "sourceTitle": "Cerebras Brings Kimi K2.6 Inference to Enterprises",
+          "eventLine": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 cerebras.ai。",
+          "sourceLinks": [
+            {
+              "label": "cerebras.ai",
+              "url": "https://www.cerebras.ai/blog/cerebras-kimi-k2-Enterprise",
+              "level": "B",
+              "note": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A20",
+        "slug": "永恒的-邋遢九月-部署-ai-到模型部署和算力调用",
+        "title": "永恒的\"邋遢九月\" 部署 AI 到模型部署和算力调用",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
+        "sourceTitle": "永恒的\\\"邋遢九月\\\"",
+        "sources": "原文出处：geohot.github.io",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-022.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A20"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=永恒的-邋遢九月-部署-ai-到模型部署和算力调用",
+        "frontend": {
+          "displayTitle": "永恒的\"邋遢九月\" 部署 AI 到模型部署和算力调用",
+          "sourceTitle": "永恒的\\\"邋遢九月\\\"",
+          "eventLine": "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 geohot.github.io。",
+          "sourceLinks": [
+            {
+              "label": "geohot.github.io",
+              "url": "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
+              "level": "B",
+              "note": "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A21",
+        "slug": "克劳德不是你的架构师-别再让他假装是了-部署-ai-到模型部署和算力调用",
+        "title": "克劳德不是你的架构师。别再让他假装是了 部署 AI 到模型部署和算力调用",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.hollandtech.net/claude-is-not-your-architect",
+        "sourceTitle": "克劳德不是你的架构师。别再让他假装是了",
+        "sources": "原文出处：hollandtech.net",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-023.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A21"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=克劳德不是你的架构师-别再让他假装是了-部署-ai-到模型部署和算力调用",
+        "frontend": {
+          "displayTitle": "克劳德不是你的架构师。别再让他假装是了 部署 AI 到模型部署和算力调用",
+          "sourceTitle": "克劳德不是你的架构师。别再让他假装是了",
+          "eventLine": "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 hollandtech.net。",
+          "sourceLinks": [
+            {
+              "label": "hollandtech.net",
+              "url": "https://www.hollandtech.net/claude-is-not-your-architect",
+              "level": "B",
+              "note": "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A22",
+        "slug": "引用阿尔明-罗纳彻的话-部署-ai-到企业智能体协作流程",
+        "title": "引用阿尔明·罗纳彻的话 部署 AI 到企业智能体协作流程",
+        "date": "2026-05-25",
+        "signalType": "case",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://simonwillison.net/2026/May/24/armin-ronacher",
+        "sourceTitle": "引用阿尔明·罗纳彻的话",
+        "sources": "原文出处：simonwillison.net",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-024.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A22"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=引用阿尔明-罗纳彻的话-部署-ai-到企业智能体协作流程",
+        "frontend": {
+          "displayTitle": "引用阿尔明·罗纳彻的话 部署 AI 到企业智能体协作流程",
+          "sourceTitle": "引用阿尔明·罗纳彻的话",
+          "eventLine": "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 simonwillison.net。",
+          "sourceLinks": [
+            {
+              "label": "simonwillison.net",
+              "url": "https://simonwillison.net/2026/May/24/armin-ronacher",
+              "level": "B",
+              "note": "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A23",
+        "slug": "superdesigndev-superdesign-发布面向企业智能体协作流程的-ai-能力",
+        "title": "superdesigndev/superdesign 发布面向企业智能体协作流程的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://github.com/superdesigndev/superdesign/",
+        "sourceTitle": "superdesigndev/superdesign",
+        "sources": "原文出处：github.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--superdesigndev-superdesign-auto-signal-p-025.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A23"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=superdesigndev-superdesign-发布面向企业智能体协作流程的-ai-能力",
+        "frontend": {
+          "displayTitle": "superdesigndev/superdesign 发布面向企业智能体协作流程的 AI 能力",
+          "sourceTitle": "superdesigndev/superdesign",
+          "eventLine": "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 github.com。",
+          "sourceLinks": [
+            {
+              "label": "github.com",
+              "url": "https://github.com/superdesigndev/superdesign/",
+              "level": "B",
+              "note": "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A24",
+        "slug": "julianoczkowski-designer-融资-押注地产开发和建筑设计流程",
+        "title": "julianoczkowski/designer 融资，押注地产开发和建筑设计流程",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://github.com/julianoczkowski/designer-skills",
+        "sourceTitle": "julianoczkowski/designer-skills",
+        "sources": "原文出处：github.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--julianoczkowski-designer-auto-signal-p-026.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A24"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=julianoczkowski-designer-融资-押注地产开发和建筑设计流程",
+        "frontend": {
+          "displayTitle": "julianoczkowski/designer 融资，押注地产开发和建筑设计流程",
+          "sourceTitle": "julianoczkowski/designer-skills",
+          "eventLine": "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 github.com。",
+          "sourceLinks": [
+            {
+              "label": "github.com",
+              "url": "https://github.com/julianoczkowski/designer-skills",
+              "level": "B",
+              "note": "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A25",
+        "slug": "古尔曼披露苹果-watchos-27-将以体验修补为主",
+        "title": "古尔曼披露苹果 watchOS 27 将以体验修补为主",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。",
+        "judgment": "这会影响开发者客户对平台接口、适配成本和产品排期的判断，而不是只看发布会新功能。",
+        "event": "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。",
+        "businessMeaning": "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。",
+        "sourceUrl": "https://www.ithome.com/0/954/640.htm",
+        "sourceTitle": "古尔曼：苹果 watchOS 27 更新将主要关注稳定性、较小优化，而不是引入重大新功能",
+        "sources": "原文出处：ithome.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--watchos-27-auto-signal-p-027.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A25"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。"
+          ],
+          [
+            "为什么值得看",
+            "这会影响开发者客户对平台接口、适配成本和产品排期的判断，而不是只看发布会新功能。"
+          ],
+          [
+            "影响谁",
+            "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=古尔曼披露苹果-watchos-27-将以体验修补为主",
+        "frontend": {
+          "displayTitle": "古尔曼披露苹果 watchOS 27 将以体验修补为主",
+          "sourceTitle": "古尔曼：苹果 watchOS 27 更新将主要关注稳定性、较小优化，而不是引入重大新功能",
+          "eventLine": "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。",
+          "whyWatch": "这会影响开发者客户对平台接口、适配成本和产品排期的判断，而不是只看发布会新功能。",
+          "businessMeaning": "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。",
+          "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+          "sourceLinks": [
+            {
+              "label": "ithome.com",
+              "url": "https://www.ithome.com/0/954/640.htm",
+              "level": "B",
+              "note": "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A26",
+        "slug": "科大讯飞智能办公本-air-3-系列发布-支持离线-ai-与龙虾助手-2499-3599-元-发布面向模型部署和算力调用的-ai-能力",
+        "title": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.ithome.com/0/954/591.htm",
+        "sourceTitle": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元",
+        "sources": "原文出处：ithome.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--air-3-ai-2499-3599-auto-signal-p-028.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A26"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=科大讯飞智能办公本-air-3-系列发布-支持离线-ai-与龙虾助手-2499-3599-元-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元",
+          "eventLine": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+          "sourceLinks": [
+            {
+              "label": "ithome.com",
+              "url": "https://www.ithome.com/0/954/591.htm",
+              "level": "B",
+              "note": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A27",
+        "slug": "面壁智能联合清华等开源中国首个基于华为昇腾训练的-1-58-发布面向模型部署和算力调用的-ai-能力",
+        "title": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布面向模型部署和算力调用的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.ithome.com/0/954/759.htm",
+        "sourceTitle": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型 BitCPM-CANN",
+        "sources": "原文出处：ithome.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--1-58-auto-signal-p-029.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A27"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=面壁智能联合清华等开源中国首个基于华为昇腾训练的-1-58-发布面向模型部署和算力调用的-ai-能力",
+        "frontend": {
+          "displayTitle": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布面向模型部署和算力调用的 AI 能力",
+          "sourceTitle": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型 BitCPM-CANN",
+          "eventLine": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+          "sourceLinks": [
+            {
+              "label": "ithome.com",
+              "url": "https://www.ithome.com/0/954/759.htm",
+              "level": "B",
+              "note": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          },
+          {
+            "id": "stage-watch",
+            "name": "观察",
+            "group": "stage",
+            "aliases": [
+              "watch"
+            ]
+          },
+          {
+            "id": "region-china",
+            "name": "中国适配",
+            "group": "region",
+            "aliases": [
+              "中国",
+              "本土"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A28",
+        "slug": "lg-推出-44-5-英寸-5k2k-oled-曲面带鱼屏双模显示器-14999-元-发布面向企业智能体协作流程的-ai-能力",
+        "title": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布面向企业智能体协作流程的 AI 能力",
+        "date": "2026-05-25",
+        "signalType": "product_service",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.ithome.com/0/954/586.htm",
+        "sourceTitle": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元",
+        "sources": "原文出处：ithome.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--lg-44-5-5k2k-oled-14999-auto-signal-p-030.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A28"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=lg-推出-44-5-英寸-5k2k-oled-曲面带鱼屏双模显示器-14999-元-发布面向企业智能体协作流程的-ai-能力",
+        "frontend": {
+          "displayTitle": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布面向企业智能体协作流程的 AI 能力",
+          "sourceTitle": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元",
+          "eventLine": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+          "sourceLinks": [
+            {
+              "label": "ithome.com",
+              "url": "https://www.ithome.com/0/954/586.htm",
+              "level": "B",
+              "note": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "stage-rising",
+            "name": "升温",
+            "group": "stage",
+            "aliases": [
+              "rising"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A29",
+        "slug": "余承东宣布问界m9将率先搭载新一代鸿蒙座舱-新车预售价公布-融资-押注企业智能体协作流程",
+        "title": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 融资，押注企业智能体协作流程",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.ithome.com/0/954/582.htm",
+        "sourceTitle": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布",
+        "sources": "原文出处：ithome.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--m9-auto-signal-p-031.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A29"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=余承东宣布问界m9将率先搭载新一代鸿蒙座舱-新车预售价公布-融资-押注企业智能体协作流程",
+        "frontend": {
+          "displayTitle": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 融资，押注企业智能体协作流程",
+          "sourceTitle": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布",
+          "eventLine": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+          "sourceLinks": [
+            {
+              "label": "ithome.com",
+              "url": "https://www.ithome.com/0/954/582.htm",
+              "level": "B",
+              "note": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260525-A30",
+        "slug": "全国首个开源鸿蒙机器人操作系统-m-融资-押注企业智能体协作流程",
+        "title": "全国首个开源鸿蒙机器人操作系统 M 融资，押注企业智能体协作流程",
+        "date": "2026-05-25",
+        "signalType": "funding",
+        "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "event": "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "sourceUrl": "https://www.ithome.com/0/954/530.htm",
+        "sourceTitle": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
+        "sources": "原文出处：ithome.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--m-auto-signal-p-032.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "funding"
+        ],
+        "structuredRefs": [
+          "SIG-20260525-A30"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+          ],
+          [
+            "影响谁",
+            "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+          ],
+          [
+            "证据边界",
+            "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+        "link": "signal-detail.html?id=全国首个开源鸿蒙机器人操作系统-m-融资-押注企业智能体协作流程",
+        "frontend": {
+          "displayTitle": "全国首个开源鸿蒙机器人操作系统 M 融资，押注企业智能体协作流程",
+          "sourceTitle": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
+          "eventLine": "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。",
+          "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+          "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+          "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+          "sourceLinks": [
+            {
+              "label": "ithome.com",
+              "url": "https://www.ithome.com/0/954/530.htm",
+              "level": "B",
+              "note": "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "当前材料保留了原始链接、全文和哈希",
+            "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
       }
     ],
     "cases": [],
     "dailyArticles": [
+      {
+        "id": "daily-2026-05-25",
+        "slug": "daily-2026-05-25",
+        "title": "销售 AI 的第一笔生意，是那条线索流水线",
+        "issue": "",
+        "period": "",
+        "contentType": "daily_observation",
+        "judgment": "12,000 多条 MQL 进来，25 名 SDR 排队处理。",
+        "dek": "12,000 多条 MQL 进来，25 名 SDR 排队处理。\n\n真正耗时间的，不一定是那封销售邮件，而是邮件发出之前的一串脏活：查公司、补画像、判意图、找切入点、写进 CRM，再确认哪些话不能乱说。",
+        "summary": [
+          "12,000 多条 MQL 进来，25 名 SDR 排队处理。",
+          "真正耗时间的，不一定是那封销售邮件，而是邮件发出之前的一串脏活：查公司、补画像、判意图、找切入点、写进 CRM，再确认哪些话不能乱说。",
+          "DreamzTech 的一个公开案例把这件事讲得很直白。案例页称，一家 2,400 人规模、Series D 阶段的 B2B 网络安全 SaaS 公司，每季度要处理 12,000 多条 MQL，由 25 名 SDR 负责资格判断。线索多只是表面，真正拥堵的是进入销售系统之前那段路。"
+        ],
+        "sections": [
+          {
+            "title": "销售瓶颈不在线索，而在处理线索",
+            "body": "案例页给出的起点很典型：这家公司 lead-to-SQL 比例卡在 6%，SDR 约 65% 的时间花在 LinkedIn、ZoomInfo、Apollo、6sense 等渠道的账户研究和意图信号整理上。\n\n与其说销售不努力，不如说销售前台被太多碎片任务堵住了。\n\n市场团队把线索带进来，广告和内容带来更多表单，意图数据越来越多，CRM 信息项越来越细。可在真正进入客户对话之前，SDR 还得判断这家公司是谁，买点在哪里，有没有预算迹象，应该用什么角度切入，记录应该落到哪里。\n\n如果这些动作都靠人逐条处理，AI 写邮件再快，也只是把邮件那一步变快。堵点还在前面。\n\nDreamzTech 的做法，是把这条前端流程拆成四个代理：Researcher 负责公司和联系人研究，Qualifier 负责线索资格判断，Writer 生成外呼内容，Reviewer 做品牌语气和合规检查。案例页称，这套系统接入 Claude 3.5、GPT-4o、Salesforce、HubSpot、Apollo、ZoomInfo 和 6sense。\n\n关键并非用了哪些模型。更值得看的是，销售任务被拆成了机器可以排队、交接和留下记录的处理链。"
+          },
+          {
+            "title": "SDR 的位置从执行者变成调度者",
+            "body": "过去，SDR 像一个人工适配器。\n\n他要读线索、查公司、翻联系人、判断意图、写第一封邮件、补 CRM 信息项，还要确保措辞不踩 CAN-SPAM、GDPR、CCPA 等合规线。经验丰富的人会做得更快、更准；新手则要在很多细节里慢慢学。\n\n多代理系统接手之后，人并不会从销售现场消失。人的位置会往后移。\n\nSDR 不再只是逐条整理线索的人，而是看哪些线索应该进入人工对话，哪些账户需要补信息，哪些外呼内容需要改，哪些异常不能让机器直接通过。销售运营也会变重，因为它要维护评分规则、信息项映射、系统集成和复核流程。\n\n组织里的新分工就藏在这里：SDR 从信息搬运和初筛执行者，变成调度者、复核者和客户关系承担者。\n\n如果一家企业只买“会写销售邮件”的工具，这条路走不通。它只会多一个写作入口。\n\n但如果企业把线索研究、资格评分、内容生成、合规复核和 CRM 更新接到一起，AI 就不再只是销售助手，而是在销售系统前面接住一批脏活。"
+          },
+          {
+            "title": "数字好看，也要克制看",
+            "body": "案例页称，这套四代理销售流程在第一年让 lead-to-SQL 提升到原来的 4.2 倍，并带来 1,420 万美元 Q1 pipeline 和 67% SDR productivity gain。\n\n这些数字很有吸引力，但必须克制。\n\n它们来自服务商案例页，不等于第三方审计，也不能直接推出长期 ROI、利润增长或所有 B2B 销售团队都适合照搬。案例页本身也把不少流程细节写得很满，读者应该把它当作一个可观察的企业应用样本，而不是最终证明。\n\n不过，哪怕把数字打个折，这个案例仍然有价值：企业愿意付费的，可能不是“生成一段话”，而是把一批线索推到下一个可销售状态。\n\n老板该看的是这条账。\n\n过去评估销售 AI，常问：它写得像不像人？邮件打开率有没有变高？销售是否少花时间查资料？\n\n接下来更该问：线索进入销售系统前，有多少动作已经稳定到可以排队处理？哪些判断必须留给人？哪些记录必须回写 CRM？如果 AI 出错，谁负责拦下？"
+          },
+          {
+            "title": "会编排流程的 AI，才会进入销售预算",
+            "body": "销售是一个很适合 AI 的场景，也很容易被 AI 讲得过头。它有大量文字，有明确目标，有 CRM 系统，有外部数据源，也有能被记录的推进指标。\n\n但销售不是一句话生成任务。DreamzTech 这个案例的价值，就在于它把“销售 AI”从一个单点工具，推向了线索处理现场。\n\n企业真正要买的，可能不是一个更会说话的 agent。它要的是一套能把 MQL 变成可销售机会的工作方式：研究谁来做，资格谁来判，话术谁来写，CRM 谁来更新，人在哪里接手。\n\n所以，别急着问 AI 会不会替代 SDR。\n\n更好的问题是：你的销售团队里，谁每天还在把线索、账户、意图数据和 CRM 信息项手工串起来？哪些步骤其实已经稳定到可以排队、评分、复核和交接？\n\n销售 AI 真正变重的地方，不在它能写多漂亮的邮件。\n\n而在它能不能把那堆细碎动作，变成一条有人能管、系统能接、结果能追的流水线。"
+          },
+          {
+            "title": "相关原文",
+            "body": "- DreamzTech 案例页：https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/"
+          }
+        ],
+        "homeTitle": "销售 AI 的第一笔生意，是那条线索流水线",
+        "homeSummary": "DreamzTech 案例页称，一家 B2B 网络安全 SaaS 公司用四个代理接手线索研究、资格判断、话术生成、合规复核和 CRM 更新。重点不是 AI 替人写邮件，而是邮件发出之前那堆脏活开始被机器排队处理。",
+        "homeCards": [
+          {
+            "label": "旧理解",
+            "title": "AI 帮销售写邮件",
+            "body": "单点写作工具只能加快邮件那一步，线索研究、评分、记录和复核仍然会堵在 SDR 面前。"
+          },
+          {
+            "label": "新位置",
+            "title": "SDR 管异常",
+            "body": "多代理系统接手研究、判断、写作和复核后，人更像调度者、异常处理者和客户关系承担者。"
+          },
+          {
+            "label": "真问题",
+            "title": "脏活在哪",
+            "body": "买销售 agent 前，企业要先看线索进入 CRM 前还有多少人工查找、判断和回写。"
+          }
+        ],
+        "columnPage": {
+          "title": "销售 AI 的第一笔生意，是那条线索流水线",
+          "thesis": "销售 AI 要进入预算，先要接住线索进 CRM 前那堆查找、判断、写作、复核和回写动作。",
+          "body": "一家 2,400 人规模的 B2B 网络安全 SaaS 公司，每季度有 12,000 多条 MQL 等着处理。25 名 SDR 的时间不只花在客户对话上，还要查公司、判资格、写外呼、做复核、回写 CRM。DreamzTech 把这些动作拆给四个代理接力。",
+          "impact": "DreamzTech 称，这套流程让 lead-to-SQL 达到原来的 4.2 倍，Q1 pipeline 为 1,420 万美元，SDR productivity gain 为 67%。这些数字先按服务商案例看。真正该追问的是：你的销售队伍里，还有多少线索卡在人工研究、评分和回写上？",
+          "note": "别先问 AI 会不会替代 SDR。先问销售团队里哪些步骤还在靠人把线索、账户、意图数据和 CRM 信息项手工串起来。",
+          "keywords": [
+            "DreamzTech",
+            "AI Sales Agent",
+            "SDR",
+            "B2B SaaS",
+            "CrewAI",
+            "Salesforce"
+          ],
+          "strength": "high",
+          "state": "",
+          "trendTitle": "",
+          "trendBody": "",
+          "watchItems": [],
+          "riskItems": []
+        }
+      },
       {
         "id": "daily-2026-05-24",
         "slug": "daily-2026-05-24",
@@ -9687,6 +14780,1882 @@ window.WaveSightContent = {
       }
     ],
     "points": [
+      {
+        "id": "OPN-FB-20260525-01",
+        "slug": "garry-tan-我最新的gbrain-evals刚刚下降-这就是gbrain与其他",
+        "title": "Garry Tan：我最新的gbrain-evals刚刚下降-这就是gbrain与其他",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--garry-tan-garry-tan-my-newest-gbrain-evals-just-dropped-this-is-how-gb.md",
+        "sourceUrl": "https://x.com/garrytan/status/2058448209027141709",
+        "originalDate": "",
+        "speakerLine": "Garry Tan",
+        "originalView": "My newest gbrain-evals just dropped - this is how gbrain does vs other options. is SOTA for reranking and embedding cost, speed, and retrieval success. GBrain beats MemPalace by 1% on LongMemEval and beats Vector RAG by 38% President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=12; retweets=0; replies=5",
+        "originalTranslation": "我最新的gbrain-evals刚刚下降-这就是gbrain与其他选项相比的方式。是用于重新排名和嵌入成本，速度和检索成功的SOTA。GBrain在LongMemEval上击败MemPalace 1 ％ ，击败Vector RAG 38 ％总裁兼首席执行官@ ycombinator -创始人@ garryslist- GStack的创建者和GBrain设计师/工程师，帮助创始人- SF Dem加速繁荣循环",
+        "interpretation": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：cost, yc, eval；包含数据、客户或业务量级线索",
+        "ratingScore": 7,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-ai-safety-governance",
+            "name": "AI 安全治理观点",
+            "group": "opinion",
+            "aliases": [
+              "安全",
+              "权限",
+              "治理"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-17",
+        "slug": "aaron-levie-一篇精彩的帖子-讲述了为什么工作不会像一些人预测的那样消失",
+        "title": "Aaron Levie：一篇精彩的帖子，讲述了为什么工作不会像一些人预测的那样消失",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--aaron-levie-aaron-levie-this-is-a-fantastic-post-about-why-jobs-aren-t.md",
+        "sourceUrl": "https://x.com/levie/status/2058223867815227756",
+        "originalDate": "",
+        "speakerLine": "Aaron Levie",
+        "originalView": "This is a fantastic post about why jobs aren’t going away in the way some predict. We are constantly making the mistake of confusing task completion with AI with being able to eliminate the whole job. Even as we can automate one or many tasks within a job, the definition of the job almost inevitably just expands to do vastly more of those tasks, do them at a higher quality, or move on to the type of task that hasn’t been automated yet. And as a result of being able to do more of the tasks or at a higher quality level, the job becomes valuable in a new way. And in many cases for now an entirely new audience as well. This will be true for coding, legal work, sales, or marketing. The small business or non-tech company that wants to now take on larger software projects finally can, and they’ll hire to do so. The small business that couldn’t afford a full marketing agency can hire or contract out to a marketer that can do as much as an agency did before now with agents. And so on. Don’t fall into the trap of confusing tasks with jobs. ceo @box - your business lives in content. unleash it with AI likes=627; retweets=84; replies=67",
+        "originalTranslation": "这是一篇精彩的帖子，讲述了为什么工作不会像一些人预测的那样消失。我们不断犯错误，将任务完成与AI混淆，将能够消除整个工作。即使我们可以在一个工作中自动化一个或多个任务，工作的定义几乎不可避免地只会扩展到完成更多的任务，以更高的质量完成它们，或者转向尚未自动化的任务类型。 由于能够完成更多的任务或更高的质量水平，这项工作以新的方式变得有价值。在许多情况下，现在也是一个全新的受众。这适用于编码、法律工作、销售或营销。现在想要承担大型软件项目的小企业或非技术公司终于可以做到这一点，他们会雇佣这样的公司。 买不起完整营销机构的小企业可以雇佣或外包给营销人员，他们可以像以前的Agent商一样做很多事情。等等。不要陷入将任务与工作混淆的陷阱。ceo @ box -您的业务生活在内容中。用AI释放它",
+        "interpretation": "这条观点说明 AI 编程正在从单点工具转向开发流程、测试和任务管理。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent, agents；包含数据、客户或业务量级线索",
+        "ratingScore": 6,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-ai-coding",
+            "name": "AI Coding 观点",
+            "group": "opinion",
+            "aliases": [
+              "编程",
+              "开发者工具"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-02",
+        "slug": "thariq-ai-编程进入开发流程管理",
+        "title": "Thariq：AI 编程进入开发流程管理",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--thariq-thariq-this-is-me-cleaning-up-some-leftover-services-for-my-old.md",
+        "sourceUrl": "https://x.com/trq212/status/2058380417716125966",
+        "originalDate": "",
+        "speakerLine": "Thariq",
+        "originalView": "this is me cleaning up some leftover services for my old startup @OMMultiverse we have a huge legacy codebase and a community that still uses it but I haven't had any time to actually look into cost saving measures myself Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=29; retweets=0; replies=2",
+        "originalTranslation": "这是我为我的旧创业公司@ OMMultiverse清理一些剩余的服务，我们有一个庞大的遗留代码库和一个仍在使用它的社区，但我还没有时间自己实际研究成本节约措施Claude Code @ anthropicai. prev YC W20, @ southpkcommons, @ medialab",
+        "interpretation": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；商业/产品变量：cost, yc, claude code；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-ai-coding",
+            "name": "AI Coding 观点",
+            "group": "opinion",
+            "aliases": [
+              "编程",
+              "开发者工具"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-03",
+        "slug": "garry-tan-思考机器令人印象深刻",
+        "title": "Garry Tan：思考机器令人印象深刻",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--garry-tan-garry-tan-thinking-machines-is-impressive-in-a-couple-hours-.md",
+        "sourceUrl": "https://x.com/garrytan/status/2058378310254793013",
+        "originalDate": "",
+        "speakerLine": "Garry Tan",
+        "originalView": "Thinking Machines is impressive. In a couple hours I just fine tuned my own Qwen3.5-397B model this afternoon. Fast usable multimodal is also going to enable very mind-blowing personal AI. President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=996; retweets=56; replies=63",
+        "originalTranslation": "思考机器令人印象深刻。几个小时后，我今天下午就对自己的Qwen3.5-397B型号进行了微调。快速可用的多模式也将实现非常令人兴奋的个人AI。总裁兼首席执行官@ ycombinator -创始人@ garryslist- GStack的创建者和GBrain设计师/工程师，帮助创始人- SF Dem加速繁荣循环",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：yc；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-04",
+        "slug": "garry-tan-我们应该与那些想要阻止创业公司留在旧金山的人作斗争",
+        "title": "Garry Tan：我们应该与那些想要阻止创业公司留在旧金山的人作斗争",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--garry-tan-garry-tan-we-should-fight-the-people-who-want-to-stop-startu.md",
+        "sourceUrl": "https://x.com/garrytan/status/2058251537298980992",
+        "originalDate": "",
+        "speakerLine": "Garry Tan",
+        "originalView": "We should fight the people who want to stop startups from staying in San Francisco. We want more startups and more prosperity. I'm fighting back through Garry's List Action, I'm in for $50K, I need 9 more people to match me. Are you in? President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=121; retweets=6; replies=6",
+        "originalTranslation": "我们应该与那些想要阻止创业公司留在旧金山的人作斗争。我们想要更多的创业公司和更多的繁荣。我正在通过Garry's List Action进行反击，我要$ 50K ，我需要9个人来匹配我。您在吗？总裁兼首席执行官@ ycombinator -创始人@ garryslist- GStack和GBrain的创建者-设计师/工程师，帮助创始人- SF Dem加速繁荣循环",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：yc；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-05",
+        "slug": "peter-steinberger-我一直想要一个github仪表板-查看我的存储库-打开的问题-pr",
+        "title": "Peter Steinberger：我一直想要一个GitHub仪表板：查看我的存储库、打开的问题/PR",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--peter-steinberger-peter-steinberger-i-always-wanted-a-github-dashboard.md",
+        "sourceUrl": "https://x.com/steipete/status/2058381186884411473",
+        "originalDate": "",
+        "speakerLine": "Peter Steinberger",
+        "originalView": "I always wanted a GitHub dashboard: See my repos, open Issues/PRs, what version I released last, how many commits since last release. So I built one for everyone. Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=676; retweets=43; replies=58",
+        "originalTranslation": "我一直想要一个GitHub仪表板：查看我的存储库、打开的问题/PR、我上次发布的版本、自上次发布以来提交了多少次。所以我为每个人建造了一个。Polyagentmorous ClawFather。退休后回来玩AI ，帮助龙虾接管世界。@ OpenClaw🦞 + @ OpenAI",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-08",
+        "slug": "peter-steinberger-让-codex-记录大型改动中的取舍",
+        "title": "Peter Steinberger：让 Codex 记录大型改动中的取舍",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--peter-steinberger-peter-steinberger-tell-codex-to-maintain-a-scratch-l.md",
+        "sourceUrl": "https://x.com/steipete/status/2058308112134635528",
+        "originalDate": "",
+        "speakerLine": "Peter Steinberger",
+        "originalView": "Tell codex to maintain a scratch-log while it works on bigger refactors with decisions it had to make, tradeoffs, review fixes, so later on you can read through which tradeoffs the agent made, what you forgot to specify etc. Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=158; retweets=4; replies=10",
+        "originalTranslation": "告诉Codex维护一个草稿日志，同时在更大的重构上使用它必须做出的决定、权衡、审查修复，以便稍后您可以阅读Agent做出的权衡、忘记指定的内容等。Polyagentmorous ClawFather。退休后回来玩AI ，帮助龙虾接管世界。@ OpenClaw🦞 + @ OpenAI",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-14",
+        "slug": "guillermo-rauch-ai-编程进入开发流程管理",
+        "title": "Guillermo Rauch：AI 编程进入开发流程管理",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--guillermo-rauch-guillermo-rauch-processed-1400-replies-openai-is-catch.md",
+        "sourceUrl": "https://x.com/rauchg/status/2058353051073970416",
+        "originalDate": "",
+        "speakerLine": "Guillermo Rauch",
+        "originalView": "Processed 1400 replies ◾ OpenAI is catching up to Anthropic ◾ 'Codex' got more mentions than 'Claude Code' ◾ However, by model mentions, A\\ is mogging @vercel CEO likes=211; retweets=8; replies=43",
+        "originalTranslation": "已处理1400条回复◾OpenAI正在追赶Anthropic ◾ “Codex”比“Claude Code”获得更多提及◾然而，通过模型提及， A\\正在吞噬@ vercel首席执行官",
+        "interpretation": "这条观点提示 Agent 落地会先遇到运行环境、权限边界和工具连接问题。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：claude code；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-ai-coding",
+            "name": "AI Coding 观点",
+            "group": "opinion",
+            "aliases": [
+              "编程",
+              "开发者工具"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-15",
+        "slug": "guillermo-rauch-向我展示你用ai构建的东西-你最为自豪",
+        "title": "Guillermo Rauch：向我展示你用AI构建的东西，你最为自豪",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--guillermo-rauch-guillermo-rauch-show-me-the-thing-you-ve-built-with-ai.md",
+        "sourceUrl": "https://x.com/rauchg/status/2058245330836271263",
+        "originalDate": "",
+        "speakerLine": "Guillermo Rauch",
+        "originalView": "Show me the thing you’ve built with AI you’re most proud of. Reply with a working product URL and what model / agent you primarily used. @vercel CEO likes=2195; retweets=102; replies=1558",
+        "originalTranslation": "向我展示你用AI构建的东西，你最为自豪。回复有效的产品URL ，以及您主要使用的型号/Agent。@ vercel CEO",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-18",
+        "slug": "peter-steinberger-codex-已能完成轻量界面实验",
+        "title": "Peter Steinberger：Codex 已能完成轻量界面实验",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--peter-steinberger-peter-steinberger-codex-made-a-smiley-t-co-ujc4x4a8q.md",
+        "sourceUrl": "https://x.com/steipete/status/2058332234247987379",
+        "originalDate": "",
+        "speakerLine": "Peter Steinberger",
+        "originalView": "codex... made a smiley? :) Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI likes=275; retweets=5; replies=47",
+        "originalTranslation": "Codex...做了一个笑脸？:) Polyagentmorous ClawFather。退休后回来与AI捣乱，帮助龙虾接管世界。@ OpenClaw🦞 + @ OpenAI",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-07",
+        "slug": "nikunj-kothari-差不多一年前写了这篇文章-终于开始看到更多的b2b公司意识到这个机会",
+        "title": "Nikunj Kothari：差不多一年前写了这篇文章，终于开始看到更多的B2B公司意识到这个机会",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--nikunj-kothari-nikunj-kothari-wrote-this-almost-a-year-ago-and-finally.md",
+        "sourceUrl": "https://x.com/nikunj/status/2058203594672021769",
+        "originalDate": "",
+        "speakerLine": "Nikunj Kothari",
+        "originalView": "Wrote this almost a year ago, and finally starting to see more B2B companies wake up to this opportunity.. Don’t wait another year. Narratives and vibes are extremely important to stand out amongst the slop 🪄 partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧 likes=132; retweets=8; replies=6",
+        "originalTranslation": "差不多一年前写了这篇文章，终于开始看到更多的B2B公司意识到这个机会。不要再等一年了。在SLOP🪄合作伙伴@ fpvventures中脱颖而出，叙述和氛围非常重要-投资种子/A.以前：提前雇用@ meter、@ opendoor、@ atlassian等。love @ shimoleejhaveri + 👦👧",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；包含数据、客户或业务量级线索",
+        "ratingScore": 4,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-09",
+        "slug": "thariq-ai-编程进入开发流程管理",
+        "title": "Thariq：AI 编程进入开发流程管理",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--thariq-thariq-every-now-and-then-i-remember-you-can-run-the-please-sav.md",
+        "sourceUrl": "https://x.com/trq212/status/2058377974882210096",
+        "originalDate": "",
+        "speakerLine": "Thariq",
+        "originalView": "every now and then I remember you can run the \"please save me money\" prompt and it will actually work Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=463; retweets=11; replies=42",
+        "originalTranslation": "时不时地，我记得你可以运行“请为我省钱”的提示，它实际上会工作克劳德代码@ anthropicai。prev YC W20, @ southpkcommons, @ medialab",
+        "interpretation": "这条观点提示 Agent 落地会先遇到运行环境、权限边界和工具连接问题。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；商业/产品变量：yc, claude code；包含数据、客户或业务量级线索",
+        "ratingScore": 4,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-ai-coding",
+            "name": "AI Coding 观点",
+            "group": "opinion",
+            "aliases": [
+              "编程",
+              "开发者工具"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-16",
+        "slug": "guillermo-rauch-gm-vercel首席执行官",
+        "title": "Guillermo Rauch：gm 🏃‍♂️ @ vercel首席执行官",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--guillermo-rauch-guillermo-rauch-gm-t-co-vi6wkrsrtv.md",
+        "sourceUrl": "https://x.com/rauchg/status/2058239837195628941",
+        "originalDate": "",
+        "speakerLine": "Guillermo Rauch",
+        "originalView": "gm 🏃‍♂️ @vercel CEO likes=385; retweets=1; replies=31",
+        "originalTranslation": "gm 🏃‍♂️ @ vercel首席执行官",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；包含数据、客户或业务量级线索",
+        "ratingScore": 4,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260525-19",
+        "slug": "aditya-agarwal-你能想象我们生活在6个月前的世界吗",
+        "title": "Aditya Agarwal：你能想象我们生活在6个月前的世界吗",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--aditya-agarwal-aditya-agarwal-can-you-imagine-that-we-lived-in-a-world.md",
+        "sourceUrl": "https://x.com/adityaag/status/2058233900464238801",
+        "originalDate": "",
+        "speakerLine": "Aditya Agarwal",
+        "originalView": "Can you imagine that we lived in a world 6 months (Nov 2025) ago when we would mostly just chat with LLMs and would be so happy about AI?? It's May 2026 and these LLMs now have produced more code than we have written over all time. General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad likes=108; retweets=6; replies=18",
+        "originalTranslation": "你能想象我们生活在6个月前（ 2025年11月）的世界吗？那时，我们大多只与LLM聊天，对AI非常满意？现在是2026年5月，这些LLM现在已经产生了比我们一直以来编写的更多的代码。普通合伙人@ SouthPkCommons ，联合创始人@ Bevel_Health |例如： Early Eng @ facebook、CTO @ Dropbox、Board @ Flipkart |乐观主义者、建筑商、爸爸",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；包含数据、客户或业务量级线索",
+        "ratingScore": 4,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
       {
         "id": "OPN-FB-20260524-07",
         "slug": "peter-yang-ai-编程进入开发流程管理",
@@ -17740,15 +24709,15 @@ window.WaveSightContent = {
     ],
     "trendReports": [
       {
-        "id": "TRD-WATCH-20260524",
-        "slug": "构建基于superclaude框架的工作流-融合命令-代理-模式与会话记忆-发布面向模型部署和算力调用的-ai-能力",
-        "title": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力｜继续观察",
+        "id": "TRD-WATCH-20260525",
+        "slug": "微软研究院推出webwright终端原生浏览器代理框架-发布面向模型部署和算力调用的-ai-能力",
+        "title": "微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力｜继续观察",
         "oneLine": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
         "score": "继续观察",
         "stage": "暂无公开信息补足深挖条件",
-        "date": "2026-05-24",
-        "updated": "2026.05.24",
-        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--superclaude-auto-signal-p-001.md",
+        "date": "2026-05-25",
+        "updated": "2026.05.25",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--webwright-auto-signal-p-001.md",
         "relationFields": "",
         "relations": [],
         "evidenceGaps": "暂未监测到足够同类案例、客户付费信息或多源证据，不能写成正式趋势结论。",
@@ -17792,6 +24761,5261 @@ window.WaveSightContent = {
             "aliases": [
               "中国",
               "本土"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "signals": [
+    {
+      "id": "SIG-20260525-A01",
+      "slug": "微软研究院推出webwright终端原生浏览器代理框架-发布面向模型部署和算力调用的-ai-能力",
+      "title": "微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
+      "sourceTitle": "微软研究院推出Webwright终端原生浏览器代理框架",
+      "sources": "原文出处：marktechpost.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--webwright-auto-signal-p-001.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A01"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=微软研究院推出webwright终端原生浏览器代理框架-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "微软研究院推出Webwright终端原生浏览器代理框架",
+        "eventLine": "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+        "sourceLinks": [
+          {
+            "label": "marktechpost.com",
+            "url": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
+            "level": "B",
+            "note": "微软研究院推出Webwright终端原生浏览器代理框架 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A02",
+      "slug": "研究人员让claude-code发现人类可能不会设计的ai缩放算法-发布面向模型部署和算力调用的-ai-能力",
+      "title": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed",
+      "sourceTitle": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法",
+      "sources": "原文出处：the-decoder.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--claude-code-ai-auto-signal-p-002.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A02"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=研究人员让claude-code发现人类可能不会设计的ai缩放算法-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法",
+        "eventLine": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "A 级来源，当前材料来自 the-decoder.com。",
+        "sourceLinks": [
+          {
+            "label": "the-decoder.com",
+            "url": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed",
+            "level": "A",
+            "note": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A03",
+      "slug": "nvidia发布gated-deltanet-发布面向模型部署和算力调用的-ai-能力",
+      "title": "NVIDIA发布Gated DeltaNet 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule",
+      "sourceTitle": "NVIDIA发布Gated DeltaNet-2：解耦Delta规则中擦除与写入的线性注意力层",
+      "sources": "原文出处：marktechpost.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--nvidia-gated-deltanet-auto-signal-p-003.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A03"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=nvidia发布gated-deltanet-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "NVIDIA发布Gated DeltaNet 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "NVIDIA发布Gated DeltaNet-2：解耦Delta规则中擦除与写入的线性注意力层",
+        "eventLine": "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+        "sourceLinks": [
+          {
+            "label": "marktechpost.com",
+            "url": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule",
+            "level": "B",
+            "note": "NVIDIA发布Gated DeltaNet 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A04",
+      "slug": "multi-融资-押注销售和收入团队流程",
+      "title": "Multi 融资，押注销售和收入团队流程",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/",
+      "sourceTitle": "Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech",
+      "sources": "原文出处：dreamztech.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--multi-auto-signal-p-004.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A04"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=multi-融资-押注销售和收入团队流程",
+      "frontend": {
+        "displayTitle": "Multi 融资，押注销售和收入团队流程",
+        "sourceTitle": "Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech",
+        "eventLine": "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 dreamztech.com。",
+        "sourceLinks": [
+          {
+            "label": "dreamztech.com",
+            "url": "https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/",
+            "level": "B",
+            "note": "Multi 宣布$14.2M 融资，材料把资金用途指向销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A05",
+      "slug": "how-telli-automates-high-volume-enterprise-phone-operati-融资-押注销售和收入团队流程",
+      "title": "How telli automates high-volume enterprise phone operati 融资，押注销售和收入团队流程",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://livekit.com/blog/telli-automates-high-volume-enterprise-phone-operations-with-livekit-ai-coustics",
+      "sourceTitle": "How telli automates high-volume enterprise phone operations with LiveKit and ai-coustics | LiveKit",
+      "sources": "原文出处：livekit.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--how-telli-automates-high-volume-enterprise-phone-operati-auto-signal-p-005.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A05"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=how-telli-automates-high-volume-enterprise-phone-operati-融资-押注销售和收入团队流程",
+      "frontend": {
+        "displayTitle": "How telli automates high-volume enterprise phone operati 融资，押注销售和收入团队流程",
+        "sourceTitle": "How telli automates high-volume enterprise phone operations with LiveKit and ai-coustics | LiveKit",
+        "eventLine": "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 livekit.com。",
+        "sourceLinks": [
+          {
+            "label": "livekit.com",
+            "url": "https://livekit.com/blog/telli-automates-high-volume-enterprise-phone-operations-with-livekit-ai-coustics",
+            "level": "B",
+            "note": "How telli automates high-volume enterprise phone operati 宣布$3.6M 融资，材料把资金用途指向销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A06",
+      "slug": "cnbc-披露低价-ai-竞争冲击-openai-与-anthropic-上市预期",
+      "title": "CNBC 披露低价 AI 竞争冲击 OpenAI 与 Anthropic 上市预期",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。",
+      "judgment": "当企业能以更低成本获得接近能力，模型公司的商业故事会从能力领先转向价格、毛利和客户锁定。",
+      "event": "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。",
+      "businessMeaning": "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。",
+      "sourceUrl": "https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html",
+      "sourceTitle": "Cheap AI could derail OpenAI and Anthropic IPOs",
+      "sources": "原文出处：cnbc.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--cheap-ai-could-derail-openai-and-anthropic-ipos-auto-signal-p-006.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A06"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。"
+        ],
+        [
+          "为什么值得看",
+          "当企业能以更低成本获得接近能力，模型公司的商业故事会从能力领先转向价格、毛利和客户锁定。"
+        ],
+        [
+          "影响谁",
+          "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=cnbc-披露低价-ai-竞争冲击-openai-与-anthropic-上市预期",
+      "frontend": {
+        "displayTitle": "CNBC 披露低价 AI 竞争冲击 OpenAI 与 Anthropic 上市预期",
+        "sourceTitle": "Cheap AI could derail OpenAI and Anthropic IPOs",
+        "eventLine": "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。",
+        "whyWatch": "当企业能以更低成本获得接近能力，模型公司的商业故事会从能力领先转向价格、毛利和客户锁定。",
+        "businessMeaning": "采购方会把模型能力、调用成本和供应商风险放在同一张表里比较，资本市场也会重新看待高估值模型公司的增长质量。",
+        "evidenceNote": "B 级来源，当前材料来自 cnbc.com。",
+        "sourceLinks": [
+          {
+            "label": "cnbc.com",
+            "url": "https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html",
+            "level": "B",
+            "note": "CNBC 讨论中国和欧美低价模型对美国前沿模型公司的估值与上市预期带来的压力。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-risk",
+          "name": "风险变量",
+          "group": "stage",
+          "aliases": [
+            "risk"
+          ]
+        },
+        {
+          "id": "region-us",
+          "name": "美国",
+          "group": "region",
+          "aliases": [
+            "US"
+          ]
+        },
+        {
+          "id": "region-global",
+          "name": "全球",
+          "group": "region",
+          "aliases": [
+            "海外"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A07",
+      "slug": "capacity-部署-ai-到销售和收入团队流程",
+      "title": "Capacity 部署 AI 到销售和收入团队流程",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.beri.net/article/openai-guaranteed-capacity-3-year-compute-commit-calculator-2026",
+      "sourceTitle": "OpenAI's 3-Year Compute Commit: Discount or Trap? | THE D[AI]LY BRIEF",
+      "sources": "原文出处：beri.net",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--capacity-auto-signal-p-007.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A07"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=capacity-部署-ai-到销售和收入团队流程",
+      "frontend": {
+        "displayTitle": "Capacity 部署 AI 到销售和收入团队流程",
+        "sourceTitle": "OpenAI's 3-Year Compute Commit: Discount or Trap? | THE D[AI]LY BRIEF",
+        "eventLine": "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 beri.net。",
+        "sourceLinks": [
+          {
+            "label": "beri.net",
+            "url": "https://www.beri.net/article/openai-guaranteed-capacity-3-year-compute-commit-calculator-2026",
+            "level": "B",
+            "note": "Capacity 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A08",
+      "slug": "字节跳动研究发现-向多模态大模型提问比转录文本更利于长文档训练-融资-押注模型部署和算力调用",
+      "title": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 融资，押注模型部署和算力调用",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://the-decoder.com/bytedance-study-finds-that-asking-lmms-questions-beats-making-it-transcribe-text-for-long-document-training",
+      "sourceTitle": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练",
+      "sources": "原文出处：the-decoder.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--auto-signal-auto-signal-p-008.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A08"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=字节跳动研究发现-向多模态大模型提问比转录文本更利于长文档训练-融资-押注模型部署和算力调用",
+      "frontend": {
+        "displayTitle": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 融资，押注模型部署和算力调用",
+        "sourceTitle": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练",
+        "eventLine": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "A 级来源，当前材料来自 the-decoder.com。",
+        "sourceLinks": [
+          {
+            "label": "the-decoder.com",
+            "url": "https://the-decoder.com/bytedance-study-finds-that-asking-lmms-questions-beats-making-it-transcribe-text-for-long-document-training",
+            "level": "A",
+            "note": "字节跳动研究发现：向多模态大模型提问比转录文本更利于长文档训练 宣布融资，材料把资金用途指向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A09",
+      "slug": "阶跃星辰发布stepaudio-2-5-realtime-一款具有角色扮演rlhf和副语言理解的端到端语音模型-发布面向模型部署和算力调用的-ai-能力",
+      "title": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension",
+      "sourceTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+      "sources": "原文出处：marktechpost.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--stepaudio-2-5-realtime-rlhf-auto-signal-p-009.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A09"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=阶跃星辰发布stepaudio-2-5-realtime-一款具有角色扮演rlhf和副语言理解的端到端语音模型-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+        "eventLine": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+        "sourceLinks": [
+          {
+            "label": "marktechpost.com",
+            "url": "https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension",
+            "level": "B",
+            "note": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "track-ai-customer-service",
+          "name": "AI 客服",
+          "group": "track",
+          "aliases": [
+            "Voice AI",
+            "语音客服"
+          ]
+        },
+        {
+          "id": "function-customer-service",
+          "name": "客服售后",
+          "group": "function",
+          "aliases": [
+            "客服",
+            "售后",
+            "质检"
+          ]
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "name": "工单与质检",
+          "group": "scenario",
+          "aliases": [
+            "工单",
+            "质检",
+            "智能派单"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A10",
+      "slug": "论文披露-llm-代理生成后端代码时会逐步丢失约束",
+      "title": "论文披露 LLM 代理生成后端代码时会逐步丢失约束",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。",
+      "judgment": "如果这类问题在企业开发中反复出现，AI 编程采购会更重视测试、审查和任务拆分，而不只是生成速度。",
+      "event": "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。",
+      "businessMeaning": "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。",
+      "sourceUrl": "https://arxiv.org/abs/2605.06445",
+      "sourceTitle": "约束衰减：大型语言模型代理在后端代码生成中的脆弱性",
+      "sources": "原文出处：arxiv.org",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-010.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A10"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。"
+        ],
+        [
+          "为什么值得看",
+          "如果这类问题在企业开发中反复出现，AI 编程采购会更重视测试、审查和任务拆分，而不只是生成速度。"
+        ],
+        [
+          "影响谁",
+          "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=论文披露-llm-代理生成后端代码时会逐步丢失约束",
+      "frontend": {
+        "displayTitle": "论文披露 LLM 代理生成后端代码时会逐步丢失约束",
+        "sourceTitle": "约束衰减：大型语言模型代理在后端代码生成中的脆弱性",
+        "eventLine": "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。",
+        "whyWatch": "如果这类问题在企业开发中反复出现，AI 编程采购会更重视测试、审查和任务拆分，而不只是生成速度。",
+        "businessMeaning": "软件团队需要把质量检查、需求约束和人工复核放进开发流程，避免把后端交付责任直接交给代理。",
+        "evidenceNote": "B 级来源，当前材料来自 arxiv.org。",
+        "sourceLinks": [
+          {
+            "label": "arxiv.org",
+            "url": "https://arxiv.org/abs/2605.06445",
+            "level": "B",
+            "note": "论文讨论 LLM 代理在复杂后端代码生成任务中遵循约束的能力会随任务推进下降。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI 编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A11",
+      "slug": "marktechpost-发布-langfuse-应用评估流程教程",
+      "title": "MarkTechPost 发布 Langfuse 应用评估流程教程",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。",
+      "judgment": "企业把 AI 应用接入业务后，需要知道每次调用为什么失败、如何评分，以及哪个提示词版本带来更好结果。",
+      "event": "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。",
+      "businessMeaning": "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。",
+      "sourceUrl": "https://www.marktechpost.com/2026/05/24/build-a-complete-langfuse-observability-and-evaluation-pipeline-for-tracing-prompt-management-scoring-and-experiments",
+      "sourceTitle": "构建完整的 Langfuse 可观测性与评估流水线以实现追踪、提示词管理、评分与实验",
+      "sources": "原文出处：marktechpost.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--langfuse-auto-signal-p-011.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A11"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。"
+        ],
+        [
+          "为什么值得看",
+          "企业把 AI 应用接入业务后，需要知道每次调用为什么失败、如何评分，以及哪个提示词版本带来更好结果。"
+        ],
+        [
+          "影响谁",
+          "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=marktechpost-发布-langfuse-应用评估流程教程",
+      "frontend": {
+        "displayTitle": "MarkTechPost 发布 Langfuse 应用评估流程教程",
+        "sourceTitle": "构建完整的 Langfuse 可观测性与评估流水线以实现追踪、提示词管理、评分与实验",
+        "eventLine": "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。",
+        "whyWatch": "企业把 AI 应用接入业务后，需要知道每次调用为什么失败、如何评分，以及哪个提示词版本带来更好结果。",
+        "businessMeaning": "LLM 工程平台的预算会从模型调用延伸到评估、日志、版本管理和实验管理。",
+        "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
+        "sourceLinks": [
+          {
+            "label": "marktechpost.com",
+            "url": "https://www.marktechpost.com/2026/05/24/build-a-complete-langfuse-observability-and-evaluation-pipeline-for-tracing-prompt-management-scoring-and-experiments",
+            "level": "B",
+            "note": "MarkTechPost 发布 Langfuse 流程教程，覆盖追踪、提示词管理、评分、数据集和实验。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI 编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A12",
+      "slug": "为何不应在copilot等ai工具中依赖默认模型选择-部署-ai-到模型部署和算力调用",
+      "title": "为何不应在Copilot等AI工具中依赖默认模型选择 部署 AI 到模型部署和算力调用",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://the-decoder.com/why-you-shouldnt-leave-model-selection-on-default-in-copilot-gemini-and-other-ai-tools",
+      "sourceTitle": "为何不应在Copilot等AI工具中依赖默认模型选择",
+      "sources": "原文出处：the-decoder.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--copilot-ai-auto-signal-p-012.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A12"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=为何不应在copilot等ai工具中依赖默认模型选择-部署-ai-到模型部署和算力调用",
+      "frontend": {
+        "displayTitle": "为何不应在Copilot等AI工具中依赖默认模型选择 部署 AI 到模型部署和算力调用",
+        "sourceTitle": "为何不应在Copilot等AI工具中依赖默认模型选择",
+        "eventLine": "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "A 级来源，当前材料来自 the-decoder.com。",
+        "sourceLinks": [
+          {
+            "label": "the-decoder.com",
+            "url": "https://the-decoder.com/why-you-shouldnt-leave-model-selection-on-default-in-copilot-gemini-and-other-ai-tools",
+            "level": "A",
+            "note": "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A13",
+      "slug": "kritird-cortex-发布面向模型部署和算力调用的-ai-能力",
+      "title": "kritird/Cortex 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://github.com/kritird/cortex-agent-framework",
+      "sourceTitle": "kritird/Cortex-Agent-Framework",
+      "sources": "原文出处：github.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--kritird-cortex-auto-signal-p-013.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A13"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=kritird-cortex-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "kritird/Cortex 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "kritird/Cortex-Agent-Framework",
+        "eventLine": "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 github.com。",
+        "sourceLinks": [
+          {
+            "label": "github.com",
+            "url": "https://github.com/kritird/cortex-agent-framework",
+            "level": "B",
+            "note": "kritird/Cortex 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A14",
+      "slug": "plansync-部署-ai-到地产开发和建筑设计流程",
+      "title": "PlanSync 部署 AI 到地产开发和建筑设计流程",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://agentmelt.com/case-studies/ai-sales-agent-b2b-saas/",
+      "sourceTitle": "AI Sales Agent for B2B SaaS Company: 3x Pipeline Coverage in 90 Days | Agentmelt",
+      "sources": "原文出处：agentmelt.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--plansync-auto-signal-p-014.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A14"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=plansync-部署-ai-到地产开发和建筑设计流程",
+      "frontend": {
+        "displayTitle": "PlanSync 部署 AI 到地产开发和建筑设计流程",
+        "sourceTitle": "AI Sales Agent for B2B SaaS Company: 3x Pipeline Coverage in 90 Days | Agentmelt",
+        "eventLine": "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 agentmelt.com。",
+        "sourceLinks": [
+          {
+            "label": "agentmelt.com",
+            "url": "https://agentmelt.com/case-studies/ai-sales-agent-b2b-saas/",
+            "level": "B",
+            "note": "PlanSync 把 AI 放进地产开发和建筑设计流程，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI 编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A15",
+      "slug": "pymnts-部署-ai-到销售和收入团队流程",
+      "title": "PYMNTS 部署 AI 到销售和收入团队流程",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.pymnts.com/artificial-intelligence-2/2026/better-coms-ai-agent-resolved-35-of-mortgage-calls-alone/",
+      "sourceTitle": "PYMNTS | Better.com's AI Agent Resolved 35% of Mortgage Calls Al…",
+      "sources": "原文出处：pymnts.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--pymnts-auto-signal-p-016.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A15"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=pymnts-部署-ai-到销售和收入团队流程",
+      "frontend": {
+        "displayTitle": "PYMNTS 部署 AI 到销售和收入团队流程",
+        "sourceTitle": "PYMNTS | Better.com's AI Agent Resolved 35% of Mortgage Calls Al…",
+        "eventLine": "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 pymnts.com。",
+        "sourceLinks": [
+          {
+            "label": "pymnts.com",
+            "url": "https://www.pymnts.com/artificial-intelligence-2/2026/better-coms-ai-agent-resolved-35-of-mortgage-calls-alone/",
+            "level": "B",
+            "note": "PYMNTS 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A16",
+      "slug": "concepts-融资-押注企业智能体协作流程",
+      "title": "Concepts 融资，押注企业智能体协作流程",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.founderstoday.news/first-concepts-raises-1-million-pre-seed/",
+      "sourceTitle": "First Concepts raises $1M pre-seed to develop AI workspace for creative teams - FoundersToday",
+      "sources": "原文出处：founderstoday.news",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--concepts-auto-signal-p-017.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A16"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=concepts-融资-押注企业智能体协作流程",
+      "frontend": {
+        "displayTitle": "Concepts 融资，押注企业智能体协作流程",
+        "sourceTitle": "First Concepts raises $1M pre-seed to develop AI workspace for creative teams - FoundersToday",
+        "eventLine": "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 founderstoday.news。",
+        "sourceLinks": [
+          {
+            "label": "founderstoday.news",
+            "url": "https://www.founderstoday.news/first-concepts-raises-1-million-pre-seed/",
+            "level": "B",
+            "note": "Concepts 宣布$1M 融资，材料把资金用途指向企业智能体协作流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI 治理",
+          "group": "track",
+          "aliases": [
+            "Agent 治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A17",
+      "slug": "foundey-部署-ai-到销售和收入团队流程",
+      "title": "Foundey 部署 AI 到销售和收入团队流程",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://foundey.com/",
+      "sourceTitle": "Foundey",
+      "sources": "原文出处：foundey.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--foundey-auto-signal-p-018.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A17"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=foundey-部署-ai-到销售和收入团队流程",
+      "frontend": {
+        "displayTitle": "Foundey 部署 AI 到销售和收入团队流程",
+        "sourceTitle": "Foundey",
+        "eventLine": "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 foundey.com。",
+        "sourceLinks": [
+          {
+            "label": "foundey.com",
+            "url": "https://foundey.com/",
+            "level": "B",
+            "note": "Foundey 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A18",
+      "slug": "huggingface-huggingface-发布面向模型部署和算力调用的-ai-能力",
+      "title": "huggingface/huggingface 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://github.com/huggingface/huggingface-vscode-chat",
+      "sourceTitle": "huggingface/huggingface-vscode-chat",
+      "sources": "原文出处：github.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--huggingface-huggingface-auto-signal-p-019.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A18"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=huggingface-huggingface-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "huggingface/huggingface 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "huggingface/huggingface-vscode-chat",
+        "eventLine": "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "S 级来源，当前材料来自 github.com。",
+        "sourceLinks": [
+          {
+            "label": "github.com",
+            "url": "https://github.com/huggingface/huggingface-vscode-chat",
+            "level": "S",
+            "note": "huggingface/huggingface 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A19",
+      "slug": "cerebras-brings-kimi-k2-6-inference-to-enterprises-发布面向销售和收入团队流程的-ai-能力",
+      "title": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布面向销售和收入团队流程的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.cerebras.ai/blog/cerebras-kimi-k2-Enterprise",
+      "sourceTitle": "Cerebras Brings Kimi K2.6 Inference to Enterprises",
+      "sources": "原文出处：cerebras.ai",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--cerebras-brings-kimi-k2-6-inference-to-enterprises-auto-signal-p-021.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A19"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=cerebras-brings-kimi-k2-6-inference-to-enterprises-发布面向销售和收入团队流程的-ai-能力",
+      "frontend": {
+        "displayTitle": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布面向销售和收入团队流程的 AI 能力",
+        "sourceTitle": "Cerebras Brings Kimi K2.6 Inference to Enterprises",
+        "eventLine": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 cerebras.ai。",
+        "sourceLinks": [
+          {
+            "label": "cerebras.ai",
+            "url": "https://www.cerebras.ai/blog/cerebras-kimi-k2-Enterprise",
+            "level": "B",
+            "note": "Cerebras Brings Kimi K2.6 Inference to Enterprises 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A20",
+      "slug": "永恒的-邋遢九月-部署-ai-到模型部署和算力调用",
+      "title": "永恒的\"邋遢九月\" 部署 AI 到模型部署和算力调用",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
+      "sourceTitle": "永恒的\\\"邋遢九月\\\"",
+      "sources": "原文出处：geohot.github.io",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-022.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A20"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=永恒的-邋遢九月-部署-ai-到模型部署和算力调用",
+      "frontend": {
+        "displayTitle": "永恒的\"邋遢九月\" 部署 AI 到模型部署和算力调用",
+        "sourceTitle": "永恒的\\\"邋遢九月\\\"",
+        "eventLine": "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 geohot.github.io。",
+        "sourceLinks": [
+          {
+            "label": "geohot.github.io",
+            "url": "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
+            "level": "B",
+            "note": "永恒的\"邋遢九月\" 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A21",
+      "slug": "克劳德不是你的架构师-别再让他假装是了-部署-ai-到模型部署和算力调用",
+      "title": "克劳德不是你的架构师。别再让他假装是了 部署 AI 到模型部署和算力调用",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.hollandtech.net/claude-is-not-your-architect",
+      "sourceTitle": "克劳德不是你的架构师。别再让他假装是了",
+      "sources": "原文出处：hollandtech.net",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-023.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A21"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=克劳德不是你的架构师-别再让他假装是了-部署-ai-到模型部署和算力调用",
+      "frontend": {
+        "displayTitle": "克劳德不是你的架构师。别再让他假装是了 部署 AI 到模型部署和算力调用",
+        "sourceTitle": "克劳德不是你的架构师。别再让他假装是了",
+        "eventLine": "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 hollandtech.net。",
+        "sourceLinks": [
+          {
+            "label": "hollandtech.net",
+            "url": "https://www.hollandtech.net/claude-is-not-your-architect",
+            "level": "B",
+            "note": "克劳德不是你的架构师。别再让他假装是了 把 AI 放进模型部署和算力调用，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A22",
+      "slug": "引用阿尔明-罗纳彻的话-部署-ai-到企业智能体协作流程",
+      "title": "引用阿尔明·罗纳彻的话 部署 AI 到企业智能体协作流程",
+      "date": "2026-05-25",
+      "signalType": "case",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://simonwillison.net/2026/May/24/armin-ronacher",
+      "sourceTitle": "引用阿尔明·罗纳彻的话",
+      "sources": "原文出处：simonwillison.net",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-25--signal--auto-signal-auto-signal-p-024.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A22"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=引用阿尔明-罗纳彻的话-部署-ai-到企业智能体协作流程",
+      "frontend": {
+        "displayTitle": "引用阿尔明·罗纳彻的话 部署 AI 到企业智能体协作流程",
+        "sourceTitle": "引用阿尔明·罗纳彻的话",
+        "eventLine": "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 simonwillison.net。",
+        "sourceLinks": [
+          {
+            "label": "simonwillison.net",
+            "url": "https://simonwillison.net/2026/May/24/armin-ronacher",
+            "level": "B",
+            "note": "引用阿尔明·罗纳彻的话 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI 治理",
+          "group": "track",
+          "aliases": [
+            "Agent 治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A23",
+      "slug": "superdesigndev-superdesign-发布面向企业智能体协作流程的-ai-能力",
+      "title": "superdesigndev/superdesign 发布面向企业智能体协作流程的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://github.com/superdesigndev/superdesign/",
+      "sourceTitle": "superdesigndev/superdesign",
+      "sources": "原文出处：github.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--superdesigndev-superdesign-auto-signal-p-025.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A23"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=superdesigndev-superdesign-发布面向企业智能体协作流程的-ai-能力",
+      "frontend": {
+        "displayTitle": "superdesigndev/superdesign 发布面向企业智能体协作流程的 AI 能力",
+        "sourceTitle": "superdesigndev/superdesign",
+        "eventLine": "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 github.com。",
+        "sourceLinks": [
+          {
+            "label": "github.com",
+            "url": "https://github.com/superdesigndev/superdesign/",
+            "level": "B",
+            "note": "superdesigndev/superdesign 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI 治理",
+          "group": "track",
+          "aliases": [
+            "Agent 治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A24",
+      "slug": "julianoczkowski-designer-融资-押注地产开发和建筑设计流程",
+      "title": "julianoczkowski/designer 融资，押注地产开发和建筑设计流程",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://github.com/julianoczkowski/designer-skills",
+      "sourceTitle": "julianoczkowski/designer-skills",
+      "sources": "原文出处：github.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--julianoczkowski-designer-auto-signal-p-026.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A24"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=julianoczkowski-designer-融资-押注地产开发和建筑设计流程",
+      "frontend": {
+        "displayTitle": "julianoczkowski/designer 融资，押注地产开发和建筑设计流程",
+        "sourceTitle": "julianoczkowski/designer-skills",
+        "eventLine": "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 github.com。",
+        "sourceLinks": [
+          {
+            "label": "github.com",
+            "url": "https://github.com/julianoczkowski/designer-skills",
+            "level": "B",
+            "note": "julianoczkowski/designer 宣布融资，材料把资金用途指向地产开发和建筑设计流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI 编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A25",
+      "slug": "古尔曼披露苹果-watchos-27-将以体验修补为主",
+      "title": "古尔曼披露苹果 watchOS 27 将以体验修补为主",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。",
+      "judgment": "这会影响开发者客户对平台接口、适配成本和产品排期的判断，而不是只看发布会新功能。",
+      "event": "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。",
+      "businessMeaning": "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。",
+      "sourceUrl": "https://www.ithome.com/0/954/640.htm",
+      "sourceTitle": "古尔曼：苹果 watchOS 27 更新将主要关注稳定性、较小优化，而不是引入重大新功能",
+      "sources": "原文出处：ithome.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--watchos-27-auto-signal-p-027.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A25"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。"
+        ],
+        [
+          "为什么值得看",
+          "这会影响开发者客户对平台接口、适配成本和产品排期的判断，而不是只看发布会新功能。"
+        ],
+        [
+          "影响谁",
+          "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=古尔曼披露苹果-watchos-27-将以体验修补为主",
+      "frontend": {
+        "displayTitle": "古尔曼披露苹果 watchOS 27 将以体验修补为主",
+        "sourceTitle": "古尔曼：苹果 watchOS 27 更新将主要关注稳定性、较小优化，而不是引入重大新功能",
+        "eventLine": "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。",
+        "whyWatch": "这会影响开发者客户对平台接口、适配成本和产品排期的判断，而不是只看发布会新功能。",
+        "businessMeaning": "开发者和平台环境伙伴需要关注平台能力边界、系统接口和用户体验变化，而不是只押注新功能发布。",
+        "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+        "sourceLinks": [
+          {
+            "label": "ithome.com",
+            "url": "https://www.ithome.com/0/954/640.htm",
+            "level": "B",
+            "note": "材料称苹果 watchOS 27 会放在系统体验修补上，而不是推出重大新功能。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track",
+          "aliases": [
+            "AI-Coding",
+            "AI 编程"
+          ]
+        },
+        {
+          "id": "function-engineering",
+          "name": "工程研发",
+          "group": "function",
+          "aliases": [
+            "开发",
+            "仿真",
+            "工程"
+          ]
+        },
+        {
+          "id": "customer-developer-team",
+          "name": "开发团队",
+          "group": "customer",
+          "aliases": [
+            "工程团队"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A26",
+      "slug": "科大讯飞智能办公本-air-3-系列发布-支持离线-ai-与龙虾助手-2499-3599-元-发布面向模型部署和算力调用的-ai-能力",
+      "title": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.ithome.com/0/954/591.htm",
+      "sourceTitle": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元",
+      "sources": "原文出处：ithome.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--air-3-ai-2499-3599-auto-signal-p-028.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A26"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=科大讯飞智能办公本-air-3-系列发布-支持离线-ai-与龙虾助手-2499-3599-元-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元",
+        "eventLine": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+        "sourceLinks": [
+          {
+            "label": "ithome.com",
+            "url": "https://www.ithome.com/0/954/591.htm",
+            "level": "B",
+            "note": "科大讯飞智能办公本 Air 3 系列发布：支持离线 AI 与龙虾助手，2499~3599 元 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A27",
+      "slug": "面壁智能联合清华等开源中国首个基于华为昇腾训练的-1-58-发布面向模型部署和算力调用的-ai-能力",
+      "title": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布面向模型部署和算力调用的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.ithome.com/0/954/759.htm",
+      "sourceTitle": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型 BitCPM-CANN",
+      "sources": "原文出处：ithome.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--1-58-auto-signal-p-029.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A27"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=面壁智能联合清华等开源中国首个基于华为昇腾训练的-1-58-发布面向模型部署和算力调用的-ai-能力",
+      "frontend": {
+        "displayTitle": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布面向模型部署和算力调用的 AI 能力",
+        "sourceTitle": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型 BitCPM-CANN",
+        "eventLine": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+        "sourceLinks": [
+          {
+            "label": "ithome.com",
+            "url": "https://www.ithome.com/0/954/759.htm",
+            "level": "B",
+            "note": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        },
+        {
+          "id": "stage-watch",
+          "name": "观察",
+          "group": "stage",
+          "aliases": [
+            "watch"
+          ]
+        },
+        {
+          "id": "region-china",
+          "name": "中国适配",
+          "group": "region",
+          "aliases": [
+            "中国",
+            "本土"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A28",
+      "slug": "lg-推出-44-5-英寸-5k2k-oled-曲面带鱼屏双模显示器-14999-元-发布面向企业智能体协作流程的-ai-能力",
+      "title": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布面向企业智能体协作流程的 AI 能力",
+      "date": "2026-05-25",
+      "signalType": "product_service",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.ithome.com/0/954/586.htm",
+      "sourceTitle": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元",
+      "sources": "原文出处：ithome.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--lg-44-5-5k2k-oled-14999-auto-signal-p-030.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A28"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=lg-推出-44-5-英寸-5k2k-oled-曲面带鱼屏双模显示器-14999-元-发布面向企业智能体协作流程的-ai-能力",
+      "frontend": {
+        "displayTitle": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布面向企业智能体协作流程的 AI 能力",
+        "sourceTitle": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元",
+        "eventLine": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+        "sourceLinks": [
+          {
+            "label": "ithome.com",
+            "url": "https://www.ithome.com/0/954/586.htm",
+            "level": "B",
+            "note": "LG 推出 44.5 英寸 5K2K OLED 曲面带鱼屏双模显示器，14999 元 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI 治理",
+          "group": "track",
+          "aliases": [
+            "Agent 治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "stage-rising",
+          "name": "升温",
+          "group": "stage",
+          "aliases": [
+            "rising"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A29",
+      "slug": "余承东宣布问界m9将率先搭载新一代鸿蒙座舱-新车预售价公布-融资-押注企业智能体协作流程",
+      "title": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 融资，押注企业智能体协作流程",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.ithome.com/0/954/582.htm",
+      "sourceTitle": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布",
+      "sources": "原文出处：ithome.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--m9-auto-signal-p-031.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A29"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=余承东宣布问界m9将率先搭载新一代鸿蒙座舱-新车预售价公布-融资-押注企业智能体协作流程",
+      "frontend": {
+        "displayTitle": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 融资，押注企业智能体协作流程",
+        "sourceTitle": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布",
+        "eventLine": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+        "sourceLinks": [
+          {
+            "label": "ithome.com",
+            "url": "https://www.ithome.com/0/954/582.htm",
+            "level": "B",
+            "note": "余承东宣布问界M9将率先搭载新一代鸿蒙座舱，新车预售价公布 宣布融资，材料把资金用途指向企业智能体协作流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI 治理",
+          "group": "track",
+          "aliases": [
+            "Agent 治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260525-A30",
+      "slug": "全国首个开源鸿蒙机器人操作系统-m-融资-押注企业智能体协作流程",
+      "title": "全国首个开源鸿蒙机器人操作系统 M 融资，押注企业智能体协作流程",
+      "date": "2026-05-25",
+      "signalType": "funding",
+      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+      "event": "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。",
+      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+      "sourceUrl": "https://www.ithome.com/0/954/530.htm",
+      "sourceTitle": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
+      "sources": "原文出处：ithome.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-25--signal--m-auto-signal-p-032.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "funding"
+      ],
+      "structuredRefs": [
+        "SIG-20260525-A30"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
+        ],
+        [
+          "影响谁",
+          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
+        ],
+        [
+          "证据边界",
+          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
+      "link": "signal-detail.html?id=全国首个开源鸿蒙机器人操作系统-m-融资-押注企业智能体协作流程",
+      "frontend": {
+        "displayTitle": "全国首个开源鸿蒙机器人操作系统 M 融资，押注企业智能体协作流程",
+        "sourceTitle": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
+        "eventLine": "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。",
+        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
+        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
+        "evidenceNote": "B 级来源，当前材料来自 ithome.com。",
+        "sourceLinks": [
+          {
+            "label": "ithome.com",
+            "url": "https://www.ithome.com/0/954/530.htm",
+            "level": "B",
+            "note": "全国首个开源鸿蒙机器人操作系统 M 宣布融资，材料把资金用途指向企业智能体协作流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "当前材料保留了原始链接、全文和哈希",
+          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track",
+          "aliases": [
+            "AI-Agent",
+            "智能体"
+          ]
+        },
+        {
+          "id": "track-ai-governance",
+          "name": "AI 治理",
+          "group": "track",
+          "aliases": [
+            "Agent 治理",
+            "权限审计"
+          ]
+        },
+        {
+          "id": "scenario-agent-governance",
+          "name": "Agent 权限治理",
+          "group": "scenario",
+          "aliases": [
+            "审计",
+            "权限",
+            "风险控制"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "function-procurement-bidding",
+          "name": "采购投标",
+          "group": "function",
+          "aliases": [
+            "招投标",
+            "采购"
+          ]
+        },
+        {
+          "id": "evidence-procurement",
+          "name": "招投标 / 采购",
+          "group": "evidence",
+          "aliases": [
+            "招标",
+            "政府采购"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    }
+  ],
+  "daily": {
+    "id": "daily-2026-05-25",
+    "slug": "daily-2026-05-25",
+    "title": "销售 AI 的第一笔生意，是那条线索流水线",
+    "issue": "",
+    "period": "",
+    "contentType": "daily_observation",
+    "judgment": "12,000 多条 MQL 进来，25 名 SDR 排队处理。",
+    "dek": "12,000 多条 MQL 进来，25 名 SDR 排队处理。",
+    "summary": [
+      "12,000 多条 MQL 进来，25 名 SDR 排队处理。",
+      "真正耗时间的，不一定是那封销售邮件，而是邮件发出之前的一串脏活：查公司、补画像、判意图、找切入点、写进 CRM，再确认哪些话不能乱说。",
+      "DreamzTech 的一个公开案例把这件事讲得很直白。案例页称，一家 2,400 人规模、Series D 阶段的 B2B 网络安全 SaaS 公司，每季度要处理 12,000 多条 MQL，由 25 名 SDR 负责资格判断。线索多只是表面，真正拥堵的是进入销售系统之前那段路。"
+    ],
+    "sections": [
+      {
+        "title": "销售瓶颈不在线索，而在处理线索",
+        "body": "案例页给出的起点很典型：这家公司 lead-to-SQL 比例卡在 6%，SDR 约 65% 的时间花在 LinkedIn、ZoomInfo、Apollo、6sense 等渠道的账户研究和意图信号整理上。\n\n与其说销售不努力，不如说销售前台被太多碎片任务堵住了。\n\n市场团队把线索带进来，广告和内容带来更多表单，意图数据越来越多，CRM 信息项越来越细。可在真正进入客户对话之前，SDR 还得判断这家公司是谁，买点在哪里，有没有预算迹象，应该用什么角度切入，记录应该落到哪里。\n\n如果这些动作都靠人逐条处理，AI 写邮件再快，也只是把邮件那一步变快。堵点还在前面。\n\nDreamzTech 的做法，是把这条前端流程拆成四个代理：Researcher 负责公司和联系人研究，Qualifier 负责线索资格判断，Writer 生成外呼内容，Reviewer 做品牌语气和合规检查。案例页称，这套系统接入 Claude 3.5、GPT-4o、Salesforce、HubSpot、Apollo、ZoomInfo 和 6sense。\n\n关键并非用了哪些模型。更值得看的是，销售任务被拆成了机器可以排队、交接和留下记录的处理链。"
+      },
+      {
+        "title": "SDR 的位置从执行者变成调度者",
+        "body": "过去，SDR 像一个人工适配器。\n\n他要读线索、查公司、翻联系人、判断意图、写第一封邮件、补 CRM 信息项，还要确保措辞不踩 CAN-SPAM、GDPR、CCPA 等合规线。经验丰富的人会做得更快、更准；新手则要在很多细节里慢慢学。\n\n多代理系统接手之后，人并不会从销售现场消失。人的位置会往后移。\n\nSDR 不再只是逐条整理线索的人，而是看哪些线索应该进入人工对话，哪些账户需要补信息，哪些外呼内容需要改，哪些异常不能让机器直接通过。销售运营也会变重，因为它要维护评分规则、信息项映射、系统集成和复核流程。\n\n组织里的新分工就藏在这里：SDR 从信息搬运和初筛执行者，变成调度者、复核者和客户关系承担者。\n\n如果一家企业只买“会写销售邮件”的工具，这条路走不通。它只会多一个写作入口。\n\n但如果企业把线索研究、资格评分、内容生成、合规复核和 CRM 更新接到一起，AI 就不再只是销售助手，而是在销售系统前面接住一批脏活。"
+      },
+      {
+        "title": "数字好看，也要克制看",
+        "body": "案例页称，这套四代理销售流程在第一年让 lead-to-SQL 提升到原来的 4.2 倍，并带来 1,420 万美元 Q1 pipeline 和 67% SDR productivity gain。\n\n这些数字很有吸引力，但必须克制。\n\n它们来自服务商案例页，不等于第三方审计，也不能直接推出长期 ROI、利润增长或所有 B2B 销售团队都适合照搬。案例页本身也把不少流程细节写得很满，读者应该把它当作一个可观察的企业应用样本，而不是最终证明。\n\n不过，哪怕把数字打个折，这个案例仍然有价值：企业愿意付费的，可能不是“生成一段话”，而是把一批线索推到下一个可销售状态。\n\n老板该看的是这条账。\n\n过去评估销售 AI，常问：它写得像不像人？邮件打开率有没有变高？销售是否少花时间查资料？\n\n接下来更该问：线索进入销售系统前，有多少动作已经稳定到可以排队处理？哪些判断必须留给人？哪些记录必须回写 CRM？如果 AI 出错，谁负责拦下？"
+      },
+      {
+        "title": "会编排流程的 AI，才会进入销售预算",
+        "body": "销售是一个很适合 AI 的场景，也很容易被 AI 讲得过头。它有大量文字，有明确目标，有 CRM 系统，有外部数据源，也有能被记录的推进指标。\n\n但销售不是一句话生成任务。DreamzTech 这个案例的价值，就在于它把“销售 AI”从一个单点工具，推向了线索处理现场。\n\n企业真正要买的，可能不是一个更会说话的 agent。它要的是一套能把 MQL 变成可销售机会的工作方式：研究谁来做，资格谁来判，话术谁来写，CRM 谁来更新，人在哪里接手。\n\n所以，别急着问 AI 会不会替代 SDR。\n\n更好的问题是：你的销售团队里，谁每天还在把线索、账户、意图数据和 CRM 信息项手工串起来？哪些步骤其实已经稳定到可以排队、评分、复核和交接？\n\n销售 AI 真正变重的地方，不在它能写多漂亮的邮件。\n\n而在它能不能把那堆细碎动作，变成一条有人能管、系统能接、结果能追的流水线。"
+      },
+      {
+        "title": "相关原文",
+        "body": "- DreamzTech 案例页：https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/"
+      }
+    ],
+    "homeTitle": "销售 AI 的第一笔生意，是那条线索流水线",
+    "homeSummary": "DreamzTech 案例页称，一家 B2B 网络安全 SaaS 公司用四个代理接手线索研究、资格判断、话术生成、合规复核和 CRM 更新。重点不是 AI 替人写邮件，而是邮件发出之前那堆脏活开始被机器排队处理。",
+    "homeCards": [
+      {
+        "label": "旧理解",
+        "title": "AI 帮销售写邮件",
+        "body": "单点写作工具只能加快邮件那一步，线索研究、评分、记录和复核仍然会堵在 SDR 面前。"
+      },
+      {
+        "label": "新位置",
+        "title": "SDR 管异常",
+        "body": "多代理系统接手研究、判断、写作和复核后，人更像调度者、异常处理者和客户关系承担者。"
+      },
+      {
+        "label": "真问题",
+        "title": "脏活在哪",
+        "body": "买销售 agent 前，企业要先看线索进入 CRM 前还有多少人工查找、判断和回写。"
+      }
+    ],
+    "columnPage": {
+      "title": "销售 AI 的第一笔生意，是那条线索流水线",
+      "thesis": "销售 AI 要进入预算，先要接住线索进 CRM 前那堆查找、判断、写作、复核和回写动作。",
+      "body": "一家 2,400 人规模的 B2B 网络安全 SaaS 公司，每季度有 12,000 多条 MQL 等着处理。25 名 SDR 的时间不只花在客户对话上，还要查公司、判资格、写外呼、做复核、回写 CRM。DreamzTech 把这些动作拆给四个代理接力。",
+      "impact": "DreamzTech 称，这套流程让 lead-to-SQL 达到原来的 4.2 倍，Q1 pipeline 为 1,420 万美元，SDR productivity gain 为 67%。这些数字先按服务商案例看。真正该追问的是：你的销售队伍里，还有多少线索卡在人工研究、评分和回写上？",
+      "note": "别先问 AI 会不会替代 SDR。先问销售团队里哪些步骤还在靠人把线索、账户、意图数据和 CRM 信息项手工串起来。",
+      "keywords": [
+        "DreamzTech",
+        "AI Sales Agent",
+        "SDR",
+        "B2B SaaS",
+        "CrewAI",
+        "Salesforce"
+      ],
+      "strength": "high",
+      "state": "",
+      "trendTitle": "",
+      "trendBody": "",
+      "watchItems": [],
+      "riskItems": []
+    },
+    "points": [
+      "12,000 多条 MQL 进来，25 名 SDR 排队处理。"
+    ],
+    "risk": "客户采用、预算归属和部署周期仍需继续观察。",
+    "calibration": [
+      {
+        "id": "OPN-FB-20260525-01",
+        "slug": "garry-tan-我最新的gbrain-evals刚刚下降-这就是gbrain与其他",
+        "title": "Garry Tan：我最新的gbrain-evals刚刚下降-这就是gbrain与其他",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--garry-tan-garry-tan-my-newest-gbrain-evals-just-dropped-this-is-how-gb.md",
+        "sourceUrl": "https://x.com/garrytan/status/2058448209027141709",
+        "originalDate": "",
+        "speakerLine": "Garry Tan",
+        "originalView": "My newest gbrain-evals just dropped - this is how gbrain does vs other options. is SOTA for reranking and embedding cost, speed, and retrieval success. GBrain beats MemPalace by 1% on LongMemEval and beats Vector RAG by 38% President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=12; retweets=0; replies=5",
+        "originalTranslation": "我最新的gbrain-evals刚刚下降-这就是gbrain与其他选项相比的方式。是用于重新排名和嵌入成本，速度和检索成功的SOTA。GBrain在LongMemEval上击败MemPalace 1 ％ ，击败Vector RAG 38 ％总裁兼首席执行官@ ycombinator -创始人@ garryslist- GStack的创建者和GBrain设计师/工程师，帮助创始人- SF Dem加速繁荣循环",
+        "interpretation": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：cost, yc, eval；包含数据、客户或业务量级线索",
+        "ratingScore": 7,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-ai-safety-governance",
+            "name": "AI 安全治理观点",
+            "group": "opinion",
+            "aliases": [
+              "安全",
+              "权限",
+              "治理"
             ]
           },
           {
@@ -17840,16 +30064,6 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-enterprise-data",
-            "name": "企业数据智能",
-            "group": "track",
-            "aliases": [
-              "企业数据",
-              "RAG",
-              "企业知识库"
-            ]
-          },
-          {
             "id": "track-ai-infra",
             "name": "AI 基础设施",
             "group": "track",
@@ -17859,3184 +30073,42 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "evidence-customer-adoption",
-            "name": "客户采用",
-            "group": "evidence",
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
             "aliases": [
-              "部署",
-              "上线",
-              "合作"
+              "招投标",
+              "采购"
             ]
           },
           {
-            "id": "evidence-product-launch",
-            "name": "产品发布",
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
             "group": "evidence",
             "aliases": [
-              "功能发布",
-              "平台发布"
+              "招标",
+              "政府采购"
             ]
           }
         ]
-      }
-    ]
-  },
-  "signals": [
-    {
-      "id": "SIG-20260524-A01",
-      "slug": "构建基于superclaude框架的工作流-融合命令-代理-模式与会话记忆-发布面向模型部署和算力调用的-ai-能力",
-      "title": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory",
-      "sourceTitle": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆",
-      "sources": "原文出处：marktechpost.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--superclaude-auto-signal-p-001.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A01"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=构建基于superclaude框架的工作流-融合命令-代理-模式与会话记忆-发布面向模型部署和算力调用的-ai-能力",
-      "frontend": {
-        "displayTitle": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力",
-        "sourceTitle": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆",
-        "eventLine": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布新的 AI 能力，材料显示它面向模型部署和算力调用。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 marktechpost.com。",
-        "sourceLinks": [
-          {
-            "label": "marktechpost.com",
-            "url": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory",
-            "level": "B",
-            "note": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布新的 AI 能力，材料显示它面向模型部署和算力调用。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "构建基于 SuperClaude 框架的工作流：融合命令、代理、模式与会话记忆"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-enterprise-data",
-          "name": "企业数据智能",
-          "group": "track",
-          "aliases": [
-            "企业数据",
-            "RAG",
-            "企业知识库"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "构建基于 SuperClaude 框架的工作流：融合命令、代理、模式与会话记忆"
-    },
-    {
-      "id": "SIG-20260524-A03",
-      "slug": "oplog-发布面向销售和收入团队流程的-ai-能力",
-      "title": "OPLOG 发布面向销售和收入团队流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "OPLOG 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/",
-      "sourceTitle": "Build AI agents for business intelligence with Amazon Bedrock AgentCore | Artificial Intelligence",
-      "sources": "原文出处：aws.amazon.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--oplog-auto-signal-p-004.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A03"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "OPLOG 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=oplog-发布面向销售和收入团队流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "OPLOG 发布面向销售和收入团队流程的 AI 能力",
-        "sourceTitle": "Build AI agents for business intelligence with Amazon Bedrock AgentCore | Artificial Intelligence",
-        "eventLine": "OPLOG 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 aws.amazon.com。",
-        "sourceLinks": [
-          {
-            "label": "aws.amazon.com",
-            "url": "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/",
-            "level": "B",
-            "note": "OPLOG 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "用 Amazon Bedrock AgentCore 构建商业智能 AI Agents"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-funding",
-          "name": "融资证据",
-          "group": "evidence",
-          "aliases": [
-            "投资",
-            "种子轮"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        },
-        {
-          "id": "stage-watch",
-          "name": "观察",
-          "group": "stage",
-          "aliases": [
-            "watch"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "用 Amazon Bedrock AgentCore 构建商业智能 AI Agents"
-    },
-    {
-      "id": "SIG-20260524-A06",
-      "slug": "fazeshift-融资-押注销售和收入团队流程",
-      "title": "Fazeshift 融资，押注销售和收入团队流程",
-      "date": "2026-05-24",
-      "signalType": "funding",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "Fazeshift 宣布$17M 融资，材料把资金用途指向销售和收入团队流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
-      "sourceTitle": "Exclusive: Fazeshift Scores $17M As Investors Bet On AI-Powered Finance Ops, Starting With Accounts Receivable",
-      "sources": "原文出处：news.crunchbase.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-24--signal--fazeshift-auto-signal-p-007.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "funding"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A06"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Fazeshift 宣布$17M 融资，材料把资金用途指向销售和收入团队流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=fazeshift-融资-押注销售和收入团队流程",
-      "frontend": {
-        "displayTitle": "Fazeshift 融资，押注销售和收入团队流程",
-        "sourceTitle": "Exclusive: Fazeshift Scores $17M As Investors Bet On AI-Powered Finance Ops, Starting With Accounts Receivable",
-        "eventLine": "Fazeshift 宣布$17M 融资，材料把资金用途指向销售和收入团队流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 news.crunchbase.com。",
-        "sourceLinks": [
-          {
-            "label": "news.crunchbase.com",
-            "url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
-            "level": "B",
-            "note": "Fazeshift 宣布$17M 融资，材料把资金用途指向销售和收入团队流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "独家：Fazeshift 融资 1700 万美元，投资人看好从应收账款切入的 AI 财务运营"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-funding",
-          "name": "融资证据",
-          "group": "evidence",
-          "aliases": [
-            "投资",
-            "种子轮"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        },
-        {
-          "id": "stage-watch",
-          "name": "观察",
-          "group": "stage",
-          "aliases": [
-            "watch"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "独家：Fazeshift 融资 1700 万美元，投资人看好从应收账款切入的 AI 财务运营"
-    },
-    {
-      "id": "SIG-20260524-A07",
-      "slug": "ai-agents-buyers-guide-2026-executive-summary-发布面向地产开发和建筑设计流程的-ai-能力",
-      "title": "AI Agents Buyers Guide 2026 Executive Summary 发布面向地产开发和建筑设计流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "AI Agents Buyers Guide 2026 Executive Summary 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://research.isg-one.com/buyers-guide/artificial-intelligence/data-platforms/ai-agents/2026",
-      "sourceTitle": "AI Agents Buyers Guide 2026 Executive Summary",
-      "sources": "原文出处：research.isg-one.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--ai-agents-buyers-guide-2026-executive-summary-auto-signal-p-009.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A07"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "AI Agents Buyers Guide 2026 Executive Summary 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=ai-agents-buyers-guide-2026-executive-summary-发布面向地产开发和建筑设计流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "AI Agents Buyers Guide 2026 Executive Summary 发布面向地产开发和建筑设计流程的 AI 能力",
-        "sourceTitle": "AI Agents Buyers Guide 2026 Executive Summary",
-        "eventLine": "AI Agents Buyers Guide 2026 Executive Summary 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 research.isg-one.com。",
-        "sourceLinks": [
-          {
-            "label": "research.isg-one.com",
-            "url": "https://research.isg-one.com/buyers-guide/artificial-intelligence/data-platforms/ai-agents/2026",
-            "level": "B",
-            "note": "AI Agents Buyers Guide 2026 Executive Summary 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "《2026 AI Agents 买方指南》执行摘要"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track",
-          "aliases": [
-            "AI-Coding",
-            "AI 编程"
-          ]
-        },
-        {
-          "id": "function-engineering",
-          "name": "工程研发",
-          "group": "function",
-          "aliases": [
-            "开发",
-            "仿真",
-            "工程"
-          ]
-        },
-        {
-          "id": "customer-developer-team",
-          "name": "开发团队",
-          "group": "customer",
-          "aliases": [
-            "工程团队"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "《2026 AI Agents 买方指南》执行摘要"
-    },
-    {
-      "id": "SIG-20260524-A08",
-      "slug": "microsoft-agents-发布面向地产开发和建筑设计流程的-ai-能力",
-      "title": "microsoft/Agents 发布面向地产开发和建筑设计流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "microsoft/Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://github.com/microsoft/Agents",
-      "sourceTitle": "microsoft/Agents",
-      "sources": "原文出处：github.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--microsoft-agents-auto-signal-p-010.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A08"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "microsoft/Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=microsoft-agents-发布面向地产开发和建筑设计流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "microsoft/Agents 发布面向地产开发和建筑设计流程的 AI 能力",
-        "sourceTitle": "microsoft/Agents",
-        "eventLine": "microsoft/Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "S 级来源，当前材料来自 github.com。",
-        "sourceLinks": [
-          {
-            "label": "github.com",
-            "url": "https://github.com/microsoft/Agents",
-            "level": "S",
-            "note": "microsoft/Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "microsoft/Agents"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track",
-          "aliases": [
-            "AI-Coding",
-            "AI 编程"
-          ]
-        },
-        {
-          "id": "function-engineering",
-          "name": "工程研发",
-          "group": "function",
-          "aliases": [
-            "开发",
-            "仿真",
-            "工程"
-          ]
-        },
-        {
-          "id": "customer-developer-team",
-          "name": "开发团队",
-          "group": "customer",
-          "aliases": [
-            "工程团队"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "microsoft/Agents"
-    },
-    {
-      "id": "SIG-20260524-A09",
-      "slug": "aws-marketplace-发布面向销售和收入团队流程的-ai-能力",
-      "title": "AWS Marketplace 发布面向销售和收入团队流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "AWS Marketplace 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://aws.amazon.com/marketplace/solutions/ai-agents-and-tools",
-      "sourceTitle": "Discover AI Agents and Tools in AWS Marketplace - Amazon.com",
-      "sources": "原文出处：aws.amazon.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--aws-marketplace-auto-signal-p-011.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A09"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "AWS Marketplace 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=aws-marketplace-发布面向销售和收入团队流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "AWS Marketplace 发布面向销售和收入团队流程的 AI 能力",
-        "sourceTitle": "Discover AI Agents and Tools in AWS Marketplace - Amazon.com",
-        "eventLine": "AWS Marketplace 发布新的 AI 能力，材料显示它面向销售和收入团队流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 aws.amazon.com。",
-        "sourceLinks": [
-          {
-            "label": "aws.amazon.com",
-            "url": "https://aws.amazon.com/marketplace/solutions/ai-agents-and-tools",
-            "level": "B",
-            "note": "AWS Marketplace 发布新的 AI 能力，材料显示它面向销售和收入团队流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "在 AWS Marketplace 发现 AI Agents 和工具"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-funding",
-          "name": "融资证据",
-          "group": "evidence",
-          "aliases": [
-            "投资",
-            "种子轮"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        },
-        {
-          "id": "stage-watch",
-          "name": "观察",
-          "group": "stage",
-          "aliases": [
-            "watch"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "在 AWS Marketplace 发现 AI Agents 和工具"
-    },
-    {
-      "id": "SIG-20260524-A10",
-      "slug": "tribal-ai-lands-10m-in-seed-funding-to-bring-metadata-融资-押注销售和收入团队流程",
-      "title": "Tribal AI lands $10M in seed funding to bring metadata 融资，押注销售和收入团队流程",
-      "date": "2026-05-24",
-      "signalType": "funding",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "Tribal AI lands $10M in seed funding to bring metadata 宣布$10M 融资，材料把资金用途指向销售和收入团队流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/",
-      "sourceTitle": "Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE",
-      "sources": "原文出处：siliconangle.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-24--signal--tribal-ai-lands-10m-in-seed-funding-to-bring-metadata-auto-signal-p-013.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "funding"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A10"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Tribal AI lands $10M in seed funding to bring metadata 宣布$10M 融资，材料把资金用途指向销售和收入团队流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=tribal-ai-lands-10m-in-seed-funding-to-bring-metadata-融资-押注销售和收入团队流程",
-      "frontend": {
-        "displayTitle": "Tribal AI lands $10M in seed funding to bring metadata 融资，押注销售和收入团队流程",
-        "sourceTitle": "Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE",
-        "eventLine": "Tribal AI lands $10M in seed funding to bring metadata 宣布$10M 融资，材料把资金用途指向销售和收入团队流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 siliconangle.com。",
-        "sourceLinks": [
-          {
-            "label": "siliconangle.com",
-            "url": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/",
-            "level": "B",
-            "note": "Tribal AI lands $10M in seed funding to bring metadata 宣布$10M 融资，材料把资金用途指向销售和收入团队流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "Tribal AI 获得 1000 万美元种子轮融资，将元数据原生 Agents 带入企业"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-funding",
-          "name": "融资证据",
-          "group": "evidence",
-          "aliases": [
-            "投资",
-            "种子轮"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        },
-        {
-          "id": "stage-watch",
-          "name": "观察",
-          "group": "stage",
-          "aliases": [
-            "watch"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "Tribal AI 获得 1000 万美元种子轮融资，将元数据原生 Agents 带入企业"
-    },
-    {
-      "id": "SIG-20260524-A11",
-      "slug": "snaplogic-s-jean-paul-ai-agent-delivers-3m-business-va-部署-ai-到销售和收入团队流程",
-      "title": "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Va 部署 AI 到销售和收入团队流程",
-      "date": "2026-05-24",
-      "signalType": "case",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Va 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://www.snaplogic.com/resources/case-studies/jean-paul-ai-agent-business-value",
-      "sourceTitle": "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Value",
-      "sources": "原文出处：snaplogic.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-24--signal--snaplogic-s-jean-paul-ai-agent-delivers-3m-business-va-auto-signal-p-014.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "case"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A11"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Va 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=snaplogic-s-jean-paul-ai-agent-delivers-3m-business-va-部署-ai-到销售和收入团队流程",
-      "frontend": {
-        "displayTitle": "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Va 部署 AI 到销售和收入团队流程",
-        "sourceTitle": "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Value",
-        "eventLine": "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Va 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 snaplogic.com。",
-        "sourceLinks": [
-          {
-            "label": "snaplogic.com",
-            "url": "https://www.snaplogic.com/resources/case-studies/jean-paul-ai-agent-business-value",
-            "level": "B",
-            "note": "SnapLogic's Jean-Paul AI Agent Delivers $3M+ Business Va 把 AI 放进销售和收入团队流程，材料显示它已经对应到具体任务或客户环境。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "SnapLogic 的 Jean-Paul AI Agent 创造超过 300 万美元业务价值"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-funding",
-          "name": "融资证据",
-          "group": "evidence",
-          "aliases": [
-            "投资",
-            "种子轮"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "SnapLogic 的 Jean-Paul AI Agent 创造超过 300 万美元业务价值"
-    },
-    {
-      "id": "SIG-20260524-A12",
-      "slug": "aws-marketplace-发布面向地产开发和建筑设计流程的-ai-能力",
-      "title": "AWS Marketplace 发布面向地产开发和建筑设计流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "AWS Marketplace 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://aws.amazon.com/blogs/apn/aws-partner-guide-to-ai-agents-and-tools-in-aws-marketplace/",
-      "sourceTitle": "AWS Partner Guide to AI Agents and Tools in AWS Marketplace",
-      "sources": "原文出处：aws.amazon.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--aws-marketplace-auto-signal-p-015.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A12"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "AWS Marketplace 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=aws-marketplace-发布面向地产开发和建筑设计流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "AWS Marketplace 发布面向地产开发和建筑设计流程的 AI 能力",
-        "sourceTitle": "AWS Partner Guide to AI Agents and Tools in AWS Marketplace",
-        "eventLine": "AWS Marketplace 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 aws.amazon.com。",
-        "sourceLinks": [
-          {
-            "label": "aws.amazon.com",
-            "url": "https://aws.amazon.com/blogs/apn/aws-partner-guide-to-ai-agents-and-tools-in-aws-marketplace/",
-            "level": "B",
-            "note": "AWS Marketplace 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "AWS Marketplace 中 AI Agents 与工具的合作伙伴指南"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track",
-          "aliases": [
-            "AI-Coding",
-            "AI 编程"
-          ]
-        },
-        {
-          "id": "function-engineering",
-          "name": "工程研发",
-          "group": "function",
-          "aliases": [
-            "开发",
-            "仿真",
-            "工程"
-          ]
-        },
-        {
-          "id": "customer-developer-team",
-          "name": "开发团队",
-          "group": "customer",
-          "aliases": [
-            "工程团队"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "AWS Marketplace 中 AI Agents 与工具的合作伙伴指南"
-    },
-    {
-      "id": "SIG-20260524-A13",
-      "slug": "viktor-融资-押注销售和收入团队流程",
-      "title": "Viktor 融资，押注销售和收入团队流程",
-      "date": "2026-05-24",
-      "signalType": "funding",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "Viktor 宣布€64.7 m 融资，材料把资金用途指向销售和收入团队流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
-      "sourceTitle": "AI coworker startup Viktor raises €64.7 million Series A after hitting €12.9 million revenue run rate within 10 weeks of launch | EU-Startups",
-      "sources": "原文出处：eu-startups.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-24--signal--viktor-auto-signal-p-017.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "funding"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A13"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Viktor 宣布€64.7 m 融资，材料把资金用途指向销售和收入团队流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=viktor-融资-押注销售和收入团队流程",
-      "frontend": {
-        "displayTitle": "Viktor 融资，押注销售和收入团队流程",
-        "sourceTitle": "AI coworker startup Viktor raises €64.7 million Series A after hitting €12.9 million revenue run rate within 10 weeks of launch | EU-Startups",
-        "eventLine": "Viktor 宣布€64.7 m 融资，材料把资金用途指向销售和收入团队流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到销售和收入团队流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 eu-startups.com。",
-        "sourceLinks": [
-          {
-            "label": "eu-startups.com",
-            "url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
-            "level": "B",
-            "note": "Viktor 宣布€64.7 m 融资，材料把资金用途指向销售和收入团队流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "AI 同事创业公司 Viktor 完成 6470 万欧元 A 轮融资，发布 10 周收入运行率达 1290 万欧元"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-funding",
-          "name": "融资证据",
-          "group": "evidence",
-          "aliases": [
-            "投资",
-            "种子轮"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        },
-        {
-          "id": "stage-watch",
-          "name": "观察",
-          "group": "stage",
-          "aliases": [
-            "watch"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "AI 同事创业公司 Viktor 完成 6470 万欧元 A 轮融资，发布 10 周收入运行率达 1290 万欧元"
-    },
-    {
-      "id": "SIG-20260524-A14",
-      "slug": "langchain-发布面向企业智能体协作流程的-ai-能力",
-      "title": "langchain 发布面向企业智能体协作流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "langchain 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://github.com/langchain-ai/deepagentsjs/",
-      "sourceTitle": "langchain-ai/deepagentsjs",
-      "sources": "原文出处：github.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--langchain-auto-signal-p-018.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A14"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "langchain 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=langchain-发布面向企业智能体协作流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "langchain 发布面向企业智能体协作流程的 AI 能力",
-        "sourceTitle": "langchain-ai/deepagentsjs",
-        "eventLine": "langchain 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "S 级来源，当前材料来自 github.com。",
-        "sourceLinks": [
-          {
-            "label": "github.com",
-            "url": "https://github.com/langchain-ai/deepagentsjs/",
-            "level": "S",
-            "note": "langchain 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "langchain-ai/deepagentsjs"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "langchain-ai/deepagentsjs"
-    },
-    {
-      "id": "SIG-20260524-A15",
-      "slug": "analysis-融资-押注地产开发和建筑设计流程",
-      "title": "Analysis 融资，押注地产开发和建筑设计流程",
-      "date": "2026-05-24",
-      "signalType": "funding",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "Analysis 宣布$10M 融资，材料把资金用途指向地产开发和建筑设计流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
-      "sourceTitle": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI",
-      "sources": "原文出处：businesswire.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-24--signal--analysis-auto-signal-p-019.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "funding"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A15"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Analysis 宣布$10M 融资，材料把资金用途指向地产开发和建筑设计流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=analysis-融资-押注地产开发和建筑设计流程",
-      "frontend": {
-        "displayTitle": "Analysis 融资，押注地产开发和建筑设计流程",
-        "sourceTitle": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI",
-        "eventLine": "Analysis 宣布$10M 融资，材料把资金用途指向地产开发和建筑设计流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 businesswire.com。",
-        "sourceLinks": [
-          {
-            "label": "businesswire.com",
-            "url": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
-            "level": "B",
-            "note": "Analysis 宣布$10M 融资，材料把资金用途指向地产开发和建筑设计流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "General Analysis 获得 1000 万美元种子轮融资，用于保障 Agentic AI 安全"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track",
-          "aliases": [
-            "AI-Coding",
-            "AI 编程"
-          ]
-        },
-        {
-          "id": "function-engineering",
-          "name": "工程研发",
-          "group": "function",
-          "aliases": [
-            "开发",
-            "仿真",
-            "工程"
-          ]
-        },
-        {
-          "id": "customer-developer-team",
-          "name": "开发团队",
-          "group": "customer",
-          "aliases": [
-            "工程团队"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "General Analysis 获得 1000 万美元种子轮融资，用于保障 Agentic AI 安全"
-    },
-    {
-      "id": "SIG-20260524-A16",
-      "slug": "c-h-robinson-部署-ai-到物流订单和邮件处理流程",
-      "title": "C.H. Robinson 部署 AI 到物流订单和邮件处理流程",
-      "date": "2026-05-24",
-      "signalType": "case",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到物流订单和邮件处理流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "C.H. Robinson 把 AI 放进物流订单和邮件处理流程，材料显示它已经对应到具体任务或客户环境。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://theapplied.co/use-cases/how-c-h-robinson-automates-5500-shipments-daily-with-langchain-ai-agents",
-      "sourceTitle": "How C.H. Robinson Uses AI for How C.H. Robinson Automates 5,500 Shipments Daily with LangChain AI Agents | Applied",
-      "sources": "原文出处：theapplied.co",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-24--signal--c-h-robinson-auto-signal-p-020.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "case"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A16"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "C.H. Robinson 把 AI 放进物流订单和邮件处理流程，材料显示它已经对应到具体任务或客户环境。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到物流订单和邮件处理流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=c-h-robinson-部署-ai-到物流订单和邮件处理流程",
-      "frontend": {
-        "displayTitle": "C.H. Robinson 部署 AI 到物流订单和邮件处理流程",
-        "sourceTitle": "How C.H. Robinson Uses AI for How C.H. Robinson Automates 5,500 Shipments Daily with LangChain AI Agents | Applied",
-        "eventLine": "C.H. Robinson 把 AI 放进物流订单和邮件处理流程，材料显示它已经对应到具体任务或客户环境。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到物流订单和邮件处理流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 theapplied.co。",
-        "sourceLinks": [
-          {
-            "label": "theapplied.co",
-            "url": "https://theapplied.co/use-cases/how-c-h-robinson-automates-5500-shipments-daily-with-langchain-ai-agents",
-            "level": "B",
-            "note": "C.H. Robinson 把 AI 放进物流订单和邮件处理流程，材料显示它已经对应到具体任务或客户环境。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "C.H. Robinson 如何用 LangChain AI Agents 每天自动处理 5500 批货运"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        },
-        {
-          "id": "stage-watch",
-          "name": "观察",
-          "group": "stage",
-          "aliases": [
-            "watch"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "C.H. Robinson 如何用 LangChain AI Agents 每天自动处理 5500 批货运"
-    },
-    {
-      "id": "SIG-20260524-A18",
-      "slug": "formulahendry-vscode-发布面向企业智能体协作流程的-ai-能力",
-      "title": "formulahendry/vscode 发布面向企业智能体协作流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "formulahendry/vscode 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://github.com/formulahendry/vscode-agent-skills",
-      "sourceTitle": "formulahendry/vscode-agent-skills",
-      "sources": "原文出处：github.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--formulahendry-vscode-auto-signal-p-022.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A18"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "formulahendry/vscode 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=formulahendry-vscode-发布面向企业智能体协作流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "formulahendry/vscode 发布面向企业智能体协作流程的 AI 能力",
-        "sourceTitle": "formulahendry/vscode-agent-skills",
-        "eventLine": "formulahendry/vscode 发布新的 AI 能力，材料显示它面向企业智能体协作流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 github.com。",
-        "sourceLinks": [
-          {
-            "label": "github.com",
-            "url": "https://github.com/formulahendry/vscode-agent-skills",
-            "level": "B",
-            "note": "formulahendry/vscode 发布新的 AI 能力，材料显示它面向企业智能体协作流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "formulahendry/vscode-agent-skills"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "formulahendry/vscode-agent-skills"
-    },
-    {
-      "id": "SIG-20260524-A19",
-      "slug": "pwc-部署-ai-到企业智能体协作流程",
-      "title": "PwC 部署 AI 到企业智能体协作流程",
-      "date": "2026-05-24",
-      "signalType": "case",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "PwC 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://www.anthropic.com/news/pwc-expanded-partnership",
-      "sourceTitle": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\\\ Anthropic",
-      "sources": "原文出处：anthropic.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-05-24--signal--pwc-auto-signal-p-023.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "case"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A19"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "PwC 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=pwc-部署-ai-到企业智能体协作流程",
-      "frontend": {
-        "displayTitle": "PwC 部署 AI 到企业智能体协作流程",
-        "sourceTitle": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\\\ Anthropic",
-        "eventLine": "PwC 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到企业智能体协作流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "S 级来源，当前材料来自 anthropic.com。",
-        "sourceLinks": [
-          {
-            "label": "anthropic.com",
-            "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
-            "level": "S",
-            "note": "PwC 把 AI 放进企业智能体协作流程，材料显示它已经对应到具体任务或客户环境。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "PwC 正在部署 Claude，为客户构建技术、执行交易并重塑企业职能"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "PwC 正在部署 Claude，为客户构建技术、执行交易并重塑企业职能"
-    },
-    {
-      "id": "SIG-20260524-A21",
-      "slug": "introducing-conversion-agents-发布面向地产开发和建筑设计流程的-ai-能力",
-      "title": "Introducing Conversion Agents 发布面向地产开发和建筑设计流程的 AI 能力",
-      "date": "2026-05-24",
-      "signalType": "product_service",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "Introducing Conversion Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://conversion.ai/blog/conversion-agents/",
-      "sourceTitle": "Introducing Conversion Agents | Conversion",
-      "sources": "原文出处：conversion.ai",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--introducing-conversion-agents-auto-signal-p-027.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A21"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Introducing Conversion Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=introducing-conversion-agents-发布面向地产开发和建筑设计流程的-ai-能力",
-      "frontend": {
-        "displayTitle": "Introducing Conversion Agents 发布面向地产开发和建筑设计流程的 AI 能力",
-        "sourceTitle": "Introducing Conversion Agents | Conversion",
-        "eventLine": "Introducing Conversion Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到地产开发和建筑设计流程，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 conversion.ai。",
-        "sourceLinks": [
-          {
-            "label": "conversion.ai",
-            "url": "https://conversion.ai/blog/conversion-agents/",
-            "level": "B",
-            "note": "Introducing Conversion Agents 发布新的 AI 能力，材料显示它面向地产开发和建筑设计流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "Conversion Agents 发布"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track",
-          "aliases": [
-            "AI-Coding",
-            "AI 编程"
-          ]
-        },
-        {
-          "id": "function-engineering",
-          "name": "工程研发",
-          "group": "function",
-          "aliases": [
-            "开发",
-            "仿真",
-            "工程"
-          ]
-        },
-        {
-          "id": "customer-developer-team",
-          "name": "开发团队",
-          "group": "customer",
-          "aliases": [
-            "工程团队"
-          ]
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track",
-          "aliases": [
-            "AI-Agent",
-            "智能体"
-          ]
-        },
-        {
-          "id": "track-ai-governance",
-          "name": "AI 治理",
-          "group": "track",
-          "aliases": [
-            "Agent 治理",
-            "权限审计"
-          ]
-        },
-        {
-          "id": "scenario-agent-governance",
-          "name": "Agent 权限治理",
-          "group": "scenario",
-          "aliases": [
-            "审计",
-            "权限",
-            "风险控制"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "Conversion Agents 发布"
-    },
-    {
-      "id": "SIG-20260524-A22",
-      "slug": "zalos-融资-押注模型部署和算力调用",
-      "title": "Zalos 融资，押注模型部署和算力调用",
-      "date": "2026-05-24",
-      "signalType": "funding",
-      "brief": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "judgment": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-      "event": "Zalos 宣布$3.6M 融资，材料把资金用途指向模型部署和算力调用。",
-      "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-      "sourceUrl": "https://www.globenewswire.com/news-release/2026/03/24/3261268/0/en/zalos-raises-3-6m-to-build-computer-agents-that-operate-finance-systems-the-way-humans-do.html",
-      "sourceTitle": "Zalos raises $3.6M to build Computer Agents that operate",
-      "sources": "原文出处：globenewswire.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-05-24--signal--zalos-auto-signal-p-028.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "funding"
-      ],
-      "structuredRefs": [
-        "SIG-20260524-A22"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Zalos 宣布$3.6M 融资，材料把资金用途指向模型部署和算力调用。"
-        ],
-        [
-          "为什么值得看",
-          "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。"
-        ],
-        [
-          "影响谁",
-          "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。"
-        ],
-        [
-          "证据边界",
-          "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补充验证。",
-      "link": "signal-detail.html?id=zalos-融资-押注模型部署和算力调用",
-      "frontend": {
-        "displayTitle": "Zalos 融资，押注模型部署和算力调用",
-        "sourceTitle": "Zalos raises $3.6M to build Computer Agents that operate",
-        "eventLine": "Zalos 宣布$3.6M 融资，材料把资金用途指向模型部署和算力调用。",
-        "whyWatch": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
-        "businessMeaning": "后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。",
-        "evidenceNote": "B 级来源，当前材料来自 globenewswire.com。",
-        "sourceLinks": [
-          {
-            "label": "globenewswire.com",
-            "url": "https://www.globenewswire.com/news-release/2026/03/24/3261268/0/en/zalos-raises-3-6m-to-build-computer-agents-that-operate-finance-systems-the-way-humans-do.html",
-            "level": "B",
-            "note": "Zalos 宣布$3.6M 融资，材料把资金用途指向模型部署和算力调用。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "当前材料保留了原始链接、全文和哈希",
-          "真实客户规模、长期留存和效果指标仍需要继续补充验证"
-        ],
-        "sourceTitleTranslation": "Zalos 融资 360 万美元，构建可操作财务系统的 Computer Agents"
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "function-procurement-bidding",
-          "name": "采购投标",
-          "group": "function",
-          "aliases": [
-            "招投标",
-            "采购"
-          ]
-        },
-        {
-          "id": "evidence-procurement",
-          "name": "招投标 / 采购",
-          "group": "evidence",
-          "aliases": [
-            "招标",
-            "政府采购"
-          ]
-        },
-        {
-          "id": "evidence-funding",
-          "name": "融资证据",
-          "group": "evidence",
-          "aliases": [
-            "投资",
-            "种子轮"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        },
-        {
-          "id": "stage-rising",
-          "name": "升温",
-          "group": "stage",
-          "aliases": [
-            "rising"
-          ]
-        },
-        {
-          "id": "stage-watch",
-          "name": "观察",
-          "group": "stage",
-          "aliases": [
-            "watch"
-          ]
-        }
-      ],
-      "sourceTitleTranslation": "Zalos 融资 360 万美元，构建可操作财务系统的 Computer Agents"
-    }
-  ],
-  "daily": {
-    "id": "daily-2026-05-24",
-    "slug": "daily-2026-05-24",
-    "title": "那 15,000 封邮件，才是 Agent 的第一笔生意",
-    "issue": "",
-    "period": "",
-    "contentType": "daily_observation",
-    "judgment": "一个客户发来货运邮件。附件里有手写备注、扫描件、缺信息项的运输请求，格式各不相同。",
-    "dek": "一个客户发来货运邮件。附件里有手写备注、扫描件、缺信息项的运输请求，格式各不相同。",
-    "summary": [
-      "一个客户发来货运邮件。附件里有手写备注、扫描件、缺信息项的运输请求，格式各不相同。",
-      "员工要读懂它、判断货运类型、补齐信息、创建订单、安排预约，再启动后续跟踪。",
-      "企业 AI 的价值，不一定先出现在漂亮的新界面里。它常常藏在这样一条排队邮件里。"
-    ],
-    "sections": [
-      {
-        "title": "客户还在发邮件，预算就会跟过去",
-        "body": "C.H. Robinson 是全球大型物流服务商之一，公开案例称它每年管理约 3,700 万票货运，服务 83,000 个客户。这样的公司不缺线上工具。问题是，即使公司已经投入数字订购系统，仍有相当一部分客户继续用邮件交易。\n\n系统已经不少，系统之外的工作还在靠邮件、表格、PDF、人工判断和来回确认维持运转。它们不新，也不酷，但会吞掉时间、制造排队、拖慢交付。\n\nC.H. Robinson 的 GenAI 团队用 LangChain、LangGraph 和 LangSmith 搭了一个 Agent 系统，处理从邮件进入到订单创建和跟踪启动的流程。公开案例披露，现在系统每天大约接手 5,500 票订单，每天节省超过 600 小时人工邮件处理时间。\n\n这些数字不能直接推出长期 ROI，也不能替代公司内部审计。但它们已经足够提醒老板：钱会先流向最难清掉的队列。"
       },
       {
-        "title": "人退到后面，开始管异常",
-        "body": "这类 Agent 改变的，不只是“少几个人读邮件”。\n\n过去，运营人员站在流程最前面，把散落在邮件和附件里的信息翻译成系统能接受的订单。客户写得不完整，人来补；格式不统一，人来判断；信息缺口不清楚，人来回追问。人的角色像一个活的适配器，负责把混乱输入压成标准流程。\n\nAgent 接手后，人的位置往后移。一线团队不再只是逐封录入，而是看系统能不能正确分类，哪些异常需要人工接手，哪些客户格式总是出错，哪些信息项缺口需要前置规则。\n\nLangGraph 用来管理复杂分类中的状态，LangSmith 用来观察运行中的 Agent。这些细节恰好说明：企业买的不是一次回答，而是一套能被监控、调试和扩容的处理能力。\n\n当 AI 只在聊天框里工作，它像临时助手；当它把邮件变成订单、把异常留给人处理，它就开始接近企业运营系统。"
-      },
-      {
-        "title": "你的公司，也有一条排队邮箱",
-        "body": "C.H. Robinson 的行业是物流，但这个问题并不只属于物流。\n\n采购部门有供应商询价和下单请求，财务部门有发票和回款沟通，保险公司有理赔通知，客户服务有工单和投诉，法务团队有合同版本和审批邮件。很多企业真正卡住的地方，未必缺一个会写总结的 AI，更缺一个能把外部混乱输入接进内部系统的订单前台。\n\n过去问的是：员工用了 AI 以后，写得快不快，查资料快不快，会议纪要快不快。接下来更该问的是：哪些高频邮箱还靠人读？哪些流程每天都在把散落材料手工转成系统动作？哪些队列等待时间，其实不是人手不足，而是接单方式没有被重新设计？\n\n它会变成一件更具体的事：把客户仍然习惯使用的旧邮件，接到公司已经运行多年的订单、审批、服务和跟踪系统里。"
-      },
-      {
-        "title": "会接单的 Agent，才会进预算",
-        "body": "企业 AI 的下一阶段，不只看模型能力。还要看它能不能穿过不干净、不完整、不标准的业务现场：读邮件，识别附件，判断分类，补齐信息项，创建订单，留下记录，遇到不确定时把人叫回来。\n\nC.H. Robinson 这个案例提醒市场：AI Agent 如果只能陪员工聊天，它还是工具；如果能把混乱邮件变成可推进的业务流程，它才开始变重。\n\n老板不必先问“我们要不要上 Agent”。更好的问题是：公司里哪一个邮箱、哪条队列、哪类客户请求，每天还在靠人把混乱信息读成订单、报价、理赔、工单或审批？\n\n最早该改的地方，通常就在那里。"
-      },
-      {
-        "title": "相关文章",
-        "body": "- Applied / C.H. Robinson 案例：https://theapplied.co/use-cases/how-c-h-robinson-automates-5500-shipments-daily-with-langchain-ai-agents"
-      }
-    ],
-    "homeTitle": "那 15,000 封邮件，才是 Agent 的第一笔生意",
-    "homeSummary": "C.H. Robinson 用 AI Agent 每天接手约 5,500 票货运订单。客户邮件、扫描件、缺信息项请求和人工录入点，正在变成企业 AI 预算最先落下去的现场。",
-    "homeCards": [
-      {
-        "label": "旧通道",
-        "title": "每天 15,000 封邮件",
-        "body": "客户仍然用邮件发起货运请求，格式不统一、信息项不完整，过去需要人工读懂并录入订单。"
-      },
-      {
-        "label": "新位置",
-        "title": "人从录入移到复核",
-        "body": "Agent 接手分类、补信息项和建单后，一线团队的重点会转向异常处理、质量监控和流程规则。"
-      },
-      {
-        "label": "真问题",
-        "title": "AI 能不能接单",
-        "body": "企业不只需要会聊天的助手，更需要能把混乱输入变成订单、工单、理赔或审批动作。"
-      }
-    ],
-    "columnPage": {
-      "title": "那 15,000 封邮件，才是 Agent 的第一笔生意",
-      "thesis": "企业 AI 的第一批真实价值，可能不在新界面里，而在每天排队的客户请求、邮件附件和订单录入点里。",
-      "body": "C.H. Robinson 每天收到约 15,000 封货运相关邮件，过去每封平均需要约 7 分钟人工处理。AI Agent 现在每天约自动处理 5,500 票订单，公开案例称每天节省超过 600 小时人工邮件处理时间。",
-      "impact": "这件事的重点不在“物流用了 AI”，而在 AI 开始把客户习惯使用的旧邮件，接进订单、预约、跟踪和异常处理流程。",
-      "note": "下一轮企业 AI 项目，别只问员工省了几分钟，也要问公司哪条邮件队列还在靠人读、补信息项、建订单。",
-      "keywords": [
-        "C.H. Robinson",
-        "AI Agent",
-        "企业流程",
-        "物流订单入口",
-        "邮件订单",
-        "LangChain"
-      ],
-      "strength": "高",
-      "state": "公开案例披露了邮件规模、系统接手订单量和人工时间节省，但长期 ROI、内部验收口径和更大范围部署效果仍需后续材料验证。",
-      "trendTitle": "AI 的预算，正在流向旧邮件队列",
-      "trendBody": "企业 AI 的预算正在从个人效率工具，流向邮件、PDF、缺信息项请求和人工录入点这些更贴近收入、交付和客户响应的现场。",
-      "watchItems": [
-        {
-          "period": "7D",
-          "title": "看是否出现更多流程细节",
-          "body": "重点看订单创建、预约、跟踪和异常处理之间的交接边界。"
-        },
-        {
-          "period": "30D",
-          "title": "看同类物流案例是否增多",
-          "body": "如果更多物流、供应链或采购企业披露邮件队列由系统接手，说明场景正在扩散。"
-        },
-        {
-          "period": "90D",
-          "title": "看企业是否开始采购接单层能力",
-          "body": "观察预算是否从聊天助手转向文档、邮件、工单和订单前台改造。"
-        }
-      ],
-      "riskItems": [
-        {
-          "title": "数字来自公开案例",
-          "body": "5,500 票订单和 600 小时节省来自案例披露，不能直接外推为长期 ROI。"
-        },
-        {
-          "title": "行业迁移需要谨慎",
-          "body": "物流邮件订单适合让系统接手，不代表所有杂乱请求都能同样顺利接管。"
-        },
-        {
-          "title": "人工复核仍然关键",
-          "body": "分类、缺信息项、异常和客户特殊要求仍需要清楚的人机交接边界。"
-        }
-      ]
-    },
-    "points": [
-      "一个客户发来货运邮件。附件里有手写备注、扫描件、缺信息项的运输请求，格式各不相同。"
-    ],
-    "risk": "客户采用、预算归属和部署周期仍需继续观察。",
-    "calibration": [
-      {
-        "id": "OPN-FB-20260524-07",
-        "slug": "peter-yang-ai-编程进入开发流程管理",
-        "title": "Peter Yang：AI 编程进入开发流程管理",
-        "date": "2026-05-24",
-        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-24--frontier-opinion--peter-yang-peter-yang-i-hate-seeing-all-the-mass-layoffs-here-are-6-th.md",
-        "sourceUrl": "https://x.com/petergyang/status/2057830781352034322",
+        "id": "OPN-FB-20260525-17",
+        "slug": "aaron-levie-一篇精彩的帖子-讲述了为什么工作不会像一些人预测的那样消失",
+        "title": "Aaron Levie：一篇精彩的帖子，讲述了为什么工作不会像一些人预测的那样消失",
+        "date": "2026-05-25",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--aaron-levie-aaron-levie-this-is-a-fantastic-post-about-why-jobs-aren-t.md",
+        "sourceUrl": "https://x.com/levie/status/2058223867815227756",
         "originalDate": "",
-        "speakerLine": "Peter Yang",
-        "originalView": "I hate seeing all the mass layoffs. Here are 6 things you can do as an employee to take back control: 1. Read the signals If business growth is stagnant and leadership is suddenly obsessed with \"flatter orgs\" or \"restructuring for the agentic era,\" you already know what's coming. 2. Learn Codex or Claude Code These apps are the best training grounds for working with AI agents. Tell them about your job and ask them what you can build. If your company doesn’t let you use these tools, use them for your personal projects. 3. Build side projects Ship a small product or make an open-source contribution. If you work at a large company, your builder skills have probably atrophied. It’s time to bring them back. 4. Develop a GitHub history If you do step 3 consistently, you’ll develop a body of work on GitHub over time. My friend @zarazhangrui is a great example — she built a frontend-slides skill that now has 16K GitHub stars and has been shipping non-stop since. 5. Become top 10% at your craft AI gets people to average really fast. But that just means customers are willing to pay more for human craft and taste. Pick one skill you genuinely enjoy working on and put in the reps until you’re in the top 10% at it. 6. Let the market determine your value Build in public, solve real user problems, and craft great products. That’s how you’ll get noticed by great employers, not by submitting 100s of resumes. And if all else fails, consider becoming a founder. I think entrepreneurship is the safest job in the AI era anyway. Practical AI tutorials and interviews for busy people |",
-        "originalTranslation": "我讨厌看到所有的大规模裁员。作为员工，您可以做以下6件事来收回控制权： 1.阅读信号如果业务增长停滞不前，领导层突然痴迷于“更平坦的组织”或“Agent时代的重组” ，您已经知道会发生什么。2.学习Codex或Claude Code这些应用程序是与AIAgent合作的最佳培训场所。告诉他们您的工作，并询问他们您可以建立什么。 如果您的公司不允许您使用这些工具，请将它们用于您的个人项目。3.构建附带项目运送小产品或做出开源贡献。如果你在一家大公司工作，你的建筑技能可能会萎缩。是时候把它们带回来了。4.开发GitHub历史记录如果您始终如一地执行第3步，随着时间的推移，您将在GitHub上开发一系列工作。 我的朋友@ zarazhangrui就是一个很好的例子—她建立了一个前端幻灯片技能，现在有16K的GitHub星星，并且从那以后一直在不间断地发货。5.在您的工艺AI中排名前10 ％ ，可以让人们非常快地达到平均水平。但这仅仅意味着客户愿意为人类的工艺和品味付出更多。选择一项您真正喜欢的技能，并投入代表，直到您进入前10%。6. 让市场决定您的价值在公共场合构建，解决真正的用户问题，并打造出色的产品。这就是优秀雇主注意到您的方式，而不是通过提交数百份简历。如果其他一切都失败了，请考虑成为创始人。我认为创业是AI时代最安全的工作。为忙碌的人提供实用的AI教程和访谈|",
-        "interpretation": "这条观点提示 Agent 落地会先遇到运行环境、权限边界和工具连接问题。",
+        "speakerLine": "Aaron Levie",
+        "originalView": "This is a fantastic post about why jobs aren’t going away in the way some predict. We are constantly making the mistake of confusing task completion with AI with being able to eliminate the whole job. Even as we can automate one or many tasks within a job, the definition of the job almost inevitably just expands to do vastly more of those tasks, do them at a higher quality, or move on to the type of task that hasn’t been automated yet. And as a result of being able to do more of the tasks or at a higher quality level, the job becomes valuable in a new way. And in many cases for now an entirely new audience as well. This will be true for coding, legal work, sales, or marketing. The small business or non-tech company that wants to now take on larger software projects finally can, and they’ll hire to do so. The small business that couldn’t afford a full marketing agency can hire or contract out to a marketer that can do as much as an agency did before now with agents. And so on. Don’t fall into the trap of confusing tasks with jobs. ceo @box - your business lives in content. unleash it with AI likes=627; retweets=84; replies=67",
+        "originalTranslation": "这是一篇精彩的帖子，讲述了为什么工作不会像一些人预测的那样消失。我们不断犯错误，将任务完成与AI混淆，将能够消除整个工作。即使我们可以在一个工作中自动化一个或多个任务，工作的定义几乎不可避免地只会扩展到完成更多的任务，以更高的质量完成它们，或者转向尚未自动化的任务类型。 由于能够完成更多的任务或更高的质量水平，这项工作以新的方式变得有价值。在许多情况下，现在也是一个全新的受众。这适用于编码、法律工作、销售或营销。现在想要承担大型软件项目的小企业或非技术公司终于可以做到这一点，他们会雇佣这样的公司。 买不起完整营销机构的小企业可以雇佣或外包给营销人员，他们可以像以前的Agent商一样做很多事情。等等。不要陷入将任务与工作混淆的陷阱。ceo @ box -您的业务生活在内容中。用AI释放它",
+        "interpretation": "这条观点说明 AI 编程正在从单点工具转向开发流程、测试和任务管理。",
         "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
         "opinionTier": "sidebar",
         "displayLane": "signal_sidebar",
-        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：customer, agent, agents；包含数据、客户或业务量级线索",
-        "ratingScore": 8,
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent, agents；包含数据、客户或业务量级线索",
+        "ratingScore": 6,
         "publishStatus": "frontstage_sidebar",
         "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
         "relations": [],
@@ -21108,141 +30180,6 @@ window.WaveSightContent = {
             ]
           },
           {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI 治理",
-            "group": "track",
-            "aliases": [
-              "Agent 治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
-            "id": "track-enterprise-workflow",
-            "name": "企业工作流",
-            "group": "track",
-            "aliases": [
-              "企业 AI 工作流",
-              "工作流自动化"
-            ]
-          },
-          {
-            "id": "customer-enterprise",
-            "name": "大中型企业",
-            "group": "customer",
-            "aliases": [
-              "企业客户"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "OPN-FB-20260524-10",
-        "slug": "garry-tan-gbrain刚刚发布了v0-40-0-为您的openclaw-h",
-        "title": "Garry Tan：GBrain刚刚发布了v0.40.0 ，为您的OpenClaw/H",
-        "date": "2026-05-24",
-        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-24--frontier-opinion--garry-tan-garry-tan-gbrain-just-shipped-v0-40-0-gives-your-openclaw-he.md",
-        "sourceUrl": "https://x.com/garrytan/status/2058053659527913566",
-        "originalDate": "",
-        "speakerLine": "Garry Tan",
-        "originalView": "GBrain just shipped v0.40.0 gives your OpenClaw/Hermes Agent + GBrain a voice agent. It's based on Gemini Live. (Thanks @demishassabis it's amazing) Large context, great tool use, full brain access. Mars is a friend, Venus is your EA. My open source gift to you. President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=159; retweets=8; replies=24",
-        "originalTranslation": "GBrain刚刚发布了v0.40.0 ，为您的OpenClaw/Hermes Agent + GBrain提供了语音Agent。它基于Gemini Live。（谢谢@ demishassabis ，太棒了）环境广阔，工具使用非常好，可以充分利用大脑。火星是朋友，金星是你的EA。我给你的开源礼物。总裁兼首席执行官@ ycombinator -创始人@ garryslist- GStack的创建者和GBrain设计师/工程师，帮助创始人- SF Dem加速繁荣循环",
-        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
-        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-        "opinionTier": "sidebar",
-        "displayLane": "signal_sidebar",
-        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent, yc, gemini；包含数据、客户或业务量级线索",
-        "ratingScore": 7,
-        "publishStatus": "frontstage_sidebar",
-        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-        "relations": [],
-        "relatedSignals": [],
-        "relatedTrends": [],
-        "relatedTrendReports": [],
-        "tags": [
-          {
-            "id": "scenario-frontier-opinion",
-            "name": "前沿观点",
-            "group": "scenario",
-            "aliases": [
-              "观点证据",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "evidence-frontier-opinion",
-            "name": "前沿观点",
-            "group": "evidence",
-            "aliases": [
-              "观点",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "source-social",
-            "name": "社媒线索",
-            "group": "source",
-            "aliases": [
-              "X",
-              "社区"
-            ]
-          },
-          {
-            "id": "opinion-agent-workflow",
-            "name": "Agent 工作流观点",
-            "group": "opinion",
-            "aliases": [
-              "多 Agent",
-              "工作流"
-            ]
-          },
-          {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI 治理",
-            "group": "track",
-            "aliases": [
-              "Agent 治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
             "id": "track-enterprise-workflow",
             "name": "企业工作流",
             "group": "track",
@@ -21292,15 +30229,15 @@ window.WaveSightContent = {
     "link": "daily-detail.html"
   },
   "trendReport": {
-    "id": "TRD-WATCH-20260524",
-    "slug": "构建基于superclaude框架的工作流-融合命令-代理-模式与会话记忆-发布面向模型部署和算力调用的-ai-能力",
-    "title": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 发布面向模型部署和算力调用的 AI 能力｜继续观察",
+    "id": "TRD-WATCH-20260525",
+    "slug": "微软研究院推出webwright终端原生浏览器代理框架-发布面向模型部署和算力调用的-ai-能力",
+    "title": "微软研究院推出Webwright终端原生浏览器代理框架 发布面向模型部署和算力调用的 AI 能力｜继续观察",
     "oneLine": "这条材料把 AI 从通用能力拉回到模型部署和算力调用，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。",
     "score": "继续观察",
     "stage": "暂无公开信息补足深挖条件",
-    "date": "2026-05-24",
-    "updated": "2026.05.24",
-    "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-24--signal--superclaude-auto-signal-p-001.md",
+    "date": "2026-05-25",
+    "updated": "2026.05.25",
+    "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-05-25--signal--webwright-auto-signal-p-001.md",
     "relationFields": "",
     "relations": [],
     "evidenceGaps": "暂未监测到足够同类案例、客户付费信息或多源证据，不能写成正式趋势结论。",
@@ -21347,34 +30284,6 @@ window.WaveSightContent = {
         ]
       },
       {
-        "id": "track-ai-agent",
-        "name": "AI Agent",
-        "group": "track",
-        "aliases": [
-          "AI-Agent",
-          "智能体"
-        ]
-      },
-      {
-        "id": "track-ai-governance",
-        "name": "AI 治理",
-        "group": "track",
-        "aliases": [
-          "Agent 治理",
-          "权限审计"
-        ]
-      },
-      {
-        "id": "scenario-agent-governance",
-        "name": "Agent 权限治理",
-        "group": "scenario",
-        "aliases": [
-          "审计",
-          "权限",
-          "风险控制"
-        ]
-      },
-      {
         "id": "track-enterprise-workflow",
         "name": "企业工作流",
         "group": "track",
@@ -21389,16 +30298,6 @@ window.WaveSightContent = {
         "group": "customer",
         "aliases": [
           "企业客户"
-        ]
-      },
-      {
-        "id": "track-enterprise-data",
-        "name": "企业数据智能",
-        "group": "track",
-        "aliases": [
-          "企业数据",
-          "RAG",
-          "企业知识库"
         ]
       },
       {
@@ -21433,31 +30332,299 @@ window.WaveSightContent = {
   },
   "brief": {
     "issue": "Preview.001",
-    "period": "2026.05.24",
-    "title": "那 15,000 封邮件，才是 Agent 的第一笔生意",
+    "period": "2026.05.25",
+    "title": "销售 AI 的第一笔生意，是那条线索流水线",
     "summary": [
-      "一个客户发来货运邮件。附件里有手写备注、扫描件、缺信息项的运输请求，格式各不相同。"
+      "12,000 多条 MQL 进来，25 名 SDR 排队处理。"
     ],
     "heat": [],
     "evidence": {
       "points": [
         {
-          "id": "OPN-FB-20260524-07",
-          "slug": "peter-yang-ai-编程进入开发流程管理",
-          "title": "Peter Yang：AI 编程进入开发流程管理",
-          "date": "2026-05-24",
-          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-24--frontier-opinion--peter-yang-peter-yang-i-hate-seeing-all-the-mass-layoffs-here-are-6-th.md",
-          "sourceUrl": "https://x.com/petergyang/status/2057830781352034322",
+          "id": "OPN-FB-20260525-01",
+          "slug": "garry-tan-我最新的gbrain-evals刚刚下降-这就是gbrain与其他",
+          "title": "Garry Tan：我最新的gbrain-evals刚刚下降-这就是gbrain与其他",
+          "date": "2026-05-25",
+          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--garry-tan-garry-tan-my-newest-gbrain-evals-just-dropped-this-is-how-gb.md",
+          "sourceUrl": "https://x.com/garrytan/status/2058448209027141709",
           "originalDate": "",
-          "speakerLine": "Peter Yang",
-          "originalView": "I hate seeing all the mass layoffs. Here are 6 things you can do as an employee to take back control: 1. Read the signals If business growth is stagnant and leadership is suddenly obsessed with \"flatter orgs\" or \"restructuring for the agentic era,\" you already know what's coming. 2. Learn Codex or Claude Code These apps are the best training grounds for working with AI agents. Tell them about your job and ask them what you can build. If your company doesn’t let you use these tools, use them for your personal projects. 3. Build side projects Ship a small product or make an open-source contribution. If you work at a large company, your builder skills have probably atrophied. It’s time to bring them back. 4. Develop a GitHub history If you do step 3 consistently, you’ll develop a body of work on GitHub over time. My friend @zarazhangrui is a great example — she built a frontend-slides skill that now has 16K GitHub stars and has been shipping non-stop since. 5. Become top 10% at your craft AI gets people to average really fast. But that just means customers are willing to pay more for human craft and taste. Pick one skill you genuinely enjoy working on and put in the reps until you’re in the top 10% at it. 6. Let the market determine your value Build in public, solve real user problems, and craft great products. That’s how you’ll get noticed by great employers, not by submitting 100s of resumes. And if all else fails, consider becoming a founder. I think entrepreneurship is the safest job in the AI era anyway. Practical AI tutorials and interviews for busy people |",
-          "originalTranslation": "我讨厌看到所有的大规模裁员。作为员工，您可以做以下6件事来收回控制权： 1.阅读信号如果业务增长停滞不前，领导层突然痴迷于“更平坦的组织”或“Agent时代的重组” ，您已经知道会发生什么。2.学习Codex或Claude Code这些应用程序是与AIAgent合作的最佳培训场所。告诉他们您的工作，并询问他们您可以建立什么。 如果您的公司不允许您使用这些工具，请将它们用于您的个人项目。3.构建附带项目运送小产品或做出开源贡献。如果你在一家大公司工作，你的建筑技能可能会萎缩。是时候把它们带回来了。4.开发GitHub历史记录如果您始终如一地执行第3步，随着时间的推移，您将在GitHub上开发一系列工作。 我的朋友@ zarazhangrui就是一个很好的例子—她建立了一个前端幻灯片技能，现在有16K的GitHub星星，并且从那以后一直在不间断地发货。5.在您的工艺AI中排名前10 ％ ，可以让人们非常快地达到平均水平。但这仅仅意味着客户愿意为人类的工艺和品味付出更多。选择一项您真正喜欢的技能，并投入代表，直到您进入前10%。6. 让市场决定您的价值在公共场合构建，解决真正的用户问题，并打造出色的产品。这就是优秀雇主注意到您的方式，而不是通过提交数百份简历。如果其他一切都失败了，请考虑成为创始人。我认为创业是AI时代最安全的工作。为忙碌的人提供实用的AI教程和访谈|",
-          "interpretation": "这条观点提示 Agent 落地会先遇到运行环境、权限边界和工具连接问题。",
+          "speakerLine": "Garry Tan",
+          "originalView": "My newest gbrain-evals just dropped - this is how gbrain does vs other options. is SOTA for reranking and embedding cost, speed, and retrieval success. GBrain beats MemPalace by 1% on LongMemEval and beats Vector RAG by 38% President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=12; retweets=0; replies=5",
+          "originalTranslation": "我最新的gbrain-evals刚刚下降-这就是gbrain与其他选项相比的方式。是用于重新排名和嵌入成本，速度和检索成功的SOTA。GBrain在LongMemEval上击败MemPalace 1 ％ ，击败Vector RAG 38 ％总裁兼首席执行官@ ycombinator -创始人@ garryslist- GStack的创建者和GBrain设计师/工程师，帮助创始人- SF Dem加速繁荣循环",
+          "interpretation": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
           "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
           "opinionTier": "sidebar",
           "displayLane": "signal_sidebar",
-          "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：customer, agent, agents；包含数据、客户或业务量级线索",
-          "ratingScore": 8,
+          "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：cost, yc, eval；包含数据、客户或业务量级线索",
+          "ratingScore": 7,
+          "publishStatus": "frontstage_sidebar",
+          "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+          "relations": [],
+          "relatedSignals": [],
+          "relatedTrends": [],
+          "relatedTrendReports": [],
+          "tags": [
+            {
+              "id": "scenario-frontier-opinion",
+              "name": "前沿观点",
+              "group": "scenario",
+              "aliases": [
+                "观点证据",
+                "建造者观点"
+              ]
+            },
+            {
+              "id": "evidence-frontier-opinion",
+              "name": "前沿观点",
+              "group": "evidence",
+              "aliases": [
+                "观点",
+                "建造者观点"
+              ]
+            },
+            {
+              "id": "source-social",
+              "name": "社媒线索",
+              "group": "source",
+              "aliases": [
+                "X",
+                "社区"
+              ]
+            },
+            {
+              "id": "opinion-ai-safety-governance",
+              "name": "AI 安全治理观点",
+              "group": "opinion",
+              "aliases": [
+                "安全",
+                "权限",
+                "治理"
+              ]
+            },
+            {
+              "id": "track-ai-agent",
+              "name": "AI Agent",
+              "group": "track",
+              "aliases": [
+                "AI-Agent",
+                "智能体"
+              ]
+            },
+            {
+              "id": "track-ai-governance",
+              "name": "AI 治理",
+              "group": "track",
+              "aliases": [
+                "Agent 治理",
+                "权限审计"
+              ]
+            },
+            {
+              "id": "scenario-agent-governance",
+              "name": "Agent 权限治理",
+              "group": "scenario",
+              "aliases": [
+                "审计",
+                "权限",
+                "风险控制"
+              ]
+            },
+            {
+              "id": "track-enterprise-workflow",
+              "name": "企业工作流",
+              "group": "track",
+              "aliases": [
+                "企业 AI 工作流",
+                "工作流自动化"
+              ]
+            },
+            {
+              "id": "customer-enterprise",
+              "name": "大中型企业",
+              "group": "customer",
+              "aliases": [
+                "企业客户"
+              ]
+            },
+            {
+              "id": "track-ai-infra",
+              "name": "AI 基础设施",
+              "group": "track",
+              "aliases": [
+                "AI Infra",
+                "模型基础设施"
+              ]
+            },
+            {
+              "id": "function-procurement-bidding",
+              "name": "采购投标",
+              "group": "function",
+              "aliases": [
+                "招投标",
+                "采购"
+              ]
+            },
+            {
+              "id": "evidence-procurement",
+              "name": "招投标 / 采购",
+              "group": "evidence",
+              "aliases": [
+                "招标",
+                "政府采购"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "OPN-FB-20260525-17",
+          "slug": "aaron-levie-一篇精彩的帖子-讲述了为什么工作不会像一些人预测的那样消失",
+          "title": "Aaron Levie：一篇精彩的帖子，讲述了为什么工作不会像一些人预测的那样消失",
+          "date": "2026-05-25",
+          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--aaron-levie-aaron-levie-this-is-a-fantastic-post-about-why-jobs-aren-t.md",
+          "sourceUrl": "https://x.com/levie/status/2058223867815227756",
+          "originalDate": "",
+          "speakerLine": "Aaron Levie",
+          "originalView": "This is a fantastic post about why jobs aren’t going away in the way some predict. We are constantly making the mistake of confusing task completion with AI with being able to eliminate the whole job. Even as we can automate one or many tasks within a job, the definition of the job almost inevitably just expands to do vastly more of those tasks, do them at a higher quality, or move on to the type of task that hasn’t been automated yet. And as a result of being able to do more of the tasks or at a higher quality level, the job becomes valuable in a new way. And in many cases for now an entirely new audience as well. This will be true for coding, legal work, sales, or marketing. The small business or non-tech company that wants to now take on larger software projects finally can, and they’ll hire to do so. The small business that couldn’t afford a full marketing agency can hire or contract out to a marketer that can do as much as an agency did before now with agents. And so on. Don’t fall into the trap of confusing tasks with jobs. ceo @box - your business lives in content. unleash it with AI likes=627; retweets=84; replies=67",
+          "originalTranslation": "这是一篇精彩的帖子，讲述了为什么工作不会像一些人预测的那样消失。我们不断犯错误，将任务完成与AI混淆，将能够消除整个工作。即使我们可以在一个工作中自动化一个或多个任务，工作的定义几乎不可避免地只会扩展到完成更多的任务，以更高的质量完成它们，或者转向尚未自动化的任务类型。 由于能够完成更多的任务或更高的质量水平，这项工作以新的方式变得有价值。在许多情况下，现在也是一个全新的受众。这适用于编码、法律工作、销售或营销。现在想要承担大型软件项目的小企业或非技术公司终于可以做到这一点，他们会雇佣这样的公司。 买不起完整营销机构的小企业可以雇佣或外包给营销人员，他们可以像以前的Agent商一样做很多事情。等等。不要陷入将任务与工作混淆的陷阱。ceo @ box -您的业务生活在内容中。用AI释放它",
+          "interpretation": "这条观点说明 AI 编程正在从单点工具转向开发流程、测试和任务管理。",
+          "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+          "opinionTier": "sidebar",
+          "displayLane": "signal_sidebar",
+          "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent, agents；包含数据、客户或业务量级线索",
+          "ratingScore": 6,
+          "publishStatus": "frontstage_sidebar",
+          "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+          "relations": [],
+          "relatedSignals": [],
+          "relatedTrends": [],
+          "relatedTrendReports": [],
+          "tags": [
+            {
+              "id": "scenario-frontier-opinion",
+              "name": "前沿观点",
+              "group": "scenario",
+              "aliases": [
+                "观点证据",
+                "建造者观点"
+              ]
+            },
+            {
+              "id": "evidence-frontier-opinion",
+              "name": "前沿观点",
+              "group": "evidence",
+              "aliases": [
+                "观点",
+                "建造者观点"
+              ]
+            },
+            {
+              "id": "source-social",
+              "name": "社媒线索",
+              "group": "source",
+              "aliases": [
+                "X",
+                "社区"
+              ]
+            },
+            {
+              "id": "opinion-ai-coding",
+              "name": "AI Coding 观点",
+              "group": "opinion",
+              "aliases": [
+                "编程",
+                "开发者工具"
+              ]
+            },
+            {
+              "id": "track-ai-coding",
+              "name": "AI Coding",
+              "group": "track",
+              "aliases": [
+                "AI-Coding",
+                "AI 编程"
+              ]
+            },
+            {
+              "id": "function-engineering",
+              "name": "工程研发",
+              "group": "function",
+              "aliases": [
+                "开发",
+                "仿真",
+                "工程"
+              ]
+            },
+            {
+              "id": "customer-developer-team",
+              "name": "开发团队",
+              "group": "customer",
+              "aliases": [
+                "工程团队"
+              ]
+            },
+            {
+              "id": "track-enterprise-workflow",
+              "name": "企业工作流",
+              "group": "track",
+              "aliases": [
+                "企业 AI 工作流",
+                "工作流自动化"
+              ]
+            },
+            {
+              "id": "customer-enterprise",
+              "name": "大中型企业",
+              "group": "customer",
+              "aliases": [
+                "企业客户"
+              ]
+            },
+            {
+              "id": "function-procurement-bidding",
+              "name": "采购投标",
+              "group": "function",
+              "aliases": [
+                "招投标",
+                "采购"
+              ]
+            },
+            {
+              "id": "evidence-procurement",
+              "name": "招投标 / 采购",
+              "group": "evidence",
+              "aliases": [
+                "招标",
+                "政府采购"
+              ]
+            },
+            {
+              "id": "evidence-funding",
+              "name": "融资证据",
+              "group": "evidence",
+              "aliases": [
+                "投资",
+                "种子轮"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "OPN-FB-20260525-02",
+          "slug": "thariq-ai-编程进入开发流程管理",
+          "title": "Thariq：AI 编程进入开发流程管理",
+          "date": "2026-05-25",
+          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-25--frontier-opinion--thariq-thariq-this-is-me-cleaning-up-some-leftover-services-for-my-old.md",
+          "sourceUrl": "https://x.com/trq212/status/2058380417716125966",
+          "originalDate": "",
+          "speakerLine": "Thariq",
+          "originalView": "this is me cleaning up some leftover services for my old startup @OMMultiverse we have a huge legacy codebase and a community that still uses it but I haven't had any time to actually look into cost saving measures myself Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=29; retweets=0; replies=2",
+          "originalTranslation": "这是我为我的旧创业公司@ OMMultiverse清理一些剩余的服务，我们有一个庞大的遗留代码库和一个仍在使用它的社区，但我还没有时间自己实际研究成本节约措施Claude Code @ anthropicai. prev YC W20, @ southpkcommons, @ medialab",
+          "interpretation": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
+          "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+          "opinionTier": "sidebar",
+          "displayLane": "signal_sidebar",
+          "selectionReason": "follow-builders 人物池来源；商业/产品变量：cost, yc, claude code；包含数据、客户或业务量级线索",
+          "ratingScore": 5,
           "publishStatus": "frontstage_sidebar",
           "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
           "relations": [],
@@ -21574,274 +30741,6 @@ window.WaveSightContent = {
               ]
             }
           ]
-        },
-        {
-          "id": "OPN-FB-20260524-10",
-          "slug": "garry-tan-gbrain刚刚发布了v0-40-0-为您的openclaw-h",
-          "title": "Garry Tan：GBrain刚刚发布了v0.40.0 ，为您的OpenClaw/H",
-          "date": "2026-05-24",
-          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-24--frontier-opinion--garry-tan-garry-tan-gbrain-just-shipped-v0-40-0-gives-your-openclaw-he.md",
-          "sourceUrl": "https://x.com/garrytan/status/2058053659527913566",
-          "originalDate": "",
-          "speakerLine": "Garry Tan",
-          "originalView": "GBrain just shipped v0.40.0 gives your OpenClaw/Hermes Agent + GBrain a voice agent. It's based on Gemini Live. (Thanks @demishassabis it's amazing) Large context, great tool use, full brain access. Mars is a friend, Venus is your EA. My open source gift to you. President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop likes=159; retweets=8; replies=24",
-          "originalTranslation": "GBrain刚刚发布了v0.40.0 ，为您的OpenClaw/Hermes Agent + GBrain提供了语音Agent。它基于Gemini Live。（谢谢@ demishassabis ，太棒了）环境广阔，工具使用非常好，可以充分利用大脑。火星是朋友，金星是你的EA。我给你的开源礼物。总裁兼首席执行官@ ycombinator -创始人@ garryslist- GStack的创建者和GBrain设计师/工程师，帮助创始人- SF Dem加速繁荣循环",
-          "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
-          "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-          "opinionTier": "sidebar",
-          "displayLane": "signal_sidebar",
-          "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent, yc, gemini；包含数据、客户或业务量级线索",
-          "ratingScore": 7,
-          "publishStatus": "frontstage_sidebar",
-          "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-          "relations": [],
-          "relatedSignals": [],
-          "relatedTrends": [],
-          "relatedTrendReports": [],
-          "tags": [
-            {
-              "id": "scenario-frontier-opinion",
-              "name": "前沿观点",
-              "group": "scenario",
-              "aliases": [
-                "观点证据",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "evidence-frontier-opinion",
-              "name": "前沿观点",
-              "group": "evidence",
-              "aliases": [
-                "观点",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "source-social",
-              "name": "社媒线索",
-              "group": "source",
-              "aliases": [
-                "X",
-                "社区"
-              ]
-            },
-            {
-              "id": "opinion-agent-workflow",
-              "name": "Agent 工作流观点",
-              "group": "opinion",
-              "aliases": [
-                "多 Agent",
-                "工作流"
-              ]
-            },
-            {
-              "id": "track-ai-agent",
-              "name": "AI Agent",
-              "group": "track",
-              "aliases": [
-                "AI-Agent",
-                "智能体"
-              ]
-            },
-            {
-              "id": "track-ai-governance",
-              "name": "AI 治理",
-              "group": "track",
-              "aliases": [
-                "Agent 治理",
-                "权限审计"
-              ]
-            },
-            {
-              "id": "scenario-agent-governance",
-              "name": "Agent 权限治理",
-              "group": "scenario",
-              "aliases": [
-                "审计",
-                "权限",
-                "风险控制"
-              ]
-            },
-            {
-              "id": "track-enterprise-workflow",
-              "name": "企业工作流",
-              "group": "track",
-              "aliases": [
-                "企业 AI 工作流",
-                "工作流自动化"
-              ]
-            },
-            {
-              "id": "customer-enterprise",
-              "name": "大中型企业",
-              "group": "customer",
-              "aliases": [
-                "企业客户"
-              ]
-            },
-            {
-              "id": "function-procurement-bidding",
-              "name": "采购投标",
-              "group": "function",
-              "aliases": [
-                "招投标",
-                "采购"
-              ]
-            },
-            {
-              "id": "evidence-procurement",
-              "name": "招投标 / 采购",
-              "group": "evidence",
-              "aliases": [
-                "招标",
-                "政府采购"
-              ]
-            },
-            {
-              "id": "evidence-funding",
-              "name": "融资证据",
-              "group": "evidence",
-              "aliases": [
-                "投资",
-                "种子轮"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "OPN-FB-20260524-01",
-          "slug": "swyx-更多信息见原文",
-          "title": "Swyx：更多信息见原文",
-          "date": "2026-05-24",
-          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-05-24--frontier-opinion--swyx-swyx-kakuna-skills-with-checklists-that-only-know-how-to-harden-y.md",
-          "sourceUrl": "https://x.com/swyx/status/2057876022553690327",
-          "originalDate": "",
-          "speakerLine": "Swyx",
-          "originalView": "Kakuna: skills with checklists that only know how to harden your codebase /plan with it then let it /goal for a day, it comes back with same functionality but all the boring stuff done for you + an audit of its own work. focus on subagent parallelism and encodes strong opinions on how AI engineers should design apps for human and agent access/devops/product mgmt. instead of dark factory, go \"mullet factory\" - party in front (ship unique lovable features), dark in the back (timeless production principles). basically its the antientropy/antislop part of symphony broken out as its own thing not gonna go psychosis further than this but extend as you will. link below achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=153; retweets=11; replies=22",
-          "originalTranslation": "Kakuna ：技能清单，只知道如何用它来强化你的代码库/计划，然后让它/目标一天，它回来时具有相同的功能，但为你完成的所有无聊的事情+对自己工作的审核。专注于子Agent并行性，并就AI工程师应该如何为人类和Agent访问/devops/产品管理设计应用程序提供强有力的意见。 而不是黑暗工厂，去“mullet factory” -前面的派对（船上独特的可爱功能） ，后面的黑暗（永恒的生产原则）。基本上，它是交响乐的反熵/反斜坡部分，作为自己的事情被分解出来，不会比这更进一步，而是随意扩展。下面的链接实现了意向性，强度，完整性和疯狂的野心。所属机构： - @ dxtipshq - @ cognition - @ temporalio - @ aidotengineer - @ latentspacepod",
-          "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
-          "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-          "opinionTier": "sidebar",
-          "displayLane": "signal_sidebar",
-          "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：agent, yc；包含数据、客户或业务量级线索",
-          "ratingScore": 6,
-          "publishStatus": "frontstage_sidebar",
-          "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-          "relations": [],
-          "relatedSignals": [],
-          "relatedTrends": [],
-          "relatedTrendReports": [],
-          "tags": [
-            {
-              "id": "scenario-frontier-opinion",
-              "name": "前沿观点",
-              "group": "scenario",
-              "aliases": [
-                "观点证据",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "evidence-frontier-opinion",
-              "name": "前沿观点",
-              "group": "evidence",
-              "aliases": [
-                "观点",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "source-social",
-              "name": "社媒线索",
-              "group": "source",
-              "aliases": [
-                "X",
-                "社区"
-              ]
-            },
-            {
-              "id": "opinion-agent-workflow",
-              "name": "Agent 工作流观点",
-              "group": "opinion",
-              "aliases": [
-                "多 Agent",
-                "工作流"
-              ]
-            },
-            {
-              "id": "track-ai-agent",
-              "name": "AI Agent",
-              "group": "track",
-              "aliases": [
-                "AI-Agent",
-                "智能体"
-              ]
-            },
-            {
-              "id": "track-ai-governance",
-              "name": "AI 治理",
-              "group": "track",
-              "aliases": [
-                "Agent 治理",
-                "权限审计"
-              ]
-            },
-            {
-              "id": "scenario-agent-governance",
-              "name": "Agent 权限治理",
-              "group": "scenario",
-              "aliases": [
-                "审计",
-                "权限",
-                "风险控制"
-              ]
-            },
-            {
-              "id": "track-enterprise-workflow",
-              "name": "企业工作流",
-              "group": "track",
-              "aliases": [
-                "企业 AI 工作流",
-                "工作流自动化"
-              ]
-            },
-            {
-              "id": "customer-enterprise",
-              "name": "大中型企业",
-              "group": "customer",
-              "aliases": [
-                "企业客户"
-              ]
-            },
-            {
-              "id": "function-procurement-bidding",
-              "name": "采购投标",
-              "group": "function",
-              "aliases": [
-                "招投标",
-                "采购"
-              ]
-            },
-            {
-              "id": "evidence-procurement",
-              "name": "招投标 / 采购",
-              "group": "evidence",
-              "aliases": [
-                "招标",
-                "政府采购"
-              ]
-            },
-            {
-              "id": "evidence-funding",
-              "name": "融资证据",
-              "group": "evidence",
-              "aliases": [
-                "投资",
-                "种子轮"
-              ]
-            }
-          ]
         }
       ],
       "risks": [],
@@ -21855,6 +30754,7 @@ window.WaveSightContent = {
     "link": "brief.html"
   },
   "archives": [
+    "2026.05.25",
     "2026.05.24",
     "2026.05.23",
     "2026.05.22",

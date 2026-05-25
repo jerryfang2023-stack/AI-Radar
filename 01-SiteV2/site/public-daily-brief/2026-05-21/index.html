@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026.05.21 今日简报</title>
+  <meta name="description" content="2026.05.21 观澜 AI 公开版 Daily Brief">
+  <style>
+  :root { --ink:#071827; --muted:rgba(7,24,39,.62); --line:rgba(7,24,39,.1); --gold:#9b742e; --paper:#fffdf8; --warm:#f7f4ef; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:linear-gradient(180deg,var(--warm),var(--paper) 42%,var(--warm)); color:var(--ink); font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif; }
+  main { width:min(1240px,calc(100% - 104px)); margin:34px auto 70px; padding:30px 34px 38px; border:1px solid var(--line); background:var(--paper); }
+  header.hero { display:grid; grid-template-columns:1fr auto; gap:28px; align-items:center; padding:18px 0 22px; border-bottom:1px solid var(--line); }
+  .kicker { color:rgba(7,24,39,.5); font-family:Georgia,"Times New Roman",serif; font-size:10px; font-weight:700; letter-spacing:.16em; }
+  .title-row { display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h1 { margin:6px 0 0; font-family:Georgia,"Times New Roman","Noto Serif SC",serif; font-size:44px; line-height:50px; background:linear-gradient(95deg,#071827 0%,#0d355c 58%,#9b742e 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .date-tools { display:grid; justify-items:end; gap:10px; }
+  .date { color:var(--gold); font-family:Georgia,"Times New Roman",serif; font-size:14px; font-weight:700; }
+  .date-picker { display:flex; align-items:center; gap:8px; padding:8px 10px; border:1px solid var(--line); border-radius:999px; background:rgba(247,244,239,.72); }
+  .date-picker label { display:inline-flex; align-items:center; gap:5px; }
+  .date-picker span { color:rgba(7,24,39,.5); font-size:12px; }
+  .date-picker select { min-height:30px; border:1px solid rgba(7,24,39,.12); border-radius:999px; background:var(--paper); color:var(--ink); font:700 12px/18px Georgia,"Times New Roman",serif; padding:4px 26px 4px 10px; }
+  .layout { display:grid; grid-template-columns:minmax(0,1fr) 342px; gap:24px; margin-top:22px; }
+  section { margin-top:34px; }
+  .layout section { margin-top:0; }
+  .section-head { margin-bottom:14px; }
+  .section-head h2 { margin:6px 0 0; font-family:Georgia,"Times New Roman","Noto Serif SC",serif; font-size:26px; line-height:34px; }
+  .list, .side { display:grid; gap:10px; }
+  .signal { display:grid; grid-template-columns:46px minmax(0,1fr) 108px; min-height:100px; border:1px solid rgba(7,24,39,.075); background:rgba(255,253,248,.74); }
+  .num { display:grid; align-content:start; gap:4px; padding:12px 8px; border-right:1px solid rgba(7,24,39,.075); background:rgba(247,244,239,.56); }
+  .num span { color:rgba(7,24,39,.58); font:700 11px/16px Consolas,monospace; }
+  .num em { color:var(--gold); font-size:11px; font-style:normal; line-height:16px; }
+  .body { padding:12px 14px; }
+  h3 { margin:0 0 7px; font-family:"Noto Serif SC",Georgia,serif; font-size:15px; line-height:23px; }
+  dl { display:grid; gap:4px; margin:0; }
+  dl div { display:grid; grid-template-columns:42px minmax(0,1fr); gap:8px; }
+  dt { color:rgba(7,24,39,.42); font-size:11px; line-height:18px; }
+  dd { margin:0; color:rgba(7,24,39,.68); font-size:11px; line-height:18px; }
+  footer { display:grid; place-content:center; padding:12px 10px; border-left:1px solid rgba(7,24,39,.075); }
+  a { color:#0d355c; font-size:12px; font-weight:700; text-decoration:none; }
+  .side-card, .trend, .topic { border:1px solid var(--line); border-left:2px solid rgba(200,167,102,.42); background:rgba(255,253,248,.74); padding:14px; }
+  .side-card .role, .trend p, .topic p, .topic small { color:var(--muted); font-size:12px; line-height:20px; }
+  blockquote { margin:10px 0 8px; color:rgba(7,24,39,.72); font-size:12px; line-height:20px; }
+  .topic-grid { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:12px; }
+  .topic span { color:var(--gold); font-family:Georgia,"Times New Roman",serif; font-size:12px; }
+  .topic b { display:block; margin-bottom:3px; color:rgba(7,24,39,.46); font-weight:500; }
+  @media (max-width: 960px) { main { width:min(100% - 32px,1240px); padding:22px; } header.hero, .layout, .topic-grid { grid-template-columns:1fr; } .date-tools { justify-items:start; } }
+  @media (max-width: 640px) { main { width:min(100% - 24px,1240px); padding:18px; } h1 { font-size:36px; line-height:42px; } .date-picker { flex-wrap:wrap; border-radius:16px; } .signal { grid-template-columns:42px minmax(0,1fr); } footer { grid-column:1/-1; justify-content:start; padding:8px 10px 12px 56px; border-left:0; border-top:1px solid rgba(7,24,39,.075); } }
+</style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div>
+        <span class="kicker">DAILY BRIEF</span>
+        <div class="title-row">
+          <h1>今日简报</h1>
+          <div class="date">2026.05.21</div>
+        </div>
+      </div>
+      <div class="date-tools">
+        
+  <div class="date-picker" data-routes="[{&quot;date&quot;:&quot;2026-05-25&quot;,&quot;href&quot;:&quot;../2026-05-25/&quot;},{&quot;date&quot;:&quot;2026-05-24&quot;,&quot;href&quot;:&quot;../2026-05-24/&quot;},{&quot;date&quot;:&quot;2026-05-23&quot;,&quot;href&quot;:&quot;../2026-05-23/&quot;},{&quot;date&quot;:&quot;2026-05-22&quot;,&quot;href&quot;:&quot;../2026-05-22/&quot;},{&quot;date&quot;:&quot;2026-05-21&quot;,&quot;href&quot;:&quot;../2026-05-21/&quot;},{&quot;date&quot;:&quot;2026-05-20&quot;,&quot;href&quot;:&quot;../2026-05-20/&quot;}]">
+    <label>
+      <span>年</span>
+      <select data-date-part="year" aria-label="选择年份">
+        <option value="2026" selected>2026</option>
+      </select>
+    </label>
+    <label>
+      <span>月</span>
+      <select data-date-part="month" aria-label="选择月份">
+        <option value="05" selected>5月</option>
+      </select>
+    </label>
+    <label>
+      <span>日</span>
+      <select data-date-part="day" aria-label="选择日期">
+        <option value="25" >25日</option><option value="24" >24日</option><option value="23" >23日</option><option value="22" >22日</option><option value="21" selected>21日</option><option value="20" >20日</option>
+      </select>
+    </label>
+  </div>
+
+      </div>
+    </header>
+    <div class="layout">
+      <section>
+        <div class="section-head"><span class="kicker">SIGNALS</span><h2>最值得关注的 10 个信号</h2></div>
+        <div class="list">
+  <article class="signal">
+    <div class="num"><span>01</span><em>案例</em></div>
+    <div class="body">
+      <h3>LTM 在 HR 和销售组织部署 Copilot Agents</h3>
+      <dl>
+        <div><dt>介绍</dt><dd>AI Agent / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</dd></div>
+        <div><dt>点评</dt><dd>影响的是 HR 服务、销售跟进、员工支持和管理者对流程结果的复核。</dd></div>
+      </dl>
+    </div>
+    <footer><a href="https://adoption.microsoft.com/en-us/ai-transformation-stories/ltm/" target="_blank" rel="noreferrer">阅读原文 →</a></footer>
+  </article>
+
+  <article class="signal">
+    <div class="num"><span>02</span><em>融资</em></div>
+    <div class="body">
+      <h3>CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连</h3>
+      <dl>
+        <div><dt>介绍</dt><dd>企业工作流 / 采购投标 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</dd></div>
+        <div><dt>点评</dt><dd>如果技术路线成立，影响的是数据中心成本、芯片互连预算和基础设施采购判断。</dd></div>
+      </dl>
+    </div>
+    <footer><a href="https://www.cam.ac.uk/research/news/university-spin-out-secures-funding-to-improve-ai-energy-efficiency-and-bandwidth" target="_blank" rel="noreferrer">阅读原文 →</a></footer>
+  </article>
+
+  <article class="signal">
+    <div class="num"><span>03</span><em>案例</em></div>
+    <div class="body">
+      <h3>Choco 部署 OpenAI Agent 处理食品分销订单</h3>
+      <dl>
+        <div><dt>介绍</dt><dd>AI Agent / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</dd></div>
+        <div><dt>点评</dt><dd>影响的是订单录入、电话沟通、分销商人力和供应链响应速度。</dd></div>
+      </dl>
+    </div>
+    <footer><a href="https://openai.com/index/choco/" target="_blank" rel="noreferrer">阅读原文 →</a></footer>
+  </article>
+
+  <article class="signal">
+    <div class="num"><span>04</span><em>产品</em></div>
+    <div class="body">
+      <h3>OpenAI 推出 Frontier，争取更多企业客户</h3>
+      <dl>
+        <div><dt>介绍</dt><dd>AI Agent / 采购投标 / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</dd></div>
+        <div><dt>点评</dt><dd>企业客户会把模型能力、账号治理、合同承诺和容量保障放在同一轮采购里比较。</dd></div>
+      </dl>
+    </div>
+    <footer><a href="https://www.cnbc.com/2026/02/05/open-ai-frontier-enterprise-customers.html" target="_blank" rel="noreferrer">阅读原文 →</a></footer>
+  </article>
+
+  <article class="signal">
+    <div class="num"><span>05</span><em>案例</em></div>
+    <div class="body">
+      <h3>Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例</h3>
+      <dl>
+        <div><dt>介绍</dt><dd>AI Agent / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</dd></div>
+        <div><dt>点评</dt><dd>影响的是贷款运营、风控复核、文件处理和专业服务交付成本。</dd></div>
+      </dl>
+    </div>
+    <footer><a href="https://mightybot.ai/blog/shipping-ai-that-works-built-x-mightybot-draw-agent/" target="_blank" rel="noreferrer">阅读原文 →</a></footer>
+  </article>
+
+  <article class="signal">
+    <div class="num"><span>06</span><em>案例</em></div>
+    <div class="body">
+      <h3>Druid AI 部署语音 Agent，手术预约时间减少 50%</h3>
+      <dl>
+        <div><dt>介绍</dt><dd>AI Agent / 客服售后 / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</dd></div>
+        <div><dt>点评</dt><dd>影响的是患者服务、排班效率、前台人力和医疗机构的运营体验。</dd></div>
+      </dl>
+    </div>
+    <footer><a href="https://www.druidai.com/case-studies/ai-voice-agents-healthcare-group-transforms-patient-experience" target="_blank" rel="noreferrer">阅读原文 →</a></footer>
+  </article>
+
+  <article class="signal">
+    <div class="num"><span>07</span><em>案例</em></div>
+    <div class="body">
+      <h3>欧洲保险公司部署 Druid AI Agent 处理理赔通知</h3>
+      <dl>
+        <div><dt>介绍</dt><dd>AI Agent / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</dd></div>
+        <div><dt>点评</dt><dd>影响的是理赔处理、客户响应、销售顾问路由和企业流程系统录入。</dd></div>
+      </dl>
+    </div>
+    <footer><a href="https://www.druidai.com/case-studies/insurer-automates-claims-with-druid-ai-agents" target="_blank" rel="noreferrer">阅读原文 →</a></footer>
+  </article>
+</div>
+      </section>
+      <aside class="side">
+        <section>
+          <div class="section-head"><span class="kicker">BUILDERS</span><h2>Builders 观点</h2></div>
+          <div class="side">
+  <article class="side-card">
+    <span class="kicker">BUILDER 01</span>
+    <h3>Sam Altman / OpenAI</h3>
+    <p class="role">Sam Altman：客户开始要求提前锁定算力容量</p>
+    <blockquote>这条观点把企业 AI 采购从单次调用价格推向容量承诺和供给保障。</blockquote>
+    <a href="https://x.com/sama/status/2056827105401614656" target="_blank" rel="noreferrer">阅读原文 →</a>
+  </article>
+</div>
+        </section>
+        <section>
+          <div class="section-head"><span class="kicker">TRENDS</span><h2>趋势 / 话题</h2></div>
+          <article class="trend">
+            <span class="kicker">正在形成</span>
+            <h3>企业 Agent 的预算和工作流信号开始积累</h3>
+            <p>企业 Agent 不再只按模型能力被讨论，而是被放进预算、容量、行业流程和运营指标里评估。</p>
+            <p>继续观察是否出现更多客户部署、容量合同、用量治理和流程指标。</p>
+          </article>
+        </section>
+      </aside>
+    </div>
+    <section>
+      <div class="section-head"><span class="kicker">DISCUSSION</span><h2>今日值得讨论</h2></div>
+      <div class="topic-grid">
+  <article class="topic">
+    <span>01</span>
+    <h3>LTM 在 HR 和销售组织部署 Copilot Agents</h3>
+    <p><b>背景</b>AI Agent / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</p>
+    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
+    <small><b>相关信号</b>LTM 在 HR 和销售组织部署 Copilot Agents</small>
+  </article>
+
+  <article class="topic">
+    <span>02</span>
+    <h3>CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连</h3>
+    <p><b>背景</b>企业工作流 / 采购投标 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</p>
+    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
+    <small><b>相关信号</b>CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连</small>
+  </article>
+
+  <article class="topic">
+    <span>03</span>
+    <h3>Choco 部署 OpenAI Agent 处理食品分销订单</h3>
+    <p><b>背景</b>AI Agent / Agent 权限治理 正在出现新的采用线索，重点不是功能本身，而是它是否会改变客户采购、团队分工和交付责任。</p>
+    <p><b>讨论问题</b>这件事会让企业先买更多 AI 工具，还是先改造能被 AI 接管的流程？</p>
+    <small><b>相关信号</b>Choco 部署 OpenAI Agent 处理食品分销订单</small>
+  </article>
+</div>
+    </section>
+  </main>
+  
+<script>
+(() => {
+  const unique = (values) => [...new Set(values.filter(Boolean))];
+  const replaceOptions = (select, values, suffix = "") => {
+    const previous = select.value;
+    select.innerHTML = values.map((value) => {
+      const label = suffix ? String(Number(value)) + suffix : value;
+      return '<option value="' + value + '">' + label + '</option>';
+    }).join("");
+    select.value = values.includes(previous) ? previous : values[0] || "";
+  };
+
+  document.querySelectorAll(".date-picker").forEach((root) => {
+    const routes = JSON.parse(root.dataset.routes || "[]");
+    const selects = {
+      year: root.querySelector('[data-date-part="year"]'),
+      month: root.querySelector('[data-date-part="month"]'),
+      day: root.querySelector('[data-date-part="day"]'),
+    };
+
+    const sync = () => {
+      const year = selects.year.value;
+      const months = unique(routes.filter((route) => route.date.startsWith(year + "-")).map((route) => route.date.split("-")[1]));
+      replaceOptions(selects.month, months, "月");
+      const month = selects.month.value;
+      const days = unique(routes.filter((route) => route.date.startsWith(year + "-" + month + "-")).map((route) => route.date.split("-")[2]));
+      replaceOptions(selects.day, days, "日");
+    };
+
+    const navigate = () => {
+      sync();
+      const date = [selects.year.value, selects.month.value, selects.day.value].join("-");
+      const target = routes.find((route) => route.date === date);
+      if (target && target.href) window.location.href = target.href;
+    };
+
+    Object.values(selects).forEach((select) => select.addEventListener("change", navigate));
+  });
+})();
+</script>
+
+</body>
+</html>
