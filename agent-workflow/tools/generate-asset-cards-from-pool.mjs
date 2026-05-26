@@ -794,6 +794,17 @@ function dirForSignalType(type) {
   return "case";
 }
 
+function isNonCommercialPolicyOrEthicsSignal(section) {
+  const text = [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+  ].join(" ");
+  return /(教皇|通谕|梵蒂冈|人类尊严|深刻的人性|公共伦理|Pope|Vatican|encyclical|humanitas|human dignity)/iu.test(text);
+}
+
 function isEligibleAutoSignal(section) {
   const sourceUrl = value(section, "source_url");
   const sourceLevel = value(section, "source_level");
@@ -804,6 +815,7 @@ function isEligibleAutoSignal(section) {
     && /^(S|A|B)$/u.test(sourceLevel)
     && sourceUrl
     && sourceUrl !== "no-url"
+    && !isNonCommercialPolicyOrEthicsSignal(section)
     && !/(learn\.microsoft\.com|\/docs?\/|documentation|README|readme-ov-file|model page|product catalog|why we(?:'|’)re investing)/iu.test(text);
 }
 
