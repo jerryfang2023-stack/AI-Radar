@@ -695,6 +695,38 @@ function shortCompany(value) {
     .slice(0, 56);
 }
 
+function domainLabelFromUrl(value = "") {
+  try {
+    const host = new URL(value).hostname.toLowerCase().replace(/^www\./u, "");
+    const labels = host.split(".").filter(Boolean);
+    const primary = labels.length > 2 && ["com", "co", "org", "net"].includes(labels.at(-2))
+      ? labels.at(-3)
+      : labels.at(-2) || labels[0];
+    const known = new Map([
+      ["github", "GitHub"],
+      ["microsoft", "Microsoft"],
+      ["google", "Google"],
+      ["apple", "Apple"],
+      ["amazon", "Amazon"],
+      ["aws", "AWS"],
+      ["arxiv", "arXiv"],
+    ]);
+    return known.get(primary) || primary.replace(/(^|-)([a-z])/gu, (_, prefix, char) => `${prefix}${char.toUpperCase()}`);
+  } catch {
+    return "";
+  }
+}
+
+function isWeakCompanyName(value = "") {
+  const text = String(value || "").trim();
+  if (!text) return true;
+  const hanChars = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  return text.length > 42
+    || hanChars > 18
+    || /[？?。；;！!]/u.test(text)
+    || /(报告|研究|论文|引用|大型语言模型|替代的搜索引擎|right answers|state of)/iu.test(text);
+}
+
 function companyFromSection(section) {
   const title = poolTitle(section);
   const text = textForInference(section);
@@ -722,9 +754,11 @@ function companyFromSection(section) {
   for (const pattern of patterns) {
     const found = text.match(pattern)?.[1] || title.match(pattern)?.[1];
     const company = shortCompany(found);
-    if (company && !/^(Former|Exclusive|UPDATED|Image Credits|Source|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/iu.test(company)) return company;
+    if (company && !isWeakCompanyName(company) && !/^(Former|Exclusive|UPDATED|Image Credits|Source|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/iu.test(company)) return company;
   }
-  return shortCompany(title.split(/[:|｜-]/u)[0] || "Unknown");
+  const fallback = shortCompany(title.split(/[:|｜-]/u)[0] || "");
+  if (!isWeakCompanyName(fallback)) return fallback;
+  return domainLabelFromUrl(sourceUrl) || "Unknown";
 }
 
 function extractAmount(text) {

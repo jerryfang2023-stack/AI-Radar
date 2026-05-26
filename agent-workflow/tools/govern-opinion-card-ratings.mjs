@@ -154,11 +154,11 @@ function short(text = "", limit = 150) {
 }
 
 function frontmatter(text = "") {
-  return text.match(/^---\s*([\s\S]*?)---/u)?.[1] || "";
+  return text.match(/^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/u)?.[1] || "";
 }
 
 function body(text = "") {
-  return text.replace(/^---\s*[\s\S]*?---\s*/u, "");
+  return text.replace(/^---\s*\r?\n[\s\S]*?\r?\n---\s*(?:\r?\n|$)/u, "");
 }
 
 function field(text = "", name) {
