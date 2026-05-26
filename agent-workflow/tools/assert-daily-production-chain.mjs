@@ -14,8 +14,16 @@ const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const stage = args.get("stage") || "post-monitor";
 const rawMin = numberArg("raw-min", 80);
 const poolMin = numberArg("pool-min", 15);
-const blockStale = args.get("block-stale") === "true" || ["pre-trend", "pre-site", "pre-commit"].includes(stage);
+const blockStale = args.get("block-stale") === "true" || ["pre-trend", "pre-daily-observation", "pre-site", "pre-commit"].includes(stage);
 const reportsDir = path.join(root, "agent-workflow", "reports");
+
+const staleBlockGroupsByStage = new Map([
+  ["post-monitor", []],
+  ["pre-trend", ["signal_cards", "opinion_cards"]],
+  ["pre-daily-observation", ["signal_cards", "opinion_cards", "trend_candidates"]],
+  ["pre-site", ["signal_cards", "opinion_cards", "trend_candidates", "daily_observation"]],
+  ["pre-commit", ["signal_cards", "opinion_cards", "trend_candidates", "daily_observation", "site_data"]],
+]);
 
 function numberArg(name, fallback) {
   const value = Number(args.get(name));
@@ -74,6 +82,15 @@ function latestTime(files) {
 
 function markdownList(items) {
   return items.length ? items.map((item) => `- ${item}`).join("\n") : "- none";
+}
+
+function staleBlockGroupNames() {
+  if (!blockStale) return [];
+  const explicit = args.get("stale-groups");
+  if (explicit) {
+    return explicit.split(",").map((item) => item.trim()).filter(Boolean);
+  }
+  return staleBlockGroupsByStage.get(stage) || ["signal_cards", "opinion_cards", "trend_candidates", "daily_observation", "site_data"];
 }
 
 const files = {
@@ -152,6 +169,8 @@ const staleGroups = Object.entries(downstreamGroups)
     stale: upstreamMtime > 0 && groupFiles.length > 0 && latestTime(groupFiles) < upstreamMtime,
   }))
   .filter((group) => group.stale);
+const blockedStaleGroupNames = staleBlockGroupNames();
+const blockedStaleGroups = staleGroups.filter((group) => blockedStaleGroupNames.includes(group.name));
 
 const problems = [];
 if (!exists(files.raw)) problems.push(`missing Raw file: ${rel(files.raw)}`);
@@ -169,7 +188,7 @@ if (activeRawDuplicateMarkers > 0) problems.push(`active Raw contains ${activeRa
 if (activePoolDuplicateMarkers > 0) problems.push(`active Pool contains ${activePoolDuplicateMarkers} non-unique duplicate marker(s)`);
 if (gateText && gateStatus && gateStatus !== "passed") problems.push(`monitor quality gate status is ${gateStatus}`);
 if (stage !== "post-monitor" && finalQcText && /^block/u.test(finalQcDecision)) problems.push(`final monitor QC decision is ${finalQcDecision}`);
-if (blockStale && staleGroups.length) problems.push(`downstream assets are stale: ${staleGroups.map((group) => group.name).join(", ")}`);
+if (blockStale && blockedStaleGroups.length) problems.push(`downstream assets are stale: ${blockedStaleGroups.map((group) => group.name).join(", ")}`);
 
 const reportFile = path.join(reportsDir, `${date}-daily-production-chain-readiness.md`);
 fs.mkdirSync(reportsDir, { recursive: true });
@@ -210,6 +229,7 @@ const report = [
   `- active_pool_historical_duplicate_count: ${activePoolHistoricalDuplicateCount}`,
   `- downstream_assets_stale: ${staleGroups.length ? "true" : "false"}`,
   `- block_stale: ${blockStale ? "true" : "false"}`,
+  `- block_stale_groups: ${blockedStaleGroupNames.length ? blockedStaleGroupNames.join(", ") : "none"}`,
   "",
   "## Stale Groups",
   "",
@@ -243,6 +263,7 @@ console.log(JSON.stringify({
   downstream_assets_stale: staleGroups.length > 0,
   stale_marker: staleGroups.length ? rel(staleMarkerFile) : null,
   stale_groups: staleGroups.map((group) => group.name),
+  blocked_stale_groups: blockedStaleGroups.map((group) => group.name),
   problems,
 }, null, 2));
 
