@@ -205,7 +205,7 @@ const listFiles = (target) => {
 };
 
 const frontmatter = (text) => {
-  const match = text.match(/^---\s*([\s\S]*?)---/u);
+  const match = text.match(/^---\s*\r?\n([\s\S]*?)\r?\n---\s*(?:\r?\n|$)/u);
   return match?.[1] || "";
 };
 
@@ -338,7 +338,7 @@ const booleanFieldPassed = (fm, field) => /^(true|yes|passed)$/iu.test(fieldValu
 const weakEvidencePattern = /(failed provider|index-only AI HOT|index_only AI HOT|community\/frontier|frontier opinion|搜索摘要|采集失败|抓取失败|官网首页|产品目录|文档目录|README|包页|模型页|SEO 页|社区讨论|社媒观点|follow-builders 转述)/iu;
 const unavailableEvidencePattern = /(暂无公开信息|暂未监测到|needs_backfill|watchlist_only|threshold_pending|weak_signal_only|index_only|failed|missing|缺|待补证)/iu;
 
-const stripFrontmatter = (text) => text.replace(/^---\s*[\s\S]*?---\s*/u, "");
+const stripFrontmatter = (text) => text.replace(/^---\s*\r?\n[\s\S]*?\r?\n---\s*(?:\r?\n|$)/u, "");
 
 const firstHeading = (text) => text.match(/^#\s+(.+)$/mu)?.[1]?.trim() || "";
 
@@ -356,6 +356,7 @@ const publicText = (text) => {
       continue;
     }
     if (inFence || trimmed.startsWith(">")) continue;
+    if (/^#\s+#/u.test(trimmed)) continue;
 
     const heading = trimmed.match(/^#{1,6}\s+(.+)$/u)?.[1]?.trim();
     if (heading) {
@@ -367,7 +368,11 @@ const publicText = (text) => {
       continue;
     }
 
-    if (currentPublic) kept.push(line);
+    if (currentPublic) {
+      if (/^-\s*原文说了什么[：:]/u.test(trimmed)) continue;
+      if (/^中文(?:翻译|转述)[：:]/u.test(trimmed)) continue;
+      kept.push(line);
+    }
   }
 
   return kept.join("\n");
