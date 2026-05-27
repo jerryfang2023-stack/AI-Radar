@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -437,6 +437,12 @@ const availableDates = (data.contentIndex?.dates || [])
 const requestedDate = args.get("date") || availableDates[0]?.date || data.contentIndex?.activeDate || data.meta?.date;
 const selectedDate = dateParam(requestedDate);
 const outputRoot = path.resolve(projectRoot, args.get("out") || path.join("01-SiteV2", "site", "public-daily-brief"));
+const existingDateItems = (await readdir(outputRoot, { withFileTypes: true }).catch(() => []))
+  .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
+  .map((entry) => ({ date: entry.name }));
+const selectorDates = [...new Map([...availableDates, ...existingDateItems]
+  .map((item) => [item.date, item])).values()]
+  .sort((a, b) => String(b.date).localeCompare(String(a.date)));
 
 const buildDailyBriefHtml = (date = selectedDate, selectorPrefix = "../") => {
   const signals = (data.contentIndex?.signals || [])
@@ -492,7 +498,7 @@ const buildDailyBriefHtml = (date = selectedDate, selectorPrefix = "../") => {
         </div>
       </div>
       <div class="date-tools">
-        ${dateSelector(date, availableDates, selectorPrefix)}
+        ${dateSelector(date, selectorDates, selectorPrefix)}
       </div>
     </header>
     <div class="layout">
