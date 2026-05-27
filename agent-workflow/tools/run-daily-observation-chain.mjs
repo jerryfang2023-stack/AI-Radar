@@ -124,6 +124,20 @@ function skillText(file) {
   return read(file).slice(0, 16000);
 }
 
+function loadDailyObservationSkill(name) {
+  const home = process.env.USERPROFILE || process.env.HOME || "";
+  const candidates = [
+    path.join(root, "skills", name, "SKILL.md"),
+    path.join(home, ".skill-store", name, "SKILL.md"),
+  ];
+  const file = candidates.find(exists) || candidates[0];
+  return {
+    file,
+    source: file.startsWith(path.join(root, "skills")) ? "repo" : "local_skill_store",
+    text: skillText(file),
+  };
+}
+
 function latestDailyObservationFile() {
   return listFiles(dailyDir, (file) => path.basename(file).startsWith(`${date}--daily-observation`) && file.endsWith(".md"))
     .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)[0] || "";
@@ -138,15 +152,17 @@ async function main() {
     });
   }
 
-  const home = process.env.USERPROFILE || process.env.HOME || "";
-  const pitchSkill = skillText(path.join(home, ".skill-store", "guanlan-daily-observation-pitch", "SKILL.md"));
-  const writerSkill = skillText(path.join(home, ".skill-store", "guanlan-daily-observation", "SKILL.md"));
-  const qcSkill = skillText(path.join(home, ".skill-store", "guanlan-daily-observation-qc", "SKILL.md"));
-  if (!pitchSkill || !writerSkill || !qcSkill) {
+  const pitchSkill = loadDailyObservationSkill("guanlan-daily-observation-pitch");
+  const writerSkill = loadDailyObservationSkill("guanlan-daily-observation");
+  const qcSkill = loadDailyObservationSkill("guanlan-daily-observation-qc");
+  if (!pitchSkill.text || !writerSkill.text || !qcSkill.text) {
     block("Daily Observation skill files are missing on this runner", {
-      pitch_skill_present: pitchSkill ? "true" : "false",
-      writer_skill_present: writerSkill ? "true" : "false",
-      qc_skill_present: qcSkill ? "true" : "false",
+      pitch_skill_present: pitchSkill.text ? "true" : "false",
+      pitch_skill_path: rel(pitchSkill.file),
+      writer_skill_present: writerSkill.text ? "true" : "false",
+      writer_skill_path: rel(writerSkill.file),
+      qc_skill_present: qcSkill.text ? "true" : "false",
+      qc_skill_path: rel(qcSkill.file),
     });
   }
 
@@ -155,7 +171,8 @@ async function main() {
 
   const pitchPrompt = [
     "Use the following Guanlan Daily Observation Pitch skill. Output only the pitch decision markdown.",
-    pitchSkill,
+    `Skill source: ${pitchSkill.source} (${rel(pitchSkill.file)})`,
+    pitchSkill.text,
     "Daily materials:",
     bundle,
   ].join("\n\n");
@@ -170,7 +187,8 @@ async function main() {
   const writePrompt = [
     "Use the following Guanlan Daily Observation Writer skill to write one Daily Observation article.",
     "Do not expose internal Raw / Pool / gate language in frontstage copy.",
-    writerSkill,
+    `Skill source: ${writerSkill.source} (${rel(writerSkill.file)})`,
+    writerSkill.text,
     "Pitch decision:",
     pitch,
     "Daily materials:",
@@ -183,7 +201,8 @@ async function main() {
 
   const qcPrompt = [
     "Use the following Guanlan Daily Observation QC skill. Output a QC report with explicit `decision: pass` or `decision: block`.",
-    qcSkill,
+    `Skill source: ${qcSkill.source} (${rel(qcSkill.file)})`,
+    qcSkill.text,
     "Article to QC:",
     article,
   ].join("\n\n");
@@ -203,6 +222,11 @@ async function main() {
     date,
     mode,
     depends_on: ["OPENAI_API_KEY"],
+    skill_sources: {
+      pitch: pitchSkill.source,
+      writer: writerSkill.source,
+      qc: qcSkill.source,
+    },
     pitch: rel(pitchFile),
     article: rel(articleFile),
     qc: rel(qcFile),
