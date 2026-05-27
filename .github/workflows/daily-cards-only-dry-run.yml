@@ -1,0 +1,240 @@
+name: WaveSight Daily Cards Only Dry Run
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Asia/Shanghai date to run, formatted as YYYY-MM-DD. Leave empty for today."
+        required: false
+        type: string
+      pass_score:
+        description: "Daily Monitor pre-gate pass score."
+        required: false
+        default: "80"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wavesight-daily-cards-only-dry-run-${{ github.event.inputs.date || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  cards-only:
+    name: Cards Only Dry Run
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      TZ: Asia/Shanghai
+      ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Resolve run date
+        id: run-date
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            run_date="${{ github.event.inputs.date }}"
+          else
+            run_date="$(TZ=Asia/Shanghai date +%F)"
+          fi
+
+          if ! [[ "$run_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "Invalid date: $run_date" >&2
+            exit 2
+          fi
+
+          echo "date=$run_date" >> "$GITHUB_OUTPUT"
+          echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
+
+      - name: Report cloud dependency state
+        shell: bash
+        run: |
+          {
+            echo "# GitHub Daily Cards Only Dry Run"
+            echo
+            echo "- date: ${RUN_DATE}"
+            echo "- generated_at: $(date -Is)"
+            echo "- mode: cards_only"
+            echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
+            echo "- tavily_secret: $([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing)"
+            echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
+            echo "- openai_or_deepseek_required: false"
+            echo
+            echo "This workflow is a dry run. It uploads artifacts only and never commits, pushes, opens PRs, syncs site data, publishes, or deploys."
+            echo
+            echo "Production order:"
+            echo "1. Run Daily Monitor with QC."
+            echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
+            echo "3. Regenerate Card / Opinion assets in the runner workspace only."
+            echo "4. Run cardcopy gate."
+            echo "5. Run Pool-to-Card duplicate gate."
+            echo "6. Upload artifacts for local review or later manual sync."
+            echo
+            echo "Skipped by design:"
+            echo "- Trend candidate / no-decision shell."
+            echo "- Daily Observation Write / QC."
+            echo "- Site data sync."
+          } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-cards-only-dry-run.md"
+
+      - name: Syntax checks
+        shell: bash
+        run: |
+          node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
+          node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
+          node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
+          node --check agent-workflow/tools/assert-daily-production-chain.mjs
+          node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
+          node --check agent-workflow/tools/card-copy-style-gate.mjs
+          node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
+
+      - name: Run Daily Monitor with QC
+        id: monitor
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs \
+            --date="${RUN_DATE}" \
+            --pass-score="${{ github.event.inputs.pass_score || '80' }}" \
+            --max-cycles=3 \
+            --search-limit=70 \
+            --search-path-query-limit=2 \
+            --gdelt-query-limit=8 \
+            --hn-limit=8 \
+            --fetch-timeout-ms=20000 \
+            --snapshot-timeout-ms=16000 \
+            --monitor-timeout-ms=840000 \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-monitor-run.log"
+
+      - name: Check monitor readiness
+        id: monitor-readiness
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-guanlan-automation-readiness.mjs \
+            --command=monitor \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-monitor-readiness.log"
+
+      - name: Confirm Raw / Pool post-dedupe counts
+        id: cards-only-post-monitor
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-daily-production-chain.mjs \
+            --date="${RUN_DATE}" \
+            --stage=post-monitor \
+            --raw-min=80 \
+            --pool-min=15 \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-post-monitor-gate.log"
+
+      - name: Regenerate Card / Opinion assets
+        id: assets
+        if: steps.monitor.outcome == 'success' && steps.monitor-readiness.outcome == 'success' && steps.cards-only-post-monitor.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
+            --date="${RUN_DATE}" \
+            --require-final-qc=false \
+            --trend-candidates=false \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-assets.log"
+
+      - name: Run cardcopy gate
+        id: cardcopy
+        if: steps.assets.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-quality-gates.mjs cardcopy \
+            --date="${RUN_DATE}" \
+            --strict=true \
+            --require-gates=true \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-cardcopy.log"
+
+      - name: Run Pool-to-Card duplicate gate
+        id: pool-to-card-dedupe
+        if: steps.assets.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-pool-to-card-dedupe.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pool-to-card-dedupe.log"
+
+      - name: Upload cards-only dry-run artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wavesight-daily-cards-only-${{ steps.run-date.outputs.date }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-daily-cards-only-dry-run.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-cards-only-*.log
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-downstream-assets-stale.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
+            01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
+            01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
+            01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
+            01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
+            01-SiteV2/content/05-frontier-opinions/${{ steps.run-date.outputs.date }}-opinion-candidates.md
+            01-SiteV2/content/05-frontier-opinions/${{ steps.run-date.outputs.date }}-opinion-cards.md
+            01-SiteV2/content/06-asset-candidates/**
+            01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
+            01-SiteV2/knowledge/02-Opinion-Cards/${{ steps.run-date.outputs.date }}--frontier-opinion*.md
+            01-SiteV2/knowledge/03-Asset-Candidates/**/${{ steps.run-date.outputs.date }}--*.md
+
+      - name: Cards-only dry-run result
+        if: always()
+        shell: bash
+        run: |
+          fail=0
+
+          require_success() {
+            local label="$1"
+            local outcome="$2"
+            if [ "$outcome" != "success" ]; then
+              echo "${label} did not pass: ${outcome}" >&2
+              fail=1
+            fi
+          }
+
+          require_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
+          require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
+          require_success "Raw / Pool post-dedupe gate" "${{ steps.cards-only-post-monitor.outcome }}"
+          require_success "Card / Opinion regeneration" "${{ steps.assets.outcome }}"
+          require_success "Cardcopy gate" "${{ steps.cardcopy.outcome }}"
+          require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
+
+          if [ "$fail" -ne 0 ]; then
+            echo "Cards-only dry-run did not pass. Inspect uploaded artifacts. Nothing was committed, pushed, published, or deployed." >&2
+            exit 1
+          fi
+
+          echo "Cards-only dry-run passed. Artifacts were uploaded; no repository changes were committed."
