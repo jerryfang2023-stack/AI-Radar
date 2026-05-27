@@ -76,7 +76,8 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_secret: $([ -n "$OPENAI_API_KEY" ] && echo configured || echo missing)"
             echo "- trend_candidate_skill: $([ -f "skills/guanlan-trend-candidate-writer/SKILL.md" ] && echo present || echo missing)"
-            echo "- daily_observation_local_skills: $([ -f "$HOME/.skill-store/guanlan-daily-observation-pitch/SKILL.md" ] && [ -f "$HOME/.skill-store/guanlan-daily-observation/SKILL.md" ] && [ -f "$HOME/.skill-store/guanlan-daily-observation-qc/SKILL.md" ] && echo present || echo missing)"
+            echo "- daily_observation_repo_skills: $([ -f "skills/guanlan-daily-observation-pitch/SKILL.md" ] && [ -f "skills/guanlan-daily-observation/SKILL.md" ] && [ -f "skills/guanlan-daily-observation-qc/SKILL.md" ] && echo present || echo missing)"
+            echo "- daily_observation_local_skill_fallback: $([ -f "$HOME/.skill-store/guanlan-daily-observation-pitch/SKILL.md" ] && [ -f "$HOME/.skill-store/guanlan-daily-observation/SKILL.md" ] && [ -f "$HOME/.skill-store/guanlan-daily-observation-qc/SKILL.md" ] && echo present || echo missing)"
             echo
             echo "This workflow is a dry run. It uploads artifacts only and never commits, pushes, opens PRs, commits site data, or deploys."
             echo
