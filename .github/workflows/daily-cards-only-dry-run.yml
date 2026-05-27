@@ -86,6 +86,11 @@ jobs:
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Upload artifacts for local review or later manual sync."
             echo
+            echo "Cards Only lenient mode:"
+            echo "- If Daily Monitor fails only because an importance coverage lane is thin, this workflow may still generate review-only Card / Opinion artifacts."
+            echo "- Raw / Pool count gates, historical duplicate blockers, Card duplicate gates, and copy gates remain blocking."
+            echo "- Review-only artifacts must not be treated as site-ready or publish-ready."
+            echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
             echo "- Daily Observation Write / QC."
@@ -146,11 +151,12 @@ jobs:
             --stage=post-monitor \
             --raw-min=80 \
             --pool-min=15 \
+            --allow-monitor-quality-gaps=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-post-monitor-gate.log"
 
       - name: Regenerate Card / Opinion assets
         id: assets
-        if: steps.monitor.outcome == 'success' && steps.monitor-readiness.outcome == 'success' && steps.cards-only-post-monitor.outcome == 'success'
+        if: steps.monitor.outcome == 'success' && steps.cards-only-post-monitor.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -226,11 +232,14 @@ jobs:
           }
 
           require_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
-          require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
           require_success "Raw / Pool post-dedupe gate" "${{ steps.cards-only-post-monitor.outcome }}"
           require_success "Card / Opinion regeneration" "${{ steps.assets.outcome }}"
           require_success "Cardcopy gate" "${{ steps.cardcopy.outcome }}"
           require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
+
+          if [ "${{ steps.monitor-readiness.outcome }}" != "success" ]; then
+            echo "Monitor readiness did not pass; if card artifacts exist, treat them as manual-review-only and do not publish or sync them." >&2
+          fi
 
           if [ "$fail" -ne 0 ]; then
             echo "Cards-only dry-run did not pass. Inspect uploaded artifacts. Nothing was committed, pushed, published, or deployed." >&2

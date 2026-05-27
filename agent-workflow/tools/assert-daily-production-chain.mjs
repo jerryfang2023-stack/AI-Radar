@@ -14,8 +14,13 @@ const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const stage = args.get("stage") || "post-monitor";
 const rawMin = numberArg("raw-min", 80);
 const poolMin = numberArg("pool-min", 15);
+const allowMonitorQualityGaps = args.get("allow-monitor-quality-gaps") === "true";
 const blockStale = args.get("block-stale") === "true" || ["pre-trend", "pre-daily-observation", "pre-site", "pre-commit"].includes(stage);
 const reportsDir = path.join(root, "agent-workflow", "reports");
+const allowedMonitorQualityGapFailures = new Set([
+  "importance_coverage_gaps_must_be_none",
+  "pool_importance_coverage_gaps_must_be_none",
+]);
 
 const staleBlockGroupsByStage = new Map([
   ["post-monitor", []],
@@ -48,7 +53,7 @@ function mtime(file) {
 
 function parseLineValue(text = "", key) {
   const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return text.match(new RegExp(`^-\\s*${escaped}:\\s*(.+)$`, "im"))?.[1]?.trim() || "";
+  return text.match(new RegExp(`^-\\s*${escaped}\\s*[:=]\\s*(.+)$`, "im"))?.[1]?.trim() || "";
 }
 
 function parseNumber(text = "", key) {
@@ -82,6 +87,19 @@ function latestTime(files) {
 
 function markdownList(items) {
   return items.length ? items.map((item) => `- ${item}`).join("\n") : "- none";
+}
+
+function splitReportList(value = "") {
+  return String(value)
+    .split(/[;,]/u)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function failedHardGates(text = "") {
+  const fromRiskLine = splitReportList(parseLineValue(text, "hard_gates_failed"));
+  if (fromRiskLine.length) return fromRiskLine;
+  return [...text.matchAll(/^- ([a-z0-9_]+): failed\b/gimu)].map((match) => match[1]);
 }
 
 function staleBlockGroupNames() {
@@ -130,6 +148,19 @@ const activeHistoricalDuplicateCount = activeRawHistoricalDuplicateCount + activ
 const activeRawDuplicateMarkers = (rawText.match(/^-\s*duplicate_status:\s*(?!unique\b|merged_provider_duplicates\b).+/gmu) || []).length;
 const activePoolDuplicateMarkers = (poolText.match(/^-\s*duplicate_status:\s*(?!unique\b|merged_provider_duplicates\b).+/gmu) || []).length;
 const gateStatus = String(parseLineValue(gateText, "status")).toLowerCase();
+const monitorQualityGateHardFailures = failedHardGates(gateText);
+const monitorQualityGateOverride = Boolean(
+  allowMonitorQualityGaps &&
+  stage === "post-monitor" &&
+  gateText &&
+  gateStatus &&
+  gateStatus !== "passed" &&
+  monitorQualityGateHardFailures.length > 0 &&
+  monitorQualityGateHardFailures.every((gate) => allowedMonitorQualityGapFailures.has(gate))
+);
+const monitorQualityGateOverrideReason = monitorQualityGateOverride
+  ? `cards-only review artifact mode allows monitor coverage gap(s): ${monitorQualityGateHardFailures.join(", ")}`
+  : "";
 const finalQcDecision = (
   parseLineValue(finalQcText, "Downstream decision") ||
   parseLineValue(finalQcText, "downstream_decision") ||
@@ -186,7 +217,7 @@ if (poolCountFromLog !== null && poolCountFromLog !== poolCountFromFile) problem
 if (activeHistoricalDuplicateCount > 0) problems.push(`active Raw / Pool still contains ${activeHistoricalDuplicateCount} historical duplicate marker(s)`);
 if (activeRawDuplicateMarkers > 0) problems.push(`active Raw contains ${activeRawDuplicateMarkers} non-unique duplicate marker(s)`);
 if (activePoolDuplicateMarkers > 0) problems.push(`active Pool contains ${activePoolDuplicateMarkers} non-unique duplicate marker(s)`);
-if (gateText && gateStatus && gateStatus !== "passed") problems.push(`monitor quality gate status is ${gateStatus}`);
+if (gateText && gateStatus && gateStatus !== "passed" && !monitorQualityGateOverride) problems.push(`monitor quality gate status is ${gateStatus}`);
 if (stage !== "post-monitor" && finalQcText && /^block/u.test(finalQcDecision)) problems.push(`final monitor QC decision is ${finalQcDecision}`);
 if (blockStale && blockedStaleGroups.length) problems.push(`downstream assets are stale: ${blockedStaleGroups.map((group) => group.name).join(", ")}`);
 
@@ -227,6 +258,11 @@ const report = [
   `- active_historical_duplicate_count: ${activeHistoricalDuplicateCount}`,
   `- active_raw_historical_duplicate_count: ${activeRawHistoricalDuplicateCount}`,
   `- active_pool_historical_duplicate_count: ${activePoolHistoricalDuplicateCount}`,
+  `- monitor_quality_gate_status: ${gateStatus || "missing"}`,
+  `- monitor_quality_gate_hard_failures: ${monitorQualityGateHardFailures.length ? monitorQualityGateHardFailures.join(", ") : "none"}`,
+  `- monitor_quality_gate_override: ${monitorQualityGateOverride ? "cards_only_review_artifact" : "false"}`,
+  `- monitor_quality_gate_override_reason: ${monitorQualityGateOverrideReason || "none"}`,
+  `- review_only: ${monitorQualityGateOverride ? "true" : "false"}`,
   `- downstream_assets_stale: ${staleGroups.length ? "true" : "false"}`,
   `- block_stale: ${blockStale ? "true" : "false"}`,
   `- block_stale_groups: ${blockedStaleGroupNames.length ? blockedStaleGroupNames.join(", ") : "none"}`,
@@ -260,6 +296,11 @@ console.log(JSON.stringify({
   active_historical_duplicate_count: activeHistoricalDuplicateCount,
   active_raw_historical_duplicate_count: activeRawHistoricalDuplicateCount,
   active_pool_historical_duplicate_count: activePoolHistoricalDuplicateCount,
+  monitor_quality_gate_status: gateStatus || null,
+  monitor_quality_gate_hard_failures: monitorQualityGateHardFailures,
+  monitor_quality_gate_override: monitorQualityGateOverride ? "cards_only_review_artifact" : false,
+  monitor_quality_gate_override_reason: monitorQualityGateOverrideReason || null,
+  review_only: monitorQualityGateOverride,
   downstream_assets_stale: staleGroups.length > 0,
   stale_marker: staleGroups.length ? rel(staleMarkerFile) : null,
   stale_groups: staleGroups.map((group) => group.name),
