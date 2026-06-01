@@ -9,7 +9,7 @@
 只生成：
 
 - 商业信号流：`signal_card`，主类型只允许 `product_service` / `funding` / `case`。
-- eligible `core_pool` 必须全部生成正式前台 `signal_card`；不要再做单日数量上限、人工精选名额或目录/文档二次黑名单。若某条不应进前台，必须回到 Raw-to-Pool 修正它不属于 eligible `core_pool`。
+- eligible fact `core_pool` 必须全部生成正式前台 `signal_card`；`important_viewpoint_or_article` 走观点卡 / 观点索引，不得自动生成事实型商业信号。不要再做单日数量上限、人工精选名额或目录/文档二次黑名单。若某条事实型材料不应进前台，必须回到 Raw-to-Pool 修正它不属于 eligible fact `core_pool`。
 - 前沿观点流：先写入 `opinion_intake`，入库时必须保留原文或原文摘录、出处和中文翻译；完成四档评级后，`feature` / `sidebar` 才升级为正式 `opinion_card`。
 - 后台候选：`change_candidate`、`scene_candidate`、`trend_candidate`。
 

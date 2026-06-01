@@ -143,7 +143,7 @@ We used bots so far to enforce a 10PR per “person” limit. Great to see GitHu
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 5

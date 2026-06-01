@@ -1,7 +1,7 @@
 # Dispatch Board｜当前任务看板
 
 更新时间：2026-05-24
-状态：V2.2 current
+状态：V2.2.1 current
 
 本看板只保留当前可执行、运行中或需要注意的任务。历史过程和已验收任务以 `agent-workflow/reports/` 的 closeout 为准，不再堆叠在当前看板中。
 
@@ -16,7 +16,7 @@
 
 | 编号 | 状态 | 说明 |
 |---|---|---|
-| V2.2 | current | 只服务 V2.2 生产线 |
+| V2.2.1 | current | 只服务 V2.2.1 生产线 |
 | Context | current | 默认入口为 `AGENTS.md` + `context/` + 当前派发单 |
 | Harness | current | `context/06-execution-harness.md` 覆盖每日监测、Raw / Pool / Card、页面 / 文案 / Typography 三个高风险流程 |
 | Agents | current | 流程驱动 4 个轻 Agent；栏目能力优先用 Skill |
@@ -39,10 +39,9 @@
 
 | 事项 | 状态 | 说明 |
 |---|---|---|
-| 版本口径 | V2.2 | `AGENTS.md`、`context/`、站点 README、产品真源和运行看板已更新到 V2.2 |
+| 版本口径 | V2.2.1 | `AGENTS.md`、`context/`、站点 README、产品真源和运行看板已更新到 V2.2.1 |
 | NewsAPI | retired | 不在活跃搜索链路中；保留的历史说明只能作为 retired 记录 |
 | 趋势规则 | current | 不再把“反证”或固定 `7 / 30 / 90` 时间窗口作为硬准入；必须写清风险边界、信息缺口或后续观察变量 |
 | 标签体系 | current | 正式资产必须使用 `formal_tags`，不得新增非体系标签或让未知 tag 漏到前台 |
 | 页面设计 | current | 当前设计规范以 `agent-workflow/product/DESIGN.md` 和 VI / Typography 真源为准，`frontend-design` 不作为项目主设计技能 |
 | 本地清理 | active | 临时截图和过程产物可清；历史业务素材不伪装为当前规则，必要时以 closeout 标注归档边界 |
-

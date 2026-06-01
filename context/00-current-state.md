@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-05-24
+last_updated: 2026-06-01
 use_when:
   - large task startup
   - dispatch planning
@@ -14,7 +14,7 @@ priority: current
 
 # 00 Current State｜观澜 AI 当前状态
 
-观澜 AI / WaveSight AI 当前处于 V2.2 生产开发阶段。
+观澜 AI / WaveSight AI 当前处于 V2.2.1 生产开发阶段。
 
 ## 定位
 
@@ -31,6 +31,8 @@ priority: current
 - 内容生产：`01-SiteV2/content/`
 - 判断资产：`01-SiteV2/knowledge/`
 - 当前有效上下文：`context/`
+- 当前版本基线：`context/version-ledger.md`
+- 前台页面契约：`context/frontstage-page-contracts.md`
 - 项目内专项 Skill：`skills/`
 - 当前载入的用户 Skill：`~/.skill-store/`，其中今日观察 pitch / writer / QC 三件套以用户 Skill 为准。
 - 高风险执行外壳：`context/06-execution-harness.md`
@@ -82,6 +84,7 @@ node agent-workflow/tools/assert-guanlan-automation-readiness.mjs --command=asse
 - 补读文档中的二级引用不自动继续读取。
 - 每个任务补读 1-3 个直接相关真源；超出必须说明原因。
 - 每日监测、Raw / Pool / Card、页面 / 文案 / Typography 任务必须先套用 `context/06-execution-harness.md`。
+- 页面、文案、前台数据同步和发布检查必须先确认 `context/version-ledger.md` 与 `context/frontstage-page-contracts.md`。
 - Raw 原文、source quote、原始摘录、URL、source metadata、证据快照和 `key_excerpts.text` 是证据，不得为了文风改写。
 - 官网首页、工具平台官网、产品目录、文档目录、控制台登录页、搜索结果页和只有导航词堆砌的页面默认只能 `index_only`。
 - follow-builders / 社区观点只能证明“谁在何时何处说了什么”，不能作为公司事实主证据；观点卡进入前台必须有中文翻译、`opinion_tier`、`display_lane`、`publish_status` 和前台文案门禁结果。

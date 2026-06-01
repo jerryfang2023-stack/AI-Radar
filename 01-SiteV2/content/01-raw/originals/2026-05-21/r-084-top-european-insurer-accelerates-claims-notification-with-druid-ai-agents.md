@@ -16,4 +16,3 @@ Key usable evidence:
 2. Workflow: claims notification, lead creation and advisor routing.
 3. AI role: Druid AI agents.
 4. Boundary: customer name is not public in the captured evidence.
-

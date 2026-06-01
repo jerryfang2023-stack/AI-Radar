@@ -1,11 +1,11 @@
 ﻿# Column Architecture｜栏目架构与边界
 
 更新时间：2026-05-24
-状态：current / V2.2
+状态：current / V2.2.1
 
 栏目按“用户要完成的判断任务”设计，而不是按“我们有什么数据”设计。
 
-## V2.2 前台导航
+## V2.2.1 前台导航
 
 ```text
 今日观察 / 商业信号 / 趋势追踪 / 商业内参
@@ -58,7 +58,7 @@ product_service / funding / case
 
 生成规则：
 
-- eligible `core_pool` + `raw_qc_decision=allow` 默认全部生成正式前台 `signal_card`。
+- eligible fact `core_pool` + `raw_qc_decision=allow` 默认全部生成正式前台 `signal_card`；`important_viewpoint_or_article` 走观点卡 / 观点索引。
 - 不再用单日数量上限、人工精选名额或 selected change cards 截流。
 - 如果某条不适合前台，应回到 Raw-to-Pool 修正 `core_pool` 资格，不在卡片生成阶段静默丢弃。
 

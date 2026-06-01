@@ -126,7 +126,7 @@ Feb 27 (Reuters) - Block (XYZ.N), opens new tab shares soared more than 16% on F
 - importance_type: important_viewpoint_or_article
 - importance_score: 3
 - importance_reason: influential viewpoint or article; rubric=3 plausible but not core-ready
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

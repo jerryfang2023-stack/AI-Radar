@@ -183,7 +183,7 @@ NEWS - BY DAVE VELLANTE . 4 HOURS AGO
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
-   Featherless.ai Inc., a serverless inference platform startup that hosts open-source artificial intelligence models, today revealed it has raised $20 million in new funding to expand its global infrastructure and launch a marketplace for specialized open models. Founded in 2024, Featherless.ai pitches itself as a neutral hosting layer for enterprises that want to run open-source AI without committing to a single proprietary cloud or hardware stack. The company’s platform serves more than 30,000 open models spanning 
+   Featherless.ai Inc., a serverless inference platform startup that hosts open-source artificial intelligence models, today revealed it has raised $20 million in new funding to expand its global infrastructure and launch a marketplace for specialized open models. Founded in 2024, Featherless.ai pitches itself as a neutral hosting layer for enterprises that want to run open-source AI without committing to a single proprietary cloud or hardware stack. The company’s platform serves more than 30,000 open models spanning
 
 2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
    UPDATED 19:20 EDT / APRIL 30 2026 AI Featherless.

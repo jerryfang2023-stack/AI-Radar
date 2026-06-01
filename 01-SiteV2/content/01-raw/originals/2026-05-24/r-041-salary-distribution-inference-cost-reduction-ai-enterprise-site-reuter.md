@@ -128,7 +128,7 @@ $20000+: 0 positions $40000+: 0 positions $60000+: 0 positions $80000+: 0 positi
 - importance_type: important_technical_trend
 - importance_score: 4
 - importance_reason: technical trend or capability shift; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 5

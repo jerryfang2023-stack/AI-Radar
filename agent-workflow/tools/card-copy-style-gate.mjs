@@ -61,6 +61,17 @@ const bannedPhrases = [
   "效率革命",
   "产业级机会",
   "值得关注",
+  "材料把资金用途指向",
+  "材料显示它",
+  "这条材料把 AI",
+  "后续判断重点不是模型参数",
+  "可以观察客户是否愿意为流程结果",
+  "当前材料保留了原始链接",
+  "真实客户规模、长期留存",
+  "公开材料给了",
+  "这件事的商业含义",
+  "部署 AI 到",
+  "押注",
 ];
 
 const internalTerms = [
@@ -268,6 +279,11 @@ const isReleasedAsset = (fm) => {
     || frontStatus === "visible";
 };
 
+const isFrontstageOpinionAsset = (fm) => {
+  const publishStatus = fieldValue(fm, "publish_status");
+  return isReleasedAsset(fm) || ["frontstage_feature", "frontstage_sidebar"].includes(publishStatus);
+};
+
 const frontmatterGeneratedText = (fm, type) => {
   const fields = generatedFrontmatterFields.get(type) || [];
   const chunks = [];
@@ -307,6 +323,19 @@ const tooSimilar = (a = "", b = "") => {
 };
 
 const containsLongEnglishFragment = (value = "") => /[A-Za-z][A-Za-z0-9'’,-]*(?:\s+[A-Za-z][A-Za-z0-9'’,-]*){7,}/u.test(value);
+
+const hasFrontstageOpinionTitleQuality = (title = "") => {
+  const text = String(title || "").trim();
+  if (!text || text.length > 44) return false;
+  if (/[<>{}\[\]]|https?:\/\/|t\.co\/|@\s?\w|#\w/iu.test(text)) return false;
+  if (/[⚽️😂😅🔥🚀]/u.test(text)) return false;
+  if (!/(AI|Agent|智能体|Codex|Claude|OpenAI|Anthropic|Cursor|模型|API|Gateway|Vercel|自动审阅|Auto.?review|编程|工程|workflow|工作流|tokens?|代币)/iu.test(text)) return false;
+  if (/(更|和|与|在|为|的|：|:|,|，)$/u.test(text)) return false;
+  if (/[A-Za-z][A-Za-z0-9'’,-]*(?:\s+[A-Za-z][A-Za-z0-9'’,-]*){6,}/u.test(text)) return false;
+  if (/(投票|保险专员|建筑热潮|在印度|平坦的循环|终极教育|运送最好的产品|lfg|dank memes|plain annoying|gassing me up|business insider|current streak|api key spend caps)/iu.test(text)) return false;
+  if (/：.+(总裁兼首席执行官|首席执行官|当前连胜|支$|执$|cra$|c$)/u.test(text)) return false;
+  return true;
+};
 
 const numberField = (fm, name) => {
   const value = fieldValueAnyIndent(fm, name);
@@ -543,6 +572,11 @@ const scanFile = (file) => {
   }
 
   if (type === "opinion_card") {
+    const displayTitle = fieldValueAnyIndent(sectionBlock(fm, "frontend"), "displayTitle") || title;
+    if (isFrontstageOpinionAsset(fm) && !hasFrontstageOpinionTitleQuality(displayTitle)) {
+      issues.push({ type: "bad_opinion_title", line: lineOf(text, displayTitle), message: `前台观点卡标题质量不合格：${displayTitle}` });
+    }
+
     if (!hasOpinionTranslation(fm, copy) || !hasFrontstageOpinionTranslation(fm, copy)) {
       issues.push({ type: "missing_original_translation", line: 1, message: "观点卡入库必须补充中文翻译；中文翻译不得用观澜解读替代" });
     }

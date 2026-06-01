@@ -127,7 +127,7 @@ SEOUL, May 15 (Reuters) - A looming 18-day strike at South Korean chip giant Sam
 - business_actions: 发布 / 推出
 - affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
 - numbers: 15, 18, 45, 000, 21, 21 trillion, 31 trillion, $14.08 billion
-- quotes: Samsung must enable foundries to become self-reliant. / base die / clear No. 1 /  ​said Samsung executive and negotiator Kim Hyung-ro, according to the transcripts.  /  In a statement, Samsung said 
+- quotes: Samsung must enable foundries to become self-reliant. / base die / clear No. 1 /  ​said Samsung executive and negotiator Kim Hyung-ro, according to the transcripts.  /  In a statement, Samsung said
 
 ## evidence_seed
 

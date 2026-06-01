@@ -183,7 +183,7 @@ AI - BY MARIA DEUTSCHER . 13 HOURS AGO
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
-   Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE ### Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise Enterprise software veterans have become all too familiar with the gap between flashy artificial intelligence demos and their performance in real-world production environments. The reality is that a lot of agentic AI deployments leave lots to be desired, and that’s the problem a new startup called Tribal AI Inc. is trying to 
+   Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE ### Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise Enterprise software veterans have become all too familiar with the gap between flashy artificial intelligence demos and their performance in real-world production environments. The reality is that a lot of agentic AI deployments leave lots to be desired, and that’s the problem a new startup called Tribal AI Inc. is trying to
 
 2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
    UPDATED 08:30 EDT / MAY 20 2026 AI Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise by Mike Wheatley SHARE Enterprise software veterans have become all too familiar with the gap between flashy artificial intelligence demos and their performance in real-world production environments.

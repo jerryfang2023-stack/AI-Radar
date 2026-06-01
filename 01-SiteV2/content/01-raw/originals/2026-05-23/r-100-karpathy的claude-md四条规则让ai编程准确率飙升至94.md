@@ -143,7 +143,7 @@ Karpathy发布的CLAUDE.md文件以其简洁高效的AI编程指导原则引爆G
 - importance_type: important_product_or_service
 - importance_score: 4
 - importance_reason: new product or service; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 4

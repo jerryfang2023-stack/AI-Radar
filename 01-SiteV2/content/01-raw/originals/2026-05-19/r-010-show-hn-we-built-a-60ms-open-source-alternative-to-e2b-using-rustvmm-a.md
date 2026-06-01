@@ -744,7 +744,7 @@ You can’t perform that action at this time.
 - business_actions: 发布 / 推出, 部署 / 上线
 - affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
 - numbers: 60m, 2B, 7, 2, 438, 5.7, 162, 5M
-- quotes:  http://127.0.0.1:3000  / 
+- quotes:  http://127.0.0.1:3000  /
 export CUBE_TEMPLATE_ID=  /  # template ID obtained from Step 3
 export SSL_CERT_FILE=  / CUBE_TEMPLATE_ID / print('Hello from Cube Sandbox, safely isolated!')
 

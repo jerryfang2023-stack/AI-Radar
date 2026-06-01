@@ -1,7 +1,7 @@
 ---
 status: current
 scope: context-index
-last_updated: 2026-05-24
+last_updated: 2026-06-01
 use_when:
   - decide what to read
   - dispatch task
@@ -18,6 +18,8 @@ priority: router
 | 文档 | 用途 | 什么时候读 |
 |---|---|---|
 | `context/00-current-state.md` | 当前项目状态 | 大任务、状态恢复、派发 |
+| `context/version-ledger.md` | 当前版本基线、版本分层、冻结点和必须门禁 | 新任务启动、页面改动、发布检查 |
+| `context/frontstage-page-contracts.md` | 前台页面契约，约束页面不能被旧模块污染 | 页面、文案、前台数据同步 |
 | `context/01-product-map.md` | 产品结构、栏目、数据流 | 产品、栏目、页面结构 |
 | `context/02-vi-style.md` | VI、字体、页面视觉 | UI、页面、海报、品牌资产 |
 | `context/03-copy-style.md` | 全站基础文案 | 命名、页面文案、卡片展示文案 |

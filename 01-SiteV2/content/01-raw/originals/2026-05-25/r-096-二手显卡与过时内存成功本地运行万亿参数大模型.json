@@ -1,0 +1,250 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-096",
+  "title": "二手显卡与过时内存成功本地运行万亿参数大模型",
+  "original_url": "https://x.com/rohanpaul_ai/status/2058431032131793233",
+  "canonical_url": "https://x.com/rohanpaul_ai/status/2058431032131793233",
+  "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-05-24T06:12:56.000Z",
+  "collected_at": "2026-05-25T06:12:21.319Z",
+  "language": "mixed",
+  "full_text": "近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.5大语言模型，速度约为每秒4个token。这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。通过llama.cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。",
+  "clean_text": "近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.5大语言模型，速度约为每秒4个token。这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。通过llama.cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-25/r-096-二手显卡与过时内存成功本地运行万亿参数大模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-25/r-096-二手显卡与过时内存成功本地运行万亿参数大模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "timeout-fallback-visible-text",
+  "extraction_quality": "failed",
+  "extraction_method": "fetch_failed_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "fetch_failed_summary_fallback",
+    "error_type": "timeout"
+  },
+  "has_full_text": false,
+  "content_length": 244,
+  "fetch_error": "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "699610104d55a168",
+    "missing": [
+      "missing_full_text",
+      "missing_snapshot"
+    ]
+  },
+  "raw_qc_decision": "block",
+  "raw_qc_downstream_use": "not_allowed",
+  "degradation_reasons": [
+    "missing_full_text",
+    "missing_snapshot",
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "capture_scope": "aihot_visible_text",
+  "visible_range": "仅保留采集通道当时可见文本，未抓到原页面正文",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "二手显卡与过时内存成功本地运行万亿参数大模型",
+    "discovery_summary": "近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.5大语言模型，速度约为每秒4个token。这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。通过llama.cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。",
+    "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+    "origin_url": "https://x.com/rohanpaul_ai/status/2058431032131793233",
+    "discovered_at": "2026-05-25T06:01:03.457Z",
+    "rank_on_page": 169,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "timeout",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "34075296d6fda36e",
+  "content_hash": "699610104d55a168",
+  "full_text_hash": "699610104d55a168",
+  "semantic_hash": "cafe616c0d5730a2",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-24T06:12:56.000Z",
+  "last_seen_at": "2026-05-25T06:12:21.319Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.5大语言模型，速度约为每秒4个token。这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。通过llama.cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "5大语言模型，速度约为每秒4个token。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "Rohan Paul (@rohanpaul_ai)"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [],
+    "numbers": [
+      "3060",
+      "12",
+      "1万",
+      "2.5",
+      "4",
+      "32B",
+      "768"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "5大语言模型，速度约为每秒4个token。",
+      "这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。",
+      "实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。"
+    ],
+    "case_details": [
+      "cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": true,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "discard"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 二手显卡与过时内存成功本地运行万亿参数大模型\n\n- raw_id: R-096\n- original_url: https://x.com/rohanpaul_ai/status/2058431032131793233\n- source_name: X：Rohan Paul (@rohanpaul_ai)\n- collected_at: 2026-05-25T06:12:21.319Z\n\n## clean_text\n\n近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.5大语言模型，速度约为每秒4个token。这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。通过llama.cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。\n\n## full_text\n\n近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.5大语言模型，速度约为每秒4个token。这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。通过llama.cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。\n\n## extraction_diagnostics\n\n- extraction_method: fetch_failed_summary_fallback\n- readability_score: 0\n- fetch_status: timeout-fallback-visible-text\n- extraction_quality: failed\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] 近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.5大语言模型，速度约为每秒4个token。这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。通过llama.cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。\n2. [number / daily_observation, heatmap, case, trend / high] 近期有技术爱好者成功在单张二手RTX 3060 12GB显卡上，运行了拥有1万亿参数的Kimi K2.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 5大语言模型，速度约为每秒4个token。\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 这一成果得益于模型的混合专家架构，虽然总参数量巨大，但每次推理仅激活32B参数。\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 实现的关键在于将延迟敏感的核心组件置于GPU显存，而将庞大的专家权重存储在由二手英特尔傲腾持久内存（PMem）构成的768GB大容量内存池中，并以DDR4内存作为缓存。\n6. [case_detail / daily_observation, heatmap, case / high] cpp工具进行混合调度，该方案为本地部署超大规模模型提供了一条低成本的技术路径。\n"
+}

@@ -99,7 +99,7 @@ Amazon Ring facing a surge in customer support calls during last year holiday se
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
-   Amazon Ring facing a surge in customer support calls during last year holiday season evaluated more than 40 AI voice vendors before choosing startup Vapi to handle its inbound phone traffic Today Ring routes 100 percent of its inbound calls through Vapi platform That deployment helped Vapi raise a 50 million dollar Series B led by Peak XV Partners at a valuation of around 500 million dollars after investment according to a person familiar with the matter Ring turned to Vapi in mid Q4 last year when it was weighing 
+   Amazon Ring facing a surge in customer support calls during last year holiday season evaluated more than 40 AI voice vendors before choosing startup Vapi to handle its inbound phone traffic Today Ring routes 100 percent of its inbound calls through Vapi platform That deployment helped Vapi raise a 50 million dollar Series B led by Peak XV Partners at a valuation of around 500 million dollars after investment according to a person familiar with the matter Ring turned to Vapi in mid Q4 last year when it was weighing
 
 2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
    000 / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing

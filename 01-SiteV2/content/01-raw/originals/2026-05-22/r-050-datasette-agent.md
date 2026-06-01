@@ -140,7 +140,7 @@ Datasette Agent是Datasette推出的首个可扩展AI助手，为用户提供对
 - importance_type: important_technical_trend
 - importance_score: 4
 - importance_reason: technical trend or capability shift; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

@@ -134,7 +134,7 @@ AI startup Thinking Machines clinches capital and a major chip supply deal from 
 - importance_type: important_viewpoint_or_article
 - importance_score: 5
 - importance_reason: influential viewpoint or article; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

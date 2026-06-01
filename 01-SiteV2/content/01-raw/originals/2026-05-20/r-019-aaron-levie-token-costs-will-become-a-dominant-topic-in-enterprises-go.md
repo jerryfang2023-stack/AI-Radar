@@ -132,7 +132,7 @@ Token costs will become a dominant topic in enterprises going forward with AI. J
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 4

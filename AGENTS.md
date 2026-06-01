@@ -17,6 +17,8 @@
 | 文档 | 用途 |
 |---|---|
 | `context/00-current-state.md` | 当前项目状态 |
+| `context/version-ledger.md` | 当前版本基线、版本分层、冻结点 |
+| `context/frontstage-page-contracts.md` | 前台页面契约 |
 | `context/01-product-map.md` | 产品结构、栏目、数据流 |
 | `context/02-vi-style.md` | VI、字体、页面视觉 |
 | `context/03-copy-style.md` | 全站基础文案 |
@@ -29,13 +31,15 @@
 ## 项目当前口径
 
 - 项目名称：观澜AI｜WaveSight AI。
-- 当前版本：V2.2。
+- 当前版本：V2.2.1。
 - 产品定义：观澜 AI 是一个由 Agent 驱动的 AI 商业情报系统。
 - 核心逻辑：持续监测全球 AI 商业变化，将外部信息转化为结构化情报资产，再生成面向企业老板、资源型合伙人、行业操盘手的商业信号、机会判断、AI 内参和 AI 商业热力图。
 - 系统定位：观澜 AI 不是内容站，而是一个会持续感知、判断、表达、发布、复盘和进化的 AI 商业决策系统。
 - AI Native 方向：后续能力建设优先让 Agent 之间形成联动，通过结构化 handoff、质量门和自动化任务串联 Source / Evidence / Asset / Editorial / Build / Review。
 - 当前前台导航：今日观察 / 商业信号 / 趋势追踪 / 商业内参。
-- 当前开发阶段：V2.2-only 生产开发。
+- 当前开发阶段：V2.2.1-only 生产开发。
+- 当前版本基线：`context/version-ledger.md`。
+- 前台页面契约：`context/frontstage-page-contracts.md`。
 - 已停止的网站版本、内容日更和自动化任务不作为当前执行依据。
 
 ## Agent 与 Skill 设置

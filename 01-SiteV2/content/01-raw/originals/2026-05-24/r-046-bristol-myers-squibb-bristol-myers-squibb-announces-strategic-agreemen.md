@@ -127,7 +127,7 @@ The collaboration brings together BMS’ deep scientific expertise and ropic's f
 - business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
 - affected_departments: IT / 安全
 - numbers: 30, 000, 160, 70.167
-- quotes:  said Greg Meyers, EVP and Chief Digital & Technology Officer, Bristol Myers Squibb.  /  said Greg Meyers, EVP and Chief Digital & Technology Officer, Bristol Myers Squibb. 
+- quotes:  said Greg Meyers, EVP and Chief Digital & Technology Officer, Bristol Myers Squibb.  /  said Greg Meyers, EVP and Chief Digital & Technology Officer, Bristol Myers Squibb.
 
 ## evidence_seed
 

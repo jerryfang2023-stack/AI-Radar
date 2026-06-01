@@ -126,7 +126,7 @@ Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首
 - importance_type: important_product_or_service
 - importance_score: 3
 - importance_reason: product teaser without enough launch evidence; rubric=3 plausible but not core-ready
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 3

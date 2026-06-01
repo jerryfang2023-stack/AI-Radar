@@ -1,0 +1,262 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-021",
+  "title": "huggingface/optimum-intel",
+  "original_url": "https://github.com/huggingface/optimum-intel?tab=readme-ov-file",
+  "canonical_url": "https://github.com/huggingface/optimum-intel?tab=readme-ov-file",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event_on_official_page",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-05-25T06:12:20.854Z",
+  "language": "mixed",
+  "full_text": "huggingface\noptimum-intel\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n237\nStar\n588\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1,416 Commits\n1,416 Commits\n.github\n.github\ndocs\ndocs\nnotebooks\nnotebooks\noptimum\noptimum\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMANIFEST.in\nMANIFEST.in\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\nsetup.cfg\nsetup.cfg\nsetup.py\nsetup.py\nView all files\nRepository files navigation\nOptimum Intel\n🤗 Optimum Intel is the interface between the 🤗 Transformers, Diffusers, Sentence Transformers and timm libraries and the different tools and libraries provided by OpenVINO to accelerate end-to-end pipelines on Intel architectures.\nOpenVINO is an open-source toolkit that enables high performance inference capabilities for Intel CPUs, GPUs, and special DL inference accelerators ( see the full list of supported devices). It is supplied with a set of tools to optimize your models with compression techniques such as quantization, pruning and knowledge distillation. Optimum Intel provides a simple interface to optimize your model, convert it to the OpenVINO Intermediate Representation (IR) format and run inference using OpenVINO Runtime.\nInstallation\nTo install the latest release of 🤗 Optimum Intel with the corresponding required dependencies, you can use pip as follows:\npython -m pip install -U \" optimum-intel[openvino] \"\nOptimum Intel is a fast-moving project with regular additions of new model support, so you may want to install from source with the following command:\npython -m pip install \" optimum-intel \" @git+https://github.com/huggingface/optimum-intel.git\nDeprecation Notice: The extras for openvino (e.g., pip install optimum-intel[openvino,nncf] ), nncf , neural-compressor , ipex are deprecated and will be removed in a future release .\nExport:\nTo export your model to OpenVINO IR format, use the optimum-cli tool.\nBelow is an example of exporting TinyLlama/TinyLlama_v1.1 model:\noptimum-cli export openvino --model TinyLlama/TinyLlama_v1.1 ov_TinyLlama_v1_1\nTo export a model hosted on the Hub you can use our space . After conversion, a repository will be pushed under your namespace, this repository can be either public or private.\nAdditional information on exporting models is available in the documentation .\nInference:\nTo load an exported model and run inference using Optimum Intel, use the corresponding OVModelForXxx class instead of AutoModelForXxx :\nfrom optimum . intel import OVModelForCausalLM\nfrom transformers import AutoTokenizer , pipeline\nmodel_id = \"ov_TinyLlama_v1_1\"\nmodel = OVModelForCausalLM . from_pretrained ( model_id )\ntokenizer = AutoTokenizer . from_pretrained ( model_id )\npipe = pipeline ( \"text-generation\" , model = model , tokenizer = tokenizer )\nresults = pipe ( \"Hey, how are you doing today?\" , max_new_tokens = 100 )\nFor more details on Optimum Intel inference, refer to the documentation .\nNote: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework,\nthat provides optimized execution methods for highly performant Generative AI.\nQuantization:\nPost-training static quantization can also be applied. Here is an example on how to apply static quantization on a Whisper model using the LibriSpeech dataset for the calibration step.\nfrom optimum . intel import OVModelForSpeechSeq2Seq , OVQuantizationConfig\nmodel_id = \"openai/whisper-tiny\"\nq_config = OVQuantizationConfig ( dtype = \"int8\" , dataset = \"librispeech\" , num_samples = 50 )\nq_model = OVModelForSpeechSeq2Seq . from_pretrained ( model_id , quantization_config = q_config )\n# The directory where the quantized model will be saved\nsave_dir = \"nncf_results\"\nq_model . save_pretrained ( save_dir )\nYou can find more information in the documentation .\nRunning the examples\nCheck out the notebooks directory to see how 🤗 Optimum Intel can be used to optimize models and accelerate inference.\nDo not forget to install requirements for every example:\ncd < example-folder >\npip install -r requirements.txt\nAbout\n🤗 Optimum Intel: Accelerate inference with Intel optimization tools\nhuggingface.co/docs/optimum-intel/en/index\nTopics\noptimization\nintel\ntransformers\ninference\npruning\nquantization\ndistillation\nonnx\nopenvino\ndiffusers\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n588\nstars\nWatchers\n36\nwatching\nForks\n237\nforks\nReport repository\nReleases\n63\nv1.27.0: Transformers 4.56/4.57, Zamba2, BitNet, Granite-4, Exaone-4, LFM2\nLatest\nDec 23, 2025\n+ 62 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n62.8%\nPython\n37.2%",
+  "clean_text": "huggingface\noptimum-intel\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n237\nStar\n588\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1,416 Commits\n1,416 Commits\n.github\n.github\ndocs\ndocs\nnotebooks\nnotebooks\noptimum\noptimum\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMANIFEST.in\nMANIFEST.in\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\nsetup.cfg\nsetup.cfg\nsetup.py\nsetup.py\nView all files\nRepository files navigation\nOptimum Intel\n🤗 Optimum Intel is the interface between the 🤗 Transformers, Diffusers, Sentence Transformers and timm libraries and the different tools and libraries provided by OpenVINO to accelerate end-to-end pipelines on Intel architectures.\nOpenVINO is an open-source toolkit that enables high performance inference capabilities for Intel CPUs, GPUs, and special DL inference accelerators ( see the full list of supported devices). It is supplied with a set of tools to optimize your models with compression techniques such as quantization, pruning and knowledge distillation. Optimum Intel provides a simple interface to optimize your model, convert it to the OpenVINO Intermediate Representation (IR) format and run inference using OpenVINO Runtime.\nInstallation\nTo install the latest release of 🤗 Optimum Intel with the corresponding required dependencies, you can use pip as follows:\npython -m pip install -U \" optimum-intel[openvino] \"\nOptimum Intel is a fast-moving project with regular additions of new model support, so you may want to install from source with the following command:\npython -m pip install \" optimum-intel \" @git+https://github.com/huggingface/optimum-intel.git\nDeprecation Notice: The extras for openvino (e.g., pip install optimum-intel[openvino,nncf] ), nncf , neural-compressor , ipex are deprecated and will be removed in a future release .\nExport:\nTo export your model to OpenVINO IR format, use the optimum-cli tool.\nBelow is an example of exporting TinyLlama/TinyLlama_v1.1 model:\noptimum-cli export openvino --model TinyLlama/TinyLlama_v1.1 ov_TinyLlama_v1_1\nTo export a model hosted on the Hub you can use our space . After conversion, a repository will be pushed under your namespace, this repository can be either public or private.\nAdditional information on exporting models is available in the documentation .\nInference:\nTo load an exported model and run inference using Optimum Intel, use the corresponding OVModelForXxx class instead of AutoModelForXxx :\nfrom optimum . intel import OVModelForCausalLM\nfrom transformers import AutoTokenizer , pipeline\nmodel_id = \"ov_TinyLlama_v1_1\"\nmodel = OVModelForCausalLM . from_pretrained ( model_id )\ntokenizer = AutoTokenizer . from_pretrained ( model_id )\npipe = pipeline ( \"text-generation\" , model = model , tokenizer = tokenizer )\nresults = pipe ( \"Hey, how are you doing today?\" , max_new_tokens = 100 )\nFor more details on Optimum Intel inference, refer to the documentation .\nNote: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework,\nthat provides optimized execution methods for highly performant Generative AI.\nQuantization:\nPost-training static quantization can also be applied. Here is an example on how to apply static quantization on a Whisper model using the LibriSpeech dataset for the calibration step.\nfrom optimum . intel import OVModelForSpeechSeq2Seq , OVQuantizationConfig\nmodel_id = \"openai/whisper-tiny\"\nq_config = OVQuantizationConfig ( dtype = \"int8\" , dataset = \"librispeech\" , num_samples = 50 )\nq_model = OVModelForSpeechSeq2Seq . from_pretrained ( model_id , quantization_config = q_config )\n# The directory where the quantized model will be saved\nsave_dir = \"nncf_results\"\nq_model . save_pretrained ( save_dir )\nYou can find more information in the documentation .\nRunning the examples\nCheck out the notebooks directory to see how 🤗 Optimum Intel can be used to optimize models and accelerate inference.\nDo not forget to install requirements for every example:\ncd < example-folder >\npip install -r requirements.txt\nAbout\n🤗 Optimum Intel: Accelerate inference with Intel optimization tools\nhuggingface.co/docs/optimum-intel/en/index\nTopics\noptimization\nintel\ntransformers\ninference\npruning\nquantization\ndistillation\nonnx\nopenvino\ndiffusers\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n588\nstars\nWatchers\n36\nwatching\nForks\n237\nforks\nReport repository\nReleases\n63\nv1.27.0: Transformers 4.56/4.57, Zamba2, BitNet, Granite-4, Exaone-4, LFM2\nLatest\nDec 23, 2025\n+ 62 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n62.8%\nPython\n37.2%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-25/r-021-huggingface-optimum-intel.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-25/r-021-huggingface-optimum-intel.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 4968,
+    "paragraph_count": 48,
+    "sentence_count": 33,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0101,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 4968,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "0c27786776693ede",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "a2d39fe20e4773bd",
+  "content_hash": "0c27786776693ede",
+  "full_text_hash": "0c27786776693ede",
+  "semantic_hash": "85fa88b98166275f",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-25T06:12:20.854Z",
+  "last_seen_at": "2026-05-25T06:12:20.854Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Repository: huggingface/opt 🤗 Optimum Intel: Accelerate inference with Intel optimization tools - Stars: 560 - Forks: 213 - Watchers: 560 - Open issues: 111 - Primary language: Jupyter Notebook - Languages: Jupyter Notebook (61.9%), Python (38.0%), Makefile - License: Apache License 2.0 (Apache-2.0) - Topics: diffusers, distillation, inference, intel, onnx, openvino, optimization, pruning, quantization, transformers - Default branch: main - Homepage: https://huggingface.co/docs/optimum-intel/en/index - Created: 20",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "huggingface optimum-intel Public Notifications You must be signed in to change notification settings Fork 237 Star 588 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1,416 Commits 1,416 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github docs docs notebooks notebooks optimum optimum tests tests .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore LICENSE LICENSE MANIFEST.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "in Makefile Makefile README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "py View all files Repository files navigation Optimum Intel 🤗 Optimum Intel is the interface between the 🤗 Transformers, Diffusers, Sentence Transformers and timm libraries and the different tools and libraries provided by OpenVINO to accelerate end-to-end pipelines on Intel architectures.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "GitHub"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "560",
+      "213",
+      "111",
+      "61.9%",
+      "38.0%",
+      "2.0",
+      "2022",
+      "05"
+    ],
+    "quotes": [
+      "optimum-intel",
+      "ov_TinyLlama_v1_1",
+      "text-generation",
+      "Hey, how are you doing today?",
+      " optimum-intel[openvino] "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "huggingface optimum-intel Public Notifications You must be signed in to change notification settings Fork 237 Star 588 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1,416 Commits 1,416 Commits .",
+      "github docs docs notebooks notebooks optimum optimum tests tests .",
+      "gitignore LICENSE LICENSE MANIFEST."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# huggingface/optimum-intel\n\n- raw_id: R-021\n- original_url: https://github.com/huggingface/optimum-intel?tab=readme-ov-file\n- source_name: keyword search / Anysearch\n- collected_at: 2026-05-25T06:12:20.854Z\n\n## clean_text\n\nhuggingface\noptimum-intel\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n237\nStar\n588\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1,416 Commits\n1,416 Commits\n.github\n.github\ndocs\ndocs\nnotebooks\nnotebooks\noptimum\noptimum\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMANIFEST.in\nMANIFEST.in\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\nsetup.cfg\nsetup.cfg\nsetup.py\nsetup.py\nView all files\nRepository files navigation\nOptimum Intel\n🤗 Optimum Intel is the interface between the 🤗 Transformers, Diffusers, Sentence Transformers and timm libraries and the different tools and libraries provided by OpenVINO to accelerate end-to-end pipelines on Intel architectures.\nOpenVINO is an open-source toolkit that enables high performance inference capabilities for Intel CPUs, GPUs, and special DL inference accelerators ( see the full list of supported devices). It is supplied with a set of tools to optimize your models with compression techniques such as quantization, pruning and knowledge distillation. Optimum Intel provides a simple interface to optimize your model, convert it to the OpenVINO Intermediate Representation (IR) format and run inference using OpenVINO Runtime.\nInstallation\nTo install the latest release of 🤗 Optimum Intel with the corresponding required dependencies, you can use pip as follows:\npython -m pip install -U \" optimum-intel[openvino] \"\nOptimum Intel is a fast-moving project with regular additions of new model support, so you may want to install from source with the following command:\npython -m pip install \" optimum-intel \" @git+https://github.com/huggingface/optimum-intel.git\nDeprecation Notice: The extras for openvino (e.g., pip install optimum-intel[openvino,nncf] ), nncf , neural-compressor , ipex are deprecated and will be removed in a future release .\nExport:\nTo export your model to OpenVINO IR format, use the optimum-cli tool.\nBelow is an example of exporting TinyLlama/TinyLlama_v1.1 model:\noptimum-cli export openvino --model TinyLlama/TinyLlama_v1.1 ov_TinyLlama_v1_1\nTo export a model hosted on the Hub you can use our space . After conversion, a repository will be pushed under your namespace, this repository can be either public or private.\nAdditional information on exporting models is available in the documentation .\nInference:\nTo load an exported model and run inference using Optimum Intel, use the corresponding OVModelForXxx class instead of AutoModelForXxx :\nfrom optimum . intel import OVModelForCausalLM\nfrom transformers import AutoTokenizer , pipeline\nmodel_id = \"ov_TinyLlama_v1_1\"\nmodel = OVModelForCausalLM . from_pretrained ( model_id )\ntokenizer = AutoTokenizer . from_pretrained ( model_id )\npipe = pipeline ( \"text-generation\" , model = model , tokenizer = tokenizer )\nresults = pipe ( \"Hey, how are you doing today?\" , max_new_tokens = 100 )\nFor more details on Optimum Intel inference, refer to the documentation .\nNote: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework,\nthat provides optimized execution methods for highly performant Generative AI.\nQuantization:\nPost-training static quantization can also be applied. Here is an example on how to apply static quantization on a Whisper model using the LibriSpeech dataset for the calibration step.\nfrom optimum . intel import OVModelForSpeechSeq2Seq , OVQuantizationConfig\nmodel_id = \"openai/whisper-tiny\"\nq_config = OVQuantizationConfig ( dtype = \"int8\" , dataset = \"librispeech\" , num_samples = 50 )\nq_model = OVModelForSpeechSeq2Seq . from_pretrained ( model_id , quantization_config = q_config )\n# The directory where the quantized model will be saved\nsave_dir = \"nncf_results\"\nq_model . save_pretrained ( save_dir )\nYou can find more information in the documentation .\nRunning the examples\nCheck out the notebooks directory to see how 🤗 Optimum Intel can be used to optimize models and accelerate inference.\nDo not forget to install requirements for every example:\ncd < example-folder >\npip install -r requirements.txt\nAbout\n🤗 Optimum Intel: Accelerate inference with Intel optimization tools\nhuggingface.co/docs/optimum-intel/en/index\nTopics\noptimization\nintel\ntransformers\ninference\npruning\nquantization\ndistillation\nonnx\nopenvino\ndiffusers\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n588\nstars\nWatchers\n36\nwatching\nForks\n237\nforks\nReport repository\nReleases\n63\nv1.27.0: Transformers 4.56/4.57, Zamba2, BitNet, Granite-4, Exaone-4, LFM2\nLatest\nDec 23, 2025\n+ 62 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n62.8%\nPython\n37.2%\n\n## full_text\n\nhuggingface\noptimum-intel\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n237\nStar\n588\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1,416 Commits\n1,416 Commits\n.github\n.github\ndocs\ndocs\nnotebooks\nnotebooks\noptimum\noptimum\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMANIFEST.in\nMANIFEST.in\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\nsetup.cfg\nsetup.cfg\nsetup.py\nsetup.py\nView all files\nRepository files navigation\nOptimum Intel\n🤗 Optimum Intel is the interface between the 🤗 Transformers, Diffusers, Sentence Transformers and timm libraries and the different tools and libraries provided by OpenVINO to accelerate end-to-end pipelines on Intel architectures.\nOpenVINO is an open-source toolkit that enables high performance inference capabilities for Intel CPUs, GPUs, and special DL inference accelerators ( see the full list of supported devices). It is supplied with a set of tools to optimize your models with compression techniques such as quantization, pruning and knowledge distillation. Optimum Intel provides a simple interface to optimize your model, convert it to the OpenVINO Intermediate Representation (IR) format and run inference using OpenVINO Runtime.\nInstallation\nTo install the latest release of 🤗 Optimum Intel with the corresponding required dependencies, you can use pip as follows:\npython -m pip install -U \" optimum-intel[openvino] \"\nOptimum Intel is a fast-moving project with regular additions of new model support, so you may want to install from source with the following command:\npython -m pip install \" optimum-intel \" @git+https://github.com/huggingface/optimum-intel.git\nDeprecation Notice: The extras for openvino (e.g., pip install optimum-intel[openvino,nncf] ), nncf , neural-compressor , ipex are deprecated and will be removed in a future release .\nExport:\nTo export your model to OpenVINO IR format, use the optimum-cli tool.\nBelow is an example of exporting TinyLlama/TinyLlama_v1.1 model:\noptimum-cli export openvino --model TinyLlama/TinyLlama_v1.1 ov_TinyLlama_v1_1\nTo export a model hosted on the Hub you can use our space . After conversion, a repository will be pushed under your namespace, this repository can be either public or private.\nAdditional information on exporting models is available in the documentation .\nInference:\nTo load an exported model and run inference using Optimum Intel, use the corresponding OVModelForXxx class instead of AutoModelForXxx :\nfrom optimum . intel import OVModelForCausalLM\nfrom transformers import AutoTokenizer , pipeline\nmodel_id = \"ov_TinyLlama_v1_1\"\nmodel = OVModelForCausalLM . from_pretrained ( model_id )\ntokenizer = AutoTokenizer . from_pretrained ( model_id )\npipe = pipeline ( \"text-generation\" , model = model , tokenizer = tokenizer )\nresults = pipe ( \"Hey, how are you doing today?\" , max_new_tokens = 100 )\nFor more details on Optimum Intel inference, refer to the documentation .\nNote: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework,\nthat provides optimized execution methods for highly performant Generative AI.\nQuantization:\nPost-training static quantization can also be applied. Here is an example on how to apply static quantization on a Whisper model using the LibriSpeech dataset for the calibration step.\nfrom optimum . intel import OVModelForSpeechSeq2Seq , OVQuantizationConfig\nmodel_id = \"openai/whisper-tiny\"\nq_config = OVQuantizationConfig ( dtype = \"int8\" , dataset = \"librispeech\" , num_samples = 50 )\nq_model = OVModelForSpeechSeq2Seq . from_pretrained ( model_id , quantization_config = q_config )\n# The directory where the quantized model will be saved\nsave_dir = \"nncf_results\"\nq_model . save_pretrained ( save_dir )\nYou can find more information in the documentation .\nRunning the examples\nCheck out the notebooks directory to see how 🤗 Optimum Intel can be used to optimize models and accelerate inference.\nDo not forget to install requirements for every example:\ncd < example-folder >\npip install -r requirements.txt\nAbout\n🤗 Optimum Intel: Accelerate inference with Intel optimization tools\nhuggingface.co/docs/optimum-intel/en/index\nTopics\noptimization\nintel\ntransformers\ninference\npruning\nquantization\ndistillation\nonnx\nopenvino\ndiffusers\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n588\nstars\nWatchers\n36\nwatching\nForks\n237\nforks\nReport repository\nReleases\n63\nv1.27.0: Transformers 4.56/4.57, Zamba2, BitNet, Granite-4, Exaone-4, LFM2\nLatest\nDec 23, 2025\n+ 62 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n62.8%\nPython\n37.2%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Repository: huggingface/opt 🤗 Optimum Intel: Accelerate inference with Intel optimization tools - Stars: 560 - Forks: 213 - Watchers: 560 - Open issues: 111 - Primary language: Jupyter Notebook - Languages: Jupyter Notebook (61.9%), Python (38.0%), Makefile - License: Apache License 2.0 (Apache-2.0) - Topics: diffusers, distillation, inference, intel, onnx, openvino, optimization, pruning, quantization, transformers - Default branch: main - Homepage: https://huggingface.co/docs/optimum-intel/en/index - Created: 20\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] huggingface optimum-intel Public Notifications You must be signed in to change notification settings Fork 237 Star 588 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1,416 Commits 1,416 Commits .\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] github docs docs notebooks notebooks optimum optimum tests tests .\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] gitignore LICENSE LICENSE MANIFEST.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] in Makefile Makefile README.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] py View all files Repository files navigation Optimum Intel 🤗 Optimum Intel is the interface between the 🤗 Transformers, Diffusers, Sentence Transformers and timm libraries and the different tools and libraries provided by OpenVINO to accelerate end-to-end pipelines on Intel architectures.\n"
+}

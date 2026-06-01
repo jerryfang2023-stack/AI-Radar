@@ -16,4 +16,3 @@ Key usable evidence:
 2. Workflow: patient experience and surgery scheduling.
 3. AI role: voice agents.
 4. Boundary: customer is anonymized; public copy must preserve that boundary.
-

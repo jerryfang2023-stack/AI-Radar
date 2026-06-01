@@ -50,7 +50,7 @@ const signalSpecs = {
       eventLine: "Lio 宣布 3000 万美元 A 轮融资，方向是用虚拟劳动力处理企业采购流程。",
       whyWatch: "采购是流程重、审批多、系统分散的企业场景，适合观察智能体是否进入实际运营环节。",
       businessMeaning: "如果这类产品能跑通，影响的是采购岗位、审批流程、预算责任和供应商协作方式。",
-      evidenceBoundary: "材料确认融资和产品方向，真实客户规模和部署深度仍需后续补充。",
+      evidenceBoundary: "公开信息确认融资和产品方向，客户规模和部署深度仍需后续补充。",
       watchWindow: "继续看 Lio 是否披露客户案例、采购系统集成和端到端处理结果。",
     },
     {
@@ -90,7 +90,7 @@ const signalSpecs = {
       company: "Wonderful",
       title: "Wonderful 融资 1.5 亿美元，扩张企业 AI Agent 平台",
       eventLine: "Wonderful 宣布 1.5 亿美元 B 轮融资，用于扩大企业 AI Agent 平台和全球市场。",
-      whyWatch: "大额融资说明资本仍在押注企业 Agent 的跨市场交付，而不只是模型能力。",
+      whyWatch: "大额融资说明企业 Agent 的竞争已经延伸到跨市场交付，而不只是模型能力。",
       businessMeaning: "后续重点会落在客户扩张、交付队伍、区域市场和企业采购周期。",
       evidenceBoundary: "材料能确认融资金额和扩张方向，客户留存、收入质量和部署深度还需补证。",
       watchWindow: "未来 90 天观察 Wonderful 是否披露行业客户、区域增长和交付指标。",
@@ -304,7 +304,7 @@ const signalSpecs = {
       company: "Sycamore Labs",
       title: "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台",
       eventLine: "Sycamore Labs 宣布 6500 万美元种子轮融资，目标是构建、部署和管理企业级自主 Agent。",
-      whyWatch: "资本继续押注企业 Agent，但材料把重点放在安全、人类监督和组织知识沉淀，而不是单纯模型能力。",
+      whyWatch: "这笔融资把企业 Agent 的竞争点放在安全、人类监督和组织知识沉淀，而不是单纯模型能力。",
       businessMeaning: "企业采用时会关心谁能批准 Agent 行动、如何复核输出，以及知识和权限如何留在组织内部。",
       evidenceBoundary: "材料能确认融资金额、投资方和平台方向，暂未看到客户名单或实际生产案例。",
       watchWindow: "未来 60 到 90 天观察是否披露客户、治理能力和部署流程。",
@@ -332,7 +332,7 @@ const signalSpecs = {
       dir: "funding",
       slug: "netomi-raises-110m-for-agentic-customer-experience",
       company: "Netomi",
-      title: "Netomi 融资 1.1 亿美元，押注高风险客户体验智能体",
+      title: "Netomi 融资 1.1 亿美元，扩展高风险客户体验智能体",
       eventLine: "Netomi 宣布完成 1.1 亿美元融资，用于扩展面向复杂企业环境的 agentic CX 平台。",
       whyWatch: "这条信号把大额融资、企业级客户体验和可审计运行环境放在一起，说明智能体预算正在从通用工具走向高风险业务流程。",
       businessMeaning: "企业老板需要关注的不是客服机器人本身，而是客服回复、合规审核、升级转人工和断线后的恢复责任被打包进同一套 AI 交付责任。",
@@ -528,12 +528,61 @@ function signalCardFiles() {
   });
 }
 
+function opinionCardFilesForDate() {
+  const dir = path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards");
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter((name) => name.startsWith(`${date}--frontier-opinion--`) && name.endsWith(".md"))
+    .map((name) => path.join(dir, name));
+}
+
 function yamlValue(text, key) {
   return text.match(new RegExp(`^${key}:\\s*"?([^"\\n]+)"?`, "mu"))?.[1]?.trim() || "";
 }
 
 function nestedYamlValue(text, key) {
   return text.match(new RegExp(`^  ${key}:\\s*"?([^"\\n]+)"?`, "mu"))?.[1]?.trim() || "";
+}
+
+function frontstageOpinionTitleQuality(title = "") {
+  const text = String(title || "").trim();
+  if (!text || text.length > 44) return false;
+  if (/[<>{}\[\]]|https?:\/\/|t\.co\/|@\s?\w|#\w/iu.test(text)) return false;
+  if (/[⚽️😂😅🔥🚀]/u.test(text)) return false;
+  if (!/(AI|Agent|智能体|Codex|Claude|OpenAI|Anthropic|Cursor|模型|API|Gateway|Vercel|自动审阅|Auto.?review|编程|工程|workflow|工作流|tokens?|代币)/iu.test(text)) return false;
+  if (/(更|和|与|在|为|的|：|:|,|，)$/u.test(text)) return false;
+  if (/[A-Za-z][A-Za-z0-9'’,-]*(?:\s+[A-Za-z][A-Za-z0-9'’,-]*){6,}/u.test(text)) return false;
+  if (/(投票|保险专员|建筑热潮|在印度|平坦的循环|终极教育|运送最好的产品|lfg|dank memes|plain annoying|gassing me up|business insider|current streak|api key spend caps)/iu.test(text)) return false;
+  if (/：.+(总裁兼首席执行官|首席执行官|当前连胜|支$|执$|cra$|c$)/u.test(text)) return false;
+  return true;
+}
+
+function frontstageOpinionManifestItems() {
+  return opinionCardFilesForDate().map((file) => {
+    const text = fs.readFileSync(file, "utf8");
+    const title = nestedYamlValue(text, "displayTitle") || yamlValue(text, "title");
+    const tier = yamlValue(text, "opinion_tier");
+    const lane = yamlValue(text, "display_lane");
+    const status = yamlValue(text, "publish_status");
+    const translationStatus = yamlValue(text, "translation_status");
+    const ready = yamlValue(text, "type") === "opinion_card"
+      && yamlValue(text, "fact_draft_gate") === "passed"
+      && yamlValue(text, "frontend_copy_gate") === "passed"
+      && yamlValue(text, "cardcopy_gate") === "passed"
+      && ["feature", "sidebar"].includes(tier)
+      && ["daily_feature", "signal_sidebar"].includes(lane)
+      && ["frontstage_feature", "frontstage_sidebar"].includes(status)
+      && translationStatus !== "pending_translation"
+      && frontstageOpinionTitleQuality(title);
+    if (!ready) return null;
+    return {
+      id: yamlValue(text, "id"),
+      title,
+      opinion_tier: tier,
+      display_lane: lane,
+      source_path: path.relative(root, file).replace(/\\/g, "/"),
+    };
+  }).filter((item) => item?.id);
 }
 
 function yamlArrayValue(text, key) {
@@ -692,10 +741,110 @@ function poolTitle(section) {
 function textForInference(section) {
   return [
     poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "evidence_object_type"),
     value(section, "key_excerpts"),
     value(section, "evidence_seed"),
     value(section, "missing_information"),
   ].join(" ");
+}
+
+const coreImportanceTypes = new Set([
+  "important_case",
+  "important_funding",
+  "important_technical_trend",
+  "important_product_or_service",
+  "important_vertical_solution",
+  "important_viewpoint_or_article",
+]);
+
+const indexOnlyEvidenceTypes = new Set([
+  "homepage",
+  "home_page",
+  "directory",
+  "index",
+  "index_only",
+  "product_page",
+  "product_directory",
+  "docs_index",
+  "documentation_index",
+  "readme",
+  "repo_index",
+  "package_page",
+  "model_page",
+  "marketplace_listing",
+  "search_result",
+  "search_results",
+  "seo_page",
+  "tool_directory",
+  "login_page",
+]);
+
+const indexOnlyUrlPattern = /(^|\/)(category|categories|tag|tags|topics?|search|docs?|documentation|api|sdk|pricing|marketplace|models?|packages?|tools?|login|signin|sign-in)(\/|$)|readme|readme-ov-file|\/blog\/category\//iu;
+const discoveryOnlyPattern = /\b(aihot|ai hot|follow-builders|hacker news|reddit|hn|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+
+function sectionHasUsableEvidenceObject(section) {
+  const evidenceCompleteness = value(section, "evidence_completeness");
+  const keyExcerpts = value(section, "key_excerpts");
+  const evidenceSeed = value(section, "evidence_seed");
+  return Boolean(
+    value(section, "raw_archive") &&
+    value(section, "raw_json") &&
+    (value(section, "raw_full_text_hash") || value(section, "full_text_hash")) &&
+    keyExcerpts &&
+    keyExcerpts !== "[]" &&
+    evidenceSeed &&
+    evidenceSeed !== "{}" &&
+    !/"missing":\s*\[[^\]]*[^\s\]][^\]]*\]/u.test(evidenceCompleteness)
+  );
+}
+
+function corePoolSemanticIssues(section) {
+  const issues = [];
+  const text = textForInference(section);
+  const sourceUrl = value(section, "source_url");
+  const evidenceObjectType = value(section, "evidence_object_type");
+  const extractionQuality = value(section, "extraction_quality");
+  const readability = Number(value(section, "readability_score"));
+  const importanceScore = Number(value(section, "importance_score"));
+  const importanceType = value(section, "importance_type");
+
+  if (!/core_pool/u.test(value(section, "pool_routes"))) issues.push("not_core_pool");
+  if (value(section, "raw_qc_decision") !== "allow") issues.push("raw_qc_not_allow");
+  if (value(section, "has_full_text") !== "true") issues.push("missing_full_text");
+  if (!sourceUrl || sourceUrl === "no-url") issues.push("missing_source_url");
+  if (!value(section, "extraction_method")) issues.push("missing_extraction_method");
+  if (!Number.isFinite(readability) || readability < 24) issues.push("low_readability");
+  if (!["high", "medium"].includes(extractionQuality)) issues.push("weak_extraction_quality");
+  if (value(section, "index_only_evidence") === "true") issues.push("index_only_evidence");
+  if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(`index_only_evidence_type:${evidenceObjectType}`);
+  if (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl)) {
+    issues.push("index_or_directory_url");
+  }
+  if (discoveryOnlyPattern.test(`${value(section, "acquisition_channel")} ${value(section, "source_role")}`) && value(section, "source_role") !== "resolved_original_source") {
+    issues.push("discovery_source_not_resolved");
+  }
+  if (!coreImportanceTypes.has(importanceType)) issues.push(`unsupported_importance_type:${importanceType || "missing"}`);
+  if (!Number.isFinite(importanceScore) || importanceScore < 4) issues.push("low_importance_score");
+  if (!sectionHasUsableEvidenceObject(section)) issues.push("incomplete_evidence_object");
+  if (/missing_full_text|missing_snapshot|missing_hash|missing_excerpt|index_only_or_directory_page|discovery_or_feedback_source_boundary|raw_evidence_unusable/iu.test(value(section, "degradation_reasons"))) {
+    issues.push("degradation_reason_blocks_core");
+  }
+  if (/官网首页|产品目录|文档目录|README|包页|模型页|搜索结果|SEO|工具导航|目录页|首页|category page|directory|search result/iu.test(text)) {
+    issues.push("text_indicates_index_only");
+  }
+  return issues;
+}
+
+function signalClusterKey(spec, section) {
+  const sourceUrl = value(section, "source_url");
+  const hash = value(section, "raw_full_text_hash") || value(section, "full_text_hash");
+  const title = poolTitle(section) || spec.title;
+  const company = normalizedSignalText(spec.company || companyFromSection(section));
+  if (hash) return `hash:${hash}`;
+  if (sourceUrl) return `url:${normalizedUrl(sourceUrl)}`;
+  return `event:${company}:${normalizedSignalText(`${spec.type} ${title}`).slice(0, 120)}`;
 }
 
 function slugify(value) {
@@ -786,6 +935,20 @@ function extractAmount(text) {
   return text.match(/(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)|\d+(?:\.\d+)?\s?(?:million|billion))/u)?.[0] || "";
 }
 
+function isSingleCompanyFundingSignal(section) {
+  const title = poolTitle(section);
+  const text = textForInference(section);
+  const sourceUrl = value(section, "source_url");
+  const haystack = `${title} ${text} ${sourceUrl}`;
+  if (/(funding map|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(haystack)) {
+    return false;
+  }
+  const hasFundingAction = /\b(raises|raised|lands|landed|secures|secured|closes|closed|announces|announced|snags|bags|pulls in|gets|receives)\b.{0,100}\b(funding|financing|investment|round|seed|series|pre-seed)\b/iu.test(haystack);
+  const hasAmountOrRound = /[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\b\d+(?:\.\d+)?\s?(?:million|billion)\b|\b(pre-seed|seed|series\s+[a-z])\b/iu.test(haystack);
+  const company = companyFromSection(section);
+  return hasFundingAction && hasAmountOrRound && company && !isWeakCompanyName(company);
+}
+
 function scenarioFromText(text) {
   if (/c\.h\.\s*robinson|shipment|shipments|freight|logistics|carrier|email-based shipment/iu.test(text)) return "物流订单和邮件处理流程";
   if (/real estate|architect|construction|aec|building|地产|建筑/iu.test(text)) return "地产开发和建筑设计流程";
@@ -799,8 +962,11 @@ function scenarioFromText(text) {
 }
 
 function inferSignalType(section) {
-  const text = textForInference(section);
+  let text = textForInference(section);
   const sourceUrl = value(section, "source_url");
+  const importanceType = value(section, "importance_type");
+  if (importanceType === "important_funding") return isSingleCompanyFundingSignal(section) ? "funding" : "case";
+  text = text.replace(/\b(raises|raised|funding|seed|series|round|pulls in|investing|ventures?)\b|融资|种子轮|A轮|B轮/giu, "");
   if (/\b(raises|raised|funding|seed|series|round|pulls in|investing|ventures?)\b|融资|种子轮|A轮|B轮/iu.test(text)) return "funding";
   if (/c\.h\.\s*robinson|snaplogic|pwc|deployment|deploys|automates|orders automated|customer case/iu.test(`${text} ${sourceUrl}`)) return "case";
   if (/aws\.amazon\.com\/marketplace|github\.com|marketplace|vscode|superclaude|conversion agents|deepagents|api|sdk|platform/iu.test(`${text} ${sourceUrl}`)) return "product_service";
@@ -813,6 +979,17 @@ function dirForSignalType(type) {
   if (type === "funding") return "funding";
   if (type === "product_service") return "product-service";
   return "case";
+}
+
+function fundingAngleFromScenario(scenario) {
+  if (/销售|收入/iu.test(scenario)) return "销售线索和收入团队协作";
+  if (/采购|下单/iu.test(scenario)) return "采购下单自动化";
+  if (/模型|算力|部署/iu.test(scenario)) return "模型部署和算力服务";
+  if (/地产|建筑/iu.test(scenario)) return "地产和建筑设计工作流";
+  if (/客服|客户体验/iu.test(scenario)) return "客服和客户体验自动化";
+  if (/智能体协作|企业/iu.test(scenario)) return "企业 Agent 协作平台";
+  if (/物流/iu.test(scenario)) return "物流订单处理";
+  return scenario.replace(/流程$/u, "");
 }
 
 function isNonCommercialPolicyOrEthicsSignal(section) {
@@ -829,11 +1006,12 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
 function isEligibleAutoSignal(section) {
   const sourceUrl = value(section, "source_url");
   const sourceLevel = value(section, "source_level");
+  const importanceType = value(section, "importance_type");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
-  return /core_pool/u.test(value(section, "pool_routes"))
-    && value(section, "raw_qc_decision") === "allow"
-    && value(section, "has_full_text") === "true"
+  return corePoolSemanticIssues(section).length === 0
     && /^(S|A|B)$/u.test(sourceLevel)
+    && importanceType !== "important_viewpoint_or_article"
+    && (importanceType !== "important_funding" || isSingleCompanyFundingSignal(section))
     && sourceUrl
     && sourceUrl !== "no-url"
     && !isNonCommercialPolicyOrEthicsSignal(section)
@@ -850,16 +1028,19 @@ function autoSignalSpec(poolRef, section, index) {
   }
   const amount = extractAmount(text);
   const prefix = `SIG-${date.replaceAll("-", "")}-A${String(index).padStart(2, "0")}`;
-  const title = type === "funding"
-    ? `${company} 融资，押注${scenario}`
+  const fundingAngle = fundingAngleFromScenario(scenario);
+  const originalTitle = poolTitle(section);
+  const fallbackTitle = type === "funding"
+    ? `${company} 融资，做${fundingAngle}`
     : type === "product_service"
-      ? `${company} 发布面向${scenario}的 AI 能力`
-      : `${company} 部署 AI 到${scenario}`;
+      ? `${company} 发布 AI 能力，指向${scenario}`
+      : `${company} 把 AI 用进${scenario}`;
+  const title = originalTitle || fallbackTitle;
   const eventLine = type === "funding"
-    ? `${company} 宣布${amount ? `${amount} ` : ""}融资，材料把资金用途指向${scenario}。`
+    ? `${company} 宣布${amount ? `${amount} ` : ""}融资，业务重点落在${fundingAngle}。`
     : type === "product_service"
-      ? `${company} 发布新的 AI 能力，材料显示它面向${scenario}。`
-      : `${company} 把 AI 放进${scenario}，材料显示它已经对应到具体任务或客户环境。`;
+      ? `${company} 发布新的 AI 能力，面向${scenario}。`
+      : `${company} 把 AI 用进${scenario}。`;
   return {
     id: prefix,
     poolRef,
@@ -869,9 +1050,9 @@ function autoSignalSpec(poolRef, section, index) {
     company,
     title,
     eventLine,
-    whyWatch: `这条材料把 AI 从通用能力拉回到${scenario}，可以观察客户是否愿意为流程结果、交付速度或团队协作付费。`,
-    businessMeaning: `后续判断重点不是模型参数，而是客户流程、采购预算、交付责任和团队岗位是否因此调整。`,
-    evidenceBoundary: "当前材料保留了原始链接、全文和哈希；真实客户规模、长期留存和效果指标仍需要继续补证。",
+    whyWatch: `这条变化值得看，是因为它把竞争点放到了${scenario}：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。`,
+    businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+    evidenceBoundary: "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
     watchWindow: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。",
     autoGenerated: true,
   };
@@ -880,6 +1061,14 @@ function autoSignalSpec(poolRef, section, index) {
 function autoSignalsFromPool(sections, explicitSpecs) {
   if (!autoSignalEnabled) return [];
   const selectedPoolRefs = new Set(explicitSpecs.map((spec) => spec.poolRef));
+  const selectedClusterKeys = new Set(
+    explicitSpecs
+      .map((spec) => {
+        const section = sections.get(spec.poolRef);
+        return section ? signalClusterKey(spec, section) : "";
+      })
+      .filter(Boolean)
+  );
   const need = Math.max(0, signalTarget - explicitSpecs.length);
   if (!need) return [];
   const autoSpecs = [];
@@ -887,8 +1076,12 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   for (const [poolRef, section] of sections) {
     if (selectedPoolRefs.has(poolRef)) continue;
     if (!isEligibleAutoSignal(section)) continue;
-    autoSpecs.push(autoSignalSpec(poolRef, section, index));
+    const spec = autoSignalSpec(poolRef, section, index);
+    const clusterKey = signalClusterKey(spec, section);
+    if (selectedClusterKeys.has(clusterKey)) continue;
+    autoSpecs.push(spec);
     selectedPoolRefs.add(poolRef);
+    selectedClusterKeys.add(clusterKey);
     index += 1;
     if (autoSpecs.length >= need) break;
   }
@@ -1301,6 +1494,74 @@ function writeOpinionIndex(specs) {
   write(path.join(root, "01-SiteV2", "content", "05-frontier-opinions", `${date}-opinion-cards.md`), lines.join("\n"));
 }
 
+function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs }) {
+  const reportDir = path.join(root, "agent-workflow", "reports");
+  fs.mkdirSync(reportDir, { recursive: true });
+  const handoffPath = path.join(reportDir, `${date}-pool-to-card-handoff.md`);
+  const manifestPath = path.join(reportDir, `${date}-frontstage-manifest.json`);
+  const frontstageOpinions = frontstageOpinionManifestItems();
+  const handoff = [
+    `# ${date} Pool-to-Card Handoff`,
+    "",
+    `- generated_at: ${new Date().toISOString()}`,
+    `- written_count: ${written.length}`,
+    `- merged_count: ${merged.length}`,
+    `- skipped_count: ${skipped.length}`,
+    `- frontstage_signal_count: ${frontstageSpecs.length}`,
+    `- frontstage_opinion_count: ${frontstageOpinions.length}`,
+    "",
+    "## Frontstage Signals",
+    "",
+    frontstageSpecs.length
+      ? frontstageSpecs.map((spec) => `- ${spec.id}｜${spec.poolRef}｜${spec.title}`).join("\n")
+      : "- none",
+    "",
+    "## Frontstage Opinions",
+    "",
+    frontstageOpinions.length
+      ? frontstageOpinions.map((item) => `- ${item.id}｜${item.opinion_tier}/${item.display_lane}｜${item.title}`).join("\n")
+      : "- none",
+    "",
+    "## Cluster / Dedupe Rows",
+    "",
+    clusterRows.length
+      ? clusterRows.map((row) => `- ${row.poolRef}｜${row.clusterKey}｜${row.decision}${row.reason ? `｜${row.reason}` : ""}`).join("\n")
+      : "- none",
+    "",
+    "## Written",
+    "",
+    written.length ? written.map((item) => `- ${item}`).join("\n") : "- none",
+    "",
+    "## Merged",
+    "",
+    merged.length ? merged.map((item) => `- ${item}`).join("\n") : "- none",
+    "",
+    "## Skipped",
+    "",
+    skipped.length ? skipped.map((item) => `- ${item}`).join("\n") : "- none",
+    "",
+  ].join("\n");
+  fs.writeFileSync(handoffPath, handoff, "utf8");
+  fs.writeFileSync(manifestPath, `${JSON.stringify({
+    date,
+    generated_at: new Date().toISOString(),
+    frontstage_signals: frontstageSpecs.map((spec) => ({
+      id: spec.id,
+      pool_ref: spec.poolRef,
+      title: spec.title,
+      type: spec.type,
+      company: spec.company,
+    })),
+    frontstage_opinions: frontstageOpinions,
+    skipped,
+    merged,
+  }, null, 2)}\n`, "utf8");
+  return {
+    handoff: path.relative(root, handoffPath).replace(/\\/g, "/"),
+    manifest: path.relative(root, manifestPath).replace(/\\/g, "/"),
+  };
+}
+
 function updateDailyMonitorLogFrontSignalCounts(counts) {
   const reportsDir = path.join(root, "agent-workflow", "reports");
   if (!fs.existsSync(reportsDir)) return;
@@ -1352,8 +1613,10 @@ function main() {
   const written = [];
   const skipped = [];
   const merged = [];
+  const clusterRows = [];
   const frontSignalSourceLevels = { S: 0, A: 0, B: 0 };
   const signalIndexSpecs = [];
+  const acceptedClusterKeys = new Set();
 
   cleanSignalCardsForDate();
   const existingSignalIndex = existingSignalCardIndex();
@@ -1364,17 +1627,20 @@ function main() {
       skipped.push(`${spec.poolRef}: missing section`);
       continue;
     }
-    const required = [
-      ["pool_routes", /core_pool/u],
-      ["raw_qc_decision", /^allow$/u],
-      ["has_full_text", /^true$/u],
-      ["source_url", /^(?!no-url).+/u],
-    ];
-    const failed = required.filter(([field, pattern]) => !pattern.test(value(section, field)));
-    if (failed.length) {
-      skipped.push(`${spec.poolRef}: failed ${failed.map(([field]) => field).join(",")}`);
+    const semanticIssues = corePoolSemanticIssues(section);
+    if (semanticIssues.length) {
+      skipped.push(`${spec.poolRef}: semantic gate failed ${semanticIssues.join(",")}`);
+      clusterRows.push({ poolRef: spec.poolRef, clusterKey: "blocked", decision: "skipped", reason: semanticIssues.join(",") });
       continue;
     }
+    const clusterKey = signalClusterKey(spec, section);
+    if (acceptedClusterKeys.has(clusterKey)) {
+      skipped.push(`${spec.poolRef}: duplicate event cluster ${clusterKey}`);
+      clusterRows.push({ poolRef: spec.poolRef, clusterKey, decision: "skipped", reason: "duplicate_event_cluster" });
+      continue;
+    }
+    acceptedClusterKeys.add(clusterKey);
+    clusterRows.push({ poolRef: spec.poolRef, clusterKey, decision: "accepted", reason: "" });
     const existing = findExistingSignalCard(existingSignalIndex, spec, section);
     if (existing) {
       const updated = upsertExistingSignalCard(existing, spec, section);
@@ -1436,8 +1702,10 @@ function main() {
   runOpinionGovernance();
   written.push(`01-SiteV2/content/04-business-signals/signals/${date}-signals.md`);
   written.push(`01-SiteV2/content/05-frontier-opinions/${date}-opinion-cards.md`);
+  const handoff = writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs: signalIndexSpecs });
+  written.push(handoff.handoff, handoff.manifest);
 
-  console.log(JSON.stringify({ ok: true, date, written, merged, skipped }, null, 2));
+  console.log(JSON.stringify({ ok: true, date, written, merged, skipped, handoff }, null, 2));
 }
 
 main();

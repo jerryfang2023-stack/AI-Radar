@@ -199,7 +199,7 @@ Modal title
 - business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
 - affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
 - numbers: $30M, 5, 2026, $30 million, 16, $33 million, $180 billion, $10 billion
-- quotes: The procurement organization of the future will look fundamentally different from today, / 
+- quotes: The procurement organization of the future will look fundamentally different from today, /
 said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart.
  / We're entering a phase in the enterprise where AI moves beyond workflow co-pilots to autonomous, multi-agent execution, / Lio is applying that shift to procurement – one of the largest and most operationally complex functions in the enterprise.
 

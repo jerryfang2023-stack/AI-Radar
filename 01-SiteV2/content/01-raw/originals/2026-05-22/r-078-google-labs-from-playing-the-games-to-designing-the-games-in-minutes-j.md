@@ -143,7 +143,7 @@ From playing the games to designing the games in minutes. Just choose your chara
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 4
 - evidence_strength: 2
 - case_richness: 4

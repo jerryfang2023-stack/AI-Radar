@@ -250,7 +250,7 @@ Insert
 - business_actions: 部署 / 上线
 - affected_departments: IT / 安全, 法务
 - numbers: 039, 17, 2026, 1, $1.3 million, 100, 5.5, $650 million
-- quotes: 
+- quotes:
 OpenAI 正将 ChatGPT、代码智能体 Codex 和开发者 API 合并为一个由 Codex 负责人 Thibault Sottiaux 领导的产品团队。联合创始人 Greg Brockman 正式接管产品战略，目标是打造一个集成 Atlas 浏览器的 / 的愿景。此次整合旨在统一核心产品线，强化各服务间的协同，为开发者和用户提供更一体化的智能体体验。
 Greg Brockman consolidates OpenAI&#039;s product teams to build an  / agentic future / We’re consolidating our product efforts to execute with maximum focus toward the agentic future, to win across both consumer and enterprise, / super app
 

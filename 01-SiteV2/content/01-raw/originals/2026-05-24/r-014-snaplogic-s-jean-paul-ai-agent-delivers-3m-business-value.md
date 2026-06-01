@@ -671,7 +671,7 @@ Trusted by leading companies across the globe
    Application Integration API Management What is iPaaS?
 
 5. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
-   Solutions Solutions Overview By Industry Financial Services Manufacturing Pharma & Biosciences Technology & Software Higher Education By Role Human Resources IT Sales Marketing Finance By Popular Use Case Employee Onboarding Quote-to-Cash Invoice Processing OEM/Embedded By Initiative Legacy Modernization Agentic Integration Enterprise Automation Cloud Data Warehouse Partners Partners Overview Log in to Partner Connect Become a Partner Consulting Partners OEM/Embedded Customers Customers Overview Integration Nation 
+   Solutions Solutions Overview By Industry Financial Services Manufacturing Pharma & Biosciences Technology & Software Higher Education By Role Human Resources IT Sales Marketing Finance By Popular Use Case Employee Onboarding Quote-to-Cash Invoice Processing OEM/Embedded By Initiative Legacy Modernization Agentic Integration Enterprise Automation Cloud Data Warehouse Partners Partners Overview Log in to Partner Connect Become a Partner Consulting Partners OEM/Embedded Customers Customers Overview Integration Nation
 
 6. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
    Security & Compliance Snaps (Pre-built Connectors) SLIM (Legacy Migration Tool) Pricing SnapLogic AI Build enterprise-grade agents, assistants, and automations.
@@ -692,7 +692,7 @@ Trusted by leading companies across the globe
 ## evidence_seed
 
 - company_actions: Skip to content HAPPENING NOW: Tune in to AgentFest to learn how to make agents production-ready for the enterprise. / Application Integration API Management What is iPaaS?
-- case_details: Solutions Solutions Overview By Industry Financial Services Manufacturing Pharma & Biosciences Technology & Software Higher Education By Role Human Resources IT Sales Marketing Finance By Popular Use Case Employee Onboarding Quote-to-Cash Invoice Processing OEM/Embedded By Initiative Legacy Modernization Agentic Integration Enterprise Automation Cloud Data Warehouse Partners Partners Overview Log in to Partner Connect Become a Partner Consulting Partners OEM/Embedded Customers Customers Overview Integration Nation 
+- case_details: Solutions Solutions Overview By Industry Financial Services Manufacturing Pharma & Biosciences Technology & Software Higher Education By Role Human Resources IT Sales Marketing Finance By Popular Use Case Employee Onboarding Quote-to-Cash Invoice Processing OEM/Embedded By Initiative Legacy Modernization Agentic Integration Enterprise Automation Cloud Data Warehouse Partners Partners Overview Log in to Partner Connect Become a Partner Consulting Partners OEM/Embedded Customers Customers Overview Integration Nation
 - workflow_changes: 暂无公开信息
 - before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
 - affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服

@@ -103,7 +103,7 @@ The page you’re looking for doesn’t exist or has moved.
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
-   Voice has always been the dominant interface for business communication. , home services, insurance, logistics, a dozen other industries, the phone is still how problems get resolved and high-value decisions get made Those two things combined make voice AI to viable replacement for large slices of phone workflows. The capital in this map reflects that transition. Over $4.5 billion was raised by the 68 companies here between October 2024 and March 2026, and the distribution of that capital tells a clear story about 
+   Voice has always been the dominant interface for business communication. , home services, insurance, logistics, a dozen other industries, the phone is still how problems get resolved and high-value decisions get made Those two things combined make voice AI to viable replacement for large slices of phone workflows. The capital in this map reflects that transition. Over $4.5 billion was raised by the 68 companies here between October 2024 and March 2026, and the distribution of that capital tells a clear story about
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
    The page you’re looking for doesn’t exist or has moved.

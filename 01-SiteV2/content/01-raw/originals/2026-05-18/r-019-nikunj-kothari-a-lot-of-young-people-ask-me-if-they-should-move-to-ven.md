@@ -76,7 +76,7 @@ A lot of young people ask me if they should move to venture and my answer is typ
 ## key_excerpts
 
 1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
-   A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.. It’s hard to truly understand what “excellence” means unless you’re deeply embedded and working for founders who are truly excellent. Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out. I wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others. I 
+   A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.. It’s hard to truly understand what “excellence” means unless you’re deeply embedded and working for founders who are truly excellent. Even if you are part of the cap table and the board and spending time with founders, you don’t get same learnings as working at a company day in and day out. I wouldn’t know anything about product excellence if it were not for @deepnishar @ericwu01 @acv and others. I
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
    A lot of young people ask me if they should move to venture and my answer is typically no* for the following reason.

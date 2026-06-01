@@ -143,7 +143,7 @@ OpenAI与Anthropic近期相继发布重要产品更新。Claude 3.5 Sonnet在多
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 4

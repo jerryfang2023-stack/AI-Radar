@@ -147,7 +147,7 @@ Schedule a call with our research team to learn more about how Specialized Langu
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
-   Announcing our $11.8M Series Seed | Inference.net # Announcing our $11.8M Series Seed We’re excited to announce that we have raised $11.8M in Series Seed funding, led by Multicoin Capital and a16z CSX, with participation from Topology Ventures, Founders, Inc., and an exceptional group of angel investors. Inference.net enables companies to train and deploy custom AI models that outperform general-purpose alternatives at a fraction of the cost. This capital will accelerate our mission to help businesses take control 
+   Announcing our $11.8M Series Seed | Inference.net # Announcing our $11.8M Series Seed We’re excited to announce that we have raised $11.8M in Series Seed funding, led by Multicoin Capital and a16z CSX, with participation from Topology Ventures, Founders, Inc., and an exceptional group of angel investors. Inference.net enables companies to train and deploy custom AI models that outperform general-purpose alternatives at a fraction of the cost. This capital will accelerate our mission to help businesses take control
 
 2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
    Oct 14, 2025 Announcing our $11.

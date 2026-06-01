@@ -99,7 +99,7 @@ Built alongside early design partners, the Inference Engine gives AI developers 
 ## key_excerpts
 
 1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
-   Built alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs. BROOMFIELD, Colo.--(BUSINESS WIRE)-- DigitalOcean(NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads. The announcement comes ahead of DigitalOcean Deploy, 
+   Built alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs. BROOMFIELD, Colo.--(BUSINESS WIRE)-- DigitalOcean(NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads. The announcement comes ahead of DigitalOcean Deploy,
 
 2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
    Built alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs.

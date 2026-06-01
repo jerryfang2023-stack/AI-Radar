@@ -108,7 +108,7 @@ function mountFooter() {
           <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜AI Wavesight AI">
         </a>
         <div class="footer-legal">
-          <span class="footer-copy">© 2026 WaveSight AI · V2.1</span>
+          <span class="footer-copy">© 2026 WaveSight AI · V2.2.1</span>
           <a class="footer-icp" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
             <span aria-hidden="true"></span>
             粤ICP备2021076703号-3
@@ -588,14 +588,18 @@ function mountHomeV2() {
   const featuredTrendReport = root.querySelector("[data-home-featured-trend-report]");
   if (featuredTrendReport && data.trendReport) {
     const reportId = String(data.trendReport.id || "");
+    const isTrendCandidate = data.trendReport.type === "trend_candidate" || data.trendReport.assetLevel === "candidate";
     const hasFormalReport = /^TRD-(FLASH|FULL)-\d{8}-\d{2}$/.test(reportId);
+    const hasDisplayTrend = Boolean(data.trendReport.title);
     const audience = compactJoin([tagsByGroup(data.trendReport, "customer", 2), tagsByGroup(data.trendReport, "function", 2)], "企业老板 / 业务负责人");
     const entry = hasFormalReport ? (data.trendReport.link || "trend-tracking.html") : "trend-tracking.html";
-    const reportLabel = hasFormalReport
+    const reportLabel = isTrendCandidate
+      ? "正在形成"
+      : hasFormalReport
       ? (data.trendReport.kind === "full" ? "最新深度报告" : "正在升温")
       : "趋势仍在观察";
-    const reportTitle = hasFormalReport ? data.trendReport.title : "今天的趋势判断还在观察";
-    const reportCopy = hasFormalReport
+    const reportTitle = hasDisplayTrend ? data.trendReport.title : "暂无可发布趋势";
+    const reportCopy = hasDisplayTrend
       ? homeShort(data.trendReport.oneLine || summaryText(data.trendReport), 96)
       : "观澜会把多条变化、案例、观点和来源密度放在一起看。证据不够时，不把单条新闻包装成趋势。";
     featuredTrendReport.innerHTML = `
@@ -2826,37 +2830,6 @@ function perspectiveHeader() {
         </div>
       </div>
     </section>
-  `;
-}
-
-function legacyPerspectiveCard(profile, index, mode = "regular") {
-  const latest = profile.latest || {};
-  const identity = builderIdentityForPoint(latest, profile);
-  const status = perspectiveStatus(index);
-  const relation = perspectiveRelation(index);
-  const topics = perspectiveTopics(profile, latest);
-  const original = opinionChineseQuote(latest, identity, 180) || builderOriginalText(latest);
-  const textLimit = mode === "featured" ? 150 : 96;
-  return `
-    <article class="perspective-card ${mode === "featured" ? "featured" : ""}">
-      <a href="builder-detail.html?id=${encodeURIComponent(profile.handle)}">
-        <div class="perspective-card-top">
-          <div class="builder-avatar">${identity.name.slice(0, 2).toUpperCase()}</div>
-          <div>
-            <strong>${identity.name}</strong>
-            <small>${identity.title} · ${publicSourceLabel(profile.org)}</small>
-          </div>
-          <span>${status}</span>
-        </div>
-        <p class="perspective-original">${homeShort(original, textLimit)}</p>
-        <p>${homeShort(cleanText(latest.interpretation || latest.calibrates || latest.usage || latest.title || "这条观点可作为判断参照。"), mode === "featured" ? 118 : 76)}</p>
-        <div class="perspective-tags">
-          <em>${signalSystemDate(latest.date)}</em>
-          <em>${relation}</em>
-          ${topics.map((tag) => `<em>${tag}</em>`).join("")}
-        </div>
-      </a>
-    </article>
   `;
 }
 
@@ -5533,23 +5506,6 @@ function dailyArticleIndexMarkup(issue, signals = [], points = []) {
   `;
 }
 
-function dailySummaryCard(dailyContent = data.daily) {
-  const profile = dailyObservationProfile(dailyContent, selectedDailySignals(selectedDailyIssue()));
-  const keywords = profile.keywords?.length ? profile.keywords : ["Agent", "可控运营", "治理", "交付成本", "企业工作流"];
-  return `
-    <dl>
-      <div><dt>今日观察</dt><dd>${profile.title.replace(/^今日观察[｜|]\s*/u, "")}</dd></div>
-      <div><dt>观察强度</dt><dd>${profile.strength || "中高"}</dd></div>
-      <div><dt>观察窗口</dt><dd>24H / 7D / 30D</dd></div>
-      <div><dt>当前状态</dt><dd>${profile.state || "升温，仍需边界校准"}</dd></div>
-      <div class="daily-newsletter-tags-field">
-        <dt>Tags</dt>
-        <dd class="daily-brief-key-chips">${keywords.map((item) => `<span>${item}</span>`).join("")}</dd>
-      </div>
-    </dl>
-  `;
-}
-
 function dailyCalibrationNote(dailyContent = data.daily) {
   const profile = dailyObservationProfile(dailyContent, selectedDailySignals(selectedDailyIssue()));
   const item = (dailyContent.calibration || [])[0];
@@ -6137,8 +6093,8 @@ function trendReportVariableItems(item) {
 
 function trendReportSources(item) {
   const related = relatedAssets(item, "trendReport");
-  const signals = (related.signal || data.signals || []).slice(0, 2);
-  const trends = (related.trend || data.contentIndex?.trends || []).slice(0, 1);
+  const signals = (related.signal || []).slice(0, 2);
+  const trends = (related.trend || []).slice(0, 1);
   return [...signals.map((signal) => ["Signal", signal.title]), ...trends.map((trend) => ["Trend", trend.title])].slice(0, 3);
 }
 
@@ -6154,36 +6110,17 @@ function trendRadarTagIds(item) {
   return new Set((item?.tags || []).map((tag) => tag.id || tag.name).filter(Boolean));
 }
 
-function trendRadarOverlapScore(item, target) {
-  const itemTags = trendRadarTagIds(item);
-  const targetTags = trendRadarTagIds(target);
-  let score = 0;
-  targetTags.forEach((tag) => {
-    if (itemTags.has(tag)) score += 1;
-  });
-  return score;
-}
-
 function trendRadarSignals(item, limit = 3) {
   const related = relatedAssets(item, item?.id?.startsWith("TRD-") ? "trendReport" : "trend");
-  const explicit = related.signal || [];
-  const fallback = (data.contentIndex?.signals || data.signals || [])
-    .map((signal) => ({ signal, score: trendRadarOverlapScore(signal, item) }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .map(({ signal }) => signal);
-  return [...explicit, ...fallback]
+  return (related.signal || [])
     .filter((signal, index, list) => list.findIndex((candidate) => candidate.id === signal.id) === index)
     .slice(0, limit);
 }
 
 function trendRadarPoints(item, limit = 3) {
-  return (data.contentIndex?.points || [])
+  const related = relatedAssets(item, item?.id?.startsWith("TRD-") ? "trendReport" : "trend");
+  return (related.point || [])
     .filter(isFrontstageOpinionPoint)
-    .map((point) => ({ point, score: trendRadarOverlapScore(point, item) }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .map(({ point }) => point)
     .slice(0, limit);
 }
 
@@ -6419,33 +6356,6 @@ function trendLabOneLine(item = {}) {
   return trendReportSafeText(item.oneLine || item.judgment || summaryText(item, "这条方向正在被多条材料共同指向。"));
 }
 
-function trendLabFocusMarkupLegacy(item = {}) {
-  const signals = trendRadarSignals(item, 6);
-  const points = trendRadarPoints(item, 3);
-  const scenes = item.supportingScenes || [];
-  const tags = tagsByGroup(item, "track", 3);
-  return `
-    <article class="trend-lab-focus-card">
-      <div class="trend-lab-focus-meta">
-        <span>${trendLabStatus(item)}</span>
-        <span>${trendLabDate(item.updated || item.date)}</span>
-      </div>
-      <h2>${trendLabTrendTitle(item)}</h2>
-      <p>${trendLabOneLine(item)}</p>
-      <dl class="trend-lab-focus-grid">
-        <div><dt>关键变量</dt><dd>${trendRadarVariables(item, 4)}</dd></div>
-        <div><dt>商业信号</dt><dd>${signals.length ? `${signals.length} 条已关联` : "同类信号待整理"}</dd></div>
-        <div><dt>案例 / 产品</dt><dd>${signals.filter((signal) => /案例|产品/.test(trendLabSignalType(signal))).length || "继续观察"}</dd></div>
-        <div><dt>观点参照</dt><dd>${points.length ? `${points.length} 条` : "暂未进入前台"}</dd></div>
-      </dl>
-      <div class="trend-lab-focus-bottom">
-        <div class="trend-lab-mini-tags">${(tags.length ? tags : itemTags(item, 3).map((tag) => tag.name)).map((tag) => `<span>${tag}</span>`).join("")}</div>
-        <strong>${scenes.length ? `关联场景：${scenes.join(" / ")}` : "后续看客户采用、预算归属和流程责任是否继续出现。"}</strong>
-      </div>
-    </article>
-  `;
-}
-
 function trendLabCaseProductCount(signals = []) {
   return signals.filter((signal) => /妗堜緥|案例|浜у搧|产品/.test(trendLabSignalType(signal))).length;
 }
@@ -6479,48 +6389,6 @@ function trendLabFormationMarkup(item = {}) {
       <strong>暂缺成形说明</strong>
       <p>当前只能看到 ${support}${sourceTypes ? `，来源覆盖 ${sourceTypes}` : ""}。这些可以说明材料正在聚合，但还不能替代一段正式的编辑判断。</p>
     </section>
-  `;
-}
-
-function trendLabFocusMarkup(item = {}) {
-  const signals = trendRadarSignals(item, 6);
-  const points = trendRadarPoints(item, 3);
-  const tags = tagsByGroup(item, "track", 3);
-  const cases = trendLabCaseProductCount(signals);
-  return `
-    <article class="trend-lab-focus-card">
-      <div class="trend-lab-focus-meta">
-        <span>${trendLabStatus(item)}</span>
-        <span>${trendLabDate(item.updated || item.date)}</span>
-      </div>
-      <h2>${trendLabTrendTitle(item)}</h2>
-      <p>${trendLabOneLine(item)}</p>
-      ${trendLabFormationMarkup(item)}
-      <dl class="trend-lab-focus-grid trend-lab-focus-facts">
-        <div><dt>关键变量</dt><dd>${trendRadarVariables(item, 4)}</dd></div>
-        <div><dt>商业信号</dt><dd>${signals.length ? `${signals.length} 条已关联` : "同类信号待整理"}</dd></div>
-        <div><dt>案例 / 产品</dt><dd>${cases || "继续观察"}</dd></div>
-        <div><dt>观点参照</dt><dd>${points.length ? `${points.length} 条` : "暂未进入前台"}</dd></div>
-      </dl>
-      <div class="trend-lab-focus-bottom">
-        <div class="trend-lab-mini-tags">${(tags.length ? tags : itemTags(item, 3).map((tag) => tag.name)).map((tag) => `<span>${tag}</span>`).join("")}</div>
-        <strong>${cleanText(item.nextObservation) || "下一步看客户采用、预算归属和流程责任是否继续出现。"}</strong>
-      </div>
-    </article>
-  `;
-}
-
-function trendLabStatsMarkupLegacy(item = {}) {
-  const signals = trendRadarSignals(item, 6);
-  const points = trendRadarPoints(item, 3);
-  const cases = trendLabCaseProductCount(signals);
-  return `
-    <dl class="trend-lab-side-stats">
-      <div><dt>关键变量</dt><dd>${trendRadarVariables(item, 4)}</dd></div>
-      <div><dt>商业信号</dt><dd>${signals.length ? `${signals.length} 条已关联` : "同类信号待整理"}</dd></div>
-      <div><dt>案例 / 产品</dt><dd>${cases || "继续观察"}</dd></div>
-      <div><dt>观点参照</dt><dd>${points.length ? `${points.length} 条` : "暂未进入前台"}</dd></div>
-    </dl>
   `;
 }
 
@@ -6597,23 +6465,6 @@ function trendLabEvidenceMarkup(item = {}) {
 }
 
 function trendLabTrendListMarkup(items = [], activeId = "") {
-  if (!items.length) {
-    return `<article class="trend-lab-empty"><strong>暂无可展示趋势</strong><p>正式候选进入前台后，会在这里形成判断队列。</p></article>`;
-  }
-  return items.map((item, index) => {
-    const key = item.id || item.slug || item.title || index;
-    const isActive = key === activeId;
-    return `
-      <button class="trend-lab-list-item ${isActive ? "is-active" : ""}" type="button" data-trend-lab-select="${safeAttribute(key)}">
-        <span>${String(index + 1).padStart(2, "0")}</span>
-        <strong>${homeShort(trendLabTrendTitle(item), 42)}</strong>
-        <em>${trendLabStatus(item)} · ${trendLabDate(item.date || item.updated)}</em>
-      </button>
-    `;
-  }).join("");
-}
-
-function trendLabTrendListMarkup(items = [], activeId = "") {
   const rows = items.filter((item, index) => {
     const key = item.id || item.slug || item.title || index;
     return key !== activeId;
@@ -6648,7 +6499,7 @@ function trendLabPointsMarkup(item = {}) {
 }
 
 function trendLabReportsMarkup() {
-  const reports = trendRadarFormalReports();
+  const reports = [];
   if (!reports.length) return `<p class="trend-lab-side-empty">暂无正式趋势报告。当前只展示正在形成的方向。</p>`;
   return reports.slice(0, 4).map((item) => `
     <a class="trend-lab-side-link" href="${safeAttribute(trendReportHref(item))}">
@@ -6658,18 +6509,25 @@ function trendLabReportsMarkup() {
   `).join("");
 }
 
-function trendLabRelatedMarkup() {
-  const links = [
-    ["今日观察", data.daily?.title || "当天主判断", data.daily?.link || "daily.html"],
-    ["商业信号", "查看事实变化与案例卡", "signals.html"],
-    ["商业内参", data.brief?.title || "周期判断与复盘", "brief.html"],
-  ];
-  return links.map(([label, title, href]) => `
+function trendLabRelatedMarkup(item = {}) {
+  const directLinks = trendRadarSignals(item, 4).map((signal) => [
+    trendLabSignalType(signal),
+    signal.title || signal.frontend?.displayTitle || signal.id,
+    trendLabSignalHref(signal),
+  ]);
+  return directLinks.map(([label, title, href]) => `
     <a class="trend-lab-side-link" href="${safeAttribute(href)}">
       <span>${label}</span>
       <strong>${homeShort(cleanText(title), 42)}</strong>
     </a>
   `).join("");
+}
+
+function setTrendLabPanelContent(node, html = "") {
+  if (!node) return;
+  node.innerHTML = html;
+  const panel = node.closest(".trend-lab-panel");
+  if (panel) panel.hidden = !html.trim() || /trend-lab-side-empty/.test(html);
 }
 
 function trendReportCoverGraphic() {
@@ -6905,84 +6763,6 @@ function mountDaily() {
   mountDailyKeywords();
 }
 
-function mountTrendReportLegacy() {
-  const focusNode = document.querySelector("[data-trend-lab-focus]");
-  if (!focusNode) return;
-  const allItems = trendLabItems();
-  const search = document.querySelector("[data-trend-lab-search]");
-  const summaryNode = document.querySelector("[data-trend-lab-summary]");
-  const listNode = document.querySelector("[data-trend-lab-list]");
-  const timelineNode = document.querySelector("[data-trend-lab-timeline]");
-  const evidenceNode = document.querySelector("[data-trend-lab-evidence]");
-  const pointsNode = document.querySelector("[data-trend-lab-points]");
-  const reportsNode = document.querySelector("[data-trend-lab-reports]");
-  const relatedNode = document.querySelector("[data-trend-lab-related]");
-  let activeId = allItems[0]?.id || allItems[0]?.slug || "";
-
-  if (summaryNode) {
-    const trends = data.contentIndex?.trends || [];
-    const formalReports = trendRadarFormalReports();
-    const signalCount = trends.reduce((sum, item) => sum + trendRadarSignals(item, 8).length, 0);
-    summaryNode.innerHTML = [
-      ["方向", allItems.length],
-      ["真实候选", trends.length],
-      ["关联材料", signalCount],
-      ["正式报告", formalReports.length],
-    ].map(([label, value]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join("");
-  }
-
-  const matches = (item, keyword = "") => {
-    const query = cleanText(keyword).toLowerCase();
-    if (!query) return true;
-    const haystack = [
-      item.title,
-      item.oneLine,
-      item.judgment,
-      item.nextObservation,
-      ...(item.tags || []).flatMap((tag) => [tag.name, tag.id, ...(tag.aliases || [])]),
-    ].join(" ").toLowerCase();
-    return haystack.includes(query);
-  };
-
-  const render = () => {
-    const keyword = search?.value || "";
-    const visible = allItems.filter((item) => matches(item, keyword));
-    if (!visible.find((item) => (item.id || item.slug) === activeId)) {
-      activeId = visible[0]?.id || visible[0]?.slug || "";
-    }
-    const active = visible.find((item) => (item.id || item.slug) === activeId) || visible[0];
-    if (!active) {
-      focusNode.innerHTML = `<article class="trend-lab-empty"><strong>没有找到可展示材料</strong><p>换一个趋势方向、公司、流程或商业变量试试。</p></article>`;
-      if (listNode) listNode.innerHTML = trendLabTrendListMarkup([], "");
-      if (timelineNode) timelineNode.innerHTML = "";
-      if (evidenceNode) evidenceNode.innerHTML = "";
-      return;
-    }
-    focusNode.innerHTML = trendLabFocusMarkup(active);
-    if (listNode) listNode.innerHTML = trendLabTrendListMarkup(visible, active.id || active.slug);
-    if (timelineNode) timelineNode.innerHTML = trendLabTimelineMarkup(active, visible);
-    if (evidenceNode) evidenceNode.innerHTML = trendLabEvidenceMarkup(active);
-    if (pointsNode) pointsNode.innerHTML = trendLabPointsMarkup(active);
-    if (reportsNode) reportsNode.innerHTML = trendLabReportsMarkup();
-    if (relatedNode) relatedNode.innerHTML = trendLabRelatedMarkup();
-    listNode?.querySelectorAll("[data-trend-lab-select]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const nextId = button.dataset.trendLabSelect;
-        const target = allItems.find((item, index) => (item.id || item.slug || item.title || index) === nextId);
-        if (target && trendLabItemDate(target) !== activeDate) {
-          window.location.href = trendLabFilterHref({ date: trendLabItemDate(target), tags: [] });
-          return;
-        }
-        activeId = nextId;
-        render();
-      });
-    });
-  };
-
-  search?.addEventListener("input", render);
-  render();
-}
-
 function mountTrendReport() {
   const focusNode = document.querySelector("[data-trend-lab-focus]");
   if (!focusNode) return;
@@ -7011,20 +6791,23 @@ function mountTrendReport() {
     const active = visible.find((item) => (item.id || item.slug) === activeId) || visible[0];
     if (!active) {
       focusNode.innerHTML = `<article class="trend-lab-empty"><strong>没有找到可展示材料</strong><p>换一个日期、标签归类或具体标签试试。</p></article>`;
-      if (listNode) listNode.innerHTML = trendLabTrendListMarkup([], "");
-      if (statsNode) statsNode.innerHTML = "";
+      setTrendLabPanelContent(listNode, "");
+      setTrendLabPanelContent(statsNode, "");
       if (timelineNode) timelineNode.innerHTML = "";
       if (evidenceNode) evidenceNode.innerHTML = "";
+      setTrendLabPanelContent(pointsNode, "");
+      setTrendLabPanelContent(reportsNode, "");
+      setTrendLabPanelContent(relatedNode, "");
       return;
     }
     focusNode.innerHTML = trendLabFocusMarkup(active);
-    if (statsNode) statsNode.innerHTML = trendLabStatsMarkup(active);
-    if (listNode) listNode.innerHTML = trendLabTrendListMarkup(allItems, active.id || active.slug);
+    setTrendLabPanelContent(statsNode, trendLabStatsMarkup(active));
+    setTrendLabPanelContent(listNode, "");
     if (timelineNode) timelineNode.innerHTML = trendLabTimelineMarkup(active, allItems);
     if (evidenceNode) evidenceNode.innerHTML = trendLabEvidenceMarkup(active);
-    if (pointsNode) pointsNode.innerHTML = trendLabPointsMarkup(active);
-    if (reportsNode) reportsNode.innerHTML = trendLabReportsMarkup();
-    if (relatedNode) relatedNode.innerHTML = trendLabRelatedMarkup();
+    setTrendLabPanelContent(pointsNode, trendLabPointsMarkup(active));
+    setTrendLabPanelContent(reportsNode, trendLabReportsMarkup(active));
+    setTrendLabPanelContent(relatedNode, trendLabRelatedMarkup(active));
     listNode?.querySelectorAll("[data-trend-lab-select]").forEach((button) => {
       button.addEventListener("click", () => {
         activeId = button.dataset.trendLabSelect;
@@ -7591,9 +7374,9 @@ function mountTrendReportDetail() {
   const slug = params.get("id");
   const trendReport = data.contentIndex?.trendReports?.find((item) => item.slug === slug) || data.trendReport;
   const related = relatedAssets(trendReport, "trendReport");
-  const trendItems = (related.trend?.length ? related.trend : data.contentIndex?.trends || []).slice(0, 2);
-  const pointItems = (related.point?.length ? related.point : data.contentIndex?.points || []).slice(0, 2);
-  const signalItems = (related.signal?.length ? related.signal : data.contentIndex?.signals || data.signals || []).slice(0, 3);
+  const trendItems = (related.trend || []).slice(0, 2);
+  const pointItems = (related.point || []).slice(0, 2);
+  const signalItems = (related.signal || []).slice(0, 3);
   const caseItems = (related.case?.length ? related.case : []).slice(0, 2);
   const variables = trendReportVariableItems(trendReport);
   const section = (names, title, fallback) => `

@@ -229,7 +229,7 @@ Logistics & Transportation Salesforce Service Cloud Salesforce Data Cloud
 ## key_excerpts
 
 1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
-   C.H. Robinson, one of the world's largest logistics providers managing 37 million shipments annually, built AI agents using LangChain and LangGraph to automate email-based shipment orders end-to-end. The platform now processes approximately 5,500 orders per day automatically, saving more than 600 hours of manual email processing work daily. C.H. Robinson received 15,000 shipment-related emails daily from customers who still transact via email, each requiring 7 minutes of manual processing to interpret inconsistent 
+   C.H. Robinson, one of the world's largest logistics providers managing 37 million shipments annually, built AI agents using LangChain and LangGraph to automate email-based shipment orders end-to-end. The platform now processes approximately 5,500 orders per day automatically, saving more than 600 hours of manual email processing work daily. C.H. Robinson received 15,000 shipment-related emails daily from customers who still transact via email, each requiring 7 minutes of manual processing to interpret inconsistent
 
 2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
    Robinson, one of the world's largest logistics providers managing 37 million shipments annually, built AI agents using LangChain and LangGraph to automate email-based shipment orders end-to-end.

@@ -757,7 +757,7 @@ Fintech Startups in New York
 - business_actions: 部署 / 上线, 定价 / 计费变化, 融资 / 投资
 - affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
 - numbers: 2026, 2b, 10, 3, 532, 556, 674, 581b
-- quotes: AI brain / Democratize mobile app creation with AI /  and more 
+- quotes: AI brain / Democratize mobile app creation with AI /  and more
 
 ## evidence_seed
 

@@ -88,7 +88,7 @@ Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, 
 ## key_excerpts
 
 1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
-   Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters [...] Feb 6 (Reuters) - Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions, CNBC reported on Friday, citing the bank’s chief information officer. [...] The Wall Street bank has spent the past six months collaborating with Anthropic engineers embedded within its teams to build autonomous agents for 
+   Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters [...] Feb 6 (Reuters) - Goldman Sachs (GS.N), opens new tab is working with technology startup Anthropic to develop AI-powered agents aimed at automating a widening range of internal functions, CNBC reported on Friday, citing the bank’s chief information officer. [...] The Wall Street bank has spent the past six months collaborating with Anthropic engineers embedded within its teams to build autonomous agents for
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
    Goldman Sachs teams up with Anthropic to automate banking tasks with AI agents, CNBC reports | Reuters [.

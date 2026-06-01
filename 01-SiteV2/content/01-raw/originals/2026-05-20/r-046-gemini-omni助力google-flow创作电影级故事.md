@@ -126,7 +126,7 @@ Google Flow 🤝 Gemini Omni 使用我们的最新模型创作更具电影感的
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 3

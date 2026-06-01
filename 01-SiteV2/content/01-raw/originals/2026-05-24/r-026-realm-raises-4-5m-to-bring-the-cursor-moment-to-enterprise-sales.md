@@ -169,7 +169,7 @@ News Releases in Similar Topics
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
-   Accessibility Statement Skip Navigation HELSINKI, April 22, 2026 /PRNewswire/ -- Realm has raised a $4.5 million Seed round to speed up enterprise sales cycles. Its platform gives AI the structured context needed to automate deal-defining materials like RFP responses. The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz. "Our customers use Realm to draft their most important deliverables, from multi-million dollar bids to 
+   Accessibility Statement Skip Navigation HELSINKI, April 22, 2026 /PRNewswire/ -- Realm has raised a $4.5 million Seed round to speed up enterprise sales cycles. Its platform gives AI the structured context needed to automate deal-defining materials like RFP responses. The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz. "Our customers use Realm to draft their most important deliverables, from multi-million dollar bids to
 
 2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
    HELSINKI , April 22, 2026 /PRNewswire/ -- Realm has raised a $4.

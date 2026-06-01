@@ -288,7 +288,7 @@ Get started Book a Demo
 - business_actions: 发布 / 推出
 - affected_departments: IT / 安全, 销售 / 客服
 - numbers: 26, 96, 51, 6, 1, 0, 30, 960X
-- quotes: We spent hours trying to test AI database code through inaccurate seed files. Ardent lets us and our agents test in seconds with zero drift from production. /  I think AI will disrupt data engineering in a significant way. I'm investing in Ardent to accelerate that disruption!  /  Ardent is a fundamental complete shift in how agents and developers work with databases. It's as critical as git was for code  /  Ardent let us move as fast as agents write code. We no longer worry about our agents working on the database layer. 
+- quotes: We spent hours trying to test AI database code through inaccurate seed files. Ardent lets us and our agents test in seconds with zero drift from production. /  I think AI will disrupt data engineering in a significant way. I'm investing in Ardent to accelerate that disruption!  /  Ardent is a fundamental complete shift in how agents and developers work with databases. It's as critical as git was for code  /  Ardent let us move as fast as agents write code. We no longer worry about our agents working on the database layer.
 
 ## evidence_seed
 

@@ -16,4 +16,3 @@ Key usable evidence:
 2. Industry: food distribution.
 3. AI roles: OrderAgent and VoiceAgent.
 4. Workflow: order processing across distributor communication channels.
-

@@ -183,7 +183,7 @@ Previous post →
 ## key_excerpts
 
 1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   buying goods and services process called public procurement: competitive tenders that any qualifying company can bid for Until very recently none of this could be meaningfully automated. The work was too complex, too document-heavy, too Italian-specific Then the AI moment arrived had just publicly announced his first startup’ failure looked at this market and saw an opportunity. Three months later, he was reading about AI startups tackling public procurement in the United States. His background snapped into focus: 
+   buying goods and services process called public procurement: competitive tenders that any qualifying company can bid for Until very recently none of this could be meaningfully automated. The work was too complex, too document-heavy, too Italian-specific Then the AI moment arrived had just publicly announced his first startup’ failure looked at this market and saw an opportunity. Three months later, he was reading about AI startups tackling public procurement in the United States. His background snapped into focus:
 
 2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
    A CEO who came back from public failure, a 23-year-old CTO who almost never returned to Italy, and a €500 billion market nobody in the startup world talks about.
@@ -217,7 +217,7 @@ Previous post →
 
 - company_actions: This is the story of Cato. / Think about it differently: around one-third of your taxes are spent through these tenders.
 - case_details: 暂无公开信息
-- workflow_changes: buying goods and services process called public procurement: competitive tenders that any qualifying company can bid for Until very recently none of this could be meaningfully automated. The work was too complex, too document-heavy, too Italian-specific Then the AI moment arrived had just publicly announced his first startup’ failure looked at this market and saw an opportunity. Three months later, he was reading about AI startups tackling public procurement in the United States. His background snapped into focus: 
+- workflow_changes: buying goods and services process called public procurement: competitive tenders that any qualifying company can bid for Until very recently none of this could be meaningfully automated. The work was too complex, too document-heavy, too Italian-specific Then the AI moment arrived had just publicly announced his first startup’ failure looked at this market and saw an opportunity. Three months later, he was reading about AI startups tackling public procurement in the United States. His background snapped into focus:
 - before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
 - affected_roles: CIO / IT 负责人, 法务 / 律师, 采购负责人
 - risks_or_constraints: 暂无公开信息

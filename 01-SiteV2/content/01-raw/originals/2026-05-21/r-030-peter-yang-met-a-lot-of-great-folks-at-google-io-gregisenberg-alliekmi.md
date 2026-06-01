@@ -144,7 +144,7 @@ M, 10
 - importance_type: important_viewpoint_or_article
 - importance_score: 5
 - importance_reason: influential viewpoint or article; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 5

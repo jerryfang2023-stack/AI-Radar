@@ -633,7 +633,7 @@ Other
 ## key_excerpts
 
 1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python. Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices 
+   A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python. Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
    microsoft agent-framework Public Notifications You must be signed in to change notification settings Fork 1.
@@ -667,7 +667,7 @@ Other
 
 - company_actions: microsoft agent-framework Public Notifications You must be signed in to change notification settings Fork 1. / 7k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2,146 Commits 2,146 Commits . / github declarative-agents declarative-agents docs docs dotnet dotnet python python schemas schemas .
 - case_details: 暂无公开信息
-- workflow_changes: A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python. Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices 
+- workflow_changes: A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python. Microsoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices
 - before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
 - affected_roles: CIO / IT 负责人, 开发者 / 工程团队
 - risks_or_constraints: 暂无公开信息

@@ -1,7 +1,7 @@
 ---
 title: Daily Monitoring Playbook
 date: 2026-05-22
-status: active-v2.1
+status: active-v2.2
 owner: intelligence-engine / build-release
 skill: guanlan-daily-monitor
 ---

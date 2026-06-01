@@ -235,7 +235,7 @@ Book a 20‑Minute Fit Call
 ## key_excerpts
 
 1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
-   Get a fractional design lead embedded in your team—shipping UX, landing pages, and design systems every month so you stop leaking users and time. Instead of chasing freelancers or overloading your PMs with Figma, you get one partner who owns product UX, conversion journeys, and visual consistency across your AI product and marketing. ### Built for AI This retainer is for AI startup teams who have a live product, constant ideas, and not enough design capacity to ship them without chaos. You’re moving fast, but your 
+   Get a fractional design lead embedded in your team—shipping UX, landing pages, and design systems every month so you stop leaking users and time. Instead of chasing freelancers or overloading your PMs with Figma, you get one partner who owns product UX, conversion journeys, and visual consistency across your AI product and marketing. ### Built for AI This retainer is for AI startup teams who have a live product, constant ideas, and not enough design capacity to ship them without chaos. You’re moving fast, but your
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
    Retainer Partnership Get a fractional design lead embedded in your team—shipping UX, landing pages, and design systems every month so you stop leaking users and time.

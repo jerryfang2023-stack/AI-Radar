@@ -131,7 +131,7 @@ Beta Boom invests in pre-seed and seed vertical AI startups building industry-sp
 - importance_type: important_funding
 - importance_score: 4
 - importance_reason: funding or investment event; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 1
 - case_richness: 2

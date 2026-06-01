@@ -1,7 +1,7 @@
 ---
 status: current
 scope: quality-gates
-last_updated: 2026-05-21
+last_updated: 2026-06-01
 use_when:
   - acceptance
   - closeout review
@@ -30,6 +30,7 @@ priority: current
 - Copy-first 文案表。
 - Build & Release 按表实现说明。
 - 桌面端截图 / 核心交互检查。
+- 前台回归门禁结果：`node agent-workflow/tools/frontstage-regression-gate.mjs`。
 - 是否新增表外字号、表外字重、表外文案的说明。
 
 移动端专项暂缓，除非派发单明确要求。
@@ -59,6 +60,7 @@ priority: current
 ```powershell
 node agent-workflow/tools/run-quality-gates.mjs syntax
 node agent-workflow/tools/run-quality-gates.mjs v2content
+node agent-workflow/tools/frontstage-regression-gate.mjs
 node --check 01-SiteV2/site/assets/app.js
 ```
 
@@ -68,6 +70,7 @@ node --check 01-SiteV2/site/assets/app.js
 - `style`
 - `automation`
 - `v2content --date=YYYY-MM-DD`
+- `node agent-workflow/tools/assert-public-copy-gate.mjs --date=YYYY-MM-DD --markdown=true`
 
 ## 冲突处理
 

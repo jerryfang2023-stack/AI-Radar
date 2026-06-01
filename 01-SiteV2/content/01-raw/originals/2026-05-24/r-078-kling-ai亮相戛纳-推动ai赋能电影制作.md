@@ -128,7 +128,7 @@ Kling AI亮相戛纳，推动AI赋能电影制作
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 1
 - case_richness: 2

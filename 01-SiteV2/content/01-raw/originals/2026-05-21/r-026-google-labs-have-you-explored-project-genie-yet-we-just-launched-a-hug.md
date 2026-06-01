@@ -143,7 +143,7 @@ Have you explored Project Genie yet? 🌎 We just launched a huge set of updates
 - importance_type: important_product_or_service
 - importance_score: 5
 - importance_reason: new product or service; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 4
 - case_richness: 5

@@ -143,7 +143,7 @@ Why AI Progress Suddenly Feels Real - my conversation with @yanndubs, who co-lea
 - importance_type: important_funding
 - importance_score: 5
 - importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 4
 - evidence_strength: 4
 - case_richness: 5

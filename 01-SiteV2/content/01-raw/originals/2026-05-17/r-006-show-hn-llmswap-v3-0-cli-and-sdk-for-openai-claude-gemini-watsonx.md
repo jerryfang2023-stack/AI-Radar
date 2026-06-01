@@ -2400,11 +2400,11 @@ Provider & Model Flexibility
 - business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
 - affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
 - numbers: 3.0, 2, 0, 5.5, 6, 21, 2026, 11
-- quotes: 
+- quotes:
 data-search-focus-target= / get_weather / Get real-time weather data /  }},
 required = [  /  ]
 # Works with ANY provider - Anthropic, OpenAI, Gemini, Groq, xAI
-client = LLMClient ( provider = 
+client = LLMClient ( provider =
 
 ## evidence_seed
 

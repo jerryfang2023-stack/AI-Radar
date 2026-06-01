@@ -1,7 +1,7 @@
 ﻿---
 title: Evidence And Routing Rules
 date: 2026-05-22
-status: active-v2.1
+status: active-v2.2
 owner: intelligence-engine / product-commander
 consolidation: raw_fields_and_raw_to_pool_routing
 ---

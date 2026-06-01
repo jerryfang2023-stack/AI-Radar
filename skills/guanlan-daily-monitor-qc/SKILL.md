@@ -99,6 +99,19 @@ agent-workflow/reports/
 - `clean_text` 存在但 `full_text`、fallback、`extraction_method`、`readability_score` 或缺失说明不清楚。
 - Raw JSON 缺少 `evidence_completeness`、`degradation_reasons` 或 `raw_qc_decision`。
 
+## Raw / Pool / Card 交接硬规则
+
+每日监测 QC 放行只代表 Raw / Pool 可被下游使用，不代表可以直接上前台。生成 card 或同步网站前必须再过这些门：
+
+- Pool-to-Card 必须生成 `agent-workflow/reports/<YYYY-MM-DD>-pool-to-card-handoff.md` 和 `agent-workflow/reports/<YYYY-MM-DD>-frontstage-manifest.json`。
+- 前台 signal / opinion 只能读取 manifest 白名单；没有进入 manifest 的卡，即使文件存在，也不得上前台。
+- active date 缺少 manifest 时，站点同步必须停止；manifest 中观点列表为空时，不得回退全量观点卡。
+- Card 标题优先保留原文事实标题或清晰事件标题，禁止批量改写成“押注 xxx”“材料显示 xxx”“材料把 xxx 指向 xxx”。
+- 观点卡必须区分 `opinion_card` 与 `opinion_intake`：只有标题、翻译、来源、评级和前台位置都合格的观点才能保留为 `opinion_card`；归档、跑题、社交噪音、机器翻译截断项必须降为 `opinion_intake` 或 hidden。
+- 任何面向前台的字段不得出现 Raw、Pool、core_pool、入库、证据链、强证据、usable_for、pool_routes、gate 等内部生产词。
+- 生成站点数据前必须运行 `card-copy-style-gate`、Pool-to-Card 去重检查和 public copy gate；发现问题先修资产，不在页面层硬遮丑。
+- Public copy gate 命令：`node agent-workflow/tools/assert-public-copy-gate.mjs --date=<YYYY-MM-DD> --markdown=true`。历史清理或全量复盘时使用：`node agent-workflow/tools/assert-public-copy-gate.mjs --history=true`。
+
 ## 来源与页面规则
 
 | 类型 | 可用边界 |

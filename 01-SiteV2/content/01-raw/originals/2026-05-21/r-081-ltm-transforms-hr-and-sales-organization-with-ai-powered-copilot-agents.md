@@ -16,4 +16,3 @@ Key usable evidence:
 2. The AI role is Copilot agents.
 3. The affected workflows are HR and sales organization operations.
 4. The page is an original customer story suitable for Raw-to-Pool case evidence after QC.
-

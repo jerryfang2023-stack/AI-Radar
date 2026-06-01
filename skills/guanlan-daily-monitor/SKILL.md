@@ -208,6 +208,15 @@ agent-workflow/reports/
 
 `05-frontier-opinions/` is the front-stage opinion stream index. `knowledge/02-Opinion-Cards/` is the long-term opinion asset library. Daily monitoring may prepare opinion entries, but it must not convert opinion claims into company facts.
 
+## Downstream Boundary
+
+Daily monitoring does not publish cards or decide frontstage display. After Raw / Pool QC is allowed:
+
+- Pool-to-Card must run its own semantic gate, event-cluster dedupe and frontstage manifest generation.
+- Frontstage cards are selected by `agent-workflow/reports/<YYYY-MM-DD>-frontstage-manifest.json`, not by scanning every generated file.
+- Opinion entries with weak titles, social noise, broken translation or non-AI relevance remain `opinion_intake`; they must not be promoted to `opinion_card` only because a source was collected.
+- Public card copy must not contain Raw / Pool / core_pool,入库, 证据链, 强证据, usable_for, pool_routes, gate, “押注 xxx”, “材料显示它”, “材料把资金用途指向”, or similar internal / mechanical phrasing.
+
 ## Required Log Fields
 
 - `source_distribution`

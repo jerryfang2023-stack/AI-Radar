@@ -239,7 +239,7 @@ Results are based on a composite organization comprised of interviewees with exp
 - business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
 - affected_departments: IT / 安全, 采购, 销售 / 客服
 - numbers: 60%, 2, 89.333, 30%, 1, 3, 2025
-- quotes:  The Total Economic Impact of AWS Marketplace 
+- quotes:  The Total Economic Impact of AWS Marketplace
 
 ## evidence_seed
 

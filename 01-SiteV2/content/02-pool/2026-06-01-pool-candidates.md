@@ -1,0 +1,2177 @@
+---
+date: 2026-06-01
+stage: pool
+status: guanlan-daily-monitor-pool
+pool_count: 40
+aihot_daily_pool_count: 8
+historical_dedupe_enabled: true
+historical_raw_records_checked: 668
+historical_duplicates_removed_before_fetch: 10
+historical_duplicates_removed_after_fetch: 0
+generated_at: 2026-06-01T06:37:21.117Z
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
+---
+
+# 2026-06-01 Pool Candidates
+
+说明：本文件是 Raw 后的候选索引，供 guanlan-daily-assets-chain 与 writers 回看 Raw 全文后继续加工。Pool 不替代 Raw，也不直接等于商业信号、前沿观点、变化候选、趋势候选或今日观察结论。
+
+## P-001｜Cosmos 3 如何让物理AI在行动前先思考
+
+- raw_ref: R-001
+- raw_original_id: cmpuseadh00i3sl0z3x4n9ffe
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-001-cosmos-3-如何让物理ai在行动前先思考.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-001-cosmos-3-如何让物理ai在行动前先思考.json`
+- source: NVIDIA Blog：Generative AI（网页）｜https://blogs.nvidia.com/blog/category/robotics
+- source_url: https://blogs.nvidia.com/blog/category/robotics
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 01622ef50f023110
+- raw_full_text_hash: 01622ef50f023110
+- raw_semantic_hash: 7c1bf4fd857e9935
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"01622ef50f023110","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"NVIDIA发布了Cosmos 3，这是一款用于物理AI的世界基础模型，旨在帮助AI在现实世界中行动前先进行\"思考\"与模拟。该模型是视觉语言模型，支持基于物理的推理，能生成高质量合成数据，用于训练机器人和自主系统。Cosmos 3通过API提供，上下文长度为200k tokens，将加速物理AI从仿真到真实世界的开发流程。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Robotics NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain As factories move from isolated automation to plant-wide intelligence, manufacturers need AI systems that can connect live machine signals, quality systems, work instructions and operational.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"May 31, 2026 How Cosmos 3 Helps Physical AI Think Before It Acts May 31, 2026 Into the Omniverse: Manufacturing’s Simulation-First Era Has Arrived Apr 28, 2026 NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026 Apr 20, 2026 Most Popular Cloud NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand AI Infrastructure Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA Research NVIDIA Research Advances Robotics From Simulation ","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"At the International Conference on Robotics and Automation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"May 28, 2026 National Robotics Week — Latest Physical AI Research, Breakthroughs and Resources This National Robotics Week, NVIDIA is highlighting the breakthroughs that are bringing AI into the physical world — as well as the growing wave of robots transforming industries, from agricultural.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"April 10, 2026 Into the Omniverse: NVIDIA GTC Showcases Virtual Worlds Powering the Physical AI Era Editor’s note: This post is part of Into the Omniverse, a series focused on how developers, 3D practitioners, and enterprises can transform their workflows using the latest advances in OpenUSD.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Skip to content Robotics NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain As factories move from isolated automation to plant-wide intelligence, manufacturers need AI systems that can connect live machine signals, quality systems, work instructions and operational.","May 31, 2026 How Cosmos 3 Helps Physical AI Think Before It Acts May 31, 2026 Into the Omniverse: Manufacturing’s Simulation-First Era Has Arrived Apr 28, 2026 NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026 Apr 20, 2026 Most Popular Cloud NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand AI Infrastructure Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA Research NVIDIA Research Advances Robotics From Simulation ","At the International Conference on Robotics and Automation."],"case_details":[],"workflow_changes":["NVIDIA发布了Cosmos 3，这是一款用于物理AI的世界基础模型，旨在帮助AI在现实世界中行动前先进行\"思考\"与模拟。该模型是视觉语言模型，支持基于物理的推理，能生成高质量合成数据，用于训练机器人和自主系统。Cosmos 3通过API提供，上下文长度为200k tokens，将加速物理AI从仿真到真实世界的开发流程。"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-002｜NVIDIA AI云生态系统全球扩张以满足全球AI算力需求
+
+- raw_ref: R-002
+- raw_original_id: cmpuse81w00hvsl0z3pizusia
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-002-nvidia-ai云生态系统全球扩张以满足全球ai算力需求.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-002-nvidia-ai云生态系统全球扩张以满足全球ai算力需求.json`
+- source: NVIDIA Blog：Agentic AI（网页）｜https://blogs.nvidia.com/blog/category/enterprise/cloud-2
+- source_url: https://blogs.nvidia.com/blog/category/enterprise/cloud-2
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 99352bf4f157cd94
+- raw_full_text_hash: 99352bf4f157cd94
+- raw_semantic_hash: 5f189ca026cf06c8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"99352bf4f157cd94","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"NVIDIA正在全球范围内加速AI工厂基础设施建设，其AI云生态系统持续扩张。合作伙伴正积极扩充产能，以满足来自企业、初创公司及各类组织日益增长的需求。近期合作包括与Deutsche Telekom在德国推出工业AI云，以及深化与Google Cloud、AWS、Microsoft、Oracle等全球主要云服务商的战略协作，共同推进智能体AI与物理AI的发展。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Cloud NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Partners are expanding capacity to meet growing demand from enterprises, startups,.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"May 31, 2026 NVIDIA and Google Cloud Empower the Next Wave of AI Builders May 19, 2026 NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI Apr 22, 2026 Advancing Open Source AI, NVIDIA Donates Dynamic Resource Allocation Driver for GPUs to Kubernetes Community Mar 24, 2026 Most Popular AI Infrastructure NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain AI Infrastructure Taiwan’s Industry Titans Turbocharge World’s AI Infrastructure Buildout With NVIDIA Robotics How Cosmos 3 Helps","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"February 16, 2026 As AI Grows More Complex, Model Builders Rely on NVIDIA Unveiling what it describes as the most capable model series yet for professional knowledge work, OpenAI launched GPT-5.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The model was trained and deployed on NVIDIA infrastructure, including.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["NVIDIA正在全球范围内加速AI工厂基础设施建设，其AI云生态系统持续扩张。合作伙伴正积极扩充产能，以满足来自企业、初创公司及各类组织日益增长的需求。近期合作包括与Deutsche Telekom在德国推出工业AI云，以及深化与Google Cloud、AWS、Microsoft、Oracle等全球主要云服务商的战略协作，共同推进智能体AI与物理AI的发展。","Skip to content Cloud NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand The NVIDIA AI Cloud ecosystem is accelerating the global buildout of AI factory infrastructure.","Partners are expanding capacity to meet growing demand from enterprises, startups,."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-003｜台湾产业巨头借助NVIDIA加速世界AI基础设施建设
+
+- raw_ref: R-003
+- raw_original_id: cmpuse81w00hssl0zjl8nx2ac
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-003-台湾产业巨头借助nvidia加速世界ai基础设施建设.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-003-台湾产业巨头借助nvidia加速世界ai基础设施建设.json`
+- source: NVIDIA Blog：Agentic AI（网页）｜https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure
+- source_url: https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: d9c1e962fbd7f8ef
+- raw_full_text_hash: d9c1e962fbd7f8ef
+- raw_semantic_hash: e3f52cb064e5da83
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d9c1e962fbd7f8ef","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"台湾超过500家NVIDIA生态合作伙伴正加速生产Vera Rubin NVL72基础设施，以支持全球智能体AI工厂。产业链涵盖TSMC、Foxconn、QCT、Wistron及Pegatron等厂商。TSMC采用NVIDIA cuLitho库，将计算光刻成本效益或周期时间提升20-50%。Foxconn构建了制造运营管理智能体MoMClaw，预估实现80%的根因分析加速、15%的劳动生产率提升及10%的机器故障率下降。QCT利用基于Omniverse的数字孪生加速工厂规划，Pegatron则采用NVIDIA缺陷图像生成物理AI智能体技能，将AI视觉检测部署时间缩短67%。这些厂商展示了如何将加速计算、模拟、智能体和物理AI融入自身制造运营。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Taiwan is home to more than 500 NVIDIA ecosystem partners.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"More than 1 million NVIDIA MGX rack components for NVIDIA Vera Rubin infrastructure come together in Taiwan, from across 25 factory sites.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As Vera Rubin ramps into full production to power agentic AI factories worldwide, that ecosystem spans the full supply chain — from key wafer and chip partners such as TSMC , SPIL , Kinsus , KYEC and UMTC , to manufacturing and systems leaders including Foxconn , Pegatron , Quanta Cloud Technology (QCT) , Wistron and Inventec .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But these partners are doing more than building AI factories.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"They’re applying accelerated computing, simulation, AI agents and physical AI to their own operations, creating a model for how AI can make advanced manufacturing faster, more efficient and adaptive.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Skip to content Taiwan is home to more than 500 NVIDIA ecosystem partners.","As Vera Rubin ramps into full production to power agentic AI factories worldwide, that ecosystem spans the full supply chain — from key wafer and chip partners such as TSMC , SPIL , Kinsus , KYEC and UMTC , to manufacturing and systems leaders including Foxconn , Pegatron , Quanta Cloud Technology (QCT) , Wistron and Inventec .","But these partners are doing more than building AI factories."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 缺少独立第三方验证的长期运行结果
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-004｜NVIDIA 发布工厂运营蓝图，为工厂提供自主智能管理智能体
+
+- raw_ref: R-004
+- raw_original_id: cmpuse81v00hrsl0zr2uqw9km
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-004-nvidia-发布工厂运营蓝图-为工厂提供自主智能管理智能体.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-004-nvidia-发布工厂运营蓝图-为工厂提供自主智能管理智能体.json`
+- source: NVIDIA Blog：Agentic AI（网页）｜https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain
+- source_url: https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 23e006978c41f9fd
+- raw_full_text_hash: 23e006978c41f9fd
+- raw_semantic_hash: d1f6c5eb9e4708a4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"23e006978c41f9fd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"NVIDIA 在 GTC Taipei 发布了 NVIDIA 工厂运营蓝图（FOX），这是一个用于构建自主工厂管理智能体的参考设计。该蓝图基于 NVIDIA NemoClaw、AI-Q Blueprint 和 NVIDIA Nemotron 开源模型构建，旨在为工厂提供一个统一的决策层，以连接实时机器信号、质量数据和操作警报，实现快速问题解决。蓝图针对 NVIDIA DGX Station 桌面 AI 超级计算机进行了优化。首批采用者包括富士康、和硕、研华和纬创。富士康利用 FOX 和 NemoClaw 构建了 MoMClaw 多智能体系统，预计将根源分析时间缩短 80%，劳动生产率提高 15%，机器故障率降低 10%。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content As factories move from isolated automation to plant-wide intelligence, manufacturers need AI systems that can connect live machine signals, quality systems, work instructions and operational alerts into a unified decision layer.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Today at GTC Taipei at COMPUTEX, NVIDIA announced the NVIDIA Factory Operations Blueprint (FOX) — a reference design for building an autonomous factory manager agent that continuously monitors and reasons across the real-time data and orchestrates a fleet of speciality agents and machines to quickly resolve issues at scale.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"FOX helps developers build secure, centralized factory manager agents for orchestrating and optimizing specialized industrial AI agents for quality control, material transport and worker safety.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Built with NVIDIA NemoClaw , AI-Q Blueprint and NVIDIA Nemotron open models , the blueprint provides a customizable foundation for connecting factory systems, automating model development and running intelligent operations at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The blueprint is optimized to run on NVIDIA DGX Station , the ultimate deskside AI supercomputer companion for factory managers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Skip to content As factories move from isolated automation to plant-wide intelligence, manufacturers need AI systems that can connect live machine signals, quality systems, work instructions and operational alerts into a unified decision layer.","Today at GTC Taipei at COMPUTEX, NVIDIA announced the NVIDIA Factory Operations Blueprint (FOX) — a reference design for building an autonomous factory manager agent that continuously monitors and reasons across the real-time data and orchestrates a fleet of speciality agents and machines to quickly resolve issues at scale.","FOX helps developers build secure, centralized factory manager agents for orchestrating and optimizing specialized industrial AI agents for quality control, material transport and worker safety."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 首批采用者已披露，仍缺少独立审计后的长期运行结果
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-005｜如何使用 NVIDIA Alpamayo 在闭环中后训练自动驾驶模型
+
+- raw_ref: R-005
+- raw_original_id: cmpuqq2mt0024sl0zyjxv22lw
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-005-如何使用-nvidia-alpamayo-在闭环中后训练自动驾驶模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-005-如何使用-nvidia-alpamayo-在闭环中后训练自动驾驶模型.json`
+- source: NVIDIA Technical Blog（开发者技术博客 · RSS）｜https://developer.nvidia.com/blog/how-to-post-train-autonomous-vehicle-models-in-closed-loop-with-nvidia-alpamayo
+- source_url: https://developer.nvidia.com/blog/how-to-post-train-autonomous-vehicle-models-in-closed-loop-with-nvidia-alpamayo
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 84b48b7f99275213
+- raw_full_text_hash: 84b48b7f99275213
+- raw_semantic_hash: f509ae2ff417cb14
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"84b48b7f99275213","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"开发自动驾驶策略需要弥合训练与部署之间的鸿沟。现有的视觉-语言-动作模型虽然能推理更复杂的驾驶场景并产生更丰富的中间推理，但主要在开放循环中训练，即模型输出与真实行为直接比较，而不考虑其对环境产生的实际影响。NVIDIA Alpamayo 提供了一种在闭环环境中进行后训练的方法。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Robotics How to Post-Train Autonomous Vehicle Models in Closed-Loop with NVIDIA Alpamayo May 31, 2026 By Boris Ivanovic and Marco Pavone Like Discuss (0) Developing autonomous vehicle (AV) policies requires bridging an important gap between training and deployment.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Vision-language-action (VLA) models that can reason over more complex driving scenes and produce richer intermediate reasoning are predominantly trained in open-loop, where model outputs are directly compared to ground-truth behaviors without considering their effect on the environment.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"In deployment, however, a driving policy runs in closed-loop, where every braking, steering, and navigation decision affects the environment, and small errors can compound over time.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A systematic means to address this challenge is provided by NVIDIA Alpamayo , an open portfolio of AI models, simulation frameworks, and physical AI datasets for AV development.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Alpamayo includes the AlpaSim AV simulation platform and the AlpaGym closed-loop training framework (coming soon).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Vision-language-action (VLA) models that can reason over more complex driving scenes and produce richer intermediate reasoning are predominantly trained in open-loop, where model outputs are directly compared to ground-truth behaviors without considering their effect on the environment.","A systematic means to address this challenge is provided by NVIDIA Alpamayo , an open portfolio of AI models, simulation frameworks, and physical AI datasets for AV development.","Alpamayo includes the AlpaSim AV simulation platform and the AlpaGym closed-loop training framework (coming soon)."],"case_details":["开发自动驾驶策略需要弥合训练与部署之间的鸿沟。现有的视觉-语言-动作模型虽然能推理更复杂的驾驶场景并产生更丰富的中间推理，但主要在开放循环中训练，即模型输出与真实行为直接比较，而不考虑其对环境产生的实际影响。NVIDIA Alpamayo 提供了一种在闭环环境中进行后训练的方法。","Robotics How to Post-Train Autonomous Vehicle Models in Closed-Loop with NVIDIA Alpamayo May 31, 2026 By Boris Ivanovic and Marco Pavone Like Discuss (0) Developing autonomous vehicle (AV) policies requires bridging an important gap between training and deployment.","In deployment, however, a driving policy runs in closed-loop, where every braking, steering, and navigation decision affects the environment, and small errors can compound over time."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-006｜NVIDIA 发布 RTX Spark 与 OpenShell，强化本地 AI 智能体
+
+- raw_ref: R-006
+- raw_original_id: cmpuseadh00i4sl0ztdb0j1ao
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-006-nvidia-发布-rtx-spark-与-openshell-强化本地-ai-智能体.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-006-nvidia-发布-rtx-spark-与-openshell-强化本地-ai-智能体.json`
+- source: NVIDIA Blog：Generative AI（网页）｜https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents
+- source_url: https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 27db2ba64172b4b6
+- raw_full_text_hash: 27db2ba64172b4b6
+- raw_semantic_hash: 4afbd24ba2e9261a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"27db2ba64172b4b6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"在 COMPUTEX 的 GTC Taipei 上，NVIDIA 发布了专为本地 AI 智能体设计的 Windows PC--RTX Spark，配备 1 petaflop AI 算力和 128GB 统一内存。同步推出的 NVIDIA OpenShell 安全运行时为 Windows 上的智能体提供安全环境，并将 llama.cpp 推理性能提升 2 倍。NVIDIA 与 llama.cpp 和 vLLM 社区合作，通过多 token 预测等优化，提升了 Qwen 模型的性能。此外，H Company、Adobe 和 Blender 等合作伙伴也发布了针对 RTX 与 DGX 平台的工具优化。所有更新将于今年秋季随 RTX Spark 一同推出。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Personal agents are exploding in popularity, with open source projects like OpenClaw and Hermes seeing rapid adoption by AI developer communities on GitHub.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Built to adapt to individual preferences and workflows, these agents can interact with applications, generate content, automate repetitive processes and manage multi-step tasks — all while running locally on device.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Today at NVIDIA GTC Taipei at COMPUTEX , NVIDIA unveiled NVIDIA RTX Spark — a new class of Windows PCs purpose-built for personal agents — alongside a wave of updates that expand local agents across the broader NVIDIA RTX and DGX ecosystems.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Running agents securely and privately requires hardware that’s up to the task.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"RTX Spark’s 1 petaflop of AI compute and 128GB of unified memory can meet the computing demand of on-device agents, offering a new class of computer that goes from tool to teammate.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Skip to content Personal agents are exploding in popularity, with open source projects like OpenClaw and Hermes seeing rapid adoption by AI developer communities on GitHub.","Today at NVIDIA GTC Taipei at COMPUTEX , NVIDIA unveiled NVIDIA RTX Spark — a new class of Windows PCs purpose-built for personal agents — alongside a wave of updates that expand local agents across the broader NVIDIA RTX and DGX ecosystems.","Running agents securely and privately requires hardware that’s up to the task."],"case_details":[],"workflow_changes":["Built to adapt to individual preferences and workflows, these agents can interact with applications, generate content, automate repetitive processes and manage multi-step tasks — all while running locally on device."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-007｜Cosmos 3：助力具身AI"先思考，后行动"的开源世界基础模型
+
+- raw_ref: R-007
+- raw_original_id: cmpuse81w00htsl0z7svy4h5z
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-007-cosmos-3-助力具身ai-先思考-后行动-的开源世界基础模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-007-cosmos-3-助力具身ai-先思考-后行动-的开源世界基础模型.json`
+- source: NVIDIA Blog：Agentic AI（网页）｜https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model
+- source_url: https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 6d06bdb831d2361b
+- raw_full_text_hash: 6d06bdb831d2361b
+- raw_semantic_hash: d370f0af27a43b32
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6d06bdb831d2361b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"NVIDIA推出开源世界基础模型Cosmos 3，旨在帮助机器人、自动驾驶等具身AI在真实世界中先理解、预测再行动。该模型结合了视觉推理与多模态生成能力，可处理文本、视频、图像和动作。它采用混合Transformer架构，通过推理模块解释场景，并利用生成模块创建具有物理依据的输出，包括直接生成关节角度等机器人动作数据。Cosmos 3是一个具备原生动作生成能力的全才模型，已发布OpenMDW 1.1许可证版本。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content How Cosmos 3 Helps Physical AI Think Before It Acts The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help robots, autonomous vehicles and vision AI agents think before acting in the real world.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"May 31, 2026 by Ming-Yu Liu Share Facebook LinkedIn Email 0 The real world is always in motion.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"To operate autonomously, physical AI systems — including robots, autonomous vehicles (AVs) and smart spaces — need to understand not just what they see and what caused that to happen, but what’s likely to happen next.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In a warehouse, a robot may encounter object configurations it’s never seen before.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"On the road, an AV may need to respond when a pedestrian steps out from between parked cars.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Skip to content How Cosmos 3 Helps Physical AI Think Before It Acts The new, open NVIDIA world foundation model brings vision reasoning, multimodal generation and action prediction together to help robots, autonomous vehicles and vision AI agents think before acting in the real world.","May 31, 2026 by Ming-Yu Liu Share Facebook LinkedIn Email 0 The real world is always in motion.","To operate autonomously, physical AI systems — including robots, autonomous vehicles (AVs) and smart spaces — need to understand not just what they see and what caused that to happen, but what’s likely to happen next."],"case_details":["NVIDIA推出开源世界基础模型Cosmos 3，旨在帮助机器人、自动驾驶等具身AI在真实世界中先理解、预测再行动。该模型结合了视觉推理与多模态生成能力，可处理文本、视频、图像和动作。它采用混合Transformer架构，通过推理模块解释场景，并利用生成模块创建具有物理依据的输出，包括直接生成关节角度等机器人动作数据。Cosmos 3是一个具备原生动作生成能力的全才模型，已发布OpenMDW 1.1许可证版本。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-008｜微软 Surface Laptop Ultra 搭载 Nvidia RTX Spark
+
+- raw_ref: R-008
+- raw_original_id: cmpuqoxb30004sl0z2qz7c9xl
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-008-微软-surface-laptop-ultra-搭载-nvidia-rtx-spark.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-008-微软-surface-laptop-ultra-搭载-nvidia-rtx-spark.json`
+- source: The Verge：订阅版科技（RSS）｜https://www.theverge.com/tech/940584/microsoft-surface-laptop-ultra-nvidia-rtx-spark-pictures
+- source_url: https://www.theverge.com/tech/940584/microsoft-surface-laptop-ultra-nvidia-rtx-spark-pictures
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 0094d3d5ab986365
+- raw_full_text_hash: 0094d3d5ab986365
+- raw_semantic_hash: f7a45986458453e3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0094d3d5ab986365","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"微软推出新款旗舰级 Surface Laptop Ultra 笔记本电脑，搭载了 Nvidia 的显卡。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This is the Microsoft Surface Laptop Ultra with Nvidia RTX Spark Microsoft is announcing the Surface Laptop Ultra, a new 15-inch flagship laptop that will feature Nvidia’s Arm-based RTX Spark “superchip.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"” Once upon a time, Microsoft had to write off $900 million betting an Arm-based Nvidia chip could power its first flagship Windows portable, the original Microsoft Surface.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But today, it’s trying again.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Microsoft and Nvidia have just announced the Surface Laptop Ultra, a computer with a new Arm-based Nvidia chip at its core.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There’s a lot we don’t know about the 15-inch Surface Laptop Ultra, such as its final specs or the foggiest idea of what it might cost.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["微软推出新款旗舰级 Surface Laptop Ultra 笔记本电脑，搭载了 Nvidia 的显卡。","This is the Microsoft Surface Laptop Ultra with Nvidia RTX Spark Microsoft is announcing the Surface Laptop Ultra, a new 15-inch flagship laptop that will feature Nvidia’s Arm-based RTX Spark “superchip.","But today, it’s trying again."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-009｜MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型
+
+- raw_ref: R-009
+- raw_original_id: cmpunu0g50002slbrlfonpoc3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-009-minimax-m3-前沿编码-100万token上下文与原生多模态一体模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-009-minimax-m3-前沿编码-100万token上下文与原生多模态一体模型.json`
+- source: MiniMax：Blog（网页）｜https://www.minimax.io/blog/minimax-m3
+- source_url: https://www.minimax.io/blog/minimax-m3
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 1b45f8258b1fba79
+- raw_full_text_hash: ea4c0b0e98227f5a
+- raw_semantic_hash: acc43d28fa539ff8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ea4c0b0e98227f5a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"MiniMax M3 is officially released today.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"M3 reaches frontier-level performance on specialized tasks such as coding and agentic work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"It uses MSA (MiniMax Sparse Attention), a new attention architecture proposed by our team, and supports ultra-long context windows of up to 1M tokens.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"To much anticipation, it is also a natively multimodal model that supports image and video input and can operate a desktop computer.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"These three capabilities are now table stakes for closed-source frontier models.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["MiniMax M3 is officially released today.","M3 reaches frontier-level performance on specialized tasks such as coding and agentic work.","These three capabilities are now table stakes for closed-source frontier models."],"case_details":[],"workflow_changes":["It uses MSA (MiniMax Sparse Attention), a new attention architecture proposed by our team, and supports ultra-long context windows of up to 1M tokens.","To much anticipation, it is also a natively multimodal model that supports image and video input and can operate a desktop computer."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-010｜使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型
+
+- raw_ref: R-010
+- raw_original_id: cmpuqq2mt0025sl0z5qnshwpd
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-010-使用nvidia-cosmos-3开发物理ai推理-世界与行动模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-010-使用nvidia-cosmos-3开发物理ai推理-世界与行动模型.json`
+- source: NVIDIA Technical Blog（开发者技术博客 · RSS）｜https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3
+- source_url: https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: f048920816eaaeb6
+- raw_full_text_hash: f048920816eaaeb6
+- raw_semantic_hash: 2c88a8efcd5db196
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f048920816eaaeb6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"NVIDIA Cosmos 3是一款面向物理AI的前沿基础模型。它能够帮助机器人、自动驾驶车辆和智能空间理解真实世界、预测事件发展并生成适应特定环境与任务的行动。该模型融合了物理推理、世界理解与行动生成能力。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Simulation / Modeling / Design Develop Physical AI Reasoning, World, and Action Models with NVIDIA Cosmos 3 May 31, 2026 By Asawaree Bhide and Alexander Schwarz Like Discuss (0) Physical AI systems must understand the real world before they can act within it.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Robots, autonomous vehicles, and smart spaces need to understand what’s happening in their world, predict what’s likely to happen next, and generate actions for specific environments, embodiments, and tasks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"NVIDIA Cosmos 3 is a frontier foundation model for physical AI that combines physical reasoning, world generation, and action generation within a single open model.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"NVIDIA is open sourcing Cosmos 3 models, training scripts, deployment tools, and datasets to make physical AI development more open and reproducible.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"This blog post covers the fundamentals of Cosmos 3, highlights key concepts from the technical report , guides through technical workflows and shows how teamsrobotic manipulation systems, autonomous vehicles , and warehouse monitoring solutions can get started.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["NVIDIA Cosmos 3是一款面向物理AI的前沿基础模型。它能够帮助机器人、自动驾驶车辆和智能空间理解真实世界、预测事件发展并生成适应特定环境与任务的行动。该模型融合了物理推理、世界理解与行动生成能力。","Simulation / Modeling / Design Develop Physical AI Reasoning, World, and Action Models with NVIDIA Cosmos 3 May 31, 2026 By Asawaree Bhide and Alexander Schwarz Like Discuss (0) Physical AI systems must understand the real world before they can act within it.","Robots, autonomous vehicles, and smart spaces need to understand what’s happening in their world, predict what’s likely to happen next, and generate actions for specific environments, embodiments, and tasks."],"case_details":["NVIDIA is open sourcing Cosmos 3 models, training scripts, deployment tools, and datasets to make physical AI development more open and reproducible."],"workflow_changes":["This blog post covers the fundamentals of Cosmos 3, highlights key concepts from the technical report , guides through technical workflows and shows how teamsrobotic manipulation systems, autonomous vehicles , and warehouse monitoring solutions can get started."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-011｜英伟达发布 RTX Spark，称其为"史上最高效的 PC 芯片"
+
+- raw_ref: R-011
+- raw_original_id: cmpuqoxb30005sl0zd82khw0f
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-011-英伟达发布-rtx-spark-称其为-史上最高效的-pc-芯片.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-011-英伟达发布-rtx-spark-称其为-史上最高效的-pc-芯片.json`
+- source: The Verge：订阅版科技（RSS）｜https://www.theverge.com/tech/940589/nvidia-rtx-spark-n1-n1x-laptop-desktop-pc-cpu-gpu-ai-release-date
+- source_url: https://www.theverge.com/tech/940589/nvidia-rtx-spark-n1-n1x-laptop-desktop-pc-cpu-gpu-ai-release-date
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: ff34b7ff669982d0
+- raw_full_text_hash: ff34b7ff669982d0
+- raw_semantic_hash: ff29ded1496b57c1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ff34b7ff669982d0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"英伟达正式进军消费级笔记本电脑市场，推出了 RTX Spark 芯片。该公司将其称为\"有史以来最高效的 PC 芯片\"。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Nvidia announces RTX Spark as ‘the most efficient PC chip ever built’ Nvidia is announcing the RTX Spark, the first in a family of chips that will meet or beat the most powerful thin-and-light Windows machines ever, it claims.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This fall, Nvidia will officially become a consumer PC chipmaker like Intel, AMD, Apple, and Qualcomm, putting a complete computing chip — not just graphics — into the very heart of laptops and mini-PCs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"After many months of leaks, it’s finally announcing the RTX Spark, the first in a family of chips that will meet or beat the most powerful thin-and-light Windows machines ever, it claims.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"[Image: Nvidia’s CEO holds up two RTX Spark laptops at Computex.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/wp-content/uploads/sites/2/2026/05/Screenshot_20260531_212701.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Nvidia announces RTX Spark as ‘the most efficient PC chip ever built’ Nvidia is announcing the RTX Spark, the first in a family of chips that will meet or beat the most powerful thin-and-light Windows machines ever, it claims.","This fall, Nvidia will officially become a consumer PC chipmaker like Intel, AMD, Apple, and Qualcomm, putting a complete computing chip — not just graphics — into the very heart of laptops and mini-PCs.","After many months of leaks, it’s finally announcing the RTX Spark, the first in a family of chips that will meet or beat the most powerful thin-and-light Windows machines ever, it claims."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-012｜NVIDIA Vera CPU 为AI工厂的智能体工作负载设立新标准
+
+- raw_ref: R-012
+- raw_original_id: cmpuqq2mt0027sl0zrbpifgdh
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-012-nvidia-vera-cpu-为ai工厂的智能体工作负载设立新标准.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-012-nvidia-vera-cpu-为ai工厂的智能体工作负载设立新标准.json`
+- source: NVIDIA Technical Blog（开发者技术博客 · RSS）｜https://developer.nvidia.com/blog/nvidia-vera-cpu-sets-a-new-standard-for-agentic-workloads-in-ai-factories
+- source_url: https://developer.nvidia.com/blog/nvidia-vera-cpu-sets-a-new-standard-for-agentic-workloads-in-ai-factories
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 2d1bfca70f7d9246
+- raw_full_text_hash: 2d1bfca70f7d9246
+- raw_semantic_hash: 598284534c71522e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2d1bfca70f7d9246","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"NVIDIA Vera CPU 旨在为AI工厂中智能体工作负载树立新性能标杆。文章阐述了AI领域扩展规律的演变：预训练通过更大数据集、更多参数和大规模并行GPU系统扩展智能；后训练通过指令微调扩展实用性，并重新调整GPU用于生成式推理；测试时缩放则通过给模型更多生成token来提升推理能力。当前，智能体AI与强化学习正推动下一阶段的扩展。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Agentic AI / Generative AI NVIDIA Vera CPU Sets a New Standard for Agentic Workloads in AI Factories May 31, 2026 By Praveen Menon , Ivan Goldwasser , Ian Finder and Diana Aung Like Discuss (0) Each wave of AI has created a new scaling law.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Pretraining scaled intelligence through larger datasets, more parameters, and massively parallel GPU systems.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post-training scaled usefulness through instruction tuning, and re-balancing GPUs for generative inference.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Test-time scaling improved reasoning by giving models more generated tokens for thinking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Now, agentic AI and reinforcement learning scale actions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["NVIDIA Vera CPU 旨在为AI工厂中智能体工作负载树立新性能标杆。文章阐述了AI领域扩展规律的演变：预训练通过更大数据集、更多参数和大规模并行GPU系统扩展智能；后训练通过指令微调扩展实用性，并重新调整GPU用于生成式推理；测试时缩放则通过给模型更多生成token来提升推理能力。当前，智能体AI与强化学习正推动下一阶段的扩展。","Agentic AI / Generative AI NVIDIA Vera CPU Sets a New Standard for Agentic Workloads in AI Factories May 31, 2026 By Praveen Menon , Ivan Goldwasser , Ian Finder and Diana Aung Like Discuss (0) Each wave of AI has created a new scaling law.","Pretraining scaled intelligence through larger datasets, more parameters, and massively parallel GPU systems."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-013｜NVIDIA DSX OS 提供开放、模块化软件用于规模化运营AI工厂
+
+- raw_ref: R-013
+- raw_original_id: cmpuokbhx006jslbr3qxktcmy
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-013-nvidia-dsx-os-提供开放-模块化软件用于规模化运营ai工厂.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-013-nvidia-dsx-os-提供开放-模块化软件用于规模化运营ai工厂.json`
+- source: NVIDIA Technical Blog（开发者技术博客 · RSS）｜https://developer.nvidia.com/blog/nvidia-dsx-os-delivers-open-modular-software-for-operating-ai-factories-at-scale
+- source_url: https://developer.nvidia.com/blog/nvidia-dsx-os-delivers-open-modular-software-for-operating-ai-factories-at-scale
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 66f43d568c7662c8
+- raw_full_text_hash: 66f43d568c7662c8
+- raw_semantic_hash: c148f06226409de9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"66f43d568c7662c8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"NVIDIA DSX 平台为设计、模拟和构建 AI 工厂提供完整解决方案，旨在应对不断增长的智能需求。该平台通过开放、模块化的软件栈，帮助运营方更快地扩展规模、提高效率，并降低从能源、芯片、基础设施、模型到应用这五层架构的整体智能成本。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Data Center / Cloud NVIDIA DSX OS Delivers Open, Modular Software for Operating AI Factories at Scale May 31, 2026 By Warren Barkley Like Discuss (0) AI is now essential infrastructure, powered by AI factories that generate intelligence in the form of tokens.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As demand grows, these factories must scale faster, operate more efficiently, and lower the cost of intelligence across the five-layer stack : energy, chips, infrastructure, models, and applications.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"NVIDIA DSX platform provides the complete playbook for designing, simulating, building, and operating AI factories, aligning every layer of the stack across compute, software, facilities, and partner technologies through a common co-designed architecture.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The DSX platform now includes DSX OS software to accelerate AI factory deployments and improve operational efficiency.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"DSX OS includes open source, modular software components and related NVIDIA technologies purpose-built for operating and scaling multi-tenant AI factories.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["NVIDIA DSX 平台为设计、模拟和构建 AI 工厂提供完整解决方案，旨在应对不断增长的智能需求。该平台通过开放、模块化的软件栈，帮助运营方更快地扩展规模、提高效率，并降低从能源、芯片、基础设施、模型到应用这五层架构的整体智能成本。","Data Center / Cloud NVIDIA DSX OS Delivers Open, Modular Software for Operating AI Factories at Scale May 31, 2026 By Warren Barkley Like Discuss (0) AI is now essential infrastructure, powered by AI factories that generate intelligence in the form of tokens.","As demand grows, these factories must scale faster, operate more efficiently, and lower the cost of intelligence across the five-layer stack : energy, chips, infrastructure, models, and applications."],"case_details":["The DSX platform now includes DSX OS software to accelerate AI factory deployments and improve operational efficiency."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-014｜Top AI Agent Startups 2026 (Funding & Valuation)
+
+- raw_ref: R-014
+- raw_original_id: https://aifundingtracker.com/top-ai-agent-startups
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-014-top-ai-agent-startups-2026-funding-valuation.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-014-top-ai-agent-startups-2026-funding-valuation.json`
+- source: keyword search / Tavily｜https://aifundingtracker.com/top-ai-agent-startups
+- source_url: https://aifundingtracker.com/top-ai-agent-startups
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: ffcc891136474a1d
+- raw_full_text_hash: ffcc891136474a1d
+- raw_semantic_hash: 07904184c2db075c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ffcc891136474a1d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"# AI Agent Startups 2026: Top 25 Companies Raising Billions. AI agents are the fastest-growing software category in 2026. The market has exploded from $5.25 billion in 2024 to $7.84 billion in 2025, with projections reaching $52.62 billion by 2030. This article breaks down the top 25 AI agent startups by valuation, funding, and revenue, showing exactly which companies are winning the race to build autonomous AI systems that execute real work. ## What Are AI Agents? The shift from “AI assistants” to “AI agents” repr","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content AI agents are the fastest-growing software category in 2026.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The market has exploded from $5.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"25 billion in 2024 to $7.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"84 billion in 2025, with projections reaching $52.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"62 billion by 2030.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["# AI Agent Startups 2026: Top 25 Companies Raising Billions. AI agents are the fastest-growing software category in 2026. The market has exploded from $5.25 billion in 2024 to $7.84 billion in 2025, with projections reaching $52.62 billion by 2030. This article breaks down the top 25 AI agent startups by valuation, funding, and revenue, showing exactly which companies are winning the race to build autonomous AI systems that execute real work. ## What Are AI Agents? The shift from “AI assistants” to “AI agents” repr","Skip to content AI agents are the fastest-growing software category in 2026."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-015｜44 Rounds, $2.66B: The Q1 2026 Agentic AI Funding Map | AgentMarketCap
+
+- raw_ref: R-015
+- raw_original_id: https://agentmarketcap.ai/blog/2026/04/07/q1-2026-agentic-ai-funding-map-44-rounds-verticals
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-015-44-rounds-2-66b-the-q1-2026-agentic-ai-funding-map-agentmarketcap.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-015-44-rounds-2-66b-the-q1-2026-agentic-ai-funding-map-agentmarketcap.json`
+- source: keyword search / Anysearch｜https://agentmarketcap.ai/blog/2026/04/07/q1-2026-agentic-ai-funding-map-44-rounds-verticals
+- source_url: https://agentmarketcap.ai/blog/2026/04/07/q1-2026-agentic-ai-funding-map-44-rounds-verticals
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: ae4fbbe599a44ccd
+- raw_full_text_hash: ae4fbbe599a44ccd
+- raw_semantic_hash: 68fca6e5e7e282e7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ae4fbbe599a44ccd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"On the second track: a maturing application layer where agentic AI companies are rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain. Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding. Sierra's trajec","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"xAI opened the year with a $20 billion Series E.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But if you're trying to understand where the agentic AI economy is actually forming, those mega-rounds are the wrong place to look.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Strip out the foundational model giants, and a different picture emerges.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Across 44 discrete funding rounds, agentic AI application companies raised $2.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["On the second track: a maturing application layer where agentic AI companies are rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain. Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding. Sierra's trajec","The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.","xAI opened the year with a $20 billion Series E."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: 缺少单家公司融资条款明细，适合作融资趋势线索而非单一融资案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-016｜Replit Expands Enterprise Leadership with Visa Investment and Partnership, Payments Expansion, and Solution Partner Program
+
+- raw_ref: R-016
+- raw_original_id: https://www.prnewswire.com/news-releases/replit-expands-enterprise-leadership-with-visa-investment-and-partnership-payments-expansion-and-solution-partner-program-302784366.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-016-replit-expands-enterprise-leadership-with-visa-investment-and-partners.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-016-replit-expands-enterprise-leadership-with-visa-investment-and-partners.json`
+- source: keyword search / Anysearch｜https://www.prnewswire.com/news-releases/replit-expands-enterprise-leadership-with-visa-investment-and-partnership-payments-expansion-and-solution-partner-program-302784366.html
+- source_url: https://www.prnewswire.com/news-releases/replit-expands-enterprise-leadership-with-visa-investment-and-partnership-payments-expansion-and-solution-partner-program-302784366.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 27819f3e4f679cdb
+- raw_full_text_hash: 27819f3e4f679cdb
+- raw_semantic_hash: d41d302a430b2cec
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"27819f3e4f679cdb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"product_update","text":"Visa invests in and partners with Replit; more than 1,000 employees already using the platform SAN FRANCISCO, May 28, 2026 /PRNewswire/ -- Replit, the agentic software creation platform, today announced a partnership with Visa, a world leader in digital payments, underscoring the growing demand for AI-powered software creation at the world's largest companies. As part of the collaboration, Visa has made an investment in Replit, and the companies are working together to integrate Visa Intelligent Commerce into Repli","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Visa invests in and partners with Replit; more than 1,000 employees already using the platform SAN FRANCISCO , May 28, 2026 /PRNewswire/ -- Replit, the agentic software creation platform, today announced a partnership with Visa, a world leader in digital payments, underscoring the growing demand for AI-powered software creation at the world's largest companies.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"As part of the collaboration, Visa has made an investment in Replit, and the companies are working together to integrate Visa Intelligent Commerce into Replit's platform, helping developers build applications and agents that can initiate secure transactions and accept payments using Visa's global network directly within their workflows.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Earlier this month, Replit launched self-serve enterprise access, offering enterprise-grade compliance and controls without the need for sales engagement.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"number","text":"The announcements mark a significant step in Replit's further push into the enterprise, building on an existing community of more than 50 million users and a customer base that has users in 85% of the Fortune 500.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"These announcements come alongside recent Replit security and governance updates, including Replit Security Agent, Auto-Protect, and Global App Hosting.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Visa invests in and partners with Replit; more than 1,000 employees already using the platform SAN FRANCISCO, May 28, 2026 /PRNewswire/ -- Replit, the agentic software creation platform, today announced a partnership with Visa, a world leader in digital payments, underscoring the growing demand for AI-powered software creation at the world's largest companies. As part of the collaboration, Visa has made an investment in Replit, and the companies are working together to integrate Visa Intelligent Commerce into Repli","Visa invests in and partners with Replit; more than 1,000 employees already using the platform SAN FRANCISCO , May 28, 2026 /PRNewswire/ -- Replit, the agentic software creation platform, today announced a partnership with Visa, a world leader in digital payments, underscoring the growing demand for AI-powered software creation at the world's largest companies."],"case_details":[],"workflow_changes":["As part of the collaboration, Visa has made an investment in Replit, and the companies are working together to integrate Visa Intelligent Commerce into Replit's platform, helping developers build applications and agents that can initiate secure transactions and accept payments using Visa's global network directly within their workflows."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":["Earlier this month, Replit launched self-serve enterprise access, offering enterprise-grade compliance and controls without the need for sales engagement.","These announcements come alongside recent Replit security and governance updates, including Replit Security Agent, Auto-Protect, and Global App Hosting."]}
+- missing_information: Visa 投资金额、内部 ROI 与关键业务系统接入范围未披露
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-017｜North American Startup Funding Soared 46% In 2025, Driven By AI Boom
+
+- raw_ref: R-017
+- raw_original_id: https://news.crunchbase.com/venture/north-american-startup-funding-2025-data-ai-us-investment
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-017-north-american-startup-funding-soared-46-in-2025-driven-by-ai-boom.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-017-north-american-startup-funding-soared-46-in-2025-driven-by-ai-boom.json`
+- source: keyword search / Tavily｜https://news.crunchbase.com/venture/north-american-startup-funding-2025-data-ai-us-investment
+- source_url: https://news.crunchbase.com/venture/north-american-startup-funding-2025-data-ai-us-investment
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: industry
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 22aa208378735647
+- raw_full_text_hash: 22aa208378735647
+- raw_semantic_hash: 393e9b7d5aded957
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"22aa208378735647","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"January 12, 2026 - Seed and angel consists of seed, pre-seed and angel rounds . Crunchbase also includes venture rounds of unknown series, equity crowdfunding and convertible notes at $3 million (USD or as-converted USD equivalent) or less. / score=0.527 / query=AI Agent funding enterprise customers / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner 13 Shares Email Facebook Twitter LinkedIn A boom year for North American startup funding ended on an up note.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Investors poured $280 billion into seed through growth-stage rounds for U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"and Canadian companies in 2025, per Crunchbase data.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"It was the highest annual total in four years, with funding up a whopping 46% from 2024.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The fourth quarter also delivered a strong finish to 2025 with $67 billion in reported investment, the second-highest quarterly tally for the year.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["January 12, 2026 - Seed and angel consists of seed, pre-seed and angel rounds . Crunchbase also includes venture rounds of unknown series, equity crowdfunding and convertible notes at $3 million (USD or as-converted USD equivalent) or less. / score=0.527 / query=AI Agent funding enterprise customers / intent=find_startups / path=capital_startup","Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner 13 Shares Email Facebook Twitter LinkedIn A boom year for North American startup funding ended on an up note.","Investors poured $280 billion into seed through growth-stage rounds for U."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-018｜A Growing Share Of Seed And Series A Funding Is Going To Giant Rounds
+
+- raw_ref: R-018
+- raw_original_id: https://news.crunchbase.com/venture/seed-seriesa-startup-megadeals-ai-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-018-a-growing-share-of-seed-and-series-a-funding-is-going-to-giant-rounds.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-018-a-growing-share-of-seed-and-series-a-funding-is-going-to-giant-rounds.json`
+- source: keyword search / Tavily｜https://news.crunchbase.com/venture/seed-seriesa-startup-megadeals-ai-2026
+- source_url: https://news.crunchbase.com/venture/seed-seriesa-startup-megadeals-ai-2026
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: industry
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: e5a737989418e6fa
+- raw_full_text_hash: e5a737989418e6fa
+- raw_semantic_hash: 302b0f477b93bc7f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e5a737989418e6fa","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"February 13, 2026 - This year, these rounds are making a particularly pronounced comeback. Per Crunchbase data, over 40% of seed and Series A investment in 2026 has gone to rounds of $100 million or more . / score=0.460 / query=AI Agent funding enterprise customers / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Among startup investors, the prevailing mantra has long been that the greatest returns accrue to those who are earliest in finding and funding the most promising ","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Sounds simple enough.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But there’s a twist: What if a lot of well-capitalized investors identify those same founders around the same time?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In that case, being early can still have advantages.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"However, it can also be very expensive.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["February 13, 2026 - This year, these rounds are making a particularly pronounced comeback. Per Crunchbase data, over 40% of seed and Series A investment in 2026 has gone to rounds of $100 million or more . / score=0.460 / query=AI Agent funding enterprise customers / intent=find_startups / path=capital_startup","Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Among startup investors, the prevailing mantra has long been that the greatest returns accrue to those who are earliest in finding and funding the most promising ","Sounds simple enough."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 缺少单家公司融资条款明细，适合作融资结构变化线索而非单一融资案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-019｜Growth: AI Agent Framework Corporate Backing & Strategic Alliance Tracker — Track Official Support from Tech Giants (Microsoft, Google, AWS, etc.) to Help Founders Understand Ecosystem Power Dynamics and Predict Winners · Issue #3059 · pingcap/ossinsight · GitHub
+
+- raw_ref: R-020
+- raw_original_id: https://github.com/pingcap/ossinsight/issues/3059
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-020-growth-ai-agent-framework-corporate-backing-strategic-alliance-tracker.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-020-growth-ai-agent-framework-corporate-backing-strategic-alliance-tracker.json`
+- source: keyword search / Tavily｜https://github.com/pingcap/ossinsight/issues/3059
+- source_url: https://github.com/pingcap/ossinsight/issues/3059
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 631352c9723090ae
+- raw_full_text_hash: 631352c9723090ae
+- raw_semantic_hash: 288c5b1f31a2b3d3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"631352c9723090ae","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: developer-ecosystem-signal
+- score: 6.999999999999999
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"## Use saved searches to filter your results more quickly. # Growth: AI Agent Framework Corporate Backing & Strategic Alliance Tracker — Track Official Support from Tech Giants (Microsoft, Google, AWS, etc.) to Help Founders Understand Ecosystem Power Dynamics and Predict Winners #3059. AI builders and founders need to understand not just the technical merits of agent frameworks, but the **strategic backing** behind them. Currently, OSSInsight tracks funding signals (VC investments) and technical metrics, but there","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"pingcap ossinsight Public Notifications You must be signed in to change notification settings Fork 428 Star 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"4k Growth: AI Agent Framework Corporate Backing & Strategic Alliance Tracker — Track Official Support from Tech Giants (Microsoft, Google, AWS, etc.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":") to Help Founders Understand Ecosystem Power Dynamics and Predict Winners #3059 New issue Copy link New issue Copy link Open Open Growth: AI Agent Framework Corporate Backing & Strategic Alliance Tracker — Track Official Support from Tech Giants (Microsoft, Google, AWS, etc.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":") to Help Founders Understand Ecosystem Power Dynamics and Predict Winners #3059 Copy link Description sykp241095 opened on Apr 21, 2026 Issue body actions Problem/Opportunity AI builders and founders need to understand not just the technical merits of agent frameworks, but the strategic backing behind them.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"When Microsoft officially endorses a framework, when Google integrates with it, or when AWS features it in their partner network, these signals often predict long-term success more accurately than GitHub stars alone.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["## Use saved searches to filter your results more quickly. # Growth: AI Agent Framework Corporate Backing & Strategic Alliance Tracker — Track Official Support from Tech Giants (Microsoft, Google, AWS, etc.) to Help Founders Understand Ecosystem Power Dynamics and Predict Winners #3059. AI builders and founders need to understand not just the technical merits of agent frameworks, but the **strategic backing** behind them. Currently, OSSInsight tracks funding signals (VC investments) and technical metrics, but there","pingcap ossinsight Public Notifications You must be signed in to change notification settings Fork 428 Star 2.",") to Help Founders Understand Ecosystem Power Dynamics and Predict Winners #3059 Copy link Description sykp241095 opened on Apr 21, 2026 Issue body actions Problem/Opportunity AI builders and founders need to understand not just the technical merits of agent frameworks, but the strategic backing behind them."],"case_details":[],"workflow_changes":["4k Growth: AI Agent Framework Corporate Backing & Strategic Alliance Tracker — Track Official Support from Tech Giants (Microsoft, Google, AWS, etc.",") to Help Founders Understand Ecosystem Power Dynamics and Predict Winners #3059 New issue Copy link New issue Copy link Open Open Growth: AI Agent Framework Corporate Backing & Strategic Alliance Tracker — Track Official Support from Tech Giants (Microsoft, Google, AWS, etc."],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-020｜AI agent products - AWS Marketplace
+
+- raw_ref: R-021
+- raw_original_id: https://docs.aws.amazon.com/marketplace/latest/userguide/ai-agents-tools.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-021-ai-agent-products-aws-marketplace.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-021-ai-agent-products-aws-marketplace.json`
+- source: keyword search / Anysearch｜https://docs.aws.amazon.com/marketplace/latest/userguide/ai-agents-tools.html
+- source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ai-agents-tools.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: procurement_marketplace
+- source_type: marketplace
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 7da9eb6a9111dcc2
+- raw_full_text_hash: 7da9eb6a9111dcc2
+- raw_semantic_hash: 069565ac80683bda
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7da9eb6a9111dcc2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 6.4
+- raw_capture_priority: 19.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Types of AI agents and tools suitable for AWS Marketplace AWS Marketplace supports a wide variety of AI agents and tools across different industries and use cases. Common types include the following, though this is not an exhaustive list: AWS Marketplace supports multiple deployment options for AI agents, allowing you to choose the approach that best fits your architecture and customer needs: - API deployment option – The API deployment option allows customers to access your AI agent through vendor-hosted endpoints","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI agent products - AWS Marketplace View a markdown version of this page AI agent products - AWS Marketplace Documentation AWS Marketplace Seller Guide What are AI agent products?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Types of AI agents and tools suitable for AWS Marketplace Deployment options for AI agent products Choosing the right deployment option AI agent products What are AI agent products?","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI agents are software systems that leverage artificial intelligence to reason, plan, and complete tasks on behalf of humans or systems.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Unlike traditional software that follows fixed rules, AI agents operate independently, adapting through multi-step processes to achieve specific goals.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI agents combine foundation models for reasoning and planning with discrete agentic tools (like guardrails, knowledge bases, and business logic) to process requests, retrieve information, and execute tasks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI agent products - AWS Marketplace View a markdown version of this page AI agent products - AWS Marketplace Documentation AWS Marketplace Seller Guide What are AI agent products?","AI agents are software systems that leverage artificial intelligence to reason, plan, and complete tasks on behalf of humans or systems."],"case_details":["Types of AI agents and tools suitable for AWS Marketplace AWS Marketplace supports a wide variety of AI agents and tools across different industries and use cases. Common types include the following, though this is not an exhaustive list: AWS Marketplace supports multiple deployment options for AI agents, allowing you to choose the approach that best fits your architecture and customer needs: - API deployment option – The API deployment option allows customers to access your AI agent through vendor-hosted endpoints","Types of AI agents and tools suitable for AWS Marketplace Deployment options for AI agent products Choosing the right deployment option AI agent products What are AI agent products?"],"workflow_changes":["Unlike traditional software that follows fixed rules, AI agents operate independently, adapting through multi-step processes to achieve specific goals.","AI agents combine foundation models for reasoning and planning with discrete agentic tools (like guardrails, knowledge bases, and business logic) to process requests, retrieve information, and execute tasks."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-021｜Best pre-seed investors for industry-focused AI founders in 2026 ...
+
+- raw_ref: R-023
+- raw_original_id: https://www.sky9capital.com/blog/blog-pre-seed-investors-industry-focused-ai-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-023-best-pre-seed-investors-for-industry-focused-ai-founders-in-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-023-best-pre-seed-investors-for-industry-focused-ai-founders-in-2026.json`
+- source: keyword search / Tavily｜https://www.sky9capital.com/blog/blog-pre-seed-investors-industry-focused-ai-2026
+- source_url: https://www.sky9capital.com/blog/blog-pre-seed-investors-industry-focused-ai-2026
+- acquisition_channel: gdelt
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: not_applicable
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 28e692a9f5056198
+- raw_full_text_hash: a54abec3722b9cde
+- raw_semantic_hash: db6f653d0eab6674
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a54abec3722b9cde","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 6.199999999999999
+- raw_capture_priority: 19.2
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Which pre-seed investors fit vertical AI founders? Covers healthcare, fintech, legal, and manufacturing AI with investor fit matrix and fundability guide.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Back Which Pre-Seed Investors Should Industry-Focused AI Founders Prioritize in 2026?","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"May 13, 2026 An AI startup that helps hospital nurses reduce documentation time and an AI startup that trains foundation models on medical imaging data are both “healthcare AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"” But they need different investors, face different sales cycles, and are fundable on different evidence.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The same applies across every regulated industry.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Founders building industry-focused AI solutions, meaning AI products designed to solve specific workflow problems in healthcare, fintech, legal, manufacturing, logistics, or other verticals, are operating in a category where investor fit depends on industry knowledge, customer access, and regulatory comfort, not just general AI conviction.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Which pre-seed investors fit vertical AI founders? Covers healthcare, fintech, legal, and manufacturing AI with investor fit matrix and fundability guide.","Back Which Pre-Seed Investors Should Industry-Focused AI Founders Prioritize in 2026?","May 13, 2026 An AI startup that helps hospital nurses reduce documentation time and an AI startup that trains foundation models on medical imaging data are both “healthcare AI."],"case_details":["Founders building industry-focused AI solutions, meaning AI products designed to solve specific workflow problems in healthcare, fintech, legal, manufacturing, logistics, or other verticals, are operating in a category where investor fit depends on industry knowledge, customer access, and regulatory comfort, not just general AI conviction."],"workflow_changes":["” But they need different investors, face different sales cycles, and are fundable on different evidence."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-022｜英伟达 Isaac GR00T 人形机器人发布：基于宇树 H2 打造，年底推出
+
+- raw_ref: R-024
+- raw_original_id: cmput0orw00oosl0z89rce3gh
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-024-英伟达-isaac-gr00t-人形机器人发布-基于宇树-h2-打造-年底推出.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-024-英伟达-isaac-gr00t-人形机器人发布-基于宇树-h2-打造-年底推出.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/958/094.htm
+- source_url: https://www.ithome.com/0/958/094.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 60
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 9a8686c3019ac83f
+- raw_full_text_hash: 9a8686c3019ac83f
+- raw_semantic_hash: eaa35decf2e83332
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9a8686c3019ac83f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"英伟达推出 NVIDIA Isaac GR00T 人形机器人参考设计，整合了宇树 H2 Plus 人形机器人、Sharpa Wave 触觉五指灵巧手及 Jetson AGX Thor T5000 计算平台。机器人身高约1.8米，重68千克，全身拥有75个自由度。其计算核心为 Blackwell GPU，AI性能达2070 FP4 teraflops。该参考设计由宇树推出，预计2026年底发布，并将扩展支持宇树 G1 机器人。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 1 日消息，英伟达今日宣布推出 NVIDIA Isaac GR00T 人形机器人参考设计 ，这是首款基于 NVIDIA Jetson Thor 和 NVIDIA Isaac GR00T 开放开发平台构建的开放式人形机器人参考设计。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"NVIDIA Isaac GR00T 人形机器人将 宇树 H2 Plus 人形机器人和 Sharpa Wave 触觉五指灵巧手 与 NVIDIA Jetson Thor 驱动的板载计算以及 Isaac GR00T 软件和工作流程（“大脑”）整合到一个单一的集成参考设计中，从而统一了开发过程，帮助研究团队更快地从机器人启动过渡到技能开发和现实世界验证。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"宇树 H2 人形机器人底座，身高近 6 英尺（IT之家注：约 1.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"8 米），重 150 磅（约 68 千克），全身有 31 个自由度。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"双 Sharpa Wave 触觉五指手，可实现 22 个自由度的灵巧操作，使机器人在身体和手部达到 75 个自由度。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["英伟达推出 NVIDIA Isaac GR00T 人形机器人参考设计，整合了宇树 H2 Plus 人形机器人、Sharpa Wave 触觉五指灵巧手及 Jetson AGX Thor T5000 计算平台。机器人身高约1.8米，重68千克，全身拥有75个自由度。其计算核心为 Blackwell GPU，AI性能达2070 FP4 teraflops。该参考设计由宇树推出，预计2026年底发布，并将扩展支持宇树 G1 机器人。","IT之家 6 月 1 日消息，英伟达今日宣布推出 NVIDIA Isaac GR00T 人形机器人参考设计 ，这是首款基于 NVIDIA Jetson Thor 和 NVIDIA Isaac GR00T 开放开发平台构建的开放式人形机器人参考设计。","8 米），重 150 磅（约 68 千克），全身有 31 个自由度。"],"case_details":[],"workflow_changes":["NVIDIA Isaac GR00T 人形机器人将 宇树 H2 Plus 人形机器人和 Sharpa Wave 触觉五指灵巧手 与 NVIDIA Jetson Thor 驱动的板载计算以及 Isaac GR00T 软件和工作流程（“大脑”）整合到一个单一的集成参考设计中，从而统一了开发过程，帮助研究团队更快地从机器人启动过渡到技能开发和现实世界验证。"],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-023｜英伟达开源5500亿参数Nemotron 3 Ultra模型
+
+- raw_ref: R-025
+- raw_original_id: cmpuqvigb0048sl0zlqkpx9tz
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-025-英伟达开源5500亿参数nemotron-3-ultra模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-025-英伟达开源5500亿参数nemotron-3-ultra模型.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/958/090.htm
+- source_url: https://www.ithome.com/0/958/090.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 50
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: a65f7cfa4d63f42d
+- raw_full_text_hash: a65f7cfa4d63f42d
+- raw_semantic_hash: 908d25711b213b13
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a65f7cfa4d63f42d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"英伟达发布面向AI智能体的开源模型Nemotron 3 Ultra，其为5500亿参数的混合专家模型。相较于同级别开源模型，该模型推理速度最高提升5倍，使用成本最高降低30%。模型已适配Hermes Agent、LangChain Deep Agents等主流框架，并已助力CrowdStrike、Palantir等企业构建智能体系统。该模型预计于6月4日通过Hugging Face、ModelScope等平台以NVIDIA NIM微服务形式提供。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"英伟达发布 5500 亿参数 Nemotron 3 Ultra 开源模型，较同级别前沿模型推理速度最高提升 5 倍 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 英伟达发布 5500 亿参数 Nemotron 3 Ultra 开源模型，较同级别前沿模型推理速度最高提升 5 倍 2026/6/1 12:46:28 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 Nuc_F 的线索投递！","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 1 日消息，为加强自主智能体的智能能力，英伟达今日发布了面向全天候运行智能体的全新开源模型与数据集，相关成果由英伟达 Nemotron 联盟联合打造。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"number","text":"据官方介绍，英伟达 Nemotron 3 Ultra 是一款拥有 5500 亿参数的混合专家模型，可为代码开发、科研及企业业务流程中的长效智能体提供顶尖智能能力。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"相较于同级别主流开源前沿模型，该模型推理速度最高提升 5 倍，使用成本最高降低 30%，助力智能体更高效、低成本地完成各项任务。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Nemotron 3 Ultra 已完成适配主流智能体平台与调度框架的后置训练，企业可借助这类框架部署、统筹管理智能体，涵盖 Hermes Agent、LangChain Deep Agents、OpenClaw、OpenHands 以及 OpenCode。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 6 月 1 日消息，为加强自主智能体的智能能力，英伟达今日发布了面向全天候运行智能体的全新开源模型与数据集，相关成果由英伟达 Nemotron 联盟联合打造。"],"case_details":["Nemotron 3 Ultra 已完成适配主流智能体平台与调度框架的后置训练，企业可借助这类框架部署、统筹管理智能体，涵盖 Hermes Agent、LangChain Deep Agents、OpenClaw、OpenHands 以及 OpenCode。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-024｜How Google Cloud partner ecosystem is building the agentic ...
+
+- raw_ref: R-027
+- raw_original_id: https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-027-how-google-cloud-partner-ecosystem-is-building-the-agentic.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-027-how-google-cloud-partner-ecosystem-is-building-the-agentic.json`
+- source: keyword search / Tavily｜https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise
+- source_url: https://cloud.google.com/blog/topics/partners/how-google-cloud-partner-ecosystem-is-building-the-agentic-enterprise
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: medium
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 985f2c9cce09b4c0
+- raw_full_text_hash: 985f2c9cce09b4c0
+- raw_semantic_hash: 6ea501c87653ce25
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"985f2c9cce09b4c0","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 17.9
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"# Building the Agentic Enterprise with Google Cloud partners and a $750M innovation fund. We are now seeing the Agentic Enterprise become reality for customers, and this week at Next ‘26 we are announcing exciting, new innovations to help customers accelerate agentic AI even further. Our partners play a critical role in enabling the Agentic Enterprise, and today we are also announcing new resources, technologies, and deep technical partnerships to ensure we offer customers the industry’s most capable partner ecosys","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"# Building the Agentic Enterprise with Google Cloud partners and a $750M innovation fund.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"We are now seeing the Agentic Enterprise become reality for customers, and this week at Next ‘26 we are announcing exciting, new innovations to help customers accelerate agentic AI even further.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Our partners play a critical role in enabling the Agentic Enterprise, and today we are also announcing new resources, technologies, and deep technical partnerships to ensure we offer customers the industry’s most capable partner ecosystem for the agentic era, including:.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"New ways for customers to deploy **partner agents in Gemini Enterprise**.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"To empower our partners to drive real transformation in the agentic AI era,we are launching a **$750 million innovation fund** to accelerate agent development and deployment globally, applicable to every business process, function, and industry.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":[],"case_details":["We are now seeing the Agentic Enterprise become reality for customers, and this week at Next ‘26 we are announcing exciting, new innovations to help customers accelerate agentic AI even further.","Our partners play a critical role in enabling the Agentic Enterprise, and today we are also announcing new resources, technologies, and deep technical partnerships to ensure we offer customers the industry’s most capable partner ecosystem for the agentic era, including:.","New ways for customers to deploy **partner agents in Gemini Enterprise**."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-025｜Coupa's M&A Spree Continues With Tonkean AI Acquisition | Ctech
+
+- raw_ref: R-028
+- raw_original_id: https://www.calcalistech.com/ctechnews/article/h1dha66kzl
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-028-coupa-s-m-a-spree-continues-with-tonkean-ai-acquisition-ctech.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-028-coupa-s-m-a-spree-continues-with-tonkean-ai-acquisition-ctech.json`
+- source: keyword search / Tavily｜https://www.calcalistech.com/ctechnews/article/h1dha66kzl
+- source_url: https://www.calcalistech.com/ctechnews/article/h1dha66kzl
+- acquisition_channel: gdelt
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: not_applicable
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 236666e8cd70d595
+- raw_full_text_hash: 236666e8cd70d595
+- raw_semantic_hash: dcc05d296acc5ed4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"236666e8cd70d595","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.799999999999999
+- raw_capture_priority: 17.799999999999997
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"# Coupa acquires Israeli AI startup Tonkean in deal estimated at hundreds of millions of dollars. ## Acquisition strengthens Coupa’s push to build autonomous AI systems for procurement and enterprise operations. American software company Coupa is acquiring Israeli startup Tonkean, a developer of AI-","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Coupa acquires Israeli AI startup Tonkean in deal estimated at hundreds of millions of dollars Acquisition strengthens Coupa’s push to build autonomous AI systems for procurement and enterprise operations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"American software company Coupa is acquiring Israeli startup Tonkean, a developer of AI-based workflow automation and orchestration software, in a deal estimated to be worth hundreds of millions of dollars.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"The acquisition marks a significant step in Coupa’s effort to build a broader artificial intelligence layer for corporate procurement and supply chain management, as competition intensifies around so-called “agentic AI” systems capable of autonomously managing enterprise tasks.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"funding","text":"Full list of Israeli startup M&As in 2026 Tonkean, founded in 2015 by Sagi Eliyahu and Offir Talmor, has raised approximately $84 million since its inception.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Its most recent funding round, a $50 million Series B in 2021 led by Accel, valued the company at around $300 million.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Full list of Israeli startup M&As in 2026 Tonkean, founded in 2015 by Sagi Eliyahu and Offir Talmor, has raised approximately $84 million since its inception.","Its most recent funding round, a $50 million Series B in 2021 led by Accel, valued the company at around $300 million."],"case_details":[],"workflow_changes":["# Coupa acquires Israeli AI startup Tonkean in deal estimated at hundreds of millions of dollars. ## Acquisition strengthens Coupa’s push to build autonomous AI systems for procurement and enterprise operations. American software company Coupa is acquiring Israeli startup Tonkean, a developer of AI-","Coupa acquires Israeli AI startup Tonkean in deal estimated at hundreds of millions of dollars Acquisition strengthens Coupa’s push to build autonomous AI systems for procurement and enterprise operations.","American software company Coupa is acquiring Israeli startup Tonkean, a developer of AI-based workflow automation and orchestration software, in a deal estimated to be worth hundreds of millions of dollars."],"before_after_clues":["可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-026｜"全球最强大的桌面 AI 超级计算机"，英伟达 DGX Station for Windows 发布
+
+- raw_ref: R-029
+- raw_original_id: cmpuqviga0047sl0zxad75v2w
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-029-全球最强大的桌面-ai-超级计算机-英伟达-dgx-station-for-windows-发布.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-029-全球最强大的桌面-ai-超级计算机-英伟达-dgx-station-for-windows-发布.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/958/091.htm
+- source_url: https://www.ithome.com/0/958/091.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 48
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 361f6a97cda05e03
+- raw_full_text_hash: 361f6a97cda05e03
+- raw_semantic_hash: 7615f39714465e31
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"361f6a97cda05e03","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"\"全球最强大的桌面 AI 超级计算机\"，英伟达 DGX Station for Windows 发布","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"“全球最强大的桌面 AI 超级计算机”，英伟达 DGX Station for Windows 发布 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 电脑硬件 “全球最强大的桌面 AI 超级计算机”，英伟达 DGX Station for Windows 发布 2026/6/1 13:00:34 来源： IT之家 作者： 汪淼 责编： 汪淼 评论： 感谢IT之家网友 仿达 的线索投递！","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"IT之家 6 月 1 日消息，在今日的 2026 台北国际电脑展主题演讲中，英伟达 CEO 黄仁勋发布了“全球最强大的桌面 AI 超级计算机”—— DGX Station for Windows 。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"DGX Station for Windows 用于在 Windows 上开发和运行智能体 —— 基于英伟达 GB300 Grace Blackwell Ultra Desktop Superchip 构建， 将于今年第四季度上市 。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"英伟达表示，繁重的企业级 AI 工作负载（训练、微调、大规模推理和多智能体开发）通常需要数据中心运行在 Linux 上，而绝大多数财富 500 强公司则使用 Windows 进行日常生产力、创意、设计和工程应用程序。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"DGX Station for Windows 基于 NVIDIA DGX Station 系统设计，作为首款将 GB300 Grace Blackwell 级 AI 基础架构直接引入 Windows 生态系统的桌面 AI 超级计算机，弥合了这一差距。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["DGX Station for Windows 用于在 Windows 上开发和运行智能体 —— 基于英伟达 GB300 Grace Blackwell Ultra Desktop Superchip 构建， 将于今年第四季度上市 。","DGX Station for Windows 基于 NVIDIA DGX Station 系统设计，作为首款将 GB300 Grace Blackwell 级 AI 基础架构直接引入 Windows 生态系统的桌面 AI 超级计算机，弥合了这一差距。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-027｜让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3
+
+- raw_ref: R-030
+- raw_original_id: cmput0orw00omsl0z3fqhoi9r
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-030-让机器人看懂世界-英伟达推出全球首款全开源全模态物理-ai-大模型-cosmos-3.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-030-让机器人看懂世界-英伟达推出全球首款全开源全模态物理-ai-大模型-cosmos-3.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/958/103.htm
+- source_url: https://www.ithome.com/0/958/103.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 63
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 2474029b7c0a2ffb
+- raw_full_text_hash: 2474029b7c0a2ffb
+- raw_semantic_hash: 2e5d2f44f34521f4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2474029b7c0a2ffb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"英伟达称，Cosmos 3 是全球首款全开源的全模态大模型，可原生理解并生成文本、图像、视频、环境音效及动作内容，物理仿真精度业界领先。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"它能将物理人工智能的训练与评估周期从数月缩短至数日。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"英伟达同时发起英伟达宇宙联盟（NVIDIA Cosmos Coalition），汇聚全球世界模型研发团队与人工智能开发者携手合作，成员包括 Agile Robots、Black Forest Labs、Generalist、LTX、Runway 以及 Skild AI，共同推动下一代世界模型技术发展。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"英伟达创始人兼首席执行官黄仁勋表示：“多模态推理语言、视觉与世界模型接连取得突破，物理人工智能的变革时代即将到来。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。","IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。","它能将物理人工智能的训练与评估周期从数月缩短至数日。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-028｜英伟达 RTX Spark PC 处理器发布：集成 20 核 Grace CPU 与 Blackwell RTX GPU，首批电脑秋季推出
+
+- raw_ref: R-031
+- raw_original_id: cmpuqvigb0049sl0ze9tbxq53
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-031-英伟达-rtx-spark-pc-处理器发布-集成-20-核-grace-cpu-与-blackwell-rtx-gpu-首批电脑秋季推出.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-031-英伟达-rtx-spark-pc-处理器发布-集成-20-核-grace-cpu-与-blackwell-rtx-gpu-首批电脑秋季推出.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/958/088.htm
+- source_url: https://www.ithome.com/0/958/088.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 50
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 51728ef2f04c38cf
+- raw_full_text_hash: 51728ef2f04c38cf
+- raw_semantic_hash: 5527fdbbdc840dea
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"51728ef2f04c38cf","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"英伟达在台北电脑展推出 RTX Spark PC 处理器。该处理器由联发科合作的 20 核 Grace CPU 与英伟达 Blackwell RTX GPU（6144 CUDA 核心）组成，采用台积电 3nm 工艺，配备 128GB 统一内存，AI 性能达到 1 petaFLOP。它支持本地运行高达 1200 亿参数、100 万 token 上下文的大语言模型（LLM），并可渲染超大型 3D 场景、编辑 12K 视频。Adobe 正在重构 Photoshop 和 Premiere 以适配，最高可实现 2 倍性能提升。首批搭载该处理器的笔记本电脑与台式机将由华硕、戴尔、惠普、联想、微软 Surface、微星等品牌于今年秋季推出，后续架构路线图包含 Rubin 和 Feynman GPU。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"英伟达 RTX Spark PC 处理器正式发布：联发科合作 20 核 CPU + 英伟达 RTX GPU，首批电脑秋季推出 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 电脑硬件 英伟达 RTX Spark PC 处理器正式发布：联发科合作 20 核 CPU + 英伟达 RTX GPU，首批电脑秋季推出 2026/6/1 12:39:21 来源： IT之家 作者： 汪淼 责编： 汪淼 评论： 感谢IT之家网友 仿达 、 AlanMac 、 取什么名 的线索投递！","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 1 日消息，在今日的 2026 台北国际电脑展主题演讲中，英伟达 CEO 黄仁勋正式宣布推出 RTX Spark PC 处理器 。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"英伟达 RTX Spark 由 联发科合作的 20 核 Grace CPU + 英伟达 Blackwell RTX GPU 组成 （6144 CUDA 核心），AI 性能达到 1petaFLOP。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"英伟达 RTX Spark 采用 台积电 3nm 工艺打造 ，配备 128GB 统一内存。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"英伟达宣称将与微软一起开启 PC 新世代。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 6 月 1 日消息，在今日的 2026 台北国际电脑展主题演讲中，英伟达 CEO 黄仁勋正式宣布推出 RTX Spark PC 处理器 。","英伟达 RTX Spark 由 联发科合作的 20 核 Grace CPU + 英伟达 Blackwell RTX GPU 组成 （6144 CUDA 核心），AI 性能达到 1petaFLOP。"],"case_details":["英伟达 RTX Spark PC 处理器正式发布：联发科合作 20 核 CPU + 英伟达 RTX GPU，首批电脑秋季推出 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 电脑硬件 英伟达 RTX Spark PC 处理器正式发布：联发科合作 20 核 CPU + 英伟达 RTX GPU，首批电脑秋季推出 2026/6/1 12:39:21 来源： IT之家 作者： 汪淼 责编： 汪淼 评论： 感谢IT之家网友 仿达 、 AlanMac 、 取什么名 的线索投递！","英伟达 RTX Spark 采用 台积电 3nm 工艺打造 ，配备 128GB 统一内存。"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-029｜2026年5月通讯
+
+- raw_ref: R-032
+- raw_original_id: cmpuqg2v4000rsly7fveigrj2
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-032-2026年5月通讯.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-032-2026年5月通讯.json`
+- source: Simon Willison 博客｜https://simonwillison.net/2026/Jun/1/may-newsletter
+- source_url: https://simonwillison.net/2026/Jun/1/may-newsletter
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: industry
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 36
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: deb0a37e256953d0
+- raw_full_text_hash: deb0a37e256953d0
+- raw_semantic_hash: b7ffd25df5f34f26
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"deb0a37e256953d0","missing":[]}
+- degradation_reasons: discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 13.1
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"product_update","text":"一份仅限赞助者的月度通讯预告，内容涵盖：2026年5月AI成本上升与Anthropic表现突出、模型发布情况不及预期、行业会议与播客动态、作者推出的Datasette Agent及其在Datasette项目上的进展、2026年5月个人工具使用清单以及杂项补充。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1st June 2026 I just sent out the May edition of my sponsors-only monthly newsletter .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"If you are a sponsor (or if you start a sponsorship now) you can access it here .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"This month: Al got expensive, and Anthropic had a really good month The model releases were a little disappointing Conferences and podcasts I launched Datasette Agent and made a lot of progress on Datasette What I'm using, May 2026 edition Miscellaneous extras Here's a copy of the April newsletter as a preview of what you'll get.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"number","text":"Pay $10/month to stay a month ahead of the free copy!","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["一份仅限赞助者的月度通讯预告，内容涵盖：2026年5月AI成本上升与Anthropic表现突出、模型发布情况不及预期、行业会议与播客动态、作者推出的Datasette Agent及其在Datasette项目上的进展、2026年5月个人工具使用清单以及杂项补充。","1st June 2026 I just sent out the May edition of my sponsors-only monthly newsletter .","If you are a sponsor (or if you start a sponsorship now) you can access it here ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-030｜英伟达 Vera 处理器发布：专为 AI 智能体打造，OpenAI、SpaceXAI、字节跳动都要用
+
+- raw_ref: R-033
+- raw_original_id: cmpuqvigb004bsl0zp3swf7rj
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-033-英伟达-vera-处理器发布-专为-ai-智能体打造-openai-spacexai-字节跳动都要用.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-033-英伟达-vera-处理器发布-专为-ai-智能体打造-openai-spacexai-字节跳动都要用.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/958/082.htm
+- source_url: https://www.ithome.com/0/958/082.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 51
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 032136b4ce90521d
+- raw_full_text_hash: 032136b4ce90521d
+- raw_semantic_hash: bea78af2ad1b654c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"032136b4ce90521d","missing":[]}
+- degradation_reasons: discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 9.1
+- raw_capture_priority: 13.1
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"number","text":"英伟达在2026年台北电脑展上正式推出Vera处理器。这是一款专为AI智能体设计的CPU，速度比x86处理器快1.8倍。它配备88个Olympus CPU核心和LPDDR5X内存子系统，内存带宽达1.2TB/s。作为Vera Rubin平台的主机CPU，Vera通过NVLink-C2C技术提供高达1.8TB/s的一致性带宽。首批客户包括OpenAI、Anthropic、SpaceXAI、字节跳动、纽约证券交易所等，计划于今年秋季上市。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 1 日消息，在今日的 2026 台北国际电脑展主题演讲中，英伟达 CEO 黄仁勋宣布正式推出 Vera 处理器 。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"英伟达 Vera 是一款专为 AI 智能体打造的 CPU ，速度比 x86 处理器快 1.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"8 倍，可驱动各行各业的多样化工作负载，Vera 现已全面投产。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"Vera 以 Grace CPU 的成功为基础（迄今为止，Grace CPU 的出货量已接近 250 万片），计划采用 Vera CPU 的客户包括金融巨头 纽约证券交易所、Anthropic、OpenAI 和 SpaceXAI ，以及字节跳动、CoreWeave、Lambda、Nebius、Nscale 和 Oracle 云基础设施（OCI）。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Vera 也正被集成到戴尔科技、HPE、联想和超微等系统制造商以及系统集成商的人工智能基础设施中。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 6 月 1 日消息，在今日的 2026 台北国际电脑展主题演讲中，英伟达 CEO 黄仁勋宣布正式推出 Vera 处理器 。","英伟达 Vera 是一款专为 AI 智能体打造的 CPU ，速度比 x86 处理器快 1.","Vera 也正被集成到戴尔科技、HPE、联想和超微等系统制造商以及系统集成商的人工智能基础设施中。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-031｜OpenAI 向日本金融机构开放 GPT-5.5 Cyber 模型，以应对 AI 驱动的网络攻击新威胁
+
+- raw_ref: R-034
+- raw_original_id: cmpunfbx505easlagl8tir9z6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-034-openai-向日本金融机构开放-gpt-5-5-cyber-模型-以应对-ai-驱动的网络攻击新威胁.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-034-openai-向日本金融机构开放-gpt-5-5-cyber-模型-以应对-ai-驱动的网络攻击新威胁.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/958/028.htm
+- source_url: https://www.ithome.com/0/958/028.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 52
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 03cd7a1c7ddcfabc
+- raw_full_text_hash: 03cd7a1c7ddcfabc
+- raw_semantic_hash: f0adaf46f4b60cda
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"03cd7a1c7ddcfabc","missing":[]}
+- degradation_reasons: discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 13.1
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"OpenAI 已向日本三大银行（三菱日联、三井住友、瑞穗）开放 GPT-5.5 Cyber 模型的使用权限，以提升其应对新型 AI 驱动网络攻击的防御能力。日本财务大臣表示，此举是日美政府协商的结果。该模型性能与 Anthropic 的 Claude Mythos 相当。日本政府后续也将接入 Claude Mythos 以强化网络防御，并已成立联合工作组评估相关风险。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家 6 月 1 日消息，日本财务大臣片山皋月上周五在与 OpenAI 首席战略官会面后表示，OpenAI 已向部分日本金融机构开放 GPT-5.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5 Cyber 模型的使用权限，助力其防范网络攻击。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"据IT之家了解，如今新一代具备高阶编程能力的人工智能模型问世，让黑客得以空前轻松地排查网络安全漏洞，并想出利用漏洞实施攻击的手段。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"对于面临运营受冲击风险的银行及其他企业而言，抢先获取这类仅对可信合作方开放的新型 AI 模型，成为一项重要的防护举措。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"quote","text":"片山皋月在东京会见 OpenAI 首席战略官权杰森后接受记者采访时称，此次权限开放“大幅提升了日本金融机构的网络攻防能力”，但她并未透露具体涉及哪些金融机构。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["5 Cyber 模型的使用权限，助力其防范网络攻击。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["OpenAI 已向日本三大银行（三菱日联、三井住友、瑞穗）开放 GPT-5.5 Cyber 模型的使用权限，以提升其应对新型 AI 驱动网络攻击的防御能力。日本财务大臣表示，此举是日美政府协商的结果。该模型性能与 Anthropic 的 Claude Mythos 相当。日本政府后续也将接入 Claude Mythos 以强化网络防御，并已成立联合工作组评估相关风险。","据IT之家了解，如今新一代具备高阶编程能力的人工智能模型问世，让黑客得以空前轻松地排查网络安全漏洞，并想出利用漏洞实施攻击的手段。","对于面临运营受冲击风险的银行及其他企业而言，抢先获取这类仅对可信合作方开放的新型 AI 模型，成为一项重要的防护举措。"]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-032｜21 Startups Focused on Agentic AI (Ranked by Funding) 1 ...
+
+- raw_ref: R-035
+- raw_original_id: https://www.linkedin.com/posts/travislw_21-startups-focused-on-agentic-ai-ranked-activity-7283916447209164800-ZRpE
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-035-21-startups-focused-on-agentic-ai-ranked-by-funding-1.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-035-21-startups-focused-on-agentic-ai-ranked-by-funding-1.json`
+- source: keyword search / Tavily｜https://www.linkedin.com/posts/travislw_21-startups-focused-on-agentic-ai-ranked-activity-7283916447209164800-ZRpE
+- source_url: https://www.linkedin.com/posts/travislw_21-startups-focused-on-agentic-ai-ranked-activity-7283916447209164800-ZRpE
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: http-451-fallback-text
+- extraction_quality: low
+- extraction_method: empty
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 0faf0a569cca5241
+- raw_full_text_hash: 0faf0a569cca5241
+- raw_semantic_hash: ea0b39a4cae1f090
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0faf0a569cca5241","missing":[]}
+- degradation_reasons: discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 12.4
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"funding","text":"Author | Insights Shared Daily | Tech Founder | AI-Powered SaaS Innovations | Building the Future | 🚨 Raising a Seed Round | Explore the Vision and Join Us www (.) EnterpriseAgentic.com⚡️Let’s Connect Follow for Insight 🚨🦄21 Startups Focused on Agentic AI (Ranked by Funding) Author | Insights Shared Daily | Tech Founder | AI-Powered SaaS Innovations | Building the Future | 🚨 Raising a Seed Round | Explore the Vision and Join Us www (.) EnterpriseAgentic.com⚡️Let’s Connect Follow for Insight 🔥 DevRev raises $10","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"Author | Insights Shared Daily | Tech Founder | AI-Powered SaaS Innovations | Building the Future | 🚨 Raising a Seed Round | Explore the Vision and Join Us www (.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":") EnterpriseAgentic.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"com⚡️Let’s Connect Follow for Insight 🚨🦄21 Startups Focused on Agentic AI (Ranked by Funding) Author | Insights Shared Daily | Tech Founder | AI-Powered SaaS Innovations | Building the Future | 🚨 Raising a Seed Round | Explore the Vision and Join Us www (.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"com⚡️Let’s Connect Follow for Insight 🔥 DevRev raises $100 million in a Series A round, with a valuation of $1.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Author | Insights Shared Daily | Tech Founder | AI-Powered SaaS Innovations | Building the Future | 🚨 Raising a Seed Round | Explore the Vision and Join Us www (.) EnterpriseAgentic.com⚡️Let’s Connect Follow for Insight 🚨🦄21 Startups Focused on Agentic AI (Ranked by Funding) Author | Insights Shared Daily | Tech Founder | AI-Powered SaaS Innovations | Building the Future | 🚨 Raising a Seed Round | Explore the Vision and Join Us www (.) EnterpriseAgentic.com⚡️Let’s Connect Follow for Insight 🔥 DevRev raises $10","Author | Insights Shared Daily | Tech Founder | AI-Powered SaaS Innovations | Building the Future | 🚨 Raising a Seed Round | Explore the Vision and Join Us www (.",") EnterpriseAgentic."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-033｜OpenAI发布生物防御AI工具Rosalind
+
+- raw_ref: R-040
+- raw_original_id: daily-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-040-openai发布生物防御ai工具rosalind.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-040-openai发布生物防御ai工具rosalind.json`
+- source: X：Sam Altman (@sama)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 7114f9c8402d7231
+- raw_full_text_hash: 7114f9c8402d7231
+- raw_semantic_hash: 9ac3f9b20aa4d02e
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7114f9c8402d7231","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"我们希望帮助世界在生物防御领域抢占先机：","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["我们希望帮助世界在生物防御领域抢占先机："],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-034｜苹果WWDC将推AI升级：Gemini蒸馏模型本地运行，但技术栈外部依赖显著
+
+- raw_ref: R-064
+- raw_original_id: daily-5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-064-苹果wwdc将推ai升级-gemini蒸馏模型本地运行-但技术栈外部依赖显著.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-064-苹果wwdc将推ai升级-gemini蒸馏模型本地运行-但技术栈外部依赖显著.json`
+- source: X：Kim (@kimmonismus)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: abd69360cb3ff3c4
+- raw_full_text_hash: abd69360cb3ff3c4
+- raw_semantic_hash: 107462cce330d5e8
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"abd69360cb3ff3c4","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_viewpoint_or_article
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"supporting_context","text":"苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低token成本。但该技术栈大部分源自外部：本地模型由Gemini蒸馏，设备无法处理的复杂查询将路由至Google Cloud处理，并采用了Nvidia的机密计算技术。苹果据称正在寻觅小型设备端AI初创公司以加速模型缩减工作。此外，苹果2024年承诺的Private Cloud Compute方案原计划使用苹果芯片，因无法承载完整Gemini模型，现已部分转向谷歌云，但该名称仍将保留。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低token成本。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"但该技术栈大部分源自外部：本地模型由Gemini蒸馏，设备无法处理的复杂查询将路由至Google Cloud处理，并采用了Nvidia的机密计算技术。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"苹果据称正在寻觅小型设备端AI初创公司以加速模型缩减工作。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"此外，苹果2024年承诺的Private Cloud Compute方案原计划使用苹果芯片，因无法承载完整Gemini模型，现已部分转向谷歌云，但该名称仍将保留。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":[],"case_details":["但该技术栈大部分源自外部：本地模型由Gemini蒸馏，设备无法处理的复杂查询将路由至Google Cloud处理，并采用了Nvidia的机密计算技术。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低token成本。但该技术栈大部分源自外部：本地模型由Gemini蒸馏，设备无法处理的复杂查询将路由至Google Cloud处理，并采用了Nvidia的机密计算技术。苹果据称正在寻觅小型设备端AI初创公司以加速模型缩减工作。此外，苹果2024年承诺的Private Cloud Compute方案原计划使用苹果芯片，因无法承载完整Gemini模型，现已部分转向谷歌云，但该名称仍将保留。","苹果下月WWDC将重点展示延迟已久的Siri及设备端AI升级，核心是在iPhone芯片本地运行从Google Gemini蒸馏而来的更小模型，以强调隐私与降低token成本。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-035｜DeepSeek V4 Flash 已上线 OpenCode Zen
+
+- raw_ref: R-065
+- raw_original_id: daily-2
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-065-deepseek-v4-flash-已上线-opencode-zen.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-065-deepseek-v4-flash-已上线-opencode-zen.json`
+- source: X：opencode (@opencode)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: a6cf2441c19e0662
+- raw_full_text_hash: a6cf2441c19e0662
+- raw_semantic_hash: 15adf48684062046
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a6cf2441c19e0662","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"DeepSeek V4 Flash 现已在 OpenCode Zen 上线。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["DeepSeek V4 Flash 现已在 OpenCode Zen 上线。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-036｜教皇似乎比Geoffrey Hinton更懂人工智能
+
+- raw_ref: R-066
+- raw_original_id: daily-8
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-066-教皇似乎比geoffrey-hinton更懂人工智能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-066-教皇似乎比geoffrey-hinton更懂人工智能.json`
+- source: Gary Marcus：The Road to AI We Can Trust（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: f965e1b559c9a27e
+- raw_full_text_hash: f965e1b559c9a27e
+- raw_semantic_hash: 8b2ebb94d31c9e97
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f965e1b559c9a27e","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"opinion","text":"这一观点强调，单纯分析AI的输出内容，无法还原其生成过程与背后的推理逻辑，触及了当前AI可解释性研究的核心挑战。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":[],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-037｜v2.1.159
+
+- raw_ref: R-067
+- raw_original_id: daily-3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-067-v2-1-159.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-067-v2-1-159.json`
+- source: Claude Code：GitHub Releases（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 2950ade1f91b4582
+- raw_full_text_hash: 2950ade1f91b4582
+- raw_semantic_hash: 492face05fd1419f
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2950ade1f91b4582","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"product_update","text":"v2.1.159 版本更新包含内部基础设施改进，未引入任何面向用户的功能变更。此次更新预计不会影响现有功能或用户接口。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"159 版本更新包含内部基础设施改进，未引入任何面向用户的功能变更。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"此次更新预计不会影响现有功能或用户接口。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["v2.1.159 版本更新包含内部基础设施改进，未引入任何面向用户的功能变更。此次更新预计不会影响现有功能或用户接口。","159 版本更新包含内部基础设施改进，未引入任何面向用户的功能变更。","此次更新预计不会影响现有功能或用户接口。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-038｜我花200英镑把一台数据中心级GPU装进了我的游戏电脑
+
+- raw_ref: R-072
+- raw_original_id: daily-7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-072-我花200英镑把一台数据中心级gpu装进了我的游戏电脑.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-072-我花200英镑把一台数据中心级gpu装进了我的游戏电脑.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 2e4ea4b4d98f75c0
+- raw_full_text_hash: 2e4ea4b4d98f75c0
+- raw_semantic_hash: c973ea3aacfebc5a
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2e4ea4b4d98f75c0","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: important_viewpoint_or_article
+- importance_score: 3
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.299999999999999
+- raw_capture_priority: -1.700000000000001
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"一名用户以200英镑的价格购入了一块数据中心级GPU，并将其成功安装到自己的游戏电脑中。文章记述了这一非标准硬件改装过程、遇到的技术挑战以及最终实现本地运行大语言模型的体验。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"一名用户以200英镑的价格购入了一块数据中心级GPU，并将其成功安装到自己的游戏电脑中。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"文章记述了这一非标准硬件改装过程、遇到的技术挑战以及最终实现本地运行大语言模型的体验。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["一名用户以200英镑的价格购入了一块数据中心级GPU，并将其成功安装到自己的游戏电脑中。文章记述了这一非标准硬件改装过程、遇到的技术挑战以及最终实现本地运行大语言模型的体验。","一名用户以200英镑的价格购入了一块数据中心级GPU，并将其成功安装到自己的游戏电脑中。","文章记述了这一非标准硬件改装过程、遇到的技术挑战以及最终实现本地运行大语言模型的体验。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-039｜OpenAI正式进军机器人领域并启动招聘
+
+- raw_ref: R-078
+- raw_original_id: daily-4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-078-openai正式进军机器人领域并启动招聘.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-078-openai正式进军机器人领域并启动招聘.json`
+- source: X：Sam Altman (@sama)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: cc738a8a43527599
+- raw_full_text_hash: cc738a8a43527599
+- raw_semantic_hash: 2b6fb9cfcbe10ef9
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cc738a8a43527599","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。该项目由Aditya Ramesh领导，其世界模拟研究计划已演变为机器人研究，强调硬件与ML研究的协同设计。短期目标是支持技术工人构建未来基础设施，长期愿景是为每个人提供个人机器人。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"该项目由Aditya Ramesh领导，其世界模拟研究计划已演变为机器人研究，强调硬件与ML研究的协同设计。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"短期目标是支持技术工人构建未来基础设施，长期愿景是为每个人提供个人机器人。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。该项目由Aditya Ramesh领导，其世界模拟研究计划已演变为机器人研究，强调硬件与ML研究的协同设计。短期目标是支持技术工人构建未来基础设施，长期愿景是为每个人提供个人机器人。","OpenAI宣布成立OpenAI Robotics团队，并开始招聘全栈硬件、系统及ML工程师，以编程和制造能服务社会的机器人。","该项目由Aditya Ramesh领导，其世界模拟研究计划已演变为机器人研究，强调硬件与ML研究的协同设计。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-040｜6000 多公里全程零干预：特斯拉 FSD 完成全球首次横穿加拿大自动驾驶
+
+- raw_ref: R-079
+- raw_original_id: daily-6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-01/r-079-6000-多公里全程零干预-特斯拉-fsd-完成全球首次横穿加拿大自动驾驶.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-01/r-079-6000-多公里全程零干预-特斯拉-fsd-完成全球首次横穿加拿大自动驾驶.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 618cb9b9565c2f37
+- raw_full_text_hash: 618cb9b9565c2f37
+- raw_semantic_hash: 2e074782178a273f
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"618cb9b9565c2f37","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot；discovery_or_feedback_source_boundary
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: automotive_vertical_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"一辆特斯拉汽车搭载 FSD V14.3.3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。车辆从温哥华出发，历时 4 天 21 小时，行驶 3760 英里（6051 公里）抵达哈利法克斯，全程所有驾驶操作（包括高速并线、应对复杂路况与自动泊车）均由系统自主完成，无任何系统退出或人工修正。该版本随 2026.14.6.6 更新推送，整合了春季软件功能。","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"一辆特斯拉汽车搭载 FSD V14.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"车辆从温哥华出发，历时 4 天 21 小时，行驶 3760 英里（6051 公里）抵达哈利法克斯，全程所有驾驶操作（包括高速并线、应对复杂路况与自动泊车）均由系统自主完成，无任何系统退出或人工修正。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["一辆特斯拉汽车搭载 FSD V14.3.3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。车辆从温哥华出发，历时 4 天 21 小时，行驶 3760 英里（6051 公里）抵达哈利法克斯，全程所有驾驶操作（包括高速并线、应对复杂路况与自动泊车）均由系统自主完成，无任何系统退出或人工修正。该版本随 2026.14.6.6 更新推送，整合了春季软件功能。","一辆特斯拉汽车搭载 FSD V14.","3 版本软件，完成了全球首次全程零人工干预、横穿加拿大的自动驾驶行程。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。

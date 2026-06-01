@@ -99,7 +99,7 @@ How Allianz Partners Is Replacing Claims Operations with Autonomous AI Agents Th
 ## key_excerpts
 
 1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
-   How Allianz Partners Is Replacing Claims Operations with Autonomous AI Agents The company is now replacing that model entirely, using Otera's Autonomous AI agents, with a global rollout already live across multiple markets. Allianz Partners processes over 90 million cases per year across health, automotive, and travel insurance. At that scale, a single claim could take 29 days to resolve end-to-end, across dozens of disconnected systems, and the operating model scaled linearly with volume: more cases required more 
+   How Allianz Partners Is Replacing Claims Operations with Autonomous AI Agents The company is now replacing that model entirely, using Otera's Autonomous AI agents, with a global rollout already live across multiple markets. Allianz Partners processes over 90 million cases per year across health, automotive, and travel insurance. At that scale, a single claim could take 29 days to resolve end-to-end, across dozens of disconnected systems, and the operating model scaled linearly with volume: more cases required more
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    How Allianz Partners Is Replacing Claims Operations with Autonomous AI Agents The company is now replacing that model entirely, using Otera's Autonomous AI agents, with a global rollout already live across multiple markets.

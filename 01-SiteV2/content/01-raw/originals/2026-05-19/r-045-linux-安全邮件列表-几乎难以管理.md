@@ -89,7 +89,7 @@ Are we human?
 - business_actions: 暂无公开信息
 - affected_departments: IT / 安全
 - numbers: 100
-- quotes: 
+- quotes:
 AI漏洞挖掘工具的广泛应用导致Linux安全邮件列表收到的自动提交漏洞报告数量激增，使其
 
 ## evidence_seed

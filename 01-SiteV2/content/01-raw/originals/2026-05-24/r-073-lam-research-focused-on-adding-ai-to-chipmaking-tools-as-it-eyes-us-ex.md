@@ -134,7 +134,7 @@ Lam Research focused on adding AI to chipmaking tools as it eyes US expansion, C
 - importance_type: important_technical_trend
 - importance_score: 4
 - importance_reason: technical trend or capability shift; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 1
 - case_richness: 2

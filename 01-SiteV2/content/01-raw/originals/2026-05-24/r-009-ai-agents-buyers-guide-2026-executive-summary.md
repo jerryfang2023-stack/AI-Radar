@@ -239,7 +239,7 @@ Contact Us
 ## key_excerpts
 
 1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
-   Software Provider SummaryThe ISG Buyers Guide™ for AI Agents evaluates 32 software providers offering products supporting the design, orchestration and governance of autonomous AI agents across enterprise workflows and systems. The research ranked the top three overall leaders as Oracle, Databricks and AWS. Providers were classified using weighted performance in Product Experience and Customer Experience for ISG quadrant placement. Automation Anywhere, AWS, Boomi, Databricks, Dataiku, Google Cloud, IBM, Microsoft, 
+   Software Provider SummaryThe ISG Buyers Guide™ for AI Agents evaluates 32 software providers offering products supporting the design, orchestration and governance of autonomous AI agents across enterprise workflows and systems. The research ranked the top three overall leaders as Oracle, Databricks and AWS. Providers were classified using weighted performance in Product Experience and Customer Experience for ISG quadrant placement. Automation Anywhere, AWS, Boomi, Databricks, Dataiku, Google Cloud, IBM, Microsoft,
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    AI Agents Buyers Guide 2026 Executive Summary Thursday, March 26 2026 SHARE: Print David Menninger David Menninger David manages the software research and advisory for IT and leads the expertise in AI at ISG Software Research.
@@ -272,7 +272,7 @@ Contact Us
 ## evidence_seed
 
 - company_actions: AI Agents Buyers Guide 2026 Executive Summary Thursday, March 26 2026 SHARE: Print David Menninger David Menninger David manages the software research and advisory for IT and leads the expertise in AI at ISG Software Research. / He oversees the team and expertise areas for software used by IT and for what is used by business. / David leads the software research efforts in AI for IT and AI-infused software building on over three decades of experience in data and analytics.
-- case_details: Software Provider SummaryThe ISG Buyers Guide™ for AI Agents evaluates 32 software providers offering products supporting the design, orchestration and governance of autonomous AI agents across enterprise workflows and systems. The research ranked the top three overall leaders as Oracle, Databricks and AWS. Providers were classified using weighted performance in Product Experience and Customer Experience for ISG quadrant placement. Automation Anywhere, AWS, Boomi, Databricks, Dataiku, Google Cloud, IBM, Microsoft, 
+- case_details: Software Provider SummaryThe ISG Buyers Guide™ for AI Agents evaluates 32 software providers offering products supporting the design, orchestration and governance of autonomous AI agents across enterprise workflows and systems. The research ranked the top three overall leaders as Oracle, Databricks and AWS. Providers were classified using weighted performance in Product Experience and Customer Experience for ISG quadrant placement. Automation Anywhere, AWS, Boomi, Databricks, Dataiku, Google Cloud, IBM, Microsoft,
 - workflow_changes: 暂无公开信息
 - before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
 - affected_roles: CIO / IT 负责人, 采购负责人, 销售 / 客服

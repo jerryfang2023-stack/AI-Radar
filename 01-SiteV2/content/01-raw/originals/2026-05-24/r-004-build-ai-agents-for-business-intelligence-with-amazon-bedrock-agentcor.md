@@ -299,11 +299,11 @@ Email Updates
 - business_actions: 部署 / 上线, 融资 / 投资
 - affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
 - numbers: 2B, 35%, 91%, 98%, 2, 5 m, 92%, 88%
-- quotes: Retrieve deal data and metadata from Hubspot / 
+- quotes: Retrieve deal data and metadata from Hubspot /
 pass
 @tool
 def deal_enrichment(self, deal_data: dict) -> dict:
- / Analyze deal against OPLOG Way methodology / 
+ / Analyze deal against OPLOG Way methodology /
 pass
 @tool
 def send_teams(self, report: dict) -> bool:

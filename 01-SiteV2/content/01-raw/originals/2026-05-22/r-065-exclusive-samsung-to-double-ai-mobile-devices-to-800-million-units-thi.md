@@ -128,7 +128,7 @@ Exclusive: Samsung to double AI mobile devices to 800 million units this year | 
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 3

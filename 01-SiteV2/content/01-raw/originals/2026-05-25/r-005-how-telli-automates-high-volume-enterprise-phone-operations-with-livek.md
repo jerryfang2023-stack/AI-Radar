@@ -1,0 +1,286 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-005
+title: "How telli automates high-volume enterprise phone operations with LiveKit and ai-coustics | LiveKit"
+original_url: "https://livekit.com/blog/telli-automates-high-volume-enterprise-phone-operations-with-livekit-ai-coustics"
+canonical_url: "https://livekit.com/blog/telli-automates-high-volume-enterprise-phone-operations-with-livekit-ai-coustics"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-05-25T06:12:20.684Z
+language: mixed
+full_text_hash: 27f1f80f8a6e209c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-25/r-005-how-telli-automates-high-volume-enterprise-phone-operations-with-livek.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-05-25/r-005-how-telli-automates-high-volume-enterprise-phone-operations-with-livek.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":11483,"paragraph_count":44,"sentence_count":85,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"main"}
+has_full_text: true
+content_length: 11483
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"27f1f80f8a6e209c","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e62cbbc85fa407a7
+content_hash: 27f1f80f8a6e209c
+semantic_hash: f13033bc629c6827
+duplicate_of: ""
+first_seen_at: "2026-05-25T06:12:20.684Z"
+last_seen_at: 2026-05-25T06:12:20.684Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agents","Agents","agent"],"people":[],"industries":["企业服务"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2024 b","2","24 b","$3.6M","2025","50%","400","30"],"quotes":[]}
+evidence_seed: {"company_actions":["Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale. Backed by Y Combinator (F24 batch), telli raised a $3.6M pre-seed in April 2025 just two months after founding, and scaled revenue by more than 50% month over month in the months that followed. Today, telli runs tens of thousands of calls per day across 400+ ","They watched up close what happened when a lead never got reached, when a handoff went wrong, or when no one called back in time.","They didn't just see a product problem."],"case_details":["Blog / Customers From a sales floor to a technology company Finn zur Mühlen and Philipp Baumanns were the first two employees inside the heat pump unit of one of Germany's fastest-growing clean energy businesses, working at the heart of a call center with hundreds of agents and thousands of calls per day.","Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale."],"workflow_changes":["They saw B2C sales operations break at scale."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale. Backed by Y Combinator (F24 batch), telli raised a $3.6M pre-seed in April 2025 just two months after founding, and scaled revenue by more than 50% month over month in the months that followed. Today, telli runs tens of thousands of calls per day across 400+ ","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Blog / Customers From a sales floor to a technology company Finn zur Mühlen and Philipp Baumanns were the first two employees inside the heat pump unit of one of Germany's fastest-growing clean energy businesses, working at the heart of a call center with hundreds of agents and thousands of calls per day.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"They watched up close what happened when a lead never got reached, when a handoff went wrong, or when no one called back in time.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"They didn't just see a product problem.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"They saw B2C sales operations break at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# How telli automates high-volume enterprise phone operations with LiveKit and ai-coustics | LiveKit
+
+## clean_text
+
+Blog / Customers
+From a sales floor to a technology company
+Finn zur Mühlen and Philipp Baumanns were the first two employees inside the heat pump unit of one of Germany's fastest-growing clean energy businesses, working at the heart of a call center with hundreds of agents and thousands of calls per day.
+They watched up close what happened when a lead never got reached, when a handoff went wrong, or when no one called back in time. They didn't just see a product problem. They saw B2C sales operations break at scale.
+Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale. Backed by Y Combinator (F24 batch), telli raised a $3.6M pre-seed in April 2025 just two months after founding, and scaled revenue by more than 50% month over month in the months that followed.
+Today, telli runs tens of thousands of calls per day across 400+ SIP trunks, serving some of Europe's most demanding enterprises across energy, telecommunications, and other verticals, with agents deployed in over 30 languages across Germany, the UK, the United States, and Latin America.
+Why telli moved to LiveKit
+Behind every call at telli is a stateful voice agent. Each one has to orchestrate STT, LLM, and TTS inside a sub-second turn loop, handle interruptions and turn-taking, and recover cleanly when any layer fails mid-call. The runtime has to do all of this for tens of thousands of concurrent sessions while scaling dispatch as load spikes. The infrastructure underneath has to be both production-grade and something a small engineering team can keep extending.
+telli's first production stack was built on another open source voice agent framework. It got them live, but it didn't give them room to keep moving:
+"We are currently looking into building our next iteration of our voicebot and exploring different options. We are live [on our existing framework] but have found it harder to ship continuous improvement without breaking something else."
+Seb Hapte-Selassie, Co-founder, telli, on the decision to evaluate LiveKit
+Three weeks after starting the proof-of-concept, telli had migrated 100% of their call volume to LiveKit.
+The infrastructure layer
+LiveKit gives telli a unified platform for the layers voice AI at enterprise scale actually requires: reliable telephony, a realtime agent runtime, and compliant call recording.
+Telephony via SIP. Every enterprise call, inbound or outbound, flows through LiveKit's SIP trunking layer, which handles phone number management and carrier connectivity without requiring telli to operate telecom infrastructure themselves. telli runs production traffic across 400+ SIP trunks and multiple carriers, including direct integrations with Deutsche Telekom and other PSTN aggregators on behalf of specific enterprise customers. Enterprise customers with strict SLAs expect direct integration with their existing telecom stack: secure trunking with TLS, IP allowlisting, custom SIP headers on warm transfers. LiveKit supports all of it, which is what lets telli go from contract to production in under three weeks.
+LiveKit Agents framework. LiveKit provides the realtime audio pipeline, job scheduling, and agent dispatch that telli's voice AI runs on. The Agents framework is provider-agnostic: telli can pick any STT, LLM, or TTS and swap them per language or per customer without changing the surrounding pipeline, which is critical for an operator deploying across 30+ languages and tuning each market independently. Custom node overrides let telli inject prosody and audio processing directly into the agent's processing loop. Built-in OpenTelemetry tracing gives the engineering team production-grade observability across every step of an agent session.
+LiveKit Egress. Egress handles call recording across telli's deployments for compliance, quality assurance, and training data, a structural requirement for enterprise clients operating under strict regulatory and audit obligations. Recordings are captured before noise cancellation is applied, so telli has both the raw and enhanced audio streams available for compliance, QA, and benchmarking.
+Voice AI at production scale
+telli has built a number of production patterns on top of LiveKit's primitives. A few examples:
+State-aware turn detection . Default turn detection thresholds work for prototypes. They don't work when the same agent is talking to a fast-paced sales lead one minute and a slower-spoken customer the next. telli swaps interruption sensitivity and end-of-speech delay dynamically based on the agent's own state (listening, thinking, speaking), so the agent stays interruptible without misreading natural pauses. The pattern is implemented entirely on top of LiveKit Agents' built-in events.
+Dual-channel recording. Every production call is recorded with the caller and agent on separate channels via LiveKit Egress. That separation is what makes serious post-call analysis possible: QA reviewers and audio benchmarking tools can isolate either side of the conversation without running source separation after the fact.
+Multi-region SIP routing. European calls are pinned to a Frankfurt PSTN edge and terminate in LiveKit Cloud, keeping European voice traffic on European infrastructure. This is invisible to telli's end customers, but it keeps latency low and audio paths short across every market.
+End-to-end tracing. Every span of an agent session, from inbound SIP signaling through STT, LLM, TTS, and back out, is traced through telli's observability stack. When a call regresses in production, the team can pinpoint which layer was responsible in seconds rather than hours.
+EU data residency, by default
+telli's customers include energy companies, telecoms, and regulated B2C operators across Germany, the UK, and the rest of Europe. For all of them, keeping customer audio inside the EU isn't a feature, it's a requirement for a contract.
+LiveKit gives telli a production-grade EU data plane: Frankfurt media servers with EU-only routing, region pinning per trunk, static IP ranges that enterprise SBCs can whitelist for direct carrier integration, and a DPA with an explicit EU-only processing guarantee for EU customers. That's the foundation that makes direct integration with various carriers possible, and it's what unblocks deployments into Europe's most regulated enterprises.
+The cost of bad audio
+telli's customers don't experience a pipeline. They experience a conversation. When audio quality degrades, the caller hears an agent that stumbles, misreplies, or goes silent at the wrong moment. From the customer's perspective, there is no distinction between a poor STT transcription and a poor agent. It all reads as the product not working.
+"At our scale, audio quality isn't a detail. It's the difference between converting a customer and losing one. ai-coustics gives us the clarity our agents need to perform at volume."
+Seb Hapte-Selassie, Co-founder, telli
+In phone-based customer acquisition, the real bottleneck isn't speech generation. It's making voice work reliably across thousands of calls a day, through noisy environments, telephony compression, and the unpredictability of human speech.
+At enterprise volume, every edge case becomes a pattern. Short utterances (a caller saying "yes," "sure," or a two-digit number) were proving consistently difficult for STT models, degrading voice activity detection and breaking end-of-speech detection and turn-taking. The issues weren't unique to telli's implementation. They are structural to how voice AI handles real-world phone audio.
+The cost of poor audio compounds fast. Every misunderstood call risks escalating to a human agent at 5 to 8x the cost, and at telli's call volumes, those losses are not exceptions. They are line items. For enterprise clients operating under strict SLAs where every unresolved call is tracked and attributed, the question was never whether audio quality mattered, but how to fix it at scale across 30+ languages and the full range of acoustic conditions their callers actually call from.
+"Audio intelligence is the missing layer in voice AI, the gap between an agent that sounds good in a demo and one that works in production. telli recognized this early on, and it's the reason their agents run as reliably as they do."
+Fabian Seipel, Co-founder, ai-coustics
+Engineering the fix
+Most speech-enhancement tools are trained to make calls sound cleaner to a human listener. STT models, voice activity detection, and turn-taking logic aren't human listeners. They depend on acoustic detail that those tools have no reason to preserve, which is why traditional denoising made telli's calls sound better without actually fixing the transcription failures underneath.
+Quail Voice Focus 2.1 is built for machine understanding, not perceptual quality. telli integrated the ai-coustics SDK and Quail Voice Focus model via LiveKit's plugin directly into their voice agent pipeline as a pre-processing node between the inbound SIP audio stream and the STT model. telli worked closely with the ai-coustics team through a shared Slack channel, running hands-on evaluations on real agent calls across a range of languages and acoustic environments.
+What they found confirmed the framing. The core failures, undertranscription of short utterances and end-of-speech detection errors, responded to Quail's approach in ways that traditional denoising had not. telli adopted Quail VAD alongside Quail Voice Focus, formalizing call quality into a structured, benchmark-driven evaluation process across their production deployments.
+For before-and-after audio samples showing how the Quail Voice Focus 2.1 model performs, read the ai-coustics case study .
+Going enterprise
+telli is reshaping how Europe's largest companies run customer engagement in production.
+Working with Sky , Europe's leading entertainment and telecommunications company, telli went live in under three weeks, with LiveKit as the underlying voice AI infrastructure and ai-coustics handling audio quality across the deployment from day one. You don't onboard a company like Sky that fast unless the underlying stack is already production-hardened. telli is now running the same playbook with energy companies, telecoms, and other European enterprises that can't afford voice AI that works only most of the time.
+The same engineering partnership model that telli runs with ai-coustics extends to LiveKit. SIP carrier debugging, agent framework improvements, and direct access to the engineers behind the platform are part of the relationship, not exceptions to it, which is what makes the production reliability telli offers its own customers possible in the first place.
+With revenue growing nearly 3x in five months, telli has scaled into the voice AI that sales-driven B2C companies trust to convert more leads at scale. The combination of LiveKit for agent orchestration, realtime infrastructure, SIP, EU data residency, and recording, and ai-coustics for machine-optimized audio quality, is a significant part of how they got there.
+"Building for enterprise isn't just about having the right AI model. It's about having a stack you can stand behind when a customer calls at 9am on a Monday with a problem. LiveKit and ai-coustics are both products we can stand behind."
+Finn zur Mühlen, Co-founder, telli
+
+## full_text
+
+Blog / Customers
+From a sales floor to a technology company
+Finn zur Mühlen and Philipp Baumanns were the first two employees inside the heat pump unit of one of Germany's fastest-growing clean energy businesses, working at the heart of a call center with hundreds of agents and thousands of calls per day.
+They watched up close what happened when a lead never got reached, when a handoff went wrong, or when no one called back in time. They didn't just see a product problem. They saw B2C sales operations break at scale.
+Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale. Backed by Y Combinator (F24 batch), telli raised a $3.6M pre-seed in April 2025 just two months after founding, and scaled revenue by more than 50% month over month in the months that followed.
+Today, telli runs tens of thousands of calls per day across 400+ SIP trunks, serving some of Europe's most demanding enterprises across energy, telecommunications, and other verticals, with agents deployed in over 30 languages across Germany, the UK, the United States, and Latin America.
+Why telli moved to LiveKit
+Behind every call at telli is a stateful voice agent. Each one has to orchestrate STT, LLM, and TTS inside a sub-second turn loop, handle interruptions and turn-taking, and recover cleanly when any layer fails mid-call. The runtime has to do all of this for tens of thousands of concurrent sessions while scaling dispatch as load spikes. The infrastructure underneath has to be both production-grade and something a small engineering team can keep extending.
+telli's first production stack was built on another open source voice agent framework. It got them live, but it didn't give them room to keep moving:
+"We are currently looking into building our next iteration of our voicebot and exploring different options. We are live [on our existing framework] but have found it harder to ship continuous improvement without breaking something else."
+Seb Hapte-Selassie, Co-founder, telli, on the decision to evaluate LiveKit
+Three weeks after starting the proof-of-concept, telli had migrated 100% of their call volume to LiveKit.
+The infrastructure layer
+LiveKit gives telli a unified platform for the layers voice AI at enterprise scale actually requires: reliable telephony, a realtime agent runtime, and compliant call recording.
+Telephony via SIP. Every enterprise call, inbound or outbound, flows through LiveKit's SIP trunking layer, which handles phone number management and carrier connectivity without requiring telli to operate telecom infrastructure themselves. telli runs production traffic across 400+ SIP trunks and multiple carriers, including direct integrations with Deutsche Telekom and other PSTN aggregators on behalf of specific enterprise customers. Enterprise customers with strict SLAs expect direct integration with their existing telecom stack: secure trunking with TLS, IP allowlisting, custom SIP headers on warm transfers. LiveKit supports all of it, which is what lets telli go from contract to production in under three weeks.
+LiveKit Agents framework. LiveKit provides the realtime audio pipeline, job scheduling, and agent dispatch that telli's voice AI runs on. The Agents framework is provider-agnostic: telli can pick any STT, LLM, or TTS and swap them per language or per customer without changing the surrounding pipeline, which is critical for an operator deploying across 30+ languages and tuning each market independently. Custom node overrides let telli inject prosody and audio processing directly into the agent's processing loop. Built-in OpenTelemetry tracing gives the engineering team production-grade observability across every step of an agent session.
+LiveKit Egress. Egress handles call recording across telli's deployments for compliance, quality assurance, and training data, a structural requirement for enterprise clients operating under strict regulatory and audit obligations. Recordings are captured before noise cancellation is applied, so telli has both the raw and enhanced audio streams available for compliance, QA, and benchmarking.
+Voice AI at production scale
+telli has built a number of production patterns on top of LiveKit's primitives. A few examples:
+State-aware turn detection . Default turn detection thresholds work for prototypes. They don't work when the same agent is talking to a fast-paced sales lead one minute and a slower-spoken customer the next. telli swaps interruption sensitivity and end-of-speech delay dynamically based on the agent's own state (listening, thinking, speaking), so the agent stays interruptible without misreading natural pauses. The pattern is implemented entirely on top of LiveKit Agents' built-in events.
+Dual-channel recording. Every production call is recorded with the caller and agent on separate channels via LiveKit Egress. That separation is what makes serious post-call analysis possible: QA reviewers and audio benchmarking tools can isolate either side of the conversation without running source separation after the fact.
+Multi-region SIP routing. European calls are pinned to a Frankfurt PSTN edge and terminate in LiveKit Cloud, keeping European voice traffic on European infrastructure. This is invisible to telli's end customers, but it keeps latency low and audio paths short across every market.
+End-to-end tracing. Every span of an agent session, from inbound SIP signaling through STT, LLM, TTS, and back out, is traced through telli's observability stack. When a call regresses in production, the team can pinpoint which layer was responsible in seconds rather than hours.
+EU data residency, by default
+telli's customers include energy companies, telecoms, and regulated B2C operators across Germany, the UK, and the rest of Europe. For all of them, keeping customer audio inside the EU isn't a feature, it's a requirement for a contract.
+LiveKit gives telli a production-grade EU data plane: Frankfurt media servers with EU-only routing, region pinning per trunk, static IP ranges that enterprise SBCs can whitelist for direct carrier integration, and a DPA with an explicit EU-only processing guarantee for EU customers. That's the foundation that makes direct integration with various carriers possible, and it's what unblocks deployments into Europe's most regulated enterprises.
+The cost of bad audio
+telli's customers don't experience a pipeline. They experience a conversation. When audio quality degrades, the caller hears an agent that stumbles, misreplies, or goes silent at the wrong moment. From the customer's perspective, there is no distinction between a poor STT transcription and a poor agent. It all reads as the product not working.
+"At our scale, audio quality isn't a detail. It's the difference between converting a customer and losing one. ai-coustics gives us the clarity our agents need to perform at volume."
+Seb Hapte-Selassie, Co-founder, telli
+In phone-based customer acquisition, the real bottleneck isn't speech generation. It's making voice work reliably across thousands of calls a day, through noisy environments, telephony compression, and the unpredictability of human speech.
+At enterprise volume, every edge case becomes a pattern. Short utterances (a caller saying "yes," "sure," or a two-digit number) were proving consistently difficult for STT models, degrading voice activity detection and breaking end-of-speech detection and turn-taking. The issues weren't unique to telli's implementation. They are structural to how voice AI handles real-world phone audio.
+The cost of poor audio compounds fast. Every misunderstood call risks escalating to a human agent at 5 to 8x the cost, and at telli's call volumes, those losses are not exceptions. They are line items. For enterprise clients operating under strict SLAs where every unresolved call is tracked and attributed, the question was never whether audio quality mattered, but how to fix it at scale across 30+ languages and the full range of acoustic conditions their callers actually call from.
+"Audio intelligence is the missing layer in voice AI, the gap between an agent that sounds good in a demo and one that works in production. telli recognized this early on, and it's the reason their agents run as reliably as they do."
+Fabian Seipel, Co-founder, ai-coustics
+Engineering the fix
+Most speech-enhancement tools are trained to make calls sound cleaner to a human listener. STT models, voice activity detection, and turn-taking logic aren't human listeners. They depend on acoustic detail that those tools have no reason to preserve, which is why traditional denoising made telli's calls sound better without actually fixing the transcription failures underneath.
+Quail Voice Focus 2.1 is built for machine understanding, not perceptual quality. telli integrated the ai-coustics SDK and Quail Voice Focus model via LiveKit's plugin directly into their voice agent pipeline as a pre-processing node between the inbound SIP audio stream and the STT model. telli worked closely with the ai-coustics team through a shared Slack channel, running hands-on evaluations on real agent calls across a range of languages and acoustic environments.
+What they found confirmed the framing. The core failures, undertranscription of short utterances and end-of-speech detection errors, responded to Quail's approach in ways that traditional denoising had not. telli adopted Quail VAD alongside Quail Voice Focus, formalizing call quality into a structured, benchmark-driven evaluation process across their production deployments.
+For before-and-after audio samples showing how the Quail Voice Focus 2.1 model performs, read the ai-coustics case study .
+Going enterprise
+telli is reshaping how Europe's largest companies run customer engagement in production.
+Working with Sky , Europe's leading entertainment and telecommunications company, telli went live in under three weeks, with LiveKit as the underlying voice AI infrastructure and ai-coustics handling audio quality across the deployment from day one. You don't onboard a company like Sky that fast unless the underlying stack is already production-hardened. telli is now running the same playbook with energy companies, telecoms, and other European enterprises that can't afford voice AI that works only most of the time.
+The same engineering partnership model that telli runs with ai-coustics extends to LiveKit. SIP carrier debugging, agent framework improvements, and direct access to the engineers behind the platform are part of the relationship, not exceptions to it, which is what makes the production reliability telli offers its own customers possible in the first place.
+With revenue growing nearly 3x in five months, telli has scaled into the voice AI that sales-driven B2C companies trust to convert more leads at scale. The combination of LiveKit for agent orchestration, realtime infrastructure, SIP, EU data residency, and recording, and ai-coustics for machine-optimized audio quality, is a significant part of how they got there.
+"Building for enterprise isn't just about having the right AI model. It's about having a stack you can stand behind when a customer calls at 9am on a Monday with a problem. LiveKit and ai-coustics are both products we can stand behind."
+Finn zur Mühlen, Co-founder, telli
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":11483,"paragraph_count":44,"sentence_count":85,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale. Backed by Y Combinator (F24 batch), telli raised a $3.6M pre-seed in April 2025 just two months after founding, and scaled revenue by more than 50% month over month in the months that followed. Today, telli runs tens of thousands of calls per day across 400+
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Blog / Customers From a sales floor to a technology company Finn zur Mühlen and Philipp Baumanns were the first two employees inside the heat pump unit of one of Germany's fastest-growing clean energy businesses, working at the heart of a call center with hundreds of agents and thousands of calls per day.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   They watched up close what happened when a lead never got reached, when a handoff went wrong, or when no one called back in time.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   They didn't just see a product problem.
+
+5. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   They saw B2C sales operations break at scale.
+
+6. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agents, Agents, agent
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2024 b, 2, 24 b, $3.6M, 2025, 50%, 400, 30
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale. Backed by Y Combinator (F24 batch), telli raised a $3.6M pre-seed in April 2025 just two months after founding, and scaled revenue by more than 50% month over month in the months that followed. Today, telli runs tens of thousands of calls per day across 400+  / They watched up close what happened when a lead never got reached, when a handoff went wrong, or when no one called back in time. / They didn't just see a product problem.
+- case_details: Blog / Customers From a sales floor to a technology company Finn zur Mühlen and Philipp Baumanns were the first two employees inside the heat pump unit of one of Germany's fastest-growing clean energy businesses, working at the heart of a call center with hundreds of agents and thousands of calls per day. / Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale.
+- workflow_changes: They saw B2C sales operations break at scale.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Founded in 2024 by Finn, Philipp, and Stanford-educated computer scientist Seb Hapte-Selassie, telli builds AI voice agents that automate high-volume phone operations for B2C enterprises: lead qualification, appointment bookings, and customer service at scale. Backed by Y Combinator (F24 batch), telli raised a $3.6M pre-seed in April 2025 just two months after founding, and scaled revenue by more than 50% month over month in the months that followed. Today, telli runs tens of thousands of calls per day across 400+ SIP trunks, serving some of Europe's most demanding enterprises across energy, telecommunications, and other verticals, with agents deployed in over 30 languages across Germany, the UK, the United States, and Latin America. Three weeks after starting the proof-of-concept, telli had migrated 100% of their call volume to LiveKit. Telephony via SIP. Every enterprise call, inbound or outbound, flows through LiveKit's SIP trunking layer, which handles phone number management and carrier connectivity without requiring telli to operate telecom infrastructure themselves. telli runs production traffic across 400+ SIP trunks and multiple carriers, including direct integrations with Deutsche Telekom and other PSTN aggregators on behalf of specific enterprise customers. Enterprise customers with strict SLAs expect direct integration with their existing telecom stack: secure trunking with TLS, IP allowlisting, custom SIP headers on warm transfers. LiveKit supports all of it, which is what lets telli go from contract to production in under three weeks. LiveKit Agents framework. LiveKit STT, LLM deploying across 30+ languages and tuning each market independently. Custom node overrides let inject prosody processing loop. engineering team production Quail Voice Focus 2.1 is built for machine understanding, not perceptual quality. telli integrated the ai-coustics SDK and Quail Voice Focus model via LiveKit's plugin directly into their voice agent pipeline as a pre-processing node between the inbound SIP audio stream and the STT model. telli worked closely with the ai-coustics team through a shared Slack channel, running hands-on evaluations on real agent calls across a range of languages and acoustic environments. What they found confirmed the framing. The core failures, undertranscription of short utterances and end-of-speech detection errors, responded to Quail's approach in ways that traditional denoising had not. telli adopted Quail VAD alongside Quail Voice Focus, formalizing call quality into a structured, benchmark-driven evaluation process across their production deployments. companies run customer Working with Sky, Europe's leading entertainment and telecommunications company, telli went live in under three weeks, with LiveKit as the underlying voice AI infrastructure and ai-coustics handling audio quality across the deployment from day one. You don't onboard a company like Sky that fast unless the underlying stack is already production-hardened. telli is now running the same playbook with energy companies, telecoms, and other European enterprises that can't afford voice AI that works only most of the time. With revenue growing nearly 3x in five months, telli has scaled into the voice AI that sales-driven B2C companies trust to convert more leads at scale. The combination of LiveKit for agent orchestration, realtime infrastructure, SIP, EU data residency, and recording, and ai-coustics for machine-optimized audio quality, is a significant part of how they got there. Building for enterprise just about having the right AI model. It's about having a stack you can customer calls at 9am ai-coustics / score=70.167 / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

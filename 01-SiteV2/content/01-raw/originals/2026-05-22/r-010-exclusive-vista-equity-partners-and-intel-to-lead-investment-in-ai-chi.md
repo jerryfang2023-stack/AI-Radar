@@ -99,7 +99,7 @@ Exclusive: Vista Equity Partners and Intel to lead investment in AI chip startup
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
-   Exclusive: Vista Equity Partners and Intel to lead investment in AI chip startup SambaNova, sources say | Reuters a rare move outside acquisition talks stalled Feb 6 (Reuters) - Private equity firm Vista Equity Partners is leading a new funding round of over $350 million in artificial intelligence chip startup SambaNova Systems, marking a rare departure from its traditional focus on enterprise software, according to people familiar with the matter. Vista, through a partnership with early-stage venture capital firm 
+   Exclusive: Vista Equity Partners and Intel to lead investment in AI chip startup SambaNova, sources say | Reuters a rare move outside acquisition talks stalled Feb 6 (Reuters) - Private equity firm Vista Equity Partners is leading a new funding round of over $350 million in artificial intelligence chip startup SambaNova Systems, marking a rare departure from its traditional focus on enterprise software, according to people familiar with the matter. Vista, through a partnership with early-stage venture capital firm
 
 2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
    Exclusive: Vista Equity Partners and Intel to lead investment in AI chip startup SambaNova, sources say | Reuters a rare move outside acquisition talks stalled Feb 6 (Reuters) - Private equity firm Vista Equity Partners is leading a new funding round of over $350 million in artificial intelligence chip startup SambaNova Systems, marking a rare departure from its traditional focus on enterprise software, according to people familiar with the matter.
@@ -143,7 +143,7 @@ Exclusive: Vista Equity Partners and Intel to lead investment in AI chip startup
 - importance_type: important_case
 - importance_score: 5
 - importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 4
 - case_richness: 5

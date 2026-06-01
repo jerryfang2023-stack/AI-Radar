@@ -622,7 +622,7 @@ JavaScript
 - business_actions: 发布 / 推出, 融资 / 投资
 - affected_departments: IT / 安全, 销售 / 客服
 - numbers: 31, 11, 1, 97.5%, 2.5%, 2025, 12, 23
-- quotes: Agent Skills / agentSkills.skillRepositories /  your-username  /  your-skills-repo  /  skills 
+- quotes: Agent Skills / agentSkills.skillRepositories /  your-username  /  your-skills-repo  /  skills
 
 ## evidence_seed
 

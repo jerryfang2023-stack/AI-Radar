@@ -1,0 +1,284 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-015
+title: "44 Rounds, $2.66B: The Q1 2026 Agentic AI Funding Map | AgentMarketCap"
+original_url: "https://agentmarketcap.ai/blog/2026/04/07/q1-2026-agentic-ai-funding-map-44-rounds-verticals"
+canonical_url: "https://agentmarketcap.ai/blog/2026/04/07/q1-2026-agentic-ai-funding-map-44-rounds-verticals"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-01T06:37:20.785Z
+language: mixed
+full_text_hash: ae4fbbe599a44ccd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-015-44-rounds-2-66b-the-q1-2026-agentic-ai-funding-map-agentmarketcap.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-015-44-rounds-2-66b-the-q1-2026-agentic-ai-funding-map-agentmarketcap.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":10278,"paragraph_count":45,"sentence_count":73,"boilerplate_hits":0,"symbol_ratio":0.0008,"method":"main"}
+has_full_text: true
+content_length: 10278
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ae4fbbe599a44ccd","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 53cbedc93f5bbf90
+content_hash: ae4fbbe599a44ccd
+semantic_hash: 68fca6e5e7e282e7
+duplicate_of: ""
+first_seen_at: "2026-06-01T06:37:20.785Z"
+last_seen_at: 2026-06-01T06:37:20.785Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","Microsoft","ServiceNow"],"products":["agent","agents","MCP","Agent"],"people":[],"industries":["医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","采购","销售 / 客服"],"numbers":["44","$2.66B","1","2026","$2.4 billion","2023 b","$100M","$350 million"],"quotes":["vertical winner","pick-and-shovel","horizontal agent platform","will agentic AI work in enterprise?","which vertical wins first, and which infrastructure becomes load-bearing?"]}
+evidence_seed: {"company_actions":["On the second track: a maturing application layer where agentic AI companies are rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain. Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding. Sierra's trajec","The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.","xAI opened the year with a $20 billion Series E."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"On the second track: a maturing application layer where agentic AI companies are rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain. Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding. Sierra's trajec","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"xAI opened the year with a $20 billion Series E.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But if you're trying to understand where the agentic AI economy is actually forming, those mega-rounds are the wrong place to look.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Strip out the foundational model giants, and a different picture emerges.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Across 44 discrete funding rounds, agentic AI application companies raised $2.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# 44 Rounds, $2.66B: The Q1 2026 Agentic AI Funding Map | AgentMarketCap
+
+## clean_text
+
+The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation. xAI opened the year with a $20 billion Series E. But if you're trying to understand where the agentic AI economy is actually forming, those mega-rounds are the wrong place to look.
+Strip out the foundational model giants, and a different picture emerges. Across 44 discrete funding rounds, agentic AI application companies raised $2.66 billion in Q1 2026 — a 142.6% increase over the same period in 2025, when 71 rounds totaled just $1.09 billion. More rounds last year, far more money this year. The shift from volume to concentration tells you exactly where investor conviction has hardened.
+The Two-Speed Funding Environment
+Q1 2026 produced one of the most bifurcated venture markets in recent memory. On one track: foundational AI mega-rounds that would dwarf any previous year's totals on their own. Funding to foundational AI startups in Q1 2026 alone effectively doubled the entire 2025 total for that category.
+On the second track: a maturing application layer where agentic AI companies are closing rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain.
+The average round size for agentic-specific startups that closed in Q4 2025 or early 2026 reached $155 million — nearly double the $82 million average for rounds in H1 2025. That compression of timeline and expansion of check size is a reliable signal: late-stage institutional capital is moving from "explore" to "concentrate."
+The Four Verticals Capturing the Most Capital
+1. Customer Service: The First Mover Vertical
+Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding.
+Sierra's trajectory is the clearest illustration of what "vertical winner" looks like. Founded in 2023 by Bret Taylor and Clay Bavor, Sierra reached $100M ARR in just seven quarters and raised $350 million in September 2025 at a $10 billion valuation — a clean 10x revenue multiple at a time when most SaaS companies are trading at 5–7x. Customers including SoFi, Ramp, and Brex have provided the enterprise reference stack that makes the next procurement decision easier.
+The dynamic in customer service is increasingly winner-take-most at the upper end and winner-take-segment in the middle. Zendesk's acquisition of Forethought represents the first major consolidation play in the vertical: established CX platforms buying the agent stack rather than building it. That pattern, once it starts, tends to accelerate.
+2. Software Development: Highest Total Volume, Broadest Distribution
+Coding and developer-tool agentic startups collectively raised over $3 billion across recent rounds, making software development the highest-funded vertical by total capital. But unlike customer service, the distribution here is flatter — more companies, more strategies, more open questions about who actually wins.
+Cognition (Devin) raised $400 million. Lovable closed $400 million in January 2026, reaching unicorn status on the back of its browser-native, AI-first development environment. LangChain, the orchestration framework that became infrastructure for thousands of agent pipelines, closed a $125 million Series B at a $1.25 billion valuation — its investor list (IVP, Sequoia, Benchmark, CapitalG, ServiceNow Ventures, Datadog, Databricks) reads as a who's-who of enterprise infrastructure capital.
+What's notable in DevTools is the stratification: pure code generation tools, orchestration frameworks, testing infrastructure, and deployment environments are all attracting separate capital pools. The thesis that "one coding agent wins" is being quietly replaced by "the coding agent stack has five layers, and each layer has a leader."
+3. Healthcare: Concentrated Capital, Thin Middle
+Healthcare agentic AI shows the sharpest winner-take-most dynamics of any vertical. Hippocratic AI raised $402 million while most other healthcare-focused agent companies remain below $25 million in total funding — a bimodal distribution that reflects the difficulty of navigating HIPAA compliance, clinical validation requirements, and hospital procurement cycles.
+Ambience Healthcare's $243 million Series C in 2025 is the other anchor point: clinical documentation automation at scale, with the unit economics to support hospital-wide deployment. Below these leaders, dozens of startups are fighting for department-level pilots with no clear path to enterprise standardization.
+The healthcare vertical is also where the "embedded human team" model is gaining the most traction. Regulatory requirements around autonomous clinical decision-making mean that human-in-the-loop architectures aren't a concession — they're often the only path to regulatory approval. Startups building for that constraint, rather than against it, are finding faster procurement paths.
+4. Cybersecurity: M&A Dominates Over Equity
+The cybersecurity agentic AI story is playing out primarily in M&A rather than venture equity. The 10 leading agentic AI security startups saw $96 billion in M&A activity alongside $3.6 billion in Crunchbase-tracked equity funding through Q1 2026 — a ratio that suggests the established security platforms (CrowdStrike, Palo Alto Networks, Microsoft Defender) are acquiring the agent layer rather than partnering with it.
+Manifold, which raised an $8 million seed round in March 2026 for autonomous endpoint AI agent security, represents the early-stage end of this market. Sycamore's $65 million seed round — one of the largest seed rounds in enterprise AI history — sits at the infrastructure end, building an operating system for autonomous enterprise agents with security-first architecture.
+The pattern of large M&A combined with seed-stage equity suggests a barbell: acquirers consolidating proven technology at the top, and the venture market betting on the next generation of approaches at the bottom.
+The Infrastructure Bet: Orchestration Gets Institutional
+One of the clearest signals from Q1 2026 is that the orchestration and infrastructure layer is now attracting institutional capital that previously avoided "pick-and-shovel" AI plays. LangChain's unicorn round is the headline example, but the broader pattern extends to database providers (Neon, Supabase adding MCP-native agent connections), deployment infrastructure (E2B, Cloudflare's agent runtime), and data pipeline agents.
+Distyl AI's $175 million raise at a $1.8 billion valuation — for enterprise data access infrastructure that sits below the agent application layer — signals that investors are no longer content with "wrapper" companies. The funding is moving toward companies that own a structural layer in the agent stack, not just a workflow built on top of one.
+Round Size Distribution: What the Numbers Actually Mean
+Stage Q1 2025 Avg Q1 2026 Avg YoY Change
+Seed ~$8M ~$22M +175%
+Series A ~$30M ~$65M +117%
+Series B/C ~$82M ~$155M +89%
+Late Stage ~$250M ~$450M +80%
+The compression at early stages is particularly significant. Sycamore's $65 million seed round would have been a Series B in 2023. This isn't irrational exuberance — it reflects the fact that agentic AI companies are reaching revenue milestones faster than previous software categories, and investors are pricing rounds accordingly.
+The 44-round count also requires context. In Q1 2025, 71 rounds produced $1.09 billion — more deals, less money. In Q1 2026, 44 rounds produced $2.66 billion. That's a 37.5% reduction in deal count with a 144% increase in capital deployed. The market is not getting more active at the early stage; it's getting more concentrated at the growth stage.
+What the Distribution Reveals About Application-Layer Maturity
+Three structural patterns emerge from the Q1 2026 funding map:
+Pattern 1: Vertical depth beats horizontal breadth. The companies raising the largest rounds — Sierra in CX, Hippocratic in healthcare, Cognition in code — are deep vertical specialists, not general-purpose agent platforms. The "horizontal agent platform" thesis has largely stalled in favor of vertical ownership.
+Pattern 2: The middleware gap is closing. Orchestration frameworks (LangChain), deployment infrastructure (E2B), and data pipeline agents (Distyl) are getting funded at the growth stage for the first time. This suggests the stack is maturing enough that its underlying layers are defensible businesses, not commodities.
+Pattern 3: Round size predicts enterprise readiness. Companies crossing $100M rounds in agentic AI are uniformly showing enterprise contract evidence — multi-year agreements, security reviews, compliance certifications. The funding signal is reliable: if an agentic AI company is closing a $100M+ round in 2026, they have at least one marquee enterprise reference deploying at scale.
+The Signal Beneath the Mega-Rounds
+The Anthropic $30 billion round will dominate the Q1 2026 narrative for months. It should. But the more durable signal for the agentic AI economy is in the 44 rounds beneath it: application-layer companies with measurable revenue, enterprise customers, and vertical specialization are now attracting institutional capital at growth-stage multiples.
+That's not a bubble pattern — it's a maturation pattern. When Sierra reaches $100M ARR in seven quarters and raises at 10x revenue, that's not speculative. When LangChain closes a $1.25 billion unicorn round with Sequoia, Benchmark, Datadog, and Databricks on the cap table, that's infrastructure conviction.
+The Q1 2026 funding map shows an ecosystem that has moved past "will agentic AI work in enterprise?" and arrived at "which vertical wins first, and which infrastructure becomes load-bearing?" Those are better questions, and the capital is following them.
+Explore the full AI agent rankings at AgentMarketCap to compare capabilities, valuations, and market positioning across 500+ agents.
+Back to all posts
+AgentMarketCap — Track and discover AI agents. Scores are composite benchmarks and may not reflect real-world performance.
+
+## full_text
+
+The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation. xAI opened the year with a $20 billion Series E. But if you're trying to understand where the agentic AI economy is actually forming, those mega-rounds are the wrong place to look.
+Strip out the foundational model giants, and a different picture emerges. Across 44 discrete funding rounds, agentic AI application companies raised $2.66 billion in Q1 2026 — a 142.6% increase over the same period in 2025, when 71 rounds totaled just $1.09 billion. More rounds last year, far more money this year. The shift from volume to concentration tells you exactly where investor conviction has hardened.
+The Two-Speed Funding Environment
+Q1 2026 produced one of the most bifurcated venture markets in recent memory. On one track: foundational AI mega-rounds that would dwarf any previous year's totals on their own. Funding to foundational AI startups in Q1 2026 alone effectively doubled the entire 2025 total for that category.
+On the second track: a maturing application layer where agentic AI companies are closing rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain.
+The average round size for agentic-specific startups that closed in Q4 2025 or early 2026 reached $155 million — nearly double the $82 million average for rounds in H1 2025. That compression of timeline and expansion of check size is a reliable signal: late-stage institutional capital is moving from "explore" to "concentrate."
+The Four Verticals Capturing the Most Capital
+1. Customer Service: The First Mover Vertical
+Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding.
+Sierra's trajectory is the clearest illustration of what "vertical winner" looks like. Founded in 2023 by Bret Taylor and Clay Bavor, Sierra reached $100M ARR in just seven quarters and raised $350 million in September 2025 at a $10 billion valuation — a clean 10x revenue multiple at a time when most SaaS companies are trading at 5–7x. Customers including SoFi, Ramp, and Brex have provided the enterprise reference stack that makes the next procurement decision easier.
+The dynamic in customer service is increasingly winner-take-most at the upper end and winner-take-segment in the middle. Zendesk's acquisition of Forethought represents the first major consolidation play in the vertical: established CX platforms buying the agent stack rather than building it. That pattern, once it starts, tends to accelerate.
+2. Software Development: Highest Total Volume, Broadest Distribution
+Coding and developer-tool agentic startups collectively raised over $3 billion across recent rounds, making software development the highest-funded vertical by total capital. But unlike customer service, the distribution here is flatter — more companies, more strategies, more open questions about who actually wins.
+Cognition (Devin) raised $400 million. Lovable closed $400 million in January 2026, reaching unicorn status on the back of its browser-native, AI-first development environment. LangChain, the orchestration framework that became infrastructure for thousands of agent pipelines, closed a $125 million Series B at a $1.25 billion valuation — its investor list (IVP, Sequoia, Benchmark, CapitalG, ServiceNow Ventures, Datadog, Databricks) reads as a who's-who of enterprise infrastructure capital.
+What's notable in DevTools is the stratification: pure code generation tools, orchestration frameworks, testing infrastructure, and deployment environments are all attracting separate capital pools. The thesis that "one coding agent wins" is being quietly replaced by "the coding agent stack has five layers, and each layer has a leader."
+3. Healthcare: Concentrated Capital, Thin Middle
+Healthcare agentic AI shows the sharpest winner-take-most dynamics of any vertical. Hippocratic AI raised $402 million while most other healthcare-focused agent companies remain below $25 million in total funding — a bimodal distribution that reflects the difficulty of navigating HIPAA compliance, clinical validation requirements, and hospital procurement cycles.
+Ambience Healthcare's $243 million Series C in 2025 is the other anchor point: clinical documentation automation at scale, with the unit economics to support hospital-wide deployment. Below these leaders, dozens of startups are fighting for department-level pilots with no clear path to enterprise standardization.
+The healthcare vertical is also where the "embedded human team" model is gaining the most traction. Regulatory requirements around autonomous clinical decision-making mean that human-in-the-loop architectures aren't a concession — they're often the only path to regulatory approval. Startups building for that constraint, rather than against it, are finding faster procurement paths.
+4. Cybersecurity: M&A Dominates Over Equity
+The cybersecurity agentic AI story is playing out primarily in M&A rather than venture equity. The 10 leading agentic AI security startups saw $96 billion in M&A activity alongside $3.6 billion in Crunchbase-tracked equity funding through Q1 2026 — a ratio that suggests the established security platforms (CrowdStrike, Palo Alto Networks, Microsoft Defender) are acquiring the agent layer rather than partnering with it.
+Manifold, which raised an $8 million seed round in March 2026 for autonomous endpoint AI agent security, represents the early-stage end of this market. Sycamore's $65 million seed round — one of the largest seed rounds in enterprise AI history — sits at the infrastructure end, building an operating system for autonomous enterprise agents with security-first architecture.
+The pattern of large M&A combined with seed-stage equity suggests a barbell: acquirers consolidating proven technology at the top, and the venture market betting on the next generation of approaches at the bottom.
+The Infrastructure Bet: Orchestration Gets Institutional
+One of the clearest signals from Q1 2026 is that the orchestration and infrastructure layer is now attracting institutional capital that previously avoided "pick-and-shovel" AI plays. LangChain's unicorn round is the headline example, but the broader pattern extends to database providers (Neon, Supabase adding MCP-native agent connections), deployment infrastructure (E2B, Cloudflare's agent runtime), and data pipeline agents.
+Distyl AI's $175 million raise at a $1.8 billion valuation — for enterprise data access infrastructure that sits below the agent application layer — signals that investors are no longer content with "wrapper" companies. The funding is moving toward companies that own a structural layer in the agent stack, not just a workflow built on top of one.
+Round Size Distribution: What the Numbers Actually Mean
+Stage Q1 2025 Avg Q1 2026 Avg YoY Change
+Seed ~$8M ~$22M +175%
+Series A ~$30M ~$65M +117%
+Series B/C ~$82M ~$155M +89%
+Late Stage ~$250M ~$450M +80%
+The compression at early stages is particularly significant. Sycamore's $65 million seed round would have been a Series B in 2023. This isn't irrational exuberance — it reflects the fact that agentic AI companies are reaching revenue milestones faster than previous software categories, and investors are pricing rounds accordingly.
+The 44-round count also requires context. In Q1 2025, 71 rounds produced $1.09 billion — more deals, less money. In Q1 2026, 44 rounds produced $2.66 billion. That's a 37.5% reduction in deal count with a 144% increase in capital deployed. The market is not getting more active at the early stage; it's getting more concentrated at the growth stage.
+What the Distribution Reveals About Application-Layer Maturity
+Three structural patterns emerge from the Q1 2026 funding map:
+Pattern 1: Vertical depth beats horizontal breadth. The companies raising the largest rounds — Sierra in CX, Hippocratic in healthcare, Cognition in code — are deep vertical specialists, not general-purpose agent platforms. The "horizontal agent platform" thesis has largely stalled in favor of vertical ownership.
+Pattern 2: The middleware gap is closing. Orchestration frameworks (LangChain), deployment infrastructure (E2B), and data pipeline agents (Distyl) are getting funded at the growth stage for the first time. This suggests the stack is maturing enough that its underlying layers are defensible businesses, not commodities.
+Pattern 3: Round size predicts enterprise readiness. Companies crossing $100M rounds in agentic AI are uniformly showing enterprise contract evidence — multi-year agreements, security reviews, compliance certifications. The funding signal is reliable: if an agentic AI company is closing a $100M+ round in 2026, they have at least one marquee enterprise reference deploying at scale.
+The Signal Beneath the Mega-Rounds
+The Anthropic $30 billion round will dominate the Q1 2026 narrative for months. It should. But the more durable signal for the agentic AI economy is in the 44 rounds beneath it: application-layer companies with measurable revenue, enterprise customers, and vertical specialization are now attracting institutional capital at growth-stage multiples.
+That's not a bubble pattern — it's a maturation pattern. When Sierra reaches $100M ARR in seven quarters and raises at 10x revenue, that's not speculative. When LangChain closes a $1.25 billion unicorn round with Sequoia, Benchmark, Datadog, and Databricks on the cap table, that's infrastructure conviction.
+The Q1 2026 funding map shows an ecosystem that has moved past "will agentic AI work in enterprise?" and arrived at "which vertical wins first, and which infrastructure becomes load-bearing?" Those are better questions, and the capital is following them.
+Explore the full AI agent rankings at AgentMarketCap to compare capabilities, valuations, and market positioning across 500+ agents.
+Back to all posts
+AgentMarketCap — Track and discover AI agents. Scores are composite benchmarks and may not reflect real-world performance.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":10278,"paragraph_count":45,"sentence_count":73,"boilerplate_hits":0,"symbol_ratio":0.0008,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   On the second track: a maturing application layer where agentic AI companies are rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain. Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding. Sierra's trajec
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.
+
+3. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   xAI opened the year with a $20 billion Series E.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   But if you're trying to understand where the agentic AI economy is actually forming, those mega-rounds are the wrong place to look.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Strip out the foundational model giants, and a different picture emerges.
+
+6. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Across 44 discrete funding rounds, agentic AI application companies raised $2.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, Microsoft, ServiceNow
+- products: agent, agents, MCP, Agent
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 采购, 销售 / 客服
+- numbers: 44, $2.66B, 1, 2026, $2.4 billion, 2023 b, $100M, $350 million
+- quotes: vertical winner / pick-and-shovel / horizontal agent platform / will agentic AI work in enterprise? / which vertical wins first, and which infrastructure becomes load-bearing?
+
+## evidence_seed
+
+- company_actions: On the second track: a maturing application layer where agentic AI companies are rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain. Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding. Sierra's trajec / The headline numbers from Q1 2026 are staggering: Anthropic closed a $30 billion Series G at a $380 billion post-money valuation. / xAI opened the year with a $20 billion Series E.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+On the second track: a maturing application layer where agentic AI companies are rounds with cleaner unit economics, demonstrable ARR, and enterprise contract velocity that earlier-stage markets could not sustain. Customer service was the first enterprise function to get reconstructed around agentic AI, and it remains the highest-conviction vertical for large-cap investors. Sierra, Parloa, Decagon, Cresta, PolyAI, Forethought, and Wonderful have combined for more than $2.4 billion in equity funding. Sierra's trajectory is the clearest illustration of what "vertical winner" looks like. Founded in 2023 by Bret Taylor and Clay Bavor, Sierra reached $100M ARR in just seven quarters and raised $350 million in September 2025 at a $10 billion valuation — a clean 10x revenue multiple at a time when most SaaS companies are trading at 5–7x. Customers including SoFi, Ramp, and Brex have provided the enterprise reference stack that makes the next procurement decision easier. The dynamic in customer service is increasingly winner-take-most at the upper end and winner-take-segment in the middle. Zendesk's acquisition of Forethought represents the first major consolidation play in the vertical: established CX platforms buying the agent stack rather than building it. That pattern, once it starts, tends to accelerate. (Devin) raised . Lovable closed 400 2026, reaching unicorn status on the back of its browser-native, AI-first development environment. LangChain, the orchestration framework that became infrastructure for thousands of agent pipelines, closed a 125 million Series B at a $1.25 billion valuation — its investor list (IVP, Sequoia, Benchmark, CapitalG, ServiceNow Ventures, Datadog, Databricks) reads as a who's-who of enterprise infrastructure capital. Healthcare agentic AI . Hippocratic AI while most other healthcare-focused agent companies the difficulty of requirements, and hospital procurement Ambience Healthcare's $243 million Series C in 2025 is the other anchor point: clinical documentation automation at scale, with the unit economics to support hospital-wide deployment. Below these leaders, dozens of startups are fighting for department-level pilots with no clear path to enterprise standardization. Manifold, which raised an $8 million seed round in March 2026 for autonomous endpoint AI agent security, represents the early-stage end of this market. Sycamore's $65 million seed round — one of the largest seed rounds in enterprise AI history — sits at the infrastructure end, building an operating system for autonomous enterprise agents with security-first architecture. One of the clearest signals from Q1 2026 is that the orchestration and infrastructure layer is now attracting institutional capital that previously avoided "pick-and-shovel" AI plays. LangChain's unicorn round is the headline example, but the broader pattern extends to database providers (Neon, Supabase adding MCP-native agent connections), deployment infrastructure (E2B, Cloudflare's agent runtime), and data pipeline agents. Distyl AI's $175 million raise at a $1.8 billion valuation — for enterprise data access infrastructure that sits below the agent application layer — signals that investors are no longer content with "wrapper" companies. The funding is moving toward companies that own a structural layer in the agent stack, not just a workflow built on top of one. also requires context. 20 rounds produced $ — more deals, money. In Q1 2026, rounds produced $ .66 billion. That' a 37.5% with a 144% increase in capital deployed. is not getting more active at ; it's getting more Pattern 1: Vertical depth beats horizontal breadth. The companies raising the largest rounds — Sierra in CX, Hippocratic in healthcare, Cognition in code — are deep vertical specialists, not general-purpose agent platforms. The "horizontal agent platform" thesis has largely stalled in favor of vertical ownership. Pattern 2: The middleware gap is closing. Orchestration frameworks (LangChain), deployment infrastructure (E2B), and data pipeline agents (Distyl) are getting funded at the growth stage for the first time. This suggests the stack is maturing enough that its underlying layers are defensible businesses, not commodities. Pattern 3: Round size predicts enterprise readiness. Companies crossing $100M rounds in agentic AI are uniformly showing enterprise contract evidence — multi-year agreements, security reviews, compliance certifications. The funding signal is reliable: if an agentic AI company is closing a $100M+ round in 2026, they have at least one marquee enterprise reference deploying at scale. The Anthropic $30 billion round will dominate the Q1 2026 narrative for months. It should. But the more durable signal for the agentic AI economy is in the 44 rounds beneath it: application-layer companies with measurable revenue, enterprise customers, and vertical specialization are now attracting institutional capital at growth-stage multiples. That's not a bubble pattern — it's a maturation pattern. When Sierra reaches $100M ARR in seven quarters and raises at 10x revenue, that's not speculative. When LangChain closes a $1.25 billion unicorn round with Sequoia, Benchmark, Datadog, and Databricks on the cap table, that's infrastructure conviction. The Q1 2026 funding map shows an ecosystem that has moved past "will agentic AI work in enterprise?" and arrived at "which vertical wins first, and which infrastructure becomes load-bearing?" Those are better questions, and the capital is following them. / score=76.000 / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: execution-harness
-last_updated: 2026-05-24
+last_updated: 2026-06-01
 use_when:
   - daily monitoring
   - raw pool card workflow
@@ -21,7 +21,7 @@ priority: current
 
 ## 1. 使用原则
 
-- 只服务 V2.2 生产线。
+- 只服务 V2.2.1 生产线。
 - 先确定流程类型，再读取最小上下文。
 - 任何下游内容必须能追溯到 Raw / Pool / Card 或明确人工判断来源。
 - 失败、阻断、降级要明确写出，不允许靠补文案绕过质量门。
@@ -109,7 +109,7 @@ Stop 条件：
 
 - Card 不能从 `block`、`index_only`、搜索摘要、失败 provider 记录、官网首页、工具目录页或无正文页面生成。
 - 事实主证据必须来自 `raw_qc_decision=allow` 的 eligible core_pool 或已验收资产。
-- eligible `core_pool` 默认全部生成正式前台商业信号卡；不得再用单日数量上限、人工精选名额或目录/文档二次黑名单把已入 `core_pool` 的条目挡在前台之外。若不适合前台，应先修正 Raw-to-Pool 分流，不应在 Pool-to-Card 阶段静默丢弃。
+- eligible fact `core_pool` 默认全部生成正式前台商业信号卡；不得再用单日数量上限、人工精选名额或目录/文档二次黑名单把已入 `core_pool` 的事实型条目挡在前台之外。`important_viewpoint_or_article` 走观点卡 / 观点索引，不得自动生成事实型商业信号。若事实型材料不适合前台，应先修正 Raw-to-Pool 分流，不应在 Pool-to-Card 阶段静默丢弃。
 - `allow_with_degradation` 只能在 Daily Monitor QC 明确允许的弱范围内作为背景、补证提醒或观察线索。
 - 商业信号卡必须有具体主体、动作、时间、商业变量和边界。
 - 场景候选必须有行业 / 部门、岗位 / 使用者、AI 角色和流程变化。
@@ -172,6 +172,10 @@ Stop 条件：
 - 不得新增一级导航，除非用户明确确认。
 - 不得修改正式 Logo、SVG 生成脚本或品牌 token，除非用户明确确认。
 - 公开页面不得暴露 Raw / Pool / gate / 后台字段 / 入库 / 同步等生产语言。
+- 页面同步、页面大改或新增页面后必须运行前台回归门禁，拦截 V2.1 / V2.0 口径、已退休组件、旧模块文案和合成 fallback 内容重新进入前台。
+- 前台回归门禁命令为 `node agent-workflow/tools/frontstage-regression-gate.mjs`；失败即阻塞发布和下游继续。
+- 前台同步不得生成合成趋势报告、合成趋势 id 或旧页面兜底文案。没有正式趋势报告时，可以展示已放行的趋势候选；没有趋势候选时，应显示空状态，不得用历史页面或旧模块补位。
+- 趋势页、首页趋势模块和趋势详情页只能展示当前趋势的直接 `relations` 关联材料；不得用标签重叠、全站列表或历史内容 fallback 补充右侧案例、观点或信号。
 - 桌面端优先；移动端专项暂缓，除非任务明确要求。
 
 必须产出：
@@ -180,6 +184,7 @@ Stop 条件：
 - Copy-first 文案表。
 - 实现范围说明。
 - 桌面截图或核心交互检查说明。
+- `frontstage-regression-gate` 结果。
 - 是否新增表外字号、表外字重、表外文案的说明。
 
 Stop 条件：

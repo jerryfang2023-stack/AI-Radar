@@ -137,7 +137,7 @@ Game changer Codex automation 🙂 https://t.co/XUR4q6gI7v Practical AI tutorial
 - importance_type: important_viewpoint_or_article
 - importance_score: 3
 - importance_reason: influential viewpoint or article; rubric=3 plausible but not core-ready
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 5

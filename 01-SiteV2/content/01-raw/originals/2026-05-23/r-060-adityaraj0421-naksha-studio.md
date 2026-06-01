@@ -143,7 +143,7 @@ A virtual design team for Claude Code, Cursor, Windsurf, Gemini CLI, and Copilot
 - importance_type: important_case
 - importance_score: 4
 - importance_reason: real customer or adoption case; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 4

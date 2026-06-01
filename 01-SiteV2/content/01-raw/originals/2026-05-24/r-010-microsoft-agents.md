@@ -479,7 +479,7 @@ Other
 ## key_excerpts
 
 1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
-   The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat. With the Microsoft 365 Agents SDK, you can create agents deployable to channels of your choice, such as Microsoft 365 Copilot, Microsoft Teams, Web & Custom Apps and more, with scaffolding to handle the required communication. Developers can use the AI Services of their choice, and make the agents they build available using the channel management capabilities of 
+   The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat. With the Microsoft 365 Agents SDK, you can create agents deployable to channels of your choice, such as Microsoft 365 Copilot, Microsoft Teams, Web & Custom Apps and more, with scaffolding to handle the required communication. Developers can use the AI Services of their choice, and make the agents they build available using the channel management capabilities of
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    microsoft Agents Public Notifications You must be signed in to change notification settings Fork 301 Star 928 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 790 Commits 790 Commits .
@@ -513,7 +513,7 @@ m, 790, 928, 29, 55.0%
 ## evidence_seed
 
 - company_actions: microsoft Agents Public Notifications You must be signed in to change notification settings Fork 301 Star 928 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 790 Commits 790 Commits . / vscode agent-plugins agent-plugins docs docs experimental experimental samples samples specs specs . / gitignore AgentErrorCodes.
-- case_details: The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat. With the Microsoft 365 Agents SDK, you can create agents deployable to channels of your choice, such as Microsoft 365 Copilot, Microsoft Teams, Web & Custom Apps and more, with scaffolding to handle the required communication. Developers can use the AI Services of their choice, and make the agents they build available using the channel management capabilities of 
+- case_details: The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat. With the Microsoft 365 Agents SDK, you can create agents deployable to channels of your choice, such as Microsoft 365 Copilot, Microsoft Teams, Web & Custom Apps and more, with scaffolding to handle the required communication. Developers can use the AI Services of their choice, and make the agents they build available using the channel management capabilities of
 - workflow_changes: 暂无公开信息
 - before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
 - affected_roles: 开发者 / 工程团队

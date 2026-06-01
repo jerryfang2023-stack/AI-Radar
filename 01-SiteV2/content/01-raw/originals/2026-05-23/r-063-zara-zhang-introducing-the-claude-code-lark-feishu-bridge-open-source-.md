@@ -99,7 +99,7 @@ Introducing the Claude Code Lark/Feishu Bridge 🌉 (open-source) Talk to Claude
 ## key_excerpts
 
 1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
-   Introducing the Claude Code Lark/Feishu Bridge 🌉 (open-source) Talk to Claude Code in Lark/Feishu like a colleague - Use Claude Code on your phone via Lark chat - Manage multiple CC sessions as group chats in Lark (one chat = one session), say goodbye to messy terminal tabs - Claude Code can read all your work context in Lark (chat, docs, meeting transcripts, etc) via CLI - Claude Code can write Lark Docs for you; you can even @ mention it in the comment and it will reply - Forward any Lark messages to Claude and 
+   Introducing the Claude Code Lark/Feishu Bridge 🌉 (open-source) Talk to Claude Code in Lark/Feishu like a colleague - Use Claude Code on your phone via Lark chat - Manage multiple CC sessions as group chats in Lark (one chat = one session), say goodbye to messy terminal tabs - Claude Code can read all your work context in Lark (chat, docs, meeting transcripts, etc) via CLI - Claude Code can write Lark Docs for you; you can even @ mention it in the comment and it will reply - Forward any Lark messages to Claude and
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
    co/V1eRIg87wx Builder.
@@ -140,7 +140,7 @@ Introducing the Claude Code Lark/Feishu Bridge 🌉 (open-source) Talk to Claude
 - importance_type: important_product_or_service
 - importance_score: 4
 - importance_reason: new product or service; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 5

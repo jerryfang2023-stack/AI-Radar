@@ -127,7 +127,7 @@ there's 4 parts to this AI SDLC 1. have ~50 tests in place, with instructions to
 - business_actions: 部署 / 上线
 - affected_departments: IT / 安全
 - numbers: 4, 1, 50, 2, 3, 8, 0, 6
-- quotes:  3. (with plan)  /  3. (with plan) 
+- quotes:  3. (with plan)  /  3. (with plan)
 
 ## evidence_seed
 
@@ -143,7 +143,7 @@ there's 4 parts to this AI SDLC 1. have ~50 tests in place, with instructions to
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 4
 - case_richness: 5

@@ -451,7 +451,7 @@ function parseRefinedSignals(markdown, currentDate) {
       dateRefs: refinedDateRefs(body, itemDate),
       brief: sectionText(body, "导语") || paragraphAfterFields(body),
       judgment: sectionText(body, "导语") || paragraphAfterFields(body),
-      sources: "历史归档 + V2.1 精修",
+      sources: "历史归档 + V2.2.1 精修",
       sourcePath: field(body, "source_paths"),
       audience: "商业决策者 / 产品负责人 / 企业服务创业者",
       coordinates: relationFields.split(",").map((item) => item.split(":")[1]?.trim() || item.trim()).filter(Boolean).slice(0, 3),
@@ -1450,6 +1450,7 @@ function parseTrendCandidate(markdown, currentDate, sourcePath = "") {
     sourcePath,
     relationFields,
     relations: parseRelationTokens(relationFields),
+    link: "trend-tracking.html",
   };
   return { ...candidate, tags: formalTagIds.length ? tagsFromIds(formalTagIds) : inferTags(candidate, "trend") };
 }
@@ -1557,7 +1558,7 @@ function buildContentDateIndex(dayPackages, assets) {
         date,
         label: date.replaceAll("-", "."),
         title: `${date} 观澜判断`,
-        dek: "历史内容已完成 V2 化整理，可作为当前判断网络的时间线索。",
+        dek: "已整理内容可作为当前判断网络的时间线索。",
         signalCount: 0,
         pointCount: 0,
         trendCount: 0,
@@ -1587,7 +1588,7 @@ function buildContentDateIndex(dayPackages, assets) {
       if (!row) return;
       row.signalCount += 1;
       if (!row.title || /观澜判断$/u.test(row.title)) row.title = item.title;
-      if (!row.dek || /^历史内容已完成/u.test(row.dek)) row.dek = item.judgment || item.brief || row.dek;
+      if (!row.dek || /^已整理内容/u.test(row.dek)) row.dek = item.judgment || item.brief || row.dek;
     });
   });
   assets.points.forEach((item) => {
@@ -1596,7 +1597,7 @@ function buildContentDateIndex(dayPackages, assets) {
       if (!row) return;
       row.pointCount += 1;
       if (!row.title || /观澜判断$/u.test(row.title)) row.title = item.title;
-      if (!row.dek || /^历史内容已完成/u.test(row.dek)) row.dek = item.interpretation || item.calibrates || row.dek;
+      if (!row.dek || /^已整理内容/u.test(row.dek)) row.dek = item.interpretation || item.calibrates || row.dek;
     });
   });
   assets.trends.forEach((item) => {
@@ -1605,7 +1606,7 @@ function buildContentDateIndex(dayPackages, assets) {
       if (!row) return;
       row.trendCount += 1;
       if (!row.title || /观澜判断$/u.test(row.title)) row.title = item.title;
-      if (!row.dek || /^历史内容已完成/u.test(row.dek)) row.dek = item.judgment || row.dek;
+      if (!row.dek || /^已整理内容/u.test(row.dek)) row.dek = item.judgment || row.dek;
     });
   });
   assets.trendReports.forEach((item) => {
@@ -1614,38 +1615,11 @@ function buildContentDateIndex(dayPackages, assets) {
       if (!row) return;
       row.hasTrendReport = true;
       if (!row.title || /观澜判断$/u.test(row.title)) row.title = item.title;
-      if (!row.dek || /^历史内容已完成/u.test(row.dek)) row.dek = item.oneLine || row.dek;
+      if (!row.dek || /^已整理内容/u.test(row.dek)) row.dek = item.oneLine || row.dek;
     });
   });
 
   return [...byDate.values()].sort((a, b) => b.date.localeCompare(a.date));
-}
-
-function fallbackTrendReportFromDay(day, currentDate) {
-  const base = day.trends[0] || day.signals[0] || {};
-  const title = base.title ? `${base.title}｜继续观察` : `${currentDate} 趋势追踪仍在补证`;
-  const oneLine = base.judgment || base.brief || "今日暂无足够公开信息支撑深度趋势报告，先保留为继续观察方向。";
-  const trendReport = {
-    id: `TRD-WATCH-${currentDate.replaceAll("-", "")}`,
-    slug: slugify(title) || `trend-watch-${currentDate}`,
-    title: cleanPublicText(title),
-    oneLine: cleanPublicText(oneLine),
-    score: "继续观察",
-    stage: "暂无公开信息补足深挖条件",
-    date: currentDate,
-    updated: currentDate.replaceAll("-", "."),
-    sourcePath: base.sourcePath || "",
-    relationFields: "",
-    relations: [],
-    evidenceGaps: "暂未监测到足够同类案例、客户付费信息或多源证据，不能写成正式趋势结论。",
-    sections: [
-      ["机会判断", "今日暂无公开信息支撑完整机会判断，保留为趋势追踪候选。"],
-      ["同类产品", "暂未监测到同类案例。"],
-      ["后续观察", "继续看客户采用、预算归属、真实部署、定价变化和同类公司进展。"],
-    ],
-    link: "trend-detail.html",
-  };
-  return { ...trendReport, tags: inferTags(trendReport, "trendReport") };
 }
 
 const dates = await discoverDates();
@@ -1659,7 +1633,7 @@ const parsedTrends = activeDay.trends;
 const parsedTrendReport = activeDay.trendReport;
 const parsedRisks = activeDay.risks;
 const allTrendReports = dayPackages.map((item) => item.trendReport).filter(Boolean).reverse();
-const visibleTrendReports = allTrendReports.length ? allTrendReports : [fallbackTrendReportFromDay(activeDay, activeDate)];
+const visibleTrendReports = allTrendReports;
 const allSignals = dayPackages.flatMap((item) => item.signals);
 const allCases = uniqueById(dayPackages.flatMap((item) => item.cases || []).reverse());
 const allDailyArticles = dayPackages.map((item) => item.article).filter(Boolean).reverse();
@@ -1686,7 +1660,7 @@ const siteData = {
     date: activeDate.replaceAll("-", "."),
     sourceLabel: `Generated from 01-SiteV2/content (${contentDates.length} dates)`,
     brand: "观澜AI",
-    version: "V2.1",
+    version: "V2.2.1",
     generatedAt: new Date().toISOString(),
     contentRoot: "01-SiteV2/content",
   },
@@ -1712,7 +1686,7 @@ const siteData = {
     calibration: parsedOpinions.slice(0, 2),
     link: "daily-detail.html",
   },
-  trendReport: parsedTrendReport || visibleTrendReports[0],
+  trendReport: parsedTrendReport || parsedTrends[0] || null,
   brief: {
     issue: activeDay.businessBrief?.issue || "Preview.001",
     period: activeDay.businessBrief?.period || activeDate.replaceAll("-", "."),

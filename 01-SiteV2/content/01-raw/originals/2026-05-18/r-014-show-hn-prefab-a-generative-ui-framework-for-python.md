@@ -1110,7 +1110,7 @@ Responses are generated using AI and may contain mistakes.
 - business_actions: 部署 / 上线
 - affected_departments: IT / 安全, 销售 / 客服
 - numbers: 5, 0, 100, 24%, 78%, 20, 3, 70
-- quotes:  ctx_tick  /  destructive  /  success  /  default  /  Prefab Showcase 
+- quotes:  ctx_tick  /  destructive  /  success  /  default  /  Prefab Showcase
 
 ## evidence_seed
 

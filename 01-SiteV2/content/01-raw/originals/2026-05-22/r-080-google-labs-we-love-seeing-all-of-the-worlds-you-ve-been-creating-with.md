@@ -140,7 +140,7 @@ We love seeing all of the worlds you’ve been creating with Genie. SO much so, 
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 4

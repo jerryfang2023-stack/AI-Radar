@@ -134,7 +134,7 @@ SAN FRANCISCO (Reuters) -Vertical Semiconductor, a startup spun out of the Massa
 - importance_type: important_funding
 - importance_score: 5
 - importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

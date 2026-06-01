@@ -134,7 +134,7 @@ Cisco unveils new AI networking chip, taking on Broadcom and Nvidia | Reuters SA
 - importance_type: important_product_or_service
 - importance_score: 5
 - importance_reason: new product or service; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

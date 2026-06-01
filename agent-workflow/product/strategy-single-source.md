@@ -11,7 +11,7 @@
 
 它不是内容站，也不做 AI 新闻搬运、工具导航或普通日报，而是一个会持续感知、判断、表达、发布、复盘和进化的 AI 商业决策系统。
 
-V2.2 当前及后续的系统建设目标是 AI Native：Agent 之间要形成联动，通过结构化 handoff、质量门和自动化任务，把 Source / Raw / Pool / Card / Column / Site 串成可持续进化的生产链路。
+V2.2.1 当前及后续的系统建设目标是 AI Native：Agent 之间要形成联动，通过结构化 handoff、质量门和自动化任务，把 Source / Raw / Pool / Card / Column / Site 串成可持续进化的生产链路。
 
 ## 核心链路
 

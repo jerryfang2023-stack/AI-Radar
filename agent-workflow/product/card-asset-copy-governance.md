@@ -57,8 +57,8 @@ owner: intelligence-engine / experience-editorial / build-release
 
 从 2026-05-23 起，资产生成分为“草稿生成”和“前台放行”两层：
 
-- 草稿生成：每日先使用人工精选清单；同时从 eligible `core_pool` 自动补足商业信号卡。默认不设单日数量上限，eligible `core_pool` 应全部生成正式前台 `signal_card`；如果某条不应进入前台，必须回到 Raw-to-Pool 阶段修正其 `core_pool` 资格，而不是在卡片生成阶段静默丢弃。
-- 自动补足只允许使用 `raw_qc_decision=allow`、`has_full_text=true`、`source_level=S|A|B`、`extraction_quality=high|medium` 且不是目录页、文档页、Marketplace listing、社区观点或索引摘要的材料。
+- 草稿生成：每日先使用人工精选清单；同时从 eligible `core_pool` 自动补足事实型商业信号卡。默认不设单日数量上限，eligible fact `core_pool` 应全部生成正式前台 `signal_card`；如果某条事实型材料不应进入前台，必须回到 Raw-to-Pool 阶段修正其 `core_pool` 资格，而不是在卡片生成阶段静默丢弃。
+- 自动补足事实型 `signal_card` 只允许使用 `raw_qc_decision=allow`、`has_full_text=true`、`source_level=S|A|B`、`extraction_quality=high|medium`、`importance_type` 不是 `important_viewpoint_or_article`，且不是目录页、文档页、Marketplace listing、社区观点或索引摘要的材料。`important_viewpoint_or_article` 即使进入 `core_pool`，也必须走观点卡 / 观点索引，不得自动生成事实型商业信号。
 - 前台放行：不因为自动补足而降低质量门。进入正式前台展示仍必须通过事实门、前台文案门、卡片文案门和人工抽样 QC。
 - 观点材料先进入 `opinion_intake`；入库时必须同步写入中文翻译。只有补齐原文、中文翻译、人物/机构、事实边界和四档评级后，才能升级为正式 `opinion_card`。
 

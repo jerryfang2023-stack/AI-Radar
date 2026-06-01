@@ -723,7 +723,7 @@ Other
 - affected_departments: IT / 安全
 - numbers: 0, 1, 67.1%, 30.9%, 1.3%, 0.4%, 0.1%, 80.083
 - quotes: pdf extraction / pdf_extraction / pdf-reader-pack / report.pdf /  ])
-That's it. No framework glue. No dependency hell. No 
+That's it. No framework glue. No dependency hell. No
 
 ## evidence_seed
 

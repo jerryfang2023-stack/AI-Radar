@@ -240,7 +240,7 @@ brief_issue -> trend_candidate
 
 ## 10. 发布闸门
 
-V2.2 每日入站使用当前质量门。发布前检查按任务类型执行：
+V2.2.1 每日入站使用当前质量门。发布前检查按任务类型执行：
 
 ```powershell
 node agent-workflow/tools/run-quality-gates.mjs syntax
@@ -255,7 +255,7 @@ node agent-workflow/tools/run-quality-gates.mjs cardcopy --date=YYYY-MM-DD --req
 - 今日观察、商业信号、趋势追踪和商业内参是否没有把 AI HOT、follow-builders、社区或聚合源当作事实主证据。
 - 观点卡评级、展示位置和发布状态是否一致。
 - 站点数据同步后必须能通过相关语法和内容检查。
-- 已停止内容链路的同步闸门不作为 V2.2 当前验收条件。
+- 已停止内容链路的同步闸门不作为 V2.2.1 当前验收条件。
 
 ## 11. 长期报告
 

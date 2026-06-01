@@ -16,4 +16,3 @@ Key usable evidence:
 2. Named product: VeltrisOne.
 3. Event: launch of a vertical AI orchestration platform.
 4. Boundary: product launch only; needs customer adoption evidence for case use.
-

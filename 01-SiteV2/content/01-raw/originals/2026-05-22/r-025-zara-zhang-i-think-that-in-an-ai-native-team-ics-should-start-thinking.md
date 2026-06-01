@@ -143,7 +143,7 @@ I think that in an AI-native team, - ICs should start thinking like managers: ho
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 5

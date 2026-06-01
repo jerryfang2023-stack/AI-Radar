@@ -143,7 +143,7 @@ Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI workspace b
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 4

@@ -733,7 +733,7 @@ Other
    claude/ skills/ code-review .
 
 5. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
-   github cookbook cookbook docker docker helm/ hindsight helm/ hindsight hindsight-all-npm hindsight-all-npm hindsight-all-slim hindsight-all-slim hindsight-all hindsight-all hindsight-api-slim hindsight-api-slim hindsight-api hindsight-api hindsight-cli hindsight-cli hindsight-clients hindsight-clients hindsight-control-plane hindsight-control-plane hindsight-dev hindsight-dev hindsight-docs hindsight-docs hindsight-embed hindsight-embed hindsight-integration-tests hindsight-integration-tests hindsight-integrations 
+   github cookbook cookbook docker docker helm/ hindsight helm/ hindsight hindsight-all-npm hindsight-all-npm hindsight-all-slim hindsight-all-slim hindsight-all hindsight-all hindsight-api-slim hindsight-api-slim hindsight-api hindsight-api hindsight-cli hindsight-cli hindsight-clients hindsight-clients hindsight-control-plane hindsight-control-plane hindsight-dev hindsight-dev hindsight-docs hindsight-docs hindsight-embed hindsight-embed hindsight-integration-tests hindsight-integration-tests hindsight-integrations
 
 ## business_elements
 
@@ -750,7 +750,7 @@ Other
 # Recall: Search memories
 client . recall ( bank_id =  /  , query =  /  )
 # Reflect: Generate disposition-aware response
-client . reflect ( bank_id = 
+client . reflect ( bank_id =
 
 ## evidence_seed
 

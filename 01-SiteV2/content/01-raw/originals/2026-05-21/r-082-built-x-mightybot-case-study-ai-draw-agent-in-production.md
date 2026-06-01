@@ -16,4 +16,3 @@ Key usable evidence:
 2. The workflow is construction lending draw processing.
 3. The AI role is an AI Draw Agent.
 4. The case includes implementation timing and operational metrics that require final quote-level verification before publication.
-

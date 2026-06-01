@@ -132,7 +132,7 @@ Finally: Computational Discovery, powered by AlphaEvolve & our Empirical Researc
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 4

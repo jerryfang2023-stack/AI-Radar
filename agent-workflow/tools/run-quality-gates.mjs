@@ -30,7 +30,7 @@ const optionalFlag = (name) => (flags.has(name) ? [`--${name}=${flags.get(name)}
 // can fail with EPERM even though invoking `node` via PATH works. Prefer the PATH command on Windows.
 const node = process.platform === "win32" ? "node" : process.execPath;
 
-const knownModes = new Set(["syntax", "content", "site", "automation", "v2content", "style", "cardcopy", "typography", "raw", "tags", "all"]);
+const knownModes = new Set(["syntax", "content", "site", "automation", "v2content", "style", "cardcopy", "typography", "publiccopy", "regression", "raw", "tags", "all"]);
 
 if (!knownModes.has(mode)) {
   console.error(`Unknown quality gate mode: ${mode}`);
@@ -52,6 +52,8 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
     [node, ["--check", "agent-workflow/tools/card-copy-style-gate.mjs"], "card-copy-style-gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-public-copy-gate.mjs"], "public copy gate syntax"],
+    [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
     [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
     [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
@@ -89,6 +91,14 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
     [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
   ],
+  publiccopy: [
+    [node, ["--check", "agent-workflow/tools/assert-public-copy-gate.mjs"], "public copy gate syntax"],
+    [node, ["agent-workflow/tools/assert-public-copy-gate.mjs", `--date=${date}`, "--markdown=true"], "run public copy gate"],
+  ],
+  regression: [
+    [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression gate syntax"],
+    [node, ["agent-workflow/tools/frontstage-regression-gate.mjs"], "run frontstage regression gate"],
+  ],
   raw: [
     [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
     [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
@@ -107,6 +117,8 @@ const buildCommands = () => {
       [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
       [node, ["agent-workflow/tools/card-copy-style-gate.mjs", `--date=${date}`], "run card copy style gate"],
       [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
+      [node, ["agent-workflow/tools/assert-public-copy-gate.mjs", `--date=${date}`, "--markdown=true"], "run public copy gate"],
+      [node, ["agent-workflow/tools/frontstage-regression-gate.mjs"], "run frontstage regression gate"],
       [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
       [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
     ];
@@ -409,11 +421,13 @@ ${commandLines || "无"}
 ## 说明
 
 - 本脚本是 \`quality-gates.md\` 的统一入口。
-- V2.2 阶段默认检查 \`01-SiteV2/site/\` 与当前 \`agent-workflow/tools/\` 脚本。
+- V2.2.1 阶段默认检查 \`01-SiteV2/site/\` 与当前 \`agent-workflow/tools/\` 脚本。
 - \`content\`、\`v2content\` 和 \`all\` 会运行 V2 content gate；需要指定日期时使用 \`--date=YYYY-MM-DD\`。
 - \`style\` 会检查三个 writer 的文章产物是否出现禁词、抽象名词和高频重复句式。
 - \`cardcopy\` 会检查商业信号、前沿观点、变化候选、场景候选和趋势候选文案是否出现机械标题、内部词和空泛表达。
-- \`automation\` 检查 V2.2 每日生产线相关脚本语法。
+- \`publiccopy\` 会检查前台数据和当日 Markdown 是否出现内部生产语言或旧机械表达。
+- \`regression\` 会检查前台是否出现旧版本口径、已退休组件、旧模块文案、合成 fallback 内容、过期前台日期、过期缓存参数或趋势泛关联。
+- \`automation\` 检查 V2.2.1 每日生产线相关脚本语法。
 - 未覆盖的浏览器截图、多身份权限和人工内容判断，仍需 Build & Release 发布检查或 Product Commander 专项复核。
 `;
 

@@ -232,7 +232,7 @@ PwC is deploying Claude to build technology, execute deals, and reinvent enterpr
 - affected_departments: IT / 安全, 财务 / 预算
 - numbers: $2 trillion, 30, 000, 70%, 167, 5, 70.167, 14
 - quotes:  said Dario Amodei, Co-founder and CEO, Anthropic.
- / Customer Zero, /  said Andy Crowder, Chief Digital and AI Officer at Advocate Health. 
+ / Customer Zero, /  said Andy Crowder, Chief Digital and AI Officer at Advocate Health.
 
 ## evidence_seed
 

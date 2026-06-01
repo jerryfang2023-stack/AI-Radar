@@ -131,7 +131,7 @@ training chip | - Meta tests first AI training chip, part of plan to reduce reli
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 3

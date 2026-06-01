@@ -201,7 +201,7 @@ Modal title
    NEW YORK, March 5, 2026 /PRNewswire/ -- Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement, today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator. The new capital brings Lio's total funding to $33 million and will be used to accelerate product development and support its expansion into the U.S. [...] Lio addresses this challenge by introducing Agent Operating Proc
 
 2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
-   Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Accessibility Statement Skip Navigation Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement USA - English USA - English Deutschland - English Deutschland - Deutsch News provided by Lio Technologies GmbH Mar 05, 2026, 08:30 ET Share this article Share to X Share this article Share to X Backed by Andreessen Horowitz, the AI-native company is redefining procurement with a virtual workforce that executes purchasing end-to-end NEW 
+   Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement Accessibility Statement Skip Navigation Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement USA - English USA - English Deutschland - English Deutschland - Deutsch News provided by Lio Technologies GmbH Mar 05, 2026, 08:30 ET Share this article Share to X Share this article Share to X Backed by Andreessen Horowitz, the AI-native company is redefining procurement with a virtual workforce that executes purchasing end-to-end NEW
 
 3. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
    The new capital brings Lio's total funding to $33 million and will be used to accelerate product development and support its expansion into the U.
@@ -226,7 +226,7 @@ Modal title
 - business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
 - affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
 - numbers: $30M, 5, 2026, $30 million, 16, $33 million, 2023, 2000
-- quotes: The procurement organization of the future will look fundamentally different from today, / 
+- quotes: The procurement organization of the future will look fundamentally different from today, /
 said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart.
  / We're entering a phase in the enterprise where AI moves beyond workflow co-pilots to autonomous, multi-agent execution, / Lio is applying that shift to procurement – one of the largest and most operationally complex functions in the enterprise.
 

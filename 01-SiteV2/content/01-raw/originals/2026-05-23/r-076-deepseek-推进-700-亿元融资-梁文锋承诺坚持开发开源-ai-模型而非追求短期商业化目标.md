@@ -140,7 +140,7 @@ DeepSeek正推进700亿元人民币的巨额融资，估值约450亿美元。创
 - importance_type: important_funding
 - importance_score: 5
 - importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 3

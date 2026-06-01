@@ -1361,9 +1361,9 @@ You can’t perform that action at this time.
 - quotes:  : true ,  /  Torrix  /  }
 Check runs are being logged (requires your API key from Settings):
 Mac / Linux:
-curl http://localhost:8088/api/runs -H  / 
+curl http://localhost:8088/api/runs -H  /
 Windows (PowerShell):
-Invoke-WebRequest http: // localhost: 8088 / api / runs - Headers @ { Authorization =  /  Authorization: Bearer <your-torrix-api-key> 
+Invoke-WebRequest http: // localhost: 8088 / api / runs - Headers @ { Authorization =  /  Authorization: Bearer <your-torrix-api-key>
 
 ## evidence_seed
 

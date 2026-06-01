@@ -126,7 +126,7 @@ Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

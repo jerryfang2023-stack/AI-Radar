@@ -132,7 +132,7 @@ Gemini 3.5 Flash is out, and it's a major jump over Gemini 3 Flash in model capa
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 4
 - evidence_strength: 4
 - case_richness: 5

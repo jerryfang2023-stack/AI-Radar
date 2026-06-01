@@ -128,7 +128,7 @@ A Cambridge spinout has secured €211 million in funding from Italy to power th
 - importance_type: important_funding
 - importance_score: 5
 - importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 2

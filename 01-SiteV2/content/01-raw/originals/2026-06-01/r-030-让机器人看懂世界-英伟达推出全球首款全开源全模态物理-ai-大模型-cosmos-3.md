@@ -1,0 +1,227 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-030
+title: "让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3"
+original_url: "https://www.ithome.com/0/958/103.htm"
+canonical_url: "https://ithome.com/0/958/103.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-01T05:57:02.000Z"
+collected_at: 2026-06-01T06:37:20.885Z
+language: mixed
+full_text_hash: 2474029b7c0a2ffb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-030-让机器人看懂世界-英伟达推出全球首款全开源全模态物理-ai-大模型-cosmos-3.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-030-让机器人看懂世界-英伟达推出全球首款全开源全模态物理-ai-大模型-cosmos-3.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 63
+extractor_diagnostics: {"readability_score":63,"text_length":1346,"paragraph_count":18,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 1346
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2474029b7c0a2ffb","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3","discovery_summary":"英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/958/103.htm","discovered_at":"2026-06-01T06:34:00.328Z","rank_on_page":12,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 941693f9872b0cb1
+content_hash: 2474029b7c0a2ffb
+semantic_hash: 2e5d2f44f34521f4
+duplicate_of: ""
+first_seen_at: "2026-06-01T05:57:02.000Z"
+last_seen_at: 2026-06-01T06:37:20.885Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","Nvidia"],"products":[],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["3","6","1","2"],"quotes":["多模态推理语言、视觉与世界模型接连取得突破，物理人工智能的变革时代即将到来。Cosmos 3 系列开源前沿全模态模型，将助力开发者实现技术跨越，打造能在现实世界中感知、推理、规划并执行动作的机器人、自动驾驶汽车及视觉人工智能系统。"]}
+evidence_seed: {"company_actions":["英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。","IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。","它能将物理人工智能的训练与评估周期从数月缩短至数日。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"英伟达称，Cosmos 3 是全球首款全开源的全模态大模型，可原生理解并生成文本、图像、视频、环境音效及动作内容，物理仿真精度业界领先。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"它能将物理人工智能的训练与评估周期从数月缩短至数日。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"英伟达同时发起英伟达宇宙联盟（NVIDIA Cosmos Coalition），汇聚全球世界模型研发团队与人工智能开发者携手合作，成员包括 Agile Robots、Black Forest Labs、Generalist、LTX、Runway 以及 Skild AI，共同推动下一代世界模型技术发展。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"英伟达创始人兼首席执行官黄仁勋表示：“多模态推理语言、视觉与世界模型接连取得突破，物理人工智能的变革时代即将到来。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3
+
+## clean_text
+
+IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。
+英伟达称，Cosmos 3 是全球首款全开源的全模态大模型，可原生理解并生成文本、图像、视频、环境音效及动作内容，物理仿真精度业界领先。它能将物理人工智能的训练与评估周期从数月缩短至数日。
+英伟达同时发起英伟达宇宙联盟（NVIDIA Cosmos Coalition），汇聚全球世界模型研发团队与人工智能开发者携手合作，成员包括 Agile Robots、Black Forest Labs、Generalist、LTX、Runway 以及 Skild AI，共同推动下一代世界模型技术发展。
+英伟达创始人兼首席执行官黄仁勋表示：“多模态推理语言、视觉与世界模型接连取得突破，物理人工智能的变革时代即将到来。Cosmos 3 系列开源前沿全模态模型，将助力开发者实现技术跨越，打造能在现实世界中感知、推理、规划并执行动作的机器人、自动驾驶汽车及视觉人工智能系统。”
+物理人工智能长期面临一大核心难题：如何让机器人、自动驾驶车辆与视觉智能体，依托有限训练数据和零散仿真框架，在真实场景中具备泛化能力。Cosmos 3 就此给出解决方案。
+该模型采用混合 Transformer 架构，将推理 Transformer 与专精生成类 Transformer 相结合。模型会先解析物体交互、运动规律以及时空关联关系，再完成视频生成与动作轨迹预测。
+Cosmos 3 基于海量多模态物理人工智能数据集训练而成，涵盖数十亿条文本、图像、视频、音效及动作轨迹样本。开发者借助这款预训练基础模型，能用更少数据、更低成本搭建物理人工智能系统。
+开发者可将 Cosmos 3 用作三类工具：
+1. 多模态图文大模型，实现跨模态理解与推理；
+2. 世界模型 / 视频基础模型，仿真物理环境、预判场景未来状态，支撑模型训练与评估；
+3. 世界动作模型主干网络，辅助训练机器人完成各类专项任务。
+IT之家注意到，在物理人工智能主流评测基准中，Cosmos 3 表现优异。在开源模型范畴内，其世界生成精度在 Artificial Analysis、Physics-IQ、PAI-Bench 和 R-Bench 中排名第一；动作策略能力领跑 RoboLab 和 RoboArena 基准；视觉理解能力位居 VANTAGE-Bench 和 TAR 榜单榜首。
+Cosmos 3 提供多个版本，适配物理人工智能不同研发阶段需求：
+Cosmos 3 Super：面向机器人与自动驾驶模型的二次训练，追求极致物理精度与生成效果；
+Cosmos 3 Nano：数秒内即可完成高品质视频解析与动作推理；
+Cosmos 3 Edge：即将上线，主打边缘端实时推理。
+Cosmos 3 Super 与 Nano 现已正式推出，Edge 版也即将上线，支持边缘端实时推理。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。
+英伟达称，Cosmos 3 是全球首款全开源的全模态大模型，可原生理解并生成文本、图像、视频、环境音效及动作内容，物理仿真精度业界领先。它能将物理人工智能的训练与评估周期从数月缩短至数日。
+英伟达同时发起英伟达宇宙联盟（NVIDIA Cosmos Coalition），汇聚全球世界模型研发团队与人工智能开发者携手合作，成员包括 Agile Robots、Black Forest Labs、Generalist、LTX、Runway 以及 Skild AI，共同推动下一代世界模型技术发展。
+英伟达创始人兼首席执行官黄仁勋表示：“多模态推理语言、视觉与世界模型接连取得突破，物理人工智能的变革时代即将到来。Cosmos 3 系列开源前沿全模态模型，将助力开发者实现技术跨越，打造能在现实世界中感知、推理、规划并执行动作的机器人、自动驾驶汽车及视觉人工智能系统。”
+物理人工智能长期面临一大核心难题：如何让机器人、自动驾驶车辆与视觉智能体，依托有限训练数据和零散仿真框架，在真实场景中具备泛化能力。Cosmos 3 就此给出解决方案。
+该模型采用混合 Transformer 架构，将推理 Transformer 与专精生成类 Transformer 相结合。模型会先解析物体交互、运动规律以及时空关联关系，再完成视频生成与动作轨迹预测。
+Cosmos 3 基于海量多模态物理人工智能数据集训练而成，涵盖数十亿条文本、图像、视频、音效及动作轨迹样本。开发者借助这款预训练基础模型，能用更少数据、更低成本搭建物理人工智能系统。
+开发者可将 Cosmos 3 用作三类工具：
+1. 多模态图文大模型，实现跨模态理解与推理；
+2. 世界模型 / 视频基础模型，仿真物理环境、预判场景未来状态，支撑模型训练与评估；
+3. 世界动作模型主干网络，辅助训练机器人完成各类专项任务。
+IT之家注意到，在物理人工智能主流评测基准中，Cosmos 3 表现优异。在开源模型范畴内，其世界生成精度在 Artificial Analysis、Physics-IQ、PAI-Bench 和 R-Bench 中排名第一；动作策略能力领跑 RoboLab 和 RoboArena 基准；视觉理解能力位居 VANTAGE-Bench 和 TAR 榜单榜首。
+Cosmos 3 提供多个版本，适配物理人工智能不同研发阶段需求：
+Cosmos 3 Super：面向机器人与自动驾驶模型的二次训练，追求极致物理精度与生成效果；
+Cosmos 3 Nano：数秒内即可完成高品质视频解析与动作推理；
+Cosmos 3 Edge：即将上线，主打边缘端实时推理。
+Cosmos 3 Super 与 Nano 现已正式推出，Edge 版也即将上线，支持边缘端实时推理。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 63
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":63,"text_length":1346,"paragraph_count":18,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。
+
+3. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   英伟达称，Cosmos 3 是全球首款全开源的全模态大模型，可原生理解并生成文本、图像、视频、环境音效及动作内容，物理仿真精度业界领先。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   它能将物理人工智能的训练与评估周期从数月缩短至数日。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   英伟达同时发起英伟达宇宙联盟（NVIDIA Cosmos Coalition），汇聚全球世界模型研发团队与人工智能开发者携手合作，成员包括 Agile Robots、Black Forest Labs、Generalist、LTX、Runway 以及 Skild AI，共同推动下一代世界模型技术发展。
+
+6. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   英伟达创始人兼首席执行官黄仁勋表示：“多模态推理语言、视觉与世界模型接连取得突破，物理人工智能的变革时代即将到来。
+
+## business_elements
+
+- companies: IT之家（RSS）, Nvidia
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 3, 6, 1, 2
+- quotes: 多模态推理语言、视觉与世界模型接连取得突破，物理人工智能的变革时代即将到来。Cosmos 3 系列开源前沿全模态模型，将助力开发者实现技术跨越，打造能在现实世界中感知、推理、规划并执行动作的机器人、自动驾驶汽车及视觉人工智能系统。
+
+## evidence_seed
+
+- company_actions: 英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。 / IT之家 6 月 1 日消息，英伟达今日正式推出英伟达 Cosmos 3，这是一款面向物理人工智能的开放世界基础大模型，依托混合 Transformer 架构打造，在单一系统中融合视觉推理、世界生成与动作预测能力。 / 它能将物理人工智能的训练与评估周期从数月缩短至数日。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"让机器人看懂世界：英伟达推出全球首款全开源全模态物理 AI 大模型 Cosmos 3","discovery_summary":"英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/958/103.htm","discovered_at":"2026-06-01T06:34:00.328Z","rank_on_page":12,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+英伟达推出全球首款全开源全模态物理AI大模型Cosmos 3。该模型基于混合Transformer架构，可在单一系统中融合文本、图像、视频、音效及动作内容的理解与生成，将物理AI的训练与评估周期从数月缩短至数日。Cosmos 3在Artificial Analysis、Physics-IQ等多个评测基准上排名第一，提供Super和Nano版本用于机器人与自动驾驶的训练与实时推理，Edge版本即将推出。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

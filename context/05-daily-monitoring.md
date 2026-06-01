@@ -1,7 +1,7 @@
 ---
 title: Daily Monitoring Minimal Context
 date: 2026-05-22
-status: active-v2.1
+status: active-v2.2
 owner: intelligence-engine / product-commander
 ---
 
@@ -226,7 +226,7 @@ NewsAPI is retired from the current monitoring path. Do not add `NEWSAPI_KEY` ba
 
 Duplicate provider hits are merged before Raw selection. The kept record should prefer usable original URL, valid `published_at`, longer snippet/full-text lead and higher-source reliability; merged records should be traceable through `duplicate_status=merged_provider_duplicates` or equivalent notes.
 
-Pool-to-Card rule: once an item is eligible `core_pool` with `raw_qc_decision=allow`, it should generate a frontstage business signal card by default. Do not use a separate daily card cap after `core_pool`; if a result should not appear publicly, fix the Raw-to-Pool routing instead of silently dropping it in card generation.
+Pool-to-Card rule: once a fact item is eligible `core_pool` with `raw_qc_decision=allow`, it should generate a frontstage business signal card by default. `important_viewpoint_or_article` must go through the opinion-card path instead of being auto-converted into a fact signal. Do not use a separate daily card cap after fact `core_pool`; if a fact result should not appear publicly, fix the Raw-to-Pool routing instead of silently dropping it in card generation.
 
 ## 12. Lane Volume Backfill Rule
 

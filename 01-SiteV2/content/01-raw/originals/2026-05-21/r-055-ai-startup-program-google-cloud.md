@@ -128,7 +128,7 @@ copyright_note: local research archive only
 - importance_type: important_funding
 - importance_score: 4
 - importance_reason: funding or investment event; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

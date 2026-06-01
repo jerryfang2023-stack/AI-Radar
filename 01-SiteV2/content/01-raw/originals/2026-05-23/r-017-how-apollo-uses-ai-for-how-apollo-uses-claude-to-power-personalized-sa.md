@@ -267,7 +267,7 @@ Technology Claude API Amazon Bedrock
 - business_actions: 合作 / 联盟, 部署 / 上线
 - affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
 - numbers: 3.5, 5 million, 35%, 15%, 76%, 80%, 40%, 1
-- quotes:  The technology can be very powerful, but it's not very accessible for users who don't want extensive configuration time. 
+- quotes:  The technology can be very powerful, but it's not very accessible for users who don't want extensive configuration time.
 
 ## evidence_seed
 

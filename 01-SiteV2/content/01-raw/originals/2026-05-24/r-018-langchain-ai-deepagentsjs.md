@@ -452,7 +452,7 @@ TypeScript
 - quotes: deepagents /  ,
 content :  / @langchain/openai / deepagents /  , temperature : 0 } ) ,
 tools : [ myCustomTool ] ,
-systemPrompt : 
+systemPrompt :
 
 ## evidence_seed
 

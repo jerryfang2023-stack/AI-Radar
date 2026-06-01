@@ -344,7 +344,7 @@ www.bing.com
 - business_actions: 暂无公开信息
 - affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
 - numbers: 160, 1, 2, 3, 1706, 1125, 814, 4
-- quotes:  I 'll grant that ,  /  although it hardly seems to be an inference . It 's really implicit in the statement .  /  这个 我 同意 ，  /  尽管 这 看起来 根本 不 算 个 推论 。 事实上 这 只 不过是 句子 本身 的 暗示 。  /  not supported by scientific data 
+- quotes:  I 'll grant that ,  /  although it hardly seems to be an inference . It 's really implicit in the statement .  /  这个 我 同意 ，  /  尽管 这 看起来 根本 不 算 个 推论 。 事实上 这 只 不过是 句子 本身 的 暗示 。  /  not supported by scientific data
 
 ## evidence_seed
 

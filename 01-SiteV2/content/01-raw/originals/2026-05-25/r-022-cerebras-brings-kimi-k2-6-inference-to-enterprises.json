@@ -1,0 +1,260 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-022",
+  "title": "Cerebras Brings Kimi K2.6 Inference to Enterprises",
+  "original_url": "https://www.cerebras.ai/blog/cerebras-kimi-k2-Enterprise",
+  "canonical_url": "https://cerebras.ai/blog/cerebras-kimi-k2-Enterprise",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-05-25T06:12:20.867Z",
+  "language": "mixed",
+  "full_text": "May 19 2026\nCerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6\nJames Wang\nCerebras is now running Kimi K2.6 — the leading trillion parameter open-weight model — in enterprise customer trials. Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to customers such as OpenAI and Cognition on agentic coding models. K2.6 is one of the most frequently requested models, and we are excited to bring it to customers. It is the first one trillion parameter open-weight model we have served, achieving performance approaching 1,000 tokens per second as measured by Artificial Analysis. The result: agentic coding shifts from wait-and-review loops to real-time development, dramatically boosting developer productivity.\nThe Fastest 1 Trillion Parameter Open Model\nArtificial Analysis measured Cerebras running K2.6 at 981 output tokens per second — 6.7x faster than the next-fastest GPU-based cloud, and 23x faster than the median inference provider.\nFast inference dramatically speeds up end-to-end response time, making agentic coding feel near instant. For a 10,000-token input request — inclusive of prompt processing, reasoning, and generating 500 output tokens — Cerebras delivered the full response in 5.6 seconds, compared to 163.7 seconds on the official Kimi endpoint. That is a 29x improvement in time to final answer.\n“Cerebras has achieved 981 tokens per second on Kimi K2.6 — the fastest performance we have ever measured on a trillion parameter model. The result is consistent with Cerebras's track record of leading output speeds across the models served on Cerebras hardware,” said George Cameron, co-founder, Artificial Analysis.\nKimi K2.6 – Frontier Intelligence, Open Weights\nK2.6 is widely regarded as the leading open-weight model for coding and agentic work. It tops SWE-Bench Pro at 58.6, outperforming Claude Opus 4.6 and matching GPT-5.4, while leading the field on agentic benchmarks like Humanity’s Last Exam and DeepSearchQA. Developers have adopted it as the open alternative to closed-source frontier models — particularly for coding, where its taste for clean front-end design has made it a favorite for full-stack application generation. The 2.6 release extends that capability from front-end into full-stack workflows, including authentication, database operations, and long-horizon agent execution.\nTrillion Parameter Serving on Cerebras\nThe Cerebras Wafer-Scale Engine is built for scale. A cluster of CS-3 systems can be configured to support multi-trillion parameter models for both training and inference, and we have spent significant engineering effort optimizing the stack to serve large models efficiently.\nCerebras stores Kimi K2.6 in the model’s original 4-bit weights while performing computation at 16-bit floating point, for optimal accuracy. Weights are distributed across multiple wafers, with activations streamed between them. All-to-all communications between layers run entirely using on-wafer network fabric, which has over 200x the bandwidth of NVLink on NVL72. Combined with our custom kernels and speculative decoding, we can serve trillion parameter MoE models at close to 1,000 tokens per second, setting a world record.\nWhat This Unlocks: Agentic Coding at Speed\nAgentic coding has become the highest-value use case for large language models, and it is the workload most sensitive to inference speed. At close to a thousand tokens per second, Kimi generates code an order of magnitude faster than popular models such as Claude Opus. Developers are able to iterate quickly, get to final solution faster, and stay focused on one task instead of spinning up multiple agents and switching between them. Front-end iteration feels near-instant while code re-factors and challenging bug fixes complete in a fraction of the time.\nAvailable Now for Enterprise Customers\nCerebras is offering enterprise trials of K2.6 to customers today. If you are running agentic coding, deep research, or any production AI workload where inference speed is the bottleneck, we would love to hear from you.\nContact sales →\nAll measurements made by Artificial Analysis on May 6th 2026 via a private endpoint on the Cerebras Inference API.",
+  "clean_text": "May 19 2026\nCerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6\nJames Wang\nCerebras is now running Kimi K2.6 — the leading trillion parameter open-weight model — in enterprise customer trials. Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to customers such as OpenAI and Cognition on agentic coding models. K2.6 is one of the most frequently requested models, and we are excited to bring it to customers. It is the first one trillion parameter open-weight model we have served, achieving performance approaching 1,000 tokens per second as measured by Artificial Analysis. The result: agentic coding shifts from wait-and-review loops to real-time development, dramatically boosting developer productivity.\nThe Fastest 1 Trillion Parameter Open Model\nArtificial Analysis measured Cerebras running K2.6 at 981 output tokens per second — 6.7x faster than the next-fastest GPU-based cloud, and 23x faster than the median inference provider.\nFast inference dramatically speeds up end-to-end response time, making agentic coding feel near instant. For a 10,000-token input request — inclusive of prompt processing, reasoning, and generating 500 output tokens — Cerebras delivered the full response in 5.6 seconds, compared to 163.7 seconds on the official Kimi endpoint. That is a 29x improvement in time to final answer.\n“Cerebras has achieved 981 tokens per second on Kimi K2.6 — the fastest performance we have ever measured on a trillion parameter model. The result is consistent with Cerebras's track record of leading output speeds across the models served on Cerebras hardware,” said George Cameron, co-founder, Artificial Analysis.\nKimi K2.6 – Frontier Intelligence, Open Weights\nK2.6 is widely regarded as the leading open-weight model for coding and agentic work. It tops SWE-Bench Pro at 58.6, outperforming Claude Opus 4.6 and matching GPT-5.4, while leading the field on agentic benchmarks like Humanity’s Last Exam and DeepSearchQA. Developers have adopted it as the open alternative to closed-source frontier models — particularly for coding, where its taste for clean front-end design has made it a favorite for full-stack application generation. The 2.6 release extends that capability from front-end into full-stack workflows, including authentication, database operations, and long-horizon agent execution.\nTrillion Parameter Serving on Cerebras\nThe Cerebras Wafer-Scale Engine is built for scale. A cluster of CS-3 systems can be configured to support multi-trillion parameter models for both training and inference, and we have spent significant engineering effort optimizing the stack to serve large models efficiently.\nCerebras stores Kimi K2.6 in the model’s original 4-bit weights while performing computation at 16-bit floating point, for optimal accuracy. Weights are distributed across multiple wafers, with activations streamed between them. All-to-all communications between layers run entirely using on-wafer network fabric, which has over 200x the bandwidth of NVLink on NVL72. Combined with our custom kernels and speculative decoding, we can serve trillion parameter MoE models at close to 1,000 tokens per second, setting a world record.\nWhat This Unlocks: Agentic Coding at Speed\nAgentic coding has become the highest-value use case for large language models, and it is the workload most sensitive to inference speed. At close to a thousand tokens per second, Kimi generates code an order of magnitude faster than popular models such as Claude Opus. Developers are able to iterate quickly, get to final solution faster, and stay focused on one task instead of spinning up multiple agents and switching between them. Front-end iteration feels near-instant while code re-factors and challenging bug fixes complete in a fraction of the time.\nAvailable Now for Enterprise Customers\nCerebras is offering enterprise trials of K2.6 to customers today. If you are running agentic coding, deep research, or any production AI workload where inference speed is the bottleneck, we would love to hear from you.\nContact sales →\nAll measurements made by Artificial Analysis on May 6th 2026 via a private endpoint on the Cerebras Inference API.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-25/r-022-cerebras-brings-kimi-k2-6-inference-to-enterprises.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-05-25/r-022-cerebras-brings-kimi-k2-6-inference-to-enterprises.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 4328,
+    "paragraph_count": 16,
+    "sentence_count": 28,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 4328,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8480cf62d4bd3e2e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "6e803a5d366d988a",
+  "content_hash": "8480cf62d4bd3e2e",
+  "full_text_hash": "8480cf62d4bd3e2e",
+  "semantic_hash": "5889a6fac41b306b",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-25T06:12:20.867Z",
+  "last_seen_at": "2026-05-25T06:12:20.867Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Cerebras Brings Kimi K2.6 Inference to Enterprises Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6 >> # Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6 Cerebras is now running Kimi K2.6 — the leading trillion parameter open-weight model — in enterprise customer trials. Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "May 19 2026 Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "6 James Wang Cerebras is now running Kimi K2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "6 — the leading trillion parameter open-weight model — in enterprise customer trials.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to customers such as OpenAI and Cognition on agentic coding models.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI"
+    ],
+    "products": [
+      "Claude",
+      "GPT-5",
+      "agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2.6",
+      "4.7",
+      "120B",
+      "3",
+      "1",
+      "000",
+      "981",
+      "6.7x"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "May 19 2026 Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.",
+      "6 James Wang Cerebras is now running Kimi K2.",
+      "Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4."
+    ],
+    "case_details": [
+      "Cerebras Brings Kimi K2.6 Inference to Enterprises Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6 >> # Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6 Cerebras is now running Kimi K2.6 — the leading trillion parameter open-weight model — in enterprise customer trials. Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to",
+      "6 — the leading trillion parameter open-weight model — in enterprise customer trials.",
+      "7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to customers such as OpenAI and Cognition on agentic coding models."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Cerebras Brings Kimi K2.6 Inference to Enterprises\n\n- raw_id: R-022\n- original_url: https://www.cerebras.ai/blog/cerebras-kimi-k2-Enterprise\n- source_name: keyword search / Anysearch\n- collected_at: 2026-05-25T06:12:20.867Z\n\n## clean_text\n\nMay 19 2026\nCerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6\nJames Wang\nCerebras is now running Kimi K2.6 — the leading trillion parameter open-weight model — in enterprise customer trials. Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to customers such as OpenAI and Cognition on agentic coding models. K2.6 is one of the most frequently requested models, and we are excited to bring it to customers. It is the first one trillion parameter open-weight model we have served, achieving performance approaching 1,000 tokens per second as measured by Artificial Analysis. The result: agentic coding shifts from wait-and-review loops to real-time development, dramatically boosting developer productivity.\nThe Fastest 1 Trillion Parameter Open Model\nArtificial Analysis measured Cerebras running K2.6 at 981 output tokens per second — 6.7x faster than the next-fastest GPU-based cloud, and 23x faster than the median inference provider.\nFast inference dramatically speeds up end-to-end response time, making agentic coding feel near instant. For a 10,000-token input request — inclusive of prompt processing, reasoning, and generating 500 output tokens — Cerebras delivered the full response in 5.6 seconds, compared to 163.7 seconds on the official Kimi endpoint. That is a 29x improvement in time to final answer.\n“Cerebras has achieved 981 tokens per second on Kimi K2.6 — the fastest performance we have ever measured on a trillion parameter model. The result is consistent with Cerebras's track record of leading output speeds across the models served on Cerebras hardware,” said George Cameron, co-founder, Artificial Analysis.\nKimi K2.6 – Frontier Intelligence, Open Weights\nK2.6 is widely regarded as the leading open-weight model for coding and agentic work. It tops SWE-Bench Pro at 58.6, outperforming Claude Opus 4.6 and matching GPT-5.4, while leading the field on agentic benchmarks like Humanity’s Last Exam and DeepSearchQA. Developers have adopted it as the open alternative to closed-source frontier models — particularly for coding, where its taste for clean front-end design has made it a favorite for full-stack application generation. The 2.6 release extends that capability from front-end into full-stack workflows, including authentication, database operations, and long-horizon agent execution.\nTrillion Parameter Serving on Cerebras\nThe Cerebras Wafer-Scale Engine is built for scale. A cluster of CS-3 systems can be configured to support multi-trillion parameter models for both training and inference, and we have spent significant engineering effort optimizing the stack to serve large models efficiently.\nCerebras stores Kimi K2.6 in the model’s original 4-bit weights while performing computation at 16-bit floating point, for optimal accuracy. Weights are distributed across multiple wafers, with activations streamed between them. All-to-all communications between layers run entirely using on-wafer network fabric, which has over 200x the bandwidth of NVLink on NVL72. Combined with our custom kernels and speculative decoding, we can serve trillion parameter MoE models at close to 1,000 tokens per second, setting a world record.\nWhat This Unlocks: Agentic Coding at Speed\nAgentic coding has become the highest-value use case for large language models, and it is the workload most sensitive to inference speed. At close to a thousand tokens per second, Kimi generates code an order of magnitude faster than popular models such as Claude Opus. Developers are able to iterate quickly, get to final solution faster, and stay focused on one task instead of spinning up multiple agents and switching between them. Front-end iteration feels near-instant while code re-factors and challenging bug fixes complete in a fraction of the time.\nAvailable Now for Enterprise Customers\nCerebras is offering enterprise trials of K2.6 to customers today. If you are running agentic coding, deep research, or any production AI workload where inference speed is the bottleneck, we would love to hear from you.\nContact sales →\nAll measurements made by Artificial Analysis on May 6th 2026 via a private endpoint on the Cerebras Inference API.\n\n## full_text\n\nMay 19 2026\nCerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6\nJames Wang\nCerebras is now running Kimi K2.6 — the leading trillion parameter open-weight model — in enterprise customer trials. Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to customers such as OpenAI and Cognition on agentic coding models. K2.6 is one of the most frequently requested models, and we are excited to bring it to customers. It is the first one trillion parameter open-weight model we have served, achieving performance approaching 1,000 tokens per second as measured by Artificial Analysis. The result: agentic coding shifts from wait-and-review loops to real-time development, dramatically boosting developer productivity.\nThe Fastest 1 Trillion Parameter Open Model\nArtificial Analysis measured Cerebras running K2.6 at 981 output tokens per second — 6.7x faster than the next-fastest GPU-based cloud, and 23x faster than the median inference provider.\nFast inference dramatically speeds up end-to-end response time, making agentic coding feel near instant. For a 10,000-token input request — inclusive of prompt processing, reasoning, and generating 500 output tokens — Cerebras delivered the full response in 5.6 seconds, compared to 163.7 seconds on the official Kimi endpoint. That is a 29x improvement in time to final answer.\n“Cerebras has achieved 981 tokens per second on Kimi K2.6 — the fastest performance we have ever measured on a trillion parameter model. The result is consistent with Cerebras's track record of leading output speeds across the models served on Cerebras hardware,” said George Cameron, co-founder, Artificial Analysis.\nKimi K2.6 – Frontier Intelligence, Open Weights\nK2.6 is widely regarded as the leading open-weight model for coding and agentic work. It tops SWE-Bench Pro at 58.6, outperforming Claude Opus 4.6 and matching GPT-5.4, while leading the field on agentic benchmarks like Humanity’s Last Exam and DeepSearchQA. Developers have adopted it as the open alternative to closed-source frontier models — particularly for coding, where its taste for clean front-end design has made it a favorite for full-stack application generation. The 2.6 release extends that capability from front-end into full-stack workflows, including authentication, database operations, and long-horizon agent execution.\nTrillion Parameter Serving on Cerebras\nThe Cerebras Wafer-Scale Engine is built for scale. A cluster of CS-3 systems can be configured to support multi-trillion parameter models for both training and inference, and we have spent significant engineering effort optimizing the stack to serve large models efficiently.\nCerebras stores Kimi K2.6 in the model’s original 4-bit weights while performing computation at 16-bit floating point, for optimal accuracy. Weights are distributed across multiple wafers, with activations streamed between them. All-to-all communications between layers run entirely using on-wafer network fabric, which has over 200x the bandwidth of NVLink on NVL72. Combined with our custom kernels and speculative decoding, we can serve trillion parameter MoE models at close to 1,000 tokens per second, setting a world record.\nWhat This Unlocks: Agentic Coding at Speed\nAgentic coding has become the highest-value use case for large language models, and it is the workload most sensitive to inference speed. At close to a thousand tokens per second, Kimi generates code an order of magnitude faster than popular models such as Claude Opus. Developers are able to iterate quickly, get to final solution faster, and stay focused on one task instead of spinning up multiple agents and switching between them. Front-end iteration feels near-instant while code re-factors and challenging bug fixes complete in a fraction of the time.\nAvailable Now for Enterprise Customers\nCerebras is offering enterprise trials of K2.6 to customers today. If you are running agentic coding, deep research, or any production AI workload where inference speed is the bottleneck, we would love to hear from you.\nContact sales →\nAll measurements made by Artificial Analysis on May 6th 2026 via a private endpoint on the Cerebras Inference API.\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] Cerebras Brings Kimi K2.6 Inference to Enterprises Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6 >> # Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.6 Cerebras is now running Kimi K2.6 — the leading trillion parameter open-weight model — in enterprise customer trials. Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] May 19 2026 Cerebras Brings Trillion Parameter Inference to Enterprises with Kimi K2.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] 6 James Wang Cerebras is now running Kimi K2.\n4. [case_detail / daily_observation, heatmap, case / high] 6 — the leading trillion parameter open-weight model — in enterprise customer trials.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] Widely recognized as the leader in fast inference, Cerebras has set benchmarks across numerous open-weight models including GLM-4.\n6. [case_detail / daily_observation, heatmap, case / high] 7, GPT-OSS-120B, and Qwen 3, while delivering dramatic speedups to customers such as OpenAI and Cognition on agentic coding models.\n"
+}

@@ -128,7 +128,7 @@ $20000+: 0 positions $40000+: 0 positions $60000+: 0 positions $80000+: 0 positi
 - importance_type: important_funding
 - importance_score: 5
 - importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 4

@@ -99,7 +99,7 @@ At Mercanis, we are building the Agentic AI Procurement Suite that powers the pr
 ## key_excerpts
 
 1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
-   At Mercanis, we are building the Agentic AI Procurement Suite that powers the procurement of tomorrow, digital, transparent, and intelligent.We are looking for an experienced AI Agentic Engineer to join our growing AI team. In this role, you will design, build, and optimize agentic AI systems that automate complex procurement workflows and power intelligent decision-making across our platform.You will work with cutting-edge technologies in Python, LangGraph, and AWS, integrating and fine-tuning models from leading 
+   At Mercanis, we are building the Agentic AI Procurement Suite that powers the procurement of tomorrow, digital, transparent, and intelligent.We are looking for an experienced AI Agentic Engineer to join our growing AI team. In this role, you will design, build, and optimize agentic AI systems that automate complex procurement workflows and power intelligent decision-making across our platform.You will work with cutting-edge technologies in Python, LangGraph, and AWS, integrating and fine-tuning models from leading
 
 2. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
    At Mercanis, we are building the Agentic AI Procurement Suite that powers the procurement of tomorrow, digital, transparent, and intelligent.
