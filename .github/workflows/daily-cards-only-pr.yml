@@ -1,0 +1,375 @@
+name: WaveSight Daily Cards Only PR
+
+on:
+  schedule:
+    # 08:30 Asia/Shanghai, every day.
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Asia/Shanghai date to run, formatted as YYYY-MM-DD. Leave empty for today."
+        required: false
+        type: string
+      pass_score:
+        description: "Daily Monitor pre-gate pass score."
+        required: false
+        default: "80"
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: wavesight-daily-cards-only-pr-${{ github.event.inputs.date || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  cards-only-pr:
+    name: Cards Only Scheduled PR
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      TZ: Asia/Shanghai
+      ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Resolve run date
+        id: run-date
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            run_date="${{ github.event.inputs.date }}"
+          else
+            run_date="$(TZ=Asia/Shanghai date +%F)"
+          fi
+
+          if ! [[ "$run_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "Invalid date: $run_date" >&2
+            exit 2
+          fi
+
+          echo "date=$run_date" >> "$GITHUB_OUTPUT"
+          echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
+
+      - name: Report cloud dependency state
+        shell: bash
+        run: |
+          {
+            echo "# GitHub Daily Cards Only PR"
+            echo
+            echo "- date: ${RUN_DATE}"
+            echo "- generated_at: $(date -Is)"
+            echo "- mode: cards_only_pr"
+            echo "- trigger: ${{ github.event_name }}"
+            echo "- schedule: 08:30 Asia/Shanghai daily"
+            echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
+            echo "- tavily_secret: $([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing)"
+            echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
+            echo "- openai_or_deepseek_required: false"
+            echo
+            echo "This workflow commits to an automation branch and opens or updates a PR only after all cards-only gates pass."
+            echo "It never pushes directly to main, never merges PRs, and never deploys."
+            echo
+            echo "Production order:"
+            echo "1. Run Daily Monitor with QC."
+            echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
+            echo "3. Regenerate Card / Opinion assets in the runner workspace."
+            echo "4. Run cardcopy gate."
+            echo "5. Run Pool-to-Card duplicate gate."
+            echo "6. Sync local site data in the runner workspace."
+            echo "7. Confirm same-date downstream assets are no longer stale."
+            echo "8. Commit generated files to an automation branch and open or update a PR."
+            echo
+            echo "Skipped by design:"
+            echo "- Trend candidate / no-decision shell."
+            echo "- Daily Observation Write / QC."
+            echo "- Direct main commit."
+            echo "- Auto-merge."
+            echo "- Deploy."
+          } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-cards-only-pr.md"
+
+      - name: Syntax checks
+        shell: bash
+        run: |
+          node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
+          node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
+          node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
+          node --check agent-workflow/tools/assert-daily-production-chain.mjs
+          node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
+          node --check agent-workflow/tools/card-copy-style-gate.mjs
+          node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
+          node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs
+          node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
+          gh --version
+
+      - name: Run Daily Monitor with QC
+        id: monitor
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs \
+            --date="${RUN_DATE}" \
+            --pass-score="${{ github.event.inputs.pass_score || '80' }}" \
+            --max-cycles=3 \
+            --search-limit=70 \
+            --search-path-query-limit=2 \
+            --gdelt-query-limit=8 \
+            --hn-limit=8 \
+            --fetch-timeout-ms=20000 \
+            --snapshot-timeout-ms=16000 \
+            --monitor-timeout-ms=840000 \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-monitor-run.log"
+
+      - name: Check monitor readiness
+        id: monitor-readiness
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-guanlan-automation-readiness.mjs \
+            --command=monitor \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-monitor-readiness.log"
+
+      - name: Confirm Raw / Pool post-dedupe counts
+        id: cards-only-post-monitor
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-daily-production-chain.mjs \
+            --date="${RUN_DATE}" \
+            --stage=post-monitor \
+            --raw-min=80 \
+            --pool-min=15 \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-post-monitor-gate.log"
+
+      - name: Regenerate Card / Opinion assets
+        id: assets
+        if: steps.monitor.outcome == 'success' && steps.monitor-readiness.outcome == 'success' && steps.cards-only-post-monitor.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
+            --date="${RUN_DATE}" \
+            --require-final-qc=false \
+            --trend-candidates=false \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-assets.log"
+
+      - name: Run cardcopy gate
+        id: cardcopy
+        if: steps.assets.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-quality-gates.mjs cardcopy \
+            --date="${RUN_DATE}" \
+            --strict=true \
+            --require-gates=true \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-cardcopy.log"
+
+      - name: Run Pool-to-Card duplicate gate
+        id: pool-to-card-dedupe
+        if: steps.assets.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-pool-to-card-dedupe.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-pool-to-card-dedupe.log"
+
+      - name: Sync site data
+        id: site-data
+        if: steps.cardcopy.outcome == 'success' && steps.pool-to-card-dedupe.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node 01-SiteV2/site/scripts/sync-v2-site-data.mjs
+          node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
+
+      - name: Confirm site data freshness
+        id: pre-commit-gate
+        if: steps.site-data.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-daily-production-chain.mjs \
+            --date="${RUN_DATE}" \
+            --stage=pre-commit \
+            --raw-min=80 \
+            --pool-min=15 \
+            --block-stale=true \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-pre-commit-gate.log"
+
+      - name: Upload cards-only PR artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wavesight-daily-cards-only-pr-${{ steps.run-date.outputs.date }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-daily-cards-only-pr.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-cards-only-pr-*.log
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
+            01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
+            01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
+            01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
+            01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
+            01-SiteV2/content/05-frontier-opinions/${{ steps.run-date.outputs.date }}-opinion-candidates.md
+            01-SiteV2/content/05-frontier-opinions/${{ steps.run-date.outputs.date }}-opinion-cards.md
+            01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
+            01-SiteV2/knowledge/02-Opinion-Cards/${{ steps.run-date.outputs.date }}--frontier-opinion*.md
+            01-SiteV2/site/data/site-content.json
+            01-SiteV2/site/data/site-content.js
+            01-SiteV2/site/data/pipeline-dashboard.json
+            01-SiteV2/site/data/pipeline-dashboard.js
+
+      - name: Commit generated files to automation branch
+        id: commit
+        if: steps.pre-commit-gate.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="automation/cards-only-${RUN_DATE}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+
+          git add \
+            "agent-workflow/reports/${RUN_DATE}-github-daily-cards-only-pr.md" \
+            "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md" \
+            "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md" \
+            "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md" \
+            "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-quality-loop.md" \
+            "agent-workflow/reports/${RUN_DATE}-guanlan-monitor-quality-gate.md" \
+            "01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md" \
+            "01-SiteV2/content/01-raw/originals/${RUN_DATE}" \
+            "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md" \
+            "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md" \
+            "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-candidates.md" \
+            "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md" \
+            "01-SiteV2/knowledge/01-Signal-Cards" \
+            "01-SiteV2/knowledge/02-Opinion-Cards" \
+            "01-SiteV2/site/data/site-content.json" \
+            "01-SiteV2/site/data/site-content.js" \
+            "01-SiteV2/site/data/pipeline-dashboard.json" \
+            "01-SiteV2/site/data/pipeline-dashboard.js"
+
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "Update daily cards for ${RUN_DATE}"
+          git push --force-with-lease origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update PR
+        id: pr
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="${{ steps.commit.outputs.branch }}"
+          body_file="$(mktemp)"
+          cat > "$body_file" <<BODY
+          Daily Cards Only update for ${RUN_DATE}.
+
+          What this PR contains:
+          - Raw / Pool generated in GitHub Actions.
+          - Signal Cards and Opinion Cards generated after gates passed.
+          - Site data synced after stale checks passed.
+          - Artifacts uploaded for review.
+
+          Guardrails:
+          - No direct main push.
+          - No auto-merge.
+          - No deploy.
+          - No Daily Observation writing or OpenAI/DeepSeek dependency.
+
+          Required manual action:
+          - Review the generated cards.
+          - Merge this PR if acceptable.
+          - Pull main locally or let Obsidian Git sync after merge.
+          BODY
+
+          if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
+            gh pr edit "$pr_number" \
+              --title "Daily Cards Only update ${RUN_DATE}" \
+              --body-file "$body_file"
+            echo "Updated PR #${pr_number}"
+          else
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "Daily Cards Only update ${RUN_DATE}" \
+              --body-file "$body_file"
+          fi
+
+      - name: Cards-only PR result
+        if: always()
+        shell: bash
+        run: |
+          fail=0
+
+          require_success() {
+            local label="$1"
+            local outcome="$2"
+            if [ "$outcome" != "success" ]; then
+              echo "${label} did not pass: ${outcome}" >&2
+              fail=1
+            fi
+          }
+
+          require_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
+          require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
+          require_success "Raw / Pool post-dedupe gate" "${{ steps.cards-only-post-monitor.outcome }}"
+          require_success "Card / Opinion regeneration" "${{ steps.assets.outcome }}"
+          require_success "Cardcopy gate" "${{ steps.cardcopy.outcome }}"
+          require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
+          require_success "Site data sync" "${{ steps.site-data.outcome }}"
+          require_success "Pre-commit freshness gate" "${{ steps.pre-commit-gate.outcome }}"
+          require_success "Commit generated files" "${{ steps.commit.outcome }}"
+
+          if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
+            require_success "Open or update PR" "${{ steps.pr.outcome }}"
+          fi
+
+          if [ "$fail" -ne 0 ]; then
+            echo "Cards-only scheduled PR run did not pass. Inspect uploaded artifacts. Nothing was pushed to main or deployed." >&2
+            exit 1
+          fi
+
+          echo "Cards-only scheduled PR run passed."
