@@ -56,6 +56,7 @@ priority: current
 | 质量门禁 | `context/04-qc-rules.md` |
 | 页面契约 | `context/frontstage-page-contracts.md` |
 | 前台数据 | `01-SiteV2/site/data/site-content.json`，当前 activeDate 必须跟最新生产内容日期一致 |
+| 发布闭环 | 自动监测 PR 人工合并进 `main` 后，GitHub Pages 自动部署完整 `01-SiteV2/site` 前台 |
 
 ## 当前禁止再出现
 

@@ -1,16 +1,18 @@
-name: Deploy Daily Brief to GitHub Pages
+name: Deploy Frontstage to GitHub Pages
 
 on:
   push:
     branches:
       - main
     paths:
-      - "01-SiteV2/site/public-daily-brief/**"
+      - "01-SiteV2/site/**"
+      - "01-SiteV2/content/**"
+      - "01-SiteV2/knowledge/**"
       - ".github/workflows/github-pages.yml"
   workflow_dispatch:
     inputs:
       public_brief_date:
-        description: "Optional date to regenerate before deploy, for example 2026-05-24"
+        description: "Optional date to regenerate public daily brief before deploy, for example 2026-05-24"
         required: false
         type: string
 
@@ -25,7 +27,7 @@ concurrency:
 
 jobs:
   deploy:
-    name: Publish Daily Brief
+    name: Publish Frontstage Site
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -52,10 +54,10 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload Daily Brief artifact
+      - name: Upload Frontstage artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 01-SiteV2/site/public-daily-brief
+          path: 01-SiteV2/site
 
       - name: Deploy to GitHub Pages
         id: deployment
