@@ -149,8 +149,9 @@ export async function translateOpinionText(text = "", { cache = {}, cacheKey = "
   const key = cacheKey || source;
 
   const staticValue = preferFullTranslation ? "" : staticTranslation(source);
-  if (staticValue) {
-    const result = { translation: staticValue, status: "translated", method: "static_rules" };
+  const staticComplete = completeOpinionTranslation(source, staticValue, { preferFullTranslation });
+  if (staticComplete) {
+    const result = { translation: staticComplete, status: "translated", method: "static_rules" };
     cache[key] = result;
     return result;
   }

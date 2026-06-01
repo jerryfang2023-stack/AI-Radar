@@ -562,6 +562,27 @@ function normalizedSignalText(raw) {
     .trim();
 }
 
+function publicCardCopy(raw = "") {
+  return String(raw || "")
+    .replace(/\u95ed\u73af/gu, "\u4eff\u771f\u53cd\u9988\u94fe\u8def")
+    .replace(/\u6a21\u5757\u5316\u8f6f\u4ef6\u7528\u4e8e\u89c4\u6a21\u5316/gu, "\u53ef\u7ec4\u5408\u8f6f\u4ef6\u652f\u6491\u5927\u89c4\u6a21")
+    .replace(/\u6a21\u5757\u5316/gu, "\u53ef\u7ec4\u5408")
+    .replace(/\u7528\u4e8e\u89c4\u6a21\u5316/gu, "\u652f\u6491\u5927\u89c4\u6a21");
+}
+
+function normalizeSignalSpec(spec) {
+  return {
+    ...spec,
+    company: publicCardCopy(spec.company),
+    title: publicCardCopy(spec.title),
+    eventLine: publicCardCopy(spec.eventLine),
+    whyWatch: publicCardCopy(spec.whyWatch),
+    businessMeaning: publicCardCopy(spec.businessMeaning),
+    evidenceBoundary: publicCardCopy(spec.evidenceBoundary),
+    watchWindow: publicCardCopy(spec.watchWindow),
+  };
+}
+
 function signalFingerprints(spec, section) {
   const sourceUrl = value(section, "source_url");
   const hash = value(section, "raw_full_text_hash") || value(section, "full_text_hash");
@@ -1327,7 +1348,7 @@ function main() {
   const candidates = candidateSpecs[date] || {};
   const sections = poolSections();
   const autoSpecs = autoSignalsFromPool(sections, explicitSpecs);
-  const specs = [...explicitSpecs, ...autoSpecs];
+  const specs = [...explicitSpecs, ...autoSpecs].map(normalizeSignalSpec);
   const written = [];
   const skipped = [];
   const merged = [];

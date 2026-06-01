@@ -633,9 +633,12 @@ async function main() {
       card.originalTranslation = translated.translation || "";
       card.translationStatus = card.originalTranslation ? "translated" : translated.status;
       card.translationMethod = translated.method || "unknown";
-    } else {
+    } else if (card.originalTranslation) {
       card.translationStatus = "translated";
       card.translationMethod = "existing";
+    } else {
+      card.translationStatus = translated.status || "pending_translation";
+      card.translationMethod = translated.method || "translation_failed";
     }
     card.displayTitle = finalDisplayTitle(displayTitleFor(card), card.person);
 
