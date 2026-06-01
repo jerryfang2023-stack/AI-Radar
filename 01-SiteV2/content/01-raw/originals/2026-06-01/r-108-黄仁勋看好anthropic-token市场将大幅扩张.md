@@ -1,0 +1,192 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-108
+title: "黄仁勋看好Anthropic token市场将大幅扩张"
+original_url: "https://x.com/rohanpaul_ai/status/2061168497955418245"
+canonical_url: "https://x.com/rohanpaul_ai/status/2061168497955418245"
+source_name: "X：Rohan Paul (@rohanpaul_ai)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-31T19:30:39.000Z"
+collected_at: 2026-06-01T07:37:54.767Z
+language: mixed
+full_text_hash: e220f9bf6c9138d9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-108-黄仁勋看好anthropic-token市场将大幅扩张.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-108-黄仁勋看好anthropic-token市场将大幅扩张.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: summary-only-low-readable-body
+extraction_quality: failed
+extraction_method: "none"
+readability_score: 0
+extractor_diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
+has_full_text: false
+content_length: 192
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_full_text","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e220f9bf6c9138d9","missing":["missing_full_text"]}
+source_volatility: high
+community_name: "X：Rohan Paul (@rohanpaul_ai)"
+capture_scope: aihot_visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"黄仁勋看好Anthropic token市场将大幅扩张","discovery_summary":"Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2061168497955418245","discovered_at":"2026-06-01T07:31:33.641Z","rank_on_page":176,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: bc562ed9adfcea87
+content_hash: e220f9bf6c9138d9
+semantic_hash: 4c11a10a7ae3a14e
+duplicate_of: ""
+first_seen_at: "2026-05-31T19:30:39.000Z"
+last_seen_at: 2026-06-01T07:37:54.767Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_viewpoint_or_article","importance_score":5,"importance_reason":"influential viewpoint or article; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":2,"case_richness":3,"trend_relevance":4,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["X","Rohan Paul (@rohanpaul_ai)","Anthropic"],"products":[],"people":[],"industries":["医疗","企业服务"],"roles":[],"workflows":[],"business_actions":[],"affected_departments":[],"numbers":["2030","$1"],"quotes":[]}
+evidence_seed: {"company_actions":["他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。","这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"number","text":"Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 黄仁勋看好Anthropic token市场将大幅扩张
+
+## clean_text
+
+Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。
+
+## full_text
+
+Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。
+
+## extraction_diagnostics
+
+- extraction_method: none
+- readability_score: 0
+- fetch_status: summary-only-low-readable-body
+- extraction_quality: failed
+- diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。
+
+4. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。
+
+## business_elements
+
+- companies: X, Rohan Paul (@rohanpaul_ai), Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 医疗, 企业服务
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: 暂无公开信息
+- numbers: 2030, $1
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。 / 这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_viewpoint_or_article
+- importance_score: 5
+- importance_reason: influential viewpoint or article; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Rohan Paul (@rohanpaul_ai)
+- capture_scope: aihot_visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"黄仁勋看好Anthropic token市场将大幅扩张","discovery_summary":"Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2061168497955418245","discovered_at":"2026-06-01T07:31:33.641Z","rank_on_page":176,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Jensen Huang认为Dario Amodei预测的2030年AI收入达$1T的预期过于保守。他指出，Anthropic的token将成为众多企业软件公司的增值服务，其市场将因此实现对数级扩张。有观点补充认为，当各实验室的模型能力趋同时，真正的优势可能源于独特的私有数据输入。这类数据（如特殊工作流、医疗记录等）能为AI系统带来难以复制的差异化和提升，未来或成为并购的关键标的。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

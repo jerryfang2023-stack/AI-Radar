@@ -1,0 +1,249 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-024
+title: "Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking"
+original_url: "https://thenextweb.com/news/inherent-ai-50-million-seed-deepmind-faraday-science"
+canonical_url: "https://thenextweb.com/news/inherent-ai-50-million-seed-deepmind-faraday-science"
+source_name: "follow-builders cloud fallback / keyword search / Anysearch"
+source_type: builder
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: follow-builders
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-01T07:37:54.518Z
+language: mixed
+full_text_hash: 0f3ccefbd14e4b2b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-024-ex-deepmind-researchers-raised-50m-to-build-ai-that-figures-out-which-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-01/r-024-ex-deepmind-researchers-raised-50m-to-build-ai-that-figures-out-which-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8245,"paragraph_count":28,"sentence_count":74,"boilerplate_hits":0,"symbol_ratio":0.0005,"method":"json-ld"}
+has_full_text: true
+content_length: 8245
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0f3ccefbd14e4b2b","missing":[]}
+source_volatility: high
+community_name: "follow-builders cloud fallback / keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: frontier_opinion_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f437d0f61f935f7c
+content_hash: 0f3ccefbd14e4b2b
+semantic_hash: be827094bcf74319
+duplicate_of: ""
+first_seen_at: "2026-06-01T07:37:54.518Z"
+last_seen_at: 2026-06-01T07:37:54.518Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":4,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["follow","builders cloud fallback","keyword search","Anysearch","Anthropic","Microsoft","Nvidia","Mistral"],"products":["agents"],"people":[],"industries":["法律 / 法务"],"roles":["法务 / 律师"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","法务"],"numbers":["$50M","$50 million","2026","$10 million","$100 million","$300 million","400"],"quotes":["That’s the gap Inherent is building into.","AI-native science,","AI-native science will be messier, less legible, but capable of exceptional outcomes,","That’s the gap Inherent is building into.","AI-native science,"]}
+evidence_seed: {"company_actions":["London AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises. London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes ","Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures.","Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"London AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises. London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes ","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"It is among Europe’s largest AI stealth-to-launch rounds in 2026.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"funding","text":"The founding team comes from DeepMind, Microsoft, and Reka […] TL;DRLondon AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ex-UK AI tsar Matt Clifford advises.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking
+
+## clean_text
+
+Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes from DeepMind, Microsoft, and Reka […]
+TL;DRLondon AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises.
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026.
+The founding team comes from DeepMind, Microsoft, and Reka AI. Tantum Collins and Edward Hughes previously collaborated on cooperative AI research at DeepMind. Louis Kirsch, another co-founder, also worked at DeepMind. Kaloyan Aleksiev came from Reka AI and Microsoft.
+Collins has a policy background that most AI lab founders lack. He worked on AI policy at the Biden White House before co-founding Inherent. Matt Clifford, co-founder of Entrepreneurs First and the UK government’s former AI tsar, has joined as an adviser.
+Inherent is building a platform called Faraday, named after the scientist. Its purpose is not to answer questions faster. It is to figure out which questions are worth asking in the first place.
+“Most AI is built to answer questions. What it can’t do yet is figure out which questions are worth asking, the open-ended curiosity that produced penicillin, the microwave, the GPU,” said Danny Rimer, partner at Index Ventures. “That’s the gap Inherent is building into.”
+Faraday pairs human researchers with AI agents that are designed to improve themselves iteratively on hard scientific problems. The company describes this as “AI-native science,” a paradigm it says will look and feel different from the scientific method as practised for the past 400 years.
+Index Ventures framed the bet in those terms. “AI-native science will be messier, less legible, but capable of exceptional outcomes,” the firm wrote in a blog post announcing the investment. The conviction is that the most valuable application of frontier AI is not automating existing workflows but enabling discoveries that human researchers could not reach alone.
+Inherent is structured as a public benefit corporation, a legal form that requires the company to consider its impact on society alongside shareholder returns. The structure is unusual for a venture-backed AI lab. It signals that the founders view governance as a competitive advantage rather than a constraint.
+European AI startups are increasingly demonstrating that they can raise at scales previously reserved for Silicon Valley. Inherent’s $50 million seed sits alongside Peec AI’s $10 million ARR in six months, Lovable’s $100 million single-month revenue, and Mistral’s $300 million ARR. The gap between European and American AI funding is narrowing for companies building in categories where the technology is genuinely new.
+Anthropic’s Glasswing project demonstrated that frontier AI can find vulnerabilities at a rate that outpaces human remediation. Inherent’s bet is that the same dynamic applies to scientific discovery: AI agents that can explore hypothesis spaces faster than human researchers can, while humans provide the judgment, taste, and ethical guardrails that agents cannot.
+The team’s combination of DeepMind research credentials and White House policy experience gives it unusual positioning. It can credibly pitch to both the scientific establishment and the government institutions that fund basic research. Whether Faraday delivers on the promise of AI-native science will take years to evaluate. The $50 million buys the time to find out.
+Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes from DeepMind, Microsoft, and Reka […]
+TL;DRLondon AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises.
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026.
+The founding team comes from DeepMind, Microsoft, and Reka AI. Tantum Collins and Edward Hughes previously collaborated on cooperative AI research at DeepMind. Louis Kirsch, another co-founder, also worked at DeepMind. Kaloyan Aleksiev came from Reka AI and Microsoft.
+Collins has a policy background that most AI lab founders lack. He worked on AI policy at the Biden White House before co-founding Inherent. Matt Clifford, co-founder of Entrepreneurs First and the UK government’s former AI tsar, has joined as an adviser.
+Inherent is building a platform called Faraday, named after the scientist. Its purpose is not to answer questions faster. It is to figure out which questions are worth asking in the first place.
+“Most AI is built to answer questions. What it can’t do yet is figure out which questions are worth asking, the open-ended curiosity that produced penicillin, the microwave, the GPU,” said Danny Rimer, partner at Index Ventures. “That’s the gap Inherent is building into.”
+Faraday pairs human researchers with AI agents that are designed to improve themselves iteratively on hard scientific problems. The company describes this as “AI-native science,” a paradigm it says will look and feel different from the scientific method as practised for the past 400 years.
+Index Ventures framed the bet in those terms. “AI-native science will be messier, less legible, but capable of exceptional outcomes,” the firm wrote in a blog post announcing the investment. The conviction is that the most valuable application of frontier AI is not automating existing workflows but enabling discoveries that human researchers could not reach alone.
+Inherent is structured as a public benefit corporation, a legal form that requires the company to consider its impact on society alongside shareholder returns. The structure is unusual for a venture-backed AI lab. It signals that the founders view governance as a competitive advantage rather than a constraint.
+European AI startups are increasingly demonstrating that they can raise at scales previously reserved for Silicon Valley. Inherent’s $50 million seed sits alongside Peec AI’s $10 million ARR in six months, Lovable’s $100 million single-month revenue, and Mistral’s $300 million ARR. The gap between European and American AI funding is narrowing for companies building in categories where the technology is genuinely new.
+Anthropic’s Glasswing project demonstrated that frontier AI can find vulnerabilities at a rate that outpaces human remediation. Inherent’s bet is that the same dynamic applies to scientific discovery: AI agents that can explore hypothesis spaces faster than human researchers can, while humans provide the judgment, taste, and ethical guardrails that agents cannot.
+The team’s combination of DeepMind research credentials and White House policy experience gives it unusual positioning. It can credibly pitch to both the scientific establishment and the government institutions that fund basic research. Whether Faraday delivers on the promise of AI-native science will take years to evaluate. The $50 million buys the time to find out.
+
+## full_text
+
+Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes from DeepMind, Microsoft, and Reka […]
+TL;DRLondon AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises.
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026.
+The founding team comes from DeepMind, Microsoft, and Reka AI. Tantum Collins and Edward Hughes previously collaborated on cooperative AI research at DeepMind. Louis Kirsch, another co-founder, also worked at DeepMind. Kaloyan Aleksiev came from Reka AI and Microsoft.
+Collins has a policy background that most AI lab founders lack. He worked on AI policy at the Biden White House before co-founding Inherent. Matt Clifford, co-founder of Entrepreneurs First and the UK government’s former AI tsar, has joined as an adviser.
+Inherent is building a platform called Faraday, named after the scientist. Its purpose is not to answer questions faster. It is to figure out which questions are worth asking in the first place.
+“Most AI is built to answer questions. What it can’t do yet is figure out which questions are worth asking, the open-ended curiosity that produced penicillin, the microwave, the GPU,” said Danny Rimer, partner at Index Ventures. “That’s the gap Inherent is building into.”
+Faraday pairs human researchers with AI agents that are designed to improve themselves iteratively on hard scientific problems. The company describes this as “AI-native science,” a paradigm it says will look and feel different from the scientific method as practised for the past 400 years.
+Index Ventures framed the bet in those terms. “AI-native science will be messier, less legible, but capable of exceptional outcomes,” the firm wrote in a blog post announcing the investment. The conviction is that the most valuable application of frontier AI is not automating existing workflows but enabling discoveries that human researchers could not reach alone.
+Inherent is structured as a public benefit corporation, a legal form that requires the company to consider its impact on society alongside shareholder returns. The structure is unusual for a venture-backed AI lab. It signals that the founders view governance as a competitive advantage rather than a constraint.
+European AI startups are increasingly demonstrating that they can raise at scales previously reserved for Silicon Valley. Inherent’s $50 million seed sits alongside Peec AI’s $10 million ARR in six months, Lovable’s $100 million single-month revenue, and Mistral’s $300 million ARR. The gap between European and American AI funding is narrowing for companies building in categories where the technology is genuinely new.
+Anthropic’s Glasswing project demonstrated that frontier AI can find vulnerabilities at a rate that outpaces human remediation. Inherent’s bet is that the same dynamic applies to scientific discovery: AI agents that can explore hypothesis spaces faster than human researchers can, while humans provide the judgment, taste, and ethical guardrails that agents cannot.
+The team’s combination of DeepMind research credentials and White House policy experience gives it unusual positioning. It can credibly pitch to both the scientific establishment and the government institutions that fund basic research. Whether Faraday delivers on the promise of AI-native science will take years to evaluate. The $50 million buys the time to find out.
+Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes from DeepMind, Microsoft, and Reka […]
+TL;DRLondon AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises.
+London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026.
+The founding team comes from DeepMind, Microsoft, and Reka AI. Tantum Collins and Edward Hughes previously collaborated on cooperative AI research at DeepMind. Louis Kirsch, another co-founder, also worked at DeepMind. Kaloyan Aleksiev came from Reka AI and Microsoft.
+Collins has a policy background that most AI lab founders lack. He worked on AI policy at the Biden White House before co-founding Inherent. Matt Clifford, co-founder of Entrepreneurs First and the UK government’s former AI tsar, has joined as an adviser.
+Inherent is building a platform called Faraday, named after the scientist. Its purpose is not to answer questions faster. It is to figure out which questions are worth asking in the first place.
+“Most AI is built to answer questions. What it can’t do yet is figure out which questions are worth asking, the open-ended curiosity that produced penicillin, the microwave, the GPU,” said Danny Rimer, partner at Index Ventures. “That’s the gap Inherent is building into.”
+Faraday pairs human researchers with AI agents that are designed to improve themselves iteratively on hard scientific problems. The company describes this as “AI-native science,” a paradigm it says will look and feel different from the scientific method as practised for the past 400 years.
+Index Ventures framed the bet in those terms. “AI-native science will be messier, less legible, but capable of exceptional outcomes,” the firm wrote in a blog post announcing the investment. The conviction is that the most valuable application of frontier AI is not automating existing workflows but enabling discoveries that human researchers could not reach alone.
+Inherent is structured as a public benefit corporation, a legal form that requires the company to consider its impact on society alongside shareholder returns. The structure is unusual for a venture-backed AI lab. It signals that the founders view governance as a competitive advantage rather than a constraint.
+European AI startups are increasingly demonstrating that they can raise at scales previously reserved for Silicon Valley. Inherent’s $50 million seed sits alongside Peec AI’s $10 million ARR in six months, Lovable’s $100 million single-month revenue, and Mistral’s $300 million ARR. The gap between European and American AI funding is narrowing for companies building in categories where the technology is genuinely new.
+Anthropic’s Glasswing project demonstrated that frontier AI can find vulnerabilities at a rate that outpaces human remediation. Inherent’s bet is that the same dynamic applies to scientific discovery: AI agents that can explore hypothesis spaces faster than human researchers can, while humans provide the judgment, taste, and ethical guardrails that agents cannot.
+The team’s combination of DeepMind research credentials and White House policy experience gives it unusual positioning. It can credibly pitch to both the scientific establishment and the government institutions that fund basic research. Whether Faraday delivers on the promise of AI-native science will take years to evaluate. The $50 million buys the time to find out.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8245,"paragraph_count":28,"sentence_count":74,"boilerplate_hits":0,"symbol_ratio":0.0005,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   London AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises. London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes 
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures.
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   It is among Europe’s largest AI stealth-to-launch rounds in 2026.
+
+5. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   The founding team comes from DeepMind, Microsoft, and Reka […] TL;DRLondon AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Ex-UK AI tsar Matt Clifford advises.
+
+## business_elements
+
+- companies: follow, builders cloud fallback, keyword search, Anysearch, Anthropic, Microsoft, Nvidia, Mistral
+- products: agents
+- people: 暂无公开信息
+- industries: 法律 / 法务
+- roles: 法务 / 律师
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 法务
+- numbers: $50M, $50 million, 2026, $10 million, $100 million, $300 million, 400
+- quotes: That’s the gap Inherent is building into. / AI-native science, / AI-native science will be messier, less legible, but capable of exceptional outcomes, / That’s the gap Inherent is building into. / AI-native science,
+
+## evidence_seed
+
+- company_actions: London AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises. London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes  / Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. / Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 4
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: follow-builders cloud fallback / keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: frontier_opinion_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+London AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises. London-based AI lab Inherent emerged from stealth on Wednesday with a $50 million seed round co-led by Index Ventures and Radical Ventures. Nvidia’s venture arm NVentures also participated, alongside Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures. It is among Europe’s largest AI stealth-to-launch rounds in 2026. The founding team comes from DeepMind, Microsoft, and Reka AI. Tantum Collins and Edward Hughes previously collaborated on cooperative AI research at DeepMind. Louis Kirsch, another co-founder, also worked at DeepMind. Kaloyan Aleksiev came from Reka AI and Microsoft. Collins has a policy background that most AI lab founders lack. He worked on AI policy at the Biden White House before co-founding Inherent. Matt Clifford, co-founder of Entrepreneurs First and the UK government’s former AI tsar, has joined as an adviser. European AI startups are increasingly demonstrating that they can raise at scales previously reserved for Silicon Valley. Inherent’s $50 million seed sits alongside Peec AI’s $10 million ARR in six months, Lovable’s $100 million single-month revenue, and Mistral’s $300 million ARR. The gap between European and American AI funding is narrowing for companies building in categories where the technology is genuinely new. The team’s combination of DeepMind research credentials and White House policy experience gives it unusual positioning. It can credibly pitch to both the scie
+
+## 采集备注
+
+该条目由 follow-builders 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
