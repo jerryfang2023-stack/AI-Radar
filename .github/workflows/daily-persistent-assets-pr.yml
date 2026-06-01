@@ -1,4 +1,4 @@
-name: WaveSight Daily Cards Only PR
+name: WaveSight Daily Persistent Assets PR
 
 on:
   schedule:
@@ -21,12 +21,12 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: wavesight-daily-cards-only-pr-${{ github.event.inputs.date || github.run_id }}
+  group: wavesight-daily-persistent-assets-pr-${{ github.event.inputs.date || github.run_id }}
   cancel-in-progress: false
 
 jobs:
-  cards-only-pr:
-    name: Cards Only Scheduled PR
+  persistent-assets-pr:
+    name: Persistent Assets Scheduled PR
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
@@ -72,11 +72,11 @@ jobs:
         shell: bash
         run: |
           {
-            echo "# GitHub Daily Cards Only PR"
+            echo "# GitHub Daily Persistent Assets PR"
             echo
             echo "- date: ${RUN_DATE}"
             echo "- generated_at: $(date -Is)"
-            echo "- mode: cards_only_pr"
+            echo "- mode: persistent_assets_pr"
             echo "- trigger: ${{ github.event_name }}"
             echo "- schedule: 08:30 Asia/Shanghai daily"
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
@@ -84,7 +84,8 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_or_deepseek_required: false"
             echo
-            echo "This workflow commits to an automation branch and opens or updates a PR only after all cards-only gates pass."
+            echo "This workflow commits Raw / Pool / Card assets to an automation branch and opens or updates a PR."
+            echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
             echo "It never pushes directly to main, never merges PRs, and never deploys."
             echo
             echo "Production order:"
@@ -93,9 +94,10 @@ jobs:
             echo "3. Regenerate Card / Opinion assets in the runner workspace."
             echo "4. Run cardcopy gate."
             echo "5. Run Pool-to-Card duplicate gate."
-            echo "6. Sync local site data in the runner workspace."
-            echo "7. Confirm same-date downstream assets are no longer stale."
-            echo "8. Commit generated files to an automation branch and open or update a PR."
+            echo "6. Write a persistent asset manifest."
+            echo "7. Sync local site data in the runner workspace only if card gates pass."
+            echo "8. Confirm same-date downstream assets are no longer stale."
+            echo "9. Commit generated assets to an automation branch and open or update a PR."
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
@@ -103,7 +105,7 @@ jobs:
             echo "- Direct main commit."
             echo "- Auto-merge."
             echo "- Deploy."
-          } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-cards-only-pr.md"
+          } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
 
       - name: Syntax checks
         shell: bash
@@ -136,7 +138,7 @@ jobs:
             --fetch-timeout-ms=20000 \
             --snapshot-timeout-ms=16000 \
             --monitor-timeout-ms=840000 \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-monitor-run.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
 
       - name: Check monitor readiness
         id: monitor-readiness
@@ -148,10 +150,10 @@ jobs:
           node agent-workflow/tools/assert-guanlan-automation-readiness.mjs \
             --command=monitor \
             --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-monitor-readiness.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-readiness.log"
 
       - name: Confirm Raw / Pool post-dedupe counts
-        id: cards-only-post-monitor
+        id: persistent-assets-post-monitor
         if: always()
         continue-on-error: true
         shell: bash
@@ -162,11 +164,11 @@ jobs:
             --stage=post-monitor \
             --raw-min=80 \
             --pool-min=15 \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-post-monitor-gate.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-post-monitor-gate.log"
 
       - name: Regenerate Card / Opinion assets
         id: assets
-        if: steps.monitor.outcome == 'success' && steps.monitor-readiness.outcome == 'success' && steps.cards-only-post-monitor.outcome == 'success'
+        if: steps.monitor.outcome == 'success' && steps.monitor-readiness.outcome == 'success' && steps.persistent-assets-post-monitor.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -175,7 +177,7 @@ jobs:
             --date="${RUN_DATE}" \
             --require-final-qc=false \
             --trend-candidates=false \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-assets.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-assets.log"
 
       - name: Run cardcopy gate
         id: cardcopy
@@ -188,7 +190,7 @@ jobs:
             --date="${RUN_DATE}" \
             --strict=true \
             --require-gates=true \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-cardcopy.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-cardcopy.log"
 
       - name: Run Pool-to-Card duplicate gate
         id: pool-to-card-dedupe
@@ -199,7 +201,7 @@ jobs:
           set -o pipefail
           node agent-workflow/tools/assert-pool-to-card-dedupe.mjs \
             --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-pool-to-card-dedupe.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pool-to-card-dedupe.log"
 
       - name: Sync site data
         id: site-data
@@ -224,18 +226,110 @@ jobs:
             --raw-min=80 \
             --pool-min=15 \
             --block-stale=true \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-cards-only-pr-pre-commit-gate.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pre-commit-gate.log"
 
-      - name: Upload cards-only PR artifacts
+      - name: Write persistent asset manifest
+        id: persistent-manifest
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p agent-workflow/reports
+
+          raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
+          pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
+          signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
+          opinion_candidates_file="01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-candidates.md"
+          opinion_cards_file="01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md"
+
+          state_for() {
+            local path="$1"
+            if [ -e "$path" ]; then
+              echo "present"
+            else
+              echo "missing"
+            fi
+          }
+
+          signal_card_count="$(find 01-SiteV2/knowledge/01-Signal-Cards -type f -name "${RUN_DATE}--signal--*.md" 2>/dev/null | wc -l | tr -d ' ')"
+          opinion_card_count="$(find 01-SiteV2/knowledge/02-Opinion-Cards -type f -name "${RUN_DATE}--frontier-opinion*.md" 2>/dev/null | wc -l | tr -d ' ')"
+
+          cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md" <<EOF
+          # ${RUN_DATE} Persistent Asset Manifest
+
+          - generated_at: $(date -Is)
+          - workflow_mode: persistent_assets_pr
+          - monitor: ${{ steps.monitor.outcome }}
+          - monitor_readiness: ${{ steps.monitor-readiness.outcome }}
+          - raw_pool_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
+          - asset_generation: ${{ steps.assets.outcome }}
+          - cardcopy_gate: ${{ steps.cardcopy.outcome }}
+          - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
+          - site_data_sync: ${{ steps.site-data.outcome }}
+          - pre_commit_gate: ${{ steps.pre-commit-gate.outcome }}
+
+          ## Persisted Asset State
+
+          | Asset | State |
+          |---|---|
+          | Raw candidates | $(state_for "$raw_file") |
+          | Raw originals | $(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}") |
+          | Pool candidates | $(state_for "$pool_file") |
+          | Business signals | $(state_for "$signal_file") |
+          | Opinion candidates | $(state_for "$opinion_candidates_file") |
+          | Opinion cards list | $(state_for "$opinion_cards_file") |
+          | Signal card files | ${signal_card_count} |
+          | Opinion card files | ${opinion_card_count} |
+          | Site content data | $(state_for "01-SiteV2/site/data/site-content.json") |
+
+          ## Persistence Rule
+
+          Raw / Pool must be committed once monitor and post-monitor gates pass.
+          Card assets must be committed once asset generation runs.
+          Site data must be committed only when cardcopy, dedupe, site sync and pre-commit gates pass.
+          EOF
+
+          cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json" <<EOF
+          {
+            "date": "${RUN_DATE}",
+            "generated_at": "$(date -Is)",
+            "workflow_mode": "persistent_assets_pr",
+            "outcomes": {
+              "monitor": "${{ steps.monitor.outcome }}",
+              "monitor_readiness": "${{ steps.monitor-readiness.outcome }}",
+              "raw_pool_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
+              "asset_generation": "${{ steps.assets.outcome }}",
+              "cardcopy_gate": "${{ steps.cardcopy.outcome }}",
+              "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
+              "site_data_sync": "${{ steps.site-data.outcome }}",
+              "pre_commit_gate": "${{ steps.pre-commit-gate.outcome }}"
+            },
+            "assets": {
+              "raw_candidates": "$(state_for "$raw_file")",
+              "raw_originals": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
+              "pool_candidates": "$(state_for "$pool_file")",
+              "business_signals": "$(state_for "$signal_file")",
+              "opinion_candidates": "$(state_for "$opinion_candidates_file")",
+              "opinion_cards_list": "$(state_for "$opinion_cards_file")",
+              "signal_card_files": ${signal_card_count},
+              "opinion_card_files": ${opinion_card_count},
+              "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")"
+            }
+          }
+          EOF
+
+      - name: Upload persistent assets PR artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: wavesight-daily-cards-only-pr-${{ steps.run-date.outputs.date }}
+          name: wavesight-daily-persistent-assets-pr-${{ steps.run-date.outputs.date }}
           if-no-files-found: warn
           retention-days: 14
           path: |
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-daily-cards-only-pr.md
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-cards-only-pr-*.log
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-daily-persistent-assets-pr.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-persistent-assets-pr-*.log
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-persistent-asset-manifest.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-persistent-asset-manifest.json
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
@@ -252,36 +346,59 @@ jobs:
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
 
-      - name: Commit generated files to automation branch
+      - name: Commit persistent assets to automation branch
         id: commit
-        if: steps.pre-commit-gate.outcome == 'success'
+        if: always() && steps.persistent-assets-post-monitor.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
-          branch="automation/cards-only-${RUN_DATE}"
+          branch="automation/daily-assets-${RUN_DATE}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "$branch"
 
-          git add \
-            "agent-workflow/reports/${RUN_DATE}-github-daily-cards-only-pr.md" \
-            "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md" \
-            "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md" \
-            "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md" \
-            "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-quality-loop.md" \
-            "agent-workflow/reports/${RUN_DATE}-guanlan-monitor-quality-gate.md" \
-            "01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md" \
-            "01-SiteV2/content/01-raw/originals/${RUN_DATE}" \
-            "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md" \
-            "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md" \
-            "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-candidates.md" \
-            "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md" \
-            "01-SiteV2/knowledge/01-Signal-Cards" \
-            "01-SiteV2/knowledge/02-Opinion-Cards" \
-            "01-SiteV2/site/data/site-content.json" \
-            "01-SiteV2/site/data/site-content.js" \
-            "01-SiteV2/site/data/pipeline-dashboard.json" \
-            "01-SiteV2/site/data/pipeline-dashboard.js"
+          stage_if_exists() {
+            local path="$1"
+            if [ -e "$path" ]; then
+              git add "$path"
+            fi
+          }
+
+          stage_find() {
+            local root="$1"
+            local pattern="$2"
+            if [ -d "$root" ]; then
+              find "$root" -type f -name "$pattern" -print0 | xargs -0 -r git add
+            fi
+          }
+
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-quality-loop.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-monitor-quality-gate.md"
+
+          stage_if_exists "01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
+          stage_if_exists "01-SiteV2/content/01-raw/originals/${RUN_DATE}"
+          stage_if_exists "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
+
+          if [ "${{ steps.assets.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
+            stage_if_exists "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-candidates.md"
+            stage_if_exists "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md"
+            stage_find "01-SiteV2/knowledge/01-Signal-Cards" "${RUN_DATE}--signal--*.md"
+            stage_find "01-SiteV2/knowledge/02-Opinion-Cards" "${RUN_DATE}--frontier-opinion*.md"
+          fi
+
+          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/site/data/site-content.json"
+            stage_if_exists "01-SiteV2/site/data/site-content.js"
+            stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
+            stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
+          fi
 
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
@@ -289,14 +406,14 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update daily cards for ${RUN_DATE}"
+          git commit -m "Persist daily assets for ${RUN_DATE}"
           git push --force-with-lease origin "$branch"
           echo "branch=$branch" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Open or update PR
         id: pr
-        if: steps.commit.outputs.changed == 'true'
+        if: always() && steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
         shell: bash
@@ -306,12 +423,13 @@ jobs:
           manual_url="https://github.com/${GITHUB_REPOSITORY}/pull/new/${branch}"
           body_file="$(mktemp)"
           cat > "$body_file" <<BODY
-          Daily Cards Only update for ${RUN_DATE}.
+          Daily persistent assets update for ${RUN_DATE}.
 
           What this PR contains:
-          - Raw / Pool generated in GitHub Actions.
-          - Signal Cards and Opinion Cards generated after gates passed.
-          - Site data synced after stale checks passed.
+          - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
+          - Signal Cards and Opinion Cards persisted when asset generation succeeded.
+          - Site data included only when cardcopy, dedupe, sync and pre-commit gates passed.
+          - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
 
           Guardrails:
@@ -321,14 +439,14 @@ jobs:
           - No Daily Observation writing or OpenAI/DeepSeek dependency.
 
           Required manual action:
-          - Review the generated cards.
+          - Review the generated assets and gate outcomes.
           - Merge this PR if acceptable.
           - Pull main locally or let Obsidian Git sync after merge.
           BODY
 
           if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
             gh pr edit "$pr_number" \
-              --title "Daily Cards Only update ${RUN_DATE}" \
+              --title "Daily persistent assets update ${RUN_DATE}" \
               --body-file "$body_file"
             echo "Updated PR #${pr_number}"
             echo "status=updated" >> "$GITHUB_OUTPUT"
@@ -337,7 +455,7 @@ jobs:
             if pr_url="$(gh pr create \
               --base main \
               --head "$branch" \
-              --title "Daily Cards Only update ${RUN_DATE}" \
+              --title "Daily persistent assets update ${RUN_DATE}" \
               --body-file "$body_file" 2>pr-create-error.log)"; then
               echo "$pr_url"
               echo "status=created" >> "$GITHUB_OUTPUT"
@@ -347,9 +465,9 @@ jobs:
               cat pr-create-error.log >&2
               if grep -Eqi "not permitted to create.*pull requests|GitHub Actions is not permitted" pr-create-error.log; then
                 {
-                  echo "### Cards Only PR branch is ready"
+                  echo "### Persistent assets PR branch is ready"
                   echo
-                  echo "All cards-only gates passed and the automation branch was pushed."
+                  echo "Persistent daily assets were generated and the automation branch was pushed."
                   echo
                   echo "GitHub repository settings currently block GitHub Actions from creating pull requests with the default token."
                   echo
@@ -368,7 +486,7 @@ jobs:
             fi
           fi
 
-      - name: Cards-only PR result
+      - name: Persistent assets PR result
         if: always()
         shell: bash
         run: |
@@ -385,13 +503,9 @@ jobs:
 
           require_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
           require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
-          require_success "Raw / Pool post-dedupe gate" "${{ steps.cards-only-post-monitor.outcome }}"
+          require_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
           require_success "Card / Opinion regeneration" "${{ steps.assets.outcome }}"
-          require_success "Cardcopy gate" "${{ steps.cardcopy.outcome }}"
-          require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
-          require_success "Site data sync" "${{ steps.site-data.outcome }}"
-          require_success "Pre-commit freshness gate" "${{ steps.pre-commit-gate.outcome }}"
-          require_success "Commit generated files" "${{ steps.commit.outcome }}"
+          require_success "Commit persistent assets" "${{ steps.commit.outcome }}"
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
             require_success "Open or update PR" "${{ steps.pr.outcome }}"
@@ -402,9 +516,17 @@ jobs:
             fi
           fi
 
+          if [ "${{ steps.cardcopy.outcome }}" != "success" ] || [ "${{ steps.pool-to-card-dedupe.outcome }}" != "success" ]; then
+            echo "Card gates did not fully pass. Raw / Pool and generated card assets were still persisted for review; site data was not required." >&2
+          fi
+
+          if [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
+            echo "Frontstage data was not persisted because site freshness gates did not fully pass." >&2
+          fi
+
           if [ "$fail" -ne 0 ]; then
-            echo "Cards-only scheduled PR run did not pass. Inspect uploaded artifacts. Nothing was pushed to main or deployed." >&2
+            echo "Persistent assets scheduled PR run did not pass. Inspect the PR branch and uploaded artifacts. Nothing was pushed to main or deployed." >&2
             exit 1
           fi
 
-          echo "Cards-only scheduled PR run passed."
+          echo "Persistent assets scheduled PR run passed."
