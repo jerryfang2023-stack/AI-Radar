@@ -298,11 +298,12 @@ jobs:
         id: pr
         if: steps.commit.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
         shell: bash
         run: |
           set -euo pipefail
           branch="${{ steps.commit.outputs.branch }}"
+          manual_url="https://github.com/${GITHUB_REPOSITORY}/pull/new/${branch}"
           body_file="$(mktemp)"
           cat > "$body_file" <<BODY
           Daily Cards Only update for ${RUN_DATE}.
@@ -330,12 +331,41 @@ jobs:
               --title "Daily Cards Only update ${RUN_DATE}" \
               --body-file "$body_file"
             echo "Updated PR #${pr_number}"
+            echo "status=updated" >> "$GITHUB_OUTPUT"
+            echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
           else
-            gh pr create \
+            if pr_url="$(gh pr create \
               --base main \
               --head "$branch" \
               --title "Daily Cards Only update ${RUN_DATE}" \
-              --body-file "$body_file"
+              --body-file "$body_file" 2>pr-create-error.log)"; then
+              echo "$pr_url"
+              echo "status=created" >> "$GITHUB_OUTPUT"
+              echo "pr_url=$pr_url" >> "$GITHUB_OUTPUT"
+              echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
+            else
+              cat pr-create-error.log >&2
+              if grep -Eqi "not permitted to create.*pull requests|GitHub Actions is not permitted" pr-create-error.log; then
+                {
+                  echo "### Cards Only PR branch is ready"
+                  echo
+                  echo "All cards-only gates passed and the automation branch was pushed."
+                  echo
+                  echo "GitHub repository settings currently block GitHub Actions from creating pull requests with the default token."
+                  echo
+                  echo "- Branch: \`$branch\`"
+                  echo "- Manual PR: $manual_url"
+                  echo
+                  echo "To make this fully automatic, enable the repository setting that allows GitHub Actions to create pull requests, or provide a \`GH_PR_TOKEN\` secret with pull request write permission."
+                } >> "$GITHUB_STEP_SUMMARY"
+                echo "PR creation is blocked by repository settings; manual PR link: $manual_url"
+                echo "status=manual_required" >> "$GITHUB_OUTPUT"
+                echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              echo "status=failed" >> "$GITHUB_OUTPUT"
+              exit 1
+            fi
           fi
 
       - name: Cards-only PR result
@@ -365,6 +395,11 @@ jobs:
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
             require_success "Open or update PR" "${{ steps.pr.outcome }}"
+            if [ "${{ steps.pr.outputs.status }}" = "manual_required" ]; then
+              echo "Cards-only gates passed and the automation branch was pushed."
+              echo "Manual PR is required because repository settings block GitHub Actions PR creation:"
+              echo "${{ steps.pr.outputs.manual_url }}"
+            fi
           fi
 
           if [ "$fail" -ne 0 ]; then
