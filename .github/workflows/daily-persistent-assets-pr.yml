@@ -115,9 +115,9 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_or_deepseek_required: false"
             echo
-            echo "This workflow commits Raw / Pool / Card assets to an automation branch and opens or updates a PR."
+            echo "This workflow commits Raw / Pool / Card assets to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
             echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
-            echo "It never pushes directly to main, never merges PRs, and never deploys."
+            echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."
             echo
             echo "Production order:"
             echo "1. Run Daily Monitor with QC."
@@ -129,13 +129,13 @@ jobs:
             echo "7. Sync local site data in the runner workspace only if card gates pass."
             echo "8. Confirm same-date downstream assets are no longer stale."
             echo "9. Commit generated assets to an automation branch and open or update a PR."
+            echo "10. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
             echo "- Daily Observation Write / QC."
             echo "- Direct main commit."
-            echo "- Auto-merge."
-            echo "- Deploy."
+            echo "- Direct deploy from the automation branch."
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
 
       - name: Syntax checks
@@ -149,6 +149,8 @@ jobs:
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/card-copy-style-gate.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
+          node --check agent-workflow/tools/assert-public-copy-gate.mjs
+          node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
@@ -243,12 +245,33 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          node 01-SiteV2/site/scripts/sync-v2-site-data.mjs
+          node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
+
+      - name: Run public copy gate
+        id: publiccopy
+        if: steps.site-data.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-quality-gates.mjs publiccopy \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-publiccopy.log"
+
+      - name: Run frontstage regression gate
+        id: frontstage-regression
+        if: steps.site-data.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/frontstage-regression-gate.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-frontstage-regression.log"
 
       - name: Confirm site data freshness
         id: pre-commit-gate
-        if: steps.site-data.outcome == 'success'
+        if: steps.publiccopy.outcome == 'success' && steps.frontstage-regression.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -299,6 +322,8 @@ jobs:
           - cardcopy_gate: ${{ steps.cardcopy.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
           - site_data_sync: ${{ steps.site-data.outcome }}
+          - publiccopy_gate: ${{ steps.publiccopy.outcome }}
+          - frontstage_regression_gate: ${{ steps.frontstage-regression.outcome }}
           - pre_commit_gate: ${{ steps.pre-commit-gate.outcome }}
 
           ## Persisted Asset State
@@ -319,7 +344,7 @@ jobs:
 
           Raw / Pool must be committed once monitor and post-monitor gates pass.
           Card assets must be committed once asset generation runs.
-          Site data must be committed only when cardcopy, dedupe, site sync and pre-commit gates pass.
+          Site data must be committed only when cardcopy, dedupe, site sync, public copy, frontstage regression and pre-commit gates pass.
           EOF
 
           cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json" <<EOF
@@ -335,6 +360,8 @@ jobs:
               "cardcopy_gate": "${{ steps.cardcopy.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
               "site_data_sync": "${{ steps.site-data.outcome }}",
+              "publiccopy_gate": "${{ steps.publiccopy.outcome }}",
+              "frontstage_regression_gate": "${{ steps.frontstage-regression.outcome }}",
               "pre_commit_gate": "${{ steps.pre-commit-gate.outcome }}"
             },
             "assets": {
@@ -381,7 +408,7 @@ jobs:
 
       - name: Commit persistent assets to automation branch
         id: commit
-        if: always() && steps.existing-assets.outputs.skip != 'true' && steps.persistent-assets-post-monitor.outcome == 'success'
+        if: always() && steps.existing-assets.outputs.skip != 'true' && steps.pre-commit-gate.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -461,28 +488,31 @@ jobs:
           What this PR contains:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards and Opinion Cards persisted when asset generation succeeded.
-          - Site data included only when cardcopy, dedupe, sync and pre-commit gates passed.
+          - Site data included only when cardcopy, dedupe, sync, public copy, frontstage regression and pre-commit gates passed.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
 
           Guardrails:
           - No direct main push.
-          - No auto-merge.
-          - No deploy.
+          - Auto-merge is allowed only after the full daily asset and frontstage gate chain passes.
+          - No direct deploy from the automation branch; GitHub Pages deploys after main is updated.
           - No Daily Observation writing or OpenAI/DeepSeek dependency.
 
-          Required manual action:
-          - Review the generated assets and gate outcomes.
-          - Merge this PR if acceptable.
+          Automation result:
+          - This PR is expected to auto-merge after gates pass.
+          - After merge, GitHub Pages deploys from main automatically.
           - Pull main locally or let Obsidian Git sync after merge.
           BODY
 
           if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
+            pr_url="$(gh pr view "$branch" --json url --jq .url)"
             gh pr edit "$pr_number" \
               --title "Daily persistent assets update ${RUN_DATE}" \
               --body-file "$body_file"
             echo "Updated PR #${pr_number}"
             echo "status=updated" >> "$GITHUB_OUTPUT"
+            echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
+            echo "pr_url=$pr_url" >> "$GITHUB_OUTPUT"
             echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
           else
             if pr_url="$(gh pr create \
@@ -490,8 +520,10 @@ jobs:
               --head "$branch" \
               --title "Daily persistent assets update ${RUN_DATE}" \
               --body-file "$body_file" 2>pr-create-error.log)"; then
+              pr_number="$(gh pr view "$branch" --json number --jq .number)"
               echo "$pr_url"
               echo "status=created" >> "$GITHUB_OUTPUT"
+              echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
               echo "pr_url=$pr_url" >> "$GITHUB_OUTPUT"
               echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
             else
@@ -507,7 +539,7 @@ jobs:
                   echo "- Branch: \`$branch\`"
                   echo "- Manual PR: $manual_url"
                   echo
-                  echo "To make this fully automatic, enable the repository setting that allows GitHub Actions to create pull requests, or provide a \`GH_PR_TOKEN\` secret with pull request write permission."
+                  echo "To make this fully automatic, enable the repository setting that allows GitHub Actions to create and merge pull requests, or provide a \`GH_PR_TOKEN\` secret with pull request write permission."
                 } >> "$GITHUB_STEP_SUMMARY"
                 echo "PR creation is blocked by repository settings; manual PR link: $manual_url"
                 echo "status=manual_required" >> "$GITHUB_OUTPUT"
@@ -518,6 +550,44 @@ jobs:
               exit 1
             fi
           fi
+
+      - name: Auto-merge PR after gates pass
+        id: auto-merge
+        if: always() && steps.pr.outputs.pr_number != '' && steps.pre-commit-gate.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          pr_number="${{ steps.pr.outputs.pr_number }}"
+
+          if gh pr merge "$pr_number" \
+            --squash \
+            --auto \
+            --delete-branch \
+            --subject "Persist daily assets for ${RUN_DATE}" \
+            --body "Automated daily assets update after monitor, cardcopy, dedupe, public copy and frontstage regression gates passed." \
+            2>auto-merge-error.log; then
+            echo "status=enabled_or_merged" >> "$GITHUB_OUTPUT"
+            echo "Auto-merge enabled or completed for PR #${pr_number}."
+            exit 0
+          fi
+
+          cat auto-merge-error.log >&2
+
+          if grep -Eqi "auto-merge.*disabled|not enabled for this repository|GraphQL:.*auto.?merge" auto-merge-error.log; then
+            echo "Repository auto-merge is not available; attempting immediate merge after gates passed."
+            gh pr merge "$pr_number" \
+              --squash \
+              --delete-branch \
+              --subject "Persist daily assets for ${RUN_DATE}" \
+              --body "Automated daily assets update after monitor, cardcopy, dedupe, public copy and frontstage regression gates passed."
+            echo "status=merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "status=failed" >> "$GITHUB_OUTPUT"
+          exit 1
 
       - name: Persistent assets PR result
         if: always()
@@ -543,28 +613,31 @@ jobs:
           require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
           require_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
           require_success "Card / Opinion regeneration" "${{ steps.assets.outcome }}"
+          require_success "Cardcopy gate" "${{ steps.cardcopy.outcome }}"
+          require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
+          require_success "Site data sync" "${{ steps.site-data.outcome }}"
+          require_success "Public copy gate" "${{ steps.publiccopy.outcome }}"
+          require_success "Frontstage regression gate" "${{ steps.frontstage-regression.outcome }}"
+          require_success "Site freshness gate" "${{ steps.pre-commit-gate.outcome }}"
           require_success "Commit persistent assets" "${{ steps.commit.outcome }}"
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
             require_success "Open or update PR" "${{ steps.pr.outcome }}"
+            require_success "Auto-merge PR" "${{ steps.auto-merge.outcome }}"
             if [ "${{ steps.pr.outputs.status }}" = "manual_required" ]; then
-              echo "Cards-only gates passed and the automation branch was pushed."
+              echo "Full daily assets and frontstage gates passed, and the automation branch was pushed."
               echo "Manual PR is required because repository settings block GitHub Actions PR creation:"
               echo "${{ steps.pr.outputs.manual_url }}"
             fi
           fi
 
-          if [ "${{ steps.cardcopy.outcome }}" != "success" ] || [ "${{ steps.pool-to-card-dedupe.outcome }}" != "success" ]; then
-            echo "Card gates did not fully pass. Raw / Pool and generated card assets were still persisted for review; site data was not required." >&2
-          fi
-
           if [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
-            echo "Frontstage data was not persisted because site freshness gates did not fully pass." >&2
+            echo "Frontstage data was not persisted because one or more frontstage gates did not fully pass." >&2
           fi
 
           if [ "$fail" -ne 0 ]; then
-            echo "Persistent assets scheduled PR run did not pass. Inspect the PR branch and uploaded artifacts. Nothing was pushed to main or deployed." >&2
+            echo "Persistent assets scheduled PR run did not pass. Inspect the PR branch and uploaded artifacts. Nothing was pushed directly to main or deployed from the automation branch." >&2
             exit 1
           fi
 
-          echo "Persistent assets scheduled PR run passed."
+          echo "Persistent assets scheduled PR run passed. The PR was merged or auto-merge was enabled; GitHub Pages will deploy after main updates."
