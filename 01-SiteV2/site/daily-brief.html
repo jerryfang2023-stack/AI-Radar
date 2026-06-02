@@ -15,16 +15,12 @@
     background-size: 24px 24px, 24px 24px;
   }
   body {
-    width: 100%;
-    max-width: 860px;
-    margin: 0 auto;
+    width: 100%; max-width: 860px; margin: 0 auto;
     background: transparent;
     font-family: 'Noto Sans SC', -apple-system, sans-serif;
-    padding: 20px;
-    color: #071827;
+    padding: 20px; color: #071827;
   }
   .container { padding: 32px 28px; }
-
   .header {
     display: flex; justify-content: space-between; align-items: end;
     padding-bottom: 14px; border-bottom: 2px solid rgba(200,167,102,.35); margin-bottom: 20px;
@@ -32,7 +28,6 @@
   .brand { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; color: #0d355c; letter-spacing: .03em; }
   .brand small { display: block; font-size: 9px; letter-spacing: .28em; color: #c8a766; font-weight: 600; }
   .date { font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: rgba(7,24,39,.52); font-weight: 500; }
-
   .section { margin-top: 22px; }
   .section-head {
     display: flex; align-items: center; gap: 10px;
@@ -44,7 +39,6 @@
     width: 26px; height: 26px; border-radius: 8px; font-size: 13px;
     background: #c8a766; color: #fffdf8;
   }
-
   .event { margin-bottom: 10px; }
   .event-row {
     display: flex; gap: 12px; align-items: flex-start;
@@ -68,8 +62,9 @@
   }
   .event-title .score.top { background: #9a4832; }
   .event-core { margin-top: 4px; font-size: 12px; line-height: 1.6; color: rgba(7,24,39,.62); }
-  .event-url { margin-top: 3px; font-size: 10px; color: rgba(7,24,39,.38); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-
+  .event-url { margin-top: 3px; font-size: 11px; }
+  .event-url a { color: #0d355c; text-decoration: none; border-bottom: 1px solid rgba(13,53,92,.2); }
+  .event-url a:hover { border-bottom-color: #0d355c; }
   .people-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
   .person-card {
     padding: 14px; border-radius: 10px;
@@ -84,7 +79,6 @@
   .person-quote { margin-top: 7px; font-size: 12px; line-height: 1.6; color: rgba(7,24,39,.72); }
   .person-quote::before { content: "\201C"; color: #c8a766; font-size: 16px; }
   .person-quote::after { content: "\201D"; color: #c8a766; font-size: 16px; }
-
   .signals { margin-top: 14px; }
   .signal-row {
     display: flex; gap: 10px; align-items: flex-start;
@@ -99,13 +93,11 @@
   .signal-tag.adoption { background: rgba(228,131,34,.1); color: #e48322; }
   .signal-tag.sentiment { background: rgba(23,115,76,.08); color: #17734c; }
   .signal-text { font-size: 12px; line-height: 1.6; color: rgba(7,24,39,.72); }
-
   .footer {
     margin-top: 22px; padding-top: 14px;
     border-top: 1px solid rgba(200,167,102,.2);
     font-size: 11px; color: rgba(7,24,39,.38); text-align: center;
   }
-
   @media (max-width: 640px) {
     body { padding: 0; }
     .container { padding: 20px 14px; }
@@ -114,87 +106,8 @@
 </style>
 </head>
 <body>
-<div class="container" id="app">
-  <div class="header">
-    <div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
-    <div class="date" id="brief-date">--</div>
-  </div>
-
-  <div class="section">
-    <div class="section-head"><span class="badge">01</span>今日 10 件大事</div>
-    <div id="events-list"></div>
-  </div>
-
-  <div class="section">
-    <div class="section-head"><span class="badge">02</span>关键人物观点</div>
-    <div class="people-grid" id="people-list"></div>
-  </div>
-
-  <div class="section">
-    <div class="section-head"><span class="badge">03</span>趋势信号摘要</div>
-    <div class="signals" id="signals-list"></div>
-  </div>
-
-  <div class="footer">观澜 AI · WaveSight Daily Brief · 每日 11:00 更新</div>
+<div class="container">
+<!-- CONTENT_INJECTED_HERE -->
 </div>
-
-<script src="data/topic-center.js"></script>
-<script>
-(function() {
-  const tc = window.WaveSightTopicCenter;
-  if (!tc || !tc.topics) { document.getElementById('events-list').innerHTML = '<p style="color:rgba(7,24,39,.42)">暂无数据</p>'; return; }
-
-  const date = tc.meta.date.replace(/-/g, '.');
-  document.getElementById('brief-date').textContent = date;
-
-  // Sort all topics by score desc, pick top 10
-  const all = tc.topics.sort((a, b) => b.score - a.score).slice(0, 10);
-
-  const eventsHtml = all.map(t => {
-    const rankClass = t.grade === 'S' ? 's' : t.grade === 'A' ? 'a' : 'b';
-    const scoreClass = t.grade === 'S' ? 'top' : '';
-    const url = t.url || '';
-    const core = t.core || t.relevance || '';
-    return `<div class="event"><div class="event-row">
-      <div class="event-rank ${rankClass}">${t.grade}</div>
-      <div class="event-body">
-        <div class="event-title">${esc(t.title)}<span class="score ${scoreClass}">${t.score}</span></div>
-        <div class="event-core">${esc(core.substring(0, 120))}</div>
-        <div class="event-url">${esc(url.substring(0, 60))}</div>
-      </div>
-    </div></div>`;
-  }).join('');
-  document.getElementById('events-list').innerHTML = eventsHtml;
-
-  // People: pick 3 from builders + viral_rewrite
-  const people = tc.topics.filter(t => t.sourceId === 'builders' || t.sourceId === 'viral_rewrite').slice(0, 3);
-  const peopleHtml = people.map(p => {
-    const eng = p.evidence || '';
-    const quote = p.core || p.title || '';
-    return `<div class="person-card">
-      <div class="person-name">${esc(getName(p.title))}</div>
-      <span class="person-engagement">${esc(eng.substring(0, 30))}</span>
-      <div class="person-quote">${esc(quote.substring(0, 100))}</div>
-    </div>`;
-  }).join('');
-  document.getElementById('people-list').innerHTML = peopleHtml || '<p style="color:rgba(7,24,39,.42)">暂无观点数据</p>';
-
-  // Signals
-  const signals = [
-    { tag: '平台格局', cls: 'platform', text: '今日平台竞争/合作事件摘要' },
-    { tag: '落地节奏', cls: 'adoption', text: 'Agent 部署与商业化信号' },
-    { tag: '社区情绪', cls: 'sentiment', text: '开发者/创业者/企业的情绪风向' },
-  ];
-  document.getElementById('signals-list').innerHTML = signals.map(s =>
-    `<div class="signal-row"><div class="signal-tag ${s.cls}">${s.tag}</div><div class="signal-text">${s.text}</div></div>`
-  ).join('');
-
-  function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-  function getName(title) {
-    const m = (title||'').match(/^([^：:]+?)(?:\s*[:：]|发布|获|登陆|发布)/);
-    return m ? m[1].trim() : (title||'').substring(0, 20);
-  }
-})();
-</script>
 </body>
 </html>
