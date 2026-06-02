@@ -6,6 +6,7 @@ const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
 const siteContentPath = path.join(siteDataDir, "site-content.json");
 const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
+const topicCenterVersion = "V1.1.1";
 const followBuildersDir = path.join(process.env.USERPROFILE || process.env.HOME || "", ".skill-store", "follow-builders");
 const followBuildersFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
@@ -592,11 +593,12 @@ async function main() {
   const counts = Object.fromEntries(sources.map((source) => [source.id, topics.filter((topic) => topic.sourceId === source.id).length]));
   const data = {
     meta: {
-      version: "V1.1",
+      version: topicCenterVersion,
       date,
       generatedAt: new Date().toISOString(),
       source: "external-source-algorithms",
       rule: "raw_pool_plus_external_sources_five_each",
+      lockedAs: "ops-topic-center-v1.1.1",
       sources: counts,
     },
     sources,
