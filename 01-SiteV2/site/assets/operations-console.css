@@ -124,10 +124,30 @@
 .ops-btn-small { padding: 4px 12px; font-size: 12px; border-radius: 6px; }
 .ops-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
+/* ── 状态徽标 ── */
+.ops-source-status {
+  margin-left: auto;
+  font-family: var(--gl-font-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.ops-status-ready { background: #e6f4ea; color: #137333; }
+.ops-status-pending { background: #fef7e0; color: #b06000; }
+.ops-status-dim { color: rgba(7,24,39,0.25); }
+
+.ops-helper-msg {
+  font-size: 12px;
+  color: rgba(7,24,39,0.4);
+  display: block;
+}
+
 /* ── 选题来源网格 ── */
 .ops-source-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -158,13 +178,6 @@
   font-weight: 600;
   margin: 0;
 }
-.ops-source-count {
-  margin-left: auto;
-  font-size: 22px;
-  font-weight: 650;
-  color: rgba(7,24,39,0.15);
-}
-.ops-source-count[data-count] { color: #071827; }
 .ops-source-desc {
   font-size: 13px;
   line-height: 1.6;
@@ -279,42 +292,58 @@
   color: #c8a766;
 }
 
-/* ── 流水线可视化 ── */
-.ops-pipeline-grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 32px 0;
-}
-.ops-pipeline-stage {
+/* ── 流水线 - 四线并排 ── */
+.ops-pipeline-lanes {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  padding: 16px 24px;
+  gap: 16px;
+}
+.ops-lane {
   background: #fff;
   border: 1px solid rgba(7,24,39,0.07);
   border-radius: 12px;
-  min-width: 100px;
-  transition: all 0.2s;
+  padding: 20px;
 }
-.ops-stage-icon { font-size: 28px; }
-.ops-pipeline-stage strong { font-size: 13px; font-weight: 600; }
-.ops-stage-status { font-size: 11px; color: rgba(7,24,39,0.35); }
-.ops-stage-time { font-size: 10px; color: rgba(7,24,39,0.25); }
-
-.ops-pipeline-stage[data-status="success"] { border-color: #137333; background: #e6f4ea; }
-.ops-pipeline-stage[data-status="success"] .ops-stage-status { color: #137333; }
-.ops-pipeline-stage[data-status="running"] { border-color: #c8a766; background: #fefcf5; }
-.ops-pipeline-stage[data-status="running"] .ops-stage-status { color: #c8a766; }
-.ops-pipeline-stage[data-status="failed"] { border-color: #c5221f; background: #fce8e6; }
-.ops-pipeline-stage[data-status="failed"] .ops-stage-status { color: #c5221f; }
-
-.ops-pipeline-arrow {
-  font-size: 18px;
-  color: rgba(7,24,39,0.15);
+.ops-lane-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(7,24,39,0.05);
+}
+.ops-lane-icon { font-size: 20px; }
+.ops-lane-head h3 { font-size: 14px; font-weight: 600; margin: 0; }
+.ops-lane-status {
+  margin-left: auto;
+  font-family: var(--gl-font-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.ops-lane-steps {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.ops-lane-step {
+  padding: 6px 12px;
+  background: rgba(7,24,39,0.03);
+  border: 1px solid rgba(7,24,39,0.06);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.ops-lane-step[data-step="monitor"] { border-color: #c8a766; color: #c8a766; }
+.ops-lane-step[data-step="signals"] { border-color: #1a73e8; color: #1a73e8; }
+.ops-lane-step[data-step="pitch"] { border-color: #137333; color: #137333; }
+.ops-step-dim { opacity: 0.4; }
+.ops-lane-arrow {
+  font-size: 14px;
+  color: rgba(7,24,39,0.12);
 }
 
 /* ── Agent日志 ── */
@@ -336,10 +365,24 @@
   border: 1px solid rgba(7,24,39,0.07);
   border-radius: 12px;
   padding: 24px;
-  max-width: 480px;
+  max-width: 560px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
+}
+.ops-settings-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ops-settings-form legend {
+  font-size: 14px;
+  font-weight: 600;
+  color: #071827;
+  margin-bottom: 8px;
 }
 .ops-settings-form label {
   display: flex;
@@ -366,4 +409,22 @@
   border-color: #c8a766;
   box-shadow: 0 0 0 2px rgba(200,167,102,0.15);
 }
-.ops-settings-form .ops-btn { align-self: flex-start; margin-top: 4px; }
+.ops-settings-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(7,24,39,0.05);
+}
+.ops-settings-form .ops-btn { align-self: flex-start; }
+
+/* ── 选题结果区 ── */
+.ops-pitch-source {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 4px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(7,24,39,0.04);
+  color: rgba(7,24,39,0.45);
+}

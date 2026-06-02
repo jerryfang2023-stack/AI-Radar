@@ -1,6 +1,7 @@
 /**
  * 运营后台 · 选题中心
  * Operations Console — Topic Curation Center
+ * 四种选题来源：Raw-Pool-Pitch / 产业链分析 / Builders 文章 / 爆款改编
  * 观澜AI · v1.1
  */
 
@@ -11,10 +12,13 @@
     tab: 'topic-center',
     data: null,
     pitchResult: null,
-    pipelineStatus: 'idle',
+    importState: {
+      industryChain: { status: 'pending', lastSync: null, sources: [] },
+      builders: { status: 'pending', lastSync: null, sources: [] },
+      viral: { status: 'pending', lastSync: null, sources: [] },
+    },
   };
 
-  /* ── DOM refs ── */
   const $ = (sel, ctx) => (ctx || document).querySelector(sel);
   const $$ = (sel, ctx) => [...(ctx || document).querySelectorAll(sel)];
 
@@ -31,12 +35,8 @@
   /* ── Data loading ── */
   function loadSiteContent() {
     try {
-      const w = window;
-      const data = w.WaveSightSiteData || w.__SITE_DATA__ || null;
-      if (!data) { console.warn('[ops] no site content data found'); return null; }
-      return data;
+      return window.WaveSightSiteData || window.__SITE_DATA__ || null;
     } catch (e) {
-      console.warn('[ops] failed to load site content:', e);
       return null;
     }
   }
@@ -47,7 +47,6 @@
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return await r.json();
     } catch (e) {
-      console.warn('[ops] API fetch failed:', e.message);
       return null;
     }
   }
@@ -59,133 +58,123 @@
 
   /* ── 四种选题来源渲染 ── */
 
-  function renderSignalItems(signals) {
-    const container = $('[data-source-items="signals"]');
+  // Source 1: Raw-Pool-Pitch
+  function renderRawPoolItems(data) {
+    const container = $('[data-source-items="raw-pool"]');
     if (!container) return;
-    if (!signals || !signals.length) {
-      container.innerHTML = '<p class="ops-source-empty">暂无信号数据</p>';
-      $('[data-source-count="signals"]').textContent = '0';
+
+    const items = [];
+    if (data) {
+      if (Array.isArray(data.signal_cards)) {
+        data.signal_cards.forEach(s => items.push({ type: 'signal-card', label: '📡 信号卡', title: s.title || s.name, meta: (s.type || '') + (s.source_level ? ' · ' + s.source_level : '') }));
+      }
+      if (Array.isArray(data.signals)) {
+        data.signals.forEach(s => items.push({ type: 'signal', label: '📡 信号', title: s.title || s.name, meta: s.type || '' }));
+      }
+      if (Array.isArray(data.opinion_cards)) {
+        data.opinion_cards.forEach(o => items.push({ type: 'opinion', label: '💬 观点', title: (o.person ? o.person + '：' : '') + (o.title || o.name), meta: o.opinion_tier || '' }));
+      }
+      if (Array.isArray(data.raw) || Array.isArray(data.raw_candidates)) {
+        const rawList = data.raw || data.raw_candidates || [];
+        rawList.slice(-5).forEach(r => items.push({ type: 'raw', label: '📥 Raw', title: r.title || r.name || r.url, meta: r.source_name || '' }));
+      }
+      if (Array.isArray(data.pool) || Array.isArray(data.pool_candidates)) {
+        const poolList = data.pool || data.pool_candidates || [];
+        poolList.slice(-5).forEach(p => items.push({ type: 'pool', label: '🗂 Pool', title: p.title || p.name || p.url, meta: p.category || '' }));
+      }
+    }
+
+    if (!items.length) {
+      container.innerHTML = '<p class="ops-source-empty">暂无数据 · 等待每日监测产出</p>';
       return;
     }
-    container.innerHTML = signals.slice(0, 20).map(s => {
-      const type = (s.type || s.category || '').toLowerCase();
-      const typeLabel = { product_service: '产品', funding: '融资', case: '案例' }[type] || type;
-      const typeClass = { product_service: 'ops-tag-product', funding: 'ops-tag-funding', case: 'ops-tag-case' }[type] || '';
-      return `<div class="ops-source-item" data-signal-id="${s.id || ''}">
-        <span class="ops-source-item-tag ${typeClass}">${typeLabel}</span>
+
+    container.innerHTML = items.slice(0, 15).map(it =>
+      `<div class="ops-source-item">
+        <span class="ops-source-item-tag">${it.label}</span>
         <div class="ops-source-item-body">
-          <div class="ops-source-item-title">${s.title || s.name || '(未命名)'}</div>
-          <div class="ops-source-item-meta">${s.source_url ? s.source_url.replace(/^https?:\/\//, '').slice(0, 40) : ''}${s.source_level ? ' · ' + s.source_level : ''}</div>
+          <div class="ops-source-item-title">${it.title || '(未命名)'}</div>
+          <div class="ops-source-item-meta">${it.meta || ''}</div>
         </div>
-      </div>`;
-    }).join('');
-    $('[data-source-count="signals"]').textContent = signals.length;
+      </div>`
+    ).join('');
   }
 
-  function renderOpinionItems(opinions) {
-    const container = $('[data-source-items="opinions"]');
+  // Source 2: 产业链分析 (placeholder - not yet built)
+  function renderIndustryChainItems(state) {
+    const container = $('[data-source-items="industry-chain"]');
     if (!container) return;
-    if (!opinions || !opinions.length) {
-      container.innerHTML = '<p class="ops-source-empty">暂无观点数据</p>';
-      $('[data-source-count="opinions"]').textContent = '0';
+    const s = state || STATE.importState.industryChain;
+    if (s.status === 'pending' || !s.sources.length) {
+      container.innerHTML = `<p class="ops-source-empty">
+        <span class="ops-helper-msg">⏳ Hermes 定时抓取 pipeline 尚未启动</span>
+        <span class="ops-helper-msg" style="margin-top:8px;font-size:11px;">计划源: SEC EDGAR · arXiv · OpenAlex · HN · 公司 Blog/Docs/Career · 云市场</span>
+      </p>`;
       return;
     }
-    container.innerHTML = opinions.slice(0, 20).map(o => {
-      const tier = (o.opinion_tier || '').toLowerCase();
-      const tierLabel = { feature: '推荐', sidebar: '旁栏', archive: '存档', discard: '丢弃' }[tier] || tier;
-      const tierClass = { feature: 'ops-tag-feature', sidebar: 'ops-tag-sidebar', archive: 'ops-tag-archive' }[tier] || '';
-      return `<div class="ops-source-item" data-opinion-id="${o.id || ''}">
-        <span class="ops-source-item-tag ${tierClass}">${tierLabel}</span>
+    container.innerHTML = s.sources.map(src =>
+      `<div class="ops-source-item">
+        <span class="ops-source-item-tag">${src.source || '源'}</span>
         <div class="ops-source-item-body">
-          <div class="ops-source-item-title">${o.title || o.name || o.person || '(未命名)'}</div>
-          <div class="ops-source-item-meta">${o.person || ''}${o.org ? ' · ' + o.org : ''}${o.published_date ? ' · ' + o.published_date : ''}</div>
+          <div class="ops-source-item-title">${src.title || ''}</div>
+          <div class="ops-source-item-meta">${src.date || ''}${src.confidence ? ' · 置信度: ' + src.confidence : ''}</div>
         </div>
-      </div>`;
-    }).join('');
-    $('[data-source-count="opinions"]').textContent = opinions.length;
+      </div>`
+    ).join('');
   }
 
-  function renderChangeItems(changes) {
-    const container = $('[data-source-items="changes"]');
+  // Source 3: Builders 文章 (placeholder)
+  function renderBuildersItems(state) {
+    const container = $('[data-source-items="builders"]');
     if (!container) return;
-    if (!changes || !changes.length) {
-      container.innerHTML = '<p class="ops-source-empty">暂无变化候选</p>';
-      $('[data-source-count="changes"]').textContent = '0';
+    const s = state || STATE.importState.builders;
+    if (s.status === 'pending' || !s.sources.length) {
+      container.innerHTML = `<p class="ops-source-empty">
+        <span class="ops-helper-msg">⏳ 开发者源监控尚未启动</span>
+        <span class="ops-helper-msg" style="margin-top:8px;font-size:11px;">计划源: follow-builders · GitHub Release/Issue/Trending · HN Show HN · 开发者博客</span>
+      </p>`;
       return;
     }
-    container.innerHTML = changes.slice(0, 15).map(c => {
-      return `<div class="ops-source-item">
-        <span class="ops-source-item-tag">CHG</span>
+    container.innerHTML = s.sources.map(src =>
+      `<div class="ops-source-item">
+        <span class="ops-source-item-tag">${src.source || '源'}</span>
         <div class="ops-source-item-body">
-          <div class="ops-source-item-title">${c.title || c.name || '(未命名)'}</div>
-          <div class="ops-source-item-meta">${c.business_implication ? c.business_implication.slice(0, 80) + '…' : ''}</div>
+          <div class="ops-source-item-title">${src.title || ''}</div>
+          <div class="ops-source-item-meta">${src.author || ''}${src.platform ? ' · ' + src.platform : ''}</div>
         </div>
-      </div>`;
-    }).join('');
-    $('[data-source-count="changes"]').textContent = changes.length;
+      </div>`
+    ).join('');
   }
 
-  function renderTrendItems(trends) {
-    const container = $('[data-source-items="trends"]');
+  // Source 4: 爆款改编 (placeholder)
+  function renderViralItems(state) {
+    const container = $('[data-source-items="viral"]');
     if (!container) return;
-    if (!trends || !trends.length) {
-      container.innerHTML = '<p class="ops-source-empty">暂无趋势候选</p>';
-      $('[data-source-count="trends"]').textContent = '0';
+    const s = state || STATE.importState.viral;
+    if (s.status === 'pending' || !s.sources.length) {
+      container.innerHTML = `<p class="ops-source-empty">
+        <span class="ops-helper-msg">⏳ 热点监控尚未启动</span>
+        <span class="ops-helper-msg" style="margin-top:8px;font-size:11px;">计划源: 公众号 · 小红书 · 视频号 · 播客 · AI 热点榜 · 微信文章搜索</span>
+      </p>`;
       return;
     }
-    container.innerHTML = trends.slice(0, 10).map(t => {
-      return `<div class="ops-source-item">
-        <span class="ops-source-item-tag">TREND</span>
+    container.innerHTML = s.sources.map(src =>
+      `<div class="ops-source-item">
+        <span class="ops-source-item-tag">${src.platform || '平台'}</span>
         <div class="ops-source-item-body">
-          <div class="ops-source-item-title">${t.title || t.name || '(未命名)'}</div>
-          <div class="ops-source-item-meta">${t.status || ''}${t.confidence ? ' · 置信度: ' + t.confidence : ''}</div>
+          <div class="ops-source-item-title">${src.title || ''}</div>
+          <div class="ops-source-item-meta">🔥 ${src.viral_score || '?'} · ${src.date || ''}</div>
         </div>
-      </div>`;
-    }).join('');
-    $('[data-source-count="trends"]').textContent = trends.length;
-  }
-
-  /* ── 解析 site-content 数据 ── */
-  function extractSources(data) {
-    const out = { signals: [], opinions: [], changes: [], trends: [] };
-    if (!data) return out;
-
-    // 从 site-content 的 content 数组中提取
-    if (Array.isArray(data.content)) {
-      data.content.forEach(item => {
-        const type = (item.type || item.contentType || '').toLowerCase();
-        if (type.includes('signal') || type === 'product_service' || type === 'funding' || type === 'case') {
-          out.signals.push(item);
-        } else if (type.includes('opinion')) {
-          out.opinions.push(item);
-        } else if (type.includes('change') || type.includes('chg')) {
-          out.changes.push(item);
-        } else if (type.includes('trend')) {
-          out.trends.push(item);
-        }
-      });
-    }
-
-    // 从专门字段提取
-    if (Array.isArray(data.signals)) out.signals = data.signals;
-    if (Array.isArray(data.signal_cards)) out.signals = data.signal_cards;
-    if (Array.isArray(data.opinions)) out.opinions = data.opinions;
-    if (Array.isArray(data.opinion_cards)) out.opinions = data.opinion_cards;
-    if (Array.isArray(data.change_candidates)) out.changes = data.change_candidates;
-    if (Array.isArray(data.selected_changes)) out.changes = data.selected_changes;
-    if (Array.isArray(data.trend_candidates)) out.trends = data.trend_candidates;
-    if (Array.isArray(data.trends)) out.trends = data.trends;
-
-    return out;
+      </div>`
+    ).join('');
   }
 
   /* ── 渲染所有来源 ── */
   function renderAllSources(data) {
-    const sources = extractSources(data);
-    renderSignalItems(sources.signals);
-    renderOpinionItems(sources.opinions);
-    renderChangeItems(sources.changes);
-    renderTrendItems(sources.trends);
+    renderRawPoolItems(data);
+    renderIndustryChainItems();
+    renderBuildersItems();
+    renderViralItems();
   }
 
   /* ── 运行主编选题 ── */
@@ -199,19 +188,15 @@
     if (pitchContainer) pitchContainer.hidden = false;
 
     try {
-      // 尝试调用 VPS 上的 Hermes API 或直接本地分析
-      const sources = extractSources(STATE.data);
-      const result = await localPitchAnalysis(sources);
-
-      if (result) {
+      const result = await localPitchAnalysis(STATE.data);
+      if (result && result.candidates.length) {
         STATE.pitchResult = result;
         renderPitchResult(result);
-        addLogEntry('选题Agent', '选题分析完成，输出 ' + (result.lead ? 'lead_story' : '结果') + ' 级选题');
+        addLogEntry('选题Agent', `选题分析完成 · 评分最高: ${result.candidates[0].title.slice(0, 40)} (${result.candidates[0].score}/100)`);
       } else {
-        addLogEntry('选题Agent', '⚠ 选题分析无结果');
+        addLogEntry('选题Agent', '⚠ 无合适选题');
       }
     } catch (e) {
-      console.error('[ops] pitch failed:', e);
       addLogEntry('选题Agent', '❌ 选题分析失败: ' + e.message);
     } finally {
       btn.disabled = false;
@@ -219,59 +204,64 @@
     }
   }
 
-  /* ── 本地启发式选题分析（无后端时降级使用） ── */
-  async function localPitchAnalysis(sources) {
+  /* ── 本地启发式选题分析 ── */
+  async function localPitchAnalysis(data) {
     const candidates = [];
 
-    // 从信号卡中提取候选
-    (sources.signals || []).forEach(s => {
+    if (!data) return { date: new Date().toISOString().slice(0, 10), candidates: [] };
+
+    // Raw-Pool-Pitch 源
+    const signalCards = data.signal_cards || data.signals || [];
+    signalCards.forEach(s => {
       const type = (s.type || s.category || '').toLowerCase();
       let score = 40;
-      if (type === 'funding') score += 15;
-      if (type === 'product_service') score += 10;
+      if (type === 'funding') score += 20;
+      else if (type === 'product_service') score += 12;
+      else if (type === 'case') score += 10;
       if (s.source_level === 'S') score += 10;
       if (s.source_level === 'A') score += 5;
-      const title = s.title || s.name || '';
-      candidates.push({ title, type: 'signal', subType: type, score, sourceId: s.id });
+      candidates.push({
+        title: s.title || s.name || '(未命名信号)',
+        source: 'Raw-Pool-Pitch',
+        sourceIcon: '📡',
+        sourceType: type,
+        score,
+        desc: type === 'funding' ? '融资事件' : type === 'product_service' ? '产品/服务发布' : '案例',
+      });
     });
 
-    // 从观点卡中提取候选
-    (sources.opinions || []).forEach(o => {
+    const opinionCards = data.opinion_cards || data.opinions || [];
+    opinionCards.forEach(o => {
       const tier = (o.opinion_tier || '').toLowerCase();
       let score = 35;
-      if (tier === 'feature') score += 15;
-      if (tier === 'sidebar') score += 5;
-      const title = (o.person ? o.person + '：' : '') + (o.title || o.name || '');
-      candidates.push({ title, type: 'opinion', subType: tier, score, sourceId: o.id });
+      if (tier === 'feature') score += 20;
+      else if (tier === 'sidebar') score += 8;
+      candidates.push({
+        title: (o.person ? o.person + '：' : '') + (o.title || o.name || '(未命名观点)'),
+        source: 'Raw-Pool-Pitch',
+        sourceIcon: '💬',
+        sourceType: 'opinion',
+        score,
+        desc: tier === 'feature' ? '推荐观点' : tier === 'sidebar' ? '旁栏观点' : '观点',
+      });
     });
 
-    // 从变化候选中提取
-    (sources.changes || []).forEach(c => {
-      let score = 50;
-      const title = c.title || c.name || '';
-      candidates.push({ title, type: 'change', subType: 'chg', score, sourceId: c.id });
-    });
-
-    // 从趋势候选中提取
-    (sources.trends || []).forEach(t => {
-      let score = 30;
-      const title = t.title || t.name || '';
-      candidates.push({ title, type: 'trend', subType: 'trend', score, sourceId: t.id });
-    });
-
-    // 排序取前三
+    // 排序去重取 top 3
+    const seen = new Set();
     candidates.sort((a, b) => b.score - a.score);
-    const top = candidates.slice(0, 3);
+    const top = [];
+    for (const c of candidates) {
+      const key = c.title.slice(0, 30);
+      if (!seen.has(key) && top.length < 3) {
+        seen.add(key);
+        top.push(c);
+      }
+    }
 
-    if (!top.length) return null;
-
-    const result = {
+    return {
       date: new Date().toISOString().slice(0, 10),
-      lead: top[0],
-      sharpened: top[1] || null,
-      hold: top[2] || null,
+      candidates: top,
     };
-    return result;
   }
 
   /* ── 渲染选题结果 ── */
@@ -286,25 +276,27 @@
     const sharpened = $('[data-ops-pitch-sharpened]');
     const hold = $('[data-ops-pitch-hold]');
 
-    if (result.lead) {
+    const c = result.candidates || [];
+    if (c[0]) {
       lead.hidden = false;
-      $('[data-ops-pitch-lead-title]').textContent = result.lead.title || '(未命名)';
-      $('[data-ops-pitch-lead-desc]').textContent = `${result.lead.type === 'signal' ? '📡 信号' : result.lead.type === 'opinion' ? '💬 观点' : '🔄 变化'} · 类型: ${result.lead.subType}`;
-      $('[data-ops-pitch-lead-score]').textContent = result.lead.score + '/100';
+      $('[data-ops-pitch-lead-title]').textContent = c[0].title;
+      $('[data-ops-pitch-lead-desc]').textContent = c[0].desc + ' · 冲突度评估中';
+      $('[data-ops-pitch-lead-source]').textContent = c[0].sourceIcon + ' ' + c[0].source;
+      $('[data-ops-pitch-lead-score]').textContent = c[0].score + '/100';
     }
-
-    if (result.sharpened) {
+    if (c[1]) {
       sharpened.hidden = false;
-      $('[data-ops-pitch-sharpened-title]').textContent = result.sharpened.title || '(未命名)';
-      $('[data-ops-pitch-sharpened-desc]').textContent = `${result.sharpened.type} · 类型: ${result.sharpened.subType}`;
-      $('[data-ops-pitch-sharpened-score]').textContent = result.sharpened.score + '/100';
+      $('[data-ops-pitch-sharpened-title]').textContent = c[1].title;
+      $('[data-ops-pitch-sharpened-desc]').textContent = c[1].desc;
+      $('[data-ops-pitch-sharpened-source]').textContent = c[1].sourceIcon + ' ' + c[1].source;
+      $('[data-ops-pitch-sharpened-score]').textContent = c[1].score + '/100';
     }
-
-    if (result.hold) {
+    if (c[2]) {
       hold.hidden = false;
-      $('[data-ops-pitch-hold-title]').textContent = result.hold.title || '(未命名)';
-      $('[data-ops-pitch-hold-desc]').textContent = `${result.hold.type} · 类型: ${result.hold.subType}`;
-      $('[data-ops-pitch-hold-score]').textContent = result.hold.score + '/100';
+      $('[data-ops-pitch-hold-title]').textContent = c[2].title;
+      $('[data-ops-pitch-hold-desc]').textContent = c[2].desc;
+      $('[data-ops-pitch-hold-source]').textContent = c[2].sourceIcon + ' ' + c[2].source;
+      $('[data-ops-pitch-hold-score]').textContent = c[2].score + '/100';
     }
   }
 
@@ -315,29 +307,12 @@
     const empty = $('.ops-log-empty', feed);
     if (empty) empty.remove();
 
-    const now = new Date();
-    const time = now.toLocaleTimeString('zh-CN', { hour12: false });
+    const time = new Date().toLocaleTimeString('zh-CN', { hour12: false });
     const entry = document.createElement('div');
     entry.className = 'ops-log-entry';
     entry.innerHTML = `<span class="ops-log-time">${time}</span> <span class="ops-log-agent">[${agent}]</span> <span class="ops-log-msg">${msg}</span>`;
     feed.prepend(entry);
-
-    // 限制日志数量
     while (feed.children.length > 100) feed.lastChild.remove();
-  }
-
-  /* ── Pipeline 状态 ── */
-  function updatePipelineStatus(statusMap) {
-    Object.entries(statusMap).forEach(([stage, status]) => {
-      const el = $(`[data-ops-stage-status="${stage}"]`);
-      const timeEl = $(`[data-ops-stage-time="${stage}"]`);
-      const stageCard = el?.closest('.ops-pipeline-stage');
-      if (el) el.textContent = status.label || status;
-      if (timeEl) timeEl.textContent = status.time || '';
-      if (stageCard) {
-        stageCard.dataset.status = status.val || 'idle';
-      }
-    });
   }
 
   /* ── 初始化 ── */
@@ -347,7 +322,7 @@
       btn.addEventListener('click', () => switchTab(btn.dataset.opsTab));
     });
 
-    // 刷新数据
+    // 刷新
     const refreshBtn = $('[data-ops-refresh]');
     if (refreshBtn) {
       refreshBtn.addEventListener('click', async () => {
@@ -363,33 +338,7 @@
 
     // 运行选题
     const pitchBtn = $('[data-ops-run-pitch]');
-    if (pitchBtn) {
-      pitchBtn.addEventListener('click', runPitch);
-    }
-
-    // 设置表单
-    const settingsForm = $('[data-ops-settings-form]');
-    if (settingsForm) {
-      settingsForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const formData = new FormData(settingsForm);
-        const settings = Object.fromEntries(formData);
-        try {
-          localStorage.setItem('ops_settings', JSON.stringify(settings));
-          addLogEntry('系统', '设置已保存');
-        } catch (err) {
-          addLogEntry('系统', '❌ 保存设置失败: ' + err.message);
-        }
-      });
-      // 恢复设置
-      try {
-        const saved = JSON.parse(localStorage.getItem('ops_settings') || '{}');
-        if (saved.pitch_schedule) settingsForm.querySelector('[name="pitch_schedule"]').value = saved.pitch_schedule;
-        if (saved.pitch_min_score) settingsForm.querySelector('[name="pitch_min_score"]').value = saved.pitch_min_score;
-        if (saved.auto_write) settingsForm.querySelector('[name="auto_write"]').value = saved.auto_write;
-        if (saved.notify_channel) settingsForm.querySelector('[name="notify_channel"]').value = saved.notify_channel;
-      } catch (e) { /* ignore */ }
-    }
+    if (pitchBtn) pitchBtn.addEventListener('click', runPitch);
 
     // 展开全部
     const expandBtn = $('[data-ops-pitch-expand]');
@@ -400,30 +349,48 @@
       });
     }
 
+    // 设置表单
+    const settingsForm = $('[data-ops-settings-form]');
+    if (settingsForm) {
+      settingsForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        try {
+          const fd = new FormData(settingsForm);
+          localStorage.setItem('ops_settings', JSON.stringify(Object.fromEntries(fd)));
+          addLogEntry('系统', '设置已保存');
+        } catch (err) {
+          addLogEntry('系统', '❌ 保存失败: ' + err.message);
+        }
+      });
+      settingsForm.addEventListener('reset', () => {
+        localStorage.removeItem('ops_settings');
+        addLogEntry('系统', '设置已恢复默认');
+      });
+      try {
+        const saved = JSON.parse(localStorage.getItem('ops_settings') || '{}');
+        Object.entries(saved).forEach(([k, v]) => {
+          const el = settingsForm.querySelector(`[name="${k}"]`);
+          if (el) el.value = v;
+        });
+      } catch (e) { /* ignore */ }
+    }
+
     // 加载数据
-    addLogEntry('系统', '运营后台初始化完成');
+    addLogEntry('系统', '运营后台 v1.1 初始化完成 · 四种选题源');
     await ensureData();
     if (STATE.data) {
       renderAllSources(STATE.data);
-      addLogEntry('系统', `加载了 ${STATE.data.content ? STATE.data.content.length : 0} 条内容`);
+      const all = STATE.data.content || [];
+      const sigs = (STATE.data.signals || STATE.data.signal_cards || []).length;
+      const ops = (STATE.data.opinions || STATE.data.opinion_cards || []).length;
+      addLogEntry('系统', `已加载数据 · 信号: ${sigs} · 观点: ${ops} · 内容: ${all.length}`);
     } else {
-      addLogEntry('系统', '⚠ 未加载到数据，请在数据同步后刷新');
+      addLogEntry('系统', '⚠ 未加载到数据');
     }
-
-    // Pipeline状态（默认占位）
-    updatePipelineStatus({
-      monitor: { val: 'idle', label: '等待中' },
-      signals: { val: 'idle', label: '等待中' },
-      pitch: { val: 'idle', label: '等待中' },
-      write: { val: 'idle', label: '等待中' },
-      qc: { val: 'idle', label: '等待中' },
-    });
 
     // 最后同步时间
     const syncEl = $('[data-ops-last-sync]');
-    if (syncEl) {
-      syncEl.textContent = '上次同步: ' + new Date().toLocaleString('zh-CN');
-    }
+    if (syncEl) syncEl.textContent = '上次同步: ' + new Date().toLocaleString('zh-CN');
   }
 
   if (document.readyState === 'loading') {

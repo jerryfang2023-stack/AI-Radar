@@ -49,67 +49,67 @@
       <!-- 四种选题来源 -->
       <div class="ops-source-grid">
 
-        <!-- 来源一：信号卡 -->
-        <article class="ops-source-card" data-source-type="signals">
+        <!-- 来源一：Raw-Pool-Pitch -->
+        <article class="ops-source-card" data-source-type="raw-pool">
           <div class="ops-source-head">
-            <span class="ops-source-icon ops-icon-signal">📡</span>
+            <span class="ops-source-icon">📡</span>
             <div>
-              <span class="ops-source-kicker">SOURCE · 01</span>
-              <h2>商业信号</h2>
+              <span class="ops-source-kicker">TOPIC SOURCE · 01</span>
+              <h2>Raw-Pool-Pitch</h2>
             </div>
-            <span class="ops-source-count" data-source-count="signals">—</span>
+            <span class="ops-source-status ops-status-ready" data-source-status="raw-pool">已对接</span>
           </div>
-          <p class="ops-source-desc">来自每日监测的 product_service / funding / case 信号卡，代表当天最明确的 AI 商业事件。</p>
-          <div class="ops-source-items" data-source-items="signals">
-            <p class="ops-source-empty">暂无数据</p>
+          <p class="ops-source-desc">直接从 GitHub 读 Raw / Pool / Signal Card / Opinion Card。Hermes 已有 GitHub 授权，最容易接。</p>
+          <div class="ops-source-items" data-source-items="raw-pool">
+            <p class="ops-source-empty">暂无数据 · 等待每日监测产出</p>
           </div>
         </article>
 
-        <!-- 来源二：观点卡 -->
-        <article class="ops-source-card" data-source-type="opinions">
+        <!-- 来源二：产业链分析 -->
+        <article class="ops-source-card" data-source-type="industry-chain">
           <div class="ops-source-head">
-            <span class="ops-source-icon ops-icon-opinion">💬</span>
+            <span class="ops-source-icon">🔗</span>
             <div>
-              <span class="ops-source-kicker">SOURCE · 02</span>
-              <h2>前沿观点</h2>
+              <span class="ops-source-kicker">TOPIC SOURCE · 02</span>
+              <h2>产业链分析</h2>
             </div>
-            <span class="ops-source-count" data-source-count="opinions">—</span>
+            <span class="ops-source-status ops-status-pending" data-source-status="industry-chain">待搭建</span>
           </div>
-          <p class="ops-source-desc">来自行业领袖的前沿观点卡，经翻译和四档评级（feature / sidebar / archive / discard）。</p>
-          <div class="ops-source-items" data-source-items="opinions">
-            <p class="ops-source-empty">暂无数据</p>
+          <p class="ops-source-desc">定时抓取 SEC EDGAR、arXiv、OpenAlex、HN、公司 Blog / Docs / Career、云市场等公开源，沉淀为"产业链节点候选"。</p>
+          <div class="ops-source-items" data-source-items="industry-chain">
+            <p class="ops-source-empty"><span class="ops-helper-msg">⏳ Hermes 定时抓取 pipeline 尚未启动</span></p>
           </div>
         </article>
 
-        <!-- 来源三：变化候选 -->
-        <article class="ops-source-card" data-source-type="changes">
+        <!-- 来源三：Builders 文章 -->
+        <article class="ops-source-card" data-source-type="builders">
           <div class="ops-source-head">
-            <span class="ops-source-icon ops-icon-change">🔄</span>
+            <span class="ops-source-icon">🛠</span>
             <div>
-              <span class="ops-source-kicker">SOURCE · 03</span>
-              <h2>变化候选</h2>
+              <span class="ops-source-kicker">TOPIC SOURCE · 03</span>
+              <h2>Builders 文章</h2>
             </div>
-            <span class="ops-source-count" data-source-count="changes">—</span>
+            <span class="ops-source-status ops-status-pending" data-source-status="builders">待搭建</span>
           </div>
-          <p class="ops-source-desc">精选变化候选，已通过主编评分的变化事件，适合作为今日观察或深度选题的叙事起点。</p>
-          <div class="ops-source-items" data-source-items="changes">
-            <p class="ops-source-empty">暂无数据</p>
+          <p class="ops-source-desc">读取 follow-builders、GitHub release / issue / trending、HN Show HN、开发者博客。重点不是新闻，而是"开发者正在把 AI 用到哪里"。</p>
+          <div class="ops-source-items" data-source-items="builders">
+            <p class="ops-source-empty"><span class="ops-helper-msg">⏳ 开发者源监控尚未启动</span></p>
           </div>
         </article>
 
-        <!-- 来源四：趋势候选 -->
-        <article class="ops-source-card" data-source-type="trends">
+        <!-- 来源四：爆款改编 -->
+        <article class="ops-source-card" data-source-type="viral">
           <div class="ops-source-head">
-            <span class="ops-source-icon ops-icon-trend">📈</span>
+            <span class="ops-source-icon">🔥</span>
             <div>
-              <span class="ops-source-kicker">SOURCE · 04</span>
-              <h2>趋势候选</h2>
+              <span class="ops-source-kicker">TOPIC SOURCE · 04</span>
+              <h2>爆款改编</h2>
             </div>
-            <span class="ops-source-count" data-source-count="trends">—</span>
+            <span class="ops-source-status ops-status-pending" data-source-status="viral">待搭建</span>
           </div>
-          <p class="ops-source-desc">跨日积累的趋势候选，需要多日数据才能形成的持续性判断，适合趋势追踪和深度报告。</p>
-          <div class="ops-source-items" data-source-items="trends">
-            <p class="ops-source-empty">暂无数据</p>
+          <p class="ops-source-desc">历史文章、公众号/视频号/小红书/播客表现、AI 热点榜、微信文章搜索。无平台数据时先用"高传播潜力"规则模拟。</p>
+          <div class="ops-source-items" data-source-items="viral">
+            <p class="ops-source-empty"><span class="ops-helper-msg">⏳ 热点监控尚未启动</span></p>
           </div>
         </article>
 
@@ -128,6 +128,7 @@
           <div class="ops-pitch-body">
             <h3 data-ops-pitch-lead-title></h3>
             <p data-ops-pitch-lead-desc></p>
+            <span class="ops-pitch-source" data-ops-pitch-lead-source></span>
           </div>
           <div class="ops-pitch-score" data-ops-pitch-lead-score></div>
         </div>
@@ -136,6 +137,7 @@
           <div class="ops-pitch-body">
             <h3 data-ops-pitch-sharpened-title></h3>
             <p data-ops-pitch-sharpened-desc></p>
+            <span class="ops-pitch-source" data-ops-pitch-sharpened-source></span>
           </div>
           <div class="ops-pitch-score" data-ops-pitch-sharpened-score></div>
         </div>
@@ -144,6 +146,7 @@
           <div class="ops-pitch-body">
             <h3 data-ops-pitch-hold-title></h3>
             <p data-ops-pitch-hold-desc></p>
+            <span class="ops-pitch-source" data-ops-pitch-hold-source></span>
           </div>
           <div class="ops-pitch-score" data-ops-pitch-hold-score></div>
         </div>
@@ -159,41 +162,73 @@
           <h1>生产状态</h1>
         </div>
       </div>
-      <div class="ops-pipeline-grid" data-ops-pipeline>
-        <div class="ops-pipeline-stage" data-stage="monitor">
-          <div class="ops-stage-icon">🔍</div>
-          <strong>每日监测</strong>
-          <span class="ops-stage-status" data-ops-stage-status="monitor">等待中</span>
-          <span class="ops-stage-time" data-ops-stage-time="monitor"></span>
-        </div>
-        <div class="ops-pipeline-arrow">→</div>
-        <div class="ops-pipeline-stage" data-stage="signals">
-          <div class="ops-stage-icon">📡</div>
-          <strong>信号生成</strong>
-          <span class="ops-stage-status" data-ops-stage-status="signals">等待中</span>
-          <span class="ops-stage-time" data-ops-stage-time="signals"></span>
-        </div>
-        <div class="ops-pipeline-arrow">→</div>
-        <div class="ops-pipeline-stage" data-stage="pitch">
-          <div class="ops-stage-icon">🎯</div>
-          <strong>主编选题</strong>
-          <span class="ops-stage-status" data-ops-stage-status="pitch">等待中</span>
-          <span class="ops-stage-time" data-ops-stage-time="pitch"></span>
-        </div>
-        <div class="ops-pipeline-arrow">→</div>
-        <div class="ops-pipeline-stage" data-stage="write">
-          <div class="ops-stage-icon">✍️</div>
-          <strong>文章撰写</strong>
-          <span class="ops-stage-status" data-ops-stage-status="write">等待中</span>
-          <span class="ops-stage-time" data-ops-stage-time="write"></span>
-        </div>
-        <div class="ops-pipeline-arrow">→</div>
-        <div class="ops-pipeline-stage" data-stage="qc">
-          <div class="ops-stage-icon">🔍</div>
-          <strong>质量审核</strong>
-          <span class="ops-stage-status" data-ops-stage-status="qc">等待中</span>
-          <span class="ops-stage-time" data-ops-stage-time="qc"></span>
-        </div>
+      <div class="ops-pipeline-lanes">
+        <section class="ops-lane">
+          <div class="ops-lane-head">
+            <span class="ops-lane-icon">📡</span>
+            <h3>Raw-Pool-Pitch</h3>
+            <span class="ops-lane-status ops-status-ready">已对接</span>
+          </div>
+          <div class="ops-lane-steps">
+            <div class="ops-lane-step" data-step="monitor">🔍 每日监测</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step" data-step="raw">📥 Raw 捕获</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step" data-step="pool">🗂 Pool 筛选</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step" data-step="signals">📡 信号卡</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step" data-step="pitch">🎯 选题</div>
+          </div>
+        </section>
+        <section class="ops-lane">
+          <div class="ops-lane-head">
+            <span class="ops-lane-icon">🔗</span>
+            <h3>产业链分析</h3>
+            <span class="ops-lane-status ops-status-pending">待搭建</span>
+          </div>
+          <div class="ops-lane-steps">
+            <div class="ops-lane-step ops-step-dim">🌐 SEC / arXiv / OpenAlex</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">🏢 公司 Blog / Docs / Career</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">☁️ 云市场</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">🔗 产业链节点候选</div>
+          </div>
+        </section>
+        <section class="ops-lane">
+          <div class="ops-lane-head">
+            <span class="ops-lane-icon">🛠</span>
+            <h3>Builders 文章</h3>
+            <span class="ops-lane-status ops-status-pending">待搭建</span>
+          </div>
+          <div class="ops-lane-steps">
+            <div class="ops-lane-step ops-step-dim">👤 follow-builders</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">📦 GitHub Release / Issue / Trending</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">📰 HN Show HN / 开发者博客</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">✍️ Builder 选题</div>
+          </div>
+        </section>
+        <section class="ops-lane">
+          <div class="ops-lane-head">
+            <span class="ops-lane-icon">🔥</span>
+            <h3>爆款改编</h3>
+            <span class="ops-lane-status ops-status-pending">待搭建</span>
+          </div>
+          <div class="ops-lane-steps">
+            <div class="ops-lane-step ops-step-dim">📚 历史文章回看</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">📱 公众号 / 小红书 / 视频号 / 播客</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">📊 AI 热点榜</div>
+            <div class="ops-lane-arrow">→</div>
+            <div class="ops-lane-step ops-step-dim">🔥 高传播潜力选题</div>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -219,30 +254,73 @@
         </div>
       </div>
       <form class="ops-settings-form" data-ops-settings-form>
-        <label>
-          <span>每日选题自动触发时间</span>
-          <input name="pitch_schedule" type="time" value="09:35">
-        </label>
-        <label>
-          <span>选题最低通过分数</span>
-          <input name="pitch_min_score" type="number" min="0" max="100" value="75">
-        </label>
-        <label>
-          <span>自动撰写开关</span>
-          <select name="auto_write">
-            <option value="true">开启 - 选题通过后自动撰写</option>
-            <option value="false">关闭 - 仅输出选题结果</option>
-          </select>
-        </label>
-        <label>
-          <span>通知方式</span>
-          <select name="notify_channel">
-            <option value="feishu">飞书</option>
-            <option value="email">邮件</option>
-            <option value="both">飞书 + 邮件</option>
-          </select>
-        </label>
-        <button type="submit" class="ops-btn ops-btn-primary">保存设置</button>
+        <fieldset>
+          <legend>⏰ 定时调度</legend>
+          <label>
+            <span>Raw-Pool-Pitch 自动触发</span>
+            <input name="pitch_schedule" type="time" value="09:35">
+          </label>
+          <label>
+            <span>产业链抓取频率</span>
+            <select name="industry_chain_schedule">
+              <option value="daily">每日</option>
+              <option value="weekly" selected>每周</option>
+              <option value="manual">手动</option>
+            </select>
+          </label>
+          <label>
+            <span>Builders 监控频率</span>
+            <select name="builders_schedule">
+              <option value="daily" selected>每日</option>
+              <option value="weekly">每周</option>
+              <option value="manual">手动</option>
+            </select>
+          </label>
+          <label>
+            <span>爆款扫描频率</span>
+            <select name="viral_schedule">
+              <option value="daily">每日</option>
+              <option value="weekly" selected>每周</option>
+              <option value="manual">手动</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>🎯 选题规则</legend>
+          <label>
+            <span>选题最低通过分数</span>
+            <input name="pitch_min_score" type="number" min="0" max="100" value="75">
+          </label>
+          <label>
+            <span>主编选题评分权重方案</span>
+            <select name="scoring_scheme">
+              <option value="default" selected>默认（冲突感25 / 角色变化20 / 反常识15 / 叙事抓手15 / 获得感15 / 证据10）</option>
+              <option value="viral">爆款加权（传播潜力30 / 冲突感20 / 获得感20 / 叙事抓手15 / 证据15）</option>
+              <option value="deep">深度加权（证据25 / 反常识20 / 冲突感20 / 角色变化20 / 获得感15）</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>📤 输出</legend>
+          <label>
+            <span>自动撰写开关</span>
+            <select name="auto_write">
+              <option value="true">开启 - 选题通过后自动撰写</option>
+              <option value="false">关闭 - 仅输出选题结果</option>
+            </select>
+          </label>
+          <label>
+            <span>通知方式</span>
+            <select name="notify_channel">
+              <option value="feishu">飞书</option>
+              <option value="both">飞书 + 邮件</option>
+            </select>
+          </label>
+        </fieldset>
+        <div class="ops-settings-actions">
+          <button type="submit" class="ops-btn ops-btn-primary">保存设置</button>
+          <button type="reset" class="ops-btn">恢复默认</button>
+        </div>
       </form>
     </section>
 
