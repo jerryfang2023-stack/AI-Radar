@@ -34,6 +34,8 @@ jobs:
       ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+      FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
 
     steps:
       - name: Check out repository
@@ -151,6 +153,8 @@ jobs:
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-public-copy-gate.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
+          node --check agent-workflow/tools/build-hermes-daily-brief.mjs
+          node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
@@ -588,6 +592,49 @@ jobs:
 
           echo "status=failed" >> "$GITHUB_OUTPUT"
           exit 1
+
+      - name: Build Hermes daily brief
+        id: hermes-brief
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/build-hermes-daily-brief.mjs \
+            --date="${RUN_DATE}" \
+            --trigger="${{ github.event_name }}" \
+            --skip="${{ steps.existing-assets.outputs.skip }}" \
+            --skip-reason="${{ steps.existing-assets.outputs.reason }}" \
+            --monitor="${{ steps.monitor.outcome }}" \
+            --monitor-readiness="${{ steps.monitor-readiness.outcome }}" \
+            --raw-pool-gate="${{ steps.persistent-assets-post-monitor.outcome }}" \
+            --asset-generation="${{ steps.assets.outcome }}" \
+            --cardcopy="${{ steps.cardcopy.outcome }}" \
+            --pool-to-card-dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
+            --site-data="${{ steps.site-data.outcome }}" \
+            --publiccopy="${{ steps.publiccopy.outcome }}" \
+            --frontstage-regression="${{ steps.frontstage-regression.outcome }}" \
+            --pre-commit-gate="${{ steps.pre-commit-gate.outcome }}" \
+            --commit="${{ steps.commit.outcome }}" \
+            --pr="${{ steps.pr.outcome }}" \
+            --auto-merge="${{ steps.auto-merge.outcome }}" \
+            --pr-url="${{ steps.pr.outputs.pr_url }}" \
+            --manual-url="${{ steps.pr.outputs.manual_url }}" \
+            --run-url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" \
+            --page-url="${{ vars.WAVESIGHT_SITE_URL || '' }}" \
+            --commit-sha="${GITHUB_SHA}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-hermes-brief.log"
+
+      - name: Send Hermes brief to Feishu Agent
+        id: feishu-notify
+        if: always() && steps.hermes-brief.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/send-feishu-webhook.mjs \
+            --file="agent-workflow/reports/${RUN_DATE}-hermes-daily-brief.json" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-feishu-notify.log"
 
       - name: Persistent assets PR result
         if: always()
