@@ -1,0 +1,693 @@
+window.WaveSightTopicCenter = {
+  "meta": {
+    "version": "V1.1",
+    "date": "2026-06-02",
+    "generatedAt": "2026-06-02T15:17:50.674Z",
+    "source": "site-content.json",
+    "rule": "four_sources_five_topics_each"
+  },
+  "sources": [
+    {
+      "id": "raw_pool_pitch",
+      "title": "Raw-Pool-Pitch",
+      "desc": "每日 Raw / Pool / Card 产物"
+    },
+    {
+      "id": "industry_chain",
+      "title": "产业链分析",
+      "desc": "产业节点与资产结构"
+    },
+    {
+      "id": "builders",
+      "title": "Builders 文章",
+      "desc": "开发者与产品实践"
+    },
+    {
+      "id": "viral_rewrite",
+      "title": "爆款改编",
+      "desc": "AI 热点内容与传播结构"
+    }
+  ],
+  "topics": [
+    {
+      "id": "raw_pool_pitch-daily-2026-06-02-1",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "baseId": "daily-2026-06-02",
+      "title": "创意团队缺的不是灵感，是能留下来的上下文",
+      "type": "daily",
+      "audience": "企业老板 / 业务负责人",
+      "core": "创意公司最怕的，不一定是想不出点子。",
+      "relevance": "First Concepts 获得 100 万美元 pre-seed 融资，做的是面向早期创意工作的 AI workspace。\n\n这条新闻刺到的不是生成能力，而是创意团队每次做 pitch 都要重建客户语境、品牌偏好和审美判断。",
+      "evidence": "创意公司最怕的，不一定是想不出点子。",
+      "source": "今日观察",
+      "url": "daily-detail.html",
+      "date": "2026.06.02",
+      "score": 96,
+      "grade": "S",
+      "priority": "S级选题",
+      "angles": [
+        {
+          "title": "创意团队缺的不是灵感 改变的是哪一类企业决策",
+          "note": "从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：First Concepts 获得 100 万美元 pre-seed 融资，做的是面向早期创意工作的 AI workspace。\n\n这条新闻刺到的不是生成能力，而是创意团队每次做 pitch 都要重建客户语境、品牌偏好和审美判断。"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "找一个可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：创意公司最怕的，不一定是想不出点子。"
+        },
+        {
+          "title": "可以写成哪种文章标题",
+          "note": "标题例：《创意团队缺的不是灵感 把 AI 带进真实流程，企业该看成本还是责任》《创意团队缺的不是灵感 背后，AI 采购正在从工具账变成流程账》"
+        }
+      ]
+    },
+    {
+      "id": "raw_pool_pitch-sig-20260602-a01-2",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "baseId": "SIG-20260602-A01",
+      "title": "Claude Code v2.1.160 发布",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 github.com。",
+      "source": "github.com",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "date": "2026-06-02",
+      "score": 90,
+      "grade": "A",
+      "priority": "S级选题",
+      "angles": [
+        {
+          "title": "Claude Code v2.1.160 发布 改变的是哪一类企业决策",
+          "note": "从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "找一个可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 github.com。"
+        },
+        {
+          "title": "可以写成哪种文章标题",
+          "note": "标题例：《Claude Code v2.1.160 发布 把 AI 带进真实流程，企业该看成本还是责任》《Claude Code v2.1.160 发布 背后，AI 采购正在从工具账变成流程账》"
+        }
+      ]
+    },
+    {
+      "id": "raw_pool_pitch-sig-20260602-a02-3",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "baseId": "SIG-20260602-A02",
+      "title": "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署",
+      "type": "case",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为物理世界和工业场景里的 Agent 需要在本地设备上稳定运行，而不是只依赖云端推理。",
+      "relevance": "边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
+      "date": "2026-06-02",
+      "score": 88,
+      "grade": "A",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "NVIDIA JetPack 7.2 发布 改变的是哪一类企业决策",
+          "note": "从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "找一个可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 developer.nvidia.com。"
+        },
+        {
+          "title": "可以写成哪种文章标题",
+          "note": "标题例：《NVIDIA JetPack 7.2 发布 把 AI 带进真实流程，企业该看成本还是责任》《NVIDIA JetPack 7.2 发布 背后，AI 采购正在从工具账变成流程账》"
+        }
+      ]
+    },
+    {
+      "id": "raw_pool_pitch-sig-20260602-a03-4",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "baseId": "SIG-20260602-A03",
+      "title": "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark",
+      "date": "2026-06-02",
+      "score": 86,
+      "grade": "A",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "NVIDIA 发布 DGX Spark 本地 Agent 方 改变的是哪一类企业决策",
+          "note": "从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "找一个可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 developer.nvidia.com。"
+        },
+        {
+          "title": "可以写成哪种文章标题",
+          "note": "标题例：《NVIDIA 发布 DGX Spark 本地 Agent 方 把 AI 带进真实流程，企业该看成本还是责任》《NVIDIA 发布 DGX Spark 本地 Agent 方 背后，AI 采购正在从工具账变成流程账》"
+        }
+      ]
+    },
+    {
+      "id": "raw_pool_pitch-trc-20260601-01-5",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "baseId": "TRC-20260601-01",
+      "title": "物理 AI 开始从模型发布进入制造现场",
+      "type": "trend",
+      "audience": "行业操盘手 / 投资与战略负责人",
+      "core": "6 月 1 日的 NVIDIA Cosmos 3 和台湾制造伙伴采用材料共同指向一个变化：物理 AI 不再只是模型和仿真叙事，正在进入机器人、自动驾驶、工厂规划、根因分析和视觉检测等制造现场。",
+      "relevance": "正在形成的趋势",
+      "evidence": "",
+      "source": "趋势追踪",
+      "url": "trend-tracking.html",
+      "date": "2026.06.01",
+      "score": 85,
+      "grade": "B",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "物理 AI 开始从模型发布进入制造现场 改变的是哪一类企业决策",
+          "note": "从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：正在形成的趋势"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "找一个可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：需要补一条官方发布、客户案例或开发者文档作为证据边界。"
+        },
+        {
+          "title": "可以写成哪种文章标题",
+          "note": "标题例：《物理 AI 开始从模型发布进入制造现场 把 AI 带进真实流程，企业该看成本还是责任》《物理 AI 开始从模型发布进入制造现场 背后，AI 采购正在从工具账变成流程账》"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-sig-20260602-a01-1",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "产业节点与资产结构",
+      "baseId": "SIG-20260602-A01",
+      "title": "Claude Code v2.1.160 发布",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 github.com。",
+      "source": "github.com",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "date": "2026-06-02",
+      "score": 88,
+      "grade": "A",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "从 Claude Code v2.1.160 发布 看 AI 预算流向哪段产业链",
+          "note": "先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。证据边界：S 级来源，当前材料来自 github.com。"
+        },
+        {
+          "title": "Claude Code v2.1.160 发布 会先影响谁的采购单",
+          "note": "把读者带到一个具体买方岗位：CIO、工厂负责人、客服负责人、销售运营负责人或安全负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "写清系统出错时谁负责、谁复核、谁买单。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-sig-20260602-a02-2",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "产业节点与资产结构",
+      "baseId": "SIG-20260602-A02",
+      "title": "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署",
+      "type": "case",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为物理世界和工业场景里的 Agent 需要在本地设备上稳定运行，而不是只依赖云端推理。",
+      "relevance": "边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
+      "date": "2026-06-02",
+      "score": 86,
+      "grade": "A",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "从 NVIDIA JetPack 7.2 发布 看 AI 预算流向哪段产业链",
+          "note": "先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。证据边界：S 级来源，当前材料来自 developer.nvidia.com。"
+        },
+        {
+          "title": "NVIDIA JetPack 7.2 发布 会先影响谁的采购单",
+          "note": "把读者带到一个具体买方岗位：CIO、工厂负责人、客服负责人、销售运营负责人或安全负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "写清系统出错时谁负责、谁复核、谁买单。商业落点：边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-sig-20260602-a03-3",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "产业节点与资产结构",
+      "baseId": "SIG-20260602-A03",
+      "title": "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark",
+      "date": "2026-06-02",
+      "score": 84,
+      "grade": "B",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "从 NVIDIA 发布 DGX Spark 本地 Agent 方 看 AI 预算流向哪段产业链",
+          "note": "先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。证据边界：S 级来源，当前材料来自 developer.nvidia.com。"
+        },
+        {
+          "title": "NVIDIA 发布 DGX Spark 本地 Agent 方 会先影响谁的采购单",
+          "note": "把读者带到一个具体买方岗位：CIO、工厂负责人、客服负责人、销售运营负责人或安全负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "写清系统出错时谁负责、谁复核、谁买单。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-trc-20260601-01-4",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "产业节点与资产结构",
+      "baseId": "TRC-20260601-01",
+      "title": "物理 AI 开始从模型发布进入制造现场",
+      "type": "trend",
+      "audience": "行业操盘手 / 投资与战略负责人",
+      "core": "6 月 1 日的 NVIDIA Cosmos 3 和台湾制造伙伴采用材料共同指向一个变化：物理 AI 不再只是模型和仿真叙事，正在进入机器人、自动驾驶、工厂规划、根因分析和视觉检测等制造现场。",
+      "relevance": "正在形成的趋势",
+      "evidence": "",
+      "source": "趋势追踪",
+      "url": "trend-tracking.html",
+      "date": "2026.06.01",
+      "score": 83,
+      "grade": "B",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "从 物理 AI 开始从模型发布进入制造现场 看 AI 预算流向哪段产业链",
+          "note": "先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。证据边界：需要补一条官方发布、客户案例或开发者文档作为证据边界。"
+        },
+        {
+          "title": "物理 AI 开始从模型发布进入制造现场 会先影响谁的采购单",
+          "note": "把读者带到一个具体买方岗位：CIO、工厂负责人、客服负责人、销售运营负责人或安全负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "写清系统出错时谁负责、谁复核、谁买单。商业落点：正在形成的趋势"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-sig-20260602-a04-5",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "产业节点与资产结构",
+      "baseId": "SIG-20260602-A04",
+      "title": "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署",
+      "type": "case",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "A 级来源，当前材料来自 techcrunch.com。",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2025/11/11/wonderful-raised-100m-series-a-to-put-ai-agents-on-the-front-lines-of-customer-service/",
+      "date": "2026-06-02",
+      "score": 81,
+      "grade": "B",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "从 Wonderful 获 1 亿美元 A 轮 看 AI 预算流向哪段产业链",
+          "note": "先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。证据边界：A 级来源，当前材料来自 techcrunch.com。"
+        },
+        {
+          "title": "Wonderful 获 1 亿美元 A 轮 会先影响谁的采购单",
+          "note": "把读者带到一个具体买方岗位：CIO、工厂负责人、客服负责人、销售运营负责人或安全负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "写清系统出错时谁负责、谁复核、谁买单。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        }
+      ]
+    },
+    {
+      "id": "builders-sig-20260602-a01-1",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "开发者与产品实践",
+      "baseId": "SIG-20260602-A01",
+      "title": "Claude Code v2.1.160 发布",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 github.com。",
+      "source": "github.com",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "date": "2026-06-02",
+      "score": 85,
+      "grade": "B",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "Claude Code v2.1.160 发布 背后的开发者真实需求",
+          "note": "不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "拆一个真实任务链：需求进入、生成、测试、审阅、上线，只抓最容易卡住的一步。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件，不看口号。"
+        }
+      ]
+    },
+    {
+      "id": "builders-sig-20260602-a02-2",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "开发者与产品实践",
+      "baseId": "SIG-20260602-A02",
+      "title": "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署",
+      "type": "case",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为物理世界和工业场景里的 Agent 需要在本地设备上稳定运行，而不是只依赖云端推理。",
+      "relevance": "边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
+      "date": "2026-06-02",
+      "score": 83,
+      "grade": "B",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "NVIDIA JetPack 7.2 发布 背后的开发者真实需求",
+          "note": "不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "拆一个真实任务链：需求进入、生成、测试、审阅、上线，只抓最容易卡住的一步。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件，不看口号。"
+        }
+      ]
+    },
+    {
+      "id": "builders-sig-20260602-a03-3",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "开发者与产品实践",
+      "baseId": "SIG-20260602-A03",
+      "title": "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark",
+      "date": "2026-06-02",
+      "score": 81,
+      "grade": "B",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "NVIDIA 发布 DGX Spark 本地 Agent 方 背后的开发者真实需求",
+          "note": "不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "拆一个真实任务链：需求进入、生成、测试、审阅、上线，只抓最容易卡住的一步。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件，不看口号。"
+        }
+      ]
+    },
+    {
+      "id": "builders-sig-20260602-a05-4",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "开发者与产品实践",
+      "baseId": "SIG-20260602-A05",
+      "title": "AWS 将推出 Agent Marketplace，Anthropic 成为合作方",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "A 级来源，当前材料来自 techcrunch.com。",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2025/07/10/aws-is-launching-an-ai-agent-marketplace-next-week-with-anthropic-as-a-partner/",
+      "date": "2026-06-02",
+      "score": 78,
+      "grade": "B",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "AWS 将推出 Agent Marketplace 背后的开发者真实需求",
+          "note": "不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "拆一个真实任务链：需求进入、生成、测试、审阅、上线，只抓最容易卡住的一步。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件，不看口号。"
+        }
+      ]
+    },
+    {
+      "id": "builders-sig-20260602-a06-5",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "开发者与产品实践",
+      "baseId": "SIG-20260602-A06",
+      "title": "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作",
+      "type": "case",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "B 级来源，当前材料来自 thenextweb.com。",
+      "source": "thenextweb.com",
+      "url": "https://thenextweb.com/news/parloa-turns-its-350-million-war-chest-into-a-partnership-web-spanning-sap-microsoft-and-openai",
+      "date": "2026-06-02",
+      "score": 76,
+      "grade": "C",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "Parloa 获 3.5 亿美元融资 背后的开发者真实需求",
+          "note": "不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "拆一个真实任务链：需求进入、生成、测试、审阅、上线，只抓最容易卡住的一步。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件，不看口号。"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-daily-2026-06-02-1",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "AI 热点内容与传播结构",
+      "baseId": "daily-2026-06-02",
+      "title": "创意团队缺的不是灵感，是能留下来的上下文",
+      "type": "daily",
+      "audience": "企业老板 / 业务负责人",
+      "core": "创意公司最怕的，不一定是想不出点子。",
+      "relevance": "First Concepts 获得 100 万美元 pre-seed 融资，做的是面向早期创意工作的 AI workspace。\n\n这条新闻刺到的不是生成能力，而是创意团队每次做 pitch 都要重建客户语境、品牌偏好和审美判断。",
+      "evidence": "创意公司最怕的，不一定是想不出点子。",
+      "source": "今日观察",
+      "url": "daily-detail.html",
+      "date": "2026.06.02",
+      "score": 87,
+      "grade": "A",
+      "priority": "优先观察",
+      "angles": [
+        {
+          "title": "创意团队缺的不是灵感 为什么会刺中企业焦虑",
+          "note": "找一个明确情绪钩子：岗位替代、预算失控、客户流失、安全责任或老板看不懂投入产出。"
+        },
+        {
+          "title": "把热门话题改写成一个商业冲突",
+          "note": "标题必须回答谁的利益被改变，例如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "先补一条可验证来源，再写观点。当前可用证据边界：创意公司最怕的，不一定是想不出点子。"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-sig-20260602-a01-2",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "AI 热点内容与传播结构",
+      "baseId": "SIG-20260602-A01",
+      "title": "Claude Code v2.1.160 发布",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 github.com。",
+      "source": "github.com",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "date": "2026-06-02",
+      "score": 81,
+      "grade": "B",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "Claude Code v2.1.160 发布 为什么会刺中企业焦虑",
+          "note": "找一个明确情绪钩子：岗位替代、预算失控、客户流失、安全责任或老板看不懂投入产出。"
+        },
+        {
+          "title": "把热门话题改写成一个商业冲突",
+          "note": "标题必须回答谁的利益被改变，例如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "先补一条可验证来源，再写观点。当前可用证据边界：S 级来源，当前材料来自 github.com。"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-sig-20260602-a02-3",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "AI 热点内容与传播结构",
+      "baseId": "SIG-20260602-A02",
+      "title": "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署",
+      "type": "case",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为物理世界和工业场景里的 Agent 需要在本地设备上稳定运行，而不是只依赖云端推理。",
+      "relevance": "边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
+      "date": "2026-06-02",
+      "score": 79,
+      "grade": "B",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "NVIDIA JetPack 7.2 发布 为什么会刺中企业焦虑",
+          "note": "找一个明确情绪钩子：岗位替代、预算失控、客户流失、安全责任或老板看不懂投入产出。"
+        },
+        {
+          "title": "把热门话题改写成一个商业冲突",
+          "note": "标题必须回答谁的利益被改变，例如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "先补一条可验证来源，再写观点。当前可用证据边界：S 级来源，当前材料来自 developer.nvidia.com。"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-sig-20260602-a03-4",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "AI 热点内容与传播结构",
+      "baseId": "SIG-20260602-A03",
+      "title": "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 developer.nvidia.com。",
+      "source": "developer.nvidia.com",
+      "url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark",
+      "date": "2026-06-02",
+      "score": 77,
+      "grade": "C",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "NVIDIA 发布 DGX Spark 本地 Agent 方 为什么会刺中企业焦虑",
+          "note": "找一个明确情绪钩子：岗位替代、预算失控、客户流失、安全责任或老板看不懂投入产出。"
+        },
+        {
+          "title": "把热门话题改写成一个商业冲突",
+          "note": "标题必须回答谁的利益被改变，例如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "先补一条可验证来源，再写观点。当前可用证据边界：S 级来源，当前材料来自 developer.nvidia.com。"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-trc-20260601-01-5",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "AI 热点内容与传播结构",
+      "baseId": "TRC-20260601-01",
+      "title": "物理 AI 开始从模型发布进入制造现场",
+      "type": "trend",
+      "audience": "行业操盘手 / 投资与战略负责人",
+      "core": "6 月 1 日的 NVIDIA Cosmos 3 和台湾制造伙伴采用材料共同指向一个变化：物理 AI 不再只是模型和仿真叙事，正在进入机器人、自动驾驶、工厂规划、根因分析和视觉检测等制造现场。",
+      "relevance": "正在形成的趋势",
+      "evidence": "",
+      "source": "趋势追踪",
+      "url": "trend-tracking.html",
+      "date": "2026.06.01",
+      "score": 76,
+      "grade": "C",
+      "priority": "候选",
+      "angles": [
+        {
+          "title": "物理 AI 开始从模型发布进入制造现场 为什么会刺中企业焦虑",
+          "note": "找一个明确情绪钩子：岗位替代、预算失控、客户流失、安全责任或老板看不懂投入产出。"
+        },
+        {
+          "title": "把热门话题改写成一个商业冲突",
+          "note": "标题必须回答谁的利益被改变，例如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "先补一条可验证来源，再写观点。当前可用证据边界：需要补一条官方发布、客户案例或开发者文档作为证据边界。"
+        }
+      ]
+    }
+  ]
+};

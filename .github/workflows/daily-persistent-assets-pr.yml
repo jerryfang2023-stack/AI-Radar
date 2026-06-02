@@ -154,6 +154,7 @@ jobs:
           node --check agent-workflow/tools/assert-public-copy-gate.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/build-hermes-daily-brief.mjs
+          node --check agent-workflow/tools/build-topic-center-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
@@ -251,6 +252,7 @@ jobs:
           set -o pipefail
           node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
+          node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
 
       - name: Run public copy gate
         id: publiccopy
@@ -409,6 +411,8 @@ jobs:
             01-SiteV2/site/data/site-content.js
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
+            01-SiteV2/site/data/topic-center.json
+            01-SiteV2/site/data/topic-center.js
 
       - name: Commit persistent assets to automation branch
         id: commit
@@ -462,6 +466,8 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/site-content.js"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
+            stage_if_exists "01-SiteV2/site/data/topic-center.json"
+            stage_if_exists "01-SiteV2/site/data/topic-center.js"
           fi
 
           if git diff --cached --quiet; then

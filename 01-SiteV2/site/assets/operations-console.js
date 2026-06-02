@@ -220,6 +220,10 @@
     { id: "builders", title: "Builders 文章", desc: "开发者与产品实践" },
     { id: "viral_rewrite", title: "爆款改编", desc: "AI 热点内容与传播结构" },
   ];
+  const topicCenterData = window.WaveSightTopicCenter || {};
+  if (Array.isArray(topicCenterData.sources) && topicCenterData.sources.length) {
+    topicSources.splice(0, topicSources.length, ...topicCenterData.sources);
+  }
 
   function strictAngles(topic) {
     const subject = topic.title.replace(/[｜|].*$/, "").slice(0, 28);
@@ -307,7 +311,19 @@
     return [...rawPoolTopics, ...otherTopics];
   }
 
-  const topics = buildTopics();
+  const topics = Array.isArray(topicCenterData.topics) && topicCenterData.topics.length
+    ? topicCenterData.topics.map((topic, index) => ({
+      ...topic,
+      id: topic.id || `${topic.sourceId || "topic"}-${topic.baseId || index}`,
+      sourceId: topic.sourceId || "raw_pool_pitch",
+      sourceName: topic.sourceName || topicSources.find((source) => source.id === topic.sourceId)?.title || "Topic Source",
+      sourceDesc: topic.sourceDesc || topicSources.find((source) => source.id === topic.sourceId)?.desc || "",
+      score: Number(topic.score) || 80,
+      grade: topic.grade || scoreGrade(Number(topic.score) || 80),
+      priority: topic.priority || ((Number(topic.score) || 80) >= 90 ? "S级选题" : "候选"),
+      angles: Array.isArray(topic.angles) && topic.angles.length ? topic.angles : strictAngles(topic),
+    }))
+    : buildTopics();
 
   function visibleTopics() {
     const query = text($("[data-topic-search]")?.value).trim().toLowerCase();
