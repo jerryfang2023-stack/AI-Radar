@@ -1,9 +1,9 @@
 ---
 id: OPN-FB-20260602-10
-type: opinion_card
+type: opinion_intake
 title: "Anysearch：2048 Ventures是一家以论文为导向的早期风险投资公司，总"
 date: 2026-06-02
-status: draft
+status: archived
 created_at: 2026-06-02T03:49:15.685Z
 updated_at: 2026-06-02T03:49:15.685Z
 person_name: "Anysearch"
@@ -13,10 +13,10 @@ source_volatility: high
 capture_scope: visible_text
 evidence_level: community_signal
 fact_draft_gate: passed
-frontend_copy_gate: passed
-cardcopy_gate: passed
-publish_status: frontstage_sidebar
-asset_level: candidate
+frontend_copy_gate: blocked_search_fallback
+cardcopy_gate: blocked_search_fallback
+publish_status: archive_only
+asset_level: intake_archive
 opinion_evidence_gate: opinion_captured
 translation_status: translated
 translation_method: existing
@@ -49,9 +49,9 @@ fact_claim_support:
   status: 暂无公开信息
   supporting_raw_refs: []
   missing_information: []
-opinion_tier: sidebar
-display_lane: signal_sidebar
-selection_reason: "follow-builders 人物池来源；商业/产品变量：yc, api；包含数据、客户或业务量级线索"
+opinion_tier: archive
+display_lane: archive_only
+selection_reason: "搜索回退入口文本，不是可前台展示的人物观点；仅保留为归档线索。"
 intake_suggested_tier: sidebar
 opinion_rating_score: 4
 opinion_rating_version: 2026-05-22-v1

@@ -1,11 +1,11 @@
 # Tag Quality Gate
 
-生成时间：2026/5/24 19:54:11
+生成时间：2026/6/2 16:39:35
 
 ## 结论
 
 - 状态：passed
-- 正式 taxonomy tag 数：61
+- 正式 taxonomy tag 数：67
 - 脚本 hardcoded unknown tags：0
 - Markdown formal_tags unknown tags：0
 - site-content tags unknown 数：0

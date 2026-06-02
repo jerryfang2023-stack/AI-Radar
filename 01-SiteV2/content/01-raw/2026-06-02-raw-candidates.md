@@ -133,7 +133,7 @@ generated_at: 2026-06-02T03:48:56.866Z
 
 ### R-004｜NVIDIA JetPack 7.2支持内存优化的边缘智能体部署
 
-- 原文档案：`01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2支持内存优化的边缘智能体部署.md`
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2-edge-agent-deployment.md`
 - 出处：NVIDIA Technical Blog（开发者技术博客 · RSS）｜https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2
 - 采集通道：aihot
 - 搜索意图：not_applicable

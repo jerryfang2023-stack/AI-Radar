@@ -1647,6 +1647,7 @@ const allOpinions = dayPackages.flatMap((item) => item.points).sort((a, b) => {
   return scoreDelta || String(a.id || "").localeCompare(String(b.id || ""));
 });
 const allTrends = dayPackages.flatMap((item) => item.trends).reverse();
+const currentDisplayTrend = parsedTrendReport || parsedTrends[0] || allTrends[0] || null;
 const contentDates = buildContentDateIndex(dayPackages, {
   signals: allSignals,
   cases: allCases,
@@ -1686,7 +1687,7 @@ const siteData = {
     calibration: parsedOpinions.slice(0, 2),
     link: "daily-detail.html",
   },
-  trendReport: parsedTrendReport || parsedTrends[0] || null,
+  trendReport: currentDisplayTrend,
   brief: {
     issue: activeDay.businessBrief?.issue || "Preview.001",
     period: activeDay.businessBrief?.period || activeDate.replaceAll("-", "."),

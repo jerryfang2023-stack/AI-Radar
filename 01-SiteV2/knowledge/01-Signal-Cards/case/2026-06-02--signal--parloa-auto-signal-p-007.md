@@ -2,7 +2,7 @@
 id: SIG-20260602-A06
 type: signal_card
 signal_type: case
-title: "Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships"
+title: "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作"
 date: 2026-06-02
 status: published
 asset_level: frontstage
@@ -48,7 +48,7 @@ signal_owner: "Parloa"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships"
+  displayTitle: "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作"
   eventLine: "Parloa 把 AI 用进销售和收入团队流程。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -58,7 +58,7 @@ frontend:
     - "https://thenextweb.com/news/parloa-turns-its-350-million-war-chest-into-a-partnership-web-spanning-sap-microsoft-and-openai"
 ---
 
-# Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships
+# Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作
 
 ## 信号底稿
 

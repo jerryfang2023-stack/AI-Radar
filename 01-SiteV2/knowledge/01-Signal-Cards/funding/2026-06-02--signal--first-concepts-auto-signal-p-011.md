@@ -2,7 +2,7 @@
 id: SIG-20260602-A10
 type: signal_card
 signal_type: funding
-title: "First Concepts raises $1M to develop AI-native OS for creative work - Tech.eu"
+title: "First Concepts 完成 100 万美元 pre-seed 融资，开发创意工作 AI workspace"
 date: 2026-06-02
 status: published
 asset_level: frontstage
@@ -48,7 +48,7 @@ signal_owner: "First Concepts"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "First Concepts raises $1M to develop AI-native OS for creative work - Tech.eu"
+  displayTitle: "First Concepts 完成 100 万美元 pre-seed 融资，开发创意工作 AI workspace"
   eventLine: "First Concepts 宣布$1M 融资，业务重点落在企业 Agent 协作平台。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -58,7 +58,7 @@ frontend:
     - "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/"
 ---
 
-# First Concepts raises $1M to develop AI-native OS for creative work - Tech.eu
+# First Concepts 完成 100 万美元 pre-seed 融资，开发创意工作 AI workspace
 
 ## 信号底稿
 

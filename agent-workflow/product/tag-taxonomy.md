@@ -91,6 +91,11 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 | `scenario-bidding-response` | 标书响应 | 标书解析、应标响应 |
 | `scenario-clinical-imaging` | 临床影像辅助 | 影像诊断 |
 | `scenario-agent-governance` | Agent 权限治理 | 审计、权限、风险控制 |
+| `scenario-manufacturing-ops` | 制造运营 | 工厂、产线、工业运营 |
+| `scenario-model-deployment` | 模型部署 | 模型上线、边缘部署、算力部署 |
+| `scenario-coding-agent` | 编码 Agent | 开发者 Agent、代码代理 |
+| `scenario-payments` | 支付流程 | 企业支付、付款、结算 |
+| `scenario-local-ai-dev` | 本地 AI 开发 | 本地模型、AI PC、本地开发环境 |
 | `scenario-frontier-opinion` | 前沿观点 | 观点证据、建造者观点 |
 
 ### customer
@@ -135,6 +140,7 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 | `region-china` | 中国适配 | 中国、本土 |
 | `region-us` | 美国 | US |
 | `region-eu` | 欧洲 | EU |
+| `region-asia` | 亚洲 | 亚太、APAC |
 
 ### source
 

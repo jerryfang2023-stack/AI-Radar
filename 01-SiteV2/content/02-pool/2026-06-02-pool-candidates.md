@@ -128,8 +128,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 
 - raw_ref: R-004
 - raw_original_id: cmpvzrkrk0347slukwn0rkg8r
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2支持内存优化的边缘智能体部署.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2支持内存优化的边缘智能体部署.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2-edge-agent-deployment.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2-edge-agent-deployment.json`
 - source: NVIDIA Technical Blog（开发者技术博客 · RSS）｜https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2
 - source_url: https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2
 - acquisition_channel: aihot

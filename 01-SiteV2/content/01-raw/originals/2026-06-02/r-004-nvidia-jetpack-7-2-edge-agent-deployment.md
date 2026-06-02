@@ -23,8 +23,8 @@ published_at: "2026-06-02T02:00:00.000Z"
 collected_at: 2026-06-02T03:48:56.883Z
 language: mixed
 full_text_hash: ba2f54ecbe8da91e
-markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2支持内存优化的边缘智能体部署.md"
-json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2支持内存优化的边缘智能体部署.json"
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2-edge-agent-deployment.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2-edge-agent-deployment.json"
 html_snapshot_path: ""
 screenshot_path: ""
 fetch_status: fetched-readable-text-main

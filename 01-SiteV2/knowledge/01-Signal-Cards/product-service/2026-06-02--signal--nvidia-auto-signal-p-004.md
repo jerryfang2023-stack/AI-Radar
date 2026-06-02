@@ -2,7 +2,7 @@
 id: SIG-20260602-A03
 type: signal_card
 signal_type: product_service
-title: "在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体"
+title: "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群"
 date: 2026-06-02
 status: published
 asset_level: frontstage
@@ -48,7 +48,7 @@ signal_owner: "Nvidia"
 watch_reason: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
 
 frontend:
-  displayTitle: "在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体"
+  displayTitle: "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群"
   eventLine: "Nvidia 发布新的 AI 能力，面向模型部署和算力调用。"
   whyWatch: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
   businessMeaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -58,7 +58,7 @@ frontend:
     - "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark"
 ---
 
-# 在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体
+# NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群
 
 ## 信号底稿
 
