@@ -2,8 +2,8 @@ name: WaveSight Daily Persistent Assets PR
 
 on:
   schedule:
-    # 08:30 Asia/Shanghai, every day.
-    - cron: "30 0 * * *"
+    # 09:17 Asia/Shanghai, every day. Avoids the top-of-hour GitHub Actions peak.
+    - cron: "17 1 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -68,6 +68,35 @@ jobs:
           echo "date=$run_date" >> "$GITHUB_OUTPUT"
           echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
 
+      - name: Check existing daily assets
+        id: existing-assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          skip=false
+          reason="not_applicable"
+
+          raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
+          pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
+          signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
+          opinion_cards_file="01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md"
+          branch="automation/daily-assets-${RUN_DATE}"
+
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ -f "$opinion_cards_file" ]; then
+              skip=true
+              reason="same-date persistent assets already exist on main"
+            elif git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+              skip=true
+              reason="same-date automation branch already exists"
+            fi
+          fi
+
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+          echo "reason=$reason" >> "$GITHUB_OUTPUT"
+          echo "skip_existing_assets=$skip"
+          echo "skip_reason=$reason"
+
       - name: Report cloud dependency state
         shell: bash
         run: |
@@ -78,7 +107,9 @@ jobs:
             echo "- generated_at: $(date -Is)"
             echo "- mode: persistent_assets_pr"
             echo "- trigger: ${{ github.event_name }}"
-            echo "- schedule: 08:30 Asia/Shanghai daily"
+            echo "- schedule: 09:17 Asia/Shanghai daily"
+            echo "- skip_existing_assets: ${{ steps.existing-assets.outputs.skip }}"
+            echo "- skip_reason: ${{ steps.existing-assets.outputs.reason }}"
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
             echo "- tavily_secret: $([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing)"
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
@@ -108,6 +139,7 @@ jobs:
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
 
       - name: Syntax checks
+        if: steps.existing-assets.outputs.skip != 'true'
         shell: bash
         run: |
           node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
@@ -123,6 +155,7 @@ jobs:
 
       - name: Run Daily Monitor with QC
         id: monitor
+        if: steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -142,7 +175,7 @@ jobs:
 
       - name: Check monitor readiness
         id: monitor-readiness
-        if: always()
+        if: always() && steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -154,7 +187,7 @@ jobs:
 
       - name: Confirm Raw / Pool post-dedupe counts
         id: persistent-assets-post-monitor
-        if: always()
+        if: always() && steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -348,7 +381,7 @@ jobs:
 
       - name: Commit persistent assets to automation branch
         id: commit
-        if: always() && steps.persistent-assets-post-monitor.outcome == 'success'
+        if: always() && steps.existing-assets.outputs.skip != 'true' && steps.persistent-assets-post-monitor.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -491,6 +524,11 @@ jobs:
         shell: bash
         run: |
           fail=0
+
+          if [ "${{ steps.existing-assets.outputs.skip }}" = "true" ]; then
+            echo "Persistent assets run skipped: ${{ steps.existing-assets.outputs.reason }}"
+            exit 0
+          fi
 
           require_success() {
             local label="$1"
