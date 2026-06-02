@@ -255,21 +255,56 @@
   }
 
   function buildTopics() {
-    return topicSources.flatMap((source, sourceIndex) => baseSignals.slice(0, 5).map((base, index) => {
-      const score = Math.max(72, Math.min(99, base.score - sourceIndex * 3 - index));
+    // Source 1: Raw-Pool-Pitch from signals
+    const topicCenter = window.WaveSightTopicCenter;
+    const rawPoolTopics = baseSignals.slice(0, 5).map((base, index) => {
+      const score = Math.max(72, Math.min(99, base.score));
       const topic = {
         ...base,
-        id: `${source.id}-${base.baseId}`,
-        sourceId: source.id,
-        sourceName: source.title,
-        sourceDesc: source.desc,
+        id: `raw_pool_pitch-${base.baseId}`,
+        sourceId: "raw_pool_pitch",
+        sourceName: "Raw-Pool-Pitch",
+        sourceDesc: "每日 Raw / Pool / Card 产物",
         score,
         grade: scoreGrade(score),
         priority: score >= 90 ? "S级选题" : score >= 84 ? "优先观察" : "候选",
       };
       topic.angles = strictAngles(topic);
       return topic;
-    }));
+    });
+
+    // Sources 2/3/4: from topic-center.js (real data) or fallback to synthetic
+    const otherSources = ["industry_chain", "builders", "viral_rewrite"];
+    const otherTopics = otherSources.flatMap((sourceId) => {
+      let candidates = [];
+      if (topicCenter && Array.isArray(topicCenter.candidates)) {
+        candidates = topicCenter.candidates.filter((c) => c.sourceId === sourceId).slice(0, 5);
+      }
+      // Fallback: synthetic topics from baseSignals
+      if (candidates.length === 0) {
+        const sourceIndex = otherSources.indexOf(sourceId);
+        candidates = baseSignals.slice(0, 5).map((base, index) => {
+          const score = Math.max(72, Math.min(99, base.score - 8 - index));
+          return { ...base, score };
+        });
+      }
+      const sourceMeta = topicSources.find((s) => s.id === sourceId);
+      return candidates.map((c) => {
+        const topic = {
+          ...c,
+          id: `${sourceId}-${c.baseId || c.id || Date.now()}`,
+          sourceId,
+          sourceName: sourceMeta?.title || sourceId,
+          sourceDesc: sourceMeta?.desc || "",
+          grade: c.grade || scoreGrade(c.score || 75),
+          priority: c.priority || (c.score >= 90 ? "S级选题" : c.score >= 84 ? "优先观察" : "候选"),
+        };
+        if (!topic.angles) topic.angles = strictAngles(topic);
+        return topic;
+      });
+    });
+
+    return [...rawPoolTopics, ...otherTopics];
   }
 
   const topics = buildTopics();
