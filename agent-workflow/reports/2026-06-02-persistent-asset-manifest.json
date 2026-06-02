@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-02",
+  "generated_at": "2026-06-02T11:49:22+08:00",
+  "workflow_mode": "persistent_assets_pr",
+  "outcomes": {
+    "monitor": "success",
+    "monitor_readiness": "success",
+    "raw_pool_gate": "success",
+    "asset_generation": "success",
+    "cardcopy_gate": "failure",
+    "pool_to_card_dedupe_gate": "success",
+    "site_data_sync": "skipped",
+    "pre_commit_gate": "skipped"
+  },
+  "assets": {
+    "raw_candidates": "present",
+    "raw_originals": "present",
+    "pool_candidates": "present",
+    "business_signals": "present",
+    "opinion_candidates": "present",
+    "opinion_cards_list": "present",
+    "signal_card_files": 11,
+    "opinion_card_files": 26,
+    "site_content_data": "present"
+  }
+}

@@ -1,0 +1,369 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-004
+title: "NVIDIA JetPack 7.2支持内存优化的边缘智能体部署"
+original_url: "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2"
+canonical_url: "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2"
+source_name: "NVIDIA Technical Blog（开发者技术博客 · RSS）"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-02T02:00:00.000Z"
+collected_at: 2026-06-02T03:48:56.883Z
+language: mixed
+full_text_hash: ba2f54ecbe8da91e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2支持内存优化的边缘智能体部署.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-004-nvidia-jetpack-7-2支持内存优化的边缘智能体部署.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":14414,"paragraph_count":75,"sentence_count":86,"boilerplate_hits":0,"symbol_ratio":0.0007,"method":"main"}
+has_full_text: true
+content_length: 14414
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ba2f54ecbe8da91e","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"NVIDIA JetPack 7.2支持内存优化的边缘智能体部署","discovery_summary":"NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。","source_name":"NVIDIA Technical Blog（开发者技术博客 · RSS）","origin_url":"https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2","discovered_at":"2026-06-02T03:42:52.478Z","rank_on_page":48,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 161c9108bc70a94c
+content_hash: ba2f54ecbe8da91e
+semantic_hash: 8f0d58188a0691b1
+duplicate_of: ""
+first_seen_at: "2026-06-02T02:00:00.000Z"
+last_seen_at: 2026-06-02T03:48:56.883Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["NVIDIA Technical Blog（开发者技术博客 · RSS）","GitHub","Nvidia"],"products":["agent","agents","Agent"],"people":[],"industries":["法律 / 法务","医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["7.2","32","01","2026\nB","0","1","2","7"],"quotes":[]}
+evidence_seed: {"company_actions":["Robotics Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.","The update includes Jetson agent skills that automate development tasks like Linux customization, memory optimization, and model benchmarking, accelerating time to market and reducing complexity."],"case_details":["2 Release features include one-command deployment of NVIDIA NemoClaw, NVIDIA agent skills for Jetson, official Yocto Project support, Super Mode on Jetson AGX Orin 32 GB Jun 01, 2026 By Peilun Tsai and Shashank Maheshwari Like Discuss (0) AI-Generated Summary Like Dislike NVIDIA JetPack 7.","2 enhances Jetson devices with one-command deployment of NemoClaw, enabling easy development of secure, agentic AI applications for robotics, industrial automation, and edge AI systems."],"workflow_changes":["2 introduces Multi-Instance GPU (MIG) support on Jetson Thor for isolated, predictable multiworkload execution, critical for real-time AI applications in robotics and industrial automation."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。"]}
+missing_information: []
+key_excerpts: [{"type":"supporting_context","text":"NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Robotics Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"2 Release features include one-command deployment of NVIDIA NemoClaw, NVIDIA agent skills for Jetson, official Yocto Project support, Super Mode on Jetson AGX Orin 32 GB Jun 01, 2026 By Peilun Tsai and Shashank Maheshwari Like Discuss (0) AI-Generated Summary Like Dislike NVIDIA JetPack 7.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"2 enhances Jetson devices with one-command deployment of NemoClaw, enabling easy development of secure, agentic AI applications for robotics, industrial automation, and edge AI systems.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The update includes Jetson agent skills that automate development tasks like Linux customization, memory optimization, and model benchmarking, accelerating time to market and reducing complexity.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"2 introduces Multi-Instance GPU (MIG) support on Jetson Thor for isolated, predictable multiworkload execution, critical for real-time AI applications in robotics and industrial automation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# NVIDIA JetPack 7.2支持内存优化的边缘智能体部署
+
+## clean_text
+
+Robotics
+Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2
+Release features include one-command deployment of NVIDIA NemoClaw, NVIDIA agent skills for Jetson, official Yocto Project support, Super Mode on Jetson AGX Orin 32 GB
+Jun 01, 2026
+By Peilun Tsai and Shashank Maheshwari
+Like
+Discuss (0)
+AI-Generated Summary
+Like
+Dislike
+NVIDIA JetPack 7.2 enhances Jetson devices with one-command deployment of NemoClaw, enabling easy development of secure, agentic AI applications for robotics, industrial automation, and edge AI systems.
+The update includes Jetson agent skills that automate development tasks like Linux customization, memory optimization, and model benchmarking, accelerating time to market and reducing complexity.
+JetPack 7.2 introduces Multi-Instance GPU (MIG) support on Jetson Thor for isolated, predictable multiworkload execution, critical for real-time AI applications in robotics and industrial automation.
+AI-generated content may summarize information incompletely. Verify important information. Learn more
+As AI agents move from the digital world to the physical environment, they can readily use NVIDIA Jetson to accelerate real-world deployment with optimized memory and performance.
+NVIDIA JetPack 7.2 directly supports one-command deployment of NVIDIA NemoClaw , an open source stack that adds privacy and security controls to OpenClaw. It introduces NVIDIA agent skills for Jetson— Jetson device-side skills and Jetson BSP skills —and extends the latest compute stack and agentic capabilities to NVIDIA Jetson Orin . The Jetson software-defined platform makes this possible: the same hardware continues to deliver more value with every software release.
+This post introduces new JetPack 7.2 release features and capabilities, which also include:
+NVIDIA Multi-Instance GPU (MIG) support on NVIDIA Jetson Thor for deterministic multiworkload execution
+Official Yocto Project support for custom Linux distributions that can further improve system efficiency
+Super Mode for Jetson AGX Orin 32 GB for higher AI performance and greater cost efficiency at the edge
+Together, these updates help developers get more out of existing Jetson hardware, accelerate time to market, and lower total cost of ownership.
+Figure 1. JetPack 7.2 provides optimized support for edge AI market trends
+How is NVIDIA JetPack 7.2 software agentic-ready?
+With JetPack 7.2, Jetson is NemoClaw-ready out of the box. JetPack 7.2 comes preconfigured with the required dependencies and software stack, so you can deploy and run NemoClaw-based workflows on Jetson without manual environment setup. This enables you to easily build agentic physical AI applications across robotics, industrial automation, vision agents, and edge AI systems.
+To install NemoClaw on a Jetson device running JetPack 7.2, run the following single command:
+curl -fsSL nvidia.com/nemoclaw.sh | bash
+NVIDIA agent skills for Jetson in JetPack 7.2
+JetPack 7.2 also provides developers with Jetson agent skills to build and optimize Jetson software stacks using AI agents. The agent skills are a set of repeatable, agent-executable instructions that define which tools to call, what outputs to produce, and how to validate results. Rather than manually configuring each step of the development process, developers can leverage agent skills through an agent to handle these tasks automatically.
+Jetson agent skills apply this pattern specifically to Jetson software development workflows. These agent-driven workflows help automate common development tasks such as Jetson Linux customization, memory optimization, model benchmarking, and deployment configuration. With both device-side and BSP-side implementations, developers can use agent skills to reduce development complexity and accelerate the path from prototyping to production deployment on Jetson platforms.
+JetPack 7.2 ships three categories of skills:
+Jetson Linux customization skills: Guide an agent to build and customize a BSP from scratch for custom carrier boards. This includes configuring I/Os, clock settings, fan control, power profiles, or any other module for a specific hardware design. Tasks that previously required weeks of manual effort can be handled by an agent, reducing time to market for custom Jetson designs.
+Memory optimization skills: Optimize memory usage across the software stack. These skills can tune the whole stack starting bootloader memory carveouts, optimize kernel memory reservation, reduce redundant user space processes, and help build the most memory-efficient software configuration for a given workload. This directly reduces TCO by enabling more capable workloads to run on lower memory configurations.
+Model benchmarking skills: Help you identify the best model configuration for your use case. These skills cover model benchmarking, inference optimization, and Jetson diagnostics. For example, a developer building a NemoClaw-based application can use these skills to determine which model runs most efficiently on their target device for their specific task.
+Along with these three categories of skills, NVIDIA is also introducing skills that help agents build vision pipelines using NVIDIA DeepStream and NVIDIA Metropolis Blueprint for Video Search and Summarization (VSS).
+Figure 2. Jetson agent skills power agentic development
+To learn more and get started, check out Jetson device-side skills and Jetson BSP skills on GitHub.
+MIG on Jetson Thor enables GPU partitioning for mixed-criticality workloads
+JetPack 7.2 on Jetson Thor introduces support for MIG , allowing the integrated NVIDIA Blackwell GPU to be partitioned into two isolated GPU instances with dedicated compute, cache, and memory bandwidth. This enables multiple AI workloads to run concurrently with predictable performance and minimal interference.
+Combined with the Preemptible RT kernel in JetPack 7, MIG helps create a more deterministic execution environment for mixed-criticality systems. Workload determinism is critical for physical AI systems such as humanoid robots , autonomous machines , industrial automation , and medical devices . This is because perception, planning, control, generative AI , and safety workloads often share a single SoC, where resource contention can introduce latency jitter into time-sensitive pipelines.
+With MIG on Jetson Thor, developers can dedicate GPU resources to latency-sensitive robotics workloads while running best-effort AI inference or generative AI models on a separate partition. This helps maintain predictable latency and quality of service for workloads such as perception, sensor fusion, motion planning, and safety monitoring. JetPack 7.2 supports two MIG partitions on Jetson Thor:
+A larger AI and graphics partition for inferencing, rendering, visualization, and general NVIDIA CUDA workloads (12 SMs, 1536 CUDA cores)
+A second isolated compute partition for robotics, control, perception, or safety-critical workloads (8 SMs, 1024 CUDA cores)
+Applications, containers, and services can be assigned to specific MIG partitions using standard CUDA Runtime controls and NVIDIA Container Toolkit integration. This is especially important for next-generation humanoid robotics running multiple AI pipelines across different timing domains, where control loops, AI perception, and generative AI reasoning must reliably coexist on a single embedded platform.
+By bringing data-center-class GPU partitioning to embedded AI computing, JetPack 7.2 enables more capable edge AI systems with improved predictability and reliability for real-world deployment. Read more about MIG on Jetson Thor .
+Introducing Yocto Project support on NVIDIA Jetson
+Starting with JetPack 7.2, NVIDIA provides official Yocto Project support on Jetson , including validated recipes and reference images for Jetson developer kits. The Yocto Project is an open source Linux Foundation project that provides tools to build custom Linux distributions for embedded hardware architectures.
+NVIDIA now leads roadmap contributions with a regular release cadence to the OE4T layer. NVIDIA owns the CI/CD pipeline, SQA, and releases validated reference images for Jetson developer kits. And developers have access to technical documentation and dedicated forums support.
+The Yocto Project brings three core benefits to Jetson developers:
+Customizability: Enables you to build tightly tailored images that include only the required services, drivers, and libraries, rather than adapting the NVIDIA Ubuntu L4T image. This reduces memory footprint and optimizes system performance for the target application.
+Reproducibility: Yocto Project produces identical image builds across runs, simplifying debugging, testing, and certification workflows. This is especially valuable in regulated fields such as medical and industrial deployments.
+Open ecosystem. Access thousands of recipes and community layers for AI frameworks, industrial protocols, and custom middleware.
+To help you decide when to use L4T/JetPack versus OE4T/Yocto Project, refer to the Developer Decision Guide in Figure 3.
+Figure 3. Use this Developer Decision Guide to help you decide when to use L4T/JetPack versus OE4T/Yocto Project
+With the official support of Yocto Project on Jetson, NVIDIA has also built a robust ecosystem of distribution partners, ISVs, and ODMs to accelerate and simplify Yocto Project development on Jetson platforms. These partners provide a range of offerings including production-ready Linux distributions, BSP customization, long-term support, fleet management solutions, multimedia and ISP expertise, and security-focused integrations.
+Companies such as Konsulko Group and Peridio offer complete OS solutions like Konsulko Orca OS and Avocado OS , while Balena focuses on container-based fleet management and deployment at scale. Other NVIDIA partners include Neurealm , RidgeRun , and Wind River , who provide extensive engineering and NRE services with deep expertise in embedded Linux, BSP customization, multimedia pipelines, and long-term platform support. Together, this ecosystem enables developers to rapidly deploy, customize, and scale Yocto-based solutions on Jetson.
+In addition to distribution partners and ISVs, NVIDIA also works closely with a strong ecosystem of partners to help customers accelerate product development and deployment on Jetson platforms such as AAEON , Advantech , Antmicro , ASUS , AVerMedia , Connect Tech , EDOM , and YUAN provide a wide range of hardware solutions including carrier boards, edge AI systems, industrial embedded platforms, video capture solutions, and reference designs optimized for Jetson. These partners enable developers to rapidly prototype and scale production-ready AI and edge computing solutions with hardware platforms tailored for robotics, industrial automation, smart cities, healthcare, retail, and other embedded AI applications.
+Unifying the Jetson stack and unlocking more performance
+JetPack 7.2 extends the Ubuntu 24.04, kernel 6.8 and CUDA Toolkit 13.0 -based compute stack (introduced with Jetson Thor) to the Jetson Orin family, bringing both platforms onto a single unified software foundation. With a common stack across Orin and Thor, you can seamlessly deploy the latest AI applications across the entire Jetson portfolio while taking advantage of the newest CUDA capabilities, libraries, and performance optimizations.
+This unified approach significantly reduces the engineering effort required to support multiple hardware platforms, simplifying application development, validation, deployment, and long-term fleet maintenance.
+JetPack 7.2 also introduces a new Super Mode for Jetson AGX Orin 32 GB, unlocking higher GPU and power configurations that bring its performance much closer to Jetson AGX Orin 64 GB. By increasing GPU frequencies from 930 MHz to 1.3 GHz and enabling higher power envelopes up to 60W, Super Mode boosts AI performance from 200 TOPS to 241 TOPS, a more than 20% increase over the standard AGX Orin 32 GB configuration.
+This enhancement enables customers to achieve near-flagship AGX Orin 64 GB performance using Jetson AGX Orin 32 GB, while reducing module cost by 45%. The new Super Mode makes the 32 GB module a cost-effective choice for generative AI, robotics, and edge AI deployments.
+Figure 4. Jetson AGX Orin module comparison for JetPack 7.2
+Figure 5. Model performance comparison on Jetson AGX Orin modules
+Jetson AGX Orin 32 GB Jetson AGX Orin 32GB Super Jetson AGX Orin 64 GB
+Nemotron3 Nano 30B A3B 31 37 40
+Cosmos Reason 2 8B 9 10 10
+Qwen 3.5 4B 24 27 28
+Qwen 3.5 9B 13 15 17
+Qwen 3.6 27B 4 5 7
+Gemma 4 E4B 25 29 32
+Table 1. Generative AI model performance in tokens/sec on Jetson AGX Orin 32 GB, Orin 32 GB Super, and Orin 64 GB
+Get started with NVIDIA JetPack 7.2
+JetPack 7.2 delivers more value from the same Jetson hardware through software. As agentic AI moves to the edge and memory costs remain a real constraint in production deployments, this release directly addresses both.
+Features include one-command deployment of NVIDIA NemoClaw, memory and workflow optimization agent skills for Jetson, official Yocto Project support for lean and reproducible production builds, and MIG on Jetson Thor for deterministic multiworkload execution. With JetPack 7.2, you can do more on existing hardware while building toward increasingly capable agentic workloads at the edge.
+Download JetPack 7.2 to get started deploying agentic AI at the edge. For questions and community support, visit the NVIDIA Developer Forum .
+Join NVIDIA founder and CEO Jensen Huang for the NVIDIA GTC Taipei 2026 Keynote and learn more with related sessions .
+Discuss (0)
+Like
+Tags
+Edge Computing | Robotics | General | CUDA | JetPack | Jetson | Intermediate Technical | AI Agent | Computex 2026 | Multi-Instance GPU (MIG)
+About the Authors
+About Peilun Tsai
+Peilun Tsai is a senior product marketing manager for Edge AI at NVIDIA. With experience spanning GTM strategy, product management, and sales in edge AI, enterprise software, and vision AI, she works to connect technical innovation market adoption. Peilun holds an MBA from Duke University.
+View all posts by Peilun Tsai
+About Shashank Maheshwari
+Shashank Maheshwari is the product manager for Jetson and IGX software at NVIDIA. He holds an MBA from Duke University and a bachelor’s degree in Electronics from BITS Pilani.
+View all posts by Shashank Maheshwari
+Comments
+
+## full_text
+
+Robotics
+Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2
+Release features include one-command deployment of NVIDIA NemoClaw, NVIDIA agent skills for Jetson, official Yocto Project support, Super Mode on Jetson AGX Orin 32 GB
+Jun 01, 2026
+By Peilun Tsai and Shashank Maheshwari
+Like
+Discuss (0)
+AI-Generated Summary
+Like
+Dislike
+NVIDIA JetPack 7.2 enhances Jetson devices with one-command deployment of NemoClaw, enabling easy development of secure, agentic AI applications for robotics, industrial automation, and edge AI systems.
+The update includes Jetson agent skills that automate development tasks like Linux customization, memory optimization, and model benchmarking, accelerating time to market and reducing complexity.
+JetPack 7.2 introduces Multi-Instance GPU (MIG) support on Jetson Thor for isolated, predictable multiworkload execution, critical for real-time AI applications in robotics and industrial automation.
+AI-generated content may summarize information incompletely. Verify important information. Learn more
+As AI agents move from the digital world to the physical environment, they can readily use NVIDIA Jetson to accelerate real-world deployment with optimized memory and performance.
+NVIDIA JetPack 7.2 directly supports one-command deployment of NVIDIA NemoClaw , an open source stack that adds privacy and security controls to OpenClaw. It introduces NVIDIA agent skills for Jetson— Jetson device-side skills and Jetson BSP skills —and extends the latest compute stack and agentic capabilities to NVIDIA Jetson Orin . The Jetson software-defined platform makes this possible: the same hardware continues to deliver more value with every software release.
+This post introduces new JetPack 7.2 release features and capabilities, which also include:
+NVIDIA Multi-Instance GPU (MIG) support on NVIDIA Jetson Thor for deterministic multiworkload execution
+Official Yocto Project support for custom Linux distributions that can further improve system efficiency
+Super Mode for Jetson AGX Orin 32 GB for higher AI performance and greater cost efficiency at the edge
+Together, these updates help developers get more out of existing Jetson hardware, accelerate time to market, and lower total cost of ownership.
+Figure 1. JetPack 7.2 provides optimized support for edge AI market trends
+How is NVIDIA JetPack 7.2 software agentic-ready?
+With JetPack 7.2, Jetson is NemoClaw-ready out of the box. JetPack 7.2 comes preconfigured with the required dependencies and software stack, so you can deploy and run NemoClaw-based workflows on Jetson without manual environment setup. This enables you to easily build agentic physical AI applications across robotics, industrial automation, vision agents, and edge AI systems.
+To install NemoClaw on a Jetson device running JetPack 7.2, run the following single command:
+curl -fsSL nvidia.com/nemoclaw.sh | bash
+NVIDIA agent skills for Jetson in JetPack 7.2
+JetPack 7.2 also provides developers with Jetson agent skills to build and optimize Jetson software stacks using AI agents. The agent skills are a set of repeatable, agent-executable instructions that define which tools to call, what outputs to produce, and how to validate results. Rather than manually configuring each step of the development process, developers can leverage agent skills through an agent to handle these tasks automatically.
+Jetson agent skills apply this pattern specifically to Jetson software development workflows. These agent-driven workflows help automate common development tasks such as Jetson Linux customization, memory optimization, model benchmarking, and deployment configuration. With both device-side and BSP-side implementations, developers can use agent skills to reduce development complexity and accelerate the path from prototyping to production deployment on Jetson platforms.
+JetPack 7.2 ships three categories of skills:
+Jetson Linux customization skills: Guide an agent to build and customize a BSP from scratch for custom carrier boards. This includes configuring I/Os, clock settings, fan control, power profiles, or any other module for a specific hardware design. Tasks that previously required weeks of manual effort can be handled by an agent, reducing time to market for custom Jetson designs.
+Memory optimization skills: Optimize memory usage across the software stack. These skills can tune the whole stack starting bootloader memory carveouts, optimize kernel memory reservation, reduce redundant user space processes, and help build the most memory-efficient software configuration for a given workload. This directly reduces TCO by enabling more capable workloads to run on lower memory configurations.
+Model benchmarking skills: Help you identify the best model configuration for your use case. These skills cover model benchmarking, inference optimization, and Jetson diagnostics. For example, a developer building a NemoClaw-based application can use these skills to determine which model runs most efficiently on their target device for their specific task.
+Along with these three categories of skills, NVIDIA is also introducing skills that help agents build vision pipelines using NVIDIA DeepStream and NVIDIA Metropolis Blueprint for Video Search and Summarization (VSS).
+Figure 2. Jetson agent skills power agentic development
+To learn more and get started, check out Jetson device-side skills and Jetson BSP skills on GitHub.
+MIG on Jetson Thor enables GPU partitioning for mixed-criticality workloads
+JetPack 7.2 on Jetson Thor introduces support for MIG , allowing the integrated NVIDIA Blackwell GPU to be partitioned into two isolated GPU instances with dedicated compute, cache, and memory bandwidth. This enables multiple AI workloads to run concurrently with predictable performance and minimal interference.
+Combined with the Preemptible RT kernel in JetPack 7, MIG helps create a more deterministic execution environment for mixed-criticality systems. Workload determinism is critical for physical AI systems such as humanoid robots , autonomous machines , industrial automation , and medical devices . This is because perception, planning, control, generative AI , and safety workloads often share a single SoC, where resource contention can introduce latency jitter into time-sensitive pipelines.
+With MIG on Jetson Thor, developers can dedicate GPU resources to latency-sensitive robotics workloads while running best-effort AI inference or generative AI models on a separate partition. This helps maintain predictable latency and quality of service for workloads such as perception, sensor fusion, motion planning, and safety monitoring. JetPack 7.2 supports two MIG partitions on Jetson Thor:
+A larger AI and graphics partition for inferencing, rendering, visualization, and general NVIDIA CUDA workloads (12 SMs, 1536 CUDA cores)
+A second isolated compute partition for robotics, control, perception, or safety-critical workloads (8 SMs, 1024 CUDA cores)
+Applications, containers, and services can be assigned to specific MIG partitions using standard CUDA Runtime controls and NVIDIA Container Toolkit integration. This is especially important for next-generation humanoid robotics running multiple AI pipelines across different timing domains, where control loops, AI perception, and generative AI reasoning must reliably coexist on a single embedded platform.
+By bringing data-center-class GPU partitioning to embedded AI computing, JetPack 7.2 enables more capable edge AI systems with improved predictability and reliability for real-world deployment. Read more about MIG on Jetson Thor .
+Introducing Yocto Project support on NVIDIA Jetson
+Starting with JetPack 7.2, NVIDIA provides official Yocto Project support on Jetson , including validated recipes and reference images for Jetson developer kits. The Yocto Project is an open source Linux Foundation project that provides tools to build custom Linux distributions for embedded hardware architectures.
+NVIDIA now leads roadmap contributions with a regular release cadence to the OE4T layer. NVIDIA owns the CI/CD pipeline, SQA, and releases validated reference images for Jetson developer kits. And developers have access to technical documentation and dedicated forums support.
+The Yocto Project brings three core benefits to Jetson developers:
+Customizability: Enables you to build tightly tailored images that include only the required services, drivers, and libraries, rather than adapting the NVIDIA Ubuntu L4T image. This reduces memory footprint and optimizes system performance for the target application.
+Reproducibility: Yocto Project produces identical image builds across runs, simplifying debugging, testing, and certification workflows. This is especially valuable in regulated fields such as medical and industrial deployments.
+Open ecosystem. Access thousands of recipes and community layers for AI frameworks, industrial protocols, and custom middleware.
+To help you decide when to use L4T/JetPack versus OE4T/Yocto Project, refer to the Developer Decision Guide in Figure 3.
+Figure 3. Use this Developer Decision Guide to help you decide when to use L4T/JetPack versus OE4T/Yocto Project
+With the official support of Yocto Project on Jetson, NVIDIA has also built a robust ecosystem of distribution partners, ISVs, and ODMs to accelerate and simplify Yocto Project development on Jetson platforms. These partners provide a range of offerings including production-ready Linux distributions, BSP customization, long-term support, fleet management solutions, multimedia and ISP expertise, and security-focused integrations.
+Companies such as Konsulko Group and Peridio offer complete OS solutions like Konsulko Orca OS and Avocado OS , while Balena focuses on container-based fleet management and deployment at scale. Other NVIDIA partners include Neurealm , RidgeRun , and Wind River , who provide extensive engineering and NRE services with deep expertise in embedded Linux, BSP customization, multimedia pipelines, and long-term platform support. Together, this ecosystem enables developers to rapidly deploy, customize, and scale Yocto-based solutions on Jetson.
+In addition to distribution partners and ISVs, NVIDIA also works closely with a strong ecosystem of partners to help customers accelerate product development and deployment on Jetson platforms such as AAEON , Advantech , Antmicro , ASUS , AVerMedia , Connect Tech , EDOM , and YUAN provide a wide range of hardware solutions including carrier boards, edge AI systems, industrial embedded platforms, video capture solutions, and reference designs optimized for Jetson. These partners enable developers to rapidly prototype and scale production-ready AI and edge computing solutions with hardware platforms tailored for robotics, industrial automation, smart cities, healthcare, retail, and other embedded AI applications.
+Unifying the Jetson stack and unlocking more performance
+JetPack 7.2 extends the Ubuntu 24.04, kernel 6.8 and CUDA Toolkit 13.0 -based compute stack (introduced with Jetson Thor) to the Jetson Orin family, bringing both platforms onto a single unified software foundation. With a common stack across Orin and Thor, you can seamlessly deploy the latest AI applications across the entire Jetson portfolio while taking advantage of the newest CUDA capabilities, libraries, and performance optimizations.
+This unified approach significantly reduces the engineering effort required to support multiple hardware platforms, simplifying application development, validation, deployment, and long-term fleet maintenance.
+JetPack 7.2 also introduces a new Super Mode for Jetson AGX Orin 32 GB, unlocking higher GPU and power configurations that bring its performance much closer to Jetson AGX Orin 64 GB. By increasing GPU frequencies from 930 MHz to 1.3 GHz and enabling higher power envelopes up to 60W, Super Mode boosts AI performance from 200 TOPS to 241 TOPS, a more than 20% increase over the standard AGX Orin 32 GB configuration.
+This enhancement enables customers to achieve near-flagship AGX Orin 64 GB performance using Jetson AGX Orin 32 GB, while reducing module cost by 45%. The new Super Mode makes the 32 GB module a cost-effective choice for generative AI, robotics, and edge AI deployments.
+Figure 4. Jetson AGX Orin module comparison for JetPack 7.2
+Figure 5. Model performance comparison on Jetson AGX Orin modules
+Jetson AGX Orin 32 GB Jetson AGX Orin 32GB Super Jetson AGX Orin 64 GB
+Nemotron3 Nano 30B A3B 31 37 40
+Cosmos Reason 2 8B 9 10 10
+Qwen 3.5 4B 24 27 28
+Qwen 3.5 9B 13 15 17
+Qwen 3.6 27B 4 5 7
+Gemma 4 E4B 25 29 32
+Table 1. Generative AI model performance in tokens/sec on Jetson AGX Orin 32 GB, Orin 32 GB Super, and Orin 64 GB
+Get started with NVIDIA JetPack 7.2
+JetPack 7.2 delivers more value from the same Jetson hardware through software. As agentic AI moves to the edge and memory costs remain a real constraint in production deployments, this release directly addresses both.
+Features include one-command deployment of NVIDIA NemoClaw, memory and workflow optimization agent skills for Jetson, official Yocto Project support for lean and reproducible production builds, and MIG on Jetson Thor for deterministic multiworkload execution. With JetPack 7.2, you can do more on existing hardware while building toward increasingly capable agentic workloads at the edge.
+Download JetPack 7.2 to get started deploying agentic AI at the edge. For questions and community support, visit the NVIDIA Developer Forum .
+Join NVIDIA founder and CEO Jensen Huang for the NVIDIA GTC Taipei 2026 Keynote and learn more with related sessions .
+Discuss (0)
+Like
+Tags
+Edge Computing | Robotics | General | CUDA | JetPack | Jetson | Intermediate Technical | AI Agent | Computex 2026 | Multi-Instance GPU (MIG)
+About the Authors
+About Peilun Tsai
+Peilun Tsai is a senior product marketing manager for Edge AI at NVIDIA. With experience spanning GTM strategy, product management, and sales in edge AI, enterprise software, and vision AI, she works to connect technical innovation market adoption. Peilun holds an MBA from Duke University.
+View all posts by Peilun Tsai
+About Shashank Maheshwari
+Shashank Maheshwari is the product manager for Jetson and IGX software at NVIDIA. He holds an MBA from Duke University and a bachelor’s degree in Electronics from BITS Pilani.
+View all posts by Shashank Maheshwari
+Comments
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":14414,"paragraph_count":75,"sentence_count":86,"boilerplate_hits":0,"symbol_ratio":0.0007,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Robotics Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   2 Release features include one-command deployment of NVIDIA NemoClaw, NVIDIA agent skills for Jetson, official Yocto Project support, Super Mode on Jetson AGX Orin 32 GB Jun 01, 2026 By Peilun Tsai and Shashank Maheshwari Like Discuss (0) AI-Generated Summary Like Dislike NVIDIA JetPack 7.
+
+4. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   2 enhances Jetson devices with one-command deployment of NemoClaw, enabling easy development of secure, agentic AI applications for robotics, industrial automation, and edge AI systems.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   The update includes Jetson agent skills that automate development tasks like Linux customization, memory optimization, and model benchmarking, accelerating time to market and reducing complexity.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   2 introduces Multi-Instance GPU (MIG) support on Jetson Thor for isolated, predictable multiworkload execution, critical for real-time AI applications in robotics and industrial automation.
+
+## business_elements
+
+- companies: NVIDIA Technical Blog（开发者技术博客 · RSS）, GitHub, Nvidia
+- products: agent, agents, Agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 7.2, 32, 01, 2026
+B, 0, 1, 2, 7
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Robotics Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7. / The update includes Jetson agent skills that automate development tasks like Linux customization, memory optimization, and model benchmarking, accelerating time to market and reducing complexity.
+- case_details: 2 Release features include one-command deployment of NVIDIA NemoClaw, NVIDIA agent skills for Jetson, official Yocto Project support, Super Mode on Jetson AGX Orin 32 GB Jun 01, 2026 By Peilun Tsai and Shashank Maheshwari Like Discuss (0) AI-Generated Summary Like Dislike NVIDIA JetPack 7. / 2 enhances Jetson devices with one-command deployment of NemoClaw, enabling easy development of secure, agentic AI applications for robotics, industrial automation, and edge AI systems.
+- workflow_changes: 2 introduces Multi-Instance GPU (MIG) support on Jetson Thor for isolated, predictable multiworkload execution, critical for real-time AI applications in robotics and industrial automation.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"NVIDIA JetPack 7.2支持内存优化的边缘智能体部署","discovery_summary":"NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。","source_name":"NVIDIA Technical Blog（开发者技术博客 · RSS）","origin_url":"https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2","discovered_at":"2026-06-02T03:42:52.478Z","rank_on_page":48,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

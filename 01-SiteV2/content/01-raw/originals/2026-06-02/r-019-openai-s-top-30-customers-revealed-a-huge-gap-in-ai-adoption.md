@@ -1,0 +1,321 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-019
+title: "OpenAI's top 30 customers revealed: a huge gap in AI adoption"
+original_url: "https://www.linkedin.com/posts/lanny-heiz_openai-just-accidentally-leaked-their-top-activity-7382067330974904320-Xs8m"
+canonical_url: "https://linkedin.com/posts/lanny-heiz_openai-just-accidentally-leaked-their-top-activity-7382067330974904320-Xs8m"
+source_name: "follow-builders cloud fallback / keyword search / Anysearch"
+source_type: builder
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: follow-builders
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-02T03:48:56.954Z
+language: mixed
+full_text_hash: e1477409bea6b218
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-019-openai-s-top-30-customers-revealed-a-huge-gap-in-ai-adoption.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-02/r-019-openai-s-top-30-customers-revealed-a-huge-gap-in-ai-adoption.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4645,"paragraph_count":60,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+has_full_text: true
+content_length: 4645
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e1477409bea6b218","missing":[]}
+source_volatility: high
+community_name: "follow-builders cloud fallback / keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: frontier_opinion_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 3d15e74038f08fa4
+content_hash: e1477409bea6b218
+semantic_hash: eaef2427c7badd27
+duplicate_of: ""
+first_seen_at: "2026-06-02T03:48:56.954Z"
+last_seen_at: 2026-06-02T03:48:56.954Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":4,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["follow","builders cloud fallback","keyword search","Anysearch","OpenAI","Salesforce"],"products":["ChatGPT","agents"],"people":[],"industries":["企业服务"],"roles":["销售 / 客服"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["30","1 TRILLION","2","8","30 b","1 Trillion","1","4"],"quotes":["because they need fewer humans because of AI","How are you using AI right now in your sales?","YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time","because they need fewer humans because of AI","How are you using AI right now in your sales?"]}
+evidence_seed: {"company_actions":["There's a huge gap and it's getting bigger.","BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not)."],"case_details":["OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger. BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not). But most people missed the biggest news. They had a slide open with their 30 biggest customers (processing 1 Trillion tokens) Yes, we can talk","OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens.","Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers."],"workflow_changes":[],"before_after_clues":[],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有变化前后流程线索"]
+key_excerpts: [{"type":"case_detail","text":"OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger. BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not). But most people missed the biggest news. They had a slide open with their 30 biggest customers (processing 1 Trillion tokens) Yes, we can talk","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There's a huge gap and it's getting bigger.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not).","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# OpenAI's top 30 customers revealed: a huge gap in AI adoption
+
+## clean_text
+
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens.
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger.
+BACKGROUND
+2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not).
+But most people missed the biggest news.
+They had a slide open with their 30 biggest customers (processing 1 Trillion tokens)
+Yes, we can talk about how OpenAI doesn't care about privacy - but we already know that...
+The takeaway is that the list was not full of fancy new AI companies.
+It's mostly big enterprises
+- Duolingo (Nr 1. Spot)
+- Salesforce (#4)
+- Indeed (#3)
+These aren't AI companies.
+They're companies 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 by AI.
+Salesforce announced that they fired 4000 Customer Support agents - "because they need fewer humans because of AI"
+If even the REALLY big corporations are so heavily using AI to make their processes more efficent, there's one thing that worries me.
+The Gap between these companies - and the ones that aren't doing it.
+I see it at least 1x a day during a sales call.
+Me: "How are you using AI right now in your sales?"
+Prospect: "YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time"
+Yes, that makes an individual sales rep more efficient. But it's not really changing how you work. It's just doing the wrong things faster.
+Meanwhile, the best sales & marketing teams completely shifted their workflow
+→ AI finds leads + qualifies them (no manual prospecting)
+→ AI writes personalised messages (no more templates)
+→ AI handles replies -only the positives go to the SDR
+The SDR can fully focus on calling leads and driving meetings & pipeline.
+And the same for marketing
+→ AI finds trending topics (on X, Reddit, LinkedIn)
+→ AI creates a post for the leadership team
+→ AI enriches missing CRM data + scores leads
+Instead of marketing publishing 1 blog a month and 2 posts on the linkedin page, they now can produce 3x posts a week for their leadership team.
+Ultimately, what type of company do you want to be in 2026?
+AI-first...or still trying to figure things out?
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens.
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger.
+BACKGROUND
+2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not).
+But most people missed the biggest news.
+They had a slide open with their 30 biggest customers (processing 1 Trillion tokens)
+Yes, we can talk about how OpenAI doesn't care about privacy - but we already know that...
+The takeaway is that the list was not full of fancy new AI companies.
+It's mostly big enterprises
+- Duolingo (Nr 1. Spot)
+- Salesforce (#4)
+- Indeed (#3)
+These aren't AI companies.
+They're companies 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 by AI.
+Salesforce announced that they fired 4000 Customer Support agents - "because they need fewer humans because of AI"
+If even the REALLY big corporations are so heavily using AI to make their processes more efficent, there's one thing that worries me.
+The Gap between these companies - and the ones that aren't doing it.
+I see it at least 1x a day during a sales call.
+Me: "How are you using AI right now in your sales?"
+Prospect: "YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time"
+Yes, that makes an individual sales rep more efficient. But it's not really changing how you work. It's just doing the wrong things faster.
+Meanwhile, the best sales & marketing teams completely shifted their workflow
+→ AI finds leads + qualifies them (no manual prospecting)
+→ AI writes personalised messages (no more templates)
+→ AI handles replies -only the positives go to the SDR
+The SDR can fully focus on calling leads and driving meetings & pipeline.
+And the same for marketing
+→ AI finds trending topics (on X, Reddit, LinkedIn)
+→ AI creates a post for the leadership team
+→ AI enriches missing CRM data + scores leads
+Instead of marketing publishing 1 blog a month and 2 posts on the linkedin page, they now can produce 3x posts a week for their leadership team.
+Ultimately, what type of company do you want to be in 2026?
+AI-first...or still trying to figure things out?
+
+## full_text
+
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens.
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger.
+BACKGROUND
+2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not).
+But most people missed the biggest news.
+They had a slide open with their 30 biggest customers (processing 1 Trillion tokens)
+Yes, we can talk about how OpenAI doesn't care about privacy - but we already know that...
+The takeaway is that the list was not full of fancy new AI companies.
+It's mostly big enterprises
+- Duolingo (Nr 1. Spot)
+- Salesforce (#4)
+- Indeed (#3)
+These aren't AI companies.
+They're companies 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 by AI.
+Salesforce announced that they fired 4000 Customer Support agents - "because they need fewer humans because of AI"
+If even the REALLY big corporations are so heavily using AI to make their processes more efficent, there's one thing that worries me.
+The Gap between these companies - and the ones that aren't doing it.
+I see it at least 1x a day during a sales call.
+Me: "How are you using AI right now in your sales?"
+Prospect: "YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time"
+Yes, that makes an individual sales rep more efficient. But it's not really changing how you work. It's just doing the wrong things faster.
+Meanwhile, the best sales & marketing teams completely shifted their workflow
+→ AI finds leads + qualifies them (no manual prospecting)
+→ AI writes personalised messages (no more templates)
+→ AI handles replies -only the positives go to the SDR
+The SDR can fully focus on calling leads and driving meetings & pipeline.
+And the same for marketing
+→ AI finds trending topics (on X, Reddit, LinkedIn)
+→ AI creates a post for the leadership team
+→ AI enriches missing CRM data + scores leads
+Instead of marketing publishing 1 blog a month and 2 posts on the linkedin page, they now can produce 3x posts a week for their leadership team.
+Ultimately, what type of company do you want to be in 2026?
+AI-first...or still trying to figure things out?
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens.
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger.
+BACKGROUND
+2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not).
+But most people missed the biggest news.
+They had a slide open with their 30 biggest customers (processing 1 Trillion tokens)
+Yes, we can talk about how OpenAI doesn't care about privacy - but we already know that...
+The takeaway is that the list was not full of fancy new AI companies.
+It's mostly big enterprises
+- Duolingo (Nr 1. Spot)
+- Salesforce (#4)
+- Indeed (#3)
+These aren't AI companies.
+They're companies 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 by AI.
+Salesforce announced that they fired 4000 Customer Support agents - "because they need fewer humans because of AI"
+If even the REALLY big corporations are so heavily using AI to make their processes more efficent, there's one thing that worries me.
+The Gap between these companies - and the ones that aren't doing it.
+I see it at least 1x a day during a sales call.
+Me: "How are you using AI right now in your sales?"
+Prospect: "YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time"
+Yes, that makes an individual sales rep more efficient. But it's not really changing how you work. It's just doing the wrong things faster.
+Meanwhile, the best sales & marketing teams completely shifted their workflow
+→ AI finds leads + qualifies them (no manual prospecting)
+→ AI writes personalised messages (no more templates)
+→ AI handles replies -only the positives go to the SDR
+The SDR can fully focus on calling leads and driving meetings & pipeline.
+And the same for marketing
+→ AI finds trending topics (on X, Reddit, LinkedIn)
+→ AI creates a post for the leadership team
+→ AI enriches missing CRM data + scores leads
+Instead of marketing publishing 1 blog a month and 2 posts on the linkedin page, they now can produce 3x posts a week for their leadership team.
+Ultimately, what type of company do you want to be in 2026?
+AI-first...or still trying to figure things out?
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4645,"paragraph_count":60,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger. BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not). But most people missed the biggest news. They had a slide open with their 30 biggest customers (processing 1 Trillion tokens) Yes, we can talk
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens.
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   There's a huge gap and it's getting bigger.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not).
+
+## business_elements
+
+- companies: follow, builders cloud fallback, keyword search, Anysearch, OpenAI, Salesforce
+- products: ChatGPT, agents
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 销售 / 客服
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 30, 1 TRILLION, 2, 8, 30 b, 1 Trillion, 1, 4
+- quotes: because they need fewer humans because of AI / How are you using AI right now in your sales? / YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time / because they need fewer humans because of AI / How are you using AI right now in your sales?
+
+## evidence_seed
+
+- company_actions: There's a huge gap and it's getting bigger. / BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not).
+- case_details: OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger. BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not). But most people missed the biggest news. They had a slide open with their 30 biggest customers (processing 1 Trillion tokens) Yes, we can talk / OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. / Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 4
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: follow-builders cloud fallback / keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: frontier_opinion_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger. BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not). But most people missed the biggest news. They had a slide open with their 30 biggest customers (processing 1 Trillion tokens) Yes, we can talk about how OpenAI doesn't care about privacy - but we already know that... The takeaway is that the list was not full of fancy new AI companies. It's mostly big enterprises - Duolingo (Nr 1. Spot) - Salesforce (#4) - Indeed (#3) These aren't AI companies. They're companies 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 by AI. Salesforce announced that they fired 4000 Customer Support agents - "because they need fewer humans because of AI" If even the REALLY big corporations are so heavily using AI to make their processes more efficent, there's one thing that worries me. The Gap between these companies - and the ones that aren't doing it. I see it at least 1x a day during a sales call. Me: "How are you using AI right now in your sales?" Prospect: "YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time" Yes, that makes an individual sales rep more efficient. But it's not really changing how you work. It's just doing the wrong things faster. Meanwhile, the best sales & marketing teams completely shifted their workflow → AI finds leads + qualifies them (no manu
+
+## 采集备注
+
+该条目由 follow-builders 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
