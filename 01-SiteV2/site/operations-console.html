@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>运营后台｜观澜AI</title>
+  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/operations-console.css">
+</head>
+<body class="page-operations-console">
+  <main class="ops-shell">
+    <header class="ops-topbar">
+      <div class="ops-topbar-inner">
+        <a class="ops-brand" href="operations-console.html">
+          <img src="assets/brand/logo-wavesight-symbol-light.svg" alt="观澜AI" width="24" height="24">
+          <span>
+            <strong>观澜AI</strong>
+            <small>运营后台</small>
+          </span>
+        </a>
+        <nav class="ops-nav">
+          <button type="button" data-ops-tab="topic-center" aria-current="page">选题中心</button>
+          <button type="button" data-ops-tab="pipeline-status">生产状态</button>
+          <button type="button" data-ops-tab="agent-logs">Agent日志</button>
+          <button type="button" data-ops-tab="settings">设置</button>
+        </nav>
+        <div class="ops-topbar-meta">
+          <span class="ops-last-sync" data-ops-last-sync>加载中…</span>
+          <a href="admin.html" class="ops-admin-link">管理后台 →</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ═══════ 选题中心 Tab ═══════ -->
+    <section class="ops-panel" data-ops-panel="topic-center">
+      <div class="ops-panel-head">
+        <div>
+          <span class="ops-kicker">TOPIC CURATION CENTER</span>
+          <h1>选题中心</h1>
+        </div>
+        <div class="ops-head-actions">
+          <button type="button" class="ops-btn ops-btn-primary" data-ops-run-pitch>运行主编选题</button>
+          <button type="button" class="ops-btn" data-ops-refresh>刷新数据</button>
+        </div>
+      </div>
+
+      <!-- 四种选题来源 -->
+      <div class="ops-source-grid">
+
+        <!-- 来源一：信号卡 -->
+        <article class="ops-source-card" data-source-type="signals">
+          <div class="ops-source-head">
+            <span class="ops-source-icon ops-icon-signal">📡</span>
+            <div>
+              <span class="ops-source-kicker">SOURCE · 01</span>
+              <h2>商业信号</h2>
+            </div>
+            <span class="ops-source-count" data-source-count="signals">—</span>
+          </div>
+          <p class="ops-source-desc">来自每日监测的 product_service / funding / case 信号卡，代表当天最明确的 AI 商业事件。</p>
+          <div class="ops-source-items" data-source-items="signals">
+            <p class="ops-source-empty">暂无数据</p>
+          </div>
+        </article>
+
+        <!-- 来源二：观点卡 -->
+        <article class="ops-source-card" data-source-type="opinions">
+          <div class="ops-source-head">
+            <span class="ops-source-icon ops-icon-opinion">💬</span>
+            <div>
+              <span class="ops-source-kicker">SOURCE · 02</span>
+              <h2>前沿观点</h2>
+            </div>
+            <span class="ops-source-count" data-source-count="opinions">—</span>
+          </div>
+          <p class="ops-source-desc">来自行业领袖的前沿观点卡，经翻译和四档评级（feature / sidebar / archive / discard）。</p>
+          <div class="ops-source-items" data-source-items="opinions">
+            <p class="ops-source-empty">暂无数据</p>
+          </div>
+        </article>
+
+        <!-- 来源三：变化候选 -->
+        <article class="ops-source-card" data-source-type="changes">
+          <div class="ops-source-head">
+            <span class="ops-source-icon ops-icon-change">🔄</span>
+            <div>
+              <span class="ops-source-kicker">SOURCE · 03</span>
+              <h2>变化候选</h2>
+            </div>
+            <span class="ops-source-count" data-source-count="changes">—</span>
+          </div>
+          <p class="ops-source-desc">精选变化候选，已通过主编评分的变化事件，适合作为今日观察或深度选题的叙事起点。</p>
+          <div class="ops-source-items" data-source-items="changes">
+            <p class="ops-source-empty">暂无数据</p>
+          </div>
+        </article>
+
+        <!-- 来源四：趋势候选 -->
+        <article class="ops-source-card" data-source-type="trends">
+          <div class="ops-source-head">
+            <span class="ops-source-icon ops-icon-trend">📈</span>
+            <div>
+              <span class="ops-source-kicker">SOURCE · 04</span>
+              <h2>趋势候选</h2>
+            </div>
+            <span class="ops-source-count" data-source-count="trends">—</span>
+          </div>
+          <p class="ops-source-desc">跨日积累的趋势候选，需要多日数据才能形成的持续性判断，适合趋势追踪和深度报告。</p>
+          <div class="ops-source-items" data-source-items="trends">
+            <p class="ops-source-empty">暂无数据</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- 选题结果区 -->
+      <section class="ops-pitch-results" data-ops-pitch-results hidden>
+        <div class="ops-pitch-results-head">
+          <span class="ops-kicker">PITCH OUTPUT</span>
+          <h2>主编选题结果</h2>
+          <span class="ops-pitch-date" data-ops-pitch-date></span>
+          <button type="button" class="ops-btn ops-btn-small" data-ops-pitch-expand>展开全部</button>
+        </div>
+        <div class="ops-pitch-result-card" data-ops-pitch-lead hidden>
+          <span class="ops-pitch-badge ops-badge-lead">lead_story</span>
+          <div class="ops-pitch-body">
+            <h3 data-ops-pitch-lead-title></h3>
+            <p data-ops-pitch-lead-desc></p>
+          </div>
+          <div class="ops-pitch-score" data-ops-pitch-lead-score></div>
+        </div>
+        <div class="ops-pitch-result-card" data-ops-pitch-sharpened hidden>
+          <span class="ops-pitch-badge ops-badge-sharpened">write_if_sharpened</span>
+          <div class="ops-pitch-body">
+            <h3 data-ops-pitch-sharpened-title></h3>
+            <p data-ops-pitch-sharpened-desc></p>
+          </div>
+          <div class="ops-pitch-score" data-ops-pitch-sharpened-score></div>
+        </div>
+        <div class="ops-pitch-result-card" data-ops-pitch-hold hidden>
+          <span class="ops-pitch-badge ops-badge-hold">short_comment</span>
+          <div class="ops-pitch-body">
+            <h3 data-ops-pitch-hold-title></h3>
+            <p data-ops-pitch-hold-desc></p>
+          </div>
+          <div class="ops-pitch-score" data-ops-pitch-hold-score></div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ═══════ 生产状态 Tab ═══════ -->
+    <section class="ops-panel" data-ops-panel="pipeline-status" hidden>
+      <div class="ops-panel-head">
+        <div>
+          <span class="ops-kicker">PIPELINE STATUS</span>
+          <h1>生产状态</h1>
+        </div>
+      </div>
+      <div class="ops-pipeline-grid" data-ops-pipeline>
+        <div class="ops-pipeline-stage" data-stage="monitor">
+          <div class="ops-stage-icon">🔍</div>
+          <strong>每日监测</strong>
+          <span class="ops-stage-status" data-ops-stage-status="monitor">等待中</span>
+          <span class="ops-stage-time" data-ops-stage-time="monitor"></span>
+        </div>
+        <div class="ops-pipeline-arrow">→</div>
+        <div class="ops-pipeline-stage" data-stage="signals">
+          <div class="ops-stage-icon">📡</div>
+          <strong>信号生成</strong>
+          <span class="ops-stage-status" data-ops-stage-status="signals">等待中</span>
+          <span class="ops-stage-time" data-ops-stage-time="signals"></span>
+        </div>
+        <div class="ops-pipeline-arrow">→</div>
+        <div class="ops-pipeline-stage" data-stage="pitch">
+          <div class="ops-stage-icon">🎯</div>
+          <strong>主编选题</strong>
+          <span class="ops-stage-status" data-ops-stage-status="pitch">等待中</span>
+          <span class="ops-stage-time" data-ops-stage-time="pitch"></span>
+        </div>
+        <div class="ops-pipeline-arrow">→</div>
+        <div class="ops-pipeline-stage" data-stage="write">
+          <div class="ops-stage-icon">✍️</div>
+          <strong>文章撰写</strong>
+          <span class="ops-stage-status" data-ops-stage-status="write">等待中</span>
+          <span class="ops-stage-time" data-ops-stage-time="write"></span>
+        </div>
+        <div class="ops-pipeline-arrow">→</div>
+        <div class="ops-pipeline-stage" data-stage="qc">
+          <div class="ops-stage-icon">🔍</div>
+          <strong>质量审核</strong>
+          <span class="ops-stage-status" data-ops-stage-status="qc">等待中</span>
+          <span class="ops-stage-time" data-ops-stage-time="qc"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ Agent日志 Tab ═══════ -->
+    <section class="ops-panel" data-ops-panel="agent-logs" hidden>
+      <div class="ops-panel-head">
+        <div>
+          <span class="ops-kicker">AGENT ACTIVITY</span>
+          <h1>Agent日志</h1>
+        </div>
+      </div>
+      <div class="ops-log-feed" data-ops-log-feed>
+        <p class="ops-log-empty">暂无日志</p>
+      </div>
+    </section>
+
+    <!-- ═══════ 设置 Tab ═══════ -->
+    <section class="ops-panel" data-ops-panel="settings" hidden>
+      <div class="ops-panel-head">
+        <div>
+          <span class="ops-kicker">SETTINGS</span>
+          <h1>设置</h1>
+        </div>
+      </div>
+      <form class="ops-settings-form" data-ops-settings-form>
+        <label>
+          <span>每日选题自动触发时间</span>
+          <input name="pitch_schedule" type="time" value="09:35">
+        </label>
+        <label>
+          <span>选题最低通过分数</span>
+          <input name="pitch_min_score" type="number" min="0" max="100" value="75">
+        </label>
+        <label>
+          <span>自动撰写开关</span>
+          <select name="auto_write">
+            <option value="true">开启 - 选题通过后自动撰写</option>
+            <option value="false">关闭 - 仅输出选题结果</option>
+          </select>
+        </label>
+        <label>
+          <span>通知方式</span>
+          <select name="notify_channel">
+            <option value="feishu">飞书</option>
+            <option value="email">邮件</option>
+            <option value="both">飞书 + 邮件</option>
+          </select>
+        </label>
+        <button type="submit" class="ops-btn ops-btn-primary">保存设置</button>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="data/site-content.js"></script>
+  <script src="assets/operations-console.js"></script>
+</body>
+</html>
