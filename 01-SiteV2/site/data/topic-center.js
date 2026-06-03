@@ -1,8 +1,8 @@
 window.WaveSightTopicCenter = {
   "meta": {
     "version": "V1.1.1",
-    "date": "2026-06-03",
-    "generatedAt": "2026-06-02T16:15:22.825Z",
+    "date": "2026-06-02",
+    "generatedAt": "2026-06-03T03:04:35.693Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
@@ -51,7 +51,7 @@ window.WaveSightTopicCenter = {
       "evidence": "创意公司最怕的，不一定是想不出点子。",
       "source": "今日观察",
       "url": "daily-detail.html",
-      "date": "2026-06-03",
+      "date": "2026-06-02",
       "score": 96,
       "grade": "S",
       "priority": "S级选题",
@@ -261,7 +261,7 @@ window.WaveSightTopicCenter = {
       "evidence": "Anthropic Engineering Blog",
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/engineering",
-      "date": "2026-06-03",
+      "date": "2026-06-02",
       "score": 86,
       "grade": "A",
       "priority": "优先观察",
@@ -289,27 +289,27 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "industry_chain-hn-48368121-2",
+      "id": "industry_chain-hn-48374466-2",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
       "sourceDesc": "arXiv / HN / 官方博客",
       "subSource": "Hacker News",
-      "baseId": "hn-48368121",
-      "title": "Adafruit Receives Demand Letter from Fenwick Legal Counsel on Behalf of Flux.ai",
+      "baseId": "hn-48374466",
+      "title": "MAI-Code-1-Flash",
       "type": "discussion",
       "audience": "AI 从业者 / 技术决策者",
-      "core": "Adafruit Receives Demand Letter from Fenwick Legal Counsel on Behalf of Flux.ai",
+      "core": "https:&#x2F;&#x2F;microsoft.ai&#x2F;models&#x2F;mai-code-1-flash&#x2F; https:&#x2F;&#x2F;microsoft.ai&#x2F;pdf&#x2F;MAI-Code-1-Flash-Model-Card.PDF Launching seven new MAI models: https:&#x2F;&#x2F;microsoft.ai&#x2F;news",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 401 points · semanser",
+      "evidence": "Hacker News · 402 points · EvanZhouDev",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48368121",
+      "url": "https://news.ycombinator.com/item?id=48374466",
       "date": "2026-06-02",
-      "score": 83,
+      "score": 82,
       "grade": "B",
       "priority": "候选",
       "scoreBreakdown": {
         "conflict": 21,
-        "roleChange": 17,
+        "roleChange": 16,
         "counterIntuit": 12,
         "storyHook": 12,
         "insight": 12,
@@ -317,11 +317,11 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "从 Adafruit Receives Demand Letter fr 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 401 points · semanser"
+          "title": "从 MAI-Code-1-Flash 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 402 points · EvanZhouDev"
         },
         {
-          "title": "Adafruit Receives Demand Letter fr 会先影响谁的采购单",
+          "title": "MAI-Code-1-Flash 会先影响谁的采购单",
           "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
         },
         {
@@ -331,22 +331,22 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "industry_chain-hn-48363132-3",
+      "id": "industry_chain-hn-48377404-3",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
       "sourceDesc": "arXiv / HN / 官方博客",
       "subSource": "Hacker News",
-      "baseId": "hn-48363132",
-      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "baseId": "hn-48377404",
+      "title": "Use your Nvidia GPU's VRAM as swap space on Linux",
       "type": "discussion",
       "audience": "AI 从业者 / 技术决策者",
-      "core": "OpenAI frontier models and Codex are now available on AWS",
+      "core": "Use your Nvidia GPU's VRAM as swap space on Linux",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 338 points · typpo",
+      "evidence": "Hacker News · 155 points · tanelpoder",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48363132",
-      "date": "2026-06-01",
-      "score": 80,
+      "url": "https://news.ycombinator.com/item?id=48377404",
+      "date": "2026-06-02",
+      "score": 79,
       "grade": "B",
       "priority": "候选",
       "scoreBreakdown": {
@@ -359,11 +359,11 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "从 OpenAI frontier models and Codex a 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 338 points · typpo"
+          "title": "从 Use your Nvidia GPU's VRAM as swap 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 155 points · tanelpoder"
         },
         {
-          "title": "OpenAI frontier models and Codex a 会先影响谁的采购单",
+          "title": "Use your Nvidia GPU's VRAM as swap 会先影响谁的采购单",
           "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
         },
         {
@@ -373,62 +373,20 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "industry_chain-hn-48359232-4",
+      "id": "industry_chain-hn-48377761-4",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
       "sourceDesc": "arXiv / HN / 官方博客",
       "subSource": "Hacker News",
-      "baseId": "hn-48359232",
-      "title": "AI Agent Guidelines for CS336 at Stanford",
+      "baseId": "hn-48377761",
+      "title": "AI outperforms law professors in Stanford Law study",
       "type": "discussion",
       "audience": "AI 从业者 / 技术决策者",
-      "core": "AI Agent Guidelines for CS336 at Stanford",
+      "core": "https:&#x2F;&#x2F;law.stanford.edu&#x2F;wp-content&#x2F;uploads&#x2F;2026&#x2F;06&#x2F;salinas_...",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 472 points · prakashqwerty",
+      "evidence": "Hacker News · 109 points · berlianta",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48359232",
-      "date": "2026-06-01",
-      "score": 80,
-      "grade": "B",
-      "priority": "候选",
-      "scoreBreakdown": {
-        "conflict": 20,
-        "roleChange": 16,
-        "counterIntuit": 12,
-        "storyHook": 12,
-        "insight": 12,
-        "evidence": 8
-      },
-      "angles": [
-        {
-          "title": "从 AI Agent Guidelines for CS336 at S 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 472 points · prakashqwerty"
-        },
-        {
-          "title": "AI Agent Guidelines for CS336 at S 会先影响谁的采购单",
-          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-        },
-        {
-          "title": "这不是技术升级，而是责任边界重画",
-          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
-        }
-      ]
-    },
-    {
-      "id": "industry_chain-hn-48371592-5",
-      "sourceId": "industry_chain",
-      "sourceName": "产业链分析",
-      "sourceDesc": "arXiv / HN / 官方博客",
-      "subSource": "Hacker News",
-      "baseId": "hn-48371592",
-      "title": "Americans don't know how to fight AI so they're fighting data centers",
-      "type": "discussion",
-      "audience": "AI 从业者 / 技术决策者",
-      "core": "Americans don't know how to fight AI so they're fighting data centers",
-      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 43 points · stalfosknight",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48371592",
+      "url": "https://news.ycombinator.com/item?id=48377761",
       "date": "2026-06-02",
       "score": 77,
       "grade": "C",
@@ -443,11 +401,53 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "从 Americans don't know how to fight  看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 43 points · stalfosknight"
+          "title": "从 AI outperforms law professors in S 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 109 points · berlianta"
         },
         {
-          "title": "Americans don't know how to fight  会先影响谁的采购单",
+          "title": "AI outperforms law professors in S 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-hn-48372628-5",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Hacker News",
+      "baseId": "hn-48372628",
+      "title": "Trump signs downsized AI order after weeks of reversals",
+      "type": "discussion",
+      "audience": "AI 从业者 / 技术决策者",
+      "core": "https:&#x2F;&#x2F;www.whitehouse.gov&#x2F;presidential-actions&#x2F;2026&#x2F;06&#x2F;prom... https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;06&#x2F;02&#x2F;technology&#x2F;trump-executiv...",
+      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+      "evidence": "Hacker News · 182 points · _alternator_",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48372628",
+      "date": "2026-06-02",
+      "score": 77,
+      "grade": "C",
+      "priority": "候选",
+      "scoreBreakdown": {
+        "conflict": 19,
+        "roleChange": 15,
+        "counterIntuit": 12,
+        "storyHook": 12,
+        "insight": 12,
+        "evidence": 8
+      },
+      "angles": [
+        {
+          "title": "从 Trump signs downsized AI order aft 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 182 points · _alternator_"
+        },
+        {
+          "title": "Trump signs downsized AI order aft 会先影响谁的采购单",
           "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
         },
         {
@@ -667,21 +667,21 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "viral_rewrite-follow-builders-2050295657836277764-1",
+      "id": "viral_rewrite-follow-builders-2061657264508006738-1",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
-      "subSource": "Aaron Levie",
-      "baseId": "follow-builders-2050295657836277764",
-      "title": "Aaron Levie: Atlassian’s results surprised Wall Street, but it shouldn’t be a surprise. The simple heuristic for the fut",
+      "subSource": "Thibault Sottiaux",
+      "baseId": "follow-builders-2061657264508006738",
+      "title": "Thibault Sottiaux: You can just codex ... a farm https://t.co/pwmS7IvqbH",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "Atlassian’s results surprised Wall Street, but it shouldn’t be a surprise. The simple heuristic for the future of software is that when there are 100X more agents than people, which parts of software will grow because agents are doing more ",
+      "core": "You can just codex ... a farm https://t.co/pwmS7IvqbH",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @levie · 615 engagement",
+      "evidence": "Follow Builders · @thsottiaux · 663 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/levie/status/2050295657836277764",
-      "date": "2026-05-01",
+      "url": "https://x.com/thsottiaux/status/2061657264508006738",
+      "date": "2026-06-02",
       "score": 95,
       "grade": "S",
       "priority": "S级选题",
@@ -695,7 +695,7 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "Aaron Levie 为什么会刺中企业焦虑",
+          "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
           "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
         },
         {
@@ -704,26 +704,26 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @levie · 615 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 663 engagement"
         }
       ]
     },
     {
-      "id": "viral_rewrite-follow-builders-2050240083325030404-2",
+      "id": "viral_rewrite-follow-builders-2061644307111796984-2",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
-      "subSource": "Aaron Levie",
-      "baseId": "follow-builders-2050240083325030404",
-      "title": "Aaron Levie: When I talk to enterprises outside of Silicon Valley, most of the use-cases they have in mind with AI are t",
+      "subSource": "Thibault Sottiaux",
+      "baseId": "follow-builders-2061644307111796984",
+      "title": "Thibault Sottiaux: Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "When I talk to enterprises outside of Silicon Valley, most of the use-cases they have in mind with AI are to augment and accelerate how they work, simply because of how much more they can do right now. Most companies are not satisfied with ",
+      "core": "Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @levie · 329 engagement",
+      "evidence": "Follow Builders · @thsottiaux · 964 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/levie/status/2050240083325030404",
-      "date": "2026-05-01",
+      "url": "https://x.com/thsottiaux/status/2061644307111796984",
+      "date": "2026-06-02",
       "score": 95,
       "grade": "S",
       "priority": "S级选题",
@@ -737,7 +737,7 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "Aaron Levie 为什么会刺中企业焦虑",
+          "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
           "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
         },
         {
@@ -746,26 +746,26 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @levie · 329 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 964 engagement"
         }
       ]
     },
     {
-      "id": "viral_rewrite-follow-builders-2050365216421241152-3",
+      "id": "viral_rewrite-follow-builders-2061572602888589807-3",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
-      "subSource": "Garry Tan",
-      "baseId": "follow-builders-2050365216421241152",
-      "title": "Garry Tan: How to drive the billionaires out and ruin the California tax base in one fell swoop: propose asset seizure m",
+      "subSource": "Thibault Sottiaux",
+      "baseId": "follow-builders-2061572602888589807",
+      "title": "Thibault Sottiaux: Should we rename Codex to ChadGPT?",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "How to drive the billionaires out and ruin the California tax base in one fell swoop: propose asset seizure measures Make it make sense! Middle class taxpayers will take on all the billions in tax revenue lost https://t.co/MMVeHAPwMB",
+      "core": "Should we rename Codex to ChadGPT?",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @garrytan · 596 engagement",
+      "evidence": "Follow Builders · @thsottiaux · 4171 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/garrytan/status/2050365216421241152",
-      "date": "2026-05-02",
+      "url": "https://x.com/thsottiaux/status/2061572602888589807",
+      "date": "2026-06-01",
       "score": 95,
       "grade": "S",
       "priority": "S级选题",
@@ -779,7 +779,7 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "Garry Tan 为什么会刺中企业焦虑",
+          "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
           "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
         },
         {
@@ -788,26 +788,26 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @garrytan · 596 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 4171 engagement"
         }
       ]
     },
     {
-      "id": "viral_rewrite-follow-builders-2050407946438467878-4",
+      "id": "viral_rewrite-follow-builders-2061586272305795355-4",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
-      "subSource": "Nikunj Kothari",
-      "baseId": "follow-builders-2050407946438467878",
-      "title": "Nikunj Kothari: Look Ma, I'm at $36,500 in ARR 💀 https://t.co/mdj702sZyg https://t.co/Y3r0hLiL5g",
+      "subSource": "Peter Yang",
+      "baseId": "follow-builders-2061586272305795355",
+      "title": "Peter Yang: my #1 most used skill lol https://t.co/7nAW7T3vDE",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "Look Ma, I'm at $36,500 in ARR 💀 https://t.co/mdj702sZyg https://t.co/Y3r0hLiL5g",
+      "core": "my #1 most used skill lol https://t.co/7nAW7T3vDE",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @nikunj · 199 engagement",
+      "evidence": "Follow Builders · @petergyang · 248 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/nikunj/status/2050407946438467878",
-      "date": "2026-05-02",
+      "url": "https://x.com/petergyang/status/2061586272305795355",
+      "date": "2026-06-01",
       "score": 95,
       "grade": "S",
       "priority": "S级选题",
@@ -821,7 +821,7 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "Nikunj Kothari 为什么会刺中企业焦虑",
+          "title": "Peter Yang 为什么会刺中企业焦虑",
           "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
         },
         {
@@ -830,26 +830,26 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @nikunj · 199 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @petergyang · 248 engagement"
         }
       ]
     },
     {
-      "id": "viral_rewrite-follow-builders-2050384648119734683-5",
+      "id": "viral_rewrite-follow-builders-2061545635141361687-5",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
-      "subSource": "Peter Steinberger",
-      "baseId": "follow-builders-2050384648119734683",
-      "title": "Peter Steinberger: told codex I had to pay up to make @xai work again. https://t.co/GXglxd8paK",
+      "subSource": "Thariq",
+      "baseId": "follow-builders-2061545635141361687",
+      "title": "Thariq: gist for the full prompt here: https://t.co/L0ffBeU1ua",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "told codex I had to pay up to make @xai work again. https://t.co/GXglxd8paK",
+      "core": "gist for the full prompt here: https://t.co/L0ffBeU1ua",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @steipete · 469 engagement",
+      "evidence": "Follow Builders · @trq212 · 458 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/steipete/status/2050384648119734683",
-      "date": "2026-05-02",
+      "url": "https://x.com/trq212/status/2061545635141361687",
+      "date": "2026-06-01",
       "score": 95,
       "grade": "S",
       "priority": "S级选题",
@@ -863,7 +863,7 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "Peter Steinberger 为什么会刺中企业焦虑",
+          "title": "Thariq 为什么会刺中企业焦虑",
           "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
         },
         {
@@ -872,7 +872,7 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @steipete · 469 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @trq212 · 458 engagement"
         }
       ]
     }
