@@ -2,13 +2,13 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V1.1.1",
     "date": "2026-06-03",
-    "generatedAt": "2026-06-03T04:02:57.056Z",
+    "generatedAt": "2026-06-03T05:33:31.213Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
     "sources": {
       "raw_pool_pitch": 5,
-      "industry_chain": 4,
+      "industry_chain": 5,
       "builders": 5,
       "viral_rewrite": 5
     }
@@ -289,7 +289,91 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "industry_chain-hn-48374466-2",
+      "id": "industry_chain-google-ai-i-o-2026-welcome-to-the-agentic-gemini-era-2",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Google AI",
+      "baseId": "google-ai-i-o-2026-welcome-to-the-agentic-gemini-era",
+      "title": "I/O 2026: Welcome to the agentic Gemini era",
+      "type": "official",
+      "audience": "AI 行业从业者 / 投资人",
+      "core": "Google AI 官方博客：I/O 2026: Welcome to the agentic Gemini era",
+      "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
+      "evidence": "Google AI",
+      "source": "Google AI",
+      "url": "https://blog.google/technology/ai/",
+      "date": "2026-06-03",
+      "score": 85,
+      "grade": "B",
+      "priority": "优先观察",
+      "scoreBreakdown": {
+        "conflict": 21,
+        "roleChange": 17,
+        "counterIntuit": 13,
+        "storyHook": 13,
+        "insight": 13,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "从 I/O 2026 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Google AI"
+        },
+        {
+          "title": "I/O 2026 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-deepmind-explore-our-next-generation-ai-systems-3",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "DeepMind",
+      "baseId": "deepmind-explore-our-next-generation-ai-systems",
+      "title": "Explore our next generation AI systems",
+      "type": "official",
+      "audience": "AI 行业从业者 / 投资人",
+      "core": "DeepMind 官方博客：Explore our next generation AI systems",
+      "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
+      "evidence": "DeepMind",
+      "source": "DeepMind",
+      "url": "https://deepmind.google/blog/",
+      "date": "2026-06-03",
+      "score": 85,
+      "grade": "B",
+      "priority": "优先观察",
+      "scoreBreakdown": {
+        "conflict": 21,
+        "roleChange": 17,
+        "counterIntuit": 13,
+        "storyHook": 13,
+        "insight": 13,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "从 Explore our next generation AI sys 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：DeepMind"
+        },
+        {
+          "title": "Explore our next generation AI sys 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-hn-48374466-4",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
       "sourceDesc": "arXiv / HN / 官方博客",
@@ -300,7 +384,7 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "https:&#x2F;&#x2F;microsoft.ai&#x2F;models&#x2F;mai-code-1-flash&#x2F; https:&#x2F;&#x2F;microsoft.ai&#x2F;pdf&#x2F;MAI-Code-1-Flash-Model-Card.PDF Launching seven new MAI models: https:&#x2F;&#x2F;microsoft.ai&#x2F;news",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 419 points · EvanZhouDev",
+      "evidence": "Hacker News · 432 points · EvanZhouDev",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48374466",
       "date": "2026-06-02",
@@ -318,7 +402,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 MAI-Code-1-Flash 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 419 points · EvanZhouDev"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 432 points · EvanZhouDev"
         },
         {
           "title": "MAI-Code-1-Flash 会先影响谁的采购单",
@@ -331,7 +415,7 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "industry_chain-hn-48377761-3",
+      "id": "industry_chain-hn-48377761-5",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
       "sourceDesc": "arXiv / HN / 官方博客",
@@ -342,7 +426,7 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "https:&#x2F;&#x2F;law.stanford.edu&#x2F;wp-content&#x2F;uploads&#x2F;2026&#x2F;06&#x2F;salinas_...",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 129 points · berlianta",
+      "evidence": "Hacker News · 158 points · berlianta",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48377761",
       "date": "2026-06-02",
@@ -360,52 +444,10 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 AI outperforms law professors in S 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 129 points · berlianta"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 158 points · berlianta"
         },
         {
           "title": "AI outperforms law professors in S 会先影响谁的采购单",
-          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-        },
-        {
-          "title": "这不是技术升级，而是责任边界重画",
-          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
-        }
-      ]
-    },
-    {
-      "id": "industry_chain-hn-48369863-4",
-      "sourceId": "industry_chain",
-      "sourceName": "产业链分析",
-      "sourceDesc": "arXiv / HN / 官方博客",
-      "subSource": "Hacker News",
-      "baseId": "hn-48369863",
-      "title": "Expanding Project Glasswing",
-      "type": "discussion",
-      "audience": "AI 从业者 / 技术决策者",
-      "core": "https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;06&#x2F;02&#x2F;anthropic-scales-claude-my...",
-      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 163 points · surprisetalk",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48369863",
-      "date": "2026-06-02",
-      "score": 78,
-      "grade": "B",
-      "priority": "候选",
-      "scoreBreakdown": {
-        "conflict": 20,
-        "roleChange": 16,
-        "counterIntuit": 12,
-        "storyHook": 12,
-        "insight": 12,
-        "evidence": 8
-      },
-      "angles": [
-        {
-          "title": "从 Expanding Project Glasswing 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 163 points · surprisetalk"
-        },
-        {
-          "title": "Expanding Project Glasswing 会先影响谁的采购单",
           "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
         },
         {
@@ -1090,7 +1132,91 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "industry_chain-hn-48374466-2",
+        "id": "industry_chain-google-ai-i-o-2026-welcome-to-the-agentic-gemini-era-2",
+        "sourceId": "industry_chain",
+        "sourceName": "产业链分析",
+        "sourceDesc": "arXiv / HN / 官方博客",
+        "subSource": "Google AI",
+        "baseId": "google-ai-i-o-2026-welcome-to-the-agentic-gemini-era",
+        "title": "I/O 2026: Welcome to the agentic Gemini era",
+        "type": "official",
+        "audience": "AI 行业从业者 / 投资人",
+        "core": "Google AI 官方博客：I/O 2026: Welcome to the agentic Gemini era",
+        "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
+        "evidence": "Google AI",
+        "source": "Google AI",
+        "url": "https://blog.google/technology/ai/",
+        "date": "2026-06-03",
+        "score": 85,
+        "grade": "B",
+        "priority": "优先观察",
+        "scoreBreakdown": {
+          "conflict": 21,
+          "roleChange": 17,
+          "counterIntuit": 13,
+          "storyHook": 13,
+          "insight": 13,
+          "evidence": 9
+        },
+        "angles": [
+          {
+            "title": "从 I/O 2026 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Google AI"
+          },
+          {
+            "title": "I/O 2026 会先影响谁的采购单",
+            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+          },
+          {
+            "title": "这不是技术升级，而是责任边界重画",
+            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
+          }
+        ]
+      },
+      {
+        "id": "industry_chain-deepmind-explore-our-next-generation-ai-systems-3",
+        "sourceId": "industry_chain",
+        "sourceName": "产业链分析",
+        "sourceDesc": "arXiv / HN / 官方博客",
+        "subSource": "DeepMind",
+        "baseId": "deepmind-explore-our-next-generation-ai-systems",
+        "title": "Explore our next generation AI systems",
+        "type": "official",
+        "audience": "AI 行业从业者 / 投资人",
+        "core": "DeepMind 官方博客：Explore our next generation AI systems",
+        "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
+        "evidence": "DeepMind",
+        "source": "DeepMind",
+        "url": "https://deepmind.google/blog/",
+        "date": "2026-06-03",
+        "score": 85,
+        "grade": "B",
+        "priority": "优先观察",
+        "scoreBreakdown": {
+          "conflict": 21,
+          "roleChange": 17,
+          "counterIntuit": 13,
+          "storyHook": 13,
+          "insight": 13,
+          "evidence": 9
+        },
+        "angles": [
+          {
+            "title": "从 Explore our next generation AI sys 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：DeepMind"
+          },
+          {
+            "title": "Explore our next generation AI sys 会先影响谁的采购单",
+            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+          },
+          {
+            "title": "这不是技术升级，而是责任边界重画",
+            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
+          }
+        ]
+      },
+      {
+        "id": "industry_chain-hn-48374466-4",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
         "sourceDesc": "arXiv / HN / 官方博客",
@@ -1101,7 +1227,7 @@ window.WaveSightTopicCenter = {
         "audience": "AI 从业者 / 技术决策者",
         "core": "https:&#x2F;&#x2F;microsoft.ai&#x2F;models&#x2F;mai-code-1-flash&#x2F; https:&#x2F;&#x2F;microsoft.ai&#x2F;pdf&#x2F;MAI-Code-1-Flash-Model-Card.PDF Launching seven new MAI models: https:&#x2F;&#x2F;microsoft.ai&#x2F;news",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 419 points · EvanZhouDev",
+        "evidence": "Hacker News · 432 points · EvanZhouDev",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48374466",
         "date": "2026-06-02",
@@ -1119,7 +1245,7 @@ window.WaveSightTopicCenter = {
         "angles": [
           {
             "title": "从 MAI-Code-1-Flash 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 419 points · EvanZhouDev"
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 432 points · EvanZhouDev"
           },
           {
             "title": "MAI-Code-1-Flash 会先影响谁的采购单",
@@ -1132,7 +1258,7 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "industry_chain-hn-48377761-3",
+        "id": "industry_chain-hn-48377761-5",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
         "sourceDesc": "arXiv / HN / 官方博客",
@@ -1143,7 +1269,7 @@ window.WaveSightTopicCenter = {
         "audience": "AI 从业者 / 技术决策者",
         "core": "https:&#x2F;&#x2F;law.stanford.edu&#x2F;wp-content&#x2F;uploads&#x2F;2026&#x2F;06&#x2F;salinas_...",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 129 points · berlianta",
+        "evidence": "Hacker News · 158 points · berlianta",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48377761",
         "date": "2026-06-02",
@@ -1161,52 +1287,10 @@ window.WaveSightTopicCenter = {
         "angles": [
           {
             "title": "从 AI outperforms law professors in S 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 129 points · berlianta"
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 158 points · berlianta"
           },
           {
             "title": "AI outperforms law professors in S 会先影响谁的采购单",
-            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-          },
-          {
-            "title": "这不是技术升级，而是责任边界重画",
-            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
-          }
-        ]
-      },
-      {
-        "id": "industry_chain-hn-48369863-4",
-        "sourceId": "industry_chain",
-        "sourceName": "产业链分析",
-        "sourceDesc": "arXiv / HN / 官方博客",
-        "subSource": "Hacker News",
-        "baseId": "hn-48369863",
-        "title": "Expanding Project Glasswing",
-        "type": "discussion",
-        "audience": "AI 从业者 / 技术决策者",
-        "core": "https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;06&#x2F;02&#x2F;anthropic-scales-claude-my...",
-        "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 163 points · surprisetalk",
-        "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=48369863",
-        "date": "2026-06-02",
-        "score": 78,
-        "grade": "B",
-        "priority": "候选",
-        "scoreBreakdown": {
-          "conflict": 20,
-          "roleChange": 16,
-          "counterIntuit": 12,
-          "storyHook": 12,
-          "insight": 12,
-          "evidence": 8
-        },
-        "angles": [
-          {
-            "title": "从 Expanding Project Glasswing 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 163 points · surprisetalk"
-          },
-          {
-            "title": "Expanding Project Glasswing 会先影响谁的采购单",
             "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
           },
           {

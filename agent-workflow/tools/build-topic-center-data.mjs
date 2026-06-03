@@ -351,6 +351,70 @@ function hasIndustryRelevance(text) {
   return /enterprise|deploy|startup|funding|revenue|acquisition|partner|market|business|customer|investment|regulation|policy|launch|product|competition|adoption|deployment|study|report|analysis|impact|cost|企业|部署|市场|融资|收购|监管|客户|供应商|预算|采购|生态|商业化|影响|报告|研究/iu.test(text);
 }
 
+async function fetchNewsApi(date) {
+  const results = [];
+  const apiKey = process.env.NEWSAPI_KEY;
+  if (apiKey) {
+    const url = `https://newsapi.org/v2/everything?q=AI+enterprise+OR+AI+business&language=en&sortBy=publishedAt&pageSize=5&apiKey=${apiKey}`;
+    const data = await fetchJson(url);
+    if (data?.articles?.length) {
+      data.articles.slice(0, 5).forEach((article, index) => {
+        const title = stripHtml(article.title || "").slice(0, 120);
+        if (!title || !hasAiSignal(title)) return;
+        results.push({
+          baseId: `newsapi-${slug(title)}`,
+          title,
+          type: "news",
+          audience: "企业决策者 / 投资人",
+          core: stripHtml(article.description || article.title || "").slice(0, 220),
+          relevance: "全球商业新闻，反映AI产业链融资、合作、监管、竞争动态。",
+          evidence: `NewsAPI · ${article.source?.name || "News"} · ${(article.publishedAt || date).slice(0, 10)}`,
+          source: article.source?.name || "Business News",
+          subSource: article.source?.name || "Business News",
+          url: article.url || "",
+          date: (article.publishedAt || date).slice(0, 10),
+          score: 83 - index,
+        });
+      });
+    }
+  }
+  return results;
+}
+
+async function fetchOfficialBlogs(date) {
+  const results = [];
+  const blogs = [
+    { name: "OpenAI", url: "https://openai.com/blog", filter: /ai|model|gpt|o3|agent|research|launch|release/siu },
+    { name: "Google AI", url: "https://blog.google/technology/ai/", filter: /ai|model|gemini|agent|research|launch/siu },
+    { name: "Meta AI", url: "https://ai.meta.com/blog/", filter: /ai|model|llama|agent|research/siu },
+    { name: "DeepMind", url: "https://deepmind.google/blog/", filter: /ai|model|agent|research|discover/siu },
+  ];
+
+  for (const blog of blogs) {
+    const html = await fetchText(blog.url);
+    const matches = [...html.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/gu)];
+    matches.slice(0, 3).forEach((match, index) => {
+      const title = stripHtml(match[1]);
+      if (!title || !blog.filter.test(title)) return;
+      results.push({
+        baseId: `${slug(blog.name)}-${slug(title)}`,
+        title: title.slice(0, 120),
+        type: "official",
+        audience: "AI 行业从业者 / 投资人",
+        core: `${blog.name} 官方博客：${title}`,
+        relevance: "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
+        evidence: blog.name,
+        source: blog.name,
+        subSource: blog.name,
+        url: blog.url,
+        date,
+        score: 85 - index,
+      });
+    });
+  }
+  return results;
+}
+
 async function fetchIndustryChain(date) {
   const results = [];
   const papers = await fetchArxiv("cat:cs.AI+AND+abs:agent+AND+abs:(business+OR+enterprise+OR+deploy+OR+market)", 8);
@@ -412,6 +476,14 @@ async function fetchIndustryChain(date) {
       score: 86 - index,
     });
   });
+
+  // Source 2 新增：头部AI公司官方Blog RSS
+  const officialBlogs = await fetchOfficialBlogs(date);
+  results.push(...officialBlogs);
+
+  // Source 2 新增：NewsAPI 全球商业新闻
+  const newsApi = await fetchNewsApi(date);
+  results.push(...newsApi);
 
   return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 5).map((item, index) => toTopic("industry_chain", item, index, date));
 }
