@@ -2,7 +2,7 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V1.1.1",
     "date": "2026-06-03",
-    "generatedAt": "2026-06-03T03:23:10.532Z",
+    "generatedAt": "2026-06-03T03:25:07.104Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
@@ -342,7 +342,7 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "Use your Nvidia GPU's VRAM as swap space on Linux",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 166 points · tanelpoder",
+      "evidence": "Hacker News · 167 points · tanelpoder",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48377404",
       "date": "2026-06-02",
@@ -360,7 +360,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 Use your Nvidia GPU's VRAM as swap 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 166 points · tanelpoder"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 167 points · tanelpoder"
         },
         {
           "title": "Use your Nvidia GPU's VRAM as swap 会先影响谁的采购单",
