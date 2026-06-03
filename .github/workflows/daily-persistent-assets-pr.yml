@@ -170,10 +170,10 @@ jobs:
             --date="${RUN_DATE}" \
             --pass-score="${{ github.event.inputs.pass_score || '80' }}" \
             --max-cycles=3 \
-            --search-limit=70 \
-            --search-path-query-limit=2 \
-            --gdelt-query-limit=8 \
-            --hn-limit=8 \
+            --search-limit=100 \
+            --search-path-query-limit=3 \
+            --gdelt-query-limit=12 \
+            --hn-limit=15 \
             --fetch-timeout-ms=20000 \
             --snapshot-timeout-ms=16000 \
             --monitor-timeout-ms=840000 \

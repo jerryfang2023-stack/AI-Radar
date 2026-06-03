@@ -417,7 +417,7 @@ async function fetchOfficialBlogs(date) {
 
 async function fetchIndustryChain(date) {
   const results = [];
-  const papers = await fetchArxiv("cat:cs.AI+AND+abs:agent+AND+abs:(business+OR+enterprise+OR+deploy+OR+market)", 8);
+  const papers = await fetchArxiv("cat:cs.AI+AND+abs:agent+AND+abs:(business+OR+enterprise+OR+deploy+OR+market)", 12);
   papers.slice(0, 5).forEach((paper, index) => {
     results.push({
       baseId: `arxiv-${slug(paper.title)}`,
@@ -435,11 +435,11 @@ async function fetchIndustryChain(date) {
     });
   });
 
-  const hnItems = await fetchHnItems("topstories", 30);
+  const hnItems = await fetchHnItems("topstories", 50);
   hnItems
     .filter((item) => hasStrongAiTitle(item.title) && hasIndustryRelevance(`${item.title} ${item.text || ""}`)
-      || (/\.ai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
-    .slice(0, 8)
+      || (/\bai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
+    .slice(0, 12)
     .forEach((item, index) => {
       results.push({
         baseId: `hn-${item.id}`,
@@ -491,12 +491,12 @@ async function fetchIndustryChain(date) {
 async function fetchBuilders(date) {
   const results = [];
   const followBuilders = await fetchFollowBuildersFeeds();
-  results.push(...followBuilderBlogItems(followBuilders.blogs, date).slice(0, 3));
-  results.push(...followBuilderTweetItems(followBuilders.x, date).filter((item) => hasBuilderSignal(`${item.title} ${item.core}`)).slice(0, 6));
+  results.push(...followBuilderBlogItems(followBuilders.blogs, date).slice(0, 5));
+  results.push(...followBuilderTweetItems(followBuilders.x, date).filter((item) => hasBuilderSignal(`${item.title} ${item.core}`)).slice(0, 8));
 
-  const repoSearch = await fetchJson("https://api.github.com/search/repositories?q=topic:llm+OR+topic:ai-agent+OR+topic:artificial-intelligence&sort=updated&order=desc&per_page=8");
+  const repoSearch = await fetchJson("https://api.github.com/search/repositories?q=topic:llm+OR+topic:ai-agent+OR+topic:artificial-intelligence&sort=updated&order=desc&per_page=15");
   if (Array.isArray(repoSearch?.items)) {
-    repoSearch.items.slice(0, 5).forEach((repo) => {
+    repoSearch.items.slice(0, 8).forEach((repo) => {
       results.push({
         baseId: `github-api-${repo.full_name}`,
         title: `${repo.full_name}: ${repo.description || "AI repository"}`.slice(0, 120),
@@ -515,7 +515,7 @@ async function fetchBuilders(date) {
   }
 
   const trendingHtml = await fetchText("https://github.com/trending?since=daily");
-  trendingHtml.split("<article").slice(1, 12).forEach((block) => {
+  trendingHtml.split("<article").slice(1, 18).forEach((block) => {
     const href = block.match(/href=["']\/([^\/"]+\/[^\/"]+?)["']/u)?.[1];
     const desc = stripHtml(block.match(/<p[^>]*>([\s\S]*?)<\/p>/u)?.[1]);
     const stars = Number((block.match(/(\d[\d,]*)\s+stars/iu)?.[1] || "0").replace(/,/gu, ""));
@@ -537,10 +537,10 @@ async function fetchBuilders(date) {
     });
   });
 
-  const showItems = await fetchHnItems("showstories", 25);
+  const showItems = await fetchHnItems("showstories", 35);
   showItems
     .filter((item) => hasBuilderSignal(`${item.title} ${item.text || ""}`))
-    .slice(0, 10)
+    .slice(0, 15)
     .forEach((item, index) => {
       results.push({
         baseId: `showhn-${item.id}`,
@@ -589,7 +589,7 @@ async function fetchBuilders(date) {
 async function fetchViralRewrites(date) {
   const results = [];
   const followBuilders = await fetchFollowBuildersFeeds();
-  results.push(...followBuilderTweetItems(followBuilders.x, date).slice(0, 8).map((item) => ({
+  results.push(...followBuilderTweetItems(followBuilders.x, date).slice(0, 12).map((item) => ({
     ...item,
     type: "builder-viewpoint",
     audience: "企业老板 / 媒体编辑",
@@ -597,10 +597,10 @@ async function fetchViralRewrites(date) {
     score: Math.min(95, item.score + 2),
   })));
 
-  const topItems = await fetchHnItems("topstories", 35);
+  const topItems = await fetchHnItems("topstories", 50);
   topItems
-    .filter((item) => hasStrongAiTitle(item.title) || (/\.ai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
-    .slice(0, 8)
+    .filter((item) => hasStrongAiTitle(item.title) || (/\bai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
+    .slice(0, 12)
     .forEach((item, index) => {
       results.push({
         baseId: `viral-hn-${item.id}`,
@@ -618,7 +618,7 @@ async function fetchViralRewrites(date) {
       });
     });
 
-  const papers = await fetchArxiv("cat:cs.AI+AND+abs:(agent+OR+LLM+OR+robot+OR+safety)", 8);
+  const papers = await fetchArxiv("cat:cs.AI+AND+abs:(agent+OR+LLM+OR+robot+OR+safety)", 12);
   papers.slice(0, 5).forEach((paper, index) => {
     results.push({
       baseId: `viral-arxiv-${slug(paper.title)}`,
