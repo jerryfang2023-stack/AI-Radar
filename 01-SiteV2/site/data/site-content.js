@@ -1,10 +1,10 @@
 window.WaveSightContent = {
   "meta": {
-    "date": "2026.06.04",
+    "date": "2026.06.02",
     "sourceLabel": "Generated from 01-SiteV2/content (8 dates)",
     "brand": "观澜AI",
     "version": "V2.2.1",
-    "generatedAt": "2026-06-03T02:03:50.000Z",
+    "generatedAt": "2026-06-02T08:39:10.179Z",
     "contentRoot": "01-SiteV2/content"
   },
   "tagTaxonomy": [
@@ -23399,60 +23399,352 @@ window.WaveSightContent = {
     }
   ],
   "daily": {
-    "id": "daily-2026-06-04",
-    "slug": "daily-2026-06-04",
-    "title": "测试：AI Agent 重新定义企业自动化边界",
+    "id": "daily-2026-06-02",
+    "slug": "daily-2026-06-02",
+    "title": "创意团队缺的不是灵感，是能留下来的上下文",
     "issue": "",
     "period": "",
     "contentType": "daily_observation",
-    "judgment": "企业级 AI Agent 正在从「问答工具」走向「流程执行者」",
-    "dek": "从对话到交易，Agent 的边界在扩展",
+    "judgment": "创意公司最怕的，不一定是想不出点子。",
+    "dek": "创意公司最怕的，不一定是想不出点子。",
     "summary": [
-      "企业级 AI Agent 正在从「问答工具」走向「流程执行者」，这个转变比大多数人想象的要快。",
-      "Salesforce 最新发布的 Agentforce 2.0 展示了 Agent 从回答问题到执行完整业务流程的跃迁。"
+      "创意公司最怕的，不一定是想不出点子。",
+      "更常见的麻烦是：每接一个新 pitch，团队又要重新翻客户资料、找品牌历史、对齐语气、解释过去为什么否掉某个方向。几个人开了几轮会，产出看起来是在写方案，实际上大量时间花在把上下文重新拼起来。",
+      "First Concepts 这笔 100 万美元 pre-seed 融资，刺到的就是这件小事。Tech.eu 3 月 17 日报道，这家伦敦创业公司成立不到 9 个月，由 Arāya Ventures 和 Antler 领投，投资方还包括来自 Havas、We Are Social、UNKNOWN、YunoJuno 等创意和营销行业的人。它要做的不是一个更会出图、写文案或生成灵感的工具，而是面向早期创意工作的 AI workspace。"
     ],
     "sections": [
       {
-        "title": "从问答到执行，Agent 跨越了什么",
-        "body": "过去一年，AI Agent 的进化路径可以用一句话概括：从帮你查东西，到帮你把事情做了。\n\nSalesforce 的 Agentforce 2.0 的核心变化不是更好的推理能力，而是它可以直接操作 CRM 系统中的业务流程——创建订单、更新客户状态、触发审批流。这在之前是需要人工操作的。"
+        "title": "创意工作最贵的是反复对齐",
+        "body": "创意 pitch 的工作，并不只是从零想一个新点子。\n\n客户过去做过什么，品牌能不能接受某种表达，上一轮为什么没通过，某个创意总监喜欢怎样的节奏，客户内部谁更看重增长、谁更在意风险，这些东西往往散在会议记录、聊天记录、文档、设计稿和人的脑子里。\n\nAI 如果只负责生成，它会让第一版东西更快出现。但如果项目记忆没有留下，团队还是要一遍遍解释：为什么这个方向不合适，为什么那个视觉太像旧项目，为什么客户口中的“年轻化”不是简单换个潮流词。\n\nFirst Concepts 的产品说法里，关键不是“使用领先 AI 模型”，而是它试图用 shared context 和 taste framework 去协调这些模型。它还提到三个组件：学习个人和品牌偏好的 Creative DNA engine，把项目语境当作中心信息源的统一界面，以及连接创意工具、保持输出一致性的 tool-agnostic infrastructure。\n\n这些词有创业公司早期叙事的味道，但背后的经营问题很实在：创意团队想减少的，不只是写第一稿的时间，而是每个项目重新建立判断标准的时间。"
       },
       {
-        "title": "为什么这次不一样",
-        "body": "关键在于 Agent 不再只是调用 LLM，而是开始接入企业级 SaaS 的 API 层。\n\n当 Agent 可以创建 Salesforce 的 Opportunity 记录、在 ServiceNow 中开单、在 Workday 中更新员工信息时，它就不再是 Copilot，而是真正的数字员工。"
+        "title": "“品味”开始被当成工作资产",
+        "body": "这类产品最容易被误读成“AI 替代创意人”。\n\n更准确的读法是：创意团队开始尝试把以前靠人传人的经验，变成团队可调用的工作资产。\n\n过去，客户偏好、品牌边界和审美判断经常挂在资深创意、客户经理或创始人身上。新人加入项目，要靠问人、看旧稿、猜语气，才能慢慢接近团队标准。AI 工具越多，这个问题不一定变小，反而可能变大：每个人都能生成很多版本，但如果没有共同参照，版本越多，筛选和对齐越累。\n\nFirst Concepts 说自己要把 fragile and ephemeral creative context 变成 structured, compounding asset。这个说法不必照单全收，但它指向一个变化：创意服务的竞争，可能不只看谁更会产出点子，还要看谁能把客户理解、品牌记忆和团队标准留下来。\n\n这对创意公司、品牌团队和营销服务商都不小。因为过去很多项目利润，就是被反复沟通、反复找资料、反复对齐消耗掉的。AI 如果只能生成更多内容，可能只是把拥堵从创作环节转移到筛选环节；如果它能减少重复对齐，才更接近经营价值。"
+      },
+      {
+        "title": "这还不是被验证的操作系统",
+        "body": "First Concepts 现在仍是很早期的公司。100 万美元 pre-seed 融资、成立不到 9 个月，说明它拿到了行业投资人的兴趣，不说明它已经改变了创意行业。\n\n公开材料也没有给出客户数量、收入、留存或具体项目效果。它能不能真的学到“品味”，能不能在不同客户、不同团队、不同工具之间保持稳定，能不能避免把创意判断压扁成模板，都还没有被证明。\n\n但这条新闻仍然值得写，因为它把 AI 创意工具的竞争从“生成什么”推到了“记住什么”。\n\n对老板来说，买一个能生成海报、脚本、提案的工具并不难。难的是判断：这次项目留下来的客户理解，下一次能不能复用；这次被否掉的方向，团队以后能不能少走一遍；资深员工的经验，能不能进入系统，而不是只留在几个人脑子里。\n\n如果答案是否定的，AI 只是让团队更快地产生更多半成品。\n\n如果答案是肯定的，创意公司的软件预算就不再只是买生成能力，而是在买一套能让客户理解、品牌偏好和团队标准接力的工作记忆。First Concepts 这笔钱不大，但它提醒市场：创意工作里的 AI，下一步可能不只是帮人想点子，而是帮团队少忘一次。"
+      },
+      {
+        "title": "相关原文",
+        "body": "- [First Concepts raises $1M to develop AI-native OS for creative work - Tech.eu](https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/)"
       }
     ],
-    "homeTitle": "AI Agent 重新定义企业自动化边界",
-    "homeSummary": "Salesforce Agentforce 2.0 展示了从对话到交易的能力跃迁。",
+    "homeTitle": "创意团队缺的不是灵感，是能留下来的上下文",
+    "homeSummary": "First Concepts 获得 100 万美元 pre-seed 融资，做的是面向早期创意工作的 AI workspace。\n\n这条新闻刺到的不是生成能力，而是创意团队每次做 pitch 都要重建客户语境、品牌偏好和审美判断。",
     "homeCards": [
       {
-        "label": "关键变化",
-        "title": "从Copilot到数字员工",
-        "body": "Agent不再只是提建议，而是可以直接操作用户的业务流程。这是从工具到角色的转变。"
+        "label": "旧成本",
+        "title": "每次重新对齐",
+        "body": "客户资料、品牌历史、过往否决理由和团队偏好常常散在不同工具和人的脑子里。"
       },
       {
-        "label": "市场信号",
-        "title": "SaaS API 成为Agent基建",
-        "body": "CRM、ITSM、HCM等系统的API正在成为Agent的操作系统，而非LLM本身。"
+        "label": "新资产",
+        "title": "标准能否留下来",
+        "body": "First Concepts 想把创意语境和判断标准做成团队可复用的工作记忆。"
       },
       {
-        "label": "竞争格局",
-        "title": "Salesforce vs ServiceNow vs Workday",
-        "body": "三大企业SaaS厂商都在推出Agent层，但切入点各不相同。Salesforce押注销售场景，ServiceNow押注IT运维。"
+        "label": "真问题",
+        "title": "少生成，少重来",
+        "body": "创意 AI 的经营价值，不只是更快出稿，而是让团队少重复一次对齐。"
       }
     ],
     "columnPage": {
-      "title": "测试：AI Agent 重新定义企业自动化边界",
-      "thesis": "企业级 AI Agent 正在从「问答工具」走向「流程执行者」",
-      "body": "企业级 AI Agent 正在从「问答工具」走向「流程执行者」，这个转变比大多数人想象的要快。",
-      "impact": "企业级采用仍受制于安全合规和 Agent 可靠性验证。"
+      "title": "创意团队缺的不是灵感，是能留下来的上下文",
+      "thesis": "First Concepts 的融资提醒市场：创意 AI 的竞争不只在生成内容，也在客户语境、品牌偏好和团队标准能不能留下来。",
+      "body": "创意公司做 pitch 时，很多时间不是花在想点子，而是花在重新找资料、解释客户偏好、对齐品牌边界和复盘旧方案。",
+      "impact": "First Concepts 仍是早期公司，100 万美元融资不能说明它已经跑通市场。但它把一个真实问题摆到台前：AI 生成越容易，团队越需要一套能记住判断的工作层。",
+      "note": "如果客户语境不能复用，AI 只会让团队更快地产生更多半成品。",
+      "keywords": [
+        "First Concepts",
+        "创意工作流",
+        "AI workspace",
+        "品牌语境",
+        "创意团队",
+        "Pre-seed"
+      ],
+      "strength": "中",
+      "state": "融资、产品定位和团队背景来自公开报道；客户数量、收入、留存和具体项目效果未披露。",
+      "trendTitle": "",
+      "trendBody": "",
+      "watchItems": [],
+      "riskItems": []
     },
     "points": [
-      "Agent从建议到执行是质的转变",
-      "SaaS API层成为Agent的OS",
-      "三大厂商切入点不同"
+      "创意公司最怕的，不一定是想不出点子。"
     ],
-    "risk": "企业级采用仍受制于安全合规和 Agent 可靠性验证。",
-    "calibration": [],
+    "risk": "客户采用、预算归属和部署周期仍需继续观察。",
+    "calibration": [
+      {
+        "id": "OPN-FB-20260602-05",
+        "slug": "anysearch-首席执行官pathpilot",
+        "title": "Anysearch：首席执行官PathPilot | PathPilot的AI财务运营",
+        "date": "2026-06-02",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-02--frontier-opinion--anysearch-victor-laguna.md",
+        "sourceUrl": "https://linkedin.com/in/vlaguna",
+        "originalDate": "",
+        "speakerLine": "Anysearch",
+        "originalView": "CEO PathPilot (YC S24) | AI Financial Operations Co-Founder & CTO at PathPilot Founder & CEO at PathPilot (YC S24) Financial Institutions spend millions scaling… ### Co-Founder & CTO at PathPilot (Current) Department: Engineering and Technical Level: Founder PathPilot Agents is a Software Development company. PathPilot is an AI-powered customer experience platform that extracts insights from session replays. PathPilot Agents employs 5 people, founded in 2024. Headquartered in San Jose, California, United States, with presence in Ecuador. Has $3.9M in total funding, with 4 prior funding rounds. Welcome, Cashea! This month, we’ve added a new client: Cashea , the consumer financial platform lead in Venezuela. They are growing rapidly across LATAM and came to us with a very specific challenge. Their operations had bottlenecks and were looking to make their teams more efficient. That has now changed thanks to our AI agents, which help the team 10x their efficiency. If you’re facing a similar situation, let’s talk. Book a 演示 🙌🏼 #pathpilot #lendingtech #collections #fintech #latam #cashea is not a matter of effort; it is an . In a region where both volume and complexity are exploding simultaneously, attempting to scale using manual processes becomes unsustainable. That is precisely what we are solving at PathPilot: AI agents that handle onboarding, customer support, and debt collection consistently, auditably, and at scale preventing errors before escalate into major problems. #lending #latam # Fascinating data from Garry Tan —while software engineering already drives most AI",
+        "originalTranslation": "首席执行官PathPilot (YC S24) | PathPilot的AI财务运营联合创始人兼首席技术官PathPilot的创始人兼首席执行官(YC S24)金融机构花费数百万美元进行扩展…… # # # PathPilot的联合创始人兼首席技术官（当前）部门：工程和技术级别：创始人PathPilot Agents是一家软件开发公司。PathPilot是一个基于AI的客户体验平台，可从会话重播中提取见解。PathPilot Agents拥有5名员工，成立于2024年。 总部位于美国加利福尼亚州圣何塞，在厄瓜多尔设有办事处。总资金为$ 390万，之前有4轮融资。欢迎， Cashea ！本月，我们增加了一个新客户： Cashea ，委内瑞拉的消费者金融平台负责人。他们在整个拉丁美洲迅速成长，给我们带来了一个非常具体的挑战。他们的运营存在瓶颈，希望提高团队的效率。 现在，由于我们的AIAgent，这种情况已经发生了变化，这有助于团队提高10倍的效率。如果您遇到类似情况，让我们来谈谈。预订演示🙌🏼# pathpilot # lendingtech # collections # fintech # latam # cashea不是一个努力的问题；它是一个。在一个数量和复杂性同时爆炸的区域，尝试使用手动流程进行扩展变得不可持续。 这正是我们在PathPilot正在解决的问题：以一致、可审核的方式大规模处理入职、客户支持和收债的AIAgent，防止错误升级为主要问题。# lending # latam #来自Garry Tan的迷人数据-而软件工程已经驱动了大多数AI",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：customer, agent, agents；包含数据、客户或业务量级线索",
+        "ratingScore": 8,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260602-07",
+        "slug": "anysearch-openai不小心泄露了他们的前30名客户-这些公司处理了1万多",
+        "title": "Anysearch：OpenAI不小心泄露了他们的前30名客户--这些公司处理了1万多",
+        "date": "2026-06-02",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-02--frontier-opinion--anysearch-openai-s-top-30-customers-revealed-a-huge-gap-in-ai-adoption.md",
+        "sourceUrl": "https://www.linkedin.com/posts/lanny-heiz_openai-just-accidentally-leaked-their-top-activity-7382067330974904320-Xs8m",
+        "originalDate": "",
+        "speakerLine": "Anysearch",
+        "originalView": "OpenAI just accidentally leaked their top 30 customers - these companies process 1 TRILLION+ tokens. Meanwhile, sales leaders proudly tell me how they use ChatGPT to research customers. There's a huge gap and it's getting bigger. BACKGROUND 2 days ago during OpenAI's DevDay they launched AgentKit and everyone is talking about how it's killing zapier, n8n and make (it's not). But most people missed the biggest news. They had a slide open with their 30 biggest customers (processing 1 Trillion tokens) Yes, we can talk about how OpenAI doesn't care about privacy - but we already know that... The takeaway is that the list was not full of fancy new AI companies. It's mostly big enterprises - Duolingo (Nr 1. Spot) - Salesforce (#4) - Indeed (#3) These aren't AI companies. They're companies 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 by AI. Salesforce announced that they fired 4000 Customer Support agents - \"because they need fewer humans because of AI\" If even the REALLY big corporations are so heavily using AI to make their processes more efficent, there's one thing that worries me. The Gap between these companies - and the ones that aren't doing it. I see it at least 1x a day during a sales call. Me: \"How are you using AI right now in your sales?\" Prospect: \"YES! we're using ChatGPT to research prospects and draft emails. It's great and saves us time\" Yes, that makes an individual sales rep more efficient. But it's not really changing how you work. It's just doing the wrong things faster. Meanwhile, the best sales & marketing teams completely shifted their workflow → AI finds leads + qualifies them (no manu",
+        "originalTranslation": "OpenAI不小心泄露了他们的前30名客户--这些公司处理了1万多亿个代币。与此同时，销售主管自豪地告诉我他们如何使用ChatGPT来研究客户。差距很大，而且越来越大。背景2天前，在OpenAI的DevDay期间，他们推出了AgentKit ，每个人都在谈论它是如何杀死zapier、n8n和make的（事实并非如此）。但大多数人错过了最大的新闻。 他们与30个最大的客户（处理了1万亿个代币）进行了交流。是的，我们可以谈谈OpenAI是如何不关心隐私的--但我们已经知道了……要点在于，名单上并没有很多新的AI公司。主要是大型企业- Duolingo （ Nr 1. Spot ） - Salesforce （ # 4 ） - Indeed （ # 3 ）这些都不是AI公司。他们是AI的公司。 Salesforce宣布，他们解雇了4000名客户支持Agent-- “因为AI，他们需要更少的人力”如果即使是真正的大公司也在如此大量地使用AI来提高他们的流程效率，那么有一件事让我感到担忧。这些公司与没有这样做的公司之间的差距。在销售电话中，我每天至少看到1次。我： “你现在在销售中如何使用AI？“潜在客户： “是的！ 我们正在使用ChatGPT来研究潜在客户并起草电子邮件。这很好，节省了我们的时间”是的，这使个人销售代表更有效率。但这并没有真正改变你的工作方式。它只是更快地做错误的事情。与此同时，最优秀的销售和营销团队完全改变了他们的工作流，→AI发现潜在客户+资格认证他们（没有手工",
+        "interpretation": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, customer, token；包含数据、客户或业务量级线索",
+        "ratingScore": 6,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-ai-safety-governance",
+            "name": "AI 安全治理观点",
+            "group": "opinion",
+            "aliases": [
+              "安全",
+              "权限",
+              "治理"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          }
+        ]
+      }
+    ],
     "link": "daily-detail.html"
   },
   "trendReport": {
