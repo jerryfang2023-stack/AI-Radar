@@ -347,6 +347,10 @@ async function fetchHnItems(endpoint, limit = 20) {
   return items.filter((item) => item && item.type === "story" && item.title);
 }
 
+function hasIndustryRelevance(text) {
+  return /enterprise|deploy|startup|funding|revenue|acquisition|partner|market|business|customer|investment|regulation|policy|launch|product|competition|adoption|deployment|study|report|analysis|impact|cost|企业|部署|市场|融资|收购|监管|客户|供应商|预算|采购|生态|商业化|影响|报告|研究/iu.test(text);
+}
+
 async function fetchIndustryChain(date) {
   const results = [];
   const papers = await fetchArxiv("cat:cs.AI+AND+abs:agent+AND+abs:(business+OR+enterprise+OR+deploy+OR+market)", 8);
@@ -369,7 +373,8 @@ async function fetchIndustryChain(date) {
 
   const hnItems = await fetchHnItems("topstories", 30);
   hnItems
-    .filter((item) => hasStrongAiTitle(item.title) || (/\.ai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
+    .filter((item) => hasStrongAiTitle(item.title) && hasIndustryRelevance(`${item.title} ${item.text || ""}`)
+      || (/\.ai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
     .slice(0, 8)
     .forEach((item, index) => {
       results.push({
@@ -572,6 +577,57 @@ function dedupe(items) {
   });
 }
 
+function mergeViewpoints(builders, viralRewrite) {
+  // 跨源去重：按 URL slug 去重
+  const seen = new Set();
+  const allItems = [...builders, ...viralRewrite].filter((item) => {
+    const key = slug(item.url || item.title);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  // 按人物（subSource）分组
+  const groups = {};
+  for (const item of allItems) {
+    const person = item.subSource || item.source || item.title.split(/[:：]/u)[0] || "unknown";
+    if (!groups[person]) groups[person] = [];
+    groups[person].push(item);
+  }
+
+  // 按最高分排序，取前3人
+  const sorted = Object.entries(groups)
+    .map(([person, items]) => {
+      const best = items.sort((a, b) => b.score - a.score)[0];
+      return { person, items, score: best.score, best };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3);
+
+  return sorted.map((group, index) => {
+    const primary = group.best;
+    // 同一个人多条观点 → 合并标题
+    const mergedTitle = group.items.length > 1
+      ? group.person + "：" + group.items.map((item) => {
+          const prefix = group.person + "：";
+          const prefix2 = group.person + ": ";
+          const t = item.title;
+          return t.startsWith(prefix) ? t.slice(prefix.length)
+            : t.startsWith(prefix2) ? t.slice(prefix2.length)
+            : t;
+        }).join(" / ")
+      : primary.title;
+
+    return {
+      ...primary,
+      id: `viewpoint-${slug(group.person)}-${index + 1}`,
+      title: mergedTitle,
+      mergedCount: group.items.length,
+      originalUrls: group.items.map((item) => item.url).filter(Boolean),
+    };
+  });
+}
+
 async function buildTopics(content, date) {
   const [rawPool, industryChain, builders, viralRewrite] = await Promise.all([
     Promise.resolve(rawPoolTopics(content, date)),
@@ -582,6 +638,10 @@ async function buildTopics(content, date) {
   return {
     sources: sourceDefinitions(),
     topics: [...rawPool, ...industryChain, ...builders, ...viralRewrite],
+    rawPool,
+    industryChain,
+    builders,
+    viralRewrite,
   };
 }
 
@@ -589,8 +649,9 @@ async function main() {
   const siteContent = readJson(siteContentPath, {});
   const fallbackDate = text(siteContent.meta?.date).replaceAll(".", "-") || todayStr();
   const date = argValue("date", fallbackDate);
-  const { sources, topics } = await buildTopics(siteContent, date);
+  const { sources, topics, rawPool, industryChain, builders, viralRewrite } = await buildTopics(siteContent, date);
   const counts = Object.fromEntries(sources.map((source) => [source.id, topics.filter((topic) => topic.sourceId === source.id).length]));
+  const viewpoints = mergeViewpoints(builders, viralRewrite);
   const data = {
     meta: {
       version: topicCenterVersion,
@@ -603,6 +664,10 @@ async function main() {
     },
     sources,
     topics,
+    grouped: {
+      events: [...rawPool, ...industryChain],
+      viewpoints,
+    },
   };
 
   writeJson(topicCenterJsonPath, data);
