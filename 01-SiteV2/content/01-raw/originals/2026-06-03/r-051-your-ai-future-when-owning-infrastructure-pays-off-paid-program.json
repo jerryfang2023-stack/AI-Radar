@@ -1,0 +1,260 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-051",
+  "title": "Your AI Future: When Owning Infrastructure Pays Off - Paid Program",
+  "original_url": "https://partners.wsj.com/nvidia/ai-and-automation/your-ai-future-when-owning-infrastructure-pays-off/",
+  "canonical_url": "https://partners.wsj.com/nvidia/ai-and-automation/your-ai-future-when-owning-infrastructure-pays-off",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "",
+  "acquisition_channel": "gdelt",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-03T03:22:50.430Z",
+  "language": "mixed",
+  "full_text": "By Tony Paikeday, Senior Director of Product Marketing, Artificial Intelligence Systems, NVIDIA\nAs businesses race to infuse AI into their customer service operations, supply chains and client experiences, many are encountering an unexpected challenge: escalating capital and operating expenditures. Infrastructure costs can balloon without a clear long-term AI infrastructure strategy optimized for the end-to-end lifecycle of developing and deploying AI applications. Historically many have avoided investing capital in dedicated infrastructure, but now organizations are increasingly starting to realize the benefits of fixed cost infrastructure that helps enable predictable capacity, data sovereignty, protection of intellectual property and, maybe surprisingly, a cost-effective approach to scaling AI.\nDeploying an AI factory allows organizations to control and manage every stage of their AI lifecycle, providing them greater control, security, performance, and long-term value from AI investments.\nFrom Whiteboard Concept to Production Application\nFor those seeking to realize their AI concept in a deployed application, they’ll be presented with the option to build their own AI model powering the app or access the required AI functionality via commercial API-based large language model (LLM) providers. Building and deploying these apps involves distinct phases that repeat in a cyclical manner, responding to evolving operational data, accuracy improvements and client behavior. From pretraining a model to fine-tuning (customizing an existing one) to inference (deployment within an app), each step imposes unique demands on compute, storage and network infrastructure:\nPretraining large foundation models requires massively parallel GPU compute resources.\nFine-tuning adapts these AI models with proprietary data or intellectual property better tailored to an organization’s business, vocabulary, culture and clients.\nInference is the ongoing deployment of AI models into real-world applications, which must meet user-facing speed-of-service and reliability expectations similar to enterprise apps that need to run 24/7.\nThe Tipping Point Between Renting and Owning AI Factories\nFor organizations with steady-state AI workloads—such as continual training of a model (or many different models), recurring fine-tuning and continuous inference at scale—there is a tipping point where owning your “AI factory” is more cost effective than renting it. That tipping point hinges on token generation. Tokens are the smallest data units—such as words or image segments—that AI models process to learn, generate and reason. As organizations increasingly rely on continual model training, fine-tuning and large-scale inference, their cumulative production and consumption of these tokens—the core output measured in AI factories—has exploded, making high-throughput, cost-efficient, in-house compute infrastructure crucial for supporting diverse, data-driven business needs.\nAdditionally, owning infrastructure allows enterprises to better manage security, data sovereignty and compliance. Sensitive data often needs to stay on-premises or within specific geographic regions. By hosting AI infrastructure internally, businesses retain full control over data governance and reduce the risks associated with transferring data to third-party environments. The cost predictability offered by on-premises infrastructure also fosters an environment in which teams can freely experiment and focus on innovation without concerns about unpredictable usage-based expenses. Consider the following scenarios that illustrate when organizations have encountered the tipping point and investment in on-premises infrastructure enabled them to gain a cost advantage over third-party services while ensuring security, performance and scale.\nBy aligning infrastructure with actual AI needs, leaders can drive innovation while maintaining control over cost, performance and sustainability.\nScenario 1: Continuous, Around-the-Clock Enterprise-Scale AI Inference\nThis company has more than 100,000 employees using over 70 generative AI solutions in production. Its large AI workloads generated by employee- and agent-facing processes are driving a significant volume of consumed and produced AI tokens in a 24/7 inference environment. A single NVIDIA DGX™ B200 system with NVIDIA Blackwell GPUs and Intel® Xeon® Processors delivers over 1,000 tokens per second. 1\nA NVIDIA DGX SuperPOD™ , comprising 32 DGX B200 systems, can reliably process close to 6 trillion tokens per month, providing true 24/7 throughput. Enterprises have been observed to process up to 4 billion tokens per day on these AI factories—demonstrating their ability to handle even the heaviest inference workloads while still leaving headroom for additional tasks, such as training or fine-tuning models. A cluster of eight DGX B200 systems with only 50% infrastructure utilization (allowing for additional capacity for other AI workloads) can easily achieve cost parity with enterprise-grade public API services within two years. 2\nA cluster of either NVIDIA DGX B200 system achieves around 1.5 trillion tokens per month on the 400-billion-parameter Llama 4 Maverick model, while a DGX SuperPOD with DGX B200 systems achieves around 6 trillion tokens per month.\nScenario 2: Multiteam AI Cluster Developing and Deploying Many Small to Mid-Sized Language Models\nAnother company manages a portfolio of 50-to-150 actively developed small to mid-sized language models. Data scientists may pretrain one model, fine-tune several others and oversee multiple models in production at any time. Assuming a moderate pace—50 models, each moderately sized at 8B parameters, pretrained twice a year and fine-tuned quarterly—a cluster of eight GPU-driven DGX B200 systems with Intel Xeon processors delivers robust capacity and breaks even with subscribed compute service costs in just over a year. 3\nOnce models move to production, pretraining adjusts to business needs, often monthly or quarterly, pushing cost savings even higher. On-premises AI infrastructure in this scenario delivers high performance, agility and long-term cost efficiency for enterprise-grade AI development and deployment.\nStructuring for AI Success\nAdopting a dedicated AI factory approach marks a strategic evolution for enterprises, shifting from ad-hoc development to a structured, industrialized process. This method emphasizes repeatability, predictable performance, rigorous quality control and economies of scale—the essentials for sustainable growth and innovation. Considering turnkey solutions such as NVIDIA DGX SuperPOD can further streamline deployment and ensure infrastructure is purpose-built to meet the demanding requirements of modern AI workloads, allowing organizations to focus on delivering consistent business value, manufacturing intelligence at scale and achieving lasting competitive advantage in the AI era.\nBuild your AI factory on GPU-driven NVIDIA DGX™ systems with Intel® Xeon® CPUs.\nSources:\nLlama4 Maverick on a single DGX B200 system.\nBased on 8 DGX B200 systems amortized over three years, adding monthly operating costs of storage, power, cooling and data center personnel versus a leading provider of API-based LLM services.\nBased on 8 DGX B200 systems versus leading cloud service provider one year reserved pricing for NVIDIA B200 instances for the same number of GPUs.",
+  "clean_text": "By Tony Paikeday, Senior Director of Product Marketing, Artificial Intelligence Systems, NVIDIA\nAs businesses race to infuse AI into their customer service operations, supply chains and client experiences, many are encountering an unexpected challenge: escalating capital and operating expenditures. Infrastructure costs can balloon without a clear long-term AI infrastructure strategy optimized for the end-to-end lifecycle of developing and deploying AI applications. Historically many have avoided investing capital in dedicated infrastructure, but now organizations are increasingly starting to realize the benefits of fixed cost infrastructure that helps enable predictable capacity, data sovereignty, protection of intellectual property and, maybe surprisingly, a cost-effective approach to scaling AI.\nDeploying an AI factory allows organizations to control and manage every stage of their AI lifecycle, providing them greater control, security, performance, and long-term value from AI investments.\nFrom Whiteboard Concept to Production Application\nFor those seeking to realize their AI concept in a deployed application, they’ll be presented with the option to build their own AI model powering the app or access the required AI functionality via commercial API-based large language model (LLM) providers. Building and deploying these apps involves distinct phases that repeat in a cyclical manner, responding to evolving operational data, accuracy improvements and client behavior. From pretraining a model to fine-tuning (customizing an existing one) to inference (deployment within an app), each step imposes unique demands on compute, storage and network infrastructure:\nPretraining large foundation models requires massively parallel GPU compute resources.\nFine-tuning adapts these AI models with proprietary data or intellectual property better tailored to an organization’s business, vocabulary, culture and clients.\nInference is the ongoing deployment of AI models into real-world applications, which must meet user-facing speed-of-service and reliability expectations similar to enterprise apps that need to run 24/7.\nThe Tipping Point Between Renting and Owning AI Factories\nFor organizations with steady-state AI workloads—such as continual training of a model (or many different models), recurring fine-tuning and continuous inference at scale—there is a tipping point where owning your “AI factory” is more cost effective than renting it. That tipping point hinges on token generation. Tokens are the smallest data units—such as words or image segments—that AI models process to learn, generate and reason. As organizations increasingly rely on continual model training, fine-tuning and large-scale inference, their cumulative production and consumption of these tokens—the core output measured in AI factories—has exploded, making high-throughput, cost-efficient, in-house compute infrastructure crucial for supporting diverse, data-driven business needs.\nAdditionally, owning infrastructure allows enterprises to better manage security, data sovereignty and compliance. Sensitive data often needs to stay on-premises or within specific geographic regions. By hosting AI infrastructure internally, businesses retain full control over data governance and reduce the risks associated with transferring data to third-party environments. The cost predictability offered by on-premises infrastructure also fosters an environment in which teams can freely experiment and focus on innovation without concerns about unpredictable usage-based expenses. Consider the following scenarios that illustrate when organizations have encountered the tipping point and investment in on-premises infrastructure enabled them to gain a cost advantage over third-party services while ensuring security, performance and scale.\nBy aligning infrastructure with actual AI needs, leaders can drive innovation while maintaining control over cost, performance and sustainability.\nScenario 1: Continuous, Around-the-Clock Enterprise-Scale AI Inference\nThis company has more than 100,000 employees using over 70 generative AI solutions in production. Its large AI workloads generated by employee- and agent-facing processes are driving a significant volume of consumed and produced AI tokens in a 24/7 inference environment. A single NVIDIA DGX™ B200 system with NVIDIA Blackwell GPUs and Intel® Xeon® Processors delivers over 1,000 tokens per second. 1\nA NVIDIA DGX SuperPOD™ , comprising 32 DGX B200 systems, can reliably process close to 6 trillion tokens per month, providing true 24/7 throughput. Enterprises have been observed to process up to 4 billion tokens per day on these AI factories—demonstrating their ability to handle even the heaviest inference workloads while still leaving headroom for additional tasks, such as training or fine-tuning models. A cluster of eight DGX B200 systems with only 50% infrastructure utilization (allowing for additional capacity for other AI workloads) can easily achieve cost parity with enterprise-grade public API services within two years. 2\nA cluster of either NVIDIA DGX B200 system achieves around 1.5 trillion tokens per month on the 400-billion-parameter Llama 4 Maverick model, while a DGX SuperPOD with DGX B200 systems achieves around 6 trillion tokens per month.\nScenario 2: Multiteam AI Cluster Developing and Deploying Many Small to Mid-Sized Language Models\nAnother company manages a portfolio of 50-to-150 actively developed small to mid-sized language models. Data scientists may pretrain one model, fine-tune several others and oversee multiple models in production at any time. Assuming a moderate pace—50 models, each moderately sized at 8B parameters, pretrained twice a year and fine-tuned quarterly—a cluster of eight GPU-driven DGX B200 systems with Intel Xeon processors delivers robust capacity and breaks even with subscribed compute service costs in just over a year. 3\nOnce models move to production, pretraining adjusts to business needs, often monthly or quarterly, pushing cost savings even higher. On-premises AI infrastructure in this scenario delivers high performance, agility and long-term cost efficiency for enterprise-grade AI development and deployment.\nStructuring for AI Success\nAdopting a dedicated AI factory approach marks a strategic evolution for enterprises, shifting from ad-hoc development to a structured, industrialized process. This method emphasizes repeatability, predictable performance, rigorous quality control and economies of scale—the essentials for sustainable growth and innovation. Considering turnkey solutions such as NVIDIA DGX SuperPOD can further streamline deployment and ensure infrastructure is purpose-built to meet the demanding requirements of modern AI workloads, allowing organizations to focus on delivering consistent business value, manufacturing intelligence at scale and achieving lasting competitive advantage in the AI era.\nBuild your AI factory on GPU-driven NVIDIA DGX™ systems with Intel® Xeon® CPUs.\nSources:\nLlama4 Maverick on a single DGX B200 system.\nBased on 8 DGX B200 systems amortized over three years, adding monthly operating costs of storage, power, cooling and data center personnel versus a leading provider of API-based LLM services.\nBased on 8 DGX B200 systems versus leading cloud service provider one year reserved pricing for NVIDIA B200 instances for the same number of GPUs.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-03/r-051-your-ai-future-when-owning-infrastructure-pays-off-paid-program.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-03/r-051-your-ai-future-when-owning-infrastructure-pays-off-paid-program.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 7421,
+    "paragraph_count": 25,
+    "sentence_count": 38,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 7421,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "99b499b78c47722f",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "primary_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "831f9ef3c0fe599f",
+  "content_hash": "99b499b78c47722f",
+  "full_text_hash": "99b499b78c47722f",
+  "semantic_hash": "2bd11e0343d697a0",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-03T03:22:50.430Z",
+  "last_seen_at": "2026-06-03T03:22:50.430Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "From cost savings to data sovereignty, see why owning AI infrastructure unlocks long-term value and control for enterprise AI success.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "By Tony Paikeday, Senior Director of Product Marketing, Artificial Intelligence Systems, NVIDIA As businesses race to infuse AI into their customer service operations, supply chains and client experiences, many are encountering an unexpected challenge: escalating capital and operating expenditures.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Infrastructure costs can balloon without a clear long-term AI infrastructure strategy optimized for the end-to-end lifecycle of developing and deploying AI applications.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Historically many have avoided investing capital in dedicated infrastructure, but now organizations are increasingly starting to realize the benefits of fixed cost infrastructure that helps enable predictable capacity, data sovereignty, protection of intellectual property and, maybe surprisingly, a cost-effective approach to scaling AI.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "Deploying an AI factory allows organizations to control and manage every stage of their AI lifecycle, providing them greater control, security, performance, and long-term value from AI investments.",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "From Whiteboard Concept to Production Application For those seeking to realize their AI concept in a deployed application, they’ll be presented with the option to build their own AI model powering the app or access the required AI functionality via commercial API-based large language model (LLM) providers.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Nvidia"
+    ],
+    "products": [
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "制造 / 工业",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "24",
+      "7",
+      "1",
+      "100",
+      "000",
+      "70",
+      "200",
+      "32"
+    ],
+    "quotes": [
+      "AI factory"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "From cost savings to data sovereignty, see why owning AI infrastructure unlocks long-term value and control for enterprise AI success.",
+      "Infrastructure costs can balloon without a clear long-term AI infrastructure strategy optimized for the end-to-end lifecycle of developing and deploying AI applications.",
+      "Historically many have avoided investing capital in dedicated infrastructure, but now organizations are increasingly starting to realize the benefits of fixed cost infrastructure that helps enable predictable capacity, data sovereignty, protection of intellectual property and, maybe surprisingly, a cost-effective approach to scaling AI."
+    ],
+    "case_details": [
+      "By Tony Paikeday, Senior Director of Product Marketing, Artificial Intelligence Systems, NVIDIA As businesses race to infuse AI into their customer service operations, supply chains and client experiences, many are encountering an unexpected challenge: escalating capital and operating expenditures."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": [
+      "Deploying an AI factory allows organizations to control and manage every stage of their AI lifecycle, providing them greater control, security, performance, and long-term value from AI investments."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_funding",
+    "importance_score": 5,
+    "importance_reason": "funding or investment event; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Your AI Future: When Owning Infrastructure Pays Off - Paid Program\n\n- raw_id: R-051\n- original_url: https://partners.wsj.com/nvidia/ai-and-automation/your-ai-future-when-owning-infrastructure-pays-off/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-03T03:22:50.430Z\n\n## clean_text\n\nBy Tony Paikeday, Senior Director of Product Marketing, Artificial Intelligence Systems, NVIDIA\nAs businesses race to infuse AI into their customer service operations, supply chains and client experiences, many are encountering an unexpected challenge: escalating capital and operating expenditures. Infrastructure costs can balloon without a clear long-term AI infrastructure strategy optimized for the end-to-end lifecycle of developing and deploying AI applications. Historically many have avoided investing capital in dedicated infrastructure, but now organizations are increasingly starting to realize the benefits of fixed cost infrastructure that helps enable predictable capacity, data sovereignty, protection of intellectual property and, maybe surprisingly, a cost-effective approach to scaling AI.\nDeploying an AI factory allows organizations to control and manage every stage of their AI lifecycle, providing them greater control, security, performance, and long-term value from AI investments.\nFrom Whiteboard Concept to Production Application\nFor those seeking to realize their AI concept in a deployed application, they’ll be presented with the option to build their own AI model powering the app or access the required AI functionality via commercial API-based large language model (LLM) providers. Building and deploying these apps involves distinct phases that repeat in a cyclical manner, responding to evolving operational data, accuracy improvements and client behavior. From pretraining a model to fine-tuning (customizing an existing one) to inference (deployment within an app), each step imposes unique demands on compute, storage and network infrastructure:\nPretraining large foundation models requires massively parallel GPU compute resources.\nFine-tuning adapts these AI models with proprietary data or intellectual property better tailored to an organization’s business, vocabulary, culture and clients.\nInference is the ongoing deployment of AI models into real-world applications, which must meet user-facing speed-of-service and reliability expectations similar to enterprise apps that need to run 24/7.\nThe Tipping Point Between Renting and Owning AI Factories\nFor organizations with steady-state AI workloads—such as continual training of a model (or many different models), recurring fine-tuning and continuous inference at scale—there is a tipping point where owning your “AI factory” is more cost effective than renting it. That tipping point hinges on token generation. Tokens are the smallest data units—such as words or image segments—that AI models process to learn, generate and reason. As organizations increasingly rely on continual model training, fine-tuning and large-scale inference, their cumulative production and consumption of these tokens—the core output measured in AI factories—has exploded, making high-throughput, cost-efficient, in-house compute infrastructure crucial for supporting diverse, data-driven business needs.\nAdditionally, owning infrastructure allows enterprises to better manage security, data sovereignty and compliance. Sensitive data often needs to stay on-premises or within specific geographic regions. By hosting AI infrastructure internally, businesses retain full control over data governance and reduce the risks associated with transferring data to third-party environments. The cost predictability offered by on-premises infrastructure also fosters an environment in which teams can freely experiment and focus on innovation without concerns about unpredictable usage-based expenses. Consider the following scenarios that illustrate when organizations have encountered the tipping point and investment in on-premises infrastructure enabled them to gain a cost advantage over third-party services while ensuring security, performance and scale.\nBy aligning infrastructure with actual AI needs, leaders can drive innovation while maintaining control over cost, performance and sustainability.\nScenario 1: Continuous, Around-the-Clock Enterprise-Scale AI Inference\nThis company has more than 100,000 employees using over 70 generative AI solutions in production. Its large AI workloads generated by employee- and agent-facing processes are driving a significant volume of consumed and produced AI tokens in a 24/7 inference environment. A single NVIDIA DGX™ B200 system with NVIDIA Blackwell GPUs and Intel® Xeon® Processors delivers over 1,000 tokens per second. 1\nA NVIDIA DGX SuperPOD™ , comprising 32 DGX B200 systems, can reliably process close to 6 trillion tokens per month, providing true 24/7 throughput. Enterprises have been observed to process up to 4 billion tokens per day on these AI factories—demonstrating their ability to handle even the heaviest inference workloads while still leaving headroom for additional tasks, such as training or fine-tuning models. A cluster of eight DGX B200 systems with only 50% infrastructure utilization (allowing for additional capacity for other AI workloads) can easily achieve cost parity with enterprise-grade public API services within two years. 2\nA cluster of either NVIDIA DGX B200 system achieves around 1.5 trillion tokens per month on the 400-billion-parameter Llama 4 Maverick model, while a DGX SuperPOD with DGX B200 systems achieves around 6 trillion tokens per month.\nScenario 2: Multiteam AI Cluster Developing and Deploying Many Small to Mid-Sized Language Models\nAnother company manages a portfolio of 50-to-150 actively developed small to mid-sized language models. Data scientists may pretrain one model, fine-tune several others and oversee multiple models in production at any time. Assuming a moderate pace—50 models, each moderately sized at 8B parameters, pretrained twice a year and fine-tuned quarterly—a cluster of eight GPU-driven DGX B200 systems with Intel Xeon processors delivers robust capacity and breaks even with subscribed compute service costs in just over a year. 3\nOnce models move to production, pretraining adjusts to business needs, often monthly or quarterly, pushing cost savings even higher. On-premises AI infrastructure in this scenario delivers high performance, agility and long-term cost efficiency for enterprise-grade AI development and deployment.\nStructuring for AI Success\nAdopting a dedicated AI factory approach marks a strategic evolution for enterprises, shifting from ad-hoc development to a structured, industrialized process. This method emphasizes repeatability, predictable performance, rigorous quality control and economies of scale—the essentials for sustainable growth and innovation. Considering turnkey solutions such as NVIDIA DGX SuperPOD can further streamline deployment and ensure infrastructure is purpose-built to meet the demanding requirements of modern AI workloads, allowing organizations to focus on delivering consistent business value, manufacturing intelligence at scale and achieving lasting competitive advantage in the AI era.\nBuild your AI factory on GPU-driven NVIDIA DGX™ systems with Intel® Xeon® CPUs.\nSources:\nLlama4 Maverick on a single DGX B200 system.\nBased on 8 DGX B200 systems amortized over three years, adding monthly operating costs of storage, power, cooling and data center personnel versus a leading provider of API-based LLM services.\nBased on 8 DGX B200 systems versus leading cloud service provider one year reserved pricing for NVIDIA B200 instances for the same number of GPUs.\n\n## full_text\n\nBy Tony Paikeday, Senior Director of Product Marketing, Artificial Intelligence Systems, NVIDIA\nAs businesses race to infuse AI into their customer service operations, supply chains and client experiences, many are encountering an unexpected challenge: escalating capital and operating expenditures. Infrastructure costs can balloon without a clear long-term AI infrastructure strategy optimized for the end-to-end lifecycle of developing and deploying AI applications. Historically many have avoided investing capital in dedicated infrastructure, but now organizations are increasingly starting to realize the benefits of fixed cost infrastructure that helps enable predictable capacity, data sovereignty, protection of intellectual property and, maybe surprisingly, a cost-effective approach to scaling AI.\nDeploying an AI factory allows organizations to control and manage every stage of their AI lifecycle, providing them greater control, security, performance, and long-term value from AI investments.\nFrom Whiteboard Concept to Production Application\nFor those seeking to realize their AI concept in a deployed application, they’ll be presented with the option to build their own AI model powering the app or access the required AI functionality via commercial API-based large language model (LLM) providers. Building and deploying these apps involves distinct phases that repeat in a cyclical manner, responding to evolving operational data, accuracy improvements and client behavior. From pretraining a model to fine-tuning (customizing an existing one) to inference (deployment within an app), each step imposes unique demands on compute, storage and network infrastructure:\nPretraining large foundation models requires massively parallel GPU compute resources.\nFine-tuning adapts these AI models with proprietary data or intellectual property better tailored to an organization’s business, vocabulary, culture and clients.\nInference is the ongoing deployment of AI models into real-world applications, which must meet user-facing speed-of-service and reliability expectations similar to enterprise apps that need to run 24/7.\nThe Tipping Point Between Renting and Owning AI Factories\nFor organizations with steady-state AI workloads—such as continual training of a model (or many different models), recurring fine-tuning and continuous inference at scale—there is a tipping point where owning your “AI factory” is more cost effective than renting it. That tipping point hinges on token generation. Tokens are the smallest data units—such as words or image segments—that AI models process to learn, generate and reason. As organizations increasingly rely on continual model training, fine-tuning and large-scale inference, their cumulative production and consumption of these tokens—the core output measured in AI factories—has exploded, making high-throughput, cost-efficient, in-house compute infrastructure crucial for supporting diverse, data-driven business needs.\nAdditionally, owning infrastructure allows enterprises to better manage security, data sovereignty and compliance. Sensitive data often needs to stay on-premises or within specific geographic regions. By hosting AI infrastructure internally, businesses retain full control over data governance and reduce the risks associated with transferring data to third-party environments. The cost predictability offered by on-premises infrastructure also fosters an environment in which teams can freely experiment and focus on innovation without concerns about unpredictable usage-based expenses. Consider the following scenarios that illustrate when organizations have encountered the tipping point and investment in on-premises infrastructure enabled them to gain a cost advantage over third-party services while ensuring security, performance and scale.\nBy aligning infrastructure with actual AI needs, leaders can drive innovation while maintaining control over cost, performance and sustainability.\nScenario 1: Continuous, Around-the-Clock Enterprise-Scale AI Inference\nThis company has more than 100,000 employees using over 70 generative AI solutions in production. Its large AI workloads generated by employee- and agent-facing processes are driving a significant volume of consumed and produced AI tokens in a 24/7 inference environment. A single NVIDIA DGX™ B200 system with NVIDIA Blackwell GPUs and Intel® Xeon® Processors delivers over 1,000 tokens per second. 1\nA NVIDIA DGX SuperPOD™ , comprising 32 DGX B200 systems, can reliably process close to 6 trillion tokens per month, providing true 24/7 throughput. Enterprises have been observed to process up to 4 billion tokens per day on these AI factories—demonstrating their ability to handle even the heaviest inference workloads while still leaving headroom for additional tasks, such as training or fine-tuning models. A cluster of eight DGX B200 systems with only 50% infrastructure utilization (allowing for additional capacity for other AI workloads) can easily achieve cost parity with enterprise-grade public API services within two years. 2\nA cluster of either NVIDIA DGX B200 system achieves around 1.5 trillion tokens per month on the 400-billion-parameter Llama 4 Maverick model, while a DGX SuperPOD with DGX B200 systems achieves around 6 trillion tokens per month.\nScenario 2: Multiteam AI Cluster Developing and Deploying Many Small to Mid-Sized Language Models\nAnother company manages a portfolio of 50-to-150 actively developed small to mid-sized language models. Data scientists may pretrain one model, fine-tune several others and oversee multiple models in production at any time. Assuming a moderate pace—50 models, each moderately sized at 8B parameters, pretrained twice a year and fine-tuned quarterly—a cluster of eight GPU-driven DGX B200 systems with Intel Xeon processors delivers robust capacity and breaks even with subscribed compute service costs in just over a year. 3\nOnce models move to production, pretraining adjusts to business needs, often monthly or quarterly, pushing cost savings even higher. On-premises AI infrastructure in this scenario delivers high performance, agility and long-term cost efficiency for enterprise-grade AI development and deployment.\nStructuring for AI Success\nAdopting a dedicated AI factory approach marks a strategic evolution for enterprises, shifting from ad-hoc development to a structured, industrialized process. This method emphasizes repeatability, predictable performance, rigorous quality control and economies of scale—the essentials for sustainable growth and innovation. Considering turnkey solutions such as NVIDIA DGX SuperPOD can further streamline deployment and ensure infrastructure is purpose-built to meet the demanding requirements of modern AI workloads, allowing organizations to focus on delivering consistent business value, manufacturing intelligence at scale and achieving lasting competitive advantage in the AI era.\nBuild your AI factory on GPU-driven NVIDIA DGX™ systems with Intel® Xeon® CPUs.\nSources:\nLlama4 Maverick on a single DGX B200 system.\nBased on 8 DGX B200 systems amortized over three years, adding monthly operating costs of storage, power, cooling and data center personnel versus a leading provider of API-based LLM services.\nBased on 8 DGX B200 systems versus leading cloud service provider one year reserved pricing for NVIDIA B200 instances for the same number of GPUs.\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 94\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / medium] From cost savings to data sovereignty, see why owning AI infrastructure unlocks long-term value and control for enterprise AI success.\n2. [case_detail / daily_observation, heatmap, case / high] By Tony Paikeday, Senior Director of Product Marketing, Artificial Intelligence Systems, NVIDIA As businesses race to infuse AI into their customer service operations, supply chains and client experiences, many are encountering an unexpected challenge: escalating capital and operating expenditures.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] Infrastructure costs can balloon without a clear long-term AI infrastructure strategy optimized for the end-to-end lifecycle of developing and deploying AI applications.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] Historically many have avoided investing capital in dedicated infrastructure, but now organizations are increasingly starting to realize the benefits of fixed cost infrastructure that helps enable predictable capacity, data sovereignty, protection of intellectual property and, maybe surprisingly, a cost-effective approach to scaling AI.\n5. [supporting_context / daily_observation, heatmap / medium] Deploying an AI factory allows organizations to control and manage every stage of their AI lifecycle, providing them greater control, security, performance, and long-term value from AI investments.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] From Whiteboard Concept to Production Application For those seeking to realize their AI concept in a deployed application, they’ll be presented with the option to build their own AI model powering the app or access the required AI functionality via commercial API-based large language model (LLM) providers.\n"
+}

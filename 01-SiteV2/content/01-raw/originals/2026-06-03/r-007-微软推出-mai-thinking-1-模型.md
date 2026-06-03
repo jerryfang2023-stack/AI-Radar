@@ -1,0 +1,291 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-007
+title: "微软推出 MAI-Thinking-1 模型"
+original_url: "https://microsoft.ai/news/introducing-mai-thinking-1"
+canonical_url: "https://microsoft.ai/news/introducing-mai-thinking-1"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-02T21:14:07.612Z"
+collected_at: 2026-06-03T03:22:50.221Z
+language: mixed
+full_text_hash: 015d0ee181029006
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-03/r-007-微软推出-mai-thinking-1-模型.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-03/r-007-微软推出-mai-thinking-1-模型.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7575,"paragraph_count":36,"sentence_count":60,"boilerplate_hits":0,"symbol_ratio":0.0001,"method":"main"}
+has_full_text: true
+content_length: 7575
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"015d0ee181029006","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软推出 MAI-Thinking-1 模型","discovery_summary":"微软通过其AI官方网站 microsoft.ai 发布了新模型 \"MAI-Thinking-1\"。该消息随链接一同发布，并出现在相关技术社区中。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://microsoft.ai/news/introducing-mai-thinking-1","discovered_at":"2026-06-03T03:17:07.152Z","rank_on_page":120,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0e3e16624bba8dca
+content_hash: 015d0ee181029006
+semantic_hash: 9bb1ac7155e94d7d
+duplicate_of: ""
+first_seen_at: "2026-06-02T21:14:07.612Z"
+last_seen_at: 2026-06-03T03:22:50.221Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","Microsoft"],"products":["Claude"],"people":[],"industries":["医疗","开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["1","2","2026\nM","4.6","35B","97.0%","2025","94.5%"],"quotes":["MAI-Thinking-1"]}
+evidence_seed: {"company_actions":["Models Introducing MAI-Thinking-1 Superintelligence team June 2, 2026 Models Superintelligence team LI FB Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model.","It is a medium-sized model that stands among the strongest models in its weight class.","It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"微软通过其AI官方网站 microsoft.ai 发布了新模型 \"MAI-Thinking-1\"。该消息随链接一同发布，并出现在相关技术社区中。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Models Introducing MAI-Thinking-1 Superintelligence team June 2, 2026 Models Superintelligence team LI FB Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is a medium-sized model that stands among the strongest models in its weight class.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6 in our blind human side-by-side evaluations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We trained it from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 微软推出 MAI-Thinking-1 模型
+
+## clean_text
+
+Models
+Introducing MAI-Thinking-1
+Superintelligence team
+June 2, 2026
+Models
+Superintelligence team
+LI
+FB
+Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model. It is a medium-sized model that stands among the strongest models in its weight class. It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.6 in our blind human side-by-side evaluations. We trained it from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.
+MAI-Thinking-1 is a step in our broader work to build towards Humanist Superintelligence: advanced AI capabilities designed to serve people and organizations, not to replace them. The model matters on both axes: what it can do, and how it was built.
+The Hill-Climbing Machine
+More than a single model, we are excited to introduce our Hill-Climbing Machine: a co-designed pipeline built to make every component of model development climbable, so capabilities improve continually and reliably over time. The aim is a repeatable system that can absorb better data, stronger rewards, more capable environments, and more compute.
+Three main pillars guide our philosophy.
+First, capabilities should be learned, not inherited. Although faster to acquire, inherited intelligence lacks the steerability essential for real world usage: an imitator is fundamentally tied to the design choices of its teacher and struggles to adapt to new situations. MAI-Thinking-1 was trained without distillation from third party models, forcing our model to truly learn the tasks at hand.
+Second, clean data. MAI-Thinking-1 was trained on clean and appropriately licensed data, with AI-generated content excluded from pre-training. This matters for quality, provenance, and control. If we cannot account for what shaped a model, we cannot fully understand its behavior or credibly improve it.
+Third, self-sufficiency across the entire stack. All the way from co-design of our models with MSFT’s own accelerators through to our reinforcement learning framework, we have focused efforts on in-house training infrastructure. This is a crucial part of building our hill-climbing machine, to ensure we can fully optimize and shape our systems end-to-end to best serve our needs.
+Medium-sized model, with strong software engineering performance
+MAI-Thinking-1 is a 35B-active, ~1T-total parameters, sparse Mixture of Experts model, a smaller inference footprint than much larger models. Despite this, our model is toe-to-toe with Claude Opus 4.6 on SWE-Bench Pro. That matters for developers and enterprises because model size determines where advanced coding assistance can be deployed, how often it can be used, and whether it can move from exceptional tasks into daily workflows.
+We have invested heavily in the training environments needed for agentic coding. Each verified environment is deterministic, executable, and graded by real test suites. This gives the model practice on the kind of multi-step work developers actually do: reading code, editing files, running tests, observing failures, and recovering from intermediate mistakes.
+Advanced mathematical reasoning capabilities
+MAI-Thinking-1 reaches 97.0% on AIME 2025, and 94.5% on AIME 2026, showing strong mathematical and scientific reasoning for its weight class. Strong performance here gives us confidence that our training loop can create real reasoning gains – climbing all the way from the ground up – from our own data, rewards, and evaluation process, enabling this intelligence to generalize to other domains over time.
+Preferred in human side-by-sides vs. Sonnet 4.6
+People care about whether a model understands the task, follows instructions, uses the right level of detail, writes clearly, and respects their time.
+We built a blind side by side human evaluation with one of our partners, Surge, using their pool of professional raters to measure various models on these traits. The evaluation spanned 1,276 tasks across a wide variety of use cases in both single-turn and multi-turn conversations, with a focus on measuring how helpful each response is and whether it actually advances the user’s goals. In these evaluations, users preferred MAI-Thinking-1 over Claude Sonnet 4.6.
+This has been a core focus of post-training. We want the model to be capable without being brittle, concise without being incomplete, and helpful without overreaching. Human preference data gives us a direct signal on whether benchmark improvements translate into better experiences for users.
+Enterprise ready
+MAI-Thinking-1 is built with enterprise readiness in mind. It supports long context with a 256k token window (enough to fit a 600 page document), function calling, and the flexibility to add developer instructions. We trained the model to follow multiple layers of instructions and aligned its default style to enterprise needs. It’s compatible with the widely used Chat Completions API. All MAI models come with enterprise-grade security and compliance through Microsoft Foundry.
+Results
+We report results in two views: post-trained MAI-Thinking-1 evaluations, and pre-training metrics for our base model.
+Table 1. MAI-Thinking-1 metrics
+Post-trained model evaluation results on public STEM and agentic coding benchmarks. Other model numbers are taken from respective official model cards. Scores are percentages unless otherwise noted; dashes indicate unavailable model values.
+Table 2. Pre-training metrics
+Putting humans first
+We are building towards Humanist Superintelligence: advanced AI capabilities designed to serve people and organizations, not replace them. Our models must remain subordinate technologies under human control with the goal of upholding human autonomy and being helpful. That means our models must not refuse legitimate requests under the guise of safety and compliance as then they are not truly serving humans.
+Striking the delicate balance between being helpful and safe is not easy. For MAI-Thinking-1, we aimed to achieve this balance by treating unsafe compliance and unnecessary refusal as defects in the same reward construction where aggregation is based on severity of potential of harm. Safety is trained with the same reinforcement learning infrastructure used for capability, so safety rewards are part of the same hill-climbing loop ensuring safety is always aligned to the capabilities and not incidental.
+As a result, we see that our model can balance ensuring a safety bar on sensitive unsafe requests while also being helpful on non-sensitive content.
+Availability and access
+MAI-Thinking-1 is available in private preview on Microsoft Foundry today. It will be available in public preview on MAI Playground soon.
+Read the paper
+Build the Future With Us
+We’re a lean, fast-moving lab made up of some of the world’s most talented minds. We have an exciting roadmap of compute at MAI, which is ramping quickly and extensively. And we have an ambitious mission we truly believe in. We’re also fortunate to partner with incredible product teams giving our models the chance to reach billions of users and create immense positive impact. If you’re a brilliant, highly-ambitious and low ego individual, you’ll fit right in—come and join us as we work on our next generation of models!
+Explore all jobs
+Related Stories
+Building a hill-climbing machine: Launching seven new MAI models
+announcements
+Our values in operation: Health
+partnerships
+Towards Humanist Superintelligence
+announcements
+
+## full_text
+
+Models
+Introducing MAI-Thinking-1
+Superintelligence team
+June 2, 2026
+Models
+Superintelligence team
+LI
+FB
+Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model. It is a medium-sized model that stands among the strongest models in its weight class. It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.6 in our blind human side-by-side evaluations. We trained it from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.
+MAI-Thinking-1 is a step in our broader work to build towards Humanist Superintelligence: advanced AI capabilities designed to serve people and organizations, not to replace them. The model matters on both axes: what it can do, and how it was built.
+The Hill-Climbing Machine
+More than a single model, we are excited to introduce our Hill-Climbing Machine: a co-designed pipeline built to make every component of model development climbable, so capabilities improve continually and reliably over time. The aim is a repeatable system that can absorb better data, stronger rewards, more capable environments, and more compute.
+Three main pillars guide our philosophy.
+First, capabilities should be learned, not inherited. Although faster to acquire, inherited intelligence lacks the steerability essential for real world usage: an imitator is fundamentally tied to the design choices of its teacher and struggles to adapt to new situations. MAI-Thinking-1 was trained without distillation from third party models, forcing our model to truly learn the tasks at hand.
+Second, clean data. MAI-Thinking-1 was trained on clean and appropriately licensed data, with AI-generated content excluded from pre-training. This matters for quality, provenance, and control. If we cannot account for what shaped a model, we cannot fully understand its behavior or credibly improve it.
+Third, self-sufficiency across the entire stack. All the way from co-design of our models with MSFT’s own accelerators through to our reinforcement learning framework, we have focused efforts on in-house training infrastructure. This is a crucial part of building our hill-climbing machine, to ensure we can fully optimize and shape our systems end-to-end to best serve our needs.
+Medium-sized model, with strong software engineering performance
+MAI-Thinking-1 is a 35B-active, ~1T-total parameters, sparse Mixture of Experts model, a smaller inference footprint than much larger models. Despite this, our model is toe-to-toe with Claude Opus 4.6 on SWE-Bench Pro. That matters for developers and enterprises because model size determines where advanced coding assistance can be deployed, how often it can be used, and whether it can move from exceptional tasks into daily workflows.
+We have invested heavily in the training environments needed for agentic coding. Each verified environment is deterministic, executable, and graded by real test suites. This gives the model practice on the kind of multi-step work developers actually do: reading code, editing files, running tests, observing failures, and recovering from intermediate mistakes.
+Advanced mathematical reasoning capabilities
+MAI-Thinking-1 reaches 97.0% on AIME 2025, and 94.5% on AIME 2026, showing strong mathematical and scientific reasoning for its weight class. Strong performance here gives us confidence that our training loop can create real reasoning gains – climbing all the way from the ground up – from our own data, rewards, and evaluation process, enabling this intelligence to generalize to other domains over time.
+Preferred in human side-by-sides vs. Sonnet 4.6
+People care about whether a model understands the task, follows instructions, uses the right level of detail, writes clearly, and respects their time.
+We built a blind side by side human evaluation with one of our partners, Surge, using their pool of professional raters to measure various models on these traits. The evaluation spanned 1,276 tasks across a wide variety of use cases in both single-turn and multi-turn conversations, with a focus on measuring how helpful each response is and whether it actually advances the user’s goals. In these evaluations, users preferred MAI-Thinking-1 over Claude Sonnet 4.6.
+This has been a core focus of post-training. We want the model to be capable without being brittle, concise without being incomplete, and helpful without overreaching. Human preference data gives us a direct signal on whether benchmark improvements translate into better experiences for users.
+Enterprise ready
+MAI-Thinking-1 is built with enterprise readiness in mind. It supports long context with a 256k token window (enough to fit a 600 page document), function calling, and the flexibility to add developer instructions. We trained the model to follow multiple layers of instructions and aligned its default style to enterprise needs. It’s compatible with the widely used Chat Completions API. All MAI models come with enterprise-grade security and compliance through Microsoft Foundry.
+Results
+We report results in two views: post-trained MAI-Thinking-1 evaluations, and pre-training metrics for our base model.
+Table 1. MAI-Thinking-1 metrics
+Post-trained model evaluation results on public STEM and agentic coding benchmarks. Other model numbers are taken from respective official model cards. Scores are percentages unless otherwise noted; dashes indicate unavailable model values.
+Table 2. Pre-training metrics
+Putting humans first
+We are building towards Humanist Superintelligence: advanced AI capabilities designed to serve people and organizations, not replace them. Our models must remain subordinate technologies under human control with the goal of upholding human autonomy and being helpful. That means our models must not refuse legitimate requests under the guise of safety and compliance as then they are not truly serving humans.
+Striking the delicate balance between being helpful and safe is not easy. For MAI-Thinking-1, we aimed to achieve this balance by treating unsafe compliance and unnecessary refusal as defects in the same reward construction where aggregation is based on severity of potential of harm. Safety is trained with the same reinforcement learning infrastructure used for capability, so safety rewards are part of the same hill-climbing loop ensuring safety is always aligned to the capabilities and not incidental.
+As a result, we see that our model can balance ensuring a safety bar on sensitive unsafe requests while also being helpful on non-sensitive content.
+Availability and access
+MAI-Thinking-1 is available in private preview on Microsoft Foundry today. It will be available in public preview on MAI Playground soon.
+Read the paper
+Build the Future With Us
+We’re a lean, fast-moving lab made up of some of the world’s most talented minds. We have an exciting roadmap of compute at MAI, which is ramping quickly and extensively. And we have an ambitious mission we truly believe in. We’re also fortunate to partner with incredible product teams giving our models the chance to reach billions of users and create immense positive impact. If you’re a brilliant, highly-ambitious and low ego individual, you’ll fit right in—come and join us as we work on our next generation of models!
+Explore all jobs
+Related Stories
+Building a hill-climbing machine: Launching seven new MAI models
+announcements
+Our values in operation: Health
+partnerships
+Towards Humanist Superintelligence
+announcements
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7575,"paragraph_count":36,"sentence_count":60,"boilerplate_hits":0,"symbol_ratio":0.0001,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   微软通过其AI官方网站 microsoft.ai 发布了新模型 "MAI-Thinking-1"。该消息随链接一同发布，并出现在相关技术社区中。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Models Introducing MAI-Thinking-1 Superintelligence team June 2, 2026 Models Superintelligence team LI FB Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   It is a medium-sized model that stands among the strongest models in its weight class.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   6 in our blind human side-by-side evaluations.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   We trained it from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, Microsoft
+- products: Claude
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 1, 2, 2026
+M, 4.6, 35B, 97.0%, 2025, 94.5%
+- quotes: MAI-Thinking-1
+
+## evidence_seed
+
+- company_actions: Models Introducing MAI-Thinking-1 Superintelligence team June 2, 2026 Models Superintelligence team LI FB Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model. / It is a medium-sized model that stands among the strongest models in its weight class. / It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软推出 MAI-Thinking-1 模型","discovery_summary":"微软通过其AI官方网站 microsoft.ai 发布了新模型 \"MAI-Thinking-1\"。该消息随链接一同发布，并出现在相关技术社区中。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://microsoft.ai/news/introducing-mai-thinking-1","discovered_at":"2026-06-03T03:17:07.152Z","rank_on_page":120,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软通过其AI官方网站 microsoft.ai 发布了新模型 "MAI-Thinking-1"。该消息随链接一同发布，并出现在相关技术社区中。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

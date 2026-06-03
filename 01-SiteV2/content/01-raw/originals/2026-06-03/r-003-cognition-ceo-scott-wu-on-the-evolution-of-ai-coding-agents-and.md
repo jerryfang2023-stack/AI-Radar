@@ -1,0 +1,292 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-003
+title: "Cognition CEO Scott Wu on the evolution of AI coding agents and ..."
+original_url: "https://stripe.com/ae/customers/cognition-scott-wu"
+canonical_url: "https://stripe.com/ae/customers/cognition-scott-wu"
+source_name: "follow-builders cloud fallback / keyword search / Anysearch"
+source_type: builder
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: follow-builders
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-03T03:22:50.203Z
+language: mixed
+full_text_hash: cba2f7124ff09316
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-03/r-003-cognition-ceo-scott-wu-on-the-evolution-of-ai-coding-agents-and.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-03/r-003-cognition-ceo-scott-wu-on-the-evolution-of-ai-coding-agents-and.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8388,"paragraph_count":37,"sentence_count":82,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 8388
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cba2f7124ff09316","missing":[]}
+source_volatility: high
+community_name: "follow-builders cloud fallback / keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: frontier_opinion_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2080e98bb6a0a4a3
+content_hash: cba2f7124ff09316
+semantic_hash: 6a1adfcacf110bf5
+duplicate_of: ""
+first_seen_at: "2026-06-03T03:22:50.203Z"
+last_seen_at: 2026-06-03T03:22:50.203Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":4,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["follow","builders cloud fallback","keyword search","Anysearch","Google","GitHub","Amazon","Nvidia"],"products":["agents","agent","Copilot"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["3 m","12","2011","2016","2017","2022","9","00"],"quotes":["OK, if we want to explore this, we have to spend the entire weekend on this nonstop.","Hey, @Devin, can you go buy some more whiteboards for us?","This is not working. I need to speak to a human right now."]}
+evidence_seed: {"company_actions":["Cognition is an applied AI lab that makes Devin—the world's first autonomous AI coding agent—and that recently acquired Windsurf, maker of a leading agentic ... query=AI coding agent founder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates","Cognition is an applied AI lab that makes Devin —the world’s first autonomous AI coding agent—and that recently acquired Windsurf , maker of a leading agentic coding IDE.","The company’s products are designed to help software engineers focus on higher-value tasks and empower engineering teams to pursue more ambitious goals."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Cognition is an applied AI lab that makes Devin—the world's first autonomous AI coding agent—and that recently acquired Windsurf, maker of a leading agentic ... query=AI coding agent founder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Cognition is an applied AI lab that makes Devin —the world’s first autonomous AI coding agent—and that recently acquired Windsurf , maker of a leading agentic coding IDE.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The company’s products are designed to help software engineers focus on higher-value tasks and empower engineering teams to pursue more ambitious goals.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Products used Payments Checkout Link Billing Revenue Recognition Invoicing Radar + 3 more products United States Startup For Cognition, the future of software engineering is not a zero-sum game between human engineers and AI agents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It’s a collaboration between humans and AI that uses the strengths of each to create more efficient and powerful engineering teams.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Scott Wu is Cognition’s cofounder and CEO.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Cognition CEO Scott Wu on the evolution of AI coding agents and ...
+
+## clean_text
+
+Cognition is an applied AI lab that makes Devin —the world’s first autonomous AI coding agent—and that recently acquired Windsurf , maker of a leading agentic coding IDE. The company’s products are designed to help software engineers focus on higher-value tasks and empower engineering teams to pursue more ambitious goals.
+Products used
+Payments
+Checkout
+Link
+Billing
+Revenue Recognition
+Invoicing
+Radar
++ 3 more products
+United States
+Startup
+For Cognition, the future of software engineering is not a zero-sum game between human engineers and AI agents. It’s a collaboration between humans and AI that uses the strengths of each to create more efficient and powerful engineering teams.
+Scott Wu is Cognition’s cofounder and CEO. As a child with a talent for math and coding who grew up in Louisiana, Wu participated in his first math competition in second grade and learned to code at age 12. He won three gold medals at the International Olympiad in Informatics and became a champion in MATHCOUNTS in 2011. While in college, he represented Harvard in the 2016 International Collegiate Programming Contest. He founded his first company in 2017: Lunchclub, an AI-powered networking platform. After leaving Lunchclub in 2022, he cofounded Cognition.
+We recently featured Wu in our Cheeky Pint podcast. Here, we’ve excerpted part of that conversation to highlight his thoughts on the state of AI coding today and the potential impact of AI agents on traditional software engineering roles. We also got his take on the overall growth trajectory of the AI industry. This video interview has been edited for length and clarity. To watch the full episode click here .
+Tell us about Devin. What makes your AI coding agent different from existing coding assistants?
+Wu: At a high level, we want to build the future of software engineering.
+We’ve had the IDE paradigm in the past—GitHub Copilot is a well-known originator of it—where you’re typing at the keyboard, and the assistant is making you a little bit faster and giving you tools and shortcuts and everything you need.
+Devin is a very different paradigm of what I would call an async experience, where you have an agent and you delegate a task. And so Devin naturally operates at a ticket level or a project level: you have some issue in GitHub or something and you tag Devin in Slack or Linear or Jira, and then Devin gets to work on it.
+How good is Devin today at completing those development tasks?
+Wu: We like to call Devin a junior engineer today. We typically see folks using Devin for things like simple feature requests and fixes. Devin is also doing a lot of the more repetitive, tedious tasks that come up often in engineering work—migrations, modernizations, refactors, version upgrades, or testing and documentation. It’s crazy how much of a software engineer’s time is spent on things like fixing your Kubernetes deployments.
+Every organization around the world is trying to figure out the impact of AI coding. What’s your view on the size of the productivity impact? And is it actually measurable?
+Wu: Yeah, for sure. I think this gradual shift towards agents will help a lot, as it turns out. With agents, a lot of the workflow is doing the task for you. So if it’s a Jira ticket or a migration, you typically have a good sense of how many engineering hours are going to be needed. The agent is now doing the whole thing end to end. The impact is a lot clearer because you didn’t have to do this migration anymore. You reviewed the PR in five minutes, and that’s all done.
+At a high level, we want to build the future of software engineering.
+Tell me about acquiring Windsurf. I understand the deal came together very quickly.
+Wu: We heard the news that a deal was happening between Google and Windsurf on Friday, the same time as everyone else. And we reached out to them cold that evening and started talking about it, and realized if there was something to do, it had to be ready to go by Monday.
+So we said, “OK, if we want to explore this, we have to spend the entire weekend on this nonstop.” We got to the handshake agreement that Saturday, and then we all pulled an all-nighter that Sunday night to get the legal side figured out. And we got the deal signed on Monday at 9:00 a.m. It was a lot of fun.
+Then we found there was a very nice synergy because Windsurf’s core research and products engineering team went to Google and all the other functions were entirely intact. With Cognition, for better or for worse, we had done a good job of building out this core research and product engineering team, but were a little bit behind on growing all the other functions. We knew there was something really interesting there.
+The AI industry is made up of all these different layers: you have the data centers, then you have labs, and then you have the application layers. Thinking ahead to the next 5 or 10 years, what layers will get more competitive? What gets less competitive?
+Wu: Everyone always makes fun of me whenever I say this, but I think all the layers are going to do very well.
+Value accrues wherever there’s meaningful differentiation in the layer: there’s NVIDIA and there’s TSMC, and as long as NVIDIA needs to work with TSMC and TSMC needs to work with NVIDIA, they will continue to do great. You see this down the stack as well. I would argue that the problems that are being solved in all of these different layers are very, very different problems that have pretty meaningful differentiation.
+For example, the only thing that Cognition cares about is building the future of software engineering. So everyone has their own DNA and everyone has their own things that they do best.
+For example, the only thing that Cognition cares about is building the future of software engineering. So everyone has their own DNA and everyone has their own things that they do best.
+I’m curious to hear what you think the economic infrastructure for AI needs to look like?
+Wu: Moving from seat-based to usage-based pricing is a big one, for sure. The other big one that comes to mind is that there will be an entire agent economy as well.
+We order our DoorDash on Devin. We order our Amazon packages with Devin—we’ll just be in Slack and say “Hey, @Devin, can you go buy some more whiteboards for us?” We had another fun one where we had Devin negotiate with an airline to get a refund for a canceled flight. Devin was chatting with the site’s agent and eventually said, “This is not working. I need to speak to a human right now.” And Devin got the refund.
+So there are a lot more agents browsing the web these days, and the paradigm up until now has been that there are tons of things which you are not allowed to do as a nonhuman. We will probably need to see a lot more delegating of access—making it clear that an agent can do something on your behalf.
+When will you hire your last human engineer?
+Wu: It’s a good question. I’ll make a distinction here, which is I think that there will come a point— probably in the neighborhood of two, three, or four years from now—where we stop using code as the main interface. Basically, being a software engineer will really be just telling your computer what to do.
+You mean that two to four years from now, software engineers will not really look at code in their day-to-day jobs, just like they don’t look at assembly today?
+Wu: Exactly. They’ll be making a lot of architectural decisions, but not looking at the code themselves in the majority of circumstances. At that point, obviously the jobs change a lot. But if anything, I think we will have way more software engineers, not fewer.
+Everyone talks about Jevons paradox and how it relates to AI. Nowhere is that more true than in software, because we never seem to run out of demand for more code and more software.
+Everyone talks about Jevons paradox and how it relates to AI. Nowhere is that more true than in software, because we never seem to run out of demand for more code and more software.
+Read story
+CoinPanel mitigates fraud and scales to 130K users in 6 months with Stripe
+Read story
+CommentSold on the growth and promise of live selling
+Create an account and start accepting payments—no contracts or banking details required. Or, contact us to design a custom package for your business.
+Integrated per-transaction pricing with no hidden fees
+Get up and running with Stripe in as little as 10 minutes
+
+## full_text
+
+Cognition is an applied AI lab that makes Devin —the world’s first autonomous AI coding agent—and that recently acquired Windsurf , maker of a leading agentic coding IDE. The company’s products are designed to help software engineers focus on higher-value tasks and empower engineering teams to pursue more ambitious goals.
+Products used
+Payments
+Checkout
+Link
+Billing
+Revenue Recognition
+Invoicing
+Radar
++ 3 more products
+United States
+Startup
+For Cognition, the future of software engineering is not a zero-sum game between human engineers and AI agents. It’s a collaboration between humans and AI that uses the strengths of each to create more efficient and powerful engineering teams.
+Scott Wu is Cognition’s cofounder and CEO. As a child with a talent for math and coding who grew up in Louisiana, Wu participated in his first math competition in second grade and learned to code at age 12. He won three gold medals at the International Olympiad in Informatics and became a champion in MATHCOUNTS in 2011. While in college, he represented Harvard in the 2016 International Collegiate Programming Contest. He founded his first company in 2017: Lunchclub, an AI-powered networking platform. After leaving Lunchclub in 2022, he cofounded Cognition.
+We recently featured Wu in our Cheeky Pint podcast. Here, we’ve excerpted part of that conversation to highlight his thoughts on the state of AI coding today and the potential impact of AI agents on traditional software engineering roles. We also got his take on the overall growth trajectory of the AI industry. This video interview has been edited for length and clarity. To watch the full episode click here .
+Tell us about Devin. What makes your AI coding agent different from existing coding assistants?
+Wu: At a high level, we want to build the future of software engineering.
+We’ve had the IDE paradigm in the past—GitHub Copilot is a well-known originator of it—where you’re typing at the keyboard, and the assistant is making you a little bit faster and giving you tools and shortcuts and everything you need.
+Devin is a very different paradigm of what I would call an async experience, where you have an agent and you delegate a task. And so Devin naturally operates at a ticket level or a project level: you have some issue in GitHub or something and you tag Devin in Slack or Linear or Jira, and then Devin gets to work on it.
+How good is Devin today at completing those development tasks?
+Wu: We like to call Devin a junior engineer today. We typically see folks using Devin for things like simple feature requests and fixes. Devin is also doing a lot of the more repetitive, tedious tasks that come up often in engineering work—migrations, modernizations, refactors, version upgrades, or testing and documentation. It’s crazy how much of a software engineer’s time is spent on things like fixing your Kubernetes deployments.
+Every organization around the world is trying to figure out the impact of AI coding. What’s your view on the size of the productivity impact? And is it actually measurable?
+Wu: Yeah, for sure. I think this gradual shift towards agents will help a lot, as it turns out. With agents, a lot of the workflow is doing the task for you. So if it’s a Jira ticket or a migration, you typically have a good sense of how many engineering hours are going to be needed. The agent is now doing the whole thing end to end. The impact is a lot clearer because you didn’t have to do this migration anymore. You reviewed the PR in five minutes, and that’s all done.
+At a high level, we want to build the future of software engineering.
+Tell me about acquiring Windsurf. I understand the deal came together very quickly.
+Wu: We heard the news that a deal was happening between Google and Windsurf on Friday, the same time as everyone else. And we reached out to them cold that evening and started talking about it, and realized if there was something to do, it had to be ready to go by Monday.
+So we said, “OK, if we want to explore this, we have to spend the entire weekend on this nonstop.” We got to the handshake agreement that Saturday, and then we all pulled an all-nighter that Sunday night to get the legal side figured out. And we got the deal signed on Monday at 9:00 a.m. It was a lot of fun.
+Then we found there was a very nice synergy because Windsurf’s core research and products engineering team went to Google and all the other functions were entirely intact. With Cognition, for better or for worse, we had done a good job of building out this core research and product engineering team, but were a little bit behind on growing all the other functions. We knew there was something really interesting there.
+The AI industry is made up of all these different layers: you have the data centers, then you have labs, and then you have the application layers. Thinking ahead to the next 5 or 10 years, what layers will get more competitive? What gets less competitive?
+Wu: Everyone always makes fun of me whenever I say this, but I think all the layers are going to do very well.
+Value accrues wherever there’s meaningful differentiation in the layer: there’s NVIDIA and there’s TSMC, and as long as NVIDIA needs to work with TSMC and TSMC needs to work with NVIDIA, they will continue to do great. You see this down the stack as well. I would argue that the problems that are being solved in all of these different layers are very, very different problems that have pretty meaningful differentiation.
+For example, the only thing that Cognition cares about is building the future of software engineering. So everyone has their own DNA and everyone has their own things that they do best.
+For example, the only thing that Cognition cares about is building the future of software engineering. So everyone has their own DNA and everyone has their own things that they do best.
+I’m curious to hear what you think the economic infrastructure for AI needs to look like?
+Wu: Moving from seat-based to usage-based pricing is a big one, for sure. The other big one that comes to mind is that there will be an entire agent economy as well.
+We order our DoorDash on Devin. We order our Amazon packages with Devin—we’ll just be in Slack and say “Hey, @Devin, can you go buy some more whiteboards for us?” We had another fun one where we had Devin negotiate with an airline to get a refund for a canceled flight. Devin was chatting with the site’s agent and eventually said, “This is not working. I need to speak to a human right now.” And Devin got the refund.
+So there are a lot more agents browsing the web these days, and the paradigm up until now has been that there are tons of things which you are not allowed to do as a nonhuman. We will probably need to see a lot more delegating of access—making it clear that an agent can do something on your behalf.
+When will you hire your last human engineer?
+Wu: It’s a good question. I’ll make a distinction here, which is I think that there will come a point— probably in the neighborhood of two, three, or four years from now—where we stop using code as the main interface. Basically, being a software engineer will really be just telling your computer what to do.
+You mean that two to four years from now, software engineers will not really look at code in their day-to-day jobs, just like they don’t look at assembly today?
+Wu: Exactly. They’ll be making a lot of architectural decisions, but not looking at the code themselves in the majority of circumstances. At that point, obviously the jobs change a lot. But if anything, I think we will have way more software engineers, not fewer.
+Everyone talks about Jevons paradox and how it relates to AI. Nowhere is that more true than in software, because we never seem to run out of demand for more code and more software.
+Everyone talks about Jevons paradox and how it relates to AI. Nowhere is that more true than in software, because we never seem to run out of demand for more code and more software.
+Read story
+CoinPanel mitigates fraud and scales to 130K users in 6 months with Stripe
+Read story
+CommentSold on the growth and promise of live selling
+Create an account and start accepting payments—no contracts or banking details required. Or, contact us to design a custom package for your business.
+Integrated per-transaction pricing with no hidden fees
+Get up and running with Stripe in as little as 10 minutes
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8388,"paragraph_count":37,"sentence_count":82,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Cognition is an applied AI lab that makes Devin—the world's first autonomous AI coding agent—and that recently acquired Windsurf, maker of a leading agentic ... query=AI coding agent founder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Cognition is an applied AI lab that makes Devin —the world’s first autonomous AI coding agent—and that recently acquired Windsurf , maker of a leading agentic coding IDE.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The company’s products are designed to help software engineers focus on higher-value tasks and empower engineering teams to pursue more ambitious goals.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Products used Payments Checkout Link Billing Revenue Recognition Invoicing Radar + 3 more products United States Startup For Cognition, the future of software engineering is not a zero-sum game between human engineers and AI agents.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   It’s a collaboration between humans and AI that uses the strengths of each to create more efficient and powerful engineering teams.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Scott Wu is Cognition’s cofounder and CEO.
+
+## business_elements
+
+- companies: follow, builders cloud fallback, keyword search, Anysearch, Google, GitHub, Amazon, Nvidia
+- products: agents, agent, Copilot
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 3 m, 12, 2011, 2016, 2017, 2022, 9, 00
+- quotes: OK, if we want to explore this, we have to spend the entire weekend on this nonstop. / Hey, @Devin, can you go buy some more whiteboards for us? / This is not working. I need to speak to a human right now.
+
+## evidence_seed
+
+- company_actions: Cognition is an applied AI lab that makes Devin—the world's first autonomous AI coding agent—and that recently acquired Windsurf, maker of a leading agentic ... query=AI coding agent founder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates / Cognition is an applied AI lab that makes Devin —the world’s first autonomous AI coding agent—and that recently acquired Windsurf , maker of a leading agentic coding IDE. / The company’s products are designed to help software engineers focus on higher-value tasks and empower engineering teams to pursue more ambitious goals.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 4
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: follow-builders cloud fallback / keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: frontier_opinion_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Cognition is an applied AI lab that makes Devin—the world's first autonomous AI coding agent—and that recently acquired Windsurf, maker of a leading agentic ... query=AI coding agent founder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates
+
+## 采集备注
+
+该条目由 follow-builders 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

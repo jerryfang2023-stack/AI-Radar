@@ -1,0 +1,210 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-040
+title: "微软定调 Win11：打造成 AI 应用和智能体开发平台"
+original_url: "https://www.ithome.com/0/959/087.htm"
+canonical_url: "https://ithome.com/0/959/087.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-03T01:50:56.000Z"
+collected_at: 2026-06-03T03:22:50.399Z
+language: mixed
+full_text_hash: 20b5b7134526f4f9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-03/r-040-微软定调-win11-打造成-ai-应用和智能体开发平台.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-03/r-040-微软定调-win11-打造成-ai-应用和智能体开发平台.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 56
+extractor_diagnostics: {"readability_score":56,"text_length":998,"paragraph_count":9,"sentence_count":9,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 998
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"20b5b7134526f4f9","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软定调 Win11：打造成 AI 应用和智能体开发平台","discovery_summary":"微软在 Build 2026 上宣布，Windows 11 将从带 AI 功能的桌面系统，转型为 AI 应用和智能体的开发平台。新举措包括引入 Microsoft Execution Containers 以安全管控智能体、提供本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan、并将 Windows AI 接口从 NPU 扩展至 GPU 和 CPU。目标是整合目前过于分散的 AI 开发工具链，为开发者提供覆盖开发、部署、监控到安全管理的统一工作流。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/959/087.htm","discovered_at":"2026-06-03T03:17:07.137Z","rank_on_page":48,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 91295f97f4ffc0d5
+content_hash: 20b5b7134526f4f9
+semantic_hash: bc9b513b9891607b
+duplicate_of: ""
+first_seen_at: "2026-06-03T01:50:56.000Z"
+last_seen_at: 2026-06-03T03:22:50.399Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["IT之家（RSS）","Microsoft","GitHub","Nvidia"],"products":["Copilot","Claude","Codex"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["11","2026","1.0","6","3"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 6 月 3 日消息，科技媒体 Windows Latest 今天（6 月 3 日）发布博文，报道称在 2026 年 Build 开发者大会上，微软明确 Windows 11 系统定位： 不再只是带 AI 功能的桌面系统，而是要成为 AI 应用和智能体的开发平台。","IT之家援引博文介绍，微软将改造 Windows 11 为覆盖完整生命周期的平台， 要让开发者在不同工具之间获得一致体验。"],"case_details":["在工具集成方面，微软指出开发者目前同时使用 GitHub Copilot、Claude Code、Codex、本地模型、云端模型和多种智能体框架，工作流常被不同环境割裂， 而 Windows 11 将解决当前 AI 开发工具链过于分散的问题，承接这些工具并统一集成层。"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["微软在 Build 2026 上宣布，Windows 11 将从带 AI 功能的桌面系统，转型为 AI 应用和智能体的开发平台。新举措包括引入 Microsoft Execution Containers 以安全管控智能体、提供本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan、并将 Windows AI 接口从 NPU 扩展至 GPU 和 CPU。目标是整合目前过于分散的 AI 开发工具链，为开发者提供覆盖开发、部署、监控到安全管理的统一工作流。","微软新方向涵盖智能体 Runtime、本地模型、Windows 原生 AI 接口、Linux 容器、企业治理、安全隔离、GitHub Copilot、NVIDIA RTX Spark 与 Azure 集成， 目标是把开发、部署、监控和安全管理纳入同一套工作流。","GitHub 高管 Kyle Daigle 表示，代码生成已不是最大难题，真正复杂的是后续审查、部署、编排、监控、治理和企业安全。"]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存"]
+key_excerpts: [{"type":"supporting_context","text":"微软在 Build 2026 上宣布，Windows 11 将从带 AI 功能的桌面系统，转型为 AI 应用和智能体的开发平台。新举措包括引入 Microsoft Execution Containers 以安全管控智能体、提供本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan、并将 Windows AI 接口从 NPU 扩展至 GPU 和 CPU。目标是整合目前过于分散的 AI 开发工具链，为开发者提供覆盖开发、部署、监控到安全管理的统一工作流。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 3 日消息，科技媒体 Windows Latest 今天（6 月 3 日）发布博文，报道称在 2026 年 Build 开发者大会上，微软明确 Windows 11 系统定位： 不再只是带 AI 功能的桌面系统，而是要成为 AI 应用和智能体的开发平台。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"微软新方向涵盖智能体 Runtime、本地模型、Windows 原生 AI 接口、Linux 容器、企业治理、安全隔离、GitHub Copilot、NVIDIA RTX Spark 与 Azure 集成， 目标是把开发、部署、监控和安全管理纳入同一套工作流。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"在工具集成方面，微软指出开发者目前同时使用 GitHub Copilot、Claude Code、Codex、本地模型、云端模型和多种智能体框架，工作流常被不同环境割裂， 而 Windows 11 将解决当前 AI 开发工具链过于分散的问题，承接这些工具并统一集成层。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"GitHub 高管 Kyle Daigle 表示，代码生成已不是最大难题，真正复杂的是后续审查、部署、编排、监控、治理和企业安全。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家援引博文介绍，微软将改造 Windows 11 为覆盖完整生命周期的平台， 要让开发者在不同工具之间获得一致体验。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 微软定调 Win11：打造成 AI 应用和智能体开发平台
+
+## clean_text
+
+IT之家 6 月 3 日消息，科技媒体 Windows Latest 今天（6 月 3 日）发布博文，报道称在 2026 年 Build 开发者大会上，微软明确 Windows 11 系统定位： 不再只是带 AI 功能的桌面系统，而是要成为 AI 应用和智能体的开发平台。
+微软新方向涵盖智能体 Runtime、本地模型、Windows 原生 AI 接口、Linux 容器、企业治理、安全隔离、GitHub Copilot、NVIDIA RTX Spark 与 Azure 集成， 目标是把开发、部署、监控和安全管理纳入同一套工作流。
+在工具集成方面，微软指出开发者目前同时使用 GitHub Copilot、Claude Code、Codex、本地模型、云端模型和多种智能体框架，工作流常被不同环境割裂， 而 Windows 11 将解决当前 AI 开发工具链过于分散的问题，承接这些工具并统一集成层。
+GitHub 高管 Kyle Daigle 表示，代码生成已不是最大难题，真正复杂的是后续审查、部署、编排、监控、治理和企业安全。
+IT之家援引博文介绍，微软将改造 Windows 11 为覆盖完整生命周期的平台， 要让开发者在不同工具之间获得一致体验。
+微软还强调模型和工具选择权。企业希望避免锁定单一 AI 供应商，同时掌握智能体如何访问业务数据、模型在哪里运行、Token 花费流向何处。微软希望 Windows 11 承担治理、可见性和信任控制的底层职责。
+在智能体层面，微软提出 Microsoft Execution Containers（微软执行容器）。该机制允许开发者限定 AI 智能体可访问的文件、网络、系统资源和应用，并由 Windows 在运行时强制约束。智能体还能绑定本地 ID 或 Entra 云身份，便于追踪活动来源。
+微软为 Windows 11 引入本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan。后者面向本地智能体工作流，支持推理、子智能体编排、文件管理和工具调用。Windows AI 接口也从 NPU（神经处理单元）扩展到 GPU（图形处理器）和 CPU（中央处理器）。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 3 日消息，科技媒体 Windows Latest 今天（6 月 3 日）发布博文，报道称在 2026 年 Build 开发者大会上，微软明确 Windows 11 系统定位： 不再只是带 AI 功能的桌面系统，而是要成为 AI 应用和智能体的开发平台。
+微软新方向涵盖智能体 Runtime、本地模型、Windows 原生 AI 接口、Linux 容器、企业治理、安全隔离、GitHub Copilot、NVIDIA RTX Spark 与 Azure 集成， 目标是把开发、部署、监控和安全管理纳入同一套工作流。
+在工具集成方面，微软指出开发者目前同时使用 GitHub Copilot、Claude Code、Codex、本地模型、云端模型和多种智能体框架，工作流常被不同环境割裂， 而 Windows 11 将解决当前 AI 开发工具链过于分散的问题，承接这些工具并统一集成层。
+GitHub 高管 Kyle Daigle 表示，代码生成已不是最大难题，真正复杂的是后续审查、部署、编排、监控、治理和企业安全。
+IT之家援引博文介绍，微软将改造 Windows 11 为覆盖完整生命周期的平台， 要让开发者在不同工具之间获得一致体验。
+微软还强调模型和工具选择权。企业希望避免锁定单一 AI 供应商，同时掌握智能体如何访问业务数据、模型在哪里运行、Token 花费流向何处。微软希望 Windows 11 承担治理、可见性和信任控制的底层职责。
+在智能体层面，微软提出 Microsoft Execution Containers（微软执行容器）。该机制允许开发者限定 AI 智能体可访问的文件、网络、系统资源和应用，并由 Windows 在运行时强制约束。智能体还能绑定本地 ID 或 Entra 云身份，便于追踪活动来源。
+微软为 Windows 11 引入本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan。后者面向本地智能体工作流，支持推理、子智能体编排、文件管理和工具调用。Windows AI 接口也从 NPU（神经处理单元）扩展到 GPU（图形处理器）和 CPU（中央处理器）。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 56
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":56,"text_length":998,"paragraph_count":9,"sentence_count":9,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   微软在 Build 2026 上宣布，Windows 11 将从带 AI 功能的桌面系统，转型为 AI 应用和智能体的开发平台。新举措包括引入 Microsoft Execution Containers 以安全管控智能体、提供本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan、并将 Windows AI 接口从 NPU 扩展至 GPU 和 CPU。目标是整合目前过于分散的 AI 开发工具链，为开发者提供覆盖开发、部署、监控到安全管理的统一工作流。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 3 日消息，科技媒体 Windows Latest 今天（6 月 3 日）发布博文，报道称在 2026 年 Build 开发者大会上，微软明确 Windows 11 系统定位： 不再只是带 AI 功能的桌面系统，而是要成为 AI 应用和智能体的开发平台。
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   微软新方向涵盖智能体 Runtime、本地模型、Windows 原生 AI 接口、Linux 容器、企业治理、安全隔离、GitHub Copilot、NVIDIA RTX Spark 与 Azure 集成， 目标是把开发、部署、监控和安全管理纳入同一套工作流。
+
+4. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   在工具集成方面，微软指出开发者目前同时使用 GitHub Copilot、Claude Code、Codex、本地模型、云端模型和多种智能体框架，工作流常被不同环境割裂， 而 Windows 11 将解决当前 AI 开发工具链过于分散的问题，承接这些工具并统一集成层。
+
+5. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   GitHub 高管 Kyle Daigle 表示，代码生成已不是最大难题，真正复杂的是后续审查、部署、编排、监控、治理和企业安全。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家援引博文介绍，微软将改造 Windows 11 为覆盖完整生命周期的平台， 要让开发者在不同工具之间获得一致体验。
+
+## business_elements
+
+- companies: IT之家（RSS）, Microsoft, GitHub, Nvidia
+- products: Copilot, Claude, Codex
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 11, 2026, 1.0, 6, 3
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 3 日消息，科技媒体 Windows Latest 今天（6 月 3 日）发布博文，报道称在 2026 年 Build 开发者大会上，微软明确 Windows 11 系统定位： 不再只是带 AI 功能的桌面系统，而是要成为 AI 应用和智能体的开发平台。 / IT之家援引博文介绍，微软将改造 Windows 11 为覆盖完整生命周期的平台， 要让开发者在不同工具之间获得一致体验。
+- case_details: 在工具集成方面，微软指出开发者目前同时使用 GitHub Copilot、Claude Code、Codex、本地模型、云端模型和多种智能体框架，工作流常被不同环境割裂， 而 Windows 11 将解决当前 AI 开发工具链过于分散的问题，承接这些工具并统一集成层。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 微软在 Build 2026 上宣布，Windows 11 将从带 AI 功能的桌面系统，转型为 AI 应用和智能体的开发平台。新举措包括引入 Microsoft Execution Containers 以安全管控智能体、提供本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan、并将 Windows AI 接口从 NPU 扩展至 GPU 和 CPU。目标是整合目前过于分散的 AI 开发工具链，为开发者提供覆盖开发、部署、监控到安全管理的统一工作流。 / 微软新方向涵盖智能体 Runtime、本地模型、Windows 原生 AI 接口、Linux 容器、企业治理、安全隔离、GitHub Copilot、NVIDIA RTX Spark 与 Azure 集成， 目标是把开发、部署、监控和安全管理纳入同一套工作流。 / GitHub 高管 Kyle Daigle 表示，代码生成已不是最大难题，真正复杂的是后续审查、部署、编排、监控、治理和企业安全。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软定调 Win11：打造成 AI 应用和智能体开发平台","discovery_summary":"微软在 Build 2026 上宣布，Windows 11 将从带 AI 功能的桌面系统，转型为 AI 应用和智能体的开发平台。新举措包括引入 Microsoft Execution Containers 以安全管控智能体、提供本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan、并将 Windows AI 接口从 NPU 扩展至 GPU 和 CPU。目标是整合目前过于分散的 AI 开发工具链，为开发者提供覆盖开发、部署、监控到安全管理的统一工作流。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/959/087.htm","discovered_at":"2026-06-03T03:17:07.137Z","rank_on_page":48,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软在 Build 2026 上宣布，Windows 11 将从带 AI 功能的桌面系统，转型为 AI 应用和智能体的开发平台。新举措包括引入 Microsoft Execution Containers 以安全管控智能体、提供本地模型 Aion 1.0 Instruct 和 Aion 1.0 Plan、并将 Windows AI 接口从 NPU 扩展至 GPU 和 CPU。目标是整合目前过于分散的 AI 开发工具链，为开发者提供覆盖开发、部署、监控到安全管理的统一工作流。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
