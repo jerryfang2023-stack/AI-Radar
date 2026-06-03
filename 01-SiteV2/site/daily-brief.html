@@ -72,13 +72,16 @@
     border: 1px solid rgba(200,167,102,.25);
   }
   .person-name { font-weight: 700; font-size: 14px; color: #0d355c; }
-  .person-engagement {
-    display: inline-block; margin-top: 4px; padding: 1px 7px; border-radius: 999px;
+  .person-count {
+    display: inline-block; margin: 4px 0 6px;
+    padding: 1px 7px; border-radius: 999px;
     background: rgba(200,167,102,.2); font-size: 10px; font-weight: 600; color: #876a2e;
   }
-  .person-quote { margin-top: 7px; font-size: 12px; line-height: 1.6; color: rgba(7,24,39,.72); }
-  .person-quote::before { content: "\201C"; color: #c8a766; font-size: 16px; }
-  .person-quote::after { content: "\201D"; color: #c8a766; font-size: 16px; }
+  .person-quote { margin-top: 6px; font-size: 12px; line-height: 1.65; color: rgba(7,24,39,.72); }
+  .person-quote::before { content: "\201C"; color: #c8a766; font-size: 14px; }
+  .person-quote::after { content: "\201D"; color: #c8a766; font-size: 14px; }
+  .person-link { margin-top: 4px; font-size: 10px; }
+  .person-link a { color: #0d355c; text-decoration: none; border-bottom: 1px solid rgba(13,53,92,.15); }
   .signals { margin-top: 14px; }
   .signal-row {
     display: flex; gap: 10px; align-items: flex-start;
@@ -111,49 +114,69 @@
 <div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
 <div class="date">2026-06-03</div>
 </div>
-<div class="section"><div class="section-head"><span class="badge">1</span> 今日 10 件大事</div>
+
+<!-- TOP 3 EVENTS -->
+<div class="section"><div class="section-head"><span class="badge">1</span> 今日最值得关注</div>
 <div class="event"><div class="event-row"><div class="event-rank s">1</div><div class="event-body"><div class="event-title">Claude Code v2.1.161 发布<span class="score top">S96</span></div><div class="event-core">今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。</div>
 <div class="event-url">📖 <a href="https://jerryfang2023-stack.github.io/AI-Radar/daily-detail.html">今日观察全文</a></div>
 </div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">2</div><div class="event-body"><div class="event-title">Thibault Sottiaux：用 Codex 就能 ... 造一个农场<span class="score top">S95</span></div><div class="event-core">用 Codex 就能 ... 造一个农场</div>
-<div class="event-url">🔗 <a href="https://x.com/thsottiaux/status/2061657264508006738">原文</a></div>
+<div class="event"><div class="event-row"><div class="event-rank a">2</div><div class="event-body"><div class="event-title">微软推出 MAI-Thinking-1 模型<span class="score">A90</span></div><div class="event-core">微软在 Build 2026 发布新一代推理模型，性能对标 OpenAI o3。</div>
+<div class="event-url">🔗 <a href="https://microsoft.ai/news/introducing-mai-thinking-1">原文</a></div>
 </div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">3</div><div class="event-body"><div class="event-title">Thibault Sottiaux：听说 AWS 是酷孩子待的地方. 你好，我们有 GPT-5.5<span class="score top">S95</span></div><div class="event-core">听说 AWS 是酷孩子待的地方. 你好，我们有 GPT-5.5</div>
-<div class="event-url">🔗 <a href="https://x.com/thsottiaux/status/2061644307111796984">原文</a></div>
-</div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">4</div><div class="event-body"><div class="event-title">Thibault Sottiaux：要不要把 Codex 改名叫 ChadGPT<span class="score top">S95</span></div><div class="event-core">要不要把 Codex 改名叫 ChadGPT</div>
-<div class="event-url">🔗 <a href="https://x.com/thsottiaux/status/2061572602888589807">原文</a></div>
-</div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">5</div><div class="event-body"><div class="event-title">Peter Yang：我最常用的技能哈哈<span class="score top">S95</span></div><div class="event-core">我最常用的技能哈哈</div>
-<div class="event-url">🔗 <a href="https://x.com/petergyang/status/2061586272305795355">原文</a></div>
-</div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">6</div><div class="event-body"><div class="event-title">Thariq：完整提示词在此:<span class="score top">S95</span></div><div class="event-core">完整提示词在此:</div>
-<div class="event-url">🔗 <a href="https://x.com/trq212/status/2061545635141361687">原文</a></div>
-</div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">7</div><div class="event-body"><div class="event-title">Thibault Sottiaux：听说 AWS 是酷孩子待的地方. 你好，我们有 GPT-5.5<span class="score top">S94</span></div><div class="event-core">听说 AWS 是酷孩子待的地方. 你好，我们有 GPT-5.5</div>
-<div class="event-url">🔗 <a href="https://x.com/thsottiaux/status/2061644307111796984">原文</a></div>
-</div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">8</div><div class="event-body"><div class="event-title">Thariq：been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done t<span class="score top">S94</span></div><div class="event-core">been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done this is one of my favorites from Suzanne:</div>
-<div class="event-url">🔗 <a href="https://x.com/trq212/status/2061545633560010826">原文</a></div>
-</div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">9</div><div class="event-body"><div class="event-title">Guillermo Rauch：MiniMax M3 is now the leading open model on the Next.js agent evaluations ( Ri<span class="score top">S94</span></div><div class="event-core">MiniMax M3 is now the leading open model on the Next.js agent evaluations ( Right behind Opus & GPT5, but 10× cheaper (And 20× cheaper right now on ▲ AI Gateway</div>
-<div class="event-url">🔗 <a href="https://x.com/rauchg/status/2061593874498531707">原文</a></div>
-</div></div></div>
-<div class="event"><div class="event-row"><div class="event-rank s">10</div><div class="event-body"><div class="event-title">Guillermo Rauch：Beautiful example of a full-stack agent on @vercel. Great learning material<span class="score top">S94</span></div><div class="event-core">Beautiful example of a full-stack agent on @vercel. Great learning material</div>
-<div class="event-url">🔗 <a href="https://x.com/rauchg/status/2061415178298937365">原文</a></div>
+<div class="event"><div class="event-row"><div class="event-rank a">3</div><div class="event-body"><div class="event-title">微软发布新MAI模型<span class="score">A89</span></div><div class="event-core">Simon Willison 分析微软 Build 2026 发布的新 MAI 模型细节。</div>
+<div class="event-url">🔗 <a href="https://simonwillison.net/2026/Jun/2/microsofts-new-models">原文</a></div>
 </div></div></div>
 </div>
-<div class="section"><div class="section-head"><span class="badge">2</span> 关键人物观点</div><div class="people-grid">
-<div class="person-card"><div class="person-name">Thibault Sottiaux</div><div class="person-quote">用 Codex 就能 ... 造一个农场</div></div>
-<div class="person-card"><div class="person-name">Thibault Sottiaux</div><div class="person-quote">听说 AWS 是酷孩子待的地方. 你好，我们有 GPT-5.5</div></div>
-<div class="person-card"><div class="person-name">Thibault Sottiaux</div><div class="person-quote">要不要把 Codex 改名叫 ChadGPT</div></div>
+
+<!-- MORE EVENTS -->
+<div class="section"><div class="section-head"><span class="badge">2</span> 更多值得关注</div>
+<div class="event"><div class="event-row"><div class="event-rank a" style="flex:0 0 28px;font-size:12px">4</div><div class="event-body"><div class="event-title" style="font-size:13.5px">NVIDIA 推出 NemoClaw 平台<span class="score">A88</span></div><div class="event-core">助力工业软件厂商构建自主 AI 工程师，NVIDIA 深化制造业 AI 布局。</div>
+<div class="event-url">🔗 <a href="https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-n">原文</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a" style="flex:0 0 28px;font-size:12px">5</div><div class="event-body"><div class="event-title" style="font-size:13.5px">微软 Build 2026：七项最重要的发布<span class="score">A87</span></div><div class="event-core">从 MAI 模型到开发工具，微软 Build 2026 全面更新 AI 产品线。</div>
+<div class="event-url">🔗 <a href="https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements">原文</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a" style="flex:0 0 28px;font-size:12px">6</div><div class="event-body"><div class="event-title" style="font-size:13.5px">Anthropic 工程团队：构建可靠 AI 系统的内部实践<span class="score">A86</span></div><div class="event-core">Anthropic 工程博客介绍团队如何构建可靠的 AI 系统。</div>
+<div class="event-url">🔗 <a href="https://www.anthropic.com/engineering">原文</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank b" style="flex:0 0 28px;font-size:12px">7</div><div class="event-body"><div class="event-title" style="font-size:13.5px">AI 在斯坦福法学院研究中胜过法学教授<span class="score">B78</span></div><div class="event-core">斯坦福法学院研究发现 AI 在法律分析任务中超越教授水平。</div>
+<div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48377761">原文</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank b" style="flex:0 0 28px;font-size:12px">8</div><div class="event-body"><div class="event-title" style="font-size:13.5px">MAI-Code-1-Flash<span class="score">B83</span></div><div class="event-core">微软发布 MAI-Code-1-Flash 代码生成模型。</div>
+<div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48374466">原文</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank b" style="flex:0 0 28px;font-size:12px">9</div><div class="event-body"><div class="event-title" style="font-size:13.5px">Project Glasswing 扩展<span class="score">B78</span></div><div class="event-core">微软扩展 Project Glasswing 项目。</div>
+<div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48377404">原文</a></div>
+</div></div></div>
+</div>
+
+<!-- KEY VIEWPOINTS (merged by person) -->
+<div class="section"><div class="section-head"><span class="badge">3</span> 今日关键人物观点</div><div class="people-grid">
+<div class="person-card"><div class="person-name">Thibault Sottiaux</div><div class="person-count">3 条观点</div>
+<div class="person-quote">用 Codex 就能造一个农场</div>
+<div class="person-quote">听说 AWS 是酷孩子待的地方——我们有 GPT-5.5</div>
+<div class="person-quote">要不要把 Codex 改名叫 ChadGPT？</div>
+<div class="person-link"><a href="https://x.com/thsottiaux/status/2061657264508006738">@thsottiaux</a></div>
+</div>
+<div class="person-card"><div class="person-name">Thariq</div><div class="person-count">2 条观点</div>
+<div class="person-quote">完整提示词在此</div>
+<div class="person-quote">在 Anthropic 工作的人怎么跟上 Claude 的节奏</div>
+<div class="person-link"><a href="https://x.com/trq212/status/2061545635141361687">@trq212</a></div>
+</div>
+<div class="person-card"><div class="person-name">Peter Yang</div><div class="person-count">1 条观点</div>
+<div class="person-quote">我最常用的技能哈哈</div>
+<div class="person-link"><a href="https://x.com/petergyang/status/2061586272305795355">@petergyang</a></div>
+</div>
 </div></div>
-<div class="section"><div class="section-head"><span class="badge">3</span> 趋势信号</div>
-<div class="signal-row"><div class="signal-tag platform">平台格局</div><div class="signal-text">微软 Build 2026 发布七项 AI 更新，Claude Code v2.1.161 进入企业协作流程。</div></div>
-<div class="signal-row"><div class="signal-tag adoption">落地节奏</div><div class="signal-text">企业 AI 从能力试点进入治理、交付和可运营阶段。</div></div>
-<div class="signal-row"><div class="signal-tag sentiment">社区情绪</div><div class="signal-text">开发者社区热议 Codex 与 Claude Code 对比趋势。</div></div>
+
+<!-- SIGNALS -->
+<div class="section"><div class="section-head"><span class="badge">4</span> 趋势信号</div>
+<div class="signal-row"><div class="signal-tag platform">平台格局</div><div class="signal-text">微软 Build 2026 发布 MAI-Thinking-1 和 MAI-Code-1 等多款模型，与 Claude Code、OpenAI Codex 形成正面竞争。</div></div>
+<div class="signal-row"><div class="signal-tag adoption">落地节奏</div><div class="signal-text">企业 AI 从能力试点进入治理、交付和可运营阶段，Anthropic 工程博客分享构建可靠系统的实践。</div></div>
+<div class="signal-row"><div class="signal-tag sentiment">行业动态</div><div class="signal-text">NVIDIA 推出 NemoClaw 平台，工业软件厂商开始大规模构建自主 AI 工程师。</div></div>
 </div>
-<div class="footer">观澜AI · WaveSight AI · 2026-06-03 11:47</div>
+
+<div class="footer">观澜AI · WaveSight AI · 2026-06-03</div>
 </div>
 </body>
 </html>
