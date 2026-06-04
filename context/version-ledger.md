@@ -19,32 +19,43 @@ priority: current
 
 | 字段 | 当前值 |
 |---|---|
-| 当前版本 | V2.2.1 |
-| 版本名 | 前台防回退门禁版 |
-| 版本层级 | Patch |
-| 发布日期 | 2026-06-01 |
-| 产品主版本 | V2.2 |
-| Git tag | `v2.2.1-frontstage-regression` |
-| 当前导航 | 今日观察 / 商业信号 / 趋势追踪 / 商业内参 |
+| 当前版本 | V3.0.0-data-observation-desk |
+| 版本名 | 数据观察台生产版 |
+| 版本层级 | Major |
+| 发布日期 | 2026-06-04 |
+| 产品主版本 | V3 |
+| Git tag | `v3.0.0-data-observation-desk` |
+| 当前入口 | 数据观察台 |
+
+## 内部运营后台版本
+
+| 字段 | 当前值 |
+|---|---|
+| 运营后台版本 | V1.1.1 |
+| 版本名 | 运营后台 + 数据观察台双向入口版 |
+| 版本范围 | `operations-console.html` / `v3-data-observation.html` / 数据观察台资源与生成脚本 |
+| 基准提交 | `fa9db651 Add operations data observation console` |
+| Git tag | `ops-console-v1.1.1` |
+| 说明 | 仅代表内部运营后台版本，不改变项目主版本 `V3.0.0-data-observation-desk`。 |
 
 ## 版本分层
 
 | 层级 | 使用条件 | 示例 |
 |---|---|---|
-| V2.2 | 当前产品主版本，不轻易改变 | 当前 AI 商业情报系统主线 |
-| V2.2.x | 页面修复、文案修复、样式修复、门禁补丁 | V2.2.1 前台防回退门禁版 |
-| V2.3 | 栏目结构、数据结构或生成规则明显升级 | 新增稳定栏目或重建资产模型 |
-| V3.0 | 产品定位、导航、信息架构或核心生成链路大变化 | 产品形态重新定义 |
+| V2.2 | 旧四栏目网站主版本 | 今日观察 / 商业信号 / 趋势追踪 / 商业内参 |
+| V2.2.x | V2 页面修复、文案修复、样式修复、门禁补丁 | V2.2.1 前台防回退门禁版 |
+| V3.0 | 产品入口转为 AI 数据中心 / 内容选题中心 | V3.0.0 数据观察台生产版 |
+| V3.0.x | V3 数据观察台页面、文案、样式、关系和趋势模块修复 | 后续小修 |
 
 ## 当前有效页面
 
 | 页面 | 文件 | 当前口径 |
 |---|---|---|
-| 首页 | `01-SiteV2/site/index.html` | V2.2.1 首页，趋势模块展示真实趋势候选或正式趋势报告 |
-| 今日观察 | `01-SiteV2/site/daily.html` / `daily-detail.html` | newsletter 口径，一眼看清当天要点 |
-| 商业信号 | `01-SiteV2/site/signals.html` / `signal-detail.html` | 事实卡、融资卡、案例卡和产品服务卡的前台化展示 |
-| 趋势追踪 | `01-SiteV2/site/trend-tracking.html` / `trend-detail.html` | 区分正在形成的趋势和正式趋势报告，只展示直接关联材料 |
-| 商业内参 | `01-SiteV2/site/brief.html` | 周期性判断和会员层材料，不借用旧首页或旧信号模块 |
+| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，基于当日 Raw / Pool / Card / 观点 / 趋势资产，展示 Card 工作区、关系图谱、趋势候选和历史趋势 |
+| 根入口 | `01-SiteV2/site/index.html` | 只跳转到 V3 数据观察台，不再承载 V2 首页 |
+| 运营控制台 | `01-SiteV2/site/operations-console.html` | 运营后台保留，不属于 V2 前台页面 |
+| 管线仪表盘 | `01-SiteV2/site/pipeline-dashboard.html` | 生产链路仪表盘保留，不属于 V2 前台页面 |
+| 管理入口 | `01-SiteV2/site/admin.html` | 管理入口保留，不属于 V2 前台页面 |
 
 ## 当前有效口径
 
@@ -55,26 +66,28 @@ priority: current
 | 页面执行 | `context/06-execution-harness.md` |
 | 质量门禁 | `context/04-qc-rules.md` |
 | 页面契约 | `context/frontstage-page-contracts.md` |
-| 前台数据 | `01-SiteV2/site/data/site-content.json`，当前 activeDate 必须跟最新生产内容日期一致 |
+| 前台数据 | `01-SiteV2/site/data/v3-data-observation-desk.json`，当前 activeDate 必须跟最新生产 Card 日期一致 |
 | 发布闭环 | 自动监测 PR 人工合并进 `main` 后，GitHub Pages 自动部署完整 `01-SiteV2/site` 前台 |
 
 ## 当前禁止再出现
 
-- V2.1 / V2.0 公开版本口径。
-- 旧 hero、旧趋势模块、旧观点卡模块、旧今日观察总结卡。
+- V2.2 / V2.1 / V2.0 公开四栏目网站口径。
+- 旧 hero、旧趋势模块、旧观点卡模块、旧今日观察总结卡、旧四栏目首页。
+- V2 前台页面继续作为当前入口或被新任务继承。
 - `今日判断`、`今天的趋势判断还在观察`、`历史内容已完成` 等旧占位文案。
 - `TRD-WATCH-*` 合成趋势报告 id。
 - `dailySummaryCard`、`legacyPerspectiveCard`、`mountTrendReportLegacy` 等已退休组件。
 - 趋势页用标签重叠、全站列表或历史内容 fallback 补充右侧案例、观点或信号。
-- 前台展示 Raw、Pool、gate、eligible、index_only、入库、同步等内部生产语言。
+- 前台展示 Raw、Pool、gate、eligible、index_only、入库、同步、threshold_pending、threshold_passed 等内部生产语言。
+- 把标签数量、日期数字或内部状态当作趋势描述本身。
 
 ## 当前必须运行的门禁
 
 页面 / 文案 / 前台数据改动至少运行：
 
 ```powershell
-node --check 01-SiteV2/site/assets/app.js
-node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs
+node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
+node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
 node agent-workflow/tools/frontstage-regression-gate.mjs
 ```
 
@@ -92,11 +105,13 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | 冻结点 | 页面 | 日期 | 版本 | 不允许回退内容 | 通过门禁 |
 |---|---|---|---|---|---|
-| `V2.2.1-freeze-frontstage-20260601` | 首页 / 趋势追踪 / 趋势详情 | 2026-06-01 | V2.2.1 | 旧趋势模块、合成趋势、非直接关联内容、V2.1 口径 | `frontstage-regression-gate` passed |
+| `V3.0.0-freeze-data-observation-desk-20260604` | 数据观察台 | 2026-06-04 | V3.0.0-data-observation-desk | V2 前台四栏目页面、旧首页、标签数量伪趋势、内部状态语言、Raw / Pool 字段外露 | `frontstage-regression-gate` passed |
+| `V2.2.1-freeze-frontstage-20260601` | 首页 / 趋势追踪 / 趋势详情 | 2026-06-01 | V2.2.1 | 旧趋势模块、合成趋势、非直接关联内容、V2.1 口径 | 已退役 |
 
 ## 历史版本摘要
 
 | 版本 | 摘要 | 当前状态 |
 |---|---|---|
-| V2.2 | 当前产品主版本，确定四个前台导航和 V2 生产线 | 仍为产品主线 |
-| V2.2.1 | 前台防回退门禁版，补齐版本基线、页面契约、趋势直接关联和前台回归门禁 | 当前执行版本 |
+| V3.0.0-data-observation-desk | 前台入口转为数据观察台，保留每日生产资产，删除 V2 前台页面，运营仪表盘保留 | 当前执行版本 |
+| V2.2 | 四栏目网站主版本，确定今日观察 / 商业信号 / 趋势追踪 / 商业内参 | 已退役 |
+| V2.2.1 | 前台防回退门禁版，补齐版本基线、页面契约、趋势直接关联和前台回归门禁 | 已退役 |
