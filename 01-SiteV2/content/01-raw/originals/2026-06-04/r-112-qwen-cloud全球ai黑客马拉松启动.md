@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-04T00:38:28.113Z
+collected_at: 2026-06-04T04:44:56.139Z
 language: mixed
 full_text_hash: 694ed931e9c344e6
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-112-qwen-cloud全球ai黑客马拉松启动.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Qwen Cloud全球AI黑客马拉松启动","discovery_summary":"首届Qwen Cloud全球AI黑客马拉松现已启动！ 参与5大高级赛道，在全球舞台上挑战AI智能体极限。 总奖金池超过70,000美元（赛道冠军1万美元）。 立即在Devpost报名：https://click.qwencloud.com/m/20000000281/","source_name":"X：阿里云 / Alibaba Cloud (@alibaba_cloud)","origin_url":"","discovered_at":"2026-06-04T00:31:56.145Z","rank_on_page":19,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Qwen Cloud全球AI黑客马拉松启动","discovery_summary":"首届Qwen Cloud全球AI黑客马拉松现已启动！ 参与5大高级赛道，在全球舞台上挑战AI智能体极限。 总奖金池超过70,000美元（赛道冠军1万美元）。 立即在Devpost报名：https://click.qwencloud.com/m/20000000281/","source_name":"X：阿里云 / Alibaba Cloud (@alibaba_cloud)","origin_url":"","discovered_at":"2026-06-04T04:38:54.633Z","rank_on_page":19,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 694ed931e9c344e6
 semantic_hash: 78331688c42a9c02
 duplicate_of: ""
-first_seen_at: "2026-06-04T00:38:28.113Z"
-last_seen_at: 2026-06-04T00:38:28.113Z
+first_seen_at: "2026-06-04T04:44:56.139Z"
+last_seen_at: 2026-06-04T04:44:56.139Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -187,7 +187,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Qwen Cloud全球AI黑客马拉松启动","discovery_summary":"首届Qwen Cloud全球AI黑客马拉松现已启动！ 参与5大高级赛道，在全球舞台上挑战AI智能体极限。 总奖金池超过70,000美元（赛道冠军1万美元）。 立即在Devpost报名：https://click.qwencloud.com/m/20000000281/","source_name":"X：阿里云 / Alibaba Cloud (@alibaba_cloud)","origin_url":"","discovered_at":"2026-06-04T00:31:56.145Z","rank_on_page":19,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Qwen Cloud全球AI黑客马拉松启动","discovery_summary":"首届Qwen Cloud全球AI黑客马拉松现已启动！ 参与5大高级赛道，在全球舞台上挑战AI智能体极限。 总奖金池超过70,000美元（赛道冠军1万美元）。 立即在Devpost报名：https://click.qwencloud.com/m/20000000281/","source_name":"X：阿里云 / Alibaba Cloud (@alibaba_cloud)","origin_url":"","discovered_at":"2026-06-04T04:38:54.633Z","rank_on_page":19,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

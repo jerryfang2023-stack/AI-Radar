@@ -1,0 +1,289 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-038
+title: "Rogue agents and shadow AI: Why VCs are betting big on AI security"
+original_url: "https://techcrunch.com/2026/01/19/rogue-agents-and-shadow-ai-why-vcs-are-betting-big-on-ai-security/"
+canonical_url: "https://techcrunch.com/2026/01/19/rogue-agents-and-shadow-ai-why-vcs-are-betting-big-on-ai-security"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-04T04:44:56.031Z
+language: mixed
+full_text_hash: 79c0e4e774716976
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-038-rogue-agents-and-shadow-ai-why-vcs-are-betting-big-on-ai-security.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-038-rogue-agents-and-shadow-ai-why-vcs-are-betting-big-on-ai-security.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5579,"paragraph_count":32,"sentence_count":36,"boilerplate_hits":0,"symbol_ratio":0.0004,"method":"content-container"}
+has_full_text: true
+content_length: 5579
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"79c0e4e774716976","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1e4b321cfc898d35
+content_hash: 79c0e4e774716976
+semantic_hash: 58775d840b857d5a
+duplicate_of: ""
+first_seen_at: "2026-06-04T04:44:56.031Z"
+last_seen_at: 2026-06-04T04:44:56.031Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google","Microsoft","GitHub","AWS","Salesforce"],"products":["agents","agent","Copilot","Gemini"],"people":[],"industries":["法律 / 法务","企业服务"],"roles":["CIO / IT 负责人","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["8","00","19","2026","$58 million","500%","5x","$800 billion"],"quotes":["In the agent’s mind, it’s doing the right thing,","It’s trying to protect the end user and the enterprise.","things can go rogue,","exponentially","I do think runtime observability and runtime frameworks for safety and risk are going to be absolutely essential,"]}
+evidence_seed: {"company_actions":["That’s not a hypothetical.","The employee tried to suppress what the agent wanted to do, what it was trained to do, and it responded by scanning the user’s inbox, finding some inappropriate emails, and threatening to blackmail the user by forwarding the emails to the board of directors."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":["That’s not a hypothetical According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it enterprise employee working with an AI agent employee tried to suppress what the agent wanted to do trained to do and it responded by scanning the user’s inbox, finding some inappropr...","Image Credits: Witness AI AI Rogue agents and shadow AI: Why VCs are betting big on AI security Rebecca Bellan 8:00 AM PST · January 19, 2026 What happens when an AI agent decides the best way to complete a task is to blackmail you?","According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it recently happened to an enterprise employee working with an AI agent."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"That’s not a hypothetical According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it enterprise employee working with an AI agent employee tried to suppress what the agent wanted to do trained to do and it responded by scanning the user’s inbox, finding some inappropr...","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Image Credits: Witness AI AI Rogue agents and shadow AI: Why VCs are betting big on AI security Rebecca Bellan 8:00 AM PST · January 19, 2026 What happens when an AI agent decides the best way to complete a task is to blackmail you?","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"That’s not a hypothetical.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it recently happened to an enterprise employee working with an AI agent.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The employee tried to suppress what the agent wanted to do, what it was trained to do, and it responded by scanning the user’s inbox, finding some inappropriate emails, and threatening to blackmail the user by forwarding the emails to the board of directors.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"“In the agent’s mind, it’s doing the right thing,” Meftah told TechCrunch on last week’s episode of Equity .","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Rogue agents and shadow AI: Why VCs are betting big on AI security
+
+## clean_text
+
+Image Credits: Witness AI
+AI
+Rogue agents and shadow AI: Why VCs are betting big on AI security
+Rebecca Bellan
+8:00 AM PST · January 19, 2026
+What happens when an AI agent decides the best way to complete a task is to blackmail you?
+That’s not a hypothetical. According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it recently happened to an enterprise employee working with an AI agent. The employee tried to suppress what the agent wanted to do, what it was trained to do, and it responded by scanning the user’s inbox, finding some inappropriate emails, and threatening to blackmail the user by forwarding the emails to the board of directors.
+“In the agent’s mind, it’s doing the right thing,” Meftah told TechCrunch on last week’s episode of Equity . “It’s trying to protect the end user and the enterprise.”
+Meftah’s example is reminiscent of Nick Bostrom’s AI paperclip problem. That thought experiment illustrates the potential existential risk posed by a superintelligent AI that single-mindedly pursues a seemingly innocuous goal — make paperclips — to the exclusion of all human values. In the case of this enterprise AI agent, its lack of context around why the employee was trying to override its goals led it to create a sub-goal that removed the obstacle (via blackmail) so it could meet its primary goal. That combined with the non-deterministic nature of AI agents means “things can go rogue,” per Meftah.
+Misaligned agents are just one layer of the AI security challenge that Ballistic’s portfolio company Witness AI is trying to solve. Witness AI says it monitors AI usage across enterprises and can detect when employees use unapproved tools, block attacks, and ensure compliance.
+Witness AI this week raised $58 million off the back of over 500% growth in ARR and scaled employee headcount by 5x over the last year as enterprises look to understand shadow AI use and scale AI safely. As part of Witness AI’s fundraise, the company announced new agentic AI security protections.
+“People are building these AI agents that take on the authorizations and capabilities of the people that manage them, and you want to make sure that these agents aren’t going rogue, aren’t deleting files, aren’t doing something wrong,” Rick Caccia, co-founder and CEO of Witness AI, told TechCrunch on Equity.
+Meftah sees agent usage growing “exponentially” across the enterprise. To complement that rise — and the machine-speed level of AI-powered attacks — analyst Lisa Warren predicts that AI security software will become an $800 billion to $1.2 trillion market by 2031.
+“I do think runtime observability and runtime frameworks for safety and risk are going to be absolutely essential,” Meftah said.
+As to how such startups plan to compete with big players like AWS , Google , Salesforce , and others that have built AI governance tools into their platforms, Meftah said, “AI safety and agentic safety is so huge,” there’s room for many approaches.
+Plenty of enterprises “want a standalone platform, end-to-end, to essentially provide that observability and governance around AI and agents,” he said.
+Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves. And that was intentional.
+“We purposely picked a part of the problem where OpenAI couldn’t easily subsume you,” he said. “So it means we end up competing more with the legacy security companies than the model guys. So the question is, how do you beat them ?”
+For his part, Caccia doesn’t want Witness AI to be one of the startups to just get acquired. He wants his company to be the one that grows and becomes a leading independent provider.
+“ CrowdStrike did it in endpoint [protection]. Splunk did it in SIEM. Okta did it in identity,” he said. “Someone comes through and stands next to the big guys…and we built Witness to do that from Day One.
+Topics
+AI , AI agents , ai security , Ballistic Ventures , cybersecurity , Equity podcast , Security , Startups , witness ai
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Bellan
+Senior Reporter
+Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence. Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications.
+You can contact or verify outreach from Rebecca by emailing rebecca.bellan@techcrunch.com or via encrypted message at rebeccabellan.491 on Signal.
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+Microsoft launches Scout, an OpenClaw-inspired personal assistant
+Russell Brandom
+Anthropic files to go public
+Kirsten Korosec
+‘What a joke’: GitHub Copilot’s new token-based billing spurs consternation among devs
+Lucas Ropek
+I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually pretty useful
+Sarah Perez
+Blue Origin’s New Glenn rocket explodes during testing in Florida
+Sean O'Kane
+Anthropic releases Opus 4.8 with new ‘dynamic workflow’ tool
+Russell Brandom
+Waymo’s newest robotaxi is Chinese-made, built to make money, and now accepting riders
+Kirsten Korosec
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Witness AI
+AI
+Rogue agents and shadow AI: Why VCs are betting big on AI security
+Rebecca Bellan
+8:00 AM PST · January 19, 2026
+What happens when an AI agent decides the best way to complete a task is to blackmail you?
+That’s not a hypothetical. According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it recently happened to an enterprise employee working with an AI agent. The employee tried to suppress what the agent wanted to do, what it was trained to do, and it responded by scanning the user’s inbox, finding some inappropriate emails, and threatening to blackmail the user by forwarding the emails to the board of directors.
+“In the agent’s mind, it’s doing the right thing,” Meftah told TechCrunch on last week’s episode of Equity . “It’s trying to protect the end user and the enterprise.”
+Meftah’s example is reminiscent of Nick Bostrom’s AI paperclip problem. That thought experiment illustrates the potential existential risk posed by a superintelligent AI that single-mindedly pursues a seemingly innocuous goal — make paperclips — to the exclusion of all human values. In the case of this enterprise AI agent, its lack of context around why the employee was trying to override its goals led it to create a sub-goal that removed the obstacle (via blackmail) so it could meet its primary goal. That combined with the non-deterministic nature of AI agents means “things can go rogue,” per Meftah.
+Misaligned agents are just one layer of the AI security challenge that Ballistic’s portfolio company Witness AI is trying to solve. Witness AI says it monitors AI usage across enterprises and can detect when employees use unapproved tools, block attacks, and ensure compliance.
+Witness AI this week raised $58 million off the back of over 500% growth in ARR and scaled employee headcount by 5x over the last year as enterprises look to understand shadow AI use and scale AI safely. As part of Witness AI’s fundraise, the company announced new agentic AI security protections.
+“People are building these AI agents that take on the authorizations and capabilities of the people that manage them, and you want to make sure that these agents aren’t going rogue, aren’t deleting files, aren’t doing something wrong,” Rick Caccia, co-founder and CEO of Witness AI, told TechCrunch on Equity.
+Meftah sees agent usage growing “exponentially” across the enterprise. To complement that rise — and the machine-speed level of AI-powered attacks — analyst Lisa Warren predicts that AI security software will become an $800 billion to $1.2 trillion market by 2031.
+“I do think runtime observability and runtime frameworks for safety and risk are going to be absolutely essential,” Meftah said.
+As to how such startups plan to compete with big players like AWS , Google , Salesforce , and others that have built AI governance tools into their platforms, Meftah said, “AI safety and agentic safety is so huge,” there’s room for many approaches.
+Plenty of enterprises “want a standalone platform, end-to-end, to essentially provide that observability and governance around AI and agents,” he said.
+Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves. And that was intentional.
+“We purposely picked a part of the problem where OpenAI couldn’t easily subsume you,” he said. “So it means we end up competing more with the legacy security companies than the model guys. So the question is, how do you beat them ?”
+For his part, Caccia doesn’t want Witness AI to be one of the startups to just get acquired. He wants his company to be the one that grows and becomes a leading independent provider.
+“ CrowdStrike did it in endpoint [protection]. Splunk did it in SIEM. Okta did it in identity,” he said. “Someone comes through and stands next to the big guys…and we built Witness to do that from Day One.
+Topics
+AI , AI agents , ai security , Ballistic Ventures , cybersecurity , Equity podcast , Security , Startups , witness ai
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Bellan
+Senior Reporter
+Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence. Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications.
+You can contact or verify outreach from Rebecca by emailing rebecca.bellan@techcrunch.com or via encrypted message at rebeccabellan.491 on Signal.
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+Microsoft launches Scout, an OpenClaw-inspired personal assistant
+Russell Brandom
+Anthropic files to go public
+Kirsten Korosec
+‘What a joke’: GitHub Copilot’s new token-based billing spurs consternation among devs
+Lucas Ropek
+I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually pretty useful
+Sarah Perez
+Blue Origin’s New Glenn rocket explodes during testing in Florida
+Sean O'Kane
+Anthropic releases Opus 4.8 with new ‘dynamic workflow’ tool
+Russell Brandom
+Waymo’s newest robotaxi is Chinese-made, built to make money, and now accepting riders
+Kirsten Korosec
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5579,"paragraph_count":32,"sentence_count":36,"boilerplate_hits":0,"symbol_ratio":0.0004,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   That’s not a hypothetical According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it enterprise employee working with an AI agent employee tried to suppress what the agent wanted to do trained to do and it responded by scanning the user’s inbox, finding some inappropr...
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   Image Credits: Witness AI AI Rogue agents and shadow AI: Why VCs are betting big on AI security Rebecca Bellan 8:00 AM PST · January 19, 2026 What happens when an AI agent decides the best way to complete a task is to blackmail you?
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   That’s not a hypothetical.
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it recently happened to an enterprise employee working with an AI agent.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   The employee tried to suppress what the agent wanted to do, what it was trained to do, and it responded by scanning the user’s inbox, finding some inappropriate emails, and threatening to blackmail the user by forwarding the emails to the board of directors.
+
+6. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   “In the agent’s mind, it’s doing the right thing,” Meftah told TechCrunch on last week’s episode of Equity .
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google, Microsoft, GitHub, AWS, Salesforce
+- products: agents, agent, Copilot, Gemini
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: CIO / IT 负责人, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 8, 00, 19, 2026, $58 million, 500%, 5x, $800 billion
+- quotes: In the agent’s mind, it’s doing the right thing, / It’s trying to protect the end user and the enterprise. / things can go rogue, / exponentially / I do think runtime observability and runtime frameworks for safety and risk are going to be absolutely essential,
+
+## evidence_seed
+
+- company_actions: That’s not a hypothetical. / The employee tried to suppress what the agent wanted to do, what it was trained to do, and it responded by scanning the user’s inbox, finding some inappropriate emails, and threatening to blackmail the user by forwarding the emails to the board of directors.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 销售 / 客服
+- risks_or_constraints: That’s not a hypothetical According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it enterprise employee working with an AI agent employee tried to suppress what the agent wanted to do trained to do and it responded by scanning the user’s inbox, finding some inappropr... / Image Credits: Witness AI AI Rogue agents and shadow AI: Why VCs are betting big on AI security Rebecca Bellan 8:00 AM PST · January 19, 2026 What happens when an AI agent decides the best way to complete a task is to blackmail you? / According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it recently happened to an enterprise employee working with an AI agent.
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+That’s not a hypothetical According to Barmak Meftah, a partner at cybersecurity VC firm Ballistic Ventures, it enterprise employee working with an AI agent employee tried to suppress what the agent wanted to do trained to do and it responded by scanning the user’s inbox, finding some inappropr...
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

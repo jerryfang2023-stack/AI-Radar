@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-03T23:10:23.000Z"
-collected_at: 2026-06-04T00:38:28.087Z
+collected_at: 2026-06-04T04:44:56.101Z
 language: mixed
 full_text_hash: b80fbd24ff6cf7ea
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-076-ai早报-微软战略-kimi-work-beta-腾讯报告.md"
@@ -45,7 +45,7 @@ capture_scope: aihot_visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"AI早报：微软战略、Kimi Work Beta、腾讯报告","discovery_summary":"微软CEO纳德拉在Build大会阐释Frontier Intelligence Platform战略，强调私有评测集为企业AI核心IP；月之暗面Kimi Work Beta上线，92%代码由AI生成，桌面端Working Agent正式推出；腾讯研究院发布3万字报告，提出组织竞争力公式：人才密度×AI杠杆/组织摩擦。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2062310958534681008","discovered_at":"2026-06-04T00:31:57.404Z","rank_on_page":43,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"AI早报：微软战略、Kimi Work Beta、腾讯报告","discovery_summary":"微软CEO纳德拉在Build大会阐释Frontier Intelligence Platform战略，强调私有评测集为企业AI核心IP；月之暗面Kimi Work Beta上线，92%代码由AI生成，桌面端Working Agent正式推出；腾讯研究院发布3万字报告，提出组织竞争力公式：人才密度×AI杠杆/组织摩擦。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2062310958534681008","discovered_at":"2026-06-04T04:38:55.935Z","rank_on_page":113,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: b80fbd24ff6cf7ea
 semantic_hash: cb5f9666d7f3f54c
 duplicate_of: ""
 first_seen_at: "2026-06-03T23:10:23.000Z"
-last_seen_at: 2026-06-04T00:38:28.087Z
+last_seen_at: 2026-06-04T04:44:56.101Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -170,7 +170,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"AI早报：微软战略、Kimi Work Beta、腾讯报告","discovery_summary":"微软CEO纳德拉在Build大会阐释Frontier Intelligence Platform战略，强调私有评测集为企业AI核心IP；月之暗面Kimi Work Beta上线，92%代码由AI生成，桌面端Working Agent正式推出；腾讯研究院发布3万字报告，提出组织竞争力公式：人才密度×AI杠杆/组织摩擦。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2062310958534681008","discovered_at":"2026-06-04T00:31:57.404Z","rank_on_page":43,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"AI早报：微软战略、Kimi Work Beta、腾讯报告","discovery_summary":"微软CEO纳德拉在Build大会阐释Frontier Intelligence Platform战略，强调私有评测集为企业AI核心IP；月之暗面Kimi Work Beta上线，92%代码由AI生成，桌面端Working Agent正式推出；腾讯研究院发布3万字报告，提出组织竞争力公式：人才密度×AI杠杆/组织摩擦。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2062310958534681008","discovered_at":"2026-06-04T04:38:55.935Z","rank_on_page":113,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

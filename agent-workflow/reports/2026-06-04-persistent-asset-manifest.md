@@ -1,6 +1,6 @@
 # 2026-06-04 Persistent Asset Manifest
 
-- generated_at: 2026-06-04T08:38:53+08:00
+- generated_at: 2026-06-04T12:45:20+08:00
 - workflow_mode: persistent_assets_pr
 - monitor: success
 - monitor_readiness: success
@@ -22,8 +22,8 @@
 | Business signals | present |
 | Opinion candidates | present |
 | Opinion cards list | present |
-| Signal card files | 12 |
-| Opinion card files | 9 |
+| Signal card files | 11 |
+| Opinion card files | 11 |
 | Site content data | present |
 
 ## Persistence Rule

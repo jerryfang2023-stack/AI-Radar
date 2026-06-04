@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-04T00:38:28.112Z
+collected_at: 2026-06-04T04:44:56.138Z
 language: mixed
 full_text_hash: cbed4286a9b33903
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-111-sensor-tower-openai-旗下-chatgpt-月活已破-10-亿-史上最快.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Sensor Tower：OpenAI 旗下 ChatGPT 月活已破 10 亿，史上最快","discovery_summary":"据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2025 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。","source_name":"IT之家（RSS）","origin_url":"","discovered_at":"2026-06-04T00:31:56.144Z","rank_on_page":16,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Sensor Tower：OpenAI 旗下 ChatGPT 月活已破 10 亿，史上最快","discovery_summary":"据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2025 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。","source_name":"IT之家（RSS）","origin_url":"","discovered_at":"2026-06-04T04:38:54.632Z","rank_on_page":16,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: cbed4286a9b33903
 semantic_hash: e203e1938e8baa40
 duplicate_of: ""
-first_seen_at: "2026-06-04T00:38:28.112Z"
-last_seen_at: 2026-06-04T00:38:28.112Z
+first_seen_at: "2026-06-04T04:44:56.138Z"
+last_seen_at: 2026-06-04T04:44:56.138Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -184,7 +184,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Sensor Tower：OpenAI 旗下 ChatGPT 月活已破 10 亿，史上最快","discovery_summary":"据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2025 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。","source_name":"IT之家（RSS）","origin_url":"","discovered_at":"2026-06-04T00:31:56.144Z","rank_on_page":16,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Sensor Tower：OpenAI 旗下 ChatGPT 月活已破 10 亿，史上最快","discovery_summary":"据市场情报机构 Sensor Tower 估计，OpenAI 旗下 ChatGPT 全球月活跃用户在 2025 年 5 月突破 10 亿，成为达成此里程碑最快的应用，增速超过 Google Maps、TikTok 等。同期，其竞争对手 Anthropic 的 Claude 月活达 5600 万，同比增幅约 640%，增长势头迅猛。数据显示，部分用户已开始在 Claude 与 ChatGPT 间切换使用。在达成用户里程碑之际，Anthropic 已秘密递交 IPO 申请，OpenAI 也计划筹备上市。","source_name":"IT之家（RSS）","origin_url":"","discovered_at":"2026-06-04T04:38:54.632Z","rank_on_page":16,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

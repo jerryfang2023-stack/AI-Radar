@@ -1,0 +1,275 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-047",
+  "title": "AI SDK by Vercel",
+  "original_url": "https://ai-sdk.dev/docs/introduction",
+  "canonical_url": "https://ai-sdk.dev/docs/introduction",
+  "source_name": "follow-builders cloud fallback / keyword search / Anysearch",
+  "source_type": "builder",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "follow-builders",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-04T04:44:56.049Z",
+  "language": "mixed",
+  "full_text": "AI SDK by Vercel\nCopy markdown\nAI SDK\nThe AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.\nWhy use the AI SDK?\nIntegrating large language models (LLMs) into applications is complicated and heavily dependent on the specific model provider you use.\nThe AI SDK standardizes integrating artificial intelligence (AI) models across supported providers . This enables developers to focus on building great AI applications, not waste time on technical details.\nFor example, here’s how you can generate text with various models using the AI SDK:\nGateway\nProvider\nCustom\nClaude Sonnet 4.5\n1 import { generateText } from \"ai\" ;\n3 const { text } = await generateText ( {\n4 model : \"anthropic/claude-sonnet-4.5\" ,\n5 prompt : \"What is love?\" ,\n6 } ) ;\nLove is a complex and multifaceted emotion that can be felt and expressed in many different ways. It involves deep affection, care, compassion, and connection towards another person or thing.\nThe AI SDK has two main libraries:\nAI SDK Core : A unified API for generating text, structured objects, tool calls, and building agents with LLMs.\nAI SDK UI : A set of framework-agnostic hooks for quickly building chat and generative user interface.\nModel Providers\nThe AI SDK supports multiple model providers .\nVercel AI Gateway\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nOpenAI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAnthropic\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Generative AI\nImage Input Object Generation Tool Usage Tool Streaming\nxAI Grok\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAzure\nImage Input Object Generation Tool Usage Tool Streaming\nAmazon Bedrock\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nGroq\nImage Input Object Generation Tool Usage Tool Streaming\nFal AI\nImage Generation\nDeepInfra\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Vertex AI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nMistral\nImage Input Object Generation Tool Usage Tool Streaming\nTogether.ai\nObject Generation Tool Usage Tool Streaming\nCohere\nTool Usage Tool Streaming\nFireworks\nImage Generation Object Generation Tool Usage Tool Streaming\nDeepSeek\nObject Generation Tool Usage Tool Streaming\nCerebras\nObject Generation Tool Usage Tool Streaming\nPerplexity\nLuma AI\nImage Generation\nBaseten\nObject Generation Tool Usage\nTemplates\nWe've built some templates that include AI SDK integrations for different use cases, providers, and frameworks. You can use these templates to get started with your AI-powered application.\nStarter Kits\nChatbot Starter Template\nUses the AI SDK and Next.js. Features persistence, multi-modal chat, and more.\nInternal Knowledge Base (RAG)\nUses AI SDK Language Model Middleware for RAG and enforcing guardrails.\nMulti-Modal Chat\nUses Next.js and AI SDK useChat hook for multi-modal message chat interface.\nSemantic Image Search\nAn AI semantic image search app template built with Next.js, AI SDK, and Postgres.\nNatural Language PostgreSQL\nQuery PostgreSQL using natural language with AI SDK and GPT-4o.\nFeature Exploration\nFeature Flags Example\nAI SDK with Next.js, Feature Flags, and Edge Config for dynamic model switching.\nChatbot with Telemetry\nAI SDK chatbot with OpenTelemetry support.\nStructured Object Streaming\nUses AI SDK useObject hook to stream structured object generation.\nMulti-Step Tools\nUses AI SDK streamText function to handle multiple tool steps automatically.\nFrameworks\nNext.js OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Next.js.\nNuxt OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Nuxt.js.\nSvelteKit OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and SvelteKit.\nSolid OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Solid.\nGenerative UI\nGemini Chatbot\nUses Google Gemini, AI SDK, and Next.js.\nGenerative UI with RSC (experimental)\nUses Next.js, AI SDK, and streamUI to create generative UIs with React Server Components.\nSecurity\nBot Protection\nUses Kasada, OpenAI GPT-4, AI SDK, and Next.js.\nRate Limiting\nUses Vercel KV, OpenAI GPT-4, AI SDK, and Next.js.\nJoin our Community\nIf you have questions about anything related to the AI SDK, you're always welcome to ask our community on the Vercel Community .\nllms.txt (for Cursor, Windsurf, Copilot, Claude etc.)\nYou can access the entire AI SDK documentation in Markdown format at ai-sdk.dev/llms.txt . This can be used to ask any LLM (assuming it has a big enough context window) questions about the AI SDK based on the most up-to-date documentation.\nExample Usage\nFor instance, to prompt an LLM with questions about the AI SDK:\nCopy the documentation contents from ai-sdk.dev/llms.txt\nUse the following prompt format:\n1 Documentation:\n2 {paste documentation here}\n3 ---\n4 Based on the above documentation, answer the following:\n5 {your question}",
+  "clean_text": "AI SDK by Vercel\nCopy markdown\nAI SDK\nThe AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.\nWhy use the AI SDK?\nIntegrating large language models (LLMs) into applications is complicated and heavily dependent on the specific model provider you use.\nThe AI SDK standardizes integrating artificial intelligence (AI) models across supported providers . This enables developers to focus on building great AI applications, not waste time on technical details.\nFor example, here’s how you can generate text with various models using the AI SDK:\nGateway\nProvider\nCustom\nClaude Sonnet 4.5\n1 import { generateText } from \"ai\" ;\n3 const { text } = await generateText ( {\n4 model : \"anthropic/claude-sonnet-4.5\" ,\n5 prompt : \"What is love?\" ,\n6 } ) ;\nLove is a complex and multifaceted emotion that can be felt and expressed in many different ways. It involves deep affection, care, compassion, and connection towards another person or thing.\nThe AI SDK has two main libraries:\nAI SDK Core : A unified API for generating text, structured objects, tool calls, and building agents with LLMs.\nAI SDK UI : A set of framework-agnostic hooks for quickly building chat and generative user interface.\nModel Providers\nThe AI SDK supports multiple model providers .\nVercel AI Gateway\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nOpenAI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAnthropic\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Generative AI\nImage Input Object Generation Tool Usage Tool Streaming\nxAI Grok\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAzure\nImage Input Object Generation Tool Usage Tool Streaming\nAmazon Bedrock\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nGroq\nImage Input Object Generation Tool Usage Tool Streaming\nFal AI\nImage Generation\nDeepInfra\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Vertex AI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nMistral\nImage Input Object Generation Tool Usage Tool Streaming\nTogether.ai\nObject Generation Tool Usage Tool Streaming\nCohere\nTool Usage Tool Streaming\nFireworks\nImage Generation Object Generation Tool Usage Tool Streaming\nDeepSeek\nObject Generation Tool Usage Tool Streaming\nCerebras\nObject Generation Tool Usage Tool Streaming\nPerplexity\nLuma AI\nImage Generation\nBaseten\nObject Generation Tool Usage\nTemplates\nWe've built some templates that include AI SDK integrations for different use cases, providers, and frameworks. You can use these templates to get started with your AI-powered application.\nStarter Kits\nChatbot Starter Template\nUses the AI SDK and Next.js. Features persistence, multi-modal chat, and more.\nInternal Knowledge Base (RAG)\nUses AI SDK Language Model Middleware for RAG and enforcing guardrails.\nMulti-Modal Chat\nUses Next.js and AI SDK useChat hook for multi-modal message chat interface.\nSemantic Image Search\nAn AI semantic image search app template built with Next.js, AI SDK, and Postgres.\nNatural Language PostgreSQL\nQuery PostgreSQL using natural language with AI SDK and GPT-4o.\nFeature Exploration\nFeature Flags Example\nAI SDK with Next.js, Feature Flags, and Edge Config for dynamic model switching.\nChatbot with Telemetry\nAI SDK chatbot with OpenTelemetry support.\nStructured Object Streaming\nUses AI SDK useObject hook to stream structured object generation.\nMulti-Step Tools\nUses AI SDK streamText function to handle multiple tool steps automatically.\nFrameworks\nNext.js OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Next.js.\nNuxt OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Nuxt.js.\nSvelteKit OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and SvelteKit.\nSolid OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Solid.\nGenerative UI\nGemini Chatbot\nUses Google Gemini, AI SDK, and Next.js.\nGenerative UI with RSC (experimental)\nUses Next.js, AI SDK, and streamUI to create generative UIs with React Server Components.\nSecurity\nBot Protection\nUses Kasada, OpenAI GPT-4, AI SDK, and Next.js.\nRate Limiting\nUses Vercel KV, OpenAI GPT-4, AI SDK, and Next.js.\nJoin our Community\nIf you have questions about anything related to the AI SDK, you're always welcome to ask our community on the Vercel Community .\nllms.txt (for Cursor, Windsurf, Copilot, Claude etc.)\nYou can access the entire AI SDK documentation in Markdown format at ai-sdk.dev/llms.txt . This can be used to ask any LLM (assuming it has a big enough context window) questions about the AI SDK based on the most up-to-date documentation.\nExample Usage\nFor instance, to prompt an LLM with questions about the AI SDK:\nCopy the documentation contents from ai-sdk.dev/llms.txt\nUse the following prompt format:\n1 Documentation:\n2 {paste documentation here}\n3 ---\n4 Based on the above documentation, answer the following:\n5 {your question}",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-04/r-047-ai-sdk-by-vercel.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-04/r-047-ai-sdk-by-vercel.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 4958,
+    "paragraph_count": 68,
+    "sentence_count": 33,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0022,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 4958,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "fcb77e77757df251",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "follow-builders cloud fallback / keyword search / Anysearch",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "frontier_opinion_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "6f4bcdf678cd0bc9",
+  "content_hash": "fcb77e77757df251",
+  "full_text_hash": "fcb77e77757df251",
+  "semantic_hash": "68b3dae0d3e662d3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-04T04:44:56.049Z",
+  "last_seen_at": "2026-06-04T04:44:56.049Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more. query=AI SDK builder launch cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "AI SDK by Vercel Copy markdown AI SDK The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "js, Vue, Svelte, Node.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Why use the AI SDK?",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Integrating large language models (LLMs) into applications is complicated and heavily dependent on the specific model provider you use.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "The AI SDK standardizes integrating artificial intelligence (AI) models across supported providers .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "follow",
+      "builders cloud fallback",
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Amazon",
+      "Cursor",
+      "Perplexity",
+      "Mistral"
+    ],
+    "products": [
+      "agents",
+      "Claude",
+      "claude",
+      "GPT-4",
+      "Gemini",
+      "Cursor",
+      "Copilot"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "4.5",
+      "1",
+      "3",
+      "4 m",
+      "5",
+      "6",
+      "4",
+      "2"
+    ],
+    "quotes": [
+      " ;\n3 const { text } = await generateText ( {\n4 model : ",
+      " ,\n5 prompt : "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more. query=AI SDK builder launch cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+      "AI SDK by Vercel Copy markdown AI SDK The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.",
+      "js, Vue, Svelte, Node."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "The AI SDK standardizes integrating artificial intelligence (AI) models across supported providers ."
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 4,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool",
+    "user_feedback_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# AI SDK by Vercel\n\n- raw_id: R-047\n- original_url: https://ai-sdk.dev/docs/introduction\n- source_name: follow-builders cloud fallback / keyword search / Anysearch\n- collected_at: 2026-06-04T04:44:56.049Z\n\n## clean_text\n\nAI SDK by Vercel\nCopy markdown\nAI SDK\nThe AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.\nWhy use the AI SDK?\nIntegrating large language models (LLMs) into applications is complicated and heavily dependent on the specific model provider you use.\nThe AI SDK standardizes integrating artificial intelligence (AI) models across supported providers . This enables developers to focus on building great AI applications, not waste time on technical details.\nFor example, here’s how you can generate text with various models using the AI SDK:\nGateway\nProvider\nCustom\nClaude Sonnet 4.5\n1 import { generateText } from \"ai\" ;\n3 const { text } = await generateText ( {\n4 model : \"anthropic/claude-sonnet-4.5\" ,\n5 prompt : \"What is love?\" ,\n6 } ) ;\nLove is a complex and multifaceted emotion that can be felt and expressed in many different ways. It involves deep affection, care, compassion, and connection towards another person or thing.\nThe AI SDK has two main libraries:\nAI SDK Core : A unified API for generating text, structured objects, tool calls, and building agents with LLMs.\nAI SDK UI : A set of framework-agnostic hooks for quickly building chat and generative user interface.\nModel Providers\nThe AI SDK supports multiple model providers .\nVercel AI Gateway\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nOpenAI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAnthropic\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Generative AI\nImage Input Object Generation Tool Usage Tool Streaming\nxAI Grok\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAzure\nImage Input Object Generation Tool Usage Tool Streaming\nAmazon Bedrock\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nGroq\nImage Input Object Generation Tool Usage Tool Streaming\nFal AI\nImage Generation\nDeepInfra\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Vertex AI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nMistral\nImage Input Object Generation Tool Usage Tool Streaming\nTogether.ai\nObject Generation Tool Usage Tool Streaming\nCohere\nTool Usage Tool Streaming\nFireworks\nImage Generation Object Generation Tool Usage Tool Streaming\nDeepSeek\nObject Generation Tool Usage Tool Streaming\nCerebras\nObject Generation Tool Usage Tool Streaming\nPerplexity\nLuma AI\nImage Generation\nBaseten\nObject Generation Tool Usage\nTemplates\nWe've built some templates that include AI SDK integrations for different use cases, providers, and frameworks. You can use these templates to get started with your AI-powered application.\nStarter Kits\nChatbot Starter Template\nUses the AI SDK and Next.js. Features persistence, multi-modal chat, and more.\nInternal Knowledge Base (RAG)\nUses AI SDK Language Model Middleware for RAG and enforcing guardrails.\nMulti-Modal Chat\nUses Next.js and AI SDK useChat hook for multi-modal message chat interface.\nSemantic Image Search\nAn AI semantic image search app template built with Next.js, AI SDK, and Postgres.\nNatural Language PostgreSQL\nQuery PostgreSQL using natural language with AI SDK and GPT-4o.\nFeature Exploration\nFeature Flags Example\nAI SDK with Next.js, Feature Flags, and Edge Config for dynamic model switching.\nChatbot with Telemetry\nAI SDK chatbot with OpenTelemetry support.\nStructured Object Streaming\nUses AI SDK useObject hook to stream structured object generation.\nMulti-Step Tools\nUses AI SDK streamText function to handle multiple tool steps automatically.\nFrameworks\nNext.js OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Next.js.\nNuxt OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Nuxt.js.\nSvelteKit OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and SvelteKit.\nSolid OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Solid.\nGenerative UI\nGemini Chatbot\nUses Google Gemini, AI SDK, and Next.js.\nGenerative UI with RSC (experimental)\nUses Next.js, AI SDK, and streamUI to create generative UIs with React Server Components.\nSecurity\nBot Protection\nUses Kasada, OpenAI GPT-4, AI SDK, and Next.js.\nRate Limiting\nUses Vercel KV, OpenAI GPT-4, AI SDK, and Next.js.\nJoin our Community\nIf you have questions about anything related to the AI SDK, you're always welcome to ask our community on the Vercel Community .\nllms.txt (for Cursor, Windsurf, Copilot, Claude etc.)\nYou can access the entire AI SDK documentation in Markdown format at ai-sdk.dev/llms.txt . This can be used to ask any LLM (assuming it has a big enough context window) questions about the AI SDK based on the most up-to-date documentation.\nExample Usage\nFor instance, to prompt an LLM with questions about the AI SDK:\nCopy the documentation contents from ai-sdk.dev/llms.txt\nUse the following prompt format:\n1 Documentation:\n2 {paste documentation here}\n3 ---\n4 Based on the above documentation, answer the following:\n5 {your question}\n\n## full_text\n\nAI SDK by Vercel\nCopy markdown\nAI SDK\nThe AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.\nWhy use the AI SDK?\nIntegrating large language models (LLMs) into applications is complicated and heavily dependent on the specific model provider you use.\nThe AI SDK standardizes integrating artificial intelligence (AI) models across supported providers . This enables developers to focus on building great AI applications, not waste time on technical details.\nFor example, here’s how you can generate text with various models using the AI SDK:\nGateway\nProvider\nCustom\nClaude Sonnet 4.5\n1 import { generateText } from \"ai\" ;\n3 const { text } = await generateText ( {\n4 model : \"anthropic/claude-sonnet-4.5\" ,\n5 prompt : \"What is love?\" ,\n6 } ) ;\nLove is a complex and multifaceted emotion that can be felt and expressed in many different ways. It involves deep affection, care, compassion, and connection towards another person or thing.\nThe AI SDK has two main libraries:\nAI SDK Core : A unified API for generating text, structured objects, tool calls, and building agents with LLMs.\nAI SDK UI : A set of framework-agnostic hooks for quickly building chat and generative user interface.\nModel Providers\nThe AI SDK supports multiple model providers .\nVercel AI Gateway\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nOpenAI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAnthropic\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Generative AI\nImage Input Object Generation Tool Usage Tool Streaming\nxAI Grok\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nAzure\nImage Input Object Generation Tool Usage Tool Streaming\nAmazon Bedrock\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nGroq\nImage Input Object Generation Tool Usage Tool Streaming\nFal AI\nImage Generation\nDeepInfra\nImage Input Object Generation Tool Usage Tool Streaming\nGoogle Vertex AI\nImage Input Image Generation Object Generation Tool Usage Tool Streaming\nMistral\nImage Input Object Generation Tool Usage Tool Streaming\nTogether.ai\nObject Generation Tool Usage Tool Streaming\nCohere\nTool Usage Tool Streaming\nFireworks\nImage Generation Object Generation Tool Usage Tool Streaming\nDeepSeek\nObject Generation Tool Usage Tool Streaming\nCerebras\nObject Generation Tool Usage Tool Streaming\nPerplexity\nLuma AI\nImage Generation\nBaseten\nObject Generation Tool Usage\nTemplates\nWe've built some templates that include AI SDK integrations for different use cases, providers, and frameworks. You can use these templates to get started with your AI-powered application.\nStarter Kits\nChatbot Starter Template\nUses the AI SDK and Next.js. Features persistence, multi-modal chat, and more.\nInternal Knowledge Base (RAG)\nUses AI SDK Language Model Middleware for RAG and enforcing guardrails.\nMulti-Modal Chat\nUses Next.js and AI SDK useChat hook for multi-modal message chat interface.\nSemantic Image Search\nAn AI semantic image search app template built with Next.js, AI SDK, and Postgres.\nNatural Language PostgreSQL\nQuery PostgreSQL using natural language with AI SDK and GPT-4o.\nFeature Exploration\nFeature Flags Example\nAI SDK with Next.js, Feature Flags, and Edge Config for dynamic model switching.\nChatbot with Telemetry\nAI SDK chatbot with OpenTelemetry support.\nStructured Object Streaming\nUses AI SDK useObject hook to stream structured object generation.\nMulti-Step Tools\nUses AI SDK streamText function to handle multiple tool steps automatically.\nFrameworks\nNext.js OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Next.js.\nNuxt OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Nuxt.js.\nSvelteKit OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and SvelteKit.\nSolid OpenAI Starter\nUses OpenAI GPT-4, AI SDK, and Solid.\nGenerative UI\nGemini Chatbot\nUses Google Gemini, AI SDK, and Next.js.\nGenerative UI with RSC (experimental)\nUses Next.js, AI SDK, and streamUI to create generative UIs with React Server Components.\nSecurity\nBot Protection\nUses Kasada, OpenAI GPT-4, AI SDK, and Next.js.\nRate Limiting\nUses Vercel KV, OpenAI GPT-4, AI SDK, and Next.js.\nJoin our Community\nIf you have questions about anything related to the AI SDK, you're always welcome to ask our community on the Vercel Community .\nllms.txt (for Cursor, Windsurf, Copilot, Claude etc.)\nYou can access the entire AI SDK documentation in Markdown format at ai-sdk.dev/llms.txt . This can be used to ask any LLM (assuming it has a big enough context window) questions about the AI SDK based on the most up-to-date documentation.\nExample Usage\nFor instance, to prompt an LLM with questions about the AI SDK:\nCopy the documentation contents from ai-sdk.dev/llms.txt\nUse the following prompt format:\n1 Documentation:\n2 {paste documentation here}\n3 ---\n4 Based on the above documentation, answer the following:\n5 {your question}\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / medium] The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more. query=AI SDK builder launch cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] AI SDK by Vercel Copy markdown AI SDK The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications and agents with React, Next.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] js, Vue, Svelte, Node.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] Why use the AI SDK?\n5. [product_update / daily_observation, heatmap, change / medium] Integrating large language models (LLMs) into applications is complicated and heavily dependent on the specific model provider you use.\n6. [workflow_change / daily_observation, heatmap, change, case, trend / high] The AI SDK standardizes integrating artificial intelligence (AI) models across supported providers .\n"
+}

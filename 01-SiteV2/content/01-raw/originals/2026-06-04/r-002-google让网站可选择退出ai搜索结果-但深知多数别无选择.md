@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-03T19:28:29.000Z"
-collected_at: 2026-06-04T00:38:27.905Z
+collected_at: 2026-06-04T04:44:55.866Z
 language: mixed
 full_text_hash: 09bb4b9e6e642760
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-002-google让网站可选择退出ai搜索结果-但深知多数别无选择.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google让网站可选择退出AI搜索结果，但深知多数别无选择","discovery_summary":"Google 首次在 Search Console 中为网站运营者提供关闭 AI Overviews 和 AI Mode 等 AI 搜索功能的开关，这两项功能已覆盖超过 35 亿月活用户。新的表现报告将展示次数单独列出。此举由英国竞争与市场管理局（CMA）推动，该机构认为网站运营者在当前局面下处于严重劣势。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-lets-sites-opt-out-of-ai-search-results-knowing-most-have-nowhere-else-to-go","discovered_at":"2026-06-04T00:31:57.413Z","rank_on_page":98,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google让网站可选择退出AI搜索结果，但深知多数别无选择","discovery_summary":"Google 首次在 Search Console 中为网站运营者提供关闭 AI Overviews 和 AI Mode 等 AI 搜索功能的开关，这两项功能已覆盖超过 35 亿月活用户。新的表现报告将展示次数单独列出。此举由英国竞争与市场管理局（CMA）推动，该机构认为网站运营者在当前局面下处于严重劣势。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-lets-sites-opt-out-of-ai-search-results-knowing-most-have-nowhere-else-to-go","discovered_at":"2026-06-04T04:38:55.946Z","rank_on_page":168,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 09bb4b9e6e642760
 semantic_hash: 9ca2c7e4fd57da0e
 duplicate_of: ""
 first_seen_at: "2026-06-03T19:28:29.000Z"
-last_seen_at: 2026-06-04T00:38:27.905Z
+last_seen_at: 2026-06-04T04:44:55.866Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -239,7 +239,7 @@ Insert
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Google让网站可选择退出AI搜索结果，但深知多数别无选择","discovery_summary":"Google 首次在 Search Console 中为网站运营者提供关闭 AI Overviews 和 AI Mode 等 AI 搜索功能的开关，这两项功能已覆盖超过 35 亿月活用户。新的表现报告将展示次数单独列出。此举由英国竞争与市场管理局（CMA）推动，该机构认为网站运营者在当前局面下处于严重劣势。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-lets-sites-opt-out-of-ai-search-results-knowing-most-have-nowhere-else-to-go","discovered_at":"2026-06-04T00:31:57.413Z","rank_on_page":98,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google让网站可选择退出AI搜索结果，但深知多数别无选择","discovery_summary":"Google 首次在 Search Console 中为网站运营者提供关闭 AI Overviews 和 AI Mode 等 AI 搜索功能的开关，这两项功能已覆盖超过 35 亿月活用户。新的表现报告将展示次数单独列出。此举由英国竞争与市场管理局（CMA）推动，该机构认为网站运营者在当前局面下处于严重劣势。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-lets-sites-opt-out-of-ai-search-results-knowing-most-have-nowhere-else-to-go","discovered_at":"2026-06-04T04:38:55.946Z","rank_on_page":168,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
