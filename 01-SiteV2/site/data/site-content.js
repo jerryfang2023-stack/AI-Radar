@@ -4,7 +4,7 @@ window.WaveSightContent = {
     "sourceLabel": "Generated from 01-SiteV2/content (10 dates)",
     "brand": "观澜AI",
     "version": "V2.2.1",
-    "generatedAt": "2026-06-04T00:38:44.507Z",
+    "generatedAt": "2026-06-04T03:14:33.000Z",
     "contentRoot": "01-SiteV2/content"
   },
   "tagTaxonomy": [
@@ -27754,282 +27754,69 @@ window.WaveSightContent = {
     }
   ],
   "daily": {
+    "id": "daily-2026-06-04",
     "slug": "daily-2026-06-04",
-    "title": "Claude Code v2.1.162 发布",
-    "dek": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-    "points": [],
-    "risk": "客户采用、预算归属和部署周期仍需继续观察。",
-    "calibration": [
+    "title": "Claude Code不再帮你写代码——Anthropic换道了",
+    "issue": "",
+    "period": "",
+    "contentType": "daily_observation",
+    "judgment": "Anthropic从模型商变成工程平台",
+    "dek": "Anthropic从模型商变成工程平台",
+    "summary": [
+      "Claude Code v2.1.162 是个不起眼的小版本——Bug修复、体验优化。但背后发生的事情远不止这些。",
+      "Workflows、Skills、Subagents三项能力让Claude Code从\"辅助编码工具\"进化成能编排开发全流程的企业平台。Anthropic悄然换了赛道。"
+    ],
+    "sections": [
       {
-        "id": "OPN-FB-20260604-20",
-        "slug": "anysearch-根据我们的分析-29-的财富500强企业和约19-的全球2000",
-        "title": "Anysearch：根据我们的分析， 29%的财富500强企业和约19%的全球2000",
-        "date": "2026-06-04",
-        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-ai-adoption-by-the-numbers-where-enterprise-ai-is-actually-w.md",
-        "sourceUrl": "https://www.linkedin.com/pulse/ai-adoption-numbers-where-enterprise-actually-working-kimberly-tan-mygwf",
-        "originalDate": "",
-        "speakerLine": "Anysearch",
-        "originalView": "Based on our analysis, 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of a leading AI startup. Article content. query=AI startup enterprise adoption pricing cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-        "originalTranslation": "根据我们的分析， 29%的财富500强企业和约19%的全球2000强企业是领先的AI初创公司的现场付费客户。文章内容。查询= AI初创企业采用定价云回退观点/文章搜索；用作发现，直到原始文本和页面类型通过下游大门",
-        "interpretation": "这条观点可用于观察基础设施公司如何把不稳定用量转成更可预测的价格模型。",
-        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-        "opinionTier": "sidebar",
-        "displayLane": "signal_sidebar",
-        "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, customer, pricing；包含数据、客户或业务量级线索",
-        "ratingScore": 5,
-        "publishStatus": "frontstage_sidebar",
-        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-        "relations": [],
-        "relatedSignals": [],
-        "relatedTrends": [],
-        "relatedTrendReports": [],
-        "tags": [
-          {
-            "id": "scenario-frontier-opinion",
-            "name": "前沿观点",
-            "group": "scenario",
-            "aliases": [
-              "观点证据",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "evidence-frontier-opinion",
-            "name": "前沿观点",
-            "group": "evidence",
-            "aliases": [
-              "观点",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "source-social",
-            "name": "社媒线索",
-            "group": "source",
-            "aliases": [
-              "X",
-              "社区"
-            ]
-          },
-          {
-            "id": "opinion-model-infra",
-            "name": "模型基础设施观点",
-            "group": "opinion",
-            "aliases": [
-              "Infra",
-              "推理",
-              "记忆"
-            ]
-          },
-          {
-            "id": "track-enterprise-workflow",
-            "name": "企业工作流",
-            "group": "track",
-            "aliases": [
-              "企业 AI 工作流",
-              "工作流自动化"
-            ]
-          },
-          {
-            "id": "customer-enterprise",
-            "name": "大中型企业",
-            "group": "customer",
-            "aliases": [
-              "企业客户"
-            ]
-          },
-          {
-            "id": "track-ai-infra",
-            "name": "AI 基础设施",
-            "group": "track",
-            "aliases": [
-              "AI Infra",
-              "模型基础设施"
-            ]
-          },
-          {
-            "id": "function-procurement-bidding",
-            "name": "采购投标",
-            "group": "function",
-            "aliases": [
-              "招投标",
-              "采购"
-            ]
-          },
-          {
-            "id": "evidence-procurement",
-            "name": "招投标 / 采购",
-            "group": "evidence",
-            "aliases": [
-              "招标",
-              "政府采购"
-            ]
-          },
-          {
-            "id": "evidence-funding",
-            "name": "融资证据",
-            "group": "evidence",
-            "aliases": [
-              "投资",
-              "种子轮"
-            ]
-          },
-          {
-            "id": "evidence-customer-adoption",
-            "name": "客户采用",
-            "group": "evidence",
-            "aliases": [
-              "部署",
-              "上线",
-              "合作"
-            ]
-          },
-          {
-            "id": "evidence-product-launch",
-            "name": "产品发布",
-            "group": "evidence",
-            "aliases": [
-              "功能发布",
-              "平台发布"
-            ]
-          }
-        ]
+        "title": "小版本，大转向",
+        "body": "6月3日，Anthropic发布了Claude Code v2.1.162。Release Notes写得很克制：bug修复、体验优化、给claude agents --json加了waitingFor字段。典型的\"小版本\"。但两天前，开发者Thariq发了条帖子，说Workflows是Skills和Subagents之后Claude Code最大的一次升级。他最兴奋的是——\"非技术任务也能用了\"。一个AI编码工具的卖点，居然不是\"写代码更快\"。"
       },
       {
-        "id": "OPN-FB-20260604-24",
-        "slug": "anysearch-大多数ai编排工具都会让您选择-要么是无法处理真正复杂性的拖放式玩",
-        "title": "Anysearch：大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩",
-        "date": "2026-06-04",
-        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-from-idea-to-agent-in-minutes-inside-mindra-s-workflow-build.md",
-        "sourceUrl": "https://mindra.co/blog/mindra-workflow-builder-how-teams-design-version-and-ship-ai-agents",
-        "originalDate": "",
-        "speakerLine": "Anysearch",
-        "originalView": "Most AI orchestration tools make you choose: either a drag-and-drop toy that can't handle real complexity, or a code-first framework that locks out everyone who isn't an ML engineer. Mindra's workflow builder was designed to break that false choice - giving technical teams the depth they need and bu... query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-        "originalTranslation": "大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩具，要么是将非机器学习工程师的所有人都锁定的代码优先框架。Mindra的工作流构建器旨在打破这种错误的选择-为技术团队提供他们所需的深度和...查询= AI模型路由构建器工作流云后备观点/文章搜索;用作发现，直到原始文本和页面类型通过下游大门",
-        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
-        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-        "opinionTier": "sidebar",
-        "displayLane": "signal_sidebar",
-        "selectionReason": "follow-builders 人物池来源；商业/产品变量：agent, agents, workflow",
-        "ratingScore": 4,
-        "publishStatus": "frontstage_sidebar",
-        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-        "relations": [],
-        "relatedSignals": [],
-        "relatedTrends": [],
-        "relatedTrendReports": [],
-        "tags": [
-          {
-            "id": "scenario-frontier-opinion",
-            "name": "前沿观点",
-            "group": "scenario",
-            "aliases": [
-              "观点证据",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "evidence-frontier-opinion",
-            "name": "前沿观点",
-            "group": "evidence",
-            "aliases": [
-              "观点",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "source-social",
-            "name": "社媒线索",
-            "group": "source",
-            "aliases": [
-              "X",
-              "社区"
-            ]
-          },
-          {
-            "id": "opinion-agent-workflow",
-            "name": "Agent 工作流观点",
-            "group": "opinion",
-            "aliases": [
-              "多 Agent",
-              "工作流"
-            ]
-          },
-          {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI 治理",
-            "group": "track",
-            "aliases": [
-              "Agent 治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
-            "id": "track-enterprise-workflow",
-            "name": "企业工作流",
-            "group": "track",
-            "aliases": [
-              "企业 AI 工作流",
-              "工作流自动化"
-            ]
-          },
-          {
-            "id": "customer-enterprise",
-            "name": "大中型企业",
-            "group": "customer",
-            "aliases": [
-              "企业客户"
-            ]
-          },
-          {
-            "id": "function-procurement-bidding",
-            "name": "采购投标",
-            "group": "function",
-            "aliases": [
-              "招投标",
-              "采购"
-            ]
-          },
-          {
-            "id": "evidence-procurement",
-            "name": "招投标 / 采购",
-            "group": "evidence",
-            "aliases": [
-              "招标",
-              "政府采购"
-            ]
-          },
-          {
-            "id": "evidence-funding",
-            "name": "融资证据",
-            "group": "evidence",
-            "aliases": [
-              "投资",
-              "种子轮"
-            ]
-          }
-        ]
+        "title": "从编码工具到工程平台",
+        "body": "Claude Code不再定位成帮开发者写代码的工具。它在变成一台能编排\"从需求到上线\"全流程的机器。Workflows定义流程节点——先理解需求，再拆解任务，然后生成代码，最后自动测试；Skills封装专业能力，让Claude Code能调用外部API或数据库；Subagents并行执行子任务。这三项能力组合在一起，Claude Code已经不是在\"辅助编码\"，而是在\"管理工程\"。"
+      },
+      {
+        "title": "买单的人变了",
+        "body": "当一个工具只是帮写代码时，决策者是团队里的工程师。但Claude Code能编排需求拆解、任务分配、代码生成、测试执行、交付部署的整条链路，采购者变成了CTO、工程VP、甚至CIO。这不是同一种购买行为。CTO买的不是工程师的省时间插件，是一个能改变研发流程的系统。"
+      },
+      {
+        "title": "新赛道的领先者",
+        "body": "竞争格局因此被重新划定。GitHub Copilot至今没有等效的Workflow和Subagent能力——它仍定位在\"IDE里的代码补全\"。Cursor的卖点是\"AI-first IDE\"——做得不错，但你必须进入它的编辑器。Claude Code不需要这些。终端是所有开发者都有的基础设施。Thariq那条帖子超过4000互动——不是PR在推，是开发者发现了变化。AI开发工具的竞争已经从\"哪个模型更聪明\"变成\"哪个平台能让企业直接编排AI干活\"。"
       }
     ],
+    "homeTitle": "Claude Code不再帮你写代码——Anthropic换道了",
+    "homeSummary": "Claude Code v2.1.162 发布背后，是 Anthropic 从模型提供商到开发者工程平台的转型。Workflows 让非技术任务也能进 Claude Code，采购角色从工程师扩展到 CTO。",
+    "homeCards": [
+      {
+        "label": "战略转型",
+        "title": "从卖API到卖平台",
+        "body": "Anthropic 绕过了 OpenAI 的 API 层和微软的 IDE 层，直接卡位在\"开发者怎么做工程\"这个环节。"
+      },
+      {
+        "label": "竞争格局",
+        "title": "Copilot 还在补代码",
+        "body": "GitHub Copilot 至今没有等效的 Workflow 能力，仍定位在 IDE 代码补全。Anthropic 用产品定义绕开了竞争者的护城河。"
+      },
+      {
+        "label": "社区信号",
+        "title": "开发者自己在讨论",
+        "body": "Thariq 关于 Workflows 的帖子超过 4000 互动。社区在自发谈论变化——不是 PR，是真需求。"
+      }
+    ],
+    "columnPage": {
+      "title": "Claude Code不再帮你写代码——Anthropic换道了",
+      "thesis": "Anthropic从模型商变成工程平台",
+      "body": "Claude Code v2.1.162 是个不起眼的小版本——Bug修复、体验优化。但背后发生的事情远不止这些。",
+      "impact": "Anthropic 的领先取决于开发者生态建设的速度。Workflows/Skills/Subagents 的易用性和稳定性决定采购者是否真的买单。Copilot 和 Cursor 可能在 3-6 个月内补齐能力。"
+    },
+    "points": [
+      "Claude Code 从编码工具进化为能编排开发全流程的企业平台",
+      "Anthropic 从模型提供商转向开发者工程平台，换道竞争",
+      "采购决策者从工程师变为CTO/CIO，购买行为完全不同",
+      "Workflows让非技术任务也能进Claude Code，扩展了应用边界"
+    ],
+    "risk": "Anthropic 的领先取决于开发者生态建设的速度。Workflows/Skills/Subagents 的易用性和稳定性决定采购者是否真的买单。Copilot 和 Cursor 可能在 3-6 个月内补齐能力。",
+    "calibration": [],
     "link": "daily-detail.html"
   },
   "trendReport": {
