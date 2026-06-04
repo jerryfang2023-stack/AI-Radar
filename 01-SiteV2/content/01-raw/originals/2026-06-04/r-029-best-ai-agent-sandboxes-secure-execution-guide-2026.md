@@ -1,0 +1,479 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-029
+title: "Best AI Agent Sandboxes - Secure Execution Guide 2026"
+original_url: "https://fast.io/resources/best-ai-agent-sandboxes/"
+canonical_url: "https://fast.io/resources/best-ai-agent-sandboxes"
+source_name: "follow-builders cloud fallback / keyword search / DuckDuckGo"
+source_type: builder
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: follow-builders
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-04T02:58:17.561Z
+language: mixed
+full_text_hash: 5de2fe79fbce6ecf
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-029-best-ai-agent-sandboxes-secure-execution-guide-2026.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-029-best-ai-agent-sandboxes-secure-execution-guide-2026.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":13316,"paragraph_count":121,"sentence_count":139,"boilerplate_hits":1,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 13316
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5de2fe79fbce6ecf","missing":[]}
+source_volatility: high
+community_name: "follow-builders cloud fallback / keyword search / DuckDuckGo"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: frontier_opinion_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6f41e76f6a76e6f9
+content_hash: 5de2fe79fbce6ecf
+semantic_hash: 5cf9ec909990e100
+duplicate_of: ""
+first_seen_at: "2026-06-04T02:58:17.561Z"
+last_seen_at: 2026-06-04T02:58:17.561Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":4,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["follow","builders cloud fallback","keyword search","DuckDuckGo","Google","GitHub","AWS"],"products":["Agent","agent","Agents","agents","MCP"],"people":[],"industries":["法律 / 法务","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","24","1","2B","100","500","2","$0.01"],"quotes":[]}
+evidence_seed: {"company_actions":["query=AI agent sandbox builder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates","Why AI Agents Need Sandboxes Code execution is the key feature that makes AI agents autonomous.","When an LLM needs to analyze data, run simulations, or interact with APIs, it generates code and runs it."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["Without proper isolation, this creates a massive security risk.","Security vulnerabilities in agent sandboxes can lead to remote code execution (RCE) exploits that bypass the AI layer entirely."]}
+missing_information: ["没有具体客户或真实企业案例","没有可核验原文引述"]
+key_excerpts: [{"type":"company_action","text":"query=AI agent sandbox builder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Why AI Agents Need Sandboxes Code execution is the key feature that makes AI agents autonomous.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"When an LLM needs to analyze data, run simulations, or interact with APIs, it generates code and runs it.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Without proper isolation, this creates a massive security risk.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"A compromised agent could read environment variables, exfiltrate credentials, modify system files, or launch attacks on internal networks.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Security vulnerabilities in agent sandboxes can lead to remote code execution (RCE) exploits that bypass the AI layer entirely.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Best AI Agent Sandboxes - Secure Execution Guide 2026
+
+## clean_text
+
+Why AI Agents Need Sandboxes
+Code execution is the key feature that makes AI agents autonomous. When an LLM needs to analyze data, run simulations, or interact with APIs, it generates code and runs it. Without proper isolation, this creates a massive security risk. A compromised agent could read environment variables, exfiltrate credentials, modify system files, or launch attacks on internal networks. Security vulnerabilities in agent sandboxes can lead to remote code execution (RCE) exploits that bypass the AI layer entirely.
+Three isolation levels exist:
+MicroVMs (Firecracker, Kata Containers): Full hardware virtualization with dedicated kernels per workload. Strongest isolation but higher resource overhead.
+User-space kernels (gVisor): Intercepts syscalls before they reach the host kernel. Balances security with performance.
+Hardened containers (Docker + seccomp/AppArmor): Namespace isolation with kernel-level restrictions. Works only for trusted code. Most production AI systems use microVMs or gVisor. Containers alone are not secure enough for untrusted agent code.
+How We Evaluated Sandboxes
+We tested each platform against criteria that matter for production AI systems:
+Security posture : Isolation technology (microVMs vs containers), syscall filtering, network restrictions, secret management.
+Developer experience : SDK quality (Python/JS), startup latency, debugging tools, local development workflow.
+Stateful persistence : Can sessions survive beyond 24 hours? Can agents resume work across multiple user interactions?
+Cost model : Per-minute compute, idle charges, free tier limits, egress costs.
+AI-specific features : File system access, GPU support, custom dependencies, long-running background tasks. The right sandbox depends on what you're building. High-security applications need microVMs. Low-latency chatbots work better with gVisor. Research agents need persistent sessions. Consider how this fits into your broader workflow and what matters most for your team. The right choice depends on your specific requirements: file types, team size, security needs, and how you collaborate with external partners. Testing with a free account is the fast way to know if a tool works for you.
+1. E2B (E2B.dev)
+E2B is an open-source cloud runtime built for AI agents. It uses Firecracker microVMs to provide kernel-level isolation for every code execution session.
+Key strengths:
+Clean Python and JavaScript SDKs designed for LLM integration
+Sub-second cold starts for microVMs
+Built-in file system access and network controls
+Active open-source community with pre-built templates
+Limitations:
+Sessions cap at 24 hours and then terminate
+Pricing scales quickly for high-volume applications
+Limited customization of the underlying VM image
+Best for: Chatbot-style agents that execute quick scripts and don't need long-term state. Works well for data analysis tasks where sessions last minutes, not days.
+Pricing: Free tier includes 100 hours of sandbox time monthly. Paid plans start at published pricing for 500 hours.
+2. Northflank
+Northflank offers production-grade sandboxes with multiple isolation technologies. You can choose between Kata Containers (true microVM isolation) or gVisor (user-space kernel protection).
+Key strengths:
+Sessions persist until you explicitly terminate them (important for stateful agents)
+Choice between microVM security or gVisor performance
+Full Kubernetes-based orchestration for complex workflows
+Enterprise features like audit logs and RBAC
+Limitations:
+Steeper learning curve than simpler platforms
+Higher baseline cost for enterprise features
+Requires more infrastructure knowledge to optimize
+Best for: AI agents that maintain state across user interactions over days or weeks. Good fit for research assistants, long-running data pipelines, or agents that build complex outputs incrementally.
+Pricing: Usage-based billing with no mandatory minimums. Starts around $0.01 per vCPU-hour.
+3. Daytona
+Daytona focuses on speed with sub-90ms cold starts. It's designed primarily for AI agents rather than human developers, which shows in the API design.
+Key strengths:
+fast cold start times in this comparison
+Stateful, elastic sandboxes that scale automatically
+Simple API for programmatic control
+Built-in GitHub integration for code workflows
+Limitations:
+Newer platform with smaller community
+Documentation is less comprehensive than E2B
+Limited pre-built templates
+Best for: Latency-sensitive chatbots where cold start speed matters most. Great for customer-facing AI assistants that need instant code execution.
+Pricing: Contact for enterprise pricing. Free tier available for development.
+Give Your AI Agents Persistent Storage
+Stop losing work when sandboxes terminate. Fastio provides 50GB free storage built for AI agents, with built-in RAG, 19 consolidated tools, and ownership transfer to humans.
+Start Building Free
+4. Modal
+Modal is a serverless platform where you define workloads as Python code. Its sandbox feature provides secure, ephemeral environments that launch on demand and tear down when idle.
+Key strengths:
+Infrastructure-as-code approach works well for Python developers
+Automatic scaling with zero configuration
+GPU support for ML workloads
+Free tier includes $30 in credits monthly
+Limitations:
+Python-only (no JavaScript SDK)
+Serverless cold starts introduce latency
+Less control over the runtime environment
+Best for: Python-heavy AI agents doing ML inference, data processing, or scientific computing. The GPU support works well for vision models and embeddings.
+Pricing: Free tier includes $30 in credits monthly. Pay-as-you-go starts at $0.0001 per vCPU-second.
+5. Docker + seccomp/AppArmor
+Self-hosted Docker containers with seccomp profiles and AppArmor restrictions provide namespace isolation without microVMs. This works only for code you partially trust.
+Key strengths:
+Full control over the runtime environment
+No external service dependencies
+Cost-effective for high-volume use
+Works offline and in air-gapped environments
+Limitations:
+Containers share the host kernel (weaker isolation)
+Requires deep Linux security knowledge to configure properly
+You manage all updates, patches, and security hardening
+Not suitable for untrusted code
+Best for: Internal agents running known codebases. Good for CI/CD automation, testing frameworks, or agents that execute pre-audited scripts.
+Pricing: Open source and free. You pay only for compute infrastructure.
+6. Firecracker MicroVMs (Self-Hosted)
+Firecracker is the open-source microVM technology powering AWS Lambda and E2B. You can self-host it for maximum control and cost efficiency.
+Key strengths:
+Strongest isolation model (hardware virtualization per workload)
+Sub-second boot times for lightweight VMs
+Battle-tested at AWS scale
+Complete customization of VM images
+Limitations:
+Requires significant DevOps expertise to deploy
+No managed SDK layer (you build integration yourself)
+Complex orchestration for multi-tenant systems
+Linux-only (KVM requirement)
+Best for: High-scale production systems with dedicated infrastructure teams. Companies running thousands of concurrent agent sessions who need to optimize costs.
+Pricing: Open source and free. Infrastructure costs depend on your cloud provider or on-prem hardware.
+7. gVisor (Self-Hosted)
+gVisor is Google's user-space kernel that intercepts syscalls before they reach the host. It provides stronger isolation than containers with less overhead than microVMs.
+Key strengths:
+Better performance than full VMs
+Stronger security than containers
+Works with existing container tooling (Docker, Kubernetes)
+Active maintenance by Google
+Limitations:
+Some syscalls are not yet implemented (edge case compatibility)
+Debugging can be harder than native containers
+Requires kernel-level understanding to tune performance
+Still shares some resources with the host
+Best for: Teams that need better-than-container security but can't afford microVM overhead. Works well for high-throughput agents processing millions of requests daily.
+Pricing: Open source and free. You pay for compute infrastructure.
+File Storage for AI Agent Sandboxes
+Most sandbox platforms provide ephemeral file systems that reset after each session. For agents that build artifacts, generate reports, or process large datasets, you need persistent storage that survives sandbox shutdowns. Fastio offers cloud storage built for AI agents. Agents sign up for their own accounts, create workspaces, and manage files via REST API or the MCP server with 19 consolidated tools.
+Free agent tier includes:
+50GB persistent storage (not ephemeral)
+1GB max file size for uploads
+5,000 monthly credits covering storage, bandwidth, and AI features
+Intelligence Mode for built-in RAG (auto-index files, ask questions with citations)
+Ownership transfer (agent builds data room, hands it off to human)
+Agents can import files from Google Drive, OneDrive, Box, or Dropbox via OAuth without local I/O. File locks prevent conflicts when multiple agents access the same workspace. Webhooks trigger reactive workflows when files change. The OpenClaw integration provides zero-config file management for any LLM: clawhub install dbalve/fast-io . No environment variables, no config files, no dashboard setup. For teams running agent sandboxes, persistent storage separates compute (ephemeral sandbox) from state (durable files). Build your artifacts in E2B or Modal, then save them to Fastio for long-term access.
+Which Sandbox Should You Choose?
+For quick chatbot-style agents: E2B or Daytona. Fast cold starts matter more than persistent sessions.
+For stateful research agents: Northflank. Sessions that survive days or weeks are critical.
+For Python ML workloads: Modal. GPU support and serverless scaling simplify infrastructure.
+For high-security environments: Firecracker microVMs (self-hosted or via Northflank/E2B). Hardware isolation is the gold standard.
+For cost optimization at scale: Self-hosted Firecracker or gVisor. Managed platforms add markup on compute costs.
+For internal trusted code: Docker with seccomp. Containers work fine when you control the codebase. Your choice depends on your threat model, budget, and team expertise. Most teams start with a managed platform like E2B for speed, then migrate to self-hosted solutions as scale increases.
+Frequently Asked Questions
+How do I run AI agents safely without a sandbox? You can't run untrusted agent code safely without isolation. If you must avoid sandboxes, restrict agents to read-only operations (web browsing, API calls) and never give them code execution capabilities. This severely limits what agents can do.
+What are the best E2B alternatives for agent sandboxes? Northflank offers longer-lived sessions than E2B's 24-hour cap. Modal provides serverless Python sandboxes with GPU support. Daytona focuses on sub-90ms cold starts. For self-hosting, Firecracker and gVisor give you full control at the cost of operational complexity.
+Can I use Docker as an agent sandbox? Docker containers provide namespace isolation but share the host kernel. Use seccomp profiles and AppArmor to restrict syscalls. This works for code you partially trust (like internal tools) but is not secure enough for fully untrusted agent code. For that, use microVMs or gVisor.
+How much does it cost to run agent sandboxes at scale? Managed platforms charge $0.0001-$0.01 per vCPU-second, which adds up quickly for long-running agents. Self-hosted Firecracker on AWS costs $0.04/hour for a t4g.small instance (2 vCPU). At 1000 hours/month, that's $40 vs $150+ on managed platforms. Factor in engineering time for self-hosting.
+What security risks exist in AI agent sandboxes? The main risks are sandbox escape (agent breaks isolation to access host), credential leakage (agent reads environment variables or mounted secrets), and network attacks (agent scans internal services). Use microVMs for strong isolation, rotate secrets frequently, and restrict network access to only necessary endpoints.
+Do AI agent sandboxes support GPU acceleration? Modal and some Firecracker setups support GPU pass-through for ML workloads. E2B and Daytona focus on CPU-only sandboxes. If your agents run vision models or embeddings, choose a platform with GPU support or run inference on separate infrastructure and return results to the sandbox.
+How do sandboxes handle persistent file storage? Most sandboxes provide ephemeral file systems that reset after each session. For persistent state, use external storage like Fastio (built for AI agents with 50GB free tier), S3, or a database. Store computation results outside the sandbox before it terminates.
+Can multiple agents share the same sandbox environment? Not recommended. Each agent should get its own isolated sandbox to prevent cross-contamination. If agents need to collaborate, use shared storage (like Fastio workspaces) or message queues to coordinate, but keep their execution environments separate.
+Related Resources
+Ripley AI
+Built-in AI: search, chat, and summarize
+Collaboration
+Real-time co-editing and teamwork
+Give Your AI Agents Persistent Storage
+Stop losing work when sandboxes terminate. Fastio provides 50GB free storage built for AI agents, with built-in RAG, 19 consolidated tools, and ownership transfer to humans.
+Start Building Free View Pricing
+
+## full_text
+
+Why AI Agents Need Sandboxes
+Code execution is the key feature that makes AI agents autonomous. When an LLM needs to analyze data, run simulations, or interact with APIs, it generates code and runs it. Without proper isolation, this creates a massive security risk. A compromised agent could read environment variables, exfiltrate credentials, modify system files, or launch attacks on internal networks. Security vulnerabilities in agent sandboxes can lead to remote code execution (RCE) exploits that bypass the AI layer entirely.
+Three isolation levels exist:
+MicroVMs (Firecracker, Kata Containers): Full hardware virtualization with dedicated kernels per workload. Strongest isolation but higher resource overhead.
+User-space kernels (gVisor): Intercepts syscalls before they reach the host kernel. Balances security with performance.
+Hardened containers (Docker + seccomp/AppArmor): Namespace isolation with kernel-level restrictions. Works only for trusted code. Most production AI systems use microVMs or gVisor. Containers alone are not secure enough for untrusted agent code.
+How We Evaluated Sandboxes
+We tested each platform against criteria that matter for production AI systems:
+Security posture : Isolation technology (microVMs vs containers), syscall filtering, network restrictions, secret management.
+Developer experience : SDK quality (Python/JS), startup latency, debugging tools, local development workflow.
+Stateful persistence : Can sessions survive beyond 24 hours? Can agents resume work across multiple user interactions?
+Cost model : Per-minute compute, idle charges, free tier limits, egress costs.
+AI-specific features : File system access, GPU support, custom dependencies, long-running background tasks. The right sandbox depends on what you're building. High-security applications need microVMs. Low-latency chatbots work better with gVisor. Research agents need persistent sessions. Consider how this fits into your broader workflow and what matters most for your team. The right choice depends on your specific requirements: file types, team size, security needs, and how you collaborate with external partners. Testing with a free account is the fast way to know if a tool works for you.
+1. E2B (E2B.dev)
+E2B is an open-source cloud runtime built for AI agents. It uses Firecracker microVMs to provide kernel-level isolation for every code execution session.
+Key strengths:
+Clean Python and JavaScript SDKs designed for LLM integration
+Sub-second cold starts for microVMs
+Built-in file system access and network controls
+Active open-source community with pre-built templates
+Limitations:
+Sessions cap at 24 hours and then terminate
+Pricing scales quickly for high-volume applications
+Limited customization of the underlying VM image
+Best for: Chatbot-style agents that execute quick scripts and don't need long-term state. Works well for data analysis tasks where sessions last minutes, not days.
+Pricing: Free tier includes 100 hours of sandbox time monthly. Paid plans start at published pricing for 500 hours.
+2. Northflank
+Northflank offers production-grade sandboxes with multiple isolation technologies. You can choose between Kata Containers (true microVM isolation) or gVisor (user-space kernel protection).
+Key strengths:
+Sessions persist until you explicitly terminate them (important for stateful agents)
+Choice between microVM security or gVisor performance
+Full Kubernetes-based orchestration for complex workflows
+Enterprise features like audit logs and RBAC
+Limitations:
+Steeper learning curve than simpler platforms
+Higher baseline cost for enterprise features
+Requires more infrastructure knowledge to optimize
+Best for: AI agents that maintain state across user interactions over days or weeks. Good fit for research assistants, long-running data pipelines, or agents that build complex outputs incrementally.
+Pricing: Usage-based billing with no mandatory minimums. Starts around $0.01 per vCPU-hour.
+3. Daytona
+Daytona focuses on speed with sub-90ms cold starts. It's designed primarily for AI agents rather than human developers, which shows in the API design.
+Key strengths:
+fast cold start times in this comparison
+Stateful, elastic sandboxes that scale automatically
+Simple API for programmatic control
+Built-in GitHub integration for code workflows
+Limitations:
+Newer platform with smaller community
+Documentation is less comprehensive than E2B
+Limited pre-built templates
+Best for: Latency-sensitive chatbots where cold start speed matters most. Great for customer-facing AI assistants that need instant code execution.
+Pricing: Contact for enterprise pricing. Free tier available for development.
+Give Your AI Agents Persistent Storage
+Stop losing work when sandboxes terminate. Fastio provides 50GB free storage built for AI agents, with built-in RAG, 19 consolidated tools, and ownership transfer to humans.
+Start Building Free
+4. Modal
+Modal is a serverless platform where you define workloads as Python code. Its sandbox feature provides secure, ephemeral environments that launch on demand and tear down when idle.
+Key strengths:
+Infrastructure-as-code approach works well for Python developers
+Automatic scaling with zero configuration
+GPU support for ML workloads
+Free tier includes $30 in credits monthly
+Limitations:
+Python-only (no JavaScript SDK)
+Serverless cold starts introduce latency
+Less control over the runtime environment
+Best for: Python-heavy AI agents doing ML inference, data processing, or scientific computing. The GPU support works well for vision models and embeddings.
+Pricing: Free tier includes $30 in credits monthly. Pay-as-you-go starts at $0.0001 per vCPU-second.
+5. Docker + seccomp/AppArmor
+Self-hosted Docker containers with seccomp profiles and AppArmor restrictions provide namespace isolation without microVMs. This works only for code you partially trust.
+Key strengths:
+Full control over the runtime environment
+No external service dependencies
+Cost-effective for high-volume use
+Works offline and in air-gapped environments
+Limitations:
+Containers share the host kernel (weaker isolation)
+Requires deep Linux security knowledge to configure properly
+You manage all updates, patches, and security hardening
+Not suitable for untrusted code
+Best for: Internal agents running known codebases. Good for CI/CD automation, testing frameworks, or agents that execute pre-audited scripts.
+Pricing: Open source and free. You pay only for compute infrastructure.
+6. Firecracker MicroVMs (Self-Hosted)
+Firecracker is the open-source microVM technology powering AWS Lambda and E2B. You can self-host it for maximum control and cost efficiency.
+Key strengths:
+Strongest isolation model (hardware virtualization per workload)
+Sub-second boot times for lightweight VMs
+Battle-tested at AWS scale
+Complete customization of VM images
+Limitations:
+Requires significant DevOps expertise to deploy
+No managed SDK layer (you build integration yourself)
+Complex orchestration for multi-tenant systems
+Linux-only (KVM requirement)
+Best for: High-scale production systems with dedicated infrastructure teams. Companies running thousands of concurrent agent sessions who need to optimize costs.
+Pricing: Open source and free. Infrastructure costs depend on your cloud provider or on-prem hardware.
+7. gVisor (Self-Hosted)
+gVisor is Google's user-space kernel that intercepts syscalls before they reach the host. It provides stronger isolation than containers with less overhead than microVMs.
+Key strengths:
+Better performance than full VMs
+Stronger security than containers
+Works with existing container tooling (Docker, Kubernetes)
+Active maintenance by Google
+Limitations:
+Some syscalls are not yet implemented (edge case compatibility)
+Debugging can be harder than native containers
+Requires kernel-level understanding to tune performance
+Still shares some resources with the host
+Best for: Teams that need better-than-container security but can't afford microVM overhead. Works well for high-throughput agents processing millions of requests daily.
+Pricing: Open source and free. You pay for compute infrastructure.
+File Storage for AI Agent Sandboxes
+Most sandbox platforms provide ephemeral file systems that reset after each session. For agents that build artifacts, generate reports, or process large datasets, you need persistent storage that survives sandbox shutdowns. Fastio offers cloud storage built for AI agents. Agents sign up for their own accounts, create workspaces, and manage files via REST API or the MCP server with 19 consolidated tools.
+Free agent tier includes:
+50GB persistent storage (not ephemeral)
+1GB max file size for uploads
+5,000 monthly credits covering storage, bandwidth, and AI features
+Intelligence Mode for built-in RAG (auto-index files, ask questions with citations)
+Ownership transfer (agent builds data room, hands it off to human)
+Agents can import files from Google Drive, OneDrive, Box, or Dropbox via OAuth without local I/O. File locks prevent conflicts when multiple agents access the same workspace. Webhooks trigger reactive workflows when files change. The OpenClaw integration provides zero-config file management for any LLM: clawhub install dbalve/fast-io . No environment variables, no config files, no dashboard setup. For teams running agent sandboxes, persistent storage separates compute (ephemeral sandbox) from state (durable files). Build your artifacts in E2B or Modal, then save them to Fastio for long-term access.
+Which Sandbox Should You Choose?
+For quick chatbot-style agents: E2B or Daytona. Fast cold starts matter more than persistent sessions.
+For stateful research agents: Northflank. Sessions that survive days or weeks are critical.
+For Python ML workloads: Modal. GPU support and serverless scaling simplify infrastructure.
+For high-security environments: Firecracker microVMs (self-hosted or via Northflank/E2B). Hardware isolation is the gold standard.
+For cost optimization at scale: Self-hosted Firecracker or gVisor. Managed platforms add markup on compute costs.
+For internal trusted code: Docker with seccomp. Containers work fine when you control the codebase. Your choice depends on your threat model, budget, and team expertise. Most teams start with a managed platform like E2B for speed, then migrate to self-hosted solutions as scale increases.
+Frequently Asked Questions
+How do I run AI agents safely without a sandbox? You can't run untrusted agent code safely without isolation. If you must avoid sandboxes, restrict agents to read-only operations (web browsing, API calls) and never give them code execution capabilities. This severely limits what agents can do.
+What are the best E2B alternatives for agent sandboxes? Northflank offers longer-lived sessions than E2B's 24-hour cap. Modal provides serverless Python sandboxes with GPU support. Daytona focuses on sub-90ms cold starts. For self-hosting, Firecracker and gVisor give you full control at the cost of operational complexity.
+Can I use Docker as an agent sandbox? Docker containers provide namespace isolation but share the host kernel. Use seccomp profiles and AppArmor to restrict syscalls. This works for code you partially trust (like internal tools) but is not secure enough for fully untrusted agent code. For that, use microVMs or gVisor.
+How much does it cost to run agent sandboxes at scale? Managed platforms charge $0.0001-$0.01 per vCPU-second, which adds up quickly for long-running agents. Self-hosted Firecracker on AWS costs $0.04/hour for a t4g.small instance (2 vCPU). At 1000 hours/month, that's $40 vs $150+ on managed platforms. Factor in engineering time for self-hosting.
+What security risks exist in AI agent sandboxes? The main risks are sandbox escape (agent breaks isolation to access host), credential leakage (agent reads environment variables or mounted secrets), and network attacks (agent scans internal services). Use microVMs for strong isolation, rotate secrets frequently, and restrict network access to only necessary endpoints.
+Do AI agent sandboxes support GPU acceleration? Modal and some Firecracker setups support GPU pass-through for ML workloads. E2B and Daytona focus on CPU-only sandboxes. If your agents run vision models or embeddings, choose a platform with GPU support or run inference on separate infrastructure and return results to the sandbox.
+How do sandboxes handle persistent file storage? Most sandboxes provide ephemeral file systems that reset after each session. For persistent state, use external storage like Fastio (built for AI agents with 50GB free tier), S3, or a database. Store computation results outside the sandbox before it terminates.
+Can multiple agents share the same sandbox environment? Not recommended. Each agent should get its own isolated sandbox to prevent cross-contamination. If agents need to collaborate, use shared storage (like Fastio workspaces) or message queues to coordinate, but keep their execution environments separate.
+Related Resources
+Ripley AI
+Built-in AI: search, chat, and summarize
+Collaboration
+Real-time co-editing and teamwork
+Give Your AI Agents Persistent Storage
+Stop losing work when sandboxes terminate. Fastio provides 50GB free storage built for AI agents, with built-in RAG, 19 consolidated tools, and ownership transfer to humans.
+Start Building Free View Pricing
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":13316,"paragraph_count":121,"sentence_count":139,"boilerplate_hits":1,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   query=AI agent sandbox builder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Why AI Agents Need Sandboxes Code execution is the key feature that makes AI agents autonomous.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   When an LLM needs to analyze data, run simulations, or interact with APIs, it generates code and runs it.
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   Without proper isolation, this creates a massive security risk.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   A compromised agent could read environment variables, exfiltrate credentials, modify system files, or launch attacks on internal networks.
+
+6. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   Security vulnerabilities in agent sandboxes can lead to remote code execution (RCE) exploits that bypass the AI layer entirely.
+
+## business_elements
+
+- companies: follow, builders cloud fallback, keyword search, DuckDuckGo, Google, GitHub, AWS
+- products: Agent, agent, Agents, agents, MCP
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 24, 1, 2B, 100, 500, 2, $0.01
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: query=AI agent sandbox builder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates / Why AI Agents Need Sandboxes Code execution is the key feature that makes AI agents autonomous. / When an LLM needs to analyze data, run simulations, or interact with APIs, it generates code and runs it.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: Without proper isolation, this creates a massive security risk. / Security vulnerabilities in agent sandboxes can lead to remote code execution (RCE) exploits that bypass the AI layer entirely.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 4
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有可核验原文引述
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: follow-builders cloud fallback / keyword search / DuckDuckGo
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: frontier_opinion_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+query=AI agent sandbox builder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates
+
+## 采集备注
+
+该条目由 follow-builders 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
