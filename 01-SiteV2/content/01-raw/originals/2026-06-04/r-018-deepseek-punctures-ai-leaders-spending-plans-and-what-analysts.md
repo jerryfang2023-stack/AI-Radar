@@ -1,0 +1,331 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-018
+title: "DeepSeek 'punctures' AI leaders' spending plans, and what analysts ..."
+original_url: "https://techcrunch.com/2025/01/27/deepseek-punctures-tech-spending-plans-and-what-analysts-are-saying/"
+canonical_url: "https://techcrunch.com/2025/01/27/deepseek-punctures-tech-spending-plans-and-what-analysts-are-saying"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-04T04:44:55.936Z
+language: mixed
+full_text_hash: 065a676146f00d3b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-018-deepseek-punctures-ai-leaders-spending-plans-and-what-analysts.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-018-deepseek-punctures-ai-leaders-spending-plans-and-what-analysts.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":15574,"paragraph_count":46,"sentence_count":84,"boilerplate_hits":2,"symbol_ratio":0.0002,"method":"content-container"}
+has_full_text: true
+content_length: 15574
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"065a676146f00d3b","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 83e9355cb66fb16b
+content_hash: 065a676146f00d3b
+semantic_hash: 8fa1ee203980f52b
+duplicate_of: ""
+first_seen_at: "2026-06-04T04:44:55.936Z"
+last_seen_at: 2026-06-04T04:44:55.936Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google","Microsoft","GitHub","Meta","Nvidia"],"products":["Claude","agents","GPT-5","GPT-4","ChatGPT","Copilot","Gemini"],"people":[],"industries":["法律 / 法务","金融 / 保险","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2","59","27","2025","2023 b","$60 billion","1","$5.6m"],"quotes":["punctures some of the capex euphoria","build OpenAI for $5M","scaling laws…","more investments do not equal more innovation.","OpenAI is not a god, they won’t necessarily always be at the forefront."]}
+evidence_seed: {"company_actions":["If AI training and inference cost is significantly lower, we would expect more end users would leverage AI to improve their business or develop ... / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt","Image Credits: Weiquan Lin / Getty Images AI DeepSeek ‘punctures’ AI leaders’ spending plans, and what analysts are saying Manish Singh 2:59 AM PST · January 27, 2025 Chinese AI firm DeepSeek has emerged as a potential challenger to U.","AI companies , demonstrating breakthrough models that claim to offer performance comparable to leading offerings at a fraction of the cost."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"If AI training and inference cost is significantly lower, we would expect more end users would leverage AI to improve their business or develop ... / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Weiquan Lin / Getty Images AI DeepSeek ‘punctures’ AI leaders’ spending plans, and what analysts are saying Manish Singh 2:59 AM PST · January 27, 2025 Chinese AI firm DeepSeek has emerged as a potential challenger to U.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI companies , demonstrating breakthrough models that claim to offer performance comparable to leading offerings at a fraction of the cost.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The company’s mobile app, released in early January, has lately topped the App Store charts across major markets including the U.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":", and China, but it hasn’t escaped doubts about whether its claims are true.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Founded in 2023 by Liang Wenfeng, the former chief of AI-driven quant hedge fund High-Flyer, DeepSeek’s models are open source and incorporate a reasoning feature that articulates its thinking before providing responses.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# DeepSeek 'punctures' AI leaders' spending plans, and what analysts ...
+
+## clean_text
+
+Image Credits: Weiquan Lin / Getty Images
+AI
+DeepSeek ‘punctures’ AI leaders’ spending plans, and what analysts are saying
+Manish Singh
+2:59 AM PST · January 27, 2025
+Chinese AI firm DeepSeek has emerged as a potential challenger to U.S. AI companies , demonstrating breakthrough models that claim to offer performance comparable to leading offerings at a fraction of the cost. The company’s mobile app, released in early January, has lately topped the App Store charts across major markets including the U.S., U.K., and China, but it hasn’t escaped doubts about whether its claims are true.
+Founded in 2023 by Liang Wenfeng, the former chief of AI-driven quant hedge fund High-Flyer, DeepSeek’s models are open source and incorporate a reasoning feature that articulates its thinking before providing responses.
+Wall Street’s reactions have been mixed. While brokerage firm Jefferies warns that DeepSeek’s efficient approach “punctures some of the capex euphoria” following recent spending commitments from Meta and Microsoft — each exceeding $60 billion this year — Citi is questioning whether such results were actually achieved without advanced GPUs.
+Goldman Sachs sees broader implications, suggesting the development could reshape competition between established tech giants and startups by lowering barriers to entry.
+Here’s how Wall Street analysts are reacting to DeepSeek, in their own words (emphasis ours):
+Bank of America
+Media chatter that DeepSeek’s R1 or R1-Zero models cost $5.6mn to development vs $1bn+ for alternative frontier models is misleading but also misses the bigger picture. DeepSeek noted the $5.6mn was the cost to train its previously released DeepSeek-V3 model using Nvidia H800 GPUs, but that the cost excluded other expenses related to research, experiments, architectures, algorithms and data. Our view is that more important than the significantly reduced cost and lower performance chips that DeepSeek used to develop its two newest models are the innovations introduced that enable more efficient (less costly) training and inference to occur in the first place. Lower AI compute costs should enable broader AI services from autos to smartphones .
+Morgan Stanley
+Bigger is no longer always smarter. DeepSeek demonstrates an alternative path to efficient model training than the current arm’s race among hyperscalers by significantly increasing the data quality and improving the model architecture. DeepSeek is now the lowest cost of LLM manufacturing, allowing frontier AI performance at a fraction of the cost with 9-13x lower price on output tokens vs. GPT-4o and Claude 3.5.
+Why it matters. Frontier AI capabilities might be achievable without the massive computational resources previously thought necessary. Efficient resource use – with clever engineering and efficient training methods – could matter more than sheer computing power. This may inspire a wave of innovation in exploring cost-effective methods of AI development and deployment. This means that the ROI of LLM that is of today’s concern could improve meaningfully without giving away the quality or the time line for the deployment of AI applications. The achievement also suggests the democratization of AI by making sophisticated models more accessible to eventually drive greater adoption and proliferations of AI.
+Bottom line . The restrictions on chips may end up acting as a meaningful tax on Chinese AI development but not a hard limit. China has demonstrated that cutting- edge AI capabilities can be achieved with significantly less hardware , defying conventional expectations of computing power requirements. A model that achieves frontier-grade results despite limited hardware access could mean a shift in the global AI landscape, redefining the competitive landscape of global AI enterprises, and fostering a new era of efficiency-driven progress.
+Nomura
+Although the first look on the DeepSeek’s effectiveness for training LLMs may lead to concerns for reduced hardware demand, we think large CSPs’ capex spending outlook would not change meaningfully in the near-term, as they need to stay in the competitive game, while they may accelerate the development schedule with the technology innovations. However, the market may become more anxious about the return on large AI investment , if there are no meaningful revenue streams in the near- term. Therefore, leading tech companies or CSPs may need to accelerate the AI adoptions and innovations; otherwise the sustainability of AI investment might be at risk. Another risk factor is the potential of more intensified competition between the US and China for AI leadership, which may lead to more technology restrictions and supply chain disruptions, in our view.
+Jefferies
+DeepSeek’s power implications for AI training punctures some of the capex euphoria which followed major commitments from Stargate and Meta last week. With DeepSeek delivering performance comparable to GPT-4o for a fraction of the computing power, there are potential negative implications for the builders , as pressure on AI players to justify ever increasing capex plans could ultimately lead to a lower trajectory for data center revenue and profit growth.
+If smaller models can work well, it is potentially positive for smartphone . We are bearish on AI smartphone as AI has gained no traction with consumers. More hardware upgrade (adv pkg+fast DRAM) is needed to run bigger models on the phone, which will raise costs. AAPL’s model is in fact based on MoE, but 3bn data parameters are still too small to make the services useful to consumers. Hence DeepSeek’s success offers some hope but there is no impact on AI smartphone’s near-term outlook.
+China is the only market that pursues LLM efficiency owing to chip constraint. Trump/Musk likely recognize the risk of further restrictions is to force China to innovate faster. Therefore, we think it likely Trump will relax the AI Diffusion policy.
+Citi
+While DeepSeek’s achievement could be groundbreaking, we question the notion that its feats were done without the use of advanced GPUs to fine tune it and/or build the underlying LLMs the final model is based on through the Distillation technique. While the dominance of the US companies on the most advanced AI models could be potentially challenged, that said, we estimate that in an inevitably more restrictive environment, US’ access to more advanced chips is an advantage. Thus, we don’t expect leading AI companies would move away from more advanced GPUs which provide more attractive $/TFLOPs at scale. We see the recent AI capex announcements like Stargate as a nod to the need for advanced chips.
+Bernstein
+In short, we believe that 1) DeepSeek DID NOT “build OpenAI for $5M” ; 2) the models look fantastic but we don’t think they are miracles ; and 3) the resulting Twitterverse panic over the weekend seems overblown .
+Our own initial reaction does not include panic (far from it). If we acknowledge that DeepSeek may have reduced costs of achieving equivalent model performance by, say, 10x, we also note that current model cost trajectories are increasing by about that much every year anyway (the infamous “scaling laws…”) which can’t continue forever. In that context, we NEED innovations like this (MoE, distillation, mixed precision etc) if AI is to continue progressing. And for those looking for AI adoption, as semi analysts we are firm believers in the Jevons paradox (i.e. that efficiency gains generate a net increase in demand), and believe any new compute capacity unlocked is far more likely to get absorbed due to usage and demand increase vs impacting long term spending outlook at this point, as we do not believe compute needs are anywhere close to reaching their limit in AI. It also seems like a stretch to think the innovations being deployed by DeepSeek are completely unknown by the vast number of top tier AI researchers at the world’s other numerous AI labs (frankly we don’t know what the large closed labs have been using to develop and deploy their own models, but we just can’t believe that they have not considered or even perhaps used similar strategies themselves).
+Jevons paradox strikes again! As AI gets more efficient and accessible, we will see its use skyrocket, turning it into a commodity we just can't get enough of. https://t.co/omEcOPhdIz
+&mdash; Satya Nadella (@satyanadella) January 27, 2025
+Goldman Sachs
+With the latest developments, we also see 1) potential competition between capital-rich internet giants vs. start-ups , given lowering barriers to entry, especially with recent new models developed at a fraction of the cost of existing ones; 2) from training to more inferencing , with increased emphasis on post-training (including reasoning capabilities and reinforcement capabilities) that requires significantly lower computational resources vs. pre-training; and 3) the potential for further global expansion for Chinese players, given their performance and cost/price competitiveness.
+We continue to expect the race for AI application/AI agents to continue in China, especially amongst To-C applications, where China companies have been pioneers in mobile applications in the internet era, e.g., Tencent’s creation of the Weixin (WeChat) super-app. Amongst To-C applications, ByteDance has been leading the way by launching 32 AI applications over the past year. Amongst them, Doubao has been the most popular AI Chatbot thus far in China with the highest MAU (c.70mn), which has recently been upgraded with its Doubao 1.5 Pro model. We believe incremental revenue streams (subscription, advertising) and eventual/sustainable path to monetization/positive unit economics amongst applications/agents will be key.
+For the infrastructure layer, investor focus has centered around whether there will be a near-term mismatch between market expectations on AI capex and computing demand, in the event of significant improvements in cost/model computing efficiencies. For Chinese cloud/data center players, we continue to believe the focus for 2025 will center around chip availability and the ability of CSP (cloud service providers) to deliver improving revenue contribution from AI-driven cloud revenue growth, and beyond infrastructure/GPU renting, how AI workloads & AI related services could contribute to growth and margins going forward. We remain positive on long-term AI computing demand growth as a further lowering of computing/training/inference costs could drive higher AI adoption. See also Theme #5 of our key themes report for our base/bear scenarios for BBAT capex estimates depending on chip availability, where we expect aggregate capex growth of BBAT to continue in 2025E in our base case (GSe: +38% yoy) albeit at a slightly more moderate pace vs. a strong 2024 (GSe: +61% yoy), driven by ongoing investment into AI infrastructure.
+J.P.Morgan
+Above all, much is made of DeepSeek’s research papers, and of their models’ efficiency. It’s unclear to what extent DeepSeek is leveraging High-Flyer’s ~50k hopper GPUs (similar in size to the cluster on which OpenAI is believed to be training GPT-5), but what seems likely is that they’re dramatically reducing costs (inference costs for their V2 model, for example, are claimed to be 1/7 that of GPT-4 Turbo). Their subversive (though not new) claim – that started to hit the US AI names this week – is that “more investments do not equal more innovation.” Liang: “Right now I don’t see any new approaches, but big firms do not have a clear upper hand. Big firms have existing customers, but their cash-flow businesses are also their burden, and this makes them vulnerable to disruption at any time.” And when asked about the fact that GPT5 has still not been released: “OpenAI is not a god, they won’t necessarily always be at the forefront.”
+UBS
+Throughout 2024, the first year we saw massive AI training workload in China, more than 80-90% IDC demand was driven by AI training and concentrated in 1-2 hyperscaler customers, which translated to wholesale hyperscale IDC demand in relatively remote area (as power-consuming AI training is sensitive to utility cost rather than user latency).
+If AI training and inference cost is significantly lower, we would expect more end users would leverage AI to improve their business or develop new use cases , especially retail customers. Such IDC demand means more focus on location (as user latency is more important than utility cost), and thus greater pricing power for IDC operators that have abundant resources in tier 1 and satellite cities. Meanwhile, a more diversified customer portfolio would also imply greater pricing power.
+William Blair
+From a semiconductor industry perspective, our initial take is that AI-focused semi companies are unlikely to see meaningful change to near-term demand trends given current supply constraints (around chips, memory, data center capacity, and power). Longer term, however, the continued pressure to lower the cost of compute—and the ability to reduce the cost of training and inference using new, more efficient algorithmic techniques—could result in lower capex than previously envisioned and lessen Nvidia’s dominance, especially if large-scale GPU clusters are not as critical to achieve frontier-level model performance as we thought. With still many unanswered questions and variables (what are the true costs of R1, what training data was used [only the model weights were open sourced], and how replicable are the results), we hesitate to come to any definitive conclusions regarding the future GenAI capex outlook (and whether DeepSeek has fundamentally altered it). That said, we recognize the hyper-sensitivity in the equity markets to overbuild risk, leading to today’s “shoot first and ask questions later” reaction.
+We’ll update the story as more analysts react.
+TechCrunch has an AI-focused newsletter! Sign up here to get it in your inbox every Wednesday.
+Topics
+AI , analysts , Anthropic , artificial intelligence , Bernstein , ChatGPT , citigroup , deepseek , Goldman Sachs , Jefferies , jpmorgan , large language models , Llama , Meta , morgan stanley , Nomura , OpenAI , TC , ubs , wall street
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Manish Singh
+Writer, Investor and Communications Advisor
+Manish Singh reported on India’s startup and venture capital ecosystem for TechCrunch from 2019 to 2025. He is now an angel investor and communications advisor to startups. You can follow his writings at IndiaDispatch.com
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+Microsoft launches Scout, an OpenClaw-inspired personal assistant
+Russell Brandom
+Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access
+Lorenzo Franceschi-Bicchierai
+Anthropic files to go public
+Kirsten Korosec
+Strava declares war on scrapers ahead of IPO
+Ivan Mehta
+‘What a joke’: GitHub Copilot’s new token-based billing spurs consternation among devs
+Lucas Ropek
+I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually pretty useful
+Sarah Perez
+Microsoft under fire for threatening security researcher with criminal investigation
+Lorenzo Franceschi-Bicchierai
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Weiquan Lin / Getty Images
+AI
+DeepSeek ‘punctures’ AI leaders’ spending plans, and what analysts are saying
+Manish Singh
+2:59 AM PST · January 27, 2025
+Chinese AI firm DeepSeek has emerged as a potential challenger to U.S. AI companies , demonstrating breakthrough models that claim to offer performance comparable to leading offerings at a fraction of the cost. The company’s mobile app, released in early January, has lately topped the App Store charts across major markets including the U.S., U.K., and China, but it hasn’t escaped doubts about whether its claims are true.
+Founded in 2023 by Liang Wenfeng, the former chief of AI-driven quant hedge fund High-Flyer, DeepSeek’s models are open source and incorporate a reasoning feature that articulates its thinking before providing responses.
+Wall Street’s reactions have been mixed. While brokerage firm Jefferies warns that DeepSeek’s efficient approach “punctures some of the capex euphoria” following recent spending commitments from Meta and Microsoft — each exceeding $60 billion this year — Citi is questioning whether such results were actually achieved without advanced GPUs.
+Goldman Sachs sees broader implications, suggesting the development could reshape competition between established tech giants and startups by lowering barriers to entry.
+Here’s how Wall Street analysts are reacting to DeepSeek, in their own words (emphasis ours):
+Bank of America
+Media chatter that DeepSeek’s R1 or R1-Zero models cost $5.6mn to development vs $1bn+ for alternative frontier models is misleading but also misses the bigger picture. DeepSeek noted the $5.6mn was the cost to train its previously released DeepSeek-V3 model using Nvidia H800 GPUs, but that the cost excluded other expenses related to research, experiments, architectures, algorithms and data. Our view is that more important than the significantly reduced cost and lower performance chips that DeepSeek used to develop its two newest models are the innovations introduced that enable more efficient (less costly) training and inference to occur in the first place. Lower AI compute costs should enable broader AI services from autos to smartphones .
+Morgan Stanley
+Bigger is no longer always smarter. DeepSeek demonstrates an alternative path to efficient model training than the current arm’s race among hyperscalers by significantly increasing the data quality and improving the model architecture. DeepSeek is now the lowest cost of LLM manufacturing, allowing frontier AI performance at a fraction of the cost with 9-13x lower price on output tokens vs. GPT-4o and Claude 3.5.
+Why it matters. Frontier AI capabilities might be achievable without the massive computational resources previously thought necessary. Efficient resource use – with clever engineering and efficient training methods – could matter more than sheer computing power. This may inspire a wave of innovation in exploring cost-effective methods of AI development and deployment. This means that the ROI of LLM that is of today’s concern could improve meaningfully without giving away the quality or the time line for the deployment of AI applications. The achievement also suggests the democratization of AI by making sophisticated models more accessible to eventually drive greater adoption and proliferations of AI.
+Bottom line . The restrictions on chips may end up acting as a meaningful tax on Chinese AI development but not a hard limit. China has demonstrated that cutting- edge AI capabilities can be achieved with significantly less hardware , defying conventional expectations of computing power requirements. A model that achieves frontier-grade results despite limited hardware access could mean a shift in the global AI landscape, redefining the competitive landscape of global AI enterprises, and fostering a new era of efficiency-driven progress.
+Nomura
+Although the first look on the DeepSeek’s effectiveness for training LLMs may lead to concerns for reduced hardware demand, we think large CSPs’ capex spending outlook would not change meaningfully in the near-term, as they need to stay in the competitive game, while they may accelerate the development schedule with the technology innovations. However, the market may become more anxious about the return on large AI investment , if there are no meaningful revenue streams in the near- term. Therefore, leading tech companies or CSPs may need to accelerate the AI adoptions and innovations; otherwise the sustainability of AI investment might be at risk. Another risk factor is the potential of more intensified competition between the US and China for AI leadership, which may lead to more technology restrictions and supply chain disruptions, in our view.
+Jefferies
+DeepSeek’s power implications for AI training punctures some of the capex euphoria which followed major commitments from Stargate and Meta last week. With DeepSeek delivering performance comparable to GPT-4o for a fraction of the computing power, there are potential negative implications for the builders , as pressure on AI players to justify ever increasing capex plans could ultimately lead to a lower trajectory for data center revenue and profit growth.
+If smaller models can work well, it is potentially positive for smartphone . We are bearish on AI smartphone as AI has gained no traction with consumers. More hardware upgrade (adv pkg+fast DRAM) is needed to run bigger models on the phone, which will raise costs. AAPL’s model is in fact based on MoE, but 3bn data parameters are still too small to make the services useful to consumers. Hence DeepSeek’s success offers some hope but there is no impact on AI smartphone’s near-term outlook.
+China is the only market that pursues LLM efficiency owing to chip constraint. Trump/Musk likely recognize the risk of further restrictions is to force China to innovate faster. Therefore, we think it likely Trump will relax the AI Diffusion policy.
+Citi
+While DeepSeek’s achievement could be groundbreaking, we question the notion that its feats were done without the use of advanced GPUs to fine tune it and/or build the underlying LLMs the final model is based on through the Distillation technique. While the dominance of the US companies on the most advanced AI models could be potentially challenged, that said, we estimate that in an inevitably more restrictive environment, US’ access to more advanced chips is an advantage. Thus, we don’t expect leading AI companies would move away from more advanced GPUs which provide more attractive $/TFLOPs at scale. We see the recent AI capex announcements like Stargate as a nod to the need for advanced chips.
+Bernstein
+In short, we believe that 1) DeepSeek DID NOT “build OpenAI for $5M” ; 2) the models look fantastic but we don’t think they are miracles ; and 3) the resulting Twitterverse panic over the weekend seems overblown .
+Our own initial reaction does not include panic (far from it). If we acknowledge that DeepSeek may have reduced costs of achieving equivalent model performance by, say, 10x, we also note that current model cost trajectories are increasing by about that much every year anyway (the infamous “scaling laws…”) which can’t continue forever. In that context, we NEED innovations like this (MoE, distillation, mixed precision etc) if AI is to continue progressing. And for those looking for AI adoption, as semi analysts we are firm believers in the Jevons paradox (i.e. that efficiency gains generate a net increase in demand), and believe any new compute capacity unlocked is far more likely to get absorbed due to usage and demand increase vs impacting long term spending outlook at this point, as we do not believe compute needs are anywhere close to reaching their limit in AI. It also seems like a stretch to think the innovations being deployed by DeepSeek are completely unknown by the vast number of top tier AI researchers at the world’s other numerous AI labs (frankly we don’t know what the large closed labs have been using to develop and deploy their own models, but we just can’t believe that they have not considered or even perhaps used similar strategies themselves).
+Jevons paradox strikes again! As AI gets more efficient and accessible, we will see its use skyrocket, turning it into a commodity we just can't get enough of. https://t.co/omEcOPhdIz
+&mdash; Satya Nadella (@satyanadella) January 27, 2025
+Goldman Sachs
+With the latest developments, we also see 1) potential competition between capital-rich internet giants vs. start-ups , given lowering barriers to entry, especially with recent new models developed at a fraction of the cost of existing ones; 2) from training to more inferencing , with increased emphasis on post-training (including reasoning capabilities and reinforcement capabilities) that requires significantly lower computational resources vs. pre-training; and 3) the potential for further global expansion for Chinese players, given their performance and cost/price competitiveness.
+We continue to expect the race for AI application/AI agents to continue in China, especially amongst To-C applications, where China companies have been pioneers in mobile applications in the internet era, e.g., Tencent’s creation of the Weixin (WeChat) super-app. Amongst To-C applications, ByteDance has been leading the way by launching 32 AI applications over the past year. Amongst them, Doubao has been the most popular AI Chatbot thus far in China with the highest MAU (c.70mn), which has recently been upgraded with its Doubao 1.5 Pro model. We believe incremental revenue streams (subscription, advertising) and eventual/sustainable path to monetization/positive unit economics amongst applications/agents will be key.
+For the infrastructure layer, investor focus has centered around whether there will be a near-term mismatch between market expectations on AI capex and computing demand, in the event of significant improvements in cost/model computing efficiencies. For Chinese cloud/data center players, we continue to believe the focus for 2025 will center around chip availability and the ability of CSP (cloud service providers) to deliver improving revenue contribution from AI-driven cloud revenue growth, and beyond infrastructure/GPU renting, how AI workloads & AI related services could contribute to growth and margins going forward. We remain positive on long-term AI computing demand growth as a further lowering of computing/training/inference costs could drive higher AI adoption. See also Theme #5 of our key themes report for our base/bear scenarios for BBAT capex estimates depending on chip availability, where we expect aggregate capex growth of BBAT to continue in 2025E in our base case (GSe: +38% yoy) albeit at a slightly more moderate pace vs. a strong 2024 (GSe: +61% yoy), driven by ongoing investment into AI infrastructure.
+J.P.Morgan
+Above all, much is made of DeepSeek’s research papers, and of their models’ efficiency. It’s unclear to what extent DeepSeek is leveraging High-Flyer’s ~50k hopper GPUs (similar in size to the cluster on which OpenAI is believed to be training GPT-5), but what seems likely is that they’re dramatically reducing costs (inference costs for their V2 model, for example, are claimed to be 1/7 that of GPT-4 Turbo). Their subversive (though not new) claim – that started to hit the US AI names this week – is that “more investments do not equal more innovation.” Liang: “Right now I don’t see any new approaches, but big firms do not have a clear upper hand. Big firms have existing customers, but their cash-flow businesses are also their burden, and this makes them vulnerable to disruption at any time.” And when asked about the fact that GPT5 has still not been released: “OpenAI is not a god, they won’t necessarily always be at the forefront.”
+UBS
+Throughout 2024, the first year we saw massive AI training workload in China, more than 80-90% IDC demand was driven by AI training and concentrated in 1-2 hyperscaler customers, which translated to wholesale hyperscale IDC demand in relatively remote area (as power-consuming AI training is sensitive to utility cost rather than user latency).
+If AI training and inference cost is significantly lower, we would expect more end users would leverage AI to improve their business or develop new use cases , especially retail customers. Such IDC demand means more focus on location (as user latency is more important than utility cost), and thus greater pricing power for IDC operators that have abundant resources in tier 1 and satellite cities. Meanwhile, a more diversified customer portfolio would also imply greater pricing power.
+William Blair
+From a semiconductor industry perspective, our initial take is that AI-focused semi companies are unlikely to see meaningful change to near-term demand trends given current supply constraints (around chips, memory, data center capacity, and power). Longer term, however, the continued pressure to lower the cost of compute—and the ability to reduce the cost of training and inference using new, more efficient algorithmic techniques—could result in lower capex than previously envisioned and lessen Nvidia’s dominance, especially if large-scale GPU clusters are not as critical to achieve frontier-level model performance as we thought. With still many unanswered questions and variables (what are the true costs of R1, what training data was used [only the model weights were open sourced], and how replicable are the results), we hesitate to come to any definitive conclusions regarding the future GenAI capex outlook (and whether DeepSeek has fundamentally altered it). That said, we recognize the hyper-sensitivity in the equity markets to overbuild risk, leading to today’s “shoot first and ask questions later” reaction.
+We’ll update the story as more analysts react.
+TechCrunch has an AI-focused newsletter! Sign up here to get it in your inbox every Wednesday.
+Topics
+AI , analysts , Anthropic , artificial intelligence , Bernstein , ChatGPT , citigroup , deepseek , Goldman Sachs , Jefferies , jpmorgan , large language models , Llama , Meta , morgan stanley , Nomura , OpenAI , TC , ubs , wall street
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Manish Singh
+Writer, Investor and Communications Advisor
+Manish Singh reported on India’s startup and venture capital ecosystem for TechCrunch from 2019 to 2025. He is now an angel investor and communications advisor to startups. You can follow his writings at IndiaDispatch.com
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+Microsoft launches Scout, an OpenClaw-inspired personal assistant
+Russell Brandom
+Hackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access
+Lorenzo Franceschi-Bicchierai
+Anthropic files to go public
+Kirsten Korosec
+Strava declares war on scrapers ahead of IPO
+Ivan Mehta
+‘What a joke’: GitHub Copilot’s new token-based billing spurs consternation among devs
+Lucas Ropek
+I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually pretty useful
+Sarah Perez
+Microsoft under fire for threatening security researcher with criminal investigation
+Lorenzo Franceschi-Bicchierai
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":15574,"paragraph_count":46,"sentence_count":84,"boilerplate_hits":2,"symbol_ratio":0.0002,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   If AI training and inference cost is significantly lower, we would expect more end users would leverage AI to improve their business or develop ... / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Image Credits: Weiquan Lin / Getty Images AI DeepSeek ‘punctures’ AI leaders’ spending plans, and what analysts are saying Manish Singh 2:59 AM PST · January 27, 2025 Chinese AI firm DeepSeek has emerged as a potential challenger to U.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   AI companies , demonstrating breakthrough models that claim to offer performance comparable to leading offerings at a fraction of the cost.
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   The company’s mobile app, released in early January, has lately topped the App Store charts across major markets including the U.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   , and China, but it hasn’t escaped doubts about whether its claims are true.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Founded in 2023 by Liang Wenfeng, the former chief of AI-driven quant hedge fund High-Flyer, DeepSeek’s models are open source and incorporate a reasoning feature that articulates its thinking before providing responses.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google, Microsoft, GitHub, Meta, Nvidia
+- products: Claude, agents, GPT-5, GPT-4, ChatGPT, Copilot, Gemini
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2, 59, 27, 2025, 2023 b, $60 billion, 1, $5.6m
+- quotes: punctures some of the capex euphoria / build OpenAI for $5M / scaling laws… / more investments do not equal more innovation. / OpenAI is not a god, they won’t necessarily always be at the forefront.
+
+## evidence_seed
+
+- company_actions: If AI training and inference cost is significantly lower, we would expect more end users would leverage AI to improve their business or develop ... / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt / Image Credits: Weiquan Lin / Getty Images AI DeepSeek ‘punctures’ AI leaders’ spending plans, and what analysts are saying Manish Singh 2:59 AM PST · January 27, 2025 Chinese AI firm DeepSeek has emerged as a potential challenger to U. / AI companies , demonstrating breakthrough models that claim to offer performance comparable to leading offerings at a fraction of the cost.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+If AI training and inference cost is significantly lower, we would expect more end users would leverage AI to improve their business or develop ... / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

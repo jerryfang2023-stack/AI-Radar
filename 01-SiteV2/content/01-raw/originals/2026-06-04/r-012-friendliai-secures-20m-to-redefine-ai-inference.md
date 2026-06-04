@@ -1,0 +1,306 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-012
+title: "FriendliAI Secures $20M to Redefine AI Inference"
+original_url: "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round"
+canonical_url: "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-04T04:44:55.905Z
+language: mixed
+full_text_hash: 6780af8acb880527
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-012-friendliai-secures-20m-to-redefine-ai-inference.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-012-friendliai-secures-20m-to-redefine-ai-inference.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6675,"paragraph_count":39,"sentence_count":50,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 6675
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6780af8acb880527","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a279a9a1c8543f67
+content_hash: 6780af8acb880527
+semantic_hash: c63b4e3f5efd1fd1
+duplicate_of: ""
+first_seen_at: "2026-06-04T04:44:55.905Z"
+last_seen_at: 2026-06-04T04:44:55.905Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["金融 / 保险","医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["$20M","90%","28","2025","3 m","$20 million","430","000 m"],"quotes":["The AI inference market is exploding as more organizations move from AI experimentation to production deployment,","This funding underscores the strength of our approach and positions us to capture the massive opportunity ahead.","FriendliAI has demonstrated exceptional technical innovation in the AI inference space,","FriendliAI represents exactly the kind of infrastructure innovation that's needed to support the next wave of AI adoption,","Their continued growth demonstrates the strong market demand for efficient, scalable AI inference solutions."]}
+evidence_seed: {"company_actions":["August 28, 2025 3 min read FriendliAI Secures $20M to Redefine AI Inference We are thrilled to announce our $20 million seed extension round, led by Capstone Partners and joined by Sierra Ventures , Alumni Ventures , KDB , and KB Securities .","This milestone marks a major step forward in our mission to make high-performance AI inference accessible, scalable, and cost-efficient for enterprises around the world.","This funding comes at a pivotal time, as startups and enterprises accelerate AI deployment."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"FriendliAI leads this shift with a cutting-edge inference platform that speeds up model inference and reduces GPU costs by up to 90% while ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"August 28, 2025 3 min read FriendliAI Secures $20M to Redefine AI Inference We are thrilled to announce our $20 million seed extension round, led by Capstone Partners and joined by Sierra Ventures , Alumni Ventures , KDB , and KB Securities .","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This milestone marks a major step forward in our mission to make high-performance AI inference accessible, scalable, and cost-efficient for enterprises around the world.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"This funding comes at a pivotal time, as startups and enterprises accelerate AI deployment.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"FriendliAI leads this shift with a cutting-edge inference platform that speeds up model inference and reduces GPU costs by up to 90% while preserving model accuracy.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Accelerating Innovation This new capital will enable us to: Expand our go-to-market presence in North America and Asia to accelerate adoption and deepen enterprise engagement.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# FriendliAI Secures $20M to Redefine AI Inference
+
+## clean_text
+
+August 28, 2025
+3 min read
+FriendliAI Secures $20M to Redefine AI Inference
+We are thrilled to announce our $20 million seed extension round, led by Capstone Partners and joined by Sierra Ventures , Alumni Ventures , KDB , and KB Securities . This milestone marks a major step forward in our mission to make high-performance AI inference accessible, scalable, and cost-efficient for enterprises around the world.
+This funding comes at a pivotal time, as startups and enterprises accelerate AI deployment. FriendliAI leads this shift with a cutting-edge inference platform that speeds up model inference and reduces GPU costs by up to 90% while preserving model accuracy.
+Accelerating Innovation
+This new capital will enable us to:
+Expand our go-to-market presence in North America and Asia to accelerate adoption and deepen enterprise engagement.
+Invest in R&D to continuously innovate across the AI inference stack and deliver the industry’s best platform.
+Scale our GPU infrastructure to meet growing demand and power the next generation of AI applications.
+Our customers rely on us to run large-scale models with lightning-fast performance and dramatically reduced infrastructure costs. This funding enables us to continue delivering on that promise at a greater scale.
+“The AI inference market is exploding as more organizations move from AI experimentation to production deployment,” said Byung-Gon Chun, CEO and Co-founder of FriendliAI . “This funding underscores the strength of our approach and positions us to capture the massive opportunity ahead.”
+Enabling AI Inference at Scale
+As enterprises move from AI prototypes to production systems, inference becomes the critical bottleneck. According to IBM, 90% of LLM operational time is spent on inference, making performance and efficiency here more important than ever.
+FriendliAI directly addresses three core challenges in production AI:
+Infrastructure Cost : We cut GPU spending by up to 90%, optimizing AI budgets at scale.
+Inference Speed : We deliver industry-leading response times, even for complex models.
+Operational Complexity : Our platform simplifies deployment and scaling of large models across environments.
+Real-World Impact
+FriendliAI is already demonstrating tangible impact across a growing ecosystem of AI developers and enterprise users.
+With support for over 430,000 models from Hugging Face , the platform enables seamless, one-click deployment of advanced AI models, significantly reducing the complexity of bringing models into life. In partnership with LG AI Research , FriendliAI introduced the API access to EXAONE 4.0 , their most advanced large language model. This collaboration marks the first public release of the model, expanding global access to high-performance, enterprise-grade AI. Furthermore, startups such as Scatter Lab are achieving a significant reduction in infrastructure costs by leveraging FriendliAI’s platform. In addition, Upstage , a fast-growing AI company best known for its cutting-edge Solar foundation model, relies on FriendliAI’s platform to deliver state-of-the-art inference performance.
+These developments reflect the platform’s growing role in enabling real-world AI deployment through scalable, efficient, and production-ready infrastructure.
+Backed by World-Class Investors
+We’re proud to be supported by investors who believe in the future we’re building:
+Capstone Partners , a leading venture capital firm specializing in early-stage investments in innovative startups.
+Sierra Ventures , an early-stage venture capital firm focused on enterprise and frontier technologies with over $2 billion AUM, investing in companies across various sectors, including AI/ML, big data, cloud, fintech, health tech, and more.
+Alumni Ventures , one of the most active VC firms in the US, with thousands of investments made and $1.4B+ committed capital.
+KDB and KB Securities , leading investment banks in Korea.
+"FriendliAI has demonstrated exceptional technical innovation in the AI inference space," said Eunkang Song, Partner at Capstone Partners . "Their platform's ability to deliver superior performance, while reducing costs, makes them an ideal partner for enterprises scaling their AI operations. We're thrilled to lead this round."
+"FriendliAI represents exactly the kind of infrastructure innovation that's needed to support the next wave of AI adoption," said Ben Yu, Partner at Sierra Ventures . "Their continued growth demonstrates the strong market demand for efficient, scalable AI inference solutions."
+What’s Next?
+FriendliAI is building the most advanced, high-performance AI inference platform. Whether you’re a fast-scaling startup or an enterprise running mission-critical AI, we empower you to run AI faster, more efficiently, and more intelligently.
+A huge thank-you to our investors, partners, and most importantly, our customers for believing in us and shaping this journey.
+We’re just getting started.
+Written by
+FriendliAI Tech & Research
+Share
+General FAQ
+What is FriendliAI? FriendliAI is a GPU-inference platform that lets you deploy, scale, and monitor large language and multimodal models in production, without owning or managing GPU infrastructure. We offer three things for your AI models: Unmatched speed, cost efficiency, and operational simplicity . Find out which product is the best fit for you in here .
+How does FriendliAI help my business? Our Friendli Inference allows you to squeeze more tokens-per-second out of every GPU. Because you need fewer GPUs to serve the same load , the true metric—tokens per dollar—comes out higher even if the hourly GPU rate looks similar on paper. View pricing
+Which models and modalities are supported? Over 560,000 text, vision, audio, and multi-modal models are deployable out of the box. You can also upload custom models or LoRA adapters. Explore models
+Can I deploy models from Hugging Face directly? Yes. A one-click deploy by selecting “Friendli Endpoints” on the Hugging Face Hub will take you to our model deployment page. The page provides an easy-to-use interface for setting up Friendli Dedicated Endpoints, a managed service for generative AI inference. Learn more about our Hugging Face partnership
+Still have questions?
+If you want a customized solution for that key issue that is slowing your growth, support@friendli.ai or click Talk to an engineer — our engineers (not a bot) will reply within one business day.
+Related Posts
+August 26, 2025
+5 min read
+The Rise of MoE: Comparing 2025’s Leading Mixture-of-Experts AI Models
+MoE
+Models
+AI Comparison
+September 19, 2025
+5 min read
+Customizing Chat Templates in LLMs
+Chat Template
+Dedicated Endpoints
+See all from blog
+
+## full_text
+
+August 28, 2025
+3 min read
+FriendliAI Secures $20M to Redefine AI Inference
+We are thrilled to announce our $20 million seed extension round, led by Capstone Partners and joined by Sierra Ventures , Alumni Ventures , KDB , and KB Securities . This milestone marks a major step forward in our mission to make high-performance AI inference accessible, scalable, and cost-efficient for enterprises around the world.
+This funding comes at a pivotal time, as startups and enterprises accelerate AI deployment. FriendliAI leads this shift with a cutting-edge inference platform that speeds up model inference and reduces GPU costs by up to 90% while preserving model accuracy.
+Accelerating Innovation
+This new capital will enable us to:
+Expand our go-to-market presence in North America and Asia to accelerate adoption and deepen enterprise engagement.
+Invest in R&D to continuously innovate across the AI inference stack and deliver the industry’s best platform.
+Scale our GPU infrastructure to meet growing demand and power the next generation of AI applications.
+Our customers rely on us to run large-scale models with lightning-fast performance and dramatically reduced infrastructure costs. This funding enables us to continue delivering on that promise at a greater scale.
+“The AI inference market is exploding as more organizations move from AI experimentation to production deployment,” said Byung-Gon Chun, CEO and Co-founder of FriendliAI . “This funding underscores the strength of our approach and positions us to capture the massive opportunity ahead.”
+Enabling AI Inference at Scale
+As enterprises move from AI prototypes to production systems, inference becomes the critical bottleneck. According to IBM, 90% of LLM operational time is spent on inference, making performance and efficiency here more important than ever.
+FriendliAI directly addresses three core challenges in production AI:
+Infrastructure Cost : We cut GPU spending by up to 90%, optimizing AI budgets at scale.
+Inference Speed : We deliver industry-leading response times, even for complex models.
+Operational Complexity : Our platform simplifies deployment and scaling of large models across environments.
+Real-World Impact
+FriendliAI is already demonstrating tangible impact across a growing ecosystem of AI developers and enterprise users.
+With support for over 430,000 models from Hugging Face , the platform enables seamless, one-click deployment of advanced AI models, significantly reducing the complexity of bringing models into life. In partnership with LG AI Research , FriendliAI introduced the API access to EXAONE 4.0 , their most advanced large language model. This collaboration marks the first public release of the model, expanding global access to high-performance, enterprise-grade AI. Furthermore, startups such as Scatter Lab are achieving a significant reduction in infrastructure costs by leveraging FriendliAI’s platform. In addition, Upstage , a fast-growing AI company best known for its cutting-edge Solar foundation model, relies on FriendliAI’s platform to deliver state-of-the-art inference performance.
+These developments reflect the platform’s growing role in enabling real-world AI deployment through scalable, efficient, and production-ready infrastructure.
+Backed by World-Class Investors
+We’re proud to be supported by investors who believe in the future we’re building:
+Capstone Partners , a leading venture capital firm specializing in early-stage investments in innovative startups.
+Sierra Ventures , an early-stage venture capital firm focused on enterprise and frontier technologies with over $2 billion AUM, investing in companies across various sectors, including AI/ML, big data, cloud, fintech, health tech, and more.
+Alumni Ventures , one of the most active VC firms in the US, with thousands of investments made and $1.4B+ committed capital.
+KDB and KB Securities , leading investment banks in Korea.
+"FriendliAI has demonstrated exceptional technical innovation in the AI inference space," said Eunkang Song, Partner at Capstone Partners . "Their platform's ability to deliver superior performance, while reducing costs, makes them an ideal partner for enterprises scaling their AI operations. We're thrilled to lead this round."
+"FriendliAI represents exactly the kind of infrastructure innovation that's needed to support the next wave of AI adoption," said Ben Yu, Partner at Sierra Ventures . "Their continued growth demonstrates the strong market demand for efficient, scalable AI inference solutions."
+What’s Next?
+FriendliAI is building the most advanced, high-performance AI inference platform. Whether you’re a fast-scaling startup or an enterprise running mission-critical AI, we empower you to run AI faster, more efficiently, and more intelligently.
+A huge thank-you to our investors, partners, and most importantly, our customers for believing in us and shaping this journey.
+We’re just getting started.
+Written by
+FriendliAI Tech & Research
+Share
+General FAQ
+What is FriendliAI? FriendliAI is a GPU-inference platform that lets you deploy, scale, and monitor large language and multimodal models in production, without owning or managing GPU infrastructure. We offer three things for your AI models: Unmatched speed, cost efficiency, and operational simplicity . Find out which product is the best fit for you in here .
+How does FriendliAI help my business? Our Friendli Inference allows you to squeeze more tokens-per-second out of every GPU. Because you need fewer GPUs to serve the same load , the true metric—tokens per dollar—comes out higher even if the hourly GPU rate looks similar on paper. View pricing
+Which models and modalities are supported? Over 560,000 text, vision, audio, and multi-modal models are deployable out of the box. You can also upload custom models or LoRA adapters. Explore models
+Can I deploy models from Hugging Face directly? Yes. A one-click deploy by selecting “Friendli Endpoints” on the Hugging Face Hub will take you to our model deployment page. The page provides an easy-to-use interface for setting up Friendli Dedicated Endpoints, a managed service for generative AI inference. Learn more about our Hugging Face partnership
+Still have questions?
+If you want a customized solution for that key issue that is slowing your growth, support@friendli.ai or click Talk to an engineer — our engineers (not a bot) will reply within one business day.
+Related Posts
+August 26, 2025
+5 min read
+The Rise of MoE: Comparing 2025’s Leading Mixture-of-Experts AI Models
+MoE
+Models
+AI Comparison
+September 19, 2025
+5 min read
+Customizing Chat Templates in LLMs
+Chat Template
+Dedicated Endpoints
+See all from blog
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6675,"paragraph_count":39,"sentence_count":50,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   FriendliAI leads this shift with a cutting-edge inference platform that speeds up model inference and reduces GPU costs by up to 90% while ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   August 28, 2025 3 min read FriendliAI Secures $20M to Redefine AI Inference We are thrilled to announce our $20 million seed extension round, led by Capstone Partners and joined by Sierra Ventures , Alumni Ventures , KDB , and KB Securities .
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   This milestone marks a major step forward in our mission to make high-performance AI inference accessible, scalable, and cost-efficient for enterprises around the world.
+
+4. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   This funding comes at a pivotal time, as startups and enterprises accelerate AI deployment.
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   FriendliAI leads this shift with a cutting-edge inference platform that speeds up model inference and reduces GPU costs by up to 90% while preserving model accuracy.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Accelerating Innovation This new capital will enable us to: Expand our go-to-market presence in North America and Asia to accelerate adoption and deepen enterprise engagement.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: $20M, 90%, 28, 2025, 3 m, $20 million, 430, 000 m
+- quotes: The AI inference market is exploding as more organizations move from AI experimentation to production deployment, / This funding underscores the strength of our approach and positions us to capture the massive opportunity ahead. / FriendliAI has demonstrated exceptional technical innovation in the AI inference space, / FriendliAI represents exactly the kind of infrastructure innovation that's needed to support the next wave of AI adoption, / Their continued growth demonstrates the strong market demand for efficient, scalable AI inference solutions.
+
+## evidence_seed
+
+- company_actions: August 28, 2025 3 min read FriendliAI Secures $20M to Redefine AI Inference We are thrilled to announce our $20 million seed extension round, led by Capstone Partners and joined by Sierra Ventures , Alumni Ventures , KDB , and KB Securities . / This milestone marks a major step forward in our mission to make high-performance AI inference accessible, scalable, and cost-efficient for enterprises around the world. / This funding comes at a pivotal time, as startups and enterprises accelerate AI deployment.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+FriendliAI leads this shift with a cutting-edge inference platform that speeds up model inference and reduces GPU costs by up to 90% while ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

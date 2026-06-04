@@ -1,0 +1,254 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-048",
+  "title": "Building AI Routing Workflows | CodeSignal Learn",
+  "original_url": "https://codesignal.com/learn/courses/exploring-workflows-with-claude-in-typescript/lessons/building-ai-routing-workflows",
+  "canonical_url": "https://codesignal.com/learn/courses/exploring-workflows-with-claude-in-typescript/lessons/building-ai-routing-workflows",
+  "source_name": "follow-builders cloud fallback / keyword search / Anysearch",
+  "source_type": "builder",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "follow-builders",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-04T04:44:56.052Z",
+  "language": "mixed",
+  "full_text": "Building AI Routing Workflows | CodeSignal Learn\nSkip to main content\nIntroduction & Context\nWelcome back! In the previous lesson, you learned how to use prompt chaining to connect multiple Claude API calls in a linear sequence, breaking down complex tasks into manageable steps. This approach works well when you know exactly what sequence of operations is needed.\nHowever, real-world applications often face unpredictable requests that require different types of expertise. Instead of building separate chains for every possible request, routing workflows use Claude to analyze incoming requests and intelligently direct them to the right specialist — such as a math expert, a writing expert, or a code expert.\nThis lesson will show you how to build a flexible routing system that maintains high-quality responses by leveraging specialized system prompts for each domain.\nWorkflow Design at a Glance\nThe routing workflow follows a clean two-step pattern that's more dynamic than the linear chains you've used before. When a user submits a request, your system first sends it to a router — a Claude instance with a specialized system prompt designed to classify the request type. The router analyzes the content and returns a decision about which specialist should handle it.\nOnce you have the routing decision, you send the original user request to a second Claude instance configured with the appropriate specialist system prompt. This specialist focuses entirely on providing the best possible response within their domain of expertise, whether that's solving equations, crafting stories, or debugging code.\nThe key insight here is that you're using the same Anthropic API and the same Claude model for both calls, but with completely different system prompts that give each instance a distinct role and expertise. The router acts as a classifier, while the specialist acts as a domain expert. This separation of concerns makes your system both more reliable and easier to extend with new specialist types.\nCrafting the Router Prompt\nThe router prompt is the critical component that determines how accurately your system classifies incoming requests. Unlike the open-ended prompts you might use for creative tasks, router prompts need to be strict and constrained to ensure reliable, parseable output.\nYour router system prompt should establish Claude's role as a decision-maker and provide clear, unambiguous options. Here's an effective approach that limits the router to exactly three choices:\nThe phrase Respond with ONLY is crucial because it prevents Claude from adding explanatory text or reasoning that would complicate parsing the response. You want exactly one of three possible strings, nothing more. The explicit list of specialist names with their descriptions helps Claude understand the boundaries between categories and reduces ambiguous classifications.\nNotice how each specialist description focuses on clear, distinct domains. Mathematical problems are clearly different from creative writing, which is clearly different from programming tasks. This separation reduces edge cases where the router might struggle to choose between specialists.\nDefining Specialist System Prompts\nEach specialist needs a focused system prompt that establishes their expertise and approach. Unlike general-purpose prompts, specialist prompts should be concise and role-specific to maximize performance within their domain.\nYour math specialist prompt should emphasize precision and clarity in mathematical communication:\nThe writing specialist focuses on creativity and engaging communication:\nThe code specialist emphasizes technical accuracy and practical implementation:\nThese prompts are intentionally brief because they need to work with a wide variety of requests within their domain. A math specialist might handle anything from basic arithmetic to complex calculus, so the prompt focuses on the general approach rather than specific techniques. This specialization improves both quality and consistency compared to using a generic \"helpful assistant\" prompt for all request types.\nThe beauty of this approach is reusability. Once you've crafted effective specialist prompts, you can use them across different projects and routing systems. They become reliable building blocks for more complex AI workflows.\nPreparing and Sending the Router Request\nTo begin the routing workflow, you first prepare the user request and send it to the router. The router is a Claude instance configured with a strict system prompt to classify the request.\nThe max_tokens: 100 parameter ensures the router's response is concise, as you expect only a short specialist name.\nExtracting and Handling the Router's Response\nAfter receiving the router's response, you need to extract the specialist decision using the same response extraction pattern you learned in earlier lessons:\nThe .trim() method ensures clean string comparisons in the next step, and the console.log() helps verify the routing decision. For the example request \"Write me a short story about robots\" , you should see:\nThis confirms that the router correctly identified the request as a creative writing task.\nMapping the Router Decision to a Specialist Prompt\nOnce you have the router's decision, you need to map it to the appropriate specialist system prompt. This ensures that the user request is handled by the expert best suited for the task.\nThe if-else if-else structure provides a clean way to map router decisions to specialist prompts. Each condition uses the strict equality operator ( === ) to check for an exact string match with the expected specialist names from your router prompt. This approach is straightforward and easy to debug when routing decisions don't match expectations.\nNotice the use of let instead of const for specialistPrompt , since its value will be assigned conditionally. The optional type annotation : string makes the code's intent explicit, though TypeScript can infer this type automatically.\nThe else clause provides a crucial fallback mechanism. If the router returns an unexpected response — perhaps due to a prompt engineering issue or an edge case you didn't anticipate — the system defaults to a generic helpful assistant prompt rather than crashing. This graceful degradation keeps your system functional even when routing doesn't work perfectly. Note that curly braces are required for all conditional blocks in TypeScript, even for single-line statements.\nSending the User Request to the Specialist\nAfter selecting the correct specialist prompt, you send the original user request to the chosen specialist. The specialist uses their domain expertise to generate the final response.\nNotice that you send the original userRequest to the specialist, not the router's response. The router's job is purely classification; the specialist needs to see the actual user question to provide a helpful answer. This separation keeps the workflow clean and ensures the specialist has all the context needed to respond effectively. The await keyword is again necessary for the asynchronous API call.\nExtracting and Displaying the Specialist's Response\nFinally, extract the specialist's response and display it. This is the answer that will be returned to the user.\nSimilar to extracting the router's response, you use the .find() method with a type guard to locate the text content block. The conditional check ensures the text block exists and is of the correct type before accessing its content. This pattern prevents runtime errors and makes your code more maintainable.\nWhen you run this code with the robot story request, you should see output like:\nThis demonstrates that the writing specialist correctly understood the creative writing request and produced an engaging story opening rather than trying to solve it as a math problem or write code.\nSummary and Prep for Practice\nYou've successfully learned to implement intelligent task routing that uses Claude to classify requests and direct them to specialized system prompts optimized for specific domains. Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response.\nThe routing patterns you've learned here form the foundation for much more sophisticated AI workflows. As you continue through this course, you'll see how these routing concepts extend to dynamic workflows and complex agent behaviors that can handle real-world business problems with multiple types of expertise working together.\nPrevious Lesson\nPrevious\nNext Lesson: Parallel Processing with Claude\nNext Lesson: Parallel Processing with Claude\nNext\nJoin the 1M+ learners on CodeSignal\nBe a part of our community of 1M+ users who develop and demonstrate their skills on CodeSignal\nStart learning today!\nCompany\nCollections\nPlatform\nRoles\nResources\nSupport",
+  "clean_text": "Building AI Routing Workflows | CodeSignal Learn\nSkip to main content\nIntroduction & Context\nWelcome back! In the previous lesson, you learned how to use prompt chaining to connect multiple Claude API calls in a linear sequence, breaking down complex tasks into manageable steps. This approach works well when you know exactly what sequence of operations is needed.\nHowever, real-world applications often face unpredictable requests that require different types of expertise. Instead of building separate chains for every possible request, routing workflows use Claude to analyze incoming requests and intelligently direct them to the right specialist — such as a math expert, a writing expert, or a code expert.\nThis lesson will show you how to build a flexible routing system that maintains high-quality responses by leveraging specialized system prompts for each domain.\nWorkflow Design at a Glance\nThe routing workflow follows a clean two-step pattern that's more dynamic than the linear chains you've used before. When a user submits a request, your system first sends it to a router — a Claude instance with a specialized system prompt designed to classify the request type. The router analyzes the content and returns a decision about which specialist should handle it.\nOnce you have the routing decision, you send the original user request to a second Claude instance configured with the appropriate specialist system prompt. This specialist focuses entirely on providing the best possible response within their domain of expertise, whether that's solving equations, crafting stories, or debugging code.\nThe key insight here is that you're using the same Anthropic API and the same Claude model for both calls, but with completely different system prompts that give each instance a distinct role and expertise. The router acts as a classifier, while the specialist acts as a domain expert. This separation of concerns makes your system both more reliable and easier to extend with new specialist types.\nCrafting the Router Prompt\nThe router prompt is the critical component that determines how accurately your system classifies incoming requests. Unlike the open-ended prompts you might use for creative tasks, router prompts need to be strict and constrained to ensure reliable, parseable output.\nYour router system prompt should establish Claude's role as a decision-maker and provide clear, unambiguous options. Here's an effective approach that limits the router to exactly three choices:\nThe phrase Respond with ONLY is crucial because it prevents Claude from adding explanatory text or reasoning that would complicate parsing the response. You want exactly one of three possible strings, nothing more. The explicit list of specialist names with their descriptions helps Claude understand the boundaries between categories and reduces ambiguous classifications.\nNotice how each specialist description focuses on clear, distinct domains. Mathematical problems are clearly different from creative writing, which is clearly different from programming tasks. This separation reduces edge cases where the router might struggle to choose between specialists.\nDefining Specialist System Prompts\nEach specialist needs a focused system prompt that establishes their expertise and approach. Unlike general-purpose prompts, specialist prompts should be concise and role-specific to maximize performance within their domain.\nYour math specialist prompt should emphasize precision and clarity in mathematical communication:\nThe writing specialist focuses on creativity and engaging communication:\nThe code specialist emphasizes technical accuracy and practical implementation:\nThese prompts are intentionally brief because they need to work with a wide variety of requests within their domain. A math specialist might handle anything from basic arithmetic to complex calculus, so the prompt focuses on the general approach rather than specific techniques. This specialization improves both quality and consistency compared to using a generic \"helpful assistant\" prompt for all request types.\nThe beauty of this approach is reusability. Once you've crafted effective specialist prompts, you can use them across different projects and routing systems. They become reliable building blocks for more complex AI workflows.\nPreparing and Sending the Router Request\nTo begin the routing workflow, you first prepare the user request and send it to the router. The router is a Claude instance configured with a strict system prompt to classify the request.\nThe max_tokens: 100 parameter ensures the router's response is concise, as you expect only a short specialist name.\nExtracting and Handling the Router's Response\nAfter receiving the router's response, you need to extract the specialist decision using the same response extraction pattern you learned in earlier lessons:\nThe .trim() method ensures clean string comparisons in the next step, and the console.log() helps verify the routing decision. For the example request \"Write me a short story about robots\" , you should see:\nThis confirms that the router correctly identified the request as a creative writing task.\nMapping the Router Decision to a Specialist Prompt\nOnce you have the router's decision, you need to map it to the appropriate specialist system prompt. This ensures that the user request is handled by the expert best suited for the task.\nThe if-else if-else structure provides a clean way to map router decisions to specialist prompts. Each condition uses the strict equality operator ( === ) to check for an exact string match with the expected specialist names from your router prompt. This approach is straightforward and easy to debug when routing decisions don't match expectations.\nNotice the use of let instead of const for specialistPrompt , since its value will be assigned conditionally. The optional type annotation : string makes the code's intent explicit, though TypeScript can infer this type automatically.\nThe else clause provides a crucial fallback mechanism. If the router returns an unexpected response — perhaps due to a prompt engineering issue or an edge case you didn't anticipate — the system defaults to a generic helpful assistant prompt rather than crashing. This graceful degradation keeps your system functional even when routing doesn't work perfectly. Note that curly braces are required for all conditional blocks in TypeScript, even for single-line statements.\nSending the User Request to the Specialist\nAfter selecting the correct specialist prompt, you send the original user request to the chosen specialist. The specialist uses their domain expertise to generate the final response.\nNotice that you send the original userRequest to the specialist, not the router's response. The router's job is purely classification; the specialist needs to see the actual user question to provide a helpful answer. This separation keeps the workflow clean and ensures the specialist has all the context needed to respond effectively. The await keyword is again necessary for the asynchronous API call.\nExtracting and Displaying the Specialist's Response\nFinally, extract the specialist's response and display it. This is the answer that will be returned to the user.\nSimilar to extracting the router's response, you use the .find() method with a type guard to locate the text content block. The conditional check ensures the text block exists and is of the correct type before accessing its content. This pattern prevents runtime errors and makes your code more maintainable.\nWhen you run this code with the robot story request, you should see output like:\nThis demonstrates that the writing specialist correctly understood the creative writing request and produced an engaging story opening rather than trying to solve it as a math problem or write code.\nSummary and Prep for Practice\nYou've successfully learned to implement intelligent task routing that uses Claude to classify requests and direct them to specialized system prompts optimized for specific domains. Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response.\nThe routing patterns you've learned here form the foundation for much more sophisticated AI workflows. As you continue through this course, you'll see how these routing concepts extend to dynamic workflows and complex agent behaviors that can handle real-world business problems with multiple types of expertise working together.\nPrevious Lesson\nPrevious\nNext Lesson: Parallel Processing with Claude\nNext Lesson: Parallel Processing with Claude\nNext\nJoin the 1M+ learners on CodeSignal\nBe a part of our community of 1M+ users who develop and demonstrate their skills on CodeSignal\nStart learning today!\nCompany\nCollections\nPlatform\nRoles\nResources\nSupport",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-04/r-048-building-ai-routing-workflows-codesignal-learn.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-04/r-048-building-ai-routing-workflows-codesignal-learn.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 8928,
+    "paragraph_count": 50,
+    "sentence_count": 64,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0006,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 8928,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "b51b2c0d7b385998",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "follow-builders cloud fallback / keyword search / Anysearch",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "frontier_opinion_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "715ba48a8eefa59e",
+  "content_hash": "b51b2c0d7b385998",
+  "full_text_hash": "b51b2c0d7b385998",
+  "semantic_hash": "22b489ffc24f8ef5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-04T04:44:56.052Z",
+  "last_seen_at": "2026-06-04T04:44:56.052Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response. The routing patterns you've learned here form the foundation for much more sophisti… query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Building AI Routing Workflows | CodeSignal Learn Skip to main content Introduction & Context Welcome back!",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "In the previous lesson, you learned how to use prompt chaining to connect multiple Claude API calls in a linear sequence, breaking down complex tasks into manageable steps.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "This approach works well when you know exactly what sequence of operations is needed.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "However, real-world applications often face unpredictable requests that require different types of expertise.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Instead of building separate chains for every possible request, routing workflows use Claude to analyze incoming requests and intelligently direct them to the right specialist — such as a math expert, a writing expert, or a code expert.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "follow",
+      "builders cloud fallback",
+      "keyword search",
+      "Anysearch",
+      "Anthropic"
+    ],
+    "products": [
+      "Claude",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "100",
+      "1M"
+    ],
+    "quotes": [
+      "helpful assistant",
+      "Write me a short story about robots"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "In the previous lesson, you learned how to use prompt chaining to connect multiple Claude API calls in a linear sequence, breaking down complex tasks into manageable steps.",
+      "This approach works well when you know exactly what sequence of operations is needed.",
+      "However, real-world applications often face unpredictable requests that require different types of expertise."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response. The routing patterns you've learned here form the foundation for much more sophisti… query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+      "Building AI Routing Workflows | CodeSignal Learn Skip to main content Introduction & Context Welcome back!",
+      "Instead of building separate chains for every possible request, routing workflows use Claude to analyze incoming requests and intelligently direct them to the right specialist — such as a math expert, a writing expert, or a code expert."
+    ],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 4,
+    "evidence_strength": 4,
+    "case_richness": 3,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "user_feedback_pool"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Building AI Routing Workflows | CodeSignal Learn\n\n- raw_id: R-048\n- original_url: https://codesignal.com/learn/courses/exploring-workflows-with-claude-in-typescript/lessons/building-ai-routing-workflows\n- source_name: follow-builders cloud fallback / keyword search / Anysearch\n- collected_at: 2026-06-04T04:44:56.052Z\n\n## clean_text\n\nBuilding AI Routing Workflows | CodeSignal Learn\nSkip to main content\nIntroduction & Context\nWelcome back! In the previous lesson, you learned how to use prompt chaining to connect multiple Claude API calls in a linear sequence, breaking down complex tasks into manageable steps. This approach works well when you know exactly what sequence of operations is needed.\nHowever, real-world applications often face unpredictable requests that require different types of expertise. Instead of building separate chains for every possible request, routing workflows use Claude to analyze incoming requests and intelligently direct them to the right specialist — such as a math expert, a writing expert, or a code expert.\nThis lesson will show you how to build a flexible routing system that maintains high-quality responses by leveraging specialized system prompts for each domain.\nWorkflow Design at a Glance\nThe routing workflow follows a clean two-step pattern that's more dynamic than the linear chains you've used before. When a user submits a request, your system first sends it to a router — a Claude instance with a specialized system prompt designed to classify the request type. The router analyzes the content and returns a decision about which specialist should handle it.\nOnce you have the routing decision, you send the original user request to a second Claude instance configured with the appropriate specialist system prompt. This specialist focuses entirely on providing the best possible response within their domain of expertise, whether that's solving equations, crafting stories, or debugging code.\nThe key insight here is that you're using the same Anthropic API and the same Claude model for both calls, but with completely different system prompts that give each instance a distinct role and expertise. The router acts as a classifier, while the specialist acts as a domain expert. This separation of concerns makes your system both more reliable and easier to extend with new specialist types.\nCrafting the Router Prompt\nThe router prompt is the critical component that determines how accurately your system classifies incoming requests. Unlike the open-ended prompts you might use for creative tasks, router prompts need to be strict and constrained to ensure reliable, parseable output.\nYour router system prompt should establish Claude's role as a decision-maker and provide clear, unambiguous options. Here's an effective approach that limits the router to exactly three choices:\nThe phrase Respond with ONLY is crucial because it prevents Claude from adding explanatory text or reasoning that would complicate parsing the response. You want exactly one of three possible strings, nothing more. The explicit list of specialist names with their descriptions helps Claude understand the boundaries between categories and reduces ambiguous classifications.\nNotice how each specialist description focuses on clear, distinct domains. Mathematical problems are clearly different from creative writing, which is clearly different from programming tasks. This separation reduces edge cases where the router might struggle to choose between specialists.\nDefining Specialist System Prompts\nEach specialist needs a focused system prompt that establishes their expertise and approach. Unlike general-purpose prompts, specialist prompts should be concise and role-specific to maximize performance within their domain.\nYour math specialist prompt should emphasize precision and clarity in mathematical communication:\nThe writing specialist focuses on creativity and engaging communication:\nThe code specialist emphasizes technical accuracy and practical implementation:\nThese prompts are intentionally brief because they need to work with a wide variety of requests within their domain. A math specialist might handle anything from basic arithmetic to complex calculus, so the prompt focuses on the general approach rather than specific techniques. This specialization improves both quality and consistency compared to using a generic \"helpful assistant\" prompt for all request types.\nThe beauty of this approach is reusability. Once you've crafted effective specialist prompts, you can use them across different projects and routing systems. They become reliable building blocks for more complex AI workflows.\nPreparing and Sending the Router Request\nTo begin the routing workflow, you first prepare the user request and send it to the router. The router is a Claude instance configured with a strict system prompt to classify the request.\nThe max_tokens: 100 parameter ensures the router's response is concise, as you expect only a short specialist name.\nExtracting and Handling the Router's Response\nAfter receiving the router's response, you need to extract the specialist decision using the same response extraction pattern you learned in earlier lessons:\nThe .trim() method ensures clean string comparisons in the next step, and the console.log() helps verify the routing decision. For the example request \"Write me a short story about robots\" , you should see:\nThis confirms that the router correctly identified the request as a creative writing task.\nMapping the Router Decision to a Specialist Prompt\nOnce you have the router's decision, you need to map it to the appropriate specialist system prompt. This ensures that the user request is handled by the expert best suited for the task.\nThe if-else if-else structure provides a clean way to map router decisions to specialist prompts. Each condition uses the strict equality operator ( === ) to check for an exact string match with the expected specialist names from your router prompt. This approach is straightforward and easy to debug when routing decisions don't match expectations.\nNotice the use of let instead of const for specialistPrompt , since its value will be assigned conditionally. The optional type annotation : string makes the code's intent explicit, though TypeScript can infer this type automatically.\nThe else clause provides a crucial fallback mechanism. If the router returns an unexpected response — perhaps due to a prompt engineering issue or an edge case you didn't anticipate — the system defaults to a generic helpful assistant prompt rather than crashing. This graceful degradation keeps your system functional even when routing doesn't work perfectly. Note that curly braces are required for all conditional blocks in TypeScript, even for single-line statements.\nSending the User Request to the Specialist\nAfter selecting the correct specialist prompt, you send the original user request to the chosen specialist. The specialist uses their domain expertise to generate the final response.\nNotice that you send the original userRequest to the specialist, not the router's response. The router's job is purely classification; the specialist needs to see the actual user question to provide a helpful answer. This separation keeps the workflow clean and ensures the specialist has all the context needed to respond effectively. The await keyword is again necessary for the asynchronous API call.\nExtracting and Displaying the Specialist's Response\nFinally, extract the specialist's response and display it. This is the answer that will be returned to the user.\nSimilar to extracting the router's response, you use the .find() method with a type guard to locate the text content block. The conditional check ensures the text block exists and is of the correct type before accessing its content. This pattern prevents runtime errors and makes your code more maintainable.\nWhen you run this code with the robot story request, you should see output like:\nThis demonstrates that the writing specialist correctly understood the creative writing request and produced an engaging story opening rather than trying to solve it as a math problem or write code.\nSummary and Prep for Practice\nYou've successfully learned to implement intelligent task routing that uses Claude to classify requests and direct them to specialized system prompts optimized for specific domains. Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response.\nThe routing patterns you've learned here form the foundation for much more sophisticated AI workflows. As you continue through this course, you'll see how these routing concepts extend to dynamic workflows and complex agent behaviors that can handle real-world business problems with multiple types of expertise working together.\nPrevious Lesson\nPrevious\nNext Lesson: Parallel Processing with Claude\nNext Lesson: Parallel Processing with Claude\nNext\nJoin the 1M+ learners on CodeSignal\nBe a part of our community of 1M+ users who develop and demonstrate their skills on CodeSignal\nStart learning today!\nCompany\nCollections\nPlatform\nRoles\nResources\nSupport\n\n## full_text\n\nBuilding AI Routing Workflows | CodeSignal Learn\nSkip to main content\nIntroduction & Context\nWelcome back! In the previous lesson, you learned how to use prompt chaining to connect multiple Claude API calls in a linear sequence, breaking down complex tasks into manageable steps. This approach works well when you know exactly what sequence of operations is needed.\nHowever, real-world applications often face unpredictable requests that require different types of expertise. Instead of building separate chains for every possible request, routing workflows use Claude to analyze incoming requests and intelligently direct them to the right specialist — such as a math expert, a writing expert, or a code expert.\nThis lesson will show you how to build a flexible routing system that maintains high-quality responses by leveraging specialized system prompts for each domain.\nWorkflow Design at a Glance\nThe routing workflow follows a clean two-step pattern that's more dynamic than the linear chains you've used before. When a user submits a request, your system first sends it to a router — a Claude instance with a specialized system prompt designed to classify the request type. The router analyzes the content and returns a decision about which specialist should handle it.\nOnce you have the routing decision, you send the original user request to a second Claude instance configured with the appropriate specialist system prompt. This specialist focuses entirely on providing the best possible response within their domain of expertise, whether that's solving equations, crafting stories, or debugging code.\nThe key insight here is that you're using the same Anthropic API and the same Claude model for both calls, but with completely different system prompts that give each instance a distinct role and expertise. The router acts as a classifier, while the specialist acts as a domain expert. This separation of concerns makes your system both more reliable and easier to extend with new specialist types.\nCrafting the Router Prompt\nThe router prompt is the critical component that determines how accurately your system classifies incoming requests. Unlike the open-ended prompts you might use for creative tasks, router prompts need to be strict and constrained to ensure reliable, parseable output.\nYour router system prompt should establish Claude's role as a decision-maker and provide clear, unambiguous options. Here's an effective approach that limits the router to exactly three choices:\nThe phrase Respond with ONLY is crucial because it prevents Claude from adding explanatory text or reasoning that would complicate parsing the response. You want exactly one of three possible strings, nothing more. The explicit list of specialist names with their descriptions helps Claude understand the boundaries between categories and reduces ambiguous classifications.\nNotice how each specialist description focuses on clear, distinct domains. Mathematical problems are clearly different from creative writing, which is clearly different from programming tasks. This separation reduces edge cases where the router might struggle to choose between specialists.\nDefining Specialist System Prompts\nEach specialist needs a focused system prompt that establishes their expertise and approach. Unlike general-purpose prompts, specialist prompts should be concise and role-specific to maximize performance within their domain.\nYour math specialist prompt should emphasize precision and clarity in mathematical communication:\nThe writing specialist focuses on creativity and engaging communication:\nThe code specialist emphasizes technical accuracy and practical implementation:\nThese prompts are intentionally brief because they need to work with a wide variety of requests within their domain. A math specialist might handle anything from basic arithmetic to complex calculus, so the prompt focuses on the general approach rather than specific techniques. This specialization improves both quality and consistency compared to using a generic \"helpful assistant\" prompt for all request types.\nThe beauty of this approach is reusability. Once you've crafted effective specialist prompts, you can use them across different projects and routing systems. They become reliable building blocks for more complex AI workflows.\nPreparing and Sending the Router Request\nTo begin the routing workflow, you first prepare the user request and send it to the router. The router is a Claude instance configured with a strict system prompt to classify the request.\nThe max_tokens: 100 parameter ensures the router's response is concise, as you expect only a short specialist name.\nExtracting and Handling the Router's Response\nAfter receiving the router's response, you need to extract the specialist decision using the same response extraction pattern you learned in earlier lessons:\nThe .trim() method ensures clean string comparisons in the next step, and the console.log() helps verify the routing decision. For the example request \"Write me a short story about robots\" , you should see:\nThis confirms that the router correctly identified the request as a creative writing task.\nMapping the Router Decision to a Specialist Prompt\nOnce you have the router's decision, you need to map it to the appropriate specialist system prompt. This ensures that the user request is handled by the expert best suited for the task.\nThe if-else if-else structure provides a clean way to map router decisions to specialist prompts. Each condition uses the strict equality operator ( === ) to check for an exact string match with the expected specialist names from your router prompt. This approach is straightforward and easy to debug when routing decisions don't match expectations.\nNotice the use of let instead of const for specialistPrompt , since its value will be assigned conditionally. The optional type annotation : string makes the code's intent explicit, though TypeScript can infer this type automatically.\nThe else clause provides a crucial fallback mechanism. If the router returns an unexpected response — perhaps due to a prompt engineering issue or an edge case you didn't anticipate — the system defaults to a generic helpful assistant prompt rather than crashing. This graceful degradation keeps your system functional even when routing doesn't work perfectly. Note that curly braces are required for all conditional blocks in TypeScript, even for single-line statements.\nSending the User Request to the Specialist\nAfter selecting the correct specialist prompt, you send the original user request to the chosen specialist. The specialist uses their domain expertise to generate the final response.\nNotice that you send the original userRequest to the specialist, not the router's response. The router's job is purely classification; the specialist needs to see the actual user question to provide a helpful answer. This separation keeps the workflow clean and ensures the specialist has all the context needed to respond effectively. The await keyword is again necessary for the asynchronous API call.\nExtracting and Displaying the Specialist's Response\nFinally, extract the specialist's response and display it. This is the answer that will be returned to the user.\nSimilar to extracting the router's response, you use the .find() method with a type guard to locate the text content block. The conditional check ensures the text block exists and is of the correct type before accessing its content. This pattern prevents runtime errors and makes your code more maintainable.\nWhen you run this code with the robot story request, you should see output like:\nThis demonstrates that the writing specialist correctly understood the creative writing request and produced an engaging story opening rather than trying to solve it as a math problem or write code.\nSummary and Prep for Practice\nYou've successfully learned to implement intelligent task routing that uses Claude to classify requests and direct them to specialized system prompts optimized for specific domains. Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response.\nThe routing patterns you've learned here form the foundation for much more sophisticated AI workflows. As you continue through this course, you'll see how these routing concepts extend to dynamic workflows and complex agent behaviors that can handle real-world business problems with multiple types of expertise working together.\nPrevious Lesson\nPrevious\nNext Lesson: Parallel Processing with Claude\nNext Lesson: Parallel Processing with Claude\nNext\nJoin the 1M+ learners on CodeSignal\nBe a part of our community of 1M+ users who develop and demonstrate their skills on CodeSignal\nStart learning today!\nCompany\nCollections\nPlatform\nRoles\nResources\nSupport\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n1. [workflow_change / daily_observation, heatmap, change, case, trend / high] Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response. The routing patterns you've learned here form the foundation for much more sophisti… query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates\n2. [workflow_change / daily_observation, heatmap, change, case, trend / high] Building AI Routing Workflows | CodeSignal Learn Skip to main content Introduction & Context Welcome back!\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] In the previous lesson, you learned how to use prompt chaining to connect multiple Claude API calls in a linear sequence, breaking down complex tasks into manageable steps.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] This approach works well when you know exactly what sequence of operations is needed.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] However, real-world applications often face unpredictable requests that require different types of expertise.\n6. [workflow_change / daily_observation, heatmap, change, case, trend / high] Instead of building separate chains for every possible request, routing workflows use Claude to analyze incoming requests and intelligently direct them to the right specialist — such as a math expert, a writing expert, or a code expert.\n"
+}

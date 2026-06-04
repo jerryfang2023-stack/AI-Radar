@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-04T00:38:28.114Z
+collected_at: 2026-06-04T04:44:56.141Z
 language: mixed
 full_text_hash: 7aadd55816b74e68
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-114-grok模型登陆cloudflare-ai-gateway.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Grok模型登陆Cloudflare AI Gateway","discovery_summary":"在 @Cloudflare 的 AI Gateway 上尝试 Grok 模型！","source_name":"X：xAI (@xai)","origin_url":"","discovered_at":"2026-06-04T00:31:56.141Z","rank_on_page":8,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Grok模型登陆Cloudflare AI Gateway","discovery_summary":"在 @Cloudflare 的 AI Gateway 上尝试 Grok 模型！","source_name":"X：xAI (@xai)","origin_url":"","discovered_at":"2026-06-04T04:38:54.629Z","rank_on_page":8,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 7aadd55816b74e68
 semantic_hash: 5c58c86c647505ad
 duplicate_of: ""
-first_seen_at: "2026-06-04T00:38:28.114Z"
-last_seen_at: 2026-06-04T00:38:28.114Z
+first_seen_at: "2026-06-04T04:44:56.141Z"
+last_seen_at: 2026-06-04T04:44:56.141Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -173,7 +173,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Grok模型登陆Cloudflare AI Gateway","discovery_summary":"在 @Cloudflare 的 AI Gateway 上尝试 Grok 模型！","source_name":"X：xAI (@xai)","origin_url":"","discovered_at":"2026-06-04T00:31:56.141Z","rank_on_page":8,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Grok模型登陆Cloudflare AI Gateway","discovery_summary":"在 @Cloudflare 的 AI Gateway 上尝试 Grok 模型！","source_name":"X：xAI (@xai)","origin_url":"","discovered_at":"2026-06-04T04:38:54.629Z","rank_on_page":8,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -1,0 +1,297 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-025
+title: "11 startups from YC Demo Day that investors are talking about"
+original_url: "https://techcrunch.com/2025/06/13/11-startups-from-yc-demo-day-that-investors-are-talking-about/"
+canonical_url: "https://techcrunch.com/2025/06/13/11-startups-from-yc-demo-day-that-investors-are-talking-about"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-04T04:44:55.971Z
+language: mixed
+full_text_hash: 7471ea6b54d3f226
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-025-11-startups-from-yc-demo-day-that-investors-are-talking-about.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-025-11-startups-from-yc-demo-day-that-investors-are-talking-about.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5463,"paragraph_count":35,"sentence_count":35,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 5463
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7471ea6b54d3f226","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a107cc1bcdee9a26
+content_hash: 7471ea6b54d3f226
+semantic_hash: 02722ddd9263aea3
+duplicate_of: ""
+first_seen_at: "2026-06-04T04:44:55.971Z"
+last_seen_at: 2026-06-04T04:44:55.971Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","AWS","Nvidia","ServiceNow","Cursor","Perplexity"],"products":["agents","Cursor","ChatGPT","Gemini","copilot","agent"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":[],"business_actions":["部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务"],"numbers":["11","2025","6","00","13","3","2021","1"],"quotes":["Cursor for X.","Cursor for knowledge workers,","Cursor for lawyers.","a large seed round,","Terminals are dashboards and not thinking tools,"]}
+evidence_seed: {"company_actions":["11 startups from YC Demo Day that investors are talking about | TechCrunch # 11 startups from YC Demo Day that investors are talking about At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creat..","Image Credits: Bryce Durbin / TechCrunch Startups 11 startups from YC Demo Day that investors are talking about Marina Temkin 6:00 AM PDT · June 13, 2025 At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creating tools to facilitate their development.","Indeed, several founders seem to be taking a page out of the playbook of several successful AI startups: About half a dozen startups were presenting variations of “Cursor for X."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"11 startups from YC Demo Day that investors are talking about | TechCrunch # 11 startups from YC Demo Day that investors are talking about At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creat..","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Bryce Durbin / TechCrunch Startups 11 startups from YC Demo Day that investors are talking about Marina Temkin 6:00 AM PDT · June 13, 2025 At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creating tools to facilitate their development.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Indeed, several founders seem to be taking a page out of the playbook of several successful AI startups: About half a dozen startups were presenting variations of “Cursor for X.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"” For example, Den is building a “Cursor for knowledge workers,” and Vesence is on its way to make a “Cursor for lawyers.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"” It wasn’t all only about AI, though.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We noticed several startups are working on robotics, which seems to be having a bit of a revival at the moment.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# 11 startups from YC Demo Day that investors are talking about
+
+## clean_text
+
+Image Credits: Bryce Durbin / TechCrunch
+Startups
+11 startups from YC Demo Day that investors are talking about
+Marina Temkin
+6:00 AM PDT · June 13, 2025
+At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creating tools to facilitate their development.
+Indeed, several founders seem to be taking a page out of the playbook of several successful AI startups: About half a dozen startups were presenting variations of “Cursor for X.” For example, Den is building a “Cursor for knowledge workers,” and Vesence is on its way to make a “Cursor for lawyers.”
+It wasn’t all only about AI, though. We noticed several startups are working on robotics, which seems to be having a bit of a revival at the moment.
+Below are some of the startups that caught both investors’ and our attention.
+Anvil
+What it does: SEO for LLMs
+Why it’s a fave: How people search for content is changing, with folks using various AI tools like ChatGPT, Gemini, and Perplexity to find content. Understandably, brands need to find a way to increase their visibility on these platforms. Anvil claims it helps brands measure, optimize, and increase their presence on these AI tools.
+Atum Works
+What it does: Builds 3D chips
+Why it’s a fave: Transistors aren’t getting smaller as fast as they used to, so Atum’s founders propose the best new way to put more transistors on a chip, and therefore increase processing power, is to stack them in three dimensions. Investors told me that Atum’s vision is so revolutionary that the company has a chance to become the next Nvidia.
+Auctor
+What it does: Automates enterprise software implementation
+Why it’s a fave: The startup says prominent software vendors like SAP, ServiceNow, AWS, and Box have already reached out to use Auctor’s solution themselves and potentially for help with integrating software at customer sites.
+Cactus
+What it does: AI copilot for solopreneurs
+Why it’s a fave: Cactus says people who run businesses all by themselves are often too busy to pursue new opportunities. The startup claims its AI bot can take off some of the load by answering calls and accepting payments on your behalf.
+Den
+What it does: Cursor for enterprise knowledge workers
+Why it’s a fave: Investors told me this is one of the hottest companies in the batch. Den promises its AI agents can replace Slack and Notion, enabling a company’s employees to interact and share information with software tailored to each enterprise’s specific needs.
+Eloquent AI
+What it does: Automates customer operations with AI
+Why it’s a fave: Eloquent says its AI bots can help customers of financial services companies do things like automatically unfreeze bank accounts or add drivers to car insurance policies. In other words, Eloquent promises an end to long waits for human customer service. The startup claims financial companies can deploy its AI near instantly without needing to involve internal engineering teams. Eloquent has already raised “a large seed round,” Tugce Bulut, the startup’s co-founder and CEO said on the TBPN podcast.
+LLM Data Company
+What it does: Tooling for evaluation and reinforcement learning
+Why it’s a fave: Evaluating all the new AI tools for quality is snowballing into a big, difficult problem. LLM Data Company says it can help with its own LLMs that can evaluate the quality of an AI agent, and it’s already working with customers, including Perplexity.
+Scalar Field
+What it does: AI-powered Bloomberg terminal
+Why it’s a fave: “Terminals are dashboards and not thinking tools,” says Amandeep Singh, co-founder of Scalar Field. While the startup’s AI agents won’t “think” for you, it claims they can manipulate financial data with more flexibility than existing financial tools.
+Sim Studios
+What it does: The open-source AI agent builder
+Why it’s a fave: Sim Studios wants to do for AI agents what Figma did for design: make them incredibly easy to build. Sim Studios users, including customers Epiq, Mercore, and the U.S. Department of Defense, have built AI agents for critical functions such as data transformations, real-world event simulations, and deep research.
+Sygaldry
+What it does: Quantum accelerated AI servers to speed up AI training and inference
+Why it’s a fave: While a fully functioning quantum computer may still be years away, the industry has been making progress . What caught my eye about Sygaldry is that its co-founder and CEO is Chad Rigetti, who founded and took his company public via a SPAC in 2021 .
+Vybe
+What it does: Vibe coding to build applications
+Why it’s a fave: Investors who saw a demo of Vybe building apps told me that it can create all sorts of cool tools. One person I talked to even called it a “clear winner” of the batch.
+Topics
+Startups , Venture , YC Demo Day
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Bryce Durbin / TechCrunch
+Startups
+11 startups from YC Demo Day that investors are talking about
+Marina Temkin
+6:00 AM PDT · June 13, 2025
+At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creating tools to facilitate their development.
+Indeed, several founders seem to be taking a page out of the playbook of several successful AI startups: About half a dozen startups were presenting variations of “Cursor for X.” For example, Den is building a “Cursor for knowledge workers,” and Vesence is on its way to make a “Cursor for lawyers.”
+It wasn’t all only about AI, though. We noticed several startups are working on robotics, which seems to be having a bit of a revival at the moment.
+Below are some of the startups that caught both investors’ and our attention.
+Anvil
+What it does: SEO for LLMs
+Why it’s a fave: How people search for content is changing, with folks using various AI tools like ChatGPT, Gemini, and Perplexity to find content. Understandably, brands need to find a way to increase their visibility on these platforms. Anvil claims it helps brands measure, optimize, and increase their presence on these AI tools.
+Atum Works
+What it does: Builds 3D chips
+Why it’s a fave: Transistors aren’t getting smaller as fast as they used to, so Atum’s founders propose the best new way to put more transistors on a chip, and therefore increase processing power, is to stack them in three dimensions. Investors told me that Atum’s vision is so revolutionary that the company has a chance to become the next Nvidia.
+Auctor
+What it does: Automates enterprise software implementation
+Why it’s a fave: The startup says prominent software vendors like SAP, ServiceNow, AWS, and Box have already reached out to use Auctor’s solution themselves and potentially for help with integrating software at customer sites.
+Cactus
+What it does: AI copilot for solopreneurs
+Why it’s a fave: Cactus says people who run businesses all by themselves are often too busy to pursue new opportunities. The startup claims its AI bot can take off some of the load by answering calls and accepting payments on your behalf.
+Den
+What it does: Cursor for enterprise knowledge workers
+Why it’s a fave: Investors told me this is one of the hottest companies in the batch. Den promises its AI agents can replace Slack and Notion, enabling a company’s employees to interact and share information with software tailored to each enterprise’s specific needs.
+Eloquent AI
+What it does: Automates customer operations with AI
+Why it’s a fave: Eloquent says its AI bots can help customers of financial services companies do things like automatically unfreeze bank accounts or add drivers to car insurance policies. In other words, Eloquent promises an end to long waits for human customer service. The startup claims financial companies can deploy its AI near instantly without needing to involve internal engineering teams. Eloquent has already raised “a large seed round,” Tugce Bulut, the startup’s co-founder and CEO said on the TBPN podcast.
+LLM Data Company
+What it does: Tooling for evaluation and reinforcement learning
+Why it’s a fave: Evaluating all the new AI tools for quality is snowballing into a big, difficult problem. LLM Data Company says it can help with its own LLMs that can evaluate the quality of an AI agent, and it’s already working with customers, including Perplexity.
+Scalar Field
+What it does: AI-powered Bloomberg terminal
+Why it’s a fave: “Terminals are dashboards and not thinking tools,” says Amandeep Singh, co-founder of Scalar Field. While the startup’s AI agents won’t “think” for you, it claims they can manipulate financial data with more flexibility than existing financial tools.
+Sim Studios
+What it does: The open-source AI agent builder
+Why it’s a fave: Sim Studios wants to do for AI agents what Figma did for design: make them incredibly easy to build. Sim Studios users, including customers Epiq, Mercore, and the U.S. Department of Defense, have built AI agents for critical functions such as data transformations, real-world event simulations, and deep research.
+Sygaldry
+What it does: Quantum accelerated AI servers to speed up AI training and inference
+Why it’s a fave: While a fully functioning quantum computer may still be years away, the industry has been making progress . What caught my eye about Sygaldry is that its co-founder and CEO is Chad Rigetti, who founded and took his company public via a SPAC in 2021 .
+Vybe
+What it does: Vibe coding to build applications
+Why it’s a fave: Investors who saw a demo of Vybe building apps told me that it can create all sorts of cool tools. One person I talked to even called it a “clear winner” of the batch.
+Topics
+Startups , Venture , YC Demo Day
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5463,"paragraph_count":35,"sentence_count":35,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   11 startups from YC Demo Day that investors are talking about | TechCrunch # 11 startups from YC Demo Day that investors are talking about At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creat..
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Image Credits: Bryce Durbin / TechCrunch Startups 11 startups from YC Demo Day that investors are talking about Marina Temkin 6:00 AM PDT · June 13, 2025 At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creating tools to facilitate their development.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Indeed, several founders seem to be taking a page out of the playbook of several successful AI startups: About half a dozen startups were presenting variations of “Cursor for X.
+
+4. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   ” For example, Den is building a “Cursor for knowledge workers,” and Vesence is on its way to make a “Cursor for lawyers.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ” It wasn’t all only about AI, though.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   We noticed several startups are working on robotics, which seems to be having a bit of a revival at the moment.
+
+## business_elements
+
+- companies: keyword search, Anysearch, AWS, Nvidia, ServiceNow, Cursor, Perplexity
+- products: agents, Cursor, ChatGPT, Gemini, copilot, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 暂无公开信息
+- business_actions: 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 法务
+- numbers: 11, 2025, 6, 00, 13, 3, 2021, 1
+- quotes: Cursor for X. / Cursor for knowledge workers, / Cursor for lawyers. / a large seed round, / Terminals are dashboards and not thinking tools,
+
+## evidence_seed
+
+- company_actions: 11 startups from YC Demo Day that investors are talking about | TechCrunch # 11 startups from YC Demo Day that investors are talking about At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creat.. / Image Credits: Bryce Durbin / TechCrunch Startups 11 startups from YC Demo Day that investors are talking about Marina Temkin 6:00 AM PDT · June 13, 2025 At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creating tools to facilitate their development. / Indeed, several founders seem to be taking a page out of the playbook of several successful AI startups: About half a dozen startups were presenting variations of “Cursor for X.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+11 startups from YC Demo Day that investors are talking about | TechCrunch # 11 startups from YC Demo Day that investors are talking about At Y Combinator’s Spring 2025 Demo Day on Wednesday, nearly every presenting startup had something to do with AI — they’re either developing AI agents or creat..
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

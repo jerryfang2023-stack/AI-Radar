@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-04T00:38:28.115Z
+collected_at: 2026-06-04T04:44:56.142Z
 language: mixed
 full_text_hash: 282c999e9fae99b6
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-115-karpathy-的-llm-wiki-项目获超五千星.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Karpathy 的 llm-wiki 项目获超五千星","discovery_summary":"@karpathy 的 llm-wiki 在几周内获得了 5,000+ 颗星。 其理念是：停止在每个会话中重新发现知识。让一个大语言模型构建并维护一个维基，每次使用时它都会变得更智能。 以下是如何使用 @opencode + @justsisyphus OMO + SiliconFlow 构建你自己的版本 🧵","source_name":"X：硅基流动 SiliconFlow (@SiliconFlowAI)","origin_url":"","discovered_at":"2026-06-04T00:31:56.149Z","rank_on_page":30,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Karpathy 的 llm-wiki 项目获超五千星","discovery_summary":"@karpathy 的 llm-wiki 在几周内获得了 5,000+ 颗星。 其理念是：停止在每个会话中重新发现知识。让一个大语言模型构建并维护一个维基，每次使用时它都会变得更智能。 以下是如何使用 @opencode + @justsisyphus OMO + SiliconFlow 构建你自己的版本 🧵","source_name":"X：硅基流动 SiliconFlow (@SiliconFlowAI)","origin_url":"","discovered_at":"2026-06-04T04:38:54.637Z","rank_on_page":30,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 282c999e9fae99b6
 semantic_hash: fc50c8c85a5d570e
 duplicate_of: ""
-first_seen_at: "2026-06-04T00:38:28.115Z"
-last_seen_at: 2026-06-04T00:38:28.115Z
+first_seen_at: "2026-06-04T04:44:56.142Z"
+last_seen_at: 2026-06-04T04:44:56.142Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -184,7 +184,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Karpathy 的 llm-wiki 项目获超五千星","discovery_summary":"@karpathy 的 llm-wiki 在几周内获得了 5,000+ 颗星。 其理念是：停止在每个会话中重新发现知识。让一个大语言模型构建并维护一个维基，每次使用时它都会变得更智能。 以下是如何使用 @opencode + @justsisyphus OMO + SiliconFlow 构建你自己的版本 🧵","source_name":"X：硅基流动 SiliconFlow (@SiliconFlowAI)","origin_url":"","discovered_at":"2026-06-04T00:31:56.149Z","rank_on_page":30,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Karpathy 的 llm-wiki 项目获超五千星","discovery_summary":"@karpathy 的 llm-wiki 在几周内获得了 5,000+ 颗星。 其理念是：停止在每个会话中重新发现知识。让一个大语言模型构建并维护一个维基，每次使用时它都会变得更智能。 以下是如何使用 @opencode + @justsisyphus OMO + SiliconFlow 构建你自己的版本 🧵","source_name":"X：硅基流动 SiliconFlow (@SiliconFlowAI)","origin_url":"","discovered_at":"2026-06-04T04:38:54.637Z","rank_on_page":30,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

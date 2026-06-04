@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-04T00:38:28.100Z
+collected_at: 2026-06-04T04:44:56.117Z
 language: mixed
 full_text_hash: 6a2f52f7c1bca3da
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-095-grok-imagine-1-5-预览版发布.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Grok Imagine 1.5 预览版发布","discovery_summary":"Grok Imagine 1.5 预览版已发布，即日起可在 API 中体验。SpaceXAI 正在发力。","source_name":"X：cb_doge (@cb_doge)","origin_url":"","discovered_at":"2026-06-04T00:31:56.137Z","rank_on_page":1,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Grok Imagine 1.5 预览版发布","discovery_summary":"Grok Imagine 1.5 预览版已发布，即日起可在 API 中体验。SpaceXAI 正在发力。","source_name":"X：cb_doge (@cb_doge)","origin_url":"","discovered_at":"2026-06-04T04:38:54.623Z","rank_on_page":1,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 6a2f52f7c1bca3da
 semantic_hash: 46635956aac5cd74
 duplicate_of: ""
-first_seen_at: "2026-06-04T00:38:28.100Z"
-last_seen_at: 2026-06-04T00:38:28.100Z
+first_seen_at: "2026-06-04T04:44:56.117Z"
+last_seen_at: 2026-06-04T04:44:56.117Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -174,7 +174,7 @@ Grok Imagine 1.5 预览版已发布，即日起可在 API 中体验。SpaceXAI �
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Grok Imagine 1.5 预览版发布","discovery_summary":"Grok Imagine 1.5 预览版已发布，即日起可在 API 中体验。SpaceXAI 正在发力。","source_name":"X：cb_doge (@cb_doge)","origin_url":"","discovered_at":"2026-06-04T00:31:56.137Z","rank_on_page":1,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Grok Imagine 1.5 预览版发布","discovery_summary":"Grok Imagine 1.5 预览版已发布，即日起可在 API 中体验。SpaceXAI 正在发力。","source_name":"X：cb_doge (@cb_doge)","origin_url":"","discovered_at":"2026-06-04T04:38:54.623Z","rank_on_page":1,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

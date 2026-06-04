@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-03T19:27:06.000Z"
-collected_at: 2026-06-04T00:38:28.093Z
+collected_at: 2026-06-04T04:44:56.108Z
 language: mixed
 full_text_hash: aeb2c35ab777ac90
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-085-openai-a16z超级pac被曝假冒ai安全倡导者发布暴力言论.md"
@@ -45,7 +45,7 @@ capture_scope: aihot_visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI/a16z超级PAC被曝假冒AI安全倡导者发布暴力言论","discovery_summary":"OpenAI与a16z支持的超级PAC\"Build American AI\"被曝创建假冒AI安全倡导者的sockpuppet账户，公开发布煽动暴力言论，构成假旗行动以抹黑AI安全群体。更恶劣的是，其主席Nathan Leamer在Sam Altman遇袭后，将责任归咎于安全倡导者的\"末日论\"，但自己却暗中支持此类极端内容。引用推文显示，事发前不到两周，该组织已支持账号@jonathandoomer发布类似煽动性帖子。记者应深入调查这一双标行为。","source_name":"X：AI Safety Memes (@AISafetyMemes)","origin_url":"https://x.com/AISafetyMemes/status/2062254769402699922","discovered_at":"2026-06-04T00:31:57.414Z","rank_on_page":101,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI/a16z超级PAC被曝假冒AI安全倡导者发布暴力言论","discovery_summary":"OpenAI与a16z支持的超级PAC\"Build American AI\"被曝创建假冒AI安全倡导者的sockpuppet账户，公开发布煽动暴力言论，构成假旗行动以抹黑AI安全群体。更恶劣的是，其主席Nathan Leamer在Sam Altman遇袭后，将责任归咎于安全倡导者的\"末日论\"，但自己却暗中支持此类极端内容。引用推文显示，事发前不到两周，该组织已支持账号@jonathandoomer发布类似煽动性帖子。记者应深入调查这一双标行为。","source_name":"X：AI Safety Memes (@AISafetyMemes)","origin_url":"https://x.com/AISafetyMemes/status/2062254769402699922","discovered_at":"2026-06-04T04:38:55.946Z","rank_on_page":171,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: aeb2c35ab777ac90
 semantic_hash: 9b012060ddd77621
 duplicate_of: ""
 first_seen_at: "2026-06-03T19:27:06.000Z"
-last_seen_at: 2026-06-04T00:38:28.093Z
+last_seen_at: 2026-06-04T04:44:56.108Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -178,7 +178,7 @@ OpenAI与a16z支持的超级PAC / 被曝创建假冒AI安全倡导者的sockpupp
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"OpenAI/a16z超级PAC被曝假冒AI安全倡导者发布暴力言论","discovery_summary":"OpenAI与a16z支持的超级PAC\"Build American AI\"被曝创建假冒AI安全倡导者的sockpuppet账户，公开发布煽动暴力言论，构成假旗行动以抹黑AI安全群体。更恶劣的是，其主席Nathan Leamer在Sam Altman遇袭后，将责任归咎于安全倡导者的\"末日论\"，但自己却暗中支持此类极端内容。引用推文显示，事发前不到两周，该组织已支持账号@jonathandoomer发布类似煽动性帖子。记者应深入调查这一双标行为。","source_name":"X：AI Safety Memes (@AISafetyMemes)","origin_url":"https://x.com/AISafetyMemes/status/2062254769402699922","discovered_at":"2026-06-04T00:31:57.414Z","rank_on_page":101,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI/a16z超级PAC被曝假冒AI安全倡导者发布暴力言论","discovery_summary":"OpenAI与a16z支持的超级PAC\"Build American AI\"被曝创建假冒AI安全倡导者的sockpuppet账户，公开发布煽动暴力言论，构成假旗行动以抹黑AI安全群体。更恶劣的是，其主席Nathan Leamer在Sam Altman遇袭后，将责任归咎于安全倡导者的\"末日论\"，但自己却暗中支持此类极端内容。引用推文显示，事发前不到两周，该组织已支持账号@jonathandoomer发布类似煽动性帖子。记者应深入调查这一双标行为。","source_name":"X：AI Safety Memes (@AISafetyMemes)","origin_url":"https://x.com/AISafetyMemes/status/2062254769402699922","discovered_at":"2026-06-04T04:38:55.946Z","rank_on_page":171,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
