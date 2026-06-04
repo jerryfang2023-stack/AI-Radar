@@ -63,6 +63,8 @@ opinion_capture:
 
   capture_scope: x_full_visible_text
 
+  capture_scope: x_full_visible_text
+
   raw_archive: "01-SiteV2/content/05-frontier-opinions/2026-05-23-opinion-candidates.md"
   source_url: "https://x.com/sama/status/2057559714788258003"
   source_level: C

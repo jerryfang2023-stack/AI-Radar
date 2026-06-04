@@ -7,7 +7,7 @@ feature_count: 0
 sidebar_count: 27
 archive_count: 6
 discard_count: 2
-generated_at: 2026-05-24T05:13:39.440Z
+generated_at: 2026-06-04T04:57:05.523Z
 ---
 
 # 2026-05-23 前沿观点分级
@@ -16,7 +16,6 @@ generated_at: 2026-05-24T05:13:39.440Z
 
 - sidebar｜signal_sidebar｜OPN-FB-20260523-01｜Matt Turck：AI 进展正在变得可验证｜https://x.com/mattturck/status/2057498130795385188
 - sidebar｜signal_sidebar｜OPN-FB-20260523-04｜Garry Tan：每个人都应该有一个GBrain总裁兼首席执行官的Agent@ yc｜https://x.com/garrytan/status/2057636167525498961
-- sidebar｜signal_sidebar｜OPN-20260523-01｜Aaron Levie：企业需要建立 AI 成本治理机制｜https://x.com/levie/status/2057663408376516703
 - sidebar｜signal_sidebar｜OPN-FB-20260523-02｜Garry Tan：工程师如何成长为高杠杆创始人｜https://x.com/garrytan/status/2057701084031004928
 - sidebar｜signal_sidebar｜OPN-FB-20260523-03｜Garry Tan：由于Flock Safety ，旧金山更安全｜https://x.com/garrytan/status/2057639198782521837
 - sidebar｜signal_sidebar｜OPN-FB-20260523-05｜Matt Turck：与@ yanndubs的精彩对话也可以在Spotify、Apple｜https://x.com/mattturck/status/2057498135300039068
@@ -24,6 +23,7 @@ generated_at: 2026-05-24T05:13:39.440Z
 - sidebar｜signal_sidebar｜OPN-FB-20260523-08｜Ryo Lu：一起构建软件更有趣与您的团队一起尝试我们的新模型、界面、sdk和自｜https://x.com/ryolu_/status/2057500107235557675
 - sidebar｜signal_sidebar｜OPN-FB-20260523-20｜Josh Woodward：@ GoogleLabs在IO的旅程真是太棒了｜https://x.com/joshwoodward/status/2057564491064483930
 - sidebar｜signal_sidebar｜OPN-FB-20260523-21｜Josh Woodward：♥️ ♥️♥️ iOS、Android和Web -看到人们喜欢新的｜https://x.com/joshwoodward/status/2057559267952214073
+- sidebar｜signal_sidebar｜OPN-20260523-01｜Aaron Levie：企业需要建立 AI 成本治理机制｜https://x.com/levie/status/2057663408376516703
 - sidebar｜signal_sidebar｜OPN-FB-20260523-10｜Nikunj Kothari：FPV Ventures 合伙人，投资种子轮到 A 轮项目｜https://x.com/nikunj/status/2057614845739229385
 - sidebar｜signal_sidebar｜OPN-FB-20260523-11｜Nikunj Kothari：前创始人正在帮助头部公司扩张｜https://x.com/nikunj/status/2057462304149778588
 - sidebar｜signal_sidebar｜OPN-FB-20260523-13｜The MAD Podcast with Matt Turck：企业级 AI 必须稳定承接真实流程｜https://www.youtube.com/watch?v=DhD1zZ8w8Mw

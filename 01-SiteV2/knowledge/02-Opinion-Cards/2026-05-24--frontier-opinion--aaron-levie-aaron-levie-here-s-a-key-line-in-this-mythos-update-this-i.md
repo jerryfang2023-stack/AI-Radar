@@ -1,7 +1,7 @@
 ---
 id: OPN-FB-20260524-23
-type: opinion_intake
-title: "Aaron Levie｜Here’s a key line in this mythos update. This is precisely an example of why engineers don"
+type: opinion_card
+title: "Aaron Levie：在这个神话更新中，有一条关键线"
 date: 2026-05-24
 status: draft
 created_at: 2026-05-24T04:09:31.476Z
@@ -13,13 +13,13 @@ source_volatility: high
 capture_scope: x_full_visible_text
 evidence_level: community_signal
 fact_draft_gate: passed
-frontend_copy_gate: pending
-cardcopy_gate: skipped_intake_translation_pending
-publish_status: internal_archive
+frontend_copy_gate: passed
+cardcopy_gate: passed
+publish_status: frontstage_sidebar
 asset_level: candidate
 opinion_evidence_gate: opinion_captured
 translation_status: translated
-translation_method: existing
+translation_method: mymemory
 source_url: "https://x.com/levie/status/2058006473620463985"
 source_name: "follow-builders / X / Aaron Levie"
 original_date: "2026-05-23"
@@ -51,6 +51,8 @@ opinion_capture:
 
   capture_scope: x_full_visible_text
 
+  capture_scope: x_full_visible_text
+
   raw_archive: "01-SiteV2/content/05-frontier-opinions/2026-05-24-opinion-candidates.md"
   source_url: "https://x.com/levie/status/2058006473620463985"
   source_level: C
@@ -63,15 +65,24 @@ fact_claim_support:
   status: 暂无公开信息
   supporting_raw_refs: []
   missing_information: []
-opinion_tier: archive
-display_lane: archive_only
-selection_reason: "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：exa；包含数据、客户或业务量级线索 已尝试补译但未成功，暂不进入前台。"
+opinion_tier: sidebar
+display_lane: signal_sidebar
+selection_reason: "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：exa；包含数据、客户或业务量级线索"
 intake_suggested_tier: sidebar
 opinion_rating_score: 5
 opinion_rating_version: 2026-05-22-v1
+frontend:
+  displayTitle: "Aaron Levie：在这个神话更新中，有一条关键线"
+  speakerLine: "Aaron Levie"
+  originalQuote: "Here’s a key line in this mythos update. This is precisely an example of why engineers don’t go away, ever. We’ve made it far easier to create and find security issues, which means the new bottleneck is our ability to actually review, respond to, and fix the issues. Far from AI magically solving all of this, there still is major triage work and human judgment required to do the follow on work to actually protect systems. As a result, we’re about to enter a security engineer boom. Jevons paradox all over again. ceo @box - your business lives in content. unleash it with AI likes=237; retweets=21; replies=38"
+  originalTranslation: "在这个神话更新中，有一条关键线。这正是工程师永远不会消失的一个例子。我们使创建和查找安全问题变得更加容易，这意味着新的瓶颈是我们实际审核、响应和解决问题的能力。远非AI神奇地解决所有这些问题，仍然需要进行重大的分类工作和人类判断，以完成实际保护系统的后续工作。 因此，我们即将进入安全工程师热潮。Jevons悖论又来了。ceo @ box -您的企业生活在内容中。用AI释放它"
+  interpretation: "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。"
+  factBoundary: "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。"
+  sourceLinks:
+    - "https://x.com/levie/status/2058006473620463985"
 ---
 
-# Aaron Levie｜Here’s a key line in this mythos update. This is precisely an example of why engineers don
+# Aaron Levie：在这个神话更新中，有一条关键线
 
 ## 观点底稿
 
@@ -90,8 +101,9 @@ opinion_rating_version: 2026-05-22-v1
 ## 原文摘录
 
 Here’s a key line in this mythos update. This is precisely an example of why engineers don’t go away, ever. We’ve made it far easier to create and find security issues, which means the new bottleneck is our ability to actually review, respond to, and fix the issues. Far from AI magically solving all of this, there still is major triage work and human judgment required to do the follow on work to actually protect systems. As a result, we’re about to enter a security engineer boom. Jevons paradox all over again. ceo @box - your business lives in content. unleash it with AI likes=237; retweets=21; replies=38
-
-中文翻译：待补中文翻译。
+中文翻译：
+在这个神话更新中，有一条关键线。这正是工程师永远不会消失的一个例子。我们使创建和查找安全问题变得更加容易，这意味着新的瓶颈是我们实际审核、响应和解决问题的能力。远非AI神奇地解决所有这些问题，仍然需要进行重大的分类工作和人类判断，以完成实际保护系统的后续工作。
+因此，我们即将进入安全工程师热潮。Jevons悖论又来了。ceo @ box -您的企业生活在内容中。用AI释放它
 
 ## 观澜解读
 

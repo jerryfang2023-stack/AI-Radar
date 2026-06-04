@@ -55,6 +55,8 @@ selection_reason: "follow-builders 人物池来源；商业/产品变量：custo
 intake_suggested_tier: archive
 opinion_rating_score: 3
 opinion_rating_version: 2026-05-22-v1
+merged_duplicate_count: 1
+merged_duplicate_refs: "OPN-FB-20260604-09"
 ---
 
 # There's a $50B company hiding inside Salesforce
@@ -92,3 +94,8 @@ opinion_rating_version: 2026-05-22-v1
 ## 可信边界
 
 follow-builders 是观点发现入口。X / 社区来源波动高，本卡只作为前沿观点线索，不作为公司动作、客户采用、收入、融资或市场规模的事实主证据。
+
+## Merge Updates
+
+- 2026-06-04: merged duplicate opinion capture OPN-FB-20260604-09 from 2026-06-04--frontier-opinion--hn-builder-query-there-s-a-50b-company-hiding-inside-salesforce.md.
+

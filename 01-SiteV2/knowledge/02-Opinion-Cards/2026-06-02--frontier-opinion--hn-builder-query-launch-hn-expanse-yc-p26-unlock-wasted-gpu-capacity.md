@@ -64,6 +64,8 @@ frontend:
   factBoundary: "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。"
   sourceLinks:
     - "https://news.ycombinator.com/item?id=48356312"
+merged_duplicate_count: 1
+merged_duplicate_refs: "OPN-FB-20260604-08"
 ---
 
 # HN builder query：73分/22条评论/查询= AI创始人ARR客户
@@ -101,3 +103,8 @@ frontend:
 ## 可信边界
 
 follow-builders 是观点发现入口。X / 社区来源波动高，本卡只作为前沿观点线索，不作为公司动作、客户采用、收入、融资或市场规模的事实主证据。
+
+## Merge Updates
+
+- 2026-06-04: merged duplicate opinion capture OPN-FB-20260604-08 from 2026-06-04--frontier-opinion--hn-builder-query-launch-hn-expanse-yc-p26-unlock-wasted-gpu-capacity.md.
+

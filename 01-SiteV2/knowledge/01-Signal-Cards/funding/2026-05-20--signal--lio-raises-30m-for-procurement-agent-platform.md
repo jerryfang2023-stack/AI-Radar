@@ -11,7 +11,7 @@ fact_draft_gate: passed
 frontend_copy_gate: passed
 cardcopy_gate: passed
 created_at: 2026-05-21T15:17:11.946Z
-updated_at: 2026-05-24T04:40:15.965Z
+updated_at: 2026-06-04T04:57:05.602Z
 
 raw_refs: ["R-006", "R-021"]
 pool_refs: ["P-006", "P-021"]

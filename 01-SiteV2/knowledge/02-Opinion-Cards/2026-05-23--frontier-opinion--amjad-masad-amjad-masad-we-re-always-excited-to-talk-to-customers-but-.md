@@ -53,6 +53,8 @@ opinion_capture:
 
   capture_scope: x_full_visible_text
 
+  capture_scope: x_full_visible_text
+
   raw_archive: "01-SiteV2/content/05-frontier-opinions/2026-05-23-opinion-candidates.md"
   source_url: "https://x.com/amasad/status/2057504360217891018"
   source_level: C

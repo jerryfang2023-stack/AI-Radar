@@ -18,8 +18,8 @@ cardcopy_gate: skipped_intake_translation_pending
 publish_status: internal_archive
 asset_level: candidate
 opinion_evidence_gate: opinion_captured
-translation_status: translated
-translation_method: existing
+translation_status: pending_translation
+translation_method: translation_failed
 source_url: "https://x.com/swyx/status/2057876113934942507"
 source_name: "follow-builders / X / Swyx"
 original_date: "2026-05-22"
@@ -37,6 +37,8 @@ formal_tags:
   opinion: ["opinion-product-strategy"]
 opinion_capture:
   raw_ref: "BP-20260524-15"
+  capture_scope: x_full_visible_text
+
   capture_scope: x_full_visible_text
 
   capture_scope: x_full_visible_text

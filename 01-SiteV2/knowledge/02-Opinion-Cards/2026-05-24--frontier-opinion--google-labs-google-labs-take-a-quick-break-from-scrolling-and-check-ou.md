@@ -1,7 +1,7 @@
 ---
 id: OPN-FB-20260524-24
-type: opinion_intake
-title: "Google Labs｜Take a quick break from scrolling and check out https://t.co/TcBfiPohNK. 👀 We had a bit o"
+type: opinion_card
+title: "Google Labs：从滚动屏幕中短暂休息一下，然后退房👀我们稍微休息了一下"
 date: 2026-05-24
 status: draft
 created_at: 2026-05-24T04:09:31.713Z
@@ -13,13 +13,13 @@ source_volatility: high
 capture_scope: x_full_visible_text
 evidence_level: community_signal
 fact_draft_gate: passed
-frontend_copy_gate: pending
-cardcopy_gate: skipped_intake_translation_pending
-publish_status: internal_archive
+frontend_copy_gate: passed
+cardcopy_gate: passed
+publish_status: frontstage_sidebar
 asset_level: candidate
 opinion_evidence_gate: opinion_captured
 translation_status: translated
-translation_method: existing
+translation_method: mymemory
 source_url: "https://x.com/GoogleLabs/status/2057884277384360416"
 source_name: "follow-builders / X / Google Labs"
 original_date: "2026-05-22"
@@ -51,6 +51,8 @@ opinion_capture:
 
   capture_scope: x_full_visible_text
 
+  capture_scope: x_full_visible_text
+
   raw_archive: "01-SiteV2/content/05-frontier-opinions/2026-05-24-opinion-candidates.md"
   source_url: "https://x.com/GoogleLabs/status/2057884277384360416"
   source_level: C
@@ -63,15 +65,24 @@ fact_claim_support:
   status: 暂无公开信息
   supporting_raw_refs: []
   missing_information: []
-opinion_tier: archive
-display_lane: archive_only
-selection_reason: "follow-builders 人物池来源；高价值人物或机构；包含数据、客户或业务量级线索 已尝试补译但未成功，暂不进入前台。"
+opinion_tier: sidebar
+display_lane: signal_sidebar
+selection_reason: "follow-builders 人物池来源；高价值人物或机构；包含数据、客户或业务量级线索"
 intake_suggested_tier: sidebar
 opinion_rating_score: 4
 opinion_rating_version: 2026-05-22-v1
+frontend:
+  displayTitle: "Google Labs：从滚动屏幕中短暂休息一下，然后退房👀我们稍微休息了一下"
+  speakerLine: "Google Labs"
+  originalQuote: "Take a quick break from scrolling and check out 👀 We had a bit of a refresh! Our goal was simply to make sure you can easily find the latest and greatest innovations from the Lab, including those we just announced at I/O. Explore our portfolio, test a few experiments out, learn more about Google Labs, and help us shape what’s next. 🚀 Google’s home for our latest AI tools and experiments. likes=301; retweets=29; replies=12"
+  originalTranslation: "从滚动屏幕中短暂休息一下，然后退房👀我们稍微休息了一下！我们的目标只是确保您可以轻松找到实验室的最新和最伟大的创新，包括我们刚刚在I/O上宣布的那些创新。探索我们的产品组合，测试一些实验，了解有关Google实验室的更多信息，并帮助我们制定下一步计划。🚀谷歌拥有我们最新的AI工具和实验。"
+  interpretation: "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。"
+  factBoundary: "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。"
+  sourceLinks:
+    - "https://x.com/GoogleLabs/status/2057884277384360416"
 ---
 
-# Google Labs｜Take a quick break from scrolling and check out https://t.co/TcBfiPohNK. 👀 We had a bit o
+# Google Labs：从滚动屏幕中短暂休息一下，然后退房👀我们稍微休息了一下
 
 ## 观点底稿
 
@@ -90,8 +101,8 @@ opinion_rating_version: 2026-05-22-v1
 ## 原文摘录
 
 Take a quick break from scrolling and check out https://t.co/TcBfiPohNK. 👀 We had a bit of a refresh! Our goal was simply to make sure you can easily find the latest and greatest innovations from the Lab, including those we just announced at I/O. Explore our portfolio, test a few experiments out, learn more about Google Labs, and help us shape what’s next. 🚀 Google’s home for our latest AI tools and experiments. likes=301; retweets=29; replies=12
-
-中文翻译：待补中文翻译。
+中文翻译：
+从滚动屏幕中短暂休息一下，然后退房👀我们稍微休息了一下！我们的目标只是确保您可以轻松找到实验室的最新和最伟大的创新，包括我们刚刚在I/O上宣布的那些创新。探索我们的产品组合，测试一些实验，了解有关Google实验室的更多信息，并帮助我们制定下一步计划。🚀谷歌拥有我们最新的AI工具和实验。
 
 ## 观澜解读
 

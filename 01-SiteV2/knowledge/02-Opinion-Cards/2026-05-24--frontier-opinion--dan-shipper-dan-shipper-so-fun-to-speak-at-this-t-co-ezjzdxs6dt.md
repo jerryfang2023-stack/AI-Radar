@@ -1,7 +1,7 @@
 ---
 id: OPN-FB-20260524-20
-type: opinion_intake
-title: "Dan Shipper｜so fun to speak at this! https://t.co/EZjZDxS6Dt"
+type: opinion_card
+title: "Dan Shipper：在这里演讲很有趣"
 date: 2026-05-24
 status: draft
 created_at: 2026-05-24T04:09:30.803Z
@@ -13,13 +13,13 @@ source_volatility: high
 capture_scope: x_full_visible_text
 evidence_level: community_signal
 fact_draft_gate: passed
-frontend_copy_gate: pending
-cardcopy_gate: skipped_intake_translation_pending
-publish_status: internal_archive
+frontend_copy_gate: passed
+cardcopy_gate: passed
+publish_status: frontstage_sidebar
 asset_level: candidate
 opinion_evidence_gate: opinion_captured
 translation_status: translated
-translation_method: existing
+translation_method: mymemory
 source_url: "https://x.com/danshipper/status/2057847013325086870"
 source_name: "follow-builders / X / Dan Shipper"
 original_date: "2026-05-22"
@@ -51,6 +51,8 @@ opinion_capture:
 
   capture_scope: x_full_visible_text
 
+  capture_scope: x_full_visible_text
+
   raw_archive: "01-SiteV2/content/05-frontier-opinions/2026-05-24-opinion-candidates.md"
   source_url: "https://x.com/danshipper/status/2057847013325086870"
   source_level: C
@@ -63,15 +65,24 @@ fact_claim_support:
   status: 暂无公开信息
   supporting_raw_refs: []
   missing_information: []
-opinion_tier: archive
-display_lane: archive_only
-selection_reason: "follow-builders 人物池来源；高价值人物或机构；包含数据、客户或业务量级线索 已尝试补译但未成功，暂不进入前台。"
+opinion_tier: sidebar
+display_lane: signal_sidebar
+selection_reason: "follow-builders 人物池来源；高价值人物或机构；包含数据、客户或业务量级线索"
 intake_suggested_tier: sidebar
 opinion_rating_score: 4
 opinion_rating_version: 2026-05-22-v1
+frontend:
+  displayTitle: "Dan Shipper：在这里演讲很有趣"
+  speakerLine: "Dan Shipper"
+  originalQuote: "so fun to speak at this! ceo @every | the only subscription you need to stay at the edge of AI likes=27; retweets=1; replies=3"
+  originalTranslation: "在这里演讲很有趣！ ceo @ every |您需要保持在AI边缘的唯一订阅"
+  interpretation: "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。"
+  factBoundary: "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。"
+  sourceLinks:
+    - "https://x.com/danshipper/status/2057847013325086870"
 ---
 
-# Dan Shipper｜so fun to speak at this! https://t.co/EZjZDxS6Dt
+# Dan Shipper：在这里演讲很有趣
 
 ## 观点底稿
 
@@ -90,8 +101,8 @@ opinion_rating_version: 2026-05-22-v1
 ## 原文摘录
 
 so fun to speak at this! https://t.co/EZjZDxS6Dt ceo @every | the only subscription you need to stay at the edge of AI likes=27; retweets=1; replies=3
-
-中文翻译：待补中文翻译。
+中文翻译：
+在这里演讲很有趣！ ceo @ every |您需要保持在AI边缘的唯一订阅
 
 ## 观澜解读
 

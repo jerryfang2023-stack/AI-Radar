@@ -4,8 +4,8 @@ type: opinion_intake
 title: "Building AI Routing Workflows | CodeSignal Learn"
 date: 2026-06-04
 status: draft
-created_at: 2026-06-04T04:45:13.269Z
-updated_at: 2026-06-04T04:45:13.269Z
+created_at: 2026-06-04T00:38:43.915Z
+updated_at: 2026-06-04T00:38:43.915Z
 person_name: "Unknown Builder"
 column_name: 前沿观点
 source_level: C
@@ -55,13 +55,15 @@ selection_reason: "follow-builders 人物池来源；商业/产品变量：workf
 intake_suggested_tier: archive
 opinion_rating_score: 2
 opinion_rating_version: 2026-05-22-v1
+merged_duplicate_count: 1
+merged_duplicate_refs: "OPN-FB-20260604-25"
 ---
 
 # Building AI Routing Workflows | CodeSignal Learn
 
 ## 观点底稿
 
-- 谁：Unknown Builder
+- 谁：Anysearch
 - 当时身份：暂无公开信息
 - 在哪里说：follow-builders cloud fallback / keyword search / Anysearch，https://codesignal.com/learn/courses/exploring-workflows-with-claude-in-typescript/lessons/building-ai-routing-workflows
 - 原文说了什么：Your routing workflow follows a clean two-step pattern: analyze the request with a router prompt to get a classification decision, then send the original request to the appropriate specialist for the final response. The routing patterns you've learned here form the foundation for much more sophisti… query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates
@@ -69,7 +71,7 @@ opinion_rating_version: 2026-05-22-v1
 
 ## 人物 / Title / 原文
 
-- 人物：Unknown Builder
+- 人物：Anysearch
 - Title：暂无公开信息
 - 原文：[查看原文](https://codesignal.com/learn/courses/exploring-workflows-with-claude-in-typescript/lessons/building-ai-routing-workflows)
 
@@ -92,3 +94,8 @@ Your routing workflow follows a clean two-step pattern: analyze the request with
 ## 可信边界
 
 follow-builders 是观点发现入口。X / 社区来源波动高，本卡只作为前沿观点线索，不作为公司动作、客户采用、收入、融资或市场规模的事实主证据。
+
+## Merge Updates
+
+- 2026-06-04: merged duplicate opinion capture OPN-FB-20260604-25 from 2026-06-04--frontier-opinion--unknown-builder-building-ai-routing-workflows-codesignal-learn.md.
+

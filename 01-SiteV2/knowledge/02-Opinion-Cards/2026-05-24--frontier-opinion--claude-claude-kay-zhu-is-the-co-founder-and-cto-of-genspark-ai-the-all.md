@@ -13,13 +13,13 @@ source_volatility: high
 capture_scope: x_full_visible_text
 evidence_level: community_signal
 fact_draft_gate: passed
-frontend_copy_gate: pending
-cardcopy_gate: skipped_intake_translation_pending
+frontend_copy_gate: passed
+cardcopy_gate: skipped_intake_pending_rating
 publish_status: internal_archive
 asset_level: candidate
 opinion_evidence_gate: opinion_captured
 translation_status: translated
-translation_method: existing
+translation_method: mymemory
 source_url: "https://x.com/claudeai/status/2057854403558653983"
 source_name: "follow-builders / X / Claude"
 original_date: "2026-05-22"
@@ -37,6 +37,8 @@ formal_tags:
   opinion: ["opinion-agent-workflow", "opinion-product-strategy"]
 opinion_capture:
   raw_ref: "BP-20260524-21"
+  capture_scope: x_full_visible_text
+
   capture_scope: x_full_visible_text
 
   capture_scope: x_full_visible_text
@@ -90,8 +92,8 @@ opinion_rating_version: 2026-05-22-v1
 ## 原文摘录
 
 Kay Zhu is the co-founder and CTO of @genspark_ai, the all-in-one AI workspace built on Claude. In a market moving this fast, where anyone can build, he thinks the team is what makes the difference: https://t.co/1fdpKpxjqj Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app. likes=1536; retweets=97; replies=149
-
-中文翻译：待补中文翻译。
+中文翻译：
+Kay Zhu是@ genspark_ai的联合创始人兼首席技术官，这是基于Claude构建的一体化AI工作区。在这个任何人都可以构建的快速发展的市场中，他认为团队才是关键所在： Claude是由@ anthropicai构建的AI助手，具有安全、准确和安全的特点。通过或下载应用程序与Claude交谈。
 
 ## 观澜解读
 

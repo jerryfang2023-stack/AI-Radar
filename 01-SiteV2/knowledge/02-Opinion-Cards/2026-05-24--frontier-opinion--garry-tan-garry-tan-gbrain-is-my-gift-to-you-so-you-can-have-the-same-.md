@@ -51,6 +51,8 @@ opinion_capture:
 
   capture_scope: x_full_visible_text
 
+  capture_scope: x_full_visible_text
+
   raw_archive: "01-SiteV2/content/05-frontier-opinions/2026-05-24-opinion-candidates.md"
   source_url: "https://x.com/garrytan/status/2058053854026191170"
   source_level: C
