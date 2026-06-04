@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数据观察台｜观澜 AI</title>
+  <link rel="stylesheet" href="assets/v3-data-observation-desk.css">
+</head>
+<body class="v3-data-observation-page">
+  <header class="desk-brandbar" aria-label="观澜AI">
+    <a class="brand-lockup" href="index.html" aria-label="观澜AI 首页">
+      <img class="desk-logo" src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜AI Wavesight AI">
+    </a>
+    <div class="desk-top-actions">
+      <a class="desk-jump-link" href="operations-console.html#dashboard">运营后台</a>
+    <div class="brand-context">
+      <span>AI 数据中心</span>
+      <strong>数据观察台</strong>
+    </div>
+    </div>
+  </header>
+
+  <main class="desk-shell">
+    <section class="desk-section desk-command" aria-labelledby="filters-title">
+      <div class="stats-grid" data-stats></div>
+    </section>
+
+    <section class="desk-section desk-workbench" aria-labelledby="list-title">
+      <div class="section-head">
+        <div>
+          <p class="desk-kicker">Table / Cards</p>
+          <h2 id="list-title">Card 工作区</h2>
+        </div>
+        <div class="workbench-actions">
+          <div class="date-controls" data-date-controls aria-label="日期筛选">
+            <select data-date-year aria-label="选择年份"></select>
+            <select data-date-month aria-label="选择月份"></select>
+            <select data-date-day aria-label="选择日期"></select>
+          </div>
+          <span class="workbench-summary" data-day-summary>读取中</span>
+          <span class="result-count" data-result-count></span>
+          <div class="category-tabs" data-category-tabs></div>
+        </div>
+      </div>
+      <div class="workbench-grid">
+        <div class="table-wrap card-browser">
+          <table class="card-table">
+            <thead>
+              <tr>
+                <th>标题</th>
+                <th>主体</th>
+                <th>Tags</th>
+              </tr>
+            </thead>
+            <tbody data-table-body></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="desk-section desk-trends" aria-labelledby="relationship-title">
+      <div class="section-head">
+        <div>
+          <p class="desk-kicker">Relationship Graph</p>
+          <h2 id="relationship-title">关系图谱</h2>
+          <p class="section-note">只展示当日 Card 之间可追溯的主体、场景、动作和商业变量关系，不直接下趋势结论。</p>
+        </div>
+      </div>
+      <div class="trend-links" data-relationship-links></div>
+    </section>
+
+    <section class="desk-section desk-trends" aria-labelledby="candidate-title">
+      <div class="section-head">
+        <div>
+          <p class="desk-kicker">Trend Candidates</p>
+          <h2 id="candidate-title">趋势候选</h2>
+          <p class="section-note">这里读取真实趋势候选资产；当天没有新增候选时，不用标签数量临时生成。</p>
+        </div>
+      </div>
+      <div class="candidate-grid" data-trend-candidates></div>
+    </section>
+
+    <section class="desk-section desk-trends" aria-labelledby="history-title">
+      <div class="section-head">
+        <div>
+          <p class="desk-kicker">History</p>
+          <h2 id="history-title">历史趋势</h2>
+          <p class="section-note">保留已沉淀的趋势资产，作为观察今天信号时的参照。</p>
+        </div>
+      </div>
+      <div class="history-list" data-historical-trends></div>
+    </section>
+  </main>
+
+  <dialog class="detail-dialog" data-detail-dialog>
+    <div class="detail-panel">
+      <button class="detail-close" type="button" data-detail-close aria-label="关闭详情">×</button>
+      <div data-detail-content></div>
+    </div>
+  </dialog>
+
+  <script src="assets/v3-data-observation-desk.js" defer></script>
+</body>
+</html>

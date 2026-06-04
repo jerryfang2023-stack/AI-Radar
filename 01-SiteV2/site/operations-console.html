@@ -144,6 +144,32 @@
     h3 { font-size: 16px; line-height: 24px; font-weight: 600; }
     p { color: var(--muted); font-size: 14px; line-height: 24px; font-weight: 400; }
     .page-head p { max-width: 560px; text-align: right; }
+    .jump-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 0 13px;
+      border: 1px solid var(--gold-line);
+      border-radius: 999px;
+      background: rgba(255, 253, 248, .72);
+      color: var(--blue);
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: border-color .18s ease, background .18s ease, transform .18s ease;
+    }
+    .jump-link:hover {
+      border-color: rgba(200, 167, 102, .58);
+      background: rgba(200, 167, 102, .14);
+    }
+    .jump-link:active { transform: translateY(1px); }
+    .dashboard-jump {
+      display: flex;
+      width: fit-content;
+      margin: -4px 0 13px auto;
+    }
     .page-surface {
       border: 1px solid var(--line);
       border-radius: 12px;
@@ -465,6 +491,7 @@
           <div><span class="kicker">OPERATIONS QUALITY</span><h1>运营仪表盘</h1></div>
           <p>生产漏斗、来源质量、资产结构与每日链路，统一在后台内部看。</p>
         </header>
+          <a class="jump-link dashboard-jump" href="v3-data-observation.html">数据观察台</a>
           <section class="surface-section">
             <div class="module-head"><div><span class="kicker">DAILY FUNNEL</span><h2>每日生产时间轴</h2></div><p>最新生产日高亮，其余日期弱化展示。</p></div>
             <div class="timeline" data-daily-timeline></div>
