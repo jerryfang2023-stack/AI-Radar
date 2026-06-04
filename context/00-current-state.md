@@ -14,7 +14,7 @@ priority: current
 
 # 00 Current State｜观澜 AI 当前状态
 
-观澜 AI / WaveSight AI 当前处于 V2.2.1 生产开发阶段。
+观澜 AI / WaveSight AI 当前处于 V3.0.0 数据观察台生产开发阶段。
 
 ## 定位
 
@@ -23,7 +23,7 @@ priority: current
 - 系统定位：观澜 AI 不是内容站，而是一个会持续感知、判断、表达、发布、复盘和进化的 AI 商业决策系统。
 - AI Native 方向：后续能力建设优先让 Agent 之间形成联动，围绕感知、判断、表达、发布、复盘和进化形成闭环。
 - 不是 AI 新闻站、工具导航、热点搬运站或普通日报。
-- 当前前台导航：今日观察 / 商业信号 / 趋势追踪 / 商业内参。
+- 当前前台入口：数据观察台。
 
 ## 当前目录
 
@@ -42,6 +42,9 @@ priority: current
 
 ## 已停止口径
 
+- V2 前台页面已退役；首页、今日观察、商业信号、趋势追踪、商业内参、观点和 builders 旧前台页面不再作为当前前台入口。
+- V3 当前前台以 `01-SiteV2/site/v3-data-observation.html` 为准，`01-SiteV2/site/index.html` 只作为跳转入口。
+- 运营仪表盘相关页面继续保留，包括 `admin.html`、`operations-console.html`、`pipeline-dashboard.html`。
 - 已停止的网站版本与内容日更不作为当前仓库参考源。
 - 前沿观点不作为 V2 一级导航，承接旧观点栏目中的有效能力，作为商业信号相邻内容流和后台判断资产。前沿观点必须先入 `opinion_intake` 并写入中文翻译，再执行四档评级：`feature` / `sidebar` / `archive` / `discard`；只有完成翻译的 `feature` 与 `sidebar` 可以进入前台。
 - 机会判断不作为一级导航，进入趋势追踪和商业内参中的判断段落。

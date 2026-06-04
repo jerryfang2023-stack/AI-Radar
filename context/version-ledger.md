@@ -57,6 +57,8 @@ priority: current
 | 管线仪表盘 | `01-SiteV2/site/pipeline-dashboard.html` | 生产链路仪表盘保留，不属于 V2 前台页面 |
 | 管理入口 | `01-SiteV2/site/admin.html` | 管理入口保留，不属于 V2 前台页面 |
 
+本机保留 V2 前台静态页面存档：`agent-workflow/backups/v2-static-pages-20260604.zip`。该目录为本地忽略目录，只用于追溯，不作为当前前台执行依据。
+
 ## 当前有效口径
 
 | 类型 | 当前基线 |

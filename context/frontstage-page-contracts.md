@@ -16,12 +16,9 @@ priority: current
 
 | 页面 | 当前职责 | 必须保留 | 禁止回退 / 禁止污染 | 必跑门禁 |
 |---|---|---|---|---|
-| 首页 | 展示观澜当前判断入口、最新商业信号、趋势追踪入口和内参入口 | V2.2.1 信息架构；趋势模块读取真实趋势候选或正式趋势报告 | 旧 hero、旧趋势模块、V2.1 文案、合成趋势、过期 activeDate | `frontstage-regression-gate` |
-| 今日观察 | newsletter，一眼看清一天要点，并连接当天文章、商业信号、观点和趋势 | 当日文章详情；日期查看；关键词 tags；相关卡片跳转自己的详情页 | `今日判断` 口径、旧 summary 卡、把 Raw / Pool 字段露到前台 | `frontstage-regression-gate` + public copy |
-| 商业信号 | 前台展示事实型商业信号，包括融资、案例、产品服务和合作信号 | 标题优先使用前台标题；摘要必须是公开读者可读文案；融资分类按真实标签统计 | 机械中文标题、内部处理语言、Raw 摘要 fallback、单一“种子轮”假统计 | cardcopy + public copy + regression |
-| 趋势追踪 | 区分正在形成的趋势和趋势报告，展示直接关联材料 | 只显示当前趋势 `relations` 直接关联的信号、观点、案例；支持日期和 tags | 标签泛关联、全站列表 fallback、无关案例/观点、`TRD-WATCH-*` 合成报告 | `frontstage-regression-gate` |
-| 趋势详情 | 解释一个趋势如何形成、证据链是什么、缺口在哪里 | 标题、判断、直接关联信号、时间线和边界 | 用全站信号/观点填空、展示不相干材料、旧报告模板回潮 | `frontstage-regression-gate` |
-| 商业内参 | 周期性商业判断、热力变化和会员层材料入口 | 与今日观察、商业信号、趋势追踪形成关系，但不复用旧页面模块 | 借用旧首页模块、旧信号卡样式、普通新闻站口吻 | regression + public copy |
+| 数据观察台 | V3 当前前台入口，承接 AI 数据中心 + 内容选题中心；展示 Card 工作区、关系图谱、趋势候选和历史趋势 | 当日 Card；日期筛选；正式标签；关系说明；真实趋势候选；历史趋势卡片；详情页 | V2 四栏目首页、旧栏目页、旧详情页、标签数量伪趋势、机械内部语言、Raw / Pool / threshold / gate 外露 | `frontstage-regression-gate` + syntax |
+| 运营控制台 | 运营后台与生产链路查看，不属于 V2 前台页面 | `operations-console.html`、`pipeline-dashboard.html`、`admin.html` 及相关数据 | 被误删、被前台 V3 样式重写、被旧栏目导航污染 | syntax + manual smoke |
+| V2 前台页面 | 已退役页面集合 | 不保留为当前前台入口 | 继续作为首页、栏目页、详情页被新任务继承 | 不适用 |
 
 ## 改动分级
 

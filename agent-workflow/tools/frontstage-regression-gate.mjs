@@ -4,30 +4,51 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedVersion = "V2.2.1";
-const minCacheVersion = "20260601";
+const expectedVersion = "V3.0.0-data-observation-desk";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
 const frontstageFiles = [
-  "01-SiteV2/site/assets/app.js",
-  "01-SiteV2/site/assets/styles.css",
   "01-SiteV2/site/index.html",
-  "01-SiteV2/site/trend-tracking.html",
-  "01-SiteV2/site/trend-detail.html",
-  "01-SiteV2/site/scripts/sync-v2-site-data.mjs",
-  "01-SiteV2/site/data/site-content.json",
-  "01-SiteV2/site/data/site-content.js",
+  "01-SiteV2/site/v3-data-observation.html",
+  "01-SiteV2/site/assets/v3-data-observation-desk.css",
+  "01-SiteV2/site/assets/v3-data-observation-desk.js",
+  "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
+  "01-SiteV2/site/data/v3-data-observation-desk.json",
 ].map((file) => path.join(root, file));
 
-const htmlFiles = [
+const publicFrontstageTextFiles = [
   "01-SiteV2/site/index.html",
+  "01-SiteV2/site/v3-data-observation.html",
+  "01-SiteV2/site/assets/v3-data-observation-desk.css",
+  "01-SiteV2/site/assets/v3-data-observation-desk.js",
+  "01-SiteV2/site/data/v3-data-observation-desk.json",
+].map((file) => path.join(root, file));
+
+const retiredFrontstagePages = [
+  "01-SiteV2/site/daily.html",
+  "01-SiteV2/site/daily-detail.html",
+  "01-SiteV2/site/daily-brief.html",
+  "01-SiteV2/site/signals.html",
+  "01-SiteV2/site/signal-detail.html",
   "01-SiteV2/site/trend-tracking.html",
   "01-SiteV2/site/trend-detail.html",
+  "01-SiteV2/site/brief.html",
+  "01-SiteV2/site/opinion.html",
+  "01-SiteV2/site/opinion-detail.html",
+  "01-SiteV2/site/builders.html",
+  "01-SiteV2/site/builder-detail.html",
+].map((file) => path.join(root, file));
+
+const requiredOperationalPages = [
+  "01-SiteV2/site/admin.html",
+  "01-SiteV2/site/operations-console.html",
+  "01-SiteV2/site/pipeline-dashboard.html",
 ].map((file) => path.join(root, file));
 
 const retiredPatterns = [
   { pattern: /\bV2\.[01]\b/u, label: "retired_version_marker" },
+  { pattern: /home-v2|page-index|今日观察|商业信号|趋势追踪|商业内参/u, label: "retired_v2_frontstage_copy" },
   { pattern: /今日判断/u, label: "retired_daily_judgment_copy" },
   { pattern: /dailySummaryCard/u, label: "retired_daily_summary_component" },
   { pattern: /legacyPerspectiveCard/u, label: "retired_legacy_perspective_component" },
@@ -39,6 +60,7 @@ const retiredPatterns = [
   { pattern: /fallbackTrendReportFromDay/u, label: "synthetic_trend_report_fallback" },
   { pattern: /历史内容已完成/u, label: "historical_completion_placeholder" },
   { pattern: /Generated from 01-SiteV2\/content .*V2\.1/u, label: "retired_generated_source_label" },
+  { pattern: /Raw\s*->\s*Pool|threshold_pending|threshold_passed|eligible|index_only/u, label: "internal_production_language" },
 ];
 
 function read(file) {
@@ -61,10 +83,24 @@ function collectRetiredPatternIssues() {
       issues.push(issue(file, "missing_frontstage_file"));
       continue;
     }
+  }
+  for (const file of publicFrontstageTextFiles) {
+    const text = read(file);
     for (const rule of retiredPatterns) {
       const match = rule.pattern.exec(text);
       if (match) issues.push(issue(file, rule.label, match[0], lineOf(text, match.index)));
     }
+  }
+  return issues;
+}
+
+function collectRetiredPageIssues() {
+  const issues = [];
+  for (const file of retiredFrontstagePages) {
+    if (fs.existsSync(file)) issues.push(issue(file, "retired_v2_frontstage_page_still_exists"));
+  }
+  for (const file of requiredOperationalPages) {
+    if (!fs.existsSync(file)) issues.push(issue(file, "missing_required_operational_page"));
   }
   return issues;
 }
@@ -97,100 +133,25 @@ function latestContentDate() {
 
 function collectGeneratedDataIssues() {
   const issues = [];
-  const dataFile = path.join(root, "01-SiteV2/site/data/site-content.json");
+  const dataFile = path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json");
   const text = read(dataFile);
-  if (!text) return [issue(dataFile, "missing_site_data")];
+  if (!text) return [issue(dataFile, "missing_v3_site_data")];
   try {
     const data = JSON.parse(text);
     if (data?.meta?.version !== expectedVersion) {
-      issues.push(issue(dataFile, "site_data_version_mismatch", data?.meta?.version || "missing"));
+      issues.push(issue(dataFile, "v3_data_version_mismatch", data?.meta?.version || "missing"));
     }
-    const activeDate = data?.contentIndex?.activeDate || "";
+    const activeDate = data?.meta?.activeDate || "";
     const latestDate = latestContentDate();
     if (latestDate && activeDate !== latestDate) {
-      issues.push(issue(dataFile, "site_data_active_date_stale", `${activeDate || "missing"} != ${latestDate}`));
+      issues.push(issue(dataFile, "v3_data_active_date_stale", `${activeDate || "missing"} != ${latestDate}`));
     }
-    if (activeDate && data?.contentIndex?.dates?.length) {
-      const active = data.contentIndex.dates.find((item) => item.date === activeDate);
-      if (!active) issues.push(issue(dataFile, "active_date_missing_from_date_index", activeDate));
+    const activeCards = (data?.cards || []).filter((item) => item.date === activeDate);
+    if (!activeCards.length) {
+      issues.push(issue(dataFile, "v3_active_date_has_no_cards", activeDate || "missing"));
     }
   } catch (error) {
-    issues.push(issue(dataFile, "site_data_json_parse_failed", error.message));
-  }
-  return issues;
-}
-
-function collectCacheIssues() {
-  const issues = [];
-  for (const file of htmlFiles) {
-    const text = read(file);
-    const scriptMatches = [...text.matchAll(/<script\s+src="(data\/site-content\.js|assets\/app\.js)\?v=([^"]+)"/gu)];
-    for (const match of scriptMatches) {
-      const value = match[2];
-      if (value < minCacheVersion) issues.push(issue(file, "stale_frontstage_cache_buster", `${match[1]}?v=${value}`, lineOf(text, match.index)));
-    }
-  }
-  return issues;
-}
-
-function functionBody(text, name) {
-  const start = text.indexOf(`function ${name}`);
-  if (start < 0) return "";
-  const braceStart = text.indexOf("{", start);
-  if (braceStart < 0) return "";
-  let depth = 0;
-  for (let index = braceStart; index < text.length; index += 1) {
-    if (text[index] === "{") depth += 1;
-    if (text[index] === "}") depth -= 1;
-    if (depth === 0) return text.slice(start, index + 1);
-  }
-  return "";
-}
-
-function collectTrendRelationIssues() {
-  const issues = [];
-  const appFile = path.join(root, "01-SiteV2/site/assets/app.js");
-  const app = read(appFile);
-  const signalsBody = functionBody(app, "trendRadarSignals");
-  const pointsBody = functionBody(app, "trendRadarPoints");
-  const sourcesBody = functionBody(app, "trendReportSources");
-  const reportDetailBody = functionBody(app, "mountTrendReportDetail");
-
-  if (!signalsBody) issues.push(issue(appFile, "missing_trend_radar_signals"));
-  if (signalsBody && /trendRadarOverlapScore|fallback|data\.contentIndex\?\.signals|data\.signals/u.test(signalsBody)) {
-    issues.push(issue(appFile, "trend_signals_must_not_use_tag_or_global_fallback", "trendRadarSignals"));
-  }
-  if (!pointsBody) issues.push(issue(appFile, "missing_trend_radar_points"));
-  if (pointsBody && /trendRadarOverlapScore|data\.contentIndex\?\.points/u.test(pointsBody)) {
-    issues.push(issue(appFile, "trend_points_must_not_use_tag_or_global_fallback", "trendRadarPoints"));
-  }
-  if (sourcesBody && /\|\|\s*data\.(signals|contentIndex)/u.test(sourcesBody)) {
-    issues.push(issue(appFile, "trend_sources_must_not_fallback_to_global_assets", "trendReportSources"));
-  }
-  if (reportDetailBody && /\?\s*related\.[a-z]+\.length\s*:\s*data\.contentIndex/u.test(reportDetailBody)) {
-    issues.push(issue(appFile, "trend_detail_must_not_fallback_to_global_assets", "mountTrendReportDetail"));
-  }
-
-  const dataFile = path.join(root, "01-SiteV2/site/data/site-content.json");
-  try {
-    const data = JSON.parse(read(dataFile));
-    const activeDate = data?.contentIndex?.activeDate;
-    const activeTrends = (data?.contentIndex?.trends || []).filter((item) => item.date === activeDate);
-    const signalIds = new Set((data?.contentIndex?.signals || []).map((item) => item.id).filter(Boolean));
-    for (const trend of activeTrends) {
-      const directSignals = (trend.relations || [])
-        .filter((token) => token.startsWith("signal:"))
-        .map((token) => token.slice("signal:".length));
-      if (!directSignals.length) {
-        issues.push(issue(dataFile, "active_trend_missing_direct_signal_relations", trend.id || trend.title));
-      }
-      const missing = directSignals.filter((id) => !signalIds.has(id));
-      if (missing.length) {
-        issues.push(issue(dataFile, "active_trend_relation_points_to_missing_signal", `${trend.id || trend.title}: ${missing.join(",")}`));
-      }
-    }
-  } catch {
-    // JSON parse is reported by collectGeneratedDataIssues.
+    issues.push(issue(dataFile, "v3_data_json_parse_failed", error.message));
   }
   return issues;
 }
@@ -220,9 +181,8 @@ function writeReport(issues) {
 
 const issues = [
   ...collectRetiredPatternIssues(),
+  ...collectRetiredPageIssues(),
   ...collectGeneratedDataIssues(),
-  ...collectCacheIssues(),
-  ...collectTrendRelationIssues(),
 ];
 const report = writeReport(issues);
 

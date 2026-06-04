@@ -457,6 +457,13 @@ function readRawEvidence(rawJsonRel, rawArchiveRel) {
   return { sourceName, sourceUrl, publishedAt, rawTitle, keyExcerpts, visibleFragment };
 }
 
+function publicVisibleFragment(value = "") {
+  const text = String(value || "").trim();
+  if (!text) return "";
+  if (/Builders Viewpoints|今日观察中的|Raw\s*\/\s*Pool|候选、人物时间线/u.test(text)) return "";
+  return text;
+}
+
 function cardFromFile(file, category) {
   const text = read(file);
   const fm = frontmatter(text);
@@ -519,7 +526,7 @@ function cardFromFile(file, category) {
       eventLine,
       headingSection(text, "发生了什么"),
     ].filter(Boolean).map((item) => short(item, 260)).slice(0, 3),
-    visibleFragment: raw.visibleFragment,
+    visibleFragment: publicVisibleFragment(raw.visibleFragment),
     keyExcerpts: raw.keyExcerpts,
     rawRefs: arrayValue(fm, "raw_refs"),
     poolRefs: arrayValue(fm, "pool_refs"),
@@ -598,7 +605,6 @@ function trendAssetFromFile(file) {
     date: scalar(fm, "date"),
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
-    evidenceGate: gate,
     trendStatus: scalar(fm, "trend_status"),
     stageLabel: type === "trend_candidate" ? "正在形成" : gate === "threshold_passed" ? "证据较强" : "继续观察",
     hypothesis: short(frontendWhy || frontDescription || hypothesis, 360),
@@ -930,7 +936,7 @@ const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) 
 const trendAssets = buildTrendAssets(activeDate);
 const payload = {
   meta: {
-    version: "V3.0-observation-desk-alpha",
+    version: "V3.0.0-data-observation-desk",
     generatedAt: new Date().toISOString(),
     activeDate,
     source: "Signal Cards + Opinion Cards",

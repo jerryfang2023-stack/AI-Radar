@@ -570,8 +570,6 @@
         <div class="detail-grid">
           ${detailField("主体", card.subject)}
           ${detailField("发布时间", card.publishedAt)}
-          ${detailField("资产路径", card.rawArchive || card.cardPath)}
-          ${detailField("Raw -> Pool -> Card", `${(card.rawRefs || []).join(", ") || "暂无"} -> ${(card.poolRefs || []).join(", ") || "暂无"} -> ${card.id}`)}
         </div>
         ${sourceLinks.length ? `
           <div class="detail-source-list">
