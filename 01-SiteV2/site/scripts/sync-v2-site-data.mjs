@@ -842,6 +842,7 @@ async function parseSignalKnowledgeCards(currentDate) {
       const sourceUrl = nestedFrontmatterField(markdown, "source_url") || markdown.match(/https?:\/\/[^\s)"']+/u)?.[0] || "";
       const sourceName = sourceLabelFromUrl(sourceUrl) || "原文出处";
       const sourceTitle = await rawTitleForSignalCard(markdown);
+      const sourceTitleTranslation = frontmatterField(markdown, "source_title") || "";
       const slug = name.replace(/\.md$/u, "").replace(new RegExp(`^${currentDate}--signal--`, "u"), "");
       const card = {
         id: frontmatterField(markdown, "id"),
@@ -865,6 +866,7 @@ async function parseSignalKnowledgeCards(currentDate) {
         sourceUrl,
         sourceName,
         sourceTitle,
+        sourceTitleTranslation,
         sourceLevel: nestedFrontmatterField(markdown, "source_level") || sourceLevelFromUrl(sourceUrl),
         sourcePath: path.relative(projectRoot, path.join(dir, name)).replaceAll("\\", "/"),
       };
@@ -884,6 +886,7 @@ async function parseSignalKnowledgeCards(currentDate) {
         judgment: whyWatch || businessMeaning || eventLine,
         event: eventLine,
         businessMeaning,
+        sourceTitleTranslation,
         sourceUrl,
         sourceTitle,
         sources: sourceUrl ? `原文出处：${sourceName}` : "原文出处已记录",
@@ -904,6 +907,7 @@ async function parseSignalKnowledgeCards(currentDate) {
         link: `signal-detail.html?id=${slugify(title) || slug}`,
         frontend: {
           displayTitle: title,
+          sourceTitleTranslation: sourceTitleTranslation || title,
           sourceTitle,
           eventLine,
           whyWatch,

@@ -1,0 +1,63 @@
+{
+  "ok": false,
+  "status": "failed",
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T03:03:03.666Z",
+  "run_url": "",
+  "pr_url": "",
+  "manual_url": "",
+  "page_url": "",
+  "commit_sha": "",
+  "manifest": {
+    "date": "2026-06-04",
+    "generated_at": "2026-06-04T08:38:53+08:00",
+    "workflow_mode": "persistent_assets_pr",
+    "outcomes": {
+      "monitor": "success",
+      "monitor_readiness": "success",
+      "raw_pool_gate": "success",
+      "asset_generation": "success",
+      "pool_to_card_dedupe_gate": "success",
+      "site_data_sync": "success",
+      "publiccopy_gate": "success",
+      "frontstage_regression_gate": "success",
+      "pre_commit_gate": "success"
+    },
+    "assets": {
+      "raw_candidates": "present",
+      "raw_originals": "present",
+      "pool_candidates": "present",
+      "business_signals": "present",
+      "opinion_candidates": "present",
+      "opinion_cards_list": "present",
+      "signal_card_files": 12,
+      "opinion_card_files": 9,
+      "site_content_data": "present"
+    }
+  },
+  "counts": {
+    "signal_cards": 12,
+    "opinion_cards": 34
+  },
+  "frontstage": {
+    "site_date": "2026.06.04",
+    "daily_title": "Claude Code v2.1.162 发布",
+    "trend_title": "物理 AI 开始从模型发布进入制造现场"
+  },
+  "outcomes": {
+    "monitor": "not_run",
+    "monitor_readiness": "not_run",
+    "raw_pool_gate": "not_run",
+    "asset_generation": "not_run",
+    "cardcopy_gate": "not_run",
+    "pool_to_card_dedupe_gate": "not_run",
+    "site_data_sync": "not_run",
+    "publiccopy_gate": "not_run",
+    "frontstage_regression_gate": "not_run",
+    "pre_commit_gate": "not_run",
+    "commit": "not_run",
+    "pr": "not_run",
+    "auto_merge": "not_run"
+  },
+  "feishu_text": "观澜 AI｜2026-06-04 日更 异常\n- 触发方式: -\n- Raw: present\n- Pool: present\n- 商业信号文件: present\n- 观点候选文件: present\n- 商业信号卡: 12\n- 观点卡: 34\n- 今日观察: Claude Code v2.1.162 发布\n- 趋势状态: 显示：物理 AI 开始从模型发布进入制造现场\n- 站点数据日期: 2026.06.04\n- 跳过原因: 无\n- PR: 无\n- 网站: GitHub Pages 将在 main 更新后部署\n- GitHub Run: -\n- Commit: -\n\n门禁与自动化状态\n- monitor: not_run\n- monitor_readiness: not_run\n- raw_pool_gate: not_run\n- asset_generation: not_run\n- cardcopy_gate: not_run\n- pool_to_card_dedupe_gate: not_run\n- site_data_sync: not_run\n- publiccopy_gate: not_run\n- frontstage_regression_gate: not_run\n- pre_commit_gate: not_run\n- commit: not_run\n- pr: not_run\n- auto_merge: not_run"
+}

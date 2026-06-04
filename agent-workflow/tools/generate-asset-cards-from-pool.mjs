@@ -1022,6 +1022,27 @@ function autoSignalSpec(poolRef, section, index) {
   const text = textForInference(section);
   const type = inferSignalType(section);
   const company = companyFromSection(section);
+
+  // 检查原发表时间：从 raw_json 中读取 published_at，若超过 14 天则跳过
+  const rawJsonPath = value(section, "raw_json");
+  if (rawJsonPath) {
+    try {
+      const rawPath = path.resolve(root, rawJsonPath.replace(/^`|`$/gu, ""));
+      const rawData = JSON.parse(fs.readFileSync(rawPath, "utf8"));
+      const pubDate = rawData.published_at;
+      if (pubDate) {
+        const pubDay = new Date(pubDate);
+        const cutoff = new Date();
+        cutoff.setDate(cutoff.getDate() - 14);
+        if (pubDay < cutoff) {
+          return null; // 跳过超过 14 天的旧内容
+        }
+      }
+    } catch {
+      // raw_json 读取失败 → 不阻断流程，继续
+    }
+  }
+
   let scenario = scenarioFromText(text);
   if (/^(BentoCloud|Microsoft Foundry)$/u.test(company)) {
     scenario = "模型部署和算力调用";
@@ -1035,7 +1056,10 @@ function autoSignalSpec(poolRef, section, index) {
     : type === "product_service"
       ? `${company} 发布 AI 能力，指向${scenario}`
       : `${company} 把 AI 用进${scenario}`;
-  const title = originalTitle || fallbackTitle;
+  // 如果原标题是英文，用中文 fallback 标题展示，原文保留为 sourceTitle
+  const isEnglishTitle = originalTitle && /^[\x20-\x7E][\x20-\x7E\s,.';!?():/-]+$/u.test(originalTitle);
+  const title = originalTitle && !isEnglishTitle ? originalTitle : (fallbackTitle || originalTitle || "");
+  const sourceTitle = isEnglishTitle ? originalTitle : "";
   const eventLine = type === "funding"
     ? `${company} 宣布${amount ? `${amount} ` : ""}融资，业务重点落在${fundingAngle}。`
     : type === "product_service"
@@ -1077,6 +1101,7 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     if (selectedPoolRefs.has(poolRef)) continue;
     if (!isEligibleAutoSignal(section)) continue;
     const spec = autoSignalSpec(poolRef, section, index);
+    if (!spec) continue; // 旧内容/日期不符合要求，跳过
     const clusterKey = signalClusterKey(spec, section);
     if (selectedClusterKeys.has(clusterKey)) continue;
     autoSpecs.push(spec);
@@ -1200,7 +1225,7 @@ signal_type: ${spec.type}
 title: "${spec.title}"
 date: ${date}
 status: published
-asset_level: frontstage
+${spec.sourceTitle ? `source_title: "${spec.sourceTitle}"\n` : ""}asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
 frontend_copy_gate: passed

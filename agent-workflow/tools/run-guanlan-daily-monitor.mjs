@@ -3636,7 +3636,14 @@ async function makeBuildersViewpointsFile(builderItems = []) {
     const title = item.title || item.url || "builder viewpoint";
     const body = String(item.summary || "").trim();
     const sourceParts = String(item.source || "follow-builders").split("/").map((part) => part.trim()).filter(Boolean);
-    const personName = sourceParts[sourceParts.length - 1] || "Unknown Builder";
+    const lastPart = sourceParts[sourceParts.length - 1] || "";
+    // 搜索引擎/回退通道/通用标签 → 不是人物名，设为 Unknown
+    const nonPersonKeywords = /^(anysearch|duckduckgo|ddg|keyword search|cloud fallback|fallback|google|bing|search|web)$/iu;
+    const personName = sourceParts.length <= 1 && sourceParts[0] === "follow-builders"
+      ? "Unknown Builder"
+      : nonPersonKeywords.test(lastPart)
+        ? "Unknown Builder"
+        : lastPart || "Unknown Builder";
     const cardFile = `${date}--frontier-opinion--${slugify(`${personName}-${title}`)}.md`;
     const cardPath = path.join(opinionCardsDir, cardFile);
     const isXSource = isXSourceItem(item);
