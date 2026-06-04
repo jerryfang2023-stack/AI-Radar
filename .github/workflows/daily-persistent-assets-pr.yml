@@ -2,8 +2,8 @@ name: WaveSight Daily Persistent Assets PR
 
 on:
   schedule:
-    # 08:00 Asia/Shanghai, every day. Aligns with the 08:30 editorial pipeline so fresh data is ready.
-    - cron: "0 0 * * *"
+    # 09:17 Asia/Shanghai, every day. Avoids GitHub's exact-hour scheduling peak.
+    - cron: "17 1 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -156,6 +156,7 @@ jobs:
           node --check agent-workflow/tools/build-topic-center-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs
+          node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
 
@@ -237,6 +238,7 @@ jobs:
         run: |
           set -o pipefail
           node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date="${RUN_DATE}"
+          node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
 
@@ -330,6 +332,7 @@ jobs:
           | Signal card files | ${signal_card_count} |
           | Opinion card files | ${opinion_card_count} |
           | Site content data | $(state_for "01-SiteV2/site/data/site-content.json") |
+          | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
 
           ## Persistence Rule
 
@@ -363,7 +366,8 @@ jobs:
               "opinion_cards_list": "$(state_for "$opinion_cards_file")",
               "signal_card_files": ${signal_card_count},
               "opinion_card_files": ${opinion_card_count},
-              "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")"
+              "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")",
+              "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")"
             }
           }
           EOF
@@ -393,6 +397,7 @@ jobs:
             01-SiteV2/knowledge/02-Opinion-Cards/${{ steps.run-date.outputs.date }}--frontier-opinion*.md
             01-SiteV2/site/data/site-content.json
             01-SiteV2/site/data/site-content.js
+            01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
             01-SiteV2/site/data/topic-center.json
@@ -448,6 +453,7 @@ jobs:
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/site/data/site-content.json"
             stage_if_exists "01-SiteV2/site/data/site-content.js"
+            stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
             stage_if_exists "01-SiteV2/site/data/topic-center.json"

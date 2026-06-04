@@ -1,29 +1,26 @@
 ---
 title: WaveSight Content
-date: 2026-05-22
+date: 2026-06-04
 status: active-content-pipeline
-type: v2-content-root
+type: v3-content-pipeline
 encoding: UTF-8
 ---
 
 # 01-SiteV2/content｜观澜 AI 内容生产与发布库
 
-本目录承载观澜 AI 的内容生产、文章发布和自动化运行产物。它不是长期判断资产主库；长期可复用资产写入 `01-SiteV2/knowledge/`。
+本目录承载观澜 AI V3 的每日生产过程：Raw 原文、Pool 候选、前台索引、观点索引、趋势报告和发布索引。它不是长期判断资产主库；长期可复用资产写入 `01-SiteV2/knowledge/`。
 
 当前卡片与资产结构以 `context/07-card-asset-stage-model.md` 为准：前台先跑商业信号流和前沿观点流，变化、场景、趋势先在后台候选区积累，成熟后再升级为短专题、趋势追踪或内参材料。
 
-## 1. 当前目录结构
+## 1. 当前保留结构
 
 | 目录 | 用途 | 主要线程 |
 |---|---|---|
-| `00-inbox/` | 手工补充线索、临时链接、待复核素材 | all |
 | `01-raw/` | Raw 广泛监测候选和本地原文档案 | guanlan-daily-monitor |
 | `01-raw/originals/` | 每日 Raw 原文档案 | guanlan-daily-monitor |
 | `02-pool/` | Pool 候选池、入池理由和淘汰风险 | guanlan-daily-monitor |
 | `03-daily-observation/` | 今日观察长文 | daily-observation-writer |
-| `04-business-signals/` | 商业信号流和成熟变化短专题 | asset-card-generator / site sync |
-| `04-business-signals/signals/` | 前台商业信号流索引，包含 product_service / funding / case 三类 | asset-card-generator |
-| `04-business-signals/change-topics/` | 成熟变化的前台短专题 | asset-card-generator / editorial |
+| `04-business-signals/signals/` | 前台商业信号流索引，包含 product_service / funding / case 三类 | asset-card-generator / site sync |
 | `05-frontier-opinions/` | 前沿观点流索引，保留原文或原文摘录与出处 | guanlan-daily-monitor / asset-card-generator |
 | `06-asset-candidates/` | 后台轻量候选，不直接前台展示 | asset-card-generator |
 | `06-asset-candidates/change/` | 变化候选 | asset-card-generator |
@@ -33,8 +30,8 @@ encoding: UTF-8
 | `09-business-briefs/` | 商业内参周期刊物 | brief-periodical-writer |
 | `10-publication-index/` | 今日观察、趋势报告、商业内参等发布索引 | all writers |
 | `11-databases/` | 可执行配置、关键词、主题和轻量数据库 | automation / data |
-| `12-distribution/` | 二创分发素材、标题、脚本、社媒版本 | brief-periodical-writer / manual |
-| `13-feedback/` | 用户问题、企业需求、项目线索、内容反馈 | manual / feedback loop |
+
+已清理的占位目录：`00-inbox/`、`07-change-topics/`、`12-distribution/`、`13-feedback/`。后续如确有稳定流程再重建，不保留空壳。
 
 ## 2. 自动化线程边界
 
@@ -117,7 +114,7 @@ agent-workflow/reports/
 content/01-raw               -> 证据底座，不直接进入 knowledge
 content/02-pool              -> 候选索引，不替代 Raw
 content/03-daily-observation -> 发布文章
-content/04-business-signals  -> 前台商业信号流和变化短专题
+content/04-business-signals  -> 前台商业信号流索引
 content/05-frontier-opinions -> 前台观点流索引
 content/06-asset-candidates  -> 后台变化 / 场景 / 趋势候选
 content/08-trend-reports     -> 趋势追踪报告

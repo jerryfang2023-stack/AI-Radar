@@ -190,6 +190,7 @@ const downstreamGroups = {
   site_data: [
     path.join(root, "01-SiteV2", "site", "data", "site-content.json"),
     path.join(root, "01-SiteV2", "site", "data", "site-content.js"),
+    path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json"),
   ].filter(exists),
 };
 
