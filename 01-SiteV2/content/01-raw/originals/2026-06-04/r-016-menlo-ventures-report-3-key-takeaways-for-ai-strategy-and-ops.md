@@ -1,0 +1,260 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-016
+title: "Menlo Ventures report: 3 key takeaways for AI strategy and ops"
+original_url: "https://www.linkedin.com/posts/mariakhmel_genai-aieconomics-inference-activity-7381368148408774657-gwX2"
+canonical_url: "https://linkedin.com/posts/mariakhmel_genai-aieconomics-inference-activity-7381368148408774657-gwX2"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-04T00:38:27.963Z
+language: mixed
+full_text_hash: f4828fae09ac2ea9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-016-menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-016-menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 90
+extractor_diagnostics: {"readability_score":90,"text_length":3483,"paragraph_count":36,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+has_full_text: true
+content_length: 3483
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f4828fae09ac2ea9","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 42b4c78f5221301a
+content_hash: f4828fae09ac2ea9
+semantic_hash: 43e476419f556c0e
+duplicate_of: ""
+first_seen_at: "2026-06-04T00:38:27.963Z"
+last_seen_at: 2026-06-04T00:38:27.963Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google"],"products":["Claude"],"people":[],"industries":["开发者工具","企业服务"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["3","5","1","$8.4B","25","74%","48%","49%"],"quotes":[]}
+evidence_seed: {"company_actions":["Do you think this shift toward inference-driven economics will change how startups plan their AI infrastructure from day one? Like · Reply · 3 ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup","My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.","Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"Do you think this shift toward inference-driven economics will change how startups plan their AI infrastructure from day one? Like · Reply · 3 ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"in/gSN5PxAC 1) Spend is surging and shifting to inference - Model API spend reached $8.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"4B in 1H25, more than doubling in six months.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Menlo Ventures report: 3 key takeaways for AI strategy and ops
+
+## clean_text
+
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd.in/gSN5PxAC
+1) Spend is surging and shifting to inference
+- Model API spend reached $8.4B in 1H25, more than doubling in six months.
+- Workloads moved to production: startups 74% inference (up from 48%), enterprises 49% (up from 29%).
+So what: forecast inference as a variable COGS line, cap reasoning variance, negotiate infra early.
+Price to workload, not seats.
+2) Market share reshuffle and the first breakout use case
+- Anthropic 32% enterprise usage, OpenAI 25%, Google 20%, Llama 9%, DeepSeek 1%.
+- Code generation is now a $1.9B ecosystem; RL with verifiers and agentic patterns are moving real application markets.
+Implication: design multi-model from the start, treat code gen as a beachhead for ROI, and make evaluation in production a default.
+3) Switching is rare; performance commands a premium!
+- Teams mostly upgrade within provider: 66% upgraded models in-provider; only 11% switched vendors.
+- Builders chase the frontier even as prices drop; e.g., within a month of Claude 4, Sonnet captured 45% of Anthropic users.
+Implication: build abstraction layers for rapid upgrades, protect SLOs during transitions, and align pricing to workload rather than seats.
+Open-source signal (brief): enterprise adoption flattened around 13% (down from 19%); performance gap to frontier models remains 9-12 months for many workloads. Use hybrid where control or data residency is decisive.
+#GenAI #AIEconomics #Inference #AIInfrastructure #AIProductStrategy #LLM #Strategy #BoardBrief #AIVenture
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd.in/gSN5PxAC
+1) Spend is surging and shifting to inference
+- Model API spend reached $8.4B in 1H25, more than doubling in six months.
+- Workloads moved to production: startups 74% inference (up from 48%), enterprises 49% (up from 29%).
+So what: forecast inference as a variable COGS line, cap reasoning variance, negotiate infra early.
+Price to workload, not seats.
+2) Market share reshuffle and the first breakout use case
+- Anthropic 32% enterprise usage, OpenAI 25%, Google 20%, Llama 9%, DeepSeek 1%.
+- Code generation is now a $1.9B ecosystem; RL with verifiers and agentic patterns are moving real application markets.
+Implication: design multi-model from the start, treat code gen as a beachhead for ROI, and make evaluation in production a default.
+3) Switching is rare; performance commands a premium!
+- Teams mostly upgrade within provider: 66% upgraded models in-provider; only 11% switched vendors.
+- Builders chase the frontier even as prices drop; e.g., within a month of Claude 4, Sonnet captured 45% of Anthropic users.
+Implication: build abstraction layers for rapid upgrades, protect SLOs during transitions, and align pricing to workload rather than seats.
+Open-source signal (brief): enterprise adoption flattened around 13% (down from 19%); performance gap to frontier models remains 9-12 months for many workloads. Use hybrid where control or data residency is decisive.
+#GenAI #AIEconomics #Inference #AIInfrastructure #AIProductStrategy #LLM #Strategy #BoardBrief #AIVenture
+
+## full_text
+
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd.in/gSN5PxAC
+1) Spend is surging and shifting to inference
+- Model API spend reached $8.4B in 1H25, more than doubling in six months.
+- Workloads moved to production: startups 74% inference (up from 48%), enterprises 49% (up from 29%).
+So what: forecast inference as a variable COGS line, cap reasoning variance, negotiate infra early.
+Price to workload, not seats.
+2) Market share reshuffle and the first breakout use case
+- Anthropic 32% enterprise usage, OpenAI 25%, Google 20%, Llama 9%, DeepSeek 1%.
+- Code generation is now a $1.9B ecosystem; RL with verifiers and agentic patterns are moving real application markets.
+Implication: design multi-model from the start, treat code gen as a beachhead for ROI, and make evaluation in production a default.
+3) Switching is rare; performance commands a premium!
+- Teams mostly upgrade within provider: 66% upgraded models in-provider; only 11% switched vendors.
+- Builders chase the frontier even as prices drop; e.g., within a month of Claude 4, Sonnet captured 45% of Anthropic users.
+Implication: build abstraction layers for rapid upgrades, protect SLOs during transitions, and align pricing to workload rather than seats.
+Open-source signal (brief): enterprise adoption flattened around 13% (down from 19%); performance gap to frontier models remains 9-12 months for many workloads. Use hybrid where control or data residency is decisive.
+#GenAI #AIEconomics #Inference #AIInfrastructure #AIProductStrategy #LLM #Strategy #BoardBrief #AIVenture
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd.in/gSN5PxAC
+1) Spend is surging and shifting to inference
+- Model API spend reached $8.4B in 1H25, more than doubling in six months.
+- Workloads moved to production: startups 74% inference (up from 48%), enterprises 49% (up from 29%).
+So what: forecast inference as a variable COGS line, cap reasoning variance, negotiate infra early.
+Price to workload, not seats.
+2) Market share reshuffle and the first breakout use case
+- Anthropic 32% enterprise usage, OpenAI 25%, Google 20%, Llama 9%, DeepSeek 1%.
+- Code generation is now a $1.9B ecosystem; RL with verifiers and agentic patterns are moving real application markets.
+Implication: design multi-model from the start, treat code gen as a beachhead for ROI, and make evaluation in production a default.
+3) Switching is rare; performance commands a premium!
+- Teams mostly upgrade within provider: 66% upgraded models in-provider; only 11% switched vendors.
+- Builders chase the frontier even as prices drop; e.g., within a month of Claude 4, Sonnet captured 45% of Anthropic users.
+Implication: build abstraction layers for rapid upgrades, protect SLOs during transitions, and align pricing to workload rather than seats.
+Open-source signal (brief): enterprise adoption flattened around 13% (down from 19%); performance gap to frontier models remains 9-12 months for many workloads. Use hybrid where control or data residency is decisive.
+#GenAI #AIEconomics #Inference #AIInfrastructure #AIProductStrategy #LLM #Strategy #BoardBrief #AIVenture
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 90
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":90,"text_length":3483,"paragraph_count":36,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   Do you think this shift toward inference-driven economics will change how startups plan their AI infrastructure from day one? Like · Reply · 3 ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd.
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   in/gSN5PxAC 1) Spend is surging and shifting to inference - Model API spend reached $8.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   4B in 1H25, more than doubling in six months.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google
+- products: Claude
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 3, 5, 1, $8.4B, 25, 74%, 48%, 49%
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Do you think this shift toward inference-driven economics will change how startups plan their AI infrastructure from day one? Like · Reply · 3 ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup / My top 3 takes from Menlo Ventures’ report and their impact on strategy and ops. / Report and authors: Tim Tully, Joff Redfern, Deedy Das, Derek Xiao → https://lnkd.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Do you think this shift toward inference-driven economics will change how startups plan their AI infrastructure from day one? Like · Reply · 3 ... / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

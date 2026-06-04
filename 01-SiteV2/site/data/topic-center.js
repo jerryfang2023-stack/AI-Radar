@@ -1,8 +1,8 @@
 window.WaveSightTopicCenter = {
   "meta": {
     "version": "V1.1.1",
-    "date": "2026-06-03",
-    "generatedAt": "2026-06-03T05:33:31.213Z",
+    "date": "2026-06-04",
+    "generatedAt": "2026-06-04T00:38:53.506Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
@@ -43,7 +43,7 @@ window.WaveSightTopicCenter = {
       "sourceDesc": "每日 Raw / Pool / Card 产物",
       "subSource": "今日观察",
       "baseId": "daily-observation",
-      "title": "Claude Code v2.1.161 发布",
+      "title": "Claude Code v2.1.162 发布",
       "type": "daily",
       "audience": "企业老板 / 业务负责人",
       "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
@@ -51,7 +51,7 @@ window.WaveSightTopicCenter = {
       "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
       "source": "今日观察",
       "url": "daily-detail.html",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "score": 96,
       "grade": "S",
       "priority": "S级选题",
@@ -65,7 +65,7 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "Claude Code v2.1.161 发布 改变的是哪一类企业判断",
+          "title": "Claude Code v2.1.162 发布 改变的是哪一类企业判断",
           "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
         },
         {
@@ -79,21 +79,21 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "raw_pool_pitch-sig-20260603-a02-2",
+      "id": "raw_pool_pitch-sig-20260604-a02-2",
       "sourceId": "raw_pool_pitch",
       "sourceName": "Raw-Pool-Pitch",
       "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "microsoft.ai",
-      "baseId": "SIG-20260603-A02",
-      "title": "微软推出 MAI-Thinking-1 模型",
+      "subSource": "theverge.com",
+      "baseId": "SIG-20260604-A02",
+      "title": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
       "type": "product-service",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
       "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "S 级来源，当前材料来自 microsoft.ai。",
-      "source": "microsoft.ai",
-      "url": "https://microsoft.ai/news/introducing-mai-thinking-1",
-      "date": "2026-06-03",
+      "evidence": "B 级来源，当前材料来自 theverge.com。",
+      "source": "theverge.com",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
+      "date": "2026-06-04",
       "score": 90,
       "grade": "A",
       "priority": "S级选题",
@@ -107,12 +107,12 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "微软推出 MAI-Thinking-1 模型 改变的是哪一类企业判断",
+          "title": "Google Gemini AI 智能体 Spark 上手体验 改变的是哪一类企业判断",
           "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
         },
         {
           "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 microsoft.ai。"
+          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 theverge.com。"
         },
         {
           "title": "能不能转成前台 Card",
@@ -121,21 +121,21 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "raw_pool_pitch-sig-20260603-a03-3",
+      "id": "raw_pool_pitch-sig-20260604-a03-3",
       "sourceId": "raw_pool_pitch",
       "sourceName": "Raw-Pool-Pitch",
       "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "simonwillison.net",
-      "baseId": "SIG-20260603-A03",
-      "title": "微软发布新MAI模型",
+      "subSource": "techcrunch.com",
+      "baseId": "SIG-20260604-A03",
+      "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
       "type": "case",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
       "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "B 级来源，当前材料来自 simonwillison.net。",
-      "source": "simonwillison.net",
-      "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models",
-      "date": "2026-06-03",
+      "evidence": "A 级来源，当前材料来自 techcrunch.com。",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+      "date": "2026-06-04",
       "score": 89,
       "grade": "A",
       "priority": "优先观察",
@@ -149,12 +149,12 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "微软发布新MAI模型 改变的是哪一类企业判断",
+          "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 改变的是哪一类企业判断",
           "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
         },
         {
           "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 simonwillison.net。"
+          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
         },
         {
           "title": "能不能转成前台 Card",
@@ -163,21 +163,21 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "raw_pool_pitch-sig-20260603-a04-4",
+      "id": "raw_pool_pitch-sig-20260604-a04-4",
       "sourceId": "raw_pool_pitch",
       "sourceName": "Raw-Pool-Pitch",
       "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "blogs.nvidia.com",
-      "baseId": "SIG-20260603-A04",
-      "title": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
-      "type": "case",
+      "subSource": "research.google",
+      "baseId": "SIG-20260604-A04",
+      "title": "洪水韧性新篇章：Google 开源水文建模框架",
+      "type": "product-service",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
       "core": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
       "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "S 级来源，当前材料来自 blogs.nvidia.com。",
-      "source": "blogs.nvidia.com",
-      "url": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw",
-      "date": "2026-06-03",
+      "evidence": "S 级来源，当前材料来自 research.google。",
+      "source": "research.google",
+      "url": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
+      "date": "2026-06-04",
       "score": 88,
       "grade": "A",
       "priority": "优先观察",
@@ -191,12 +191,12 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "NVIDIA 推出 NemoClaw 平台 改变的是哪一类企业判断",
+          "title": "洪水韧性新篇章 改变的是哪一类企业判断",
           "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
         },
         {
           "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 blogs.nvidia.com。"
+          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 research.google。"
         },
         {
           "title": "能不能转成前台 Card",
@@ -205,21 +205,21 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "raw_pool_pitch-sig-20260603-a05-5",
+      "id": "raw_pool_pitch-sig-20260604-a05-5",
       "sourceId": "raw_pool_pitch",
       "sourceName": "Raw-Pool-Pitch",
       "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "theverge.com",
-      "baseId": "SIG-20260603-A05",
-      "title": "微软 Build 2026：七项最重要的发布",
-      "type": "product-service",
+      "subSource": "techcrunch.com",
+      "baseId": "SIG-20260604-A05",
+      "title": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+      "type": "case",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
       "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "B 级来源，当前材料来自 theverge.com。",
-      "source": "theverge.com",
-      "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
-      "date": "2026-06-03",
+      "evidence": "A 级来源，当前材料来自 techcrunch.com。",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
+      "date": "2026-06-04",
       "score": 87,
       "grade": "A",
       "priority": "优先观察",
@@ -233,12 +233,12 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "微软 Build 2026 改变的是哪一类企业判断",
+          "title": "Here's the full list of 49 US AI s 改变的是哪一类企业判断",
           "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
         },
         {
           "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 theverge.com。"
+          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
         },
         {
           "title": "能不能转成前台 Card",
@@ -261,7 +261,7 @@ window.WaveSightTopicCenter = {
       "evidence": "Anthropic Engineering Blog",
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/engineering",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "score": 86,
       "grade": "A",
       "priority": "优先观察",
@@ -303,7 +303,7 @@ window.WaveSightTopicCenter = {
       "evidence": "Google AI",
       "source": "Google AI",
       "url": "https://blog.google/technology/ai/",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "score": 85,
       "grade": "B",
       "priority": "优先观察",
@@ -345,7 +345,7 @@ window.WaveSightTopicCenter = {
       "evidence": "DeepMind",
       "source": "DeepMind",
       "url": "https://deepmind.google/blog/",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "score": 85,
       "grade": "B",
       "priority": "优先观察",
@@ -373,68 +373,26 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "industry_chain-hn-48374466-4",
+      "id": "industry_chain-hn-48383056-4",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
       "sourceDesc": "arXiv / HN / 官方博客",
       "subSource": "Hacker News",
-      "baseId": "hn-48374466",
-      "title": "MAI-Code-1-Flash",
+      "baseId": "hn-48383056",
+      "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
       "type": "discussion",
       "audience": "AI 从业者 / 技术决策者",
-      "core": "https:&#x2F;&#x2F;microsoft.ai&#x2F;models&#x2F;mai-code-1-flash&#x2F; https:&#x2F;&#x2F;microsoft.ai&#x2F;pdf&#x2F;MAI-Code-1-Flash-Model-Card.PDF Launching seven new MAI models: https:&#x2F;&#x2F;microsoft.ai&#x2F;news",
+      "core": "https:&#x2F;&#x2F;www.bloomberg.com&#x2F;news&#x2F;articles&#x2F;2026-06-02&#x2F;uber-caps... ( https:&#x2F;&#x2F;archive.ph&#x2F;ZrwAy )",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 432 points · EvanZhouDev",
+      "evidence": "Hacker News · 350 points · pdyc",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48374466",
-      "date": "2026-06-02",
-      "score": 83,
+      "url": "https://news.ycombinator.com/item?id=48383056",
+      "date": "2026-06-03",
+      "score": 82,
       "grade": "B",
       "priority": "候选",
       "scoreBreakdown": {
         "conflict": 21,
-        "roleChange": 17,
-        "counterIntuit": 12,
-        "storyHook": 12,
-        "insight": 12,
-        "evidence": 8
-      },
-      "angles": [
-        {
-          "title": "从 MAI-Code-1-Flash 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 432 points · EvanZhouDev"
-        },
-        {
-          "title": "MAI-Code-1-Flash 会先影响谁的采购单",
-          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-        },
-        {
-          "title": "这不是技术升级，而是责任边界重画",
-          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
-        }
-      ]
-    },
-    {
-      "id": "industry_chain-hn-48377761-5",
-      "sourceId": "industry_chain",
-      "sourceName": "产业链分析",
-      "sourceDesc": "arXiv / HN / 官方博客",
-      "subSource": "Hacker News",
-      "baseId": "hn-48377761",
-      "title": "AI outperforms law professors in Stanford Law study",
-      "type": "discussion",
-      "audience": "AI 从业者 / 技术决策者",
-      "core": "https:&#x2F;&#x2F;law.stanford.edu&#x2F;wp-content&#x2F;uploads&#x2F;2026&#x2F;06&#x2F;salinas_...",
-      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 158 points · berlianta",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48377761",
-      "date": "2026-06-02",
-      "score": 78,
-      "grade": "B",
-      "priority": "候选",
-      "scoreBreakdown": {
-        "conflict": 20,
         "roleChange": 16,
         "counterIntuit": 12,
         "storyHook": 12,
@@ -443,11 +401,11 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "从 AI outperforms law professors in S 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 158 points · berlianta"
+          "title": "从 Uber's $1 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 350 points · pdyc"
         },
         {
-          "title": "AI outperforms law professors in S 会先影响谁的采购单",
+          "title": "Uber's $1 会先影响谁的采购单",
           "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
         },
         {
@@ -457,20 +415,104 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "builders-follow-builders-2061644307111796984-1",
+      "id": "industry_chain-hn-48392082-5",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Hacker News",
+      "baseId": "hn-48392082",
+      "title": "The ways we contain Claude across products",
+      "type": "discussion",
+      "audience": "AI 从业者 / 技术决策者",
+      "core": "The ways we contain Claude across products",
+      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+      "evidence": "Hacker News · 3 points · jbredeche",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48392082",
+      "date": "2026-06-04",
+      "score": 77,
+      "grade": "C",
+      "priority": "候选",
+      "scoreBreakdown": {
+        "conflict": 19,
+        "roleChange": 15,
+        "counterIntuit": 12,
+        "storyHook": 12,
+        "insight": 12,
+        "evidence": 8
+      },
+      "angles": [
+        {
+          "title": "从 The ways we contain Claude across  看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 3 points · jbredeche"
+        },
+        {
+          "title": "The ways we contain Claude across  会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
+      "id": "builders-follow-builders-2062057881424506950-1",
       "sourceId": "builders",
       "sourceName": "Builders 文章",
       "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
       "subSource": "Thibault Sottiaux",
-      "baseId": "follow-builders-2061644307111796984",
-      "title": "Thibault Sottiaux: Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D",
+      "baseId": "follow-builders-2062057881424506950",
+      "title": "Thibault Sottiaux: ChatGPT Whether you understand the name or not. It's here to stay. It's the past, the present, the fu",
       "type": "builder-opinion",
       "audience": "企业老板 / 产品负责人 / 开发者",
-      "core": "Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D",
+      "core": "ChatGPT Whether you understand the name or not. It's here to stay. It's the past, the present, the future. Synonym with AI, soon synonym with agents. Much to build.",
       "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-      "evidence": "Follow Builders · @thsottiaux · 964 engagement",
+      "evidence": "Follow Builders · @thsottiaux · 1429 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/thsottiaux/status/2061644307111796984",
+      "url": "https://x.com/thsottiaux/status/2062057881424506950",
+      "date": "2026-06-03",
+      "score": 94,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "Thibault Sottiaux 背后的开发者真实需求",
+          "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+        }
+      ]
+    },
+    {
+      "id": "builders-follow-builders-2061876999564791952-2",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
+      "subSource": "Thibault Sottiaux",
+      "baseId": "follow-builders-2061876999564791952",
+      "title": "Thibault Sottiaux: Tons of goodies for use of codex for day to day work. If you are on a business plan you can now host ",
+      "type": "builder-opinion",
+      "audience": "企业老板 / 产品负责人 / 开发者",
+      "core": "Tons of goodies for use of codex for day to day work. If you are on a business plan you can now host and share websites, we launched vastly improved plugins and skills for broad roles and you can give feedback to your agent through visual a",
+      "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
+      "evidence": "Follow Builders · @thsottiaux · 1740 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/thsottiaux/status/2061876999564791952",
       "date": "2026-06-02",
       "score": 94,
       "grade": "S",
@@ -499,21 +541,21 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "builders-follow-builders-2061545633560010826-2",
+      "id": "builders-follow-builders-2061907538741006796-3",
       "sourceId": "builders",
       "sourceName": "Builders 文章",
       "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
       "subSource": "Thariq",
-      "baseId": "follow-builders-2061545633560010826",
-      "title": "Thariq: been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done t",
+      "baseId": "follow-builders-2061907538741006796",
+      "title": "Thariq: Workflows are the biggest upgrade to Claude Code’s capabilities since skills and subagents. I dove deep into it ",
       "type": "builder-opinion",
       "audience": "企业老板 / 产品负责人 / 开发者",
-      "core": "been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done this is one of my favorites from Suzanne: https://t.co/nqIMcGXiKI",
+      "core": "Workflows are the biggest upgrade to Claude Code’s capabilities since skills and subagents. I dove deep into it with @sidbid to figure out best practices, examples and more. I’m particularly excited about the non-technical tasks it enables ",
       "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-      "evidence": "Follow Builders · @trq212 · 7380 engagement",
+      "evidence": "Follow Builders · @trq212 · 4170 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/trq212/status/2061545633560010826",
-      "date": "2026-06-01",
+      "url": "https://x.com/trq212/status/2061907538741006796",
+      "date": "2026-06-02",
       "score": 94,
       "grade": "S",
       "priority": "S级选题",
@@ -541,21 +583,63 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "builders-follow-builders-2061593874498531707-3",
+      "id": "builders-follow-builders-2061893093696434578-4",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
+      "subSource": "Amjad Masad",
+      "baseId": "follow-builders-2061893093696434578",
+      "title": "Amjad Masad: Excited to partner with @Microsoft to enable everyone in the enterprise to build and deploy safe & secure F",
+      "type": "builder-opinion",
+      "audience": "企业老板 / 产品负责人 / 开发者",
+      "core": "Excited to partner with @Microsoft to enable everyone in the enterprise to build and deploy safe & secure Fabric data apps. This is possible thanks to Microsoft's new Rayfin SDK. https://t.co/sAEKkXYFfy",
+      "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
+      "evidence": "Follow Builders · @amasad · 681 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/amasad/status/2061893093696434578",
+      "date": "2026-06-02",
+      "score": 94,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "Amjad Masad 背后的开发者真实需求",
+          "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+        }
+      ]
+    },
+    {
+      "id": "builders-follow-builders-2061934154732974376-5",
       "sourceId": "builders",
       "sourceName": "Builders 文章",
       "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
       "subSource": "Guillermo Rauch",
-      "baseId": "follow-builders-2061593874498531707",
-      "title": "Guillermo Rauch: MiniMax M3 is now the leading open model on the Next.js agent evaluations (https://t.co/SnZ54XoRWV). Ri",
+      "baseId": "follow-builders-2061934154732974376",
+      "title": "Guillermo Rauch: YES-CODE An entire category of software, \"no-code\", was built under the presumption that code is expens",
       "type": "builder-opinion",
       "audience": "企业老板 / 产品负责人 / 开发者",
-      "core": "MiniMax M3 is now the leading open model on the Next.js agent evaluations (https://t.co/SnZ54XoRWV). Right behind Opus & GPT5, but 10× cheaper (And 20× cheaper right now on ▲ AI Gateway!) https://t.co/z9ts1NZDyu",
+      "core": "YES-CODE An entire category of software, \"no-code\", was built under the presumption that code is expensive, difficult, and scarce. Coding agents have forever changed the equation. Code is now cheap, easy, and abundant. I remember @cramforce",
       "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-      "evidence": "Follow Builders · @rauchg · 703 engagement",
+      "evidence": "Follow Builders · @rauchg · 565 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/rauchg/status/2061593874498531707",
-      "date": "2026-06-01",
+      "url": "https://x.com/rauchg/status/2061934154732974376",
+      "date": "2026-06-02",
       "score": 94,
       "grade": "S",
       "priority": "S级选题",
@@ -583,22 +667,22 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
-      "id": "builders-follow-builders-2061415178298937365-4",
-      "sourceId": "builders",
-      "sourceName": "Builders 文章",
-      "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
-      "subSource": "Guillermo Rauch",
-      "baseId": "follow-builders-2061415178298937365",
-      "title": "Guillermo Rauch: Beautiful example of a full-stack agent on @vercel. Great learning material! https://t.co/jz1E7g4aSM",
-      "type": "builder-opinion",
-      "audience": "企业老板 / 产品负责人 / 开发者",
-      "core": "Beautiful example of a full-stack agent on @vercel. Great learning material! https://t.co/jz1E7g4aSM",
-      "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-      "evidence": "Follow Builders · @rauchg · 611 engagement",
+      "id": "viral_rewrite-follow-builders-2062025667852812583-1",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "HN 热门 / arXiv 热点",
+      "subSource": "Josh Woodward",
+      "baseId": "follow-builders-2062025667852812583",
+      "title": "Josh Woodward: ✅ Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/",
+      "type": "builder-viewpoint",
+      "audience": "企业老板 / 媒体编辑",
+      "core": "✅ Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/aF02kkUekW",
+      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+      "evidence": "Follow Builders · @joshwoodward · 272 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/rauchg/status/2061415178298937365",
-      "date": "2026-06-01",
-      "score": 94,
+      "url": "https://x.com/joshwoodward/status/2062025667852812583",
+      "date": "2026-06-03",
+      "score": 95,
       "grade": "S",
       "priority": "S级选题",
       "scoreBreakdown": {
@@ -607,81 +691,39 @@ window.WaveSightTopicCenter = {
         "counterIntuit": 14,
         "storyHook": 14,
         "insight": 14,
-        "evidence": 9
+        "evidence": 10
       },
       "angles": [
         {
-          "title": "Guillermo Rauch 背后的开发者真实需求",
-          "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+          "title": "Josh Woodward 为什么会刺中企业焦虑",
+          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
         },
         {
-          "title": "从演示走向日常工作，差的是哪一步",
-          "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+          "title": "把热闹改写成一个商业冲突",
+          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
         },
         {
-          "title": "企业读者该看哪些采用信号",
-          "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+          "title": "爆款改编前必须补哪条事实",
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @joshwoodward · 272 engagement"
         }
       ]
     },
     {
-      "id": "builders-follow-builders-2061662386680127688-5",
-      "sourceId": "builders",
-      "sourceName": "Builders 文章",
-      "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
-      "subSource": "Aaron Levie",
-      "baseId": "follow-builders-2061662386680127688",
-      "title": "Aaron Levie: As we enter the era of AI agents, one of the defining questions is how you develop competitive advantage wh",
-      "type": "builder-opinion",
-      "audience": "企业老板 / 产品负责人 / 开发者",
-      "core": "As we enter the era of AI agents, one of the defining questions is how you develop competitive advantage when your competitor has access to the same AI models and intelligence as you. The companies that are able to best harness their intern",
-      "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-      "evidence": "Follow Builders · @levie · 228 engagement",
-      "source": "Follow Builders",
-      "url": "https://x.com/levie/status/2061662386680127688",
-      "date": "2026-06-02",
-      "score": 94,
-      "grade": "S",
-      "priority": "S级选题",
-      "scoreBreakdown": {
-        "conflict": 24,
-        "roleChange": 19,
-        "counterIntuit": 14,
-        "storyHook": 14,
-        "insight": 14,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "Aaron Levie 背后的开发者真实需求",
-          "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
-        },
-        {
-          "title": "从演示走向日常工作，差的是哪一步",
-          "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
-        },
-        {
-          "title": "企业读者该看哪些采用信号",
-          "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
-        }
-      ]
-    },
-    {
-      "id": "viral_rewrite-follow-builders-2061657264508006738-1",
+      "id": "viral_rewrite-follow-builders-2062057881424506950-2",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
       "subSource": "Thibault Sottiaux",
-      "baseId": "follow-builders-2061657264508006738",
-      "title": "Thibault Sottiaux: You can just codex ... a farm https://t.co/pwmS7IvqbH",
+      "baseId": "follow-builders-2062057881424506950",
+      "title": "Thibault Sottiaux: ChatGPT Whether you understand the name or not. It's here to stay. It's the past, the present, the fu",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "You can just codex ... a farm https://t.co/pwmS7IvqbH",
+      "core": "ChatGPT Whether you understand the name or not. It's here to stay. It's the past, the present, the future. Synonym with AI, soon synonym with agents. Much to build.",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @thsottiaux · 663 engagement",
+      "evidence": "Follow Builders · @thsottiaux · 1429 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/thsottiaux/status/2061657264508006738",
-      "date": "2026-06-02",
+      "url": "https://x.com/thsottiaux/status/2062057881424506950",
+      "date": "2026-06-03",
       "score": 95,
       "grade": "S",
       "priority": "S级选题",
@@ -704,25 +746,25 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 663 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 1429 engagement"
         }
       ]
     },
     {
-      "id": "viral_rewrite-follow-builders-2061644307111796984-2",
+      "id": "viral_rewrite-follow-builders-2061876999564791952-3",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
       "subSource": "Thibault Sottiaux",
-      "baseId": "follow-builders-2061644307111796984",
-      "title": "Thibault Sottiaux: Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D",
+      "baseId": "follow-builders-2061876999564791952",
+      "title": "Thibault Sottiaux: Tons of goodies for use of codex for day to day work. If you are on a business plan you can now host ",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D",
+      "core": "Tons of goodies for use of codex for day to day work. If you are on a business plan you can now host and share websites, we launched vastly improved plugins and skills for broad roles and you can give feedback to your agent through visual a",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @thsottiaux · 964 engagement",
+      "evidence": "Follow Builders · @thsottiaux · 1740 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/thsottiaux/status/2061644307111796984",
+      "url": "https://x.com/thsottiaux/status/2061876999564791952",
       "date": "2026-06-02",
       "score": 95,
       "grade": "S",
@@ -746,110 +788,26 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 964 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 1740 engagement"
         }
       ]
     },
     {
-      "id": "viral_rewrite-follow-builders-2061572602888589807-3",
-      "sourceId": "viral_rewrite",
-      "sourceName": "爆款改编",
-      "sourceDesc": "HN 热门 / arXiv 热点",
-      "subSource": "Thibault Sottiaux",
-      "baseId": "follow-builders-2061572602888589807",
-      "title": "Thibault Sottiaux: Should we rename Codex to ChadGPT?",
-      "type": "builder-viewpoint",
-      "audience": "企业老板 / 媒体编辑",
-      "core": "Should we rename Codex to ChadGPT?",
-      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @thsottiaux · 4171 engagement",
-      "source": "Follow Builders",
-      "url": "https://x.com/thsottiaux/status/2061572602888589807",
-      "date": "2026-06-01",
-      "score": 95,
-      "grade": "S",
-      "priority": "S级选题",
-      "scoreBreakdown": {
-        "conflict": 24,
-        "roleChange": 19,
-        "counterIntuit": 14,
-        "storyHook": 14,
-        "insight": 14,
-        "evidence": 10
-      },
-      "angles": [
-        {
-          "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
-          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
-        },
-        {
-          "title": "把热闹改写成一个商业冲突",
-          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
-        },
-        {
-          "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 4171 engagement"
-        }
-      ]
-    },
-    {
-      "id": "viral_rewrite-follow-builders-2061586272305795355-4",
-      "sourceId": "viral_rewrite",
-      "sourceName": "爆款改编",
-      "sourceDesc": "HN 热门 / arXiv 热点",
-      "subSource": "Peter Yang",
-      "baseId": "follow-builders-2061586272305795355",
-      "title": "Peter Yang: my #1 most used skill lol https://t.co/7nAW7T3vDE",
-      "type": "builder-viewpoint",
-      "audience": "企业老板 / 媒体编辑",
-      "core": "my #1 most used skill lol https://t.co/7nAW7T3vDE",
-      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @petergyang · 248 engagement",
-      "source": "Follow Builders",
-      "url": "https://x.com/petergyang/status/2061586272305795355",
-      "date": "2026-06-01",
-      "score": 95,
-      "grade": "S",
-      "priority": "S级选题",
-      "scoreBreakdown": {
-        "conflict": 24,
-        "roleChange": 19,
-        "counterIntuit": 14,
-        "storyHook": 14,
-        "insight": 14,
-        "evidence": 10
-      },
-      "angles": [
-        {
-          "title": "Peter Yang 为什么会刺中企业焦虑",
-          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
-        },
-        {
-          "title": "把热闹改写成一个商业冲突",
-          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
-        },
-        {
-          "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @petergyang · 248 engagement"
-        }
-      ]
-    },
-    {
-      "id": "viral_rewrite-follow-builders-2061545635141361687-5",
+      "id": "viral_rewrite-follow-builders-2061907538741006796-4",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
       "sourceDesc": "HN 热门 / arXiv 热点",
       "subSource": "Thariq",
-      "baseId": "follow-builders-2061545635141361687",
-      "title": "Thariq: gist for the full prompt here: https://t.co/L0ffBeU1ua",
+      "baseId": "follow-builders-2061907538741006796",
+      "title": "Thariq: Workflows are the biggest upgrade to Claude Code’s capabilities since skills and subagents. I dove deep into it ",
       "type": "builder-viewpoint",
       "audience": "企业老板 / 媒体编辑",
-      "core": "gist for the full prompt here: https://t.co/L0ffBeU1ua",
+      "core": "Workflows are the biggest upgrade to Claude Code’s capabilities since skills and subagents. I dove deep into it with @sidbid to figure out best practices, examples and more. I’m particularly excited about the non-technical tasks it enables ",
       "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-      "evidence": "Follow Builders · @trq212 · 458 engagement",
+      "evidence": "Follow Builders · @trq212 · 4170 engagement",
       "source": "Follow Builders",
-      "url": "https://x.com/trq212/status/2061545635141361687",
-      "date": "2026-06-01",
+      "url": "https://x.com/trq212/status/2061907538741006796",
+      "date": "2026-06-02",
       "score": 95,
       "grade": "S",
       "priority": "S级选题",
@@ -872,7 +830,49 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "爆款改编前必须补哪条事实",
-          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @trq212 · 458 engagement"
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @trq212 · 4170 engagement"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-follow-builders-2061893093696434578-5",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "HN 热门 / arXiv 热点",
+      "subSource": "Amjad Masad",
+      "baseId": "follow-builders-2061893093696434578",
+      "title": "Amjad Masad: Excited to partner with @Microsoft to enable everyone in the enterprise to build and deploy safe & secure F",
+      "type": "builder-viewpoint",
+      "audience": "企业老板 / 媒体编辑",
+      "core": "Excited to partner with @Microsoft to enable everyone in the enterprise to build and deploy safe & secure Fabric data apps. This is possible thanks to Microsoft's new Rayfin SDK. https://t.co/sAEKkXYFfy",
+      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+      "evidence": "Follow Builders · @amasad · 681 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/amasad/status/2061893093696434578",
+      "date": "2026-06-02",
+      "score": 95,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 10
+      },
+      "angles": [
+        {
+          "title": "Amjad Masad 为什么会刺中企业焦虑",
+          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
+        },
+        {
+          "title": "把热闹改写成一个商业冲突",
+          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @amasad · 681 engagement"
         }
       ]
     }
@@ -886,7 +886,7 @@ window.WaveSightTopicCenter = {
         "sourceDesc": "每日 Raw / Pool / Card 产物",
         "subSource": "今日观察",
         "baseId": "daily-observation",
-        "title": "Claude Code v2.1.161 发布",
+        "title": "Claude Code v2.1.162 发布",
         "type": "daily",
         "audience": "企业老板 / 业务负责人",
         "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
@@ -894,7 +894,7 @@ window.WaveSightTopicCenter = {
         "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
         "source": "今日观察",
         "url": "daily-detail.html",
-        "date": "2026-06-03",
+        "date": "2026-06-04",
         "score": 96,
         "grade": "S",
         "priority": "S级选题",
@@ -908,7 +908,7 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "Claude Code v2.1.161 发布 改变的是哪一类企业判断",
+            "title": "Claude Code v2.1.162 发布 改变的是哪一类企业判断",
             "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
           },
           {
@@ -922,21 +922,21 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "raw_pool_pitch-sig-20260603-a02-2",
+        "id": "raw_pool_pitch-sig-20260604-a02-2",
         "sourceId": "raw_pool_pitch",
         "sourceName": "Raw-Pool-Pitch",
         "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "microsoft.ai",
-        "baseId": "SIG-20260603-A02",
-        "title": "微软推出 MAI-Thinking-1 模型",
+        "subSource": "theverge.com",
+        "baseId": "SIG-20260604-A02",
+        "title": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
         "type": "product-service",
         "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-        "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "S 级来源，当前材料来自 microsoft.ai。",
-        "source": "microsoft.ai",
-        "url": "https://microsoft.ai/news/introducing-mai-thinking-1",
-        "date": "2026-06-03",
+        "evidence": "B 级来源，当前材料来自 theverge.com。",
+        "source": "theverge.com",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
+        "date": "2026-06-04",
         "score": 90,
         "grade": "A",
         "priority": "S级选题",
@@ -950,12 +950,12 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "微软推出 MAI-Thinking-1 模型 改变的是哪一类企业判断",
+            "title": "Google Gemini AI 智能体 Spark 上手体验 改变的是哪一类企业判断",
             "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
           },
           {
             "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 microsoft.ai。"
+            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 theverge.com。"
           },
           {
             "title": "能不能转成前台 Card",
@@ -964,21 +964,21 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "raw_pool_pitch-sig-20260603-a03-3",
+        "id": "raw_pool_pitch-sig-20260604-a03-3",
         "sourceId": "raw_pool_pitch",
         "sourceName": "Raw-Pool-Pitch",
         "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "simonwillison.net",
-        "baseId": "SIG-20260603-A03",
-        "title": "微软发布新MAI模型",
+        "subSource": "techcrunch.com",
+        "baseId": "SIG-20260604-A03",
+        "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
         "type": "case",
         "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-        "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "B 级来源，当前材料来自 simonwillison.net。",
-        "source": "simonwillison.net",
-        "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models",
-        "date": "2026-06-03",
+        "evidence": "A 级来源，当前材料来自 techcrunch.com。",
+        "source": "techcrunch.com",
+        "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+        "date": "2026-06-04",
         "score": 89,
         "grade": "A",
         "priority": "优先观察",
@@ -992,12 +992,12 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "微软发布新MAI模型 改变的是哪一类企业判断",
+            "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 改变的是哪一类企业判断",
             "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
           },
           {
             "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 simonwillison.net。"
+            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
           },
           {
             "title": "能不能转成前台 Card",
@@ -1006,21 +1006,21 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "raw_pool_pitch-sig-20260603-a04-4",
+        "id": "raw_pool_pitch-sig-20260604-a04-4",
         "sourceId": "raw_pool_pitch",
         "sourceName": "Raw-Pool-Pitch",
         "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "blogs.nvidia.com",
-        "baseId": "SIG-20260603-A04",
-        "title": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
-        "type": "case",
+        "subSource": "research.google",
+        "baseId": "SIG-20260604-A04",
+        "title": "洪水韧性新篇章：Google 开源水文建模框架",
+        "type": "product-service",
         "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
         "core": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "S 级来源，当前材料来自 blogs.nvidia.com。",
-        "source": "blogs.nvidia.com",
-        "url": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw",
-        "date": "2026-06-03",
+        "evidence": "S 级来源，当前材料来自 research.google。",
+        "source": "research.google",
+        "url": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
+        "date": "2026-06-04",
         "score": 88,
         "grade": "A",
         "priority": "优先观察",
@@ -1034,12 +1034,12 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "NVIDIA 推出 NemoClaw 平台 改变的是哪一类企业判断",
+            "title": "洪水韧性新篇章 改变的是哪一类企业判断",
             "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
           },
           {
             "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 blogs.nvidia.com。"
+            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 research.google。"
           },
           {
             "title": "能不能转成前台 Card",
@@ -1048,21 +1048,21 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "raw_pool_pitch-sig-20260603-a05-5",
+        "id": "raw_pool_pitch-sig-20260604-a05-5",
         "sourceId": "raw_pool_pitch",
         "sourceName": "Raw-Pool-Pitch",
         "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "theverge.com",
-        "baseId": "SIG-20260603-A05",
-        "title": "微软 Build 2026：七项最重要的发布",
-        "type": "product-service",
+        "subSource": "techcrunch.com",
+        "baseId": "SIG-20260604-A05",
+        "title": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+        "type": "case",
         "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-        "core": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "B 级来源，当前材料来自 theverge.com。",
-        "source": "theverge.com",
-        "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
-        "date": "2026-06-03",
+        "evidence": "A 级来源，当前材料来自 techcrunch.com。",
+        "source": "techcrunch.com",
+        "url": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
+        "date": "2026-06-04",
         "score": 87,
         "grade": "A",
         "priority": "优先观察",
@@ -1076,12 +1076,12 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "微软 Build 2026 改变的是哪一类企业判断",
+            "title": "Here's the full list of 49 US AI s 改变的是哪一类企业判断",
             "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
           },
           {
             "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 theverge.com。"
+            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
           },
           {
             "title": "能不能转成前台 Card",
@@ -1104,7 +1104,7 @@ window.WaveSightTopicCenter = {
         "evidence": "Anthropic Engineering Blog",
         "source": "Anthropic Blog",
         "url": "https://www.anthropic.com/engineering",
-        "date": "2026-06-03",
+        "date": "2026-06-04",
         "score": 86,
         "grade": "A",
         "priority": "优先观察",
@@ -1146,7 +1146,7 @@ window.WaveSightTopicCenter = {
         "evidence": "Google AI",
         "source": "Google AI",
         "url": "https://blog.google/technology/ai/",
-        "date": "2026-06-03",
+        "date": "2026-06-04",
         "score": 85,
         "grade": "B",
         "priority": "优先观察",
@@ -1188,7 +1188,7 @@ window.WaveSightTopicCenter = {
         "evidence": "DeepMind",
         "source": "DeepMind",
         "url": "https://deepmind.google/blog/",
-        "date": "2026-06-03",
+        "date": "2026-06-04",
         "score": 85,
         "grade": "B",
         "priority": "优先观察",
@@ -1216,27 +1216,27 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "industry_chain-hn-48374466-4",
+        "id": "industry_chain-hn-48383056-4",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
         "sourceDesc": "arXiv / HN / 官方博客",
         "subSource": "Hacker News",
-        "baseId": "hn-48374466",
-        "title": "MAI-Code-1-Flash",
+        "baseId": "hn-48383056",
+        "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
         "type": "discussion",
         "audience": "AI 从业者 / 技术决策者",
-        "core": "https:&#x2F;&#x2F;microsoft.ai&#x2F;models&#x2F;mai-code-1-flash&#x2F; https:&#x2F;&#x2F;microsoft.ai&#x2F;pdf&#x2F;MAI-Code-1-Flash-Model-Card.PDF Launching seven new MAI models: https:&#x2F;&#x2F;microsoft.ai&#x2F;news",
+        "core": "https:&#x2F;&#x2F;www.bloomberg.com&#x2F;news&#x2F;articles&#x2F;2026-06-02&#x2F;uber-caps... ( https:&#x2F;&#x2F;archive.ph&#x2F;ZrwAy )",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 432 points · EvanZhouDev",
+        "evidence": "Hacker News · 350 points · pdyc",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=48374466",
-        "date": "2026-06-02",
-        "score": 83,
+        "url": "https://news.ycombinator.com/item?id=48383056",
+        "date": "2026-06-03",
+        "score": 82,
         "grade": "B",
         "priority": "候选",
         "scoreBreakdown": {
           "conflict": 21,
-          "roleChange": 17,
+          "roleChange": 16,
           "counterIntuit": 12,
           "storyHook": 12,
           "insight": 12,
@@ -1244,11 +1244,11 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "从 MAI-Code-1-Flash 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 432 points · EvanZhouDev"
+            "title": "从 Uber's $1 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 350 points · pdyc"
           },
           {
-            "title": "MAI-Code-1-Flash 会先影响谁的采购单",
+            "title": "Uber's $1 会先影响谁的采购单",
             "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
           },
           {
@@ -1258,27 +1258,27 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "industry_chain-hn-48377761-5",
+        "id": "industry_chain-hn-48392082-5",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
         "sourceDesc": "arXiv / HN / 官方博客",
         "subSource": "Hacker News",
-        "baseId": "hn-48377761",
-        "title": "AI outperforms law professors in Stanford Law study",
+        "baseId": "hn-48392082",
+        "title": "The ways we contain Claude across products",
         "type": "discussion",
         "audience": "AI 从业者 / 技术决策者",
-        "core": "https:&#x2F;&#x2F;law.stanford.edu&#x2F;wp-content&#x2F;uploads&#x2F;2026&#x2F;06&#x2F;salinas_...",
+        "core": "The ways we contain Claude across products",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 158 points · berlianta",
+        "evidence": "Hacker News · 3 points · jbredeche",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=48377761",
-        "date": "2026-06-02",
-        "score": 78,
-        "grade": "B",
+        "url": "https://news.ycombinator.com/item?id=48392082",
+        "date": "2026-06-04",
+        "score": 77,
+        "grade": "C",
         "priority": "候选",
         "scoreBreakdown": {
-          "conflict": 20,
-          "roleChange": 16,
+          "conflict": 19,
+          "roleChange": 15,
           "counterIntuit": 12,
           "storyHook": 12,
           "insight": 12,
@@ -1286,11 +1286,11 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "从 AI outperforms law professors in S 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 158 points · berlianta"
+            "title": "从 The ways we contain Claude across  看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 3 points · jbredeche"
           },
           {
-            "title": "AI outperforms law professors in S 会先影响谁的采购单",
+            "title": "The ways we contain Claude across  会先影响谁的采购单",
             "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
           },
           {
@@ -1302,21 +1302,21 @@ window.WaveSightTopicCenter = {
     ],
     "viewpoints": [
       {
-        "id": "viewpoint-thibault-sottiaux-1",
+        "id": "viewpoint-josh-woodward-1",
         "sourceId": "viral_rewrite",
         "sourceName": "爆款改编",
         "sourceDesc": "HN 热门 / arXiv 热点",
-        "subSource": "Thibault Sottiaux",
-        "baseId": "follow-builders-2061657264508006738",
-        "title": "Thibault Sottiaux：You can just codex ... a farm https://t.co/pwmS7IvqbH / Should we rename Codex to ChadGPT? / Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D",
+        "subSource": "Josh Woodward",
+        "baseId": "follow-builders-2062025667852812583",
+        "title": "Josh Woodward: ✅ Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/",
         "type": "builder-viewpoint",
         "audience": "企业老板 / 媒体编辑",
-        "core": "You can just codex ... a farm https://t.co/pwmS7IvqbH",
+        "core": "✅ Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/aF02kkUekW",
         "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-        "evidence": "Follow Builders · @thsottiaux · 663 engagement",
+        "evidence": "Follow Builders · @joshwoodward · 272 engagement",
         "source": "Follow Builders",
-        "url": "https://x.com/thsottiaux/status/2061657264508006738",
-        "date": "2026-06-02",
+        "url": "https://x.com/joshwoodward/status/2062025667852812583",
+        "date": "2026-06-03",
         "score": 95,
         "grade": "S",
         "priority": "S级选题",
@@ -1330,7 +1330,7 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
+            "title": "Josh Woodward 为什么会刺中企业焦虑",
             "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
           },
           {
@@ -1339,107 +1339,105 @@ window.WaveSightTopicCenter = {
           },
           {
             "title": "爆款改编前必须补哪条事实",
-            "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 663 engagement"
-          }
-        ],
-        "mergedCount": 3,
-        "originalUrls": [
-          "https://x.com/thsottiaux/status/2061657264508006738",
-          "https://x.com/thsottiaux/status/2061572602888589807",
-          "https://x.com/thsottiaux/status/2061644307111796984"
-        ]
-      },
-      {
-        "id": "viewpoint-thariq-2",
-        "sourceId": "viral_rewrite",
-        "sourceName": "爆款改编",
-        "sourceDesc": "HN 热门 / arXiv 热点",
-        "subSource": "Thariq",
-        "baseId": "follow-builders-2061545635141361687",
-        "title": "Thariq：gist for the full prompt here: https://t.co/L0ffBeU1ua / been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done t",
-        "type": "builder-viewpoint",
-        "audience": "企业老板 / 媒体编辑",
-        "core": "gist for the full prompt here: https://t.co/L0ffBeU1ua",
-        "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-        "evidence": "Follow Builders · @trq212 · 458 engagement",
-        "source": "Follow Builders",
-        "url": "https://x.com/trq212/status/2061545635141361687",
-        "date": "2026-06-01",
-        "score": 95,
-        "grade": "S",
-        "priority": "S级选题",
-        "scoreBreakdown": {
-          "conflict": 24,
-          "roleChange": 19,
-          "counterIntuit": 14,
-          "storyHook": 14,
-          "insight": 14,
-          "evidence": 10
-        },
-        "angles": [
-          {
-            "title": "Thariq 为什么会刺中企业焦虑",
-            "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
-          },
-          {
-            "title": "把热闹改写成一个商业冲突",
-            "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
-          },
-          {
-            "title": "爆款改编前必须补哪条事实",
-            "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @trq212 · 458 engagement"
-          }
-        ],
-        "mergedCount": 2,
-        "originalUrls": [
-          "https://x.com/trq212/status/2061545635141361687",
-          "https://x.com/trq212/status/2061545633560010826"
-        ]
-      },
-      {
-        "id": "viewpoint-peter-yang-3",
-        "sourceId": "viral_rewrite",
-        "sourceName": "爆款改编",
-        "sourceDesc": "HN 热门 / arXiv 热点",
-        "subSource": "Peter Yang",
-        "baseId": "follow-builders-2061586272305795355",
-        "title": "Peter Yang: my #1 most used skill lol https://t.co/7nAW7T3vDE",
-        "type": "builder-viewpoint",
-        "audience": "企业老板 / 媒体编辑",
-        "core": "my #1 most used skill lol https://t.co/7nAW7T3vDE",
-        "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-        "evidence": "Follow Builders · @petergyang · 248 engagement",
-        "source": "Follow Builders",
-        "url": "https://x.com/petergyang/status/2061586272305795355",
-        "date": "2026-06-01",
-        "score": 95,
-        "grade": "S",
-        "priority": "S级选题",
-        "scoreBreakdown": {
-          "conflict": 24,
-          "roleChange": 19,
-          "counterIntuit": 14,
-          "storyHook": 14,
-          "insight": 14,
-          "evidence": 10
-        },
-        "angles": [
-          {
-            "title": "Peter Yang 为什么会刺中企业焦虑",
-            "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
-          },
-          {
-            "title": "把热闹改写成一个商业冲突",
-            "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
-          },
-          {
-            "title": "爆款改编前必须补哪条事实",
-            "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @petergyang · 248 engagement"
+            "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @joshwoodward · 272 engagement"
           }
         ],
         "mergedCount": 1,
         "originalUrls": [
-          "https://x.com/petergyang/status/2061586272305795355"
+          "https://x.com/joshwoodward/status/2062025667852812583"
+        ]
+      },
+      {
+        "id": "viewpoint-thibault-sottiaux-2",
+        "sourceId": "builders",
+        "sourceName": "Builders 文章",
+        "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
+        "subSource": "Thibault Sottiaux",
+        "baseId": "follow-builders-2062057881424506950",
+        "title": "Thibault Sottiaux：ChatGPT Whether you understand the name or not. It's here to stay. It's the past, the present, the fu / Tons of goodies for use of codex for day to day work. If you are on a business plan you can now host ",
+        "type": "builder-opinion",
+        "audience": "企业老板 / 产品负责人 / 开发者",
+        "core": "ChatGPT Whether you understand the name or not. It's here to stay. It's the past, the present, the future. Synonym with AI, soon synonym with agents. Much to build.",
+        "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
+        "evidence": "Follow Builders · @thsottiaux · 1429 engagement",
+        "source": "Follow Builders",
+        "url": "https://x.com/thsottiaux/status/2062057881424506950",
+        "date": "2026-06-03",
+        "score": 94,
+        "grade": "S",
+        "priority": "S级选题",
+        "scoreBreakdown": {
+          "conflict": 24,
+          "roleChange": 19,
+          "counterIntuit": 14,
+          "storyHook": 14,
+          "insight": 14,
+          "evidence": 9
+        },
+        "angles": [
+          {
+            "title": "Thibault Sottiaux 背后的开发者真实需求",
+            "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+          },
+          {
+            "title": "从演示走向日常工作，差的是哪一步",
+            "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+          },
+          {
+            "title": "企业读者该看哪些采用信号",
+            "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+          }
+        ],
+        "mergedCount": 2,
+        "originalUrls": [
+          "https://x.com/thsottiaux/status/2062057881424506950",
+          "https://x.com/thsottiaux/status/2061876999564791952"
+        ]
+      },
+      {
+        "id": "viewpoint-thariq-3",
+        "sourceId": "builders",
+        "sourceName": "Builders 文章",
+        "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
+        "subSource": "Thariq",
+        "baseId": "follow-builders-2061907538741006796",
+        "title": "Thariq: Workflows are the biggest upgrade to Claude Code’s capabilities since skills and subagents. I dove deep into it ",
+        "type": "builder-opinion",
+        "audience": "企业老板 / 产品负责人 / 开发者",
+        "core": "Workflows are the biggest upgrade to Claude Code’s capabilities since skills and subagents. I dove deep into it with @sidbid to figure out best practices, examples and more. I’m particularly excited about the non-technical tasks it enables ",
+        "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
+        "evidence": "Follow Builders · @trq212 · 4170 engagement",
+        "source": "Follow Builders",
+        "url": "https://x.com/trq212/status/2061907538741006796",
+        "date": "2026-06-02",
+        "score": 94,
+        "grade": "S",
+        "priority": "S级选题",
+        "scoreBreakdown": {
+          "conflict": 24,
+          "roleChange": 19,
+          "counterIntuit": 14,
+          "storyHook": 14,
+          "insight": 14,
+          "evidence": 9
+        },
+        "angles": [
+          {
+            "title": "Thariq 背后的开发者真实需求",
+            "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+          },
+          {
+            "title": "从演示走向日常工作，差的是哪一步",
+            "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+          },
+          {
+            "title": "企业读者该看哪些采用信号",
+            "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+          }
+        ],
+        "mergedCount": 1,
+        "originalUrls": [
+          "https://x.com/trq212/status/2061907538741006796"
         ]
       }
     ]
