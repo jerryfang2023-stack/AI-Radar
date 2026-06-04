@@ -1,10 +1,10 @@
 window.WaveSightContent = {
   "meta": {
-    "date": "2026.06.03",
-    "sourceLabel": "Generated from 01-SiteV2/content (9 dates)",
+    "date": "2026.06.04",
+    "sourceLabel": "Generated from 01-SiteV2/content (10 dates)",
     "brand": "观澜AI",
     "version": "V2.2.1",
-    "generatedAt": "2026-06-03T07:11:13.000Z",
+    "generatedAt": "2026-06-04T00:38:44.507Z",
     "contentRoot": "01-SiteV2/content"
   },
   "tagTaxonomy": [
@@ -615,13 +615,23 @@ window.WaveSightContent = {
     }
   ],
   "contentIndex": {
-    "activeDate": "2026-06-03",
+    "activeDate": "2026-06-04",
     "dates": [
+      {
+        "date": "2026-06-04",
+        "label": "2026.06.04",
+        "title": "Claude Code v2.1.162 发布",
+        "dek": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "signalCount": 12,
+        "pointCount": 2,
+        "trendCount": 0,
+        "hasTrendReport": false
+      },
       {
         "date": "2026-06-03",
         "label": "2026.06.03",
         "title": "Claude Code v2.1.161 发布",
-        "dek": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "dek": "> 企业 AI 从能力试点进入治理、交付和可运营阶段\n\nAnthropic 发布了 Claude Code v2.1.161，这是 Claude Code 自推出以来最重要的企业级更新。新版本不再将自己定位为 AI 编程助手，而是作为一个可以参与企业完整开发流程的智能体协作平台——从需求分析、代码生成、代码审查到部署监控，Claude Code 试图嵌入软件交付的每一个环节。",
         "signalCount": 9,
         "pointCount": 8,
         "trendCount": 0,
@@ -13150,10 +13160,1806 @@ window.WaveSightContent = {
             ]
           }
         ]
+      },
+      {
+        "id": "SIG-20260604-A01",
+        "slug": "claude-code-v2-1-162-发布",
+        "title": "Claude Code v2.1.162 发布",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
+        "sourceTitle": "Claude Code v2.1.162 发布",
+        "sources": "原文出处：github.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--claude-code-v2-1-162-auto-signal-p-002.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A01"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=claude-code-v2-1-162-发布",
+        "frontend": {
+          "displayTitle": "Claude Code v2.1.162 发布",
+          "sourceTitle": "Claude Code v2.1.162 发布",
+          "eventLine": "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "S 级来源，当前材料来自 github.com。",
+          "sourceLinks": [
+            {
+              "label": "github.com",
+              "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
+              "level": "S",
+              "note": "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A02",
+        "slug": "google-gemini-ai-智能体-spark-上手体验-高效得令人不安-但也暴露了空洞的承诺",
+        "title": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "Theverge 发布新的 AI 能力，面向企业智能体协作流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
+        "sourceTitle": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
+        "sources": "原文出处：theverge.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--theverge-auto-signal-p-003.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A02"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Theverge 发布新的 AI 能力，面向企业智能体协作流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=google-gemini-ai-智能体-spark-上手体验-高效得令人不安-但也暴露了空洞的承诺",
+        "frontend": {
+          "displayTitle": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
+          "sourceTitle": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
+          "eventLine": "Theverge 发布新的 AI 能力，面向企业智能体协作流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "B 级来源，当前材料来自 theverge.com。",
+          "sourceLinks": [
+            {
+              "label": "theverge.com",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
+              "level": "B",
+              "note": "Theverge 发布新的 AI 能力，面向企业智能体协作流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A03",
+        "slug": "alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨",
+        "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+        "date": "2026-06-04",
+        "signalType": "case",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+        "sourceTitle": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+        "sources": "原文出处：techcrunch.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--ceo-sundar-pichai-auto-signal-p-004.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A03"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨",
+        "frontend": {
+          "displayTitle": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+          "sourceTitle": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+          "eventLine": "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "A 级来源，当前材料来自 techcrunch.com。",
+          "sourceLinks": [
+            {
+              "label": "techcrunch.com",
+              "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+              "level": "A",
+              "note": "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A04",
+        "slug": "洪水韧性新篇章-google-开源水文建模框架",
+        "title": "洪水韧性新篇章：Google 开源水文建模框架",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
+        "sourceTitle": "洪水韧性新篇章：Google 开源水文建模框架",
+        "sources": "原文出处：research.google",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--google-auto-signal-p-005.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A04"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=洪水韧性新篇章-google-开源水文建模框架",
+        "frontend": {
+          "displayTitle": "洪水韧性新篇章：Google 开源水文建模框架",
+          "sourceTitle": "洪水韧性新篇章：Google 开源水文建模框架",
+          "eventLine": "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "S 级来源，当前材料来自 research.google。",
+          "sourceLinks": [
+            {
+              "label": "research.google",
+              "url": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
+              "level": "S",
+              "note": "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-coding",
+            "name": "AI Coding",
+            "group": "track",
+            "aliases": [
+              "AI-Coding",
+              "AI 编程"
+            ]
+          },
+          {
+            "id": "function-engineering",
+            "name": "工程研发",
+            "group": "function",
+            "aliases": [
+              "开发",
+              "仿真",
+              "工程"
+            ]
+          },
+          {
+            "id": "customer-developer-team",
+            "name": "开发团队",
+            "group": "customer",
+            "aliases": [
+              "工程团队"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A05",
+        "slug": "here-s-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or",
+        "title": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+        "date": "2026-06-04",
+        "signalType": "case",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "OpenAI 把 AI 用进销售和收入团队流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
+        "sourceTitle": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+        "sources": "原文出处：techcrunch.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--openai-auto-signal-p-006.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A05"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "OpenAI 把 AI 用进销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=here-s-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or",
+        "frontend": {
+          "displayTitle": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+          "sourceTitle": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+          "eventLine": "OpenAI 把 AI 用进销售和收入团队流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "A 级来源，当前材料来自 techcrunch.com。",
+          "sourceLinks": [
+            {
+              "label": "techcrunch.com",
+              "url": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
+              "level": "A",
+              "note": "OpenAI 把 AI 用进销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A06",
+        "slug": "vonage-launches-industry-specific-ai-agents-for-healthcare",
+        "title": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "Vonage 发布新的 AI 能力，面向销售和收入团队流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202605120800PR_NEWS_USPRX____NY56761-1",
+        "sourceTitle": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+        "sources": "原文出处：markets.ft.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--vonage-auto-signal-p-008.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A06"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Vonage 发布新的 AI 能力，面向销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=vonage-launches-industry-specific-ai-agents-for-healthcare",
+        "frontend": {
+          "displayTitle": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+          "sourceTitle": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+          "eventLine": "Vonage 发布新的 AI 能力，面向销售和收入团队流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "A 级来源，当前材料来自 markets.ft.com。",
+          "sourceLinks": [
+            {
+              "label": "markets.ft.com",
+              "url": "https://markets.ft.com/data/announce/detail?dockey=600-202605120800PR_NEWS_USPRX____NY56761-1",
+              "level": "A",
+              "note": "Vonage 发布新的 AI 能力，面向销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A07",
+        "slug": "2025-the-state-of-generative-ai-in-the-enterprise",
+        "title": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "2025 发布新的 AI 能力，面向销售和收入团队流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+        "sourceTitle": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+        "sources": "原文出处：menlovc.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--2025-auto-signal-p-009.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A07"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "2025 发布新的 AI 能力，面向销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=2025-the-state-of-generative-ai-in-the-enterprise",
+        "frontend": {
+          "displayTitle": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+          "sourceTitle": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+          "eventLine": "2025 发布新的 AI 能力，面向销售和收入团队流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "B 级来源，当前材料来自 menlovc.com。",
+          "sourceLinks": [
+            {
+              "label": "menlovc.com",
+              "url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+              "level": "B",
+              "note": "2025 发布新的 AI 能力，面向销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A08",
+        "slug": "the-200-billion-ai-opportunity-in-tech-services",
+        "title": "The $200 Billion AI Opportunity in Tech Services | BCG",
+        "date": "2026-06-04",
+        "signalType": "case",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "Bcg 把 AI 用进销售和收入团队流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
+        "sourceTitle": "The $200 Billion AI Opportunity in Tech Services | BCG",
+        "sources": "原文出处：bcg.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--bcg-auto-signal-p-010.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A08"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Bcg 把 AI 用进销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=the-200-billion-ai-opportunity-in-tech-services",
+        "frontend": {
+          "displayTitle": "The $200 Billion AI Opportunity in Tech Services | BCG",
+          "sourceTitle": "The $200 Billion AI Opportunity in Tech Services | BCG",
+          "eventLine": "Bcg 把 AI 用进销售和收入团队流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "B 级来源，当前材料来自 bcg.com。",
+          "sourceLinks": [
+            {
+              "label": "bcg.com",
+              "url": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
+              "level": "B",
+              "note": "Bcg 把 AI 用进销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A09",
+        "slug": "ai-procurement-guide-2026-enterprise-contracts-pricing",
+        "title": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://atonementlicensing.com/blog/ai-procurement-guide/",
+        "sourceTitle": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+        "sources": "原文出处：atonementlicensing.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--ai-procurement-guide-2026-auto-signal-p-011.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A09"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=ai-procurement-guide-2026-enterprise-contracts-pricing",
+        "frontend": {
+          "displayTitle": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+          "sourceTitle": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+          "eventLine": "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "B 级来源，当前材料来自 atonementlicensing.com。",
+          "sourceLinks": [
+            {
+              "label": "atonementlicensing.com",
+              "url": "https://atonementlicensing.com/blog/ai-procurement-guide/",
+              "level": "B",
+              "note": "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A11",
+        "slug": "introducing-claude-opus-4-8-anthropic",
+        "title": "Introducing Claude Opus 4.8 \\ Anthropic",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-8?ct=13057",
+        "sourceTitle": "Introducing Claude Opus 4.8 \\\\ Anthropic",
+        "sources": "原文出处：anthropic.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--introducing-claude-opus-4-8-anthropic-auto-signal-p-013.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A11"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=introducing-claude-opus-4-8-anthropic",
+        "frontend": {
+          "displayTitle": "Introducing Claude Opus 4.8 \\ Anthropic",
+          "sourceTitle": "Introducing Claude Opus 4.8 \\\\ Anthropic",
+          "eventLine": "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "S 级来源，当前材料来自 anthropic.com。",
+          "sourceLinks": [
+            {
+              "label": "anthropic.com",
+              "url": "https://www.anthropic.com/news/claude-opus-4-8?ct=13057",
+              "level": "S",
+              "note": "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "region-us",
+            "name": "美国",
+            "group": "region",
+            "aliases": [
+              "US"
+            ]
+          },
+          {
+            "id": "region-global",
+            "name": "全球",
+            "group": "region",
+            "aliases": [
+              "海外"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A12",
+        "slug": "the-home-depot-delivers-customer-support-four-times-faster-using-google-cloud-s-",
+        "title": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+        "date": "2026-06-04",
+        "signalType": "case",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+        "sourceTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+        "sources": "原文出处：googlecloudpresscorner.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--googlecloudpresscorner-auto-signal-p-014.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "case"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A12"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=the-home-depot-delivers-customer-support-four-times-faster-using-google-cloud-s-",
+        "frontend": {
+          "displayTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+          "sourceTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+          "eventLine": "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "S 级来源，当前材料来自 googlecloudpresscorner.com。",
+          "sourceLinks": [
+            {
+              "label": "googlecloudpresscorner.com",
+              "url": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+              "level": "S",
+              "note": "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SIG-20260604-A13",
+        "slug": "menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops",
+        "title": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+        "date": "2026-06-04",
+        "signalType": "product_service",
+        "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "event": "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "sourceUrl": "https://www.linkedin.com/posts/mariakhmel_genai-aieconomics-inference-activity-7381368148408774657-gwX2",
+        "sourceTitle": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+        "sources": "原文出处：linkedin.com",
+        "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--menlo-ventures-report-auto-signal-p-015.md",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "coordinates": [
+          "product_service"
+        ],
+        "structuredRefs": [
+          "SIG-20260604-A13"
+        ],
+        "relations": [],
+        "relationFields": "",
+        "analysis": [
+          [
+            "发生了什么",
+            "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。"
+          ],
+          [
+            "为什么值得看",
+            "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          ],
+          [
+            "影响谁",
+            "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          ],
+          [
+            "证据边界",
+            "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+          ]
+        ],
+        "calibration": "观点只能作为判断参照，不替代事实来源。",
+        "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+        "link": "signal-detail.html?id=menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops",
+        "frontend": {
+          "displayTitle": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+          "sourceTitle": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+          "eventLine": "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。",
+          "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+          "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+          "evidenceNote": "B 级来源，当前材料来自 linkedin.com。",
+          "sourceLinks": [
+            {
+              "label": "linkedin.com",
+              "url": "https://www.linkedin.com/posts/mariakhmel_genai-aieconomics-inference-activity-7381368148408774657-gwX2",
+              "level": "B",
+              "note": "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。"
+            }
+          ],
+          "watchWindow": [
+            {
+              "label": "继续观察",
+              "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+            }
+          ],
+          "evidenceBoundary": [
+            "目前能确认事件方向",
+            "客户规模、留存和效果指标仍需后续材料验证"
+          ]
+        },
+        "tags": [
+          {
+            "id": "source-first-party",
+            "name": "一手来源",
+            "group": "source",
+            "aliases": [
+              "官网",
+              "官方博客"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          }
+        ]
       }
     ],
     "cases": [],
     "dailyArticles": [
+      {
+        "id": "daily-2026-06-03",
+        "slug": "daily-2026-06-03",
+        "title": "Claude Code v2.1.161 发布",
+        "issue": "",
+        "period": "",
+        "contentType": "",
+        "judgment": "> 企业 AI 从能力试点进入治理、交付和可运营阶段",
+        "dek": "> 企业 AI 从能力试点进入治理、交付和可运营阶段\n\nAnthropic 发布了 Claude Code v2.1.161，这是 Claude Code 自推出以来最重要的企业级更新。新版本不再将自己定位为 AI 编程助手，而是作为一个可以参与企业完整开发流程的智能体协作平台——从需求分析、代码生成、代码审查到部署监控，Claude Code 试图嵌入软件交付的每一个环节。",
+        "summary": [
+          "> 企业 AI 从能力试点进入治理、交付和可运营阶段",
+          "Anthropic 发布了 Claude Code v2.1.161，这是 Claude Code 自推出以来最重要的企业级更新。新版本不再将自己定位为 AI 编程助手，而是作为一个可以参与企业完整开发流程的智能体协作平台——从需求分析、代码生成、代码审查到部署监控，Claude Code 试图嵌入软件交付的每一个环节。",
+          "这次发布的信号很明确：AI 编程工具竞争已经从\"谁能写出更好的代码\"转向\"谁能更好地融入团队协作流程\"。Claude Code 的新版本支持多Agent协作、企业级权限管理、与CI/CD管线的深度集成，以及更精细的代码审查和合规追踪功能。"
+        ],
+        "sections": [
+          {
+            "title": "企业 AI 编程的拐点已到",
+            "body": "Claude Code v2.1.161 的发布不是一个简单的版本更新。它是 Anthropic 将 AI 编程从\"开发者个人工具\"升级为\"企业团队基础设施\"的关键一步。\n\n新版本的核心变化有三个：\n\n**第一，多智能体协作。** Claude Code 现在可以同时运行多个 Agent 实例，分别负责不同的任务——一个写代码，一个做代码审查，一个写测试，一个监控部署。这些 Agent 之间可以通过共享上下文进行协作，模拟一个真实的开发团队的工作方式。\n\n**第二，企业集成。** 新版本深度集成了 GitHub、GitLab、Jira、Slack 等企业常用工具。Claude Code 现在可以自动读取 Issue 描述生成代码，将 PR 评审结果更新到 Slack 频道，甚至在 CI/CD 流水线中自动修复测试失败。\n\n**第三，治理与合规。** 企业管理员可以设置代码审查策略、合规规则、访问权限和审计日志。这意味着 Claude Code 不再只是开发者的玩具，而是可以进入金融、医疗、政府等受监管行业的工具。"
+          },
+          {
+            "title": "微软的回应：MAI 模型矩阵",
+            "body": "几乎同一时间，微软在 Build 2026 上发布了 MAI 系列模型的完整矩阵。MAI-Thinking-1 定位为推理模型，对标 OpenAI 的 o3；MAI-Code-1-Flash 则专门针对代码生成场景优化。\n\n微软的策略很清晰：不只用模型本身竞争，而是通过 Azure AI Studio、GitHub Copilot、Visual Studio 等已经嵌入企业工作流的工具链来锁定客户。\n\n这与 Claude Code 的策略形成直接竞争。Anthropic 走的是\"深度 Agent 协作\"路线，微软走的是\"全栈工具链整合\"路线。两条路径的胜负手不在于谁的模型更强，而在于谁能让企业 CIO 买得更顺畅、ROI 算得更清楚、合规部门点头更容易。"
+          },
+          {
+            "title": "NVIDIA 的入局：从 GPU 到 AI 工厂",
+            "body": "NVIDIA 在 Build 2026 期间宣布的 NemoClaw 平台，进一步揭示了另一条竞争线：基础设施层。NemoClaw 的目标是帮助工业软件厂商构建自主 AI 工程师——不是替代人类工程师，而是让 AI 能够理解工业软件的逻辑、调用 GPU 资源、执行自动化设计任务。\n\n这意味着 NVIDIA 不再只是一个芯片供应商，而是试图成为 AI 工厂的操作系统。结合此前 NVIDIA 与微软深化合作的统一加速计算栈，AI 基础设施的竞争正在从\"谁的芯片更快\"转向\"谁的平台更完整\"。"
+          },
+          {
+            "title": "企业买单的逻辑变了",
+            "body": "这三条新闻放在一起看，一个清晰的趋势浮现出来：企业 AI 采购逻辑正在发生根本性变化。\n\n2024-2025 年，企业采购 AI 产品的逻辑是\"能不能做这事\"——模型能不能写代码、能不能分析文档、能不能回答客服问题。到了 2026 年中，这个逻辑变成了\"能不能融入我们的流程\"——AI 产品能不能通过合规审查、能不能对接现有系统、出了问题谁负责、ROI 怎么算。\n\n这是一个从\"能力验证\"到\"交付运营\"的转变。对于观澜的用户——企业老板和业务负责人——这意味着在选择 AI 供应商时，不应该只看 演示 效果，而要看对方的集成能力、治理框架和客户支持体系。\n\n---\n\n### 关键要点\n\n- AI 编程工具竞争从模型能力转向流程嵌入和治理能力\n- 微软 Build 2026 发布完整 MAI 模型矩阵与 Claude Code 正面竞争\n- NVIDIA NemoClaw 从芯片延伸到 AI 基础设施平台层\n- 企业 AI 采购从\"能不能做\"转向\"能不能融入流程\"\n\n### 风险提示\n\n短期风险在于企业部署周期可能比预期长——CIO 需要时间完成安全审计、合规评估和采购流程。中期风险在于三家公司（Anthropic、微软、NVIDIA）的解决方案可能互相不兼容，企业面临锁定风险。\n\n---\n\n*2026-06-03 · 观澜AI · WaveSight AI*"
+          }
+        ],
+        "homeTitle": "Claude Code v2.1.161 发布",
+        "homeSummary": "> 企业 AI 从能力试点进入治理、交付和可运营阶段\n\nAnthropic 发布了 Claude Code v2.1.161，这是 Claude Code 自推出以来最重要的企业级更新。新版本不再将自己定位为 AI 编程助手，而是作为一个可以参与企业完整开发流程的智能体协作平台——从需求分析、代码生成、代码审查到部署监控，Claude Code 试图嵌入软件交付的每一个环节。",
+        "homeCards": [],
+        "columnPage": {
+          "title": "Claude Code v2.1.161 发布",
+          "thesis": "> 企业 AI 从能力试点进入治理、交付和可运营阶段",
+          "body": "Anthropic 发布了 Claude Code v2.1.161，这是 Claude Code 自推出以来最重要的企业级更新。新版本不再将自己定位为 AI 编程助手，而是作为一个可以参与企业完整开发流程的智能体协作平台——从需求分析、代码生成、代码审查到部署监控，Claude Code 试图嵌入软件交付的每一个环节。",
+          "impact": "这次发布的信号很明确：AI 编程工具竞争已经从\"谁能写出更好的代码\"转向\"谁能更好地融入团队协作流程\"。Claude Code 的新版本支持多Agent协作、企业级权限管理、与CI/CD管线的深度集成，以及更精细的代码审查和合规追踪功能。",
+          "note": "",
+          "keywords": [],
+          "strength": "",
+          "state": "",
+          "trendTitle": "",
+          "trendBody": "",
+          "watchItems": [],
+          "riskItems": []
+        }
+      },
       {
         "id": "daily-2026-06-02",
         "slug": "daily-2026-06-02",
@@ -13793,6 +15599,275 @@ window.WaveSightContent = {
       }
     ],
     "points": [
+      {
+        "id": "OPN-FB-20260604-20",
+        "slug": "anysearch-根据我们的分析-29-的财富500强企业和约19-的全球2000",
+        "title": "Anysearch：根据我们的分析， 29%的财富500强企业和约19%的全球2000",
+        "date": "2026-06-04",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-ai-adoption-by-the-numbers-where-enterprise-ai-is-actually-w.md",
+        "sourceUrl": "https://www.linkedin.com/pulse/ai-adoption-numbers-where-enterprise-actually-working-kimberly-tan-mygwf",
+        "originalDate": "",
+        "speakerLine": "Anysearch",
+        "originalView": "Based on our analysis, 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of a leading AI startup. Article content. query=AI startup enterprise adoption pricing cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+        "originalTranslation": "根据我们的分析， 29%的财富500强企业和约19%的全球2000强企业是领先的AI初创公司的现场付费客户。文章内容。查询= AI初创企业采用定价云回退观点/文章搜索；用作发现，直到原始文本和页面类型通过下游大门",
+        "interpretation": "这条观点可用于观察基础设施公司如何把不稳定用量转成更可预测的价格模型。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, customer, pricing；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-model-infra",
+            "name": "模型基础设施观点",
+            "group": "opinion",
+            "aliases": [
+              "Infra",
+              "推理",
+              "记忆"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPN-FB-20260604-24",
+        "slug": "anysearch-大多数ai编排工具都会让您选择-要么是无法处理真正复杂性的拖放式玩",
+        "title": "Anysearch：大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩",
+        "date": "2026-06-04",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-from-idea-to-agent-in-minutes-inside-mindra-s-workflow-build.md",
+        "sourceUrl": "https://mindra.co/blog/mindra-workflow-builder-how-teams-design-version-and-ship-ai-agents",
+        "originalDate": "",
+        "speakerLine": "Anysearch",
+        "originalView": "Most AI orchestration tools make you choose: either a drag-and-drop toy that can't handle real complexity, or a code-first framework that locks out everyone who isn't an ML engineer. Mindra's workflow builder was designed to break that false choice - giving technical teams the depth they need and bu... query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+        "originalTranslation": "大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩具，要么是将非机器学习工程师的所有人都锁定的代码优先框架。Mindra的工作流构建器旨在打破这种错误的选择-为技术团队提供他们所需的深度和...查询= AI模型路由构建器工作流云后备观点/文章搜索;用作发现，直到原始文本和页面类型通过下游大门",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；商业/产品变量：agent, agents, workflow",
+        "ratingScore": 4,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
+      },
       {
         "id": "OPN-FB-20260603-14",
         "slug": "anysearch-他是一位亿万富翁-拥有包括reddit-worldcoin和hel",
@@ -23932,32 +26007,32 @@ window.WaveSightContent = {
   },
   "signals": [
     {
-      "id": "SIG-20260603-A01",
-      "slug": "claude-code-v2-1-161-发布",
-      "title": "Claude Code v2.1.161 发布",
-      "date": "2026-06-03",
+      "id": "SIG-20260604-A01",
+      "slug": "claude-code-v2-1-162-发布",
+      "title": "Claude Code v2.1.162 发布",
+      "date": "2026-06-04",
       "signalType": "product_service",
       "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
       "judgment": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "Claude Code v2.1.161 发布 发布新的 AI 能力，面向企业智能体协作流程。",
+      "event": "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。",
       "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
-      "sourceTitle": "Claude Code v2.1.161 发布",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
+      "sourceTitle": "Claude Code v2.1.162 发布",
       "sources": "原文出处：github.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-03--signal--claude-code-v2-1-161-auto-signal-p-005.md",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--claude-code-v2-1-162-auto-signal-p-002.md",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
       "coordinates": [
         "product_service"
       ],
       "structuredRefs": [
-        "SIG-20260603-A01"
+        "SIG-20260604-A01"
       ],
       "relations": [],
       "relationFields": "",
       "analysis": [
         [
           "发生了什么",
-          "Claude Code v2.1.161 发布 发布新的 AI 能力，面向企业智能体协作流程。"
+          "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。"
         ],
         [
           "为什么值得看",
@@ -23974,20 +26049,20 @@ window.WaveSightContent = {
       ],
       "calibration": "观点只能作为判断参照，不替代事实来源。",
       "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=claude-code-v2-1-161-发布",
+      "link": "signal-detail.html?id=claude-code-v2-1-162-发布",
       "frontend": {
-        "displayTitle": "Claude Code v2.1.161 发布",
-        "sourceTitle": "Claude Code v2.1.161 发布",
-        "eventLine": "Claude Code v2.1.161 发布 发布新的 AI 能力，面向企业智能体协作流程。",
+        "displayTitle": "Claude Code v2.1.162 发布",
+        "sourceTitle": "Claude Code v2.1.162 发布",
+        "eventLine": "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。",
         "whyWatch": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
         "evidenceNote": "S 级来源，当前材料来自 github.com。",
         "sourceLinks": [
           {
             "label": "github.com",
-            "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
+            "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
             "level": "S",
-            "note": "Claude Code v2.1.161 发布 发布新的 AI 能力，面向企业智能体协作流程。"
+            "note": "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。"
           }
         ],
         "watchWindow": [
@@ -24087,444 +26162,36 @@ window.WaveSightContent = {
       ]
     },
     {
-      "id": "SIG-20260603-A02",
-      "slug": "微软推出-mai-thinking-1-模型",
-      "title": "微软推出 MAI-Thinking-1 模型",
-      "date": "2026-06-03",
+      "id": "SIG-20260604-A02",
+      "slug": "google-gemini-ai-智能体-spark-上手体验-高效得令人不安-但也暴露了空洞的承诺",
+      "title": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
+      "date": "2026-06-04",
       "signalType": "product_service",
       "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "微软推出 MAI 发布新的 AI 能力，面向模型部署和算力调用。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "Theverge 发布新的 AI 能力，面向企业智能体协作流程。",
       "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://microsoft.ai/news/introducing-mai-thinking-1",
-      "sourceTitle": "微软推出 MAI-Thinking-1 模型",
-      "sources": "原文出处：microsoft.ai",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-03--signal--mai-auto-signal-p-006.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "product_service"
-      ],
-      "structuredRefs": [
-        "SIG-20260603-A02"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "微软推出 MAI 发布新的 AI 能力，面向模型部署和算力调用。"
-        ],
-        [
-          "为什么值得看",
-          "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
-        ],
-        [
-          "影响谁",
-          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        ],
-        [
-          "证据边界",
-          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=微软推出-mai-thinking-1-模型",
-      "frontend": {
-        "displayTitle": "微软推出 MAI-Thinking-1 模型",
-        "sourceTitle": "微软推出 MAI-Thinking-1 模型",
-        "eventLine": "微软推出 MAI 发布新的 AI 能力，面向模型部署和算力调用。",
-        "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidenceNote": "S 级来源，当前材料来自 microsoft.ai。",
-        "sourceLinks": [
-          {
-            "label": "microsoft.ai",
-            "url": "https://microsoft.ai/news/introducing-mai-thinking-1",
-            "level": "S",
-            "note": "微软推出 MAI 发布新的 AI 能力，面向模型部署和算力调用。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "目前能确认事件方向",
-          "客户规模、留存和效果指标仍需后续材料验证"
-        ]
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "SIG-20260603-A03",
-      "slug": "微软发布新mai模型",
-      "title": "微软发布新MAI模型",
-      "date": "2026-06-03",
-      "signalType": "case",
-      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "Microsoft 把 AI 用进模型部署和算力调用。",
-      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://simonwillison.net/2026/Jun/2/microsofts-new-models",
-      "sourceTitle": "微软发布新MAI模型",
-      "sources": "原文出处：simonwillison.net",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-03--signal--microsoft-auto-signal-p-007.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "case"
-      ],
-      "structuredRefs": [
-        "SIG-20260603-A03"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Microsoft 把 AI 用进模型部署和算力调用。"
-        ],
-        [
-          "为什么值得看",
-          "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
-        ],
-        [
-          "影响谁",
-          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        ],
-        [
-          "证据边界",
-          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=微软发布新mai模型",
-      "frontend": {
-        "displayTitle": "微软发布新MAI模型",
-        "sourceTitle": "微软发布新MAI模型",
-        "eventLine": "Microsoft 把 AI 用进模型部署和算力调用。",
-        "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidenceNote": "B 级来源，当前材料来自 simonwillison.net。",
-        "sourceLinks": [
-          {
-            "label": "simonwillison.net",
-            "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models",
-            "level": "B",
-            "note": "Microsoft 把 AI 用进模型部署和算力调用。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "目前能确认事件方向",
-          "客户规模、留存和效果指标仍需后续材料验证"
-        ]
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "SIG-20260603-A04",
-      "slug": "nvidia-推出-nemoclaw-平台-助力工业软件厂商构建自主-ai-工程师",
-      "title": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
-      "date": "2026-06-03",
-      "signalType": "case",
-      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "judgment": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "Nvidia 把 AI 用进地产开发和建筑设计流程。",
-      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw",
-      "sourceTitle": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
-      "sources": "原文出处：blogs.nvidia.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-03--signal--nvidia-auto-signal-p-008.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "case"
-      ],
-      "structuredRefs": [
-        "SIG-20260603-A04"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Nvidia 把 AI 用进地产开发和建筑设计流程。"
-        ],
-        [
-          "为什么值得看",
-          "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
-        ],
-        [
-          "影响谁",
-          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        ],
-        [
-          "证据边界",
-          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=nvidia-推出-nemoclaw-平台-助力工业软件厂商构建自主-ai-工程师",
-      "frontend": {
-        "displayTitle": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
-        "sourceTitle": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
-        "eventLine": "Nvidia 把 AI 用进地产开发和建筑设计流程。",
-        "whyWatch": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidenceNote": "S 级来源，当前材料来自 blogs.nvidia.com。",
-        "sourceLinks": [
-          {
-            "label": "blogs.nvidia.com",
-            "url": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw",
-            "level": "S",
-            "note": "Nvidia 把 AI 用进地产开发和建筑设计流程。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "目前能确认事件方向",
-          "客户规模、留存和效果指标仍需后续材料验证"
-        ]
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track",
-          "aliases": [
-            "AI-Coding",
-            "AI 编程"
-          ]
-        },
-        {
-          "id": "function-engineering",
-          "name": "工程研发",
-          "group": "function",
-          "aliases": [
-            "开发",
-            "仿真",
-            "工程"
-          ]
-        },
-        {
-          "id": "customer-developer-team",
-          "name": "开发团队",
-          "group": "customer",
-          "aliases": [
-            "工程团队"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "SIG-20260603-A05",
-      "slug": "微软-build-2026-七项最重要的发布",
-      "title": "微软 Build 2026：七项最重要的发布",
-      "date": "2026-06-03",
-      "signalType": "product_service",
-      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "微软 Build 2026：七项最重要的发布 发布新的 AI 能力，面向模型部署和算力调用。",
-      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
-      "sourceTitle": "微软 Build 2026：七项最重要的发布",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
+      "sourceTitle": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
       "sources": "原文出处：theverge.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-03--signal--build-2026-auto-signal-p-011.md",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--theverge-auto-signal-p-003.md",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
       "coordinates": [
         "product_service"
       ],
       "structuredRefs": [
-        "SIG-20260603-A05"
+        "SIG-20260604-A02"
       ],
       "relations": [],
       "relationFields": "",
       "analysis": [
         [
           "发生了什么",
-          "微软 Build 2026：七项最重要的发布 发布新的 AI 能力，面向模型部署和算力调用。"
+          "Theverge 发布新的 AI 能力，面向企业智能体协作流程。"
         ],
         [
           "为什么值得看",
-          "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+          "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
         ],
         [
           "影响谁",
@@ -24537,147 +26204,20 @@ window.WaveSightContent = {
       ],
       "calibration": "观点只能作为判断参照，不替代事实来源。",
       "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=微软-build-2026-七项最重要的发布",
+      "link": "signal-detail.html?id=google-gemini-ai-智能体-spark-上手体验-高效得令人不安-但也暴露了空洞的承诺",
       "frontend": {
-        "displayTitle": "微软 Build 2026：七项最重要的发布",
-        "sourceTitle": "微软 Build 2026：七项最重要的发布",
-        "eventLine": "微软 Build 2026：七项最重要的发布 发布新的 AI 能力，面向模型部署和算力调用。",
-        "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "displayTitle": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
+        "sourceTitle": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
+        "eventLine": "Theverge 发布新的 AI 能力，面向企业智能体协作流程。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
         "evidenceNote": "B 级来源，当前材料来自 theverge.com。",
         "sourceLinks": [
           {
             "label": "theverge.com",
-            "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
             "level": "B",
-            "note": "微软 Build 2026：七项最重要的发布 发布新的 AI 能力，面向模型部署和算力调用。"
-          }
-        ],
-        "watchWindow": [
-          {
-            "label": "继续观察",
-            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
-          }
-        ],
-        "evidenceBoundary": [
-          "目前能确认事件方向",
-          "客户规模、留存和效果指标仍需后续材料验证"
-        ]
-      },
-      "tags": [
-        {
-          "id": "source-first-party",
-          "name": "一手来源",
-          "group": "source",
-          "aliases": [
-            "官网",
-            "官方博客"
-          ]
-        },
-        {
-          "id": "evidence-product-launch",
-          "name": "产品发布",
-          "group": "evidence",
-          "aliases": [
-            "功能发布",
-            "平台发布"
-          ]
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track",
-          "aliases": [
-            "企业 AI 工作流",
-            "工作流自动化"
-          ]
-        },
-        {
-          "id": "customer-enterprise",
-          "name": "大中型企业",
-          "group": "customer",
-          "aliases": [
-            "企业客户"
-          ]
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track",
-          "aliases": [
-            "AI Infra",
-            "模型基础设施"
-          ]
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "name": "客户采用",
-          "group": "evidence",
-          "aliases": [
-            "部署",
-            "上线",
-            "合作"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "SIG-20260603-A06",
-      "slug": "nvidia-与-microsoft-深化合作-推出从设备到云的统一加速计算栈以支持-ai-智能体部署",
-      "title": "NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
-      "date": "2026-06-03",
-      "signalType": "case",
-      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "Microsoft Foundry 把 AI 用进模型部署和算力调用。",
-      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices",
-      "sourceTitle": "NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
-      "sources": "原文出处：blogs.nvidia.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-03--signal--microsoft-foundry-auto-signal-p-012.md",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "coordinates": [
-        "case"
-      ],
-      "structuredRefs": [
-        "SIG-20260603-A06"
-      ],
-      "relations": [],
-      "relationFields": "",
-      "analysis": [
-        [
-          "发生了什么",
-          "Microsoft Foundry 把 AI 用进模型部署和算力调用。"
-        ],
-        [
-          "为什么值得看",
-          "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
-        ],
-        [
-          "影响谁",
-          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        ],
-        [
-          "证据边界",
-          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
-        ]
-      ],
-      "calibration": "观点只能作为判断参照，不替代事实来源。",
-      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=nvidia-与-microsoft-深化合作-推出从设备到云的统一加速计算栈以支持-ai-智能体部署",
-      "frontend": {
-        "displayTitle": "NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
-        "sourceTitle": "NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
-        "eventLine": "Microsoft Foundry 把 AI 用进模型部署和算力调用。",
-        "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidenceNote": "S 级来源，当前材料来自 blogs.nvidia.com。",
-        "sourceLinks": [
-          {
-            "label": "blogs.nvidia.com",
-            "url": "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices",
-            "level": "S",
-            "note": "Microsoft Foundry 把 AI 用进模型部署和算力调用。"
+            "note": "Theverge 发布新的 AI 能力，面向企业智能体协作流程。"
           }
         ],
         "watchWindow": [
@@ -24777,32 +26317,168 @@ window.WaveSightContent = {
       ]
     },
     {
-      "id": "SIG-20260603-A07",
-      "slug": "design-partners-the-pre-launch-edge-most-ai-founders-ignore-bessemer-venture-par",
-      "title": "Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners",
-      "date": "2026-06-03",
-      "signalType": "product_service",
+      "id": "SIG-20260604-A03",
+      "slug": "alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨",
+      "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+      "date": "2026-06-04",
+      "signalType": "case",
       "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "judgment": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "Design 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。",
       "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://www.bvp.com/atlas/design-partners-the-pre-launch-edge-most-ai-founders-ignore",
-      "sourceTitle": "Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners",
-      "sources": "原文出处：bvp.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-03--signal--design-auto-signal-p-013.md",
+      "sourceUrl": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+      "sourceTitle": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+      "sources": "原文出处：techcrunch.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--ceo-sundar-pichai-auto-signal-p-004.md",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
       "coordinates": [
-        "product_service"
+        "case"
       ],
       "structuredRefs": [
-        "SIG-20260603-A07"
+        "SIG-20260604-A03"
       ],
       "relations": [],
       "relationFields": "",
       "analysis": [
         [
           "发生了什么",
-          "Design 发布新的 AI 能力，面向地产开发和建筑设计流程。"
+          "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+        ],
+        [
+          "影响谁",
+          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        ],
+        [
+          "证据边界",
+          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "link": "signal-detail.html?id=alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨",
+      "frontend": {
+        "displayTitle": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+        "sourceTitle": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
+        "eventLine": "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidenceNote": "A 级来源，当前材料来自 techcrunch.com。",
+        "sourceLinks": [
+          {
+            "label": "techcrunch.com",
+            "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
+            "level": "A",
+            "note": "CEO Sundar Pichai 把 AI 用进销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "目前能确认事件方向",
+          "客户规模、留存和效果指标仍需后续材料验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260604-A04",
+      "slug": "洪水韧性新篇章-google-开源水文建模框架",
+      "title": "洪水韧性新篇章：Google 开源水文建模框架",
+      "date": "2026-06-04",
+      "signalType": "product_service",
+      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "sourceUrl": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
+      "sourceTitle": "洪水韧性新篇章：Google 开源水文建模框架",
+      "sources": "原文出处：research.google",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--google-auto-signal-p-005.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260604-A04"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。"
         ],
         [
           "为什么值得看",
@@ -24819,20 +26495,20 @@ window.WaveSightContent = {
       ],
       "calibration": "观点只能作为判断参照，不替代事实来源。",
       "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=design-partners-the-pre-launch-edge-most-ai-founders-ignore-bessemer-venture-par",
+      "link": "signal-detail.html?id=洪水韧性新篇章-google-开源水文建模框架",
       "frontend": {
-        "displayTitle": "Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners",
-        "sourceTitle": "Design partners: The pre-launch edge most AI founders ignore - Bessemer Venture Partners",
-        "eventLine": "Design 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+        "displayTitle": "洪水韧性新篇章：Google 开源水文建模框架",
+        "sourceTitle": "洪水韧性新篇章：Google 开源水文建模框架",
+        "eventLine": "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。",
         "whyWatch": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidenceNote": "B 级来源，当前材料来自 bvp.com。",
+        "evidenceNote": "S 级来源，当前材料来自 research.google。",
         "sourceLinks": [
           {
-            "label": "bvp.com",
-            "url": "https://www.bvp.com/atlas/design-partners-the-pre-launch-edge-most-ai-founders-ignore",
-            "level": "B",
-            "note": "Design 发布新的 AI 能力，面向地产开发和建筑设计流程。"
+            "label": "research.google",
+            "url": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
+            "level": "S",
+            "note": "洪水韧性新篇章：Google 开源水文建模框架 发布新的 AI 能力，面向地产开发和建筑设计流程。"
           }
         ],
         "watchWindow": [
@@ -24931,32 +26607,32 @@ window.WaveSightContent = {
       ]
     },
     {
-      "id": "SIG-20260603-A08",
-      "slug": "archestra-ai-announces-10m-seed",
-      "title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-      "date": "2026-06-03",
-      "signalType": "product_service",
+      "id": "SIG-20260604-A05",
+      "slug": "here-s-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or",
+      "title": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+      "date": "2026-06-04",
+      "signalType": "case",
       "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
       "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "Archestra.AI 发布新的 AI 能力，面向销售和收入团队流程。",
+      "event": "OpenAI 把 AI 用进销售和收入团队流程。",
       "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://archestra.ai/blog/archestra-announces-10m-seed",
-      "sourceTitle": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-      "sources": "原文出处：archestra.ai",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-03--signal--archestra-ai-auto-signal-p-014.md",
+      "sourceUrl": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
+      "sourceTitle": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+      "sources": "原文出处：techcrunch.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--openai-auto-signal-p-006.md",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
       "coordinates": [
-        "product_service"
+        "case"
       ],
       "structuredRefs": [
-        "SIG-20260603-A08"
+        "SIG-20260604-A05"
       ],
       "relations": [],
       "relationFields": "",
       "analysis": [
         [
           "发生了什么",
-          "Archestra.AI 发布新的 AI 能力，面向销售和收入团队流程。"
+          "OpenAI 把 AI 用进销售和收入团队流程。"
         ],
         [
           "为什么值得看",
@@ -24973,20 +26649,20 @@ window.WaveSightContent = {
       ],
       "calibration": "观点只能作为判断参照，不替代事实来源。",
       "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=archestra-ai-announces-10m-seed",
+      "link": "signal-detail.html?id=here-s-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or",
       "frontend": {
-        "displayTitle": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-        "sourceTitle": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-        "eventLine": "Archestra.AI 发布新的 AI 能力，面向销售和收入团队流程。",
+        "displayTitle": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+        "sourceTitle": "Here's the full list of 49 US AI startups that have raised $100M or ...",
+        "eventLine": "OpenAI 把 AI 用进销售和收入团队流程。",
         "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidenceNote": "B 级来源，当前材料来自 archestra.ai。",
+        "evidenceNote": "A 级来源，当前材料来自 techcrunch.com。",
         "sourceLinks": [
           {
-            "label": "archestra.ai",
-            "url": "https://archestra.ai/blog/archestra-announces-10m-seed",
-            "level": "B",
-            "note": "Archestra.AI 发布新的 AI 能力，面向销售和收入团队流程。"
+            "label": "techcrunch.com",
+            "url": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
+            "level": "A",
+            "note": "OpenAI 把 AI 用进销售和收入团队流程。"
           }
         ],
         "watchWindow": [
@@ -25063,36 +26739,52 @@ window.WaveSightContent = {
             "上线",
             "合作"
           ]
+        },
+        {
+          "id": "region-us",
+          "name": "美国",
+          "group": "region",
+          "aliases": [
+            "US"
+          ]
+        },
+        {
+          "id": "region-global",
+          "name": "全球",
+          "group": "region",
+          "aliases": [
+            "海外"
+          ]
         }
       ]
     },
     {
-      "id": "SIG-20260603-A09",
-      "slug": "enterprise-ai-agents-2026-mid-year-report-on-what-s-working",
-      "title": "Enterprise AI Agents 2026: Mid-Year Report on What's Working",
-      "date": "2026-06-03",
-      "signalType": "case",
+      "id": "SIG-20260604-A06",
+      "slug": "vonage-launches-industry-specific-ai-agents-for-healthcare",
+      "title": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+      "date": "2026-06-04",
+      "signalType": "product_service",
       "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
       "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "event": "Enterprise AI Agents 2026 把 AI 用进销售和收入团队流程。",
+      "event": "Vonage 发布新的 AI 能力，面向销售和收入团队流程。",
       "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "sourceUrl": "https://www.ampcome.com/post/enterprise-ai-agents-2026-mid-year-report",
-      "sourceTitle": "Enterprise AI Agents 2026: Mid-Year Report on What's Working",
-      "sources": "原文出处：ampcome.com",
-      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-03--signal--enterprise-ai-agents-2026-auto-signal-p-015.md",
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202605120800PR_NEWS_USPRX____NY56761-1",
+      "sourceTitle": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+      "sources": "原文出处：markets.ft.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--vonage-auto-signal-p-008.md",
       "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
       "coordinates": [
-        "case"
+        "product_service"
       ],
       "structuredRefs": [
-        "SIG-20260603-A09"
+        "SIG-20260604-A06"
       ],
       "relations": [],
       "relationFields": "",
       "analysis": [
         [
           "发生了什么",
-          "Enterprise AI Agents 2026 把 AI 用进销售和收入团队流程。"
+          "Vonage 发布新的 AI 能力，面向销售和收入团队流程。"
         ],
         [
           "为什么值得看",
@@ -25109,20 +26801,20 @@ window.WaveSightContent = {
       ],
       "calibration": "观点只能作为判断参照，不替代事实来源。",
       "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-      "link": "signal-detail.html?id=enterprise-ai-agents-2026-mid-year-report-on-what-s-working",
+      "link": "signal-detail.html?id=vonage-launches-industry-specific-ai-agents-for-healthcare",
       "frontend": {
-        "displayTitle": "Enterprise AI Agents 2026: Mid-Year Report on What's Working",
-        "sourceTitle": "Enterprise AI Agents 2026: Mid-Year Report on What's Working",
-        "eventLine": "Enterprise AI Agents 2026 把 AI 用进销售和收入团队流程。",
+        "displayTitle": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+        "sourceTitle": "Vonage Launches Industry-Specific AI Agents for Healthcare ...",
+        "eventLine": "Vonage 发布新的 AI 能力，面向销售和收入团队流程。",
         "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
         "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidenceNote": "B 级来源，当前材料来自 ampcome.com。",
+        "evidenceNote": "A 级来源，当前材料来自 markets.ft.com。",
         "sourceLinks": [
           {
-            "label": "ampcome.com",
-            "url": "https://www.ampcome.com/post/enterprise-ai-agents-2026-mid-year-report",
-            "level": "B",
-            "note": "Enterprise AI Agents 2026 把 AI 用进销售和收入团队流程。"
+            "label": "markets.ft.com",
+            "url": "https://markets.ft.com/data/announce/detail?dockey=600-202605120800PR_NEWS_USPRX____NY56761-1",
+            "level": "A",
+            "note": "Vonage 发布新的 AI 能力，面向销售和收入团队流程。"
           }
         ],
         "watchWindow": [
@@ -25216,6 +26908,836 @@ window.WaveSightContent = {
           "aliases": [
             "投资",
             "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "region-us",
+          "name": "美国",
+          "group": "region",
+          "aliases": [
+            "US"
+          ]
+        },
+        {
+          "id": "region-global",
+          "name": "全球",
+          "group": "region",
+          "aliases": [
+            "海外"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260604-A07",
+      "slug": "2025-the-state-of-generative-ai-in-the-enterprise",
+      "title": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+      "date": "2026-06-04",
+      "signalType": "product_service",
+      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "2025 发布新的 AI 能力，面向销售和收入团队流程。",
+      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "sourceUrl": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+      "sourceTitle": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+      "sources": "原文出处：menlovc.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--2025-auto-signal-p-009.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260604-A07"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "2025 发布新的 AI 能力，面向销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+        ],
+        [
+          "影响谁",
+          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        ],
+        [
+          "证据边界",
+          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "link": "signal-detail.html?id=2025-the-state-of-generative-ai-in-the-enterprise",
+      "frontend": {
+        "displayTitle": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+        "sourceTitle": "2025: The State of Generative AI in the Enterprise | Menlo Ventures",
+        "eventLine": "2025 发布新的 AI 能力，面向销售和收入团队流程。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidenceNote": "B 级来源，当前材料来自 menlovc.com。",
+        "sourceLinks": [
+          {
+            "label": "menlovc.com",
+            "url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+            "level": "B",
+            "note": "2025 发布新的 AI 能力，面向销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "目前能确认事件方向",
+          "客户规模、留存和效果指标仍需后续材料验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260604-A08",
+      "slug": "the-200-billion-ai-opportunity-in-tech-services",
+      "title": "The $200 Billion AI Opportunity in Tech Services | BCG",
+      "date": "2026-06-04",
+      "signalType": "case",
+      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "Bcg 把 AI 用进销售和收入团队流程。",
+      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "sourceUrl": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
+      "sourceTitle": "The $200 Billion AI Opportunity in Tech Services | BCG",
+      "sources": "原文出处：bcg.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--bcg-auto-signal-p-010.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260604-A08"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Bcg 把 AI 用进销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+        ],
+        [
+          "影响谁",
+          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        ],
+        [
+          "证据边界",
+          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "link": "signal-detail.html?id=the-200-billion-ai-opportunity-in-tech-services",
+      "frontend": {
+        "displayTitle": "The $200 Billion AI Opportunity in Tech Services | BCG",
+        "sourceTitle": "The $200 Billion AI Opportunity in Tech Services | BCG",
+        "eventLine": "Bcg 把 AI 用进销售和收入团队流程。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidenceNote": "B 级来源，当前材料来自 bcg.com。",
+        "sourceLinks": [
+          {
+            "label": "bcg.com",
+            "url": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
+            "level": "B",
+            "note": "Bcg 把 AI 用进销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "目前能确认事件方向",
+          "客户规模、留存和效果指标仍需后续材料验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260604-A09",
+      "slug": "ai-procurement-guide-2026-enterprise-contracts-pricing",
+      "title": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+      "date": "2026-06-04",
+      "signalType": "product_service",
+      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。",
+      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "sourceUrl": "https://atonementlicensing.com/blog/ai-procurement-guide/",
+      "sourceTitle": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+      "sources": "原文出处：atonementlicensing.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--ai-procurement-guide-2026-auto-signal-p-011.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260604-A09"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+        ],
+        [
+          "影响谁",
+          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        ],
+        [
+          "证据边界",
+          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "link": "signal-detail.html?id=ai-procurement-guide-2026-enterprise-contracts-pricing",
+      "frontend": {
+        "displayTitle": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+        "sourceTitle": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
+        "eventLine": "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidenceNote": "B 级来源，当前材料来自 atonementlicensing.com。",
+        "sourceLinks": [
+          {
+            "label": "atonementlicensing.com",
+            "url": "https://atonementlicensing.com/blog/ai-procurement-guide/",
+            "level": "B",
+            "note": "AI Procurement Guide 2026 发布新的 AI 能力，面向销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "目前能确认事件方向",
+          "客户规模、留存和效果指标仍需后续材料验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260604-A11",
+      "slug": "introducing-claude-opus-4-8-anthropic",
+      "title": "Introducing Claude Opus 4.8 \\ Anthropic",
+      "date": "2026-06-04",
+      "signalType": "product_service",
+      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。",
+      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-8?ct=13057",
+      "sourceTitle": "Introducing Claude Opus 4.8 \\\\ Anthropic",
+      "sources": "原文出处：anthropic.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--introducing-claude-opus-4-8-anthropic-auto-signal-p-013.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260604-A11"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+        ],
+        [
+          "影响谁",
+          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        ],
+        [
+          "证据边界",
+          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "link": "signal-detail.html?id=introducing-claude-opus-4-8-anthropic",
+      "frontend": {
+        "displayTitle": "Introducing Claude Opus 4.8 \\ Anthropic",
+        "sourceTitle": "Introducing Claude Opus 4.8 \\\\ Anthropic",
+        "eventLine": "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidenceNote": "S 级来源，当前材料来自 anthropic.com。",
+        "sourceLinks": [
+          {
+            "label": "anthropic.com",
+            "url": "https://www.anthropic.com/news/claude-opus-4-8?ct=13057",
+            "level": "S",
+            "note": "Introducing Claude Opus 4.8 \\ Anthropic 发布新的 AI 能力，面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "目前能确认事件方向",
+          "客户规模、留存和效果指标仍需后续材料验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        },
+        {
+          "id": "region-us",
+          "name": "美国",
+          "group": "region",
+          "aliases": [
+            "US"
+          ]
+        },
+        {
+          "id": "region-global",
+          "name": "全球",
+          "group": "region",
+          "aliases": [
+            "海外"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260604-A12",
+      "slug": "the-home-depot-delivers-customer-support-four-times-faster-using-google-cloud-s-",
+      "title": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+      "date": "2026-06-04",
+      "signalType": "case",
+      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。",
+      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "sourceUrl": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+      "sourceTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+      "sources": "原文出处：googlecloudpresscorner.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-04--signal--googlecloudpresscorner-auto-signal-p-014.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "case"
+      ],
+      "structuredRefs": [
+        "SIG-20260604-A12"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。"
+        ],
+        [
+          "为什么值得看",
+          "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+        ],
+        [
+          "影响谁",
+          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        ],
+        [
+          "证据边界",
+          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "link": "signal-detail.html?id=the-home-depot-delivers-customer-support-four-times-faster-using-google-cloud-s-",
+      "frontend": {
+        "displayTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+        "sourceTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+        "eventLine": "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidenceNote": "S 级来源，当前材料来自 googlecloudpresscorner.com。",
+        "sourceLinks": [
+          {
+            "label": "googlecloudpresscorner.com",
+            "url": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+            "level": "S",
+            "note": "Googlecloudpresscorner 把 AI 用进销售和收入团队流程。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "目前能确认事件方向",
+          "客户规模、留存和效果指标仍需后续材料验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
+          ]
+        },
+        {
+          "id": "evidence-funding",
+          "name": "融资证据",
+          "group": "evidence",
+          "aliases": [
+            "投资",
+            "种子轮"
+          ]
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "name": "客户采用",
+          "group": "evidence",
+          "aliases": [
+            "部署",
+            "上线",
+            "合作"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIG-20260604-A13",
+      "slug": "menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops",
+      "title": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+      "date": "2026-06-04",
+      "signalType": "product_service",
+      "brief": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "judgment": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "event": "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。",
+      "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "sourceUrl": "https://www.linkedin.com/posts/mariakhmel_genai-aieconomics-inference-activity-7381368148408774657-gwX2",
+      "sourceTitle": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+      "sources": "原文出处：linkedin.com",
+      "sourcePath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-04--signal--menlo-ventures-report-auto-signal-p-015.md",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "coordinates": [
+        "product_service"
+      ],
+      "structuredRefs": [
+        "SIG-20260604-A13"
+      ],
+      "relations": [],
+      "relationFields": "",
+      "analysis": [
+        [
+          "发生了什么",
+          "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。"
+        ],
+        [
+          "为什么值得看",
+          "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+        ],
+        [
+          "影响谁",
+          "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        ],
+        [
+          "证据边界",
+          "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。"
+        ]
+      ],
+      "calibration": "观点只能作为判断参照，不替代事实来源。",
+      "counter": "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "link": "signal-detail.html?id=menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops",
+      "frontend": {
+        "displayTitle": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+        "sourceTitle": "Menlo Ventures report: 3 key takeaways for AI strategy and ops",
+        "eventLine": "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。",
+        "whyWatch": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "businessMeaning": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidenceNote": "B 级来源，当前材料来自 linkedin.com。",
+        "sourceLinks": [
+          {
+            "label": "linkedin.com",
+            "url": "https://www.linkedin.com/posts/mariakhmel_genai-aieconomics-inference-activity-7381368148408774657-gwX2",
+            "level": "B",
+            "note": "Menlo Ventures report 发布新的 AI 能力，面向模型部署和算力调用。"
+          }
+        ],
+        "watchWindow": [
+          {
+            "label": "继续观察",
+            "text": "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。"
+          }
+        ],
+        "evidenceBoundary": [
+          "目前能确认事件方向",
+          "客户规模、留存和效果指标仍需后续材料验证"
+        ]
+      },
+      "tags": [
+        {
+          "id": "source-first-party",
+          "name": "一手来源",
+          "group": "source",
+          "aliases": [
+            "官网",
+            "官方博客"
+          ]
+        },
+        {
+          "id": "evidence-product-launch",
+          "name": "产品发布",
+          "group": "evidence",
+          "aliases": [
+            "功能发布",
+            "平台发布"
+          ]
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track",
+          "aliases": [
+            "企业 AI 工作流",
+            "工作流自动化"
+          ]
+        },
+        {
+          "id": "customer-enterprise",
+          "name": "大中型企业",
+          "group": "customer",
+          "aliases": [
+            "企业客户"
+          ]
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track",
+          "aliases": [
+            "AI Infra",
+            "模型基础设施"
           ]
         },
         {
@@ -25232,70 +27754,282 @@ window.WaveSightContent = {
     }
   ],
   "daily": {
-    "id": "daily-2026-06-03",
-    "slug": "daily-2026-06-03",
-    "title": "Claude Code v2.1.161 发布",
-    "issue": "",
-    "period": "",
-    "contentType": "daily_observation",
-    "judgment": "企业 AI 从能力试点进入治理、交付和可运营阶段",
-    "dek": "Anthropic 发布 Claude Code v2.1.161，不再只是代码补全工具，而是进入企业智能体协作流程。这场竞争的关键不再是模型能力，而是谁先嵌入企业的工作流、采购流程和责任制。",
-    "summary": [
-      "Anthropic 发布了 Claude Code v2.1.161，这是 Claude Code 自推出以来最重要的企业级更新。新版本不再将自己定位为 AI 编程助手，而是作为一个可以参与企业完整开发流程的智能体协作平台——从需求分析、代码生成、代码审查到部署监控，Claude Code 试图嵌入软件交付的每一个环节。",
-      "这次发布的信号很明确：AI 编程工具竞争已经从\"谁能写出更好的代码\"转向\"谁能更好地融入团队协作流程\"。Claude Code 的新版本支持多Agent协作、企业级权限管理、与CI/CD管线的深度集成，以及更精细的代码审查和合规追踪功能。",
-      "与此同时，微软在 Build 2026 上发布了 MAI-Thinking-1 和 MAI-Code-1-Flash，NVIDIA 推出了 NemoClaw 平台。今天的核心叙事是：企业 AI 从试点进入生产阶段，竞争焦点从模型能力转向流程嵌入和治理能力。"
-    ],
-    "sections": [
+    "slug": "daily-2026-06-04",
+    "title": "Claude Code v2.1.162 发布",
+    "dek": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+    "points": [],
+    "risk": "客户采用、预算归属和部署周期仍需继续观察。",
+    "calibration": [
       {
-        "title": "企业 AI 编程的拐点已到",
-        "body": "Claude Code v2.1.161 的发布不是一个简单的版本更新。它是 Anthropic 将 AI 编程从\"开发者个人工具\"升级为\"企业团队基础设施\"的关键一步。\n\n新版本的核心变化有三个：\n\n第一，多智能体协作。Claude Code 现在可以同时运行多个 Agent 实例，分别负责不同的任务——一个写代码，一个做代码审查，一个写测试，一个监控部署。这些 Agent 之间可以通过共享上下文进行协作，模拟一个真实的开发团队的工作方式。\n\n第二，企业集成。新版本深度集成了 GitHub、GitLab、Jira、Slack 等企业常用工具。Claude Code 现在可以自动读取 Issue 描述生成代码，将 PR 评审结果同步到 Slack 频道，甚至在 CI/CD 流水线中自动修复测试失败。\n\n第三，治理与合规。企业管理员可以设置代码审查策略、合规规则、访问权限和审计日志。这意味着 Claude Code 不再只是开发者的玩具，而是可以进入金融、医疗、政府等受监管行业的工具。"
+        "id": "OPN-FB-20260604-20",
+        "slug": "anysearch-根据我们的分析-29-的财富500强企业和约19-的全球2000",
+        "title": "Anysearch：根据我们的分析， 29%的财富500强企业和约19%的全球2000",
+        "date": "2026-06-04",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-ai-adoption-by-the-numbers-where-enterprise-ai-is-actually-w.md",
+        "sourceUrl": "https://www.linkedin.com/pulse/ai-adoption-numbers-where-enterprise-actually-working-kimberly-tan-mygwf",
+        "originalDate": "",
+        "speakerLine": "Anysearch",
+        "originalView": "Based on our analysis, 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of a leading AI startup. Article content. query=AI startup enterprise adoption pricing cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+        "originalTranslation": "根据我们的分析， 29%的财富500强企业和约19%的全球2000强企业是领先的AI初创公司的现场付费客户。文章内容。查询= AI初创企业采用定价云回退观点/文章搜索；用作发现，直到原始文本和页面类型通过下游大门",
+        "interpretation": "这条观点可用于观察基础设施公司如何把不稳定用量转成更可预测的价格模型。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, customer, pricing；包含数据、客户或业务量级线索",
+        "ratingScore": 5,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-model-infra",
+            "name": "模型基础设施观点",
+            "group": "opinion",
+            "aliases": [
+              "Infra",
+              "推理",
+              "记忆"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "track-ai-infra",
+            "name": "AI 基础设施",
+            "group": "track",
+            "aliases": [
+              "AI Infra",
+              "模型基础设施"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          },
+          {
+            "id": "evidence-customer-adoption",
+            "name": "客户采用",
+            "group": "evidence",
+            "aliases": [
+              "部署",
+              "上线",
+              "合作"
+            ]
+          },
+          {
+            "id": "evidence-product-launch",
+            "name": "产品发布",
+            "group": "evidence",
+            "aliases": [
+              "功能发布",
+              "平台发布"
+            ]
+          }
+        ]
       },
       {
-        "title": "微软的回应：MAI 模型矩阵",
-        "body": "几乎同一时间，微软在 Build 2026 上发布了 MAI 系列模型的完整矩阵。MAI-Thinking-1 定位为推理模型，对标 OpenAI 的 o3；MAI-Code-1-Flash 则专门针对代码生成场景优化。\n\n微软的策略很清晰：不只用模型本身竞争，而是通过 Azure AI Studio、GitHub Copilot、Visual Studio 等已经嵌入企业工作流的工具链来锁定客户。\n\n这与 Claude Code 的策略形成直接竞争。Anthropic 走的是\"深度 Agent 协作\"路线，微软走的是\"全栈工具链整合\"路线。两条路径的胜负手不在于谁的模型更强，而在于谁能让企业 CI 买得更顺畅、ROI 算得更清楚、合规部门点头更容易。"
-      },
-      {
-        "title": "NVIDIA 的入局：从 GPU 到 AI 工厂",
-        "body": "NVIDIA 在 Build 2026 期间宣布的 NemoClaw 平台，进一步揭示了另一条竞争线：基础设施层。NemoClaw 的目标是帮助工业软件厂商构建自主 AI 工程师——不是替代人类工程师，而是让 AI 能够理解工业软件的逻辑、调用 GPU 资源、执行自动化设计任务。\n\n这意味着 NVIDIA 不再只是一个芯片供应商，而是试图成为 AI 工厂的操作系统。结合此前 NVIDIA 与微软深化合作的统一加速计算栈，AI 基础设施的竞争正在从\"谁的芯片更快\"转向\"谁的平台更完整\"。"
-      },
-      {
-        "title": "企业买单的逻辑变了",
-        "body": "这三条新闻放在一起看，一个清晰的趋势浮现出来：企业 AI 采购逻辑正在发生根本性变化。\n\n2024-2025 年，企业采购 AI 产品的逻辑是\"能不能做这事\"——模型能不能写代码、能不能分析文档、能不能回答客服问题。到了 2026 年中，这个逻辑变成了\"能不能融入我们的流程\"——AI 产品能不能通过合规审查、能不能对接现有系统、出了问题谁负责、ROI 怎么算。\n\n这是一个从\"能力验证\"到\"交付运营\"的转变。对于观澜的用户——企业老板和业务负责人——这意味着在选择 AI 供应商时，不应该只看 demo 效果，而要看对方的集成能力、治理框架和客户支持体系。"
+        "id": "OPN-FB-20260604-24",
+        "slug": "anysearch-大多数ai编排工具都会让您选择-要么是无法处理真正复杂性的拖放式玩",
+        "title": "Anysearch：大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩",
+        "date": "2026-06-04",
+        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-from-idea-to-agent-in-minutes-inside-mindra-s-workflow-build.md",
+        "sourceUrl": "https://mindra.co/blog/mindra-workflow-builder-how-teams-design-version-and-ship-ai-agents",
+        "originalDate": "",
+        "speakerLine": "Anysearch",
+        "originalView": "Most AI orchestration tools make you choose: either a drag-and-drop toy that can't handle real complexity, or a code-first framework that locks out everyone who isn't an ML engineer. Mindra's workflow builder was designed to break that false choice - giving technical teams the depth they need and bu... query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+        "originalTranslation": "大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩具，要么是将非机器学习工程师的所有人都锁定的代码优先框架。Mindra的工作流构建器旨在打破这种错误的选择-为技术团队提供他们所需的深度和...查询= AI模型路由构建器工作流云后备观点/文章搜索;用作发现，直到原始文本和页面类型通过下游大门",
+        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+        "opinionTier": "sidebar",
+        "displayLane": "signal_sidebar",
+        "selectionReason": "follow-builders 人物池来源；商业/产品变量：agent, agents, workflow",
+        "ratingScore": 4,
+        "publishStatus": "frontstage_sidebar",
+        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+        "relations": [],
+        "relatedSignals": [],
+        "relatedTrends": [],
+        "relatedTrendReports": [],
+        "tags": [
+          {
+            "id": "scenario-frontier-opinion",
+            "name": "前沿观点",
+            "group": "scenario",
+            "aliases": [
+              "观点证据",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "evidence-frontier-opinion",
+            "name": "前沿观点",
+            "group": "evidence",
+            "aliases": [
+              "观点",
+              "建造者观点"
+            ]
+          },
+          {
+            "id": "source-social",
+            "name": "社媒线索",
+            "group": "source",
+            "aliases": [
+              "X",
+              "社区"
+            ]
+          },
+          {
+            "id": "opinion-agent-workflow",
+            "name": "Agent 工作流观点",
+            "group": "opinion",
+            "aliases": [
+              "多 Agent",
+              "工作流"
+            ]
+          },
+          {
+            "id": "track-ai-agent",
+            "name": "AI Agent",
+            "group": "track",
+            "aliases": [
+              "AI-Agent",
+              "智能体"
+            ]
+          },
+          {
+            "id": "track-ai-governance",
+            "name": "AI 治理",
+            "group": "track",
+            "aliases": [
+              "Agent 治理",
+              "权限审计"
+            ]
+          },
+          {
+            "id": "scenario-agent-governance",
+            "name": "Agent 权限治理",
+            "group": "scenario",
+            "aliases": [
+              "审计",
+              "权限",
+              "风险控制"
+            ]
+          },
+          {
+            "id": "track-enterprise-workflow",
+            "name": "企业工作流",
+            "group": "track",
+            "aliases": [
+              "企业 AI 工作流",
+              "工作流自动化"
+            ]
+          },
+          {
+            "id": "customer-enterprise",
+            "name": "大中型企业",
+            "group": "customer",
+            "aliases": [
+              "企业客户"
+            ]
+          },
+          {
+            "id": "function-procurement-bidding",
+            "name": "采购投标",
+            "group": "function",
+            "aliases": [
+              "招投标",
+              "采购"
+            ]
+          },
+          {
+            "id": "evidence-procurement",
+            "name": "招投标 / 采购",
+            "group": "evidence",
+            "aliases": [
+              "招标",
+              "政府采购"
+            ]
+          },
+          {
+            "id": "evidence-funding",
+            "name": "融资证据",
+            "group": "evidence",
+            "aliases": [
+              "投资",
+              "种子轮"
+            ]
+          }
+        ]
       }
     ],
-    "homeTitle": "Claude Code v2.1.161 发布",
-    "homeSummary": "企业 AI 从能力试点进入治理、交付和可运营阶段。Claude Code、微软 MAI、NVIDIA NemoClaw 三线并进，竞争焦点从模型能力转向流程嵌入和治理能力。",
-    "homeCards": [
-      {
-        "label": "产品发布",
-        "title": "Claude Code v2.1.161 企业版",
-        "body": "多Agent协作、CI/CD集成、企业级权限管理和合规追踪，Anthropic 重新定义了AI编程工具的边界。"
-      },
-      {
-        "label": "竞争格局",
-        "title": "微软 MAI 模型矩阵",
-        "body": "MAI-Thinking-1 推理模型 + MAI-Code-1-Flash 代码模型，通过 GitHub Copilot 和 Azure 全栈绑定企业客户。"
-      },
-      {
-        "label": "基础设施",
-        "title": "NVIDIA NemoClaw 平台",
-        "body": "从 GPU 供应商到 AI 工厂操作系统，NVIDIA 为工业软件厂商构建自主 AI 工程师。"
-      }
-    ],
-    "columnPage": {
-      "title": "Claude Code v2.1.161 发布",
-      "thesis": "企业 AI 从能力试点进入治理、交付和可运营阶段",
-      "body": "Anthropic 发布了 Claude Code v2.1.161，这是 Claude Code 自推出以来最重要的企业级更新。新版本不再将自己定位为 AI 编程助手，而是作为一个可以参与企业完整开发流程的智能体协作平台——从需求分析、代码生成、代码审查到部署监控，Claude Code 试图嵌入软件交付的每一个环节。",
-      "impact": "短期风险在于企业部署周期可能比预期长——CIO 需要时间完成安全审计、合规评估和采购流程。中期风险在于三家公司（Anthropic、微软、NVIDIA）的解决方案可能互相不兼容，企业面临锁定风险。"
-    },
-    "points": [
-      "AI 编程工具竞争从模型能力转向流程嵌入和治理能力",
-      "微软 Build 2026 发布完整 MAI 模型矩阵与 Claude Code 正面竞争",
-      "NVIDIA NemoClaw 从芯片延伸到 AI 基础设施平台层",
-      "企业 AI 采购从\"能不能做\"转向\"能不能融入流程\""
-    ],
-    "risk": "短期风险在于企业部署周期可能比预期长——CIO 需要时间完成安全审计、合规评估和采购流程。中期风险在于三家公司（Anthropic、微软、NVIDIA）的解决方案可能互相不兼容，企业面临锁定风险。",
-    "calibration": [],
     "link": "daily-detail.html"
   },
   "trendReport": {
@@ -25504,33 +28238,168 @@ window.WaveSightContent = {
   },
   "brief": {
     "issue": "Preview.001",
-    "period": "2026.06.03",
-    "title": "Claude Code v2.1.161 发布",
+    "period": "2026.06.04",
+    "title": "Claude Code v2.1.162 发布",
     "summary": [
       "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
+      "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"
     ],
     "heat": [],
     "evidence": {
       "points": [
         {
-          "id": "OPN-FB-20260603-14",
-          "slug": "anysearch-他是一位亿万富翁-拥有包括reddit-worldcoin和hel",
-          "title": "Anysearch：他是一位亿万富翁，拥有包括Reddit、Worldcoin和Hel",
-          "date": "2026-06-03",
-          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-03--frontier-opinion--anysearch-sam-altman-wikipedia.md",
-          "sourceUrl": "https://en.wikipedia.org/wiki/Sam_Altman",
+          "id": "OPN-FB-20260604-20",
+          "slug": "anysearch-根据我们的分析-29-的财富500强企业和约19-的全球2000",
+          "title": "Anysearch：根据我们的分析， 29%的财富500强企业和约19%的全球2000",
+          "date": "2026-06-04",
+          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-ai-adoption-by-the-numbers-where-enterprise-ai-is-actually-w.md",
+          "sourceUrl": "https://www.linkedin.com/pulse/ai-adoption-numbers-where-enterprise-actually-working-kimberly-tan-mygwf",
           "originalDate": "",
           "speakerLine": "Anysearch",
-          "originalView": "He is a billionaire with many investments including Reddit, Worldcoin, and Helion Energy. Altman co-founded OpenAI in 2015 and became its CEO in 2019, a role ... query=open source AI founder customers cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-          "originalTranslation": "他是一位亿万富翁，拥有包括Reddit、Worldcoin和Helion Energy在内的许多投资。Altman于2015年共同创立了OpenAI ，并于2019年成为其首席执行官，一个角色...查询=开源AI创始人客户云后备观点/文章搜索;用作发现，直到原始文本和页面类型通过下游大门",
+          "originalView": "Based on our analysis, 29% of the Fortune 500 and ~19% of the Global 2000 are live, paying customers of a leading AI startup. Article content. query=AI startup enterprise adoption pricing cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+          "originalTranslation": "根据我们的分析， 29%的财富500强企业和约19%的全球2000强企业是领先的AI初创公司的现场付费客户。文章内容。查询= AI初创企业采用定价云回退观点/文章搜索；用作发现，直到原始文本和页面类型通过下游大门",
+          "interpretation": "这条观点可用于观察基础设施公司如何把不稳定用量转成更可预测的价格模型。",
+          "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
+          "opinionTier": "sidebar",
+          "displayLane": "signal_sidebar",
+          "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, customer, pricing；包含数据、客户或业务量级线索",
+          "ratingScore": 5,
+          "publishStatus": "frontstage_sidebar",
+          "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
+          "relations": [],
+          "relatedSignals": [],
+          "relatedTrends": [],
+          "relatedTrendReports": [],
+          "tags": [
+            {
+              "id": "scenario-frontier-opinion",
+              "name": "前沿观点",
+              "group": "scenario",
+              "aliases": [
+                "观点证据",
+                "建造者观点"
+              ]
+            },
+            {
+              "id": "evidence-frontier-opinion",
+              "name": "前沿观点",
+              "group": "evidence",
+              "aliases": [
+                "观点",
+                "建造者观点"
+              ]
+            },
+            {
+              "id": "source-social",
+              "name": "社媒线索",
+              "group": "source",
+              "aliases": [
+                "X",
+                "社区"
+              ]
+            },
+            {
+              "id": "opinion-model-infra",
+              "name": "模型基础设施观点",
+              "group": "opinion",
+              "aliases": [
+                "Infra",
+                "推理",
+                "记忆"
+              ]
+            },
+            {
+              "id": "track-enterprise-workflow",
+              "name": "企业工作流",
+              "group": "track",
+              "aliases": [
+                "企业 AI 工作流",
+                "工作流自动化"
+              ]
+            },
+            {
+              "id": "customer-enterprise",
+              "name": "大中型企业",
+              "group": "customer",
+              "aliases": [
+                "企业客户"
+              ]
+            },
+            {
+              "id": "track-ai-infra",
+              "name": "AI 基础设施",
+              "group": "track",
+              "aliases": [
+                "AI Infra",
+                "模型基础设施"
+              ]
+            },
+            {
+              "id": "function-procurement-bidding",
+              "name": "采购投标",
+              "group": "function",
+              "aliases": [
+                "招投标",
+                "采购"
+              ]
+            },
+            {
+              "id": "evidence-procurement",
+              "name": "招投标 / 采购",
+              "group": "evidence",
+              "aliases": [
+                "招标",
+                "政府采购"
+              ]
+            },
+            {
+              "id": "evidence-funding",
+              "name": "融资证据",
+              "group": "evidence",
+              "aliases": [
+                "投资",
+                "种子轮"
+              ]
+            },
+            {
+              "id": "evidence-customer-adoption",
+              "name": "客户采用",
+              "group": "evidence",
+              "aliases": [
+                "部署",
+                "上线",
+                "合作"
+              ]
+            },
+            {
+              "id": "evidence-product-launch",
+              "name": "产品发布",
+              "group": "evidence",
+              "aliases": [
+                "功能发布",
+                "平台发布"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "OPN-FB-20260604-24",
+          "slug": "anysearch-大多数ai编排工具都会让您选择-要么是无法处理真正复杂性的拖放式玩",
+          "title": "Anysearch：大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩",
+          "date": "2026-06-04",
+          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-04--frontier-opinion--anysearch-from-idea-to-agent-in-minutes-inside-mindra-s-workflow-build.md",
+          "sourceUrl": "https://mindra.co/blog/mindra-workflow-builder-how-teams-design-version-and-ship-ai-agents",
+          "originalDate": "",
+          "speakerLine": "Anysearch",
+          "originalView": "Most AI orchestration tools make you choose: either a drag-and-drop toy that can't handle real complexity, or a code-first framework that locks out everyone who isn't an ML engineer. Mindra's workflow builder was designed to break that false choice - giving technical teams the depth they need and bu... query=AI model routing builder workflow cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
+          "originalTranslation": "大多数AI编排工具都会让您选择：要么是无法处理真正复杂性的拖放式玩具，要么是将非机器学习工程师的所有人都锁定的代码优先框架。Mindra的工作流构建器旨在打破这种错误的选择-为技术团队提供他们所需的深度和...查询= AI模型路由构建器工作流云后备观点/文章搜索;用作发现，直到原始文本和页面类型通过下游大门",
           "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
           "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
           "opinionTier": "sidebar",
           "displayLane": "signal_sidebar",
-          "selectionReason": "follow-builders 人物池来源；高价值人物或机构；商业/产品变量：customer；包含数据、客户或业务量级线索",
-          "ratingScore": 5,
+          "selectionReason": "follow-builders 人物池来源；商业/产品变量：agent, agents, workflow",
+          "ratingScore": 4,
           "publishStatus": "frontstage_sidebar",
           "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
           "relations": [],
@@ -25647,274 +28516,6 @@ window.WaveSightContent = {
               ]
             }
           ]
-        },
-        {
-          "id": "OPN-FB-20260603-22",
-          "slug": "anysearch-将沙盒用作ai生成的应用程序的代码运行时",
-          "title": "Anysearch：将沙盒用作AI生成的应用程序的代码运行时",
-          "date": "2026-06-03",
-          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-03--frontier-opinion--anysearch-e2b-the-enterprise-ai-agent-cloud.md",
-          "sourceUrl": "https://e2b.dev/",
-          "originalDate": "",
-          "speakerLine": "Anysearch",
-          "originalView": "Use a sandbox as a code runtime for AI-generated apps. Supports any language and framework. to provide secure virtual computers in cloud for your LLM. Build ... query=AI agent sandbox builder cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-          "originalTranslation": "将沙盒用作AI生成的应用程序的代码运行时。支持任何语言和框架。为您的法学硕士提供安全的云虚拟计算机。构建...查询= AIAgent沙盒构建器云回退视点/文章搜索；用作发现，直到原始文本和页面类型通过下游门",
-          "interpretation": "这条观点提示 Agent 落地会先遇到运行环境、权限边界和工具连接问题。",
-          "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-          "opinionTier": "sidebar",
-          "displayLane": "signal_sidebar",
-          "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, agent, sandbox；包含数据、客户或业务量级线索",
-          "ratingScore": 5,
-          "publishStatus": "frontstage_sidebar",
-          "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-          "relations": [],
-          "relatedSignals": [],
-          "relatedTrends": [],
-          "relatedTrendReports": [],
-          "tags": [
-            {
-              "id": "scenario-frontier-opinion",
-              "name": "前沿观点",
-              "group": "scenario",
-              "aliases": [
-                "观点证据",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "evidence-frontier-opinion",
-              "name": "前沿观点",
-              "group": "evidence",
-              "aliases": [
-                "观点",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "source-social",
-              "name": "社媒线索",
-              "group": "source",
-              "aliases": [
-                "X",
-                "社区"
-              ]
-            },
-            {
-              "id": "opinion-ai-coding",
-              "name": "AI Coding 观点",
-              "group": "opinion",
-              "aliases": [
-                "编程",
-                "开发者工具"
-              ]
-            },
-            {
-              "id": "track-ai-coding",
-              "name": "AI Coding",
-              "group": "track",
-              "aliases": [
-                "AI-Coding",
-                "AI 编程"
-              ]
-            },
-            {
-              "id": "function-engineering",
-              "name": "工程研发",
-              "group": "function",
-              "aliases": [
-                "开发",
-                "仿真",
-                "工程"
-              ]
-            },
-            {
-              "id": "customer-developer-team",
-              "name": "开发团队",
-              "group": "customer",
-              "aliases": [
-                "工程团队"
-              ]
-            },
-            {
-              "id": "track-ai-agent",
-              "name": "AI Agent",
-              "group": "track",
-              "aliases": [
-                "AI-Agent",
-                "智能体"
-              ]
-            },
-            {
-              "id": "track-ai-governance",
-              "name": "AI 治理",
-              "group": "track",
-              "aliases": [
-                "Agent 治理",
-                "权限审计"
-              ]
-            },
-            {
-              "id": "scenario-agent-governance",
-              "name": "Agent 权限治理",
-              "group": "scenario",
-              "aliases": [
-                "审计",
-                "权限",
-                "风险控制"
-              ]
-            },
-            {
-              "id": "track-enterprise-workflow",
-              "name": "企业工作流",
-              "group": "track",
-              "aliases": [
-                "企业 AI 工作流",
-                "工作流自动化"
-              ]
-            },
-            {
-              "id": "customer-enterprise",
-              "name": "大中型企业",
-              "group": "customer",
-              "aliases": [
-                "企业客户"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "OPN-FB-20260603-25",
-          "slug": "anysearch-开源ai工具包旨在帮助开发人员使用react-next构建基于a",
-          "title": "Anysearch：开源AI工具包旨在帮助开发人员使用React, Next构建基于A",
-          "date": "2026-06-03",
-          "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-03--frontier-opinion--anysearch-ai-sdk.md",
-          "sourceUrl": "https://ai-sdk.dev/",
-          "originalDate": "",
-          "speakerLine": "Anysearch",
-          "originalView": "The open-source AI toolkit designed to help developers build AI-powered applications and agents with React, Next. ... We built a full AI agent with 40+ tools, ... query=AI SDK builder launch cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-          "originalTranslation": "开源AI工具包旨在帮助开发人员使用React, Next构建基于AI的应用程序和Agent。...我们使用40多种工具构建了一个完整的AIAgent，... query = AI SDK构建器启动云后备视点/文章搜索；用作发现，直到原始文本和页面类型通过下游大门",
-          "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
-          "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-          "opinionTier": "sidebar",
-          "displayLane": "signal_sidebar",
-          "selectionReason": "follow-builders 人物池来源；商业/产品变量：agent, agents, sdk；包含数据、客户或业务量级线索",
-          "ratingScore": 5,
-          "publishStatus": "frontstage_sidebar",
-          "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-          "relations": [],
-          "relatedSignals": [],
-          "relatedTrends": [],
-          "relatedTrendReports": [],
-          "tags": [
-            {
-              "id": "scenario-frontier-opinion",
-              "name": "前沿观点",
-              "group": "scenario",
-              "aliases": [
-                "观点证据",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "evidence-frontier-opinion",
-              "name": "前沿观点",
-              "group": "evidence",
-              "aliases": [
-                "观点",
-                "建造者观点"
-              ]
-            },
-            {
-              "id": "source-social",
-              "name": "社媒线索",
-              "group": "source",
-              "aliases": [
-                "X",
-                "社区"
-              ]
-            },
-            {
-              "id": "opinion-agent-workflow",
-              "name": "Agent 工作流观点",
-              "group": "opinion",
-              "aliases": [
-                "多 Agent",
-                "工作流"
-              ]
-            },
-            {
-              "id": "track-ai-coding",
-              "name": "AI Coding",
-              "group": "track",
-              "aliases": [
-                "AI-Coding",
-                "AI 编程"
-              ]
-            },
-            {
-              "id": "function-engineering",
-              "name": "工程研发",
-              "group": "function",
-              "aliases": [
-                "开发",
-                "仿真",
-                "工程"
-              ]
-            },
-            {
-              "id": "customer-developer-team",
-              "name": "开发团队",
-              "group": "customer",
-              "aliases": [
-                "工程团队"
-              ]
-            },
-            {
-              "id": "track-ai-agent",
-              "name": "AI Agent",
-              "group": "track",
-              "aliases": [
-                "AI-Agent",
-                "智能体"
-              ]
-            },
-            {
-              "id": "track-ai-governance",
-              "name": "AI 治理",
-              "group": "track",
-              "aliases": [
-                "Agent 治理",
-                "权限审计"
-              ]
-            },
-            {
-              "id": "scenario-agent-governance",
-              "name": "Agent 权限治理",
-              "group": "scenario",
-              "aliases": [
-                "审计",
-                "权限",
-                "风险控制"
-              ]
-            },
-            {
-              "id": "track-enterprise-workflow",
-              "name": "企业工作流",
-              "group": "track",
-              "aliases": [
-                "企业 AI 工作流",
-                "工作流自动化"
-              ]
-            },
-            {
-              "id": "customer-enterprise",
-              "name": "大中型企业",
-              "group": "customer",
-              "aliases": [
-                "企业客户"
-              ]
-            }
-          ]
         }
       ],
       "risks": [],
@@ -25928,6 +28529,7 @@ window.WaveSightContent = {
     "link": "brief.html"
   },
   "archives": [
+    "2026.06.04",
     "2026.06.03",
     "2026.06.02",
     "2026.06.01",

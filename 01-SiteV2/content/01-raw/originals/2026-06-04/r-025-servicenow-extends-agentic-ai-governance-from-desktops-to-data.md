@@ -1,0 +1,283 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-025
+title: "ServiceNow extends agentic AI governance from desktops to data ..."
+original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202605051259BIZWIRE_USPRX____20260505_BW530706-1"
+canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202605051259BIZWIRE_USPRX____20260505_BW530706-1"
+source_name: "keyword search / Anysearch"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-04T00:38:27.996Z
+language: mixed
+full_text_hash: 7529a550e8834f6e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-025-servicenow-extends-agentic-ai-governance-from-desktops-to-data.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-04/r-025-servicenow-extends-agentic-ai-governance-from-desktops-to-data.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":9189,"paragraph_count":28,"sentence_count":45,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 9189
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7529a550e8834f6e","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 9f310fab8a62173e
+content_hash: 7529a550e8834f6e
+semantic_hash: 000f087b63e1fde6
+duplicate_of: ""
+first_seen_at: "2026-06-04T00:38:27.996Z"
+last_seen_at: 2026-06-04T00:38:27.996Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Nvidia","ServiceNow"],"products":["agent","agents"],"people":[],"industries":["制造 / 工业","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["05","2026","17","59 B","5","3","100 billion","20260505530706"],"quotes":["ServiceNow and NVIDIA set out to make AI real for the enterprise, and today we’re showing the proof of that work,","forward-looking statements"]}
+evidence_seed: {"company_actions":["ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model wo.","ServiceNow Inc ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA Twitter Facebook LinkedIn GooglePlus Pinterest May 05 2026 17:59 BST ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model workloads Open benchmarking standard for AI agents advan","This includes the introduction of Project Arc, a new enterprise autonomous desktop agent, secured by the NVIDIA OpenShell runtime and governed by ServiceNow AI Control Tower , that will live on employee desktops and autonomously complete complex work."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model wo.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ServiceNow Inc ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA Twitter Facebook LinkedIn GooglePlus Pinterest May 05 2026 17:59 BST ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model workloads Open benchmarking standard for AI agents advan","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This includes the introduction of Project Arc, a new enterprise autonomous desktop agent, secured by the NVIDIA OpenShell runtime and governed by ServiceNow AI Control Tower , that will live on employee desktops and autonomously complete complex work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ServiceNow AI Control Tower is also now included in the NVIDIA Enterprise AI Factory validated design , extending enterprise governance to large-scale model workloads.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The companies are advancing enterprise AI even further with an open benchmarking standard for evaluating AI agents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ServiceNow and NVIDIA have long partnered to bring enterprise-grade AI to some of the world's largest organizations through open models, AI software, and agent-ready skills.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# ServiceNow extends agentic AI governance from desktops to data ...
+
+## clean_text
+
+ServiceNow Inc
+ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+May 05 2026 17:59 BST
+ServiceNow
+introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower
+ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model workloads
+Open benchmarking standard for AI agents advances enterprise AI capabilities
+LAS VEGAS --(BUSINESS WIRE)--May 5, 2026--
+Knowledge 2026 — ServiceNow (NYSE: NOW), the AI control tower for business reinvention, today announced a significant expansion of its partnership with NVIDIA to extend agentic AI governance from desktops to data centers. This includes the introduction of Project Arc, a new enterprise autonomous desktop agent, secured by the NVIDIA OpenShell runtime and governed by ServiceNow AI Control Tower , that will live on employee desktops and autonomously complete complex work. ServiceNow AI Control Tower is also now included in the NVIDIA Enterprise AI Factory validated design , extending enterprise governance to large-scale model workloads. The companies are advancing enterprise AI even further with an open benchmarking standard for evaluating AI agents.
+ServiceNow and NVIDIA have long partnered to bring enterprise-grade AI to some of the world's largest organizations through open models, AI software, and agent-ready skills. From the development of specialized agents to the Apriel Nemotron open model family, the partnership has deepened at each stage of the AI era. Today's announcement connects how work gets done with how AI runs, bringing execution, governance, and intelligence to user endpoints and AI infrastructure.
+“ServiceNow and NVIDIA set out to make AI real for the enterprise, and today we’re showing the proof of that work,” said Joe Davis , executive vice president of AI Engineering & Delivery at ServiceNow . “Whether it’s autonomous AI agents that can be trusted on the desktop, governance that extends to the data center, or open benchmarks that hold the entire industry accountable, this is enterprise AI that’s built to last.”
+“Long-running, autonomous agents are rapidly changing the game for enterprise AI, and delivering them securely at scale requires governance that spans models, software and AI infrastructure,” said Kari Briski , vice president of Generative AI for Enterprise at NVIDIA. “Together, NVIDIA and ServiceNow are bringing enterprises agents that feature the security of the NVIDIA OpenShell runtime and the power of NVIDIA AI factory solutions with the ServiceNow AI Control Tower , providing the control layer necessary for trusted, autonomous operations across the business.”
+Project Arc: An enterprise autonomous desktop agent that is governed and secure from day one
+ServiceNow is introducing Project Arc, which is an enterprise autonomous desktop agent that thinks, writes code, executes, and adapts when things don’t go as expected, completing complex multi-step work across enterprise tools and systems without requiring pre-built workflows.
+Every action the agent takes runs inside NVIDIA OpenShell, a sandboxed runtime environment that adds policy-based management so that autonomous activity stays contained, auditable, and enterprise safe. ServiceNow AI Control Tower governs the actions the agent takes, setting policies, monitoring behavior, and logging files read, commands executed, and APIs called. The result is an autonomous desktop agent that enterprise security leaders can fully audit and approve with confidence.
+Powered by ServiceNow Action Fabric , which allows any AI agent to access the ServiceNow system of action, and grounded in the ServiceNow Configuration Management Database (CMDB), the agent has deep intelligence about the enterprise, pulling from workflows, systems, and operational history so that actions are informed by how work gets done. Project Arc also meets employees where they work through a desktop app, enterprise collaboration tools, or email, and is designed to provide the same governed execution, whatever the interface.
+Governing large-scale AI model workloads
+The ServiceNow AI Control Tower integration with the NVIDIA Enterprise AI Factory validated design was previewed at NVIDIA GTC in March and is now complete, extending enterprise governance to the infrastructure layer where large-scale AI model workloads run. For organizations managing AI at scale, this integration provides a unified governance layer for data centers. AI factory deployments governed by AI Control Tower gain continuous value, risk, and security management across the full model lifecycle, from discovery and inventory to real-time observability, compliance monitoring, and remediation.
+Capabilities available to AI factory customers through AI Control Tower include expanded regulatory content packs, enterprise access maps for major cloud providers, and a runtime cost and ROI management framework that tracks productivity gains and monthly value indicators.
+Measuring and advancing enterprise AI together
+ServiceNow and NVIDIA are advancing NOWAI-Bench , an open benchmarking suite comprising two frameworks: EnterpriseOps-Gym, a multi-step agentic evaluation framework spanning IT service management, customer service, and HR workflows, and EVA-Bench, a voice agent evaluation framework designed for enterprise settings. Both benchmarks are generally available as open-source releases, and NVIDIA is integrating both into NeMo Gym to make them reusable and accessible for automated model evaluation across the industry.
+The collaboration is already producing results. NVIDIA has evaluated NVIDIA Nemotron 3 Super on EnterpriseOps-Gym, with results demonstrating leading performance among open-weight models. On the voice side, EVA-Bench is serving as a primary benchmark for the development of NVIDIA Nemotron VoiceChat model, with ServiceNow and NVIDIA planning to publish joint evaluation results as the model reaches availability.
+Availability
+Project Arc is available as an early preview. The AI Control Tower integration with the NVIDIA Enterprise AI Factory validated design is generally available. NOWAI-Bench, including EnterpriseOps-Gym and EVA-Bench, is available now as an open-source release. Learn more about ServiceNow and NVIDIA’s partnership here .
+About ServiceNow
+ServiceNow (NYSE: NOW) is the AI control tower for business reinvention. The ServiceNow AI Platform integrates with any cloud, any model, and any data source to orchestrate how work flows across the enterprise. By unifying legacy systems, departmental tools, cloud applications, and AI agents, ServiceNow provides a single pane of glass that connects intelligence to execution across every corner of business. With more than 100 billion workflows running on the platform each year, ServiceNow helps organizations turn fragmented operations into coordinated, autonomous workflows that deliver measurable results. Learn how ServiceNow puts AI to work for people at www.servicenow.com.
+Forward-looking statements
+This press release contains “forward-looking statements” about the expectations, beliefs, plans, and intentions relating to ServiceNow and NVIDIA joint innovations. Such statements include statements regarding future product capabilities and offerings and expected benefits to ServiceNow . Forward-looking statements are subject to known and unknown risks and uncertainties and are based on potentially inaccurate assumptions that could cause actual results to differ materially from those expected or implied by the forward-looking statements. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, ServiceNow’s results could differ materially from the results expressed or implied by the forward-looking statements made. ServiceNow undertakes no obligation, and does not intend, to update the forward-looking statements. Factors that may cause actual results to differ materially from those in any forward-looking statements include: (i) delays and unexpected difficulties and expenses in executing the product capabilities and offerings, (ii) changes in the regulatory landscape related to AI and (iii) uncertainty as to whether sales will justify the investments in the product capabilities and offerings. Further information on factors that could affect ServiceNow’s financial and other results is included in the filings ServiceNow makes with the Securities and Exchange Commission from time to time.
+© 2026 ServiceNow, Inc. All rights reserved. ServiceNow , the ServiceNow logo, Now, and other ServiceNow marks are trademarks and/or registered trademarks of ServiceNow, Inc. in the United States and/or other countries. Other company names, product names, and logos may be trademarks of the respective companies with which they are associated.
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260505530706/en/
+Media contact
+Katlyn Hirokawa
+408.489.7381
+press@servicenow.com
+Source: ServiceNow
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+
+## full_text
+
+ServiceNow Inc
+ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+May 05 2026 17:59 BST
+ServiceNow
+introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower
+ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model workloads
+Open benchmarking standard for AI agents advances enterprise AI capabilities
+LAS VEGAS --(BUSINESS WIRE)--May 5, 2026--
+Knowledge 2026 — ServiceNow (NYSE: NOW), the AI control tower for business reinvention, today announced a significant expansion of its partnership with NVIDIA to extend agentic AI governance from desktops to data centers. This includes the introduction of Project Arc, a new enterprise autonomous desktop agent, secured by the NVIDIA OpenShell runtime and governed by ServiceNow AI Control Tower , that will live on employee desktops and autonomously complete complex work. ServiceNow AI Control Tower is also now included in the NVIDIA Enterprise AI Factory validated design , extending enterprise governance to large-scale model workloads. The companies are advancing enterprise AI even further with an open benchmarking standard for evaluating AI agents.
+ServiceNow and NVIDIA have long partnered to bring enterprise-grade AI to some of the world's largest organizations through open models, AI software, and agent-ready skills. From the development of specialized agents to the Apriel Nemotron open model family, the partnership has deepened at each stage of the AI era. Today's announcement connects how work gets done with how AI runs, bringing execution, governance, and intelligence to user endpoints and AI infrastructure.
+“ServiceNow and NVIDIA set out to make AI real for the enterprise, and today we’re showing the proof of that work,” said Joe Davis , executive vice president of AI Engineering & Delivery at ServiceNow . “Whether it’s autonomous AI agents that can be trusted on the desktop, governance that extends to the data center, or open benchmarks that hold the entire industry accountable, this is enterprise AI that’s built to last.”
+“Long-running, autonomous agents are rapidly changing the game for enterprise AI, and delivering them securely at scale requires governance that spans models, software and AI infrastructure,” said Kari Briski , vice president of Generative AI for Enterprise at NVIDIA. “Together, NVIDIA and ServiceNow are bringing enterprises agents that feature the security of the NVIDIA OpenShell runtime and the power of NVIDIA AI factory solutions with the ServiceNow AI Control Tower , providing the control layer necessary for trusted, autonomous operations across the business.”
+Project Arc: An enterprise autonomous desktop agent that is governed and secure from day one
+ServiceNow is introducing Project Arc, which is an enterprise autonomous desktop agent that thinks, writes code, executes, and adapts when things don’t go as expected, completing complex multi-step work across enterprise tools and systems without requiring pre-built workflows.
+Every action the agent takes runs inside NVIDIA OpenShell, a sandboxed runtime environment that adds policy-based management so that autonomous activity stays contained, auditable, and enterprise safe. ServiceNow AI Control Tower governs the actions the agent takes, setting policies, monitoring behavior, and logging files read, commands executed, and APIs called. The result is an autonomous desktop agent that enterprise security leaders can fully audit and approve with confidence.
+Powered by ServiceNow Action Fabric , which allows any AI agent to access the ServiceNow system of action, and grounded in the ServiceNow Configuration Management Database (CMDB), the agent has deep intelligence about the enterprise, pulling from workflows, systems, and operational history so that actions are informed by how work gets done. Project Arc also meets employees where they work through a desktop app, enterprise collaboration tools, or email, and is designed to provide the same governed execution, whatever the interface.
+Governing large-scale AI model workloads
+The ServiceNow AI Control Tower integration with the NVIDIA Enterprise AI Factory validated design was previewed at NVIDIA GTC in March and is now complete, extending enterprise governance to the infrastructure layer where large-scale AI model workloads run. For organizations managing AI at scale, this integration provides a unified governance layer for data centers. AI factory deployments governed by AI Control Tower gain continuous value, risk, and security management across the full model lifecycle, from discovery and inventory to real-time observability, compliance monitoring, and remediation.
+Capabilities available to AI factory customers through AI Control Tower include expanded regulatory content packs, enterprise access maps for major cloud providers, and a runtime cost and ROI management framework that tracks productivity gains and monthly value indicators.
+Measuring and advancing enterprise AI together
+ServiceNow and NVIDIA are advancing NOWAI-Bench , an open benchmarking suite comprising two frameworks: EnterpriseOps-Gym, a multi-step agentic evaluation framework spanning IT service management, customer service, and HR workflows, and EVA-Bench, a voice agent evaluation framework designed for enterprise settings. Both benchmarks are generally available as open-source releases, and NVIDIA is integrating both into NeMo Gym to make them reusable and accessible for automated model evaluation across the industry.
+The collaboration is already producing results. NVIDIA has evaluated NVIDIA Nemotron 3 Super on EnterpriseOps-Gym, with results demonstrating leading performance among open-weight models. On the voice side, EVA-Bench is serving as a primary benchmark for the development of NVIDIA Nemotron VoiceChat model, with ServiceNow and NVIDIA planning to publish joint evaluation results as the model reaches availability.
+Availability
+Project Arc is available as an early preview. The AI Control Tower integration with the NVIDIA Enterprise AI Factory validated design is generally available. NOWAI-Bench, including EnterpriseOps-Gym and EVA-Bench, is available now as an open-source release. Learn more about ServiceNow and NVIDIA’s partnership here .
+About ServiceNow
+ServiceNow (NYSE: NOW) is the AI control tower for business reinvention. The ServiceNow AI Platform integrates with any cloud, any model, and any data source to orchestrate how work flows across the enterprise. By unifying legacy systems, departmental tools, cloud applications, and AI agents, ServiceNow provides a single pane of glass that connects intelligence to execution across every corner of business. With more than 100 billion workflows running on the platform each year, ServiceNow helps organizations turn fragmented operations into coordinated, autonomous workflows that deliver measurable results. Learn how ServiceNow puts AI to work for people at www.servicenow.com.
+Forward-looking statements
+This press release contains “forward-looking statements” about the expectations, beliefs, plans, and intentions relating to ServiceNow and NVIDIA joint innovations. Such statements include statements regarding future product capabilities and offerings and expected benefits to ServiceNow . Forward-looking statements are subject to known and unknown risks and uncertainties and are based on potentially inaccurate assumptions that could cause actual results to differ materially from those expected or implied by the forward-looking statements. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, ServiceNow’s results could differ materially from the results expressed or implied by the forward-looking statements made. ServiceNow undertakes no obligation, and does not intend, to update the forward-looking statements. Factors that may cause actual results to differ materially from those in any forward-looking statements include: (i) delays and unexpected difficulties and expenses in executing the product capabilities and offerings, (ii) changes in the regulatory landscape related to AI and (iii) uncertainty as to whether sales will justify the investments in the product capabilities and offerings. Further information on factors that could affect ServiceNow’s financial and other results is included in the filings ServiceNow makes with the Securities and Exchange Commission from time to time.
+© 2026 ServiceNow, Inc. All rights reserved. ServiceNow , the ServiceNow logo, Now, and other ServiceNow marks are trademarks and/or registered trademarks of ServiceNow, Inc. in the United States and/or other countries. Other company names, product names, and logos may be trademarks of the respective companies with which they are associated.
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260505530706/en/
+Media contact
+Katlyn Hirokawa
+408.489.7381
+press@servicenow.com
+Source: ServiceNow
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":9189,"paragraph_count":28,"sentence_count":45,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model wo.
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ServiceNow Inc ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA Twitter Facebook LinkedIn GooglePlus Pinterest May 05 2026 17:59 BST ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model workloads Open benchmarking standard for AI agents advan
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   This includes the introduction of Project Arc, a new enterprise autonomous desktop agent, secured by the NVIDIA OpenShell runtime and governed by ServiceNow AI Control Tower , that will live on employee desktops and autonomously complete complex work.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ServiceNow AI Control Tower is also now included in the NVIDIA Enterprise AI Factory validated design , extending enterprise governance to large-scale model workloads.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The companies are advancing enterprise AI even further with an open benchmarking standard for evaluating AI agents.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ServiceNow and NVIDIA have long partnered to bring enterprise-grade AI to some of the world's largest organizations through open models, AI software, and agent-ready skills.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Nvidia, ServiceNow
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 制造 / 工业, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 05, 2026, 17, 59 B, 5, 3, 100 billion, 20260505530706
+- quotes: ServiceNow and NVIDIA set out to make AI real for the enterprise, and today we’re showing the proof of that work, / forward-looking statements
+
+## evidence_seed
+
+- company_actions: ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model wo. / ServiceNow Inc ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA Twitter Facebook LinkedIn GooglePlus Pinterest May 05 2026 17:59 BST ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model workloads Open benchmarking standard for AI agents advan / This includes the introduction of Project Arc, a new enterprise autonomous desktop agent, secured by the NVIDIA OpenShell runtime and governed by ServiceNow AI Control Tower , that will live on employee desktops and autonomously complete complex work.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+ServiceNow introduces Project Arc: an enterprise autonomous desktop agent secured by NVIDIA OpenShell and governed by ServiceNow AI Control Tower ServiceNow AI Control Tower is now included in the NVIDIA Enterprise AI Factory validated design, extending enterprise governance to large-scale model wo.
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
