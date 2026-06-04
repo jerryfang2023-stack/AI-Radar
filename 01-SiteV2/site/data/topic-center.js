@@ -1,14 +1,14 @@
 window.WaveSightTopicCenter = {
   "meta": {
-    "version": "V1.1.1",
+    "version": "V1.2.0",
     "date": "2026-06-04",
-    "generatedAt": "2026-06-04T00:38:53.506Z",
+    "generatedAt": "2026-06-04T02:52:51.206Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
     "sources": {
-      "raw_pool_pitch": 5,
-      "industry_chain": 5,
+      "raw_pool_pitch": 0,
+      "industry_chain": 2,
       "builders": 5,
       "viral_rewrite": 5
     }
@@ -37,342 +37,6 @@ window.WaveSightTopicCenter = {
   ],
   "topics": [
     {
-      "id": "raw_pool_pitch-daily-observation-1",
-      "sourceId": "raw_pool_pitch",
-      "sourceName": "Raw-Pool-Pitch",
-      "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "今日观察",
-      "baseId": "daily-observation",
-      "title": "Claude Code v2.1.162 发布",
-      "type": "daily",
-      "audience": "企业老板 / 业务负责人",
-      "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-      "relevance": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-      "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-      "source": "今日观察",
-      "url": "daily-detail.html",
-      "date": "2026-06-04",
-      "score": 96,
-      "grade": "S",
-      "priority": "S级选题",
-      "scoreBreakdown": {
-        "conflict": 24,
-        "roleChange": 19,
-        "counterIntuit": 14,
-        "storyHook": 14,
-        "insight": 14,
-        "evidence": 10
-      },
-      "angles": [
-        {
-          "title": "Claude Code v2.1.162 发布 改变的是哪一类企业判断",
-          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
-        },
-        {
-          "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
-        },
-        {
-          "title": "能不能转成前台 Card",
-          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-        }
-      ]
-    },
-    {
-      "id": "raw_pool_pitch-sig-20260604-a02-2",
-      "sourceId": "raw_pool_pitch",
-      "sourceName": "Raw-Pool-Pitch",
-      "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "theverge.com",
-      "baseId": "SIG-20260604-A02",
-      "title": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
-      "type": "product-service",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "B 级来源，当前材料来自 theverge.com。",
-      "source": "theverge.com",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
-      "date": "2026-06-04",
-      "score": 90,
-      "grade": "A",
-      "priority": "S级选题",
-      "scoreBreakdown": {
-        "conflict": 23,
-        "roleChange": 18,
-        "counterIntuit": 14,
-        "storyHook": 14,
-        "insight": 14,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "Google Gemini AI 智能体 Spark 上手体验 改变的是哪一类企业判断",
-          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        },
-        {
-          "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 theverge.com。"
-        },
-        {
-          "title": "能不能转成前台 Card",
-          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-        }
-      ]
-    },
-    {
-      "id": "raw_pool_pitch-sig-20260604-a03-3",
-      "sourceId": "raw_pool_pitch",
-      "sourceName": "Raw-Pool-Pitch",
-      "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "techcrunch.com",
-      "baseId": "SIG-20260604-A03",
-      "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
-      "type": "case",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "A 级来源，当前材料来自 techcrunch.com。",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
-      "date": "2026-06-04",
-      "score": 89,
-      "grade": "A",
-      "priority": "优先观察",
-      "scoreBreakdown": {
-        "conflict": 22,
-        "roleChange": 18,
-        "counterIntuit": 13,
-        "storyHook": 13,
-        "insight": 13,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 改变的是哪一类企业判断",
-          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        },
-        {
-          "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
-        },
-        {
-          "title": "能不能转成前台 Card",
-          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-        }
-      ]
-    },
-    {
-      "id": "raw_pool_pitch-sig-20260604-a04-4",
-      "sourceId": "raw_pool_pitch",
-      "sourceName": "Raw-Pool-Pitch",
-      "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "research.google",
-      "baseId": "SIG-20260604-A04",
-      "title": "洪水韧性新篇章：Google 开源水文建模框架",
-      "type": "product-service",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "core": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "S 级来源，当前材料来自 research.google。",
-      "source": "research.google",
-      "url": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
-      "date": "2026-06-04",
-      "score": 88,
-      "grade": "A",
-      "priority": "优先观察",
-      "scoreBreakdown": {
-        "conflict": 22,
-        "roleChange": 18,
-        "counterIntuit": 13,
-        "storyHook": 13,
-        "insight": 13,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "洪水韧性新篇章 改变的是哪一类企业判断",
-          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        },
-        {
-          "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 research.google。"
-        },
-        {
-          "title": "能不能转成前台 Card",
-          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-        }
-      ]
-    },
-    {
-      "id": "raw_pool_pitch-sig-20260604-a05-5",
-      "sourceId": "raw_pool_pitch",
-      "sourceName": "Raw-Pool-Pitch",
-      "sourceDesc": "每日 Raw / Pool / Card 产物",
-      "subSource": "techcrunch.com",
-      "baseId": "SIG-20260604-A05",
-      "title": "Here's the full list of 49 US AI startups that have raised $100M or ...",
-      "type": "case",
-      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-      "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-      "evidence": "A 级来源，当前材料来自 techcrunch.com。",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
-      "date": "2026-06-04",
-      "score": 87,
-      "grade": "A",
-      "priority": "优先观察",
-      "scoreBreakdown": {
-        "conflict": 22,
-        "roleChange": 17,
-        "counterIntuit": 13,
-        "storyHook": 13,
-        "insight": 13,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "Here's the full list of 49 US AI s 改变的是哪一类企业判断",
-          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-        },
-        {
-          "title": "这件事为什么不是普通新闻",
-          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
-        },
-        {
-          "title": "能不能转成前台 Card",
-          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-        }
-      ]
-    },
-    {
-      "id": "industry_chain-anthropic-engineering-at-anthropic-inside-the-team-build-1",
-      "sourceId": "industry_chain",
-      "sourceName": "产业链分析",
-      "sourceDesc": "arXiv / HN / 官方博客",
-      "subSource": "Anthropic Blog",
-      "baseId": "anthropic-engineering-at-anthropic-inside-the-team-building-reliab",
-      "title": "Engineering at Anthropic: Inside the team building reliable AI systems",
-      "type": "official",
-      "audience": "AI 行业从业者 / 投资分析师",
-      "core": "Anthropic 官方工程博客文章：Engineering at Anthropic: Inside the team building reliable AI systems",
-      "relevance": "头部 AI 公司工程实践反映行业瓶颈和突破方向。",
-      "evidence": "Anthropic Engineering Blog",
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/engineering",
-      "date": "2026-06-04",
-      "score": 86,
-      "grade": "A",
-      "priority": "优先观察",
-      "scoreBreakdown": {
-        "conflict": 22,
-        "roleChange": 17,
-        "counterIntuit": 13,
-        "storyHook": 13,
-        "insight": 13,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "从 Engineering at Anthropic 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Anthropic Engineering Blog"
-        },
-        {
-          "title": "Engineering at Anthropic 会先影响谁的采购单",
-          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-        },
-        {
-          "title": "这不是技术升级，而是责任边界重画",
-          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司工程实践反映行业瓶颈和突破方向。"
-        }
-      ]
-    },
-    {
-      "id": "industry_chain-google-ai-i-o-2026-welcome-to-the-agentic-gemini-era-2",
-      "sourceId": "industry_chain",
-      "sourceName": "产业链分析",
-      "sourceDesc": "arXiv / HN / 官方博客",
-      "subSource": "Google AI",
-      "baseId": "google-ai-i-o-2026-welcome-to-the-agentic-gemini-era",
-      "title": "I/O 2026: Welcome to the agentic Gemini era",
-      "type": "official",
-      "audience": "AI 行业从业者 / 投资人",
-      "core": "Google AI 官方博客：I/O 2026: Welcome to the agentic Gemini era",
-      "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
-      "evidence": "Google AI",
-      "source": "Google AI",
-      "url": "https://blog.google/technology/ai/",
-      "date": "2026-06-04",
-      "score": 85,
-      "grade": "B",
-      "priority": "优先观察",
-      "scoreBreakdown": {
-        "conflict": 21,
-        "roleChange": 17,
-        "counterIntuit": 13,
-        "storyHook": 13,
-        "insight": 13,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "从 I/O 2026 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Google AI"
-        },
-        {
-          "title": "I/O 2026 会先影响谁的采购单",
-          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-        },
-        {
-          "title": "这不是技术升级，而是责任边界重画",
-          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
-        }
-      ]
-    },
-    {
-      "id": "industry_chain-deepmind-explore-our-next-generation-ai-systems-3",
-      "sourceId": "industry_chain",
-      "sourceName": "产业链分析",
-      "sourceDesc": "arXiv / HN / 官方博客",
-      "subSource": "DeepMind",
-      "baseId": "deepmind-explore-our-next-generation-ai-systems",
-      "title": "Explore our next generation AI systems",
-      "type": "official",
-      "audience": "AI 行业从业者 / 投资人",
-      "core": "DeepMind 官方博客：Explore our next generation AI systems",
-      "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
-      "evidence": "DeepMind",
-      "source": "DeepMind",
-      "url": "https://deepmind.google/blog/",
-      "date": "2026-06-04",
-      "score": 85,
-      "grade": "B",
-      "priority": "优先观察",
-      "scoreBreakdown": {
-        "conflict": 21,
-        "roleChange": 17,
-        "counterIntuit": 13,
-        "storyHook": 13,
-        "insight": 13,
-        "evidence": 9
-      },
-      "angles": [
-        {
-          "title": "从 Explore our next generation AI sys 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：DeepMind"
-        },
-        {
-          "title": "Explore our next generation AI sys 会先影响谁的采购单",
-          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-        },
-        {
-          "title": "这不是技术升级，而是责任边界重画",
-          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
-        }
-      ]
-    },
-    {
       "id": "industry_chain-hn-48383056-4",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
@@ -384,15 +48,15 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "https:&#x2F;&#x2F;www.bloomberg.com&#x2F;news&#x2F;articles&#x2F;2026-06-02&#x2F;uber-caps... ( https:&#x2F;&#x2F;archive.ph&#x2F;ZrwAy )",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 350 points · pdyc",
+      "evidence": "Hacker News · 377 points · pdyc",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48383056",
       "date": "2026-06-03",
-      "score": 82,
+      "score": 81,
       "grade": "B",
       "priority": "候选",
       "scoreBreakdown": {
-        "conflict": 21,
+        "conflict": 20,
         "roleChange": 16,
         "counterIntuit": 12,
         "storyHook": 12,
@@ -402,7 +66,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 Uber's $1 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 350 points · pdyc"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 377 points · pdyc"
         },
         {
           "title": "Uber's $1 会先影响谁的采购单",
@@ -426,16 +90,16 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "The ways we contain Claude across products",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 3 points · jbredeche",
+      "evidence": "Hacker News · 49 points · jbredeche",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48392082",
       "date": "2026-06-04",
-      "score": 77,
-      "grade": "C",
+      "score": 78,
+      "grade": "B",
       "priority": "候选",
       "scoreBreakdown": {
-        "conflict": 19,
-        "roleChange": 15,
+        "conflict": 20,
+        "roleChange": 16,
         "counterIntuit": 12,
         "storyHook": 12,
         "insight": 12,
@@ -444,7 +108,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 The ways we contain Claude across  看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 3 points · jbredeche"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 49 points · jbredeche"
         },
         {
           "title": "The ways we contain Claude across  会先影响谁的采购单",
@@ -880,342 +544,6 @@ window.WaveSightTopicCenter = {
   "grouped": {
     "events": [
       {
-        "id": "raw_pool_pitch-daily-observation-1",
-        "sourceId": "raw_pool_pitch",
-        "sourceName": "Raw-Pool-Pitch",
-        "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "今日观察",
-        "baseId": "daily-observation",
-        "title": "Claude Code v2.1.162 发布",
-        "type": "daily",
-        "audience": "企业老板 / 业务负责人",
-        "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-        "relevance": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-        "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-        "source": "今日观察",
-        "url": "daily-detail.html",
-        "date": "2026-06-04",
-        "score": 96,
-        "grade": "S",
-        "priority": "S级选题",
-        "scoreBreakdown": {
-          "conflict": 24,
-          "roleChange": 19,
-          "counterIntuit": 14,
-          "storyHook": 14,
-          "insight": 14,
-          "evidence": 10
-        },
-        "angles": [
-          {
-            "title": "Claude Code v2.1.162 发布 改变的是哪一类企业判断",
-            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
-          },
-          {
-            "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
-          },
-          {
-            "title": "能不能转成前台 Card",
-            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-          }
-        ]
-      },
-      {
-        "id": "raw_pool_pitch-sig-20260604-a02-2",
-        "sourceId": "raw_pool_pitch",
-        "sourceName": "Raw-Pool-Pitch",
-        "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "theverge.com",
-        "baseId": "SIG-20260604-A02",
-        "title": "Google Gemini AI 智能体 Spark 上手体验：高效得令人不安，但也暴露了空洞的承诺",
-        "type": "product-service",
-        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-        "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "B 级来源，当前材料来自 theverge.com。",
-        "source": "theverge.com",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
-        "date": "2026-06-04",
-        "score": 90,
-        "grade": "A",
-        "priority": "S级选题",
-        "scoreBreakdown": {
-          "conflict": 23,
-          "roleChange": 18,
-          "counterIntuit": 14,
-          "storyHook": 14,
-          "insight": 14,
-          "evidence": 9
-        },
-        "angles": [
-          {
-            "title": "Google Gemini AI 智能体 Spark 上手体验 改变的是哪一类企业判断",
-            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-          },
-          {
-            "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：B 级来源，当前材料来自 theverge.com。"
-          },
-          {
-            "title": "能不能转成前台 Card",
-            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-          }
-        ]
-      },
-      {
-        "id": "raw_pool_pitch-sig-20260604-a03-3",
-        "sourceId": "raw_pool_pitch",
-        "sourceName": "Raw-Pool-Pitch",
-        "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "techcrunch.com",
-        "baseId": "SIG-20260604-A03",
-        "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
-        "type": "case",
-        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-        "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "A 级来源，当前材料来自 techcrunch.com。",
-        "source": "techcrunch.com",
-        "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
-        "date": "2026-06-04",
-        "score": 89,
-        "grade": "A",
-        "priority": "优先观察",
-        "scoreBreakdown": {
-          "conflict": 22,
-          "roleChange": 18,
-          "counterIntuit": 13,
-          "storyHook": 13,
-          "insight": 13,
-          "evidence": 9
-        },
-        "angles": [
-          {
-            "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 改变的是哪一类企业判断",
-            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-          },
-          {
-            "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
-          },
-          {
-            "title": "能不能转成前台 Card",
-            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-          }
-        ]
-      },
-      {
-        "id": "raw_pool_pitch-sig-20260604-a04-4",
-        "sourceId": "raw_pool_pitch",
-        "sourceName": "Raw-Pool-Pitch",
-        "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "research.google",
-        "baseId": "SIG-20260604-A04",
-        "title": "洪水韧性新篇章：Google 开源水文建模框架",
-        "type": "product-service",
-        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-        "core": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "S 级来源，当前材料来自 research.google。",
-        "source": "research.google",
-        "url": "https://research.google/blog/the-next-chapter-in-flood-resilience-open-sourcing-googles-hydrology-framework",
-        "date": "2026-06-04",
-        "score": 88,
-        "grade": "A",
-        "priority": "优先观察",
-        "scoreBreakdown": {
-          "conflict": 22,
-          "roleChange": 18,
-          "counterIntuit": 13,
-          "storyHook": 13,
-          "insight": 13,
-          "evidence": 9
-        },
-        "angles": [
-          {
-            "title": "洪水韧性新篇章 改变的是哪一类企业判断",
-            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-          },
-          {
-            "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 research.google。"
-          },
-          {
-            "title": "能不能转成前台 Card",
-            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-          }
-        ]
-      },
-      {
-        "id": "raw_pool_pitch-sig-20260604-a05-5",
-        "sourceId": "raw_pool_pitch",
-        "sourceName": "Raw-Pool-Pitch",
-        "sourceDesc": "每日 Raw / Pool / Card 产物",
-        "subSource": "techcrunch.com",
-        "baseId": "SIG-20260604-A05",
-        "title": "Here's the full list of 49 US AI startups that have raised $100M or ...",
-        "type": "case",
-        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
-        "core": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
-        "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
-        "evidence": "A 级来源，当前材料来自 techcrunch.com。",
-        "source": "techcrunch.com",
-        "url": "https://techcrunch.com/2024/12/20/heres-the-full-list-of-49-us-ai-startups-that-have-raised-100m-or-more-in-2024/",
-        "date": "2026-06-04",
-        "score": 87,
-        "grade": "A",
-        "priority": "优先观察",
-        "scoreBreakdown": {
-          "conflict": 22,
-          "roleChange": 17,
-          "counterIntuit": 13,
-          "storyHook": 13,
-          "insight": 13,
-          "evidence": 9
-        },
-        "angles": [
-          {
-            "title": "Here's the full list of 49 US AI s 改变的是哪一类企业判断",
-            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
-          },
-          {
-            "title": "这件事为什么不是普通新闻",
-            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：A 级来源，当前材料来自 techcrunch.com。"
-          },
-          {
-            "title": "能不能转成前台 Card",
-            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
-          }
-        ]
-      },
-      {
-        "id": "industry_chain-anthropic-engineering-at-anthropic-inside-the-team-build-1",
-        "sourceId": "industry_chain",
-        "sourceName": "产业链分析",
-        "sourceDesc": "arXiv / HN / 官方博客",
-        "subSource": "Anthropic Blog",
-        "baseId": "anthropic-engineering-at-anthropic-inside-the-team-building-reliab",
-        "title": "Engineering at Anthropic: Inside the team building reliable AI systems",
-        "type": "official",
-        "audience": "AI 行业从业者 / 投资分析师",
-        "core": "Anthropic 官方工程博客文章：Engineering at Anthropic: Inside the team building reliable AI systems",
-        "relevance": "头部 AI 公司工程实践反映行业瓶颈和突破方向。",
-        "evidence": "Anthropic Engineering Blog",
-        "source": "Anthropic Blog",
-        "url": "https://www.anthropic.com/engineering",
-        "date": "2026-06-04",
-        "score": 86,
-        "grade": "A",
-        "priority": "优先观察",
-        "scoreBreakdown": {
-          "conflict": 22,
-          "roleChange": 17,
-          "counterIntuit": 13,
-          "storyHook": 13,
-          "insight": 13,
-          "evidence": 9
-        },
-        "angles": [
-          {
-            "title": "从 Engineering at Anthropic 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Anthropic Engineering Blog"
-          },
-          {
-            "title": "Engineering at Anthropic 会先影响谁的采购单",
-            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-          },
-          {
-            "title": "这不是技术升级，而是责任边界重画",
-            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司工程实践反映行业瓶颈和突破方向。"
-          }
-        ]
-      },
-      {
-        "id": "industry_chain-google-ai-i-o-2026-welcome-to-the-agentic-gemini-era-2",
-        "sourceId": "industry_chain",
-        "sourceName": "产业链分析",
-        "sourceDesc": "arXiv / HN / 官方博客",
-        "subSource": "Google AI",
-        "baseId": "google-ai-i-o-2026-welcome-to-the-agentic-gemini-era",
-        "title": "I/O 2026: Welcome to the agentic Gemini era",
-        "type": "official",
-        "audience": "AI 行业从业者 / 投资人",
-        "core": "Google AI 官方博客：I/O 2026: Welcome to the agentic Gemini era",
-        "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
-        "evidence": "Google AI",
-        "source": "Google AI",
-        "url": "https://blog.google/technology/ai/",
-        "date": "2026-06-04",
-        "score": 85,
-        "grade": "B",
-        "priority": "优先观察",
-        "scoreBreakdown": {
-          "conflict": 21,
-          "roleChange": 17,
-          "counterIntuit": 13,
-          "storyHook": 13,
-          "insight": 13,
-          "evidence": 9
-        },
-        "angles": [
-          {
-            "title": "从 I/O 2026 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Google AI"
-          },
-          {
-            "title": "I/O 2026 会先影响谁的采购单",
-            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-          },
-          {
-            "title": "这不是技术升级，而是责任边界重画",
-            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
-          }
-        ]
-      },
-      {
-        "id": "industry_chain-deepmind-explore-our-next-generation-ai-systems-3",
-        "sourceId": "industry_chain",
-        "sourceName": "产业链分析",
-        "sourceDesc": "arXiv / HN / 官方博客",
-        "subSource": "DeepMind",
-        "baseId": "deepmind-explore-our-next-generation-ai-systems",
-        "title": "Explore our next generation AI systems",
-        "type": "official",
-        "audience": "AI 行业从业者 / 投资人",
-        "core": "DeepMind 官方博客：Explore our next generation AI systems",
-        "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
-        "evidence": "DeepMind",
-        "source": "DeepMind",
-        "url": "https://deepmind.google/blog/",
-        "date": "2026-06-04",
-        "score": 85,
-        "grade": "B",
-        "priority": "优先观察",
-        "scoreBreakdown": {
-          "conflict": 21,
-          "roleChange": 17,
-          "counterIntuit": 13,
-          "storyHook": 13,
-          "insight": 13,
-          "evidence": 9
-        },
-        "angles": [
-          {
-            "title": "从 Explore our next generation AI sys 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：DeepMind"
-          },
-          {
-            "title": "Explore our next generation AI sys 会先影响谁的采购单",
-            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-          },
-          {
-            "title": "这不是技术升级，而是责任边界重画",
-            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
-          }
-        ]
-      },
-      {
         "id": "industry_chain-hn-48383056-4",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
@@ -1227,15 +555,15 @@ window.WaveSightTopicCenter = {
         "audience": "AI 从业者 / 技术决策者",
         "core": "https:&#x2F;&#x2F;www.bloomberg.com&#x2F;news&#x2F;articles&#x2F;2026-06-02&#x2F;uber-caps... ( https:&#x2F;&#x2F;archive.ph&#x2F;ZrwAy )",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 350 points · pdyc",
+        "evidence": "Hacker News · 377 points · pdyc",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48383056",
         "date": "2026-06-03",
-        "score": 82,
+        "score": 81,
         "grade": "B",
         "priority": "候选",
         "scoreBreakdown": {
-          "conflict": 21,
+          "conflict": 20,
           "roleChange": 16,
           "counterIntuit": 12,
           "storyHook": 12,
@@ -1245,7 +573,7 @@ window.WaveSightTopicCenter = {
         "angles": [
           {
             "title": "从 Uber's $1 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 350 points · pdyc"
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 377 points · pdyc"
           },
           {
             "title": "Uber's $1 会先影响谁的采购单",
@@ -1269,16 +597,16 @@ window.WaveSightTopicCenter = {
         "audience": "AI 从业者 / 技术决策者",
         "core": "The ways we contain Claude across products",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 3 points · jbredeche",
+        "evidence": "Hacker News · 49 points · jbredeche",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48392082",
         "date": "2026-06-04",
-        "score": 77,
-        "grade": "C",
+        "score": 78,
+        "grade": "B",
         "priority": "候选",
         "scoreBreakdown": {
-          "conflict": 19,
-          "roleChange": 15,
+          "conflict": 20,
+          "roleChange": 16,
           "counterIntuit": 12,
           "storyHook": 12,
           "insight": 12,
@@ -1287,7 +615,7 @@ window.WaveSightTopicCenter = {
         "angles": [
           {
             "title": "从 The ways we contain Claude across  看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 3 points · jbredeche"
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 49 points · jbredeche"
           },
           {
             "title": "The ways we contain Claude across  会先影响谁的采购单",

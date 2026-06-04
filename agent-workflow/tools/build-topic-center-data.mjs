@@ -6,7 +6,7 @@ const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
 const siteContentPath = path.join(siteDataDir, "site-content.json");
 const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
-const topicCenterVersion = "V1.1.1";
+const topicCenterVersion = "V1.2.0";
 const followBuildersDir = path.join(process.env.USERPROFILE || process.env.HOME || "", ".skill-store", "follow-builders");
 const followBuildersFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
@@ -649,6 +649,52 @@ function dedupe(items) {
   });
 }
 
+/**
+ * 加载前一天的 topic-center.json，构建跨天去重 key 集合。
+ * 仅当已有数据且日期不同于当前日期时生效（避免同一天重复跑时误杀）。
+ */
+function loadPreviousDedupKeys(date) {
+  const previous = readLocalJson(topicCenterJsonPath, null);
+  if (!previous || !previous.meta?.date || previous.meta.date === date) {
+    return new Set(); // 无历史数据 或 同一天已跑过 — 跳过跨天去重
+  }
+  const keys = new Set();
+  const collect = (item) => {
+    if (item.baseId) keys.add(`id:${item.baseId}`);
+    if (item.url) keys.add(`url:${slug(item.url)}`);
+    if (item.title) keys.add(`title:${slug(item.title)}`);
+  };
+  // 从历史 events 中采集
+  list(previous.grouped?.events).forEach(collect);
+  // 从历史 viewpoints 中采集（含合并前的原始 URL）
+  list(previous.grouped?.viewpoints).forEach((vp) => {
+    collect(vp);
+    if (Array.isArray(vp.originalUrls)) {
+      vp.originalUrls.forEach((url) => { if (url) keys.add(`url:${slug(url)}`); });
+    }
+  });
+  console.log(`[cross-day-dedup] loaded ${keys.size} dedup keys from ${previous.meta.date}`);
+  return keys;
+}
+
+/**
+ * 跨天去重过滤器：从 items 中移除与 previousKeys 匹配的项。
+ */
+function crossDayDedupe(items, previousKeys) {
+  if (!previousKeys || previousKeys.size === 0) return items;
+  const before = items.length;
+  const filtered = items.filter((item) => {
+    const itemKeys = [];
+    if (item.baseId) itemKeys.push(`id:${item.baseId}`);
+    if (item.url) itemKeys.push(`url:${slug(item.url)}`);
+    if (item.title) itemKeys.push(`title:${slug(item.title)}`);
+    return !itemKeys.some((key) => previousKeys.has(key));
+  });
+  const removed = before - filtered.length;
+  if (removed > 0) console.log(`[cross-day-dedup] filtered ${removed}/${before} items`);
+  return filtered;
+}
+
 function mergeViewpoints(builders, viralRewrite) {
   // 跨源去重：按 URL slug 去重
   const seen = new Set();
@@ -700,13 +746,20 @@ function mergeViewpoints(builders, viralRewrite) {
   });
 }
 
-async function buildTopics(content, date) {
-  const [rawPool, industryChain, builders, viralRewrite] = await Promise.all([
+async function buildTopics(content, date, previousKeys) {
+  let [rawPool, industryChain, builders, viralRewrite] = await Promise.all([
     Promise.resolve(rawPoolTopics(content, date)),
     fetchIndustryChain(date),
     fetchBuilders(date),
     fetchViralRewrites(date),
   ]);
+  // 跨天去重：移除与前一天重复的项
+  if (previousKeys && previousKeys.size > 0) {
+    rawPool = crossDayDedupe(rawPool, previousKeys);
+    industryChain = crossDayDedupe(industryChain, previousKeys);
+    builders = crossDayDedupe(builders, previousKeys);
+    viralRewrite = crossDayDedupe(viralRewrite, previousKeys);
+  }
   return {
     sources: sourceDefinitions(),
     topics: [...rawPool, ...industryChain, ...builders, ...viralRewrite],
@@ -721,7 +774,9 @@ async function main() {
   const siteContent = readJson(siteContentPath, {});
   const fallbackDate = text(siteContent.meta?.date).replaceAll(".", "-") || todayStr();
   const date = argValue("date", fallbackDate);
-  const { sources, topics, rawPool, industryChain, builders, viralRewrite } = await buildTopics(siteContent, date);
+  // 先加载历史数据做跨天去重（必须在生成新数据之前）
+  const previousKeys = loadPreviousDedupKeys(date);
+  const { sources, topics, rawPool, industryChain, builders, viralRewrite } = await buildTopics(siteContent, date, previousKeys);
   const counts = Object.fromEntries(sources.map((source) => [source.id, topics.filter((topic) => topic.sourceId === source.id).length]));
   const viewpoints = mergeViewpoints(builders, viralRewrite);
   const data = {
