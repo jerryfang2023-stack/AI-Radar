@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>观澜日报</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&family=Noto+Serif+SC:wght@600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    background: #fffdf8;
+    background-image:
+      linear-gradient(rgba(200,167,102,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,167,102,.03) 1px, transparent 1px);
+    background-size: 24px 24px, 24px 24px;
+  }
+  body {
+    width: 100%; max-width: 860px; margin: 0 auto;
+    background: transparent;
+    font-family: 'Noto Sans SC', -apple-system, sans-serif;
+    padding: 20px; color: #071827;
+  }
+  .container { padding: 32px 28px; }
+  .header {
+    display: flex; justify-content: space-between; align-items: end;
+    padding-bottom: 14px; border-bottom: 2px solid rgba(200,167,102,.35); margin-bottom: 20px;
+  }
+  .brand { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; color: #0d355c; letter-spacing: .03em; }
+  .brand small { display: block; font-size: 9px; letter-spacing: .28em; color: #c8a766; font-weight: 600; }
+  .date { font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: rgba(7,24,39,.52); font-weight: 500; }
+  .section { margin-top: 22px; }
+  .section-head {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Noto Serif SC', serif; font-size: 17px; font-weight: 600; color: #0d355c;
+    padding-bottom: 10px; border-bottom: 1px solid rgba(200,167,102,.2); margin-bottom: 14px;
+  }
+  .section-head .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 26px; height: 26px; border-radius: 8px; font-size: 13px;
+    background: #c8a766; color: #fffdf8;
+  }
+  .event { margin-bottom: 10px; }
+  .event-row {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 11px 14px; border-radius: 10px;
+    background: rgba(255,255,255,.78);
+    border: 1px solid rgba(7,24,39,.08);
+  }
+  .event-rank {
+    flex: 0 0 28px; font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700; font-size: 15px; line-height: 22px; text-align: center;
+  }
+  .event-rank.s { color: #9a4832; }
+  .event-rank.a { color: #e48322; }
+  .event-rank.b { color: #c8a766; }
+  .event-body { flex: 1; min-width: 0; }
+  .event-title { font-size: 14.5px; font-weight: 600; line-height: 1.5; color: #071827; }
+  .event-title .score {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600;
+    color: #fffdf8; background: #0d355c; padding: 1px 6px; border-radius: 5px;
+    margin-left: 5px; vertical-align: middle;
+  }
+  .event-title .score.top { background: #9a4832; }
+  .event-core { margin-top: 4px; font-size: 12px; line-height: 1.6; color: rgba(7,24,39,.62); }
+  .event-url { margin-top: 3px; font-size: 11px; }
+  .event-url a { color: #0d355c; text-decoration: none; border-bottom: 1px solid rgba(13,53,92,.2); }
+  .event-url a:hover { border-bottom-color: #0d355c; }
+  .people-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .person-card {
+    padding: 14px; border-radius: 10px;
+    background: linear-gradient(180deg, rgba(200,167,102,.12), rgba(255,253,248,.68));
+    border: 1px solid rgba(200,167,102,.25);
+  }
+  .person-name { font-weight: 700; font-size: 14px; color: #0d355c; }
+  .person-count {
+    display: inline-block; margin: 4px 0 6px;
+    padding: 1px 7px; border-radius: 999px;
+    background: rgba(200,167,102,.2); font-size: 10px; font-weight: 600; color: #876a2e;
+  }
+  .person-quote { margin-top: 6px; font-size: 12px; line-height: 1.65; color: rgba(7,24,39,.72); }
+  .person-quote::before { content: "\201C"; color: #c8a766; font-size: 14px; }
+  .person-quote::after { content: "\201D"; color: #c8a766; font-size: 14px; }
+  .person-link { margin-top: 4px; font-size: 10px; }
+  .person-link a { color: #0d355c; text-decoration: none; border-bottom: 1px solid rgba(13,53,92,.15); }
+  .signals { margin-top: 14px; }
+  .signal-row {
+    display: flex; gap: 10px; align-items: flex-start;
+    padding: 8px 0; border-top: 1px solid rgba(7,24,39,.06);
+  }
+  .signal-row:first-child { border-top: 0; }
+  .signal-tag {
+    flex: 0 0 100px; padding: 3px 8px; border-radius: 5px;
+    font-size: 11px; font-weight: 600; text-align: center;
+  }
+  .signal-tag.platform { background: rgba(13,53,92,.1); color: #0d355c; }
+  .signal-tag.adoption { background: rgba(228,131,34,.1); color: #e48322; }
+  .signal-tag.sentiment { background: rgba(23,115,76,.08); color: #17734c; }
+  .signal-text { font-size: 12px; line-height: 1.6; color: rgba(7,24,39,.72); }
+  .footer {
+    margin-top: 22px; padding-top: 14px;
+    border-top: 1px solid rgba(200,167,102,.2);
+    font-size: 11px; color: rgba(7,24,39,.38); text-align: center;
+  }
+  @media (max-width: 640px) {
+    body { padding: 0; }
+    .container { padding: 20px 14px; }
+    .people-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
+<div class="date">2026年6月4日</div>
+</div>
+
+<div class="section"><div class="section-head"><span class="badge">1</span> 今日最值得关注</div>
+<div class="event"><div class="event-row"><div class="event-rank s">1</div><div class="event-body"><div class="event-title">Claude Code v2.1.161 发布<span class="score top">S96</span></div><div class="event-core">今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。</div>
+<div class="event-url">📖 <a href="https://jerryfang2023-stack.github.io/AI-Radar/daily-detail.html">今日观察</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank s">2</div><div class="event-body"><div class="event-title">微软推出 MAI-Thinking-1 模型<span class="score top">S90</span></div><div class="event-core">这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://microsoft.ai/news/introducing-mai-thinking-1" target="_blank" rel="noopener">microsoft.ai</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a">3</div><div class="event-body"><div class="event-title">微软发布新MAI模型<span class="score ">A89</span></div><div class="event-core">这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://simonwillison.net/2026/Jun/2/microsofts-new-models" target="_blank" rel="noopener">simonwillison.net</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a">4</div><div class="event-body"><div class="event-title">NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师<span class="score ">A88</span></div><div class="event-core">这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw" target="_blank" rel="noopener">blogs.nvidia.com</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a">5</div><div class="event-body"><div class="event-title">微软 Build 2026：七项最重要的发布<span class="score ">A87</span></div><div class="event-core">这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements" target="_blank" rel="noopener">theverge.com</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a">6</div><div class="event-body"><div class="event-title">Engineering at Anthropic: Inside the team building reliable AI systems<span class="score ">A86</span></div><div class="event-core">Anthropic 官方工程博客文章：Engineering at Anthropic: Inside the team building reliable AI systems</div>
+<div class="event-url">🔗 <a href="https://www.anthropic.com/engineering" target="_blank" rel="noopener">Anthropic Blog</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a">7</div><div class="event-body"><div class="event-title">I/O 2026: Welcome to the agentic Gemini era<span class="score ">A85</span></div><div class="event-core">Google AI 官方博客：I/O 2026: Welcome to the agentic Gemini era</div>
+<div class="event-url">🔗 <a href="https://blog.google/technology/ai/" target="_blank" rel="noopener">Google AI</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank a">8</div><div class="event-body"><div class="event-title">Explore our next generation AI systems<span class="score ">A85</span></div><div class="event-core">DeepMind 官方博客：Explore our next generation AI systems</div>
+<div class="event-url">🔗 <a href="https://deepmind.google/blog/" target="_blank" rel="noopener">DeepMind</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank b">9</div><div class="event-body"><div class="event-title">MAI-Code-1-Flash<span class="score ">B83</span></div><div class="event-core">https:&#x2F;&#x2F;microsoft.ai&#x2F;models&#x2F;mai-code-1-flash&#x2F; https:&#x2F;&#x2F;microsoft.ai&#x2F;pdf&#x2F;MAI-Code-1-Flash-Model-Card.PDF Launching seven new MAI models: https:&#x2F;&#x2F;microsoft.ai&#x2F;news</div>
+<div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48374466" target="_blank" rel="noopener">Hacker News</a></div>
+</div></div></div>
+<div class="event"><div class="event-row"><div class="event-rank b">10</div><div class="event-body"><div class="event-title">AI outperforms law professors in Stanford Law study<span class="score ">C78</span></div><div class="event-core">https:&#x2F;&#x2F;law.stanford.edu&#x2F;wp-content&#x2F;uploads&#x2F;2026&#x2F;06&#x2F;salinas_...</div>
+<div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48377761" target="_blank" rel="noopener">Hacker News</a></div>
+</div></div></div>
+</div>
+
+<div class="section"><div class="section-head"><span class="badge">2</span> 今日关键人物观点</div><div class="people-grid">
+<div class="person-card"><div class="person-name">Kimberly Tan</div><div class="person-count">1 条观点</div>
+<div class="person-quote">29% 的财富 500 强企业和约 19% 的全球 2000 企业已在生产中采用 AI</div><div class="person-quote">企业 AI 采纳正在从实验阶段进入规模化部署</div>
+<div class="person-link"><a href="https://www.linkedin.com/pulse/ai-adoption-numbers-where-enterprise-actually-working-kimberly-tan-mygwf" target="_blank" rel="noopener">@kimberlytan</a></div>
+</div>
+<div class="person-card"><div class="person-name">Michael Truell (Cursor)</div><div class="person-count">1 条观点</div>
+<div class="person-quote">软件工程的演变：从手工编写每一行代码到管理 AI 代理协作</div>
+<div class="person-link"><a href="https://www.youtube.com/watch?v=8h9j2rskP14" target="_blank" rel="noopener">@cursor</a></div>
+</div>
+<div class="person-card"><div class="person-name">Helen Hastings (Quanta)</div><div class="person-count">1 条观点</div>
+<div class="person-quote">会计软件对初创公司来说是破碎的、手动的、落后数周的。她决定用 AI 彻底取代外包会计模式</div>
+<div class="person-link"><a href="https://getpodcast.com/podcast/the-product-market-fit-show/she-raised-20m-from-accel-to-replace-quickbooks-with-ai-helen-hastings_d951863a37" target="_blank" rel="noopener">@helenhastings</a></div>
+</div>
+</div></div>
+
+<div class="section"><div class="section-head"><span class="badge">3</span> 趋势信号</div>
+<div class="signal-row"><div class="signal-tag platform">平台格局</div><div class="signal-text">Alphabet 创纪录 850 亿美元融资投入 Google AI，微软 MAI 全线产品亮相 Build 2026，Anthropic Claude Code 持续迭代——三大 AI 巨头同时加码基础设施和企业级能力。</div></div>
+<div class="signal-row"><div class="signal-tag adoption">落地节奏</div><div class="signal-text">企业 AI 从 benchmark 竞赛转向治理和可运营阶段：Claude Code 的 OpenTelemetry 集成、凭证脱敏、故障隔离三项更新，将 AI 工具的评估权从 ML 团队移交给了 Infra 和 CISO。</div></div>
+<div class="signal-row"><div class="signal-tag sentiment">行业动态</div><div class="signal-text">Google Gemini Spark 智能体高效得令人不安，The Verge 评价其暴露了 AI 对 '生产力' 的片面追逐；NVIDIA NemoClaw 推动工业软件厂商构建自主 AI 工程师。</div></div>
+</div>
+
+<div class="footer">观澜AI · WaveSight AI · 2026-06-04</div>
+</div>
+</body>
+</html>
