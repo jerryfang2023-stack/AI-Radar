@@ -216,7 +216,7 @@ function normalizeSignal(signal, index, content) {
   const sourceUrl = text(signal.sourceUrl || signal.url || signal.link);
   const host = hostFromUrl(sourceUrl);
   const title = text(signal.frontend?.displayTitle || signal.editorialTitle || signal.title || signal.sourceTitle || `候选信号 ${index + 1}`);
-  return {
+  const item = {
     baseId: text(signal.id || signal.slug || slug(title)),
     title,
     type: text(signal.signalType || signal.type || signal.contentType || "signal").replaceAll("_", "-"),
@@ -229,6 +229,56 @@ function normalizeSignal(signal, index, content) {
     date: text(signal.date || content.meta?.date),
     score: 91 - Math.min(index, 7),
   };
+  // 尝试从原始文章提取原文摘要，替代管线失真概要
+  if (signal.sourcePath) {
+    const rawSummary = extractRawSummary(signal.sourcePath);
+    if (rawSummary) {
+      item.originalSummary = rawSummary;
+    }
+  }
+  return item;
+}
+
+/**
+ * 从信号卡的 YAML frontmatter → primary_raw.raw_json → discovery_record.discovery_summary
+ * 提取原始文章摘要（RSS 源原始描述，未经管线处理）
+ */
+function extractRawSummary(signalCardPath) {
+  try {
+    const absPath = path.resolve(root, signalCardPath);
+    if (!fs.existsSync(absPath)) return null;
+    const cardContent = fs.readFileSync(absPath, 'utf8');
+    const yamlMatch = cardContent.match(/^---\n([\s\S]*?)\n---/);
+    if (!yamlMatch) return null;
+    const yamlLines = yamlMatch[1].split('\n');
+    // 在 primary_raw: 块下找到 raw_json: 路径
+    let inPrimaryRaw = false;
+    let rawJsonPath = '';
+    for (const line of yamlLines) {
+      if (line.trimStart().startsWith('primary_raw:')) { inPrimaryRaw = true; continue; }
+      if (inPrimaryRaw && line.trimStart().startsWith('raw_json:')) {
+        rawJsonPath = line.replace(/^\s*raw_json:\s*['"]?/, '').replace(/['"]?\s*$/, '');
+        break;
+      }
+      if (inPrimaryRaw && line.length > 0 && !line.startsWith(' ') && !line.startsWith('\t')) {
+        inPrimaryRaw = false;
+      }
+    }
+    if (!rawJsonPath) return null;
+
+    const rawJsonAbs = path.resolve(root, rawJsonPath);
+    if (!fs.existsSync(rawJsonAbs)) return null;
+    const rawJson = JSON.parse(fs.readFileSync(rawJsonAbs, 'utf8'));
+    const summary = rawJson.discovery_record?.discovery_summary;
+    if (summary && summary.length > 10) return summary;
+
+    // fallback: 用 clean_text 前 200 字
+    const cleanText = rawJson.clean_text || rawJson.full_text || '';
+    if (cleanText.length > 20) return cleanText.slice(0, 200).replace(/\n+/g, ' ').trim();
+    return null;
+  } catch {
+    return null;
+  }
 }
 
 function rawPoolTopics(content, date) {
@@ -294,6 +344,9 @@ function toTopic(sourceId, item, index, date) {
     priority: priorityLabel(score),
     scoreBreakdown: item.scoreBreakdown || scoreParts(score),
   };
+  if (item.originalSummary) {
+    topic.originalSummary = item.originalSummary;
+  }
   topic.angles = Array.isArray(item.angles) && item.angles.length ? item.angles : angleSet(topic);
   return topic;
 }
