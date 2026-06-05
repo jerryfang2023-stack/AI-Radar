@@ -32,13 +32,13 @@
     display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
   }
   .date-picker label { font-size: 13px; color: rgba(7,24,39,.6); }
-  .date-picker select {
+  .date-picker input[type="date"] {
     font-family: 'IBM Plex Mono', monospace; font-size: 13px;
     padding: 6px 10px; border: 1px solid rgba(200,167,102,.4);
     border-radius: 6px; background: #fff; color: #071827;
-    outline: none; cursor: pointer;
+    outline: none;
   }
-  .date-picker select:focus { border-color: #c8a766; }
+  .date-picker input[type="date"]:focus { border-color: #c8a766; }
   .date-picker .nav-btn {
     display: inline-flex; align-items: center; justify-content: center;
     width: 32px; height: 32px; border-radius: 6px;
@@ -108,12 +108,13 @@
 <body>
 <div class="container">
 <div class="date-picker">
-  <label>浏览历史日报：</label>
-  <select id="date-picker" onchange="if(this.value) window.location.href=this.value;">
-    <option value="daily-brief-2026-06-03.html">2026-06-03</option>
-    <option value="daily-brief-2026-06-04.html">2026-06-04</option>
-    <option value="daily-brief-2026-06-05.html" selected>2026-06-05</option>
-  </select>
+  <label>选择日期：</label>
+  <input type="date" id="date-picker" value="2026-06-05" min="2026-06-05" max="2026-06-05">
+  <noscript>
+    <select onchange="location=this.value">
+      <option value="daily-brief-2026-06-05.html" selected>2026-06-05</option>
+    </select>
+  </noscript>
 </div>
 <div class="header">
   <div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
@@ -228,12 +229,12 @@
   <div class="signal-text">开发者社区热议 AI 工具效率与安全性之间的权衡，环境隔离而非模型拒绝成为最终防线。</div>
 </div>
 </div>
-<div class="footer">观澜AI · WaveSight AI · 2026-06-05 14:22</div>
+<div class="footer">观澜AI · WaveSight AI · 2026-06-05 14:21</div>
 </div>
 <script>
 /* 日期选择器 */
 (function() {
-  const dates = ["2026-06-03", "2026-06-04", "2026-06-05"];
+  const dates = ["2026-06-05"];
   const current = '2026-06-05';
   const picker = document.querySelector('.date-picker select, .date-picker input');
   if (!dates.length || !picker) return;
