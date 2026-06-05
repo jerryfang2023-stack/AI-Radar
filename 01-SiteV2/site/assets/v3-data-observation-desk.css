@@ -233,8 +233,8 @@ button {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .stat-card,
@@ -245,27 +245,27 @@ button {
 }
 
 .stat-card {
-  min-height: 112px;
-  padding: 12px;
+  min-height: 96px;
+  padding: 10px;
 }
 
 .stat-card h3 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-family: var(--serif);
-  font-size: var(--gl-type-card-title-size, 20px);
+  font-size: 18px;
   font-weight: var(--gl-weight-title, 600);
-  line-height: var(--gl-type-card-title-line, 30px);
+  line-height: 26px;
 }
 
 .stat-line {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 7px;
-  margin-bottom: 9px;
+  gap: 6px;
+  margin-bottom: 7px;
 }
 
 .stat-line div {
-  padding: 7px;
+  padding: 6px 7px;
   background: var(--blue-soft);
 }
 
@@ -279,11 +279,11 @@ button {
 
 .stat-line strong {
   display: block;
-  margin-top: 2px;
+  margin-top: 1px;
   font-family: var(--mono);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: var(--gl-weight-title, 600);
-  line-height: 28px;
+  line-height: 24px;
 }
 
 .tag-pills,
@@ -954,36 +954,237 @@ button {
 
 @media (max-width: 760px) {
   .desk-shell {
-    width: min(100% - 24px, 1480px);
-    padding-top: 18px;
+    width: min(100% - 18px, 1480px);
+    padding-top: 8px;
   }
 
   .desk-brandbar {
-    width: min(100% - 24px, 1480px);
-    align-items: flex-start;
+    width: min(100% - 18px, 1480px);
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 8px;
   }
 
   .desk-logo {
-    width: 142px;
+    width: 132px;
+  }
+
+  .desk-top-actions {
+    gap: 7px;
+  }
+
+  .desk-jump-link {
+    min-height: 30px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+
+  .brand-context {
+    display: none;
+  }
+
+  .desk-section {
+    padding: 10px 0;
   }
 
   .section-head,
   .row-main {
     display: grid;
     align-items: start;
+    gap: 8px;
+    margin-bottom: 8px;
   }
 
   .workbench-actions {
     justify-content: flex-start;
+    gap: 8px;
+    overflow: hidden;
+    width: 100%;
   }
 
-  .stats-grid,
+  .date-controls {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .date-controls select {
+    min-height: 32px;
+    min-width: 0;
+    padding: 0 6px;
+  }
+
+  .workbench-summary,
+  .result-count {
+    line-height: 18px;
+  }
+
+  .category-tabs {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .category-tabs::-webkit-scrollbar,
+  .stats-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-tabs button {
+    flex: 0 0 auto;
+    min-height: 32px;
+    padding: 0 12px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, minmax(128px, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(128px, 1fr);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 0 4px;
+    padding-bottom: 2px;
+  }
+
+  .stat-card {
+    min-height: 78px;
+    padding: 8px;
+    scroll-snap-align: start;
+  }
+
+  .stat-card h3 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .stat-line {
+    gap: 5px;
+    margin-bottom: 0;
+  }
+
+  .stat-line div {
+    padding: 0;
+    background: transparent;
+  }
+
+  .stat-line span {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .stat-line strong {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .stat-card .tag-pills {
+    display: none;
+  }
+
   .trend-links,
   .workbench-grid,
   .filters,
   .detail-main-grid,
   .detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .table-wrap {
+    border: 0;
+    background: transparent;
+  }
+
+  .card-table,
+  .card-table tbody,
+  .card-table tr,
+  .card-table td {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .card-table thead {
+    display: none;
+  }
+
+  .card-table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+  }
+
+  .card-summary-row {
+    border: 1px solid var(--line-soft);
+    background: rgba(255, 255, 255, .78);
+  }
+
+  .card-table td {
+    padding: 6px 10px;
+    border: 0;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .card-table td:nth-child(2),
+  .card-table td:nth-child(3) {
+    padding-top: 0;
+  }
+
+  .card-table td:nth-child(2)::before,
+  .card-table td:nth-child(3)::before {
+    display: inline-block;
+    margin-right: 6px;
+    color: var(--faint);
+    font-size: 11px;
+    font-weight: var(--gl-weight-label, 600);
+    line-height: 16px;
+  }
+
+  .card-table td:nth-child(2)::before {
+    content: "主体";
+  }
+
+  .card-table td:nth-child(3)::before {
+    content: "标签";
+  }
+
+  .card-table strong {
+    display: block;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .row-tags {
+    display: inline-flex;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .row-tags span {
+    min-height: 24px;
+    padding: 2px 6px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .card-preview-row.is-open {
+    display: block;
+    margin-top: -8px;
+  }
+
+  .card-preview-row td {
+    padding: 8px 10px 10px;
+    border: 1px solid var(--line-soft);
+    border-top: 0;
+  }
+
+  .inline-preview {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .detail-title {
