@@ -428,7 +428,13 @@ async function fetchRecommendedPaper(date) {
   });
   scored.sort((a, b) => b._score - a._score);
   let best = scored[0];
-  if (!best || best._score < 2) {
+  // 质量门：arXiv 最佳论文是否命中 vibe 核心词？
+  // 如果只有 build/tool/application 等泛词，不算真正的 vibecoding 内容
+  const hasVibeSignal = best ? /vibecode|vibe.?cod|copilot|code.?generat|code.?synthesis|programming.?assistant|ai.?assisted.?programming|ai.?programming|code.?complet|code.?repair|tutorial|getting.?start|beginner|practical.?guide|how.?to|step.?by.?step/i.test(
+    `${best.title} ${best.summary}`.toLowerCase()
+  ) : false;
+  // 如果 arXiv 分数高但没命中 vibe 核心词，或者分数不够，都尝试 HN 回退
+  if (!best || !hasVibeSignal || best._score < 2) {
     // arXiv 没有合适的——从 HN best 帖子里找编程实操/工具类内容
     const hnStories = await fetchHnItems("beststories", 30);
     const vibeStories = hnStories.filter((s) => {
@@ -451,6 +457,10 @@ async function fetchRecommendedPaper(date) {
       hnScored.sort((a, b) => b._score - a._score);
       best = hnScored[0];
     }
+  }
+  // 最终检查：如果 best 还是 arXiv 的且没有 vibe 信号，放弃（不适合新手）
+  if (best && !hasVibeSignal && best.authors !== "Hacker News" && !/vibecode|vibe.?cod|copilot|code.?generat|tutorial|getting.?start|beginner|practical.?guide|how.?to/i.test(`${best.title} ${best.summary}`.toLowerCase())) {
+    return null;
   }
   if (!best || best._score < 2) return null;
 
