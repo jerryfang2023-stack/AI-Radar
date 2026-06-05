@@ -1,0 +1,404 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-055
+title: "Introducing the Agent Governance Toolkit - Microsoft Open Source"
+original_url: "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/"
+canonical_url: "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents"
+source_name: "keyword search / Anysearch"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-05T00:46:23.264Z
+language: mixed
+full_text_hash: bfbdf0eaf3d79e5a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-055-introducing-the-agent-governance-toolkit-microsoft-open-source.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-055-introducing-the-agent-governance-toolkit-microsoft-open-source.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":12413,"paragraph_count":84,"sentence_count":99,"boilerplate_hits":0,"symbol_ratio":0.001,"method":"content-container"}
+has_full_text: true
+content_length: 12413
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bfbdf0eaf3d79e5a","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d2c5a63233d8a125
+content_hash: bfbdf0eaf3d79e5a
+semantic_hash: 52cfdc3c53a00b72
+duplicate_of: ""
+first_seen_at: "2026-06-05T00:46:23.264Z"
+last_seen_at: 2026-06-05T00:46:23.264Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Google","Microsoft","GitHub"],"products":["Agent","agent","agents","Agents","MCP"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["2025","10","2026","0.1m","99","25519","0","1000"],"quotes":["packages/agent-os[dev]","packages/agent-mesh[dev]","packages/agent-sre[dev]","Scale by Subtraction"]}
+evidence_seed: {"company_actions":["Discover how the Microsoft Agent Governance Toolkit brings policy, identity, and reliability to autonomous AI agent systems.","Skip to content Skip to main content Share Content type News Tags Azure Kubernetes Service Azure Open Source GitHub Kubernetes Microsoft Microsoft Azure AI agents are crossing a threshold.","They’re no longer just answering questions in chat windows, they’re booking flights, executing trades, writing code, and managing infrastructure autonomously."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["In December 2025, OWASP published the Top 10 for Agentic Applications for 2026 , the first formal taxonomy of risks specific to autonomous AI agents, including goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Discover how the Microsoft Agent Governance Toolkit brings policy, identity, and reliability to autonomous AI agent systems.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Skip to main content Share Content type News Tags Azure Kubernetes Service Azure Open Source GitHub Kubernetes Microsoft Microsoft Azure AI agents are crossing a threshold.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"They’re no longer just answering questions in chat windows, they’re booking flights, executing trades, writing code, and managing infrastructure autonomously.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Frameworks like LangChain, AutoGen, CrewAI, Microsoft Agent Framework, and Microsoft Foundry Agent Service have made it remarkably easy to build agents that reason, plan, and act.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But as agents gain autonomy, a critical question emerges: who governs what they do?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"In December 2025, OWASP published the Top 10 for Agentic Applications for 2026 , the first formal taxonomy of risks specific to autonomous AI agents, including goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Introducing the Agent Governance Toolkit - Microsoft Open Source
+
+## clean_text
+
+Skip to content
+Skip to main content
+Share
+Content type
+News
+Tags
+Azure Kubernetes Service
+Azure Open Source
+GitHub
+Kubernetes
+Microsoft
+Microsoft Azure
+AI agents are crossing a threshold. They’re no longer just answering questions in chat windows, they’re booking flights, executing trades, writing code, and managing infrastructure autonomously. Frameworks like LangChain, AutoGen, CrewAI, Microsoft Agent Framework, and Microsoft Foundry Agent Service have made it remarkably easy to build agents that reason, plan, and act.
+But as agents gain autonomy, a critical question emerges: who governs what they do?
+In December 2025, OWASP published the Top 10 for Agentic Applications for 2026 , the first formal taxonomy of risks specific to autonomous AI agents, including goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents. Regulatory frameworks are following: the European Union AI Act’s high-risk AI obligations take effect in August 2026, and the Colorado AI Act becomes enforceable in June 2026. The infrastructure to govern autonomous agent behavior has not kept pace with the ease of building agents.
+Today, we’re sharing the Agent Governance Toolkit , an open-source project released under the Microsoft organization and MIT license that brings runtime security governance to autonomous AI agents. It is the first toolkit to address all 10 OWASP agentic AI risks with deterministic, sub-millisecond policy enforcement. It’s designed to work with the frameworks developers already use, not replace them.
+Explore the Agent Governance Toolkit
+Why we built this
+When we looked at how AI agents operate in practice, we noticed a familiar pattern: multiple untrusted programs sharing resources, making decisions, and interacting with the outside world, with limited mediation of their actions.
+Operating systems solved a similar problem decades ago with kernels, privilege rings, and process isolation. Service meshes solved it for microservices with mTLS and identity. Site Reliability Engineering (SRE) practices solved it for distributed systems with Service Level Objectives (SLOs) and circuit breakers.
+We asked: what if we took these proven, battle-tested patterns and applied them to AI agents?
+The result is a seven-package toolkit, available in Python, TypeScript, Rust, Go, and .NET, that provides:
+Agent OS : A stateless policy engine that intercepts every agent’s action before execution at sub-millisecond latency (<0.1ms p99). Think of it as the kernel for AI agents. Supports YAML rules, OPA Rego, and Cedar policy languages.
+Agent Mesh : Cryptographic identity (decentralized identifiers (DIDs) with Ed25519), the Inter-Agent Trust Protocol (IATP) for secure agent-to-agent communication, and dynamic trust scoring on a 0 to 1000 scale with five behavioral tiers.
+Agent Runtime : Dynamic execution rings inspired by CPU privilege levels, saga orchestration for multi-step transactions, and a kill switch for emergency agent termination.
+Agent SRE : SLOs, error budgets, circuit breakers, chaos engineering, and progressive delivery—production reliability practices applied to agent systems.
+Agent Compliance : Automated governance verification with compliance grading, regulatory framework mapping (European Union AI Act, HIPAA, and system and organization controls 2 (SOC2), and OWASP Agentic AI Top 10 evidence collection covering all 10 risk categories.
+Agent Marketplace : Plugin lifecycle management with Ed25519 signing, verification, trust-tiered capability gating, and supply-chain security.
+Agent Lightning : Reinforcement learning (RL) training governance with policy-enforced runners and reward shaping ensures zero policy violations during reinforcement learning training.
+Designed for the ecosystem
+A governance toolkit is only useful if it works with the frameworks people actually use. We designed the toolkit to be framework-agnostic from day one. Each integration hooks into a framework’s native extension points, LangChain’s callback handlers, CrewAI’s task decorators, Google ADK’s plugin system, Microsoft Agent Framework’s middleware pipeline, so adding governance doesn’t require rewriting agent code.
+Several integrations are already working with production frameworks. Dify has the governance plugin in its marketplace. LlamaIndex has a TrustedAgentWorker integration. The OpenAI Agents SDK, Haystack, LangGraph, and PydanticAI integrations are shipped, OpenAI Agents and LangGraph are published on PyPl, Haystack is upstream, and PydanticAI has a working adapter.
+The toolkit also works across language ecosystems. A TypeScript SDK is available through npm (@microsoft/agentmesh-sdk), and a .NET SDK is available in NuGet (Microsoft.AgentGovernance), bringing the same governance capabilities to Node.js and C# teams.
+For developers building with any of these frameworks, governance is a pip install and a few lines of configuration away:
+pip install agent-governance-toolkit[full]
+Open source by design
+The project is MIT-licensed and structured as a monorepo with seven independently installable packages. Teams can adopt governance incrementally—start with just the policy engine, add identity when multi-agent scenarios emerge, and layer in SRE practices as systems scale.
+We believe agent governance is too important to be controlled by any single vendor. We’re releasing this project under Microsoft today, but our aspiration is to move it into a foundation home where it can be governed by the broader community. We’re actively engaging with the OWASP agentic AI community and foundation leaders to make this happen. Our goal is to make the world more secure everywhere, and that requires shared stewardship.
+We’ve invested in the open-source fundamentals:
+More than 9,500 tests across all packages, with continuous fuzzing through ClusterFuzzLite.
+Supply-chain Levels for Software Artifacts (SLSA)-compatible build provenance with actions and attest-build-provenance.
+OpenSSF Scorecard tracking at scorecard.dev.
+CodeQL and Dependabot for automated vulnerability scanning.
+Pinned dependencies with cryptographic hashes for continuous integration (CI) tooling.
+20 step-by-step tutorials covering every package and feature.
+.NET and TypeScript SDKs alongside Python for cross-platform teams.
+The architecture is designed to be extensible. The toolkit exposes public interfaces—ToolCallInterceptor, BaseIntegration, PluginInterface, PolicyProviderInterface—that allow third-party tools to plug into the governance pipeline without modifying core code.
+Addressing the OWASP Agentic AI Top 10
+When OWASP published their Agentic AI Top 10 in December 2025, the first formal taxonomy of risks specific to autonomous AI agents, we mapped each risk to the toolkit’s capabilities:
+Goal hijacking —Semantic intent classifier in the policy engine.
+Tool misuse —Capability sandboxing and Model Context Protocol (MCP) security gateway.
+Identity abuse —DID-based identity with behavioral trust scoring.
+Supply chain risks —Plugin signing with Ed25519 and manifest verification.
+Code execution —Execution rings with resource limits.
+Memory poisoning —Cross-Model Verification Kernel (CMVK) with majority voting.
+Insecure communications —Inter-Agent Trust Protocol (IATP) encryption layer.
+Cascading failures —Circuit breakers and SLO enforcement.
+Human-agent trust exploitation —Approval workflows with quorum logic.
+Rogue agents —Ring isolation, trust decay, and automated kill switch.
+This alignment was by design. The OS-inspired architecture creates defense in depth, multiple independent layers that each address different threat categories.
+What we learned building in the open
+Building this toolkit reinforced several lessons that apply broadly to open-source projects:
+Borrow from solved problems . The OS kernel, service mesh, and SRE playbook all addressed security and reliability in other domains. Translating those patterns to AI agents was more effective than inventing from scratch. The open-source community has decades of wisdom embedded in these systems; we tried to honor that by building on it.
+Make security the default, not an add-on . We built governance into the execution path, intercepting actions, rather than as an optional wrapper. Optional security tends to go unadopted. That said, no security layer is a silver bullet; defense in depth and ongoing monitoring remain essential.
+Statelessness enables everything . By making the kernel stateless, horizontal scaling, containerized deployment, and auditability came naturally. Every design decision became easier once we committed to statelessness.
+Trust is dynamic, not static . A binary trusted and untrusted model doesn’t capture reality. Trust scoring with behavioral decay and dynamic privilege assignment turned out to be a much better model for systems where agents are constantly changing.
+Community and contributions
+The toolkit has already received its first community contributions, including a Pull Request for a failure-mode analysis module and an integration with Microsoft’s Agent Framework middleware pipeline. We’re actively engaging with the OWASP Agent Security Initiative, the LF AI & Data Foundation, and the CoSAI working groups.
+We welcome contributions of all kinds, new framework adapters, policy templates, documentation improvements, bug reports, and feature requests.
+Get started
+git clone https://github.com/microsoft/agent-governance-toolkit
+cd agent-governance-toolkit
+pip install -e "packages/agent-os[dev]" -e "packages/agent-mesh[dev]" -e "packages/agent-sre[dev]"
+# Run the governance demo
+python demo/maf_governance_demo.py
+The toolkit runs at sub-millisecond governance latency (<0.1ms p99) and works with Python 3.10+. Individual packages are available on PyPI for teams that want to adopt incrementally.
+Deploy on Microsoft Azure
+For the fastest path to production, deploy the toolkit on Azure:
+Microsoft Azure Kubernetes Service (AKS) : Deploy the policy engine as a sidecar container alongside your agents for transparent governance.
+Microsoft Foundry Agent Service : Use the built-in middleware integration for agents built on Foundry.
+Microsoft Azure Container Apps : Run governance-enabled agents in a serverless container environment.
+Explore our Azure deployment guides in the repository for step-by-step instructions for each scenario.
+AI agents are becoming autonomous decision-makers in high-stakes domains. The question isn’t whether we need governance for these systems, but whether we’ll build it proactively, before incidents force our hand, or reactively, after them. We chose proactively. We built it in the open. We hope you’ll join us.
+Learn more about the Agent Governance Toolkit
+The Agent Governance Toolkit is open source under the MIT license.
+Imran Siddique
+Principal Group Engineering Manager, Microsoft
+Imran Siddique is a Principal Group Engineering Manager and Agentic AI Architect at Microsoft. He is the creator of the Agent Governance Toolkit and the "Scale by Subtraction" philosophy for hyper-scale systems. A holder of multiple patents, Imran currently leads the engineering of backend services and Knowledge Graphs powering next-generation AI agents.
+See more articles from this author
+Related posts
+May 19
+4 min read
+Introducing STATE-Bench: A benchmark for AI agent memory
+STATE-Bench is an open-source, memory-agnostic benchmark freely available to agent developers, researchers, and platform teams.
+May 18
+7 min read
+From open source to agentic systems: Microsoft at Open Source Summit North America 2026
+Open source is the foundation for AI and, as AI workloads scale, developers need that foundation to be more secure, more predictable, and easier to build apps and agents.
+May 14
+6 min read
+Conductor: Deterministic orchestration for multi-agent AI workflows
+Conductor is an open-source CLI (MIT license, Microsoft org) that takes a different approach: you define your multi-agent workflows in YAML, and the routing between agents is deterministic. Jinja2 templates and expression evaluation handle conditions and branching. The orchestration layer consumes zero tokens. The structure is fixed at definition time—and that's the point.
+Apr 30
+4 min read
+PostgreSQL enters its AI era: Run PostgreSQL like a pro in the era of AI and rapid growth
+Postgres can handle intelligent workloads and scale without sacrificing security, performance, reliability, or operational ease.
+
+## full_text
+
+Skip to content
+Skip to main content
+Share
+Content type
+News
+Tags
+Azure Kubernetes Service
+Azure Open Source
+GitHub
+Kubernetes
+Microsoft
+Microsoft Azure
+AI agents are crossing a threshold. They’re no longer just answering questions in chat windows, they’re booking flights, executing trades, writing code, and managing infrastructure autonomously. Frameworks like LangChain, AutoGen, CrewAI, Microsoft Agent Framework, and Microsoft Foundry Agent Service have made it remarkably easy to build agents that reason, plan, and act.
+But as agents gain autonomy, a critical question emerges: who governs what they do?
+In December 2025, OWASP published the Top 10 for Agentic Applications for 2026 , the first formal taxonomy of risks specific to autonomous AI agents, including goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents. Regulatory frameworks are following: the European Union AI Act’s high-risk AI obligations take effect in August 2026, and the Colorado AI Act becomes enforceable in June 2026. The infrastructure to govern autonomous agent behavior has not kept pace with the ease of building agents.
+Today, we’re sharing the Agent Governance Toolkit , an open-source project released under the Microsoft organization and MIT license that brings runtime security governance to autonomous AI agents. It is the first toolkit to address all 10 OWASP agentic AI risks with deterministic, sub-millisecond policy enforcement. It’s designed to work with the frameworks developers already use, not replace them.
+Explore the Agent Governance Toolkit
+Why we built this
+When we looked at how AI agents operate in practice, we noticed a familiar pattern: multiple untrusted programs sharing resources, making decisions, and interacting with the outside world, with limited mediation of their actions.
+Operating systems solved a similar problem decades ago with kernels, privilege rings, and process isolation. Service meshes solved it for microservices with mTLS and identity. Site Reliability Engineering (SRE) practices solved it for distributed systems with Service Level Objectives (SLOs) and circuit breakers.
+We asked: what if we took these proven, battle-tested patterns and applied them to AI agents?
+The result is a seven-package toolkit, available in Python, TypeScript, Rust, Go, and .NET, that provides:
+Agent OS : A stateless policy engine that intercepts every agent’s action before execution at sub-millisecond latency (<0.1ms p99). Think of it as the kernel for AI agents. Supports YAML rules, OPA Rego, and Cedar policy languages.
+Agent Mesh : Cryptographic identity (decentralized identifiers (DIDs) with Ed25519), the Inter-Agent Trust Protocol (IATP) for secure agent-to-agent communication, and dynamic trust scoring on a 0 to 1000 scale with five behavioral tiers.
+Agent Runtime : Dynamic execution rings inspired by CPU privilege levels, saga orchestration for multi-step transactions, and a kill switch for emergency agent termination.
+Agent SRE : SLOs, error budgets, circuit breakers, chaos engineering, and progressive delivery—production reliability practices applied to agent systems.
+Agent Compliance : Automated governance verification with compliance grading, regulatory framework mapping (European Union AI Act, HIPAA, and system and organization controls 2 (SOC2), and OWASP Agentic AI Top 10 evidence collection covering all 10 risk categories.
+Agent Marketplace : Plugin lifecycle management with Ed25519 signing, verification, trust-tiered capability gating, and supply-chain security.
+Agent Lightning : Reinforcement learning (RL) training governance with policy-enforced runners and reward shaping ensures zero policy violations during reinforcement learning training.
+Designed for the ecosystem
+A governance toolkit is only useful if it works with the frameworks people actually use. We designed the toolkit to be framework-agnostic from day one. Each integration hooks into a framework’s native extension points, LangChain’s callback handlers, CrewAI’s task decorators, Google ADK’s plugin system, Microsoft Agent Framework’s middleware pipeline, so adding governance doesn’t require rewriting agent code.
+Several integrations are already working with production frameworks. Dify has the governance plugin in its marketplace. LlamaIndex has a TrustedAgentWorker integration. The OpenAI Agents SDK, Haystack, LangGraph, and PydanticAI integrations are shipped, OpenAI Agents and LangGraph are published on PyPl, Haystack is upstream, and PydanticAI has a working adapter.
+The toolkit also works across language ecosystems. A TypeScript SDK is available through npm (@microsoft/agentmesh-sdk), and a .NET SDK is available in NuGet (Microsoft.AgentGovernance), bringing the same governance capabilities to Node.js and C# teams.
+For developers building with any of these frameworks, governance is a pip install and a few lines of configuration away:
+pip install agent-governance-toolkit[full]
+Open source by design
+The project is MIT-licensed and structured as a monorepo with seven independently installable packages. Teams can adopt governance incrementally—start with just the policy engine, add identity when multi-agent scenarios emerge, and layer in SRE practices as systems scale.
+We believe agent governance is too important to be controlled by any single vendor. We’re releasing this project under Microsoft today, but our aspiration is to move it into a foundation home where it can be governed by the broader community. We’re actively engaging with the OWASP agentic AI community and foundation leaders to make this happen. Our goal is to make the world more secure everywhere, and that requires shared stewardship.
+We’ve invested in the open-source fundamentals:
+More than 9,500 tests across all packages, with continuous fuzzing through ClusterFuzzLite.
+Supply-chain Levels for Software Artifacts (SLSA)-compatible build provenance with actions and attest-build-provenance.
+OpenSSF Scorecard tracking at scorecard.dev.
+CodeQL and Dependabot for automated vulnerability scanning.
+Pinned dependencies with cryptographic hashes for continuous integration (CI) tooling.
+20 step-by-step tutorials covering every package and feature.
+.NET and TypeScript SDKs alongside Python for cross-platform teams.
+The architecture is designed to be extensible. The toolkit exposes public interfaces—ToolCallInterceptor, BaseIntegration, PluginInterface, PolicyProviderInterface—that allow third-party tools to plug into the governance pipeline without modifying core code.
+Addressing the OWASP Agentic AI Top 10
+When OWASP published their Agentic AI Top 10 in December 2025, the first formal taxonomy of risks specific to autonomous AI agents, we mapped each risk to the toolkit’s capabilities:
+Goal hijacking —Semantic intent classifier in the policy engine.
+Tool misuse —Capability sandboxing and Model Context Protocol (MCP) security gateway.
+Identity abuse —DID-based identity with behavioral trust scoring.
+Supply chain risks —Plugin signing with Ed25519 and manifest verification.
+Code execution —Execution rings with resource limits.
+Memory poisoning —Cross-Model Verification Kernel (CMVK) with majority voting.
+Insecure communications —Inter-Agent Trust Protocol (IATP) encryption layer.
+Cascading failures —Circuit breakers and SLO enforcement.
+Human-agent trust exploitation —Approval workflows with quorum logic.
+Rogue agents —Ring isolation, trust decay, and automated kill switch.
+This alignment was by design. The OS-inspired architecture creates defense in depth, multiple independent layers that each address different threat categories.
+What we learned building in the open
+Building this toolkit reinforced several lessons that apply broadly to open-source projects:
+Borrow from solved problems . The OS kernel, service mesh, and SRE playbook all addressed security and reliability in other domains. Translating those patterns to AI agents was more effective than inventing from scratch. The open-source community has decades of wisdom embedded in these systems; we tried to honor that by building on it.
+Make security the default, not an add-on . We built governance into the execution path, intercepting actions, rather than as an optional wrapper. Optional security tends to go unadopted. That said, no security layer is a silver bullet; defense in depth and ongoing monitoring remain essential.
+Statelessness enables everything . By making the kernel stateless, horizontal scaling, containerized deployment, and auditability came naturally. Every design decision became easier once we committed to statelessness.
+Trust is dynamic, not static . A binary trusted and untrusted model doesn’t capture reality. Trust scoring with behavioral decay and dynamic privilege assignment turned out to be a much better model for systems where agents are constantly changing.
+Community and contributions
+The toolkit has already received its first community contributions, including a Pull Request for a failure-mode analysis module and an integration with Microsoft’s Agent Framework middleware pipeline. We’re actively engaging with the OWASP Agent Security Initiative, the LF AI & Data Foundation, and the CoSAI working groups.
+We welcome contributions of all kinds, new framework adapters, policy templates, documentation improvements, bug reports, and feature requests.
+Get started
+git clone https://github.com/microsoft/agent-governance-toolkit
+cd agent-governance-toolkit
+pip install -e "packages/agent-os[dev]" -e "packages/agent-mesh[dev]" -e "packages/agent-sre[dev]"
+# Run the governance demo
+python demo/maf_governance_demo.py
+The toolkit runs at sub-millisecond governance latency (<0.1ms p99) and works with Python 3.10+. Individual packages are available on PyPI for teams that want to adopt incrementally.
+Deploy on Microsoft Azure
+For the fastest path to production, deploy the toolkit on Azure:
+Microsoft Azure Kubernetes Service (AKS) : Deploy the policy engine as a sidecar container alongside your agents for transparent governance.
+Microsoft Foundry Agent Service : Use the built-in middleware integration for agents built on Foundry.
+Microsoft Azure Container Apps : Run governance-enabled agents in a serverless container environment.
+Explore our Azure deployment guides in the repository for step-by-step instructions for each scenario.
+AI agents are becoming autonomous decision-makers in high-stakes domains. The question isn’t whether we need governance for these systems, but whether we’ll build it proactively, before incidents force our hand, or reactively, after them. We chose proactively. We built it in the open. We hope you’ll join us.
+Learn more about the Agent Governance Toolkit
+The Agent Governance Toolkit is open source under the MIT license.
+Imran Siddique
+Principal Group Engineering Manager, Microsoft
+Imran Siddique is a Principal Group Engineering Manager and Agentic AI Architect at Microsoft. He is the creator of the Agent Governance Toolkit and the "Scale by Subtraction" philosophy for hyper-scale systems. A holder of multiple patents, Imran currently leads the engineering of backend services and Knowledge Graphs powering next-generation AI agents.
+See more articles from this author
+Related posts
+May 19
+4 min read
+Introducing STATE-Bench: A benchmark for AI agent memory
+STATE-Bench is an open-source, memory-agnostic benchmark freely available to agent developers, researchers, and platform teams.
+May 18
+7 min read
+From open source to agentic systems: Microsoft at Open Source Summit North America 2026
+Open source is the foundation for AI and, as AI workloads scale, developers need that foundation to be more secure, more predictable, and easier to build apps and agents.
+May 14
+6 min read
+Conductor: Deterministic orchestration for multi-agent AI workflows
+Conductor is an open-source CLI (MIT license, Microsoft org) that takes a different approach: you define your multi-agent workflows in YAML, and the routing between agents is deterministic. Jinja2 templates and expression evaluation handle conditions and branching. The orchestration layer consumes zero tokens. The structure is fixed at definition time—and that's the point.
+Apr 30
+4 min read
+PostgreSQL enters its AI era: Run PostgreSQL like a pro in the era of AI and rapid growth
+Postgres can handle intelligent workloads and scale without sacrificing security, performance, reliability, or operational ease.
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":12413,"paragraph_count":84,"sentence_count":99,"boilerplate_hits":0,"symbol_ratio":0.001,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Discover how the Microsoft Agent Governance Toolkit brings policy, identity, and reliability to autonomous AI agent systems.
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Skip to content Skip to main content Share Content type News Tags Azure Kubernetes Service Azure Open Source GitHub Kubernetes Microsoft Microsoft Azure AI agents are crossing a threshold.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   They’re no longer just answering questions in chat windows, they’re booking flights, executing trades, writing code, and managing infrastructure autonomously.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Frameworks like LangChain, AutoGen, CrewAI, Microsoft Agent Framework, and Microsoft Foundry Agent Service have made it remarkably easy to build agents that reason, plan, and act.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   But as agents gain autonomy, a critical question emerges: who governs what they do?
+
+6. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   In December 2025, OWASP published the Top 10 for Agentic Applications for 2026 , the first formal taxonomy of risks specific to autonomous AI agents, including goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Google, Microsoft, GitHub
+- products: Agent, agent, agents, Agents, MCP
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 2025, 10, 2026, 0.1m, 99, 25519, 0, 1000
+- quotes: packages/agent-os[dev] / packages/agent-mesh[dev] / packages/agent-sre[dev] / Scale by Subtraction
+
+## evidence_seed
+
+- company_actions: Discover how the Microsoft Agent Governance Toolkit brings policy, identity, and reliability to autonomous AI agent systems. / Skip to content Skip to main content Share Content type News Tags Azure Kubernetes Service Azure Open Source GitHub Kubernetes Microsoft Microsoft Azure AI agents are crossing a threshold. / They’re no longer just answering questions in chat windows, they’re booking flights, executing trades, writing code, and managing infrastructure autonomously.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: In December 2025, OWASP published the Top 10 for Agentic Applications for 2026 , the first formal taxonomy of risks specific to autonomous AI agents, including goal hijacking, tool misuse, identity abuse, memory poisoning, cascading failures, and rogue agents.
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Discover how the Microsoft Agent Governance Toolkit brings policy, identity, and reliability to autonomous AI agent systems.
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

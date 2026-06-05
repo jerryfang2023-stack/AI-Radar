@@ -1,0 +1,262 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-047",
+  "title": "Company Announcement - FT.com - Markets data",
+  "original_url": "https://markets.ft.com/data/announce/detail?dockey=600-202604280900BIZWIRE_USPRX____20260428_BW279648-1",
+  "canonical_url": "https://markets.ft.com/data/announce/detail?dockey=600-202604280900BIZWIRE_USPRX____20260428_BW279648-1",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "",
+  "acquisition_channel": "gdelt",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-05T00:46:23.242Z",
+  "language": "mixed",
+  "full_text": "DigitalOcean Holdings Inc\nDigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest\nApr 28 2026 14:00 BST\nBuilt alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs.\nBROOMFIELD, Colo. --(BUSINESS WIRE)--Apr. 28, 2026--\nDigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads. The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live.\nDigitalOcean’s Inference Engine is built around four core capabilities: Inference Router , Batch Inference, Serverless Inference , and Dedicated Inference, giving development teams a single engine to match every workload type to the right performance and cost profile, without stitching together separate providers.\nNew Capabilities: Built for How AI Actually Runs in Production\nInference Router is designed to solve one of the biggest inefficiencies in agentic AI: sending every request to the most expensive model. With Inference Router, AI builders can define a model pool, describe tasks and priorities in natural language mapped to that model, and optimize each request for cost and latency. Powered by DigitalOcean’s purpose-built MoE (Mixture of Expert) router model, Inference Router matches each request to the right model, helping teams improve performance and unit economics without the need to build or manage routing infrastructure themselves. Customers like LawVo are already benefitting from this new capability:\n\" DigitalOcean's Inference Router gives us the kind of intelligent model selection we would otherwise have had to build ourselves. It routes each request to the right model based on complexity, helping us reduce inference costs by more than 40% while maintaining the accuracy, speed, and reliability our users expect.\" — Hovsep Seraydarian , Co-Founder and CTO, LawVo\nDedicated Inference delivers predictable performance and exceptional unit economics for teams running high-scale, sustained workloads, with reserved capacity that eliminates the variability of shared infrastructure.\nServerless Inference provides a single API key to access dozens of models, with scale-to-zero elasticity and the industry’s first off-peak pricing, giving teams instant access to leading open-source models without managing infrastructure or paying for idle capacity.\nBatch Inference reduces the cost of offline AI workloads by 50% through asynchronous execution, built-in retries, and a guaranteed 24-hour completion window. Batch Inference is purpose-built for workloads where real-time response isn't required but reliability is critical.\n“Most teams building agentic systems today make a single model decision and apply it uniformly across their agentic workflows. They default to a frontier model and pay the generalization tax: premium prices and higher latency for work that often does not require the most expensive closed source model. Inference Router is the essential AI middleware that removes that tax by intelligently matching requests to the right model based on task, context, and developer-defined preferences. The result is a smarter operating model for inference - one that gives developers more control over quality, speed, and cost while helping AI-native builders move faster and build more durable businesses on DigitalOcean.” — Vinay Kumar , CPTO, DigitalOcean\nPerformance Benchmarks: Independent Validation\nThe new Inference Engine was built around three core advances: hardware and software integrations, including vLLM, TensorRT, and SGLang to maximize token throughput; request-path and model-level optimizations that improve unit economics without compromising quality; and distributed scaling designed for the bursty, uneven demands of production AI applications.\nAccording to Artificial Analysis , an independent AI inference benchmarking platform, the results demonstrate DigitalOcean leading across key inference performance metrics, including 3x faster time-to-first-answer-token and 3x higher output speed than Amazon Bedrock on DeepSeek V3.2 at 10,000 input tokens. DigitalOcean also delivers stronger performance across output speed and latency consistency compared with most hyperscaler and neo-cloud providers, and is one of only three providers ranked in the Most Favorable Quadrant on Artificial Analysis's Latency vs. Output Speed chart, with Amazon, SambaNova, Nebius, and six others falling outside it.\nCustomers Report Significant Cost and Performance Gains\nThe Inference Engine was co-developed alongside early design partners running real production workloads, and the results are already showing at scale.\nHippocratic AI , which runs safety-critical healthcare agents on the platform, achieved 2x production throughput and 40% lower P99 latency across more than 20 million patient interactions.\n\"In healthcare AI, a node going down isn't just an SLA issue, it impacts patient experience. We've pressed DigitalOcean hard on reliability, access to the newest hardware, and the ability to scale efficiently. They've delivered.\" — Debajyoti Datta , Co-Founder, Hippocratic AI\nWorkato's Research Lab , which processes over 1 trillion automated workloads, saw meaningful performance and cost improvements, achieving 77% faster time-to-first-token, 79% lower end-to-end latency, and 67% lower inference costs on DigitalOcean .\n\"Through close collaboration on performance optimization, DigitalOcean helped us accelerate our inference performance and overall progress by two to three times.\" — Oscar Wu , AI Research Scientist, Technical Lead, Workato\nAt Deploy in San Francisco , DigitalOcean will also unveil new products that show how it has built a five-layer stack purpose-built for the Inference Era. Hovsep Seraydarian of LawVo, Debajyoti Datta of Hippocratic AI , and Oscar Wu of Workato will share stories live at Deploy about how their teams are building and scaling real-world AI applications on DigitalOcean . In-person attendance is full; sign up to watch the keynote live stream at 12pm Pacific on April 28 .\nAbout DigitalOcean\nDigitalOcean is the Agentic Inference Cloud built for AI-native and digital-native enterprises scaling production workloads. The platform combines production-ready GPU infrastructure with a full-stack cloud — all built on open source at every layer — to deliver operational simplicity and predictable economics at scale. More than 640,000 customers trust DigitalOcean to power their cloud and AI infrastructure. Learn more at digitalocean.com .\nView source version on businesswire.com :\nhttps://www.businesswire.com/news/home/20260428279648/en/\nInvestor Relations\nRadu Patrichi , CFA\ninvestors@digitalocean.com\nMedia Relations\nMeghan Grady\npress@digitalocean.com\nSource: DigitalOcean\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest",
+  "clean_text": "DigitalOcean Holdings Inc\nDigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest\nApr 28 2026 14:00 BST\nBuilt alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs.\nBROOMFIELD, Colo. --(BUSINESS WIRE)--Apr. 28, 2026--\nDigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads. The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live.\nDigitalOcean’s Inference Engine is built around four core capabilities: Inference Router , Batch Inference, Serverless Inference , and Dedicated Inference, giving development teams a single engine to match every workload type to the right performance and cost profile, without stitching together separate providers.\nNew Capabilities: Built for How AI Actually Runs in Production\nInference Router is designed to solve one of the biggest inefficiencies in agentic AI: sending every request to the most expensive model. With Inference Router, AI builders can define a model pool, describe tasks and priorities in natural language mapped to that model, and optimize each request for cost and latency. Powered by DigitalOcean’s purpose-built MoE (Mixture of Expert) router model, Inference Router matches each request to the right model, helping teams improve performance and unit economics without the need to build or manage routing infrastructure themselves. Customers like LawVo are already benefitting from this new capability:\n\" DigitalOcean's Inference Router gives us the kind of intelligent model selection we would otherwise have had to build ourselves. It routes each request to the right model based on complexity, helping us reduce inference costs by more than 40% while maintaining the accuracy, speed, and reliability our users expect.\" — Hovsep Seraydarian , Co-Founder and CTO, LawVo\nDedicated Inference delivers predictable performance and exceptional unit economics for teams running high-scale, sustained workloads, with reserved capacity that eliminates the variability of shared infrastructure.\nServerless Inference provides a single API key to access dozens of models, with scale-to-zero elasticity and the industry’s first off-peak pricing, giving teams instant access to leading open-source models without managing infrastructure or paying for idle capacity.\nBatch Inference reduces the cost of offline AI workloads by 50% through asynchronous execution, built-in retries, and a guaranteed 24-hour completion window. Batch Inference is purpose-built for workloads where real-time response isn't required but reliability is critical.\n“Most teams building agentic systems today make a single model decision and apply it uniformly across their agentic workflows. They default to a frontier model and pay the generalization tax: premium prices and higher latency for work that often does not require the most expensive closed source model. Inference Router is the essential AI middleware that removes that tax by intelligently matching requests to the right model based on task, context, and developer-defined preferences. The result is a smarter operating model for inference - one that gives developers more control over quality, speed, and cost while helping AI-native builders move faster and build more durable businesses on DigitalOcean.” — Vinay Kumar , CPTO, DigitalOcean\nPerformance Benchmarks: Independent Validation\nThe new Inference Engine was built around three core advances: hardware and software integrations, including vLLM, TensorRT, and SGLang to maximize token throughput; request-path and model-level optimizations that improve unit economics without compromising quality; and distributed scaling designed for the bursty, uneven demands of production AI applications.\nAccording to Artificial Analysis , an independent AI inference benchmarking platform, the results demonstrate DigitalOcean leading across key inference performance metrics, including 3x faster time-to-first-answer-token and 3x higher output speed than Amazon Bedrock on DeepSeek V3.2 at 10,000 input tokens. DigitalOcean also delivers stronger performance across output speed and latency consistency compared with most hyperscaler and neo-cloud providers, and is one of only three providers ranked in the Most Favorable Quadrant on Artificial Analysis's Latency vs. Output Speed chart, with Amazon, SambaNova, Nebius, and six others falling outside it.\nCustomers Report Significant Cost and Performance Gains\nThe Inference Engine was co-developed alongside early design partners running real production workloads, and the results are already showing at scale.\nHippocratic AI , which runs safety-critical healthcare agents on the platform, achieved 2x production throughput and 40% lower P99 latency across more than 20 million patient interactions.\n\"In healthcare AI, a node going down isn't just an SLA issue, it impacts patient experience. We've pressed DigitalOcean hard on reliability, access to the newest hardware, and the ability to scale efficiently. They've delivered.\" — Debajyoti Datta , Co-Founder, Hippocratic AI\nWorkato's Research Lab , which processes over 1 trillion automated workloads, saw meaningful performance and cost improvements, achieving 77% faster time-to-first-token, 79% lower end-to-end latency, and 67% lower inference costs on DigitalOcean .\n\"Through close collaboration on performance optimization, DigitalOcean helped us accelerate our inference performance and overall progress by two to three times.\" — Oscar Wu , AI Research Scientist, Technical Lead, Workato\nAt Deploy in San Francisco , DigitalOcean will also unveil new products that show how it has built a five-layer stack purpose-built for the Inference Era. Hovsep Seraydarian of LawVo, Debajyoti Datta of Hippocratic AI , and Oscar Wu of Workato will share stories live at Deploy about how their teams are building and scaling real-world AI applications on DigitalOcean . In-person attendance is full; sign up to watch the keynote live stream at 12pm Pacific on April 28 .\nAbout DigitalOcean\nDigitalOcean is the Agentic Inference Cloud built for AI-native and digital-native enterprises scaling production workloads. The platform combines production-ready GPU infrastructure with a full-stack cloud — all built on open source at every layer — to deliver operational simplicity and predictable economics at scale. More than 640,000 customers trust DigitalOcean to power their cloud and AI infrastructure. Learn more at digitalocean.com .\nView source version on businesswire.com :\nhttps://www.businesswire.com/news/home/20260428279648/en/\nInvestor Relations\nRadu Patrichi , CFA\ninvestors@digitalocean.com\nMedia Relations\nMeghan Grady\npress@digitalocean.com\nSource: DigitalOcean\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-05/r-047-company-announcement-ft-com-markets-data.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-05/r-047-company-announcement-ft-com-markets-data.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 7227,
+    "paragraph_count": 30,
+    "sentence_count": 33,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 7227,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "1a00b3fe4c3dcf48",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "primary_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5a4fd8e9db7e059c",
+  "content_hash": "1a00b3fe4c3dcf48",
+  "full_text_hash": "1a00b3fe4c3dcf48",
+  "semantic_hash": "253de264265162da",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-05T00:46:23.242Z",
+  "last_seen_at": "2026-06-05T00:46:23.242Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Built alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs. BROOMFIELD, Colo.--(BUSINESS WIRE)--Apr. 28, 2026-- DigitalOcean(NYSE: DOCN) today announced the launch of it.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "DigitalOcean Holdings Inc DigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads Twitter Facebook LinkedIn GooglePlus Pinterest Apr 28 2026 14:00 BST Built alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "--(BUSINESS WIRE)--Apr.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "28, 2026-- DigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "DigitalOcean’s Inference Engine is built around four core capabilities: Inference Router , Batch Inference, Serverless Inference , and Dedicated Inference, giving development teams a single engine to match every workload type to the right performance and cost profile, without stitching together separate providers.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Amazon"
+    ],
+    "products": [
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "67%",
+      "28",
+      "2026",
+      "14",
+      "00 B",
+      "40%",
+      "50%",
+      "24"
+    ],
+    "quotes": [
+      "Through close collaboration on performance optimization, DigitalOcean helped us accelerate our inference performance and overall progress by two to three times."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "--(BUSINESS WIRE)--Apr.",
+      "28, 2026-- DigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads.",
+      "The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Company Announcement - FT.com - Markets data\n\n- raw_id: R-047\n- original_url: https://markets.ft.com/data/announce/detail?dockey=600-202604280900BIZWIRE_USPRX____20260428_BW279648-1\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-05T00:46:23.242Z\n\n## clean_text\n\nDigitalOcean Holdings Inc\nDigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest\nApr 28 2026 14:00 BST\nBuilt alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs.\nBROOMFIELD, Colo. --(BUSINESS WIRE)--Apr. 28, 2026--\nDigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads. The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live.\nDigitalOcean’s Inference Engine is built around four core capabilities: Inference Router , Batch Inference, Serverless Inference , and Dedicated Inference, giving development teams a single engine to match every workload type to the right performance and cost profile, without stitching together separate providers.\nNew Capabilities: Built for How AI Actually Runs in Production\nInference Router is designed to solve one of the biggest inefficiencies in agentic AI: sending every request to the most expensive model. With Inference Router, AI builders can define a model pool, describe tasks and priorities in natural language mapped to that model, and optimize each request for cost and latency. Powered by DigitalOcean’s purpose-built MoE (Mixture of Expert) router model, Inference Router matches each request to the right model, helping teams improve performance and unit economics without the need to build or manage routing infrastructure themselves. Customers like LawVo are already benefitting from this new capability:\n\" DigitalOcean's Inference Router gives us the kind of intelligent model selection we would otherwise have had to build ourselves. It routes each request to the right model based on complexity, helping us reduce inference costs by more than 40% while maintaining the accuracy, speed, and reliability our users expect.\" — Hovsep Seraydarian , Co-Founder and CTO, LawVo\nDedicated Inference delivers predictable performance and exceptional unit economics for teams running high-scale, sustained workloads, with reserved capacity that eliminates the variability of shared infrastructure.\nServerless Inference provides a single API key to access dozens of models, with scale-to-zero elasticity and the industry’s first off-peak pricing, giving teams instant access to leading open-source models without managing infrastructure or paying for idle capacity.\nBatch Inference reduces the cost of offline AI workloads by 50% through asynchronous execution, built-in retries, and a guaranteed 24-hour completion window. Batch Inference is purpose-built for workloads where real-time response isn't required but reliability is critical.\n“Most teams building agentic systems today make a single model decision and apply it uniformly across their agentic workflows. They default to a frontier model and pay the generalization tax: premium prices and higher latency for work that often does not require the most expensive closed source model. Inference Router is the essential AI middleware that removes that tax by intelligently matching requests to the right model based on task, context, and developer-defined preferences. The result is a smarter operating model for inference - one that gives developers more control over quality, speed, and cost while helping AI-native builders move faster and build more durable businesses on DigitalOcean.” — Vinay Kumar , CPTO, DigitalOcean\nPerformance Benchmarks: Independent Validation\nThe new Inference Engine was built around three core advances: hardware and software integrations, including vLLM, TensorRT, and SGLang to maximize token throughput; request-path and model-level optimizations that improve unit economics without compromising quality; and distributed scaling designed for the bursty, uneven demands of production AI applications.\nAccording to Artificial Analysis , an independent AI inference benchmarking platform, the results demonstrate DigitalOcean leading across key inference performance metrics, including 3x faster time-to-first-answer-token and 3x higher output speed than Amazon Bedrock on DeepSeek V3.2 at 10,000 input tokens. DigitalOcean also delivers stronger performance across output speed and latency consistency compared with most hyperscaler and neo-cloud providers, and is one of only three providers ranked in the Most Favorable Quadrant on Artificial Analysis's Latency vs. Output Speed chart, with Amazon, SambaNova, Nebius, and six others falling outside it.\nCustomers Report Significant Cost and Performance Gains\nThe Inference Engine was co-developed alongside early design partners running real production workloads, and the results are already showing at scale.\nHippocratic AI , which runs safety-critical healthcare agents on the platform, achieved 2x production throughput and 40% lower P99 latency across more than 20 million patient interactions.\n\"In healthcare AI, a node going down isn't just an SLA issue, it impacts patient experience. We've pressed DigitalOcean hard on reliability, access to the newest hardware, and the ability to scale efficiently. They've delivered.\" — Debajyoti Datta , Co-Founder, Hippocratic AI\nWorkato's Research Lab , which processes over 1 trillion automated workloads, saw meaningful performance and cost improvements, achieving 77% faster time-to-first-token, 79% lower end-to-end latency, and 67% lower inference costs on DigitalOcean .\n\"Through close collaboration on performance optimization, DigitalOcean helped us accelerate our inference performance and overall progress by two to three times.\" — Oscar Wu , AI Research Scientist, Technical Lead, Workato\nAt Deploy in San Francisco , DigitalOcean will also unveil new products that show how it has built a five-layer stack purpose-built for the Inference Era. Hovsep Seraydarian of LawVo, Debajyoti Datta of Hippocratic AI , and Oscar Wu of Workato will share stories live at Deploy about how their teams are building and scaling real-world AI applications on DigitalOcean . In-person attendance is full; sign up to watch the keynote live stream at 12pm Pacific on April 28 .\nAbout DigitalOcean\nDigitalOcean is the Agentic Inference Cloud built for AI-native and digital-native enterprises scaling production workloads. The platform combines production-ready GPU infrastructure with a full-stack cloud — all built on open source at every layer — to deliver operational simplicity and predictable economics at scale. More than 640,000 customers trust DigitalOcean to power their cloud and AI infrastructure. Learn more at digitalocean.com .\nView source version on businesswire.com :\nhttps://www.businesswire.com/news/home/20260428279648/en/\nInvestor Relations\nRadu Patrichi , CFA\ninvestors@digitalocean.com\nMedia Relations\nMeghan Grady\npress@digitalocean.com\nSource: DigitalOcean\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest\n\n## full_text\n\nDigitalOcean Holdings Inc\nDigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest\nApr 28 2026 14:00 BST\nBuilt alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs.\nBROOMFIELD, Colo. --(BUSINESS WIRE)--Apr. 28, 2026--\nDigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads. The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live.\nDigitalOcean’s Inference Engine is built around four core capabilities: Inference Router , Batch Inference, Serverless Inference , and Dedicated Inference, giving development teams a single engine to match every workload type to the right performance and cost profile, without stitching together separate providers.\nNew Capabilities: Built for How AI Actually Runs in Production\nInference Router is designed to solve one of the biggest inefficiencies in agentic AI: sending every request to the most expensive model. With Inference Router, AI builders can define a model pool, describe tasks and priorities in natural language mapped to that model, and optimize each request for cost and latency. Powered by DigitalOcean’s purpose-built MoE (Mixture of Expert) router model, Inference Router matches each request to the right model, helping teams improve performance and unit economics without the need to build or manage routing infrastructure themselves. Customers like LawVo are already benefitting from this new capability:\n\" DigitalOcean's Inference Router gives us the kind of intelligent model selection we would otherwise have had to build ourselves. It routes each request to the right model based on complexity, helping us reduce inference costs by more than 40% while maintaining the accuracy, speed, and reliability our users expect.\" — Hovsep Seraydarian , Co-Founder and CTO, LawVo\nDedicated Inference delivers predictable performance and exceptional unit economics for teams running high-scale, sustained workloads, with reserved capacity that eliminates the variability of shared infrastructure.\nServerless Inference provides a single API key to access dozens of models, with scale-to-zero elasticity and the industry’s first off-peak pricing, giving teams instant access to leading open-source models without managing infrastructure or paying for idle capacity.\nBatch Inference reduces the cost of offline AI workloads by 50% through asynchronous execution, built-in retries, and a guaranteed 24-hour completion window. Batch Inference is purpose-built for workloads where real-time response isn't required but reliability is critical.\n“Most teams building agentic systems today make a single model decision and apply it uniformly across their agentic workflows. They default to a frontier model and pay the generalization tax: premium prices and higher latency for work that often does not require the most expensive closed source model. Inference Router is the essential AI middleware that removes that tax by intelligently matching requests to the right model based on task, context, and developer-defined preferences. The result is a smarter operating model for inference - one that gives developers more control over quality, speed, and cost while helping AI-native builders move faster and build more durable businesses on DigitalOcean.” — Vinay Kumar , CPTO, DigitalOcean\nPerformance Benchmarks: Independent Validation\nThe new Inference Engine was built around three core advances: hardware and software integrations, including vLLM, TensorRT, and SGLang to maximize token throughput; request-path and model-level optimizations that improve unit economics without compromising quality; and distributed scaling designed for the bursty, uneven demands of production AI applications.\nAccording to Artificial Analysis , an independent AI inference benchmarking platform, the results demonstrate DigitalOcean leading across key inference performance metrics, including 3x faster time-to-first-answer-token and 3x higher output speed than Amazon Bedrock on DeepSeek V3.2 at 10,000 input tokens. DigitalOcean also delivers stronger performance across output speed and latency consistency compared with most hyperscaler and neo-cloud providers, and is one of only three providers ranked in the Most Favorable Quadrant on Artificial Analysis's Latency vs. Output Speed chart, with Amazon, SambaNova, Nebius, and six others falling outside it.\nCustomers Report Significant Cost and Performance Gains\nThe Inference Engine was co-developed alongside early design partners running real production workloads, and the results are already showing at scale.\nHippocratic AI , which runs safety-critical healthcare agents on the platform, achieved 2x production throughput and 40% lower P99 latency across more than 20 million patient interactions.\n\"In healthcare AI, a node going down isn't just an SLA issue, it impacts patient experience. We've pressed DigitalOcean hard on reliability, access to the newest hardware, and the ability to scale efficiently. They've delivered.\" — Debajyoti Datta , Co-Founder, Hippocratic AI\nWorkato's Research Lab , which processes over 1 trillion automated workloads, saw meaningful performance and cost improvements, achieving 77% faster time-to-first-token, 79% lower end-to-end latency, and 67% lower inference costs on DigitalOcean .\n\"Through close collaboration on performance optimization, DigitalOcean helped us accelerate our inference performance and overall progress by two to three times.\" — Oscar Wu , AI Research Scientist, Technical Lead, Workato\nAt Deploy in San Francisco , DigitalOcean will also unveil new products that show how it has built a five-layer stack purpose-built for the Inference Era. Hovsep Seraydarian of LawVo, Debajyoti Datta of Hippocratic AI , and Oscar Wu of Workato will share stories live at Deploy about how their teams are building and scaling real-world AI applications on DigitalOcean . In-person attendance is full; sign up to watch the keynote live stream at 12pm Pacific on April 28 .\nAbout DigitalOcean\nDigitalOcean is the Agentic Inference Cloud built for AI-native and digital-native enterprises scaling production workloads. The platform combines production-ready GPU infrastructure with a full-stack cloud — all built on open source at every layer — to deliver operational simplicity and predictable economics at scale. More than 640,000 customers trust DigitalOcean to power their cloud and AI infrastructure. Learn more at digitalocean.com .\nView source version on businesswire.com :\nhttps://www.businesswire.com/news/home/20260428279648/en/\nInvestor Relations\nRadu Patrichi , CFA\ninvestors@digitalocean.com\nMedia Relations\nMeghan Grady\npress@digitalocean.com\nSource: DigitalOcean\nTwitter\nFacebook\nLinkedIn\nGooglePlus\nPinterest\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 94\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Built alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs. BROOMFIELD, Colo.--(BUSINESS WIRE)--Apr. 28, 2026-- DigitalOcean(NYSE: DOCN) today announced the launch of it.\n2. [number / daily_observation, heatmap, case, trend / high] DigitalOcean Holdings Inc DigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads Twitter Facebook LinkedIn GooglePlus Pinterest Apr 28 2026 14:00 BST Built alongside early design partners, the Inference Engine gives AI developers unified control over performance, cost, and scale — with customers reporting up to 67% lower inference costs.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] --(BUSINESS WIRE)--Apr.\n4. [product_update / daily_observation, heatmap, change / medium] 28, 2026-- DigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads.\n5. [product_update / daily_observation, heatmap, change / medium] The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] DigitalOcean’s Inference Engine is built around four core capabilities: Inference Router , Batch Inference, Serverless Inference , and Dedicated Inference, giving development teams a single engine to match every workload type to the right performance and cost profile, without stitching together separate providers.\n"
+}

@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "V3.0.0-data-observation-desk",
-    "generatedAt": "2026-06-04T11:00:46.836Z",
-    "activeDate": "2026-06-04",
+    "generatedAt": "2026-06-05T00:46:32.082Z",
+    "activeDate": "2026-06-05",
     "source": "Signal Cards + Opinion Cards",
     "tagPolicy": "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
     "allowedTagCount": 67
@@ -29,43 +29,43 @@
     {
       "category": "case",
       "label": "案例",
-      "today": 6,
-      "last7": 16,
-      "total": 41,
+      "today": 4,
+      "last7": 20,
+      "total": 45,
       "topTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 6
+          "count": 4
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 6
+          "count": 4
         },
         {
           "tag": "stage-watch",
           "label": "观察",
-          "count": 6
+          "count": 4
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 6
+          "count": 4
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 6
+          "count": 4
         }
       ]
     },
     {
       "category": "funding",
       "label": "融资",
-      "today": 0,
-      "last7": 1,
-      "total": 13,
+      "today": 1,
+      "last7": 2,
+      "total": 14,
       "topTags": [
         {
           "tag": "customer-enterprise",
@@ -97,73 +97,1956 @@
     {
       "category": "product-service",
       "label": "产品",
-      "today": 11,
-      "last7": 25,
-      "total": 51,
+      "today": 9,
+      "last7": 34,
+      "total": 60,
       "topTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 11
+          "count": 9
         },
         {
           "tag": "evidence-product-launch",
           "label": "产品发布",
-          "count": 11
+          "count": 9
         },
         {
           "tag": "stage-watch",
           "label": "观察",
-          "count": 11
+          "count": 9
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 11
+          "count": 9
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 11
+          "count": 9
         }
       ]
     },
     {
       "category": "opinion",
       "label": "观点",
-      "today": 7,
-      "last7": 21,
-      "total": 89,
+      "today": 2,
+      "last7": 23,
+      "total": 91,
       "topTags": [
         {
           "tag": "evidence-frontier-opinion",
           "label": "前沿观点",
-          "count": 7
+          "count": 2
+        },
+        {
+          "tag": "opinion-product-strategy",
+          "label": "产品策略观点",
+          "count": 2
         },
         {
           "tag": "region-global",
           "label": "全球",
-          "count": 7
+          "count": 2
         },
         {
           "tag": "scenario-frontier-opinion",
           "label": "前沿观点",
-          "count": 7
+          "count": 2
         },
         {
-          "tag": "stage-watch",
-          "label": "观察",
-          "count": 7
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 7
+          "tag": "source-social",
+          "label": "社媒线索",
+          "count": 2
         }
       ]
     }
   ],
   "cards": [
+    {
+      "id": "SIG-20260605-A13",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "10 AI Procurement Use Cases & Case Studies 把 AI 用进销售和收入团队流程",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "10 AI Procurement Use Cases & Case Studies",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://aimultiple.com/ai-procurement",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-procurement-bidding",
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-bidding-response",
+          "scenario-sales-briefing"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-procurement-bidding",
+        "function-sales",
+        "scenario-bidding-response",
+        "scenario-sales-briefing",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-procurement-bidding",
+          "label": "采购投标"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-bidding-response",
+          "label": "标书响应"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "10 AI Procurement Use Cases & Case Studies 把 AI 用进销售和收入团队流程。",
+      "originalHighlights": [
+        "10 AI Procurement Use Cases & Case Studies 把 AI 用进销售和收入团队流程。",
+        "10 AI Procurement Use Cases & Case Studies 把 AI 用进销售和收入团队流程。"
+      ],
+      "visibleFragment": "As the benefits of artificial intelligence (AI) are appreciated by a greater audience, the number of AI use cases in different industries expand daily. AI in the procurement sector is no different. See a comprehensive overview of the AI procurement process, detailing the reasons for its adoption, various use cases , the top 5 AI procurement tools , specific...",
+      "keyExcerpts": [
+        "Learn AI procurement use cases like supplier performance and compliance data monitoring, identifying market risks, spend classification ... / query=AI workflow automation procurement / intent=find_workflow_change / path...",
+        "As the benefits of artificial intelligence (AI) are appreciated by a greater audience, the number of AI use cases in different industries expand daily.",
+        "AI in the procurement sector is no different.",
+        "See a comprehensive overview of the AI procurement process, detailing the reasons for its adoption, various use cases , the top 5 AI procurement tools , specific case studies for each use case, the importance and benefi..."
+      ],
+      "rawRefs": [
+        "R-015"
+      ],
+      "poolRefs": [
+        "P-014"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-05--signal--10-ai-procurement-use-cases-and-case-studies-auto-signal-p-014.md",
+      "rawRef": "R-015",
+      "rawTitle": "10 AI Procurement Use Cases & Case Studies - AIMultiple",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-015-10-ai-procurement-use-cases-case-studies-aimultiple.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-015-10-ai-procurement-use-cases-case-studies-aimultiple.json",
+      "sourceLinks": [
+        "https://aimultiple.com/ai-procurement"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-customer-adoption",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A09",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Amazon 把 AI 用进销售和收入团队流程",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "AWS for Industries",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Amazon 把 AI 用进销售和收入团队流程。",
+      "originalHighlights": [
+        "Amazon 把 AI 用进销售和收入团队流程。",
+        "Amazon 把 AI 用进销售和收入团队流程。"
+      ],
+      "visibleFragment": "Skip to Main Content AWS for Industries Automate Procurement Workflows with AI Agents using Amazon Bedrock AgentCore Procurement teams increasing struggle with managing vendor selection and Request for Quotation (RFQ) processes effectively. Buyers spend significant time navigating multiple Enterprise Resource Planning systems and external data sources. They...",
+      "keyExcerpts": [
+        "Procurement teams increasing struggle with managing vendor selection and Request for Quotation (RFQ) processes effectively. Buyers spend significant time navigating multiple Enterprise Resource Planning systems and exte...",
+        "Skip to Main Content AWS for Industries Automate Procurement Workflows with AI Agents using Amazon Bedrock AgentCore Procurement teams increasing struggle with managing vendor selection and Request for Quotation (RFQ) p...",
+        "Buyers spend significant time navigating multiple Enterprise Resource Planning systems and external data sources.",
+        "They must consolidate supplier information, validate compliance requirements, and compare costs across vendors to identify the optimal option."
+      ],
+      "rawRefs": [
+        "R-011"
+      ],
+      "poolRefs": [
+        "P-010"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-05--signal--amazon-auto-signal-p-010.md",
+      "rawRef": "R-011",
+      "rawTitle": "Automate Procurement Workflows with AI Agents using Amazon Bedrock AgentCore | AWS for Industries",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-011-automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-age.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-011-automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-age.json",
+      "sourceLinks": [
+        "https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-customer-adoption",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A02",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Anthropic 报告递归式自我改进进展",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Anthropic",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceUrl": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "publishedAt": "2026-06-04T20:12:01.444Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-first-party"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "stage-watch",
+        "source-first-party"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-first-party",
+          "label": "一手来源"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Anthropic 把 AI 用进模型部署和算力调用。",
+      "originalHighlights": [
+        "Anthropic 把 AI 用进模型部署和算力调用。",
+        "Anthropic 把 AI 用进模型部署和算力调用。"
+      ],
+      "visibleFragment": "When AI builds itself \\ Anthropic When AI builds itself Our progress toward recursive self-improvement, and its implications. For most of AI’s history, humans drove every step in its development cycle. But at Anthropic, we are delegating a growing share of AI development to AI systems themselves, which is speeding up our work. Taken far enough, and given en...",
+      "keyExcerpts": [
+        "Anthropic 近日发表文章《当人工智能自我构建：我们在递归式自我改进方面的进展》，报告其在递归式自我改进方面的进展，探讨 AI 系统自我构建的能力。该文章发布在 Hacker News 上。",
+        "When AI builds itself \\ Anthropic When AI builds itself Our progress toward recursive self-improvement, and its implications.",
+        "For most of AI’s history, humans drove every step in its development cycle.",
+        "But at Anthropic, we are delegating a growing share of AI development to AI systems themselves, which is speeding up our work."
+      ],
+      "rawRefs": [
+        "R-003"
+      ],
+      "poolRefs": [
+        "P-003"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-05--signal--anthropic-auto-signal-p-003.md",
+      "rawRef": "R-003",
+      "rawTitle": "Anthropic 报告递归式自我改进进展",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-003-anthropic-报告递归式自我改进进展.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-003-anthropic-报告递归式自我改进进展.json",
+      "sourceLinks": [
+        "https://www.anthropic.com/institute/recursive-self-improvement"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-customer-adoption",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A12",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Archestra 把 AI 用进销售和收入团队流程",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Archestra 把 AI 用进销售和收入团队流程",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Archestra 把 AI 用进销售和收入团队流程。",
+      "originalHighlights": [
+        "Archestra 把 AI 用进销售和收入团队流程。",
+        "Archestra 把 AI 用进销售和收入团队流程。"
+      ],
+      "visibleFragment": "UPDATED 08:00 EDT / JUNE 02 2026 AI Archestra raises $10M to broker AI agent access to corporate data by Duncan Riley SHARE Archestra Inc. , a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data, today announced that it has raised $10 million in new funding to expand deployments i...",
+      "keyExcerpts": [
+        "Archestra Inc., a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise ... / query=open-source AI agent GitHub enterprise adoption / intent=find_cu...",
+        "UPDATED 08:00 EDT / JUNE 02 2026 AI Archestra raises $10M to broker AI agent access to corporate data by Duncan Riley SHARE Archestra Inc.",
+        "-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data, today announced that it has raised $10 million in new funding to expand deployments inside l...",
+        "The platform is in production at four Fortune 500 companies, where agents are working across legal, procurement, management and operations."
+      ],
+      "rawRefs": [
+        "R-014"
+      ],
+      "poolRefs": [
+        "P-013"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-05--signal--archestra-auto-signal-p-013.md",
+      "rawRef": "R-014",
+      "rawTitle": "Archestra raises $10M to broker AI agent access to corporate data",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-014-archestra-raises-10m-to-broker-ai-agent-access-to-corporate-data.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-014-archestra-raises-10m-to-broker-ai-agent-access-to-corporate-data.json",
+      "sourceLinks": [
+        "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-customer-adoption",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A06",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "57 early stage AI startups 融资，做地产和建筑设计工作流",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "57 early stage AI startups",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://www.linkedin.com/posts/chintanzalani_57-early-stage-ai-startups-raised-316m-in-activity-7434321064035319809-BOrh",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-watch",
+          "stage-rising"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "customer-enterprise",
+        "evidence-funding",
+        "stage-watch",
+        "stage-rising",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "stage-rising",
+          "label": "升温"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "57 early stage AI startups 宣布$316M 融资，业务重点落在地产和建筑设计工作流。",
+      "originalHighlights": [
+        "57 early stage AI startups 宣布$316M 融资，业务重点落在地产和建筑设计工作流。",
+        "57 early stage AI startups 宣布$316M 融资，业务重点落在地产和建筑设计工作流。"
+      ],
+      "visibleFragment": "57 early stage AI startups raised $316M in Seed and Pre-Seed funding last week across 15 countries. 57 early stage AI startups raised $316M in Seed and Pre-Seed funding last week across 15 countries. Here are 10 startups that caught my eye: 1/ MeltPlan: $14M Seed MeltPlan automates takeoffs, code compliance, and cost estimation in one AI-native preconstruct...",
+      "keyExcerpts": [
+        "57 early stage AI startups raised $316M in Seed and Pre-Seed funding last week across 15 countries. Here are 10 startups that caught my eye: ... / query=pre-seed AI startup vertical AI design partner / intent=find_start...",
+        "57 early stage AI startups raised $316M in Seed and Pre-Seed funding last week across 15 countries.",
+        "Here are 10 startups that caught my eye: 1/ MeltPlan: $14M Seed MeltPlan automates takeoffs, code compliance, and cost estimation in one AI-native preconstruction platform.",
+        "Bessemer led, SF-based."
+      ],
+      "rawRefs": [
+        "R-008"
+      ],
+      "poolRefs": [
+        "P-007"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-05--signal--57-early-stage-ai-startups-auto-signal-p-007.md",
+      "rawRef": "R-008",
+      "rawTitle": "57 early stage AI startups raised $316M in Seed and Pre ... - LinkedIn",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-008-57-early-stage-ai-startups-raised-316m-in-seed-and-pre-linkedin.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-008-57-early-stage-ai-startups-raised-316m-in-seed-and-pre-linkedin.json",
+      "sourceLinks": [
+        "https://www.linkedin.com/posts/chintanzalani_57-early-stage-ai-startups-raised-316m-in-activity-7434321064035319809-BOrh"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-funding",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "OPN-FB-20260605-13",
+      "type": "opinion_card",
+      "category": "opinion",
+      "categoryLabel": "观点",
+      "title": "Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked — TFN",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "未标注主体",
+      "source": "follow-builders cloud fallback / keyword search / Anysearch",
+      "sourceName": "follow-builders cloud fallback / keyword search / Anysearch",
+      "sourceUrl": "https://techfundingnews.com/ex-goldman-sachs-and-meta-founders-raise-3m-to-build-the-voice-ai-infrastructure-global-tech-giants-overlooked/",
+      "publishedAt": "unknown",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [
+          "scenario-frontier-opinion"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-frontier-opinion"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [
+          "region-global"
+        ],
+        "source": [
+          "source-social"
+        ],
+        "opinion": [
+          "opinion-product-strategy"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "scenario-frontier-opinion",
+        "evidence-frontier-opinion",
+        "stage-watch",
+        "region-global",
+        "source-social",
+        "opinion-product-strategy"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "scenario-frontier-opinion",
+          "label": "前沿观点"
+        },
+        {
+          "id": "evidence-frontier-opinion",
+          "label": "前沿观点"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "region-global",
+          "label": "全球"
+        },
+        {
+          "id": "source-social",
+          "label": "社媒线索"
+        },
+        {
+          "id": "opinion-product-strategy",
+          "label": "产品策略观点"
+        }
+      ],
+      "summary": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+      "eventLine": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
+      "originalHighlights": [
+        "# Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked - London-based AethexAI emerges from stealth with a $3M pre-seed round led by 4DX Ventures - The startup is already handling up to 15,000 product..."
+      ],
+      "visibleFragment": "",
+      "keyExcerpts": [],
+      "rawRefs": [],
+      "poolRefs": [],
+      "cardPath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-05--frontier-opinion--unknown-builder-ex-goldman-sachs-and-meta-founders-raise-3m-to-build-t.md",
+      "rawRef": "BP-20260605-13",
+      "rawTitle": "Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked — TFN",
+      "rawArchive": "01-SiteV2/content/05-frontier-opinions/2026-06-05-opinion-candidates.md",
+      "rawJson": "",
+      "sourceLinks": [
+        "https://techfundingnews.com/ex-goldman-sachs-and-meta-founders-raise-3m-to-build-the-voice-ai-infrastructure-global-tech-giants-overlooked/"
+      ],
+      "status": "draft",
+      "assetLevel": "candidate",
+      "stage": "stage-watch",
+      "evidence": "evidence-frontier-opinion",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "OPN-FB-20260605-19",
+      "type": "opinion_card",
+      "category": "opinion",
+      "categoryLabel": "观点",
+      "title": "The True Cost of Implementing AI in Business in 2026 - Riseup Labs",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "未标注主体",
+      "source": "follow-builders cloud fallback / keyword search / Anysearch",
+      "sourceName": "follow-builders cloud fallback / keyword search / Anysearch",
+      "sourceUrl": "https://riseuplabs.com/cost-of-implementing-ai-in-business/",
+      "publishedAt": "unknown",
+      "tags": {
+        "track": [
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [
+          "scenario-frontier-opinion"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-frontier-opinion"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [
+          "region-global"
+        ],
+        "source": [
+          "source-social"
+        ],
+        "opinion": [
+          "opinion-model-infra",
+          "opinion-product-strategy"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "scenario-frontier-opinion",
+        "evidence-frontier-opinion",
+        "stage-watch",
+        "region-global",
+        "source-social",
+        "opinion-model-infra",
+        "opinion-product-strategy"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "scenario-frontier-opinion",
+          "label": "前沿观点"
+        },
+        {
+          "id": "evidence-frontier-opinion",
+          "label": "前沿观点"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "region-global",
+          "label": "全球"
+        },
+        {
+          "id": "source-social",
+          "label": "社媒线索"
+        },
+        {
+          "id": "opinion-model-infra",
+          "label": "模型基础设施观点"
+        },
+        {
+          "id": "opinion-product-strategy",
+          "label": "产品策略观点"
+        }
+      ],
+      "summary": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
+      "eventLine": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
+      "originalHighlights": [
+        "Enterprise-Grade AI Solutions Total implementation costs often start at $1 million and can exceed $10 million, especially for large-scale or mission-critical systems. For enterprises, these initiatives are long-term strategic investments rather than standalon..."
+      ],
+      "visibleFragment": "",
+      "keyExcerpts": [],
+      "rawRefs": [],
+      "poolRefs": [],
+      "cardPath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-05--frontier-opinion--unknown-builder-the-true-cost-of-implementing-ai-in-business-in-2026-r.md",
+      "rawRef": "BP-20260605-19",
+      "rawTitle": "The True Cost of Implementing AI in Business in 2026 - Riseup Labs",
+      "rawArchive": "01-SiteV2/content/05-frontier-opinions/2026-06-05-opinion-candidates.md",
+      "rawJson": "",
+      "sourceLinks": [
+        "https://riseuplabs.com/cost-of-implementing-ai-in-business/"
+      ],
+      "status": "draft",
+      "assetLevel": "candidate",
+      "stage": "stage-watch",
+      "evidence": "evidence-frontier-opinion",
+      "track": "track-ai-infra"
+    },
+    {
+      "id": "SIG-20260605-A08",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "AI 发布 AI 能力，指向销售和收入团队流程",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "AI 发布 AI 能力，指向销售和收入团队流程",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://github.com/enterprise",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "AI 发布新的 AI 能力，面向销售和收入团队流程。",
+      "originalHighlights": [
+        "AI 发布新的 AI 能力，面向销售和收入团队流程。",
+        "AI 发布新的 AI 能力，面向销售和收入团队流程。"
+      ],
+      "visibleFragment": "The AI-powered developer platform for the agent-ready enterprise Bring your DevOps together on one secure platform built for speed, scale, and the agent-driven future of software. Start a 30-day free trial Contact sales /enterprise Section - logo Security built into every stage of the software lifecycle Security built into every stage of the software lifecy...",
+      "keyExcerpts": [
+        "Find and fix vulnerabilities natively. Automate code, secret, and dependency scanning with GitHub Advanced Security, built directly into the workflow. / query=open-source AI agent GitHub enterprise adoption / intent=fin...",
+        "The AI-powered developer platform for the agent-ready enterprise Bring your DevOps together on one secure platform built for speed, scale, and the agent-driven future of software.",
+        "Start a 30-day free trial Contact sales /enterprise Section - logo Security built into every stage of the software lifecycle Security built into every stage of the software lifecycle.",
+        "GitHub integrates automated, developer-first security that keeps teams moving fast."
+      ],
+      "rawRefs": [
+        "R-010"
+      ],
+      "poolRefs": [
+        "P-009"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--ai-auto-signal-p-009.md",
+      "rawRef": "R-010",
+      "rawTitle": "The AI-powered developer platform for the agent-ready enterprise",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-010-the-ai-powered-developer-platform-for-the-agent-ready-enterprise.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-010-the-ai-powered-developer-platform-for-the-agent-ready-enterprise.json",
+      "sourceLinks": [
+        "https://github.com/enterprise"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A07",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Advanced Voice AI Platforms 2026 Market Insights™ - Avasant",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Avasant",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://avasant.com/report/advanced-voice-ai-platforms-2026-market-insights/",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "function-customer-service",
+          "label": "客服售后"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Avasant 发布新的 AI 能力，面向模型部署和算力调用。",
+      "originalHighlights": [
+        "Avasant 发布新的 AI 能力，面向模型部署和算力调用。",
+        "Avasant 发布新的 AI 能力，面向模型部署和算力调用。"
+      ],
+      "visibleFragment": "Skip to content Advanced Voice AI Platforms 2026 Market Insights™ March, 2026 Get Access Now Login to Download Download Download Full Report This report identifies key demand-side trends in the advanced voice AI space to assist enterprises in their voice AI journeys. It provides an overview of key trends and enterprise challenges that Avasant considers impo...",
+      "keyExcerpts": [
+        "This report identifies key demand-side trends in the advanced voice AI space to assist enterprises in their voice AI journeys. It provides an overview of key trends and enterprise challenges that Avasant considers impor...",
+        "Skip to content Advanced Voice AI Platforms 2026 Market Insights™ March, 2026 Get Access Now Login to Download Download Download Full Report This report identifies key demand-side trends in the advanced voice AI space t...",
+        "It provides an overview of key trends and enterprise challenges that Avasant considers important to highlight in the voice AI space.",
+        "Why read this Market Insights?"
+      ],
+      "rawRefs": [
+        "R-009"
+      ],
+      "poolRefs": [
+        "P-008"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--avasant-auto-signal-p-008.md",
+      "rawRef": "R-009",
+      "rawTitle": "Advanced Voice AI Platforms 2026 Market Insights™ - Avasant",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-009-advanced-voice-ai-platforms-2026-market-insightstm-avasant.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-009-advanced-voice-ai-platforms-2026-market-insightstm-avasant.json",
+      "sourceLinks": [
+        "https://avasant.com/report/advanced-voice-ai-platforms-2026-market-insights/"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A03",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Claude Code v2.1.163 发布",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Claude Code",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "sourceName": "Claude Code：GitHub Releases（RSS）",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+      "publishedAt": "2026-06-04T21:52:51.000Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-coding",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team",
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-first-party"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-coding",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-first-party"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-engineering",
+          "label": "工程研发"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-first-party",
+          "label": "一手来源"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Claude Code v2.1.163 发布 发布新的 AI 能力，面向企业智能体协作流程。",
+      "originalHighlights": [
+        "Claude Code v2.1.163 发布 发布新的 AI 能力，面向企业智能体协作流程。",
+        "Claude Code v2.1.163 发布 发布新的 AI 能力，面向企业智能体协作流程。"
+      ],
+      "visibleFragment": "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.2k Star 130k v2.1.163 Latest Latest Compare Choose a tag to compare Sorry, something went wrong. Filter Loading Sorry, something went wrong. Uh oh! There was an error while loading. Please reload this page . No results found View all tags ashwin-ant rel...",
+      "keyExcerpts": [
+        "新增 `requiredMinimumVersion` 和 `requiredMaximumVersion` 托管设置，版本超范围时拒绝启动并引导用户使用经批准版本。新增 `/plugin list` 命令及 `--enabled`/`--disabled` 筛选；`/btw` 添加 \"c to copy\" 快捷键，复制原始 markdown 答案到剪贴板。Hooks 方面，Stop 和 SubagentStop 可返回 `addit...",
+        "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.",
+        "163 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.",
+        "Filter Loading Sorry, something went wrong."
+      ],
+      "rawRefs": [
+        "R-005"
+      ],
+      "poolRefs": [
+        "P-004"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--claude-code-v2-1-163-auto-signal-p-004.md",
+      "rawRef": "R-005",
+      "rawTitle": "Claude Code v2.1.163 发布",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-005-claude-code-v2-1-163-发布.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-005-claude-code-v2-1-163-发布.json",
+      "sourceLinks": [
+        "https://github.com/anthropics/claude-code/releases/tag/v2.1.163"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A10",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Firecrawl 发布 AI 能力，指向地产开发和建筑设计流程",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Firecrawl",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://www.firecrawl.dev/blog/best-open-source-agent-frameworks",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-coding",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team",
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-coding",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-engineering",
+          "label": "工程研发"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Firecrawl 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+      "originalHighlights": [
+        "Firecrawl 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+        "Firecrawl 发布新的 AI 能力，面向地产开发和建筑设计流程。"
+      ],
+      "visibleFragment": "Introducing /monitor. Notify your AI agent the moment pages or sites change. Try it now → // Get started // Ready to build? Start getting Web Data for free and scale seamlessly as your project expands. No credit card needed. Start for free See our plans Are you an AI agent? Get an API key here Table of Contents Blog The best open source frameworks for build...",
+      "keyExcerpts": [
+        "The OpenAI Agents SDK is a lightweight Python framework released in March 2025 with over 19,000 GitHub stars and 10.3 million monthly downloads. / query=open-source AI agent GitHub enterprise adoption / intent=find_mark...",
+        "Introducing /monitor.",
+        "Notify your AI agent the moment pages or sites change.",
+        "Try it now → // Get started // Ready to build?"
+      ],
+      "rawRefs": [
+        "R-012"
+      ],
+      "poolRefs": [
+        "P-011"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--firecrawl-auto-signal-p-011.md",
+      "rawRef": "R-012",
+      "rawTitle": "The best open source frameworks for building AI agents in 2026",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-012-the-best-open-source-frameworks-for-building-ai-agents-in-2026.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-012-the-best-open-source-frameworks-for-building-ai-agents-in-2026.json",
+      "sourceLinks": [
+        "https://www.firecrawl.dev/blog/best-open-source-agent-frameworks"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A05",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Google Research 发布被动心率监测系统 PHRM",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Google Research 发布被动心率监测系统 PHRM",
+      "source": "Google Research：Blog（网页）",
+      "sourceName": "Google Research：Blog（网页）",
+      "sourceUrl": "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera",
+      "publishedAt": "2026-06-04T20:25:28.688Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-first-party"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-first-party"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-first-party",
+          "label": "一手来源"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Google Research 发布被动心率监测系统 PHRM 发布新的 AI 能力，面向模型部署和算力调用。",
+      "originalHighlights": [
+        "Google Research 发布被动心率监测系统 PHRM 发布新的 AI 能力，面向模型部署和算力调用。",
+        "Google Research 发布被动心率监测系统 PHRM 发布新的 AI 能力，面向模型部署和算力调用。"
+      ],
+      "visibleFragment": "play silent looping video pause silent looping video unmute video mute video Towards passive heart health monitoring via smartphone camera June 4, 2026 Eric S. Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research We present a research system that passively measures heart rate and resting heart rate via facial video captured...",
+      "keyExcerpts": [
+        "Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini...",
+        "play silent looping video pause silent looping video unmute video mute video Towards passive heart health monitoring via smartphone camera June 4, 2026 Eric S.",
+        "Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research We present a research system that passively measures heart rate and resting heart rate via facial video captured by the front-facing...",
+        "Quick links Paper Dataset and pre-trained model Share Copy link Heart rate (HR), one of the cardinal vital signs , is a dynamic indicator of physiological status, influenced by everything from activity, to stress, to ac..."
+      ],
+      "rawRefs": [
+        "R-007"
+      ],
+      "poolRefs": [
+        "P-006"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--google-research-phrm-auto-signal-p-006.md",
+      "rawRef": "R-007",
+      "rawTitle": "Google Research 发布被动心率监测系统 PHRM",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-007-google-research-发布被动心率监测系统-phrm.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-007-google-research-发布被动心率监测系统-phrm.json",
+      "sourceLinks": [
+        "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A14",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Governing agents in GitHub Enterprise 发布 AI 能力，指向地产开发和建筑设计流程",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Governing agents in GitHub Enterprise",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://wellarchitected.github.com/library/governance/recommendations/governing-agents/",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-coding",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team",
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-coding",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-engineering",
+          "label": "工程研发"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Governing agents in GitHub Enterprise 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+      "originalHighlights": [
+        "Governing agents in GitHub Enterprise 发布新的 AI 能力，面向地产开发和建筑设计流程。",
+        "Governing agents in GitHub Enterprise 发布新的 AI 能力，面向地产开发和建筑设计流程。"
+      ],
+      "visibleFragment": "Content Library 📜 Governance Recommendations Governing agents in GitHub Enterprise Governing agents in GitHub Enterprise Kitty Chiu , Tiago Pascoal , Ken Muse , Josh Johanning & Ayodeji Ayodele April 13, 2026 Updated May 6, 2026 Scenario overview Agents — Copilot cloud agent , Copilot code review agent , and third-party agents like Anthropic Claude and Ope...",
+      "keyExcerpts": [
+        "Agents — Copilot cloud agent, Copilot code review agent, and third-party agents like Anthropic Claude and OpenAI Codex— are becoming significant contributors to enterprise codebases. GitHub lets teams assign tasks to ag...",
+        "Content Library 📜 Governance Recommendations Governing agents in GitHub Enterprise Governing agents in GitHub Enterprise Kitty Chiu , Tiago Pascoal , Ken Muse , Josh Johanning & Ayodeji Ayodele April 13, 2026 Updated M...",
+        "GitHub lets teams assign tasks to agents from issues, PRs, and Visual Studio Code in a single workflow.",
+        "In many organizations, agents already rank among the top contributors by pull request volume."
+      ],
+      "rawRefs": [
+        "R-016"
+      ],
+      "poolRefs": [
+        "P-015"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--governing-agents-in-github-enterprise-auto-signal-p-015.md",
+      "rawRef": "R-016",
+      "rawTitle": "Governing agents in GitHub Enterprise",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-016-governing-agents-in-github-enterprise.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-016-governing-agents-in-github-enterprise.json",
+      "sourceLinks": [
+        "https://wellarchitected.github.com/library/governance/recommendations/governing-agents/"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A11",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Kpmg 发布 AI 能力，指向销售和收入团队流程",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Kpmg 发布 AI 能力，指向销售和收入团队流程",
+      "source": "keyword search / Anysearch",
+      "sourceName": "keyword search / Anysearch",
+      "sourceUrl": "https://kpmg.com/us/en/how-we-work/client-stories/transforming-procurement-intelligent-technology.html",
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Kpmg 发布新的 AI 能力，面向销售和收入团队流程。",
+      "originalHighlights": [
+        "Kpmg 发布新的 AI 能力，面向销售和收入团队流程。",
+        "Kpmg 发布新的 AI 能力，面向销售和收入团队流程。"
+      ],
+      "visibleFragment": "Transforming procurement through intelligent technology CLIENT STORY International Flavors & Fragrances (IFF) and KPMG PRIMARY GOAL Optimize procurement processes and streamline the end-to-end user experience INDUSTRY Consumer Goods KEY SOLUTION AI enabled, integrated source to pay platform SCALE 110+ manufacturing facilities and 100 R&D centers across 65 c...",
+      "keyExcerpts": [
+        "CLIENT STORY International Flavors & Fragrances (IFF) and KPMG PRIMARY GOAL Optimize procurement processes and streamline the end-to-end user experience KEY SOLUTION AI enabled, integrated source to pay platform SCALE 1...",
+        "Transforming procurement through intelligent technology CLIENT STORY International Flavors & Fragrances (IFF) and KPMG PRIMARY GOAL Optimize procurement processes and streamline the end-to-end user experience INDUSTRY C...",
+        "Their additives give taste and nutrition boosts to breads, cookies, crackers, mixes, flavor packets, drinks, etc.",
+        ", while their fragrances bring olfactory appeal to detergents, sprays, scented candles, colognes and perfumes, and much more."
+      ],
+      "rawRefs": [
+        "R-013"
+      ],
+      "poolRefs": [
+        "P-012"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--kpmg-auto-signal-p-012.md",
+      "rawRef": "R-013",
+      "rawTitle": "Transforming procurement through intelligent technology",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-013-transforming-procurement-through-intelligent-technology.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-013-transforming-procurement-through-intelligent-technology.json",
+      "sourceLinks": [
+        "https://kpmg.com/us/en/how-we-work/client-stories/transforming-procurement-intelligent-technology.html"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A04",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Marktechpost",
+      "source": "MarkTechPost（RSS）",
+      "sourceName": "MarkTechPost（RSS）",
+      "sourceUrl": "https://www.marktechpost.com/2026/06/04/nvidia-ai-releases-nemotron-3-ultra-an-open-550b-mixture-of-experts-hybrid-mamba-transformer-for-long-running-agents",
+      "publishedAt": "2026-06-04T21:42:28.000Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-industry-data",
+          "label": "产业数据"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Marktechpost 发布新的 AI 能力，面向模型部署和算力调用。",
+      "originalHighlights": [
+        "Marktechpost 发布新的 AI 能力，面向模型部署和算力调用。",
+        "Marktechpost 发布新的 AI 能力，面向模型部署和算力调用。"
+      ],
+      "visibleFragment": "Editors Pick Agentic AI Tech News AI Paper Summary Technology AI Shorts Artificial Intelligence Applications Context Engineering Language Model Large Language Model Machine Learning New Releases Open Source Software Engineering Staff NVIDIA has released Nemotron 3 Ultra , the largest model in its Nemotron 3 family. It targets a specific problem: long-runnin...",
+      "keyExcerpts": [
+        "NVIDIA 发布 Nemotron 3 Ultra，总参数量 550B（活跃参数 55B）的开源混合专家（MoE）模型，采用 Mamba-Transformer 混合架构，专为长时间运行的 AI 智能体设计。该模型支持 1M token 上下文窗口，推理吞吐量比同等准确率的开源大语言模型最高提升约 6 倍。权重、训练数据和配方以 OpenMDW-1.1 许可开放。",
+        "Editors Pick Agentic AI Tech News AI Paper Summary Technology AI Shorts Artificial Intelligence Applications Context Engineering Language Model Large Language Model Machine Learning New Releases Open Source Software Eng...",
+        "It targets a specific problem: long-running agents that plan, call tools, and reason across many turns.",
+        "As agents run longer, token counts grow and inference cost climbs."
+      ],
+      "rawRefs": [
+        "R-006"
+      ],
+      "poolRefs": [
+        "P-005"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--marktechpost-auto-signal-p-005.md",
+      "rawRef": "R-006",
+      "rawTitle": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-006-nvidia-ai-发布-nemotron-3-ultra-开源-550b-moe-混合-mamba-transformer-面向长时间运行.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-006-nvidia-ai-发布-nemotron-3-ultra-开源-550b-moe-混合-mamba-transformer-面向长时间运行.json",
+      "sourceLinks": [
+        "https://www.marktechpost.com/2026/06/04/nvidia-ai-releases-nemotron-3-ultra-an-open-550b-mixture-of-experts-hybrid-mamba-transformer-for-long-running-agents"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
+    {
+      "id": "SIG-20260605-A01",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑",
+      "originalTitle": "",
+      "date": "2026-06-05",
+      "subject": "Techcrunch",
+      "source": "TechCrunch：AI（RSS）",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceUrl": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns",
+      "publishedAt": "2026-06-04T22:43:26.000Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [],
+        "source": [
+          "source-business-media"
+        ],
+        "opinion": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "stage-watch",
+        "source-business-media"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "source-business-media",
+          "label": "商业媒体"
+        }
+      ],
+      "summary": "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "eventLine": "Techcrunch 发布新的 AI 能力，面向模型部署和算力调用。",
+      "originalHighlights": [
+        "Techcrunch 发布新的 AI 能力，面向模型部署和算力调用。",
+        "Techcrunch 发布新的 AI 能力，面向模型部署和算力调用。"
+      ],
+      "visibleFragment": "Image Credits: Bloomberg AI Ahead of its IPO, Anthropic’s Daniela Amodei shrugs off doubts about AI’s returns Marina Temkin 3:43 PM PDT · June 4, 2026 Private investors have been falling over themselves to get a piece of Anthropic, given the AI model maker is growing at a dizzying pace. Multiple investors told TechCrunch that the company’s $65 billion fundr...",
+      "keyExcerpts": [
+        "Anthropic 联合创始人 Daniela Amodei 解释了公司可能通过公开市场融资的原因，并认为对 tokenmaxxing 的质疑不足为虑。",
+        "Image Credits: Bloomberg AI Ahead of its IPO, Anthropic’s Daniela Amodei shrugs off doubts about AI’s returns Marina Temkin 3:43 PM PDT · June 4, 2026 Private investors have been falling over themselves to get a piece o...",
+        "Multiple investors told TechCrunch that the company’s $65 billion fundraise at a $965 billion valuation, announced last week, was greatly oversubscribed.",
+        "Now, with that private demand still strong, Anthropic has revealed that it’s taking steps toward a public listing by filing confidentially for an IPO ."
+      ],
+      "rawRefs": [
+        "R-002"
+      ],
+      "poolRefs": [
+        "P-002"
+      ],
+      "cardPath": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-05--signal--techcrunch-auto-signal-p-002.md",
+      "rawRef": "R-002",
+      "rawTitle": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑",
+      "rawArchive": "01-SiteV2/content/01-raw/originals/2026-06-05/r-002-anthropic-联合创始人-daniela-amodei-在-ipo-前夕驳斥对-ai-回报的质疑.md",
+      "rawJson": "01-SiteV2/content/01-raw/originals/2026-06-05/r-002-anthropic-联合创始人-daniela-amodei-在-ipo-前夕驳斥对-ai-回报的质疑.json",
+      "sourceLinks": [
+        "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "stage": "stage-watch",
+      "evidence": "evidence-product-launch",
+      "track": "track-ai-agent"
+    },
     {
       "id": "SIG-20260604-A08",
       "type": "signal_card",
@@ -22763,18 +24646,18 @@
         "商业验证"
       ],
       "summary": "这些产品材料表面上分散在报告、采购、开发工具和行业 Agent，内在关系是都在争夺企业 AI 落地入口：企业怎么买、团队怎么开发、具体行业流程在哪里使用。",
-      "evidenceMeta": "2026.06.04 · 当日 11 张 · 近 7 天 25 张",
+      "evidenceMeta": "2026.06.05 · 当日 9 张 · 近 7 天 34 张",
       "detailFocus": "内在关联：这些产品材料表面上分散在报告、采购、开发工具和行业 Agent，实质上都在争夺企业 AI 落地时的入口位置：怎么买、怎么开发、在哪个行业流程里使用。",
-      "todayCount": 11,
-      "last7Count": 25,
-      "last30Count": 51,
+      "todayCount": 9,
+      "last7Count": 34,
+      "last30Count": 60,
       "subjects": [
         {
-          "label": "AI Procurement Guide 2026",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         },
         {
-          "label": "Anthropic / Claude",
+          "label": "Avasant",
           "count": 1
         },
         {
@@ -22782,363 +24665,52 @@
           "count": 1
         },
         {
-          "label": "Google Gemini Spark",
+          "label": "Firecrawl",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 11
+          "count": 9
         }
       ],
       "supportingCards": [
         {
-          "id": "SIG-20260604-A07",
-          "title": "Menlo Ventures：2025 企业生成式 AI 状态报告",
-          "subject": "Menlo Ventures",
-          "categoryLabel": "产品",
-          "sourceName": "menlovc.com",
-          "sourceUrl": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A11",
-          "title": "AI 与 GenAI 合同谈判顾问：企业采购进入 AI 议价流程",
-          "subject": "IT Negotiations",
+          "id": "SIG-20260605-A08",
+          "title": "AI 发布 AI 能力，指向销售和收入团队流程",
+          "subject": "AI 发布 AI 能力，指向销售和收入团队流程",
           "categoryLabel": "产品",
           "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://itnegotiationservices.com/services/genai",
-          "date": "2026-06-04"
+          "sourceUrl": "https://github.com/enterprise",
+          "date": "2026-06-05"
         },
         {
-          "id": "SIG-20260604-A09",
-          "title": "2026 企业 AI 采购指南：合同、定价与采购边界",
-          "subject": "AI Procurement Guide 2026",
+          "id": "SIG-20260605-A07",
+          "title": "Advanced Voice AI Platforms 2026 Market Insights™ - Avasant",
+          "subject": "Avasant",
           "categoryLabel": "产品",
-          "sourceName": "atonementlicensing.com",
-          "sourceUrl": "https://atonementlicensing.com/blog/ai-procurement-guide/",
-          "date": "2026-06-04"
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://avasant.com/report/advanced-voice-ai-platforms-2026-market-insights/",
+          "date": "2026-06-05"
         },
         {
-          "id": "SIG-20260604-A01",
-          "title": "Claude Code v2.1.162 发布",
+          "id": "SIG-20260605-A03",
+          "title": "Claude Code v2.1.163 发布",
           "subject": "Claude Code",
           "categoryLabel": "产品",
-          "sourceName": "github.com",
-          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
-          "date": "2026-06-04"
-        }
-      ]
-    },
-    {
-      "id": "agent-workflow-enterprise",
-      "title": "Agent 的企业落点正在从聊天入口转向销售、客服和工作流",
-      "direction": "企业工作流",
-      "relation": [
-        "AI Agent",
-        "企业工作流",
-        "大中型企业"
-      ],
-      "summary": "这些企业案例的共性不是发布新模型，而是把 Agent 放进销售、客服和企业工作流这些可交付流程；关系重点从“会不会对话”转向“能不能进入组织流程并产生结果”。",
-      "evidenceMeta": "2026.06.04 · 当日 6 张 · 近 7 天 15 张",
-      "detailFocus": "内在关联：这些材料都把 Agent 从“会话能力”推向企业内部的流程节点，关注点转向流程结果、服务效率和客户采用。",
-      "todayCount": 6,
-      "last7Count": 15,
-      "last30Count": 40,
-      "subjects": [
-        {
-          "label": "美国 AI 初创公司",
-          "count": 1
+          "sourceName": "Claude Code：GitHub Releases（RSS）",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+          "date": "2026-06-05"
         },
         {
-          "label": "Alphabet / Google",
-          "count": 1
-        },
-        {
-          "label": "BCG",
-          "count": 1
-        },
-        {
-          "label": "FriendliAI",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 6
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "SIG-20260604-A08",
-          "title": "BCG：科技服务业存在 2000 亿美元 AI 机会",
-          "subject": "BCG",
-          "categoryLabel": "案例",
-          "sourceName": "bcg.com",
-          "sourceUrl": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A07",
-          "title": "IBM：企业 AI 采用需要可扩展的 Agent 逻辑",
-          "subject": "IBM Research",
-          "categoryLabel": "案例",
-          "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A01",
-          "title": "Alphabet 创纪录 850 亿美元融资用于 Google AI 业务，投资者对 AI 兴趣高涨",
-          "subject": "Alphabet / Google",
-          "categoryLabel": "案例",
-          "sourceName": "TechCrunch：AI（RSS）",
-          "sourceUrl": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A05",
-          "title": "家得宝用 Google Cloud Gemini 企业版把客服响应提速四倍",
-          "subject": "The Home Depot",
-          "categoryLabel": "案例",
-          "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
-          "date": "2026-06-04"
-        }
-      ]
-    },
-    {
-      "id": "ai-coding-engineering",
-      "title": "AI Coding 的竞争点正在转向工程工具链和运行环境",
-      "direction": "工程流程",
-      "relation": [
-        "AI Coding",
-        "工程团队",
-        "开发流程"
-      ],
-      "summary": "AI Coding 的共同关系不只是写代码更快，而是进入 SDK、代码助手、沙盒和工程工具链；竞争点开始从单次生成转向团队开发流程和运行环境。",
-      "evidenceMeta": "2026.06.04 · 当日 5 张 · 近 7 天 9 张",
-      "detailFocus": "内在关联：这些材料的共性不是“写代码更快”，而是把 AI Coding 接进 SDK、代码助手、沙盒和工程工具链。",
-      "todayCount": 5,
-      "last7Count": 9,
-      "last30Count": 11,
-      "subjects": [
-        {
-          "label": "AI Coding Agents",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
-          "count": 1
-        },
-        {
-          "label": "Google Research",
-          "count": 1
-        },
-        {
-          "label": "Northflank",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "观点",
-          "count": 3
-        },
-        {
-          "label": "产品",
-          "count": 2
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "OPN-FB-20260604-24",
-          "title": "Vercel AI SDK：面向应用与 Agent 的 TypeScript 工具包",
-          "subject": "Vercel AI SDK",
-          "categoryLabel": "观点",
-          "sourceName": "follow-builders cloud fallback / keyword search / Anysearch",
-          "sourceUrl": "https://ai-sdk.dev/docs/introduction",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "OPN-FB-20260604-11",
-          "title": "AI 编程智能体将如何改变开发者工作",
-          "subject": "AI Coding Agents",
-          "categoryLabel": "观点",
-          "sourceName": "follow-builders cloud fallback / keyword search / Anysearch",
-          "sourceUrl": "https://www.youtube.com/watch?v=TECDj4JUx7o",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "OPN-FB-20260604-22",
-          "title": "2026 年 AI Agent 沙盒：MicroVM、gVisor 与隔离边界",
-          "subject": "Northflank",
-          "categoryLabel": "观点",
-          "sourceName": "follow-builders cloud fallback / keyword search / Anysearch",
-          "sourceUrl": "https://northflank.com/blog/how-to-sandbox-ai-agents",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A01",
-          "title": "Claude Code v2.1.162 发布",
-          "subject": "Claude Code",
-          "categoryLabel": "产品",
-          "sourceName": "github.com",
-          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
-          "date": "2026-06-04"
-        }
-      ]
-    },
-    {
-      "id": "customer-service-proof",
-      "title": "客服和语音 Agent 的共性，是先在客户接触点证明效率",
-      "direction": "客户体验",
-      "relation": [
-        "客户体验",
-        "行业 Agent",
-        "效率指标"
-      ],
-      "summary": "客服、语音和行业 Agent 都落在客户接触点；这些场景的共性是更容易用响应速度、处理量和服务体验来证明 AI 是否真正改善业务。",
-      "evidenceMeta": "2026.06.04 · 当日 4 张 · 近 7 天 6 张",
-      "detailFocus": "内在关联：客服、语音交互和行业 Agent 都属于客户接触点，企业更容易用响应速度、处理量和服务体验来衡量效果。",
-      "todayCount": 4,
-      "last7Count": 6,
-      "last30Count": 7,
-      "subjects": [
-        {
-          "label": "BCG",
-          "count": 1
-        },
-        {
-          "label": "The Home Depot",
-          "count": 1
-        },
-        {
-          "label": "Vapi",
-          "count": 1
-        },
-        {
-          "label": "Vonage",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 2
-        },
-        {
-          "label": "产品",
-          "count": 2
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "SIG-20260604-A08",
-          "title": "BCG：科技服务业存在 2000 亿美元 AI 机会",
-          "subject": "BCG",
-          "categoryLabel": "案例",
-          "sourceName": "bcg.com",
-          "sourceUrl": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A05",
-          "title": "家得宝用 Google Cloud Gemini 企业版把客服响应提速四倍",
-          "subject": "The Home Depot",
-          "categoryLabel": "案例",
-          "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://www.googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A04",
-          "title": "Vapi 融资 5000 万美元，推动语音 AI 更接近真人交互",
-          "subject": "Vapi",
+          "id": "SIG-20260605-A10",
+          "title": "Firecrawl 发布 AI 能力，指向地产开发和建筑设计流程",
+          "subject": "Firecrawl",
           "categoryLabel": "产品",
           "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A06",
-          "title": "Vonage 推出面向医疗行业的专用 AI Agent",
-          "subject": "Vonage",
-          "categoryLabel": "产品",
-          "sourceName": "markets.ft.com",
-          "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606030331BIZWIRE_USPRX____20260603_BW735995-1",
-          "date": "2026-06-04"
-        }
-      ]
-    },
-    {
-      "id": "agent-infra-boundary",
-      "title": "Agent 要进入真实流程，先要解决推理、隔离和本地运行环境",
-      "direction": "基础设施",
-      "relation": [
-        "AI Agent",
-        "AI 基础设施",
-        "安全隔离 / 评测"
-      ],
-      "summary": "这些材料共同指向 Agent 落地前的基础设施条件：推理成本、运行隔离、本地执行和工程环境。问题不再是能不能演示，而是能不能被安全、稳定地放进真实流程。",
-      "evidenceMeta": "2026.06.04 · 当日 3 张 · 近 7 天 5 张",
-      "detailFocus": "内在关联：推理基础设施、沙盒隔离、Claude Code 和本地 Agent 都指向同一件事：Agent 需要可控、可运行、可集成的基础设施层。",
-      "todayCount": 3,
-      "last7Count": 5,
-      "last30Count": 7,
-      "subjects": [
-        {
-          "label": "Claude Code",
-          "count": 1
-        },
-        {
-          "label": "FriendliAI",
-          "count": 1
-        },
-        {
-          "label": "Holo3.1",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 2
-        },
-        {
-          "label": "案例",
-          "count": 1
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "SIG-20260604-A08",
-          "title": "FriendliAI 融资 2000 万美元，押注 AI 推理基础设施",
-          "subject": "FriendliAI",
-          "categoryLabel": "案例",
-          "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A01",
-          "title": "Claude Code v2.1.162 发布",
-          "subject": "Claude Code",
-          "categoryLabel": "产品",
-          "sourceName": "github.com",
-          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
-          "date": "2026-06-04"
-        },
-        {
-          "id": "SIG-20260604-A10",
-          "title": "本地计算机使用 Agent Holo3.1 发布",
-          "subject": "Holo3.1",
-          "categoryLabel": "产品",
-          "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://huggingface.co/blog/hcompany/holo31",
-          "date": "2026-06-04"
+          "sourceUrl": "https://www.firecrawl.dev/blog/best-open-source-agent-frameworks",
+          "date": "2026-06-05"
         }
       ]
     },
@@ -23152,58 +24724,227 @@
         "预算治理"
       ],
       "summary": "这些材料把 AI 从产品试用带进采购、合同、销售和收入流程；共同关系是企业开始用预算、条款和收入责任来约束 AI 的商业化落地。",
-      "evidenceMeta": "2026.06.04 · 当日 3 张 · 近 7 天 4 张",
+      "evidenceMeta": "2026.06.05 · 当日 5 张 · 近 7 天 9 张",
       "detailFocus": "内在关联：这些材料都指向同一条商业链路，AI 从产品试用进入采购预算、合同条款和收入流程。",
-      "todayCount": 3,
-      "last7Count": 4,
-      "last30Count": 13,
+      "todayCount": 5,
+      "last7Count": 9,
+      "last30Count": 18,
       "subjects": [
         {
-          "label": "AI Procurement Guide 2026",
+          "label": "10 AI Procurement Use Cases & Case Studies",
           "count": 1
         },
         {
-          "label": "IT Negotiations",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         },
         {
-          "label": "Vapi",
+          "label": "AWS for Industries",
+          "count": 1
+        },
+        {
+          "label": "Kpmg 发布 AI 能力，指向销售和收入团队流程",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 3
+        },
+        {
+          "label": "产品",
+          "count": 2
+        }
+      ],
+      "supportingCards": [
+        {
+          "id": "SIG-20260605-A13",
+          "title": "10 AI Procurement Use Cases & Case Studies 把 AI 用进销售和收入团队流程",
+          "subject": "10 AI Procurement Use Cases & Case Studies",
+          "categoryLabel": "案例",
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://aimultiple.com/ai-procurement",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "SIG-20260605-A09",
+          "title": "Amazon 把 AI 用进销售和收入团队流程",
+          "subject": "AWS for Industries",
+          "categoryLabel": "案例",
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "SIG-20260605-A12",
+          "title": "Archestra 把 AI 用进销售和收入团队流程",
+          "subject": "Archestra 把 AI 用进销售和收入团队流程",
+          "categoryLabel": "案例",
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "SIG-20260605-A08",
+          "title": "AI 发布 AI 能力，指向销售和收入团队流程",
+          "subject": "AI 发布 AI 能力，指向销售和收入团队流程",
+          "categoryLabel": "产品",
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://github.com/enterprise",
+          "date": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "id": "agent-workflow-enterprise",
+      "title": "Agent 的企业落点正在从聊天入口转向销售、客服和工作流",
+      "direction": "企业工作流",
+      "relation": [
+        "AI Agent",
+        "企业工作流",
+        "大中型企业"
+      ],
+      "summary": "这些企业案例的共性不是发布新模型，而是把 Agent 放进销售、客服和企业工作流这些可交付流程；关系重点从“会不会对话”转向“能不能进入组织流程并产生结果”。",
+      "evidenceMeta": "2026.06.05 · 当日 4 张 · 近 7 天 19 张",
+      "detailFocus": "内在关联：这些材料都把 Agent 从“会话能力”推向企业内部的流程节点，关注点转向流程结果、服务效率和客户采用。",
+      "todayCount": 4,
+      "last7Count": 19,
+      "last30Count": 44,
+      "subjects": [
+        {
+          "label": "10 AI Procurement Use Cases & Case Studies",
+          "count": 1
+        },
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "AWS for Industries",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 4
+        }
+      ],
+      "supportingCards": [
+        {
+          "id": "SIG-20260605-A13",
+          "title": "10 AI Procurement Use Cases & Case Studies 把 AI 用进销售和收入团队流程",
+          "subject": "10 AI Procurement Use Cases & Case Studies",
+          "categoryLabel": "案例",
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://aimultiple.com/ai-procurement",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "SIG-20260605-A09",
+          "title": "Amazon 把 AI 用进销售和收入团队流程",
+          "subject": "AWS for Industries",
+          "categoryLabel": "案例",
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "SIG-20260605-A02",
+          "title": "Anthropic 报告递归式自我改进进展",
+          "subject": "Anthropic",
+          "categoryLabel": "案例",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "sourceUrl": "https://www.anthropic.com/institute/recursive-self-improvement",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "SIG-20260605-A12",
+          "title": "Archestra 把 AI 用进销售和收入团队流程",
+          "subject": "Archestra 把 AI 用进销售和收入团队流程",
+          "categoryLabel": "案例",
+          "sourceName": "keyword search / Anysearch",
+          "sourceUrl": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
+          "date": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "id": "ai-coding-engineering",
+      "title": "AI Coding 的竞争点正在转向工程工具链和运行环境",
+      "direction": "工程流程",
+      "relation": [
+        "AI Coding",
+        "工程团队",
+        "开发流程"
+      ],
+      "summary": "AI Coding 的共同关系不只是写代码更快，而是进入 SDK、代码助手、沙盒和工程工具链；竞争点开始从单次生成转向团队开发流程和运行环境。",
+      "evidenceMeta": "2026.06.05 · 当日 1 张 · 近 7 天 10 张",
+      "detailFocus": "内在关联：这些材料的共性不是“写代码更快”，而是把 AI Coding 接进 SDK、代码助手、沙盒和工程工具链。",
+      "todayCount": 1,
+      "last7Count": 10,
+      "last30Count": 12,
+      "subjects": [
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 3
+          "count": 1
         }
       ],
       "supportingCards": [
         {
-          "id": "SIG-20260604-A11",
-          "title": "AI 与 GenAI 合同谈判顾问：企业采购进入 AI 议价流程",
-          "subject": "IT Negotiations",
+          "id": "SIG-20260605-A03",
+          "title": "Claude Code v2.1.163 发布",
+          "subject": "Claude Code",
           "categoryLabel": "产品",
-          "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://itnegotiationservices.com/services/genai",
-          "date": "2026-06-04"
-        },
+          "sourceName": "Claude Code：GitHub Releases（RSS）",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+          "date": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "id": "agent-infra-boundary",
+      "title": "Agent 要进入真实流程，先要解决推理、隔离和本地运行环境",
+      "direction": "基础设施",
+      "relation": [
+        "AI Agent",
+        "AI 基础设施",
+        "安全隔离 / 评测"
+      ],
+      "summary": "这些材料共同指向 Agent 落地前的基础设施条件：推理成本、运行隔离、本地执行和工程环境。问题不再是能不能演示，而是能不能被安全、稳定地放进真实流程。",
+      "evidenceMeta": "2026.06.05 · 当日 1 张 · 近 7 天 6 张",
+      "detailFocus": "内在关联：推理基础设施、沙盒隔离、Claude Code 和本地 Agent 都指向同一件事：Agent 需要可控、可运行、可集成的基础设施层。",
+      "todayCount": 1,
+      "last7Count": 6,
+      "last30Count": 8,
+      "subjects": [
         {
-          "id": "SIG-20260604-A09",
-          "title": "2026 企业 AI 采购指南：合同、定价与采购边界",
-          "subject": "AI Procurement Guide 2026",
-          "categoryLabel": "产品",
-          "sourceName": "atonementlicensing.com",
-          "sourceUrl": "https://atonementlicensing.com/blog/ai-procurement-guide/",
-          "date": "2026-06-04"
-        },
+          "label": "Claude Code",
+          "count": 1
+        }
+      ],
+      "categories": [
         {
-          "id": "SIG-20260604-A04",
-          "title": "Vapi 融资 5000 万美元，推动语音 AI 更接近真人交互",
-          "subject": "Vapi",
+          "label": "产品",
+          "count": 1
+        }
+      ],
+      "supportingCards": [
+        {
+          "id": "SIG-20260605-A03",
+          "title": "Claude Code v2.1.163 发布",
+          "subject": "Claude Code",
           "categoryLabel": "产品",
-          "sourceName": "keyword search / Anysearch",
-          "sourceUrl": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
-          "date": "2026-06-04"
+          "sourceName": "Claude Code：GitHub Releases（RSS）",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+          "date": "2026-06-05"
         }
       ]
     }
@@ -23212,232 +24953,244 @@
     {
       "object": "track-ai-agent",
       "label": "AI Agent",
-      "todayCount": 24,
-      "last7Count": 56,
-      "last30Count": 173,
+      "todayCount": 15,
+      "last7Count": 71,
+      "last30Count": 188,
       "subjects": [
         {
-          "label": "美国 AI 初创公司",
+          "label": "10 AI Procurement Use Cases & Case Studies",
           "count": 1
         },
         {
-          "label": "Adya",
+          "label": "57 early stage AI startups",
           "count": 1
         },
         {
-          "label": "AI Coding Agents",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 11
-        },
-        {
-          "label": "观点",
-          "count": 7
+          "count": 9
         },
         {
           "label": "案例",
-          "count": 6
+          "count": 4
+        },
+        {
+          "label": "融资",
+          "count": 1
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "evidence-product-launch",
           "label": "产品发布",
-          "count": 11
-        }
-      ]
-    },
-    {
-      "object": "customer-enterprise",
-      "label": "大中型企业",
-      "todayCount": 17,
-      "last7Count": 40,
-      "last30Count": 122,
-      "subjects": [
-        {
-          "label": "美国 AI 初创公司",
-          "count": 1
-        },
-        {
-          "label": "AI Procurement Guide 2026",
-          "count": 1
-        },
-        {
-          "label": "Alphabet / Google",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 11
-        },
-        {
-          "label": "案例",
-          "count": 6
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 17
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 17
-        },
-        {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 17
-        },
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 11
+          "count": 9
         }
       ]
     },
     {
       "object": "track-ai-infra",
       "label": "AI 基础设施",
-      "todayCount": 17,
-      "last7Count": 46,
-      "last30Count": 123,
+      "todayCount": 15,
+      "last7Count": 61,
+      "last30Count": 138,
       "subjects": [
         {
-          "label": "美国 AI 初创公司",
+          "label": "10 AI Procurement Use Cases & Case Studies",
           "count": 1
         },
         {
-          "label": "AI Procurement Guide 2026",
+          "label": "57 early stage AI startups",
           "count": 1
         },
         {
-          "label": "Alphabet / Google",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 11
+          "count": 9
         },
         {
           "label": "案例",
-          "count": 6
+          "count": 4
+        },
+        {
+          "label": "融资",
+          "count": 1
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "evidence-product-launch",
           "label": "产品发布",
-          "count": 11
+          "count": 9
+        }
+      ]
+    },
+    {
+      "object": "customer-enterprise",
+      "label": "大中型企业",
+      "todayCount": 14,
+      "last7Count": 54,
+      "last30Count": 136,
+      "subjects": [
+        {
+          "label": "10 AI Procurement Use Cases & Case Studies",
+          "count": 1
+        },
+        {
+          "label": "57 early stage AI startups",
+          "count": 1
+        },
+        {
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 9
+        },
+        {
+          "label": "案例",
+          "count": 4
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 14
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 14
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 14
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 9
         }
       ]
     },
     {
       "object": "track-enterprise-workflow",
       "label": "企业工作流",
-      "todayCount": 17,
-      "last7Count": 39,
-      "last30Count": 121,
+      "todayCount": 14,
+      "last7Count": 53,
+      "last30Count": 135,
       "subjects": [
         {
-          "label": "美国 AI 初创公司",
+          "label": "10 AI Procurement Use Cases & Case Studies",
           "count": 1
         },
         {
-          "label": "AI Procurement Guide 2026",
+          "label": "57 early stage AI startups",
           "count": 1
         },
         {
-          "label": "Alphabet / Google",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 11
+          "count": 9
         },
         {
           "label": "案例",
-          "count": 6
+          "count": 4
+        },
+        {
+          "label": "融资",
+          "count": 1
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 17
+          "count": 14
         },
         {
           "tag": "evidence-product-launch",
           "label": "产品发布",
-          "count": 11
+          "count": 9
         }
       ]
     },
     {
       "object": "evidence-product-launch",
       "label": "产品发布",
-      "todayCount": 11,
-      "last7Count": 26,
-      "last30Count": 52,
+      "todayCount": 9,
+      "last7Count": 35,
+      "last30Count": 61,
       "subjects": [
         {
-          "label": "AI Procurement Guide 2026",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         },
         {
-          "label": "Anthropic / Claude",
+          "label": "Avasant",
           "count": 1
         },
         {
@@ -23448,110 +25201,159 @@
       "categories": [
         {
           "label": "产品",
-          "count": 11
+          "count": 9
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 11
+          "count": 9
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 11
+          "count": 9
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 11
+          "count": 9
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 11
+          "count": 9
         }
       ]
     },
     {
       "object": "function-sales",
       "label": "销售",
-      "todayCount": 9,
-      "last7Count": 16,
-      "last30Count": 34,
+      "todayCount": 5,
+      "last7Count": 21,
+      "last30Count": 39,
       "subjects": [
         {
-          "label": "美国 AI 初创公司",
+          "label": "10 AI Procurement Use Cases & Case Studies",
           "count": 1
         },
         {
-          "label": "AI Procurement Guide 2026",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         },
         {
-          "label": "Alphabet / Google",
+          "label": "AWS for Industries",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "产品",
-          "count": 5
+          "label": "案例",
+          "count": 3
         },
         {
-          "label": "案例",
-          "count": 4
+          "label": "产品",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 9
+          "count": 5
         },
         {
           "tag": "scenario-sales-briefing",
           "label": "销售日报",
-          "count": 9
+          "count": 5
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 9
+          "count": 5
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 9
+          "count": 5
         }
       ]
     },
     {
       "object": "scenario-sales-briefing",
       "label": "销售日报",
-      "todayCount": 9,
-      "last7Count": 16,
-      "last30Count": 34,
+      "todayCount": 5,
+      "last7Count": 21,
+      "last30Count": 39,
       "subjects": [
         {
-          "label": "美国 AI 初创公司",
+          "label": "10 AI Procurement Use Cases & Case Studies",
           "count": 1
         },
         {
-          "label": "AI Procurement Guide 2026",
+          "label": "AI 发布 AI 能力，指向销售和收入团队流程",
           "count": 1
         },
         {
-          "label": "Alphabet / Google",
+          "label": "AWS for Industries",
           "count": 1
         }
       ],
       "categories": [
         {
+          "label": "案例",
+          "count": 3
+        },
+        {
           "label": "产品",
+          "count": 2
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
           "count": 5
         },
+        {
+          "tag": "function-sales",
+          "label": "销售",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "object": "evidence-customer-adoption",
+      "label": "客户采用",
+      "todayCount": 4,
+      "last7Count": 19,
+      "last30Count": 44,
+      "subjects": [
+        {
+          "label": "10 AI Procurement Use Cases & Case Studies",
+          "count": 1
+        },
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "AWS for Industries",
+          "count": 1
+        }
+      ],
+      "categories": [
         {
           "label": "案例",
           "count": 4
@@ -23561,71 +25363,22 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 9
-        },
-        {
-          "tag": "function-sales",
-          "label": "销售",
-          "count": 9
+          "count": 4
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 9
+          "count": 4
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 9
-        }
-      ]
-    },
-    {
-      "object": "evidence-customer-adoption",
-      "label": "客户采用",
-      "todayCount": 6,
-      "last7Count": 15,
-      "last30Count": 40,
-      "subjects": [
-        {
-          "label": "美国 AI 初创公司",
-          "count": 1
-        },
-        {
-          "label": "Alphabet / Google",
-          "count": 1
-        },
-        {
-          "label": "BCG",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 6
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 6
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 6
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
+          "count": 4
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 6
+          "count": 4
         }
       ]
     }
@@ -23981,6 +25734,64 @@
   ],
   "historicalTrends": [
     {
+      "id": "TRD-20260519-02",
+      "type": "trend_card",
+      "title": "AI 治理开始从原则讨论转向产品和流程约束",
+      "rawTitle": "track-ai-governance",
+      "date": "2026-05-19",
+      "status": "draft",
+      "assetLevel": "candidate",
+      "trendStatus": "early",
+      "stageLabel": "继续观察",
+      "hypothesis": "这个趋势指向 AI 治理从抽象原则进入产品层和流程层。具体表现是：权限、日志、隔离、评测、责任边界开始成为 AI 产品和企业部署材料里的显性问题，而不是只停留在政策口号。当前证据仍少，应作为观察线索而非成熟趋势。",
+      "relationSummary": "这个趋势指向 AI 治理从抽象原则进入产品层和流程层。具体表现是：权限、日志、隔离、评测、责任边界开始成为 AI 产品和企业部署材料里的显性问题，而不是只停留在政策口号。当前证据仍少，应作为观察线索而非成熟趋势。",
+      "boundary": "",
+      "nextObservation": "",
+      "sourceTypes": [],
+      "relatedSignals": [
+        "CHG-20260519-07"
+      ],
+      "relatedOpinions": [],
+      "tags": {
+        "track": [
+          "track-ai-governance"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [
+          "stage-watch"
+        ],
+        "region": [
+          "region-global"
+        ],
+        "source": [],
+        "opinion": []
+      },
+      "displayTags": [
+        {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        },
+        {
+          "id": "stage-watch",
+          "label": "观察"
+        },
+        {
+          "id": "region-global",
+          "label": "全球"
+        }
+      ],
+      "assetPath": "01-SiteV2/knowledge/03-Asset-Candidates/trend/2026-05-19--trend--track-ai-governance.md"
+    },
+    {
       "id": "TRD-20260519-01",
       "type": "trend_card",
       "title": "AI 编程进入预算和工程治理",
@@ -24051,64 +25862,6 @@
       "assetPath": "01-SiteV2/knowledge/03-Asset-Candidates/trend/2026-05-19--trend--ai-编程进入预算和工程治理.md"
     },
     {
-      "id": "TRD-20260519-02",
-      "type": "trend_card",
-      "title": "AI 治理开始从原则讨论转向产品和流程约束",
-      "rawTitle": "track-ai-governance",
-      "date": "2026-05-19",
-      "status": "draft",
-      "assetLevel": "candidate",
-      "trendStatus": "early",
-      "stageLabel": "继续观察",
-      "hypothesis": "这个趋势指向 AI 治理从抽象原则进入产品层和流程层。具体表现是：权限、日志、隔离、评测、责任边界开始成为 AI 产品和企业部署材料里的显性问题，而不是只停留在政策口号。当前证据仍少，应作为观察线索而非成熟趋势。",
-      "relationSummary": "这个趋势指向 AI 治理从抽象原则进入产品层和流程层。具体表现是：权限、日志、隔离、评测、责任边界开始成为 AI 产品和企业部署材料里的显性问题，而不是只停留在政策口号。当前证据仍少，应作为观察线索而非成熟趋势。",
-      "boundary": "",
-      "nextObservation": "",
-      "sourceTypes": [],
-      "relatedSignals": [
-        "CHG-20260519-07"
-      ],
-      "relatedOpinions": [],
-      "tags": {
-        "track": [
-          "track-ai-governance"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [
-          "stage-watch"
-        ],
-        "region": [
-          "region-global"
-        ],
-        "source": [],
-        "opinion": []
-      },
-      "displayTags": [
-        {
-          "id": "track-ai-governance",
-          "label": "AI 治理"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        },
-        {
-          "id": "stage-watch",
-          "label": "观察"
-        },
-        {
-          "id": "region-global",
-          "label": "全球"
-        }
-      ],
-      "assetPath": "01-SiteV2/knowledge/03-Asset-Candidates/trend/2026-05-19--trend--track-ai-governance.md"
-    },
-    {
       "id": "TRD-20260517-01",
       "type": "trend_card",
       "title": "专业服务 AI 开始进入交付流程",
@@ -24173,128 +25926,128 @@
       "window": "7 天",
       "object": "stage-watch",
       "label": "观察",
-      "cardCount": 63,
-      "lastSeen": "2026-06-04",
+      "cardCount": 79,
+      "lastSeen": "2026-06-05",
       "filter": "stage-watch"
     },
     {
       "window": "7 天",
       "object": "track-ai-agent",
       "label": "AI Agent",
-      "cardCount": 56,
-      "lastSeen": "2026-06-04",
+      "cardCount": 71,
+      "lastSeen": "2026-06-05",
       "filter": "track-ai-agent"
     },
     {
       "window": "7 天",
       "object": "track-ai-infra",
       "label": "AI 基础设施",
-      "cardCount": 46,
-      "lastSeen": "2026-06-04",
+      "cardCount": 61,
+      "lastSeen": "2026-06-05",
       "filter": "track-ai-infra"
     },
     {
       "window": "7 天",
       "object": "customer-enterprise",
       "label": "大中型企业",
-      "cardCount": 40,
-      "lastSeen": "2026-06-04",
+      "cardCount": 54,
+      "lastSeen": "2026-06-05",
       "filter": "customer-enterprise"
     },
     {
       "window": "7 天",
       "object": "track-enterprise-workflow",
       "label": "企业工作流",
-      "cardCount": 39,
-      "lastSeen": "2026-06-04",
+      "cardCount": 53,
+      "lastSeen": "2026-06-05",
       "filter": "track-enterprise-workflow"
     },
     {
       "window": "7 天",
       "object": "evidence-product-launch",
       "label": "产品发布",
-      "cardCount": 26,
-      "lastSeen": "2026-06-04",
+      "cardCount": 35,
+      "lastSeen": "2026-06-05",
       "filter": "evidence-product-launch"
+    },
+    {
+      "window": "7 天",
+      "object": "source-industry-data",
+      "label": "产业数据",
+      "cardCount": 29,
+      "lastSeen": "2026-06-05",
+      "filter": "source-industry-data"
     },
     {
       "window": "7 天",
       "object": "track-ai-coding",
       "label": "AI Coding",
-      "cardCount": 22,
-      "lastSeen": "2026-06-04",
+      "cardCount": 25,
+      "lastSeen": "2026-06-05",
       "filter": "track-ai-coding"
-    },
-    {
-      "window": "7 天",
-      "object": "evidence-frontier-opinion",
-      "label": "前沿观点",
-      "cardCount": 21,
-      "lastSeen": "2026-06-04",
-      "filter": "evidence-frontier-opinion"
     },
     {
       "window": "30 天",
       "object": "stage-watch",
       "label": "观察",
-      "cardCount": 194,
-      "lastSeen": "2026-06-04",
+      "cardCount": 210,
+      "lastSeen": "2026-06-05",
       "filter": "stage-watch"
     },
     {
       "window": "30 天",
       "object": "track-ai-agent",
       "label": "AI Agent",
-      "cardCount": 173,
-      "lastSeen": "2026-06-04",
+      "cardCount": 188,
+      "lastSeen": "2026-06-05",
       "filter": "track-ai-agent"
     },
     {
       "window": "30 天",
       "object": "track-ai-infra",
       "label": "AI 基础设施",
-      "cardCount": 123,
-      "lastSeen": "2026-06-04",
+      "cardCount": 138,
+      "lastSeen": "2026-06-05",
       "filter": "track-ai-infra"
     },
     {
       "window": "30 天",
       "object": "customer-enterprise",
       "label": "大中型企业",
-      "cardCount": 122,
-      "lastSeen": "2026-06-04",
+      "cardCount": 136,
+      "lastSeen": "2026-06-05",
       "filter": "customer-enterprise"
     },
     {
       "window": "30 天",
       "object": "track-enterprise-workflow",
       "label": "企业工作流",
-      "cardCount": 121,
-      "lastSeen": "2026-06-04",
+      "cardCount": 135,
+      "lastSeen": "2026-06-05",
       "filter": "track-enterprise-workflow"
     },
     {
       "window": "30 天",
       "object": "evidence-frontier-opinion",
       "label": "前沿观点",
-      "cardCount": 89,
-      "lastSeen": "2026-06-04",
+      "cardCount": 91,
+      "lastSeen": "2026-06-05",
       "filter": "evidence-frontier-opinion"
     },
     {
       "window": "30 天",
       "object": "scenario-frontier-opinion",
       "label": "前沿观点",
-      "cardCount": 89,
-      "lastSeen": "2026-06-04",
+      "cardCount": 91,
+      "lastSeen": "2026-06-05",
       "filter": "scenario-frontier-opinion"
     },
     {
       "window": "30 天",
       "object": "source-social",
       "label": "社媒线索",
-      "cardCount": 80,
-      "lastSeen": "2026-06-04",
+      "cardCount": 82,
+      "lastSeen": "2026-06-05",
       "filter": "source-social"
     }
   ]

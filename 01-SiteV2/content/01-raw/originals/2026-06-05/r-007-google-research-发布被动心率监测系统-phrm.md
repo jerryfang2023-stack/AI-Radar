@@ -1,0 +1,339 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-007
+title: "Google Research 发布被动心率监测系统 PHRM"
+original_url: "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera"
+canonical_url: "https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera"
+source_name: "Google Research：Blog（网页）"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-04T20:25:28.688Z"
+collected_at: 2026-06-05T00:46:23.044Z
+language: mixed
+full_text_hash: d530784bcd1558cf
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-007-google-research-发布被动心率监测系统-phrm.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-007-google-research-发布被动心率监测系统-phrm.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":13898,"paragraph_count":46,"sentence_count":91,"boilerplate_hits":0,"symbol_ratio":0.0009,"method":"main"}
+has_full_text: true
+content_length: 13898
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d530784bcd1558cf","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Google Research 发布被动心率监测系统 PHRM","discovery_summary":"Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。","source_name":"Google Research：Blog（网页）","origin_url":"https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera","discovered_at":"2026-06-05T00:38:28.541Z","rank_on_page":80,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: cc7c822bf6247503
+content_hash: d530784bcd1558cf
+semantic_hash: 83ad13c6bbffdcb1
+duplicate_of: ""
+first_seen_at: "2026-06-04T20:25:28.688Z"
+last_seen_at: 2026-06-05T00:46:23.044Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Google Research","Blog（网页）","Google"],"products":[],"people":[],"industries":["法律 / 法务","医疗"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["10%","5 b","4","2026","2022","8","350","000"],"quotes":[" Passive Heart Rate Monitoring During Smartphone Use in Everyday Life ","PHRM-mini","Group 1,","Group 2,","Group 3,"]}
+evidence_seed: {"company_actions":["play silent looping video pause silent looping video unmute video mute video Towards passive heart health monitoring via smartphone camera June 4, 2026 Eric S.","Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research We present a research system that passively measures heart rate and resting heart rate via facial video captured by the front-facing camera during everyday smartphone use.","Quick links Paper Dataset and pre-trained model Share Copy link Heart rate (HR), one of the cardinal vital signs , is a dynamic indicator of physiological status, influenced by everything from activity, to stress, to acute and chronic illness."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["Further, resting heart rate (RHR) is a key biomarker of cardiovascular health and long-term health risk."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"play silent looping video pause silent looping video unmute video mute video Towards passive heart health monitoring via smartphone camera June 4, 2026 Eric S.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research We present a research system that passively measures heart rate and resting heart rate via facial video captured by the front-facing camera during everyday smartphone use.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Quick links Paper Dataset and pre-trained model Share Copy link Heart rate (HR), one of the cardinal vital signs , is a dynamic indicator of physiological status, influenced by everything from activity, to stress, to acute and chronic illness.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Further, resting heart rate (RHR) is a key biomarker of cardiovascular health and long-term health risk.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A higher RHR and increases in RHR over time are associated with major adverse cardiovascular events and all-cause mortality.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Google Research 发布被动心率监测系统 PHRM
+
+## clean_text
+
+play silent looping video
+pause silent looping video
+unmute video
+mute video
+Towards passive heart health monitoring via smartphone camera
+June 4, 2026
+Eric S. Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research
+We present a research system that passively measures heart rate and resting heart rate via facial video captured by the front-facing camera during everyday smartphone use.
+Quick links
+Paper
+Dataset and pre-trained model
+Share
+Copy link
+Heart rate (HR), one of the cardinal vital signs , is a dynamic indicator of physiological status, influenced by everything from activity, to stress, to acute and chronic illness. Further, resting heart rate (RHR) is a key biomarker of cardiovascular health and long-term health risk. A higher RHR and increases in RHR over time are associated with major adverse cardiovascular events and all-cause mortality.
+Wearables, such as Fitbit devices and the Pixel Watch , have made it possible to track these health markers throughout our daily lives. However, there is room to improve their adoption, especially in low-resource environments and among those most at risk for cardiovascular disease. Smartphones present a unique opportunity to broaden access to health tracking — today, around five billion people already own a device with powerful sensors capable of monitoring their health. In 2022, we demonstrated using smartphones for on-demand HR measurement via a finger placed over the camera, and subsequent Google research considered how the signal detected during that measurement could help predict cardiovascular disease.
+In “ Passive Heart Rate Monitoring During Smartphone Use in Everyday Life ”, published in Nature , we introduce a research system (PHRM) that enables tracking of HR and RHR in the background during everyday smartphone use. PHRM leverages the front-facing camera to capture video of the user’s face in the seconds after face unlock events. It then applies deep learning to estimate HR with a mean absolute percentage error (MAPE) < 10% compared to electrocardiogram -derived ground truth, meeting industry accuracy standards for people of all skin tones. Finally, the system integrates HR measurements throughout the day into an estimate of daily RHR that matches the accuracy of wearables, with a mean absolute error (MAE) of < 5 beats per minute (bpm) compared to a wearable tracker. With our publication, we release the largest and most diverse dataset of smartphone videos publicly available for research along with a pre-trained “PHRM-mini” model. Qualified researchers can apply for access.
+play silent looping video
+pause silent looping video
+unmute video
+mute video
+A technological breakthrough designed for everyone
+Like wearables, pulse oximeters , and our previous work , PHRM measures HR via photoplethysmography (PPG), i.e., by sensing the fluctuation in how light interacts with the skin each time blood pulses through it. We developed an on-device software pipeline that processes 8-second facial video clips and uses computationally-efficient temporal shift convolutional neural networks to predict HR along with a confidence score. The pipeline further aggregates HR predictions over the day and leverages confidence scores and Kalman filtering to estimate a daily RHR.
+PHRM’s pipeline for estimating HR and daily RHR from clips of a user’s face.
+While computer vision models for such “remote” PPG (rPPG) have existed for two decades, previous work involved smaller studies under controlled conditions, limiting generalizability. Additionally, previous studies vastly underrepresented people with dark skin, in whom melanin makes the PPG signal more challenging for cameras to detect. Only recently have researchers investigated rPPG model performance on dark-skinned study participants more thoroughly, finding significantly lower accuracy — a trajectory similar to what has occurred for pulse oximeters and other PPG-based technologies. The concerns about pulse oximeters spurred the FDA to draft guidance to ensure diverse skin tone representation in validation studies. Thus far, there is a lack of studies of rPPG that achieve similar standards.
+We developed PHRM using over 350,000 video clips from nearly 700 diverse consented research participants in both laboratory and real-world settings, and we devoted more model training to the most challenging cases, as in our earlier work . We leveraged colorimetric methods and the Monk Skin Tone scale to ensure that participants with light (“Group 1,” Monk 1-4) and medium (“Group 2,” Monk 5-7) skin each comprised at least 25% of our datasets and that participants with dark (“Group 3,” Monk 8-10) skin comprised at least 33%. This sampling approach aligned with the skin tone cohorts later proposed by the FDA. Going further, with support from Google’s Health Optimization team, we developed a non-inferiority criterion stipulating that PHRM’s MAPE for HR for each group must differ from that of the others by < 5 percentage points. These efforts make our study of PHRM the largest and most diverse rPPG study to date and enabled us to develop inclusive models that perform accurately across the skin tone spectrum.
+Validation in the laboratory and the real world
+We trained PHRM to handle varied conditions in laboratory studies, recording face video and simultaneous electrocardiogram (ECG) data from 365 diverse study participants across different lighting conditions and activity states. On a separate 104-participant test set, after gating with a minimum confidence score, PHRM achieved MAPEs significantly < 10% across skin tone groups despite the range of conditions we tested. PHRM significantly outperformed 15 of the leading published rPPG models on the same test set, both before and after gating, and was the only model to achieve MAPE < 10% across all skin tones.
+HR accuracy of PHRM and state-of-the-art rPPG methods under ( top ) diverse laboratory conditions and ( bottom ) free-living conditions. Filled bars indicate MAPE after PHRM confidence gating; empty bars indicate MAPE without gating. The red dashed line indicates the pre-specified target of MAPE < 10%. Error bars indicate upper 95% confidence intervals.
+To train PHRM on real-world data, we conducted a first-of-its-kind “free-living” study. 231 diverse study participants installed a custom data collection app on their personal phones and used them as normal for eight days while wearing an ECG chest strap and a Fitbit Charge 6 fitness tracker. Our app recorded 8-second video clips and ECG data immediately after each face unlock, capturing an average of 231 clips per day. At the end of each day, participants manually and affirmatively authorized uploads to our secure, encrypted servers after reviewing their clips to confirm exclusion of sensitive content and other faces.
+play silent looping video
+pause silent looping video
+unmute video
+mute video
+PHRM captured videos from a diversity of participants and real-world conditions during our free-living study. Faces masked for privacy.
+On a held-out 101-participant validation subset, PHRM achieved an overall MAPE of 6.09% after confidence gating, with MAPEs of 5.04%, 5.12%, and 7.84% for Groups 1, 2, and 3, respectively. Each MAPE was significantly < 10% and met our pre-specified non-inferiority target. PHRM outperformed the same 15 leading rPPG models by an even wider margin under free-living conditions and remained the only model to achieve MAPE < 10% across all skin tones. Bland-Altman analysis showed that PHRM underestimated HR by only 0.64 bpm on average, with 95% limits of agreement between -11.3 and 10.3 bpm; measures with higher confidence scores had lower errors.
+Left: Bland-Altman plot showing the agreement between PHRM-estimated and ECG-derived HR during the free-living study. Colors indicate PHRM prediction confidence. Dashed lines show the bias, lower, and upper limits of agreement. Right: PHRM HR accuracy across skin tones. Boxplots show the MAPE for each participant. Boxes bound the interquartile range (IQR) divided by the median. Whiskers extend to 1.5 × IQR beyond the box. Dots beyond the whiskers represent outliers. The red dashed line indicates the pre-specified target of MAPE < 10%.
+We then applied PHRM’s RHR algorithm for participants who had at least 20 HR measurements on one or more days. For those 90 participants, PHRM successfully estimated RHR on 73.6% of the participant-days. PHRM RHR demonstrated an overall MAE of 4.39 bpm versus daily RHR from the Fitbit Charge 6, significantly less than our pre-specified 5-bpm target. Bland-Altman analysis showed that PHRM underestimated RHR by an average of 0.1 bpm, with 95% limits of agreement between -9.1 and 9.2 bpm; error decreased with increasing days of RHR measurements. The MAEs by skin tone group were significantly < 5 bpm for all but Group 3. However, MAE for all groups decreased over time as our RHR algorithm’s Kalman filter converged — Group 3’s MAE was significantly < 5 bpm from day three onwards.
+Left: Bland-Altman plot showing the agreement between PHRM- and wearable-estimated daily RHR. Colors indicate day number since the start of RHR estimates. Dashed lines show the bias, lower, and upper limits of agreement. Right: PHRM RHR accuracy as a function of day number. Shaded areas indicate 95% confidence intervals. The red dashed line indicates the pre-specified target of MAE < 5 bpm.
+In confirming the validity of our approach, we further found that participants with higher PHRM-derived RHRs were more likely to have high body mass index (BMI) and poor cardiovascular fitness (low VO2max ) after controlling for covariates, indicating that PHRM correctly captured the directionality of cardiovascular risk.
+Outlook
+To our knowledge, PHRM marks the first large-scale demonstration of passive HR and daily RHR monitoring during everyday smartphone use. As the only rPPG method to meet HR accuracy standards for people of all skin tones — even in unpredictable real-world conditions — it sets a new standard for the field. It also represents the first use of rPPG to estimate daily RHR, achieving wearable-level accuracy across all skin tones. By combining an understanding of user habits with cutting-edge deep learning techniques and an inclusive design, we’ve developed a smartphone-based HR monitoring system that enables wearable-like heart health insights. As such, PHRM presents the opportunity to democratize the benefits of heart health tracking through our most ubiquitous devices. More broadly, it demonstrates how the devices we consult so frequently can in turn reflect insights into our health.
+While PHRM met accuracy standards across skin tones, its HR measurement success rate was lower for Group 2 and lowest for Group 3, likely due to the difficulty of detecting the PPG signal in darker skin. Future efforts could explore optimizing camera exposure or triggering additional sampling attempts to improve measurement success rates. We additionally observed some outlier errors driven by participant talking and head motion. Improved video stabilization could mitigate these errors, and accelerometer-based gating could help to prioritize opportune at-rest moments. Finally, future systems could ensure data integrity and privacy by requiring face authentication and employing secure, on-device processing.
+To catalyze further research, we are making our landmark data and modeling resources available to qualified researchers who possess Institutional Review Board (IRB) approval and meet our data protection requirements. To protect research participant privacy, all videos were collected under IRB approval and were processed according to explicit participant consent. This dataset is restricted entirely to non-commercial research use, and accessing researchers are strictly prohibited from attempting to re-identify any individuals or publicly displaying raw video assets. We invite the research community to leverage our resources to build on our work.
+Acknowledgements
+This work represents the culmination of more than 7 years of effort. We thank our paper co-authors Shun Liao, Paolo Di Achille, Jiang Wu, Silviu Borac, Jonathan Wang, Xin Liu, Lawrence Cai, Yuzhe Yang, Yun Liu, Daniel McDuff, Hao-Wei Su, Brent Winslow, Anupam Pathak, Mark Malhotra, Shwetak Patel, James A. Taylor, and Jameson K. Rogers. We thank key contributors including: Nikola Teslovich, Alex Mun, Jonathan Hsu, Xiaoxia Zheng, Derrick Vickers, Sam Mravca, Tracy Giest, Jason Guss, Florence Thng, Jiening Zhan, Julie Cannon, Mehr Kashyap, Jaspreet Pannu, Tiffany Kung, Ming Jack Po, Matthew Shore, Justin Tansuwan, Liwen Chen, Cristo Alanis Barrera, Anand Saxena, Jeremy Miles, Melissa Moran, Michael V. McConnell, Ivor Horn, Benny Ayalew, Jonelle Saunders, Jonathan Tsai, Heather Cole-Lewis, Ebony Respress, Perry Payne, Kamillah Wood, Nnamdi Ezeanochie, Magdala Chery, and Rich Gossweiler. We are grateful for leadership support from Lizzie Dorfman, Katherine Chou, Michael Howell, and Greg Corrado. Special thanks go to Jiemin Yang, Josh Grondie, Kenya Moore, and Katie Barton for animating our free-living study.
+Labels:
+Health & Bioscience
+Human-Computer Interaction and Visualization
+Machine Intelligence
+Quick links
+Paper
+Dataset and pre-trained model
+Share
+Copy link
+Other posts of interest
+May 19, 2026
+Empirical Research Assistance (ERA): From Nature publication to catalyzing Computational Discovery
+General Science
+Machine Intelligence
+Natural Language Processing
+Open Source Models & Datasets
+May 1, 2026
+Catalyzing scientific impact through global partnerships and open resources
+Data Mining & Modeling
+General Science
+Health & Bioscience
+Open Source Models & Datasets
+April 29, 2026
+Four ways Google Research scientists have been using Empirical Research Assistance
+Data Mining & Modeling
+General Science
+Generative AI
+Machine Intelligence
+&times;
+
+## full_text
+
+play silent looping video
+pause silent looping video
+unmute video
+mute video
+Towards passive heart health monitoring via smartphone camera
+June 4, 2026
+Eric S. Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research
+We present a research system that passively measures heart rate and resting heart rate via facial video captured by the front-facing camera during everyday smartphone use.
+Quick links
+Paper
+Dataset and pre-trained model
+Share
+Copy link
+Heart rate (HR), one of the cardinal vital signs , is a dynamic indicator of physiological status, influenced by everything from activity, to stress, to acute and chronic illness. Further, resting heart rate (RHR) is a key biomarker of cardiovascular health and long-term health risk. A higher RHR and increases in RHR over time are associated with major adverse cardiovascular events and all-cause mortality.
+Wearables, such as Fitbit devices and the Pixel Watch , have made it possible to track these health markers throughout our daily lives. However, there is room to improve their adoption, especially in low-resource environments and among those most at risk for cardiovascular disease. Smartphones present a unique opportunity to broaden access to health tracking — today, around five billion people already own a device with powerful sensors capable of monitoring their health. In 2022, we demonstrated using smartphones for on-demand HR measurement via a finger placed over the camera, and subsequent Google research considered how the signal detected during that measurement could help predict cardiovascular disease.
+In “ Passive Heart Rate Monitoring During Smartphone Use in Everyday Life ”, published in Nature , we introduce a research system (PHRM) that enables tracking of HR and RHR in the background during everyday smartphone use. PHRM leverages the front-facing camera to capture video of the user’s face in the seconds after face unlock events. It then applies deep learning to estimate HR with a mean absolute percentage error (MAPE) < 10% compared to electrocardiogram -derived ground truth, meeting industry accuracy standards for people of all skin tones. Finally, the system integrates HR measurements throughout the day into an estimate of daily RHR that matches the accuracy of wearables, with a mean absolute error (MAE) of < 5 beats per minute (bpm) compared to a wearable tracker. With our publication, we release the largest and most diverse dataset of smartphone videos publicly available for research along with a pre-trained “PHRM-mini” model. Qualified researchers can apply for access.
+play silent looping video
+pause silent looping video
+unmute video
+mute video
+A technological breakthrough designed for everyone
+Like wearables, pulse oximeters , and our previous work , PHRM measures HR via photoplethysmography (PPG), i.e., by sensing the fluctuation in how light interacts with the skin each time blood pulses through it. We developed an on-device software pipeline that processes 8-second facial video clips and uses computationally-efficient temporal shift convolutional neural networks to predict HR along with a confidence score. The pipeline further aggregates HR predictions over the day and leverages confidence scores and Kalman filtering to estimate a daily RHR.
+PHRM’s pipeline for estimating HR and daily RHR from clips of a user’s face.
+While computer vision models for such “remote” PPG (rPPG) have existed for two decades, previous work involved smaller studies under controlled conditions, limiting generalizability. Additionally, previous studies vastly underrepresented people with dark skin, in whom melanin makes the PPG signal more challenging for cameras to detect. Only recently have researchers investigated rPPG model performance on dark-skinned study participants more thoroughly, finding significantly lower accuracy — a trajectory similar to what has occurred for pulse oximeters and other PPG-based technologies. The concerns about pulse oximeters spurred the FDA to draft guidance to ensure diverse skin tone representation in validation studies. Thus far, there is a lack of studies of rPPG that achieve similar standards.
+We developed PHRM using over 350,000 video clips from nearly 700 diverse consented research participants in both laboratory and real-world settings, and we devoted more model training to the most challenging cases, as in our earlier work . We leveraged colorimetric methods and the Monk Skin Tone scale to ensure that participants with light (“Group 1,” Monk 1-4) and medium (“Group 2,” Monk 5-7) skin each comprised at least 25% of our datasets and that participants with dark (“Group 3,” Monk 8-10) skin comprised at least 33%. This sampling approach aligned with the skin tone cohorts later proposed by the FDA. Going further, with support from Google’s Health Optimization team, we developed a non-inferiority criterion stipulating that PHRM’s MAPE for HR for each group must differ from that of the others by < 5 percentage points. These efforts make our study of PHRM the largest and most diverse rPPG study to date and enabled us to develop inclusive models that perform accurately across the skin tone spectrum.
+Validation in the laboratory and the real world
+We trained PHRM to handle varied conditions in laboratory studies, recording face video and simultaneous electrocardiogram (ECG) data from 365 diverse study participants across different lighting conditions and activity states. On a separate 104-participant test set, after gating with a minimum confidence score, PHRM achieved MAPEs significantly < 10% across skin tone groups despite the range of conditions we tested. PHRM significantly outperformed 15 of the leading published rPPG models on the same test set, both before and after gating, and was the only model to achieve MAPE < 10% across all skin tones.
+HR accuracy of PHRM and state-of-the-art rPPG methods under ( top ) diverse laboratory conditions and ( bottom ) free-living conditions. Filled bars indicate MAPE after PHRM confidence gating; empty bars indicate MAPE without gating. The red dashed line indicates the pre-specified target of MAPE < 10%. Error bars indicate upper 95% confidence intervals.
+To train PHRM on real-world data, we conducted a first-of-its-kind “free-living” study. 231 diverse study participants installed a custom data collection app on their personal phones and used them as normal for eight days while wearing an ECG chest strap and a Fitbit Charge 6 fitness tracker. Our app recorded 8-second video clips and ECG data immediately after each face unlock, capturing an average of 231 clips per day. At the end of each day, participants manually and affirmatively authorized uploads to our secure, encrypted servers after reviewing their clips to confirm exclusion of sensitive content and other faces.
+play silent looping video
+pause silent looping video
+unmute video
+mute video
+PHRM captured videos from a diversity of participants and real-world conditions during our free-living study. Faces masked for privacy.
+On a held-out 101-participant validation subset, PHRM achieved an overall MAPE of 6.09% after confidence gating, with MAPEs of 5.04%, 5.12%, and 7.84% for Groups 1, 2, and 3, respectively. Each MAPE was significantly < 10% and met our pre-specified non-inferiority target. PHRM outperformed the same 15 leading rPPG models by an even wider margin under free-living conditions and remained the only model to achieve MAPE < 10% across all skin tones. Bland-Altman analysis showed that PHRM underestimated HR by only 0.64 bpm on average, with 95% limits of agreement between -11.3 and 10.3 bpm; measures with higher confidence scores had lower errors.
+Left: Bland-Altman plot showing the agreement between PHRM-estimated and ECG-derived HR during the free-living study. Colors indicate PHRM prediction confidence. Dashed lines show the bias, lower, and upper limits of agreement. Right: PHRM HR accuracy across skin tones. Boxplots show the MAPE for each participant. Boxes bound the interquartile range (IQR) divided by the median. Whiskers extend to 1.5 × IQR beyond the box. Dots beyond the whiskers represent outliers. The red dashed line indicates the pre-specified target of MAPE < 10%.
+We then applied PHRM’s RHR algorithm for participants who had at least 20 HR measurements on one or more days. For those 90 participants, PHRM successfully estimated RHR on 73.6% of the participant-days. PHRM RHR demonstrated an overall MAE of 4.39 bpm versus daily RHR from the Fitbit Charge 6, significantly less than our pre-specified 5-bpm target. Bland-Altman analysis showed that PHRM underestimated RHR by an average of 0.1 bpm, with 95% limits of agreement between -9.1 and 9.2 bpm; error decreased with increasing days of RHR measurements. The MAEs by skin tone group were significantly < 5 bpm for all but Group 3. However, MAE for all groups decreased over time as our RHR algorithm’s Kalman filter converged — Group 3’s MAE was significantly < 5 bpm from day three onwards.
+Left: Bland-Altman plot showing the agreement between PHRM- and wearable-estimated daily RHR. Colors indicate day number since the start of RHR estimates. Dashed lines show the bias, lower, and upper limits of agreement. Right: PHRM RHR accuracy as a function of day number. Shaded areas indicate 95% confidence intervals. The red dashed line indicates the pre-specified target of MAE < 5 bpm.
+In confirming the validity of our approach, we further found that participants with higher PHRM-derived RHRs were more likely to have high body mass index (BMI) and poor cardiovascular fitness (low VO2max ) after controlling for covariates, indicating that PHRM correctly captured the directionality of cardiovascular risk.
+Outlook
+To our knowledge, PHRM marks the first large-scale demonstration of passive HR and daily RHR monitoring during everyday smartphone use. As the only rPPG method to meet HR accuracy standards for people of all skin tones — even in unpredictable real-world conditions — it sets a new standard for the field. It also represents the first use of rPPG to estimate daily RHR, achieving wearable-level accuracy across all skin tones. By combining an understanding of user habits with cutting-edge deep learning techniques and an inclusive design, we’ve developed a smartphone-based HR monitoring system that enables wearable-like heart health insights. As such, PHRM presents the opportunity to democratize the benefits of heart health tracking through our most ubiquitous devices. More broadly, it demonstrates how the devices we consult so frequently can in turn reflect insights into our health.
+While PHRM met accuracy standards across skin tones, its HR measurement success rate was lower for Group 2 and lowest for Group 3, likely due to the difficulty of detecting the PPG signal in darker skin. Future efforts could explore optimizing camera exposure or triggering additional sampling attempts to improve measurement success rates. We additionally observed some outlier errors driven by participant talking and head motion. Improved video stabilization could mitigate these errors, and accelerometer-based gating could help to prioritize opportune at-rest moments. Finally, future systems could ensure data integrity and privacy by requiring face authentication and employing secure, on-device processing.
+To catalyze further research, we are making our landmark data and modeling resources available to qualified researchers who possess Institutional Review Board (IRB) approval and meet our data protection requirements. To protect research participant privacy, all videos were collected under IRB approval and were processed according to explicit participant consent. This dataset is restricted entirely to non-commercial research use, and accessing researchers are strictly prohibited from attempting to re-identify any individuals or publicly displaying raw video assets. We invite the research community to leverage our resources to build on our work.
+Acknowledgements
+This work represents the culmination of more than 7 years of effort. We thank our paper co-authors Shun Liao, Paolo Di Achille, Jiang Wu, Silviu Borac, Jonathan Wang, Xin Liu, Lawrence Cai, Yuzhe Yang, Yun Liu, Daniel McDuff, Hao-Wei Su, Brent Winslow, Anupam Pathak, Mark Malhotra, Shwetak Patel, James A. Taylor, and Jameson K. Rogers. We thank key contributors including: Nikola Teslovich, Alex Mun, Jonathan Hsu, Xiaoxia Zheng, Derrick Vickers, Sam Mravca, Tracy Giest, Jason Guss, Florence Thng, Jiening Zhan, Julie Cannon, Mehr Kashyap, Jaspreet Pannu, Tiffany Kung, Ming Jack Po, Matthew Shore, Justin Tansuwan, Liwen Chen, Cristo Alanis Barrera, Anand Saxena, Jeremy Miles, Melissa Moran, Michael V. McConnell, Ivor Horn, Benny Ayalew, Jonelle Saunders, Jonathan Tsai, Heather Cole-Lewis, Ebony Respress, Perry Payne, Kamillah Wood, Nnamdi Ezeanochie, Magdala Chery, and Rich Gossweiler. We are grateful for leadership support from Lizzie Dorfman, Katherine Chou, Michael Howell, and Greg Corrado. Special thanks go to Jiemin Yang, Josh Grondie, Kenya Moore, and Katie Barton for animating our free-living study.
+Labels:
+Health & Bioscience
+Human-Computer Interaction and Visualization
+Machine Intelligence
+Quick links
+Paper
+Dataset and pre-trained model
+Share
+Copy link
+Other posts of interest
+May 19, 2026
+Empirical Research Assistance (ERA): From Nature publication to catalyzing Computational Discovery
+General Science
+Machine Intelligence
+Natural Language Processing
+Open Source Models & Datasets
+May 1, 2026
+Catalyzing scientific impact through global partnerships and open resources
+Data Mining & Modeling
+General Science
+Health & Bioscience
+Open Source Models & Datasets
+April 29, 2026
+Four ways Google Research scientists have been using Empirical Research Assistance
+Data Mining & Modeling
+General Science
+Generative AI
+Machine Intelligence
+&times;
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":13898,"paragraph_count":46,"sentence_count":91,"boilerplate_hits":0,"symbol_ratio":0.0009,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   play silent looping video pause silent looping video unmute video mute video Towards passive heart health monitoring via smartphone camera June 4, 2026 Eric S.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research We present a research system that passively measures heart rate and resting heart rate via facial video captured by the front-facing camera during everyday smartphone use.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Quick links Paper Dataset and pre-trained model Share Copy link Heart rate (HR), one of the cardinal vital signs , is a dynamic indicator of physiological status, influenced by everything from activity, to stress, to acute and chronic illness.
+
+5. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   Further, resting heart rate (RHR) is a key biomarker of cardiovascular health and long-term health risk.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   A higher RHR and increases in RHR over time are associated with major adverse cardiovascular events and all-cause mortality.
+
+## business_elements
+
+- companies: Google Research, Blog（网页）, Google
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 10%, 5 b, 4, 2026, 2022, 8, 350, 000
+- quotes:  Passive Heart Rate Monitoring During Smartphone Use in Everyday Life  / PHRM-mini / Group 1, / Group 2, / Group 3,
+
+## evidence_seed
+
+- company_actions: play silent looping video pause silent looping video unmute video mute video Towards passive heart health monitoring via smartphone camera June 4, 2026 Eric S. / Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research We present a research system that passively measures heart rate and resting heart rate via facial video captured by the front-facing camera during everyday smartphone use. / Quick links Paper Dataset and pre-trained model Share Copy link Heart rate (HR), one of the cardinal vital signs , is a dynamic indicator of physiological status, influenced by everything from activity, to stress, to acute and chronic illness.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: Further, resting heart rate (RHR) is a key biomarker of cardiovascular health and long-term health risk.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Google Research 发布被动心率监测系统 PHRM","discovery_summary":"Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。","source_name":"Google Research：Blog（网页）","origin_url":"https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera","discovered_at":"2026-06-05T00:38:28.541Z","rank_on_page":80,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MAE）低于5 bpm（对比可穿戴设备）。研究同时发布了迄今最大规模的公开智能手机视频数据集及预训练模型PHRM-mini，合格研究人员可申请访问。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
