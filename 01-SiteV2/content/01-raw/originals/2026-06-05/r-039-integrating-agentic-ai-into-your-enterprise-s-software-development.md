@@ -1,0 +1,300 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-039
+title: "Integrating agentic AI into your enterprise's software development ..."
+original_url: "https://docs.github.com/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents"
+canonical_url: "https://docs.github.com/en/copilot/tutorials/roll-out-at-scale/enable-developers/integrate-ai-agents"
+source_name: "keyword search / Anysearch"
+source_type: developer
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-05T00:46:23.203Z
+language: mixed
+full_text_hash: 847e722239b5b6f0
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-039-integrating-agentic-ai-into-your-enterprise-s-software-development.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-039-integrating-agentic-ai-into-your-enterprise-s-software-development.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6254,"paragraph_count":47,"sentence_count":59,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 6254
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"847e722239b5b6f0","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 08d969d1f52121ff
+content_hash: 847e722239b5b6f0
+semantic_hash: df35b89fa48f3eff
+duplicate_of: ""
+first_seen_at: "2026-06-05T00:46:23.203Z"
+last_seen_at: 2026-06-05T00:46:23.203Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","GitHub"],"products":["agents","Copilot","agent","Agent","copilot","MCP"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["1","9","2","3","4","5","6"],"quotes":[]}
+evidence_seed: {"company_actions":["Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise.","Copy as Markdown Adopting agents Article 1 of 9 Next : Agent management for enterprises In this article About AI agents on GitHub Developers in your enterprise may already use AI as a pair programming tool, receiving code suggestions synchronously during development.","AI agents are more like peer programmers."],"case_details":["# Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise. ## About AI agents on GitHub GitHub Copilot's agentic AI features are integrated into GitHub's cohesive platform, providing a more streamlined user experien... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original"],"workflow_changes":["Contribute to workflows beyond the development phase, such as ideation or optimization after a release."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"# Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise. ## About AI agents on GitHub GitHub Copilot's agentic AI features are integrated into GitHub's cohesive platform, providing a more streamlined user experien... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Copy as Markdown Adopting agents Article 1 of 9 Next : Agent management for enterprises In this article About AI agents on GitHub Developers in your enterprise may already use AI as a pair programming tool, receiving code suggestions synchronously during development.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"AI agents are more like peer programmers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"They can: Perform asynchronous tasks, such as running tests or fixing issues in your backlog, with less need for human intervention.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Contribute to workflows beyond the development phase, such as ideation or optimization after a release.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Integrating agentic AI into your enterprise's software development ...
+
+## clean_text
+
+Integrating agentic AI into your enterprise's software development lifecycle
+See how agents can boost productivity across your enterprise.
+Copy as Markdown
+Adopting agents
+Article 1 of 9 Next : Agent management for enterprises
+In this article
+About AI agents on GitHub
+Developers in your enterprise may already use AI as a pair programming tool, receiving code suggestions synchronously during development.
+AI agents are more like peer programmers. They can:
+Perform asynchronous tasks, such as running tests or fixing issues in your backlog, with less need for human intervention.
+Contribute to workflows beyond the development phase, such as ideation or optimization after a release.
+Collaborating with agents can give your employees more time to focus on other priorities, such as high-level planning, and bring the benefits of AI to non-developer roles by giving more power to natural language prompts.
+GitHub Copilot's agentic features are integrated into GitHub's platform, providing a streamlined experience and simplified licensing and governance compared to third-party tools.
+Example scenario
+You're an engineering manager at Mona's, a boutique umbrella retailer. Your team is adding an AI-powered widget to the online store that recommends umbrellas based on the user's location and local weather.
+To meet a tight deadline, you want to speed up each stage for both developers and non-developers, while keeping maintenance manageable after launch.
+Note
+GitHub is continually expanding its AI-powered platform. Some of the features described in this article are in public preview, and may not be enabled for enterprises by default. You will find resources for each feature in the Get started with agentic AI section.
+1. Plan with Copilot Chat
+A product manager starts planning with Copilot Chat at github.com/copilot .
+They ask Copilot high-level questions to get a sense of the development work required for the new feature. To give Copilot access to important context about the project, they upload mockup files and link to the repository where the codebase is stored.
+When the PM has worked with Copilot to get an overview of the tasks required, they ask Copilot to create issues for each part of the work.
+The PM marks some of the issues as nice-to-haves or maintenance. These may be good candidates for Copilot cloud agent.
+To help the developer get started quickly, the PM creates a space with Copilot Spaces at github.com/copilot/spaces . The PM collects resources like diagrams and references to code files, submits a few test questions, then shares the space with their organization.
+The developer can now ask questions in the space with all the PM's context already available.
+2. Create with Copilot CLI
+After asking some initial questions in the Copilot space, the developer starts a Copilot CLI session in their terminal to start looking at the code.
+In "plan" mode, the developer asks Copilot to recommend several AI models for the job and list the pros and cons of each.
+After writing some code, the developer asks Copilot to refactor the code into several different functions and lint it based on the organization's standards. They invoke one of the organization's custom agents, which includes custom instructions for the organization.
+Copilot can update multiple files at once and, with the developer's authorization, run commands for actions like installing dependencies or running tests.
+The developer reviews the diff and chooses which code to keep.
+3. Test with an MCP server
+With the code finished, the developer runs tests on their local build using Playwright.
+The developer has configured the Model Context Protocol (MCP) server for Playwright, an approved server in the enterprise's private MCP registry.
+The developer asks Copilot to outline test scenarios in a .feature file, then run the tests in the browser.
+Copilot asks the developer to authorize its actions as it opens the browser and interacts with the UI. It identifies a failing test and suggests a fix.
+When they're satisfied with the tests, the developer asks Copilot to open a pull request for the work on GitHub. Using the GitHub MCP server , Copilot opens a pull request with the title and description already filled in.
+Tip
+Interactions with the GitHub MCP server are secured by push protection , which blocks secrets from being included in AI-generated responses and prevents you from exposing secrets through any actions you perform using the server (public repositories only).
+4. Review with Copilot code review
+A repository owner has configured automatic code reviews by Copilot on the repository. Copilot provides an initial review on the pull request, identifying bugs and potential performance issues that the developer can fix before a human reviewer gets to the pull request.
+The developer's colleague reviews and approves the pull request. The work is ready to merge.
+5. Optimize with Copilot cloud agent
+After the release, the product manager identifies an opportunity to improve the widget by switching to a more reliable weather API. They create an issue and assign it to Copilot directly on GitHub.
+Copilot cloud agent works in the background and opens a pull request, which the product manager marks as ready for review.
+A developer reviews the pull request and leaves feedback, which Copilot incorporates. The developer then merges the pull request.
+Tip
+Copilot cloud agent comes with default guardrails. For example, Copilot cannot merge pull requests by itself. You can define additional protections for target branches using repository rulesets.
+Later, while working on a separate feature, the developer notices a small bug in the code for the AI widget. To avoid context switching, the developer delegates the work to Copilot cloud agent directly from their Copilot CLI session.
+/delegate Create a PR for the widget function to correctly validate that the user's age is a positive integer.
+6. Secure with Copilot Autofix
+An administrator has enabled code scanning on the repository, and a code scanning alert suggests a potential vulnerability in the code.
+A security manager requests Copilot Autofix to automatically suggest a fix for the vulnerability, which a developer reviews and approves.
+Next Agent management for enterprises
+
+## full_text
+
+Integrating agentic AI into your enterprise's software development lifecycle
+See how agents can boost productivity across your enterprise.
+Copy as Markdown
+Adopting agents
+Article 1 of 9 Next : Agent management for enterprises
+In this article
+About AI agents on GitHub
+Developers in your enterprise may already use AI as a pair programming tool, receiving code suggestions synchronously during development.
+AI agents are more like peer programmers. They can:
+Perform asynchronous tasks, such as running tests or fixing issues in your backlog, with less need for human intervention.
+Contribute to workflows beyond the development phase, such as ideation or optimization after a release.
+Collaborating with agents can give your employees more time to focus on other priorities, such as high-level planning, and bring the benefits of AI to non-developer roles by giving more power to natural language prompts.
+GitHub Copilot's agentic features are integrated into GitHub's platform, providing a streamlined experience and simplified licensing and governance compared to third-party tools.
+Example scenario
+You're an engineering manager at Mona's, a boutique umbrella retailer. Your team is adding an AI-powered widget to the online store that recommends umbrellas based on the user's location and local weather.
+To meet a tight deadline, you want to speed up each stage for both developers and non-developers, while keeping maintenance manageable after launch.
+Note
+GitHub is continually expanding its AI-powered platform. Some of the features described in this article are in public preview, and may not be enabled for enterprises by default. You will find resources for each feature in the Get started with agentic AI section.
+1. Plan with Copilot Chat
+A product manager starts planning with Copilot Chat at github.com/copilot .
+They ask Copilot high-level questions to get a sense of the development work required for the new feature. To give Copilot access to important context about the project, they upload mockup files and link to the repository where the codebase is stored.
+When the PM has worked with Copilot to get an overview of the tasks required, they ask Copilot to create issues for each part of the work.
+The PM marks some of the issues as nice-to-haves or maintenance. These may be good candidates for Copilot cloud agent.
+To help the developer get started quickly, the PM creates a space with Copilot Spaces at github.com/copilot/spaces . The PM collects resources like diagrams and references to code files, submits a few test questions, then shares the space with their organization.
+The developer can now ask questions in the space with all the PM's context already available.
+2. Create with Copilot CLI
+After asking some initial questions in the Copilot space, the developer starts a Copilot CLI session in their terminal to start looking at the code.
+In "plan" mode, the developer asks Copilot to recommend several AI models for the job and list the pros and cons of each.
+After writing some code, the developer asks Copilot to refactor the code into several different functions and lint it based on the organization's standards. They invoke one of the organization's custom agents, which includes custom instructions for the organization.
+Copilot can update multiple files at once and, with the developer's authorization, run commands for actions like installing dependencies or running tests.
+The developer reviews the diff and chooses which code to keep.
+3. Test with an MCP server
+With the code finished, the developer runs tests on their local build using Playwright.
+The developer has configured the Model Context Protocol (MCP) server for Playwright, an approved server in the enterprise's private MCP registry.
+The developer asks Copilot to outline test scenarios in a .feature file, then run the tests in the browser.
+Copilot asks the developer to authorize its actions as it opens the browser and interacts with the UI. It identifies a failing test and suggests a fix.
+When they're satisfied with the tests, the developer asks Copilot to open a pull request for the work on GitHub. Using the GitHub MCP server , Copilot opens a pull request with the title and description already filled in.
+Tip
+Interactions with the GitHub MCP server are secured by push protection , which blocks secrets from being included in AI-generated responses and prevents you from exposing secrets through any actions you perform using the server (public repositories only).
+4. Review with Copilot code review
+A repository owner has configured automatic code reviews by Copilot on the repository. Copilot provides an initial review on the pull request, identifying bugs and potential performance issues that the developer can fix before a human reviewer gets to the pull request.
+The developer's colleague reviews and approves the pull request. The work is ready to merge.
+5. Optimize with Copilot cloud agent
+After the release, the product manager identifies an opportunity to improve the widget by switching to a more reliable weather API. They create an issue and assign it to Copilot directly on GitHub.
+Copilot cloud agent works in the background and opens a pull request, which the product manager marks as ready for review.
+A developer reviews the pull request and leaves feedback, which Copilot incorporates. The developer then merges the pull request.
+Tip
+Copilot cloud agent comes with default guardrails. For example, Copilot cannot merge pull requests by itself. You can define additional protections for target branches using repository rulesets.
+Later, while working on a separate feature, the developer notices a small bug in the code for the AI widget. To avoid context switching, the developer delegates the work to Copilot cloud agent directly from their Copilot CLI session.
+/delegate Create a PR for the widget function to correctly validate that the user's age is a positive integer.
+6. Secure with Copilot Autofix
+An administrator has enabled code scanning on the repository, and a code scanning alert suggests a potential vulnerability in the code.
+A security manager requests Copilot Autofix to automatically suggest a fix for the vulnerability, which a developer reviews and approves.
+Next Agent management for enterprises
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6254,"paragraph_count":47,"sentence_count":59,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   # Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise. ## About AI agents on GitHub GitHub Copilot's agentic AI features are integrated into GitHub's cohesive platform, providing a more streamlined user experien... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Copy as Markdown Adopting agents Article 1 of 9 Next : Agent management for enterprises In this article About AI agents on GitHub Developers in your enterprise may already use AI as a pair programming tool, receiving code suggestions synchronously during development.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   AI agents are more like peer programmers.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   They can: Perform asynchronous tasks, such as running tests or fixing issues in your backlog, with less need for human intervention.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Contribute to workflows beyond the development phase, such as ideation or optimization after a release.
+
+## business_elements
+
+- companies: keyword search, Anysearch, GitHub
+- products: agents, Copilot, agent, Agent, copilot, MCP
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 1, 9, 2, 3, 4, 5, 6
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise. / Copy as Markdown Adopting agents Article 1 of 9 Next : Agent management for enterprises In this article About AI agents on GitHub Developers in your enterprise may already use AI as a pair programming tool, receiving code suggestions synchronously during development. / AI agents are more like peer programmers.
+- case_details: # Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise. ## About AI agents on GitHub GitHub Copilot's agentic AI features are integrated into GitHub's cohesive platform, providing a more streamlined user experien... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original
+- workflow_changes: Contribute to workflows beyond the development phase, such as ideation or optimization after a release.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Integrating agentic AI into your enterprise's software development lifecycle See how agents can boost productivity across your enterprise. ## About AI agents on GitHub GitHub Copilot's agentic AI features are integrated into GitHub's cohesive platform, providing a more streamlined user experien... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

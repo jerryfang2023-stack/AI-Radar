@@ -1,0 +1,231 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-037
+title: "Levi Strauss & Co. simplifies work and accelerates decision-making with Microsoft Foundry | Microsoft Customer Stories"
+original_url: "https://www.microsoft.com/en/customers/story/26647-levi-strauss-and-co-microsoft-foundry"
+canonical_url: "https://microsoft.com/en/customers/story/26647-levi-strauss-and-co-microsoft-foundry"
+source_name: "keyword search / Anysearch"
+source_type: product
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-05T00:46:23.192Z
+language: mixed
+full_text_hash: 6ecf392a50920621
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-037-levi-strauss-co-simplifies-work-and-accelerates-decision-making-with-m.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-05/r-037-levi-strauss-co-simplifies-work-and-accelerates-decision-making-with-m.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4125,"paragraph_count":20,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 4125
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6ecf392a50920621","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 5143e296490cd61b
+content_hash: 6ecf392a50920621
+semantic_hash: 225924e4f5f57db0
+duplicate_of: ""
+first_seen_at: "2026-06-05T00:46:23.192Z"
+last_seen_at: 2026-06-05T00:46:23.192Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Microsoft","GitHub"],"products":["Agent","Copilot","agent","agents","Agents"],"people":[],"industries":["金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["170","365"],"quotes":["As a best-in-class direct-to-consumer retailer, the biggest thing that’s changed for us is the speed at which we need to operate,","This isn’t just about a tool—it’s a wholesale workplace transformation.","Human/agent collaboration at Levi I believe is going to be all about augmentation—giving time back,","We know it’s really going to augment our engineers in such a rich and powerful way and act as a force multiplier for them,"]}
+evidence_seed: {"company_actions":["# Levi Strauss & Co. simplifies work and accelerates decision-making with Microsoft Foundry | Microsoft Customer Stories & Co. Levi Strauss & Co. simplifies work As Levi Strauss & Co. scales its direct-to-consumer business, employees navigated fragmented systems and complex workflows, making it d... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","For more than 170 years, Levi Strauss & Co.","has stood at the intersection of culture, craftsmanship, and progress—reinventing how people experience denim and self-expression."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"# Levi Strauss & Co. simplifies work and accelerates decision-making with Microsoft Foundry | Microsoft Customer Stories & Co. Levi Strauss & Co. simplifies work As Levi Strauss & Co. scales its direct-to-consumer business, employees navigated fragmented systems and complex workflows, making it d... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For more than 170 years, Levi Strauss & Co.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"has stood at the intersection of culture, craftsmanship, and progress—reinventing how people experience denim and self-expression.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"As a global direct-to-consumer retailer, delivering exceptional fan experiences is core to the brand.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"These experiences require continuous innovation and improvement to how employees can access information, make decisions, and take action.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"As the retail industry accelerates, consumer expectations evolve, and technology rapidly advances, Levi Strauss & Co.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Levi Strauss & Co. simplifies work and accelerates decision-making with Microsoft Foundry | Microsoft Customer Stories
+
+## clean_text
+
+For more than 170 years, Levi Strauss & Co. has stood at the intersection of culture, craftsmanship, and progress—reinventing how people experience denim and self-expression.
+As a global direct-to-consumer retailer, delivering exceptional fan experiences is core to the brand. These experiences require continuous innovation and improvement to how employees can access information, make decisions, and take action.
+As the retail industry accelerates, consumer expectations evolve, and technology rapidly advances, Levi Strauss & Co. faced a growing challenge: how do you increase speed and agility across the business without creating more complexity for employees?
+Teams were working with data spread across multiple sources, making it difficult to find information and navigate complex workflows to complete tasks. Valuable insights were often difficult to access and act on in real time.
+The opportunity wasn’t just to introduce AI but to fundamentally simplify how work happens across the company.
+Jason Gowans, Chief Digital and Technology Officer at Levi Strauss & Co., saw the need to address internal networks and keep pace with the scale and speed required, and what the transformation means.
+“As a best-in-class direct-to-consumer retailer, the biggest thing that’s changed for us is the speed at which we need to operate,” Gowans said. “This isn’t just about a tool—it’s a wholesale workplace transformation.”
+AI automation and augmented workforce
+Levi Strauss & Co. began its AI journey by deploying Microsoft 365 Copilot across the enterprise. This integration enabled employees to use AI as a productivity tool and thought partner.
+Copilot helped designers synthesize years of research, finance teams surface insights from complex data sets, and HR explore underlying employee experiences.
+Sheena Kunhiraman, Vice President of HR Technology and Analytics, shared how AI is about enhancing employee’s experience to work on the things that matter.
+“Human/agent collaboration at Levi I believe is going to be all about augmentation—giving time back,” Kunhiraman said.
+As adoption matured, the company expanded its approach to using Microsoft Foundry to build purpose-driven agents that automate workflows and connect systems across the business.
+Engineering teams paired GitHub Copilot with Foundry-built agents to modernize systems, accelerate development, and upskill talent.
+Jennifer Patchen, Senior Director of Shared Platforms and Services, shared why GitHub Copilot was chosen for that strategy and the impact on developers using these products.
+“We know it’s really going to augment our engineers in such a rich and powerful way and act as a force multiplier for them,” Patchen said.
+GitHub Copilot acts as a pair programmer, supporting junior developers and freeing up senior engineers to focus on higher-value work.
+Behind the scenes, Foundry is used as the orchestration layer, enabling teams to design, test, and evolve agents that understand intent, connect to enterprise systems, and work together as part of a larger ecosystem.
+The platform is built on three foundational layers working together to power the Super Agent experience. Agents securely connect to enterprise systems such as SAP, HR platforms, and retail systems, accessing live, governed data based on user identity, without duplication or shadow data stores. Instead of a single generalized model, Levi Strauss & Co. uses specialized agents guided by structured prompts, intent detection, and reasoning workflows, prioritizing orchestration over fine-tuning to improve reliability and scale. Foundry coordinates agent workflows, with tools like Microsoft Agent Framework supporting planning and intent routing. The backend execution layer runs on Azure Functions , enabling scalable, event-driven processing to support agent workflows, integrations, and real-time task execution alongside Foundry and Agent Framework orchestration. Microsoft Teams serves as the user interface, and integrated services execute actions securely across systems.
+As more agents were introduced, a new challenge emerged: too many entry points for employees.
+
+## full_text
+
+For more than 170 years, Levi Strauss & Co. has stood at the intersection of culture, craftsmanship, and progress—reinventing how people experience denim and self-expression.
+As a global direct-to-consumer retailer, delivering exceptional fan experiences is core to the brand. These experiences require continuous innovation and improvement to how employees can access information, make decisions, and take action.
+As the retail industry accelerates, consumer expectations evolve, and technology rapidly advances, Levi Strauss & Co. faced a growing challenge: how do you increase speed and agility across the business without creating more complexity for employees?
+Teams were working with data spread across multiple sources, making it difficult to find information and navigate complex workflows to complete tasks. Valuable insights were often difficult to access and act on in real time.
+The opportunity wasn’t just to introduce AI but to fundamentally simplify how work happens across the company.
+Jason Gowans, Chief Digital and Technology Officer at Levi Strauss & Co., saw the need to address internal networks and keep pace with the scale and speed required, and what the transformation means.
+“As a best-in-class direct-to-consumer retailer, the biggest thing that’s changed for us is the speed at which we need to operate,” Gowans said. “This isn’t just about a tool—it’s a wholesale workplace transformation.”
+AI automation and augmented workforce
+Levi Strauss & Co. began its AI journey by deploying Microsoft 365 Copilot across the enterprise. This integration enabled employees to use AI as a productivity tool and thought partner.
+Copilot helped designers synthesize years of research, finance teams surface insights from complex data sets, and HR explore underlying employee experiences.
+Sheena Kunhiraman, Vice President of HR Technology and Analytics, shared how AI is about enhancing employee’s experience to work on the things that matter.
+“Human/agent collaboration at Levi I believe is going to be all about augmentation—giving time back,” Kunhiraman said.
+As adoption matured, the company expanded its approach to using Microsoft Foundry to build purpose-driven agents that automate workflows and connect systems across the business.
+Engineering teams paired GitHub Copilot with Foundry-built agents to modernize systems, accelerate development, and upskill talent.
+Jennifer Patchen, Senior Director of Shared Platforms and Services, shared why GitHub Copilot was chosen for that strategy and the impact on developers using these products.
+“We know it’s really going to augment our engineers in such a rich and powerful way and act as a force multiplier for them,” Patchen said.
+GitHub Copilot acts as a pair programmer, supporting junior developers and freeing up senior engineers to focus on higher-value work.
+Behind the scenes, Foundry is used as the orchestration layer, enabling teams to design, test, and evolve agents that understand intent, connect to enterprise systems, and work together as part of a larger ecosystem.
+The platform is built on three foundational layers working together to power the Super Agent experience. Agents securely connect to enterprise systems such as SAP, HR platforms, and retail systems, accessing live, governed data based on user identity, without duplication or shadow data stores. Instead of a single generalized model, Levi Strauss & Co. uses specialized agents guided by structured prompts, intent detection, and reasoning workflows, prioritizing orchestration over fine-tuning to improve reliability and scale. Foundry coordinates agent workflows, with tools like Microsoft Agent Framework supporting planning and intent routing. The backend execution layer runs on Azure Functions , enabling scalable, event-driven processing to support agent workflows, integrations, and real-time task execution alongside Foundry and Agent Framework orchestration. Microsoft Teams serves as the user interface, and integrated services execute actions securely across systems.
+As more agents were introduced, a new challenge emerged: too many entry points for employees.
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4125,"paragraph_count":20,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   # Levi Strauss & Co. simplifies work and accelerates decision-making with Microsoft Foundry | Microsoft Customer Stories & Co. Levi Strauss & Co. simplifies work As Levi Strauss & Co. scales its direct-to-consumer business, employees navigated fragmented systems and complex workflows, making it d... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   For more than 170 years, Levi Strauss & Co.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   has stood at the intersection of culture, craftsmanship, and progress—reinventing how people experience denim and self-expression.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   As a global direct-to-consumer retailer, delivering exceptional fan experiences is core to the brand.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   These experiences require continuous innovation and improvement to how employees can access information, make decisions, and take action.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   As the retail industry accelerates, consumer expectations evolve, and technology rapidly advances, Levi Strauss & Co.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Microsoft, GitHub
+- products: Agent, Copilot, agent, agents, Agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 170, 365
+- quotes: As a best-in-class direct-to-consumer retailer, the biggest thing that’s changed for us is the speed at which we need to operate, / This isn’t just about a tool—it’s a wholesale workplace transformation. / Human/agent collaboration at Levi I believe is going to be all about augmentation—giving time back, / We know it’s really going to augment our engineers in such a rich and powerful way and act as a force multiplier for them,
+
+## evidence_seed
+
+- company_actions: # Levi Strauss & Co. simplifies work and accelerates decision-making with Microsoft Foundry | Microsoft Customer Stories & Co. Levi Strauss & Co. simplifies work As Levi Strauss & Co. scales its direct-to-consumer business, employees navigated fragmented systems and complex workflows, making it d... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing / For more than 170 years, Levi Strauss & Co. / has stood at the intersection of culture, craftsmanship, and progress—reinventing how people experience denim and self-expression.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Levi Strauss & Co. simplifies work and accelerates decision-making with Microsoft Foundry | Microsoft Customer Stories & Co. Levi Strauss & Co. simplifies work As Levi Strauss & Co. scales its direct-to-consumer business, employees navigated fragmented systems and complex workflows, making it d... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

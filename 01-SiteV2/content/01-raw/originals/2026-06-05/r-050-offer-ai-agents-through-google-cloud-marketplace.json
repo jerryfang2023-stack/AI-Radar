@@ -1,0 +1,266 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-050",
+  "title": "Offer AI agents through Google Cloud Marketplace",
+  "original_url": "https://docs.cloud.google.com/marketplace/docs/partners/ai-agents",
+  "canonical_url": "https://docs.cloud.google.com/marketplace/docs/partners/ai-agents",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "official",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "",
+  "acquisition_channel": "gdelt",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-05T00:46:23.254Z",
+  "language": "mixed",
+  "full_text": "Home\nDocumentation\nAccess and resource management\nGoogle Cloud Marketplace\nPartners\nDevelop\nSend feedback\nOffer AI agents through Google Cloud Marketplace\nStay organized with collections\nSave and categorize content based on your preferences.\nAI agents are software systems that use AI to pursue goals and complete tasks on\nbehalf of users. You can use Google Cloud Marketplace to offer AI agents to your\ncustomers through multiple flexible deployment models. Your agents can be built\non any framework, use any communication protocol, run on any runtime (Google\nCloud or beyond), and be consumed in various forms and surfaces.\nBefore you begin\nIf you're new to offering software on Cloud Marketplace,\nsign up to become a vendor .\nTo get access to Producer Portal, complete the\nCloud Marketplace Project Info Form , provided by the Cloud Marketplace team.\nChoose how to offer your AI agents\nYou can publish and offer your AI agents on Cloud Marketplace using any of\nthe following supported product types:\nAI Agents as a Service (A2A protocol) : Offer AI agents that run on\nGoogle Cloud, integrate with Gemini Enterprise, and use the Agent2Agent\n(A2A) protocol to communicate and collaborate with other AI agents. For\ndetails, see Offer AI agents using the A2A protocol below.\nSoftware as a Service (SaaS) : If your AI agent uses a different protocol\n(not A2A), you can offer it as a SaaS product with integrated billing. Your\nSaaS agent runs on Google Cloud or other infrastructure, and is billed by\nGoogle. To learn how to onboard a SaaS AI agent, see Offer Software as a\nService (SaaS) products .\nKubernetes apps for GKE and GKE Enterprise : If you\nprovide your AI agent as a containerized application, users can deploy and\nrun it on their own Google Kubernetes Engine (GKE) clusters or their own\ninfrastructure using GKE Enterprise. To learn how to onboard a\nKubernetes-based AI agent, see Offer Kubernetes\napps .\nProfessional Services : You can offer professional services related to\nAI agents, such as consulting, deployment, or offering customized AI agents\nas a service.\nTo learn how to onboard professional services for AI agents, see\nOffer professional services .\nOffer AI agents using the A2A protocol\nIf you are offering an AI agent as a service that uses the A2A protocol and\nintegrates with Gemini Enterprise, follow these specific requirements and\nsteps.\nAI agents from Cloud Marketplace use the\nAgent2Agent (A2A) protocol\nto communicate and collaborate with other AI agents. For more\ninformation, see the\nA2A protocol's documentation . For each AI\nagent that you offer through Cloud Marketplace, you must create an\nAgent Card aligned to the\nA2A Agent Card specification .\nYour AI agent's Agent Card defines its presence on Cloud Marketplace,\ndetailing its capabilities and facilitating its coordination with other AI\nagents. Agent Cards exist as JSON files stored in Cloud Storage.\nAfter you've created your AI agent's Agent Card, use Producer Portal to\ncreate your AI agent's Cloud Marketplace listing and submit it for review.\nAfter you've published your AI agent, customers can get it from\nCloud Marketplace and run a command to add it to Gemini Enterprise.\nRequirements for A2A AI agents\nAll products that you offer through Cloud Marketplace must comply with the\nCloud Marketplace listing requirements. If you offer A2A AI agents, they\nmust meet the following additional requirement:\nYour A2A AI agents must not include professional services, hardware, or other\nnon-software components that are billed through Cloud Marketplace.\nPricing models for A2A AI agents\nYou can choose one of the following pricing models for your AI agent:\nFree : Customers only pay for the Google Cloud resources that they\nuse.\nSubscription-based pricing : Customers pay a flat monthly fee for using\nyour AI agent. For partial months, the cost is prorated.\nUsage-based pricing : Customers pay for your AI agent based on measurements\nthat you choose, called metrics . If you choose a usage-based pricing model,\nthen your app must measure and report usage information to Google.\nCombined pricing : Customers pay a base subscription fee for using your AI\nagent, and additional charges based on their usage.\nFor more information about these pricing models, see\nPricing models for AI agents .\nOverview of onboarding an A2A AI agent\nOffering an A2A AI agent through Cloud Marketplace involves the following\nsteps:\nCreate your AI agent and its Agent Card. For more information about Agent\nCards, see\nAgent Cards\nin the A2A documentation.\nAdd your AI agent in Producer Portal .\nYou use Producer Portal to complete the process of onboarding\nyour AI agent to Cloud Marketplace.\nAdd your AI agent's Agent Card\nin Producer Portal.\nAdd product details\nfor your AI agent's listing in Producer Portal.\nAdd pricing information\nfor your AI agent in Producer Portal. It might take up to four\nbusiness days for Google to review your AI agent's pricing model. You can\ncontinue integrating your AI agent while Google reviews the pricing model.\nIntegrate your AI agent with Cloud Marketplace .\nThe integration includes modifying the frontend and backend of your software\nto do the following:\nCreate accounts for users.\nLink the accounts to their Google accounts.\nProvide a way for users to sign in using their Google credentials.\nPublish your AI agent to Cloud Marketplace .\nTo publish your AI agent, you submit various parts of your AI agent's listing\nfor review. The Cloud Marketplace team reviews each submission and works\nwith you to resolve any issues before approving it. When all of your\nsubmissions are approved, Google operations begins validation and testing.\nAfter validation is complete, you are provided with a gcloud command to\nmake your listing publicly visible.\nWhat's next\nReview the\nA2A Agent Card specification\nas you create your AI agent's Agent Card.\nReview the available\npricing models for AI agents .\nAdd your AI agent to\nCloud Marketplace by using Producer Portal.\nNext\nPricing models for AI agents\narrow_forward\nSend feedback\nExcept as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License , and code samples are licensed under the Apache 2.0 License . For details, see the Google Developers Site Policies . Java is a registered trademark of Oracle and/or its affiliates.\nLast updated 2026-06-03 UTC.\nNeed to tell us more?\n[[[\"Easy to understand\",\"easyToUnderstand\",\"thumb-up\"],[\"Solved my problem\",\"solvedMyProblem\",\"thumb-up\"],[\"Other\",\"otherUp\",\"thumb-up\"]],[[\"Hard to understand\",\"hardToUnderstand\",\"thumb-down\"],[\"Incorrect information or sample code\",\"incorrectInformationOrSampleCode\",\"thumb-down\"],[\"Missing the information/samples I need\",\"missingTheInformationSamplesINeed\",\"thumb-down\"],[\"Other\",\"otherDown\",\"thumb-down\"]],[\"Last updated 2026-06-03 UTC.\"],[],[]]",
+  "clean_text": "Home\nDocumentation\nAccess and resource management\nGoogle Cloud Marketplace\nPartners\nDevelop\nSend feedback\nOffer AI agents through Google Cloud Marketplace\nStay organized with collections\nSave and categorize content based on your preferences.\nAI agents are software systems that use AI to pursue goals and complete tasks on\nbehalf of users. You can use Google Cloud Marketplace to offer AI agents to your\ncustomers through multiple flexible deployment models. Your agents can be built\non any framework, use any communication protocol, run on any runtime (Google\nCloud or beyond), and be consumed in various forms and surfaces.\nBefore you begin\nIf you're new to offering software on Cloud Marketplace,\nsign up to become a vendor .\nTo get access to Producer Portal, complete the\nCloud Marketplace Project Info Form , provided by the Cloud Marketplace team.\nChoose how to offer your AI agents\nYou can publish and offer your AI agents on Cloud Marketplace using any of\nthe following supported product types:\nAI Agents as a Service (A2A protocol) : Offer AI agents that run on\nGoogle Cloud, integrate with Gemini Enterprise, and use the Agent2Agent\n(A2A) protocol to communicate and collaborate with other AI agents. For\ndetails, see Offer AI agents using the A2A protocol below.\nSoftware as a Service (SaaS) : If your AI agent uses a different protocol\n(not A2A), you can offer it as a SaaS product with integrated billing. Your\nSaaS agent runs on Google Cloud or other infrastructure, and is billed by\nGoogle. To learn how to onboard a SaaS AI agent, see Offer Software as a\nService (SaaS) products .\nKubernetes apps for GKE and GKE Enterprise : If you\nprovide your AI agent as a containerized application, users can deploy and\nrun it on their own Google Kubernetes Engine (GKE) clusters or their own\ninfrastructure using GKE Enterprise. To learn how to onboard a\nKubernetes-based AI agent, see Offer Kubernetes\napps .\nProfessional Services : You can offer professional services related to\nAI agents, such as consulting, deployment, or offering customized AI agents\nas a service.\nTo learn how to onboard professional services for AI agents, see\nOffer professional services .\nOffer AI agents using the A2A protocol\nIf you are offering an AI agent as a service that uses the A2A protocol and\nintegrates with Gemini Enterprise, follow these specific requirements and\nsteps.\nAI agents from Cloud Marketplace use the\nAgent2Agent (A2A) protocol\nto communicate and collaborate with other AI agents. For more\ninformation, see the\nA2A protocol's documentation . For each AI\nagent that you offer through Cloud Marketplace, you must create an\nAgent Card aligned to the\nA2A Agent Card specification .\nYour AI agent's Agent Card defines its presence on Cloud Marketplace,\ndetailing its capabilities and facilitating its coordination with other AI\nagents. Agent Cards exist as JSON files stored in Cloud Storage.\nAfter you've created your AI agent's Agent Card, use Producer Portal to\ncreate your AI agent's Cloud Marketplace listing and submit it for review.\nAfter you've published your AI agent, customers can get it from\nCloud Marketplace and run a command to add it to Gemini Enterprise.\nRequirements for A2A AI agents\nAll products that you offer through Cloud Marketplace must comply with the\nCloud Marketplace listing requirements. If you offer A2A AI agents, they\nmust meet the following additional requirement:\nYour A2A AI agents must not include professional services, hardware, or other\nnon-software components that are billed through Cloud Marketplace.\nPricing models for A2A AI agents\nYou can choose one of the following pricing models for your AI agent:\nFree : Customers only pay for the Google Cloud resources that they\nuse.\nSubscription-based pricing : Customers pay a flat monthly fee for using\nyour AI agent. For partial months, the cost is prorated.\nUsage-based pricing : Customers pay for your AI agent based on measurements\nthat you choose, called metrics . If you choose a usage-based pricing model,\nthen your app must measure and report usage information to Google.\nCombined pricing : Customers pay a base subscription fee for using your AI\nagent, and additional charges based on their usage.\nFor more information about these pricing models, see\nPricing models for AI agents .\nOverview of onboarding an A2A AI agent\nOffering an A2A AI agent through Cloud Marketplace involves the following\nsteps:\nCreate your AI agent and its Agent Card. For more information about Agent\nCards, see\nAgent Cards\nin the A2A documentation.\nAdd your AI agent in Producer Portal .\nYou use Producer Portal to complete the process of onboarding\nyour AI agent to Cloud Marketplace.\nAdd your AI agent's Agent Card\nin Producer Portal.\nAdd product details\nfor your AI agent's listing in Producer Portal.\nAdd pricing information\nfor your AI agent in Producer Portal. It might take up to four\nbusiness days for Google to review your AI agent's pricing model. You can\ncontinue integrating your AI agent while Google reviews the pricing model.\nIntegrate your AI agent with Cloud Marketplace .\nThe integration includes modifying the frontend and backend of your software\nto do the following:\nCreate accounts for users.\nLink the accounts to their Google accounts.\nProvide a way for users to sign in using their Google credentials.\nPublish your AI agent to Cloud Marketplace .\nTo publish your AI agent, you submit various parts of your AI agent's listing\nfor review. The Cloud Marketplace team reviews each submission and works\nwith you to resolve any issues before approving it. When all of your\nsubmissions are approved, Google operations begins validation and testing.\nAfter validation is complete, you are provided with a gcloud command to\nmake your listing publicly visible.\nWhat's next\nReview the\nA2A Agent Card specification\nas you create your AI agent's Agent Card.\nReview the available\npricing models for AI agents .\nAdd your AI agent to\nCloud Marketplace by using Producer Portal.\nNext\nPricing models for AI agents\narrow_forward\nSend feedback\nExcept as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License , and code samples are licensed under the Apache 2.0 License . For details, see the Google Developers Site Policies . Java is a registered trademark of Oracle and/or its affiliates.\nLast updated 2026-06-03 UTC.\nNeed to tell us more?\n[[[\"Easy to understand\",\"easyToUnderstand\",\"thumb-up\"],[\"Solved my problem\",\"solvedMyProblem\",\"thumb-up\"],[\"Other\",\"otherUp\",\"thumb-up\"]],[[\"Hard to understand\",\"hardToUnderstand\",\"thumb-down\"],[\"Incorrect information or sample code\",\"incorrectInformationOrSampleCode\",\"thumb-down\"],[\"Missing the information/samples I need\",\"missingTheInformationSamplesINeed\",\"thumb-down\"],[\"Other\",\"otherDown\",\"thumb-down\"]],[\"Last updated 2026-06-03 UTC.\"],[],[]]",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-05/r-050-offer-ai-agents-through-google-cloud-marketplace.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-05/r-050-offer-ai-agents-through-google-cloud-marketplace.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6820,
+    "paragraph_count": 108,
+    "sentence_count": 58,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.004,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6820,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "9b2b96d4222ef12e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "primary_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "f27796f7a5865738",
+  "content_hash": "9b2b96d4222ef12e",
+  "full_text_hash": "9b2b96d4222ef12e",
+  "semantic_hash": "a9e8d4d5a45a162f",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-05T00:46:23.254Z",
+  "last_seen_at": "2026-06-05T00:46:23.254Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Integrate your AI agent with Cloud Marketplace. The integration includes modifying the frontend and backend of your software to do the following ...",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Home Documentation Access and resource management Google Cloud Marketplace Partners Develop Send feedback Offer AI agents through Google Cloud Marketplace Stay organized with collections Save and categorize content based on your preferences.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "AI agents are software systems that use AI to pursue goals and complete tasks on behalf of users.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "You can use Google Cloud Marketplace to offer AI agents to your customers through multiple flexible deployment models.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Your agents can be built on any framework, use any communication protocol, run on any runtime (Google Cloud or beyond), and be consumed in various forms and surfaces.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Before you begin If you're new to offering software on Cloud Marketplace, sign up to become a vendor .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Google"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Agents",
+      "Gemini",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "合作 / 联盟",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2",
+      "4.0",
+      "2.0",
+      "2026",
+      "06",
+      "03"
+    ],
+    "quotes": [
+      "Easy to understand",
+      "easyToUnderstand",
+      "thumb-up",
+      "Solved my problem",
+      "solvedMyProblem"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Integrate your AI agent with Cloud Marketplace. The integration includes modifying the frontend and backend of your software to do the following ...",
+      "Home Documentation Access and resource management Google Cloud Marketplace Partners Develop Send feedback Offer AI agents through Google Cloud Marketplace Stay organized with collections Save and categorize content based on your preferences.",
+      "AI agents are software systems that use AI to pursue goals and complete tasks on behalf of users."
+    ],
+    "case_details": [
+      "You can use Google Cloud Marketplace to offer AI agents to your customers through multiple flexible deployment models."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Offer AI agents through Google Cloud Marketplace\n\n- raw_id: R-050\n- original_url: https://docs.cloud.google.com/marketplace/docs/partners/ai-agents\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-05T00:46:23.254Z\n\n## clean_text\n\nHome\nDocumentation\nAccess and resource management\nGoogle Cloud Marketplace\nPartners\nDevelop\nSend feedback\nOffer AI agents through Google Cloud Marketplace\nStay organized with collections\nSave and categorize content based on your preferences.\nAI agents are software systems that use AI to pursue goals and complete tasks on\nbehalf of users. You can use Google Cloud Marketplace to offer AI agents to your\ncustomers through multiple flexible deployment models. Your agents can be built\non any framework, use any communication protocol, run on any runtime (Google\nCloud or beyond), and be consumed in various forms and surfaces.\nBefore you begin\nIf you're new to offering software on Cloud Marketplace,\nsign up to become a vendor .\nTo get access to Producer Portal, complete the\nCloud Marketplace Project Info Form , provided by the Cloud Marketplace team.\nChoose how to offer your AI agents\nYou can publish and offer your AI agents on Cloud Marketplace using any of\nthe following supported product types:\nAI Agents as a Service (A2A protocol) : Offer AI agents that run on\nGoogle Cloud, integrate with Gemini Enterprise, and use the Agent2Agent\n(A2A) protocol to communicate and collaborate with other AI agents. For\ndetails, see Offer AI agents using the A2A protocol below.\nSoftware as a Service (SaaS) : If your AI agent uses a different protocol\n(not A2A), you can offer it as a SaaS product with integrated billing. Your\nSaaS agent runs on Google Cloud or other infrastructure, and is billed by\nGoogle. To learn how to onboard a SaaS AI agent, see Offer Software as a\nService (SaaS) products .\nKubernetes apps for GKE and GKE Enterprise : If you\nprovide your AI agent as a containerized application, users can deploy and\nrun it on their own Google Kubernetes Engine (GKE) clusters or their own\ninfrastructure using GKE Enterprise. To learn how to onboard a\nKubernetes-based AI agent, see Offer Kubernetes\napps .\nProfessional Services : You can offer professional services related to\nAI agents, such as consulting, deployment, or offering customized AI agents\nas a service.\nTo learn how to onboard professional services for AI agents, see\nOffer professional services .\nOffer AI agents using the A2A protocol\nIf you are offering an AI agent as a service that uses the A2A protocol and\nintegrates with Gemini Enterprise, follow these specific requirements and\nsteps.\nAI agents from Cloud Marketplace use the\nAgent2Agent (A2A) protocol\nto communicate and collaborate with other AI agents. For more\ninformation, see the\nA2A protocol's documentation . For each AI\nagent that you offer through Cloud Marketplace, you must create an\nAgent Card aligned to the\nA2A Agent Card specification .\nYour AI agent's Agent Card defines its presence on Cloud Marketplace,\ndetailing its capabilities and facilitating its coordination with other AI\nagents. Agent Cards exist as JSON files stored in Cloud Storage.\nAfter you've created your AI agent's Agent Card, use Producer Portal to\ncreate your AI agent's Cloud Marketplace listing and submit it for review.\nAfter you've published your AI agent, customers can get it from\nCloud Marketplace and run a command to add it to Gemini Enterprise.\nRequirements for A2A AI agents\nAll products that you offer through Cloud Marketplace must comply with the\nCloud Marketplace listing requirements. If you offer A2A AI agents, they\nmust meet the following additional requirement:\nYour A2A AI agents must not include professional services, hardware, or other\nnon-software components that are billed through Cloud Marketplace.\nPricing models for A2A AI agents\nYou can choose one of the following pricing models for your AI agent:\nFree : Customers only pay for the Google Cloud resources that they\nuse.\nSubscription-based pricing : Customers pay a flat monthly fee for using\nyour AI agent. For partial months, the cost is prorated.\nUsage-based pricing : Customers pay for your AI agent based on measurements\nthat you choose, called metrics . If you choose a usage-based pricing model,\nthen your app must measure and report usage information to Google.\nCombined pricing : Customers pay a base subscription fee for using your AI\nagent, and additional charges based on their usage.\nFor more information about these pricing models, see\nPricing models for AI agents .\nOverview of onboarding an A2A AI agent\nOffering an A2A AI agent through Cloud Marketplace involves the following\nsteps:\nCreate your AI agent and its Agent Card. For more information about Agent\nCards, see\nAgent Cards\nin the A2A documentation.\nAdd your AI agent in Producer Portal .\nYou use Producer Portal to complete the process of onboarding\nyour AI agent to Cloud Marketplace.\nAdd your AI agent's Agent Card\nin Producer Portal.\nAdd product details\nfor your AI agent's listing in Producer Portal.\nAdd pricing information\nfor your AI agent in Producer Portal. It might take up to four\nbusiness days for Google to review your AI agent's pricing model. You can\ncontinue integrating your AI agent while Google reviews the pricing model.\nIntegrate your AI agent with Cloud Marketplace .\nThe integration includes modifying the frontend and backend of your software\nto do the following:\nCreate accounts for users.\nLink the accounts to their Google accounts.\nProvide a way for users to sign in using their Google credentials.\nPublish your AI agent to Cloud Marketplace .\nTo publish your AI agent, you submit various parts of your AI agent's listing\nfor review. The Cloud Marketplace team reviews each submission and works\nwith you to resolve any issues before approving it. When all of your\nsubmissions are approved, Google operations begins validation and testing.\nAfter validation is complete, you are provided with a gcloud command to\nmake your listing publicly visible.\nWhat's next\nReview the\nA2A Agent Card specification\nas you create your AI agent's Agent Card.\nReview the available\npricing models for AI agents .\nAdd your AI agent to\nCloud Marketplace by using Producer Portal.\nNext\nPricing models for AI agents\narrow_forward\nSend feedback\nExcept as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License , and code samples are licensed under the Apache 2.0 License . For details, see the Google Developers Site Policies . Java is a registered trademark of Oracle and/or its affiliates.\nLast updated 2026-06-03 UTC.\nNeed to tell us more?\n[[[\"Easy to understand\",\"easyToUnderstand\",\"thumb-up\"],[\"Solved my problem\",\"solvedMyProblem\",\"thumb-up\"],[\"Other\",\"otherUp\",\"thumb-up\"]],[[\"Hard to understand\",\"hardToUnderstand\",\"thumb-down\"],[\"Incorrect information or sample code\",\"incorrectInformationOrSampleCode\",\"thumb-down\"],[\"Missing the information/samples I need\",\"missingTheInformationSamplesINeed\",\"thumb-down\"],[\"Other\",\"otherDown\",\"thumb-down\"]],[\"Last updated 2026-06-03 UTC.\"],[],[]]\n\n## full_text\n\nHome\nDocumentation\nAccess and resource management\nGoogle Cloud Marketplace\nPartners\nDevelop\nSend feedback\nOffer AI agents through Google Cloud Marketplace\nStay organized with collections\nSave and categorize content based on your preferences.\nAI agents are software systems that use AI to pursue goals and complete tasks on\nbehalf of users. You can use Google Cloud Marketplace to offer AI agents to your\ncustomers through multiple flexible deployment models. Your agents can be built\non any framework, use any communication protocol, run on any runtime (Google\nCloud or beyond), and be consumed in various forms and surfaces.\nBefore you begin\nIf you're new to offering software on Cloud Marketplace,\nsign up to become a vendor .\nTo get access to Producer Portal, complete the\nCloud Marketplace Project Info Form , provided by the Cloud Marketplace team.\nChoose how to offer your AI agents\nYou can publish and offer your AI agents on Cloud Marketplace using any of\nthe following supported product types:\nAI Agents as a Service (A2A protocol) : Offer AI agents that run on\nGoogle Cloud, integrate with Gemini Enterprise, and use the Agent2Agent\n(A2A) protocol to communicate and collaborate with other AI agents. For\ndetails, see Offer AI agents using the A2A protocol below.\nSoftware as a Service (SaaS) : If your AI agent uses a different protocol\n(not A2A), you can offer it as a SaaS product with integrated billing. Your\nSaaS agent runs on Google Cloud or other infrastructure, and is billed by\nGoogle. To learn how to onboard a SaaS AI agent, see Offer Software as a\nService (SaaS) products .\nKubernetes apps for GKE and GKE Enterprise : If you\nprovide your AI agent as a containerized application, users can deploy and\nrun it on their own Google Kubernetes Engine (GKE) clusters or their own\ninfrastructure using GKE Enterprise. To learn how to onboard a\nKubernetes-based AI agent, see Offer Kubernetes\napps .\nProfessional Services : You can offer professional services related to\nAI agents, such as consulting, deployment, or offering customized AI agents\nas a service.\nTo learn how to onboard professional services for AI agents, see\nOffer professional services .\nOffer AI agents using the A2A protocol\nIf you are offering an AI agent as a service that uses the A2A protocol and\nintegrates with Gemini Enterprise, follow these specific requirements and\nsteps.\nAI agents from Cloud Marketplace use the\nAgent2Agent (A2A) protocol\nto communicate and collaborate with other AI agents. For more\ninformation, see the\nA2A protocol's documentation . For each AI\nagent that you offer through Cloud Marketplace, you must create an\nAgent Card aligned to the\nA2A Agent Card specification .\nYour AI agent's Agent Card defines its presence on Cloud Marketplace,\ndetailing its capabilities and facilitating its coordination with other AI\nagents. Agent Cards exist as JSON files stored in Cloud Storage.\nAfter you've created your AI agent's Agent Card, use Producer Portal to\ncreate your AI agent's Cloud Marketplace listing and submit it for review.\nAfter you've published your AI agent, customers can get it from\nCloud Marketplace and run a command to add it to Gemini Enterprise.\nRequirements for A2A AI agents\nAll products that you offer through Cloud Marketplace must comply with the\nCloud Marketplace listing requirements. If you offer A2A AI agents, they\nmust meet the following additional requirement:\nYour A2A AI agents must not include professional services, hardware, or other\nnon-software components that are billed through Cloud Marketplace.\nPricing models for A2A AI agents\nYou can choose one of the following pricing models for your AI agent:\nFree : Customers only pay for the Google Cloud resources that they\nuse.\nSubscription-based pricing : Customers pay a flat monthly fee for using\nyour AI agent. For partial months, the cost is prorated.\nUsage-based pricing : Customers pay for your AI agent based on measurements\nthat you choose, called metrics . If you choose a usage-based pricing model,\nthen your app must measure and report usage information to Google.\nCombined pricing : Customers pay a base subscription fee for using your AI\nagent, and additional charges based on their usage.\nFor more information about these pricing models, see\nPricing models for AI agents .\nOverview of onboarding an A2A AI agent\nOffering an A2A AI agent through Cloud Marketplace involves the following\nsteps:\nCreate your AI agent and its Agent Card. For more information about Agent\nCards, see\nAgent Cards\nin the A2A documentation.\nAdd your AI agent in Producer Portal .\nYou use Producer Portal to complete the process of onboarding\nyour AI agent to Cloud Marketplace.\nAdd your AI agent's Agent Card\nin Producer Portal.\nAdd product details\nfor your AI agent's listing in Producer Portal.\nAdd pricing information\nfor your AI agent in Producer Portal. It might take up to four\nbusiness days for Google to review your AI agent's pricing model. You can\ncontinue integrating your AI agent while Google reviews the pricing model.\nIntegrate your AI agent with Cloud Marketplace .\nThe integration includes modifying the frontend and backend of your software\nto do the following:\nCreate accounts for users.\nLink the accounts to their Google accounts.\nProvide a way for users to sign in using their Google credentials.\nPublish your AI agent to Cloud Marketplace .\nTo publish your AI agent, you submit various parts of your AI agent's listing\nfor review. The Cloud Marketplace team reviews each submission and works\nwith you to resolve any issues before approving it. When all of your\nsubmissions are approved, Google operations begins validation and testing.\nAfter validation is complete, you are provided with a gcloud command to\nmake your listing publicly visible.\nWhat's next\nReview the\nA2A Agent Card specification\nas you create your AI agent's Agent Card.\nReview the available\npricing models for AI agents .\nAdd your AI agent to\nCloud Marketplace by using Producer Portal.\nNext\nPricing models for AI agents\narrow_forward\nSend feedback\nExcept as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License , and code samples are licensed under the Apache 2.0 License . For details, see the Google Developers Site Policies . Java is a registered trademark of Oracle and/or its affiliates.\nLast updated 2026-06-03 UTC.\nNeed to tell us more?\n[[[\"Easy to understand\",\"easyToUnderstand\",\"thumb-up\"],[\"Solved my problem\",\"solvedMyProblem\",\"thumb-up\"],[\"Other\",\"otherUp\",\"thumb-up\"]],[[\"Hard to understand\",\"hardToUnderstand\",\"thumb-down\"],[\"Incorrect information or sample code\",\"incorrectInformationOrSampleCode\",\"thumb-down\"],[\"Missing the information/samples I need\",\"missingTheInformationSamplesINeed\",\"thumb-down\"],[\"Other\",\"otherDown\",\"thumb-down\"]],[\"Last updated 2026-06-03 UTC.\"],[],[]]\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / medium] Integrate your AI agent with Cloud Marketplace. The integration includes modifying the frontend and backend of your software to do the following ...\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] Home Documentation Access and resource management Google Cloud Marketplace Partners Develop Send feedback Offer AI agents through Google Cloud Marketplace Stay organized with collections Save and categorize content based on your preferences.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] AI agents are software systems that use AI to pursue goals and complete tasks on behalf of users.\n4. [case_detail / daily_observation, heatmap, case / high] You can use Google Cloud Marketplace to offer AI agents to your customers through multiple flexible deployment models.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] Your agents can be built on any framework, use any communication protocol, run on any runtime (Google Cloud or beyond), and be consumed in various forms and surfaces.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] Before you begin If you're new to offering software on Cloud Marketplace, sign up to become a vendor .\n"
+}
