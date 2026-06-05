@@ -101,9 +101,10 @@
   @media (max-width: 600px) {
     .container { padding: 16px; }
     .header { align-items: start; gap: 0; }
-    .brand { font-size: 17px; max-width: 55%; }
+    .brand { font-size: 17px; flex-shrink: 0; }
     .brand small { display: inline; font-size: 7px; letter-spacing: .18em; margin-top: 0; margin-left: 4px; }
-    .date-picker select { font-size: 11px; padding: 4px 6px; max-width: 110px; }
+    .header-right { flex-shrink: 0; }
+    .date-picker select { font-size: 11px; padding: 4px 6px; }
     .people-grid { flex-direction: column; }
   }
 </style>
@@ -234,7 +235,7 @@
   <div class="signal-text">开发者社区热议 AI 工具效率与安全性之间的权衡，环境隔离而非模型拒绝成为最终防线。</div>
 </div>
 </div>
-<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:35</div>
+<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:36</div>
 </div>
 <script>
 /* 日期选择器 */
