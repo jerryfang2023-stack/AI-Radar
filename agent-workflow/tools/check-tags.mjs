@@ -12,7 +12,6 @@ const scriptTargets = [
   "agent-workflow/tools/regenerate-v2-assets-from-existing-raw.mjs",
   "01-SiteV2/site/scripts/sync-v2-site-data.mjs",
   "agent-workflow/tools/v2-content-gate.mjs",
-  "agent-workflow/tools/card-copy-style-gate.mjs",
 ];
 
 const markdownRoots = [

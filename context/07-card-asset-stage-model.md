@@ -162,7 +162,7 @@ Daily Monitor
 -> Daily Monitor QC
 -> readiness: assert-guanlan-automation-readiness --command=assets
 -> asset-card-generator
--> cardcopy gate
+-> source / evidence / Chinese frontstage display check
 -> content / knowledge 写入
 -> 后续才允许今日观察、趋势追踪或前台同步引用
 ```

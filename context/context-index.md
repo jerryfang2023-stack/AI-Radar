@@ -22,7 +22,6 @@ priority: router
 | `context/frontstage-page-contracts.md` | 前台页面契约，约束页面不能被旧模块污染 | 页面、文案、前台数据同步 |
 | `context/01-product-map.md` | 产品结构、栏目、数据流 | 产品、栏目、页面结构 |
 | `context/02-vi-style.md` | VI、字体、页面视觉 | UI、页面、海报、品牌资产 |
-| `context/03-copy-style.md` | 全站基础文案 | 命名、页面文案、卡片展示文案 |
 | `context/04-qc-rules.md` | 通用质量门禁 | 验收、收口、发布检查 |
 | `context/05-daily-monitoring.md` | 每日监测最小上下文 | Raw / Pool / 监测 QC |
 | `context/06-execution-harness.md` | 高风险流程执行外壳 | 每日监测、Raw / Pool / Card、页面 / 文案 / Typography |
@@ -36,8 +35,6 @@ priority: router
 | `skills/guanlan-daily-monitor/SKILL.md` | 每日监测执行入口 |
 | `skills/guanlan-monitor-quality-gate/SKILL.md` | 监测脚本预闸门 |
 | `skills/guanlan-daily-monitor-qc/SKILL.md` | Raw / Pool 质量放行 |
-| `skills/guanlan-copy-style/SKILL.md` | 全站基础文案生成 |
-| `skills/guanlan-copy-style-qc/SKILL.md` | 全站基础短文案 QC |
 | `~/.skill-store/guanlan-daily-observation-pitch/SKILL.md` | 今日观察商业主编选题 |
 | `~/.skill-store/guanlan-daily-observation/SKILL.md` | 今日观察撰写与返修 |
 | `~/.skill-store/guanlan-daily-observation-qc/SKILL.md` | 今日观察可读性质检 |

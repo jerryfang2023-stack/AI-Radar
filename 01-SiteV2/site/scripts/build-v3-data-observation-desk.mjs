@@ -336,6 +336,73 @@ function frontstageTitle(frontTitle = "", rawTitle = "") {
   return frontTitle || rawTitle;
 }
 
+function hasCjk(value = "") {
+  return /[\u4e00-\u9fff]/u.test(String(value || ""));
+}
+
+function translateEnglishTitle(title = "", sourceUrl = "") {
+  const text = String(title || "").trim();
+  const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  const byUrl = [
+    [/aimultiple\.com.*ai-procurement/u, "10 个 AI 采购用例与案例研究"],
+    [/aws\.amazon\.com.*procurement.*agentcore/u, "AWS：使用 Amazon Bedrock AgentCore 自动化采购工作流"],
+    [/siliconangle.*archestra/u, "Archestra 融资 1000 万美元，为企业数据接入 AI Agent 搭建中介层"],
+    [/linkedin\.com.*seed.*pre-seed/u, "57 家早期 AI 初创公司一周融资 3.16 亿美元"],
+    [/thenextweb\.com.*voice-ai-infrastructure/u, "前高盛和 Meta 创始人融资 300 万美元，建设语音 AI 基础设施"],
+    [/riseuplabs\.com.*cost.*implementing-ai/u, "2026 年企业实施 AI 的真实成本"],
+    [/github\.com.*agent-ready-enterprise/u, "面向 Agent-ready 企业的 AI 开发者平台"],
+    [/avasant\.com.*advanced-voice-ai/u, "2026 年高级语音 AI 平台市场观察"],
+    [/firecrawl\.dev.*frameworks.*ai-agents/u, "2026 年构建 AI Agent 的开源框架"],
+    [/github\.com.*governing-agents/u, "GitHub Enterprise 中的 Agent 治理"],
+    [/kpmg.*procurement.*intelligent/u, "KPMG：用智能技术改造采购流程"],
+  ];
+  const urlMatch = byUrl.find(([pattern]) => pattern.test(normalized));
+  if (urlMatch) return urlMatch[1];
+  const byTitle = [
+    [/^10 AI Procurement Use Cases/iu, "10 个 AI 采购用例与案例研究"],
+    [/^Automate Procurement Workflows/iu, "使用 AI Agent 自动化采购工作流"],
+    [/^Archestra raises \$10M/iu, "Archestra 融资 1000 万美元，为企业数据接入 AI Agent 搭建中介层"],
+    [/^57 early stage AI startups/iu, "57 家早期 AI 初创公司一周融资 3.16 亿美元"],
+    [/^Ex-Goldman Sachs and Meta founders raise \$3M/iu, "前高盛和 Meta 创始人融资 300 万美元，建设语音 AI 基础设施"],
+    [/^The True Cost of Implementing AI/iu, "2026 年企业实施 AI 的真实成本"],
+    [/^The AI-powered developer platform/iu, "面向 Agent-ready 企业的 AI 开发者平台"],
+    [/^Advanced Voice AI Platforms 2026/iu, "2026 年高级语音 AI 平台市场观察"],
+    [/^The best open source frameworks/iu, "2026 年构建 AI Agent 的开源框架"],
+    [/^Governing agents in GitHub Enterprise/iu, "GitHub Enterprise 中的 Agent 治理"],
+    [/^Transforming procurement through intelligent technology/iu, "KPMG：用智能技术改造采购流程"],
+  ];
+  const titleMatch = byTitle.find(([pattern]) => pattern.test(text));
+  if (titleMatch) return titleMatch[1];
+  return text;
+}
+
+function chineseFactFromSource(title = "", sourceUrl = "") {
+  const text = String(title || "");
+  const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  const source = `${text}\n${normalized}`;
+  const rules = [
+    [/10 AI Procurement Use Cases|aimultiple\.com.*ai-procurement/iu, "AIMultiple 汇总了 10 类 AI 采购用例和案例，材料重点在采购流程、工具选择和企业采用场景。"],
+    [/Automate Procurement Workflows|amazon.*procurement.*agentcore/iu, "AWS 展示了用 Amazon Bedrock AgentCore 自动化采购工作流的方案，重点是把 Agent 放进采购任务和流程编排。"],
+    [/Daniela Amodei|IPO 前夕驳斥|Anthropic 联合创始人/iu, "TechCrunch 报道 Anthropic 联合创始人 Daniela Amodei 在 IPO 前回应外界对 AI 投资回报的质疑。"],
+    [/Claude Code v2\.1\.163/iu, "Claude Code 发布 v2.1.163 版本，属于 AI 编程工具链的持续迭代信号。"],
+    [/Governing agents in GitHub Enterprise/iu, "GitHub Enterprise 材料讨论 Agent 治理，重点是企业环境下的权限、规则和管控建议。"],
+    [/When AI builds itself|recursive self-improvement|递归式自我改进/iu, "Anthropic 发布递归式自我改进进展，讨论 AI 系统参与自身构建和改进时的能力边界。"],
+    [/Archestra raises \$10M|archestra/iu, "Archestra 融资 1000 万美元，产品方向是为 AI Agent 访问企业数据建立受控连接层。"],
+    [/57 early stage AI startups/iu, "LinkedIn 材料显示，一周内 57 家早期 AI 初创公司完成 Seed 或 Pre-seed 融资，合计约 3.16 亿美元。"],
+    [/voice AI infrastructure global tech giants|thenextweb/iu, "The Next Web 报道称，两名前高盛和 Meta 创始人融资 300 万美元，建设面向大型科技公司的语音 AI 基础设施。"],
+    [/True Cost of Implementing AI|riseuplabs/iu, "Riseup Labs 讨论 2026 年企业实施 AI 的成本构成，包括开发、集成、运营和维护费用。"],
+    [/agent-ready enterprise/iu, "GitHub 相关材料介绍面向 Agent-ready 企业的软件开发平台，重点在开发者工作流和企业级 Agent 接入。"],
+    [/Advanced Voice AI Platforms|avasant/iu, "Avasant 发布高级语音 AI 平台市场观察，材料关注语音 AI 平台能力、供应商和企业应用方向。"],
+    [/open source frameworks for building AI agents|firecrawl/iu, "Firecrawl 汇总 2026 年构建 AI Agent 的开源框架，材料关注 Agent 开发工具和框架选择。"],
+    [/passive heart rate|PHRM|Google Research/iu, "Google Research 发布被动心率监测系统 PHRM，展示 AI 在健康监测和感知建模中的应用。"],
+    [/Transforming procurement through intelligent technology|kpmg/iu, "KPMG 客户案例讨论用智能技术改造采购流程，重点在采购自动化和流程效率。"],
+    [/Nemotron 3 Ultra/iu, "NVIDIA AI 发布 Nemotron 3 Ultra，材料关注长时间运行智能体所需的大模型架构和推理能力。"],
+  ];
+  const match = rules.find(([pattern]) => pattern.test(source));
+  if (match) return match[1];
+  return "";
+}
+
 function frontstageChineseTitle(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const rules = [
@@ -368,6 +435,7 @@ function frontstageChineseTitle(title = "", sourceUrl = "") {
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
+  if (!hasCjk(title)) return translateEnglishTitle(title, sourceUrl);
   if (/^the \$200 billion ai opportunity/iu.test(title)) return "BCG：科技服务业存在 2000 亿美元 AI 机会";
   if (/^ai workflow builder/iu.test(title)) return "AI 工作流构建工具 Wireflow";
   if (/^enterprise pricing/iu.test(title)) return "Adya AI 企业定价：AI 采用回到预算与用量治理";
@@ -461,7 +529,12 @@ function publicVisibleFragment(value = "") {
   const text = String(value || "").trim();
   if (!text) return "";
   if (/Builders Viewpoints|今日观察中的|Raw\s*\/\s*Pool|候选、人物时间线/u.test(text)) return "";
+  if (!hasCjk(text)) return "";
   return text;
+}
+
+function isMechanicalFrontstageText(value = "") {
+  return /发布 AI 能力|把 AI 用进|这条变化值得看|客户是否买单|流程结果、交付速度|团队协作有没有实际改善/u.test(String(value || ""));
 }
 
 function cardFromFile(file, category) {
@@ -488,15 +561,18 @@ function cardFromFile(file, category) {
   const sourceUrl = primarySourceUrl || raw.sourceUrl;
   const sourceName = scalar(fm, "source_name") || raw.sourceName || domain(sourceUrl) || "未标注来源";
 
-  const rawDisplayTitle = frontstageTitle(nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || path.basename(file, ".md"), rawTitle);
+  const rawDisplayTitle = frontstageTitle(rawTitle || scalar(fm, "title") || path.basename(file, ".md"), rawTitle);
   const title = frontstageChineseTitle(rawDisplayTitle, sourceUrl);
-  const eventLine = nestedScalar(fm, "frontend", "eventLine") || scalar(fm, "event") || "";
-  const summary = nestedScalar(fm, "frontend", "whyWatch")
+  const translatedFact = chineseFactFromSource(rawDisplayTitle || title, sourceUrl);
+  const rawEventLine = nestedScalar(fm, "frontend", "eventLine") || scalar(fm, "event") || "";
+  const eventLine = isMechanicalFrontstageText(rawEventLine) ? "" : rawEventLine;
+  const rawSummary = nestedScalar(fm, "frontend", "whyWatch")
     || nestedScalar(fm, "frontend", "interpretation")
     || scalar(fm, "why_selected")
     || headingSection(text, "为什么值得看")
     || headingSection(text, "观澜解读")
     || eventLine;
+  const summary = translatedFact || (isMechanicalFrontstageText(rawSummary) ? eventLine : rawSummary);
 
   const sourceLinks = [
     ...nestedList(fm, "frontend", "sourceLinks"),
@@ -521,13 +597,15 @@ function cardFromFile(file, category) {
     displayTags: displayTags(tags),
     summary: short(summary, 260),
     eventLine: short(eventLine || summary, 220),
+    translatedFact,
     originalHighlights: [
+      translatedFact,
       nestedScalar(fm, "frontend", "originalQuote"),
       eventLine,
       headingSection(text, "发生了什么"),
-    ].filter(Boolean).map((item) => short(item, 260)).slice(0, 3),
-    visibleFragment: publicVisibleFragment(raw.visibleFragment),
-    keyExcerpts: raw.keyExcerpts,
+    ].filter((item) => item && !isMechanicalFrontstageText(item)).map((item) => short(item, 260)).slice(0, 3),
+    visibleFragment: translatedFact || publicVisibleFragment(raw.visibleFragment),
+    keyExcerpts: raw.keyExcerpts.filter(hasCjk),
     rawRefs: arrayValue(fm, "raw_refs"),
     poolRefs: arrayValue(fm, "pool_refs"),
     cardPath: rel(file),

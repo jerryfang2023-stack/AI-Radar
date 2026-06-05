@@ -17,7 +17,7 @@ encoding: UTF-8
 | 目录 | 用途 | 保留标准 |
 |---|---|---|
 | `00-MOC/` | 关系索引、主题索引、周期索引 | 只保留当前有用索引，不保留过期日索引 |
-| `01-Signal-Cards/` | 长期商业信号资产 | product_service / funding / case；必须有事实证据和前台文案门禁 |
+| `01-Signal-Cards/` | 长期商业信号资产 | product_service / funding / case；必须有事实证据、原文标题来源和中文前台展示 |
 | `02-Opinion-Cards/` | 前沿观点资产 | 必须有原文 / 摘录、出处、事实边界和四档评级 |
 | `03-Asset-Candidates/` | 后台判断候选 | 变化、场景、趋势候选；未成熟前不直接前台展示 |
 | `04-Publication-Index/` | 发布索引 | 今日观察、趋势报告、商业内参等前台内容索引 |

@@ -11,12 +11,7 @@ priority: execution
 
 # Card Asset QC Checklist｜卡片资产轻量质检清单
 
-本清单用于资产写入和前台同步前的轻量 QC。当前阶段不新增独立复杂 Skill，先使用：
-
-1. `skills/guanlan-copy-style/SKILL.md`
-2. `skills/guanlan-copy-style-qc/SKILL.md`
-3. `agent-workflow/product/card-asset-copy-governance.md`
-4. `agent-workflow/tools/card-copy-style-gate.mjs`
+本清单用于资产写入和前台同步前的轻量 QC。当前暂停使用观澜前台文案规范与文案门禁；验收以事实、来源、中文展示和边界为准。
 
 ## 1. 前置检查
 
@@ -33,7 +28,7 @@ priority: execution
 2. 主证据在哪里，是否能回到 Raw、原文出处或明确快照。
 3. 是否保留原文、原文摘录、URL、发布时间和抓取范围。
 4. 是否把观点、事实、判断和缺口分开。
-5. 是否符合 `guanlan-copy-style`：清楚、克制、具体、少 AI 味。
+5. 前台标题是否优先使用可追溯原文标题，英文标题 / 摘要 / 详情是否已翻译为中文展示。
 
 ## 3. 类型检查
 
@@ -71,8 +66,6 @@ display_lane = daily_feature 或 signal_sidebar
 publish_status = frontstage_feature 或 frontstage_sidebar
 frontend.originalTranslation = 已完成中文翻译
 fact_draft_gate = passed
-frontend_copy_gate = passed
-cardcopy_gate = passed
 ```
 
 ### 变化候选
@@ -101,7 +94,6 @@ cardcopy_gate = passed
 
 ```powershell
 node agent-workflow/tools/govern-opinion-card-ratings.mjs --date=<YYYY-MM-DD>
-node agent-workflow/tools/run-quality-gates.mjs cardcopy --date=<YYYY-MM-DD> --require-gates=true
 node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date=<YYYY-MM-DD>
 ```
 
@@ -116,14 +108,14 @@ node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date=<YYYY-MM-DD>
 
 ## 5. 通过条件
 
-资产写入 `cardcopy_gate: passed` 前，必须满足：
+资产进入前台前必须满足：
 
 - 事实清晰。
 - 证据可追溯。
-- 文案符合观澜 Copy 规范。
+- 商业信号标题优先使用原文标题；英文前台展示内容已翻译为中文。
 - 观点和事实分开。
 - 候选和正式资产分开。
 - 弱材料没有被伪装成公司事实。
 - 观点卡评级、展示位置和发布状态一致。
 
-不满足以上任一项时，写 `cardcopy_gate: failed` 或保持候选 / 归档 / 隐藏状态，不得同步前台。
+不满足以上任一项时，保持候选 / 归档 / 隐藏状态，不得同步前台。

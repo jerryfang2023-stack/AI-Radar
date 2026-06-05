@@ -51,7 +51,7 @@ priority: current
 
 | 页面 | 文件 | 当前口径 |
 |---|---|---|
-| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，基于当日 Raw / Pool / Card / 观点 / 趋势资产，展示 Card 工作区、关系图谱、趋势候选和历史趋势 |
+| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，基于当日 Raw / Pool / Card / 观点 / 趋势资产，展示商业信号、关系图谱、趋势候选和历史趋势 |
 | 根入口 | `01-SiteV2/site/index.html` | 只跳转到 V3 数据观察台，不再承载 V2 首页 |
 | 运营控制台 | `01-SiteV2/site/operations-console.html` | 运营后台保留，不属于 V2 前台页面 |
 | 管线仪表盘 | `01-SiteV2/site/pipeline-dashboard.html` | 生产链路仪表盘保留，不属于 V2 前台页面 |
@@ -63,7 +63,7 @@ priority: current
 
 | 类型 | 当前基线 |
 |---|---|
-| 文案口径 | `context/03-copy-style.md` 和 `skills/guanlan-copy-style/SKILL.md` |
+| 文案口径 | 前台文案规范与文案门禁暂停使用；商业信号标题优先使用可追溯原文标题，英文展示内容必须翻译为中文 |
 | 字体规范 | `context/02-vi-style.md` 和 `docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md` |
 | 页面执行 | `context/06-execution-harness.md` |
 | 质量门禁 | `context/04-qc-rules.md` |
@@ -98,9 +98,9 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 | 改动类型 | 必须补充 |
 |---|---|
 | Patch | syntax + frontstage regression |
-| Page Change | syntax + typography + public copy + frontstage regression |
-| Copy Change | public copy + cardcopy 或对应 copy QC |
-| Data Change | v2content + cardcopy + frontstage regression |
+| Page Change | syntax + typography + frontstage regression |
+| Copy Change | syntax + frontstage regression |
+| Data Change | v2content + frontstage regression |
 | Release Change | regression + release checklist + Git tag |
 
 ## 当前冻结点

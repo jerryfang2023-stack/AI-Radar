@@ -80,7 +80,6 @@
 | `context/frontstage-page-contracts.md` | 前台页面契约 |
 | `context/01-product-map.md` | 产品结构、栏目、数据流 |
 | `context/02-vi-style.md` | VI、字体、页面视觉 |
-| `context/03-copy-style.md` | 全站基础文案 |
 | `context/04-qc-rules.md` | 通用质量门禁 |
 | `context/05-daily-monitoring.md` | 每日监测最小上下文 |
 | `context/06-execution-harness.md` | 高风险流程执行外壳 |
@@ -146,15 +145,7 @@
 
 ### 文案 / 栏目命名 / CTA
 
-读取：
-
-1. `context/03-copy-style.md`
-2. `skills/guanlan-copy-style/SKILL.md`
-
-按需：
-
-- 普通短文案 QC 调用 `skills/guanlan-copy-style-qc/SKILL.md`。
-- 专题内容调用对应专题 Skill。
+当前暂停使用观澜前台文案规范与文案门禁。前台标题优先使用可追溯原文标题；英文展示内容必须翻译为中文；不得调用 `guanlan-copy-style`、`guanlan-copy-style-qc`、`publiccopy` 或 `cardcopy` 作为发布阻塞门禁。
 
 ### 今日观察
 

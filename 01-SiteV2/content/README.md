@@ -129,4 +129,4 @@ knowledge/                   -> 长期判断资产主库
 - 前沿观点卡必须执行四档评级；未评级、评级冲突、`archive` 或 `discard` 不得进入前台。
 - 变化候选需要材料积累、前后对比、商业变量和风险边界，单一材料不得升级为正式变化。
 - 趋势候选需要多个变化、多个场景 / 案例和多类来源支撑，并写清信息缺口或后续观察变量，不能由单条新闻硬凑。
-- 前台展示文案必须遵守 `context/03-copy-style.md`、`skills/guanlan-copy-style/SKILL.md` 和 `agent-workflow/product/card-asset-copy-governance.md`。
+- 当前暂停使用前台文案规范与文案门禁；前台标题优先使用可追溯原文标题，英文标题 / 摘要 / 详情必须翻译为中文展示。

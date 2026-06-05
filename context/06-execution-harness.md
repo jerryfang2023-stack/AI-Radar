@@ -93,11 +93,9 @@ Stop 条件：
 
 1. `AGENTS.md`
 2. `context/01-product-map.md`
-3. `context/03-copy-style.md`
-4. `context/05-daily-monitoring.md`
-5. `context/06-execution-harness.md`
-6. `agent-workflow/product/evidence-and-routing-rules.md`
-7. `agent-workflow/product/card-asset-copy-governance.md`
+3. `context/05-daily-monitoring.md`
+4. `context/06-execution-harness.md`
+5. `agent-workflow/product/evidence-and-routing-rules.md`
 
 按需补读：
 
@@ -120,7 +118,7 @@ Stop 条件：
 - 前沿观点卡必须区分观点与事实，并执行四档评级：`feature` / `sidebar` / `archive` / `discard`。
 - 前沿观点卡只有 `opinion_tier=feature|sidebar`、`display_lane=daily_feature|signal_sidebar`、`publish_status=frontstage_feature|frontstage_sidebar` 且中文翻译已完成时，才允许进入前台；`archive` / `discard` 不得被页面同步 fallback 带出。
 - 变化候选和趋势候选不能由单条弱事实直接升级为正式判断。
-- 前台展示优先使用 `frontend` 字段；未通过 copy / cardcopy gate 不得 fallback 到 Raw 摘要。
+- 前台展示不得因旧文案规范改写原始事实；商业信号标题优先使用可追溯原文标题，英文展示内容必须翻译为中文。
 
 必须产出：
 
@@ -128,7 +126,7 @@ Stop 条件：
 - linked_raw_ids / linked_fact_cards。
 - evidence_gap 和 boundary。
 - usable_for / cannot_use_for。
-- cardcopy / frontend_copy 结果。
+- 前台标题与中文展示结果。
 - 给 Experience & Editorial 的素材 handoff。
 
 Stop 条件：
@@ -152,23 +150,20 @@ Stop 条件：
 1. `AGENTS.md`
 2. `context/00-current-state.md`
 3. `context/02-vi-style.md`
-4. `context/03-copy-style.md`
-5. `context/06-execution-harness.md`
-6. 任务指定页面或代码文件
+4. `context/06-execution-harness.md`
+5. 任务指定页面或代码文件
 
 按需补读：
 
 - 页面位置字体：`docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md`
 - VI 使用：`docs/brand/wavesight-ai-vi/USAGE.md`
 - 页面设计总纲：`agent-workflow/product/DESIGN.md`
-- 普通短文案：`skills/guanlan-copy-style/SKILL.md`
 - 字体 QC：`skills/guanlan-typography-qc/SKILL.md`
 
 硬门：
 
 - 页面生成或大改前必须先有 Typography 页面位置表。
-- 页面生成或大改前必须先有 Copy-first 文案表。
-- Build & Release 只能按表实现，不得临场新增关键文案、字号体系或视觉口径。
+- Build & Release 不得临场新增表外字号体系或视觉口径；前台文案以可追溯事实和中文可读为准。
 - 不得新增一级导航，除非用户明确确认。
 - 不得修改正式 Logo、SVG 生成脚本或品牌 token，除非用户明确确认。
 - 公开页面不得暴露 Raw / Pool / gate / 后台字段 / 入库 / 同步等生产语言。

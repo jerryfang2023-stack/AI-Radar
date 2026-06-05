@@ -90,4 +90,4 @@ node agent-workflow/tools/assert-guanlan-automation-readiness.mjs --command=asse
 - 页面、文案、前台数据同步和发布检查必须先确认 `context/version-ledger.md` 与 `context/frontstage-page-contracts.md`。
 - Raw 原文、source quote、原始摘录、URL、source metadata、证据快照和 `key_excerpts.text` 是证据，不得为了文风改写。
 - 官网首页、工具平台官网、产品目录、文档目录、控制台登录页、搜索结果页和只有导航词堆砌的页面默认只能 `index_only`。
-- follow-builders / 社区观点只能证明“谁在何时何处说了什么”，不能作为公司事实主证据；观点卡进入前台必须有中文翻译、`opinion_tier`、`display_lane`、`publish_status` 和前台文案门禁结果。
+- follow-builders / 社区观点只能证明“谁在何时何处说了什么”，不能作为公司事实主证据；观点卡进入前台必须有中文翻译、`opinion_tier`、`display_lane` 和 `publish_status`。

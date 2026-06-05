@@ -94,10 +94,8 @@ AI HOT / follow-builders / keyword search / S-A-B sources
 
 商业信号卡、前沿观点卡或变化短专题进入前台必须满足：
 
-- `fact_draft_gate: passed`
-- `frontend_copy_gate: passed`
-- `cardcopy_gate: passed`
-- 有合格 `frontend.displayTitle`
+- 有可追溯事实证据和来源链接
+- 商业信号标题优先使用原文标题；英文标题和详情必须翻译为中文展示
 - `asset_level` 不为 `candidate` / `draft`
 - `status` 不为 `draft`
 

@@ -48,7 +48,7 @@ const requiredOperationalPages = [
 
 const retiredPatterns = [
   { pattern: /\bV2\.[01]\b/u, label: "retired_version_marker" },
-  { pattern: /home-v2|page-index|今日观察|商业信号|趋势追踪|商业内参/u, label: "retired_v2_frontstage_copy" },
+  { pattern: /home-v2|page-index|今日观察|趋势追踪|商业内参/u, label: "retired_v2_frontstage_copy" },
   { pattern: /今日判断/u, label: "retired_daily_judgment_copy" },
   { pattern: /dailySummaryCard/u, label: "retired_daily_summary_component" },
   { pattern: /legacyPerspectiveCard/u, label: "retired_legacy_perspective_component" },

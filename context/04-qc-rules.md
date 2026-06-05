@@ -37,14 +37,12 @@ priority: current
 
 ## 文案任务
 
-普通页面短文案：
+当前暂停使用观澜前台文案规范与文案门禁。
 
-- 遵循 `context/03-copy-style.md`。
-- 需要 QC 时调用 `guanlan-copy-style-qc`。
-
-专题内容：
-
-- 调用对应专题 writer / QC Skill。
+- 不调用 `guanlan-copy-style`、`guanlan-copy-style-qc`、`publiccopy` 或 `cardcopy` 作为发布阻塞门禁。
+- 商业信号标题优先使用可追溯原文标题。
+- 前台出现英文标题、摘要或详情内容时，必须翻译为中文后展示。
+- 文案验收以事实准确、来源可追溯、无内部生产语言、无机械改写为准。
 
 ## 数据与每日监测
 
@@ -66,11 +64,9 @@ node --check 01-SiteV2/site/assets/app.js
 
 按任务需要再运行：
 
-- `cardcopy`
 - `style`
 - `automation`
 - `v2content --date=YYYY-MM-DD`
-- `node agent-workflow/tools/assert-public-copy-gate.mjs --date=YYYY-MM-DD --markdown=true`
 
 ## 冲突处理
 

@@ -66,6 +66,10 @@
     return `${text.slice(0, limit - 1)}…`;
   }
 
+  function hasCjk(value = "") {
+    return /[\u4e00-\u9fff]/u.test(String(value || ""));
+  }
+
   function cleanJudgmentText(value = "") {
     return String(value || "")
       .replace(/^这条变化值得看，是因为/u, "")
@@ -96,6 +100,7 @@
 
   function factText(card) {
     const candidates = [
+      card.translatedFact,
       ...(card.originalHighlights || []),
       card.eventLine,
       card.visibleFragment,
@@ -150,8 +155,7 @@
     `).join("");
     const summary = $("[data-day-summary]");
     if (summary) {
-      const total = cardsOnDate(date).length;
-      summary.textContent = `${fmtDate(date)} · ${total} 张`;
+      summary.textContent = fmtDate(date);
     }
   }
 
@@ -311,7 +315,7 @@
 
   function renderList(cards) {
     const count = $("[data-result-count]");
-    if (count) count.textContent = `${cards.length} 张 Card`;
+    if (count) count.textContent = "";
   }
 
   function renderRelationshipLinks() {
@@ -329,7 +333,7 @@
         <div class="direction-meta">${safe(item.evidenceMeta || `当日 ${item.todayCount} 张 · 近 7 天 ${item.last7Count} 张`)}</div>
         <button class="detail-link trend-detail-link" type="button" data-open-relationship="${safe(item.id)}">查看方向详情</button>
       </article>
-    `).join("") : "<div class=\"empty-state\">当日暂无足够的关系方向证据，只保留 Card 工作区事实。</div>";
+    `).join("") : "<div class=\"empty-state\">当日暂无足够的关系方向证据，只保留商业信号事实。</div>";
     root.onclick = (event) => {
       const button = event.target.closest("[data-open-relationship]");
       const card = event.target.closest("[data-relationship-card]");
@@ -528,8 +532,8 @@
     if (!root || !dialog) return;
     const fact = factText(card);
     const value = valueText(card);
-    const highlights = (card.originalHighlights || []).map(cleanJudgmentText).filter((item) => !isWeakFact(item)).slice(0, 4);
-    const excerpts = (card.keyExcerpts || []).map(cleanJudgmentText).filter(Boolean).slice(0, 3);
+    const highlights = (card.originalHighlights || []).map(cleanJudgmentText).filter((item) => hasCjk(item) && !isWeakFact(item)).slice(0, 4);
+    const excerpts = (card.keyExcerpts || []).map(cleanJudgmentText).filter(hasCjk).slice(0, 3);
     const sourceLinks = card.sourceLinks || [];
     root.innerHTML = `
       <h2 class="detail-title">${safe(card.title)}</h2>
