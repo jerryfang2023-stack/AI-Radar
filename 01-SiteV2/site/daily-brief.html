@@ -25,7 +25,8 @@
     display: flex; justify-content: space-between; align-items: center;
     padding-bottom: 16px; border-bottom: 2px solid rgba(200,167,102,.35); margin-bottom: 24px;
   }
-  .brand { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; color: #0d355c; letter-spacing: .03em; }
+  .brand { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; color: #0d355c; letter-spacing: .03em; line-height: 1; }
+  .brand small { display: block; font-size: 9px; letter-spacing: .28em; color: #c8a766; font-weight: 600; margin-top: 2px; }
   .header-right { display: flex; align-items: center; gap: 12px; }
   .date { font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: rgba(7,24,39,.52); font-weight: 500; }
   .date-picker select {
@@ -96,7 +97,7 @@
 <body>
 <div class="container">
 <div class="header">
-  <div class="brand">观澜日报</div>
+  <div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
   <div class="header-right">
     <div class="date">2026-06-05</div>
     <div class="date-picker">
@@ -209,7 +210,7 @@
   <div class="signal-text">开发者社区热议 AI 工具效率与安全性之间的权衡，环境隔离而非模型拒绝成为最终防线。</div>
 </div>
 </div>
-<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:15</div>
+<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:21</div>
 </div>
 <script>
 /* 日期选择器 */
