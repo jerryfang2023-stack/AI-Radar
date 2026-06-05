@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-01
+last_updated: 2026-06-05
 use_when:
   - large task startup
   - dispatch planning
@@ -14,7 +14,7 @@ priority: current
 
 # 00 Current State｜观澜 AI 当前状态
 
-观澜 AI / WaveSight AI 当前处于 V3.0.0 数据观察台生产开发阶段。
+观澜 AI / WaveSight AI 当前处于 V3.1 数据观察台生产开发阶段。
 
 ## 定位
 
@@ -24,6 +24,7 @@ priority: current
 - AI Native 方向：后续能力建设优先让 Agent 之间形成联动，围绕感知、判断、表达、发布、复盘和进化形成闭环。
 - 不是 AI 新闻站、工具导航、热点搬运站或普通日报。
 - 当前前台入口：数据观察台。
+- 当前 V3.1 重点：移动端适配、首屏统计区压缩、趋势模块手机端单列、商业信号标题原文优先、英文前台展示中文化、前台文案规范与文案门禁暂停使用。
 
 ## 当前目录
 

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: execution-harness
-last_updated: 2026-06-01
+last_updated: 2026-06-05
 use_when:
   - daily monitoring
   - raw pool card workflow
@@ -21,7 +21,7 @@ priority: current
 
 ## 1. 使用原则
 
-- 只服务 V2.2.1 生产线。
+- 只服务 V3.1 数据观察台生产线。
 - 先确定流程类型，再读取最小上下文。
 - 任何下游内容必须能追溯到 Raw / Pool / Card 或明确人工判断来源。
 - 失败、阻断、降级要明确写出，不允许靠补文案绕过质量门。
