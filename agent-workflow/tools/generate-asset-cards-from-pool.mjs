@@ -619,6 +619,103 @@ function publicCardCopy(raw = "") {
     .replace(/\u7528\u4e8e\u89c4\u6a21\u5316/gu, "\u652f\u6491\u5927\u89c4\u6a21");
 }
 
+function parseJsonValue(section, key, fallback) {
+  const raw = value(section, key);
+  if (!raw) return fallback;
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return fallback;
+  }
+}
+
+function readRawJson(section) {
+  const rawJsonPath = value(section, "raw_json");
+  if (!rawJsonPath) return {};
+  try {
+    const rawPath = path.resolve(root, rawJsonPath.replace(/^`|`$/gu, ""));
+    return JSON.parse(fs.readFileSync(rawPath, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+function stripSourceNoise(raw = "") {
+  return String(raw || "")
+    .replace(/\s*\/\s*query=.*$/iu, "")
+    .replace(/\s*\/\s*intent=.*$/iu, "")
+    .replace(/\s*\/\s*path=.*$/iu, "")
+    .replace(/^Skip to Main Content\s*/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function sourceSentences(raw = "") {
+  const text = stripSourceNoise(raw);
+  if (!text) return [];
+  return text
+    .split(/(?<=[.!?。！？])\s+|\n+/u)
+    .map(stripSourceNoise)
+    .filter((item) => item.length >= 28)
+    .filter((item) => !/Navigation Menu|Sign in|Search or jump to|Saved searches|Provide feedback|Appearance settings|Twitter|Facebook|LinkedIn|Email Updates/iu.test(item))
+    .slice(0, 16);
+}
+
+function extractNumbers(raw = "") {
+  return [...String(raw || "").matchAll(/(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|K|million|billion)?|\d+(?:\.\d+)?\s?(?:%|M|B|K|million|billion|companies|customers|days|months|tools|vendors)|Fortune\s?\d+)/giu)]
+    .map((match) => match[0].replace(/\s+/gu, " ").trim());
+}
+
+function translatedSourcePoint(raw = "", type = "") {
+  const text = stripSourceNoise(raw);
+  if (!text) return "";
+  const rules = [
+    [/Procurement teams.*vendor selection.*Request for Quotation/iu, "原文指出采购团队在供应商选择和 RFQ 流程中面临管理压力。"],
+    [/Buyers spend significant time navigating multiple Enterprise Resource Planning systems/iu, "原文指出采购人员需要在多个 ERP 系统和外部数据源之间切换。"],
+    [/consolidate supplier information.*validate compliance requirements.*compare costs/iu, "原文指出采购人员要合并供应商信息、验证合规要求，并比较不同供应商成本。"],
+    [/Smart Procurement Assistant.*automates procurement workflows.*reduce cycle times.*compliance validation/iu, "AWS 方案中的 Smart Procurement Assistant 用于自动化采购流程、缩短周期，并进行实时合规验证。"],
+    [/compliance validation, supplier recommendation, financial analysis, and RFQ management/iu, "AgentCore 与 Strands Agents 被用于合规验证、供应商推荐、财务分析和 RFQ 管理。"],
+    [/eight specialized tools/iu, "方案包含 8 个专用工具，覆盖数据结构查询、SQL 查询、财务分析、质量指标、合规验证、RFQ 校验、RFQ 创建和数据可视化。"],
+    [/RFQ Creation Tool.*SAP systems through OData/iu, "RFQ 创建工具通过 OData 调用 SAP API，在 SAP 系统中创建询价请求。"],
+    [/raised|funding|seed|Series|融资/iu, text.match(/[\u4e00-\u9fff]/u) ? text : ""],
+  ];
+  const match = rules.find(([pattern]) => pattern.test(text));
+  if (match?.[1]) return match[1];
+  const numbers = [...new Set(extractNumbers(text))].slice(0, 5);
+  if (numbers.length) return `原文${type ? ` ${type}` : ""}记录的关键数字包括 ${numbers.join("、")}。`;
+  if (/[\u4e00-\u9fff]/u.test(text)) return text.length > 220 ? `${text.slice(0, 219)}…` : text;
+  return "";
+}
+
+function sourcePointsFromSection(section) {
+  const raw = readRawJson(section);
+  const keyExcerpts = Array.isArray(raw.key_excerpts)
+    ? raw.key_excerpts
+    : parseJsonValue(section, "key_excerpts", []);
+  const evidenceSeed = raw.evidence_seed || parseJsonValue(section, "evidence_seed", {});
+  const seedItems = [
+    ...(Array.isArray(evidenceSeed.company_actions) ? evidenceSeed.company_actions : []),
+    ...(Array.isArray(evidenceSeed.case_details) ? evidenceSeed.case_details : []),
+    ...(Array.isArray(evidenceSeed.workflow_changes) ? evidenceSeed.workflow_changes : []),
+    ...(Array.isArray(evidenceSeed.risks_or_constraints) ? evidenceSeed.risks_or_constraints : []),
+  ];
+  const excerptItems = Array.isArray(keyExcerpts) ? keyExcerpts.map((item) => ({ text: item?.text || "", type: item?.type || "" })) : [];
+  const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type)).filter(Boolean);
+  const fromSeed = seedItems.map((item) => translatedSourcePoint(item)).filter(Boolean);
+  const fromFullText = sourceSentences(raw.full_text || raw.clean_text || "")
+    .map((item) => translatedSourcePoint(item))
+    .filter(Boolean);
+  return [...new Set([...fromExcerpts, ...fromSeed, ...fromFullText])].slice(0, 6);
+}
+
+function sourceExcerptFromSection(section, points = []) {
+  const raw = readRawJson(section);
+  const firstRaw = sourceSentences(raw.full_text || raw.clean_text || "")
+    .map((item) => translatedSourcePoint(item))
+    .find(Boolean);
+  return firstRaw || points[0] || "";
+}
+
 function normalizeSignalSpec(spec) {
   return {
     ...spec,
@@ -629,6 +726,8 @@ function normalizeSignalSpec(spec) {
     businessMeaning: publicCardCopy(spec.businessMeaning),
     evidenceBoundary: publicCardCopy(spec.evidenceBoundary),
     watchWindow: publicCardCopy(spec.watchWindow),
+    sourcePoints: (spec.sourcePoints || []).map(publicCardCopy),
+    sourceExcerpt: publicCardCopy(spec.sourceExcerpt || ""),
   };
 }
 
@@ -1056,11 +1155,14 @@ function autoSignalSpec(poolRef, section, index) {
     : `${company} 商业信号`;
   const title = originalTitle || fallbackTitle || "";
   const sourceTitle = originalTitle || "";
-  const eventLine = type === "funding"
+  const sourcePoints = sourcePointsFromSection(section);
+  const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
+  const fallbackEventLine = type === "funding"
     ? `${company} 宣布${amount ? `${amount} ` : ""}融资，业务重点落在${fundingAngle}。`
     : type === "product_service"
-      ? `${company} 相关产品材料进入商业信号，需结合原文确认具体能力和应用场景。`
-      : `${company} 相关案例材料进入商业信号，需结合原文确认具体客户、流程和结果。`;
+      ? `${company} 相关产品材料记录了新的产品、能力或应用场景。`
+      : `${company} 相关案例材料记录了客户、流程或结果信息。`;
+  const eventLine = sourcePoints.find(Boolean) || fallbackEventLine;
   return {
     id: prefix,
     poolRef,
@@ -1069,11 +1171,14 @@ function autoSignalSpec(poolRef, section, index) {
     slug: `${slugify(company)}-${slugify(scenario)}-${poolRef.toLowerCase()}`,
     company,
     title,
+    sourceTitle,
     eventLine,
-    whyWatch: "这条材料进入商业信号，是因为它对应了可追溯的企业 AI 事件；前台展示必须回到原文标题、来源和具体事实。",
-    businessMeaning: "企业评估这类材料时，应先确认主体、动作、客户或流程证据，再讨论预算、责任和部署影响。",
-    evidenceBoundary: "目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
-    watchWindow: "未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。",
+    whyWatch: sourcePoints[1] || sourcePoints[0] || "",
+    businessMeaning: sourcePoints[2] || sourcePoints[1] || sourcePoints[0] || "",
+    evidenceBoundary: value(section, "missing_information") || "证据边界以 Raw / Pool 中保留的原文、摘录和缺失项为准。",
+    watchWindow: "",
+    sourcePoints,
+    sourceExcerpt,
     autoGenerated: true,
   };
 }
@@ -1170,7 +1275,7 @@ function formalTagsYaml(tags) {
 }
 
 function formalTagsForSignal(spec, sourceLevel) {
-  const tags = inferredTagsFromText(`${spec.title} ${spec.eventLine} ${spec.businessMeaning} ${spec.company}`);
+  const tags = inferredTagsFromText(`${spec.title} ${spec.eventLine} ${(spec.sourcePoints || []).join(" ")} ${spec.company}`);
   tags.evidence.push(spec.type === "funding" ? "evidence-funding" : spec.type === "case" ? "evidence-customer-adoption" : "evidence-product-launch");
   tags.source.push(sourceTagFromLevel(sourceLevel));
   if (spec.type === "funding") tags.stage.push("stage-rising");
@@ -1213,6 +1318,11 @@ function signalCard(spec, section) {
   const extractionQuality = value(section, "extraction_quality");
   const importanceType = value(section, "importance_type");
   const importanceScore = value(section, "importance_score");
+  const sourcePoints = (spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section)).slice(0, 6);
+  const sourceExcerpt = spec.sourceExcerpt || sourceExcerptFromSection(section, sourcePoints);
+  const sourceFact = sourcePoints[0] || spec.title;
+  const valueSummary = sourcePoints.find((item) => item !== sourceFact) || sourceFact;
+  const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
   return `---
 id: ${spec.id}
@@ -1224,8 +1334,6 @@ status: published
 ${spec.sourceTitle ? `source_title: "${spec.sourceTitle}"\n` : ""}asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-frontend_copy_gate: passed
-cardcopy_gate: passed
 created_at: ${now}
 updated_at: ${now}
 
@@ -1248,54 +1356,35 @@ primary_raw:
 
 ${formalTagsYaml(formalTagsForSignal(spec, sourceLevel))}
 
-event: "${spec.eventLine}"
-business_meaning: "${spec.businessMeaning}"
-why_selected: "${spec.whyWatch}"
 signal_owner: "${spec.company}"
-watch_reason: "${spec.watchWindow}"
 
 frontend:
   displayTitle: "${spec.title}"
-  eventLine: "${spec.eventLine}"
-  whyWatch: "${spec.whyWatch}"
-  businessMeaning: "${spec.businessMeaning}"
-  evidenceBoundary: "${spec.evidenceBoundary}"
-  watchWindow: "${spec.watchWindow}"
   sourceLinks:
     - "${sourceUrl}"
 ---
 
 # ${spec.title}
 
-## 信号底稿
+## 新闻事实
 
-谁：${spec.company}。
+${sourceFact}
 
-做了什么：${spec.eventLine}
+## 原文要点
 
-证据是什么：来源为 ${sourceUrl}，对应本地证据 ${rawRef}，材料已保留全文、哈希和出处。
+${sourcePoints.length ? sourcePoints.map((item) => `- ${item}`).join("\n") : "- 原文要点暂缺，需回到 Raw 补齐。"}
 
-缺什么：${spec.evidenceBoundary}
+## 简要价值描述
 
-## 发生了什么
+${valueSummary}
 
-${spec.eventLine}
+## 可见原文片段
 
-## 为什么值得看
-
-${spec.whyWatch}
-
-## 商业含义
-
-${spec.businessMeaning}
+${sourceExcerpt || sourceFact}
 
 ## 证据边界
 
-${spec.evidenceBoundary}
-
-## 继续观察
-
-${spec.watchWindow}
+${evidenceBoundary}
 `;
 }
 

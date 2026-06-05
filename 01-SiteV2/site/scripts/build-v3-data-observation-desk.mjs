@@ -71,7 +71,7 @@ function cardQuality(card) {
   const sourceUrl = String(card.sourceUrl || "");
   let score = 0;
   if (sourceUrl) score += 8;
-  if (card.rawArchive || card.rawJson) score += 4;
+  if (card.originalHighlights?.length) score += 4;
   if (card.summary) score += 2;
   if (!/发布 AI 能力|把 AI 用进|Googlecloudpresscorner|^2025\b/u.test(title)) score += 12;
   if (/[A-Za-z]/u.test(title)) score += 2;
@@ -718,14 +718,62 @@ function excerptTypeLabel(type = "") {
   return labels[type] || "原文信息";
 }
 
+function stripSourceNoise(value = "") {
+  return String(value || "")
+    .replace(/\s*\/\s*query=.*$/iu, "")
+    .replace(/\s*\/\s*intent=.*$/iu, "")
+    .replace(/\s*\/\s*path=.*$/iu, "")
+    .replace(/^Skip to Main Content\s*/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function sourceSentences(value = "") {
+  const text = stripSourceNoise(value);
+  if (!text) return [];
+  return text
+    .split(/(?<=[.!?。！？])\s+|\n+/u)
+    .map(stripSourceNoise)
+    .filter((item) => item.length >= 28)
+    .filter((item) => !/Navigation Menu|Sign in|Search or jump to|Saved searches|Provide feedback|Appearance settings|Twitter|Facebook|LinkedIn|Email Updates/iu.test(item))
+    .slice(0, 20);
+}
+
+function translatedSourcePoint(value = "", type = "") {
+  const text = stripSourceNoise(value);
+  if (!text) return "";
+  const known = translateKnownRawExcerpt(text, type);
+  if (known) return known;
+  const rules = [
+    [/Procurement teams.*vendor selection.*Request for Quotation/iu, "原文指出采购团队在供应商选择和 RFQ 流程中面临管理压力。"],
+    [/Buyers spend significant time navigating multiple Enterprise Resource Planning systems/iu, "原文指出采购人员需要在多个 ERP 系统和外部数据源之间切换。"],
+    [/consolidate supplier information.*validate compliance requirements.*compare costs/iu, "原文指出采购人员要合并供应商信息、验证合规要求，并比较不同供应商成本。"],
+    [/fragmentation causes delays.*manual errors.*missed opportunities/iu, "原文把当前问题描述为系统碎片化带来的延迟、人工错误和成本优化机会流失。"],
+    [/Smart Procurement Assistant.*automates procurement workflows.*reduce cycle times.*compliance validation/iu, "AWS 方案中的 Smart Procurement Assistant 用于自动化采购流程、缩短周期，并进行实时合规验证。"],
+    [/compliance validation, supplier recommendation, financial analysis, and RFQ management/iu, "AgentCore 与 Strands Agents 被用于合规验证、供应商推荐、财务分析和 RFQ 管理。"],
+    [/Amazon Bedrock AgentCore provides a fully managed infrastructure/iu, "Amazon Bedrock AgentCore 提供托管基础设施，用于会话处理、状态管理和 Agent 运行。"],
+    [/Amazon Bedrock does not use customer data and prompts to train/iu, "原文强调 Amazon Bedrock 不使用客户数据和提示来训练或改进基础模型。"],
+    [/integrating SAP enterprise data with external vendor compliance ratings/iu, "SPA 方案把 SAP 企业数据与外部供应商合规评级连接起来。"],
+    [/Oracle E-Business Suite|Oracle JD Edwards|Oracle PeopleSoft|Oracle Fusion Cloud ERP|Salesforce|Snowflake/iu, "原文称该架构可扩展到 Oracle E-Business Suite、JD Edwards、PeopleSoft、Oracle Fusion Cloud ERP、Salesforce、Snowflake 等系统。"],
+    [/directly create Requests for Quotation.*same interface/iu, "采购人员可在同一对话界面中创建 RFQ，减少系统切换。"],
+    [/eight specialized tools/iu, "方案包含 8 个专用工具，覆盖数据结构查询、SQL 查询、财务分析、质量指标、合规验证、RFQ 校验、RFQ 创建和数据可视化。"],
+    [/RFQ Creation Tool.*SAP systems through OData/iu, "RFQ 创建工具通过 OData 调用 SAP API，在 SAP 系统中创建询价请求。"],
+    [/accelerates decision-making.*reducing procurement cycle times/iu, "原文把业务结果描述为缩短采购周期、提升供应商评估和支出可见性。"],
+  ];
+  const match = rules.find(([pattern]) => pattern.test(text));
+  if (match) return match[1];
+  const numbers = meaningfulNumbers(extractNumbers(text));
+  if (numbers.length) return `${excerptTypeLabel(type)}：原文关键数字包括 ${numbers.slice(0, 5).join("、")}。`;
+  if (hasCjk(text)) return short(text, 220);
+  return "";
+}
+
 function genericRawCorePoints(raw) {
   const points = [];
-  const elements = raw.businessElements || {};
   const seed = raw.evidenceSeed || {};
   const excerptNumbers = raw.keyExcerpts.flatMap((item) => extractNumbers(item.text));
   const fullTextNumbers = extractNumbers(raw.fullText).slice(0, 10);
   const numbers = meaningfulNumbers([
-    ...arrayField(elements, "numbers"),
     ...excerptNumbers,
     ...fullTextNumbers,
   ]);
@@ -749,19 +797,15 @@ function genericRawCorePoints(raw) {
   ].map((item) => translateKnownRawExcerpt(item, "company_action")).filter(Boolean);
   points.push(...companyActions);
 
-  const workflows = arrayField(elements, "workflows").filter((item) => !/部署 \/ 集成交付/u.test(item)).slice(0, 4);
-  if (workflows.length) points.push(`涉及流程：${workflows.join("、")}。`);
+  const excerptPoints = raw.keyExcerpts
+    .map((item) => translatedSourcePoint(item.text, item.type))
+    .filter(Boolean);
+  points.push(...excerptPoints);
 
-  const roles = arrayField(elements, "roles").slice(0, 4);
-  const departments = arrayField(elements, "affected_departments").slice(0, 4);
-  if (roles.length || departments.length) {
-    points.push(`涉及角色/部门：${[...roles, ...departments].slice(0, 6).join("、")}。`);
-  }
-
-  const products = arrayField(elements, "products")
-    .filter((item) => !/^(agent|agents|AI)$/iu.test(item))
-    .slice(0, 5);
-  if (products.length) points.push(`涉及产品/技术：${products.join("、")}。`);
+  const sentencePoints = sourceSentences(raw.fullText)
+    .map((item) => translatedSourcePoint(item))
+    .filter(Boolean);
+  points.push(...sentencePoints);
 
   return [...new Set(points)]
     .filter((item) => item && !isMechanicalFrontstageText(item))
@@ -780,6 +824,34 @@ function buildOriginalHighlights(raw, rawDisplayTitle = "", sourceUrl = "") {
   return [...new Set([...translated, ...genericRawCorePoints(raw)])]
     .filter((item) => item && !isMechanicalFrontstageText(item))
     .slice(0, 8);
+}
+
+function buildSourceExcerpt(raw, highlights = []) {
+  const rawExcerpt = raw.keyExcerpts
+    .map((item) => translatedSourcePoint(item.text, item.type))
+    .find(Boolean);
+  if (rawExcerpt) return rawExcerpt;
+  const sentenceExcerpt = sourceSentences(raw.fullText)
+    .map((item) => translatedSourcePoint(item))
+    .find(Boolean);
+  if (sentenceExcerpt) return sentenceExcerpt;
+  const visible = publicVisibleFragment(raw.visibleFragment);
+  if (visible) return visible;
+  return highlights.find((item) => hasCjk(item) && !/^原始来源|本地 Raw\/Pool/u.test(item)) || "";
+}
+
+function sourceValueFromEvidence(category, highlights = [], rawDisplayTitle = "") {
+  const concrete = highlights
+    .filter((item) => !/^关键数字：/u.test(item))
+    .filter((item) => !/^原始来源|本地 Raw\/Pool|原文关键数字/u.test(item))
+    .slice(0, 2);
+  const base = concrete.length ? concrete.join("；") : frontstageChineseTitle(rawDisplayTitle);
+  if (!base) return "";
+  if (category === "funding") return `可观察融资金额、资金用途或赛道线索：${base}`;
+  if (category === "case") return `可观察真实客户、业务流程或结果指标：${base}`;
+  if (category === "product-service") return `可观察产品能力进入具体业务流程的方式：${base}`;
+  if (category === "opinion") return `可观察观点来源的原始判断：${base}`;
+  return base;
 }
 
 function fallbackSourcePoints(rawDisplayTitle = "", sourceUrl = "", rawRef = "") {
@@ -825,17 +897,11 @@ function cardFromFile(file, category) {
   const rawDisplayTitle = frontstageTitle(rawTitle || scalar(fm, "title") || path.basename(file, ".md"), rawTitle);
   const title = frontstageChineseTitle(rawDisplayTitle, sourceUrl);
   const translatedFact = chineseFactFromSource(rawDisplayTitle || title, sourceUrl);
-  const rawEventLine = nestedScalar(fm, "frontend", "eventLine") || scalar(fm, "event") || "";
-  const eventLine = isMechanicalFrontstageText(rawEventLine) ? "" : rawEventLine;
-  const rawSummary = nestedScalar(fm, "frontend", "whyWatch")
-    || nestedScalar(fm, "frontend", "interpretation")
-    || scalar(fm, "why_selected")
-    || headingSection(text, "为什么值得看")
-    || headingSection(text, "观澜解读")
-    || eventLine;
-  const summary = translatedFact || (isMechanicalFrontstageText(rawSummary) ? eventLine : rawSummary);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl);
   if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
+  const sourceFact = translatedFact || originalHighlights.find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item)) || "";
+  const sourceExcerpt = buildSourceExcerpt(raw, originalHighlights);
+  const sourceValue = sourceValueFromEvidence(category, originalHighlights, rawDisplayTitle);
 
   const sourceLinks = [
     ...nestedList(fm, "frontend", "sourceLinks"),
@@ -858,24 +924,15 @@ function cardFromFile(file, category) {
     tags,
     flatTags: allTags(tags),
     displayTags: displayTags(tags),
-    summary: short(summary, 260),
-    eventLine: short(eventLine || summary, 220),
-    translatedFact,
+    summary: short(sourceValue || sourceFact, 260),
+    translatedFact: short(sourceFact, 320),
     originalHighlights: originalHighlights.length
       ? originalHighlights
       : [
         nestedScalar(fm, "frontend", "originalQuote"),
         headingSection(text, "发生了什么"),
       ].filter((item) => item && !isMechanicalFrontstageText(item)).map((item) => short(item, 260)).slice(0, 3),
-    visibleFragment: publicVisibleFragment(raw.visibleFragment) || originalHighlights.find((item) => item !== translatedFact) || "",
-    keyExcerpts: originalHighlights,
-    rawRefs: arrayValue(fm, "raw_refs"),
-    poolRefs,
-    cardPath: rel(file),
-    rawRef,
-    rawTitle,
-    rawArchive,
-    rawJson,
+    visibleFragment: sourceExcerpt || "",
     sourceLinks: [...new Set(sourceLinks)],
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
@@ -904,15 +961,14 @@ function trendAssetFromFile(file) {
   if (type !== "trend_candidate" && type !== "trend_card") return null;
 
   const rawTitle = scalar(fm, "title") || path.basename(file, ".md");
-  const frontendWhy = nestedScalar(fm, "frontend", "whyForming");
-  const relationSummary = nestedScalar(fm, "frontend", "relationSummary");
-  const publicBoundary = nestedScalar(fm, "frontend", "publicBoundary");
   const hypothesis = scalar(fm, "trend_hypothesis")
     || headingSection(text, "趋势候选")
     || headingSection(text, "趋势判断");
+  const relationSummary = headingSection(text, "关系说明")
+    || headingSection(text, "信号链")
+    || headingSection(text, "相关材料");
   const methodChange = headingSection(text, "技术路线 / 方法变化");
   const boundary = scalar(fm, "boundary_notes")
-    || publicBoundary
     || headingSection(text, "风险边界与证据缺口");
   const nextObservation = scalar(fm, "next_observation")
     || headingSection(text, "下一步观察");
@@ -932,7 +988,6 @@ function trendAssetFromFile(file) {
     type,
     hypothesis,
     relationSummary,
-    frontendWhy,
     methodChange,
     relatedChangeCount,
     sourceTypeCount,
@@ -942,13 +997,12 @@ function trendAssetFromFile(file) {
     id: scalar(fm, "id") || path.basename(file, ".md"),
     type,
     title: frontTitle,
-    rawTitle,
     date: scalar(fm, "date"),
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
     trendStatus: scalar(fm, "trend_status"),
     stageLabel: type === "trend_candidate" ? "正在形成" : gate === "threshold_passed" ? "证据较强" : "继续观察",
-    hypothesis: short(frontendWhy || frontDescription || hypothesis, 360),
+    hypothesis: short(frontDescription || hypothesis || relationSummary, 360),
     relationSummary: short(frontDescription || relationSummary || hypothesis, 300),
     boundary: short(boundary, 280),
     nextObservation: short(nextObservation, 260),
@@ -957,7 +1011,6 @@ function trendAssetFromFile(file) {
     relatedOpinions: [...new Set(relatedOpinions)].filter(Boolean),
     tags,
     displayTags: displayTags(tags),
-    assetPath: rel(file),
   };
 }
 
@@ -979,7 +1032,6 @@ function trendFrontstageDescription({
   type,
   hypothesis,
   relationSummary,
-  frontendWhy,
   methodChange,
   relatedChangeCount,
   sourceTypeCount,
@@ -993,7 +1045,6 @@ function trendFrontstageDescription({
   if (/专业服务 AI 开始进入交付流程/u.test(title)) {
     return "这个趋势指向专业服务 AI 从内容辅助进入真实交付流程。具体表现是：Agent 的执行范围、网络访问、密钥、日志和停机边界开始被产品化，企业采购时会追问它能做什么、不能做什么、出错后如何停。当前仍需要更多客户案例和付费数据。";
   }
-  if (frontendWhy) return frontendWhy;
   if (relationSummary && !/还处在候选阶段|当前材料来自/u.test(relationSummary)) return relationSummary;
   if (methodChange) return methodChange.replace(/\s+/gu, " ").trim();
   if (hypothesis && !/还处在候选阶段|当前材料来自/u.test(hypothesis)) return hypothesis;
@@ -1195,6 +1246,31 @@ function cardMatchesSpec(card, spec) {
   return allMatched && anyMatched && categoryMatched && titleMatched;
 }
 
+function cardSourceFact(card) {
+  return short(
+    card.translatedFact
+      || (card.originalHighlights || []).find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item))
+      || card.summary
+      || card.title,
+    180
+  );
+}
+
+function relationshipSummaryFromCards(spec, items, displayDate) {
+  const subjects = countItems(items, (card) => {
+    if (card.subject === "未标注主体" || isWeakSubject(card.subject)) return "";
+    return card.subject;
+  }).slice(0, 3).map((item) => item.label);
+  const facts = items
+    .map(cardSourceFact)
+    .filter(Boolean)
+    .slice(0, 2);
+  const subjectText = subjects.length ? `主体包括 ${subjects.join("、")}。` : "";
+  const factText = facts.length ? `支撑事实：${facts.join("；")}。` : "";
+  const relationText = spec.detailFocus.replace(/^内在关联：/u, "");
+  return `${displayDate} 当日命中 ${items.length} 张相关 Card。${subjectText}${relationText}${factText}`;
+}
+
 function buildRelationshipDirections(cards, activeDate) {
   const todayCards = cards.filter((card) => card.date === activeDate);
   const last7Cards = windowCards(cards, activeDate, 7);
@@ -1214,13 +1290,9 @@ function buildRelationshipDirections(cards, activeDate) {
           .replaceAll("{count}", String(todayItems.length)),
         direction: spec.direction,
         relation: spec.relation,
-        summary: spec.summary
-          .replaceAll("{date}", displayDate)
-          .replaceAll("{count}", String(todayItems.length)),
+        summary: relationshipSummaryFromCards(spec, todayItems, displayDate),
         evidenceMeta: `${displayDate} · 当日 ${todayItems.length} 张 · 近 7 天 ${last7Items.length} 张`,
-        detailFocus: spec.detailFocus
-          .replaceAll("{date}", displayDate)
-          .replaceAll("{count}", String(todayItems.length)),
+        detailFocus: relationshipSummaryFromCards(spec, todayItems, displayDate),
         todayCount: todayItems.length,
         last7Count: last7Items.length,
         last30Count: last30Items.length,

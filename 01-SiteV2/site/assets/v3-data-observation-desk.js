@@ -106,7 +106,6 @@
     const candidates = [
       card.translatedFact,
       ...(card.originalHighlights || []),
-      card.eventLine,
       card.visibleFragment,
       card.summary,
     ].map(cleanJudgmentText).filter((item) => !isWeakFact(item));
@@ -114,7 +113,7 @@
   }
 
   function valueText(card) {
-    const text = cleanJudgmentText(card.summary || card.eventLine || "");
+    const text = cleanJudgmentText(card.summary || "");
     if (!text || isWeakFact(text)) return "这条材料可用于补充当日 AI 商业变化的来源和背景。";
     return compactText(text, 220);
   }
@@ -134,16 +133,11 @@
     const root = $("[data-relationship-overview]");
     if (!root) return;
     const date = selectedDate();
-    const relationships = state.payload.relationshipDirections || [];
     const stats = state.payload.categories.map((item) => {
-      const categoryCards = cardsOnDate(date).filter((card) => card.category === item.category);
       const last7 = countLast7ByCategory(date, item.category);
       const prev7 = countWindowByCategory(date, item.category, 7, 13);
       const last30 = countWindowByCategory(date, item.category, 0, 29);
       const growth = last7 - prev7;
-      const relationMatches = relationships
-        .filter((relationship) => (relationship.categories || []).some((category) => category.label === item.label))
-        .slice(0, 2);
       return {
         ...item,
         today: countByDateAndCategory(date, item.category),
@@ -151,27 +145,21 @@
         last30,
         prev7,
         growth,
-        topTags: topDisplayTags(categoryCards, 3),
-        relationMatches,
       };
     });
     root.innerHTML = stats.map((item) => `
       <article class="relation-stat-card">
         <div class="relation-stat-head">
           <h3>${safe(item.label)}</h3>
-          <span>${safe(growthLabel(item.growth))}</span>
+          <span class="category-delta ${safe(growthClass(item.growth))}" aria-label="${safe(growthLabel(item.growth))}">
+            ${safe(growthIcon(item.growth))}${safe(Math.abs(item.growth))}
+          </span>
         </div>
-        <div class="relation-stat-line">
-          <div><span>当日</span><strong>${safe(item.today)}</strong></div>
-          <div><span>近 7 天</span><strong>${safe(item.last7)}</strong></div>
-          <div><span>近 30 天</span><strong>${safe(item.last30)}</strong></div>
+        <div class="relation-stat-line" aria-label="${safe(item.label)}统计">
+          <span title="当日">●<b>${safe(item.today)}</b></span>
+          <span title="近 7 天">⑦<b>${safe(item.last7)}</b></span>
+          <span title="近 30 天">30<b>${safe(item.last30)}</b></span>
         </div>
-        <p>${safe(categoryGrowthSentence(item))}</p>
-        ${item.relationMatches.length ? `
-          <div class="relation-graph-links">
-            ${item.relationMatches.map((relationship) => `<span>${safe(item.label)} → ${safe(relationship.direction)}</span>`).join("")}
-          </div>
-        ` : ""}
       </article>
     `).join("");
     const summary = $("[data-day-summary]");
@@ -180,32 +168,22 @@
     }
   }
 
+  function growthClass(value) {
+    if (value > 0) return "is-up";
+    if (value < 0) return "is-down";
+    return "is-flat";
+  }
+
+  function growthIcon(value) {
+    if (value > 0) return "↑";
+    if (value < 0) return "↓";
+    return "→";
+  }
+
   function growthLabel(value) {
     if (value > 0) return `近 7 天 +${value}`;
     if (value < 0) return `近 7 天 ${value}`;
     return "近 7 天持平";
-  }
-
-  function categoryGrowthSentence(item) {
-    const direction = item.growth > 0 ? "高于" : item.growth < 0 ? "低于" : "接近";
-    const relation = item.relationMatches[0]?.direction;
-    const relationText = relation ? `，主要连接到「${relation}」关系方向` : "";
-    return `${item.label}当日 ${item.today} 张，近 7 天 ${item.last7} 张，${direction}上一周同窗口${relationText}。`;
-  }
-
-  function topDisplayTags(cards, limit = 3) {
-    const counts = new Map();
-    for (const card of cards) {
-      for (const tag of card.displayTags || []) {
-        const label = tag.label || tag.name || tag.id;
-        if (!label) continue;
-        counts.set(label, (counts.get(label) || 0) + 1);
-      }
-    }
-    return [...counts.entries()]
-      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-      .slice(0, limit)
-      .map(([label, count]) => ({ label, count }));
   }
 
   function renderTabs() {
@@ -567,10 +545,6 @@
     const fact = factText(card);
     const value = valueText(card);
     const highlights = (card.originalHighlights || []).map(cleanJudgmentText).filter((item) => hasCjk(item) && item !== fact && !isWeakFact(item)).slice(0, 8);
-    const highlightSet = new Set(highlights);
-    const excerpts = (card.keyExcerpts || []).map(cleanJudgmentText)
-      .filter((item) => hasCjk(item) && item !== fact && !highlightSet.has(item))
-      .slice(0, 3);
     const sourceLinks = card.sourceLinks || [];
     root.innerHTML = `
       <h2 class="detail-title">${safe(card.title)}</h2>
@@ -599,12 +573,6 @@
         <h3>可见原文片段</h3>
         <p>${safe(card.visibleFragment || "该 Card 暂缺完整证据链，请回到原始资产文件复核。")}</p>
       </div>
-      ${excerpts.length ? `
-        <div class="detail-block">
-          <h3>关键原文摘录</h3>
-          <ul>${excerpts.map((item) => `<li>${safe(item)}</li>`).join("")}</ul>
-        </div>
-      ` : ""}
       <details class="detail-aux">
         <summary>辅助信息</summary>
         <div class="detail-tags">${tagPills(card.displayTags || card.flatTags, 12)}</div>

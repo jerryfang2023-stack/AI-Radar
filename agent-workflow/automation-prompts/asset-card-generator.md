@@ -126,6 +126,9 @@ node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date=<YYYY-MM-DD>
 - 能归入 `product_service` / `funding` / `case` 之一。
 - 能写清主体、动作、场景、商业变量和证据缺口。
 - 不能把合作、采购、定价、风险等写成主类型。
+- 前台内容只保留新闻事实、原文要点、简要价值描述、可见原文片段和必要证据边界；这些字段必须回到 Raw `full_text`、Raw `key_excerpts`、Pool `evidence_seed` 或补证来源生成。
+- 不得用 `event`、`why_selected`、`business_meaning`、`watch_reason`、标签解释、`business_elements` 或旧前台摘要作为新 Card、趋势和关系文案的来源。
+- `business_elements`、门禁状态、Raw / Pool 路径和抓取诊断只作为后台字段，不得写成读者可见内容。
 
 ### 前沿观点卡
 
