@@ -254,7 +254,7 @@ function rawPoolTopics(content, date) {
   return items
     .filter((item) => item.title && !seen.has(item.title) && seen.add(item.title))
     .sort((a, b) => b.score - a.score)
-    .slice(0, 5)
+    .slice(0, 8)
     .map((item, index) => toTopic("raw_pool_pitch", item, index, date));
 }
 
@@ -485,7 +485,7 @@ async function fetchIndustryChain(date) {
   const newsApi = await fetchNewsApi(date);
   results.push(...newsApi);
 
-  return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 5).map((item, index) => toTopic("industry_chain", item, index, date));
+  return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 8).map((item, index) => toTopic("industry_chain", item, index, date));
 }
 
 async function fetchBuilders(date) {
@@ -746,6 +746,92 @@ function mergeViewpoints(builders, viralRewrite) {
   });
 }
 
+/**
+ * 识别事件所属的公司/组织簇，用于多样性过滤。
+ */
+function companyCluster(item) {
+  const url = text(item.url || '');
+  const source = text(item.source || item.subSource || '');
+  const title = text(item.title || '');
+
+  // 标题中提到的公司名（用于 URL 不直接反映公司归属的情况）
+  if (/\banthropic\b/i.test(title) && !/hacker news/i.test(source)) return 'Anthropic';
+  if (/\b(openai|chatgpt|gpt-?5)\b/i.test(title)) return 'OpenAI';
+  if (/\b(claude\b.*\bcode|claude code)\b/i.test(title)) return 'Anthropic';
+
+  // 按 URL/来源 判断
+  if (/anthropic\.com/i.test(url) || /anthropic/i.test(source)) return 'Anthropic';
+  if (/openai\.com/i.test(url) || /openai/i.test(source)) return 'OpenAI';
+  if (/(research|blog|deepmind)\.?google/i.test(url) || /google ai|deepmind/i.test(source)) return 'Google';
+  if (/ai\.meta\.com/i.test(url) || /meta ai/i.test(source)) return 'Meta';
+  if (/nvidia/i.test(url) || /nvidia/i.test(source) || /nvidia/i.test(title)) return 'NVIDIA';
+  if (/microsoft/i.test(url) || /microsoft/i.test(source)) return 'Microsoft';
+  if (/amazon|aws/i.test(url) || /amazon|aws/i.test(source)) return 'Amazon';
+  if (/techcrunch|reuters|bloomberg|wired|theverge|arstechnica/i.test(url)) return 'Media';
+
+  // 社区/开源/研究 — 这些是多样性来源，不合并
+  if (/news\.ycombinator/i.test(url) || /hacker news/i.test(source)) return 'Community';
+  if (/github/i.test(url) || /github/i.test(source)) return 'OpenSource';
+  if (/arxiv/i.test(url) || /arxiv/i.test(source)) return 'Research';
+  if (/follow builders/i.test(source)) return 'Builder';
+  if (/newsapi/i.test(source)) return 'News';
+
+  return 'Other';
+}
+
+/**
+ * 多样性过滤：选出最多10条事件。
+ * 规则：
+ *   1. 同一公司簇最多 maxPerCluster 条
+ *   2. 预留 diversityQuota 个名额给非大厂簇（Community/OpenSource/Research/News/Media/Other/Builder）
+ *   3. 按评分降序填充
+ */
+function diversifyEvents(candidates, maxPerCluster = 2, diversityQuota = 3) {
+  const BIG_TECH = new Set(['Anthropic', 'OpenAI', 'Google', 'Meta', 'NVIDIA', 'Microsoft', 'Amazon']);
+
+  // 分组：非大厂 vs 大厂
+  const nonBigTech = [];
+  const bigTech = [];
+  for (const item of candidates) {
+    if (BIG_TECH.has(companyCluster(item))) {
+      bigTech.push(item);
+    } else {
+      nonBigTech.push(item);
+    }
+  }
+
+  // 排序
+  nonBigTech.sort((a, b) => b.score - a.score);
+  bigTech.sort((a, b) => b.score - a.score);
+
+  const result = [];
+  const clusterCount = {};
+
+  // 阶段1：从非大厂中取最多 diversityQuota 条（确保多样性）
+  for (const item of nonBigTech) {
+    const cluster = companyCluster(item);
+    if ((clusterCount[cluster] || 0) >= maxPerCluster) continue;
+    clusterCount[cluster] = (clusterCount[cluster] || 0) + 1;
+    result.push(item);
+    if (result.length >= diversityQuota) break;
+  }
+
+  // 阶段2：从所有候选中填充剩余名额（按评分降序，遵守簇上限）
+  const selected = new Set(result.map((item) => item.id));
+  const remaining = [...nonBigTech.filter((item) => !selected.has(item.id)), ...bigTech]
+    .sort((a, b) => b.score - a.score);
+
+  for (const item of remaining) {
+    if (result.length >= 10) break;
+    const cluster = companyCluster(item);
+    if ((clusterCount[cluster] || 0) >= maxPerCluster) continue;
+    clusterCount[cluster] = (clusterCount[cluster] || 0) + 1;
+    result.push(item);
+  }
+
+  return result;
+}
+
 async function buildTopics(content, date, previousKeys) {
   let [rawPool, industryChain, builders, viralRewrite] = await Promise.all([
     Promise.resolve(rawPoolTopics(content, date)),
@@ -779,6 +865,9 @@ async function main() {
   const { sources, topics, rawPool, industryChain, builders, viralRewrite } = await buildTopics(siteContent, date, previousKeys);
   const counts = Object.fromEntries(sources.map((source) => [source.id, topics.filter((topic) => topic.sourceId === source.id).length]));
   const viewpoints = mergeViewpoints(builders, viralRewrite);
+  // 公司多样性过滤：同一公司簇最多2条
+  const allEventCandidates = [...rawPool, ...industryChain];
+  const diversifiedEvents = diversifyEvents(allEventCandidates, 2);
   const data = {
     meta: {
       version: topicCenterVersion,
@@ -792,7 +881,7 @@ async function main() {
     sources,
     topics,
     grouped: {
-      events: [...rawPool, ...industryChain],
+      events: diversifiedEvents,
       viewpoints,
     },
   };
