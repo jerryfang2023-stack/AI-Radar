@@ -197,6 +197,20 @@ agent-workflow/reports/
 - `fallback_used`
 - `evidence_gaps`
 
+## V3.1.1 下游回源交接
+
+本任务不生成前台卡片，但必须为下游 Card、观点、趋势和关系模块保留可回源材料。
+
+Raw / Pool 必须保留：
+
+- Raw `full_text` / `clean_text`。
+- Raw `key_excerpts`。
+- Raw / Pool `evidence_seed`。
+- `source_url` / `original_url` / `published_at` / `source_name`。
+- `missing_information` 和必要证据边界。
+
+不得让下游前台内容依赖 AI HOT 摘要、搜索摘要、`business_elements`、标签解释、`why_selected`、`business_meaning`、`watch_reason` 或其它二次概括字段。如果原文、关键摘录或证据种子缺失，监测阶段应降级或标记缺口，不要把缺口留给资产链用文案补齐。
+
 ## 放行
 
 脚本预闸门不是最终放行。

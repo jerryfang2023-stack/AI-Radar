@@ -77,7 +77,7 @@ function main() {
     cardcopy_gate: outcome("cardcopy"),
     pool_to_card_dedupe_gate: outcome("pool-to-card-dedupe"),
     site_data_sync: outcome("site-data"),
-    publiccopy_gate: outcome("publiccopy"),
+    source_first_frontstage_gate: outcome("source-first-frontstage"),
     frontstage_regression_gate: outcome("frontstage-regression"),
     pre_commit_gate: outcome("pre-commit-gate"),
     commit: outcome("commit"),

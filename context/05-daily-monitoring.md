@@ -228,6 +228,8 @@ Duplicate provider hits are merged before Raw selection. The kept record should 
 
 Pool-to-Card rule: once a fact item is eligible `core_pool` with `raw_qc_decision=allow`, it should generate a frontstage business signal card by default. `important_viewpoint_or_article` must go through the opinion-card path instead of being auto-converted into a fact signal. Do not use a separate daily card cap after fact `core_pool`; if a fact result should not appear publicly, fix the Raw-to-Pool routing instead of silently dropping it in card generation.
 
+V3.1.1 downstream handoff rule: Raw / Pool must preserve enough source material for Card, opinion, trend and relationship modules to go back to the original source. Keep Raw `full_text` / `clean_text`, Raw `key_excerpts`, Raw or Pool `evidence_seed`, source URL, source name, publish date, and `missing_information`. Do not let downstream frontstage fields depend on AI HOT summaries, search snippets, `business_elements`, tag explanations, `why_selected`, `business_meaning`, `watch_reason` or other generated summaries. If original text, key excerpts or evidence seed are missing, downgrade or mark the gap in monitoring instead of leaving the asset chain to fill it with copy.
+
 ## 12. Lane Volume Backfill Rule
 
 Six-lane Raw volume guardrail:
