@@ -304,7 +304,7 @@ function rawPoolTopics(content, date) {
   return items
     .filter((item) => item.title && !seen.has(item.title) && seen.add(item.title))
     .sort((a, b) => b.score - a.score)
-    .slice(0, 8)
+    .slice(0, 12)
     .map((item, index) => toTopic("raw_pool_pitch", item, index, date));
 }
 
@@ -577,7 +577,7 @@ async function fetchIndustryChain(date) {
   const newsApi = await fetchNewsApi(date);
   results.push(...newsApi);
 
-  return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 8).map((item, index) => toTopic("industry_chain", item, index, date));
+  return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 12).map((item, index) => toTopic("industry_chain", item, index, date));
 }
 
 async function fetchBuilders(date) {
@@ -872,34 +872,55 @@ function companyCluster(item) {
 }
 
 /**
- * 多样性过滤：选出最多10条事件。
+ * 多样性过滤+大厂合并：选出恰好10条事件。
  * 规则：
- *   1. 同一公司簇最多 maxPerCluster 条
- *   2. 预留 diversityQuota 个名额给非大厂簇（Community/OpenSource/Research/News/Media/Other/Builder）
- *   3. 按评分降序填充
+ *   1. 大厂（Anthropic/Google/OpenAI/Meta/NVIDIA/Microsoft/Amazon）最多1条，多条则合并标题+摘要
+ *   2. 非大厂簇最多 maxPerCluster 条
+ *   3. 预留 diversityQuota 个名额给非大厂簇
+ *   4. 优先选取含行业应用/融资/创业的内容
  */
-function diversifyEvents(candidates, maxPerCluster = 2, diversityQuota = 3) {
+function diversifyEvents(candidates, maxPerCluster = 2, diversityQuota = 4) {
   const BIG_TECH = new Set(['Anthropic', 'OpenAI', 'Google', 'Meta', 'NVIDIA', 'Microsoft', 'Amazon']);
 
-  // 分组：非大厂 vs 大厂
-  const nonBigTech = [];
-  const bigTech = [];
+  // 1. 按簇分组，大厂合并
+  const clusters = {};
   for (const item of candidates) {
-    if (BIG_TECH.has(companyCluster(item))) {
-      bigTech.push(item);
+    const c = companyCluster(item);
+    if (!clusters[c]) clusters[c] = [];
+    clusters[c].push(item);
+  }
+
+  const merged = [];
+  for (const [cluster, items] of Object.entries(clusters)) {
+    items.sort((a, b) => b.score - a.score);
+    if (BIG_TECH.has(cluster) && items.length > 1) {
+      // 合并：标题用" / "连接，取最高分项的 core/originalSummary
+      const primary = items[0];
+      const mergedTitle = items.map((item) => {
+        const t = item.title.split(/[：:]/u).pop() || item.title;
+        return t;
+      }).join(' / ');
+      merged.push({
+        ...primary,
+        id: primary.id + '-merged',
+        title: cluster + '：' + mergedTitle,
+        mergedCount: items.length,
+      });
     } else {
-      nonBigTech.push(item);
+      merged.push(...items);
     }
   }
 
-  // 排序
-  nonBigTech.sort((a, b) => b.score - a.score);
-  bigTech.sort((a, b) => b.score - a.score);
+  // 2. 分大厂/非大厂排序
+  const nonBigTech = merged.filter((item) => !BIG_TECH.has(companyCluster(item)))
+    .sort((a, b) => b.score - a.score);
+  const bigTech = merged.filter((item) => BIG_TECH.has(companyCluster(item)))
+    .sort((a, b) => b.score - a.score);
 
   const result = [];
   const clusterCount = {};
 
-  // 阶段1：从非大厂中取最多 diversityQuota 条（确保多样性）
+  // 3. 阶段1：非大厂配额
   for (const item of nonBigTech) {
     const cluster = companyCluster(item);
     if ((clusterCount[cluster] || 0) >= maxPerCluster) continue;
@@ -908,17 +929,26 @@ function diversifyEvents(candidates, maxPerCluster = 2, diversityQuota = 3) {
     if (result.length >= diversityQuota) break;
   }
 
-  // 阶段2：从所有候选中填充剩余名额（按评分降序，遵守簇上限）
-  const selected = new Set(result.map((item) => item.id));
-  const remaining = [...nonBigTech.filter((item) => !selected.has(item.id)), ...bigTech]
-    .sort((a, b) => b.score - a.score);
-
-  for (const item of remaining) {
+  // 4. 阶段2：大厂（每簇最多1条）
+  for (const item of bigTech) {
     if (result.length >= 10) break;
     const cluster = companyCluster(item);
-    if ((clusterCount[cluster] || 0) >= maxPerCluster) continue;
+    if ((clusterCount[cluster] || 0) >= 1) continue;
     clusterCount[cluster] = (clusterCount[cluster] || 0) + 1;
     result.push(item);
+  }
+
+  // 5. 阶段3：从剩余非大厂填充到10条
+  if (result.length < 10) {
+    const used = new Set(result.map((item) => item.id));
+    for (const item of nonBigTech) {
+      if (used.has(item.id)) continue;
+      const cluster = companyCluster(item);
+      if ((clusterCount[cluster] || 0) >= maxPerCluster) continue;
+      clusterCount[cluster] = (clusterCount[cluster] || 0) + 1;
+      result.push(item);
+      if (result.length >= 10) break;
+    }
   }
 
   return result;
