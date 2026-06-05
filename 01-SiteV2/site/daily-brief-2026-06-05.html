@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>观澜日报</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&family=Noto+Serif+SC:wght@600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    background: #fffdf8;
+    background-image:
+      linear-gradient(rgba(200,167,102,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,167,102,.03) 1px, transparent 1px);
+    background-size: 24px 24px, 24px 24px;
+  }
+  body {
+    width: 100%; max-width: 860px; margin: 0 auto;
+    background: transparent;
+    font-family: 'Noto Sans SC', -apple-system, sans-serif;
+    padding: 20px; color: #071827;
+  }
+  .container { padding: 32px 28px; }
+  .header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 16px; border-bottom: 2px solid rgba(200,167,102,.35); margin-bottom: 24px;
+  }
+  .brand { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; color: #0d355c; letter-spacing: .03em; line-height: 1; }
+  .brand small { display: block; font-size: 9px; letter-spacing: .28em; color: #c8a766; font-weight: 600; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 12px; }
+  .date-picker select {
+    font-family: 'IBM Plex Mono', monospace; font-size: 13px;
+    padding: 6px 10px; border: 1px solid rgba(200,167,102,.4);
+    border-radius: 6px; background: #fff; color: #071827;
+    outline: none; cursor: pointer;
+  }
+  .date-picker select:focus { border-color: #c8a766; }
+  .section { margin-top: 28px; }
+  .section-head { font-size: 16px; font-weight: 700; color: #071827; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .section-head .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: #0d355c; color: #fff; font-size: 12px; font-weight: 700;
+  }
+  .event { margin-bottom: 12px; }
+  .event-row { display: flex; gap: 10px; }
+  .event-rank {
+    flex-shrink: 0; width: 28px; height: 28px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; color: #fff;
+  }
+  .event-rank.s { background: #9a4832; }
+  .event-rank.a { background: #6b4f32; }
+  .event-rank.b { background: #5a6b4a; }
+  .event-rank.c { background: #5a6b7a; }
+  .event-body { flex: 1; min-width: 0; }
+  .event-title { font-size: 15px; font-weight: 600; color: #071827; line-height: 1.4; }
+  .event-title .score {
+    display: inline-block; font-size: 10px; font-weight: 700;
+    background: rgba(7,24,39,.08); color: rgba(7,24,39,.6);
+    padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle;
+  }
+  .event-title .score.top { background: #9a4832; color: #fff; }
+  .event-title .merged {
+    display: inline-block; font-size: 9px; font-weight: 600;
+    background: rgba(107,79,50,.12); color: #6b4f32;
+    padding: 1px 5px; border-radius: 3px; margin-left: 4px; vertical-align: middle;
+  }
+  .event-core { font-size: 13px; color: rgba(7,24,39,.65); margin-top: 3px; line-height: 1.45; }
+  .event-url { font-size: 12px; margin-top: 2px; }
+  .event-url a { color: #6b4f32; text-decoration: none; border-bottom: 1px solid rgba(107,79,50,.3); }
+  .event-url a:hover { border-bottom-color: #6b4f32; }
+  .people-grid { display: flex; gap: 14px; flex-wrap: wrap; }
+  .person-card {
+    flex: 1; min-width: 200px; background: rgba(200,167,102,.08);
+    border-radius: 10px; padding: 14px; border: 1px solid rgba(200,167,102,.2);
+  }
+  .person-name { font-size: 14px; font-weight: 700; color: #0d355c; }
+  .person-topic { font-size: 12px; color: rgba(7,24,39,.65); margin-top: 6px; line-height: 1.45; }
+  .person-url { font-size: 11px; margin-top: 4px; }
+  .person-url a { color: #6b4f32; text-decoration: none; }
+  .person-url a:hover { text-decoration: underline; }
+  .signal-row { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
+  .signal-tag {
+    flex-shrink: 0; font-size: 11px; font-weight: 700; padding: 2px 8px;
+    border-radius: 4px; color: #fff; white-space: nowrap;
+  }
+  .signal-tag.platform { background: #0d355c; }
+  .signal-tag.adoption { background: #5a7a5a; }
+  .signal-tag.sentiment { background: #7a5a7a; }
+  .signal-text { font-size: 13px; color: rgba(7,24,39,.6); line-height: 1.45; }
+  .paper-card {
+    background: rgba(13,53,92,.04); border-radius: 10px; padding: 16px;
+    border: 1px solid rgba(13,53,92,.12);
+  }
+  .paper-title { font-size: 14px; font-weight: 700; color: #0d355c; line-height: 1.4; }
+  .paper-authors { font-size: 11px; color: rgba(7,24,39,.45); margin-top: 4px; }
+  .paper-summary { font-size: 12px; color: rgba(7,24,39,.65); margin-top: 8px; line-height: 1.5; }
+  .paper-url { font-size: 12px; margin-top: 6px; }
+  .paper-url a { color: #6b4f32; text-decoration: none; border-bottom: 1px solid rgba(107,79,50,.3); }
+  .footer {
+    margin-top: 28px; padding-top: 12px; border-top: 1px solid rgba(200,167,102,.2);
+    font-size: 11px; color: rgba(7,24,39,.35); text-align: center;
+  }
+  a { color: #6b4f32; }
+  @media (max-width: 600px) {
+    .container { padding: 16px; }
+    .header { align-items: start; gap: 0; }
+    .brand { font-size: 17px; flex-shrink: 0; }
+    .brand small { display: inline; font-size: 7px; letter-spacing: .18em; margin-top: 0; margin-left: 4px; }
+    .header-right { flex-shrink: 0; }
+    .date-picker select { font-size: 11px; padding: 4px 6px; }
+    .people-grid { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+  <div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
+  <div class="header-right">
+    <div class="date-picker">
+      <select id="date-picker" onchange="if(this.value) window.location.href=this.value;">
+<option value="daily-brief-2026-06-05.html" selected>2026-06-05</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="section"><div class="section-head"><span class="badge">1</span> 今日 10 件大事</div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank s">1</div>
+    <div class="event-body">
+      <div class="event-title">Anthropic：AI 的"验货时刻"——Anthropic 一边递交 IPO、一边披露 80% 代码由 AI 写 / Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑 / Anthropic 报告递归式自我改进进展 / Claude Code v2.1.163 发布 /  Inside the team building reliable AI systems<span class="score top">S96</span><span class="merged">5条合并</span></div>
+      <div class="event-core">AI 从能力试点进入交付运营阶段</div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank a">2</div>
+    <div class="event-body">
+      <div class="event-title">NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体<span class="score">A88</span></div>
+      <div class="event-core">NVIDIA 发布 Nemotron 3 Ultra，总参数量 550B（活跃参数 55B）的开源混合专家（MoE）模型，采用 Mamba-Transformer 混合架构，专为长时间运行的 AI 智能体设计。该模型支持 1M token 上下文窗口，推理吞吐量比同等准确率的开源大语言模型最高提升约 6 倍。权重、训练</div>
+<div class="event-url">🔗 <a href="https://www.marktechpost.com/2026/06/04/nvidia-ai-releases-nemotron-3-ultra-an-open-550b-mixture-of-experts-hybrid-mamba-transformer-for-long-running-agents" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank a">3</div>
+    <div class="event-body">
+      <div class="event-title">Google：Google Research 发布被动心率监测系统 PHRM /  Welcome to the agentic Gemini era / Explore our next generation AI systems<span class="score">A87</span><span class="merged">3条合并</span></div>
+      <div class="event-core">Google Research 开发了一种被动心率监测系统（PHRM），利用智能手机前置摄像头在日常使用中（人脸解锁后数秒内）捕捉面部视频，通过深度学习估算心率，平均绝对百分比误差（MAPE）低于10%（对比心电图金标准），满足各肤色人群的行业精度标准。系统将全天心率测量整合为每日静息心率（RHR），平均绝对误差（MA</div>
+<div class="event-url">🔗 <a href="https://research.google/blog/towards-passive-heart-health-monitoring-via-smartphone-camera" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank a">4</div>
+    <div class="event-body">
+      <div class="event-title">57 early stage AI startups 融资，做地产和建筑设计工作流<span class="score">A86</span></div>
+      <div class="event-core">这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://www.linkedin.com/posts/chintanzalani_57-early-stage-ai-startups-raised-316m-in-activity-7434321064035319809-BOrh" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank b">5</div>
+    <div class="event-body">
+      <div class="event-title">Advanced Voice AI Platforms 2026 Market Insights™ - Avasant<span class="score">B85</span></div>
+      <div class="event-core">这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://avasant.com/report/advanced-voice-ai-platforms-2026-market-insights/" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank b">6</div>
+    <div class="event-body">
+      <div class="event-title">AI 发布 AI 能力，指向销售和收入团队流程<span class="score">B84</span></div>
+      <div class="event-core">这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://github.com/enterprise" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank b">7</div>
+    <div class="event-body">
+      <div class="event-title">Amazon 把 AI 用进销售和收入团队流程<span class="score">B84</span></div>
+      <div class="event-core">这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。</div>
+<div class="event-url">🔗 <a href="https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank b">8</div>
+    <div class="event-body">
+      <div class="event-title">Anthropic 开源 AI 驱动漏洞发现框架<span class="score">B81</span></div>
+      <div class="event-core">Anthropic 开源 AI 驱动漏洞发现框架</div>
+<div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48403980" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank b">9</div>
+    <div class="event-body">
+      <div class="event-title">Meta enables ADB on deprecated Portal devices [video]<span class="score">B80</span></div>
+      <div class="event-core">https:&#x2F;&#x2F;developers.meta.com&#x2F;horizon&#x2F;blog&#x2F;build-apps-for-port</div>
+<div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48406640" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+<div class="event">
+  <div class="event-row">
+    <div class="event-rank c">10</div>
+    <div class="event-body">
+      <div class="event-title">HANDOFF：Humanoid Agent Task-Space Whole-Body Control via Distilled Complementary Teachers<span class="score">C76</span></div>
+      <div class="event-core">For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial</div>
+<div class="event-url">🔗 <a href="http://arxiv.org/abs/2606.06493v1" target="_blank" rel="noopener">来源</a></div>
+</div></div></div>
+</div>
+<div class="section"><div class="section-head"><span class="badge">2</span> 今日推荐论文</div>
+<div class="paper-card">
+  <div class="paper-title">Open Code Review – An AI 驱动 code review CLI tool</div>
+  <div class="paper-authors">Alibaba, Hacker News</div>
+  <div class="paper-summary">Alibaba 开源的 AI 代码审查 CLI 工具，集成到开发工作流中自动检查代码质量、发现潜在 bug 和安全问题。对 vibecoding 新手来说，写完 AI 生成的代码后一键跑审查，比手动 review 高效得多。</div>
+  <div class="paper-url">📄 <a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">原文</a></div>
+</div>
+</div>
+<div class="section"><div class="section-head"><span class="badge">3</span> 趋势信号</div>
+<div class="signal-row">
+  <div class="signal-tag platform">平台格局</div>
+  <div class="signal-text">三大 AI 巨头同时加码基础设施，模型能力竞争转向 Agent 交付和企业治理能力。</div>
+</div>
+<div class="signal-row">
+  <div class="signal-tag adoption">落地节奏</div>
+  <div class="signal-text">企业 AI 从能力试点进入治理、交付和可运营阶段，评估权从 ML 团队移交给了 Infra 和 CISO。</div>
+</div>
+<div class="signal-row">
+  <div class="signal-tag sentiment">行业动态</div>
+  <div class="signal-text">开发者社区热议 AI 工具效率与安全性之间的权衡，环境隔离而非模型拒绝成为最终防线。</div>
+</div>
+</div>
+<div class="footer">观澜AI · WaveSight AI · 2026-06-05 16:56</div>
+</div>
+<script>
+/* 日期选择器 */
+(function() {
+  const dates = ["2026-06-05"];
+  const current = '2026-06-05';
+  const picker = document.querySelector('.date-picker select, .date-picker input');
+  if (!dates.length || !picker) return;
+  const go = function(date) {
+    if (date === current) return;
+    window.location.href = 'daily-brief-' + date + '.html';
+  };
+  picker.addEventListener('change', function() { go(this.value); });
+})();
+</script>
+</body>
+</html>
