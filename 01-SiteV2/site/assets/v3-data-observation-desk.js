@@ -48,9 +48,13 @@
   }
 
   function countLast7ByCategory(date, category) {
+    return countWindowByCategory(date, category, 0, 6);
+  }
+
+  function countWindowByCategory(date, category, startDay, endDay) {
     return state.payload.cards.filter((card) => {
       const diff = daysBetween(date, card.date);
-      return card.category === category && diff >= 0 && diff <= 6;
+      return card.category === category && diff >= startDay && diff <= endDay;
     }).length;
   }
 
@@ -127,36 +131,66 @@
   }
 
   function renderStats() {
-    const root = $("[data-stats]");
+    const root = $("[data-relationship-overview]");
     if (!root) return;
     const date = selectedDate();
+    const relationships = state.payload.relationshipDirections || [];
     const stats = state.payload.categories.map((item) => {
       const categoryCards = cardsOnDate(date).filter((card) => card.category === item.category);
+      const last7 = countLast7ByCategory(date, item.category);
+      const prev7 = countWindowByCategory(date, item.category, 7, 13);
+      const last30 = countWindowByCategory(date, item.category, 0, 29);
+      const growth = last7 - prev7;
+      const relationMatches = relationships
+        .filter((relationship) => (relationship.categories || []).some((category) => category.label === item.label))
+        .slice(0, 2);
       return {
         ...item,
         today: countByDateAndCategory(date, item.category),
-        last7: countLast7ByCategory(date, item.category),
+        last7,
+        last30,
+        prev7,
+        growth,
         topTags: topDisplayTags(categoryCards, 3),
+        relationMatches,
       };
     });
     root.innerHTML = stats.map((item) => `
-      <article class="stat-card">
-        <h3>${safe(item.label)}</h3>
-        <div class="stat-line">
-          <div><span>当日数量</span><strong>${safe(item.today)}</strong></div>
+      <article class="relation-stat-card">
+        <div class="relation-stat-head">
+          <h3>${safe(item.label)}</h3>
+          <span>${safe(growthLabel(item.growth))}</span>
+        </div>
+        <div class="relation-stat-line">
+          <div><span>当日</span><strong>${safe(item.today)}</strong></div>
           <div><span>近 7 天</span><strong>${safe(item.last7)}</strong></div>
+          <div><span>近 30 天</span><strong>${safe(item.last30)}</strong></div>
         </div>
-        <div class="tag-pills">
-          ${item.topTags.length
-            ? item.topTags.slice(0, 3).map((tag) => `<span>${safe(tag.label || tag.tag)} ${safe(tag.count)}</span>`).join("")
-            : "<span>当前分类下暂无足够标签分布</span>"}
-        </div>
+        <p>${safe(categoryGrowthSentence(item))}</p>
+        ${item.relationMatches.length ? `
+          <div class="relation-graph-links">
+            ${item.relationMatches.map((relationship) => `<span>${safe(item.label)} → ${safe(relationship.direction)}</span>`).join("")}
+          </div>
+        ` : ""}
       </article>
     `).join("");
     const summary = $("[data-day-summary]");
     if (summary) {
       summary.textContent = fmtDate(date);
     }
+  }
+
+  function growthLabel(value) {
+    if (value > 0) return `近 7 天 +${value}`;
+    if (value < 0) return `近 7 天 ${value}`;
+    return "近 7 天持平";
+  }
+
+  function categoryGrowthSentence(item) {
+    const direction = item.growth > 0 ? "高于" : item.growth < 0 ? "低于" : "接近";
+    const relation = item.relationMatches[0]?.direction;
+    const relationText = relation ? `，主要连接到「${relation}」关系方向` : "";
+    return `${item.label}当日 ${item.today} 张，近 7 天 ${item.last7} 张，${direction}上一周同窗口${relationText}。`;
   }
 
   function topDisplayTags(cards, limit = 3) {
@@ -532,8 +566,11 @@
     if (!root || !dialog) return;
     const fact = factText(card);
     const value = valueText(card);
-    const highlights = (card.originalHighlights || []).map(cleanJudgmentText).filter((item) => hasCjk(item) && !isWeakFact(item)).slice(0, 4);
-    const excerpts = (card.keyExcerpts || []).map(cleanJudgmentText).filter(hasCjk).slice(0, 3);
+    const highlights = (card.originalHighlights || []).map(cleanJudgmentText).filter((item) => hasCjk(item) && item !== fact && !isWeakFact(item)).slice(0, 8);
+    const highlightSet = new Set(highlights);
+    const excerpts = (card.keyExcerpts || []).map(cleanJudgmentText)
+      .filter((item) => hasCjk(item) && item !== fact && !highlightSet.has(item))
+      .slice(0, 3);
     const sourceLinks = card.sourceLinks || [];
     root.innerHTML = `
       <h2 class="detail-title">${safe(card.title)}</h2>

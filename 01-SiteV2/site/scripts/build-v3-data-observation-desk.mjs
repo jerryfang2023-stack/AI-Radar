@@ -92,6 +92,38 @@ function read(file) {
   return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
 }
 
+function resolveRawJsonPath(rawJsonRel = "", sourceUrlHint = "") {
+  const rawJson = rawJsonRel ? path.join(root, rawJsonRel) : "";
+  if (rawJson && fs.existsSync(rawJson)) return rawJson;
+  const dir = rawJson ? path.dirname(rawJson) : "";
+  if (!dir || !fs.existsSync(dir) || !sourceUrlHint) return "";
+  const target = canonicalUrl(sourceUrlHint);
+  for (const file of fs.readdirSync(dir).filter((name) => name.endsWith(".json"))) {
+    const full = path.join(dir, file);
+    try {
+      const json = JSON.parse(read(full));
+      const candidate = canonicalUrl(json.original_url || json.canonical_url || "");
+      if (candidate && candidate === target) return full;
+    } catch {
+      // Ignore malformed raw snapshots while resolving a fallback path.
+    }
+  }
+  return "";
+}
+
+function resolveRawArchivePath(rawArchiveRel = "", rawJsonPath = "") {
+  const rawArchive = rawArchiveRel ? path.join(root, rawArchiveRel) : "";
+  if (rawArchive && fs.existsSync(rawArchive)) return rawArchive;
+  if (!rawJsonPath || !fs.existsSync(rawJsonPath)) return "";
+  try {
+    const json = JSON.parse(read(rawJsonPath));
+    const snapshotPath = json.markdown_snapshot_path ? path.join(root, json.markdown_snapshot_path) : "";
+    return snapshotPath && fs.existsSync(snapshotPath) ? snapshotPath : "";
+  } catch {
+    return "";
+  }
+}
+
 function loadTagDictionary() {
   const text = read(taxonomyFile);
   const tags = new Map();
@@ -231,6 +263,28 @@ function headingSection(markdown, heading) {
     collected.push(line);
   }
   return collected.join("\n").trim();
+}
+
+function sectionByHeading(markdown = "", headingPrefix = "") {
+  const lines = String(markdown || "").split(/\r?\n/u);
+  const start = lines.findIndex((line) => line.startsWith(headingPrefix));
+  if (start < 0) return "";
+  const collected = [];
+  for (const line of lines.slice(start)) {
+    if (collected.length && line.startsWith("## ")) break;
+    collected.push(line);
+  }
+  return collected.join("\n").trim();
+}
+
+function parseJsonLine(section = "", key = "") {
+  const match = section.match(new RegExp(`^- ${key}:\\s*(.+)$`, "mu"));
+  if (!match) return null;
+  try {
+    return JSON.parse(match[1].trim());
+  } catch {
+    return null;
+  }
 }
 
 function escapeRegExp(value = "") {
@@ -489,15 +543,18 @@ function frontstageSubject(fm, sourceUrl, sourceName, rawTitle, title) {
     || "未标注主体";
 }
 
-function readRawEvidence(rawJsonRel, rawArchiveRel) {
-  const rawJson = rawJsonRel ? path.join(root, rawJsonRel) : "";
-  const rawArchive = rawArchiveRel ? path.join(root, rawArchiveRel) : "";
+function readRawEvidence(rawJsonRel, rawArchiveRel, sourceUrlHint = "") {
+  const rawJson = resolveRawJsonPath(rawJsonRel, sourceUrlHint);
+  const rawArchive = resolveRawArchivePath(rawArchiveRel, rawJson);
   let sourceName = "";
   let sourceUrl = "";
   let publishedAt = "";
   let rawTitle = "";
   let keyExcerpts = [];
   let visibleFragment = "";
+  let fullText = "";
+  let businessElements = {};
+  let evidenceSeed = {};
 
   if (rawJson && fs.existsSync(rawJson)) {
     try {
@@ -507,9 +564,15 @@ function readRawEvidence(rawJsonRel, rawArchiveRel) {
       sourceUrl = json.original_url || json.canonical_url || "";
       publishedAt = json.published_at || "";
       keyExcerpts = Array.isArray(json.key_excerpts)
-        ? json.key_excerpts.map((item) => short(item?.text || "", 220)).filter(Boolean).slice(0, 4)
+        ? json.key_excerpts.map((item) => ({
+          type: item?.type || "",
+          text: short(item?.text || "", 260),
+        })).filter((item) => item.text).slice(0, 8)
         : [];
-      visibleFragment = short(json.full_text || json.clean_text || "", 360);
+      fullText = json.full_text || json.clean_text || "";
+      visibleFragment = short(fullText, 360);
+      businessElements = json.business_elements || {};
+      evidenceSeed = json.evidence_seed || {};
     } catch {
       // Keep the card usable even if a raw snapshot is malformed.
     }
@@ -519,10 +582,48 @@ function readRawEvidence(rawJsonRel, rawArchiveRel) {
     const snapshot = read(rawArchive);
     visibleFragment = short(snapshot.replace(/^---[\s\S]*?---/u, ""), 360);
     const excerptMatch = snapshot.match(/key_excerpts:\s*(\[.*\])/u);
-    if (!keyExcerpts.length && excerptMatch) keyExcerpts = [short(excerptMatch[1], 220)];
+    if (!keyExcerpts.length && excerptMatch) keyExcerpts = [{ type: "supporting_context", text: short(excerptMatch[1], 220) }];
   }
 
-  return { sourceName, sourceUrl, publishedAt, rawTitle, keyExcerpts, visibleFragment };
+  return { sourceName, sourceUrl, publishedAt, rawTitle, keyExcerpts, visibleFragment, fullText, businessElements, evidenceSeed };
+}
+
+function readPoolEvidence(date = "", poolRef = "") {
+  if (!date || !poolRef) return null;
+  const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${date}-pool-candidates.md`);
+  if (!fs.existsSync(poolFile)) return null;
+  const section = sectionByHeading(read(poolFile), `## ${poolRef}`);
+  if (!section) return null;
+  const keyExcerptObjects = parseJsonLine(section, "key_excerpts") || [];
+  const evidenceSeed = parseJsonLine(section, "evidence_seed") || {};
+  return {
+    sourceName: "",
+    sourceUrl: "",
+    publishedAt: "",
+    rawTitle: "",
+    keyExcerpts: Array.isArray(keyExcerptObjects)
+      ? keyExcerptObjects.map((item) => ({ type: item?.type || "", text: short(item?.text || "", 260) })).filter((item) => item.text)
+      : [],
+    visibleFragment: "",
+    fullText: section,
+    businessElements: {},
+    evidenceSeed,
+  };
+}
+
+function mergeEvidence(primary, fallback) {
+  if (!fallback) return primary;
+  return {
+    sourceName: primary.sourceName || fallback.sourceName || "",
+    sourceUrl: primary.sourceUrl || fallback.sourceUrl || "",
+    publishedAt: primary.publishedAt || fallback.publishedAt || "",
+    rawTitle: primary.rawTitle || fallback.rawTitle || "",
+    keyExcerpts: primary.keyExcerpts?.length ? primary.keyExcerpts : fallback.keyExcerpts || [],
+    visibleFragment: primary.visibleFragment || fallback.visibleFragment || "",
+    fullText: primary.fullText || fallback.fullText || "",
+    businessElements: Object.keys(primary.businessElements || {}).length ? primary.businessElements : fallback.businessElements || {},
+    evidenceSeed: Object.keys(primary.evidenceSeed || {}).length ? primary.evidenceSeed : fallback.evidenceSeed || {},
+  };
 }
 
 function publicVisibleFragment(value = "") {
@@ -534,7 +635,166 @@ function publicVisibleFragment(value = "") {
 }
 
 function isMechanicalFrontstageText(value = "") {
-  return /发布 AI 能力|把 AI 用进|这条变化值得看|客户是否买单|流程结果、交付速度|团队协作有没有实际改善/u.test(String(value || ""));
+  return /发布 AI 能力|把 AI 用进|这条变化值得看|客户是否买单|流程结果、交付速度|团队协作有没有实际改善|面向销售和收入团队流程|面向地产开发和建筑设计流程|面向模型部署和算力调用|面向企业智能体协作流程/u.test(String(value || ""));
+}
+
+function procurementUseCaseHighlights(fullText = "") {
+  const text = String(fullText || "");
+  if (!/10 Use cases of AI in procurement processes/iu.test(text)) return [];
+  return [
+    "AIMultiple 列出的 10 个采购用例包括：合同管理、供应商风险管理、支出分析与分类、异常检测、自动合规、应付账款自动化、发票数据提取、采购聊天机器人、战略寻源、全球寻源。",
+    "案例数据包括：某快餐连锁用 AI 寻找替代供应商后供应网络距离减少 25%，每年节省 320 万欧元。",
+    "Pentair 用 AI 采购方案在两个月内全球上线，支出分类准确率超过 90%，带来 1500 万美元营运资本改善。",
+    "Scribd 在应付账款异常检测中用 AI 加速财务流程 60%；Landsec 的 AP 自动化案例显示人工数据采集和验证可节省最高 92% 时间。",
+    "全球寻源案例中，某 Fortune 500 油气公司把 15 套旧采购系统整合为 2 套，eSourcing 采用率提升 20%，采购 ROI 提升 15%。",
+  ];
+}
+
+function archestraHighlights(fullText = "") {
+  const text = String(fullText || "");
+  if (!/Archestra/iu.test(text)) return [];
+  const highlights = [];
+  if (/four Fortune 500 companies/iu.test(text)) highlights.push("平台已在 4 家 Fortune 500 公司生产环境使用，覆盖法务、采购、管理和运营。");
+  if (/days rather than months/iu.test(text)) highlights.push("Archestra 称企业 AI 团队可在数天而不是数月内把 Agent 接入内部数据。");
+  if (/Jira, Confluence, GitHub, Notion, SharePoint, Google Drive and Salesforce/iu.test(text)) highlights.push("连接器覆盖 Jira、Confluence、GitHub、Notion、SharePoint、Google Drive 和 Salesforce，并支持 Claude、ChatGPT、Gemini 与开源模型。");
+  if (/45 milliseconds/iu.test(text)) highlights.push("材料披露平台 95 分位延迟为 45 毫秒，并提供 Prometheus、OpenTelemetry 和 Grafana 观测。");
+  if (/900 evaluated servers/iu.test(text)) highlights.push("其私有 MCP registry 可管理、版本化和回滚可用 MCP server，公共目录含 900 多个已评估 server。");
+  if (/96%/u.test(text)) highlights.push("成本优化层可按团队、Agent 或组织跟踪花费，并声称简单查询路由到便宜模型可最多降低 96% 推理账单。");
+  if (/3,700 stars|57 contributors/iu.test(text)) highlights.push("开源核心已获得 3700+ GitHub stars 和 57 名贡献者。");
+  if (/\$13\.5 million/iu.test(text)) highlights.push("本轮后 Archestra 总融资达到 1350 万美元，2025 年 8 月曾完成 330 万美元 pre-seed。");
+  return highlights;
+}
+
+function translateKnownRawExcerpt(value = "", type = "") {
+  const text = String(value || "");
+  const rules = [
+    [/57 early stage AI startups.*\$316M/iu, "原文记录 57 家早期 AI 初创公司一周内合计融资 3.16 亿美元。"],
+    [/Claude Code v?2\.1\.163/iu, "原文记录 Claude Code v2.1.163 发布，属于工程工具链更新。"],
+    [/Governing agents in GitHub Enterprise/iu, "原文讨论 GitHub Enterprise 中的 Agent 治理，重点是企业环境里的权限、策略和安全管理。"],
+    [/Transforming procurement through intelligent technology/iu, "原文讨论采购流程如何用智能技术改造，场景集中在采购、供应商和流程自动化。"],
+    [/Nemotron 3 Ultra/iu, "原文记录 NVIDIA AI 发布 Nemotron 3 Ultra，属于面向长时间运行 Agent 的模型和基础设施材料。"],
+    [/The platform is in production at four Fortune 500 companies/iu, "平台已在 4 家 Fortune 500 公司生产环境使用，Agent 覆盖法务、采购、管理和运营。"],
+    [/wire agents to internal data in days rather than months/iu, "企业 AI 团队可在数天而不是数月内把 Agent 接入内部数据，同时降低数据外泄和 prompt-injection 风险。"],
+    [/Archestra acts as a middle layer between the agent and the data/iu, "Archestra 作为 Agent 与企业数据之间的中间层，负责身份、策略、访问代理和日志记录。"],
+    [/raised \$10 million in new funding/iu, "Archestra 获得 1000 万美元新融资，用于扩大大型企业部署和开源生态。"],
+    [/Data is crucial for procurement teams/iu, "采购团队需要外部和内部数据来跟踪支出、管理供应商关系和识别供应风险。"],
+    [/more than 60% of chief procurement officers/iu, "Deloitte 调查显示，超过 60% 的首席采购官正在使用高级分析。"],
+  ];
+  const match = rules.find(([pattern]) => pattern.test(text));
+  if (match) return match[1];
+  const numbers = meaningfulNumbers(extractNumbers(text));
+  if (numbers.length && type) return `${excerptTypeLabel(type)}：原文关键数字包括 ${numbers.slice(0, 5).join("、")}。`;
+  return "";
+}
+
+function arrayField(object, key) {
+  return Array.isArray(object?.[key]) ? object[key].map((item) => String(item || "").trim()).filter(Boolean) : [];
+}
+
+function extractNumbers(value = "") {
+  return [...String(value || "").matchAll(/(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|K|million|billion)?|\d+(?:\.\d+)?\s?(?:%|M|B|K|million|billion|stars|contributors|customers|companies|days|months|servers)|Fortune\s?\d+)/giu)]
+    .map((match) => match[0].replace(/\s+/gu, " ").trim());
+}
+
+function meaningfulNumbers(values = []) {
+  return [...new Set(values)]
+    .filter((value) => /[$€£%]|million|billion|\bM\b|\bB\b|stars|contributors|customers|companies|days|months|servers|Fortune/iu.test(value))
+    .filter((value) => !/^\d{4}$/u.test(value))
+    .filter((value) => !/^(?:19|20)\d{2}\s?[MBK]$/iu.test(value))
+    .filter((value) => !/^(?:19|20)\d{2}\s?(?:million|billion)$/iu.test(value))
+    .slice(0, 8);
+}
+
+function excerptTypeLabel(type = "") {
+  const labels = {
+    case_detail: "案例信息",
+    company_action: "公司动作",
+    funding: "融资信息",
+    workflow_change: "流程变化",
+    supporting_context: "背景信息",
+    product_launch: "产品信息",
+    viewpoint: "观点信息",
+  };
+  return labels[type] || "原文信息";
+}
+
+function genericRawCorePoints(raw) {
+  const points = [];
+  const elements = raw.businessElements || {};
+  const seed = raw.evidenceSeed || {};
+  const excerptNumbers = raw.keyExcerpts.flatMap((item) => extractNumbers(item.text));
+  const fullTextNumbers = extractNumbers(raw.fullText).slice(0, 10);
+  const numbers = meaningfulNumbers([
+    ...arrayField(elements, "numbers"),
+    ...excerptNumbers,
+    ...fullTextNumbers,
+  ]);
+  if (numbers.length) points.push(`关键数字：${numbers.slice(0, 6).join("、")}。`);
+
+  const caseDetails = [
+    ...arrayField(seed, "case_details"),
+    ...raw.keyExcerpts.filter((item) => item.type === "case_detail").map((item) => item.text),
+  ].map((item) => translateKnownRawExcerpt(item, "case_detail")).filter(Boolean);
+  points.push(...caseDetails);
+
+  const workflowClues = [
+    ...arrayField(seed, "workflow_changes"),
+    ...raw.keyExcerpts.filter((item) => item.type === "workflow_change").map((item) => item.text),
+  ].map((item) => translateKnownRawExcerpt(item, "workflow_change")).filter(Boolean);
+  points.push(...workflowClues);
+
+  const companyActions = [
+    ...arrayField(seed, "company_actions"),
+    ...raw.keyExcerpts.filter((item) => item.type === "company_action" || item.type === "funding").map((item) => item.text),
+  ].map((item) => translateKnownRawExcerpt(item, "company_action")).filter(Boolean);
+  points.push(...companyActions);
+
+  const workflows = arrayField(elements, "workflows").filter((item) => !/部署 \/ 集成交付/u.test(item)).slice(0, 4);
+  if (workflows.length) points.push(`涉及流程：${workflows.join("、")}。`);
+
+  const roles = arrayField(elements, "roles").slice(0, 4);
+  const departments = arrayField(elements, "affected_departments").slice(0, 4);
+  if (roles.length || departments.length) {
+    points.push(`涉及角色/部门：${[...roles, ...departments].slice(0, 6).join("、")}。`);
+  }
+
+  const products = arrayField(elements, "products")
+    .filter((item) => !/^(agent|agents|AI)$/iu.test(item))
+    .slice(0, 5);
+  if (products.length) points.push(`涉及产品/技术：${products.join("、")}。`);
+
+  return [...new Set(points)]
+    .filter((item) => item && !isMechanicalFrontstageText(item))
+    .slice(0, 6);
+}
+
+function buildOriginalHighlights(raw, rawDisplayTitle = "", sourceUrl = "") {
+  const specific = [
+    ...procurementUseCaseHighlights(raw.fullText),
+    ...archestraHighlights(raw.fullText),
+  ];
+  if (specific.length) return specific.slice(0, 8);
+  const translated = raw.keyExcerpts
+    .map((item) => translateKnownRawExcerpt(item.text, item.type))
+    .filter(Boolean);
+  return [...new Set([...translated, ...genericRawCorePoints(raw)])]
+    .filter((item) => item && !isMechanicalFrontstageText(item))
+    .slice(0, 8);
+}
+
+function fallbackSourcePoints(rawDisplayTitle = "", sourceUrl = "", rawRef = "") {
+  const title = frontstageChineseTitle(rawDisplayTitle, sourceUrl);
+  const points = [];
+  if (/procurement guide|采购指南|contracts.*pricing/iu.test(rawDisplayTitle)) {
+    points.push("原始来源主题集中在企业 AI 采购中的合同、定价和采购边界。");
+  } else if (/gemini.*spark|智能体 Spark/iu.test(rawDisplayTitle)) {
+    points.push("原始来源主题是 Google Gemini AI 智能体 Spark 的上手体验，重点在能力提升和体验落差。");
+  } else if (title) {
+    points.push(`原始来源标题：${title}。`);
+  }
+  if (sourceUrl) points.push(`原始来源链接：${sourceUrl}`);
+  if (rawRef) points.push(`本地 Raw/Pool 要点缺失：需恢复 ${rawRef} 后补齐核心数据、案例或观点。`);
+  return points.filter(Boolean).slice(0, 3);
 }
 
 function cardFromFile(file, category) {
@@ -556,7 +816,8 @@ function cardFromFile(file, category) {
     || scalar(fm, "source_url")
     || nestedList(fm, "frontend", "sourceLinks")[0]
     || "";
-  const raw = readRawEvidence(rawJson, rawArchive);
+  const poolRefs = arrayValue(fm, "pool_refs");
+  const raw = mergeEvidence(readRawEvidence(rawJson, rawArchive, primarySourceUrl), readPoolEvidence(scalar(fm, "date"), poolRefs[0]));
   const rawTitle = rawTitleFromArchive || raw.rawTitle || "";
   const sourceUrl = primarySourceUrl || raw.sourceUrl;
   const sourceName = scalar(fm, "source_name") || raw.sourceName || domain(sourceUrl) || "未标注来源";
@@ -573,6 +834,8 @@ function cardFromFile(file, category) {
     || headingSection(text, "观澜解读")
     || eventLine;
   const summary = translatedFact || (isMechanicalFrontstageText(rawSummary) ? eventLine : rawSummary);
+  let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl);
+  if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
 
   const sourceLinks = [
     ...nestedList(fm, "frontend", "sourceLinks"),
@@ -598,16 +861,16 @@ function cardFromFile(file, category) {
     summary: short(summary, 260),
     eventLine: short(eventLine || summary, 220),
     translatedFact,
-    originalHighlights: [
-      translatedFact,
-      nestedScalar(fm, "frontend", "originalQuote"),
-      eventLine,
-      headingSection(text, "发生了什么"),
-    ].filter((item) => item && !isMechanicalFrontstageText(item)).map((item) => short(item, 260)).slice(0, 3),
-    visibleFragment: translatedFact || publicVisibleFragment(raw.visibleFragment),
-    keyExcerpts: raw.keyExcerpts.filter(hasCjk),
+    originalHighlights: originalHighlights.length
+      ? originalHighlights
+      : [
+        nestedScalar(fm, "frontend", "originalQuote"),
+        headingSection(text, "发生了什么"),
+      ].filter((item) => item && !isMechanicalFrontstageText(item)).map((item) => short(item, 260)).slice(0, 3),
+    visibleFragment: publicVisibleFragment(raw.visibleFragment) || originalHighlights.find((item) => item !== translatedFact) || "",
+    keyExcerpts: originalHighlights,
     rawRefs: arrayValue(fm, "raw_refs"),
-    poolRefs: arrayValue(fm, "pool_refs"),
+    poolRefs,
     cardPath: rel(file),
     rawRef,
     rawTitle,
@@ -777,11 +1040,13 @@ function buildStats(cards, activeDate) {
     const categoryCards = cards.filter((card) => card.category === category);
     const todayCards = categoryCards.filter((card) => card.date === activeDate);
     const last7 = categoryCards.filter((card) => daysBetween(activeDate, card.date) >= 0 && daysBetween(activeDate, card.date) <= 6);
+    const last30 = categoryCards.filter((card) => daysBetween(activeDate, card.date) >= 0 && daysBetween(activeDate, card.date) <= 29);
     return {
       category,
       label,
       today: todayCards.length,
       last7: last7.length,
+      last30: last30.length,
       total: categoryCards.length,
       topTags: topTags(todayCards.length ? todayCards : last7.length ? last7 : categoryCards, 5),
     };
