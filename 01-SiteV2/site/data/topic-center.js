@@ -2,13 +2,13 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V1.2.0",
     "date": "2026-06-05",
-    "generatedAt": "2026-06-05T00:46:56.003Z",
+    "generatedAt": "2026-06-05T00:51:13.111Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
     "sources": {
-      "raw_pool_pitch": 3,
-      "industry_chain": 2,
+      "raw_pool_pitch": 5,
+      "industry_chain": 5,
       "builders": 5,
       "viral_rewrite": 5
     }
@@ -36,6 +36,48 @@ window.WaveSightTopicCenter = {
     }
   ],
   "topics": [
+    {
+      "id": "raw_pool_pitch-daily-observation-1",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "subSource": "今日观察",
+      "baseId": "daily-observation",
+      "title": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑",
+      "type": "daily",
+      "audience": "企业老板 / 业务负责人",
+      "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+      "relevance": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+      "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+      "source": "今日观察",
+      "url": "daily-detail.html",
+      "date": "2026-06-05",
+      "score": 96,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 10
+      },
+      "angles": [
+        {
+          "title": "Anthropic 联合创始人 Daniela Amodei 在 I 改变的是哪一类企业判断",
+          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+        },
+        {
+          "title": "能不能转成前台 Card",
+          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
+        }
+      ]
+    },
     {
       "id": "raw_pool_pitch-sig-20260605-a02-2",
       "sourceId": "raw_pool_pitch",
@@ -71,6 +113,48 @@ window.WaveSightTopicCenter = {
         {
           "title": "这件事为什么不是普通新闻",
           "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 anthropic.com。"
+        },
+        {
+          "title": "能不能转成前台 Card",
+          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
+        }
+      ]
+    },
+    {
+      "id": "raw_pool_pitch-sig-20260605-a03-3",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "subSource": "github.com",
+      "baseId": "SIG-20260605-A03",
+      "title": "Claude Code v2.1.163 发布",
+      "type": "product-service",
+      "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+      "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+      "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+      "evidence": "S 级来源，当前材料来自 github.com。",
+      "source": "github.com",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+      "date": "2026-06-05",
+      "score": 89,
+      "grade": "A",
+      "priority": "优先观察",
+      "scoreBreakdown": {
+        "conflict": 22,
+        "roleChange": 18,
+        "counterIntuit": 13,
+        "storyHook": 13,
+        "insight": 13,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "Claude Code v2.1.163 发布 改变的是哪一类企业判断",
+          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 github.com。"
         },
         {
           "title": "能不能转成前台 Card",
@@ -163,6 +247,48 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
+      "id": "industry_chain-anthropic-engineering-at-anthropic-inside-the-team-build-1",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Anthropic Blog",
+      "baseId": "anthropic-engineering-at-anthropic-inside-the-team-building-reliab",
+      "title": "Engineering at Anthropic: Inside the team building reliable AI systems",
+      "type": "official",
+      "audience": "AI 行业从业者 / 投资分析师",
+      "core": "Anthropic 官方工程博客文章：Engineering at Anthropic: Inside the team building reliable AI systems",
+      "relevance": "头部 AI 公司工程实践反映行业瓶颈和突破方向。",
+      "evidence": "Anthropic Engineering Blog",
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/engineering",
+      "date": "2026-06-05",
+      "score": 86,
+      "grade": "A",
+      "priority": "优先观察",
+      "scoreBreakdown": {
+        "conflict": 22,
+        "roleChange": 17,
+        "counterIntuit": 13,
+        "storyHook": 13,
+        "insight": 13,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "从 Engineering at Anthropic 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Anthropic Engineering Blog"
+        },
+        {
+          "title": "Engineering at Anthropic 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司工程实践反映行业瓶颈和突破方向。"
+        }
+      ]
+    },
+    {
       "id": "industry_chain-google-ai-i-o-2026-welcome-to-the-agentic-gemini-era-2",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
@@ -205,6 +331,90 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
+      "id": "industry_chain-deepmind-explore-our-next-generation-ai-systems-3",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "DeepMind",
+      "baseId": "deepmind-explore-our-next-generation-ai-systems",
+      "title": "Explore our next generation AI systems",
+      "type": "official",
+      "audience": "AI 行业从业者 / 投资人",
+      "core": "DeepMind 官方博客：Explore our next generation AI systems",
+      "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
+      "evidence": "DeepMind",
+      "source": "DeepMind",
+      "url": "https://deepmind.google/blog/",
+      "date": "2026-06-05",
+      "score": 85,
+      "grade": "B",
+      "priority": "优先观察",
+      "scoreBreakdown": {
+        "conflict": 21,
+        "roleChange": 17,
+        "counterIntuit": 13,
+        "storyHook": 13,
+        "insight": 13,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "从 Explore our next generation AI sys 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：DeepMind"
+        },
+        {
+          "title": "Explore our next generation AI sys 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-hn-48392004-4",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Hacker News",
+      "baseId": "hn-48392004",
+      "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+      "type": "discussion",
+      "audience": "AI 从业者 / 技术决策者",
+      "core": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+      "evidence": "Hacker News · 726 points · littlexsparkee",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48392004",
+      "date": "2026-06-04",
+      "score": 82,
+      "grade": "B",
+      "priority": "候选",
+      "scoreBreakdown": {
+        "conflict": 21,
+        "roleChange": 16,
+        "counterIntuit": 12,
+        "storyHook": 12,
+        "insight": 12,
+        "evidence": 8
+      },
+      "angles": [
+        {
+          "title": "从 Failing grades soar with AI usage 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 726 points · littlexsparkee"
+        },
+        {
+          "title": "Failing grades soar with AI usage 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
       "id": "industry_chain-hn-48403980-5",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
@@ -216,7 +426,7 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "Anthropic's open-source framework for AI-powered vulnerability discovery",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 238 points · binyu",
+      "evidence": "Hacker News · 239 points · binyu",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48403980",
       "date": "2026-06-04",
@@ -234,7 +444,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 Anthropic's open-source framework  看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 238 points · binyu"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 239 points · binyu"
         },
         {
           "title": "Anthropic's open-source framework  会先影响谁的采购单",
@@ -670,6 +880,48 @@ window.WaveSightTopicCenter = {
   "grouped": {
     "events": [
       {
+        "id": "raw_pool_pitch-daily-observation-1",
+        "sourceId": "raw_pool_pitch",
+        "sourceName": "Raw-Pool-Pitch",
+        "sourceDesc": "每日 Raw / Pool / Card 产物",
+        "subSource": "今日观察",
+        "baseId": "daily-observation",
+        "title": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑",
+        "type": "daily",
+        "audience": "企业老板 / 业务负责人",
+        "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+        "relevance": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+        "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+        "source": "今日观察",
+        "url": "daily-detail.html",
+        "date": "2026-06-05",
+        "score": 96,
+        "grade": "S",
+        "priority": "S级选题",
+        "scoreBreakdown": {
+          "conflict": 24,
+          "roleChange": 19,
+          "counterIntuit": 14,
+          "storyHook": 14,
+          "insight": 14,
+          "evidence": 10
+        },
+        "angles": [
+          {
+            "title": "Anthropic 联合创始人 Daniela Amodei 在 I 改变的是哪一类企业判断",
+            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+          },
+          {
+            "title": "这件事为什么不是普通新闻",
+            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+          },
+          {
+            "title": "能不能转成前台 Card",
+            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
+          }
+        ]
+      },
+      {
         "id": "raw_pool_pitch-sig-20260605-a02-2",
         "sourceId": "raw_pool_pitch",
         "sourceName": "Raw-Pool-Pitch",
@@ -704,6 +956,48 @@ window.WaveSightTopicCenter = {
           {
             "title": "这件事为什么不是普通新闻",
             "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 anthropic.com。"
+          },
+          {
+            "title": "能不能转成前台 Card",
+            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
+          }
+        ]
+      },
+      {
+        "id": "raw_pool_pitch-sig-20260605-a03-3",
+        "sourceId": "raw_pool_pitch",
+        "sourceName": "Raw-Pool-Pitch",
+        "sourceDesc": "每日 Raw / Pool / Card 产物",
+        "subSource": "github.com",
+        "baseId": "SIG-20260605-A03",
+        "title": "Claude Code v2.1.163 发布",
+        "type": "product-service",
+        "audience": "企业决策者 / 业务负责人 / AI 产品与运营负责人",
+        "core": "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。",
+        "relevance": "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。",
+        "evidence": "S 级来源，当前材料来自 github.com。",
+        "source": "github.com",
+        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+        "date": "2026-06-05",
+        "score": 89,
+        "grade": "A",
+        "priority": "优先观察",
+        "scoreBreakdown": {
+          "conflict": 22,
+          "roleChange": 18,
+          "counterIntuit": 13,
+          "storyHook": 13,
+          "insight": 13,
+          "evidence": 9
+        },
+        "angles": [
+          {
+            "title": "Claude Code v2.1.163 发布 改变的是哪一类企业判断",
+            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
+          },
+          {
+            "title": "这件事为什么不是普通新闻",
+            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：S 级来源，当前材料来自 github.com。"
           },
           {
             "title": "能不能转成前台 Card",
@@ -796,6 +1090,48 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
+        "id": "industry_chain-anthropic-engineering-at-anthropic-inside-the-team-build-1",
+        "sourceId": "industry_chain",
+        "sourceName": "产业链分析",
+        "sourceDesc": "arXiv / HN / 官方博客",
+        "subSource": "Anthropic Blog",
+        "baseId": "anthropic-engineering-at-anthropic-inside-the-team-building-reliab",
+        "title": "Engineering at Anthropic: Inside the team building reliable AI systems",
+        "type": "official",
+        "audience": "AI 行业从业者 / 投资分析师",
+        "core": "Anthropic 官方工程博客文章：Engineering at Anthropic: Inside the team building reliable AI systems",
+        "relevance": "头部 AI 公司工程实践反映行业瓶颈和突破方向。",
+        "evidence": "Anthropic Engineering Blog",
+        "source": "Anthropic Blog",
+        "url": "https://www.anthropic.com/engineering",
+        "date": "2026-06-05",
+        "score": 86,
+        "grade": "A",
+        "priority": "优先观察",
+        "scoreBreakdown": {
+          "conflict": 22,
+          "roleChange": 17,
+          "counterIntuit": 13,
+          "storyHook": 13,
+          "insight": 13,
+          "evidence": 9
+        },
+        "angles": [
+          {
+            "title": "从 Engineering at Anthropic 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Anthropic Engineering Blog"
+          },
+          {
+            "title": "Engineering at Anthropic 会先影响谁的采购单",
+            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+          },
+          {
+            "title": "这不是技术升级，而是责任边界重画",
+            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司工程实践反映行业瓶颈和突破方向。"
+          }
+        ]
+      },
+      {
         "id": "industry_chain-google-ai-i-o-2026-welcome-to-the-agentic-gemini-era-2",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
@@ -838,6 +1174,90 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
+        "id": "industry_chain-deepmind-explore-our-next-generation-ai-systems-3",
+        "sourceId": "industry_chain",
+        "sourceName": "产业链分析",
+        "sourceDesc": "arXiv / HN / 官方博客",
+        "subSource": "DeepMind",
+        "baseId": "deepmind-explore-our-next-generation-ai-systems",
+        "title": "Explore our next generation AI systems",
+        "type": "official",
+        "audience": "AI 行业从业者 / 投资人",
+        "core": "DeepMind 官方博客：Explore our next generation AI systems",
+        "relevance": "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
+        "evidence": "DeepMind",
+        "source": "DeepMind",
+        "url": "https://deepmind.google/blog/",
+        "date": "2026-06-05",
+        "score": 85,
+        "grade": "B",
+        "priority": "优先观察",
+        "scoreBreakdown": {
+          "conflict": 21,
+          "roleChange": 17,
+          "counterIntuit": 13,
+          "storyHook": 13,
+          "insight": 13,
+          "evidence": 9
+        },
+        "angles": [
+          {
+            "title": "从 Explore our next generation AI sys 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：DeepMind"
+          },
+          {
+            "title": "Explore our next generation AI sys 会先影响谁的采购单",
+            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+          },
+          {
+            "title": "这不是技术升级，而是责任边界重画",
+            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：头部 AI 公司官方发布，直接反映产品路线和战略方向。"
+          }
+        ]
+      },
+      {
+        "id": "industry_chain-hn-48392004-4",
+        "sourceId": "industry_chain",
+        "sourceName": "产业链分析",
+        "sourceDesc": "arXiv / HN / 官方博客",
+        "subSource": "Hacker News",
+        "baseId": "hn-48392004",
+        "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+        "type": "discussion",
+        "audience": "AI 从业者 / 技术决策者",
+        "core": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+        "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+        "evidence": "Hacker News · 726 points · littlexsparkee",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=48392004",
+        "date": "2026-06-04",
+        "score": 82,
+        "grade": "B",
+        "priority": "候选",
+        "scoreBreakdown": {
+          "conflict": 21,
+          "roleChange": 16,
+          "counterIntuit": 12,
+          "storyHook": 12,
+          "insight": 12,
+          "evidence": 8
+        },
+        "angles": [
+          {
+            "title": "从 Failing grades soar with AI usage 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 726 points · littlexsparkee"
+          },
+          {
+            "title": "Failing grades soar with AI usage 会先影响谁的采购单",
+            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+          },
+          {
+            "title": "这不是技术升级，而是责任边界重画",
+            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+          }
+        ]
+      },
+      {
         "id": "industry_chain-hn-48403980-5",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
@@ -849,7 +1269,7 @@ window.WaveSightTopicCenter = {
         "audience": "AI 从业者 / 技术决策者",
         "core": "Anthropic's open-source framework for AI-powered vulnerability discovery",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 238 points · binyu",
+        "evidence": "Hacker News · 239 points · binyu",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48403980",
         "date": "2026-06-04",
@@ -867,7 +1287,7 @@ window.WaveSightTopicCenter = {
         "angles": [
           {
             "title": "从 Anthropic's open-source framework  看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 238 points · binyu"
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 239 points · binyu"
           },
           {
             "title": "Anthropic's open-source framework  会先影响谁的采购单",
