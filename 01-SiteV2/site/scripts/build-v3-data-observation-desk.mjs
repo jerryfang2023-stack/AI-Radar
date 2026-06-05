@@ -952,7 +952,7 @@ function uniqueById(items) {
   return [...byId.values()];
 }
 
-function trendAssetFromFile(file) {
+function trendAssetFromFile(file, cards = []) {
   const text = read(file);
   const fm = frontmatter(text);
   if (!fm) return null;
@@ -967,6 +967,8 @@ function trendAssetFromFile(file) {
   const relationSummary = headingSection(text, "关系说明")
     || headingSection(text, "信号链")
     || headingSection(text, "相关材料");
+  const frontendWhy = nestedScalar(fm, "frontend", "whyForming");
+  const frontendRelation = nestedScalar(fm, "frontend", "relationSummary");
   const methodChange = headingSection(text, "技术路线 / 方法变化");
   const boundary = scalar(fm, "boundary_notes")
     || headingSection(text, "风险边界与证据缺口");
@@ -977,6 +979,8 @@ function trendAssetFromFile(file) {
     .concat(arrayValue(fm, "related_change_cards"))
     .concat(arrayValue(fm, "related_case_cards"));
   const relatedOpinions = arrayValue(fm, "related_opinion_cards");
+  const relatedIds = new Set([...relatedSignals, ...relatedOpinions].filter(Boolean));
+  const relatedCards = cards.filter((card) => relatedIds.has(card.id));
   const tags = formalTags(fm);
   const gate = scalar(fm, "trend_evidence_gate");
   const relatedChangeCount = relatedSignals.length;
@@ -988,10 +992,14 @@ function trendAssetFromFile(file) {
     type,
     hypothesis,
     relationSummary,
+    frontendWhy,
+    frontendRelation,
     methodChange,
     relatedChangeCount,
     sourceTypeCount,
+    relatedCards,
   });
+  const frontBoundary = trendFrontstageBoundary(boundary);
 
   return {
     id: scalar(fm, "id") || path.basename(file, ".md"),
@@ -1004,7 +1012,7 @@ function trendAssetFromFile(file) {
     stageLabel: type === "trend_candidate" ? "正在形成" : gate === "threshold_passed" ? "证据较强" : "继续观察",
     hypothesis: short(frontDescription || hypothesis || relationSummary, 360),
     relationSummary: short(frontDescription || relationSummary || hypothesis, 300),
-    boundary: short(boundary, 280),
+    boundary: short(frontBoundary || boundary, 280),
     nextObservation: short(nextObservation, 260),
     sourceTypes,
     relatedSignals: [...new Set(relatedSignals)].filter(Boolean),
@@ -1026,36 +1034,76 @@ function trendFrontstageTitle(title = "", tags = {}) {
   return title;
 }
 
+function cleanTrendNarrative(value = "") {
+  return String(value || "")
+    .replace(/\s+/gu, " ")
+    .replace(/^这条趋势正在形成，是因为/u, "")
+    .replace(/共同指向一个变化[:：]/gu, "材料显示：")
+    .replace(/信号指向同一个问题[:：]/gu, "材料显示：")
+    .replace(/共同指向一个候选方向[:：]/gu, "材料显示：")
+    .replace(/相关信号来自/gu, "材料来自")
+    .replace(/暂按趋势候选管理。?/gu, "")
+    .replace(/还处在候选阶段。?/gu, "")
+    .replace(/当前材料来自 \d+ 条原文档案与 \d+ 张变化卡，/gu, "")
+    .replace(/已经看到同一类客户、流程或技术路线反复出现，/gu, "")
+    .replace(/但还需要更多客户采用、付费数据和反证材料。?/gu, "")
+    .replace(/公开材料里还缺少/gu, "公开材料尚未披露")
+    .replace(/[，,]\s*$/u, "。")
+    .trim();
+}
+
+function trendFrontstageBoundary(value = "") {
+  return cleanTrendNarrative(value)
+    .replace(/当前仍缺少/gu, "公开材料尚未披露")
+    .replace(/仍缺少/gu, "尚未披露")
+    .replace(/目前仍缺少/gu, "公开材料尚未披露");
+}
+
+function trendEvidenceDescription(relatedCards = []) {
+  const facts = relationshipFactsFromCards(relatedCards, 3);
+  if (!facts.length) return "";
+  return facts.join(" ");
+}
+
 function trendFrontstageDescription({
   title,
   rawTitle,
   type,
   hypothesis,
   relationSummary,
+  frontendWhy,
+  frontendRelation,
   methodChange,
   relatedChangeCount,
   sourceTypeCount,
+  relatedCards,
 }) {
+  const evidenceText = trendEvidenceDescription(relatedCards);
+  const cleanedFrontend = cleanTrendNarrative(frontendWhy || frontendRelation);
+  if (cleanedFrontend) return cleanedFrontend;
+  if (evidenceText) return evidenceText;
   if (/AI 编程进入预算和工程治理/u.test(title)) {
-    return `这个趋势指向 AI Coding 从个人效率工具进入团队采购、预算和工程治理。具体表现是：同类开发工具、代码助手和工程流程信号反复出现，企业开始关心权限、成本、交付质量和团队协作，而不只是“能不能生成代码”。当前可见 ${relatedChangeCount || 7} 条相关信号，仍需要更多客户采用和付费数据。`;
+    return "AI Coding 材料开始出现团队采购、预算、权限、成本和交付质量等企业流程信息，讨论重点从个人代码生成扩展到工程团队如何管理和使用工具。";
   }
   if (/AI 治理开始从原则讨论/u.test(title)) {
-    return "这个趋势指向 AI 治理从抽象原则进入产品层和流程层。具体表现是：权限、日志、隔离、评测、责任边界开始成为 AI 产品和企业部署材料里的显性问题，而不是只停留在政策口号。当前证据仍少，应作为观察线索而非成熟趋势。";
+    return "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。";
   }
   if (/专业服务 AI 开始进入交付流程/u.test(title)) {
-    return "这个趋势指向专业服务 AI 从内容辅助进入真实交付流程。具体表现是：Agent 的执行范围、网络访问、密钥、日志和停机边界开始被产品化，企业采购时会追问它能做什么、不能做什么、出错后如何停。当前仍需要更多客户案例和付费数据。";
+    return "专业服务 AI 材料开始描述 Agent 的执行范围、网络访问、密钥、日志和停机边界，说明产品卖点正在从内容辅助转向可控交付。";
   }
-  if (relationSummary && !/还处在候选阶段|当前材料来自/u.test(relationSummary)) return relationSummary;
-  if (methodChange) return methodChange.replace(/\s+/gu, " ").trim();
-  if (hypothesis && !/还处在候选阶段|当前材料来自/u.test(hypothesis)) return hypothesis;
+  const cleanedRelation = cleanTrendNarrative(relationSummary);
+  if (cleanedRelation && !/当前材料来自/u.test(cleanedRelation)) return cleanedRelation;
+  if (methodChange) return cleanTrendNarrative(methodChange);
+  const cleanedHypothesis = cleanTrendNarrative(hypothesis);
+  if (cleanedHypothesis && !/当前材料来自/u.test(cleanedHypothesis)) return cleanedHypothesis;
   const sourceText = sourceTypeCount ? `${sourceTypeCount} 类来源` : "公开材料";
-  return `${title} 是一个仍在观察的趋势方向。具体表现需要看它是否持续出现在客户采用、产品发布、采购预算、交付流程或治理责任中；当前只能按 ${sourceText} 和 ${relatedChangeCount || 0} 条相关信号继续跟踪。`;
+  return `${title} 目前来自 ${sourceText}，可继续观察它是否出现在客户采用、产品发布、采购预算、交付流程或治理责任等事实材料中。`;
 }
 
-function buildTrendAssets(activeDate) {
+function buildTrendAssets(activeDate, cards = []) {
   const assets = uniqueById(
     trendAssetRoots
-      .flatMap((dir) => walkMarkdown(dir).map(trendAssetFromFile))
+      .flatMap((dir) => walkMarkdown(dir).map((file) => trendAssetFromFile(file, cards)))
       .filter(Boolean),
   ).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.title.localeCompare(b.title));
 
@@ -1247,28 +1295,97 @@ function cardMatchesSpec(card, spec) {
 }
 
 function cardSourceFact(card) {
-  return short(
-    card.translatedFact
-      || (card.originalHighlights || []).find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item))
-      || card.summary
-      || card.title,
-    180
-  );
+  const candidates = [
+    card.translatedFact,
+    ...(card.originalHighlights || []),
+    card.visibleFragment,
+    card.summary,
+    card.title,
+  ]
+    .map(cleanSourceFactText)
+    .filter((item) => item && !isWeakSourceFact(item));
+  return short(candidates[0] || cleanSourceFactText(card.title), 180);
 }
 
-function relationshipSummaryFromCards(spec, items, displayDate) {
-  const subjects = countItems(items, (card) => {
+function cleanSourceFactText(value = "") {
+  return String(value || "")
+    .replace(/\s+/gu, " ")
+    .replace(/^可观察(?:真实客户、业务流程或结果指标|产品能力进入具体业务流程的方式|融资金额、资金用途或赛道线索)[:：]/u, "")
+    .replace(/^[-•]\s*/u, "")
+    .trim();
+}
+
+function isWeakSourceFact(value = "") {
+  const text = String(value || "").trim();
+  if (!text) return true;
+  if (!hasCjk(text)) return true;
+  if (/^##\s|raw_ref|raw_archive|raw_original_id|`01-SiteV2|本地 Raw|Raw\s*\/\s*Pool/u.test(text)) return true;
+  if (/^关键数字|原文关键数字包括|原文信息：原文关键数字|融资信息：原文关键数字|公司动作：原文关键数字|案例信息：原文关键数字/u.test(text)) return true;
+  if (/淘汰风险|可观察观点来源的原始判断/u.test(text)) return true;
+  if (text.length < 12) return true;
+  return false;
+}
+
+function relationshipSubjects(items, limit = 3) {
+  return countItems(items, (card) => {
     if (card.subject === "未标注主体" || isWeakSubject(card.subject)) return "";
     return card.subject;
-  }).slice(0, 3).map((item) => item.label);
+  }).slice(0, limit).map((item) => item.label);
+}
+
+function relationshipFactsFromCards(items, limit = 3) {
   const facts = items
     .map(cardSourceFact)
     .filter(Boolean)
-    .slice(0, 2);
-  const subjectText = subjects.length ? `主体包括 ${subjects.join("、")}。` : "";
-  const factText = facts.length ? `支撑事实：${facts.join("；")}。` : "";
-  const relationText = spec.detailFocus.replace(/^内在关联：/u, "");
-  return `${displayDate} 当日命中 ${items.length} 张相关 Card。${subjectText}${relationText}${factText}`;
+    .filter((item) => !/当日命中|主体包括|共同指向|内在关联|实质上|趋势候选|候选方向|Raw\s*\/\s*Pool/u.test(item));
+  return [...new Set(facts)].slice(0, limit);
+}
+
+function relationshipTitleFromCards(spec, items) {
+  const subjects = relationshipSubjects(items, 3);
+  const subjectText = subjects.slice(0, 2).join("、");
+  if (spec.id === "agent-workflow-enterprise") {
+    return subjectText
+      ? `${subjectText} 记录 Agent 进入采购、数据连接和企业流程`
+      : "Agent 材料写清了企业流程里的实际任务";
+  }
+  if (spec.id === "agent-infra-boundary") {
+    return subjectText
+      ? `${subjectText} 记录工程工具链和运行边界`
+      : "Agent 材料强调运行、隔离和工程环境";
+  }
+  if (spec.id === "sales-procurement-budget") {
+    return subjectText
+      ? `${subjectText} 记录 AI 进入采购、合同和收入流程`
+      : "采购和收入材料出现 AI Agent 的执行位置";
+  }
+  if (spec.id === "customer-service-proof") {
+    return subjectText
+      ? `${subjectText} 记录 AI 进入客户接触点`
+      : "客服和语音 Agent 材料聚焦客户接触点";
+  }
+  if (spec.id === "ai-coding-engineering") {
+    return subjectText
+      ? `${subjectText} 记录 AI 编程工具链继续迭代`
+      : "AI Coding 材料继续进入工程工具链";
+  }
+  if (spec.id === "product-launch-vs-adoption") {
+    return subjectText
+      ? `${subjectText} 同日出现在企业 AI 产品发布里`
+      : "企业 AI 产品发布覆盖采购、开发工具和行业流程";
+  }
+  return subjectText || spec.title;
+}
+
+function relationshipSummaryFromCards(spec, items) {
+  const facts = relationshipFactsFromCards(items, 3);
+  if (facts.length) return facts.join(" ");
+  return spec.summary || spec.detailFocus || spec.title;
+}
+
+function relationshipEvidenceMeta(items) {
+  const subjects = relationshipSubjects(items, 3);
+  return subjects.length ? `素材：${subjects.join(" / ")}` : "素材来自当日商业信号";
 }
 
 function buildRelationshipDirections(cards, activeDate) {
@@ -1283,16 +1400,17 @@ function buildRelationshipDirections(cards, activeDate) {
       if (!todayItems.length) return null;
       const last7Items = last7Cards.filter((card) => cardMatchesSpec(card, spec));
       const last30Items = last30Cards.filter((card) => cardMatchesSpec(card, spec));
+      const summary = relationshipSummaryFromCards(spec, todayItems);
       return {
         id: spec.id,
-        title: spec.title
+        title: relationshipTitleFromCards(spec, todayItems)
           .replaceAll("{date}", displayDate)
           .replaceAll("{count}", String(todayItems.length)),
         direction: spec.direction,
         relation: spec.relation,
-        summary: relationshipSummaryFromCards(spec, todayItems, displayDate),
-        evidenceMeta: `${displayDate} · 当日 ${todayItems.length} 张 · 近 7 天 ${last7Items.length} 张`,
-        detailFocus: relationshipSummaryFromCards(spec, todayItems, displayDate),
+        summary,
+        evidenceMeta: relationshipEvidenceMeta(todayItems),
+        detailFocus: summary,
         todayCount: todayItems.length,
         last7Count: last7Items.length,
         last30Count: last30Items.length,
@@ -1348,7 +1466,7 @@ const cards = dedupeFrontstageCards(rawCards)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
-const trendAssets = buildTrendAssets(activeDate);
+const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
     version: "V3.1.1-source-first-frontstage",

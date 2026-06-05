@@ -357,15 +357,11 @@
   }
 
   function trendAssetCard(item, mode = "candidate") {
-    const signalCount = (item.relatedSignals || []).length;
-    const opinionCount = (item.relatedOpinions || []).length;
-    const sourceCount = (item.sourceTypes || []).length;
     return `
       <article class="trend-card trend-asset-card" data-trend-asset="${safe(item.id)}" data-trend-mode="${safe(mode)}">
         <span class="direction-label">${safe(item.stageLabel || "趋势资产")}</span>
         <strong>${safe(item.title)}</strong>
         <p>${safe(item.relationSummary || item.hypothesis || "暂无公开摘要。")}</p>
-        <div class="direction-meta">信号 ${safe(signalCount)} · 来源类型 ${safe(sourceCount)} · 观点 ${safe(opinionCount)}</div>
         <div class="trend-card-block">
           <b>证据边界</b>
           <div class="direction-support">
@@ -438,7 +434,7 @@
       <h2 class="detail-title">${safe(item.title)}</h2>
       <div class="detail-source-row">
         <span>关系方向 · ${safe(fmtDate(state.payload.meta.activeDate))}</span>
-        <strong>当日 ${safe(item.todayCount)} 张 · 近 7 天 ${safe(item.last7Count)} 张 · 近 30 天 ${safe(item.last30Count)} 张</strong>
+        <strong>${safe(item.evidenceMeta || "素材来自当日商业信号")}</strong>
       </div>
       <div class="detail-fact-card">
         <h3>可见事实</h3>
@@ -451,14 +447,6 @@
             ${(item.relation || []).map((node, index) => `${index ? "<i>→</i>" : ""}<span>${safe(node)}</span>`).join("")}
           </div>
           <p>${safe(item.detailFocus || "暂无补充说明。")}</p>
-        </div>
-        <div class="detail-block">
-          <h3>数量范围</h3>
-          <div class="direction-metrics detail-direction-metrics">
-            <span>当日<b>${safe(item.todayCount)}</b></span>
-            <span>近 7 天<b>${safe(item.last7Count)}</b></span>
-            <span>近 30 天<b>${safe(item.last30Count)}</b></span>
-          </div>
         </div>
       </div>
       <div class="detail-block">
@@ -499,14 +487,6 @@
         <div class="detail-block">
           <h3>关系摘要</h3>
           <p>${safe(item.relationSummary || "暂无关系摘要。")}</p>
-        </div>
-        <div class="detail-block">
-          <h3>证据范围</h3>
-          <div class="direction-metrics detail-direction-metrics">
-            <span>信号<b>${safe(signals.length)}</b></span>
-            <span>观点<b>${safe(opinions.length)}</b></span>
-            <span>来源类型<b>${safe((item.sourceTypes || []).length)}</b></span>
-          </div>
         </div>
       </div>
       <div class="detail-block">
