@@ -22,16 +22,12 @@
   }
   .container { padding: 32px 28px; }
   .header {
-    display: flex; justify-content: space-between; align-items: end;
-    padding-bottom: 14px; border-bottom: 2px solid rgba(200,167,102,.35); margin-bottom: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 16px; border-bottom: 2px solid rgba(200,167,102,.35); margin-bottom: 24px;
   }
   .brand { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; color: #0d355c; letter-spacing: .03em; }
-  .brand small { display: block; font-size: 9px; letter-spacing: .28em; color: #c8a766; font-weight: 600; }
+  .header-right { display: flex; align-items: center; gap: 12px; }
   .date { font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: rgba(7,24,39,.52); font-weight: 500; }
-  .date-picker {
-    display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
-  }
-  .date-picker label { font-size: 13px; color: rgba(7,24,39,.6); }
   .date-picker select {
     font-family: 'IBM Plex Mono', monospace; font-size: 13px;
     padding: 6px 10px; border: 1px solid rgba(200,167,102,.4);
@@ -39,14 +35,6 @@
     outline: none; cursor: pointer;
   }
   .date-picker select:focus { border-color: #c8a766; }
-  .date-picker .nav-btn {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 32px; height: 32px; border-radius: 6px;
-    border: 1px solid rgba(200,167,102,.3); background: #fff;
-    cursor: pointer; font-size: 16px; color: rgba(7,24,39,.6);
-    text-decoration: none; transition: all .15s;
-  }
-  .date-picker .nav-btn:hover { border-color: #c8a766; color: #0d355c; }
   .section { margin-top: 28px; }
   .section-head { font-size: 16px; font-weight: 700; color: #071827; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
   .section-head .badge {
@@ -107,17 +95,18 @@
 </head>
 <body>
 <div class="container">
-<div class="date-picker">
-  <label>浏览历史日报：</label>
-  <select id="date-picker" onchange="if(this.value) window.location.href=this.value;">
-    <option value="daily-brief-2026-06-03.html">2026-06-03</option>
-    <option value="daily-brief-2026-06-04.html">2026-06-04</option>
-    <option value="daily-brief-2026-06-05.html" selected>2026-06-05</option>
-  </select>
-</div>
 <div class="header">
-  <div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
-  <div class="date">2026-06-05</div>
+  <div class="brand">观澜日报</div>
+  <div class="header-right">
+    <div class="date">2026-06-05</div>
+    <div class="date-picker">
+      <select id="date-picker" onchange="if(this.value) window.location.href=this.value;">
+<option value="daily-brief-2026-06-03.html">2026-06-03</option>
+<option value="daily-brief-2026-06-04.html">2026-06-04</option>
+<option value="daily-brief-2026-06-05.html" selected>2026-06-05</option>
+      </select>
+    </div>
+  </div>
 </div>
 <div class="section"><div class="section-head"><span class="badge">1</span> 今日大事（共9件）</div>
 <div class="event">
@@ -220,7 +209,7 @@
   <div class="signal-text">开发者社区热议 AI 工具效率与安全性之间的权衡，环境隔离而非模型拒绝成为最终防线。</div>
 </div>
 </div>
-<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:04</div>
+<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:15</div>
 </div>
 <script>
 /* 日期选择器 */
