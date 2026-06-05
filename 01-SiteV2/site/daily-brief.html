@@ -28,7 +28,6 @@
   .brand { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; color: #0d355c; letter-spacing: .03em; line-height: 1; }
   .brand small { display: block; font-size: 9px; letter-spacing: .28em; color: #c8a766; font-weight: 600; margin-top: 2px; }
   .header-right { display: flex; align-items: center; gap: 12px; }
-  .date { font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: rgba(7,24,39,.52); font-weight: 500; }
   .date-picker select {
     font-family: 'IBM Plex Mono', monospace; font-size: 13px;
     padding: 6px 10px; border: 1px solid rgba(200,167,102,.4);
@@ -72,7 +71,10 @@
     border-radius: 10px; padding: 14px; border: 1px solid rgba(200,167,102,.2);
   }
   .person-name { font-size: 14px; font-weight: 700; color: #0d355c; }
-  .person-quote { font-size: 12px; color: rgba(7,24,39,.65); margin-top: 6px; line-height: 1.45; }
+  .person-topic { font-size: 12px; color: rgba(7,24,39,.65); margin-top: 6px; line-height: 1.45; }
+  .person-url { font-size: 11px; margin-top: 4px; }
+  .person-url a { color: #6b4f32; text-decoration: none; }
+  .person-url a:hover { text-decoration: underline; }
   .signal-row { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
   .signal-tag {
     flex-shrink: 0; font-size: 11px; font-weight: 700; padding: 2px 8px;
@@ -108,7 +110,6 @@
 <div class="header">
   <div class="brand">观澜日报<small>WAVESIGHT DAILY BRIEF</small></div>
   <div class="header-right">
-    <div class="date">2026-06-05</div>
     <div class="date-picker">
       <select id="date-picker" onchange="if(this.value) window.location.href=this.value;">
 <option value="daily-brief-2026-06-03.html">2026-06-03</option>
@@ -191,23 +192,26 @@
 <div class="event-url">🔗 <a href="https://news.ycombinator.com/item?id=48406640" target="_blank" rel="noopener">来源</a></div>
 </div></div></div>
 </div>
-<div class="section"><div class="section-head"><span class="badge">2</span> 关键人物观点</div><div class="people-grid">
+<div class="section"><div class="section-head"><span class="badge">2</span> 关键人物动态</div><div class="people-grid">
 <div class="person-card">
   <div class="person-name">Thibault Sottiaux</div>
-  <div class="person-quote">过去 24 小时内 发生了 3 起小事故 that affected Codex reliability. Tho / Lots of little vectors at OpenAI all pointing in the same di</div>
+  <div class="person-topic">过去 24 小时内 发生了 3 起小事故 that affected Codex reliability. Th</div>
+  <div class="person-url">🔗 <a href="https://x.com/thsottiaux/status/2062329981548802523" target="_blank" rel="noopener">原文</a></div>
 </div>
 <div class="person-card">
   <div class="person-name">Josh Woodward</div>
-  <div class="person-quote">简单说说这个的幕后故事：A small Google Labs team had an idea to make an app designed to connect yo</div>
+  <div class="person-topic">Google Labs 一个小团队想做一个连接人与重要事物的 App, witho</div>
+  <div class="person-url">🔗 <a href="https://x.com/joshwoodward/status/2062217728824651848" target="_blank" rel="noopener">原文</a></div>
 </div>
 <div class="person-card">
   <div class="person-name">Thariq</div>
-  <div class="person-quote">如果你觉得这段提示词写得不错, 那是因为 Suzanne 在业余时间是个写作者! You can rea</div>
+  <div class="person-topic">It's one of my favorite short stories about the human condition</div>
+  <div class="person-url">🔗 <a href="https://x.com/trq212/status/2062217018187923783" target="_blank" rel="noopener">原文</a></div>
 </div>
 </div></div>
 <div class="section"><div class="section-head"><span class="badge">3</span> 今日推荐论文</div>
 <div class="paper-card">
-  <div class="paper-title">Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution</div>
+  <div class="paper-title">Code2LoRA：Hypernetwork-Generated Adapters for Code Language Models under Software Evolution</div>
   <div class="paper-authors">Liliana Hotsko, Yinxi Li, Yuntian Deng</div>
   <div class="paper-summary">Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysi</div>
   <div class="paper-url">📄 <a href="http://arxiv.org/abs/2606.06492v1" target="_blank" rel="noopener">arXiv</a></div>
@@ -227,7 +231,7 @@
   <div class="signal-text">开发者社区热议 AI 工具效率与安全性之间的权衡，环境隔离而非模型拒绝成为最终防线。</div>
 </div>
 </div>
-<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:23</div>
+<div class="footer">观澜AI · WaveSight AI · 2026-06-05 15:29</div>
 </div>
 <script>
 /* 日期选择器 */
