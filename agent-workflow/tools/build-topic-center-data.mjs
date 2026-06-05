@@ -393,6 +393,45 @@ async function fetchArxiv(query, limit = 8) {
   }).filter(Boolean);
 }
 
+/**
+ * 每日推荐一篇AI研究文章（方法/技术/趋势/技巧类）。
+ * 从 arXiv 抓取当天最新论文，按实用性和可读性评分选最优。
+ */
+async function fetchRecommendedPaper(date) {
+  const papers = await fetchArxiv(
+    "cat:cs.AI+AND+abs:(method+OR+technique+OR+framework+OR+approach+OR+system+OR+reasoning+OR+alignment+OR+training+OR+agent+OR+optimization+OR+architecture)",
+    20
+  );
+  if (!papers.length) return null;
+
+  const scored = papers.map((p) => {
+    const text = `${p.title} ${p.summary}`.toLowerCase();
+    let score = 0;
+    // 实用/应用类
+    if (/agent|tool|deploy|practical|benchmark|evaluation|open.?source|api|sdk/i.test(text)) score += 4;
+    // 方法/技术类
+    if (/method|technique|approach|framework|architecture|algorithm|optimization/i.test(text)) score += 3;
+    // 热门趋势
+    if (/reasoning|alignment|safety|training|scaling|efficiency|inference/i.test(text)) score += 2;
+    // 有明确结果/数据
+    if (/\d+[%x.]|improve|reduce|achieve|outperform|state.?of.?the.?art/i.test(text)) score += 2;
+    // 太理论/数学多的扣分
+    if (/theorem|lemma|proof|conjecture|mathematical|axiom/i.test(text)) score -= 3;
+    return { ...p, _score: score };
+  });
+  scored.sort((a, b) => b._score - a._score);
+  const best = scored[0];
+  if (!best || best._score < 2) return null;
+
+  return {
+    title: best.title.slice(0, 150),
+    summary: stripHtml(best.summary).replace(/\s+/g, ' ').trim().slice(0, 300),
+    url: best.link,
+    authors: best.authors,
+    date,
+  };
+}
+
 async function fetchHnItems(endpoint, limit = 20) {
   const ids = await fetchJson(`https://hacker-news.firebaseio.com/v0/${endpoint}.json`);
   if (!Array.isArray(ids)) return [];
@@ -921,6 +960,8 @@ async function main() {
   // 公司多样性过滤：同一公司簇最多2条
   const allEventCandidates = [...rawPool, ...industryChain];
   const diversifiedEvents = diversifyEvents(allEventCandidates, 2);
+  // 推荐论文：今日AI研究文章
+  const recommendedPaper = await fetchRecommendedPaper(date);
   const data = {
     meta: {
       version: topicCenterVersion,
@@ -930,6 +971,7 @@ async function main() {
       rule: "raw_pool_plus_external_sources_five_each",
       lockedAs: "ops-topic-center-v1.1.1",
       sources: counts,
+      recommendedPaper,
     },
     sources,
     topics,

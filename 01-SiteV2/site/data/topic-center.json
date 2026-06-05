@@ -2,7 +2,7 @@
   "meta": {
     "version": "V1.2.0",
     "date": "2026-06-05",
-    "generatedAt": "2026-06-05T07:04:02.208Z",
+    "generatedAt": "2026-06-05T07:22:54.553Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
@@ -11,6 +11,13 @@
       "industry_chain": 8,
       "builders": 5,
       "viral_rewrite": 5
+    },
+    "recommendedPaper": {
+      "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+      "summary": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolv",
+      "url": "http://arxiv.org/abs/2606.06492v1",
+      "authors": "Liliana Hotsko, Yinxi Li, Yuntian Deng",
+      "date": "2026-06-05"
     }
   },
   "sources": [
@@ -517,7 +524,7 @@
       "audience": "AI 从业者 / 技术决策者",
       "core": "Anthropic's open-source framework for AI-powered vulnerability discovery",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 375 points · binyu",
+      "evidence": "Hacker News · 382 points · binyu",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48403980",
       "date": "2026-06-04",
@@ -535,7 +542,7 @@
       "angles": [
         {
           "title": "从 Anthropic's open-source framework  看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 375 points · binyu"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 382 points · binyu"
         },
         {
           "title": "Anthropic's open-source framework  会先影响谁的采购单",
@@ -548,49 +555,7 @@
       ]
     },
     {
-      "id": "industry_chain-hn-48392004-5",
-      "sourceId": "industry_chain",
-      "sourceName": "产业链分析",
-      "sourceDesc": "arXiv / HN / 官方博客",
-      "subSource": "Hacker News",
-      "baseId": "hn-48392004",
-      "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
-      "type": "discussion",
-      "audience": "AI 从业者 / 技术决策者",
-      "core": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
-      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 760 points · littlexsparkee",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48392004",
-      "date": "2026-06-04",
-      "score": 81,
-      "grade": "B",
-      "priority": "候选",
-      "scoreBreakdown": {
-        "conflict": 20,
-        "roleChange": 16,
-        "counterIntuit": 12,
-        "storyHook": 12,
-        "insight": 12,
-        "evidence": 8
-      },
-      "angles": [
-        {
-          "title": "从 Failing grades soar with AI usage 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 760 points · littlexsparkee"
-        },
-        {
-          "title": "Failing grades soar with AI usage 会先影响谁的采购单",
-          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-        },
-        {
-          "title": "这不是技术升级，而是责任边界重画",
-          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
-        }
-      ]
-    },
-    {
-      "id": "industry_chain-hn-48406640-6",
+      "id": "industry_chain-hn-48406640-5",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
       "sourceDesc": "arXiv / HN / 官方博客",
@@ -601,7 +566,7 @@
       "audience": "AI 从业者 / 技术决策者",
       "core": "https:&#x2F;&#x2F;developers.meta.com&#x2F;horizon&#x2F;blog&#x2F;build-apps-for-port...",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 185 points · jenders",
+      "evidence": "Hacker News · 191 points · jenders",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48406640",
       "date": "2026-06-05",
@@ -619,10 +584,52 @@
       "angles": [
         {
           "title": "从 Meta enables ADB on deprecated Por 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 185 points · jenders"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 191 points · jenders"
         },
         {
           "title": "Meta enables ADB on deprecated Por 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-hn-48392004-6",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Hacker News",
+      "baseId": "hn-48392004",
+      "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+      "type": "discussion",
+      "audience": "AI 从业者 / 技术决策者",
+      "core": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+      "evidence": "Hacker News · 762 points · littlexsparkee",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48392004",
+      "date": "2026-06-04",
+      "score": 80,
+      "grade": "B",
+      "priority": "候选",
+      "scoreBreakdown": {
+        "conflict": 20,
+        "roleChange": 16,
+        "counterIntuit": 12,
+        "storyHook": 12,
+        "insight": 12,
+        "evidence": 8
+      },
+      "angles": [
+        {
+          "title": "从 Failing grades soar with AI usage 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 762 points · littlexsparkee"
+        },
+        {
+          "title": "Failing grades soar with AI usage 会先影响谁的采购单",
           "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
         },
         {
@@ -643,7 +650,7 @@
       "audience": "AI 从业者 / 技术决策者",
       "core": "When AI Builds Itself: Our progress toward recursive self-improvement",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 428 points · meetpateltech",
+      "evidence": "Hacker News · 434 points · meetpateltech",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48400842",
       "date": "2026-06-04",
@@ -661,7 +668,7 @@
       "angles": [
         {
           "title": "从 When AI Builds Itself 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 428 points · meetpateltech"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 434 points · meetpateltech"
         },
         {
           "title": "When AI Builds Itself 会先影响谁的采购单",
@@ -685,7 +692,7 @@
       "audience": "AI 从业者 / 技术决策者",
       "core": "Open Code Review – An AI-powered code review CLI tool",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 140 points · geoffbp",
+      "evidence": "Hacker News · 149 points · geoffbp",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48406358",
       "date": "2026-06-05",
@@ -703,7 +710,7 @@
       "angles": [
         {
           "title": "从 Open Code Review – An AI-powered c 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 140 points · geoffbp"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 149 points · geoffbp"
         },
         {
           "title": "Open Code Review – An AI-powered c 会先影响谁的采购单",
@@ -1236,7 +1243,7 @@
         "audience": "AI 从业者 / 技术决策者",
         "core": "Anthropic's open-source framework for AI-powered vulnerability discovery",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 375 points · binyu",
+        "evidence": "Hacker News · 382 points · binyu",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48403980",
         "date": "2026-06-04",
@@ -1254,7 +1261,7 @@
         "angles": [
           {
             "title": "从 Anthropic's open-source framework  看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 375 points · binyu"
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 382 points · binyu"
           },
           {
             "title": "Anthropic's open-source framework  会先影响谁的采购单",
@@ -1480,22 +1487,22 @@
         ]
       },
       {
-        "id": "industry_chain-hn-48392004-5",
+        "id": "industry_chain-hn-48406640-5",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
         "sourceDesc": "arXiv / HN / 官方博客",
         "subSource": "Hacker News",
-        "baseId": "hn-48392004",
-        "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+        "baseId": "hn-48406640",
+        "title": "Meta enables ADB on deprecated Portal devices [video]",
         "type": "discussion",
         "audience": "AI 从业者 / 技术决策者",
-        "core": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+        "core": "https:&#x2F;&#x2F;developers.meta.com&#x2F;horizon&#x2F;blog&#x2F;build-apps-for-port...",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 760 points · littlexsparkee",
+        "evidence": "Hacker News · 191 points · jenders",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=48392004",
-        "date": "2026-06-04",
-        "score": 81,
+        "url": "https://news.ycombinator.com/item?id=48406640",
+        "date": "2026-06-05",
+        "score": 80,
         "grade": "B",
         "priority": "候选",
         "scoreBreakdown": {
@@ -1508,11 +1515,11 @@
         },
         "angles": [
           {
-            "title": "从 Failing grades soar with AI usage 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 760 points · littlexsparkee"
+            "title": "从 Meta enables ADB on deprecated Por 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 191 points · jenders"
           },
           {
-            "title": "Failing grades soar with AI usage 会先影响谁的采购单",
+            "title": "Meta enables ADB on deprecated Por 会先影响谁的采购单",
             "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
           },
           {
