@@ -4,7 +4,7 @@ window.WaveSightContent = {
     "sourceLabel": "Generated from 01-SiteV2/content (11 dates)",
     "brand": "观澜AI",
     "version": "V2.2.1",
-    "generatedAt": "2026-06-05T00:46:31.794Z",
+    "generatedAt": "2026-06-05T01:10:52.000Z",
     "contentRoot": "01-SiteV2/content"
   },
   "tagTaxonomy": [
@@ -32138,284 +32138,69 @@ window.WaveSightContent = {
     }
   ],
   "daily": {
+    "id": "daily-2026-06-05",
     "slug": "daily-2026-06-05",
-    "title": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑",
-    "dek": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
-    "points": [],
-    "risk": "客户采用、预算归属和部署周期仍需继续观察。",
-    "calibration": [
+    "title": "AI 的\"验货时刻\"——Anthropic 一边递交 IPO、一边披露 80% 代码由 AI 写",
+    "issue": "",
+    "period": "",
+    "contentType": "daily_observation",
+    "judgment": "AI 从能力试点进入交付运营阶段",
+    "dek": "AI 从能力试点进入交付运营阶段",
+    "summary": [
+      "本周一 Anthropic 向 SEC 递交 IPO 文件，同一天发布报告称超过 80% 合并代码由 Claude 编写——向市场要信任的同时展示\"被 AI 替代\"的内部现实。"
+    ],
+    "sections": [
       {
-        "id": "OPN-FB-20260605-13",
-        "slug": "unknown-builder-前高盛和meta创始人筹集了300万美元-用于构建被忽视的语音a",
-        "title": "Unknown Builder：#前高盛和Meta创始人筹集了300万美元，用于构建被忽视的语音A",
-        "date": "2026-06-05",
-        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-05--frontier-opinion--unknown-builder-ex-goldman-sachs-and-meta-founders-raise-3m-to-build-t.md",
-        "sourceUrl": "https://techfundingnews.com/ex-goldman-sachs-and-meta-founders-raise-3m-to-build-the-voice-ai-infrastructure-global-tech-giants-overlooked/",
-        "originalDate": "",
-        "speakerLine": "Unknown Builder / follow-builders cloud fallback / keyword search / Anysearch",
-        "originalView": "# Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked - London-based AethexAI emerges from stealth with a $3M pre-seed round led by 4DX Ventures - The startup is already handling up to 15,000 production calls daily for enterprise customers.... query=AI founder seed funding cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-        "originalTranslation": "#前高盛和Meta创始人筹集了300万美元，用于构建被忽视的语音AI基础设施全球科技巨头-总部位于伦敦的AethexAI通过4DX Ventures领导的300万美元种子前融资脱颖而出-这家初创公司每天已为企业客户处理多达15,000个生产电话.... query = AI创始人种子资金云后备观点/文章搜索;用作发现，直到原始文本和页面类型通过下游大门",
-        "interpretation": "这条观点有独立参照价值，可帮助判断产品路线、客户采用或工作流变化。",
-        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-        "opinionTier": "sidebar",
-        "displayLane": "signal_sidebar",
-        "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, customer, exa；包含数据、客户或业务量级线索",
-        "ratingScore": 5,
-        "publishStatus": "frontstage_sidebar",
-        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-        "relations": [],
-        "relatedSignals": [],
-        "relatedTrends": [],
-        "relatedTrendReports": [],
-        "tags": [
-          {
-            "id": "scenario-frontier-opinion",
-            "name": "前沿观点",
-            "group": "scenario",
-            "aliases": [
-              "观点证据",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "evidence-frontier-opinion",
-            "name": "前沿观点",
-            "group": "evidence",
-            "aliases": [
-              "观点",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "source-social",
-            "name": "社媒线索",
-            "group": "source",
-            "aliases": [
-              "X",
-              "社区"
-            ]
-          },
-          {
-            "id": "opinion-agent-workflow",
-            "name": "Agent 工作流观点",
-            "group": "opinion",
-            "aliases": [
-              "多 Agent",
-              "工作流"
-            ]
-          },
-          {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI 治理",
-            "group": "track",
-            "aliases": [
-              "Agent 治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
-            "id": "track-enterprise-workflow",
-            "name": "企业工作流",
-            "group": "track",
-            "aliases": [
-              "企业 AI 工作流",
-              "工作流自动化"
-            ]
-          },
-          {
-            "id": "customer-enterprise",
-            "name": "大中型企业",
-            "group": "customer",
-            "aliases": [
-              "企业客户"
-            ]
-          },
-          {
-            "id": "track-ai-customer-service",
-            "name": "AI 客服",
-            "group": "track",
-            "aliases": [
-              "Voice AI",
-              "语音客服"
-            ]
-          },
-          {
-            "id": "function-customer-service",
-            "name": "客服售后",
-            "group": "function",
-            "aliases": [
-              "客服",
-              "售后",
-              "质检"
-            ]
-          },
-          {
-            "id": "scenario-customer-ticket",
-            "name": "工单与质检",
-            "group": "scenario",
-            "aliases": [
-              "工单",
-              "质检",
-              "智能派单"
-            ]
-          }
-        ]
+        "title": "IPO 前夕，Daniela 的钢丝绳",
+        "body": "Bloomberg Tech Conference 上，联合创始人 Daniela Amodei 被问到 AI 回报问题时没有回避。她的底气来自数字：Anthropic 年化营收在 5 月跨过 $47B，是 2025 年底 $9B 的五倍。但同一场会上，Uber 刚警告 AI 支出不一定都产生价值。Daniela 的回答是：\"前期成本确实很高，但能推动前沿的那批公司需要公开市场的资本。\""
       },
       {
-        "id": "OPN-FB-20260605-19",
-        "slug": "unknown-builder-企业级ai解决方案总实施成本通常从-100万开始-可能超过-1",
-        "title": "Unknown Builder：企业级AI解决方案总实施成本通常从$ 100万开始，可能超过$ 1",
-        "date": "2026-06-05",
-        "sourcePath": "01-SiteV2/knowledge/02-Opinion-Cards/2026-06-05--frontier-opinion--unknown-builder-the-true-cost-of-implementing-ai-in-business-in-2026-r.md",
-        "sourceUrl": "https://riseuplabs.com/cost-of-implementing-ai-in-business/",
-        "originalDate": "",
-        "speakerLine": "Unknown Builder / follow-builders cloud fallback / keyword search / Anysearch",
-        "originalView": "Enterprise-Grade AI Solutions Total implementation costs often start at $1 million and can exceed $10 million, especially for large-scale or mission-critical systems. For enterprises, these initiatives are long-term strategic investments rather than standalone technology projects. query=AI startup enterprise adoption pricing cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-        "originalTranslation": "企业级AI解决方案总实施成本通常从$ 100万开始，可能超过$ 1000万，特别是对于大型或任务关键型系统。对于企业来说，这些举措是长期的战略投资，而不是独立的技术项目。query = AI初创企业采用定价云后备观点/文章搜索;用作发现，直到原始文本和页面类型通过下游大门",
-        "interpretation": "这条观点把企业 AI 采用拉回预算、用量治理和模型分配问题。",
-        "calibrates": "这是人物或机构观点，不单独证明公司动作、客户采用、收入、融资或市场规模；涉及事实判断时，仍需公司材料或可靠报道支持。",
-        "opinionTier": "sidebar",
-        "displayLane": "signal_sidebar",
-        "selectionReason": "follow-builders 人物池来源；商业/产品变量：enterprise, cost, pricing；包含数据、客户或业务量级线索",
-        "ratingScore": 5,
-        "publishStatus": "frontstage_sidebar",
-        "usage": "可作为读者理解企业采购讨论的观点参照；涉及公司事实时，还需要合同、产品或客户案例支持。",
-        "relations": [],
-        "relatedSignals": [],
-        "relatedTrends": [],
-        "relatedTrendReports": [],
-        "tags": [
-          {
-            "id": "scenario-frontier-opinion",
-            "name": "前沿观点",
-            "group": "scenario",
-            "aliases": [
-              "观点证据",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "evidence-frontier-opinion",
-            "name": "前沿观点",
-            "group": "evidence",
-            "aliases": [
-              "观点",
-              "建造者观点"
-            ]
-          },
-          {
-            "id": "source-social",
-            "name": "社媒线索",
-            "group": "source",
-            "aliases": [
-              "X",
-              "社区"
-            ]
-          },
-          {
-            "id": "opinion-ai-safety-governance",
-            "name": "AI 安全治理观点",
-            "group": "opinion",
-            "aliases": [
-              "安全",
-              "权限",
-              "治理"
-            ]
-          },
-          {
-            "id": "track-ai-agent",
-            "name": "AI Agent",
-            "group": "track",
-            "aliases": [
-              "AI-Agent",
-              "智能体"
-            ]
-          },
-          {
-            "id": "track-ai-governance",
-            "name": "AI 治理",
-            "group": "track",
-            "aliases": [
-              "Agent 治理",
-              "权限审计"
-            ]
-          },
-          {
-            "id": "scenario-agent-governance",
-            "name": "Agent 权限治理",
-            "group": "scenario",
-            "aliases": [
-              "审计",
-              "权限",
-              "风险控制"
-            ]
-          },
-          {
-            "id": "track-enterprise-workflow",
-            "name": "企业工作流",
-            "group": "track",
-            "aliases": [
-              "企业 AI 工作流",
-              "工作流自动化"
-            ]
-          },
-          {
-            "id": "customer-enterprise",
-            "name": "大中型企业",
-            "group": "customer",
-            "aliases": [
-              "企业客户"
-            ]
-          },
-          {
-            "id": "track-ai-infra",
-            "name": "AI 基础设施",
-            "group": "track",
-            "aliases": [
-              "AI Infra",
-              "模型基础设施"
-            ]
-          },
-          {
-            "id": "function-procurement-bidding",
-            "name": "采购投标",
-            "group": "function",
-            "aliases": [
-              "招投标",
-              "采购"
-            ]
-          },
-          {
-            "id": "evidence-procurement",
-            "name": "招投标 / 采购",
-            "group": "evidence",
-            "aliases": [
-              "招标",
-              "政府采购"
-            ]
-          }
-        ]
+        "title": "80% 代码由 AI 写，工程师产出 8 倍",
+        "body": "Anthropic 的《递归自我改进》报告把内部数据摊开了：截至 5 月，Claude 写了超过 80% 的合并代码；典型工程师季度产出是 2021–2025 年均值的 8 倍。Mythos（Anthropic 的内部研究模型）在\"选择下一步做什么\"上，有 64% 的情况比人类研究者做得更好。但报告没有回避隐忧——一位工程师写道：\"一切都自动化了，比我更快更好。\""
+      },
+      {
+        "title": "Claude Code 2.1.163：企业说\"管住它\"",
+        "body": "IPO 前三天，Claude Code 发布 v2.1.163，新增 requiredMinimumVersion 和 requiredMaximumVersion 两个托管设置项——企业管理员可以强制锁定版本范围。这个\"fleet lock\"功能来自企业客户的最大诉求：\"我们不怕它快，怕它不受控。\"当 AI 写代码从个人工具变成团队基础设施，管控能力就是运营能力的门槛。"
+      },
+      {
+        "title": "同一周，对手的可靠性教训",
+        "body": "硬币的另一面：OpenAI Codex 在 24 小时内遭遇 3 次可靠性故障——自动压缩中断、Git 状态失效、缓存残留崩溃。负责人 Thibault Sottiaux 重置了所有付费用户额度作为补偿。当 AI 成为主力写手，人类审稿人成为新的瓶颈。这不是\"能不能写\"的问题，是\"能不能持续可靠地写\"的问题。"
       }
     ],
+    "homeTitle": "AI 的\"验货时刻\"——Anthropic 一边 IPO 一边说 80% 代码是 AI 写的",
+    "homeSummary": "Anthropic 同一周递交 IPO 和发布递归自我改进报告，80% 代码由 Claude 编写、工程师产出 8 倍。同一周 OpenAI Codex 遭 3 次可靠性故障。AI 从\"能不能用\"进入\"能不能稳定运营\"的验货时刻。",
+    "homeCards": [
+      {
+        "label": "IPO 在即",
+        "title": "Anthropic 秘密递交 S-1，估值 $965B",
+        "body": "年化营收 $47B，是 2025 年底的五倍。Daniela Amodei 在 Bloomberg 大会上回应 AI 回报质疑。"
+      },
+      {
+        "label": "自曝家底",
+        "title": "报告：80% 代码由 Claude 编写，产出 8 倍",
+        "body": "工程师季度产出是 2021–2025 年均值的 8 倍。Mythos 在研究判断力上 64% 超越人类。"
+      },
+      {
+        "label": "运营考验",
+        "title": "同一周：OpenAI Codex 24 小时 3 次故障",
+        "body": "自动压缩中断、Git 缓存失效。Claude Code 发布 fleet lock 功能满足企业管控需求。"
+      }
+    ],
+    "columnPage": {
+      "title": "AI 的\"验货时刻\"——Anthropic 一边递交 IPO、一边披露 80% 代码由 AI 写",
+      "thesis": "AI 从能力试点进入交付运营阶段",
+      "body": "本周一 Anthropic 向 SEC 递交 IPO 文件，同一天发布报告称超过 80% 合并代码由 Claude 编写——向市场要信任的同时展示\"被 AI 替代\"的内部现实。",
+      "impact": "Anthropic IPO 的估值高度依赖市场对 AI 运营能力的信任。80% AI 写代码是效率故事还是新的脆弱面，取决于企业管控和可靠性是否能跟上速度。OpenAI Codex 同日故障恰好提醒：当 AI 成为基础设施，每一次宕机都不再是个人体验问题。"
+    },
+    "points": [
+      "Anthropic 递交 IPO 同日发布 80% 代码由 AI 写的报告，形成强烈信号反差",
+      "工程师产出 8 倍，但内部有人焦虑\"一切自动化了\"",
+      "Claude Code v2.1.163 企业管控功能（fleet lock）暗示从个人工具到基础设施的转变",
+      "OpenAI Codex 24 小时 3 次故障，对面是可靠性问题",
+      "核心判断：AI 从\"能不能用\"的能力试点进入\"能不能运营\"的交付阶段"
+    ],
+    "risk": "Anthropic IPO 的估值高度依赖市场对 AI 运营能力的信任。80% AI 写代码是效率故事还是新的脆弱面，取决于企业管控和可靠性是否能跟上速度。OpenAI Codex 同日故障恰好提醒：当 AI 成为基础设施，每一次宕机都不再是个人体验问题。",
+    "calibration": [],
     "link": "daily-detail.html"
   },
   "trendReport": {
