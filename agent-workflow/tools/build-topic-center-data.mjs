@@ -394,12 +394,13 @@ async function fetchArxiv(query, limit = 8) {
 }
 
 /**
- * 每日推荐一篇AI研究文章（方法/技术/趋势/技巧类）。
- * 从 arXiv 抓取当天最新论文，按实用性和可读性评分选最优。
+ * 每日推荐一篇AI编程/工具/实践类文章。
+ * 面向vibecoding新手用户——更侧重编程助手、工具入门、实践指南。
+ * 从 arXiv 程序语言/人机交互/AI 分类中抓取最新文章。
  */
 async function fetchRecommendedPaper(date) {
   const papers = await fetchArxiv(
-    "cat:cs.AI+AND+abs:(method+OR+technique+OR+framework+OR+approach+OR+system+OR+reasoning+OR+alignment+OR+training+OR+agent+OR+optimization+OR+architecture)",
+    "(cat:cs.SE+OR+cat:cs.HC+OR+cat:cs.AI)+AND+abs:(code+generation+OR+copilot+OR+programming+assistant+OR+tutorial+OR+guide+OR+build+OR+prompt+OR+developer+tool+OR+LLM+OR+code+repair+OR+code+synthesis+OR+application+OR+demo+OR+how+to)",
     20
   );
   if (!papers.length) return null;
@@ -407,20 +408,50 @@ async function fetchRecommendedPaper(date) {
   const scored = papers.map((p) => {
     const text = `${p.title} ${p.summary}`.toLowerCase();
     let score = 0;
-    // 实用/应用类
-    if (/agent|tool|deploy|practical|benchmark|evaluation|open.?source|api|sdk/i.test(text)) score += 4;
-    // 方法/技术类
-    if (/method|technique|approach|framework|architecture|algorithm|optimization/i.test(text)) score += 3;
-    // 热门趋势
-    if (/reasoning|alignment|safety|training|scaling|efficiency|inference/i.test(text)) score += 2;
-    // 有明确结果/数据
-    if (/\d+[%x.]|improve|reduce|achieve|outperform|state.?of.?the.?art/i.test(text)) score += 2;
-    // 太理论/数学多的扣分
-    if (/theorem|lemma|proof|conjecture|mathematical|axiom/i.test(text)) score -= 3;
+    // 🔥 核心：vibecoding / AI编程实操类（最高加分）
+    if (/vibecode|vibe.?cod|copilot|code.?generat|code.?synthesis|programming.?assistant|ai.?assisted.?programming|ai.?programming|code.?complet|code.?repair|auto.?complet/i.test(text)) score += 5;
+    // 🎯 教程/入门/实战指南类
+    if (/tutorial|getting.?start|beginner|practical.?guide|how.?to|step.?by.?step|walkthrough|上手|入门|实践|指南|新手/i.test(text)) score += 5;
+    // 🛠 工具/框架/SDK 类
+    if (/tool|sdk|api|cli|framework|library|plugin|extension|ide|editor|workspace|开发工具|工具包/i.test(text)) score += 4;
+    // 💡 prompt工程/agent实操
+    if (/prompt.?engineer|prompt.?design|chain.?of.?thought|agent.?workflow|agent.?orchestrat|llm.?pipeline|多步推理|思维链/i.test(text)) score += 3;
+    // 🚀 应用构建/项目实战
+    if (/build|creat|develop|implement|deploy|application|project|demo|prototype|case.?study|构建|开发|部署|应用/i.test(text)) score += 3;
+    // 📊 有用数据/效果对比（但对新手加分不如上面的高）
+    if (/\d+[%x.]|improve|reduce|achieve|user.?stud|empirical|survey|comparison|评测|对比|调研/i.test(text)) score += 1;
+    // ❌ 太理论/数学多的扣分（不适合新手）
+    if (/theorem|lemma|proof|conjecture|mathematical|axiom|convergence|asymptotic|complexity.?class|computational.?complexity/i.test(text)) score -= 4;
+    // ❌ 纯benchmark/评测没有实操价值的减分
+    if (/benchmark.?suite|leaderboard|dataset.?curation/i.test(text)) score -= 1;
     return { ...p, _score: score };
   });
   scored.sort((a, b) => b._score - a._score);
-  const best = scored[0];
+  let best = scored[0];
+  if (!best || best._score < 2) {
+    // arXiv 没有合适的——从 HN best 帖子里找编程实操/工具类内容
+    const hnStories = await fetchHnItems("beststories", 30);
+    const vibeStories = hnStories.filter((s) => {
+      const t = `${s.title} ${s.text || ""}`.toLowerCase();
+      return /ai|llm|gpt|claude|copilot|code|coding|programming|build|tool|tutorial|guide|开发|编程|工具|教程/i.test(t) &&
+        !/show hn/i.test(s.title);
+    });
+    if (vibeStories.length) {
+      const hnScored = vibeStories.map((s) => {
+        const t = `${s.title} ${s.text || ""}`.toLowerCase();
+        let score = 0;
+        if (/vibecode|vibe.?cod|copilot|code.?generat|programming.?assistant|ai.?assisted.?programming|ai.?programming|code.?complet/i.test(t)) score += 5;
+        if (/tutorial|getting.?start|beginner|how.?to|step.?by.?step|walkthrough|上手|入门|实践|指南/i.test(t)) score += 5;
+        if (/tool|sdk|api|cli|framework|plugin|extension|ide/i.test(t)) score += 4;
+        if (/prompt.?engineer|prompt.?design|agent.?workflow|chain.?of.?thought/i.test(t)) score += 3;
+        if (/build|creat|develop|deploy|application|project|demo|prototype/i.test(t)) score += 3;
+        if (/theorem|lemma|proof|mathematical|axiom|convergence/i.test(t)) score -= 4;
+        return { title: s.title, summary: s.text?.slice(0, 300) || s.title, link: s.url || `https://news.ycombinator.com/item?id=${s.id}`, authors: "Hacker News", _score: score };
+      });
+      hnScored.sort((a, b) => b._score - a._score);
+      best = hnScored[0];
+    }
+  }
   if (!best || best._score < 2) return null;
 
   return {
