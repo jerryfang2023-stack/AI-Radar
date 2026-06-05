@@ -1032,7 +1032,20 @@ async function main() {
   const allEventCandidates = [...rawPool, ...industryChain];
   const diversifiedEvents = diversifyEvents(allEventCandidates, 2);
   // 推荐论文：今日AI研究文章
-  const recommendedPaper = await fetchRecommendedPaper(date);
+  let recommendedPaper = await fetchRecommendedPaper(date);
+  // 去重检查：论文标题不能和事件明显重复
+  if (recommendedPaper) {
+    const paperWords = new Set(recommendedPaper.title.toLowerCase().split(/[^a-z0-9\u4e00-\u9fff]+/).filter(Boolean));
+    const isDup = diversifiedEvents.some((evt) => {
+      const evtWords = new Set((evt.title || '').toLowerCase().split(/[^a-z0-9\u4e00-\u9fff]+/).filter(Boolean));
+      const overlap = [...paperWords].filter((w) => evtWords.has(w) && w.length > 1).length;
+      return paperWords.size > 0 && overlap / paperWords.size > 0.6;
+    });
+    if (isDup) {
+      console.log(`[dedup] paper "${recommendedPaper.title.slice(0, 60)}" overlaps with event — skipping`);
+      recommendedPaper = null;
+    }
+  }
   const data = {
     meta: {
       version: topicCenterVersion,
