@@ -1,0 +1,313 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-008
+title: "Claude Cowork 产品指南"
+original_url: "https://claude.com/blog/the-claude-cowork-product-guide"
+canonical_url: "https://claude.com/blog/the-claude-cowork-product-guide"
+source_name: "Claude：Blog（网页）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-05T19:34:22.568Z"
+collected_at: 2026-06-06T05:51:12.986Z
+language: mixed
+full_text_hash: 32b68cc9d8c443e4
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-008-claude-cowork-产品指南.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-008-claude-cowork-产品指南.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":3560,"paragraph_count":33,"sentence_count":17,"boilerplate_hits":2,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 3560
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"32b68cc9d8c443e4","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude Cowork 产品指南","discovery_summary":"Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程、Claude Cowork 跨应用知识工作）、设置要求、权限模型、七种常见工作流（如研究简报、会议准备、定期报告）以及营销和产品管理等插件。","source_name":"Claude：Blog（网页）","origin_url":"https://claude.com/blog/the-claude-cowork-product-guide","discovered_at":"2026-06-06T05:39:58.359Z","rank_on_page":129,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 69823c7bfbc9a9bd
+content_hash: 32b68cc9d8c443e4
+semantic_hash: 52e1dae7604547b7
+duplicate_of: ""
+first_seen_at: "2026-06-05T19:34:22.568Z"
+last_seen_at: 2026-06-06T05:51:12.986Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["Claude","Blog（网页）","Anthropic","Google"],"products":["Claude","claude","agent"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["5","2026","0","3","2026\nB","27"],"quotes":[]}
+evidence_seed: {"company_actions":["Category Enterprise AI Product Claude Cowork Date June 5, 2026 Reading time min Share Copy link https://claude.","com/blog/the-claude-cowork-product-guide Most AI tools are conversational.","You ask a question, you get an answer, and the work of turning that answer into something useful—a deck, a doc, a spreadsheet, an email—is still manual."],"case_details":[],"workflow_changes":["Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程、Claude Cowork 跨应用知识工作）、设置要求、权限模型、七种常见工作流（如研究简报、会议准备、定期报告）以及营销和产品管理等插件。","The Claude Cowork product guide We share how to get started with Claude Cowork, including the workflows, habits, and plugins that turn your ideas into polished deliverables."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程、Claude Cowork 跨应用知识工作）、设置要求、权限模型、七种常见工作流（如研究简报、会议准备、定期报告）以及营销和产品管理等插件。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The Claude Cowork product guide We share how to get started with Claude Cowork, including the workflows, habits, and plugins that turn your ideas into polished deliverables.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Category Enterprise AI Product Claude Cowork Date June 5, 2026 Reading time min Share Copy link https://claude.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/blog/the-claude-cowork-product-guide Most AI tools are conversational.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You ask a question, you get an answer, and the work of turning that answer into something useful—a deck, a doc, a spreadsheet, an email—is still manual.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Claude Cowork, our new knowledge work agent, lets you delegate this work to Claude so you can focus on solving more the strategic and creative problems that's occupying your time.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Claude Cowork 产品指南
+
+## clean_text
+
+The Claude Cowork product guide
+We share how to get started with Claude Cowork, including the workflows, habits, and plugins that turn your ideas into polished deliverables.
+Category
+Enterprise AI
+Product
+Claude Cowork
+Date
+June 5, 2026
+Reading time
+min
+Share
+Copy link https://claude.com/blog/the-claude-cowork-product-guide
+Most AI tools are conversational. You ask a question, you get an answer, and the work of turning that answer into something useful—a deck, a doc, a spreadsheet, an email—is still manual.
+Claude Cowork, our new knowledge work agent, lets you delegate this work to Claude so you can focus on solving more the strategic and creative problems that's occupying your time. Running in the Claude desktop app, Claude Cowork reads and writes local files, works across connected apps like Slack and Google Drive, and carries multi-step tasks through to real deliverables, with citations back to the actual files and messages. You describe the goal, desired outcome and cadence, and Claude lays out the steps and does the work, ensuring that you're along every step of the way.
+To help you get started, we put together a practical product guide for Claude Cowork. We share:
+What makes Claude Cowork different from conversational AI tools and its core capabilities, including local file access, subagents, long-running work, and scheduled tasks
+A product matrix for understanding when to use what tool: chat for conversational drafting, Claude Code for coding, and Claude Cowork for cross-app knowledge work
+Setup and system requirements , the permissions model, and what to try first
+Seven common Claude Cowork workflows , including research briefs, meeting prep, and recurring reports
+How to use plugins for specific knowledge work like marketing and product management
+Check it out, here .
+Get started with Claude Cowork today.
+No items found.
+Prev Prev
+0 / 5
+Next Next
+eBook
+FAQ
+No items found.
+Related posts
+Explore more product news and best practices for teams building with Claude.
+Jun 5, 2026
+How one Anthropic seller rebuilt his team's workflows with Claude Code
+Claude Code
+How one Anthropic seller rebuilt his team's workflows with Claude Code How one Anthropic seller rebuilt his team's workflows with Claude Code
+How one Anthropic seller rebuilt his team's workflows with Claude Code How one Anthropic seller rebuilt his team's workflows with Claude Code
+Jun 3, 2026
+How Anthropic enables self-service data analytics with Claude
+Enterprise AI
+How Anthropic enables self-service data analytics with Claude How Anthropic enables self-service data analytics with Claude
+How Anthropic enables self-service data analytics with Claude How Anthropic enables self-service data analytics with Claude
+Jun 3, 2026
+Best practices for getting started with Claude Cowork
+Enterprise AI
+Best practices for getting started with Claude Cowork Best practices for getting started with Claude Cowork
+Best practices for getting started with Claude Cowork Best practices for getting started with Claude Cowork
+May 27, 2026
+Using LLMs to secure source code
+Enterprise AI
+Using LLMs to secure source code Using LLMs to secure source code
+Using LLMs to secure source code Using LLMs to secure source code
+Transform how your organization operates with Claude
+See pricing
+See pricing See pricing
+Contact sales
+Contact sales Contact sales
+Get the developer newsletter
+Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.
+Thank you! You’re subscribed.
+Sorry, there was a problem with your submission, please try again later.
+
+## full_text
+
+The Claude Cowork product guide
+We share how to get started with Claude Cowork, including the workflows, habits, and plugins that turn your ideas into polished deliverables.
+Category
+Enterprise AI
+Product
+Claude Cowork
+Date
+June 5, 2026
+Reading time
+min
+Share
+Copy link https://claude.com/blog/the-claude-cowork-product-guide
+Most AI tools are conversational. You ask a question, you get an answer, and the work of turning that answer into something useful—a deck, a doc, a spreadsheet, an email—is still manual.
+Claude Cowork, our new knowledge work agent, lets you delegate this work to Claude so you can focus on solving more the strategic and creative problems that's occupying your time. Running in the Claude desktop app, Claude Cowork reads and writes local files, works across connected apps like Slack and Google Drive, and carries multi-step tasks through to real deliverables, with citations back to the actual files and messages. You describe the goal, desired outcome and cadence, and Claude lays out the steps and does the work, ensuring that you're along every step of the way.
+To help you get started, we put together a practical product guide for Claude Cowork. We share:
+What makes Claude Cowork different from conversational AI tools and its core capabilities, including local file access, subagents, long-running work, and scheduled tasks
+A product matrix for understanding when to use what tool: chat for conversational drafting, Claude Code for coding, and Claude Cowork for cross-app knowledge work
+Setup and system requirements , the permissions model, and what to try first
+Seven common Claude Cowork workflows , including research briefs, meeting prep, and recurring reports
+How to use plugins for specific knowledge work like marketing and product management
+Check it out, here .
+Get started with Claude Cowork today.
+No items found.
+Prev Prev
+0 / 5
+Next Next
+eBook
+FAQ
+No items found.
+Related posts
+Explore more product news and best practices for teams building with Claude.
+Jun 5, 2026
+How one Anthropic seller rebuilt his team's workflows with Claude Code
+Claude Code
+How one Anthropic seller rebuilt his team's workflows with Claude Code How one Anthropic seller rebuilt his team's workflows with Claude Code
+How one Anthropic seller rebuilt his team's workflows with Claude Code How one Anthropic seller rebuilt his team's workflows with Claude Code
+Jun 3, 2026
+How Anthropic enables self-service data analytics with Claude
+Enterprise AI
+How Anthropic enables self-service data analytics with Claude How Anthropic enables self-service data analytics with Claude
+How Anthropic enables self-service data analytics with Claude How Anthropic enables self-service data analytics with Claude
+Jun 3, 2026
+Best practices for getting started with Claude Cowork
+Enterprise AI
+Best practices for getting started with Claude Cowork Best practices for getting started with Claude Cowork
+Best practices for getting started with Claude Cowork Best practices for getting started with Claude Cowork
+May 27, 2026
+Using LLMs to secure source code
+Enterprise AI
+Using LLMs to secure source code Using LLMs to secure source code
+Using LLMs to secure source code Using LLMs to secure source code
+Transform how your organization operates with Claude
+See pricing
+See pricing See pricing
+Contact sales
+Contact sales Contact sales
+Get the developer newsletter
+Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.
+Thank you! You’re subscribed.
+Sorry, there was a problem with your submission, please try again later.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 85
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":3560,"paragraph_count":33,"sentence_count":17,"boilerplate_hits":2,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程、Claude Cowork 跨应用知识工作）、设置要求、权限模型、七种常见工作流（如研究简报、会议准备、定期报告）以及营销和产品管理等插件。
+
+2. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The Claude Cowork product guide We share how to get started with Claude Cowork, including the workflows, habits, and plugins that turn your ideas into polished deliverables.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Category Enterprise AI Product Claude Cowork Date June 5, 2026 Reading time min Share Copy link https://claude.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   com/blog/the-claude-cowork-product-guide Most AI tools are conversational.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   You ask a question, you get an answer, and the work of turning that answer into something useful—a deck, a doc, a spreadsheet, an email—is still manual.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Claude Cowork, our new knowledge work agent, lets you delegate this work to Claude so you can focus on solving more the strategic and creative problems that's occupying your time.
+
+## business_elements
+
+- companies: Claude, Blog（网页）, Anthropic, Google
+- products: Claude, claude, agent
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 5, 2026, 0, 3, 2026
+B, 27
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Category Enterprise AI Product Claude Cowork Date June 5, 2026 Reading time min Share Copy link https://claude. / com/blog/the-claude-cowork-product-guide Most AI tools are conversational. / You ask a question, you get an answer, and the work of turning that answer into something useful—a deck, a doc, a spreadsheet, an email—is still manual.
+- case_details: 暂无公开信息
+- workflow_changes: Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程、Claude Cowork 跨应用知识工作）、设置要求、权限模型、七种常见工作流（如研究简报、会议准备、定期报告）以及营销和产品管理等插件。 / The Claude Cowork product guide We share how to get started with Claude Cowork, including the workflows, habits, and plugins that turn your ideas into polished deliverables.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude Cowork 产品指南","discovery_summary":"Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程、Claude Cowork 跨应用知识工作）、设置要求、权限模型、七种常见工作流（如研究简报、会议准备、定期报告）以及营销和产品管理等插件。","source_name":"Claude：Blog（网页）","origin_url":"https://claude.com/blog/the-claude-cowork-product-guide","discovered_at":"2026-06-06T05:39:58.359Z","rank_on_page":129,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程、Claude Cowork 跨应用知识工作）、设置要求、权限模型、七种常见工作流（如研究简报、会议准备、定期报告）以及营销和产品管理等插件。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
