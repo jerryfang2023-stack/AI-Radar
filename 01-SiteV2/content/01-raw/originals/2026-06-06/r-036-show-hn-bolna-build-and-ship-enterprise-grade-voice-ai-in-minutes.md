@@ -1,0 +1,213 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-036
+title: "Show HN: Bolna – build and ship enterprise grade voice AI in minutes"
+original_url: "https://news.ycombinator.com/item?id=41234490"
+canonical_url: "https://news.ycombinator.com/item?id=41234490"
+source_name: "keyword search / HN community feedback"
+source_type: industry
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_user_feedback"
+search_path: "community_feedback"
+search_path_label: "社区反馈路径"
+author: ""
+published_at: "2024-08-13T11:47:49.000Z"
+collected_at: 2026-06-06T05:51:13.097Z
+language: mixed
+full_text_hash: a4cd1a3cfe26df05
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-036-show-hn-bolna-build-and-ship-enterprise-grade-voice-ai-in-minutes.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-036-show-hn-bolna-build-and-ship-enterprise-grade-voice-ai-in-minutes.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 80
+extractor_diagnostics: {"readability_score":80,"text_length":3851,"paragraph_count":10,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0.0068,"method":"body-visible-text"}
+has_full_text: true
+content_length: 3851
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a4cd1a3cfe26df05","missing":[]}
+source_volatility: high
+community_name: "keyword search / HN community feedback"
+capture_scope: thread_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 3f2647dca03bb27c
+content_hash: a4cd1a3cfe26df05
+semantic_hash: 631e3c5cfb20ab22
+duplicate_of: ""
+first_seen_at: "2024-08-13T11:47:49.000Z"
+last_seen_at: 2026-06-06T05:51:13.097Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","HN community feedback","GitHub"],"products":["agent","agents"],"people":[],"industries":["法律 / 法务","开发者工具","企业服务"],"roles":["开发者 / 工程团队","法务 / 律师"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","法务"],"numbers":["5","2","007","13","2024","1313096","2237","64"],"quotes":[]}
+evidence_seed: {"company_actions":["5 points / 2 comments / linked_url=https://github.com/bolna-ai/bolna / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","Show HN: Bolna – build and ship enterprise grade voice AI in minutes | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Show HN: Bolna – build and ship enterprise grade voice AI in minutes ( github.","com/bolna-ai ) 5 points by xan_ps007 on Aug 13, 2024 | hide | past | favorite | 2 comments Hi Hacker News!"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"5 points / 2 comments / linked_url=https://github.com/bolna-ai/bolna / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Show HN: Bolna – build and ship enterprise grade voice AI in minutes | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Show HN: Bolna – build and ship enterprise grade voice AI in minutes ( github.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"com/bolna-ai ) 5 points by xan_ps007 on Aug 13, 2024 | hide | past | favorite | 2 comments Hi Hacker News!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This is Maitreya, Marmik and Prateek, co-founders of Bolna ( https://github.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"com/bolna-ai/bolna ).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"With Bolna, developers can create end-to-end conversational voice agents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Show HN: Bolna – build and ship enterprise grade voice AI in minutes
+
+## clean_text
+
+Show HN: Bolna – build and ship enterprise grade voice AI in minutes | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login
+Show HN: Bolna – build and ship enterprise grade voice AI in minutes ( github.com/bolna-ai )
+5 points by xan_ps007 on Aug 13, 2024 | hide | past | favorite | 2 comments
+Hi Hacker News! This is Maitreya, Marmik and Prateek, co-founders of Bolna ( https://github.com/bolna-ai/bolna ). With Bolna, developers can create end-to-end conversational voice agents. They can connect to their own custom LLMs, their own Telephony, their own models etc. and create application features requiring voice AI. Here’s a small video: https://github.com/bolna-ai/bolna/assets/1313096/2237f64f-1c... . Our product originates from building an AI interviewer bot which can be used for practising coding interviews like Leetcode. By trying to build something like that, we realized that the orchestration layer can be a real pain point and hence something that everyone might want to use and build upon for any Voice AI feature. The hypothesis quickly got verified with the immense usage. We started off as a complete open source solution but quickly realized that to enable and expediate adoption and usage, we will need to create APIs on top of it so developers find it very very easy to use it. Hence, our package is wrapped over by an API layer which can be extended. Our primary focus has been to provide reliability towards latency and successful conversations. Our github repo https://github.com/bolna-ai/bolna has maintained a 30% fork:star ratio which is pretty massive from our point of view. We've seen developers fork us and try to build their own layers, their own telephony components, their own custom LLMs and models, etc. Later on we also released our hosted APIs for developers who wanted to use our managed hosted solutions - https://docs.bolna.dev/introduction and built a no-code/low-code playground for trying it out - https://playground.bolna.dev with a "chat" option to tune & test prompts since we realized that prompt is a very critical part for conversations to succeed. We recently released a complete open source end-to-end stack combining Whisper + Llama + MeloTTS ( https://github.com/bolna-ai/bolna/tree/master/examples/whisp... ) and hosted it's dockerized versions as well (still WIP) on docker hub. We think Bolna is quite unique since it encapsulates the underlying orchestration into API-able structure enabling developers to get started quickly via Docker, etc. I've been a great lover (and user) of the Elastic stack since 1.3x versions (circa. 2014) and trying to use a lot of inspiration from their open source process and philosophy on how to improve the adoption and usage. If this sounds interesting to you, please check us out! You can check us out our open source github repository at Github - https://github.com/bolna-ai or our hosted no-code/low-code dashboard at - https://playground.bolna.dev . We’d really love to hear your feedback and look forward to all of the comments!
+ramonverse on Aug 13, 2024 [–]
+how do you handle latency issues in real-time voice conversations?
+what specific optimizations have you implemented in the orchestration layer to minimize delays between speech recognition, llm processing, and text-to-speech output?
+xan_ps007 on Aug 13, 2024 | parent [–]
+hey! that's a great question. Initially, we had multiple processes for every component (ASR, LLM, TTS) and using a configurable settings pair of endpointing and token_size we used to handle it since for some cases latency might be an issue but some some others (where there are longer responses) it might not be that much of an issue. Later on, we also integrated with caching and routing to minimize unnecessary calls.
+Guidelines | FAQ | Lists | API | Security | Legal | Apply to YC | Contact
+
+## full_text
+
+Show HN: Bolna – build and ship enterprise grade voice AI in minutes | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login
+Show HN: Bolna – build and ship enterprise grade voice AI in minutes ( github.com/bolna-ai )
+5 points by xan_ps007 on Aug 13, 2024 | hide | past | favorite | 2 comments
+Hi Hacker News! This is Maitreya, Marmik and Prateek, co-founders of Bolna ( https://github.com/bolna-ai/bolna ). With Bolna, developers can create end-to-end conversational voice agents. They can connect to their own custom LLMs, their own Telephony, their own models etc. and create application features requiring voice AI. Here’s a small video: https://github.com/bolna-ai/bolna/assets/1313096/2237f64f-1c... . Our product originates from building an AI interviewer bot which can be used for practising coding interviews like Leetcode. By trying to build something like that, we realized that the orchestration layer can be a real pain point and hence something that everyone might want to use and build upon for any Voice AI feature. The hypothesis quickly got verified with the immense usage. We started off as a complete open source solution but quickly realized that to enable and expediate adoption and usage, we will need to create APIs on top of it so developers find it very very easy to use it. Hence, our package is wrapped over by an API layer which can be extended. Our primary focus has been to provide reliability towards latency and successful conversations. Our github repo https://github.com/bolna-ai/bolna has maintained a 30% fork:star ratio which is pretty massive from our point of view. We've seen developers fork us and try to build their own layers, their own telephony components, their own custom LLMs and models, etc. Later on we also released our hosted APIs for developers who wanted to use our managed hosted solutions - https://docs.bolna.dev/introduction and built a no-code/low-code playground for trying it out - https://playground.bolna.dev with a "chat" option to tune & test prompts since we realized that prompt is a very critical part for conversations to succeed. We recently released a complete open source end-to-end stack combining Whisper + Llama + MeloTTS ( https://github.com/bolna-ai/bolna/tree/master/examples/whisp... ) and hosted it's dockerized versions as well (still WIP) on docker hub. We think Bolna is quite unique since it encapsulates the underlying orchestration into API-able structure enabling developers to get started quickly via Docker, etc. I've been a great lover (and user) of the Elastic stack since 1.3x versions (circa. 2014) and trying to use a lot of inspiration from their open source process and philosophy on how to improve the adoption and usage. If this sounds interesting to you, please check us out! You can check us out our open source github repository at Github - https://github.com/bolna-ai or our hosted no-code/low-code dashboard at - https://playground.bolna.dev . We’d really love to hear your feedback and look forward to all of the comments!
+ramonverse on Aug 13, 2024 [–]
+how do you handle latency issues in real-time voice conversations?
+what specific optimizations have you implemented in the orchestration layer to minimize delays between speech recognition, llm processing, and text-to-speech output?
+xan_ps007 on Aug 13, 2024 | parent [–]
+hey! that's a great question. Initially, we had multiple processes for every component (ASR, LLM, TTS) and using a configurable settings pair of endpointing and token_size we used to handle it since for some cases latency might be an issue but some some others (where there are longer responses) it might not be that much of an issue. Later on, we also integrated with caching and routing to minimize unnecessary calls.
+Guidelines | FAQ | Lists | API | Security | Legal | Apply to YC | Contact
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 80
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":80,"text_length":3851,"paragraph_count":10,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0.0068,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   5 points / 2 comments / linked_url=https://github.com/bolna-ai/bolna / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Show HN: Bolna – build and ship enterprise grade voice AI in minutes | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Show HN: Bolna – build and ship enterprise grade voice AI in minutes ( github.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   com/bolna-ai ) 5 points by xan_ps007 on Aug 13, 2024 | hide | past | favorite | 2 comments Hi Hacker News!
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   This is Maitreya, Marmik and Prateek, co-founders of Bolna ( https://github.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   com/bolna-ai/bolna ).
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   With Bolna, developers can create end-to-end conversational voice agents.
+
+## business_elements
+
+- companies: keyword search, HN community feedback, GitHub
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队, 法务 / 律师
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 法务
+- numbers: 5, 2, 007, 13, 2024, 1313096, 2237, 64
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 5 points / 2 comments / linked_url=https://github.com/bolna-ai/bolna / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback / Show HN: Bolna – build and ship enterprise grade voice AI in minutes | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Show HN: Bolna – build and ship enterprise grade voice AI in minutes ( github. / com/bolna-ai ) 5 points by xan_ps007 on Aug 13, 2024 | hide | past | favorite | 2 comments Hi Hacker News!
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: keyword search / HN community feedback
+- capture_scope: thread_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+5 points / 2 comments / linked_url=https://github.com/bolna-ai/bolna / query=open-source AI agent GitHub enterprise adoption / intent=find_user_feedback / path=community_feedback
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
