@@ -39,6 +39,10 @@
     return state.filters.date || state.payload.meta.activeDate;
   }
 
+  function visibleCategories() {
+    return (state.payload?.categories || []).filter((item) => item.category !== "opinion");
+  }
+
   function cardsOnDate(date) {
     return state.payload.cards.filter((card) => card.date === date);
   }
@@ -133,7 +137,7 @@
     const root = $("[data-relationship-overview]");
     if (!root) return;
     const date = selectedDate();
-    const stats = state.payload.categories.map((item) => {
+    const stats = visibleCategories().map((item) => {
       const last7 = countLast7ByCategory(date, item.category);
       const prev7 = countWindowByCategory(date, item.category, 7, 13);
       const last30 = countWindowByCategory(date, item.category, 0, 29);
@@ -189,7 +193,7 @@
   function renderTabs() {
     const tabs = $("[data-category-tabs]");
     if (!tabs) return;
-    const items = [{ category: "all", label: "全部" }, ...state.payload.categories];
+    const items = [{ category: "all", label: "全部" }, ...visibleCategories()];
     tabs.innerHTML = items.map((item) => `
       <button type="button" class="${state.activeCategory === item.category ? "is-active" : ""}" data-tab="${safe(item.category)}">
         ${safe(item.label)}
@@ -253,9 +257,9 @@
     const form = $("[data-filters]");
     const categoryFilter = $("[data-category-filter]");
     if (categoryFilter) {
-      categoryFilter.innerHTML = options(state.payload.categories.map((item) => item.category), "全部分类");
+      categoryFilter.innerHTML = options(visibleCategories().map((item) => item.category), "全部分类");
       for (const option of categoryFilter.options) {
-        const match = state.payload.categories.find((item) => item.category === option.value);
+        const match = visibleCategories().find((item) => item.category === option.value);
         if (match) option.textContent = match.label;
       }
     }
@@ -472,7 +476,6 @@
     const dialog = $("[data-detail-dialog]");
     if (!root || !dialog) return;
     const signals = item.relatedSignals || [];
-    const opinions = item.relatedOpinions || [];
     root.innerHTML = `
       <h2 class="detail-title">${safe(item.title)}</h2>
       <div class="detail-source-row">
@@ -504,10 +507,7 @@
             <span>支撑信号</span>
             <strong>${safe(signals.length ? signals.join(" / ") : "暂无关联信号")}</strong>
           </article>
-          <article>
-            <span>参考观点</span>
-            <strong>${safe(opinions.length ? opinions.join(" / ") : "暂无关联观点")}</strong>
-          </article>
+
         </div>
       </div>
       <details class="detail-aux">

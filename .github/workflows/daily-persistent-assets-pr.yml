@@ -134,7 +134,6 @@ jobs:
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
             echo "- paused opinion lane."
-            echo "- Daily Observation Write / QC."
             echo "- Direct main commit."
             echo "- Direct deploy from the automation branch."
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
@@ -214,7 +213,7 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --require-final-qc=false \
-            --include-opinions=false \
+            --signal-target=10 \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-assets.log"
 
@@ -478,7 +477,7 @@ jobs:
           - No direct main push.
           - Auto-merge is allowed only after the full daily asset and frontstage gate chain passes.
           - No direct deploy from the automation branch; GitHub Pages deploys after main is updated.
-          - No Daily Observation writing or OpenAI/DeepSeek dependency.
+          - No stopped content-output lane is executed.
 
           Automation result:
           - This PR is expected to auto-merge after gates pass.

@@ -70,7 +70,7 @@ watch_reason
 
 ```text
 opinion_type:
-  - builder_view
+  - practitioner_view
   - investor_view
   - researcher_view
   - executive_view
@@ -79,7 +79,7 @@ opinion_type:
 
 前沿观点流入选门槛：
 
-1. 说话者身份明确：builder、investor、researcher、executive 或高质量文章作者。
+1. 说话者身份明确：investor、researcher、executive 或高质量文章作者。
 2. 观点完整，不是玩笑、转发、情绪表达、祝贺或纯营销。
 3. 指向一个判断问题：技术路线、产品路线、组织变化、商业采用、资本判断、客户需求、成本结构或竞争边界。
 4. 原文可追溯：有原文链接、平台、发布时间 / 抓取时间、原文或快照。
@@ -92,27 +92,8 @@ opinion_type:
 - 必须保留原文链接，支持跳转到原文出处。
 - 观澜解读只能放在原文之后，用来说明它指向什么判断问题，不能替代原文。
 
-前沿观点卡建议字段：
-
-```text
-speaker
-title_at_time
-opinion_type
-original_text_or_excerpt
-original_url
-platform
-published_at
-collected_at
-guanlan_interpretation
-judgment_question
-fact_boundary
-related_signals
-related_candidates
-```
-
 ### 1.3 前沿观点四档评级
 
-前沿观点卡必须先评级，再决定是否进入前台。评级不是内容价值的绝对判断，而是当前阶段的展示与治理分流。
 
 ```yaml
 opinion_tier: feature | sidebar | archive | discard
@@ -181,7 +162,6 @@ Daily Monitor
 ```text
 01-SiteV2/content/04-business-signals/signals/
 01-SiteV2/content/04-business-signals/change-topics/
-01-SiteV2/content/05-frontier-opinions/
 01-SiteV2/content/06-asset-candidates/change/
 01-SiteV2/content/06-asset-candidates/scene/
 01-SiteV2/content/06-asset-candidates/trend/
@@ -195,12 +175,10 @@ Daily Monitor
 
 ```text
 01-SiteV2/knowledge/01-Signal-Cards/
-01-SiteV2/knowledge/02-Opinion-Cards/
 01-SiteV2/knowledge/03-Asset-Candidates/
 01-SiteV2/knowledge/04-Publication-Index/
 ```
 
-历史变化类资产已迁入 `knowledge/03-Asset-Candidates/change/`，历史案例类资产迁入 `knowledge/01-Signal-Cards/case/`，历史观点类资产迁入 `knowledge/02-Opinion-Cards/`，历史趋势类资产迁入 `knowledge/03-Asset-Candidates/trend/`。
 
 ## 3. 变化候选与正式变化判断
 
@@ -304,7 +282,7 @@ Daily Monitor
 - 有真实客户或部署证据。
 - 有成本、效率、风险、合规或交付变化。
 - 有多个公司在相似流程上出现。
-- 有 builder / 投资人 / 研究者观点呼应。
+- 有 operator / 投资人 / 研究者观点呼应。
 
 ### 4.3 展示形态
 
@@ -367,7 +345,6 @@ Pool 六类是材料入口，不是卡片类型。
 | `important_technical_trend` | 先进入商业信号或变化候选；技术路线先做字段，不单独成卡 |
 | `important_product_or_service` | 商业信号流的 `product_service`；也可支撑变化候选、场景候选 |
 | `important_vertical_solution` | 优先进入 `case` 或场景候选；成熟后支撑正式场景判断 |
-| `important_viewpoint_or_article` | 前沿观点流；也可支撑变化、场景、趋势候选，但不替代事实 |
 
 ## 7. 当前不做的事
 
@@ -404,3 +381,7 @@ Phase 3｜成熟后体系化
 
 > 前期不要追求卡片体系完整，而要保证系统能稳定积累高质量事件、案例和观点。隐性判断只能在材料足够时浮现，不要用卡片结构强行制造判断。
 
+
+## Opinion lane paused
+
+The previous viewpoint / opinion-card lane is not part of current Raw / Pool / business-signal Card generation. Do not generate, stage, or publish opinion cards from the business-signal chain until the column is rebuilt.

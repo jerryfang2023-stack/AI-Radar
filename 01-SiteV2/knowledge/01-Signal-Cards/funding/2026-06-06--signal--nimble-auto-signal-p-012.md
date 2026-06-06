@@ -1,7 +1,7 @@
 ---
-id: SIG-20260606-A11
+id: SIG-20260606-A01
 type: signal_card
-signal_type: product_service
+signal_type: funding
 title: "Nimble raises $47M to give AI agents access to real-time web data"
 date: 2026-06-06
 status: published
@@ -9,8 +9,8 @@ source_title: "Nimble raises $47M to give AI agents access to real-time web data
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T05:51:22.787Z
-updated_at: 2026-06-06T05:51:22.787Z
+created_at: 2026-06-06T12:35:16.457Z
+updated_at: 2026-06-06T12:35:16.457Z
 
 raw_refs: ["R-012"]
 pool_refs: ["P-012"]
@@ -34,11 +34,10 @@ formal_tags:
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-funding"]
+  stage: ["stage-watch", "stage-rising"]
   region: []
   source: ["source-business-media"]
-  opinion: []
 
 signal_owner: "Nimble"
 
@@ -52,24 +51,19 @@ frontend:
 
 ## 新闻事实
 
-原文 funding记录的关键数字包括 $47M、$47 m。
+Nimble 获得 $47M Series B 融资。
 
 ## 原文要点
 
-- 原文 funding记录的关键数字包括 $47M、$47 m。
-- 原文 funding记录的关键数字包括 $47M、2026 B。
-- 原文 funding记录的关键数字包括 $47 m。
-- 原文记录的关键数字包括 $47M、$47 m。
-- 原文记录的关键数字包括 $47M、2026 B。
-- 原文记录的关键数字包括 $47 m。
+- Nimble 获得 $47M Series B 融资。
 
 ## 简要价值描述
 
-原文 funding记录的关键数字包括 $47M、2026 B。
+Nimble 获得 $47M Series B 融资。
 
 ## 可见原文片段
 
-原文记录的关键数字包括 $47M、2026 B。
+Nimble 获得 $47M Series B 融资。
 
 ## 证据边界
 

@@ -20,8 +20,13 @@ const now = new Date().toISOString();
 const autoSignalEnabled = args.get("auto-signals") !== "false" && args.get("manual-only") !== "true";
 const signalTarget = args.has("signal-target")
   ? nonNegativeInt(args.get("signal-target"), Number.POSITIVE_INFINITY)
-  : Number.POSITIVE_INFINITY;
+  : 10;
 const generateTrendCandidates = args.get("trend-candidates") === "true";
+const v3SignalLanePlan = [
+  { type: "funding", target: 3 },
+  { type: "case", target: 3 },
+  { type: "product_service", target: 3 },
+];
 
 const signalSpecs = {
   "2026-05-20": [
@@ -387,7 +392,7 @@ const candidateSpecs = {
       slug: "enterprise-agent-budget-and-workflow-signals-are-accumulating",
       title: "企业 Agent 的预算和工作流信号开始积累",
       hypothesis: "两天材料共同指向一个候选方向：企业 Agent 不再只按模型能力被讨论，而是被放进预算、容量、行业流程和运营指标里评估。",
-      sourceTypes: ["公司发布", "融资新闻", "客户案例", "operator opinion"],
+      sourceTypes: ["公司发布", "融资新闻", "客户案例"],
       riskBoundary: "目前仍缺少跨公司连续数据，不能写成正式趋势判断。",
       followUpVariables: "继续观察是否出现更多客户部署、容量合同、用量治理和流程指标。",
       relatedSignals: ["SIG-20260520-01", "SIG-20260520-02", "SIG-20260521-02", "SIG-20260521-05", "SIG-20260521-07"],
@@ -411,7 +416,7 @@ const candidateSpecs = {
       slug: "enterprise-agent-deployment-shifts-to-workflow-context-and-governance",
       title: "企业 Agent 部署问题转向流程上下文和治理",
       hypothesis: "5 月 22 日的 Snowflake、Temporal、Trace、Sycamore Labs 和 AdventHealth 信号指向同一个问题：企业 Agent 要进入真实流程，必须同时解决上下文、稳定运行和人工复核。",
-      sourceTypes: ["公司发布", "融资新闻", "客户案例", "operator opinion"],
+      sourceTypes: ["公司发布", "融资新闻", "客户案例"],
       riskBoundary: "当前仍缺少跨公司连续指标，尤其缺少部署成本、人工复核成本和长期留存数据，不能写成正式趋势判断。",
       followUpVariables: "继续观察客户案例、生产运行指标、治理功能和实施岗位需求是否继续增加。",
       relatedSignals: ["SIG-20260522-02", "SIG-20260522-04", "SIG-20260522-05", "SIG-20260522-06", "SIG-20260522-07"],
@@ -549,21 +554,16 @@ function extractNumbers(raw = "") {
 function translatedSourcePoint(raw = "", type = "") {
   const text = stripSourceNoise(raw);
   if (!text) return "";
-  const rules = [
-    [/Procurement teams.*vendor selection.*Request for Quotation/iu, "原文指出采购团队在供应商选择和 RFQ 流程中面临管理压力。"],
-    [/Buyers spend significant time navigating multiple Enterprise Resource Planning systems/iu, "原文指出采购人员需要在多个 ERP 系统和外部数据源之间切换。"],
-    [/consolidate supplier information.*validate compliance requirements.*compare costs/iu, "原文指出采购人员要合并供应商信息、验证合规要求，并比较不同供应商成本。"],
-    [/Smart Procurement Assistant.*automates procurement workflows.*reduce cycle times.*compliance validation/iu, "AWS 方案中的 Smart Procurement Assistant 用于自动化采购流程、缩短周期，并进行实时合规验证。"],
-    [/compliance validation, supplier recommendation, financial analysis, and RFQ management/iu, "AgentCore 与 Strands Agents 被用于合规验证、供应商推荐、财务分析和 RFQ 管理。"],
-    [/eight specialized tools/iu, "方案包含 8 个专用工具，覆盖数据结构查询、SQL 查询、财务分析、质量指标、合规验证、RFQ 校验、RFQ 创建和数据可视化。"],
-    [/RFQ Creation Tool.*SAP systems through OData/iu, "RFQ 创建工具通过 OData 调用 SAP API，在 SAP 系统中创建询价请求。"],
-    [/raised|funding|seed|Series|融资/iu, text.match(/[\u4e00-\u9fff]/u) ? text : ""],
-  ];
-  const match = rules.find(([pattern]) => pattern.test(text));
-  if (match?.[1]) return match[1];
-  const numbers = [...new Set(extractNumbers(text))].slice(0, 5);
-  if (numbers.length) return `原文${type ? ` ${type}` : ""}记录的关键数字包括 ${numbers.join("、")}。`;
-  if (/[\u4e00-\u9fff]/u.test(text)) return text.length > 220 ? `${text.slice(0, 219)}…` : text;
+  if (/[\u4e00-\u9fff]/u.test(text)) return text.length > 220 ? `${text.slice(0, 219)}...` : text;
+  if (type === "funding") {
+    const amount = extractAmount(text);
+    const company = shortCompany(text.match(/^([A-Z][A-Za-z0-9.&' -]{1,70}?)(?:,|\s+has\s+raised|\s+raises|\s+landed|\s+lands|\s+secured|\s+secures)/u)?.[1] || "");
+    const round = text.match(/\b(pre-seed|seed|series\s+[A-Z])\b/iu)?.[0] || "";
+    if (amount && company && !isWeakCompanyName(company)) return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资。`;
+  }
+  if (/\b(designed to take action|automatically execute tasks|updates? records|generating follow-up actions|identifying deal risks|coordinating workflows|customer deployment|case study)\b/iu.test(text)) {
+    return "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。";
+  }
   return "";
 }
 
@@ -857,7 +857,8 @@ function corePoolSemanticIssues(section) {
   if (/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") {
     issues.push("user_feedback_not_fact_signal");
   }
-  if (isStalePublication(section)) issues.push("stale_source_date");
+  const inferredTypeForAge = inferSignalType(section);
+  if (isStalePublication(section, inferredTypeForAge === "product_service" ? 14 : 180)) issues.push("stale_source_date");
   if (value(section, "index_only_evidence") === "true") issues.push("index_only_evidence");
   if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(`index_only_evidence_type:${evidenceObjectType}`);
   if (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl)) {
@@ -1003,16 +1004,14 @@ function scenarioFromText(text) {
 }
 
 function inferSignalType(section) {
-  let text = textForInference(section);
+  const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
-  if (importanceType === "important_funding") return isSingleCompanyFundingSignal(section) ? "funding" : "case";
-  text = text.replace(/\b(raises|raised|funding|seed|series|round|pulls in|investing|ventures?)\b|融资|种子轮|A轮|B轮/giu, "");
-  if (/\b(raises|raised|funding|seed|series|round|pulls in|investing|ventures?)\b|融资|种子轮|A轮|B轮/iu.test(text)) return "funding";
-  if (/c\.h\.\s*robinson|snaplogic|pwc|deployment|deploys|automates|orders automated|customer case/iu.test(`${text} ${sourceUrl}`)) return "case";
-  if (/aws\.amazon\.com\/marketplace|github\.com|marketplace|vscode|superclaude|conversion agents|deepagents|api|sdk|platform/iu.test(`${text} ${sourceUrl}`)) return "product_service";
-  if (value(section, "importance_type") === "important_case" || value(section, "importance_type") === "important_vertical_solution") return "case";
-  if (value(section, "importance_type") === "important_product_or_service" || /\b(launch|release|introduced|deploy|marketplace|platform|api)\b|发布|推出|上线/iu.test(text)) return "product_service";
+  if (isSingleCompanyFundingSignal(section)) return "funding";
+  if (importanceType === "important_funding") return "funding";
+  if (importanceType === "important_case" || importanceType === "important_vertical_solution") return "case";
+  if (/c\.h\.\s*robinson|snaplogic|pwc|deployment|deploys|automates|orders automated|customer case|case study|customer story/iu.test(`${text} ${sourceUrl}`)) return "case";
+  if (importanceType === "important_product_or_service" || /\b(launch|release|released|introduced|deploy|marketplace|platform|api|sdk|model|tool)\b|发布|推出|上线/iu.test(text)) return "product_service";
   return "case";
 }
 
@@ -1073,7 +1072,7 @@ function autoSignalSpec(poolRef, section, index) {
       if (pubDate) {
         const pubDay = new Date(pubDate);
         const cutoff = new Date();
-        cutoff.setDate(cutoff.getDate() - 14);
+        cutoff.setDate(cutoff.getDate() - (type === "product_service" ? 14 : 180));
         if (pubDay < cutoff) {
           return null; // 跳过超过 14 天的旧内容
         }
@@ -1124,6 +1123,25 @@ function autoSignalSpec(poolRef, section, index) {
   };
 }
 
+function isLargeVendorSignal(section) {
+  return /\b(Google|Microsoft|Anthropic|OpenAI|NVIDIA|Nvidia|Oracle|AWS|Amazon|Meta|Apple|IBM|Salesforce|DeepMind)\b/iu.test(textForInference(section));
+}
+
+function signalPriorityScore(spec, section) {
+  const importance = Number(value(section, "importance_score")) || 0;
+  const capture = Number(value(section, "raw_capture_priority")) || 0;
+  let score = importance * 20 + capture;
+  if (spec.type === "funding" && !isLargeVendorSignal(section)) score += 35;
+  if (spec.type === "case" && value(section, "importance_type") === "important_vertical_solution") score += 25;
+  if (spec.type === "product_service" && isLargeVendorSignal(section)) score += 5;
+  if (isLargeVendorSignal(section) && spec.type !== "product_service") score -= 5;
+  return score;
+}
+
+function withAutoSignalId(spec, index) {
+  return { ...spec, id: `SIG-${date.replaceAll("-", "")}-A${String(index).padStart(2, "0")}` };
+}
+
 function autoSignalsFromPool(sections, explicitSpecs) {
   if (!autoSignalEnabled) return [];
   const selectedPoolRefs = new Set(explicitSpecs.map((spec) => spec.poolRef));
@@ -1137,22 +1155,46 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   );
   const need = Math.max(0, signalTarget - explicitSpecs.length);
   if (!need) return [];
-  const autoSpecs = [];
+  const candidates = [];
   let index = 1;
   for (const [poolRef, section] of sections) {
     if (selectedPoolRefs.has(poolRef)) continue;
     if (!isEligibleAutoSignal(section)) continue;
     const spec = autoSignalSpec(poolRef, section, index);
-    if (!spec) continue; // 旧内容/日期不符合要求，跳过
+    if (!spec) continue;
     const clusterKey = signalClusterKey(spec, section);
     if (selectedClusterKeys.has(clusterKey)) continue;
-    autoSpecs.push(spec);
-    selectedPoolRefs.add(poolRef);
-    selectedClusterKeys.add(clusterKey);
+    candidates.push({ spec, section, clusterKey, score: signalPriorityScore(spec, section) });
     index += 1;
-    if (autoSpecs.length >= need) break;
   }
-  return autoSpecs;
+
+  const picked = [];
+  const pickedPoolRefs = new Set();
+  const pickedClusterKeys = new Set();
+  const sorted = candidates.sort((a, b) => b.score - a.score || a.spec.poolRef.localeCompare(b.spec.poolRef));
+
+  function pickWhere(predicate, count) {
+    for (const item of sorted) {
+      if (picked.length >= need || count <= 0) break;
+      if (!predicate(item)) continue;
+      if (pickedPoolRefs.has(item.spec.poolRef) || pickedClusterKeys.has(item.clusterKey)) continue;
+      picked.push(item);
+      pickedPoolRefs.add(item.spec.poolRef);
+      pickedClusterKeys.add(item.clusterKey);
+      count -= 1;
+    }
+  }
+
+  for (const lane of v3SignalLanePlan) {
+    pickWhere((item) => item.spec.type === lane.type, lane.target);
+  }
+  pickWhere(() => true, need - picked.length);
+
+  for (const item of picked) {
+    selectedPoolRefs.add(item.spec.poolRef);
+    selectedClusterKeys.add(item.clusterKey);
+  }
+  return picked.slice(0, need).map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1));
 }
 
 function yamlList(items) {
@@ -1325,7 +1367,6 @@ status: draft
 asset_level: candidate
 fact_draft_gate: passed
 frontend_copy_gate: passed
-cardcopy_gate: passed
 created_at: ${now}
 updated_at: ${now}
 industry_or_department: "${spec.industry}"
@@ -1366,7 +1407,6 @@ asset_level: candidate
 trend_evidence_gate: threshold_pending
 fact_draft_gate: passed
 frontend_copy_gate: passed
-cardcopy_gate: passed
 created_at: ${now}
 updated_at: ${now}
 trend_hypothesis: "${spec.hypothesis}"
@@ -1376,7 +1416,6 @@ source_types: ${yamlList(spec.sourceTypes)}
 risk_boundary: "${spec.riskBoundary}"
 follow_up_variables: "${spec.followUpVariables}"
 related_signal_cards: ${yamlList(spec.relatedSignals)}
-related_opinion_cards: ${yamlList(spec.relatedOpinions)}
 ${formalTagsYaml(formalTagsForTrend(spec))}
 ---
 
@@ -1598,7 +1637,7 @@ function main() {
     written.push(path.relative(root, knowledgeFile).replace(/\\/g, "/"));
     written.push(path.relative(root, contentFile).replace(/\\/g, "/"));
   } else if (candidates.trend) {
-    skipped.push("trend_candidate: skipped; run agent-workflow/tools/run-trend-candidate-decision.mjs after Card / Opinion generation");
+    skipped.push("trend_candidate: skipped; run agent-workflow/tools/run-trend-candidate-decision.mjs after Card generation");
   }
 
   writeSignalIndexes(signalIndexSpecs);

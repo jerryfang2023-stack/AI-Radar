@@ -9,8 +9,8 @@ source_title: "Anthropic销售人员用Claude Code重建团队工作流"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T05:51:22.787Z
-updated_at: 2026-06-06T05:51:22.787Z
+created_at: 2026-06-06T12:35:16.457Z
+updated_at: 2026-06-06T12:35:16.457Z
 
 raw_refs: ["R-009"]
 pool_refs: ["P-009"]
@@ -38,7 +38,6 @@ formal_tags:
   stage: ["stage-watch"]
   region: []
   source: ["source-industry-data"]
-  opinion: []
 
 signal_owner: "Anthropic销售人员用Claude Code重建团队工作流"
 
@@ -52,19 +51,19 @@ frontend:
 
 ## 新闻事实
 
-加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL…
+加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL...
 
 ## 原文要点
 
-- 加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL…
+- 加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL...
 
 ## 简要价值描述
 
-加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL…
+加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL...
 
 ## 可见原文片段
 
-加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL…
+加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和Anthropic公开文档提取上下文，并通过网络搜索获取最新产品信息。他还开发了CL...
 
 ## 证据边界
 

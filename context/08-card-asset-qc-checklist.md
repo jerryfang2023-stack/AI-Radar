@@ -40,34 +40,6 @@ priority: execution
 - 商业含义必须落到客户、流程、预算、组织、责任、风险、竞争、成本、交付或渠道。
 - 合作、采购、定价、风险、合规等只能作为变量或观察理由。
 
-### 前沿观点卡
-
-- 必须保留人物 / 机构、身份、发布时间、平台、原文链接。
-- 短观点尽量完整保留原文；长观点保留关键原文摘录。
-- 观点先入 `opinion_intake`，入库时必须补充中文翻译字段；中文翻译不得替代原文。
-- 观澜解读必须在原文和中文翻译之后。
-- 观点里的事实主张必须另补 S/A/B 或 eligible `core_pool`；否则只能写成观点参照。
-- 必须写入四档评级字段：`opinion_tier`、`display_lane`、`selection_reason`、`opinion_rating_score`、`opinion_rating_version`、`publish_status`。
-
-观点四档：
-
-| 档位 | 展示位置 | 最低要求 |
-|---|---|---|
-| `feature` | 今日观察主推观点 | 高价值人物或机构，观点完整，直接支撑当日主线，原文和边界完整 |
-| `sidebar` | 商业信号页观点侧栏 / 观点模块 | 观点清楚，能作为商业判断参照，但不一定支撑当日主线 |
-| `archive` | 知识库归档，不进前台 | 有保留价值，但信息量、上下文或关联度不足 |
-| `discard` | 隐藏或后续清理 | 玩笑、转发、祝贺、营销、无上下文、无原文或无判断价值 |
-
-前台同步只允许：
-
-```text
-opinion_tier = feature 或 sidebar
-display_lane = daily_feature 或 signal_sidebar
-publish_status = frontstage_feature 或 frontstage_sidebar
-frontend.originalTranslation = 已完成中文翻译
-fact_draft_gate = passed
-```
-
 ### 变化候选
 
 - 单一材料只能生成候选，不能生成正式变化。
@@ -90,14 +62,12 @@ fact_draft_gate = passed
 
 只有 `signal_card`、`opinion_card` 和成熟变化短专题可以进入当前前台表达。
 
-前沿观点卡的同步顺序必须是：
 
 ```powershell
 node agent-workflow/tools/govern-opinion-card-ratings.mjs --date=<YYYY-MM-DD>
 node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date=<YYYY-MM-DD>
 ```
 
-不得手写或保留旧的单张观点索引来替代评级脚本输出；`content/05-frontier-opinions/<date>-opinion-cards.md` 只是评级结果索引，不是前台展示的唯一来源。
 
 前台文案不得出现：
 
@@ -119,3 +89,8 @@ node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date=<YYYY-MM-DD>
 - 观点卡评级、展示位置和发布状态一致。
 
 不满足以上任一项时，保持候选 / 归档 / 隐藏状态，不得同步前台。
+
+
+## Opinion lane paused
+
+The previous viewpoint / opinion-card lane is not part of current Raw / Pool / business-signal Card generation. Do not generate, stage, or publish opinion cards from the business-signal chain until the column is rebuilt.

@@ -3,7 +3,6 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import crypto from "node:crypto";
-import { loadTranslationCache, replaceBodyTranslation, saveTranslationCache, translateOpinionText, visibleChineseTranslation } from "./opinion-translation-utils.mjs";
 
 const root = process.cwd();
 const execFileAsync = promisify(execFile);
@@ -37,7 +36,7 @@ loadEnvFile(path.join(root, ".env.local"));
 if (args.has("help") || args.has("h")) {
   console.log(
     [
-      "WaveSight AI V2.2 guanlan-daily-monitor",
+      "WaveSight AI V3.1 guanlan-daily-monitor",
       "",
       "Usage:",
       "  node agent-workflow/tools/run-guanlan-daily-monitor.mjs --date=YYYY-MM-DD",
@@ -53,7 +52,6 @@ if (args.has("help") || args.has("h")) {
       "  --aihot-limit=500",
       "  --aihot-mode=all",
       "  --aihot-window-hours=24",
-      "  --builders-limit=25",
       "  --search-limit=70",
       "  --search-path-query-limit=2",
       "  --hn-limit=8",
@@ -69,7 +67,6 @@ const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const aihotMode = args.get("aihot-mode") || "all";
 const aihotWindowHours = Number(args.get("aihot-window-hours") || 24);
 const aihotTarget = Number(args.get("aihot-limit") || 500);
-const buildersTarget = Number(args.get("builders-limit") || 25);
 const searchTarget = Number(args.get("search-limit") || 70);
 const searchPathQueryLimit = Number(args.get("search-path-query-limit") || 2);
 const hnTarget = Number(args.get("hn-limit") || 8);
@@ -81,20 +78,14 @@ const rawDedupeBuffer = Number(args.get("raw-dedupe-buffer") || 40);
 const dryRun = args.get("dry-run") === "true";
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
-const followBuildersSkillScript =
-  args.get("follow-builders-script") ||
-  path.join(process.env.USERPROFILE || "", ".skill-store", "follow-builders", "scripts", "prepare-digest.js");
-
 const contentRoot = path.join(root, "01-SiteV2", "content");
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const rawDir = path.join(contentRoot, "01-raw");
 const originalDir = path.join(rawDir, "originals", date);
 const poolDir = path.join(contentRoot, "02-pool");
 const businessSignalsDir = path.join(contentRoot, "04-business-signals");
-const opinionCalibrationDir = path.join(contentRoot, "05-frontier-opinions");
 const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-monitoring-v2.json");
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
-const opinionCardsDir = path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const ensure = (dir) => fs.mkdirSync(dir, { recursive: true });
@@ -557,7 +548,6 @@ const defaultRequiredImportanceTypes = [
   "important_technical_trend",
   "important_product_or_service",
   "important_vertical_solution",
-  "important_viewpoint_or_article",
 ];
 
 function requiredImportanceTypes() {
@@ -714,7 +704,7 @@ function validDateParts(year, month, day) {
 
 function acquisitionSourceLevelFor(item = {}) {
   const channel = String(item.acquisition_channel || "").toLowerCase();
-  if (/aihot|follow-builders|search|rss|aggregator/u.test(channel)) return "M";
+  if (/aihot|paused-opinion-source|search|rss|aggregator/u.test(channel)) return "M";
   return "";
 }
 
@@ -722,10 +712,10 @@ function isMixedDiscoveryChannel(item = {}) {
   return acquisitionSourceLevelFor(item) === "M";
 }
 
-function isFollowBuildersSocialSource(item = {}) {
+function isFollowoperatorsSocialSource(item = {}) {
   const source = `${item.source || ""} ${item.url || ""}`.toLowerCase();
-  return item.acquisition_channel === "follow-builders"
-    && /x\.com|twitter\.com|linkedin\.com|follow-builders|builder|founder|ceo|cto|creator|operator|community|social/iu.test(source);
+  return item.acquisition_channel === "paused-opinion-source"
+    && /x\.com|twitter\.com|linkedin\.com|paused-opinion-source|operators|founder|ceo|cto|creator|operator|community|social/iu.test(source);
 }
 
 function isAIHotDailySelected(item = {}) {
@@ -779,8 +769,8 @@ function classify(item) {
   const researchStatus = researchStatusFor(item);
   const registryRule = registryRuleFor(item);
 
-  if (isFollowBuildersSocialSource(item)) {
-    return { level: "C", type: "builder", acquisition_source_level: "M", research_status: researchStatus };
+  if (isFollowoperatorsSocialSource(item)) {
+    return { level: "C", type: "operators", acquisition_source_level: "M", research_status: researchStatus };
   }
 
   if (/github\.com/iu.test(host)) {
@@ -865,15 +855,12 @@ function importanceProfile(item = {}, bodyText = "") {
   if (verticalIndustryPattern.test(text) || verticalSolutionPattern.test(text)) {
     add("important_vertical_solution", /enterprise|production|case study|customer|部署|客户|生产|落地|标杆/iu.test(text) ? 5 : 4, "vertical industry solution");
   }
-  if (/essay|article|interview|analysis|report|speech|keynote|said|argues|believes|opinion|观点|文章|访谈|演讲|报告|长文|分析|认为|表示/iu.test(text)) {
-    add("important_viewpoint_or_article", /openai|anthropic|google|microsoft|nvidia|yc|a16z|sequoia|ceo|founder|researcher|karpathy|simon willison|重要观点|行业判断|路线判断/iu.test(text) ? 5 : 3, "influential viewpoint or article");
-  }
 
   if (/procurement|tender|budget|revenue|arr|pricing|billing|regulation|lawsuit|compliance|security|privacy|risk|采购|招标|预算|收入|定价|计费|监管|诉讼|合规|安全|隐私|风险/iu.test(text)) {
     support("commercial_or_risk_context");
   }
   if (/(regulation|lawsuit|compliance|security|privacy|risk|breach|ban|fine|investigation|监管|诉讼|合规|安全事故|隐私|风险|处罚|调查).{0,120}(industry|market|enterprise|deployment|adoption|governance|行业|市场|企业|部署|采用|治理|路线|判断)/iu.test(text)) {
-    add("important_viewpoint_or_article", 4, "market-shaping risk or governance counter-signal");
+    support("market_shaping_risk_context");
   }
   if (/customer|deployment|workflow|integration|adoption|客户|部署|工作流|集成|采用/iu.test(text)) {
     support("adoption_context");
@@ -888,7 +875,6 @@ function importanceProfile(item = {}, bodyText = "") {
     important_product_or_service: 3,
     important_funding: 2,
     important_technical_trend: 2,
-    important_viewpoint_or_article: 1,
   };
   const best = candidates.sort((a, b) => (b.score - a.score) || ((typePriority[b.type] || 0) - (typePriority[a.type] || 0)))[0];
   if (automotiveRolloutOnly && (!best || best.score < 5)) {
@@ -927,8 +913,6 @@ function score(item) {
   if (isAIHotDailySelected(item)) value += 2;
   else if (item.acquisition_channel === "aihot") value += 1;
   if (item.acquisition_channel === "aihot" && item.raw_entry_decision === "raw_candidate") value += 0.5;
-  if (item.acquisition_channel === "follow-builders" && importance.importance_type === "important_viewpoint_or_article") value += 1.5;
-  else if (item.acquisition_channel === "follow-builders") value += 0.4;
   if (item.acquisition_channel === "keyword-search") value += 0.8;
   if (item.search_path === "community_feedback" || item.acquisition_channel === "hn") value -= 2;
   if (/tool|tutorial|prompt|free|course|求职|简历|壁纸|封面/iu.test(text)) value -= 2;
@@ -1464,7 +1448,7 @@ function hasEvidenceHash(snapshot = {}) {
 function sourceVolatility(item = {}) {
   const host = urlHost(item.url || "");
   const text = `${item.source || ""} ${item.source_type || ""} ${host} ${item.acquisition_channel || ""}`.toLowerCase();
-  if (/x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|follow-builders/u.test(text)) return "high";
+  if (/x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text)) return "high";
   if (/aihot|newsletter|substack|medium|producthunt|github/u.test(text)) return "medium";
   return "low";
 }
@@ -1472,7 +1456,7 @@ function sourceVolatility(item = {}) {
 function isCommunitySource(item = {}) {
   const host = urlHost(item.url || "");
   const text = `${item.source || ""} ${item.source_type || ""} ${host} ${item.acquisition_channel || ""}`.toLowerCase();
-  return /x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|follow-builders/u.test(text);
+  return /x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text);
 }
 
 function communityNameFor(item = {}) {
@@ -1520,7 +1504,6 @@ function originFetchStatus(snapshot = {}) {
 }
 
 function sourceRoleFor(item = {}, snapshot = {}) {
-  if (item.acquisition_channel === "follow-builders") return "frontier_opinion_source";
   if (!isMixedDiscoveryChannel(item)) return "primary_source";
   return originFetchStatus(snapshot) === "success" ? "resolved_original_source" : "discovery_source";
 }
@@ -1721,7 +1704,7 @@ function guanlanScores(item, quality, elements, seed) {
     importance_score: importance.importance_score,
     importance_reason: importance.importance_reason,
     supporting_signals: importance.supporting_signals,
-    novelty: clampScore(2 + (item.theme && item.theme !== "uncategorized" ? 1 : 0) + (item.acquisition_channel === "follow-builders" ? 0.5 : 0)),
+    novelty: clampScore(2 + (item.theme && item.theme !== "uncategorized" ? 1 : 0)),
     evidence_strength: clampScore(2 + qualityBonus + Math.min(1, evidenceRichness / 5)),
     case_richness: clampScore(1 + evidenceRichness / 3),
     trend_relevance: clampScore(guanlanBase + importance.importance_score / 3 + (importance.importance_type === "important_technical_trend" ? 1 : 0)),
@@ -1736,7 +1719,7 @@ function usableFor(item, quality, scores, excerpts) {
   const community = isCommunitySource(item);
   const gate = commercialSignalHardGate(item, item.snapshot?.text || item.summary || "", excerpts);
   return {
-    viewpoint: coreEvidence && (types.has("opinion") || types.has("quote") || item.acquisition_channel === "follow-builders"),
+    viewpoint: coreEvidence && (types.has("opinion") || types.has("quote")),
     case: gate.evidenceObjectUsable && coreEvidence && (types.has("case_detail") || scores.case_richness >= 3),
     change: gate.evidenceObjectUsable && coreEvidence && ["company_action", "product_update", "workflow_change"].some((type) => types.has(type)),
     trend: gate.evidenceObjectUsable && coreEvidence && scores.trend_relevance >= 4,
@@ -2076,7 +2059,6 @@ function missingInformation(item, elements, seed, excerpts = []) {
   if (!seed.case_details.length) missing.push("没有具体客户或真实企业案例");
   if (!seed.before_after_clues.length) missing.push("没有变化前后流程线索");
   if (!elements.numbers.length) missing.push("没有成本、收入、采用率或市场规模数字");
-  if (!elements.quotes.length && item.acquisition_channel === "follow-builders") missing.push("没有可核验原文引述");
   if (!hasFullText(item.snapshot)) missing.push("没有可用全文快照");
   if (!hasEvidenceHash(item.snapshot)) missing.push("缺少证据 hash");
   if (!excerpts.length) missing.push("缺少可用摘录");
@@ -3061,180 +3043,6 @@ async function collectHN() {
   return { items: items.slice(0, hnTarget), failures };
 }
 
-async function collectFollowBuildersProxy() {
-  const webQueries = laneQueries("builder_proxy", [
-    "AI founder essay agent workflow",
-    "AI coding agent founder opinion",
-    "AI agent product strategy founder interview",
-    "AI agents enterprise workflow analysis founder",
-    "Claude Code developer workflow essay",
-  ]);
-  const hnQueries = laneQueries("builder_proxy", [
-    "AI agent builder product launch",
-    "AI coding agent founder",
-    "agentic workflow builder",
-    "AI startup founder agent",
-    "Claude Code builder workflow",
-  ]);
-  const items = [];
-  const failures = [];
-  const seen = new Set();
-  const keepItem = (url = "", title = "") => {
-    const key = canonicalUrl(url || title).toLowerCase() || String(title || "").toLowerCase();
-    if (!key || seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  };
-
-  for (const queryConfig of webQueries) {
-    try {
-      const results = await searchLayeredWeb(queryConfig.query, Math.max(2, Math.ceil(buildersTarget / webQueries.length)));
-      for (const result of results) {
-        const gate = keywordSearchResultPreGate(result, queryConfig, { id: "builder_proxy" });
-        if (!gate.keep) continue;
-        if (!keepItem(result.url, result.title)) continue;
-        items.push({
-          acquisition_channel: "follow-builders",
-          original_id: result.id || result.url || `${queryConfig.query}:${result.title}`,
-          title: result.title || "",
-          summary: [
-            result.snippet || "",
-            `query=${queryConfig.query}`,
-            "cloud fallback viewpoint/article search; use as discovery until original text and page type pass downstream gates",
-          ].filter(Boolean).join("\n\n").slice(0, 1600),
-          url: result.url || "",
-          source: `follow-builders cloud fallback / ${result.source || "web search"}`,
-          published_at: result.published_at || result.publishedAt || "",
-          category: "builder-article",
-          query_theme: queryConfig.query_theme,
-          keyword_group: queryConfig.keyword_group,
-        });
-      }
-    } catch (error) {
-      failures.push(`follow-builders cloud fallback ${queryConfig.query}: ${error.message}`);
-    }
-  }
-
-  if (items.length >= buildersTarget) return { items: items.slice(0, buildersTarget), failures };
-
-  for (const queryConfig of hnQueries) {
-    const url = new URL("https://hn.algolia.com/api/v1/search_by_date");
-    url.searchParams.set("query", queryConfig.query);
-    url.searchParams.set("tags", "story");
-    url.searchParams.set("hitsPerPage", String(Math.ceil(buildersTarget / hnQueries.length)));
-    try {
-      const data = await fetchJson(url.toString());
-      const hits = Array.isArray(data.hits) ? data.hits : [];
-      for (const item of hits) {
-        const resultUrl = item.url || `https://news.ycombinator.com/item?id=${item.objectID}`;
-        const title = item.title || item.story_title || "";
-        if (!keepItem(resultUrl, title)) continue;
-        items.push({
-          acquisition_channel: "follow-builders",
-          original_id: item.objectID,
-          title,
-          summary: `${item.points || 0} points / ${item.num_comments || 0} comments / query=${queryConfig.query}`,
-          url: resultUrl,
-          source: "follow-builders proxy / HN builder query",
-          published_at: item.created_at || "",
-          category: "builder",
-          query_theme: queryConfig.query_theme,
-          keyword_group: queryConfig.keyword_group,
-        });
-      }
-    } catch (error) {
-      failures.push(`follow-builders proxy ${queryConfig.query}: ${error.message}`);
-    }
-  }
-  return { items: items.slice(0, buildersTarget), failures };
-}
-
-async function collectFollowBuildersSkill() {
-  const failures = [];
-  if (!fs.existsSync(followBuildersSkillScript)) {
-    return {
-      items: [],
-      failures: [`follow-builders skill script not found: ${followBuildersSkillScript}`],
-    };
-  }
-
-  try {
-    const { stdout } = await execFileAsync("node", [followBuildersSkillScript], {
-      maxBuffer: 80 * 1024 * 1024,
-      timeout: 180_000,
-    });
-    const data = JSON.parse(stdout);
-    const items = [];
-
-    for (const builder of Array.isArray(data.x) ? data.x : []) {
-      for (const tweet of Array.isArray(builder.tweets) ? builder.tweets : []) {
-        if (!tweet.url || !tweet.text) continue;
-        const tweetText = String(tweet.text || "").trim();
-        const engagement = `likes=${tweet.likes || 0}; retweets=${tweet.retweets || 0}; replies=${tweet.replies || 0}`;
-        const builderBio = String(builder.bio || "").trim();
-        items.push({
-          acquisition_channel: "follow-builders",
-          original_id: tweet.id,
-          title: `${builder.name || builder.handle}｜${tweetText.slice(0, 90)}`,
-          summary: [tweetText, builderBio, engagement].filter(Boolean).join("\n\n").slice(0, 1600),
-          url: tweet.url,
-          source: `follow-builders / X / ${builder.name || builder.handle}`,
-          published_at: tweet.createdAt || "",
-          category: "builder-x",
-        });
-      }
-    }
-
-    for (const blog of Array.isArray(data.blogs) ? data.blogs : []) {
-      if (!blog.url || !blog.title) continue;
-      items.push({
-        acquisition_channel: "follow-builders",
-        original_id: blog.guid || blog.url,
-        title: `${blog.name || "Builder Blog"}｜${blog.title}`,
-        summary: blog.summary || blog.description || "",
-        url: blog.url,
-        source: `follow-builders / blog / ${blog.name || ""}`.trim(),
-        published_at: blog.publishedAt || "",
-        category: "builder-blog",
-      });
-    }
-
-    for (const podcast of Array.isArray(data.podcasts) ? data.podcasts : []) {
-      if (!podcast.url || !podcast.title) continue;
-      items.push({
-        acquisition_channel: "follow-builders",
-        original_id: podcast.guid || podcast.url,
-        title: `${podcast.name || "Builder Podcast"}｜${podcast.title}`,
-        summary: String(podcast.transcript || "").slice(0, 1200),
-        url: podcast.url,
-        source: `follow-builders / podcast / ${podcast.name || ""}`.trim(),
-        published_at: podcast.publishedAt || "",
-        category: "builder-podcast",
-      });
-    }
-
-    if (!items.length) failures.push("follow-builders skill returned no usable builder items");
-    return { items, failures };
-  } catch (error) {
-    failures.push(`follow-builders skill: ${error.message}`);
-    return { items: [], failures };
-  }
-}
-
-async function collectFollowBuilders() {
-  const fromSkill = await collectFollowBuildersSkill();
-  if (fromSkill.items.length) return fromSkill;
-  const fromProxy = await collectFollowBuildersProxy();
-  const skillMissingOnly = fromSkill.failures.length
-    && fromSkill.failures.every((failure) => /skill script not found/iu.test(failure));
-  return {
-    items: fromProxy.items,
-    failures: fromProxy.items.length && skillMissingOnly
-      ? fromProxy.failures
-      : [...fromSkill.failures, ...fromProxy.failures],
-  };
-}
-
 async function collectKeywordSearch() {
   const allQueries = laneQueries("keyword_search", [
     "AI agent enterprise funding",
@@ -3537,10 +3345,7 @@ function normalize(items) {
       pickedKeys.add(key);
       count -= 1;
     }
-  };
-
-  take("follow-builders");
-  take("gdelt");
+  };  take("gdelt");
   take("keyword-search");
   take("hn", Math.min(hnTarget, 8));
   take("aihot");
@@ -3556,223 +3361,9 @@ function normalize(items) {
   return diversifyByTheme(picked.sort((a, b) => b.score - a.score));
 }
 
-function normalizeBuilders(builderItems = []) {
-  const seen = new Set();
-  return (Array.isArray(builderItems) ? builderItems : [])
-    .filter((item) => item && (item.title || item.url))
-    .map((item) => {
-      const classified = classify(item);
-      const themed = assignTheme({
-        ...item,
-        title: cleanText(item.title, item.summary || item.url),
-        summary: cleanText(item.summary, ""),
-        url: item.url || "",
-        source_level: classified.level,
-        source_type: classified.type,
-        acquisition_source_level: classified.acquisition_source_level || "",
-        research_status: classified.research_status || "not_research",
-      });
-      return { ...themed, score: score(themed) };
-    })
-    .filter((item) => {
-      const key = item.url || `${item.title}-${item.source}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    })
-    .sort((a, b) => b.score - a.score);
-}
-
 function isXSourceItem(item = {}) {
   const haystack = `${item.url || ""} ${item.source || ""} ${item.source_url || ""}`.toLowerCase();
   return /\bx\.com\b|\btwitter\.com\b/u.test(haystack) || /(^|[\/\s])x([\/\s]|$)/u.test(haystack);
-}
-
-async function makeBuildersViewpointsFile(builderItems = []) {
-  const normalized = normalizeBuilders(builderItems);
-  const translationCache = await loadTranslationCache(root);
-  ensure(opinionCardsDir);
-  for (const file of fs.readdirSync(opinionCardsDir)) {
-    if (file.startsWith(`${date}--frontier-opinion--`) && file.endsWith(".md")) {
-      fs.rmSync(path.join(opinionCardsDir, file), { force: true });
-    }
-  }
-
-  const lines = [
-    "---",
-    `date: ${date}`,
-    "stage: builders-viewpoints",
-    "status: guanlan-daily-monitor-opinion-intake",
-    `builder_items_count: ${normalized.length}`,
-    `generated_at: ${new Date().toISOString()}`,
-    "---",
-    "",
-    `# ${date} Builders Viewpoints (All)`,
-    "",
-    "说明：本文件收录 follow-builders 当日全量扫描到的 Builder 观点/实践线索（discovery 级），用于后续生成观点卡候选、人物时间线和今日观察中的前沿观点材料。",
-    "注意：社媒/X 观点为观点线索，不作为公司事实主证据；进入商业信号、变化短专题、趋势报告或今日观察事实结论前必须补足原文、页面类型和事件证据。",
-    "",
-  ];
-  const indexLines = [
-    "---",
-    `date: ${date}`,
-    "type: frontier_opinion_daily_index",
-    "status: generated",
-    `count: ${normalized.length}`,
-    `generated_at: ${new Date().toISOString()}`,
-    "---",
-    "",
-    `# ${date} 前沿观点全量索引`,
-    "",
-    "本索引由 follow-builders 每日全量扫描生成。这里收录的是观点和实践线索，不是公司事实主证据；涉及公司动作、客户采用、收入、融资、市场规模等事实时，必须补足原文、页面类型和事件证据。",
-    "",
-  ];
-
-  for (let index = 0; index < normalized.length; index += 1) {
-    const item = normalized[index];
-    const id = `BP-${date.replaceAll("-", "")}-${String(index + 1).padStart(2, "0")}`;
-    const opinionId = `OPN-FB-${date.replaceAll("-", "")}-${String(index + 1).padStart(2, "0")}`;
-    const originalDate = normalizeDay(item.published_at) || "unknown";
-    const title = item.title || item.url || "builder viewpoint";
-    const body = String(item.summary || "").trim();
-    const sourceParts = String(item.source || "follow-builders").split("/").map((part) => part.trim()).filter(Boolean);
-    const lastPart = sourceParts[sourceParts.length - 1] || "";
-    // 搜索引擎/回退通道/通用标签 → 不是人物名，设为 Unknown
-    const nonPersonKeywords = /^(anysearch|duckduckgo|ddg|keyword search|cloud fallback|fallback|google|bing|search|web)$/iu;
-    const personName = sourceParts.length <= 1 && sourceParts[0] === "follow-builders"
-      ? "Unknown Builder"
-      : nonPersonKeywords.test(lastPart)
-        ? "Unknown Builder"
-        : lastPart || "Unknown Builder";
-    const cardFile = `${date}--frontier-opinion--${slugify(`${personName}-${title}`)}.md`;
-    const cardPath = path.join(opinionCardsDir, cardFile);
-    const isXSource = isXSourceItem(item);
-    const visibleText = body || title;
-    const captureScope = isXSource ? "x_full_visible_text" : "visible_text";
-    const excerpt = visibleText ? (isXSource ? visibleText : visibleText.slice(0, 900)) : "暂无可用原文摘录。";
-    const translation = await translateOpinionText(visibleText, {
-      cache: translationCache,
-      cacheKey: `${opinionId}:${item.url || title}`,
-      allowNetwork: args.get("opinion-translation") !== "off",
-      preferFullTranslation: isXSource,
-    });
-    const originalTranslation = visibleChineseTranslation(visibleText) || translation.translation;
-    const translationStatus = originalTranslation ? "translated" : translation.status;
-    const frontendGate = originalTranslation ? "passed" : "pending";
-    const opinionType = "opinion_intake";
-    const cardcopyGate = originalTranslation ? "skipped_intake_pending_rating" : "skipped_intake_translation_pending";
-    lines.push(
-      `## ${id}｜${title}`,
-      "",
-      `- stable_id: \`${id}\``,
-      "- source_path: `follow-builders`",
-      `- source_url: \`${item.url || "no-url"}\``,
-      `- source_name: ${item.source || "follow-builders"}`,
-      `- original_date: ${originalDate}`,
-      `- captured_at: ${new Date().toISOString()}`,
-      `- theme: ${item.theme_label || themeLabel(item.theme)}`,
-      "",
-      body ? `原始观点/摘要：${body}` : "原始观点/摘要：本轮未抓到可用文本摘要（可能受限于采集权限或接口）。",
-      ""
-    );
-    indexLines.push(`- ${opinionId}｜[${title}](${rel(cardPath)})｜${personName}｜${item.url || "no-url"}`);
-
-    const card = [
-      "---",
-      `id: ${opinionId}`,
-      `type: ${opinionType}`,
-      `title: ${JSON.stringify(title)}`,
-      `date: ${date}`,
-      "status: draft",
-      `created_at: ${new Date().toISOString()}`,
-      `updated_at: ${new Date().toISOString()}`,
-      `person_name: ${JSON.stringify(personName)}`,
-      "column_name: 前沿观点",
-      `source_level: ${item.source_level || "C"}`,
-      "source_volatility: high",
-      `capture_scope: ${captureScope}`,
-      "evidence_level: community_signal",
-      "fact_draft_gate: passed",
-      `frontend_copy_gate: ${frontendGate}`,
-      `cardcopy_gate: ${cardcopyGate}`,
-      "publish_status: internal",
-      "asset_level: candidate",
-      "opinion_evidence_gate: opinion_captured",
-      `translation_status: ${translationStatus}`,
-      `translation_method: ${translation.method || "unknown"}`,
-      `source_url: ${JSON.stringify(item.url || "")}`,
-      `source_name: ${JSON.stringify(item.source || "follow-builders")}`,
-      `original_date: ${JSON.stringify(originalDate)}`,
-      `theme: ${JSON.stringify(item.theme || "uncategorized")}`,
-      `keyword_group: ${JSON.stringify(item.keyword_group || "unknown")}`,
-      ...opinionFormalTagsBlock(item),
-      "opinion_capture:",
-      `  raw_ref: ${JSON.stringify(id)}`,
-      `  raw_archive: ${JSON.stringify(rel(path.join(opinionCalibrationDir, `${date}-opinion-candidates.md`)))}`,
-      `  source_url: ${JSON.stringify(item.url || "")}`,
-      "  source_level: C",
-      "  source_volatility: high",
-      `  capture_scope: ${captureScope}`,
-      "  evidence_level: community_signal",
-      "  has_visible_text: true",
-      "fact_claim_support:",
-      "  required: false",
-      "  status: 暂无公开信息",
-      "  supporting_raw_refs: []",
-      "  missing_information: []",
-      "frontend:",
-      `  displayTitle: ${JSON.stringify(title)}`,
-      `  speakerLine: ${JSON.stringify(personName)}`,
-      `  originalQuote: ${JSON.stringify(excerpt)}`,
-      `  originalTranslation: ${JSON.stringify(originalTranslation)}`,
-      "  interpretation: \"这条先进入前沿观点库，等待和当日商业信号、变化候选、场景候选或趋势候选建立关系。\"",
-      "  factBoundary: \"观点卡只证明谁说了什么，不证明其中公司事实成立。\"",
-      `  sourceLinks: [${JSON.stringify(item.url || "")}]`,
-      "---",
-      "",
-      `# ${title}`,
-      "",
-      "## 观点底稿",
-      "",
-      `- 谁：${personName}`,
-      "- 当时身份：暂无公开信息",
-      `- 在哪里说：${item.source || "follow-builders"}${item.url ? `，${item.url}` : ""}`,
-      `- 原文说了什么：${body || "本轮未抓到可用文本摘要，暂不做事实判断。"}`,
-      "- 事实主张是否需要补证：需要。观点卡只能证明这句话出现过，不能单独证明公司动作、客户采用、收入、融资或市场规模。",
-      "",
-      "## 人物 / Title / 原文",
-      "",
-      `- 人物：${personName}`,
-      "- Title：暂无公开信息",
-      `- 原文：${item.url ? `[查看原文](${item.url})` : "暂无公开链接"}`,
-      "",
-      "## 原文摘录",
-      "",
-      excerpt,
-      "",
-      `中文翻译：${originalTranslation || "待补中文翻译。"}`,
-      "",
-      "## 观澜解读",
-      "",
-      "这条先进入前沿观点库，等待和当日商业信号、变化候选、场景候选或趋势候选建立关系。若要用于前台文章，必须保留原文出处；若涉及事实判断，必须另补可靠来源。",
-      "",
-      "## 关联资产",
-      "",
-      "- 关联商业信号：暂无公开信息",
-      "- 关联变化 / 场景候选：暂无公开信息",
-      "- 关联今日观察：暂无公开信息",
-      "",
-      "## 可信边界",
-      "",
-      "follow-builders 是观点发现入口。X / 社区来源波动高，本卡只作为前沿观点线索，不作为公司动作、客户采用、收入、融资或市场规模的事实主证据。",
-      "",
-    ].join("\n");
-    writeFile(cardPath, replaceBodyTranslation(card, originalTranslation));
-  }
-
-  writeFile(path.join(opinionCalibrationDir, `${date}-opinion-candidates.md`), lines.join("\n"));
-  writeFile(path.join(opinionCardsDir, `${date}--frontier-opinion-index.md`), indexLines.join("\n"));
-  await saveTranslationCache(root, translationCache);
 }
 
 const poolKeyFor = (item) => item.url || `${item.title}-${item.source}`;
@@ -3822,7 +3413,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `raw_dedupe_buffer: ${rawDedupeBuffer}`,
     `aihot_count: ${items.filter((item) => item.acquisition_channel === "aihot").length}`,
     `keyword_search_count: ${items.filter((item) => item.acquisition_channel === "keyword-search").length}`,
-    `follow_builders_count: ${items.filter((item) => item.acquisition_channel === "follow-builders").length}`,
+    `follow_operators_count: ${items.filter((item) => item.acquisition_channel === "paused-opinion-source").length}`,
     `keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `source_registry_config: ${rel(sourceRegistryPath)}`,
     `generated_at: ${new Date().toISOString()}`,
@@ -3830,7 +3421,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "",
     `# ${date} Raw Candidates`,
     "",
-    "说明：本文件由 `agent-workflow/tools/run-guanlan-daily-monitor.mjs` 生成。默认采用三段式策略：AI HOT daily 精选与最近 24 小时全量作为 Raw 主入口，follow-builders 全量进入前沿观点入口，关键词规则补齐海外大厂、垂直赛道、融资、客户采用和行业落地缺口；HN / 社区只作为反馈补充。AI HOT、follow-builders、搜索聚合和社区材料都只是 discovery 入口，进入重要卡片、今日观察或商业内参前必须回到原始 URL，保存全文或当时可见文本，并重新判定页面类型与事件证据。",
+    "说明：本文件由 `agent-workflow/tools/run-guanlan-daily-monitor.mjs` 生成。默认采用三段式策略：AI HOT daily 精选与最近 24 小时全量作为 Raw 主入口，paused-opinion-source 全量进入前沿观点入口，关键词规则补齐海外大厂、垂直赛道、融资、客户采用和行业落地缺口；HN / 社区只作为反馈补充。AI HOT、paused-opinion-source、搜索聚合和社区材料都只是 discovery 入口，进入重要卡片、今日观察或商业内参前必须回到原始 URL，保存全文或当时可见文本，并重新判定页面类型与事件证据。",
     "",
   ];
 
@@ -4047,7 +3638,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
       "",
       "## 采集备注",
       "",
-      `该条目由 ${item.acquisition_channel} 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 follow-builders 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。`,
+      `该条目由 ${item.acquisition_channel} 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。`,
       "",
     ].join("\n");
     writeFile(originalPath, original);
@@ -4205,9 +3796,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `- keyword_search_count: ${items.filter((item) => item.acquisition_channel === "keyword-search").length}`,
     `- keyword_search_non_community_count: ${keywordNonCommunity}`,
     `- keyword_search_path_distribution: ${distributionText(bySearchPath)}`,
-    `- keyword_search_intent_distribution: ${distributionText(bySearchIntent)}`,
-    `- follow_builders_count: ${items.filter((item) => item.acquisition_channel === "follow-builders").length}`,
-    `- source_distribution: ${distributionText(distribution)}`,
+    `- keyword_search_intent_distribution: ${distributionText(bySearchIntent)}`,    `- source_distribution: ${distributionText(distribution)}`,
     `- raw_count_by_channel: ${distributionText(distribution)}`,
     `- keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `- keyword_group_distribution: ${distributionText(byKeywordGroup)}`,
@@ -4231,7 +3820,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "- change_cluster_candidates: not_generated_by_monitor",
     "- heat_candidates: none",
     `- failed_sources: ${failures.length ? failures.join("; ") : "none"}`,
-    "- fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then follow-builders + keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.",
+    "- fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.",
     "- evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.",
     `- raw_count_by_source_type: ${distributionText(byType)}`,
     `- source_registry_config: ${rel(sourceRegistryPath)}`,
@@ -4265,20 +3854,15 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "",
     "## Three-Lane Monitor Policy",
     "",
-    "Default strategy: AI HOT daily selected and full 24h are the primary Raw discovery entrances; follow-builders is fully scanned and fully written into the frontier-opinion library; keyword rules fill overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing. HN / community is feedback only. Important cards must then resolve original text, page type and usable evidence object before publication.",
+    "Default strategy: AI HOT daily selected and full 24h are the primary Raw discovery entrances; keyword rules fill overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing. paused-opinion-source / operators viewpoints are paused and must not enter business signals. HN / community is feedback only. Important cards must then resolve original text, page type and usable evidence object before publication.",
     "",
   ].join("\n");
   writeFile(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`), log);
 }
 
 async function main() {
-  const [aihot, builders] = await Promise.all([
-    collectAIHot(),
-    collectFollowBuilders(),
-  ]);
-  const builderItemsAll = Array.isArray(builders.items) ? builders.items : [];
-  const builderItemsForRaw = builderItemsAll.slice(0, buildersTarget);
-  const primaryItems = [...aihot.items, ...builderItemsForRaw];
+  const aihot = await collectAIHot();
+  const primaryItems = [...aihot.items];
   let keywordSearch = { items: [], failures: [] };
   let hn = { items: [], failures: [] };
   let gdelt = { items: [], failures: [] };
@@ -4300,7 +3884,7 @@ async function main() {
     normalizedItems = normalize([...primaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items]);
     coverageGaps = importanceCoverageGaps(normalizedItems);
   }
-  const failures = [...aihot.failures, ...builders.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures];
+  const failures = [...aihot.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures];
   const items = dryRun
     ? normalizedItems
     : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedItems)));
@@ -4321,7 +3905,6 @@ async function main() {
       historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
       historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
     });
-    await makeBuildersViewpointsFile(builderItemsAll);
   }
 
   console.log(
@@ -4337,15 +3920,12 @@ async function main() {
         aihot_all_discovered_count: aihot.discovered_count_all,
         aihot_daily_included_count: aihot.included_count_daily,
         aihot_rejected_by_raw_entry_rules: aihot.rejected_count,
-        external_search_activated: searchActivated,
-        historical_dedupe_enabled: historicalDedupeEnabled,
+        external_search_activated: searchActivated,        historical_dedupe_enabled: historicalDedupeEnabled,
         historical_raw_records_checked: historicalDedupeRecordsChecked,
         historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
         historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
         importance_coverage_gaps: coverageGaps,
-        aihot_count: items.filter((item) => item.acquisition_channel === "aihot").length,
-        follow_builders_count: items.filter((item) => item.acquisition_channel === "follow-builders").length,
-        keyword_search_count: items.filter((item) => item.acquisition_channel === "keyword-search").length,
+        aihot_count: items.filter((item) => item.acquisition_channel === "aihot").length,        keyword_search_count: items.filter((item) => item.acquisition_channel === "keyword-search").length,
         keyword_search_path_distribution: countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_path"),
         keyword_search_intent_distribution: countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_intent"),
         keyword_search_non_community_count: items.filter((item) => item.acquisition_channel === "keyword-search" && item.search_path && item.search_path !== "community_feedback").length,
@@ -4358,9 +3938,7 @@ async function main() {
             : [
                 rel(path.join(rawDir, `${date}-raw-candidates.md`)),
                 rel(originalDir),
-                rel(path.join(poolDir, `${date}-pool-candidates.md`)),
-                rel(path.join(opinionCalibrationDir, `${date}-opinion-candidates.md`)),
-                rel(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`)),
+                rel(path.join(poolDir, `${date}-pool-candidates.md`)),                rel(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`)),
               ],
       },
       null,

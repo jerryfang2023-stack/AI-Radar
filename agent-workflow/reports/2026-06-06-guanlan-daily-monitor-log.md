@@ -50,7 +50,7 @@
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then follow-builders + keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
 - evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.
 - raw_count_by_source_type: web=55; community=16; official=15; developer=7; news=6; builder=4; industry=4; media=4; domestic_vendor=2; product=2
-- front_signal_sab_source_count: S=4; A=2; B=8; total=14
+- front_signal_sab_source_count: S=3; A=2; B=5; total=10
 - source_registry_config: 01-SiteV2/content/11-databases/source-registry-v2.json
 - raw_snapshot_status_distribution: no-url-summary-only=29; summary-only-low-readable-body=28; fetched-readable-text-main=19; fetched-readable-text-content-container=14; blocked-http-403=7; fetched-readable-text-body-visible-text=7; fetched-readable-text-json-ld=6; blocked-http-401=2; fetched-readable-text-meta-description=2; fetched-readable-text-article=1
 - core_original_evidence_count: pending; to be filled after important-card evidence review.

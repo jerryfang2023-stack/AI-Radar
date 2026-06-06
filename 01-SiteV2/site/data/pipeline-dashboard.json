@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-06T09:32:45.688Z",
+    "generatedAt": "2026-06-06T12:36:18.445Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-06-06"
@@ -15,11 +15,12 @@
       "raw": 115,
       "pool": 44,
       "assets": {
-        "case": 1,
-        "product-service": 8,
+        "case": 2,
+        "funding": 3,
+        "product-service": 5,
         "opinion": 5
       },
-      "cards": 14,
+      "cards": 15,
       "rawChannels": {
         "aihot": 67,
         "keyword_search": 30,
@@ -52,34 +53,46 @@
       },
       "assetStatus": {
         "case": {
-          "published": 1
+          "published": 2
+        },
+        "funding": {
+          "published": 3
         },
         "product-service": {
-          "published": 8
+          "published": 5
         }
       },
       "assetLevels": {
         "case": {
-          "frontstage": 1
+          "frontstage": 2
+        },
+        "funding": {
+          "frontstage": 3
         },
         "product-service": {
-          "frontstage": 8
+          "frontstage": 5
         }
       },
       "assetEvidenceGates": {
         "case": {
-          "core_evidence_passed": 1
+          "core_evidence_passed": 2
+        },
+        "funding": {
+          "core_evidence_passed": 3
         },
         "product-service": {
-          "core_evidence_passed": 8
+          "core_evidence_passed": 5
         }
       },
       "assetCopyGates": {
         "case": {
-          "unknown": 1
+          "unknown": 2
+        },
+        "funding": {
+          "unknown": 3
         },
         "product-service": {
-          "unknown": 8
+          "unknown": 5
         }
       }
     },
@@ -525,11 +538,12 @@
     "raw": 115,
     "pool": 44,
     "assets": {
-      "case": 1,
-      "product-service": 8,
+      "case": 2,
+      "funding": 3,
+      "product-service": 5,
       "opinion": 5
     },
-    "cards": 14,
+    "cards": 15,
     "rawChannels": {
       "aihot": 67,
       "keyword_search": 30,
@@ -562,34 +576,46 @@
     },
     "assetStatus": {
       "case": {
-        "published": 1
+        "published": 2
+      },
+      "funding": {
+        "published": 3
       },
       "product-service": {
-        "published": 8
+        "published": 5
       }
     },
     "assetLevels": {
       "case": {
-        "frontstage": 1
+        "frontstage": 2
+      },
+      "funding": {
+        "frontstage": 3
       },
       "product-service": {
-        "frontstage": 8
+        "frontstage": 5
       }
     },
     "assetEvidenceGates": {
       "case": {
-        "core_evidence_passed": 1
+        "core_evidence_passed": 2
+      },
+      "funding": {
+        "core_evidence_passed": 3
       },
       "product-service": {
-        "core_evidence_passed": 8
+        "core_evidence_passed": 5
       }
     },
     "assetCopyGates": {
       "case": {
-        "unknown": 1
+        "unknown": 2
+      },
+      "funding": {
+        "unknown": 3
       },
       "product-service": {
-        "unknown": 8
+        "unknown": 5
       }
     }
   },
@@ -597,10 +623,10 @@
     "raw": 1449,
     "pool": 569,
     "assets": {
-      "case": 59,
-      "product-service": 72,
+      "case": 60,
+      "funding": 17,
+      "product-service": 69,
       "opinion": 269,
-      "funding": 14,
       "trend": 6,
       "scene": 3,
       "change": 14
@@ -613,7 +639,7 @@
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-06-06T09:32:45.746Z",
+    "updatedAt": "2026-06-06T12:36:18.486Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [

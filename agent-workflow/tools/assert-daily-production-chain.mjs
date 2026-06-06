@@ -15,7 +15,7 @@ const stage = args.get("stage") || "post-monitor";
 const rawMin = numberArg("raw-min", 80);
 const poolMin = numberArg("pool-min", 15);
 const allowMonitorQualityGaps = args.get("allow-monitor-quality-gaps") === "true";
-const blockStale = args.get("block-stale") === "true" || ["pre-trend", "pre-daily-observation", "pre-site", "pre-commit"].includes(stage);
+const blockStale = args.get("block-stale") === "true" || ["pre-trend", "pre-site", "pre-commit"].includes(stage);
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const allowedMonitorQualityGapFailures = new Set([
   "importance_coverage_gaps_must_be_none",
@@ -24,10 +24,9 @@ const allowedMonitorQualityGapFailures = new Set([
 
 const staleBlockGroupsByStage = new Map([
   ["post-monitor", []],
-  ["pre-trend", ["signal_cards", "opinion_cards"]],
-  ["pre-daily-observation", ["signal_cards", "opinion_cards", "trend_candidates"]],
-  ["pre-site", ["signal_cards", "opinion_cards", "trend_candidates", "daily_observation"]],
-  ["pre-commit", ["signal_cards", "opinion_cards", "trend_candidates", "daily_observation", "site_data"]],
+  ["pre-trend", ["signal_cards"]],
+  ["pre-site", ["signal_cards", "trend_candidates"]],
+  ["pre-commit", ["signal_cards", "trend_candidates", "site_data"]],
 ]);
 
 function numberArg(name, fallback) {
@@ -108,7 +107,7 @@ function staleBlockGroupNames() {
   if (explicit) {
     return explicit.split(",").map((item) => item.trim()).filter(Boolean);
   }
-  return staleBlockGroupsByStage.get(stage) || ["signal_cards", "opinion_cards", "trend_candidates", "daily_observation", "site_data"];
+  return staleBlockGroupsByStage.get(stage) || ["signal_cards", "trend_candidates", "site_data"];
 }
 
 const files = {
@@ -179,10 +178,6 @@ const downstreamGroups = {
     ...datedMarkdown(path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "trend")),
     path.join(reportsDir, `${date}-no-trend-candidate-decision.md`),
   ].filter(exists),
-  daily_observation: [
-    ...datedMarkdown(path.join(root, "01-SiteV2", "content", "03-daily-observation")),
-    ...datedMarkdown(reportsDir, (file) => /daily-observation/iu.test(path.basename(file))),
-  ],
   site_data: [
     path.join(root, "01-SiteV2", "site", "data", "site-content.json"),
     path.join(root, "01-SiteV2", "site", "data", "site-content.js"),
@@ -232,7 +227,7 @@ if (staleGroups.length) {
     "",
     "## Required Action",
     "",
-    "- Regenerate same-date Card / Opinion / Trend / Daily Observation / site data before site sync or commit mode.",
+    "- Regenerate same-date Card / Trend Candidate / site data before site sync or commit mode.",
     "",
   ].join("\n"), "utf8");
 } else if (exists(staleMarkerFile)) {

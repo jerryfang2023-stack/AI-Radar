@@ -72,6 +72,65 @@ function normalize(value = "") {
     .replace(/\s+/gu, " ");
 }
 
+const monthNames = new Map([
+  ["january", 0],
+  ["february", 1],
+  ["march", 2],
+  ["april", 3],
+  ["may", 4],
+  ["june", 5],
+  ["july", 6],
+  ["august", 7],
+  ["september", 8],
+  ["october", 9],
+  ["november", 10],
+  ["december", 11],
+]);
+
+function parsePublicationDate(value = "") {
+  if (!value) return null;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function dateFromUrl(value = "") {
+  const match = String(value || "").match(/\/(20\d{2})\/(0?\d{1,2})\/(0?\d{1,2})(?:\/|$)/u);
+  if (!match) return null;
+  return new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])));
+}
+
+function dateFromText(value = "") {
+  const match = String(value || "").slice(0, 2000).match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/iu);
+  if (!match) return null;
+  const month = monthNames.get(match[1].toLowerCase());
+  if (month === undefined) return null;
+  return new Date(Date.UTC(Number(match[3]), month, Number(match[2])));
+}
+
+function rawPublicationDate(rawJsonRel = "", sourceUrl = "") {
+  if (rawJsonRel) {
+    const rawJson = path.join(root, rawJsonRel);
+    if (exists(rawJson)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(rawJson, "utf8"));
+        return parsePublicationDate(data.published_at)
+          || dateFromUrl(data.canonical_url || data.original_url || sourceUrl)
+          || dateFromText(data.full_text || data.clean_text || "");
+      } catch {
+        // Fall through to URL-only parsing.
+      }
+    }
+  }
+  return dateFromUrl(sourceUrl);
+}
+
+function isStaleSource(rawJsonRel = "", sourceUrl = "", maxAgeDays = 14) {
+  const published = rawPublicationDate(rawJsonRel, sourceUrl);
+  if (!published) return false;
+  const runDate = new Date(`${date}T12:00:00Z`);
+  return runDate.getTime() - published.getTime() > maxAgeDays * 24 * 60 * 60 * 1000;
+}
+
 function pushKey(map, key, card) {
   if (!key || /^(no-url|unknown|none|null)$/iu.test(key)) return;
   if (!map.has(key)) map.set(key, []);
@@ -85,6 +144,7 @@ const cards = cardFiles.map((file) => {
   const rawRefs = arrayField(text, "raw_refs");
   const poolRefs = arrayField(text, "pool_refs");
   const sourceUrl = nestedField(text, "source_url") || field(text, "canonical_url");
+  const rawJson = nestedField(text, "raw_json");
   const fullTextHash = nestedField(text, "full_text_hash");
   const owner = field(text, "signal_owner");
   const title = field(text, "title");
@@ -100,6 +160,7 @@ const cards = cardFiles.map((file) => {
     rawRefs,
     poolRefs,
     sourceUrl,
+    rawJson,
     fullTextHash,
     eventLine,
     publishedAt,
@@ -136,6 +197,44 @@ for (const [kind, map] of Object.entries(keyMaps)) {
         cards: groupedCards.map((card) => `${card.id} ${rel(card.file)}`),
       });
     }
+  }
+}
+
+const signalIndexFile = path.join(root, "01-SiteV2", "content", "04-business-signals", "signals", `${date}-signals.md`);
+if (exists(signalIndexFile)) {
+  const text = fs.readFileSync(signalIndexFile, "utf8");
+  const rows = text.split(/\r?\n/u)
+    .map((line) => line.match(/^-\s*(SIG-[^｜|]+)[｜|](.+)$/u))
+    .filter(Boolean)
+    .map((match) => ({ id: match[1], row: match[0] }));
+  const indexIds = new Map();
+  for (const row of rows) pushKey(indexIds, row.id, row);
+  for (const [id, groupedRows] of indexIds.entries()) {
+    if (groupedRows.length > 1) {
+      duplicateGroups.push({
+        kind: "signal_index_id",
+        key: id,
+        cards: groupedRows.map((row) => row.row),
+      });
+    }
+  }
+  if (rows.length !== cards.length) {
+    duplicateGroups.push({
+      kind: "signal_index_count_mismatch",
+      key: `index=${rows.length};cards=${cards.length}`,
+      cards: [rel(signalIndexFile)],
+    });
+  }
+}
+
+for (const card of cards) {
+  const maxAgeDays = card.signalType === "product_service" ? 14 : 180;
+  if (isStaleSource(card.rawJson, card.sourceUrl, maxAgeDays)) {
+    duplicateGroups.push({
+      kind: "stale_source_date",
+      key: card.sourceUrl,
+      cards: [`${card.id} ${rel(card.file)}`],
+    });
   }
 }
 

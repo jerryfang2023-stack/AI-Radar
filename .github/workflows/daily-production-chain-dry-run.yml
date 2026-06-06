@@ -76,8 +76,6 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_secret: $([ -n "$OPENAI_API_KEY" ] && echo configured || echo missing)"
             echo "- trend_candidate_skill: $([ -f "skills/guanlan-trend-candidate-writer/SKILL.md" ] && echo present || echo missing)"
-            echo "- daily_observation_repo_skills: $([ -f "skills/guanlan-daily-observation-pitch/SKILL.md" ] && [ -f "skills/guanlan-daily-observation/SKILL.md" ] && [ -f "skills/guanlan-daily-observation-qc/SKILL.md" ] && echo present || echo missing)"
-            echo "- daily_observation_local_skill_fallback: $([ -f "$HOME/.skill-store/guanlan-daily-observation-pitch/SKILL.md" ] && [ -f "$HOME/.skill-store/guanlan-daily-observation/SKILL.md" ] && [ -f "$HOME/.skill-store/guanlan-daily-observation-qc/SKILL.md" ] && echo present || echo missing)"
             echo
             echo "This workflow is a dry run. It uploads artifacts only and never commits, pushes, opens PRs, commits site data, or deploys."
             echo
@@ -85,11 +83,10 @@ jobs:
             echo "1. Run Daily Monitor with QC."
             echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
             echo "3. Mark same-date downstream assets stale if Raw / Pool changed."
-            echo "4. Regenerate business-signal Card assets in the runner workspace only."
-            echo "5. Run cardcopy and Pool-to-Card duplicate gates."
+            echo "4. Regenerate 10 business-signal Card assets in the runner workspace only."
+            echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Run trend candidate / no-decision shell."
-            echo "7. Run Daily Observation Write / QC shell."
-            echo "8. Sync site data only if all gates pass, still artifact-only."
+            echo "7. Sync V3 site and operations data if all gates pass, still artifact-only."
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-production-chain-dry-run.md"
 
       - name: Syntax checks
@@ -100,10 +97,8 @@ jobs:
           node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
-          node --check agent-workflow/tools/card-copy-style-gate.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/run-trend-candidate-decision.mjs
-          node --check agent-workflow/tools/run-daily-observation-chain.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
 
@@ -162,22 +157,9 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --require-final-qc=false \
-            --include-opinions=false \
+            --signal-target=10 \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-assets.log"
-
-      - name: Run cardcopy gate
-        id: cardcopy
-        if: steps.assets.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/run-quality-gates.mjs cardcopy \
-            --date="${RUN_DATE}" \
-            --strict=true \
-            --require-gates=true \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-cardcopy.log"
 
       - name: Run Pool-to-Card duplicate gate
         id: pool-to-card-dedupe
@@ -192,7 +174,7 @@ jobs:
 
       - name: Run trend candidate or no-decision shell
         id: trend
-        if: steps.cardcopy.outcome == 'success' && steps.pool-to-card-dedupe.outcome == 'success'
+        if: steps.pool-to-card-dedupe.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -201,21 +183,9 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-trend-decision.log"
 
-      - name: Run Daily Observation Write / QC shell
-        id: daily-observation
-        if: steps.trend.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/run-daily-observation-chain.mjs \
-            --date="${RUN_DATE}" \
-            --mode=write-qc \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-daily-observation.log"
-
       - name: Build V3 site data after gates pass
         id: site-sync
-        if: steps.daily-observation.outcome == 'success'
+        if: steps.trend.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -241,13 +211,11 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-trend-candidate-decision*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-no-trend-candidate-decision.md
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-observation-*.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/content/06-asset-candidates/**
-            01-SiteV2/content/03-daily-observation/${{ steps.run-date.outputs.date }}--daily-observation--*.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
             01-SiteV2/knowledge/03-Asset-Candidates/**/${{ steps.run-date.outputs.date }}--*.md
             01-SiteV2/site/data/site-content.json
@@ -271,17 +239,10 @@ jobs:
           require_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
           require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
           require_success "Raw / Pool post-dedupe and stale gate" "${{ steps.production-chain-post-monitor.outcome }}"
-          require_success "Card / Opinion regeneration" "${{ steps.assets.outcome }}"
-          require_success "Cardcopy gate" "${{ steps.cardcopy.outcome }}"
+          require_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
           require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
           require_success "Trend candidate / no-decision shell" "${{ steps.trend.outcome }}"
-          require_success "Daily Observation Write / QC shell" "${{ steps.daily-observation.outcome }}"
-
-          if [ "${{ steps.daily-observation.outcome }}" = "success" ]; then
-            require_success "Site data sync" "${{ steps.site-sync.outcome }}"
-          else
-            echo "Site data sync was correctly blocked because Daily Observation did not pass." >&2
-          fi
+          require_success "Site data sync" "${{ steps.site-sync.outcome }}"
 
           if [ "$fail" -ne 0 ]; then
             echo "Full-chain dry-run did not pass. Inspect uploaded artifacts. Nothing was committed, pushed, published, or deployed." >&2

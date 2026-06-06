@@ -9,8 +9,8 @@ source_title: "Claude Cowork 产品指南"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T05:51:22.787Z
-updated_at: 2026-06-06T05:51:22.787Z
+created_at: 2026-06-06T12:35:16.457Z
+updated_at: 2026-06-06T12:35:16.457Z
 
 raw_refs: ["R-008"]
 pool_refs: ["P-008"]
@@ -38,7 +38,6 @@ formal_tags:
   stage: ["stage-watch"]
   region: []
   source: ["source-industry-data"]
-  opinion: []
 
 signal_owner: "Claude Cowork 产品指南"
 
@@ -52,20 +51,19 @@ frontend:
 
 ## 新闻事实
 
-Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程…
+Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程...
 
 ## 原文要点
 
-- Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程…
-- 原文记录的关键数字包括 2026 B。
+- Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程...
 
 ## 简要价值描述
 
-原文记录的关键数字包括 2026 B。
+Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程...
 
 ## 可见原文片段
 
-原文记录的关键数字包括 2026 B。
+Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望结果后自动规划执行。指南还介绍了产品矩阵（对话聊天、Claude Code 编程...
 
 ## 证据边界
 

@@ -26,12 +26,7 @@ body.v3-data-observation-page {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  background:
-    linear-gradient(rgba(200, 167, 102, .028) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(200, 167, 102, .024) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(255, 255, 255, .42), rgba(247, 244, 239, .34)),
-    var(--paper);
-  background-size: 40px 40px;
+  background: var(--paper);
   font-family: var(--sans);
   font-size: var(--gl-type-body-size, 16px);
   font-weight: var(--gl-weight-body, 400);

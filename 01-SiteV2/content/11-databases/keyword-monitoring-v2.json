@@ -1,8 +1,8 @@
 {
   "schema_version": "v2-keyword-monitoring-1.2",
-  "updated_at": "2026-05-20",
+  "updated_at": "2026-06-06",
   "owner": "Intelligence Engine Agent",
-  "purpose": "Executable keyword and importance-type monitoring config for WaveSight AI V2.2 guanlan-daily-monitor. It supports Raw-first monitoring, curated-entry priority, source diversity, vertical/product/funding discovery, and theme concentration control.",
+  "purpose": "Executable keyword and importance-type monitoring config for WaveSight AI V3.1 daily Raw / Pool / business-signal generation. It prioritizes original evidence, source diversity, vertical cases, startup funding, customer adoption and industry landing; opinion-source viewpoints are paused and excluded from business-signal generation.",
   "policy": {
     "raw_max_theme_share": 0.35,
     "pool_max_theme_share": 0.4,
@@ -16,8 +16,7 @@
       "important_funding",
       "important_technical_trend",
       "important_product_or_service",
-      "important_vertical_solution",
-      "important_viewpoint_or_article"
+      "important_vertical_solution"
     ],
     "raw_min_per_required_importance_type": 3,
     "pool_min_per_required_importance_type": 1,
@@ -38,13 +37,13 @@
     "keyword_search_path_role_rule": "Search paths define collection intent, not evidence authority. Every fetched result must still be classified by page type, full text, source type, event_evidence and index_only_evidence before Raw/Pool use.",
     "keyword_search_non_community_required": true,
     "keyword_search_community_only_policy": "HN/Reddit/X/community discussion is feedback only. It must not dominate keyword-search results. Prioritize overseas big-company events, vertical product news, startup/funding news, customer adoption, industry landing, developer ecosystem, procurement, regulation and counter-evidence.",
-    "anti_big_company_bias_rule": "For AI applications, industry landing, tool ecosystems, workflow change, Agent, vertical SaaS and enterprise service themes, add startup, YC, Product Hunt, GitHub, Hugging Face, marketplace, customer story, vertical SaaS, industry use case, and AI agent for + industry/role/workflow queries.",
+    "anti_big_company_bias_rule": "Business signals must not be filled only with big-company product news. Every daily monitor run must actively search vertical cases, customer adoption, non-big-tech product deployments, and small / mid-size company financing. If those lanes are thin, record a coverage gap instead of padding with big-company releases.",
     "frontstage_selected_change_target_mix": {
-      "mature-commercial-signal": "1-2",
-      "early-direction-signal": "1",
-      "technical-iteration-signal": "0-1",
-      "developer-ecosystem-signal": "0-1",
-      "capital-market-signal": "0-1"
+      "important_case": "2+",
+      "important_funding": "2+",
+      "important_vertical_solution": "2+",
+      "important_product_or_service": "0-4, and not more than 45% of frontstage business signals unless other lanes have no eligible original evidence",
+      "important_technical_trend": "0-2"
     },
     "warning_threshold_share": 0.4,
     "lane_based_raw_monitoring": true,
@@ -52,24 +51,25 @@
     "core_pool_max_per_importance_type": 3,
     "keyword_search_fallback_only_for_generic_web": true,
     "generic_search_evidence_authority": "discovery_only_never_core_by_itself",
-    "layered_search_priority": [
-      "curated_owned_entrances_aihot_follow_builders_rss_source_registry",
-      "whitelisted_official_and_high_signal_domains",
-      "vertical_apis_or_structured_databases_when_configured",
-      "gdelt_and_a_media_verification",
-      "semantic_or_agent_search_when_configured_anysearch_tavily_exa",
-      "bing_or_generic_web_search_fallback_discovery_only"
-    ],
+    "layered_search_priority": "curated_owned_entrances_aihot_rss_source_registry,whitelisted_official_and_high_signal_domains,vertical_apis_or_structured_databases_when_configured,gdelt_and_a_media_verification,semantic_or_agent_search_when_configured_anysearch_tavily_exa,bing_or_generic_web_search_fallback_discovery_only",
     "raw_target_per_required_importance_type": 5,
     "raw_lane_low_volume_backfill": {
       "enabled": true,
       "min_per_required_importance_type": 3,
       "target_per_required_importance_type": 5,
       "rule": "If any required importance lane has fewer than 3 Raw candidates, run lane-specific backfill before judging Pool health. Do not lower Pool or Core Pool evidence gates."
-    }
+    },
+    "business_signal_daily_mix_minimum": {
+      "important_case": 2,
+      "important_funding": 2,
+      "important_vertical_solution": 2,
+      "small_mid_company_funding": 2,
+      "big_company_product_max_share": 0.45
+    },
+    "business_signal_mix_rule": "Raw and Pool can exceed these counts, but Card selection must favor original-evidence vertical cases and small / mid-size company financing before adding extra big-company product announcements. Missing lanes are a quality gap, not a reason to invent or over-summarize."
   },
   "raw_entry_policy": {
-    "default_strategy": "AI HOT daily selected + AI HOT full 24h + follow-builders + keyword rules first. External multi-path search expands overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing; HN/community is feedback only.",
+    "default_strategy": "AI HOT daily selected + AI HOT full 24h + source registry + keyword rules first. External multi-path search expands vertical cases, customer adoption, startup/funding news, non-big-tech product deployments and industry landing; HN/community is feedback only.",
     "aihot_role": "primary_raw_discovery_entrance",
     "aihot_mode": "all",
     "aihot_window_hours": 24,
@@ -85,10 +85,8 @@
       "tip"
     ],
     "aihot_fallback_rule": "AI HOT itself is M-level discovery. Eligible items enter Raw Candidate after category / keyword / business-action screening; factual use requires original text and page-type checks.",
-    "follow_builders_role": "full_daily_frontier_opinion_library",
-    "follow_builders_rule": "Every daily follow-builders item is written to the frontier opinion library and receives higher capture priority. Social or community posts are viewpoint evidence and cannot prove company facts.",
     "external_search_activation": [
-      "AI HOT filtered candidates + follow-builders are below the Raw minimum",
+      "AI HOT filtered candidates are below the Raw minimum",
       "required importance types are under-covered",
       "important card candidates lack original text or event/change evidence",
       "AI HOT origin fetch fails or only produces discovery_only / weak_signal text"
@@ -233,7 +231,11 @@
         "query_collision_pre_seed_to_pre_tag_or_model_to_dictionary"
       ],
       "core_pool_rule": "Generic search result must resolve to original evidence, pass Raw QC and page-type checks, and match one six-lane importance type with score >= 4."
-    }
+    },
+    "business_signal_exclusions": [
+      "social / opinion-source items without original S/A/B factual evidence"
+    ],
+    "vertical_case_and_sme_funding_rule": "Before business-signal Card generation, Raw must include lane-specific searches for vertical cases and small / mid-size company financing. Use original article / announcement text; do not derive business facts from social opinions or discovery-only summaries."
   },
   "p0_core_tracks": [
     {
@@ -280,7 +282,7 @@
         "AI coding startup",
         "AI coding agent",
         "software engineering agent",
-        "AI app builder",
+        "AI app practitioner",
         "vibe coding",
         "AI developer tool",
         "AI SDK",
@@ -554,10 +556,6 @@
           "AI acquisition enterprise software",
           "AI startup funding enterprise customers",
           "AI platform launch enterprise customers"
-        ],
-        "builder_proxy": [
-          "AI founder ARR customers",
-          "AI startup enterprise adoption pricing"
         ]
       }
     },
@@ -638,11 +636,6 @@
           "pre-seed AI startup vertical AI",
           "YC AI startup customers",
           "AI research spinout funding"
-        ],
-        "builder_proxy": [
-          "AI startup founder seed customer",
-          "AI founder design partner vertical AI",
-          "AI builder stealth startup"
         ]
       }
     },
@@ -727,11 +720,6 @@
           "inference cost reduction AI enterprise",
           "on-device AI enterprise deployment",
           "AI agent runtime governance"
-        ],
-        "builder_proxy": [
-          "AI model routing builder workflow",
-          "AI agent sandbox builder",
-          "AI evals startup founder"
         ]
       }
     },
@@ -804,18 +792,13 @@
           "AI developer tools enterprise adoption",
           "open source AI startup funding",
           "cloud marketplace AI integration"
-        ],
-        "builder_proxy": [
-          "AI coding agent founder",
-          "AI SDK builder launch",
-          "open source AI founder customers"
         ]
       }
     },
     {
       "id": "capital-market-signal",
-      "label": "??????",
-      "role": "YC ????????????????????????????????????????????????????????????",
+      "label": "资本市场信号",
+      "role": "覆盖中小 AI 公司融资、种子轮 / A 轮、垂直 AI、Agent 基础设施、机器人、AI 安全、评测和模型基础设施。必须确认公司、轮次或金额、投资方和业务方向。",
       "keywords": [
         "YC AI startup",
         "Y Combinator AI",
@@ -840,7 +823,12 @@
         "?? AI ??",
         "??????",
         "AI ???? ??",
-        "AI Agent ??"
+        "AI Agent ??",
+        "seed funding",
+        "Series A",
+        "vertical AI",
+        "SMB AI",
+        "startup financing"
       ],
       "p0_coverage": [
         "agent-workflow",
@@ -866,7 +854,25 @@
           "AI robotics startup funding commercial deployment",
           "AI security startup funding enterprise customers",
           "AI research spinout funding frontier technology",
-          "vertical AI funding pilot customers"
+          "vertical AI funding pilot customers",
+          "AI startup seed funding vertical workflow customers",
+          "AI agent startup seed funding SMB workflow",
+          "small AI startup raises seed vertical AI",
+          "AI startup Series A customer deployment workflow",
+          "AI infrastructure startup funding enterprise customers",
+          "AI agent startup raises revenue teams",
+          "AI agent startup raises procurement workflow",
+          "AI agent startup raises logistics workflow",
+          "AI healthcare startup funding enterprise customers",
+          "AI legaltech startup funding workflow automation",
+          "AI logistics startup funding customer deployment",
+          "AI construction startup funding design workflow",
+          "AI insurance startup funding claims workflow",
+          "AI manufacturing agent startup funding factory workflow",
+          "AI procurement startup funding enterprise workflow",
+          "AI retail operations startup funding customer case",
+          "vertical AI startup raises seed enterprise customers",
+          "SMB AI startup funding workflow automation"
         ],
         "hn": [
           "YC AI startup",
@@ -877,12 +883,17 @@
           "AI startup raises vertical AI",
           "frontier AI investment startup",
           "AI infrastructure startup Series A",
-          "AI robotics startup funding"
-        ],
-        "builder_proxy": [
-          "AI founder seed funding",
-          "YC AI founder startup",
-          "AI startup investor vertical AI"
+          "AI robotics startup funding",
+          "AI startup seed funding vertical workflow customers",
+          "AI agent startup seed funding SMB workflow",
+          "small AI startup raises seed vertical AI",
+          "AI startup Series A customer deployment workflow",
+          "AI infrastructure startup funding enterprise customers",
+          "AI healthcare startup funding enterprise customers",
+          "AI legaltech startup funding workflow automation",
+          "AI logistics startup funding customer deployment",
+          "AI construction startup funding design workflow",
+          "AI insurance startup funding claims workflow"
         ]
       }
     },
@@ -948,7 +959,17 @@
           "AI insurance claims workflow automation",
           "AI construction software workflow automation",
           "AI logistics planning automation customer",
-          "AI public sector procurement workflow automation"
+          "AI public sector procurement workflow automation",
+          "AI healthcare startup funding enterprise customers",
+          "AI legaltech startup funding workflow automation",
+          "AI logistics startup funding customer deployment",
+          "AI construction startup funding design workflow",
+          "AI insurance startup funding claims workflow",
+          "AI manufacturing agent startup funding factory workflow",
+          "AI procurement startup funding enterprise workflow",
+          "AI retail operations startup funding customer case",
+          "vertical AI startup raises seed enterprise customers",
+          "SMB AI startup funding workflow automation"
         ],
         "hn": [
           "AI tool unexpected use case",
@@ -958,12 +979,13 @@
         "gdelt": [
           "AI adoption vertical industry workflow",
           "AI procurement public sector workflow",
-          "AI customer segment automation"
-        ],
-        "builder_proxy": [
-          "AI founder unusual vertical",
-          "AI builder customer workflow",
-          "AI operator pain point"
+          "AI customer segment automation",
+          "AI healthcare startup funding enterprise customers",
+          "AI legaltech startup funding workflow automation",
+          "AI logistics startup funding customer deployment",
+          "AI construction startup funding design workflow",
+          "AI insurance startup funding claims workflow",
+          "AI manufacturing agent startup funding factory workflow"
         ]
       }
     }
@@ -971,22 +993,22 @@
   "importance_lanes": {
     "important_case": {
       "label": "important case",
-      "raw_goal": "Find named customers, deployments, repeatable workflows and production adoption.",
+      "raw_goal": "Customer cases, vertical deployments and workflow adoption with named company / customer / workflow evidence. Prefer original articles, customer stories, release notes and case posts over generic summaries.",
       "core_minimum": "Named actor plus real customer/industry scene or repeatable workflow evidence.",
       "core_max_per_day": 3,
       "force_fill": false,
-      "raw_min_per_day": 3,
-      "raw_target_per_day": 5,
+      "raw_min_per_day": 4,
+      "raw_target_per_day": 7,
       "pool_min_per_day": 1
     },
     "important_funding": {
       "label": "important funding",
-      "raw_goal": "Find funding, investors, rounds, valuation, team and market direction.",
-      "core_minimum": "Company plus round, amount, investor, valuation or credible funding report.",
+      "raw_goal": "Small and mid-size AI company financing with company, amount or round, investor when available, and concrete product / market direction. Do not count funding maps, rankings, or investor essays as single-company funding signals.",
+      "core_minimum": null,
       "core_max_per_day": 3,
       "force_fill": false,
-      "raw_min_per_day": 3,
-      "raw_target_per_day": 5,
+      "raw_min_per_day": 4,
+      "raw_target_per_day": 8,
       "pool_min_per_day": 1
     },
     "important_technical_trend": {
@@ -1001,7 +1023,7 @@
     },
     "important_product_or_service": {
       "label": "important product or service",
-      "raw_goal": "Find product launches, APIs, platforms and commercialized capabilities.",
+      "raw_goal": "Product / service launches are useful only when they show a concrete customer workflow, integration, pricing / procurement path, deployment channel or measurable adoption. Big-company product news must not crowd out funding and vertical case lanes.",
       "core_minimum": "Named product/API/platform plus launch, update or commercial availability evidence.",
       "core_max_per_day": 3,
       "force_fill": false,
@@ -1011,22 +1033,12 @@
     },
     "important_vertical_solution": {
       "label": "important vertical solution",
-      "raw_goal": "Find named industries, solutions, workflows and deployable industry products.",
-      "core_minimum": "Named industry plus deliverable solution/workflow/customer scenario; at least two structure signals.",
+      "raw_goal": "Vertical AI products or deployments in healthcare, legal, logistics, construction, insurance, manufacturing, retail, procurement, finance ops or similar concrete industries. Must identify the workflow or operational object.",
+      "core_minimum": null,
       "core_max_per_day": 3,
       "force_fill": false,
-      "raw_min_per_day": 3,
-      "raw_target_per_day": 5,
-      "pool_min_per_day": 1
-    },
-    "important_viewpoint_or_article": {
-      "label": "important viewpoint or article",
-      "raw_goal": "Find high-impact speeches, essays, interviews, research notes and investor/operator viewpoints.",
-      "core_minimum": "Named author/institution plus complete viewpoint text that changes industry, investment or adoption judgment.",
-      "core_max_per_day": 3,
-      "force_fill": false,
-      "raw_min_per_day": 3,
-      "raw_target_per_day": 5,
+      "raw_min_per_day": 4,
+      "raw_target_per_day": 7,
       "pool_min_per_day": 1
     }
   },

@@ -1,7 +1,7 @@
 ---
-id: SIG-20260606-A14
+id: SIG-20260606-A02
 type: signal_card
-signal_type: product_service
+signal_type: funding
 title: "AI research lab NeoCognition lands $40M seed to build agents that ..."
 date: 2026-06-06
 status: published
@@ -9,8 +9,8 @@ source_title: "AI research lab NeoCognition lands $40M seed to build agents that
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T05:51:22.787Z
-updated_at: 2026-06-06T05:51:22.787Z
+created_at: 2026-06-06T12:35:16.457Z
+updated_at: 2026-06-06T12:35:16.457Z
 
 raw_refs: ["R-015"]
 pool_refs: ["P-015"]
@@ -34,11 +34,10 @@ formal_tags:
   function: []
   scenario: []
   customer: ["customer-enterprise"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-funding"]
+  stage: ["stage-watch", "stage-rising"]
   region: []
   source: ["source-business-media"]
-  opinion: []
 
 signal_owner: "NeoCognition"
 
@@ -52,23 +51,20 @@ frontend:
 
 ## 新闻事实
 
-原文 funding记录的关键数字包括 $40M。
+AI research lab NeoCognition 获得 $40M seed 融资。
 
 ## 原文要点
 
-- 原文 funding记录的关键数字包括 $40M。
-- 原文 funding记录的关键数字包括 $40 m。
-- 原文记录的关键数字包括 $40M。
-- 原文记录的关键数字包括 $40 m。
-- 原文记录的关键数字包括 50%。
+- AI research lab NeoCognition 获得 $40M seed 融资。
+- NeoCognition 获得 $40 m seed 融资。
 
 ## 简要价值描述
 
-原文 funding记录的关键数字包括 $40 m。
+NeoCognition 获得 $40 m seed 融资。
 
 ## 可见原文片段
 
-原文记录的关键数字包括 $40M。
+AI research lab NeoCognition 获得 $40M seed 融资。
 
 ## 证据边界
 

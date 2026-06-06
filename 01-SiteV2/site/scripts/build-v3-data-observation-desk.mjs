@@ -705,7 +705,7 @@ function excerptTypeLabel(type = "") {
     workflow_change: "流程变化",
     supporting_context: "背景信息",
     product_launch: "产品信息",
-    viewpoint: "观点信息",
+    viewpoint: "原文信息",
   };
   return labels[type] || "原文信息";
 }
@@ -963,7 +963,7 @@ function trendAssetFromFile(file, cards = []) {
     || headingSection(text, "风险边界与证据缺口");
   const nextObservation = scalar(fm, "next_observation")
     || headingSection(text, "下一步观察");
-  const sourceTypes = arrayValue(fm, "source_types");
+  const sourceTypes = arrayValue(fm, "source_types").filter((item) => !isOpinionSourceType(item));
   const relatedSignals = arrayValue(fm, "related_signal_cards")
     .concat(arrayValue(fm, "related_change_cards"))
     .concat(arrayValue(fm, "related_case_cards"));
@@ -1009,6 +1009,10 @@ function trendAssetFromFile(file, cards = []) {
   };
 }
 
+function isOpinionSourceType(value = "") {
+  return /opinion|观点|觀點|builder/iu.test(String(value || ""));
+}
+
 function trendFrontstageTitle(title = "", tags = {}) {
   if (title === "track-ai-governance") return "AI 治理开始从原则讨论转向产品和流程约束";
   if (title === "track-ai-coding") return "AI 编程工具开始进入工程团队的预算和治理流程";
@@ -1024,6 +1028,8 @@ function trendFrontstageTitle(title = "", tags = {}) {
 function cleanTrendNarrative(value = "") {
   return String(value || "")
     .replace(/\s+/gu, " ")
+    .replace(/、?前沿观点/gu, "")
+    .replace(/builder\s*观点/giu, "")
     .replace(/^这条趋势正在形成，是因为/u, "")
     .replace(/共同指向一个变化[:：]/gu, "材料显示：")
     .replace(/信号指向同一个问题[:：]/gu, "材料显示：")
@@ -1160,7 +1166,6 @@ function windowCards(cards, activeDate, windowDays) {
 
 function isMeaningfulAssociationTag(tag = "") {
   if (/^(stage|region|source)-/u.test(tag)) return false;
-  if (tag === "scenario-frontier-opinion" || tag === "evidence-frontier-opinion") return false;
   return true;
 }
 
@@ -1308,7 +1313,7 @@ function isWeakSourceFact(value = "") {
   if (!hasCjk(text)) return true;
   if (/^##\s|raw_ref|raw_archive|raw_original_id|`01-SiteV2|本地 Raw|Raw\s*\/\s*Pool/u.test(text)) return true;
   if (/^关键数字|原文关键数字包括|原文信息：原文关键数字|融资信息：原文关键数字|公司动作：原文关键数字|案例信息：原文关键数字/u.test(text)) return true;
-  if (/淘汰风险|可观察观点来源的原始判断/u.test(text)) return true;
+  if (/淘汰风险/u.test(text)) return true;
   if (text.length < 12) return true;
   return false;
 }

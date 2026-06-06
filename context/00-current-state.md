@@ -1,94 +1,77 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-05
+last_updated: 2026-06-06
 use_when:
   - large task startup
   - dispatch planning
   - state recovery
-do_not_use_when:
-  - small typo or copy edit with explicit files
-  - past-state audit
 priority: current
 ---
 
 # 00 Current State｜观澜 AI 当前状态
 
-观澜 AI / WaveSight AI 当前处于 V3.1.1 数据观察台回源前台门禁阶段。
+观澜 AI / WaveSight AI 当前进入 V3 数据观察台阶段。
 
-## 定位
+## 当前定位
 
-- 产品定义：观澜 AI 是一个由 Agent 驱动的 AI 商业情报系统。
-- 核心逻辑：持续监测全球 AI 商业变化，将外部信息转化为结构化情报资产，再生成面向企业老板、资源型合伙人、行业操盘手的商业信号、机会判断、AI 内参和 AI 商业热力图。
-- 系统定位：观澜 AI 不是内容站，而是一个会持续感知、判断、表达、发布、复盘和进化的 AI 商业决策系统。
-- AI Native 方向：后续能力建设优先让 Agent 之间形成联动，围绕感知、判断、表达、发布、复盘和进化形成闭环。
-- 不是 AI 新闻站、工具导航、热点搬运站或普通日报。
-- 当前前台入口：数据观察台。
-- 当前 V3.1.1 重点：移动端适配、统计区轻量化、商业信号标题原文优先、英文前台展示中文化、前台文案规范与文案门禁暂停使用，并用 source-first frontstage gate 防止 Card / 观点 / 趋势 / 关系内容从旧摘要或内部字段二次生成。
+- 观澜 AI 是由 Agent 驱动的 AI 商业情报系统。
+- 当前前台入口是数据观察台：`01-SiteV2/site/v3-data-observation.html`。
+- 当前生产核心不是内容站，而是把每日外部信息沉淀为结构化商业情报资产。
+- 当前资产链只要求：Raw 候选、Pool 证据、商业信号 Card、关系图谱输入、趋势候选。
+- 每日目标是让用户看到市场上最值得关注的 10 件产品 / 服务、融资、案例信息。
+
+## 当前停止口径
+
+以下内容不是当前 V3 必要输出，也不作为当前执行依据：
+
+- 今日观察；
+- 商业内参；
+- 趋势报告；
+- 旧首页、旧商业信号页、旧趋势追踪页、旧观点页；
+- follow-builders / opinion lane；
+- 观澜前台文案规范与文案门禁；
+- publiccopy / cardcopy 发布阻塞门禁。
+
+V2 站点已经下线。历史规则如果影响 V3，可以删除或重建，不需要继续兼容。
 
 ## 当前目录
 
 - 新站工程：`01-SiteV2/site/`
-- 内容生产：`01-SiteV2/content/`
-- 判断资产：`01-SiteV2/knowledge/`
-- 当前有效上下文：`context/`
-- 当前版本基线：`context/version-ledger.md`
-- 前台页面契约：`context/frontstage-page-contracts.md`
-- 项目内专项 Skill：`skills/`
-- 当前载入的用户 Skill：`~/.skill-store/`，其中今日观察 pitch / writer / QC 三件套以用户 Skill 为准。
+- 生产内容：`01-SiteV2/content/`
+- 长期知识资产：`01-SiteV2/knowledge/`
+- 当前规则真源：`context/07-v3-intelligence-generation-rules.md`
 - 高风险执行外壳：`context/06-execution-harness.md`
+- 运营后台页面继续保留，包括 `admin.html`、`operations-console.html`、`pipeline-dashboard.html`。
 
-`content/` 是生产与发布库，保存 Raw、Pool、文章、发布索引和自动化产物。
-`knowledge/` 是长期判断资产主库，保存商业信号卡、前沿观点卡、变化 / 场景 / 趋势候选、来源、人物和公司对象。
+## 当前数据链路
 
-## 已停止口径
-
-- V2 前台页面已退役；首页、今日观察、商业信号、趋势追踪、商业内参、观点和 builders 旧前台页面不再作为当前前台入口。
-- V3 当前前台以 `01-SiteV2/site/v3-data-observation.html` 为准，`01-SiteV2/site/index.html` 只作为跳转入口。
-- 运营仪表盘相关页面继续保留，包括 `admin.html`、`operations-console.html`、`pipeline-dashboard.html`。
-- 已停止的网站版本与内容日更不作为当前仓库参考源。
-- 前沿观点不作为 V2 一级导航，承接旧观点栏目中的有效能力，作为商业信号相邻内容流和后台判断资产。前沿观点必须先入 `opinion_intake` 并写入中文翻译，再执行四档评级：`feature` / `sidebar` / `archive` / `discard`；只有完成翻译的 `feature` 与 `sidebar` 可以进入前台。
-- 机会判断不作为一级导航，进入趋势追踪和商业内参中的判断段落。
-- Priority Engine / Scoring 后台化，不作为普通前台栏目。
-- Tags 不作为一线栏目，只作为搜索、筛选和关系网络能力。
-
-## 当前开发节奏
-
-- 桌面端优先，移动端专项暂缓，除非任务明确要求。
-- 页面任务必须先有 Typography 页面位置表和 Copy-first 文案表，再进入 Build & Release。
-- 页面 / 文案通用独立质检流程已停用；质量由调度窗口按用户反馈、VI、Copy、桌面截图、核心交互和必要专项检查判断。
-
-## 当前每日生产线
-
-当前每日监测和资产链均改为手动触发，不再按 09:00 / 09:25 自动运行。
-
-保留但暂停：
-
-1. `guanlan-daily-monitor`：`PAUSED`，手动触发 Raw / Pool 监测。
-2. `guanlan-daily-assets-chain`：`PAUSED`，手动触发商业信号卡、前沿观点卡、变化 / 场景 / 趋势候选和成熟变化短专题。
-3. `daily-observation-writer`：`PAUSED`，不自动写稿或自动同步网站。
-
-手动触发命令：
-
-```powershell
-node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=80 --max-cycles=3 --search-limit=70 --search-path-query-limit=2 --gdelt-query-limit=8 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000
-node agent-workflow/tools/assert-guanlan-automation-readiness.mjs --command=assets --date=<YYYY-MM-DD>
+```text
+外部来源
+-> Raw 候选
+-> Pool 证据
+-> signal_card：产品 / 服务、融资、案例
+-> 关系图谱输入
+-> 趋势候选
+-> V3 数据观察台与运营后台数据
 ```
-
-按需人工或另派：
-
-- `case-signal-researcher`：案例、同类产品、市场竞争和二搜。
-- `trend-report-writer`：周任务或急件触发。
-- `brief-periodical-writer`：周期性商业内参。
-
-每日监测固定读取链路见 `context/05-daily-monitoring.md`。
 
 ## 当前硬规则
 
-- 补读文档中的二级引用不自动继续读取。
-- 每个任务补读 1-3 个直接相关真源；超出必须说明原因。
-- 每日监测、Raw / Pool / Card、页面 / 文案 / Typography 任务必须先套用 `context/06-execution-harness.md`。
-- 页面、文案、前台数据同步和发布检查必须先确认 `context/version-ledger.md` 与 `context/frontstage-page-contracts.md`。
-- Raw 原文、source quote、原始摘录、URL、source metadata、证据快照和 `key_excerpts.text` 是证据，不得为了文风改写。
-- 官网首页、工具平台官网、产品目录、文档目录、控制台登录页、搜索结果页和只有导航词堆砌的页面默认只能 `index_only`。
-- follow-builders / 社区观点只能证明“谁在何时何处说了什么”，不能作为公司事实主证据；观点卡进入前台必须有中文翻译、`opinion_tier`、`display_lane` 和 `publish_status`。
+- Raw 只负责收集外部材料，搜索工具只是发现入口，必须落到原始来源。
+- Pool 必须保留原文链接、可读正文、摘要、证据摘录、hash、QC 放行和重要性理由。
+- Pool 类型不等于 Card 类型。
+- Card 标题优先保留原文事件标题，不得机械改成抽象判断。
+- 缺前台字段时不得回退展示后台字段。
+- 商业信号生成必须覆盖大厂产品动作、垂直行业案例、中小企业融资，不能只被大厂新闻占满。
+- 趋势候选不能由单条新闻、单个观点或趋势文章直接生成。
+
+## 当前自动化目标
+
+GitHub 自动化目标为：
+
+1. 每日监测 Raw / Pool。
+2. 生成 10 张商业信号 Card。
+3. 跑 Pool-to-Card 去重与必要质量检查。
+4. 更新 V3 数据观察台和运营后台数据。
+5. 提交到自动化分支并开 PR，合并后由 GitHub Pages 部署。
