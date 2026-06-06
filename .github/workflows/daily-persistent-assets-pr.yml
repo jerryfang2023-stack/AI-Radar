@@ -148,7 +148,6 @@ jobs:
           node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
-          node --check agent-workflow/tools/card-copy-style-gate.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
