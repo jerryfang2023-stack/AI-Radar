@@ -298,9 +298,6 @@ function assetTypeFromFile(file, frontmatter, rootType) {
   if (rootType === "signal") {
     return normalizeAssetType(frontmatter.signal_type || path.basename(path.dirname(file)));
   }
-  if (rootType === "opinion") {
-    return normalizeAssetType(frontmatter.signal_type || frontmatter.card_type || "opinion");
-  }
   return normalizeAssetType(frontmatter.asset_type || frontmatter.signal_type || path.basename(path.dirname(file)));
 }
 
@@ -309,6 +306,34 @@ function addAssetFieldCount(day, type, bucket, value) {
   day[bucket] ||= {};
   day[bucket][type] ||= {};
   addCount(day[bucket][type], normalized);
+}
+
+async function collectOpinionTimelineStats() {
+  const rootDir = path.join(knowledgeRoot, "02-Opinion-Timelines");
+  const peopleDir = path.join(rootDir, "people");
+  const timelineFiles = (await walk(peopleDir)).filter((file) => file.endsWith(".md") && path.basename(file) !== "README.md");
+  const people = new Set();
+  const byDate = {};
+  let detailBlocks = 0;
+
+  for (const file of timelineFiles) {
+    const relative = path.relative(peopleDir, file);
+    const person = relative.split(path.sep)[0];
+    if (person) people.add(person);
+    const markdown = await readText(file);
+    const details = [...markdown.matchAll(/^#### 观点详情/gmu)].length;
+    detailBlocks += details;
+    for (const match of markdown.matchAll(/^###\s+(\d{4}-\d{2}-\d{2})\b/gmu)) {
+      byDate[match[1]] = (byDate[match[1]] || 0) + 1;
+    }
+  }
+
+  return {
+    timelineFiles: timelineFiles.length,
+    people: people.size,
+    detailBlocks,
+    byDate,
+  };
 }
 
 async function collectPipelineData() {
@@ -351,7 +376,6 @@ async function collectPipelineData() {
 
   const assetRoots = [
     ["signal", path.join(knowledgeRoot, "01-Signal-Cards")],
-    ["opinion", path.join(knowledgeRoot, "02-Opinion-Cards")],
     ["candidate", path.join(knowledgeRoot, "03-Asset-Candidates")],
   ];
 
@@ -367,9 +391,17 @@ async function collectPipelineData() {
       day.assets[type] = (day.assets[type] || 0) + 1;
       addAssetFieldCount(day, type, "assetStatus", frontmatter.status);
       addAssetFieldCount(day, type, "assetLevels", frontmatter.asset_level);
-      addAssetFieldCount(day, type, "assetEvidenceGates", frontmatter.evidence_gate || frontmatter.opinion_evidence_gate);
+      addAssetFieldCount(day, type, "assetEvidenceGates", frontmatter.evidence_gate);
       addAssetFieldCount(day, type, "assetCopyGates", frontmatter.cardcopy_gate || frontmatter.frontend_copy_gate);
     }
+  }
+
+  const opinionTimelines = await collectOpinionTimelineStats();
+  for (const [date, count] of Object.entries(opinionTimelines.byDate)) {
+    const day = ensureDay(days, date);
+    if (!day) continue;
+    day.assets ||= {};
+    day.assets.opinion = (day.assets.opinion || 0) + count;
   }
 
   const orderedDays = [...days.values()]
@@ -420,6 +452,11 @@ async function collectPipelineData() {
     days: orderedDays.slice(0, 7),
     latest,
     totals,
+    opinionTimelines: {
+      timelineFiles: opinionTimelines.timelineFiles,
+      people: opinionTimelines.people,
+      detailBlocks: opinionTimelines.detailBlocks,
+    },
     latestRelation,
     engineQuality: buildEngineQuality(rawRecords),
   };

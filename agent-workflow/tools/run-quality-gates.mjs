@@ -29,7 +29,7 @@ const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 // can fail with EPERM even though invoking `node` via PATH works. Prefer the PATH command on Windows.
 const node = process.platform === "win32" ? "node" : process.execPath;
 
-const knownModes = new Set(["syntax", "content", "site", "automation", "v2content", "style", "typography", "regression", "raw", "tags", "all"]);
+const knownModes = new Set(["syntax", "site", "automation", "style", "typography", "regression", "raw", "tags", "all"]);
 
 if (!knownModes.has(mode)) {
   console.error(`Unknown quality gate mode: ${mode}`);
@@ -42,7 +42,6 @@ const commandSets = {
     [node, ["--check", "01-SiteV2/site/assets/app.js"], "v2 frontend app syntax"],
     [node, ["--check", "01-SiteV2/site/dev-server.mjs"], "v2 dev-server syntax"],
     [node, ["--check", "agent-workflow/tools/run-quality-gates.mjs"], "run-quality-gates syntax"],
-    [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
     [node, ["--check", "agent-workflow/tools/v2-source-probe.mjs"], "v2-source-probe syntax"],
     [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
     [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "guanlan monitor quality gate syntax"],
@@ -58,10 +57,6 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
     [node, ["--check", "agent-workflow/tools/run-daily-observation-chain.mjs"], "daily observation chain syntax"],
     [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
-  ],
-  content: [
-    [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
-    [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 content gate"],
   ],
   site: [
     [node, ["--check", "01-SiteV2/site/assets/app.js"], "v2 frontend app syntax"],
@@ -93,7 +88,6 @@ const buildCommands = () => {
   if (mode === "all") {
     return [
       ...commandSets.syntax,
-      [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 content gate"],
       [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
       [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
       [node, ["agent-workflow/tools/frontstage-regression-gate.mjs"], "run frontstage regression gate"],
@@ -107,7 +101,6 @@ const buildCommands = () => {
       [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "guanlan daily monitor syntax"],
       [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "guanlan monitor quality gate syntax"],
       [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"], "guanlan daily monitor with qc syntax"],
-      [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
       [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
       [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
       [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
@@ -115,14 +108,6 @@ const buildCommands = () => {
       [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
       [node, ["--check", "agent-workflow/tools/run-daily-observation-chain.mjs"], "daily observation chain syntax"],
       [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
-    ];
-  }
-
-  if (mode === "v2content") {
-    return [
-      [node, ["--check", "agent-workflow/tools/v2-content-gate.mjs"], "v2-content-gate syntax"],
-      [node, ["agent-workflow/tools/v2-content-gate.mjs", `--date=${date}`], "run v2 content gate"],
-      [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
     ];
   }
 
@@ -146,43 +131,12 @@ const runCommand = async ([cmd, args, label]) => {
   }
 
   // Some sandboxed Windows environments block child process creation (EPERM).
-  // Provide an in-process fallback for the V2 content gate, and mark syntax probes as skipped-but-passed.
+  // Mark syntax probes as skipped-but-passed when child process creation is blocked.
   if (process.platform === "win32" && cmd === "node") {
     const isSyntaxProbe = args.includes("--check") || /syntax/i.test(label);
-    const isV2ContentGateRun = args[0] === "agent-workflow/tools/v2-content-gate.mjs";
     const isWriterStyleGateRun = args[0] === "agent-workflow/tools/writer-style-gate.mjs";
     const isTypographyGateRun = args[0] === "agent-workflow/tools/v2-typography-gate.mjs";
     const isRawEvidenceGateRun = args[0] === "agent-workflow/tools/v2-raw-evidence-gate.mjs";
-
-    if (isV2ContentGateRun) {
-      try {
-        const dateFlag = args.find((arg) => arg.startsWith("--date="));
-        const gateDate = dateFlag ? dateFlag.slice("--date=".length) : date;
-        const gateModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "v2-content-gate.mjs")).href;
-        const gateModule = await import(`${gateModuleUrl}?t=${Date.now()}`);
-        const result = gateModule.runV2ContentGate?.({ date: gateDate });
-        const statusCode = result?.status === "passed" ? 0 : 1;
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: statusCode,
-          stdout: result?.report || "",
-          stderr: statusCode === 0 ? "" : "v2 content gate failed",
-          startedAt,
-          endedAt: new Date(),
-        };
-      } catch (error) {
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: 1,
-          stdout: "",
-          stderr: `fallback import failed: ${error?.message || String(error)}`,
-          startedAt,
-          endedAt: new Date(),
-        };
-      }
-    }
 
     if (isSyntaxProbe) {
       return {

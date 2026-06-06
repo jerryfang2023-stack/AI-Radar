@@ -16,7 +16,6 @@ encoding: UTF-8
 01-SiteV2/knowledge/01-Signal-Cards/case/
 01-SiteV2/knowledge/01-Signal-Cards/product-service/
 01-SiteV2/knowledge/01-Signal-Cards/funding/
-01-SiteV2/knowledge/02-Opinion-Cards/
 01-SiteV2/knowledge/03-Asset-Candidates/change/
 01-SiteV2/knowledge/03-Asset-Candidates/trend/
 ```

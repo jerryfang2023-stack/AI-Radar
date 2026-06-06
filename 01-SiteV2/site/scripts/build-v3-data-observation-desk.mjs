@@ -12,12 +12,6 @@ const signalRoots = [
   { category: "product-service", label: "产品", dir: path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "product-service") },
 ];
 
-const opinionRoot = {
-  category: "opinion",
-  label: "观点",
-  dir: path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards"),
-};
-
 const trendAssetRoots = [
   path.join(root, "01-SiteV2", "content", "06-asset-candidates", "trend"),
   path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "trend"),
@@ -27,10 +21,9 @@ const categoryLabels = {
   case: "案例",
   funding: "融资",
   "product-service": "产品",
-  opinion: "观点",
 };
 
-const tagGroups = ["track", "function", "scenario", "customer", "evidence", "stage", "region", "source", "opinion"];
+const tagGroups = ["track", "function", "scenario", "customer", "evidence", "stage", "region", "source"];
 const taxonomyFile = path.join(root, "agent-workflow", "product", "tag-taxonomy.md");
 const tagDictionary = loadTagDictionary();
 const allowedTagIds = new Set(tagDictionary.keys());
@@ -61,7 +54,6 @@ function normalizedTitle(value = "") {
 function frontstageDedupeKey(card) {
   const url = canonicalUrl(card.sourceUrl);
   if (card.type === "signal_card" && url) return `${card.date}|signal|url|${url}`;
-  if (card.type === "opinion_card" && card.id) return `${card.date}|opinion|id|${card.id}`;
   if (url) return `${card.date}|${card.type}|url|${url}`;
   return `${card.date}|${card.type}|title|${normalizedTitle(card.title)}`;
 }
@@ -127,7 +119,7 @@ function resolveRawArchivePath(rawArchiveRel = "", rawJsonPath = "") {
 function loadTagDictionary() {
   const text = read(taxonomyFile);
   const tags = new Map();
-  const tagPattern = /`((?:track|function|scenario|customer|evidence|stage|region|source|opinion)-[a-z0-9-]+)`\s*\|\s*([^|`\r\n]+?)\s*\|/gu;
+  const tagPattern = /`((?:track|function|scenario|customer|evidence|stage|region|source)-[a-z0-9-]+)`\s*\|\s*([^|`\r\n]+?)\s*\|/gu;
   for (const match of text.matchAll(tagPattern)) {
     tags.set(match[1], match[2].trim());
   }
@@ -850,7 +842,6 @@ function sourceValueFromEvidence(category, highlights = [], rawDisplayTitle = ""
   if (category === "funding") return `可观察融资金额、资金用途或赛道线索：${base}`;
   if (category === "case") return `可观察真实客户、业务流程或结果指标：${base}`;
   if (category === "product-service") return `可观察产品能力进入具体业务流程的方式：${base}`;
-  if (category === "opinion") return `可观察观点来源的原始判断：${base}`;
   return base;
 }
 
@@ -865,7 +856,7 @@ function fallbackSourcePoints(rawDisplayTitle = "", sourceUrl = "", rawRef = "")
     points.push(`原始来源标题：${title}。`);
   }
   if (sourceUrl) points.push(`原始来源链接：${sourceUrl}`);
-  if (rawRef) points.push(`本地 Raw/Pool 要点缺失：需恢复 ${rawRef} 后补齐核心数据、案例或观点。`);
+  if (rawRef) points.push(`本地 Raw/Pool 要点缺失：需恢复 ${rawRef} 后补齐核心数据或案例。`);
   return points.filter(Boolean).slice(0, 3);
 }
 
@@ -875,16 +866,14 @@ function cardFromFile(file, category) {
   if (!fm) return null;
 
   const type = scalar(fm, "type");
-  if (category === "opinion" && type !== "opinion_card") return null;
-  if (category !== "opinion" && type !== "signal_card") return null;
+  if (type !== "signal_card") return null;
 
   const tags = formalTags(fm);
-  const rawArchive = nestedScalar(fm, "primary_raw", "raw_archive") || nestedScalar(fm, "opinion_capture", "raw_archive");
+  const rawArchive = nestedScalar(fm, "primary_raw", "raw_archive");
   const rawJson = nestedScalar(fm, "primary_raw", "raw_json");
-  const rawRef = nestedScalar(fm, "primary_raw", "raw_ref") || nestedScalar(fm, "opinion_capture", "raw_ref") || arrayValue(fm, "raw_refs")[0] || "";
+  const rawRef = nestedScalar(fm, "primary_raw", "raw_ref") || arrayValue(fm, "raw_refs")[0] || "";
   const rawTitleFromArchive = rawCandidateTitle(rawArchive, rawRef);
   const primarySourceUrl = nestedScalar(fm, "primary_raw", "source_url")
-    || nestedScalar(fm, "opinion_capture", "source_url")
     || scalar(fm, "source_url")
     || nestedList(fm, "frontend", "sourceLinks")[0]
     || "";
@@ -978,8 +967,7 @@ function trendAssetFromFile(file, cards = []) {
   const relatedSignals = arrayValue(fm, "related_signal_cards")
     .concat(arrayValue(fm, "related_change_cards"))
     .concat(arrayValue(fm, "related_case_cards"));
-  const relatedOpinions = arrayValue(fm, "related_opinion_cards");
-  const relatedIds = new Set([...relatedSignals, ...relatedOpinions].filter(Boolean));
+  const relatedIds = new Set(relatedSignals.filter(Boolean));
   const relatedCards = cards.filter((card) => relatedIds.has(card.id));
   const tags = formalTags(fm);
   const gate = scalar(fm, "trend_evidence_gate");
@@ -1016,7 +1004,6 @@ function trendAssetFromFile(file, cards = []) {
     nextObservation: short(nextObservation, 260),
     sourceTypes,
     relatedSignals: [...new Set(relatedSignals)].filter(Boolean),
-    relatedOpinions: [...new Set(relatedOpinions)].filter(Boolean),
     tags,
     displayTags: displayTags(tags),
   };
@@ -1460,7 +1447,6 @@ function buildTrendLinks(cards, activeDate, windowDays) {
 
 const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
-  ...walkMarkdown(opinionRoot.dir).map((file) => cardFromFile(file, opinionRoot.category)),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const cards = dedupeFrontstageCards(rawCards)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
@@ -1472,7 +1458,7 @@ const payload = {
     version: "V3.1.1-source-first-frontstage",
     generatedAt: new Date().toISOString(),
     activeDate,
-    source: "Signal Cards + Opinion Cards",
+    source: "Signal Cards",
     tagPolicy: "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
     allowedTagCount: allowedTagIds.size,
   },

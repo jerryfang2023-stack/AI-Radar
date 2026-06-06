@@ -410,6 +410,7 @@ button {
 }
 
 .topic-row,
+.formal-tag-row,
 .metric-row {
   display: flex;
   flex-wrap: wrap;
@@ -428,6 +429,27 @@ button {
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
+}
+
+.formal-tag {
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .72);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.formal-tag-opinion,
+.formal-tag-track {
+  border-color: rgba(13, 53, 92, .18);
+  background: var(--blue-soft);
+  color: var(--blue);
 }
 
 .metric {

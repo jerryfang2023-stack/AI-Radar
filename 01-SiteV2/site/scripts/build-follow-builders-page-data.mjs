@@ -63,6 +63,31 @@ function observationForTopic(topic) {
   return map[topic] || map["Builder 观点"];
 }
 
+const tagCatalog = {
+  "opinion-ai-coding": { id: "opinion-ai-coding", name: "AI Coding 观点", group: "opinion" },
+  "opinion-agent-workflow": { id: "opinion-agent-workflow", name: "Agent 工作流观点", group: "opinion" },
+  "opinion-model-infra": { id: "opinion-model-infra", name: "模型基础设施观点", group: "opinion" },
+  "opinion-product-strategy": { id: "opinion-product-strategy", name: "产品策略观点", group: "opinion" },
+  "track-ai-agent": { id: "track-ai-agent", name: "AI Agent", group: "track" },
+  "track-ai-coding": { id: "track-ai-coding", name: "AI Coding", group: "track" },
+  "track-ai-infra": { id: "track-ai-infra", name: "AI 基础设施", group: "track" },
+  "track-enterprise-workflow": { id: "track-enterprise-workflow", name: "企业工作流", group: "track" },
+};
+
+function tagsForTopic(topic, source = "x") {
+  const topicTags = {
+    "Agent": ["opinion-agent-workflow", "track-ai-agent"],
+    "AI 编程": ["opinion-ai-coding", "track-ai-coding"],
+    "AI 基础设施": ["opinion-model-infra", "track-ai-infra"],
+    "产品与创业": ["opinion-product-strategy", "track-enterprise-workflow"],
+    "Builder 观点": ["opinion-product-strategy", "track-enterprise-workflow"],
+  };
+  const ids = [
+    ...(topicTags[topic] || topicTags["Builder 观点"]),
+  ];
+  return [...new Set(ids)].map((id) => tagCatalog[id]).filter(Boolean);
+}
+
 const translationByTweetId = {
   "2063157328753594505": "GBrain 给 OpenClaw 和 Hermes Agent 装上了翅膀。https://t.co/gUt6ll33Vn",
   "2063146456106795457": "你现在终于可以试用我几个月前预告过的一个大项目了。\n\n我们希望它随着时间推移，越来越能帮助你学习更好的软件构建技巧，并更快地构建出更好的软件。https://t.co/hQpYCpl9JB",
@@ -151,6 +176,7 @@ function normalize(feed, trackedSources) {
         text,
         translation: translateTweet(tweet),
         topic,
+        formalTags: tagsForTopic(topic, "x"),
         observation: observationForTopic(topic),
         createdAt: tweet.createdAt,
         date: String(tweet.createdAt || "").slice(0, 10),

@@ -35,12 +35,12 @@ const steps = [
   ["Raw / Pool post-dedupe active count gate", "ready", "agent-workflow/tools/assert-daily-production-chain.mjs"],
   ["Historical duplicate blocker", "ready", "agent-workflow/tools/assert-daily-production-chain.mjs"],
   ["Raw / Pool changed stale marker", "ready", "agent-workflow/tools/assert-daily-production-chain.mjs"],
-  ["Regenerate Card / Opinion", "ready", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"],
+  ["Regenerate business-signal Cards", "ready", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"],
   ["Pool-to-Card duplicate gate", "ready", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"],
   ["Cardcopy gate", "ready", "agent-workflow/tools/run-quality-gates.mjs"],
   ["Trend candidate / no-decision CLI", "ready", "agent-workflow/tools/run-trend-candidate-decision.mjs"],
   ["Daily Observation Write / QC CLI", process.env.OPENAI_API_KEY ? "ready_with_openai_key" : "blocked_without_openai_key", "agent-workflow/tools/run-daily-observation-chain.mjs"],
-  ["Sync site data after gates", "ready", "01-SiteV2/site/scripts/sync-v2-site-data.mjs"],
+  ["Build V3 data after gates", "ready", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"],
 ];
 
 const missing = steps.filter(([, , script]) => !exists(script));

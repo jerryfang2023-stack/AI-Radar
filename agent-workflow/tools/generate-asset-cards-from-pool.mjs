@@ -356,77 +356,6 @@ const signalSpecs = {
   ],
 };
 
-const opinionSpecs = {
-  "2026-05-20": [
-    {
-      id: "OPN-20260520-01",
-      stableId: "BP-20260520-33",
-      slug: "aaron-levie-token-costs-will-become-enterprise-ai-topic",
-      person: "Aaron Levie",
-      organization: "Box",
-      roleType: "executive_view",
-      title: "Aaron Levie：Token 成本会成为企业 AI 的核心议题",
-      sourceUrl: "https://x.com/levie/status/2056965292753146019",
-      publishedAt: "2026-05-20",
-      originalQuote: "Token costs",
-      originalTranslation: "Token 成本。",
-      interpretation: "这条观点说明企业 AI 采用正在从能力兴奋转向预算、用量分配和团队权限管理。",
-      factBoundary: "这是人物观点，只能证明 Aaron Levie 发表了该判断；其中关于企业 CIO 讨论的事实仍需更多来源交叉确认。",
-    },
-  ],
-  "2026-05-21": [
-    {
-      id: "OPN-20260521-01",
-      stableId: "BP-20260521-42",
-      slug: "sam-altman-customers-ask-for-capacity-certainty",
-      person: "Sam Altman",
-      organization: "OpenAI",
-      roleType: "executive_view",
-      title: "Sam Altman：客户开始要求提前锁定算力容量",
-      sourceUrl: "https://x.com/sama/status/2056827105401614656",
-      publishedAt: "2026-05-19",
-      originalQuote: "certainty on capacity",
-      originalTranslation: "对算力容量的确定性。",
-      interpretation: "这条观点把企业 AI 采购从单次调用价格推向一年到三年容量承诺和供给保障。",
-      factBoundary: "这是人物观点，不单独证明客户需求规模；涉及客户行为时应等待公司合同、产品或案例材料补证。",
-    },
-  ],
-  "2026-05-22": [
-    {
-      id: "OPN-20260522-01",
-      stableId: "BP-20260522-07",
-      slug: "aaron-levie-fdes-will-remain-while-agents-change-workflows",
-      person: "Aaron Levie",
-      organization: "Box",
-      roleType: "executive_view",
-      title: "Aaron Levie：Agent 落地会让 FDE 这类角色长期存在",
-      sourceUrl: "https://x.com/levie/status/2057315272156135501",
-      publishedAt: "2026-05-21",
-      originalQuote: "directly impact the underlying workflows",
-      originalTranslation: "直接影响底层工作流。",
-      interpretation: "这条观点把 Agent 落地从技术部署转向工作流改造和变更管理，能解释为什么企业 AI 仍需要懂现场的人。",
-      factBoundary: "这是人物观点，只能证明 Aaron Levie 发表了该判断；关于岗位需求和客户采用规模，仍需招聘、客户案例或企业预算材料补证。",
-    },
-  ],
-  "2026-05-23": [
-    {
-      id: "OPN-20260523-01",
-      stableId: "BP-20260523-07",
-      slug: "aaron-levie-enterprises-need-ai-finance-programs",
-      person: "Aaron Levie",
-      organization: "Box",
-      roleType: "executive_view",
-      title: "Aaron Levie：企业需要用新财务机制管理 AI 成本分层",
-      sourceUrl: "https://x.com/levie/status/2057663408376516703",
-      publishedAt: "2026-05-22",
-      originalQuote: "Enterprises will need to put in programs, new finance teams, and technology solutions to manage this all.",
-      originalTranslation: "企业需要建立相应机制，配置新的财务团队和技术方案，来管理这一切。",
-      interpretation: "这条观点把 AI 成本问题从 token 价格推进到企业管理机制：由哪个团队审批、哪个团队控制用量、哪类预算承担不同模型层级的成本。",
-      factBoundary: "这是人物观点，只能证明 Aaron Levie 发表了该判断；关于企业实际预算、团队设置和采购行为，还需要公司案例或采购材料补证。",
-    },
-  ],
-};
-
 const candidateSpecs = {
   "2026-05-20": {
     scene: {
@@ -458,7 +387,7 @@ const candidateSpecs = {
       slug: "enterprise-agent-budget-and-workflow-signals-are-accumulating",
       title: "企业 Agent 的预算和工作流信号开始积累",
       hypothesis: "两天材料共同指向一个候选方向：企业 Agent 不再只按模型能力被讨论，而是被放进预算、容量、行业流程和运营指标里评估。",
-      sourceTypes: ["公司发布", "融资新闻", "客户案例", "builder 观点"],
+      sourceTypes: ["公司发布", "融资新闻", "客户案例", "operator opinion"],
       riskBoundary: "目前仍缺少跨公司连续数据，不能写成正式趋势判断。",
       followUpVariables: "继续观察是否出现更多客户部署、容量合同、用量治理和流程指标。",
       relatedSignals: ["SIG-20260520-01", "SIG-20260520-02", "SIG-20260521-02", "SIG-20260521-05", "SIG-20260521-07"],
@@ -482,7 +411,7 @@ const candidateSpecs = {
       slug: "enterprise-agent-deployment-shifts-to-workflow-context-and-governance",
       title: "企业 Agent 部署问题转向流程上下文和治理",
       hypothesis: "5 月 22 日的 Snowflake、Temporal、Trace、Sycamore Labs 和 AdventHealth 信号指向同一个问题：企业 Agent 要进入真实流程，必须同时解决上下文、稳定运行和人工复核。",
-      sourceTypes: ["公司发布", "融资新闻", "客户案例", "builder 观点"],
+      sourceTypes: ["公司发布", "融资新闻", "客户案例", "operator opinion"],
       riskBoundary: "当前仍缺少跨公司连续指标，尤其缺少部署成本、人工复核成本和长期留存数据，不能写成正式趋势判断。",
       followUpVariables: "继续观察客户案例、生产运行指标、治理功能和实施岗位需求是否继续增加。",
       relatedSignals: ["SIG-20260522-02", "SIG-20260522-04", "SIG-20260522-05", "SIG-20260522-06", "SIG-20260522-07"],
@@ -528,61 +457,12 @@ function signalCardFiles() {
   });
 }
 
-function opinionCardFilesForDate() {
-  const dir = path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards");
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir)
-    .filter((name) => name.startsWith(`${date}--frontier-opinion--`) && name.endsWith(".md"))
-    .map((name) => path.join(dir, name));
-}
-
 function yamlValue(text, key) {
   return text.match(new RegExp(`^${key}:\\s*"?([^"\\n]+)"?`, "mu"))?.[1]?.trim() || "";
 }
 
 function nestedYamlValue(text, key) {
   return text.match(new RegExp(`^  ${key}:\\s*"?([^"\\n]+)"?`, "mu"))?.[1]?.trim() || "";
-}
-
-function frontstageOpinionTitleQuality(title = "") {
-  const text = String(title || "").trim();
-  if (!text || text.length > 44) return false;
-  if (/[<>{}\[\]]|https?:\/\/|t\.co\/|@\s?\w|#\w/iu.test(text)) return false;
-  if (/[⚽️😂😅🔥🚀]/u.test(text)) return false;
-  if (!/(AI|Agent|智能体|Codex|Claude|OpenAI|Anthropic|Cursor|模型|API|Gateway|Vercel|自动审阅|Auto.?review|编程|工程|workflow|工作流|tokens?|代币)/iu.test(text)) return false;
-  if (/(更|和|与|在|为|的|：|:|,|，)$/u.test(text)) return false;
-  if (/[A-Za-z][A-Za-z0-9'’,-]*(?:\s+[A-Za-z][A-Za-z0-9'’,-]*){6,}/u.test(text)) return false;
-  if (/(投票|保险专员|建筑热潮|在印度|平坦的循环|终极教育|运送最好的产品|lfg|dank memes|plain annoying|gassing me up|business insider|current streak|api key spend caps)/iu.test(text)) return false;
-  if (/：.+(总裁兼首席执行官|首席执行官|当前连胜|支$|执$|cra$|c$)/u.test(text)) return false;
-  return true;
-}
-
-function frontstageOpinionManifestItems() {
-  return opinionCardFilesForDate().map((file) => {
-    const text = fs.readFileSync(file, "utf8");
-    const title = nestedYamlValue(text, "displayTitle") || yamlValue(text, "title");
-    const tier = yamlValue(text, "opinion_tier");
-    const lane = yamlValue(text, "display_lane");
-    const status = yamlValue(text, "publish_status");
-    const translationStatus = yamlValue(text, "translation_status");
-    const ready = yamlValue(text, "type") === "opinion_card"
-      && yamlValue(text, "fact_draft_gate") === "passed"
-      && yamlValue(text, "frontend_copy_gate") === "passed"
-      && yamlValue(text, "cardcopy_gate") === "passed"
-      && ["feature", "sidebar"].includes(tier)
-      && ["daily_feature", "signal_sidebar"].includes(lane)
-      && ["frontstage_feature", "frontstage_sidebar"].includes(status)
-      && translationStatus !== "pending_translation"
-      && frontstageOpinionTitleQuality(title);
-    if (!ready) return null;
-    return {
-      id: yamlValue(text, "id"),
-      title,
-      opinion_tier: tier,
-      display_lane: lane,
-      source_path: path.relative(root, file).replace(/\\/g, "/"),
-    };
-  }).filter((item) => item?.id);
 }
 
 function yamlArrayValue(text, key) {
@@ -855,7 +735,6 @@ const coreImportanceTypes = new Set([
   "important_technical_trend",
   "important_product_or_service",
   "important_vertical_solution",
-  "important_viewpoint_or_article",
 ]);
 
 const indexOnlyEvidenceTypes = new Set([
@@ -881,7 +760,21 @@ const indexOnlyEvidenceTypes = new Set([
 ]);
 
 const indexOnlyUrlPattern = /(^|\/)(category|categories|tag|tags|topics?|search|docs?|documentation|api|sdk|pricing|marketplace|models?|packages?|tools?|login|signin|sign-in)(\/|$)|readme|readme-ov-file|\/blog\/category\//iu;
-const discoveryOnlyPattern = /\b(aihot|ai hot|follow-builders|hacker news|reddit|hn|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+const discoveryOnlyPattern = /\b(aihot|ai hot|paused-opinion-source|hacker news|reddit|hn|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+const monthNames = new Map([
+  ["january", 0],
+  ["february", 1],
+  ["march", 2],
+  ["april", 3],
+  ["may", 4],
+  ["june", 5],
+  ["july", 6],
+  ["august", 7],
+  ["september", 8],
+  ["october", 9],
+  ["november", 10],
+  ["december", 11],
+]);
 
 function sectionHasUsableEvidenceObject(section) {
   const evidenceCompleteness = value(section, "evidence_completeness");
@@ -897,6 +790,51 @@ function sectionHasUsableEvidenceObject(section) {
     evidenceSeed !== "{}" &&
     !/"missing":\s*\[[^\]]*[^\s\]][^\]]*\]/u.test(evidenceCompleteness)
   );
+}
+
+function parsePublicationDate(value = "") {
+  if (!value) return null;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function dateFromUrl(value = "") {
+  const match = String(value || "").match(/\/(20\d{2})\/(0?\d{1,2})\/(0?\d{1,2})(?:\/|$)/u);
+  if (!match) return null;
+  return new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])));
+}
+
+function dateFromText(value = "") {
+  const match = String(value || "").slice(0, 2000).match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/iu);
+  if (!match) return null;
+  const month = monthNames.get(match[1].toLowerCase());
+  if (month === undefined) return null;
+  return new Date(Date.UTC(Number(match[3]), month, Number(match[2])));
+}
+
+function rawPublicationDate(section) {
+  const rawJsonPath = value(section, "raw_json");
+  const sourceUrl = value(section, "source_url");
+  if (rawJsonPath) {
+    try {
+      const rawPath = path.resolve(root, rawJsonPath.replace(/^`|`$/gu, ""));
+      const rawData = JSON.parse(fs.readFileSync(rawPath, "utf8"));
+      return parsePublicationDate(rawData.published_at)
+        || dateFromUrl(rawData.canonical_url || rawData.original_url || sourceUrl)
+        || dateFromText(rawData.full_text || rawData.clean_text || "");
+    } catch {
+      // Fall through to URL-only parsing below.
+    }
+  }
+  return dateFromUrl(sourceUrl);
+}
+
+function isStalePublication(section, maxAgeDays = 14) {
+  const published = rawPublicationDate(section);
+  if (!published) return false;
+  const runDate = new Date(`${date}T12:00:00Z`);
+  const ageMs = runDate.getTime() - published.getTime();
+  return ageMs > maxAgeDays * 24 * 60 * 60 * 1000;
 }
 
 function corePoolSemanticIssues(section) {
@@ -916,6 +854,10 @@ function corePoolSemanticIssues(section) {
   if (!value(section, "extraction_method")) issues.push("missing_extraction_method");
   if (!Number.isFinite(readability) || readability < 24) issues.push("low_readability");
   if (!["high", "medium"].includes(extractionQuality)) issues.push("weak_extraction_quality");
+  if (/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") {
+    issues.push("user_feedback_not_fact_signal");
+  }
+  if (isStalePublication(section)) issues.push("stale_source_date");
   if (value(section, "index_only_evidence") === "true") issues.push("index_only_evidence");
   if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(`index_only_evidence_type:${evidenceObjectType}`);
   if (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl)) {
@@ -1109,7 +1051,6 @@ function isEligibleAutoSignal(section) {
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
   return corePoolSemanticIssues(section).length === 0
     && /^(S|A|B)$/u.test(sourceLevel)
-    && importanceType !== "important_viewpoint_or_article"
     && (importanceType !== "important_funding" || isSingleCompanyFundingSignal(section))
     && sourceUrl
     && sourceUrl !== "no-url"
@@ -1240,7 +1181,6 @@ function inferredTagsFromText(text = "") {
     stage: ["stage-watch"],
     region: [],
     source: [],
-    opinion: [],
   };
   const add = (group, ...ids) => tags[group].push(...ids);
   const has = (pattern) => pattern.test(text);
@@ -1270,7 +1210,6 @@ function formalTagsYaml(tags) {
     `  stage: ${yamlList(tags.stage)}`,
     `  region: ${yamlList(tags.region)}`,
     `  source: ${yamlList(tags.source)}`,
-    `  opinion: ${yamlList(tags.opinion)}`,
   ].join("\n");
 }
 
@@ -1279,18 +1218,6 @@ function formalTagsForSignal(spec, sourceLevel) {
   tags.evidence.push(spec.type === "funding" ? "evidence-funding" : spec.type === "case" ? "evidence-customer-adoption" : "evidence-product-launch");
   tags.source.push(sourceTagFromLevel(sourceLevel));
   if (spec.type === "funding") tags.stage.push("stage-rising");
-  return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
-}
-
-function formalTagsForOpinion(spec) {
-  const tags = inferredTagsFromText(`${spec.title} ${spec.interpretation} ${spec.organization}`);
-  tags.scenario.push("scenario-frontier-opinion");
-  tags.evidence.push("evidence-frontier-opinion");
-  tags.source.push("source-social");
-  if (/coding|code|developer|编程|开发|工程/iu.test(`${spec.title} ${spec.interpretation}`)) tags.opinion.push("opinion-ai-coding");
-  else if (/infra|模型|推理|记忆|capacity|算力/iu.test(`${spec.title} ${spec.interpretation}`)) tags.opinion.push("opinion-model-infra");
-  else if (/governance|安全|权限|治理/iu.test(`${spec.title} ${spec.interpretation}`)) tags.opinion.push("opinion-ai-safety-governance");
-  else tags.opinion.push("opinion-agent-workflow");
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
 
@@ -1388,102 +1315,6 @@ ${evidenceBoundary}
 `;
 }
 
-function opinionCard(spec) {
-  const translationReady = Boolean(String(spec.originalTranslation || "").trim());
-  const isXSource = /\bx\.com\b|\btwitter\.com\b/iu.test(String(spec.sourceUrl || ""));
-  const captureScope = isXSource ? "x_full_visible_text" : "visible_text";
-  return `---
-id: ${spec.id}
-type: opinion_intake
-title: "${spec.title}"
-date: ${date}
-status: draft
-fact_draft_gate: passed
-frontend_copy_gate: ${translationReady ? "passed" : "pending"}
-cardcopy_gate: ${translationReady ? "skipped_intake_pending_rating" : "skipped_intake_translation_pending"}
-created_at: ${now}
-updated_at: ${now}
-
-person_name: "${spec.person}"
-organization: "${spec.organization}"
-title_at_time: "${spec.organization}"
-role_type: ${spec.roleType}
-published_at: "${spec.publishedAt}"
-collected_at: "${now}"
-platform: follow-builders
-original_url: "${spec.sourceUrl}"
-canonical_url: "${spec.sourceUrl}"
-language: en
-asset_level: candidate
-opinion_evidence_gate: opinion_captured
-opinion_capture:
-  raw_ref: ${spec.stableId}
-  raw_archive: "01-SiteV2/content/05-frontier-opinions/${date}-opinion-candidates.md"
-  source_url: "${spec.sourceUrl}"
-  source_level: C
-  source_volatility: high
-  capture_scope: ${captureScope}
-  evidence_level: community_signal
-  has_visible_text: true
-fact_claim_support:
-  required: false
-  status: 暂无公开补证
-  supporting_raw_refs: []
-  missing_information: []
-high_impact: true
-impact_reason: "${spec.interpretation}"
-structured_claim: "${spec.interpretation}"
-opinion_object: "企业 AI 采用"
-opinion_tendency: watch
-opinion_status: new
-opinion_tier: archive
-display_lane: archive_only
-selection_reason: "入库初始状态，等待统一观点分级治理脚本评级。"
-opinion_rating_score: 0
-opinion_rating_version: 2026-05-22-v1
-publish_status: internal_archive
-translation_status: ${translationReady ? "translated" : "pending_translation"}
-triggers_change_candidate: true
-${formalTagsYaml(formalTagsForOpinion(spec))}
-frontend:
-  displayTitle: "${spec.title}"
-  speakerLine: "${spec.person} / ${spec.organization}"
-  originalQuote: "${spec.originalQuote}"
-  originalTranslation: "${spec.originalTranslation || ""}"
-  interpretation: "${spec.interpretation}"
-  factBoundary: "${spec.factBoundary}"
-  sourceLinks:
-    - "${spec.sourceUrl}"
----
-
-# ${spec.title}
-
-## 观点底稿
-
-谁：${spec.person}，${spec.organization}。
-
-原文：见下方原文摘录。
-
-观点说了什么：${spec.interpretation}
-
-事实边界：${spec.factBoundary}
-
-## 原文摘录
-
-> ${spec.originalQuote}
-
-中文翻译：${spec.originalTranslation || "待补中文翻译。"}
-
-## 观澜解读
-
-${spec.interpretation}
-
-## 事实主张校验
-
-${spec.factBoundary}
-`;
-}
-
 function sceneCandidate(spec) {
   return `---
 id: ${spec.id}
@@ -1568,40 +1399,30 @@ ${spec.followUpVariables}
 }
 
 function writeSignalIndexes(specs) {
+  const uniqueSpecs = dedupeSignalIndexSpecs(specs);
   const lines = [
     "---",
     `date: ${date}`,
     "stage: business-signals",
     "status: generated-by-asset-card-generator",
-    `signal_count: ${specs.length}`,
+    `signal_count: ${uniqueSpecs.length}`,
     `generated_at: ${now}`,
     "---",
     "",
     `# ${date} 商业信号`,
     "",
-    ...specs.map((spec) => `- ${spec.id}｜${spec.title}｜${spec.type}｜${spec.company}`),
+    ...uniqueSpecs.map((spec) => `- ${spec.id}｜${spec.title}｜${spec.type}｜${spec.company}`),
   ];
   write(path.join(root, "01-SiteV2", "content", "04-business-signals", "signals", `${date}-signals.md`), lines.join("\n"));
 }
 
-function writeOpinionIndex(specs) {
-  runOpinionGovernance();
-  return;
-  if (!specs.length) return;
-  const lines = [
-    "---",
-    `date: ${date}`,
-    "stage: frontier-opinions",
-    "status: generated-by-asset-card-generator",
-    `opinion_count: ${specs.length}`,
-    `generated_at: ${now}`,
-    "---",
-    "",
-    `# ${date} 前沿观点`,
-    "",
-    ...specs.map((spec) => `- ${spec.id}｜${spec.title}｜${spec.person}`),
-  ];
-  write(path.join(root, "01-SiteV2", "content", "05-frontier-opinions", `${date}-opinion-cards.md`), lines.join("\n"));
+function dedupeSignalIndexSpecs(specs) {
+  const byFinalCard = new Map();
+  for (const spec of specs) {
+    const key = spec.id || `${spec.type}|${normalizedSignalText(spec.company)}|${normalizedSignalText(spec.title)}`;
+    if (!byFinalCard.has(key)) byFinalCard.set(key, spec);
+  }
+  return [...byFinalCard.values()];
 }
 
 function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs }) {
@@ -1609,7 +1430,6 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
   fs.mkdirSync(reportDir, { recursive: true });
   const handoffPath = path.join(reportDir, `${date}-pool-to-card-handoff.md`);
   const manifestPath = path.join(reportDir, `${date}-frontstage-manifest.json`);
-  const frontstageOpinions = frontstageOpinionManifestItems();
   const handoff = [
     `# ${date} Pool-to-Card Handoff`,
     "",
@@ -1618,18 +1438,11 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     `- merged_count: ${merged.length}`,
     `- skipped_count: ${skipped.length}`,
     `- frontstage_signal_count: ${frontstageSpecs.length}`,
-    `- frontstage_opinion_count: ${frontstageOpinions.length}`,
     "",
     "## Frontstage Signals",
     "",
     frontstageSpecs.length
       ? frontstageSpecs.map((spec) => `- ${spec.id}｜${spec.poolRef}｜${spec.title}`).join("\n")
-      : "- none",
-    "",
-    "## Frontstage Opinions",
-    "",
-    frontstageOpinions.length
-      ? frontstageOpinions.map((item) => `- ${item.id}｜${item.opinion_tier}/${item.display_lane}｜${item.title}`).join("\n")
       : "- none",
     "",
     "## Cluster / Dedupe Rows",
@@ -1662,7 +1475,6 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
       type: spec.type,
       company: spec.company,
     })),
-    frontstage_opinions: frontstageOpinions,
     skipped,
     merged,
   }, null, 2)}\n`, "utf8");
@@ -1689,17 +1501,6 @@ function updateDailyMonitorLogFrontSignalCounts(counts) {
   fs.writeFileSync(logFile, next, "utf8");
 }
 
-function runOpinionGovernance() {
-  const result = spawnSync(process.execPath, ["agent-workflow/tools/govern-opinion-card-ratings.mjs", `--date=${date}`], {
-    cwd: root,
-    stdio: "inherit",
-  });
-  if (result.status !== 0) {
-    console.error("Opinion governance failed; frontstage opinion index was not refreshed.");
-    process.exit(result.status || 1);
-  }
-}
-
 function cleanSignalCardsForDate() {
   for (const dir of signalCardDirs()) {
     if (!fs.existsSync(dir)) continue;
@@ -1715,7 +1516,6 @@ function main() {
   runReadiness();
 
   const explicitSpecs = signalSpecs[date] || [];
-  const opinions = opinionSpecs[date] || [];
   const candidates = candidateSpecs[date] || {};
   const sections = poolSections();
   const autoSpecs = autoSignalsFromPool(sections, explicitSpecs);
@@ -1779,12 +1579,6 @@ function main() {
     signalIndexSpecs.push(spec);
   }
 
-  for (const spec of opinions) {
-    const file = path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards", `${date}--frontier-opinion--${spec.slug}.md`);
-    write(file, opinionCard(spec));
-    written.push(path.relative(root, file).replace(/\\/g, "/"));
-  }
-
   if (candidates.scene) {
     const knowledgeFile = path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "scene", `${date}--scene--${candidates.scene.slug}.md`);
     const contentFile = path.join(root, "01-SiteV2", "content", "06-asset-candidates", "scene", `${date}--scene--${candidates.scene.slug}.md`);
@@ -1809,9 +1603,7 @@ function main() {
 
   writeSignalIndexes(signalIndexSpecs);
   updateDailyMonitorLogFrontSignalCounts(frontSignalSourceLevels);
-  runOpinionGovernance();
   written.push(`01-SiteV2/content/04-business-signals/signals/${date}-signals.md`);
-  written.push(`01-SiteV2/content/05-frontier-opinions/${date}-opinion-cards.md`);
   const handoff = writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs: signalIndexSpecs });
   written.push(handoff.handoff, handoff.manifest);
 

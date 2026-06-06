@@ -6,7 +6,7 @@ encoding: UTF-8
 
 # 05-frontier-opinions｜前沿观点流
 
-本目录保存前台观点流索引和发布组织材料，不替代 `knowledge/02-Opinion-Cards/` 的长期观点资产。
+本目录仅保留历史前台观点流索引和发布组织材料；当前长期观点资产已迁移到 `knowledge/02-Opinion-Timelines/`。
 
 进入本目录的观点必须保留：
 
@@ -32,4 +32,4 @@ encoding: UTF-8
 
 `archive` 和 `discard` 不得因为存在旧索引、旧候选或 `frontend` 字段而被同步到前台。
 
-观点材料先入 `opinion_intake`，再由 `govern-opinion-card-ratings.mjs` 统一评级并生成本目录索引。前台页面只展示已通过门禁、完成中文翻译的 `feature` / `sidebar` 观点卡。
+当前观点资产已迁移到 `01-SiteV2/knowledge/02-Opinion-Timelines/`，按人物和时间线组织；本目录仅保留历史观点流材料，不再作为当前前台观点入口。

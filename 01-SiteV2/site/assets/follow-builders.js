@@ -43,6 +43,7 @@
         item.text,
         item.translation,
         item.topic,
+        ...(item.formalTags || []).flatMap((tag) => [tag.name, tag.group]),
       ].join(" ").toLowerCase();
       if (!options.ignoreBuilder && state.activeBuilder !== "all" && item.handle !== state.activeBuilder) return false;
       if (state.filters.date !== "all" && item.date !== state.filters.date) return false;
@@ -115,6 +116,10 @@
     `).join("");
   }
 
+  function isGenericBuilderTopic(value = "") {
+    return /^Builder\s/iu.test(String(value || ""));
+  }
+
   function renderFilters() {
     const date = $("[data-date-filter]");
     const topic = $("[data-topic-filter]");
@@ -126,7 +131,7 @@
       ].join("");
     }
     if (topic) {
-      const topics = [...new Set(allRemarks().map((item) => item.topic).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+      const topics = [...new Set(allRemarks().map((item) => item.topic).filter((item) => item && !isGenericBuilderTopic(item)))].sort((a, b) => a.localeCompare(b));
       topic.innerHTML = [
         "<option value=\"all\">全部主题</option>",
         ...topics.map((item) => `<option value="${safe(item)}">${safe(item)}</option>`),
@@ -179,13 +184,23 @@
     return date.toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit", hour12: false });
   }
 
+  function tagChips(item, limit = 4) {
+    const tags = (item.formalTags || []).filter((tag) => tag?.name).slice(0, limit);
+    if (!tags.length) return "";
+    return `
+      <div class="formal-tag-row" aria-label="观澜标签">
+        ${tags.map((tag) => `<span class="formal-tag formal-tag-${safe(tag.group || "asset")}">${safe(tag.name)}</span>`).join("")}
+      </div>
+    `;
+  }
+
   function remarkTimelineItem(item) {
     return `
       <section class="timeline-item">
         <div class="timeline-head">
           <span class="timeline-time">${safe(fmtTime(item.createdAt))}</span>
-          <span class="topic-chip">${safe(item.topic)}</span>
         </div>
+        ${tagChips(item)}
         <p class="remark-text">${safe(compact(item.translation || item.text, 320))}</p>
         <div class="metric-row">
           <span class="metric">Likes ${safe(item.likes || 0)}</span>
@@ -286,8 +301,8 @@
       <div class="dialog-meta">
         <span>${safe(item.role || `${item.handle} on X`)}</span>
         <span>${safe(fmtDate(item.createdAt))}</span>
-        <span>${safe(item.topic)}</span>
       </div>
+      ${tagChips(item, 8)}
       <p class="dialog-quote">${safe(item.translation || item.text)}</p>
       <div class="dialog-block">
         <h3>原文</h3>

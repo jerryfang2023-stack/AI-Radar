@@ -9,9 +9,8 @@ const siteContentPath = path.join(root, "01-SiteV2", "site", "data", "site-conte
 const scriptTargets = [
   "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
   "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
-  "agent-workflow/tools/regenerate-v2-assets-from-existing-raw.mjs",
-  "01-SiteV2/site/scripts/sync-v2-site-data.mjs",
-  "agent-workflow/tools/v2-content-gate.mjs",
+  "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
+  "01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
 ];
 
 const markdownRoots = [

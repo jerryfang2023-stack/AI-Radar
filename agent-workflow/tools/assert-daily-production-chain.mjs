@@ -174,10 +174,6 @@ const downstreamGroups = {
     ...datedMarkdown(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"), (file) => /--signal--.+\.md$/u.test(path.basename(file))),
     ...datedMarkdown(path.join(root, "01-SiteV2", "content", "04-business-signals")),
   ],
-  opinion_cards: [
-    ...datedMarkdown(path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards"), (file) => /--frontier-opinion.+\.md$/u.test(path.basename(file))),
-    ...datedMarkdown(path.join(root, "01-SiteV2", "content", "05-frontier-opinions")),
-  ],
   trend_candidates: [
     ...datedMarkdown(path.join(root, "01-SiteV2", "content", "06-asset-candidates", "trend")),
     ...datedMarkdown(path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "trend")),

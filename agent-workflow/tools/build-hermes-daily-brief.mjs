@@ -32,6 +32,29 @@ function countFiles(dir, pattern) {
   }, 0);
 }
 
+function countOpinionTimelineDetails(date) {
+  const dir = path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Timelines", "people");
+  if (!fs.existsSync(dir)) return 0;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  return entries.reduce((count, entry) => {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) return count + countOpinionTimelineDetailsInDir(file, date);
+    return count;
+  }, 0);
+}
+
+function countOpinionTimelineDetailsInDir(dir, date) {
+  if (!fs.existsSync(dir)) return 0;
+  return fs.readdirSync(dir, { withFileTypes: true }).reduce((count, entry) => {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) return count + countOpinionTimelineDetailsInDir(file, date);
+    if (!entry.name.endsWith(".md") || entry.name === "README.md") return count;
+    const markdown = fs.readFileSync(file, "utf8");
+    const matches = [...markdown.matchAll(new RegExp(`^###\\s+${date}\\b[\\s\\S]*?(?=^### |$(?![\\s\\S]))`, "gmu"))];
+    return count + matches.filter((match) => /^#### 观点详情/mu.test(match[0])).length;
+  }, 0);
+}
+
 function markdownItem(label, value) {
   const text = String(value || "").trim() || "-";
   return `- ${label}: ${text}`;
@@ -67,7 +90,7 @@ function main() {
   const opinionCandidatesFile = path.join(root, "01-SiteV2", "content", "05-frontier-opinions", `${date}-opinion-candidates.md`);
 
   const signalCards = countFiles(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"), new RegExp(`^${date}--signal--.*\\.md$`, "u"));
-  const opinionCards = countFiles(path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Cards"), new RegExp(`^${date}--frontier-opinion.*\\.md$`, "u"));
+  const opinionTimelineDetails = countOpinionTimelineDetails(date);
 
   const outcomes = {
     monitor: outcome("monitor"),
@@ -97,7 +120,7 @@ function main() {
     markdownItem("商业信号文件", exists(signalsFile) ? "present" : "missing"),
     markdownItem("观点候选文件", exists(opinionCandidatesFile) ? "present" : "missing"),
     markdownItem("商业信号卡", signalCards),
-    markdownItem("观点卡", opinionCards),
+    markdownItem("观点时间线详情", opinionTimelineDetails),
     markdownItem("今日观察", dailyTitle || "未生成"),
     markdownItem("趋势状态", trendTitle ? `显示：${trendTitle}` : "暂无趋势展示"),
     markdownItem("站点数据日期", siteDate),
@@ -129,7 +152,7 @@ function main() {
     manifest,
     counts: {
       signal_cards: signalCards,
-      opinion_cards: opinionCards,
+      opinion_timeline_details: opinionTimelineDetails,
     },
     frontstage: {
       site_date: siteDate,

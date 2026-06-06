@@ -81,11 +81,10 @@ jobs:
           raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
           pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
           signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
-          opinion_cards_file="01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md"
           branch="automation/daily-assets-${RUN_DATE}"
 
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ -f "$opinion_cards_file" ]; then
+            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ]; then
               skip=true
               reason="same-date persistent assets already exist on main"
             elif git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
@@ -117,14 +116,14 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_or_deepseek_required: false"
             echo
-            echo "This workflow commits Raw / Pool / Card assets to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
+            echo "This workflow commits Raw / Pool / business-signal Card assets to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
             echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
             echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."
             echo
             echo "Production order:"
             echo "1. Run Daily Monitor with QC."
             echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
-            echo "3. Regenerate Card / Opinion assets in the runner workspace."
+            echo "3. Regenerate business-signal Card assets in the runner workspace."
             echo "4. Run Pool-to-Card duplicate gate."
             echo "5. Write a persistent asset manifest."
             echo "6. Sync local site data in the runner workspace."
@@ -134,6 +133,7 @@ jobs:
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
+            echo "- paused opinion lane."
             echo "- Daily Observation Write / QC."
             echo "- Direct main commit."
             echo "- Direct deploy from the automation branch."
@@ -154,7 +154,6 @@ jobs:
           node --check agent-workflow/tools/build-hermes-daily-brief.mjs
           node --check agent-workflow/tools/build-topic-center-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
-          node --check 01-SiteV2/site/scripts/sync-v2-site-data.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
@@ -205,7 +204,7 @@ jobs:
             --pool-min=15 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-post-monitor-gate.log"
 
-      - name: Regenerate Card / Opinion assets
+      - name: Regenerate business-signal Card assets
         id: assets
         if: steps.monitor.outcome == 'success' && steps.monitor-readiness.outcome == 'success' && steps.persistent-assets-post-monitor.outcome == 'success'
         continue-on-error: true
@@ -215,6 +214,7 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --require-final-qc=false \
+            --include-opinions=false \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-assets.log"
 
@@ -236,7 +236,6 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          node 01-SiteV2/site/scripts/sync-v2-site-data.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
@@ -287,8 +286,6 @@ jobs:
           raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
           pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
           signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
-          opinion_candidates_file="01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-candidates.md"
-          opinion_cards_file="01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md"
 
           state_for() {
             local path="$1"
@@ -300,7 +297,6 @@ jobs:
           }
 
           signal_card_count="$(find 01-SiteV2/knowledge/01-Signal-Cards -type f -name "${RUN_DATE}--signal--*.md" 2>/dev/null | wc -l | tr -d ' ')"
-          opinion_card_count="$(find 01-SiteV2/knowledge/02-Opinion-Cards -type f -name "${RUN_DATE}--frontier-opinion*.md" 2>/dev/null | wc -l | tr -d ' ')"
 
           cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md" <<EOF
           # ${RUN_DATE} Persistent Asset Manifest
@@ -325,10 +321,7 @@ jobs:
           | Raw originals | $(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}") |
           | Pool candidates | $(state_for "$pool_file") |
           | Business signals | $(state_for "$signal_file") |
-          | Opinion candidates | $(state_for "$opinion_candidates_file") |
-          | Opinion cards list | $(state_for "$opinion_cards_file") |
           | Signal card files | ${signal_card_count} |
-          | Opinion card files | ${opinion_card_count} |
           | Site content data | $(state_for "01-SiteV2/site/data/site-content.json") |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
 
@@ -360,10 +353,7 @@ jobs:
               "raw_originals": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
               "pool_candidates": "$(state_for "$pool_file")",
               "business_signals": "$(state_for "$signal_file")",
-              "opinion_candidates": "$(state_for "$opinion_candidates_file")",
-              "opinion_cards_list": "$(state_for "$opinion_cards_file")",
               "signal_card_files": ${signal_card_count},
-              "opinion_card_files": ${opinion_card_count},
               "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")",
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")"
             }
@@ -389,10 +379,7 @@ jobs:
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
-            01-SiteV2/content/05-frontier-opinions/${{ steps.run-date.outputs.date }}-opinion-candidates.md
-            01-SiteV2/content/05-frontier-opinions/${{ steps.run-date.outputs.date }}-opinion-cards.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
-            01-SiteV2/knowledge/02-Opinion-Cards/${{ steps.run-date.outputs.date }}--frontier-opinion*.md
             01-SiteV2/site/data/site-content.json
             01-SiteV2/site/data/site-content.js
             01-SiteV2/site/data/v3-data-observation-desk.json
@@ -442,10 +429,7 @@ jobs:
 
           if [ "${{ steps.assets.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
-            stage_if_exists "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-candidates.md"
-            stage_if_exists "01-SiteV2/content/05-frontier-opinions/${RUN_DATE}-opinion-cards.md"
             stage_find "01-SiteV2/knowledge/01-Signal-Cards" "${RUN_DATE}--signal--*.md"
-            stage_find "01-SiteV2/knowledge/02-Opinion-Cards" "${RUN_DATE}--frontier-opinion*.md"
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
@@ -485,7 +469,7 @@ jobs:
 
           What this PR contains:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
-          - Signal Cards and Opinion Cards persisted when asset generation succeeded.
+          - Signal Cards persisted when asset generation succeeded.
           - Site data included only when dedupe, sync, source-first frontstage, frontstage regression and pre-commit gates passed.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
@@ -652,7 +636,7 @@ jobs:
           require_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
           require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
           require_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
-          require_success "Card / Opinion regeneration" "${{ steps.assets.outcome }}"
+          require_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
           require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
           require_success "Site data sync" "${{ steps.site-data.outcome }}"
           require_success "V3 source-first frontstage gate" "${{ steps.source-first-frontstage.outcome }}"

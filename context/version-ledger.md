@@ -38,6 +38,12 @@ priority: current
 | Git tag | `ops-console-v1.1.1` |
 | 说明 | 仅代表内部运营后台版本，不改变项目主版本 `V3.1.1-source-first-frontstage`。 |
 
+## 栏目版本登记
+
+| 栏目 | 栏目版本 | 状态 | 日期 | 范围 | 合并口径 |
+|---|---|---|---|---|---|
+| Builder 言论观察台 | Builder Observation V1.0 | ready-for-integration | 2026-06-06 | 中文翻译展示；人物-时间线观点目录；同账号同日内容合并；人物按最新发布时间排序；长期访谈观察并入左栏；旧 `02-Opinion-Cards` 依赖删除；前台不展示泛化 `Builder 观点` 标签 | 暂不改变观澜 AI 主版本；等待数据观察台完成后，与统一导航一起合并为 V3.2.0 双栏目情报前台版 |
+
 ## 版本分层
 
 | 层级 | 使用条件 | 示例 |
@@ -52,7 +58,8 @@ priority: current
 
 | 页面 | 文件 | 当前口径 |
 |---|---|---|
-| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，基于当日 Raw / Pool / Card / 观点 / 趋势资产，展示商业信号、关系图谱、趋势候选和历史趋势 |
+| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，基于当日 Raw / Pool / Card / 趋势资产，展示商业信号、关系图谱、趋势候选和历史趋势 |
+| Builder 言论观察台 | `01-SiteV2/site/follow-builders.html` | Builder Observation V1.0 栏目候选页；展示 AI builders 公开言论、中文翻译、人物时间线和长期访谈观察，等待后续并入双栏目导航 |
 | 根入口 | `01-SiteV2/site/index.html` | 只跳转到 V3 数据观察台，不再承载 V2 首页 |
 | 运营控制台 | `01-SiteV2/site/operations-console.html` | 运营后台保留，不属于 V2 前台页面 |
 | 管线仪表盘 | `01-SiteV2/site/pipeline-dashboard.html` | 生产链路仪表盘保留，不属于 V2 前台页面 |
