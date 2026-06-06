@@ -2,15 +2,15 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V1.2.0",
     "date": "2026-06-06",
-    "generatedAt": "2026-06-06T05:51:28.810Z",
+    "generatedAt": "2026-06-06T06:19:39.414Z",
     "source": "external-source-algorithms",
     "rule": "raw_pool_plus_external_sources_five_each",
     "lockedAs": "ops-topic-center-v1.1.1",
     "sources": {
-      "raw_pool_pitch": 0,
-      "industry_chain": 9,
-      "builders": 4,
-      "viral_rewrite": 1
+      "raw_pool_pitch": 1,
+      "industry_chain": 12,
+      "builders": 5,
+      "viral_rewrite": 5
     },
     "recommendedPaper": {
       "title": "Pretraining Recurrent Networks without Recurrence",
@@ -43,6 +43,48 @@ window.WaveSightTopicCenter = {
     }
   ],
   "topics": [
+    {
+      "id": "raw_pool_pitch-daily-observation-1",
+      "sourceId": "raw_pool_pitch",
+      "sourceName": "Raw-Pool-Pitch",
+      "sourceDesc": "每日 Raw / Pool / Card 产物",
+      "subSource": "今日观察",
+      "baseId": "daily-observation",
+      "title": "2026-06-06 观澜判断",
+      "type": "daily",
+      "audience": "企业老板 / 业务负责人",
+      "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+      "relevance": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+      "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+      "source": "今日观察",
+      "url": "daily-detail.html",
+      "date": "2026-06-06",
+      "score": 96,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 10
+      },
+      "angles": [
+        {
+          "title": "2026-06-06 观澜判断 改变的是哪一类企业判断",
+          "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+        },
+        {
+          "title": "这件事为什么不是普通新闻",
+          "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+        },
+        {
+          "title": "能不能转成前台 Card",
+          "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
+        }
+      ]
+    },
     {
       "id": "industry_chain-anthropic-engineering-at-anthropic-inside-the-team-build-1",
       "sourceId": "industry_chain",
@@ -181,11 +223,11 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 68 points · maltalex",
+      "evidence": "Hacker News · 116 points · maltalex",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48421442",
       "date": "2026-06-06",
-      "score": 78,
+      "score": 79,
       "grade": "B",
       "priority": "候选",
       "scoreBreakdown": {
@@ -199,7 +241,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 S&P 500 rejects SpaceX 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 68 points · maltalex"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 116 points · maltalex"
         },
         {
           "title": "S&P 500 rejects SpaceX 会先影响谁的采购单",
@@ -223,10 +265,52 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "Genuine question. Over the past six months, there hasn’t been a single day where I’ve checked the HN Best RSS feed without seeing a post about how AI “writes bad code,” “introduces bugs,” “creates technical debt,” or som",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 77 points · Ekami",
+      "evidence": "Hacker News · 83 points · Ekami",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48420827",
       "date": "2026-06-06",
+      "score": 78,
+      "grade": "B",
+      "priority": "候选",
+      "scoreBreakdown": {
+        "conflict": 20,
+        "roleChange": 16,
+        "counterIntuit": 12,
+        "storyHook": 12,
+        "insight": 12,
+        "evidence": 8
+      },
+      "angles": [
+        {
+          "title": "从 Ask HN 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 83 points · Ekami"
+        },
+        {
+          "title": "Ask HN 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-hn-48416635-6",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Hacker News",
+      "baseId": "hn-48416635",
+      "title": "Transformers are inherently succinct",
+      "type": "discussion",
+      "audience": "AI 从业者 / 技术决策者",
+      "core": "This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers.",
+      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+      "evidence": "Hacker News · 111 points · brandonb",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48416635",
+      "date": "2026-06-05",
       "score": 77,
       "grade": "C",
       "priority": "候选",
@@ -240,16 +324,58 @@ window.WaveSightTopicCenter = {
       },
       "angles": [
         {
-          "title": "从 Ask HN 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 77 points · Ekami"
+          "title": "从 Transformers are inherently succin 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 111 points · brandonb"
         },
         {
-          "title": "Ask HN 会先影响谁的采购单",
+          "title": "Transformers are inherently succin 会先影响谁的采购单",
           "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
         },
         {
           "title": "这不是技术升级，而是责任边界重画",
           "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
+      "id": "industry_chain-arxiv-handoff-humanoid-agentic-task-space-whole-body-con-7",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "arXiv",
+      "baseId": "arxiv-handoff-humanoid-agentic-task-space-whole-body-control-v",
+      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "type": "research",
+      "audience": "AI 战略负责人 / 企业 CTO",
+      "core": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kin",
+      "relevance": "有产业应用指向，适合判断企业 AI 预算流向。",
+      "evidence": "arXiv 论文 · Lizhi Yang, Junheng Li, Nehar Poddar",
+      "source": "arXiv",
+      "url": "http://arxiv.org/abs/2606.06493v1",
+      "date": "2026-06-06",
+      "score": 76,
+      "grade": "C",
+      "priority": "候选",
+      "scoreBreakdown": {
+        "conflict": 19,
+        "roleChange": 15,
+        "counterIntuit": 11,
+        "storyHook": 11,
+        "insight": 11,
+        "evidence": 8
+      },
+      "angles": [
+        {
+          "title": "从 HANDOFF 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：arXiv 论文 · Lizhi Yang, Junheng Li, Nehar Poddar"
+        },
+        {
+          "title": "HANDOFF 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：有产业应用指向，适合判断企业 AI 预算流向。"
         }
       ]
     },
@@ -338,6 +464,48 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
+      "id": "industry_chain-hn-48414869-10",
+      "sourceId": "industry_chain",
+      "sourceName": "产业链分析",
+      "sourceDesc": "arXiv / HN / 官方博客",
+      "subSource": "Hacker News",
+      "baseId": "hn-48414869",
+      "title": "Launch HN: General Instinct (YC P26) – Frontier models on edge devices",
+      "type": "discussion",
+      "audience": "AI 从业者 / 技术决策者",
+      "core": "Hey HN, Guanming and Bill here from General Instinct ( https:&#x2F;&#x2F;general-instinct.com&#x2F; ). After years of working in robotics, we kept running into the same problem: the best models never fit the hardware we ",
+      "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+      "evidence": "Hacker News · 51 points · guanming0717",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48414869",
+      "date": "2026-06-05",
+      "score": 75,
+      "grade": "C",
+      "priority": "候选",
+      "scoreBreakdown": {
+        "conflict": 19,
+        "roleChange": 15,
+        "counterIntuit": 11,
+        "storyHook": 11,
+        "insight": 11,
+        "evidence": 8
+      },
+      "angles": [
+        {
+          "title": "从 Launch HN 看 AI 预算正流向哪一段产业链",
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 51 points · guanming0717"
+        },
+        {
+          "title": "Launch HN 会先影响谁的采购单",
+          "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+        },
+        {
+          "title": "这不是技术升级，而是责任边界重画",
+          "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
       "id": "industry_chain-arxiv-vortex-efficient-and-programmable-sparse-attention-11",
       "sourceId": "industry_chain",
       "sourceName": "产业链分析",
@@ -391,7 +559,7 @@ window.WaveSightTopicCenter = {
       "audience": "AI 从业者 / 技术决策者",
       "core": "To my knowledge, this is the first formally verified implementation of an intersection algorithm for polygons. The experience of working with AI agents on this project changed a lot with recent model releases, as I descr",
       "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-      "evidence": "Hacker News · 69 points · permute",
+      "evidence": "Hacker News · 70 points · permute",
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=48405264",
       "date": "2026-06-04",
@@ -409,7 +577,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "从 Show HN 看 AI 预算正流向哪一段产业链",
-          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 69 points · permute"
+          "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 70 points · permute"
         },
         {
           "title": "Show HN 会先影响谁的采购单",
@@ -418,6 +586,48 @@ window.WaveSightTopicCenter = {
         {
           "title": "这不是技术升级，而是责任边界重画",
           "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+        }
+      ]
+    },
+    {
+      "id": "builders-follow-builders-2062734215494664697-1",
+      "sourceId": "builders",
+      "sourceName": "Builders 文章",
+      "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
+      "subSource": "Thibault Sottiaux",
+      "baseId": "follow-builders-2062734215494664697",
+      "title": "Thibault Sottiaux: You can use codex within your own programs using the Python SDK. It's awesome. Built by @ah20im and f",
+      "type": "builder-opinion",
+      "audience": "企业老板 / 产品负责人 / 开发者",
+      "core": "You can use codex within your own programs using the Python SDK. It's awesome. Built by @ah20im and friends ``` pip install openai-codex ``` https://t.co/GjQVEPwtkF",
+      "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
+      "evidence": "Follow Builders · @thsottiaux · 1447 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/thsottiaux/status/2062734215494664697",
+      "date": "2026-06-05",
+      "score": 94,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 9
+      },
+      "angles": [
+        {
+          "title": "Thibault Sottiaux 背后的开发者真实需求",
+          "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+        },
+        {
+          "title": "从演示走向日常工作，差的是哪一步",
+          "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+        },
+        {
+          "title": "企业读者该看哪些采用信号",
+          "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
         }
       ]
     },
@@ -590,6 +800,132 @@ window.WaveSightTopicCenter = {
       ]
     },
     {
+      "id": "viral_rewrite-follow-builders-2062611218196771017-1",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "HN 热门 / arXiv 热点",
+      "subSource": "Swyx",
+      "baseId": "follow-builders-2062611218196771017",
+      "title": "Swyx: Finally! the first eval ship from cog!!!!!!!!!! 👼🏼 To contextualize: @METR_Evals cap out at ~16 hours. Cog has p",
+      "type": "builder-viewpoint",
+      "audience": "企业老板 / 媒体编辑",
+      "core": "Finally! the first eval ship from cog!!!!!!!!!! 👼🏼 To contextualize: @METR_Evals cap out at ~16 hours. Cog has private enterprise evals up to 100hrs, and is confident enough to put a financial guarantee on it 🤯 METR dataset: ML eng, GPU ",
+      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+      "evidence": "Follow Builders · @swyx · 243 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/swyx/status/2062611218196771017",
+      "date": "2026-06-04",
+      "score": 95,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 10
+      },
+      "angles": [
+        {
+          "title": "Swyx 为什么会刺中企业焦虑",
+          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
+        },
+        {
+          "title": "把热闹改写成一个商业冲突",
+          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @swyx · 243 engagement"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-follow-builders-2062734215494664697-2",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "HN 热门 / arXiv 热点",
+      "subSource": "Thibault Sottiaux",
+      "baseId": "follow-builders-2062734215494664697",
+      "title": "Thibault Sottiaux: You can use codex within your own programs using the Python SDK. It's awesome. Built by @ah20im and f",
+      "type": "builder-viewpoint",
+      "audience": "企业老板 / 媒体编辑",
+      "core": "You can use codex within your own programs using the Python SDK. It's awesome. Built by @ah20im and friends ``` pip install openai-codex ``` https://t.co/GjQVEPwtkF",
+      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+      "evidence": "Follow Builders · @thsottiaux · 1447 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/thsottiaux/status/2062734215494664697",
+      "date": "2026-06-05",
+      "score": 95,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 10
+      },
+      "angles": [
+        {
+          "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
+          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
+        },
+        {
+          "title": "把热闹改写成一个商业冲突",
+          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 1447 engagement"
+        }
+      ]
+    },
+    {
+      "id": "viral_rewrite-follow-builders-2062648326332539015-3",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "HN 热门 / arXiv 热点",
+      "subSource": "Thibault Sottiaux",
+      "baseId": "follow-builders-2062648326332539015",
+      "title": "Thibault Sottiaux: We're fixing a codex bug today that was causing us to undercount tokens being served to some Pro and ",
+      "type": "builder-viewpoint",
+      "audience": "企业老板 / 媒体编辑",
+      "core": "We're fixing a codex bug today that was causing us to undercount tokens being served to some Pro and Plus accounts by a small amount. This impacted &lt; 15% of accounts. Not the kind of bug you want us to fix, but didn't want to do this sil",
+      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+      "evidence": "Follow Builders · @thsottiaux · 4662 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/thsottiaux/status/2062648326332539015",
+      "date": "2026-06-04",
+      "score": 95,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 10
+      },
+      "angles": [
+        {
+          "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
+          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
+        },
+        {
+          "title": "把热闹改写成一个商业冲突",
+          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 4662 engagement"
+        }
+      ]
+    },
+    {
       "id": "viral_rewrite-follow-builders-2062659533047259212-4",
       "sourceId": "viral_rewrite",
       "sourceName": "爆款改编",
@@ -630,10 +966,94 @@ window.WaveSightTopicCenter = {
           "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @_catwu · 1182 engagement"
         }
       ]
+    },
+    {
+      "id": "viral_rewrite-follow-builders-2062605395101884916-5",
+      "sourceId": "viral_rewrite",
+      "sourceName": "爆款改编",
+      "sourceDesc": "HN 热门 / arXiv 热点",
+      "subSource": "Thariq",
+      "baseId": "follow-builders-2062605395101884916",
+      "title": "Thariq: An app can be a home-cooked meal (2020) personal software was a bit early in 2020 but in 2026, it really can be ",
+      "type": "builder-viewpoint",
+      "audience": "企业老板 / 媒体编辑",
+      "core": "An app can be a home-cooked meal (2020) personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter https://t.co/vQLa9wxUzq",
+      "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+      "evidence": "Follow Builders · @trq212 · 603 engagement",
+      "source": "Follow Builders",
+      "url": "https://x.com/trq212/status/2062605395101884916",
+      "date": "2026-06-04",
+      "score": 95,
+      "grade": "S",
+      "priority": "S级选题",
+      "scoreBreakdown": {
+        "conflict": 24,
+        "roleChange": 19,
+        "counterIntuit": 14,
+        "storyHook": 14,
+        "insight": 14,
+        "evidence": 10
+      },
+      "angles": [
+        {
+          "title": "Thariq 为什么会刺中企业焦虑",
+          "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
+        },
+        {
+          "title": "把热闹改写成一个商业冲突",
+          "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
+        },
+        {
+          "title": "爆款改编前必须补哪条事实",
+          "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @trq212 · 603 engagement"
+        }
+      ]
     }
   ],
   "grouped": {
     "events": [
+      {
+        "id": "raw_pool_pitch-daily-observation-1",
+        "sourceId": "raw_pool_pitch",
+        "sourceName": "Raw-Pool-Pitch",
+        "sourceDesc": "每日 Raw / Pool / Card 产物",
+        "subSource": "今日观察",
+        "baseId": "daily-observation",
+        "title": "2026-06-06 观澜判断",
+        "type": "daily",
+        "audience": "企业老板 / 业务负责人",
+        "core": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+        "relevance": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+        "evidence": "今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。",
+        "source": "今日观察",
+        "url": "daily-detail.html",
+        "date": "2026-06-06",
+        "score": 96,
+        "grade": "S",
+        "priority": "S级选题",
+        "scoreBreakdown": {
+          "conflict": 24,
+          "roleChange": 19,
+          "counterIntuit": 14,
+          "storyHook": 14,
+          "insight": 14,
+          "evidence": 10
+        },
+        "angles": [
+          {
+            "title": "2026-06-06 观澜判断 改变的是哪一类企业判断",
+            "note": "切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+          },
+          {
+            "title": "这件事为什么不是普通新闻",
+            "note": "切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：今天的主线是企业 AI 从能力试点进入治理、交付和可运营阶段。"
+          },
+          {
+            "title": "能不能转成前台 Card",
+            "note": "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。"
+          }
+        ]
+      },
       {
         "id": "industry_chain-hn-48420827-5",
         "sourceId": "industry_chain",
@@ -646,10 +1066,52 @@ window.WaveSightTopicCenter = {
         "audience": "AI 从业者 / 技术决策者",
         "core": "Genuine question. Over the past six months, there hasn’t been a single day where I’ve checked the HN Best RSS feed without seeing a post about how AI “writes bad code,” “introduces bugs,” “creates technical debt,” or som",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 77 points · Ekami",
+        "evidence": "Hacker News · 83 points · Ekami",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48420827",
         "date": "2026-06-06",
+        "score": 78,
+        "grade": "B",
+        "priority": "候选",
+        "scoreBreakdown": {
+          "conflict": 20,
+          "roleChange": 16,
+          "counterIntuit": 12,
+          "storyHook": 12,
+          "insight": 12,
+          "evidence": 8
+        },
+        "angles": [
+          {
+            "title": "从 Ask HN 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 83 points · Ekami"
+          },
+          {
+            "title": "Ask HN 会先影响谁的采购单",
+            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+          },
+          {
+            "title": "这不是技术升级，而是责任边界重画",
+            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
+          }
+        ]
+      },
+      {
+        "id": "industry_chain-hn-48416635-6",
+        "sourceId": "industry_chain",
+        "sourceName": "产业链分析",
+        "sourceDesc": "arXiv / HN / 官方博客",
+        "subSource": "Hacker News",
+        "baseId": "hn-48416635",
+        "title": "Transformers are inherently succinct",
+        "type": "discussion",
+        "audience": "AI 从业者 / 技术决策者",
+        "core": "This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers.",
+        "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
+        "evidence": "Hacker News · 111 points · brandonb",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=48416635",
+        "date": "2026-06-05",
         "score": 77,
         "grade": "C",
         "priority": "候选",
@@ -663,11 +1125,11 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "从 Ask HN 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 77 points · Ekami"
+            "title": "从 Transformers are inherently succin 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 111 points · brandonb"
           },
           {
-            "title": "Ask HN 会先影响谁的采购单",
+            "title": "Transformers are inherently succin 会先影响谁的采购单",
             "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
           },
           {
@@ -677,21 +1139,21 @@ window.WaveSightTopicCenter = {
         ]
       },
       {
-        "id": "industry_chain-hn-48406198-8",
+        "id": "industry_chain-arxiv-handoff-humanoid-agentic-task-space-whole-body-con-7",
         "sourceId": "industry_chain",
         "sourceName": "产业链分析",
         "sourceDesc": "arXiv / HN / 官方博客",
-        "subSource": "Hacker News",
-        "baseId": "hn-48406198",
-        "title": "South Korean forums will need to scan every images with AI censorship tools",
-        "type": "discussion",
-        "audience": "AI 从业者 / 技术决策者",
-        "core": "South Korean forums will need to scan every images with AI censorship tools",
-        "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 240 points · Cider9986",
-        "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=48406198",
-        "date": "2026-06-04",
+        "subSource": "arXiv",
+        "baseId": "arxiv-handoff-humanoid-agentic-task-space-whole-body-control-v",
+        "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+        "type": "research",
+        "audience": "AI 战略负责人 / 企业 CTO",
+        "core": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kin",
+        "relevance": "有产业应用指向，适合判断企业 AI 预算流向。",
+        "evidence": "arXiv 论文 · Lizhi Yang, Junheng Li, Nehar Poddar",
+        "source": "arXiv",
+        "url": "http://arxiv.org/abs/2606.06493v1",
+        "date": "2026-06-06",
         "score": 76,
         "grade": "C",
         "priority": "候选",
@@ -705,95 +1167,11 @@ window.WaveSightTopicCenter = {
         },
         "angles": [
           {
-            "title": "从 South Korean forums will need to s 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 240 points · Cider9986"
+            "title": "从 HANDOFF 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：arXiv 论文 · Lizhi Yang, Junheng Li, Nehar Poddar"
           },
           {
-            "title": "South Korean forums will need to s 会先影响谁的采购单",
-            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-          },
-          {
-            "title": "这不是技术升级，而是责任边界重画",
-            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
-          }
-        ]
-      },
-      {
-        "id": "industry_chain-arxiv-will-the-agent-recuse-itself-measuring-llm-agent-c-9",
-        "sourceId": "industry_chain",
-        "sourceName": "产业链分析",
-        "sourceDesc": "arXiv / HN / 官方博客",
-        "subSource": "arXiv",
-        "baseId": "arxiv-will-the-agent-recuse-itself-measuring-llm-agent-complia",
-        "title": "Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals",
-        "type": "research",
-        "audience": "AI 战略负责人 / 企业 CTO",
-        "core": "As autonomous LLM agents increasingly hold real credentials and operate infrastructure without a human in the loop, operators have no standard way to tell an agent that a resource is off-limits. Access controls either le",
-        "relevance": "有产业应用指向，适合判断企业 AI 预算流向。",
-        "evidence": "arXiv 论文 · Thamilvendhan Munirathinam",
-        "source": "arXiv",
-        "url": "http://arxiv.org/abs/2606.06460v1",
-        "date": "2026-06-06",
-        "score": 75,
-        "grade": "C",
-        "priority": "候选",
-        "scoreBreakdown": {
-          "conflict": 19,
-          "roleChange": 15,
-          "counterIntuit": 11,
-          "storyHook": 11,
-          "insight": 11,
-          "evidence": 8
-        },
-        "angles": [
-          {
-            "title": "从 Will the Agent Recuse Itself? Meas 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：arXiv 论文 · Thamilvendhan Munirathinam"
-          },
-          {
-            "title": "Will the Agent Recuse Itself? Meas 会先影响谁的采购单",
-            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
-          },
-          {
-            "title": "这不是技术升级，而是责任边界重画",
-            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：有产业应用指向，适合判断企业 AI 预算流向。"
-          }
-        ]
-      },
-      {
-        "id": "industry_chain-arxiv-vortex-efficient-and-programmable-sparse-attention-11",
-        "sourceId": "industry_chain",
-        "sourceName": "产业链分析",
-        "sourceDesc": "arXiv / HN / 官方博客",
-        "subSource": "arXiv",
-        "baseId": "arxiv-vortex-efficient-and-programmable-sparse-attention-servi",
-        "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
-        "type": "research",
-        "audience": "AI 战略负责人 / 企业 CTO",
-        "core": "Sparse attention is becoming increasingly important for serving large language models (LLMs) as generation lengths continue to grow. However, deploying and evaluating new sparse attention algorithms at scale remains high",
-        "relevance": "有产业应用指向，适合判断企业 AI 预算流向。",
-        "evidence": "arXiv 论文 · Zhuoming Chen, Xinrui Zhong, Qilong Feng",
-        "source": "arXiv",
-        "url": "http://arxiv.org/abs/2606.06453v1",
-        "date": "2026-06-06",
-        "score": 74,
-        "grade": "C",
-        "priority": "候选",
-        "scoreBreakdown": {
-          "conflict": 19,
-          "roleChange": 15,
-          "counterIntuit": 11,
-          "storyHook": 11,
-          "insight": 11,
-          "evidence": 7
-        },
-        "angles": [
-          {
-            "title": "从 Vortex 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：arXiv 论文 · Zhuoming Chen, Xinrui Zhong, Qilong Feng"
-          },
-          {
-            "title": "Vortex 会先影响谁的采购单",
+            "title": "HANDOFF 会先影响谁的采购单",
             "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
           },
           {
@@ -899,11 +1277,11 @@ window.WaveSightTopicCenter = {
         "audience": "AI 从业者 / 技术决策者",
         "core": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
         "relevance": "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        "evidence": "Hacker News · 68 points · maltalex",
+        "evidence": "Hacker News · 116 points · maltalex",
         "source": "Hacker News",
         "url": "https://news.ycombinator.com/item?id=48421442",
         "date": "2026-06-06",
-        "score": 78,
+        "score": 79,
         "grade": "B",
         "priority": "候选",
         "scoreBreakdown": {
@@ -917,7 +1295,7 @@ window.WaveSightTopicCenter = {
         "angles": [
           {
             "title": "从 S&P 500 rejects SpaceX 看 AI 预算正流向哪一段产业链",
-            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 68 points · maltalex"
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：Hacker News · 116 points · maltalex"
           },
           {
             "title": "S&P 500 rejects SpaceX 会先影响谁的采购单",
@@ -928,26 +1306,68 @@ window.WaveSightTopicCenter = {
             "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。"
           }
         ]
+      },
+      {
+        "id": "industry_chain-arxiv-will-the-agent-recuse-itself-measuring-llm-agent-c-9",
+        "sourceId": "industry_chain",
+        "sourceName": "产业链分析",
+        "sourceDesc": "arXiv / HN / 官方博客",
+        "subSource": "arXiv",
+        "baseId": "arxiv-will-the-agent-recuse-itself-measuring-llm-agent-complia",
+        "title": "Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals",
+        "type": "research",
+        "audience": "AI 战略负责人 / 企业 CTO",
+        "core": "As autonomous LLM agents increasingly hold real credentials and operate infrastructure without a human in the loop, operators have no standard way to tell an agent that a resource is off-limits. Access controls either le",
+        "relevance": "有产业应用指向，适合判断企业 AI 预算流向。",
+        "evidence": "arXiv 论文 · Thamilvendhan Munirathinam",
+        "source": "arXiv",
+        "url": "http://arxiv.org/abs/2606.06460v1",
+        "date": "2026-06-06",
+        "score": 75,
+        "grade": "C",
+        "priority": "候选",
+        "scoreBreakdown": {
+          "conflict": 19,
+          "roleChange": 15,
+          "counterIntuit": 11,
+          "storyHook": 11,
+          "insight": 11,
+          "evidence": 8
+        },
+        "angles": [
+          {
+            "title": "从 Will the Agent Recuse Itself? Meas 看 AI 预算正流向哪一段产业链",
+            "note": "切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：arXiv 论文 · Thamilvendhan Munirathinam"
+          },
+          {
+            "title": "Will the Agent Recuse Itself? Meas 会先影响谁的采购单",
+            "note": "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。"
+          },
+          {
+            "title": "这不是技术升级，而是责任边界重画",
+            "note": "切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：有产业应用指向，适合判断企业 AI 预算流向。"
+          }
+        ]
       }
     ],
     "viewpoints": [
       {
-        "id": "viewpoint-cat-wu-1",
-        "sourceId": "builders",
-        "sourceName": "Builders 文章",
-        "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
-        "subSource": "Cat Wu",
-        "baseId": "follow-builders-2062659533047259212",
-        "title": "Cat Wu: I'm hiring a PM for Claude Code, focused on model performance. If you have experience writing agentic evals and ",
-        "type": "builder-opinion",
-        "audience": "企业老板 / 产品负责人 / 开发者",
-        "core": "I'm hiring a PM for Claude Code, focused on model performance. If you have experience writing agentic evals and want to integrate research ideas into our core products, I'd love to hear from you here: https://t.co/IKWlAr8tSb",
-        "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-        "evidence": "Follow Builders · @_catwu · 1182 engagement",
+        "id": "viewpoint-thibault-sottiaux-1",
+        "sourceId": "viral_rewrite",
+        "sourceName": "爆款改编",
+        "sourceDesc": "HN 热门 / arXiv 热点",
+        "subSource": "Thibault Sottiaux",
+        "baseId": "follow-builders-2062648326332539015",
+        "title": "Thibault Sottiaux：We're fixing a codex bug today that was causing us to undercount tokens being served to some Pro and  / You can use codex within your own programs using the Python SDK. It's awesome. Built by @ah20im and f",
+        "type": "builder-viewpoint",
+        "audience": "企业老板 / 媒体编辑",
+        "core": "We're fixing a codex bug today that was causing us to undercount tokens being served to some Pro and Plus accounts by a small amount. This impacted &lt; 15% of accounts. Not the kind of bug you want us to fix, but didn't want to do this sil",
+        "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+        "evidence": "Follow Builders · @thsottiaux · 4662 engagement",
         "source": "Follow Builders",
-        "url": "https://x.com/_catwu/status/2062659533047259212",
+        "url": "https://x.com/thsottiaux/status/2062648326332539015",
         "date": "2026-06-04",
-        "score": 94,
+        "score": 95,
         "grade": "S",
         "priority": "S级选题",
         "scoreBreakdown": {
@@ -956,44 +1376,45 @@ window.WaveSightTopicCenter = {
           "counterIntuit": 14,
           "storyHook": 14,
           "insight": 14,
-          "evidence": 9
+          "evidence": 10
         },
         "angles": [
           {
-            "title": "Cat Wu 背后的开发者真实需求",
-            "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+            "title": "Thibault Sottiaux 为什么会刺中企业焦虑",
+            "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
           },
           {
-            "title": "从演示走向日常工作，差的是哪一步",
-            "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+            "title": "把热闹改写成一个商业冲突",
+            "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
           },
           {
-            "title": "企业读者该看哪些采用信号",
-            "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+            "title": "爆款改编前必须补哪条事实",
+            "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @thsottiaux · 4662 engagement"
           }
         ],
-        "mergedCount": 1,
+        "mergedCount": 2,
         "originalUrls": [
-          "https://x.com/_catwu/status/2062659533047259212"
+          "https://x.com/thsottiaux/status/2062648326332539015",
+          "https://x.com/thsottiaux/status/2062734215494664697"
         ]
       },
       {
-        "id": "viewpoint-alex-albert-2",
-        "sourceId": "builders",
-        "sourceName": "Builders 文章",
-        "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
-        "subSource": "Alex Albert",
-        "baseId": "follow-builders-2062580571214389510",
-        "title": "Alex Albert: We just published internal data on how much of Claude's development is already being done by Claude: - Over",
-        "type": "builder-opinion",
-        "audience": "企业老板 / 产品负责人 / 开发者",
-        "core": "We just published internal data on how much of Claude's development is already being done by Claude: - Over 80% of all code merged into our codebase is now written by Claude - It's been months since many researchers at Anthropic hand-wrote ",
-        "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-        "evidence": "Follow Builders · @alexalbert__ · 2881 engagement",
+        "id": "viewpoint-swyx-2",
+        "sourceId": "viral_rewrite",
+        "sourceName": "爆款改编",
+        "sourceDesc": "HN 热门 / arXiv 热点",
+        "subSource": "Swyx",
+        "baseId": "follow-builders-2062611218196771017",
+        "title": "Swyx: Finally! the first eval ship from cog!!!!!!!!!! 👼🏼 To contextualize: @METR_Evals cap out at ~16 hours. Cog has p",
+        "type": "builder-viewpoint",
+        "audience": "企业老板 / 媒体编辑",
+        "core": "Finally! the first eval ship from cog!!!!!!!!!! 👼🏼 To contextualize: @METR_Evals cap out at ~16 hours. Cog has private enterprise evals up to 100hrs, and is confident enough to put a financial guarantee on it 🤯 METR dataset: ML eng, GPU ",
+        "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+        "evidence": "Follow Builders · @swyx · 243 engagement",
         "source": "Follow Builders",
-        "url": "https://x.com/alexalbert__/status/2062580571214389510",
+        "url": "https://x.com/swyx/status/2062611218196771017",
         "date": "2026-06-04",
-        "score": 94,
+        "score": 95,
         "grade": "S",
         "priority": "S级选题",
         "scoreBreakdown": {
@@ -1002,44 +1423,44 @@ window.WaveSightTopicCenter = {
           "counterIntuit": 14,
           "storyHook": 14,
           "insight": 14,
-          "evidence": 9
+          "evidence": 10
         },
         "angles": [
           {
-            "title": "Alex Albert 背后的开发者真实需求",
-            "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+            "title": "Swyx 为什么会刺中企业焦虑",
+            "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
           },
           {
-            "title": "从演示走向日常工作，差的是哪一步",
-            "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+            "title": "把热闹改写成一个商业冲突",
+            "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
           },
           {
-            "title": "企业读者该看哪些采用信号",
-            "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+            "title": "爆款改编前必须补哪条事实",
+            "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @swyx · 243 engagement"
           }
         ],
         "mergedCount": 1,
         "originalUrls": [
-          "https://x.com/alexalbert__/status/2062580571214389510"
+          "https://x.com/swyx/status/2062611218196771017"
         ]
       },
       {
-        "id": "viewpoint-aaron-levie-3",
-        "sourceId": "builders",
-        "sourceName": "Builders 文章",
-        "sourceDesc": "GitHub Trending / Show HN / 开发者博客",
-        "subSource": "Aaron Levie",
-        "baseId": "follow-builders-2062728257359790292",
-        "title": "Aaron Levie: Good thought provoking post from Anthropic. I think this paragraph points to the key element of the optimis",
-        "type": "builder-opinion",
-        "audience": "企业老板 / 产品负责人 / 开发者",
-        "core": "Good thought provoking post from Anthropic. I think this paragraph points to the key element of the optimistic scenario of AI: “There has been an explosion of new ideas, initiatives, tools, and simulations, as a result of Anthropic employee",
-        "relevance": "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-        "evidence": "Follow Builders · @levie · 282 engagement",
+        "id": "viewpoint-thariq-3",
+        "sourceId": "viral_rewrite",
+        "sourceName": "爆款改编",
+        "sourceDesc": "HN 热门 / arXiv 热点",
+        "subSource": "Thariq",
+        "baseId": "follow-builders-2062605395101884916",
+        "title": "Thariq: An app can be a home-cooked meal (2020) personal software was a bit early in 2020 but in 2026, it really can be ",
+        "type": "builder-viewpoint",
+        "audience": "企业老板 / 媒体编辑",
+        "core": "An app can be a home-cooked meal (2020) personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter https://t.co/vQLa9wxUzq",
+        "relevance": "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
+        "evidence": "Follow Builders · @trq212 · 603 engagement",
         "source": "Follow Builders",
-        "url": "https://x.com/levie/status/2062728257359790292",
-        "date": "2026-06-05",
-        "score": 94,
+        "url": "https://x.com/trq212/status/2062605395101884916",
+        "date": "2026-06-04",
+        "score": 95,
         "grade": "S",
         "priority": "S级选题",
         "scoreBreakdown": {
@@ -1048,25 +1469,25 @@ window.WaveSightTopicCenter = {
           "counterIntuit": 14,
           "storyHook": 14,
           "insight": 14,
-          "evidence": 9
+          "evidence": 10
         },
         "angles": [
           {
-            "title": "Aaron Levie 背后的开发者真实需求",
-            "note": "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。"
+            "title": "Thariq 为什么会刺中企业焦虑",
+            "note": "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。"
           },
           {
-            "title": "从演示走向日常工作，差的是哪一步",
-            "note": "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。"
+            "title": "把热闹改写成一个商业冲突",
+            "note": "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。"
           },
           {
-            "title": "企业读者该看哪些采用信号",
-            "note": "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。"
+            "title": "爆款改编前必须补哪条事实",
+            "note": "切口：先补一条可验证来源，再写观点。当前可用证据边界：Follow Builders · @trq212 · 603 engagement"
           }
         ],
         "mergedCount": 1,
         "originalUrls": [
-          "https://x.com/levie/status/2062728257359790292"
+          "https://x.com/trq212/status/2062605395101884916"
         ]
       }
     ]
