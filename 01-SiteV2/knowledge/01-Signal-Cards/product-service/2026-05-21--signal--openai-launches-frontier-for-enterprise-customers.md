@@ -51,10 +51,10 @@ frontend:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra", "track-ai-governance"]
   function: ["function-procurement-bidding", "function-legal-compliance"]
-  scenario: ["scenario-bidding-response", "scenario-agent-governance"]
+  scenario: ["scenario-bidding-response", "scenario-agent-governance", "scenario-logistics-supply-chain"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-pricing-cost", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []

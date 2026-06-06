@@ -9,8 +9,8 @@ source_title: "Airspeed Raises $20M Series A to Build an AI â€˜Commercial Brainâ
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T12:35:16.457Z
-updated_at: 2026-06-06T12:35:16.457Z
+created_at: 2026-06-06T17:11:59.343Z
+updated_at: 2026-06-06T17:11:59.343Z
 
 raw_refs: ["R-014"]
 pool_refs: ["P-014"]
@@ -35,10 +35,9 @@ formal_tags:
   scenario: ["scenario-knowledge-base", "scenario-customer-ticket"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-watch", "stage-rising"]
+  stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
-
 signal_owner: "Airspeed"
 
 frontend:

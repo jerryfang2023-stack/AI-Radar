@@ -35,12 +35,11 @@ formal_tags:
   function: ["function-engineering", "function-finance"]
   scenario: ["scenario-coding-agent", "scenario-payments"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-business-media"]
   opinion: []
-
 event: "Replit 宣布获得 Visa 投资，并扩展双方在企业使用、支付能力和解决方案伙伴计划上的合作。"
 business_meaning: "AI 编程工具进入企业后，边界会从代码生成扩展到支付、权限、交易确认和责任归属。"
 why_selected: "Visa 不是普通软件客户。它的参与让 Replit 的企业叙事更接近真实交易系统，也让风险和合规问题变得更具体。"

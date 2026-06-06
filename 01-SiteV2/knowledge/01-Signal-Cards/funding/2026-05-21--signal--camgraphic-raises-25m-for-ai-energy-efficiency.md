@@ -51,10 +51,10 @@ frontend:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra"]
   function: ["function-procurement-bidding"]
-  scenario: ["scenario-knowledge-base", "scenario-bidding-response"]
+  scenario: ["scenario-knowledge-base", "scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations"]
   customer: ["customer-heavy-industry"]
-  evidence: ["evidence-funding"]
-  stage: ["stage-watch", "stage-rising"]
+  evidence: ["evidence-funding", "evidence-partnership-integration", "evidence-pricing-cost", "evidence-customer-metric"]
+  stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
   opinion: []

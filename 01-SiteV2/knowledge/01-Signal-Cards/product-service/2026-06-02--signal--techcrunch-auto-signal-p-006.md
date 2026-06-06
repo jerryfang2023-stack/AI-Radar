@@ -33,14 +33,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
   function: ["function-sales"]
-  scenario: ["scenario-sales-briefing"]
+  scenario: ["scenario-sales-briefing", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-partnership-integration", "evidence-pricing-cost"]
+  stage: []
   region: []
   source: ["source-business-media"]
   opinion: []
-
 event: "Techcrunch 发布新的 AI 能力，面向销售和收入团队流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

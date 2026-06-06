@@ -33,14 +33,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
   function: []
-  scenario: []
+  scenario: ["scenario-construction-real-estate"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-funding"]
-  stage: ["stage-watch", "stage-rising"]
+  evidence: ["evidence-funding", "evidence-partnership-integration", "evidence-pricing-cost"]
+  stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
   opinion: []
-
 event: "57 early stage AI startups 宣布$316M 融资，业务重点落在地产和建筑设计工作流。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

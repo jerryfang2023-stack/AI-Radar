@@ -33,14 +33,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-ai-infra"]
   function: ["function-engineering"]
-  scenario: ["scenario-model-deployment"]
+  scenario: ["scenario-model-deployment", "scenario-logistics-supply-chain"]
   customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-partnership-integration"]
+  stage: []
   region: []
   source: ["source-first-party"]
   opinion: []
-
 event: "NVIDIA 发布 Cosmos 3，用世界模型和动作模型支持机器人、自动驾驶和智能空间的开发。"
 business_meaning: "这条信号说明英伟达正在把竞争位置从 GPU 供应继续推向物理 AI 的开发工具链。企业采购这类能力时，问题会从模型接口扩展到仿真、训练数据、边缘硬件和安全责任。"
 why_selected: "Cosmos 3 不是单独的模型新闻。它和 Alpamayo、Vera、DSX OS 等同日线索放在一起，显示英伟达希望把真实空间里的 AI 开发、测试和运行环节留在自己的体系内。"

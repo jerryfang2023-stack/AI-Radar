@@ -35,12 +35,11 @@ formal_tags:
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-customer-adoption", "evidence-pricing-cost", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-first-party"]
   opinion: []
-
 event: "NVIDIA 发布 JetPack 7.2，加入 NemoClaw 一键部署、Jetson Agent skills 和 MIG 支持。"
 business_meaning: "边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。"
 why_selected: "这条变化值得看，是因为物理世界和工业场景里的 Agent 需要在本地设备上稳定运行，而不是只依赖云端推理。"

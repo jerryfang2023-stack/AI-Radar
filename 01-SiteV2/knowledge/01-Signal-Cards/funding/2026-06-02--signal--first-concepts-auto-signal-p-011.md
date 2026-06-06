@@ -35,12 +35,11 @@ formal_tags:
   function: []
   scenario: []
   customer: ["customer-enterprise"]
-  evidence: ["evidence-funding"]
-  stage: ["stage-watch", "stage-rising"]
+  evidence: ["evidence-funding", "evidence-partnership-integration", "evidence-pricing-cost"]
+  stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
   opinion: []
-
 event: "First Concepts 宣布$1M 融资，业务重点落在企业 Agent 协作平台。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

@@ -39,14 +39,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
   function: ["function-customer-service"]
-  scenario: ["scenario-customer-ticket"]
+  scenario: ["scenario-customer-ticket", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-watch", "stage-rising"]
+  stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
   opinion: []
-
 event: "Netomi 宣布完成 1.1 亿美元融资，用于扩展面向复杂企业环境的 agentic CX 平台。"
 business_meaning: "企业老板需要关注的不是客服机器人本身，而是客服回复、合规审核、升级转人工和断线后的恢复责任被打包进同一套 AI 交付责任。"
 why_selected: "这条信号把大额融资、企业级客户体验和可审计运行环境放在一起，说明智能体预算正在从通用工具走向高风险业务流程。"

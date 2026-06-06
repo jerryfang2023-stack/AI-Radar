@@ -40,10 +40,10 @@ related_case_status: needs_research
 formal_tags:
   track: ["track-ai-coding", "track-ai-agent"]
   function: ["function-engineering"]
-  scenario: ["scenario-knowledge-base"]
+  scenario: ["scenario-knowledge-base", "scenario-construction-real-estate"]
   customer: ["customer-developer-team"]
-  evidence: ["source-business-media"]
-  stage: ["stage-watch"]
+  evidence: ["source-business-media", "evidence-partnership-integration", "evidence-pricing-cost"]
+  stage: []
   region: ["region-global"]
   source: ["source-business-media"]
   opinion: []

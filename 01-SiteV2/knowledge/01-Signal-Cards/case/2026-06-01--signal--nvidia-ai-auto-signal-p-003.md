@@ -33,14 +33,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-operations"]
-  scenario: ["scenario-manufacturing-ops"]
+  scenario: ["scenario-manufacturing-ops", "scenario-logistics-supply-chain"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-customer-adoption", "evidence-customer-metric"]
+  stage: []
   region: ["region-asia"]
   source: ["source-first-party"]
   opinion: []
-
 event: "NVIDIA 披露台积电、富士康、QCT、纬创、和硕等台湾产业伙伴正在把加速计算、仿真、AI agents 和物理 AI 用进制造运营。"
 business_meaning: "这让 AI 基础设施供应商的角色发生变化：它不只卖硬件，也把自己的客户变成制造流程改造样板。"
 why_selected: "材料里有具体公司和运营环节，能看到 AI 从研发叙事进入光刻、工厂规划、根因分析和视觉检测等制造任务。"

@@ -54,7 +54,7 @@ formal_tags:
   scenario: ["scenario-agent-governance"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-watch", "stage-rising"]
+  stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
   opinion: []

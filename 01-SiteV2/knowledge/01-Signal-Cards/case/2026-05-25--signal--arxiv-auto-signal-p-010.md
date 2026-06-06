@@ -33,14 +33,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
   function: ["function-engineering"]
-  scenario: []
+  scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-pricing-cost"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []
-
 event: "arXiv 把 AI 用进地产开发和建筑设计流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

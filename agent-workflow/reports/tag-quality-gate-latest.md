@@ -1,38 +1,33 @@
 # Tag Quality Gate
 
-生成时间：2026/6/2 16:39:35
+Generated at: 2026/6/7 01:38:44
 
-## 结论
+## Result
 
-- 状态：passed
-- 正式 taxonomy tag 数：67
-- 脚本 hardcoded unknown tags：0
-- Markdown formal_tags unknown tags：0
-- site-content tags unknown 数：0
-- site tagTaxonomy unknown / missing：0 / 0
-- candidate_tags 中未登记 tag：0（只报告，不阻塞）
-- 缺 formal_tags 的正式资产：0（只报告，不阻塞本次 unknown gate）
+- Status: passed
+- Active taxonomy tags: 74
+- Script hardcoded unknown tags: 0
+- Markdown formal_tags unknown tags: 0
+- Current site data unknown tags: 0
+- Unregistered candidate_tags: 0 (reported only)
+- Formal assets missing formal_tags: 0 (reported only)
 
-## 脚本未知 tag
+## Script Unknown Tags
 
-无。
+None.
 
-## Markdown formal_tags 未知 tag
+## Markdown Formal Tags Unknown
 
-无。
+None.
 
-## Site content 未知 tag
+## Current Site Data Unknown Tags
 
-无。
+None.
 
-## Site tagTaxonomy 漂移
+## Candidate Tags Watchlist
 
-无。
+None.
 
-## candidate_tags 观察项
+## Formal Assets Missing formal_tags
 
-无。
-
-## 缺 formal_tags 的正式资产
-
-无。
+None.

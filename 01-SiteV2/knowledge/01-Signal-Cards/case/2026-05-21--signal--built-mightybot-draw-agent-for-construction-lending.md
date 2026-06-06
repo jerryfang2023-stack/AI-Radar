@@ -52,10 +52,10 @@ frontend:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow"]
   function: ["function-finance", "function-operations"]
-  scenario: []
+  scenario: ["scenario-construction-real-estate", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-customer-adoption", "evidence-pricing-cost", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []

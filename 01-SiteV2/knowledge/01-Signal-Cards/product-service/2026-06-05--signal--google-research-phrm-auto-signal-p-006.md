@@ -33,14 +33,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
   function: []
-  scenario: []
+  scenario: ["scenario-healthcare-operations"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-partnership-integration", "evidence-pricing-cost"]
+  stage: []
   region: []
   source: ["source-first-party"]
   opinion: []
-
 event: "Google Research 发布被动心率监测系统 PHRM 发布新的 AI 能力，面向模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

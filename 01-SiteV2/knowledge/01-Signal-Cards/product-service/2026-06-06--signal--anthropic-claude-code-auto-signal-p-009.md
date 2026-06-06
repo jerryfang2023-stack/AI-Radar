@@ -1,5 +1,5 @@
 ---
-id: SIG-20260606-A08
+id: SIG-20260606-A09
 type: signal_card
 signal_type: product_service
 title: "Anthropic销售人员用Claude Code重建团队工作流"
@@ -9,8 +9,8 @@ source_title: "Anthropic销售人员用Claude Code重建团队工作流"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T12:35:16.457Z
-updated_at: 2026-06-06T12:35:16.457Z
+created_at: 2026-06-06T17:11:59.343Z
+updated_at: 2026-06-06T17:11:59.343Z
 
 raw_refs: ["R-009"]
 pool_refs: ["P-009"]
@@ -32,13 +32,12 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-ai-coding"]
   function: ["function-engineering", "function-sales"]
-  scenario: ["scenario-sales-briefing"]
+  scenario: ["scenario-sales-briefing", "scenario-revenue-operations"]
   customer: ["customer-developer-team"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-industry-data"]
-
 signal_owner: "Anthropic销售人员用Claude Code重建团队工作流"
 
 frontend:

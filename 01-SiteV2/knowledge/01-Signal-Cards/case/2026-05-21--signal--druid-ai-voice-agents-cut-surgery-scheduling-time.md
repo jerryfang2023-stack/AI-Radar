@@ -52,10 +52,10 @@ frontend:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow", "track-medical-ai", "track-ai-customer-service"]
   function: ["function-customer-service", "function-operations"]
-  scenario: ["scenario-clinical-imaging", "scenario-customer-ticket"]
+  scenario: ["scenario-clinical-imaging", "scenario-customer-ticket", "scenario-insurance-claims", "scenario-healthcare-operations"]
   customer: ["customer-enterprise", "customer-healthcare-provider"]
-  evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []

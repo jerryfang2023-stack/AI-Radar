@@ -51,10 +51,10 @@ frontend:
 formal_tags:
   track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
   function: ["function-engineering", "function-legal-compliance"]
-  scenario: ["scenario-agent-governance"]
+  scenario: ["scenario-agent-governance", "scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-watch", "stage-rising"]
+  stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
   opinion: []

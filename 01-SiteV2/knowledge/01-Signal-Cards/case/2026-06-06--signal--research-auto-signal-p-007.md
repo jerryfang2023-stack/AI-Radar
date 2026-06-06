@@ -9,8 +9,8 @@ source_title: "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic R
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T12:35:16.457Z
-updated_at: 2026-06-06T12:35:16.457Z
+created_at: 2026-06-06T17:11:59.343Z
+updated_at: 2026-06-06T17:11:59.343Z
 
 raw_refs: ["R-007"]
 pool_refs: ["P-007"]
@@ -34,11 +34,10 @@ formal_tags:
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-first-party"]
-
 signal_owner: "Research"
 
 frontend:

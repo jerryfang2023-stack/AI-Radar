@@ -52,10 +52,10 @@ frontend:
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow"]
   function: ["function-operations"]
-  scenario: []
+  scenario: ["scenario-logistics-supply-chain"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch"]
+  stage: []
   region: []
   source: ["source-first-party"]
   opinion: []

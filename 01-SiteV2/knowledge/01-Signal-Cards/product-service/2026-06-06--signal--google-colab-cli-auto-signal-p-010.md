@@ -1,5 +1,5 @@
 ---
-id: SIG-20260606-A09
+id: SIG-20260606-A10
 type: signal_card
 signal_type: product_service
 title: "Google Colab CLI 发布"
@@ -9,8 +9,8 @@ source_title: "Google Colab CLI 发布"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T12:35:16.457Z
-updated_at: 2026-06-06T12:35:16.457Z
+created_at: 2026-06-06T17:11:59.343Z
+updated_at: 2026-06-06T17:11:59.343Z
 
 raw_refs: ["R-010"]
 pool_refs: ["P-010"]
@@ -34,11 +34,10 @@ formal_tags:
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-partnership-integration"]
+  stage: []
   region: []
   source: ["source-first-party"]
-
 signal_owner: "Google Colab CLI 发布"
 
 frontend:

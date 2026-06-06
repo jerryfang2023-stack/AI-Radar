@@ -35,12 +35,11 @@ formal_tags:
   function: ["function-engineering"]
   scenario: ["scenario-local-ai-dev"]
   customer: ["customer-developer-team"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-pricing-cost"]
+  stage: []
   region: []
   source: ["source-business-media"]
   opinion: []
-
 event: "英伟达推出 RTX Spark 芯片方向，面向轻薄电脑和桌面设备上的本地 AI 工作负载。"
 business_meaning: "本地 AI 算力如果变得更便宜，开发者和企业小团队会把一部分测试、推理和原型工作从云端移回本地。"
 why_selected: "这条信号关系到 AI 开发成本和数据边界，不只是 PC 芯片新闻。"

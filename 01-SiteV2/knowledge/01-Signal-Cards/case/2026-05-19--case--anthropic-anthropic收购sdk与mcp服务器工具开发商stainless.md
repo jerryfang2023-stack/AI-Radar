@@ -40,10 +40,10 @@ related_case_status: active
 formal_tags:
   track: ["track-ai-coding", "track-ai-agent"]
   function: ["function-engineering"]
-  scenario: ["scenario-knowledge-base"]
+  scenario: ["scenario-knowledge-base", "scenario-construction-real-estate"]
   customer: ["customer-enterprise"]
-  evidence: ["source-first-party"]
-  stage: ["stage-watch"]
+  evidence: ["source-first-party", "evidence-partnership-integration", "evidence-acquisition", "evidence-pricing-cost", "evidence-customer-metric"]
+  stage: []
   region: ["region-global"]
   source: ["source-first-party"]
   opinion: []

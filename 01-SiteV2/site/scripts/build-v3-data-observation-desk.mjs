@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { readTagTaxonomy } from "../../../agent-workflow/tools/tag-taxonomy-utils.mjs";
 
 const root = process.cwd();
 const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
@@ -24,9 +25,9 @@ const categoryLabels = {
 };
 
 const tagGroups = ["track", "function", "scenario", "customer", "evidence", "stage", "region", "source"];
-const taxonomyFile = path.join(root, "agent-workflow", "product", "tag-taxonomy.md");
 const tagDictionary = loadTagDictionary();
 const allowedTagIds = new Set(tagDictionary.keys());
+const internalFrontstageTagIds = new Set(["stage-watch"]);
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
@@ -117,11 +118,9 @@ function resolveRawArchivePath(rawArchiveRel = "", rawJsonPath = "") {
 }
 
 function loadTagDictionary() {
-  const text = read(taxonomyFile);
   const tags = new Map();
-  const tagPattern = /`((?:track|function|scenario|customer|evidence|stage|region|source)-[a-z0-9-]+)`\s*\|\s*([^|`\r\n]+?)\s*\|/gu;
-  for (const match of text.matchAll(tagPattern)) {
-    tags.set(match[1], match[2].trim());
+  for (const tag of readTagTaxonomy(root).filter((item) => tagGroups.includes(item.group))) {
+    tags.set(tag.id, tag.name);
   }
   return tags;
 }
@@ -225,16 +224,85 @@ function allTags(tags) {
   return tagGroups.flatMap((group) => tags[group] || []);
 }
 
+function frontstageTags(tags) {
+  const result = {};
+  for (const group of tagGroups) {
+    result[group] = (tags[group] || []).filter((tag) => !internalFrontstageTagIds.has(tag));
+  }
+  return result;
+}
+
+function isFrontstageDisplayTag(tag = "") {
+  if (!tag || internalFrontstageTagIds.has(tag)) return false;
+  if (/^(source|region)-/u.test(tag)) return false;
+  if (isGraphOpinionLikeTag(tag)) return false;
+  return true;
+}
+
 function displayTags(tags) {
-  return allTags(tags).map((id) => ({
-    id,
-    label: tagDictionary.get(id) || id,
-  }));
+  return allTags(tags)
+    .filter(isFrontstageDisplayTag)
+    .map((id) => ({
+      id,
+      label: tagDictionary.get(id) || id,
+    }));
 }
 
 function short(text = "", length = 180) {
   const clean = String(text).replace(/\s+/gu, " ").trim();
   return clean.length > length ? `${clean.slice(0, length - 1)}...` : clean;
+}
+
+function normalizedComparableText(value = "") {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/^这条(?:融资|产品)?信号(?:可用于判断|提供了)/u, "")
+    .replace(/^(新闻事实|原文要点|价值描述|可见原文片段)[:：]/u, "")
+    .replace(/[，。；：、“”‘’（）()《》【】[\]\s,.!?;:'"`$€£|/_-]+/gu, "")
+    .trim();
+}
+
+function textUnits(value = "") {
+  const normalized = normalizedComparableText(value);
+  if (!normalized) return [];
+  const chars = Array.from(normalized);
+  if (chars.length <= 2) return [normalized];
+  const units = [];
+  for (let index = 0; index < chars.length - 1; index += 1) {
+    units.push(`${chars[index]}${chars[index + 1]}`);
+  }
+  return units;
+}
+
+function textSimilarity(left = "", right = "") {
+  const a = normalizedComparableText(left);
+  const b = normalizedComparableText(right);
+  if (!a || !b) return 0;
+  const shorter = a.length <= b.length ? a : b;
+  const longer = a.length > b.length ? a : b;
+  if (shorter.length >= 24 && longer.includes(shorter)) return 1;
+  const aUnits = new Set(textUnits(a));
+  const bUnits = new Set(textUnits(b));
+  if (!aUnits.size || !bUnits.size) return 0;
+  let intersection = 0;
+  for (const unit of aUnits) {
+    if (bUnits.has(unit)) intersection += 1;
+  }
+  return intersection / Math.min(aUnits.size, bUnits.size);
+}
+
+function textRepeatsAny(value = "", existing = [], threshold = 0.78) {
+  return existing.some((item) => textSimilarity(value, item) >= threshold);
+}
+
+function uniqueNonRepeatingLines(lines = [], existing = [], limit = 8) {
+  const accepted = [];
+  for (const line of lines.map((item) => short(item, 260)).filter(Boolean)) {
+    if (textRepeatsAny(line, existing.concat(accepted))) continue;
+    accepted.push(line);
+    if (accepted.length >= limit) break;
+  }
+  return accepted;
 }
 
 function domain(url = "") {
@@ -300,6 +368,19 @@ function isDiscoveryLabel(value = "") {
   return /\b(anysearch|unknown builder|hn builder query|builder query|tavily|exa|gdelt|duckduckgo|bing|keyword search|cloud fallback|follow-builders)\b/iu.test(String(value));
 }
 
+function recoverCompleteTitleFromFullText(title = "", fullText = "") {
+  const cleanTitle = String(title || "").replace(/\s+/gu, " ").trim();
+  if (!cleanTitle || !/\.{3}|…/u.test(cleanTitle)) return cleanTitle;
+  const prefix = cleanTitle.replace(/(?:\s*\.{3}|…)\s*$/u, "").trim();
+  if (prefix.length < 18) return cleanTitle;
+  const lines = String(fullText || "")
+    .split(/\r?\n/u)
+    .map((line) => line.replace(/\s+/gu, " ").trim())
+    .filter(Boolean);
+  const match = lines.find((line) => line.startsWith(prefix) && line.length > cleanTitle.length);
+  return match || cleanTitle;
+}
+
 function subjectFromUrl(url = "") {
   try {
     const parsed = new URL(url);
@@ -346,6 +427,10 @@ function subjectFromTitle(title = "") {
   if (ceoMatch) return cleanSubject(ceoMatch[1]);
   const colonMatch = clean.match(/^([^:：]{2,36})[:：]/u);
   if (colonMatch) return cleanSubject(colonMatch[1]);
+  const knownMatch = clean.match(/^(Google DeepMind|Google Research|Google Colab|Anthropic|Claude Cowork|Claude Code|OpenAI|Microsoft|NVIDIA|Airspeed|NeoCognition|Nimble)\b/u);
+  if (knownMatch) return cleanSubject(knownMatch[1]);
+  const actionMatch = clean.match(/^([A-Z][A-Za-z0-9 .&/-]{1,42}?|[\u4e00-\u9fffA-Za-z0-9 .&/-]{2,28}?)(?:\s*)(发布|推出|完成|融资|获得|获|宣布|部署|开源|用|与|让|launches?|raises?|lands?|announces?|releases?)\b/iu);
+  if (actionMatch) return cleanSubject(actionMatch[1]);
   const pipeParts = clean.split(/\s+\|\s+/u).map((part) => part.trim()).filter(Boolean);
   if (pipeParts.length > 1) {
     const last = cleanSubject(pipeParts.at(-1));
@@ -363,9 +448,22 @@ function subjectFromTitle(title = "") {
 
 function normalizeSubject(value = "") {
   const clean = cleanSubject(value);
+  if (/NeoCognition/iu.test(clean)) return "NeoCognition";
+  if (/Nimble/iu.test(clean)) return "Nimble";
+  if (/Airspeed/iu.test(clean)) return "Airspeed";
+  const titled = subjectFromTitle(clean);
+  if (titled && titled !== clean && clean.length > titled.length + 2) return normalizeSubject(titled);
+  if (/^谷歌$/u.test(clean)) return "Google";
+  if (/^微软$/u.test(clean)) return "Microsoft";
+  if (/^英伟达$/u.test(clean)) return "NVIDIA";
   if (/^bcg$/iu.test(clean)) return "BCG";
   if (/^googlecloudpresscorner$/iu.test(clean)) return "";
   return clean;
+}
+
+function subjectLooksLikeTitle(value = "") {
+  const clean = cleanSubject(value);
+  return clean.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把)/u.test(clean);
 }
 
 function isWeakSubject(value = "") {
@@ -374,6 +472,7 @@ function isWeakSubject(value = "") {
   if (/^\d{4}$/u.test(clean)) return true;
   if (/^CEO\s+/iu.test(clean)) return true;
   if (/把 AI 用进/u.test(clean)) return true;
+  if (subjectLooksLikeTitle(value)) return true;
   return false;
 }
 
@@ -390,6 +489,9 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
   const text = String(title || "").trim();
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const byUrl = [
+    [/techcrunch\.com.*nimble-way-raises-47m/u, "Nimble 融资 4700 万美元，让 AI Agent 获取实时网页数据"],
+    [/techcrunch\.com.*neocognition.*lands-40m/u, "NeoCognition 融资 4000 万美元，研发像人类一样学习的自学习 AI Agent"],
+    [/unite\.ai.*airspeed-raises-20m-series-a/u, "Airspeed 融资 2000 万美元，打造面向收入团队的 AI「商业大脑」"],
     [/aimultiple\.com.*ai-procurement/u, "10 个 AI 采购用例与案例研究"],
     [/aws\.amazon\.com.*procurement.*agentcore/u, "AWS：使用 Amazon Bedrock AgentCore 自动化采购工作流"],
     [/siliconangle.*archestra/u, "Archestra 融资 1000 万美元，为企业数据接入 AI Agent 搭建中介层"],
@@ -427,6 +529,9 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const source = `${text}\n${normalized}`;
   const rules = [
+    [/nimble-way-raises-47m|Nimble raises \$47M/iu, "TechCrunch 报道，Nimble 完成 4700 万美元 B 轮融资，由 Norwest 领投，平台用 AI Agent 实时搜索网页、验证结果，并把信息结构化成可查询的数据表。"],
+    [/neocognition.*lands-40m|NeoCognition lands \$40M/iu, "TechCrunch 报道，NeoCognition 从隐身状态推出并完成 4000 万美元种子轮融资，由 Cambium Capital 和 Walden Catalyst Ventures 共同领投，方向是研发自学习 AI Agent。"],
+    [/airspeed-raises-20m|Airspeed Raises \$20M/iu, "Unite.AI 报道，Airspeed 完成 2000 万美元 A 轮融资，由 DN Capital 领投，资金用于扩展面向销售和收入运营团队的 AI 平台。"],
     [/10 AI Procurement Use Cases|aimultiple\.com.*ai-procurement/iu, "AIMultiple 汇总了 10 类 AI 采购用例和案例，材料重点在采购流程、工具选择和企业采用场景。"],
     [/Automate Procurement Workflows|amazon.*procurement.*agentcore/iu, "AWS 展示了用 Amazon Bedrock AgentCore 自动化采购工作流的方案，重点是把 Agent 放进采购任务和流程编排。"],
     [/Daniela Amodei|IPO 前夕驳斥|Anthropic 联合创始人/iu, "TechCrunch 报道 Anthropic 联合创始人 Daniela Amodei 在 IPO 前回应外界对 AI 投资回报的质疑。"],
@@ -496,6 +601,13 @@ function frontstageChineseTitle(title = "", sourceUrl = "") {
 function frontstageSubjectOverride(sourceUrl = "", title = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const rules = [
+    [/theverge\.com.*ai-laptop-nvidia-build-gemini/u, "NVIDIA / Microsoft / Google"],
+    [/marktechpost.*gemma-4-qat/u, "Google DeepMind"],
+    [/research\.google.*agentic-rag/u, "Google Research"],
+    [/anthropic\.com.*making-claude-a-chemist/u, "Anthropic"],
+    [/anthropic\.com.*claude-code.*sales/u, "Anthropic"],
+    [/claude\.com.*cowork/u, "Claude Cowork"],
+    [/developers\.googleblog\.com.*colab/u, "Google Colab"],
     [/huggingface\.co\/blog\/ibm-research\/agent-logic/u, "IBM Research"],
     [/techcrunch\.com.*49-us-ai-startups.*raised-100m/u, "美国 AI 初创公司"],
     [/github\.com.*anthropics.*claude-code/u, "Claude Code"],
@@ -529,8 +641,8 @@ function frontstageSubject(fm, sourceUrl, sourceName, rawTitle, title) {
   const derived = urlSubject || titleSubject;
   if (urlSubject) return urlSubject;
   if (isDiscoveryLabel(sourceName) && derived) return derived;
-  return explicit
-    || derived
+  return derived
+    || explicit
     || (!isWeakSubject(sourceName) ? normalizeSubject(sourceName) : "")
     || "未标注主体";
 }
@@ -552,7 +664,6 @@ function readRawEvidence(rawJsonRel, rawArchiveRel, sourceUrlHint = "") {
     try {
       const json = JSON.parse(read(rawJson));
       sourceName = json.source_name || "";
-      rawTitle = json.title || "";
       sourceUrl = json.original_url || json.canonical_url || "";
       publishedAt = json.published_at || "";
       keyExcerpts = Array.isArray(json.key_excerpts)
@@ -562,6 +673,7 @@ function readRawEvidence(rawJsonRel, rawArchiveRel, sourceUrlHint = "") {
         })).filter((item) => item.text).slice(0, 8)
         : [];
       fullText = json.full_text || json.clean_text || "";
+      rawTitle = recoverCompleteTitleFromFullText(json.title || "", fullText);
       visibleFragment = short(fullText, 360);
       businessElements = json.business_elements || {};
       evidenceSeed = json.evidence_seed || {};
@@ -627,7 +739,7 @@ function publicVisibleFragment(value = "") {
 }
 
 function isMechanicalFrontstageText(value = "") {
-  return /发布 AI 能力|把 AI 用进|这条变化值得看|客户是否买单|流程结果、交付速度|团队协作有没有实际改善|面向销售和收入团队流程|面向地产开发和建筑设计流程|面向模型部署和算力调用|面向企业智能体协作流程/u.test(String(value || ""));
+  return /^关键数字：|原文关键数字包括|发布 AI 能力|把 AI 用进|这条变化值得看|客户是否买单|流程结果、交付速度|团队协作有没有实际改善|面向销售和收入团队流程|面向地产开发和建筑设计流程|面向模型部署和算力调用|面向企业智能体协作流程/u.test(String(value || ""));
 }
 
 function procurementUseCaseHighlights(fullText = "") {
@@ -660,6 +772,21 @@ function archestraHighlights(fullText = "") {
 function translateKnownRawExcerpt(value = "", type = "") {
   const text = String(value || "");
   const rules = [
+    [/Nimble raises \$47M to give AI agents access to real-time web data/iu, "TechCrunch 原题为：Nimble raises $47M to give AI agents access to real-time web data。"],
+    [/web search startup Nimble.*raised a \$47 million Series B round.*Norwest/iu, "Nimble 完成 4700 万美元 B 轮融资，由 Norwest 领投。"],
+    [/platform employs AI agents to search the web in real time.*verify and validate.*queried like a database/iu, "Nimble 平台用 AI Agent 实时搜索网页、验证结果，并把信息整理成可像数据库一样查询的表格。"],
+    [/businesses invest in using AI agents.*scrape the web.*modern data tools/iu, "原文指出，企业在用 AI Agent 处理数据时，需要既能抓取网页、又能返回适合现代数据工具使用结果的工具。"],
+    [/LLMs and AI agents are great for searching the web.*plain text.*enterprise level/iu, "原文提到，LLM 和 AI Agent 虽适合搜索和分析网页，但常返回难以在企业级场景使用的纯文本结果。"],
+    [/Nimble lets companies use web data.*existing databases.*Databricks and Snowflake/iu, "Nimble 将网页数据结构化后接入企业现有数据库、数据仓库和数据湖，文中提到 Databricks 与 Snowflake。"],
+    [/AI research lab NeoCognition lands \$40M seed to build agents that learn like humans/iu, "TechCrunch 原题为：AI research lab NeoCognition lands $40M seed to build agents that learn like humans。"],
+    [/NeoCognition.*emerged from stealth with \$40 million in seed funding/iu, "NeoCognition 从隐身状态推出，并完成 4000 万美元种子轮融资。"],
+    [/round was co-led by Cambium Capital and Walden Catalyst Ventures.*Vista Equity Partners/iu, "NeoCognition 本轮由 Cambium Capital 和 Walden Catalyst Ventures 共同领投，Vista Equity Partners 等参投。"],
+    [/Yu Su.*spun out his work into a startup.*foundational model advances.*personalized/iu, "创始人 Yu Su 将俄亥俄州立大学 AI Agent 实验室的研究拆分为公司，原因是基础模型进展让个性化 Agent 更可行。"],
+    [/Today.?s agents are generalists/iu, "Yu Su 对 TechCrunch 表示，今天的 Agent 仍偏通用型，每次执行任务都像是在冒险。"],
+    [/Airspeed.*raised a \$20 million Series A round led by DN Capital.*Atlassian Ventures/iu, "Airspeed 完成 2000 万美元 A 轮融资，由 DN Capital 领投，Vi Partners、Framework Venture Partners 和 Atlassian Ventures 参投。"],
+    [/funding brings the company.*total capital raised to more than \$25 million/iu, "本轮后，Airspeed 累计融资超过 2500 万美元。"],
+    [/formerly known as Glyphic.*rebranded to Airspeed.*execution layer for revenue organizations/iu, "Airspeed 原名 Glyphic，近期更名后从会话智能扩展为面向收入组织的执行层。"],
+    [/Rather than simply surfacing insights.*autonomous AI agents.*commercial workflows/iu, "Airspeed 平台不是只从会议、邮件和 CRM 中提取洞察，而是让自主 AI Agent 跨商业工作流执行动作。"],
     [/57 early stage AI startups.*\$316M/iu, "原文记录 57 家早期 AI 初创公司一周内合计融资 3.16 亿美元。"],
     [/Claude Code v?2\.1\.163/iu, "原文记录 Claude Code v2.1.163 发布，属于工程工具链更新。"],
     [/Governing agents in GitHub Enterprise/iu, "原文讨论 GitHub Enterprise 中的 Agent 治理，重点是企业环境里的权限、策略和安全管理。"],
@@ -674,8 +801,6 @@ function translateKnownRawExcerpt(value = "", type = "") {
   ];
   const match = rules.find(([pattern]) => pattern.test(text));
   if (match) return match[1];
-  const numbers = meaningfulNumbers(extractNumbers(text));
-  if (numbers.length && type) return `${excerptTypeLabel(type)}：原文关键数字包括 ${numbers.slice(0, 5).join("、")}。`;
   return "";
 }
 
@@ -746,7 +871,7 @@ function translatedSourcePoint(value = "", type = "") {
     [/Amazon Bedrock AgentCore provides a fully managed infrastructure/iu, "Amazon Bedrock AgentCore 提供托管基础设施，用于会话处理、状态管理和 Agent 运行。"],
     [/Amazon Bedrock does not use customer data and prompts to train/iu, "原文强调 Amazon Bedrock 不使用客户数据和提示来训练或改进基础模型。"],
     [/integrating SAP enterprise data with external vendor compliance ratings/iu, "SPA 方案把 SAP 企业数据与外部供应商合规评级连接起来。"],
-    [/Oracle E-Business Suite|Oracle JD Edwards|Oracle PeopleSoft|Oracle Fusion Cloud ERP|Salesforce|Snowflake/iu, "原文称该架构可扩展到 Oracle E-Business Suite、JD Edwards、PeopleSoft、Oracle Fusion Cloud ERP、Salesforce、Snowflake 等系统。"],
+    [/Oracle E-Business Suite|Oracle JD Edwards|Oracle PeopleSoft|Oracle Fusion Cloud ERP/iu, "原文称该架构可扩展到 Oracle E-Business Suite、JD Edwards、PeopleSoft、Oracle Fusion Cloud ERP、Salesforce、Snowflake 等系统。"],
     [/directly create Requests for Quotation.*same interface/iu, "采购人员可在同一对话界面中创建 RFQ，减少系统切换。"],
     [/eight specialized tools/iu, "方案包含 8 个专用工具，覆盖数据结构查询、SQL 查询、财务分析、质量指标、合规验证、RFQ 校验、RFQ 创建和数据可视化。"],
     [/RFQ Creation Tool.*SAP systems through OData/iu, "RFQ 创建工具通过 OData 调用 SAP API，在 SAP 系统中创建询价请求。"],
@@ -754,8 +879,6 @@ function translatedSourcePoint(value = "", type = "") {
   ];
   const match = rules.find(([pattern]) => pattern.test(text));
   if (match) return match[1];
-  const numbers = meaningfulNumbers(extractNumbers(text));
-  if (numbers.length) return `${excerptTypeLabel(type)}：原文关键数字包括 ${numbers.slice(0, 5).join("、")}。`;
   if (hasCjk(text)) return short(text, 220);
   return "";
 }
@@ -763,13 +886,6 @@ function translatedSourcePoint(value = "", type = "") {
 function genericRawCorePoints(raw) {
   const points = [];
   const seed = raw.evidenceSeed || {};
-  const excerptNumbers = raw.keyExcerpts.flatMap((item) => extractNumbers(item.text));
-  const fullTextNumbers = extractNumbers(raw.fullText).slice(0, 10);
-  const numbers = meaningfulNumbers([
-    ...excerptNumbers,
-    ...fullTextNumbers,
-  ]);
-  if (numbers.length) points.push(`关键数字：${numbers.slice(0, 6).join("、")}。`);
 
   const caseDetails = [
     ...arrayField(seed, "case_details"),
@@ -804,45 +920,66 @@ function genericRawCorePoints(raw) {
     .slice(0, 6);
 }
 
-function buildOriginalHighlights(raw, rawDisplayTitle = "", sourceUrl = "") {
+function buildOriginalHighlights(raw, rawDisplayTitle = "", sourceUrl = "", existing = []) {
   const specific = [
     ...procurementUseCaseHighlights(raw.fullText),
     ...archestraHighlights(raw.fullText),
   ];
-  if (specific.length) return specific.slice(0, 8);
+  if (specific.length) return uniqueNonRepeatingLines(specific, existing, 8);
   const translated = raw.keyExcerpts
     .map((item) => translateKnownRawExcerpt(item.text, item.type))
     .filter(Boolean);
-  return [...new Set([...translated, ...genericRawCorePoints(raw)])]
-    .filter((item) => item && !isMechanicalFrontstageText(item))
-    .slice(0, 8);
+  const candidates = [...new Set([...translated, ...genericRawCorePoints(raw)])]
+    .filter((item) => item && !isMechanicalFrontstageText(item) && !/原题为/u.test(item))
+    .filter((item) => !textRepeatsAny(item, existing));
+  return uniqueNonRepeatingLines(candidates, existing, 8);
 }
 
-function buildSourceExcerpt(raw, highlights = []) {
+function sourceTextFragment(raw, rawDisplayTitle = "") {
+  const candidates = [
+    ...raw.keyExcerpts.map((item) => item.text),
+    ...sourceSentences(raw.fullText),
+    raw.visibleFragment,
+  ]
+    .map(stripSourceNoise)
+    .filter(Boolean)
+    .filter((item) => !isMechanicalFrontstageText(item))
+    .filter((item) => !textRepeatsAny(item, [rawDisplayTitle], 0.9))
+    .filter((item) => /AI|agent|LLM|Gemini|Claude|OpenAI|Google|Nvidia|IBM|enterprise|customer|workflow|model|\d/iu.test(item))
+    .filter((item) => !/^Back to Articles\b|^More from this author\b|^Community\b/iu.test(item));
+  return short(candidates[0] || "", 260);
+}
+
+function buildSourceExcerpt(raw, highlights = [], rawDisplayTitle = "") {
   const rawExcerpt = raw.keyExcerpts
     .map((item) => translatedSourcePoint(item.text, item.type))
-    .find(Boolean);
+    .find((item) => item && !/原题为/u.test(item));
   if (rawExcerpt) return rawExcerpt;
   const sentenceExcerpt = sourceSentences(raw.fullText)
     .map((item) => translatedSourcePoint(item))
-    .find(Boolean);
+    .find((item) => item && !/原题为/u.test(item));
   if (sentenceExcerpt) return sentenceExcerpt;
   const visible = publicVisibleFragment(raw.visibleFragment);
   if (visible) return visible;
-  return highlights.find((item) => hasCjk(item) && !/^原始来源|本地 Raw\/Pool/u.test(item)) || "";
+  const highlightExcerpt = highlights.find((item) => hasCjk(item) && !/^原始来源|本地 Raw\/Pool/u.test(item) && !/原题为/u.test(item));
+  if (highlightExcerpt) return highlightExcerpt;
+  return sourceTextFragment(raw, rawDisplayTitle);
 }
 
-function sourceValueFromEvidence(category, highlights = [], rawDisplayTitle = "") {
-  const concrete = highlights
-    .filter((item) => !/^关键数字：/u.test(item))
-    .filter((item) => !/^原始来源|本地 Raw\/Pool|原文关键数字/u.test(item))
-    .slice(0, 2);
-  const base = concrete.length ? concrete.join("；") : frontstageChineseTitle(rawDisplayTitle);
-  if (!base) return "";
-  if (category === "funding") return `可观察融资金额、资金用途或赛道线索：${base}`;
-  if (category === "case") return `可观察真实客户、业务流程或结果指标：${base}`;
-  if (category === "product-service") return `可观察产品能力进入具体业务流程的方式：${base}`;
-  return base;
+function sourceValueFromEvidence(category, highlights = [], rawDisplayTitle = "", existing = []) {
+  if (category === "funding") {
+    return "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。";
+  }
+  if (category === "case") {
+    return "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。";
+  }
+  if (category === "product-service") {
+    return "这条产品信号可用于判断能力进入具体使用场景的方式，以及它是否改变现有工作流或交付成本。";
+  }
+  if (/funding|raises|series|seed|融资/iu.test(rawDisplayTitle)) {
+    return "这条融资信号可用于判断资金流向、产品方向和赛道竞争。";
+  }
+  return "这条信号提供了一个可核验的业务场景事实。";
 }
 
 function fallbackSourcePoints(rawDisplayTitle = "", sourceUrl = "", rawRef = "") {
@@ -858,6 +995,121 @@ function fallbackSourcePoints(rawDisplayTitle = "", sourceUrl = "", rawRef = "")
   if (sourceUrl) points.push(`原始来源链接：${sourceUrl}`);
   if (rawRef) points.push(`本地 Raw/Pool 要点缺失：需恢复 ${rawRef} 后补齐核心数据或案例。`);
   return points.filter(Boolean).slice(0, 3);
+}
+
+function isLargeVendorText(value = "") {
+  return /\b(Google|Microsoft|Anthropic|OpenAI|NVIDIA|Nvidia|Oracle|AWS|Amazon|Meta|Apple|IBM|Salesforce|DeepMind)\b|谷歌|微软|英伟达|亚马逊/iu.test(
+    String(value || "")
+  );
+}
+
+const largeVendorPatterns = [
+  ["anthropic", /\bAnthropic\b|\bClaude\b/iu],
+  ["google", /\bGoogle\b|\bDeepMind\b|\bGemini\b|\bGoogle\s*Colab\b/iu],
+  ["microsoft", /\bMicrosoft\b|\bCopilot\b/iu],
+  ["nvidia", /\bNVIDIA\b|\bNvidia\b/iu],
+  ["openai", /\bOpenAI\b|\bChatGPT\b/iu],
+  ["amazon", /\bAWS\b|\bAmazon\b|\bBedrock\b/iu],
+  ["meta", /\bMeta\b|\bLlama\b/iu],
+  ["apple", /\bApple\b/iu],
+  ["oracle", /\bOracle\b/iu],
+  ["ibm", /\bIBM\b/iu],
+  ["salesforce", /\bSalesforce\b/iu],
+];
+
+function largeVendorKeyFromText(value = "") {
+  const text = String(value || "");
+  const match = largeVendorPatterns.find(([, pattern]) => pattern.test(text));
+  return match?.[0] || "";
+}
+
+function largeVendorKeyForCard(card = {}) {
+  return largeVendorKeyFromText([
+    card.title,
+    card.originalTitle,
+    card.subject,
+    card.sourceName,
+    card.sourceUrl,
+  ].join(" ")) || largeVendorKeyFromText([
+    card.translatedFact,
+    ...(card.originalHighlights || []),
+  ].join(" "));
+}
+
+function isLargeVendorCard(card = {}) {
+  return Boolean(largeVendorKeyForCard(card));
+}
+
+function sourceLevelScore(level = "") {
+  if (level === "S") return 12;
+  if (level === "A") return 8;
+  if (level === "B") return 4;
+  return 0;
+}
+
+function frontstageImportanceScore(card = {}) {
+  const importance = Number(card.importanceScore) || 0;
+  const tags = new Set(card.flatTags || []);
+  let score = importance * 100 + sourceLevelScore(card.sourceLevel);
+  if (card.category === "funding") score += 24;
+  if (card.category === "case") score += 18;
+  if (card.category === "product-service") score += 8;
+  if (tags.has("evidence-funding")) score += 14;
+  if (tags.has("evidence-customer-adoption")) score += 12;
+  if (tags.has("evidence-customer-metric")) score += 12;
+  if (tags.has("evidence-acquisition")) score += 10;
+  if (tags.has("evidence-partnership-integration")) score += 8;
+  if (tags.has("evidence-pricing-cost")) score += 6;
+  if (tags.has("evidence-product-launch")) score += 6;
+  if (tags.has("customer-enterprise")) score += 8;
+  if (/vertical|procurement|health|finance|manufacturing|retail|legal|case|deployment|客户|案例|部署|采购/iu.test([
+    card.title,
+    card.translatedFact,
+    ...(card.originalHighlights || []),
+  ].join(" "))) {
+    score += 12;
+  }
+  if (card.largeVendor) score -= 30;
+  return score;
+}
+
+function selectDailyFrontstageCards(cards = [], limit = 10, largeVendorTotalLimit = 3, largeVendorPerCompanyLimit = 1) {
+  const byDate = new Map();
+  for (const card of cards) {
+    if (!card.date) continue;
+    const list = byDate.get(card.date) || [];
+    list.push(card);
+    byDate.set(card.date, list);
+  }
+  const selected = [];
+  for (const [date, items] of byDate.entries()) {
+    let datePicked = 0;
+    let largeVendorTotal = 0;
+    const largeVendorCounts = new Map();
+    const ranked = items
+      .map((card) => ({
+        ...card,
+        largeVendorKey: card.largeVendorKey || largeVendorKeyForCard(card),
+      }))
+      .map((card) => {
+        const rankedCard = { ...card, largeVendor: Boolean(card.largeVendorKey) };
+        return { ...rankedCard, frontstageRankScore: frontstageImportanceScore(rankedCard) };
+      })
+      .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
+    for (const card of ranked) {
+      if (datePicked >= limit) break;
+      if (card.largeVendorKey) {
+        const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
+        if (largeVendorTotal >= largeVendorTotalLimit) continue;
+        if (vendorCount >= largeVendorPerCompanyLimit) continue;
+        largeVendorTotal += 1;
+        largeVendorCounts.set(card.largeVendorKey, vendorCount + 1);
+      }
+      selected.push(card);
+      datePicked += 1;
+    }
+  }
+  return selected.sort((a, b) => dateValue(b.date) - dateValue(a.date) || b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
 }
 
 function cardFromFile(file, category) {
@@ -879,18 +1131,28 @@ function cardFromFile(file, category) {
     || "";
   const poolRefs = arrayValue(fm, "pool_refs");
   const raw = mergeEvidence(readRawEvidence(rawJson, rawArchive, primarySourceUrl), readPoolEvidence(scalar(fm, "date"), poolRefs[0]));
-  const rawTitle = rawTitleFromArchive || raw.rawTitle || "";
+  const rawTitle = recoverCompleteTitleFromFullText(rawTitleFromArchive || raw.rawTitle || "", raw.fullText);
   const sourceUrl = primarySourceUrl || raw.sourceUrl;
-  const sourceName = scalar(fm, "source_name") || raw.sourceName || domain(sourceUrl) || "未标注来源";
+  const explicitSourceName = scalar(fm, "source_name") || raw.sourceName || "";
+  const sourceName = explicitSourceName && !isDiscoveryLabel(explicitSourceName)
+    ? explicitSourceName
+    : domain(sourceUrl) || explicitSourceName || "未标注来源";
 
+  const sourceLevel = String(nestedScalar(fm, "primary_raw", "source_level") || scalar(fm, "source_level") || "").toUpperCase();
+  const importanceScore = Number(nestedScalar(fm, "primary_raw", "importance_score") || scalar(fm, "importance_score") || 0) || 0;
   const rawDisplayTitle = frontstageTitle(rawTitle || scalar(fm, "title") || path.basename(file, ".md"), rawTitle);
   const title = frontstageChineseTitle(rawDisplayTitle, sourceUrl);
   const translatedFact = chineseFactFromSource(rawDisplayTitle || title, sourceUrl);
-  let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl);
+  let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [translatedFact]);
   if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
   const sourceFact = translatedFact || originalHighlights.find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item)) || "";
-  const sourceExcerpt = buildSourceExcerpt(raw, originalHighlights);
-  const sourceValue = sourceValueFromEvidence(category, originalHighlights, rawDisplayTitle);
+  originalHighlights = uniqueNonRepeatingLines(
+    originalHighlights.filter((item) => !/^原始来源标题|原始来源链接|本地 Raw\/Pool/u.test(item)),
+    [sourceFact, title],
+    8
+  );
+  const sourceExcerpt = buildSourceExcerpt(raw, originalHighlights, rawDisplayTitle);
+  const sourceValue = sourceValueFromEvidence(category, originalHighlights, rawDisplayTitle, [sourceFact, title]);
 
   const sourceLinks = [
     ...nestedList(fm, "frontend", "sourceLinks"),
@@ -909,23 +1171,20 @@ function cardFromFile(file, category) {
     source: sourceName,
     sourceName,
     sourceUrl,
+    sourceLevel,
+    importanceScore,
     publishedAt: raw.publishedAt || scalar(fm, "published_at") || scalar(fm, "original_date") || "",
     tags,
     flatTags: allTags(tags),
     displayTags: displayTags(tags),
     summary: short(sourceValue || sourceFact, 260),
     translatedFact: short(sourceFact, 320),
-    originalHighlights: originalHighlights.length
-      ? originalHighlights
-      : [
-        nestedScalar(fm, "frontend", "originalQuote"),
-        headingSection(text, "发生了什么"),
-      ].filter((item) => item && !isMechanicalFrontstageText(item)).map((item) => short(item, 260)).slice(0, 3),
+    originalHighlights,
     visibleFragment: sourceExcerpt || "",
     sourceLinks: [...new Set(sourceLinks)],
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
-    stage: tags.stage?.[0] || "",
+    stage: tags.stage?.find((tag) => !internalFrontstageTagIds.has(tag)) || "",
     evidence: tags.evidence?.[0] || "",
     track: tags.track?.[0] || "",
   };
@@ -974,6 +1233,7 @@ function trendAssetFromFile(file, cards = []) {
   const relatedChangeCount = relatedSignals.length;
   const sourceTypeCount = sourceTypes.length;
   const frontTitle = trendFrontstageTitle(rawTitle, tags);
+  const publicTags = frontstageTags(tags);
   const frontDescription = trendFrontstageDescription({
     title: frontTitle,
     rawTitle,
@@ -1004,8 +1264,8 @@ function trendAssetFromFile(file, cards = []) {
     nextObservation: short(nextObservation, 260),
     sourceTypes,
     relatedSignals: [...new Set(relatedSignals)].filter(Boolean),
-    tags,
-    displayTags: displayTags(tags),
+    tags: publicTags,
+    displayTags: displayTags(publicTags),
   };
 }
 
@@ -1119,7 +1379,7 @@ function daysBetween(a, b) {
 function topTags(cards, limit = 4) {
   const counts = new Map();
   for (const card of cards) {
-    for (const tag of card.flatTags) counts.set(tag, (counts.get(tag) || 0) + 1);
+    for (const tag of card.flatTags.filter(isFrontstageDisplayTag)) counts.set(tag, (counts.get(tag) || 0) + 1);
   }
   return [...counts.entries()]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
@@ -1239,7 +1499,7 @@ const relationshipSpecs = [
     title: "AI 商业化正在进入采购、合同和收入流程",
     direction: "采购 / 销售",
     relation: ["企业采购", "销售 / 收入流程", "预算治理"],
-    any: ["function-sales", "scenario-sales-briefing", "function-procurement-bidding"],
+    any: ["function-sales", "scenario-sales-briefing", "function-procurement-bidding", "evidence-procurement", "evidence-pricing-cost"],
     titlePattern: /Adya|采购|合同|销售|收入|预算|议价|Vapi/u,
     summary: "这些材料把 AI 从产品试用带进采购、合同、销售和收入流程；共同关系是企业开始用预算、条款和收入责任来约束 AI 的商业化落地。",
     detailFocus: "内在关联：这些材料都指向同一条商业链路，AI 从产品试用进入采购预算、合同条款和收入流程。",
@@ -1249,7 +1509,7 @@ const relationshipSpecs = [
     title: "客服和语音 Agent 的共性，是先在客户接触点证明效率",
     direction: "客户体验",
     relation: ["客户体验", "行业 Agent", "效率指标"],
-    any: ["function-customer-service", "track-ai-customer-service", "evidence-customer-adoption", "evidence-product-launch"],
+    any: ["function-customer-service", "track-ai-customer-service", "evidence-customer-adoption", "evidence-customer-metric", "evidence-product-launch"],
     titlePattern: /客服|客户体验|家得宝|Vonage|Vapi|BCG/u,
     summary: "客服、语音和行业 Agent 都落在客户接触点；这些场景的共性是更容易用响应速度、处理量和服务体验来证明 AI 是否真正改善业务。",
     detailFocus: "内在关联：客服、语音交互和行业 Agent 都属于客户接触点，企业更容易用响应速度、处理量和服务体验来衡量效果。",
@@ -1270,7 +1530,7 @@ const relationshipSpecs = [
     direction: "产品发布",
     relation: ["产品发布", "客户采用", "商业验证"],
     categories: ["product-service"],
-    any: ["evidence-product-launch"],
+    any: ["evidence-product-launch", "evidence-partnership-integration", "evidence-acquisition"],
     summary: "这些产品材料表面上分散在报告、采购、开发工具和行业 Agent，内在关系是都在争夺企业 AI 落地入口：企业怎么买、团队怎么开发、具体行业流程在哪里使用。",
     detailFocus: "内在关联：这些产品材料表面上分散在报告、采购、开发工具和行业 Agent，实质上都在争夺企业 AI 落地时的入口位置：怎么买、怎么开发、在哪个行业流程里使用。",
   },
@@ -1440,10 +1700,10 @@ function isGraphOpinionLikeTag(tag = "") {
 }
 
 function graphTagsForCard(card) {
-  const groups = ["track", "function", "scenario", "customer", "evidence", "stage"];
+  const groups = ["track", "function", "scenario", "customer", "evidence"];
   const tags = groups
     .flatMap((group) => card.tags?.[group] || [])
-    .filter((tag) => tag && !isGraphOpinionLikeTag(tag));
+    .filter((tag) => tag && isFrontstageDisplayTag(tag));
   return [...new Set(tags)].slice(0, 3);
 }
 
@@ -1509,7 +1769,7 @@ function buildTrendLinks(cards, activeDate, windowDays) {
   const inWindow = windowCards(cards, activeDate, windowDays);
   const groups = new Map();
   for (const card of inWindow) {
-    for (const tag of card.flatTags) {
+    for (const tag of card.flatTags.filter(isMeaningfulAssociationTag).filter(isFrontstageDisplayTag)) {
       if (!groups.has(tag)) groups.set(tag, []);
       groups.get(tag).push(card);
     }
@@ -1533,6 +1793,7 @@ const rawCards = [
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const cards = dedupeFrontstageCards(rawCards)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
+const frontstageCards = selectDailyFrontstageCards(cards, 10, 3, 1);
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
 const trendAssets = buildTrendAssets(activeDate, cards);
@@ -1548,6 +1809,7 @@ const payload = {
   categories: Object.entries(categoryLabels).map(([category, label]) => ({ category, label })),
   stats: buildStats(cards, activeDate),
   cards,
+  frontstageCards,
   relationshipDirections: buildRelationshipDirections(cards, activeDate),
   relationshipGraph: buildRelationshipGraph(cards, activeDate),
   tagAssociations: buildTagAssociations(cards, activeDate),

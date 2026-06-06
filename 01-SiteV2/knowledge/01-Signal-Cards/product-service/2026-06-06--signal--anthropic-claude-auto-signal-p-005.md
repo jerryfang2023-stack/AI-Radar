@@ -1,5 +1,5 @@
 ---
-id: SIG-20260606-A06
+id: SIG-20260606-A07
 type: signal_card
 signal_type: product_service
 title: "Anthropic：让Claude成为化学家"
@@ -9,8 +9,8 @@ source_title: "Anthropic：让Claude成为化学家"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T12:35:16.457Z
-updated_at: 2026-06-06T12:35:16.457Z
+created_at: 2026-06-06T17:11:59.343Z
+updated_at: 2026-06-06T17:11:59.343Z
 
 raw_refs: ["R-005"]
 pool_refs: ["P-005"]
@@ -34,11 +34,10 @@ formal_tags:
   function: []
   scenario: []
   customer: []
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-partnership-integration", "evidence-customer-metric"]
+  stage: []
   region: []
   source: ["source-first-party"]
-
 signal_owner: "Anthropic：让Claude成为化学家"
 
 frontend:

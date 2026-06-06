@@ -33,14 +33,13 @@ primary_raw:
 formal_tags:
   track: ["track-ai-coding", "track-ai-infra"]
   function: ["function-engineering"]
-  scenario: ["scenario-coding-agent"]
+  scenario: ["scenario-coding-agent", "scenario-construction-real-estate"]
   customer: ["customer-developer-team"]
-  evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  evidence: ["evidence-product-launch", "evidence-pricing-cost"]
+  stage: []
   region: ["region-china"]
   source: ["source-industry-data"]
   opinion: []
-
 event: "MiniMax 发布 M3，主打编码能力、长上下文和多模态能力。"
 business_meaning: "国产模型继续把竞争重点放在开发者使用场景，企业会比较的不只是榜单分数，还包括上下文长度、调用成本、能接上哪些开发工具、企业能否自己部署。"
 why_selected: "这条信号可以观察中国模型厂商如何争夺工程团队，而不是只看模型发布本身。"

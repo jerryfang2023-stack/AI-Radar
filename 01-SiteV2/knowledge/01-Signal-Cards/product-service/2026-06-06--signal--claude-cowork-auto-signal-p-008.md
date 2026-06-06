@@ -1,5 +1,5 @@
 ---
-id: SIG-20260606-A07
+id: SIG-20260606-A08
 type: signal_card
 signal_type: product_service
 title: "Claude Cowork 产品指南"
@@ -9,8 +9,8 @@ source_title: "Claude Cowork 产品指南"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-06T12:35:16.457Z
-updated_at: 2026-06-06T12:35:16.457Z
+created_at: 2026-06-06T17:11:59.343Z
+updated_at: 2026-06-06T17:11:59.343Z
 
 raw_refs: ["R-008"]
 pool_refs: ["P-008"]
@@ -35,10 +35,9 @@ formal_tags:
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-product-launch"]
-  stage: ["stage-watch"]
+  stage: []
   region: []
   source: ["source-industry-data"]
-
 signal_owner: "Claude Cowork 产品指南"
 
 frontend:
