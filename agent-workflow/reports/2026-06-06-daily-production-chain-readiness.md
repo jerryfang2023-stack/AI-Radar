@@ -1,6 +1,6 @@
 # 2026-06-06 Daily Production Chain Readiness
 
-- generated_at: 2026-06-06T12:40:23.027Z
+- generated_at: 2026-06-06T14:02:39.858Z
 - stage: pre-site
 - status: passed
 - final_active_raw_count: 115

@@ -43,6 +43,10 @@
     return (state.payload?.categories || []).filter((item) => item.category !== "opinion");
   }
 
+  function categoryLabel(category) {
+    return visibleCategories().find((item) => item.category === category)?.label || category;
+  }
+
   function cardsOnDate(date) {
     return state.payload.cards.filter((card) => card.date === date);
   }
@@ -133,10 +137,139 @@
     return [`<option value="all">${safe(label)}</option>`, ...unique.map((value) => `<option value="${safe(value)}">${safe(value)}</option>`)].join("");
   }
 
+  function fallbackRelationshipGraph(date) {
+    const nodes = [];
+    const edges = [];
+    const nodeIds = new Set();
+    function addNode(id, label, type, extra = {}) {
+      if (!id || nodeIds.has(id)) return;
+      nodeIds.add(id);
+      nodes.push({ id, label, type, weight: 1, ...extra });
+    }
+    function addEdge(from, to, label) {
+      if (from && to && from !== to) edges.push({ from, to, label, weight: 1 });
+    }
+    for (const card of cardsOnDate(date).filter((item) => item.category !== "opinion")) {
+      const categoryId = `category:${card.category}`;
+      const subject = card.subject || card.sourceName || card.title;
+      const subjectId = `subject:${subject}`;
+      addNode(categoryId, categoryLabel(card.category), "category", { category: card.category });
+      addNode(subjectId, subject, "subject", { category: card.category });
+      addEdge(categoryId, subjectId, categoryLabel(card.category));
+      for (const tag of (card.displayTags || card.flatTags || []).slice(0, 2)) {
+        const label = tag.label || tag.name || tag.id || tag;
+        const tagId = `signal:${label}`;
+        addNode(tagId, label, "signal");
+        addEdge(subjectId, tagId, "关联");
+      }
+    }
+    return { date, nodes, edges, clusters: state.payload.relationshipDirections || [] };
+  }
+
+  function relationshipGraphForDate(date) {
+    const graph = state.payload.relationshipGraph;
+    if (graph?.date === date) return graph;
+    return fallbackRelationshipGraph(date);
+  }
+
+  function graphColumn(nodes, type) {
+    return nodes.filter((node) => node.type === type).slice(0, type === "subject" ? 10 : 6);
+  }
+
+  function graphLayout(graph) {
+    const columns = [
+      { type: "category", x: 116, nodes: graphColumn(graph.nodes || [], "category") },
+      { type: "subject", x: 475, nodes: graphColumn(graph.nodes || [], "subject") },
+      { type: "signal", x: 835, nodes: graphColumn(graph.nodes || [], "signal") },
+    ];
+    const positions = new Map();
+    for (const column of columns) {
+      const step = 330 / Math.max(column.nodes.length, 1);
+      column.nodes.forEach((node, index) => {
+        positions.set(node.id, {
+          x: column.x,
+          y: 54 + step * index + Math.min(step, 42) / 2,
+          type: node.type,
+        });
+      });
+    }
+    return positions;
+  }
+
+  function renderRelationshipSvg(graph) {
+    const nodes = graph.nodes || [];
+    if (!nodes.length) return "<div class=\"empty-state compact-empty\">当日暂无可绘制关系。</div>";
+    const positions = graphLayout(graph);
+    const edges = (graph.edges || []).filter((edge) => positions.has(edge.from) && positions.has(edge.to));
+    const edgeMarkup = edges.map((edge) => {
+      const from = positions.get(edge.from);
+      const to = positions.get(edge.to);
+      const mid = (from.x + to.x) / 2;
+      return `
+        <path class="graph-edge" d="M ${from.x + 86} ${from.y} C ${mid} ${from.y}, ${mid} ${to.y}, ${to.x - 86} ${to.y}"></path>
+        <text class="graph-edge-label" x="${mid}" y="${(from.y + to.y) / 2 - 4}" text-anchor="middle">${safe(edge.weight > 1 ? edge.weight : "")}</text>
+      `;
+    }).join("");
+    const nodeMarkup = nodes
+      .filter((node) => positions.has(node.id))
+      .map((node) => {
+        const pos = positions.get(node.id);
+        const width = node.type === "subject" ? 230 : 170;
+        const height = 42;
+        return `
+          <g class="graph-node graph-node-${safe(node.type)}" transform="translate(${pos.x - width / 2} ${pos.y - height / 2})">
+            <rect width="${width}" height="${height}" rx="4"></rect>
+            <text x="${width / 2}" y="26" text-anchor="middle">${safe(compactText(node.label, node.type === "subject" ? 22 : 14))}</text>
+            <title>${safe(node.label)}</title>
+          </g>
+        `;
+      }).join("");
+    return `
+      <svg class="relationship-svg" viewBox="0 0 960 420" role="img" aria-label="当日商业信号关系图谱">
+        <g class="graph-columns">
+          <text x="116" y="24" text-anchor="middle">类型</text>
+          <text x="475" y="24" text-anchor="middle">主体</text>
+          <text x="835" y="24" text-anchor="middle">关联</text>
+        </g>
+        ${edgeMarkup}
+        ${nodeMarkup}
+      </svg>
+    `;
+  }
+
   function renderStats() {
     const root = $("[data-relationship-overview]");
     if (!root) return;
     const date = selectedDate();
+    const graphStats = visibleCategories().map((item) => ({
+      ...item,
+      today: countByDateAndCategory(date, item.category),
+      last7: countLast7ByCategory(date, item.category),
+      growth: countLast7ByCategory(date, item.category) - countWindowByCategory(date, item.category, 7, 13),
+    }));
+    const graph = relationshipGraphForDate(date);
+    const total = cardsOnDate(date).filter((item) => item.category !== "opinion").length;
+    root.innerHTML = `
+      <section class="relationship-graph-panel">
+        <div class="relationship-graph-head">
+          <div>
+            <strong>商业信号关系图</strong>
+            <span>${safe(fmtDate(date))} · ${safe(total)} 张</span>
+          </div>
+          <div class="relationship-mini-stats" aria-label="分类统计">
+            ${graphStats.map((item) => `
+              <span title="${safe(growthLabel(item.growth))}">
+                ${safe(item.label)} <b>${safe(item.today)}</b>
+              </span>
+            `).join("")}
+          </div>
+        </div>
+        ${renderRelationshipSvg(graph)}
+      </section>
+    `;
+    const graphSummary = $("[data-day-summary]");
+    if (graphSummary) graphSummary.textContent = fmtDate(date);
+    return;
     const stats = visibleCategories().map((item) => {
       const last7 = countLast7ByCategory(date, item.category);
       const prev7 = countWindowByCategory(date, item.category, 7, 13);
@@ -338,6 +471,25 @@
     const root = $("[data-relationship-links]");
     if (!root) return;
     const links = (state.payload.relationshipDirections || []).slice(0, 6);
+    root.innerHTML = links.length ? `
+      <div class="relationship-cluster-list">
+        ${links.map((item) => `
+          <button class="relationship-cluster" type="button" data-open-relationship="${safe(item.id)}">
+            <span>${safe(item.direction)}</span>
+            <strong>${safe(item.title)}</strong>
+            <em>${(item.relation || []).map((node) => safe(node)).join(" → ")}</em>
+          </button>
+        `).join("")}
+      </div>
+    ` : "<div class=\"empty-state compact-empty\">当日暂无可追溯关系簇。</div>";
+    root.onclick = (event) => {
+      const button = event.target.closest("[data-open-relationship]");
+      const id = button?.dataset.openRelationship;
+      if (!id) return;
+      const item = links.find((relationship) => relationship.id === id);
+      if (item) renderRelationshipDetail(item);
+    };
+    return;
     root.innerHTML = links.length ? links.map((item) => `
       <article class="trend-card" data-relationship-card="${safe(item.id)}">
         <span class="direction-label">${safe(item.direction)}</span>
@@ -360,7 +512,42 @@
     };
   }
 
+  function trendText(item, keys, fallback) {
+    for (const key of keys) {
+      const value = item[key];
+      if (value) return compactText(value, 180);
+    }
+    return fallback;
+  }
+
   function trendAssetCard(item, mode = "candidate") {
+    const status = mode === "history" ? "历史候选" : (mode === "recent-candidate" ? "继续观察" : "趋势候选");
+    const what = trendText(item, ["hypothesis", "title"], "暂无趋势描述。");
+    const where = trendText(item, ["relationSummary", "evidenceMeta"], "暂无可展示的表现位置。");
+    const boundary = trendText(item, ["boundary", "evidenceBoundary"], "暂无证据边界说明。");
+    return `
+      <article class="trend-card trend-asset-card trend-evidence-card" data-trend-asset="${safe(item.id)}" data-trend-mode="${safe(mode)}">
+        <div class="trend-evidence-head">
+          <span class="direction-label">${safe(status)}</span>
+          <strong>${safe(item.title)}</strong>
+        </div>
+        <dl class="trend-evidence-grid">
+          <div>
+            <dt>是什么</dt>
+            <dd>${safe(what)}</dd>
+          </div>
+          <div>
+            <dt>表现在哪里</dt>
+            <dd>${safe(where)}</dd>
+          </div>
+          <div>
+            <dt>证据边界</dt>
+            <dd>${safe(boundary)}</dd>
+          </div>
+        </dl>
+        <button class="detail-link trend-detail-link" type="button" data-open-trend-asset="${safe(item.id)}" data-trend-mode="${safe(mode)}">查看详情</button>
+      </article>
+    `;
     return `
       <article class="trend-card trend-asset-card" data-trend-asset="${safe(item.id)}" data-trend-mode="${safe(mode)}">
         <span class="direction-label">${safe(item.stageLabel || "趋势资产")}</span>
@@ -385,7 +572,7 @@
     const items = today.length ? today : recent.slice(0, 2);
     const note = today.length
       ? ""
-      : `<div class="trend-note">今日暂无新增趋势候选。以下保留最近真实候选，作为继续观察对象。</div>`;
+      : `<div class="trend-note">今日暂无新增趋势候选。以下保留最近候选，用于继续观察证据是否增加。</div>`;
     root.innerHTML = `${note}${items.length
       ? items.map((item) => trendAssetCard(item, today.length ? "candidate" : "recent-candidate")).join("")
       : "<div class=\"empty-state\">暂无趋势候选资产。</div>"}`;
@@ -437,6 +624,39 @@
     root.innerHTML = `
       <h2 class="detail-title">${safe(item.title)}</h2>
       <div class="detail-source-row">
+        <span>关系簇 · ${safe(fmtDate(selectedDate()))}</span>
+        <strong>${safe(item.direction || "商业关系")}</strong>
+      </div>
+      <div class="detail-fact-card">
+        <h3>可见事实</h3>
+        <p>${safe(item.summary || item.detailFocus || "暂无可见事实。")}</p>
+      </div>
+      <div class="detail-block">
+        <h3>关系链</h3>
+        <div class="direction-path direction-path-detail" aria-label="关系链">
+          ${(item.relation || []).map((node, index) => `${index ? "<i>→</i>" : ""}<span>${safe(node)}</span>`).join("")}
+        </div>
+      </div>
+      <div class="detail-block">
+        <h3>支撑材料</h3>
+        ${support.length ? `
+          <div class="relationship-support-list">
+            ${support.map((card) => `
+              <article>
+                <span>${safe(card.categoryLabel)} · ${safe(card.subject || card.sourceName || "未标注主体")}</span>
+                <strong>${safe(card.title)}</strong>
+                ${card.sourceUrl ? `<a href="${safe(card.sourceUrl)}" target="_blank" rel="noreferrer">查看来源</a>` : ""}
+              </article>
+            `).join("")}
+          </div>
+        ` : "<p>暂无支撑材料。</p>"}
+      </div>
+    `;
+    dialog.showModal();
+    return;
+    root.innerHTML = `
+      <h2 class="detail-title">${safe(item.title)}</h2>
+      <div class="detail-source-row">
         <span>关系方向 · ${safe(fmtDate(state.payload.meta.activeDate))}</span>
         <strong>${safe(item.evidenceMeta || "素材来自当日商业信号")}</strong>
       </div>
@@ -476,6 +696,38 @@
     const dialog = $("[data-detail-dialog]");
     if (!root || !dialog) return;
     const signals = item.relatedSignals || [];
+    root.innerHTML = `
+      <h2 class="detail-title">${safe(item.title)}</h2>
+      <div class="detail-source-row">
+        <span>${safe(item.stageLabel || "趋势候选")} · ${safe(fmtDate(item.date))}</span>
+        <strong>${safe(item.evidenceMeta || "来自商业信号卡片")}</strong>
+      </div>
+      <div class="detail-fact-card">
+        <h3>是什么趋势</h3>
+        <p>${safe(item.hypothesis || item.title || "暂无趋势描述。")}</p>
+      </div>
+      <div class="detail-main-grid">
+        <div class="detail-block">
+          <h3>表现在哪里</h3>
+          <p>${safe(item.relationSummary || "暂无可展示的表现位置。")}</p>
+        </div>
+        <div class="detail-block">
+          <h3>证据边界</h3>
+          <p>${safe(item.boundary || item.evidenceBoundary || "暂无证据边界说明。")}</p>
+        </div>
+      </div>
+      <div class="detail-block">
+        <h3>来源卡片</h3>
+        <div class="relationship-support-list">
+          <article>
+            <span>商业信号</span>
+            <strong>${safe(signals.length ? signals.join(" / ") : "暂无关联信号")}</strong>
+          </article>
+        </div>
+      </div>
+    `;
+    dialog.showModal();
+    return;
     root.innerHTML = `
       <h2 class="detail-title">${safe(item.title)}</h2>
       <div class="detail-source-row">

@@ -1,132 +1,109 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-05
+last_updated: 2026-06-06
 use_when:
   - task startup
   - page change
-  - copy change
   - data sync
   - release check
 priority: current
 ---
 
-# Version Ledger｜观澜版本台账
+# Version Ledger - 观澜版本台账
 
-本文件是当前版本基线。它记录“现在应该按哪个版本执行”，不记录过程细节。closeout 只能证明做过什么，不能替代本文件、页面契约、当前 Skill 或自动门禁。
+本文件是当前版本基线。closeout 只能证明做过什么，不能替代本文件、页面契约、当前 Skill 或自动门禁。
 
 ## 当前版本
 
 | 字段 | 当前值 |
 |---|---|
-| 当前版本 | V3.1.1-source-first-frontstage |
-| 版本名 | 数据观察台回源前台门禁版 |
-| 版本层级 | Patch |
-| 发布日期 | 2026-06-05 |
-| 产品主版本 | V3.1 |
-| Git tag | `v3.1.1-source-first-frontstage` |
+| 当前版本 | V3.2.0-intelligence-graph-trend |
+| 版本名 | 数据观察台关系图谱与趋势候选重构版 |
+| 版本层级 | Minor |
+| 发布日期 | 2026-06-06 |
+| 产品主版本 | V3.2 |
+| Git tag | `v3.2.0-intelligence-graph-trend` |
 | 当前入口 | 数据观察台 |
 
-## 内部运营后台版本
+## 当前产品口径
 
-| 字段 | 当前值 |
-|---|---|
-| 运营后台版本 | V1.1.1 |
-| 版本名 | 运营后台 + 数据观察台双向入口版 |
-| 版本范围 | `operations-console.html` / `v3-data-observation.html` / 数据观察台资源与生成脚本 |
-| 基准提交 | `fa9db651 Add operations data observation console` |
-| Git tag | `ops-console-v1.1.1` |
-| 说明 | 仅代表内部运营后台版本，不改变项目主版本 `V3.1.1-source-first-frontstage`。 |
-
-## 栏目版本登记
-
-| 栏目 | 栏目版本 | 状态 | 日期 | 范围 | 合并口径 |
-|---|---|---|---|---|---|
-| Builder 言论观察台 | Builder Observation V1.0 | ready-for-integration | 2026-06-06 | 中文翻译展示；人物-时间线观点目录；同账号同日内容合并；人物按最新发布时间排序；长期访谈观察并入左栏；旧 `02-Opinion-Cards` 依赖删除；前台不展示泛化 `Builder 观点` 标签 | 暂不改变观澜 AI 主版本；等待数据观察台完成后，与统一导航一起合并为 V3.2.0 双栏目情报前台版 |
-
-## 版本分层
-
-| 层级 | 使用条件 | 示例 |
-|---|---|---|
-| V2.2 | 旧四栏目网站主版本 | 今日观察 / 商业信号 / 趋势追踪 / 商业内参 |
-| V2.2.x | V2 页面修复、文案修复、样式修复、门禁补丁 | V2.2.1 前台防回退门禁版 |
-| V3.0 | 产品入口转为 AI 数据中心 / 内容选题中心 | V3.0.0 数据观察台生产版 |
-| V3.1 | V3 数据观察台移动端、标题取值、中文化和文案门禁治理 | V3.1 数据观察台移动端与文案治理版 |
-| V3.1.x | V3.1 页面、样式、关系和趋势模块小修 | 后续小修 |
+- 观澜 AI 当前前台是数据观察台，不再是 V2 四栏目内容站。
+- V3 只保留 Raw / Pool / Card / Relationship Graph / Trend Candidate 链路。
+- 每天前台核心目标：展示最值得关注的 10 条 AI 商业信号，包括产品/服务、融资、案例。
+- 不再输出每日观察、趋势报告、商业内参。
+- 不再把 follow-builders / 观点卡作为商业信号、关系图谱或趋势候选的组成部分。
+- 前台标题优先使用可追溯原文标题；英文详情必须中文化。
 
 ## 当前有效页面
 
 | 页面 | 文件 | 当前口径 |
 |---|---|---|
-| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，基于当日 Raw / Pool / Card / 趋势资产，展示商业信号、关系图谱、趋势候选和历史趋势 |
-| Builder 言论观察台 | `01-SiteV2/site/follow-builders.html` | Builder Observation V1.0 栏目候选页；展示 AI builders 公开言论、中文翻译、人物时间线和长期访谈观察，等待后续并入双栏目导航 |
-| 根入口 | `01-SiteV2/site/index.html` | 只跳转到 V3 数据观察台，不再承载 V2 首页 |
-| 运营控制台 | `01-SiteV2/site/operations-console.html` | 运营后台保留，不属于 V2 前台页面 |
-| 管线仪表盘 | `01-SiteV2/site/pipeline-dashboard.html` | 生产链路仪表盘保留，不属于 V2 前台页面 |
-| 管理入口 | `01-SiteV2/site/admin.html` | 管理入口保留，不属于 V2 前台页面 |
+| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，展示商业信号、关系图谱、趋势候选和历史趋势资产 |
+| 运营后台 | `01-SiteV2/site/operations-console.html` | 内部生产链与运营状态页面，保留 |
+| 管线仪表盘 | `01-SiteV2/site/pipeline-dashboard.html` | 生产链路仪表盘，保留 |
+| 管理入口 | `01-SiteV2/site/admin.html` | 管理入口，保留 |
+| 根入口 | `01-SiteV2/site/index.html` | 跳转到 V3 数据观察台 |
 
-本机保留 V2 前台静态页面存档：`agent-workflow/backups/v2-static-pages-20260604.zip`。该目录为本地忽略目录，只用于追溯，不作为当前前台执行依据。
+本地 V2 前台静态页面存档：`agent-workflow/backups/v2-static-pages-20260604.zip`。该存档只用于追溯，不作为当前执行依据。
 
-## 当前有效口径
+## 当前有效规则
 
-| 类型 | 当前基线 |
+| 类型 | 当前真源 |
 |---|---|
-| 文案口径 | 前台文案规范与文案门禁暂停使用；商业信号标题优先使用可追溯原文标题，英文展示内容必须翻译为中文 |
-| 字体规范 | `context/02-vi-style.md` 和 `docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md` |
-| 页面执行 | `context/06-execution-harness.md` |
-| 质量门禁 | `context/04-qc-rules.md` |
+| V3 生成规则 | `context/07-v3-intelligence-generation-rules.md` |
+| 产品结构 | `context/01-product-map.md` |
+| VI / 字体 | `context/02-vi-style.md` |
 | 页面契约 | `context/frontstage-page-contracts.md` |
-| 前台数据 | `01-SiteV2/site/data/v3-data-observation-desk.json`，当前 activeDate 必须跟最新生产 Card 日期一致，且通过 V3 source-first frontstage gate |
-| 发布闭环 | 自动监测 PR 合并进 `main` 后，GitHub Pages 自动部署完整 `01-SiteV2/site` 前台 |
+| 质量门禁 | `context/04-qc-rules.md` |
+| 执行外壳 | `context/06-execution-harness.md` |
+| 前台数据 | `01-SiteV2/site/data/v3-data-observation-desk.json` |
 
-## 当前禁止再出现
+## 当前禁止回退
 
-- V2.2 / V2.1 / V2.0 公开四栏目网站口径。
-- 旧 hero、旧趋势模块、旧观点卡模块、旧今日观察总结卡、旧四栏目首页。
-- V2 前台页面继续作为当前入口或被新任务继承。
-- `今日判断`、`今天的趋势判断还在观察`、`历史内容已完成` 等旧占位文案。
-- `TRD-WATCH-*` 合成趋势报告 id。
-- `dailySummaryCard`、`legacyPerspectiveCard`、`mountTrendReportLegacy` 等已退休组件。
-- 趋势页用标签重叠、全站列表或历史内容 fallback 补充右侧案例、观点或信号。
-- 前台展示 Raw、Pool、gate、eligible、index_only、入库、同步、threshold_pending、threshold_passed 等内部生产语言。
-- 把标签数量、日期数字或内部状态当作趋势描述本身。
+- 禁止恢复 V2 四栏目页面、旧首页、旧趋势页面、旧商业内参页面。
+- 禁止恢复每日观察 / 趋势报告 / 商业内参输出要求。
+- 禁止在商业信号、关系图谱、趋势候选中显示观点 / follow-builders 分支。
+- 禁止用标签数量、日期数字、内部状态或机械摘要冒充趋势。
+- 禁止在前台显示 Raw、Pool、gate、eligible、index_only、threshold_pending、threshold_passed 等内部生产语言。
+- 禁止关系图谱回退成大量文字卡片堆叠；当前版本必须使用更直观的节点关系图。
+- 禁止趋势模块回退成趋势报告式长文；当前版本只展示趋势候选的“是什么、表现在哪里、证据边界”。
 
-## 当前必须运行的门禁
+## 必须运行的检查
 
-页面 / 文案 / 前台数据改动至少运行：
+页面 / 数据 / 生成规则改动至少运行：
 
 ```powershell
 node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
 node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
-node agent-workflow/tools/assert-v3-source-first-frontstage.mjs
-node agent-workflow/tools/frontstage-regression-gate.mjs
+node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
+node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
 ```
 
 按改动类型补充：
 
-| 改动类型 | 必须补充 |
+| 改动类型 | 补充检查 |
 |---|---|
-| Patch | syntax + frontstage regression |
-| Page Change | syntax + typography + frontstage regression |
-| Copy Change | syntax + frontstage regression |
-| Data Change | v2content + frontstage regression |
+| Page Change | typography + frontstage regression |
+| Data Change | source-first gate + production chain gate |
 | Release Change | regression + release checklist + Git tag |
 
 ## 当前冻结点
 
 | 冻结点 | 页面 | 日期 | 版本 | 不允许回退内容 | 通过门禁 |
 |---|---|---|---|---|---|
-| `V3.1-freeze-data-observation-mobile-copy-20260605` | 数据观察台 | 2026-06-05 | V3.1-data-observation-mobile-copy | 移动端首屏统计区过高、趋势模块手机端双列撑长、`TABLE / CARDS` 与 `Card 工作区` 旧标题、`16 张 Card` 小行、机械商业信号标题、英文标题和英文详情直出、前台文案规范 / 文案门禁污染 | syntax + `frontstage-regression-gate` + mobile smoke passed |
-| `V3.1.1-freeze-source-first-frontstage-20260605` | 数据观察台 / 每日资产链 | 2026-06-05 | V3.1.1-source-first-frontstage | Card、观点、趋势和关系模块不得用旧摘要、标签解释、`business_elements` 或内部字段生成前台内容；日常 GitHub 资产链不得再运行旧 publiccopy 门禁；顶部统计卡不得恢复大块日期统计和长解释文案 | syntax + `assert-v3-source-first-frontstage` + `frontstage-regression-gate` |
-| `V3.0.0-freeze-data-observation-desk-20260604` | 数据观察台 | 2026-06-04 | V3.0.0-data-observation-desk | V2 前台四栏目页面、旧首页、标签数量伪趋势、内部状态语言、Raw / Pool 字段外露 | `frontstage-regression-gate` passed |
+| `V3.2.0-freeze-intelligence-graph-trend-20260606` | 数据观察台 | 2026-06-06 | V3.2.0-intelligence-graph-trend | 观点进入关系图谱；文字堆叠式关系卡；趋势报告式长文；内部状态当趋势；V2 页面逻辑 | syntax + site data build + ops data sync |
+| `V3.1.1-freeze-source-first-frontstage-20260605` | 数据观察台 / 每日资产链 | 2026-06-05 | V3.1.1-source-first-frontstage | Card / 趋势 / 关系模块不得用旧摘要、标签解释或内部字段生成前台内容 | 已升级 |
+| `V3.1-freeze-data-observation-mobile-copy-20260605` | 数据观察台 | 2026-06-05 | V3.1-data-observation-mobile-copy | 移动端首屏统计区过高、旧标题、英文直出、文案门禁污染 | 已升级 |
+| `V3.0.0-freeze-data-observation-desk-20260604` | 数据观察台 | 2026-06-04 | V3.0.0-data-observation-desk | V2 前台四栏目页面、旧首页、标签数量伪趋势、内部状态语言 | 已升级 |
 | `V2.2.1-freeze-frontstage-20260601` | 首页 / 趋势追踪 / 趋势详情 | 2026-06-01 | V2.2.1 | 旧趋势模块、合成趋势、非直接关联内容、V2.1 口径 | 已退役 |
 
 ## 历史版本摘要
 
 | 版本 | 摘要 | 当前状态 |
 |---|---|---|
-| V3.1.1-source-first-frontstage | 数据观察台回源前台门禁；Card / 观点 / 趋势 / 关系前台内容必须回到 Raw / Pool / 原文；日常 GitHub 资产链用 source-first frontstage gate 替代旧 publiccopy；顶部统计卡压缩为轻量数字与增减符号 | 当前执行版本 |
-| V3.1-data-observation-mobile-copy | 数据观察台移动端适配；首屏统计区压缩；趋势模块手机端单列；商业信号标题改为原文优先并中文化；暂停并删除前台文案规范 / 文案门禁；V3 数据包过滤机械模板和英文详情直出 | 已升级 |
-| V3.0.0-data-observation-desk | 前台入口转为数据观察台，保留每日生产资产，删除 V2 前台页面，运营仪表盘保留 | 已升级 |
-| V2.2 | 四栏目网站主版本，确定今日观察 / 商业信号 / 趋势追踪 / 商业内参 | 已退役 |
-| V2.2.1 | 前台防回退门禁版，补齐版本基线、页面契约、趋势直接关联和前台回归门禁 | 已退役 |
+| V3.2.0-intelligence-graph-trend | 数据观察台关系图谱改为节点图；趋势候选改为“是什么、表现在哪里、证据边界”；观点分支不参与商业信号、关系图谱和趋势候选 | 当前执行版本 |
+| V3.1.1-source-first-frontstage | 前台内容回源治理；Card / 趋势 / 关系内容必须回到 Raw / Pool / 原文 | 已升级 |
+| V3.1-data-observation-mobile-copy | 移动端适配、首屏统计压缩、标题原文优先和英文中文化 | 已升级 |
+| V3.0.0-data-observation-desk | 前台入口转为数据观察台，删除 V2 前台页面，保留运营仪表盘 | 已升级 |
+| V2.2.x | 四栏目内容站与防回退治理 | 已退役 |

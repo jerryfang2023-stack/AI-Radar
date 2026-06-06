@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "V3.1.1-source-first-frontstage",
-    "generatedAt": "2026-06-06T12:36:17.941Z",
+    "version": "V3.2.0-intelligence-graph-trend",
+    "generatedAt": "2026-06-06T13:57:15.160Z",
     "activeDate": "2026-06-06",
     "source": "Signal Cards",
     "tagPolicy": "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
@@ -14037,6 +14037,863 @@
       ]
     }
   ],
+  "relationshipGraph": {
+    "date": "2026-06-06",
+    "nodeCount": 23,
+    "edgeCount": 40,
+    "nodes": [
+      {
+        "id": "category:产品",
+        "label": "产品",
+        "type": "category",
+        "weight": 5,
+        "category": "product-service"
+      },
+      {
+        "id": "category:融资",
+        "label": "融资",
+        "type": "category",
+        "weight": 3,
+        "category": "funding"
+      },
+      {
+        "id": "category:案例",
+        "label": "案例",
+        "type": "category",
+        "weight": 2,
+        "category": "case"
+      },
+      {
+        "id": "subject:Airspeed",
+        "label": "Airspeed",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "keyword search / Anysearch"
+      },
+      {
+        "id": "subject:Anthropic：让Claude成为化学家",
+        "label": "Anthropic：让Claude成为化学家",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Anthropic：Research（发表成果 · 网页）"
+      },
+      {
+        "id": "subject:Anthropic销售人员用Claude-Code重建团队工作流",
+        "label": "Anthropic销售人员用Claude Code重建团队工作流",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Claude：Blog（网页）"
+      },
+      {
+        "id": "subject:Claude-Cowork-产品指南",
+        "label": "Claude Cowork 产品指南",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Claude：Blog（网页）"
+      },
+      {
+        "id": "subject:Google-Colab-CLI-发布",
+        "label": "Google Colab CLI 发布",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Google Developers Blog（RSS）"
+      },
+      {
+        "id": "subject:Marktechpost",
+        "label": "Marktechpost",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "MarkTechPost（RSS）"
+      },
+      {
+        "id": "subject:NeoCognition",
+        "label": "NeoCognition",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "keyword search / Anysearch"
+      },
+      {
+        "id": "subject:Nimble",
+        "label": "Nimble",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "keyword search / Anysearch"
+      },
+      {
+        "id": "subject:Research",
+        "label": "Research",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "Google Research：Blog（网页）"
+      },
+      {
+        "id": "subject:Theverge",
+        "label": "Theverge",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "The Verge：AI（RSS）"
+      },
+      {
+        "id": "signal:track-ai-agent",
+        "label": "AI Agent",
+        "type": "signal",
+        "weight": 10,
+        "tag": "track-ai-agent"
+      },
+      {
+        "id": "signal:track-enterprise-workflow",
+        "label": "企业工作流",
+        "type": "signal",
+        "weight": 5,
+        "tag": "track-enterprise-workflow"
+      },
+      {
+        "id": "signal:track-enterprise-data",
+        "label": "企业数据智能",
+        "type": "signal",
+        "weight": 4,
+        "tag": "track-enterprise-data"
+      },
+      {
+        "id": "signal:track-ai-coding",
+        "label": "AI Coding",
+        "type": "signal",
+        "weight": 4,
+        "tag": "track-ai-coding"
+      },
+      {
+        "id": "signal:function-engineering",
+        "label": "工程研发",
+        "type": "signal",
+        "weight": 2,
+        "tag": "function-engineering"
+      },
+      {
+        "id": "signal:evidence-product-launch",
+        "label": "产品发布",
+        "type": "signal",
+        "weight": 1,
+        "tag": "evidence-product-launch"
+      },
+      {
+        "id": "signal:customer-enterprise",
+        "label": "大中型企业",
+        "type": "signal",
+        "weight": 1,
+        "tag": "customer-enterprise"
+      },
+      {
+        "id": "signal:scenario-knowledge-base",
+        "label": "知识库问答",
+        "type": "signal",
+        "weight": 1,
+        "tag": "scenario-knowledge-base"
+      },
+      {
+        "id": "signal:track-ai-infra",
+        "label": "AI 基础设施",
+        "type": "signal",
+        "weight": 1,
+        "tag": "track-ai-infra"
+      },
+      {
+        "id": "signal:track-ai-customer-service",
+        "label": "AI 客服",
+        "type": "signal",
+        "weight": 1,
+        "tag": "track-ai-customer-service"
+      }
+    ],
+    "edges": [
+      {
+        "from": "category:案例",
+        "to": "subject:Marktechpost",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A05"
+        ],
+        "titles": [
+          "Google DeepMind 发布 Gemma 4 QAT 检查点：Q4_0 和新的移动格式降低设备端内存"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Research",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A04"
+        ],
+        "titles": [
+          "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Anthropic：让Claude成为化学家",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A06"
+        ],
+        "titles": [
+          "Anthropic：让Claude成为化学家"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Anthropic销售人员用Claude-Code重建团队工作流",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A08"
+        ],
+        "titles": [
+          "Anthropic销售人员用Claude Code重建团队工作流"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Claude-Cowork-产品指南",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A07"
+        ],
+        "titles": [
+          "Claude Cowork 产品指南"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Google-Colab-CLI-发布",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A09"
+        ],
+        "titles": [
+          "Google Colab CLI 发布"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Theverge",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A10"
+        ],
+        "titles": [
+          "AI笔记本电脑：Nvidia 黄仁勋描绘全新使用方式，微软 Google 相继推出相关产品"
+        ]
+      },
+      {
+        "from": "subject:Marktechpost",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A05"
+        ],
+        "titles": [
+          "Google DeepMind 发布 Gemma 4 QAT 检查点：Q4_0 和新的移动格式降低设备端内存"
+        ]
+      },
+      {
+        "from": "subject:Marktechpost",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A05"
+        ],
+        "titles": [
+          "Google DeepMind 发布 Gemma 4 QAT 检查点：Q4_0 和新的移动格式降低设备端内存"
+        ]
+      },
+      {
+        "from": "subject:Marktechpost",
+        "to": "signal:scenario-knowledge-base",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A05"
+        ],
+        "titles": [
+          "Google DeepMind 发布 Gemma 4 QAT 检查点：Q4_0 和新的移动格式降低设备端内存"
+        ]
+      },
+      {
+        "from": "subject:Research",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A04"
+        ],
+        "titles": [
+          "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架"
+        ]
+      },
+      {
+        "from": "subject:Research",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A04"
+        ],
+        "titles": [
+          "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架"
+        ]
+      },
+      {
+        "from": "subject:Research",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A04"
+        ],
+        "titles": [
+          "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架"
+        ]
+      },
+      {
+        "from": "subject:Airspeed",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A03"
+        ],
+        "titles": [
+          "Airspeed Raises $20M Series A to Build an AI ‘Commercial Brain’ for Revenue Teams – Unite.AI"
+        ]
+      },
+      {
+        "from": "subject:Airspeed",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A03"
+        ],
+        "titles": [
+          "Airspeed Raises $20M Series A to Build an AI ‘Commercial Brain’ for Revenue Teams – Unite.AI"
+        ]
+      },
+      {
+        "from": "subject:Airspeed",
+        "to": "signal:track-ai-customer-service",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A03"
+        ],
+        "titles": [
+          "Airspeed Raises $20M Series A to Build an AI ‘Commercial Brain’ for Revenue Teams – Unite.AI"
+        ]
+      },
+      {
+        "from": "subject:NeoCognition",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A02"
+        ],
+        "titles": [
+          "AI research lab NeoCognition lands $40M seed to build agents that ..."
+        ]
+      },
+      {
+        "from": "subject:NeoCognition",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A02"
+        ],
+        "titles": [
+          "AI research lab NeoCognition lands $40M seed to build agents that ..."
+        ]
+      },
+      {
+        "from": "subject:NeoCognition",
+        "to": "signal:customer-enterprise",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A02"
+        ],
+        "titles": [
+          "AI research lab NeoCognition lands $40M seed to build agents that ..."
+        ]
+      },
+      {
+        "from": "subject:Nimble",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A01"
+        ],
+        "titles": [
+          "Nimble raises $47M to give AI agents access to real-time web data"
+        ]
+      },
+      {
+        "from": "subject:Nimble",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A01"
+        ],
+        "titles": [
+          "Nimble raises $47M to give AI agents access to real-time web data"
+        ]
+      },
+      {
+        "from": "subject:Nimble",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A01"
+        ],
+        "titles": [
+          "Nimble raises $47M to give AI agents access to real-time web data"
+        ]
+      },
+      {
+        "from": "subject:Anthropic：让Claude成为化学家",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A06"
+        ],
+        "titles": [
+          "Anthropic：让Claude成为化学家"
+        ]
+      },
+      {
+        "from": "subject:Anthropic：让Claude成为化学家",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A06"
+        ],
+        "titles": [
+          "Anthropic：让Claude成为化学家"
+        ]
+      },
+      {
+        "from": "subject:Anthropic：让Claude成为化学家",
+        "to": "signal:evidence-product-launch",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A06"
+        ],
+        "titles": [
+          "Anthropic：让Claude成为化学家"
+        ]
+      },
+      {
+        "from": "subject:Anthropic销售人员用Claude-Code重建团队工作流",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A08"
+        ],
+        "titles": [
+          "Anthropic销售人员用Claude Code重建团队工作流"
+        ]
+      },
+      {
+        "from": "subject:Anthropic销售人员用Claude-Code重建团队工作流",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A08"
+        ],
+        "titles": [
+          "Anthropic销售人员用Claude Code重建团队工作流"
+        ]
+      },
+      {
+        "from": "subject:Anthropic销售人员用Claude-Code重建团队工作流",
+        "to": "signal:function-engineering",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A08"
+        ],
+        "titles": [
+          "Anthropic销售人员用Claude Code重建团队工作流"
+        ]
+      },
+      {
+        "from": "subject:Claude-Cowork-产品指南",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A07"
+        ],
+        "titles": [
+          "Claude Cowork 产品指南"
+        ]
+      },
+      {
+        "from": "subject:Claude-Cowork-产品指南",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A07"
+        ],
+        "titles": [
+          "Claude Cowork 产品指南"
+        ]
+      },
+      {
+        "from": "subject:Claude-Cowork-产品指南",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A07"
+        ],
+        "titles": [
+          "Claude Cowork 产品指南"
+        ]
+      },
+      {
+        "from": "subject:Google-Colab-CLI-发布",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A09"
+        ],
+        "titles": [
+          "Google Colab CLI 发布"
+        ]
+      },
+      {
+        "from": "subject:Google-Colab-CLI-发布",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A09"
+        ],
+        "titles": [
+          "Google Colab CLI 发布"
+        ]
+      },
+      {
+        "from": "subject:Google-Colab-CLI-发布",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A09"
+        ],
+        "titles": [
+          "Google Colab CLI 发布"
+        ]
+      },
+      {
+        "from": "subject:Theverge",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A10"
+        ],
+        "titles": [
+          "AI笔记本电脑：Nvidia 黄仁勋描绘全新使用方式，微软 Google 相继推出相关产品"
+        ]
+      },
+      {
+        "from": "subject:Theverge",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A10"
+        ],
+        "titles": [
+          "AI笔记本电脑：Nvidia 黄仁勋描绘全新使用方式，微软 Google 相继推出相关产品"
+        ]
+      },
+      {
+        "from": "subject:Theverge",
+        "to": "signal:function-engineering",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A10"
+        ],
+        "titles": [
+          "AI笔记本电脑：Nvidia 黄仁勋描绘全新使用方式，微软 Google 相继推出相关产品"
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:Airspeed",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A03"
+        ],
+        "titles": [
+          "Airspeed Raises $20M Series A to Build an AI ‘Commercial Brain’ for Revenue Teams – Unite.AI"
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:NeoCognition",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A02"
+        ],
+        "titles": [
+          "AI research lab NeoCognition lands $40M seed to build agents that ..."
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:Nimble",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260606-A01"
+        ],
+        "titles": [
+          "Nimble raises $47M to give AI agents access to real-time web data"
+        ]
+      }
+    ],
+    "clusters": [
+      {
+        "id": "product-launch-vs-adoption",
+        "title": "Anthropic：让Claude成为化学家、Anthropic销售人员用Claude Code重建团队工作流 同日出现在企业 AI 产品发布里",
+        "direction": "产品发布",
+        "relation": [
+          "产品发布",
+          "客户采用",
+          "商业验证"
+        ],
+        "summary": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后... 加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和An... Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望...",
+        "evidenceMeta": "素材：Anthropic：让Claude成为化学家 / Anthropic销售人员用Claude Code重建团队工作流 / Claude Cowork 产品指南",
+        "detailFocus": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后... 加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和An... Anthropic 发布 Claude Cowork，一款运行在 Claude 桌面应用中的知识工作智能体。它可读写本地文件、跨 Slack 和 Google Drive 等应用协作，执行多步骤任务并生成带引用的实际交付物。核心能力包括本地文件访问、子智能体、长时间运行和定时任务。Claude Cowork 区别于对话式 AI 工具，支持用户描述目标与期望...",
+        "todayCount": 5,
+        "last7Count": 39,
+        "last30Count": 65,
+        "subjects": [
+          {
+            "label": "Anthropic：让Claude成为化学家",
+            "count": 1
+          },
+          {
+            "label": "Anthropic销售人员用Claude Code重建团队工作流",
+            "count": 1
+          },
+          {
+            "label": "Claude Cowork 产品指南",
+            "count": 1
+          },
+          {
+            "label": "Google Colab CLI 发布",
+            "count": 1
+          }
+        ],
+        "categories": [
+          {
+            "label": "产品",
+            "count": 5
+          }
+        ],
+        "supportingCards": [
+          {
+            "id": "SIG-20260606-A06",
+            "title": "Anthropic：让Claude成为化学家",
+            "subject": "Anthropic：让Claude成为化学家",
+            "categoryLabel": "产品",
+            "sourceName": "Anthropic：Research（发表成果 · 网页）",
+            "sourceUrl": "https://www.anthropic.com/research/making-claude-a-chemist",
+            "date": "2026-06-06"
+          },
+          {
+            "id": "SIG-20260606-A08",
+            "title": "Anthropic销售人员用Claude Code重建团队工作流",
+            "subject": "Anthropic销售人员用Claude Code重建团队工作流",
+            "categoryLabel": "产品",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering",
+            "date": "2026-06-06"
+          },
+          {
+            "id": "SIG-20260606-A07",
+            "title": "Claude Cowork 产品指南",
+            "subject": "Claude Cowork 产品指南",
+            "categoryLabel": "产品",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://claude.com/blog/the-claude-cowork-product-guide",
+            "date": "2026-06-06"
+          },
+          {
+            "id": "SIG-20260606-A09",
+            "title": "Google Colab CLI 发布",
+            "subject": "Google Colab CLI 发布",
+            "categoryLabel": "产品",
+            "sourceName": "Google Developers Blog（RSS）",
+            "sourceUrl": "https://developers.googleblog.com/introducing-the-google-colab-cli",
+            "date": "2026-06-06"
+          }
+        ]
+      },
+      {
+        "id": "agent-workflow-enterprise",
+        "title": "Research 记录 Agent 进入采购、数据连接和企业流程",
+        "direction": "企业工作流",
+        "relation": [
+          "AI Agent",
+          "企业工作流",
+          "大中型企业"
+        ],
+        "summary": "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架",
+        "evidenceMeta": "素材：Research",
+        "detailFocus": "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架",
+        "todayCount": 1,
+        "last7Count": 20,
+        "last30Count": 45,
+        "subjects": [
+          {
+            "label": "Research",
+            "count": 1
+          }
+        ],
+        "categories": [
+          {
+            "label": "案例",
+            "count": 1
+          }
+        ],
+        "supportingCards": [
+          {
+            "id": "SIG-20260606-A04",
+            "title": "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架",
+            "subject": "Research",
+            "categoryLabel": "案例",
+            "sourceName": "Google Research：Blog（网页）",
+            "sourceUrl": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag",
+            "date": "2026-06-06"
+          }
+        ]
+      },
+      {
+        "id": "sales-procurement-budget",
+        "title": "Anthropic销售人员用Claude Code重建团队工作流 记录 AI 进入采购、合同和收入流程",
+        "direction": "采购 / 销售",
+        "relation": [
+          "企业采购",
+          "销售 / 收入流程",
+          "预算治理"
+        ],
+        "summary": "加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和An...",
+        "evidenceMeta": "素材：Anthropic销售人员用Claude Code重建团队工作流",
+        "detailFocus": "加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和An...",
+        "todayCount": 1,
+        "last7Count": 7,
+        "last30Count": 7,
+        "subjects": [
+          {
+            "label": "Anthropic销售人员用Claude Code重建团队工作流",
+            "count": 1
+          }
+        ],
+        "categories": [
+          {
+            "label": "产品",
+            "count": 1
+          }
+        ],
+        "supportingCards": [
+          {
+            "id": "SIG-20260606-A08",
+            "title": "Anthropic销售人员用Claude Code重建团队工作流",
+            "subject": "Anthropic销售人员用Claude Code重建团队工作流",
+            "categoryLabel": "产品",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering",
+            "date": "2026-06-06"
+          }
+        ]
+      },
+      {
+        "id": "ai-coding-engineering",
+        "title": "Anthropic销售人员用Claude Code重建团队工作流 记录 AI 编程工具链继续迭代",
+        "direction": "工程流程",
+        "relation": [
+          "AI Coding",
+          "工程团队",
+          "开发流程"
+        ],
+        "summary": "加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和An...",
+        "evidenceMeta": "素材：Anthropic销售人员用Claude Code重建团队工作流",
+        "detailFocus": "加入Anthropic前从未写过代码的销售成员Jared Sires，利用Claude Code为销售团队开发自动化工具。他创建了内嵌于Gmail的CLAFTS（Claude Drafts），通过Claude API根据客户邮件草拟回复，每天节省2-3小时。该系统基于约4，300行代码（几乎全由Claude Code编写），从Google Drive和An...",
+        "todayCount": 1,
+        "last7Count": 6,
+        "last30Count": 7,
+        "subjects": [
+          {
+            "label": "Anthropic销售人员用Claude Code重建团队工作流",
+            "count": 1
+          }
+        ],
+        "categories": [
+          {
+            "label": "产品",
+            "count": 1
+          }
+        ],
+        "supportingCards": [
+          {
+            "id": "SIG-20260606-A08",
+            "title": "Anthropic销售人员用Claude Code重建团队工作流",
+            "subject": "Anthropic销售人员用Claude Code重建团队工作流",
+            "categoryLabel": "产品",
+            "sourceName": "Claude：Blog（网页）",
+            "sourceUrl": "https://claude.com/blog/how-anthropic-uses-claude-gtm-engineering",
+            "date": "2026-06-06"
+          }
+        ]
+      }
+    ]
+  },
   "tagAssociations": [
     {
       "object": "track-ai-agent",

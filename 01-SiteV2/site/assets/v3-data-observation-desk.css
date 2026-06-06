@@ -329,6 +329,146 @@ button {
   line-height: 20px;
 }
 
+.relationship-overview {
+  display: block;
+}
+
+.relationship-graph-panel {
+  border: 1px solid rgba(200, 167, 102, .22);
+  background: rgba(255, 255, 255, .78);
+  padding: 12px;
+}
+
+.relationship-graph-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.relationship-graph-head strong {
+  display: block;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: var(--gl-weight-title, 600);
+  line-height: 24px;
+}
+
+.relationship-graph-head span {
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: var(--gl-type-label-size, 12px);
+  line-height: var(--gl-type-label-line, 18px);
+}
+
+.relationship-mini-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.relationship-mini-stats span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 26px;
+  padding: 2px 8px;
+  border: 1px solid rgba(7, 24, 39, .1);
+  background: rgba(255, 253, 248, .9);
+  color: var(--muted);
+}
+
+.relationship-mini-stats b {
+  color: var(--ink);
+  font-family: var(--mono);
+}
+
+.relationship-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+  border: 1px solid var(--line-soft);
+  background: #fff;
+}
+
+.graph-columns text,
+.graph-edge-label {
+  fill: var(--faint);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: var(--gl-weight-medium, 500);
+}
+
+.graph-edge {
+  fill: none;
+  stroke: rgba(200, 167, 102, .38);
+  stroke-width: 1.5;
+}
+
+.graph-node rect {
+  stroke: rgba(7, 24, 39, .12);
+  fill: rgba(255, 253, 248, .94);
+}
+
+.graph-node-category rect {
+  stroke: rgba(200, 167, 102, .42);
+  fill: var(--gold-soft);
+}
+
+.graph-node-subject rect {
+  stroke: rgba(13, 53, 92, .2);
+  fill: rgba(13, 53, 92, .055);
+}
+
+.graph-node text {
+  fill: var(--ink);
+  font-size: 13px;
+  font-weight: var(--gl-weight-title, 600);
+}
+
+.relationship-cluster-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.relationship-cluster {
+  display: grid;
+  gap: 5px;
+  min-height: 104px;
+  padding: 12px;
+  border: 1px solid rgba(200, 167, 102, .2);
+  border-left: 3px solid var(--gold);
+  background: rgba(255, 255, 255, .78);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.relationship-cluster span {
+  color: var(--gold);
+  font-size: var(--gl-type-label-size, 12px);
+  font-weight: var(--gl-weight-label, 600);
+  line-height: var(--gl-type-label-line, 18px);
+}
+
+.relationship-cluster strong {
+  color: var(--ink);
+  font-size: var(--gl-type-caption-size, 14px);
+  font-weight: var(--gl-weight-title, 600);
+  line-height: var(--gl-type-caption-line, 24px);
+}
+
+.relationship-cluster em {
+  color: var(--muted);
+  font-style: normal;
+  font-size: var(--gl-type-label-size, 12px);
+  line-height: var(--gl-type-label-line, 18px);
+}
+
 .stat-card h3 {
   margin: 0 0 6px;
   font-family: var(--serif);
@@ -717,6 +857,45 @@ button {
   line-height: var(--gl-type-label-line, 18px);
 }
 
+.trend-evidence-card {
+  min-height: 0;
+  gap: 10px;
+}
+
+.trend-evidence-head {
+  display: grid;
+  gap: 8px;
+}
+
+.trend-evidence-grid {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.trend-evidence-grid div {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.trend-evidence-grid dt {
+  color: var(--faint);
+  font-size: var(--gl-type-label-size, 12px);
+  font-weight: var(--gl-weight-label, 600);
+  line-height: var(--gl-type-label-line, 18px);
+}
+
+.trend-evidence-grid dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--gl-type-caption-size, 14px);
+  font-weight: var(--gl-weight-body, 400);
+  line-height: var(--gl-type-caption-line, 24px);
+}
+
 .direction-next {
   padding-top: 8px;
   border-top: 1px solid var(--line-soft);
@@ -1016,9 +1195,12 @@ button {
 
 @media (max-width: 1100px) {
   .stats-grid,
-  .relationship-overview,
   .trend-links,
   .candidate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .relationship-cluster-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1074,6 +1256,26 @@ button {
     align-items: start;
     gap: 8px;
     margin-bottom: 8px;
+  }
+
+  .relationship-graph-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .relationship-mini-stats {
+    justify-content: flex-start;
+  }
+
+  .relationship-cluster-list,
+  .candidate-grid,
+  .history-list {
+    grid-template-columns: 1fr;
+  }
+
+  .trend-evidence-grid div {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 
   .workbench-actions {

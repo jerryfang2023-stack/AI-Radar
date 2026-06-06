@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-raw-pool-card-trend-rules
-version: V3.2-rules-rebuild
+version: V3.2.0-intelligence-graph-trend
 last_updated: 2026-06-06
 priority: current
 ---
@@ -190,4 +190,3 @@ The page must explain:
 - what boundary remains.
 
 Do not use internal status labels or generic wording as the trend description.
-

@@ -1427,6 +1427,84 @@ function buildRelationshipDirections(cards, activeDate) {
     .slice(0, 6);
 }
 
+function graphNodeId(kind, value = "") {
+  return `${kind}:${String(value || "").replace(/\s+/gu, "-").slice(0, 80)}`;
+}
+
+function graphTagLabel(tag = "") {
+  return tagDictionary.get(tag) || tag;
+}
+
+function isGraphOpinionLikeTag(tag = "") {
+  return /opinion|builder|follow-builder|frontier-opinion|viewpoint/iu.test(String(tag || ""));
+}
+
+function graphTagsForCard(card) {
+  const groups = ["track", "function", "scenario", "customer", "evidence", "stage"];
+  const tags = groups
+    .flatMap((group) => card.tags?.[group] || [])
+    .filter((tag) => tag && !isGraphOpinionLikeTag(tag));
+  return [...new Set(tags)].slice(0, 3);
+}
+
+function buildRelationshipGraph(cards, activeDate) {
+  const todayCards = cards.filter((card) => card.date === activeDate && card.category !== "opinion");
+  const nodes = new Map();
+  const edges = new Map();
+
+  function addNode(id, label, type, data = {}) {
+    if (!label) return;
+    const current = nodes.get(id) || { id, label, type, weight: 0, ...data };
+    current.weight += data.weight || 1;
+    nodes.set(id, current);
+  }
+
+  function addEdge(from, to, label, card) {
+    if (!from || !to || from === to) return;
+    const id = `${from}->${to}`;
+    const current = edges.get(id) || { from, to, label, weight: 0, cardIds: [], titles: [] };
+    current.weight += 1;
+    if (card?.id && !current.cardIds.includes(card.id)) current.cardIds.push(card.id);
+    if (card?.title && current.titles.length < 3 && !current.titles.includes(card.title)) current.titles.push(card.title);
+    edges.set(id, current);
+  }
+
+  for (const card of todayCards) {
+    const categoryLabel = card.categoryLabel || categoryLabels[card.category] || card.category;
+    const subject = !isWeakSubject(card.subject) ? card.subject : card.sourceName || card.title;
+    const categoryId = graphNodeId("category", categoryLabel);
+    const subjectId = graphNodeId("subject", subject);
+    addNode(categoryId, categoryLabel, "category", { category: card.category });
+    addNode(subjectId, subject, "subject", { category: card.category, sourceName: card.sourceName });
+    addEdge(categoryId, subjectId, categoryLabel, card);
+
+    for (const tag of graphTagsForCard(card)) {
+      const tagId = graphNodeId("signal", tag);
+      addNode(tagId, graphTagLabel(tag), "signal", { tag });
+      addEdge(subjectId, tagId, "关联", card);
+    }
+  }
+
+  const sortedNodes = [...nodes.values()]
+    .sort((a, b) => {
+      const order = { category: 0, subject: 1, signal: 2 };
+      return order[a.type] - order[b.type] || b.weight - a.weight || a.label.localeCompare(b.label);
+    })
+    .slice(0, 28);
+  const allowed = new Set(sortedNodes.map((node) => node.id));
+  return {
+    date: activeDate,
+    nodeCount: sortedNodes.length,
+    edgeCount: edges.size,
+    nodes: sortedNodes,
+    edges: [...edges.values()]
+      .filter((edge) => allowed.has(edge.from) && allowed.has(edge.to))
+      .sort((a, b) => b.weight - a.weight || a.label.localeCompare(b.label))
+      .slice(0, 40),
+    clusters: buildRelationshipDirections(cards, activeDate).slice(0, 4),
+  };
+}
+
 function buildTrendLinks(cards, activeDate, windowDays) {
   const inWindow = windowCards(cards, activeDate, windowDays);
   const groups = new Map();
@@ -1460,7 +1538,7 @@ const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) 
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
-    version: "V3.1.1-source-first-frontstage",
+    version: "V3.2.0-intelligence-graph-trend",
     generatedAt: new Date().toISOString(),
     activeDate,
     source: "Signal Cards",
@@ -1471,6 +1549,7 @@ const payload = {
   stats: buildStats(cards, activeDate),
   cards,
   relationshipDirections: buildRelationshipDirections(cards, activeDate),
+  relationshipGraph: buildRelationshipGraph(cards, activeDate),
   tagAssociations: buildTagAssociations(cards, activeDate),
   trendCandidates: trendAssets.todayCandidates,
   recentTrendCandidates: trendAssets.recentCandidates,
