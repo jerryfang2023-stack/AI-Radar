@@ -649,9 +649,12 @@
   }
 
   function renderStats() {
+    const date = selectedDate();
+    const summary = $("[data-day-summary]");
+    if (summary) summary.textContent = fmtDate(date);
+
     const root = $("[data-relationship-overview]");
     if (!root) return;
-    const date = selectedDate();
     const cards = relationshipFilteredCards();
     const activeCategory = state.relationshipFilters.category;
     const activeTag = state.relationshipFilters.tag;
