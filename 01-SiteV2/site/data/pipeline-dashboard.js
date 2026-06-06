@@ -1,6 +1,6 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "generatedAt": "2026-06-06T05:51:25.049Z",
+    "generatedAt": "2026-06-06T07:19:34.251Z",
     "dateRange": {
       "start": "2026-05-17",
       "end": "2026-06-06"
@@ -804,7 +804,7 @@ window.WaveSightPipelineDashboard = {
     "evidenceBoundary": "- 已保存全文或可见文本（可用于文章事实段落）：`R-003`、`R-006`、`R-005`、`R-004` - 开源与生态补充（更适合说明生态动向，必要时需再补一手采用/定价信息）：`R-007`、`R-012` - 社媒来源处理：X 只作为观点线索，不作为公司动作主证据。"
   },
   "engineQuality": {
-    "updatedAt": "2026-06-06T05:51:25.073Z",
+    "updatedAt": "2026-06-06T07:19:34.280Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [
