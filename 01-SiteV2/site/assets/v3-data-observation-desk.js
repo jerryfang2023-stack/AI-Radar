@@ -11,6 +11,10 @@
       source: "all",
       query: "",
     },
+    relationshipFilters: {
+      category: "all",
+      tag: "all",
+    },
   };
 
   const $ = (selector) => document.querySelector(selector);
@@ -237,10 +241,516 @@
     `;
   }
 
+  function cardTagItems(card) {
+    const tags = card.displayTags?.length
+      ? card.displayTags
+      : (card.flatTags || []).map((tag) => ({ id: tag, label: tag }));
+    return tags.filter((tag) => tag?.id || tag?.label || tag?.name);
+  }
+
+  function cardTagLabel(tag) {
+    return tag?.label || tag?.name || tag?.id || tag;
+  }
+
+  function isRelationshipVariableTag(tag) {
+    const id = String(tag?.id || tag || "");
+    const excludedIds = new Set(["scenario-sales-briefing", "scenario-frontier-opinion", "customer-developer-team"]);
+    if (excludedIds.has(id)) return false;
+    return id.startsWith("track-") || id.startsWith("scenario-") || id.startsWith("customer-");
+  }
+
+  function relationshipVariableTags(card, limit = 6) {
+    return cardTagItems(card).filter(isRelationshipVariableTag).slice(0, limit);
+  }
+
+  function relationshipWindowCards() {
+    const activeDate = selectedDate();
+    return state.payload.cards
+      .filter((card) => card.category !== "opinion")
+      .filter((card) => {
+        const diff = daysBetween(activeDate, card.date);
+        return diff >= 0 && diff <= 29;
+      })
+      .sort((a, b) => b.date.localeCompare(a.date));
+  }
+
+  function relationshipFilteredCards() {
+    const filters = state.relationshipFilters;
+    return relationshipWindowCards().filter((card) => {
+      if (filters.category !== "all" && card.category !== filters.category) return false;
+      if (filters.tag !== "all" && !relationshipVariableTags(card, 8).some((tag) => tag.id === filters.tag || cardTagLabel(tag) === filters.tag)) return false;
+      return true;
+    });
+  }
+
+  function relationshipGraphCards(cards) {
+    const today = cards.filter((card) => card.date === selectedDate());
+    return (today.length ? today : cards).slice(0, 14);
+  }
+
+  function relationshipTagOptions() {
+    const counts = new Map();
+    for (const card of relationshipWindowCards()) {
+      for (const tag of relationshipVariableTags(card, 6)) {
+        const id = tag.id || cardTagLabel(tag);
+        if (!id) continue;
+        const current = counts.get(id) || { id, label: cardTagLabel(tag), count: 0 };
+        current.count += 1;
+        counts.set(id, current);
+      }
+    }
+    return [...counts.values()].sort((a, b) => b.count - a.count || a.label.localeCompare(b.label)).slice(0, 8);
+  }
+
+  function relationshipNodeKind(card) {
+    if (card.category === "funding") return "company";
+    if (card.category === "case") return "customer";
+    return "product";
+  }
+
+  function relationshipNodeKindLabel(kind) {
+    const labels = {
+      focus: "FOCUS VARIABLE",
+      action: "BUSINESS ACTION",
+      company: "COMPANY / ACTOR",
+      product: "PRODUCT / SERVICE",
+      customer: "CUSTOMER / INDUSTRY",
+      tag: "COMMERCIAL VARIABLE",
+    };
+    return labels[kind] || kind.toUpperCase();
+  }
+
+  function relationshipAction(card) {
+    if (card.category === "funding") return { id: "action:funding", label: "融资" };
+    if (card.category === "case") return { id: "action:case", label: "采用 / 部署" };
+    return { id: "action:product", label: "发布 / 推出" };
+  }
+
+  function relationshipTopTags(cards, limit = 6) {
+    return relationshipTagCards(cards).slice(0, limit).map((row) => ({
+      id: `tag:${row.id}`,
+      label: row.label,
+      cardCount: row.cards.length,
+      categoryCount: row.categories.size,
+    }));
+  }
+
+  function buildRelationshipModel(cards) {
+    const nodes = new Map();
+    const edges = new Map();
+    const center = { x: 50, y: 50 };
+    function addNode(id, label, kind, x, y, meta = "") {
+      if (!id || nodes.has(id)) return;
+      nodes.set(id, { id, label, kind, x, y, meta });
+    }
+    function addEdge(from, to, cardId) {
+      if (!from || !to || from === to) return;
+      const id = `${from}->${to}`;
+      const edge = edges.get(id) || { from, to, weight: 0, cardIds: new Set() };
+      edge.weight += 1;
+      if (cardId) edge.cardIds.add(cardId);
+      edges.set(id, edge);
+    }
+    function orbitPoint(angle, radiusX, radiusY) {
+      const radians = angle * Math.PI / 180;
+      return {
+        x: center.x + Math.cos(radians) * radiusX,
+        y: center.y + Math.sin(radians) * radiusY,
+      };
+    }
+
+    const topTags = relationshipTopTags(cards, 7);
+    const selectedTag = state.relationshipFilters.tag;
+    const isAllTags = selectedTag === "all";
+    const selectedFocusTag = topTags.find((tag) => tag.id === `tag:${selectedTag}`)
+      || topTags.find((tag) => tag.id === selectedTag);
+    const focusTag = isAllTags
+      ? { id: "focus:all-tags", label: "全部变量", cardCount: cards.length, isAllTags: true }
+      : selectedFocusTag;
+    if (focusTag) addNode(focusTag.id, focusTag.label, "focus", center.x, center.y, focusTag.isAllTags ? `${topTags.length} Tags` : `${focusTag.cardCount} Cards`);
+    const topTagIds = new Set(topTags.map((tag) => tag.id));
+    const tagPoints = [
+      { x: 80, y: 22 },
+      { x: 88, y: 44 },
+      { x: 82, y: 66 },
+      { x: 72, y: 84 },
+      { x: 90, y: 82 },
+    ];
+    topTags.filter((tag) => tag.id !== focusTag?.id).slice(0, isAllTags ? 6 : 5).forEach((tag, index) => {
+      const point = tagPoints[index] || orbitPoint(index * 58, 36, 31);
+      addNode(tag.id, tag.label, "tag", point.x, point.y, `${tag.cardCount} Cards`);
+    });
+
+    const actionRows = [
+      { id: "action:funding", label: "融资", y: 26 },
+      { id: "action:product", label: "发布 / 推出", y: 50 },
+      { id: "action:case", label: "采用 / 部署", y: 74 },
+    ];
+    const activeActionIds = new Set(cards.map((card) => relationshipAction(card).id));
+    actionRows.filter((action) => activeActionIds.has(action.id)).forEach((action, index) => {
+      const actionAngles = [-88, 26, 142];
+      const point = orbitPoint(actionAngles[index] || 0, 18, 15);
+      addNode(action.id, action.label, "action", point.x, point.y);
+    });
+
+    const subjectCounts = new Map();
+    cards.forEach((card) => {
+      const subject = card.subject || card.sourceName || card.title;
+      const subjectId = `subject:${subject}`;
+      const subjectRow = subjectCounts.get(subjectId) || {
+        id: subjectId,
+        label: subject,
+        kind: relationshipNodeKind(card),
+        count: 0,
+        categories: new Set(),
+      };
+      subjectRow.count += 1;
+      subjectRow.categories.add(card.category);
+      subjectCounts.set(subjectId, subjectRow);
+    });
+
+    const subjects = [...subjectCounts.values()]
+      .sort((a, b) => b.count - a.count || b.categories.size - a.categories.size)
+      .slice(0, 7);
+    const subjectPoints = [
+      { x: 17, y: 22 },
+      { x: 36, y: 18 },
+      { x: 17, y: 47 },
+      { x: 26, y: 70 },
+      { x: 42, y: 84 },
+      { x: 63, y: 18 },
+      { x: 15, y: 82 },
+    ];
+    subjects.forEach((subject, index) => {
+      const point = subjectPoints[index] || orbitPoint(index * 38, 35, 34);
+      addNode(subject.id, subject.label, subject.kind, point.x, point.y, `${subject.count} Card${subject.count > 1 ? "s" : ""}`);
+    });
+    const subjectIds = new Set(subjects.map((subject) => subject.id));
+
+    cards.forEach((card) => {
+      const subject = card.subject || card.sourceName || card.title;
+      const subjectId = `subject:${subject}`;
+      if (!subjectIds.has(subjectId)) return;
+      const action = relationshipAction(card);
+      addEdge(subjectId, action.id, card.id);
+      if (focusTag && (focusTag.isAllTags || relationshipVariableTags(card, 8).some((tag) => `tag:${tag.id || cardTagLabel(tag)}` === focusTag.id))) {
+        addEdge(action.id, focusTag.id, card.id);
+      }
+      for (const tag of relationshipVariableTags(card, 3)) {
+        const label = cardTagLabel(tag);
+        const tagId = `tag:${tag.id || label}`;
+        if (topTagIds.has(tagId) && tagId !== focusTag?.id) addEdge(action.id, tagId, card.id);
+      }
+    });
+
+    const connected = new Set();
+    for (const edge of edges.values()) {
+      connected.add(edge.from);
+      connected.add(edge.to);
+    }
+    if (focusTag) connected.add(focusTag.id);
+    return {
+      nodes: [...nodes.values()].filter((node) => connected.has(node.id)),
+      edges: [...edges.values()].map((edge) => ({ ...edge, cardIds: [...edge.cardIds] })),
+    };
+  }
+
+  function renderRelationshipNetwork(cards) {
+    const model = buildRelationshipModel(relationshipGraphCards(cards));
+    if (!model.nodes.length) return "<div class=\"empty-state compact-empty\">当前筛选下暂无可绘制关系。</div>";
+    const lines = model.edges.map((edge) => {
+      const from = model.nodes.find((node) => node.id === edge.from);
+      const to = model.nodes.find((node) => node.id === edge.to);
+      if (!from || !to) return "";
+      const strength = Math.min(edge.weight, 5);
+      const dx = to.x - from.x;
+      const dy = to.y - from.y;
+      const length = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
+      const bend = Math.min(length * .16, 5);
+      const c1 = {
+        x: from.x + dx * .34 - dy / length * bend,
+        y: from.y + dy * .34 + dx / length * bend,
+      };
+      const c2 = {
+        x: from.x + dx * .66 - dy / length * bend,
+        y: from.y + dy * .66 + dx / length * bend,
+      };
+      return `
+        <path class="relation-workbench-line ${edge.weight > 1 ? "is-strong" : ""}"
+          data-weight="${safe(strength)}"
+          d="M ${from.x * 10} ${from.y * 6} C ${c1.x * 10} ${c1.y * 6}, ${c2.x * 10} ${c2.y * 6}, ${to.x * 10} ${to.y * 6}">
+        </path>
+      `;
+    }).join("");
+    const nodes = model.nodes.map((node) => `
+      <div class="relation-workbench-node" data-kind="${safe(node.kind)}" style="left:${safe(node.x)}%;top:${safe(node.y)}%">
+        <strong>${safe(compactText(node.label, node.kind === "evidence" ? 16 : 24))}</strong>
+        ${node.meta ? `<em>${safe(node.meta)}</em>` : ""}
+        <span>${safe(relationshipNodeKindLabel(node.kind))}</span>
+      </div>
+    `).join("");
+    return `
+      <div class="relation-network-canvas">
+        <div class="relation-network-legend">
+          <span>主体</span>
+          <span>商业动作</span>
+          <span>关键变量</span>
+        </div>
+        <svg class="relation-network-lines" viewBox="0 0 1000 600" aria-hidden="true">${lines}</svg>
+        <div class="relation-network-nodes">${nodes}</div>
+      </div>
+    `;
+  }
+
+  function renderRelationshipSignalList(cards) {
+    const visible = cards.slice(0, 12);
+    if (!visible.length) return "<div class=\"empty-state compact-empty\">当前筛选下暂无 Card 证据。</div>";
+    return visible.map((card) => `
+      <article class="relation-signal-card">
+        <div class="relation-signal-meta">
+          <span class="type-pill" data-type="${safe(card.category)}">${safe(card.categoryLabel || categoryLabel(card.category))}</span>
+          <span class="date-pill">${safe(card.date)}</span>
+          <span class="evidence-pill">${safe(card.id)}</span>
+        </div>
+        <h3>${safe(card.title)}</h3>
+        <p>${safe(factText(card))}</p>
+        <div class="inline-tags">${tagPills(relationshipVariableTags(card, 4), 4)}</div>
+        <button class="detail-link relation-detail-link" type="button" data-open-detail="${safe(card.id)}">查看 Card 详情</button>
+      </article>
+    `).join("");
+  }
+
+  function renderRelationshipTimeline(cards) {
+    if (!cards.length) return "<div class=\"empty-state compact-empty\">当前筛选下暂无时间记录。</div>";
+    const groups = cards.slice(0, 18).reduce((acc, card) => {
+      acc[card.date] = acc[card.date] || [];
+      acc[card.date].push(card);
+      return acc;
+    }, {});
+    return Object.entries(groups).sort(([a], [b]) => b.localeCompare(a)).map(([date, items]) => `
+      <div class="relation-timeline-row">
+        <div class="relation-timeline-date">${safe(date)}</div>
+        <div class="relation-timeline-items">
+          ${items.map((item) => `
+            <div class="relation-timeline-item">
+              <strong>${safe(item.title)}</strong>
+              <span>${safe(item.categoryLabel || categoryLabel(item.category))} · ${safe(item.id)}</span>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `).join("");
+  }
+
+  function relationshipTagCards(cards) {
+    const tags = new Map();
+    for (const card of cards) {
+      for (const tag of relationshipVariableTags(card, 6)) {
+        const id = tag.id || cardTagLabel(tag);
+        if (!id) continue;
+        const row = tags.get(id) || {
+          id,
+          label: cardTagLabel(tag),
+          cards: [],
+          categories: new Set(),
+          latest: card.date,
+        };
+        row.cards.push(card);
+        row.categories.add(card.category);
+        if (card.date > row.latest) row.latest = card.date;
+        tags.set(id, row);
+      }
+    }
+    return [...tags.values()].sort((a, b) => b.cards.length - a.cards.length || b.categories.size - a.categories.size).slice(0, 8);
+  }
+
+  function renderRelationshipTagAggregation(cards) {
+    const rows = relationshipTagCards(cards);
+    if (!rows.length) return "<div class=\"empty-state compact-empty\">当前筛选下暂无 tag 聚合。</div>";
+    const maxCount = Math.max(...rows.map((row) => row.cards.length), 1);
+    return rows.map((row) => {
+      const counts = visibleCategories().map((category) => ({
+        label: category.label,
+        count: row.cards.filter((card) => card.category === category.category).length,
+      }));
+      const totalWidth = Math.max(8, Math.round(row.cards.length / maxCount * 100));
+      const typeCounts = counts.map((item) => `
+        <span class="${item.count ? "" : "is-empty"}">
+          <b>${safe(item.label)}</b>
+          <em>${safe(item.count)}</em>
+        </span>
+      `).join("");
+      return `
+        <article class="relation-tag-card">
+          <div class="relation-tag-head">
+            <strong>${safe(row.label)}</strong>
+            <em>${safe(row.cards.length)} cards · ${safe(row.categories.size)} types</em>
+          </div>
+          <div class="relation-type-bars" aria-label="类型构成">
+            <span class="relation-total-fill" style="width:${safe(totalWidth)}%"></span>
+            ${typeCounts}
+          </div>
+        </article>
+      `;
+    }).join("");
+  }
+
+  function relationshipCandidates(cards) {
+    const fromTags = relationshipTagCards(cards)
+      .filter((row) => row.cards.length >= 2)
+      .map((row) => ({
+        id: `tag:${row.id}`,
+        title: `${row.label} 出现多条商业信号`,
+        summary: `当前 30 日窗口内，${row.cards.length} 张 Card 围绕该变量聚集，覆盖 ${row.categories.size} 类信号。`,
+        boundary: row.categories.size >= 2 ? "已出现多类型证据，仍需继续观察客户、产品或资金动作是否延续。" : "目前主要来自同一类型 Card，不能直接形成趋势结论。",
+        evidenceCount: row.cards.length,
+        categoryCount: row.categories.size,
+      }));
+    const visibleIds = new Set(cards.map((card) => card.id));
+    const fromDirections = (state.payload.relationshipDirections || [])
+      .map((item) => {
+        const supporting = (item.supportingCards || []).filter((card) => visibleIds.has(card.id));
+        return {
+          ...item,
+          supportingCards: supporting,
+          evidenceCount: supporting.length,
+          categoryCount: new Set(supporting.map((card) => card.categoryLabel || card.category)).size,
+        };
+      })
+      .filter((item) => item.evidenceCount >= 2)
+      .map((item) => ({
+        id: item.id,
+        title: item.title || item.direction,
+        summary: item.summary || item.evidenceMeta || "保留为关系方向候选。",
+        boundary: item.categoryCount >= 2 ? "由多类型 Card 支撑，可继续观察变量是否扩散。" : "当前仍偏同一类型证据，不作为正式趋势结论。",
+        evidenceCount: item.evidenceCount,
+        categoryCount: item.categoryCount,
+        source: "direction",
+      }));
+    return [...fromTags, ...fromDirections]
+      .sort((a, b) => b.categoryCount - a.categoryCount || b.evidenceCount - a.evidenceCount)
+      .slice(0, 4);
+  }
+
+  function renderRelationshipCandidates(cards) {
+    const candidates = relationshipCandidates(cards);
+    if (!candidates.length) return "<div class=\"empty-state compact-empty\">当前筛选下暂无多张 Card 支撑的迹象候选。</div>";
+    return candidates.map((item) => `
+      <article class="relation-candidate-card ${item.categoryCount < 2 ? "is-quiet" : ""}" ${item.source === "direction" ? `data-open-relationship="${safe(item.id)}"` : ""}>
+        <div class="relation-signal-meta">
+          <span class="evidence-pill">${safe(item.evidenceCount)} evidence</span>
+          <span class="date-pill">${safe(item.categoryCount)} types</span>
+        </div>
+        <h3>${safe(compactText(item.title, 58))}</h3>
+        <p>${safe(compactText(item.summary, 150))}</p>
+        <p>${safe(item.boundary)}</p>
+      </article>
+    `).join("");
+  }
+
   function renderStats() {
     const root = $("[data-relationship-overview]");
     if (!root) return;
     const date = selectedDate();
+    const cards = relationshipFilteredCards();
+    const activeCategory = state.relationshipFilters.category;
+    const activeTag = state.relationshipFilters.tag;
+    const typeButtons = [{ category: "all", label: "全部" }, ...visibleCategories()].map((item) => `
+      <button type="button" class="relation-filter-button ${activeCategory === item.category ? "is-active" : ""}" data-rel-category="${safe(item.category)}">${safe(item.label)}</button>
+    `).join("");
+    const tagButtons = [
+      `<button type="button" class="relation-tag-button ${activeTag === "all" ? "is-active" : ""}" data-rel-tag="all">all tags</button>`,
+      ...relationshipTagOptions().map((tag) => `
+        <button type="button" class="relation-tag-button ${activeTag === tag.id ? "is-active" : ""}" data-rel-tag="${safe(tag.id)}">${safe(tag.label)}</button>
+      `),
+    ].join("");
+    root.innerHTML = `
+      <section class="relationship-workbench">
+        <div class="relationship-control-strip" aria-label="关系图谱筛选">
+          <div class="relationship-type-filters">${typeButtons}</div>
+          <div class="relationship-tag-filters">${tagButtons}</div>
+        </div>
+        <div class="relationship-workbench-grid">
+          <div class="relation-network-panel">
+            <div class="relationship-panel-head">
+              <div>
+                <p class="desk-kicker">Network</p>
+                <h3>关系网络</h3>
+              </div>
+              <span>${safe(fmtDate(date))} · 30 日窗口</span>
+            </div>
+            ${renderRelationshipNetwork(cards)}
+          </div>
+          <aside class="relation-evidence-panel">
+            <div class="relationship-panel-head">
+              <div>
+                <p class="desk-kicker">Evidence Cards</p>
+                <h3>证据列表</h3>
+              </div>
+              <span>${safe(cards.length)} cards</span>
+            </div>
+            <div class="relation-signal-list">${renderRelationshipSignalList(cards)}</div>
+          </aside>
+        </div>
+        <div class="relationship-insight-grid">
+          <div class="relationship-insight-panel">
+            <div class="relationship-panel-head">
+              <div>
+                <p class="desk-kicker">Timeline</p>
+                <h3>时间聚集</h3>
+              </div>
+            </div>
+            <div class="relation-timeline">${renderRelationshipTimeline(cards)}</div>
+          </div>
+          <div class="relationship-insight-panel">
+            <div class="relationship-panel-head">
+              <div>
+                <p class="desk-kicker">Tags</p>
+                <h3>Tag 聚合</h3>
+              </div>
+            </div>
+            <div class="relation-tag-list">${renderRelationshipTagAggregation(cards)}</div>
+          </div>
+          <div class="relationship-insight-panel">
+            <div class="relationship-panel-head">
+              <div>
+                <p class="desk-kicker">Signal Candidates</p>
+                <h3>迹象候选</h3>
+              </div>
+            </div>
+            <div class="relation-candidate-list">${renderRelationshipCandidates(cards)}</div>
+          </div>
+        </div>
+      </section>
+    `;
+    root.onclick = (event) => {
+      const typeButton = event.target.closest("[data-rel-category]");
+      if (typeButton) {
+        state.relationshipFilters.category = typeButton.dataset.relCategory || "all";
+        renderAll();
+        return;
+      }
+      const tagButton = event.target.closest("[data-rel-tag]");
+      if (tagButton) {
+        state.relationshipFilters.tag = tagButton.dataset.relTag || "all";
+        renderAll();
+        return;
+      }
+      const detailButton = event.target.closest("[data-open-detail]");
+      if (detailButton) {
+        const card = state.payload.cards.find((item) => item.id === detailButton.dataset.openDetail);
+        if (card) renderDetail(card);
+        return;
+      }
+      const relationshipCard = event.target.closest("[data-open-relationship]");
+      if (relationshipCard) {
+        const item = (state.payload.relationshipDirections || []).find((relationship) => relationship.id === relationshipCard.dataset.openRelationship);
+        if (item) renderRelationshipDetail(item);
+      }
+    };
+    const graphSummaryPanel = $("[data-day-summary]");
+    if (graphSummaryPanel) graphSummaryPanel.textContent = fmtDate(date);
+    return;
     const graphStats = visibleCategories().map((item) => ({
       ...item,
       today: countByDateAndCategory(date, item.category),
@@ -470,6 +980,9 @@
   function renderRelationshipLinks() {
     const root = $("[data-relationship-links]");
     if (!root) return;
+    root.innerHTML = "";
+    root.onclick = null;
+    return;
     const links = (state.payload.relationshipDirections || []).slice(0, 6);
     root.innerHTML = links.length ? `
       <div class="relationship-cluster-list">
