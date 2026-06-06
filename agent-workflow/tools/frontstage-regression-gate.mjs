@@ -28,7 +28,6 @@ const publicFrontstageTextFiles = [
 const retiredFrontstagePages = [
   "01-SiteV2/site/daily.html",
   "01-SiteV2/site/daily-detail.html",
-  "01-SiteV2/site/daily-brief.html",
   "01-SiteV2/site/signals.html",
   "01-SiteV2/site/signal-detail.html",
   "01-SiteV2/site/trend-tracking.html",
