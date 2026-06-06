@@ -662,11 +662,13 @@ jobs:
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
             require_success "Open or update PR" "${{ steps.pr.outcome }}"
-            require_success "Auto-merge PR" "${{ steps.auto-merge.outcome }}"
             if [ "${{ steps.pr.outputs.status }}" = "manual_required" ]; then
               echo "Full daily assets and frontstage gates passed, and the automation branch was pushed."
               echo "Manual PR is required because repository settings block GitHub Actions PR creation:"
               echo "${{ steps.pr.outputs.manual_url }}"
+              # Auto-merge is expected to be skipped when repo settings block it
+            else
+              require_success "Auto-merge PR" "${{ steps.auto-merge.outcome }}"
             fi
           fi
 
