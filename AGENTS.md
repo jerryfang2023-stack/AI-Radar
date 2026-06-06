@@ -34,7 +34,7 @@ For every non-trivial task:
 5. fix failures caused by the change;
 6. report what changed, what was tested, and what risk remains.
 
-# 观澜 AI｜WaveSight AI 当前入口
+# WaveSight AI Current Entry
 
 This file is the default routing entry. It is a router, not a full wiki.
 
@@ -42,14 +42,15 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: V3 data observation desk.
-- Current frontstage: `01-SiteV2/site/v3-data-observation.html`.
+- Current stage: V3.3 unified intelligence frontstage.
+- Current frontstage: `01-SiteV2/site/v3-data-observation.html` and `01-SiteV2/site/follow-builders.html`.
+- Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
 - V2 website pages and old four-column output rules are retired.
 
 ## Current Product Goal
 
-V3 is an AI business intelligence asset system.
+V3.3 is an AI business intelligence asset system.
 
 Daily production should preserve and display the 10 most important AI business signals across:
 
@@ -57,24 +58,37 @@ Daily production should preserve and display the 10 most important AI business s
 - funding;
 - case / vertical deployment.
 
-The system should then use those Cards to build:
+The system should then use those business-signal Cards to build:
 
 - knowledge-base assets;
 - relationship graph inputs;
 - trend candidates.
 
+First-line viewpoints are a separate builders column. They are useful for reading public operator / builder viewpoints, but they are not business-signal facts.
+
+## Current Frontstage Navigation
+
+| Entry | File | Role |
+|---|---|---|
+| Business Signals / 商业信号 | `01-SiteV2/site/v3-data-observation.html` | daily Cards, relationship graph, trend candidates |
+| First-Line Viewpoints / 一线观点 | `01-SiteV2/site/follow-builders.html` | independent builders viewpoints |
+| Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | operations backend |
+
+Business Signals and First-Line Viewpoints must share the same topbar structure and height.
+
 ## Stopped Outputs
 
-The following are not current V3 required outputs and must not be used as execution sources:
+The following are not current V3.3 required outputs and must not be used as execution sources:
 
-- Daily Observation;
+- daily observation;
 - business brief;
 - trend report;
-- follow-builders / opinion lane;
 - publiccopy / cardcopy gates;
 - Guanlan copy-style gate.
 
-If an old rule conflicts with V3, delete or rebuild it instead of preserving compatibility.
+Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
+
+If an old rule conflicts with V3.3, delete or rebuild it instead of preserving compatibility.
 
 ## Current Context
 
@@ -83,12 +97,13 @@ If an old rule conflicts with V3, delete or rebuild it instead of preserving com
 | `context/00-current-state.md` | current project state |
 | `context/version-ledger.md` | version baseline and freeze points |
 | `context/frontstage-page-contracts.md` | frontstage page contracts |
-| `context/01-product-map.md` | V3 product structure and data flow |
+| `context/01-product-map.md` | V3.3 product structure and data flow |
 | `context/02-vi-style.md` | VI, typography, visual rules |
 | `context/04-qc-rules.md` | general quality gates |
 | `context/05-daily-monitoring.md` | V3 Raw / Pool monitoring context |
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
+| `context/08-v3-3-automation.md` | V3.3 GitHub / site / Obsidian sync automation loop |
 | `context/context-index.md` | context router |
 
 ## Current Task Routes
@@ -123,6 +138,7 @@ Rules:
 - Relationship graph uses Card nodes and source-backed edges.
 - Trend candidate is not trend report.
 - A single article, opinion, or funding event cannot form a trend.
+- Builders viewpoints must not be used as evidence.
 
 ### UI / Page Work
 

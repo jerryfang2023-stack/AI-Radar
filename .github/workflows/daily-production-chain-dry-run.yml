@@ -86,7 +86,7 @@ jobs:
             echo "4. Regenerate 10 business-signal Card assets in the runner workspace only."
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Run trend candidate / no-decision shell."
-            echo "7. Sync V3 site and operations data if all gates pass, still artifact-only."
+            echo "7. Sync V3.3 site data, builders page data and operations data if all gates pass, still artifact-only."
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-production-chain-dry-run.md"
 
       - name: Syntax checks
@@ -100,6 +100,7 @@ jobs:
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/run-trend-candidate-decision.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
+          node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
 
       - name: Run Daily Monitor with QC
@@ -192,6 +193,7 @@ jobs:
           set -o pipefail
           {
             node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
+            node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
             node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           } 2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-site-sync.log"
 
@@ -220,6 +222,10 @@ jobs:
             01-SiteV2/knowledge/03-Asset-Candidates/**/${{ steps.run-date.outputs.date }}--*.md
             01-SiteV2/site/data/site-content.json
             01-SiteV2/site/data/site-content.js
+            01-SiteV2/site/data/v3-data-observation-desk.json
+            01-SiteV2/site/data/follow-builders-daily.json
+            01-SiteV2/site/data/pipeline-dashboard.json
+            01-SiteV2/site/data/pipeline-dashboard.js
 
       - name: Full-chain dry-run result
         if: always()

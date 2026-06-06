@@ -5,14 +5,20 @@ last_updated: 2026-06-06
 priority: current
 ---
 
-# V3 Execution Harness
+# V3.3 Execution Harness
 
-Use this harness for V3 monitoring, Pool routing, Card generation, relationship graph, trend-candidate analysis, and site data sync.
+Use this harness for monitoring, Pool routing, Card generation, first-line viewpoints data, relationship graph, trend-candidate analysis, and site data sync.
 
 Current rule source:
 
 ```text
 context/07-v3-intelligence-generation-rules.md
+```
+
+Automation source:
+
+```text
+context/08-v3-3-automation.md
 ```
 
 ## Active Flows
@@ -48,7 +54,7 @@ Reads:
 Produces:
 
 - `signal_card` assets;
-- frontstage manifest;
+- business-signal frontstage manifest;
 - relationship graph inputs;
 - trend-candidate inputs.
 
@@ -60,9 +66,20 @@ Current business-signal Card types:
 
 Default daily target: 10 signal cards.
 
-### C. Relationship Graph
+### C. First-Line Viewpoints
 
-Reads accepted Cards only.
+Reads builders / follow-builders data only.
+
+Produces:
+
+- `01-SiteV2/site/data/follow-builders-daily.json`;
+- `01-SiteV2/site/follow-builders.html` frontstage view.
+
+This flow is independent. It must not feed business-signal Card generation, relationship graph, or trend candidates.
+
+### D. Relationship Graph
+
+Reads accepted business-signal Cards only.
 
 Produces graph data:
 
@@ -70,29 +87,39 @@ Produces graph data:
 - edges;
 - evidence links.
 
-Do not write long prose as the graph. Do not include opinion content.
+Do not write long prose as the graph. Do not include opinion or builders content.
 
-### D. Trend Candidate
+### E. Trend Candidate
 
-Reads accepted Cards and relationship graph input.
+Reads accepted business-signal Cards and relationship-graph input.
 
 Produces trend candidates only when multiple same-direction signals exist.
 
 Trend candidate is not a trend report.
 
-## Paused / Not Active For V3
+### F. Site / Dashboard / Obsidian Sync
 
-These are not required outputs for the current V3 bottom layer:
+Runs:
+
+- business-signal site data build;
+- first-line viewpoint data build;
+- operations dashboard data sync;
+- topic center data build;
+- GitHub PR / merge path;
+- local Obsidian sync after merged changes are available on `origin/main`.
+
+## Paused / Not Active For V3.3
+
+These are not required outputs for the current bottom layer:
 
 - daily observation;
 - trend report;
 - business brief / business internal reference;
 - publiccopy gate;
 - cardcopy gate;
-- Guanlan-style content judgment;
-- follow-builders / opinion lane.
+- Guanlan-style content judgment.
 
-If any workflow or script still requires these as blockers for V3 business-signal production, treat it as historical contamination and update it.
+If any workflow or script still requires these as blockers for V3.3 business-signal production, treat it as historical contamination and update it.
 
 ## Hard Stops
 
@@ -103,6 +130,5 @@ Stop downstream use when:
 - evidence comes only from search snippets or discovery pages;
 - Card title falls back to backend fields;
 - Card body uses naked-number fallback;
-- opinion / follow-builders material enters business-signal generation;
+- opinion / builders material enters business-signal generation;
 - relationship graph uses long generated prose instead of Card-derived nodes and edges.
-

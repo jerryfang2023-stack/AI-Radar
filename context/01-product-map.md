@@ -9,33 +9,29 @@ use_when:
 priority: current
 ---
 
-# 01 Product Map｜V3 产品结构与数据流
+# 01 Product Map - V3.3
 
-## 当前产品结构
+## Current Product Structure
 
-V3 的前台主入口是“数据观察台”，后台主入口是“运营后台”。
-
-| 模块 | 作用 | 当前状态 |
+| Module | Role | Status |
 |---|---|---|
-| 数据观察台 | 展示每日商业信号、关系图谱、趋势候选 | 当前前台入口 |
-| 商业信号 | 产品 / 服务、融资、案例三类正式 Card | 当前核心资产 |
-| 关系图谱 | 基于 Card 的主体、场景、动作、商业变量建立关系 | 当前分析层 |
-| 趋势候选 | 基于多条同向商业信号形成候选，不写趋势报告 | 当前分析层 |
-| 运营后台 | 查看生产链路、来源质量、选题池、发布状态 | 保留 |
+| Business Signals | Daily product / service, funding, and case Cards | Active frontstage |
+| First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
+| Relationship Graph | Visual graph built from accepted business-signal Cards | Active analysis layer |
+| Trend Candidates | Potential trend patterns based on multiple same-direction business signals | Active analysis layer |
+| Dashboard | Production-chain, source quality, topic center, and release status | Active backend |
 
-## 停止使用的栏目输出
+## Current Navigation
 
-以下栏目和输出不再作为 V3 当前生产目标：
+```text
+Business Signals
+First-Line Viewpoints
+Dashboard
+```
 
-- 今日观察；
-- 趋势报告；
-- 商业内参；
-- follow-builders / 观点流；
-- 旧四栏目网站页面。
+Business Signals and First-Line Viewpoints must share the same global topbar structure and height. Dashboard links to the existing operations backend and is not redesigned as a public content page.
 
-如需未来重建，必须另起规则，不得复用旧 V2 口径。
-
-## 当前内容与资产流
+## Asset Flow
 
 ```text
 Monitor / Search / Source discovery
@@ -46,42 +42,57 @@ Monitor / Search / Source discovery
    - funding
    - case
 -> knowledge base
--> relation graph
+-> relationship graph
 -> trend candidate
--> V3 frontstage / operations data
+-> V3.3 frontstage / operations data
 ```
 
-## 资产边界
+First-line viewpoints are built by the builders route and displayed in `follow-builders.html`. They are not mixed into the asset flow above.
 
-- `01-SiteV2/content/01-raw/`：每日 Raw 候选与原始材料。
-- `01-SiteV2/content/02-pool/`：经过筛选的证据池。
-- `01-SiteV2/content/04-business-signals/`：每日商业信号索引。
-- `01-SiteV2/knowledge/01-Signal-Cards/`：正式 Card 长期知识资产。
-- `01-SiteV2/knowledge/03-Asset-Candidates/`：关系与趋势候选相关资产。
+## Asset Boundaries
 
-## Card 类型
+- `01-SiteV2/content/01-raw/`: daily Raw candidates and original materials.
+- `01-SiteV2/content/02-pool/`: screened evidence pool.
+- `01-SiteV2/content/04-business-signals/`: daily business-signal indexes.
+- `01-SiteV2/knowledge/01-Signal-Cards/`: persistent formal Card assets.
+- `01-SiteV2/knowledge/03-Asset-Candidates/`: relationship and trend-candidate assets.
+- `01-SiteV2/site/data/follow-builders-daily.json`: first-line viewpoints data.
+- `01-SiteV2/site/data/pipeline-dashboard.json`: operations dashboard data.
 
-当前正式商业信号只保留三类：
+## Current Card Types
 
-- `product_service`：产品、服务、平台、模型、工具、API、能力发布。
-- `funding`：单一公司融资事件，尤其关注新兴企业与中小公司。
-- `case`：客户采用、垂直行业应用、部署案例、业务流程变化。
+Business-signal Cards only use three types:
 
-Pool 类型不等于 Card 类型。Card 类型必须由原文事实重新判断。
+- `product_service`: products, services, platforms, models, tools, APIs, capability releases.
+- `funding`: single-company funding events, especially emerging-company and SME funding.
+- `case`: customer adoption, vertical-industry deployment, workflow change, and implementation cases.
 
-## 前台放行
+Pool type is not Card type. Card type must be judged again from source facts.
 
-Card 可以进入前台的最低条件：
+## Frontstage Release Conditions
 
-- 有原始来源链接；
-- 有可读正文或足够长的原文摘录；
-- 有原文标题或可追溯事件标题；
-- 有基于原文生成的新闻事实、原文要点、简要价值描述、可见原文片段；
-- 无后台字段兜底展示；
-- 无 follow-builders / opinion 内容混入商业信号。
+A Card can enter the frontstage only when it has:
 
-## 关系与趋势
+- original source URL;
+- readable full text or enough source excerpt;
+- original title or traceable event title;
+- source-based news fact, original key points, concise value description, and visible source excerpt;
+- no backend-field fallback;
+- no follow-builders or opinion material.
 
-- 关系图谱只展示 Card 之间可追溯的主体、场景、动作和商业变量关系。
-- 趋势候选必须来自多条同向 Card、多来源证据和明确商业变量。
-- 趋势候选只说明“是什么趋势、表现在哪里、证据边界是什么”，不提供建议和方向。
+## Relationship And Trend Boundaries
+
+- The relationship graph only shows traceable subjects, scenes, actions, and commercial variables between accepted business-signal Cards.
+- The relationship graph should be visual and compact, not long prose.
+- Trend candidates must come from multiple same-direction Cards, multiple sources, and clear commercial variables.
+- Trend candidates explain what the trend is, where it appears, and what the evidence boundary is. They do not provide advice or direction.
+
+## Retired Outputs
+
+The following are not current V3.3 production goals:
+
+- daily observation;
+- trend report;
+- business brief / internal reference;
+- old four-column V2 website pages;
+- opinion sidebar mixed into business signals.

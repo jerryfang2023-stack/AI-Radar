@@ -1,42 +1,54 @@
 ---
 status: current
 scope: frontstage-page-contracts
-last_updated: 2026-06-01
+last_updated: 2026-06-06
 use_when:
   - page change
+  - navigation change
   - copy change
   - data sync
   - release check
 priority: current
 ---
 
-# Frontstage Page Contracts｜前台页面契约
+# Frontstage Page Contracts
 
-本文件约束核心页面“不能被什么污染”。页面改动必须先读 `context/version-ledger.md`，再读本文件。
+Read `context/version-ledger.md` first. This file defines what each current frontstage page must keep and what must not contaminate it.
 
-| 页面 | 当前职责 | 必须保留 | 禁止回退 / 禁止污染 | 必跑门禁 |
+## Current Pages
+
+| Page | Current Role | Must Keep | Must Not Contain | Gates |
 |---|---|---|---|---|
-| 数据观察台 | V3 当前前台入口，承接 AI 数据中心 + 内容选题中心；展示商业信号、关系图谱、趋势候选和历史趋势 | 当日商业信号；日期筛选；正式标签；关系说明；真实趋势候选；历史趋势卡片；详情页 | V2 四栏目首页、旧栏目页、旧详情页、标签数量伪趋势、机械内部语言、Raw / Pool / threshold / gate 外露 | `frontstage-regression-gate` + syntax |
-| 运营控制台 | 运营后台与生产链路查看，不属于 V2 前台页面 | `operations-console.html`、`pipeline-dashboard.html`、`admin.html` 及相关数据 | 被误删、被前台 V3 样式重写、被旧栏目导航污染 | syntax + manual smoke |
-| V2 前台页面 | 已退役页面集合 | 不保留为当前前台入口 | 继续作为首页、栏目页、详情页被新任务继承 | 不适用 |
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | V3.3 main business-signal desk; date selection; product / funding / case Cards; visual relationship graph; trend candidates; source-first details | V2 homepage modules; daily observation; business brief; trend-report prose; follow-builders evidence; backend fields such as Raw / Pool / threshold / gate in frontstage copy | syntax + source-first gate + frontstage regression |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Builders page merged from GitHub; public builders viewpoints; Chinese translation; person / title / timeline style where available; same global nav height as business signals | Business-signal Card generation; relationship-graph evidence; trend-candidate evidence; V2 opinion sidebar logic | syntax + builders data build + frontstage regression |
+| Dashboard | `01-SiteV2/site/operations-console.html` | Existing operations backend; production chain, source quality, topic center, content factory, release status | Accidental deletion; frontstage restyling that breaks operations UI; V2 public navigation takeover | syntax + manual smoke |
 
-## 改动分级
+## Unified Navigation
 
-| 类型 | 定义 | 示例 | 检查 |
-|---|---|---|---|
-| Patch | 不改变页面结构的小修复 | 修文案、修链接、删旧组件 | syntax + regression |
-| Page Change | 页面布局、模块、视觉结构变化 | 重排趋势页、首页模块调整 | syntax + typography + regression |
-| Copy Change | 前台标题、摘要、CTA、说明变化 | 商业信号标题规则、按钮文案 | syntax + regression |
-| Data Change | 字段、同步规则、生成规则变化 | activeDate、relations、sourceTitle 优先级 | v2content + regression |
-| Release Change | 部署、自动化、GitHub Action 或 tag | 发布版本、冻结点、GitHub workflow | regression + release checklist |
+The business-signal and first-line viewpoint pages must share the same global navigation:
 
-## 冻结记录规则
+- business signals: `v3-data-observation.html`
+- first-line viewpoints: `follow-builders.html`
+- dashboard: `operations-console.html#dashboard`
 
-页面被确认后，必须在 `context/version-ledger.md` 的“当前冻结点”记录：
+The two public pages must use `assets/wavesight-nav.css` and keep the same topbar structure and height.
 
-- 页面名称。
-- 确认日期。
-- 对应版本。
-- 不允许回退的内容。
-- 当时通过的门禁。
-- 可回滚的 Git commit 或 tag。
+## Change Types
+
+| Type | Meaning | Required Checks |
+|---|---|---|
+| Patch | Small fix without structure change | syntax + regression |
+| Page Change | Layout, module, or visual structure change | syntax + visual smoke + regression |
+| Data Change | Field, data sync, generation rule, or automation change | syntax + source-first + regression |
+| Release Change | Version, GitHub Action, deployment, or sync loop change | syntax + release checklist + regression |
+
+## Freeze Rule
+
+When a page is accepted, record the freeze point in `context/version-ledger.md` with:
+
+- page name;
+- accepted date;
+- version;
+- content that must not return;
+- gates passed;
+- Git commit or tag that can be rolled back to.

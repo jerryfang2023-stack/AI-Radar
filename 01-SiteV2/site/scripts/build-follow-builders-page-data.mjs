@@ -12,6 +12,10 @@ const skillDir = process.env.FOLLOW_BUILDERS_SKILL_DIR
   || path.join(homedir(), ".skill-store", "follow-builders");
 const prepareScript = path.join(skillDir, "scripts", "prepare-digest.js");
 const outputPath = path.join(siteRoot, "data", "follow-builders-daily.json");
+const remoteFeeds = {
+  x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
+  podcasts: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json",
+};
 
 function decodeText(value = "") {
   return String(value)
@@ -131,12 +135,24 @@ async function loadPreparedFeed() {
     return JSON.parse(stdout);
   }
 
+  async function fetchRemoteFeed(name) {
+    const response = await fetch(remoteFeeds[name]);
+    if (!response.ok) throw new Error(`Failed to fetch follow-builders ${name} feed: ${response.status}`);
+    return response.json();
+  }
+
+  async function readLocalOrRemote(name) {
+    const localFile = path.join(skillDir, `feed-${name}.json`);
+    if (existsSync(localFile)) return JSON.parse(await readFile(localFile, "utf8"));
+    return fetchRemoteFeed(name);
+  }
+
   const [xRaw, podcastRaw] = await Promise.all([
-    readFile(path.join(skillDir, "feed-x.json"), "utf8"),
-    readFile(path.join(skillDir, "feed-podcasts.json"), "utf8"),
+    readLocalOrRemote("x"),
+    readLocalOrRemote("podcasts"),
   ]);
-  const x = JSON.parse(xRaw);
-  const podcasts = JSON.parse(podcastRaw);
+  const x = typeof xRaw === "string" ? JSON.parse(xRaw) : xRaw;
+  const podcasts = typeof podcastRaw === "string" ? JSON.parse(podcastRaw) : podcastRaw;
   return {
     status: "ok",
     generatedAt: new Date().toISOString(),

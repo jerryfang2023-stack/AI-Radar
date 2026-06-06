@@ -116,7 +116,7 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_or_deepseek_required: false"
             echo
-            echo "This workflow commits Raw / Pool / business-signal Card assets to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
+            echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, frontstage site data, builders page data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
             echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
             echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."
             echo
@@ -126,7 +126,7 @@ jobs:
             echo "3. Regenerate business-signal Card assets in the runner workspace."
             echo "4. Run Pool-to-Card duplicate gate."
             echo "5. Write a persistent asset manifest."
-            echo "6. Sync local site data in the runner workspace."
+            echo "6. Sync V3.3 site data in the runner workspace: business signals, first-line viewpoints, topic center and operations dashboard."
             echo "7. Confirm same-date downstream assets are no longer stale."
             echo "8. Commit generated assets to an automation branch and open or update a PR."
             echo "9. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
@@ -154,6 +154,7 @@ jobs:
           node --check agent-workflow/tools/build-topic-center-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
+          node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
 
@@ -236,6 +237,7 @@ jobs:
         run: |
           set -o pipefail
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
+          node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
 
@@ -323,6 +325,8 @@ jobs:
           | Signal card files | ${signal_card_count} |
           | Site content data | $(state_for "01-SiteV2/site/data/site-content.json") |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
+          | First-line viewpoints data | $(state_for "01-SiteV2/site/data/follow-builders-daily.json") |
+          | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
 
           ## Persistence Rule
 
@@ -354,7 +358,9 @@ jobs:
               "business_signals": "$(state_for "$signal_file")",
               "signal_card_files": ${signal_card_count},
               "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")",
-              "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")"
+              "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
+              "first_line_viewpoints_data": "$(state_for "01-SiteV2/site/data/follow-builders-daily.json")",
+              "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
             }
           }
           EOF
@@ -382,6 +388,7 @@ jobs:
             01-SiteV2/site/data/site-content.json
             01-SiteV2/site/data/site-content.js
             01-SiteV2/site/data/v3-data-observation-desk.json
+            01-SiteV2/site/data/follow-builders-daily.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
             01-SiteV2/site/data/topic-center.json
@@ -435,6 +442,7 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/site-content.json"
             stage_if_exists "01-SiteV2/site/data/site-content.js"
             stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
+            stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
             stage_if_exists "01-SiteV2/site/data/topic-center.json"
@@ -470,6 +478,7 @@ jobs:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
           - Site data included only when dedupe, sync, source-first frontstage, frontstage regression and pre-commit gates passed.
+          - First-line viewpoints data and operations dashboard data included in the same V3.3 frontstage sync.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
 
@@ -482,7 +491,7 @@ jobs:
           Automation result:
           - This PR is expected to auto-merge after gates pass.
           - After merge, GitHub Pages deploys from main automatically.
-          - Pull main locally or let Obsidian Git sync after merge.
+          - Pull main locally or let the WaveSight local Obsidian sync task fast-forward main after merge.
           BODY
 
           if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then

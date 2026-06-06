@@ -4,25 +4,36 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedVersion = "V3.2.0-intelligence-graph-trend";
+const expectedVersion = "V3.3.0-unified-intelligence-frontstage";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
 const frontstageFiles = [
   "01-SiteV2/site/index.html",
   "01-SiteV2/site/v3-data-observation.html",
+  "01-SiteV2/site/follow-builders.html",
+  "01-SiteV2/site/assets/wavesight-nav.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.js",
+  "01-SiteV2/site/assets/follow-builders.css",
+  "01-SiteV2/site/assets/follow-builders.js",
   "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
+  "01-SiteV2/site/scripts/build-follow-builders-page-data.mjs",
   "01-SiteV2/site/data/v3-data-observation-desk.json",
+  "01-SiteV2/site/data/follow-builders-daily.json",
 ].map((file) => path.join(root, file));
 
 const publicFrontstageTextFiles = [
   "01-SiteV2/site/index.html",
   "01-SiteV2/site/v3-data-observation.html",
+  "01-SiteV2/site/follow-builders.html",
+  "01-SiteV2/site/assets/wavesight-nav.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.js",
+  "01-SiteV2/site/assets/follow-builders.css",
+  "01-SiteV2/site/assets/follow-builders.js",
   "01-SiteV2/site/data/v3-data-observation-desk.json",
+  "01-SiteV2/site/data/follow-builders-daily.json",
 ].map((file) => path.join(root, file));
 
 const retiredFrontstagePages = [
@@ -104,6 +115,30 @@ function collectRetiredPageIssues() {
   return issues;
 }
 
+function collectUnifiedNavigationIssues() {
+  const issues = [];
+  const pageFiles = [
+    path.join(root, "01-SiteV2/site/v3-data-observation.html"),
+    path.join(root, "01-SiteV2/site/follow-builders.html"),
+  ];
+  const required = [
+    "assets/wavesight-nav.css",
+    "v3-data-observation.html",
+    "follow-builders.html",
+    "operations-console.html#dashboard",
+    "商业信号",
+    "一线观点",
+    "仪表盘",
+  ];
+  for (const file of pageFiles) {
+    const text = read(file);
+    for (const token of required) {
+      if (!text.includes(token)) issues.push(issue(file, "missing_unified_navigation_token", token));
+    }
+  }
+  return issues;
+}
+
 function latestContentDate() {
   const roots = [
     path.join(root, "01-SiteV2", "content", "01-raw"),
@@ -181,6 +216,7 @@ function writeReport(issues) {
 const issues = [
   ...collectRetiredPatternIssues(),
   ...collectRetiredPageIssues(),
+  ...collectUnifiedNavigationIssues(),
   ...collectGeneratedDataIssues(),
 ];
 const report = writeReport(issues);

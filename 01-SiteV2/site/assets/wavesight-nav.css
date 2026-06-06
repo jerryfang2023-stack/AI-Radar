@@ -1,0 +1,103 @@
+@import url("brand/brand-tokens.css");
+
+.wavesight-topbar {
+  width: min(1480px, calc(100% - 48px));
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 14px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid rgba(7, 24, 39, .075);
+}
+
+.wavesight-brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  text-decoration: none;
+}
+
+.wavesight-logo {
+  display: block;
+  width: 168px;
+  height: auto;
+}
+
+.wavesight-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.wavesight-nav a {
+  display: grid;
+  align-content: center;
+  min-height: 42px;
+  min-width: 112px;
+  padding: 4px 14px;
+  border: 1px solid rgba(7, 24, 39, .1);
+  background: rgba(255, 253, 248, .78);
+  color: var(--gl-ink, #071827);
+  text-decoration: none;
+  font-family: var(--gl-font-sans-cn, Inter, "Noto Sans SC", "Microsoft YaHei", sans-serif);
+  font-size: var(--gl-type-nav-size, 14px);
+  font-weight: var(--gl-weight-title, 600);
+  line-height: var(--gl-type-nav-line, 20px);
+}
+
+.wavesight-nav a span {
+  display: block;
+  color: rgba(7, 24, 39, .42);
+  font-family: var(--gl-font-mono, "IBM Plex Mono", Consolas, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.wavesight-nav a[aria-current="page"] {
+  border-color: var(--gl-blue, #0d355c);
+  background: var(--gl-blue, #0d355c);
+  color: #fffdf8;
+}
+
+.wavesight-nav a[aria-current="page"] span {
+  color: rgba(255, 253, 248, .72);
+}
+
+@media (max-width: 760px) {
+  .wavesight-topbar {
+    width: min(100% - 18px, 1480px);
+    min-height: 64px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 8px;
+  }
+
+  .wavesight-logo {
+    width: 132px;
+  }
+
+  .wavesight-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .wavesight-nav a {
+    min-width: 0;
+    min-height: 38px;
+    padding: 3px 6px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .wavesight-nav a span {
+    display: none;
+  }
+}

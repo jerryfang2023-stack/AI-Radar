@@ -9,69 +9,77 @@ use_when:
 priority: current
 ---
 
-# 00 Current State｜观澜 AI 当前状态
+# 00 Current State - WaveSight AI
 
-观澜 AI / WaveSight AI 当前进入 V3 数据观察台阶段。
+WaveSight AI is now in V3.3 unified intelligence frontstage development.
 
-## 当前定位
+## Current Positioning
 
-- 观澜 AI 是由 Agent 驱动的 AI 商业情报系统。
-- 当前前台入口是数据观察台：`01-SiteV2/site/v3-data-observation.html`。
-- 当前生产核心不是内容站，而是把每日外部信息沉淀为结构化商业情报资产。
-- 当前资产链只要求：Raw 候选、Pool 证据、商业信号 Card、关系图谱输入、趋势候选。
-- 每日目标是让用户看到市场上最值得关注的 10 件产品 / 服务、融资、案例信息。
+- WaveSight AI is an Agent-driven AI business-intelligence system.
+- The current public frontstage has two active columns: business signals and first-line viewpoints.
+- The current backend entry is the operations dashboard.
+- The production core is not a content website. It turns daily external information into persistent intelligence assets.
+- The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
 
-## 当前停止口径
+## Current Entries
 
-以下内容不是当前 V3 必要输出，也不作为当前执行依据：
+| Entry | File | Role |
+|---|---|---|
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, and trend candidates |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
+| Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
 
-- 今日观察；
-- 商业内参；
-- 趋势报告；
-- 旧首页、旧商业信号页、旧趋势追踪页、旧观点页；
-- follow-builders / opinion lane；
-- 观澜前台文案规范与文案门禁；
-- publiccopy / cardcopy 发布阻塞门禁。
-
-V2 站点已经下线。历史规则如果影响 V3，可以删除或重建，不需要继续兼容。
-
-## 当前目录
-
-- 新站工程：`01-SiteV2/site/`
-- 生产内容：`01-SiteV2/content/`
-- 长期知识资产：`01-SiteV2/knowledge/`
-- 当前规则真源：`context/07-v3-intelligence-generation-rules.md`
-- 高风险执行外壳：`context/06-execution-harness.md`
-- 运营后台页面继续保留，包括 `admin.html`、`operations-console.html`、`pipeline-dashboard.html`。
-
-## 当前数据链路
+## Current Data Chain
 
 ```text
-外部来源
--> Raw 候选
--> Pool 证据
--> signal_card：产品 / 服务、融资、案例
--> 关系图谱输入
--> 趋势候选
--> V3 数据观察台与运营后台数据
+External sources
+-> Raw candidates
+-> Pool evidence
+-> signal_card assets
+   - product_service
+   - funding
+   - case
+-> knowledge base
+-> relationship graph
+-> trend candidates
+-> V3.3 frontstage + operations data
+-> GitHub PR / merge
+-> GitHub Pages
+-> local Obsidian sync
 ```
 
-## 当前硬规则
+First-line viewpoints use the follow-builders / builders data route as an independent page. They are not evidence for business-signal Cards, the relationship graph, or trend candidates.
 
-- Raw 只负责收集外部材料，搜索工具只是发现入口，必须落到原始来源。
-- Pool 必须保留原文链接、可读正文、摘要、证据摘录、hash、QC 放行和重要性理由。
-- Pool 类型不等于 Card 类型。
-- Card 标题优先保留原文事件标题，不得机械改成抽象判断。
-- 缺前台字段时不得回退展示后台字段。
-- 商业信号生成必须覆盖大厂产品动作、垂直行业案例、中小企业融资，不能只被大厂新闻占满。
-- 趋势候选不能由单条新闻、单个观点或趋势文章直接生成。
+## Paused / Retired
 
-## 当前自动化目标
+These are not current V3.3 required outputs or execution truth:
 
-GitHub 自动化目标为：
+- daily observation;
+- business brief / business internal reference;
+- trend report;
+- old homepage, old business-signal page, old trend page, old opinion sidebar;
+- Guanlan frontstage copy-style gate;
+- publiccopy / cardcopy publication blockers.
 
-1. 每日监测 Raw / Pool。
-2. 生成 10 张商业信号 Card。
-3. 跑 Pool-to-Card 去重与必要质量检查。
-4. 更新 V3 数据观察台和运营后台数据。
-5. 提交到自动化分支并开 PR，合并后由 GitHub Pages 部署。
+Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild them instead of preserving compatibility.
+
+## Current Hard Rules
+
+- Raw only collects external materials. Search tools are discovery entrances and must resolve to original sources.
+- Pool must keep source URL, readable body or enough excerpt, summary, evidence excerpt, hash, QC result, and importance reasoning.
+- Pool type does not equal Card type.
+- Card titles prefer traceable original event titles, not abstract judgments.
+- Missing frontstage fields must not fallback to backend fields.
+- Business signals must cover big-company product actions, vertical-industry cases, and emerging-company funding. Big-company news must not dominate the whole day.
+- Trend candidates cannot be generated from a single article, single viewpoint, or trend essay.
+- Builders viewpoints are independent first-line viewpoints only.
+
+## Current Automation Goal
+
+1. Run daily Raw / Pool monitoring.
+2. Generate business-signal Cards.
+3. Run dedupe, source-first, and regression checks.
+4. Update business signals, first-line viewpoints, topic center, and operations dashboard data.
+5. Open or update the automation PR.
+6. Deploy after merge through GitHub Pages.
+7. Sync merged assets to local Obsidian when the local machine is online.

@@ -1538,7 +1538,7 @@ const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) 
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
-    version: "V3.2.0-intelligence-graph-trend",
+    version: "V3.3.0-unified-intelligence-frontstage",
     generatedAt: new Date().toISOString(),
     activeDate,
     source: "Signal Cards",

@@ -10,100 +10,100 @@ use_when:
 priority: current
 ---
 
-# Version Ledger - 观澜版本台账
+# Version Ledger
 
-本文件是当前版本基线。closeout 只能证明做过什么，不能替代本文件、页面契约、当前 Skill 或自动门禁。
+This file is the current version baseline. Closeout files prove what happened; they do not replace this ledger, page contracts, current skills, or gates.
 
-## 当前版本
+## Current Version
 
-| 字段 | 当前值 |
+| Field | Value |
 |---|---|
-| 当前版本 | V3.2.0-intelligence-graph-trend |
-| 版本名 | 数据观察台关系图谱与趋势候选重构版 |
-| 版本层级 | Minor |
-| 发布日期 | 2026-06-06 |
-| 产品主版本 | V3.2 |
-| Git tag | `v3.2.0-intelligence-graph-trend` |
-| 当前入口 | 数据观察台 |
+| Current version | V3.3.0-unified-intelligence-frontstage |
+| Version name | Unified Intelligence Frontstage |
+| Version layer | Minor |
+| Release date | 2026-06-06 |
+| Product version | V3.3 |
+| Git tag | `v3.3.0-unified-intelligence-frontstage` |
+| Current entries | Business Signals / First-Line Viewpoints / Dashboard |
 
-## 当前产品口径
+## Current Product Baseline
 
-- 观澜 AI 当前前台是数据观察台，不再是 V2 四栏目内容站。
-- V3 只保留 Raw / Pool / Card / Relationship Graph / Trend Candidate 链路。
-- 每天前台核心目标：展示最值得关注的 10 条 AI 商业信号，包括产品/服务、融资、案例。
-- 不再输出每日观察、趋势报告、商业内参。
-- 不再把 follow-builders / 观点卡作为商业信号、关系图谱或趋势候选的组成部分。
-- 前台标题优先使用可追溯原文标题；英文详情必须中文化。
+- WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
+- V3.3 has three entries: Business Signals, First-Line Viewpoints, and Dashboard.
+- Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
+- First-Line Viewpoints uses the follow-builders / builders data chain as an independent page.
+- Builders content must not enter business-signal Cards, relationship-graph evidence, or trend-candidate evidence.
+- Dashboard links to `operations-console.html` and keeps the existing operations backend.
+- Daily automation chain: Raw / Pool monitoring -> business-signal Cards -> business-signal data -> first-line viewpoint data -> operations data -> PR / merge -> GitHub Pages -> local Obsidian sync.
 
-## 当前有效页面
+## Current Pages
 
-| 页面 | 文件 | 当前口径 |
+| Page | File | Current Role |
 |---|---|---|
-| 数据观察台 | `01-SiteV2/site/v3-data-observation.html` | V3 当前前台入口，展示商业信号、关系图谱、趋势候选和历史趋势资产 |
-| 运营后台 | `01-SiteV2/site/operations-console.html` | 内部生产链与运营状态页面，保留 |
-| 管线仪表盘 | `01-SiteV2/site/pipeline-dashboard.html` | 生产链路仪表盘，保留 |
-| 管理入口 | `01-SiteV2/site/admin.html` | 管理入口，保留 |
-| 根入口 | `01-SiteV2/site/index.html` | 跳转到 V3 数据观察台 |
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | V3.3 main public page for daily Cards, relationship graph, trend candidates, and historical trend assets |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Builder Observation V1.0 merged into V3.3; shows builders public remarks, Chinese translations, people, and long-form interviews |
+| Dashboard | `01-SiteV2/site/operations-console.html` | Existing operations backend |
+| Pipeline Dashboard | `01-SiteV2/site/pipeline-dashboard.html` | Production-chain dashboard, kept |
+| Admin | `01-SiteV2/site/admin.html` | Admin entry, kept |
+| Root | `01-SiteV2/site/index.html` | Redirects to Business Signals |
 
-本地 V2 前台静态页面存档：`agent-workflow/backups/v2-static-pages-20260604.zip`。该存档只用于追溯，不作为当前执行依据。
+Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is for traceability only and is not current execution truth.
 
-## 当前有效规则
+## Current Sources Of Truth
 
-| 类型 | 当前真源 |
+| Type | File |
 |---|---|
-| V3 生成规则 | `context/07-v3-intelligence-generation-rules.md` |
-| 产品结构 | `context/01-product-map.md` |
-| VI / 字体 | `context/02-vi-style.md` |
-| 页面契约 | `context/frontstage-page-contracts.md` |
-| 质量门禁 | `context/04-qc-rules.md` |
-| 执行外壳 | `context/06-execution-harness.md` |
-| 前台数据 | `01-SiteV2/site/data/v3-data-observation-desk.json` |
+| V3 generation rules | `context/07-v3-intelligence-generation-rules.md` |
+| Product map | `context/01-product-map.md` |
+| V3.3 automation loop | `context/08-v3-3-automation.md` |
+| VI / typography | `context/02-vi-style.md` |
+| Page contracts | `context/frontstage-page-contracts.md` |
+| Quality gates | `context/04-qc-rules.md` |
+| Execution harness | `context/06-execution-harness.md` |
 
-## 当前禁止回退
+## Must Not Return
 
-- 禁止恢复 V2 四栏目页面、旧首页、旧趋势页面、旧商业内参页面。
-- 禁止恢复每日观察 / 趋势报告 / 商业内参输出要求。
-- 禁止在商业信号、关系图谱、趋势候选中显示观点 / follow-builders 分支。
-- 禁止用标签数量、日期数字、内部状态或机械摘要冒充趋势。
-- 禁止在前台显示 Raw、Pool、gate、eligible、index_only、threshold_pending、threshold_passed 等内部生产语言。
-- 禁止关系图谱回退成大量文字卡片堆叠；当前版本必须使用更直观的节点关系图。
-- 禁止趋势模块回退成趋势报告式长文；当前版本只展示趋势候选的“是什么、表现在哪里、证据边界”。
+- V2 four-column pages, old homepage, old trend page, old business-brief page.
+- Daily observation, trend report, or business brief as required outputs.
+- First-Line Viewpoints / follow-builders mixed into Business Signals, Relationship Graph, or Trend Candidates.
+- Relationship Graph reverting to large prose cards instead of visual nodes and edges.
+- Trend module reverting to trend-report prose; current trend candidates only explain what the pattern is, where it appears, and evidence boundaries.
+- Business Signals and First-Line Viewpoints using different topbar structures or heights.
+- GitHub daily chain only producing temporary artifacts without persisting Raw / Pool / Card / site data.
 
-## 必须运行的检查
+## Required Checks
 
-页面 / 数据 / 生成规则改动至少运行：
+For page, data, or generation-rule changes, run at minimum:
 
 ```powershell
 node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
+node --check 01-SiteV2/site/assets/follow-builders.js
 node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
+node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
+node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
 node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
+node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
 node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
+node agent-workflow/tools/assert-v3-source-first-frontstage.mjs
+node agent-workflow/tools/frontstage-regression-gate.mjs
 ```
 
-按改动类型补充：
+## Freeze Points
 
-| 改动类型 | 补充检查 |
-|---|---|
-| Page Change | typography + frontstage regression |
-| Data Change | source-first gate + production chain gate |
-| Release Change | regression + release checklist + Git tag |
-
-## 当前冻结点
-
-| 冻结点 | 页面 | 日期 | 版本 | 不允许回退内容 | 通过门禁 |
+| Freeze Point | Pages | Date | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|
-| `V3.2.0-freeze-intelligence-graph-trend-20260606` | 数据观察台 | 2026-06-06 | V3.2.0-intelligence-graph-trend | 观点进入关系图谱；文字堆叠式关系卡；趋势报告式长文；内部状态当趋势；V2 页面逻辑 | syntax + site data build + ops data sync |
-| `V3.1.1-freeze-source-first-frontstage-20260605` | 数据观察台 / 每日资产链 | 2026-06-05 | V3.1.1-source-first-frontstage | Card / 趋势 / 关系模块不得用旧摘要、标签解释或内部字段生成前台内容 | 已升级 |
-| `V3.1-freeze-data-observation-mobile-copy-20260605` | 数据观察台 | 2026-06-05 | V3.1-data-observation-mobile-copy | 移动端首屏统计区过高、旧标题、英文直出、文案门禁污染 | 已升级 |
-| `V3.0.0-freeze-data-observation-desk-20260604` | 数据观察台 | 2026-06-04 | V3.0.0-data-observation-desk | V2 前台四栏目页面、旧首页、标签数量伪趋势、内部状态语言 | 已升级 |
-| `V2.2.1-freeze-frontstage-20260601` | 首页 / 趋势追踪 / 趋势详情 | 2026-06-01 | V2.2.1 | 旧趋势模块、合成趋势、非直接关联内容、V2.1 口径 | 已退役 |
+| `V3.3.0-freeze-unified-intelligence-frontstage-20260606` | Business Signals / First-Line Viewpoints / Dashboard | 2026-06-06 | V3.3.0-unified-intelligence-frontstage | builders detached from navigation; mismatched topbars; builders mixed into business signals; automation not updating builders or ops data; missing local Obsidian sync loop | syntax + site data build + builders data build + ops data sync + source-first + frontstage regression |
+| `V3.2.0-freeze-intelligence-graph-trend-20260606` | Data Observation Desk | 2026-06-06 | V3.2.0-intelligence-graph-trend | viewpoints entering graph; prose-stacked relation cards; trend-report prose; internal status as trend; V2 page logic | upgraded |
+| `V3.1.1-freeze-source-first-frontstage-20260605` | Data Observation Desk / daily asset chain | 2026-06-05 | V3.1.1-source-first-frontstage | Card / trend / relation content generated from old summaries, tag explanations, or backend fields | upgraded |
+| `V3.0.0-freeze-data-observation-desk-20260604` | Data Observation Desk | 2026-06-04 | V3.0.0-data-observation-desk | V2 four-column pages, old homepage, tag-count pseudo trends, internal status language | upgraded |
+| `V2.2.1-freeze-frontstage-20260601` | Homepage / Trend Tracking / Trend Detail | 2026-06-01 | V2.2.1 | old trend module, synthetic trend, indirectly related content, V2.1 copy | retired |
 
-## 历史版本摘要
+## Version Summary
 
-| 版本 | 摘要 | 当前状态 |
+| Version | Summary | Current Status |
 |---|---|---|
-| V3.2.0-intelligence-graph-trend | 数据观察台关系图谱改为节点图；趋势候选改为“是什么、表现在哪里、证据边界”；观点分支不参与商业信号、关系图谱和趋势候选 | 当前执行版本 |
-| V3.1.1-source-first-frontstage | 前台内容回源治理；Card / 趋势 / 关系内容必须回到 Raw / Pool / 原文 | 已升级 |
-| V3.1-data-observation-mobile-copy | 移动端适配、首屏统计压缩、标题原文优先和英文中文化 | 已升级 |
-| V3.0.0-data-observation-desk | 前台入口转为数据观察台，删除 V2 前台页面，保留运营仪表盘 | 已升级 |
-| V2.2.x | 四栏目内容站与防回退治理 | 已退役 |
+| V3.3.0-unified-intelligence-frontstage | Merged V3.2 Business Signals and Builder Observation V1.0; unified navigation as Business Signals / First-Line Viewpoints / Dashboard; daily automation updates business signals, first-line viewpoints, operations backend, and local sync loop | current |
+| V3.2.0-intelligence-graph-trend | Relationship graph became node-based; trend candidates explain pattern, evidence, and boundary | upgraded |
+| V3.1.1-source-first-frontstage | Frontstage content must return to Raw / Pool / original source | upgraded |
+| V3.0.0-data-observation-desk | Frontstage became Data Observation Desk; V2 public pages were retired while operations dashboard stayed | upgraded |
+| V2.2.x | Four-column content site and regression governance | retired |
