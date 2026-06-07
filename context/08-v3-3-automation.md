@@ -26,7 +26,7 @@ Execution order:
 4. Persist Raw / Pool assets.
 5. Generate 10 business-signal Cards.
 6. Run Pool-to-Card dedupe and gates.
-7. Build business-signal data: `01-SiteV2/site/data/v3-data-observation-desk.json`.
+7. Build business-signal data: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
 8. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`. This route is independent and may persist even if the business-signal Raw / Pool / Card chain is blocked.
 9. Run the first-line viewpoint data gate: `agent-workflow/tools/assert-follow-builders-data.mjs`.
 10. Build operations dashboard data: `pipeline-dashboard.json/js`.
@@ -38,6 +38,8 @@ Execution order:
 16. Auto-merge or enable auto-merge after gates pass.
 17. Deploy through GitHub Pages after `main` updates.
 18. Send Hermes / Feishu brief when webhook is configured.
+
+`intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / Core Pool / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
 
 ## GitHub Pages Deployment
 

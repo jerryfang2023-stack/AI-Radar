@@ -348,6 +348,7 @@ jobs:
           | Signal card files | ${signal_card_count} |
           | Site content data | $(state_for "01-SiteV2/site/data/site-content.json") |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
+          | Intelligence graph index | $(state_for "01-SiteV2/site/data/intelligence-graph-index.json") |
           | First-line viewpoints data | $(state_for "01-SiteV2/site/data/follow-builders-daily.json") |
           | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
 
@@ -385,6 +386,7 @@ jobs:
               "signal_card_files": ${signal_card_count},
               "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")",
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
+              "intelligence_graph_index": "$(state_for "01-SiteV2/site/data/intelligence-graph-index.json")",
               "first_line_viewpoints_data": "$(state_for "01-SiteV2/site/data/follow-builders-daily.json")",
               "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
             }
@@ -415,6 +417,7 @@ jobs:
             01-SiteV2/site/data/site-content.json
             01-SiteV2/site/data/site-content.js
             01-SiteV2/site/data/v3-data-observation-desk.json
+            01-SiteV2/site/data/intelligence-graph-index.json
             01-SiteV2/site/data/follow-builders-daily.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
@@ -470,6 +473,7 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/site-content.json"
             stage_if_exists "01-SiteV2/site/data/site-content.js"
             stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
+            stage_if_exists "01-SiteV2/site/data/intelligence-graph-index.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
             stage_if_exists "01-SiteV2/site/data/topic-center.json"

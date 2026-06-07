@@ -6,6 +6,7 @@ import { readTagTaxonomy } from "../../../agent-workflow/tools/tag-taxonomy-util
 const root = process.cwd();
 const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
 const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
+const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 
 const signalRoots = [
   { category: "case", label: "案例", dir: path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "case") },
@@ -2180,6 +2181,171 @@ function buildTrendLinks(cards, activeDate, windowDays) {
     }));
 }
 
+function graphIndexCard(card = {}) {
+  return {
+    id: card.id,
+    date: card.date,
+    type: card.type,
+    category: card.category,
+    categoryLabel: card.categoryLabel,
+    title: card.title,
+    subject: card.subject,
+    sourceName: card.sourceName,
+    sourceUrl: card.sourceUrl,
+    sourceLevel: card.sourceLevel,
+    importanceScore: card.importanceScore,
+    rankScore: card.frontstageRankScore,
+    evidenceScore: card.frontstageEvidenceScore,
+    poolRoutes: card.poolRoutes || [],
+    poolRefs: card.sourceRef ? [card.sourceRef] : [],
+    linkedCardId: card.linkedCardId || "",
+    status: card.linkedCardId || card.type === "signal_card" ? "signal_card" : card.status || "candidate",
+    largeVendor: Boolean(card.largeVendor),
+    largeVendorKey: card.largeVendorKey || "",
+    tags: card.tags || {},
+    flatTags: card.flatTags || [],
+    displayTags: (card.displayTags || []).map((tag) => ({ id: tag.id || tag, label: tag.label || tag.name || tag.id || tag })),
+    fact: card.translatedFact || card.visibleFragment || card.summary || "",
+    evidencePoints: uniqueNonRepeatingLines([
+      ...(card.originalHighlights || []),
+      card.visibleFragment,
+    ], [card.translatedFact, card.summary, card.title], 6),
+    value: card.frontstageValueDescription || card.summary || "",
+    selectionReasons: card.frontstageSelectionReasons || [],
+    qualityWarnings: card.frontstageQualityWarnings || [],
+    fromCorePool: Boolean(card.fromCorePool || (card.poolRoutes || []).includes("core_pool")),
+  };
+}
+
+function buildGraphObservationSeeds({ tagAssociations = [], relationshipDirections = [], trendLinks = [], activeDate = "" } = {}) {
+  return [
+    ...relationshipDirections.map((item) => ({
+      id: `relationship:${item.id}`,
+      type: "relationship_cluster",
+      title: item.title,
+      date: activeDate,
+      signal: item.direction,
+      evidenceCount: item.todayCount || item.supportingCards?.length || 0,
+      windowCount: item.last30Count || item.last7Count || item.todayCount || 0,
+      subjects: item.subjects || [],
+      categories: item.categories || [],
+      tags: item.tags || [],
+      supportingCardIds: (item.supportingCards || []).map((card) => card.id),
+      summary: item.summary || item.detailFocus || "",
+      whyUseful: "Use this when looking for cross-card commercial relationships.",
+    })),
+    ...tagAssociations.map((item) => ({
+      id: `tag:${item.object}`,
+      type: "tag_association",
+      title: item.label,
+      date: activeDate,
+      signal: item.object,
+      evidenceCount: item.todayCount,
+      windowCount: item.last30Count,
+      subjects: item.subjects || [],
+      categories: item.categories || [],
+      coTags: item.coTags || [],
+      summary: `${item.label} appears in ${item.todayCount} same-day cards and ${item.last30Count} cards in the 30-day window.`,
+      whyUseful: "Use this when looking for repeated variables and co-occurring tags.",
+    })),
+    ...trendLinks.map((item) => ({
+      id: `trend-link:${item.window}:${item.object}`,
+      type: "trend_link",
+      title: item.label,
+      date: item.lastSeen || activeDate,
+      signal: item.object,
+      evidenceCount: item.cardCount,
+      window: item.window,
+      summary: `${item.label} has ${item.cardCount} linked cards in the ${item.window} window.`,
+      whyUseful: "Use this when checking whether a repeated variable is becoming a trend candidate.",
+    })),
+  ].sort((a, b) => (Number(b.evidenceCount) || 0) - (Number(a.evidenceCount) || 0) || String(a.id).localeCompare(String(b.id)));
+}
+
+function buildIntelligenceGraphIndex(payload = {}) {
+  const allCards = payload.cards || [];
+  const activeDate = payload.meta?.activeDate || "";
+  const todayCards = allCards.filter((card) => card.date === activeDate);
+  const todayTop10 = (payload.frontstageCards || []).filter((card) => card.date === activeDate);
+  const top10Ids = new Set(todayTop10.map((card) => card.id));
+  const corePoolCandidates = payload.corePoolCandidates || [];
+  const linkedCoreCount = corePoolCandidates.filter((card) => card.linkedCardId || card.type === "signal_card").length;
+  const tagAssociations = payload.tagAssociations || [];
+  const relationshipDirections = payload.relationshipDirections || [];
+  const trendLinks = payload.trendLinks || [];
+
+  return {
+    meta: {
+      version: "V3.3.1-intelligence-graph-index",
+      generatedAt: payload.meta?.generatedAt || new Date().toISOString(),
+      activeDate,
+      purpose: "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
+      sourceDataset: "site/data/v3-data-observation-desk.json",
+      updateRoute: "Generated by 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs and deployed with GitHub Pages.",
+      publicUrlHint: "https://jerryfang2023-stack.github.io/AI-Radar/data/intelligence-graph-index.json",
+    },
+    agentContract: {
+      intendedReader: "Hermes Agent data officer",
+      scope: "AI business-signal intelligence graph analysis",
+      useAllCorePool: true,
+      top10IsPresentationOnly: true,
+      excludedEvidence: ["follow-builders viewpoints", "opinion-only materials", "backend-only fields without source evidence"],
+      recommendedOutputs: [
+        "daily_high_value_relationships",
+        "emerging_trend_candidates",
+        "opportunity_gaps",
+        "risk_boundaries",
+        "candidate_cards_to_promote_or_repair",
+      ],
+    },
+    summary: {
+      activeDate,
+      totalCards: allCards.length,
+      todayCards: todayCards.length,
+      todayTop10: todayTop10.length,
+      corePoolCandidates: corePoolCandidates.filter((card) => card.date === activeDate).length,
+      linkedCorePoolCards: linkedCoreCount,
+      candidateOnlyCorePool: Math.max(corePoolCandidates.length - linkedCoreCount, 0),
+      relationshipNodes: payload.relationshipGraph?.nodeCount || payload.relationshipGraph?.nodes?.length || 0,
+      relationshipEdges: payload.relationshipGraph?.edgeCount || payload.relationshipGraph?.edges?.length || 0,
+      relationshipClusters: relationshipDirections.length,
+      tagAssociations: tagAssociations.length,
+      trendLinks: trendLinks.length,
+      trendCandidates: (payload.trendCandidates || []).length,
+    },
+    dailyLens: {
+      top10CardIds: [...top10Ids],
+      corePoolCardIds: corePoolCandidates.map((card) => card.linkedCardId || card.id),
+      largeCompanyTop10: todayTop10
+        .filter((card) => card.largeVendor)
+        .map((card) => ({ id: card.id, vendor: card.largeVendorKey, title: card.title })),
+      categoryStats: payload.stats || [],
+    },
+    cards: allCards.map(graphIndexCard),
+    corePoolCandidates: corePoolCandidates.map(graphIndexCard),
+    graph: {
+      date: payload.relationshipGraph?.date || activeDate,
+      nodes: payload.relationshipGraph?.nodes || [],
+      edges: payload.relationshipGraph?.edges || [],
+      clusters: payload.relationshipGraph?.clusters || [],
+    },
+    relationshipDirections,
+    tagAssociations,
+    trendSignals: {
+      todayCandidates: payload.trendCandidates || [],
+      recentCandidates: payload.recentTrendCandidates || [],
+      historicalTrends: payload.historicalTrends || [],
+      trendLinks,
+    },
+    observationSeeds: buildGraphObservationSeeds({
+      tagAssociations,
+      relationshipDirections,
+      trendLinks,
+      activeDate,
+    }),
+  };
+}
+
 const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
@@ -2221,4 +2387,6 @@ const payload = {
 
 fs.mkdirSync(siteDataDir, { recursive: true });
 fs.writeFileSync(outputFile, JSON.stringify(payload, null, 2), "utf8");
+fs.writeFileSync(intelligenceGraphIndexFile, JSON.stringify(buildIntelligenceGraphIndex(payload), null, 2), "utf8");
 console.log(`Wrote ${rel(outputFile)} with ${cards.length} cards.`);
+console.log(`Wrote ${rel(intelligenceGraphIndexFile)} for Hermes Agent.`);
