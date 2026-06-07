@@ -103,7 +103,7 @@ button {
 }
 
 .builder-shell {
-  padding: 18px 0 36px;
+  padding: 0 0 36px;
 }
 
 .builder-workbench {
@@ -111,7 +111,7 @@ button {
   grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
   gap: 28px;
   align-items: end;
-  padding: 20px 0 16px;
+  padding: 28px 0 16px;
   border-bottom: 1px solid var(--line-soft);
 }
 
@@ -119,24 +119,23 @@ button {
   min-width: 0;
 }
 
-.builder-title-block h1 {
+.builder-title-block h2 {
   margin: 0;
   color: var(--ink);
-  font-family: var(--serif);
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
   letter-spacing: 0;
 }
 
 .workbench-summary {
   display: inline-block;
-  margin-left: 14px;
+  margin-left: 10px;
   color: var(--faint);
   font-family: var(--mono);
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 18px;
   vertical-align: baseline;
   white-space: nowrap;
 }
@@ -210,16 +209,19 @@ button {
 
 .builder-controls {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(118px, .58fr));
-  gap: 10px;
-  width: min(100%, 920px);
+  grid-template-columns: minmax(250px, 1.25fr) repeat(3, minmax(150px, .75fr));
+  gap: 12px;
+  width: min(100%, 860px);
   justify-self: end;
   padding: 0;
 }
 
 .builder-controls label {
   display: grid;
-  gap: 6px;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
 }
 
 .builder-controls span {
@@ -227,6 +229,7 @@ button {
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
+  white-space: nowrap;
 }
 
 .builder-controls input,
@@ -709,16 +712,16 @@ button {
     line-height: 44px;
   }
 
-  .builder-title-block h1 {
-    font-size: 34px;
-    line-height: 46px;
+  .builder-title-block h2 {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .workbench-summary {
-    display: block;
-    margin: 4px 0 0;
-    font-size: 16px;
-    line-height: 24px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .hero-deck {
@@ -731,6 +734,10 @@ button {
   .remark-grid,
   .podcast-grid {
     grid-template-columns: 1fr;
+  }
+
+  .builder-controls label {
+    grid-template-columns: 42px minmax(0, 1fr);
   }
 
   .builder-list {
