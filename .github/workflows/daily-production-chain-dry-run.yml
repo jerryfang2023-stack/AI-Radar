@@ -184,6 +184,16 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-trend-decision.log"
 
+      - name: Build first-line viewpoints data
+        id: builders-data
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-builders-data.log"
+
       - name: Build V3 site data after gates pass
         id: site-sync
         if: steps.trend.outcome == 'success'
@@ -193,7 +203,6 @@ jobs:
           set -o pipefail
           {
             node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
-            node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
             node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           } 2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-site-sync.log"
 
@@ -248,6 +257,7 @@ jobs:
           require_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
           require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
           require_success "Trend candidate / no-decision shell" "${{ steps.trend.outcome }}"
+          require_success "First-line viewpoints data" "${{ steps.builders-data.outcome }}"
           require_success "Site data sync" "${{ steps.site-sync.outcome }}"
 
           if [ "$fail" -ne 0 ]; then

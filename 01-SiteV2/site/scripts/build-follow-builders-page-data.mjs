@@ -5,6 +5,7 @@ import { homedir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
+import { buildTagIndex, readTagTaxonomy } from "../../../agent-workflow/tools/tag-taxonomy-utils.mjs";
 
 const execFileAsync = promisify(execFile);
 const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -12,6 +13,7 @@ const skillDir = process.env.FOLLOW_BUILDERS_SKILL_DIR
   || path.join(homedir(), ".skill-store", "follow-builders");
 const prepareScript = path.join(skillDir, "scripts", "prepare-digest.js");
 const outputPath = path.join(siteRoot, "data", "follow-builders-daily.json");
+const tagIndex = buildTagIndex(readTagTaxonomy(process.cwd()));
 const remoteFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
   podcasts: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json",
@@ -81,6 +83,11 @@ const tagCatalog = {
   "source-blog": { id: "source-blog", name: "技术博客", group: "source" },
 };
 
+function tagFromTaxonomy(id) {
+  const tag = tagIndex.byId.get(id);
+  return tag ? { id: tag.id, name: tag.name, group: tag.group } : tagCatalog[id] || null;
+}
+
 function tagsForTopic(topic, source = "x") {
   const topicTags = {
     "Agent": ["opinion-agent-workflow", "track-ai-agent"],
@@ -98,7 +105,7 @@ function tagsForTopic(topic, source = "x") {
     ...(topicTags[topic] || topicTags["Builder 观点"]),
     sourceTags[source] || "source-social",
   ];
-  return [...new Set(ids)].map((id) => tagCatalog[id]).filter(Boolean);
+  return [...new Set(ids)].map(tagFromTaxonomy).filter(Boolean);
 }
 
 const translationByTweetId = {
@@ -135,17 +142,22 @@ function translateTweet(tweet = {}) {
 }
 
 async function loadPreparedFeed() {
+  let prepareError = null;
   if (existsSync(prepareScript)) {
-    const { stdout } = await execFileAsync(process.execPath, [prepareScript], {
-      cwd: path.join(skillDir, "scripts"),
-      maxBuffer: 80 * 1024 * 1024,
-      env: { ...process.env, NO_COLOR: "1" },
-    });
-    return JSON.parse(stdout);
+    try {
+      const { stdout } = await execFileAsync(process.execPath, [prepareScript], {
+        cwd: path.join(skillDir, "scripts"),
+        maxBuffer: 80 * 1024 * 1024,
+        env: { ...process.env, NO_COLOR: "1" },
+      });
+      return JSON.parse(stdout);
+    } catch (error) {
+      prepareError = error;
+    }
   }
 
   async function fetchRemoteFeed(name) {
-    const response = await fetch(remoteFeeds[name]);
+    const response = await fetch(remoteFeeds[name], { signal: AbortSignal.timeout(20000) });
     if (!response.ok) throw new Error(`Failed to fetch follow-builders ${name} feed: ${response.status}`);
     return response.json();
   }
@@ -156,10 +168,19 @@ async function loadPreparedFeed() {
     return fetchRemoteFeed(name);
   }
 
-  const [xRaw, podcastRaw] = await Promise.all([
-    readLocalOrRemote("x"),
-    readLocalOrRemote("podcasts"),
-  ]);
+  let xRaw;
+  let podcastRaw;
+  try {
+    [xRaw, podcastRaw] = await Promise.all([
+      readLocalOrRemote("x"),
+      readLocalOrRemote("podcasts"),
+    ]);
+  } catch (error) {
+    if (prepareError) {
+      throw new Error(`prepare-digest failed: ${prepareError.message}; feed fallback failed: ${error.message}`);
+    }
+    throw error;
+  }
   const x = typeof xRaw === "string" ? JSON.parse(xRaw) : xRaw;
   const podcasts = typeof podcastRaw === "string" ? JSON.parse(podcastRaw) : podcastRaw;
   return {
@@ -256,10 +277,27 @@ function normalize(feed, trackedSources) {
 }
 
 async function main() {
-  const [feed, trackedSources] = await Promise.all([
-    loadPreparedFeed(),
-    trackedSourceCount(),
-  ]);
+  let feed;
+  let trackedSources;
+  try {
+    [feed, trackedSources] = await Promise.all([
+      loadPreparedFeed(),
+      trackedSourceCount(),
+    ]);
+  } catch (error) {
+    if (!existsSync(outputPath)) throw error;
+    const payload = JSON.parse(await readFile(outputPath, "utf8"));
+    payload.meta = {
+      ...(payload.meta || {}),
+      generatedAt: new Date().toISOString(),
+      fallbackUsed: true,
+      fallbackReason: error.message,
+      sourcePolicy: "follow-builders feed refresh failed; previous generated data was preserved so the independent First-Line Viewpoints page can still build.",
+    };
+    await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+    console.log(`Wrote ${path.relative(process.cwd(), outputPath)} with ${payload.stats?.remarks || 0} remarks using previous data fallback.`);
+    return;
+  }
   const payload = normalize(feed, trackedSources);
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");

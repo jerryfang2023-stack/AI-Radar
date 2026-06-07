@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-06-06
+last_updated: 2026-06-07
 use_when:
   - github automation
   - daily monitoring
@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# V3.3 Automation Loop
+# V3.3.1 Automation Loop
 
-V3.3 automation must be persistent, deployable, and syncable to local Obsidian. It is not enough to create temporary artifacts.
+V3.3.1 automation must be persistent, deployable, and syncable to local Obsidian. It is not enough to create temporary artifacts.
 
 ## GitHub Daily Chain
 
@@ -27,7 +27,7 @@ Execution order:
 5. Generate 10 business-signal Cards.
 6. Run Pool-to-Card dedupe and gates.
 7. Build business-signal data: `01-SiteV2/site/data/v3-data-observation-desk.json`.
-8. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`.
+8. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`. This route is independent and may persist even if the business-signal Raw / Pool / Card chain is blocked.
 9. Build operations dashboard data: `pipeline-dashboard.json/js`.
 10. Build topic-center data.
 11. Run source-first and frontstage regression gates.
@@ -86,6 +86,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/local-s
 1. local `~/.skill-store/follow-builders/scripts/prepare-digest.js`;
 2. local `~/.skill-store/follow-builders/feed-x.json` / `feed-podcasts.json`;
 3. GitHub runner fallback: public follow-builders feeds.
+
+If the follow-builders refresh fails but a previous generated `follow-builders-daily.json` exists, the builder keeps the previous data and records `fallbackUsed=true` in `meta`. This prevents the independent First-Line Viewpoints page from failing only because a feed endpoint is temporarily unavailable.
 
 This lets both local runs and GitHub runners build the First-Line Viewpoints page.
 

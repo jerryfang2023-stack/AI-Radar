@@ -1,8 +1,8 @@
 ---
 status: current
 scope: v3-raw-pool-card-trend-rules
-version: V3.3.0-unified-intelligence-frontstage
-last_updated: 2026-06-06
+version: V3.3.1-unified-intelligence-frontstage
+last_updated: 2026-06-07
 priority: current
 ---
 

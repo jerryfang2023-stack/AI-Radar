@@ -1,47 +1,33 @@
 # Dispatch Board｜当前任务看板
 
-更新时间：2026-05-24
-状态：V2.2.1 current
+更新时间：2026-06-07
+状态：V3.3.1 current
 
-本看板只保留当前可执行、运行中或需要注意的任务。历史过程和已验收任务以 `agent-workflow/reports/` 的 closeout 为准，不再堆叠在当前看板中。
+本看板只保留当前可执行的运行口径。历史任务、旧派发单和 closeout 只作为 `agent-workflow/reports/` 或 `agent-workflow/execution/` 下的档案，不再作为当前执行规则。
 
-## 快捷口令
+## 当前基线
 
-- `执行：<Task ID>`：输出独立执行窗口指令。
-- `派发：<任务描述>`：新建派发单。
-- `收口：<closeout 文件路径>`：验收并回填。
-- `看板` / `状态`：查看当前任务。
-
-## 当前基座
-
-| 编号 | 状态 | 说明 |
+| 项目 | 状态 | 当前口径 |
 |---|---|---|
-| V2.2.1 | current | 只服务 V2.2.1 生产线 |
-| Context | current | 默认入口为 `AGENTS.md` + `context/` + 当前派发单 |
-| Harness | current | `context/06-execution-harness.md` 覆盖每日监测、Raw / Pool / Card、页面 / 文案 / Typography 三个高风险流程 |
-| Agents | current | 流程驱动 4 个轻 Agent；栏目能力优先用 Skill |
-| Monitor | manual / paused | `guanlan-daily-monitor` 不定时自动运行，按需手动触发 |
-| Assets | manual / paused | `guanlan-daily-assets-chain` 不定时自动运行，按需手动触发，先过 readiness |
-| Daily Observation Writer | paused | 不自动写稿，不自动更新网站 |
-| GitHub / Netlify | paused-by-user | 未经用户明确允许不得推送、部署或重写远端历史 |
+| Version | current | `V3.3.1-unified-intelligence-frontstage` |
+| Context | current | 默认入口为 `AGENTS.md` + `context/` + 当前用户任务 |
+| Business Signals | current | 每日前台展示 10 条最值得看的商业信号，按重要性排序 |
+| Raw / Pool / Core Pool | current | Raw >= 150，Pool >= 75，Core Pool >= 30 |
+| First-Line Viewpoints | current | 独立 builders 观点页，不进入商业信号事实、关系图或趋势候选证据 |
+| Automation | current | Business Signals、First-Line Viewpoints、Dashboard 可分别构建；builders 不被 Raw / Pool / Card 失败阻断 |
+| Tags | current | 正式前台数据必须使用 `agent-workflow/product/tag-taxonomy.md` 中的正式 tag |
 
-## 当前可执行任务
+## 当前前台
 
-| 优先级 | Task ID | 状态 | 牵头 | 任务 | 约束 |
-|---|---|---|---|---|---|
-| P0 | `WSD-20260522-card-frontend-field-confirmation` | ready | Experience & Editorial / Product Commander | 前台卡片显示字段确认：列出所有前台卡片、当前渲染字段、可用字段和用户确认表 | 只盘点字段，不改代码、不改数据、不进入页面设计 |
-| P0 | `WSD-20260522-site-page-module-layer2a-specs` | blocked_by_field_confirmation | Experience & Editorial | 阶段 2A：输出页面结构、模块取舍、Copy-first、Typography 和视觉规格表 | 等卡片前台字段确认后继续；不改代码、不部署、不推送 |
-| P0 | `WSD-20260522-site-page-module-layer2b-build` | blocked | Build & Release | 阶段 2B：按确认后的规格表落到代码和数据绑定 | 等阶段 2A accepted |
-| P0 | `WSD-20260522-site-page-module-layer3-regression` | blocked | Build & Release | 阶段 3：桌面端跑检，确认路由、页面、样式、数据链不坏 | 等阶段 2B accepted |
-| P0 | `WSD-20260522-site-page-module-acceptance` | blocked | Product Commander | 验收：按派发单检查是否 accepted | 等阶段 3 closeout |
+| 页面 | 文件 | 角色 |
+|---|---|---|
+| Business Signals / 商业信号 | `01-SiteV2/site/v3-data-observation.html` | 每日 10 条前台卡片、详情、关系图、趋势候选 |
+| First-Line Viewpoints / 一线观点 | `01-SiteV2/site/follow-builders.html` | 独立 builders 观点流 |
+| Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | 运行和质量状态 |
 
 ## 当前注意项
 
-| 事项 | 状态 | 说明 |
-|---|---|---|
-| 版本口径 | V2.2.1 | `AGENTS.md`、`context/`、站点 README、产品真源和运行看板已更新到 V2.2.1 |
-| NewsAPI | retired | 不在活跃搜索链路中；保留的历史说明只能作为 retired 记录 |
-| 趋势规则 | current | 不再把“反证”或固定 `7 / 30 / 90` 时间窗口作为硬准入；必须写清风险边界、信息缺口或后续观察变量 |
-| 标签体系 | current | 正式资产必须使用 `formal_tags`，不得新增非体系标签或让未知 tag 漏到前台 |
-| 页面设计 | current | 当前设计规范以 `agent-workflow/product/DESIGN.md` 和 VI / Typography 真源为准，`frontend-design` 不作为项目主设计技能 |
-| 本地清理 | active | 临时截图和过程产物可清；历史业务素材不伪装为当前规则，必要时以 closeout 标注归档边界 |
+- 不恢复 V2.2.1 的“今日观察 / 趋势追踪 / 商业内参”作为当前导航。
+- 不使用旧 Raw 80-150 / Pool 20-40 口径。
+- 不新增非体系 tag；旧 `customer-service-proof` 等伪 tag 必须迁移到正式 tag。
+- builders 页面允许在业务信号链路失败时独立更新；如果当日抓取失败，应保留上一份可用数据并写入 fallback 元信息。

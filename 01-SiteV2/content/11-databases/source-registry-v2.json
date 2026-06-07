@@ -1,8 +1,8 @@
 {
-  "schema_version": "v2-source-registry-1.1",
-  "updated_at": "2026-05-20",
+  "schema_version": "v3.3.1-source-registry-1.0",
+  "updated_at": "2026-06-07",
   "owner": "Intelligence Engine Agent",
-  "purpose": "Registry for WaveSight AI V2.2 daily source collection. Source levels identify source type and evidence boundary only; they are not value scores.",
+  "purpose": "Registry for WaveSight AI V3.3.1 daily source collection. Source levels identify source type and evidence boundary only; they are not value scores.",
   "source_levels": {
     "S": "overseas first-party event source only. Must be a dated concrete event/change from an overseas official/project/regulatory/procurement/securities source. Homepages, product/demo pages, docs/API/SDK directories, pricing navigation, README/repo index, package/model pages, console/login pages and search results are not S evidence.",
     "A": "high-quality reporting or research with actor, time and action. Commentary, trend roundups, lists and interviews are not event evidence by default.",
@@ -43,13 +43,13 @@
     "blocked-or-deferred"
   ],
   "daily_collection_policy": {
-    "default_raw_target": "80-150",
-    "high_signal_raw_target": "120-150",
-    "fallback_raw_target": "50-80",
-    "default_pool_target": "20-40",
-    "high_signal_pool_target": "25-40",
-    "default_asset_candidate_target": "8-12",
-    "high_signal_asset_candidate_target": "12-15",
+    "default_raw_target": "150 minimum active Raw candidates",
+    "high_signal_raw_target": "180-220",
+    "fallback_raw_target": "below 150 requires written degradation reason and cannot release downstream without a scoped allow or explicit manual override",
+    "default_pool_target": "75 minimum Pool candidates",
+    "high_signal_pool_target": "90-120",
+    "default_asset_candidate_target": "30 usable core_pool candidates",
+    "high_signal_asset_candidate_target": "35-45 usable core_pool candidates",
     "default_frontstage_selected_change_target": 3,
     "high_signal_frontstage_selected_change_target": "4-5",
     "default_deep_dive_target": 1,
@@ -57,7 +57,7 @@
     "default_trend_update_target": 3,
     "high_signal_trend_update_target": "4-5",
     "rule": "Acquisition channels can expand coverage, but source type is assigned to the resolved original source. AI HOT daily and follow-builders receive curated-entry capture priority. Expanded Raw volume must not lower publishing thresholds.",
-    "aihot_policy": "AI HOT daily selected and recent 24h mode=all are V2 daily discovery entrances. Daily selected is fully retained and prioritized, but remains M-level acquisition until original text and page type are checked.",
+    "aihot_policy": "AI HOT daily selected and recent 24h mode=all are V3.3.1 discovery entrances. Daily selected is fully retained and prioritized, but remains M-level acquisition until original text and page type are checked.",
     "follow_builders_policy": "follow-builders is fully scanned every day and fully written into the frontier opinion library. It is a curated opinion entrance with higher capture priority, not a fact source for company claims.",
     "keyword_search_policy": "Network keyword search must expand overseas big-company events, vertical product news, startup/funding news, customer adoption, industry landing, developer ecosystem, procurement, regulation and counter-evidence. HN/community is feedback only and must not dominate.",
     "capital_market_signal_policy": "Daily monitoring must cover capital-market signals separately: investments by YC and other known institutions, vertical-sector funding, and frontier-technology investment."

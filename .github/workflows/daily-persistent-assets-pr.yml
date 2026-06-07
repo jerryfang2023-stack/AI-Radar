@@ -178,6 +178,16 @@ jobs:
             --monitor-timeout-ms=840000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
 
+      - name: Build first-line viewpoints data
+        id: builders-data
+        if: steps.existing-assets.outputs.skip != 'true'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builders-data.log"
+
       - name: Check monitor readiness
         id: monitor-readiness
         if: always() && steps.existing-assets.outputs.skip != 'true'
@@ -237,7 +247,6 @@ jobs:
         run: |
           set -o pipefail
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
-          node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
 
@@ -309,6 +318,7 @@ jobs:
           - raw_pool_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
+          - builders_data: ${{ steps.builders-data.outcome }}
           - site_data_sync: ${{ steps.site-data.outcome }}
           - source_first_frontstage_gate: ${{ steps.source-first-frontstage.outcome }}
           - frontstage_regression_gate: ${{ steps.frontstage-regression.outcome }}
@@ -346,6 +356,7 @@ jobs:
               "raw_pool_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
+              "builders_data": "${{ steps.builders-data.outcome }}",
               "site_data_sync": "${{ steps.site-data.outcome }}",
               "source_first_frontstage_gate": "${{ steps.source-first-frontstage.outcome }}",
               "frontstage_regression_gate": "${{ steps.frontstage-regression.outcome }}",
@@ -396,7 +407,7 @@ jobs:
 
       - name: Commit persistent assets to automation branch
         id: commit
-        if: always() && steps.existing-assets.outputs.skip != 'true' && steps.pre-commit-gate.outcome == 'success'
+        if: always() && steps.existing-assets.outputs.skip != 'true' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-data.outcome == 'success')
         shell: bash
         run: |
           set -euo pipefail
@@ -442,11 +453,14 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/site-content.json"
             stage_if_exists "01-SiteV2/site/data/site-content.js"
             stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
-            stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
             stage_if_exists "01-SiteV2/site/data/topic-center.json"
             stage_if_exists "01-SiteV2/site/data/topic-center.js"
+          fi
+
+          if [ "${{ steps.builders-data.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
           fi
 
           if git diff --cached --quiet; then
@@ -478,7 +492,8 @@ jobs:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
           - Site data included only when dedupe, sync, source-first frontstage, frontstage regression and pre-commit gates passed.
-          - First-line viewpoints data and operations dashboard data included in the same V3.3 frontstage sync.
+          - First-line viewpoints data is built independently and may be included even when the business-signal chain is blocked.
+          - Operations dashboard data included when the business-signal frontstage sync passes.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
 
@@ -543,20 +558,24 @@ jobs:
 
       - name: Auto-merge PR after gates pass
         id: auto-merge
-        if: always() && steps.pr.outputs.pr_number != '' && steps.pre-commit-gate.outcome == 'success'
+        if: always() && steps.pr.outputs.pr_number != '' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-data.outcome == 'success')
         env:
           GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
         shell: bash
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
+          merge_body="Automated daily assets update after monitor, dedupe, source-first frontstage and frontstage regression gates passed."
+          if [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
+            merge_body="Automated first-line viewpoints data update. Business-signal frontstage gates did not fully pass in this run, so business-signal site data was not treated as passed."
+          fi
 
           if gh pr merge "$pr_number" \
             --squash \
             --auto \
             --delete-branch \
             --subject "Persist daily assets for ${RUN_DATE}" \
-            --body "Automated daily assets update after monitor, dedupe, source-first frontstage and frontstage regression gates passed." \
+            --body "$merge_body" \
             2>auto-merge-error.log; then
             echo "status=enabled_or_merged" >> "$GITHUB_OUTPUT"
             echo "Auto-merge enabled or completed for PR #${pr_number}."
@@ -571,7 +590,7 @@ jobs:
               --squash \
               --delete-branch \
               --subject "Persist daily assets for ${RUN_DATE}" \
-              --body "Automated daily assets update after monitor, dedupe, source-first frontstage and frontstage regression gates passed."
+              --body "$merge_body"
             echo "status=merged" >> "$GITHUB_OUTPUT"
             exit 0
           fi
@@ -641,15 +660,32 @@ jobs:
             fi
           }
 
-          require_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
-          require_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
-          require_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
-          require_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
-          require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
-          require_success "Site data sync" "${{ steps.site-data.outcome }}"
-          require_success "V3 source-first frontstage gate" "${{ steps.source-first-frontstage.outcome }}"
-          require_success "Frontstage regression gate" "${{ steps.frontstage-regression.outcome }}"
-          require_success "Site freshness gate" "${{ steps.pre-commit-gate.outcome }}"
+          business_fail=0
+          require_business_success() {
+            local label="$1"
+            local outcome="$2"
+            if [ "$outcome" != "success" ]; then
+              echo "${label} did not pass: ${outcome}" >&2
+              business_fail=1
+            fi
+          }
+
+          require_business_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
+          require_business_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
+          require_business_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
+          require_business_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
+          require_business_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
+          require_success "First-line viewpoints data" "${{ steps.builders-data.outcome }}"
+
+          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
+            require_business_success "Site data sync" "${{ steps.site-data.outcome }}"
+            require_business_success "V3 source-first frontstage gate" "${{ steps.source-first-frontstage.outcome }}"
+            require_business_success "Frontstage regression gate" "${{ steps.frontstage-regression.outcome }}"
+            require_business_success "Site freshness gate" "${{ steps.pre-commit-gate.outcome }}"
+          else
+            business_fail=1
+            echo "Business-signal frontstage data was not fully persisted; first-line viewpoints data is independent and may still be persisted." >&2
+          fi
           require_success "Commit persistent assets" "${{ steps.commit.outcome }}"
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
@@ -665,7 +701,11 @@ jobs:
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
-            echo "Frontstage data was not persisted because one or more frontstage gates did not fully pass." >&2
+            echo "Business-signal frontstage data was not persisted because one or more business-signal gates did not fully pass." >&2
+          fi
+
+          if [ "$business_fail" -ne 0 ]; then
+            echo "Business-signal chain did not fully pass in this run. First-line viewpoints data is treated as an independent V3.3.1 page update." >&2
           fi
 
           if [ "$fail" -ne 0 ]; then
@@ -674,3 +714,6 @@ jobs:
           fi
 
           echo "Persistent assets scheduled PR run passed. The PR was merged or auto-merge was enabled; GitHub Pages will deploy after main updates."
+          if [ "$business_fail" -ne 0 ]; then
+            echo "Only independent first-line viewpoints data may have changed in this run; business-signal outputs remain gated."
+          fi

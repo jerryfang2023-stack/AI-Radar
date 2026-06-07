@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-06
+last_updated: 2026-06-07
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3 unified intelligence frontstage development.
+WaveSight AI is now in V3.3.1 unified intelligence frontstage development.
 
 ## Current Positioning
 
@@ -20,6 +20,7 @@ WaveSight AI is now in V3.3 unified intelligence frontstage development.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
+- V3.3.1 consolidates the frontstage version, formal tag taxonomy, business-signal release rules, and independent first-line viewpoint update route.
 
 ## Current Entries
 
@@ -48,7 +49,7 @@ External sources
 -> local Obsidian sync
 ```
 
-First-line viewpoints use the follow-builders / builders data route as an independent page. They are not evidence for business-signal Cards, the relationship graph, or trend candidates.
+First-line viewpoints use the follow-builders / builders data route as an independent page. They are not evidence for business-signal Cards, the relationship graph, or trend candidates. Their daily data build must not be blocked by Raw / Pool / Card failures in the business-signal chain.
 
 ## Paused / Retired
 

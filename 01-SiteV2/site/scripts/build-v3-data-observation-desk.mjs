@@ -1229,6 +1229,76 @@ function uniqueById(items) {
   return [...byId.values()];
 }
 
+function hasSourceFacingEvidence(card = {}) {
+  return Boolean(
+    card.translatedFact
+      || (Array.isArray(card.originalHighlights) && card.originalHighlights.length)
+      || card.visibleFragment
+  );
+}
+
+function idSuffixForCard(card = {}) {
+  const text = [
+    card.category,
+    card.sourceUrl,
+    card.title,
+    card.originalTitle,
+  ].join(" ");
+  const ascii = text
+    .normalize("NFKD")
+    .replace(/[^\w\s-]/gu, " ")
+    .replace(/_/gu, " ")
+    .trim()
+    .toLowerCase()
+    .split(/\s+/u)
+    .filter((part) => part.length >= 2)
+    .slice(0, 5)
+    .join("-");
+  return ascii || String(Math.abs(hashText(text))).slice(0, 6);
+}
+
+function hashText(value = "") {
+  let hash = 0;
+  for (const char of String(value)) {
+    hash = (hash * 31 + char.codePointAt(0)) | 0;
+  }
+  return hash;
+}
+
+function ensureUniqueCardIds(items = []) {
+  const totals = new Map();
+  for (const item of items) {
+    if (!item?.id) continue;
+    totals.set(item.id, (totals.get(item.id) || 0) + 1);
+  }
+
+  const used = new Set();
+  const seen = new Map();
+  return items.map((item) => {
+    if (!item?.id || totals.get(item.id) <= 1) {
+      if (item?.id) used.add(item.id);
+      return item;
+    }
+
+    const index = (seen.get(item.id) || 0) + 1;
+    seen.set(item.id, index);
+    if (index === 1 && !used.has(item.id)) {
+      used.add(item.id);
+      return item;
+    }
+
+    const base = `${item.id}-${idSuffixForCard(item)}`.slice(0, 96);
+    let next = base;
+    let counter = 2;
+    while (used.has(next)) {
+      next = `${base}-${counter}`;
+      counter += 1;
+    }
+    used.add(next);
+    return { ...item, id: next };
+  });
+}
+
 function trendAssetFromFile(file, cards = []) {
   const text = read(file);
   const fm = frontmatter(text);
@@ -1534,7 +1604,7 @@ const relationshipSpecs = [
     detailFocus: "内在关联：这些材料都指向同一条商业链路，AI 从产品试用进入采购预算、合同条款和收入流程。",
   },
   {
-    id: "customer-service-proof",
+    id: "function-customer-service",
     title: "客服和语音 Agent 的共性，是先在客户接触点证明效率",
     direction: "客户体验",
     relation: ["客户体验", "行业 Agent", "效率指标"],
@@ -1640,7 +1710,7 @@ function relationshipTitleFromCards(spec, items) {
       ? `${subjectText} 记录 AI 进入采购、合同和收入流程`
       : "采购和收入材料出现 AI Agent 的执行位置";
   }
-  if (spec.id === "customer-service-proof") {
+  if (spec.id === "function-customer-service") {
     return subjectText
       ? `${subjectText} 记录 AI 进入客户接触点`
       : "客服和语音 Agent 材料聚焦客户接触点";
@@ -1820,7 +1890,7 @@ function buildTrendLinks(cards, activeDate, windowDays) {
 const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const cards = dedupeFrontstageCards(rawCards)
+const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence))
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const frontstageCards = selectDailyFrontstageCards(cards, 10, 3, 1);
 
@@ -1828,7 +1898,7 @@ const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) 
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
-    version: "V3.3.0-unified-intelligence-frontstage",
+    version: "V3.3.1-unified-intelligence-frontstage",
     generatedAt: new Date().toISOString(),
     activeDate,
     source: "Signal Cards",

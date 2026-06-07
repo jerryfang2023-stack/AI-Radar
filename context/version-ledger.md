@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-06
+last_updated: 2026-06-07
 use_when:
   - task startup
   - page change
@@ -18,12 +18,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.0-unified-intelligence-frontstage |
+| Current version | V3.3.1-unified-intelligence-frontstage |
 | Version name | Unified Intelligence Frontstage |
-| Version layer | Minor |
-| Release date | 2026-06-06 |
+| Version layer | Patch |
+| Release date | 2026-06-07 |
 | Product version | V3.3 |
-| Git tag | `v3.3.0-unified-intelligence-frontstage` |
+| Git tag | `v3.3.1-unified-intelligence-frontstage` |
 | Current entries | Business Signals / First-Line Viewpoints / Dashboard |
 
 ## Current Product Baseline
@@ -34,7 +34,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 - First-Line Viewpoints uses the follow-builders / builders data chain as an independent page.
 - Builders content must not enter business-signal Cards, relationship-graph evidence, or trend-candidate evidence.
 - Dashboard links to `operations-console.html` and keeps the existing operations backend.
-- Daily automation chain: Raw / Pool monitoring -> business-signal Cards -> business-signal data -> first-line viewpoint data -> operations data -> PR / merge -> GitHub Pages -> local Obsidian sync.
+- Daily automation chain: Raw / Pool monitoring -> business-signal Cards -> business-signal data -> operations data -> PR / merge -> GitHub Pages -> local Obsidian sync.
+- First-Line Viewpoints has an independent daily data build and may persist separately when the business-signal chain is blocked.
 
 ## Current Pages
 
@@ -92,6 +93,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|
+| `V3.3.1-freeze-tag-business-builders-automation-20260607` | Business Signals / First-Line Viewpoints / Dashboard | 2026-06-07 | V3.3.1-unified-intelligence-frontstage | V3.3.0 version drift; old non-taxonomy relation tags; Raw 80-150 / Pool 20-40 execution targets; builders data blocked behind business-signal gates; builders feed failure taking down the independent page | syntax + site data build + builders data build + tag gate + source-first + frontstage regression |
 | `V3.3.0-freeze-unified-intelligence-frontstage-20260606` | Business Signals / First-Line Viewpoints / Dashboard | 2026-06-06 | V3.3.0-unified-intelligence-frontstage | builders detached from navigation; mismatched topbars; builders mixed into business signals; automation not updating builders or ops data; missing local Obsidian sync loop | syntax + site data build + builders data build + ops data sync + source-first + frontstage regression |
 | `V3.2.0-freeze-intelligence-graph-trend-20260606` | Data Observation Desk | 2026-06-06 | V3.2.0-intelligence-graph-trend | viewpoints entering graph; prose-stacked relation cards; trend-report prose; internal status as trend; V2 page logic | upgraded |
 | `V3.1.1-freeze-source-first-frontstage-20260605` | Data Observation Desk / daily asset chain | 2026-06-05 | V3.1.1-source-first-frontstage | Card / trend / relation content generated from old summaries, tag explanations, or backend fields | upgraded |
@@ -102,7 +104,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Summary | Current Status |
 |---|---|---|
-| V3.3.0-unified-intelligence-frontstage | Merged V3.2 Business Signals and Builder Observation V1.0; unified navigation as Business Signals / First-Line Viewpoints / Dashboard; daily automation updates business signals, first-line viewpoints, operations backend, and local sync loop | current |
+| V3.3.1-unified-intelligence-frontstage | Consolidates frontstage version, formal tag taxonomy, business-signal rules and independent builders automation; builders data no longer waits behind business-signal gates | current |
+| V3.3.0-unified-intelligence-frontstage | Merged V3.2 Business Signals and Builder Observation V1.0; unified navigation as Business Signals / First-Line Viewpoints / Dashboard; daily automation updates business signals, first-line viewpoints, operations backend, and local sync loop | upgraded |
 | V3.2.0-intelligence-graph-trend | Relationship graph became node-based; trend candidates explain pattern, evidence, and boundary | upgraded |
 | V3.1.1-source-first-frontstage | Frontstage content must return to Raw / Pool / original source | upgraded |
 | V3.0.0-data-observation-desk | Frontstage became Data Observation Desk; V2 public pages were retired while operations dashboard stayed | upgraded |

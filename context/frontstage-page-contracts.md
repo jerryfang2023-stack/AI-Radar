@@ -1,7 +1,7 @@
 ---
 status: current
 scope: frontstage-page-contracts
-last_updated: 2026-06-06
+last_updated: 2026-06-07
 use_when:
   - page change
   - navigation change
@@ -32,6 +32,8 @@ The business-signal and first-line viewpoint pages must share the same global na
 - dashboard: `operations-console.html#dashboard`
 
 The two public pages must use `assets/wavesight-nav.css` and keep the same topbar structure and height.
+
+First-Line Viewpoints is visually part of the same frontstage, but its data build is independent. Raw / Pool / Card failures in Business Signals must not block the builders page from refreshing or preserving its previous good data.
 
 ## Change Types
 

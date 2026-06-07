@@ -30,7 +30,6 @@ const scriptNonTagLiterals = new Set([
   "opinion-intake",
   "opinion-translation",
   "source-router",
-  "customer-service-proof",
 ]);
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");

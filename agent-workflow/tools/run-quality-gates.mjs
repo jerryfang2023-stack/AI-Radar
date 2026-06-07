@@ -277,7 +277,7 @@ const writeReport = (runs) => {
   const status = failed.length ? "failed" : "passed";
   const automationNote =
     mode === "automation"
-      ? "\n- 自动化模式检查 V2.2 每日生产线相关脚本语法。"
+      ? "\n- 自动化模式检查 V3.3.1 Business Signals / First-Line Viewpoints / Dashboard 生产线相关脚本语法。"
       : "";
 
   const commandLines = runs
@@ -311,11 +311,11 @@ ${commandLines || "无"}
 ## 说明
 
 - 本脚本是 \`quality-gates.md\` 的统一入口。
-- V2.2.1 阶段默认检查 \`01-SiteV2/site/\` 与当前 \`agent-workflow/tools/\` 脚本。
-- \`content\`、\`v2content\` 和 \`all\` 会运行 V2 content gate；需要指定日期时使用 \`--date=YYYY-MM-DD\`。
+- V3.3.1 阶段默认检查 \`01-SiteV2/site/\` 与当前 \`agent-workflow/tools/\` 脚本。
+- \`all\` 会运行当前可用的内容、前台回归和 tag 质量门；需要指定日期时使用 \`--date=YYYY-MM-DD\`。
 - \`style\` 会检查三个 writer 的文章产物是否出现禁词、抽象名词和高频重复句式。
 - \`regression\` 会检查前台是否出现旧版本口径、已退休组件、旧模块文案、合成 fallback 内容、过期前台日期、过期缓存参数或趋势泛关联。
-- \`automation\` 检查 V2.2.1 每日生产线相关脚本语法。
+- \`automation\` 检查 V3.3.1 Business Signals / First-Line Viewpoints / Dashboard 生产线相关脚本语法。
 - 未覆盖的浏览器截图、多身份权限和人工内容判断，仍需 Build & Release 发布检查或 Product Commander 专项复核。
 `;
 
