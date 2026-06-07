@@ -448,6 +448,9 @@ function subjectFromTitle(title = "") {
 
 function normalizeSubject(value = "") {
   const clean = cleanSubject(value);
+  if (/^Moonshot AI\b/iu.test(clean)) return "Moonshot AI";
+  if (/^Meta\b|^Meta 在其 AI 应用中/iu.test(clean)) return "Meta";
+  if (/^Qwen3\.7-Plus\b/iu.test(clean)) return "Qwen3.7-Plus";
   if (/NeoCognition/iu.test(clean)) return "NeoCognition";
   if (/Nimble/iu.test(clean)) return "Nimble";
   if (/Airspeed/iu.test(clean)) return "Airspeed";
@@ -507,6 +510,15 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
   const urlMatch = byUrl.find(([pattern]) => pattern.test(normalized));
   if (urlMatch) return urlMatch[1];
   const byTitle = [
+    [/^How Druid AI helped a global appliance retailer/iu, "Druid AI 帮助全球家电零售商自动化联络中心客服流程"],
+    [/^ASUS Brings Enterprise\s*-\s*to\s*-\s*Edge AI/iu, "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"],
+    [/^GitHub release notes agent\s*-\s*Agno/iu, "Agno 发布 GitHub Release Notes Agent"],
+    [/^GoogleCloudPlatform\/agent-starter-pack/iu, "Google Cloud 发布 Agent Starter Pack 开源模板"],
+    [/^How SaaS Companies Are Monetizing AI Agents in 2026/iu, "SaaS 公司开始探索 AI Agent 的商业化路径"],
+    [/^Top AI Pre-Seed Investors/iu, "AI Pre-seed 投资人榜单"],
+    [/^Snowflake Expands AWS Collaboration with \$6B AI Commitment/iu, "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入"],
+    [/^Pipeshift: Inference for real-time production workloads/iu, "Pipeshift 为实时生产工作负载提供 AI 推理服务"],
+    [/^Gemma 4 with quantization-aware training/iu, "Google DeepMind 发布支持量化感知训练的 Gemma 4"],
     [/^10 AI Procurement Use Cases/iu, "10 个 AI 采购用例与案例研究"],
     [/^Automate Procurement Workflows/iu, "使用 AI Agent 自动化采购工作流"],
     [/^Archestra raises \$10M/iu, "Archestra 融资 1000 万美元，为企业数据接入 AI Agent 搭建中介层"],
@@ -692,12 +704,16 @@ function readRawEvidence(rawJsonRel, rawArchiveRel, sourceUrlHint = "") {
   return { sourceName, sourceUrl, publishedAt, rawTitle, keyExcerpts, visibleFragment, fullText, businessElements, evidenceSeed };
 }
 
-function readPoolEvidence(date = "", poolRef = "") {
+function readPoolEvidence(date = "", poolRef = "", expectedSourceUrl = "") {
   if (!date || !poolRef) return null;
   const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${date}-pool-candidates.md`);
   if (!fs.existsSync(poolFile)) return null;
   const section = sectionByHeading(read(poolFile), `## ${poolRef}`);
   if (!section) return null;
+  const sectionSourceUrl = (section.match(/-\s*source_url:\s*(.+)/u) || [])[1]?.trim() || "";
+  if (expectedSourceUrl && sectionSourceUrl && sectionSourceUrl !== "no-url" && canonicalUrl(sectionSourceUrl) !== canonicalUrl(expectedSourceUrl)) {
+    return null;
+  }
   const keyExcerptObjects = parseJsonLine(section, "key_excerpts") || [];
   const evidenceSeed = parseJsonLine(section, "evidence_seed") || {};
   return {
@@ -1005,16 +1021,18 @@ function isLargeVendorText(value = "") {
 
 const largeVendorPatterns = [
   ["anthropic", /\bAnthropic\b|\bClaude\b/iu],
-  ["google", /\bGoogle\b|\bDeepMind\b|\bGemini\b|\bGoogle\s*Colab\b/iu],
+  ["google", /\bGoogle\b|GoogleCloudPlatform|\bDeepMind\b|\bGemini\b|\bGoogle\s*Colab\b|\bGoogle\s*Cloud\b/iu],
   ["microsoft", /\bMicrosoft\b|\bCopilot\b/iu],
   ["nvidia", /\bNVIDIA\b|\bNvidia\b/iu],
   ["openai", /\bOpenAI\b|\bChatGPT\b/iu],
-  ["amazon", /\bAWS\b|\bAmazon\b|\bBedrock\b/iu],
+  ["github", /\bGitHub\b/iu],
+  ["amazon", /\bAWS\b|\bAmazon\b|\bAmazon\s+Bedrock\b/iu],
   ["meta", /\bMeta\b|\bLlama\b/iu],
   ["apple", /\bApple\b/iu],
   ["oracle", /\bOracle\b/iu],
   ["ibm", /\bIBM\b/iu],
   ["salesforce", /\bSalesforce\b/iu],
+  ["alibaba", /\bAlibaba\b|\bQwen\b|\bTongyi\b|阿里巴巴|通义千问/iu],
 ];
 
 function largeVendorKeyFromText(value = "") {
@@ -1030,9 +1048,6 @@ function largeVendorKeyForCard(card = {}) {
     card.subject,
     card.sourceName,
     card.sourceUrl,
-  ].join(" ")) || largeVendorKeyFromText([
-    card.translatedFact,
-    ...(card.originalHighlights || []),
   ].join(" "));
 }
 
@@ -1073,6 +1088,19 @@ function frontstageImportanceScore(card = {}) {
   return score;
 }
 
+function isGenericFrontstageCandidate(card = {}) {
+  const text = [
+    card.title,
+    card.rawTitle,
+    card.sourceUrl,
+    card.sourceName,
+    card.source,
+  ].filter(Boolean).join(" ");
+  if (/\.pdf(?:$|[?#])|docs\.github\.com|pypi\.org\/project|aws\.amazon\.com\/marketplace/iu.test(text)) return true;
+  if (/startup ideas|buying criteria|adoption 2026|funding record|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|implementation report|market report|complete guide|framework for investors|vertical report|fastest growing|companies\s*&\s*verified leads|complete batch breakdown|\btop\s+\d+\b|\buse cases\b|field guide|glossary|open source toolkit|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(text)) return true;
+  return card.category !== "funding" && /^investing in\b/iu.test(String(card.title || ""));
+}
+
 function selectDailyFrontstageCards(cards = [], limit = 10, largeVendorTotalLimit = 3, largeVendorPerCompanyLimit = 1) {
   const byDate = new Map();
   for (const card of cards) {
@@ -1087,6 +1115,7 @@ function selectDailyFrontstageCards(cards = [], limit = 10, largeVendorTotalLimi
     let largeVendorTotal = 0;
     const largeVendorCounts = new Map();
     const ranked = items
+      .filter((card) => !isGenericFrontstageCandidate(card))
       .map((card) => ({
         ...card,
         largeVendorKey: card.largeVendorKey || largeVendorKeyForCard(card),
@@ -1130,7 +1159,7 @@ function cardFromFile(file, category) {
     || nestedList(fm, "frontend", "sourceLinks")[0]
     || "";
   const poolRefs = arrayValue(fm, "pool_refs");
-  const raw = mergeEvidence(readRawEvidence(rawJson, rawArchive, primarySourceUrl), readPoolEvidence(scalar(fm, "date"), poolRefs[0]));
+  const raw = mergeEvidence(readRawEvidence(rawJson, rawArchive, primarySourceUrl), readPoolEvidence(scalar(fm, "date"), poolRefs[0], primarySourceUrl));
   const rawTitle = recoverCompleteTitleFromFullText(rawTitleFromArchive || raw.rawTitle || "", raw.fullText);
   const sourceUrl = primarySourceUrl || raw.sourceUrl;
   const explicitSourceName = scalar(fm, "source_name") || raw.sourceName || "";

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>商业关系图 Demo｜观澜 AI</title>
+  <link rel="stylesheet" href="assets/wavesight-nav.css">
+  <link rel="stylesheet" href="assets/relationship-graph-demo.css">
+</head>
+<body class="relationship-demo-page">
+  <header class="wavesight-topbar" aria-label="观澜 AI 导航">
+    <a class="wavesight-brand" href="v3-data-observation.html" aria-label="观澜 AI 首页">
+      <img class="wavesight-logo" src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
+    </a>
+    <nav class="wavesight-nav" aria-label="主导航">
+      <a href="v3-data-observation.html">商业信号<span>Business Signals</span></a>
+      <a href="relationship-graph-demo.html" aria-current="page">关系图<span>Relation Demo</span></a>
+      <a href="operations-console.html#dashboard">仪表盘<span>Dashboard</span></a>
+    </nav>
+  </header>
+
+  <main class="relation-shell">
+    <section class="relation-overview" aria-labelledby="page-title">
+      <div class="title-block">
+        <p class="demo-kicker">Relationship Graph Demo</p>
+        <h1 id="page-title">商业关系图工作台</h1>
+      </div>
+      <div class="overview-metrics" aria-label="示例数据概览">
+        <div class="metric">
+          <span data-metric-cards>0</span>
+          <strong>Card 证据</strong>
+        </div>
+        <div class="metric">
+          <span data-metric-entities>0</span>
+          <strong>主体节点</strong>
+        </div>
+        <div class="metric">
+          <span data-metric-candidates>0</span>
+          <strong>候选迹象</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="control-strip" aria-label="筛选条件">
+      <div class="segmented-control" data-type-filters></div>
+      <div class="tag-strip" data-tag-filters></div>
+    </section>
+
+    <section class="relation-workbench" aria-label="商业关系图">
+      <div class="network-panel">
+        <div class="panel-head">
+          <div>
+            <p class="demo-kicker">Network</p>
+            <h2>关系网络</h2>
+          </div>
+          <span class="panel-status" data-filter-status>全部信号</span>
+        </div>
+        <div class="network-canvas" data-network-canvas>
+          <svg class="network-lines" data-network-lines aria-hidden="true"></svg>
+          <div class="network-nodes" data-network-nodes></div>
+        </div>
+      </div>
+
+      <aside class="signal-panel" aria-labelledby="signal-title">
+        <div class="panel-head">
+          <div>
+            <p class="demo-kicker">Evidence Cards</p>
+            <h2 id="signal-title">证据列表</h2>
+          </div>
+          <span class="panel-count" data-card-count>0</span>
+        </div>
+        <div class="signal-list" data-signal-list></div>
+      </aside>
+    </section>
+
+    <section class="insight-grid" aria-label="关系分析视图">
+      <div class="timeline-panel">
+        <div class="panel-head">
+          <div>
+            <p class="demo-kicker">Timeline</p>
+            <h2>时间聚集</h2>
+          </div>
+        </div>
+        <div class="timeline" data-timeline></div>
+      </div>
+
+      <div class="tags-panel">
+        <div class="panel-head">
+          <div>
+            <p class="demo-kicker">Tags</p>
+            <h2>Tag 聚合</h2>
+          </div>
+        </div>
+        <div class="tag-cards" data-tag-cards></div>
+      </div>
+
+      <div class="candidate-panel">
+        <div class="panel-head">
+          <div>
+            <p class="demo-kicker">Signal Candidates</p>
+            <h2>迹象候选</h2>
+          </div>
+        </div>
+        <div class="candidate-list" data-candidate-list></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/relationship-graph-demo.js" defer></script>
+</body>
+</html>

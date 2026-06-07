@@ -1,0 +1,278 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-044",
+  "title": "This simulation startup wants to be the Cursor for physical AI",
+  "original_url": "https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/",
+  "canonical_url": "https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "news",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_market_trend",
+  "search_path": "a_media_gdelt",
+  "search_path_label": "A 级媒体 / GDELT 路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-07T04:07:12.683Z",
+  "language": "mixed",
+  "full_text": "Image Credits: Antioch\nAI\nThis simulation startup wants to be the Cursor for physical AI\nTim Fernholz\n5:30 AM PDT · April 16, 2026\nThe promise of physical AI is that engineers will be able to program physical agents the same way they do digital ones.\nWe’re not there yet. Robotics is still held back by a paucity of data from physical spaces. To train their machines, companies need to build mock-up warehouses to test their machines, while an entire industry is springing up around surveilling factory lines and gig workers to train deep learning models to operate robots.\nAnother option is simulation; detailed virtual replicas of real-world environments could provide the data and workspaces that roboticists need to do this work in a scalable way.\nAntioch , a startup building simulation tools for robot developers, wants to close what the industry calls the sim-to-real gap — the challenge of making virtual environments realistic enough that robots trained inside them can operate reliably in the physical world.\n“How can we do the best possible job reducing that gap, to make simulation feel just like the real world from the perspective of your autonomous system?” Antioch co-founder Harry Mellsop said.\nTo do that, the company told TechCrunch today that it has raised an $8.5 million seed round that values it at $60 million, led by venture firm A* and Category Ventures, with additional participation from MaC Venture Capital, Abstract, Box Group, and Icehouse Ventures.\nMellsop started the New York-based company with four co-founders in May of last year. Two of the other founders, Alex Langshur and Michael Calvey, joined him to co-found Transpose, a security and intelligence startup, and sell it to Chainalysis for an undisclosed amount. The other two — Collin Schlager and Colton Swingle — previously worked at Meta Reality Labs and Google DeepMind, respectively.\nThe need for better simulation is at the heart of what many major autonomy companies are doing. In the self-driving car space, for example, Waymo uses Google DeepMind’s world model to test and evaluate its driving model. In theory, that technique will make deploying Waymo vehicles in new areas require less data collection, a key cost in scaling up autonomous vehicle technology.\nBuilding and using those models to test robots is arguably a different set of skills than creating a self-driving car, and Antioch wants to build the platform that solves that problem for newer companies without the capital to do it all themselves. Those smaller companies also don’t have the capital to build physical testing arenas or drive sensor-studded cars for a few million miles.\n“The vast majority of the industry doesn’t use simulation whatsoever, and I think we’re now just really understanding clearly that we need to move faster,” Mellsop said.\nAntioch executives compare their product to Cursor, the popular AI-powered software development tool. Antioch allows robot builders to spin up multiple digital instances of their hardware and connect them to simulated sensors that mimic the same data the robot’s software would receive in the real world. These environments allow developers to test edge cases, perform reinforcement learning, or generate new training data.\nIf, that is, the simulation is sufficiently high fidelity. The challenge here is making sure the physics in the simulation matches reality so that when the model is put in charge of a real machine, nothing goes wrong. The company starts with models built by Nvidia, World Labs, and others, and builds domain-specific libraries to make them easy to use. Working with multiple customers, executives say, gives Antioch a depth of context for refining its simulations that no single physical AI company could match on its own.\n“What happened with software engineering and LLMs is just starting to happen with physical AI,” Çağla Kaymaz, a partner at Category Ventures, told TechCrunch. “We do a lot of work on dev tools, and we love that vertical, but the challenges are different. With software, you can have these bad coding tools, and the risk is generally pretty contained to the digital world. In the physical world, the stakes are much higher.”\nAntioch’s focus now is mainly on sensor and perception systems, which account for the bulk of the need in automated cars and trucks, farm and construction machinery, or aerial drones. Aspirations for physical AI to power generalized robots to replicate human tasks are further away. While Antioch’s pitch is to startups, some of its earliest engagements have been with huge multinationals that are already investing heavily in robotics.\nAdrian Macneil has a solid understanding of this space. As an executive at the self-driving startup Cruise, he built the company’s data infrastructure, and in 2021 founded Foxglove, a company that offers the same kind of data pipelines to physical AI startups. Macneil is backing Antioch as an angel investor.\n“Simulation is really important when you’re trying to build a safety case or dealing with very high-accuracy tasks,” he said at the Ride AI conference in San Francisco on Wednesday. “It’s not possible to drive enough miles in the real world.”\nMacneil would like to see the same kind of tools that drove the SaaS revolution — platforms like GitHub, Stripe, and Twilio — emerging to support physical AI. “We need a lot more of the entire toolchain to be available off the shelf,” he told TechCrunch.\n“We genuinely all think that anyone building an autonomous system for the real world is going to do so in software primarily in two to three years,” Mellsop said. “It’s the first time you can have autonomous agents iterate on a physical autonomy system, and actually close the feedback loop.”\nThere are already experiments in this direction. David Mayo, a researcher at MIT’s Computer Science and Artificial Intelligence Laboratory, is using Antioch’s platform to evaluate LLMs. In one experiment, Mayo has AI models design robots, then use Antioch’s simulator to test them. It can even pit the models against each other in simulated contests, like pushing a rival bot off a platform. Giving the LLMs a realistic sandbox could help provide a new paradigm for benchmarking them.\nBefore a world of AI engineers arrives, however, there is still more work ahead to close the gap between the digital models and the real world. If it can be done, developers will be able to create the kind of data flywheel that Macneil believes is the key to the success of category leaders like Waymo, where engineers are increasingly confident that next month’s model will be more capable than the last.\nIf other companies want to replicate that success, they’ll need to build those tools themselves — or buy them.\nTopics\nA* , AI , Antioch , Exclusive , Robotics\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim Fernholz\nSenior Reporter\nTim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.\nYou can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nGoogle will pay SpaceX $920M per month for compute\nSean O'Kane\nMira Murati steps back into the spotlight, carefully\nConnie Loizos\nMicrosoft launches Scout, an OpenClaw-inspired personal assistant\nRussell Brandom\nHackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access\nLorenzo Franceschi-Bicchierai\nAnthropic files to go public\nKirsten Korosec\nDuckDuckGo makes its ‘no-AI’ search engine easier to access as its traffic booms\nSarah Perez\nStrava declares war on scrapers ahead of IPO\nIvan Mehta\nLoading the next article\nError loading the next article",
+  "clean_text": "Image Credits: Antioch\nAI\nThis simulation startup wants to be the Cursor for physical AI\nTim Fernholz\n5:30 AM PDT · April 16, 2026\nThe promise of physical AI is that engineers will be able to program physical agents the same way they do digital ones.\nWe’re not there yet. Robotics is still held back by a paucity of data from physical spaces. To train their machines, companies need to build mock-up warehouses to test their machines, while an entire industry is springing up around surveilling factory lines and gig workers to train deep learning models to operate robots.\nAnother option is simulation; detailed virtual replicas of real-world environments could provide the data and workspaces that roboticists need to do this work in a scalable way.\nAntioch , a startup building simulation tools for robot developers, wants to close what the industry calls the sim-to-real gap — the challenge of making virtual environments realistic enough that robots trained inside them can operate reliably in the physical world.\n“How can we do the best possible job reducing that gap, to make simulation feel just like the real world from the perspective of your autonomous system?” Antioch co-founder Harry Mellsop said.\nTo do that, the company told TechCrunch today that it has raised an $8.5 million seed round that values it at $60 million, led by venture firm A* and Category Ventures, with additional participation from MaC Venture Capital, Abstract, Box Group, and Icehouse Ventures.\nMellsop started the New York-based company with four co-founders in May of last year. Two of the other founders, Alex Langshur and Michael Calvey, joined him to co-found Transpose, a security and intelligence startup, and sell it to Chainalysis for an undisclosed amount. The other two — Collin Schlager and Colton Swingle — previously worked at Meta Reality Labs and Google DeepMind, respectively.\nThe need for better simulation is at the heart of what many major autonomy companies are doing. In the self-driving car space, for example, Waymo uses Google DeepMind’s world model to test and evaluate its driving model. In theory, that technique will make deploying Waymo vehicles in new areas require less data collection, a key cost in scaling up autonomous vehicle technology.\nBuilding and using those models to test robots is arguably a different set of skills than creating a self-driving car, and Antioch wants to build the platform that solves that problem for newer companies without the capital to do it all themselves. Those smaller companies also don’t have the capital to build physical testing arenas or drive sensor-studded cars for a few million miles.\n“The vast majority of the industry doesn’t use simulation whatsoever, and I think we’re now just really understanding clearly that we need to move faster,” Mellsop said.\nAntioch executives compare their product to Cursor, the popular AI-powered software development tool. Antioch allows robot builders to spin up multiple digital instances of their hardware and connect them to simulated sensors that mimic the same data the robot’s software would receive in the real world. These environments allow developers to test edge cases, perform reinforcement learning, or generate new training data.\nIf, that is, the simulation is sufficiently high fidelity. The challenge here is making sure the physics in the simulation matches reality so that when the model is put in charge of a real machine, nothing goes wrong. The company starts with models built by Nvidia, World Labs, and others, and builds domain-specific libraries to make them easy to use. Working with multiple customers, executives say, gives Antioch a depth of context for refining its simulations that no single physical AI company could match on its own.\n“What happened with software engineering and LLMs is just starting to happen with physical AI,” Çağla Kaymaz, a partner at Category Ventures, told TechCrunch. “We do a lot of work on dev tools, and we love that vertical, but the challenges are different. With software, you can have these bad coding tools, and the risk is generally pretty contained to the digital world. In the physical world, the stakes are much higher.”\nAntioch’s focus now is mainly on sensor and perception systems, which account for the bulk of the need in automated cars and trucks, farm and construction machinery, or aerial drones. Aspirations for physical AI to power generalized robots to replicate human tasks are further away. While Antioch’s pitch is to startups, some of its earliest engagements have been with huge multinationals that are already investing heavily in robotics.\nAdrian Macneil has a solid understanding of this space. As an executive at the self-driving startup Cruise, he built the company’s data infrastructure, and in 2021 founded Foxglove, a company that offers the same kind of data pipelines to physical AI startups. Macneil is backing Antioch as an angel investor.\n“Simulation is really important when you’re trying to build a safety case or dealing with very high-accuracy tasks,” he said at the Ride AI conference in San Francisco on Wednesday. “It’s not possible to drive enough miles in the real world.”\nMacneil would like to see the same kind of tools that drove the SaaS revolution — platforms like GitHub, Stripe, and Twilio — emerging to support physical AI. “We need a lot more of the entire toolchain to be available off the shelf,” he told TechCrunch.\n“We genuinely all think that anyone building an autonomous system for the real world is going to do so in software primarily in two to three years,” Mellsop said. “It’s the first time you can have autonomous agents iterate on a physical autonomy system, and actually close the feedback loop.”\nThere are already experiments in this direction. David Mayo, a researcher at MIT’s Computer Science and Artificial Intelligence Laboratory, is using Antioch’s platform to evaluate LLMs. In one experiment, Mayo has AI models design robots, then use Antioch’s simulator to test them. It can even pit the models against each other in simulated contests, like pushing a rival bot off a platform. Giving the LLMs a realistic sandbox could help provide a new paradigm for benchmarking them.\nBefore a world of AI engineers arrives, however, there is still more work ahead to close the gap between the digital models and the real world. If it can be done, developers will be able to create the kind of data flywheel that Macneil believes is the key to the success of category leaders like Waymo, where engineers are increasingly confident that next month’s model will be more capable than the last.\nIf other companies want to replicate that success, they’ll need to build those tools themselves — or buy them.\nTopics\nA* , AI , Antioch , Exclusive , Robotics\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim Fernholz\nSenior Reporter\nTim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.\nYou can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nGoogle will pay SpaceX $920M per month for compute\nSean O'Kane\nMira Murati steps back into the spotlight, carefully\nConnie Loizos\nMicrosoft launches Scout, an OpenClaw-inspired personal assistant\nRussell Brandom\nHackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access\nLorenzo Franceschi-Bicchierai\nAnthropic files to go public\nKirsten Korosec\nDuckDuckGo makes its ‘no-AI’ search engine easier to access as its traffic booms\nSarah Perez\nStrava declares war on scrapers ahead of IPO\nIvan Mehta\nLoading the next article\nError loading the next article",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-06/r-044-this-simulation-startup-wants-to-be-the-cursor-for-physical-ai.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-06/r-044-this-simulation-startup-wants-to-be-the-cursor-for-physical-ai.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8364,
+    "paragraph_count": 39,
+    "sentence_count": 53,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0001,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 8364,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "ee3ee3c120a5d40d",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "63d28a951080fc31",
+  "content_hash": "ee3ee3c120a5d40d",
+  "full_text_hash": "ee3ee3c120a5d40d",
+  "semantic_hash": "e70bc42fcf109099",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-07T04:07:12.683Z",
+  "last_seen_at": "2026-06-07T04:07:12.683Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Antioch, a startup building simulation tools for robot developers, wants to close what the industry calls the sim-to-real gap — the challenge of making virtual environments realistic enough that robots trained inside them can operate reliably in the physical world. To do that, the company told Tech.... / query=pre-seed AI startup vertical AI design partner / intent=find_market_trend / path=a_media_gdelt",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Image Credits: Antioch AI This simulation startup wants to be the Cursor for physical AI Tim Fernholz 5:30 AM PDT · April 16, 2026 The promise of physical AI is that engineers will be able to program physical agents the same way they do digital ones.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "We’re not there yet.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Robotics is still held back by a paucity of data from physical spaces.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "To train their machines, companies need to build mock-up warehouses to test their machines, while an entire industry is springing up around surveilling factory lines and gig workers to train deep learning models to operate robots.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Another option is simulation; detailed virtual replicas of real-world environments could provide the data and workspaces that roboticists need to do this work in a scalable way.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Anthropic",
+      "Google",
+      "Microsoft",
+      "GitHub",
+      "Meta",
+      "Nvidia",
+      "Cursor"
+    ],
+    "products": [
+      "Cursor",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险",
+      "制造 / 工业",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "5",
+      "30",
+      "16",
+      "2026",
+      "$8.5 million",
+      "$60 million",
+      "2021",
+      "21"
+    ],
+    "quotes": [
+      "How can we do the best possible job reducing that gap, to make simulation feel just like the real world from the perspective of your autonomous system?",
+      "The vast majority of the industry doesn’t use simulation whatsoever, and I think we’re now just really understanding clearly that we need to move faster,",
+      "What happened with software engineering and LLMs is just starting to happen with physical AI,",
+      "Simulation is really important when you’re trying to build a safety case or dealing with very high-accuracy tasks,",
+      "It’s not possible to drive enough miles in the real world."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Antioch, a startup building simulation tools for robot developers, wants to close what the industry calls the sim-to-real gap — the challenge of making virtual environments realistic enough that robots trained inside them can operate reliably in the physical world. To do that, the company told Tech.... / query=pre-seed AI startup vertical AI design partner / intent=find_market_trend / path=a_media_gdelt",
+      "Image Credits: Antioch AI This simulation startup wants to be the Cursor for physical AI Tim Fernholz 5:30 AM PDT · April 16, 2026 The promise of physical AI is that engineers will be able to program physical agents the same way they do digital ones.",
+      "We’re not there yet."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# This simulation startup wants to be the Cursor for physical AI\n\n- raw_id: R-044\n- original_url: https://techcrunch.com/2026/04/16/this-simulation-startup-wants-to-be-the-cursor-for-physical-ai/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-07T04:07:12.683Z\n\n## clean_text\n\nImage Credits: Antioch\nAI\nThis simulation startup wants to be the Cursor for physical AI\nTim Fernholz\n5:30 AM PDT · April 16, 2026\nThe promise of physical AI is that engineers will be able to program physical agents the same way they do digital ones.\nWe’re not there yet. Robotics is still held back by a paucity of data from physical spaces. To train their machines, companies need to build mock-up warehouses to test their machines, while an entire industry is springing up around surveilling factory lines and gig workers to train deep learning models to operate robots.\nAnother option is simulation; detailed virtual replicas of real-world environments could provide the data and workspaces that roboticists need to do this work in a scalable way.\nAntioch , a startup building simulation tools for robot developers, wants to close what the industry calls the sim-to-real gap — the challenge of making virtual environments realistic enough that robots trained inside them can operate reliably in the physical world.\n“How can we do the best possible job reducing that gap, to make simulation feel just like the real world from the perspective of your autonomous system?” Antioch co-founder Harry Mellsop said.\nTo do that, the company told TechCrunch today that it has raised an $8.5 million seed round that values it at $60 million, led by venture firm A* and Category Ventures, with additional participation from MaC Venture Capital, Abstract, Box Group, and Icehouse Ventures.\nMellsop started the New York-based company with four co-founders in May of last year. Two of the other founders, Alex Langshur and Michael Calvey, joined him to co-found Transpose, a security and intelligence startup, and sell it to Chainalysis for an undisclosed amount. The other two — Collin Schlager and Colton Swingle — previously worked at Meta Reality Labs and Google DeepMind, respectively.\nThe need for better simulation is at the heart of what many major autonomy companies are doing. In the self-driving car space, for example, Waymo uses Google DeepMind’s world model to test and evaluate its driving model. In theory, that technique will make deploying Waymo vehicles in new areas require less data collection, a key cost in scaling up autonomous vehicle technology.\nBuilding and using those models to test robots is arguably a different set of skills than creating a self-driving car, and Antioch wants to build the platform that solves that problem for newer companies without the capital to do it all themselves. Those smaller companies also don’t have the capital to build physical testing arenas or drive sensor-studded cars for a few million miles.\n“The vast majority of the industry doesn’t use simulation whatsoever, and I think we’re now just really understanding clearly that we need to move faster,” Mellsop said.\nAntioch executives compare their product to Cursor, the popular AI-powered software development tool. Antioch allows robot builders to spin up multiple digital instances of their hardware and connect them to simulated sensors that mimic the same data the robot’s software would receive in the real world. These environments allow developers to test edge cases, perform reinforcement learning, or generate new training data.\nIf, that is, the simulation is sufficiently high fidelity. The challenge here is making sure the physics in the simulation matches reality so that when the model is put in charge of a real machine, nothing goes wrong. The company starts with models built by Nvidia, World Labs, and others, and builds domain-specific libraries to make them easy to use. Working with multiple customers, executives say, gives Antioch a depth of context for refining its simulations that no single physical AI company could match on its own.\n“What happened with software engineering and LLMs is just starting to happen with physical AI,” Çağla Kaymaz, a partner at Category Ventures, told TechCrunch. “We do a lot of work on dev tools, and we love that vertical, but the challenges are different. With software, you can have these bad coding tools, and the risk is generally pretty contained to the digital world. In the physical world, the stakes are much higher.”\nAntioch’s focus now is mainly on sensor and perception systems, which account for the bulk of the need in automated cars and trucks, farm and construction machinery, or aerial drones. Aspirations for physical AI to power generalized robots to replicate human tasks are further away. While Antioch’s pitch is to startups, some of its earliest engagements have been with huge multinationals that are already investing heavily in robotics.\nAdrian Macneil has a solid understanding of this space. As an executive at the self-driving startup Cruise, he built the company’s data infrastructure, and in 2021 founded Foxglove, a company that offers the same kind of data pipelines to physical AI startups. Macneil is backing Antioch as an angel investor.\n“Simulation is really important when you’re trying to build a safety case or dealing with very high-accuracy tasks,” he said at the Ride AI conference in San Francisco on Wednesday. “It’s not possible to drive enough miles in the real world.”\nMacneil would like to see the same kind of tools that drove the SaaS revolution — platforms like GitHub, Stripe, and Twilio — emerging to support physical AI. “We need a lot more of the entire toolchain to be available off the shelf,” he told TechCrunch.\n“We genuinely all think that anyone building an autonomous system for the real world is going to do so in software primarily in two to three years,” Mellsop said. “It’s the first time you can have autonomous agents iterate on a physical autonomy system, and actually close the feedback loop.”\nThere are already experiments in this direction. David Mayo, a researcher at MIT’s Computer Science and Artificial Intelligence Laboratory, is using Antioch’s platform to evaluate LLMs. In one experiment, Mayo has AI models design robots, then use Antioch’s simulator to test them. It can even pit the models against each other in simulated contests, like pushing a rival bot off a platform. Giving the LLMs a realistic sandbox could help provide a new paradigm for benchmarking them.\nBefore a world of AI engineers arrives, however, there is still more work ahead to close the gap between the digital models and the real world. If it can be done, developers will be able to create the kind of data flywheel that Macneil believes is the key to the success of category leaders like Waymo, where engineers are increasingly confident that next month’s model will be more capable than the last.\nIf other companies want to replicate that success, they’ll need to build those tools themselves — or buy them.\nTopics\nA* , AI , Antioch , Exclusive , Robotics\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim Fernholz\nSenior Reporter\nTim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.\nYou can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nGoogle will pay SpaceX $920M per month for compute\nSean O'Kane\nMira Murati steps back into the spotlight, carefully\nConnie Loizos\nMicrosoft launches Scout, an OpenClaw-inspired personal assistant\nRussell Brandom\nHackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access\nLorenzo Franceschi-Bicchierai\nAnthropic files to go public\nKirsten Korosec\nDuckDuckGo makes its ‘no-AI’ search engine easier to access as its traffic booms\nSarah Perez\nStrava declares war on scrapers ahead of IPO\nIvan Mehta\nLoading the next article\nError loading the next article\n\n## full_text\n\nImage Credits: Antioch\nAI\nThis simulation startup wants to be the Cursor for physical AI\nTim Fernholz\n5:30 AM PDT · April 16, 2026\nThe promise of physical AI is that engineers will be able to program physical agents the same way they do digital ones.\nWe’re not there yet. Robotics is still held back by a paucity of data from physical spaces. To train their machines, companies need to build mock-up warehouses to test their machines, while an entire industry is springing up around surveilling factory lines and gig workers to train deep learning models to operate robots.\nAnother option is simulation; detailed virtual replicas of real-world environments could provide the data and workspaces that roboticists need to do this work in a scalable way.\nAntioch , a startup building simulation tools for robot developers, wants to close what the industry calls the sim-to-real gap — the challenge of making virtual environments realistic enough that robots trained inside them can operate reliably in the physical world.\n“How can we do the best possible job reducing that gap, to make simulation feel just like the real world from the perspective of your autonomous system?” Antioch co-founder Harry Mellsop said.\nTo do that, the company told TechCrunch today that it has raised an $8.5 million seed round that values it at $60 million, led by venture firm A* and Category Ventures, with additional participation from MaC Venture Capital, Abstract, Box Group, and Icehouse Ventures.\nMellsop started the New York-based company with four co-founders in May of last year. Two of the other founders, Alex Langshur and Michael Calvey, joined him to co-found Transpose, a security and intelligence startup, and sell it to Chainalysis for an undisclosed amount. The other two — Collin Schlager and Colton Swingle — previously worked at Meta Reality Labs and Google DeepMind, respectively.\nThe need for better simulation is at the heart of what many major autonomy companies are doing. In the self-driving car space, for example, Waymo uses Google DeepMind’s world model to test and evaluate its driving model. In theory, that technique will make deploying Waymo vehicles in new areas require less data collection, a key cost in scaling up autonomous vehicle technology.\nBuilding and using those models to test robots is arguably a different set of skills than creating a self-driving car, and Antioch wants to build the platform that solves that problem for newer companies without the capital to do it all themselves. Those smaller companies also don’t have the capital to build physical testing arenas or drive sensor-studded cars for a few million miles.\n“The vast majority of the industry doesn’t use simulation whatsoever, and I think we’re now just really understanding clearly that we need to move faster,” Mellsop said.\nAntioch executives compare their product to Cursor, the popular AI-powered software development tool. Antioch allows robot builders to spin up multiple digital instances of their hardware and connect them to simulated sensors that mimic the same data the robot’s software would receive in the real world. These environments allow developers to test edge cases, perform reinforcement learning, or generate new training data.\nIf, that is, the simulation is sufficiently high fidelity. The challenge here is making sure the physics in the simulation matches reality so that when the model is put in charge of a real machine, nothing goes wrong. The company starts with models built by Nvidia, World Labs, and others, and builds domain-specific libraries to make them easy to use. Working with multiple customers, executives say, gives Antioch a depth of context for refining its simulations that no single physical AI company could match on its own.\n“What happened with software engineering and LLMs is just starting to happen with physical AI,” Çağla Kaymaz, a partner at Category Ventures, told TechCrunch. “We do a lot of work on dev tools, and we love that vertical, but the challenges are different. With software, you can have these bad coding tools, and the risk is generally pretty contained to the digital world. In the physical world, the stakes are much higher.”\nAntioch’s focus now is mainly on sensor and perception systems, which account for the bulk of the need in automated cars and trucks, farm and construction machinery, or aerial drones. Aspirations for physical AI to power generalized robots to replicate human tasks are further away. While Antioch’s pitch is to startups, some of its earliest engagements have been with huge multinationals that are already investing heavily in robotics.\nAdrian Macneil has a solid understanding of this space. As an executive at the self-driving startup Cruise, he built the company’s data infrastructure, and in 2021 founded Foxglove, a company that offers the same kind of data pipelines to physical AI startups. Macneil is backing Antioch as an angel investor.\n“Simulation is really important when you’re trying to build a safety case or dealing with very high-accuracy tasks,” he said at the Ride AI conference in San Francisco on Wednesday. “It’s not possible to drive enough miles in the real world.”\nMacneil would like to see the same kind of tools that drove the SaaS revolution — platforms like GitHub, Stripe, and Twilio — emerging to support physical AI. “We need a lot more of the entire toolchain to be available off the shelf,” he told TechCrunch.\n“We genuinely all think that anyone building an autonomous system for the real world is going to do so in software primarily in two to three years,” Mellsop said. “It’s the first time you can have autonomous agents iterate on a physical autonomy system, and actually close the feedback loop.”\nThere are already experiments in this direction. David Mayo, a researcher at MIT’s Computer Science and Artificial Intelligence Laboratory, is using Antioch’s platform to evaluate LLMs. In one experiment, Mayo has AI models design robots, then use Antioch’s simulator to test them. It can even pit the models against each other in simulated contests, like pushing a rival bot off a platform. Giving the LLMs a realistic sandbox could help provide a new paradigm for benchmarking them.\nBefore a world of AI engineers arrives, however, there is still more work ahead to close the gap between the digital models and the real world. If it can be done, developers will be able to create the kind of data flywheel that Macneil believes is the key to the success of category leaders like Waymo, where engineers are increasingly confident that next month’s model will be more capable than the last.\nIf other companies want to replicate that success, they’ll need to build those tools themselves — or buy them.\nTopics\nA* , AI , Antioch , Exclusive , Robotics\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim Fernholz\nSenior Reporter\nTim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.\nYou can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nGoogle will pay SpaceX $920M per month for compute\nSean O'Kane\nMira Murati steps back into the spotlight, carefully\nConnie Loizos\nMicrosoft launches Scout, an OpenClaw-inspired personal assistant\nRussell Brandom\nHackers hijacked Instagram accounts by tricking Meta AI support chatbot into granting access\nLorenzo Franceschi-Bicchierai\nAnthropic files to go public\nKirsten Korosec\nDuckDuckGo makes its ‘no-AI’ search engine easier to access as its traffic booms\nSarah Perez\nStrava declares war on scrapers ahead of IPO\nIvan Mehta\nLoading the next article\nError loading the next article\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / daily_observation, heatmap, trend / high] Antioch, a startup building simulation tools for robot developers, wants to close what the industry calls the sim-to-real gap — the challenge of making virtual environments realistic enough that robots trained inside them can operate reliably in the physical world. To do that, the company told Tech.... / query=pre-seed AI startup vertical AI design partner / intent=find_market_trend / path=a_media_gdelt\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] Image Credits: Antioch AI This simulation startup wants to be the Cursor for physical AI Tim Fernholz 5:30 AM PDT · April 16, 2026 The promise of physical AI is that engineers will be able to program physical agents the same way they do digital ones.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] We’re not there yet.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] Robotics is still held back by a paucity of data from physical spaces.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] To train their machines, companies need to build mock-up warehouses to test their machines, while an entire industry is springing up around surveilling factory lines and gig workers to train deep learning models to operate robots.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] Another option is simulation; detailed virtual replicas of real-world environments could provide the data and workspaces that roboticists need to do this work in a scalable way.\n"
+}

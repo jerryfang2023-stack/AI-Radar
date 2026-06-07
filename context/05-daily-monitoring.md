@@ -81,6 +81,25 @@ Monitoring must cover:
 
 Large-company items are allowed, but they cannot dominate the day.
 
+Current quantity gates:
+
+- daily production chain expects at least 150 active Raw candidates;
+- daily Pool gate expects at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items;
+- each required importance lane should keep at least 5 Pool candidates before downstream release;
+- frontstage Card presentation must publish exactly 10 business signals per active date.
+- Signal Card assets should cover all qualified Core Pool items so relationship graph and trend-candidate modules can use non-displayed evidence.
+
+Large-company boundary:
+
+- Raw can collect large-company evidence for coverage, but should not be used to fill quantity by repeating platform/lab product news;
+- Pool can keep large-company evidence, but usable `core_pool` should stay below 10 large-company items and below 35% of core evidence by default;
+- usable `core_pool` should include at least 20 non-large-company items by default;
+- frontstage Card presentation is stricter: no more than 1 Card for the same large company per date, and no more than 3 large-company Cards in total per date;
+- frontstage Card order must be the daily top 10 by importance, not category order;
+- if frontstage Top 10 cannot be filled after these caps, increase Raw coverage and repair Pool/Core Pool balance instead of padding with repeated large-company news;
+- relationship graph and trend candidates still use the full eligible Core Pool / Card asset set, not only the frontstage Top 10;
+- when the limit is reached, prefer emerging-company financing, real customer deployment, vertical workflow case, pricing/procurement/regulatory signal, or non-platform infrastructure evidence.
+
 ## Output Paths
 
 ```text
@@ -93,4 +112,3 @@ agent-workflow/reports/
 ## Paused
 
 Opinion / follow-builders is not part of current business-signal monitoring.
-

@@ -1,0 +1,208 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-057
+title: "OpenAI 前 CTO 回忆奥尔特曼被罢免：若未回归公司或已瓦解"
+original_url: "https://www.ithome.com/0/960/893.htm"
+canonical_url: "https://ithome.com/0/960/893.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-06T07:32:30.000Z"
+collected_at: 2026-06-07T05:57:12.709Z
+language: mixed
+full_text_hash: 1b30c05527c0c4dd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-057-openai-前-cto-回忆奥尔特曼被罢免-若未回归公司或已瓦解.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-057-openai-前-cto-回忆奥尔特曼被罢免-若未回归公司或已瓦解.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 43
+extractor_diagnostics: {"readability_score":43,"text_length":545,"paragraph_count":7,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 545
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b30c05527c0c4dd","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 前 CTO 回忆奥尔特曼被罢免：若未回归公司或已瓦解","discovery_summary":"OpenAI 前首席技术官米拉·穆拉蒂表示，如果萨姆·奥尔特曼在 2023 年被董事会罢免后未能回归，公司很可能已经瓦解。奥尔特曼被解雇后，穆拉蒂被短暂任命为临时 CEO，随后 770 名员工联署公开信要求其回归。奥尔特曼在不到五天后重返 OpenAI 并领导重组后的董事会。穆拉蒂称，意识到董事会决定可能带来灾难性后果后，她必须立即采取行动。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/960/893.htm","discovered_at":"2026-06-07T05:47:56.781Z","rank_on_page":179,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2bfd7b6ca6e77629
+content_hash: 1b30c05527c0c4dd
+semantic_hash: bc7e4a9647930441
+duplicate_of: ""
+first_seen_at: "2026-06-06T07:32:30.000Z"
+last_seen_at: 2026-06-07T05:57:12.709Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"supporting commercial context only","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI"],"products":[],"people":[],"industries":[],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["2023","770","6","2024","4"],"quotes":["当我意识到董事会的决定可能带来灾难性后果、事情可能彻底失控时，我觉得自己必须马上采取行动。如果当时没有这么做，OpenAI 很可能已经瓦解"]}
+evidence_seed: {"company_actions":["据报道，米拉 · 穆拉蒂已经在 2024 年后离开 OpenAI。","而在奥尔特曼突然被解职后，她是推动其重返公司的核心人物之一。","IT之家从原报道获悉，这场风波让穆拉蒂迅速成为舆论焦点。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"opinion","text":"OpenAI 前首席技术官米拉·穆拉蒂表示，如果萨姆·奥尔特曼在 2023 年被董事会罢免后未能回归，公司很可能已经瓦解。奥尔特曼被解雇后，穆拉蒂被短暂任命为临时 CEO，随后 770 名员工联署公开信要求其回归。奥尔特曼在不到五天后重返 OpenAI 并领导重组后的董事会。穆拉蒂称，意识到董事会决定可能带来灾难性后果后，她必须立即采取行动。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"IT之家 6 月 6 日消息，据彭博社昨天报道，OpenAI 前首席技术官（CTO）米拉 · 穆拉蒂表示， 如果萨姆 · 奥尔特曼在 2023 年被董事会罢免后没有重新回来 ， 公司很可能已经走向瓦解 。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"据报道，米拉 · 穆拉蒂已经在 2024 年后离开 OpenAI。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"而在奥尔特曼突然被解职后，她是推动其重返公司的核心人物之一。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"IT之家从原报道获悉，这场风波让穆拉蒂迅速成为舆论焦点。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"奥尔特曼被董事会解雇后，她曾被短暂任命为临时 CEO。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 前 CTO 回忆奥尔特曼被罢免：若未回归公司或已瓦解
+
+## clean_text
+
+IT之家 6 月 6 日消息，据彭博社昨天报道，OpenAI 前首席技术官（CTO）米拉 · 穆拉蒂表示， 如果萨姆 · 奥尔特曼在 2023 年被董事会罢免后没有重新回来 ， 公司很可能已经走向瓦解 。
+据报道，米拉 · 穆拉蒂已经在 2024 年后离开 OpenAI。而在奥尔特曼突然被解职后，她是推动其重返公司的核心人物之一。
+IT之家从原报道获悉，这场风波让穆拉蒂迅速成为舆论焦点。奥尔特曼被董事会解雇后，她曾被短暂任命为临时 CEO。随后，770 名员工联合签署公开信，要求奥尔特曼回归，不然就辞职并加入微软。
+最终，奥尔特曼在解雇不到五天后重返 OpenAI，并随重组后的董事会继续领导公司。
+米拉 · 穆拉蒂对此回忆道：“当我意识到董事会的决定可能带来灾难性后果、事情可能彻底失控时，我觉得自己必须马上采取行动。如果当时没有这么做，OpenAI 很可能已经瓦解”。
+米拉 · 穆拉蒂的这番言论与她今年 4 月出席埃隆 · 马斯克诉 OpenAI 时的证词基本一致。当时她曾表示，奥尔特曼被罢免后，公司确实面临分崩离析的风险。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 6 日消息，据彭博社昨天报道，OpenAI 前首席技术官（CTO）米拉 · 穆拉蒂表示， 如果萨姆 · 奥尔特曼在 2023 年被董事会罢免后没有重新回来 ， 公司很可能已经走向瓦解 。
+据报道，米拉 · 穆拉蒂已经在 2024 年后离开 OpenAI。而在奥尔特曼突然被解职后，她是推动其重返公司的核心人物之一。
+IT之家从原报道获悉，这场风波让穆拉蒂迅速成为舆论焦点。奥尔特曼被董事会解雇后，她曾被短暂任命为临时 CEO。随后，770 名员工联合签署公开信，要求奥尔特曼回归，不然就辞职并加入微软。
+最终，奥尔特曼在解雇不到五天后重返 OpenAI，并随重组后的董事会继续领导公司。
+米拉 · 穆拉蒂对此回忆道：“当我意识到董事会的决定可能带来灾难性后果、事情可能彻底失控时，我觉得自己必须马上采取行动。如果当时没有这么做，OpenAI 很可能已经瓦解”。
+米拉 · 穆拉蒂的这番言论与她今年 4 月出席埃隆 · 马斯克诉 OpenAI 时的证词基本一致。当时她曾表示，奥尔特曼被罢免后，公司确实面临分崩离析的风险。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 43
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":43,"text_length":545,"paragraph_count":7,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=medium
+   OpenAI 前首席技术官米拉·穆拉蒂表示，如果萨姆·奥尔特曼在 2023 年被董事会罢免后未能回归，公司很可能已经瓦解。奥尔特曼被解雇后，穆拉蒂被短暂任命为临时 CEO，随后 770 名员工联署公开信要求其回归。奥尔特曼在不到五天后重返 OpenAI 并领导重组后的董事会。穆拉蒂称，意识到董事会决定可能带来灾难性后果后，她必须立即采取行动。
+
+2. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=medium
+   IT之家 6 月 6 日消息，据彭博社昨天报道，OpenAI 前首席技术官（CTO）米拉 · 穆拉蒂表示， 如果萨姆 · 奥尔特曼在 2023 年被董事会罢免后没有重新回来 ， 公司很可能已经走向瓦解 。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   据报道，米拉 · 穆拉蒂已经在 2024 年后离开 OpenAI。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   而在奥尔特曼突然被解职后，她是推动其重返公司的核心人物之一。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   IT之家从原报道获悉，这场风波让穆拉蒂迅速成为舆论焦点。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   奥尔特曼被董事会解雇后，她曾被短暂任命为临时 CEO。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 2023, 770, 6, 2024, 4
+- quotes: 当我意识到董事会的决定可能带来灾难性后果、事情可能彻底失控时，我觉得自己必须马上采取行动。如果当时没有这么做，OpenAI 很可能已经瓦解
+
+## evidence_seed
+
+- company_actions: 据报道，米拉 · 穆拉蒂已经在 2024 年后离开 OpenAI。 / 而在奥尔特曼突然被解职后，她是推动其重返公司的核心人物之一。 / IT之家从原报道获悉，这场风波让穆拉蒂迅速成为舆论焦点。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: supporting commercial context only
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 前 CTO 回忆奥尔特曼被罢免：若未回归公司或已瓦解","discovery_summary":"OpenAI 前首席技术官米拉·穆拉蒂表示，如果萨姆·奥尔特曼在 2023 年被董事会罢免后未能回归，公司很可能已经瓦解。奥尔特曼被解雇后，穆拉蒂被短暂任命为临时 CEO，随后 770 名员工联署公开信要求其回归。奥尔特曼在不到五天后重返 OpenAI 并领导重组后的董事会。穆拉蒂称，意识到董事会决定可能带来灾难性后果后，她必须立即采取行动。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/960/893.htm","discovered_at":"2026-06-07T05:47:56.781Z","rank_on_page":179,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 前首席技术官米拉·穆拉蒂表示，如果萨姆·奥尔特曼在 2023 年被董事会罢免后未能回归，公司很可能已经瓦解。奥尔特曼被解雇后，穆拉蒂被短暂任命为临时 CEO，随后 770 名员工联署公开信要求其回归。奥尔特曼在不到五天后重返 OpenAI 并领导重组后的董事会。穆拉蒂称，意识到董事会决定可能带来灾难性后果后，她必须立即采取行动。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

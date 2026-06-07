@@ -1,0 +1,189 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-075
+title: "Y Combinator just revealed their request for startups | Yurii Rebryk"
+original_url: "https://www.linkedin.com/posts/yrebryk_y-combinator-just-revealed-their-request-activity-7325990064952426497-ZEyQ"
+canonical_url: "https://linkedin.com/posts/yrebryk_y-combinator-just-revealed-their-request-activity-7325990064952426497-ZEyQ"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-07T04:07:12.971Z
+language: mixed
+full_text_hash: b8f62f05cb24027d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-075-y-combinator-just-revealed-their-request-for-startups-yurii-rebryk.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-075-y-combinator-just-revealed-their-request-for-startups-yurii-rebryk.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: http-451-fallback-text
+extraction_quality: low
+extraction_method: "empty"
+readability_score: 0
+extractor_diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"empty"}
+has_full_text: true
+content_length: 243
+fetch_error: "451 Unavailable_For_Legal_Reasons"
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b8f62f05cb24027d","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "HTTP 451 fallback 可见文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: discovery_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 704a7396b99fd93f
+content_hash: b8f62f05cb24027d
+semantic_hash: b59b69bd47d6ba16
+duplicate_of: ""
+first_seen_at: "2026-06-07T04:07:12.971Z"
+last_seen_at: 2026-06-07T04:07:12.971Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":4,"importance_reason":"vertical industry solution; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":3,"case_richness":2,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["金融 / 保险"],"roles":["采购负责人"],"workflows":["计费 / 预算管理","采购 / 招投标"],"business_actions":["融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","采购"],"numbers":[],"quotes":[]}
+evidence_seed: {"company_actions":["YC wants to fund the tools that will make it happen. Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs. YC ... / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace","YC wants to fund the tools that will make it happen.","Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有成本、收入、采用率或市场规模数字"]
+key_excerpts: [{"type":"funding","text":"YC wants to fund the tools that will make it happen. Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs. YC ... / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"YC wants to fund the tools that will make it happen.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"funding","text":"/ query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Y Combinator just revealed their request for startups | Yurii Rebryk
+
+## clean_text
+
+YC wants to fund the tools that will make it happen. Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs. YC ... / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace
+
+## full_text
+
+YC wants to fund the tools that will make it happen. Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs. YC ... / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace
+
+## extraction_diagnostics
+
+- extraction_method: empty
+- readability_score: 0
+- fetch_status: http-451-fallback-text
+- extraction_quality: low
+- diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"empty"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
+   YC wants to fund the tools that will make it happen. Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs. YC ... / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   YC wants to fund the tools that will make it happen.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs.
+
+4. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
+   / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险
+- roles: 采购负责人
+- workflows: 计费 / 预算管理, 采购 / 招投标
+- business_actions: 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 采购
+- numbers: 暂无公开信息
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: YC wants to fund the tools that will make it happen. Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs. YC ... / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace / YC wants to fund the tools that will make it happen. / Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 4
+- importance_reason: vertical industry solution; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 2
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有成本、收入、采用率或市场规模数字
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: HTTP 451 fallback 可见文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+YC wants to fund the tools that will make it happen. Personalized finance, investment, and tax advice at near-zero cost using APIs and LLMs. YC ... / query=YC AI startup funding vertical AI / intent=find_startups / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

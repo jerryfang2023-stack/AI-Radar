@@ -1,23 +1,21 @@
 # Tag Taxonomy｜标签体系
 
-更新时间：2026-05-22
+更新时间：2026-06-07
 owner：Intelligence Engine / Experience & Editorial
 状态：current
 
 ## 1. 定位
 
-Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛选、关系网络和资产复盘，帮助用户按赛道、职能、场景、证据、成熟度和来源理解观澜 AI 的判断资产。
+Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛选、关系网络和资产复盘，帮助用户按赛道、职能、场景、证据、客户类型和来源理解 WaveSight AI 的商业信号资产。
 
 当前标签体系服务以下资产：
 
 - 商业信号卡：`signal_card`
-- 前沿观点卡：`opinion_card`
-- 变化候选：`change_candidate`
-- 场景候选：`scene_candidate`
-- 趋势候选 / 趋势报告：`trend_candidate` / `trend_report`
-- 商业内参：`brief_issue`
+- 一线观点：`first_line_viewpoint`
+- 关系图谱：`relationship_graph`
+- 趋势候选：`trend_candidate`
 
-旧机会中心和旧观点栏目只作为历史兼容来源，不再作为当前标签分组或前台栏目名。
+旧机会中心、旧观点栏目、变化候选、场景候选、趋势报告和商业内参只作为历史兼容来源，不再作为当前标签分组、前台栏目名或 V3.3 执行目标。
 
 ## 2. 标签分层
 
@@ -26,14 +24,14 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 | group | 用途 | 建议使用 |
 |---|---|---|
 | `track` | 赛道 / 技术方向 | 核心内容必填 |
-| `function` | 业务职能 | 商业信号、场景候选建议必填 |
-| `scenario` | 应用场景 | 场景候选必填 |
-| `customer` | 客户类型 | 案例 / 场景 / 内参建议补充 |
+| `function` | 业务职能 | 商业信号建议补充；关系图谱重要输入 |
+| `scenario` | 应用场景 | 案例、垂直部署和关系图谱建议补充 |
+| `customer` | 客户类型 | 案例、融资和垂直部署建议补充 |
 | `evidence` | 证据类型 | 商业信号、趋势候选建议必填 |
-| `stage` | 阶段 / 成熟度 | 变化候选、趋势候选、趋势报告建议必填 |
-| `region` | 地域 / 市场适配 | 视内容需要 |
-| `source` | 来源类型 | 商业信号、前沿观点建议必填 |
-| `opinion` | 前沿观点主题 | 前沿观点卡必填 |
+| `stage` | 阶段 / 成熟度 | 只用于趋势候选或确有阶段判断的资产 |
+| `region` | 地域 / 市场适配 | 只在来源明确指向区域时使用 |
+| `source` | 来源类型 | 商业信号和一线观点建议补充；不作为前台主视觉标签 |
+| `opinion` | 一线观点主题 | 只用于 First-Line Viewpoints |
 
 ## 3. Tag 数据结构
 
@@ -96,7 +94,11 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 | `scenario-coding-agent` | 编码 Agent | 开发者 Agent、代码代理 |
 | `scenario-payments` | 支付流程 | 企业支付、付款、结算 |
 | `scenario-local-ai-dev` | 本地 AI 开发 | 本地模型、AI PC、本地开发环境 |
-| `scenario-frontier-opinion` | 前沿观点 | 观点证据、建造者观点 |
+| `scenario-healthcare-operations` | 医疗运营 | 排班、护理、病患运营、医疗流程 |
+| `scenario-insurance-claims` | 保险理赔 | 理赔通知、审核、赔付流程 |
+| `scenario-logistics-supply-chain` | 物流供应链 | 物流、配送、供应链、库存 |
+| `scenario-construction-real-estate` | 建筑地产 | 建筑、地产、工程贷款、项目管理 |
+| `scenario-revenue-operations` | 收入运营 | RevOps、销售运营、商业大脑 |
 
 ### customer
 
@@ -119,7 +121,10 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 | `evidence-revenue` | 收入增长 | ARR、营收 |
 | `evidence-regulation` | 监管政策 | 政策、合规 |
 | `evidence-procurement` | 招投标 / 采购 | 招标、政府采购 |
-| `evidence-frontier-opinion` | 前沿观点 | 观点、建造者观点 |
+| `evidence-partnership-integration` | 合作集成 | 合作、集成、平台接入 |
+| `evidence-acquisition` | 收购并购 | 收购、并购、团队收编 |
+| `evidence-pricing-cost` | 价格成本 | 定价、用量、限额、推理成本 |
+| `evidence-customer-metric` | 客户指标 | 效率、收入、处理量、节省成本 |
 
 ### stage
 
@@ -173,16 +178,16 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 | `AI增长` | `AI 营销` |
 | `Voice-AI` | `AI 客服` |
 | `企业知识库` | `企业数据智能` |
-| 旧观点栏目 | `前沿观点` |
-| 旧机会中心 | `机会判断段落 / 趋势追踪或商业内参中的判断段落` |
+| 旧观点栏目 | `opinion-*` 主题标签 |
+| 旧机会中心 | 历史兼容来源，不进入 V3.3 active taxonomy |
 
-`AI创业机会` 不再作为唯一标签使用，仅保留为历史兼容标签。新资产至少应包含 `track`、`function`、`scenario`、`evidence` 或 `stage` 中的结构化标签。
+`AI创业机会` 不再作为唯一标签使用，仅保留为历史兼容标签。新商业信号至少应包含 `track` 和 `evidence`；`function`、`scenario`、`customer`、`source` 按事实补充。
 
 ## 6. 准入规则
 
 新标签必须满足至少一项：
 
-- 能连接 3 条以上商业信号、前沿观点、变化候选、场景候选、趋势候选或趋势报告。
+- 能连接 3 条以上商业信号、一线观点、关系图谱节点或趋势候选。
 - 是 Product Commander 明确确认的重点赛道或商业化方向。
 - 能显著提升搜索、筛选或关系网络价值。
 - 是自动化质量报告中连续出现的高价值关键词。
@@ -201,29 +206,18 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 
 - 至少 1 个 `track`
 - 至少 1 个 `evidence`
-- 可选 `function` / `scenario`
+- 可选 `function` / `scenario` / `customer` / `source`
+- 不应默认使用 `stage-watch`；阶段标签只在确有阶段判断时使用。
 
-### opinion_card
+### first_line_viewpoint
 
 - 至少 1 个 `opinion`
 - 至少 1 个 `track`
 - 至少 1 个 `source`
-- 标签不能替代观点卡评级；前台展示仍必须看 `opinion_tier`、`display_lane` 和 `publish_status`。
+- 不使用 `scenario-frontier-opinion` 或 `evidence-frontier-opinion` 表示观点。
+- 标签不能替代观点质量判断；前台展示仍必须保留来源、人物、原文语境和发布时间。
 
-### change_candidate
-
-- 至少 1 个 `track`
-- 至少 1 个 `stage`
-- 至少 1 个 `evidence`
-
-### scene_candidate
-
-- 至少 1 个 `track`
-- 至少 1 个 `function`
-- 至少 1 个 `scenario`
-- 建议补 `customer`
-
-### trend_candidate / trend_report
+### trend_candidate
 
 - 至少 1 个 `track`
 - 至少 1 个 `stage`
@@ -232,8 +226,9 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 ## 8. 自动化生成规则
 
 - `asset-card-generator` 生成资产时必须按本文件从别名归并到正式标签。
-- `guanlan-daily-monitor` 生成 follow-builders 前沿观点卡时，必须同步写入 `formal_tags`；最小要求为 1 个 `track`、1 个 `source`、1 个 `opinion`，可补 `scenario-frontier-opinion`、`evidence-frontier-opinion`、`stage-watch`、`region-global`。
-- 前沿观点不得以人物姓名作为 tag；人物进入 `speaker` / `person` / `source_name` 字段。
+- `asset-card-generator` 不得默认写入 `stage-watch`；无法判断阶段时留空。
+- `follow-builders` 生成 First-Line Viewpoints 时，必须同步写入 `formal_tags`；最小要求为 1 个 `track`、1 个 `source`、1 个 `opinion`。
+- 一线观点不得以人物姓名作为 tag；人物进入 `speaker` / `person` / `source_name` 字段。
 - 若发现新观点主题，不直接新建 tag，先写入候选主题或运行报告。
 - 同步脚本不新增标签，只解析已有标签。
 - 自动化不得用标签数量、人物热度或主题命中替代四档评级。
@@ -246,8 +241,8 @@ Tags 不进入一线导航。
 前台可用于：
 
 - 商业信号筛选。
-- 前沿观点筛选。
-- 趋势追踪相关内容聚合。
+- 一线观点筛选。
+- 趋势候选相关内容聚合。
 - 详情页“相关内容”。
 - 未来标签网络图。
 
@@ -275,7 +270,7 @@ agent-workflow/reports/tag-quality-weekly-YYYY-WW.md
 - 新增候选标签。
 - 合并建议。
 - 未知标签。
-- 标签到商业信号、前沿观点、变化候选、场景候选和趋势候选的覆盖率。
+- 标签到商业信号、一线观点、关系图谱和趋势候选的覆盖率。
 
 下一步：
 
@@ -283,3 +278,12 @@ agent-workflow/reports/tag-quality-weekly-YYYY-WW.md
 2. Intelligence Engine 每周输出 tag-quality 报告。
 3. Experience & Editorial 后续设计标签筛选，不做标签墙。
 4. 前台不显示内部 `tag_id`。
+
+## 11. 候选标签
+
+以下标签先作为候选观察，不进入 active taxonomy。连续连接 3 条以上正式商业信号后，再转入对应正式分组。
+
+| candidate_tag_id | name | group | 进入条件 |
+|---|---|---|---|
+| `track-ai-science-research` | 科学研究 AI | `track` | 科学发现、化学、生物、研究智能体连续形成正式商业信号 |
+| `track-creative-media-ai` | 创意媒体 AI | `track` | 视频、设计、内容生产工具连续形成正式商业信号 |

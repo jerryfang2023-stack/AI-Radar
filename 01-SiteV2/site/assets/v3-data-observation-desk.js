@@ -34,8 +34,12 @@
     return Math.round((active - current) / 86400000);
   }
 
+  function frontstageCards() {
+    return state.payload?.frontstageCards || state.payload?.cards || [];
+  }
+
   function availableDates() {
-    return [...new Set((state.payload?.cards || []).map((card) => card.date).filter(Boolean))]
+    return [...new Set(frontstageCards().map((card) => card.date).filter(Boolean))]
       .sort((a, b) => b.localeCompare(a));
   }
 
@@ -52,11 +56,11 @@
   }
 
   function cardsOnDate(date) {
-    return state.payload.cards.filter((card) => card.date === date);
+    return frontstageCards().filter((card) => card.date === date);
   }
 
   function countByDateAndCategory(date, category) {
-    return state.payload.cards.filter((card) => card.date === date && card.category === category).length;
+    return frontstageCards().filter((card) => card.date === date && card.category === category).length;
   }
 
   function countLast7ByCategory(date, category) {
@@ -64,7 +68,7 @@
   }
 
   function countWindowByCategory(date, category, startDay, endDay) {
-    return state.payload.cards.filter((card) => {
+    return frontstageCards().filter((card) => {
       const diff = daysBetween(date, card.date);
       return card.category === category && diff >= startDay && diff <= endDay;
     }).length;
@@ -80,6 +84,59 @@
     const text = String(value || "").replace(/\s+/g, " ").trim();
     if (text.length <= limit) return text;
     return `${text.slice(0, limit - 1)}…`;
+  }
+
+  function normalizedComparableText(value = "") {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/^这条(?:融资|产品)?信号(?:可用于判断|提供了)/u, "")
+      .replace(/^(新闻事实|原文要点|价值描述|可见原文片段)[:：]/u, "")
+      .replace(/[，。；：、“”‘’（）()《》【】[\]\s,.!?;:'"`$€£|/_-]+/gu, "")
+      .trim();
+  }
+
+  function textUnits(value = "") {
+    const normalized = normalizedComparableText(value);
+    if (!normalized) return [];
+    const chars = Array.from(normalized);
+    if (chars.length <= 2) return [normalized];
+    const units = [];
+    for (let index = 0; index < chars.length - 1; index += 1) {
+      units.push(`${chars[index]}${chars[index + 1]}`);
+    }
+    return units;
+  }
+
+  function textSimilarity(left = "", right = "") {
+    const a = normalizedComparableText(left);
+    const b = normalizedComparableText(right);
+    if (!a || !b) return 0;
+    const shorter = a.length <= b.length ? a : b;
+    const longer = a.length > b.length ? a : b;
+    if (shorter.length >= 24 && longer.includes(shorter)) return 1;
+    const aUnits = new Set(textUnits(a));
+    const bUnits = new Set(textUnits(b));
+    if (!aUnits.size || !bUnits.size) return 0;
+    let intersection = 0;
+    for (const unit of aUnits) {
+      if (bUnits.has(unit)) intersection += 1;
+    }
+    return intersection / Math.min(aUnits.size, bUnits.size);
+  }
+
+  function textRepeatsAny(value = "", existing = [], threshold = 0.78) {
+    return existing.some((item) => textSimilarity(value, item) >= threshold);
+  }
+
+  function uniqueDetailLines(lines = [], existing = [], limit = 8) {
+    const accepted = [];
+    for (const line of lines.map(cleanJudgmentText).filter(Boolean)) {
+      if (!hasCjk(line) || isWeakFact(line)) continue;
+      if (textRepeatsAny(line, existing.concat(accepted))) continue;
+      accepted.push(line);
+      if (accepted.length >= limit) break;
+    }
+    return accepted;
   }
 
   function hasCjk(value = "") {
@@ -99,6 +156,8 @@
   function isWeakFact(value = "") {
     const text = String(value || "");
     return !text
+      || /原文关键数字包括/u.test(text)
+      || /^关键数字：/u.test(text)
       || /把 AI 用进/u.test(text)
       || /值得看/u.test(text)
       || /客户是否买单/u.test(text)
@@ -124,9 +183,10 @@
     return compactText(candidates[0] || titleFact(card), 320);
   }
 
-  function valueText(card) {
+  function valueText(card, fact = "") {
     const text = cleanJudgmentText(card.summary || "");
     if (!text || isWeakFact(text)) return "这条材料可用于补充当日 AI 商业变化的来源和背景。";
+    if (fact && textRepeatsAny(text, [fact])) return "这条材料可用于补充当日 AI 商业变化的来源和背景。";
     return compactText(text, 220);
   }
 
@@ -812,9 +872,9 @@
         </div>
       </article>
     `).join("");
-    const summary = $("[data-day-summary]");
-    if (summary) {
-      summary.textContent = fmtDate(date);
+    const daySummary = $("[data-day-summary]");
+    if (daySummary) {
+      daySummary.textContent = fmtDate(date);
     }
   }
 
@@ -932,7 +992,7 @@
 
   function filteredCards() {
     const activeDate = selectedDate();
-    return state.payload.cards.filter((card) => {
+    return frontstageCards().filter((card) => {
       const filters = state.filters;
       const rangeDiff = daysBetween(activeDate, card.date);
       const queryText = [
@@ -1084,14 +1144,9 @@
     const root = $("[data-trend-candidates]");
     if (!root) return;
     const today = state.payload.trendCandidates || [];
-    const recent = (state.payload.recentTrendCandidates || []).filter((item) => !today.some((candidate) => candidate.id === item.id));
-    const items = today.length ? today : recent.slice(0, 2);
-    const note = today.length
-      ? ""
-      : `<div class="trend-note">今日暂无新增趋势候选。以下保留最近候选，用于继续观察证据是否增加。</div>`;
-    root.innerHTML = `${note}${items.length
-      ? items.map((item) => trendAssetCard(item, today.length ? "candidate" : "recent-candidate")).join("")
-      : "<div class=\"empty-state\">暂无趋势候选资产。</div>"}`;
+    root.innerHTML = today.length
+      ? today.map((item) => trendAssetCard(item, "candidate")).join("")
+      : "<div class=\"empty-state\">暂无新增趋势候选资产。</div>";
     root.onclick = handleTrendAssetClick;
   }
 
@@ -1291,8 +1346,8 @@
     const dialog = $("[data-detail-dialog]");
     if (!root || !dialog) return;
     const fact = factText(card);
-    const value = valueText(card);
-    const highlights = (card.originalHighlights || []).map(cleanJudgmentText).filter((item) => hasCjk(item) && item !== fact && !isWeakFact(item)).slice(0, 8);
+    const highlights = uniqueDetailLines(card.originalHighlights || [], [fact, card.title], 8);
+    const value = valueText(card, fact);
     const sourceLinks = card.sourceLinks || [];
     root.innerHTML = `
       <h2 class="detail-title">${safe(card.title)}</h2>
@@ -1306,14 +1361,14 @@
         <p>${safe(fact)}</p>
       </div>
       <div class="detail-main-grid">
+        ${highlights.length ? `
+          <div class="detail-block">
+          <h3>原文要点</h3>
+          <ul>${highlights.map((item) => `<li>${safe(item)}</li>`).join("")}</ul>
+          </div>
+        ` : ""}
         <div class="detail-block">
-        <h3>原文要点</h3>
-        ${highlights.length
-          ? `<ul>${highlights.map((item) => `<li>${safe(item)}</li>`).join("")}</ul>`
-          : "<p>暂无公开信息。</p>"}
-        </div>
-        <div class="detail-block">
-          <h3>简要价值描述</h3>
+          <h3>价值描述</h3>
           <p>${safe(value)}</p>
         </div>
       </div>

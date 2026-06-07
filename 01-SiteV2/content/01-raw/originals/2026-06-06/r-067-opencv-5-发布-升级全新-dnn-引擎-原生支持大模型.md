@@ -1,0 +1,217 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-067
+title: "OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型"
+original_url: "https://www.ithome.com/0/960/969.htm"
+canonical_url: "https://ithome.com/0/960/969.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-06T12:48:12.000Z"
+collected_at: 2026-06-07T04:07:12.928Z
+language: mixed
+full_text_hash: 452857677d4ab6e9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-067-opencv-5-发布-升级全新-dnn-引擎-原生支持大模型.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-067-opencv-5-发布-升级全新-dnn-引擎-原生支持大模型.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 55
+extractor_diagnostics: {"readability_score":55,"text_length":868,"paragraph_count":12,"sentence_count":11,"boilerplate_hits":2,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 868
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"452857677d4ab6e9","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型","discovery_summary":"OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/960/969.htm","discovered_at":"2026-06-07T03:57:17.793Z","rank_on_page":145,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e5214063f148a306
+content_hash: 452857677d4ab6e9
+semantic_hash: a59294485e654ce4
+duplicate_of: ""
+first_seen_at: "2026-06-06T12:48:12.000Z"
+last_seen_at: 2026-06-07T04:07:12.928Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":3,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","GitHub"],"products":[],"people":[],"industries":["制造 / 工业"],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["5","4","23%","80%","16","0","1","3"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 6 月 6 日消息，OpenCV 团队本周正式发布了 OpenCV 5。","据介绍，二十多年来，OpenCV 一直是计算机视觉研究、机器人技术、嵌入式视觉、AI 应用、工业检测、AR / VR、医学成像以及无数生产系统的基础。","如今，该库在 GitHub 上拥有超过 86,000 颗 stars，每天的安装量超过一百万次，并且拥有世界上最庞大的计算机视觉算法集合之一。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 6 日消息，OpenCV 团队本周正式发布了 OpenCV 5。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据介绍，二十多年来，OpenCV 一直是计算机视觉研究、机器人技术、嵌入式视觉、AI 应用、工业检测、AR / VR、医学成像以及无数生产系统的基础。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"如今，该库在 GitHub 上拥有超过 86,000 颗 stars，每天的安装量超过一百万次，并且拥有世界上最庞大的计算机视觉算法集合之一。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"OpenCV 5 在此基础之上，对该库进行了重大的现代化改造。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"它带来了全新的 DNN 引擎、更强大的 ONNX 支持、硬件加速方面的改进、更好的 Python 集成、新的数据类型、扩展的 3D 视觉功能、改进的文档，以及面向未来更清晰的架构。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型
+
+## clean_text
+
+IT之家 6 月 6 日消息，OpenCV 团队本周正式发布了 OpenCV 5。
+据介绍，二十多年来，OpenCV 一直是计算机视觉研究、机器人技术、嵌入式视觉、AI 应用、工业检测、AR / VR、医学成像以及无数生产系统的基础。如今，该库在 GitHub 上拥有超过 86,000 颗 stars，每天的安装量超过一百万次，并且拥有世界上最庞大的计算机视觉算法集合之一。
+OpenCV 5 在此基础之上，对该库进行了重大的现代化改造。它带来了全新的 DNN 引擎、更强大的 ONNX 支持、硬件加速方面的改进、更好的 Python 集成、新的数据类型、扩展的 3D 视觉功能、改进的文档，以及面向未来更清晰的架构。
+▲ ONNX 算子覆盖率从 4.x 时期的不到 23% 增加到超 80% IT之家附 OpenCV 5 主要更新内容如下：
+更好的语言支持 ：现代化的 Python、更新的语言绑定（bindings），以及使用命名参数（named arguments）而非靠猜测来确定参数顺序。
+更快、更小巧的核心 ：更紧凑的代码、弃用传统的 C API，以及更精简的构建方式。
+更清晰的硬件加速层 ：使硬件供应商能够直接插入优化后的内核（kernels），而不会陷入杂乱的 #ifdef 条件编译之中。
+更简洁的 API ：规范的 0D/1D 张量（tensors）、原生的 FP16/BF16 支持，以及真正的日志记录机制。
+下一代 DNN 引擎 ：基于图（graph-based）的架构，支持算子融合（fusions）、广泛的 ONNX 支持，以及对 Transformer 模型、视觉语言模型 / 大型语言模型（VLM / LLMs）的支持。
+更好的 3D 视觉 ：ChArUco 标定板、多相机标定以及可视化功能。
+更好的文档 ：现代化、易于导航，且阅读体验令人愉悦。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 6 日消息，OpenCV 团队本周正式发布了 OpenCV 5。
+据介绍，二十多年来，OpenCV 一直是计算机视觉研究、机器人技术、嵌入式视觉、AI 应用、工业检测、AR / VR、医学成像以及无数生产系统的基础。如今，该库在 GitHub 上拥有超过 86,000 颗 stars，每天的安装量超过一百万次，并且拥有世界上最庞大的计算机视觉算法集合之一。
+OpenCV 5 在此基础之上，对该库进行了重大的现代化改造。它带来了全新的 DNN 引擎、更强大的 ONNX 支持、硬件加速方面的改进、更好的 Python 集成、新的数据类型、扩展的 3D 视觉功能、改进的文档，以及面向未来更清晰的架构。
+▲ ONNX 算子覆盖率从 4.x 时期的不到 23% 增加到超 80% IT之家附 OpenCV 5 主要更新内容如下：
+更好的语言支持 ：现代化的 Python、更新的语言绑定（bindings），以及使用命名参数（named arguments）而非靠猜测来确定参数顺序。
+更快、更小巧的核心 ：更紧凑的代码、弃用传统的 C API，以及更精简的构建方式。
+更清晰的硬件加速层 ：使硬件供应商能够直接插入优化后的内核（kernels），而不会陷入杂乱的 #ifdef 条件编译之中。
+更简洁的 API ：规范的 0D/1D 张量（tensors）、原生的 FP16/BF16 支持，以及真正的日志记录机制。
+下一代 DNN 引擎 ：基于图（graph-based）的架构，支持算子融合（fusions）、广泛的 ONNX 支持，以及对 Transformer 模型、视觉语言模型 / 大型语言模型（VLM / LLMs）的支持。
+更好的 3D 视觉 ：ChArUco 标定板、多相机标定以及可视化功能。
+更好的文档 ：现代化、易于导航，且阅读体验令人愉悦。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 55
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":55,"text_length":868,"paragraph_count":12,"sentence_count":11,"boilerplate_hits":2,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 6 日消息，OpenCV 团队本周正式发布了 OpenCV 5。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   据介绍，二十多年来，OpenCV 一直是计算机视觉研究、机器人技术、嵌入式视觉、AI 应用、工业检测、AR / VR、医学成像以及无数生产系统的基础。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   如今，该库在 GitHub 上拥有超过 86,000 颗 stars，每天的安装量超过一百万次，并且拥有世界上最庞大的计算机视觉算法集合之一。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   OpenCV 5 在此基础之上，对该库进行了重大的现代化改造。
+
+6. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   它带来了全新的 DNN 引擎、更强大的 ONNX 支持、硬件加速方面的改进、更好的 Python 集成、新的数据类型、扩展的 3D 视觉功能、改进的文档，以及面向未来更清晰的架构。
+
+## business_elements
+
+- companies: IT之家（RSS）, GitHub
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 5, 4, 23%, 80%, 16, 0, 1, 3
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 6 日消息，OpenCV 团队本周正式发布了 OpenCV 5。 / 据介绍，二十多年来，OpenCV 一直是计算机视觉研究、机器人技术、嵌入式视觉、AI 应用、工业检测、AR / VR、医学成像以及无数生产系统的基础。 / 如今，该库在 GitHub 上拥有超过 86,000 颗 stars，每天的安装量超过一百万次，并且拥有世界上最庞大的计算机视觉算法集合之一。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型","discovery_summary":"OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/960/969.htm","discovered_at":"2026-06-07T03:57:17.793Z","rank_on_page":145,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

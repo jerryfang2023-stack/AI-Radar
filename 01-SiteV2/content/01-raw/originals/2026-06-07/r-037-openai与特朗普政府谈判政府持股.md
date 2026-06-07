@@ -1,0 +1,247 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-037
+title: "OpenAI与特朗普政府谈判政府持股"
+original_url: "https://the-decoder.com/openai-and-the-trump-administration-are-negotiating-a-government-stake-in-the-ai-startup"
+canonical_url: "https://the-decoder.com/openai-and-the-trump-administration-are-negotiating-a-government-stake-in-the-ai-startup"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-06T07:30:43.000Z"
+collected_at: 2026-06-07T05:57:12.574Z
+language: mixed
+full_text_hash: 1df5fa2abfebe512
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-037-openai与特朗普政府谈判政府持股.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-037-openai与特朗普政府谈判政府持股.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 82
+extractor_diagnostics: {"readability_score":82,"text_length":3510,"paragraph_count":16,"sentence_count":31,"boilerplate_hits":3,"symbol_ratio":0.0011,"method":"content-container"}
+has_full_text: true
+content_length: 3510
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1df5fa2abfebe512","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI与特朗普政府谈判政府持股","discovery_summary":"OpenAI正与特朗普政府谈判政府直接持股，计划设立\"公共财富基金\"直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的\"大到不能倒\"风险。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/openai-and-the-trump-administration-are-negotiating-a-government-stake-in-the-ai-startup","discovered_at":"2026-06-07T05:47:56.782Z","rank_on_page":180,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 33e8063f8052a015
+content_hash: 1df5fa2abfebe512
+semantic_hash: 6ace2b8a1cc1ba8f
+duplicate_of: ""
+first_seen_at: "2026-06-06T07:30:43.000Z"
+last_seen_at: 2026-06-07T05:57:12.574Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder","AI News（RSS）","OpenAI","Anthropic"],"products":[],"people":[],"industries":["金融 / 保险","开发者工具"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["合作 / 联盟"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["50%","2008","6","2026","2025","$850 billion","50","1"],"quotes":["直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的","Public Wealth Fund","essentially become a partner,","in the very short, very near future,","American A.I. Sovereign Wealth Fund Act"]}
+evidence_seed: {"company_actions":["OpenAI正与特朗普政府谈判政府直接持股，计划设立\"公共财富基金\"直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的\"大到不能倒\"风险。","Ad Skip to content OpenAI and the Trump administration are negotiating a government stake in the AI startup Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 6, 2026 Nano Banana Pro prompted by THE DECODER OpenAI and the Trump administration have been negotiating a government stake in the AI startup for over a year.","CEO Sam Altman reportedly first floated the idea in 2025."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"OpenAI正与特朗普政府谈判政府直接持股，计划设立\"公共财富基金\"直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的\"大到不能倒\"风险。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ad Skip to content OpenAI and the Trump administration are negotiating a government stake in the AI startup Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 6, 2026 Nano Banana Pro prompted by THE DECODER OpenAI and the Trump administration have been negotiating a government stake in the AI startup for over a year.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"CEO Sam Altman reportedly first floated the idea in 2025.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"OpenAI could hand over shares to the government to build a \"Public Wealth Fund\" that would pay out directly to American citizens.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"No terms have been set yet.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"Trump said the public could \"essentially become a partner,\" and that talks should move forward \"in the very short, very near future,\" CNBC reports .","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# OpenAI与特朗普政府谈判政府持股
+
+## clean_text
+
+Ad
+Skip to content
+OpenAI and the Trump administration are negotiating a government stake in the AI startup
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 6, 2026
+Nano Banana Pro prompted by THE DECODER
+OpenAI and the Trump administration have been negotiating a government stake in the AI startup for over a year. CEO Sam Altman reportedly first floated the idea in 2025.
+OpenAI could hand over shares to the government to build a "Public Wealth Fund" that would pay out directly to American citizens. No terms have been set yet. Trump said the public could "essentially become a partner," and that talks should move forward "in the very short, very near future," CNBC reports .
+Private investors value OpenAI at more than $850 billion, and the company is preparing for an IPO . The Trump administration already holds stakes in Intel, IBM, and other tech firms. Ad
+Senator Bernie Sanders confirmed he's discussed the sovereign fund idea with Altman. Sanders plans to introduce the "American A.I. Sovereign Wealth Fund Act" soon, as he laid out in a New York Times op-ed . The bill would slap a one-time 50 percent tax on shares of the largest AI companies. The government would get voting rights and board seats. Returns would flow to citizens as direct payments. Ad
+DEC_D_Incontent-1
+Sanders argues that AI is built on humanity's collective knowledge, and the wealth it creates shouldn't only benefit a handful of tech billionaires. Both OpenAI and Anthropic have floated similar funds themselves.
+For OpenAI, a close tie to the government right before its IPO would double as a political shield against future regulation. The Trump administration, meanwhile, could use the arrangement to grow its influence over a strategically important industry without going through Congress. It has signaled repeatedly that it wants a hand in shaping AI technology. Ad
+AI for everyone or bailout prep
+The critical read on these talks is that the U.S. government could be walking into a dependency that echoes the 2008 financial crisis. Back then, companies deemed "too big to fail" got bailed out with public money because the government itself was too deeply entangled.
+If the government holds stakes in AI companies, it would have a direct incentive as a shareholder to step in with taxpayer dollars when things go wrong. A government stake could repeat that "too big to fail" dynamic, this time with tech companies. OpenAI and Anthropic have fast-growing revenue and high usage , but both are still burning massive amounts of cash. How the technology evolves and whether it can actually turn a profit remain open questions. Ad
+DEC_D_Incontent-2
+This isn't a new concern. In late 2025, OpenAI's CFO Sarah Friar floated the idea of government rescue funds, then quickly walked it back . Altman himself stressed at the time that the government shouldn't provide guarantees or bail out companies. "The market, not the government, will deal with it" if OpenAI's bets are wrong, he said. Ad
+Yet OpenAI simultaneously lobbied the White House in a letter calling for "grants, cost-sharing agreements, loans, or loan guarantees to expand industrial base capacity and resilience" and broad industrial policy support.
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: CNBC
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## full_text
+
+Ad
+Skip to content
+OpenAI and the Trump administration are negotiating a government stake in the AI startup
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 6, 2026
+Nano Banana Pro prompted by THE DECODER
+OpenAI and the Trump administration have been negotiating a government stake in the AI startup for over a year. CEO Sam Altman reportedly first floated the idea in 2025.
+OpenAI could hand over shares to the government to build a "Public Wealth Fund" that would pay out directly to American citizens. No terms have been set yet. Trump said the public could "essentially become a partner," and that talks should move forward "in the very short, very near future," CNBC reports .
+Private investors value OpenAI at more than $850 billion, and the company is preparing for an IPO . The Trump administration already holds stakes in Intel, IBM, and other tech firms. Ad
+Senator Bernie Sanders confirmed he's discussed the sovereign fund idea with Altman. Sanders plans to introduce the "American A.I. Sovereign Wealth Fund Act" soon, as he laid out in a New York Times op-ed . The bill would slap a one-time 50 percent tax on shares of the largest AI companies. The government would get voting rights and board seats. Returns would flow to citizens as direct payments. Ad
+DEC_D_Incontent-1
+Sanders argues that AI is built on humanity's collective knowledge, and the wealth it creates shouldn't only benefit a handful of tech billionaires. Both OpenAI and Anthropic have floated similar funds themselves.
+For OpenAI, a close tie to the government right before its IPO would double as a political shield against future regulation. The Trump administration, meanwhile, could use the arrangement to grow its influence over a strategically important industry without going through Congress. It has signaled repeatedly that it wants a hand in shaping AI technology. Ad
+AI for everyone or bailout prep
+The critical read on these talks is that the U.S. government could be walking into a dependency that echoes the 2008 financial crisis. Back then, companies deemed "too big to fail" got bailed out with public money because the government itself was too deeply entangled.
+If the government holds stakes in AI companies, it would have a direct incentive as a shareholder to step in with taxpayer dollars when things go wrong. A government stake could repeat that "too big to fail" dynamic, this time with tech companies. OpenAI and Anthropic have fast-growing revenue and high usage , but both are still burning massive amounts of cash. How the technology evolves and whether it can actually turn a profit remain open questions. Ad
+DEC_D_Incontent-2
+This isn't a new concern. In late 2025, OpenAI's CFO Sarah Friar floated the idea of government rescue funds, then quickly walked it back . Altman himself stressed at the time that the government shouldn't provide guarantees or bail out companies. "The market, not the government, will deal with it" if OpenAI's bets are wrong, he said. Ad
+Yet OpenAI simultaneously lobbied the White House in a letter calling for "grants, cost-sharing agreements, loans, or loan guarantees to expand industrial base capacity and resilience" and broad industrial policy support.
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: CNBC
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 82
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":82,"text_length":3510,"paragraph_count":16,"sentence_count":31,"boilerplate_hits":3,"symbol_ratio":0.0011,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   OpenAI正与特朗普政府谈判政府直接持股，计划设立"公共财富基金"直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的"大到不能倒"风险。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Ad Skip to content OpenAI and the Trump administration are negotiating a government stake in the AI startup Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 6, 2026 Nano Banana Pro prompted by THE DECODER OpenAI and the Trump administration have been negotiating a government stake in the AI startup for over a year.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   CEO Sam Altman reportedly first floated the idea in 2025.
+
+4. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   OpenAI could hand over shares to the government to build a "Public Wealth Fund" that would pay out directly to American citizens.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   No terms have been set yet.
+
+6. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   Trump said the public could "essentially become a partner," and that talks should move forward "in the very short, very near future," CNBC reports .
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, OpenAI, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 合作 / 联盟
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 50%, 2008, 6, 2026, 2025, $850 billion, 50, 1
+- quotes: 直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的 / Public Wealth Fund / essentially become a partner, / in the very short, very near future, / American A.I. Sovereign Wealth Fund Act
+
+## evidence_seed
+
+- company_actions: OpenAI正与特朗普政府谈判政府直接持股，计划设立"公共财富基金"直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的"大到不能倒"风险。 / Ad Skip to content OpenAI and the Trump administration are negotiating a government stake in the AI startup Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 6, 2026 Nano Banana Pro prompted by THE DECODER OpenAI and the Trump administration have been negotiating a government stake in the AI startup for over a year. / CEO Sam Altman reportedly first floated the idea in 2025.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI与特朗普政府谈判政府持股","discovery_summary":"OpenAI正与特朗普政府谈判政府直接持股，计划设立\"公共财富基金\"直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的\"大到不能倒\"风险。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/openai-and-the-trump-administration-are-negotiating-a-government-stake-in-the-ai-startup","discovered_at":"2026-06-07T05:47:56.782Z","rank_on_page":180,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI正与特朗普政府谈判政府直接持股，计划设立"公共财富基金"直接向美国公民分红。参议员伯尼·桑德斯主张通过立法对AI股份征收50%的税。批评者担忧此举可能引发类似2008年金融危机的"大到不能倒"风险。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

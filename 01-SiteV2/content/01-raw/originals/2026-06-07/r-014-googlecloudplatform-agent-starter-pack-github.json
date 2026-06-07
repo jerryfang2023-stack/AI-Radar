@@ -1,0 +1,272 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-014",
+  "title": "GoogleCloudPlatform/agent-starter-pack - GitHub",
+  "original_url": "https://github.com/googlecloudplatform/agent-starter-pack",
+  "canonical_url": "https://github.com/googlecloudplatform/agent-starter-pack",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-07T05:57:12.378Z",
+  "language": "mixed",
+  "full_text": "GoogleCloudPlatform\nagent-starter-pack\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.5k\nStar\n6.5k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n737 Commits\n737 Commits\n.cloudbuild\n.cloudbuild\n.github/ workflows\n.github/ workflows\nagent_starter_pack\nagent_starter_pack\ndocs\ndocs\ntests\ntests\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nGEMINI.md\nGEMINI.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\nllm.txt\nllm.txt\npyproject.toml\npyproject.toml\nuv.lock\nuv.lock\nView all files\nRepository files navigation\n🚀 Agent Starter Pack\n⚠️ Agent Starter Pack is in maintenance mode — switch to agents-cli\nActive development has moved to agents-cli , the next evolution of Agent Starter Pack. ASP will continue to receive critical fixes only — no new features, no new templates, no new deployment targets. New projects should start with agents-cli ; existing projects should migrate.\nuvx google-agents-cli setup\nMigration takes minutes — your agent code, tests, Terraform, and CI/CD carry over with no rewrites.\nWhat you gain:\n🛠️ Unified CLI in place of the Makefile — run , deploy , eval run , eval compare , playground , lint , and more\n🧠 Bundled coding-agent skills that turn Claude Code, Gemini CLI, or Codex into an ADK expert\n🔁 End-to-end lifecycle tooling : scaffold → eval → deploy → publish → observe\n☁️ First-class support for Google Cloud's Agent Platform\n→ Migration guide • Get started • Docs • GitHub • PyPI\nA Python package that provides production-ready templates for GenAI agents on Google Cloud.\nFocus on your agent logic—the starter pack provides everything else: infrastructure, CI/CD, observability, and security.\n⚡️ Launch\n🧪 Experiment\n✅ Deploy\n🛠️ Customize\nPre-built agent templates (ReAct, RAG, multi-agent, Live API).\nVertex AI evaluation and an interactive playground.\nProduction-ready infra with monitoring, observability , and CI/CD on Cloud Run or Agent Engine .\nExtend and customize templates according to your needs. 🆕 Now integrating with Gemini CLI\n⚡ Get Started in 1 Minute\nFrom zero to production-ready agent in 60 seconds using uv :\nuvx agent-starter-pack create\n✨ Alternative: Using pip\nIf you don't have uv installed, you can use pip:\n# Create and activate a Python virtual environment\npython -m venv .venv && source .venv/bin/activate\n# Install the agent starter pack\npip install --upgrade agent-starter-pack\n# Create a new agent project\nagent-starter-pack create\nThat's it! You now have a fully functional agent project—complete with backend, frontend, and deployment infrastructure—ready for you to explore and customize.\n🔧 Enhance Existing Agents\nAlready have an agent? Add production-ready deployment and infrastructure by running this command in your project's root folder:\nuvx agent-starter-pack enhance\nSee Installation Guide for more options, or try with zero setup in Firebase Studio or Cloud Shell .\n🤖 Agents\nAgent Name\nDescription\nadk\nA base ReAct agent implemented using Google's Agent Development Kit\nadk_a2a\nAn ADK agent with Agent2Agent (A2A) Protocol support for distributed agent communication and interoperability\nagentic_rag\nA RAG agent for document retrieval and Q&A. Supporting Vertex AI Search and Vector Search .\nlanggraph\nA base ReAct agent implemented using LangChain's LangGraph\nadk_java\nA base ReAct agent implemented using Google's Agent Development Kit for Java\nadk_live\nA real-time multimodal RAG agent powered by Gemini, supporting audio/video/text chat\nMore agents are on the way! We are continuously expanding our agent library . Have a specific agent type in mind? Raise an issue as a feature request!\n🔍 ADK Samples\nLooking to explore more ADK examples? Check out the ADK Samples Repository for additional examples and use cases demonstrating ADK's capabilities.\n🌟 Community Showcase\nExplore amazing projects built with the Agent Starter Pack!\nView Community Showcase →\nKey Features\nThe agent-starter-pack offers key features to accelerate and simplify the development of your agent:\n🔄 CI/CD Automation - A single command to set up a complete CI/CD pipeline for all environments, supporting both Google Cloud Build and GitHub Actions .\n📥 Data Pipeline for RAG with Terraform/CI-CD - Seamlessly integrate a data pipeline to process embeddings for RAG into your agent system. Supporting Vertex AI Search and Vector Search .\nRemote Templates : Create and share your own agent starter packs templates from any Git repository.\n🤖 Gemini CLI Integration - Use the Gemini CLI and the included GEMINI.md context file to ask questions about your template, agent architecture, and the path to production. Get instant guidance and code examples directly in your terminal.\nHigh-Level Architecture\nThis starter pack covers all aspects of Agent development, from prototyping and evaluation to deployment and monitoring.\n🔧 Requirements\nPython 3.10+\nGoogle Cloud SDK\nTerraform (for deployment)\nMake (for development tasks)\n📚 Documentation\nVisit our documentation site for comprehensive guides and references!\n🔍 New to the codebase? Explore the CodeWiki for AI-powered code understanding and navigation.\nGetting Started Guide - First steps with agent-starter-pack\nInstallation Guide - Setting up your environment\nDeployment Guide - Taking your agent to production\nAgent Templates Overview - Explore available agent patterns\nCLI Reference - Command-line tool documentation\nVideo Walkthrough:\nFrom Demo to Production with Agent Starter Pack : Learn how the Agent Starter Pack acts as an Automated Architect, building the professional infrastructure for your AI project in seconds. Covers why most AI projects fail at deployment and how ASP automates Terraform, CI/CD, and observability.\n6-minute introduction (April 2025): Explaining the Agent Starter Pack and demonstrating its key features. Part of the Kaggle GenAI intensive course.\nLooking for more examples and resources for Generative AI on Google Cloud? Check out the GoogleCloudPlatform/generative-ai repository for notebooks, code samples, and more!\nContributing\nContributions are welcome! See the Contributing Guide .\nFeedback\nWe value your input! Your feedback helps us improve this starter pack and make it more useful for the community.\nGetting Help\nIf you encounter any issues or have specific suggestions, please first consider raising an issue on our GitHub repository.\nShare Your Experience\nFor other types of feedback, or if you'd like to share a positive experience or success story using this starter pack, we'd love to hear from you! You can reach out to us at agent-starter-pack@google.com .\nThank you for your contributions!\nDisclaimer\nThis repository is for demonstrative purposes only and is not an officially supported Google product.\nTerms of Service\nThe agent-starter-pack templating CLI and the templates in this starter pack leverage Google Cloud APIs. When you use this starter pack, you'll be deploying resources in your own Google Cloud project and will be responsible for those resources. Please review the Google Cloud Service Terms for details on the terms of service associated with these APIs.\nAbout\nShip AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability.\ngooglecloudplatform.github.io/agent-starter-pack/\nTopics\ngcp\ngemini\nagents\nobservability\nmlops\ngenerative-ai\nllmops\ngenai-agents\nResources\nReadme\nLicense\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n6.5k\nstars\nWatchers\n63\nwatching\nForks\n1.5k\nforks\nReport repository\nReleases\n83\nv0.41.3\nLatest\nApr 25, 2026\n+ 82 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n66.3%\nJupyter Notebook\n12.0%\nHCL\n9.8%\nTypeScript\n4.8%\nMakefile\n2.4%\nGo\n1.3%\nOther\n3.4%",
+  "clean_text": "GoogleCloudPlatform\nagent-starter-pack\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.5k\nStar\n6.5k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n737 Commits\n737 Commits\n.cloudbuild\n.cloudbuild\n.github/ workflows\n.github/ workflows\nagent_starter_pack\nagent_starter_pack\ndocs\ndocs\ntests\ntests\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nGEMINI.md\nGEMINI.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\nllm.txt\nllm.txt\npyproject.toml\npyproject.toml\nuv.lock\nuv.lock\nView all files\nRepository files navigation\n🚀 Agent Starter Pack\n⚠️ Agent Starter Pack is in maintenance mode — switch to agents-cli\nActive development has moved to agents-cli , the next evolution of Agent Starter Pack. ASP will continue to receive critical fixes only — no new features, no new templates, no new deployment targets. New projects should start with agents-cli ; existing projects should migrate.\nuvx google-agents-cli setup\nMigration takes minutes — your agent code, tests, Terraform, and CI/CD carry over with no rewrites.\nWhat you gain:\n🛠️ Unified CLI in place of the Makefile — run , deploy , eval run , eval compare , playground , lint , and more\n🧠 Bundled coding-agent skills that turn Claude Code, Gemini CLI, or Codex into an ADK expert\n🔁 End-to-end lifecycle tooling : scaffold → eval → deploy → publish → observe\n☁️ First-class support for Google Cloud's Agent Platform\n→ Migration guide • Get started • Docs • GitHub • PyPI\nA Python package that provides production-ready templates for GenAI agents on Google Cloud.\nFocus on your agent logic—the starter pack provides everything else: infrastructure, CI/CD, observability, and security.\n⚡️ Launch\n🧪 Experiment\n✅ Deploy\n🛠️ Customize\nPre-built agent templates (ReAct, RAG, multi-agent, Live API).\nVertex AI evaluation and an interactive playground.\nProduction-ready infra with monitoring, observability , and CI/CD on Cloud Run or Agent Engine .\nExtend and customize templates according to your needs. 🆕 Now integrating with Gemini CLI\n⚡ Get Started in 1 Minute\nFrom zero to production-ready agent in 60 seconds using uv :\nuvx agent-starter-pack create\n✨ Alternative: Using pip\nIf you don't have uv installed, you can use pip:\n# Create and activate a Python virtual environment\npython -m venv .venv && source .venv/bin/activate\n# Install the agent starter pack\npip install --upgrade agent-starter-pack\n# Create a new agent project\nagent-starter-pack create\nThat's it! You now have a fully functional agent project—complete with backend, frontend, and deployment infrastructure—ready for you to explore and customize.\n🔧 Enhance Existing Agents\nAlready have an agent? Add production-ready deployment and infrastructure by running this command in your project's root folder:\nuvx agent-starter-pack enhance\nSee Installation Guide for more options, or try with zero setup in Firebase Studio or Cloud Shell .\n🤖 Agents\nAgent Name\nDescription\nadk\nA base ReAct agent implemented using Google's Agent Development Kit\nadk_a2a\nAn ADK agent with Agent2Agent (A2A) Protocol support for distributed agent communication and interoperability\nagentic_rag\nA RAG agent for document retrieval and Q&A. Supporting Vertex AI Search and Vector Search .\nlanggraph\nA base ReAct agent implemented using LangChain's LangGraph\nadk_java\nA base ReAct agent implemented using Google's Agent Development Kit for Java\nadk_live\nA real-time multimodal RAG agent powered by Gemini, supporting audio/video/text chat\nMore agents are on the way! We are continuously expanding our agent library . Have a specific agent type in mind? Raise an issue as a feature request!\n🔍 ADK Samples\nLooking to explore more ADK examples? Check out the ADK Samples Repository for additional examples and use cases demonstrating ADK's capabilities.\n🌟 Community Showcase\nExplore amazing projects built with the Agent Starter Pack!\nView Community Showcase →\nKey Features\nThe agent-starter-pack offers key features to accelerate and simplify the development of your agent:\n🔄 CI/CD Automation - A single command to set up a complete CI/CD pipeline for all environments, supporting both Google Cloud Build and GitHub Actions .\n📥 Data Pipeline for RAG with Terraform/CI-CD - Seamlessly integrate a data pipeline to process embeddings for RAG into your agent system. Supporting Vertex AI Search and Vector Search .\nRemote Templates : Create and share your own agent starter packs templates from any Git repository.\n🤖 Gemini CLI Integration - Use the Gemini CLI and the included GEMINI.md context file to ask questions about your template, agent architecture, and the path to production. Get instant guidance and code examples directly in your terminal.\nHigh-Level Architecture\nThis starter pack covers all aspects of Agent development, from prototyping and evaluation to deployment and monitoring.\n🔧 Requirements\nPython 3.10+\nGoogle Cloud SDK\nTerraform (for deployment)\nMake (for development tasks)\n📚 Documentation\nVisit our documentation site for comprehensive guides and references!\n🔍 New to the codebase? Explore the CodeWiki for AI-powered code understanding and navigation.\nGetting Started Guide - First steps with agent-starter-pack\nInstallation Guide - Setting up your environment\nDeployment Guide - Taking your agent to production\nAgent Templates Overview - Explore available agent patterns\nCLI Reference - Command-line tool documentation\nVideo Walkthrough:\nFrom Demo to Production with Agent Starter Pack : Learn how the Agent Starter Pack acts as an Automated Architect, building the professional infrastructure for your AI project in seconds. Covers why most AI projects fail at deployment and how ASP automates Terraform, CI/CD, and observability.\n6-minute introduction (April 2025): Explaining the Agent Starter Pack and demonstrating its key features. Part of the Kaggle GenAI intensive course.\nLooking for more examples and resources for Generative AI on Google Cloud? Check out the GoogleCloudPlatform/generative-ai repository for notebooks, code samples, and more!\nContributing\nContributions are welcome! See the Contributing Guide .\nFeedback\nWe value your input! Your feedback helps us improve this starter pack and make it more useful for the community.\nGetting Help\nIf you encounter any issues or have specific suggestions, please first consider raising an issue on our GitHub repository.\nShare Your Experience\nFor other types of feedback, or if you'd like to share a positive experience or success story using this starter pack, we'd love to hear from you! You can reach out to us at agent-starter-pack@google.com .\nThank you for your contributions!\nDisclaimer\nThis repository is for demonstrative purposes only and is not an officially supported Google product.\nTerms of Service\nThe agent-starter-pack templating CLI and the templates in this starter pack leverage Google Cloud APIs. When you use this starter pack, you'll be deploying resources in your own Google Cloud project and will be responsible for those resources. Please review the Google Cloud Service Terms for details on the terms of service associated with these APIs.\nAbout\nShip AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability.\ngooglecloudplatform.github.io/agent-starter-pack/\nTopics\ngcp\ngemini\nagents\nobservability\nmlops\ngenerative-ai\nllmops\ngenai-agents\nResources\nReadme\nLicense\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n6.5k\nstars\nWatchers\n63\nwatching\nForks\n1.5k\nforks\nReport repository\nReleases\n83\nv0.41.3\nLatest\nApr 25, 2026\n+ 82 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n66.3%\nJupyter Notebook\n12.0%\nHCL\n9.8%\nTypeScript\n4.8%\nMakefile\n2.4%\nGo\n1.3%\nOther\n3.4%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-014-googlecloudplatform-agent-starter-pack-github.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-014-googlecloudplatform-agent-starter-pack-github.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 82,
+  "extractor_diagnostics": {
+    "readability_score": 82,
+    "text_length": 8073,
+    "paragraph_count": 79,
+    "sentence_count": 62,
+    "boilerplate_hits": 5,
+    "symbol_ratio": 0.0015,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8073,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "693c7422c8c6c7ad",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "0bcac93591e486b0",
+  "content_hash": "693c7422c8c6c7ad",
+  "full_text_hash": "693c7422c8c6c7ad",
+  "semantic_hash": "7e9e99b2aec3d346",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-07T05:57:12.378Z",
+  "last_seen_at": "2026-06-07T05:57:12.378Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Ship AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "GoogleCloudPlatform agent-starter-pack Public Notifications You must be signed in to change notification settings Fork 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 737 Commits 737 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows agent_starter_pack agent_starter_pack docs docs tests tests .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore CODE_OF_CONDUCT.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Google",
+      "GitHub"
+    ],
+    "products": [
+      "agent",
+      "Agents",
+      "GEMINI",
+      "Agent",
+      "agents",
+      "Claude",
+      "Gemini",
+      "Codex",
+      "gemini"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1.5",
+      "6.5",
+      "737",
+      "1 M",
+      "60",
+      "2",
+      "3.10",
+      "6"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "GoogleCloudPlatform agent-starter-pack Public Notifications You must be signed in to change notification settings Fork 1.",
+      "5k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 737 Commits 737 Commits .",
+      "gitignore CODE_OF_CONDUCT."
+    ],
+    "case_details": [
+      "Ship AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original"
+    ],
+    "workflow_changes": [
+      "github/ workflows .",
+      "github/ workflows agent_starter_pack agent_starter_pack docs docs tests tests ."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# GoogleCloudPlatform/agent-starter-pack - GitHub\n\n- raw_id: R-014\n- original_url: https://github.com/googlecloudplatform/agent-starter-pack\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-07T05:57:12.378Z\n\n## clean_text\n\nGoogleCloudPlatform\nagent-starter-pack\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.5k\nStar\n6.5k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n737 Commits\n737 Commits\n.cloudbuild\n.cloudbuild\n.github/ workflows\n.github/ workflows\nagent_starter_pack\nagent_starter_pack\ndocs\ndocs\ntests\ntests\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nGEMINI.md\nGEMINI.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\nllm.txt\nllm.txt\npyproject.toml\npyproject.toml\nuv.lock\nuv.lock\nView all files\nRepository files navigation\n🚀 Agent Starter Pack\n⚠️ Agent Starter Pack is in maintenance mode — switch to agents-cli\nActive development has moved to agents-cli , the next evolution of Agent Starter Pack. ASP will continue to receive critical fixes only — no new features, no new templates, no new deployment targets. New projects should start with agents-cli ; existing projects should migrate.\nuvx google-agents-cli setup\nMigration takes minutes — your agent code, tests, Terraform, and CI/CD carry over with no rewrites.\nWhat you gain:\n🛠️ Unified CLI in place of the Makefile — run , deploy , eval run , eval compare , playground , lint , and more\n🧠 Bundled coding-agent skills that turn Claude Code, Gemini CLI, or Codex into an ADK expert\n🔁 End-to-end lifecycle tooling : scaffold → eval → deploy → publish → observe\n☁️ First-class support for Google Cloud's Agent Platform\n→ Migration guide • Get started • Docs • GitHub • PyPI\nA Python package that provides production-ready templates for GenAI agents on Google Cloud.\nFocus on your agent logic—the starter pack provides everything else: infrastructure, CI/CD, observability, and security.\n⚡️ Launch\n🧪 Experiment\n✅ Deploy\n🛠️ Customize\nPre-built agent templates (ReAct, RAG, multi-agent, Live API).\nVertex AI evaluation and an interactive playground.\nProduction-ready infra with monitoring, observability , and CI/CD on Cloud Run or Agent Engine .\nExtend and customize templates according to your needs. 🆕 Now integrating with Gemini CLI\n⚡ Get Started in 1 Minute\nFrom zero to production-ready agent in 60 seconds using uv :\nuvx agent-starter-pack create\n✨ Alternative: Using pip\nIf you don't have uv installed, you can use pip:\n# Create and activate a Python virtual environment\npython -m venv .venv && source .venv/bin/activate\n# Install the agent starter pack\npip install --upgrade agent-starter-pack\n# Create a new agent project\nagent-starter-pack create\nThat's it! You now have a fully functional agent project—complete with backend, frontend, and deployment infrastructure—ready for you to explore and customize.\n🔧 Enhance Existing Agents\nAlready have an agent? Add production-ready deployment and infrastructure by running this command in your project's root folder:\nuvx agent-starter-pack enhance\nSee Installation Guide for more options, or try with zero setup in Firebase Studio or Cloud Shell .\n🤖 Agents\nAgent Name\nDescription\nadk\nA base ReAct agent implemented using Google's Agent Development Kit\nadk_a2a\nAn ADK agent with Agent2Agent (A2A) Protocol support for distributed agent communication and interoperability\nagentic_rag\nA RAG agent for document retrieval and Q&A. Supporting Vertex AI Search and Vector Search .\nlanggraph\nA base ReAct agent implemented using LangChain's LangGraph\nadk_java\nA base ReAct agent implemented using Google's Agent Development Kit for Java\nadk_live\nA real-time multimodal RAG agent powered by Gemini, supporting audio/video/text chat\nMore agents are on the way! We are continuously expanding our agent library . Have a specific agent type in mind? Raise an issue as a feature request!\n🔍 ADK Samples\nLooking to explore more ADK examples? Check out the ADK Samples Repository for additional examples and use cases demonstrating ADK's capabilities.\n🌟 Community Showcase\nExplore amazing projects built with the Agent Starter Pack!\nView Community Showcase →\nKey Features\nThe agent-starter-pack offers key features to accelerate and simplify the development of your agent:\n🔄 CI/CD Automation - A single command to set up a complete CI/CD pipeline for all environments, supporting both Google Cloud Build and GitHub Actions .\n📥 Data Pipeline for RAG with Terraform/CI-CD - Seamlessly integrate a data pipeline to process embeddings for RAG into your agent system. Supporting Vertex AI Search and Vector Search .\nRemote Templates : Create and share your own agent starter packs templates from any Git repository.\n🤖 Gemini CLI Integration - Use the Gemini CLI and the included GEMINI.md context file to ask questions about your template, agent architecture, and the path to production. Get instant guidance and code examples directly in your terminal.\nHigh-Level Architecture\nThis starter pack covers all aspects of Agent development, from prototyping and evaluation to deployment and monitoring.\n🔧 Requirements\nPython 3.10+\nGoogle Cloud SDK\nTerraform (for deployment)\nMake (for development tasks)\n📚 Documentation\nVisit our documentation site for comprehensive guides and references!\n🔍 New to the codebase? Explore the CodeWiki for AI-powered code understanding and navigation.\nGetting Started Guide - First steps with agent-starter-pack\nInstallation Guide - Setting up your environment\nDeployment Guide - Taking your agent to production\nAgent Templates Overview - Explore available agent patterns\nCLI Reference - Command-line tool documentation\nVideo Walkthrough:\nFrom Demo to Production with Agent Starter Pack : Learn how the Agent Starter Pack acts as an Automated Architect, building the professional infrastructure for your AI project in seconds. Covers why most AI projects fail at deployment and how ASP automates Terraform, CI/CD, and observability.\n6-minute introduction (April 2025): Explaining the Agent Starter Pack and demonstrating its key features. Part of the Kaggle GenAI intensive course.\nLooking for more examples and resources for Generative AI on Google Cloud? Check out the GoogleCloudPlatform/generative-ai repository for notebooks, code samples, and more!\nContributing\nContributions are welcome! See the Contributing Guide .\nFeedback\nWe value your input! Your feedback helps us improve this starter pack and make it more useful for the community.\nGetting Help\nIf you encounter any issues or have specific suggestions, please first consider raising an issue on our GitHub repository.\nShare Your Experience\nFor other types of feedback, or if you'd like to share a positive experience or success story using this starter pack, we'd love to hear from you! You can reach out to us at agent-starter-pack@google.com .\nThank you for your contributions!\nDisclaimer\nThis repository is for demonstrative purposes only and is not an officially supported Google product.\nTerms of Service\nThe agent-starter-pack templating CLI and the templates in this starter pack leverage Google Cloud APIs. When you use this starter pack, you'll be deploying resources in your own Google Cloud project and will be responsible for those resources. Please review the Google Cloud Service Terms for details on the terms of service associated with these APIs.\nAbout\nShip AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability.\ngooglecloudplatform.github.io/agent-starter-pack/\nTopics\ngcp\ngemini\nagents\nobservability\nmlops\ngenerative-ai\nllmops\ngenai-agents\nResources\nReadme\nLicense\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n6.5k\nstars\nWatchers\n63\nwatching\nForks\n1.5k\nforks\nReport repository\nReleases\n83\nv0.41.3\nLatest\nApr 25, 2026\n+ 82 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n66.3%\nJupyter Notebook\n12.0%\nHCL\n9.8%\nTypeScript\n4.8%\nMakefile\n2.4%\nGo\n1.3%\nOther\n3.4%\n\n## full_text\n\nGoogleCloudPlatform\nagent-starter-pack\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.5k\nStar\n6.5k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n737 Commits\n737 Commits\n.cloudbuild\n.cloudbuild\n.github/ workflows\n.github/ workflows\nagent_starter_pack\nagent_starter_pack\ndocs\ndocs\ntests\ntests\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nGEMINI.md\nGEMINI.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\nllm.txt\nllm.txt\npyproject.toml\npyproject.toml\nuv.lock\nuv.lock\nView all files\nRepository files navigation\n🚀 Agent Starter Pack\n⚠️ Agent Starter Pack is in maintenance mode — switch to agents-cli\nActive development has moved to agents-cli , the next evolution of Agent Starter Pack. ASP will continue to receive critical fixes only — no new features, no new templates, no new deployment targets. New projects should start with agents-cli ; existing projects should migrate.\nuvx google-agents-cli setup\nMigration takes minutes — your agent code, tests, Terraform, and CI/CD carry over with no rewrites.\nWhat you gain:\n🛠️ Unified CLI in place of the Makefile — run , deploy , eval run , eval compare , playground , lint , and more\n🧠 Bundled coding-agent skills that turn Claude Code, Gemini CLI, or Codex into an ADK expert\n🔁 End-to-end lifecycle tooling : scaffold → eval → deploy → publish → observe\n☁️ First-class support for Google Cloud's Agent Platform\n→ Migration guide • Get started • Docs • GitHub • PyPI\nA Python package that provides production-ready templates for GenAI agents on Google Cloud.\nFocus on your agent logic—the starter pack provides everything else: infrastructure, CI/CD, observability, and security.\n⚡️ Launch\n🧪 Experiment\n✅ Deploy\n🛠️ Customize\nPre-built agent templates (ReAct, RAG, multi-agent, Live API).\nVertex AI evaluation and an interactive playground.\nProduction-ready infra with monitoring, observability , and CI/CD on Cloud Run or Agent Engine .\nExtend and customize templates according to your needs. 🆕 Now integrating with Gemini CLI\n⚡ Get Started in 1 Minute\nFrom zero to production-ready agent in 60 seconds using uv :\nuvx agent-starter-pack create\n✨ Alternative: Using pip\nIf you don't have uv installed, you can use pip:\n# Create and activate a Python virtual environment\npython -m venv .venv && source .venv/bin/activate\n# Install the agent starter pack\npip install --upgrade agent-starter-pack\n# Create a new agent project\nagent-starter-pack create\nThat's it! You now have a fully functional agent project—complete with backend, frontend, and deployment infrastructure—ready for you to explore and customize.\n🔧 Enhance Existing Agents\nAlready have an agent? Add production-ready deployment and infrastructure by running this command in your project's root folder:\nuvx agent-starter-pack enhance\nSee Installation Guide for more options, or try with zero setup in Firebase Studio or Cloud Shell .\n🤖 Agents\nAgent Name\nDescription\nadk\nA base ReAct agent implemented using Google's Agent Development Kit\nadk_a2a\nAn ADK agent with Agent2Agent (A2A) Protocol support for distributed agent communication and interoperability\nagentic_rag\nA RAG agent for document retrieval and Q&A. Supporting Vertex AI Search and Vector Search .\nlanggraph\nA base ReAct agent implemented using LangChain's LangGraph\nadk_java\nA base ReAct agent implemented using Google's Agent Development Kit for Java\nadk_live\nA real-time multimodal RAG agent powered by Gemini, supporting audio/video/text chat\nMore agents are on the way! We are continuously expanding our agent library . Have a specific agent type in mind? Raise an issue as a feature request!\n🔍 ADK Samples\nLooking to explore more ADK examples? Check out the ADK Samples Repository for additional examples and use cases demonstrating ADK's capabilities.\n🌟 Community Showcase\nExplore amazing projects built with the Agent Starter Pack!\nView Community Showcase →\nKey Features\nThe agent-starter-pack offers key features to accelerate and simplify the development of your agent:\n🔄 CI/CD Automation - A single command to set up a complete CI/CD pipeline for all environments, supporting both Google Cloud Build and GitHub Actions .\n📥 Data Pipeline for RAG with Terraform/CI-CD - Seamlessly integrate a data pipeline to process embeddings for RAG into your agent system. Supporting Vertex AI Search and Vector Search .\nRemote Templates : Create and share your own agent starter packs templates from any Git repository.\n🤖 Gemini CLI Integration - Use the Gemini CLI and the included GEMINI.md context file to ask questions about your template, agent architecture, and the path to production. Get instant guidance and code examples directly in your terminal.\nHigh-Level Architecture\nThis starter pack covers all aspects of Agent development, from prototyping and evaluation to deployment and monitoring.\n🔧 Requirements\nPython 3.10+\nGoogle Cloud SDK\nTerraform (for deployment)\nMake (for development tasks)\n📚 Documentation\nVisit our documentation site for comprehensive guides and references!\n🔍 New to the codebase? Explore the CodeWiki for AI-powered code understanding and navigation.\nGetting Started Guide - First steps with agent-starter-pack\nInstallation Guide - Setting up your environment\nDeployment Guide - Taking your agent to production\nAgent Templates Overview - Explore available agent patterns\nCLI Reference - Command-line tool documentation\nVideo Walkthrough:\nFrom Demo to Production with Agent Starter Pack : Learn how the Agent Starter Pack acts as an Automated Architect, building the professional infrastructure for your AI project in seconds. Covers why most AI projects fail at deployment and how ASP automates Terraform, CI/CD, and observability.\n6-minute introduction (April 2025): Explaining the Agent Starter Pack and demonstrating its key features. Part of the Kaggle GenAI intensive course.\nLooking for more examples and resources for Generative AI on Google Cloud? Check out the GoogleCloudPlatform/generative-ai repository for notebooks, code samples, and more!\nContributing\nContributions are welcome! See the Contributing Guide .\nFeedback\nWe value your input! Your feedback helps us improve this starter pack and make it more useful for the community.\nGetting Help\nIf you encounter any issues or have specific suggestions, please first consider raising an issue on our GitHub repository.\nShare Your Experience\nFor other types of feedback, or if you'd like to share a positive experience or success story using this starter pack, we'd love to hear from you! You can reach out to us at agent-starter-pack@google.com .\nThank you for your contributions!\nDisclaimer\nThis repository is for demonstrative purposes only and is not an officially supported Google product.\nTerms of Service\nThe agent-starter-pack templating CLI and the templates in this starter pack leverage Google Cloud APIs. When you use this starter pack, you'll be deploying resources in your own Google Cloud project and will be responsible for those resources. Please review the Google Cloud Service Terms for details on the terms of service associated with these APIs.\nAbout\nShip AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability.\ngooglecloudplatform.github.io/agent-starter-pack/\nTopics\ngcp\ngemini\nagents\nobservability\nmlops\ngenerative-ai\nllmops\ngenai-agents\nResources\nReadme\nLicense\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n6.5k\nstars\nWatchers\n63\nwatching\nForks\n1.5k\nforks\nReport repository\nReleases\n83\nv0.41.3\nLatest\nApr 25, 2026\n+ 82 releases\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n66.3%\nJupyter Notebook\n12.0%\nHCL\n9.8%\nTypeScript\n4.8%\nMakefile\n2.4%\nGo\n1.3%\nOther\n3.4%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 82\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] Ship AI Agents to Google Cloud in minutes, not months. Production-ready templates with built-in CI/CD, evaluation, and observability. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original\n2. [company_action / daily_observation, heatmap, change, case, trend / high] GoogleCloudPlatform agent-starter-pack Public Notifications You must be signed in to change notification settings Fork 1.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 5k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 737 Commits 737 Commits .\n4. [workflow_change / daily_observation, heatmap, change, case, trend / high] github/ workflows .\n5. [workflow_change / daily_observation, heatmap, change, case, trend / high] github/ workflows agent_starter_pack agent_starter_pack docs docs tests tests .\n6. [company_action / daily_observation, heatmap, change, case, trend / high] gitignore CODE_OF_CONDUCT.\n"
+}

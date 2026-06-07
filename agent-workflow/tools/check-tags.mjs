@@ -4,12 +4,17 @@ import { readTagTaxonomy, tagGroups, tagIdPattern } from "./tag-taxonomy-utils.m
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const siteContentPath = path.join(root, "01-SiteV2", "site", "data", "site-content.json");
+
+const currentSiteDataPaths = [
+  path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json"),
+  path.join(root, "01-SiteV2", "site", "data", "follow-builders-daily.json"),
+];
 
 const scriptTargets = [
   "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
   "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
   "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
+  "01-SiteV2/site/scripts/build-follow-builders-page-data.mjs",
   "01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
 ];
 
@@ -25,6 +30,7 @@ const scriptNonTagLiterals = new Set([
   "opinion-intake",
   "opinion-translation",
   "source-router",
+  "customer-service-proof",
 ]);
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
@@ -110,11 +116,7 @@ function scanMarkdownTags(knownIds) {
   const formalRequiredTypes = new Set([
     "signal_card",
     "opinion_card",
-    "change_candidate",
-    "scene_candidate",
     "trend_candidate",
-    "trend_report",
-    "brief_issue",
   ]);
 
   for (const file of files) {
@@ -155,6 +157,10 @@ function scanMarkdownTags(knownIds) {
   return { rows, missingFormalTags, candidateTags };
 }
 
+function isTagId(value = "") {
+  return typeof value === "string" && tagGroups.some((group) => value.startsWith(`${group}-`));
+}
+
 function collectSiteTags(value, rows = [], pathParts = []) {
   if (Array.isArray(value)) {
     value.forEach((item, index) => collectSiteTags(item, rows, [...pathParts, String(index)]));
@@ -162,13 +168,16 @@ function collectSiteTags(value, rows = [], pathParts = []) {
   }
   if (!value || typeof value !== "object") return rows;
 
-  if (typeof value.id === "string" && tagGroups.some((group) => value.id.startsWith(`${group}-`))) {
-    rows.push({ path: pathParts.join("."), tag: value.id });
-  }
+  if (isTagId(value.id)) rows.push({ path: pathParts.join("."), tag: value.id });
+  if (isTagId(value.tag)) rows.push({ path: [...pathParts, "tag"].join("."), tag: value.tag });
+  if (isTagId(value.filter)) rows.push({ path: [...pathParts, "filter"].join("."), tag: value.filter });
+
   if (Array.isArray(value.tags)) {
     value.tags.forEach((tag, index) => {
-      if (typeof tag === "string") rows.push({ path: [...pathParts, "tags", String(index)].join("."), tag });
-      if (tag && typeof tag === "object" && typeof tag.id === "string") rows.push({ path: [...pathParts, "tags", String(index)].join("."), tag: tag.id });
+      if (isTagId(tag)) rows.push({ path: [...pathParts, "tags", String(index)].join("."), tag });
+      if (tag && typeof tag === "object" && isTagId(tag.id)) {
+        rows.push({ path: [...pathParts, "tags", String(index)].join("."), tag: tag.id });
+      }
     });
   }
 
@@ -179,25 +188,23 @@ function collectSiteTags(value, rows = [], pathParts = []) {
   return rows;
 }
 
-function scanSiteContent(knownIds, taxonomyIds) {
-  if (!fs.existsSync(siteContentPath)) {
-    return { rows: [], taxonomyUnknown: [], taxonomyMissing: [...taxonomyIds] };
+function scanCurrentSiteData(knownIds) {
+  const rows = [];
+  for (const file of currentSiteDataPaths) {
+    if (!fs.existsSync(file)) continue;
+    const json = JSON.parse(fs.readFileSync(file, "utf8"));
+    rows.push(...collectSiteTags(json).map((row) => ({
+      file: rel(file),
+      path: row.path,
+      tag: row.tag,
+      known: knownIds.has(row.tag),
+    })));
   }
-  const json = JSON.parse(fs.readFileSync(siteContentPath, "utf8"));
-  const siteTaxonomyIds = new Set((Array.isArray(json.tagTaxonomy) ? json.tagTaxonomy : []).map((tag) => tag.id).filter(Boolean));
-  const rows = collectSiteTags(json)
-    .filter((row) => !row.path.startsWith("tagTaxonomy"))
-    .map((row) => ({ ...row, known: knownIds.has(row.tag) }));
-
-  return {
-    rows,
-    taxonomyUnknown: [...siteTaxonomyIds].filter((id) => !knownIds.has(id)),
-    taxonomyMissing: [...taxonomyIds].filter((id) => !siteTaxonomyIds.has(id)),
-  };
+  return rows;
 }
 
 function table(headers, rows) {
-  if (!rows.length) return "无。";
+  if (!rows.length) return "None.";
   return [
     `| ${headers.join(" | ")} |`,
     `| ${headers.map(() => "---").join(" | ")} |`,
@@ -213,59 +220,52 @@ function main() {
 
   const scriptRows = scanScriptTags(knownIds);
   const markdown = scanMarkdownTags(knownIds);
-  const site = scanSiteContent(knownIds, taxonomyIds);
+  const siteRows = scanCurrentSiteData(knownIds);
 
   const unknownScriptTags = scriptRows.filter((row) => !row.known);
   const unknownFormalTags = markdown.rows.filter((row) => !row.known);
-  const unknownSiteTags = site.rows.filter((row) => !row.known);
+  const unknownSiteTags = siteRows.filter((row) => !row.known);
   const unknownCandidateTags = markdown.candidateTags.filter((row) => !row.known);
   const failed = [
     ...duplicateIds.map((id) => `duplicate taxonomy id: ${id}`),
     ...unknownScriptTags.map((row) => `script unknown tag: ${row.tag} (${row.file}:${row.line})`),
     ...unknownFormalTags.map((row) => `formal_tags unknown tag: ${row.tag} (${row.file}:${row.line})`),
-    ...unknownSiteTags.map((row) => `site-content unknown tag: ${row.tag} (${row.path})`),
-    ...site.taxonomyUnknown.map((id) => `site tagTaxonomy unknown id: ${id}`),
-    ...site.taxonomyMissing.map((id) => `site tagTaxonomy missing id: ${id}`),
+    ...unknownSiteTags.map((row) => `current site data unknown tag: ${row.tag} (${row.file}:${row.path})`),
   ];
 
   const status = failed.length ? "failed" : "passed";
   const now = new Date();
   const report = `# Tag Quality Gate
 
-生成时间：${now.toLocaleString("zh-CN", { hour12: false })}
+Generated at: ${now.toLocaleString("zh-CN", { hour12: false })}
 
-## 结论
+## Result
 
-- 状态：${status}
-- 正式 taxonomy tag 数：${taxonomy.length}
-- 脚本 hardcoded unknown tags：${unknownScriptTags.length}
-- Markdown formal_tags unknown tags：${unknownFormalTags.length}
-- site-content tags unknown 数：${unknownSiteTags.length}
-- site tagTaxonomy unknown / missing：${site.taxonomyUnknown.length} / ${site.taxonomyMissing.length}
-- candidate_tags 中未登记 tag：${unknownCandidateTags.length}（只报告，不阻塞）
-- 缺 formal_tags 的正式资产：${markdown.missingFormalTags.length}（只报告，不阻塞本次 unknown gate）
+- Status: ${status}
+- Active taxonomy tags: ${taxonomy.length}
+- Script hardcoded unknown tags: ${unknownScriptTags.length}
+- Markdown formal_tags unknown tags: ${unknownFormalTags.length}
+- Current site data unknown tags: ${unknownSiteTags.length}
+- Unregistered candidate_tags: ${unknownCandidateTags.length} (reported only)
+- Formal assets missing formal_tags: ${markdown.missingFormalTags.length} (reported only)
 
-## 脚本未知 tag
+## Script Unknown Tags
 
 ${table(["file", "line", "tag"], unknownScriptTags)}
 
-## Markdown formal_tags 未知 tag
+## Markdown Formal Tags Unknown
 
 ${table(["file", "line", "tag"], unknownFormalTags)}
 
-## Site content 未知 tag
+## Current Site Data Unknown Tags
 
-${table(["path", "tag"], unknownSiteTags)}
+${table(["file", "path", "tag"], unknownSiteTags)}
 
-## Site tagTaxonomy 漂移
-
-${table(["tag"], [...site.taxonomyUnknown.map((tag) => ({ tag: `unknown:${tag}` })), ...site.taxonomyMissing.map((tag) => ({ tag: `missing:${tag}` }))])}
-
-## candidate_tags 观察项
+## Candidate Tags Watchlist
 
 ${table(["file", "line", "tag"], unknownCandidateTags.slice(0, 80))}
 
-## 缺 formal_tags 的正式资产
+## Formal Assets Missing formal_tags
 
 ${table(["file", "type"], markdown.missingFormalTags.slice(0, 120))}
 `;

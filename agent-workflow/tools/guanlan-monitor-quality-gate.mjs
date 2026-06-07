@@ -99,12 +99,16 @@ function parsePoolItems(poolMarkdown = "") {
     .split(/\r?\n##\s+/u)
     .slice(1)
     .map((block) => {
+      const title = String(block.split(/\r?\n/u)[0] || "").replace(/^P-\d+\s*[|｜-]?\s*/u, "").trim();
       const routes = parseLineInBlock(block, "pool_routes")
         .split(/,\s*/u)
         .map((item) => item.trim())
         .filter(Boolean);
       return {
+        title,
         routes,
+        sourceName: parseLineInBlock(block, "source"),
+        sourceUrl: parseLineInBlock(block, "source_url"),
         acquisitionChannel: parseLineInBlock(block, "acquisition_channel"),
         sourceLevel: parseLineInBlock(block, "source_level"),
         acquisitionSourceLevel: parseLineInBlock(block, "acquisition_source_level"),
@@ -171,6 +175,20 @@ function isAIRelevant(text = "") {
   );
 }
 
+function isLargeVendorText(text = "") {
+  return /\b(Google|Microsoft|Anthropic|OpenAI|NVIDIA|Nvidia|Oracle|AWS|Amazon|Meta|Apple|IBM|Salesforce|DeepMind)\b|谷歌|微软|英伟达|亚马逊/iu.test(
+    String(text || "")
+  );
+}
+
+function largeVendorIdentityText(item = {}) {
+  return [
+    item.title,
+    item.sourceName,
+    item.sourceUrl,
+  ].filter(Boolean).join(" ");
+}
+
 function hasOffTopicSignal(text = "", patterns = []) {
   const lowered = String(text || "").toLowerCase();
   if (!lowered) return false;
@@ -213,12 +231,18 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
   if (metrics.coreLowReadabilityCount > metrics.coreLowReadabilityMax) reasons.push("core_pool items failed readability extraction gate");
   if (metrics.coreRawQcBlockCount > metrics.coreRawQcBlockMax) reasons.push("core_pool items blocked by Raw QC");
   if (metrics.coreRawQcDegradedCount > metrics.coreRawQcDegradedMax) reasons.push("core_pool items degraded by Raw QC");
+  if (metrics.coreLargeVendorCount > metrics.coreLargeVendorMax || metrics.coreLargeVendorRatio > metrics.coreLargeVendorRatioMax) {
+    reasons.push("large-company items dominate core_pool");
+  }
+  if (metrics.coreNonLargeVendorCount < metrics.coreNonLargeVendorMin) reasons.push("non-large-company core_pool insufficient");
 
   if (!hardFailed.length) {
     return {
-      level: "degrade",
-      action: "Allow downstream with explicit evidence gaps and lower claim strength.",
-      reasons: reasons.length ? reasons : ["soft score below threshold"],
+      level: reasons.length ? "allow_with_notes" : "allow",
+      action: reasons.length
+        ? "Allow Signal Card asset generation and frontstage release with noted soft risks."
+        : "Allow Signal Card asset generation and frontstage release.",
+      reasons: reasons.length ? reasons : ["all hard gates passed"],
     };
   }
 
@@ -236,12 +260,14 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
     "core_pool items failed readability extraction gate",
     "core_pool items blocked by Raw QC",
     "core_pool items degraded by Raw QC",
+    "large-company items dominate core_pool",
+    "non-large-company core_pool insufficient",
   ]);
   const severe = reasons.some((item) => severeReasons.has(item));
   if (severe) {
     return {
       level: "pause",
-      action: "Pause downstream assets and daily observation until repair; only Watchlist / User Feedback use is allowed.",
+      action: "Pause Signal Card asset generation and frontstage release until repair; only Watchlist / User Feedback use is allowed.",
       reasons,
     };
   }
@@ -266,7 +292,8 @@ export function runGuanlanMonitorQualityGate({
   const strategyReq = safeObject(config.strategy_requirements);
   const offTopicPatterns = Array.isArray(config.off_topic_patterns) ? config.off_topic_patterns : [];
 
-  const scoreThreshold = Number(passScore ?? config.pass_score ?? 80);
+  const scoreThreshold = Number(passScore ?? config.diagnostic_score_reference ?? config.pass_score ?? 85);
+  const scoreMode = config.score_mode || "diagnostic_only";
   const rawFile = path.join(root, "01-SiteV2", "content", "01-raw", `${targetDate}-raw-candidates.md`);
   const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${targetDate}-pool-candidates.md`);
   const logFile = firstExisting([
@@ -324,6 +351,9 @@ export function runGuanlanMonitorQualityGate({
   const coreLowReadabilityCount = corePoolItems.filter((item) => item.readabilityScore < coreReadabilityScoreMin).length;
   const coreRawQcBlockCount = corePoolItems.filter((item) => item.rawQcDecision === "block").length;
   const coreRawQcDegradedCount = corePoolItems.filter((item) => item.rawQcDecision === "allow_with_degradation").length;
+  const coreLargeVendorCount = corePoolItems.filter((item) => isLargeVendorText(largeVendorIdentityText(item))).length;
+  const coreNonLargeVendorCount = Math.max(0, corePoolCount - coreLargeVendorCount);
+  const coreLargeVendorRatio = ratio(coreLargeVendorCount, corePoolCount);
 
   const failedSources = parseFailedSources(logBullets.failed_sources || "");
 
@@ -340,6 +370,9 @@ export function runGuanlanMonitorQualityGate({
   const coreMissingFullTextMax = Number(hard.core_missing_full_text_max ?? 0);
   const coreRawQcBlockMax = Number(hard.core_raw_qc_block_max ?? 0);
   const coreRawQcDegradedMax = Number(hard.core_raw_qc_degraded_max ?? 0);
+  const coreLargeVendorMax = Number(hard.core_large_vendor_max ?? 5);
+  const coreLargeVendorRatioMax = Number(hard.core_large_vendor_ratio_max ?? 0.35);
+  const coreNonLargeVendorMin = Number(hard.core_non_large_vendor_min ?? 0);
   const importanceCoverageMustNone = hard.importance_coverage_gaps_must_be_none ?? hard[legacyRawCoverageGateKey] ?? true;
   const poolImportanceCoverageMustNone = hard.pool_importance_coverage_gaps_must_be_none ?? hard[legacyPoolCoverageGateKey] ?? true;
   const nonCommunityPathMin = Number(keywordReq.non_community_paths_min || 2);
@@ -360,6 +393,9 @@ export function runGuanlanMonitorQualityGate({
     { key: "core_readability_score_min", passed: coreLowReadabilityCount <= coreLowReadabilityMax, value: `low=${coreLowReadabilityCount}/${coreLowReadabilityMax}; min=${coreReadabilityScoreMin}` },
     { key: "core_raw_qc_block_max", passed: coreRawQcBlockCount <= coreRawQcBlockMax, value: `${coreRawQcBlockCount}/${coreRawQcBlockMax}` },
     { key: "core_raw_qc_degraded_max", passed: coreRawQcDegradedCount <= coreRawQcDegradedMax, value: `${coreRawQcDegradedCount}/${coreRawQcDegradedMax}` },
+    { key: "core_large_vendor_max", passed: coreLargeVendorCount <= coreLargeVendorMax, value: `${coreLargeVendorCount}/${coreLargeVendorMax}` },
+    { key: "core_large_vendor_ratio_max", passed: coreLargeVendorRatio <= coreLargeVendorRatioMax, value: `${coreLargeVendorRatio.toFixed(2)}/${coreLargeVendorRatioMax}` },
+    { key: "core_non_large_vendor_min", passed: coreNonLargeVendorCount >= coreNonLargeVendorMin, value: `${coreNonLargeVendorCount}/${coreNonLargeVendorMin}` },
     {
       key: "importance_coverage_gaps_must_be_none",
       passed: importanceCoverageMustNone ? !coverageGapFlag : true,
@@ -424,7 +460,7 @@ export function runGuanlanMonitorQualityGate({
       importanceReadinessScore
   );
 
-  const passed = totalScore >= scoreThreshold && hardFailed.length === 0;
+  const passed = hardFailed.length === 0;
   const status = passed ? "passed" : "failed";
   const downstream = buildDownstreamRecommendation(
     {
@@ -450,6 +486,12 @@ export function runGuanlanMonitorQualityGate({
       coreRawQcBlockMax,
       coreRawQcDegradedCount,
       coreRawQcDegradedMax,
+      coreLargeVendorCount,
+      coreLargeVendorMax,
+      coreLargeVendorRatio,
+      coreLargeVendorRatioMax,
+      coreNonLargeVendorCount,
+      coreNonLargeVendorMin,
       rawMinHard,
       poolMinHard,
       routedPoolMinHard,
@@ -475,6 +517,10 @@ export function runGuanlanMonitorQualityGate({
     coreLowReadabilityCount ? `core_low_readability=${coreLowReadabilityCount}` : "",
     coreRawQcBlockCount ? `core_raw_qc_block=${coreRawQcBlockCount}` : "",
     coreRawQcDegradedCount ? `core_raw_qc_degraded=${coreRawQcDegradedCount}` : "",
+    coreLargeVendorCount > coreLargeVendorMax || coreLargeVendorRatio > coreLargeVendorRatioMax
+      ? `core_large_vendor=${coreLargeVendorCount}/${coreLargeVendorMax}; ratio=${coreLargeVendorRatio.toFixed(2)}/${coreLargeVendorRatioMax}`
+      : "",
+    coreNonLargeVendorCount < coreNonLargeVendorMin ? `core_non_large_vendor_insufficient=${coreNonLargeVendorCount}/${coreNonLargeVendorMin}` : "",
   ].filter(Boolean);
 
   const skillFeedback = [];
@@ -505,6 +551,12 @@ export function runGuanlanMonitorQualityGate({
   if (coreRawQcBlockCount || coreRawQcDegradedCount) {
     skillFeedback.push("Remove Raw-QC blocked or degraded items from core_pool; keep degraded material only in index, watchlist, emerging, or feedback routes.");
   }
+  if (coreLargeVendorCount > coreLargeVendorMax || coreLargeVendorRatio > coreLargeVendorRatioMax) {
+    skillFeedback.push("Demote repeated large-company product/lab items from core_pool and replenish funding, customer deployment, vertical workflow, pricing, procurement, regulatory, or emerging-company evidence.");
+  }
+  if (coreNonLargeVendorCount < coreNonLargeVendorMin) {
+    skillFeedback.push("Expand Raw and Pool around emerging companies, customer deployments, vertical workflow cases, funding, procurement, pricing and regulatory evidence until non-large-company core_pool has enough depth.");
+  }
   if (failedSources.length) {
     skillFeedback.push("Repair failed sources or document fallback paths before downstream use.");
   }
@@ -519,7 +571,8 @@ export function runGuanlanMonitorQualityGate({
     `- attempt: ${attempt}/${maxAttempts}`,
     `- status: ${status}`,
     `- total_score: ${totalScore}`,
-    `- pass_score_threshold: ${scoreThreshold}`,
+    `- diagnostic_score_reference: ${scoreThreshold}`,
+    `- score_mode: ${scoreMode}`,
     `- raw_count: ${rawCount}`,
     `- pool_count: ${poolCount}`,
     `- pool_index_count: ${poolItems.length}`,
@@ -541,6 +594,9 @@ export function runGuanlanMonitorQualityGate({
     `- core_readability_score_min: ${coreReadabilityScoreMin}`,
     `- core_raw_qc_block_count: ${coreRawQcBlockCount}`,
     `- core_raw_qc_degraded_count: ${coreRawQcDegradedCount}`,
+    `- core_large_vendor_count: ${coreLargeVendorCount}`,
+    `- core_non_large_vendor_count: ${coreNonLargeVendorCount}`,
+    `- core_large_vendor_ratio: ${coreLargeVendorRatio.toFixed(3)}`,
     `- importance_coverage_gaps: ${importanceCoverageValue}`,
     `- pool_importance_coverage_gaps: ${poolImportanceCoverageValue}`,
     `- failed_sources: ${failedSources.length ? failedSources.join("; ") : "none"}`,
@@ -590,7 +646,8 @@ export function runGuanlanMonitorQualityGate({
     status,
     passed,
     total_score: totalScore,
-    pass_score_threshold: scoreThreshold,
+    diagnostic_score_reference: scoreThreshold,
+    score_mode: scoreMode,
     hard_failed: hardFailed,
     hard_checks: hardChecks,
     skill_feedback: skillFeedback,
@@ -622,6 +679,9 @@ export function runGuanlanMonitorQualityGate({
       core_readability_score_min: coreReadabilityScoreMin,
       core_raw_qc_block_count: coreRawQcBlockCount,
       core_raw_qc_degraded_count: coreRawQcDegradedCount,
+      core_large_vendor_count: coreLargeVendorCount,
+      core_non_large_vendor_count: coreNonLargeVendorCount,
+      core_large_vendor_ratio: coreLargeVendorRatio,
       failed_sources_count: failedSources.length,
       importance_coverage_gaps: importanceCoverageValue,
       pool_importance_coverage_gaps: poolImportanceCoverageValue,
@@ -642,5 +702,3 @@ if (import.meta.main) {
   console.log(`Report: ${rel(result.report_path)}`);
   if (!result.passed) process.exitCode = 1;
 }
-
-

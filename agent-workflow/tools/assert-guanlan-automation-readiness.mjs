@@ -115,6 +115,22 @@ function isAssetPermissionAllowed(permission = "") {
   return /\b(allow|allowed|may continue|continue)\b|\u5141\u8bb8|\u53ef\u7ee7\u7eed|\u653e\u884c/iu.test(permission);
 }
 
+function parseGeneratedAt(text = "") {
+  const value = parseLineValue(text, "generated_at");
+  if (!value) return null;
+  const time = Date.parse(value);
+  return Number.isFinite(time) ? time : null;
+}
+
+function isFinalQcFresh(finalQcText = "", gateText = "") {
+  const finalGeneratedAt = parseGeneratedAt(finalQcText);
+  const gateGeneratedAt = parseGeneratedAt(gateText);
+  if (!finalQcText) return false;
+  if (!finalGeneratedAt) return false;
+  if (!gateGeneratedAt) return true;
+  return finalGeneratedAt >= gateGeneratedAt;
+}
+
 function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
   const files = monitorFiles();
   const reasons = [];
@@ -141,6 +157,15 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
   const finalQcResult = parseResultStatus(finalQcText);
   const finalQcDecision = finalQcText ? parseFinalQcDecision(finalQcText) : "";
   const assetPermission = command === "assets" ? parseDownstreamPermission(finalQcText, "Asset chain") : "";
+  const finalQcFresh = isFinalQcFresh(finalQcText, gateText);
+  const repairAllowDegradedAssets =
+    command === "assets" &&
+    args.get("repair-allow-degraded-assets") === "true" &&
+    !requireFinalQc;
+  const manualReleaseOverride =
+    command === "assets" &&
+    args.get("manual-release-override") === "true" &&
+    !requireFinalQc;
 
   const acceptedLoopStatuses = new Set(["passed", "passed_with_notes", "passed_after_manual_backfill"]);
   const acceptedFinalQcResults = new Set(["passed", "passed_with_notes", "passed_after_manual_backfill"]);
@@ -153,7 +178,6 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
   const finalQcResultAccepted = !finalQcText || acceptedFinalQcResults.has(finalQcResult);
   const gateAllowsRepair =
     gateStatus === "passed" &&
-    (score === null || score >= minScore) &&
     isNoGap(importanceGaps) &&
     isNoGap(poolImportanceGaps) &&
     (usableCoreEvidenceCount === null || usableCoreEvidenceCount >= 5);
@@ -161,19 +185,19 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
     command === "assets" &&
     loopHasHistoricalBlock &&
     finalQcAllowsAssets &&
+    finalQcFresh &&
     finalQcResultAccepted &&
     gateAllowsRepair;
 
-  if (loopText && !loopStatusAccepted && !supersededByFinalQc) reasons.push(`quality loop status is ${loopStatus || "unknown"}`);
-  if (/true/i.test(manualIntervention) && !supersededByFinalQc) reasons.push("quality loop requires manual intervention");
-  if (score !== null && score < minScore) reasons.push(`quality score ${score} below ${minScore}`);
-
+  if (loopText && !loopStatusAccepted && !supersededByFinalQc && !repairAllowDegradedAssets && !manualReleaseOverride) reasons.push(`quality loop status is ${loopStatus || "unknown"}`);
+  if (/true/i.test(manualIntervention) && !supersededByFinalQc && !repairAllowDegradedAssets && !manualReleaseOverride) reasons.push("quality loop requires manual intervention");
   for (const key of ["source_distribution", "failed_sources", "fallback_used", "evidence_gaps"]) {
     if (logText && !logText.includes(key)) reasons.push(`monitor log missing ${key}`);
   }
 
   if (requireFinalQc) {
     if (!finalQcText) reasons.push(`missing final QC report: ${rel(files.finalQc)}`);
+    else if (!finalQcFresh) reasons.push("final QC report is missing generated_at or older than the latest quality gate");
     else if (!["allow", "allow_with_degradation"].includes(finalQcDecision)) reasons.push(`final QC decision is ${finalQcDecision || "unknown"}`);
     else if (command === "assets" && finalQcDecision === "allow_with_degradation") {
       if (!assetPermission) {
@@ -192,7 +216,9 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
     manualIntervention: manualIntervention || "unknown",
     score,
     finalQcDecision: finalQcDecision || "not_required",
+    finalQcFresh,
     supersededByFinalQc,
+    manualReleaseOverride,
     assetScope:
       command === "assets" && finalQcDecision === "allow_with_degradation"
         ? "eligible_core_pool_only"
@@ -203,7 +229,7 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
 }
 
 function main() {
-  const minScore = Number(args.get("min-score") || 80);
+  const minScore = Number(args.get("min-score") || 85);
   const requireFinalQcArg = args.get("require-final-qc");
   const requireFinalQc =
     requireFinalQcArg === "true" || (requireFinalQcArg !== "false" && command === "assets");
@@ -217,7 +243,9 @@ function main() {
       manual_intervention_required: result.manualIntervention,
       quality_score: result.score ?? "unknown",
       final_qc_decision: result.finalQcDecision,
+      final_qc_fresh: result.finalQcFresh,
       superseded_by_final_qc: result.supersededByFinalQc,
+      manual_release_override: result.manualReleaseOverride,
       asset_scope: result.assetScope,
     });
     console.log(
@@ -228,8 +256,10 @@ function main() {
           date,
           reasons: result.reasons,
           blocked_report: rel(blockedReport),
-          final_qc_decision: result.finalQcDecision,
-          superseded_by_final_qc: result.supersededByFinalQc,
+        final_qc_decision: result.finalQcDecision,
+        final_qc_fresh: result.finalQcFresh,
+        superseded_by_final_qc: result.supersededByFinalQc,
+        manual_release_override: result.manualReleaseOverride,
           asset_scope: result.assetScope,
         },
         null,
@@ -249,7 +279,9 @@ function main() {
         manual_intervention_required: result.manualIntervention,
         quality_score: result.score,
         final_qc_decision: result.finalQcDecision,
+        final_qc_fresh: result.finalQcFresh,
         superseded_by_final_qc: result.supersededByFinalQc,
+        manual_release_override: result.manualReleaseOverride,
         asset_scope: result.assetScope,
       },
       null,

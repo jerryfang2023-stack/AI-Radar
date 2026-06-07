@@ -1,0 +1,295 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-038
+title: "Bedrock Robotics Builds Autonomous Construction Systems on Anyscale"
+original_url: "https://www.anyscale.com/resources/case-study/bedrock-robotics"
+canonical_url: "https://anyscale.com/resources/case-study/bedrock-robotics"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-07T04:07:12.622Z
+language: mixed
+full_text_hash: d390b13c32bc6b1e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-038-bedrock-robotics-builds-autonomous-construction-systems-on-anyscale.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-06/r-038-bedrock-robotics-builds-autonomous-construction-systems-on-anyscale.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":11828,"paragraph_count":43,"sentence_count":77,"boilerplate_hits":0,"symbol_ratio":0.0005,"method":"main"}
+has_full_text: true
+content_length: 11828
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d390b13c32bc6b1e","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6d3237248101a4bf
+content_hash: d390b13c32bc6b1e
+semantic_hash: a55b1bb914937709
+duplicate_of: ""
+first_seen_at: "2026-06-07T04:07:12.622Z"
+last_seen_at: 2026-06-07T04:07:12.622Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","AWS"],"products":["agents"],"people":[],"industries":["金融 / 保险","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["85x","20","1.7M","12 m","40%","250","2025","2024"],"quotes":[" We've been running 70–80% spot instance usage across our fleet with no effort on our part. That's pretty incredible from a feature perspective. ","\nThomas Pelletier | Head of ML Platform & Infrastructure\n"]}
+evidence_seed: {"company_actions":["Bedrock Robotics Builds Autonomous Construction Systems on Anyscale # Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale. Bedrock Robotics is building a... / query=AI infrastructure startup Series A customers / intent=find_startups / path=industry_landing","Their technology, the Bedrock Operator, uses large-scale machine learning models to transform everyday equipment with autonomy, enabling safer jobsites with fewer accidents and lower insurance rates, accelerated project schedules through new efficiencies and less rework, and the operational precision needed to fuel the next industrial revolution.","Rather than relying on hand-crafted heuristics, Bedrock trains models on large, diverse multimodal datasets collected from active jobsites across the United States, enabling general purpose robotics intelligence that adapts to any heavy machinery."],"case_details":["Case Study Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"Bedrock Robotics Builds Autonomous Construction Systems on Anyscale # Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale. Bedrock Robotics is building a... / query=AI infrastructure startup Series A customers / intent=find_startups / path=industry_landing","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Case Study Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"85x scale in compute, from 20K to 1.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"7M compute hours in under 12 months 40% cost reduction via reliable use of spot instances 250+ engineering hours reclaimed from manual cluster management Bedrock Robotics is building advanced autonomous systems for specialized heavy machinery, starting with excavators on construction sites.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Their technology, the Bedrock Operator, uses large-scale machine learning models to transform everyday equipment with autonomy, enabling safer jobsites with fewer accidents and lower insurance rates, accelerated project schedules through new efficiencies and less rework, and the operational precision needed to fuel the next industrial revolution.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Rather than relying on hand-crafted heuristics, Bedrock trains models on large, diverse multimodal datasets collected from active jobsites across the United States, enabling general purpose robotics intelligence that adapts to any heavy machinery.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Bedrock Robotics Builds Autonomous Construction Systems on Anyscale
+
+## clean_text
+
+Case Study
+Bedrock Robotics Builds Autonomous Construction Systems on Anyscale
+Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale.
+85x
+scale in compute, from 20K to 1.7M compute hours in under 12 months
+40%
+cost reduction via reliable use of spot instances
+250+
+engineering hours reclaimed from manual cluster management
+Bedrock Robotics is building advanced autonomous systems for specialized heavy machinery, starting with excavators on construction sites. Their technology, the Bedrock Operator, uses large-scale machine learning models to transform everyday equipment with autonomy, enabling safer jobsites with fewer accidents and lower insurance rates, accelerated project schedules through new efficiencies and less rework, and the operational precision needed to fuel the next industrial revolution.
+Rather than relying on hand-crafted heuristics, Bedrock trains models on large, diverse multimodal datasets collected from active jobsites across the United States, enabling general purpose robotics intelligence that adapts to any heavy machinery.
+To build advanced models for autonomous construction, Bedrock needed a compute platform that could handle their end-to-end AI pipeline from the moment sensor data arrives in the cloud, through processing, labeling, and training, all the way to model deployment at scale.They went all in on Ray on Anyscale as the unifying AI platform.
+Link Challenges
+By early 2025, Bedrock had proven their approach to general purpose intelligence but scaling it required solving the infrastructure problem, not only the modeling. To scale both their multimodal data processing pipelines and large scale training runs, the next challenge was building the infrastructure to support it all while keeping their teams focused on innovation, not infra plumbing.
+Three challenges stood in the way:
+Multimodal pipelines that existing tools weren't built for. Bedrock's pipelines don't fit neatly into CPU-only or GPU-only frameworks. A typical pipeline might decode video on GPUs, run reduction on CPUs, then run model inference on GPUs again, spanning object detection, segmentation, VLM calls, and scenario classification. Existing large-scale processing engines like Spark weren't designed for this kind of mixed compute, and self-managing heterogeneous clusters introduced significant operational friction for a team that needed to move quickly.
+A lean platform team supporting a fast-growing company. In 2024, a 4-person platform team was supporting over 30 developers and researchers, with no bandwidth to manage distributed systems on Kubernetes and the tooling required on top of it, including self-service cluster spin up and priority-aware scheduling for dozens of concurrent job requests. As Bedrock's headcount and ambitions grew, so did the pressure on that team. They needed a platform that could scale with the company without scaling the infrastructure burden with it.
+Cloud costs that would outpace business growth. Building AI for heavy equipment at scale is expensive by nature. Without a cost-efficient way to orchestrate compute across massive data volumes, cloud spend could grow faster than revenue. The team needed a platform that could maximize spot instance coverage and handle interruptions automatically, without requiring ongoing engineering effort to maintain it.
+" Our workloads don't just use CPU or just GPUs. We get the best setup when we can mix and match throughout the same workload. You have a lot of friction to create and maintain those heterogeneous clusters in other systems. That's something Spark just isn't designed for. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link The Solution
+Bedrock evaluated two paths: build and manage their own Ray platform on Kubernetes, or focus on their differentiated work with a production-ready Ray platform through Anyscale. The decision to use Anyscale came down to focus: invest in what differentiates Bedrock, and partner directly with the team that builds Ray rather than maintaining it themselves. This partnership also meant getting the kind of expert support and co-design that only comes from working with the people who created the technology.
+With Anyscale, Bedrock is able to:
+Scalable compute for CPU + GPU multimodal data processing. Managing heterogeneous compute across a multi-stage robotics pipeline was one of Bedrock's core requirements from day one. Anyscale is involved from the moment robot data lands in S3. Jobs pick up MCAP files, video streams, and LiDAR packets, index and unpack them, then run them through a tiered labeling pipeline covering heuristics, VLM calls, and model inference before feeding curated data into training loops.
+Support a 1-to-6 platform-to-researcher ratio with smart scheduling. Bedrock needed Anyscale to handle the infrastructure, so their platform team could focus on what mattered. Anyscale’s fully managed Ray clusters eliminated time spent on provisioning, maintenance, and failure recovery. Ray's Python-first programming model meant researchers could tap into distributed compute without deep infrastructure knowledge. By 2025, with 12 platform engineers supporting over 100 people across ML research, data science, and operations, Anyscale's priority-aware Workload Scheduler and built-in observability let users self-serve without escalating to the platform team.
+Scale spot instance usage to 80% without ongoing engineering effort. Cost efficiency is a core requirement for Bedrock's platform team, and runaway cloud costs are a hard problem for any company building AI at scale. Anyscale's built-in spot instance support allowed the team to run the majority of their fleet on spot instances from day one, with no ongoing engineering effort required. Bedrock also runs jobs across multiple AWS regions to maximize spot availability and take advantage of price differences across regions.
+" Managing Kubernetes and distributed compute is hard, and Anyscale keeps solving that, so we don't have to. Every hour we're not rebuilding infrastructure is an hour invested in what actually differentiates Bedrock. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link End-to-End Pipelines on a Single Platform
+Bedrock's pipeline spans every stage of model development: ingesting raw robot sensor data, processing and labeling it, running training loops, and validating models. Each stage uses different compute, different Python and ML frameworks, and different levels of resource intensity. Stitching all of that together on a single platform, without rebuilding orchestration logic from scratch, was a core requirement from day one.
+Anyscale is involved from the moment robot data lands in S3. Anyscale Jobs pick up MCAP files, video streams, and LiDAR packets, index and unpack them, then run them through a tiered labeling pipeline covering heuristics, and visual language model (VLM) inference calls before feeding curated data into training loops. From raw sensor data to a validated, packaged model ready for deployment on a robot, everything runs on Ray and Anyscale. In under 12 months, Bedrock scaled from 20,000 to 1.7 million vCPU/hour, an 85x increase in compute, all absorbed by the same Anyscale deployment they stood up in their first week using Terraform. What started as a test deployment during a demo site visit is still their production environment today.
+" We went from 20,000 vCPU per hour to 1.7 million at the end of the year. Anyscale has been able to just grow and follow us through that massive growth, and we're expecting this to keep skyrocketing. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link Smarter Scheduling at Scale
+In 2025, with 12 platform engineers supporting over 100 people across the company and 60+ active job submitters on any given day, Bedrock needed more than a compute platform. They needed a scheduler that could handle priority-aware job queuing across teams, enforce fairness between competing workloads, and give every user visibility into their job status without requiring the platform team to intervene. The tooling around the platform is the part that's often overlooked: where does one see logs, how to list running jobs, how many times did a job retry. Building all of that internally wasn't an option for a team of that size, which is why the Anyscale Workload Scheduler became central to how Bedrock manages compute across the organization.
+Training jobs queue up and execute when resources are available, with users able to see their position in the queue, understand why a job is waiting, and cancel or reprioritize as needed. When a researcher asks why their job isn't running, the platform team points them directly to the Anyscale Scheduler UI, where job logs, queue position, compute utilization, and preemption history are all surfaced in one place. Bedrock's platform team also published an internal skill that teaches coding agents how to start, monitor, debug, and stop Anyscale jobs autonomously, enabling researchers to complete full iteration loops without human intervention.
+" We really strongly believe that the Workload Scheduler is a great opportunity for Anyscale to do a lot of optimizations, solve a lot of problems that we're facing as we scale. And we often have a wish list for it, and that's where a lot of our attention as a team lands. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link Cost Efficiency Without the Engineering Overhead
+Robotics AI is compute-intensive by nature. Bedrock generates massive amounts of data per robot everyday, and processing all of it through expensive models isn't economically feasible. Runaway cloud costs are a hard problem in general, and especially so for a company building AI for heavy equipment at scale. Using Ray to handle the orchestration of that pipeline efficiently, with intelligent batching and filtering just in time, helps Bedrock keep costs in line while still getting strong performance.
+On the infrastructure side, Anyscale's spot instance support has been a major lever. Running 80% of their fleet on spot instances, with minimal configuration effort and no ongoing engineering overhead, has significantly reduced cloud spend. In Q4 2025 alone, Anyscale's autoscaler handled 15,000 spot interruptions automatically across 94,000+ compute hours, with zero manual job recovery work required. That translated to a 40% cost reduction via spot automation, significant cost savings and hundreds of engineering hours saved.
+" We've been running 70–80% spot instance usage across our fleet with no effort on our part. That's pretty incredible from a feature perspective. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link What's Next
+Bedrock is expanding across cloud regions and evaluating multi-cloud options, driven by GPU capacity availability and spot price economics. As the company grows its fleet of autonomous machines, the data volumes, model complexity, and compute requirements will all continue to grow with it and Anyscale will be the platform to do so cost-efficiently.
+" Anyscale is in a unique position to really tap into the whole vertical of the modern AI and robotics platform. You have the full stack from raw compute all the way to model deployment. It's rare to have a company with such a unique position. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+"In less than a year, we scaled from 20,000 - 1.7M compute hours per month. Achieving that scale efficiently required Anyscale-powered spot instance usage (80% of our workloads) and the Anyscale Workload Scheduler that manages our job queues across all of research and engineering."
+Thomas Pelletier
+Head of ML Platform & Infrastructure, Bedrock Robotics
+Want to give it a try? Get started for free
+
+## full_text
+
+Case Study
+Bedrock Robotics Builds Autonomous Construction Systems on Anyscale
+Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale.
+85x
+scale in compute, from 20K to 1.7M compute hours in under 12 months
+40%
+cost reduction via reliable use of spot instances
+250+
+engineering hours reclaimed from manual cluster management
+Bedrock Robotics is building advanced autonomous systems for specialized heavy machinery, starting with excavators on construction sites. Their technology, the Bedrock Operator, uses large-scale machine learning models to transform everyday equipment with autonomy, enabling safer jobsites with fewer accidents and lower insurance rates, accelerated project schedules through new efficiencies and less rework, and the operational precision needed to fuel the next industrial revolution.
+Rather than relying on hand-crafted heuristics, Bedrock trains models on large, diverse multimodal datasets collected from active jobsites across the United States, enabling general purpose robotics intelligence that adapts to any heavy machinery.
+To build advanced models for autonomous construction, Bedrock needed a compute platform that could handle their end-to-end AI pipeline from the moment sensor data arrives in the cloud, through processing, labeling, and training, all the way to model deployment at scale.They went all in on Ray on Anyscale as the unifying AI platform.
+Link Challenges
+By early 2025, Bedrock had proven their approach to general purpose intelligence but scaling it required solving the infrastructure problem, not only the modeling. To scale both their multimodal data processing pipelines and large scale training runs, the next challenge was building the infrastructure to support it all while keeping their teams focused on innovation, not infra plumbing.
+Three challenges stood in the way:
+Multimodal pipelines that existing tools weren't built for. Bedrock's pipelines don't fit neatly into CPU-only or GPU-only frameworks. A typical pipeline might decode video on GPUs, run reduction on CPUs, then run model inference on GPUs again, spanning object detection, segmentation, VLM calls, and scenario classification. Existing large-scale processing engines like Spark weren't designed for this kind of mixed compute, and self-managing heterogeneous clusters introduced significant operational friction for a team that needed to move quickly.
+A lean platform team supporting a fast-growing company. In 2024, a 4-person platform team was supporting over 30 developers and researchers, with no bandwidth to manage distributed systems on Kubernetes and the tooling required on top of it, including self-service cluster spin up and priority-aware scheduling for dozens of concurrent job requests. As Bedrock's headcount and ambitions grew, so did the pressure on that team. They needed a platform that could scale with the company without scaling the infrastructure burden with it.
+Cloud costs that would outpace business growth. Building AI for heavy equipment at scale is expensive by nature. Without a cost-efficient way to orchestrate compute across massive data volumes, cloud spend could grow faster than revenue. The team needed a platform that could maximize spot instance coverage and handle interruptions automatically, without requiring ongoing engineering effort to maintain it.
+" Our workloads don't just use CPU or just GPUs. We get the best setup when we can mix and match throughout the same workload. You have a lot of friction to create and maintain those heterogeneous clusters in other systems. That's something Spark just isn't designed for. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link The Solution
+Bedrock evaluated two paths: build and manage their own Ray platform on Kubernetes, or focus on their differentiated work with a production-ready Ray platform through Anyscale. The decision to use Anyscale came down to focus: invest in what differentiates Bedrock, and partner directly with the team that builds Ray rather than maintaining it themselves. This partnership also meant getting the kind of expert support and co-design that only comes from working with the people who created the technology.
+With Anyscale, Bedrock is able to:
+Scalable compute for CPU + GPU multimodal data processing. Managing heterogeneous compute across a multi-stage robotics pipeline was one of Bedrock's core requirements from day one. Anyscale is involved from the moment robot data lands in S3. Jobs pick up MCAP files, video streams, and LiDAR packets, index and unpack them, then run them through a tiered labeling pipeline covering heuristics, VLM calls, and model inference before feeding curated data into training loops.
+Support a 1-to-6 platform-to-researcher ratio with smart scheduling. Bedrock needed Anyscale to handle the infrastructure, so their platform team could focus on what mattered. Anyscale’s fully managed Ray clusters eliminated time spent on provisioning, maintenance, and failure recovery. Ray's Python-first programming model meant researchers could tap into distributed compute without deep infrastructure knowledge. By 2025, with 12 platform engineers supporting over 100 people across ML research, data science, and operations, Anyscale's priority-aware Workload Scheduler and built-in observability let users self-serve without escalating to the platform team.
+Scale spot instance usage to 80% without ongoing engineering effort. Cost efficiency is a core requirement for Bedrock's platform team, and runaway cloud costs are a hard problem for any company building AI at scale. Anyscale's built-in spot instance support allowed the team to run the majority of their fleet on spot instances from day one, with no ongoing engineering effort required. Bedrock also runs jobs across multiple AWS regions to maximize spot availability and take advantage of price differences across regions.
+" Managing Kubernetes and distributed compute is hard, and Anyscale keeps solving that, so we don't have to. Every hour we're not rebuilding infrastructure is an hour invested in what actually differentiates Bedrock. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link End-to-End Pipelines on a Single Platform
+Bedrock's pipeline spans every stage of model development: ingesting raw robot sensor data, processing and labeling it, running training loops, and validating models. Each stage uses different compute, different Python and ML frameworks, and different levels of resource intensity. Stitching all of that together on a single platform, without rebuilding orchestration logic from scratch, was a core requirement from day one.
+Anyscale is involved from the moment robot data lands in S3. Anyscale Jobs pick up MCAP files, video streams, and LiDAR packets, index and unpack them, then run them through a tiered labeling pipeline covering heuristics, and visual language model (VLM) inference calls before feeding curated data into training loops. From raw sensor data to a validated, packaged model ready for deployment on a robot, everything runs on Ray and Anyscale. In under 12 months, Bedrock scaled from 20,000 to 1.7 million vCPU/hour, an 85x increase in compute, all absorbed by the same Anyscale deployment they stood up in their first week using Terraform. What started as a test deployment during a demo site visit is still their production environment today.
+" We went from 20,000 vCPU per hour to 1.7 million at the end of the year. Anyscale has been able to just grow and follow us through that massive growth, and we're expecting this to keep skyrocketing. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link Smarter Scheduling at Scale
+In 2025, with 12 platform engineers supporting over 100 people across the company and 60+ active job submitters on any given day, Bedrock needed more than a compute platform. They needed a scheduler that could handle priority-aware job queuing across teams, enforce fairness between competing workloads, and give every user visibility into their job status without requiring the platform team to intervene. The tooling around the platform is the part that's often overlooked: where does one see logs, how to list running jobs, how many times did a job retry. Building all of that internally wasn't an option for a team of that size, which is why the Anyscale Workload Scheduler became central to how Bedrock manages compute across the organization.
+Training jobs queue up and execute when resources are available, with users able to see their position in the queue, understand why a job is waiting, and cancel or reprioritize as needed. When a researcher asks why their job isn't running, the platform team points them directly to the Anyscale Scheduler UI, where job logs, queue position, compute utilization, and preemption history are all surfaced in one place. Bedrock's platform team also published an internal skill that teaches coding agents how to start, monitor, debug, and stop Anyscale jobs autonomously, enabling researchers to complete full iteration loops without human intervention.
+" We really strongly believe that the Workload Scheduler is a great opportunity for Anyscale to do a lot of optimizations, solve a lot of problems that we're facing as we scale. And we often have a wish list for it, and that's where a lot of our attention as a team lands. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link Cost Efficiency Without the Engineering Overhead
+Robotics AI is compute-intensive by nature. Bedrock generates massive amounts of data per robot everyday, and processing all of it through expensive models isn't economically feasible. Runaway cloud costs are a hard problem in general, and especially so for a company building AI for heavy equipment at scale. Using Ray to handle the orchestration of that pipeline efficiently, with intelligent batching and filtering just in time, helps Bedrock keep costs in line while still getting strong performance.
+On the infrastructure side, Anyscale's spot instance support has been a major lever. Running 80% of their fleet on spot instances, with minimal configuration effort and no ongoing engineering overhead, has significantly reduced cloud spend. In Q4 2025 alone, Anyscale's autoscaler handled 15,000 spot interruptions automatically across 94,000+ compute hours, with zero manual job recovery work required. That translated to a 40% cost reduction via spot automation, significant cost savings and hundreds of engineering hours saved.
+" We've been running 70–80% spot instance usage across our fleet with no effort on our part. That's pretty incredible from a feature perspective. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+Link What's Next
+Bedrock is expanding across cloud regions and evaluating multi-cloud options, driven by GPU capacity availability and spot price economics. As the company grows its fleet of autonomous machines, the data volumes, model complexity, and compute requirements will all continue to grow with it and Anyscale will be the platform to do so cost-efficiently.
+" Anyscale is in a unique position to really tap into the whole vertical of the modern AI and robotics platform. You have the full stack from raw compute all the way to model deployment. It's rare to have a company with such a unique position. "
+Thomas Pelletier | Head of ML Platform & Infrastructure
+"In less than a year, we scaled from 20,000 - 1.7M compute hours per month. Achieving that scale efficiently required Anyscale-powered spot instance usage (80% of our workloads) and the Anyscale Workload Scheduler that manages our job queues across all of research and engineering."
+Thomas Pelletier
+Head of ML Platform & Infrastructure, Bedrock Robotics
+Want to give it a try? Get started for free
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":11828,"paragraph_count":43,"sentence_count":77,"boilerplate_hits":0,"symbol_ratio":0.0005,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Bedrock Robotics Builds Autonomous Construction Systems on Anyscale # Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale. Bedrock Robotics is building a... / query=AI infrastructure startup Series A customers / intent=find_startups / path=industry_landing
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Case Study Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   85x scale in compute, from 20K to 1.
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   7M compute hours in under 12 months 40% cost reduction via reliable use of spot instances 250+ engineering hours reclaimed from manual cluster management Bedrock Robotics is building advanced autonomous systems for specialized heavy machinery, starting with excavators on construction sites.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Their technology, the Bedrock Operator, uses large-scale machine learning models to transform everyday equipment with autonomy, enabling safer jobsites with fewer accidents and lower insurance rates, accelerated project schedules through new efficiencies and less rework, and the operational precision needed to fuel the next industrial revolution.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Rather than relying on hand-crafted heuristics, Bedrock trains models on large, diverse multimodal datasets collected from active jobsites across the United States, enabling general purpose robotics intelligence that adapts to any heavy machinery.
+
+## business_elements
+
+- companies: keyword search, Anysearch, AWS
+- products: agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 85x, 20, 1.7M, 12 m, 40%, 250, 2025, 2024
+- quotes:  We've been running 70–80% spot instance usage across our fleet with no effort on our part. That's pretty incredible from a feature perspective.  / 
+Thomas Pelletier | Head of ML Platform & Infrastructure
+
+
+## evidence_seed
+
+- company_actions: Bedrock Robotics Builds Autonomous Construction Systems on Anyscale # Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale. Bedrock Robotics is building a... / query=AI infrastructure startup Series A customers / intent=find_startups / path=industry_landing / Their technology, the Bedrock Operator, uses large-scale machine learning models to transform everyday equipment with autonomy, enabling safer jobsites with fewer accidents and lower insurance rates, accelerated project schedules through new efficiencies and less rework, and the operational precision needed to fuel the next industrial revolution. / Rather than relying on hand-crafted heuristics, Bedrock trains models on large, diverse multimodal datasets collected from active jobsites across the United States, enabling general purpose robotics intelligence that adapts to any heavy machinery.
+- case_details: Case Study Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Bedrock Robotics Builds Autonomous Construction Systems on Anyscale # Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics powers its full suite of AI workloads from multimodal data processing to model deployment with Ray on Anyscale. Bedrock Robotics is building a... / query=AI infrastructure startup Series A customers / intent=find_startups / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

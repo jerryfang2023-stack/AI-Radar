@@ -1,0 +1,70 @@
+---
+id: SIG-20260607-A01
+type: signal_card
+signal_type: case
+title: "How Druid AI helped a global appliance retailer automate contact center support and unlock growth"
+date: 2026-06-07
+status: published
+source_title: "How Druid AI helped a global appliance retailer automate contact center support and unlock growth"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-07T06:18:33.041Z
+updated_at: 2026-06-07T06:18:33.041Z
+
+raw_refs: ["R-006"]
+pool_refs: ["P-006"]
+primary_raw:
+  raw_ref: R-006
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-07/r-006-how-druid-ai-helped-a-global-appliance-retailer-automate-contact-cente.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-07/r-006-how-druid-ai-helped-a-global-appliance-retailer-automate-contact-cente.json"
+  source_url: "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true"
+  full_text_hash: "940d8b528fcea7b4"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_vertical_solution
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent", "track-enterprise-workflow"]
+  function: []
+  scenario: []
+  customer: ["customer-enterprise"]
+  evidence: ["evidence-customer-adoption"]
+  stage: []
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "Druidai"
+
+frontend:
+  displayTitle: "How Druid AI helped a global appliance retailer automate contact center support and unlock growth"
+  sourceLinks:
+    - "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true"
+---
+
+# How Druid AI helped a global appliance retailer automate contact center support and unlock growth
+
+## 新闻事实
+
+How Druid AI helped a global appliance retailer automate contact center support and unlock growth
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+Druidai 的案例信号可用于观察 AI 是否已经进入 销售和收入团队流程，以及后续是否出现客户、流程或结果指标。
+
+## 可见原文片段
+
+How Druid AI helped a global appliance retailer automate contact center support and unlock growth
+
+## 证据边界
+
+none

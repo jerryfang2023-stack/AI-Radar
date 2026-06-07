@@ -1,0 +1,271 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-012",
+  "title": "GitHub Copilot app: The agent-native desktop experience - The GitHub Blog",
+  "original_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+  "canonical_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-07T04:07:12.335Z",
+  "language": "mixed",
+  "full_text": "Mario Rodriguez · @mariorod\nJune 2, 2026\n8 minutes\nShare:\nWhile the agentic shift has made development faster, it&rsquo;s also led to disjointed workflows, more context switching, and too much time spent reviewing agent-generated code.\nIf agents are going to be a durable part of how software gets built, they need a real place in the developer workflow. Yet most developer tools were not designed for directing multiple agents in parallel. Context scatters across windows. You lose track of what&rsquo;s running. Code lands in pull requests without a clear trail of what the agent tried, what it validated, or where human judgment is needed.\nGet started with the GitHub Copilot app today using your existing Copilot Pro, Pro+, Business, or Enterprise plan. Learn more >\nAcross GitHub, developers are using agents to move from prompt to plan, from issue to pull request, from review feedback to merged code. As agentic workflows become the norm, repository creation, pull request activity, and API usage are all accelerating with no evidence of slowing down. On GitHub alone, commits nearly doubled year over year, crossing 1.4 billion per month, plus over 2 billion GitHub Actions minutes a week.\nTo meet this demand and continue to be the home for all developers (and now their agents), our focus is scaling our underlying systems and improving resilience and stability across all of our services, at every layer of the stack.\nGitHub is building that system for the agentic frontier, and that&rsquo;s what we&rsquo;re showing today at Microsoft Build.\nCopilot app: A control center for agent-native development\nYou start the day with three pieces of work already in motion. One agent is investigating a production bug. Another is implementing a backlog issue. A third is working through review feedback on a pull request. Each is running in its own isolated environment, producing changes you can inspect, redirect, test, and merge.\nYou need an environment that can keep up.\nThe new GitHub Copilot app is the agent-native desktop experience built on GitHub. From a single My Work view, you can see work in motion across connected repositories: active sessions, issues, pull requests, and background automations. The Copilot app is now available in technical preview for existing Copilot Pro, Pro+, Business, and Enterprise users.\nThe GitHub Copilot app is the latest in a line of AI tooling from GitHub that is transforming our business. Moving beyond AI assistance, the app has provided a much-needed control center for agentic development.\nOur Forward Deployed Engineers can dispatch a cohort of agents and manage multiple initiatives, all from one location. Easy access to plans and autopilots with the ability to run interactive sessions or step into code where needed.\nDavid Jobling | Master Technology Architect, Head of Technology & Delivery Futures, Global Solutioning & Delivery, Avanade Inc.\nEvery session runs in its own git worktree, a real, isolated copy of your branch. This helps parallel agent sessions work without stepping on each other. The app handles every worktree for you: no manual setup, no cleanup, no branch juggling. Whether you start from a prompt or an issue from your inbox, Copilot gets the context it needs from existing issues, pull requests, and the repos you&rsquo;ve connected.\nThen Agent Merge helps carry that pull request through review, checks, and merge. It monitors CI, tracks required reviewers, addresses failing checks, and waits for all conditions to be satisfied. You choose how far Copilot should go: drive CI back to green, address feedback, or merge when your conditions are met. You decide what automation is enabled and what ships.\nCanvas: Where intent becomes inspectable work\nChat is powerful for instruction and ambiguity. But once an agent starts doing real work, a chat thread becomes a long scroll of decisions, logs, and corrections. You need a place where the work itself is visible.\nToday, we&rsquo;re also introducing canvases in the GitHub Copilot app . Canvases are bidirectional work surfaces for humans and agents. A canvas might show a plan, pull request, browser session, terminal, deployment, dashboard, or workflow state. Agents update the canvas as they work, and developers can edit, reorder, approve, or redirect that work on the same surface.\nThis is the beginning of agent experience (AX) in the Copilot app: interfaces where people and agents operate together. Chat is where you instruct, discuss, and reason through ambiguity. Canvases are where that intent becomes visible work you can inspect, steer, and verify.\nAgents that can only suggest code leave you do a lot of the work. To be more effective, agents need to run code, inspect results, test changes, and iterate, without touching production.\nCloud and local sandboxes for GitHub Copilot give agents a bounded place to act. Choose where Copilot runs&mdash;on your local machine or in the cloud&mdash;and begin unlocking agent-driven workflows while prioritizing security and enterprise policy enforcement, and without local resource constraints.\nWith local sandboxing, Copilot runs in an isolated environment directly on your machine, with restricted access to filesystems, network connectivity, and system capabilities. Local sandbox policies can be centrally configured and enforced.\nIn the cloud, each sandbox runs in a fully isolated, ephemeral Linux environment hosted by GitHub. Organizations define their own policies. From the cloud, you can pick up Copilot sessions anywhere, on any device, with remote control.\nCode review that scales with agentic output\nAs agents produce more pull requests, the pressure on code review compounds. Copilot code review brings an adaptable, agentic system to filter through the noise, allowing you to focus your energy where it matters most while Copilot conducts code reviews.\nYou can now extend Copilot so every review reflects your own standards, internal systems, and engineering context via custom agent skills, MCP server connections, and configurable actions workflows.\nCopilot code review now offers medium tier review , which routes pull requests to a higher-reasoning model for better precision and recall. Admins can set guidelines for individual repositories to &ldquo;low&rdquo; or &ldquo;medium.&rdquo; This lets you assign lighter, cost-efficient models for low-risk code and save more robust model use for repos with higher impact.\nThe /security-review skill gives Copilot a dedicated path for security-focused evaluation. The /rubberduck skill is now generally available to use multiple model families to critique your implementation and find novel issues.\nAnd if you&rsquo;re working on Azure DevOps, you can now use Copilot code review natively . Get the same one-click review, inline comments, and committable fix suggestions you expect, and admins can enable code review on whichever repos they want.\nOne runtime for apps, tools, and agents\nThe same agentic capabilities work across the terminal, the cloud, and even your own tools, on the same foundation.\nYou can now build your own tools with the GitHub Copilot SDK . Now generally available in Node.js/TypeScript, Python, Go, .NET, Rust, and Java, it exposes the same agentic runtime that powers the Copilot app. If your team needs an internal code analysis tool, a custom release-notes generator, or an agent embedded in a support workflow, you build it on the same foundation instead of wiring together a bespoke stack. One runtime, many surfaces.\nFor developers who prefer to work in the terminal, Copilot CLI now has a redesigned interface, voice input, and scheduled tasks to keep you there.\nCopilot CLI has a redesigned TUI in /experimental mode with tabbed access to pull requests, issues, and gists from the terminal. Voice mode uses on-device speech-to-text, so audio never leaves your machine. /every schedules recurring prompts and background tasks.\nCloud automations let agents run on a schedule, respond to GitHub events, open issues, and leave comments. By default, the cloud agent asks permission before each write action. Switch to autopilot once you have established trust.\nEngineering doesn&rsquo;t end with writing code. It includes filing the issue, kicking off the discussion, and replying to reviewers. Copilot cloud agent can now handle every one of those steps.\nMemory++ and /chronicle give Copilot continuity across devices and over time. Query context from sessions started in the app, CLI, VS Code, or on GitHub.\nPartner-built agent apps integrate with GitHub Copilot to help automate tasks, generate code, analyze context, and execute actions. Use your favorite tools without leaving GitHub. Assign issues to new agents that fit your workflow. Partners include LaunchDarkly, Bright, Amplitude, Sonar, Endor Labs, Octopus Deploy, Packfiles, PagerDuty, and Miro. Start using these agent apps today. And join the waitlist so your company can also bring its own agent apps to GitHub.\nWhat we&rsquo;re building toward\nProfessional software demands judgment, verification, and accountability. That is why the GitHub Copilot app, sandboxes, code review, automation, context, and partner ecosystem are coming together as one system: agents can do more of the work, while developers keep control of quality, policy, and delivery.\nAs agentic workflows grow across GitHub, from repository creation to pull request activity and API usage, the platform has to grow with them. We will continue to focus on availability first. We are committed to hardening these systems so agent-native development is fast, available, and reliable enough for teams to depend on every day.\nGitHub is where that system lives, because it is already where the code, the reviews, the issues, and the teams are.\nLet&rsquo;s build.\nLearn more about our launches from Microsoft Build on the GitHub Changelog >",
+  "clean_text": "Mario Rodriguez · @mariorod\nJune 2, 2026\n8 minutes\nShare:\nWhile the agentic shift has made development faster, it&rsquo;s also led to disjointed workflows, more context switching, and too much time spent reviewing agent-generated code.\nIf agents are going to be a durable part of how software gets built, they need a real place in the developer workflow. Yet most developer tools were not designed for directing multiple agents in parallel. Context scatters across windows. You lose track of what&rsquo;s running. Code lands in pull requests without a clear trail of what the agent tried, what it validated, or where human judgment is needed.\nGet started with the GitHub Copilot app today using your existing Copilot Pro, Pro+, Business, or Enterprise plan. Learn more >\nAcross GitHub, developers are using agents to move from prompt to plan, from issue to pull request, from review feedback to merged code. As agentic workflows become the norm, repository creation, pull request activity, and API usage are all accelerating with no evidence of slowing down. On GitHub alone, commits nearly doubled year over year, crossing 1.4 billion per month, plus over 2 billion GitHub Actions minutes a week.\nTo meet this demand and continue to be the home for all developers (and now their agents), our focus is scaling our underlying systems and improving resilience and stability across all of our services, at every layer of the stack.\nGitHub is building that system for the agentic frontier, and that&rsquo;s what we&rsquo;re showing today at Microsoft Build.\nCopilot app: A control center for agent-native development\nYou start the day with three pieces of work already in motion. One agent is investigating a production bug. Another is implementing a backlog issue. A third is working through review feedback on a pull request. Each is running in its own isolated environment, producing changes you can inspect, redirect, test, and merge.\nYou need an environment that can keep up.\nThe new GitHub Copilot app is the agent-native desktop experience built on GitHub. From a single My Work view, you can see work in motion across connected repositories: active sessions, issues, pull requests, and background automations. The Copilot app is now available in technical preview for existing Copilot Pro, Pro+, Business, and Enterprise users.\nThe GitHub Copilot app is the latest in a line of AI tooling from GitHub that is transforming our business. Moving beyond AI assistance, the app has provided a much-needed control center for agentic development.\nOur Forward Deployed Engineers can dispatch a cohort of agents and manage multiple initiatives, all from one location. Easy access to plans and autopilots with the ability to run interactive sessions or step into code where needed.\nDavid Jobling | Master Technology Architect, Head of Technology & Delivery Futures, Global Solutioning & Delivery, Avanade Inc.\nEvery session runs in its own git worktree, a real, isolated copy of your branch. This helps parallel agent sessions work without stepping on each other. The app handles every worktree for you: no manual setup, no cleanup, no branch juggling. Whether you start from a prompt or an issue from your inbox, Copilot gets the context it needs from existing issues, pull requests, and the repos you&rsquo;ve connected.\nThen Agent Merge helps carry that pull request through review, checks, and merge. It monitors CI, tracks required reviewers, addresses failing checks, and waits for all conditions to be satisfied. You choose how far Copilot should go: drive CI back to green, address feedback, or merge when your conditions are met. You decide what automation is enabled and what ships.\nCanvas: Where intent becomes inspectable work\nChat is powerful for instruction and ambiguity. But once an agent starts doing real work, a chat thread becomes a long scroll of decisions, logs, and corrections. You need a place where the work itself is visible.\nToday, we&rsquo;re also introducing canvases in the GitHub Copilot app . Canvases are bidirectional work surfaces for humans and agents. A canvas might show a plan, pull request, browser session, terminal, deployment, dashboard, or workflow state. Agents update the canvas as they work, and developers can edit, reorder, approve, or redirect that work on the same surface.\nThis is the beginning of agent experience (AX) in the Copilot app: interfaces where people and agents operate together. Chat is where you instruct, discuss, and reason through ambiguity. Canvases are where that intent becomes visible work you can inspect, steer, and verify.\nAgents that can only suggest code leave you do a lot of the work. To be more effective, agents need to run code, inspect results, test changes, and iterate, without touching production.\nCloud and local sandboxes for GitHub Copilot give agents a bounded place to act. Choose where Copilot runs&mdash;on your local machine or in the cloud&mdash;and begin unlocking agent-driven workflows while prioritizing security and enterprise policy enforcement, and without local resource constraints.\nWith local sandboxing, Copilot runs in an isolated environment directly on your machine, with restricted access to filesystems, network connectivity, and system capabilities. Local sandbox policies can be centrally configured and enforced.\nIn the cloud, each sandbox runs in a fully isolated, ephemeral Linux environment hosted by GitHub. Organizations define their own policies. From the cloud, you can pick up Copilot sessions anywhere, on any device, with remote control.\nCode review that scales with agentic output\nAs agents produce more pull requests, the pressure on code review compounds. Copilot code review brings an adaptable, agentic system to filter through the noise, allowing you to focus your energy where it matters most while Copilot conducts code reviews.\nYou can now extend Copilot so every review reflects your own standards, internal systems, and engineering context via custom agent skills, MCP server connections, and configurable actions workflows.\nCopilot code review now offers medium tier review , which routes pull requests to a higher-reasoning model for better precision and recall. Admins can set guidelines for individual repositories to &ldquo;low&rdquo; or &ldquo;medium.&rdquo; This lets you assign lighter, cost-efficient models for low-risk code and save more robust model use for repos with higher impact.\nThe /security-review skill gives Copilot a dedicated path for security-focused evaluation. The /rubberduck skill is now generally available to use multiple model families to critique your implementation and find novel issues.\nAnd if you&rsquo;re working on Azure DevOps, you can now use Copilot code review natively . Get the same one-click review, inline comments, and committable fix suggestions you expect, and admins can enable code review on whichever repos they want.\nOne runtime for apps, tools, and agents\nThe same agentic capabilities work across the terminal, the cloud, and even your own tools, on the same foundation.\nYou can now build your own tools with the GitHub Copilot SDK . Now generally available in Node.js/TypeScript, Python, Go, .NET, Rust, and Java, it exposes the same agentic runtime that powers the Copilot app. If your team needs an internal code analysis tool, a custom release-notes generator, or an agent embedded in a support workflow, you build it on the same foundation instead of wiring together a bespoke stack. One runtime, many surfaces.\nFor developers who prefer to work in the terminal, Copilot CLI now has a redesigned interface, voice input, and scheduled tasks to keep you there.\nCopilot CLI has a redesigned TUI in /experimental mode with tabbed access to pull requests, issues, and gists from the terminal. Voice mode uses on-device speech-to-text, so audio never leaves your machine. /every schedules recurring prompts and background tasks.\nCloud automations let agents run on a schedule, respond to GitHub events, open issues, and leave comments. By default, the cloud agent asks permission before each write action. Switch to autopilot once you have established trust.\nEngineering doesn&rsquo;t end with writing code. It includes filing the issue, kicking off the discussion, and replying to reviewers. Copilot cloud agent can now handle every one of those steps.\nMemory++ and /chronicle give Copilot continuity across devices and over time. Query context from sessions started in the app, CLI, VS Code, or on GitHub.\nPartner-built agent apps integrate with GitHub Copilot to help automate tasks, generate code, analyze context, and execute actions. Use your favorite tools without leaving GitHub. Assign issues to new agents that fit your workflow. Partners include LaunchDarkly, Bright, Amplitude, Sonar, Endor Labs, Octopus Deploy, Packfiles, PagerDuty, and Miro. Start using these agent apps today. And join the waitlist so your company can also bring its own agent apps to GitHub.\nWhat we&rsquo;re building toward\nProfessional software demands judgment, verification, and accountability. That is why the GitHub Copilot app, sandboxes, code review, automation, context, and partner ecosystem are coming together as one system: agents can do more of the work, while developers keep control of quality, policy, and delivery.\nAs agentic workflows grow across GitHub, from repository creation to pull request activity and API usage, the platform has to grow with them. We will continue to focus on availability first. We are committed to hardening these systems so agent-native development is fast, available, and reliable enough for teams to depend on every day.\nGitHub is where that system lives, because it is already where the code, the reviews, the issues, and the teams are.\nLet&rsquo;s build.\nLearn more about our launches from Microsoft Build on the GitHub Changelog >",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-06/r-012-github-copilot-app-the-agent-native-desktop-experience-the-github-blog.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-06/r-012-github-copilot-app-the-agent-native-desktop-experience-the-github-blog.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 9852,
+    "paragraph_count": 44,
+    "sentence_count": 92,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0003,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 9852,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "5ebd5462c7f87d52",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "2c0fce60ab472910",
+  "content_hash": "5ebd5462c7f87d52",
+  "full_text_hash": "5ebd5462c7f87d52",
+  "semantic_hash": "fb387490cd63c4b0",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-07T04:07:12.335Z",
+  "last_seen_at": "2026-06-07T04:07:12.335Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "GitHub Copilot app: The agent-native desktop experience - The GitHub Blog | Get started with the GitHub Copilot app today using your existing Copilot Pro, Pro+, Business, or Enterprise plan. Learn more > | | --- | GitHub is building that system for the agentic frontier, and that’s what we’re showi..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Mario Rodriguez · @mariorod June 2, 2026 8 minutes Share: While the agentic shift has made development faster, it&rsquo;s also led to disjointed workflows, more context switching, and too much time spent reviewing agent-generated code.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "If agents are going to be a durable part of how software gets built, they need a real place in the developer workflow.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Yet most developer tools were not designed for directing multiple agents in parallel.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Context scatters across windows.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You lose track of what&rsquo;s running.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "Copilot",
+      "agent",
+      "agents",
+      "Agent",
+      "Agents",
+      "MCP"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2",
+      "2026",
+      "8 m",
+      "1.4 billion",
+      "2 billion"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Yet most developer tools were not designed for directing multiple agents in parallel.",
+      "Context scatters across windows.",
+      "You lose track of what&rsquo;s running."
+    ],
+    "case_details": [
+      "GitHub Copilot app: The agent-native desktop experience - The GitHub Blog | Get started with the GitHub Copilot app today using your existing Copilot Pro, Pro+, Business, or Enterprise plan. Learn more > | | --- | GitHub is building that system for the agentic frontier, and that’s what we’re showi..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original"
+    ],
+    "workflow_changes": [
+      "Mario Rodriguez · @mariorod June 2, 2026 8 minutes Share: While the agentic shift has made development faster, it&rsquo;s also led to disjointed workflows, more context switching, and too much time spent reviewing agent-generated code.",
+      "If agents are going to be a durable part of how software gets built, they need a real place in the developer workflow."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# GitHub Copilot app: The agent-native desktop experience - The GitHub Blog\n\n- raw_id: R-012\n- original_url: https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-07T04:07:12.335Z\n\n## clean_text\n\nMario Rodriguez · @mariorod\nJune 2, 2026\n8 minutes\nShare:\nWhile the agentic shift has made development faster, it&rsquo;s also led to disjointed workflows, more context switching, and too much time spent reviewing agent-generated code.\nIf agents are going to be a durable part of how software gets built, they need a real place in the developer workflow. Yet most developer tools were not designed for directing multiple agents in parallel. Context scatters across windows. You lose track of what&rsquo;s running. Code lands in pull requests without a clear trail of what the agent tried, what it validated, or where human judgment is needed.\nGet started with the GitHub Copilot app today using your existing Copilot Pro, Pro+, Business, or Enterprise plan. Learn more >\nAcross GitHub, developers are using agents to move from prompt to plan, from issue to pull request, from review feedback to merged code. As agentic workflows become the norm, repository creation, pull request activity, and API usage are all accelerating with no evidence of slowing down. On GitHub alone, commits nearly doubled year over year, crossing 1.4 billion per month, plus over 2 billion GitHub Actions minutes a week.\nTo meet this demand and continue to be the home for all developers (and now their agents), our focus is scaling our underlying systems and improving resilience and stability across all of our services, at every layer of the stack.\nGitHub is building that system for the agentic frontier, and that&rsquo;s what we&rsquo;re showing today at Microsoft Build.\nCopilot app: A control center for agent-native development\nYou start the day with three pieces of work already in motion. One agent is investigating a production bug. Another is implementing a backlog issue. A third is working through review feedback on a pull request. Each is running in its own isolated environment, producing changes you can inspect, redirect, test, and merge.\nYou need an environment that can keep up.\nThe new GitHub Copilot app is the agent-native desktop experience built on GitHub. From a single My Work view, you can see work in motion across connected repositories: active sessions, issues, pull requests, and background automations. The Copilot app is now available in technical preview for existing Copilot Pro, Pro+, Business, and Enterprise users.\nThe GitHub Copilot app is the latest in a line of AI tooling from GitHub that is transforming our business. Moving beyond AI assistance, the app has provided a much-needed control center for agentic development.\nOur Forward Deployed Engineers can dispatch a cohort of agents and manage multiple initiatives, all from one location. Easy access to plans and autopilots with the ability to run interactive sessions or step into code where needed.\nDavid Jobling | Master Technology Architect, Head of Technology & Delivery Futures, Global Solutioning & Delivery, Avanade Inc.\nEvery session runs in its own git worktree, a real, isolated copy of your branch. This helps parallel agent sessions work without stepping on each other. The app handles every worktree for you: no manual setup, no cleanup, no branch juggling. Whether you start from a prompt or an issue from your inbox, Copilot gets the context it needs from existing issues, pull requests, and the repos you&rsquo;ve connected.\nThen Agent Merge helps carry that pull request through review, checks, and merge. It monitors CI, tracks required reviewers, addresses failing checks, and waits for all conditions to be satisfied. You choose how far Copilot should go: drive CI back to green, address feedback, or merge when your conditions are met. You decide what automation is enabled and what ships.\nCanvas: Where intent becomes inspectable work\nChat is powerful for instruction and ambiguity. But once an agent starts doing real work, a chat thread becomes a long scroll of decisions, logs, and corrections. You need a place where the work itself is visible.\nToday, we&rsquo;re also introducing canvases in the GitHub Copilot app . Canvases are bidirectional work surfaces for humans and agents. A canvas might show a plan, pull request, browser session, terminal, deployment, dashboard, or workflow state. Agents update the canvas as they work, and developers can edit, reorder, approve, or redirect that work on the same surface.\nThis is the beginning of agent experience (AX) in the Copilot app: interfaces where people and agents operate together. Chat is where you instruct, discuss, and reason through ambiguity. Canvases are where that intent becomes visible work you can inspect, steer, and verify.\nAgents that can only suggest code leave you do a lot of the work. To be more effective, agents need to run code, inspect results, test changes, and iterate, without touching production.\nCloud and local sandboxes for GitHub Copilot give agents a bounded place to act. Choose where Copilot runs&mdash;on your local machine or in the cloud&mdash;and begin unlocking agent-driven workflows while prioritizing security and enterprise policy enforcement, and without local resource constraints.\nWith local sandboxing, Copilot runs in an isolated environment directly on your machine, with restricted access to filesystems, network connectivity, and system capabilities. Local sandbox policies can be centrally configured and enforced.\nIn the cloud, each sandbox runs in a fully isolated, ephemeral Linux environment hosted by GitHub. Organizations define their own policies. From the cloud, you can pick up Copilot sessions anywhere, on any device, with remote control.\nCode review that scales with agentic output\nAs agents produce more pull requests, the pressure on code review compounds. Copilot code review brings an adaptable, agentic system to filter through the noise, allowing you to focus your energy where it matters most while Copilot conducts code reviews.\nYou can now extend Copilot so every review reflects your own standards, internal systems, and engineering context via custom agent skills, MCP server connections, and configurable actions workflows.\nCopilot code review now offers medium tier review , which routes pull requests to a higher-reasoning model for better precision and recall. Admins can set guidelines for individual repositories to &ldquo;low&rdquo; or &ldquo;medium.&rdquo; This lets you assign lighter, cost-efficient models for low-risk code and save more robust model use for repos with higher impact.\nThe /security-review skill gives Copilot a dedicated path for security-focused evaluation. The /rubberduck skill is now generally available to use multiple model families to critique your implementation and find novel issues.\nAnd if you&rsquo;re working on Azure DevOps, you can now use Copilot code review natively . Get the same one-click review, inline comments, and committable fix suggestions you expect, and admins can enable code review on whichever repos they want.\nOne runtime for apps, tools, and agents\nThe same agentic capabilities work across the terminal, the cloud, and even your own tools, on the same foundation.\nYou can now build your own tools with the GitHub Copilot SDK . Now generally available in Node.js/TypeScript, Python, Go, .NET, Rust, and Java, it exposes the same agentic runtime that powers the Copilot app. If your team needs an internal code analysis tool, a custom release-notes generator, or an agent embedded in a support workflow, you build it on the same foundation instead of wiring together a bespoke stack. One runtime, many surfaces.\nFor developers who prefer to work in the terminal, Copilot CLI now has a redesigned interface, voice input, and scheduled tasks to keep you there.\nCopilot CLI has a redesigned TUI in /experimental mode with tabbed access to pull requests, issues, and gists from the terminal. Voice mode uses on-device speech-to-text, so audio never leaves your machine. /every schedules recurring prompts and background tasks.\nCloud automations let agents run on a schedule, respond to GitHub events, open issues, and leave comments. By default, the cloud agent asks permission before each write action. Switch to autopilot once you have established trust.\nEngineering doesn&rsquo;t end with writing code. It includes filing the issue, kicking off the discussion, and replying to reviewers. Copilot cloud agent can now handle every one of those steps.\nMemory++ and /chronicle give Copilot continuity across devices and over time. Query context from sessions started in the app, CLI, VS Code, or on GitHub.\nPartner-built agent apps integrate with GitHub Copilot to help automate tasks, generate code, analyze context, and execute actions. Use your favorite tools without leaving GitHub. Assign issues to new agents that fit your workflow. Partners include LaunchDarkly, Bright, Amplitude, Sonar, Endor Labs, Octopus Deploy, Packfiles, PagerDuty, and Miro. Start using these agent apps today. And join the waitlist so your company can also bring its own agent apps to GitHub.\nWhat we&rsquo;re building toward\nProfessional software demands judgment, verification, and accountability. That is why the GitHub Copilot app, sandboxes, code review, automation, context, and partner ecosystem are coming together as one system: agents can do more of the work, while developers keep control of quality, policy, and delivery.\nAs agentic workflows grow across GitHub, from repository creation to pull request activity and API usage, the platform has to grow with them. We will continue to focus on availability first. We are committed to hardening these systems so agent-native development is fast, available, and reliable enough for teams to depend on every day.\nGitHub is where that system lives, because it is already where the code, the reviews, the issues, and the teams are.\nLet&rsquo;s build.\nLearn more about our launches from Microsoft Build on the GitHub Changelog >\n\n## full_text\n\nMario Rodriguez · @mariorod\nJune 2, 2026\n8 minutes\nShare:\nWhile the agentic shift has made development faster, it&rsquo;s also led to disjointed workflows, more context switching, and too much time spent reviewing agent-generated code.\nIf agents are going to be a durable part of how software gets built, they need a real place in the developer workflow. Yet most developer tools were not designed for directing multiple agents in parallel. Context scatters across windows. You lose track of what&rsquo;s running. Code lands in pull requests without a clear trail of what the agent tried, what it validated, or where human judgment is needed.\nGet started with the GitHub Copilot app today using your existing Copilot Pro, Pro+, Business, or Enterprise plan. Learn more >\nAcross GitHub, developers are using agents to move from prompt to plan, from issue to pull request, from review feedback to merged code. As agentic workflows become the norm, repository creation, pull request activity, and API usage are all accelerating with no evidence of slowing down. On GitHub alone, commits nearly doubled year over year, crossing 1.4 billion per month, plus over 2 billion GitHub Actions minutes a week.\nTo meet this demand and continue to be the home for all developers (and now their agents), our focus is scaling our underlying systems and improving resilience and stability across all of our services, at every layer of the stack.\nGitHub is building that system for the agentic frontier, and that&rsquo;s what we&rsquo;re showing today at Microsoft Build.\nCopilot app: A control center for agent-native development\nYou start the day with three pieces of work already in motion. One agent is investigating a production bug. Another is implementing a backlog issue. A third is working through review feedback on a pull request. Each is running in its own isolated environment, producing changes you can inspect, redirect, test, and merge.\nYou need an environment that can keep up.\nThe new GitHub Copilot app is the agent-native desktop experience built on GitHub. From a single My Work view, you can see work in motion across connected repositories: active sessions, issues, pull requests, and background automations. The Copilot app is now available in technical preview for existing Copilot Pro, Pro+, Business, and Enterprise users.\nThe GitHub Copilot app is the latest in a line of AI tooling from GitHub that is transforming our business. Moving beyond AI assistance, the app has provided a much-needed control center for agentic development.\nOur Forward Deployed Engineers can dispatch a cohort of agents and manage multiple initiatives, all from one location. Easy access to plans and autopilots with the ability to run interactive sessions or step into code where needed.\nDavid Jobling | Master Technology Architect, Head of Technology & Delivery Futures, Global Solutioning & Delivery, Avanade Inc.\nEvery session runs in its own git worktree, a real, isolated copy of your branch. This helps parallel agent sessions work without stepping on each other. The app handles every worktree for you: no manual setup, no cleanup, no branch juggling. Whether you start from a prompt or an issue from your inbox, Copilot gets the context it needs from existing issues, pull requests, and the repos you&rsquo;ve connected.\nThen Agent Merge helps carry that pull request through review, checks, and merge. It monitors CI, tracks required reviewers, addresses failing checks, and waits for all conditions to be satisfied. You choose how far Copilot should go: drive CI back to green, address feedback, or merge when your conditions are met. You decide what automation is enabled and what ships.\nCanvas: Where intent becomes inspectable work\nChat is powerful for instruction and ambiguity. But once an agent starts doing real work, a chat thread becomes a long scroll of decisions, logs, and corrections. You need a place where the work itself is visible.\nToday, we&rsquo;re also introducing canvases in the GitHub Copilot app . Canvases are bidirectional work surfaces for humans and agents. A canvas might show a plan, pull request, browser session, terminal, deployment, dashboard, or workflow state. Agents update the canvas as they work, and developers can edit, reorder, approve, or redirect that work on the same surface.\nThis is the beginning of agent experience (AX) in the Copilot app: interfaces where people and agents operate together. Chat is where you instruct, discuss, and reason through ambiguity. Canvases are where that intent becomes visible work you can inspect, steer, and verify.\nAgents that can only suggest code leave you do a lot of the work. To be more effective, agents need to run code, inspect results, test changes, and iterate, without touching production.\nCloud and local sandboxes for GitHub Copilot give agents a bounded place to act. Choose where Copilot runs&mdash;on your local machine or in the cloud&mdash;and begin unlocking agent-driven workflows while prioritizing security and enterprise policy enforcement, and without local resource constraints.\nWith local sandboxing, Copilot runs in an isolated environment directly on your machine, with restricted access to filesystems, network connectivity, and system capabilities. Local sandbox policies can be centrally configured and enforced.\nIn the cloud, each sandbox runs in a fully isolated, ephemeral Linux environment hosted by GitHub. Organizations define their own policies. From the cloud, you can pick up Copilot sessions anywhere, on any device, with remote control.\nCode review that scales with agentic output\nAs agents produce more pull requests, the pressure on code review compounds. Copilot code review brings an adaptable, agentic system to filter through the noise, allowing you to focus your energy where it matters most while Copilot conducts code reviews.\nYou can now extend Copilot so every review reflects your own standards, internal systems, and engineering context via custom agent skills, MCP server connections, and configurable actions workflows.\nCopilot code review now offers medium tier review , which routes pull requests to a higher-reasoning model for better precision and recall. Admins can set guidelines for individual repositories to &ldquo;low&rdquo; or &ldquo;medium.&rdquo; This lets you assign lighter, cost-efficient models for low-risk code and save more robust model use for repos with higher impact.\nThe /security-review skill gives Copilot a dedicated path for security-focused evaluation. The /rubberduck skill is now generally available to use multiple model families to critique your implementation and find novel issues.\nAnd if you&rsquo;re working on Azure DevOps, you can now use Copilot code review natively . Get the same one-click review, inline comments, and committable fix suggestions you expect, and admins can enable code review on whichever repos they want.\nOne runtime for apps, tools, and agents\nThe same agentic capabilities work across the terminal, the cloud, and even your own tools, on the same foundation.\nYou can now build your own tools with the GitHub Copilot SDK . Now generally available in Node.js/TypeScript, Python, Go, .NET, Rust, and Java, it exposes the same agentic runtime that powers the Copilot app. If your team needs an internal code analysis tool, a custom release-notes generator, or an agent embedded in a support workflow, you build it on the same foundation instead of wiring together a bespoke stack. One runtime, many surfaces.\nFor developers who prefer to work in the terminal, Copilot CLI now has a redesigned interface, voice input, and scheduled tasks to keep you there.\nCopilot CLI has a redesigned TUI in /experimental mode with tabbed access to pull requests, issues, and gists from the terminal. Voice mode uses on-device speech-to-text, so audio never leaves your machine. /every schedules recurring prompts and background tasks.\nCloud automations let agents run on a schedule, respond to GitHub events, open issues, and leave comments. By default, the cloud agent asks permission before each write action. Switch to autopilot once you have established trust.\nEngineering doesn&rsquo;t end with writing code. It includes filing the issue, kicking off the discussion, and replying to reviewers. Copilot cloud agent can now handle every one of those steps.\nMemory++ and /chronicle give Copilot continuity across devices and over time. Query context from sessions started in the app, CLI, VS Code, or on GitHub.\nPartner-built agent apps integrate with GitHub Copilot to help automate tasks, generate code, analyze context, and execute actions. Use your favorite tools without leaving GitHub. Assign issues to new agents that fit your workflow. Partners include LaunchDarkly, Bright, Amplitude, Sonar, Endor Labs, Octopus Deploy, Packfiles, PagerDuty, and Miro. Start using these agent apps today. And join the waitlist so your company can also bring its own agent apps to GitHub.\nWhat we&rsquo;re building toward\nProfessional software demands judgment, verification, and accountability. That is why the GitHub Copilot app, sandboxes, code review, automation, context, and partner ecosystem are coming together as one system: agents can do more of the work, while developers keep control of quality, policy, and delivery.\nAs agentic workflows grow across GitHub, from repository creation to pull request activity and API usage, the platform has to grow with them. We will continue to focus on availability first. We are committed to hardening these systems so agent-native development is fast, available, and reliable enough for teams to depend on every day.\nGitHub is where that system lives, because it is already where the code, the reviews, the issues, and the teams are.\nLet&rsquo;s build.\nLearn more about our launches from Microsoft Build on the GitHub Changelog >\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] GitHub Copilot app: The agent-native desktop experience - The GitHub Blog | Get started with the GitHub Copilot app today using your existing Copilot Pro, Pro+, Business, or Enterprise plan. Learn more > | | --- | GitHub is building that system for the agentic frontier, and that’s what we’re showi..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original\n2. [workflow_change / daily_observation, heatmap, change, case, trend / high] Mario Rodriguez · @mariorod June 2, 2026 8 minutes Share: While the agentic shift has made development faster, it&rsquo;s also led to disjointed workflows, more context switching, and too much time spent reviewing agent-generated code.\n3. [workflow_change / daily_observation, heatmap, change, case, trend / high] If agents are going to be a durable part of how software gets built, they need a real place in the developer workflow.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Yet most developer tools were not designed for directing multiple agents in parallel.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] Context scatters across windows.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] You lose track of what&rsquo;s running.\n"
+}

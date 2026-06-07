@@ -1,0 +1,293 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-008
+title: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026"
+original_url: "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026"
+canonical_url: "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026"
+source_name: "itwire.com"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: "2026-06-02T06:15:00.000Z"
+collected_at: 2026-06-07T05:57:12.313Z
+language: mixed
+full_text_hash: 51fa9e19db6ba416
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-008-asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-008-asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":25566,"paragraph_count":57,"sentence_count":140,"boilerplate_hits":1,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 25566
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"51fa9e19db6ba416","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 3d0dd026a246d1ed
+content_hash: 210d84d09cc56a86
+semantic_hash: 9a56e02a74110631
+duplicate_of: ""
+first_seen_at: "2026-06-02T06:15:00.000Z"
+last_seen_at: 2026-06-07T05:57:12.313Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["itwire.com","Nvidia"],"products":["agents","agent"],"people":[],"industries":["法律 / 法务","医疗","制造 / 工业","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","06","02","15","00","2","2026\nB","72"],"quotes":["At Computex 2026, we are bringing our vision of ubiquitous AI to life by connecting powerful infrastructure with meaningful, real-world experiences at the edge,"," said Samson Hu, ASUS Co-CEO. "]}
+evidence_seed: {"company_actions":["2026-06-02T06:15:00Z / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt","Business It News / Business Technology ASUS Brings Enterprise-to-Edge AI to Life at Computex 2026 ASUS | Published 2 June 2026 Business Technology ASUS Zenni Claw emerges as a standout AI solution, enabling secure AI agents at scale.","Personal AI, made simple: The standout ASUS Zenni Claw AI solution enables easy-to-use, safe, controlled, reliable agentic AI experiences Proactive AI for ESG: ASUS AI x ESG Platform transforms sustainability data into actionable ESG, carbon and supply chain insights AI for work and industry: ExpertCenter, NUC and Mini PC, and industrial edge systems drive productivity, automation, and physical AI AI for everyday life, creativity, and play: ProArt, and TUF Gaming bring AI into daily life, creative work, healthcare,"],"case_details":["From the ASUS AI x ESG Platform at the corporate level to a robust AI foundation spanning cloud-ready and on-premises deployments, ASUS is bringing together hardware, software, and services to help customers build, deploy, and scale AI with confidence."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"product_update","text":"2026-06-02T06:15:00Z / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Business It News / Business Technology ASUS Brings Enterprise-to-Edge AI to Life at Computex 2026 ASUS | Published 2 June 2026 Business Technology ASUS Zenni Claw emerges as a standout AI solution, enabling secure AI agents at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Personal AI, made simple: The standout ASUS Zenni Claw AI solution enables easy-to-use, safe, controlled, reliable agentic AI experiences Proactive AI for ESG: ASUS AI x ESG Platform transforms sustainability data into actionable ESG, carbon and supply chain insights AI for work and industry: ExpertCenter, NUC and Mini PC, and industrial edge systems drive productivity, automation, and physical AI AI for everyday life, creativity, and play: ProArt, and TUF Gaming bring AI into daily life, creative work, healthcare,","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Incredible Possibilities strategy, unveiling an expanded, end-to-end AI ecosystem that connects enterprise-scale infrastructure with intelligent edge experiences.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"From the ASUS AI x ESG Platform at the corporate level to a robust AI foundation spanning cloud-ready and on-premises deployments, ASUS is bringing together hardware, software, and services to help customers build, deploy, and scale AI with confidence.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"quote","text":"\"At Computex 2026, we are bringing our vision of ubiquitous AI to life by connecting powerful infrastructure with meaningful, real-world experiences at the edge,\" said S.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026
+
+## clean_text
+
+Business It News / Business Technology ASUS Brings Enterprise-to-Edge AI to Life at Computex 2026
+ASUS | Published 2 June 2026
+Business Technology ASUS Zenni Claw emerges as a standout AI solution, enabling secure AI agents at scale.
+Personal AI, made simple: The standout ASUS Zenni Claw AI solution enables easy-to-use, safe, controlled, reliable agentic AI experiences
+Proactive AI for ESG: ASUS AI x ESG Platform transforms sustainability data into actionable ESG, carbon and supply chain insights
+AI for work and industry: ExpertCenter, NUC and Mini PC, and industrial edge systems drive productivity, automation, and physical AI
+AI for everyday life, creativity, and play: ProArt, and TUF Gaming bring AI into daily life, creative work, healthcare, and gaming
+ASUS today at Computex 2026 advanced its Ubiquitous AI. Incredible Possibilities strategy, unveiling an expanded, end-to-end AI ecosystem that connects enterprise-scale infrastructure with intelligent edge experiences. From the ASUS AI x ESG Platform at the corporate level to a robust AI foundation spanning cloud-ready and on-premises deployments, ASUS is bringing together hardware, software, and services to help customers build, deploy, and scale AI with confidence.
+"At Computex 2026, we are bringing our vision of ubiquitous AI to life by connecting powerful infrastructure with meaningful, real-world experiences at the edge," said S.Y. Hsu, ASUS Co-CEO . "From enterprise systems to everyday devices, ASUS is focused on making AI practical, secure, and accessible — empowering people and businesses to innovate with confidence."
+ASUS is demonstrating how AI turns into real outcomes across the edge and IoT landscapes — spanning Corporate Sustainability AI, AI Infrastructure, Workspace AI, Industrial AI, Everyday AI, Creator AI, Healthcare AI, and Gaming AI. Across the booth, these scenarios illustrate a unified ASUS approach: enabling productivity and secure connectivity for modern work; accelerating industrial intelligence and automation; enhancing daily digital experiences; streamlining creative workflows; supporting clinical environments and imaging; and elevating gaming with AI-assisted performance and smarter system optimisation. Together, they underscore a commitment to making AI solutions practical, accessible, and truly ubiquitous — wherever people work, create, play, and live.
+"Our latest advancements — from ASUS Zenni Claw to our expanded AI ecosystem — demonstrate how AI can move beyond technology and deliver tangible value across industries and daily life," said Samson Hu, ASUS Co-CEO. "We are committed to enabling smarter, more sustainable, and more human-centred experiences through AI at every level."
+Underscoring this commitment, the ASUS booth received the Golden Award at the Computex Sustainable Design Award for its sustainable design.
+ASUS Zenni Claw: Agentic AI, made simple
+Building on this vision, ASUS Zenni Claw is designed to make agentic AI practical, accessible, and useful from day one. As a personal agentic AI platform, it enables users to interact with AI that can understand intent, take action, and support everyday tasks across work, daily life, and travel. With a focus on simplicity and usability, ASUS Zenni Claw lowers the barrier to entry and brings meaningful agentic AI experiences to a broad range of users.
+ASUS Zenni Claw stands out through its ease of use, flexibility, and built-in protection. A one-click, three-step setup and intuitive desktop experience make it easy to get started immediately. Pre-configured ASUS skills provide instant value through practical, ready-to-use workflows. Tasks are dynamically routed across local and cloud environments to optimise performance, capability, and cost. At the same time, a controlled architecture with built-in safety mechanisms helps ensure data protection, isolation, and reliable operation. Together, these capabilities create a seamless and trustworthy AI experience that adapts to users’ needs.
+Zenni Interactive Experience : At the booth, the Zenni Interactive Experience brings the official ASUS mascot, Zenni, to life as an engaging, AI-powered companion. Visitors can interact with Zenni in a playful and immersive way, experiencing how AI can create intuitive and human-like digital experiences in everyday scenarios.
+ASUS AIXESG Platform: Turning data into sustainable action
+Turning sustainability into real, ongoing improvement requires intelligence that anticipates challenges rather than simply reacting to them. The ASUS AIXESG Platform introduces proactive AI to help enterprises move beyond static ESG reporting toward continuous, data-driven guidance with greater clarity and confidence. The solution integrates three closely connected ASUS platforms: the Carbon Data Management platform for emission factor recommendation accounting and reduction management; the Supply Chain Management platform for real-time AI-driven supplier risk monitoring and corrective action tracking; and the ESG Information Integration Management platform, which consolidates environmental, social, and governance data into a single decision framework. By monitoring performance against global reporting frameworks and enterprise data, proactive AI provides guided insights, helping identify data gaps, highlight key disclosure requirements, and recommend targeted actions — enabling faster, more informed, and confident sustainability decisions.
+AI Infrastructure: The foundation for large-scale AI ASUS is at the forefront of AI infrastructure with ASUS AI POD built on NVIDIA Vera Rubin NVL72 , XA VR721-E3 , a 100% liquid-cooled rack-scale platform purpose-built for trillion-parameter models and next-generation AI factories . By adopting NVIDIA DSX , ASUS assists customers to simulate the AI factory reference designs into deployment-ready infrastructure, significantly accelerating time to token generation. Addressing rigorous AI workload demands, ASUS also showcase AI servers based on NVIDIA HGX Rubin NVL8 and Intel Xeon® 6 processor, including XA NR1I-E12L , an innovative hybrid-cooled option, delivering high-performance acceleration for training, inference and simulation. The portfolio is further strengthened by a comprehensive lineup of high-performance, scalable NVIDIA MGX servers. Making their debut are XA P8A-E14AXL, a high-density 6U system supporting eight liquid-cooled NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, and XA P4N-E2, a 2U AI server powered by NVIDIA Vera CPU processors for next-generation agentic AI systems. Spanning rack-scale AI factories and POD architectures to ultrafast context memory storage solutions and enterprise-ready agentic AI applications. ASUS provides enterprise with a complete foundation for the entire AI lifecycle, from infrastructure design and deployment to large-scale token generation, inference, and real-world business adoption.
+ASUS ExpertCenter Pro ET900N G3  brings powerful AI computing directly to the desk, delivering data center-level performance in a compact system. Built on the NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip, it supports advanced AI workloads such as large language models and generative AI with exceptional speed and efficiency. With 748GB of coherent memory, fast data connectivity, and ready for Windows, it can handle large and complex tasks smoothly. The system also includes the full NVIDIA AI software stack, making it easy for businesses to develop, train, and deploy AI applications securely on-premises, while ensuring high performance, reliability, and full control over data.
+Workspace AI: AI computing across desks, offices, and enterprises
+AI is a quiet force behind productive workdays, helping teams handle routine tasks faster while keeping systems secure and manageable. Collaboration flows more smoothly, decisions happen with less friction, and protection stays in place — all without disrupting how people already work.
+The ASUS NUC and Mini PC series demonstrate how powerful AI computing can be delivered in compact, versatile systems. From enabling agentic AI and creative workflows to supporting secure enterprise environments, these small-form-factor platforms combine performance, efficiency, and trusted build quality for modern workspaces.
+ASUS Ascent GX10 brings petaflop-class AI computing to agentic AI applications. Accelerated by the NVIDIA GB10 Grace Blackwell Superchip with 128GB of unified memory, it serves as a central 'super-brain' for NVIDIA NemoClaw-enabled applications, supporting NVIDIA OpenShell for sandboxed deployment, greater cost predictability, and enterprise-grade security. ASUS Ascent GX10 was also honoured with a Computex 2026 Best Choice Award in the AI Computing and Tech category.
+Diversifying its AI Mini PC portfolio, ASUS introduces its first Qualcomm-powered AI PC: ASUS Ascent QN10 . It is the world’s first AI Mini PC with an 80 TOPS NPU, powered by the Snapdragon® X2 Elite. With an 18-core Qualcomm Oryon™ CPU and integrated Qualcomm® Adreno™ GPU, it supports intelligent, always-on AI experiences. Snapdragon Guardian Technology further enhances security and remote manageability for modern AI-driven usage.
+For visual ideation and creative workflows, ASUS ExpertCenter PN55 enables fast, local AI processing with low latency. Equipped with up to an 55 TOPS XDNA2 NPU and AMD Radeon™ 800M graphics, it enables users to quickly turn abstract ideas into stellar visuals without relying on cloud services.
+ASUS NUC 16 Pro delivers reliable, continuous AI performance in a compact 600-gram chassis. Powered by up to an Intel Core Ultra x9 processor with up to 180 TOPS, it supports Intel SuperClaw, a hybrid AI agent orchestration framework that runs AI workflows on‑device by default and reaches out to the cloud only when needed. This local‑first design reduces cloud token costs, keeps sensitive data on the device for stronger data sovereignty, and delivers more consistent agent latency. Built for 24/7 AI workloads, the NUC 16 Pro is tested to meet high military-grade reliability standards, helping ensure durability against drops, heat, and other demanding conditions while maintaining dependable performance over time.
+Built for modern businesses, ASUS NUC 16 , powered by the latest Intel Core Series 3 processor with integrated GPU and NPU, delivers up to 40 platform TOPS for on-device AI across office, retail, and light IoT applications. This compact yet powerful mini PC features DDR5 memory, enhanced security, and versatile connectivity, offering an optimal balance of performance, scalability, and value. A specialized variant, ASUS NUC 16 for Windows 365 , is the first ASUS Cloud PC device — a purpose-built solution designed for seamless integration with Windows 365. By shifting the entire desktop experience to the cloud, this device eliminates the risks associated with local data storage while providing a secure, responsive, and familiar environment. It is an ideal solution for large enterprises managing high-traffic or shared environments, such as hot desks, call centers, retail, and labs, where security and mobility are paramount.
+Industrial AI: Where AI meets the physical world
+ASUS highlights practical physical AI workflows that bring AI into industrial operations – from simulation and development to validation and real-world deployment at the edge. The ASUS PE3000N brings powerful physical AI capabilities directly to the edge. Powered by NVIDIA Jetson Thor , it delivers up to 2,070 FP4 TFLOPS of AI performance and 128GB of built-in memory in a compact, deployment-ready form factor. This enables advanced perception, reasoning, and action at the edge, supporting leading open models and applications ranging from humanoid robotics and autonomous machines to intelligent video analytics. Its modular design supports diverse industry requirements and sensor configurations, while rugged features such as wide-range DC input, time synchronisation, automotive ignition control, and extended operating temperatures ensure reliable operation in harsh environments.
+Complementing edge deployment, the ASUS PE6000G serves as a workstation-grade AI and simulation platform for demanding industrial environments. Equipped with NVIDIA RTX PRO graphics cards, it enables reliable validation in field and factory environments before deployment to the edge. Together, PE6000G and PE3000N form a tightly integrated physical AI workflow spanning simulation, validation, and real-world execution across NVIDIA’s robotics ecosystem.
+The RUC-2000 Series is a series of rugged rack edge AI systems for mission-critical edge workloads such as machine vision, autonomous vehicles, and intelligent video analytics in harsh, space-limited environments. The lineup includes the RUC-2000H, a fanless 2U half-rack base unit powered by Intel Core Ultra Series 3 processors, delivering up to 180 AI TOPS for high-throughput inference, with 10G, five 2.5G ports, and support for up to eight GMSL2 camera links. The RUC-2000G is a standard 19-inch rack configuration created by combining the RUC-2000H with expansion stack units, supporting hot-swappable RAID storage and PCIe expansion for up to a 200W GPU. The series is MIL-STD-810H validated for 24/7 reliability.
+Everyday AI: Intelligence that fits everyday life
+ASUS Zenni Claw is available on supported models, providing built-in access to smarter everyday AI assistance across productivity, lifestyle, and mobility use cases. With full I/O connectivity, convertible Flip designs, as well as a complimentary 700GB cloud storage trial, ASUS delivers a high-value, future-ready solution for modern, mobile lifestyles.
+The ZenWiFi BN12 is the latest ASUS high-performance WiFi 8 mesh router, designed to deliver fast, stable, and reliable connectivity throughout the home. It handles multiple devices simultaneously, ensuring consistent performance for everyday connected use across the home. It delivers combined speeds of up to 19Gbps for smooth streaming and everyday applications. With coverage of up to 7,000 sq. ft. (for the two-pack model), advanced security features, smart network optimisation, and flexible connectivity options, including dual 10G ports and mobile tethering, it offers a powerful and future-ready solution for modern connected households.
+Creator AI: Revolutionary creative workflow
+The new ProArt mini PC powered by NVIDIA RTX Spark , are designed for AI-powered creators, workflow builders, and developers who demand powerful local AI capabilities and the next generation of Windows PC experiences. Featuring up to 1 petaflop of AI performance and 128GB of unified memory, the ultra-slim laptops deliver advanced on-device AI processing, and intelligent agent-based workflows.
+ASUS further enhances the experience through its exclusive ProArt ecosystem, including AI-powered applications and workflow tools, while support for over 1,000 accelerated applications such as Adobe Creative Cloud, DaVinci Resolve, Blender, CapCut, ComfyUI, and OTOY enables seamless AI-accelerated productivity and next-generation creative workflows.
+ASUS further accelerates AI-native creativity through its exclusive software ecosystem. MuseTree, powered by FLUX and NVIDIA GPUs, enhances visual ideation with improved prompt accuracy, image fidelity, and editing workflows. On NVIDIA-powered ProArt systems, FLUX NVFP4 and RTX-optimised Black Forest Labs models reduce VRAM requirements while increasing generation speed and efficiency for smoother AI-assisted content creation.
+The ProArt B850‑Creator WiFi Neo is an ATX creator motherboard designed to power AI‑assisted creative workflows such as content creation, design, and production. Built for the latest AMD Ryzen 9000, 8000, and 7000 Series processors as well as AMD EPYC™ 4005 CPUs, it combines strong power delivery, DDR5 memory support, and PCIe 5.0 expansion. High‑speed connectivity with dual 5G Ethernet, WiFi 7, and multiple M.2 slots enables fast data transfers, smooth collaboration, and efficient storage performance. Intelligent features including AI Cache Boost, AI Cooling II, AEMP, and the ASUS AI Advisor simplify system setup. Finished in the refined ProArt design language with layered dark tones and subtle metallic accents, the motherboard also integrates seamlessly with ProArt Creator Hub. The ProArt B850‑Creator WiFi Neo delivers the performance, connectivity, and intelligent control required for today’s AI‑enhanced creative PCs.
+MuseBox is an all-in-one ASUS software platform that brings AI capabilities to creators working within the growing ASUS AI ecosystem. It removes complexity from AI creation by offering one-click installation and access to popular tools such as ComfyUI and Stable Diffusion, allowing creators to focus on their work rather than on setup. A key capability of MuseBox is remote access to high-performance local PCs equipped with ASUS graphics cards, enabling creation from lightweight devices such as laptops or tablets, anytime and anywhere, with high-performance computing power. All computing remains local, ensuring sensitive data and creative assets stay securely on-site. Compatible with PC or workstation equipped with ASUS GeForce RTX 40 or RTX 50 series graphics with at least 8GB VRAM, MuseBox supports professional-grade AI workflows with mobility, simplicity, and strong local security.
+Healthcare AI: Care that feels human
+In the Care and Service zone at Computex, ASUS is showcasing a new generation of AI-ready service robotics designed to deliver practical, proactive care experiences — featuring the Next-Generation Companion Robot, ASUS Kairo, and the ASUS Maestro orchestration platform.
+The Next-Generation Companion Robot is a personalised, always-on AI companion designed to support users through natural interaction. It helps manage everyday tasks such as messaging, video check-ins, and organising personal content, while adapting over time based on user interactions and preferences. Interaction can also take place via messa
+
+## full_text
+
+Business It News / Business Technology ASUS Brings Enterprise-to-Edge AI to Life at Computex 2026
+ASUS | Published 2 June 2026
+Business Technology ASUS Zenni Claw emerges as a standout AI solution, enabling secure AI agents at scale.
+Personal AI, made simple: The standout ASUS Zenni Claw AI solution enables easy-to-use, safe, controlled, reliable agentic AI experiences
+Proactive AI for ESG: ASUS AI x ESG Platform transforms sustainability data into actionable ESG, carbon and supply chain insights
+AI for work and industry: ExpertCenter, NUC and Mini PC, and industrial edge systems drive productivity, automation, and physical AI
+AI for everyday life, creativity, and play: ProArt, and TUF Gaming bring AI into daily life, creative work, healthcare, and gaming
+ASUS today at Computex 2026 advanced its Ubiquitous AI. Incredible Possibilities strategy, unveiling an expanded, end-to-end AI ecosystem that connects enterprise-scale infrastructure with intelligent edge experiences. From the ASUS AI x ESG Platform at the corporate level to a robust AI foundation spanning cloud-ready and on-premises deployments, ASUS is bringing together hardware, software, and services to help customers build, deploy, and scale AI with confidence.
+"At Computex 2026, we are bringing our vision of ubiquitous AI to life by connecting powerful infrastructure with meaningful, real-world experiences at the edge," said S.Y. Hsu, ASUS Co-CEO . "From enterprise systems to everyday devices, ASUS is focused on making AI practical, secure, and accessible — empowering people and businesses to innovate with confidence."
+ASUS is demonstrating how AI turns into real outcomes across the edge and IoT landscapes — spanning Corporate Sustainability AI, AI Infrastructure, Workspace AI, Industrial AI, Everyday AI, Creator AI, Healthcare AI, and Gaming AI. Across the booth, these scenarios illustrate a unified ASUS approach: enabling productivity and secure connectivity for modern work; accelerating industrial intelligence and automation; enhancing daily digital experiences; streamlining creative workflows; supporting clinical environments and imaging; and elevating gaming with AI-assisted performance and smarter system optimisation. Together, they underscore a commitment to making AI solutions practical, accessible, and truly ubiquitous — wherever people work, create, play, and live.
+"Our latest advancements — from ASUS Zenni Claw to our expanded AI ecosystem — demonstrate how AI can move beyond technology and deliver tangible value across industries and daily life," said Samson Hu, ASUS Co-CEO. "We are committed to enabling smarter, more sustainable, and more human-centred experiences through AI at every level."
+Underscoring this commitment, the ASUS booth received the Golden Award at the Computex Sustainable Design Award for its sustainable design.
+ASUS Zenni Claw: Agentic AI, made simple
+Building on this vision, ASUS Zenni Claw is designed to make agentic AI practical, accessible, and useful from day one. As a personal agentic AI platform, it enables users to interact with AI that can understand intent, take action, and support everyday tasks across work, daily life, and travel. With a focus on simplicity and usability, ASUS Zenni Claw lowers the barrier to entry and brings meaningful agentic AI experiences to a broad range of users.
+ASUS Zenni Claw stands out through its ease of use, flexibility, and built-in protection. A one-click, three-step setup and intuitive desktop experience make it easy to get started immediately. Pre-configured ASUS skills provide instant value through practical, ready-to-use workflows. Tasks are dynamically routed across local and cloud environments to optimise performance, capability, and cost. At the same time, a controlled architecture with built-in safety mechanisms helps ensure data protection, isolation, and reliable operation. Together, these capabilities create a seamless and trustworthy AI experience that adapts to users’ needs.
+Zenni Interactive Experience : At the booth, the Zenni Interactive Experience brings the official ASUS mascot, Zenni, to life as an engaging, AI-powered companion. Visitors can interact with Zenni in a playful and immersive way, experiencing how AI can create intuitive and human-like digital experiences in everyday scenarios.
+ASUS AIXESG Platform: Turning data into sustainable action
+Turning sustainability into real, ongoing improvement requires intelligence that anticipates challenges rather than simply reacting to them. The ASUS AIXESG Platform introduces proactive AI to help enterprises move beyond static ESG reporting toward continuous, data-driven guidance with greater clarity and confidence. The solution integrates three closely connected ASUS platforms: the Carbon Data Management platform for emission factor recommendation accounting and reduction management; the Supply Chain Management platform for real-time AI-driven supplier risk monitoring and corrective action tracking; and the ESG Information Integration Management platform, which consolidates environmental, social, and governance data into a single decision framework. By monitoring performance against global reporting frameworks and enterprise data, proactive AI provides guided insights, helping identify data gaps, highlight key disclosure requirements, and recommend targeted actions — enabling faster, more informed, and confident sustainability decisions.
+AI Infrastructure: The foundation for large-scale AI ASUS is at the forefront of AI infrastructure with ASUS AI POD built on NVIDIA Vera Rubin NVL72 , XA VR721-E3 , a 100% liquid-cooled rack-scale platform purpose-built for trillion-parameter models and next-generation AI factories . By adopting NVIDIA DSX , ASUS assists customers to simulate the AI factory reference designs into deployment-ready infrastructure, significantly accelerating time to token generation. Addressing rigorous AI workload demands, ASUS also showcase AI servers based on NVIDIA HGX Rubin NVL8 and Intel Xeon® 6 processor, including XA NR1I-E12L , an innovative hybrid-cooled option, delivering high-performance acceleration for training, inference and simulation. The portfolio is further strengthened by a comprehensive lineup of high-performance, scalable NVIDIA MGX servers. Making their debut are XA P8A-E14AXL, a high-density 6U system supporting eight liquid-cooled NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, and XA P4N-E2, a 2U AI server powered by NVIDIA Vera CPU processors for next-generation agentic AI systems. Spanning rack-scale AI factories and POD architectures to ultrafast context memory storage solutions and enterprise-ready agentic AI applications. ASUS provides enterprise with a complete foundation for the entire AI lifecycle, from infrastructure design and deployment to large-scale token generation, inference, and real-world business adoption.
+ASUS ExpertCenter Pro ET900N G3  brings powerful AI computing directly to the desk, delivering data center-level performance in a compact system. Built on the NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip, it supports advanced AI workloads such as large language models and generative AI with exceptional speed and efficiency. With 748GB of coherent memory, fast data connectivity, and ready for Windows, it can handle large and complex tasks smoothly. The system also includes the full NVIDIA AI software stack, making it easy for businesses to develop, train, and deploy AI applications securely on-premises, while ensuring high performance, reliability, and full control over data.
+Workspace AI: AI computing across desks, offices, and enterprises
+AI is a quiet force behind productive workdays, helping teams handle routine tasks faster while keeping systems secure and manageable. Collaboration flows more smoothly, decisions happen with less friction, and protection stays in place — all without disrupting how people already work.
+The ASUS NUC and Mini PC series demonstrate how powerful AI computing can be delivered in compact, versatile systems. From enabling agentic AI and creative workflows to supporting secure enterprise environments, these small-form-factor platforms combine performance, efficiency, and trusted build quality for modern workspaces.
+ASUS Ascent GX10 brings petaflop-class AI computing to agentic AI applications. Accelerated by the NVIDIA GB10 Grace Blackwell Superchip with 128GB of unified memory, it serves as a central 'super-brain' for NVIDIA NemoClaw-enabled applications, supporting NVIDIA OpenShell for sandboxed deployment, greater cost predictability, and enterprise-grade security. ASUS Ascent GX10 was also honoured with a Computex 2026 Best Choice Award in the AI Computing and Tech category.
+Diversifying its AI Mini PC portfolio, ASUS introduces its first Qualcomm-powered AI PC: ASUS Ascent QN10 . It is the world’s first AI Mini PC with an 80 TOPS NPU, powered by the Snapdragon® X2 Elite. With an 18-core Qualcomm Oryon™ CPU and integrated Qualcomm® Adreno™ GPU, it supports intelligent, always-on AI experiences. Snapdragon Guardian Technology further enhances security and remote manageability for modern AI-driven usage.
+For visual ideation and creative workflows, ASUS ExpertCenter PN55 enables fast, local AI processing with low latency. Equipped with up to an 55 TOPS XDNA2 NPU and AMD Radeon™ 800M graphics, it enables users to quickly turn abstract ideas into stellar visuals without relying on cloud services.
+ASUS NUC 16 Pro delivers reliable, continuous AI performance in a compact 600-gram chassis. Powered by up to an Intel Core Ultra x9 processor with up to 180 TOPS, it supports Intel SuperClaw, a hybrid AI agent orchestration framework that runs AI workflows on‑device by default and reaches out to the cloud only when needed. This local‑first design reduces cloud token costs, keeps sensitive data on the device for stronger data sovereignty, and delivers more consistent agent latency. Built for 24/7 AI workloads, the NUC 16 Pro is tested to meet high military-grade reliability standards, helping ensure durability against drops, heat, and other demanding conditions while maintaining dependable performance over time.
+Built for modern businesses, ASUS NUC 16 , powered by the latest Intel Core Series 3 processor with integrated GPU and NPU, delivers up to 40 platform TOPS for on-device AI across office, retail, and light IoT applications. This compact yet powerful mini PC features DDR5 memory, enhanced security, and versatile connectivity, offering an optimal balance of performance, scalability, and value. A specialized variant, ASUS NUC 16 for Windows 365 , is the first ASUS Cloud PC device — a purpose-built solution designed for seamless integration with Windows 365. By shifting the entire desktop experience to the cloud, this device eliminates the risks associated with local data storage while providing a secure, responsive, and familiar environment. It is an ideal solution for large enterprises managing high-traffic or shared environments, such as hot desks, call centers, retail, and labs, where security and mobility are paramount.
+Industrial AI: Where AI meets the physical world
+ASUS highlights practical physical AI workflows that bring AI into industrial operations – from simulation and development to validation and real-world deployment at the edge. The ASUS PE3000N brings powerful physical AI capabilities directly to the edge. Powered by NVIDIA Jetson Thor , it delivers up to 2,070 FP4 TFLOPS of AI performance and 128GB of built-in memory in a compact, deployment-ready form factor. This enables advanced perception, reasoning, and action at the edge, supporting leading open models and applications ranging from humanoid robotics and autonomous machines to intelligent video analytics. Its modular design supports diverse industry requirements and sensor configurations, while rugged features such as wide-range DC input, time synchronisation, automotive ignition control, and extended operating temperatures ensure reliable operation in harsh environments.
+Complementing edge deployment, the ASUS PE6000G serves as a workstation-grade AI and simulation platform for demanding industrial environments. Equipped with NVIDIA RTX PRO graphics cards, it enables reliable validation in field and factory environments before deployment to the edge. Together, PE6000G and PE3000N form a tightly integrated physical AI workflow spanning simulation, validation, and real-world execution across NVIDIA’s robotics ecosystem.
+The RUC-2000 Series is a series of rugged rack edge AI systems for mission-critical edge workloads such as machine vision, autonomous vehicles, and intelligent video analytics in harsh, space-limited environments. The lineup includes the RUC-2000H, a fanless 2U half-rack base unit powered by Intel Core Ultra Series 3 processors, delivering up to 180 AI TOPS for high-throughput inference, with 10G, five 2.5G ports, and support for up to eight GMSL2 camera links. The RUC-2000G is a standard 19-inch rack configuration created by combining the RUC-2000H with expansion stack units, supporting hot-swappable RAID storage and PCIe expansion for up to a 200W GPU. The series is MIL-STD-810H validated for 24/7 reliability.
+Everyday AI: Intelligence that fits everyday life
+ASUS Zenni Claw is available on supported models, providing built-in access to smarter everyday AI assistance across productivity, lifestyle, and mobility use cases. With full I/O connectivity, convertible Flip designs, as well as a complimentary 700GB cloud storage trial, ASUS delivers a high-value, future-ready solution for modern, mobile lifestyles.
+The ZenWiFi BN12 is the latest ASUS high-performance WiFi 8 mesh router, designed to deliver fast, stable, and reliable connectivity throughout the home. It handles multiple devices simultaneously, ensuring consistent performance for everyday connected use across the home. It delivers combined speeds of up to 19Gbps for smooth streaming and everyday applications. With coverage of up to 7,000 sq. ft. (for the two-pack model), advanced security features, smart network optimisation, and flexible connectivity options, including dual 10G ports and mobile tethering, it offers a powerful and future-ready solution for modern connected households.
+Creator AI: Revolutionary creative workflow
+The new ProArt mini PC powered by NVIDIA RTX Spark , are designed for AI-powered creators, workflow builders, and developers who demand powerful local AI capabilities and the next generation of Windows PC experiences. Featuring up to 1 petaflop of AI performance and 128GB of unified memory, the ultra-slim laptops deliver advanced on-device AI processing, and intelligent agent-based workflows.
+ASUS further enhances the experience through its exclusive ProArt ecosystem, including AI-powered applications and workflow tools, while support for over 1,000 accelerated applications such as Adobe Creative Cloud, DaVinci Resolve, Blender, CapCut, ComfyUI, and OTOY enables seamless AI-accelerated productivity and next-generation creative workflows.
+ASUS further accelerates AI-native creativity through its exclusive software ecosystem. MuseTree, powered by FLUX and NVIDIA GPUs, enhances visual ideation with improved prompt accuracy, image fidelity, and editing workflows. On NVIDIA-powered ProArt systems, FLUX NVFP4 and RTX-optimised Black Forest Labs models reduce VRAM requirements while increasing generation speed and efficiency for smoother AI-assisted content creation.
+The ProArt B850‑Creator WiFi Neo is an ATX creator motherboard designed to power AI‑assisted creative workflows such as content creation, design, and production. Built for the latest AMD Ryzen 9000, 8000, and 7000 Series processors as well as AMD EPYC™ 4005 CPUs, it combines strong power delivery, DDR5 memory support, and PCIe 5.0 expansion. High‑speed connectivity with dual 5G Ethernet, WiFi 7, and multiple M.2 slots enables fast data transfers, smooth collaboration, and efficient storage performance. Intelligent features including AI Cache Boost, AI Cooling II, AEMP, and the ASUS AI Advisor simplify system setup. Finished in the refined ProArt design language with layered dark tones and subtle metallic accents, the motherboard also integrates seamlessly with ProArt Creator Hub. The ProArt B850‑Creator WiFi Neo delivers the performance, connectivity, and intelligent control required for today’s AI‑enhanced creative PCs.
+MuseBox is an all-in-one ASUS software platform that brings AI capabilities to creators working within the growing ASUS AI ecosystem. It removes complexity from AI creation by offering one-click installation and access to popular tools such as ComfyUI and Stable Diffusion, allowing creators to focus on their work rather than on setup. A key capability of MuseBox is remote access to high-performance local PCs equipped with ASUS graphics cards, enabling creation from lightweight devices such as laptops or tablets, anytime and anywhere, with high-performance computing power. All computing remains local, ensuring sensitive data and creative assets stay securely on-site. Compatible with PC or workstation equipped with ASUS GeForce RTX 40 or RTX 50 series graphics with at least 8GB VRAM, MuseBox supports professional-grade AI workflows with mobility, simplicity, and strong local security.
+Healthcare AI: Care that feels human
+In the Care and Service zone at Computex, ASUS is showcasing a new generation of AI-ready service robotics designed to deliver practical, proactive care experiences — featuring the Next-Generation Companion Robot, ASUS Kairo, and the ASUS Maestro orchestration platform.
+The Next-Generation Companion Robot is a personalised, always-on AI companion designed to support users through natural interaction. It helps manage everyday tasks such as messaging, video check-ins, and organising personal content, while adapting over time based on user interactions and preferences. Interaction can also take place via messaging apps when users are away, ensuring seamless support beyond the home.
+Built for dynamic environments, ASUS Kairo is an autonomous service robot that supports guided navigation, follow-me assistance, and real-time information delivery through a flexible, modular platform. With multilingual support and adaptive interaction, it provides clear and reliable guidance in busy settings. Initially validated in healthcare, Kairo is also designed for other service environments where reliability and clarity are essential.
+ASUS Maestro serves as the command centre for scaling robotics across real-world operations, connecting robots, IoT devices, systems, and workflows through standardised API integration. It coordinates tasks across devices and AI agents — including ASUS Kairo and the virtual agent ASUS Sage — executing workflows end-to-end and notifying users upon completion. Designed for scalability, Maestro supports cross-brand devices across on-premises, cloud, and hybrid environments, acting as the backbone for intelligent care and service operations.
+After AI systems are coordinated and workflows are automated, healthcare decisions still rely on one essential element: high‑quality data captured directly from the human body. In the ASUS Healthcare AI ecosystem, dedicated sensing devices form this clinical entry layer.
+ASUS Handheld Ultrasound DuoScan is a portable clinical imaging system designed for real-world medical environments. Its fully wireless dual-probe design offers either a combination of linear-plus-convex configuration or a linear-plus-phased-array configuration, supporting a wide range of applications including abdominal, musculoskeletal, peripheral vascular, thyroid, and cardiac imaging. This flexibility enables use across emergency care, intensive care, cardiac assessment, and home healthcare. The device is engineered for demanding conditions, with an IP68-rated, waterproof and dustproof enclosure, and up to three hours of uninterrupted operation. By bringing reliable ultrasound imaging directly to the point of care, DuoScan helps healthcare providers work more efficiently, respond faster, and improve patient outcomes.
+At the personal health level, ASUS VivoWatch 6 Plus continuously collects physiological data beyond the clinical setting. Encased in a lightweight titanium alloy body, it builds on its established blood pressure and ECG monitoring capabilities from previous VivoWatch generations while adding advanced metrics such as sleep breathing monitoring and gait mobility assessment. These measurements provide deeper insight into cardiovascular health, chronic disease risk, and long-term wellness trends. With real-time feedback and activity guidance, VivoWatch 6 Plus turns everyday movement into meaningful health data, feeding continuous insights into the broader Healthcare AI system.
+Together, these data streams lay the foundation for AI Agents in smart healthcare — echoing survey results showing that over 68% of frontline healthcare professionals expect agent‑based AI to deliver measurable impact on clinical workflows.
+Gaming AI: Intelligent performance engineered for next-level play
+In a live lab demo at the ASUS booth, ASUS G-Assis and ASUS Zenni Claw are showcased, illustrating how AI-driven assistance can simplify system setup and control across PCs, displays, and motherboards — enabling users to monitor hardware, adjust settings, and manage performance through intuitive voice or text commands.
+The TUF Gaming Z890-BTF WiFi7 motherboard is designed for clean, high-performance PC builds, featuring a hidden-connector design that routes cables to the back of the board for an exceptionally tidy look. Optimised for BTF graphics cards, it delivers up to 600W directly through the motherboard, supporting stable, next-gen gaming performance. Built on the Intel Z890 platform, the ATX board features a robust 16+1+2+1 80A DrMOS power solution, PCIe 5.0 support, DDR5 memory compatibility, and high-speed connectivity including WiFi 7, Intel 2.5G Ethernet, and Thunderbolt™ 4. With AI-powered features and an all-black design, TUF Gaming Z890-BTF WiFi7 delivers durability, performance, and smart control for modern AI-powered gaming builds.
+Introducing TUF Gaming reliability and AI-ready performance into compact builds, the TUF Gaming B850I WiFi Neo Mini-ITX motherboard marks the debut of the TUF Gaming series in the small-form-factor segment. Designed for the latest AMD Ryzen processors, it features a premium 10-layer, server-grade PCB that delivers stable power and consistent performance for space-constrained gaming and AI-driven systems. Despite its compact footprint, it supports next-generation storage with one PCIe 5.0 M.2 slot and one PCIe 4.0 M.2 slot, alongside fast WiFi 6E and 2.5G Ethernet connectivity. Intelligent technologies such as AI Cache Boost, AI Cooling II, AEMP, and the ASUS AI Advisor simplify system tuning, while DIY-friendly features including BIOS FlashBack™, Q-LED, and Q -Antenna ensure a smooth and intuitive build experience.
+Bringing together essential performance, clean design, and practical build features, the TUF Gaming B850-PRO WiFi7 W Neo motherboard is built for gamers who value reliability and flexibility. It offers solid power delivery with DrMOS 14(80A)+2(80A)+1(80A) power stages and DDR5 memory support enhanced by AEMP, providing stable operation and broad compatibility. PCIe 5.0 graphics support, three M.2 slots including one with tool-less M.2 Q-Release, WiFi 7 with ASUS Q-Antenna, and multiple USB Type-C connections enable straightforward upgrades and long-term usability. System tuning is supported by the ASUS Asynchronous Clock, while the expanded 64MB ROM BIOS ensures long-term CPU support and overall platform flexibility.
+Designed for enthusiasts who demand maximum performance and future-ready connectivity, the TUF Gaming X870-PRO WiFi7 W Neo ATX motherboard combines advanced power delivery, intelligent tuning, and next-generation interfaces. It's built around robust SPS 16(80A)+2(80A)+1(80A) power stages, Dynamic OC Switcher, Core Flex, and an ASUS Asynchronous Clock, enabling precise system tuning and unlocking greater CPU potential. DDR5 support enhanced by AEMP, DIMM Fit Pro, and NitroPath DRAM technology ensures memory stability and compatibility, while PCIe 5.0 x16 SafeSlot and multiple M.2 slots deliver full bandwidth for ultrafast graphics and storage. High-speed WiFi 7 with ASUS Q-Antenna and integrated 5G Ethernet provide powerful, low-latency connectivity, complemented by DIY-friendly features such as PCIe Slot Q-Release and M.2 Q-Release. A large 64MB ROM BIOS ensures long-term CPU support and a richer tuning experience, making the TUF Gaming X870-PRO WiFi 7 W Neo a solid foundation for high-performance, AI-ready gaming systems.
+The ASUS XG Core external graphics card extends high-performance GPU and AI acceleration to mobile devices in a highly portable form factor. Equipped with an AMD Radeon™ RX 9060 XT LP GPU and 16GB of video memory, it enables laptops and other compact systems to handle demanding 3D graphics, content creation, and AI workloads that would otherwise exceed their internal hardware limits. Integrated USB4® connectivity allows GPU performance to be seamlessly shared across compatible devices, while built-in HDMI® and DisplayPort outputs support large external displays for expanded workflows. Combining external GPU power with docking functionality in a highly compact design, XG Core delivers desktop-class performance without compromising portability.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":25566,"paragraph_count":57,"sentence_count":140,"boilerplate_hits":1,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   2026-06-02T06:15:00Z / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Business It News / Business Technology ASUS Brings Enterprise-to-Edge AI to Life at Computex 2026 ASUS | Published 2 June 2026 Business Technology ASUS Zenni Claw emerges as a standout AI solution, enabling secure AI agents at scale.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Personal AI, made simple: The standout ASUS Zenni Claw AI solution enables easy-to-use, safe, controlled, reliable agentic AI experiences Proactive AI for ESG: ASUS AI x ESG Platform transforms sustainability data into actionable ESG, carbon and supply chain insights AI for work and industry: ExpertCenter, NUC and Mini PC, and industrial edge systems drive productivity, automation, and physical AI AI for everyday life, creativity, and play: ProArt, and TUF Gaming bring AI into daily life, creative work, healthcare,
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Incredible Possibilities strategy, unveiling an expanded, end-to-end AI ecosystem that connects enterprise-scale infrastructure with intelligent edge experiences.
+
+5. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   From the ASUS AI x ESG Platform at the corporate level to a robust AI foundation spanning cloud-ready and on-premises deployments, ASUS is bringing together hardware, software, and services to help customers build, deploy, and scale AI with confidence.
+
+6. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   "At Computex 2026, we are bringing our vision of ubiquitous AI to life by connecting powerful infrastructure with meaningful, real-world experiences at the edge," said S.
+
+## business_elements
+
+- companies: itwire.com, Nvidia
+- products: agents, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 制造 / 工业, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 06, 02, 15, 00, 2, 2026
+B, 72
+- quotes: At Computex 2026, we are bringing our vision of ubiquitous AI to life by connecting powerful infrastructure with meaningful, real-world experiences at the edge, /  said Samson Hu, ASUS Co-CEO. 
+
+## evidence_seed
+
+- company_actions: 2026-06-02T06:15:00Z / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt / Business It News / Business Technology ASUS Brings Enterprise-to-Edge AI to Life at Computex 2026 ASUS | Published 2 June 2026 Business Technology ASUS Zenni Claw emerges as a standout AI solution, enabling secure AI agents at scale. / Personal AI, made simple: The standout ASUS Zenni Claw AI solution enables easy-to-use, safe, controlled, reliable agentic AI experiences Proactive AI for ESG: ASUS AI x ESG Platform transforms sustainability data into actionable ESG, carbon and supply chain insights AI for work and industry: ExpertCenter, NUC and Mini PC, and industrial edge systems drive productivity, automation, and physical AI AI for everyday life, creativity, and play: ProArt, and TUF Gaming bring AI into daily life, creative work, healthcare,
+- case_details: From the ASUS AI x ESG Platform at the corporate level to a robust AI foundation spanning cloud-ready and on-premises deployments, ASUS is bringing together hardware, software, and services to help customers build, deploy, and scale AI with confidence.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+2026-06-02T06:15:00Z / query=model release inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

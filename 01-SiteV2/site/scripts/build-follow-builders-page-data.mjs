@@ -76,6 +76,9 @@ const tagCatalog = {
   "track-ai-coding": { id: "track-ai-coding", name: "AI Coding", group: "track" },
   "track-ai-infra": { id: "track-ai-infra", name: "AI 基础设施", group: "track" },
   "track-enterprise-workflow": { id: "track-enterprise-workflow", name: "企业工作流", group: "track" },
+  "source-social": { id: "source-social", name: "社媒线索", group: "source" },
+  "source-podcast": { id: "source-podcast", name: "播客", group: "source" },
+  "source-blog": { id: "source-blog", name: "技术博客", group: "source" },
 };
 
 function tagsForTopic(topic, source = "x") {
@@ -86,8 +89,14 @@ function tagsForTopic(topic, source = "x") {
     "产品与创业": ["opinion-product-strategy", "track-enterprise-workflow"],
     "Builder 观点": ["opinion-product-strategy", "track-enterprise-workflow"],
   };
+  const sourceTags = {
+    x: "source-social",
+    podcast: "source-podcast",
+    blog: "source-blog",
+  };
   const ids = [
     ...(topicTags[topic] || topicTags["Builder 观点"]),
+    sourceTags[source] || "source-social",
   ];
   return [...new Set(ids)].map((id) => tagCatalog[id]).filter(Boolean);
 }

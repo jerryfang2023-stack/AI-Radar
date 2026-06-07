@@ -62,6 +62,12 @@ The following pages are not formal evidence and must be downgraded to `index_onl
 
 Raw does not make content judgments, give recommendations, or write market conclusions.
 
+Raw quantity is for evidence coverage, not frontstage balance:
+
+- automation target / gate: keep at least 150 active Raw candidates in the daily production chain;
+- Raw may contain large-company material, but monitor logs must expose over-concentration by vendor/theme;
+- Raw must not be padded with repeated large-company product announcements when funding, customer, vertical, regulation, pricing, procurement, or emerging-company evidence is available.
+
 ## 3. Pool Rules
 
 Pool is the screened evidence pool.
@@ -80,6 +86,16 @@ Pool type is not Card type. A Pool item can be useful evidence without becoming 
 
 Pool does not write frontstage copy and does not replace source text with generated interpretation.
 
+Pool quantity and balance:
+
+- automation gate: keep at least 75 Pool items, with at least 60 routed Pool items and at least 30 usable `core_pool` items;
+- required lanes must cover funding, product/service, customer/case, vertical deployment, technical trend, and viewpoint/article context when available;
+- each required importance lane should keep at least 5 Pool candidates before downstream release;
+- large-company items may enter Pool as evidence, but `core_pool` must not be dominated by large-company news;
+- default hard boundary: large-company `core_pool` items should be no more than 10 items and no more than 35% of usable `core_pool`;
+- non-large-company `core_pool` depth should be at least 20 items so the frontstage Top 10 does not depend on repeated large-company news;
+- extra large-company items should stay as watchlist / index / supporting evidence unless they remain inside the frontstage large-company quota.
+
 ## 4. Card Rules
 
 Frontstage formal cards are:
@@ -95,8 +111,11 @@ Current V3 business-signal `signal_card` types are only:
 
 Daily business-signal target:
 
-- default 10 signal cards;
-- include large-company signals;
+- frontstage presentation publishes exactly 10 signal cards per date;
+- Signal Card assets should cover all qualified Core Pool items, including cards not displayed in the frontstage Top 10;
+- include at most 1 signal per large company in the frontstage Card set per date;
+- include at most 3 large-company signals in total in the frontstage Card set per date;
+- frontstage presentation must still publish exactly 10 items per date; if the large-company caps leave fewer than 10 eligible items, expand Raw collection and repair Pool/Core Pool selection instead of weakening the caps or padding with repeated large-company news;
 - include vertical-industry cases;
 - include emerging-company financing;
 - do not let large-company product news crowd out funding and cases.
@@ -109,6 +128,8 @@ Recommended target mix:
 | Case / vertical deployment | 2 | 3 |
 | Product / service | 2 | 3 |
 | Best remaining qualified item | 0 | 1 |
+
+This mix is a monitoring and candidate-pool coverage target, not a frontstage ordering rule. Frontstage presentation must rank the day by importance and publish exactly the 10 most important business signals after applying the same-company and total large-company caps. Relationship graph and trend-candidate generation still use the full eligible Core Pool / Card asset set, including non-displayed Pool-backed Cards.
 
 Card title rules:
 

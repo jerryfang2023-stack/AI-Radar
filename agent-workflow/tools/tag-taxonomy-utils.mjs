@@ -51,6 +51,10 @@ export function parseTagTaxonomyMarkdown(markdown) {
       currentGroup = tagGroups.includes(heading[1]) ? heading[1] : "";
       continue;
     }
+    if (/^#/u.test(rawLine)) {
+      currentGroup = "";
+      continue;
+    }
 
     if (!currentGroup || !rawLine.trim().startsWith("|")) continue;
     if (/^\|\s*-+/u.test(rawLine) || /\|\s*tag_id\s*\|/iu.test(rawLine)) continue;

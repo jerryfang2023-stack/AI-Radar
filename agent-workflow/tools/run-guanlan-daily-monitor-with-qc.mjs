@@ -24,7 +24,7 @@ const config = (() => {
   }
 })();
 
-const passScore = Number(args.get("pass-score") || config.pass_score || 80);
+const diagnosticScoreReference = Number(args.get("pass-score") || config.diagnostic_score_reference || config.pass_score || 85);
 const maxCycles = Math.max(1, Number(args.get("max-cycles") || config.max_retry_cycles || 3));
 const monitorTimeoutMs = Math.max(60_000, Number(args.get("monitor-timeout-ms") || 420_000));
 const node = process.platform === "win32" ? "node" : process.execPath;
@@ -53,8 +53,8 @@ function parseMonitorJson(stdout = "") {
 
 function buildMonitorArgsForCycle(cycle) {
   const retryTuning = config.retry_tuning || {};
-  const searchLimitBase = toNumber(args.get("search-limit"), 70);
-  const searchPathBase = toNumber(args.get("search-path-query-limit"), 2);
+  const searchLimitBase = toNumber(args.get("search-limit"), 150);
+  const searchPathBase = toNumber(args.get("search-path-query-limit"), 5);
   const gdeltBase = toNumber(args.get("gdelt-query-limit"), 8);
   const hnBase = toNumber(args.get("hn-limit"), 8);
   const fetchTimeout = toNumber(args.get("fetch-timeout-ms"), 20000);
@@ -63,7 +63,7 @@ function buildMonitorArgsForCycle(cycle) {
   const searchPathStep = toNumber(retryTuning.search_path_query_limit_step, 1);
   const gdeltStep = toNumber(retryTuning.gdelt_query_limit_step, 1);
   const hnStep = toNumber(retryTuning.hn_limit_step, 0);
-  const searchLimitMax = toNumber(retryTuning.search_limit_max, 100);
+  const searchLimitMax = toNumber(retryTuning.search_limit_max, 220);
   const searchPathMax = toNumber(retryTuning.search_path_query_limit_max, 3);
   const gdeltMax = toNumber(retryTuning.gdelt_query_limit_max, 12);
   const hnMax = toNumber(retryTuning.hn_limit_max, 8);
@@ -120,7 +120,8 @@ function writeLoopReport(loopResult) {
     "",
     `- generated_at: ${new Date().toISOString()}`,
     `- status: ${loopResult.status}`,
-    `- pass_score_threshold: ${passScore}`,
+    `- diagnostic_score_reference: ${diagnosticScoreReference}`,
+    "- score_mode: diagnostic_only",
     `- max_cycles: ${maxCycles}`,
     `- final_cycle: ${loopResult.finalCycle}`,
     `- manual_intervention_required: ${loopResult.manualInterventionRequired}`,
@@ -182,7 +183,7 @@ function main() {
     const quality = runGuanlanMonitorQualityGate({
       date,
       configPath,
-      passScore,
+      passScore: diagnosticScoreReference,
       attempt: cycle,
       maxAttempts: maxCycles,
     });
@@ -233,7 +234,7 @@ function main() {
   const loopResult = {
     date,
     status: finalStatus,
-    passScore,
+    diagnosticScoreReference,
     maxCycles,
     finalCycle,
     manualInterventionRequired,

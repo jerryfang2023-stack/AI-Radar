@@ -11,10 +11,16 @@ fact_draft_gate: passed
 frontend_copy_gate: passed
 cardcopy_gate: passed
 created_at: 2026-06-04T00:38:44.066Z
-updated_at: 2026-06-04T00:38:44.066Z
+updated_at: 2026-06-06T19:02:05.764Z
 
-raw_refs: ["R-011"]
-pool_refs: ["P-010"]
+raw_refs: ["R-011", "R-051"]
+pool_refs: ["P-010", "P-049"]
+merged_updates:
+  - date: 2026-06-06
+    pool_ref: P-049
+    raw_ref: R-051
+    source_url: "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services"
+
 primary_raw:
   raw_ref: R-011
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-011-the-200-billion-ai-opportunity-in-tech-services-bcg.md"
@@ -88,3 +94,7 @@ Bcg 把 AI 用进销售和收入团队流程。
 ## 继续观察
 
 未来 30 到 90 天观察是否出现客户名单、部署指标、定价变化或二次融资信号。
+
+## Merge Updates
+
+- 2026-06-06: merged duplicate capture R-051 / P-049.

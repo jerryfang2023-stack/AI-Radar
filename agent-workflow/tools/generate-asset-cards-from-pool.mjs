@@ -29,6 +29,22 @@ const v3SignalLanePlan = [
 ];
 
 const signalSpecs = {
+  "2026-06-06": [
+    {
+      id: "SIG-20260606-E01",
+      poolRef: "P-030",
+      type: "case",
+      dir: "case",
+      slug: "contrario-launches-ai-agent-human-recruiter-workflow",
+      company: "Contrario",
+      title: "Contrario launches AI agents paired with human recruiters",
+      eventLine: "Contrario launched a recruiting workflow that pairs AI agents with human recruiters instead of replacing them outright.",
+      whyWatch: "This is a workflow-positioning signal in a concrete business function, not a generic AI-agent list.",
+      businessMeaning: "It points to a hybrid adoption pattern where AI handles repeatable recruiting work while human recruiters remain accountable for judgment and candidate relationships.",
+      evidenceBoundary: "The source confirms the product positioning; customer outcomes and deployment metrics still need follow-up.",
+      watchWindow: "Watch for customer pilots, placement metrics, recruiter productivity claims, and integrations with ATS or HR systems.",
+    },
+  ],
   "2026-05-20": [
     {
       id: "SIG-20260520-01",
@@ -431,6 +447,8 @@ function runReadiness() {
     "--command=assets",
     `--date=${date}`,
     `--require-final-qc=${args.get("require-final-qc") || "true"}`,
+    ...(args.get("repair-allow-degraded-assets") === "true" ? ["--repair-allow-degraded-assets=true"] : []),
+    ...(args.get("manual-release-override") === "true" ? ["--manual-release-override=true"] : []),
   ], { cwd: root, encoding: "utf8" });
   if (result.status !== 0) {
     process.stdout.write(result.stdout || "");
@@ -594,6 +612,22 @@ function sourceExcerptFromSection(section, points = []) {
     .map((item) => translatedSourcePoint(item))
     .find(Boolean);
   return firstRaw || points[0] || "";
+}
+
+function isSameSourcePoint(a = "", b = "") {
+  return normalizedSignalText(a) === normalizedSignalText(b);
+}
+
+function generatedValueSummary(spec, section) {
+  const company = spec.company || companyFromSection(section);
+  const scenario = scenarioFromText(textForInference(section));
+  if (spec.type === "funding") {
+    return `${company} 的融资信号可用于观察资本是否继续流向 ${fundingAngleFromScenario(scenario)}。`;
+  }
+  if (spec.type === "product_service") {
+    return `${company} 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。`;
+  }
+  return `${company} 的案例信号可用于观察 AI 是否已经进入 ${scenario}，以及后续是否出现客户、流程或结果指标。`;
 }
 
 function normalizeSignalSpec(spec) {
@@ -829,12 +863,28 @@ function rawPublicationDate(section) {
   return dateFromUrl(sourceUrl);
 }
 
-function isStalePublication(section, maxAgeDays = 14) {
+function isStalePublication(section, maxAgeDays = 30) {
   const published = rawPublicationDate(section);
   if (!published) return false;
   const runDate = new Date(`${date}T12:00:00Z`);
   const ageMs = runDate.getTime() - published.getTime();
   return ageMs > maxAgeDays * 24 * 60 * 60 * 1000;
+}
+
+function isGenericReportOrListSection(section) {
+  const titleUrlSource = [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+  ].join(" ");
+  const urlSource = [
+    value(section, "source"),
+    value(section, "source_url"),
+  ].join(" ");
+  if (/yc\.com\/companies\/industry|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
+    return true;
+  }
+  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(titleUrlSource);
 }
 
 function corePoolSemanticIssues(section) {
@@ -850,6 +900,7 @@ function corePoolSemanticIssues(section) {
   if (!/core_pool/u.test(value(section, "pool_routes"))) issues.push("not_core_pool");
   if (value(section, "raw_qc_decision") !== "allow") issues.push("raw_qc_not_allow");
   if (value(section, "has_full_text") !== "true") issues.push("missing_full_text");
+  if (isGenericReportOrListSection(section)) issues.push("generic_report_or_list_not_fact_signal");
   if (!sourceUrl || sourceUrl === "no-url") issues.push("missing_source_url");
   if (!value(section, "extraction_method")) issues.push("missing_extraction_method");
   if (!Number.isFinite(readability) || readability < 24) issues.push("low_readability");
@@ -857,8 +908,7 @@ function corePoolSemanticIssues(section) {
   if (/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") {
     issues.push("user_feedback_not_fact_signal");
   }
-  const inferredTypeForAge = inferSignalType(section);
-  if (isStalePublication(section, inferredTypeForAge === "product_service" ? 14 : 180)) issues.push("stale_source_date");
+  if (isStalePublication(section, 30)) issues.push("stale_source_date");
   if (value(section, "index_only_evidence") === "true") issues.push("index_only_evidence");
   if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(`index_only_evidence_type:${evidenceObjectType}`);
   if (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl)) {
@@ -931,6 +981,7 @@ function domainLabelFromUrl(value = "") {
 
 function isWeakCompanyName(value = "") {
   const text = String(value || "").trim();
+  if (/buying criteria|adoption|startup ideas|massive ai deals|funding record|pre-seed slowdown|fund focused on ai/iu.test(text)) return true;
   if (!text) return true;
   const hanChars = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   return text.length > 42
@@ -985,10 +1036,9 @@ function isSingleCompanyFundingSignal(section) {
   if (/(funding map|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(haystack)) {
     return false;
   }
-  const hasFundingAction = /\b(raises|raised|lands|landed|secures|secured|closes|closed|announces|announced|snags|bags|pulls in|gets|receives)\b.{0,100}\b(funding|financing|investment|round|seed|series|pre-seed)\b/iu.test(haystack);
+  const hasFundingAction = /\b(raises|raised|lands|landed|secures|secured|closes|closed|announc(?:es|ed|ing)?|snags|bags|pulls in|gets|receives)\b.{0,120}\b(funding|financing|investment|round|seed|series|pre-seed)\b/iu.test(haystack);
   const hasAmountOrRound = /[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\b\d+(?:\.\d+)?\s?(?:million|billion)\b|\b(pre-seed|seed|series\s+[a-z])\b/iu.test(haystack);
-  const company = companyFromSection(section);
-  return hasFundingAction && hasAmountOrRound && company && !isWeakCompanyName(company);
+  return hasFundingAction && hasAmountOrRound;
 }
 
 function scenarioFromText(text) {
@@ -1072,7 +1122,7 @@ function autoSignalSpec(poolRef, section, index) {
       if (pubDate) {
         const pubDay = new Date(pubDate);
         const cutoff = new Date();
-        cutoff.setDate(cutoff.getDate() - (type === "product_service" ? 14 : 180));
+        cutoff.setDate(cutoff.getDate() - 14);
         if (pubDay < cutoff) {
           return null; // 跳过超过 14 天的旧内容
         }
@@ -1133,7 +1183,7 @@ function signalPriorityScore(spec, section) {
   let score = importance * 20 + capture;
   if (spec.type === "funding" && !isLargeVendorSignal(section)) score += 35;
   if (spec.type === "case" && value(section, "importance_type") === "important_vertical_solution") score += 25;
-  if (spec.type === "product_service" && isLargeVendorSignal(section)) score += 5;
+  if (spec.type === "product_service" && isLargeVendorSignal(section)) score -= 10;
   if (isLargeVendorSignal(section) && spec.type !== "product_service") score -= 5;
   return score;
 }
@@ -1153,8 +1203,6 @@ function autoSignalsFromPool(sections, explicitSpecs) {
       })
       .filter(Boolean)
   );
-  const need = Math.max(0, signalTarget - explicitSpecs.length);
-  if (!need) return [];
   const candidates = [];
   let index = 1;
   for (const [poolRef, section] of sections) {
@@ -1173,9 +1221,9 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   const pickedClusterKeys = new Set();
   const sorted = candidates.sort((a, b) => b.score - a.score || a.spec.poolRef.localeCompare(b.spec.poolRef));
 
-  function pickWhere(predicate, count) {
+  function pickWhere(predicate, count = Number.POSITIVE_INFINITY) {
     for (const item of sorted) {
-      if (picked.length >= need || count <= 0) break;
+      if (count <= 0) break;
       if (!predicate(item)) continue;
       if (pickedPoolRefs.has(item.spec.poolRef) || pickedClusterKeys.has(item.clusterKey)) continue;
       picked.push(item);
@@ -1188,13 +1236,13 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   for (const lane of v3SignalLanePlan) {
     pickWhere((item) => item.spec.type === lane.type, lane.target);
   }
-  pickWhere(() => true, need - picked.length);
+  pickWhere(() => true);
 
   for (const item of picked) {
     selectedPoolRefs.add(item.spec.poolRef);
     selectedClusterKeys.add(item.clusterKey);
   }
-  return picked.slice(0, need).map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1));
+  return picked.map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1));
 }
 
 function yamlList(items) {
@@ -1220,7 +1268,7 @@ function inferredTagsFromText(text = "") {
     scenario: [],
     customer: [],
     evidence: [],
-    stage: ["stage-watch"],
+    stage: [],
     region: [],
     source: [],
   };
@@ -1231,12 +1279,21 @@ function inferredTagsFromText(text = "") {
   if (has(/workflow|agent|智能体|流程|enterprise|企业/iu)) add("track", "track-enterprise-workflow"), add("customer", "customer-enterprise");
   if (has(/data|snowflake|rag|知识库|数据/iu)) add("track", "track-enterprise-data"), add("scenario", "scenario-knowledge-base");
   if (has(/infra|inference|temporal|模型|推理|基础设施|算力/iu)) add("track", "track-ai-infra");
-  if (has(/health|medical|clinical|医疗|医院|临床/iu)) add("track", "track-medical-ai"), add("customer", "customer-healthcare-provider"), add("scenario", "scenario-clinical-imaging");
+  if (has(/health|medical|clinical|医疗|医院|临床/iu)) add("track", "track-medical-ai"), add("customer", "customer-healthcare-provider"), add("scenario", "scenario-healthcare-operations");
+  if (has(/imaging|影像|诊断/iu)) add("scenario", "scenario-clinical-imaging");
   if (has(/procurement|bidding|采购|投标|招标/iu)) add("function", "function-procurement-bidding"), add("scenario", "scenario-bidding-response");
   if (has(/finance|财务|贷款|理赔|保险/iu)) add("function", "function-finance");
+  if (has(/insurance|claim|claims|理赔|保险/iu)) add("scenario", "scenario-insurance-claims");
+  if (has(/logistics|supply chain|delivery|inventory|物流|配送|供应链|库存/iu)) add("scenario", "scenario-logistics-supply-chain");
+  if (has(/construction|real estate|property|建筑|地产|工程贷款/iu)) add("scenario", "scenario-construction-real-estate");
+  if (has(/revenue operations|revops|commercial brain|收入运营|销售运营|商业大脑/iu)) add("scenario", "scenario-revenue-operations");
   if (has(/customer|service|客服|售后|工单|voice|语音/iu)) add("track", "track-ai-customer-service"), add("function", "function-customer-service"), add("scenario", "scenario-customer-ticket");
   if (has(/sales|销售/iu)) add("function", "function-sales"), add("scenario", "scenario-sales-briefing");
   if (has(/governance|permission|audit|security|治理|权限|审计|安全/iu)) add("track", "track-ai-governance"), add("scenario", "scenario-agent-governance");
+  if (has(/partnership|integration|integrates|合作|集成|接入/iu)) add("evidence", "evidence-partnership-integration");
+  if (has(/acquisition|acquires|acquired|merger|收购|并购/iu)) add("evidence", "evidence-acquisition");
+  if (has(/pricing|price|cost|usage limit|rate limit|推理成本|定价|价格|用量|限额|成本/iu)) add("evidence", "evidence-pricing-cost");
+  if (has(/metric|reduced|increase|saved|效率|处理量|节省|提升|降低|指标/iu)) add("evidence", "evidence-customer-metric");
 
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
@@ -1266,7 +1323,6 @@ function formalTagsForSignal(spec, sourceLevel) {
 function formalTagsForScene(spec) {
   const tags = inferredTagsFromText(`${spec.title} ${spec.industry} ${spec.role} ${spec.workflow} ${spec.changedStep}`);
   tags.evidence.push("evidence-customer-adoption");
-  tags.stage.push("stage-watch");
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
 
@@ -1290,7 +1346,10 @@ function signalCard(spec, section) {
   const sourcePoints = (spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section)).slice(0, 6);
   const sourceExcerpt = spec.sourceExcerpt || sourceExcerptFromSection(section, sourcePoints);
   const sourceFact = sourcePoints[0] || spec.title;
-  const valueSummary = sourcePoints.find((item) => item !== sourceFact) || sourceFact;
+  const originalPoints = sourcePoints.filter((item, index) => index > 0 && !isSameSourcePoint(item, sourceFact));
+  const valueSummary =
+    [spec.businessMeaning, ...originalPoints].find((item) => item && !isSameSourcePoint(item, sourceFact)) ||
+    generatedValueSummary(spec, section);
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
   return `---
@@ -1341,9 +1400,9 @@ ${sourceFact}
 
 ## 原文要点
 
-${sourcePoints.length ? sourcePoints.map((item) => `- ${item}`).join("\n") : "- 原文要点暂缺，需回到 Raw 补齐。"}
+${originalPoints.length ? originalPoints.map((item) => `- ${item}`).join("\n") : "- 原文未提供更多可拆分事实点，需以可见原文片段核对。"}
 
-## 简要价值描述
+## 价值描述
 
 ${valueSummary}
 
@@ -1476,9 +1535,11 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     `- written_count: ${written.length}`,
     `- merged_count: ${merged.length}`,
     `- skipped_count: ${skipped.length}`,
-    `- frontstage_signal_count: ${frontstageSpecs.length}`,
+    `- signal_asset_count: ${frontstageSpecs.length}`,
+    `- frontstage_target_count: ${signalTarget}`,
+    `- signal_asset_mode: all qualified Core Pool items`,
     "",
-    "## Frontstage Signals",
+    "## Signal Card Assets",
     "",
     frontstageSpecs.length
       ? frontstageSpecs.map((spec) => `- ${spec.id}｜${spec.poolRef}｜${spec.title}`).join("\n")
@@ -1507,7 +1568,7 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
   fs.writeFileSync(manifestPath, `${JSON.stringify({
     date,
     generated_at: new Date().toISOString(),
-    frontstage_signals: frontstageSpecs.map((spec) => ({
+    signal_card_assets: frontstageSpecs.map((spec) => ({
       id: spec.id,
       pool_ref: spec.poolRef,
       title: spec.title,

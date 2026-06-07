@@ -44,16 +44,16 @@ if (args.has("help") || args.has("h")) {
       "Optional:",
       "  --fetch-timeout-ms=20000",
       "  --snapshot-timeout-ms=16000",
-      "  --raw-target=120",
-      "  --raw-min=80",
-      "  --raw-max=150",
+      "  --raw-target=150",
+      "  --raw-min=150",
+      "  --raw-max=220",
       "  --historical-dedupe=true",
       "  --raw-dedupe-buffer=40",
       "  --aihot-limit=500",
       "  --aihot-mode=all",
       "  --aihot-window-hours=24",
-      "  --search-limit=70",
-      "  --search-path-query-limit=2",
+      "  --search-limit=150",
+      "  --search-path-query-limit=5",
       "  --hn-limit=8",
       "  --gdelt-query-limit=8",
       "  --dry-run=true",
@@ -67,12 +67,12 @@ const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const aihotMode = args.get("aihot-mode") || "all";
 const aihotWindowHours = Number(args.get("aihot-window-hours") || 24);
 const aihotTarget = Number(args.get("aihot-limit") || 500);
-const searchTarget = Number(args.get("search-limit") || 70);
-const searchPathQueryLimit = Number(args.get("search-path-query-limit") || 2);
+const searchTarget = Number(args.get("search-limit") || 150);
+const searchPathQueryLimit = Number(args.get("search-path-query-limit") || 5);
 const hnTarget = Number(args.get("hn-limit") || 8);
 const rawTargetOverride = args.has("raw-target") ? Number(args.get("raw-target")) : null;
-const rawMinTarget = Number(args.get("raw-min") || 80);
-const rawMaxTarget = Number(args.get("raw-max") || 150);
+const rawMinTarget = Number(args.get("raw-min") || 150);
+const rawMaxTarget = Number(args.get("raw-max") || 220);
 const historicalDedupeEnabled = args.get("historical-dedupe") !== "false";
 const rawDedupeBuffer = Number(args.get("raw-dedupe-buffer") || 40);
 const dryRun = args.get("dry-run") === "true";
@@ -86,6 +86,7 @@ const poolDir = path.join(contentRoot, "02-pool");
 const businessSignalsDir = path.join(contentRoot, "04-business-signals");
 const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-monitoring-v2.json");
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
+const monitorQualityGatePath = path.join(contentRoot, "11-databases", "monitor-quality-gate-v2.json");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const ensure = (dir) => fs.mkdirSync(dir, { recursive: true });
@@ -116,6 +117,9 @@ const keywordMonitoring = readJson(keywordMonitoringPath, {
   theme_groups: [],
 });
 const sourceRegistry = readJson(sourceRegistryPath, { sources: [] });
+const monitorQualityGate = readJson(monitorQualityGatePath, { hard_gates: {}, layered_search_requirements: {} });
+const monitorHardGates = monitorQualityGate.hard_gates || {};
+const layeredSearchRequirements = monitorQualityGate.layered_search_requirements || {};
 const themeGroups = Array.isArray(keywordMonitoring.theme_groups) ? keywordMonitoring.theme_groups : [];
 const themeOrder = themeGroups.map((group) => group.id);
 const themeById = new Map(themeGroups.map((group) => [group.id, group]));
@@ -124,6 +128,19 @@ const rawEntryPolicy = keywordMonitoring.raw_entry_policy || {};
 const anysearchApiKey = process.env.ANYSEARCH_API_KEY || "";
 const tavilyApiKey = process.env.TAVILY_API_KEY || "";
 const exaApiKey = process.env.EXA_API_KEY || "";
+
+function numericConfig(value, fallback) {
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? numeric : fallback;
+}
+
+const poolMinTarget = numericConfig(monitorHardGates.pool_count_min, 75);
+const routedPoolMinTarget = numericConfig(monitorHardGates.routed_pool_count_min, 60);
+const corePoolMinTarget = numericConfig(monitorHardGates.core_pool_min, 30);
+const coreNonLargeVendorMinTarget = numericConfig(monitorHardGates.core_non_large_vendor_min, 20);
+const coreLargeVendorMaxTarget = numericConfig(monitorHardGates.core_large_vendor_max, 10);
+const corePoolMaxPerImportanceType = numericConfig(layeredSearchRequirements.core_pool_max_per_importance_type, 8);
+
 let historicalRawIndexCache = null;
 let historicalDedupePreFetchRemoved = 0;
 let historicalDedupePostFetchRemoved = 0;
@@ -275,11 +292,11 @@ function opinionFormalTagsForItem(item = {}) {
   return {
     track,
     function: [],
-    scenario: ["scenario-frontier-opinion"],
+    scenario: [],
     customer: [],
-    evidence: ["evidence-frontier-opinion"],
-    stage: ["stage-watch"],
-    region: ["region-global"],
+    evidence: [],
+    stage: [],
+    region: [],
     source,
     opinion,
   };
@@ -840,7 +857,13 @@ function importanceProfile(item = {}, bodyText = "") {
   const oldFundingBackground =
     /(此前|去年|早前|202[0-5]).{0,30}(融资|完成.*轮|raised|funding|series|seed)/iu.test(text)
     && /(发布|推出|亮相|预告|将于|teaser|launch|release)/iu.test(text);
-  if (/funding|raises|raised|series [a-z]|seed|pre-seed|yc|y combinator|a16z|sequoia|benchmark capital|accel|lightspeed|founders fund|融资|种子轮|天使轮|a轮|b轮|知名机构/iu.test(text) && !oldFundingBackground) {
+  const fundingNoise =
+    /clickbait|feed|funding record|massive ai deals|ranked by funding|top ai agent startups|vc attention|market map|fund focused on ai/iu.test(text);
+  const concreteFundingEvent =
+    /\b(raises|raised|lands|landed|secures|secured|closes|closed|announces|announced|pulls in|bags)\b.{0,100}\b(\$|funding|financing|round|seed|series|pre-seed|debt)\b/iu.test(text)
+    || /\b(series [a-z]|seed|pre-seed|debt financing)\b.{0,100}\b(\$|million|billion|funding|round|financing)\b/iu.test(text)
+    || /(融资|债务融资|完成.*轮|种子轮|天使轮|a轮|b轮).{0,80}(\$|美元|人民币|亿元|千万|百万|投资方|领投|参投|估值)/iu.test(text);
+  if (concreteFundingEvent && !oldFundingBackground && !fundingNoise) {
     add("important_funding", /\$|million|billion|估值|yc|y combinator|a16z|sequoia|benchmark|知名机构|亿美元|千万美元/iu.test(text) ? 5 : 4, "funding or investment event");
   }
   if (/model release|new model|benchmark|evals?|inference|reasoning|multimodal|agent architecture|mcp|protocol|open[-\s]?source|paper|research|模型发布|新模型|基准|评测|推理|多模态|智能体架构|开源|论文|技术趋势/iu.test(text)) {
@@ -873,7 +896,7 @@ function importanceProfile(item = {}, bodyText = "") {
     important_vertical_solution: strongVerticalContext ? 5 : 1,
     important_case: 4,
     important_product_or_service: 3,
-    important_funding: 2,
+    important_funding: concreteFundingEvent ? 6 : 2,
     important_technical_trend: 2,
   };
   const best = candidates.sort((a, b) => (b.score - a.score) || ((typePriority[b.type] || 0) - (typePriority[a.type] || 0)))[0];
@@ -1233,6 +1256,30 @@ function titleFingerprint(title = "") {
 function publishedDay(value = "") {
   const normalized = normalizePublishedAt(value);
   return normalized ? normalized.slice(0, 10) : "";
+}
+
+function dayFromUrl(value = "") {
+  const text = String(value || "");
+  const match = text.match(/(?:^|[^\d])(20\d{2})[/-](\d{1,2})[/-](\d{1,2})(?:[^\d]|$)/u);
+  if (!match) return "";
+  const [, year, rawMonth, rawDay] = match;
+  const month = rawMonth.padStart(2, "0");
+  const day = rawDay.padStart(2, "0");
+  if (!validDateParts(year, month, day)) return "";
+  return `${year}-${month}-${day}`;
+}
+
+function sourceDayForItem(item = {}) {
+  return publishedDay(item.published_at) || dayFromUrl(item.url) || dayFromUrl(item.source);
+}
+
+function isStaleCoreCandidate(item = {}, maxAgeDays = 14) {
+  const sourceDay = sourceDayForItem(item);
+  if (!sourceDay) return false;
+  const runDate = new Date(`${date}T12:00:00Z`);
+  const sourceDate = new Date(`${sourceDay}T12:00:00Z`);
+  if (!Number.isFinite(runDate.getTime()) || !Number.isFinite(sourceDate.getTime())) return false;
+  return (runDate.getTime() - sourceDate.getTime()) > maxAgeDays * 24 * 60 * 60 * 1000;
 }
 
 function sourceFamilyForDedupe(item = {}) {
@@ -1764,7 +1811,9 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     && hasFullText(item.snapshot)
     && ["high", "medium"].includes(quality)
     && hasRequiredEvidenceHashes
-    && nonIndexEvidenceObject;
+    && nonIndexEvidenceObject
+    && !isGenericReportOrListItem(item)
+    && !isStaleCoreCandidate(item);
   if (computedRawQcDecision === "block") {
     return [isAIHotDailySelected(item) ? "index_only" : "discard"];
   }
@@ -1778,7 +1827,17 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
   if (!routes.size && isAIHotDailySelected(item)) routes.add(quality === "failed" ? "index_only" : "watchlist");
   if (!routes.size && quality === "failed") routes.add("discard");
   if (!routes.size) routes.add("index_only");
-  return limitRoutesByDegradation([...routes], degradationReasons, computedRawQcDecision, item);
+  const limitedRoutes = limitRoutesByDegradation([...routes], degradationReasons, computedRawQcDecision, item);
+  return applyPoolRouteOverrides(item, limitedRoutes);
+}
+
+function applyPoolRouteOverrides(item = {}, routes = []) {
+  if (item.force_non_core_pool !== true) return routes;
+  const next = routes.filter((route) => route !== "core_pool");
+  if (!next.length || next.every((route) => route === "index_only" || route === "discard")) {
+    next.push("watchlist");
+  }
+  return [...new Set(next)];
 }
 
 function limitRoutesByDegradation(routes = [], degradationReasons = [], rawQcDecision = "", item = {}) {
@@ -1929,10 +1988,23 @@ function isEventEvidenceObject(type = "") {
     "changelog_or_release",
     "pricing_change",
     "regulatory_or_procurement",
-    "research_or_report",
-    "supporting_article",
-    "community_feedback",
   ].includes(type);
+}
+
+function isGenericReportOrListItem(item = {}) {
+  const titleUrlSource = [
+    item.title,
+    item.url,
+    item.source,
+  ].join(" ");
+  const urlSource = [
+    item.url,
+    item.source,
+  ].join(" ");
+  if (/yc\.com\/companies\/industry|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
+    return true;
+  }
+  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(titleUrlSource);
 }
 
 function hasExplicitChangeAction(item = {}, snapshotText = "", excerpts = []) {
@@ -3368,8 +3440,17 @@ function isXSourceItem(item = {}) {
 
 const poolKeyFor = (item) => item.url || `${item.title}-${item.source}`;
 
-function qualifiesForMonitorPool(item) {
-  if (isAIHotDailySelected(item)) return true;
+function isLargeVendorPoolItem(item = {}) {
+  const text = [
+    item.title,
+    item.source,
+    item.url,
+    item.search_path_label,
+  ].join(" ");
+  return /\b(Google|Microsoft|Anthropic|OpenAI|NVIDIA|Nvidia|Oracle|AWS|Amazon|Meta|Apple|IBM|Salesforce|DeepMind|Claude|Gemini|Copilot|ChatGPT|GitHub)\b|谷歌|微软|英伟达|亚马逊|甲骨文/iu.test(text);
+}
+
+function poolCandidateMeta(item) {
   const snapshotText = item.snapshot?.text || item.summary || "";
   const quality = extractionQuality(item.snapshot);
   const excerpts = structuredKeyExcerpts(item, snapshotText);
@@ -3378,17 +3459,105 @@ function qualifiesForMonitorPool(item) {
   const scores = guanlanScores(item, quality, elements, seed);
   const usable = usableFor(item, quality, scores, excerpts);
   const routes = poolRoutesFor(item, quality, scores, usable, excerpts);
+  const capturePriority = Number(item.raw_capture_priority ?? rawCapturePriority(item)) || 0;
+  const itemScore = Number(item.score) || 0;
+  const importanceScore = Number(scores.importance_score) || 0;
+  return {
+    item,
+    key: poolKeyFor(item),
+    routes,
+    scores,
+    importanceType: scores.importance_type || "none",
+    isCore: routes.includes("core_pool"),
+    isRouted: routes.some((route) => ["core_pool", "emerging_pool", "user_feedback_pool", "watchlist"].includes(route)),
+    isLargeVendor: isLargeVendorPoolItem(item),
+    sortScore: importanceScore * 20 + capturePriority + itemScore,
+  };
+}
+
+function qualifiesForMonitorPool(item) {
+  if (isAIHotDailySelected(item)) return true;
+  const routes = poolCandidateMeta(item).routes;
   return routes.some((route) => ["core_pool", "emerging_pool", "user_feedback_pool", "watchlist"].includes(route));
+}
+
+function selectMonitorPoolItems(items) {
+  const metas = items.map(poolCandidateMeta);
+  const selected = [];
+  const selectedKeys = new Set();
+  const coreLaneCounts = new Map();
+  let coreLargeVendorCount = 0;
+  let coreNonLargeVendorCount = 0;
+
+  const poolTarget = Math.min(
+    items.length,
+    Math.max(poolMinTarget, routedPoolMinTarget + metas.filter((meta) => isAIHotDailySelected(meta.item)).length)
+  );
+  const sorted = [...metas].sort((a, b) => b.sortScore - a.sortScore || a.key.localeCompare(b.key));
+
+  function canAdd(meta, options = {}) {
+    if (selectedKeys.has(meta.key)) return false;
+    if (options.requireCore && !meta.isCore) return false;
+    if (options.requireRouted && !meta.isRouted) return false;
+    if (options.requireLargeVendor === true && !meta.isLargeVendor) return false;
+    if (options.requireLargeVendor === false && meta.isLargeVendor) return false;
+    if (options.enforceCoreLargeVendorCap && meta.isCore && meta.isLargeVendor && coreLargeVendorCount >= coreLargeVendorMaxTarget) return false;
+    if (options.enforceCoreLaneCap && meta.isCore) {
+      const laneCount = coreLaneCounts.get(meta.importanceType) || 0;
+      if (laneCount >= corePoolMaxPerImportanceType) return false;
+    }
+    return true;
+  }
+
+  function add(meta, options = {}) {
+    const demoteCore =
+      options.demoteCore === true ||
+      (meta.isCore && meta.isLargeVendor && coreLargeVendorCount >= coreLargeVendorMaxTarget);
+    if (demoteCore) meta.item.force_non_core_pool = true;
+    const countsAsCore = meta.isCore && !demoteCore;
+    selected.push(meta);
+    selectedKeys.add(meta.key);
+    if (countsAsCore) {
+      coreLaneCounts.set(meta.importanceType, (coreLaneCounts.get(meta.importanceType) || 0) + 1);
+      if (meta.isLargeVendor) coreLargeVendorCount += 1;
+      else coreNonLargeVendorCount += 1;
+    }
+  }
+
+  function pick(options, targetCount) {
+    for (const meta of sorted) {
+      if (selected.length >= poolTarget) break;
+      if (targetCount !== undefined && targetCount <= 0) break;
+      if (!canAdd(meta, options)) continue;
+      add(meta);
+      if (targetCount !== undefined) targetCount -= 1;
+    }
+  }
+
+  const coreSelectedCount = () => [...coreLaneCounts.values()].reduce((sum, count) => sum + count, 0);
+
+  for (const meta of metas.filter((entry) => isAIHotDailySelected(entry.item))) {
+    if (selectedKeys.has(meta.key)) continue;
+    const demoteCore = meta.isCore && meta.isLargeVendor && coreLargeVendorCount >= coreLargeVendorMaxTarget;
+    add(meta, { demoteCore });
+  }
+
+  pick({ requireCore: true, requireLargeVendor: false, enforceCoreLaneCap: true }, Math.max(0, coreNonLargeVendorMinTarget - coreNonLargeVendorCount));
+  if (coreNonLargeVendorCount < coreNonLargeVendorMinTarget) {
+    pick({ requireCore: true, requireLargeVendor: false }, Math.max(0, coreNonLargeVendorMinTarget - coreNonLargeVendorCount));
+  }
+  pick({ requireCore: true, requireLargeVendor: true, enforceCoreLargeVendorCap: true, enforceCoreLaneCap: true }, Math.max(0, coreLargeVendorMaxTarget - coreLargeVendorCount));
+  pick({ requireCore: true, enforceCoreLargeVendorCap: true, enforceCoreLaneCap: true }, Math.max(0, corePoolMinTarget - coreSelectedCount()));
+  pick({ requireCore: true, enforceCoreLargeVendorCap: true }, Math.max(0, corePoolMinTarget - coreSelectedCount()));
+  pick({ requireRouted: true }, Math.max(0, routedPoolMinTarget - selected.filter((meta) => meta.isRouted).length));
+  pick({}, Math.max(0, poolTarget - selected.length));
+
+  return selected.slice(0, poolTarget).map((meta) => meta.item);
 }
 
 function makeRawFiles(items, failures, runMeta = {}) {
   resetGeneratedDir(originalDir, path.join(rawDir, "originals"));
-  const dailyPoolItems = items.filter(isAIHotDailySelected);
-  const dailyPoolKeys = new Set(dailyPoolItems.map(poolKeyFor));
-  const otherPoolItems = items.filter((item) => !dailyPoolKeys.has(poolKeyFor(item)) && qualifiesForMonitorPool(item));
-  const routedPoolTarget = 15;
-  const poolTarget = Math.min(items.length, Math.max(40, dailyPoolItems.length + routedPoolTarget));
-  const poolItemsPre = [...dailyPoolItems, ...otherPoolItems].slice(0, poolTarget);
+  const poolItemsPre = selectMonitorPoolItems(items);
   const poolKeySet = new Set(poolItemsPre.map(poolKeyFor));
   const poolImportanceGaps = importanceCoverageGaps(poolItemsPre, "pool");
   const rawLines = [
@@ -3416,6 +3585,10 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `follow_operators_count: ${items.filter((item) => item.acquisition_channel === "paused-opinion-source").length}`,
     `keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `source_registry_config: ${rel(sourceRegistryPath)}`,
+    `pool_target: ${poolMinTarget}`,
+    `routed_pool_target: ${routedPoolMinTarget}`,
+    `core_pool_target: ${corePoolMinTarget}`,
+    `core_non_large_vendor_target: ${coreNonLargeVendorMinTarget}`,
     `generated_at: ${new Date().toISOString()}`,
     "---",
     "",
@@ -3656,6 +3829,10 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "status: guanlan-daily-monitor-pool",
     `pool_count: ${poolItems.length}`,
     `aihot_daily_pool_count: ${aihotDailyPoolCount}`,
+    `pool_target: ${poolMinTarget}`,
+    `routed_pool_target: ${routedPoolMinTarget}`,
+    `core_pool_target: ${corePoolMinTarget}`,
+    `core_non_large_vendor_target: ${coreNonLargeVendorMinTarget}`,
     `historical_dedupe_enabled: ${runMeta.historical_dedupe_enabled ? "true" : "false"}`,
     `historical_raw_records_checked: ${runMeta.historical_raw_records_checked ?? 0}`,
     `historical_duplicates_removed_before_fetch: ${runMeta.historical_duplicates_removed_before_fetch ?? 0}`,
@@ -3807,7 +3984,11 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `- pool_route_distribution: ${distributionText(byPoolRoute)}`,
     `- pool_index_route_distribution: ${distributionText(byPoolIndexRoute)}`,
     `- pool_index_count: ${poolItems.length}`,
+    `- pool_target: ${poolMinTarget}`,
     `- routed_pool_count: ${routedPoolCount}`,
+    `- routed_pool_target: ${routedPoolMinTarget}`,
+    `- core_pool_target: ${corePoolMinTarget}`,
+    `- core_non_large_vendor_target: ${coreNonLargeVendorMinTarget}`,
     `- non_core_pool_count: ${Math.max(0, routedPoolCount - (byPoolIndexRoute.core_pool || 0))}`,
     `- index_only_pool_count: ${byPoolIndexRoute.index_only || 0}`,
     `- aihot_index_only_count: ${aihotIndexOnlyCount}`,
@@ -3913,6 +4094,10 @@ async function main() {
         date,
         status: items.length >= 50 ? "collected" : "severe-fallback",
         raw_count: items.length,
+        pool_target: poolMinTarget,
+        routed_pool_target: routedPoolMinTarget,
+        core_pool_target: corePoolMinTarget,
+        core_non_large_vendor_target: coreNonLargeVendorMinTarget,
         aihot_mode: aihot.mode,
         aihot_since: aihot.since,
         aihot_discovered_count: aihot.discovered_count,

@@ -12,8 +12,8 @@ const args = new Map(
 
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const stage = args.get("stage") || "post-monitor";
-const rawMin = numberArg("raw-min", 80);
-const poolMin = numberArg("pool-min", 15);
+const rawMin = numberArg("raw-min", 150);
+const poolMin = numberArg("pool-min", 75);
 const allowMonitorQualityGaps = args.get("allow-monitor-quality-gaps") === "true";
 const blockStale = args.get("block-stale") === "true" || ["pre-trend", "pre-site", "pre-commit"].includes(stage);
 const reportsDir = path.join(root, "agent-workflow", "reports");
