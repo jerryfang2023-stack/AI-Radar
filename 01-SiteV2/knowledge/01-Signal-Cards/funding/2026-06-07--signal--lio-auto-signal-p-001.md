@@ -2,15 +2,15 @@
 id: SIG-20260607-A01
 type: signal_card
 signal_type: funding
-title: "Lio 推出面向采购流程的多 Agent 系统"
+title: "Lio – The world's first multi agent system for procurement"
 date: 2026-06-07
 status: published
 source_title: "Lio – The world's first multi agent system for procurement"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T10:12:20.635Z
-updated_at: 2026-06-07T10:12:20.635Z
+created_at: 2026-06-07T12:50:25.607Z
+updated_at: 2026-06-07T12:50:25.607Z
 
 raw_refs: ["R-001"]
 pool_refs: ["P-001"]
@@ -42,25 +42,24 @@ formal_tags:
 signal_owner: "Lio"
 
 frontend:
-  displayTitle: "Lio 推出面向采购流程的多 Agent 系统"
+  displayTitle: "Lio – The world's first multi agent system for procurement"
   sourceLinks:
     - "https://lio.ai/"
 ---
 
-# Lio 推出面向采购流程的多 Agent 系统
+# Lio – The world's first multi agent system for procurement
 
 ## 新闻事实
 
-Lio 官网将其产品定位为面向采购流程的多 Agent 系统，用于支持采购下单自动化。
+Lio – The world's first multi agent system for procurement
 
 ## 原文要点
 
-- Lio 官网将产品定位为 “the world's first multi agent system for procurement”。
-- 该产品聚焦采购流程中的下单自动化场景。
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
 
 ## 价值描述
 
-这条信号可用于观察采购流程自动化是否从单点工具走向多 Agent 协同系统。
+Lio 的融资信号可用于观察资本是否继续流向 采购下单自动化。
 
 ## 可见原文片段
 

@@ -9,8 +9,8 @@ source_title: "特朗普政府可能入股OpenAI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T10:12:20.635Z
-updated_at: 2026-06-07T10:12:20.635Z
+created_at: 2026-06-07T12:50:25.607Z
+updated_at: 2026-06-07T12:50:25.607Z
 
 raw_refs: ["R-031"]
 pool_refs: ["P-030"]
@@ -39,7 +39,7 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
-signal_owner: "President Donald Trump"
+signal_owner: "OpenAI"
 
 frontend:
   displayTitle: "特朗普政府可能入股OpenAI"
@@ -59,7 +59,7 @@ frontend:
 
 ## 价值描述
 
-President Donald Trump 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。
+OpenAI 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。
 
 ## 可见原文片段
 

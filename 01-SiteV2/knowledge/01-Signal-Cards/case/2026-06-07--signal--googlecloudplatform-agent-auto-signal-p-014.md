@@ -2,15 +2,15 @@
 id: SIG-20260607-A09
 type: signal_card
 signal_type: case
-title: "Google Cloud 发布 Agent Starter Pack 开源模板"
+title: "GoogleCloudPlatform/agent-starter-pack - GitHub"
 date: 2026-06-07
 status: published
 source_title: "GoogleCloudPlatform/agent-starter-pack - GitHub"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T10:12:20.635Z
-updated_at: 2026-06-07T10:12:20.635Z
+created_at: 2026-06-07T12:50:25.607Z
+updated_at: 2026-06-07T12:50:25.607Z
 
 raw_refs: ["R-014"]
 pool_refs: ["P-014"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "GoogleCloudPlatform/agent"
 
 frontend:
-  displayTitle: "Google Cloud 发布 Agent Starter Pack 开源模板"
+  displayTitle: "GoogleCloudPlatform/agent-starter-pack - GitHub"
   sourceLinks:
     - "https://github.com/googlecloudplatform/agent-starter-pack"
 ---
 
-# Google Cloud 发布 Agent Starter Pack 开源模板
+# GoogleCloudPlatform/agent-starter-pack - GitHub
 
 ## 新闻事实
 

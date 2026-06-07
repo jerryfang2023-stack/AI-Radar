@@ -2,15 +2,15 @@
 id: SIG-20260607-A05
 type: signal_card
 signal_type: product_service
-title: "Google DeepMind 发布支持量化感知训练的 Gemma 4"
+title: "Gemma 4 with quantization-aware training"
 date: 2026-06-07
 status: published
 source_title: "Gemma 4 with quantization-aware training"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T10:12:20.635Z
-updated_at: 2026-06-07T10:12:20.635Z
+created_at: 2026-06-07T12:50:25.607Z
+updated_at: 2026-06-07T12:50:25.607Z
 
 raw_refs: ["R-022"]
 pool_refs: ["P-022"]
@@ -39,15 +39,15 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
-signal_owner: "Gemma 4 with quantization"
+signal_owner: "Google DeepMind"
 
 frontend:
-  displayTitle: "Google DeepMind 发布支持量化感知训练的 Gemma 4"
+  displayTitle: "Gemma 4 with quantization-aware training"
   sourceLinks:
     - "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/"
 ---
 
-# Google DeepMind 发布支持量化感知训练的 Gemma 4
+# Gemma 4 with quantization-aware training
 
 ## 新闻事实
 
@@ -59,7 +59,7 @@ Gemma 4 with quantization-aware training
 
 ## 价值描述
 
-Gemma 4 with quantization 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。
+Google DeepMind 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。
 
 ## 可见原文片段
 

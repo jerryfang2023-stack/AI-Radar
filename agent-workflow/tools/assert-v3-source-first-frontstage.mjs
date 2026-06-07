@@ -106,6 +106,7 @@ const issues = walk(payload);
 const cards = Array.isArray(payload.cards) ? payload.cards : [];
 const frontstageCards = Array.isArray(payload.frontstageCards) ? payload.frontstageCards : cards;
 const cardIds = new Set(cards.map((card) => card.id).filter(Boolean));
+const activeDate = payload.meta?.activeDate || "";
 
 const largeVendorPatterns = [
   ["anthropic", /\bAnthropic\b|\bClaude\b/iu],
@@ -120,6 +121,20 @@ const largeVendorPatterns = [
   ["ibm", /\bIBM\b/iu],
   ["salesforce", /\bSalesforce\b/iu],
 ];
+
+function subjectLooksLikeTitle(value = "") {
+  const text = String(value || "").trim();
+  return text.length > 12 && /(发布|推出|完成|融资|获得|部署|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|指南|清单|将|支付|获取|聚焦|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents)/iu.test(text);
+}
+
+function subjectMatchesTitle(card = {}) {
+  const subject = normalizedComparableText(card.subject);
+  if (!subject) return false;
+  return [card.title, card.originalTitle]
+    .map(normalizedComparableText)
+    .filter(Boolean)
+    .some((title) => title === subject || (subject.length > 14 && title.includes(subject)));
+}
 
 function largeVendorKeyForCard(card = {}) {
   const text = [
@@ -183,6 +198,9 @@ for (const card of cards) {
   if (!card.translatedFact && !(card.originalHighlights || []).length && !card.visibleFragment) {
     issues.push(`card ${card.id || "(missing id)"} has no source-facing fact/highlight/fragment`);
   }
+  if (card.date === activeDate && (subjectLooksLikeTitle(card.subject) || subjectMatchesTitle(card))) {
+    issues.push(`card ${card.id || "(missing id)"} has title-like subject: ${card.subject}`);
+  }
   const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact].join("\n");
   for (const highlight of card.originalHighlights || []) {
     if (
@@ -207,6 +225,12 @@ for (const card of cards) {
     if (valueSimilarity >= 0.78) {
       issues.push(`card ${card.id || "(missing id)"} repeats news fact in value description (${valueSimilarity.toFixed(2)})`);
     }
+  }
+}
+
+for (const candidate of payload.corePoolCandidates || []) {
+  if (candidate.date === activeDate && (subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
+    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has title-like subject: ${candidate.subject}`);
   }
 }
 

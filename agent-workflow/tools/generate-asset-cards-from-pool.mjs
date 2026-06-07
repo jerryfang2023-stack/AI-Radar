@@ -957,6 +957,44 @@ function shortCompany(value) {
     .slice(0, 56);
 }
 
+function companyFromUrl(sourceUrl = "", title = "") {
+  try {
+    const parsed = new URL(sourceUrl);
+    const host = parsed.hostname.toLowerCase().replace(/^www\./u, "");
+    const pathname = parsed.pathname.toLowerCase();
+    const haystack = `${host} ${pathname} ${title}`.toLowerCase();
+    const rules = [
+      [/zoneandco\.com/u, "Zone & Co"],
+      [/lio\.ai/u, "Lio"],
+      [/druidai\.com/u, "Druid AI"],
+      [/snowflake\.com/u, "Snowflake"],
+      [/itwire\.com.*asus/u, "ASUS"],
+      [/github\.blog.*agent-hq|github\.blog.*welcome-home-agents/u, "GitHub"],
+      [/metronome\.com.*hugging-face/u, "Hugging Face"],
+      [/ycombinator\.com\/companies\/pipeshift/u, "Pipeshift"],
+      [/blog\.google.*gemma|googleblog\.com.*gemma/u, "Google DeepMind"],
+      [/github\.com\/googlecloudplatform\/agent-starter-pack/u, "Google Cloud"],
+      [/agno\.com.*github-release-notes-agent/u, "Agno"],
+      [/techcrunch\.com.*openai.*lockdown/u, "OpenAI"],
+      [/techcrunch\.com.*equity-stake.*openai|techcrunch\.com.*government-stake.*openai/u, "OpenAI"],
+      [/the-decoder\.com.*sakana-ai/u, "Sakana AI"],
+      [/banyan-vc\.com/u, "Banyan VC"],
+      [/ithome\.com.*960\/880/u, "Apple"],
+      [/ithome\.com.*961\/045/u, "UK police"],
+      [/ithome\.com.*960\/909/u, "CCTV"],
+      [/cnbc\.com.*google-to-pay-spacex/u, "Google / SpaceX"],
+      [/techcrunch\.com.*google-will-pay-spacex/u, "Google / SpaceX"],
+      [/growthlist\.co.*yc-startups/u, "Y Combinator"],
+      [/saasmag\.com.*monetizing-ai-agents/u, "SaaS companies"],
+    ];
+    const match = rules.find(([pattern]) => pattern.test(haystack));
+    if (match) return match[1];
+  } catch {
+    return "";
+  }
+  return "";
+}
+
 function domainLabelFromUrl(value = "") {
   try {
     const host = new URL(value).hostname.toLowerCase().replace(/^www\./u, "");
@@ -981,19 +1019,21 @@ function domainLabelFromUrl(value = "") {
 
 function isWeakCompanyName(value = "") {
   const text = String(value || "").trim();
-  if (/buying criteria|adoption|startup ideas|massive ai deals|funding record|pre-seed slowdown|fund focused on ai/iu.test(text)) return true;
+  if (/buying criteria|adoption|startup ideas|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|introducing|top ai|complete guide|release notes agent|with quantization|brings enterprise|monetizing ai agents/iu.test(text)) return true;
   if (!text) return true;
   const hanChars = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   return text.length > 42
     || hanChars > 18
     || /[？?。；;！!]/u.test(text)
-    || /(报告|研究|论文|引用|大型语言模型|替代的搜索引擎|right answers|state of)/iu.test(text);
+    || /(发布|推出|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|将|支付|获取|聚焦|是 AIScraping|报告|榜单|指南|清单|研究|论文|引用|大型语言模型|替代的搜索引擎|right answers|state of)/iu.test(text);
 }
 
 function companyFromSection(section) {
   const title = poolTitle(section);
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
+  const urlCompany = companyFromUrl(sourceUrl, title);
+  if (urlCompany) return urlCompany;
   const specialCases = [
     [/c-h-robinson|c\.h\.\s*robinson/iu, "C.H. Robinson"],
     [/bentocloud/iu, "BentoCloud"],

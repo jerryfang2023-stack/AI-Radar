@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "V3.3.1-unified-intelligence-frontstage",
-    "generatedAt": "2026-06-07T11:05:01.594Z",
+    "generatedAt": "2026-06-07T12:52:11.131Z",
     "activeDate": "2026-06-07",
     "source": "Signal Cards",
     "tagPolicy": "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
@@ -116,204 +116,19 @@
           "count": 2
         },
         {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
+          "tag": "scenario-agent-governance",
+          "label": "Agent 权限治理",
           "count": 1
         },
         {
-          "tag": "function-engineering",
-          "label": "工程研发",
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
           "count": 1
         }
       ]
     }
   ],
   "cards": [
-    {
-      "id": "SIG-20260607-A03",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案",
-      "originalTitle": "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026",
-      "date": "2026-06-07",
-      "subject": "ASUS Brings Enterprise",
-      "source": "itwire.com",
-      "sourceName": "itwire.com",
-      "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "publishedAt": "2026-06-02T06:15:00.000Z",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
-      "translatedFact": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。",
-      "originalHighlights": [],
-      "visibleFragment": "",
-      "sourceLinks": [
-        "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026"
-      ],
-      "status": "published",
-      "assetLevel": "frontstage",
-      "evidenceGate": "core_evidence_passed",
-      "stage": "",
-      "evidence": "evidence-customer-adoption",
-      "track": "track-ai-agent",
-      "largeVendorKey": "",
-      "largeVendor": false,
-      "frontstageRankScore": 678,
-      "frontstageEditorialScore": 678,
-      "frontstageEvidenceScore": 44,
-      "frontstageSelectionReasons": [
-        "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "frontstageValueDescription": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "frontstageQualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "frontstageGenericCandidate": false,
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260607-A02",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-      "originalTitle": "How Druid AI helped a global appliance retailer automate contact center support and unlock growth",
-      "date": "2026-06-07",
-      "subject": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-      "source": "druidai.com",
-      "sourceName": "druidai.com",
-      "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "publishedAt": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
-      "translatedFact": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
-      "originalHighlights": [
-        "案例客户覆盖 25 个以上欧洲市场、约 25 种语言，客服自动化需求来自跨市场和多品牌服务复杂度。"
-      ],
-      "visibleFragment": "",
-      "sourceLinks": [
-        "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true"
-      ],
-      "status": "published",
-      "assetLevel": "frontstage",
-      "evidenceGate": "core_evidence_passed",
-      "stage": "",
-      "evidence": "evidence-customer-adoption",
-      "track": "track-ai-agent",
-      "largeVendorKey": "",
-      "largeVendor": false,
-      "frontstageRankScore": 662,
-      "frontstageEditorialScore": 662,
-      "frontstageEvidenceScore": 62,
-      "frontstageSelectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "frontstageValueDescription": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "frontstageQualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "frontstageGenericCandidate": false,
-      "fromCorePool": true
-    },
     {
       "id": "SIG-20260607-A04",
       "type": "signal_card",
@@ -322,7 +137,7 @@
       "title": "Agno 发布 GitHub Release Notes Agent",
       "originalTitle": "GitHub release notes agent - Agno",
       "date": "2026-06-07",
-      "subject": "GitHub",
+      "subject": "Agno",
       "source": "agno.com",
       "sourceName": "agno.com",
       "sourceUrl": "https://www.agno.com/ai-agents/github-release-notes-agent",
@@ -425,6 +240,191 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260607-A03",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案",
+      "originalTitle": "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026",
+      "date": "2026-06-07",
+      "subject": "ASUS",
+      "source": "itwire.com",
+      "sourceName": "itwire.com",
+      "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "2026-06-02T06:15:00.000Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
+      "translatedFact": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。",
+      "originalHighlights": [],
+      "visibleFragment": "",
+      "sourceLinks": [
+        "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "evidenceGate": "core_evidence_passed",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "track": "track-ai-agent",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 678,
+      "frontstageEditorialScore": 678,
+      "frontstageEvidenceScore": 44,
+      "frontstageSelectionReasons": [
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "frontstageValueDescription": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "frontstageQualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260607-A02",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+      "originalTitle": "How Druid AI helped a global appliance retailer automate contact center support and unlock growth",
+      "date": "2026-06-07",
+      "subject": "Druid AI",
+      "source": "druidai.com",
+      "sourceName": "druidai.com",
+      "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
+      "translatedFact": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
+      "originalHighlights": [
+        "案例客户覆盖 25 个以上欧洲市场、约 25 种语言，客服自动化需求来自跨市场和多品牌服务复杂度。"
+      ],
+      "visibleFragment": "",
+      "sourceLinks": [
+        "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "evidenceGate": "core_evidence_passed",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "track": "track-ai-agent",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 662,
+      "frontstageEditorialScore": 662,
+      "frontstageEvidenceScore": 62,
+      "frontstageSelectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260607-A09",
       "type": "signal_card",
       "category": "case",
@@ -432,7 +432,7 @@
       "title": "Google Cloud 发布 Agent Starter Pack 开源模板",
       "originalTitle": "GoogleCloudPlatform/agent-starter-pack - GitHub",
       "date": "2026-06-07",
-      "subject": "GoogleCloudPlatform/agent-starter-pack",
+      "subject": "Google Cloud",
       "source": "github.com",
       "sourceName": "github.com",
       "sourceUrl": "https://github.com/googlecloudplatform/agent-starter-pack",
@@ -530,123 +530,6 @@
       "frontstageValueDescription": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "frontstageQualityWarnings": [
         "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
-      ],
-      "frontstageGenericCandidate": false,
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260607-A12",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成",
-      "originalTitle": "",
-      "date": "2026-06-07",
-      "subject": "英国警方被叫停使",
-      "source": "IT之家（RSS）",
-      "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/961/045.htm",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "publishedAt": "2026-06-07T03:31:45.000Z",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-governance"
-        ],
-        "function": [],
-        "scenario": [
-          "scenario-agent-governance"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-metric",
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-governance",
-        "scenario-agent-governance",
-        "customer-enterprise",
-        "evidence-customer-metric",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-governance",
-          "label": "AI 治理"
-        },
-        {
-          "id": "scenario-agent-governance",
-          "label": "Agent 权限治理"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-metric",
-          "label": "客户指标"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
-      "translatedFact": "英国多个警察部门被叫停使用商用AI系统撰写法庭陈述及开展刑事司法工作，因未完成全面合规评估。Police.AI负责人亚历克斯·默里要求立即暂停，强调刑事司法技术须达到排除合理怀疑的准确性。Police.AI今年获内政部三年1.15亿英镑资金。部分警队利用AI将审讯笔录整理为法庭陈述；此前西米德兰兹郡警方因使用Copilot生成虚构内容引发AI幻觉担忧。默里认为AI经充分测试可提升效率，但需先建立安全保障。",
-      "originalHighlights": [
-        "IT之家 6 月 7 日消息，据英国《金融时报》报道，由于担忧人工智能生成的不准确内容会扰乱司法流程，英国多个警察部门已接到通知，停止使用人工智能系统撰写法庭陈述及开展其他刑事司法相关工作。",
-        "英国警方人工智能中心（ Police.",
-        "AI ）负责人亚历克斯・默里表示，他已介入干预部分警队。",
-        "这些警队在未完成全面合规评估的情况下，就开始使用市面上的商用人工智能工具。",
-        "”默里称，他告知相关警队：“立刻暂停使用，我们需要放缓推进节奏。"
-      ],
-      "visibleFragment": "",
-      "sourceLinks": [
-        "https://www.ithome.com/0/961/045.htm"
-      ],
-      "status": "published",
-      "assetLevel": "frontstage",
-      "evidenceGate": "core_evidence_passed",
-      "stage": "",
-      "evidence": "evidence-customer-metric",
-      "track": "track-ai-agent",
-      "largeVendorKey": "",
-      "largeVendor": false,
-      "frontstageRankScore": 688,
-      "frontstageEditorialScore": 688,
-      "frontstageEvidenceScore": 66,
-      "frontstageSelectionReasons": [
-        "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "frontstageValueDescription": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "frontstageQualityWarnings": [
-        "可见原文片段不足，已降权处理"
       ],
       "frontstageGenericCandidate": false,
       "fromCorePool": true
@@ -758,7 +641,7 @@
       "title": "SaaS 公司开始探索 AI Agent 的商业化路径",
       "originalTitle": "How SaaS Companies Are Monetizing AI Agents in 2026",
       "date": "2026-06-07",
-      "subject": "SaaS 公司开始探索 AI Agent 的商业化路径",
+      "subject": "SaaS companies",
       "source": "saasmag.com",
       "sourceName": "saasmag.com",
       "sourceUrl": "https://www.saasmag.com/how-saas-companies-monetizing-ai-agents/",
@@ -850,7 +733,7 @@
       "title": "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入",
       "originalTitle": "Snowflake Expands AWS Collaboration with $6B AI Commitment",
       "date": "2026-06-07",
-      "subject": "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入",
+      "subject": "Snowflake",
       "source": "snowflake.com",
       "sourceName": "snowflake.com",
       "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/",
@@ -948,14 +831,131 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260607-A12",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成",
+      "originalTitle": "",
+      "date": "2026-06-07",
+      "subject": "UK police",
+      "source": "IT之家（RSS）",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/961/045.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "2026-06-07T03:31:45.000Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-governance"
+        ],
+        "function": [],
+        "scenario": [
+          "scenario-agent-governance"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-metric",
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-governance",
+        "scenario-agent-governance",
+        "customer-enterprise",
+        "evidence-customer-metric",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
+        },
+        {
+          "id": "scenario-agent-governance",
+          "label": "Agent 权限治理"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户指标"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
+      "translatedFact": "英国多个警察部门被叫停使用商用AI系统撰写法庭陈述及开展刑事司法工作，因未完成全面合规评估。Police.AI负责人亚历克斯·默里要求立即暂停，强调刑事司法技术须达到排除合理怀疑的准确性。Police.AI今年获内政部三年1.15亿英镑资金。部分警队利用AI将审讯笔录整理为法庭陈述；此前西米德兰兹郡警方因使用Copilot生成虚构内容引发AI幻觉担忧。默里认为AI经充分测试可提升效率，但需先建立安全保障。",
+      "originalHighlights": [
+        "IT之家 6 月 7 日消息，据英国《金融时报》报道，由于担忧人工智能生成的不准确内容会扰乱司法流程，英国多个警察部门已接到通知，停止使用人工智能系统撰写法庭陈述及开展其他刑事司法相关工作。",
+        "英国警方人工智能中心（ Police.",
+        "AI ）负责人亚历克斯・默里表示，他已介入干预部分警队。",
+        "这些警队在未完成全面合规评估的情况下，就开始使用市面上的商用人工智能工具。",
+        "”默里称，他告知相关警队：“立刻暂停使用，我们需要放缓推进节奏。"
+      ],
+      "visibleFragment": "",
+      "sourceLinks": [
+        "https://www.ithome.com/0/961/045.htm"
+      ],
+      "status": "published",
+      "assetLevel": "frontstage",
+      "evidenceGate": "core_evidence_passed",
+      "stage": "",
+      "evidence": "evidence-customer-metric",
+      "track": "track-ai-agent",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 688,
+      "frontstageEditorialScore": 688,
+      "frontstageEvidenceScore": 66,
+      "frontstageSelectionReasons": [
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260607-A01",
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Lio 推出面向采购流程的多 Agent 系统",
-      "originalTitle": "Lio – The world's first multi agent system for procurement",
+      "title": "Lio – The world's first multi agent system for procurement",
+      "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "Lio 推出面向采购流程的多 Agent 系统",
+      "subject": "Lio",
       "source": "lio.ai",
       "sourceName": "lio.ai",
       "sourceUrl": "https://lio.ai/",
@@ -1067,7 +1067,7 @@
       "title": "Google DeepMind 发布支持量化感知训练的 Gemma 4",
       "originalTitle": "Gemma 4 with quantization-aware training",
       "date": "2026-06-07",
-      "subject": "Gemma 4 with quantization-aware training",
+      "subject": "Google DeepMind",
       "source": "blog.google",
       "sourceName": "blog.google",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
@@ -1258,7 +1258,7 @@
       "title": "特朗普政府可能入股OpenAI",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "特朗普政府可能入股OpenAI",
+      "subject": "OpenAI",
       "source": "TechCrunch：AI（RSS）",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai",
@@ -1337,7 +1337,7 @@
       "title": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+      "subject": "Sakana AI",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs",
@@ -1350,16 +1350,11 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-coding",
           "track-ai-infra"
         ],
-        "function": [
-          "function-engineering"
-        ],
+        "function": [],
         "scenario": [],
-        "customer": [
-          "customer-developer-team"
-        ],
+        "customer": [],
         "evidence": [
           "evidence-customer-metric",
           "evidence-product-launch"
@@ -1372,10 +1367,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-coding",
         "track-ai-infra",
-        "function-engineering",
-        "customer-developer-team",
         "evidence-customer-metric",
         "evidence-product-launch",
         "source-business-media"
@@ -1386,20 +1378,8 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
         },
         {
           "id": "evidence-customer-metric",
@@ -1748,7 +1728,7 @@
       "title": "Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "Moonshot AI",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/06/moonshot-ai-releases-kimi-code-cli-a-terminal-ai-coding-agent-built-in-typescript-for-next-gen-agents",
@@ -1858,7 +1838,7 @@
       "title": "Leading Inference Providers Achieve Lowest Token Cost With Open Source Models on NVIDIA Blackwell | NVIDIA Blog",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "NVIDIA",
+      "subject": "Nvidia",
       "source": "blogs.nvidia.com",
       "sourceName": "blogs.nvidia.com",
       "sourceUrl": "https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/",
@@ -2051,7 +2031,7 @@
       "title": "Travelers deploys AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "keepingupwith.ai",
+      "subject": "Travelers",
       "source": "keepingupwith.ai",
       "sourceName": "keepingupwith.ai",
       "sourceUrl": "https://keepingupwith.ai/articles/travelers-deploys-ai-powered-voice-claims-assistant-nationwide-with-openai-realt/",
@@ -2479,7 +2459,7 @@
       "title": "NVIDIA 发布 Nemotron 3.5 ASR：600M 参数缓存感知流式模型，实时转录 40 种语言-地区",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "NVIDIA",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/06/nvidia-releases-nemotron-3-5-asr-a-600m-parameter-cache-aware-streaming-model-transcribing-40-language-locales-in-real-time",
@@ -2641,7 +2621,7 @@
       "title": "Qwen3.7-Plus：阿里巴巴将多模态AI打造成完全自主智能体",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "Qwen3.7-Plus",
+      "subject": "Plus",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/qwen3-7-plus-is-alibabas-bid-to-turn-multimodal-ai-into-a-full-blown-autonomous-agent",
@@ -2764,7 +2744,7 @@
       "title": "Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "Audio Interaction",
+      "subject": "The-Decoder",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/new-open-source-voice-model-listens-nonstop-and-decides-every-0-4-seconds-whether-to-speak-or-stay-silent",
@@ -2900,7 +2880,7 @@
       "title": "Meta的Hatch AI智能体每月最高200美元，成为其首个付费AI产品",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "Meta",
+      "subject": "The-Decoder",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/metas-hatch-ai-agent-could-cost-up-to-200-a-month-and-marks-its-first-paid-ai-product",
@@ -3165,7 +3145,7 @@
       "title": "Amazon 把 AI 用进销售和收入团队流程",
       "originalTitle": "Automate Procurement Workflows with AI Agents using Amazon Bedrock AgentCore | AWS for Industries",
       "date": "2026-06-05",
-      "subject": "AWS for Industries",
+      "subject": "Amazon",
       "source": "aws.amazon.com",
       "sourceName": "aws.amazon.com",
       "sourceUrl": "https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/",
@@ -3681,7 +3661,7 @@
       "title": "AI 发布 AI 能力，指向销售和收入团队流程",
       "originalTitle": "The AI-powered developer platform for the agent-ready enterprise",
       "date": "2026-06-05",
-      "subject": "AI 发布 AI 能力，指向销售和收入团队流程",
+      "subject": "AI",
       "source": "github.com",
       "sourceName": "github.com",
       "sourceUrl": "https://github.com/enterprise",
@@ -3809,7 +3789,7 @@
       "title": "2026 年高级语音 AI 平台市场观察",
       "originalTitle": "Advanced Voice AI Platforms 2026 Market Insights™ - Avasant",
       "date": "2026-06-05",
-      "subject": "2026 年高级语音 AI 平台市场观察",
+      "subject": "Avasant",
       "source": "avasant.com",
       "sourceName": "avasant.com",
       "sourceUrl": "https://avasant.com/report/advanced-voice-ai-platforms-2026-market-insights/",
@@ -4457,7 +4437,7 @@
       "title": "Kpmg 发布 AI 能力，指向销售和收入团队流程",
       "originalTitle": "Transforming procurement through intelligent technology",
       "date": "2026-06-05",
-      "subject": "Kpmg 发布 AI 能力，指向销售和收入团队流程",
+      "subject": "Kpmg",
       "source": "kpmg.com",
       "sourceName": "kpmg.com",
       "sourceUrl": "https://kpmg.com/us/en/how-we-work/client-stories/transforming-procurement-intelligent-technology.html",
@@ -4594,7 +4574,7 @@
       "title": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
       "originalTitle": "",
       "date": "2026-06-05",
-      "subject": "NVIDIA",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/04/nvidia-ai-releases-nemotron-3-ultra-an-open-550b-mixture-of-experts-hybrid-mamba-transformer-for-long-running-agents",
@@ -4706,7 +4686,7 @@
       "title": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑",
       "originalTitle": "",
       "date": "2026-06-05",
-      "subject": "Anthropic",
+      "subject": "Techcrunch",
       "source": "TechCrunch：AI（RSS）",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns",
@@ -5437,7 +5417,7 @@
       "title": "AI 与 GenAI 合同谈判顾问：企业采购进入 AI 议价流程",
       "originalTitle": "AI & GenAI Contract Negotiation Advisory | IT Negotiations",
       "date": "2026-06-04",
-      "subject": "IT Negotiations",
+      "subject": "AI & GenAI Contract Negotiation Advisory",
       "source": "itnegotiationservices.com",
       "sourceName": "itnegotiationservices.com",
       "sourceUrl": "https://itnegotiationservices.com/services/genai",
@@ -5566,7 +5546,7 @@
       "title": "2026 企业 AI 采购指南：合同、定价与采购边界",
       "originalTitle": "AI Procurement Guide 2026: Enterprise Contracts & Pricing",
       "date": "2026-06-04",
-      "subject": "2026 企业 AI 采购指南",
+      "subject": "AI Procurement Guide 2026",
       "source": "atonementlicensing.com",
       "sourceName": "atonementlicensing.com",
       "sourceUrl": "https://atonementlicensing.com/blog/ai-procurement-guide/",
@@ -6591,7 +6571,7 @@
       "title": "微软发布新MAI模型",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "微软发布新MAI模型",
+      "subject": "Microsoft",
       "source": "Simon Willison 博客",
       "sourceName": "Simon Willison 博客",
       "sourceUrl": "https://simonwillison.net/2026/Jun/2/microsofts-new-models",
@@ -6676,10 +6656,10 @@
       "stage": "",
       "evidence": "evidence-customer-adoption",
       "track": "track-ai-agent",
-      "largeVendorKey": "",
-      "largeVendor": false,
-      "frontstageRankScore": 680,
-      "frontstageEditorialScore": 680,
+      "largeVendorKey": "microsoft",
+      "largeVendor": true,
+      "frontstageRankScore": 650,
+      "frontstageEditorialScore": 650,
       "frontstageEvidenceScore": 44,
       "frontstageSelectionReasons": [
         "涉及资金流向、预算规模或融资信号",
@@ -6701,7 +6681,7 @@
       "title": "NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "NVIDIA",
+      "subject": "Microsoft",
       "source": "NVIDIA AI Blog",
       "sourceName": "NVIDIA AI Blog",
       "sourceUrl": "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices",
@@ -6813,7 +6793,7 @@
       "title": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "NVIDIA",
+      "subject": "Nvidia",
       "source": "NVIDIA Blog：Agentic AI（网页）",
       "sourceName": "NVIDIA Blog：Agentic AI（网页）",
       "sourceUrl": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw",
@@ -6949,7 +6929,7 @@
       "title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "Archestra.AI",
+      "subject": "未标注主体",
       "source": "archestra.ai",
       "sourceName": "archestra.ai",
       "sourceUrl": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -7453,7 +7433,7 @@
       "title": "微软推出 MAI-Thinking-1 模型",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "微软推出 MAI-Thinking-1 模型",
+      "subject": "微软推出 MAI",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceUrl": "https://microsoft.ai/news/introducing-mai-thinking-1",
@@ -7687,7 +7667,7 @@
       "title": "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作",
       "originalTitle": "Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships",
       "date": "2026-06-02",
-      "subject": "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作",
+      "subject": "Parloa",
       "source": "thenextweb.com",
       "sourceName": "thenextweb.com",
       "sourceUrl": "https://thenextweb.com/news/parloa-turns-its-350-million-war-chest-into-a-partnership-web-spanning-sap-microsoft-and-openai",
@@ -7815,7 +7795,7 @@
       "title": "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署",
       "originalTitle": "Wonderful raised $100M Series A to put AI agents on the front lines of customer service",
       "date": "2026-06-02",
-      "subject": "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署",
+      "subject": "Wonderful",
       "source": "techcrunch.com",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2025/11/11/wonderful-raised-100m-series-a-to-put-ai-agents-on-the-front-lines-of-customer-service/",
@@ -8184,7 +8164,7 @@
       "title": "Lace AI 获 1400 万美元融资，用 AI 提升家装服务呼叫转化",
       "originalTitle": "Ex-Meta engineer raises $14M for Lace AI, a revenue ... - TechCrunch",
       "date": "2026-06-02",
-      "subject": "Ex-Meta engineer",
+      "subject": "AI",
       "source": "techcrunch.com",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2025/04/22/ex-meta-engineer-raises-14m-for-lace-an-ai-powered-revenue-generation-software-startup/",
@@ -8559,7 +8539,7 @@
       "title": "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群",
       "originalTitle": "在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体",
       "date": "2026-06-02",
-      "subject": "在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体",
+      "subject": "Nvidia",
       "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "sourceName": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "sourceUrl": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark",
@@ -8675,7 +8655,7 @@
       "title": "AWS 将推出 Agent Marketplace，Anthropic 成为合作方",
       "originalTitle": "AWS is launching an AI agent marketplace next week with Anthropic as a partner | TechCrunch",
       "date": "2026-06-02",
-      "subject": "TechCrunch",
+      "subject": "Techcrunch",
       "source": "techcrunch.com",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2025/07/10/aws-is-launching-an-ai-agent-marketplace-next-week-with-anthropic-as-a-partner/",
@@ -8934,7 +8914,7 @@
       "title": "NVIDIA 披露台积电、富士康等采用 AI 改造制造运营",
       "originalTitle": "台湾产业巨头借助NVIDIA加速世界AI基础设施建设",
       "date": "2026-06-01",
-      "subject": "台湾产业巨头借助NVIDIA加速世界AI基础设施建设",
+      "subject": "NVIDIA",
       "source": "NVIDIA Blog：Agentic AI（网页）",
       "sourceName": "NVIDIA Blog：Agentic AI（网页）",
       "sourceUrl": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure",
@@ -9055,7 +9035,7 @@
       "title": "NVIDIA 发布 Cosmos 3，争夺物理 AI 开发链",
       "originalTitle": "使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型",
       "date": "2026-06-01",
-      "subject": "使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型",
+      "subject": "NVIDIA",
       "source": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "sourceName": "NVIDIA Technical Blog（开发者技术博客 · RSS）",
       "sourceUrl": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3",
@@ -9179,7 +9159,7 @@
       "title": "Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程",
       "originalTitle": "Replit Expands Enterprise Leadership with Visa Investment and Partnership, Payments Expansion, and Solution Partner Program",
       "date": "2026-06-01",
-      "subject": "Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程",
+      "subject": "Replit / Visa",
       "source": "prnewswire.com",
       "sourceName": "prnewswire.com",
       "sourceUrl": "https://www.prnewswire.com/news-releases/replit-expands-enterprise-leadership-with-visa-investment-and-partnership-payments-expansion-and-solution-partner-program-302784366.html",
@@ -9308,7 +9288,7 @@
       "title": "英伟达推出 RTX Spark，试图把 AI 开发拉回本地 PC",
       "originalTitle": "英伟达发布 RTX Spark，称其为\"史上最高效的 PC 芯片\"",
       "date": "2026-06-01",
-      "subject": "英伟达发布 RTX Spark，称其为\"史上最高效的 PC 芯片\"",
+      "subject": "NVIDIA",
       "source": "The Verge：订阅版科技（RSS）",
       "sourceName": "The Verge：订阅版科技（RSS）",
       "sourceUrl": "https://www.theverge.com/tech/940589/nvidia-rtx-spark-n1-n1x-laptop-desktop-pc-cpu-gpu-ai-release-date",
@@ -9412,7 +9392,7 @@
       "title": "约束衰减：大型语言模型代理在后端代码生成中的脆弱性",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "约束衰减",
+      "subject": "arXiv",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceUrl": "https://arxiv.org/abs/2605.06445",
@@ -9548,7 +9528,7 @@
       "title": "OpenAI's 3-Year Compute Commit: Discount or Trap? | THE D[AI]LY BRIEF",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "OpenAI",
+      "subject": "Capacity",
       "source": "beri.net",
       "sourceName": "beri.net",
       "sourceUrl": "https://www.beri.net/article/openai-guaranteed-capacity-3-year-compute-commit-calculator-2026",
@@ -10052,7 +10032,7 @@
       "title": "克劳德不是你的架构师。别再让他假装是了",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "克劳德不是你的架构师。别再让他假装是了",
+      "subject": "Hollandtech",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceUrl": "https://www.hollandtech.net/claude-is-not-your-architect",
@@ -10188,7 +10168,7 @@
       "title": "Multi-Agent AI Sales Crew Case Study: 4.2× SQL Conversion Lift, $14.2M Pipeline on CrewAI + Claude 3.5 + Salesforce | DreamzTech",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "Multi-Agent AI Sales Crew Case Study",
+      "subject": "Multi",
       "source": "dreamztech.com",
       "sourceName": "dreamztech.com",
       "sourceUrl": "https://www.dreamztech.com/multi-agent-ai-sales-automation-case-study/",
@@ -10453,7 +10433,7 @@
       "title": "引用阿尔明·罗纳彻的话",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "引用阿尔明·罗纳彻的话",
+      "subject": "Simonwillison",
       "source": "Simon Willison 博客",
       "sourceName": "Simon Willison 博客",
       "sourceUrl": "https://simonwillison.net/2026/May/24/armin-ronacher",
@@ -10563,7 +10543,7 @@
       "title": "First Concepts raises $1M pre-seed to develop AI workspace for creative teams - FoundersToday",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "First Concepts",
+      "subject": "Concepts",
       "source": "founderstoday.news",
       "sourceName": "founderstoday.news",
       "sourceUrl": "https://www.founderstoday.news/first-concepts-raises-1-million-pre-seed/",
@@ -10809,7 +10789,7 @@
       "title": "julianoczkowski/designer-skills",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "julianoczkowski/designer-skills",
+      "subject": "julianoczkowski/designer",
       "source": "github.com",
       "sourceName": "github.com",
       "sourceUrl": "https://github.com/julianoczkowski/designer-skills",
@@ -10944,7 +10924,7 @@
       "title": "kritird/Cortex-Agent-Framework",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "kritird/Cortex-Agent-Framework",
+      "subject": "kritird/Cortex",
       "source": "github.com",
       "sourceName": "github.com",
       "sourceUrl": "https://github.com/kritird/cortex-agent-framework",
@@ -11053,7 +11033,7 @@
       "title": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
+      "subject": "全国首个开源鸿蒙机器人操作系统 M",
       "source": "IT之家（RSS）",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/954/530.htm",
@@ -11169,7 +11149,7 @@
       "title": "微软研究院推出Webwright终端原生浏览器代理框架",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "微软研究院",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
@@ -11498,7 +11478,7 @@
       "title": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "研究人员",
+      "subject": "The-Decoder",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed",
@@ -11627,7 +11607,7 @@
       "title": "C.H. Robinson 把 AI 用进物流订单和邮件处理流程",
       "originalTitle": "How C.H. Robinson Uses AI for How C.H. Robinson Automates 5,500 Shipments Daily with LangChain AI Agents | Applied",
       "date": "2026-05-24",
-      "subject": "Applied",
+      "subject": "C.H. Robinson",
       "source": "theapplied.co",
       "sourceName": "theapplied.co",
       "sourceUrl": "https://theapplied.co/use-cases/how-c-h-robinson-automates-5500-shipments-daily-with-langchain-ai-agents",
@@ -11744,7 +11724,7 @@
       "title": "PwC 把 AI 用进企业智能体协作流程",
       "originalTitle": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
       "date": "2026-05-24",
-      "subject": "PwC 把 AI 用进企业智能体协作流程",
+      "subject": "PwC",
       "source": "anthropic.com",
       "sourceName": "anthropic.com",
       "sourceUrl": "https://www.anthropic.com/news/pwc-expanded-partnership",
@@ -11858,7 +11838,7 @@
       "title": "Siliconangle 把 AI 用进销售和收入团队流程",
       "originalTitle": "Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE",
       "date": "2026-05-24",
-      "subject": "Tribal AI",
+      "subject": "Siliconangle",
       "source": "siliconangle.com",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/",
@@ -11988,7 +11968,7 @@
       "title": "Analysis 发布 AI 能力，指向地产开发和建筑设计流程",
       "originalTitle": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI",
       "date": "2026-05-24",
-      "subject": "General Analysis",
+      "subject": "Analysis",
       "source": "businesswire.com",
       "sourceName": "businesswire.com",
       "sourceUrl": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
@@ -12124,7 +12104,7 @@
       "title": "AWS Marketplace 发布 AI 能力，指向地产开发和建筑设计流程",
       "originalTitle": "AWS Partner Guide to AI Agents and Tools in AWS Marketplace",
       "date": "2026-05-24",
-      "subject": "AWS Marketplace 发布 AI 能力，指向地产开发和建筑设计流程",
+      "subject": "AWS Marketplace",
       "source": "aws.amazon.com",
       "sourceName": "aws.amazon.com",
       "sourceUrl": "https://aws.amazon.com/blogs/apn/aws-partner-guide-to-ai-agents-and-tools-in-aws-marketplace/",
@@ -12259,7 +12239,7 @@
       "title": "Fazeshift 发布 AI 能力，指向销售和收入团队流程",
       "originalTitle": "Exclusive: Fazeshift Scores $17M As Investors Bet On AI-Powered Finance Ops, Starting With Accounts Receivable",
       "date": "2026-05-24",
-      "subject": "Exclusive",
+      "subject": "Fazeshift",
       "source": "news.crunchbase.com",
       "sourceName": "news.crunchbase.com",
       "sourceUrl": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
@@ -12389,7 +12369,7 @@
       "title": "formulahendry/vscode 发布 AI 能力，指向企业智能体协作流程",
       "originalTitle": "formulahendry/vscode-agent-skills",
       "date": "2026-05-24",
-      "subject": "formulahendry/vscode-agent-skills",
+      "subject": "formulahendry/vscode",
       "source": "github.com",
       "sourceName": "github.com",
       "sourceUrl": "https://github.com/formulahendry/vscode-agent-skills",
@@ -12652,7 +12632,7 @@
       "title": "Isg-One 发布 AI 能力，指向地产开发和建筑设计流程",
       "originalTitle": "AI Agents Buyers Guide 2026 Executive Summary",
       "date": "2026-05-24",
-      "subject": "Isg-One 发布 AI 能力，指向地产开发和建筑设计流程",
+      "subject": "Isg-One",
       "source": "research.isg-one.com",
       "sourceName": "research.isg-one.com",
       "sourceUrl": "https://research.isg-one.com/buyers-guide/artificial-intelligence/data-platforms/ai-agents/2026",
@@ -12799,7 +12779,7 @@
       "title": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆",
       "originalTitle": "",
       "date": "2026-05-24",
-      "subject": "构建基于SuperClaude框架的工作流",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory",
@@ -13042,7 +13022,7 @@
       "title": "OPLOG 发布 AI 能力，指向销售和收入团队流程",
       "originalTitle": "Build AI agents for business intelligence with Amazon Bedrock AgentCore | Artificial Intelligence",
       "date": "2026-05-24",
-      "subject": "Artificial Intelligence",
+      "subject": "OPLOG",
       "source": "aws.amazon.com",
       "sourceName": "aws.amazon.com",
       "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/build-ai-agents-for-business-intelligence-with-amazon-bedrock-agentcore/",
@@ -13417,7 +13397,7 @@
       "title": "Realm 把 AI 用进销售和收入团队流程",
       "originalTitle": "$4.5M seed for Realm to advance AI in enterprise sales - Tech.eu",
       "date": "2026-05-23",
-      "subject": "Realm 把 AI 用进销售和收入团队流程",
+      "subject": "Realm",
       "source": "tech.eu",
       "sourceName": "tech.eu",
       "sourceUrl": "https://tech.eu/2026/04/22/45m-seed-for-realm-to-advance-ai-in-enterprise-sales/",
@@ -13807,7 +13787,7 @@
       "title": "Dust 发布 AI 能力，指向企业智能体协作流程",
       "originalTitle": "Multiplayer AI startup Dust raises $40M to help enterprises move beyond isolated AI assistants - SiliconANGLE",
       "date": "2026-05-23",
-      "subject": "Multiplayer AI startup Dust",
+      "subject": "Dust",
       "source": "siliconangle.com",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/05/18/multiplayer-ai-startup-dust-swipes-40m-funding-help-enterprises-move-beyond-isolated-ai-assistants/",
@@ -13917,7 +13897,7 @@
       "title": "Featherless.ai 发布 AI 能力，指向模型部署和算力调用",
       "originalTitle": "Featherless.ai pulls in $20M to scale serverless hosting for open-source AI models - SiliconANGLE",
       "date": "2026-05-23",
-      "subject": "Featherless.ai 发布 AI 能力，指向模型部署和算力调用",
+      "subject": "未标注主体",
       "source": "siliconangle.com",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/04/30/featherless-ai-pulls-20m-scale-serverless-hosting-open-source-ai-models/",
@@ -14157,7 +14137,7 @@
       "title": "Sycamore 发布 AI 能力，指向企业智能体协作流程",
       "originalTitle": "Former Coatue partner raises huge $65M seed for enterprise AI agent startup | TechCrunch",
       "date": "2026-05-23",
-      "subject": "Former Coatue partner",
+      "subject": "Sycamore",
       "source": "techcrunch.com",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
@@ -14423,7 +14403,7 @@
       "title": "Snowflake 与 Anthropic 扩大合作，把 Claude 推向企业 Agent 部署",
       "originalTitle": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises \\ Anthropic",
       "date": "2026-05-22",
-      "subject": "Snowflake and Anthropic",
+      "subject": "Snowflake / Anthropic",
       "source": "anthropic.com",
       "sourceName": "anthropic.com",
       "sourceUrl": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
@@ -14605,7 +14585,7 @@
       "title": "Inference.net 融资 1180 万美元，推进企业定制模型部署",
       "originalTitle": "Announcing our $11.8M Series Seed | Inference.net",
       "date": "2026-05-22",
-      "subject": "Inference.net",
+      "subject": "未标注主体",
       "source": "inference.net",
       "sourceName": "inference.net",
       "sourceUrl": "https://inference.net/blog/seed-round/",
@@ -14722,7 +14702,7 @@
       "title": "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台",
       "originalTitle": "Sycamore Labs Secures $65 Million Seed Funding to Build Enterprise AI Agent Platform | Raising.fi",
       "date": "2026-05-22",
-      "subject": "Raising.fi",
+      "subject": "Sycamore Labs",
       "source": "raising.fi",
       "sourceName": "raising.fi",
       "sourceUrl": "https://raising.fi/news/sycamore-labs-seed-march-2026",
@@ -15276,7 +15256,7 @@
       "title": "Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例",
       "originalTitle": "Built x MightyBot Case Study: AI Draw Agent in Production",
       "date": "2026-05-21",
-      "subject": "Built x MightyBot Case Study",
+      "subject": "Built / MightyBot",
       "source": "mightybot.ai",
       "sourceName": "mightybot.ai",
       "sourceUrl": "https://mightybot.ai/blog/shipping-ai-that-works-built-x-mightybot-draw-agent/",
@@ -15510,7 +15490,7 @@
       "title": "欧洲保险公司部署 Druid AI Agent 处理理赔通知",
       "originalTitle": "Top European insurer accelerates claims notification with Druid AI agents",
       "date": "2026-05-21",
-      "subject": "欧洲保险公司部署 Druid AI Agent 处理理赔通知",
+      "subject": "Druid AI",
       "source": "druidai.com",
       "sourceName": "druidai.com",
       "sourceUrl": "https://www.druidai.com/case-studies/insurer-automates-claims-with-druid-ai-agents",
@@ -15676,7 +15656,7 @@
       "title": "Druid AI 部署语音 Agent，手术预约时间减少 50%",
       "originalTitle": "AI voice agents cut surgery scheduling time by 50% for a European ophthalmology group",
       "date": "2026-05-21",
-      "subject": "Druid AI 部署语音 Agent，手术预约时间减少 50%",
+      "subject": "Druid AI",
       "source": "druidai.com",
       "sourceName": "druidai.com",
       "sourceUrl": "https://www.druidai.com/case-studies/ai-voice-agents-healthcare-group-transforms-patient-experience",
@@ -15836,7 +15816,7 @@
       "title": "LTM 在 HR 和销售组织部署 Copilot Agents",
       "originalTitle": "LTM transforms HR and Sales Organization with AI-Powered Copilot Agents",
       "date": "2026-05-21",
-      "subject": "LTM 在 HR 和销售组织部署 Copilot Agents",
+      "subject": "LTM / Microsoft",
       "source": "adoption.microsoft.com",
       "sourceName": "adoption.microsoft.com",
       "sourceUrl": "https://adoption.microsoft.com/en-us/ai-transformation-stories/ltm/",
@@ -15986,7 +15966,7 @@
       "title": "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连",
       "originalTitle": "University spin-out secures funding to improve AI energy efficiency and bandwidth",
       "date": "2026-05-21",
-      "subject": "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连",
+      "subject": "CamGraPhIC",
       "source": "cam.ac.uk",
       "sourceName": "cam.ac.uk",
       "sourceUrl": "https://www.cam.ac.uk/research/news/university-spin-out-secures-funding-to-improve-ai-energy-efficiency-and-bandwidth",
@@ -16288,7 +16268,7 @@
       "title": "NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务",
       "originalTitle": "NHS Shared Business Services and Salesforce Deploy AI-powered Platform to Transform Corporate Services across the NHS - Salesforce",
       "date": "2026-05-20",
-      "subject": "NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务",
+      "subject": "NHS Shared Business Services / Salesforce",
       "source": "salesforce.com",
       "sourceName": "salesforce.com",
       "sourceUrl": "https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai/",
@@ -16427,7 +16407,7 @@
       "title": "Snowflake 与 Anthropic 扩大合作，推进企业智能体部署",
       "originalTitle": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises \\ Anthropic",
       "date": "2026-05-20",
-      "subject": "Snowflake and Anthropic",
+      "subject": "Snowflake / Anthropic",
       "source": "anthropic.com",
       "sourceName": "anthropic.com",
       "sourceUrl": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
@@ -17306,7 +17286,7 @@
       "title": "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "英国警方被叫停使",
+      "subject": "UK police",
       "source": "IT之家（RSS）",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/961/045.htm",
@@ -17425,7 +17405,7 @@
       "title": "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案",
       "originalTitle": "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026",
       "date": "2026-06-07",
-      "subject": "ASUS Brings Enterprise",
+      "subject": "ASUS",
       "source": "itwire.com",
       "sourceName": "itwire.com",
       "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
@@ -17519,7 +17499,7 @@
       "title": "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入",
       "originalTitle": "Snowflake Expands AWS Collaboration with $6B AI Commitment",
       "date": "2026-06-07",
-      "subject": "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入",
+      "subject": "Snowflake",
       "source": "snowflake.com",
       "sourceName": "snowflake.com",
       "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/",
@@ -17626,7 +17606,7 @@
       "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
       "originalTitle": "How Druid AI helped a global appliance retailer automate contact center support and unlock growth",
       "date": "2026-06-07",
-      "subject": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+      "subject": "Druid AI",
       "source": "druidai.com",
       "sourceName": "druidai.com",
       "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
@@ -17721,7 +17701,7 @@
       "title": "特朗普政府可能入股OpenAI",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "特朗普政府可能入股OpenAI",
+      "subject": "OpenAI",
       "source": "TechCrunch：AI（RSS）",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai",
@@ -17799,10 +17779,10 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Lio 推出面向采购流程的多 Agent 系统",
-      "originalTitle": "Lio – The world's first multi agent system for procurement",
+      "title": "Lio – The world's first multi agent system for procurement",
+      "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "Lio 推出面向采购流程的多 Agent 系统",
+      "subject": "Lio",
       "source": "lio.ai",
       "sourceName": "lio.ai",
       "sourceUrl": "https://lio.ai/",
@@ -18017,7 +17997,7 @@
       "title": "Google DeepMind 发布支持量化感知训练的 Gemma 4",
       "originalTitle": "Gemma 4 with quantization-aware training",
       "date": "2026-06-07",
-      "subject": "Gemma 4 with quantization-aware training",
+      "subject": "Google DeepMind",
       "source": "blog.google",
       "sourceName": "blog.google",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
@@ -18100,7 +18080,7 @@
       "title": "SaaS 公司开始探索 AI Agent 的商业化路径",
       "originalTitle": "How SaaS Companies Are Monetizing AI Agents in 2026",
       "date": "2026-06-07",
-      "subject": "SaaS 公司开始探索 AI Agent 的商业化路径",
+      "subject": "SaaS companies",
       "source": "saasmag.com",
       "sourceName": "saasmag.com",
       "sourceUrl": "https://www.saasmag.com/how-saas-companies-monetizing-ai-agents/",
@@ -18194,7 +18174,7 @@
       "title": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+      "subject": "Sakana AI",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs",
@@ -18207,16 +18187,11 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-coding",
           "track-ai-infra"
         ],
-        "function": [
-          "function-engineering"
-        ],
+        "function": [],
         "scenario": [],
-        "customer": [
-          "customer-developer-team"
-        ],
+        "customer": [],
         "evidence": [
           "evidence-customer-metric",
           "evidence-product-launch"
@@ -18229,10 +18204,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-coding",
         "track-ai-infra",
-        "function-engineering",
-        "customer-developer-team",
         "evidence-customer-metric",
         "evidence-product-launch",
         "source-business-media"
@@ -18243,20 +18215,8 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
         },
         {
           "id": "evidence-customer-metric",
@@ -18414,7 +18374,7 @@
       "title": "Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "Moonshot AI",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/06/moonshot-ai-releases-kimi-code-cli-a-terminal-ai-coding-agent-built-in-typescript-for-next-gen-agents",
@@ -18726,7 +18686,7 @@
       "title": "Qwen3.7-Plus：阿里巴巴将多模态AI打造成完全自主智能体",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "Qwen3.7-Plus",
+      "subject": "Plus",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/qwen3-7-plus-is-alibabas-bid-to-turn-multimodal-ai-into-a-full-blown-autonomous-agent",
@@ -18851,7 +18811,7 @@
       "title": "Leading Inference Providers Achieve Lowest Token Cost With Open Source Models on NVIDIA Blackwell | NVIDIA Blog",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "NVIDIA",
+      "subject": "Nvidia",
       "source": "blogs.nvidia.com",
       "sourceName": "blogs.nvidia.com",
       "sourceUrl": "https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/",
@@ -19046,7 +19006,7 @@
       "title": "Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默",
       "originalTitle": "",
       "date": "2026-06-06",
-      "subject": "Audio Interaction",
+      "subject": "The-Decoder",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/new-open-source-voice-model-listens-nonstop-and-decides-every-0-4-seconds-whether-to-speak-or-stay-silent",
@@ -19640,7 +19600,7 @@
       "title": "Amazon 把 AI 用进销售和收入团队流程",
       "originalTitle": "Automate Procurement Workflows with AI Agents using Amazon Bedrock AgentCore | AWS for Industries",
       "date": "2026-06-05",
-      "subject": "AWS for Industries",
+      "subject": "Amazon",
       "source": "aws.amazon.com",
       "sourceName": "aws.amazon.com",
       "sourceUrl": "https://aws.amazon.com/blogs/industries/automate-procurement-workflows-with-ai-agents-using-amazon-bedrock-agentcore/",
@@ -19921,7 +19881,7 @@
       "title": "Anthropic 联合创始人 Daniela Amodei 在 IPO 前夕驳斥对 AI 回报的质疑",
       "originalTitle": "",
       "date": "2026-06-05",
-      "subject": "Anthropic",
+      "subject": "Techcrunch",
       "source": "TechCrunch：AI（RSS）",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns",
@@ -20035,7 +19995,7 @@
       "title": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
       "originalTitle": "",
       "date": "2026-06-05",
-      "subject": "NVIDIA",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/04/nvidia-ai-releases-nemotron-3-ultra-an-open-550b-mixture-of-experts-hybrid-mamba-transformer-for-long-running-agents",
@@ -20149,7 +20109,7 @@
       "title": "2026 年高级语音 AI 平台市场观察",
       "originalTitle": "Advanced Voice AI Platforms 2026 Market Insights™ - Avasant",
       "date": "2026-06-05",
-      "subject": "2026 年高级语音 AI 平台市场观察",
+      "subject": "Avasant",
       "source": "avasant.com",
       "sourceName": "avasant.com",
       "sourceUrl": "https://avasant.com/report/advanced-voice-ai-platforms-2026-market-insights/",
@@ -20279,7 +20239,7 @@
       "title": "Kpmg 发布 AI 能力，指向销售和收入团队流程",
       "originalTitle": "Transforming procurement through intelligent technology",
       "date": "2026-06-05",
-      "subject": "Kpmg 发布 AI 能力，指向销售和收入团队流程",
+      "subject": "Kpmg",
       "source": "kpmg.com",
       "sourceName": "kpmg.com",
       "sourceUrl": "https://kpmg.com/us/en/how-we-work/client-stories/transforming-procurement-intelligent-technology.html",
@@ -21262,7 +21222,7 @@
       "title": "AI 与 GenAI 合同谈判顾问：企业采购进入 AI 议价流程",
       "originalTitle": "AI & GenAI Contract Negotiation Advisory | IT Negotiations",
       "date": "2026-06-04",
-      "subject": "IT Negotiations",
+      "subject": "AI & GenAI Contract Negotiation Advisory",
       "source": "itnegotiationservices.com",
       "sourceName": "itnegotiationservices.com",
       "sourceUrl": "https://itnegotiationservices.com/services/genai",
@@ -21852,118 +21812,6 @@
       "frontstageSupplyFill": true
     },
     {
-      "id": "SIG-20260603-A03",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "微软发布新MAI模型",
-      "originalTitle": "",
-      "date": "2026-06-03",
-      "subject": "微软发布新MAI模型",
-      "source": "Simon Willison 博客",
-      "sourceName": "Simon Willison 博客",
-      "sourceUrl": "https://simonwillison.net/2026/Jun/2/microsofts-new-models",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "publishedAt": "2026-06-02T22:21:52.000Z",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption",
-          "evidence-partnership-integration",
-          "evidence-pricing-cost"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-infra",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "evidence-partnership-integration",
-        "evidence-pricing-cost",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        },
-        {
-          "id": "evidence-partnership-integration",
-          "label": "合作集成"
-        },
-        {
-          "id": "evidence-pricing-cost",
-          "label": "价格成本"
-        }
-      ],
-      "summary": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "translatedFact": "微软发布了MAI-Thinking-1与MAI-Code-1-Flash两款新大语言模型。MAI-Thinking-1为35B参数的推理模型，目前向部分早期合作伙伴开放，官方称其在盲测中优于Sonnet 4.6。MAI-Code-1-Flash为5B参数模型，专为GitHub Copilot和VS Code优化，将逐步向VS Code的Copilot个人用户推出。两款模型均强调使用清洁、商业授权的数据从零开始进行端到端训练，未使用第三...",
-      "originalHighlights": [],
-      "visibleFragment": "",
-      "sourceLinks": [
-        "https://simonwillison.net/2026/Jun/2/microsofts-new-models"
-      ],
-      "status": "published",
-      "assetLevel": "frontstage",
-      "evidenceGate": "core_evidence_passed",
-      "stage": "",
-      "evidence": "evidence-customer-adoption",
-      "track": "track-ai-agent",
-      "largeVendorKey": "",
-      "largeVendor": false,
-      "frontstageRankScore": 680,
-      "frontstageEditorialScore": 680,
-      "frontstageEvidenceScore": 44,
-      "frontstageSelectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "frontstageValueDescription": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "frontstageQualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "frontstageGenericCandidate": false,
-      "fromCorePool": true,
-      "frontstageSelectionTier": "editorial",
-      "frontstageSupplyFill": false
-    },
-    {
       "id": "SIG-20260603-A04",
       "type": "signal_card",
       "category": "case",
@@ -21971,7 +21819,7 @@
       "title": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "NVIDIA",
+      "subject": "Nvidia",
       "source": "NVIDIA Blog：Agentic AI（网页）",
       "sourceName": "NVIDIA Blog：Agentic AI（网页）",
       "sourceUrl": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw",
@@ -22109,7 +21957,7 @@
       "title": "NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "NVIDIA",
+      "subject": "Microsoft",
       "source": "NVIDIA AI Blog",
       "sourceName": "NVIDIA AI Blog",
       "sourceUrl": "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices",
@@ -22223,7 +22071,7 @@
       "title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
       "originalTitle": "",
       "date": "2026-06-03",
-      "subject": "Archestra.AI",
+      "subject": "未标注主体",
       "source": "archestra.ai",
       "sourceName": "archestra.ai",
       "sourceUrl": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -22749,7 +22597,7 @@
       "title": "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署",
       "originalTitle": "Wonderful raised $100M Series A to put AI agents on the front lines of customer service",
       "date": "2026-06-02",
-      "subject": "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署",
+      "subject": "Wonderful",
       "source": "techcrunch.com",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2025/11/11/wonderful-raised-100m-series-a-to-put-ai-agents-on-the-front-lines-of-customer-service/",
@@ -22893,7 +22741,7 @@
       "title": "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作",
       "originalTitle": "Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships",
       "date": "2026-06-02",
-      "subject": "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作",
+      "subject": "Parloa",
       "source": "thenextweb.com",
       "sourceName": "thenextweb.com",
       "sourceUrl": "https://thenextweb.com/news/parloa-turns-its-350-million-war-chest-into-a-partnership-web-spanning-sap-microsoft-and-openai",
@@ -23629,7 +23477,7 @@
       "title": "NVIDIA 披露台积电、富士康等采用 AI 改造制造运营",
       "originalTitle": "台湾产业巨头借助NVIDIA加速世界AI基础设施建设",
       "date": "2026-06-01",
-      "subject": "台湾产业巨头借助NVIDIA加速世界AI基础设施建设",
+      "subject": "NVIDIA",
       "source": "NVIDIA Blog：Agentic AI（网页）",
       "sourceName": "NVIDIA Blog：Agentic AI（网页）",
       "sourceUrl": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure",
@@ -23752,7 +23600,7 @@
       "title": "Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程",
       "originalTitle": "Replit Expands Enterprise Leadership with Visa Investment and Partnership, Payments Expansion, and Solution Partner Program",
       "date": "2026-06-01",
-      "subject": "Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程",
+      "subject": "Replit / Visa",
       "source": "prnewswire.com",
       "sourceName": "prnewswire.com",
       "sourceUrl": "https://www.prnewswire.com/news-releases/replit-expands-enterprise-leadership-with-visa-investment-and-partnership-payments-expansion-and-solution-partner-program-302784366.html",
@@ -23883,7 +23731,7 @@
       "title": "约束衰减：大型语言模型代理在后端代码生成中的脆弱性",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "约束衰减",
+      "subject": "arXiv",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceUrl": "https://arxiv.org/abs/2605.06445",
@@ -24021,7 +23869,7 @@
       "title": "First Concepts raises $1M pre-seed to develop AI workspace for creative teams - FoundersToday",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "First Concepts",
+      "subject": "Concepts",
       "source": "founderstoday.news",
       "sourceName": "founderstoday.news",
       "sourceUrl": "https://www.founderstoday.news/first-concepts-raises-1-million-pre-seed/",
@@ -24140,7 +23988,7 @@
       "title": "克劳德不是你的架构师。别再让他假装是了",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "克劳德不是你的架构师。别再让他假装是了",
+      "subject": "Hollandtech",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceUrl": "https://www.hollandtech.net/claude-is-not-your-architect",
@@ -24527,7 +24375,7 @@
       "title": "引用阿尔明·罗纳彻的话",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "引用阿尔明·罗纳彻的话",
+      "subject": "Simonwillison",
       "source": "Simon Willison 博客",
       "sourceName": "Simon Willison 博客",
       "sourceUrl": "https://simonwillison.net/2026/May/24/armin-ronacher",
@@ -25013,7 +24861,7 @@
       "title": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
       "originalTitle": "",
       "date": "2026-05-25",
-      "subject": "全国首个开源鸿蒙机器人操作系统 M-Robots OS 2.0 版本发布",
+      "subject": "全国首个开源鸿蒙机器人操作系统 M",
       "source": "IT之家（RSS）",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/954/530.htm",
@@ -25131,7 +24979,7 @@
       "title": "Siliconangle 把 AI 用进销售和收入团队流程",
       "originalTitle": "Tribal AI lands $10M in seed funding to bring metadata-native agents to the enterprise - SiliconANGLE",
       "date": "2026-05-24",
-      "subject": "Tribal AI",
+      "subject": "Siliconangle",
       "source": "siliconangle.com",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/",
@@ -25263,7 +25111,7 @@
       "title": "C.H. Robinson 把 AI 用进物流订单和邮件处理流程",
       "originalTitle": "How C.H. Robinson Uses AI for How C.H. Robinson Automates 5,500 Shipments Daily with LangChain AI Agents | Applied",
       "date": "2026-05-24",
-      "subject": "Applied",
+      "subject": "C.H. Robinson",
       "source": "theapplied.co",
       "sourceName": "theapplied.co",
       "sourceUrl": "https://theapplied.co/use-cases/how-c-h-robinson-automates-5500-shipments-daily-with-langchain-ai-agents",
@@ -25382,7 +25230,7 @@
       "title": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆",
       "originalTitle": "",
       "date": "2026-05-24",
-      "subject": "构建基于SuperClaude框架的工作流",
+      "subject": "Marktechpost",
       "source": "MarkTechPost（RSS）",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory",
@@ -25494,7 +25342,7 @@
       "title": "PwC 把 AI 用进企业智能体协作流程",
       "originalTitle": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
       "date": "2026-05-24",
-      "subject": "PwC 把 AI 用进企业智能体协作流程",
+      "subject": "PwC",
       "source": "anthropic.com",
       "sourceName": "anthropic.com",
       "sourceUrl": "https://www.anthropic.com/news/pwc-expanded-partnership",
@@ -25610,7 +25458,7 @@
       "title": "Analysis 发布 AI 能力，指向地产开发和建筑设计流程",
       "originalTitle": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI",
       "date": "2026-05-24",
-      "subject": "General Analysis",
+      "subject": "Analysis",
       "source": "businesswire.com",
       "sourceName": "businesswire.com",
       "sourceUrl": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
@@ -25860,7 +25708,7 @@
       "title": "Fazeshift 发布 AI 能力，指向销售和收入团队流程",
       "originalTitle": "Exclusive: Fazeshift Scores $17M As Investors Bet On AI-Powered Finance Ops, Starting With Accounts Receivable",
       "date": "2026-05-24",
-      "subject": "Exclusive",
+      "subject": "Fazeshift",
       "source": "news.crunchbase.com",
       "sourceName": "news.crunchbase.com",
       "sourceUrl": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
@@ -26124,7 +25972,7 @@
       "title": "Isg-One 发布 AI 能力，指向地产开发和建筑设计流程",
       "originalTitle": "AI Agents Buyers Guide 2026 Executive Summary",
       "date": "2026-05-24",
-      "subject": "Isg-One 发布 AI 能力，指向地产开发和建筑设计流程",
+      "subject": "Isg-One",
       "source": "research.isg-one.com",
       "sourceName": "research.isg-one.com",
       "sourceUrl": "https://research.isg-one.com/buyers-guide/artificial-intelligence/data-platforms/ai-agents/2026",
@@ -26408,7 +26256,7 @@
       "title": "Realm 把 AI 用进销售和收入团队流程",
       "originalTitle": "$4.5M seed for Realm to advance AI in enterprise sales - Tech.eu",
       "date": "2026-05-23",
-      "subject": "Realm 把 AI 用进销售和收入团队流程",
+      "subject": "Realm",
       "source": "tech.eu",
       "sourceName": "tech.eu",
       "sourceUrl": "https://tech.eu/2026/04/22/45m-seed-for-realm-to-advance-ai-in-enterprise-sales/",
@@ -26666,7 +26514,7 @@
       "title": "Featherless.ai 发布 AI 能力，指向模型部署和算力调用",
       "originalTitle": "Featherless.ai pulls in $20M to scale serverless hosting for open-source AI models - SiliconANGLE",
       "date": "2026-05-23",
-      "subject": "Featherless.ai 发布 AI 能力，指向模型部署和算力调用",
+      "subject": "未标注主体",
       "source": "siliconangle.com",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/04/30/featherless-ai-pulls-20m-scale-serverless-hosting-open-source-ai-models/",
@@ -26916,7 +26764,7 @@
       "title": "Dust 发布 AI 能力，指向企业智能体协作流程",
       "originalTitle": "Multiplayer AI startup Dust raises $40M to help enterprises move beyond isolated AI assistants - SiliconANGLE",
       "date": "2026-05-23",
-      "subject": "Multiplayer AI startup Dust",
+      "subject": "Dust",
       "source": "siliconangle.com",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/05/18/multiplayer-ai-startup-dust-swipes-40m-funding-help-enterprises-move-beyond-isolated-ai-assistants/",
@@ -27160,7 +27008,7 @@
       "title": "Sycamore 发布 AI 能力，指向企业智能体协作流程",
       "originalTitle": "Former Coatue partner raises huge $65M seed for enterprise AI agent startup | TechCrunch",
       "date": "2026-05-23",
-      "subject": "Former Coatue partner",
+      "subject": "Sycamore",
       "source": "techcrunch.com",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
@@ -27405,7 +27253,7 @@
       "title": "Inference.net 融资 1180 万美元，推进企业定制模型部署",
       "originalTitle": "Announcing our $11.8M Series Seed | Inference.net",
       "date": "2026-05-22",
-      "subject": "Inference.net",
+      "subject": "未标注主体",
       "source": "inference.net",
       "sourceName": "inference.net",
       "sourceUrl": "https://inference.net/blog/seed-round/",
@@ -27675,7 +27523,7 @@
       "title": "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台",
       "originalTitle": "Sycamore Labs Secures $65 Million Seed Funding to Build Enterprise AI Agent Platform | Raising.fi",
       "date": "2026-05-22",
-      "subject": "Raising.fi",
+      "subject": "Sycamore Labs",
       "source": "raising.fi",
       "sourceName": "raising.fi",
       "sourceUrl": "https://raising.fi/news/sycamore-labs-seed-march-2026",
@@ -28111,7 +27959,7 @@
       "title": "Snowflake 与 Anthropic 扩大合作，把 Claude 推向企业 Agent 部署",
       "originalTitle": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises \\ Anthropic",
       "date": "2026-05-22",
-      "subject": "Snowflake and Anthropic",
+      "subject": "Snowflake / Anthropic",
       "source": "anthropic.com",
       "sourceName": "anthropic.com",
       "sourceUrl": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
@@ -28295,7 +28143,7 @@
       "title": "欧洲保险公司部署 Druid AI Agent 处理理赔通知",
       "originalTitle": "Top European insurer accelerates claims notification with Druid AI agents",
       "date": "2026-05-21",
-      "subject": "欧洲保险公司部署 Druid AI Agent 处理理赔通知",
+      "subject": "Druid AI",
       "source": "druidai.com",
       "sourceName": "druidai.com",
       "sourceUrl": "https://www.druidai.com/case-studies/insurer-automates-claims-with-druid-ai-agents",
@@ -28463,7 +28311,7 @@
       "title": "Druid AI 部署语音 Agent，手术预约时间减少 50%",
       "originalTitle": "AI voice agents cut surgery scheduling time by 50% for a European ophthalmology group",
       "date": "2026-05-21",
-      "subject": "Druid AI 部署语音 Agent，手术预约时间减少 50%",
+      "subject": "Druid AI",
       "source": "druidai.com",
       "sourceName": "druidai.com",
       "sourceUrl": "https://www.druidai.com/case-studies/ai-voice-agents-healthcare-group-transforms-patient-experience",
@@ -28625,7 +28473,7 @@
       "title": "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连",
       "originalTitle": "University spin-out secures funding to improve AI energy efficiency and bandwidth",
       "date": "2026-05-21",
-      "subject": "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连",
+      "subject": "CamGraPhIC",
       "source": "cam.ac.uk",
       "sourceName": "cam.ac.uk",
       "sourceUrl": "https://www.cam.ac.uk/research/news/university-spin-out-secures-funding-to-improve-ai-energy-efficiency-and-bandwidth",
@@ -28782,7 +28630,7 @@
       "title": "LTM 在 HR 和销售组织部署 Copilot Agents",
       "originalTitle": "LTM transforms HR and Sales Organization with AI-Powered Copilot Agents",
       "date": "2026-05-21",
-      "subject": "LTM 在 HR 和销售组织部署 Copilot Agents",
+      "subject": "LTM / Microsoft",
       "source": "adoption.microsoft.com",
       "sourceName": "adoption.microsoft.com",
       "sourceUrl": "https://adoption.microsoft.com/en-us/ai-transformation-stories/ltm/",
@@ -28934,7 +28782,7 @@
       "title": "Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例",
       "originalTitle": "Built x MightyBot Case Study: AI Draw Agent in Production",
       "date": "2026-05-21",
-      "subject": "Built x MightyBot Case Study",
+      "subject": "Built / MightyBot",
       "source": "mightybot.ai",
       "sourceName": "mightybot.ai",
       "sourceUrl": "https://mightybot.ai/blog/shipping-ai-that-works-built-x-mightybot-draw-agent/",
@@ -29734,7 +29582,7 @@
       "title": "Snowflake 与 Anthropic 扩大合作，推进企业智能体部署",
       "originalTitle": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises \\ Anthropic",
       "date": "2026-05-20",
-      "subject": "Snowflake and Anthropic",
+      "subject": "Snowflake / Anthropic",
       "source": "anthropic.com",
       "sourceName": "anthropic.com",
       "sourceUrl": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
@@ -30061,7 +29909,7 @@
       "title": "NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务",
       "originalTitle": "NHS Shared Business Services and Salesforce Deploy AI-powered Platform to Transform Corporate Services across the NHS - Salesforce",
       "date": "2026-05-20",
-      "subject": "NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务",
+      "subject": "NHS Shared Business Services / Salesforce",
       "source": "salesforce.com",
       "sourceName": "salesforce.com",
       "sourceUrl": "https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai/",
@@ -30262,7 +30110,7 @@
       "title": "GitHub 推出 Agent HQ 统一管理编码智能体",
       "originalTitle": "Introducing Agent HQ: Any agent, any way you work - The GitHub Blog",
       "date": "2026-06-07",
-      "subject": "Introducing Agent HQ",
+      "subject": "GitHub",
       "source": "github.blog",
       "sourceName": "github.blog",
       "sourceUrl": "https://github.blog/news-insights/company-news/welcome-home-agents/",
@@ -30378,7 +30226,7 @@
       "title": "fpt. 渲染苹果 iOS 27：升级 Siri、调整通知手势、增强 AI 修图",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "fpt. 渲染苹果 iOS 27",
+      "subject": "Apple",
       "source": "ithome.com",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/960/880.htm",
@@ -30436,7 +30284,7 @@
       "title": "AI Pre-seed 投资人榜单",
       "originalTitle": "Top AI Pre-Seed Investors",
       "date": "2026-06-07",
-      "subject": "Top AI Pre-Seed Investors",
+      "subject": "Banyan VC",
       "source": "banyan-vc.com",
       "sourceName": "banyan-vc.com",
       "sourceUrl": "https://www.banyan-vc.com/insights/top-ai-pre-seed-investors",
@@ -30495,7 +30343,7 @@
       "title": "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "英国警方被叫停使",
+      "subject": "UK police",
       "source": "IT之家（RSS）",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/961/045.htm",
@@ -30615,7 +30463,7 @@
       "title": "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案",
       "originalTitle": "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026",
       "date": "2026-06-07",
-      "subject": "ASUS Brings Enterprise",
+      "subject": "ASUS",
       "source": "itwire.com",
       "sourceName": "itwire.com",
       "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
@@ -30710,7 +30558,7 @@
       "title": "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入",
       "originalTitle": "Snowflake Expands AWS Collaboration with $6B AI Commitment",
       "date": "2026-06-07",
-      "subject": "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入",
+      "subject": "Snowflake",
       "source": "snowflake.com",
       "sourceName": "snowflake.com",
       "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/",
@@ -30818,7 +30666,7 @@
       "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
       "originalTitle": "How Druid AI helped a global appliance retailer automate contact center support and unlock growth",
       "date": "2026-06-07",
-      "subject": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+      "subject": "Druid AI",
       "source": "druidai.com",
       "sourceName": "druidai.com",
       "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
@@ -30914,7 +30762,7 @@
       "title": "特朗普政府可能入股OpenAI",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "特朗普政府可能入股OpenAI",
+      "subject": "OpenAI",
       "source": "TechCrunch：AI（RSS）",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai",
@@ -30993,10 +30841,10 @@
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Lio 推出面向采购流程的多 Agent 系统",
-      "originalTitle": "Lio – The world's first multi agent system for procurement",
+      "title": "Lio – The world's first multi agent system for procurement",
+      "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "Lio 推出面向采购流程的多 Agent 系统",
+      "subject": "Lio",
       "source": "lio.ai",
       "sourceName": "lio.ai",
       "sourceUrl": "https://lio.ai/",
@@ -31213,7 +31061,7 @@
       "title": "Google DeepMind 发布支持量化感知训练的 Gemma 4",
       "originalTitle": "Gemma 4 with quantization-aware training",
       "date": "2026-06-07",
-      "subject": "Gemma 4 with quantization-aware training",
+      "subject": "Google DeepMind",
       "source": "blog.google",
       "sourceName": "blog.google",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
@@ -31410,7 +31258,7 @@
       "title": "SaaS 公司开始探索 AI Agent 的商业化路径",
       "originalTitle": "How SaaS Companies Are Monetizing AI Agents in 2026",
       "date": "2026-06-07",
-      "subject": "SaaS 公司开始探索 AI Agent 的商业化路径",
+      "subject": "SaaS companies",
       "source": "saasmag.com",
       "sourceName": "saasmag.com",
       "sourceUrl": "https://www.saasmag.com/how-saas-companies-monetizing-ai-agents/",
@@ -31505,7 +31353,7 @@
       "title": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+      "subject": "Sakana AI",
       "source": "The Decoder：AI News（RSS）",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs",
@@ -31518,16 +31366,11 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-coding",
           "track-ai-infra"
         ],
-        "function": [
-          "function-engineering"
-        ],
+        "function": [],
         "scenario": [],
-        "customer": [
-          "customer-developer-team"
-        ],
+        "customer": [],
         "evidence": [
           "evidence-customer-metric",
           "evidence-product-launch"
@@ -31540,10 +31383,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-coding",
         "track-ai-infra",
-        "function-engineering",
-        "customer-developer-team",
         "evidence-customer-metric",
         "evidence-product-launch",
         "source-business-media"
@@ -31554,20 +31394,8 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
         },
         {
           "id": "evidence-customer-metric",
@@ -31618,7 +31446,7 @@
       "title": "Google Cloud 发布 Agent Starter Pack 开源模板",
       "originalTitle": "GoogleCloudPlatform/agent-starter-pack - GitHub",
       "date": "2026-06-07",
-      "subject": "GoogleCloudPlatform/agent-starter-pack",
+      "subject": "Google Cloud",
       "source": "github.com",
       "sourceName": "github.com",
       "sourceUrl": "https://github.com/googlecloudplatform/agent-starter-pack",
@@ -31731,7 +31559,7 @@
       "title": "Y Combinator 2026 开源创业公司索引",
       "originalTitle": "Open Source Startups funded by Y Combinator (YC) 2026",
       "date": "2026-06-07",
-      "subject": "ycombinator.com",
+      "subject": "未标注主体",
       "source": "ycombinator.com",
       "sourceName": "ycombinator.com",
       "sourceUrl": "https://www.ycombinator.com/companies/industry/open-source",
@@ -31790,7 +31618,7 @@
       "title": "Agno 发布 GitHub Release Notes Agent",
       "originalTitle": "GitHub release notes agent - Agno",
       "date": "2026-06-07",
-      "subject": "GitHub",
+      "subject": "Agno",
       "source": "agno.com",
       "sourceName": "agno.com",
       "sourceUrl": "https://www.agno.com/ai-agents/github-release-notes-agent",
@@ -31903,7 +31731,7 @@
       "title": "谷歌将每月向SpaceX支付9.2亿美元，以获取xAI数据中心的计算能力",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "谷歌将每月向SpaceX支付9.2亿美元，以获取xAI数据中心的计算能力",
+      "subject": "Google / SpaceX",
       "source": "cnbc.com",
       "sourceName": "cnbc.com",
       "sourceUrl": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
@@ -31962,7 +31790,7 @@
       "title": "标普500指数拒绝纳入SpaceX，同时也不允许OpenAI和Anthropic入选",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "arstechnica.com",
+      "subject": "未标注主体",
       "source": "arstechnica.com",
       "sourceName": "arstechnica.com",
       "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms",
@@ -32021,7 +31849,7 @@
       "title": "谷歌将每月向SpaceX支付9.2亿美元用于计算服务",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "谷歌将每月向SpaceX支付9.2亿美元用于计算服务",
+      "subject": "Google / SpaceX",
       "source": "techcrunch.com",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute",
@@ -32080,7 +31908,7 @@
       "title": "央视《对话》聚焦\"算电协同\"：绿电驱动AI，一度电变Token价值翻20倍",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "央视《对话》聚焦\"算电协同\"",
+      "subject": "CCTV",
       "source": "ithome.com",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/960/909.htm",
@@ -32138,7 +31966,7 @@
       "title": "您客厅里的智能电视是 AIScraping 经济中的一个节点",
       "originalTitle": "",
       "date": "2026-06-07",
-      "subject": "您客厅里的智能电视是 AIScraping 经济中的一个节点",
+      "subject": "未标注主体",
       "source": "blog.includesecurity.com",
       "sourceName": "blog.includesecurity.com",
       "sourceUrl": "https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy",
@@ -32198,7 +32026,7 @@
       "title": "Y Combinator 创业公司完整索引",
       "originalTitle": "Complete YC Startups Guide: 5,000+ Y Combinator Companies 2026",
       "date": "2026-06-07",
-      "subject": "Complete YC Startups Guide",
+      "subject": "Y Combinator",
       "source": "growthlist.co",
       "sourceName": "growthlist.co",
       "sourceUrl": "https://growthlist.co/yc-startups/",
@@ -32361,10 +32189,14 @@
       "candidateCount": 8,
       "coreCandidateCount": 8,
       "qualifiedCount": 7,
-      "selectedCount": 6,
+      "selectedCount": 5,
       "supplyConstrained": true,
       "largeCompanySelectedCount": 3,
       "rejectedByQuota": [
+        {
+          "id": "SIG-20260603-A03",
+          "reason": "same large-company cap: microsoft"
+        },
         {
           "id": "SIG-20260603-A02",
           "reason": "large-company total cap"
@@ -32515,34 +32347,34 @@
   "relationshipDirections": [
     {
       "id": "agent-workflow-enterprise",
-      "title": "英国警方被叫停使、ASUS Brings Enterprise 记录 Agent 进入采购、数据连接和企业流程",
+      "title": "Agno、ASUS 记录 Agent 进入采购、数据连接和企业流程",
       "direction": "企业工作流",
       "relation": [
         "AI Agent",
         "企业工作流",
         "大中型企业"
       ],
-      "summary": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。 这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
-      "evidenceMeta": "素材：英国警方被叫停使 / ASUS Brings Enterprise / Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-      "detailFocus": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。 这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
+      "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
+      "evidenceMeta": "素材：Agno / ASUS / Druid AI",
+      "detailFocus": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
       "todayCount": 8,
       "last7Count": 31,
       "last30Count": 54,
       "subjects": [
         {
-          "label": "英国警方被叫停使",
+          "label": "Agno",
           "count": 1
         },
         {
-          "label": "ASUS Brings Enterprise",
+          "label": "ASUS",
           "count": 1
         },
         {
-          "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+          "label": "Druid AI",
           "count": 1
         },
         {
-          "label": "GitHub",
+          "label": "Google Cloud",
           "count": 1
         }
       ],
@@ -32554,9 +32386,18 @@
       ],
       "supportingCards": [
         {
+          "id": "SIG-20260607-A04",
+          "title": "Agno 发布 GitHub Release Notes Agent",
+          "subject": "Agno",
+          "categoryLabel": "案例",
+          "sourceName": "agno.com",
+          "sourceUrl": "https://www.agno.com/ai-agents/github-release-notes-agent",
+          "date": "2026-06-07"
+        },
+        {
           "id": "SIG-20260607-A03",
           "title": "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案",
-          "subject": "ASUS Brings Enterprise",
+          "subject": "ASUS",
           "categoryLabel": "案例",
           "sourceName": "itwire.com",
           "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
@@ -32565,25 +32406,16 @@
         {
           "id": "SIG-20260607-A02",
           "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-          "subject": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+          "subject": "Druid AI",
           "categoryLabel": "案例",
           "sourceName": "druidai.com",
           "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
           "date": "2026-06-07"
         },
         {
-          "id": "SIG-20260607-A04",
-          "title": "Agno 发布 GitHub Release Notes Agent",
-          "subject": "GitHub",
-          "categoryLabel": "案例",
-          "sourceName": "agno.com",
-          "sourceUrl": "https://www.agno.com/ai-agents/github-release-notes-agent",
-          "date": "2026-06-07"
-        },
-        {
           "id": "SIG-20260607-A09",
           "title": "Google Cloud 发布 Agent Starter Pack 开源模板",
-          "subject": "GoogleCloudPlatform/agent-starter-pack",
+          "subject": "Google Cloud",
           "categoryLabel": "案例",
           "sourceName": "github.com",
           "sourceUrl": "https://github.com/googlecloudplatform/agent-starter-pack",
@@ -32593,7 +32425,7 @@
     },
     {
       "id": "product-launch-vs-adoption",
-      "title": "特朗普政府可能入股OpenAI、Gemma 4 with quantization-aware training 同日出现在企业 AI 产品发布里",
+      "title": "OpenAI、Google DeepMind 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
@@ -32601,26 +32433,22 @@
         "商业验证"
       ],
       "summary": "Google DeepMind 表示，Gemma 4 的新版本采用量化感知训练（QAT）优化，以显著降低内存需求并提升端侧性能。 OpenAI 推出 Lockdown Mode，旨在降低敏感数据在提示词注入攻击中被泄露的风险。该功能可限制 ChatGPT 在特定场景下对内部指令的响应，但无法完全杜绝注入攻击，仅将安全收益定位在减少敏感信息泄露几率上。Lockdown Mode 的具体启用方式和适用范围尚未公开。 美国总统特朗普表示正在商讨交易，让美国民众能从AI的成功中受益。他透露可能通过获取OpenAI的股权来实现这一目标。相关讨论尚在进行中。",
-      "evidenceMeta": "素材：特朗普政府可能入股OpenAI / Gemma 4 with quantization-aware training / OpenAI",
+      "evidenceMeta": "素材：OpenAI / Google DeepMind / Sakana AI",
       "detailFocus": "Google DeepMind 表示，Gemma 4 的新版本采用量化感知训练（QAT）优化，以显著降低内存需求并提升端侧性能。 OpenAI 推出 Lockdown Mode，旨在降低敏感数据在提示词注入攻击中被泄露的风险。该功能可限制 ChatGPT 在特定场景下对内部指令的响应，但无法完全杜绝注入攻击，仅将安全收益定位在减少敏感信息泄露几率上。Lockdown Mode 的具体启用方式和适用范围尚未公开。 美国总统特朗普表示正在商讨交易，让美国民众能从AI的成功中受益。他透露可能通过获取OpenAI的股权来实现这一目标。相关讨论尚在进行中。",
       "todayCount": 4,
       "last7Count": 43,
       "last30Count": 68,
       "subjects": [
         {
-          "label": "特朗普政府可能入股OpenAI",
-          "count": 1
-        },
-        {
-          "label": "Gemma 4 with quantization-aware training",
-          "count": 1
-        },
-        {
           "label": "OpenAI",
+          "count": 2
+        },
+        {
+          "label": "Google DeepMind",
           "count": 1
         },
         {
-          "label": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+          "label": "Sakana AI",
           "count": 1
         }
       ],
@@ -32634,7 +32462,7 @@
         {
           "id": "SIG-20260607-A05",
           "title": "Google DeepMind 发布支持量化感知训练的 Gemma 4",
-          "subject": "Gemma 4 with quantization-aware training",
+          "subject": "Google DeepMind",
           "categoryLabel": "产品",
           "sourceName": "blog.google",
           "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
@@ -32652,7 +32480,7 @@
         {
           "id": "SIG-20260607-A07",
           "title": "特朗普政府可能入股OpenAI",
-          "subject": "特朗普政府可能入股OpenAI",
+          "subject": "OpenAI",
           "categoryLabel": "产品",
           "sourceName": "TechCrunch：AI（RSS）",
           "sourceUrl": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai",
@@ -32661,7 +32489,7 @@
         {
           "id": "SIG-20260607-A13",
           "title": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
-          "subject": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+          "subject": "Sakana AI",
           "categoryLabel": "产品",
           "sourceName": "The Decoder：AI News（RSS）",
           "sourceUrl": "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs",
@@ -32670,42 +32498,8 @@
       ]
     },
     {
-      "id": "sales-procurement-budget",
-      "title": "采购和收入材料出现 AI Agent 的执行位置",
-      "direction": "采购 / 销售",
-      "relation": [
-        "企业采购",
-        "销售 / 收入流程",
-        "预算治理"
-      ],
-      "summary": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。",
-      "evidenceMeta": "素材来自当日商业信号",
-      "detailFocus": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。",
-      "todayCount": 1,
-      "last7Count": 10,
-      "last30Count": 19,
-      "subjects": [],
-      "categories": [
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "SIG-20260607-A01",
-          "title": "Lio 推出面向采购流程的多 Agent 系统",
-          "subject": "Lio 推出面向采购流程的多 Agent 系统",
-          "categoryLabel": "融资",
-          "sourceName": "lio.ai",
-          "sourceUrl": "https://lio.ai/",
-          "date": "2026-06-07"
-        }
-      ]
-    },
-    {
       "id": "function-customer-service",
-      "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程 记录 AI 进入客户接触点",
+      "title": "Druid AI 记录 AI 进入客户接触点",
       "direction": "客户体验",
       "relation": [
         "客户体验",
@@ -32713,14 +32507,14 @@
         "效率指标"
       ],
       "summary": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
-      "evidenceMeta": "素材：Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+      "evidenceMeta": "素材：Druid AI",
       "detailFocus": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
       "todayCount": 1,
       "last7Count": 6,
       "last30Count": 7,
       "subjects": [
         {
-          "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+          "label": "Druid AI",
           "count": 1
         }
       ],
@@ -32734,7 +32528,7 @@
         {
           "id": "SIG-20260607-A02",
           "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-          "subject": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+          "subject": "Druid AI",
           "categoryLabel": "案例",
           "sourceName": "druidai.com",
           "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
@@ -32746,7 +32540,7 @@
   "relationshipGraph": {
     "date": "2026-06-07",
     "nodeCount": 25,
-    "edgeCount": 50,
+    "edgeCount": 48,
     "nodes": [
       {
         "id": "category:案例",
@@ -32770,76 +32564,60 @@
         "category": "funding"
       },
       {
-        "id": "subject:特朗普政府可能入股OpenAI",
-        "label": "特朗普政府可能入股OpenAI",
+        "id": "subject:OpenAI",
+        "label": "OpenAI",
         "type": "subject",
-        "weight": 1,
+        "weight": 2,
         "category": "product-service",
         "sourceName": "TechCrunch：AI（RSS）"
       },
       {
-        "id": "subject:英国警方被叫停使",
-        "label": "英国警方被叫停使",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "IT之家（RSS）"
-      },
-      {
-        "id": "subject:ASUS-Brings-Enterprise",
-        "label": "ASUS Brings Enterprise",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "itwire.com"
-      },
-      {
-        "id": "subject:Druid-AI-帮助全球家电零售商自动化联络中心客服流程",
-        "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "druidai.com"
-      },
-      {
-        "id": "subject:Gemma-4-with-quantization-aware-training",
-        "label": "Gemma 4 with quantization-aware training",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "blog.google"
-      },
-      {
-        "id": "subject:GitHub",
-        "label": "GitHub",
+        "id": "subject:Agno",
+        "label": "Agno",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "agno.com"
       },
       {
-        "id": "subject:GoogleCloudPlatform/agent-starter-pack",
-        "label": "GoogleCloudPlatform/agent-starter-pack",
+        "id": "subject:ASUS",
+        "label": "ASUS",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "itwire.com"
+      },
+      {
+        "id": "subject:Druid-AI",
+        "label": "Druid AI",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "druidai.com"
+      },
+      {
+        "id": "subject:Google-Cloud",
+        "label": "Google Cloud",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "github.com"
       },
       {
-        "id": "subject:lio.ai",
-        "label": "lio.ai",
+        "id": "subject:Google-DeepMind",
+        "label": "Google DeepMind",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "blog.google"
+      },
+      {
+        "id": "subject:Lio",
+        "label": "Lio",
         "type": "subject",
         "weight": 1,
         "category": "funding",
         "sourceName": "lio.ai"
-      },
-      {
-        "id": "subject:OpenAI",
-        "label": "OpenAI",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "TechCrunch：AI（RSS）"
       },
       {
         "id": "subject:Pipeshift",
@@ -32850,28 +32628,36 @@
         "sourceName": "ycombinator.com"
       },
       {
-        "id": "subject:SaaS-公司开始探索-AI-Agent-的商业化路径",
-        "label": "SaaS 公司开始探索 AI Agent 的商业化路径",
+        "id": "subject:SaaS-companies",
+        "label": "SaaS companies",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "saasmag.com"
       },
       {
-        "id": "subject:Sakana-AI-押注能自我改进的-AI，欲打破前沿实验室的算力军备竞赛",
-        "label": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+        "id": "subject:Sakana-AI",
+        "label": "Sakana AI",
         "type": "subject",
         "weight": 1,
         "category": "product-service",
         "sourceName": "The Decoder：AI News（RSS）"
       },
       {
-        "id": "subject:Snowflake-扩大-AWS-合作并承诺-60-亿美元-AI-投入",
-        "label": "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入",
+        "id": "subject:Snowflake",
+        "label": "Snowflake",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "snowflake.com"
+      },
+      {
+        "id": "subject:UK-police",
+        "label": "UK police",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "IT之家（RSS）"
       },
       {
         "id": "signal:track-ai-agent",
@@ -32893,13 +32679,6 @@
         "type": "signal",
         "weight": 3,
         "tag": "customer-enterprise"
-      },
-      {
-        "id": "signal:track-ai-coding",
-        "label": "AI Coding",
-        "type": "signal",
-        "weight": 3,
-        "tag": "track-ai-coding"
       },
       {
         "id": "signal:evidence-product-launch",
@@ -32930,41 +32709,59 @@
         "tag": "track-ai-governance"
       },
       {
+        "id": "signal:track-ai-coding",
+        "label": "AI Coding",
+        "type": "signal",
+        "weight": 2,
+        "tag": "track-ai-coding"
+      },
+      {
         "id": "signal:function-procurement-bidding",
         "label": "采购投标",
         "type": "signal",
         "weight": 1,
         "tag": "function-procurement-bidding"
+      },
+      {
+        "id": "signal:evidence-customer-metric",
+        "label": "客户指标",
+        "type": "signal",
+        "weight": 1,
+        "tag": "evidence-customer-metric"
       }
     ],
     "edges": [
       {
-        "from": "category:案例",
-        "to": "subject:ASUS-Brings-Enterprise",
-        "label": "案例",
-        "weight": 1,
+        "from": "category:产品",
+        "to": "subject:OpenAI",
+        "label": "产品",
+        "weight": 2,
         "cardIds": [
-          "SIG-20260607-A03"
+          "SIG-20260607-A06",
+          "SIG-20260607-A07"
         ],
         "titles": [
-          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
+          "OpenAI 发布 Lockdown Mode 保护敏感数据免受提示词注入攻击",
+          "特朗普政府可能入股OpenAI"
+        ]
+      },
+      {
+        "from": "subject:OpenAI",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260607-A06",
+          "SIG-20260607-A07"
+        ],
+        "titles": [
+          "OpenAI 发布 Lockdown Mode 保护敏感数据免受提示词注入攻击",
+          "特朗普政府可能入股OpenAI"
         ]
       },
       {
         "from": "category:案例",
-        "to": "subject:Druid-AI-帮助全球家电零售商自动化联络中心客服流程",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A02"
-        ],
-        "titles": [
-          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:GitHub",
+        "to": "subject:Agno",
         "label": "案例",
         "weight": 1,
         "cardIds": [
@@ -32976,7 +32773,31 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:GoogleCloudPlatform/agent-starter-pack",
+        "to": "subject:ASUS",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A03"
+        ],
+        "titles": [
+          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Druid-AI",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A02"
+        ],
+        "titles": [
+          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Google-Cloud",
         "label": "案例",
         "weight": 1,
         "cardIds": [
@@ -32984,18 +32805,6 @@
         ],
         "titles": [
           "Google Cloud 发布 Agent Starter Pack 开源模板"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:英国警方被叫停使",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A12"
-        ],
-        "titles": [
-          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
         ]
       },
       {
@@ -33012,7 +32821,7 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:SaaS-公司开始探索-AI-Agent-的商业化路径",
+        "to": "subject:SaaS-companies",
         "label": "案例",
         "weight": 1,
         "cardIds": [
@@ -33024,7 +32833,7 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:Snowflake-扩大-AWS-合作并承诺-60-亿美元-AI-投入",
+        "to": "subject:Snowflake",
         "label": "案例",
         "weight": 1,
         "cardIds": [
@@ -33035,8 +32844,20 @@
         ]
       },
       {
+        "from": "category:案例",
+        "to": "subject:UK-police",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A12"
+        ],
+        "titles": [
+          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
+        ]
+      },
+      {
         "from": "category:产品",
-        "to": "subject:Gemma-4-with-quantization-aware-training",
+        "to": "subject:Google-DeepMind",
         "label": "产品",
         "weight": 1,
         "cardIds": [
@@ -33048,31 +32869,7 @@
       },
       {
         "from": "category:产品",
-        "to": "subject:OpenAI",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A06"
-        ],
-        "titles": [
-          "OpenAI 发布 Lockdown Mode 保护敏感数据免受提示词注入攻击"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:特朗普政府可能入股OpenAI",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A07"
-        ],
-        "titles": [
-          "特朗普政府可能入股OpenAI"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:Sakana-AI-押注能自我改进的-AI，欲打破前沿实验室的算力军备竞赛",
+        "to": "subject:Sakana-AI",
         "label": "产品",
         "weight": 1,
         "cardIds": [
@@ -33083,79 +32880,7 @@
         ]
       },
       {
-        "from": "subject:ASUS-Brings-Enterprise",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A03"
-        ],
-        "titles": [
-          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
-        ]
-      },
-      {
-        "from": "subject:ASUS-Brings-Enterprise",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A03"
-        ],
-        "titles": [
-          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
-        ]
-      },
-      {
-        "from": "subject:ASUS-Brings-Enterprise",
-        "to": "signal:customer-enterprise",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A03"
-        ],
-        "titles": [
-          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
-        ]
-      },
-      {
-        "from": "subject:Druid-AI-帮助全球家电零售商自动化联络中心客服流程",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A02"
-        ],
-        "titles": [
-          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
-        ]
-      },
-      {
-        "from": "subject:Druid-AI-帮助全球家电零售商自动化联络中心客服流程",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A02"
-        ],
-        "titles": [
-          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
-        ]
-      },
-      {
-        "from": "subject:Druid-AI-帮助全球家电零售商自动化联络中心客服流程",
-        "to": "signal:customer-enterprise",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A02"
-        ],
-        "titles": [
-          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
-        ]
-      },
-      {
-        "from": "subject:GitHub",
+        "from": "subject:Agno",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -33167,7 +32892,7 @@
         ]
       },
       {
-        "from": "subject:GitHub",
+        "from": "subject:Agno",
         "to": "signal:track-ai-coding",
         "label": "关联",
         "weight": 1,
@@ -33179,7 +32904,7 @@
         ]
       },
       {
-        "from": "subject:GitHub",
+        "from": "subject:Agno",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -33191,7 +32916,79 @@
         ]
       },
       {
-        "from": "subject:GoogleCloudPlatform/agent-starter-pack",
+        "from": "subject:ASUS",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A03"
+        ],
+        "titles": [
+          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
+        ]
+      },
+      {
+        "from": "subject:ASUS",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A03"
+        ],
+        "titles": [
+          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
+        ]
+      },
+      {
+        "from": "subject:ASUS",
+        "to": "signal:customer-enterprise",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A03"
+        ],
+        "titles": [
+          "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
+        ]
+      },
+      {
+        "from": "subject:Druid-AI",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A02"
+        ],
+        "titles": [
+          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
+        ]
+      },
+      {
+        "from": "subject:Druid-AI",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A02"
+        ],
+        "titles": [
+          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
+        ]
+      },
+      {
+        "from": "subject:Druid-AI",
+        "to": "signal:customer-enterprise",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A02"
+        ],
+        "titles": [
+          "Druid AI 帮助全球家电零售商自动化联络中心客服流程"
+        ]
+      },
+      {
+        "from": "subject:Google-Cloud",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -33203,7 +33000,7 @@
         ]
       },
       {
-        "from": "subject:GoogleCloudPlatform/agent-starter-pack",
+        "from": "subject:Google-Cloud",
         "to": "signal:track-ai-coding",
         "label": "关联",
         "weight": 1,
@@ -33215,7 +33012,7 @@
         ]
       },
       {
-        "from": "subject:GoogleCloudPlatform/agent-starter-pack",
+        "from": "subject:Google-Cloud",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -33224,42 +33021,6 @@
         ],
         "titles": [
           "Google Cloud 发布 Agent Starter Pack 开源模板"
-        ]
-      },
-      {
-        "from": "subject:英国警方被叫停使",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A12"
-        ],
-        "titles": [
-          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
-        ]
-      },
-      {
-        "from": "subject:英国警方被叫停使",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A12"
-        ],
-        "titles": [
-          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
-        ]
-      },
-      {
-        "from": "subject:英国警方被叫停使",
-        "to": "signal:track-ai-governance",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260607-A12"
-        ],
-        "titles": [
-          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
         ]
       },
       {
@@ -33299,7 +33060,7 @@
         ]
       },
       {
-        "from": "subject:SaaS-公司开始探索-AI-Agent-的商业化路径",
+        "from": "subject:SaaS-companies",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -33311,7 +33072,7 @@
         ]
       },
       {
-        "from": "subject:SaaS-公司开始探索-AI-Agent-的商业化路径",
+        "from": "subject:SaaS-companies",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -33323,7 +33084,7 @@
         ]
       },
       {
-        "from": "subject:SaaS-公司开始探索-AI-Agent-的商业化路径",
+        "from": "subject:SaaS-companies",
         "to": "signal:customer-enterprise",
         "label": "关联",
         "weight": 1,
@@ -33335,7 +33096,7 @@
         ]
       },
       {
-        "from": "subject:Snowflake-扩大-AWS-合作并承诺-60-亿美元-AI-投入",
+        "from": "subject:Snowflake",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -33347,7 +33108,7 @@
         ]
       },
       {
-        "from": "subject:Snowflake-扩大-AWS-合作并承诺-60-亿美元-AI-投入",
+        "from": "subject:Snowflake",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -33359,7 +33120,7 @@
         ]
       },
       {
-        "from": "subject:Snowflake-扩大-AWS-合作并承诺-60-亿美元-AI-投入",
+        "from": "subject:Snowflake",
         "to": "signal:track-enterprise-data",
         "label": "关联",
         "weight": 1,
@@ -33371,7 +33132,43 @@
         ]
       },
       {
-        "from": "subject:lio.ai",
+        "from": "subject:UK-police",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A12"
+        ],
+        "titles": [
+          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
+        ]
+      },
+      {
+        "from": "subject:UK-police",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A12"
+        ],
+        "titles": [
+          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
+        ]
+      },
+      {
+        "from": "subject:UK-police",
+        "to": "signal:track-ai-governance",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260607-A12"
+        ],
+        "titles": [
+          "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成"
+        ]
+      },
+      {
+        "from": "subject:Lio",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -33379,11 +33176,11 @@
           "SIG-20260607-A01"
         ],
         "titles": [
-          "Lio 推出面向采购流程的多 Agent 系统"
+          "Lio – The world's first multi agent system for procurement"
         ]
       },
       {
-        "from": "subject:lio.ai",
+        "from": "subject:Lio",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -33391,11 +33188,11 @@
           "SIG-20260607-A01"
         ],
         "titles": [
-          "Lio 推出面向采购流程的多 Agent 系统"
+          "Lio – The world's first multi agent system for procurement"
         ]
       },
       {
-        "from": "subject:lio.ai",
+        "from": "subject:Lio",
         "to": "signal:function-procurement-bidding",
         "label": "关联",
         "weight": 1,
@@ -33403,11 +33200,11 @@
           "SIG-20260607-A01"
         ],
         "titles": [
-          "Lio 推出面向采购流程的多 Agent 系统"
+          "Lio – The world's first multi agent system for procurement"
         ]
       },
       {
-        "from": "subject:Gemma-4-with-quantization-aware-training",
+        "from": "subject:Google-DeepMind",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -33422,34 +33219,34 @@
     "clusters": [
       {
         "id": "agent-workflow-enterprise",
-        "title": "英国警方被叫停使、ASUS Brings Enterprise 记录 Agent 进入采购、数据连接和企业流程",
+        "title": "Agno、ASUS 记录 Agent 进入采购、数据连接和企业流程",
         "direction": "企业工作流",
         "relation": [
           "AI Agent",
           "企业工作流",
           "大中型企业"
         ],
-        "summary": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。 这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
-        "evidenceMeta": "素材：英国警方被叫停使 / ASUS Brings Enterprise / Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-        "detailFocus": "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。 这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
+        "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
+        "evidenceMeta": "素材：Agno / ASUS / Druid AI",
+        "detailFocus": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。 Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
         "todayCount": 8,
         "last7Count": 31,
         "last30Count": 54,
         "subjects": [
           {
-            "label": "英国警方被叫停使",
+            "label": "Agno",
             "count": 1
           },
           {
-            "label": "ASUS Brings Enterprise",
+            "label": "ASUS",
             "count": 1
           },
           {
-            "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+            "label": "Druid AI",
             "count": 1
           },
           {
-            "label": "GitHub",
+            "label": "Google Cloud",
             "count": 1
           }
         ],
@@ -33461,9 +33258,18 @@
         ],
         "supportingCards": [
           {
+            "id": "SIG-20260607-A04",
+            "title": "Agno 发布 GitHub Release Notes Agent",
+            "subject": "Agno",
+            "categoryLabel": "案例",
+            "sourceName": "agno.com",
+            "sourceUrl": "https://www.agno.com/ai-agents/github-release-notes-agent",
+            "date": "2026-06-07"
+          },
+          {
             "id": "SIG-20260607-A03",
             "title": "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案",
-            "subject": "ASUS Brings Enterprise",
+            "subject": "ASUS",
             "categoryLabel": "案例",
             "sourceName": "itwire.com",
             "sourceUrl": "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026",
@@ -33472,25 +33278,16 @@
           {
             "id": "SIG-20260607-A02",
             "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-            "subject": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+            "subject": "Druid AI",
             "categoryLabel": "案例",
             "sourceName": "druidai.com",
             "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
             "date": "2026-06-07"
           },
           {
-            "id": "SIG-20260607-A04",
-            "title": "Agno 发布 GitHub Release Notes Agent",
-            "subject": "GitHub",
-            "categoryLabel": "案例",
-            "sourceName": "agno.com",
-            "sourceUrl": "https://www.agno.com/ai-agents/github-release-notes-agent",
-            "date": "2026-06-07"
-          },
-          {
             "id": "SIG-20260607-A09",
             "title": "Google Cloud 发布 Agent Starter Pack 开源模板",
-            "subject": "GoogleCloudPlatform/agent-starter-pack",
+            "subject": "Google Cloud",
             "categoryLabel": "案例",
             "sourceName": "github.com",
             "sourceUrl": "https://github.com/googlecloudplatform/agent-starter-pack",
@@ -33500,7 +33297,7 @@
       },
       {
         "id": "product-launch-vs-adoption",
-        "title": "特朗普政府可能入股OpenAI、Gemma 4 with quantization-aware training 同日出现在企业 AI 产品发布里",
+        "title": "OpenAI、Google DeepMind 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
@@ -33508,26 +33305,22 @@
           "商业验证"
         ],
         "summary": "Google DeepMind 表示，Gemma 4 的新版本采用量化感知训练（QAT）优化，以显著降低内存需求并提升端侧性能。 OpenAI 推出 Lockdown Mode，旨在降低敏感数据在提示词注入攻击中被泄露的风险。该功能可限制 ChatGPT 在特定场景下对内部指令的响应，但无法完全杜绝注入攻击，仅将安全收益定位在减少敏感信息泄露几率上。Lockdown Mode 的具体启用方式和适用范围尚未公开。 美国总统特朗普表示正在商讨交易，让美国民众能从AI的成功中受益。他透露可能通过获取OpenAI的股权来实现这一目标。相关讨论尚在进行中。",
-        "evidenceMeta": "素材：特朗普政府可能入股OpenAI / Gemma 4 with quantization-aware training / OpenAI",
+        "evidenceMeta": "素材：OpenAI / Google DeepMind / Sakana AI",
         "detailFocus": "Google DeepMind 表示，Gemma 4 的新版本采用量化感知训练（QAT）优化，以显著降低内存需求并提升端侧性能。 OpenAI 推出 Lockdown Mode，旨在降低敏感数据在提示词注入攻击中被泄露的风险。该功能可限制 ChatGPT 在特定场景下对内部指令的响应，但无法完全杜绝注入攻击，仅将安全收益定位在减少敏感信息泄露几率上。Lockdown Mode 的具体启用方式和适用范围尚未公开。 美国总统特朗普表示正在商讨交易，让美国民众能从AI的成功中受益。他透露可能通过获取OpenAI的股权来实现这一目标。相关讨论尚在进行中。",
         "todayCount": 4,
         "last7Count": 43,
         "last30Count": 68,
         "subjects": [
           {
-            "label": "特朗普政府可能入股OpenAI",
-            "count": 1
-          },
-          {
-            "label": "Gemma 4 with quantization-aware training",
-            "count": 1
-          },
-          {
             "label": "OpenAI",
+            "count": 2
+          },
+          {
+            "label": "Google DeepMind",
             "count": 1
           },
           {
-            "label": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+            "label": "Sakana AI",
             "count": 1
           }
         ],
@@ -33541,7 +33334,7 @@
           {
             "id": "SIG-20260607-A05",
             "title": "Google DeepMind 发布支持量化感知训练的 Gemma 4",
-            "subject": "Gemma 4 with quantization-aware training",
+            "subject": "Google DeepMind",
             "categoryLabel": "产品",
             "sourceName": "blog.google",
             "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
@@ -33559,7 +33352,7 @@
           {
             "id": "SIG-20260607-A07",
             "title": "特朗普政府可能入股OpenAI",
-            "subject": "特朗普政府可能入股OpenAI",
+            "subject": "OpenAI",
             "categoryLabel": "产品",
             "sourceName": "TechCrunch：AI（RSS）",
             "sourceUrl": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai",
@@ -33568,7 +33361,7 @@
           {
             "id": "SIG-20260607-A13",
             "title": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
-            "subject": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+            "subject": "Sakana AI",
             "categoryLabel": "产品",
             "sourceName": "The Decoder：AI News（RSS）",
             "sourceUrl": "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs",
@@ -33577,42 +33370,8 @@
         ]
       },
       {
-        "id": "sales-procurement-budget",
-        "title": "采购和收入材料出现 AI Agent 的执行位置",
-        "direction": "采购 / 销售",
-        "relation": [
-          "企业采购",
-          "销售 / 收入流程",
-          "预算治理"
-        ],
-        "summary": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。",
-        "evidenceMeta": "素材来自当日商业信号",
-        "detailFocus": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。",
-        "todayCount": 1,
-        "last7Count": 10,
-        "last30Count": 19,
-        "subjects": [],
-        "categories": [
-          {
-            "label": "融资",
-            "count": 1
-          }
-        ],
-        "supportingCards": [
-          {
-            "id": "SIG-20260607-A01",
-            "title": "Lio 推出面向采购流程的多 Agent 系统",
-            "subject": "Lio 推出面向采购流程的多 Agent 系统",
-            "categoryLabel": "融资",
-            "sourceName": "lio.ai",
-            "sourceUrl": "https://lio.ai/",
-            "date": "2026-06-07"
-          }
-        ]
-      },
-      {
         "id": "function-customer-service",
-        "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程 记录 AI 进入客户接触点",
+        "title": "Druid AI 记录 AI 进入客户接触点",
         "direction": "客户体验",
         "relation": [
           "客户体验",
@@ -33620,14 +33379,14 @@
           "效率指标"
         ],
         "summary": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
-        "evidenceMeta": "素材：Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+        "evidenceMeta": "素材：Druid AI",
         "detailFocus": "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。",
         "todayCount": 1,
         "last7Count": 6,
         "last30Count": 7,
         "subjects": [
           {
-            "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+            "label": "Druid AI",
             "count": 1
           }
         ],
@@ -33641,7 +33400,7 @@
           {
             "id": "SIG-20260607-A02",
             "title": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
-            "subject": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+            "subject": "Druid AI",
             "categoryLabel": "案例",
             "sourceName": "druidai.com",
             "sourceUrl": "https://www.druidai.com/case-studies/druid-ai-agents-automate-customer-support-appliances-retailer?hs_amp=true",
@@ -33660,15 +33419,15 @@
       "last30Count": 136,
       "subjects": [
         {
-          "label": "特朗普政府可能入股OpenAI",
+          "label": "OpenAI",
+          "count": 2
+        },
+        {
+          "label": "Agno",
           "count": 1
         },
         {
-          "label": "英国警方被叫停使",
-          "count": 1
-        },
-        {
-          "label": "ASUS Brings Enterprise",
+          "label": "ASUS",
           "count": 1
         }
       ],
@@ -33717,15 +33476,15 @@
       "last30Count": 129,
       "subjects": [
         {
-          "label": "英国警方被叫停使",
+          "label": "Agno",
           "count": 1
         },
         {
-          "label": "ASUS Brings Enterprise",
+          "label": "ASUS",
           "count": 1
         },
         {
-          "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+          "label": "Druid AI",
           "count": 1
         }
       ],
@@ -33770,15 +33529,15 @@
       "last30Count": 128,
       "subjects": [
         {
-          "label": "英国警方被叫停使",
+          "label": "Agno",
           "count": 1
         },
         {
-          "label": "ASUS Brings Enterprise",
+          "label": "ASUS",
           "count": 1
         },
         {
-          "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+          "label": "Druid AI",
           "count": 1
         }
       ],
@@ -33823,15 +33582,15 @@
       "last30Count": 54,
       "subjects": [
         {
-          "label": "英国警方被叫停使",
+          "label": "Agno",
           "count": 1
         },
         {
-          "label": "ASUS Brings Enterprise",
+          "label": "ASUS",
           "count": 1
         },
         {
-          "label": "Druid AI 帮助全球家电零售商自动化联络中心客服流程",
+          "label": "Druid AI",
           "count": 1
         }
       ],
@@ -33872,15 +33631,15 @@
       "last30Count": 69,
       "subjects": [
         {
-          "label": "特朗普政府可能入股OpenAI",
-          "count": 1
-        },
-        {
-          "label": "Gemma 4 with quantization-aware training",
-          "count": 1
-        },
-        {
           "label": "OpenAI",
+          "count": 2
+        },
+        {
+          "label": "Google DeepMind",
+          "count": 1
+        },
+        {
+          "label": "Sakana AI",
           "count": 1
         }
       ],
@@ -33902,67 +33661,14 @@
           "count": 2
         },
         {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
+          "tag": "scenario-agent-governance",
+          "label": "Agent 权限治理",
           "count": 1
         },
         {
-          "tag": "function-engineering",
-          "label": "工程研发",
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
           "count": 1
-        }
-      ]
-    },
-    {
-      "object": "customer-developer-team",
-      "label": "开发团队",
-      "todayCount": 3,
-      "last7Count": 22,
-      "last30Count": 38,
-      "subjects": [
-        {
-          "label": "GitHub",
-          "count": 1
-        },
-        {
-          "label": "GoogleCloudPlatform/agent-starter-pack",
-          "count": 1
-        },
-        {
-          "label": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 2
-        },
-        {
-          "label": "产品",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 3
-        },
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 2
         }
       ]
     },
@@ -33974,15 +33680,15 @@
       "last30Count": 24,
       "subjects": [
         {
-          "label": "英国警方被叫停使",
-          "count": 1
-        },
-        {
           "label": "OpenAI",
           "count": 1
         },
         {
-          "label": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+          "label": "Sakana AI",
+          "count": 1
+        },
+        {
+          "label": "UK police",
           "count": 1
         }
       ],
@@ -34020,22 +33726,18 @@
       ]
     },
     {
-      "object": "function-engineering",
-      "label": "工程研发",
-      "todayCount": 3,
-      "last7Count": 23,
-      "last30Count": 39,
+      "object": "customer-developer-team",
+      "label": "开发团队",
+      "todayCount": 2,
+      "last7Count": 21,
+      "last30Count": 37,
       "subjects": [
         {
-          "label": "GitHub",
+          "label": "Agno",
           "count": 1
         },
         {
-          "label": "GoogleCloudPlatform/agent-starter-pack",
-          "count": 1
-        },
-        {
-          "label": "Sakana AI 押注能自我改进的 AI，欲打破前沿实验室的算力军备竞赛",
+          "label": "Google Cloud",
           "count": 1
         }
       ],
@@ -34043,31 +33745,72 @@
         {
           "label": "案例",
           "count": 2
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 2
         },
         {
-          "label": "产品",
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 2
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "object": "function-engineering",
+      "label": "工程研发",
+      "todayCount": 2,
+      "last7Count": 22,
+      "last30Count": 38,
+      "subjects": [
+        {
+          "label": "Agno",
           "count": 1
+        },
+        {
+          "label": "Google Cloud",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 3
+          "count": 2
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
+          "count": 2
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
           "count": 2
         }
       ]

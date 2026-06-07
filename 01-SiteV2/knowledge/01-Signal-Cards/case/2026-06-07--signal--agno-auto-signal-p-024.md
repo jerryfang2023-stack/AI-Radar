@@ -2,15 +2,15 @@
 id: SIG-20260607-A04
 type: signal_card
 signal_type: case
-title: "Agno 发布 GitHub Release Notes Agent"
+title: "GitHub release notes agent - Agno"
 date: 2026-06-07
 status: published
 source_title: "GitHub release notes agent - Agno"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T10:12:20.635Z
-updated_at: 2026-06-07T10:12:20.635Z
+created_at: 2026-06-07T12:50:25.607Z
+updated_at: 2026-06-07T12:50:25.607Z
 
 raw_refs: ["R-024"]
 pool_refs: ["P-024"]
@@ -39,15 +39,15 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
-signal_owner: "GitHub release notes agent"
+signal_owner: "Agno"
 
 frontend:
-  displayTitle: "Agno 发布 GitHub Release Notes Agent"
+  displayTitle: "GitHub release notes agent - Agno"
   sourceLinks:
     - "https://www.agno.com/ai-agents/github-release-notes-agent"
 ---
 
-# Agno 发布 GitHub Release Notes Agent
+# GitHub release notes agent - Agno
 
 ## 新闻事实
 
@@ -59,7 +59,7 @@ GitHub release notes agent - Agno
 
 ## 价值描述
 
-GitHub release notes agent 的案例信号可用于观察 AI 是否已经进入 企业智能体协作流程，以及后续是否出现客户、流程或结果指标。
+Agno 的案例信号可用于观察 AI 是否已经进入 企业智能体协作流程，以及后续是否出现客户、流程或结果指标。
 
 ## 可见原文片段
 

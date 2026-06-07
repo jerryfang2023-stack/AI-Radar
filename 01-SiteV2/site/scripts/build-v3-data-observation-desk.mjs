@@ -406,6 +406,28 @@ function subjectFromUrl(url = "") {
     if (host === "stripe.com" && pathname.includes("cognition")) return "Cognition";
     if (host === "ycombinator.com" && pathname.includes("confident-ai")) return "Confident AI";
     if (host === "en.wikipedia.org" && pathname.includes("sam_altman")) return "Sam Altman";
+    if (host === "zoneandco.com") return "Zone & Co";
+    if (host === "lio.ai") return "Lio";
+    if (host === "druidai.com") return "Druid AI";
+    if (host === "snowflake.com") return "Snowflake";
+    if (host === "itwire.com" && pathname.includes("asus")) return "ASUS";
+    if (host === "github.blog" && (pathname.includes("agent-hq") || pathname.includes("welcome-home-agents"))) return "GitHub";
+    if (host === "metronome.com" && pathname.includes("hugging-face")) return "Hugging Face";
+    if (host === "ycombinator.com" && pathname.includes("/companies/pipeshift")) return "Pipeshift";
+    if ((host === "blog.google" || host.endsWith("googleblog.com")) && pathname.includes("gemma")) return "Google DeepMind";
+    if (host === "github.com" && pathname.includes("googlecloudplatform/agent-starter-pack")) return "Google Cloud";
+    if (host === "agno.com" && pathname.includes("github-release-notes-agent")) return "Agno";
+    if (host === "techcrunch.com" && pathname.includes("openai") && pathname.includes("lockdown")) return "OpenAI";
+    if (host === "techcrunch.com" && pathname.includes("openai") && pathname.includes("equity-stake")) return "OpenAI";
+    if (host === "the-decoder.com" && pathname.includes("sakana-ai")) return "Sakana AI";
+    if (host === "banyan-vc.com") return "Banyan VC";
+    if (host === "ithome.com" && pathname.includes("960/880")) return "Apple";
+    if (host === "ithome.com" && pathname.includes("961/045")) return "UK police";
+    if (host === "ithome.com" && pathname.includes("960/909")) return "CCTV";
+    if (host === "cnbc.com" && pathname.includes("google-to-pay-spacex")) return "Google / SpaceX";
+    if (host === "techcrunch.com" && pathname.includes("google-will-pay-spacex")) return "Google / SpaceX";
+    if (host === "growthlist.co" && pathname.includes("yc-startups")) return "Y Combinator";
+    if (host === "saasmag.com" && pathname.includes("monetizing-ai-agents")) return "SaaS companies";
   } catch {
     // Fall through to title-based detection.
   }
@@ -455,6 +477,9 @@ function normalizeSubject(value = "") {
   if (/NeoCognition/iu.test(clean)) return "NeoCognition";
   if (/Nimble/iu.test(clean)) return "Nimble";
   if (/Airspeed/iu.test(clean)) return "Airspeed";
+  if (/^Druidai$/iu.test(clean)) return "Druid AI";
+  if (/^Saasmag$/iu.test(clean)) return "SaaS Magazine";
+  if (/^Ithome$/iu.test(clean)) return "";
   const titled = subjectFromTitle(clean);
   if (titled && titled !== clean && clean.length > titled.length + 2) return normalizeSubject(titled);
   if (/^谷歌$/u.test(clean)) return "Google";
@@ -467,13 +492,14 @@ function normalizeSubject(value = "") {
 
 function subjectLooksLikeTitle(value = "") {
   const clean = cleanSubject(value);
-  return clean.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把)/u.test(clean);
+  return clean.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents)/iu.test(clean);
 }
 
 function isWeakSubject(value = "") {
   const clean = normalizeSubject(value);
   if (!clean || isDiscoveryLabel(clean)) return true;
   if (/^\d{4}$/u.test(clean)) return true;
+  if (/^[a-z0-9.-]+\.(com|org|net|io|ai|dev|co)$/iu.test(clean)) return true;
   if (/^CEO\s+/iu.test(clean)) return true;
   if (/把 AI 用进/u.test(clean)) return true;
   if (subjectLooksLikeTitle(value)) return true;
@@ -656,12 +682,11 @@ function frontstageSubject(fm, sourceUrl, sourceName, rawTitle, title) {
   if (override) return override;
   const urlSubject = normalizeSubject(subjectFromUrl(sourceUrl));
   const titleSubject = normalizeSubject(subjectFromTitle(rawTitle) || subjectFromTitle(title));
-  const derived = urlSubject || titleSubject;
   if (urlSubject) return urlSubject;
-  if (isDiscoveryLabel(sourceName) && derived) return derived;
-  return derived
-    || explicit
-    || (!isWeakSubject(sourceName) ? normalizeSubject(sourceName) : "")
+  if (explicit) return explicit;
+  if (isDiscoveryLabel(sourceName) && titleSubject && !isWeakSubject(titleSubject)) return titleSubject;
+  return (!isWeakSubject(sourceName) ? normalizeSubject(sourceName) : "")
+    || (titleSubject && !isWeakSubject(titleSubject) ? titleSubject : "")
     || "未标注主体";
 }
 
@@ -1391,7 +1416,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         title,
         originalTitle: rawTitle === title ? "" : rawTitle,
         date: activeDate,
-        subject: normalizeSubject(subjectFromUrl(sourceUrl) || subjectFromTitle(rawTitle) || domain(sourceUrl) || "未标注主体"),
+        subject: normalizeSubject(subjectFromUrl(sourceUrl) || (!isWeakSubject(subjectFromTitle(rawTitle)) ? subjectFromTitle(rawTitle) : "") || (!isWeakSubject(domain(sourceUrl)) ? domain(sourceUrl) : "") || "未标注主体"),
         source: domain(sourceUrl) || poolValue(section, "source"),
         sourceName: domain(sourceUrl) || poolValue(section, "source"),
         sourceUrl,

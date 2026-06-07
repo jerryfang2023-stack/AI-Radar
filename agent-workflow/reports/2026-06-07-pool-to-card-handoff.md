@@ -1,6 +1,6 @@
 # 2026-06-07 Pool-to-Card Handoff
 
-- generated_at: 2026-06-07T10:12:20.891Z
+- generated_at: 2026-06-07T12:50:25.849Z
 - written_count: 14
 - merged_count: 0
 - skipped_count: 0
@@ -43,18 +43,18 @@
 ## Written
 
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-07--signal--lio-auto-signal-p-001.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--druidai-auto-signal-p-006.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--asus-brings-enterprise-auto-signal-p-008.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--github-release-notes-agent-auto-signal-p-024.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-07--signal--gemma-4-with-quantization-auto-signal-p-022.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--druid-ai-auto-signal-p-006.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--asus-auto-signal-p-008.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--agno-auto-signal-p-024.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-07--signal--google-deepmind-auto-signal-p-022.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-07--signal--openai-auto-signal-p-029.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-07--signal--president-donald-trump-auto-signal-p-030.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-07--signal--openai-auto-signal-p-030.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--snowflake-auto-signal-p-003.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--googlecloudplatform-agent-auto-signal-p-014.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--saasmag-auto-signal-p-039.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--saas-companies-auto-signal-p-039.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--pipeshift-auto-signal-p-011.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--ithome-auto-signal-p-026.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-07--signal--the-decoder-auto-signal-p-034.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-07--signal--uk-police-auto-signal-p-026.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-07--signal--sakana-ai-auto-signal-p-034.md
 - 01-SiteV2/content/04-business-signals/signals/2026-06-07-signals.md
 
 ## Merged
