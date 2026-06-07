@@ -9,8 +9,8 @@ source_title: "Gemma 4 with quantization-aware training"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T06:18:33.041Z
-updated_at: 2026-06-07T06:18:33.041Z
+created_at: 2026-06-07T09:09:28.577Z
+updated_at: 2026-06-07T09:09:28.577Z
 
 raw_refs: ["R-022"]
 pool_refs: ["P-022"]

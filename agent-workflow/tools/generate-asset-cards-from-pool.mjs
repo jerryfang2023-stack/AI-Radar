@@ -884,7 +884,7 @@ function isGenericReportOrListSection(section) {
   if (/yc\.com\/companies\/industry|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
     return true;
   }
-  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(titleUrlSource);
+  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(titleUrlSource);
 }
 
 function corePoolSemanticIssues(section) {
@@ -1033,12 +1033,15 @@ function isSingleCompanyFundingSignal(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const haystack = `${title} ${text} ${sourceUrl}`;
-  if (/(funding map|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(haystack)) {
+  if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(haystack)) {
     return false;
   }
+  const hasDirectRoundAnnouncement =
+    /\bannounc(?:es|ed|ing|ement)?\b.{0,120}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,80}\b(?:pre-seed|seed|series\s+[a-z])\b/iu.test(haystack)
+    || /\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,80}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(haystack);
   const hasFundingAction = /\b(raises|raised|lands|landed|secures|secured|closes|closed|announc(?:es|ed|ing)?|snags|bags|pulls in|gets|receives)\b.{0,120}\b(funding|financing|investment|round|seed|series|pre-seed)\b/iu.test(haystack);
   const hasAmountOrRound = /[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\b\d+(?:\.\d+)?\s?(?:million|billion)\b|\b(pre-seed|seed|series\s+[a-z])\b/iu.test(haystack);
-  return hasFundingAction && hasAmountOrRound;
+  return hasDirectRoundAnnouncement || (hasFundingAction && hasAmountOrRound);
 }
 
 function scenarioFromText(text) {
@@ -1098,7 +1101,13 @@ function isEligibleAutoSignal(section) {
   const sourceLevel = value(section, "source_level");
   const importanceType = value(section, "importance_type");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
-  return corePoolSemanticIssues(section).length === 0
+  const semanticIssues = corePoolSemanticIssues(section);
+  const directFundingOverride =
+    importanceType === "important_funding"
+    && semanticIssues.length === 0
+    && /Announcing\b.{0,140}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,100}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(textForInference(section));
+  if (directFundingOverride) return true;
+  return semanticIssues.length === 0
     && /^(S|A|B)$/u.test(sourceLevel)
     && (importanceType !== "important_funding" || isSingleCompanyFundingSignal(section))
     && sourceUrl
@@ -1204,12 +1213,23 @@ function autoSignalsFromPool(sections, explicitSpecs) {
       .filter(Boolean)
   );
   const candidates = [];
+  const debugRejects = [];
   let index = 1;
   for (const [poolRef, section] of sections) {
     if (selectedPoolRefs.has(poolRef)) continue;
-    if (!isEligibleAutoSignal(section)) continue;
+    if (!isEligibleAutoSignal(section)) {
+      if (args.get("debug-auto-signals") === "true" && /core_pool/u.test(value(section, "pool_routes"))) {
+        debugRejects.push({ poolRef, title: poolTitle(section), issues: corePoolSemanticIssues(section) });
+      }
+      continue;
+    }
     const spec = autoSignalSpec(poolRef, section, index);
-    if (!spec) continue;
+    if (!spec) {
+      if (args.get("debug-auto-signals") === "true" && /core_pool/u.test(value(section, "pool_routes"))) {
+        debugRejects.push({ poolRef, title: poolTitle(section), issues: ["auto_signal_spec_null"] });
+      }
+      continue;
+    }
     const clusterKey = signalClusterKey(spec, section);
     if (selectedClusterKeys.has(clusterKey)) continue;
     candidates.push({ spec, section, clusterKey, score: signalPriorityScore(spec, section) });
@@ -1241,6 +1261,13 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   for (const item of picked) {
     selectedPoolRefs.add(item.spec.poolRef);
     selectedClusterKeys.add(item.clusterKey);
+  }
+  if (args.get("debug-auto-signals") === "true") {
+    console.log(JSON.stringify({
+      auto_signal_candidate_count: candidates.length,
+      auto_signal_picked_count: picked.length,
+      auto_signal_debug_rejects: debugRejects,
+    }, null, 2));
   }
   return picked.map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1));
 }

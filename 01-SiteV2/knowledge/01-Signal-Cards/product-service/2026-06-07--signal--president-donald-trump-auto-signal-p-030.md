@@ -1,5 +1,5 @@
 ---
-id: SIG-20260607-A12
+id: SIG-20260607-A07
 type: signal_card
 signal_type: product_service
 title: "特朗普政府可能入股OpenAI"
@@ -9,8 +9,8 @@ source_title: "特朗普政府可能入股OpenAI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T06:18:33.041Z
-updated_at: 2026-06-07T06:18:33.041Z
+created_at: 2026-06-07T09:09:28.577Z
+updated_at: 2026-06-07T09:09:28.577Z
 
 raw_refs: ["R-031"]
 pool_refs: ["P-030"]

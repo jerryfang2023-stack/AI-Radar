@@ -184,7 +184,7 @@
   }
 
   function valueText(card, fact = "") {
-    const text = cleanJudgmentText(card.summary || "");
+    const text = cleanJudgmentText(card.frontstageValueDescription || card.summary || "");
     if (!text || isWeakFact(text)) return "这条材料可用于补充当日 AI 商业变化的来源和背景。";
     if (fact && textRepeatsAny(text, [fact])) return "这条材料可用于补充当日 AI 商业变化的来源和背景。";
     return compactText(text, 220);

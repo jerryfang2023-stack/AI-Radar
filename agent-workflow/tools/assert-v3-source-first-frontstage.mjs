@@ -113,7 +113,7 @@ const largeVendorPatterns = [
   ["microsoft", /\bMicrosoft\b|\bCopilot\b/iu],
   ["nvidia", /\bNVIDIA\b|\bNvidia\b/iu],
   ["openai", /\bOpenAI\b|\bChatGPT\b/iu],
-  ["amazon", /\bAWS\b|\bAmazon\b|\bBedrock\b/iu],
+  ["amazon", /\bAWS\b|\bAmazon\b|\bAmazon\s+Bedrock\b/iu],
   ["meta", /\bMeta\b|\bLlama\b/iu],
   ["apple", /\bApple\b/iu],
   ["oracle", /\bOracle\b/iu],
@@ -153,6 +153,18 @@ for (const [date, items] of frontstageByDate.entries()) {
     const currentScore = Number(items[index].frontstageRankScore) || 0;
     const nextScore = Number(items[index + 1]?.frontstageRankScore) || Number.NEGATIVE_INFINITY;
     if (nextScore > currentScore) issues.push(`frontstage ${date} is not sorted by importance at index ${index}`);
+    if (!Number.isFinite(Number(items[index].frontstageRankScore))) {
+      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is missing frontstageRankScore`);
+    }
+    if (!Array.isArray(items[index].frontstageSelectionReasons) || !items[index].frontstageSelectionReasons.length) {
+      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is missing selection reasons`);
+    }
+    if (!Array.isArray(items[index].poolRoutes) || !items[index].poolRoutes.includes("core_pool")) {
+      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is not produced from core_pool`);
+    }
+    if (items[index].frontstageSelectionTier === "supply-fill" && !items[index].frontstageSupplyFill) {
+      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} has supply-fill tier without supply-fill flag`);
+    }
     const vendorKey = items[index].largeVendorKey || largeVendorKeyForCard(items[index]);
     if (!vendorKey) continue;
     largeVendorTotal += 1;

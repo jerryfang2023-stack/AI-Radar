@@ -1,5 +1,5 @@
 ---
-id: SIG-20260607-A09
+id: SIG-20260607-A10
 type: signal_card
 signal_type: case
 title: "How SaaS Companies Are Monetizing AI Agents in 2026"
@@ -9,8 +9,8 @@ source_title: "How SaaS Companies Are Monetizing AI Agents in 2026"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T06:18:33.041Z
-updated_at: 2026-06-07T06:18:33.041Z
+created_at: 2026-06-07T09:09:28.577Z
+updated_at: 2026-06-07T09:09:28.577Z
 
 raw_refs: ["R-040"]
 pool_refs: ["P-039"]

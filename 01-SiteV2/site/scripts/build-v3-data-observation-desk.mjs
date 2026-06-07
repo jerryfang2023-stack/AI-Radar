@@ -814,6 +814,17 @@ function translateKnownRawExcerpt(value = "", type = "") {
     [/raised \$10 million in new funding/iu, "Archestra 获得 1000 万美元新融资，用于扩大大型企业部署和开源生态。"],
     [/Data is crucial for procurement teams/iu, "采购团队需要外部和内部数据来跟踪支出、管理供应商关系和识别供应风险。"],
     [/more than 60% of chief procurement officers/iu, "Deloitte 调查显示，超过 60% 的首席采购官正在使用高级分析。"],
+    [/ASUS Zenni Claw.*safe, controlled, reliable agentic AI experiences/iu, "华硕在 Computex 2026 展示 Zenni Claw AI 方案，强调为企业提供安全、可控、可靠的 Agentic AI 体验。"],
+    [/ASUS AI x ESG Platform.*sustainability data.*supply chain/iu, "华硕 AI x ESG Platform 将可持续发展数据转化为 ESG、碳排和供应链洞察，面向企业治理与运营场景。"],
+    [/Customers who track parcels in real time.*washing machine breaks down/iu, "Druid AI 案例描述家电客户期望在洗衣机周末故障时，也能获得类似实时物流、银行 App 和午夜预约的即时服务体验。"],
+    [/company operating across 25\+ European markets.*25 languages/iu, "案例客户覆盖 25 个以上欧洲市场、约 25 种语言，客服自动化需求来自跨市场和多品牌服务复杂度。"],
+    [/Pipeshift helps engineering teams run real-time inference in production/iu, "Pipeshift 为工程团队提供生产环境实时推理服务，重点是满足延迟和吞吐 SLA。"],
+    [/optimized runtimes to meet latency\/throughput SLAs.*auto-scales and routes/iu, "Pipeshift 将优化运行时与基础设施编排结合，用于自动扩缩容和路由实时推理工作负载。"],
+    [/collaboration brings generative and agentic AI capabilities directly to enterprise data/iu, "Snowflake 与 AWS 的合作把生成式 AI 和 Agentic AI 能力直接带到企业数据层，帮助共同客户更快、更安全地部署 AI 应用。"],
+    [/Multi-year strategic agreement expands joint investments in customer success/iu, "Snowflake 与 AWS 的多年战略协议扩大了面向客户成功、产品集成和市场进入的联合投入。"],
+    [/Salesforce hit \$800 million in Agentforce ARR.*29,000 deals/iu, "材料称 Salesforce Agentforce 在 2026 财年末达到 8 亿美元 ARR，并在第四季度完成 2.9 万笔交易。"],
+    [/Our new versions of the Gemma 4 family are optimized with Quantization-Aware Training.*reduce memory requirements.*on-device performance/iu, "Google DeepMind 表示，Gemma 4 的新版本采用量化感知训练（QAT）优化，以显著降低内存需求并提升端侧性能。"],
+    [/Gemma 4 QAT models.*mobile and laptop efficiency/iu, "Gemma 4 QAT 模型面向手机和笔记本效率优化，核心目标是降低本地设备部署的内存占用。"],
   ];
   const match = rules.find(([pattern]) => pattern.test(text));
   if (match) return match[1];
@@ -960,8 +971,8 @@ function sourceTextFragment(raw, rawDisplayTitle = "") {
     .map(stripSourceNoise)
     .filter(Boolean)
     .filter((item) => !isMechanicalFrontstageText(item))
+    .filter(isSubstantiveSourceFragment)
     .filter((item) => !textRepeatsAny(item, [rawDisplayTitle], 0.9))
-    .filter((item) => /AI|agent|LLM|Gemini|Claude|OpenAI|Google|Nvidia|IBM|enterprise|customer|workflow|model|\d/iu.test(item))
     .filter((item) => !/^Back to Articles\b|^More from this author\b|^Community\b/iu.test(item));
   return short(candidates[0] || "", 260);
 }
@@ -969,15 +980,15 @@ function sourceTextFragment(raw, rawDisplayTitle = "") {
 function buildSourceExcerpt(raw, highlights = [], rawDisplayTitle = "") {
   const rawExcerpt = raw.keyExcerpts
     .map((item) => translatedSourcePoint(item.text, item.type))
-    .find((item) => item && !/原题为/u.test(item));
+    .find((item) => item && !/原题为/u.test(item) && isSubstantiveSourceFragment(item));
   if (rawExcerpt) return rawExcerpt;
   const sentenceExcerpt = sourceSentences(raw.fullText)
     .map((item) => translatedSourcePoint(item))
-    .find((item) => item && !/原题为/u.test(item));
+    .find((item) => item && !/原题为/u.test(item) && isSubstantiveSourceFragment(item));
   if (sentenceExcerpt) return sentenceExcerpt;
   const visible = publicVisibleFragment(raw.visibleFragment);
-  if (visible) return visible;
-  const highlightExcerpt = highlights.find((item) => hasCjk(item) && !/^原始来源|本地 Raw\/Pool/u.test(item) && !/原题为/u.test(item));
+  if (isSubstantiveSourceFragment(visible)) return visible;
+  const highlightExcerpt = highlights.find((item) => hasCjk(item) && !/^原始来源|本地 Raw\/Pool/u.test(item) && !/原题为/u.test(item) && isSubstantiveSourceFragment(item));
   if (highlightExcerpt) return highlightExcerpt;
   return sourceTextFragment(raw, rawDisplayTitle);
 }
@@ -1088,6 +1099,128 @@ function frontstageImportanceScore(card = {}) {
   return score;
 }
 
+function frontstageText(card = {}) {
+  return [
+    card.title,
+    card.originalTitle,
+    card.subject,
+    card.sourceName,
+    card.sourceUrl,
+    card.translatedFact,
+    card.summary,
+    card.visibleFragment,
+    ...(card.originalHighlights || []),
+    ...(card.flatTags || []),
+  ].filter(Boolean).join(" ");
+}
+
+function isIsoDateOnlyFragment(value = "") {
+  const text = String(value || "").trim();
+  return /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/u.test(text) && text.length < 45;
+}
+
+function isSubstantiveSourceFragment(value = "") {
+  const text = stripSourceNoise(value).replace(/\s+/gu, " ").trim();
+  if (text.length < 45) return false;
+  if (isIsoDateOnlyFragment(text)) return false;
+  if (/^https?:\/\//iu.test(text)) return false;
+  if (!/[A-Za-z\u4e00-\u9fff]/u.test(text)) return false;
+  return /AI|agent|LLM|Gemini|Claude|OpenAI|Google|Nvidia|IBM|enterprise|customer|workflow|model|funding|raises|seed|Series|cloud|security|police|court|retailer|inference|deployment|QAT|融资|客户|部署|监管|法院|警察|模型|产品|企业|资金|美元|\$|\d/iu.test(text);
+}
+
+function frontstageEvidenceScore(card = {}) {
+  let score = sourceLevelScore(card.sourceLevel);
+  if (isSubstantiveSourceFragment(card.translatedFact)) score += 28;
+  if ((card.originalHighlights || []).some(isSubstantiveSourceFragment)) score += 22;
+  if (isSubstantiveSourceFragment(card.visibleFragment)) score += 16;
+  if (card.sourceUrl) score += 8;
+  if (card.publishedAt) score += 4;
+  return score;
+}
+
+function businessImpactScore(card = {}) {
+  const text = frontstageText(card);
+  let score = 0;
+  if (card.category === "funding") score += 24;
+  if (card.category === "case") score += 20;
+  if (card.category === "product-service") score += 10;
+  if (/\$ ?\d|\d+ ?(?:m|million|b|billion)\b|亿美元|百万|融资|seed|Series|funding|raises|commitment/iu.test(text)) score += 22;
+  if (/police|court|legal|law|regulat|government|administration|equity stake|security|Lockdown|prompt injection|司法|法院|警察|监管|政府|合规|安全/iu.test(text)) score += 22;
+  if (/equity stake|state stake|public stake|Trump|national interest|入股|持股|股权|特朗普|公共利益|国家利益/iu.test(text)) score += 75;
+  if (/customer|retailer|enterprise|workflow|procurement|deployment|case|joint customers|客户|企业|流程|采购|部署|门店|零售/iu.test(text)) score += 18;
+  if (/partnership|integration|collaboration|AWS|cloud|platform|inference|edge|QAT|model|Agent Starter|合作|集成|云|推理|边缘|模型/iu.test(text)) score += 12;
+  if (/agent|agents|automation|AI appliance|support automation|工作流|自动化/iu.test(text)) score += 8;
+  return score;
+}
+
+function genericFrontstagePenalty(card = {}) {
+  const text = frontstageText(card);
+  let penalty = 0;
+  if (isGenericFrontstageCandidate(card)) penalty += 55;
+  if (/top ai pre-seed investors|pre-seed investors|ranked by funding|monetizing ai agents|release notes agent|complete guide|market report|use cases|startup ideas|list|榜单|指南|报告|清单/iu.test(text)) penalty += 28;
+  if (!card.translatedFact && !(card.originalHighlights || []).some(isSubstantiveSourceFragment)) penalty += 18;
+  return penalty;
+}
+
+function frontstageEditorialScore(card = {}) {
+  return frontstageImportanceScore(card) + frontstageEvidenceScore(card) + businessImpactScore(card) - genericFrontstagePenalty(card);
+}
+
+function frontstageSelectionReasons(card = {}) {
+  const text = frontstageText(card);
+  const reasons = [];
+  if (/\$ ?\d|\d+ ?(?:m|million|b|billion)\b|亿美元|百万|融资|seed|Series|funding|raises|commitment/iu.test(text)) {
+    reasons.push("涉及资金流向、预算规模或融资信号");
+  }
+  if (/equity stake|state stake|public stake|Trump|national interest|入股|持股|股权|特朗普|公共利益|国家利益/iu.test(text)) {
+    reasons.push("涉及政府持股、公共利益或关键 AI 公司治理边界");
+  }
+  if (/police|court|legal|law|regulat|government|administration|equity stake|security|Lockdown|prompt injection|司法|法院|警察|监管|政府|合规|安全/iu.test(text)) {
+    reasons.push("影响 AI 落地的治理、合规或安全边界");
+  }
+  if (/customer|retailer|enterprise|workflow|procurement|deployment|case|joint customers|客户|企业|流程|采购|部署|门店|零售/iu.test(text)) {
+    reasons.push("能观察真实客户、业务流程或采购场景");
+  }
+  if (/partnership|integration|collaboration|AWS|cloud|platform|inference|edge|QAT|model|Agent Starter|合作|集成|云|推理|边缘|模型/iu.test(text)) {
+    reasons.push("指向平台能力、交付成本或生态合作变化");
+  }
+  if (frontstageEvidenceScore(card) >= 40) reasons.push("有较完整的原文事实支撑");
+  if (!reasons.length) reasons.push("提供了当天 AI 商业变化的可核验事实");
+  return reasons.slice(0, 3);
+}
+
+function frontstageValueDescription(card = {}, reasons = []) {
+  const reasonText = reasons.length ? reasons.join("；") : "提供了当天 AI 商业变化的可核验事实";
+  return short(`值得关注：${reasonText}。`, 220);
+}
+
+function annotateFrontstageCandidate(card = {}) {
+  const largeVendorKey = card.largeVendorKey || largeVendorKeyForCard(card);
+  const annotated = {
+    ...card,
+    largeVendorKey,
+    largeVendor: Boolean(largeVendorKey),
+  };
+  const evidenceScore = frontstageEvidenceScore(annotated);
+  const rankScore = frontstageEditorialScore(annotated);
+  const reasons = frontstageSelectionReasons(annotated);
+  const qualityWarnings = [];
+  if (isGenericFrontstageCandidate(annotated)) qualityWarnings.push("资料型、榜单型或工具型素材，默认不作为 Top 10 优先项");
+  if (evidenceScore < 35) qualityWarnings.push("原文事实支撑偏弱，需优先补充 Raw/Pool 证据");
+  if (!isSubstantiveSourceFragment(annotated.visibleFragment)) qualityWarnings.push("可见原文片段不足，已降权处理");
+  return {
+    ...annotated,
+    frontstageRankScore: rankScore,
+    frontstageEditorialScore: rankScore,
+    frontstageEvidenceScore: evidenceScore,
+    frontstageSelectionReasons: reasons,
+    frontstageValueDescription: frontstageValueDescription(annotated, reasons),
+    frontstageQualityWarnings: qualityWarnings,
+    frontstageGenericCandidate: isGenericFrontstageCandidate(annotated),
+    fromCorePool: (annotated.poolRoutes || []).includes("core_pool"),
+  };
+}
+
 function isGenericFrontstageCandidate(card = {}) {
   const text = [
     card.title,
@@ -1097,11 +1230,11 @@ function isGenericFrontstageCandidate(card = {}) {
     card.source,
   ].filter(Boolean).join(" ");
   if (/\.pdf(?:$|[?#])|docs\.github\.com|pypi\.org\/project|aws\.amazon\.com\/marketplace/iu.test(text)) return true;
-  if (/startup ideas|buying criteria|adoption 2026|funding record|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|implementation report|market report|complete guide|framework for investors|vertical report|fastest growing|companies\s*&\s*verified leads|complete batch breakdown|\btop\s+\d+\b|\buse cases\b|field guide|glossary|open source toolkit|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(text)) return true;
+  if (/startup ideas|buying criteria|adoption 2026|funding record|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|implementation report|market report|complete guide|framework for investors|vertical report|fastest growing|companies\s*&\s*verified leads|complete batch breakdown|\btop\s+\d+\b|\buse cases\b|field guide|glossary|open source toolkit|ai citations\s*&\s*visibility|about github copilot cloud agent|monetizing ai agents|release notes agent/iu.test(text)) return true;
   return card.category !== "funding" && /^investing in\b/iu.test(String(card.title || ""));
 }
 
-function selectDailyFrontstageCards(cards = [], limit = 10, largeVendorTotalLimit = 3, largeVendorPerCompanyLimit = 1) {
+function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalLimit = 3, largeVendorPerCompanyLimit = 1) {
   const byDate = new Map();
   for (const card of cards) {
     if (!card.date) continue;
@@ -1110,35 +1243,63 @@ function selectDailyFrontstageCards(cards = [], limit = 10, largeVendorTotalLimi
     byDate.set(card.date, list);
   }
   const selected = [];
+  const reports = [];
   for (const [date, items] of byDate.entries()) {
     let datePicked = 0;
     let largeVendorTotal = 0;
     const largeVendorCounts = new Map();
-    const ranked = items
-      .filter((card) => !isGenericFrontstageCandidate(card))
-      .map((card) => ({
-        ...card,
-        largeVendorKey: card.largeVendorKey || largeVendorKeyForCard(card),
-      }))
-      .map((card) => {
-        const rankedCard = { ...card, largeVendor: Boolean(card.largeVendorKey) };
-        return { ...rankedCard, frontstageRankScore: frontstageImportanceScore(rankedCard) };
-      })
+    const annotated = items.map(annotateFrontstageCandidate);
+    const coreCandidates = annotated.filter((card) => card.fromCorePool);
+    const preferred = annotated
+      .filter((card) => card.fromCorePool)
+      .filter((card) => !card.frontstageGenericCandidate && card.frontstageEvidenceScore >= 30)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
+    const preferredIds = new Set(preferred.map((card) => card.id));
+    const fallback = coreCandidates
+      .filter((card) => !preferredIds.has(card.id))
+      .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
+    const ranked = [...preferred, ...fallback];
+    const rejected = [];
     for (const card of ranked) {
       if (datePicked >= limit) break;
       if (card.largeVendorKey) {
         const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
-        if (largeVendorTotal >= largeVendorTotalLimit) continue;
-        if (vendorCount >= largeVendorPerCompanyLimit) continue;
+        if (largeVendorTotal >= largeVendorTotalLimit) {
+          rejected.push({ id: card.id, reason: "large-company total cap" });
+          continue;
+        }
+        if (vendorCount >= largeVendorPerCompanyLimit) {
+          rejected.push({ id: card.id, reason: `same large-company cap: ${card.largeVendorKey}` });
+          continue;
+        }
         largeVendorTotal += 1;
         largeVendorCounts.set(card.largeVendorKey, vendorCount + 1);
       }
-      selected.push(card);
+      const selectionTier = preferredIds.has(card.id) ? "editorial" : "supply-fill";
+      selected.push({
+        ...card,
+        summary: card.frontstageValueDescription,
+        frontstageSelectionTier: selectionTier,
+        frontstageSupplyFill: selectionTier === "supply-fill",
+      });
       datePicked += 1;
     }
+    reports.push({
+      date,
+      target: limit,
+      candidateCount: items.length,
+      coreCandidateCount: coreCandidates.length,
+      qualifiedCount: preferred.length,
+      selectedCount: datePicked,
+      supplyConstrained: preferred.length < limit,
+      largeCompanySelectedCount: largeVendorTotal,
+      rejectedByQuota: rejected.slice(0, 12),
+    });
   }
-  return selected.sort((a, b) => dateValue(b.date) - dateValue(a.date) || b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
+  return {
+    cards: selected.sort((a, b) => dateValue(b.date) - dateValue(a.date) || b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id)),
+    reports: reports.sort((a, b) => dateValue(b.date) - dateValue(a.date)),
+  };
 }
 
 function cardFromFile(file, category) {
@@ -1202,6 +1363,7 @@ function cardFromFile(file, category) {
     sourceUrl,
     sourceLevel,
     importanceScore,
+    poolRoutes: nestedList(fm, "primary_raw", "pool_routes"),
     publishedAt: raw.publishedAt || scalar(fm, "published_at") || scalar(fm, "original_date") || "",
     tags,
     flatTags: allTags(tags),
@@ -1213,6 +1375,7 @@ function cardFromFile(file, category) {
     sourceLinks: [...new Set(sourceLinks)],
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
+    evidenceGate: scalar(fm, "evidence_gate"),
     stage: tags.stage?.find((tag) => !internalFrontstageTagIds.has(tag)) || "",
     evidence: tags.evidence?.[0] || "",
     track: tags.track?.[0] || "",
@@ -1892,7 +2055,8 @@ const rawCards = [
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence))
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const frontstageCards = selectDailyFrontstageCards(cards, 10, 3, 1);
+const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 3, 1);
+const frontstageCards = frontstageSelection.cards;
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
 const trendAssets = buildTrendAssets(activeDate, cards);
@@ -1909,6 +2073,7 @@ const payload = {
   stats: buildStats(cards, activeDate),
   cards,
   frontstageCards,
+  frontstageSelection: frontstageSelection.reports,
   relationshipDirections: buildRelationshipDirections(cards, activeDate),
   relationshipGraph: buildRelationshipGraph(cards, activeDate),
   tagAssociations: buildTagAssociations(cards, activeDate),
