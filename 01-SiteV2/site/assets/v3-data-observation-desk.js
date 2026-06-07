@@ -2,6 +2,7 @@
   const state = {
     payload: null,
     activeCategory: "all",
+    displayMode: "top10",
     filters: {
       date: "",
       category: "all",
@@ -38,8 +39,30 @@
     return state.payload?.frontstageCards || state.payload?.cards || [];
   }
 
+  function corePoolCards() {
+    const cards = state.payload?.corePoolCandidates || state.payload?.corePoolCards || (state.payload?.cards || []).filter((card) => card.fromCorePool || (card.poolRoutes || []).includes("core_pool"));
+    return [...cards].sort((a, b) => {
+      const dateDiff = String(b.date || "").localeCompare(String(a.date || ""));
+      if (dateDiff) return dateDiff;
+      return (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.id || "").localeCompare(String(b.id || ""));
+    });
+  }
+
+  function displayCards() {
+    return state.displayMode === "core" ? corePoolCards() : frontstageCards();
+  }
+
+  function displayModeLabel() {
+    if (state.displayMode !== "core") return "今日 Top10";
+    const date = selectedDate();
+    const items = corePoolCards().filter((card) => card.date === date);
+    const linked = items.filter((card) => card.linkedCardId || card.type === "signal_card").length;
+    const pending = Math.max(items.length - linked, 0);
+    return `Core Pool ${items.length}（已成卡${linked}/候选${pending}）`;
+  }
+
   function availableDates() {
-    return [...new Set(frontstageCards().map((card) => card.date).filter(Boolean))]
+    return [...new Set(displayCards().map((card) => card.date).filter(Boolean))]
       .sort((a, b) => b.localeCompare(a));
   }
 
@@ -56,11 +79,11 @@
   }
 
   function cardsOnDate(date) {
-    return frontstageCards().filter((card) => card.date === date);
+    return displayCards().filter((card) => card.date === date);
   }
 
   function countByDateAndCategory(date, category) {
-    return frontstageCards().filter((card) => card.date === date && card.category === category).length;
+    return displayCards().filter((card) => card.date === date && card.category === category).length;
   }
 
   function countLast7ByCategory(date, category) {
@@ -68,7 +91,7 @@
   }
 
   function countWindowByCategory(date, category, startDay, endDay) {
-    return frontstageCards().filter((card) => {
+    return displayCards().filter((card) => {
       const diff = daysBetween(date, card.date);
       return card.category === category && diff >= startDay && diff <= endDay;
     }).length;
@@ -711,7 +734,7 @@
   function renderStats() {
     const date = selectedDate();
     const summary = $("[data-day-summary]");
-    if (summary) summary.textContent = fmtDate(date);
+    if (summary) summary.textContent = `${fmtDate(date)} · ${displayModeLabel()}`;
 
     const root = $("[data-relationship-overview]");
     if (!root) return;
@@ -812,7 +835,7 @@
       }
     };
     const graphSummaryPanel = $("[data-day-summary]");
-    if (graphSummaryPanel) graphSummaryPanel.textContent = fmtDate(date);
+    if (graphSummaryPanel) graphSummaryPanel.textContent = `${fmtDate(date)} · ${displayModeLabel()}`;
     return;
     const graphStats = visibleCategories().map((item) => ({
       ...item,
@@ -841,7 +864,7 @@
       </section>
     `;
     const graphSummary = $("[data-day-summary]");
-    if (graphSummary) graphSummary.textContent = fmtDate(date);
+    if (graphSummary) graphSummary.textContent = `${fmtDate(date)} · ${displayModeLabel()}`;
     return;
     const stats = visibleCategories().map((item) => {
       const last7 = countLast7ByCategory(date, item.category);
@@ -874,7 +897,7 @@
     `).join("");
     const daySummary = $("[data-day-summary]");
     if (daySummary) {
-      daySummary.textContent = fmtDate(date);
+      daySummary.textContent = `${fmtDate(date)} · ${displayModeLabel()}`;
     }
   }
 
@@ -912,6 +935,26 @@
       state.filters.category = state.activeCategory;
       const categoryFilter = $("[data-category-filter]");
       if (categoryFilter) categoryFilter.value = state.activeCategory;
+      renderAll();
+    };
+  }
+
+  function renderDisplayModeToggle() {
+    const root = $("[data-display-mode-toggle]");
+    if (!root) return;
+    const modes = [
+      { id: "top10", label: "今日 Top10" },
+      { id: "core", label: "Core Pool 候选池" },
+    ];
+    root.innerHTML = modes.map((mode) => `
+      <button type="button" class="${state.displayMode === mode.id ? "is-active" : ""}" data-display-mode="${safe(mode.id)}">
+        ${safe(mode.label)}
+      </button>
+    `).join("");
+    root.onclick = (event) => {
+      const button = event.target.closest("[data-display-mode]");
+      if (!button) return;
+      state.displayMode = button.dataset.displayMode || "top10";
       renderAll();
     };
   }
@@ -992,7 +1035,7 @@
 
   function filteredCards() {
     const activeDate = selectedDate();
-    return frontstageCards().filter((card) => {
+    return displayCards().filter((card) => {
       const filters = state.filters;
       const rangeDiff = daysBetween(activeDate, card.date);
       const queryText = [
@@ -1020,7 +1063,10 @@
     if (!root) return;
     root.innerHTML = cards.length ? cards.map((card) => `
       <tr class="card-summary-row" data-card-row="${safe(card.id)}">
-        <td><strong>${safe(card.title)}</strong></td>
+        <td>
+          ${state.displayMode === "core" ? `<span class="row-status ${card.linkedCardId || card.type === "signal_card" ? "is-card" : "is-candidate"}">${card.linkedCardId || card.type === "signal_card" ? "已成卡" : "候选"}</span>` : ""}
+          <strong>${safe(card.title)}</strong>
+        </td>
         <td>${safe(card.subject)}</td>
         <td><div class="row-tags">${tagPills(card.displayTags || card.flatTags, 4)}</div></td>
       </tr>
@@ -1416,6 +1462,7 @@
 
   function renderAll() {
     const cards = filteredCards();
+    renderDisplayModeToggle();
     renderTabs();
     renderStats();
     renderTable(cards);

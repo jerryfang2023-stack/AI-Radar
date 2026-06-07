@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { buildTagIndex, readTagTaxonomy } from "./tag-taxonomy-utils.mjs";
+import { completeOpinionTranslation } from "./opinion-translation-utils.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -130,6 +131,12 @@ if (payload) {
     if (!remark?.handle) problems.push(`${prefix} missing builder handle`);
     if (remark?.handle && !seenHandles.has(remark.handle)) warnings.push(`${prefix} handle is absent from builders summary`);
     if (!remark?.text && !remark?.translation) problems.push(`${prefix} missing text or translation`);
+    if (!completeOpinionTranslation(remark?.text || "", remark?.translation || "", { preferFullTranslation: true })) {
+      problems.push(`${prefix} missing complete Chinese translation`);
+    }
+    if (remark?.translationStatus !== "translated") {
+      problems.push(`${prefix} translationStatus must be translated`);
+    }
     if (!remark?.observation) problems.push(`${prefix} missing observation`);
 
     const tags = Array.isArray(remark?.formalTags) ? remark.formalTags : [];

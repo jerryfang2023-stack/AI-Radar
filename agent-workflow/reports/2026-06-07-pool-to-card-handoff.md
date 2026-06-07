@@ -1,11 +1,11 @@
 # 2026-06-07 Pool-to-Card Handoff
 
-- generated_at: 2026-06-07T09:09:28.854Z
+- generated_at: 2026-06-07T10:12:20.891Z
 - written_count: 14
 - merged_count: 0
 - skipped_count: 0
 - signal_asset_count: 13
-- frontstage_target_count: 30
+- frontstage_target_count: 999
 - signal_asset_mode: all qualified Core Pool items
 
 ## Signal Card Assets

@@ -167,6 +167,37 @@ button {
   gap: 6px;
 }
 
+.display-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .72);
+}
+
+.display-mode-toggle button {
+  min-height: 32px;
+  border: 0;
+  border-right: 1px solid var(--line-soft);
+  background: transparent;
+  color: var(--muted);
+  padding: 0 11px;
+  font-size: var(--gl-type-label-size, 12px);
+  font-weight: var(--gl-weight-title, 600);
+  line-height: var(--gl-type-label-line, 18px);
+  white-space: nowrap;
+}
+
+.display-mode-toggle button:last-child {
+  border-right: 0;
+}
+
+.display-mode-toggle button.is-active {
+  background: var(--blue);
+  color: var(--paper);
+}
+
 .date-controls select {
   min-height: 34px;
   border: 1px solid var(--line);
@@ -1244,6 +1275,34 @@ button {
   line-height: 24px;
 }
 
+.row-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  margin: 0 8px 4px 0;
+  padding: 1px 7px;
+  border: 1px solid rgba(7, 24, 39, .1);
+  background: rgba(255, 253, 248, .9);
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: var(--gl-weight-title, 600);
+  line-height: 16px;
+  vertical-align: text-bottom;
+}
+
+.row-status.is-card {
+  border-color: rgba(47, 140, 87, .28);
+  background: rgba(47, 140, 87, .08);
+  color: var(--gl-positive, #2f8c57);
+}
+
+.row-status.is-candidate {
+  border-color: rgba(200, 167, 102, .36);
+  background: rgba(200, 167, 102, .12);
+  color: var(--gold);
+}
+
 .card-table tr[data-card-row] {
   cursor: pointer;
   transition: background .16s ease;
@@ -1935,6 +1994,17 @@ button {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .display-mode-toggle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .display-mode-toggle button {
+    width: 100%;
+    padding: 0 8px;
   }
 
   .date-controls select {

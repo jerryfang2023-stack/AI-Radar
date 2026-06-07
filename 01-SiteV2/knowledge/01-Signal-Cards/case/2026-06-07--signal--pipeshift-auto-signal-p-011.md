@@ -2,15 +2,15 @@
 id: SIG-20260607-A11
 type: signal_card
 signal_type: case
-title: "Pipeshift: Inference for real-time production workloads | Y Combinator"
+title: "Pipeshift 为实时生产工作负载提供 AI 推理服务"
 date: 2026-06-07
 status: published
 source_title: "Pipeshift: Inference for real-time production workloads | Y Combinator"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T09:09:28.577Z
-updated_at: 2026-06-07T09:09:28.577Z
+created_at: 2026-06-07T10:12:20.635Z
+updated_at: 2026-06-07T10:12:20.635Z
 
 raw_refs: ["R-011"]
 pool_refs: ["P-011"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Pipeshift"
 
 frontend:
-  displayTitle: "Pipeshift: Inference for real-time production workloads | Y Combinator"
+  displayTitle: "Pipeshift 为实时生产工作负载提供 AI 推理服务"
   sourceLinks:
     - "https://www.ycombinator.com/companies/pipeshift"
 ---
 
-# Pipeshift: Inference for real-time production workloads | Y Combinator
+# Pipeshift 为实时生产工作负载提供 AI 推理服务
 
 ## 新闻事实
 

@@ -105,6 +105,8 @@ The gate checks:
 - builders data JSON exists and is fresh;
 - remarks and builders counts meet the daily floor;
 - every remark has an original URL and no duplicate id / URL;
+- every remark has a complete Chinese translation for primary frontstage display;
+- every remark has `translationStatus=translated`; untranslated English copied into `translation` is a blocking failure;
 - every remark has at least one `opinion`, one `track`, and one `source` formal tag from `agent-workflow/product/tag-taxonomy.md`;
 - fallback data is allowed only when it remains fresh and records `fallbackReason`;
 - business-signal fields such as Raw / Pool refs, relationship graph, or trend candidates are not present.

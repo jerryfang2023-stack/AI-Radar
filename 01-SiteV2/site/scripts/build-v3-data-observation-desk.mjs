@@ -595,6 +595,11 @@ function frontstageChineseTitle(title = "", sourceUrl = "") {
     [/linkedin\.com.*menlo.*key-takeaways/u, "Menlo Ventures 报告：AI 战略与运营的三个要点"],
     [/siliconangle.*vapi/u, "Vapi 融资 5000 万美元，推动语音 AI 更接近真人交互"],
     [/ft\.com.*vonage/u, "Vonage 推出面向医疗行业的专用 AI Agent"],
+    [/zoneandco\.com.*tripadvisor-streamlines-global-procurement/u, "Tripadvisor 使用 Zone & Co 优化全球采购流程"],
+    [/github\.blog.*welcome-home-agents/u, "GitHub 推出 Agent HQ 统一管理编码智能体"],
+    [/metronome\.com.*hugging-face/u, "Hugging Face 使用 Metronome 支持计量计费"],
+    [/ycombinator\.com.*companies\/industry\/open-source/u, "Y Combinator 2026 开源创业公司索引"],
+    [/growthlist\.co.*yc-startups/u, "Y Combinator 创业公司完整索引"],
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
@@ -1302,6 +1307,127 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
   };
 }
 
+function splitCsv(value = "") {
+  return String(value || "").split(",").map((item) => item.trim()).filter(Boolean);
+}
+
+function poolCandidateSectionsForDate(date = "") {
+  const file = path.join(root, "01-SiteV2", "content", "02-pool", `${date}-pool-candidates.md`);
+  if (!date || !fs.existsSync(file)) return [];
+  return read(file)
+    .split(/\n(?=##\s+P-\d+)/u)
+    .filter((section) => /^##\s+P-\d+/mu.test(section));
+}
+
+function poolValue(section = "", key = "") {
+  return section.match(new RegExp(`^- ${key}:\\s*(.+)$`, "mu"))?.[1]?.trim().replace(/^`|`$/gu, "") || "";
+}
+
+function poolRef(section = "") {
+  return section.match(/^##\s+(P-\d+)/mu)?.[1] || "";
+}
+
+function poolTitle(section = "") {
+  const heading = section.match(/^##\s+P-\d+\s*[｜|:：~\-–—]*(.+)$/mu)?.[1] || "";
+  return heading.trim();
+}
+
+function poolCandidateCategory(section = "") {
+  const text = [
+    poolValue(section, "importance_type"),
+    poolValue(section, "evidence_object_type"),
+    poolValue(section, "usable_for"),
+    poolValue(section, "key_excerpts"),
+  ].join(" ");
+  if (/funding|capital|融资|投资/iu.test(text)) return "funding";
+  if (/product|technical|release|model|infrastructure|产品|模型|发布|基础设施/iu.test(text)) return "product-service";
+  return "case";
+}
+
+function corePoolCandidateFact(section = "", title = "", sourceUrl = "") {
+  const keyExcerpts = parseJsonLine(section, "key_excerpts") || [];
+  const excerpt = Array.isArray(keyExcerpts)
+    ? keyExcerpts.map((item) => translatedSourcePoint(item?.text || "", item?.type || "")).find(Boolean)
+    : "";
+  return short(
+    excerpt
+      || chineseFactFromSource(title, sourceUrl)
+      || frontstageChineseTitle(title, sourceUrl)
+      || title,
+    320
+  );
+}
+
+function buildCorePoolCandidateItems(cards = [], activeDate = "") {
+  const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
+  return poolCandidateSectionsForDate(activeDate)
+    .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
+    .map((section) => {
+      const ref = poolRef(section);
+      const sourceUrl = poolValue(section, "source_url");
+      const card = cardsByUrl.get(canonicalUrl(sourceUrl));
+      if (card) {
+        return {
+          ...card,
+          id: `POOL-${activeDate}-${ref}`,
+          linkedCardId: card.id,
+          type: "core_pool_candidate",
+          sourceRef: ref,
+          frontstageSelectionTier: card.frontstageSelectionTier || "core-pool",
+        };
+      }
+      const rawTitle = poolTitle(section);
+      const title = frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || rawTitle;
+      const category = poolCandidateCategory(section);
+      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
+      const importanceScore = Number(poolValue(section, "importance_score")) || 0;
+      const score = Number(poolValue(section, "score")) || 0;
+      return {
+        id: `POOL-${activeDate}-${ref}`,
+        type: "core_pool_candidate",
+        category,
+        categoryLabel: categoryLabels[category] || category,
+        title,
+        originalTitle: rawTitle === title ? "" : rawTitle,
+        date: activeDate,
+        subject: normalizeSubject(subjectFromUrl(sourceUrl) || subjectFromTitle(rawTitle) || domain(sourceUrl) || "未标注主体"),
+        source: domain(sourceUrl) || poolValue(section, "source"),
+        sourceName: domain(sourceUrl) || poolValue(section, "source"),
+        sourceUrl,
+        sourceLevel: poolValue(section, "source_level"),
+        importanceScore,
+        poolRoutes: splitCsv(poolValue(section, "pool_routes")),
+        publishedAt: "",
+        tags: {},
+        flatTags: [],
+        displayTags: [{ id: "core-pool", label: "Core Pool" }, { id: category, label: categoryLabels[category] || category }],
+        summary: fact,
+        translatedFact: fact,
+        originalHighlights: [],
+        visibleFragment: fact,
+        sourceLinks: [sourceUrl].filter(Boolean),
+        status: "pooled",
+        assetLevel: "core_pool",
+        evidenceGate: poolValue(section, "evidence_level") || "core_evidence_candidate",
+        stage: "",
+        evidence: "",
+        track: "",
+        largeVendorKey: largeVendorKeyForCard({ title: rawTitle, sourceUrl }),
+        largeVendor: Boolean(largeVendorKeyForCard({ title: rawTitle, sourceUrl })),
+        frontstageRankScore: score * 100 + importanceScore * 10,
+        frontstageEditorialScore: score * 100 + importanceScore * 10,
+        frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
+        frontstageSelectionReasons: ["进入当天 Core Pool 候选池", "保留为完整证据池材料"],
+        frontstageValueDescription: "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
+        frontstageQualityWarnings: [],
+        frontstageGenericCandidate: false,
+        fromCorePool: true,
+        sourceRef: ref,
+      };
+    })
+    .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
+}
+
 function cardFromFile(file, category) {
   const text = read(file);
   const fm = frontmatter(text);
@@ -1330,8 +1456,9 @@ function cardFromFile(file, category) {
 
   const sourceLevel = String(nestedScalar(fm, "primary_raw", "source_level") || scalar(fm, "source_level") || "").toUpperCase();
   const importanceScore = Number(nestedScalar(fm, "primary_raw", "importance_score") || scalar(fm, "importance_score") || 0) || 0;
-  const rawDisplayTitle = frontstageTitle(rawTitle || scalar(fm, "title") || path.basename(file, ".md"), rawTitle);
-  const title = frontstageChineseTitle(rawDisplayTitle, sourceUrl);
+  const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
+  const rawDisplayTitle = frontstageTitle(rawTitle || explicitDisplayTitle || path.basename(file, ".md"), rawTitle);
+  const title = frontstageChineseTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl);
   const translatedFact = chineseFactFromSource(rawDisplayTitle || title, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [translatedFact]);
   if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
@@ -2054,11 +2181,13 @@ const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence))
+  .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 3, 1);
 const frontstageCards = frontstageSelection.cards;
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
+const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
@@ -2073,6 +2202,7 @@ const payload = {
   stats: buildStats(cards, activeDate),
   cards,
   frontstageCards,
+  corePoolCandidates,
   frontstageSelection: frontstageSelection.reports,
   relationshipDirections: buildRelationshipDirections(cards, activeDate),
   relationshipGraph: buildRelationshipGraph(cards, activeDate),

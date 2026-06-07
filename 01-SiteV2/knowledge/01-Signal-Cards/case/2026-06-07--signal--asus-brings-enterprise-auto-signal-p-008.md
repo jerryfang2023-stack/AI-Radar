@@ -2,15 +2,15 @@
 id: SIG-20260607-A03
 type: signal_card
 signal_type: case
-title: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026"
+title: "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
 date: 2026-06-07
 status: published
 source_title: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T09:09:28.577Z
-updated_at: 2026-06-07T09:09:28.577Z
+created_at: 2026-06-07T10:12:20.635Z
+updated_at: 2026-06-07T10:12:20.635Z
 
 raw_refs: ["R-008"]
 pool_refs: ["P-008"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "ASUS Brings Enterprise"
 
 frontend:
-  displayTitle: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026"
+  displayTitle: "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"
   sourceLinks:
     - "https://itwire.com/business-it-news/business-technology/asus-brings-enterprise-to-edge-ai-to-life-at-computex-2026"
 ---
 
-# ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026
+# 华硕在 Computex 2026 展示企业到边缘的 AI 部署方案
 
 ## 新闻事实
 

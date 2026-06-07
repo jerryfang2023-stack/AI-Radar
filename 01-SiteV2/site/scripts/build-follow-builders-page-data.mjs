@@ -6,6 +6,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 import { buildTagIndex, readTagTaxonomy } from "../../../agent-workflow/tools/tag-taxonomy-utils.mjs";
+import {
+  completeOpinionTranslation,
+  loadTranslationCache,
+  saveTranslationCache,
+  translateOpinionText,
+} from "../../../agent-workflow/tools/opinion-translation-utils.mjs";
 
 const execFileAsync = promisify(execFile);
 const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -109,6 +115,21 @@ function tagsForTopic(topic, source = "x") {
 }
 
 const translationByTweetId = {
+  "2063486871037153558": "这种 agentic coding 的上瘾感，已经比打游戏还强了。",
+  "2063475353335869922": "Codex 线程不应该只能按项目查看，应该可以按不同状态筛选或排序，比如“全部等待批准”“全部正在工作”。我想把线程控制在 10 个以内，但现在已经开始变得难管理了。",
+  "2063438262841094604": "我最喜欢的柏拉图《对话录》之一，深入讨论了技艺的边界，以及 aidōs（敬畏与回应他人）和 dikē（判断正当性的能力）的必要性。Protagoras 在讨论知识从何而来、美德是否可以被教授时，某种程度上预示了今天关于 LLM 的问题。",
+  "2063436919967522848": "再补充两个会变得更有价值的概念：Aidōs，指对他人的敬畏与回应能力；Dikē，指感知什么是正当的能力。",
+  "2063432747432268259": "一种流行看法是：研究论文和实验室发布的“alpha”正在消退，因为研究人员发现，与其和市场部门争夺表达权，不如带着自己依法受保护的隐性知识离开，直接拿到超过 1 亿美元的机会。加州禁止竞业限制，对知识扩散的影响可能比 GitHub、arXiv 和 Hugging Face 加起来还大。这也是我想把 AI Engineer 做成以产品为中心的行业会议、补充论文中心型研究会议的原因之一。",
+  "2063426632824562167": "LLM 没有意识。LLM 也不能被简单地说成一定没有意识。这两句话可以同时成立。",
+  "2063418130714800487": "我们从没说过不会把任何用户数据上传到云端。我们说的是，代码本身，也就是文件内容，不会被上传。Paxel 是来帮助你的；随着本地模型越来越好，我们之后也能把更多事情放到本地完成。",
+  "2063409501706018903": "我也希望帮助更多人通过 Paxel 变得更专业、更可靠。",
+  "2063391758189572266": "很喜欢这场分享：静态内容的价值在下降，实时互动的价值在上升。人们想连接到作品背后真实的人，无论那件作品是内容还是软件。粗粝但有观点，比精致但通用更有价值。",
+  "2063381764782116914": "这个周末别忘了出去走走、接触一下真实世界。",
+  "2063344460705288401": "当我公开反对加沙种族灭绝时，一些平庸的 VC 公开围攻我，也试图在私下伤害我。站在我这边的人里也有很多 VC，只是他们是更好的一批，无论从道德上还是回报表现上都是。避开反社会型人物的最好方式，就是坚持自己的信念，让他们自己退出你的生活。",
+  "2063342268472574268": "模型路由真的很难：它要求把每个任务匹配到合适的模型，并基于产品自己的具体任务做 benchmark，调好质量和成本之间的取舍。但难点里也有机会。我在 Gemini 期间看到企业经历了三个阶段：2024 年默认使用最热门的模型，几乎所有任务都上 GPT；2025 年初又过度纠偏，试图给每个任务找最小、最便宜的模型，但 eval 不够成熟，反而拖慢交付；之后进入更细致的路由阶段，先进的 AI-native 公司把产品拆成多个子 agent，让最难的推理走 Claude，简单任务走 Gemini Flash-Lite 或开放权重模型。和多数产品模式一样，企业通常会在 AI-native builder 之后 6 到 9 个月跟进。",
+  "2063320673217609936": "Token 成本正在成为企业最关注的话题之一。这对 AI 整体是利好，因为它说明这些系统已经被用到了过去没有想象过的规模。它也会让应用层 AI 出现一种新的差异化：模型路由。当 token 成为工作流中的重要成本，公司自然会希望把钱花在最适合当前任务的 token 使用上。前沿模型仍会用于编码、法律、金融分析、医疗等高端任务，而且这部分支出会继续上升；但很多单项任务可以切给更低成本的模型，从而得到更高效的结果。要做到这一点，应用层 AI 必须比任何人都更理解所在领域的工作流，并能把不同模型匹配到不同任务。长期看，拥有最好 eval、最好工作负载路由能力，并且商业模式与客户财务目标直接一致的公司，会处在很有利的位置。",
+  "2063280482922663980": "地方政府很重要。奥克兰的治理问题是可以修复的，只是它还没有像旧金山那样重新出现常识回归。Empower Oakland 正在推动这件事。",
+  "2063263389238087745": "《公园散步》第二部分，嘉宾是 taiuti。内容包括：什么是世界模型；从文本到 3D 到 Reactor World 的起源；为什么决定创业；GTA、游戏和编程路径；如何在隐身状态下构建并保守秘密；如何选择有独立判断的投资人；世界模型会先从哪里增长；为什么低延迟重要；如何成为 CEO 并扩展团队；以及最后建议。",
   "2063157328753594505": "GBrain 给 OpenClaw 和 Hermes Agent 装上了翅膀。https://t.co/gUt6ll33Vn",
   "2063146456106795457": "你现在终于可以试用我几个月前预告过的一个大项目了。\n\n我们希望它随着时间推移，越来越能帮助你学习更好的软件构建技巧，并更快地构建出更好的软件。https://t.co/hQpYCpl9JB",
   "2063146111960019028": "这就是未来无人机战争里“必备品”的定义。https://t.co/m33IZgh1Dx",
@@ -137,8 +158,20 @@ const translationByTweetId = {
   "2062899832965255443": "如何构建会检查自己工作、并随着时间改进的 AI skills：\n\n1. 给它上下文\n让 AI：“为这个重复任务创建一个 skill。这里有一些好输出示例，让它知道什么叫好。”\n\n2. 让它容易触发\n“按这个模式写清楚 skill 描述：当用户想要做某事时使用。”\n\n3. 加 evals\n“创建一个 evals md，包含 10 个 pass/fail 检查项，用来捕捉 skill 输出里的常见错误。”\n\n4. 加 memory\n“创建一个 memory md，用一句话记录过去使用这个 skill 时学到的经验。”\n\n5. 构建一个编辑 skills 的 skill\n“创建一个 skill，用来清理其他 skills，移除重复或过期指令、模糊规则和 AI 味废话。”\n\n完整演示在这里：https://t.co/u434ytNSZd",
 };
 
-function translateTweet(tweet = {}) {
-  return translationByTweetId[tweet.id] || decodeText(tweet.text || "");
+async function translateTweet(tweet = {}, cache = {}) {
+  const text = decodeText(tweet.text || "");
+  const staticTranslation = completeOpinionTranslation(text, translationByTweetId[tweet.id] || "", {
+    preferFullTranslation: true,
+  });
+  if (staticTranslation) {
+    return { translation: staticTranslation, status: "translated", method: "static_by_tweet_id" };
+  }
+  return translateOpinionText(text, {
+    cache,
+    cacheKey: tweet.id || text,
+    allowNetwork: process.env.FOLLOW_BUILDERS_TRANSLATE_NETWORK !== "false",
+    preferFullTranslation: true,
+  });
 }
 
 async function loadPreparedFeed() {
@@ -214,12 +247,14 @@ async function trackedSourceCount() {
   }
 }
 
-function normalize(feed, trackedSources) {
+async function normalize(feed, trackedSources) {
+  const translationCache = await loadTranslationCache(process.cwd());
   const remarks = [];
   for (const builder of feed.x || []) {
     for (const tweet of builder.tweets || []) {
       if (!isSubstantiveTweet(tweet)) continue;
       const text = decodeText(tweet.text);
+      const translated = await translateTweet(tweet, translationCache);
       const topic = topicForText(text);
       remarks.push({
         id: tweet.id,
@@ -228,7 +263,9 @@ function normalize(feed, trackedSources) {
         handle: builder.handle,
         role: roleFromBio(builder.bio, builder.handle),
         text,
-        translation: translateTweet(tweet),
+        translation: translated.translation,
+        translationStatus: translated.status,
+        translationMethod: translated.method,
         topic,
         formalTags: tagsForTopic(topic, "x"),
         observation: observationForTopic(topic),
@@ -241,6 +278,7 @@ function normalize(feed, trackedSources) {
       });
     }
   }
+  await saveTranslationCache(process.cwd(), translationCache);
 
   remarks.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
 
@@ -270,7 +308,7 @@ function normalize(feed, trackedSources) {
       sourceSkill: "follow-builders",
       sourceRoute: feed.sourceRoute || "unknown",
       sourceErrors: feed.sourceErrors || [],
-      sourcePolicy: "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL.",
+      sourcePolicy: "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display.",
     },
     stats: {
       builders: builders.length,
@@ -308,7 +346,7 @@ async function main() {
     console.log(`Wrote ${path.relative(process.cwd(), outputPath)} with ${payload.stats?.remarks || 0} remarks using previous data fallback.`);
     return;
   }
-  const payload = normalize(feed, trackedSources);
+  const payload = await normalize(feed, trackedSources);
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   console.log(`Wrote ${path.relative(process.cwd(), outputPath)} with ${payload.stats.remarks} remarks.`);

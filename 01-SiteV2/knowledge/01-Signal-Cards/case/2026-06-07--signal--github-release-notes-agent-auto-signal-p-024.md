@@ -2,15 +2,15 @@
 id: SIG-20260607-A04
 type: signal_card
 signal_type: case
-title: "GitHub release notes agent - Agno"
+title: "Agno 发布 GitHub Release Notes Agent"
 date: 2026-06-07
 status: published
 source_title: "GitHub release notes agent - Agno"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T09:09:28.577Z
-updated_at: 2026-06-07T09:09:28.577Z
+created_at: 2026-06-07T10:12:20.635Z
+updated_at: 2026-06-07T10:12:20.635Z
 
 raw_refs: ["R-024"]
 pool_refs: ["P-024"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "GitHub release notes agent"
 
 frontend:
-  displayTitle: "GitHub release notes agent - Agno"
+  displayTitle: "Agno 发布 GitHub Release Notes Agent"
   sourceLinks:
     - "https://www.agno.com/ai-agents/github-release-notes-agent"
 ---
 
-# GitHub release notes agent - Agno
+# Agno 发布 GitHub Release Notes Agent
 
 ## 新闻事实
 

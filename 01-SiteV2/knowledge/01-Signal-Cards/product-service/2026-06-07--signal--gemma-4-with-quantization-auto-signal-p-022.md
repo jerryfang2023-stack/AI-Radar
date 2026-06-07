@@ -2,15 +2,15 @@
 id: SIG-20260607-A05
 type: signal_card
 signal_type: product_service
-title: "Gemma 4 with quantization-aware training"
+title: "Google DeepMind 发布支持量化感知训练的 Gemma 4"
 date: 2026-06-07
 status: published
 source_title: "Gemma 4 with quantization-aware training"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T09:09:28.577Z
-updated_at: 2026-06-07T09:09:28.577Z
+created_at: 2026-06-07T10:12:20.635Z
+updated_at: 2026-06-07T10:12:20.635Z
 
 raw_refs: ["R-022"]
 pool_refs: ["P-022"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Gemma 4 with quantization"
 
 frontend:
-  displayTitle: "Gemma 4 with quantization-aware training"
+  displayTitle: "Google DeepMind 发布支持量化感知训练的 Gemma 4"
   sourceLinks:
     - "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/"
 ---
 
-# Gemma 4 with quantization-aware training
+# Google DeepMind 发布支持量化感知训练的 Gemma 4
 
 ## 新闻事实
 

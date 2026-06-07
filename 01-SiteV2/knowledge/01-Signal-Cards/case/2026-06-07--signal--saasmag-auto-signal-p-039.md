@@ -2,15 +2,15 @@
 id: SIG-20260607-A10
 type: signal_card
 signal_type: case
-title: "How SaaS Companies Are Monetizing AI Agents in 2026"
+title: "SaaS 公司开始探索 AI Agent 的商业化路径"
 date: 2026-06-07
 status: published
 source_title: "How SaaS Companies Are Monetizing AI Agents in 2026"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T09:09:28.577Z
-updated_at: 2026-06-07T09:09:28.577Z
+created_at: 2026-06-07T10:12:20.635Z
+updated_at: 2026-06-07T10:12:20.635Z
 
 raw_refs: ["R-040"]
 pool_refs: ["P-039"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Saasmag"
 
 frontend:
-  displayTitle: "How SaaS Companies Are Monetizing AI Agents in 2026"
+  displayTitle: "SaaS 公司开始探索 AI Agent 的商业化路径"
   sourceLinks:
     - "https://www.saasmag.com/how-saas-companies-monetizing-ai-agents/"
 ---
 
-# How SaaS Companies Are Monetizing AI Agents in 2026
+# SaaS 公司开始探索 AI Agent 的商业化路径
 
 ## 新闻事实
 
