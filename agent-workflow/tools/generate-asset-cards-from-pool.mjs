@@ -1237,12 +1237,73 @@ function signalPriorityScore(spec, section) {
   return score;
 }
 
+function uniqueIssues(issues = []) {
+  return [...new Set(issues.filter(Boolean))];
+}
+
+function autoSignalEligibilityIssues(section) {
+  const issues = [...corePoolSemanticIssues(section)];
+  const sourceUrl = value(section, "source_url");
+  const sourceLevel = value(section, "source_level");
+  const importanceType = value(section, "importance_type");
+  const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
+  const directFundingOverride =
+    importanceType === "important_funding"
+    && issues.length === 0
+    && /Announcing\b.{0,140}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,100}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(textForInference(section));
+  if (directFundingOverride) return [];
+  if (!/^(S|A|B)$/u.test(sourceLevel)) issues.push(`source_level_not_SAB:${sourceLevel || "missing"}`);
+  if (importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
+    issues.push("funding_not_single_company_round");
+  }
+  if (!sourceUrl || sourceUrl === "no-url") issues.push("missing_source_url");
+  if (isNonCommercialPolicyOrEthicsSignal(section)) issues.push("non_commercial_policy_or_ethics_signal");
+  if (/(learn\.microsoft\.com|\/docs?\/|documentation|README|readme-ov-file|model page|product catalog)/iu.test(text) || /why we.*re investing/iu.test(text)) {
+    issues.push("docs_or_catalog_or_investing_thesis");
+  }
+  return uniqueIssues(issues);
+}
+
+function promotePriorityForIssues(issues = []) {
+  if (issues.some((issue) => /stale_source_date|generic_report_or_list|index_only|user_feedback_not_fact_signal|text_indicates_index_only/iu.test(issue))) {
+    return "low";
+  }
+  if (issues.some((issue) => /missing_full_text|missing_source_url|weak_extraction_quality|incomplete_evidence_object/iu.test(issue))) {
+    return "medium";
+  }
+  return "review";
+}
+
+function repairSuggestionForIssues(issues = []) {
+  const text = issues.join(" ");
+  if (/stale_source_date/iu.test(text)) return "Find a fresh same-event source or keep as context-only Core Pool evidence.";
+  if (/generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only/iu.test(text)) return "Resolve to a dated single company, product, funding, or customer event before promoting.";
+  if (/user_feedback_not_fact_signal/iu.test(text)) return "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.";
+  if (/funding_not_single_company_round/iu.test(text)) return "Use a single-company funding announcement with amount, round, investor, and date.";
+  if (/missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(text)) return "Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.";
+  if (/duplicate_event_cluster/iu.test(text)) return "Keep as supporting evidence for the linked event instead of creating a duplicate Card.";
+  return "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.";
+}
+
+function corePoolNotPromotedRow(poolRef, section, issues = []) {
+  const finalIssues = uniqueIssues(issues);
+  return {
+    pool_ref: poolRef,
+    title: poolTitle(section),
+    source_url: value(section, "source_url"),
+    issues: finalIssues,
+    not_promoted_reason: finalIssues.join(", ") || "not_selected_for_signal_card",
+    repair_suggestion: repairSuggestionForIssues(finalIssues),
+    promote_priority: promotePriorityForIssues(finalIssues),
+  };
+}
+
 function withAutoSignalId(spec, index) {
   return { ...spec, id: `SIG-${date.replaceAll("-", "")}-A${String(index).padStart(2, "0")}` };
 }
 
 function autoSignalsFromPool(sections, explicitSpecs) {
-  if (!autoSignalEnabled) return [];
+  if (!autoSignalEnabled) return { specs: [], notPromotedCorePool: [] };
   const selectedPoolRefs = new Set(explicitSpecs.map((spec) => spec.poolRef));
   const selectedClusterKeys = new Set(
     explicitSpecs
@@ -1253,25 +1314,31 @@ function autoSignalsFromPool(sections, explicitSpecs) {
       .filter(Boolean)
   );
   const candidates = [];
-  const debugRejects = [];
+  const notPromotedCorePool = [];
   let index = 1;
   for (const [poolRef, section] of sections) {
     if (selectedPoolRefs.has(poolRef)) continue;
-    if (!isEligibleAutoSignal(section)) {
-      if (args.get("debug-auto-signals") === "true" && /core_pool/u.test(value(section, "pool_routes"))) {
-        debugRejects.push({ poolRef, title: poolTitle(section), issues: corePoolSemanticIssues(section) });
+    const eligibilityIssues = autoSignalEligibilityIssues(section);
+    if (eligibilityIssues.length) {
+      if (/core_pool/u.test(value(section, "pool_routes"))) {
+        notPromotedCorePool.push(corePoolNotPromotedRow(poolRef, section, eligibilityIssues));
       }
       continue;
     }
     const spec = autoSignalSpec(poolRef, section, index);
     if (!spec) {
-      if (args.get("debug-auto-signals") === "true" && /core_pool/u.test(value(section, "pool_routes"))) {
-        debugRejects.push({ poolRef, title: poolTitle(section), issues: ["auto_signal_spec_null"] });
+      if (/core_pool/u.test(value(section, "pool_routes"))) {
+        notPromotedCorePool.push(corePoolNotPromotedRow(poolRef, section, ["auto_signal_spec_null"]));
       }
       continue;
     }
     const clusterKey = signalClusterKey(spec, section);
-    if (selectedClusterKeys.has(clusterKey)) continue;
+    if (selectedClusterKeys.has(clusterKey)) {
+      if (/core_pool/u.test(value(section, "pool_routes"))) {
+        notPromotedCorePool.push(corePoolNotPromotedRow(poolRef, section, ["duplicate_event_cluster"]));
+      }
+      continue;
+    }
     candidates.push({ spec, section, clusterKey, score: signalPriorityScore(spec, section) });
     index += 1;
   }
@@ -1306,10 +1373,17 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     console.log(JSON.stringify({
       auto_signal_candidate_count: candidates.length,
       auto_signal_picked_count: picked.length,
-      auto_signal_debug_rejects: debugRejects,
+      auto_signal_debug_rejects: notPromotedCorePool.map((item) => ({
+        poolRef: item.pool_ref,
+        title: item.title,
+        issues: item.issues,
+      })),
     }, null, 2));
   }
-  return picked.map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1));
+  return {
+    specs: picked.map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1)),
+    notPromotedCorePool,
+  };
 }
 
 function yamlList(items) {
@@ -1590,19 +1664,21 @@ function dedupeSignalIndexSpecs(specs) {
   return [...byFinalCard.values()];
 }
 
-function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs }) {
+function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs, notPromotedCorePool = [] }) {
   const reportDir = path.join(root, "agent-workflow", "reports");
   fs.mkdirSync(reportDir, { recursive: true });
   const handoffPath = path.join(reportDir, `${date}-pool-to-card-handoff.md`);
   const manifestPath = path.join(reportDir, `${date}-frontstage-manifest.json`);
+  const generatedAt = new Date().toISOString();
   const handoff = [
     `# ${date} Pool-to-Card Handoff`,
     "",
-    `- generated_at: ${new Date().toISOString()}`,
+    `- generated_at: ${generatedAt}`,
     `- written_count: ${written.length}`,
     `- merged_count: ${merged.length}`,
     `- skipped_count: ${skipped.length}`,
     `- signal_asset_count: ${frontstageSpecs.length}`,
+    `- core_pool_not_promoted_count: ${notPromotedCorePool.length}`,
     `- frontstage_target_count: ${signalTarget}`,
     `- signal_asset_mode: all qualified Core Pool items`,
     "",
@@ -1630,11 +1706,17 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     "",
     skipped.length ? skipped.map((item) => `- ${item}`).join("\n") : "- none",
     "",
+    "## Core Pool Not Promoted",
+    "",
+    notPromotedCorePool.length
+      ? notPromotedCorePool.map((item) => `- ${item.pool_ref}: ${item.not_promoted_reason}; repair=${item.repair_suggestion}; priority=${item.promote_priority}; title=${item.title}`).join("\n")
+      : "- none",
+    "",
   ].join("\n");
   fs.writeFileSync(handoffPath, handoff, "utf8");
   fs.writeFileSync(manifestPath, `${JSON.stringify({
     date,
-    generated_at: new Date().toISOString(),
+    generated_at: generatedAt,
     signal_card_assets: frontstageSpecs.map((spec) => ({
       id: spec.id,
       pool_ref: spec.poolRef,
@@ -1642,6 +1724,7 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
       type: spec.type,
       company: spec.company,
     })),
+    core_pool_not_promoted: notPromotedCorePool,
     skipped,
     merged,
   }, null, 2)}\n`, "utf8");
@@ -1685,7 +1768,9 @@ function main() {
   const explicitSpecs = signalSpecs[date] || [];
   const candidates = candidateSpecs[date] || {};
   const sections = poolSections();
-  const autoSpecs = autoSignalsFromPool(sections, explicitSpecs);
+  const autoResult = autoSignalsFromPool(sections, explicitSpecs);
+  const autoSpecs = autoResult.specs || [];
+  const notPromotedCorePool = autoResult.notPromotedCorePool || [];
   const specs = [...explicitSpecs, ...autoSpecs].map(normalizeSignalSpec);
   const written = [];
   const skipped = [];
@@ -1771,7 +1856,14 @@ function main() {
   writeSignalIndexes(signalIndexSpecs);
   updateDailyMonitorLogFrontSignalCounts(frontSignalSourceLevels);
   written.push(`01-SiteV2/content/04-business-signals/signals/${date}-signals.md`);
-  const handoff = writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs: signalIndexSpecs });
+  const handoff = writePoolToCardHandoff({
+    written,
+    merged,
+    skipped,
+    clusterRows,
+    frontstageSpecs: signalIndexSpecs,
+    notPromotedCorePool,
+  });
   written.push(handoff.handoff, handoff.manifest);
 
   console.log(JSON.stringify({ ok: true, date, written, merged, skipped, handoff }, null, 2));

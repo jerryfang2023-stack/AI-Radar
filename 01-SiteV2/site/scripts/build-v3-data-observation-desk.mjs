@@ -1384,8 +1384,63 @@ function corePoolCandidateFact(section = "", title = "", sourceUrl = "") {
   );
 }
 
+function frontstageManifestForDate(date = "") {
+  const file = path.join(root, "agent-workflow", "reports", `${date}-frontstage-manifest.json`);
+  if (!date || !fs.existsSync(file)) return {};
+  try {
+    return JSON.parse(read(file));
+  } catch {
+    return {};
+  }
+}
+
+function corePoolNotPromotedMap(date = "") {
+  const manifest = frontstageManifestForDate(date);
+  const rows = Array.isArray(manifest.core_pool_not_promoted) ? manifest.core_pool_not_promoted : [];
+  return new Map(rows.map((item) => [item.pool_ref, item]));
+}
+
+function publicPromotionIssue(issue = "") {
+  if (/stale_source_date/iu.test(issue)) return "来源时间过旧，适合保留为背景证据";
+  if (/generic_report_or_list_not_fact_signal/iu.test(issue)) return "榜单或报告类材料，不是单一事实信号";
+  if (/text_indicates_index_only|index_only|index_or_directory_url/iu.test(issue)) return "目录或索引页，不适合直接成卡";
+  if (/user_feedback_not_fact_signal/iu.test(issue)) return "评论或反馈材料不足以支撑正式事实卡";
+  if (/funding_not_single_company_round/iu.test(issue)) return "融资信息不是单一公司轮次事件";
+  if (/missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(issue)) return "原文证据不完整，需要补采";
+  if (/duplicate_event_cluster/iu.test(issue)) return "与已成卡事件重复，保留为辅助证据";
+  if (/auto_signal_spec_null/iu.test(issue)) return "未能生成稳定的正式卡片结构";
+  return "证据边界不足，暂不晋级正式 Card";
+}
+
+function publicRepairSuggestion(issues = []) {
+  const text = issues.join(" ");
+  if (/stale_source_date/iu.test(text)) return "补充同一事件的近期来源；否则仅作为背景证据保留。";
+  if (/generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only|index_or_directory_url/iu.test(text)) {
+    return "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。";
+  }
+  if (/user_feedback_not_fact_signal/iu.test(text)) return "用原始报道、公司公告或一手材料替代评论/反馈证据。";
+  if (/funding_not_single_company_round/iu.test(text)) return "补齐单一公司的融资金额、轮次、投资方和日期。";
+  if (/missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(text)) return "修复 Raw 采集，补齐原文链接、全文、摘录和哈希。";
+  if (/duplicate_event_cluster/iu.test(text)) return "作为已成卡事件的辅助证据保留，不重复生成 Card。";
+  return "复核证据边界，确认能形成产品、融资或案例事实后再晋级。";
+}
+
+function candidatePromotionCopy(promotion = {}) {
+  const rawIssues = Array.isArray(promotion.issues) ? promotion.issues : [];
+  const issueLabels = rawIssues.map(publicPromotionIssue);
+  const reason = issueLabels.length ? [...new Set(issueLabels)].join("；") : "暂未晋级正式 Card";
+  const repair = publicRepairSuggestion(rawIssues);
+  return {
+    reason,
+    issues: issueLabels,
+    repair,
+    priority: promotion.promote_priority || "review",
+  };
+}
+
 function buildCorePoolCandidateItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
+  const notPromotedByRef = corePoolNotPromotedMap(activeDate);
   return poolCandidateSectionsForDate(activeDate)
     .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
     .map((section) => {
@@ -1399,9 +1454,11 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
           linkedCardId: card.id,
           type: "core_pool_candidate",
           sourceRef: ref,
+          promotionStatus: "promoted_to_signal_card",
           frontstageSelectionTier: card.frontstageSelectionTier || "core-pool",
         };
       }
+      const promotion = candidatePromotionCopy(notPromotedByRef.get(ref) || {});
       const rawTitle = poolTitle(section);
       const title = frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || rawTitle;
       const category = poolCandidateCategory(section);
@@ -1434,6 +1491,11 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         sourceLinks: [sourceUrl].filter(Boolean),
         status: "pooled",
         assetLevel: "core_pool",
+        promotionStatus: "candidate_only",
+        notPromotedReason: promotion.reason,
+        notPromotedIssues: promotion.issues,
+        repairSuggestion: promotion.repair,
+        promotePriority: promotion.priority,
         evidenceGate: poolValue(section, "evidence_level") || "core_evidence_candidate",
         stage: "",
         evidence: "",
@@ -2225,6 +2287,11 @@ function graphIndexCard(card = {}) {
     poolRefs: card.sourceRef ? [card.sourceRef] : [],
     linkedCardId: card.linkedCardId || "",
     status: card.linkedCardId || card.type === "signal_card" ? "signal_card" : card.status || "candidate",
+    promotionStatus: card.promotionStatus || (card.linkedCardId ? "promoted_to_signal_card" : "candidate"),
+    notPromotedReason: card.notPromotedReason || "",
+    notPromotedIssues: card.notPromotedIssues || [],
+    repairSuggestion: card.repairSuggestion || "",
+    promotePriority: card.promotePriority || "",
     largeVendor: Boolean(card.largeVendor),
     largeVendorKey: card.largeVendorKey || "",
     tags: card.tags || {},

@@ -9,8 +9,8 @@ source_title: "英国警方被叫停使用AI撰写法庭陈述，因合规评估
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-07T12:50:25.607Z
-updated_at: 2026-06-07T12:50:25.607Z
+created_at: 2026-06-07T13:15:34.778Z
+updated_at: 2026-06-07T13:15:34.778Z
 
 raw_refs: ["R-027"]
 pool_refs: ["P-026"]

@@ -1,10 +1,11 @@
 # 2026-06-07 Pool-to-Card Handoff
 
-- generated_at: 2026-06-07T12:50:25.849Z
+- generated_at: 2026-06-07T13:15:35.034Z
 - written_count: 14
 - merged_count: 0
 - skipped_count: 0
 - signal_asset_count: 13
+- core_pool_not_promoted_count: 12
 - frontstage_target_count: 999
 - signal_asset_mode: all qualified Core Pool items
 
@@ -64,3 +65,18 @@
 ## Skipped
 
 - none
+
+## Core Pool Not Promoted
+
+- P-007: stale_source_date; repair=Find a fresh same-event source or keep as context-only Core Pool evidence.; priority=low; title=How Tripadvisor Streamlines Global Procurement | Zone & Co
+- P-012: stale_source_date; repair=Find a fresh same-event source or keep as context-only Core Pool evidence.; priority=low; title=Introducing Agent HQ: Any agent, any way you work - The GitHub Blog
+- P-013: stale_source_date; repair=Find a fresh same-event source or keep as context-only Core Pool evidence.; priority=low; title=Hugging Face - Metronome
+- P-019: generic_report_or_list_not_fact_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Top AI Pre-Seed Investors
+- P-023: text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Open Source Startups funded by Y Combinator (YC) 2026
+- P-025: text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=fpt. 渲染苹果 iOS 27：升级 Siri、调整通知手势、增强 AI 修图
+- P-031: user_feedback_not_fact_signal; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=谷歌将每月向SpaceX支付9.2亿美元，以获取xAI数据中心的计算能力
+- P-032: user_feedback_not_fact_signal; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=标普500指数拒绝纳入SpaceX，同时也不允许OpenAI和Anthropic入选
+- P-033: user_feedback_not_fact_signal; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=谷歌将每月向SpaceX支付9.2亿美元用于计算服务
+- P-035: user_feedback_not_fact_signal; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=您客厅里的智能电视是 AIScraping 经济中的一个节点
+- P-038: stale_source_date; repair=Find a fresh same-event source or keep as context-only Core Pool evidence.; priority=low; title=Complete YC Startups Guide: 5,000+ Y Combinator Companies 2026
+- P-041: text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=央视《对话》聚焦"算电协同"：绿电驱动AI，一度电变Token价值翻20倍
