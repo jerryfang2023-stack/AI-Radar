@@ -35,11 +35,11 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Node.js
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.public_brief_date != '' }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
 
@@ -52,13 +52,29 @@ jobs:
         run: npm run export:public-daily-brief -- --date=${{ inputs.public_brief_date }}
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
+
+      - name: Archive Frontstage artifact
+        shell: bash
+        run: |
+          tar \
+            --dereference \
+            --hard-dereference \
+            --directory "01-SiteV2/site" \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            --exclude=".[^/]*" \
+            .
 
       - name: Upload Frontstage artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
-          path: 01-SiteV2/site
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

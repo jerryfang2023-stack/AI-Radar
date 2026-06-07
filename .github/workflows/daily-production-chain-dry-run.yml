@@ -34,10 +34,10 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: npm
@@ -220,7 +220,7 @@ jobs:
 
       - name: Upload full-chain dry-run artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: wavesight-daily-production-chain-${{ steps.run-date.outputs.date }}
           if-no-files-found: warn

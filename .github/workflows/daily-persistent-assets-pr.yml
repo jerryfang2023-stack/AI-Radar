@@ -39,12 +39,12 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: npm
@@ -393,7 +393,7 @@ jobs:
 
       - name: Upload persistent assets PR artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: wavesight-daily-persistent-assets-pr-${{ steps.run-date.outputs.date }}
           if-no-files-found: warn
