@@ -1,0 +1,273 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-013",
+  "title": "五个实验室，五个心智：用小模型构建多模型金融剧情游戏",
+  "original_url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+  "canonical_url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+  "source_name": "Hugging Face：Blog（RSS）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-06T19:02:33.000Z",
+  "collected_at": "2026-06-07T02:44:54.803Z",
+  "language": "mixed",
+  "full_text": "Back to Articles\nFive labs, five minds: building a multi-model finance drama on small models\nTeam Article Published\nJune 6, 2026\nUpvote -\nLester Leong AdmiralTaco Follow\nbuild-small-hackathon\nA second Build Small Hackathon field report: what happens when each agent in an emergent economy runs on a different lab's small model, and the player becomes the financier pulling the strings.\nThe first version of Thousand Token Wood was a weather-god sandbox: five woodland creatures on one fine-tuned 0.5B model traded goods, and you poked the world with shocks and watched bubbles and crashes emerge. It was a nice toy. It was also something you watched rather than played.\nv2 rebuilt it into a game you operate. You are the Patron of the Wood, a shadow financier: you lend at interest, whisper tips that may be true or planted, short the market, bribe, and broker alliances, while a magistrate hunts you for trading on what you should not know. The creatures remember how you treated them and scheme back. And the biggest change is under the hood: every creature now thinks with a different lab's small model. This is the engineering report.\nHeterogeneity is the product, not a constraint\nThe obvious way to run a council of agents is one model, many prompts. v2 runs four: gpt-oss-20b (OpenAI), MiniCPM3-4B (OpenBMB), Nemotron-Mini-4B (NVIDIA), and a fine-tuned Qwen 0.5B of my own. The point is not novelty for its own sake. A market is interesting when the participants genuinely differ, and four labs' models trained on different data with different post-training are about as different as small models get. The owl hoards differently than the fox speculates. The council is a live argument, not a script.\nStanding four distinct models up on one platform surfaced the real lesson: the friction is almost entirely at the serving layer, not the modeling layer.\nCurrent vLLM (0.22.1) JIT-compiles kernels at load and needs the CUDA toolkit ( nvcc ) present. A lean base image does not ship it, so all four models failed identically with \"could not find nvcc\" until I based them on a CUDA devel image. This was not a gpt-oss quirk; it was universal to the vLLM version. One image fix unblocked everything.\ngpt-oss-20b runs in its native MXFP4 quantization and fits a 24GB L4 with room to spare; no high-end GPU needed. It also speaks a channel format that wraps the answer in an analysis preamble, so the consumer has to extract the final channel.\nMiniCPM3 needed trust_remote_code ; Nemotron loaded clean. Per-model footguns, each a one-line config.\nThe thing that made four heterogeneous models tractable was the same primitive that made one model tractable in v1: a tolerant JSON parse-and-repair layer that every model's output flows through. Different tokenizers and formatting habits produce different malformations; the parser drops what it cannot salvage and the simulation never crashes. Build that layer once and adding a model is a config entry, not a refactor.\nInformation asymmetry needs a firewall\nThe dramatic core of v2 is the insider tip. You can whisper a tip to a creature that is true (a real forecast of the next market mania the deck will draw, your genuine edge) or false (bait). Acting on a true tip and profiting raises your heat; cross a threshold and the magistrate opens an investigation that ends in a fine, frozen assets, or exile.\nFor that to be a real game, the truth of a tip must be hidden from the creatures. They see the rumor text; they must never see the flag. This is a security property, not a UI nicety, and small-model agents make it sharp: everything the model could repeat back is whatever you put in its prompt. So the hidden flag lives off-prompt entirely (on the player's ledger), it is stripped from the public event record at construction, and the only thing the narrator ever summarizes is public events. A single test scans every creature's full prompt, every turn, for the banned tokens. That test is the most important one in the suite. When you give an agent secret information, assume it will leak unless a test proves it cannot.\nMemory is cheap drama if you bound it\nCreatures carry persistent relationships: a signed sentiment toward the Patron and toward each other, nudged by events (you shorted my crop, you repaid your loan, you allied me with a rival). A creature that turns hostile refuses your loans and quotes you worse; allied creatures stop undercutting each other and behave like a cartel.\nThe trap is prompt inflation. Raw history grows without bound and a small model drowns in it. The fix is to never put history in the prompt: the model sees a one-line bucketed summary (\"you feel warmly toward Oona, wary of the Patron\"), capped to the few strongest feelings, derived from integer sentiment. Notes are kept for traces but bounded and never shown. The behavioral bias is part emergent (the summary nudges the model) and part mechanical (a strongly hostile creature deterministically refuses), so it is observable and testable rather than a hope.\nWhat actually happened\nA representative council run, with the full v2 mechanics live:\nLever\nResult\nModels in the council\n4 labs, all under the 32B cap, served on Modal\nFine-tuned 0.5B reliability\n0% self-buys, 100% valid offers (beats its 3B teacher)\nTruth firewall\n0 leaks of a tip's hidden flag across every prompt scanned\nInsider tip edge\na true-tip pre-position settles a positive P&L; a false tip does not\nHeat to investigation\ntwo clean suspicious wins cross the magistrate's line\nRuin\na margin call and a loan default banish a creature, who returns a chapter later\nA single seeded run exercising the Patron, the information war, relationships, and leverage end to end.\nTakeaways for building with small models\nA small model is a reliable format generator and an unreliable reasoner; you close the gap with structure, prompting, and a small fine-tune, not with scale. A heterogeneous council is more interesting than a homogeneous one and costs you only config once the serving layer is solid. Secret information given to an agent is a firewall problem, and the firewall belongs in the data flow, proven by a test, not in a prompt instruction. And persistent memory is the cheapest way to make agents feel alive, as long as the prompt only ever sees a bounded summary.\nSmall models, big adventures. The whole council is open, and so are the traces.\nMore from this author\nJob Searcher\nJune 6, 2026\nThousand Token Wood: shipping a multi-agent economy on a 3B model\nJune 5, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote -",
+  "clean_text": "Back to Articles\nFive labs, five minds: building a multi-model finance drama on small models\nTeam Article Published\nJune 6, 2026\nUpvote -\nLester Leong AdmiralTaco Follow\nbuild-small-hackathon\nA second Build Small Hackathon field report: what happens when each agent in an emergent economy runs on a different lab's small model, and the player becomes the financier pulling the strings.\nThe first version of Thousand Token Wood was a weather-god sandbox: five woodland creatures on one fine-tuned 0.5B model traded goods, and you poked the world with shocks and watched bubbles and crashes emerge. It was a nice toy. It was also something you watched rather than played.\nv2 rebuilt it into a game you operate. You are the Patron of the Wood, a shadow financier: you lend at interest, whisper tips that may be true or planted, short the market, bribe, and broker alliances, while a magistrate hunts you for trading on what you should not know. The creatures remember how you treated them and scheme back. And the biggest change is under the hood: every creature now thinks with a different lab's small model. This is the engineering report.\nHeterogeneity is the product, not a constraint\nThe obvious way to run a council of agents is one model, many prompts. v2 runs four: gpt-oss-20b (OpenAI), MiniCPM3-4B (OpenBMB), Nemotron-Mini-4B (NVIDIA), and a fine-tuned Qwen 0.5B of my own. The point is not novelty for its own sake. A market is interesting when the participants genuinely differ, and four labs' models trained on different data with different post-training are about as different as small models get. The owl hoards differently than the fox speculates. The council is a live argument, not a script.\nStanding four distinct models up on one platform surfaced the real lesson: the friction is almost entirely at the serving layer, not the modeling layer.\nCurrent vLLM (0.22.1) JIT-compiles kernels at load and needs the CUDA toolkit ( nvcc ) present. A lean base image does not ship it, so all four models failed identically with \"could not find nvcc\" until I based them on a CUDA devel image. This was not a gpt-oss quirk; it was universal to the vLLM version. One image fix unblocked everything.\ngpt-oss-20b runs in its native MXFP4 quantization and fits a 24GB L4 with room to spare; no high-end GPU needed. It also speaks a channel format that wraps the answer in an analysis preamble, so the consumer has to extract the final channel.\nMiniCPM3 needed trust_remote_code ; Nemotron loaded clean. Per-model footguns, each a one-line config.\nThe thing that made four heterogeneous models tractable was the same primitive that made one model tractable in v1: a tolerant JSON parse-and-repair layer that every model's output flows through. Different tokenizers and formatting habits produce different malformations; the parser drops what it cannot salvage and the simulation never crashes. Build that layer once and adding a model is a config entry, not a refactor.\nInformation asymmetry needs a firewall\nThe dramatic core of v2 is the insider tip. You can whisper a tip to a creature that is true (a real forecast of the next market mania the deck will draw, your genuine edge) or false (bait). Acting on a true tip and profiting raises your heat; cross a threshold and the magistrate opens an investigation that ends in a fine, frozen assets, or exile.\nFor that to be a real game, the truth of a tip must be hidden from the creatures. They see the rumor text; they must never see the flag. This is a security property, not a UI nicety, and small-model agents make it sharp: everything the model could repeat back is whatever you put in its prompt. So the hidden flag lives off-prompt entirely (on the player's ledger), it is stripped from the public event record at construction, and the only thing the narrator ever summarizes is public events. A single test scans every creature's full prompt, every turn, for the banned tokens. That test is the most important one in the suite. When you give an agent secret information, assume it will leak unless a test proves it cannot.\nMemory is cheap drama if you bound it\nCreatures carry persistent relationships: a signed sentiment toward the Patron and toward each other, nudged by events (you shorted my crop, you repaid your loan, you allied me with a rival). A creature that turns hostile refuses your loans and quotes you worse; allied creatures stop undercutting each other and behave like a cartel.\nThe trap is prompt inflation. Raw history grows without bound and a small model drowns in it. The fix is to never put history in the prompt: the model sees a one-line bucketed summary (\"you feel warmly toward Oona, wary of the Patron\"), capped to the few strongest feelings, derived from integer sentiment. Notes are kept for traces but bounded and never shown. The behavioral bias is part emergent (the summary nudges the model) and part mechanical (a strongly hostile creature deterministically refuses), so it is observable and testable rather than a hope.\nWhat actually happened\nA representative council run, with the full v2 mechanics live:\nLever\nResult\nModels in the council\n4 labs, all under the 32B cap, served on Modal\nFine-tuned 0.5B reliability\n0% self-buys, 100% valid offers (beats its 3B teacher)\nTruth firewall\n0 leaks of a tip's hidden flag across every prompt scanned\nInsider tip edge\na true-tip pre-position settles a positive P&L; a false tip does not\nHeat to investigation\ntwo clean suspicious wins cross the magistrate's line\nRuin\na margin call and a loan default banish a creature, who returns a chapter later\nA single seeded run exercising the Patron, the information war, relationships, and leverage end to end.\nTakeaways for building with small models\nA small model is a reliable format generator and an unreliable reasoner; you close the gap with structure, prompting, and a small fine-tune, not with scale. A heterogeneous council is more interesting than a homogeneous one and costs you only config once the serving layer is solid. Secret information given to an agent is a firewall problem, and the firewall belongs in the data flow, proven by a test, not in a prompt instruction. And persistent memory is the cheapest way to make agents feel alive, as long as the prompt only ever sees a bounded summary.\nSmall models, big adventures. The whole council is open, and so are the traces.\nMore from this author\nJob Searcher\nJune 6, 2026\nThousand Token Wood: shipping a multi-agent economy on a 3B model\nJune 5, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote -",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-013-五个实验室-五个心智-用小模型构建多模型金融剧情游戏.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-013-五个实验室-五个心智-用小模型构建多模型金融剧情游戏.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 6694,
+    "paragraph_count": 40,
+    "sentence_count": 52,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0003,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6694,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "9d3ff292fc180557",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "五个实验室，五个心智：用小模型构建多模型金融剧情游戏",
+    "discovery_summary": "Thousand Token Wood v2使用四个不同实验室的小模型（gpt-oss-20b、MiniCPM3-4B、Nemotron-Mini-4B及微调Qwen 0.5B）驱动金融模拟游戏的智能体。核心发现是异构服务层摩擦在于vLLM 0.22.1需CUDA工具包，而非模型本身。通过容忍性JSON解析层，添加模型只需一条配置。信息隔离确保内幕标志不在提示词中，扫描测试验证无泄露。记忆用情绪摘要截断避免淹没。微调0.5B模型实现0%自成交、100%有效报价，真相防火墙零泄露。小模型是可靠格式生成器但不可靠推理器，可通过结构化、提示词和微调弥补。",
+    "source_name": "Hugging Face：Blog（RSS）",
+    "origin_url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+    "discovered_at": "2026-06-07T02:41:31.518Z",
+    "rank_on_page": 65,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "fa5e63bc31876074",
+  "content_hash": "9d3ff292fc180557",
+  "full_text_hash": "9d3ff292fc180557",
+  "semantic_hash": "9ed15ed2b8fea546",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-06T19:02:33.000Z",
+  "last_seen_at": "2026-06-07T02:44:54.803Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Thousand Token Wood v2使用四个不同实验室的小模型（gpt-oss-20b、MiniCPM3-4B、Nemotron-Mini-4B及微调Qwen 0.5B）驱动金融模拟游戏的智能体。核心发现是异构服务层摩擦在于vLLM 0.22.1需CUDA工具包，而非模型本身。通过容忍性JSON解析层，添加模型只需一条配置。信息隔离确保内幕标志不在提示词中，扫描测试验证无泄露。记忆用情绪摘要截断避免淹没。微调0.5B模型实现0%自成交、100%有效报价，真相防火墙零泄露。小模型是可靠格式生成器但不可靠推理器，可通过结构化、提示词和微调弥补。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Back to Articles Five labs, five minds: building a multi-model finance drama on small models Team Article Published June 6, 2026 Upvote - Lester Leong AdmiralTaco Follow build-small-hackathon A second Build Small Hackathon field report: what happens when each agent in an emergent economy runs on a different lab's small model, and the player becomes the financier pulling the strings.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The first version of Thousand Token Wood was a weather-god sandbox: five woodland creatures on one fine-tuned 0.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5B model traded goods, and you poked the world with shocks and watched bubbles and crashes emerge.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It was a nice toy.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It was also something you watched rather than played.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hugging Face",
+      "Blog（RSS）",
+      "OpenAI",
+      "Nvidia"
+    ],
+    "products": [
+      "agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "2",
+      "20b",
+      "3",
+      "4B",
+      "0.5B",
+      "0.22",
+      "1",
+      "0%"
+    ],
+    "quotes": [
+      "could not find nvcc",
+      "you feel warmly toward Oona, wary of the Patron"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Back to Articles Five labs, five minds: building a multi-model finance drama on small models Team Article Published June 6, 2026 Upvote - Lester Leong AdmiralTaco Follow build-small-hackathon A second Build Small Hackathon field report: what happens when each agent in an emergent economy runs on a different lab's small model, and the player becomes the financier pulling the strings.",
+      "The first version of Thousand Token Wood was a weather-god sandbox: five woodland creatures on one fine-tuned 0.",
+      "5B model traded goods, and you poked the world with shocks and watched bubbles and crashes emerge."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "market_shaping_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 五个实验室，五个心智：用小模型构建多模型金融剧情游戏\n\n- raw_id: R-013\n- original_url: https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2\n- source_name: Hugging Face：Blog（RSS）\n- collected_at: 2026-06-07T02:44:54.803Z\n\n## clean_text\n\nBack to Articles\nFive labs, five minds: building a multi-model finance drama on small models\nTeam Article Published\nJune 6, 2026\nUpvote -\nLester Leong AdmiralTaco Follow\nbuild-small-hackathon\nA second Build Small Hackathon field report: what happens when each agent in an emergent economy runs on a different lab's small model, and the player becomes the financier pulling the strings.\nThe first version of Thousand Token Wood was a weather-god sandbox: five woodland creatures on one fine-tuned 0.5B model traded goods, and you poked the world with shocks and watched bubbles and crashes emerge. It was a nice toy. It was also something you watched rather than played.\nv2 rebuilt it into a game you operate. You are the Patron of the Wood, a shadow financier: you lend at interest, whisper tips that may be true or planted, short the market, bribe, and broker alliances, while a magistrate hunts you for trading on what you should not know. The creatures remember how you treated them and scheme back. And the biggest change is under the hood: every creature now thinks with a different lab's small model. This is the engineering report.\nHeterogeneity is the product, not a constraint\nThe obvious way to run a council of agents is one model, many prompts. v2 runs four: gpt-oss-20b (OpenAI), MiniCPM3-4B (OpenBMB), Nemotron-Mini-4B (NVIDIA), and a fine-tuned Qwen 0.5B of my own. The point is not novelty for its own sake. A market is interesting when the participants genuinely differ, and four labs' models trained on different data with different post-training are about as different as small models get. The owl hoards differently than the fox speculates. The council is a live argument, not a script.\nStanding four distinct models up on one platform surfaced the real lesson: the friction is almost entirely at the serving layer, not the modeling layer.\nCurrent vLLM (0.22.1) JIT-compiles kernels at load and needs the CUDA toolkit ( nvcc ) present. A lean base image does not ship it, so all four models failed identically with \"could not find nvcc\" until I based them on a CUDA devel image. This was not a gpt-oss quirk; it was universal to the vLLM version. One image fix unblocked everything.\ngpt-oss-20b runs in its native MXFP4 quantization and fits a 24GB L4 with room to spare; no high-end GPU needed. It also speaks a channel format that wraps the answer in an analysis preamble, so the consumer has to extract the final channel.\nMiniCPM3 needed trust_remote_code ; Nemotron loaded clean. Per-model footguns, each a one-line config.\nThe thing that made four heterogeneous models tractable was the same primitive that made one model tractable in v1: a tolerant JSON parse-and-repair layer that every model's output flows through. Different tokenizers and formatting habits produce different malformations; the parser drops what it cannot salvage and the simulation never crashes. Build that layer once and adding a model is a config entry, not a refactor.\nInformation asymmetry needs a firewall\nThe dramatic core of v2 is the insider tip. You can whisper a tip to a creature that is true (a real forecast of the next market mania the deck will draw, your genuine edge) or false (bait). Acting on a true tip and profiting raises your heat; cross a threshold and the magistrate opens an investigation that ends in a fine, frozen assets, or exile.\nFor that to be a real game, the truth of a tip must be hidden from the creatures. They see the rumor text; they must never see the flag. This is a security property, not a UI nicety, and small-model agents make it sharp: everything the model could repeat back is whatever you put in its prompt. So the hidden flag lives off-prompt entirely (on the player's ledger), it is stripped from the public event record at construction, and the only thing the narrator ever summarizes is public events. A single test scans every creature's full prompt, every turn, for the banned tokens. That test is the most important one in the suite. When you give an agent secret information, assume it will leak unless a test proves it cannot.\nMemory is cheap drama if you bound it\nCreatures carry persistent relationships: a signed sentiment toward the Patron and toward each other, nudged by events (you shorted my crop, you repaid your loan, you allied me with a rival). A creature that turns hostile refuses your loans and quotes you worse; allied creatures stop undercutting each other and behave like a cartel.\nThe trap is prompt inflation. Raw history grows without bound and a small model drowns in it. The fix is to never put history in the prompt: the model sees a one-line bucketed summary (\"you feel warmly toward Oona, wary of the Patron\"), capped to the few strongest feelings, derived from integer sentiment. Notes are kept for traces but bounded and never shown. The behavioral bias is part emergent (the summary nudges the model) and part mechanical (a strongly hostile creature deterministically refuses), so it is observable and testable rather than a hope.\nWhat actually happened\nA representative council run, with the full v2 mechanics live:\nLever\nResult\nModels in the council\n4 labs, all under the 32B cap, served on Modal\nFine-tuned 0.5B reliability\n0% self-buys, 100% valid offers (beats its 3B teacher)\nTruth firewall\n0 leaks of a tip's hidden flag across every prompt scanned\nInsider tip edge\na true-tip pre-position settles a positive P&L; a false tip does not\nHeat to investigation\ntwo clean suspicious wins cross the magistrate's line\nRuin\na margin call and a loan default banish a creature, who returns a chapter later\nA single seeded run exercising the Patron, the information war, relationships, and leverage end to end.\nTakeaways for building with small models\nA small model is a reliable format generator and an unreliable reasoner; you close the gap with structure, prompting, and a small fine-tune, not with scale. A heterogeneous council is more interesting than a homogeneous one and costs you only config once the serving layer is solid. Secret information given to an agent is a firewall problem, and the firewall belongs in the data flow, proven by a test, not in a prompt instruction. And persistent memory is the cheapest way to make agents feel alive, as long as the prompt only ever sees a bounded summary.\nSmall models, big adventures. The whole council is open, and so are the traces.\nMore from this author\nJob Searcher\nJune 6, 2026\nThousand Token Wood: shipping a multi-agent economy on a 3B model\nJune 5, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote -\n\n## full_text\n\nBack to Articles\nFive labs, five minds: building a multi-model finance drama on small models\nTeam Article Published\nJune 6, 2026\nUpvote -\nLester Leong AdmiralTaco Follow\nbuild-small-hackathon\nA second Build Small Hackathon field report: what happens when each agent in an emergent economy runs on a different lab's small model, and the player becomes the financier pulling the strings.\nThe first version of Thousand Token Wood was a weather-god sandbox: five woodland creatures on one fine-tuned 0.5B model traded goods, and you poked the world with shocks and watched bubbles and crashes emerge. It was a nice toy. It was also something you watched rather than played.\nv2 rebuilt it into a game you operate. You are the Patron of the Wood, a shadow financier: you lend at interest, whisper tips that may be true or planted, short the market, bribe, and broker alliances, while a magistrate hunts you for trading on what you should not know. The creatures remember how you treated them and scheme back. And the biggest change is under the hood: every creature now thinks with a different lab's small model. This is the engineering report.\nHeterogeneity is the product, not a constraint\nThe obvious way to run a council of agents is one model, many prompts. v2 runs four: gpt-oss-20b (OpenAI), MiniCPM3-4B (OpenBMB), Nemotron-Mini-4B (NVIDIA), and a fine-tuned Qwen 0.5B of my own. The point is not novelty for its own sake. A market is interesting when the participants genuinely differ, and four labs' models trained on different data with different post-training are about as different as small models get. The owl hoards differently than the fox speculates. The council is a live argument, not a script.\nStanding four distinct models up on one platform surfaced the real lesson: the friction is almost entirely at the serving layer, not the modeling layer.\nCurrent vLLM (0.22.1) JIT-compiles kernels at load and needs the CUDA toolkit ( nvcc ) present. A lean base image does not ship it, so all four models failed identically with \"could not find nvcc\" until I based them on a CUDA devel image. This was not a gpt-oss quirk; it was universal to the vLLM version. One image fix unblocked everything.\ngpt-oss-20b runs in its native MXFP4 quantization and fits a 24GB L4 with room to spare; no high-end GPU needed. It also speaks a channel format that wraps the answer in an analysis preamble, so the consumer has to extract the final channel.\nMiniCPM3 needed trust_remote_code ; Nemotron loaded clean. Per-model footguns, each a one-line config.\nThe thing that made four heterogeneous models tractable was the same primitive that made one model tractable in v1: a tolerant JSON parse-and-repair layer that every model's output flows through. Different tokenizers and formatting habits produce different malformations; the parser drops what it cannot salvage and the simulation never crashes. Build that layer once and adding a model is a config entry, not a refactor.\nInformation asymmetry needs a firewall\nThe dramatic core of v2 is the insider tip. You can whisper a tip to a creature that is true (a real forecast of the next market mania the deck will draw, your genuine edge) or false (bait). Acting on a true tip and profiting raises your heat; cross a threshold and the magistrate opens an investigation that ends in a fine, frozen assets, or exile.\nFor that to be a real game, the truth of a tip must be hidden from the creatures. They see the rumor text; they must never see the flag. This is a security property, not a UI nicety, and small-model agents make it sharp: everything the model could repeat back is whatever you put in its prompt. So the hidden flag lives off-prompt entirely (on the player's ledger), it is stripped from the public event record at construction, and the only thing the narrator ever summarizes is public events. A single test scans every creature's full prompt, every turn, for the banned tokens. That test is the most important one in the suite. When you give an agent secret information, assume it will leak unless a test proves it cannot.\nMemory is cheap drama if you bound it\nCreatures carry persistent relationships: a signed sentiment toward the Patron and toward each other, nudged by events (you shorted my crop, you repaid your loan, you allied me with a rival). A creature that turns hostile refuses your loans and quotes you worse; allied creatures stop undercutting each other and behave like a cartel.\nThe trap is prompt inflation. Raw history grows without bound and a small model drowns in it. The fix is to never put history in the prompt: the model sees a one-line bucketed summary (\"you feel warmly toward Oona, wary of the Patron\"), capped to the few strongest feelings, derived from integer sentiment. Notes are kept for traces but bounded and never shown. The behavioral bias is part emergent (the summary nudges the model) and part mechanical (a strongly hostile creature deterministically refuses), so it is observable and testable rather than a hope.\nWhat actually happened\nA representative council run, with the full v2 mechanics live:\nLever\nResult\nModels in the council\n4 labs, all under the 32B cap, served on Modal\nFine-tuned 0.5B reliability\n0% self-buys, 100% valid offers (beats its 3B teacher)\nTruth firewall\n0 leaks of a tip's hidden flag across every prompt scanned\nInsider tip edge\na true-tip pre-position settles a positive P&L; a false tip does not\nHeat to investigation\ntwo clean suspicious wins cross the magistrate's line\nRuin\na margin call and a loan default banish a creature, who returns a chapter later\nA single seeded run exercising the Patron, the information war, relationships, and leverage end to end.\nTakeaways for building with small models\nA small model is a reliable format generator and an unreliable reasoner; you close the gap with structure, prompting, and a small fine-tune, not with scale. A heterogeneous council is more interesting than a homogeneous one and costs you only config once the serving layer is solid. Secret information given to an agent is a firewall problem, and the firewall belongs in the data flow, proven by a test, not in a prompt instruction. And persistent memory is the cheapest way to make agents feel alive, as long as the prompt only ever sees a bounded summary.\nSmall models, big adventures. The whole council is open, and so are the traces.\nMore from this author\nJob Searcher\nJune 6, 2026\nThousand Token Wood: shipping a multi-agent economy on a 3B model\nJune 5, 2026\nCommunity\nEdit Preview\nUpload images, audio, and videos by dragging in the text input, pasting, or clicking here .\nTap or paste here to upload images\nComment · Sign up or log in to comment\nUpvote -\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 94\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Thousand Token Wood v2使用四个不同实验室的小模型（gpt-oss-20b、MiniCPM3-4B、Nemotron-Mini-4B及微调Qwen 0.5B）驱动金融模拟游戏的智能体。核心发现是异构服务层摩擦在于vLLM 0.22.1需CUDA工具包，而非模型本身。通过容忍性JSON解析层，添加模型只需一条配置。信息隔离确保内幕标志不在提示词中，扫描测试验证无泄露。记忆用情绪摘要截断避免淹没。微调0.5B模型实现0%自成交、100%有效报价，真相防火墙零泄露。小模型是可靠格式生成器但不可靠推理器，可通过结构化、提示词和微调弥补。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Back to Articles Five labs, five minds: building a multi-model finance drama on small models Team Article Published June 6, 2026 Upvote - Lester Leong AdmiralTaco Follow build-small-hackathon A second Build Small Hackathon field report: what happens when each agent in an emergent economy runs on a different lab's small model, and the player becomes the financier pulling the strings.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] The first version of Thousand Token Wood was a weather-god sandbox: five woodland creatures on one fine-tuned 0.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 5B model traded goods, and you poked the world with shocks and watched bubbles and crashes emerge.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] It was a nice toy.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] It was also something you watched rather than played.\n"
+}

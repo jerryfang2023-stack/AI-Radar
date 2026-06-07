@@ -1,0 +1,296 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-011
+title: "Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed"
+original_url: "https://www.theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles"
+canonical_url: "https://theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles"
+source_name: "The Verge：AI（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-06T14:00:00.000Z"
+collected_at: 2026-06-07T02:44:54.792Z
+language: mixed
+full_text_hash: 58b13676a48b64b6
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-011-meta-在其-ai-应用中推出-ai-生成的点击诱饵新闻-feed.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-011-meta-在其-ai-应用中推出-ai-生成的点击诱饵新闻-feed.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":12937,"paragraph_count":52,"sentence_count":78,"boilerplate_hits":0,"symbol_ratio":0.0057,"method":"json-ld"}
+has_full_text: true
+content_length: 12937
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"58b13676a48b64b6","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed","discovery_summary":"Meta 在其独立的 Meta AI 应用中新增了\"For You\"栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的\"Discover\"信息流，展示 AI 生成的图片和用户对话，现已改为标准聊天机器人界面。","source_name":"The Verge：AI（RSS）","origin_url":"https://www.theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles","discovered_at":"2026-06-07T02:41:31.526Z","rank_on_page":112,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 76becc617b1dfb1b
+content_hash: 58b13676a48b64b6
+semantic_hash: c4b3afa444e04cc6
+duplicate_of: ""
+first_seen_at: "2026-06-06T14:00:00.000Z"
+last_seen_at: 2026-06-07T02:44:54.792Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Verge","AI（RSS）","Meta"],"products":[],"people":[],"industries":[],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["2025","2","2026","06","8229","1","7b","14"],"quotes":["栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的","Discover","stories.","A royal butler finally settled the milk first debate","The psychology of joining a queue without knowing why,"]}
+evidence_seed: {"company_actions":["Facebook has long been filled with feeds of clickbait articles.","Now, Meta is making its own clickbait articles with AI.","The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"quote","text":"Meta 在其独立的 Meta AI 应用中新增了\"For You\"栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的\"Discover\"信息流，展示 AI 生成的图片和用户对话，现已改为标准聊天机器人界面。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Meta made its own AI-generated clickbait news feed Meta said it would pull the feature after The Verge asked questions about it.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Facebook has long been filled with feeds of clickbait articles.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Now, Meta is making its own clickbait articles with AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But the topics, images, and text are all AI-generated — and as questionable as you’d expect from AI-created works.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed
+
+## clean_text
+
+Meta made its own AI-generated clickbait news feed
+Meta said it would pull the feature after The Verge asked questions about it.
+Facebook has long been filled with feeds of clickbait articles. Now, Meta is making its own clickbait articles with AI.
+The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read. But the topics, images, and text are all AI-generated — and as questionable as you’d expect from AI-created works.
+The Meta AI app first launched in April 2025 with its focus on a public “Discover” feed that showed AI-generated images and conversations from other users (who frequently seemed unaware that they were being made public). That’s all disappeared. The app now has a standard chatbot interface, plus a For You page that’s been present for at least a few months, displaying a stream of suggested article prompts that, when tapped, generate entire “stories.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8229_1e7b14.png?quality=90&strip=all]
+When targeting me, a reporter based in London, the prompts were aggressively British, involving topics like tea, manners, pubs, royals, football — sorry, soccer — and, naturally, the art of queuing. Suggested stories included “A royal butler finally settled the milk first debate” (the tea goes first, apparently), “The psychology of joining a queue without knowing why,” “The anatomy of the devastating British tut,” and “Inside the extreme sport of visiting every UK pub.” Some made even less sense, like “When a bit of a pickle means total disaster.”
+My colleague, meanwhile, appears to have been placed firmly within the luxury watch aficionado bracket by the algorithm. His feed suggested stories called “My fake Rolex experiment” and “The brutal math behind the Rolex waitlist illusion.”
+The AI-generated text read like puffy filler, offering little substance beyond repeatedly restating the premise of the prompt. Sourcing was also nonexistent.
+I tried to track down where these “stories” may have originated. The royal butler tea story appears to trace back to a 2018 BBC Three comedy series called Miss Holland, which follows a fictional beauty queen from a small Dutch town as she travels to Britain and learns “how to be posh and classy” from real former royal butler Grant Harrold. The “Rolex experiment” story, meanwhile, appeared to be a complete fabrication, generated in our chat box as a first-person narrative without a byline, after a bit of usual whirring that happens when a chatbot is generating. Other stories leaned on vague references to unnamed experts or fictional research.
+When I tapped the same cards more than once, the generated stories stayed within the rough bounds of the prompt and all were clearly versions of the same thing, but slightly different. Typing the same headline into a separate chat produced a completely different response. The clearest giveaway came from my chat history. It showed the hidden, suggested prompts that were supposed to trigger the generation of articles. One began:
+“You are a helpful conversational assistant. The user is responding to a proactive feed card that was shown to them. The card context below provides background on what prompted the user’s message,” followed by what appeared to be references to internal instructions, information, and metadata.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8314_1f179c.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8250_e5f3b6.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/1000013991-1-1.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603_125022_35adb9.jpg?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603-115844_98ff9b.png?quality=90&strip=all]
+The articles had images attached. A lot of these were harmless — bland mush of cartoony people, landscapes, and food. But some depicted real people, including public figures, and were riddled with errors. “Who really pays for the royal family in 2026?” featured two Queen Elizabeth IIs, despite her death several years prior and her existence as only one person.
+Around the Queen clones were people who seemed to be approximations of other royals: a vaguely Princess Kate-ish face to the left, a strange attempt at Prince William at the back, and a sort-of King Charles in the middle who bore an exaggerated resemblance to his late father. Other images had usual AI tells like impossible hands and bodies leaning at unnatural angles. One image actually turned out to be a GIF of an older couple dancing and making arm movements no human body could make.
+[Video: meta ai articles]
+It wasn’t clear whether the app should be able to generate AI images of real people in accordance with Meta’s own, rather opaque rules, but it was. The company has previously said it wants “people to know when they see posts that have been made with AI” and that it automatically adds labels to some user-generated content when AI is detected. Despite this, there was no obvious indication or label in the feed or articles that any material was AI-generated.
+Meta declined to answer many of my questions about the feature’s purpose, whether the company considers the output news or fiction, what safeguards are in place, and whether images of real people and public figures comply with its own AI-content policies.
+“We’re testing a daily feed that proactively shares tips, content, and recommendations tailored to your interests,” Meta spokesperson Tracy Clayton said in a brief statement. “The goal is to suggest what’s most relevant to you – such as fitness advice, meal plans, or other insights – before you even have to ask.”
+Clayton later sent a nearly identical “updated” statement, mysteriously removing the word “proactively.”
+A third statement from Clayton followed later in the day: “This was a test for a limited number of users and it will be deprecated. Meta has no plans to move forward with this feature.”
+This leaves me with additional questions. How was this test limited if, besides me, at least three of my colleagues at The Verge had access to the same feature serving AI clickbait? What did “proactively” even mean? And, of course, who asked for any of this in the first place?
+Meta made its own AI-generated clickbait news feed
+Meta said it would pull the feature after The Verge asked questions about it.
+Facebook has long been filled with feeds of clickbait articles. Now, Meta is making its own clickbait articles with AI.
+The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read. But the topics, images, and text are all AI-generated — and as questionable as you’d expect from AI-created works.
+The Meta AI app first launched in April 2025 with its focus on a public “Discover” feed that showed AI-generated images and conversations from other users (who frequently seemed unaware that they were being made public). That’s all disappeared. The app now has a standard chatbot interface, plus a For You page that’s been present for at least a few months, displaying a stream of suggested article prompts that, when tapped, generate entire “stories.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8229_1e7b14.png?quality=90&strip=all]
+When targeting me, a reporter based in London, the prompts were aggressively British, involving topics like tea, manners, pubs, royals, football — sorry, soccer — and, naturally, the art of queuing. Suggested stories included “A royal butler finally settled the milk first debate” (the tea goes first, apparently), “The psychology of joining a queue without knowing why,” “The anatomy of the devastating British tut,” and “Inside the extreme sport of visiting every UK pub.” Some made even less sense, like “When a bit of a pickle means total disaster.”
+My colleague, meanwhile, appears to have been placed firmly within the luxury watch aficionado bracket by the algorithm. His feed suggested stories called “My fake Rolex experiment” and “The brutal math behind the Rolex waitlist illusion.”
+The AI-generated text read like puffy filler, offering little substance beyond repeatedly restating the premise of the prompt. Sourcing was also nonexistent.
+I tried to track down where these “stories” may have originated. The royal butler tea story appears to trace back to a 2018 BBC Three comedy series called Miss Holland, which follows a fictional beauty queen from a small Dutch town as she travels to Britain and learns “how to be posh and classy” from real former royal butler Grant Harrold. The “Rolex experiment” story, meanwhile, appeared to be a complete fabrication, generated in our chat box as a first-person narrative without a byline, after a bit of usual whirring that happens when a chatbot is generating. Other stories leaned on vague references to unnamed experts or fictional research.
+When I tapped the same cards more than once, the generated stories stayed within the rough bounds of the prompt and all were clearly versions of the same thing, but slightly different. Typing the same headline into a separate chat produced a completely different response. The clearest giveaway came from my chat history. It showed the hidden, suggested prompts that were supposed to trigger the generation of articles. One began:
+“You are a helpful conversational assistant. The user is responding to a proactive feed card that was shown to them. The card context below provides background on what prompted the user’s message,” followed by what appeared to be references to internal instructions, information, and metadata.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8314_1f179c.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8250_e5f3b6.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/1000013991-1-1.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603_125022_35adb9.jpg?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603-115844_98ff9b.png?quality=90&strip=all]
+The articles had images attached. A lot of these were harmless — bland mush of cartoony people, landscapes, and food. But some depicted real people, including public figures, and were riddled with errors. “Who really pays for the royal family in 2026?” featured two Queen Elizabeth IIs, despite her death several years prior and her existence as only one person.
+Around the Queen clones were people who seemed to be approximations of other royals: a vaguely Princess Kate-ish face to the left, a strange attempt at Prince William at the back, and a sort-of King Charles in the middle who bore an exaggerated resemblance to his late father. Other images had usual AI tells like impossible hands and bodies leaning at unnatural angles. One image actually turned out to be a GIF of an older couple dancing and making arm movements no human body could make.
+[Video: meta ai articles]
+It wasn’t clear whether the app should be able to generate AI images of real people in accordance with Meta’s own, rather opaque rules, but it was. The company has previously said it wants “people to know when they see posts that have been made with AI” and that it automatically adds labels to some user-generated content when AI is detected. Despite this, there was no obvious indication or label in the feed or articles that any material was AI-generated.
+Meta declined to answer many of my questions about the feature’s purpose, whether the company considers the output news or fiction, what safeguards are in place, and whether images of real people and public figures comply with its own AI-content policies.
+“We’re testing a daily feed that proactively shares tips, content, and recommendations tailored to your interests,” Meta spokesperson Tracy Clayton said in a brief statement. “The goal is to suggest what’s most relevant to you – such as fitness advice, meal plans, or other insights – before you even have to ask.”
+Clayton later sent a nearly identical “updated” statement, mysteriously removing the word “proactively.”
+A third statement from Clayton followed later in the day: “This was a test for a limited number of users and it will be deprecated. Meta has no plans to move forward with this feature.”
+This leaves me with additional questions. How was this test limited if, besides me, at least three of my colleagues at The Verge had access to the same feature serving AI clickbait? What did “proactively” even mean? And, of course, who asked for any of this in the first place?
+
+## full_text
+
+Meta made its own AI-generated clickbait news feed
+Meta said it would pull the feature after The Verge asked questions about it.
+Facebook has long been filled with feeds of clickbait articles. Now, Meta is making its own clickbait articles with AI.
+The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read. But the topics, images, and text are all AI-generated — and as questionable as you’d expect from AI-created works.
+The Meta AI app first launched in April 2025 with its focus on a public “Discover” feed that showed AI-generated images and conversations from other users (who frequently seemed unaware that they were being made public). That’s all disappeared. The app now has a standard chatbot interface, plus a For You page that’s been present for at least a few months, displaying a stream of suggested article prompts that, when tapped, generate entire “stories.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8229_1e7b14.png?quality=90&strip=all]
+When targeting me, a reporter based in London, the prompts were aggressively British, involving topics like tea, manners, pubs, royals, football — sorry, soccer — and, naturally, the art of queuing. Suggested stories included “A royal butler finally settled the milk first debate” (the tea goes first, apparently), “The psychology of joining a queue without knowing why,” “The anatomy of the devastating British tut,” and “Inside the extreme sport of visiting every UK pub.” Some made even less sense, like “When a bit of a pickle means total disaster.”
+My colleague, meanwhile, appears to have been placed firmly within the luxury watch aficionado bracket by the algorithm. His feed suggested stories called “My fake Rolex experiment” and “The brutal math behind the Rolex waitlist illusion.”
+The AI-generated text read like puffy filler, offering little substance beyond repeatedly restating the premise of the prompt. Sourcing was also nonexistent.
+I tried to track down where these “stories” may have originated. The royal butler tea story appears to trace back to a 2018 BBC Three comedy series called Miss Holland, which follows a fictional beauty queen from a small Dutch town as she travels to Britain and learns “how to be posh and classy” from real former royal butler Grant Harrold. The “Rolex experiment” story, meanwhile, appeared to be a complete fabrication, generated in our chat box as a first-person narrative without a byline, after a bit of usual whirring that happens when a chatbot is generating. Other stories leaned on vague references to unnamed experts or fictional research.
+When I tapped the same cards more than once, the generated stories stayed within the rough bounds of the prompt and all were clearly versions of the same thing, but slightly different. Typing the same headline into a separate chat produced a completely different response. The clearest giveaway came from my chat history. It showed the hidden, suggested prompts that were supposed to trigger the generation of articles. One began:
+“You are a helpful conversational assistant. The user is responding to a proactive feed card that was shown to them. The card context below provides background on what prompted the user’s message,” followed by what appeared to be references to internal instructions, information, and metadata.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8314_1f179c.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8250_e5f3b6.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/1000013991-1-1.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603_125022_35adb9.jpg?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603-115844_98ff9b.png?quality=90&strip=all]
+The articles had images attached. A lot of these were harmless — bland mush of cartoony people, landscapes, and food. But some depicted real people, including public figures, and were riddled with errors. “Who really pays for the royal family in 2026?” featured two Queen Elizabeth IIs, despite her death several years prior and her existence as only one person.
+Around the Queen clones were people who seemed to be approximations of other royals: a vaguely Princess Kate-ish face to the left, a strange attempt at Prince William at the back, and a sort-of King Charles in the middle who bore an exaggerated resemblance to his late father. Other images had usual AI tells like impossible hands and bodies leaning at unnatural angles. One image actually turned out to be a GIF of an older couple dancing and making arm movements no human body could make.
+[Video: meta ai articles]
+It wasn’t clear whether the app should be able to generate AI images of real people in accordance with Meta’s own, rather opaque rules, but it was. The company has previously said it wants “people to know when they see posts that have been made with AI” and that it automatically adds labels to some user-generated content when AI is detected. Despite this, there was no obvious indication or label in the feed or articles that any material was AI-generated.
+Meta declined to answer many of my questions about the feature’s purpose, whether the company considers the output news or fiction, what safeguards are in place, and whether images of real people and public figures comply with its own AI-content policies.
+“We’re testing a daily feed that proactively shares tips, content, and recommendations tailored to your interests,” Meta spokesperson Tracy Clayton said in a brief statement. “The goal is to suggest what’s most relevant to you – such as fitness advice, meal plans, or other insights – before you even have to ask.”
+Clayton later sent a nearly identical “updated” statement, mysteriously removing the word “proactively.”
+A third statement from Clayton followed later in the day: “This was a test for a limited number of users and it will be deprecated. Meta has no plans to move forward with this feature.”
+This leaves me with additional questions. How was this test limited if, besides me, at least three of my colleagues at The Verge had access to the same feature serving AI clickbait? What did “proactively” even mean? And, of course, who asked for any of this in the first place?
+Meta made its own AI-generated clickbait news feed
+Meta said it would pull the feature after The Verge asked questions about it.
+Facebook has long been filled with feeds of clickbait articles. Now, Meta is making its own clickbait articles with AI.
+The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read. But the topics, images, and text are all AI-generated — and as questionable as you’d expect from AI-created works.
+The Meta AI app first launched in April 2025 with its focus on a public “Discover” feed that showed AI-generated images and conversations from other users (who frequently seemed unaware that they were being made public). That’s all disappeared. The app now has a standard chatbot interface, plus a For You page that’s been present for at least a few months, displaying a stream of suggested article prompts that, when tapped, generate entire “stories.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8229_1e7b14.png?quality=90&strip=all]
+When targeting me, a reporter based in London, the prompts were aggressively British, involving topics like tea, manners, pubs, royals, football — sorry, soccer — and, naturally, the art of queuing. Suggested stories included “A royal butler finally settled the milk first debate” (the tea goes first, apparently), “The psychology of joining a queue without knowing why,” “The anatomy of the devastating British tut,” and “Inside the extreme sport of visiting every UK pub.” Some made even less sense, like “When a bit of a pickle means total disaster.”
+My colleague, meanwhile, appears to have been placed firmly within the luxury watch aficionado bracket by the algorithm. His feed suggested stories called “My fake Rolex experiment” and “The brutal math behind the Rolex waitlist illusion.”
+The AI-generated text read like puffy filler, offering little substance beyond repeatedly restating the premise of the prompt. Sourcing was also nonexistent.
+I tried to track down where these “stories” may have originated. The royal butler tea story appears to trace back to a 2018 BBC Three comedy series called Miss Holland, which follows a fictional beauty queen from a small Dutch town as she travels to Britain and learns “how to be posh and classy” from real former royal butler Grant Harrold. The “Rolex experiment” story, meanwhile, appeared to be a complete fabrication, generated in our chat box as a first-person narrative without a byline, after a bit of usual whirring that happens when a chatbot is generating. Other stories leaned on vague references to unnamed experts or fictional research.
+When I tapped the same cards more than once, the generated stories stayed within the rough bounds of the prompt and all were clearly versions of the same thing, but slightly different. Typing the same headline into a separate chat produced a completely different response. The clearest giveaway came from my chat history. It showed the hidden, suggested prompts that were supposed to trigger the generation of articles. One began:
+“You are a helpful conversational assistant. The user is responding to a proactive feed card that was shown to them. The card context below provides background on what prompted the user’s message,” followed by what appeared to be references to internal instructions, information, and metadata.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8314_1f179c.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/IMG_8250_e5f3b6.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/1000013991-1-1.png?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603_125022_35adb9.jpg?quality=90&strip=all]
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/Screenshot_20260603-115844_98ff9b.png?quality=90&strip=all]
+The articles had images attached. A lot of these were harmless — bland mush of cartoony people, landscapes, and food. But some depicted real people, including public figures, and were riddled with errors. “Who really pays for the royal family in 2026?” featured two Queen Elizabeth IIs, despite her death several years prior and her existence as only one person.
+Around the Queen clones were people who seemed to be approximations of other royals: a vaguely Princess Kate-ish face to the left, a strange attempt at Prince William at the back, and a sort-of King Charles in the middle who bore an exaggerated resemblance to his late father. Other images had usual AI tells like impossible hands and bodies leaning at unnatural angles. One image actually turned out to be a GIF of an older couple dancing and making arm movements no human body could make.
+[Video: meta ai articles]
+It wasn’t clear whether the app should be able to generate AI images of real people in accordance with Meta’s own, rather opaque rules, but it was. The company has previously said it wants “people to know when they see posts that have been made with AI” and that it automatically adds labels to some user-generated content when AI is detected. Despite this, there was no obvious indication or label in the feed or articles that any material was AI-generated.
+Meta declined to answer many of my questions about the feature’s purpose, whether the company considers the output news or fiction, what safeguards are in place, and whether images of real people and public figures comply with its own AI-content policies.
+“We’re testing a daily feed that proactively shares tips, content, and recommendations tailored to your interests,” Meta spokesperson Tracy Clayton said in a brief statement. “The goal is to suggest what’s most relevant to you – such as fitness advice, meal plans, or other insights – before you even have to ask.”
+Clayton later sent a nearly identical “updated” statement, mysteriously removing the word “proactively.”
+A third statement from Clayton followed later in the day: “This was a test for a limited number of users and it will be deprecated. Meta has no plans to move forward with this feature.”
+This leaves me with additional questions. How was this test limited if, besides me, at least three of my colleagues at The Verge had access to the same feature serving AI clickbait? What did “proactively” even mean? And, of course, who asked for any of this in the first place?
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":12937,"paragraph_count":52,"sentence_count":78,"boilerplate_hits":0,"symbol_ratio":0.0057,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   Meta 在其独立的 Meta AI 应用中新增了"For You"栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的"Discover"信息流，展示 AI 生成的图片和用户对话，现已改为标准聊天机器人界面。
+
+2. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   Meta made its own AI-generated clickbait news feed Meta said it would pull the feature after The Verge asked questions about it.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Facebook has long been filled with feeds of clickbait articles.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Now, Meta is making its own clickbait articles with AI.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   But the topics, images, and text are all AI-generated — and as questionable as you’d expect from AI-created works.
+
+## business_elements
+
+- companies: The Verge, AI（RSS）, Meta
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 2025, 2, 2026, 06, 8229, 1, 7b, 14
+- quotes: 栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的 / Discover / stories. / A royal butler finally settled the milk first debate / The psychology of joining a queue without knowing why,
+
+## evidence_seed
+
+- company_actions: Facebook has long been filled with feeds of clickbait articles. / Now, Meta is making its own clickbait articles with AI. / The standalone Meta AI app now has a “For You” section that populates a list of clickbait-style stories for you to read.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed","discovery_summary":"Meta 在其独立的 Meta AI 应用中新增了\"For You\"栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的\"Discover\"信息流，展示 AI 生成的图片和用户对话，现已改为标准聊天机器人界面。","source_name":"The Verge：AI（RSS）","origin_url":"https://www.theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles","discovered_at":"2026-06-07T02:41:31.526Z","rank_on_page":112,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Meta 在其独立的 Meta AI 应用中新增了"For You"栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的"Discover"信息流，展示 AI 生成的图片和用户对话，现已改为标准聊天机器人界面。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

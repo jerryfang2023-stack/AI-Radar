@@ -1,0 +1,500 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-002
+title: "Ask HN： 为什么HN上的用户如此反感人工智能？"
+original_url: "https://news.ycombinator.com/item?id=48420827"
+canonical_url: "https://news.ycombinator.com/item?id=48420827"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: industry
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-06T07:23:32.993Z"
+collected_at: 2026-06-07T02:44:54.736Z
+language: mixed
+full_text_hash: 15ebb360d75cd78f
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-002-ask-hn-为什么hn上的用户如此反感人工智能.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-07/r-002-ask-hn-为什么hn上的用户如此反感人工智能.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 82
+extractor_diagnostics: {"readability_score":82,"text_length":60000,"paragraph_count":176,"sentence_count":542,"boilerplate_hits":1,"symbol_ratio":0.0096,"method":"body-visible-text"}
+has_full_text: true
+content_length: 60000
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"15ebb360d75cd78f","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: thread_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Ask HN： 为什么HN上的用户如此反感人工智能？","discovery_summary":"一位用户在Hacker News上发帖提问\"为什么HN社区如此反感人工智能？\"，该帖子获得105个upvote，引发社区讨论。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://news.ycombinator.com/item?id=48420827","discovered_at":"2026-06-07T02:41:31.536Z","rank_on_page":163,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: fa78b5f2da52f6b0
+content_hash: 3ffcb6e03c9eb58d
+semantic_hash: 686e8158686d9f8a
+duplicate_of: ""
+first_seen_at: "2026-06-06T07:23:32.993Z"
+last_seen_at: 2026-06-07T02:44:54.736Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","OpenAI","Anthropic"],"products":["Claude","agent","claude"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","法务"],"numbers":["105","395","1","656","20","1.0","10x","2.0"],"quotes":["为什么HN社区如此反感人工智能？","writes bad code,","introduces bugs,","creates technical debt,","private toy"]}
+evidence_seed: {"company_actions":["Ask HN: Why is the HN crowd so anti-AI?","| Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Ask HN: Why is the HN crowd so anti-AI?","395 points by Ekami 1 day ago | hide | past | favorite | 656 comments Genuine question."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"一位用户在Hacker News上发帖提问\"为什么HN社区如此反感人工智能？\"，该帖子获得105个upvote，引发社区讨论。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ask HN: Why is the HN crowd so anti-AI?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"| Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Ask HN: Why is the HN crowd so anti-AI?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"395 points by Ekami 1 day ago | hide | past | favorite | 656 comments Genuine question.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Over the past six months, there hasn’t been a single day where I’ve checked the HN Best RSS feed without seeing a post about how AI “writes bad code,” “introduces bugs,” “creates technical debt,” or something along those lines.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"I’ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Ask HN： 为什么HN上的用户如此反感人工智能？
+
+## clean_text
+
+Ask HN: Why is the HN crowd so anti-AI? | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login
+Ask HN: Why is the HN crowd so anti-AI?
+395 points by Ekami 1 day ago | hide | past | favorite | 656 comments
+Genuine question. Over the past six months, there hasn’t been a single day where I’ve checked the HN Best RSS feed without seeing a post about how AI “writes bad code,” “introduces bugs,” “creates technical debt,” or something along those lines. I’ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end? Users don’t care whether the code was written by AI or by hand, or which framework you used. They care that the product works. I say this as someone who has spent more than 20 years honing their craft as a software engineer. Let’s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x faster. By then, enough real-world feedback would have surfaced to identify the major issues, and tools like Claude Code would make it possible to fix and ship version 2.0 at an incredible pace. At some point, execution speed starts to matter more than the elegance of the code.
+dang 23 hours ago | next [–]
+It's simply divided. With every such division A vs. B, the A team thinks HN is anti-A and the B team thinks it's anti-B. This is an invariant. You can see from this megathread, currently on the front page, that HN is by no means anti-AI: Ask HN: What was your "oh shit" moment with GenAI? - https://news.ycombinator.com/item?id=48406174 . Sometimes it just takes the right initial condition (e.g. title) to bring out one side or other. As for why the community is divided, there's always a temptation to come up with HN-specific explanations, but society as a whole is divided about AI. Surely that is the only explanation one needs. As I've been saying for years, HN can't be immune from macro trends: https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que...
+reply
+_0ffh 7 hours ago | parent | next [–]
+Thoughtful comment, and I'd like to add another angle: However meaningful it is to say the community is divided, I also think that individuals are "divided" on the question as well. I can speak from myself as an example (although n=1): I am incredibly open to machine learning and the advances it brings. On the other hand I am extremely conscious of the fact that the current LLMs do often write bad code, which becomes especially obvious once projects go much beyond "private toy" size. For me personally the consequence is that I try to make my projects even more modular, and the modules even more clearly delineated. With proper guidance, current LLMs work mostly fine when working on isolated modules. That doesn't mean they don't sometimes fail even there, but they also on rare occasions come up with surprisingly clever solutions when you let them loose on a code base, as long as the problem you want them to fix is mostly isolated in a couple of modules. So long story short, you can be all for LLMs and still be conscious of their shortcomings, and that just vibe coding applications you intend to let loose on unsuspecting customers is probably a bad idea, and possibly outright immoral. We have already seen more than enough examples of vibe coded applications dumping sensitive user data into the lap of anyone who is inclined to pick up a stick and prod them a little bit.
+reply
+thierrydamiba 6 hours ago | root | parent | next [–]
+There’s also the uncomfortable reality that a lot of people spent a lot of time learning how to do things that anyone can prompt now… We tend to ignore that reality but it hangs above all these discussions like a dirty cloud
+reply
+rootusrootus 6 hours ago | root | parent | next [–]
+That does not seem like it should be controversial. I have known for quite a long time that a motivated high school kid could learn to code well enough to be perfectly useful. Especially with popular languages like Python. This is just an object lesson for everyone who thought all that software guys did was write code that there is just a little bit more to the job than that. Actual developers should already have known.
+reply
+majormajor 3 hours ago | root | parent | prev | next [–]
+Yep, I use it every day. IMO it's a bigger long-term productivity lever for someone who knows good code than it is for someone who doesn't look at the code (at least for systems that are expected to have lots of users). For those sorts of systems, comments like this just remind me of people pitching UML + codegen-or-outsourcing 20 years ago. > Users don’t care whether the code was written by AI or by hand, or which framework you used. They care that the product works. > I say this as someone who has spent more than 20 years honing their craft as a software engineer. I've worked with outsourced code, and I've worked with similarly-messy/not-forward-thinking first-iteration startup-MVP code that found success and now needs to do more and be more reliable while being cheaper to operate. It ain't pretty. Once you start modifying working code that people rely on you quickly start to see that the code itself matters. There aren't enough tests in the world to get around this from a quality POV. And piles of copypasta turn into either inconsistent behaviors (bad from a user satisfaction POV) or a continual drag on velocity (bad from a product goals/competitivness POV). And I've run the tools on those sorts of "found MVP, now need to iterate fast" codebases, both on the messy parts and the better parts. Sure, Claude can chew through the pain points of "let me find the ten copypasta versions of this and try to update them all" and chase down all the weird stupid bugs/janky things that that requires because each of them evolved separately much faster than a human can. But it's not gonna be as fast as it was at writing the first version, and it's gonna get more and more annoying. You hit the point where your agent is churning for hours and running more and more tests and inadvertently breaking more things trying to make the change in all those places, and making MORE code changes to fix those (and those are just the caught broken things the tests cover!). It's wayyyyy faster and less potentially painful to have it make updates to a well-factored module. "You don't have to read the code" is all well and good until you have a 10k+ line PR that's 10x larger than it needs to be because nobody read the code in the past, and you realize that most of the relevant test files also changed substantially and you don't have that much known-unchanged permutation coverage of the actual things users do... how comfortable are you pushing the "ship it" button then?
+reply
+wlonkly 2 hours ago | root | parent | prev | next [–]
+I read an article not long ago which I cannot find for the life of me now, but the thing in it that stuck with me was the idea that people (in the context, career software developers) were not either AI-pilled or anti-AI, but rather that people are both excited and afraid at the same time.
+reply
+josephg 4 hours ago | root | parent | prev | next [–]
+Yes, I’m in this camp. I’ve been pushing forward some personal projects lately using LLMs. At first, I was delighted at how productive I was, prompting. But over time a lot of cracks have started to show. Claude is good at programming “in the small”. It’s good at getting self contained, well scoped tasks done. But it’s bad at large scale system thinking. Over time, every project I’ve gotten Claude to write has become riddled with poor design choices layered on top of one another until even Claude struggles to make forward progress. And at that point, what do you do? You’ve gotta read all its code. Something I’ve learned I should just do from the start to save myself a lot of time later on. It’s also strangely bad at correctness. You can ask it to write unit tests for a project. Unless you’re careful with your prompting, it will only write the unit tests that it knows will pass. Generally, these models are amazing tools. But they cannot be trusted to make correct, maintainable software. At least not yet. Maybe in another year or two.
+reply
+majormajor 3 hours ago | root | parent | next [–]
+> Claude is good at programming “in the small”. It’s good at getting self contained, well scoped tasks done. But it’s bad at large scale system thinking. Over time, every project I’ve gotten Claude to write has become riddled with poor design choices layered on top of one another until even Claude struggles to make forward progress. What's really fun about these tools is that this is both true and false! If you ask these tools to reason about things in-the-large you often get very useful information back out of them. I've asked about refactors I was thinking about doing, and gotten accurate and useful information back, which as been AMAZINGLY helpful for avoiding "let me start doing this, and then realize 4 hours in that it's not gonna work as well as I hoped" traps. But it's a very attention-on-one-thing-at-a-time thing. IMO this is fairly inherent to the models, but people have been doing great work making the tooling around them smarter in terms of how to break up tasks ahead of time to compensate, so I'm not gonna say it won't get materially better. So if you prompt it to do a task in a certain way, especially in a "plan mode" type of usage, you can get a pretty solid recipe + execution of a properly-designed implementation of that task. But if you're not opinionated and checking in frequently, you're gonna get the sorta median-approach or random-luck-output-of-the-day decision. And so the human-in-the-loop point is unlikely to go away as long as the human has more context. Even if it's half-baked or not-fully-realized intuition about how the code is likely to evolve in the future that you don't put into every prompt. > It’s also strangely bad at correctness. You can ask it to write unit tests for a project. Unless you’re careful with your prompting, it will only write the unit tests that it knows will pass. My hunch is that this is the same fundamental problem. When it's attention is fully on "produce the next string of code" the parts of the context that relate to the broader system goals are NOT being considered as much for the output. So you get things like this, even with latest Opus still, when dealing with hard-to-isolate-in-a-single-test bugs (esp when it comes to multi-service call sequences or concurrent code): - "we need to fix this bug across eight methods in three files" - "I found the spot! we need to do [blah blah blah]" - "great, implement that plan" - "I've done it!" - "wait a sec... you moved some of the sequencing around, but didn't actually fix the fundamental issue" - "you're right! i moved [xyz] into [func b] instead of [func a] since it needed to be called later, but actually it needs to be after [func c] since it depends on the output of func b!" When asked about correctness it's good enough at "reasoning"-style output to spot these issues, but when generating code it's in such a pure "predict plausible code sequences" mode that this can get lost.
+reply
+josephg 2 hours ago | root | parent | next [–]
+Yeah I hear you with all of this. Its weird, working with LLMs. There are some things the LLMs are extremely good at doing autonomously. Like, reverse engineering, or reading documentation (and using that knowledge in other areas). There are things that they can do - but you need to explicitly prompt. Like, I've found Opus is quite good at optimising code. I've had a lot of success by asking it to write benchmarks (and do profiling), and use that data to improve the performance of some piece of code. Thats often enough to get quite large performance improvements. You can get even further by showing it similar code others have written which is well optimised. It's very good at copying optimisation ideas from one project to another. But then there are very simple things it really struggles to do. Some kinds of correctness testing. Invariants. System design. Is it bad at that stuff, or do I just need to figure out how to prompt the LLM? To return to the topic of this thread, I think we're seeing a lot of different opinions on LLM generated code for 3 reasons: 1. Some people aren't looking at claude's output at all. Some people are looking at the code and it looks fine to them. And some people (with more experience writing software) are looking at the code and judging it poorly. 2. We all prompt our LLMs very differently! It turns out that you get really different results based on how you prompt the machine. We're all figuring this out together. Some people have better instincts than others. 3. We're working on different projects. Claude is comparatively much better at end-user facing software. Its great at making a standalone website. Its much less good at finding and fixing obscure bugs in large, established pieces of software. If you work in consulting, LLMs can already do a lot of your job. If you work on Chrome or Unreal or the windows kernel, maybe not so much.
+reply
+majormajor 2 hours ago | root | parent | next [–]
+> Is it bad at that stuff, or do I just need to figure out how to prompt the LLM? To return to the topic of this thread, I think we're seeing a lot of different opinions on LLM generated code for 3 reasons: I think there's definitely a bit of both. Some things are easier to prompt "adequately." Some domains or types of requests are tougher. The billion dollar question (well, trillion dollar, looking at the valuations of OpenAI and Anthropic) is will that change enough to actually replace the highly-paid people who currently are needed to make sure shit doesn't go sideways ? They're betting that they can solve the "turn a bad prompt into a good-enough series of prompts" problem generically for everyone. And where exactly that lands could have a lot of knock-on effects. The easy targets are things like SaaS that is only valuable because of economies of scale but the problems are "simple" if you don't have that scale. But even there, there's a lot of echoes of the past, where things like ad-hoc Access apps or spreadsheets powered (or still power!) a bunch of business processes in lieu of SaaS products. How much appetite is there long-term for large businesses to really go back to owning all that in-house? Also a fun irony in that the trillion-dollar-valuation world is basically "the biggest SaaS of them all" and those companies have a huge target on them and at that point practically everyone else in the world would be gunning for them. If they do find that "good enough" point, they also have to hope that nobody can replicate it for less anytime soon... (but they'll also have given those folks aiming at doing just that a great tool for helping build those systems).
+reply
+wild_egg 5 hours ago | root | parent | prev | next [–]
+I'm a divided individual. I've spent an obscene number of hours learning how to get reliably good quality code out of these things. I'm actually very happy with where the tech is right now and can't imagine ever going back to typing code by hand. But I absolutely hate how companies and society at large are acting because of this stuff. It feels like all rationality has flown out the window. So I'm just staying in my sandbox with my little toys and hoping the mass psychosis blows over at some point.
+reply
+dang 23 hours ago | parent | prev | next [–]
+As an aside, the variety of examples in that other thread is impressive. Here are some that I noticed: Fixing my furnace: https://news.ycombinator.com/item?id=48417845 New software for a retro keyboard: https://news.ycombinator.com/item?id=48418158 Customizing my camper van: https://news.ycombinator.com/item?id=48417379 Porting my astronomy app from an old Nokia phone: https://news.ycombinator.com/item?id=48419242 Fixing my kid’s science fair project: https://news.ycombinator.com/item?id=48419364 Unborking the family printer: https://news.ycombinator.com/item?id=48419480 Learning to draw anatomy (!): https://news.ycombinator.com/item?id=48418716 Lowering my electrical bill: https://news.ycombinator.com/item?id=48417949 Making classic guitar pedals programmable: https://news.ycombinator.com/item?id=48418006 Avocado armchair guy victory lap: https://news.ycombinator.com/item?id=48417658 (<-- oops, wrong: https://news.ycombinator.com/item?id=48418274 ) Putting an overlay on enemies in a video game: https://news.ycombinator.com/item?id=48420635 It just goes on and on. I was a little nervous when I saw that post originally, but it's amazing what happens when a title is somehow just right.
+reply
+rycomb 22 hours ago | root | parent | next [–]
+Oh dang, we all know –based on observation of your throughput and availability– that you're AI, you just can't "be nervous". Jokes aside, thanks for your selection. I had read some, but missed others until your comment. If it matters, I think there's some people that hasn't decided yet what tribe (pro-AI/anti-AI) they belong to. There's probably dozens of us!
+reply
+uxhacker 16 hours ago | root | parent | next [–]
+The argument is dialectical. In other words both sides are right. There is a really important question that is been lost between the anti and pro AI camps which is really answering what AI is good at and what AI is bad at, and what is the root cause of the weaknesses. Is it intrinsic to the models that LLM's use, or the way thy have been trained. In this knowledge is where the gold mine is for the next start up. For example AI is very good at answering well defined questions, but suffers from premature closure. It will not know if it has all the information to answer the question. So whilst AI will score better than a doctor or a lawyer on a domain question it will not necessarily gather all the evidence needed to answer the question properly. Knowing this whilst using a LLM is a super power. There is als
+
+## full_text
+
+Ask HN: Why is the HN crowd so anti-AI? | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login
+Ask HN: Why is the HN crowd so anti-AI?
+395 points by Ekami 1 day ago | hide | past | favorite | 656 comments
+Genuine question. Over the past six months, there hasn’t been a single day where I’ve checked the HN Best RSS feed without seeing a post about how AI “writes bad code,” “introduces bugs,” “creates technical debt,” or something along those lines. I’ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end? Users don’t care whether the code was written by AI or by hand, or which framework you used. They care that the product works. I say this as someone who has spent more than 20 years honing their craft as a software engineer. Let’s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x faster. By then, enough real-world feedback would have surfaced to identify the major issues, and tools like Claude Code would make it possible to fix and ship version 2.0 at an incredible pace. At some point, execution speed starts to matter more than the elegance of the code.
+dang 23 hours ago | next [–]
+It's simply divided. With every such division A vs. B, the A team thinks HN is anti-A and the B team thinks it's anti-B. This is an invariant. You can see from this megathread, currently on the front page, that HN is by no means anti-AI: Ask HN: What was your "oh shit" moment with GenAI? - https://news.ycombinator.com/item?id=48406174 . Sometimes it just takes the right initial condition (e.g. title) to bring out one side or other. As for why the community is divided, there's always a temptation to come up with HN-specific explanations, but society as a whole is divided about AI. Surely that is the only explanation one needs. As I've been saying for years, HN can't be immune from macro trends: https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que...
+reply
+_0ffh 7 hours ago | parent | next [–]
+Thoughtful comment, and I'd like to add another angle: However meaningful it is to say the community is divided, I also think that individuals are "divided" on the question as well. I can speak from myself as an example (although n=1): I am incredibly open to machine learning and the advances it brings. On the other hand I am extremely conscious of the fact that the current LLMs do often write bad code, which becomes especially obvious once projects go much beyond "private toy" size. For me personally the consequence is that I try to make my projects even more modular, and the modules even more clearly delineated. With proper guidance, current LLMs work mostly fine when working on isolated modules. That doesn't mean they don't sometimes fail even there, but they also on rare occasions come up with surprisingly clever solutions when you let them loose on a code base, as long as the problem you want them to fix is mostly isolated in a couple of modules. So long story short, you can be all for LLMs and still be conscious of their shortcomings, and that just vibe coding applications you intend to let loose on unsuspecting customers is probably a bad idea, and possibly outright immoral. We have already seen more than enough examples of vibe coded applications dumping sensitive user data into the lap of anyone who is inclined to pick up a stick and prod them a little bit.
+reply
+thierrydamiba 6 hours ago | root | parent | next [–]
+There’s also the uncomfortable reality that a lot of people spent a lot of time learning how to do things that anyone can prompt now… We tend to ignore that reality but it hangs above all these discussions like a dirty cloud
+reply
+rootusrootus 6 hours ago | root | parent | next [–]
+That does not seem like it should be controversial. I have known for quite a long time that a motivated high school kid could learn to code well enough to be perfectly useful. Especially with popular languages like Python. This is just an object lesson for everyone who thought all that software guys did was write code that there is just a little bit more to the job than that. Actual developers should already have known.
+reply
+majormajor 3 hours ago | root | parent | prev | next [–]
+Yep, I use it every day. IMO it's a bigger long-term productivity lever for someone who knows good code than it is for someone who doesn't look at the code (at least for systems that are expected to have lots of users). For those sorts of systems, comments like this just remind me of people pitching UML + codegen-or-outsourcing 20 years ago. > Users don’t care whether the code was written by AI or by hand, or which framework you used. They care that the product works. > I say this as someone who has spent more than 20 years honing their craft as a software engineer. I've worked with outsourced code, and I've worked with similarly-messy/not-forward-thinking first-iteration startup-MVP code that found success and now needs to do more and be more reliable while being cheaper to operate. It ain't pretty. Once you start modifying working code that people rely on you quickly start to see that the code itself matters. There aren't enough tests in the world to get around this from a quality POV. And piles of copypasta turn into either inconsistent behaviors (bad from a user satisfaction POV) or a continual drag on velocity (bad from a product goals/competitivness POV). And I've run the tools on those sorts of "found MVP, now need to iterate fast" codebases, both on the messy parts and the better parts. Sure, Claude can chew through the pain points of "let me find the ten copypasta versions of this and try to update them all" and chase down all the weird stupid bugs/janky things that that requires because each of them evolved separately much faster than a human can. But it's not gonna be as fast as it was at writing the first version, and it's gonna get more and more annoying. You hit the point where your agent is churning for hours and running more and more tests and inadvertently breaking more things trying to make the change in all those places, and making MORE code changes to fix those (and those are just the caught broken things the tests cover!). It's wayyyyy faster and less potentially painful to have it make updates to a well-factored module. "You don't have to read the code" is all well and good until you have a 10k+ line PR that's 10x larger than it needs to be because nobody read the code in the past, and you realize that most of the relevant test files also changed substantially and you don't have that much known-unchanged permutation coverage of the actual things users do... how comfortable are you pushing the "ship it" button then?
+reply
+wlonkly 2 hours ago | root | parent | prev | next [–]
+I read an article not long ago which I cannot find for the life of me now, but the thing in it that stuck with me was the idea that people (in the context, career software developers) were not either AI-pilled or anti-AI, but rather that people are both excited and afraid at the same time.
+reply
+josephg 4 hours ago | root | parent | prev | next [–]
+Yes, I’m in this camp. I’ve been pushing forward some personal projects lately using LLMs. At first, I was delighted at how productive I was, prompting. But over time a lot of cracks have started to show. Claude is good at programming “in the small”. It’s good at getting self contained, well scoped tasks done. But it’s bad at large scale system thinking. Over time, every project I’ve gotten Claude to write has become riddled with poor design choices layered on top of one another until even Claude struggles to make forward progress. And at that point, what do you do? You’ve gotta read all its code. Something I’ve learned I should just do from the start to save myself a lot of time later on. It’s also strangely bad at correctness. You can ask it to write unit tests for a project. Unless you’re careful with your prompting, it will only write the unit tests that it knows will pass. Generally, these models are amazing tools. But they cannot be trusted to make correct, maintainable software. At least not yet. Maybe in another year or two.
+reply
+majormajor 3 hours ago | root | parent | next [–]
+> Claude is good at programming “in the small”. It’s good at getting self contained, well scoped tasks done. But it’s bad at large scale system thinking. Over time, every project I’ve gotten Claude to write has become riddled with poor design choices layered on top of one another until even Claude struggles to make forward progress. What's really fun about these tools is that this is both true and false! If you ask these tools to reason about things in-the-large you often get very useful information back out of them. I've asked about refactors I was thinking about doing, and gotten accurate and useful information back, which as been AMAZINGLY helpful for avoiding "let me start doing this, and then realize 4 hours in that it's not gonna work as well as I hoped" traps. But it's a very attention-on-one-thing-at-a-time thing. IMO this is fairly inherent to the models, but people have been doing great work making the tooling around them smarter in terms of how to break up tasks ahead of time to compensate, so I'm not gonna say it won't get materially better. So if you prompt it to do a task in a certain way, especially in a "plan mode" type of usage, you can get a pretty solid recipe + execution of a properly-designed implementation of that task. But if you're not opinionated and checking in frequently, you're gonna get the sorta median-approach or random-luck-output-of-the-day decision. And so the human-in-the-loop point is unlikely to go away as long as the human has more context. Even if it's half-baked or not-fully-realized intuition about how the code is likely to evolve in the future that you don't put into every prompt. > It’s also strangely bad at correctness. You can ask it to write unit tests for a project. Unless you’re careful with your prompting, it will only write the unit tests that it knows will pass. My hunch is that this is the same fundamental problem. When it's attention is fully on "produce the next string of code" the parts of the context that relate to the broader system goals are NOT being considered as much for the output. So you get things like this, even with latest Opus still, when dealing with hard-to-isolate-in-a-single-test bugs (esp when it comes to multi-service call sequences or concurrent code): - "we need to fix this bug across eight methods in three files" - "I found the spot! we need to do [blah blah blah]" - "great, implement that plan" - "I've done it!" - "wait a sec... you moved some of the sequencing around, but didn't actually fix the fundamental issue" - "you're right! i moved [xyz] into [func b] instead of [func a] since it needed to be called later, but actually it needs to be after [func c] since it depends on the output of func b!" When asked about correctness it's good enough at "reasoning"-style output to spot these issues, but when generating code it's in such a pure "predict plausible code sequences" mode that this can get lost.
+reply
+josephg 2 hours ago | root | parent | next [–]
+Yeah I hear you with all of this. Its weird, working with LLMs. There are some things the LLMs are extremely good at doing autonomously. Like, reverse engineering, or reading documentation (and using that knowledge in other areas). There are things that they can do - but you need to explicitly prompt. Like, I've found Opus is quite good at optimising code. I've had a lot of success by asking it to write benchmarks (and do profiling), and use that data to improve the performance of some piece of code. Thats often enough to get quite large performance improvements. You can get even further by showing it similar code others have written which is well optimised. It's very good at copying optimisation ideas from one project to another. But then there are very simple things it really struggles to do. Some kinds of correctness testing. Invariants. System design. Is it bad at that stuff, or do I just need to figure out how to prompt the LLM? To return to the topic of this thread, I think we're seeing a lot of different opinions on LLM generated code for 3 reasons: 1. Some people aren't looking at claude's output at all. Some people are looking at the code and it looks fine to them. And some people (with more experience writing software) are looking at the code and judging it poorly. 2. We all prompt our LLMs very differently! It turns out that you get really different results based on how you prompt the machine. We're all figuring this out together. Some people have better instincts than others. 3. We're working on different projects. Claude is comparatively much better at end-user facing software. Its great at making a standalone website. Its much less good at finding and fixing obscure bugs in large, established pieces of software. If you work in consulting, LLMs can already do a lot of your job. If you work on Chrome or Unreal or the windows kernel, maybe not so much.
+reply
+majormajor 2 hours ago | root | parent | next [–]
+> Is it bad at that stuff, or do I just need to figure out how to prompt the LLM? To return to the topic of this thread, I think we're seeing a lot of different opinions on LLM generated code for 3 reasons: I think there's definitely a bit of both. Some things are easier to prompt "adequately." Some domains or types of requests are tougher. The billion dollar question (well, trillion dollar, looking at the valuations of OpenAI and Anthropic) is will that change enough to actually replace the highly-paid people who currently are needed to make sure shit doesn't go sideways ? They're betting that they can solve the "turn a bad prompt into a good-enough series of prompts" problem generically for everyone. And where exactly that lands could have a lot of knock-on effects. The easy targets are things like SaaS that is only valuable because of economies of scale but the problems are "simple" if you don't have that scale. But even there, there's a lot of echoes of the past, where things like ad-hoc Access apps or spreadsheets powered (or still power!) a bunch of business processes in lieu of SaaS products. How much appetite is there long-term for large businesses to really go back to owning all that in-house? Also a fun irony in that the trillion-dollar-valuation world is basically "the biggest SaaS of them all" and those companies have a huge target on them and at that point practically everyone else in the world would be gunning for them. If they do find that "good enough" point, they also have to hope that nobody can replicate it for less anytime soon... (but they'll also have given those folks aiming at doing just that a great tool for helping build those systems).
+reply
+wild_egg 5 hours ago | root | parent | prev | next [–]
+I'm a divided individual. I've spent an obscene number of hours learning how to get reliably good quality code out of these things. I'm actually very happy with where the tech is right now and can't imagine ever going back to typing code by hand. But I absolutely hate how companies and society at large are acting because of this stuff. It feels like all rationality has flown out the window. So I'm just staying in my sandbox with my little toys and hoping the mass psychosis blows over at some point.
+reply
+dang 23 hours ago | parent | prev | next [–]
+As an aside, the variety of examples in that other thread is impressive. Here are some that I noticed: Fixing my furnace: https://news.ycombinator.com/item?id=48417845 New software for a retro keyboard: https://news.ycombinator.com/item?id=48418158 Customizing my camper van: https://news.ycombinator.com/item?id=48417379 Porting my astronomy app from an old Nokia phone: https://news.ycombinator.com/item?id=48419242 Fixing my kid’s science fair project: https://news.ycombinator.com/item?id=48419364 Unborking the family printer: https://news.ycombinator.com/item?id=48419480 Learning to draw anatomy (!): https://news.ycombinator.com/item?id=48418716 Lowering my electrical bill: https://news.ycombinator.com/item?id=48417949 Making classic guitar pedals programmable: https://news.ycombinator.com/item?id=48418006 Avocado armchair guy victory lap: https://news.ycombinator.com/item?id=48417658 (<-- oops, wrong: https://news.ycombinator.com/item?id=48418274 ) Putting an overlay on enemies in a video game: https://news.ycombinator.com/item?id=48420635 It just goes on and on. I was a little nervous when I saw that post originally, but it's amazing what happens when a title is somehow just right.
+reply
+rycomb 22 hours ago | root | parent | next [–]
+Oh dang, we all know –based on observation of your throughput and availability– that you're AI, you just can't "be nervous". Jokes aside, thanks for your selection. I had read some, but missed others until your comment. If it matters, I think there's some people that hasn't decided yet what tribe (pro-AI/anti-AI) they belong to. There's probably dozens of us!
+reply
+uxhacker 16 hours ago | root | parent | next [–]
+The argument is dialectical. In other words both sides are right. There is a really important question that is been lost between the anti and pro AI camps which is really answering what AI is good at and what AI is bad at, and what is the root cause of the weaknesses. Is it intrinsic to the models that LLM's use, or the way thy have been trained. In this knowledge is where the gold mine is for the next start up. For example AI is very good at answering well defined questions, but suffers from premature closure. It will not know if it has all the information to answer the question. So whilst AI will score better than a doctor or a lawyer on a domain question it will not necessarily gather all the evidence needed to answer the question properly. Knowing this whilst using a LLM is a super power. There is also a large gap Usability issue in that often the LLM does not really know the humans context, in other words a context collapse. It does not know if you specilised in your domain or just asking for fun. We should be exploring and debating these gaps.
+reply
+saltcured 10 hours ago | root | parent | next [–]
+> There is a really important question that is been lost between the anti and pro AI camps which is really answering what AI is good at and what AI is bad at, ... I think some of this pro/anti AI discussion is really a proxy for something else though. There is another unstated, societal disagreement about personal responsibility and the behaviors of the AI tool users. It isn't entirely new, as people have always been blaming abstractions which lack agency (society, bureaucracy, "the machine", "the process", "the game", etc.) to conduct themselves in an ethically or logically flawed manner and then shirk responsibility. But, I think it is accelerating dramatically with the way AI agent usage is being adopted. I don't see how this can possibly continue to be normalized without leading to a catastrophic outcome. Right now, AI tool usage is being applied in ways that would have been considered misconduct, negligence, or fraud if the actors were doing the same thing via traditional outsourcing. People who have a contractual and ethical responsibility to apply analysis, judgement, and oversight are rapidly turning into dumb pipes who just relay content. They essentially phone it in, trying to take credit for apparently moving KPIs "up and to the right". They pretend to themselves and others that they are reviewers and still in control, but when things go wrong they expect forgiveness and for others to lean in and clean up their rapidly spreading mess. In software circles, many of us are appalled by this slop that is poisoning the well for our existing organizations. It seems like a massive, toxic externality. To us, people aiming their AI agents into our existing collaborations are pretty much flipping a switch to "roll coal", or worse.
+reply
+trumpdong 7 hours ago | root | parent | next [–]
+I don't know if that's specific to AI. It seems accountability levels are in hell right now. Consider anything the president has done and how that would have gone if any other president ever did it. Or anything AI companies do. Or anything Tesla does. Or X.
+reply
+hunterpayne 5 hours ago | root | parent | next [–]
+Don't bring politics into it. We can literally see the software being produced getting worse very quickly since the introduction of LLMs for coding. I expect a wave of data breaches to come soon when the hackers realize how many new holes have been created lately and adjust their tactics.
+reply
+trumpdong 4 hours ago | root | parent | next [–]
+But it's not just software and it's not just LLMs. Everything was starting to turn to slop before LLMs hit the scene.
+reply
+TheOtherHobbes 2 hours ago | root | parent | next [–]
+Yes, it's a cultural problem. A failure of responsibility, a lapse into collective delusion that fails to take the limits of truth and physical reality seriously, in favour of a dream world made of status and money. AI in theory could be a transformative technology. In practice it's the final product of a self-destructive system that has lost contact with the real world.
+reply
+Fr0styMatt88 1 hour ago | root | parent | prev | next [–]
+We aren’t even being given a choice nor being consulted for our judgement. Higher-ups are literally saying “This company WILL use AI, you are required to use AI, now go use it whether you want to or not”. I wonder if this will change now with the model cost explosions that are happening.
+reply
+skirmish 4 hours ago | root | parent | prev | next [–]
+In other words, engineers are becoming (bad) middle management: happy to take credit on wins and quick to blame underlings (LLMs in this case) for any mishaps. As long as managers are allowed to play politics in workplace, of course engineers will try to do the same!
+reply
+pixl97 4 hours ago | root | parent | prev | next [–]
+And this is why I'm glad we don't have full continuous learning AGI at this point. Humanity is not ready. We neither have the legal system nor the responsibility of handling something that would be capable of agency when turned on.
+reply
+warumdarum 10 hours ago | root | parent | prev | next [–]
+There are also madman who get tools and capabilities via AI sane society would never hand anyone. Thos is a liberation for the untamed fringe.
+reply
+jimmygrapes 22 hours ago | root | parent | prev | next [–]
+I haven't had the patience or mentality to really absorb "ok but how is this useful" until that thread and your highlighted references. Thank you for the curated highlights, however brief it may be, because it's very hard to find such diamonds without dedicating far too much time wading through the abstract gatekept comments on the topic, in most cases. Real world examples give me much hope!
+reply
+TylerE 17 hours ago | root | parent | next [–]
+Lemme give another. I was formerly quite anti-AI but bought a cheap Claude plan just to play around with it a bit. First thing I built with it was this - https://github.com/tylereaves/onscreen-piano , in about an hour and maybe 10 prompt cycles. It replaced, for my specific use case, the 10% of the functionality of an increasingly-unreliable commercial app. That's including building the website, setting up actions for mac and windows builds... My next project was a 2d game with random terrain, physics, sound, music, multiple levels, a day/night cycle with transitions high score tracking... (not uploaded anywhere, but it works, and I refined it a good bit.). That was more like 8 hours and maybe a 100 prompts. Here are a few screenshots: https://imgur.com/a/vhUXBu3 One thing that I have found to make a pretty big difference is using both the latest models and higher thinking levels. Opus 4.8 with thinking on Extra or even Max is genuinely mind blowing. The thing I hadn't really appreciated, having a sort of naive impression formed mainly from using free early versions of stuff like ChatGPT and Stable Diffusion was sort of that "Type a big ass prompt and it craps out a result" experience. But Claude is really great at refining from feedback, and it's way more flexible and responsive than I would have ever expected. I can do something like take a screenshot of a small portion of the running app or website or whatever and just say "This button needs to be bigger" or "make this red" or something like that, or even sometimes just "fix this", and Claude both correctly identifies what I'm talking about, and actually does the thing. here I've found it really, incredibly game changing is my health. I have a pretty, to put it mildly, complex medical profile at this point. I haven't worked in over a year and pretty much every sign is pointing towards permanent disability at this point. Tons of symptoms, long med list, and I live in a smaller town with not great access to care. I'm also autistic and have not the greatest verbal communication, especially under stress or time pressure. I dumped all my info at it, in bits and bobs over several days (Side note... it's memory is pretty limited, but it will quite happily right out everything it knows from a session into a markdown file it can later re-read. I've found it very good for things like screening for drug interactions, or talking through and logging symptoms (and it can log those into human readable markdown files too). Biggest win (other than having unlimited time and interactions) is that it thinks across specilaties, versus the "real world" where the gastro only wants to deal with gastro stuff, neurology only wants to do neuro. I certainly don't (and wouldn't) use it as a replacement for a doctor, but as an adjunct it's phenomenal. For instance, it flagged a possible drug interaction with a symptom I was having, and then offered to draft a portal message to my GP about it. I have poor executive function so lowering the friction from "type up a message and send it" to "copy and paste" is actually a pretty big deal. Turns something (I probably won't do) later into something I will do now. It wouldn't surprise me if my very direct, literal, autistic communication style is particularly well suited to interacting with AI. I actually find talking to it rather refreshing as, while of course it's not perfect, it tends to actually respond to what I say rather than the all the assumed subtext NTs tend to expect/react to.
+reply
+IggleSniggle 1 hour ago | root | parent | next [–]
+I always thought of myself as merely ADD, but your comment is so incredibly relatable across all dimensions that I find myself wondering how far along the autism spectrum I am. Although, in my personal opinion, neither term is especially helpful: it's not a sensory/executive processing disorder if it's clearly benefiting both yourself and the people around you. It might make being sociable difficult, but that's the tradeoff for being willing to engage your mind in ways that others filter out as "too much information."
+reply
+TylerE 56 minutes ago | root | parent | next [–]
+I’d be really careful with language like. For me the sensory and executive components are clearly disordered and border line disabling all on their own., and while it is what “me” is, it certainly isn’t making me or anyone around me happier, or their lives easier. Like - I carry a shoulder bag with industrial earmuffs and extremely dark sunglasses at all times because I cannot function in sensory overload. It is not a super power, and framing it that way is dismissive of those of us not on the very mildest end me of the spectrum.
+reply
+beng-nl 13 hours ago | root | parent | prev | next [–]
+Your last paragraph hit home with me. I also find it refreshing to be clear and direct, have the intent be directly understood, and have a pleasant, good faith, high signal conversation as a result. I hardly ever experience that with humans (I recognize that that’s not ‘everyone else’s fault’ of course).
+reply
+michaelhoney 16 hours ago | root | parent | prev | next [–]
+I am very optimistic about people using LLMs to explore their medical issues. Human bodies are complex and doctors are time- and intelligence- limited. An LLM can be a really useful partner.
+reply
+hunterpayne 5 hours ago | root | parent | next [–]
+Dear god no. ML is useful for medicine and has been for some time. LLMs in medicine are 100% malpractice and should be treated as such. LLMs << ML
+reply
+derekja 7 hours ago | root | parent | prev | next [–]
+On the medical pieces, a very nice agentic medical AI worth looking at is https://biomni.phylo.bio
+reply
+p4bl0 20 hours ago | parent | prev | next [–]
+Thanks for putting it this way. I have to admit I was really astonished by the question as I feel like HN is very much pro-AI at least in the sense that there is more AI promotion on HN than there is AI acceptance among people in the real world. It's been months if not years since most of the posts are about genAI, and in a largely favorable way. It's actually quite fascinating that for some people it feels like the opposite.
+reply
+rootusrootus 6 hours ago | root | parent | next [–]
+I hang around a few developer-centric communities, and my gut feeling is that HN is by far the most pro-AI. It's somewhat rare to find people all-in on "developers just got replaced by AI, pick a different career field guys" anywhere but here. Maybe there are just more developer-adjacent types on HN. I do find it somewhat amusing to read the commentary here and ponder why some of these people are wildly enthusiastic about making software development a dead field but simultaneously don't think it's also going to put them out of work. Programmers may be a lucrative target, but LLMs are "good enough" at many other knowledge disciplines too.
+reply
+swat535 18 hours ago | root | parent | prev | next [–]
+I think generally, extremist views tend to echo further than nuanced ones. This goes for any major topic really: whether it's politics, religion, arts, etc. The AI discussion on HN is exhilarated by the fact that it can have a tangible impact on people's lives on this forum. You add to this the possibility of a minority extracting an unfathomable amount of wealth from the hype train and we lose all hope for a moderate discussion. My own views on this are rather boring. After having tried various models, I've reached the conclusion that it adds minor benefits to my workflows, but I don't have to lose sleep from Claude reaching singularity anytime soon..
+reply
+rootusrootus 6 hours ago | root | parent | next [–]
+I'm using Claude Code at this moment to do some work for me. It's doing a pretty great job, if I'm being honest. It's going faster than I would, overall, but it's not some kind of 10x magic. It does things faster and in some cases better on the first shot, but it misunderstands and needs guidance on plenty of things, tweaks, etc. Even if I don't necessarily tweak the actual code and just ask Claude to go clean up it's shit, that still takes time. I think the folks who say 20-40% faster is typical are definitely in the right ballpark. And that's best case. There are plenty of times where my biggest blockers are not anything Claude will ever be able to fix. Maybe the result of this whole experience will be grudging appreciation from management that software developers aren't just coders. Maybe. I'm an optimist, though. And my manager already knew that.
+reply
+IggleSniggle 1 hour ago | root | parent | next [–]
+For me, one of the big improvements is the ability to legitimately work via text message. That probably sounds dystopian in a bunch of ways to some people. But there are times that I want to work, but couldn't, previously. Now I can work from wherever, whenever, by speaking into my headphones, and have it persist. Sure, I want to be in front of a screen to do final syntax review, but I don't mind planning out architecture and guiding an LLM towards a cohesive result while going for a walk or jog. That's just not a workflow that would have been viable 3 years ago.
+reply
+binary132 15 hours ago | root | parent | prev | next [–]
+I find it somewhat encouraging to hear that the devoted AI shills have not managed to generate the artificial consensus / synthetic consent that they seem to have been intending to.
+reply
+johnfn 21 hours ago | parent | prev | next [–]
+While I agree that it's "divided", I wouldn't say "simply". Mentioning AI brings out a sharply negative side of HN that I had not seen before 2023. It is the only subject where, when I have shared that I built something with it, I have gotten derogatory comments claiming I am inexperienced, unintelligent, and that the thing I built (a hobby project) is unimpressive or embarrassing. This has never happened in the decade+ I have previously been on HN, happily sharing other things I built with other interesting technology -- and many of those things were much worse than what I built with AI! I did see your thread earlier today and I admit was pleasantly surprised. Maybe HN is turning over a new leaf? I hope so. I honestly considered switching to X it was getting so bad :P
+reply
+ThrowawayR2 19 hours ago | root | parent | next [–]
+I would say that HN was at least as sharply negative during the cryptocurrency craze. I recall various submissions asking "Why is HN so anti-crypto?" as well.
+reply
+peteforde 17 hours ago | root | parent | next [–]
+The false equivalency in this explanation is off the scale. It wasn't just that crypto was an obvious grift; it was that you didn't need to be an experienced developer to confirm that 99% of the "web 3.0" nonsense that what was being thrown around literally made no technical sense. You might reject LLMs on principle, or find that they don't work for you. But I think we're well past any debate of whether they do anything at all , which is exactly where crypto was sitting at peak hype.
+reply
+happytoexplain 2 hours ago | root | parent | next [–]
+Consider that the GP said, >Mentioning AI brings out a sharply negative side of HN that I had not seen before 2023 And the parent said, >I would say that HN was at least as sharply negative during the cryptocurrency craze And your response was, >The false equivalency in this explanation is off the scale. The parent in fact said a very straightforward, non-controversial thing, and you responded in anger, as if they said something like "AI is the same as crypto".
+reply
+overfeed 10 hours ago | root | parent | prev | next [–]
+> It wasn't just that crypto was an obvious grift Was it universally obvious? Hindaight is 20/20 There were many block-chain startups funded, and even FAANG got caught up in the hype. FWIW, I was a crypto sceptic, but I had many arguments with believers online and in my social circles. Side note: a crypto enthusiast colleague bought a house off their crypto gains, it may be a grift, but a small number of crypto-believwrs got really wealthy, and you're not going to convince them.
+reply
+thunky 8 hours ago | root | parent | next [–]
+> Was it universally obvious? Yes. Crypto was never productive. But nice that your buddy financed a house with other people's dumb money.
+reply
+trumpdong 7 hours ago | root | parent | next [–]
+Crypto is the best way to pay for illegal things online, which is a really big business. In fact as the act of paying itself has become more restricted, it's often also a good way to make illegal payments for completely legal goods and services.
+reply
+trumpdong 16 hours ago | root | parent | prev | next [–]
+Crypto also obviously does something at all. If anyone was saying it didn't, they were just as delusional as people saying that AI does nothing at all.
+reply
+FabHK 13 hours ago | root | parent | next [–]
+Crypto has no technological merit compared to earlier solutions, except "permissonlessness", which enables the circumvention of rules and regulations (at huge expense). But, sure, enabling crime is "doing something".
+reply
+trumpdong 12 hours ago | root | parent | next [–]
+Enabling crime is massive. You have to remember that "crime" includes things like "selling abortion pills", "selling LSD", "selling ivermectin" and of course "supporting Palestine Action"
+reply
+hunterpayne 5 hours ago | root | parent | prev | next [–]
+It solves a CS problem called the Byzantine Generals problem. That problem was thought to have no solution before blockchains were created. The lack of CS knowledge on this board is pretty staggering sometimes.
+reply
+dang 7 hours ago | root | parent | prev | next [–]
+I say "simply" because, as I mentioned, it's an invariant—possibly the most consistent phenomenon we've observed on HN [1]. I admit I didn't add anything to substantiate that! it would have been too much of a digression. (Not that that ever stopped me before...) The interesting question is, if it's so consistent, how can it go unnoticed for so long (as you've reported) and/or get perceived as one-sided ("HN is so anti-A") when in fact it is almost always two-sided ("HN users are divided on A")? The answer is that what you notice depends on how you feel [2]. If you like A, or (more precisely) if you dislike anti-A, you are far more likely to notice anti-A posts. Not only that, but you will weight them more heavily, meaning they make a stronger impression on you than the median post does—even the median pro-A post. These two variables, frequency and impact, combine to produce a picture of the site as anti-A—so strongly that people often use universals like "always" and "never" when describing it. In reality, HN is a statistical cloud, but your pre-existing feelings determine which datapoints you happen to notice (i.e. frequency) and how strongly they affect you (i.e. impact). [3] This is why people with opposing views feel the same about how biased HN is, but in opposite directions: A is certain that the site is anti-A, and B is just as certain that it's anti-B. It's simply (<-- that word again!) that their feelings cause them to notice different datapoints. Abstract out the directional bit (pro- or anti-, A or B), and their perceptions become isomorphic. Unfortunately for us, HN is more afflicted by this than other sites of comparable or larger size, because all of them organize the community into silos [4], meaning they're sharded by social group (e.g. Twitter's follow lists), or by content (e.g. Reddit's subreddits), and so on. HN is non-siloed, meaning everyone is in the same place: all the As, all the anti-As, all the Bs, all the anti-Bs - we're all roaming the same threads and bumping into each other. You are more likely to run into datapoints you find disagreeable, and therefore more likely to feel that the community is biased against your view, and - what's worse - more biased the more strongly you feel! Once or twice a year, some reply I'm writing gets hijacked by my sadness about this and turns into a digressive lament. Why? because although I believe that in reality HN is somewhat (<-- not to exaggerate) more thoughtful and tolerant than other communities of the same or greater size, the dynamic I've just described means it inevitably gets perceived as less so. [5] I believe this is why one so often hears about how toxic, nasty, negative HN is—not that it isn't those things! but the relative level of them gets distorted. Humans can't take much of what we dislike and disagree with before resorting to generalization and other internal barriers. This is essentially an immune response. It often takes only a handful of datapoints (3, or 2, or maybe even just 1) before the impression burns into the retina and becomes permanent [6]. This is most painful when the topic is close to one's heart—for example, when one's own work is being criticized. In cases like that, it doesn't take much before one feels wounded, and such impressions rarely go away. In one case I saw, some people were agreeing about how terrible and mean Hacker News is, and to prove the point, one of them linked to a vile reply he had received. That reply, however, was from Twitter—not from HN at all! He hastened to add "HN is the same"—somewhat self-refutingly, since if it were true, an actual example would not have been hard to find. In reality, while such vile comments do show up on HN, the community quickly flags most of them, and moderators eventually flag most of the rest. That is an example of the skew in perception I'm talking about, and even though it made me feel terrible, I don't mean to be critical because I understand where it comes from. It comes from fundamentals [7]: specifically, how HN's design interacts with human hard-wiring. Because those are fundamentals, this is not going to change, nor can it be affected by argument. Sad! Or rather, it could only change if we changed the foundation of HN's design—in this case, by sharding the site into silos—but (a) I'd be scared to tamper with DNA at that level, and (b) if the above is correct, then it's good for the world that this place exists. It just can't expect to be perceived as such [5]. End of this season's lament. [1] https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que... [2] I don't mean "you" personally, of course—everyone does this. It's a double whammy of https://en.wikipedia.org/wiki/Negativity_bias and https://en.wikipedia.org/wiki/Clustering_illusion , sometimes described in this way: https://en.wikipedia.org/wiki/Hostile_media_effect . [3] Lots of past explanation here if anyone wants it: https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que... . [4] https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que... [5] I wrote a thing about this a few years ago, if anyone is interested: https://news.ycombinator.com/item?id=23308098 [6] https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que... [7] https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que...
+reply
+johnfn 2 hours ago | root | parent | next [–]
+Thank you for the very long and thoughtful comment. It's an fun and interesting idea to think about, and I certainly don't mind reading long tangents :) But I want to push back on it a tad: I think it misses my point a little bit. I completely am fine with HN being a negative place - I wouldn't have been here so long if this bothered me! But I don't think all divisiveness is made equal. And in particular, I think the divisiveness on HN about AI feels different than previous divisiveness. I think your argument hinges on how if you are pro-A you are much more likely to notice anti-A sentiment. This is true, but I think the quality of anti-A sentiment differs in this case from the past. When TypeScript came out and for the first couple of years, I was the biggest TypeScript zealot on the planet. I loved it! There was a point when I typed T that the autosuggestions on iPhone would suggest "Typescript" :-) This all to say: when anti-Typescript sentiment popped up, I definitely noticed it, and it definitely annoyed me. (I still think back on jashkenas saying that he didn't see any point in TS because any good engineer wouldn't make the errors it catches and I just want to throttle him! But I digress...) And there definitely was a lot of it. But there was a difference in quality between the anti-TS sentiment and the anti-AI sentiment. No one ever attacked my abilities as an engineer for saying I liked TS; no one ever said the things I built with TS were embarrassing or intern-quality like they have with AI. It never devolved into personal attacks the way that anti-AI commentariat pull out when they run out of other arguments. I'd make a humble suggestion. I would like to suggest that when comments get that derisive, that those comments are removed faster and those users are banned faster. I genuinely think it brings down the quality of discourse site-wide. (FWIW, I think the same about pro-AI incendiary content - very low-quality comments about how people are going to lose their jobs / become obsolete without AI should equally well be flagged, removed and banned.) I know the HN moderator team is incredibly busy and I am very thankful for all you do!
+reply
+arjie 20 hours ago | root | parent | prev | next [–]
+It is just a few people. Any time people are unpleasant to others or post in an uninteresting way I add them to a personal list that filters out their comments. Rapidly the site becomes more usable. The negativity is from a few highly polarized individuals. I know others also do this - though often they are kind enough to auto-fold.
+reply
+SyneRyder 16 hours ago | root | parent | next [–]
+> ... I add them to a personal list that filters out their comments. I think this would be a very useful feature to add to HN itself. I nearly emailed dang a few weeks ago to suggest it myself rather than roll my own browser extension to do it, though maybe it's my own responsibility to roll my own software too. The Gearspace forums (vBulletin based?) have an "Ignore User" feature that helps make that forum vastly more tolerable.
+reply
+happytoexplain 2 hours ago | root | parent | next [–]
+I think it's probably not palatable because it reduces the friction too much on removing large amounts of content for yourself - it's too easy to "delete" a person forever based on one or two things they said, or just based on not liking their opinion, and thereby reducing your exposure to differing thoughts, which is one of the tenants of HN.
+reply
+rpcope1 21 hours ago | root | parent | prev | next [–]
+There's probably a lot to say about it's merits or problems, but given the demographics (or my perception of them) is largely "software people" can you really be that surprised or angry given that this could snuff out a _lot_ of people's livelihoods like nothing we've probably seen in our lifetimes?
+reply
+claytongulick 11 hours ago | root | parent | next [–]
+At least in my case, I don't think that's where the anger is coming from. If LLMs were truly able to replace me, I'd be disappointed, sure - I've spent 30 years developing mastery of a craft, it's sad to see it go. But I'd resign myself and move on. But that's not what makes me mad. I get angry because I simply don't believe it is true. I have a reasonable math and tech background to where I grok how this stuff works at a fundamental level, and I'm utterly unconvinced that it is performing any sort of reasoning. Call it a stochastic parrot, a token extrusion machine, whatever, but these things are not thinking or reasoning. That doesn't mean they aren't useful- they clearly are very useful for many tasks. My anger comes from the global attempt to replace things that require human reasoning with LLMs. There's this push to use this stuff way past the point of "helpful accelerator" to "why do we need programmers/doctors/lawyers/etc..." I think it's incredibly dangerous. So while the tool is useful, I don't think we've figured out how to use it appropriately. For all the short term appearance of productivity boost it provides (whether this is real in a total-cost sense is still an active question), I think the risks to skill development and quality outweigh those benefits in many cases, and are being overlooked.
+reply
+numpad0 6 hours ago | root | parent | prev | next [–]
+IMO it's because AI outputs don't pass "is this corpses" test and trigger uncanny valley response. There's something in AI that instantly cause unsuspecting viewers to become alert and hostile. At the same time, cut raw steaks don't alert people in the same way as corpses do, and that is a double standard, in a way, I guess.
+reply
+mook 19 hours ago | root | parent | prev | next [–]
+I think there's definitely groups on both sides, and I feel like it's similar to cryptocurrency a few years back. There's people really into it, and in response there's people really against it. On a smaller scale, see for example rust. In contrast there isn't as much vitriol against, say, world hunger because there isn't people very obviously pro-that to push against.
+reply
+tactlesscamel 6 hours ago | root | parent | prev | next [–]
+Did You build it? Or did you manage the build of it?
+Could you have done it without AI? If not, you didn't do it. A drill is just a tool. You can screw a screw without one. AI is just a tool, you can do things without it, too. But AI applied in a manner you could not otherwise complete on your own is not a tool. It's a slave. None of the ideas or creations presented in that instance are your own. You just cheated someone out of a paycheck they may have otherwise earned.
+reply
+johnfn 5 hours ago | root | parent | next [–]
+Your comment is a perfect example of the low-quality reflexivity negativity AI I am talking about. Yes, of course I built it! Why do I have to defend myself? What does it even mean that I "cheated someone out of a paycheck" -- it's my own hobby project!
+reply
+YZF 20 hours ago | root | parent | prev | next [–]
+Same experience. But that's simply because you think you're experienced but the OP knows that you're just deluding yourself. Just kidding. More seriously, I think this is a true reflection of a cultural phenomena. All discussions have become more polarized. There is a more of a generational divide in perception and discussion. I would also say there is a loss of nuance. To complicate this even further there is a real diversity of experiences depending on many factors. I mean we had flame wars on USENET but somehow it feels to me that most discourse even on controversial topics was civil. When we had tabs vs. spaces flamewars (or whatever the fun topic of the day was) everyone knew they were in a flame war (and often acknowledged that). Or maybe I'm just being nostalgic/biased. I see the anti-AI sentiments in my work place. I think people are genuinely worried/concerned and don't know how this is going to change our world or even where we are exactly. This is also spilling into adjacent areas where people have strong emotional responses to (the rich, the economy, job market, politics, environment etc.).
+reply
+SlinkyOnStairs 16 hours ago | root | parent | next [–]
+> There is a more of a generational divide in perception and discussion. I would also say there is a loss of nuance. The youth are facing an enormous employment crisis. Many have found themselves completely unemployable through no fault of their own. And then AI leaders go around to commencement speeches to rub it in. There's no loss of nuance, the situation has just escalated a lot.
+reply
+senordevnyc 15 hours ago | root | parent | next [–]
+And then AI leaders go around to commencement speeches to rub it in. This is a good example of anti-AI bias. This didn’t happen. Out of thousands of commencement speeches across the country, a handful of speakers, none of whom are “AI leaders”, mentioned AI in passing and students booed. So yeah, I’d say there’s a loss of nuance.
+reply
+SlinkyOnStairs 12 hours ago | root | parent | next [–]
+"This didn't happen, except for that few times where it did happen and massively blew up in the media" That you fail to understand why those students took such great offense to what was said at those speeches doesn't make it "anti-AI bias". Those students reacted like that, and I used it as an example, because it's very emblematic of how tech companies and leading figures act.
+reply
+senordevnyc 11 hours ago | root | parent | next [–]
+I'm specifically saying that AI leaders didn't go around making pro-AI commencement speeches. At all. The absolute closest example is Schmidt, who was last CEO of Google more than a decade before ChatGPT launched, and is now CEO of an aerospace company. No other "AI leaders" gave commencement speeches where they were booed. So you're blatantly lying and spreading misinformation to feed a negative narrative about the companies and executives in the AI space, then doubling down when called out. Reminds of Vance saying that he's willing to "create stories" in order to draw media attention to his cause-du-jour.
+reply
+card_zero 7 hours ago | root | parent | next [–]
+For the record, besides Schmidt being booed, there was Gloria Caulfield (property development), and Scott Borchetta (music production). Then Jeremy Scott (fashion) tore up his AI-written speech and got cheered for that, and Ronny Chieng (The Daily Show) got cheered for saying "fuck AI" several times.
+reply
+senordevnyc 7 hours ago | root | parent | next [–]
+Exactly.
+reply
+ceejayoz 11 hours ago | root | parent | prev | next [–]
+Quite recently, he was the chair of this: https://en.wikipedia.org/wiki/National_Security_Commission_o... Pretending he's some AI nobody is a bit goofy.
+reply
+hunterpayne 5 hours ago | root | parent | next [–]
+Pretending he has any real insight into AI is also a bit goofy. Listen to him speak. Even his own stories about his time at Google don't show himself in a good light like he thinks they do. There are multiple, multi-billion dollar products that Google made where they had to trick and lie to him to get them released. And he still tells those stories as if he was right to try to kill those products. He's an executive and has no real expertise or insight into LLMs or AI.
+reply
+senordevnyc 7 hours ago | root | parent | prev | next [–]
+Quite recently? It ended in 2021, again, before ChatGPT and this latest boom. I doubt anyone today would hear “AI leaders” and think about Eric Schmidt, no disrespect to the man intended.
+reply
+Jblx2 6 hours ago | root | parent | prev | next [–]
+>I mean we had flame wars on USENET but somehow it feels to me that most discourse even on controversial topics was civil. I think this is probably a combination of nostalgia and/or USENET prior to 1990 or so?
+reply
+foxes 21 hours ago | root | parent | prev | next [–]
+Its divided because its the first time the previously more class unaware techbros have been critically challenged by the consequences of their actions - oh shit we might lose our jobs. 10 years ago "Disrupting X" was seen as a good thing. Now its come for them its a different story.
+reply
+vjvjvjvjghv 14 hours ago | root | parent | next [–]
+100% this. Disrupting and killing the jobs of others is good. Now that we are killing our own jobs, disruption is not so good anymore.
+reply
+happytoexplain 3 hours ago | root | parent | next [–]
+100%? So everybody who has any negative opinion of or experience with AI is now a "tech bro" who believes killing jobs is good? That's hideous. Why even have an HN account if you harbor this kind of black-and-white hate against people in software? You shouldn't want HN to look like the rest of the internet (flame wars, petty back-and-forth rhetoric, immaturity, etc).
+reply
+scarab92 20 hours ago | root | parent | prev | next [–]
+I suspect there is a lot of selection bias going on as well. Forums like this, reddit, X, readers of news sites etc tend to be filled with people that don’t have much going on in their lives, have a lot of free time to comment, are less likely to exploit the benefits of AI, and more likely to have simpler skills sets that are replaceable with AI. Talking to people in real world, I would say the overwhelming majority are excited by AI and interesting in using it more rather than less.
+reply
+foxes 19 hours ago | root | parent | next [–]
+Probably not the best way to reduce complicated feelings. Do those people not deserve to be able to live and survive or are they all just replaceable?
+reply
+trumpdong 7 hours ago | root | parent | next [–]
+Everyone's replaceable in capitalism
+reply
+bartread 5 hours ago | parent | prev | next [–]
+I think the community is divided. But I think it’s less A/B and more a spectrum. There are plenty of more balanced comments rolling in from people who’ve been using it for a while and have experienced both the advantages and disadvantages. E.g., agentic development is great for solo projects and prototyping, but can become overwhelming alarmingly quickly when you’ve got multiple devs involved, especially if they’re not all super-disciplined and consistent about how they use their agents. And we’re all learning how to deal with that.
+reply
+datsci_est_2015 21 hours ago | parent | prev | next [–]
+It’s not even a dichotomy, A vs B, especially when you consider “AI” is incredibly poorly defined. There are many new technologies available, and I have nuanced opinions about all of them. I’m happy that my friend who works in plastics manufacturing can move his monstrosity of an Excel spreadsheet to something more predictable and maintainable. I’m deeply annoyed by my coworker who’s trying to put a chatbot in our UI.
+reply
+sanderjd 5 hours ago | parent | prev | next [–]
+Yep. It has a lot to do with which comment threads you click on. I often read one and think "wow, I can't believe the people here are so negative" and then on another on the same front page at the same time and think "wow, I can't believe the hype here". It's just different people participating on different articles.
+reply
+jonas21 22 hours ago | parent | prev | next [3 more]
+Well, it looks this post has already been flagged down onto page 7. And IIRC, the same thing happened to the "oh shit" moment thread you linked to. Did the mods have to intervene to get it back on the front page? HN might not be anti-AI, but I feel like the way flags are weighted by the ranking allows some users that are extremely anti-AI to create the impression that it is. EDIT: And now it's back.
+reply
+dang 22 hours ago | root | parent | next [–]
+Not flagged. It set off the flamewar detector. We monitor those and eventually reverse the false positives. Mostly. https://hn.algolia.com/?dateRange=all&page=0&prefix=true&que...
+reply
+jonas21 22 hours ago | root | parent | next [–]
+Ah, thanks for the clarification. :)
+reply
+ksec 10 hours ago | parent | prev | next [–]
+Thanks for pointing it out. I guess HN is at worst ( or best ) 70% Anti AI. I personally put it roughly 50/50. There are plenty of post and comments suggest how AI is good for something and but also pointing out its flaws, rather than simply just Anti AI. I can tell what HN is Anti though, in 80/ 90%+ if not higher. Ads, Oracle, Facebook, MPEG Codec, MySQL,
+reply
+LogicFailsMe 7 hours ago | parent | prev | next [–]
+I think society is divided on AI because we've let the billionaire tech bro class rawdog power resources and AI deployments and I welcome the pushback on those 2 axes. The water nonsense OTOH saps my will to live. But also, the algorithms push enragement equals engagement and that favors pushing content to the product (us) that enrages the product to drive up their engagement numbers so they click on more ads. Meanwhile, the medical applications of AI alone are astounding . But that doesn't get people mad so it doesn't get promoted as near as much as the latest clueless word salad from a rich dude. Election season is going be to very interesting this year IMO. https://erictopol.substack.com/p/the-paradox-of-medical-ai-i...
+reply
+trumpdong 7 hours ago | root | parent | next [–]
+When people complain about"AI" they almost always mean general purpose LLMs and media generators. Nobody is complaining about OCR, MNIST trials, or machine translation.
+reply
+LogicFailsMe 6 hours ago | root | parent | next [–]
+Not in my experience. The rabbit hole is 9/11 truther deep here. And anything that isn't a mindset about either letting the billionaires billionaire the crap out of us or the American Butlerian Jihad gets shot down by both sides. What's my position? GenAI will be subsumed into media toolchains. And reasoning is clearly no longer a hallmark of sentience or consciousness. That's going to take some time to sink in. Token costs are only going to drop further from here: https://www.navyaai.com/reports/ai-cost-report-token-prices-... . And there's opportunity to build businesses to bring down the rest of the costs in the article I cited. Also, I'm with Martina Scorsese and Dua Lipa on GenAI. And having worked in and around Hollywood in the past, it blows my mind tha
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 82
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":82,"text_length":60000,"paragraph_count":176,"sentence_count":542,"boilerplate_hits":1,"symbol_ratio":0.0096,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   一位用户在Hacker News上发帖提问"为什么HN社区如此反感人工智能？"，该帖子获得105个upvote，引发社区讨论。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Ask HN: Why is the HN crowd so anti-AI?
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Ask HN: Why is the HN crowd so anti-AI?
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   395 points by Ekami 1 day ago | hide | past | favorite | 656 comments Genuine question.
+
+5. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   Over the past six months, there hasn’t been a single day where I’ve checked the HN Best RSS feed without seeing a post about how AI “writes bad code,” “introduces bugs,” “creates technical debt,” or something along those lines.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   I’ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end?
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, OpenAI, Anthropic
+- products: Claude, agent, claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 法务
+- numbers: 105, 395, 1, 656, 20, 1.0, 10x, 2.0
+- quotes: 为什么HN社区如此反感人工智能？ / writes bad code, / introduces bugs, / creates technical debt, / private toy
+
+## evidence_seed
+
+- company_actions: Ask HN: Why is the HN crowd so anti-AI? / | Hacker News Hacker News new | past | comments | ask | show | jobs | submit login Ask HN: Why is the HN crowd so anti-AI? / 395 points by Ekami 1 day ago | hide | past | favorite | 656 comments Genuine question.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: thread_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Ask HN： 为什么HN上的用户如此反感人工智能？","discovery_summary":"一位用户在Hacker News上发帖提问\"为什么HN社区如此反感人工智能？\"，该帖子获得105个upvote，引发社区讨论。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://news.ycombinator.com/item?id=48420827","discovered_at":"2026-06-07T02:41:31.536Z","rank_on_page":163,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+一位用户在Hacker News上发帖提问"为什么HN社区如此反感人工智能？"，该帖子获得105个upvote，引发社区讨论。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,257 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-015",
+  "title": "Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默",
+  "original_url": "https://the-decoder.com/new-open-source-voice-model-listens-nonstop-and-decides-every-0-4-seconds-whether-to-speak-or-stay-silent",
+  "canonical_url": "https://the-decoder.com/new-open-source-voice-model-listens-nonstop-and-decides-every-0-4-seconds-whether-to-speak-or-stay-silent",
+  "source_name": "The Decoder：AI News（RSS）",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-06T10:50:21.000Z",
+  "collected_at": "2026-06-07T02:44:54.811Z",
+  "language": "mixed",
+  "full_text": "Ad\nSkip to content\nNew open-source voice model listens nonstop and decides every 0.4 seconds whether to speak or stay silent\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJun 6, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nThe \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system.\nTo do this, it breaks down the audio stream into 0.4-second segments and decides after each segment via a special token whether it should remain silent or generate a response.\nTrained with an artificial data set of 302,000 hours of audio, the model processes listening and speaking in parallel. This minimizes the waiting time for responses and allows the system to beat models such as Gemini 3 Flash in proactive noise detection tests.\nResearchers want to close the gap between today's audio speech models and real listeners. Their system handles dialog, translation, and sound recognition all at once.\nToday's audio voice models, like GPT-4o or Qwen 3.5-Omni , work like a dictation machine with a button: they only respond when the recording ends. Streaming systems like Moshi for dialog or Paraformer for live subtitles do listen in, but they can only handle one task at a time and treat sounds like coughing as background noise.\nResearchers from China, Hong Kong, and Singapore want to combine both approaches with \"audio interaction.\" The model listens to an audio stream continuously, breaks it into 0.4-second chunks, and decides after each chunk whether to stay silent or speak. Translation, transcription, chatting, and reacting to everyday noises all run in a single three-billion-parameter model. Ad\nOne special token every 0.4 seconds\nAfter each audio snippet, the model outputs either <silent> or <response> . If it picks <silent> , it keeps listening. Only with <response> does it start talking. Classic tasks like \"Translate into English\" become instructions within the same continuous stream. Ad\nDEC_D_Incontent-1\nThe model listens to a continuous audio stream and decides moment by moment whether to stay silent or react, combining classical and streaming audio capabilities in one system. | Image: Xie et al.\nAccording to the paper , Audio-Interaction scored 58.15 points on the audio benchmark MMAU, narrowly beating its base model Qwen2.5-Omni-3B. It also comes close to much larger 7B models. On English-Chinese translation, the model improves a lot over the base.\nWhere previous systems each solve a task in a separate model, Audio-Interaction combines recognition, translation, dialog, and proactive response in a single streaming setup. | Image: Xie et al.\nFor the model to learn when to step in, the team needed the right training data. Existing audio datasets consist of short, isolated clips and lack long sequences with sparse response signals, the researchers say. Ad\nSo they built their own scenes in three stages. First, a language model designed a plausible setting—say, a kitchen in the morning—with three to 15 sub-events. The system then searched a database for matching clips or had missing sounds like breaking glass created by audio models like AudioX or ElevenLabs. A preprocessing step then smoothed out the cut edges so the recordings sounded natural.\nThe resulting StreamAudio-2M dataset contains 2.6 million units and about 302,000 hours of audio across seven skill areas and 28 subtasks. Ad\nDEC_D_Incontent-2\nTwo recurring streaming problems\nTwo weaknesses kept showing up during training. First, the model forgot earlier content in long, noisy sequences. The fix: asking questions that point back to passages from much earlier in the audio, forcing the model to build up long-term memory. Ad\nSecond, the model fired too often on sounds that didn't matter. The team countered this with large amounts of verified silence and background audio that's explicitly not supposed to trigger a response. On the newly introduced ProactiveSound Bench with 644 human-curated events the model beats Gemini 3 Flash, Kimi-Audio-Instruct, and Step-Audio 2, among others.\nIn a single everyday scene, the model runs through five of its seven task types, from proactive warnings to audio understanding and real-time translation. | Image: Xie et al.\nA queue instead of a blocking pipeline\nFor real-time use, the researchers split incoming audio processing from response generation. Both run in parallel and swap data through a queue: the audio side keeps writing new chunks, and the response side only reads them when it has nothing to say. Without this split, time-to-first-response jumped from 392 to 831 milliseconds, and the system got stuck 5.2 percent of the time.\nThe 0.4-second chunk size is a tradeoff. At 0.2 seconds, there isn't enough context and the model falls apart in dialog. At 0.8 seconds, latency climbs to 786 milliseconds.\nSoundFlow lines up the audio signal, intermediate representations, and control tokens in a time sequence, jointly training when the model talks and when it stays quiet. | Image: Xie et al.\nCode and instructions for downloading the weights are on GitHub under the Apache 2.0 license, with no restrictions on commercial use. The full training dataset is set to follow later.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Arxiv\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "clean_text": "Ad\nSkip to content\nNew open-source voice model listens nonstop and decides every 0.4 seconds whether to speak or stay silent\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJun 6, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nThe \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system.\nTo do this, it breaks down the audio stream into 0.4-second segments and decides after each segment via a special token whether it should remain silent or generate a response.\nTrained with an artificial data set of 302,000 hours of audio, the model processes listening and speaking in parallel. This minimizes the waiting time for responses and allows the system to beat models such as Gemini 3 Flash in proactive noise detection tests.\nResearchers want to close the gap between today's audio speech models and real listeners. Their system handles dialog, translation, and sound recognition all at once.\nToday's audio voice models, like GPT-4o or Qwen 3.5-Omni , work like a dictation machine with a button: they only respond when the recording ends. Streaming systems like Moshi for dialog or Paraformer for live subtitles do listen in, but they can only handle one task at a time and treat sounds like coughing as background noise.\nResearchers from China, Hong Kong, and Singapore want to combine both approaches with \"audio interaction.\" The model listens to an audio stream continuously, breaks it into 0.4-second chunks, and decides after each chunk whether to stay silent or speak. Translation, transcription, chatting, and reacting to everyday noises all run in a single three-billion-parameter model. Ad\nOne special token every 0.4 seconds\nAfter each audio snippet, the model outputs either <silent> or <response> . If it picks <silent> , it keeps listening. Only with <response> does it start talking. Classic tasks like \"Translate into English\" become instructions within the same continuous stream. Ad\nDEC_D_Incontent-1\nThe model listens to a continuous audio stream and decides moment by moment whether to stay silent or react, combining classical and streaming audio capabilities in one system. | Image: Xie et al.\nAccording to the paper , Audio-Interaction scored 58.15 points on the audio benchmark MMAU, narrowly beating its base model Qwen2.5-Omni-3B. It also comes close to much larger 7B models. On English-Chinese translation, the model improves a lot over the base.\nWhere previous systems each solve a task in a separate model, Audio-Interaction combines recognition, translation, dialog, and proactive response in a single streaming setup. | Image: Xie et al.\nFor the model to learn when to step in, the team needed the right training data. Existing audio datasets consist of short, isolated clips and lack long sequences with sparse response signals, the researchers say. Ad\nSo they built their own scenes in three stages. First, a language model designed a plausible setting—say, a kitchen in the morning—with three to 15 sub-events. The system then searched a database for matching clips or had missing sounds like breaking glass created by audio models like AudioX or ElevenLabs. A preprocessing step then smoothed out the cut edges so the recordings sounded natural.\nThe resulting StreamAudio-2M dataset contains 2.6 million units and about 302,000 hours of audio across seven skill areas and 28 subtasks. Ad\nDEC_D_Incontent-2\nTwo recurring streaming problems\nTwo weaknesses kept showing up during training. First, the model forgot earlier content in long, noisy sequences. The fix: asking questions that point back to passages from much earlier in the audio, forcing the model to build up long-term memory. Ad\nSecond, the model fired too often on sounds that didn't matter. The team countered this with large amounts of verified silence and background audio that's explicitly not supposed to trigger a response. On the newly introduced ProactiveSound Bench with 644 human-curated events the model beats Gemini 3 Flash, Kimi-Audio-Instruct, and Step-Audio 2, among others.\nIn a single everyday scene, the model runs through five of its seven task types, from proactive warnings to audio understanding and real-time translation. | Image: Xie et al.\nA queue instead of a blocking pipeline\nFor real-time use, the researchers split incoming audio processing from response generation. Both run in parallel and swap data through a queue: the audio side keeps writing new chunks, and the response side only reads them when it has nothing to say. Without this split, time-to-first-response jumped from 392 to 831 milliseconds, and the system got stuck 5.2 percent of the time.\nThe 0.4-second chunk size is a tradeoff. At 0.2 seconds, there isn't enough context and the model falls apart in dialog. At 0.8 seconds, latency climbs to 786 milliseconds.\nSoundFlow lines up the audio signal, intermediate representations, and control tokens in a time sequence, jointly training when the model talks and when it stays quiet. | Image: Xie et al.\nCode and instructions for downloading the weights are on GitHub under the Apache 2.0 license, with no restrictions on commercial use. The full training dataset is set to follow later.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Arxiv\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-015-audio-interaction-开源语音模型持续监听-每0-4秒决定是否说话或保持沉默.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-015-audio-interaction-开源语音模型持续监听-每0-4秒决定是否说话或保持沉默.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 5554,
+    "paragraph_count": 28,
+    "sentence_count": 47,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0029,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 5554,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "6dead4b7876758eb",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默",
+    "discovery_summary": "Audio Interaction是一个开源语音模型，持续监听环境，每0.4秒判断是否应该说话或保持沉默。与GPT-4o或Qwen3.5-Omni不同，它无需等待录音结束，可在单个流中同时进行翻译、转录、对话并识别咳嗽等日常噪音。代码和模型权重已在GitHub上以Apache 2.0开源许可发布，训练数据稍后公布。",
+    "source_name": "The Decoder：AI News（RSS）",
+    "origin_url": "https://the-decoder.com/new-open-source-voice-model-listens-nonstop-and-decides-every-0-4-seconds-whether-to-speak-or-stay-silent",
+    "discovered_at": "2026-06-07T02:41:31.531Z",
+    "rank_on_page": 134,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "aa69978a92718e2f",
+  "content_hash": "6dead4b7876758eb",
+  "full_text_hash": "6dead4b7876758eb",
+  "semantic_hash": "acefabfa02d85fdc",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-06T10:50:21.000Z",
+  "last_seen_at": "2026-06-07T02:44:54.811Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Audio Interaction是一个开源语音模型，持续监听环境，每0.4秒判断是否应该说话或保持沉默。与GPT-4o或Qwen3.5-Omni不同，它无需等待录音结束，可在单个流中同时进行翻译、转录、对话并识别咳嗽等日常噪音。代码和模型权重已在GitHub上以Apache 2.0开源许可发布，训练数据稍后公布。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Ad Skip to content New open-source voice model listens nonstop and decides every 0.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "4 seconds whether to speak or stay silent Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jun 6, 2026 Nano Banana Pro prompted by THE DECODER Key Points The \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "To do this, it breaks down the audio stream into 0.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "4-second segments and decides after each segment via a special token whether it should remain silent or generate a response.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Trained with an artificial data set of 302,000 hours of audio, the model processes listening and speaking in parallel.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "The Decoder",
+      "AI News（RSS）",
+      "GitHub"
+    ],
+    "products": [
+      "Gemini"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "0.4",
+      "4",
+      "3.5",
+      "2.0",
+      "6",
+      "2026",
+      "302",
+      "000"
+    ],
+    "quotes": [
+      "Audio Interaction",
+      "audio interaction.",
+      "Translate into English",
+      "AI Radar"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Audio Interaction是一个开源语音模型，持续监听环境，每0.4秒判断是否应该说话或保持沉默。与GPT-4o或Qwen3.5-Omni不同，它无需等待录音结束，可在单个流中同时进行翻译、转录、对话并识别咳嗽等日常噪音。代码和模型权重已在GitHub上以Apache 2.0开源许可发布，训练数据稍后公布。",
+      "Ad Skip to content New open-source voice model listens nonstop and decides every 0.",
+      "To do this, it breaks down the audio stream into 0."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Trained with an artificial data set of 302,000 hours of audio, the model processes listening and speaking in parallel."
+    ],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默\n\n- raw_id: R-015\n- original_url: https://the-decoder.com/new-open-source-voice-model-listens-nonstop-and-decides-every-0-4-seconds-whether-to-speak-or-stay-silent\n- source_name: The Decoder：AI News（RSS）\n- collected_at: 2026-06-07T02:44:54.811Z\n\n## clean_text\n\nAd\nSkip to content\nNew open-source voice model listens nonstop and decides every 0.4 seconds whether to speak or stay silent\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJun 6, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nThe \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system.\nTo do this, it breaks down the audio stream into 0.4-second segments and decides after each segment via a special token whether it should remain silent or generate a response.\nTrained with an artificial data set of 302,000 hours of audio, the model processes listening and speaking in parallel. This minimizes the waiting time for responses and allows the system to beat models such as Gemini 3 Flash in proactive noise detection tests.\nResearchers want to close the gap between today's audio speech models and real listeners. Their system handles dialog, translation, and sound recognition all at once.\nToday's audio voice models, like GPT-4o or Qwen 3.5-Omni , work like a dictation machine with a button: they only respond when the recording ends. Streaming systems like Moshi for dialog or Paraformer for live subtitles do listen in, but they can only handle one task at a time and treat sounds like coughing as background noise.\nResearchers from China, Hong Kong, and Singapore want to combine both approaches with \"audio interaction.\" The model listens to an audio stream continuously, breaks it into 0.4-second chunks, and decides after each chunk whether to stay silent or speak. Translation, transcription, chatting, and reacting to everyday noises all run in a single three-billion-parameter model. Ad\nOne special token every 0.4 seconds\nAfter each audio snippet, the model outputs either <silent> or <response> . If it picks <silent> , it keeps listening. Only with <response> does it start talking. Classic tasks like \"Translate into English\" become instructions within the same continuous stream. Ad\nDEC_D_Incontent-1\nThe model listens to a continuous audio stream and decides moment by moment whether to stay silent or react, combining classical and streaming audio capabilities in one system. | Image: Xie et al.\nAccording to the paper , Audio-Interaction scored 58.15 points on the audio benchmark MMAU, narrowly beating its base model Qwen2.5-Omni-3B. It also comes close to much larger 7B models. On English-Chinese translation, the model improves a lot over the base.\nWhere previous systems each solve a task in a separate model, Audio-Interaction combines recognition, translation, dialog, and proactive response in a single streaming setup. | Image: Xie et al.\nFor the model to learn when to step in, the team needed the right training data. Existing audio datasets consist of short, isolated clips and lack long sequences with sparse response signals, the researchers say. Ad\nSo they built their own scenes in three stages. First, a language model designed a plausible setting—say, a kitchen in the morning—with three to 15 sub-events. The system then searched a database for matching clips or had missing sounds like breaking glass created by audio models like AudioX or ElevenLabs. A preprocessing step then smoothed out the cut edges so the recordings sounded natural.\nThe resulting StreamAudio-2M dataset contains 2.6 million units and about 302,000 hours of audio across seven skill areas and 28 subtasks. Ad\nDEC_D_Incontent-2\nTwo recurring streaming problems\nTwo weaknesses kept showing up during training. First, the model forgot earlier content in long, noisy sequences. The fix: asking questions that point back to passages from much earlier in the audio, forcing the model to build up long-term memory. Ad\nSecond, the model fired too often on sounds that didn't matter. The team countered this with large amounts of verified silence and background audio that's explicitly not supposed to trigger a response. On the newly introduced ProactiveSound Bench with 644 human-curated events the model beats Gemini 3 Flash, Kimi-Audio-Instruct, and Step-Audio 2, among others.\nIn a single everyday scene, the model runs through five of its seven task types, from proactive warnings to audio understanding and real-time translation. | Image: Xie et al.\nA queue instead of a blocking pipeline\nFor real-time use, the researchers split incoming audio processing from response generation. Both run in parallel and swap data through a queue: the audio side keeps writing new chunks, and the response side only reads them when it has nothing to say. Without this split, time-to-first-response jumped from 392 to 831 milliseconds, and the system got stuck 5.2 percent of the time.\nThe 0.4-second chunk size is a tradeoff. At 0.2 seconds, there isn't enough context and the model falls apart in dialog. At 0.8 seconds, latency climbs to 786 milliseconds.\nSoundFlow lines up the audio signal, intermediate representations, and control tokens in a time sequence, jointly training when the model talks and when it stays quiet. | Image: Xie et al.\nCode and instructions for downloading the weights are on GitHub under the Apache 2.0 license, with no restrictions on commercial use. The full training dataset is set to follow later.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Arxiv\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## full_text\n\nAd\nSkip to content\nNew open-source voice model listens nonstop and decides every 0.4 seconds whether to speak or stay silent\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJun 6, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nThe \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system.\nTo do this, it breaks down the audio stream into 0.4-second segments and decides after each segment via a special token whether it should remain silent or generate a response.\nTrained with an artificial data set of 302,000 hours of audio, the model processes listening and speaking in parallel. This minimizes the waiting time for responses and allows the system to beat models such as Gemini 3 Flash in proactive noise detection tests.\nResearchers want to close the gap between today's audio speech models and real listeners. Their system handles dialog, translation, and sound recognition all at once.\nToday's audio voice models, like GPT-4o or Qwen 3.5-Omni , work like a dictation machine with a button: they only respond when the recording ends. Streaming systems like Moshi for dialog or Paraformer for live subtitles do listen in, but they can only handle one task at a time and treat sounds like coughing as background noise.\nResearchers from China, Hong Kong, and Singapore want to combine both approaches with \"audio interaction.\" The model listens to an audio stream continuously, breaks it into 0.4-second chunks, and decides after each chunk whether to stay silent or speak. Translation, transcription, chatting, and reacting to everyday noises all run in a single three-billion-parameter model. Ad\nOne special token every 0.4 seconds\nAfter each audio snippet, the model outputs either <silent> or <response> . If it picks <silent> , it keeps listening. Only with <response> does it start talking. Classic tasks like \"Translate into English\" become instructions within the same continuous stream. Ad\nDEC_D_Incontent-1\nThe model listens to a continuous audio stream and decides moment by moment whether to stay silent or react, combining classical and streaming audio capabilities in one system. | Image: Xie et al.\nAccording to the paper , Audio-Interaction scored 58.15 points on the audio benchmark MMAU, narrowly beating its base model Qwen2.5-Omni-3B. It also comes close to much larger 7B models. On English-Chinese translation, the model improves a lot over the base.\nWhere previous systems each solve a task in a separate model, Audio-Interaction combines recognition, translation, dialog, and proactive response in a single streaming setup. | Image: Xie et al.\nFor the model to learn when to step in, the team needed the right training data. Existing audio datasets consist of short, isolated clips and lack long sequences with sparse response signals, the researchers say. Ad\nSo they built their own scenes in three stages. First, a language model designed a plausible setting—say, a kitchen in the morning—with three to 15 sub-events. The system then searched a database for matching clips or had missing sounds like breaking glass created by audio models like AudioX or ElevenLabs. A preprocessing step then smoothed out the cut edges so the recordings sounded natural.\nThe resulting StreamAudio-2M dataset contains 2.6 million units and about 302,000 hours of audio across seven skill areas and 28 subtasks. Ad\nDEC_D_Incontent-2\nTwo recurring streaming problems\nTwo weaknesses kept showing up during training. First, the model forgot earlier content in long, noisy sequences. The fix: asking questions that point back to passages from much earlier in the audio, forcing the model to build up long-term memory. Ad\nSecond, the model fired too often on sounds that didn't matter. The team countered this with large amounts of verified silence and background audio that's explicitly not supposed to trigger a response. On the newly introduced ProactiveSound Bench with 644 human-curated events the model beats Gemini 3 Flash, Kimi-Audio-Instruct, and Step-Audio 2, among others.\nIn a single everyday scene, the model runs through five of its seven task types, from proactive warnings to audio understanding and real-time translation. | Image: Xie et al.\nA queue instead of a blocking pipeline\nFor real-time use, the researchers split incoming audio processing from response generation. Both run in parallel and swap data through a queue: the audio side keeps writing new chunks, and the response side only reads them when it has nothing to say. Without this split, time-to-first-response jumped from 392 to 831 milliseconds, and the system got stuck 5.2 percent of the time.\nThe 0.4-second chunk size is a tradeoff. At 0.2 seconds, there isn't enough context and the model falls apart in dialog. At 0.8 seconds, latency climbs to 786 milliseconds.\nSoundFlow lines up the audio signal, intermediate representations, and control tokens in a time sequence, jointly training when the model talks and when it stays quiet. | Image: Xie et al.\nCode and instructions for downloading the weights are on GitHub under the Apache 2.0 license, with no restrictions on commercial use. The full training dataset is set to follow later.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Arxiv\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 88\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / high] Audio Interaction是一个开源语音模型，持续监听环境，每0.4秒判断是否应该说话或保持沉默。与GPT-4o或Qwen3.5-Omni不同，它无需等待录音结束，可在单个流中同时进行翻译、转录、对话并识别咳嗽等日常噪音。代码和模型权重已在GitHub上以Apache 2.0开源许可发布，训练数据稍后公布。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Ad Skip to content New open-source voice model listens nonstop and decides every 0.\n3. [quote / daily_observation, heatmap, viewpoint / high] 4 seconds whether to speak or stay silent Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jun 6, 2026 Nano Banana Pro prompted by THE DECODER Key Points The \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] To do this, it breaks down the audio stream into 0.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 4-second segments and decides after each segment via a special token whether it should remain silent or generate a response.\n6. [workflow_change / daily_observation, heatmap, change, case, trend / high] Trained with an artificial data set of 302,000 hours of audio, the model processes listening and speaking in parallel.\n"
+}

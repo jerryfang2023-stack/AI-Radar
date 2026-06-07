@@ -1,0 +1,262 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-001",
+  "title": "Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码",
+  "original_url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal",
+  "canonical_url": "https://marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-06T22:07:34.000Z",
+  "collected_at": "2026-06-07T02:44:54.730Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nFor Devs\nMachine Learning\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nUncategorized\nThis week, Google AI team released the Colab CLI . The tool connects your local terminal to remote Colab runtimes. It lets developers and AI agents run code on cloud GPUs and TPUs. You stay in your terminal the entire time. The CLI is open source under the Apache 2.0 license.\nWhat is Google Colab CLI\nThe Colab CLI is a command-line interface for Google Colab. You can create sessions, run code, and manage files from the terminal.\nAny agent with terminal access can call the tool. That includes Claude Code, Codex, and Google’s Antigravity. Google ships a prepackaged skill file named COLAB_SKILL.md . It gives agents built-in context on how to use the CLI.\nInstallation uses a single uv tool install command from the GitHub repository.\nCopy Code Copied Use a different Browser\nuv tool install git+https://github.com/googlecolab/google-colab-cli\nA minimal session looks like this:\nCopy Code Copied Use a different Browser\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nHow the Commands Work\nThe CLI groups commands into sessions, execution, files, and automation. colab new provisions a session, with CPU as the default. Add --gpu T4 , --gpu L4 , --gpu A100 , or --gpu H100 for a GPU. TPU options are v5e1 and v6e1 .\ncolab exec runs Python from stdin, a .py file, or a notebook. The exec reads files locally and ships their contents. Local edits therefore need no separate upload step. colab stop terminates the session and releases the VM.\nOther commands cover files and authentication. colab upload and colab download move files between local and remote. colab drivemount mounts Google Drive, defaulting to /content/drive . colab auth authenticates the VM for Google Cloud services.\ncolab exec and Artifact Recovery: The Core Loop\nThe core loop is short. You provision a runtime, run a script, then pull results back. colab download retrieves models, datasets, and other files. colab log exports session history as .ipynb , .md , .txt , or .jsonl .\nSo a remote run becomes a replayable notebook on your disk. colab repl and colab console give interactive access to the VM. colab install adds packages with uv , falling back to pip . Session metadata is stored at ~/.config/colab-cli/sessions.json .\nExample: Fine-Tuning Gemma 3 1B\nGoogle’s official release demonstrates an agent-driven fine-tuning job. The task fine-tunes google/gemma-3-1b-it using QLoRA. It trains on a Text-to-SQL dataset to improve SQL generation. The Antigravity agent runs the full pipeline with five commands.\nCopy Code Copied Use a different Browser\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nThe agent then downloads the adapter model, adapter config, tokenizer config, and tokenizer. You can load and serve the fine-tuned model locally. No manual cloud provisioning command was typed by the user.\nUse Cases\nOffload laptop-bound training to a remote GPU or TPU without leaving the terminal.\nLet agents like Claude Code, Codex, or Antigravity run end-to-end ML pipelines.\nFine-tune small models, such as Gemma 3 1B, with QLoRA remotely.\nScript notebook execution and export replayable .ipynb logs for reproducibility.\nDebug interactively on the VM through colab repl or colab console .\nColab CLI vs Browser-Based Colab\nThe CLI does not replace the notebook UI. It targets scripted, automated, and agent-driven work instead. Here is how the two workflows compare across common tasks.\nDimension Browser-Based Colab Colab CLI\nInterface Web notebook UI Local terminal\nAccelerator selection Runtime menu in the browser --gpu / --tpu flags on colab new\nAgent use Manual, UI-driven Any terminal agent via commands\nRun local scripts Paste or upload into cells colab exec -f script.py\nArtifact retrieval Manual download or Drive colab download , colab log\nPackage install !pip inside a cell colab install (uv, then pip)\nSession control Browser-managed runtime colab new , colab stop , colab status\nAgent skill file None Bundled COLAB_SKILL.md\nStrengths and Considerations\nStrengths:\nTerminal-native workflow fits scripts, CI, and agent loops.\nOne command provisions T4, L4, A100, or H100 GPUs.\nexec ships local file contents, so no upload step is needed.\nLogs export to replayable notebook formats for reproducibility.\nOpen source under Apache 2.0, with a bundled agent skill file.\nWorks with multiple agents, not a single vendor’s tool.\nConsiderations:\nAccess requires authentication; the default strategy is oauth2 .\nrepl and console need a TTY when run interactively.\nPipe stdin to use those two commands inside scripts.\nCompute still runs on Colab’s backend and its runtime model.\nKey Takeaways\nGoogle’s Colab CLI runs code on remote Colab GPUs and TPUs from your local terminal.\nOne command provisions accelerators: colab new --gpu T4 through A100 and H100 , plus TPUs.\ncolab exec ships local .py and .ipynb files to the runtime without an upload step.\nAny terminal agent — Claude Code, Codex, Antigravity — can drive it via a bundled COLAB_SKILL.md .\nIt is open source under Apache 2.0, and colab log exports replayable notebook logs.\nMarktechpost Visual Explainer\nGoogle Colab CLI — Terminal Guide\n1 / 8\nOverview\nRun Colab GPUs and TPUs from your terminal\nThe Google Colab CLI connects your local terminal to remote Colab runtimes. Developers and AI agents run code on cloud accelerators without leaving the shell.\nAnnounced June 5, 2026 • Open source under Apache 2.0\nStep 1\nWhat it is\nA command-line interface for Google Colab.\nIt connects your local terminal to remote Colab runtimes.\nYou create sessions, run code, and manage files from the terminal.\nAny terminal-based AI agent can call it too.\nStep 2\nInstall and quick start\nInstall with a single command, then run a first session.\nuv tool install git+https://github.com/googlecolab/google-colab-cli\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nStep 3\nProvision GPUs and TPUs\nRequest an accelerator when you create the session. CPU is the default.\ncolab new --gpu T4\ncolab new --gpu A100\ncolab new --tpu v6e1\nAccelerator availability depends on your active Colab plan.\nStep 4\nRun local scripts remotely\nThe exec command reads your file locally and ships its contents. No separate upload step is needed.\ncolab exec -f train.py\nexec runs Python from stdin, a .py file, or a notebook.\nStep 5\nRetrieve models and logs\nPull results back to your machine after the run.\ncolab download -s NAME checkpoints/model.bin ./model.bin\ncolab log -o report.ipynb\nLogs export as .ipynb, .md, .txt, or .jsonl.\nStep 6\nExample: fine-tune Gemma 3 1B\nGoogle’s blog shows an agent running a QLoRA pipeline on a Text-to-SQL dataset.\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nStep 7\nBuilt for AI agents\nAny agent with terminal access can call the CLI.\nIt works with Claude Code, Codex, and Antigravity.\nA bundled COLAB_SKILL.md gives agents built-in context.\nThe result: scriptable, agent-ready Colab compute.\n← Prev\nNext →\nMarktechpost — practitioner AI & ML coverage, no hype.\nSource: Marktechpost.com\nCheck out the Technical details and GitHub Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us",
+  "clean_text": "Editors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nFor Devs\nMachine Learning\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nUncategorized\nThis week, Google AI team released the Colab CLI . The tool connects your local terminal to remote Colab runtimes. It lets developers and AI agents run code on cloud GPUs and TPUs. You stay in your terminal the entire time. The CLI is open source under the Apache 2.0 license.\nWhat is Google Colab CLI\nThe Colab CLI is a command-line interface for Google Colab. You can create sessions, run code, and manage files from the terminal.\nAny agent with terminal access can call the tool. That includes Claude Code, Codex, and Google’s Antigravity. Google ships a prepackaged skill file named COLAB_SKILL.md . It gives agents built-in context on how to use the CLI.\nInstallation uses a single uv tool install command from the GitHub repository.\nCopy Code Copied Use a different Browser\nuv tool install git+https://github.com/googlecolab/google-colab-cli\nA minimal session looks like this:\nCopy Code Copied Use a different Browser\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nHow the Commands Work\nThe CLI groups commands into sessions, execution, files, and automation. colab new provisions a session, with CPU as the default. Add --gpu T4 , --gpu L4 , --gpu A100 , or --gpu H100 for a GPU. TPU options are v5e1 and v6e1 .\ncolab exec runs Python from stdin, a .py file, or a notebook. The exec reads files locally and ships their contents. Local edits therefore need no separate upload step. colab stop terminates the session and releases the VM.\nOther commands cover files and authentication. colab upload and colab download move files between local and remote. colab drivemount mounts Google Drive, defaulting to /content/drive . colab auth authenticates the VM for Google Cloud services.\ncolab exec and Artifact Recovery: The Core Loop\nThe core loop is short. You provision a runtime, run a script, then pull results back. colab download retrieves models, datasets, and other files. colab log exports session history as .ipynb , .md , .txt , or .jsonl .\nSo a remote run becomes a replayable notebook on your disk. colab repl and colab console give interactive access to the VM. colab install adds packages with uv , falling back to pip . Session metadata is stored at ~/.config/colab-cli/sessions.json .\nExample: Fine-Tuning Gemma 3 1B\nGoogle’s official release demonstrates an agent-driven fine-tuning job. The task fine-tunes google/gemma-3-1b-it using QLoRA. It trains on a Text-to-SQL dataset to improve SQL generation. The Antigravity agent runs the full pipeline with five commands.\nCopy Code Copied Use a different Browser\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nThe agent then downloads the adapter model, adapter config, tokenizer config, and tokenizer. You can load and serve the fine-tuned model locally. No manual cloud provisioning command was typed by the user.\nUse Cases\nOffload laptop-bound training to a remote GPU or TPU without leaving the terminal.\nLet agents like Claude Code, Codex, or Antigravity run end-to-end ML pipelines.\nFine-tune small models, such as Gemma 3 1B, with QLoRA remotely.\nScript notebook execution and export replayable .ipynb logs for reproducibility.\nDebug interactively on the VM through colab repl or colab console .\nColab CLI vs Browser-Based Colab\nThe CLI does not replace the notebook UI. It targets scripted, automated, and agent-driven work instead. Here is how the two workflows compare across common tasks.\nDimension Browser-Based Colab Colab CLI\nInterface Web notebook UI Local terminal\nAccelerator selection Runtime menu in the browser --gpu / --tpu flags on colab new\nAgent use Manual, UI-driven Any terminal agent via commands\nRun local scripts Paste or upload into cells colab exec -f script.py\nArtifact retrieval Manual download or Drive colab download , colab log\nPackage install !pip inside a cell colab install (uv, then pip)\nSession control Browser-managed runtime colab new , colab stop , colab status\nAgent skill file None Bundled COLAB_SKILL.md\nStrengths and Considerations\nStrengths:\nTerminal-native workflow fits scripts, CI, and agent loops.\nOne command provisions T4, L4, A100, or H100 GPUs.\nexec ships local file contents, so no upload step is needed.\nLogs export to replayable notebook formats for reproducibility.\nOpen source under Apache 2.0, with a bundled agent skill file.\nWorks with multiple agents, not a single vendor’s tool.\nConsiderations:\nAccess requires authentication; the default strategy is oauth2 .\nrepl and console need a TTY when run interactively.\nPipe stdin to use those two commands inside scripts.\nCompute still runs on Colab’s backend and its runtime model.\nKey Takeaways\nGoogle’s Colab CLI runs code on remote Colab GPUs and TPUs from your local terminal.\nOne command provisions accelerators: colab new --gpu T4 through A100 and H100 , plus TPUs.\ncolab exec ships local .py and .ipynb files to the runtime without an upload step.\nAny terminal agent — Claude Code, Codex, Antigravity — can drive it via a bundled COLAB_SKILL.md .\nIt is open source under Apache 2.0, and colab log exports replayable notebook logs.\nMarktechpost Visual Explainer\nGoogle Colab CLI — Terminal Guide\n1 / 8\nOverview\nRun Colab GPUs and TPUs from your terminal\nThe Google Colab CLI connects your local terminal to remote Colab runtimes. Developers and AI agents run code on cloud accelerators without leaving the shell.\nAnnounced June 5, 2026 • Open source under Apache 2.0\nStep 1\nWhat it is\nA command-line interface for Google Colab.\nIt connects your local terminal to remote Colab runtimes.\nYou create sessions, run code, and manage files from the terminal.\nAny terminal-based AI agent can call it too.\nStep 2\nInstall and quick start\nInstall with a single command, then run a first session.\nuv tool install git+https://github.com/googlecolab/google-colab-cli\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nStep 3\nProvision GPUs and TPUs\nRequest an accelerator when you create the session. CPU is the default.\ncolab new --gpu T4\ncolab new --gpu A100\ncolab new --tpu v6e1\nAccelerator availability depends on your active Colab plan.\nStep 4\nRun local scripts remotely\nThe exec command reads your file locally and ships its contents. No separate upload step is needed.\ncolab exec -f train.py\nexec runs Python from stdin, a .py file, or a notebook.\nStep 5\nRetrieve models and logs\nPull results back to your machine after the run.\ncolab download -s NAME checkpoints/model.bin ./model.bin\ncolab log -o report.ipynb\nLogs export as .ipynb, .md, .txt, or .jsonl.\nStep 6\nExample: fine-tune Gemma 3 1B\nGoogle’s blog shows an agent running a QLoRA pipeline on a Text-to-SQL dataset.\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nStep 7\nBuilt for AI agents\nAny agent with terminal access can call the CLI.\nIt works with Claude Code, Codex, and Antigravity.\nA bundled COLAB_SKILL.md gives agents built-in context.\nThe result: scriptable, agent-ready Colab compute.\n← Prev\nNext →\nMarktechpost — practitioner AI & ML coverage, no hype.\nSource: Marktechpost.com\nCheck out the Technical details and GitHub Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-001-google-发布-colab-cli-开发者与-ai-智能体可在终端中远程调用-colab-gpu-与-tpu-运行-python-代码.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-07/r-001-google-发布-colab-cli-开发者与-ai-智能体可在终端中远程调用-colab-gpu-与-tpu-运行-python-代码.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 7866,
+    "paragraph_count": 102,
+    "sentence_count": 89,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0017,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 7866,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "f74aafe68e818bcc",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码",
+    "discovery_summary": "Google 发布 Colab CLI，允许开发者和 AI 智能体在终端中直接运行本地 Python 代码，并利用远程 Colab 的 GPU 与 TPU 运行时进行加速。通过这一命令行工具，用户无需打开浏览器即可无缝连接 Colab 计算资源，为自动化和脚本化 AI 工作流提供了更便捷的接口。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal",
+    "discovered_at": "2026-06-07T02:41:31.515Z",
+    "rank_on_page": 47,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "110dc715e0e2e7ba",
+  "content_hash": "f74aafe68e818bcc",
+  "full_text_hash": "f74aafe68e818bcc",
+  "semantic_hash": "2fc433dcac328b83",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-06T22:07:34.000Z",
+  "last_seen_at": "2026-06-07T02:44:54.730Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Google 发布 Colab CLI，允许开发者和 AI 智能体在终端中直接运行本地 Python 代码，并利用远程 Colab 的 GPU 与 TPU 运行时进行加速。通过这一命令行工具，用户无需打开浏览器即可无缝连接 Colab 计算资源，为自动化和脚本化 AI 工作流提供了更便捷的接口。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications For Devs Machine Learning New Releases Open Source Software Engineering Staff Tech News Uncategorized This week, Google AI team released the Colab CLI .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The tool connects your local terminal to remote Colab runtimes.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It lets developers and AI agents run code on cloud GPUs and TPUs.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You stay in your terminal the entire time.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The CLI is open source under the Apache 2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "Google",
+      "GitHub"
+    ],
+    "products": [
+      "Agents",
+      "agents",
+      "agent",
+      "Claude",
+      "Codex",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2.0",
+      "4",
+      "100",
+      "5",
+      "1",
+      "6",
+      "3",
+      "1B"
+    ],
+    "quotes": [
+      "print('hello')",
+      "print('hello')"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Google 发布 Colab CLI，允许开发者和 AI 智能体在终端中直接运行本地 Python 代码，并利用远程 Colab 的 GPU 与 TPU 运行时进行加速。通过这一命令行工具，用户无需打开浏览器即可无缝连接 Colab 计算资源，为自动化和脚本化 AI 工作流提供了更便捷的接口。",
+      "Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications For Devs Machine Learning New Releases Open Source Software Engineering Staff Tech News Uncategorized This week, Google AI team released the Colab CLI .",
+      "The tool connects your local terminal to remote Colab runtimes."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码\n\n- raw_id: R-001\n- original_url: https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-06-07T02:44:54.730Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nFor Devs\nMachine Learning\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nUncategorized\nThis week, Google AI team released the Colab CLI . The tool connects your local terminal to remote Colab runtimes. It lets developers and AI agents run code on cloud GPUs and TPUs. You stay in your terminal the entire time. The CLI is open source under the Apache 2.0 license.\nWhat is Google Colab CLI\nThe Colab CLI is a command-line interface for Google Colab. You can create sessions, run code, and manage files from the terminal.\nAny agent with terminal access can call the tool. That includes Claude Code, Codex, and Google’s Antigravity. Google ships a prepackaged skill file named COLAB_SKILL.md . It gives agents built-in context on how to use the CLI.\nInstallation uses a single uv tool install command from the GitHub repository.\nCopy Code Copied Use a different Browser\nuv tool install git+https://github.com/googlecolab/google-colab-cli\nA minimal session looks like this:\nCopy Code Copied Use a different Browser\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nHow the Commands Work\nThe CLI groups commands into sessions, execution, files, and automation. colab new provisions a session, with CPU as the default. Add --gpu T4 , --gpu L4 , --gpu A100 , or --gpu H100 for a GPU. TPU options are v5e1 and v6e1 .\ncolab exec runs Python from stdin, a .py file, or a notebook. The exec reads files locally and ships their contents. Local edits therefore need no separate upload step. colab stop terminates the session and releases the VM.\nOther commands cover files and authentication. colab upload and colab download move files between local and remote. colab drivemount mounts Google Drive, defaulting to /content/drive . colab auth authenticates the VM for Google Cloud services.\ncolab exec and Artifact Recovery: The Core Loop\nThe core loop is short. You provision a runtime, run a script, then pull results back. colab download retrieves models, datasets, and other files. colab log exports session history as .ipynb , .md , .txt , or .jsonl .\nSo a remote run becomes a replayable notebook on your disk. colab repl and colab console give interactive access to the VM. colab install adds packages with uv , falling back to pip . Session metadata is stored at ~/.config/colab-cli/sessions.json .\nExample: Fine-Tuning Gemma 3 1B\nGoogle’s official release demonstrates an agent-driven fine-tuning job. The task fine-tunes google/gemma-3-1b-it using QLoRA. It trains on a Text-to-SQL dataset to improve SQL generation. The Antigravity agent runs the full pipeline with five commands.\nCopy Code Copied Use a different Browser\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nThe agent then downloads the adapter model, adapter config, tokenizer config, and tokenizer. You can load and serve the fine-tuned model locally. No manual cloud provisioning command was typed by the user.\nUse Cases\nOffload laptop-bound training to a remote GPU or TPU without leaving the terminal.\nLet agents like Claude Code, Codex, or Antigravity run end-to-end ML pipelines.\nFine-tune small models, such as Gemma 3 1B, with QLoRA remotely.\nScript notebook execution and export replayable .ipynb logs for reproducibility.\nDebug interactively on the VM through colab repl or colab console .\nColab CLI vs Browser-Based Colab\nThe CLI does not replace the notebook UI. It targets scripted, automated, and agent-driven work instead. Here is how the two workflows compare across common tasks.\nDimension Browser-Based Colab Colab CLI\nInterface Web notebook UI Local terminal\nAccelerator selection Runtime menu in the browser --gpu / --tpu flags on colab new\nAgent use Manual, UI-driven Any terminal agent via commands\nRun local scripts Paste or upload into cells colab exec -f script.py\nArtifact retrieval Manual download or Drive colab download , colab log\nPackage install !pip inside a cell colab install (uv, then pip)\nSession control Browser-managed runtime colab new , colab stop , colab status\nAgent skill file None Bundled COLAB_SKILL.md\nStrengths and Considerations\nStrengths:\nTerminal-native workflow fits scripts, CI, and agent loops.\nOne command provisions T4, L4, A100, or H100 GPUs.\nexec ships local file contents, so no upload step is needed.\nLogs export to replayable notebook formats for reproducibility.\nOpen source under Apache 2.0, with a bundled agent skill file.\nWorks with multiple agents, not a single vendor’s tool.\nConsiderations:\nAccess requires authentication; the default strategy is oauth2 .\nrepl and console need a TTY when run interactively.\nPipe stdin to use those two commands inside scripts.\nCompute still runs on Colab’s backend and its runtime model.\nKey Takeaways\nGoogle’s Colab CLI runs code on remote Colab GPUs and TPUs from your local terminal.\nOne command provisions accelerators: colab new --gpu T4 through A100 and H100 , plus TPUs.\ncolab exec ships local .py and .ipynb files to the runtime without an upload step.\nAny terminal agent — Claude Code, Codex, Antigravity — can drive it via a bundled COLAB_SKILL.md .\nIt is open source under Apache 2.0, and colab log exports replayable notebook logs.\nMarktechpost Visual Explainer\nGoogle Colab CLI — Terminal Guide\n1 / 8\nOverview\nRun Colab GPUs and TPUs from your terminal\nThe Google Colab CLI connects your local terminal to remote Colab runtimes. Developers and AI agents run code on cloud accelerators without leaving the shell.\nAnnounced June 5, 2026 • Open source under Apache 2.0\nStep 1\nWhat it is\nA command-line interface for Google Colab.\nIt connects your local terminal to remote Colab runtimes.\nYou create sessions, run code, and manage files from the terminal.\nAny terminal-based AI agent can call it too.\nStep 2\nInstall and quick start\nInstall with a single command, then run a first session.\nuv tool install git+https://github.com/googlecolab/google-colab-cli\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nStep 3\nProvision GPUs and TPUs\nRequest an accelerator when you create the session. CPU is the default.\ncolab new --gpu T4\ncolab new --gpu A100\ncolab new --tpu v6e1\nAccelerator availability depends on your active Colab plan.\nStep 4\nRun local scripts remotely\nThe exec command reads your file locally and ships its contents. No separate upload step is needed.\ncolab exec -f train.py\nexec runs Python from stdin, a .py file, or a notebook.\nStep 5\nRetrieve models and logs\nPull results back to your machine after the run.\ncolab download -s NAME checkpoints/model.bin ./model.bin\ncolab log -o report.ipynb\nLogs export as .ipynb, .md, .txt, or .jsonl.\nStep 6\nExample: fine-tune Gemma 3 1B\nGoogle’s blog shows an agent running a QLoRA pipeline on a Text-to-SQL dataset.\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nStep 7\nBuilt for AI agents\nAny agent with terminal access can call the CLI.\nIt works with Claude Code, Codex, and Antigravity.\nA bundled COLAB_SKILL.md gives agents built-in context.\nThe result: scriptable, agent-ready Colab compute.\n← Prev\nNext →\nMarktechpost — practitioner AI & ML coverage, no hype.\nSource: Marktechpost.com\nCheck out the Technical details and GitHub Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\n\n## full_text\n\nEditors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nFor Devs\nMachine Learning\nNew Releases\nOpen Source\nSoftware Engineering\nStaff\nTech News\nUncategorized\nThis week, Google AI team released the Colab CLI . The tool connects your local terminal to remote Colab runtimes. It lets developers and AI agents run code on cloud GPUs and TPUs. You stay in your terminal the entire time. The CLI is open source under the Apache 2.0 license.\nWhat is Google Colab CLI\nThe Colab CLI is a command-line interface for Google Colab. You can create sessions, run code, and manage files from the terminal.\nAny agent with terminal access can call the tool. That includes Claude Code, Codex, and Google’s Antigravity. Google ships a prepackaged skill file named COLAB_SKILL.md . It gives agents built-in context on how to use the CLI.\nInstallation uses a single uv tool install command from the GitHub repository.\nCopy Code Copied Use a different Browser\nuv tool install git+https://github.com/googlecolab/google-colab-cli\nA minimal session looks like this:\nCopy Code Copied Use a different Browser\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nHow the Commands Work\nThe CLI groups commands into sessions, execution, files, and automation. colab new provisions a session, with CPU as the default. Add --gpu T4 , --gpu L4 , --gpu A100 , or --gpu H100 for a GPU. TPU options are v5e1 and v6e1 .\ncolab exec runs Python from stdin, a .py file, or a notebook. The exec reads files locally and ships their contents. Local edits therefore need no separate upload step. colab stop terminates the session and releases the VM.\nOther commands cover files and authentication. colab upload and colab download move files between local and remote. colab drivemount mounts Google Drive, defaulting to /content/drive . colab auth authenticates the VM for Google Cloud services.\ncolab exec and Artifact Recovery: The Core Loop\nThe core loop is short. You provision a runtime, run a script, then pull results back. colab download retrieves models, datasets, and other files. colab log exports session history as .ipynb , .md , .txt , or .jsonl .\nSo a remote run becomes a replayable notebook on your disk. colab repl and colab console give interactive access to the VM. colab install adds packages with uv , falling back to pip . Session metadata is stored at ~/.config/colab-cli/sessions.json .\nExample: Fine-Tuning Gemma 3 1B\nGoogle’s official release demonstrates an agent-driven fine-tuning job. The task fine-tunes google/gemma-3-1b-it using QLoRA. It trains on a Text-to-SQL dataset to improve SQL generation. The Antigravity agent runs the full pipeline with five commands.\nCopy Code Copied Use a different Browser\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nThe agent then downloads the adapter model, adapter config, tokenizer config, and tokenizer. You can load and serve the fine-tuned model locally. No manual cloud provisioning command was typed by the user.\nUse Cases\nOffload laptop-bound training to a remote GPU or TPU without leaving the terminal.\nLet agents like Claude Code, Codex, or Antigravity run end-to-end ML pipelines.\nFine-tune small models, such as Gemma 3 1B, with QLoRA remotely.\nScript notebook execution and export replayable .ipynb logs for reproducibility.\nDebug interactively on the VM through colab repl or colab console .\nColab CLI vs Browser-Based Colab\nThe CLI does not replace the notebook UI. It targets scripted, automated, and agent-driven work instead. Here is how the two workflows compare across common tasks.\nDimension Browser-Based Colab Colab CLI\nInterface Web notebook UI Local terminal\nAccelerator selection Runtime menu in the browser --gpu / --tpu flags on colab new\nAgent use Manual, UI-driven Any terminal agent via commands\nRun local scripts Paste or upload into cells colab exec -f script.py\nArtifact retrieval Manual download or Drive colab download , colab log\nPackage install !pip inside a cell colab install (uv, then pip)\nSession control Browser-managed runtime colab new , colab stop , colab status\nAgent skill file None Bundled COLAB_SKILL.md\nStrengths and Considerations\nStrengths:\nTerminal-native workflow fits scripts, CI, and agent loops.\nOne command provisions T4, L4, A100, or H100 GPUs.\nexec ships local file contents, so no upload step is needed.\nLogs export to replayable notebook formats for reproducibility.\nOpen source under Apache 2.0, with a bundled agent skill file.\nWorks with multiple agents, not a single vendor’s tool.\nConsiderations:\nAccess requires authentication; the default strategy is oauth2 .\nrepl and console need a TTY when run interactively.\nPipe stdin to use those two commands inside scripts.\nCompute still runs on Colab’s backend and its runtime model.\nKey Takeaways\nGoogle’s Colab CLI runs code on remote Colab GPUs and TPUs from your local terminal.\nOne command provisions accelerators: colab new --gpu T4 through A100 and H100 , plus TPUs.\ncolab exec ships local .py and .ipynb files to the runtime without an upload step.\nAny terminal agent — Claude Code, Codex, Antigravity — can drive it via a bundled COLAB_SKILL.md .\nIt is open source under Apache 2.0, and colab log exports replayable notebook logs.\nMarktechpost Visual Explainer\nGoogle Colab CLI — Terminal Guide\n1 / 8\nOverview\nRun Colab GPUs and TPUs from your terminal\nThe Google Colab CLI connects your local terminal to remote Colab runtimes. Developers and AI agents run code on cloud accelerators without leaving the shell.\nAnnounced June 5, 2026 • Open source under Apache 2.0\nStep 1\nWhat it is\nA command-line interface for Google Colab.\nIt connects your local terminal to remote Colab runtimes.\nYou create sessions, run code, and manage files from the terminal.\nAny terminal-based AI agent can call it too.\nStep 2\nInstall and quick start\nInstall with a single command, then run a first session.\nuv tool install git+https://github.com/googlecolab/google-colab-cli\ncolab new # provision a CPU session\necho \"print('hello')\" | colab exec # run code\ncolab stop # release the VM\nStep 3\nProvision GPUs and TPUs\nRequest an accelerator when you create the session. CPU is the default.\ncolab new --gpu T4\ncolab new --gpu A100\ncolab new --tpu v6e1\nAccelerator availability depends on your active Colab plan.\nStep 4\nRun local scripts remotely\nThe exec command reads your file locally and ships its contents. No separate upload step is needed.\ncolab exec -f train.py\nexec runs Python from stdin, a .py file, or a notebook.\nStep 5\nRetrieve models and logs\nPull results back to your machine after the run.\ncolab download -s NAME checkpoints/model.bin ./model.bin\ncolab log -o report.ipynb\nLogs export as .ipynb, .md, .txt, or .jsonl.\nStep 6\nExample: fine-tune Gemma 3 1B\nGoogle’s blog shows an agent running a QLoRA pipeline on a Text-to-SQL dataset.\ncolab new --gpu T4\ncolab install transformers datasets peft trl bitsandbytes accelerate\ncolab exec -f finetune_run.py\ncolab log --output gemma_finetune_log.ipynb\ncolab stop\nStep 7\nBuilt for AI agents\nAny agent with terminal access can call the CLI.\nIt works with Claude Code, Codex, and Antigravity.\nA bundled COLAB_SKILL.md gives agents built-in context.\nThe result: scriptable, agent-ready Colab compute.\n← Prev\nNext →\nMarktechpost — practitioner AI & ML coverage, no hype.\nSource: Marktechpost.com\nCheck out the Technical details and GitHub Repo here . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 88\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / high] Google 发布 Colab CLI，允许开发者和 AI 智能体在终端中直接运行本地 Python 代码，并利用远程 Colab 的 GPU 与 TPU 运行时进行加速。通过这一命令行工具，用户无需打开浏览器即可无缝连接 Colab 计算资源，为自动化和脚本化 AI 工作流提供了更便捷的接口。\n2. [product_update / daily_observation, heatmap, change / high] Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications For Devs Machine Learning New Releases Open Source Software Engineering Staff Tech News Uncategorized This week, Google AI team released the Colab CLI .\n3. [company_action / daily_observation, heatmap, change, case, trend / high] The tool connects your local terminal to remote Colab runtimes.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] It lets developers and AI agents run code on cloud GPUs and TPUs.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] You stay in your terminal the entire time.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] The CLI is open source under the Apache 2.\n"
+}
