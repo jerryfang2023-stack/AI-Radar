@@ -54,6 +54,7 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
     [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
     [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe gate syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-follow-builders-data.mjs"], "follow-builders data gate syntax"],
     [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
     [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
   ],
@@ -104,6 +105,7 @@ const buildCommands = () => {
       [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
       [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
       [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe gate syntax"],
+      [node, ["--check", "agent-workflow/tools/assert-follow-builders-data.mjs"], "follow-builders data gate syntax"],
       [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
       [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
     ];

@@ -20,7 +20,7 @@ Read `context/version-ledger.md` first. This file defines what each current fron
 | Page | Current Role | Must Keep | Must Not Contain | Gates |
 |---|---|---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | V3.3 main business-signal desk; date selection; product / funding / case Cards; visual relationship graph; trend candidates; source-first details | V2 homepage modules; daily observation; business brief; trend-report prose; follow-builders evidence; backend fields such as Raw / Pool / threshold / gate in frontstage copy | syntax + source-first gate + frontstage regression |
-| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Builders page merged from GitHub; public builders viewpoints; Chinese translation; person / title / timeline style where available; same global nav height as business signals | Business-signal Card generation; relationship-graph evidence; trend-candidate evidence; V2 opinion sidebar logic | syntax + builders data build + frontstage regression |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Builders page merged from GitHub; public builders viewpoints; Chinese translation; person / title / timeline style where available; same global nav height as business signals | Business-signal Card generation; relationship-graph evidence; trend-candidate evidence; V2 opinion sidebar logic | syntax + builders data build + builders data gate + frontstage regression |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Existing operations backend; production chain, source quality, topic center, content factory, release status | Accidental deletion; frontstage restyling that breaks operations UI; V2 public navigation takeover | syntax + manual smoke |
 
 ## Unified Navigation
@@ -33,7 +33,7 @@ The business-signal and first-line viewpoint pages must share the same global na
 
 The two public pages must use `assets/wavesight-nav.css` and keep the same topbar structure and height.
 
-First-Line Viewpoints is visually part of the same frontstage, but its data build is independent. Raw / Pool / Card failures in Business Signals must not block the builders page from refreshing or preserving its previous good data.
+First-Line Viewpoints is visually part of the same frontstage, but its data build is independent. Raw / Pool / Card failures in Business Signals must not block the builders page from refreshing or preserving its previous good data. The builders JSON may be persisted only after `assert-follow-builders-data.mjs` confirms freshness, minimum counts, original URLs, formal tags, and fallback safety.
 
 ## Change Types
 

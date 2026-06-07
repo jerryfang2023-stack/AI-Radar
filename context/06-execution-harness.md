@@ -74,6 +74,7 @@ Produces:
 
 - `01-SiteV2/site/data/follow-builders-daily.json`;
 - `01-SiteV2/site/follow-builders.html` frontstage view.
+- `agent-workflow/tools/assert-follow-builders-data.mjs` for freshness, source URL, duplicate, tag and fallback checks.
 
 This flow is independent. It must not feed business-signal Card generation, relationship graph, or trend candidates.
 

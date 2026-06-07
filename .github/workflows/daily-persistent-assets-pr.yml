@@ -149,6 +149,7 @@ jobs:
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
+          node --check agent-workflow/tools/assert-follow-builders-data.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/build-hermes-daily-brief.mjs
           node --check agent-workflow/tools/build-topic-center-data.mjs
@@ -187,6 +188,17 @@ jobs:
           set -o pipefail
           node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builders-data.log"
+
+      - name: Run first-line viewpoints data gate
+        id: builders-gate
+        if: steps.builders-data.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-follow-builders-data.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builders-gate.log"
 
       - name: Check monitor readiness
         id: monitor-readiness
@@ -319,6 +331,7 @@ jobs:
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
           - builders_data: ${{ steps.builders-data.outcome }}
+          - builders_gate: ${{ steps.builders-gate.outcome }}
           - site_data_sync: ${{ steps.site-data.outcome }}
           - source_first_frontstage_gate: ${{ steps.source-first-frontstage.outcome }}
           - frontstage_regression_gate: ${{ steps.frontstage-regression.outcome }}
@@ -343,6 +356,7 @@ jobs:
           Raw / Pool must be committed once monitor and post-monitor gates pass.
           Card assets must be committed once asset generation runs.
           Site data must be committed only when dedupe, site sync, source-first frontstage, frontstage regression and pre-commit gates pass.
+          First-line viewpoints data must be committed only when the builders data gate passes.
           EOF
 
           cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json" <<EOF
@@ -357,6 +371,7 @@ jobs:
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
               "builders_data": "${{ steps.builders-data.outcome }}",
+              "builders_gate": "${{ steps.builders-gate.outcome }}",
               "site_data_sync": "${{ steps.site-data.outcome }}",
               "source_first_frontstage_gate": "${{ steps.source-first-frontstage.outcome }}",
               "frontstage_regression_gate": "${{ steps.frontstage-regression.outcome }}",
@@ -391,6 +406,7 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
@@ -407,7 +423,7 @@ jobs:
 
       - name: Commit persistent assets to automation branch
         id: commit
-        if: always() && steps.existing-assets.outputs.skip != 'true' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-data.outcome == 'success')
+        if: always() && steps.existing-assets.outputs.skip != 'true' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-gate.outcome == 'success')
         shell: bash
         run: |
           set -euo pipefail
@@ -434,6 +450,7 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-follow-builders-data-gate.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md"
@@ -459,7 +476,7 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/topic-center.js"
           fi
 
-          if [ "${{ steps.builders-data.outcome }}" = "success" ]; then
+          if [ "${{ steps.builders-gate.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
           fi
 
@@ -492,7 +509,7 @@ jobs:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
           - Site data included only when dedupe, sync, source-first frontstage, frontstage regression and pre-commit gates passed.
-          - First-line viewpoints data is built independently and may be included even when the business-signal chain is blocked.
+          - First-line viewpoints data is built independently and may be included after its builders data gate passes, even when the business-signal chain is blocked.
           - Operations dashboard data included when the business-signal frontstage sync passes.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
@@ -558,7 +575,7 @@ jobs:
 
       - name: Auto-merge PR after gates pass
         id: auto-merge
-        if: always() && steps.pr.outputs.pr_number != '' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-data.outcome == 'success')
+        if: always() && steps.pr.outputs.pr_number != '' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-gate.outcome == 'success')
         env:
           GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
         shell: bash
@@ -676,6 +693,7 @@ jobs:
           require_business_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
           require_business_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
           require_success "First-line viewpoints data" "${{ steps.builders-data.outcome }}"
+          require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
             require_business_success "Site data sync" "${{ steps.site-data.outcome }}"

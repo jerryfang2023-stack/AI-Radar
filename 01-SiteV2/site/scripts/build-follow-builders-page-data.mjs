@@ -150,7 +150,11 @@ async function loadPreparedFeed() {
         maxBuffer: 80 * 1024 * 1024,
         env: { ...process.env, NO_COLOR: "1" },
       });
-      return JSON.parse(stdout);
+      return {
+        ...JSON.parse(stdout),
+        sourceRoute: "prepare-digest",
+        sourceErrors: [],
+      };
     } catch (error) {
       prepareError = error;
     }
@@ -159,12 +163,12 @@ async function loadPreparedFeed() {
   async function fetchRemoteFeed(name) {
     const response = await fetch(remoteFeeds[name], { signal: AbortSignal.timeout(20000) });
     if (!response.ok) throw new Error(`Failed to fetch follow-builders ${name} feed: ${response.status}`);
-    return response.json();
+    return { payload: await response.json(), route: `remote-${name}` };
   }
 
   async function readLocalOrRemote(name) {
     const localFile = path.join(skillDir, `feed-${name}.json`);
-    if (existsSync(localFile)) return JSON.parse(await readFile(localFile, "utf8"));
+    if (existsSync(localFile)) return { payload: JSON.parse(await readFile(localFile, "utf8")), route: `local-${name}` };
     return fetchRemoteFeed(name);
   }
 
@@ -181,13 +185,17 @@ async function loadPreparedFeed() {
     }
     throw error;
   }
-  const x = typeof xRaw === "string" ? JSON.parse(xRaw) : xRaw;
-  const podcasts = typeof podcastRaw === "string" ? JSON.parse(podcastRaw) : podcastRaw;
+  const xPayload = xRaw.payload ?? xRaw;
+  const podcastPayload = podcastRaw.payload ?? podcastRaw;
+  const x = typeof xPayload === "string" ? JSON.parse(xPayload) : xPayload;
+  const podcasts = typeof podcastPayload === "string" ? JSON.parse(podcastPayload) : podcastPayload;
   return {
     status: "ok",
     generatedAt: new Date().toISOString(),
     x: x.x || [],
     podcasts: podcasts.podcasts || [],
+    sourceRoute: [xRaw.route, podcastRaw.route].filter(Boolean).join("+") || "feed-fallback",
+    sourceErrors: prepareError ? [`prepare-digest: ${prepareError.message}`] : [],
     stats: {
       xBuilders: x.stats?.xBuilders || x.x?.length || 0,
       totalTweets: x.stats?.totalTweets || 0,
@@ -260,6 +268,8 @@ function normalize(feed, trackedSources) {
       feedGeneratedAt: feed.stats?.feedGeneratedAt || null,
       platform: "other",
       sourceSkill: "follow-builders",
+      sourceRoute: feed.sourceRoute || "unknown",
+      sourceErrors: feed.sourceErrors || [],
       sourcePolicy: "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL.",
     },
     stats: {

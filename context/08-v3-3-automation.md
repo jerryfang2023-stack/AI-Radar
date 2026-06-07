@@ -28,15 +28,16 @@ Execution order:
 6. Run Pool-to-Card dedupe and gates.
 7. Build business-signal data: `01-SiteV2/site/data/v3-data-observation-desk.json`.
 8. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`. This route is independent and may persist even if the business-signal Raw / Pool / Card chain is blocked.
-9. Build operations dashboard data: `pipeline-dashboard.json/js`.
-10. Build topic-center data.
-11. Run source-first and frontstage regression gates.
-12. Write the persistent asset manifest.
-13. Push `automation/daily-assets-<date>`.
-14. Create or update the PR.
-15. Auto-merge or enable auto-merge after gates pass.
-16. Deploy through GitHub Pages after `main` updates.
-17. Send Hermes / Feishu brief when webhook is configured.
+9. Run the first-line viewpoint data gate: `agent-workflow/tools/assert-follow-builders-data.mjs`.
+10. Build operations dashboard data: `pipeline-dashboard.json/js`.
+11. Build topic-center data.
+12. Run source-first and frontstage regression gates.
+13. Write the persistent asset manifest.
+14. Push `automation/daily-assets-<date>`.
+15. Create or update the PR.
+16. Auto-merge or enable auto-merge after gates pass.
+17. Deploy through GitHub Pages after `main` updates.
+18. Send Hermes / Feishu brief when webhook is configured.
 
 ## GitHub Pages Deployment
 
@@ -90,6 +91,25 @@ powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/local-s
 If the follow-builders refresh fails but a previous generated `follow-builders-daily.json` exists, the builder keeps the previous data and records `fallbackUsed=true` in `meta`. This prevents the independent First-Line Viewpoints page from failing only because a feed endpoint is temporarily unavailable.
 
 This lets both local runs and GitHub runners build the First-Line Viewpoints page.
+
+## First-Line Viewpoint Quality Gate
+
+Gate script:
+
+```powershell
+node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
+```
+
+The gate checks:
+
+- builders data JSON exists and is fresh;
+- remarks and builders counts meet the daily floor;
+- every remark has an original URL and no duplicate id / URL;
+- every remark has at least one `opinion`, one `track`, and one `source` formal tag from `agent-workflow/product/tag-taxonomy.md`;
+- fallback data is allowed only when it remains fresh and records `fallbackReason`;
+- business-signal fields such as Raw / Pool refs, relationship graph, or trend candidates are not present.
+
+The persistent workflow may stage `follow-builders-daily.json` only after this gate passes.
 
 ## Not Done
 

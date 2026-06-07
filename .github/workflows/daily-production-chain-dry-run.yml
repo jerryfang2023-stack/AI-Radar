@@ -98,6 +98,7 @@ jobs:
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
+          node --check agent-workflow/tools/assert-follow-builders-data.mjs
           node --check agent-workflow/tools/run-trend-candidate-decision.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
@@ -194,6 +195,17 @@ jobs:
           node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-builders-data.log"
 
+      - name: Run first-line viewpoints data gate
+        id: builders-gate
+        if: steps.builders-data.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-follow-builders-data.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-builders-gate.log"
+
       - name: Build V3 site data after gates pass
         id: site-sync
         if: steps.trend.outcome == 'success'
@@ -220,6 +232,7 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-downstream-assets-stale.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-trend-candidate-decision*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-no-trend-candidate-decision.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
@@ -258,6 +271,7 @@ jobs:
           require_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
           require_success "Trend candidate / no-decision shell" "${{ steps.trend.outcome }}"
           require_success "First-line viewpoints data" "${{ steps.builders-data.outcome }}"
+          require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
           require_success "Site data sync" "${{ steps.site-sync.outcome }}"
 
           if [ "$fail" -ne 0 ]; then
