@@ -116,6 +116,16 @@
     `).join("");
   }
 
+  function renderPageTitle() {
+    const date = $("[data-viewpoint-date]");
+    if (!date) return;
+    const latestRemarkDate = allRemarks()
+      .map((item) => item.date)
+      .filter(Boolean)
+      .sort((a, b) => b.localeCompare(a))[0];
+    date.textContent = fmtDate(latestRemarkDate || state.payload?.meta?.generatedAt);
+  }
+
   function isGenericBuilderTopic(value = "") {
     return /^Builder\s/iu.test(String(value || ""));
   }
@@ -342,6 +352,7 @@
   }
 
   function renderAll() {
+    renderPageTitle();
     renderMeta();
     renderStats();
     renderBuilders();

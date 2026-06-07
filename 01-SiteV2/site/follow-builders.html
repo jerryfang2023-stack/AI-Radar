@@ -21,7 +21,12 @@
   </header>
 
   <main class="builder-shell">
-    <section class="builder-controls" aria-label="筛选 Builder 言论">
+    <section class="builder-workbench" aria-labelledby="viewpoint-title">
+      <div class="builder-title-block">
+        <p class="builder-kicker">First-Line Viewpoints</p>
+        <h1 id="viewpoint-title">一线观点 <span class="workbench-summary" data-viewpoint-date>读取中</span></h1>
+      </div>
+      <div class="builder-controls" aria-label="筛选 Builder 言论">
       <label>
         <span>关键词</span>
         <input type="search" data-search placeholder="搜索人物、公司、主题或原文">
@@ -42,6 +47,7 @@
           <option value="podcast">Podcast</option>
         </select>
       </label>
+      </div>
     </section>
 
     <section class="builder-board" aria-label="Builder 言论列表">
