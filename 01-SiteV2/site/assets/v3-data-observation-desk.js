@@ -56,9 +56,7 @@
     if (state.displayMode !== "core") return "今日 Top10";
     const date = selectedDate();
     const items = corePoolCards().filter((card) => card.date === date);
-    const linked = items.filter((card) => card.linkedCardId || card.type === "signal_card").length;
-    const pending = Math.max(items.length - linked, 0);
-    return `Core Pool ${items.length}（已成卡${linked}/候选${pending}）`;
+    return `Core Pool ${items.length}`;
   }
 
   function availableDates() {
@@ -208,9 +206,23 @@
 
   function valueText(card, fact = "") {
     const text = cleanJudgmentText(card.frontstageValueDescription || card.summary || "");
-    if (!text || isWeakFact(text)) return "这条材料可用于补充当日 AI 商业变化的来源和背景。";
-    if (fact && textRepeatsAny(text, [fact])) return "这条材料可用于补充当日 AI 商业变化的来源和背景。";
+    if (!text || isWeakFact(text)) return "";
+    if (fact && textRepeatsAny(text, [fact])) return "";
     return compactText(text, 220);
+  }
+
+  function visibleFragmentText(card, existing = []) {
+    const text = cleanJudgmentText(card.visibleFragment || "");
+    if (!text || isWeakFact(text)) return "";
+    if (textRepeatsAny(text, existing.filter(Boolean), 0.72)) return "";
+    return compactText(text, 420);
+  }
+
+  function findDetailCard(id = "") {
+    return [
+      ...(state.payload.cards || []),
+      ...(state.payload.corePoolCandidates || []),
+    ].find((item) => item.id === id || item.linkedCardId === id);
   }
 
   function sourceText(card) {
@@ -824,7 +836,7 @@
       }
       const detailButton = event.target.closest("[data-open-detail]");
       if (detailButton) {
-        const card = state.payload.cards.find((item) => item.id === detailButton.dataset.openDetail);
+        const card = findDetailCard(detailButton.dataset.openDetail);
         if (card) renderDetail(card);
         return;
       }
@@ -1394,7 +1406,23 @@
     const fact = factText(card);
     const highlights = uniqueDetailLines(card.originalHighlights || [], [fact, card.title], 8);
     const value = valueText(card, fact);
+    const visibleFragment = visibleFragmentText(card, [fact, value, card.title, ...highlights]);
+    const evidenceLines = uniqueDetailLines([...highlights, visibleFragment], [fact, value, card.title], 6);
     const sourceLinks = card.sourceLinks || [];
+    const detailMainBlocks = [
+      value ? `
+        <div class="detail-block">
+          <h3>观察价值</h3>
+          <p>${safe(value)}</p>
+        </div>
+      ` : "",
+      evidenceLines.length ? `
+        <div class="detail-block">
+          <h3>原文证据</h3>
+          <ul>${evidenceLines.map((item) => `<li>${safe(item)}</li>`).join("")}</ul>
+        </div>
+      ` : "",
+    ].filter(Boolean).join("");
     root.innerHTML = `
       <h2 class="detail-title">${safe(card.title)}</h2>
       <div class="detail-source-row">
@@ -1406,22 +1434,7 @@
         <h3>新闻事实</h3>
         <p>${safe(fact)}</p>
       </div>
-      <div class="detail-main-grid">
-        ${highlights.length ? `
-          <div class="detail-block">
-          <h3>原文要点</h3>
-          <ul>${highlights.map((item) => `<li>${safe(item)}</li>`).join("")}</ul>
-          </div>
-        ` : ""}
-        <div class="detail-block">
-          <h3>价值描述</h3>
-          <p>${safe(value)}</p>
-        </div>
-      </div>
-      <div class="detail-block">
-        <h3>可见原文片段</h3>
-        <p>${safe(card.visibleFragment || "该 Card 暂缺完整证据链，请回到原始资产文件复核。")}</p>
-      </div>
+      ${detailMainBlocks ? `<div class="detail-main-grid">${detailMainBlocks}</div>` : ""}
       <details class="detail-aux">
         <summary>辅助信息</summary>
         <div class="detail-tags">${tagPills(card.displayTags || card.flatTags, 12)}</div>
@@ -1444,7 +1457,7 @@
     if (table) table.onclick = (event) => {
       const detailButton = event.target.closest("[data-open-detail]");
       if (detailButton) {
-        const card = state.payload.cards.find((item) => item.id === detailButton.dataset.openDetail);
+        const card = findDetailCard(detailButton.dataset.openDetail);
         if (card) renderDetail(card);
         return;
       }

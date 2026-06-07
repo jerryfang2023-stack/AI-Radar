@@ -1469,6 +1469,9 @@ function cardFromFile(file, category) {
     8
   );
   const sourceExcerpt = buildSourceExcerpt(raw, originalHighlights, rawDisplayTitle);
+  const visibleFragment = sourceExcerpt && !textRepeatsAny(sourceExcerpt, [sourceFact, title, ...originalHighlights], 0.72)
+    ? sourceExcerpt
+    : "";
   const sourceValue = sourceValueFromEvidence(category, originalHighlights, rawDisplayTitle, [sourceFact, title]);
 
   const sourceLinks = [
@@ -1498,7 +1501,7 @@ function cardFromFile(file, category) {
     summary: short(sourceValue || sourceFact, 260),
     translatedFact: short(sourceFact, 320),
     originalHighlights,
-    visibleFragment: sourceExcerpt || "",
+    visibleFragment,
     sourceLinks: [...new Set(sourceLinks)],
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
