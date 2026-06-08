@@ -1,6 +1,6 @@
 {
   "schema_version": "v3.3.1-source-registry-1.0",
-  "updated_at": "2026-06-08-rss-final",
+  "updated_at": "2026-06-08-podcasts",
   "owner": "Intelligence Engine Agent",
   "purpose": "Registry for WaveSight AI V3.3.1 daily source collection. Source levels identify source type and evidence boundary only; they are not value scores.",
   "source_levels": {
@@ -1117,6 +1117,144 @@
       "evidence_role": "fact-support",
       "enabled_default": true,
       "risk_note": "Deep analytical essays with unique perspective on AI/computation. Not daily content."
+    },
+    {
+      "source_id": "latent-space-podcast",
+      "name": "Latent Space",
+      "source_level": "M",
+      "source_type": "podcast",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://pod2txt.vercel.app/api/feed?url=https://api.substack.com/feed/podcast/1084089.rss",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI industry podcast: builder interviews, product deep-dives, investment theses.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path.",
+      "evidence_role": "lead-only",
+      "enabled_default": true,
+      "risk_note": "Podcast RSS; M-level discovery source. Episode excerpts may contain opinions, not verified facts."
+    },
+    {
+      "source_id": "training-data-podcast",
+      "name": "Training Data (Sequoia)",
+      "source_level": "M",
+      "source_type": "podcast",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://feeds.megaphone.fm/trainingdata",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI industry podcast: builder interviews, product deep-dives, investment theses.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path.",
+      "evidence_role": "lead-only",
+      "enabled_default": true,
+      "risk_note": "Podcast RSS; M-level discovery source. Episode excerpts may contain opinions, not verified facts."
+    },
+    {
+      "source_id": "no-priors-podcast",
+      "name": "No Priors",
+      "source_level": "M",
+      "source_type": "podcast",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://feeds.megaphone.fm/nopriors",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI industry podcast: builder interviews, product deep-dives, investment theses.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path.",
+      "evidence_role": "lead-only",
+      "enabled_default": true,
+      "risk_note": "Podcast RSS; M-level discovery source. Episode excerpts may contain opinions, not verified facts."
+    },
+    {
+      "source_id": "unsupervised-learning-podcast",
+      "name": "Unsupervised Learning (Redpoint)",
+      "source_level": "M",
+      "source_type": "podcast",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://feeds.simplecast.com/dOSE_bdP",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI industry podcast: builder interviews, product deep-dives, investment theses.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path.",
+      "evidence_role": "lead-only",
+      "enabled_default": true,
+      "risk_note": "Podcast RSS; M-level discovery source. Episode excerpts may contain opinions, not verified facts."
+    },
+    {
+      "source_id": "mad-podcast",
+      "name": "The MAD Podcast (Matt Turck)",
+      "source_level": "M",
+      "source_type": "podcast",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://anchor.fm/s/f2ee4948/podcast/rss",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI industry podcast: builder interviews, product deep-dives, investment theses.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path.",
+      "evidence_role": "lead-only",
+      "enabled_default": true,
+      "risk_note": "Podcast RSS; M-level discovery source. Episode excerpts may contain opinions, not verified facts."
+    },
+    {
+      "source_id": "ai-and-i-podcast",
+      "name": "AI & I by Every",
+      "source_level": "M",
+      "source_type": "podcast",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://anchor.fm/s/ed1f5584/podcast/rss",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI industry podcast: builder interviews, product deep-dives, investment theses.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path.",
+      "evidence_role": "lead-only",
+      "enabled_default": true,
+      "risk_note": "Podcast RSS; M-level discovery source. Episode excerpts may contain opinions, not verified facts."
     }
   ]
 }

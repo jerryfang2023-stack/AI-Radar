@@ -20,6 +20,7 @@ const skillDir = process.env.FOLLOW_BUILDERS_SKILL_DIR
 const prepareScript = path.join(skillDir, "scripts", "prepare-digest.js");
 const outputPath = path.join(siteRoot, "data", "follow-builders-daily.json");
 const builderBlogFeedPath = path.join(siteRoot, "..", "content", "11-databases", "builder-blog-feed.json");
+const builderPodcastFeedPath = path.join(siteRoot, "..", "content", "11-databases", "builder-podcast-feed.json");
 const tagIndex = buildTagIndex(readTagTaxonomy(process.cwd()));
 const remoteFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
@@ -191,6 +192,9 @@ async function loadPreparedFeed() {
         blogs: existsSync(builderBlogFeedPath)
           ? JSON.parse(await readFile(builderBlogFeedPath, "utf8")).blogs || []
           : [],
+        podcastsFromFeed: existsSync(builderPodcastFeedPath)
+          ? JSON.parse(await readFile(builderPodcastFeedPath, "utf8")).podcasts || []
+          : [],
       };
     } catch (error) {
       prepareError = error;
@@ -331,13 +335,13 @@ async function normalize(feed, trackedSources) {
     }))
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
-  const podcasts = (feed.podcasts || []).filter((item) => item.url).slice(0, 3).map((item) => ({
+  const podcasts = (feed.podcastsFromFeed || feed.podcasts || []).filter((item) => item.url).slice(0, 3).map((item) => ({
     source: "podcast",
     name: item.name,
     title: item.title,
     url: item.url,
     publishedAt: item.publishedAt,
-    excerpt: compact(item.transcript || "", 920),
+    excerpt: compact(item.excerpt || "", 920),
   }));
 
   return {
