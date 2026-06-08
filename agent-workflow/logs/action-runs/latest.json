@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-08T16:34:39.535Z",
+  "date": "2026-06-09",
+  "action": "Experience automation setup",
+  "action_status": "manual/archive",
+  "record_level": "required",
+  "trigger": "codex",
+  "status": "success",
+  "summary": "Created lightweight action logging and retrospective automation",
+  "contexts": [
+    "AGENTS.md",
+    "context/09-v3-3-current-action-index.md",
+    "context/context-index.md"
+  ],
+  "changed_files": [
+    "context/10-v3-3-experience-automation.md",
+    "agent-workflow/tools/record-action-run.mjs",
+    "agent-workflow/tools/write-action-retrospective.mjs",
+    "AGENTS.md",
+    "context/context-index.md",
+    "package.json"
+  ],
+  "outputs": [
+    "agent-workflow/logs/action-runs/2026-06-09.jsonl",
+    "agent-workflow/reports/2026-06-09-action-retrospective.md"
+  ],
+  "checks": [
+    "node --check record-action-run",
+    "node --check write-action-retrospective",
+    "context entry rg"
+  ],
+  "issues": [],
+  "risks": [],
+  "lessons": [
+    "Record facts automatically but keep rule promotion selective",
+    "Use required exception_only skip levels to control noise"
+  ],
+  "reusable_rules": [
+    "Record only actions that change state affect judgment expose risk or create reusable learning"
+  ],
+  "retired_flags": [],
+  "notes": []
+}

@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "record:action": "node agent-workflow/tools/record-action-run.mjs",
+    "summarize:actions": "node agent-workflow/tools/write-action-retrospective.mjs",
     "collect:community-intelligence": "node 01-SiteV2/site/scripts/collect-community-intelligence.mjs",
     "archive:community-intelligence": "node 01-SiteV2/site/scripts/archive-community-intelligence.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
