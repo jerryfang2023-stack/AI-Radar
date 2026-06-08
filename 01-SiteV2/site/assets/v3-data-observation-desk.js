@@ -16,6 +16,7 @@
       category: "all",
       tag: "all",
     },
+    relationshipZoom: 0.85,
   };
 
   const $ = (selector) => document.querySelector(selector);
@@ -585,14 +586,16 @@
       </div>
     `).join("");
     return `
-      <div class="relation-network-canvas">
+      <div class="relation-network-canvas" style="--relation-network-scale:${safe(state.relationshipZoom)}">
         <div class="relation-network-legend">
           <span>主体</span>
           <span>商业动作</span>
           <span>关键变量</span>
         </div>
-        <svg class="relation-network-lines" viewBox="0 0 1000 600" aria-hidden="true">${lines}</svg>
-        <div class="relation-network-nodes">${nodes}</div>
+        <div class="relation-network-stage">
+          <svg class="relation-network-lines" viewBox="0 0 1000 600" aria-hidden="true">${lines}</svg>
+          <div class="relation-network-nodes">${nodes}</div>
+        </div>
       </div>
     `;
   }
@@ -762,6 +765,7 @@
         <button type="button" class="relation-tag-button ${activeTag === tag.id ? "is-active" : ""}" data-rel-tag="${safe(tag.id)}">${safe(tag.label)}</button>
       `),
     ].join("");
+    const zoomPercent = Math.round(state.relationshipZoom * 100);
     root.innerHTML = `
       <section class="relationship-workbench">
         <div class="relationship-control-strip" aria-label="关系图谱筛选">
@@ -775,7 +779,15 @@
                 <p class="desk-kicker">Network</p>
                 <h3>关系网络</h3>
               </div>
-              <span>${safe(fmtDate(date))} · 30 日窗口</span>
+              <div class="relationship-panel-tools">
+                <span>${safe(fmtDate(date))} · 30 日窗口</span>
+                <div class="relation-zoom-controls" aria-label="关系网络缩放">
+                  <button type="button" data-network-zoom="-">-</button>
+                  <output>${safe(zoomPercent)}%</output>
+                  <button type="button" data-network-zoom="+">+</button>
+                  <button type="button" data-network-zoom="reset">重置</button>
+                </div>
+              </div>
             </div>
             ${renderRelationshipNetwork(cards)}
           </div>
@@ -822,6 +834,18 @@
       </section>
     `;
     root.onclick = (event) => {
+      const zoomButton = event.target.closest("[data-network-zoom]");
+      if (zoomButton) {
+        const action = zoomButton.dataset.networkZoom;
+        if (action === "reset") {
+          state.relationshipZoom = 0.85;
+        } else {
+          const delta = action === "+" ? 0.1 : -0.1;
+          state.relationshipZoom = Math.min(1.2, Math.max(0.6, Number((state.relationshipZoom + delta).toFixed(2))));
+        }
+        renderAll();
+        return;
+      }
       const typeButton = event.target.closest("[data-rel-category]");
       if (typeButton) {
         state.relationshipFilters.category = typeButton.dataset.relCategory || "all";
@@ -1486,7 +1510,7 @@
   }
 
   async function init() {
-    const response = await fetch("data/v3-data-observation-desk.json");
+    const response = await fetch("data/v3-data-observation-desk.json", { cache: "no-store" });
     state.payload = await response.json();
     $$("[data-active-date]").forEach((date) => {
       date.textContent = fmtDate(state.payload.meta.activeDate);

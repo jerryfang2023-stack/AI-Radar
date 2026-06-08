@@ -28,7 +28,8 @@ const categoryLabels = {
 const tagGroups = ["track", "function", "scenario", "customer", "evidence", "stage", "region", "source"];
 const tagDictionary = loadTagDictionary();
 const allowedTagIds = new Set(tagDictionary.keys());
-const internalFrontstageTagIds = new Set(["stage-watch"]);
+const internalFrontstageTagIds = new Set(["stage-watch", "core-pool"]);
+const internalFrontstageTagLabels = new Set(["core pool"]);
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
@@ -241,12 +242,25 @@ function isFrontstageDisplayTag(tag = "") {
 }
 
 function displayTags(tags) {
-  return allTags(tags)
+  return sanitizeDisplayTags(allTags(tags)
     .filter(isFrontstageDisplayTag)
     .map((id) => ({
       id,
       label: tagDictionary.get(id) || id,
-    }));
+    })));
+}
+
+function sanitizeDisplayTags(tags = []) {
+  return tags
+    .map((tag) => ({
+      id: tag.id || tag,
+      label: tag.label || tag.name || tag.id || tag,
+    }))
+    .filter((tag) => {
+      const id = String(tag.id || "").trim();
+      const label = String(tag.label || "").trim().toLowerCase();
+      return id && !internalFrontstageTagIds.has(id) && !internalFrontstageTagLabels.has(label);
+    });
 }
 
 function short(text = "", length = 180) {
@@ -1523,7 +1537,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         publishedAt: "",
         tags: {},
         flatTags: [],
-        displayTags: [{ id: "core-pool", label: "Core Pool" }, { id: category, label: categoryLabels[category] || category }],
+        displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
         summary: fact,
         translatedFact: fact,
         originalHighlights: [],
@@ -2336,7 +2350,7 @@ function graphIndexCard(card = {}) {
     largeVendorKey: card.largeVendorKey || "",
     tags: card.tags || {},
     flatTags: card.flatTags || [],
-    displayTags: (card.displayTags || []).map((tag) => ({ id: tag.id || tag, label: tag.label || tag.name || tag.id || tag })),
+    displayTags: sanitizeDisplayTags(card.displayTags || []),
     fact: card.translatedFact || card.visibleFragment || card.summary || "",
     evidencePoints: uniqueNonRepeatingLines([
       ...(card.originalHighlights || []),
@@ -2408,7 +2422,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
 
   return {
     meta: {
-      version: "V3.3.2-intelligence-graph-index",
+      version: "V3.3.2.1-intelligence-graph-index",
       generatedAt: payload.meta?.generatedAt || new Date().toISOString(),
       activeDate,
       purpose: "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
@@ -2492,7 +2506,7 @@ const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
-    version: "V3.3.2-community-intelligence-v1",
+    version: "V3.3.2.1-public-frontstage-polish",
     generatedAt: new Date().toISOString(),
     activeDate,
     source: "Signal Cards",

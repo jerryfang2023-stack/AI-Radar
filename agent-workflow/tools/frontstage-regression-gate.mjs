@@ -4,7 +4,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedVersion = "V3.3.2-community-intelligence-v1";
+const expectedVersion = "V3.3.2.1-public-frontstage-polish";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
@@ -129,21 +129,33 @@ function collectUnifiedNavigationIssues() {
   const issues = [];
   const pageFiles = [
     path.join(root, "01-SiteV2/site/v3-data-observation.html"),
+    path.join(root, "01-SiteV2/site/intelligence-map.html"),
     path.join(root, "01-SiteV2/site/follow-builders.html"),
+    path.join(root, "01-SiteV2/site/community-intelligence.html"),
   ];
   const required = [
     "assets/wavesight-nav.css",
     "v3-data-observation.html",
+    "intelligence-map.html",
     "follow-builders.html",
-    "operations-console.html#dashboard",
+    "community-intelligence.html",
     "商业信号",
+    "情报地图",
     "一线观点",
+    "社群情报",
+  ];
+  const forbidden = [
+    "operations-console.html#dashboard",
     "仪表盘",
+    "Dashboard",
   ];
   for (const file of pageFiles) {
     const text = read(file);
     for (const token of required) {
       if (!text.includes(token)) issues.push(issue(file, "missing_unified_navigation_token", token));
+    }
+    for (const token of forbidden) {
+      if (text.includes(token)) issues.push(issue(file, "public_navigation_exposes_dashboard", token));
     }
   }
   return issues;

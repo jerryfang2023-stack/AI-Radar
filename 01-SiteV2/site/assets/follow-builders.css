@@ -119,12 +119,14 @@ button {
   min-width: 0;
 }
 
-.builder-title-block h2 {
+.builder-title-block h1 {
+  max-width: 760px;
   margin: 0;
   color: var(--ink);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
+  font-family: var(--serif);
+  font-size: var(--gl-type-page-title-size, 44px);
+  font-weight: var(--gl-weight-title, 600);
+  line-height: var(--gl-type-page-title-line, 58px);
   letter-spacing: 0;
 }
 
@@ -745,9 +747,9 @@ button {
     line-height: 44px;
   }
 
-  .builder-title-block h2 {
-    font-size: 20px;
-    line-height: 30px;
+  .builder-title-block h1 {
+    font-size: 30px;
+    line-height: 42px;
   }
 
   .workbench-summary {

@@ -11,6 +11,7 @@ import {
   loadTranslationCache,
   saveTranslationCache,
   translateOpinionText,
+  visibleChineseTranslation,
 } from "../../../agent-workflow/tools/opinion-translation-utils.mjs";
 
 const execFileAsync = promisify(execFile);
@@ -159,6 +160,47 @@ const translationByTweetId = {
   "2062910976018854252": "证毕。这个 thread 下面的 quote tweets 说明我们必须做得更好。常青提醒：没有创始人，就没有 VC！https://t.co/vDQnupyZrs https://t.co/6KOdD47pHG",
   "2062899832965255443": "如何构建会检查自己工作、并随着时间改进的 AI skills：\n\n1. 给它上下文\n让 AI：“为这个重复任务创建一个 skill。这里有一些好输出示例，让它知道什么叫好。”\n\n2. 让它容易触发\n“按这个模式写清楚 skill 描述：当用户想要做某事时使用。”\n\n3. 加 evals\n“创建一个 evals md，包含 10 个 pass/fail 检查项，用来捕捉 skill 输出里的常见错误。”\n\n4. 加 memory\n“创建一个 memory md，用一句话记录过去使用这个 skill 时学到的经验。”\n\n5. 构建一个编辑 skills 的 skill\n“创建一个 skill，用来清理其他 skills，移除重复或过期指令、模糊规则和 AI 味废话。”\n\n完整演示在这里：https://t.co/u434ytNSZd",
 };
+
+const blogTitleTranslations = new Map([
+  ["Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸", "Codex Sites、微软模型与 Anthropic 成本争议"],
+  ["Farewell Ai2", "告别 Ai2"],
+  ["Opus 4.8", "Claude Opus 4.8"],
+  ["Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍", "Anthropic IPO 申请、OpenAI 登陆 AWS、Perplexity 搜索代码"],
+  ["Build tools, to build more", "构建工具，是为了构建更多东西"],
+  ["DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖", "DeepSeek 融资、Meta 模型延期与 Gemma 4 12B"],
+  ["Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems", "Import AI 459：AI 监管很难、蛋白质折叠模型的扩展定律，以及如何给 AI 灭绝风险定价"],
+  ["Open and closed models are on different exponentials", "开放模型与闭源模型处在不同的指数曲线上"],
+  ["Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀", "Anthropic Oceanus 泄露、ChatGPT Dreaming 与递归式自我改进"],
+  ["datasette-agent-edit 0.1a0", "datasette-agent-edit 0.1a0 发布"],
+  ["micropython-wasm 0.1a2", "micropython-wasm 0.1a2 发布"],
+  ["Running Python code in a sandbox with MicroPython and WASM", "用 MicroPython 和 WASM 在沙箱中运行 Python 代码"],
+  ["OpenAI Help: Lockdown Mode", "OpenAI 帮助文档：Lockdown Mode"],
+  ["Quoting Andreas Kling", "引用 Andreas Kling 的观点"],
+  ["AI enthusiasts are in a race against time, AI skeptics are in a race against entropy", "AI 乐观派在与时间赛跑，AI 怀疑派在与熵赛跑"],
+  ["Quoting Emanuel Maiberg, 404 Media", "引用 404 Media 的 Emanuel Maiberg"],
+  ["Uber Caps Usage of AI Tools Like Claude Code to Manage Costs", "Uber 为控制成本限制 Claude Code 等 AI 工具用量"],
+  ["Microsoft's new MAI models", "微软新的 MAI 模型"],
+  ["datasette-agent-micropython 0.1a0", "datasette-agent-micropython 0.1a0 发布"],
+  ["micropython-wasm 0.1a1", "micropython-wasm 0.1a1 发布"],
+  ["California Brown Pelican", "加州褐鹈鹕"],
+  ["Pasted File Editor", "粘贴文件编辑器"],
+  ["micropython-wasm 0.1a0", "micropython-wasm 0.1a0 发布"],
+  ["Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked", "黑客直接要求 Meta AI 授权访问高知名度 Instagram 账号，结果成功了"],
+  ["May 2026 newsletter", "2026 年 5 月通讯"],
+]);
+
+async function translateBlogTitle(title = "", url = "", cache = {}) {
+  const text = decodeText(title);
+  const staticTranslation = blogTitleTranslations.get(text);
+  if (visibleChineseTranslation(staticTranslation)) {
+    return { translation: staticTranslation, status: "translated", method: "static_blog_title" };
+  }
+  return translateOpinionText(text, {
+    cache,
+    cacheKey: `blog-title:${url || text}`,
+    allowNetwork: process.env.FOLLOW_BUILDERS_TRANSLATE_NETWORK !== "false",
+  });
+}
 
 async function translateTweet(tweet = {}, cache = {}) {
   const text = decodeText(tweet.text || "");
@@ -320,6 +362,8 @@ async function normalize(feed, trackedSources) {
         contentTranslation = translated.translation || content;
         contentTranslationStatus = translated.status || "translated";
       }
+      const titleTranslation = await translateBlogTitle(text, item.url || item.id || "", translationCache);
+      if (!completeOpinionTranslation(text, titleTranslation.translation || "")) continue;
       const topic = topicForText(text);
       remarks.push({
         id: item.id || item.url,
@@ -331,9 +375,9 @@ async function normalize(feed, trackedSources) {
         content,
         contentTranslation,
         contentTranslationStatus,
-        translation: text,
-        translationStatus: "original",
-        translationMethod: "none",
+        translation: titleTranslation.translation,
+        translationStatus: "translated",
+        translationMethod: titleTranslation.method,
         topic,
         formalTags: tagsForTopic(topic, "blog"),
         observation: observationForTopic(topic),
@@ -346,6 +390,7 @@ async function normalize(feed, trackedSources) {
       });
     }
   }
+  await saveTranslationCache(process.cwd(), translationCache);
 
   remarks.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
 

@@ -35,9 +35,8 @@ The business-signal and first-line viewpoint pages must share the same global na
 - intelligence map: `intelligence-map.html`
 - first-line viewpoints: `follow-builders.html`
 - community intelligence: `community-intelligence.html`
-- dashboard: `operations-console.html#dashboard`
 
-The public frontstage pages must use `assets/wavesight-nav.css` and keep the same topbar structure and height.
+The dashboard remains an operations backend page, but it is not exposed in the public frontstage navigation while the product is in this public-column review phase. The public frontstage pages must use `assets/wavesight-nav.css`, keep the same topbar structure and height, and align the four public column links to the right.
 
 First-Line Viewpoints is visually part of the same frontstage, but its data build is independent. Raw / Pool / Card failures in Business Signals must not block the builders page from refreshing or preserving its previous good data. The builders JSON may be persisted only after `assert-follow-builders-data.mjs` confirms freshness, minimum counts, original URLs, complete Chinese translations, formal tags, and fallback safety.
 

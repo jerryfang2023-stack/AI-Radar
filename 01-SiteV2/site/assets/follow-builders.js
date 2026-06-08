@@ -206,9 +206,7 @@
 
   function remarkTimelineItem(item) {
     const isBlog = item.source === "blog";
-    const displayContent = isBlog && item.contentTranslation
-      ? safe(compact(item.contentTranslation, 360))
-      : safe(compact(item.translation || item.text, 320));
+    const displayContent = safe(compact(item.translation || item.text, isBlog ? 180 : 320));
     return `
       <section class="timeline-item">
         <div class="timeline-head">
@@ -216,7 +214,6 @@
           ${isBlog ? '<span class="source-chip source-chip-blog">博客</span>' : ''}
         </div>
         ${tagChips(item)}
-        ${isBlog ? `<h4 class="remark-title">${safe(item.text)}</h4>` : ''}
         <p class="remark-text">${displayContent}</p>
         ${!isBlog ? `
         <div class="metric-row">
@@ -322,7 +319,7 @@
         ${isBlog ? '<span class="source-chip source-chip-blog">博客</span>' : ''}
       </div>
       ${tagChips(item, 8)}
-      ${isBlog ? `<h3 class="dialog-subtitle">${safe(item.text)}</h3>` : ''}
+      ${isBlog ? `<h3 class="dialog-subtitle">${safe(item.translation || item.text)}</h3>` : ''}
       ${isBlog && item.contentTranslation ? `
       <div class="dialog-block">
         <h3>中文摘要</h3>
@@ -380,7 +377,7 @@
   }
 
   async function init() {
-    const response = await fetch("data/follow-builders-daily.json");
+    const response = await fetch("data/follow-builders-daily.json", { cache: "no-store" });
     state.payload = await response.json();
     renderFilters();
     bindControls();
