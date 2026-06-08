@@ -205,21 +205,28 @@
   }
 
   function remarkTimelineItem(item) {
+    const isBlog = item.source === "blog";
+    const displayContent = isBlog && item.contentTranslation
+      ? safe(compact(item.contentTranslation, 360))
+      : safe(compact(item.translation || item.text, 320));
     return `
       <section class="timeline-item">
         <div class="timeline-head">
           <span class="timeline-time">${safe(fmtTime(item.createdAt))}</span>
+          ${isBlog ? '<span class="source-chip source-chip-blog">博客</span>' : ''}
         </div>
         ${tagChips(item)}
-        <p class="remark-text">${safe(compact(item.translation || item.text, 320))}</p>
+        ${isBlog ? `<h4 class="remark-title">${safe(item.text)}</h4>` : ''}
+        <p class="remark-text">${displayContent}</p>
+        ${!isBlog ? `
         <div class="metric-row">
           <span class="metric">Likes ${safe(item.likes || 0)}</span>
           <span class="metric">Reposts ${safe(item.retweets || 0)}</span>
           <span class="metric">Replies ${safe(item.replies || 0)}</span>
-        </div>
+        </div>` : ''}
         <div class="card-actions">
           <button class="text-button" type="button" data-open-remark="${safe(item.id)}">查看全文</button>
-          <a class="source-link" href="${safe(item.url)}" target="_blank" rel="noreferrer">打开原帖</a>
+          <a class="source-link" href="${safe(item.url)}" target="_blank" rel="noreferrer">${isBlog ? '阅读原文' : '打开原帖'}</a>
         </div>
       </section>
     `;
@@ -306,20 +313,32 @@
     const dialog = $("[data-dialog]");
     const root = $("[data-dialog-content]");
     if (!dialog || !root) return;
+    const isBlog = item.source === "blog";
     root.innerHTML = `
       <h2 class="dialog-title">${safe(item.name)}</h2>
       <div class="dialog-meta">
         <span>${safe(item.role || `${item.handle} on X`)}</span>
         <span>${safe(fmtDate(item.createdAt))}</span>
+        ${isBlog ? '<span class="source-chip source-chip-blog">博客</span>' : ''}
       </div>
       ${tagChips(item, 8)}
+      ${isBlog ? `<h3 class="dialog-subtitle">${safe(item.text)}</h3>` : ''}
+      ${isBlog && item.contentTranslation ? `
+      <div class="dialog-block">
+        <h3>中文摘要</h3>
+        <p>${safe(item.contentTranslation)}</p>
+      </div>
+      <div class="dialog-block">
+        <h3>原文</h3>
+        <p>${safe(item.content)}</p>
+      </div>` : `
       <p class="dialog-quote">${safe(item.translation || item.text)}</p>
       <div class="dialog-block">
         <h3>原文</h3>
         <p>${safe(item.text)}</p>
-      </div>
+      </div>`}
       <div class="dialog-block">
-        <a class="source-link" href="${safe(item.url)}" target="_blank" rel="noreferrer">查看原始链接</a>
+        <a class="source-link" href="${safe(item.url)}" target="_blank" rel="noreferrer">${isBlog ? '阅读原文' : '查看原始链接'}</a>
       </div>
     `;
     dialog.showModal();

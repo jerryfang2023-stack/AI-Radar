@@ -542,6 +542,39 @@ button {
   padding: 18px 0 0;
 }
 
+.source-chip-blog {
+  min-height: 22px;
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border: 1px solid rgba(47, 140, 87, .34);
+  border-radius: 999px;
+  background: rgba(47, 140, 87, .10);
+  color: var(--green);
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: .04em;
+  vertical-align: middle;
+}
+
+.remark-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--ink);
+}
+
+.dialog-subtitle {
+  margin: 0 0 14px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--blue);
+}
+
 .builder-rail .podcast-section {
   margin-top: 18px;
   padding-top: 18px;

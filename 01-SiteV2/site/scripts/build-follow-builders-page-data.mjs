@@ -295,11 +295,31 @@ async function normalize(feed, trackedSources) {
   }
   await saveTranslationCache(process.cwd(), translationCache);
 
-  // Add builder blog items (no translation needed, titles are self-explanatory)
+  // Add builder blog items with content extracted and translated
   for (const builder of feed.blogs || []) {
     for (const item of builder.tweets || []) {
       const text = decodeText(item.text || "");
       if (!text) continue;
+      // Extract plain text from HTML summary for article content
+      const rawContent = decodeText((item.summary || ""))
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&nbsp;/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+      const content = rawContent.length > 1200 ? `${rawContent.slice(0, 1199)}…` : rawContent;
+      // Translate content if substantive
+      let contentTranslation = "";
+      let contentTranslationStatus = "unavailable";
+      if (content.length > 20) {
+        const translated = await translateOpinionText(content, {
+          cache: translationCache,
+          cacheKey: `blog:${item.id || item.url}`,
+          allowNetwork: process.env.FOLLOW_BUILDERS_TRANSLATE_NETWORK !== "false",
+          preferFullTranslation: true,
+        });
+        contentTranslation = translated.translation || content;
+        contentTranslationStatus = translated.status || "translated";
+      }
       const topic = topicForText(text);
       remarks.push({
         id: item.id || item.url,
@@ -308,6 +328,9 @@ async function normalize(feed, trackedSources) {
         handle: builder.handle,
         role: builder.bio || "",
         text,
+        content,
+        contentTranslation,
+        contentTranslationStatus,
         translation: text,
         translationStatus: "original",
         translationMethod: "none",
