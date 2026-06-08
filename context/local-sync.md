@@ -8,6 +8,18 @@ last_updated: 2026-06-02
 
 Purpose: after GitHub daily automation merges a PR into `main`, this local Windows task can pull the updated assets into the Obsidian workspace when the computer is on.
 
+## What Syncs Into Obsidian
+
+The local workspace is the Obsidian vault. After a fast-forward sync from `origin/main`, the following updated assets become visible locally:
+
+- business-signal Raw / Pool / Card assets under `01-SiteV2/content/`
+- persistent business-signal Cards under `01-SiteV2/knowledge/01-Signal-Cards/`
+- first-line viewpoint data under `01-SiteV2/site/data/follow-builders-daily.json`
+- first-line viewpoint source notes under `01-SiteV2/content/07-points/`
+- frontstage and dashboard data under `01-SiteV2/site/data/`
+
+Business Signals and First-Line Viewpoints are synced as separate data streams. Builders content stays in the builders route and must not be treated as business-signal evidence.
+
 ## Scripts
 
 | Script | Purpose |
@@ -47,6 +59,24 @@ powershell -ExecutionPolicy Bypass -File agent-workflow/tools/install-local-sync
 ```powershell
 powershell -ExecutionPolicy Bypass -File agent-workflow/tools/local-sync-from-main.ps1
 ```
+
+If you need to refresh the local workspace immediately after a merge, run the manual sync command above. It only fast-forwards local `main`; it does not regenerate assets.
+
+## If New Data Sources Were Added
+
+When online monitoring adds or changes source pools, the local sync path still remains the same:
+
+1. The online automation ingests the new source.
+2. It generates or updates the corresponding `content/`, `knowledge/`, or `site/data/` assets.
+3. The merge lands on `main`.
+4. Local sync pulls the updated files into Obsidian.
+
+For the current V3.3 routes:
+
+- commercial signal sources are expected to land in the Raw / Pool / Card chain and then into `01-SiteV2/content/04-business-signals/` and `01-SiteV2/knowledge/01-Signal-Cards/`
+- builders sources are expected to land in the independent follow-builders chain and then into `01-SiteV2/site/data/follow-builders-daily.json` and `01-SiteV2/content/07-points/`
+
+If you need to refresh data locally before merge, run the relevant generation script first, then sync the merged `main` state afterward.
 
 ## Logs
 
