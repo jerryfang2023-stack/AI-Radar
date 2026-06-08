@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-07
+last_updated: 2026-06-08
 use_when:
   - large task startup
   - dispatch planning
@@ -11,23 +11,25 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.1 unified intelligence frontstage development.
+WaveSight AI is now in V3.3.2 unified intelligence frontstage development.
 
 ## Current Positioning
 
 - WaveSight AI is an Agent-driven AI business-intelligence system.
-- The current public frontstage has two active columns: business signals and first-line viewpoints.
+- The current public frontstage has four active columns: business signals, intelligence map, first-line viewpoints, and community intelligence.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.1 consolidates the frontstage version, formal tag taxonomy, business-signal release rules, and independent first-line viewpoint update route.
+- V3.3.2 adds Community Intelligence V1.0 as a first-class frontstage column, with logged-in community collection, dedupe, value sorting, and local Obsidian archive.
 
 ## Current Entries
 
 | Entry | File | Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, and trend candidates |
+| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph and intelligence map entry |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
+| Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
 
 ## Current Data Chain
@@ -50,6 +52,8 @@ External sources
 ```
 
 First-line viewpoints use the follow-builders / builders data route as an independent page. They are not evidence for business-signal Cards, the relationship graph, or trend candidates. Their daily data build must not be blocked by Raw / Pool / Card failures in the business-signal chain.
+
+Community Intelligence uses the logged-in scys.com / aipoju.com collection route as a separate frontstage column. Its materials are community-sourced leads and must not be treated as business-signal facts unless separately verified and promoted into the Raw / Pool / Card chain.
 
 ## Paused / Retired
 

@@ -42,8 +42,8 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: V3.3 unified intelligence frontstage.
-- Current frontstage: `01-SiteV2/site/v3-data-observation.html` and `01-SiteV2/site/follow-builders.html`.
+- Current stage: V3.3.2 unified intelligence frontstage.
+- Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
 - V2 website pages and old four-column output rules are retired.
@@ -71,10 +71,12 @@ First-line viewpoints are a separate builders column. They are useful for readin
 | Entry | File | Role |
 |---|---|---|
 | Business Signals / 商业信号 | `01-SiteV2/site/v3-data-observation.html` | daily Cards, relationship graph, trend candidates |
+| Intelligence Map / 情报地图 | `01-SiteV2/site/intelligence-map.html` | relationship graph and intelligence map |
 | First-Line Viewpoints / 一线观点 | `01-SiteV2/site/follow-builders.html` | independent builders viewpoints |
+| Community Intelligence / 社群情报 | `01-SiteV2/site/community-intelligence.html` | community-sourced cases, tool tactics, opportunities, and document links |
 | Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | operations backend |
 
-Business Signals and First-Line Viewpoints must share the same topbar structure and height.
+Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence must share the same topbar structure and height.
 
 ## Stopped Outputs
 
@@ -104,6 +106,7 @@ If an old rule conflicts with V3.3, delete or rebuild it instead of preserving c
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
 | `context/08-v3-3-automation.md` | V3.3 GitHub / site / Obsidian sync automation loop |
+| `context/09-v3-3-current-action-index.md` | V3.3.2 current action registry |
 | `context/context-index.md` | context router |
 
 ## Current Task Routes
@@ -148,6 +151,13 @@ Read:
 2. `context/02-vi-style.md`
 3. `context/frontstage-page-contracts.md`
 4. target page or script
+
+Field discipline:
+
+- Do not expose a frontstage page field unless it is necessary for user understanding or decision-making.
+- Keep auxiliary, diagnostic, operational, routing, threshold, gate, and backend-only fields in the backend unless the user confirms that the field has high commercial value for the frontstage.
+- Before adding a new visible field, first consider whether the same content can be presented by merging, renaming, tightening, or improving an existing field.
+- A new visible field should have clear commercial judgment value, source-backed content, and a distinct role that existing fields cannot cover.
 
 ## Conflict Order
 

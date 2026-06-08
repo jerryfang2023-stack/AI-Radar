@@ -85,16 +85,16 @@
   .wavesight-nav {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 5px;
   }
 
   .wavesight-nav a {
     min-width: 0;
     min-height: 38px;
-    padding: 3px 6px;
+    padding: 3px 4px;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .wavesight-nav a span {

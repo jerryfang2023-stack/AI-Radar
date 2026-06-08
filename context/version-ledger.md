@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-07
+last_updated: 2026-06-08
 use_when:
   - task startup
   - page change
@@ -18,31 +18,34 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.1-unified-intelligence-frontstage |
-| Version name | Unified Intelligence Frontstage |
+| Current version | V3.3.2-community-intelligence-v1 |
+| Version name | Unified Intelligence Frontstage + Community Intelligence V1.0 |
 | Version layer | Patch |
-| Release date | 2026-06-07 |
+| Release date | 2026-06-08 |
 | Product version | V3.3 |
-| Git tag | `v3.3.1-unified-intelligence-frontstage` |
-| Current entries | Business Signals / First-Line Viewpoints / Dashboard |
+| Git tag | `v3.3.2-community-intelligence-v1` |
+| Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence / Dashboard |
 
 ## Current Product Baseline
 
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
-- V3.3 has three entries: Business Signals, First-Line Viewpoints, and Dashboard.
+- V3.3 has five entries: Business Signals, Intelligence Map, First-Line Viewpoints, Community Intelligence, and Dashboard.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
 - First-Line Viewpoints uses the follow-builders / builders data chain as an independent page.
+- Community Intelligence uses the logged-in community collection route as an independent page and Obsidian archive stream.
 - Builders content must not enter business-signal Cards, relationship-graph evidence, or trend-candidate evidence.
 - Dashboard links to `operations-console.html` and keeps the existing operations backend.
 - Daily automation chain: Raw / Pool monitoring -> business-signal Cards -> business-signal data -> operations data -> PR / merge -> GitHub Pages -> local Obsidian sync.
-- First-Line Viewpoints has an independent daily data build and may persist separately when the business-signal chain is blocked.
+- First-Line Viewpoints and Community Intelligence have independent daily data builds and may persist separately when the business-signal chain is blocked.
 
 ## Current Pages
 
 | Page | File | Current Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | V3.3 main public page for daily Cards, relationship graph, trend candidates, and historical trend assets |
+| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph and intelligence map entry |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Builder Observation V1.0 merged into V3.3; shows builders public remarks, Chinese translations, people, and long-form interviews |
+| Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community Intelligence V1.0; logged-in community cases, AI tool tactics, business opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Existing operations backend |
 | Pipeline Dashboard | `01-SiteV2/site/pipeline-dashboard.html` | Production-chain dashboard, kept |
 | Admin | `01-SiteV2/site/admin.html` | Admin entry, kept |
@@ -70,6 +73,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 - Relationship Graph reverting to large prose cards instead of visual nodes and edges.
 - Trend module reverting to trend-report prose; current trend candidates only explain what the pattern is, where it appears, and evidence boundaries.
 - Business Signals and First-Line Viewpoints using different topbar structures or heights.
+- Community Intelligence showing duplicate keyword-hit posts, backend diagnostic fields, placeholder tags such as `待确认`, or visible internal scores.
 - GitHub daily chain only producing temporary artifacts without persisting Raw / Pool / Card / site data.
 
 ## Required Checks
@@ -93,6 +97,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|
+| `V3.3.2-freeze-community-intelligence-v1-20260608` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence / Dashboard | 2026-06-08 | V3.3.2-community-intelligence-v1 | Community Intelligence detached from navigation; repeated keyword-hit duplicates; visible internal scoring / diagnostic fields; placeholder tags like `待确认`; community posts treated as verified business-signal facts without source-first promotion; missing local Obsidian archive | syntax + collector syntax + archive syntax + nav consistency + visual smoke + GitHub Pages deploy |
 | `V3.3.1-freeze-tag-business-builders-automation-20260607` | Business Signals / First-Line Viewpoints / Dashboard | 2026-06-07 | V3.3.1-unified-intelligence-frontstage | V3.3.0 version drift; old non-taxonomy relation tags; Raw 80-150 / Pool 20-40 execution targets; builders data blocked behind business-signal gates; builders feed failure taking down the independent page | syntax + site data build + builders data build + tag gate + source-first + frontstage regression |
 | `V3.3.0-freeze-unified-intelligence-frontstage-20260606` | Business Signals / First-Line Viewpoints / Dashboard | 2026-06-06 | V3.3.0-unified-intelligence-frontstage | builders detached from navigation; mismatched topbars; builders mixed into business signals; automation not updating builders or ops data; missing local Obsidian sync loop | syntax + site data build + builders data build + ops data sync + source-first + frontstage regression |
 | `V3.2.0-freeze-intelligence-graph-trend-20260606` | Data Observation Desk | 2026-06-06 | V3.2.0-intelligence-graph-trend | viewpoints entering graph; prose-stacked relation cards; trend-report prose; internal status as trend; V2 page logic | upgraded |
@@ -104,7 +109,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Summary | Current Status |
 |---|---|---|
-| V3.3.1-unified-intelligence-frontstage | Consolidates frontstage version, formal tag taxonomy, business-signal rules and independent builders automation; builders data no longer waits behind business-signal gates | current |
+| V3.3.2-community-intelligence-v1 | Adds Community Intelligence V1.0 as a frontstage column; includes logged-in community collection, dedupe, value sorting, clean card display, document links, and local Obsidian archive; navigation is unified across frontstage pages | current |
+| V3.3.1-unified-intelligence-frontstage | Consolidates frontstage version, formal tag taxonomy, business-signal rules and independent builders automation; builders data no longer waits behind business-signal gates | upgraded |
 | V3.3.0-unified-intelligence-frontstage | Merged V3.2 Business Signals and Builder Observation V1.0; unified navigation as Business Signals / First-Line Viewpoints / Dashboard; daily automation updates business signals, first-line viewpoints, operations backend, and local sync loop | upgraded |
 | V3.2.0-intelligence-graph-trend | Relationship graph became node-based; trend candidates explain pattern, evidence, and boundary | upgraded |
 | V3.1.1-source-first-frontstage | Frontstage content must return to Raw / Pool / original source | upgraded |
