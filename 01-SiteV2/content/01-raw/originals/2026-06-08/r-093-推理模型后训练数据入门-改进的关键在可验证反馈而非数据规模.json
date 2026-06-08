@@ -1,0 +1,242 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-093",
+  "title": "推理模型后训练数据入门：改进的关键在可验证反馈而非数据规模",
+  "original_url": "https://x.com/rohanpaul_ai/status/2063683836685565998",
+  "canonical_url": "https://x.com/rohanpaul_ai/status/2063683836685565998",
+  "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-07T18:05:42.000Z",
+  "collected_at": "2026-06-08T00:36:49.125Z",
+  "language": "mixed",
+  "full_text": "论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。",
+  "clean_text": "论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-08/r-093-推理模型后训练数据入门-改进的关键在可验证反馈而非数据规模.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-08/r-093-推理模型后训练数据入门-改进的关键在可验证反馈而非数据规模.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "summary-only-low-readable-body",
+  "extraction_quality": "failed",
+  "extraction_method": "none",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "readability_score": 0,
+    "text_length": 0,
+    "paragraph_count": 0,
+    "sentence_count": 0,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 1,
+    "method": "none"
+  },
+  "has_full_text": false,
+  "content_length": 248,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "caf743c711d5fbec",
+    "missing": [
+      "missing_full_text"
+    ]
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "missing_full_text",
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "capture_scope": "aihot_visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "推理模型后训练数据入门：改进的关键在可验证反馈而非数据规模",
+    "discovery_summary": "论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。",
+    "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+    "origin_url": "https://x.com/rohanpaul_ai/status/2063683836685565998",
+    "discovered_at": "2026-06-08T00:27:28.193Z",
+    "rank_on_page": 51,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "a1444ed2a7359be0",
+  "content_hash": "caf743c711d5fbec",
+  "full_text_hash": "caf743c711d5fbec",
+  "semantic_hash": "0192eba167cea7be",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-07T18:05:42.000Z",
+  "last_seen_at": "2026-06-08T00:36:49.125Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "Rohan Paul (@rohanpaul_ai)"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [],
+    "numbers": [],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。",
+      "论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。",
+      "推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 1,
+    "case_richness": 2,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "discard"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索",
+    "没有成本、收入、采用率或市场规模数字",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 推理模型后训练数据入门：改进的关键在可验证反馈而非数据规模\n\n- raw_id: R-093\n- original_url: https://x.com/rohanpaul_ai/status/2063683836685565998\n- source_name: X：Rohan Paul (@rohanpaul_ai)\n- collected_at: 2026-06-08T00:36:49.125Z\n\n## clean_text\n\n论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。\n\n## full_text\n\n论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。\n\n## extraction_diagnostics\n\n- extraction_method: none\n- readability_score: 0\n- fetch_status: summary-only-low-readable-body\n- extraction_quality: failed\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / high] 论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。智能体数据应保留失败动作、重试、恢复、状态差异和终端检查等\"混乱\"信息，因为学习信号常在其中。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] 论文指出，更好的推理模型更依赖可验证的训练证据，而非原始数据规模。\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 推理数据的关键不是简单问答对，而是提供答案、步骤、工具操作或完整尝试好坏判断的反馈信号。\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 每个训练样本应描述为包含任务、模型行为、检查信号和元数据的记录。\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 研究者按检查方式分类：数学和代码用精确规则、智能体工具用环境检查，无精确检查器时用人类或模型判断。\n6. [company_action / daily_observation, heatmap, change, case, trend / high] 常见误区包括：长推理链可能虚假、更难样例对部分模型无效、更大数据集仍可能缺失关键覆盖。\n"
+}

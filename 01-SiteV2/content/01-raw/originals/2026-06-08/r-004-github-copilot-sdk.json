@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-004",
+  "title": "github/copilot-sdk",
+  "original_url": "https://github.com/github/copilot-sdk?WT.mc_id=AI-MVP-5003172",
+  "canonical_url": "https://github.com/github/copilot-sdk?WT.mc_id=AI-MVP-5003172",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-08T00:36:48.883Z",
+  "language": "mixed",
+  "full_text": "github\ncopilot-sdk\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.2k\nStar\n9.4k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n636 Commits\n636 Commits\n.devcontainer\n.devcontainer\n.githooks\n.githooks\n.github\n.github\n.vscode\n.vscode\nassets\nassets\ndocs\ndocs\ndotnet\ndotnet\ngo\ngo\njava\njava\nnodejs\nnodejs\npython\npython\nrust\nrust\nscripts\nscripts\ntest\ntest\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\njustfile\njustfile\nsdk-protocol-version.json\nsdk-protocol-version.json\nView all files\nRepository files navigation\nGitHub Copilot CLI SDKs\nAgents for every app.\nEmbed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust.\nThe GitHub Copilot SDK exposes the same engine behind Copilot CLI: a production-tested agent runtime you can invoke programmatically. No need to build your own orchestration—you define agent behavior, Copilot handles planning, tool invocation, file edits, and more.\nAvailable SDKs\nSDK\nLocation\nCookbook\nInstallation\nNode.js / TypeScript\nnodejs/\nCookbook\nnpm install @github/copilot-sdk\nPython\npython/\nCookbook\npip install github-copilot-sdk\nGo\ngo/\nCookbook\ngo get github.com/github/copilot-sdk/go\n.NET\ndotnet/\nCookbook\ndotnet add package GitHub.Copilot.SDK\nRust\nrust/\ncargo add github-copilot-sdk\nJava\njava/\nCookbook\nMaven coordinates\ncom.github:copilot-sdk-java\nSee instructions for Maven and Gradle\nSee the individual SDK READMEs for installation, usage examples, and API reference.\nGetting Started\nFor a complete walkthrough, see the Getting Started Guide .\nQuick steps:\n(Optional) Install the Copilot CLI\nFor Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically and no separate installation is required.\nFor Go, Java, and Rust, install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nInstall your preferred SDK using the commands above.\nSee the SDK README for usage examples and API documentation.\nArchitecture\nAll SDKs communicate with the Copilot CLI server via JSON-RPC:\nYour Application\nSDK Client\n↓ JSON-RPC\nCopilot CLI (server mode)\nThe SDK manages the CLI process lifecycle automatically. You can also connect to an external CLI server—see the Getting Started Guide for details on running the CLI in server mode.\nFAQ\nDo I need a GitHub Copilot subscription to use the SDK?\nYes, a GitHub Copilot subscription is required to use the GitHub Copilot SDK, unless you are using BYOK (Bring Your Own Key) . With BYOK, you can use the SDK without GitHub authentication by configuring your own API keys from supported LLM providers. For standard usage (non-BYOK), refer to the GitHub Copilot pricing page , which includes a free tier with limited usage.\nHow does billing work for SDK usage?\nBilling for the GitHub Copilot SDK is based on the same model as the Copilot CLI, with each prompt being counted towards your premium request quota. For more information on premium requests, see Requests in GitHub Copilot .\nDoes it support BYOK (Bring Your Own Key)?\nYes, the GitHub Copilot SDK supports BYOK (Bring Your Own Key). You can configure the SDK to use your own API keys from supported LLM providers (e.g. OpenAI, Azure AI Foundry, Anthropic) to access models through those providers. See the BYOK documentation for setup instructions and examples.\nNote: BYOK uses key-based authentication only. Microsoft Entra ID (Azure AD), managed identities, and third-party identity providers are not supported.\nWhat authentication methods are supported?\nThe SDK supports multiple authentication methods:\nGitHub signed-in user - Uses stored OAuth credentials from copilot CLI login\nOAuth GitHub App - Pass user tokens from your GitHub OAuth app\nEnvironment variables - COPILOT_GITHUB_TOKEN , GH_TOKEN , GITHUB_TOKEN\nBYOK - Use your own API keys (no GitHub auth required)\nSee the Authentication documentation for details on each method.\nDo I need to install the Copilot CLI separately?\nNo — for Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically as a dependency. You do not need to install it separately.\nFor Go, Java, and Rust SDKs, the CLI is not bundled by default. Install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nAdvanced: You can override the CLI binary or connect to an external server. See the individual SDK README for language-specific options.\nWhat tools are enabled by default?\nBy default, the SDK exposes the Copilot CLI's first-party tools, similar to running the CLI with --allow-all . Tool execution is still governed by each SDK's permission handler, so applications can approve, deny, or customize tool calls. You can customize tool availability by configuring the SDK client options to enable and disable specific tools. Refer to the individual SDK documentation for details on tool configuration and to the Copilot CLI documentation for the list of available tools.\nCan I use custom agents, skills or tools?\nYes, the GitHub Copilot SDK allows you to define custom agents, skills, and tools. You can extend the functionality of the agents by implementing your own logic and integrating additional tools as needed. Refer to the SDK documentation of your preferred language for more details.\nAre there instructions or SDK guidance for Copilot to speed up development?\nYes, check out the custom instructions and SDK-specific guidance:\nNode.js / TypeScript\nPython\n.NET\nGo\nRust (SDK guidance; custom instructions not yet published)\nJava\nWhat models are supported?\nAll models available via Copilot CLI are supported in the SDK. The SDK also exposes a method which will return the models available so they can be accessed at runtime.\nIs the SDK production-ready?\nThe GitHub Copilot SDK is generally available and follows semantic versioning. See CHANGELOG.md for release notes.\nHow do I report issues or request features?\nPlease use the GitHub Issues page to report bugs or request new features. We welcome your feedback to help improve the SDK.\nQuick Links\nDocumentation – Full documentation index\nGetting Started – Tutorial to get up and running\nSetup Guides – Architecture, deployment, and scaling\nAuthentication – GitHub OAuth, BYOK, and more\nFeatures – Hooks, custom agents, MCP, skills, and more\nTroubleshooting – Common issues and solutions\nCookbook – Practical recipes for common tasks across all languages\nMore Resources – Additional examples, tutorials, and community resources\nUnofficial, Community-maintained SDKs\n⚠️ Disclaimer: These are unofficial, community-driven SDKs and they are not supported by GitHub. Use at your own risk.\nSDK\nLocation\nClojure\ncopilot-community-sdk/copilot-sdk-clojure\nC++\n0xeb/copilot-sdk-cpp\nContributing\nSee CONTRIBUTING.md for contribution guidelines.\nLicense\nMIT\nAbout\nMulti-platform SDK for integrating GitHub Copilot Agent into apps and services\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n9.4k\nstars\nWatchers\n90\nwatching\nForks\n1.2k\nforks\nReport repository\nReleases\n67\nGitHub Copilot SDK for Java 1.0.0\nLatest\nJun 2, 2026\n+ 66 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJava\n27.6%\nRust\n23.4%\nTypeScript\n17.3%\nC#\n11.4%\nGo\n10.5%\nPython\n9.5%\nOther\n0.3%",
+  "clean_text": "github\ncopilot-sdk\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.2k\nStar\n9.4k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n636 Commits\n636 Commits\n.devcontainer\n.devcontainer\n.githooks\n.githooks\n.github\n.github\n.vscode\n.vscode\nassets\nassets\ndocs\ndocs\ndotnet\ndotnet\ngo\ngo\njava\njava\nnodejs\nnodejs\npython\npython\nrust\nrust\nscripts\nscripts\ntest\ntest\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\njustfile\njustfile\nsdk-protocol-version.json\nsdk-protocol-version.json\nView all files\nRepository files navigation\nGitHub Copilot CLI SDKs\nAgents for every app.\nEmbed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust.\nThe GitHub Copilot SDK exposes the same engine behind Copilot CLI: a production-tested agent runtime you can invoke programmatically. No need to build your own orchestration—you define agent behavior, Copilot handles planning, tool invocation, file edits, and more.\nAvailable SDKs\nSDK\nLocation\nCookbook\nInstallation\nNode.js / TypeScript\nnodejs/\nCookbook\nnpm install @github/copilot-sdk\nPython\npython/\nCookbook\npip install github-copilot-sdk\nGo\ngo/\nCookbook\ngo get github.com/github/copilot-sdk/go\n.NET\ndotnet/\nCookbook\ndotnet add package GitHub.Copilot.SDK\nRust\nrust/\ncargo add github-copilot-sdk\nJava\njava/\nCookbook\nMaven coordinates\ncom.github:copilot-sdk-java\nSee instructions for Maven and Gradle\nSee the individual SDK READMEs for installation, usage examples, and API reference.\nGetting Started\nFor a complete walkthrough, see the Getting Started Guide .\nQuick steps:\n(Optional) Install the Copilot CLI\nFor Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically and no separate installation is required.\nFor Go, Java, and Rust, install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nInstall your preferred SDK using the commands above.\nSee the SDK README for usage examples and API documentation.\nArchitecture\nAll SDKs communicate with the Copilot CLI server via JSON-RPC:\nYour Application\nSDK Client\n↓ JSON-RPC\nCopilot CLI (server mode)\nThe SDK manages the CLI process lifecycle automatically. You can also connect to an external CLI server—see the Getting Started Guide for details on running the CLI in server mode.\nFAQ\nDo I need a GitHub Copilot subscription to use the SDK?\nYes, a GitHub Copilot subscription is required to use the GitHub Copilot SDK, unless you are using BYOK (Bring Your Own Key) . With BYOK, you can use the SDK without GitHub authentication by configuring your own API keys from supported LLM providers. For standard usage (non-BYOK), refer to the GitHub Copilot pricing page , which includes a free tier with limited usage.\nHow does billing work for SDK usage?\nBilling for the GitHub Copilot SDK is based on the same model as the Copilot CLI, with each prompt being counted towards your premium request quota. For more information on premium requests, see Requests in GitHub Copilot .\nDoes it support BYOK (Bring Your Own Key)?\nYes, the GitHub Copilot SDK supports BYOK (Bring Your Own Key). You can configure the SDK to use your own API keys from supported LLM providers (e.g. OpenAI, Azure AI Foundry, Anthropic) to access models through those providers. See the BYOK documentation for setup instructions and examples.\nNote: BYOK uses key-based authentication only. Microsoft Entra ID (Azure AD), managed identities, and third-party identity providers are not supported.\nWhat authentication methods are supported?\nThe SDK supports multiple authentication methods:\nGitHub signed-in user - Uses stored OAuth credentials from copilot CLI login\nOAuth GitHub App - Pass user tokens from your GitHub OAuth app\nEnvironment variables - COPILOT_GITHUB_TOKEN , GH_TOKEN , GITHUB_TOKEN\nBYOK - Use your own API keys (no GitHub auth required)\nSee the Authentication documentation for details on each method.\nDo I need to install the Copilot CLI separately?\nNo — for Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically as a dependency. You do not need to install it separately.\nFor Go, Java, and Rust SDKs, the CLI is not bundled by default. Install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nAdvanced: You can override the CLI binary or connect to an external server. See the individual SDK README for language-specific options.\nWhat tools are enabled by default?\nBy default, the SDK exposes the Copilot CLI's first-party tools, similar to running the CLI with --allow-all . Tool execution is still governed by each SDK's permission handler, so applications can approve, deny, or customize tool calls. You can customize tool availability by configuring the SDK client options to enable and disable specific tools. Refer to the individual SDK documentation for details on tool configuration and to the Copilot CLI documentation for the list of available tools.\nCan I use custom agents, skills or tools?\nYes, the GitHub Copilot SDK allows you to define custom agents, skills, and tools. You can extend the functionality of the agents by implementing your own logic and integrating additional tools as needed. Refer to the SDK documentation of your preferred language for more details.\nAre there instructions or SDK guidance for Copilot to speed up development?\nYes, check out the custom instructions and SDK-specific guidance:\nNode.js / TypeScript\nPython\n.NET\nGo\nRust (SDK guidance; custom instructions not yet published)\nJava\nWhat models are supported?\nAll models available via Copilot CLI are supported in the SDK. The SDK also exposes a method which will return the models available so they can be accessed at runtime.\nIs the SDK production-ready?\nThe GitHub Copilot SDK is generally available and follows semantic versioning. See CHANGELOG.md for release notes.\nHow do I report issues or request features?\nPlease use the GitHub Issues page to report bugs or request new features. We welcome your feedback to help improve the SDK.\nQuick Links\nDocumentation – Full documentation index\nGetting Started – Tutorial to get up and running\nSetup Guides – Architecture, deployment, and scaling\nAuthentication – GitHub OAuth, BYOK, and more\nFeatures – Hooks, custom agents, MCP, skills, and more\nTroubleshooting – Common issues and solutions\nCookbook – Practical recipes for common tasks across all languages\nMore Resources – Additional examples, tutorials, and community resources\nUnofficial, Community-maintained SDKs\n⚠️ Disclaimer: These are unofficial, community-driven SDKs and they are not supported by GitHub. Use at your own risk.\nSDK\nLocation\nClojure\ncopilot-community-sdk/copilot-sdk-clojure\nC++\n0xeb/copilot-sdk-cpp\nContributing\nSee CONTRIBUTING.md for contribution guidelines.\nLicense\nMIT\nAbout\nMulti-platform SDK for integrating GitHub Copilot Agent into apps and services\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n9.4k\nstars\nWatchers\n90\nwatching\nForks\n1.2k\nforks\nReport repository\nReleases\n67\nGitHub Copilot SDK for Java 1.0.0\nLatest\nJun 2, 2026\n+ 66 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJava\n27.6%\nRust\n23.4%\nTypeScript\n17.3%\nC#\n11.4%\nGo\n10.5%\nPython\n9.5%\nOther\n0.3%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-08/r-004-github-copilot-sdk.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-08/r-004-github-copilot-sdk.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 7890,
+    "paragraph_count": 79,
+    "sentence_count": 71,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.001,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7890,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3a5ed676952ff1d3",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "a856d877f9c6eed5",
+  "content_hash": "3a5ed676952ff1d3",
+  "full_text_hash": "3a5ed676952ff1d3",
+  "semantic_hash": "a0f70d60c97617f3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-08T00:36:48.883Z",
+  "last_seen_at": "2026-06-08T00:36:48.883Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services Agents for every app. Embed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust. The GitHub Copilot SDK exposes the same engine behind Copilot CL... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "github copilot-sdk Public Notifications You must be signed in to change notification settings Fork 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "4k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 636 Commits 636 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vscode assets assets docs docs dotnet dotnet go go java java nodejs nodejs python python rust rust scripts scripts test test .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore CHANGELOG.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md CODE_OF_CONDUCT.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "copilot",
+      "Copilot",
+      "Agent",
+      "Agents",
+      "agent",
+      "agents",
+      "MCP"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1.2",
+      "9.4",
+      "636",
+      "0x",
+      "90",
+      "67",
+      "1.0",
+      "0"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "4k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 636 Commits 636 Commits .",
+      "vscode assets assets docs docs dotnet dotnet go go java java nodejs nodejs python python rust rust scripts scripts test test .",
+      "gitignore CHANGELOG."
+    ],
+    "case_details": [
+      "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services Agents for every app. Embed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust. The GitHub Copilot SDK exposes the same engine behind Copilot CL... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem",
+      "github copilot-sdk Public Notifications You must be signed in to change notification settings Fork 1."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# github/copilot-sdk\n\n- raw_id: R-004\n- original_url: https://github.com/github/copilot-sdk?WT.mc_id=AI-MVP-5003172\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-08T00:36:48.883Z\n\n## clean_text\n\ngithub\ncopilot-sdk\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.2k\nStar\n9.4k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n636 Commits\n636 Commits\n.devcontainer\n.devcontainer\n.githooks\n.githooks\n.github\n.github\n.vscode\n.vscode\nassets\nassets\ndocs\ndocs\ndotnet\ndotnet\ngo\ngo\njava\njava\nnodejs\nnodejs\npython\npython\nrust\nrust\nscripts\nscripts\ntest\ntest\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\njustfile\njustfile\nsdk-protocol-version.json\nsdk-protocol-version.json\nView all files\nRepository files navigation\nGitHub Copilot CLI SDKs\nAgents for every app.\nEmbed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust.\nThe GitHub Copilot SDK exposes the same engine behind Copilot CLI: a production-tested agent runtime you can invoke programmatically. No need to build your own orchestration—you define agent behavior, Copilot handles planning, tool invocation, file edits, and more.\nAvailable SDKs\nSDK\nLocation\nCookbook\nInstallation\nNode.js / TypeScript\nnodejs/\nCookbook\nnpm install @github/copilot-sdk\nPython\npython/\nCookbook\npip install github-copilot-sdk\nGo\ngo/\nCookbook\ngo get github.com/github/copilot-sdk/go\n.NET\ndotnet/\nCookbook\ndotnet add package GitHub.Copilot.SDK\nRust\nrust/\ncargo add github-copilot-sdk\nJava\njava/\nCookbook\nMaven coordinates\ncom.github:copilot-sdk-java\nSee instructions for Maven and Gradle\nSee the individual SDK READMEs for installation, usage examples, and API reference.\nGetting Started\nFor a complete walkthrough, see the Getting Started Guide .\nQuick steps:\n(Optional) Install the Copilot CLI\nFor Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically and no separate installation is required.\nFor Go, Java, and Rust, install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nInstall your preferred SDK using the commands above.\nSee the SDK README for usage examples and API documentation.\nArchitecture\nAll SDKs communicate with the Copilot CLI server via JSON-RPC:\nYour Application\nSDK Client\n↓ JSON-RPC\nCopilot CLI (server mode)\nThe SDK manages the CLI process lifecycle automatically. You can also connect to an external CLI server—see the Getting Started Guide for details on running the CLI in server mode.\nFAQ\nDo I need a GitHub Copilot subscription to use the SDK?\nYes, a GitHub Copilot subscription is required to use the GitHub Copilot SDK, unless you are using BYOK (Bring Your Own Key) . With BYOK, you can use the SDK without GitHub authentication by configuring your own API keys from supported LLM providers. For standard usage (non-BYOK), refer to the GitHub Copilot pricing page , which includes a free tier with limited usage.\nHow does billing work for SDK usage?\nBilling for the GitHub Copilot SDK is based on the same model as the Copilot CLI, with each prompt being counted towards your premium request quota. For more information on premium requests, see Requests in GitHub Copilot .\nDoes it support BYOK (Bring Your Own Key)?\nYes, the GitHub Copilot SDK supports BYOK (Bring Your Own Key). You can configure the SDK to use your own API keys from supported LLM providers (e.g. OpenAI, Azure AI Foundry, Anthropic) to access models through those providers. See the BYOK documentation for setup instructions and examples.\nNote: BYOK uses key-based authentication only. Microsoft Entra ID (Azure AD), managed identities, and third-party identity providers are not supported.\nWhat authentication methods are supported?\nThe SDK supports multiple authentication methods:\nGitHub signed-in user - Uses stored OAuth credentials from copilot CLI login\nOAuth GitHub App - Pass user tokens from your GitHub OAuth app\nEnvironment variables - COPILOT_GITHUB_TOKEN , GH_TOKEN , GITHUB_TOKEN\nBYOK - Use your own API keys (no GitHub auth required)\nSee the Authentication documentation for details on each method.\nDo I need to install the Copilot CLI separately?\nNo — for Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically as a dependency. You do not need to install it separately.\nFor Go, Java, and Rust SDKs, the CLI is not bundled by default. Install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nAdvanced: You can override the CLI binary or connect to an external server. See the individual SDK README for language-specific options.\nWhat tools are enabled by default?\nBy default, the SDK exposes the Copilot CLI's first-party tools, similar to running the CLI with --allow-all . Tool execution is still governed by each SDK's permission handler, so applications can approve, deny, or customize tool calls. You can customize tool availability by configuring the SDK client options to enable and disable specific tools. Refer to the individual SDK documentation for details on tool configuration and to the Copilot CLI documentation for the list of available tools.\nCan I use custom agents, skills or tools?\nYes, the GitHub Copilot SDK allows you to define custom agents, skills, and tools. You can extend the functionality of the agents by implementing your own logic and integrating additional tools as needed. Refer to the SDK documentation of your preferred language for more details.\nAre there instructions or SDK guidance for Copilot to speed up development?\nYes, check out the custom instructions and SDK-specific guidance:\nNode.js / TypeScript\nPython\n.NET\nGo\nRust (SDK guidance; custom instructions not yet published)\nJava\nWhat models are supported?\nAll models available via Copilot CLI are supported in the SDK. The SDK also exposes a method which will return the models available so they can be accessed at runtime.\nIs the SDK production-ready?\nThe GitHub Copilot SDK is generally available and follows semantic versioning. See CHANGELOG.md for release notes.\nHow do I report issues or request features?\nPlease use the GitHub Issues page to report bugs or request new features. We welcome your feedback to help improve the SDK.\nQuick Links\nDocumentation – Full documentation index\nGetting Started – Tutorial to get up and running\nSetup Guides – Architecture, deployment, and scaling\nAuthentication – GitHub OAuth, BYOK, and more\nFeatures – Hooks, custom agents, MCP, skills, and more\nTroubleshooting – Common issues and solutions\nCookbook – Practical recipes for common tasks across all languages\nMore Resources – Additional examples, tutorials, and community resources\nUnofficial, Community-maintained SDKs\n⚠️ Disclaimer: These are unofficial, community-driven SDKs and they are not supported by GitHub. Use at your own risk.\nSDK\nLocation\nClojure\ncopilot-community-sdk/copilot-sdk-clojure\nC++\n0xeb/copilot-sdk-cpp\nContributing\nSee CONTRIBUTING.md for contribution guidelines.\nLicense\nMIT\nAbout\nMulti-platform SDK for integrating GitHub Copilot Agent into apps and services\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n9.4k\nstars\nWatchers\n90\nwatching\nForks\n1.2k\nforks\nReport repository\nReleases\n67\nGitHub Copilot SDK for Java 1.0.0\nLatest\nJun 2, 2026\n+ 66 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJava\n27.6%\nRust\n23.4%\nTypeScript\n17.3%\nC#\n11.4%\nGo\n10.5%\nPython\n9.5%\nOther\n0.3%\n\n## full_text\n\ngithub\ncopilot-sdk\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n1.2k\nStar\n9.4k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n636 Commits\n636 Commits\n.devcontainer\n.devcontainer\n.githooks\n.githooks\n.github\n.github\n.vscode\n.vscode\nassets\nassets\ndocs\ndocs\ndotnet\ndotnet\ngo\ngo\njava\njava\nnodejs\nnodejs\npython\npython\nrust\nrust\nscripts\nscripts\ntest\ntest\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\njustfile\njustfile\nsdk-protocol-version.json\nsdk-protocol-version.json\nView all files\nRepository files navigation\nGitHub Copilot CLI SDKs\nAgents for every app.\nEmbed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust.\nThe GitHub Copilot SDK exposes the same engine behind Copilot CLI: a production-tested agent runtime you can invoke programmatically. No need to build your own orchestration—you define agent behavior, Copilot handles planning, tool invocation, file edits, and more.\nAvailable SDKs\nSDK\nLocation\nCookbook\nInstallation\nNode.js / TypeScript\nnodejs/\nCookbook\nnpm install @github/copilot-sdk\nPython\npython/\nCookbook\npip install github-copilot-sdk\nGo\ngo/\nCookbook\ngo get github.com/github/copilot-sdk/go\n.NET\ndotnet/\nCookbook\ndotnet add package GitHub.Copilot.SDK\nRust\nrust/\ncargo add github-copilot-sdk\nJava\njava/\nCookbook\nMaven coordinates\ncom.github:copilot-sdk-java\nSee instructions for Maven and Gradle\nSee the individual SDK READMEs for installation, usage examples, and API reference.\nGetting Started\nFor a complete walkthrough, see the Getting Started Guide .\nQuick steps:\n(Optional) Install the Copilot CLI\nFor Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically and no separate installation is required.\nFor Go, Java, and Rust, install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nInstall your preferred SDK using the commands above.\nSee the SDK README for usage examples and API documentation.\nArchitecture\nAll SDKs communicate with the Copilot CLI server via JSON-RPC:\nYour Application\nSDK Client\n↓ JSON-RPC\nCopilot CLI (server mode)\nThe SDK manages the CLI process lifecycle automatically. You can also connect to an external CLI server—see the Getting Started Guide for details on running the CLI in server mode.\nFAQ\nDo I need a GitHub Copilot subscription to use the SDK?\nYes, a GitHub Copilot subscription is required to use the GitHub Copilot SDK, unless you are using BYOK (Bring Your Own Key) . With BYOK, you can use the SDK without GitHub authentication by configuring your own API keys from supported LLM providers. For standard usage (non-BYOK), refer to the GitHub Copilot pricing page , which includes a free tier with limited usage.\nHow does billing work for SDK usage?\nBilling for the GitHub Copilot SDK is based on the same model as the Copilot CLI, with each prompt being counted towards your premium request quota. For more information on premium requests, see Requests in GitHub Copilot .\nDoes it support BYOK (Bring Your Own Key)?\nYes, the GitHub Copilot SDK supports BYOK (Bring Your Own Key). You can configure the SDK to use your own API keys from supported LLM providers (e.g. OpenAI, Azure AI Foundry, Anthropic) to access models through those providers. See the BYOK documentation for setup instructions and examples.\nNote: BYOK uses key-based authentication only. Microsoft Entra ID (Azure AD), managed identities, and third-party identity providers are not supported.\nWhat authentication methods are supported?\nThe SDK supports multiple authentication methods:\nGitHub signed-in user - Uses stored OAuth credentials from copilot CLI login\nOAuth GitHub App - Pass user tokens from your GitHub OAuth app\nEnvironment variables - COPILOT_GITHUB_TOKEN , GH_TOKEN , GITHUB_TOKEN\nBYOK - Use your own API keys (no GitHub auth required)\nSee the Authentication documentation for details on each method.\nDo I need to install the Copilot CLI separately?\nNo — for Node.js, Python, and .NET SDKs, the Copilot CLI is bundled automatically as a dependency. You do not need to install it separately.\nFor Go, Java, and Rust SDKs, the CLI is not bundled by default. Install the CLI manually or ensure copilot is available in your PATH. Go and Rust also expose application-level CLI bundling features.\nAdvanced: You can override the CLI binary or connect to an external server. See the individual SDK README for language-specific options.\nWhat tools are enabled by default?\nBy default, the SDK exposes the Copilot CLI's first-party tools, similar to running the CLI with --allow-all . Tool execution is still governed by each SDK's permission handler, so applications can approve, deny, or customize tool calls. You can customize tool availability by configuring the SDK client options to enable and disable specific tools. Refer to the individual SDK documentation for details on tool configuration and to the Copilot CLI documentation for the list of available tools.\nCan I use custom agents, skills or tools?\nYes, the GitHub Copilot SDK allows you to define custom agents, skills, and tools. You can extend the functionality of the agents by implementing your own logic and integrating additional tools as needed. Refer to the SDK documentation of your preferred language for more details.\nAre there instructions or SDK guidance for Copilot to speed up development?\nYes, check out the custom instructions and SDK-specific guidance:\nNode.js / TypeScript\nPython\n.NET\nGo\nRust (SDK guidance; custom instructions not yet published)\nJava\nWhat models are supported?\nAll models available via Copilot CLI are supported in the SDK. The SDK also exposes a method which will return the models available so they can be accessed at runtime.\nIs the SDK production-ready?\nThe GitHub Copilot SDK is generally available and follows semantic versioning. See CHANGELOG.md for release notes.\nHow do I report issues or request features?\nPlease use the GitHub Issues page to report bugs or request new features. We welcome your feedback to help improve the SDK.\nQuick Links\nDocumentation – Full documentation index\nGetting Started – Tutorial to get up and running\nSetup Guides – Architecture, deployment, and scaling\nAuthentication – GitHub OAuth, BYOK, and more\nFeatures – Hooks, custom agents, MCP, skills, and more\nTroubleshooting – Common issues and solutions\nCookbook – Practical recipes for common tasks across all languages\nMore Resources – Additional examples, tutorials, and community resources\nUnofficial, Community-maintained SDKs\n⚠️ Disclaimer: These are unofficial, community-driven SDKs and they are not supported by GitHub. Use at your own risk.\nSDK\nLocation\nClojure\ncopilot-community-sdk/copilot-sdk-clojure\nC++\n0xeb/copilot-sdk-cpp\nContributing\nSee CONTRIBUTING.md for contribution guidelines.\nLicense\nMIT\nAbout\nMulti-platform SDK for integrating GitHub Copilot Agent into apps and services\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n9.4k\nstars\nWatchers\n90\nwatching\nForks\n1.2k\nforks\nReport repository\nReleases\n67\nGitHub Copilot SDK for Java 1.0.0\nLatest\nJun 2, 2026\n+ 66 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJava\n27.6%\nRust\n23.4%\nTypeScript\n17.3%\nC#\n11.4%\nGo\n10.5%\nPython\n9.5%\nOther\n0.3%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] Multi-platform SDK for integrating GitHub Copilot Agent into apps and services Agents for every app. Embed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust. The GitHub Copilot SDK exposes the same engine behind Copilot CL... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem\n2. [case_detail / daily_observation, heatmap, case / high] github copilot-sdk Public Notifications You must be signed in to change notification settings Fork 1.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 4k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 636 Commits 636 Commits .\n4. [company_action / daily_observation, heatmap, change, case, trend / high] vscode assets assets docs docs dotnet dotnet go go java java nodejs nodejs python python rust rust scripts scripts test test .\n5. [company_action / daily_observation, heatmap, change, case, trend / high] gitignore CHANGELOG.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] md CODE_OF_CONDUCT.\n"
+}

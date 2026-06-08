@@ -1,0 +1,70 @@
+---
+id: SIG-20260608-A11
+type: signal_card
+signal_type: funding
+title: "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models"
+date: 2026-06-08
+status: published
+source_title: "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-08T01:29:14.762Z
+updated_at: 2026-06-08T01:29:14.762Z
+
+raw_refs: ["R-007"]
+pool_refs: ["P-007"]
+primary_raw:
+  raw_ref: R-007
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-08/r-007-ai-gateway-openrouter-raises-113m-from-google-and-nvidia-to-route-betw.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-08/r-007-ai-gateway-openrouter-raises-113m-from-google-and-nvidia-to-route-betw.json"
+  source_url: "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm"
+  full_text_hash: "328ef414425d81b3"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_funding
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent"]
+  function: []
+  scenario: []
+  customer: []
+  evidence: ["evidence-funding"]
+  stage: ["stage-rising"]
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "AI Gateway OpenRouter"
+
+frontend:
+  displayTitle: "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models"
+  sourceLinks:
+    - "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm"
+---
+
+# AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models
+
+## 新闻事实
+
+OpenRouter 获得 $113 m Series B 融资。
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+AI Gateway OpenRouter 的融资信号可用于观察资本是否继续流向 模型部署和算力服务。
+
+## 可见原文片段
+
+OpenRouter 获得 $113 m Series B 融资。
+
+## 证据边界
+
+没有具体客户或真实企业案例
