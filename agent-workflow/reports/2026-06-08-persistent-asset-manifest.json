@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T08:36:49+08:00",
+  "workflow_mode": "persistent_assets_pr",
+  "outcomes": {
+    "monitor": "failure",
+    "monitor_readiness": "failure",
+    "raw_pool_gate": "failure",
+    "asset_generation": "skipped",
+    "pool_to_card_dedupe_gate": "skipped",
+    "builders_data": "success",
+    "builders_gate": "success",
+    "site_data_sync": "skipped",
+    "source_first_frontstage_gate": "skipped",
+    "frontstage_regression_gate": "skipped",
+    "pre_commit_gate": "skipped"
+  },
+  "assets": {
+    "raw_candidates": "present",
+    "raw_originals": "present",
+    "pool_candidates": "present",
+    "business_signals": "missing",
+    "signal_card_files": 0,
+    "site_content_data": "present",
+    "v3_data_observation_desk": "present",
+    "intelligence_graph_index": "present",
+    "first_line_viewpoints_data": "present",
+    "operations_dashboard_data": "present"
+  }
+}
