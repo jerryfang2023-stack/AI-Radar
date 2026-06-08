@@ -3363,6 +3363,129 @@ async function collectGDELT() {
   return { items, failures };
 }
 
+/**
+ * Fetch RSS/Atom feeds from source-registry-v2.json sources marked as interface_type=rss.
+ * Parses both RSS 2.0 and Atom 1.0 formats.
+ */
+async function collectRSSFeeds() {
+  const sources = registrySources.filter(
+    (s) => s.interface_type === "rss" && s.enabled_default !== false
+  );
+  if (!sources.length) return { items: [], failures: [], rss_source_count: 0 };
+
+  const items = [];
+  const failures = [];
+  const seenUrls = new Set();
+
+  for (const source of sources) {
+    const url = source.endpoint_or_url || "";
+    if (!url) {
+      failures.push(`RSS ${source.source_id}: no endpoint URL`);
+      continue;
+    }
+    try {
+      const response = await fetch(url, { signal: AbortSignal.timeout(fetchTimeoutMs) });
+      if (!response.ok) {
+        failures.push(`RSS ${source.source_id}: HTTP ${response.status}`);
+        continue;
+      }
+      const xml = await response.text();
+      if (!xml || xml.length < 50) {
+        failures.push(`RSS ${source.source_id}: empty or too short`);
+        continue;
+      }
+
+      // Detect format: RSS 2.0 or Atom 1.0. Atom feeds start with <feed tag.
+      const isAtom = /<feed[\s>]/i.test(xml);
+
+      if (isAtom) {
+        // Atom 1.0 parsing
+        const entries = xml.match(/<entry[\s\S]*?<\/entry>/gi) || [];
+        for (const entryXml of entries) {
+          try {
+            const title = extractXmlField(entryXml, 'title');
+            const linkMatch = entryXml.match(/<link[^>]*href="([^"]+)"/i);
+            const link = linkMatch ? linkMatch[1] : '';
+            const summary = extractXmlField(entryXml, 'summary') || extractXmlField(entryXml, 'content');
+            const published = extractXmlField(entryXml, 'published') || extractXmlField(entryXml, 'updated');
+            const authorName = extractXmlField(entryXml, 'name');
+            const id = extractXmlField(entryXml, 'id') || link;
+
+            if (!link && !title) continue;
+            const dedupKey = link || id;
+            if (seenUrls.has(dedupKey)) continue;
+            seenUrls.add(dedupKey);
+
+            items.push({
+              acquisition_channel: "rss-feed",
+              original_id: id,
+              title: (title || "").trim(),
+              summary: (summary || "").trim().slice(0, 500),
+              url: link,
+              source: source.name,
+              source_id: source.source_id,
+              published_at: normalizePublishedAt(published),
+              category: "rss",
+              rss_source_name: source.name,
+              query_theme: "",
+              keyword_group: "",
+            });
+          } catch (entryError) {
+            // skip single entry parse failure
+          }
+        }
+      } else {
+        // RSS 2.0 parsing
+        const channelTitle = extractXmlField(xml, 'title');
+        const itemsXml = xml.match(/<item[\s\S]*?<\/item>/gi) || [];
+        for (const itemXml of itemsXml) {
+          try {
+            const title = extractXmlField(itemXml, 'title');
+            const link = extractXmlField(itemXml, 'link');
+            const description = extractXmlField(itemXml, 'description');
+            const pubDate = extractXmlField(itemXml, 'pubDate');
+            const guid = extractXmlField(itemXml, 'guid');
+            const author = extractXmlField(itemXml, 'author') || extractXmlField(itemXml, 'dc:creator');
+
+            if (!link && !title) continue;
+            const dedupKey = link || guid || title;
+            if (seenUrls.has(dedupKey)) continue;
+            seenUrls.add(dedupKey);
+
+            items.push({
+              acquisition_channel: "rss-feed",
+              original_id: guid || link,
+              title: (title || "").trim(),
+              summary: (description || "").trim().replace(/<[^>]+>/g, "").slice(0, 500),
+              url: link,
+              source: source.name,
+              source_id: source.source_id,
+              published_at: normalizePublishedAt(pubDate),
+              category: "rss",
+              rss_source_name: source.name,
+              query_theme: "",
+              keyword_group: "",
+            });
+          } catch (entryError) {
+            // skip single item parse failure
+          }
+        }
+      }
+    } catch (error) {
+      failures.push(`RSS ${source.source_id}: ${error.message}`);
+    }
+  }
+
+  return { items, failures, rss_source_count: sources.length };
+}
+
+/** Extract the text content of an XML element by tag name. */
+function extractXmlField(xml, tag) {
+  const match = xml.match(new RegExp(`<${tag}(?:\\s[^>]*)?>(.*?)<\\/${tag}>`, 'is'));
+  if (!match) return "";
+  return match[1].replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1').trim();
+}
+
 function normalize(items) {
   const prepared = items
     .filter((item) => item.title || item.url)
@@ -4047,6 +4170,7 @@ async function main() {
   let keywordSearch = { items: [], failures: [] };
   let hn = { items: [], failures: [] };
   let gdelt = { items: [], failures: [] };
+  let rss = { items: [], failures: [], rss_source_count: 0 };
   let searchActivated = false;
   let normalizedItems = normalize(primaryItems);
   let coverageGaps = importanceCoverageGaps(normalizedItems);
@@ -4058,14 +4182,15 @@ async function main() {
     || coverageGaps.length;
   if (shouldRunExternalSearch) {
     searchActivated = true;
-    [keywordSearch, gdelt] = await Promise.all([
+    [keywordSearch, gdelt, rss] = await Promise.all([
       collectKeywordSearch(),
       collectGDELT(),
+      collectRSSFeeds(),
     ]);
-    normalizedItems = normalize([...primaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items]);
+    normalizedItems = normalize([...primaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items, ...rss.items]);
     coverageGaps = importanceCoverageGaps(normalizedItems);
   }
-  const failures = [...aihot.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures];
+  const failures = [...aihot.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures, ...rss.failures];
   const items = dryRun
     ? normalizedItems
     : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedItems)));
@@ -4111,6 +4236,8 @@ async function main() {
         historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
         importance_coverage_gaps: coverageGaps,
         aihot_count: items.filter((item) => item.acquisition_channel === "aihot").length,        keyword_search_count: items.filter((item) => item.acquisition_channel === "keyword-search").length,
+        rss_feed_count: items.filter((item) => item.acquisition_channel === "rss-feed").length,
+        rss_source_count: rss.rss_source_count,
         keyword_search_path_distribution: countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_path"),
         keyword_search_intent_distribution: countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_intent"),
         keyword_search_non_community_count: items.filter((item) => item.acquisition_channel === "keyword-search" && item.search_path && item.search_path !== "community_feedback").length,
