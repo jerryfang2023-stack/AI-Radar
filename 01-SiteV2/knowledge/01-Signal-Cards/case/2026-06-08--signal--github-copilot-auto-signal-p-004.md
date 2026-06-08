@@ -2,7 +2,7 @@
 id: SIG-20260608-A10
 type: signal_card
 signal_type: case
-title: "github/copilot-sdk"
+title: "GitHub Copilot SDK 正式发布，多平台支持将 Agent 能力嵌入任何应用"
 date: 2026-06-08
 status: published
 source_title: "github/copilot-sdk"
@@ -42,7 +42,7 @@ formal_tags:
 signal_owner: "github/copilot"
 
 frontend:
-  displayTitle: "github/copilot-sdk"
+  displayTitle: "GitHub Copilot SDK 正式发布，多平台支持将 Agent 能力嵌入任何应用"
   sourceLinks:
     - "https://github.com/github/copilot-sdk?WT.mc_id=AI-MVP-5003172"
 ---

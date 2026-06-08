@@ -39,7 +39,7 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
-signal_owner: "大型AI公司计划上市引发价格上涨担忧"
+signal_owner: "TechCrunch"
 
 frontend:
   displayTitle: "大型AI公司计划上市引发价格上涨担忧"

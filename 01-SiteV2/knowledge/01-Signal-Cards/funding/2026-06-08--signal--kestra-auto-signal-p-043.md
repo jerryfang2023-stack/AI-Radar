@@ -2,7 +2,7 @@
 id: SIG-20260608-A03
 type: signal_card
 signal_type: funding
-title: "We are the Orchestration Control Plane of the AI Era: Kestra raises $25M | Kestra"
+title: "Kestra 完成 2500 万美元融资，定位 AI 时代的编排控制平面"
 date: 2026-06-08
 status: published
 source_title: "We are the Orchestration Control Plane of the AI Era: Kestra raises $25M | Kestra"
@@ -42,7 +42,7 @@ formal_tags:
 signal_owner: "Kestra"
 
 frontend:
-  displayTitle: "We are the Orchestration Control Plane of the AI Era: Kestra raises $25M | Kestra"
+  displayTitle: "Kestra 完成 2500 万美元融资，定位 AI 时代的编排控制平面"
   sourceLinks:
     - "https://kestra.io/blogs/kestra-series-a"
 ---
