@@ -19,6 +19,7 @@ const skillDir = process.env.FOLLOW_BUILDERS_SKILL_DIR
   || path.join(homedir(), ".skill-store", "follow-builders");
 const prepareScript = path.join(skillDir, "scripts", "prepare-digest.js");
 const outputPath = path.join(siteRoot, "data", "follow-builders-daily.json");
+const builderBlogFeedPath = path.join(siteRoot, "..", "content", "11-databases", "builder-blog-feed.json");
 const tagIndex = buildTagIndex(readTagTaxonomy(process.cwd()));
 const remoteFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
@@ -187,6 +188,9 @@ async function loadPreparedFeed() {
         ...JSON.parse(stdout),
         sourceRoute: "prepare-digest",
         sourceErrors: [],
+        blogs: existsSync(builderBlogFeedPath)
+          ? JSON.parse(await readFile(builderBlogFeedPath, "utf8")).blogs || []
+          : [],
       };
     } catch (error) {
       prepareError = error;
@@ -207,10 +211,14 @@ async function loadPreparedFeed() {
 
   let xRaw;
   let podcastRaw;
+  let blogRaw;
   try {
-    [xRaw, podcastRaw] = await Promise.all([
+    [xRaw, podcastRaw, blogRaw] = await Promise.all([
       readLocalOrRemote("x"),
       readLocalOrRemote("podcasts"),
+      existsSync(builderBlogFeedPath)
+        ? readFile(builderBlogFeedPath, "utf8").then(c => ({ payload: JSON.parse(c), route: "local-blogs" }))
+        : Promise.resolve({ payload: { blogs: [] }, route: "none" }),
     ]);
   } catch (error) {
     if (prepareError) {
@@ -220,12 +228,15 @@ async function loadPreparedFeed() {
   }
   const xPayload = xRaw.payload ?? xRaw;
   const podcastPayload = podcastRaw.payload ?? podcastRaw;
+  const blogPayload = blogRaw.payload ?? blogRaw;
   const x = typeof xPayload === "string" ? JSON.parse(xPayload) : xPayload;
   const podcasts = typeof podcastPayload === "string" ? JSON.parse(podcastPayload) : podcastPayload;
+  const blogs = typeof blogPayload === "string" ? JSON.parse(blogPayload) : blogPayload;
   return {
     status: "ok",
     generatedAt: new Date().toISOString(),
     x: x.x || [],
+    blogs: blogs.blogs || [],
     podcasts: podcasts.podcasts || [],
     sourceRoute: [xRaw.route, podcastRaw.route].filter(Boolean).join("+") || "feed-fallback",
     sourceErrors: prepareError ? [`prepare-digest: ${prepareError.message}`] : [],
@@ -280,6 +291,35 @@ async function normalize(feed, trackedSources) {
   }
   await saveTranslationCache(process.cwd(), translationCache);
 
+  // Add builder blog items (no translation needed, titles are self-explanatory)
+  for (const builder of feed.blogs || []) {
+    for (const item of builder.tweets || []) {
+      const text = decodeText(item.text || "");
+      if (!text) continue;
+      const topic = topicForText(text);
+      remarks.push({
+        id: item.id || item.url,
+        source: "blog",
+        name: builder.name,
+        handle: builder.handle,
+        role: builder.bio || "",
+        text,
+        translation: text,
+        translationStatus: "original",
+        translationMethod: "none",
+        topic,
+        formalTags: tagsForTopic(topic, "blog"),
+        observation: observationForTopic(topic),
+        createdAt: item.createdAt,
+        date: String(item.createdAt || "").slice(0, 10),
+        url: item.url,
+        likes: 0,
+        retweets: 0,
+        replies: 0,
+      });
+    }
+  }
+
   remarks.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
 
   const builders = [...new Map(remarks.map((item) => [item.handle, item])).values()]
@@ -314,6 +354,7 @@ async function normalize(feed, trackedSources) {
       builders: builders.length,
       remarks: remarks.length,
       podcasts: podcasts.length,
+      blogsBuilt: (feed.blogs || []).filter(b => b.tweets?.length).length,
       trackedSources,
       rawBuilders: feed.stats?.xBuilders || 0,
       rawTweets: feed.stats?.totalTweets || 0,

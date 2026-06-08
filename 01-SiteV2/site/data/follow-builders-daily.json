@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-08T02:34:02.833Z",
+    "generatedAt": "2026-06-08T03:52:14.037Z",
     "feedGeneratedAt": "2026-06-07T07:41:30.877Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
@@ -9,14 +9,27 @@
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 9,
-    "remarks": 15,
+    "builders": 14,
+    "remarks": 40,
     "podcasts": 1,
+    "blogsBuilt": 5,
     "trackedSources": 34,
     "rawBuilders": 9,
     "rawTweets": 17
   },
   "builders": [
+    {
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "count": 16
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "count": 4
+    },
     {
       "name": "Dan Shipper",
       "handle": "danshipper",
@@ -28,6 +41,18 @@
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
       "count": 3
+    },
+    {
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "count": 2
+    },
+    {
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "count": 2
     },
     {
       "name": "Nikunj Kothari",
@@ -54,6 +79,12 @@
       "count": 1
     },
     {
+      "name": "Import AI (Jack Clark)",
+      "handle": "importai.substack.com",
+      "role": "Weekly AI industry analysis: research trends, policy, infrastructure, geopolitical impact.",
+      "count": 1
+    },
+    {
       "name": "Madhu Guru",
       "handle": "realmadhuguru",
       "role": "Prev: Product Leader at Google - Gemini, Veo, Nano Banana.",
@@ -73,6 +104,366 @@
     }
   ],
   "remarks": [
+    {
+      "id": "https://tldr.tech/ai/2026-06-03",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸",
+      "translation": "Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "Wed, 03 Jun 2026 00:00:00 GMT",
+      "date": "Wed, 03 Ju",
+      "url": "https://tldr.tech/ai/2026-06-03",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.interconnects.ai/p/farewell-ai2",
+      "source": "blog",
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "text": "Farewell Ai2",
+      "translation": "Farewell Ai2",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "Tue, 02 Jun 2026 14:15:59 GMT",
+      "date": "Tue, 02 Ju",
+      "url": "https://www.interconnects.ai/p/farewell-ai2",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.bensbites.com/p/opus-48",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "Opus 4.8",
+      "translation": "Opus 4.8",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "Tue, 02 Jun 2026 13:29:05 GMT",
+      "date": "Tue, 02 Ju",
+      "url": "https://www.bensbites.com/p/opus-48",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-06-02",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍",
+      "translation": "Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "AI 编程",
+      "formalTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "Tue, 02 Jun 2026 00:00:00 GMT",
+      "date": "Tue, 02 Ju",
+      "url": "https://tldr.tech/ai/2026-06-02",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.bensbites.com/p/build-tools-to-build-more",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "Build tools, to build more",
+      "translation": "Build tools, to build more",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "Thu, 04 Jun 2026 13:03:42 GMT",
+      "date": "Thu, 04 Ju",
+      "url": "https://www.bensbites.com/p/build-tools-to-build-more",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-06-04",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖",
+      "translation": "DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "AI 基础设施",
+      "formalTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "Thu, 04 Jun 2026 00:00:00 GMT",
+      "date": "Thu, 04 Ju",
+      "url": "https://tldr.tech/ai/2026-06-04",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
+      "source": "blog",
+      "name": "Import AI (Jack Clark)",
+      "handle": "importai.substack.com",
+      "role": "Weekly AI industry analysis: research trends, policy, infrastructure, geopolitical impact.",
+      "text": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
+      "translation": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "Mon, 01 Jun 2026 13:31:56 GMT",
+      "date": "Mon, 01 Ju",
+      "url": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different",
+      "source": "blog",
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "text": "Open and closed models are on different exponentials",
+      "translation": "Open and closed models are on different exponentials",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "Mon, 01 Jun 2026 13:03:48 GMT",
+      "date": "Mon, 01 Ju",
+      "url": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-06-05",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀",
+      "translation": "Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "Fri, 05 Jun 2026 00:00:00 GMT",
+      "date": "Fri, 05 Ju",
+      "url": "https://tldr.tech/ai/2026-06-05",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "datasette-agent-edit 0.1a0",
+      "translation": "datasette-agent-edit 0.1a0",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-06-07T23:56:38+00:00",
+      "date": "2026-06-07",
+      "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
     {
       "id": "2063486871037153558",
       "source": "x",
@@ -612,6 +1003,546 @@
       "likes": 70,
       "retweets": 3,
       "replies": 5
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "micropython-wasm 0.1a2",
+      "translation": "micropython-wasm 0.1a2",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-06T04:26:06+00:00",
+      "date": "2026-06-06",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Running Python code in a sandbox with MicroPython and WASM",
+      "translation": "Running Python code in a sandbox with MicroPython and WASM",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-06-06T03:53:34+00:00",
+      "date": "2026-06-06",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "OpenAI Help: Lockdown Mode",
+      "translation": "OpenAI Help: Lockdown Mode",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-05T23:56:40+00:00",
+      "date": "2026-06-05",
+      "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting Andreas Kling",
+      "translation": "Quoting Andreas Kling",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-05T11:10:05+00:00",
+      "date": "2026-06-05",
+      "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+      "translation": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-04T23:55:27+00:00",
+      "date": "2026-06-04",
+      "url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting Emanuel Maiberg, 404 Media",
+      "translation": "Quoting Emanuel Maiberg, 404 Media",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-04T16:38:29+00:00",
+      "date": "2026-06-04",
+      "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "translation": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "AI 编程",
+      "formalTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-06-03T12:01:27+00:00",
+      "date": "2026-06-03",
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Microsoft's new MAI models",
+      "translation": "Microsoft's new MAI models",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-02T22:21:52+00:00",
+      "date": "2026-06-02",
+      "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "datasette-agent-micropython 0.1a0",
+      "translation": "datasette-agent-micropython 0.1a0",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-06-02T19:28:36+00:00",
+      "date": "2026-06-02",
+      "url": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "micropython-wasm 0.1a1",
+      "translation": "micropython-wasm 0.1a1",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-02T19:20:47+00:00",
+      "date": "2026-06-02",
+      "url": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/2/sighting-367841339/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "California Brown Pelican",
+      "translation": "California Brown Pelican",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-02T18:17:03+00:00",
+      "date": "2026-06-02",
+      "url": "https://simonwillison.net/2026/Jun/2/sighting-367841339/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Pasted File Editor",
+      "translation": "Pasted File Editor",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-02T04:13:36+00:00",
+      "date": "2026-06-02",
+      "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/2/micropython-wasm-2/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "micropython-wasm 0.1a0",
+      "translation": "micropython-wasm 0.1a0",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-02T03:43:45+00:00",
+      "date": "2026-06-02",
+      "url": "https://simonwillison.net/2026/Jun/2/micropython-wasm-2/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+      "translation": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-01T21:14:47+00:00",
+      "date": "2026-06-01",
+      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "May 2026 newsletter",
+      "translation": "May 2026 newsletter",
+      "translationStatus": "original",
+      "translationMethod": "none",
+      "topic": "Builder 观点",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
+      "createdAt": "2026-06-01T04:45:00+00:00",
+      "date": "2026-06-01",
+      "url": "https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
     }
   ],
   "podcasts": [

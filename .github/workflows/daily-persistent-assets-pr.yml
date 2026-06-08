@@ -179,6 +179,17 @@ jobs:
             --monitor-timeout-ms=840000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
 
+      - name: Fetch builder blog RSS feeds
+        id: builder-blogs
+        if: steps.existing-assets.outputs.skip != 'true'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/fetch-builder-blog-feed.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builder-blogs.log"
+
       - name: Build first-line viewpoints data
         id: builders-data
         if: steps.existing-assets.outputs.skip != 'true'
