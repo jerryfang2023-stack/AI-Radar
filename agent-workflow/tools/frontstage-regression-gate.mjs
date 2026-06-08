@@ -4,36 +4,46 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedVersion = "V3.3.1-unified-intelligence-frontstage";
+const expectedVersion = "V3.3.2-community-intelligence-v1";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
 const frontstageFiles = [
   "01-SiteV2/site/index.html",
   "01-SiteV2/site/v3-data-observation.html",
+  "01-SiteV2/site/intelligence-map.html",
   "01-SiteV2/site/follow-builders.html",
+  "01-SiteV2/site/community-intelligence.html",
   "01-SiteV2/site/assets/wavesight-nav.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.js",
   "01-SiteV2/site/assets/follow-builders.css",
   "01-SiteV2/site/assets/follow-builders.js",
+  "01-SiteV2/site/assets/community-intelligence.css",
+  "01-SiteV2/site/assets/community-intelligence.js",
   "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
   "01-SiteV2/site/scripts/build-follow-builders-page-data.mjs",
   "01-SiteV2/site/data/v3-data-observation-desk.json",
   "01-SiteV2/site/data/follow-builders-daily.json",
+  "01-SiteV2/site/data/community-intelligence.json",
 ].map((file) => path.join(root, file));
 
 const publicFrontstageTextFiles = [
   "01-SiteV2/site/index.html",
   "01-SiteV2/site/v3-data-observation.html",
+  "01-SiteV2/site/intelligence-map.html",
   "01-SiteV2/site/follow-builders.html",
+  "01-SiteV2/site/community-intelligence.html",
   "01-SiteV2/site/assets/wavesight-nav.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.js",
   "01-SiteV2/site/assets/follow-builders.css",
   "01-SiteV2/site/assets/follow-builders.js",
+  "01-SiteV2/site/assets/community-intelligence.css",
+  "01-SiteV2/site/assets/community-intelligence.js",
   "01-SiteV2/site/data/v3-data-observation-desk.json",
   "01-SiteV2/site/data/follow-builders-daily.json",
+  "01-SiteV2/site/data/community-intelligence.json",
 ].map((file) => path.join(root, file));
 
 const retiredFrontstagePages = [

@@ -500,6 +500,10 @@ function isWeakSubject(value = "") {
   if (!clean || isDiscoveryLabel(clean)) return true;
   if (/^\d{4}$/u.test(clean)) return true;
   if (/^[a-z0-9.-]+\.(com|org|net|io|ai|dev|co)$/iu.test(clean)) return true;
+  if (/^(LinkedIn|Linkedin|TechCrunch|Techcrunch|The[-\s]Decoder|Marktechpost|Siliconangle|Instagram|Apple Podcasts)$/iu.test(clean)) return true;
+  if (/^(Requests for Startups|Enterprise AI Execution Problem|The Information'?s TITV)$/iu.test(clean)) return true;
+  if (/^(一位|消息称|现在我)/u.test(clean)) return true;
+  if (/(full list|Inference costs|VCs backing|raised \$100M|开源界的怪胎|富士康展示)/iu.test(clean)) return true;
   if (/^CEO\s+/iu.test(clean)) return true;
   if (/把 AI 用进/u.test(clean)) return true;
   if (subjectLooksLikeTitle(value)) return true;
@@ -661,6 +665,28 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
     [/siliconangle.*vapi/u, "Vapi"],
     [/youtube\.com.*tecd/u, "AI Coding Agents"],
     [/youtube\.com.*71qv/u, "AI Evals"],
+    [/github\.com\/github\/copilot-sdk/u, "GitHub Copilot"],
+    [/pondero\.ai.*github-copilot-sdk-ga/u, "GitHub Copilot"],
+    [/linkedin\.com.*cerebras-systems_partner-spotlight/u, "Cerebras / AWS Marketplace"],
+    [/ycombinator\.com\/rfs/u, "Y Combinator"],
+    [/the-decoder\.com.*anthropic-poaches-openais/u, "Anthropic / OpenAI"],
+    [/techtimes\.com.*openrouter/u, "OpenRouter"],
+    [/the-decoder\.com.*deepseek-topped-ramps/u, "DeepSeek / Ramp"],
+    [/the-decoder\.com.*perplexitys-search-as-code/u, "Perplexity"],
+    [/techcrunch\.com.*tokenpocalypse/u, "Microsoft / GitHub Copilot"],
+    [/drewdevault\.com.*circus-freaks-of-foss/u, "Drew DeVault"],
+    [/human-in-the-loop\.bearblog\.dev.*llms-are-eroding/u, "Human in the Loop"],
+    [/ithome\.com\/0\/961\/146/u, "京东 / 腾讯"],
+    [/ithome\.com\/0\/961\/185/u, "华为云 / 智果园"],
+    [/ithome\.com\/0\/961\/214/u, "国家安全部"],
+    [/ithome\.com\/0\/961\/113/u, "极摩客 / EVO-X3"],
+    [/ithome\.com\/0\/961\/163/u, "富士康 / RTX 6000 Blackwell"],
+    [/linkedin\.com.*intelcapital_heres-the-full-list/u, "Intel Capital / AI 初创公司"],
+    [/linkedin\.com.*unframe.*raises-50-million/u, "Unframe"],
+    [/instagram\.com\/p\/dym7eqlkd71/u, "SpiceOrb"],
+    [/blog\.janestreet\.com.*claude-code-more-than-figma/u, "Jane Street / Claude Code"],
+    [/sky9capital\.com.*ai-native-enterprise-software/u, "Sky9 Capital"],
+    [/podcasts\.apple\.com.*the-informations-titv/u, "The Information TITV"],
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
@@ -669,6 +695,20 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
   if (/^Anthropic 发布 Claude/u.test(title)) return "Anthropic / Claude";
   if (/^不理解 AI 评测/u.test(title)) return "AI Evals";
   return "";
+}
+
+function frontstageCandidateSubject(sourceUrl = "", rawTitle = "", title = "", sourceName = "") {
+  const override = frontstageSubjectOverride(sourceUrl, title || rawTitle);
+  if (override) return override;
+  const urlSubject = normalizeSubject(subjectFromUrl(sourceUrl));
+  if (urlSubject && !isWeakSubject(urlSubject)) return urlSubject;
+  const titleSubject = normalizeSubject(subjectFromTitle(rawTitle) || subjectFromTitle(title));
+  if (titleSubject && !isWeakSubject(titleSubject)) return titleSubject;
+  const sourceSubject = normalizeSubject(sourceName);
+  if (sourceSubject && !isWeakSubject(sourceSubject)) return sourceSubject;
+  const domainSubject = normalizeSubject(domain(sourceUrl));
+  if (domainSubject && !isWeakSubject(domainSubject)) return domainSubject;
+  return "未标注主体";
 }
 
 function frontstageSubject(fm, sourceUrl, sourceName, rawTitle, title) {
@@ -1473,7 +1513,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         title,
         originalTitle: rawTitle === title ? "" : rawTitle,
         date: activeDate,
-        subject: normalizeSubject(subjectFromUrl(sourceUrl) || (!isWeakSubject(subjectFromTitle(rawTitle)) ? subjectFromTitle(rawTitle) : "") || (!isWeakSubject(domain(sourceUrl)) ? domain(sourceUrl) : "") || "未标注主体"),
+        subject: frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source")),
         source: domain(sourceUrl) || poolValue(section, "source"),
         sourceName: domain(sourceUrl) || poolValue(section, "source"),
         sourceUrl,
@@ -2368,7 +2408,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
 
   return {
     meta: {
-      version: "V3.3.1-intelligence-graph-index",
+      version: "V3.3.2-intelligence-graph-index",
       generatedAt: payload.meta?.generatedAt || new Date().toISOString(),
       activeDate,
       purpose: "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
@@ -2452,7 +2492,7 @@ const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
-    version: "V3.3.1-unified-intelligence-frontstage",
+    version: "V3.3.2-community-intelligence-v1",
     generatedAt: new Date().toISOString(),
     activeDate,
     source: "Signal Cards",

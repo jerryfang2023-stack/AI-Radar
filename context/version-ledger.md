@@ -37,6 +37,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Dashboard links to `operations-console.html` and keeps the existing operations backend.
 - Daily automation chain: Raw / Pool monitoring -> business-signal Cards -> business-signal data -> operations data -> PR / merge -> GitHub Pages -> local Obsidian sync.
 - First-Line Viewpoints and Community Intelligence have independent daily data builds and may persist separately when the business-signal chain is blocked.
+- Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
 
@@ -75,6 +76,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 - Business Signals and First-Line Viewpoints using different topbar structures or heights.
 - Community Intelligence showing duplicate keyword-hit posts, backend diagnostic fields, placeholder tags such as `待确认`, or visible internal scores.
 - GitHub daily chain only producing temporary artifacts without persisting Raw / Pool / Card / site data.
+- Netlify configuration, Netlify deploy scripts, or Netlify as a fallback deployment path.
 
 ## Required Checks
 

@@ -1,33 +1,38 @@
-# Dispatch Board｜当前任务看板
+# Dispatch Board - Current Tasks
 
-更新时间：2026-06-07
-状态：V3.3.1 current
+Updated: 2026-06-09
+Status: V3.3.2 current
 
-本看板只保留当前可执行的运行口径。历史任务、旧派发单和 closeout 只作为 `agent-workflow/reports/` 或 `agent-workflow/execution/` 下的档案，不再作为当前执行规则。
+This board keeps only current executable routing. Historical tasks, old dispatches, and closeouts are archive evidence only.
 
-## 当前基线
+## Current Baseline
 
-| 项目 | 状态 | 当前口径 |
+| Item | Status | Current Route |
 |---|---|---|
-| Version | current | `V3.3.1-unified-intelligence-frontstage` |
-| Context | current | 默认入口为 `AGENTS.md` + `context/` + 当前用户任务 |
-| Business Signals | current | 每日前台展示 10 条最值得看的商业信号，按重要性排序 |
-| Raw / Pool / Core Pool | current | Raw >= 150，Pool >= 75，Core Pool >= 30 |
-| First-Line Viewpoints | current | 独立 builders 观点页，不进入商业信号事实、关系图或趋势候选证据 |
-| Automation | current | Business Signals、First-Line Viewpoints、Dashboard 可分别构建；builders 不被 Raw / Pool / Card 失败阻断 |
-| Tags | current | 正式前台数据必须使用 `agent-workflow/product/tag-taxonomy.md` 中的正式 tag |
+| Version | current | `V3.3.2-community-intelligence-v1` |
+| Context | current | `AGENTS.md` + `context/` + current user task |
+| Business Signals | current | Daily Top 10 business-signal Cards, relationship graph, and trend candidates |
+| Intelligence Map | current | Relationship graph and machine-readable intelligence map entry |
+| First-Line Viewpoints | current | Independent builders viewpoint page; not business-signal evidence |
+| Community Intelligence | current | Independent community-sourced cases, tool tactics, opportunities, and document links |
+| Dashboard | current | Operations console and production-chain status |
+| Deployment | current | GitHub Pages only; Netlify is retired |
 
-## 当前前台
+## Current Frontstage
 
-| 页面 | 文件 | 角色 |
+| Page | File | Role |
 |---|---|---|
-| Business Signals / 商业信号 | `01-SiteV2/site/v3-data-observation.html` | 每日 10 条前台卡片、详情、关系图、趋势候选 |
-| First-Line Viewpoints / 一线观点 | `01-SiteV2/site/follow-builders.html` | 独立 builders 观点流 |
-| Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | 运行和质量状态 |
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | Daily Cards, source-backed details, relationship graph, trend candidates |
+| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph and intelligence map entry |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoints |
+| Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community cases, tactics, opportunities, and document links |
+| Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend |
 
-## 当前注意项
+## Current Rules
 
-- 不恢复 V2.2.1 的“今日观察 / 趋势追踪 / 商业内参”作为当前导航。
-- 不使用旧 Raw 80-150 / Pool 20-40 口径。
-- 不新增非体系 tag；旧 `customer-service-proof` 等伪 tag 必须迁移到正式 tag。
-- builders 页面允许在业务信号链路失败时独立更新；如果当日抓取失败，应保留上一份可用数据并写入 fallback 元信息。
+- Do not restore retired V2 routes, daily observation, trend report, or business brief as current outputs.
+- Do not restore old Raw 80-150 / Pool 20-40 execution targets.
+- Do not add non-taxonomy tags.
+- Builders viewpoints must stay outside business-signal facts, relationship-graph evidence, and trend-candidate evidence.
+- Community materials are leads until separately verified and promoted into Raw / Pool / Card.
+- Publication requires explicit user confirmation.

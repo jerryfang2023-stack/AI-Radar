@@ -352,7 +352,7 @@ The following actions are `retired` for V3.3.2:
 | builders / follow-builders mixed into Cards | `retired` | Builders content must remain outside business-signal Cards. |
 | builders / follow-builders mixed into relationship graph | `retired` | Graph evidence must come from accepted business-signal Cards. |
 | builders / follow-builders mixed into trend candidates | `retired` | Trend candidates require multiple business-signal Cards, not viewpoints. |
-| old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, First-Line Viewpoints, and Dashboard. |
+| old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Intelligence Map, First-Line Viewpoints, Community Intelligence, and Dashboard. |
 | temporary-only daily asset generation | `retired` | V3.3.2 automation must persist assets through PR / deploy / sync. |
 
 If a script or old task requires one of these as a blocker for current production, treat it as historical contamination and update the route.

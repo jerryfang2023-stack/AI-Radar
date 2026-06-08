@@ -82,7 +82,7 @@ Product Commander 定允许范围
   -> Product Commander 验收
 ```
 
-GitHub / Netlify 推送或部署必须等用户明确确认。
+GitHub Pages 发布必须等用户明确确认；Netlify 已退役，不再作为网站部署服务。
 
 ## 3. 各 Agent 怎么用
 
@@ -175,7 +175,7 @@ GitHub / Netlify 推送或部署必须等用户明确确认。
 - 脚本和自动化实现。
 - 数据同步。
 - 质量门运行。
-- GitHub / Netlify 状态处理。
+- GitHub Pages 状态处理。
 - 发布风险说明。
 
 输出：
@@ -247,7 +247,7 @@ Skill 是能力模块，不是流程 owner。
 - 改变每日监测生产线。
 - 改变 Raw / Pool / Card schema。
 - 改变会员、权限、Admin、支付或发布路径。
-- 改变 GitHub / Netlify / 部署策略。
+- 改变 GitHub Pages / 部署策略。
 - 用户没有确认但任务会影响正式网站。
 
 ## 8. 不再恢复的模式

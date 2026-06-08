@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-06-07
+last_updated: 2026-06-09
 use_when:
   - github automation
   - daily monitoring
@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# V3.3.1 Automation Loop
+# V3.3.2 Automation Loop
 
-V3.3.1 automation must be persistent, deployable, and syncable to local Obsidian. It is not enough to create temporary artifacts.
+V3.3.2 automation must be persistent, deployable, and syncable to local Obsidian. It is not enough to create temporary artifacts.
 
 ## GitHub Daily Chain
 

@@ -49,4 +49,4 @@ node agent-workflow/tools/assert-guanlan-automation-readiness.mjs --command=asse
 
 ## 发布检查
 
-GitHub / Netlify 只有在用户明确允许时执行。暂停状态下不得推送或部署。
+发布路径只保留 GitHub Pages。Netlify 已退役，不得作为网站部署、预览或 fallback 服务恢复。

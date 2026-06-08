@@ -108,7 +108,7 @@ function mountFooter() {
           <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜AI Wavesight AI">
         </a>
         <div class="footer-legal">
-          <span class="footer-copy">© 2026 WaveSight AI · V2.2.1</span>
+          <span class="footer-copy">© 2026 WaveSight AI · V3.3.2</span>
           <a class="footer-icp" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
             <span aria-hidden="true"></span>
             粤ICP备2021076703号-3

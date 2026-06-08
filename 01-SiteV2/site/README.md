@@ -1,28 +1,39 @@
-# V3.1 Site
+# WaveSight AI V3.3.2 Site
 
-状态：current-site-workbench
-更新时间：2026-06-05
+Status: current-site-workbench
+Updated: 2026-06-09
 
-## 定位
+## Positioning
 
-本目录是观澜 AI V3.1 数据观察台与运营后台工程入口。
+This directory is the current WaveSight AI V3.3.2 site and operations entry.
 
-## 任务启动
+Current public frontstage:
 
-站点开发任务默认只读取：
+- Business Signals: `v3-data-observation.html`
+- Intelligence Map: `intelligence-map.html`
+- First-Line Viewpoints: `follow-builders.html`
+- Community Intelligence: `community-intelligence.html`
+
+Current backend:
+
+- Dashboard: `operations-console.html`
+
+## Task Startup
+
+For site work, read only:
 
 1. `AGENTS.md`
 2. `context/00-current-state.md`
 3. `context/02-vi-style.md`
-4. 当前任务派发单
-5. 派发单指定的页面、组件或数据文件
+4. `context/frontstage-page-contracts.md`
+5. The current task dispatch and directly relevant page, script, or data file
 
-当前暂停使用观澜前台文案规范与文案门禁；商业信号标题优先使用可追溯原文标题，英文展示内容必须翻译为中文。
-字体任务补读 `docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md` 和 `skills/guanlan-typography-qc/SKILL.md`。
+Do not use old V2 homepage, daily observation, trend report, or business brief routes as current execution sources.
 
-## 开发原则
+## Development Principles
 
-- 桌面端优先。
-- 普通前台不出现后台、同步、JSON、恢复、编辑等内部痕迹。
-- 页面生成前先确认 Typography 页面位置表；前台文案以事实、来源和中文可读为准。
-- GitHub / Netlify 推送或部署必须等用户明确确认。
+- Desktop first unless the task explicitly asks for mobile.
+- Public frontstage pages must not expose backend, sync, JSON, recovery, or edit traces.
+- Frontstage facts must be source-backed and readable in Chinese.
+- GitHub Pages publication requires explicit user confirmation.
+- Netlify is retired and must not be restored as a website deployment service.
