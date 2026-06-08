@@ -44,6 +44,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 
 - `01-SiteV2/site/v3-data-observation.html`: business signals.
 - `01-SiteV2/site/follow-builders.html`: first-line viewpoints / builders.
+- `01-SiteV2/site/community-intelligence.html`: community intelligence (V3.3.2 new).
 - `01-SiteV2/site/operations-console.html`: dashboard / operations backend.
 
 ## Paused Or Retired
