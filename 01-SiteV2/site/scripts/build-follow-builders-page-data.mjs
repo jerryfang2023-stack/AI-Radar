@@ -27,6 +27,7 @@ const remoteFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
   podcasts: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json",
 };
+const fallbackTopic = "产品与创业";
 
 function decodeText(value = "") {
   return String(value)
@@ -64,7 +65,7 @@ function topicForText(text = "") {
   if (/\b(code|coding|developer|software|figma|cursor|replit|vibe)\b/.test(value)) return "AI 编程";
   if (/\b(inference|compute|gpu|nvidia|model|storage|filesystem|runtime|api)\b/.test(value)) return "AI 基础设施";
   if (/\b(startup|founder|vc|arr|customer|saas|product|ship)\b/.test(value)) return "产品与创业";
-  return "Builder 观点";
+  return fallbackTopic;
 }
 
 function observationForTopic(topic) {
@@ -73,9 +74,8 @@ function observationForTopic(topic) {
     "AI 编程": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
     "AI 基础设施": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
     "产品与创业": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-    "Builder 观点": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
   };
-  return map[topic] || map["Builder 观点"];
+  return map[topic] || map[fallbackTopic];
 }
 
 const tagCatalog = {
@@ -103,7 +103,6 @@ function tagsForTopic(topic, source = "x") {
     "AI 编程": ["opinion-ai-coding", "track-ai-coding"],
     "AI 基础设施": ["opinion-model-infra", "track-ai-infra"],
     "产品与创业": ["opinion-product-strategy", "track-enterprise-workflow"],
-    "Builder 观点": ["opinion-product-strategy", "track-enterprise-workflow"],
   };
   const sourceTags = {
     x: "source-social",
@@ -111,7 +110,7 @@ function tagsForTopic(topic, source = "x") {
     blog: "source-blog",
   };
   const ids = [
-    ...(topicTags[topic] || topicTags["Builder 观点"]),
+    ...(topicTags[topic] || topicTags[fallbackTopic]),
     sourceTags[source] || "source-social",
   ];
   return [...new Set(ids)].map(tagFromTaxonomy).filter(Boolean);
