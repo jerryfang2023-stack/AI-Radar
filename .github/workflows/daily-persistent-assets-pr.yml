@@ -2,8 +2,8 @@
 
 on:
   schedule:
-    # 08:00 Asia/Shanghai, every day.
-    - cron: "0 0 * * *"
+    # 09:07 Asia/Shanghai, every day. Avoids exact-hour GitHub Actions schedule congestion.
+    - cron: "7 1 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -108,7 +108,7 @@ jobs:
             echo "- generated_at: $(date -Is)"
             echo "- mode: persistent_assets_pr"
             echo "- trigger: ${{ github.event_name }}"
-            echo "- schedule: 08:00 Asia/Shanghai daily"
+            echo "- schedule: 09:07 Asia/Shanghai daily"
             echo "- skip_existing_assets: ${{ steps.existing-assets.outputs.skip }}"
             echo "- skip_reason: ${{ steps.existing-assets.outputs.reason }}"
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
