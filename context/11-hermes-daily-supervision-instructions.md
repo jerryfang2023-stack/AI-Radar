@@ -63,6 +63,20 @@ notes: <one or two lines of concrete evidence>
 
 Do not send broad descriptions without report paths. Codex should be able to start from the report and reproduce the failure.
 
+Hermes can also write the request as a file under:
+
+```text
+agent-workflow/inbox/hermes-to-codex/YYYY-MM-DD-<lane>-<short-slug>.md
+```
+
+Codex reads the inbox with:
+
+```powershell
+npm run inbox:hermes
+```
+
+Use `agent-workflow/inbox/hermes-to-codex/TEMPLATE.md` for the required fields.
+
 ## Boundaries
 
 - Do not treat `warning` as a production failure unless it repeats or blocks publication.

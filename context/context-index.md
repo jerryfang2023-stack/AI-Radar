@@ -32,6 +32,12 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision instructions | Daily monitoring supervision, Codex repair handoff |
 | `context/08-card-asset-qc-checklist.md` | Card asset QC checklist | Before Card acceptance or frontstage sync |
 
+## Current Inboxes
+
+| Path | Purpose |
+|---|---|
+| `agent-workflow/inbox/hermes-to-codex/` | File-based Hermes repair requests for Codex |
+
 ## Current Skills
 
 | Skill | Purpose |
