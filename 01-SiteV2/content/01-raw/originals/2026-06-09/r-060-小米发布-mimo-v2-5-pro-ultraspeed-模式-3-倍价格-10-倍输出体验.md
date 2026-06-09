@@ -1,0 +1,352 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-060
+title: "小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验"
+original_url: "https://www.ithome.com/0/961/659.htm"
+canonical_url: "https://ithome.com/0/961/659.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-08T16:26:37.000Z"
+collected_at: 2026-06-09T02:33:36.590Z
+language: mixed
+full_text_hash: 4cc482175ac1bad7
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-09/r-060-小米发布-mimo-v2-5-pro-ultraspeed-模式-3-倍价格-10-倍输出体验.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-09/r-060-小米发布-mimo-v2-5-pro-ultraspeed-模式-3-倍价格-10-倍输出体验.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 47
+extractor_diagnostics: {"readability_score":47,"text_length":1621,"paragraph_count":18,"sentence_count":8,"boilerplate_hits":3,"symbol_ratio":0.0012,"method":"body-visible-text"}
+has_full_text: true
+content_length: 1621
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4cc482175ac1bad7","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验","discovery_summary":"小米与 TileRT 联合发布 MiMo-V2.5-Pro UltraSpeed 模式，在通用 GPU 上突破万亿参数模型生成速度 1000 tokens/s。API 同步上线，定价为原版 3 倍，输出速度提升约 10 倍，采取申请制限时开放（6 月 9 日至 23 日）。通过审核用户可获两周免费 Chat 体验，每日最多队列 10 次，单会话上限 30 分钟，空闲超 5 分钟自动释放资源。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/961/659.htm","discovered_at":"2026-06-09T02:25:44.705Z","rank_on_page":258,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ee72880234991082
+content_hash: 4cc482175ac1bad7
+semantic_hash: 0d84ebc2b51af055
+duplicate_of: ""
+first_seen_at: "2026-06-08T16:26:37.000Z"
+last_seen_at: 2026-06-09T02:33:36.590Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全"],"numbers":["2.5","3 倍","10 倍","1000","6","9","23","10 次"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 6 月 9 日消息，小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.","5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。","▲ 10 秒，做一个贪吃蛇小游戏 MiMo-V2."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"小米与 TileRT 联合发布 MiMo-V2.5-Pro UltraSpeed 模式，在通用 GPU 上突破万亿参数模型生成速度 1000 tokens/s。API 同步上线，定价为原版 3 倍，输出速度提升约 10 倍，采取申请制限时开放（6 月 9 日至 23 日）。通过审核用户可获两周免费 Chat 体验，每日最多队列 10 次，单会话上限 30 分钟，空闲超 5 分钟自动释放资源。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 小米发布 MiMo-V2.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验 2026/6/9 0:26:37 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 软媒用户1392612 、 顺势而为 的线索投递！","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 9 日消息，小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"▲ 10 秒，做一个贪吃蛇小游戏 MiMo-V2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验
+
+## clean_text
+
+小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 智能时代 > 人工智能
+小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验
+2026/6/9 0:26:37
+来源： IT之家
+作者： 沁沧（实习）
+责编： 沁沧
+评论：
+感谢IT之家网友 软媒用户1392612 、 顺势而为 的线索投递！
+IT之家 6 月 9 日消息，小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。
+▲ 10 秒，做一个贪吃蛇小游戏 MiMo-V2.5-Pro-UltraSpeed API 同步上线，采用限时体验价， 定价为 MiMo-V2.5-Pro 的 3 倍，同时提供输出速度约 10 倍的提升 （仅支持 API 体验，不支持 Token Plan）。官方称之为 3 倍价格提升，10 倍输出体验。
+作为参考，小米 MiMo-V2.5-Pro 每百万 tokens 输入 0.025 元（缓存命中）/ 3 元（未命中缓存），每百万 tokens 输出 6 元。
+▲ 1 分钟，复刻一个 macOS 系统 官方表示，由于高速推理资源供给有限，本次 MiMo-V2.5-Pro-UltraSpeed 采取申请制限时开放 ，申请通过的用户可限时接入 API 体验，时间仅限 2026 年 6 月 9 日至 6 月 23 日 23:59。
+由于资源紧张，本次试用名额有限，提交申请后不承诺审核时效性和审核通过率；小米将优先审核具备真实业务需求的企业与专业开发者场景。
+通过审核的用户可获得限时免费的 Chat 体验 （两周开放窗口内有效），为保障资源受限条件下的体验质量与使用公平性，试用服务规则如下：每个账号每日最多成功进入队列 10 次；单次会话时长上限 30 分钟；如会话空闲超过 5 分钟，系统将自动释放资源。
+IT之家附相关链接如下：
+申请入口： platform.xiaomimimo.com/ultraspeed
+Chat 体验： ultraspeed.xiaomimimo.com
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 小米 ， MiMo ， 模型
+TCL 华星官宣供屏小米 17T 系列手机：最新发光材料与 2D 纯直屏工艺，全系标配莱茵四重护眼认证
+小米手环 9 新内测固件 3.1.26 版本开推：功耗优化、睡眠监测算法升级，支持更多车钥匙
+小米官方回应 SU7 Ultra 在江西省南昌市英雄大桥起火事件，称初步排除电池自燃引发起火
+徐洁云回应雷军增持金山软件：雷总持股比例增加是由于小米增持，并非个人买入
+小米 17T 国行版 / 外版细节差异：标准版电池大 500mAh，Pro 版新增 16GB 内存
+小米公司发言人：多名网络用户就造谣小米公司公开道歉
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 智能时代 > 人工智能
+小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验
+2026/6/9 0:26:37
+来源： IT之家
+作者： 沁沧（实习）
+责编： 沁沧
+评论：
+感谢IT之家网友 软媒用户1392612 、 顺势而为 的线索投递！
+IT之家 6 月 9 日消息，小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。
+▲ 10 秒，做一个贪吃蛇小游戏 MiMo-V2.5-Pro-UltraSpeed API 同步上线，采用限时体验价， 定价为 MiMo-V2.5-Pro 的 3 倍，同时提供输出速度约 10 倍的提升 （仅支持 API 体验，不支持 Token Plan）。官方称之为 3 倍价格提升，10 倍输出体验。
+作为参考，小米 MiMo-V2.5-Pro 每百万 tokens 输入 0.025 元（缓存命中）/ 3 元（未命中缓存），每百万 tokens 输出 6 元。
+▲ 1 分钟，复刻一个 macOS 系统 官方表示，由于高速推理资源供给有限，本次 MiMo-V2.5-Pro-UltraSpeed 采取申请制限时开放 ，申请通过的用户可限时接入 API 体验，时间仅限 2026 年 6 月 9 日至 6 月 23 日 23:59。
+由于资源紧张，本次试用名额有限，提交申请后不承诺审核时效性和审核通过率；小米将优先审核具备真实业务需求的企业与专业开发者场景。
+通过审核的用户可获得限时免费的 Chat 体验 （两周开放窗口内有效），为保障资源受限条件下的体验质量与使用公平性，试用服务规则如下：每个账号每日最多成功进入队列 10 次；单次会话时长上限 30 分钟；如会话空闲超过 5 分钟，系统将自动释放资源。
+IT之家附相关链接如下：
+申请入口： platform.xiaomimimo.com/ultraspeed
+Chat 体验： ultraspeed.xiaomimimo.com
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 小米 ， MiMo ， 模型
+TCL 华星官宣供屏小米 17T 系列手机：最新发光材料与 2D 纯直屏工艺，全系标配莱茵四重护眼认证
+小米手环 9 新内测固件 3.1.26 版本开推：功耗优化、睡眠监测算法升级，支持更多车钥匙
+小米官方回应 SU7 Ultra 在江西省南昌市英雄大桥起火事件，称初步排除电池自燃引发起火
+徐洁云回应雷军增持金山软件：雷总持股比例增加是由于小米增持，并非个人买入
+小米 17T 国行版 / 外版细节差异：标准版电池大 500mAh，Pro 版新增 16GB 内存
+小米公司发言人：多名网络用户就造谣小米公司公开道歉
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 47
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":47,"text_length":1621,"paragraph_count":18,"sentence_count":8,"boilerplate_hits":3,"symbol_ratio":0.0012,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   小米与 TileRT 联合发布 MiMo-V2.5-Pro UltraSpeed 模式，在通用 GPU 上突破万亿参数模型生成速度 1000 tokens/s。API 同步上线，定价为原版 3 倍，输出速度提升约 10 倍，采取申请制限时开放（6 月 9 日至 23 日）。通过审核用户可获两周免费 Chat 体验，每日最多队列 10 次，单会话上限 30 分钟，空闲超 5 分钟自动释放资源。
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 小米发布 MiMo-V2.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验 2026/6/9 0:26:37 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 软媒用户1392612 、 顺势而为 的线索投递！
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 9 日消息，小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   ▲ 10 秒，做一个贪吃蛇小游戏 MiMo-V2.
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全
+- numbers: 2.5, 3 倍, 10 倍, 1000, 6, 9, 23, 10 次
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 9 日消息，小米 MiMo 官方昨日宣布，与 TileRT 联合发布 Xiaomi MiMo-V2. / 5-Pro 的 UltraSpeed 模式，通过模型与系统的极致 Codesign， 在通用 GPU 上将万亿参数模型的生成速度首次突破 1000 tokens/s 。 / ▲ 10 秒，做一个贪吃蛇小游戏 MiMo-V2.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验","discovery_summary":"小米与 TileRT 联合发布 MiMo-V2.5-Pro UltraSpeed 模式，在通用 GPU 上突破万亿参数模型生成速度 1000 tokens/s。API 同步上线，定价为原版 3 倍，输出速度提升约 10 倍，采取申请制限时开放（6 月 9 日至 23 日）。通过审核用户可获两周免费 Chat 体验，每日最多队列 10 次，单会话上限 30 分钟，空闲超 5 分钟自动释放资源。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/961/659.htm","discovered_at":"2026-06-09T02:25:44.705Z","rank_on_page":258,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+小米与 TileRT 联合发布 MiMo-V2.5-Pro UltraSpeed 模式，在通用 GPU 上突破万亿参数模型生成速度 1000 tokens/s。API 同步上线，定价为原版 3 倍，输出速度提升约 10 倍，采取申请制限时开放（6 月 9 日至 23 日）。通过审核用户可获两周免费 Chat 体验，每日最多队列 10 次，单会话上限 30 分钟，空闲超 5 分钟自动释放资源。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

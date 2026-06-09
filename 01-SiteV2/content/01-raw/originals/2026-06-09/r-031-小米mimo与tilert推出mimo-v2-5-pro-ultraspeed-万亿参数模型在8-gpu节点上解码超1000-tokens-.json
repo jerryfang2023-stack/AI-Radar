@@ -1,0 +1,264 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-031",
+  "title": "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s",
+  "original_url": "https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus",
+  "canonical_url": "https://marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-08T16:49:04.000Z",
+  "collected_at": "2026-06-09T02:33:36.510Z",
+  "language": "mixed",
+  "full_text": "Artificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nEditors Pick\nMachine Learning\nNew Releases\nSoftware Engineering\nStaff\nTech News\nUncategorized\nInference speed is becoming a competitive metric for large language models. Xiaomi’s MiMo team just released MiMo-V2.5-Pro-UltraSpeed, built in collaboration with the TileRT systems group. It decodes faster than 1000 tokens per second on a 1-trillion-parameter model. Xiaomi team describes this as a first at trillion-parameter scale. Demos show generation peaks near 1200 tokens per second. The notable part is the hardware: it runs on commodity GPUs, not custom silicon.\nWhat is MiMo-V2.5-Pro-UltraSpeed\nUltraSpeed is a high-speed serving mode for the existing MiMo-V2.5-Pro model. The base model uses a Mixture-of-Experts (MoE) architecture at trillion-parameter scale. UltraSpeed targets generation speed rather than model capability. It changes how fast the model produces output tokens. The speedup comes from three coordinated techniques across the model and the serving system. Xiaomi calls this approach extreme model-system codesign. Crucially, the entire stack runs on a single standard 8-GPU commodity node.\nThe Speed Case: Three Layers Working Together\nThe first layer is FP4 quantization. At trillion scale, FP8 or FP16 weights create heavy memory and bandwidth pressure. Lower bit-width weights move through memory faster, which directly lifts decode speed. Xiaomi uses the MXFP4 format, applied selectively to the MoE Experts only. Other modules keep higher precision, reported as FP8 by TileRT. Experts hold most parameters and tolerate quantization best, so the tradeoff is favorable. Quantization-Aware Training (QAT) keeps benchmark quality essentially on par with the original.\nThe second layer is DFlash speculative decoding, covered in detail below. The third layer is TileRT, the system that executes everything on the GPU. Each technique alone is not enough. The 1000 TPS result needs all three aligned tightly.\nDFlash: Parallel Drafting Without a Serial Bottleneck\nStandard speculative decoding uses a small draft model to guess upcoming tokens. The large model then verifies those guesses in parallel. Rejection sampling keeps output identical to normal decoding, so quality is lossless. The problem is that the draft model still generates tokens one at a time. DFlash, a method from the research community, removes that constraint. It uses block-level masked parallel prediction. The draft model fills a whole block of masked positions in one forward pass.\nXiaomi tuned DFlash with the Muon second-order optimizer and model self-distillation. The draft model uses Sliding Window Attention (SWA) only, matching the MiMo-V2 design. This makes per-prediction compute constant rather than growing with context length. Block size is capped at 8 to limit verification cost and raise concurrency.\nAcceptance length measures how many draft tokens survive verification each round.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\nIn coding, six to seven of eight draft tokens are accepted per round. Some samples reach a maximum of 7.14.\nTileRT: Squeezing the Microseconds\nAt 1000 TPS, each operator runs for only microseconds. Traditional systems launch operators one by one, and each launch costs time. Those gaps fracture the execution stream and become the real bottleneck. TileRT replaces this with a Persistent Engine Kernel that stays resident on the GPU. It uses Warp Specialization to split data movement, compute, and communication into coordinated roles. Small operations like RMSNorm, RoPE, and KV cache writes turn into bottlenecks at this scale. The system was co-designed with the FP4 and DFlash choices, not added afterward.\nUse Cases\nThe release targets latency-sensitive work where waiting breaks the loop:\nParallel reasoning: run many Best-of-N or tree-search paths within the same wall-clock time.\nCoding agents: faster code generation cuts the wait between agent steps.\nReal-time decision loops: trading signal generation, fraud interception, and live dialogue.\nInteractive prototyping: demos show a Snake game in about 10 seconds and a macOS interface in about one minute.\nThese are throughput-bound workloads where raw token speed is the binding constraint.\nHow It Compares\nThe first table contrasts the two routes to extreme decode speed.\nApproach Hardware How speed is achieved\nCerebras Wafer-Scale integration (custom) Scale on a single custom wafer\nGroq Custom architecture Pure on-chip SRAM\nMiMo × TileRT Commodity GPUs (8-GPU node) Model-system codesign: FP4 + DFlash + TileRT\nThe second table compares the standard model with the UltraSpeed mode.\nDimension MiMo-V2.5-Pro MiMo-V2.5-Pro-UltraSpeed\nDecode speed Baseline ~10× faster (1000+ TPS)\nPrice 1× 3×\nWeight precision Standard FP4 MoE Experts via QAT\nDecoding Standard autoregressive DFlash speculative decoding\nAccess Standard model plans API only, application-based trial\nToken Plan Supported Not supported\nAccess, Pricing, and Open Source\nUltraSpeed ships through a limited, application-based window. The API trial runs June 9 to June 23, 2026. Pricing is 3× the standard MiMo-V2.5-Pro rate, for roughly 10× the speed. It is API only, and the Token Plan is not supported. Approved users also receive free Chat access during the trial. Chat limits apply: 10 queue entries daily, 30-minute sessions, and 5-minute idle release. Xiaomi open-sourced the MiMo-V2.5-Pro-FP4-DFlash checkpoint on Hugging Face . TileRT has open-sourced select modules on GitHub.\nStrengths and Limitations\nStrengths\n1000+ TPS on a 1T model without custom silicon.\nLossless decoding through rejection sampling in DFlash.\nFP4 applied only where tolerance is highest, preserving quality.\nAn open checkpoint lets the community test the claims.\nLimitations\nAccess is gated, short, and approval-based at launch.\nPricing triples per token versus the standard model.\nAcceptance length drops in open-ended conversation.\nIndependent third-party speed verification is not yet public.\nKey Takeaways\nXiaomi MiMo and TileRT decode a 1-trillion-parameter model past 1000 tokens per second on commodity GPUs.\nThe speedup comes from three layers: FP4 quantization, DFlash speculative decoding, and the TileRT runtime.\nFP4 (MXFP4) is applied only to MoE Experts; QAT keeps capability essentially on par.\nDFlash predicts a whole masked block per forward pass, hitting 6.30 average acceptance length in coding.\nUltraSpeed runs on a single 8-GPU node via an application-based API trial, June 9–23, 2026.\nMarktechpost’s Visual Explainer\nGUIDE • INFERENCE SYSTEMS\nMiMo-V2.5-Pro-UltraSpeed: 1000+ Tokens Per Second on a 1T Model\nXiaomi MiMo & TileRT &mdash; FP4 quantization, DFlash speculative decoding, and a microsecond-scale runtime.\n01 / 08\nWhat It Is\nXiaomi’s MiMo team built it with the TileRT systems group.\nIt decodes over 1000 tokens/s on a 1-trillion-parameter model.\nDemos show generation peaks near 1200 tokens/s.\nIt runs on commodity GPUs, a single standard 8-GPU node.\nReleased June 8, 2026.\n1000+ tokens / second\n1T parameters (MoE)\n8 commodity GPUs\n02 / 08\nThree Layers Working Together\nFP4 quantization shrinks weights and eases bandwidth pressure.\nDFlash speculative decoding predicts many tokens in parallel.\nTileRT executes the whole pipeline at microsecond scale.\nXiaomi calls this approach extreme model-system codesign.\nNo single technique is enough; all three must align.\n03 / 08\nLayer 1 &mdash; FP4 Quantization\nUses the MXFP4 format to lower memory and bandwidth cost.\nApplied selectively to the MoE Experts only.\nOther modules keep higher precision (FP8, per TileRT).\nExperts hold most parameters and tolerate quantization best.\nQAT keeps capability essentially on par with the original.\n04 / 08\nLayer 2 &mdash; DFlash Speculative Decoding\nA research-community method using block-level masked parallel prediction.\nThe draft model fills a whole block in one forward pass.\nIt uses Sliding Window Attention; block size capped at 8.\nRejection sampling keeps the output lossless.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\n05 / 08\nLayer 3 &mdash; TileRT Runtime\nAt 1000 TPS, each operator runs for only microseconds.\nA Persistent Engine Kernel stays resident on the GPU.\nWarp Specialization splits data movement, compute, and communication.\nSmall ops like RMSNorm and RoPE become bottlenecks here.\nThe runtime was co-designed with the FP4 and DFlash choices.\n06 / 08\nWhere It Fits\nParallel reasoning: many Best-of-N or tree-search paths at once.\nCoding agents: less wait between agent steps.\nReal-time loops: trading signals, fraud interception, live dialogue.\nInteractive prototyping: a Snake game in about 10 seconds.\n07 / 08\nStandard vs UltraSpeed\nDimension MiMo-V2.5-Pro UltraSpeed\nDecode speed Baseline ~10&times; (1000+ TPS)\nPrice 1&times; 3&times;\nWeights Standard FP4 MoE Experts (QAT)\nDecoding Autoregressive DFlash speculative\nAccess Standard plans API only, by application\n08 / 08\nAccess, Pricing & Open Source\nAPI trial runs June 9 to June 23, 2026 (Beijing time).\nPricing is 3&times; the standard rate for roughly 10&times; speed.\nAPI only; the Token Plan is not supported.\nCheckpoint open-sourced: MiMo-V2.5-Pro-FP4-DFlash on Hugging Face.\nTileRT has open-sourced select modules on GitHub.\n← Prev\nNext →\nMarktechpost\nAI research, models, and developer tools &mdash; explained for engineers.\nCheck out the Model weights and Technical details . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us",
+  "clean_text": "Artificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nEditors Pick\nMachine Learning\nNew Releases\nSoftware Engineering\nStaff\nTech News\nUncategorized\nInference speed is becoming a competitive metric for large language models. Xiaomi’s MiMo team just released MiMo-V2.5-Pro-UltraSpeed, built in collaboration with the TileRT systems group. It decodes faster than 1000 tokens per second on a 1-trillion-parameter model. Xiaomi team describes this as a first at trillion-parameter scale. Demos show generation peaks near 1200 tokens per second. The notable part is the hardware: it runs on commodity GPUs, not custom silicon.\nWhat is MiMo-V2.5-Pro-UltraSpeed\nUltraSpeed is a high-speed serving mode for the existing MiMo-V2.5-Pro model. The base model uses a Mixture-of-Experts (MoE) architecture at trillion-parameter scale. UltraSpeed targets generation speed rather than model capability. It changes how fast the model produces output tokens. The speedup comes from three coordinated techniques across the model and the serving system. Xiaomi calls this approach extreme model-system codesign. Crucially, the entire stack runs on a single standard 8-GPU commodity node.\nThe Speed Case: Three Layers Working Together\nThe first layer is FP4 quantization. At trillion scale, FP8 or FP16 weights create heavy memory and bandwidth pressure. Lower bit-width weights move through memory faster, which directly lifts decode speed. Xiaomi uses the MXFP4 format, applied selectively to the MoE Experts only. Other modules keep higher precision, reported as FP8 by TileRT. Experts hold most parameters and tolerate quantization best, so the tradeoff is favorable. Quantization-Aware Training (QAT) keeps benchmark quality essentially on par with the original.\nThe second layer is DFlash speculative decoding, covered in detail below. The third layer is TileRT, the system that executes everything on the GPU. Each technique alone is not enough. The 1000 TPS result needs all three aligned tightly.\nDFlash: Parallel Drafting Without a Serial Bottleneck\nStandard speculative decoding uses a small draft model to guess upcoming tokens. The large model then verifies those guesses in parallel. Rejection sampling keeps output identical to normal decoding, so quality is lossless. The problem is that the draft model still generates tokens one at a time. DFlash, a method from the research community, removes that constraint. It uses block-level masked parallel prediction. The draft model fills a whole block of masked positions in one forward pass.\nXiaomi tuned DFlash with the Muon second-order optimizer and model self-distillation. The draft model uses Sliding Window Attention (SWA) only, matching the MiMo-V2 design. This makes per-prediction compute constant rather than growing with context length. Block size is capped at 8 to limit verification cost and raise concurrency.\nAcceptance length measures how many draft tokens survive verification each round.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\nIn coding, six to seven of eight draft tokens are accepted per round. Some samples reach a maximum of 7.14.\nTileRT: Squeezing the Microseconds\nAt 1000 TPS, each operator runs for only microseconds. Traditional systems launch operators one by one, and each launch costs time. Those gaps fracture the execution stream and become the real bottleneck. TileRT replaces this with a Persistent Engine Kernel that stays resident on the GPU. It uses Warp Specialization to split data movement, compute, and communication into coordinated roles. Small operations like RMSNorm, RoPE, and KV cache writes turn into bottlenecks at this scale. The system was co-designed with the FP4 and DFlash choices, not added afterward.\nUse Cases\nThe release targets latency-sensitive work where waiting breaks the loop:\nParallel reasoning: run many Best-of-N or tree-search paths within the same wall-clock time.\nCoding agents: faster code generation cuts the wait between agent steps.\nReal-time decision loops: trading signal generation, fraud interception, and live dialogue.\nInteractive prototyping: demos show a Snake game in about 10 seconds and a macOS interface in about one minute.\nThese are throughput-bound workloads where raw token speed is the binding constraint.\nHow It Compares\nThe first table contrasts the two routes to extreme decode speed.\nApproach Hardware How speed is achieved\nCerebras Wafer-Scale integration (custom) Scale on a single custom wafer\nGroq Custom architecture Pure on-chip SRAM\nMiMo × TileRT Commodity GPUs (8-GPU node) Model-system codesign: FP4 + DFlash + TileRT\nThe second table compares the standard model with the UltraSpeed mode.\nDimension MiMo-V2.5-Pro MiMo-V2.5-Pro-UltraSpeed\nDecode speed Baseline ~10× faster (1000+ TPS)\nPrice 1× 3×\nWeight precision Standard FP4 MoE Experts via QAT\nDecoding Standard autoregressive DFlash speculative decoding\nAccess Standard model plans API only, application-based trial\nToken Plan Supported Not supported\nAccess, Pricing, and Open Source\nUltraSpeed ships through a limited, application-based window. The API trial runs June 9 to June 23, 2026. Pricing is 3× the standard MiMo-V2.5-Pro rate, for roughly 10× the speed. It is API only, and the Token Plan is not supported. Approved users also receive free Chat access during the trial. Chat limits apply: 10 queue entries daily, 30-minute sessions, and 5-minute idle release. Xiaomi open-sourced the MiMo-V2.5-Pro-FP4-DFlash checkpoint on Hugging Face . TileRT has open-sourced select modules on GitHub.\nStrengths and Limitations\nStrengths\n1000+ TPS on a 1T model without custom silicon.\nLossless decoding through rejection sampling in DFlash.\nFP4 applied only where tolerance is highest, preserving quality.\nAn open checkpoint lets the community test the claims.\nLimitations\nAccess is gated, short, and approval-based at launch.\nPricing triples per token versus the standard model.\nAcceptance length drops in open-ended conversation.\nIndependent third-party speed verification is not yet public.\nKey Takeaways\nXiaomi MiMo and TileRT decode a 1-trillion-parameter model past 1000 tokens per second on commodity GPUs.\nThe speedup comes from three layers: FP4 quantization, DFlash speculative decoding, and the TileRT runtime.\nFP4 (MXFP4) is applied only to MoE Experts; QAT keeps capability essentially on par.\nDFlash predicts a whole masked block per forward pass, hitting 6.30 average acceptance length in coding.\nUltraSpeed runs on a single 8-GPU node via an application-based API trial, June 9–23, 2026.\nMarktechpost’s Visual Explainer\nGUIDE • INFERENCE SYSTEMS\nMiMo-V2.5-Pro-UltraSpeed: 1000+ Tokens Per Second on a 1T Model\nXiaomi MiMo & TileRT &mdash; FP4 quantization, DFlash speculative decoding, and a microsecond-scale runtime.\n01 / 08\nWhat It Is\nXiaomi’s MiMo team built it with the TileRT systems group.\nIt decodes over 1000 tokens/s on a 1-trillion-parameter model.\nDemos show generation peaks near 1200 tokens/s.\nIt runs on commodity GPUs, a single standard 8-GPU node.\nReleased June 8, 2026.\n1000+ tokens / second\n1T parameters (MoE)\n8 commodity GPUs\n02 / 08\nThree Layers Working Together\nFP4 quantization shrinks weights and eases bandwidth pressure.\nDFlash speculative decoding predicts many tokens in parallel.\nTileRT executes the whole pipeline at microsecond scale.\nXiaomi calls this approach extreme model-system codesign.\nNo single technique is enough; all three must align.\n03 / 08\nLayer 1 &mdash; FP4 Quantization\nUses the MXFP4 format to lower memory and bandwidth cost.\nApplied selectively to the MoE Experts only.\nOther modules keep higher precision (FP8, per TileRT).\nExperts hold most parameters and tolerate quantization best.\nQAT keeps capability essentially on par with the original.\n04 / 08\nLayer 2 &mdash; DFlash Speculative Decoding\nA research-community method using block-level masked parallel prediction.\nThe draft model fills a whole block in one forward pass.\nIt uses Sliding Window Attention; block size capped at 8.\nRejection sampling keeps the output lossless.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\n05 / 08\nLayer 3 &mdash; TileRT Runtime\nAt 1000 TPS, each operator runs for only microseconds.\nA Persistent Engine Kernel stays resident on the GPU.\nWarp Specialization splits data movement, compute, and communication.\nSmall ops like RMSNorm and RoPE become bottlenecks here.\nThe runtime was co-designed with the FP4 and DFlash choices.\n06 / 08\nWhere It Fits\nParallel reasoning: many Best-of-N or tree-search paths at once.\nCoding agents: less wait between agent steps.\nReal-time loops: trading signals, fraud interception, live dialogue.\nInteractive prototyping: a Snake game in about 10 seconds.\n07 / 08\nStandard vs UltraSpeed\nDimension MiMo-V2.5-Pro UltraSpeed\nDecode speed Baseline ~10&times; (1000+ TPS)\nPrice 1&times; 3&times;\nWeights Standard FP4 MoE Experts (QAT)\nDecoding Autoregressive DFlash speculative\nAccess Standard plans API only, by application\n08 / 08\nAccess, Pricing & Open Source\nAPI trial runs June 9 to June 23, 2026 (Beijing time).\nPricing is 3&times; the standard rate for roughly 10&times; speed.\nAPI only; the Token Plan is not supported.\nCheckpoint open-sourced: MiMo-V2.5-Pro-FP4-DFlash on Hugging Face.\nTileRT has open-sourced select modules on GitHub.\n← Prev\nNext →\nMarktechpost\nAI research, models, and developer tools &mdash; explained for engineers.\nCheck out the Model weights and Technical details . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-09/r-031-小米mimo与tilert推出mimo-v2-5-pro-ultraspeed-万亿参数模型在8-gpu节点上解码超1000-tokens-.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-09/r-031-小米mimo与tilert推出mimo-v2-5-pro-ultraspeed-万亿参数模型在8-gpu节点上解码超1000-tokens-.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 9773,
+    "paragraph_count": 106,
+    "sentence_count": 114,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0002,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 9773,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "5231bfc0e8d859a4",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s",
+    "discovery_summary": "小米MiMo团队与TileRT合作发布MiMo-V2.5-Pro-UltraSpeed服务模式，专为MiMo-V2.5-Pro模型设计。该方案在单个8-GPU消费级节点上，实现了1万亿参数模型超过1000 tokens/s的解码速度。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus",
+    "discovered_at": "2026-06-09T02:25:44.703Z",
+    "rank_on_page": 250,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "8f8f7c0dbab31d43",
+  "content_hash": "5231bfc0e8d859a4",
+  "full_text_hash": "5231bfc0e8d859a4",
+  "semantic_hash": "6ce678c2c1d32bd3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-08T16:49:04.000Z",
+  "last_seen_at": "2026-06-09T02:33:36.510Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "小米MiMo团队与TileRT合作发布MiMo-V2.5-Pro-UltraSpeed服务模式，专为MiMo-V2.5-Pro模型设计。该方案在单个8-GPU消费级节点上，实现了1万亿参数模型超过1000 tokens/s的解码速度。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Artificial Intelligence AI Infrastructure Technology AI Shorts Applications Editors Pick Machine Learning New Releases Software Engineering Staff Tech News Uncategorized Inference speed is becoming a competitive metric for large language models.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Xiaomi’s MiMo team just released MiMo-V2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5-Pro-UltraSpeed, built in collaboration with the TileRT systems group.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It decodes faster than 1000 tokens per second on a 1-trillion-parameter model.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Xiaomi team describes this as a first at trillion-parameter scale.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "GitHub"
+    ],
+    "products": [
+      "Agent",
+      "agents",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "定价 / 计费变化",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2.5",
+      "8",
+      "1000",
+      "1万",
+      "1",
+      "1200",
+      "4",
+      "16"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Artificial Intelligence AI Infrastructure Technology AI Shorts Applications Editors Pick Machine Learning New Releases Software Engineering Staff Tech News Uncategorized Inference speed is becoming a competitive metric for large language models.",
+      "Xiaomi’s MiMo team just released MiMo-V2.",
+      "5-Pro-UltraSpeed, built in collaboration with the TileRT systems group."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s\n\n- raw_id: R-031\n- original_url: https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-06-09T02:33:36.510Z\n\n## clean_text\n\nArtificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nEditors Pick\nMachine Learning\nNew Releases\nSoftware Engineering\nStaff\nTech News\nUncategorized\nInference speed is becoming a competitive metric for large language models. Xiaomi’s MiMo team just released MiMo-V2.5-Pro-UltraSpeed, built in collaboration with the TileRT systems group. It decodes faster than 1000 tokens per second on a 1-trillion-parameter model. Xiaomi team describes this as a first at trillion-parameter scale. Demos show generation peaks near 1200 tokens per second. The notable part is the hardware: it runs on commodity GPUs, not custom silicon.\nWhat is MiMo-V2.5-Pro-UltraSpeed\nUltraSpeed is a high-speed serving mode for the existing MiMo-V2.5-Pro model. The base model uses a Mixture-of-Experts (MoE) architecture at trillion-parameter scale. UltraSpeed targets generation speed rather than model capability. It changes how fast the model produces output tokens. The speedup comes from three coordinated techniques across the model and the serving system. Xiaomi calls this approach extreme model-system codesign. Crucially, the entire stack runs on a single standard 8-GPU commodity node.\nThe Speed Case: Three Layers Working Together\nThe first layer is FP4 quantization. At trillion scale, FP8 or FP16 weights create heavy memory and bandwidth pressure. Lower bit-width weights move through memory faster, which directly lifts decode speed. Xiaomi uses the MXFP4 format, applied selectively to the MoE Experts only. Other modules keep higher precision, reported as FP8 by TileRT. Experts hold most parameters and tolerate quantization best, so the tradeoff is favorable. Quantization-Aware Training (QAT) keeps benchmark quality essentially on par with the original.\nThe second layer is DFlash speculative decoding, covered in detail below. The third layer is TileRT, the system that executes everything on the GPU. Each technique alone is not enough. The 1000 TPS result needs all three aligned tightly.\nDFlash: Parallel Drafting Without a Serial Bottleneck\nStandard speculative decoding uses a small draft model to guess upcoming tokens. The large model then verifies those guesses in parallel. Rejection sampling keeps output identical to normal decoding, so quality is lossless. The problem is that the draft model still generates tokens one at a time. DFlash, a method from the research community, removes that constraint. It uses block-level masked parallel prediction. The draft model fills a whole block of masked positions in one forward pass.\nXiaomi tuned DFlash with the Muon second-order optimizer and model self-distillation. The draft model uses Sliding Window Attention (SWA) only, matching the MiMo-V2 design. This makes per-prediction compute constant rather than growing with context length. Block size is capped at 8 to limit verification cost and raise concurrency.\nAcceptance length measures how many draft tokens survive verification each round.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\nIn coding, six to seven of eight draft tokens are accepted per round. Some samples reach a maximum of 7.14.\nTileRT: Squeezing the Microseconds\nAt 1000 TPS, each operator runs for only microseconds. Traditional systems launch operators one by one, and each launch costs time. Those gaps fracture the execution stream and become the real bottleneck. TileRT replaces this with a Persistent Engine Kernel that stays resident on the GPU. It uses Warp Specialization to split data movement, compute, and communication into coordinated roles. Small operations like RMSNorm, RoPE, and KV cache writes turn into bottlenecks at this scale. The system was co-designed with the FP4 and DFlash choices, not added afterward.\nUse Cases\nThe release targets latency-sensitive work where waiting breaks the loop:\nParallel reasoning: run many Best-of-N or tree-search paths within the same wall-clock time.\nCoding agents: faster code generation cuts the wait between agent steps.\nReal-time decision loops: trading signal generation, fraud interception, and live dialogue.\nInteractive prototyping: demos show a Snake game in about 10 seconds and a macOS interface in about one minute.\nThese are throughput-bound workloads where raw token speed is the binding constraint.\nHow It Compares\nThe first table contrasts the two routes to extreme decode speed.\nApproach Hardware How speed is achieved\nCerebras Wafer-Scale integration (custom) Scale on a single custom wafer\nGroq Custom architecture Pure on-chip SRAM\nMiMo × TileRT Commodity GPUs (8-GPU node) Model-system codesign: FP4 + DFlash + TileRT\nThe second table compares the standard model with the UltraSpeed mode.\nDimension MiMo-V2.5-Pro MiMo-V2.5-Pro-UltraSpeed\nDecode speed Baseline ~10× faster (1000+ TPS)\nPrice 1× 3×\nWeight precision Standard FP4 MoE Experts via QAT\nDecoding Standard autoregressive DFlash speculative decoding\nAccess Standard model plans API only, application-based trial\nToken Plan Supported Not supported\nAccess, Pricing, and Open Source\nUltraSpeed ships through a limited, application-based window. The API trial runs June 9 to June 23, 2026. Pricing is 3× the standard MiMo-V2.5-Pro rate, for roughly 10× the speed. It is API only, and the Token Plan is not supported. Approved users also receive free Chat access during the trial. Chat limits apply: 10 queue entries daily, 30-minute sessions, and 5-minute idle release. Xiaomi open-sourced the MiMo-V2.5-Pro-FP4-DFlash checkpoint on Hugging Face . TileRT has open-sourced select modules on GitHub.\nStrengths and Limitations\nStrengths\n1000+ TPS on a 1T model without custom silicon.\nLossless decoding through rejection sampling in DFlash.\nFP4 applied only where tolerance is highest, preserving quality.\nAn open checkpoint lets the community test the claims.\nLimitations\nAccess is gated, short, and approval-based at launch.\nPricing triples per token versus the standard model.\nAcceptance length drops in open-ended conversation.\nIndependent third-party speed verification is not yet public.\nKey Takeaways\nXiaomi MiMo and TileRT decode a 1-trillion-parameter model past 1000 tokens per second on commodity GPUs.\nThe speedup comes from three layers: FP4 quantization, DFlash speculative decoding, and the TileRT runtime.\nFP4 (MXFP4) is applied only to MoE Experts; QAT keeps capability essentially on par.\nDFlash predicts a whole masked block per forward pass, hitting 6.30 average acceptance length in coding.\nUltraSpeed runs on a single 8-GPU node via an application-based API trial, June 9–23, 2026.\nMarktechpost’s Visual Explainer\nGUIDE • INFERENCE SYSTEMS\nMiMo-V2.5-Pro-UltraSpeed: 1000+ Tokens Per Second on a 1T Model\nXiaomi MiMo & TileRT &mdash; FP4 quantization, DFlash speculative decoding, and a microsecond-scale runtime.\n01 / 08\nWhat It Is\nXiaomi’s MiMo team built it with the TileRT systems group.\nIt decodes over 1000 tokens/s on a 1-trillion-parameter model.\nDemos show generation peaks near 1200 tokens/s.\nIt runs on commodity GPUs, a single standard 8-GPU node.\nReleased June 8, 2026.\n1000+ tokens / second\n1T parameters (MoE)\n8 commodity GPUs\n02 / 08\nThree Layers Working Together\nFP4 quantization shrinks weights and eases bandwidth pressure.\nDFlash speculative decoding predicts many tokens in parallel.\nTileRT executes the whole pipeline at microsecond scale.\nXiaomi calls this approach extreme model-system codesign.\nNo single technique is enough; all three must align.\n03 / 08\nLayer 1 &mdash; FP4 Quantization\nUses the MXFP4 format to lower memory and bandwidth cost.\nApplied selectively to the MoE Experts only.\nOther modules keep higher precision (FP8, per TileRT).\nExperts hold most parameters and tolerate quantization best.\nQAT keeps capability essentially on par with the original.\n04 / 08\nLayer 2 &mdash; DFlash Speculative Decoding\nA research-community method using block-level masked parallel prediction.\nThe draft model fills a whole block in one forward pass.\nIt uses Sliding Window Attention; block size capped at 8.\nRejection sampling keeps the output lossless.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\n05 / 08\nLayer 3 &mdash; TileRT Runtime\nAt 1000 TPS, each operator runs for only microseconds.\nA Persistent Engine Kernel stays resident on the GPU.\nWarp Specialization splits data movement, compute, and communication.\nSmall ops like RMSNorm and RoPE become bottlenecks here.\nThe runtime was co-designed with the FP4 and DFlash choices.\n06 / 08\nWhere It Fits\nParallel reasoning: many Best-of-N or tree-search paths at once.\nCoding agents: less wait between agent steps.\nReal-time loops: trading signals, fraud interception, live dialogue.\nInteractive prototyping: a Snake game in about 10 seconds.\n07 / 08\nStandard vs UltraSpeed\nDimension MiMo-V2.5-Pro UltraSpeed\nDecode speed Baseline ~10&times; (1000+ TPS)\nPrice 1&times; 3&times;\nWeights Standard FP4 MoE Experts (QAT)\nDecoding Autoregressive DFlash speculative\nAccess Standard plans API only, by application\n08 / 08\nAccess, Pricing & Open Source\nAPI trial runs June 9 to June 23, 2026 (Beijing time).\nPricing is 3&times; the standard rate for roughly 10&times; speed.\nAPI only; the Token Plan is not supported.\nCheckpoint open-sourced: MiMo-V2.5-Pro-FP4-DFlash on Hugging Face.\nTileRT has open-sourced select modules on GitHub.\n← Prev\nNext →\nMarktechpost\nAI research, models, and developer tools &mdash; explained for engineers.\nCheck out the Model weights and Technical details . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\n\n## full_text\n\nArtificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nEditors Pick\nMachine Learning\nNew Releases\nSoftware Engineering\nStaff\nTech News\nUncategorized\nInference speed is becoming a competitive metric for large language models. Xiaomi’s MiMo team just released MiMo-V2.5-Pro-UltraSpeed, built in collaboration with the TileRT systems group. It decodes faster than 1000 tokens per second on a 1-trillion-parameter model. Xiaomi team describes this as a first at trillion-parameter scale. Demos show generation peaks near 1200 tokens per second. The notable part is the hardware: it runs on commodity GPUs, not custom silicon.\nWhat is MiMo-V2.5-Pro-UltraSpeed\nUltraSpeed is a high-speed serving mode for the existing MiMo-V2.5-Pro model. The base model uses a Mixture-of-Experts (MoE) architecture at trillion-parameter scale. UltraSpeed targets generation speed rather than model capability. It changes how fast the model produces output tokens. The speedup comes from three coordinated techniques across the model and the serving system. Xiaomi calls this approach extreme model-system codesign. Crucially, the entire stack runs on a single standard 8-GPU commodity node.\nThe Speed Case: Three Layers Working Together\nThe first layer is FP4 quantization. At trillion scale, FP8 or FP16 weights create heavy memory and bandwidth pressure. Lower bit-width weights move through memory faster, which directly lifts decode speed. Xiaomi uses the MXFP4 format, applied selectively to the MoE Experts only. Other modules keep higher precision, reported as FP8 by TileRT. Experts hold most parameters and tolerate quantization best, so the tradeoff is favorable. Quantization-Aware Training (QAT) keeps benchmark quality essentially on par with the original.\nThe second layer is DFlash speculative decoding, covered in detail below. The third layer is TileRT, the system that executes everything on the GPU. Each technique alone is not enough. The 1000 TPS result needs all three aligned tightly.\nDFlash: Parallel Drafting Without a Serial Bottleneck\nStandard speculative decoding uses a small draft model to guess upcoming tokens. The large model then verifies those guesses in parallel. Rejection sampling keeps output identical to normal decoding, so quality is lossless. The problem is that the draft model still generates tokens one at a time. DFlash, a method from the research community, removes that constraint. It uses block-level masked parallel prediction. The draft model fills a whole block of masked positions in one forward pass.\nXiaomi tuned DFlash with the Muon second-order optimizer and model self-distillation. The draft model uses Sliding Window Attention (SWA) only, matching the MiMo-V2 design. This makes per-prediction compute constant rather than growing with context length. Block size is capped at 8 to limit verification cost and raise concurrency.\nAcceptance length measures how many draft tokens survive verification each round.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\nIn coding, six to seven of eight draft tokens are accepted per round. Some samples reach a maximum of 7.14.\nTileRT: Squeezing the Microseconds\nAt 1000 TPS, each operator runs for only microseconds. Traditional systems launch operators one by one, and each launch costs time. Those gaps fracture the execution stream and become the real bottleneck. TileRT replaces this with a Persistent Engine Kernel that stays resident on the GPU. It uses Warp Specialization to split data movement, compute, and communication into coordinated roles. Small operations like RMSNorm, RoPE, and KV cache writes turn into bottlenecks at this scale. The system was co-designed with the FP4 and DFlash choices, not added afterward.\nUse Cases\nThe release targets latency-sensitive work where waiting breaks the loop:\nParallel reasoning: run many Best-of-N or tree-search paths within the same wall-clock time.\nCoding agents: faster code generation cuts the wait between agent steps.\nReal-time decision loops: trading signal generation, fraud interception, and live dialogue.\nInteractive prototyping: demos show a Snake game in about 10 seconds and a macOS interface in about one minute.\nThese are throughput-bound workloads where raw token speed is the binding constraint.\nHow It Compares\nThe first table contrasts the two routes to extreme decode speed.\nApproach Hardware How speed is achieved\nCerebras Wafer-Scale integration (custom) Scale on a single custom wafer\nGroq Custom architecture Pure on-chip SRAM\nMiMo × TileRT Commodity GPUs (8-GPU node) Model-system codesign: FP4 + DFlash + TileRT\nThe second table compares the standard model with the UltraSpeed mode.\nDimension MiMo-V2.5-Pro MiMo-V2.5-Pro-UltraSpeed\nDecode speed Baseline ~10× faster (1000+ TPS)\nPrice 1× 3×\nWeight precision Standard FP4 MoE Experts via QAT\nDecoding Standard autoregressive DFlash speculative decoding\nAccess Standard model plans API only, application-based trial\nToken Plan Supported Not supported\nAccess, Pricing, and Open Source\nUltraSpeed ships through a limited, application-based window. The API trial runs June 9 to June 23, 2026. Pricing is 3× the standard MiMo-V2.5-Pro rate, for roughly 10× the speed. It is API only, and the Token Plan is not supported. Approved users also receive free Chat access during the trial. Chat limits apply: 10 queue entries daily, 30-minute sessions, and 5-minute idle release. Xiaomi open-sourced the MiMo-V2.5-Pro-FP4-DFlash checkpoint on Hugging Face . TileRT has open-sourced select modules on GitHub.\nStrengths and Limitations\nStrengths\n1000+ TPS on a 1T model without custom silicon.\nLossless decoding through rejection sampling in DFlash.\nFP4 applied only where tolerance is highest, preserving quality.\nAn open checkpoint lets the community test the claims.\nLimitations\nAccess is gated, short, and approval-based at launch.\nPricing triples per token versus the standard model.\nAcceptance length drops in open-ended conversation.\nIndependent third-party speed verification is not yet public.\nKey Takeaways\nXiaomi MiMo and TileRT decode a 1-trillion-parameter model past 1000 tokens per second on commodity GPUs.\nThe speedup comes from three layers: FP4 quantization, DFlash speculative decoding, and the TileRT runtime.\nFP4 (MXFP4) is applied only to MoE Experts; QAT keeps capability essentially on par.\nDFlash predicts a whole masked block per forward pass, hitting 6.30 average acceptance length in coding.\nUltraSpeed runs on a single 8-GPU node via an application-based API trial, June 9–23, 2026.\nMarktechpost’s Visual Explainer\nGUIDE • INFERENCE SYSTEMS\nMiMo-V2.5-Pro-UltraSpeed: 1000+ Tokens Per Second on a 1T Model\nXiaomi MiMo & TileRT &mdash; FP4 quantization, DFlash speculative decoding, and a microsecond-scale runtime.\n01 / 08\nWhat It Is\nXiaomi’s MiMo team built it with the TileRT systems group.\nIt decodes over 1000 tokens/s on a 1-trillion-parameter model.\nDemos show generation peaks near 1200 tokens/s.\nIt runs on commodity GPUs, a single standard 8-GPU node.\nReleased June 8, 2026.\n1000+ tokens / second\n1T parameters (MoE)\n8 commodity GPUs\n02 / 08\nThree Layers Working Together\nFP4 quantization shrinks weights and eases bandwidth pressure.\nDFlash speculative decoding predicts many tokens in parallel.\nTileRT executes the whole pipeline at microsecond scale.\nXiaomi calls this approach extreme model-system codesign.\nNo single technique is enough; all three must align.\n03 / 08\nLayer 1 &mdash; FP4 Quantization\nUses the MXFP4 format to lower memory and bandwidth cost.\nApplied selectively to the MoE Experts only.\nOther modules keep higher precision (FP8, per TileRT).\nExperts hold most parameters and tolerate quantization best.\nQAT keeps capability essentially on par with the original.\n04 / 08\nLayer 2 &mdash; DFlash Speculative Decoding\nA research-community method using block-level masked parallel prediction.\nThe draft model fills a whole block in one forward pass.\nIt uses Sliding Window Attention; block size capped at 8.\nRejection sampling keeps the output lossless.\nScenario Acceptance Length\nCoding 6.30\nMath / Reasoning 5.56\nAgent 4.29\n05 / 08\nLayer 3 &mdash; TileRT Runtime\nAt 1000 TPS, each operator runs for only microseconds.\nA Persistent Engine Kernel stays resident on the GPU.\nWarp Specialization splits data movement, compute, and communication.\nSmall ops like RMSNorm and RoPE become bottlenecks here.\nThe runtime was co-designed with the FP4 and DFlash choices.\n06 / 08\nWhere It Fits\nParallel reasoning: many Best-of-N or tree-search paths at once.\nCoding agents: less wait between agent steps.\nReal-time loops: trading signals, fraud interception, live dialogue.\nInteractive prototyping: a Snake game in about 10 seconds.\n07 / 08\nStandard vs UltraSpeed\nDimension MiMo-V2.5-Pro UltraSpeed\nDecode speed Baseline ~10&times; (1000+ TPS)\nPrice 1&times; 3&times;\nWeights Standard FP4 MoE Experts (QAT)\nDecoding Autoregressive DFlash speculative\nAccess Standard plans API only, by application\n08 / 08\nAccess, Pricing & Open Source\nAPI trial runs June 9 to June 23, 2026 (Beijing time).\nPricing is 3&times; the standard rate for roughly 10&times; speed.\nAPI only; the Token Plan is not supported.\nCheckpoint open-sourced: MiMo-V2.5-Pro-FP4-DFlash on Hugging Face.\nTileRT has open-sourced select modules on GitHub.\n← Prev\nNext →\nMarktechpost\nAI research, models, and developer tools &mdash; explained for engineers.\nCheck out the Model weights and Technical details . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 91\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] 小米MiMo团队与TileRT合作发布MiMo-V2.5-Pro-UltraSpeed服务模式，专为MiMo-V2.5-Pro模型设计。该方案在单个8-GPU消费级节点上，实现了1万亿参数模型超过1000 tokens/s的解码速度。\n2. [product_update / daily_observation, heatmap, change / high] Artificial Intelligence AI Infrastructure Technology AI Shorts Applications Editors Pick Machine Learning New Releases Software Engineering Staff Tech News Uncategorized Inference speed is becoming a competitive metric for large language models.\n3. [product_update / daily_observation, heatmap, change / high] Xiaomi’s MiMo team just released MiMo-V2.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 5-Pro-UltraSpeed, built in collaboration with the TileRT systems group.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] It decodes faster than 1000 tokens per second on a 1-trillion-parameter model.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Xiaomi team describes this as a first at trillion-parameter scale.\n"
+}

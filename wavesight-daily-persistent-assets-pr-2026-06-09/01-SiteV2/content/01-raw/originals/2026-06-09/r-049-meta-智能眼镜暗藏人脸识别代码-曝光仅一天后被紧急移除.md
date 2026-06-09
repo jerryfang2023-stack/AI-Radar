@@ -1,0 +1,204 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-049
+title: "Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除"
+original_url: "https://www.ithome.com/0/961/724.htm"
+canonical_url: "https://ithome.com/0/961/724.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-08T22:57:19.000Z"
+collected_at: 2026-06-09T02:33:36.571Z
+language: mixed
+full_text_hash: 783ec57b1327cc93
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-09/r-049-meta-智能眼镜暗藏人脸识别代码-曝光仅一天后被紧急移除.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-09/r-049-meta-智能眼镜暗藏人脸识别代码-曝光仅一天后被紧急移除.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 39
+extractor_diagnostics: {"readability_score":39,"text_length":1083,"paragraph_count":6,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 1083
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"783ec57b1327cc93","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除","discovery_summary":"Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号\"姓名标签\"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/961/724.htm","discovered_at":"2026-06-09T02:25:44.669Z","rank_on_page":80,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 43387182ea2f966c
+content_hash: 783ec57b1327cc93
+semantic_hash: a7c9c98c3bbe7456
+duplicate_of: ""
+first_seen_at: "2026-06-08T22:57:19.000Z"
+last_seen_at: 2026-06-09T02:33:36.571Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":4,"importance_reason":"real customer or adoption case; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","Meta"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["6","4","9","5","2","12","3"],"quotes":["在此事上采取何种行动"]}
+evidence_seed: {"company_actions":["IT之家 6 月 9 日消息，据《连线》杂志报道，就在有人在 Meta 智能眼镜配套应用中发现一段疑似人脸识别算法的休眠代码仅一天后，Meta 便推送更新移除了这段代码。","该媒体在核查一款负责智能眼镜部分核心功能的 Meta 人工智能应用代码时，首次发现了这段可疑代码。","Meta 内部将其命名为“姓名标签”。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号\"姓名标签\"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。"]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"supporting_context","text":"Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号\"姓名标签\"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 9 日消息，据《连线》杂志报道，就在有人在 Meta 智能眼镜配套应用中发现一段疑似人脸识别算法的休眠代码仅一天后，Meta 便推送更新移除了这段代码。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该媒体在核查一款负责智能眼镜部分核心功能的 Meta 人工智能应用代码时，首次发现了这段可疑代码。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Meta 内部将其命名为“姓名标签”。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"简单来说，这款用于通过蓝牙将智能眼镜与手机配对的必备应用，原本还具备一项功能：用户佩戴眼镜时，自动采集沿途所有人的面部影像。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家注意到，《连线》于 6 月 4 日发现了这款处于休眠状态的工具。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除
+
+## clean_text
+
+IT之家 6 月 9 日消息，据《连线》杂志报道，就在有人在 Meta 智能眼镜配套应用中发现一段疑似人脸识别算法的休眠代码仅一天后，Meta 便推送更新移除了这段代码。该媒体在核查一款负责智能眼镜部分核心功能的 Meta 人工智能应用代码时，首次发现了这段可疑代码。Meta 内部将其命名为“姓名标签”。简单来说，这款用于通过蓝牙将智能眼镜与手机配对的必备应用，原本还具备一项功能：用户佩戴眼镜时，自动采集沿途所有人的面部影像。
+IT之家注意到，《连线》于 6 月 4 日发现了这款处于休眠状态的工具。其内置算法可将人脸照片转化为存储在设备本地的生物特征标识，并会对每一次新的面部扫描信息进行交叉比对。6 月 5 日，Meta 就发布更新，彻底删除了该功能代码。早在今年 2 月，《纽约时报》就曾报道，Meta 正着手为旗下智能眼镜搭载人脸识别功能。彼时该报就称公司内部频繁提及“姓名标签”这一项目代号，由此推测，《连线》此次发现的代码，正是该项目的研发成果。
+从这款工具的运行逻辑来看，其初衷或许是帮助用户更轻松地认出旧识。对于记性不好的人而言，这无疑是个便利功能，但用来解决人际交往中记不住人名的常见难题，却显得格外令人不适，还严重侵犯隐私。大多数人宁愿对方坦诚说忘了自己的名字，也不愿自己的样貌被架在眼前的摄像头悄悄采集。
+Meta 智能眼镜由公司联合陆逊梯卡集团旗下雷朋、欧克利等知名品牌共同打造。这款产品早已引发诸多争议：不少人利用它偷拍、骚扰女性。去年 12 月，纽约地铁上还发生过一起女子被指损毁他人 Meta 智能眼镜的事件。今年 3 月，瑞典一家媒体经调查曝光，肯尼亚的工作人员会审核这款智能眼镜拍摄的影像，其中包含私密行为、如厕画面等疑似在机主不知情的情况下录制的内容，Meta 也因此遭到集体诉讼。
+Meta 通讯副总裁安迪 · 斯通周一向《连线》发表声明称，该功能仅为试点项目，公司尚未就“在此事上采取何种行动”做出“正式决定”。这话或许不假，但确实有 Meta 员工耗费工时、领取薪酬，完成了这段代码的编写、审核，并将其搭载到正式上线的产品中。即便该功能从未启用，也难以安抚两类人群：一是不愿让自己的设备沦为移动数据采集器的眼镜用户，二是那些无意之中面部信息就可能被分析的普通人。Meta 迅速删除代码并发布公关声明，这一行为本身也说明，公司清楚这类侵犯隐私的功能正让其处于危险的边缘。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 9 日消息，据《连线》杂志报道，就在有人在 Meta 智能眼镜配套应用中发现一段疑似人脸识别算法的休眠代码仅一天后，Meta 便推送更新移除了这段代码。该媒体在核查一款负责智能眼镜部分核心功能的 Meta 人工智能应用代码时，首次发现了这段可疑代码。Meta 内部将其命名为“姓名标签”。简单来说，这款用于通过蓝牙将智能眼镜与手机配对的必备应用，原本还具备一项功能：用户佩戴眼镜时，自动采集沿途所有人的面部影像。
+IT之家注意到，《连线》于 6 月 4 日发现了这款处于休眠状态的工具。其内置算法可将人脸照片转化为存储在设备本地的生物特征标识，并会对每一次新的面部扫描信息进行交叉比对。6 月 5 日，Meta 就发布更新，彻底删除了该功能代码。早在今年 2 月，《纽约时报》就曾报道，Meta 正着手为旗下智能眼镜搭载人脸识别功能。彼时该报就称公司内部频繁提及“姓名标签”这一项目代号，由此推测，《连线》此次发现的代码，正是该项目的研发成果。
+从这款工具的运行逻辑来看，其初衷或许是帮助用户更轻松地认出旧识。对于记性不好的人而言，这无疑是个便利功能，但用来解决人际交往中记不住人名的常见难题，却显得格外令人不适，还严重侵犯隐私。大多数人宁愿对方坦诚说忘了自己的名字，也不愿自己的样貌被架在眼前的摄像头悄悄采集。
+Meta 智能眼镜由公司联合陆逊梯卡集团旗下雷朋、欧克利等知名品牌共同打造。这款产品早已引发诸多争议：不少人利用它偷拍、骚扰女性。去年 12 月，纽约地铁上还发生过一起女子被指损毁他人 Meta 智能眼镜的事件。今年 3 月，瑞典一家媒体经调查曝光，肯尼亚的工作人员会审核这款智能眼镜拍摄的影像，其中包含私密行为、如厕画面等疑似在机主不知情的情况下录制的内容，Meta 也因此遭到集体诉讼。
+Meta 通讯副总裁安迪 · 斯通周一向《连线》发表声明称，该功能仅为试点项目，公司尚未就“在此事上采取何种行动”做出“正式决定”。这话或许不假，但确实有 Meta 员工耗费工时、领取薪酬，完成了这段代码的编写、审核，并将其搭载到正式上线的产品中。即便该功能从未启用，也难以安抚两类人群：一是不愿让自己的设备沦为移动数据采集器的眼镜用户，二是那些无意之中面部信息就可能被分析的普通人。Meta 迅速删除代码并发布公关声明，这一行为本身也说明，公司清楚这类侵犯隐私的功能正让其处于危险的边缘。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 39
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":39,"text_length":1083,"paragraph_count":6,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号"姓名标签"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 9 日消息，据《连线》杂志报道，就在有人在 Meta 智能眼镜配套应用中发现一段疑似人脸识别算法的休眠代码仅一天后，Meta 便推送更新移除了这段代码。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   该媒体在核查一款负责智能眼镜部分核心功能的 Meta 人工智能应用代码时，首次发现了这段可疑代码。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Meta 内部将其命名为“姓名标签”。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   简单来说，这款用于通过蓝牙将智能眼镜与手机配对的必备应用，原本还具备一项功能：用户佩戴眼镜时，自动采集沿途所有人的面部影像。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家注意到，《连线》于 6 月 4 日发现了这款处于休眠状态的工具。
+
+## business_elements
+
+- companies: IT之家（RSS）, Meta
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 6, 4, 9, 5, 2, 12, 3
+- quotes: 在此事上采取何种行动
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 9 日消息，据《连线》杂志报道，就在有人在 Meta 智能眼镜配套应用中发现一段疑似人脸识别算法的休眠代码仅一天后，Meta 便推送更新移除了这段代码。 / 该媒体在核查一款负责智能眼镜部分核心功能的 Meta 人工智能应用代码时，首次发现了这段可疑代码。 / Meta 内部将其命名为“姓名标签”。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号"姓名标签"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 4
+- importance_reason: real customer or adoption case; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除","discovery_summary":"Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号\"姓名标签\"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/961/724.htm","discovered_at":"2026-06-09T02:25:44.669Z","rank_on_page":80,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号"姓名标签"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
