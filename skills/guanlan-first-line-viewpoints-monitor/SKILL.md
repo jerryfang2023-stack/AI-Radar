@@ -44,6 +44,8 @@ node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
    - builder blog / podcast feed JSON when refreshed;
    - first-line manifest and gate reports.
 
+The current frontstage data source is `01-SiteV2/site/data/follow-builders-daily.json`. The retired `01-SiteV2/content/05-frontier-opinions/*` path is historical output only and must not be used to decide whether the First-Line Viewpoints lane succeeded.
+
 ## Pass Criteria
 
 - Builders data is fresh for the production date.
@@ -61,6 +63,7 @@ node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
 - Do not stage Raw / Pool / Card files.
 - Do not stage Community Intelligence data.
 - Do not deploy directly from an automation branch.
+- Do not read `01-SiteV2/content/05-frontier-opinions/*` as the current builders data source.
 
 ## Self-Improvement Loop
 

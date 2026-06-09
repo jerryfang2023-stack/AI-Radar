@@ -30,7 +30,12 @@ Read only what is needed:
 .github/workflows/daily-persistent-assets-pr.yml
 ```
 
-4. For local repair, use the existing scripts in this order:
+4. Apply the schedule watchdog before declaring the lane idle:
+   - current cron is 09:07 Asia/Shanghai, not the retired 08:00 slot;
+   - if no same-date scheduled run is visible by about 09:20, dispatch the workflow manually;
+   - if a downstream task starts while the workflow is still `in_progress`, wait for the run to finish before reporting missing data.
+
+5. For local repair, use the existing scripts in this order:
 
 ```powershell
 node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD>
@@ -44,7 +49,7 @@ node agent-workflow/tools/assert-v3-source-first-frontstage.mjs
 node agent-workflow/tools/frontstage-regression-gate.mjs
 ```
 
-5. Commit only lane-owned outputs:
+6. Commit only lane-owned outputs:
    - Raw / Pool files;
    - Signal Card assets;
    - `v3-data-observation-desk.json`;
@@ -62,6 +67,15 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 - Same large company appears at most once in the Top10.
 - Large-company total is at most 3 in the Top10.
 - Source-first and frontstage regression gates pass.
+
+## Recovery Rules
+
+- Auto-merge skip is a publication state, not a data-generation failure. If the automation branch and PR contain passing data, keep the PR route and merge policy; do not push directly to `main`.
+- If only `raw_count_min` fails while quality score is high and other hard gates pass, treat it as a recovery candidate. Download Raw / Pool artifacts, regenerate Cards locally, rebuild site data, then rerun source-first and regression gates.
+- Do not copy artifact `site-content.json` when it was generated before Card creation. Rebuild site data from current Cards instead.
+- Watchlist material does not directly create Cards. A high-score watchlist item with aggregate industry data can only trigger source repair or Pool rerouting before Card generation.
+- If Top10 is short, repair Raw / Pool / Core Pool coverage. Do not use supply-fill, duplicate large-company items, or weakened caps as the fix.
+- If title text remains English or subject duplicates title, rebuild with the current source-first frontstage generator and rerun the source-first gate.
 
 ## Boundaries
 

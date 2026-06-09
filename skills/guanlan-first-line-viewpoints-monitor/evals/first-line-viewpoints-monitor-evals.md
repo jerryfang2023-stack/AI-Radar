@@ -9,6 +9,7 @@ Use these as pass/fail checks after production, repair, or rule changes.
 - PASS if every remark has original URL and formal tags; FAIL if a visible remark has missing URL, duplicate URL, or incomplete tags.
 - PASS if fallback data records `fallbackUsed` and `fallbackReason`; FAIL if stale fallback silently passes.
 - PASS if staged files are limited to first-line data, feed files, manifests, and gate reports; FAIL if Raw / Pool / Card or Community Intelligence files are staged.
+- PASS if success is judged from `01-SiteV2/site/data/follow-builders-daily.json`; FAIL if the retired `01-SiteV2/content/05-frontier-opinions/*` path is treated as the current source.
 
 ## Self-Improvement
 

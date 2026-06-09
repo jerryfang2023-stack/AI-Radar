@@ -41,6 +41,19 @@ An existing `automation/business-signals-<date>` branch must not block a schedul
 
 `intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / Core Pool / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
 
+## Business Signals Watchdog And Recovery
+
+The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current Business Signals schedule truth is 09:07 Asia/Shanghai.
+
+Operational rules:
+
+1. If no same-date scheduled run is visible by about 09:20 Asia/Shanghai, Hermes may request a manual workflow dispatch.
+2. If a downstream task starts while the Business Signals workflow is `in_progress`, wait for the upstream run instead of declaring data missing.
+3. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
+4. The workflow must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
+5. A high-quality run blocked only by `raw_count_min` can enter manual recovery, but recovery must rebuild Cards and site data after restoring Raw / Pool. Do not copy stale pre-card site data from artifacts.
+6. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
+
 ## First-Line Viewpoints GitHub Chain
 
 Workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml`
@@ -165,6 +178,8 @@ The gate checks that:
 If the follow-builders refresh fails but a previous generated `follow-builders-daily.json` exists, the builder keeps the previous data and records `fallbackUsed=true` in `meta`. This prevents the independent First-Line Viewpoints page from failing only because a feed endpoint is temporarily unavailable.
 
 This lets both local runs and GitHub runners build the First-Line Viewpoints page.
+
+`01-SiteV2/content/05-frontier-opinions/*` is retired history for this lane. Current success must be judged from `01-SiteV2/site/data/follow-builders-daily.json` and the follow-builders data gate.
 
 ## First-Line Viewpoint Quality Gate
 
