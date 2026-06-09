@@ -82,6 +82,35 @@ Manual sync command:
 powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/local-sync-from-main.ps1
 ```
 
+## Community Intelligence Local Task
+
+Local community intelligence scripts:
+
+- `agent-workflow/tools/run-community-intelligence.ps1`
+- `agent-workflow/tools/install-community-intelligence-task.ps1`
+- `agent-workflow/tools/uninstall-community-intelligence-task.ps1`
+
+Install command:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-community-intelligence-task.ps1
+```
+
+Manual run command:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-community-intelligence.ps1
+```
+
+Runtime behavior:
+
+1. Check `http://127.0.0.1:9333/json/version`.
+2. Start Chrome with `.codex-browser-profile/community-scan` when the CDP endpoint is unavailable.
+3. Run `npm run collect:community-intelligence`.
+4. Run `npm run archive:community-intelligence`.
+5. Validate that today's `community-intelligence.json` and daily Obsidian archive exist.
+6. Write logs to `agent-workflow/reports/community-intelligence/community-intelligence-YYYYMMDD.log`.
+
 ## First-Line Viewpoint Data Sources
 
 `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs` uses this source order:
