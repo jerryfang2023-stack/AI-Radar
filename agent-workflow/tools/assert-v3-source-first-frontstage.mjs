@@ -142,6 +142,15 @@ function subjectHasSourceNoise(value = "") {
   return /https?:|[|｜]|RSS|热门|buzzing\.cc|Weekly Updated B2B Lead Database|^(IT早报|AI早报|早报|日报|周报)/iu.test(String(value || ""));
 }
 
+function titleNeedsTranslation(value = "") {
+  const text = String(value || "").trim();
+  return text.length > 18 && !/[\u4e00-\u9fff]/u.test(text);
+}
+
+function subjectIsMissing(value = "") {
+  return String(value || "").trim() === "未标注主体";
+}
+
 function subjectMatchesTitle(card = {}) {
   const subject = normalizedComparableText(card.subject);
   if (!subject) return false;
@@ -216,6 +225,12 @@ for (const card of cards) {
   if (card.date === activeDate && (subjectHasSourceNoise(card.subject) || subjectLooksLikeTitle(card.subject) || subjectMatchesTitle(card))) {
     issues.push(`card ${card.id || "(missing id)"} has title-like subject: ${card.subject}`);
   }
+  if (card.date === activeDate && subjectIsMissing(card.subject)) {
+    issues.push(`card ${card.id || "(missing id)"} has missing frontstage subject`);
+  }
+  if (card.date === activeDate && titleNeedsTranslation(card.title)) {
+    issues.push(`card ${card.id || "(missing id)"} has untranslated frontstage title: ${card.title}`);
+  }
   const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact].join("\n");
   for (const highlight of card.originalHighlights || []) {
     if (
@@ -246,6 +261,12 @@ for (const card of cards) {
 for (const candidate of payload.corePoolCandidates || []) {
   if (candidate.date === activeDate && (subjectHasSourceNoise(candidate.subject) || subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has title-like subject: ${candidate.subject}`);
+  }
+  if (candidate.date === activeDate && subjectIsMissing(candidate.subject)) {
+    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has missing frontstage subject`);
+  }
+  if (candidate.date === activeDate && titleNeedsTranslation(candidate.title)) {
+    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has untranslated frontstage title: ${candidate.title}`);
   }
 }
 

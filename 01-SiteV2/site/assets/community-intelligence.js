@@ -305,7 +305,7 @@
   function renderTitle() {
     const target = $("[data-generated-at]");
     if (!target) return;
-    target.textContent = `${fmtSnapshotLabel(state.selectedDate || payloadDate(state.payload))} · ${fmtDate(state.payload?.meta?.generatedAt)}`;
+    target.textContent = fmtSnapshotLabel(state.selectedDate || payloadDate(state.payload));
   }
 
   function renderSnapshotDateFilter() {
@@ -318,10 +318,8 @@
         items: (state.payload?.items || []).length,
         links: (state.payload?.links || []).length,
       }];
-    date.innerHTML = snapshots.map((item, index) => {
-      const suffix = index === 0 ? " · 最新" : "";
-      const count = Number.isFinite(Number(item.items)) ? ` · ${item.items}条` : "";
-      return `<option value="${safe(item.date)}">${safe(fmtSnapshotLabel(item.date))}${safe(suffix)}${safe(count)}</option>`;
+    date.innerHTML = snapshots.map((item) => {
+      return `<option value="${safe(item.date)}">${safe(fmtSnapshotLabel(item.date))}</option>`;
     }).join("");
     date.value = state.selectedDate || snapshots[0]?.date || "";
   }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "V3.3.2.1-intelligence-graph-index",
-    "generatedAt": "2026-06-09T13:06:24.862Z",
+    "generatedAt": "2026-06-09T13:46:35.735Z",
     "activeDate": "2026-06-09",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -44,9 +44,9 @@
   "dailyLens": {
     "top10CardIds": [
       "SIG-20260609-A02",
+      "SIG-20260609-A01",
       "SIG-20260609-A03",
       "SIG-20260609-B02",
-      "SIG-20260609-A01",
       "SIG-20260609-A07",
       "SIG-20260609-A10",
       "SIG-20260609-A08",
@@ -69,9 +69,9 @@
       "SIG-20260609-A02",
       "POOL-2026-06-09-P-028",
       "POOL-2026-06-09-P-030",
+      "SIG-20260609-A01",
       "SIG-20260609-A03",
       "SIG-20260609-B02",
-      "SIG-20260609-A01",
       "SIG-20260609-A07",
       "SIG-20260609-A10",
       "SIG-20260609-A08",
@@ -378,13 +378,13 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Investing in Lio | Andreessen Horowitz",
+      "title": "a16z 投资 Lio，押注垂直 AI 基础设施",
       "subject": "Lio",
       "sourceName": "a16z.com",
       "sourceUrl": "https://a16z.com/announcement/investing-in-lio/",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 651,
+      "rankScore": 706,
       "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
@@ -455,7 +455,6 @@
         "能观察真实客户、业务流程或采购场景"
       ],
       "qualityWarnings": [
-        "资料型、榜单型或工具型素材，默认不作为 Top 10 优先项",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -20984,7 +20983,7 @@
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Agentic Infrastructure: Why Access Is the Real Frontier - GitHub Gist",
+      "title": "Agent 基础设施：访问权限成为真正前沿",
       "subject": "Anthony Alcaraz",
       "sourceName": "gist.github.com",
       "sourceUrl": "https://gist.github.com/AnthonyAlcaraz/7b2e6e454cdbbb2a02d99a435e9a68d9",
@@ -21016,7 +21015,7 @@
           "label": "融资"
         }
       ],
-      "fact": "Agentic Infrastructure: Why Access Is the Real Frontier - GitHub Gist",
+      "fact": "Agent 基础设施：访问权限成为真正前沿",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -21409,7 +21408,7 @@
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Vertical AI: Investing in the Foundations of the Future - LinkedIn",
+      "title": "Vertical AI：投资未来的基础设施",
       "subject": "Vertical AI",
       "sourceName": "linkedin.com",
       "sourceUrl": "https://www.linkedin.com/pulse/vertical-ai-investing-foundations-future-trace-cohen-l0s6e",
@@ -21441,7 +21440,7 @@
           "label": "融资"
         }
       ],
-      "fact": "Vertical AI: Investing in the Foundations of the Future - LinkedIn",
+      "fact": "Vertical AI：投资未来的基础设施",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -21457,7 +21456,7 @@
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "9953 Funded AI Startups 2026 | Weekly Updated B2B Lead Database",
+      "title": "GrowthList：2026 年已融资 AI 创业公司数据库",
       "subject": "GrowthList",
       "sourceName": "growthlist.co",
       "sourceUrl": "https://growthlist.co/ai-startups/",
@@ -21489,7 +21488,7 @@
           "label": "融资"
         }
       ],
-      "fact": "9953 Funded AI Startups 2026 | Weekly Updated B2B Lead Database",
+      "fact": "GrowthList：2026 年已融资 AI 创业公司数据库",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -21497,6 +21496,95 @@
         "保留为完整证据池材料"
       ],
       "qualityWarnings": [],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-09-P-009",
+      "date": "2026-06-09",
+      "type": "core_pool_candidate",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "a16z 投资 Lio，押注垂直 AI 基础设施",
+      "subject": "Lio",
+      "sourceName": "a16z.com",
+      "sourceUrl": "https://a16z.com/announcement/investing-in-lio/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 706,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-009"
+      ],
+      "linkedCardId": "SIG-20260609-A01",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "Enterprise procurement remains one of the last bastions of manual back-office administration. The world’s largest enterprises spend billions each year to manage their procurement functions – directing the flow of trillions of dollars in spend. And all of this...",
+      "evidencePoints": [
+        "Investing in Lio Investing in Lio Lio&rsquo;s agents triage requests, analyze quotes, compare suppliers, negotiate, source and onboard vendors, and execute purchases end-to-end across ERPs, systems of record, inboxes, contracts, and the open web.",
+        "Software Is Eating the World Software Is Eating the World Seema Amble is a partner focused on early stage SaaS and B2B fintech investments globally."
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
       "fromCorePool": true
     },
     {
@@ -21651,96 +21739,6 @@
         "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-09-P-009",
-      "date": "2026-06-09",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "Investing in Lio | Andreessen Horowitz",
-      "subject": "Lio",
-      "sourceName": "a16z.com",
-      "sourceUrl": "https://a16z.com/announcement/investing-in-lio/",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 651,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-009"
-      ],
-      "linkedCardId": "SIG-20260609-A01",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "Enterprise procurement remains one of the last bastions of manual back-office administration. The world’s largest enterprises spend billions each year to manage their procurement functions – directing the flow of trillions of dollars in spend. And all of this...",
-      "evidencePoints": [
-        "Investing in Lio Investing in Lio Lio&rsquo;s agents triage requests, analyze quotes, compare suppliers, negotiate, source and onboard vendors, and execute purchases end-to-end across ERPs, systems of record, inboxes, contracts, and the open web.",
-        "Software Is Eating the World Software Is Eating the World Seema Amble is a partner focused on early stage SaaS and B2B fintech investments globally."
-      ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "资料型、榜单型或工具型素材，默认不作为 Top 10 优先项",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -22913,7 +22911,7 @@
       "type": "core_pool_candidate",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "The Next Generation of Enterprise AI - Paid Program - WSJ",
+      "title": "WSJ / Broadcom：下一代企业 AI 基础设施",
       "subject": "Broadcom / WSJ",
       "sourceName": "partners.wsj.com",
       "sourceUrl": "https://partners.wsj.com/broadcom/powering-the-ai-revolution/the-next-generation-of-enterprise-ai/",
@@ -22944,7 +22942,7 @@
           "label": "产品"
         }
       ],
-      "fact": "The Next Generation of Enterprise AI - Paid Program - WSJ",
+      "fact": "WSJ / Broadcom：下一代企业 AI 基础设施",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -22960,8 +22958,8 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "How Gen AI Transforms Software Engineering - Paid Program",
-      "subject": "未标注主体",
+      "title": "WSJ / Capgemini：生成式 AI 如何改变软件工程",
+      "subject": "WSJ / Capgemini",
       "sourceName": "partners.wsj.com",
       "sourceUrl": "https://partners.wsj.com/capgemini/the-business-of-ai/how-gen-ai-transforms-software-engineering/",
       "sourceLevel": "B",
@@ -22991,7 +22989,7 @@
           "label": "案例"
         }
       ],
-      "fact": "How Gen AI Transforms Software Engineering - Paid Program",
+      "fact": "WSJ / Capgemini：生成式 AI 如何改变软件工程",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -23252,7 +23250,7 @@
           "SIG-20260609-A01"
         ],
         "titles": [
-          "Investing in Lio | Andreessen Horowitz"
+          "a16z 投资 Lio，押注垂直 AI 基础设施"
         ]
       },
       {
@@ -23468,7 +23466,7 @@
           "SIG-20260609-A01"
         ],
         "titles": [
-          "Investing in Lio | Andreessen Horowitz"
+          "a16z 投资 Lio，押注垂直 AI 基础设施"
         ]
       },
       {
@@ -23480,7 +23478,7 @@
           "SIG-20260609-A01"
         ],
         "titles": [
-          "Investing in Lio | Andreessen Horowitz"
+          "a16z 投资 Lio，押注垂直 AI 基础设施"
         ]
       },
       {
@@ -23492,7 +23490,7 @@
           "SIG-20260609-A01"
         ],
         "titles": [
-          "Investing in Lio | Andreessen Horowitz"
+          "a16z 投资 Lio，押注垂直 AI 基础设施"
         ]
       },
       {
@@ -23761,7 +23759,7 @@
           },
           {
             "id": "SIG-20260609-A01",
-            "title": "Investing in Lio | Andreessen Horowitz",
+            "title": "a16z 投资 Lio，押注垂直 AI 基础设施",
             "subject": "Lio",
             "categoryLabel": "案例",
             "sourceName": "a16z.com",
@@ -23959,7 +23957,7 @@
         },
         {
           "id": "SIG-20260609-A01",
-          "title": "Investing in Lio | Andreessen Horowitz",
+          "title": "a16z 投资 Lio，押注垂直 AI 基础设施",
           "subject": "Lio",
           "categoryLabel": "案例",
           "sourceName": "a16z.com",

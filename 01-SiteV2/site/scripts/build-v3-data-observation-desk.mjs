@@ -680,6 +680,12 @@ function frontstageChineseTitle(title = "", sourceUrl = "") {
     [/metronome\.com.*hugging-face/u, "Hugging Face 使用 Metronome 支持计量计费"],
     [/ycombinator\.com.*companies\/industry\/open-source/u, "Y Combinator 2026 开源创业公司索引"],
     [/growthlist\.co.*yc-startups/u, "Y Combinator 创业公司完整索引"],
+    [/a16z\.com\/announcement\/investing-in-lio/u, "a16z 投资 Lio，押注垂直 AI 基础设施"],
+    [/gist\.github\.com\/anthonyalcaraz\/7b2e6e454cdbbb2a02d99a435e9a68d9/u, "Agent 基础设施：访问权限成为真正前沿"],
+    [/linkedin\.com\/pulse\/vertical-ai-investing-foundations-future/u, "Vertical AI：投资未来的基础设施"],
+    [/growthlist\.co\/ai-startups/u, "GrowthList：2026 年已融资 AI 创业公司数据库"],
+    [/partners\.wsj\.com\/broadcom\/powering-the-ai-revolution/u, "WSJ / Broadcom：下一代企业 AI 基础设施"],
+    [/partners\.wsj\.com\/capgemini\/the-business-of-ai/u, "WSJ / Capgemini：生成式 AI 如何改变软件工程"],
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
