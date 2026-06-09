@@ -1650,6 +1650,7 @@ function cardFromFile(file, category) {
     evidenceGate: scalar(fm, "evidence_gate"),
     stage: tags.stage?.find((tag) => !internalFrontstageTagIds.has(tag)) || "",
     evidence: tags.evidence?.[0] || "",
+    largeVendorKey: scalar(fm, "largeVendorKey") || "",
     track: tags.track?.[0] || "",
   };
 }
@@ -2498,7 +2499,7 @@ const rawCards = [
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence))
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 3, 1);
+const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 4, 1);
 const frontstageCards = frontstageSelection.cards;
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";

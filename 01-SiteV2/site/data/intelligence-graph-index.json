@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "V3.3.2.1-intelligence-graph-index",
-    "generatedAt": "2026-06-09T02:34:05.425Z",
+    "generatedAt": "2026-06-09T05:35:07.874Z",
     "activeDate": "2026-06-09",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -28,14 +28,14 @@
   },
   "summary": {
     "activeDate": "2026-06-09",
-    "totalCards": 168,
-    "todayCards": 14,
-    "todayTop10": 9,
+    "totalCards": 170,
+    "todayCards": 16,
+    "todayTop10": 10,
     "corePoolCandidates": 31,
-    "linkedCorePoolCards": 14,
-    "candidateOnlyCorePool": 17,
-    "relationshipNodes": 25,
-    "relationshipEdges": 52,
+    "linkedCorePoolCards": 16,
+    "candidateOnlyCorePool": 15,
+    "relationshipNodes": 28,
+    "relationshipEdges": 56,
     "relationshipClusters": 3,
     "tagAssociations": 8,
     "trendLinks": 16,
@@ -45,19 +45,18 @@
     "top10CardIds": [
       "SIG-20260609-A02",
       "SIG-20260609-A08",
+      "SIG-20260609-B02",
       "SIG-20260609-A09",
       "SIG-20260609-A03",
       "SIG-20260609-A06",
+      "SIG-20260609-B01",
       "SIG-20260609-A07",
       "SIG-20260609-A11",
-      "SIG-20260609-A01",
       "SIG-20260609-A13"
     ],
     "corePoolCardIds": [
       "POOL-2026-06-09-P-001",
-      "POOL-2026-06-09-P-002",
       "POOL-2026-06-09-P-032",
-      "POOL-2026-06-09-P-033",
       "POOL-2026-06-09-P-034",
       "POOL-2026-06-09-P-036",
       "POOL-2026-06-09-P-010",
@@ -71,9 +70,11 @@
       "POOL-2026-06-09-P-030",
       "SIG-20260609-A02",
       "SIG-20260609-A08",
+      "SIG-20260609-B02",
       "SIG-20260609-A09",
       "SIG-20260609-A12",
       "SIG-20260609-A03",
+      "SIG-20260609-B01",
       "SIG-20260609-A06",
       "SIG-20260609-A04",
       "SIG-20260609-A07",
@@ -101,6 +102,11 @@
         "id": "SIG-20260609-A06",
         "vendor": "anthropic",
         "title": "为生物学AI智能体铺路"
+      },
+      {
+        "id": "SIG-20260609-B01",
+        "vendor": "openai",
+        "title": "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元"
       }
     ],
     "categoryStats": [
@@ -142,35 +148,15 @@
       {
         "category": "funding",
         "label": "融资",
-        "today": 0,
-        "last7": 7,
-        "last30": 20,
-        "total": 20,
+        "today": 2,
+        "last7": 9,
+        "last30": 22,
+        "total": 22,
         "topTags": [
-          {
-            "tag": "evidence-funding",
-            "label": "融资证据",
-            "count": 7
-          },
-          {
-            "tag": "stage-rising",
-            "label": "升温",
-            "count": 7
-          },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 7
-          },
-          {
-            "tag": "customer-enterprise",
-            "label": "大中型企业",
-            "count": 4
-          },
-          {
-            "tag": "track-enterprise-workflow",
-            "label": "企业工作流",
-            "count": 4
+            "count": 2
           }
         ]
       },
@@ -1112,6 +1098,129 @@
       ],
       "qualityWarnings": [
         "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260609-B02",
+      "date": "2026-06-09",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍",
+      "subject": "Moonshot AI",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceUrl": "https://the-decoder.com/moonshot-ai-targets-a-30-billion-valuation-more-than-six-times-its-late-2025-worth",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 634,
+      "evidenceScore": 48,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [],
+        "stage": [],
+        "region": [
+          "region-china"
+        ],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "region-china"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        }
+      ],
+      "fact": "月之暗面（Moonshot AI），Kimi 聊天机器人母公司，正寻求在新一轮融资中获得最高 300 亿美元的估值，这一数字是 2025 年底公司估值的 6 倍以上。",
+      "evidencePoints": [],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260609-B01",
+      "date": "2026-06-09",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元",
+      "subject": "OpenAI",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceUrl": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 604,
+      "evidenceScore": 48,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "openai",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        }
+      ],
+      "fact": "OpenAI周一在一篇博客中宣布已秘密提交首次公开募股申请，距其主要竞争对手Anthropic递交类似文件仅一周多时间，两家AI公司的上市竞赛随之升温。OpenAI在最新一轮融资中投后估值达8520亿美元。",
+      "evidencePoints": [],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
     },
@@ -19206,11 +19315,9 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
       "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
@@ -19223,55 +19330,6 @@
         }
       ],
       "fact": "华为余承东官宣尊界 V800，定位超高端 MPV，轴距 3430mm，搭载 1.5T 增程器及前后双电机。苹果 WWDC26 发布 iOS 27 等新系统，库克完成 CEO 任内\"最后一舞\"，Siri AI 等智能功能在中国大陆暂不提供。月之暗面正寻求 20 亿美元新一轮融资，目标估值 300 亿美元，半年估值暴涨七倍。OpenRouter 数据显示中国 AI 大模型周调用量连续六周超越美国，6 月 9 日当周环比增长 27.49% ...",
-      "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
-      "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-09-P-002",
-      "date": "2026-06-09",
-      "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "继Anthropic之后，OpenAI秘密提交IPO申请",
-      "subject": "继Anthropic之后，OpenAI秘密提交IPO申请",
-      "sourceName": "techcrunch.com",
-      "sourceUrl": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo",
-      "sourceLevel": "A",
-      "importanceScore": 5,
-      "rankScore": 960,
-      "evidenceScore": 97,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-002"
-      ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
-      "promotePriority": "review",
-      "largeVendor": true,
-      "largeVendorKey": "anthropic",
-      "tags": {},
-      "flatTags": [],
-      "displayTags": [
-        {
-          "id": "funding",
-          "label": "融资"
-        }
-      ],
-      "fact": "OpenAI周一在一篇博客中宣布已秘密提交首次公开募股申请，距其主要竞争对手Anthropic递交类似文件仅一周多时间，两家AI公司的上市竞赛随之升温。OpenAI在最新一轮融资中投后估值达8520亿美元。",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -19304,12 +19362,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19321,55 +19377,6 @@
         }
       ],
       "fact": "欧菲光推出 RoboVision 系列首款产品 Dex400R RGBD 相机，支持 D2C+IMU 同步、数采、外部触发等模式，可实现手眼协同、无序抓取、近远场避障。该相机专为机器人机械臂抓取识别、数据采集、补盲避障场景定制，尺寸 45mm×28mm×28mm，近距离 10-20cm 识别精度<1.5mm，远距离误差<1%，测距盲区 5cm。采用 USB+GMSL 双接口设计，为同品类业内唯一，兼顾本地直连与长距抗干扰传输，适配工业...",
-      "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
-      "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-09-P-033",
-      "date": "2026-06-09",
-      "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍",
-      "subject": "未标注主体",
-      "sourceName": "the-decoder.com",
-      "sourceUrl": "https://the-decoder.com/moonshot-ai-targets-a-30-billion-valuation-more-than-six-times-its-late-2025-worth",
-      "sourceLevel": "A",
-      "importanceScore": 5,
-      "rankScore": 960,
-      "evidenceScore": 55,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-033"
-      ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
-      "promotePriority": "review",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {},
-      "flatTags": [],
-      "displayTags": [
-        {
-          "id": "funding",
-          "label": "融资"
-        }
-      ],
-      "fact": "月之暗面（Moonshot AI），Kimi 聊天机器人母公司，正寻求在新一轮融资中获得最高 300 亿美元的估值，这一数字是 2025 年底公司估值的 6 倍以上。",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -19402,12 +19409,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19451,12 +19456,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19501,12 +19504,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "来源时间过旧，适合保留为背景证据",
-      "notPromotedIssues": [
-        "来源时间过旧，适合保留为背景证据"
-      ],
-      "repairSuggestion": "补充同一事件的近期来源；否则仅作为背景证据保留。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": true,
       "largeVendorKey": "github",
       "tags": {},
@@ -19551,12 +19552,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "评论或反馈材料不足以支撑正式事实卡",
-      "notPromotedIssues": [
-        "评论或反馈材料不足以支撑正式事实卡"
-      ],
-      "repairSuggestion": "用原始报道、公司公告或一手材料替代评论/反馈证据。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19600,12 +19599,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19649,12 +19646,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19698,12 +19693,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19747,12 +19740,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19796,12 +19787,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "目录或索引页，不适合直接成卡",
-      "notPromotedIssues": [
-        "目录或索引页，不适合直接成卡"
-      ],
-      "repairSuggestion": "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -19846,11 +19835,9 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
       "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
@@ -19896,13 +19883,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "来源时间过旧，适合保留为背景证据；融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "来源时间过旧，适合保留为背景证据",
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补充同一事件的近期来源；否则仅作为背景证据保留。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -20096,6 +20080,71 @@
         "涉及资金流向、预算规模或融资信号",
         "能观察真实客户、业务流程或采购场景",
         "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-09-P-033",
+      "date": "2026-06-09",
+      "type": "core_pool_candidate",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍",
+      "subject": "Moonshot AI",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceUrl": "https://the-decoder.com/moonshot-ai-targets-a-30-billion-valuation-more-than-six-times-its-late-2025-worth",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 634,
+      "evidenceScore": 48,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-033"
+      ],
+      "linkedCardId": "SIG-20260609-B02",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [],
+        "stage": [],
+        "region": [
+          "region-china"
+        ],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "region-china"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        }
+      ],
+      "fact": "月之暗面（Moonshot AI），Kimi 聊天机器人母公司，正寻求在新一轮融资中获得最高 300 亿美元的估值，这一数字是 2025 年底公司估值的 6 倍以上。",
+      "evidencePoints": [],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
@@ -20396,6 +20445,68 @@
       ],
       "qualityWarnings": [
         "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-09-P-002",
+      "date": "2026-06-09",
+      "type": "core_pool_candidate",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元",
+      "subject": "OpenAI",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceUrl": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 604,
+      "evidenceScore": 48,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-002"
+      ],
+      "linkedCardId": "SIG-20260609-B01",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "openai",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        }
+      ],
+      "fact": "OpenAI周一在一篇博客中宣布已秘密提交首次公开募股申请，距其主要竞争对手Anthropic递交类似文件仅一周多时间，两家AI公司的上市竞赛随之升温。OpenAI在最新一轮融资中投后估值达8520亿美元。",
+      "evidencePoints": [],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
     },
@@ -21293,10 +21404,8 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "证据边界不足，暂不晋级正式 Card",
-      "notPromotedIssues": [
-        "证据边界不足，暂不晋级正式 Card"
-      ],
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
       "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
       "promotePriority": "review",
       "largeVendor": false,
@@ -21342,10 +21451,8 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "证据边界不足，暂不晋级正式 Card",
-      "notPromotedIssues": [
-        "证据边界不足，暂不晋级正式 Card"
-      ],
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
       "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
       "promotePriority": "review",
       "largeVendor": false,
@@ -21385,6 +21492,13 @@
         "type": "category",
         "weight": 4,
         "category": "product-service"
+      },
+      {
+        "id": "category:融资",
+        "label": "融资",
+        "type": "category",
+        "weight": 2,
+        "category": "funding"
       },
       {
         "id": "subject:MarkTechPost（RSS）",
@@ -21451,6 +21565,22 @@
         "sourceName": "The Decoder：AI News（RSS）"
       },
       {
+        "id": "subject:Moonshot-AI",
+        "label": "Moonshot AI",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "The Decoder：AI News（RSS）"
+      },
+      {
+        "id": "subject:OpenAI",
+        "label": "OpenAI",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "TechCrunch：AI（RSS）"
+      },
+      {
         "id": "subject:Protopia",
         "label": "Protopia",
         "type": "subject",
@@ -21486,7 +21616,7 @@
         "id": "signal:track-ai-agent",
         "label": "AI Agent",
         "type": "signal",
-        "weight": 14,
+        "weight": 16,
         "tag": "track-ai-agent"
       },
       {
@@ -21978,6 +22108,30 @@
         ]
       },
       {
+        "from": "subject:Moonshot-AI",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-B02"
+        ],
+        "titles": [
+          "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍"
+        ]
+      },
+      {
+        "from": "subject:OpenAI",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-B01"
+        ],
+        "titles": [
+          "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元"
+        ]
+      },
+      {
         "from": "subject:为生物学AI智能体铺路",
         "to": "signal:track-ai-agent",
         "label": "关联",
@@ -22016,30 +22170,6 @@
       {
         "from": "subject:Claude",
         "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A05"
-        ],
-        "titles": [
-          "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包"
-        ]
-      },
-      {
-        "from": "subject:Claude",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A05"
-        ],
-        "titles": [
-          "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包"
-        ]
-      },
-      {
-        "from": "subject:Claude",
-        "to": "signal:track-enterprise-data",
         "label": "关联",
         "weight": 1,
         "cardIds": [
@@ -22449,9 +22579,9 @@
     {
       "object": "track-ai-agent",
       "label": "AI Agent",
-      "todayCount": 14,
-      "last7Count": 93,
-      "last30Count": 165,
+      "todayCount": 16,
+      "last7Count": 95,
+      "last30Count": 167,
       "subjects": [
         {
           "label": "MarkTechPost（RSS）",
@@ -22474,6 +22604,10 @@
         {
           "label": "产品",
           "count": 4
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
@@ -23323,7 +23457,7 @@
         "window": "7 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 93,
+        "cardCount": 95,
         "lastSeen": "2026-06-09",
         "filter": "track-ai-agent"
       },
@@ -23387,7 +23521,7 @@
         "window": "30 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 165,
+        "cardCount": 167,
         "lastSeen": "2026-06-09",
         "filter": "track-ai-agent"
       },
@@ -23456,9 +23590,9 @@
       "title": "AI Agent",
       "date": "2026-06-09",
       "signal": "track-ai-agent",
-      "evidenceCount": 165,
+      "evidenceCount": 167,
       "window": "30 天",
-      "summary": "AI Agent has 165 linked cards in the 30 天 window.",
+      "summary": "AI Agent has 167 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -23522,9 +23656,9 @@
       "title": "AI Agent",
       "date": "2026-06-09",
       "signal": "track-ai-agent",
-      "evidenceCount": 93,
+      "evidenceCount": 95,
       "window": "7 天",
-      "summary": "AI Agent has 93 linked cards in the 7 天 window.",
+      "summary": "AI Agent has 95 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -23632,8 +23766,8 @@
       "title": "AI Agent",
       "date": "2026-06-09",
       "signal": "track-ai-agent",
-      "evidenceCount": 14,
-      "windowCount": 165,
+      "evidenceCount": 16,
+      "windowCount": 167,
       "subjects": [
         {
           "label": "MarkTechPost（RSS）",
@@ -23656,6 +23790,10 @@
         {
           "label": "产品",
           "count": 4
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
@@ -23680,7 +23818,7 @@
           "count": 6
         }
       ],
-      "summary": "AI Agent appears in 14 same-day cards and 165 cards in the 30-day window.",
+      "summary": "AI Agent appears in 16 same-day cards and 167 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
