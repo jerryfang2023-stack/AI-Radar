@@ -236,7 +236,7 @@
   }
 
   function allItems() {
-    return mergeDisplayItems(state.payload?.items || []);
+    return state.payload?.items || [];
   }
 
   function sourceLabel(value = "") {
