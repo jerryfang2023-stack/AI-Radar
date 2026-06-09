@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-09
+last_updated: 2026-06-10
 use_when:
   - task startup
   - page change
@@ -18,13 +18,13 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.3.1-hermes-supervision-inbox |
-| Version name | Hermes Supervision Inbox |
+| Current version | V3.3.3.2-project-health-automation |
+| Version name | Project Health Automation |
 | Version layer | Patch |
-| Release date | 2026-06-09 |
-| Last modified at | 2026-06-09T23:41:02+08:00 |
+| Release date | 2026-06-10 |
+| Last modified at | 2026-06-10T00:44:49+08:00 |
 | Product version | V3.3 |
-| Git tag | `v3.3.3.1-hermes-supervision-inbox` |
+| Git tag | `v3.3.3.2-project-health-automation` |
 | Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -41,6 +41,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Site publication remains unified: merged changes on `main` trigger GitHub Pages.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
+- Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
@@ -103,6 +104,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `V3.3.3.2-freeze-project-health-automation-20260610` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-10 | 2026-06-10T00:44:49+08:00 | V3.3.3.2-project-health-automation | project maintenance only living in chat checklists; weekly recurring failures without a report; monthly cleanup performed before review; deletion-first Git cleanup; Netlify or artifact residue returning unnoticed | `npm run health:daily` + `npm run health:weekly` + `npm run health:monthly` |
 | `V3.3.3.1-freeze-hermes-supervision-inbox-20260609` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-09 | 2026-06-09T23:41:02+08:00 | V3.3.3.1-hermes-supervision-inbox | ad hoc Hermes-to-Codex handoff only in chat; daily supervision without a unified report; failed monitoring issues without inbox report path; Hermes directly editing monitor skills after incidents; Codex repairs without lane / failed_gate / report_path / data_generated / needed_action | `npm run supervise:daily` + `npm run inbox:hermes` + monitor skill evals |
 | `V3.3.3-freeze-column-independent-production-skills-20260609` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-09 | 2026-06-09T22:19:02+08:00 | V3.3.3-column-independent-production-skills | mixed-column production workflows; Business Signals PR staging builders or community data; First-Line Viewpoints depending on Raw / Pool / Card success; Community Intelligence treated as verified business facts; monitor skills without eval / memory self-improvement loops; direct deploy outside GitHub Pages | skill evals + workflow split + source-first + builders data gate + community gate + frontstage regression |
 | `V3.3.2.1-freeze-public-frontstage-polish-20260609` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-09 | 2026-06-09T21:50:57+08:00 | V3.3.2.1-public-frontstage-polish | Dashboard returning to public navigation; main column titles falling below column-page H1 tier; Core Pool/internal process tags leaking into card tags; weak/title-derived subjects in Top10/Core Pool; relationship network reverting to horizontal-drag zoom; untranslated builders blog titles | syntax + source-first + builders data gate + frontstage regression + visual smoke + GitHub Pages deploy |
@@ -118,7 +120,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| V3.3.3.1-hermes-supervision-inbox | 2026-06-09T23:41:02+08:00 | Adds unified daily supervision automation and the Hermes -> Codex inbox protocol. Hermes now supervises with `daily-supervision-report`, sends actionable repair requests through `agent-workflow/inbox/hermes-to-codex/`, and Codex reads them with `npm run inbox:hermes` | current |
+| V3.3.3.2-project-health-automation | 2026-06-10T00:44:49+08:00 | Adds read-only project health commands: `health:daily` for unified supervision, `health:weekly` for recurring issue / workflow / conflict review, and `health:monthly` for Git hygiene, repository size, large-file, old-report, runtime, and deployment residue review | current |
+| V3.3.3.1-hermes-supervision-inbox | 2026-06-09T23:41:02+08:00 | Adds unified daily supervision automation and the Hermes -> Codex inbox protocol. Hermes now supervises with `daily-supervision-report`, sends actionable repair requests through `agent-workflow/inbox/hermes-to-codex/`, and Codex reads them with `npm run inbox:hermes` | upgraded |
 | V3.3.3-column-independent-production-skills | 2026-06-09T22:19:02+08:00 | Splits daily production into independent Business Signals, First-Line Viewpoints, and Community Intelligence monitor skills, with lane-specific gates, commit boundaries, and self-improvement eval / memory loops while preserving unified GitHub Pages publication | upgraded |
 | V3.3.2.1-public-frontstage-polish | 2026-06-09T21:50:57+08:00 | Polishes the public four-column frontstage: hides Dashboard from public navigation, restores column-page H1 hierarchy, fixes Core Pool/internal tag leakage, repairs weak subjects, translates builders blog titles, and changes the intelligence map network to true zoom | upgraded |
 | V3.3.2-community-intelligence-v1 | 2026-06-08 | Adds Community Intelligence V1.0 as a frontstage column; includes logged-in community collection, dedupe, value sorting, clean card display, document links, and local Obsidian archive; navigation is unified across frontstage pages | upgraded |

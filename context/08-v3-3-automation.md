@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-06-09
+last_updated: 2026-06-10
 use_when:
   - github automation
   - daily monitoring
@@ -230,6 +230,38 @@ Hermes should send Codex a compact repair request containing:
 4. desired boundary: repair rule, repair script, rerun gate, or commit only.
 
 Codex should make code / rule changes, run the smallest relevant validation, commit the repair, and report the commit hash back. Hermes should then use the next run or a manual dispatch to verify production behavior instead of editing the same files independently.
+
+## Project Health Automation
+
+Project maintenance is split into daily supervision, weekly retrospective, and monthly cleanup review. These commands are read-only report generators. They do not delete files, edit rules, merge PRs, or deploy.
+
+Daily health uses the same unified supervision report as Hermes:
+
+```powershell
+npm run health:daily -- --date=<YYYY-MM-DD>
+```
+
+Weekly health summarizes recent daily reports, repeated lane failures, GitHub Actions health, and historical wording that may conflict with the current V3.3 rules:
+
+```powershell
+npm run health:weekly -- --date=<YYYY-MM-DD> --days=7
+```
+
+Monthly maintenance reviews local Git hygiene, worktrees, branch state, repository size, large tracked files, old report cleanup candidates, runtime versions, and deployment-service residue:
+
+```powershell
+npm run health:monthly -- --date=<YYYY-MM-DD> --days=30
+```
+
+Primary outputs:
+
+- `agent-workflow/reports/<date>-weekly-health.md`
+- `agent-workflow/reports/<date>-weekly-health.json`
+- `agent-workflow/reports/<date>-monthly-maintenance.md`
+- `agent-workflow/reports/<date>-monthly-maintenance.json`
+- matching `*-latest.*` report aliases.
+
+Weekly and monthly reports should produce a recommended action list. Codex performs any cleanup or code change after review; Hermes may use these reports to decide whether a recurring issue should become a gate, eval, or monitor skill memory update.
 
 ## Monitor Skill Self-Improvement
 

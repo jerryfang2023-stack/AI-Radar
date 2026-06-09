@@ -15,6 +15,9 @@
     "assert:community-intelligence": "node agent-workflow/tools/assert-community-intelligence-data.mjs",
     "inbox:hermes": "node agent-workflow/tools/read-hermes-inbox.mjs",
     "supervise:daily": "node agent-workflow/tools/write-daily-supervision-report.mjs",
+    "health:daily": "node agent-workflow/tools/write-daily-supervision-report.mjs",
+    "health:weekly": "node agent-workflow/tools/write-weekly-health-report.mjs",
+    "health:monthly": "node agent-workflow/tools/write-monthly-maintenance-report.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
     "export:public-daily-brief": "node 01-SiteV2/site/scripts/export-public-daily-brief.mjs"
   },
