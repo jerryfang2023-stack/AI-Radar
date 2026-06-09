@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# V3.3.2 Automation Loop
+# V3.3.3 Automation Loop
 
-V3.3.2 automation must be persistent, deployable, and syncable to local Obsidian. It is not enough to create temporary artifacts.
+V3.3.3 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts.
 
 ## Business Signals GitHub Chain
 
@@ -63,10 +63,10 @@ This workflow must not write business-signal Cards, relationship graph data, tre
 
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
-| Business Signals | GitHub Actions | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
+| Business Signals | GitHub Actions + `skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
-| First-Line Viewpoints | GitHub Actions, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` | independent automation PR to `main` after builders gate passes |
-| Community Intelligence | Local Windows scheduled task / Codex local run | `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files, local archive, then explicit Git commit / sync |
+| First-Line Viewpoints | GitHub Actions + `skills/guanlan-first-line-viewpoints-monitor/SKILL.md`, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` | independent automation PR to `main` after builders gate passes |
+| Community Intelligence | Local Windows scheduled task / Codex local run + `skills/guanlan-community-intelligence-monitor/SKILL.md` | `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files, local archive, then explicit Git commit / sync |
 
 The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.
 
@@ -204,6 +204,24 @@ Hermes should send Codex a compact repair request containing:
 4. desired boundary: repair rule, repair script, rerun gate, or commit only.
 
 Codex should make code / rule changes, run the smallest relevant validation, commit the repair, and report the commit hash back. Hermes should then use the next run or a manual dispatch to verify production behavior instead of editing the same files independently.
+
+## Monitor Skill Self-Improvement
+
+Each production lane has a current monitor skill:
+
+- Business Signals: `skills/guanlan-business-signals-monitor/SKILL.md`
+- First-Line Viewpoints: `skills/guanlan-first-line-viewpoints-monitor/SKILL.md`
+- Community Intelligence: `skills/guanlan-community-intelligence-monitor/SKILL.md`
+
+After a real production failure, the responsible skill must run its self-improvement loop:
+
+1. identify the failed lane, gate, report path, and invariant;
+2. classify the root cause;
+3. add or tighten one eval before adding long prose;
+4. update `MEMORY.md` only for durable recurring lessons;
+5. rerun the smallest relevant gate.
+
+Do not use self-improvement to broaden lane ownership. A Business Signals fix must not cause that skill to stage First-Line Viewpoints or Community Intelligence data.
 
 ## Not Done
 

@@ -10,7 +10,7 @@ use_when:
 priority: current
 ---
 
-# V3.3.2 Experience Automation
+# V3.3.3 Experience Automation
 
 This file defines the lightweight automation for recording development actions and generating experience retrospectives.
 

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-08
+last_updated: 2026-06-09
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.2 unified intelligence frontstage development.
+WaveSight AI is now in V3.3.3 column-independent production development.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now in V3.3.2 unified intelligence frontstage development.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.2 adds Community Intelligence V1.0 as a first-class frontstage column, with logged-in community collection, dedupe, value sorting, and local Obsidian archive.
+- V3.3.3 keeps the unified frontstage and upgrades daily production into independent column lanes with shared site-level publication.
 
 ## Current Entries
 
@@ -81,10 +81,10 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 
 ## Current Automation Goal
 
-1. Run daily Raw / Pool monitoring.
-2. Generate business-signal Cards.
-3. Run dedupe, source-first, and regression checks.
-4. Update business signals, first-line viewpoints, topic center, and operations dashboard data.
-5. Open or update the automation PR.
-6. Deploy after merge through GitHub Pages.
+1. Run Business Signals through its own Raw / Pool / Card / Top10 lane.
+2. Run First-Line Viewpoints through its own builders data lane.
+3. Run Community Intelligence through its local logged-in collection lane.
+4. Keep Intelligence Map and Dashboard aligned with the Business Signals data chain.
+5. Persist each producing lane through its own commit / PR boundary.
+6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
 7. Sync merged assets to local Obsidian when the local machine is online.

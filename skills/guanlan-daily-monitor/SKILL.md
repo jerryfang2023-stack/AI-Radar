@@ -1,6 +1,6 @@
 ---
 name: guanlan-daily-monitor
-description: Use when running, updating, auditing, or repairing V3 WaveSight daily monitoring. It collects Raw candidates, routes Pool evidence, records monitor logs, and prepares QC handoff. It does not write articles, briefs, trend reports, recommendations, or Cards.
+description: Legacy-compatible entry for Business Signals Raw / Pool monitoring. Prefer `guanlan-business-signals-monitor` for the full V3.3.3 Business Signals lane, including Core Pool, Cards, Top10, PR handoff, and self-improvement. This skill only collects Raw candidates, routes Pool evidence, records monitor logs, and prepares QC handoff.
 ---
 
 # Guanlan Daily Monitor
@@ -8,10 +8,11 @@ description: Use when running, updating, auditing, or repairing V3 WaveSight dai
 ## Required Reads
 
 1. `AGENTS.md`
-2. `context/05-daily-monitoring.md`
-3. `context/07-v3-intelligence-generation-rules.md`
-4. `skills/guanlan-monitor-quality-gate/SKILL.md`
-5. `skills/guanlan-daily-monitor-qc/SKILL.md`
+2. `skills/guanlan-business-signals-monitor/SKILL.md`
+3. `context/05-daily-monitoring.md`
+4. `context/07-v3-intelligence-generation-rules.md`
+5. `skills/guanlan-monitor-quality-gate/SKILL.md`
+6. `skills/guanlan-daily-monitor-qc/SKILL.md`
 
 ## Scope
 
@@ -51,7 +52,10 @@ Homepage, directory, login, docs-index, tool-list, product catalog, package/mode
 agent-workflow/reports/
 ```
 
+## Handoff
+
+After Raw / Pool monitoring, use `guanlan-business-signals-monitor` for Core Pool balance, Signal Card generation, Top10 verification, PR handoff, and recurring-failure skill improvement.
+
 ## Paused
 
 Opinion / follow-builders is paused for current business-signal monitoring.
-
