@@ -548,6 +548,21 @@ async function main() {
 
   const unique = mergeItems(collected)
     .sort((a, b) => (b.valueScore || 0) - (a.valueScore || 0) || (b.opportunityScore || 0) - (a.opportunityScore || 0));
+  const linkMap = new Map();
+  for (const item of unique) {
+    for (const link of item.links || []) {
+      if (!link?.href || linkMap.has(link.href)) continue;
+      linkMap.set(link.href, {
+        href: link.href,
+        text: clean(link.text || link.href),
+        itemId: item.id,
+        itemTitle: item.title,
+        source: item.source,
+        sourceName: item.sourceName,
+      });
+    }
+  }
+  const links = [...linkMap.values()];
   const payload = {
     meta: {
       generatedAt: new Date().toISOString(),
@@ -572,6 +587,7 @@ async function main() {
       url: source.url,
     }])),
     keywordGroups,
+    links,
     items: unique,
   };
 
@@ -584,7 +600,7 @@ async function main() {
     collected: collected.length,
     items: unique.length,
     deduped: collected.length - unique.length,
-    links: unique.reduce((sum, item) => sum + item.links.length, 0),
+    links: links.length,
     keywords: selectedKeywords.map((item) => item.keyword),
     errors,
   }, null, 2));
