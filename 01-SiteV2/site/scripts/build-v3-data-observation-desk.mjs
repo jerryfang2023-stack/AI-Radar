@@ -551,6 +551,11 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
     [/firecrawl\.dev.*frameworks.*ai-agents/u, "2026 年构建 AI Agent 的开源框架"],
     [/github\.com.*governing-agents/u, "GitHub Enterprise 中的 Agent 治理"],
     [/kpmg.*procurement.*intelligent/u, "KPMG：用智能技术改造采购流程"],
+    [/bidnetdirect.*2668201217/u, "NIST 寻求承包商提供 AI 模型托管和推理服务"],
+    [/linkedin.*sunita-verma.*inference/u, "Sunita Verma：推理成本两年下降 280 倍"],
+    [/fortunebusinessinsights.*ai-saas-market/u, "AI SaaS 市场规模与预测（至 2034 年）"],
+    [/protopia.*protopia-ai-on-aws/u, "Protopia AI 现已登陆 AWS Marketplace"],
+    [/huggingface.*rdjarbeng.*yc-rfs/u, "Y Combinator RFS 数据集：创业方向分析"],
   ];
   const urlMatch = byUrl.find(([pattern]) => pattern.test(normalized));
   if (urlMatch) return urlMatch[1];
