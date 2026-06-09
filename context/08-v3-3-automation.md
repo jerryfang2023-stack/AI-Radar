@@ -204,6 +204,8 @@ The first-line workflow may stage `follow-builders-daily.json` only after this g
 
 ## Hermes / Codex Coordination
 
+Daily Hermes operating instructions live in `context/11-hermes-daily-supervision-instructions.md`.
+
 Hermes is the daily supervisor, not the writer of every fix. It should read these stable machine outputs before asking Codex to modify code:
 
 - `agent-workflow/reports/<date>-daily-supervision-report.json`
