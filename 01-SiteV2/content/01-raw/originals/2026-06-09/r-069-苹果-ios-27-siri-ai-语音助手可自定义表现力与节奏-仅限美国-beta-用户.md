@@ -1,0 +1,213 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-069
+title: "苹果 iOS 27 Siri AI 语音助手可自定义表现力与节奏，仅限美国 Beta 用户"
+original_url: "https://www.ithome.com/0/961/710.htm"
+canonical_url: "https://ithome.com/0/961/710.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-08T21:30:32.000Z"
+collected_at: 2026-06-09T02:33:36.621Z
+language: mixed
+full_text_hash: b1d099628759b38b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-09/r-069-苹果-ios-27-siri-ai-语音助手可自定义表现力与节奏-仅限美国-beta-用户.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-09/r-069-苹果-ios-27-siri-ai-语音助手可自定义表现力与节奏-仅限美国-beta-用户.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 50
+extractor_diagnostics: {"readability_score":50,"text_length":687,"paragraph_count":9,"sentence_count":8,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 687
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b1d099628759b38b","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"苹果 iOS 27 Siri AI 语音助手可自定义表现力与节奏，仅限美国 Beta 用户","discovery_summary":"苹果发布 iOS 27 开发者预览版 Beta 1，Siri AI 支持通过滑块界面自定义语音助手的声音表现力和节奏。更新后的语音输入引擎能实时自动处理大小写、标点和格式化。苹果称 Siri AI 为\"全新版本的 Siri\"，比之前更具对话性，可在系统范围内使用，读取屏幕内容并与应用互动，配有独立 App，灵动岛会显示气泡。该功能仅限美国用户使用。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/961/710.htm","discovered_at":"2026-06-09T02:25:44.675Z","rank_on_page":108,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 86cbb15fc398c706
+content_hash: b1d099628759b38b
+semantic_hash: ede3225f41cbf88c
+duplicate_of: ""
+first_seen_at: "2026-06-08T21:30:32.000Z"
+last_seen_at: 2026-06-09T02:33:36.621Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["27","1","6","9","17","4","12","3"],"quotes":["全新版本的 Siri","全新版本的 Siri"]}
+evidence_seed: {"company_actions":["IT之家 6 月 9 日消息，苹果今日宣布，Siri AI 将提供“全新的语音体验”， 让用户可以自定义语音助手的声音 。","在支持苹果最新端侧模型的设备上，Siri AI 将带来更具表现力的声音，同时系统范围内的语音输入准确度也会显著提升。","从截图可以看到， 用户可以通过带有滑块的新界面，根据个人喜好调整 Siri 语音的表现力和节奏 。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"quote","text":"苹果发布 iOS 27 开发者预览版 Beta 1，Siri AI 支持通过滑块界面自定义语音助手的声音表现力和节奏。更新后的语音输入引擎能实时自动处理大小写、标点和格式化。苹果称 Siri AI 为\"全新版本的 Siri\"，比之前更具对话性，可在系统范围内使用，读取屏幕内容并与应用互动，配有独立 App，灵动岛会显示气泡。该功能仅限美国用户使用。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 6 月 9 日消息，苹果今日宣布，Siri AI 将提供“全新的语音体验”， 让用户可以自定义语音助手的声音 。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在支持苹果最新端侧模型的设备上，Siri AI 将带来更具表现力的声音，同时系统范围内的语音输入准确度也会显著提升。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"从截图可以看到， 用户可以通过带有滑块的新界面，根据个人喜好调整 Siri 语音的表现力和节奏 。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"而在 iOS 27 开发者预览版 Beta 1 中，该功能仅限美国用户使用。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"此外，自定义 Siri AI 语音助手的能力并非所有机型都有，以下是 Siri AI 语音自定义功能的最低硬件要求： iPhone Air 、 iPhone 17 Pro 、配备 M4 及后续芯片且内存至少 12GB 的 iPad，以及配备 M3 及后续芯片且内存至少 12GB 的 Mac。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 苹果 iOS 27 Siri AI 语音助手可自定义表现力与节奏，仅限美国 Beta 用户
+
+## clean_text
+
+IT之家 6 月 9 日消息，苹果今日宣布，Siri AI 将提供“全新的语音体验”， 让用户可以自定义语音助手的声音 。
+在支持苹果最新端侧模型的设备上，Siri AI 将带来更具表现力的声音，同时系统范围内的语音输入准确度也会显著提升。
+从截图可以看到， 用户可以通过带有滑块的新界面，根据个人喜好调整 Siri 语音的表现力和节奏 。而在 iOS 27 开发者预览版 Beta 1 中，该功能仅限美国用户使用。
+此外，自定义 Siri AI 语音助手的能力并非所有机型都有，以下是 Siri AI 语音自定义功能的最低硬件要求：
+iPhone Air 、 iPhone 17 Pro 、配备 M4 及后续芯片且内存至少 12GB 的 iPad，以及配备 M3 及后续芯片且内存至少 12GB 的 Mac。
+IT之家注意到，更新后的语音输入引擎将以精致文本形式捕捉语音， 实时自动处理大小写、标点和格式化 。苹果表示，提高语音理解意味着用户可以更自然地与 Siri AI 对话，并相信自己的话语会准确且如预期般呈现。
+根据苹果官方介绍，苹果称 Siri AI 是“全新版本的 Siri”，并表示它比之前的智能助手版本更具对话性，功能也更强大。
+Siri AI 支持在系统范围内使用，能够读取屏幕上的内容并与你的应用程序互动；并配有独立 App，屏幕顶部的灵动岛会冒出很大的气泡。
+苹果 WWDC26 全球开发者大会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 9 日消息，苹果今日宣布，Siri AI 将提供“全新的语音体验”， 让用户可以自定义语音助手的声音 。
+在支持苹果最新端侧模型的设备上，Siri AI 将带来更具表现力的声音，同时系统范围内的语音输入准确度也会显著提升。
+从截图可以看到， 用户可以通过带有滑块的新界面，根据个人喜好调整 Siri 语音的表现力和节奏 。而在 iOS 27 开发者预览版 Beta 1 中，该功能仅限美国用户使用。
+此外，自定义 Siri AI 语音助手的能力并非所有机型都有，以下是 Siri AI 语音自定义功能的最低硬件要求：
+iPhone Air 、 iPhone 17 Pro 、配备 M4 及后续芯片且内存至少 12GB 的 iPad，以及配备 M3 及后续芯片且内存至少 12GB 的 Mac。
+IT之家注意到，更新后的语音输入引擎将以精致文本形式捕捉语音， 实时自动处理大小写、标点和格式化 。苹果表示，提高语音理解意味着用户可以更自然地与 Siri AI 对话，并相信自己的话语会准确且如预期般呈现。
+根据苹果官方介绍，苹果称 Siri AI 是“全新版本的 Siri”，并表示它比之前的智能助手版本更具对话性，功能也更强大。
+Siri AI 支持在系统范围内使用，能够读取屏幕上的内容并与你的应用程序互动；并配有独立 App，屏幕顶部的灵动岛会冒出很大的气泡。
+苹果 WWDC26 全球开发者大会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 50
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":50,"text_length":687,"paragraph_count":9,"sentence_count":8,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   苹果发布 iOS 27 开发者预览版 Beta 1，Siri AI 支持通过滑块界面自定义语音助手的声音表现力和节奏。更新后的语音输入引擎能实时自动处理大小写、标点和格式化。苹果称 Siri AI 为"全新版本的 Siri"，比之前更具对话性，可在系统范围内使用，读取屏幕内容并与应用互动，配有独立 App，灵动岛会显示气泡。该功能仅限美国用户使用。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家 6 月 9 日消息，苹果今日宣布，Siri AI 将提供“全新的语音体验”， 让用户可以自定义语音助手的声音 。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   在支持苹果最新端侧模型的设备上，Siri AI 将带来更具表现力的声音，同时系统范围内的语音输入准确度也会显著提升。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   从截图可以看到， 用户可以通过带有滑块的新界面，根据个人喜好调整 Siri 语音的表现力和节奏 。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   而在 iOS 27 开发者预览版 Beta 1 中，该功能仅限美国用户使用。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   此外，自定义 Siri AI 语音助手的能力并非所有机型都有，以下是 Siri AI 语音自定义功能的最低硬件要求： iPhone Air 、 iPhone 17 Pro 、配备 M4 及后续芯片且内存至少 12GB 的 iPad，以及配备 M3 及后续芯片且内存至少 12GB 的 Mac。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 27, 1, 6, 9, 17, 4, 12, 3
+- quotes: 全新版本的 Siri / 全新版本的 Siri
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 9 日消息，苹果今日宣布，Siri AI 将提供“全新的语音体验”， 让用户可以自定义语音助手的声音 。 / 在支持苹果最新端侧模型的设备上，Siri AI 将带来更具表现力的声音，同时系统范围内的语音输入准确度也会显著提升。 / 从截图可以看到， 用户可以通过带有滑块的新界面，根据个人喜好调整 Siri 语音的表现力和节奏 。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"苹果 iOS 27 Siri AI 语音助手可自定义表现力与节奏，仅限美国 Beta 用户","discovery_summary":"苹果发布 iOS 27 开发者预览版 Beta 1，Siri AI 支持通过滑块界面自定义语音助手的声音表现力和节奏。更新后的语音输入引擎能实时自动处理大小写、标点和格式化。苹果称 Siri AI 为\"全新版本的 Siri\"，比之前更具对话性，可在系统范围内使用，读取屏幕内容并与应用互动，配有独立 App，灵动岛会显示气泡。该功能仅限美国用户使用。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/961/710.htm","discovered_at":"2026-06-09T02:25:44.675Z","rank_on_page":108,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+苹果发布 iOS 27 开发者预览版 Beta 1，Siri AI 支持通过滑块界面自定义语音助手的声音表现力和节奏。更新后的语音输入引擎能实时自动处理大小写、标点和格式化。苹果称 Siri AI 为"全新版本的 Siri"，比之前更具对话性，可在系统范围内使用，读取屏幕内容并与应用互动，配有独立 App，灵动岛会显示气泡。该功能仅限美国用户使用。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

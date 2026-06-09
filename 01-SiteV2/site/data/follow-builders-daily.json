@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-06-08T16:23:55.410Z",
+    "generatedAt": "2026-06-09T02:33:39.556Z",
     "feedGeneratedAt": "2026-06-08T08:07:01.633Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 18,
-    "remarks": 37,
-    "podcasts": 3,
-    "blogsBuilt": 5,
-    "trackedSources": 33,
+    "builders": 16,
+    "remarks": 33,
+    "podcasts": 1,
+    "blogsBuilt": 4,
+    "trackedSources": 0,
     "rawBuilders": 13,
     "rawTweets": 20
   },
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 10
+      "count": 8
     },
     {
       "name": "TLDR AI Newsletter",
@@ -82,18 +82,6 @@
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
-      "count": 1
-    },
-    {
-      "name": "Import AI (Jack Clark)",
-      "handle": "importai.substack.com",
-      "role": "Weekly AI industry analysis: research trends, policy, infrastructure, geopolitical impact.",
-      "count": 1
-    },
-    {
-      "name": "Interconnects (Nathan Lambert)",
-      "handle": "interconnects.ai",
-      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "count": 1
     },
     {
@@ -163,45 +151,6 @@
       "createdAt": "Wed, 03 Jun 2026 00:00:00 GMT",
       "date": "Wed, 03 Ju",
       "url": "https://tldr.tech/ai/2026-06-03",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://tldr.tech/ai/2026-06-02",
-      "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "Anthropic IPO 申请、OpenAI 登陆 AWS、Perplexity 搜索代码",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "AI 编程",
-      "formalTags": [
-        {
-          "id": "opinion-ai-coding",
-          "name": "AI Coding 观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
-      "createdAt": "Tue, 02 Jun 2026 00:00:00 GMT",
-      "date": "Tue, 02 Ju",
-      "url": "https://tldr.tech/ai/2026-06-02",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -285,28 +234,28 @@
       "replies": 0
     },
     {
-      "id": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
+      "id": "https://tldr.tech/ai/2026-06-08",
       "source": "blog",
-      "name": "Import AI (Jack Clark)",
-      "handle": "importai.substack.com",
-      "role": "Weekly AI industry analysis: research trends, policy, infrastructure, geopolitical impact.",
-      "text": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
-      "content": "Do you feel as though you are living in a revolution?",
-      "contentTranslation": "您是否觉得自己仿佛生活在一场革命中？",
-      "contentTranslationStatus": "translated",
-      "translation": "Import AI 459：AI 监管很难、蛋白质折叠模型的扩展定律，以及如何给 AI 灭绝风险定价",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "OpenAI政府股份🇺🇸，谷歌计算交易🚀，微软Scout发布 🤖",
       "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "Builder 观点",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
       "formalTags": [
         {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
           "group": "opinion"
         },
         {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
           "group": "track"
         },
         {
@@ -315,49 +264,10 @@
           "group": "source"
         }
       ],
-      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
-      "createdAt": "Mon, 01 Jun 2026 13:31:56 GMT",
-      "date": "Mon, 01 Ju",
-      "url": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different",
-      "source": "blog",
-      "name": "Interconnects (Nathan Lambert)",
-      "handle": "interconnects.ai",
-      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
-      "text": "Open and closed models are on different exponentials",
-      "content": "Where marginally higher intelligence drives value, and where it doesn't.",
-      "contentTranslation": "略高的智能驱动价值，而非价值驱动。",
-      "contentTranslationStatus": "translated",
-      "translation": "开放模型与闭源模型处在不同的指数曲线上",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "Builder 观点",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
-      "createdAt": "Mon, 01 Jun 2026 13:03:48 GMT",
-      "date": "Mon, 01 Ju",
-      "url": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "Mon, 08 Jun 2026 00:00:00 GMT",
+      "date": "Mon, 08 Ju",
+      "url": "https://tldr.tech/ai/2026-06-08",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1432,110 +1342,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
-      "content": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked I had trouble believing this story was true, but",
-      "contentTranslation": "黑客只要求Meta AI授予他们访问备受瞩目的Instagram帐户的权限。成功了，我很难相信这个故事是真的，但是",
-      "contentTranslationStatus": "translated",
-      "translation": "黑客直接要求 Meta AI 授权访问高知名度 Instagram 账号，结果成功了",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "Builder 观点",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
-      "createdAt": "2026-06-01T21:14:47+00:00",
-      "date": "2026-06-01",
-      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "May 2026 newsletter",
-      "content": "I just sent out the May edition of my sponsors-only monthly newsletter . If you are a sponsor (or if you start a sponsorship now) you can access it here . This m",
-      "contentTranslation": "我刚刚发布了仅限赞助商的月度通讯的5月版。如果您是发起人（或者如果您现在开始发起） ，您可以在此处访问它。",
-      "contentTranslationStatus": "translated",
-      "translation": "2026 年 5 月通讯",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "Builder 观点",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合保留为 builder 公开观点和语境线索；后续使用时需要保持来源链接和上下文。",
-      "createdAt": "2026-06-01T04:45:00+00:00",
-      "date": "2026-06-01",
-      "url": "https://simonwillison.net/2026/Jun/1/may-newsletter/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Latent Space",
-      "title": "🔬ESM: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
-      "url": "https://www.latent.space/p/esmfold2",
-      "publishedAt": "Wed, 27 May 2026 17:46:16 GMT",
-      "excerpt": "Editor’s note: In our first BioHub pod with Priscilla and Mark they discussed their acquisition of EvoScale, led by Alex Rives, who is now Head of Science at BioHub. With ESM-1 they trained language models on millions of protein sequences drawn from across life, with a simple “next token” objective: predict the amino acids that have been randomly masked out, based on the context of the rest of the sequence. But they soon found that these models also learned biological structure and function, including properties the model had never been explicitly s…"
+      "name": "The MAD Podcast with Matt Turck",
+      "title": "State of Enterprise AI 2026: Aaron Levie on Tokenmaxxing, Rise of Headless, and AI-Proofing Your Job",
+      "url": "https://www.youtube.com/watch?v=Gs2styCcwro",
+      "publishedAt": "2026-05-28T11:30:00.000Z",
+      "excerpt": ""
     }
   ]
 }
