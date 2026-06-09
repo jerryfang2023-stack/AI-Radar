@@ -1255,6 +1255,38 @@
       "evidence_role": "lead-only",
       "enabled_default": true,
       "risk_note": "Podcast RSS; M-level discovery source. Episode excerpts may contain opinions, not verified facts."
+    },
+    {
+      "source_id": "tigera-blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "source_level": "B",
+      "source_type": "analysis",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://www.tigera.io/feed/",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "extraction_fields": ["title", "url", "date", "author", "summary", "source", "tags"],
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path with site:tigera.io.",
+      "evidence_role": "supporting-analysis",
+      "enabled_default": true,
+      "risk_note": "Security vendor blog; analysis content supports business signals but is not first-party event evidence."
+    },
+    {
+      "source_id": "dataiku-blog",
+      "name": "Dataiku Blog",
+      "source_level": "B",
+      "source_type": "analysis",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://www.dataiku.com/stories/blog/rss.xml",
+      "auth_required": false,
+      "rate_limit_note": "public RSS; standard rate",
+      "query_scope": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
+      "extraction_fields": ["title", "url", "date", "author", "summary", "source", "tags"],
+      "fallback_path": "Fallback to keyword-search industry_landing path with site:dataiku.com.",
+      "evidence_role": "supporting-analysis",
+      "enabled_default": true,
+      "risk_note": "AI platform vendor blog; analysis content supports business signals but is not first-party event evidence."
     }
   ]
 }

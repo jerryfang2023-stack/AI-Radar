@@ -23,7 +23,8 @@ const builderBlogIds = [
   "simon-willison-blog", "lilian-weng-blog", "interconnects-blog",
   "eugene-yan-blog", "benedict-evans-blog", "stephen-wolfram-writings",
   "bens-bites-newsletter", "tldr-ai-newsletter", "import-ai-newsletter",
-  "the-batch-newsletter", "sebastian-raschka-blog"
+  "the-batch-newsletter", "sebastian-raschka-blog",
+  "tigera-blog", "dataiku-blog"
 ];
 
 const sources = reg.sources.filter(s => builderBlogIds.includes(s.source_id) && s.interface_type === "rss");
