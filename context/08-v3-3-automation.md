@@ -14,7 +14,7 @@ priority: current
 
 V3.3.2 automation must be persistent, deployable, and syncable to local Obsidian. It is not enough to create temporary artifacts.
 
-## GitHub Daily Chain
+## Business Signals GitHub Chain
 
 Workflow: `.github/workflows/daily-persistent-assets-pr.yml`
 
@@ -27,31 +27,48 @@ Execution order:
 5. Generate 10 business-signal Cards.
 6. Run Pool-to-Card dedupe and gates.
 7. Build business-signal data: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
-8. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`. This route is independent and must still run when the business-signal Raw / Pool / Card chain is skipped or blocked.
-9. Run the first-line viewpoint data gate: `agent-workflow/tools/assert-follow-builders-data.mjs`.
-10. Build operations dashboard data: `pipeline-dashboard.json/js`.
-11. Build topic-center data.
-12. Run source-first and frontstage regression gates.
-13. Write the persistent asset manifest.
-14. Push `automation/daily-assets-<date>`.
-15. Create or update the PR.
-16. Auto-merge or enable auto-merge after gates pass.
-17. Deploy through GitHub Pages after `main` updates.
-18. Send Hermes / Feishu brief when webhook is configured.
+8. Build operations dashboard data: `pipeline-dashboard.json/js`.
+9. Build topic-center data.
+10. Run source-first and frontstage regression gates.
+11. Write the persistent asset manifest.
+12. Push `automation/business-signals-<date>`.
+13. Create or update the PR.
+14. Auto-merge or enable auto-merge after gates pass.
+15. Deploy through GitHub Pages after `main` updates.
+16. Send Hermes / Feishu brief when webhook is configured.
 
-An existing `automation/daily-assets-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
+An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 
 `intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / Core Pool / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
+
+## First-Line Viewpoints GitHub Chain
+
+Workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml`
+
+Execution order:
+
+1. Resolve the Beijing date.
+2. Refresh builder blog and podcast feeds when available.
+3. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`.
+4. Run the first-line viewpoint data gate: `agent-workflow/tools/assert-follow-builders-data.mjs`.
+5. Write the first-line viewpoint manifest.
+6. Push `automation/first-line-viewpoints-<date>`.
+7. Create or update the PR.
+8. Auto-merge or enable auto-merge after the first-line gate passes.
+9. Deploy through GitHub Pages after `main` updates.
+
+This workflow must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
 
 ## Monitoring Lane Ownership
 
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
-| Business Signals | GitHub Actions | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | automation PR to `main` |
-| First-Line Viewpoints | GitHub Actions, with local fallback available | same GitHub workflow, independent from business-signal skip | `agent-workflow/tools/assert-follow-builders-data.mjs` | automation PR to `main` after builders gate passes |
+| Business Signals | GitHub Actions | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
+| Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
+| First-Line Viewpoints | GitHub Actions, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` | independent automation PR to `main` after builders gate passes |
 | Community Intelligence | Local Windows scheduled task / Codex local run | `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files, local archive, then explicit Git commit / sync |
 
-The three lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately.
+The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.
 
 ## GitHub Pages Deployment
 
@@ -79,7 +96,7 @@ Sync behavior:
 1. When the local machine is online, the scheduled task or loop runs.
 2. The script fetches remote `main`.
 3. If the local workspace is clean and local `main` can fast-forward, it pulls.
-4. Merged Raw / Pool / Card / site data / builders data / ops data become visible in local Obsidian.
+4. Merged Raw / Pool / Card / site data / first-line viewpoint data / community intelligence data / ops data become visible in local Obsidian as their independent PRs reach `main`.
 5. If local uncommitted changes exist, sync pauses to avoid overwriting local work.
 
 Install command:
@@ -168,7 +185,7 @@ The gate checks:
 - fallback data is allowed only when it remains fresh and records `fallbackReason`;
 - business-signal fields such as Raw / Pool refs, relationship graph, or trend candidates are not present.
 
-The persistent workflow may stage `follow-builders-daily.json` only after this gate passes.
+The first-line workflow may stage `follow-builders-daily.json` only after this gate passes.
 
 ## Hermes / Codex Coordination
 

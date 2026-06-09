@@ -1,7 +1,7 @@
 ﻿---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-08
+last_updated: 2026-06-09
 use_when:
   - choose current action
   - recover missing actions
@@ -41,7 +41,7 @@ Only these actions are `current` for V3.3.2:
 | Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
 | Trend candidate judgment | `current` | Judge repeated same-direction signals, not trend reports. |
 | First-line viewpoints independent update | `current` | Update builders viewpoints independently from business signals. |
-| Frontstage data build | `current` | Build Business Signals and First-Line Viewpoints data. |
+| Frontstage data build | `current` | Build each column's frontstage data through its owning production lane. |
 | Dashboard sync | `current` | Update operations console and topic-center data. |
 | GitHub PR / Pages publish | `current` | Persist generated assets through PR and deploy through Pages. |
 | Local Obsidian sync | `current` | Sync merged remote assets back into the local workspace. |
@@ -73,7 +73,7 @@ Purpose:
 
 Primary route:
 
-- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml`.
+- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
 Reads:
@@ -223,6 +223,10 @@ Purpose:
 
 - Update the First-Line Viewpoints page from builders / follow-builders sources without depending on the business-signal chain.
 
+Primary route:
+
+- GitHub workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai.
+
 Runs:
 
 - `agent-workflow/tools/fetch-builder-blog-feed.mjs`.
@@ -245,7 +249,7 @@ Boundaries:
 
 Purpose:
 
-- Build public Business Signals and First-Line Viewpoints data after asset gates pass.
+- Build each public column's frontstage data after its own gate passes.
 
 Runs:
 
@@ -262,7 +266,9 @@ Outputs:
 Boundaries:
 
 - Business Signals keeps daily Top 10 as the primary view.
+- Intelligence Map follows the Business Signals Card chain and does not open a separate PR.
 - First-Line Viewpoints keeps the same topbar height and structure.
+- First-Line Viewpoints data must be produced and gated by its independent workflow, not by the Business Signals PR.
 - Do not restore V2 homepage modules, daily observation, business brief, or trend-report prose.
 
 ### 9. Dashboard Sync
@@ -297,12 +303,14 @@ Purpose:
 Runs:
 
 - `.github/workflows/daily-persistent-assets-pr.yml`.
+- `.github/workflows/daily-first-line-viewpoints-pr.yml`.
 - `.github/workflows/github-pages.yml`.
 
 Outputs:
 
-- `automation/daily-assets-<date>` branch.
-- GitHub PR.
+- `automation/business-signals-<date>` branch for Business Signals / Intelligence Map / Dashboard data.
+- `automation/first-line-viewpoints-<date>` branch for First-Line Viewpoints data.
+- independent column PRs.
 - merged assets on `main`.
 - GitHub Pages deployment from `01-SiteV2/site`.
 

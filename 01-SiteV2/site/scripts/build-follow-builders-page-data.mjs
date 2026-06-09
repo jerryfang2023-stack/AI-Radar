@@ -311,6 +311,12 @@ async function normalize(feed, trackedSources) {
       if (!isSubstantiveTweet(tweet)) continue;
       const text = decodeText(tweet.text);
       const translated = await translateTweet(tweet, translationCache);
+      if (
+        translated.status !== "translated" ||
+        !completeOpinionTranslation(text, translated.translation || "", { preferFullTranslation: true })
+      ) {
+        continue;
+      }
       const topic = topicForText(text);
       remarks.push({
         id: tweet.id,

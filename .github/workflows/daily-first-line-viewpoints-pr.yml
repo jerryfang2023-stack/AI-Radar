@@ -1,0 +1,305 @@
+name: WaveSight First-Line Viewpoints PR
+
+on:
+  schedule:
+    # 09:17 Asia/Shanghai, every day. Runs independently from the business-signal chain.
+    - cron: "17 1 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Asia/Shanghai date to run, formatted as YYYY-MM-DD. Leave empty for today."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: wavesight-first-line-viewpoints-${{ github.event.inputs.date || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  first-line-viewpoints-pr:
+    name: First-Line Viewpoints PR
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Resolve run date
+        id: run-date
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            run_date="${{ github.event.inputs.date }}"
+          else
+            run_date="$(TZ=Asia/Shanghai date +%F)"
+          fi
+
+          if ! [[ "$run_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "Invalid date: $run_date" >&2
+            exit 2
+          fi
+
+          echo "date=$run_date" >> "$GITHUB_OUTPUT"
+          echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
+
+      - name: Syntax checks
+        shell: bash
+        run: |
+          node --check agent-workflow/tools/fetch-builder-blog-feed.mjs
+          node --check agent-workflow/tools/fetch-builder-podcast-feed.mjs
+          node --check agent-workflow/tools/assert-follow-builders-data.mjs
+          node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
+          gh --version
+
+      - name: Fetch builder blog RSS feeds
+        id: builder-blogs
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/fetch-builder-blog-feed.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builder-blogs.log"
+
+      - name: Fetch builder podcast RSS feeds
+        id: builder-podcasts
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/fetch-builder-podcast-feed.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builder-podcasts.log"
+
+      - name: Build first-line viewpoints data
+        id: builders-data
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builders-data.log"
+
+      - name: Run first-line viewpoints data gate
+        id: builders-gate
+        if: always() && steps.builders-data.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-follow-builders-data.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builders-gate.log"
+
+      - name: Write first-line manifest
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p agent-workflow/reports
+          data_file="01-SiteV2/site/data/follow-builders-daily.json"
+          state="missing"
+          if [ -f "$data_file" ]; then
+            state="present"
+          fi
+          cat > "agent-workflow/reports/${RUN_DATE}-first-line-viewpoints-manifest.md" <<EOF
+          # ${RUN_DATE} First-Line Viewpoints Manifest
+
+          - generated_at: $(date -Is)
+          - workflow_mode: first_line_viewpoints_pr
+          - builder_blogs: ${{ steps.builder-blogs.outcome }}
+          - builder_podcasts: ${{ steps.builder-podcasts.outcome }}
+          - builders_data: ${{ steps.builders-data.outcome }}
+          - builders_gate: ${{ steps.builders-gate.outcome }}
+          - data_file: ${state}
+
+          This lane updates only First-Line Viewpoints. It must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
+          EOF
+
+      - name: Upload first-line artifacts
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: wavesight-first-line-viewpoints-${{ steps.run-date.outputs.date }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-first-line-viewpoints-*.log
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-first-line-viewpoints-manifest.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
+            01-SiteV2/site/data/follow-builders-daily.json
+            01-SiteV2/content/11-databases/builder-blog-feed.json
+            01-SiteV2/content/11-databases/builder-podcast-feed.json
+
+      - name: Commit first-line viewpoints to automation branch
+        id: commit
+        if: always() && steps.builders-gate.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="automation/first-line-viewpoints-${RUN_DATE}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+
+          stage_if_exists() {
+            local path="$1"
+            if [ -e "$path" ]; then
+              git add "$path"
+            fi
+          }
+
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-first-line-viewpoints-manifest.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-follow-builders-data-gate.md"
+          stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
+          stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
+          stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"
+
+          if git diff --cached --quiet; then
+            echo "No first-line viewpoints changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "Update first-line viewpoints for ${RUN_DATE}"
+          git push --force-with-lease origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update PR
+        id: pr
+        if: always() && steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="${{ steps.commit.outputs.branch }}"
+          manual_url="https://github.com/${GITHUB_REPOSITORY}/pull/new/${branch}"
+          body_file="$(mktemp)"
+          cat > "$body_file" <<BODY
+          First-Line Viewpoints update for ${RUN_DATE}.
+
+          This PR contains only the independent builders / follow-builders lane:
+          - refreshed builder blog and podcast feeds when available;
+          - rebuilt \`follow-builders-daily.json\`;
+          - passed \`assert-follow-builders-data.mjs\`;
+          - no business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
+
+          GitHub Pages deploys after this PR updates main.
+          BODY
+
+          if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
+            pr_url="$(gh pr view "$branch" --json url --jq .url)"
+            gh pr edit "$pr_number" \
+              --title "First-Line Viewpoints update ${RUN_DATE}" \
+              --body-file "$body_file"
+            echo "status=updated" >> "$GITHUB_OUTPUT"
+            echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
+            echo "pr_url=$pr_url" >> "$GITHUB_OUTPUT"
+            echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
+          else
+            if pr_url="$(gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "First-Line Viewpoints update ${RUN_DATE}" \
+              --body-file "$body_file" 2>pr-create-error.log)"; then
+              pr_number="$(gh pr view "$branch" --json number --jq .number)"
+              echo "status=created" >> "$GITHUB_OUTPUT"
+              echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
+              echo "pr_url=$pr_url" >> "$GITHUB_OUTPUT"
+              echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
+            else
+              cat pr-create-error.log >&2
+              if grep -Eqi "not permitted to create.*pull requests|GitHub Actions is not permitted" pr-create-error.log; then
+                echo "status=manual_required" >> "$GITHUB_OUTPUT"
+                echo "manual_url=$manual_url" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              echo "status=failed" >> "$GITHUB_OUTPUT"
+              exit 1
+            fi
+          fi
+
+      - name: Auto-merge PR after gate passes
+        id: auto-merge
+        if: always() && steps.pr.outputs.pr_number != '' && steps.builders-gate.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          pr_number="${{ steps.pr.outputs.pr_number }}"
+          if gh pr merge "$pr_number" \
+            --squash \
+            --auto \
+            --delete-branch \
+            --subject "Update first-line viewpoints for ${RUN_DATE}" \
+            --body "Automated First-Line Viewpoints update after builders data gate passed." \
+            2>auto-merge-error.log; then
+            echo "status=enabled_or_merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          cat auto-merge-error.log >&2
+          if grep -Eqi "auto-merge.*disabled|not enabled for this repository|GraphQL:.*auto.?merge" auto-merge-error.log; then
+            gh pr merge "$pr_number" \
+              --squash \
+              --delete-branch \
+              --subject "Update first-line viewpoints for ${RUN_DATE}" \
+              --body "Automated First-Line Viewpoints update after builders data gate passed."
+            echo "status=merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "status=failed" >> "$GITHUB_OUTPUT"
+          exit 1
+
+      - name: First-line viewpoints result
+        if: always()
+        shell: bash
+        run: |
+          fail=0
+          require_success() {
+            local label="$1"
+            local outcome="$2"
+            if [ "$outcome" != "success" ]; then
+              echo "${label} did not pass: ${outcome}" >&2
+              fail=1
+            fi
+          }
+
+          require_success "Build first-line viewpoints data" "${{ steps.builders-data.outcome }}"
+          require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
+
+          if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
+            require_success "Open or update PR" "${{ steps.pr.outcome }}"
+            if [ "${{ steps.pr.outputs.status }}" != "manual_required" ]; then
+              require_success "Auto-merge PR" "${{ steps.auto-merge.outcome }}"
+            fi
+          fi
+
+          if [ "$fail" -ne 0 ]; then
+            echo "First-Line Viewpoints update did not pass. Inspect the gate report and artifacts." >&2
+            exit 1
+          fi
+
+          echo "First-Line Viewpoints update passed."

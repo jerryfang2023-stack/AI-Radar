@@ -69,7 +69,7 @@ function isSuccess(value) {
 }
 
 function statusFromOutcomes(outcomes, businessSkipped) {
-  const buildersPassed = outcomes.builders_data === "success" && outcomes.builders_gate === "success";
+  const buildersPassed = isSuccess(outcomes.builders_data) && isSuccess(outcomes.builders_gate);
   const businessKeys = [
     "monitor",
     "monitor_readiness",

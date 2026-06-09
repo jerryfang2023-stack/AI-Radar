@@ -1,4 +1,4 @@
-﻿name: WaveSight Daily Persistent Assets PR
+name: WaveSight Business Signals PR
 
 on:
   schedule:
@@ -21,12 +21,12 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: wavesight-daily-persistent-assets-pr-${{ github.event.inputs.date || github.run_id }}
+  group: wavesight-business-signals-${{ github.event.inputs.date || github.run_id }}
   cancel-in-progress: false
 
 jobs:
-  persistent-assets-pr:
-    name: Persistent Assets Scheduled PR
+  business-signals-pr:
+    name: Business Signals Scheduled PR
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
@@ -82,7 +82,7 @@ jobs:
           raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
           pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
           signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
-          branch="automation/daily-assets-${RUN_DATE}"
+          branch="automation/business-signals-${RUN_DATE}"
 
           if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
             branch_exists=true
@@ -106,11 +106,11 @@ jobs:
         shell: bash
         run: |
           {
-            echo "# GitHub Daily Persistent Assets PR"
+            echo "# GitHub Business Signals PR"
             echo
             echo "- date: ${RUN_DATE}"
             echo "- generated_at: $(date -Is)"
-            echo "- mode: persistent_assets_pr"
+            echo "- mode: business_signals_pr"
             echo "- trigger: ${{ github.event_name }}"
             echo "- schedule: 09:07 Asia/Shanghai daily"
             echo "- business_signal_skip: ${{ steps.existing-assets.outputs.skip }}"
@@ -121,9 +121,9 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_or_deepseek_required: false"
             echo
-            echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, frontstage site data, builders page data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
+            echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, business-signal frontstage data, intelligence map data, topic-center data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
             echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
-            echo "First-line viewpoints are independent: they still refresh when the business-signal chain is skipped or blocked."
+            echo "First-line viewpoints are produced by .github/workflows/daily-first-line-viewpoints-pr.yml and are not part of this business-signal PR."
             echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."
             echo
             echo "Production order:"
@@ -132,11 +132,10 @@ jobs:
             echo "3. Regenerate business-signal Card assets in the runner workspace."
             echo "4. Run Pool-to-Card duplicate gate."
             echo "5. Write a persistent asset manifest."
-            echo "6. Refresh First-Line Viewpoints independently."
-            echo "7. Sync V3.3 business-signal site data when business-signal gates pass."
-            echo "8. Confirm same-date downstream assets are no longer stale."
-            echo "9. Commit generated assets to an automation branch and open or update a PR."
-            echo "10. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
+            echo "6. Sync V3.3 business-signal site data when business-signal gates pass."
+            echo "7. Confirm same-date downstream assets are no longer stale."
+            echo "8. Commit generated assets to an automation branch and open or update a PR."
+            echo "9. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
@@ -155,14 +154,12 @@ jobs:
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
-          node --check agent-workflow/tools/assert-follow-builders-data.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/build-hermes-daily-brief.mjs
           node --check agent-workflow/tools/assert-community-intelligence-data.mjs
           node --check agent-workflow/tools/build-topic-center-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
-          node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
 
@@ -185,45 +182,6 @@ jobs:
             --snapshot-timeout-ms=16000 \
             --monitor-timeout-ms=840000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
-
-      - name: Fetch builder blog RSS feeds
-        id: builder-blogs
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/fetch-builder-blog-feed.mjs \
-            --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builder-blogs.log"
-
-      - name: Fetch builder podcast RSS feeds
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/fetch-builder-podcast-feed.mjs \
-            --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builder-podcasts.log"
-
-      - name: Build first-line viewpoints data
-        id: builders-data
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builders-data.log"
-
-      - name: Run first-line viewpoints data gate
-        id: builders-gate
-        if: steps.builders-data.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/assert-follow-builders-data.mjs \
-            --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builders-gate.log"
 
       - name: Check monitor readiness
         id: monitor-readiness
@@ -346,17 +304,15 @@ jobs:
           signal_card_count="$(find 01-SiteV2/knowledge/01-Signal-Cards -type f -name "${RUN_DATE}--signal--*.md" 2>/dev/null | wc -l | tr -d ' ')"
 
           cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md" <<EOF
-          # ${RUN_DATE} Persistent Asset Manifest
+          # ${RUN_DATE} Business Signals Asset Manifest
 
           - generated_at: $(date -Is)
-          - workflow_mode: persistent_assets_pr
+          - workflow_mode: business_signals_pr
           - monitor: ${{ steps.monitor.outcome }}
           - monitor_readiness: ${{ steps.monitor-readiness.outcome }}
           - raw_pool_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
-          - builders_data: ${{ steps.builders-data.outcome }}
-          - builders_gate: ${{ steps.builders-gate.outcome }}
           - site_data_sync: ${{ steps.site-data.outcome }}
           - source_first_frontstage_gate: ${{ steps.source-first-frontstage.outcome }}
           - frontstage_regression_gate: ${{ steps.frontstage-regression.outcome }}
@@ -374,7 +330,6 @@ jobs:
           | Site content data | $(state_for "01-SiteV2/site/data/site-content.json") |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
           | Intelligence graph index | $(state_for "01-SiteV2/site/data/intelligence-graph-index.json") |
-          | First-line viewpoints data | $(state_for "01-SiteV2/site/data/follow-builders-daily.json") |
           | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
 
           ## Persistence Rule
@@ -382,22 +337,20 @@ jobs:
           Raw / Pool must be committed once monitor and post-monitor gates pass.
           Card assets must be committed once asset generation runs.
           Site data must be committed only when dedupe, site sync, source-first frontstage, frontstage regression and pre-commit gates pass.
-          First-line viewpoints data must be committed only when the builders data gate passes.
+          First-line viewpoints data is produced by the independent first-line workflow.
           EOF
 
           cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json" <<EOF
           {
             "date": "${RUN_DATE}",
             "generated_at": "$(date -Is)",
-            "workflow_mode": "persistent_assets_pr",
+            "workflow_mode": "business_signals_pr",
             "outcomes": {
               "monitor": "${{ steps.monitor.outcome }}",
               "monitor_readiness": "${{ steps.monitor-readiness.outcome }}",
               "raw_pool_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
-              "builders_data": "${{ steps.builders-data.outcome }}",
-              "builders_gate": "${{ steps.builders-gate.outcome }}",
               "site_data_sync": "${{ steps.site-data.outcome }}",
               "source_first_frontstage_gate": "${{ steps.source-first-frontstage.outcome }}",
               "frontstage_regression_gate": "${{ steps.frontstage-regression.outcome }}",
@@ -412,17 +365,16 @@ jobs:
               "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")",
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
               "intelligence_graph_index": "$(state_for "01-SiteV2/site/data/intelligence-graph-index.json")",
-              "first_line_viewpoints_data": "$(state_for "01-SiteV2/site/data/follow-builders-daily.json")",
               "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
             }
           }
           EOF
 
-      - name: Upload persistent assets PR artifacts
+      - name: Upload business signals PR artifacts
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: wavesight-daily-persistent-assets-pr-${{ steps.run-date.outputs.date }}
+          name: wavesight-business-signals-pr-${{ steps.run-date.outputs.date }}
           if-no-files-found: warn
           retention-days: 14
           path: |
@@ -433,7 +385,6 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
@@ -443,19 +394,18 @@ jobs:
             01-SiteV2/site/data/site-content.js
             01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/intelligence-graph-index.json
-            01-SiteV2/site/data/follow-builders-daily.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
             01-SiteV2/site/data/topic-center.json
             01-SiteV2/site/data/topic-center.js
 
-      - name: Commit persistent assets to automation branch
+      - name: Commit business signals to automation branch
         id: commit
-        if: always() && (steps.pre-commit-gate.outcome == 'success' || steps.builders-gate.outcome == 'success')
+        if: always() && steps.pre-commit-gate.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
-          branch="automation/daily-assets-${RUN_DATE}"
+          branch="automation/business-signals-${RUN_DATE}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "$branch"
@@ -478,7 +428,6 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-follow-builders-data-gate.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md"
@@ -505,17 +454,13 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/topic-center.js"
           fi
 
-          if [ "${{ steps.builders-gate.outcome }}" = "success" ]; then
-            stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
-          fi
-
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          git commit -m "Persist daily assets for ${RUN_DATE}"
+          git commit -m "Persist business signals for ${RUN_DATE}"
           git push --force-with-lease origin "$branch"
           echo "branch=$branch" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -532,13 +477,13 @@ jobs:
           manual_url="https://github.com/${GITHUB_REPOSITORY}/pull/new/${branch}"
           body_file="$(mktemp)"
           cat > "$body_file" <<BODY
-          Daily persistent assets update for ${RUN_DATE}.
+          Business Signals update for ${RUN_DATE}.
 
           What this PR contains:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
           - Site data included only when dedupe, sync, source-first frontstage, frontstage regression and pre-commit gates passed.
-          - First-line viewpoints data is built independently and may be included after its builders data gate passes, even when the business-signal chain is blocked.
+          - Intelligence map and topic-center data generated from the business-signal Card chain.
           - Operations dashboard data included when the business-signal frontstage sync passes.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
@@ -558,7 +503,7 @@ jobs:
           if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
             pr_url="$(gh pr view "$branch" --json url --jq .url)"
             gh pr edit "$pr_number" \
-              --title "Daily persistent assets update ${RUN_DATE}" \
+              --title "Business Signals update ${RUN_DATE}" \
               --body-file "$body_file"
             echo "Updated PR #${pr_number}"
             echo "status=updated" >> "$GITHUB_OUTPUT"
@@ -569,7 +514,7 @@ jobs:
             if pr_url="$(gh pr create \
               --base main \
               --head "$branch" \
-              --title "Daily persistent assets update ${RUN_DATE}" \
+              --title "Business Signals update ${RUN_DATE}" \
               --body-file "$body_file" 2>pr-create-error.log)"; then
               pr_number="$(gh pr view "$branch" --json number --jq .number)"
               echo "$pr_url"
@@ -581,9 +526,9 @@ jobs:
               cat pr-create-error.log >&2
               if grep -Eqi "not permitted to create.*pull requests|GitHub Actions is not permitted" pr-create-error.log; then
                 {
-                  echo "### Persistent assets PR branch is ready"
+                  echo "### Business Signals PR branch is ready"
                   echo
-                  echo "Persistent daily assets were generated and the automation branch was pushed."
+                  echo "Business Signals assets were generated and the automation branch was pushed."
                   echo
                   echo "GitHub repository settings currently block GitHub Actions from creating pull requests with the default token."
                   echo
@@ -604,23 +549,20 @@ jobs:
 
       - name: Auto-merge PR after gates pass
         id: auto-merge
-        if: always() && steps.pr.outputs.pr_number != '' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-gate.outcome == 'success')
+        if: always() && steps.pr.outputs.pr_number != '' && steps.pre-commit-gate.outcome == 'success'
         env:
           GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
         shell: bash
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
-          merge_body="Automated daily assets update after monitor, dedupe, source-first frontstage and frontstage regression gates passed."
-          if [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
-            merge_body="Automated first-line viewpoints data update. Business-signal frontstage gates did not fully pass in this run, so business-signal site data was not treated as passed."
-          fi
+          merge_body="Automated Business Signals update after monitor, dedupe, source-first frontstage and frontstage regression gates passed."
 
           if gh pr merge "$pr_number" \
             --squash \
             --auto \
             --delete-branch \
-            --subject "Persist daily assets for ${RUN_DATE}" \
+            --subject "Persist business signals for ${RUN_DATE}" \
             --body "$merge_body" \
             2>auto-merge-error.log; then
             echo "status=enabled_or_merged" >> "$GITHUB_OUTPUT"
@@ -635,7 +577,7 @@ jobs:
             gh pr merge "$pr_number" \
               --squash \
               --delete-branch \
-              --subject "Persist daily assets for ${RUN_DATE}" \
+              --subject "Persist business signals for ${RUN_DATE}" \
               --body "$merge_body"
             echo "status=merged" >> "$GITHUB_OUTPUT"
             exit 0
@@ -661,8 +603,8 @@ jobs:
             --raw-pool-gate="${{ steps.persistent-assets-post-monitor.outcome }}" \
             --asset-generation="${{ steps.assets.outcome }}" \
             --pool-to-card-dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
-            --builders-data="${{ steps.builders-data.outcome }}" \
-            --builders-gate="${{ steps.builders-gate.outcome }}" \
+            --builders-data="not_required" \
+            --builders-gate="not_required" \
             --site-data="${{ steps.site-data.outcome }}" \
             --source-first-frontstage="${{ steps.source-first-frontstage.outcome }}" \
             --frontstage-regression="${{ steps.frontstage-regression.outcome }}" \
@@ -688,7 +630,7 @@ jobs:
             --file="agent-workflow/reports/${RUN_DATE}-hermes-daily-brief.json" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-feishu-notify.log"
 
-      - name: Persistent assets PR result
+      - name: Business signals PR result
         if: always()
         shell: bash
         run: |
@@ -696,6 +638,8 @@ jobs:
 
           if [ "${{ steps.existing-assets.outputs.skip }}" = "true" ]; then
             echo "Business-signal chain skipped: ${{ steps.existing-assets.outputs.reason }}"
+            echo "Business Signals scheduled PR run passed without changes because same-date assets already exist on main."
+            exit 0
           fi
 
           require_success() {
@@ -725,26 +669,21 @@ jobs:
             require_business_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
           fi
 
-          require_success "First-line viewpoints data" "${{ steps.builders-data.outcome }}"
-          require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
-
-          if [ "${{ steps.existing-assets.outputs.skip }}" = "true" ]; then
-            echo "Business-signal frontstage checks were not required because same-date business-signal assets already exist on main."
-          elif [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
+          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
             require_business_success "Site data sync" "${{ steps.site-data.outcome }}"
             require_business_success "V3 source-first frontstage gate" "${{ steps.source-first-frontstage.outcome }}"
             require_business_success "Frontstage regression gate" "${{ steps.frontstage-regression.outcome }}"
             require_business_success "Site freshness gate" "${{ steps.pre-commit-gate.outcome }}"
           else
             business_fail=1
-            echo "Business-signal frontstage data was not fully persisted; first-line viewpoints data is independent and may still be persisted." >&2
+            echo "Business-signal frontstage data was not fully persisted." >&2
           fi
-          require_success "Commit persistent assets" "${{ steps.commit.outcome }}"
+          require_success "Commit business signals" "${{ steps.commit.outcome }}"
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
             require_success "Open or update PR" "${{ steps.pr.outcome }}"
             if [ "${{ steps.pr.outputs.status }}" = "manual_required" ]; then
-              echo "Full daily assets and frontstage gates passed, and the automation branch was pushed."
+              echo "Business Signals gates passed, and the automation branch was pushed."
               echo "Manual PR is required because repository settings block GitHub Actions PR creation:"
               echo "${{ steps.pr.outputs.manual_url }}"
               # Auto-merge is expected to be skipped when repo settings block it
@@ -758,15 +697,12 @@ jobs:
           fi
 
           if [ "$business_fail" -ne 0 ]; then
-            echo "Business-signal chain did not fully pass in this run. First-line viewpoints data is treated as an independent V3.3.1 page update." >&2
+            echo "Business-signal chain did not fully pass in this run." >&2
           fi
 
           if [ "$fail" -ne 0 ]; then
-            echo "Persistent assets scheduled PR run did not pass. Inspect the PR branch and uploaded artifacts. Nothing was pushed directly to main or deployed from the automation branch." >&2
+            echo "Business Signals scheduled PR run did not pass. Inspect the PR branch and uploaded artifacts. Nothing was pushed directly to main or deployed from the automation branch." >&2
             exit 1
           fi
 
-          echo "Persistent assets scheduled PR run passed. The PR was merged or auto-merge was enabled; GitHub Pages will deploy after main updates."
-          if [ "$business_fail" -ne 0 ]; then
-            echo "Only independent first-line viewpoints data may have changed in this run; business-signal outputs remain gated."
-          fi
+          echo "Business Signals scheduled PR run passed. The PR was merged or auto-merge was enabled; GitHub Pages will deploy after main updates."
