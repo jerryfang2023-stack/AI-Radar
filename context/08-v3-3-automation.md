@@ -206,10 +206,19 @@ The first-line workflow may stage `follow-builders-daily.json` only after this g
 
 Hermes is the daily supervisor, not the writer of every fix. It should read these stable machine outputs before asking Codex to modify code:
 
+- `agent-workflow/reports/<date>-daily-supervision-report.json`
 - `agent-workflow/reports/<date>-hermes-daily-brief.json`
 - `agent-workflow/reports/<date>-persistent-asset-manifest.json`
 - `agent-workflow/reports/<date>-follow-builders-data-gate.md`
 - `agent-workflow/reports/<date>-community-intelligence-gate.md`
+
+Generate the unified supervision report with:
+
+```powershell
+npm run supervise:daily -- --date=<YYYY-MM-DD>
+```
+
+The report is read-only supervision. It does not trigger production, edit data, merge PRs, or deploy the site. It returns `passed`, `warning`, `manual_required`, or `failed` per lane and writes a compact repair request for Hermes to send Codex.
 
 Hermes should send Codex a compact repair request containing:
 

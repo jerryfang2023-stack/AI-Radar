@@ -106,3 +106,9 @@ Report:
 - files committed;
 - PR / merge / Pages status when known;
 - skill eval or memory updates made after failures.
+
+For daily supervision, prefer the unified read-only report:
+
+```powershell
+npm run supervise:daily -- --date=<YYYY-MM-DD>
+```

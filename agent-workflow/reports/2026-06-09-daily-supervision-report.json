@@ -1,0 +1,92 @@
+{
+  "ok": true,
+  "status": "warning",
+  "date": "2026-06-09",
+  "generated_at": "2026-06-09T14:53:58.862Z",
+  "timezone": "Asia/Shanghai",
+  "lanes": [
+    {
+      "id": "community_intelligence",
+      "label": "Community Intelligence",
+      "schedule": "08:30 Asia/Shanghai local task; watchdog 08:45",
+      "status": "passed",
+      "evidence": {
+        "generatedAt": "2026-06-09T12:34:51.551Z",
+        "generatedDate": "2026-06-09",
+        "items": 66,
+        "links": 53,
+        "selectedKeywords": 8,
+        "collectorErrors": 0,
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-06-09-community-intelligence-gate.md",
+        "scheduledTask": {
+          "available": true,
+          "task": {
+            "State": 3,
+            "LastTaskResult": 0,
+            "LastRunTime": "/Date(1780974720000)/",
+            "NextRunTime": "/Date(1781051400000)/"
+          },
+          "stateName": "Ready"
+        }
+      },
+      "problems": [],
+      "warnings": [],
+      "actions": []
+    },
+    {
+      "id": "business_signals",
+      "label": "Business Signals / Intelligence Map / Dashboard",
+      "schedule": "09:07 Asia/Shanghai; watchdog 09:20",
+      "status": "warning",
+      "evidence": {
+        "activeDate": "2026-06-09",
+        "generatedAt": "2026-06-09T13:46:35.735Z",
+        "frontstageSelected": 10,
+        "supplyConstrained": false,
+        "coreCandidateCount": 16,
+        "qualifiedCount": 16,
+        "signalCardFiles": 16,
+        "manifest": "missing",
+        "qualityGateStatus": "missing",
+        "readinessReport": "missing",
+        "github": {
+          "available": false,
+          "warning": "GitHub CLI unavailable or unauthenticated: spawnSync gh ETIMEDOUT"
+        }
+      },
+      "problems": [],
+      "warnings": [
+        "missing same-date persistent asset manifest: agent-workflow/reports/2026-06-09-persistent-asset-manifest.json",
+        "missing quality gate report: agent-workflow/reports/2026-06-09-guanlan-monitor-quality-gate.md",
+        "missing readiness report: agent-workflow/reports/2026-06-09-daily-production-chain-readiness.md",
+        "GitHub CLI unavailable or unauthenticated: spawnSync gh ETIMEDOUT"
+      ],
+      "actions": []
+    },
+    {
+      "id": "first_line_viewpoints",
+      "label": "First-Line Viewpoints",
+      "schedule": "09:17 Asia/Shanghai; watchdog 09:30",
+      "status": "warning",
+      "evidence": {
+        "generatedAt": "2026-06-09T13:59:13.051Z",
+        "generatedDate": "2026-06-09",
+        "feedGeneratedAt": "2026-06-09T07:33:17.959Z",
+        "remarks": 40,
+        "builders": 20,
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-06-09-follow-builders-data-gate.md",
+        "github": {
+          "available": false,
+          "warning": "GitHub CLI unavailable or unauthenticated: spawnSync gh ETIMEDOUT"
+        }
+      },
+      "problems": [],
+      "warnings": [
+        "GitHub CLI unavailable or unauthenticated: spawnSync gh ETIMEDOUT"
+      ],
+      "actions": []
+    }
+  ]
+}
