@@ -64,11 +64,27 @@ function outcome(name) {
   return argValue(name, "not_run");
 }
 
-function statusFromOutcomes(outcomes, skipped) {
-  if (skipped === "true") return "skipped";
-  return Object.values(outcomes).every((value) => value === "success" || value === "not_required")
-    ? "passed"
-    : "failed";
+function isSuccess(value) {
+  return value === "success" || value === "not_required" || value === "skipped";
+}
+
+function statusFromOutcomes(outcomes, businessSkipped) {
+  const buildersPassed = outcomes.builders_data === "success" && outcomes.builders_gate === "success";
+  const businessKeys = [
+    "monitor",
+    "monitor_readiness",
+    "raw_pool_gate",
+    "asset_generation",
+    "pool_to_card_dedupe_gate",
+    "site_data_sync",
+    "source_first_frontstage_gate",
+    "frontstage_regression_gate",
+    "pre_commit_gate",
+  ];
+  const businessPassed = businessSkipped === "true" || businessKeys.every((key) => isSuccess(outcomes[key]));
+  if (businessPassed && buildersPassed) return businessSkipped === "true" ? "business_skipped_builders_passed" : "passed";
+  if (businessPassed || buildersPassed) return "partial";
+  return "failed";
 }
 
 function main() {
@@ -99,6 +115,8 @@ function main() {
     asset_generation: outcome("asset-generation"),
     cardcopy_gate: outcome("cardcopy"),
     pool_to_card_dedupe_gate: outcome("pool-to-card-dedupe"),
+    builders_data: outcome("builders-data"),
+    builders_gate: outcome("builders-gate"),
     site_data_sync: outcome("site-data"),
     source_first_frontstage_gate: outcome("source-first-frontstage"),
     frontstage_regression_gate: outcome("frontstage-regression"),
@@ -113,20 +131,20 @@ function main() {
   const trendTitle = siteData?.trendReport?.title || "";
   const siteDate = siteData?.meta?.date || "";
   const summaryLines = [
-    `观澜 AI｜${date} 日更 ${status === "passed" ? "完成" : status === "skipped" ? "跳过" : "异常"}`,
-    markdownItem("触发方式", trigger),
+    `WaveSight daily run ${date}: ${status}`,
+    markdownItem("trigger", trigger),
+    markdownItem("business_signal_skip", skip === "true" ? skipReason || "true" : "false"),
     markdownItem("Raw", exists(rawFile) ? "present" : "missing"),
     markdownItem("Pool", exists(poolFile) ? "present" : "missing"),
-    markdownItem("商业信号文件", exists(signalsFile) ? "present" : "missing"),
-    markdownItem("观点候选文件", exists(opinionCandidatesFile) ? "present" : "missing"),
-    markdownItem("商业信号卡", signalCards),
-    markdownItem("观点时间线详情", opinionTimelineDetails),
-    markdownItem("今日观察", dailyTitle || "未生成"),
-    markdownItem("趋势状态", trendTitle ? `显示：${trendTitle}` : "暂无趋势展示"),
-    markdownItem("站点数据日期", siteDate),
-    markdownItem("跳过原因", skip === "true" ? skipReason : "无"),
-    markdownItem("PR", prUrl || manualUrl || "无"),
-    markdownItem("网站", pageUrl || "GitHub Pages 将在 main 更新后部署"),
+    markdownItem("business_signals_file", exists(signalsFile) ? "present" : "missing"),
+    markdownItem("opinion_candidates_file", exists(opinionCandidatesFile) ? "present" : "missing"),
+    markdownItem("signal_cards", signalCards),
+    markdownItem("opinion_timeline_details", opinionTimelineDetails),
+    markdownItem("daily_title", dailyTitle || "not_generated"),
+    markdownItem("trend_title", trendTitle || "none"),
+    markdownItem("site_data_date", siteDate),
+    markdownItem("PR", prUrl || manualUrl || "none"),
+    markdownItem("site", pageUrl || "GitHub Pages deploys after main updates"),
     markdownItem("GitHub Run", runUrl),
     markdownItem("Commit", commitSha),
   ];
@@ -135,12 +153,12 @@ function main() {
   const text = [
     summaryLines.join("\n"),
     "",
-    "门禁与自动化状态",
+    "Gates and automation outcomes",
     gateLines.join("\n"),
   ].join("\n");
 
   const result = {
-    ok: status === "passed" || status === "skipped",
+    ok: status === "passed" || status === "business_skipped_builders_passed",
     status,
     date,
     generated_at: new Date().toISOString(),
@@ -167,7 +185,7 @@ function main() {
   const jsonPath = path.join(reportsDir, `${date}-hermes-daily-brief.json`);
   const mdPath = path.join(reportsDir, `${date}-hermes-daily-brief.md`);
   fs.writeFileSync(jsonPath, `${JSON.stringify(result, null, 2)}\n`, "utf8");
-  fs.writeFileSync(mdPath, `# Hermes Daily Brief｜${date}\n\n${text}\n`, "utf8");
+  fs.writeFileSync(mdPath, `# Hermes Daily Brief - ${date}\n\n${text}\n`, "utf8");
   console.log(JSON.stringify({ ok: true, status, report: path.relative(root, jsonPath).replace(/\\/g, "/") }, null, 2));
 }
 

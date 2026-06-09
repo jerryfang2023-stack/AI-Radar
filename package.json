@@ -12,6 +12,7 @@
     "summarize:actions": "node agent-workflow/tools/write-action-retrospective.mjs",
     "collect:community-intelligence": "node 01-SiteV2/site/scripts/collect-community-intelligence.mjs",
     "archive:community-intelligence": "node 01-SiteV2/site/scripts/archive-community-intelligence.mjs",
+    "assert:community-intelligence": "node agent-workflow/tools/assert-community-intelligence-data.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
     "export:public-daily-brief": "node 01-SiteV2/site/scripts/export-public-daily-brief.mjs"
   },

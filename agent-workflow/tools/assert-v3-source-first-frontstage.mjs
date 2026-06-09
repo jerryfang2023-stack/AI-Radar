@@ -69,6 +69,16 @@ function textSimilarity(a = "", b = "") {
   return overlap / Math.min(firstUnits.size, secondUnits.size);
 }
 
+function cleanFrontstageSubject(value = "") {
+  return String(value || "")
+    .replace(/[｜]/gu, "|")
+    .replace(/\s*\|\s*https?:?.*$/iu, "")
+    .replace(/https?:\/\/\S+/giu, "")
+    .replace(/[（(]\s*RSS\s*[）)]/giu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
 function walk(value, trail = "$", issues = []) {
   if (Array.isArray(value)) {
     value.forEach((item, index) => walk(item, `${trail}[${index}]`, issues));
@@ -123,8 +133,13 @@ const largeVendorPatterns = [
 ];
 
 function subjectLooksLikeTitle(value = "") {
-  const text = String(value || "").trim();
-  return text.length > 12 && /(发布|推出|完成|融资|获得|部署|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|指南|清单|将|支付|获取|聚焦|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents)/iu.test(text);
+  const text = cleanFrontstageSubject(value);
+  if (text.length > 12 && /[，。；]/u.test(text)) return true;
+  return text.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|量产|搭载|适配|公布|支持|可实现|每秒|芯片|人形机器人|模型|应用|功能|早报|日报|周报|合集|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents|Paid Program|Weekly Updated)/iu.test(text);
+}
+
+function subjectHasSourceNoise(value = "") {
+  return /https?:|[|｜]|RSS|热门|buzzing\.cc|Weekly Updated B2B Lead Database|^(IT早报|AI早报|早报|日报|周报)/iu.test(String(value || ""));
 }
 
 function subjectMatchesTitle(card = {}) {
@@ -198,7 +213,7 @@ for (const card of cards) {
   if (!card.translatedFact && !(card.originalHighlights || []).length && !card.visibleFragment) {
     issues.push(`card ${card.id || "(missing id)"} has no source-facing fact/highlight/fragment`);
   }
-  if (card.date === activeDate && (subjectLooksLikeTitle(card.subject) || subjectMatchesTitle(card))) {
+  if (card.date === activeDate && (subjectHasSourceNoise(card.subject) || subjectLooksLikeTitle(card.subject) || subjectMatchesTitle(card))) {
     issues.push(`card ${card.id || "(missing id)"} has title-like subject: ${card.subject}`);
   }
   const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact].join("\n");
@@ -229,7 +244,7 @@ for (const card of cards) {
 }
 
 for (const candidate of payload.corePoolCandidates || []) {
-  if (candidate.date === activeDate && (subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
+  if (candidate.date === activeDate && (subjectHasSourceNoise(candidate.subject) || subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has title-like subject: ${candidate.subject}`);
   }
 }

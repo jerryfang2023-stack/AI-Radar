@@ -441,7 +441,14 @@ function subjectFromUrl(url = "") {
     if (host === "cnbc.com" && pathname.includes("google-to-pay-spacex")) return "Google / SpaceX";
     if (host === "techcrunch.com" && pathname.includes("google-will-pay-spacex")) return "Google / SpaceX";
     if (host === "growthlist.co" && pathname.includes("yc-startups")) return "Y Combinator";
+    if (host === "growthlist.co" && pathname.includes("ai-startups")) return "GrowthList";
     if (host === "saasmag.com" && pathname.includes("monetizing-ai-agents")) return "SaaS companies";
+    if (host === "partners.wsj.com" && pathname.includes("broadcom")) return "Broadcom / WSJ";
+    if (host === "bidnetdirect.com" && pathname.includes("2668201217")) return "NIST";
+    if (host === "a16z.com" && pathname.includes("investing-in-lio")) return "Lio / a16z";
+    if (host === "linkedin.com" && pathname.includes("sunita-verma")) return "Sunita Verma";
+    if (host === "anthropic.com" && pathname.includes("agents-in-biology")) return "Anthropic / Biology Agents";
+    if (host === "gist.github.com" && pathname.includes("anthonyalcaraz")) return "Anthony Alcaraz";
   } catch {
     // Fall through to title-based detection.
   }
@@ -450,6 +457,10 @@ function subjectFromUrl(url = "") {
 
 function cleanSubject(value = "") {
   return String(value)
+    .replace(/[｜]/gu, "|")
+    .replace(/\s*\|\s*https?:?.*$/iu, "")
+    .replace(/https?:\/\/\S+/giu, "")
+    .replace(/[（(]\s*RSS\s*[）)]/giu, "")
     .replace(/\s+/gu, " ")
     .replace(/^(Anysearch|Unknown Builder|HN Builder Query|DuckDuckGo)\s*[:：|｜-]\s*/iu, "")
     .replace(/\s*\|\s+(Wikipedia|YouTube|LinkedIn|Reddit|Podcast|Podscan\.fm|Blog)$/iu, "")
@@ -460,13 +471,22 @@ function cleanSubject(value = "") {
 function subjectFromTitle(title = "") {
   const clean = cleanSubject(title);
   if (!clean) return "";
+  if (subjectLooksLikeTitle(clean) && !/[：:|｜-]/u.test(clean)) {
+    const productionMatch = clean.match(/^([\u4e00-\u9fffA-Za-z0-9 .&/-]{2,18}?)(?:人形机器人)?\s*\d{4}年.+?(?:量产|搭载)/u);
+    if (productionMatch) return cleanSubject(productionMatch[1]);
+  }
   const ceoMatch = clean.match(/^([A-Z][A-Za-z0-9 .&-]{1,36})\s+CEO\b/u);
   if (ceoMatch) return cleanSubject(ceoMatch[1]);
   const colonMatch = clean.match(/^([^:：]{2,36})[:：]/u);
-  if (colonMatch) return cleanSubject(colonMatch[1]);
-  const knownMatch = clean.match(/^(Google DeepMind|Google Research|Google Colab|Anthropic|Claude Cowork|Claude Code|OpenAI|Microsoft|NVIDIA|Airspeed|NeoCognition|Nimble)\b/u);
+  if (colonMatch) {
+    const lead = cleanSubject(colonMatch[1]);
+    const leadActionMatch = lead.match(/^([A-Z][A-Za-z0-9 .&/-]{1,42}?|[\u4e00-\u9fffA-Za-z0-9 .&/-]{2,28}?)(?:\s*)(发布|推出|完成|融资|获得|获|宣布|部署|开源|适配|公布|引入|支持|launches?|raises?|lands?|announces?|releases?)(?=\b|\s|$|[：:，,])/iu);
+    if (leadActionMatch) return cleanSubject(leadActionMatch[1]);
+    if (!subjectLooksLikeTitle(lead)) return lead;
+  }
+  const knownMatch = clean.match(/^(Google DeepMind|Google Research|Google Colab|Anthropic|Claude Cowork|Claude Code|OpenAI|Microsoft(?: AI)?|NVIDIA|Airspeed|NeoCognition|Nimble|Arm|Meta|NIST)\b/u);
   if (knownMatch) return cleanSubject(knownMatch[1]);
-  const actionMatch = clean.match(/^([A-Z][A-Za-z0-9 .&/-]{1,42}?|[\u4e00-\u9fffA-Za-z0-9 .&/-]{2,28}?)(?:\s*)(发布|推出|完成|融资|获得|获|宣布|部署|开源|用|与|让|launches?|raises?|lands?|announces?|releases?)\b/iu);
+  const actionMatch = clean.match(/^([A-Z][A-Za-z0-9 .&/-]{1,42}?|[\u4e00-\u9fffA-Za-z0-9 .&/-]{2,28}?)(?:\s*)(发布|推出|完成|融资|获得|获|宣布|部署|开源|适配|公布|引入|支持|launches?|raises?|lands?|announces?|releases?)(?=\b|\s|$|[：:，,])/iu);
   if (actionMatch) return cleanSubject(actionMatch[1]);
   const pipeParts = clean.split(/\s+\|\s+/u).map((part) => part.trim()).filter(Boolean);
   if (pipeParts.length > 1) {
@@ -480,7 +500,7 @@ function subjectFromTitle(title = "") {
     const first = cleanSubject(dashParts[0]);
     if (first && first.length <= 40) return first;
   }
-  return clean.length <= 40 ? clean : "";
+  return "";
 }
 
 function normalizeSubject(value = "") {
@@ -491,6 +511,10 @@ function normalizeSubject(value = "") {
   if (/NeoCognition/iu.test(clean)) return "NeoCognition";
   if (/Nimble/iu.test(clean)) return "Nimble";
   if (/Airspeed/iu.test(clean)) return "Airspeed";
+  if (/^Microsoft AI\b/iu.test(clean)) return "Microsoft AI";
+  if (/^小米\s*MiMo|^小米MiMo|^Xiaomi\s*MiMo/iu.test(clean)) return "小米 / MiMo";
+  if (/^苹果智能和\s*Siri AI|^苹果\s*Siri AI/u.test(clean)) return "Apple / Siri AI";
+  if (/^天工3\.0/u.test(clean)) return "天工3.0";
   if (/^Druidai$/iu.test(clean)) return "Druid AI";
   if (/^Saasmag$/iu.test(clean)) return "SaaS Magazine";
   if (/^Ithome$/iu.test(clean)) return "";
@@ -506,7 +530,8 @@ function normalizeSubject(value = "") {
 
 function subjectLooksLikeTitle(value = "") {
   const clean = cleanSubject(value);
-  return clean.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents)/iu.test(clean);
+  if (clean.length > 12 && /[，。；]/u.test(clean)) return true;
+  return clean.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|量产|搭载|适配|公布|支持|可实现|每秒|芯片|人形机器人|模型|应用|功能|早报|日报|周报|合集|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents|Paid Program|Weekly Updated)/iu.test(clean);
 }
 
 function isWeakSubject(value = "") {
@@ -516,6 +541,8 @@ function isWeakSubject(value = "") {
   if (/^[a-z0-9.-]+\.(com|org|net|io|ai|dev|co)$/iu.test(clean)) return true;
   if (/^(LinkedIn|Linkedin|TechCrunch|Techcrunch|The[-\s]Decoder|Marktechpost|Siliconangle|Instagram|Apple Podcasts)$/iu.test(clean)) return true;
   if (/^(Requests for Startups|Enterprise AI Execution Problem|The Information'?s TITV)$/iu.test(clean)) return true;
+  if (/^(IT之家|Hacker News 热门|MarkTechPost|buzzing\.cc|Weekly Updated B2B Lead Database)/iu.test(clean)) return true;
+  if (/^(IT早报|AI早报|早报|日报|周报)/iu.test(clean)) return true;
   if (/^(一位|消息称|现在我)/u.test(clean)) return true;
   if (/(full list|Inference costs|VCs backing|raised \$100M|开源界的怪胎|富士康展示)/iu.test(clean)) return true;
   if (/^CEO\s+/iu.test(clean)) return true;
@@ -709,6 +736,30 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
     [/blog\.janestreet\.com.*claude-code-more-than-figma/u, "Jane Street / Claude Code"],
     [/sky9capital\.com.*ai-native-enterprise-software/u, "Sky9 Capital"],
     [/podcasts\.apple\.com.*the-informations-titv/u, "The Information TITV"],
+    [/bidnetdirect\.com\/public\/supplier\/solicitations\/statewide\/2668201217/u, "NIST / AI model hosting"],
+    [/a16z\.com\/announcement\/investing-in-lio/u, "Lio"],
+    [/linkedin\.com\/posts\/sunita-verma/u, "Sunita Verma"],
+    [/anthropic\.com\/research\/agents-in-biology/u, "Anthropic / Biology Agents"],
+    [/gist\.github\.com\/AnthonyAlcaraz\/7b2e6e454cdbbb2a02d99a435e9a68d9/u, "Agentic Access Infrastructure"],
+    [/ithome\.com\/0\/961\/576/u, "欧菲光 / Dex400R"],
+    [/ithome\.com\/0\/961\/600/u, "Arm / AppReady for Windows"],
+    [/ithome\.com\/0\/961\/640/u, "天工3.0 / 地瓜机器人"],
+    [/ithome\.com\/0\/961\/659/u, "小米 / MiMo"],
+    [/ithome\.com\/0\/961\/691/u, "Apple / Siri AI"],
+    [/ithome\.com\/0\/961\/680/u, "Apple / Siri AI"],
+    [/ithome\.com\/0\/961\/675/u, "Apple / Siri AI"],
+    [/ithome\.com\/0\/961\/669/u, "Apple / Siri AI"],
+    [/ithome\.com\/0\/961\/724/u, "Meta"],
+    [/ithome\.com\/0\/961\/730/u, "华为 / Apple / Moonshot AI"],
+    [/marktechpost\.com.*google-research-adds-agentic-rag/u, "Google Research / Gemini Enterprise"],
+    [/marktechpost\.com.*microsoft-ai-introduces-mai-transcribe/u, "Microsoft AI"],
+    [/marktechpost\.com.*xiaomi-mimo-and-tilert/u, "小米 / MiMo"],
+    [/partners\.wsj\.com\/broadcom/u, "Broadcom / WSJ"],
+    [/bidnetdirect\.com.*2668201217/u, "NIST"],
+    [/a16z\.com\/announcement\/investing-in-lio/u, "Lio / a16z"],
+    [/linkedin\.com.*sunita-verma/u, "Sunita Verma"],
+    [/anthropic\.com\/research\/agents-in-biology/u, "Anthropic / Biology Agents"],
+    [/gist\.github\.com\/AnthonyAlcaraz/u, "Anthony Alcaraz"],
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
@@ -724,7 +775,7 @@ function frontstageCandidateSubject(sourceUrl = "", rawTitle = "", title = "", s
   if (override) return override;
   const urlSubject = normalizeSubject(subjectFromUrl(sourceUrl));
   if (urlSubject && !isWeakSubject(urlSubject)) return urlSubject;
-  const titleSubject = normalizeSubject(subjectFromTitle(rawTitle) || subjectFromTitle(title));
+  const titleSubject = normalizeSubject(subjectFromTitle(title) || subjectFromTitle(rawTitle));
   if (titleSubject && !isWeakSubject(titleSubject)) return titleSubject;
   const sourceSubject = normalizeSubject(sourceName);
   if (sourceSubject && !isWeakSubject(sourceSubject)) return sourceSubject;
@@ -743,7 +794,7 @@ function frontstageSubject(fm, sourceUrl, sourceName, rawTitle, title) {
   const override = frontstageSubjectOverride(sourceUrl, title || rawTitle);
   if (override) return override;
   const urlSubject = normalizeSubject(subjectFromUrl(sourceUrl));
-  const titleSubject = normalizeSubject(subjectFromTitle(rawTitle) || subjectFromTitle(title));
+  const titleSubject = normalizeSubject(subjectFromTitle(title) || subjectFromTitle(rawTitle));
   if (urlSubject) return urlSubject;
   if (explicit) return explicit;
   if (isDiscoveryLabel(sourceName) && titleSubject && !isWeakSubject(titleSubject)) return titleSubject;
@@ -2519,7 +2570,7 @@ const rawCards = [
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence))
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 4, 1);
+const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 3, 1);
 const frontstageCards = frontstageSelection.cards;
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";

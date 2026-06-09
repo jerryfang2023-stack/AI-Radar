@@ -70,33 +70,37 @@ jobs:
           echo "date=$run_date" >> "$GITHUB_OUTPUT"
           echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
 
-      - name: Check existing daily assets
+      - name: Check existing business-signal assets
         id: existing-assets
         shell: bash
         run: |
           set -euo pipefail
           skip=false
           reason="not_applicable"
+          branch_exists=false
 
           raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
           pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
           signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
           branch="automation/daily-assets-${RUN_DATE}"
 
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            branch_exists=true
+          fi
+
           if [ "${{ github.event_name }}" = "schedule" ]; then
             if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ]; then
               skip=true
-              reason="same-date persistent assets already exist on main"
-            elif git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
-              skip=true
-              reason="same-date automation branch already exists"
+              reason="same-date business-signal assets already exist on main"
             fi
           fi
 
           echo "skip=$skip" >> "$GITHUB_OUTPUT"
           echo "reason=$reason" >> "$GITHUB_OUTPUT"
-          echo "skip_existing_assets=$skip"
-          echo "skip_reason=$reason"
+          echo "branch_exists=$branch_exists" >> "$GITHUB_OUTPUT"
+          echo "skip_business_signal_assets=$skip"
+          echo "business_signal_skip_reason=$reason"
+          echo "existing_automation_branch=$branch_exists"
 
       - name: Report cloud dependency state
         shell: bash
@@ -109,8 +113,9 @@ jobs:
             echo "- mode: persistent_assets_pr"
             echo "- trigger: ${{ github.event_name }}"
             echo "- schedule: 09:07 Asia/Shanghai daily"
-            echo "- skip_existing_assets: ${{ steps.existing-assets.outputs.skip }}"
-            echo "- skip_reason: ${{ steps.existing-assets.outputs.reason }}"
+            echo "- business_signal_skip: ${{ steps.existing-assets.outputs.skip }}"
+            echo "- business_signal_skip_reason: ${{ steps.existing-assets.outputs.reason }}"
+            echo "- existing_automation_branch: ${{ steps.existing-assets.outputs.branch_exists }}"
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
             echo "- tavily_secret: $([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing)"
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
@@ -118,6 +123,7 @@ jobs:
             echo
             echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, frontstage site data, builders page data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
             echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
+            echo "First-line viewpoints are independent: they still refresh when the business-signal chain is skipped or blocked."
             echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."
             echo
             echo "Production order:"
@@ -126,10 +132,11 @@ jobs:
             echo "3. Regenerate business-signal Card assets in the runner workspace."
             echo "4. Run Pool-to-Card duplicate gate."
             echo "5. Write a persistent asset manifest."
-            echo "6. Sync V3.3 site data in the runner workspace: business signals, first-line viewpoints, topic center and operations dashboard."
-            echo "7. Confirm same-date downstream assets are no longer stale."
-            echo "8. Commit generated assets to an automation branch and open or update a PR."
-            echo "9. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
+            echo "6. Refresh First-Line Viewpoints independently."
+            echo "7. Sync V3.3 business-signal site data when business-signal gates pass."
+            echo "8. Confirm same-date downstream assets are no longer stale."
+            echo "9. Commit generated assets to an automation branch and open or update a PR."
+            echo "10. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
@@ -139,7 +146,6 @@ jobs:
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
 
       - name: Syntax checks
-        if: steps.existing-assets.outputs.skip != 'true'
         shell: bash
         run: |
           node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
@@ -152,6 +158,7 @@ jobs:
           node --check agent-workflow/tools/assert-follow-builders-data.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/build-hermes-daily-brief.mjs
+          node --check agent-workflow/tools/assert-community-intelligence-data.mjs
           node --check agent-workflow/tools/build-topic-center-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
@@ -181,7 +188,6 @@ jobs:
 
       - name: Fetch builder blog RSS feeds
         id: builder-blogs
-        if: steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -191,7 +197,6 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-builder-blogs.log"
 
       - name: Fetch builder podcast RSS feeds
-        if: steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -202,7 +207,6 @@ jobs:
 
       - name: Build first-line viewpoints data
         id: builders-data
-        if: steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -447,7 +451,7 @@ jobs:
 
       - name: Commit persistent assets to automation branch
         id: commit
-        if: always() && steps.existing-assets.outputs.skip != 'true' && (steps.pre-commit-gate.outcome == 'success' || steps.builders-gate.outcome == 'success')
+        if: always() && (steps.pre-commit-gate.outcome == 'success' || steps.builders-gate.outcome == 'success')
         shell: bash
         run: |
           set -euo pipefail
@@ -657,6 +661,8 @@ jobs:
             --raw-pool-gate="${{ steps.persistent-assets-post-monitor.outcome }}" \
             --asset-generation="${{ steps.assets.outcome }}" \
             --pool-to-card-dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
+            --builders-data="${{ steps.builders-data.outcome }}" \
+            --builders-gate="${{ steps.builders-gate.outcome }}" \
             --site-data="${{ steps.site-data.outcome }}" \
             --source-first-frontstage="${{ steps.source-first-frontstage.outcome }}" \
             --frontstage-regression="${{ steps.frontstage-regression.outcome }}" \
@@ -689,8 +695,7 @@ jobs:
           fail=0
 
           if [ "${{ steps.existing-assets.outputs.skip }}" = "true" ]; then
-            echo "Persistent assets run skipped: ${{ steps.existing-assets.outputs.reason }}"
-            exit 0
+            echo "Business-signal chain skipped: ${{ steps.existing-assets.outputs.reason }}"
           fi
 
           require_success() {
@@ -712,15 +717,20 @@ jobs:
             fi
           }
 
-          require_business_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
-          require_business_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
-          require_business_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
-          require_business_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
-          require_business_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
+          if [ "${{ steps.existing-assets.outputs.skip }}" != "true" ]; then
+            require_business_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
+            require_business_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
+            require_business_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
+            require_business_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
+            require_business_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
+          fi
+
           require_success "First-line viewpoints data" "${{ steps.builders-data.outcome }}"
           require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
 
-          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
+          if [ "${{ steps.existing-assets.outputs.skip }}" = "true" ]; then
+            echo "Business-signal frontstage checks were not required because same-date business-signal assets already exist on main."
+          elif [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
             require_business_success "Site data sync" "${{ steps.site-data.outcome }}"
             require_business_success "V3 source-first frontstage gate" "${{ steps.source-first-frontstage.outcome }}"
             require_business_success "Frontstage regression gate" "${{ steps.frontstage-regression.outcome }}"
@@ -743,7 +753,7 @@ jobs:
             fi
           fi
 
-          if [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
+          if [ "${{ steps.existing-assets.outputs.skip }}" != "true" ] && [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
             echo "Business-signal frontstage data was not persisted because one or more business-signal gates did not fully pass." >&2
           fi
 

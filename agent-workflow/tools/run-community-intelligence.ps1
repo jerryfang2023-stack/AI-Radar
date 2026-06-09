@@ -162,6 +162,8 @@ try {
   $env:COMMUNITY_CDP_URL = $CdpUrl
   Invoke-NpmStep -Name "collect" -Arguments @("run", "collect:community-intelligence")
   Invoke-NpmStep -Name "archive" -Arguments @("run", "archive:community-intelligence")
+  $today = Get-BeijingDate
+  Invoke-NpmStep -Name "assert" -Arguments @("run", "assert:community-intelligence", "--", "--date=$today")
 
   $dataPath = Join-Path $repo "01-SiteV2\site\data\community-intelligence.json"
   if (-not (Test-Path -LiteralPath $dataPath)) {
@@ -172,7 +174,6 @@ try {
   $generated = [DateTimeOffset]::Parse($payload.meta.generatedAt)
   $timezone = [TimeZoneInfo]::FindSystemTimeZoneById("China Standard Time")
   $generatedBeijing = [TimeZoneInfo]::ConvertTime($generated, $timezone)
-  $today = Get-BeijingDate
   $generatedDate = $generatedBeijing.ToString("yyyy-MM-dd")
 
   if ($generatedDate -ne $today) {

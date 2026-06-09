@@ -21,13 +21,13 @@ Workflow: `.github/workflows/daily-persistent-assets-pr.yml`
 Execution order:
 
 1. Resolve the Beijing date.
-2. Skip when the day's persistent assets or automation branch already exist.
+2. Skip only the business-signal chain when the day's Raw / Pool / signal assets already exist on `main`.
 3. Run Daily Monitor with QC.
 4. Persist Raw / Pool assets.
 5. Generate 10 business-signal Cards.
 6. Run Pool-to-Card dedupe and gates.
 7. Build business-signal data: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
-8. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`. This route is independent and may persist even if the business-signal Raw / Pool / Card chain is blocked.
+8. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`. This route is independent and must still run when the business-signal Raw / Pool / Card chain is skipped or blocked.
 9. Run the first-line viewpoint data gate: `agent-workflow/tools/assert-follow-builders-data.mjs`.
 10. Build operations dashboard data: `pipeline-dashboard.json/js`.
 11. Build topic-center data.
@@ -39,7 +39,19 @@ Execution order:
 17. Deploy through GitHub Pages after `main` updates.
 18. Send Hermes / Feishu brief when webhook is configured.
 
+An existing `automation/daily-assets-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
+
 `intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / Core Pool / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
+
+## Monitoring Lane Ownership
+
+| Lane | Primary runner | Main trigger | Success gate | Persistence |
+|---|---|---|---|---|
+| Business Signals | GitHub Actions | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | automation PR to `main` |
+| First-Line Viewpoints | GitHub Actions, with local fallback available | same GitHub workflow, independent from business-signal skip | `agent-workflow/tools/assert-follow-builders-data.mjs` | automation PR to `main` after builders gate passes |
+| Community Intelligence | Local Windows scheduled task / Codex local run | `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files, local archive, then explicit Git commit / sync |
+
+The three lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately.
 
 ## GitHub Pages Deployment
 
@@ -108,8 +120,22 @@ Runtime behavior:
 2. Start Chrome with `.codex-browser-profile/community-scan` when the CDP endpoint is unavailable.
 3. Run `npm run collect:community-intelligence`.
 4. Run `npm run archive:community-intelligence`.
-5. Validate that today's `community-intelligence.json` and daily Obsidian archive exist.
+5. Run `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>`.
 6. Write logs to `agent-workflow/reports/community-intelligence/community-intelligence-YYYYMMDD.log`.
+
+Community Intelligence gate script:
+
+```powershell
+node agent-workflow/tools/assert-community-intelligence-data.mjs --date=<YYYY-MM-DD>
+```
+
+The gate checks that:
+
+- `01-SiteV2/site/data/community-intelligence.json` exists and was generated for the Asia/Shanghai date;
+- item count and deduped links meet minimum floors;
+- selected keyword rotation and collector errors are recorded;
+- the daily Obsidian archive, index, and category views exist;
+- `agent-workflow/reports/<date>-community-intelligence-gate.md` and `community-intelligence-gate-latest.md` are written.
 
 ## First-Line Viewpoint Data Sources
 
@@ -143,6 +169,24 @@ The gate checks:
 - business-signal fields such as Raw / Pool refs, relationship graph, or trend candidates are not present.
 
 The persistent workflow may stage `follow-builders-daily.json` only after this gate passes.
+
+## Hermes / Codex Coordination
+
+Hermes is the daily supervisor, not the writer of every fix. It should read these stable machine outputs before asking Codex to modify code:
+
+- `agent-workflow/reports/<date>-hermes-daily-brief.json`
+- `agent-workflow/reports/<date>-persistent-asset-manifest.json`
+- `agent-workflow/reports/<date>-follow-builders-data-gate.md`
+- `agent-workflow/reports/<date>-community-intelligence-gate.md`
+
+Hermes should send Codex a compact repair request containing:
+
+1. lane: `business_signals`, `first_line_viewpoints`, or `community_intelligence`;
+2. failing gate and exact report path;
+3. whether data generation already ran;
+4. desired boundary: repair rule, repair script, rerun gate, or commit only.
+
+Codex should make code / rule changes, run the smallest relevant validation, commit the repair, and report the commit hash back. Hermes should then use the next run or a manual dispatch to verify production behavior instead of editing the same files independently.
 
 ## Not Done
 

@@ -28,6 +28,8 @@
 
   const state = {
     payload: null,
+    snapshots: [],
+    selectedDate: "",
     activeView: "industry_case",
     activeScene: "all",
     filters: {
@@ -108,6 +110,25 @@
       minute: "2-digit",
       hour12: false,
     });
+  }
+
+  function snapshotDate(value = "") {
+    const date = value ? new Date(value) : new Date();
+    if (Number.isNaN(date.getTime())) return String(value).slice(0, 10);
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Shanghai",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(date);
+  }
+
+  function fmtSnapshotLabel(value = "") {
+    return String(value || "").slice(0, 10).replaceAll("-", ".");
+  }
+
+  function payloadDate(payload) {
+    return payload?.meta?.date || snapshotDate(payload?.meta?.generatedAt);
   }
 
   function itemLinks(item) {
@@ -284,7 +305,25 @@
   function renderTitle() {
     const target = $("[data-generated-at]");
     if (!target) return;
-    target.textContent = fmtDate(state.payload?.meta?.generatedAt);
+    target.textContent = `${fmtSnapshotLabel(state.selectedDate || payloadDate(state.payload))} · ${fmtDate(state.payload?.meta?.generatedAt)}`;
+  }
+
+  function renderSnapshotDateFilter() {
+    const date = $("[data-date-filter]");
+    if (!date) return;
+    const snapshots = state.snapshots.length
+      ? state.snapshots
+      : [{
+        date: payloadDate(state.payload),
+        items: (state.payload?.items || []).length,
+        links: (state.payload?.links || []).length,
+      }];
+    date.innerHTML = snapshots.map((item, index) => {
+      const suffix = index === 0 ? " · 最新" : "";
+      const count = Number.isFinite(Number(item.items)) ? ` · ${item.items}条` : "";
+      return `<option value="${safe(item.date)}">${safe(fmtSnapshotLabel(item.date))}${safe(suffix)}${safe(count)}</option>`;
+    }).join("");
+    date.value = state.selectedDate || snapshots[0]?.date || "";
   }
 
   function renderViewTabs() {
@@ -508,6 +547,7 @@
 
   function bindEvents() {
     const search = $("[data-search]");
+    const date = $("[data-date-filter]");
     const source = $("[data-source-filter]");
     const scene = $("[data-scene-filter]");
     if (search) {
@@ -515,6 +555,14 @@
         state.filters.query = search.value;
         renderScenes();
         renderCases();
+      });
+    }
+    if (date) {
+      date.addEventListener("change", async () => {
+        await loadSnapshot(date.value, { updateUrl: true });
+        state.activeScene = "all";
+        state.filters.scene = "all";
+        renderAll();
       });
     }
     if (source) {
@@ -539,17 +587,58 @@
 
   function renderAll() {
     renderTitle();
+    renderSnapshotDateFilter();
     renderViewTabs();
     renderFilters();
     renderScenes();
     renderCases();
   }
 
+  async function fetchJson(url) {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  }
+
+  function snapshotHref(entry) {
+    if (!entry?.href) return "data/community-intelligence.json";
+    return entry.href.startsWith("data/")
+      ? entry.href
+      : `data/community-intelligence-daily/${entry.href}`;
+  }
+
+  function setDateUrl(date) {
+    if (!date) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set("date", date);
+    window.history.replaceState({}, "", url);
+  }
+
+  async function loadSnapshot(date, { updateUrl = false } = {}) {
+    const entry = state.snapshots.find((item) => item.date === date) || state.snapshots[0];
+    const payload = await fetchJson(snapshotHref(entry));
+    state.payload = payload;
+    state.selectedDate = entry?.date || payloadDate(payload);
+    if (updateUrl) setDateUrl(state.selectedDate);
+  }
+
   async function boot() {
     try {
-      const response = await fetch("data/community-intelligence.json", { cache: "no-store" });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      state.payload = await response.json();
+      const params = new URLSearchParams(window.location.search);
+      const requestedDate = params.get("date") || "";
+      const manifest = await fetchJson("data/community-intelligence-daily/index.json").catch(() => null);
+      state.snapshots = (manifest?.dates || [])
+        .filter((item) => item?.date)
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      if (state.snapshots.length) {
+        const initialDate = state.snapshots.some((item) => item.date === requestedDate)
+          ? requestedDate
+          : state.snapshots[0].date;
+        await loadSnapshot(initialDate, { updateUrl: Boolean(requestedDate) });
+      } else {
+        state.payload = await fetchJson("data/community-intelligence.json");
+        state.selectedDate = payloadDate(state.payload);
+      }
       bindEvents();
       renderAll();
     } catch (error) {

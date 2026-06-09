@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "V3.3.2.1-intelligence-graph-index",
-    "generatedAt": "2026-06-09T06:11:35.935Z",
+    "generatedAt": "2026-06-09T13:06:24.862Z",
     "activeDate": "2026-06-09",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -35,7 +35,7 @@
     "linkedCorePoolCards": 16,
     "candidateOnlyCorePool": 15,
     "relationshipNodes": 28,
-    "relationshipEdges": 56,
+    "relationshipEdges": 60,
     "relationshipClusters": 3,
     "tagAssociations": 8,
     "trendLinks": 16,
@@ -46,12 +46,12 @@
       "SIG-20260609-A02",
       "SIG-20260609-A03",
       "SIG-20260609-B02",
+      "SIG-20260609-A01",
       "SIG-20260609-A07",
       "SIG-20260609-A10",
       "SIG-20260609-A08",
       "SIG-20260609-A11",
       "SIG-20260609-A09",
-      "SIG-20260609-A05",
       "SIG-20260609-A13"
     ],
     "corePoolCardIds": [
@@ -102,11 +102,6 @@
         "id": "SIG-20260609-A09",
         "vendor": "google",
         "title": "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询"
-      },
-      {
-        "id": "SIG-20260609-A05",
-        "vendor": "anthropic",
-        "title": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包"
       }
     ],
     "categoryStats": [
@@ -205,7 +200,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "NIST 寻求承包商提供 AI 模型托管和推理服务",
-      "subject": "Ai Model Hosting And Inference",
+      "subject": "NIST / AI model hosting",
       "sourceName": "bidnetdirect.com",
       "sourceUrl": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2668201217/abstract",
       "sourceLevel": "B",
@@ -384,7 +379,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Investing in Lio | Andreessen Horowitz",
-      "subject": "Andreessen Horowitz",
+      "subject": "Lio",
       "sourceName": "a16z.com",
       "sourceUrl": "https://a16z.com/announcement/investing-in-lio/",
       "sourceLevel": "B",
@@ -472,7 +467,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除",
-      "subject": "IT之家（RSS）",
+      "subject": "Meta",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/961/724.htm",
       "sourceLevel": "B",
@@ -640,7 +635,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "Google Research / Gemini Enterprise",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/08/google-research-adds-agentic-rag-to-gemini-enterprise-agent-platform-with-a-sufficient-context-agent-for-multi-hop-queries",
       "sourceLevel": "B",
@@ -743,7 +738,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "Microsoft AI",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
       "sourceLevel": "B",
@@ -1034,7 +1029,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Sunita Verma：推理成本两年下降 280 倍",
-      "subject": "Sunita Verma's Post",
+      "subject": "Sunita Verma",
       "sourceName": "linkedin.com",
       "sourceUrl": "https://www.linkedin.com/posts/sunita-verma-1a4491_inference-costs-dropped-280-fold-over-the-activity-7425297392540975104-X9Fk",
       "sourceLevel": "B",
@@ -1248,7 +1243,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "为生物学AI智能体铺路",
-      "subject": "为生物学AI智能体铺路",
+      "subject": "Anthropic / Biology Agents",
       "sourceName": "Anthropic：Research（发表成果 · 网页）",
       "sourceUrl": "https://www.anthropic.com/research/agents-in-biology",
       "sourceLevel": "S",
@@ -1589,7 +1584,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "小米 / MiMo",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus",
       "sourceLevel": "B",
@@ -5073,7 +5068,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "Moonshot AI",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/06/moonshot-ai-releases-kimi-code-cli-a-terminal-ai-coding-agent-built-in-typescript-for-next-gen-agents",
       "sourceLevel": "B",
@@ -5676,7 +5671,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "Google",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal",
       "sourceLevel": "B",
@@ -5782,7 +5777,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "NVIDIA 发布 Nemotron 3.5 ASR：600M 参数缓存感知流式模型，实时转录 40 种语言-地区",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "NVIDIA",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/06/nvidia-releases-nemotron-3-5-asr-a-600m-parameter-cache-aware-streaming-model-transcribing-40-language-locales-in-real-time",
       "sourceLevel": "B",
@@ -7797,7 +7792,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "NVIDIA",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/04/nvidia-ai-releases-nemotron-3-ultra-an-open-550b-mixture-of-experts-hybrid-mamba-transformer-for-long-running-agents",
       "sourceLevel": "B",
@@ -10778,7 +10773,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "微软推出 MAI-Thinking-1 模型",
-      "subject": "微软推出 MAI",
+      "subject": "Microsoft",
       "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceUrl": "https://microsoft.ai/news/introducing-mai-thinking-1",
       "sourceLevel": "S",
@@ -11954,7 +11949,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "AWS 将推出 Agent Marketplace，Anthropic 成为合作方",
-      "subject": "未标注主体",
+      "subject": "AWS 将",
       "sourceName": "techcrunch.com",
       "sourceUrl": "https://techcrunch.com/2025/07/10/aws-is-launching-an-ai-agent-marketplace-next-week-with-anthropic-as-a-partner/",
       "sourceLevel": "A",
@@ -13167,7 +13162,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "为何不应在Copilot等AI工具中依赖默认模型选择",
-      "subject": "为何不应在Copilot等AI工具中依赖默认模型选择",
+      "subject": "未标注主体",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/why-you-shouldnt-leave-model-selection-on-default-in-copilot-gemini-and-other-ai-tools",
       "sourceLevel": "A",
@@ -14740,7 +14735,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "微软研究院推出Webwright终端原生浏览器代理框架",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "微软研究院",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
       "sourceLevel": "B",
@@ -15056,7 +15051,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "研究人员让Claude Code发现人类可能不会设计的AI缩放算法",
-      "subject": "研究人员",
+      "subject": "未标注主体",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed",
       "sourceLevel": "A",
@@ -16047,7 +16042,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "Introducing Conversion Agents 发布 AI 能力，指向地产开发和建筑设计流程",
-      "subject": "Conversion",
+      "subject": "未标注主体",
       "sourceName": "conversion.ai",
       "sourceUrl": "https://conversion.ai/blog/conversion-agents/",
       "sourceLevel": "B",
@@ -16321,7 +16316,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "构建基于SuperClaude框架的工作流",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory",
       "sourceLevel": "B",
@@ -20802,7 +20797,7 @@
       "category": "funding",
       "categoryLabel": "融资",
       "title": "IT早报 0609：华为余承东官宣尊界 V800；库克 WWDC 收官演讲苹果 iOS 27 发布；月之暗面寻求 20 亿美元融资；中国 AI 大模型周调用量连续六周超越美国",
-      "subject": "IT早报 0609",
+      "subject": "华为 / Apple / Moonshot AI",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/730.htm",
       "sourceLevel": "B",
@@ -20849,7 +20844,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "欧菲光发布机器人 RGBD 相机 Dex400R，可实现手眼协同、无序抓取、近远场避障等功能",
-      "subject": "IT之家（RSS）｜https",
+      "subject": "欧菲光 / Dex400R",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/576.htm",
       "sourceLevel": "B",
@@ -20896,7 +20891,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "天工3.0人形机器人2026年下半年量产，搭载地瓜机器人旭日S600芯片",
-      "subject": "天工3.0人形机器人2026年下半年量产，搭载地瓜机器人旭日S600芯片",
+      "subject": "天工3.0 / 地瓜机器人",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/640.htm",
       "sourceLevel": "B",
@@ -20943,7 +20938,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "Arm 推出 AppReady for Windows：加速构建原生 WoA 应用",
-      "subject": "IT之家（RSS）｜https",
+      "subject": "Arm / AppReady for Windows",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/600.htm",
       "sourceLevel": "B",
@@ -20990,7 +20985,7 @@
       "category": "funding",
       "categoryLabel": "融资",
       "title": "Agentic Infrastructure: Why Access Is the Real Frontier - GitHub Gist",
-      "subject": "Agentic Infrastructure",
+      "subject": "Anthony Alcaraz",
       "sourceName": "gist.github.com",
       "sourceUrl": "https://gist.github.com/AnthonyAlcaraz/7b2e6e454cdbbb2a02d99a435e9a68d9",
       "sourceLevel": "B",
@@ -21038,7 +21033,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "小米 MiMo-v2.5-Pro-UltraSpeed 发布：1T 参数模型，每秒 1000 token",
-      "subject": "Hacker News 热门（buzzing.cc 中文翻译）｜https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+      "subject": "小米 / MiMo",
       "sourceName": "mimo.xiaomi.com",
       "sourceUrl": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
       "sourceLevel": "B",
@@ -21086,7 +21081,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "小米发布 MiMo-V2.5-Pro UltraSpeed 模式，3 倍价格 10 倍输出体验",
-      "subject": "IT之家（RSS）｜https",
+      "subject": "小米 / MiMo",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/659.htm",
       "sourceLevel": "B",
@@ -21133,7 +21128,7 @@
       "category": "funding",
       "categoryLabel": "融资",
       "title": "苹果智能和 Siri AI 适配机型公布，iPhone 15 Pro 系列及后续型号可用",
-      "subject": "IT之家（RSS）｜https",
+      "subject": "Apple / Siri AI",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/691.htm",
       "sourceLevel": "B",
@@ -21180,7 +21175,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "苹果 Siri AI 支持自然语言生成快捷指令，简化自动化流程",
-      "subject": "苹果 Siri AI 支持自然语言生成快捷指令，简化自动化流程",
+      "subject": "Apple / Siri AI",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/680.htm",
       "sourceLevel": "B",
@@ -21227,7 +21222,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "苹果 iOS 27 版 Siri AI 推出系统原生自动校正功能",
-      "subject": "IT之家（RSS）｜https",
+      "subject": "Apple / Siri AI",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/675.htm",
       "sourceLevel": "B",
@@ -21274,7 +21269,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "苹果推出 Siri AI：独立 App，为灵动岛优化",
-      "subject": "苹果推出 Siri AI",
+      "subject": "Apple / Siri AI",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/961/669.htm",
       "sourceLevel": "B",
@@ -21321,7 +21316,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "NIST 寻求承包商提供 AI 模型托管和推理服务",
-      "subject": "Ai Model Hosting And Inference",
+      "subject": "NIST / AI model hosting",
       "sourceName": "bidnetdirect.com",
       "sourceUrl": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2668201217/abstract",
       "sourceLevel": "B",
@@ -21463,7 +21458,7 @@
       "category": "funding",
       "categoryLabel": "融资",
       "title": "9953 Funded AI Startups 2026 | Weekly Updated B2B Lead Database",
-      "subject": "Weekly Updated B2B Lead Database",
+      "subject": "GrowthList",
       "sourceName": "growthlist.co",
       "sourceUrl": "https://growthlist.co/ai-startups/",
       "sourceLevel": "B",
@@ -21511,7 +21506,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Sunita Verma：推理成本两年下降 280 倍",
-      "subject": "Sunita Verma's Post",
+      "subject": "Sunita Verma",
       "sourceName": "linkedin.com",
       "sourceUrl": "https://www.linkedin.com/posts/sunita-verma-1a4491_inference-costs-dropped-280-fold-over-the-activity-7425297392540975104-X9Fk",
       "sourceLevel": "B",
@@ -21667,7 +21662,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Investing in Lio | Andreessen Horowitz",
-      "subject": "Andreessen Horowitz",
+      "subject": "Lio",
       "sourceName": "a16z.com",
       "sourceUrl": "https://a16z.com/announcement/investing-in-lio/",
       "sourceLevel": "B",
@@ -22123,7 +22118,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "Google Research / Gemini Enterprise",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/08/google-research-adds-agentic-rag-to-gemini-enterprise-agent-platform-with-a-sufficient-context-agent-for-multi-hop-queries",
       "sourceLevel": "B",
@@ -22228,7 +22223,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "Microsoft AI",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
       "sourceLevel": "B",
@@ -22516,7 +22511,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "为生物学AI智能体铺路",
-      "subject": "为生物学AI智能体铺路",
+      "subject": "Anthropic / Biology Agents",
       "sourceName": "Anthropic：Research（发表成果 · 网页）",
       "sourceUrl": "https://www.anthropic.com/research/agents-in-biology",
       "sourceLevel": "S",
@@ -22746,7 +22741,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s",
-      "subject": "MarkTechPost（RSS）",
+      "subject": "小米 / MiMo",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus",
       "sourceLevel": "B",
@@ -22834,7 +22829,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除",
-      "subject": "IT之家（RSS）",
+      "subject": "Meta",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/961/724.htm",
       "sourceLevel": "B",
@@ -22919,7 +22914,7 @@
       "category": "product-service",
       "categoryLabel": "产品",
       "title": "The Next Generation of Enterprise AI - Paid Program - WSJ",
-      "subject": "The Next Generation of Enterprise AI",
+      "subject": "Broadcom / WSJ",
       "sourceName": "partners.wsj.com",
       "sourceUrl": "https://partners.wsj.com/broadcom/powering-the-ai-revolution/the-next-generation-of-enterprise-ai/",
       "sourceLevel": "B",
@@ -23032,28 +23027,20 @@
         "category": "funding"
       },
       {
-        "id": "subject:MarkTechPost（RSS）",
-        "label": "MarkTechPost（RSS）",
+        "id": "subject:小米-/-MiMo",
+        "label": "小米 / MiMo",
         "type": "subject",
-        "weight": 3,
-        "category": "case",
+        "weight": 1,
+        "category": "product-service",
         "sourceName": "MarkTechPost（RSS）"
       },
       {
-        "id": "subject:Ai-Model-Hosting-And-Inference",
-        "label": "Ai Model Hosting And Inference",
+        "id": "subject:Anthropic-/-Biology-Agents",
+        "label": "Anthropic / Biology Agents",
         "type": "subject",
         "weight": 1,
-        "category": "case",
-        "sourceName": "bidnetdirect.com"
-      },
-      {
-        "id": "subject:Andreessen-Horowitz",
-        "label": "Andreessen Horowitz",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "a16z.com"
+        "category": "product-service",
+        "sourceName": "Anthropic：Research（发表成果 · 网页）"
       },
       {
         "id": "subject:Claude",
@@ -23080,12 +23067,12 @@
         "sourceName": "fortunebusinessinsights.com"
       },
       {
-        "id": "subject:IT之家（RSS）",
-        "label": "IT之家（RSS）",
+        "id": "subject:Google-Research-/-Gemini-Enterprise",
+        "label": "Google Research / Gemini Enterprise",
         "type": "subject",
         "weight": 1,
         "category": "case",
-        "sourceName": "IT之家（RSS）"
+        "sourceName": "MarkTechPost（RSS）"
       },
       {
         "id": "subject:Lens",
@@ -23096,12 +23083,44 @@
         "sourceName": "The Decoder：AI News（RSS）"
       },
       {
+        "id": "subject:Lio",
+        "label": "Lio",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "a16z.com"
+      },
+      {
+        "id": "subject:Meta",
+        "label": "Meta",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:Microsoft-AI",
+        "label": "Microsoft AI",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "MarkTechPost（RSS）"
+      },
+      {
         "id": "subject:Moonshot-AI",
         "label": "Moonshot AI",
         "type": "subject",
         "weight": 1,
         "category": "funding",
         "sourceName": "The Decoder：AI News（RSS）"
+      },
+      {
+        "id": "subject:NIST-/-AI-model-hosting",
+        "label": "NIST / AI model hosting",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "bidnetdirect.com"
       },
       {
         "id": "subject:OpenAI",
@@ -23128,20 +23147,12 @@
         "sourceName": "huggingface.co"
       },
       {
-        "id": "subject:Sunita-Verma's-Post",
-        "label": "Sunita Verma's Post",
+        "id": "subject:Sunita-Verma",
+        "label": "Sunita Verma",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "linkedin.com"
-      },
-      {
-        "id": "subject:为生物学AI智能体铺路",
-        "label": "为生物学AI智能体铺路",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "Anthropic：Research（发表成果 · 网页）"
       },
       {
         "id": "signal:track-ai-agent",
@@ -23158,11 +23169,11 @@
         "tag": "track-enterprise-workflow"
       },
       {
-        "id": "signal:track-ai-infra",
-        "label": "AI 基础设施",
+        "id": "signal:customer-enterprise",
+        "label": "大中型企业",
         "type": "signal",
         "weight": 4,
-        "tag": "track-ai-infra"
+        "tag": "customer-enterprise"
       },
       {
         "id": "signal:track-enterprise-data",
@@ -23172,11 +23183,11 @@
         "tag": "track-enterprise-data"
       },
       {
-        "id": "signal:customer-enterprise",
-        "label": "大中型企业",
+        "id": "signal:track-ai-infra",
+        "label": "AI 基础设施",
         "type": "signal",
         "weight": 4,
-        "tag": "customer-enterprise"
+        "tag": "track-ai-infra"
       },
       {
         "id": "signal:track-ai-coding",
@@ -23186,18 +23197,11 @@
         "tag": "track-ai-coding"
       },
       {
-        "id": "signal:track-ai-customer-service",
-        "label": "AI 客服",
+        "id": "signal:evidence-partnership-integration",
+        "label": "合作集成",
         "type": "signal",
         "weight": 1,
-        "tag": "track-ai-customer-service"
-      },
-      {
-        "id": "signal:scenario-clinical-imaging",
-        "label": "临床影像辅助",
-        "type": "signal",
-        "weight": 1,
-        "tag": "scenario-clinical-imaging"
+        "tag": "evidence-partnership-integration"
       },
       {
         "id": "signal:evidence-pricing-cost",
@@ -23205,13 +23209,6 @@
         "type": "signal",
         "weight": 1,
         "tag": "evidence-pricing-cost"
-      },
-      {
-        "id": "signal:evidence-partnership-integration",
-        "label": "合作集成",
-        "type": "signal",
-        "weight": 1,
-        "tag": "evidence-partnership-integration"
       },
       {
         "id": "signal:evidence-customer-adoption",
@@ -23223,52 +23220,128 @@
     ],
     "edges": [
       {
-        "from": "subject:MarkTechPost（RSS）",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 3,
+        "from": "category:案例",
+        "to": "subject:NIST-/-AI-model-hosting",
+        "label": "案例",
+        "weight": 1,
         "cardIds": [
-          "SIG-20260609-A09",
-          "SIG-20260609-A12",
-          "SIG-20260609-A13"
+          "SIG-20260609-A02"
         ],
         "titles": [
-          "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询",
-          "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
-          "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s"
-        ]
-      },
-      {
-        "from": "subject:MarkTechPost（RSS）",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 2,
-        "cardIds": [
-          "SIG-20260609-A12",
-          "SIG-20260609-A13"
-        ],
-        "titles": [
-          "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
-          "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s"
+          "NIST 寻求承包商提供 AI 模型托管和推理服务"
         ]
       },
       {
         "from": "category:案例",
-        "to": "subject:MarkTechPost（RSS）",
+        "to": "subject:Fortunebusinessinsights",
         "label": "案例",
-        "weight": 2,
+        "weight": 1,
         "cardIds": [
-          "SIG-20260609-A09",
+          "SIG-20260609-A07"
+        ],
+        "titles": [
+          "AI SaaS 市场规模与预测（至 2034 年）"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Lio",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A01"
+        ],
+        "titles": [
+          "Investing in Lio | Andreessen Horowitz"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Meta",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A14"
+        ],
+        "titles": [
+          "Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Lens",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A08"
+        ],
+        "titles": [
+          "微软研究院的Lens：详细描述比原始规模更能训练高效图像生成器"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Google-Research-/-Gemini-Enterprise",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A09"
+        ],
+        "titles": [
+          "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Microsoft-AI",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
           "SIG-20260609-A12"
         ],
         "titles": [
-          "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询",
           "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型"
         ]
       },
       {
+        "from": "category:案例",
+        "to": "subject:Protopia",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A10"
+        ],
+        "titles": [
+          "Protopia AI 现已登陆 AWS Marketplace"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:rdjarbeng/yc",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A11"
+        ],
+        "titles": [
+          "Y Combinator RFS 数据集：创业方向分析"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Sunita-Verma",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A03"
+        ],
+        "titles": [
+          "Sunita Verma：推理成本两年下降 280 倍"
+        ]
+      },
+      {
         "from": "category:产品",
-        "to": "subject:为生物学AI智能体铺路",
+        "to": "subject:Anthropic-/-Biology-Agents",
         "label": "产品",
         "weight": 1,
         "cardIds": [
@@ -23304,7 +23377,7 @@
       },
       {
         "from": "category:产品",
-        "to": "subject:MarkTechPost（RSS）",
+        "to": "subject:小米-/-MiMo",
         "label": "产品",
         "weight": 1,
         "cardIds": [
@@ -23315,7 +23388,7 @@
         ]
       },
       {
-        "from": "subject:Ai-Model-Hosting-And-Inference",
+        "from": "subject:NIST-/-AI-model-hosting",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -23327,7 +23400,7 @@
         ]
       },
       {
-        "from": "subject:Ai-Model-Hosting-And-Inference",
+        "from": "subject:NIST-/-AI-model-hosting",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -23339,7 +23412,7 @@
         ]
       },
       {
-        "from": "subject:Ai-Model-Hosting-And-Inference",
+        "from": "subject:NIST-/-AI-model-hosting",
         "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
@@ -23387,7 +23460,7 @@
         ]
       },
       {
-        "from": "subject:Andreessen-Horowitz",
+        "from": "subject:Lio",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -23399,7 +23472,7 @@
         ]
       },
       {
-        "from": "subject:Andreessen-Horowitz",
+        "from": "subject:Lio",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -23411,7 +23484,7 @@
         ]
       },
       {
-        "from": "subject:Andreessen-Horowitz",
+        "from": "subject:Lio",
         "to": "signal:customer-enterprise",
         "label": "关联",
         "weight": 1,
@@ -23423,7 +23496,7 @@
         ]
       },
       {
-        "from": "subject:IT之家（RSS）",
+        "from": "subject:Meta",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -23435,19 +23508,7 @@
         ]
       },
       {
-        "from": "subject:IT之家（RSS）",
-        "to": "signal:scenario-clinical-imaging",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A14"
-        ],
-        "titles": [
-          "Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除"
-        ]
-      },
-      {
-        "from": "subject:IT之家（RSS）",
+        "from": "subject:Meta",
         "to": "signal:evidence-customer-adoption",
         "label": "关联",
         "weight": 1,
@@ -23495,7 +23556,19 @@
         ]
       },
       {
-        "from": "subject:MarkTechPost（RSS）",
+        "from": "subject:Google-Research-/-Gemini-Enterprise",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A09"
+        ],
+        "titles": [
+          "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询"
+        ]
+      },
+      {
+        "from": "subject:Google-Research-/-Gemini-Enterprise",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -23507,7 +23580,7 @@
         ]
       },
       {
-        "from": "subject:MarkTechPost（RSS）",
+        "from": "subject:Google-Research-/-Gemini-Enterprise",
         "to": "signal:track-enterprise-data",
         "label": "关联",
         "weight": 1,
@@ -23519,8 +23592,20 @@
         ]
       },
       {
-        "from": "subject:MarkTechPost（RSS）",
-        "to": "signal:track-ai-customer-service",
+        "from": "subject:Microsoft-AI",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260609-A12"
+        ],
+        "titles": [
+          "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型"
+        ]
+      },
+      {
+        "from": "subject:Microsoft-AI",
+        "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
         "cardIds": [
@@ -23603,7 +23688,7 @@
         ]
       },
       {
-        "from": "subject:Sunita-Verma's-Post",
+        "from": "subject:Sunita-Verma",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -23612,109 +23697,13 @@
         ],
         "titles": [
           "Sunita Verma：推理成本两年下降 280 倍"
-        ]
-      },
-      {
-        "from": "subject:Sunita-Verma's-Post",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A03"
-        ],
-        "titles": [
-          "Sunita Verma：推理成本两年下降 280 倍"
-        ]
-      },
-      {
-        "from": "subject:Sunita-Verma's-Post",
-        "to": "signal:customer-enterprise",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A03"
-        ],
-        "titles": [
-          "Sunita Verma：推理成本两年下降 280 倍"
-        ]
-      },
-      {
-        "from": "subject:Moonshot-AI",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-B02"
-        ],
-        "titles": [
-          "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍"
-        ]
-      },
-      {
-        "from": "subject:OpenAI",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-B01"
-        ],
-        "titles": [
-          "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元"
-        ]
-      },
-      {
-        "from": "subject:为生物学AI智能体铺路",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A06"
-        ],
-        "titles": [
-          "为生物学AI智能体铺路"
-        ]
-      },
-      {
-        "from": "subject:为生物学AI智能体铺路",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A06"
-        ],
-        "titles": [
-          "为生物学AI智能体铺路"
-        ]
-      },
-      {
-        "from": "subject:为生物学AI智能体铺路",
-        "to": "signal:track-enterprise-data",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A06"
-        ],
-        "titles": [
-          "为生物学AI智能体铺路"
-        ]
-      },
-      {
-        "from": "subject:Claude",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260609-A05"
-        ],
-        "titles": [
-          "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包"
         ]
       }
     ],
     "clusters": [
       {
         "id": "agent-workflow-enterprise",
-        "title": "Ai Model Hosting And Inference、Andreessen Horowitz 记录 Agent 进入采购、数据连接和企业流程",
+        "title": "Fortunebusinessinsights、Google Research / Gemini Enterprise 记录 Agent 进入采购、数据连接和企业流程",
         "direction": "企业工作流",
         "relation": [
           "AI Agent",
@@ -23722,26 +23711,26 @@
           "大中型企业"
         ],
         "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 Google Research 发布被动心率监测系统 PHRM，展示 AI 在健康监测和感知建模中的应用。",
-        "evidenceMeta": "素材：Ai Model Hosting And Inference / Andreessen Horowitz / Fortunebusinessinsights",
+        "evidenceMeta": "素材：Fortunebusinessinsights / Google Research / Gemini Enterprise / Lio",
         "detailFocus": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 Google Research 发布被动心率监测系统 PHRM，展示 AI 在健康监测和感知建模中的应用。",
         "todayCount": 7,
         "last7Count": 41,
         "last30Count": 71,
         "subjects": [
           {
-            "label": "Ai Model Hosting And Inference",
-            "count": 1
-          },
-          {
-            "label": "Andreessen Horowitz",
-            "count": 1
-          },
-          {
             "label": "Fortunebusinessinsights",
             "count": 1
           },
           {
-            "label": "MarkTechPost（RSS）",
+            "label": "Google Research / Gemini Enterprise",
+            "count": 1
+          },
+          {
+            "label": "Lio",
+            "count": 1
+          },
+          {
+            "label": "NIST / AI model hosting",
             "count": 1
           }
         ],
@@ -23755,7 +23744,7 @@
           {
             "id": "SIG-20260609-A02",
             "title": "NIST 寻求承包商提供 AI 模型托管和推理服务",
-            "subject": "Ai Model Hosting And Inference",
+            "subject": "NIST / AI model hosting",
             "categoryLabel": "案例",
             "sourceName": "bidnetdirect.com",
             "sourceUrl": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2668201217/abstract",
@@ -23773,7 +23762,7 @@
           {
             "id": "SIG-20260609-A01",
             "title": "Investing in Lio | Andreessen Horowitz",
-            "subject": "Andreessen Horowitz",
+            "subject": "Lio",
             "categoryLabel": "案例",
             "sourceName": "a16z.com",
             "sourceUrl": "https://a16z.com/announcement/investing-in-lio/",
@@ -23782,7 +23771,7 @@
           {
             "id": "SIG-20260609-A09",
             "title": "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询",
-            "subject": "MarkTechPost（RSS）",
+            "subject": "Google Research / Gemini Enterprise",
             "categoryLabel": "案例",
             "sourceName": "MarkTechPost（RSS）",
             "sourceUrl": "https://www.marktechpost.com/2026/06/08/google-research-adds-agentic-rag-to-gemini-enterprise-agent-platform-with-a-sufficient-context-agent-for-multi-hop-queries",
@@ -23792,7 +23781,7 @@
       },
       {
         "id": "product-launch-vs-adoption",
-        "title": "Claude、Claude Code 同日出现在企业 AI 产品发布里",
+        "title": "小米 / MiMo、Anthropic / Biology Agents 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
@@ -23800,26 +23789,26 @@
           "商业验证"
         ],
         "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样... Claude 支持 Apple Foundation Models 框架，推出新 Swift 包 Claude Code v2.1.169 新增 `--safe-mode` 标志及环境变量，用于禁用所有自定义配置以排查问题；新增 `/cd` 命令，可在不破坏提示词缓存的情况下切换工作目录；新增 `disableBundledSkills` 设置隐藏内置技能。修复了企业 MCP 策略在重连、IDE 配置及首次会话中不被强制的问题，以及 macOS 用户每...",
-        "evidenceMeta": "素材：Claude / Claude Code / MarkTechPost（RSS）",
+        "evidenceMeta": "素材：小米 / MiMo / Anthropic / Biology Agents / Claude",
         "detailFocus": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样... Claude 支持 Apple Foundation Models 框架，推出新 Swift 包 Claude Code v2.1.169 新增 `--safe-mode` 标志及环境变量，用于禁用所有自定义配置以排查问题；新增 `/cd` 命令，可在不破坏提示词缓存的情况下切换工作目录；新增 `disableBundledSkills` 设置隐藏内置技能。修复了企业 MCP 策略在重连、IDE 配置及首次会话中不被强制的问题，以及 macOS 用户每...",
         "todayCount": 4,
         "last7Count": 46,
         "last30Count": 81,
         "subjects": [
           {
+            "label": "小米 / MiMo",
+            "count": 1
+          },
+          {
+            "label": "Anthropic / Biology Agents",
+            "count": 1
+          },
+          {
             "label": "Claude",
             "count": 1
           },
           {
             "label": "Claude Code",
-            "count": 1
-          },
-          {
-            "label": "MarkTechPost（RSS）",
-            "count": 1
-          },
-          {
-            "label": "为生物学AI智能体铺路",
             "count": 1
           }
         ],
@@ -23833,7 +23822,7 @@
           {
             "id": "SIG-20260609-A06",
             "title": "为生物学AI智能体铺路",
-            "subject": "为生物学AI智能体铺路",
+            "subject": "Anthropic / Biology Agents",
             "categoryLabel": "产品",
             "sourceName": "Anthropic：Research（发表成果 · 网页）",
             "sourceUrl": "https://www.anthropic.com/research/agents-in-biology",
@@ -23860,7 +23849,7 @@
           {
             "id": "SIG-20260609-A13",
             "title": "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s",
-            "subject": "MarkTechPost（RSS）",
+            "subject": "小米 / MiMo",
             "categoryLabel": "产品",
             "sourceName": "MarkTechPost（RSS）",
             "sourceUrl": "https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus",
@@ -23912,7 +23901,7 @@
   "relationshipDirections": [
     {
       "id": "agent-workflow-enterprise",
-      "title": "Ai Model Hosting And Inference、Andreessen Horowitz 记录 Agent 进入采购、数据连接和企业流程",
+      "title": "Fortunebusinessinsights、Google Research / Gemini Enterprise 记录 Agent 进入采购、数据连接和企业流程",
       "direction": "企业工作流",
       "relation": [
         "AI Agent",
@@ -23920,26 +23909,26 @@
         "大中型企业"
       ],
       "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 Google Research 发布被动心率监测系统 PHRM，展示 AI 在健康监测和感知建模中的应用。",
-      "evidenceMeta": "素材：Ai Model Hosting And Inference / Andreessen Horowitz / Fortunebusinessinsights",
+      "evidenceMeta": "素材：Fortunebusinessinsights / Google Research / Gemini Enterprise / Lio",
       "detailFocus": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。 Google Research 发布被动心率监测系统 PHRM，展示 AI 在健康监测和感知建模中的应用。",
       "todayCount": 7,
       "last7Count": 41,
       "last30Count": 71,
       "subjects": [
         {
-          "label": "Ai Model Hosting And Inference",
-          "count": 1
-        },
-        {
-          "label": "Andreessen Horowitz",
-          "count": 1
-        },
-        {
           "label": "Fortunebusinessinsights",
           "count": 1
         },
         {
-          "label": "MarkTechPost（RSS）",
+          "label": "Google Research / Gemini Enterprise",
+          "count": 1
+        },
+        {
+          "label": "Lio",
+          "count": 1
+        },
+        {
+          "label": "NIST / AI model hosting",
           "count": 1
         }
       ],
@@ -23953,7 +23942,7 @@
         {
           "id": "SIG-20260609-A02",
           "title": "NIST 寻求承包商提供 AI 模型托管和推理服务",
-          "subject": "Ai Model Hosting And Inference",
+          "subject": "NIST / AI model hosting",
           "categoryLabel": "案例",
           "sourceName": "bidnetdirect.com",
           "sourceUrl": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2668201217/abstract",
@@ -23971,7 +23960,7 @@
         {
           "id": "SIG-20260609-A01",
           "title": "Investing in Lio | Andreessen Horowitz",
-          "subject": "Andreessen Horowitz",
+          "subject": "Lio",
           "categoryLabel": "案例",
           "sourceName": "a16z.com",
           "sourceUrl": "https://a16z.com/announcement/investing-in-lio/",
@@ -23980,7 +23969,7 @@
         {
           "id": "SIG-20260609-A09",
           "title": "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询",
-          "subject": "MarkTechPost（RSS）",
+          "subject": "Google Research / Gemini Enterprise",
           "categoryLabel": "案例",
           "sourceName": "MarkTechPost（RSS）",
           "sourceUrl": "https://www.marktechpost.com/2026/06/08/google-research-adds-agentic-rag-to-gemini-enterprise-agent-platform-with-a-sufficient-context-agent-for-multi-hop-queries",
@@ -23990,7 +23979,7 @@
     },
     {
       "id": "product-launch-vs-adoption",
-      "title": "Claude、Claude Code 同日出现在企业 AI 产品发布里",
+      "title": "小米 / MiMo、Anthropic / Biology Agents 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
@@ -23998,26 +23987,26 @@
         "商业验证"
       ],
       "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样... Claude 支持 Apple Foundation Models 框架，推出新 Swift 包 Claude Code v2.1.169 新增 `--safe-mode` 标志及环境变量，用于禁用所有自定义配置以排查问题；新增 `/cd` 命令，可在不破坏提示词缓存的情况下切换工作目录；新增 `disableBundledSkills` 设置隐藏内置技能。修复了企业 MCP 策略在重连、IDE 配置及首次会话中不被强制的问题，以及 macOS 用户每...",
-      "evidenceMeta": "素材：Claude / Claude Code / MarkTechPost（RSS）",
+      "evidenceMeta": "素材：小米 / MiMo / Anthropic / Biology Agents / Claude",
       "detailFocus": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样... Claude 支持 Apple Foundation Models 框架，推出新 Swift 包 Claude Code v2.1.169 新增 `--safe-mode` 标志及环境变量，用于禁用所有自定义配置以排查问题；新增 `/cd` 命令，可在不破坏提示词缓存的情况下切换工作目录；新增 `disableBundledSkills` 设置隐藏内置技能。修复了企业 MCP 策略在重连、IDE 配置及首次会话中不被强制的问题，以及 macOS 用户每...",
       "todayCount": 4,
       "last7Count": 46,
       "last30Count": 81,
       "subjects": [
         {
+          "label": "小米 / MiMo",
+          "count": 1
+        },
+        {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
           "count": 1
         },
         {
           "label": "Claude Code",
-          "count": 1
-        },
-        {
-          "label": "MarkTechPost（RSS）",
-          "count": 1
-        },
-        {
-          "label": "为生物学AI智能体铺路",
           "count": 1
         }
       ],
@@ -24031,7 +24020,7 @@
         {
           "id": "SIG-20260609-A06",
           "title": "为生物学AI智能体铺路",
-          "subject": "为生物学AI智能体铺路",
+          "subject": "Anthropic / Biology Agents",
           "categoryLabel": "产品",
           "sourceName": "Anthropic：Research（发表成果 · 网页）",
           "sourceUrl": "https://www.anthropic.com/research/agents-in-biology",
@@ -24058,7 +24047,7 @@
         {
           "id": "SIG-20260609-A13",
           "title": "小米MiMo与TileRT推出MiMo-V2.5-Pro-UltraSpeed，万亿参数模型在8-GPU节点上解码超1000 tokens/s",
-          "subject": "MarkTechPost（RSS）",
+          "subject": "小米 / MiMo",
           "categoryLabel": "产品",
           "sourceName": "MarkTechPost（RSS）",
           "sourceUrl": "https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus",
@@ -24115,15 +24104,15 @@
       "last30Count": 176,
       "subjects": [
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 3
-        },
-        {
-          "label": "Ai Model Hosting And Inference",
+          "label": "小米 / MiMo",
           "count": 1
         },
         {
-          "label": "Andreessen Horowitz",
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
+          "label": "Claude",
           "count": 1
         }
       ],
@@ -24172,15 +24161,15 @@
       "last30Count": 76,
       "subjects": [
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 2
-        },
-        {
-          "label": "Ai Model Hosting And Inference",
+          "label": "Fortunebusinessinsights",
           "count": 1
         },
         {
-          "label": "Andreessen Horowitz",
+          "label": "Google Research / Gemini Enterprise",
+          "count": 1
+        },
+        {
+          "label": "Lens",
           "count": 1
         }
       ],
@@ -24221,15 +24210,15 @@
       "last30Count": 153,
       "subjects": [
         {
-          "label": "Ai Model Hosting And Inference",
-          "count": 1
-        },
-        {
-          "label": "Andreessen Horowitz",
+          "label": "Anthropic / Biology Agents",
           "count": 1
         },
         {
           "label": "Claude Code",
+          "count": 1
+        },
+        {
+          "label": "Fortunebusinessinsights",
           "count": 1
         }
       ],
@@ -24274,15 +24263,15 @@
       "last30Count": 152,
       "subjects": [
         {
-          "label": "Ai Model Hosting And Inference",
-          "count": 1
-        },
-        {
-          "label": "Andreessen Horowitz",
+          "label": "Anthropic / Biology Agents",
           "count": 1
         },
         {
           "label": "Claude Code",
+          "count": 1
+        },
+        {
+          "label": "Fortunebusinessinsights",
           "count": 1
         }
       ],
@@ -24327,11 +24316,11 @@
       "last30Count": 122,
       "subjects": [
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 2
+          "label": "小米 / MiMo",
+          "count": 1
         },
         {
-          "label": "Ai Model Hosting And Inference",
+          "label": "Anthropic / Biology Agents",
           "count": 1
         },
         {
@@ -24341,11 +24330,11 @@
       ],
       "categories": [
         {
-          "label": "产品",
+          "label": "案例",
           "count": 3
         },
         {
-          "label": "案例",
+          "label": "产品",
           "count": 3
         }
       ],
@@ -24380,15 +24369,15 @@
       "last30Count": 82,
       "subjects": [
         {
+          "label": "小米 / MiMo",
+          "count": 1
+        },
+        {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
-          "count": 1
-        },
-        {
-          "label": "MarkTechPost（RSS）",
           "count": 1
         }
       ],
@@ -24429,25 +24418,25 @@
       "last30Count": 16,
       "subjects": [
         {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
           "count": 1
         },
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 1
-        },
-        {
-          "label": "rdjarbeng/yc",
+          "label": "Google Research / Gemini Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "产品",
+          "label": "案例",
           "count": 2
         },
         {
-          "label": "案例",
+          "label": "产品",
           "count": 2
         }
       ],
@@ -24482,25 +24471,25 @@
       "last30Count": 16,
       "subjects": [
         {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
           "count": 1
         },
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 1
-        },
-        {
-          "label": "rdjarbeng/yc",
+          "label": "Google Research / Gemini Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "产品",
+          "label": "案例",
           "count": 2
         },
         {
-          "label": "案例",
+          "label": "产品",
           "count": 2
         }
       ],
@@ -24838,50 +24827,6 @@
     ],
     "historicalTrends": [
       {
-        "id": "TRD-20260519-02",
-        "type": "trend_card",
-        "title": "AI 治理开始从原则讨论转向产品和流程约束",
-        "date": "2026-05-19",
-        "status": "draft",
-        "assetLevel": "candidate",
-        "trendStatus": "early",
-        "stageLabel": "继续观察",
-        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "boundary": "",
-        "nextObservation": "",
-        "sourceTypes": [],
-        "relatedSignals": [
-          "CHG-20260519-07"
-        ],
-        "tags": {
-          "track": [
-            "track-ai-governance"
-          ],
-          "function": [],
-          "scenario": [],
-          "customer": [],
-          "evidence": [
-            "evidence-product-launch"
-          ],
-          "stage": [],
-          "region": [
-            "region-global"
-          ],
-          "source": []
-        },
-        "displayTags": [
-          {
-            "id": "track-ai-governance",
-            "label": "AI 治理"
-          },
-          {
-            "id": "evidence-product-launch",
-            "label": "产品发布"
-          }
-        ]
-      },
-      {
         "id": "TRD-20260519-01",
         "type": "trend_card",
         "title": "AI 编程进入预算和工程治理",
@@ -24930,6 +24875,50 @@
           {
             "id": "track-ai-coding",
             "label": "AI Coding"
+          },
+          {
+            "id": "evidence-product-launch",
+            "label": "产品发布"
+          }
+        ]
+      },
+      {
+        "id": "TRD-20260519-02",
+        "type": "trend_card",
+        "title": "AI 治理开始从原则讨论转向产品和流程约束",
+        "date": "2026-05-19",
+        "status": "draft",
+        "assetLevel": "candidate",
+        "trendStatus": "early",
+        "stageLabel": "继续观察",
+        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "boundary": "",
+        "nextObservation": "",
+        "sourceTypes": [],
+        "relatedSignals": [
+          "CHG-20260519-07"
+        ],
+        "tags": {
+          "track": [
+            "track-ai-governance"
+          ],
+          "function": [],
+          "scenario": [],
+          "customer": [],
+          "evidence": [
+            "evidence-product-launch"
+          ],
+          "stage": [],
+          "region": [
+            "region-global"
+          ],
+          "source": []
+        },
+        "displayTags": [
+          {
+            "id": "track-ai-governance",
+            "label": "AI 治理"
           },
           {
             "id": "evidence-product-launch",
@@ -25301,15 +25290,15 @@
       "windowCount": 176,
       "subjects": [
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 3
-        },
-        {
-          "label": "Ai Model Hosting And Inference",
+          "label": "小米 / MiMo",
           "count": 1
         },
         {
-          "label": "Andreessen Horowitz",
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
+          "label": "Claude",
           "count": 1
         }
       ],
@@ -25362,15 +25351,15 @@
       "windowCount": 76,
       "subjects": [
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 2
-        },
-        {
-          "label": "Ai Model Hosting And Inference",
+          "label": "Fortunebusinessinsights",
           "count": 1
         },
         {
-          "label": "Andreessen Horowitz",
+          "label": "Google Research / Gemini Enterprise",
+          "count": 1
+        },
+        {
+          "label": "Lens",
           "count": 1
         }
       ],
@@ -25415,15 +25404,15 @@
       "windowCount": 153,
       "subjects": [
         {
-          "label": "Ai Model Hosting And Inference",
-          "count": 1
-        },
-        {
-          "label": "Andreessen Horowitz",
+          "label": "Anthropic / Biology Agents",
           "count": 1
         },
         {
           "label": "Claude Code",
+          "count": 1
+        },
+        {
+          "label": "Fortunebusinessinsights",
           "count": 1
         }
       ],
@@ -25472,15 +25461,15 @@
       "windowCount": 152,
       "subjects": [
         {
-          "label": "Ai Model Hosting And Inference",
-          "count": 1
-        },
-        {
-          "label": "Andreessen Horowitz",
+          "label": "Anthropic / Biology Agents",
           "count": 1
         },
         {
           "label": "Claude Code",
+          "count": 1
+        },
+        {
+          "label": "Fortunebusinessinsights",
           "count": 1
         }
       ],
@@ -25522,26 +25511,26 @@
     {
       "id": "relationship:agent-workflow-enterprise",
       "type": "relationship_cluster",
-      "title": "Ai Model Hosting And Inference、Andreessen Horowitz 记录 Agent 进入采购、数据连接和企业流程",
+      "title": "Fortunebusinessinsights、Google Research / Gemini Enterprise 记录 Agent 进入采购、数据连接和企业流程",
       "date": "2026-06-09",
       "signal": "企业工作流",
       "evidenceCount": 7,
       "windowCount": 71,
       "subjects": [
         {
-          "label": "Ai Model Hosting And Inference",
-          "count": 1
-        },
-        {
-          "label": "Andreessen Horowitz",
-          "count": 1
-        },
-        {
           "label": "Fortunebusinessinsights",
           "count": 1
         },
         {
-          "label": "MarkTechPost（RSS）",
+          "label": "Google Research / Gemini Enterprise",
+          "count": 1
+        },
+        {
+          "label": "Lio",
+          "count": 1
+        },
+        {
+          "label": "NIST / AI model hosting",
           "count": 1
         }
       ],
@@ -25571,11 +25560,11 @@
       "windowCount": 122,
       "subjects": [
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 2
+          "label": "小米 / MiMo",
+          "count": 1
         },
         {
-          "label": "Ai Model Hosting And Inference",
+          "label": "Anthropic / Biology Agents",
           "count": 1
         },
         {
@@ -25585,11 +25574,11 @@
       ],
       "categories": [
         {
-          "label": "产品",
+          "label": "案例",
           "count": 3
         },
         {
-          "label": "案例",
+          "label": "产品",
           "count": 3
         }
       ],
@@ -25621,26 +25610,26 @@
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "Claude、Claude Code 同日出现在企业 AI 产品发布里",
+      "title": "小米 / MiMo、Anthropic / Biology Agents 同日出现在企业 AI 产品发布里",
       "date": "2026-06-09",
       "signal": "产品发布",
       "evidenceCount": 4,
       "windowCount": 81,
       "subjects": [
         {
+          "label": "小米 / MiMo",
+          "count": 1
+        },
+        {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
           "count": 1
         },
         {
           "label": "Claude Code",
-          "count": 1
-        },
-        {
-          "label": "MarkTechPost（RSS）",
-          "count": 1
-        },
-        {
-          "label": "为生物学AI智能体铺路",
           "count": 1
         }
       ],
@@ -25670,15 +25659,15 @@
       "windowCount": 82,
       "subjects": [
         {
+          "label": "小米 / MiMo",
+          "count": 1
+        },
+        {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
-          "count": 1
-        },
-        {
-          "label": "MarkTechPost（RSS）",
           "count": 1
         }
       ],
@@ -25723,25 +25712,25 @@
       "windowCount": 16,
       "subjects": [
         {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
           "count": 1
         },
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 1
-        },
-        {
-          "label": "rdjarbeng/yc",
+          "label": "Google Research / Gemini Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "产品",
+          "label": "案例",
           "count": 2
         },
         {
-          "label": "案例",
+          "label": "产品",
           "count": 2
         }
       ],
@@ -25780,25 +25769,25 @@
       "windowCount": 16,
       "subjects": [
         {
+          "label": "Anthropic / Biology Agents",
+          "count": 1
+        },
+        {
           "label": "Claude",
           "count": 1
         },
         {
-          "label": "MarkTechPost（RSS）",
-          "count": 1
-        },
-        {
-          "label": "rdjarbeng/yc",
+          "label": "Google Research / Gemini Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "产品",
+          "label": "案例",
           "count": 2
         },
         {
-          "label": "案例",
+          "label": "产品",
           "count": 2
         }
       ],

@@ -1,5 +1,5 @@
 import { chromium } from "playwright";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import crypto from "node:crypto";
@@ -7,6 +7,7 @@ import crypto from "node:crypto";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const siteRoot = path.resolve(__dirname, "..");
 const outputPath = path.join(siteRoot, "data", "community-intelligence.json");
+const snapshotRoot = path.join(siteRoot, "data", "community-intelligence-daily");
 
 const cdpUrl = process.env.COMMUNITY_CDP_URL || "http://127.0.0.1:9333";
 const scrolls = Number(process.env.COMMUNITY_SCROLLS || 1);
@@ -506,6 +507,56 @@ function pageFallbackUrl(sourceKey, job) {
   return sources[sourceKey].url;
 }
 
+function snapshotDate(value = "") {
+  const date = value ? new Date(value) : new Date();
+  if (Number.isNaN(date.getTime())) return new Date().toISOString().slice(0, 10);
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(date);
+}
+
+function snapshotSummary(payload, file) {
+  return {
+    date: payload.meta?.date || snapshotDate(payload.meta?.generatedAt),
+    href: file,
+    generatedAt: payload.meta?.generatedAt || "",
+    items: Array.isArray(payload.items) ? payload.items.length : 0,
+    links: Array.isArray(payload.links) ? payload.links.length : 0,
+    errors: Array.isArray(payload.meta?.errors) ? payload.meta.errors.length : 0,
+  };
+}
+
+async function writeSnapshotFiles(payload) {
+  const date = snapshotDate(payload.meta?.generatedAt);
+  payload.meta = { ...payload.meta, date };
+  await mkdir(snapshotRoot, { recursive: true });
+  await writeFile(path.join(snapshotRoot, `${date}.json`), `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+
+  const files = (await readdir(snapshotRoot).catch(() => []))
+    .filter((file) => /^\d{4}-\d{2}-\d{2}\.json$/.test(file));
+  const dates = [];
+  for (const file of files) {
+    try {
+      const item = JSON.parse(await readFile(path.join(snapshotRoot, file), "utf8"));
+      dates.push(snapshotSummary(item, file));
+    } catch {
+      // Ignore a malformed snapshot so one bad file does not block today's publish.
+    }
+  }
+  dates.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const index = {
+    meta: {
+      generatedAt: new Date().toISOString(),
+      latestDate: dates[0]?.date || date,
+    },
+    dates,
+  };
+  await writeFile(path.join(snapshotRoot, "index.json"), `${JSON.stringify(index, null, 2)}\n`, "utf8");
+}
+
 async function collectJob(context, sourceKey, job) {
   const page = job.mode === "search"
     ? await openSearchPage(context, sourceKey, job.keyword)
@@ -592,6 +643,7 @@ async function main() {
   };
 
   await mkdir(path.dirname(outputPath), { recursive: true });
+  await writeSnapshotFiles(payload);
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   await browser.close();
   console.log(JSON.stringify({
