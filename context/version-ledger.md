@@ -18,12 +18,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.3-column-independent-production-skills |
-| Version name | Column Independent Production Skills |
-| Version layer | Minor |
+| Current version | V3.3.3.1-hermes-supervision-inbox |
+| Version name | Hermes Supervision Inbox |
+| Version layer | Patch |
 | Release date | 2026-06-09 |
 | Product version | V3.3 |
-| Git tag | `v3.3.3-column-independent-production-skills` |
+| Git tag | `v3.3.3.1-hermes-supervision-inbox` |
 | Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -39,6 +39,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Intelligence Map and Dashboard follow the Business Signals data chain.
 - Site publication remains unified: merged changes on `main` trigger GitHub Pages.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
+- Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
@@ -101,6 +102,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|
+| `V3.3.3.1-freeze-hermes-supervision-inbox-20260609` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-09 | V3.3.3.1-hermes-supervision-inbox | ad hoc Hermes-to-Codex handoff only in chat; daily supervision without a unified report; failed monitoring issues without inbox report path; Hermes directly editing monitor skills after incidents; Codex repairs without lane / failed_gate / report_path / data_generated / needed_action | `npm run supervise:daily` + `npm run inbox:hermes` + monitor skill evals |
 | `V3.3.3-freeze-column-independent-production-skills-20260609` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-09 | V3.3.3-column-independent-production-skills | mixed-column production workflows; Business Signals PR staging builders or community data; First-Line Viewpoints depending on Raw / Pool / Card success; Community Intelligence treated as verified business facts; monitor skills without eval / memory self-improvement loops; direct deploy outside GitHub Pages | skill evals + workflow split + source-first + builders data gate + community gate + frontstage regression |
 | `V3.3.2.1-freeze-public-frontstage-polish-20260609` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-09 | V3.3.2.1-public-frontstage-polish | Dashboard returning to public navigation; main column titles falling below column-page H1 tier; Core Pool/internal process tags leaking into card tags; weak/title-derived subjects in Top10/Core Pool; relationship network reverting to horizontal-drag zoom; untranslated builders blog titles | syntax + source-first + builders data gate + frontstage regression + visual smoke + GitHub Pages deploy |
 | `V3.3.2-freeze-community-intelligence-v1-20260608` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence / Dashboard | 2026-06-08 | V3.3.2-community-intelligence-v1 | Community Intelligence detached from navigation; repeated keyword-hit duplicates; visible internal scoring / diagnostic fields; placeholder tags like `待确认`; community posts treated as verified business-signal facts without source-first promotion; missing local Obsidian archive | syntax + collector syntax + archive syntax + nav consistency + visual smoke + GitHub Pages deploy |
@@ -115,7 +117,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Summary | Current Status |
 |---|---|---|
-| V3.3.3-column-independent-production-skills | Splits daily production into independent Business Signals, First-Line Viewpoints, and Community Intelligence monitor skills, with lane-specific gates, commit boundaries, and self-improvement eval / memory loops while preserving unified GitHub Pages publication | current |
+| V3.3.3.1-hermes-supervision-inbox | Adds unified daily supervision automation and the Hermes -> Codex inbox protocol. Hermes now supervises with `daily-supervision-report`, sends actionable repair requests through `agent-workflow/inbox/hermes-to-codex/`, and Codex reads them with `npm run inbox:hermes` | current |
+| V3.3.3-column-independent-production-skills | Splits daily production into independent Business Signals, First-Line Viewpoints, and Community Intelligence monitor skills, with lane-specific gates, commit boundaries, and self-improvement eval / memory loops while preserving unified GitHub Pages publication | upgraded |
 | V3.3.2.1-public-frontstage-polish | Polishes the public four-column frontstage: hides Dashboard from public navigation, restores column-page H1 hierarchy, fixes Core Pool/internal tag leakage, repairs weak subjects, translates builders blog titles, and changes the intelligence map network to true zoom | upgraded |
 | V3.3.2-community-intelligence-v1 | Adds Community Intelligence V1.0 as a frontstage column; includes logged-in community collection, dedupe, value sorting, clean card display, document links, and local Obsidian archive; navigation is unified across frontstage pages | upgraded |
 | V3.3.1-unified-intelligence-frontstage | Consolidates frontstage version, formal tag taxonomy, business-signal rules and independent builders automation; builders data no longer waits behind business-signal gates | upgraded |
