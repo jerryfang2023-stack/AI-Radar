@@ -608,6 +608,9 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   ];
   const match = rules.find(([pattern]) => pattern.test(source));
   if (match) return match[1];
+  // Fallback: if the title already has Chinese content, use it as a basic fact
+  const cjkChars = (text.match(/[\u4e00-\u9fff]/gu) || []).length;
+  if (cjkChars >= 8) return short(text, 320);
   return "";
 }
 
@@ -807,7 +810,10 @@ function readPoolEvidence(date = "", poolRef = "", expectedSourceUrl = "") {
     publishedAt: "",
     rawTitle: "",
     keyExcerpts: Array.isArray(keyExcerptObjects)
-      ? keyExcerptObjects.map((item) => ({ type: item?.type || "", text: short(item?.text || "", 260) })).filter((item) => item.text)
+      ? keyExcerptObjects.map((item) => {
+          const raw = (item?.text || "").replace(/\/\s*query=.*?\/\s*intent=.*?\/\s*path=\S*\s*/g, "").trim();
+          return { type: item?.type || "", text: short(raw, 260) };
+        }).filter((item) => item.text)
       : [],
     visibleFragment: "",
     fullText: section,
@@ -1044,6 +1050,15 @@ function buildOriginalHighlights(raw, rawDisplayTitle = "", sourceUrl = "", exis
   const candidates = [...new Set([...translated, ...genericRawCorePoints(raw)])]
     .filter((item) => item && !isMechanicalFrontstageText(item) && !/原题为/u.test(item))
     .filter((item) => !textRepeatsAny(item, existing));
+  // Fallback: if no translated highlights, use raw excerpt text directly
+  if (!candidates.length) {
+    const rawFallback = raw.keyExcerpts
+      .map((item) => stripSourceNoise(item.text))
+      .filter(Boolean)
+      .filter((item) => isSubstantiveSourceFragment(item))
+      .filter((item) => !textRepeatsAny(item, existing));
+    candidates.push(...rawFallback);
+  }
   return uniqueNonRepeatingLines(candidates, existing, 8);
 }
 
