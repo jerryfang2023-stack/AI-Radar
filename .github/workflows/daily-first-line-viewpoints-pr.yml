@@ -163,7 +163,7 @@ jobs:
           stage_if_exists() {
             local path="$1"
             if [ -e "$path" ]; then
-              git add "$path"
+              git add -f "$path"
             fi
           }
 

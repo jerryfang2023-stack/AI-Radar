@@ -3658,6 +3658,24 @@ function selectMonitorPoolItems(items) {
   }
 
   const coreSelectedCount = () => [...coreLaneCounts.values()].reduce((sum, count) => sum + count, 0);
+  const selectedImportanceCount = (importanceType) =>
+    selected.filter((meta) => meta.importanceType === importanceType).length;
+
+  function pickRequiredImportanceCoverage() {
+    const minPool = Number(keywordMonitoring.policy?.pool_min_per_required_importance_type ?? 0);
+    if (!minPool) return;
+    for (const importanceType of requiredImportanceTypes()) {
+      let needed = minPool - selectedImportanceCount(importanceType);
+      if (needed <= 0) continue;
+      for (const meta of sorted) {
+        if (selected.length >= poolTarget || needed <= 0) break;
+        if (meta.importanceType !== importanceType) continue;
+        if (!canAdd(meta, { requireRouted: true, enforceCoreLargeVendorCap: true })) continue;
+        add(meta);
+        needed -= 1;
+      }
+    }
+  }
 
   for (const meta of metas.filter((entry) => isAIHotDailySelected(entry.item))) {
     if (selectedKeys.has(meta.key)) continue;
@@ -3665,6 +3683,7 @@ function selectMonitorPoolItems(items) {
     add(meta, { demoteCore });
   }
 
+  pickRequiredImportanceCoverage();
   pick({ requireCore: true, requireLargeVendor: false, enforceCoreLaneCap: true }, Math.max(0, coreNonLargeVendorMinTarget - coreNonLargeVendorCount));
   if (coreNonLargeVendorCount < coreNonLargeVendorMinTarget) {
     pick({ requireCore: true, requireLargeVendor: false }, Math.max(0, coreNonLargeVendorMinTarget - coreNonLargeVendorCount));
