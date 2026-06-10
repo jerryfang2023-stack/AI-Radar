@@ -196,8 +196,8 @@ jobs:
           GitHub Pages deploys after this PR updates main.
           BODY
 
-          if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
-            pr_url="$(gh pr view "$branch" --json url --jq .url)"
+          if pr_number="$(gh pr list --state open --head "$branch" --json number --jq '.[0].number // empty' --limit 1)"; [ -n "$pr_number" ]; then
+            pr_url="$(gh pr view "$pr_number" --json url --jq .url)"
             gh pr edit "$pr_number" \
               --title "Community Intelligence update ${RUN_DATE}" \
               --body-file "$body_file"
