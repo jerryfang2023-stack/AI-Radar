@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.3 column-independent production development.
+WaveSight AI is now in V3.3.4 independent-lane publication development.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now in V3.3.3 column-independent production development.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.3 keeps the unified frontstage and upgrades daily production into independent column lanes with shared site-level publication.
+- V3.3.4 keeps the unified frontstage and upgrades daily production into independent monitoring, gate, PR, merge, and publication lanes with shared GitHub Pages output.
 
 ## Current Entries
 
@@ -83,7 +83,7 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 
 1. Run Business Signals through its own Raw / Pool / Card / Top10 lane.
 2. Run First-Line Viewpoints through its own builders data lane.
-3. Run Community Intelligence through its local logged-in collection lane.
+3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Intelligence Map and Dashboard aligned with the Business Signals data chain.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
