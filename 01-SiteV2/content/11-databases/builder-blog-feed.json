@@ -1,10 +1,12 @@
 {
-  "generatedAt": "2026-06-09T06:23:23.846Z",
+  "generatedAt": "2026-06-10T02:05:08.076Z",
   "stats": {
-    "blogsBuilt": 7,
+    "blogsBuilt": 6,
     "totalItems": 25,
     "sourceCount": 9,
-    "errors": []
+    "errors": [
+      "import-ai-newsletter: HTTP 403"
+    ]
   },
   "blogs": [
     {
@@ -12,6 +14,56 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
+          "text": "If Claude Fable stops helping you, you'll never know",
+          "summary": "<p><strong><a href=\"https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html\">If Claude Fable stops helping you, you'll never know</a></strong></p>\nJonathon Ready highlights one of the more eyebrow-raising details from the <a href=\"https://www-cdn.anth",
+          "createdAt": "2026-06-10T00:37:25+00:00",
+          "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/9/claude-fable-5/#atom-everything",
+          "text": "Initial impressions of Claude Fable 5",
+          "summary": "<p>I didn't have early access to today's <a href=\"https://www.anthropic.com/news/claude-fable-5-mythos-5\">Claude Fable 5</a> release, but I've spent the past ~5.5 hours putting it through its paces. My initial impressions are that this is something of a <em>beast</em>. It's slow, expensive and has b",
+          "createdAt": "2026-06-09T23:59:54+00:00",
+          "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/9/llm/#atom-everything",
+          "text": "llm 0.32a3",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.32a3\">llm 0.32a3</a></p>\n        <p>Almost entirely written by the new Claude Fable 5, see <a href=\"https://simonwillison.net/2026/Jun/9/claude-fable-5/#adding-features-to-datasette-agent-and-llm-using-claude-code\">my",
+          "createdAt": "2026-06-09T22:27:03+00:00",
+          "url": "https://simonwillison.net/2026/Jun/9/llm/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything",
+          "text": "Setting a custom price for a model in AgentsView",
+          "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/llms/agentsview-custom-model-price\">Setting a custom price for a model in AgentsView</a></p>\n        <p>I've been really enjoying <a href=\"https://agentsview.io/\">AgentsView</a> by Wes McKinney as a tool for exploring my token usage acr",
+          "createdAt": "2026-06-09T21:35:31+00:00",
+          "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/#atom-everything",
+          "text": "Quoting Andrej Karpathy",
+          "summary": "<blockquote cite=\"https://twitter.com/karpathy/status/2064409694761054332\"><p>I feel a lot of things changing as working software increasingly comes out on a tap. The Jevon's paradox kicks in and I feel my own demand for software growing substantially. You can ask for anything - explainers, visualiz",
+          "createdAt": "2026-06-09T19:03:10+00:00",
+          "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything",
           "text": "Siri AI at WWDC 2026",
@@ -101,46 +153,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything",
-          "text": "Microsoft's new MAI models",
-          "summary": "<p>Microsoft <a href=\"https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/\">announced two new text LLMs</a> this morning - <strong><a href=\"https://microsoft.ai/news/introducing-mai-thinking-1/\">MAI-Thinking-1</a></strong> (reasoning, 1T parameters, 35B active, a",
-          "createdAt": "2026-06-02T22:21:52+00:00",
-          "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything",
-          "text": "datasette-agent-micropython 0.1a0",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent-micropython/releases/tag/0.1a0\">datasette-agent-micropython 0.1a0</a></p>\n        <p>I want <a href=\"https://agent.datasette.io\">Datasette Agent</a> to be able to generate and execute Python code safely. This alpha is",
-          "createdAt": "2026-06-02T19:28:36+00:00",
-          "url": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything",
-          "text": "micropython-wasm 0.1a1",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/micropython-wasm/releases/tag/0.1a1\">micropython-wasm 0.1a1</a></p>\n        <p>Fixes for some limitations that emerged while I was trying to use this to build <code>datasette-agent-micropython</code>.</p>\n    \n    \n        <p>Tags: <a h",
-          "createdAt": "2026-06-02T19:20:47+00:00",
-          "url": "https://simonwillison.net/2026/Jun/2/micropython-wasm/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/2/sighting-367841339/#atom-everything",
-          "text": "California Brown Pelican",
-          "summary": "<p><img src=\"https://static.inaturalist.org/photos/671786719/large.jpg\" alt=\"California Brown Pelican\"></p><p>California Brown Pelican, in Fort Mason, CA, US</p><p>I'm at the <a href=\"https://build.microsoft.com/\">Microsoft Build</a> conference today, held at <a href=\"https://en.wikipedia.org/wiki/F",
-          "createdAt": "2026-06-02T18:17:03+00:00",
-          "url": "https://simonwillison.net/2026/Jun/2/sighting-367841339/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -150,11 +162,11 @@
       "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "tweets": [
         {
-          "id": "https://www.interconnects.ai/p/farewell-ai2",
-          "text": "Farewell Ai2",
-          "summary": "This was my last week at the Allen Institute for AI (Ai2), where I got the great privilege to work on the Olmo models, to grow, to learn, and to have broad lasting impacts.",
-          "createdAt": "Tue, 02 Jun 2026 14:15:59 GMT",
-          "url": "https://www.interconnects.ai/p/farewell-ai2",
+          "id": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+          "text": "Claude Fable 5 and new AI safety fables",
+          "summary": "One step further into the power politics of frontier AI systems.",
+          "createdAt": "Tue, 09 Jun 2026 22:59:35 GMT",
+          "url": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -167,21 +179,21 @@
       "bio": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
       "tweets": [
         {
-          "id": "https://www.bensbites.com/p/build-tools-to-build-more",
-          "text": "Build tools, to build more",
-          "summary": "Codex Sites and open models",
-          "createdAt": "Thu, 04 Jun 2026 13:03:42 GMT",
-          "url": "https://www.bensbites.com/p/build-tools-to-build-more",
+          "id": "https://www.bensbites.com/p/hey-siri-meet-ai",
+          "text": "Hey Siri, meet AI",
+          "summary": "what's the deal with loops",
+          "createdAt": "Tue, 09 Jun 2026 13:02:18 GMT",
+          "url": "https://www.bensbites.com/p/hey-siri-meet-ai",
           "likes": 0,
           "retweets": 0,
           "replies": 0
         },
         {
-          "id": "https://www.bensbites.com/p/opus-48",
-          "text": "Opus 4.8",
-          "summary": "NVIDIA and Microsoft birthed a new computer",
-          "createdAt": "Tue, 02 Jun 2026 13:29:05 GMT",
-          "url": "https://www.bensbites.com/p/opus-48",
+          "id": "https://www.bensbites.com/p/build-tools-to-build-more",
+          "text": "Build tools, to build more",
+          "summary": "Codex Sites and open models",
+          "createdAt": "Thu, 04 Jun 2026 13:03:42 GMT",
+          "url": "https://www.bensbites.com/p/build-tools-to-build-more",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -193,6 +205,16 @@
       "handle": "tldr.tech",
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
+        {
+          "id": "https://tldr.tech/ai/2026-06-09",
+          "text": "OpenAI S-1 🇺🇸, Siri AI 📱, Xiaomi Ultraspeed ⚡",
+          "summary": "",
+          "createdAt": "Tue, 09 Jun 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-06-09",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://tldr.tech/ai/2026-06-08",
           "text": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
@@ -222,33 +244,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-06-03",
-          "text": "Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸",
-          "summary": "",
-          "createdAt": "Wed, 03 Jun 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-06-03",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Import AI (Jack Clark)",
-      "handle": "importai.substack.com",
-      "bio": "Weekly AI industry analysis: research trends, policy, infrastructure, geopolitical impact.",
-      "tweets": [
-        {
-          "id": "https://importai.substack.com/p/import-ai-460-reward-hacking-society",
-          "text": "Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing",
-          "summary": "When will markets price the singularity?",
-          "createdAt": "Mon, 08 Jun 2026 12:31:32 GMT",
-          "url": "https://importai.substack.com/p/import-ai-460-reward-hacking-society",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -266,16 +261,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://www.tigera.io/blog/whats-new-in-calico-spring-2026-release/",
-          "text": "What&#8217;s new in Calico: Spring 2026 Release",
-          "summary": "Kubernetes has come a long way since its debut in 2014. It’s gone from running a couple of containerized microservices to orchestrating fleets of production workloads spanning everything from AI agents to full scale VMs...\nThe post What&#8217;s new in Calico: Spring 2026 Release appeared first on Ti",
-          "createdAt": "Tue, 02 Jun 2026 16:10:41 +0000",
-          "url": "https://www.tigera.io/blog/whats-new-in-calico-spring-2026-release/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -284,6 +269,16 @@
       "handle": "dataiku.com",
       "bio": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
       "tweets": [
+        {
+          "id": "https://www.dataiku.com/stories/blog/snowflake-partnership",
+          "text": "From partnership to pipeline: how Snowflake and Dataiku drove 200%+ YoY sourced opportunity growth",
+          "summary": " \r\n    \r\n \r\nPartnerships are often judged too early, or on the wrong things. Visibility. Executive alignment. Event presence. A well-worded press release. None of that is the real test.",
+          "createdAt": "Tue, 09 Jun 2026 20:00:03 GMT",
+          "url": "https://www.dataiku.com/stories/blog/snowflake-partnership",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://www.dataiku.com/stories/blog/alteryx-data-analytics-alternatives",
           "text": "Alteryx data analytics in 2026: strengths, limitations, and alternatives",

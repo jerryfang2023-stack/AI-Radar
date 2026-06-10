@@ -1,0 +1,265 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-008",
+  "title": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
+  "original_url": "https://www.marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
+  "canonical_url": "https://marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-08T08:56:49.000Z",
+  "collected_at": "2026-06-09T02:33:36.399Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nTechnology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nNew Releases\nSoftware Engineering\nStaff\nVoice AI\nLast week Microsoft AI has announced MAI-Transcribe-1.5 . It is the second iteration of the company’s in-house speech-to-text family. The model targets accuracy across 43 languages, accents, and noisy environments. The Microsoft team positions it for production transcription workloads.\nWhat is MAI-Transcribe-1.5\nMAI-Transcribe-1.5 is an automatic speech recognition (ASR) model. It takes audio as input and returns text. Microsoft built it in-house, not on a third-party base. The model handles 43 languages with a single system. It is optimized for diverse accents, dialects, and real-world acoustic conditions.\nMicrosoft is integrating it into Copilot, Teams, GitHub, and Dynamics 365 Contact Centre. It is also available in Foundry, Microsoft’s model platform.\nThe Accuracy Case\nAccuracy here is measured by Word-Error-Rate (WER). Lower WER means fewer mistakes per transcribed word. Microsoft reports best-in-class WER across 43 languages on FLEURS. FLEURS is a standard multilingual transcription benchmark.\nOn the Artificial Analysis leaderboard, the model posts a WER of 2.4%. That places it third on a competitive open benchmark. So the picture is split. Microsoft team claims first place on FLEURS and third on Artificial Analysis.\nThe language expansion is the other accuracy story. Coverage grew from 25 languages to 43. The 18 new languages were added without compromising accuracy. Ten of them are South Asian, including Bengali, Tamil, and Telugu. Eight are European, such as Ukrainian, Greek, and Catalan.\nSpeed\nMAI-Transcribe-1.5 leads on accuracy-times-speed on the Artificial Analysis leaderboard. It runs up to 5x faster than models of comparable accuracy. The effect is largest on long audio files. The model can transcribe an hour of audio in under 15 seconds.\nMicrosoft cites up to 5x speedups over Gemini 3.1, Scribe v2, and GPT-4o-Transcribe on long audio. Against the prior MAI-Transcribe-1, the Azure card lists up to 5.7x faster long-form inference. For batch pipelines processing large archives, that latency gap compounds quickly.\nKeyword (Entity) Biasing: The Feature Worth Understanding\nGeneric transcribers often fail on domain-specific words. These include people, product names, medical terms, and internal acronyms. Those words frequently matter most to enterprise users.\nMAI-Transcribe-1.5 adds keyword biasing, also called entity biasing. You supply a list of domain-specific keywords. The Azure card supports up to 200 keywords. The model biases its predictions toward that list. Critically, it does not blindly force matches. It uses shared context to decide when biasing should apply. Microsoft reports a 30% WER reduction on FLEURS when biasing is used.\nA short example shows the effect. Without biasing, names render as “Sean,” “Oif,” and “Societal.” With a supplied name list, the model recovers “Shaun,” “Aoife,” and “Xochitl.” This is relevant for meetings, healthcare, and call centers with niche vocabulary.\nUse Cases\nThe Azure model card lists concrete production scenarios. Each maps to a common engineering workload:\nVideo captions for media and content platforms.\nAccessibility tools that depend on accurate captions.\nMeeting transcription for Teams-style collaboration tools.\nCall analysis for contact centers and support analytics.\nContent creation workflows that need fast draft transcripts.\nVoice agents that convert speech to text before reasoning.\nAutomatic language identification helps when the input language is unknown. The model detects the spoken language without a manual setting.\nMAI-Transcribe-1.5 vs MAI-Transcribe-1\nThe table below compares the two generations using stated facts only.\nAttribute MAI-Transcribe-1 MAI-Transcribe-1.5\nLanguages covered 25 43\nKeyword/entity biasing Not listed Up to 200 keywords\nLong-form inference speed Baseline Up to 5.7x faster\nArtificial Analysis WER Not specified 2.4% (ranked #3)\nFLEURS position (per Microsoft) State-of-the-art Best-in-class across 43 languages\nAutomatic language identification Not specified Yes\nLifecycle Prior release Generally available (GA)\nInput / Output Audio / Text Audio / Text\nStrengths and Limitations\nStrengths:\n43-language coverage from a single model, up from 25.\nKeyword/entity biasing yields up to 30% WER reduction on FLEURS.\nSub-15-second transcription for an hour of audio.\nGenerally available now through Azure AI Foundry.\nRobust on noisy, real-world audio, per Microsoft.\nLimitations:\nNo diarization yet, so speaker labels are unavailable.\nNo native streaming API, so real-time use is limited.\nSeveral accuracy, speed, and cost claims are first-party.\nRanked third on Artificial Analysis, behind two competitors.\nSources\nIntroducing MAI-Transcribe-1.5 — Microsoft AI\nMAI-Transcribe-1.5 model card — Azure AI Foundry\nMAI-Transcribe-1.5 Foundry API documentation\nMAI-Transcribe-1.5 Cookbook\nMAI Playground",
+  "clean_text": "Editors Pick\nAgentic AI\nTechnology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nNew Releases\nSoftware Engineering\nStaff\nVoice AI\nLast week Microsoft AI has announced MAI-Transcribe-1.5 . It is the second iteration of the company’s in-house speech-to-text family. The model targets accuracy across 43 languages, accents, and noisy environments. The Microsoft team positions it for production transcription workloads.\nWhat is MAI-Transcribe-1.5\nMAI-Transcribe-1.5 is an automatic speech recognition (ASR) model. It takes audio as input and returns text. Microsoft built it in-house, not on a third-party base. The model handles 43 languages with a single system. It is optimized for diverse accents, dialects, and real-world acoustic conditions.\nMicrosoft is integrating it into Copilot, Teams, GitHub, and Dynamics 365 Contact Centre. It is also available in Foundry, Microsoft’s model platform.\nThe Accuracy Case\nAccuracy here is measured by Word-Error-Rate (WER). Lower WER means fewer mistakes per transcribed word. Microsoft reports best-in-class WER across 43 languages on FLEURS. FLEURS is a standard multilingual transcription benchmark.\nOn the Artificial Analysis leaderboard, the model posts a WER of 2.4%. That places it third on a competitive open benchmark. So the picture is split. Microsoft team claims first place on FLEURS and third on Artificial Analysis.\nThe language expansion is the other accuracy story. Coverage grew from 25 languages to 43. The 18 new languages were added without compromising accuracy. Ten of them are South Asian, including Bengali, Tamil, and Telugu. Eight are European, such as Ukrainian, Greek, and Catalan.\nSpeed\nMAI-Transcribe-1.5 leads on accuracy-times-speed on the Artificial Analysis leaderboard. It runs up to 5x faster than models of comparable accuracy. The effect is largest on long audio files. The model can transcribe an hour of audio in under 15 seconds.\nMicrosoft cites up to 5x speedups over Gemini 3.1, Scribe v2, and GPT-4o-Transcribe on long audio. Against the prior MAI-Transcribe-1, the Azure card lists up to 5.7x faster long-form inference. For batch pipelines processing large archives, that latency gap compounds quickly.\nKeyword (Entity) Biasing: The Feature Worth Understanding\nGeneric transcribers often fail on domain-specific words. These include people, product names, medical terms, and internal acronyms. Those words frequently matter most to enterprise users.\nMAI-Transcribe-1.5 adds keyword biasing, also called entity biasing. You supply a list of domain-specific keywords. The Azure card supports up to 200 keywords. The model biases its predictions toward that list. Critically, it does not blindly force matches. It uses shared context to decide when biasing should apply. Microsoft reports a 30% WER reduction on FLEURS when biasing is used.\nA short example shows the effect. Without biasing, names render as “Sean,” “Oif,” and “Societal.” With a supplied name list, the model recovers “Shaun,” “Aoife,” and “Xochitl.” This is relevant for meetings, healthcare, and call centers with niche vocabulary.\nUse Cases\nThe Azure model card lists concrete production scenarios. Each maps to a common engineering workload:\nVideo captions for media and content platforms.\nAccessibility tools that depend on accurate captions.\nMeeting transcription for Teams-style collaboration tools.\nCall analysis for contact centers and support analytics.\nContent creation workflows that need fast draft transcripts.\nVoice agents that convert speech to text before reasoning.\nAutomatic language identification helps when the input language is unknown. The model detects the spoken language without a manual setting.\nMAI-Transcribe-1.5 vs MAI-Transcribe-1\nThe table below compares the two generations using stated facts only.\nAttribute MAI-Transcribe-1 MAI-Transcribe-1.5\nLanguages covered 25 43\nKeyword/entity biasing Not listed Up to 200 keywords\nLong-form inference speed Baseline Up to 5.7x faster\nArtificial Analysis WER Not specified 2.4% (ranked #3)\nFLEURS position (per Microsoft) State-of-the-art Best-in-class across 43 languages\nAutomatic language identification Not specified Yes\nLifecycle Prior release Generally available (GA)\nInput / Output Audio / Text Audio / Text\nStrengths and Limitations\nStrengths:\n43-language coverage from a single model, up from 25.\nKeyword/entity biasing yields up to 30% WER reduction on FLEURS.\nSub-15-second transcription for an hour of audio.\nGenerally available now through Azure AI Foundry.\nRobust on noisy, real-world audio, per Microsoft.\nLimitations:\nNo diarization yet, so speaker labels are unavailable.\nNo native streaming API, so real-time use is limited.\nSeveral accuracy, speed, and cost claims are first-party.\nRanked third on Artificial Analysis, behind two competitors.\nSources\nIntroducing MAI-Transcribe-1.5 — Microsoft AI\nMAI-Transcribe-1.5 model card — Azure AI Foundry\nMAI-Transcribe-1.5 Foundry API documentation\nMAI-Transcribe-1.5 Cookbook\nMAI Playground",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-09/r-008-microsoft-ai-推出-mai-transcribe-1-5-语音转文本模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-09/r-008-microsoft-ai-推出-mai-transcribe-1-5-语音转文本模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 4993,
+    "paragraph_count": 49,
+    "sentence_count": 62,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 4993,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "061b0ff71c60bf0e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型",
+    "discovery_summary": "Microsoft AI 发布 MAI-Transcribe-1.5，其自研语音转文本模型的第二代。该模型支持 43 种语言，新增关键词（实体）偏置功能，可针对领域特定术语优化。在 Artificial Analysis 排行榜上词错误率（WER）为 2.4%，在 FLEURS 基准上达到最佳准确率。转录一小时音频耗时不到 15 秒，长音频转录速度提升达 5 倍。MAI-Transcribe-1.5 已通过 Azure AI Foundry 提供。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
+    "discovered_at": "2026-06-09T02:25:44.726Z",
+    "rank_on_page": 375,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "d8dcc682b407e374",
+  "content_hash": "061b0ff71c60bf0e",
+  "full_text_hash": "061b0ff71c60bf0e",
+  "semantic_hash": "84d9522b21f6e11d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-08T08:56:49.000Z",
+  "last_seen_at": "2026-06-09T02:33:36.399Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Microsoft AI 发布 MAI-Transcribe-1.5，其自研语音转文本模型的第二代。该模型支持 43 种语言，新增关键词（实体）偏置功能，可针对领域特定术语优化。在 Artificial Analysis 排行榜上词错误率（WER）为 2.4%，在 FLEURS 基准上达到最佳准确率。转录一小时音频耗时不到 15 秒，长音频转录速度提升达 5 倍。MAI-Transcribe-1.5 已通过 Azure AI Foundry 提供。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Editors Pick Agentic AI Technology Artificial Intelligence Language Model Audio Language Model New Releases Software Engineering Staff Voice AI Last week Microsoft AI has announced MAI-Transcribe-1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It is the second iteration of the company’s in-house speech-to-text family.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The model targets accuracy across 43 languages, accents, and noisy environments.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The Microsoft team positions it for production transcription workloads.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "What is MAI-Transcribe-1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "Copilot",
+      "Gemini",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1.5",
+      "43",
+      "2.4%",
+      "15",
+      "5 倍",
+      "1.5\nM",
+      "365",
+      "25"
+    ],
+    "quotes": [
+      "Societal.",
+      "Xochitl."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Editors Pick Agentic AI Technology Artificial Intelligence Language Model Audio Language Model New Releases Software Engineering Staff Voice AI Last week Microsoft AI has announced MAI-Transcribe-1.",
+      "It is the second iteration of the company’s in-house speech-to-text family.",
+      "The model targets accuracy across 43 languages, accents, and noisy environments."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型\n\n- raw_id: R-008\n- original_url: https://www.marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-06-09T02:33:36.399Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nTechnology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nNew Releases\nSoftware Engineering\nStaff\nVoice AI\nLast week Microsoft AI has announced MAI-Transcribe-1.5 . It is the second iteration of the company’s in-house speech-to-text family. The model targets accuracy across 43 languages, accents, and noisy environments. The Microsoft team positions it for production transcription workloads.\nWhat is MAI-Transcribe-1.5\nMAI-Transcribe-1.5 is an automatic speech recognition (ASR) model. It takes audio as input and returns text. Microsoft built it in-house, not on a third-party base. The model handles 43 languages with a single system. It is optimized for diverse accents, dialects, and real-world acoustic conditions.\nMicrosoft is integrating it into Copilot, Teams, GitHub, and Dynamics 365 Contact Centre. It is also available in Foundry, Microsoft’s model platform.\nThe Accuracy Case\nAccuracy here is measured by Word-Error-Rate (WER). Lower WER means fewer mistakes per transcribed word. Microsoft reports best-in-class WER across 43 languages on FLEURS. FLEURS is a standard multilingual transcription benchmark.\nOn the Artificial Analysis leaderboard, the model posts a WER of 2.4%. That places it third on a competitive open benchmark. So the picture is split. Microsoft team claims first place on FLEURS and third on Artificial Analysis.\nThe language expansion is the other accuracy story. Coverage grew from 25 languages to 43. The 18 new languages were added without compromising accuracy. Ten of them are South Asian, including Bengali, Tamil, and Telugu. Eight are European, such as Ukrainian, Greek, and Catalan.\nSpeed\nMAI-Transcribe-1.5 leads on accuracy-times-speed on the Artificial Analysis leaderboard. It runs up to 5x faster than models of comparable accuracy. The effect is largest on long audio files. The model can transcribe an hour of audio in under 15 seconds.\nMicrosoft cites up to 5x speedups over Gemini 3.1, Scribe v2, and GPT-4o-Transcribe on long audio. Against the prior MAI-Transcribe-1, the Azure card lists up to 5.7x faster long-form inference. For batch pipelines processing large archives, that latency gap compounds quickly.\nKeyword (Entity) Biasing: The Feature Worth Understanding\nGeneric transcribers often fail on domain-specific words. These include people, product names, medical terms, and internal acronyms. Those words frequently matter most to enterprise users.\nMAI-Transcribe-1.5 adds keyword biasing, also called entity biasing. You supply a list of domain-specific keywords. The Azure card supports up to 200 keywords. The model biases its predictions toward that list. Critically, it does not blindly force matches. It uses shared context to decide when biasing should apply. Microsoft reports a 30% WER reduction on FLEURS when biasing is used.\nA short example shows the effect. Without biasing, names render as “Sean,” “Oif,” and “Societal.” With a supplied name list, the model recovers “Shaun,” “Aoife,” and “Xochitl.” This is relevant for meetings, healthcare, and call centers with niche vocabulary.\nUse Cases\nThe Azure model card lists concrete production scenarios. Each maps to a common engineering workload:\nVideo captions for media and content platforms.\nAccessibility tools that depend on accurate captions.\nMeeting transcription for Teams-style collaboration tools.\nCall analysis for contact centers and support analytics.\nContent creation workflows that need fast draft transcripts.\nVoice agents that convert speech to text before reasoning.\nAutomatic language identification helps when the input language is unknown. The model detects the spoken language without a manual setting.\nMAI-Transcribe-1.5 vs MAI-Transcribe-1\nThe table below compares the two generations using stated facts only.\nAttribute MAI-Transcribe-1 MAI-Transcribe-1.5\nLanguages covered 25 43\nKeyword/entity biasing Not listed Up to 200 keywords\nLong-form inference speed Baseline Up to 5.7x faster\nArtificial Analysis WER Not specified 2.4% (ranked #3)\nFLEURS position (per Microsoft) State-of-the-art Best-in-class across 43 languages\nAutomatic language identification Not specified Yes\nLifecycle Prior release Generally available (GA)\nInput / Output Audio / Text Audio / Text\nStrengths and Limitations\nStrengths:\n43-language coverage from a single model, up from 25.\nKeyword/entity biasing yields up to 30% WER reduction on FLEURS.\nSub-15-second transcription for an hour of audio.\nGenerally available now through Azure AI Foundry.\nRobust on noisy, real-world audio, per Microsoft.\nLimitations:\nNo diarization yet, so speaker labels are unavailable.\nNo native streaming API, so real-time use is limited.\nSeveral accuracy, speed, and cost claims are first-party.\nRanked third on Artificial Analysis, behind two competitors.\nSources\nIntroducing MAI-Transcribe-1.5 — Microsoft AI\nMAI-Transcribe-1.5 model card — Azure AI Foundry\nMAI-Transcribe-1.5 Foundry API documentation\nMAI-Transcribe-1.5 Cookbook\nMAI Playground\n\n## full_text\n\nEditors Pick\nAgentic AI\nTechnology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nNew Releases\nSoftware Engineering\nStaff\nVoice AI\nLast week Microsoft AI has announced MAI-Transcribe-1.5 . It is the second iteration of the company’s in-house speech-to-text family. The model targets accuracy across 43 languages, accents, and noisy environments. The Microsoft team positions it for production transcription workloads.\nWhat is MAI-Transcribe-1.5\nMAI-Transcribe-1.5 is an automatic speech recognition (ASR) model. It takes audio as input and returns text. Microsoft built it in-house, not on a third-party base. The model handles 43 languages with a single system. It is optimized for diverse accents, dialects, and real-world acoustic conditions.\nMicrosoft is integrating it into Copilot, Teams, GitHub, and Dynamics 365 Contact Centre. It is also available in Foundry, Microsoft’s model platform.\nThe Accuracy Case\nAccuracy here is measured by Word-Error-Rate (WER). Lower WER means fewer mistakes per transcribed word. Microsoft reports best-in-class WER across 43 languages on FLEURS. FLEURS is a standard multilingual transcription benchmark.\nOn the Artificial Analysis leaderboard, the model posts a WER of 2.4%. That places it third on a competitive open benchmark. So the picture is split. Microsoft team claims first place on FLEURS and third on Artificial Analysis.\nThe language expansion is the other accuracy story. Coverage grew from 25 languages to 43. The 18 new languages were added without compromising accuracy. Ten of them are South Asian, including Bengali, Tamil, and Telugu. Eight are European, such as Ukrainian, Greek, and Catalan.\nSpeed\nMAI-Transcribe-1.5 leads on accuracy-times-speed on the Artificial Analysis leaderboard. It runs up to 5x faster than models of comparable accuracy. The effect is largest on long audio files. The model can transcribe an hour of audio in under 15 seconds.\nMicrosoft cites up to 5x speedups over Gemini 3.1, Scribe v2, and GPT-4o-Transcribe on long audio. Against the prior MAI-Transcribe-1, the Azure card lists up to 5.7x faster long-form inference. For batch pipelines processing large archives, that latency gap compounds quickly.\nKeyword (Entity) Biasing: The Feature Worth Understanding\nGeneric transcribers often fail on domain-specific words. These include people, product names, medical terms, and internal acronyms. Those words frequently matter most to enterprise users.\nMAI-Transcribe-1.5 adds keyword biasing, also called entity biasing. You supply a list of domain-specific keywords. The Azure card supports up to 200 keywords. The model biases its predictions toward that list. Critically, it does not blindly force matches. It uses shared context to decide when biasing should apply. Microsoft reports a 30% WER reduction on FLEURS when biasing is used.\nA short example shows the effect. Without biasing, names render as “Sean,” “Oif,” and “Societal.” With a supplied name list, the model recovers “Shaun,” “Aoife,” and “Xochitl.” This is relevant for meetings, healthcare, and call centers with niche vocabulary.\nUse Cases\nThe Azure model card lists concrete production scenarios. Each maps to a common engineering workload:\nVideo captions for media and content platforms.\nAccessibility tools that depend on accurate captions.\nMeeting transcription for Teams-style collaboration tools.\nCall analysis for contact centers and support analytics.\nContent creation workflows that need fast draft transcripts.\nVoice agents that convert speech to text before reasoning.\nAutomatic language identification helps when the input language is unknown. The model detects the spoken language without a manual setting.\nMAI-Transcribe-1.5 vs MAI-Transcribe-1\nThe table below compares the two generations using stated facts only.\nAttribute MAI-Transcribe-1 MAI-Transcribe-1.5\nLanguages covered 25 43\nKeyword/entity biasing Not listed Up to 200 keywords\nLong-form inference speed Baseline Up to 5.7x faster\nArtificial Analysis WER Not specified 2.4% (ranked #3)\nFLEURS position (per Microsoft) State-of-the-art Best-in-class across 43 languages\nAutomatic language identification Not specified Yes\nLifecycle Prior release Generally available (GA)\nInput / Output Audio / Text Audio / Text\nStrengths and Limitations\nStrengths:\n43-language coverage from a single model, up from 25.\nKeyword/entity biasing yields up to 30% WER reduction on FLEURS.\nSub-15-second transcription for an hour of audio.\nGenerally available now through Azure AI Foundry.\nRobust on noisy, real-world audio, per Microsoft.\nLimitations:\nNo diarization yet, so speaker labels are unavailable.\nNo native streaming API, so real-time use is limited.\nSeveral accuracy, speed, and cost claims are first-party.\nRanked third on Artificial Analysis, behind two competitors.\nSources\nIntroducing MAI-Transcribe-1.5 — Microsoft AI\nMAI-Transcribe-1.5 model card — Azure AI Foundry\nMAI-Transcribe-1.5 Foundry API documentation\nMAI-Transcribe-1.5 Cookbook\nMAI Playground\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Microsoft AI 发布 MAI-Transcribe-1.5，其自研语音转文本模型的第二代。该模型支持 43 种语言，新增关键词（实体）偏置功能，可针对领域特定术语优化。在 Artificial Analysis 排行榜上词错误率（WER）为 2.4%，在 FLEURS 基准上达到最佳准确率。转录一小时音频耗时不到 15 秒，长音频转录速度提升达 5 倍。MAI-Transcribe-1.5 已通过 Azure AI Foundry 提供。\n2. [product_update / daily_observation, heatmap, change / high] Editors Pick Agentic AI Technology Artificial Intelligence Language Model Audio Language Model New Releases Software Engineering Staff Voice AI Last week Microsoft AI has announced MAI-Transcribe-1.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] It is the second iteration of the company’s in-house speech-to-text family.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] The model targets accuracy across 43 languages, accents, and noisy environments.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] The Microsoft team positions it for production transcription workloads.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] What is MAI-Transcribe-1.\n"
+}

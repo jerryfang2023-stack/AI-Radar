@@ -1,0 +1,354 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-097
+title: "Pre-seed investors AI founders should prioritize in 2026 - Sky9 Capital"
+original_url: "https://www.sky9capital.com/blog/blog-pre-seed-investors-ai-founders-prioritize-2026/"
+canonical_url: "https://sky9capital.com/blog/blog-pre-seed-investors-ai-founders-prioritize-2026"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-10T02:25:37.728Z
+language: mixed
+full_text_hash: c11dbb968d9bb46e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-097-pre-seed-investors-ai-founders-should-prioritize-in-2026-sky9-capital.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-097-pre-seed-investors-ai-founders-should-prioritize-in-2026-sky9-capital.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":18454,"paragraph_count":80,"sentence_count":151,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"main"}
+has_full_text: true
+content_length: 18454
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c11dbb968d9bb46e","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: db604377effdbe22
+content_hash: 8127bcddadc1144c
+semantic_hash: 09e65a0cb4e931b6
+duplicate_of: ""
+first_seen_at: "2026-06-10T02:25:37.728Z"
+last_seen_at: 2026-06-10T02:25:37.728Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Google","Microsoft","AWS","Nvidia"],"products":["agent","agents","copilot"],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","9","0","16","9 b","25","2026 b","$500"],"quotes":["fundable"]}
+evidence_seed: {"company_actions":["Which pre-seed investors should AI founders prioritize in 2026? Maps HF0, YC, Gradient, a16z Speedrun, and Sky9 by AI layer, stage, and founder type. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=official_original","Back Which Pre-Seed Investors Should AI Founders Prioritize in 2026?","May 25, 2026 Every VC seems to have an AI thesis now."],"case_details":[],"workflow_changes":["An AI infrastructure founder building GPU orchestration software has almost nothing in common with a vertical AI founder automating claims processing at insurance companies."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Which pre-seed investors should AI founders prioritize in 2026? Maps HF0, YC, Gradient, a16z Speedrun, and Sky9 by AI layer, stage, and founder type. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=official_original","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Back Which Pre-Seed Investors Should AI Founders Prioritize in 2026?","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"May 25, 2026 Every VC seems to have an AI thesis now.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The problem is that most of them are pitching the same story to a category with at least eight structurally different founder types.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"An AI infrastructure founder building GPU orchestration software has almost nothing in common with a vertical AI founder automating claims processing at insurance companies.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"And neither of them should be sending the same investor list.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Pre-seed investors AI founders should prioritize in 2026 - Sky9 Capital
+
+## clean_text
+
+Back
+Which Pre-Seed Investors Should AI Founders Prioritize in 2026?
+May 25, 2026
+Every VC seems to have an AI thesis now. The problem is that most of them are pitching the same story to a category with at least eight structurally different founder types. An AI infrastructure founder building GPU orchestration software has almost nothing in common with a vertical AI founder automating claims processing at insurance companies. And neither of them should be sending the same investor list. This article maps the investors and programs that are actually worth prioritizing in 2026 based on your AI layer, your stage, and what “fundable” looks like before you have revenue.
+What counts as an AI founder at pre-seed, and what doesn’t
+Pre-seed is a specific moment. It covers idea, prototype, technical demo, MVP, early users, design partners, and first traction. It does not include Series A preparation, post-revenue scaling, or foundation model training that requires hundreds of millions in compute upfront. The investors worth targeting at pre-seed are those with documented pre-revenue or pre-traction activity, not funds that primarily close Series A and occasionally make an exception.
+The AI founder categories that map to different investor types:
+AI application founders : SaaS, workflow automation, copilots. Differentiation is domain depth and distribution, not model novelty.
+AI agent founders : Multi-step, autonomous task execution. Technical moat is in orchestration, reliability, and context management.
+Vertical AI founders : Industry-specific AI with deep workflow integration. Healthcare, legal, fintech, construction. Differentiation is data access and customer lock-in.
+AI developer tools / MLOps founders : Infrastructure for AI teams. CI/CD for models, evaluation frameworks, observability. Customer is a developer or AI team.
+AI infrastructure founders : Compute, inference optimization, data pipelines, serving infrastructure. Capital-intensive; different investor profile from application layer.
+Foundation model founders : Research-heavy, pre-product. Most pre-seed investors can’t fund this category at the necessary scale. Very limited investor set.
+Regulated AI founders : Healthcare, finance, legal. Longer validation cycles; specific investor networks required.
+One category that doesn’t qualify as a differentiated AI startup at pre-seed : thin AI wrappers with no proprietary data, no workflow depth, and no distribution insight. Investors are actively screening these out in 2026. If your product’s entire moat is prompt engineering on top of a public model, your investor list is essentially empty.
+AI founder pre-seed investor priority table
+Use this table to identify which investor or program type to prioritize first based on your AI layer and current stage. Verify current investment activity, thesis, and pre-seed eligibility directly before outreach. Stage and thesis can shift significantly between fund vintages.
+Type Funding Model AI Thesis Evidence Pre-seed Activity AI Layer Fit Support Model Best For Not Ideal For
+AI-specific accelerator (e.g. HF0) Equity SAFE Strong: AI-only portfolio, technical residency model High: accepts pre-product and early MVP All AI layers, esp. infra and developer tools High-touch, peer-intensive, investor access Highly technical AI founders; infrastructure, devtools, agents Founders who need domain-specific vertical mentorship
+General top-tier accelerator (e.g. YC) SAFE ($500K, 7% equity) Strong: 88% AI-native in Summer 2025 batch Very high: idea stage eligible All AI layers High-touch, structured curriculum First-time AI founders needing Demo Day signal and alumni network Founders with existing institutional investor access
+AI-focused seed fund (e.g. Gradient) Equity, seed-stage Strong: $1.2B AUM, 500+ AI founders backed, Fund V $220M (March 2026) Active pre-seed and seed Applications, agents, real-world AI systems; explicitly avoids foundation models Medium-touch, Google ecosystem access Technical AI founders at seed; application and agentic layer Foundation model founders; mega-seed-only companies
+Multi-stage VC with AI thesis and early-stage program (e.g. a16z Speedrun) SAFE, up to $1M Strong: documented AI thesis across all layers High: Speedrun accepts pre-product All AI layers High-touch, operator-led, $5M+ credits Founders willing to relocate to SF who want top-tier US institutional network Founders outside SF unable to commit to 12-week in-person program
+Global multi-stage VC with AI thesis (e.g. Sky9 Capital) Equity / SAFE Strong: Kimi/Moonshot AI, ProducerAI (Google), Sky9 Digital thesis Active early stage; verify current pre-seed terms AI infrastructure, AI-enabled fintech, application layer, global distribution plays Medium-touch, partner-led; cross-border network Technical AI founders with global distribution ambition in AI, fintech, or deep tech Pre-product founders primarily needing curriculum or co-founder matching
+Corporate AI program (e.g. Gradient, Microsoft for Startups, Google for Startups) Equity (Gradient) or credits/non-dilutive (corporate programs) Strong for Gradient; programs vary Gradient: active pre-seed; corporate programs: non-dilutive, no stage gate Gradient: applications + agentic; corporate programs: any AI layer Cloud access, technical support, Google/Microsoft ecosystem Compute-heavy AI founders; founders who benefit from cloud infrastructure access Corporate programs: founders who need cash, not credits
+AI grant / fellowship program (e.g. AI Grant) Uncapped SAFE ($250K + Azure credits) Moderate: AI product focus, rolling applications High: pre-product eligible AI product founders, any layer Light-touch; non-programmatic Pre-seed AI product founders validating with a model Founders needing structured mentorship program
+Operator-led pre-seed fund Equity / SAFE Varies by fund; verify directly Active pre-seed for most Application layer, vertical AI, devtools Medium-touch, operator-specific Technical founders needing GTM, customer intros, or hiring support in a specific domain Idea-stage founders without any prototype
+Scoring basis: AI thesis evidence rated on documented portfolio and official fund communications. Pre-seed activity reflects publicly available information as of May 2026. Stage fit reflects current program criteria. Terms are sourced from official program pages or verified secondary sources; verify directly before outreach as terms change.
+AI founder type → investor fit matrix
+Use this matrix to match your AI founder type and layer to the investor archetypes most likely to have relevant AI diligence capacity and portfolio fit. Your primary AI layer should drive the first filter, not the investor’s brand.
+Ratings: 3/3 Strong fit | 2/3 Good fit | 1/3 Partial fit | Rare: case-specific only
+AI Founder Type AI-specific Accelerator General Top-tier Accelerator AI-focused Seed Fund Multi-stage VC + AI Program Global Multi-stage VC Corporate AI Program
+AI application (copilot, SaaS workflow) 2/3 3/3 3/3 3/3 2/3 2/3
+AI agent (autonomous task execution) 3/3 3/3 3/3 3/3 2/3 2/3
+Vertical AI (healthcare, legal, fintech, industrial) 2/3 2/3 2/3 2/3 3/3 1/3
+AI developer tools / MLOps 3/3 2/3 3/3 2/3 1/3 3/3
+AI infrastructure (compute, inference, data pipelines) 3/3 2/3 2/3 2/3 2/3 3/3
+Foundation model / research-heavy AI 1/3 2/3 Rare 1/3 Rare 2/3
+Regulated AI (healthcare, finance, legal workflows) 1/3 2/3 1/3 2/3 3/3 1/3
+Consumer AI / creator AI 1/3 3/3 2/3 2/3 3/3 1/3
+AI-enabled fintech / financial infrastructure 1/3 2/3 2/3 2/3 3/3 1/3
+Scoring basis: AI layer fit, documented pre-seed activity, AI thesis evidence, technical diligence capacity, support model, funding model, follow-on value, and source confidence. “Rare” indicates the investor type has insufficient documented activity in that category; may occur in exceptional cases but should not be expected. Regulated AI scores reflect the need for domain-specific investor networks with healthcare or financial services relationships.
+AI-specific accelerators and fellowships: the highest-priority first step for most founders
+For pre-product or early-prototype AI founders, an AI-specific accelerator is typically the highest-density option before institutional VC outreach. The investor networks, technical credibility signal, and peer environment compress the pre-seed phase meaningfully.
+HF0 Residency runs 12-week in-person cohorts in San Francisco, investing up to $1M via uncapped SAFE for 5% equity (per Cleverhack and Peony, 2026). HF0 targets repeat or highly technical founders building AI infrastructure, generative products, and developer-facing tools. The program does not publish a formal curriculum; it’s built around peer intensity and investor access. HF0 is the highest-check, lowest-equity accelerator currently operating in SF for technical AI founders (per Peony, April 2026). Applications are rolling; verify current cohort timing directly at hf0.com.
+AI Grant offers $250,000 via uncapped SAFE plus $350,000+ in Azure credits and startup benefits, on a rolling basis (per aigrant.com, official site). One important clarification: AI Grant is an equity investment via SAFE, not a non-dilutive grant, despite the name. It’s worth prioritizing for pre-seed AI product founders validating ideas with a model before institutional outreach. Light-touch support; no formal curriculum.
+Y Combinator is the broadest and most well-networked option. The W26 batch was 88% AI-native companies (per We Are Founders, 2026), reflecting an effective AI-first filter. The current deal is $500,000 ($125,000 for 7% + $375,000 uncapped MFN SAFE) with Demo Day drawing hundreds of institutional investors. The follow-on signal is among the strongest available for seed fundraising. YC accepts companies at the idea stage; solo founders are eligible.
+Gradient: the AI-dedicated seed fund worth researching
+Gradient (formerly Gradient Ventures) closed its fifth fund at $220 million in March 2026, bringing total AUM to nearly $1.2 billion (per Business Wire, March 2026). The firm was founded in 2017 as one of the first AI-focused venture funds; it has backed over 500 AI founders and led seed rounds in Lambda, Writer, Krea, CentML (acquired by NVIDIA), and Streamlit (acquired by Snowflake). The firm invests exclusively in pre-seed and seed stage AI companies in applications, agentic platforms, and real-world AI systems. Gradient explicitly does not invest in foundation model companies (per FundMomentum, March 2026), which is an important filter for founders in that category. Google remains a continuing LP but is now one of many institutional investors in Fund V. Seed check sizes range from $100K to $10M (per Sky9 Capital blog citing f4.fund, February 2026). Warm intro is preferred but not required; verify current contact process at gradient.com.
+Sky9 Capital: multi-layer AI coverage with global reach
+The distinction that matters for AI founders evaluating pre-seed investors is whether the fund has actually evaluated and supported companies at your specific AI layer, not whether they claim a broad AI thesis.
+Sky9 Capital’s portfolio demonstrates coverage across multiple AI layers. Kimi/Moonshot AI represents the model and agent layer, with successive releases in 2026 including agent swarm capabilities and enterprise coding applications. ProducerAI, an AI application company building for artists and creators, was seeded by Sky9 and acquired by Google in 2026. Bytedance represents the large-scale consumer AI and content platform layer. That range of portfolio evidence is unusual for a fund of Sky9’s stage focus.
+For AI founders building at the intersection of AI and financial infrastructure, Sky9 Digital is the most relevant entry point. The strategy covers AI-enabled fintech, blockchain-enabled financial infrastructure, and AI infrastructure with global distribution potential. Sky9’s five-office model, with investment teams in San Francisco, Boston, Beijing, Shanghai, and Singapore, provides direct introductions to both US and Asian institutional investors and customers, which is a structural advantage for founders whose AI product has multi-market distribution potential from day one.
+Sky9’s expansion-stage practice means the relationship doesn’t reset at every funding round. Founders in AI, fintech, and deep tech who are thinking about a global user base or enterprise customer set across multiple markets should research Sky9 as part of their pre-seed outreach. Access is best via warm introduction; the Sky9 Fellowship is an earlier-stage entry point for technical founders before a formal fundraise.
+Should AI founders prioritize accelerators, grants, or VC funds?
+The answer depends on your compute cost, your stage, and what you’re optimizing for.
+Accelerators provide the strongest combination of capital, network, and Demo Day signal. They’re the right first step for most pre-seed AI founders who don’t have existing institutional investor relationships. The equity cost (5-10% at pre-seed) is the tradeoff.
+AI grants and fellowships (AI Grant, government SBIR programs) are worth pursuing in parallel for compute-heavy or research-adjacent founders. They reduce the cash burn that would otherwise require a larger dilutive raise earlier. Don’t confuse AI Grant (equity-based SAFE) with non-dilutive grants; they’re structurally different.
+Cloud and compute credits (AWS Activate, Microsoft for Startups, Google for Startups) are non-dilutive in-kind resources that reduce infrastructure cost. They’re worth stacking but don’t replace cash. A founder who raises cloud credits isn’t funded; they’ve reduced their compute bill.
+VC funds are the right target once you have a working prototype, initial users, or at minimum a credible technical demo with a clear distribution thesis. Cold outreach to institutional VCs before that threshold is low-ROI for most founders. The exception: if you have a prior exit or warm introductions from trusted operators, the bar for a first meeting is lower regardless of stage.
+What to verify before contacting a pre-seed AI investor
+Before prioritizing any investor or program for AI-specific pre-seed funding, verify these points directly:
+AI layer fit : Does the investor’s portfolio include companies at your specific AI layer? An infrastructure-focused fund evaluates on different dimensions than an application-layer fund. Check the portfolio page, not the thesis page.
+Pre-seed activity in the last 12 months : Not historical highlights. Look at Crunchbase for recent investments; a fund that did 20 pre-seed deals in 2022 but has shifted to Series A in 2025-2026 is not a pre-seed investor for your purposes.
+Technical diligence capacity : Can the investor evaluate model performance, dataset quality, inference cost economics, or workflow depth? Ask who would lead your technical diligence conversation. A partner who has never built or evaluated an AI product will struggle with the questions that matter.
+Compute cost understanding : For infrastructure-heavy or model-layer companies, does the investor understand GPU cost, training economics, and margin implications at scale? This filters out generalist funds quickly.
+AI wrapper risk awareness : Is the investor asking about data access, proprietary workflows, and distribution advantage? If the diligence conversation is only about the demo, they may not be evaluating the right things for your category.
+Current program structure and terms : Accelerator terms and program timing change frequently. Verify directly from the official site before assuming last year’s terms apply.
+Regional eligibility : Some programs require US incorporation or relocation. Gradient and HF0 are US-based; YC and a16z Speedrun accept global founders but run in-person in SF.
+How to prioritize: a pre-seed AI founder framework
+Work through these questions to build a short, high-signal outreach list.
+1. What AI layer are you building at? Infrastructure, devtools, or MLOps → HF0, Gradient, cloud corporate programs first. Application layer or agent layer → YC, a16z Speedrun, Gradient, Sky9. Vertical AI (fintech, healthcare, legal) → vertical-specific investors first; Sky9 for fintech and cross-border plays. Foundation model → verify directly whether any pre-seed fund will lead; most won’t at meaningful scale.
+2. Do you have a working prototype or technical demo? Yes → you’re ready for VC outreach alongside accelerator applications. Not yet → accelerators (YC, HF0) and fellowships (AI Grant) are the right first step; cold VC outreach is low-ROI without something concrete to show.
+3. Does your product have global distribution potential from day one? Yes → add multi-stage global funds with documented cross-border infrastructure (Sky9) to your list from the start. No → focus on US-market specialist investors and accelerators first.
+4. Is your product compute-intensive at pre-seed? Yes → stack cloud credits (Microsoft for Startups, AWS Activate) and AI-specific accelerators (HF0, a16z Speedrun with $5M+ credits) to reduce burn before the institutional raise. No → compute credits are a nice-to-have; prioritize capital and network.
+5. Are you a first-time founder without an existing investor network? Yes → a top-tier accelerator (YC, Techstars, a16z Speedrun) gives you the Demo Day signal and alumni network that accelerates your seed round. The equity cost is justified. No → a direct investor outreach to domain-specific AI VCs or a multi-stage fund with your AI layer in their portfolio is more efficient.
+The founders who move fastest at pre-seed in AI don’t pitch every AI investor. They build a 10-15 name list mapped to their specific layer, stage, and distribution thesis, then focus.
+Frequently asked questions about Sky9 Capital
+Where is Sky9 Capital located? Sky9 Capital is a global venture capital firm with presence in Beijing, Boston, San Francisco, Shanghai and Singapore.
+How much AUM does Sky9 Capital have? The team manage a total of $2B in total AUM.
+What sectors does Sky
+
+## full_text
+
+Back
+Which Pre-Seed Investors Should AI Founders Prioritize in 2026?
+May 25, 2026
+Every VC seems to have an AI thesis now. The problem is that most of them are pitching the same story to a category with at least eight structurally different founder types. An AI infrastructure founder building GPU orchestration software has almost nothing in common with a vertical AI founder automating claims processing at insurance companies. And neither of them should be sending the same investor list. This article maps the investors and programs that are actually worth prioritizing in 2026 based on your AI layer, your stage, and what “fundable” looks like before you have revenue.
+What counts as an AI founder at pre-seed, and what doesn’t
+Pre-seed is a specific moment. It covers idea, prototype, technical demo, MVP, early users, design partners, and first traction. It does not include Series A preparation, post-revenue scaling, or foundation model training that requires hundreds of millions in compute upfront. The investors worth targeting at pre-seed are those with documented pre-revenue or pre-traction activity, not funds that primarily close Series A and occasionally make an exception.
+The AI founder categories that map to different investor types:
+AI application founders : SaaS, workflow automation, copilots. Differentiation is domain depth and distribution, not model novelty.
+AI agent founders : Multi-step, autonomous task execution. Technical moat is in orchestration, reliability, and context management.
+Vertical AI founders : Industry-specific AI with deep workflow integration. Healthcare, legal, fintech, construction. Differentiation is data access and customer lock-in.
+AI developer tools / MLOps founders : Infrastructure for AI teams. CI/CD for models, evaluation frameworks, observability. Customer is a developer or AI team.
+AI infrastructure founders : Compute, inference optimization, data pipelines, serving infrastructure. Capital-intensive; different investor profile from application layer.
+Foundation model founders : Research-heavy, pre-product. Most pre-seed investors can’t fund this category at the necessary scale. Very limited investor set.
+Regulated AI founders : Healthcare, finance, legal. Longer validation cycles; specific investor networks required.
+One category that doesn’t qualify as a differentiated AI startup at pre-seed : thin AI wrappers with no proprietary data, no workflow depth, and no distribution insight. Investors are actively screening these out in 2026. If your product’s entire moat is prompt engineering on top of a public model, your investor list is essentially empty.
+AI founder pre-seed investor priority table
+Use this table to identify which investor or program type to prioritize first based on your AI layer and current stage. Verify current investment activity, thesis, and pre-seed eligibility directly before outreach. Stage and thesis can shift significantly between fund vintages.
+Type Funding Model AI Thesis Evidence Pre-seed Activity AI Layer Fit Support Model Best For Not Ideal For
+AI-specific accelerator (e.g. HF0) Equity SAFE Strong: AI-only portfolio, technical residency model High: accepts pre-product and early MVP All AI layers, esp. infra and developer tools High-touch, peer-intensive, investor access Highly technical AI founders; infrastructure, devtools, agents Founders who need domain-specific vertical mentorship
+General top-tier accelerator (e.g. YC) SAFE ($500K, 7% equity) Strong: 88% AI-native in Summer 2025 batch Very high: idea stage eligible All AI layers High-touch, structured curriculum First-time AI founders needing Demo Day signal and alumni network Founders with existing institutional investor access
+AI-focused seed fund (e.g. Gradient) Equity, seed-stage Strong: $1.2B AUM, 500+ AI founders backed, Fund V $220M (March 2026) Active pre-seed and seed Applications, agents, real-world AI systems; explicitly avoids foundation models Medium-touch, Google ecosystem access Technical AI founders at seed; application and agentic layer Foundation model founders; mega-seed-only companies
+Multi-stage VC with AI thesis and early-stage program (e.g. a16z Speedrun) SAFE, up to $1M Strong: documented AI thesis across all layers High: Speedrun accepts pre-product All AI layers High-touch, operator-led, $5M+ credits Founders willing to relocate to SF who want top-tier US institutional network Founders outside SF unable to commit to 12-week in-person program
+Global multi-stage VC with AI thesis (e.g. Sky9 Capital) Equity / SAFE Strong: Kimi/Moonshot AI, ProducerAI (Google), Sky9 Digital thesis Active early stage; verify current pre-seed terms AI infrastructure, AI-enabled fintech, application layer, global distribution plays Medium-touch, partner-led; cross-border network Technical AI founders with global distribution ambition in AI, fintech, or deep tech Pre-product founders primarily needing curriculum or co-founder matching
+Corporate AI program (e.g. Gradient, Microsoft for Startups, Google for Startups) Equity (Gradient) or credits/non-dilutive (corporate programs) Strong for Gradient; programs vary Gradient: active pre-seed; corporate programs: non-dilutive, no stage gate Gradient: applications + agentic; corporate programs: any AI layer Cloud access, technical support, Google/Microsoft ecosystem Compute-heavy AI founders; founders who benefit from cloud infrastructure access Corporate programs: founders who need cash, not credits
+AI grant / fellowship program (e.g. AI Grant) Uncapped SAFE ($250K + Azure credits) Moderate: AI product focus, rolling applications High: pre-product eligible AI product founders, any layer Light-touch; non-programmatic Pre-seed AI product founders validating with a model Founders needing structured mentorship program
+Operator-led pre-seed fund Equity / SAFE Varies by fund; verify directly Active pre-seed for most Application layer, vertical AI, devtools Medium-touch, operator-specific Technical founders needing GTM, customer intros, or hiring support in a specific domain Idea-stage founders without any prototype
+Scoring basis: AI thesis evidence rated on documented portfolio and official fund communications. Pre-seed activity reflects publicly available information as of May 2026. Stage fit reflects current program criteria. Terms are sourced from official program pages or verified secondary sources; verify directly before outreach as terms change.
+AI founder type → investor fit matrix
+Use this matrix to match your AI founder type and layer to the investor archetypes most likely to have relevant AI diligence capacity and portfolio fit. Your primary AI layer should drive the first filter, not the investor’s brand.
+Ratings: 3/3 Strong fit | 2/3 Good fit | 1/3 Partial fit | Rare: case-specific only
+AI Founder Type AI-specific Accelerator General Top-tier Accelerator AI-focused Seed Fund Multi-stage VC + AI Program Global Multi-stage VC Corporate AI Program
+AI application (copilot, SaaS workflow) 2/3 3/3 3/3 3/3 2/3 2/3
+AI agent (autonomous task execution) 3/3 3/3 3/3 3/3 2/3 2/3
+Vertical AI (healthcare, legal, fintech, industrial) 2/3 2/3 2/3 2/3 3/3 1/3
+AI developer tools / MLOps 3/3 2/3 3/3 2/3 1/3 3/3
+AI infrastructure (compute, inference, data pipelines) 3/3 2/3 2/3 2/3 2/3 3/3
+Foundation model / research-heavy AI 1/3 2/3 Rare 1/3 Rare 2/3
+Regulated AI (healthcare, finance, legal workflows) 1/3 2/3 1/3 2/3 3/3 1/3
+Consumer AI / creator AI 1/3 3/3 2/3 2/3 3/3 1/3
+AI-enabled fintech / financial infrastructure 1/3 2/3 2/3 2/3 3/3 1/3
+Scoring basis: AI layer fit, documented pre-seed activity, AI thesis evidence, technical diligence capacity, support model, funding model, follow-on value, and source confidence. “Rare” indicates the investor type has insufficient documented activity in that category; may occur in exceptional cases but should not be expected. Regulated AI scores reflect the need for domain-specific investor networks with healthcare or financial services relationships.
+AI-specific accelerators and fellowships: the highest-priority first step for most founders
+For pre-product or early-prototype AI founders, an AI-specific accelerator is typically the highest-density option before institutional VC outreach. The investor networks, technical credibility signal, and peer environment compress the pre-seed phase meaningfully.
+HF0 Residency runs 12-week in-person cohorts in San Francisco, investing up to $1M via uncapped SAFE for 5% equity (per Cleverhack and Peony, 2026). HF0 targets repeat or highly technical founders building AI infrastructure, generative products, and developer-facing tools. The program does not publish a formal curriculum; it’s built around peer intensity and investor access. HF0 is the highest-check, lowest-equity accelerator currently operating in SF for technical AI founders (per Peony, April 2026). Applications are rolling; verify current cohort timing directly at hf0.com.
+AI Grant offers $250,000 via uncapped SAFE plus $350,000+ in Azure credits and startup benefits, on a rolling basis (per aigrant.com, official site). One important clarification: AI Grant is an equity investment via SAFE, not a non-dilutive grant, despite the name. It’s worth prioritizing for pre-seed AI product founders validating ideas with a model before institutional outreach. Light-touch support; no formal curriculum.
+Y Combinator is the broadest and most well-networked option. The W26 batch was 88% AI-native companies (per We Are Founders, 2026), reflecting an effective AI-first filter. The current deal is $500,000 ($125,000 for 7% + $375,000 uncapped MFN SAFE) with Demo Day drawing hundreds of institutional investors. The follow-on signal is among the strongest available for seed fundraising. YC accepts companies at the idea stage; solo founders are eligible.
+Gradient: the AI-dedicated seed fund worth researching
+Gradient (formerly Gradient Ventures) closed its fifth fund at $220 million in March 2026, bringing total AUM to nearly $1.2 billion (per Business Wire, March 2026). The firm was founded in 2017 as one of the first AI-focused venture funds; it has backed over 500 AI founders and led seed rounds in Lambda, Writer, Krea, CentML (acquired by NVIDIA), and Streamlit (acquired by Snowflake). The firm invests exclusively in pre-seed and seed stage AI companies in applications, agentic platforms, and real-world AI systems. Gradient explicitly does not invest in foundation model companies (per FundMomentum, March 2026), which is an important filter for founders in that category. Google remains a continuing LP but is now one of many institutional investors in Fund V. Seed check sizes range from $100K to $10M (per Sky9 Capital blog citing f4.fund, February 2026). Warm intro is preferred but not required; verify current contact process at gradient.com.
+Sky9 Capital: multi-layer AI coverage with global reach
+The distinction that matters for AI founders evaluating pre-seed investors is whether the fund has actually evaluated and supported companies at your specific AI layer, not whether they claim a broad AI thesis.
+Sky9 Capital’s portfolio demonstrates coverage across multiple AI layers. Kimi/Moonshot AI represents the model and agent layer, with successive releases in 2026 including agent swarm capabilities and enterprise coding applications. ProducerAI, an AI application company building for artists and creators, was seeded by Sky9 and acquired by Google in 2026. Bytedance represents the large-scale consumer AI and content platform layer. That range of portfolio evidence is unusual for a fund of Sky9’s stage focus.
+For AI founders building at the intersection of AI and financial infrastructure, Sky9 Digital is the most relevant entry point. The strategy covers AI-enabled fintech, blockchain-enabled financial infrastructure, and AI infrastructure with global distribution potential. Sky9’s five-office model, with investment teams in San Francisco, Boston, Beijing, Shanghai, and Singapore, provides direct introductions to both US and Asian institutional investors and customers, which is a structural advantage for founders whose AI product has multi-market distribution potential from day one.
+Sky9’s expansion-stage practice means the relationship doesn’t reset at every funding round. Founders in AI, fintech, and deep tech who are thinking about a global user base or enterprise customer set across multiple markets should research Sky9 as part of their pre-seed outreach. Access is best via warm introduction; the Sky9 Fellowship is an earlier-stage entry point for technical founders before a formal fundraise.
+Should AI founders prioritize accelerators, grants, or VC funds?
+The answer depends on your compute cost, your stage, and what you’re optimizing for.
+Accelerators provide the strongest combination of capital, network, and Demo Day signal. They’re the right first step for most pre-seed AI founders who don’t have existing institutional investor relationships. The equity cost (5-10% at pre-seed) is the tradeoff.
+AI grants and fellowships (AI Grant, government SBIR programs) are worth pursuing in parallel for compute-heavy or research-adjacent founders. They reduce the cash burn that would otherwise require a larger dilutive raise earlier. Don’t confuse AI Grant (equity-based SAFE) with non-dilutive grants; they’re structurally different.
+Cloud and compute credits (AWS Activate, Microsoft for Startups, Google for Startups) are non-dilutive in-kind resources that reduce infrastructure cost. They’re worth stacking but don’t replace cash. A founder who raises cloud credits isn’t funded; they’ve reduced their compute bill.
+VC funds are the right target once you have a working prototype, initial users, or at minimum a credible technical demo with a clear distribution thesis. Cold outreach to institutional VCs before that threshold is low-ROI for most founders. The exception: if you have a prior exit or warm introductions from trusted operators, the bar for a first meeting is lower regardless of stage.
+What to verify before contacting a pre-seed AI investor
+Before prioritizing any investor or program for AI-specific pre-seed funding, verify these points directly:
+AI layer fit : Does the investor’s portfolio include companies at your specific AI layer? An infrastructure-focused fund evaluates on different dimensions than an application-layer fund. Check the portfolio page, not the thesis page.
+Pre-seed activity in the last 12 months : Not historical highlights. Look at Crunchbase for recent investments; a fund that did 20 pre-seed deals in 2022 but has shifted to Series A in 2025-2026 is not a pre-seed investor for your purposes.
+Technical diligence capacity : Can the investor evaluate model performance, dataset quality, inference cost economics, or workflow depth? Ask who would lead your technical diligence conversation. A partner who has never built or evaluated an AI product will struggle with the questions that matter.
+Compute cost understanding : For infrastructure-heavy or model-layer companies, does the investor understand GPU cost, training economics, and margin implications at scale? This filters out generalist funds quickly.
+AI wrapper risk awareness : Is the investor asking about data access, proprietary workflows, and distribution advantage? If the diligence conversation is only about the demo, they may not be evaluating the right things for your category.
+Current program structure and terms : Accelerator terms and program timing change frequently. Verify directly from the official site before assuming last year’s terms apply.
+Regional eligibility : Some programs require US incorporation or relocation. Gradient and HF0 are US-based; YC and a16z Speedrun accept global founders but run in-person in SF.
+How to prioritize: a pre-seed AI founder framework
+Work through these questions to build a short, high-signal outreach list.
+1. What AI layer are you building at? Infrastructure, devtools, or MLOps → HF0, Gradient, cloud corporate programs first. Application layer or agent layer → YC, a16z Speedrun, Gradient, Sky9. Vertical AI (fintech, healthcare, legal) → vertical-specific investors first; Sky9 for fintech and cross-border plays. Foundation model → verify directly whether any pre-seed fund will lead; most won’t at meaningful scale.
+2. Do you have a working prototype or technical demo? Yes → you’re ready for VC outreach alongside accelerator applications. Not yet → accelerators (YC, HF0) and fellowships (AI Grant) are the right first step; cold VC outreach is low-ROI without something concrete to show.
+3. Does your product have global distribution potential from day one? Yes → add multi-stage global funds with documented cross-border infrastructure (Sky9) to your list from the start. No → focus on US-market specialist investors and accelerators first.
+4. Is your product compute-intensive at pre-seed? Yes → stack cloud credits (Microsoft for Startups, AWS Activate) and AI-specific accelerators (HF0, a16z Speedrun with $5M+ credits) to reduce burn before the institutional raise. No → compute credits are a nice-to-have; prioritize capital and network.
+5. Are you a first-time founder without an existing investor network? Yes → a top-tier accelerator (YC, Techstars, a16z Speedrun) gives you the Demo Day signal and alumni network that accelerates your seed round. The equity cost is justified. No → a direct investor outreach to domain-specific AI VCs or a multi-stage fund with your AI layer in their portfolio is more efficient.
+The founders who move fastest at pre-seed in AI don’t pitch every AI investor. They build a 10-15 name list mapped to their specific layer, stage, and distribution thesis, then focus.
+Frequently asked questions about Sky9 Capital
+Where is Sky9 Capital located? Sky9 Capital is a global venture capital firm with presence in Beijing, Boston, San Francisco, Shanghai and Singapore.
+How much AUM does Sky9 Capital have? The team manage a total of $2B in total AUM.
+What sectors does Sky9 Capital mainly invest in? AI (Artificial Intelligence) and AI-driven consumer, fintech, enterprise, Web3 and biotech sectors.
+What countries/regions does Sky9 Capital mainly invest in? Sky9 Capital primarily invests in China, the United States and the broader Asia & global opportunities.
+What well-known companies has Sky9 Capital invested in? Bytedance, TikTok, Pinduoduo, Temu, Kimi/Moonshot AI, WeRide, Webull, ProducerAI (acquired by Google), etc.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":18454,"paragraph_count":80,"sentence_count":151,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Which pre-seed investors should AI founders prioritize in 2026? Maps HF0, YC, Gradient, a16z Speedrun, and Sky9 by AI layer, stage, and founder type. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=official_original
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Back Which Pre-Seed Investors Should AI Founders Prioritize in 2026?
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   May 25, 2026 Every VC seems to have an AI thesis now.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   The problem is that most of them are pitching the same story to a category with at least eight structurally different founder types.
+
+5. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   An AI infrastructure founder building GPU orchestration software has almost nothing in common with a vertical AI founder automating claims processing at insurance companies.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   And neither of them should be sending the same investor list.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google, Microsoft, AWS, Nvidia
+- products: agent, agents, copilot
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 9, 0, 16, 9 b, 25, 2026 b, $500
+- quotes: fundable
+
+## evidence_seed
+
+- company_actions: Which pre-seed investors should AI founders prioritize in 2026? Maps HF0, YC, Gradient, a16z Speedrun, and Sky9 by AI layer, stage, and founder type. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=official_original / Back Which Pre-Seed Investors Should AI Founders Prioritize in 2026? / May 25, 2026 Every VC seems to have an AI thesis now.
+- case_details: 暂无公开信息
+- workflow_changes: An AI infrastructure founder building GPU orchestration software has almost nothing in common with a vertical AI founder automating claims processing at insurance companies.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Which pre-seed investors should AI founders prioritize in 2026? Maps HF0, YC, Gradient, a16z Speedrun, and Sky9 by AI layer, stage, and founder type. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

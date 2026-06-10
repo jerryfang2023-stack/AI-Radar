@@ -1,0 +1,227 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-055
+title: "Claude Mythos 即将发布，Fable 精简版同日登场"
+original_url: "https://x.com/kimmonismus/status/2064362469632405807"
+canonical_url: "https://x.com/kimmonismus/status/2064362469632405807"
+source_name: "X：Kim (@kimmonismus)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-09T15:02:21.000Z"
+collected_at: 2026-06-10T02:25:37.566Z
+language: mixed
+full_text_hash: 5729eb3603468e9f
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-055-claude-mythos-即将发布-fable-精简版同日登场.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-055-claude-mythos-即将发布-fable-精简版同日登场.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 59
+extractor_diagnostics: {"readability_score":59,"text_length":2651,"paragraph_count":9,"sentence_count":3,"boilerplate_hits":2,"symbol_ratio":0.023,"method":"main"}
+has_full_text: true
+content_length: 2651
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5729eb3603468e9f","missing":[]}
+source_volatility: high
+community_name: "X：Kim (@kimmonismus)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude Mythos 即将发布，Fable 精简版同日登场","discovery_summary":"确认，Claude Mythos 将在接下来几小时内揭晓。 【引用 @steph_palazzolo】： 独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。 更多内容及 Apple WWDC 见 AI Agenda： https：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2064362469632405807","discovered_at":"2026-06-10T02:18:55.988Z","rank_on_page":295,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 82bdc26491e8e6b1
+content_hash: 5729eb3603468e9f
+semantic_hash: 84f9f762a5a21044
+duplicate_of: ""
+first_seen_at: "2026-06-09T15:02:21.000Z"
+last_seen_at: 2026-06-10T02:25:37.566Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","Kim (@kimmonismus)","Apple"],"products":["Claude"],"people":[],"industries":[],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全"],"numbers":["5 倍","11","2x","5x","3","02","9","2026"],"quotes":[]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Chubby♨️ @kimmonismus Confirmed, Claude Mythos will be unveiled in the next few hours Stephanie Palazzolo @steph_palazzolo 11h Scoop: A neutered version of Mythos called Claude Fable is coming today.","More on that and Apple WWDC in AI Agenda: theinformation.","com/newsletters/ai… 3:02 PM · Jun 9, 2026 280."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"确认，Claude Mythos 将在接下来几小时内揭晓。 【引用 @steph_palazzolo】： 独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。 更多内容及 Apple WWDC 见 AI Agenda： https：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Chubby♨️ @kimmonismus Confirmed, Claude Mythos will be unveiled in the next few hours Stephanie Palazzolo @steph_palazzolo 11h Scoop: A neutered version of Mythos called Claude Fable is coming today.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"It's expensive—2x the price of Opus—but perhaps not as pricey as people might have thought from the initial Mythos pricing (5x Opus).","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"More on that and Apple WWDC in AI Agenda: theinformation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/newsletters/ai… 3:02 PM · Jun 9, 2026 280.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"9K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Claude Mythos 即将发布，Fable 精简版同日登场
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+Confirmed, Claude Mythos will be unveiled in the next few hours
+Stephanie Palazzolo
+@steph_palazzolo
+11h
+Scoop: A neutered version of Mythos called Claude Fable is coming today. It's expensive—2x the price of Opus—but perhaps not as pricey as people might have thought from the initial Mythos pricing (5x Opus).
+More on that and Apple WWDC in AI Agenda:
+theinformation.com/newsletters/ai…
+3:02 PM · Jun 9, 2026 280.9K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 34
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 61
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 . 1 K number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1.1K
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 111
+Read 34 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+Confirmed, Claude Mythos will be unveiled in the next few hours
+Stephanie Palazzolo
+@steph_palazzolo
+11h
+Scoop: A neutered version of Mythos called Claude Fable is coming today. It's expensive—2x the price of Opus—but perhaps not as pricey as people might have thought from the initial Mythos pricing (5x Opus).
+More on that and Apple WWDC in AI Agenda:
+theinformation.com/newsletters/ai…
+3:02 PM · Jun 9, 2026 280.9K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 34
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 61
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 . 1 K number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1.1K
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 111
+Read 34 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 59
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":59,"text_length":2651,"paragraph_count":9,"sentence_count":3,"boilerplate_hits":2,"symbol_ratio":0.023,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   确认，Claude Mythos 将在接下来几小时内揭晓。 【引用 @steph_palazzolo】： 独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。 更多内容及 Apple WWDC 见 AI Agenda： https：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post Chubby♨️ @kimmonismus Confirmed, Claude Mythos will be unveiled in the next few hours Stephanie Palazzolo @steph_palazzolo 11h Scoop: A neutered version of Mythos called Claude Fable is coming today.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   It's expensive—2x the price of Opus—but perhaps not as pricey as people might have thought from the initial Mythos pricing (5x Opus).
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   More on that and Apple WWDC in AI Agenda: theinformation.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   com/newsletters/ai… 3:02 PM · Jun 9, 2026 280.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   9K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
+
+## business_elements
+
+- companies: X, Kim (@kimmonismus), Apple
+- products: Claude
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全
+- numbers: 5 倍, 11, 2x, 5x, 3, 02, 9, 2026
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Chubby♨️ @kimmonismus Confirmed, Claude Mythos will be unveiled in the next few hours Stephanie Palazzolo @steph_palazzolo 11h Scoop: A neutered version of Mythos called Claude Fable is coming today. / More on that and Apple WWDC in AI Agenda: theinformation. / com/newsletters/ai… 3:02 PM · Jun 9, 2026 280.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Kim (@kimmonismus)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude Mythos 即将发布，Fable 精简版同日登场","discovery_summary":"确认，Claude Mythos 将在接下来几小时内揭晓。 【引用 @steph_palazzolo】： 独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。 更多内容及 Apple WWDC 见 AI Agenda： https：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2064362469632405807","discovered_at":"2026-06-10T02:18:55.988Z","rank_on_page":295,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+确认，Claude Mythos 将在接下来几小时内揭晓。 【引用 @steph_palazzolo】： 独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。 更多内容及 Apple WWDC 见 AI Agenda： https：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
