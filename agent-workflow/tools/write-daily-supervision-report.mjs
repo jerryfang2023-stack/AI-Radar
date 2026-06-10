@@ -371,6 +371,7 @@ function buildCommunityLane() {
   const data = readJson(dataFile, {});
   const generatedDate = shanghaiDate(data?.meta?.generatedAt || "");
   const task = scheduledTaskState("WaveSight Community Intelligence Daily");
+  const gh = githubWorkflowState("daily-community-intelligence-pr.yml", `automation/community-intelligence-${date}`);
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
   evidence.generatedDate = generatedDate;
@@ -381,6 +382,7 @@ function buildCommunityLane() {
   evidence.gateStatus = statusFromGate(gateFile);
   evidence.gateReport = exists(gateFile) ? rel(gateFile) : "missing";
   evidence.scheduledTask = task;
+  evidence.github = gh;
 
   if (!exists(dataFile)) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
   if (generatedDate !== date) addProblem(problems, `community data date is ${generatedDate || "missing"}, expected ${date}`);
@@ -404,6 +406,21 @@ function buildCommunityLane() {
     warnings.push(task.warning || "scheduled task state unavailable");
   }
 
+  if (gh.available) {
+    if (!gh.latest_run && hasWindowPassed(date, "08:55")) {
+      addProblem(problems, "no same-date Community Intelligence publish workflow after 08:55 watchdog", "manual_required");
+      actions.push("manual dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass");
+    } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
+      addProblem(problems, `Community Intelligence publish workflow is ${gh.latest_run.status}`, "manual_required");
+      actions.push("wait for Community Intelligence publish workflow completion");
+    } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
+      addProblem(problems, `Community Intelligence publish workflow conclusion is ${gh.latest_run.conclusion}`);
+    }
+    if (gh.pr_warning) warnings.push(gh.pr_warning);
+  } else if (isTodayOrPast(date)) {
+    warnings.push(gh.warning || "GitHub workflow state unavailable");
+  }
+
   if (hasWindowPassed(date, "08:45") && generatedDate !== date) {
     actions.push("rerun `agent-workflow/tools/run-community-intelligence.ps1` locally");
   }
@@ -414,7 +431,7 @@ function buildCommunityLane() {
   return {
     id: "community_intelligence",
     label: "Community Intelligence",
-    schedule: "08:30 Asia/Shanghai local task; watchdog 08:45",
+    schedule: "08:30 local task; watchdog 08:45; publish watchdog 08:55",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
