@@ -465,6 +465,11 @@ function subjectFromUrl(url = "") {
     if (host === "huggingface.co" && pathname.includes("coherelabs/introducing-north-mini-code")) return "Cohere / North Mini Code";
     if (host === "arstechnica.com" && pathname.includes("gemini-3-5-live-translate")) return "Google Gemini Live Translate";
     if (host === "techcrunch.com" && pathname.includes("token-bill")) return "AI token costs";
+    if (host === "docs.aws.amazon.com" && pathname.includes("sagemaker-marketplace")) return "Amazon SageMaker";
+    if (host === "businesswire.com" && pathname.includes("digitalocean-launches-inference-engine")) return "DigitalOcean";
+    if (host === "linkedin.com" && pathname.includes("pascaldarc")) return "Procurement AI";
+    if (host === "ithome.com" && pathname.includes("962/220")) return "香港 AI 应用示范社区";
+    if (host === "huggingface.co" && pathname.includes("servicenow-ai/code-switching")) return "Hugging Face / ServiceNow";
   } catch {
     // Fall through to title-based detection.
   }
@@ -576,6 +581,87 @@ function hasCjk(value = "") {
   return /[\u4e00-\u9fff]/u.test(String(value || ""));
 }
 
+function subjectFromEnglishTitle(title = "") {
+  const clean = cleanSubject(title);
+  if (!clean) return "";
+  const launchMatch = clean.match(/^([A-Z][A-Za-z0-9 .&/-]{1,42}?)\s+(?:Launches|Introduces|Releases|Announces|Raises|Secures|Lands)\b/u);
+  if (launchMatch) return launchMatch[1].trim();
+  const insideMatch = clean.match(/^Inside\s+([A-Z][A-Za-z0-9 .&/-]{2,36}?)(?:'|’|\b)/u);
+  if (insideMatch) return insideMatch[1].trim();
+  const dashMatch = clean.match(/[—-]\s*([A-Z][A-Za-z0-9 .&/-]{2,28})$/u);
+  if (dashMatch) return dashMatch[1].trim();
+  if (/token bill|runaway costs/iu.test(clean)) return "AI token costs";
+  if (/Voice AI Adoption Report/iu.test(clean)) return "Voice AI";
+  if (/Using AI for Software Development with VSCode and GitHub/iu.test(clean)) return "VSCode / GitHub";
+  if (/Creatify Agent Wave/iu.test(clean)) return "Creatify";
+  if (/Procurement AI/iu.test(clean)) return "Procurement AI";
+  return "";
+}
+
+function fallbackChineseTitleForEnglish(title = "", sourceUrl = "") {
+  const text = String(title || "").replace(/\s+/gu, " ").trim();
+  if (!text) return "";
+  const subject = subjectFromUrl(sourceUrl) || subjectFromEnglishTitle(text) || domain(sourceUrl).split(".")[0] || "AI";
+  if (/\b(raises|raised|lands|landed|secures|secured|funding|series|seed)\b/iu.test(text)) return `${subject} 融资：${text}`;
+  if (/\b(launches|launch|introduces|introduced|releases|released|announces|announced|general availability)\b/iu.test(text)) return `${subject} 发布：${text}`;
+  if (/\b(procurement|customer|adoption|case study|workflow|overhaul)\b/iu.test(text)) return `${subject} 案例：${text}`;
+  if (/\b(report|benchmark|market|adoption)\b/iu.test(text)) return `${subject} 报告：${text}`;
+  return `${subject} 信号：${text}`;
+}
+
+function subjectMatchesDisplayTitle(subject = "", title = "", originalTitle = "") {
+  const normalizedSubject = normalizedComparableText(subject);
+  if (!normalizedSubject) return false;
+  return [title, originalTitle]
+    .map(normalizedComparableText)
+    .filter(Boolean)
+    .some((candidate) => candidate === normalizedSubject || (normalizedSubject.length > 14 && candidate.includes(normalizedSubject)));
+}
+
+function safeFrontstageSubject({ subject = "", sourceUrl = "", sourceName = "", rawTitle = "", title = "", originalTitle = "" } = {}) {
+  const candidates = [
+    frontstageSubjectOverride(sourceUrl, title || rawTitle || originalTitle),
+    subjectFromUrl(sourceUrl),
+    subjectFromEnglishTitle(rawTitle || originalTitle || title),
+    subject,
+    subjectFromTitle(title),
+    subjectFromTitle(rawTitle || originalTitle),
+    sourceName,
+  ];
+  for (const candidate of candidates) {
+    const normalized = normalizeSubject(candidate);
+    if (!normalized || isWeakSubject(normalized)) continue;
+    if (subjectLooksLikeTitle(normalized)) continue;
+    if (subjectMatchesDisplayTitle(normalized, title, originalTitle || rawTitle)) continue;
+    return normalized;
+  }
+  const host = domain(sourceUrl).split(".")[0];
+  return host && !isWeakSubject(host) ? normalizeSubject(host) : "AI business signal";
+}
+
+function safeFrontstageTitle(title = "", sourceUrl = "") {
+  const translated = frontstageChineseTitle(title, sourceUrl) || title;
+  return hasCjk(translated) ? translated : fallbackChineseTitleForEnglish(translated, sourceUrl);
+}
+
+function normalizeFrontstageDisplay(card = {}) {
+  const title = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
+  const originalTitle = card.originalTitle || (title !== card.title ? card.title : "");
+  return {
+    ...card,
+    title,
+    originalTitle,
+    subject: safeFrontstageSubject({
+      subject: card.subject,
+      sourceUrl: card.sourceUrl,
+      sourceName: card.sourceName,
+      rawTitle: card.originalTitle,
+      title,
+      originalTitle,
+    }),
+  };
+}
+
 function translateEnglishTitle(title = "", sourceUrl = "") {
   const text = String(title || "").trim();
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
@@ -626,7 +712,7 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
   ];
   const titleMatch = byTitle.find(([pattern]) => pattern.test(text));
   if (titleMatch) return titleMatch[1];
-  return text;
+  return fallbackChineseTitleForEnglish(text, sourceUrl);
 }
 
 function chineseFactFromSource(title = "", sourceUrl = "") {
@@ -2621,13 +2707,14 @@ const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence))
+  .map(normalizeFrontstageDisplay)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 3, 1);
 const frontstageCards = frontstageSelection.cards;
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
-const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate);
+const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate).map(normalizeFrontstageDisplay);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
