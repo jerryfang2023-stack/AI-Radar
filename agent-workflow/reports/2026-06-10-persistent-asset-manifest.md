@@ -1,16 +1,16 @@
 # 2026-06-10 Business Signals Asset Manifest
 
-- generated_at: 2026-06-10T10:25:38+08:00
+- generated_at: 2026-06-10T12:09:50+08:00
 - workflow_mode: business_signals_pr
-- monitor: failure
-- monitor_readiness: failure
-- raw_pool_gate: failure
-- asset_generation: skipped
-- pool_to_card_dedupe_gate: skipped
-- site_data_sync: skipped
-- source_first_frontstage_gate: skipped
-- frontstage_regression_gate: skipped
-- pre_commit_gate: skipped
+- monitor: success
+- monitor_readiness: success
+- raw_pool_gate: success
+- asset_generation: success
+- pool_to_card_dedupe_gate: success
+- site_data_sync: success
+- source_first_frontstage_gate: success
+- frontstage_regression_gate: success
+- pre_commit_gate: success
 
 ## Persisted Asset State
 
@@ -19,8 +19,8 @@
 | Raw candidates | present |
 | Raw originals | present |
 | Pool candidates | present |
-| Business signals | missing |
-| Signal card files | 0 |
+| Business signals | present |
+| Signal card files | 14 |
 | Site content data | present |
 | V3 data observation desk data | present |
 | Intelligence graph index | present |

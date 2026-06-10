@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-09T18:57:25.000Z"
-collected_at: 2026-06-10T02:25:37.410Z
+collected_at: 2026-06-10T04:09:42.330Z
 language: mixed
-full_text_hash: 527f386a2642d5b1
+full_text_hash: c4bdb6637682194b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-004-google-发布-gemini-3-5-live-translate-实现即时语音到语音翻译.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-004-google-发布-gemini-3-5-live-translate-实现即时语音到语音翻译.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"527f386a2642d5b1","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c4bdb6637682194b","missing":[]}
 source_volatility: medium
 community_name: ""
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译","discovery_summary":"Gemini 3.5 Live Translate 提供即时语音到语音翻译，能够保留说话者的语调、节奏和音高，并通过 SynthID 水印确保安全性。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation","discovered_at":"2026-06-10T02:18:55.964Z","rank_on_page":163,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译","discovery_summary":"Gemini 3.5 Live Translate 提供即时语音到语音翻译，能够保留说话者的语调、节奏和音高，并通过 SynthID 水印确保安全性。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation","discovered_at":"2026-06-10T04:01:59.477Z","rank_on_page":186,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: merged_provider_duplicates
 url_hash: 4a4a6ceefd55b3e3
-content_hash: 527f386a2642d5b1
+content_hash: c4bdb6637682194b
 semantic_hash: 7fe128988c39e255
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-09T18:57:25.000Z"
-last_seen_at: 2026-06-10T02:25:37.410Z
+last_seen_at: 2026-06-10T04:09:42.330Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -65,7 +65,7 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
-business_elements: {"companies":["Ars Technica","AI（RSS）","Google","Microsoft"],"products":["Gemini"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["3.5","70","3.5 m","20","33","1","2027","2"],"quotes":["pioneering machine learning experiments.","listening mode"]}
+business_elements: {"companies":["Ars Technica","AI（RSS）","Google","Microsoft"],"products":["Gemini"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["3.5","70","3.5 m","20","34","1","2027","2"],"quotes":["pioneering machine learning experiments.","listening mode"]}
 evidence_seed: {"company_actions":["” We’ve seen numerous demos on stage at Google events in the past, but you needed Google phones, earbuds, or some other specific setup.","Last year, Google brought real-time translation to more users in the Translate app, and now it’s expanding availability more.","With the release of Gemini 3."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["Gemini 3.5 Live Translate 提供即时语音到语音翻译，能够保留说话者的语调、节奏和音高，并通过 SynthID 水印确保安全性。"]}
 missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"supporting_context","text":"Gemini 3.5 Live Translate 提供即时语音到语音翻译，能够保留说话者的语调、节奏和音高，并通过 SynthID 水印确保安全性。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Google has been chasing real-time translation for years, which it says has been one of its “pioneering machine learning experiments.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"” We’ve seen numerous demos on stage at Google events in the past, but you needed Google phones, earbuds, or some other specific setup.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Last year, Google brought real-time translation to more users in the Translate app, and now it’s expanding availability more.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"With the release of Gemini 3.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5 Live Translate, you’ll have access to instant translation in more places and with lower latency than ever before.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
@@ -111,7 +111,7 @@ Senior Technology Reporter
 Ryan Whitwam
 Senior Technology Reporter
 Ryan Whitwam is a senior technology reporter at Ars Technica, covering the ways Google, AI, and mobile technology continue to change the world. Over his 20-year career, he's written for Android Police, ExtremeTech, Wirecutter, NY Times, and more. He has reviewed more phones than most people will ever own. You can follow him on Bluesky , where you will see photos of his dozens of mechanical keyboards.
-33 Comments
+34 Comments
 Comments
 Forum view
 Loading comments...
@@ -124,9 +124,9 @@ For the 2nd time in weeks, Microsoft packages laced with credential stealer
 3.
 Tests suggest Russian satellites can jam GPS on a continental scale
 4.
-A Falcon 9 booster turns 5 years old—and just set a remarkable reuse record
-5.
 High-severity vulnerability in Linux caused by a single faulty character
+5.
+A Falcon 9 booster turns 5 years old—and just set a remarkable reuse record
 Customize
 
 ## full_text
@@ -164,7 +164,7 @@ Senior Technology Reporter
 Ryan Whitwam
 Senior Technology Reporter
 Ryan Whitwam is a senior technology reporter at Ars Technica, covering the ways Google, AI, and mobile technology continue to change the world. Over his 20-year career, he's written for Android Police, ExtremeTech, Wirecutter, NY Times, and more. He has reviewed more phones than most people will ever own. You can follow him on Bluesky , where you will see photos of his dozens of mechanical keyboards.
-33 Comments
+34 Comments
 Comments
 Forum view
 Loading comments...
@@ -177,9 +177,9 @@ For the 2nd time in weeks, Microsoft packages laced with credential stealer
 3.
 Tests suggest Russian satellites can jam GPS on a continental scale
 4.
-A Falcon 9 booster turns 5 years old—and just set a remarkable reuse record
-5.
 High-severity vulnerability in Linux caused by a single faulty character
+5.
+A Falcon 9 booster turns 5 years old—and just set a remarkable reuse record
 Customize
 
 ## extraction_diagnostics
@@ -224,7 +224,7 @@ Customize
 - workflows: 合同审阅 / 法律研究, 权限 / 安全治理
 - business_actions: 发布 / 推出
 - affected_departments: IT / 安全
-- numbers: 3.5, 70, 3.5 m, 20, 33, 1, 2027, 2
+- numbers: 3.5, 70, 3.5 m, 20, 34, 1, 2027, 2
 - quotes: pioneering machine learning experiments. / listening mode
 
 ## evidence_seed
@@ -280,7 +280,7 @@ Customize
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译","discovery_summary":"Gemini 3.5 Live Translate 提供即时语音到语音翻译，能够保留说话者的语调、节奏和音高，并通过 SynthID 水印确保安全性。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation","discovered_at":"2026-06-10T02:18:55.964Z","rank_on_page":163,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译","discovery_summary":"Gemini 3.5 Live Translate 提供即时语音到语音翻译，能够保留说话者的语调、节奏和音高，并通过 SynthID 水印确保安全性。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation","discovered_at":"2026-06-10T04:01:59.477Z","rank_on_page":186,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

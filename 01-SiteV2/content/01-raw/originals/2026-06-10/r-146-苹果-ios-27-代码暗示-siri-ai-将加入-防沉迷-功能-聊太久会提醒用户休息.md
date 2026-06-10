@@ -1,0 +1,214 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-146
+title: "苹果 iOS 27 代码暗示：Siri AI 将加入\"防沉迷\"功能，聊太久会提醒用户休息"
+original_url: "https://www.ithome.com/0/962/212.htm"
+canonical_url: "https://ithome.com/0/962/212.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-10T01:58:57.000Z"
+collected_at: 2026-06-10T04:09:42.722Z
+language: mixed
+full_text_hash: 8563cc206eef2aaf
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-146-苹果-ios-27-代码暗示-siri-ai-将加入-防沉迷-功能-聊太久会提醒用户休息.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-146-苹果-ios-27-代码暗示-siri-ai-将加入-防沉迷-功能-聊太久会提醒用户休息.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 53
+extractor_diagnostics: {"readability_score":53,"text_length":818,"paragraph_count":10,"sentence_count":10,"boilerplate_hits":2,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 818
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8563cc206eef2aaf","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"苹果 iOS 27 代码暗示：Siri AI 将加入\"防沉迷\"功能，聊太久会提醒用户休息","discovery_summary":"苹果 iOS 27 系统代码中出现名为\"休息提示语\"的文本，暗示 Siri AI 在长时间对话后可能向用户弹出休息提醒，并告知用户 Siri 并非真人。目前尚未设定固定的提醒触发时长，苹果或结合时长及其他条件综合判断。该功能仅存在于系统代码中，苹果未正式确认也未上线。类似机制已在 ChatGPT（对话过久时建议休息）和 Claude（提醒用户歇一歇、喝水）中启用。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/962/212.htm","discovered_at":"2026-06-10T04:01:59.449Z","rank_on_page":47,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 4fc913bdbfdc15f0
+content_hash: 8563cc206eef2aaf
+semantic_hash: 546cec07595a8c2b
+duplicate_of: ""
+first_seen_at: "2026-06-10T01:58:57.000Z"
+last_seen_at: 2026-06-10T04:09:42.722Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":["ChatGPT","Claude"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["27","6","10","26"],"quotes":["功能，聊太久会提醒用户休息\n苹果 iOS 27 系统代码中出现名为","聊天机器人妄想症"]}
+evidence_seed: {"company_actions":["苹果 iOS 27 系统代码中出现名为\"休息提示语\"的文本，暗示 Siri AI 在长时间对话后可能向用户弹出休息提醒，并告知用户 Siri 并非真人。目前尚未设定固定的提醒触发时长，苹果或结合时长及其他条件综合判断。该功能仅存在于系统代码中，苹果未正式确认也未上线。类似机制已在 ChatGPT（对话过久时建议休息）和 Claude（提醒用户歇一歇、喝水）中启用。","IT之家 6 月 10 日消息，iOS 27 的代码中出现了休息提醒相关内容，这意味着 Siri 在进行长时间对话后，可能会向用户弹出休息提示。","如今对话式聊天机器人引发的担忧日益增多：部分用户会对其产生过度依赖，或是长时间与其交谈，仿佛对方是真人一般。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["为此，OpenAI、Anthropic 和谷歌等企业纷纷增设安全机制，提醒用户人工智能陪伴工具存在局限性，并倡导健康的使用方式。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"苹果 iOS 27 系统代码中出现名为\"休息提示语\"的文本，暗示 Siri AI 在长时间对话后可能向用户弹出休息提醒，并告知用户 Siri 并非真人。目前尚未设定固定的提醒触发时长，苹果或结合时长及其他条件综合判断。该功能仅存在于系统代码中，苹果未正式确认也未上线。类似机制已在 ChatGPT（对话过久时建议休息）和 Claude（提醒用户歇一歇、喝水）中启用。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 6 月 10 日消息，iOS 27 的代码中出现了休息提醒相关内容，这意味着 Siri 在进行长时间对话后，可能会向用户弹出休息提示。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"如今对话式聊天机器人引发的担忧日益增多：部分用户会对其产生过度依赖，或是长时间与其交谈，仿佛对方是真人一般。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"有相关报道提及极端案例，出现了所谓的“人工智能妄想症”或“聊天机器人妄想症”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"用户在长时间和聊天机器人互动后，会产生妄想症状，原本存在的心理问题也进一步加重。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"为此，OpenAI、Anthropic 和谷歌等企业纷纷增设安全机制，提醒用户人工智能陪伴工具存在局限性，并倡导健康的使用方式。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 苹果 iOS 27 代码暗示：Siri AI 将加入"防沉迷"功能，聊太久会提醒用户休息
+
+## clean_text
+
+IT之家 6 月 10 日消息，iOS 27 的代码中出现了休息提醒相关内容，这意味着 Siri 在进行长时间对话后，可能会向用户弹出休息提示。
+如今对话式聊天机器人引发的担忧日益增多：部分用户会对其产生过度依赖，或是长时间与其交谈，仿佛对方是真人一般。
+有相关报道提及极端案例，出现了所谓的“人工智能妄想症”或“聊天机器人妄想症”。用户在长时间和聊天机器人互动后，会产生妄想症状，原本存在的心理问题也进一步加重。
+为此，OpenAI、Anthropic 和谷歌等企业纷纷增设安全机制，提醒用户人工智能陪伴工具存在局限性，并倡导健康的使用方式。
+例如，ChatGPT 如今在对话时长过久时会弹出提示，建议用户休息。而 Claude 在用户长时间使用后，也会提醒用户歇一歇、喝点水或是暂时放下设备。
+IT之家注意到，在本周的苹果全球开发者大会主旨演讲中，苹果谈及了研发 Siri AI 过程中，涉及的多项隐私与使用责任问题。但对于对话时间过长这一情况，苹果并未作出说明。
+社交平台用户艾伦 · 佩里斯发现，iOS 27 代码里存在一段名为“休息提示语”的文本代码，这表明 Siri AI 大概率会在长时间对话后推送休息提醒，同时还会告知用户：Siri 并非真人。
+根据佩里斯分享的代码内容来看，目前并未设定固定的提醒触发时长。苹果或许会结合时长及其他综合判定条件来决定是否弹出提示，也就是说，触发限制并不仅仅取决于对话时长，还会受其他因素影响。
+苹果尚未正式确认这项功能，也未说明其具体运作方式，该功能目前也并未上线。现阶段，相关内容仅存在于系统代码当中。即便如此，这些代码文本也足以说明，苹果清楚推出人工智能聊天产品，就必须承担相应的社会责任。
+苹果 WWDC26 全球开发者大会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 10 日消息，iOS 27 的代码中出现了休息提醒相关内容，这意味着 Siri 在进行长时间对话后，可能会向用户弹出休息提示。
+如今对话式聊天机器人引发的担忧日益增多：部分用户会对其产生过度依赖，或是长时间与其交谈，仿佛对方是真人一般。
+有相关报道提及极端案例，出现了所谓的“人工智能妄想症”或“聊天机器人妄想症”。用户在长时间和聊天机器人互动后，会产生妄想症状，原本存在的心理问题也进一步加重。
+为此，OpenAI、Anthropic 和谷歌等企业纷纷增设安全机制，提醒用户人工智能陪伴工具存在局限性，并倡导健康的使用方式。
+例如，ChatGPT 如今在对话时长过久时会弹出提示，建议用户休息。而 Claude 在用户长时间使用后，也会提醒用户歇一歇、喝点水或是暂时放下设备。
+IT之家注意到，在本周的苹果全球开发者大会主旨演讲中，苹果谈及了研发 Siri AI 过程中，涉及的多项隐私与使用责任问题。但对于对话时间过长这一情况，苹果并未作出说明。
+社交平台用户艾伦 · 佩里斯发现，iOS 27 代码里存在一段名为“休息提示语”的文本代码，这表明 Siri AI 大概率会在长时间对话后推送休息提醒，同时还会告知用户：Siri 并非真人。
+根据佩里斯分享的代码内容来看，目前并未设定固定的提醒触发时长。苹果或许会结合时长及其他综合判定条件来决定是否弹出提示，也就是说，触发限制并不仅仅取决于对话时长，还会受其他因素影响。
+苹果尚未正式确认这项功能，也未说明其具体运作方式，该功能目前也并未上线。现阶段，相关内容仅存在于系统代码当中。即便如此，这些代码文本也足以说明，苹果清楚推出人工智能聊天产品，就必须承担相应的社会责任。
+苹果 WWDC26 全球开发者大会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 53
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":53,"text_length":818,"paragraph_count":10,"sentence_count":10,"boilerplate_hits":2,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   苹果 iOS 27 系统代码中出现名为"休息提示语"的文本，暗示 Siri AI 在长时间对话后可能向用户弹出休息提醒，并告知用户 Siri 并非真人。目前尚未设定固定的提醒触发时长，苹果或结合时长及其他条件综合判断。该功能仅存在于系统代码中，苹果未正式确认也未上线。类似机制已在 ChatGPT（对话过久时建议休息）和 Claude（提醒用户歇一歇、喝水）中启用。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家 6 月 10 日消息，iOS 27 的代码中出现了休息提醒相关内容，这意味着 Siri 在进行长时间对话后，可能会向用户弹出休息提示。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   如今对话式聊天机器人引发的担忧日益增多：部分用户会对其产生过度依赖，或是长时间与其交谈，仿佛对方是真人一般。
+
+4. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   有相关报道提及极端案例，出现了所谓的“人工智能妄想症”或“聊天机器人妄想症”。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   用户在长时间和聊天机器人互动后，会产生妄想症状，原本存在的心理问题也进一步加重。
+
+6. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   为此，OpenAI、Anthropic 和谷歌等企业纷纷增设安全机制，提醒用户人工智能陪伴工具存在局限性，并倡导健康的使用方式。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic
+- products: ChatGPT, Claude
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 27, 6, 10, 26
+- quotes: 功能，聊太久会提醒用户休息
+苹果 iOS 27 系统代码中出现名为 / 聊天机器人妄想症
+
+## evidence_seed
+
+- company_actions: 苹果 iOS 27 系统代码中出现名为"休息提示语"的文本，暗示 Siri AI 在长时间对话后可能向用户弹出休息提醒，并告知用户 Siri 并非真人。目前尚未设定固定的提醒触发时长，苹果或结合时长及其他条件综合判断。该功能仅存在于系统代码中，苹果未正式确认也未上线。类似机制已在 ChatGPT（对话过久时建议休息）和 Claude（提醒用户歇一歇、喝水）中启用。 / IT之家 6 月 10 日消息，iOS 27 的代码中出现了休息提醒相关内容，这意味着 Siri 在进行长时间对话后，可能会向用户弹出休息提示。 / 如今对话式聊天机器人引发的担忧日益增多：部分用户会对其产生过度依赖，或是长时间与其交谈，仿佛对方是真人一般。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 为此，OpenAI、Anthropic 和谷歌等企业纷纷增设安全机制，提醒用户人工智能陪伴工具存在局限性，并倡导健康的使用方式。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"苹果 iOS 27 代码暗示：Siri AI 将加入\"防沉迷\"功能，聊太久会提醒用户休息","discovery_summary":"苹果 iOS 27 系统代码中出现名为\"休息提示语\"的文本，暗示 Siri AI 在长时间对话后可能向用户弹出休息提醒，并告知用户 Siri 并非真人。目前尚未设定固定的提醒触发时长，苹果或结合时长及其他条件综合判断。该功能仅存在于系统代码中，苹果未正式确认也未上线。类似机制已在 ChatGPT（对话过久时建议休息）和 Claude（提醒用户歇一歇、喝水）中启用。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/962/212.htm","discovered_at":"2026-06-10T04:01:59.449Z","rank_on_page":47,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+苹果 iOS 27 系统代码中出现名为"休息提示语"的文本，暗示 Siri AI 在长时间对话后可能向用户弹出休息提醒，并告知用户 Siri 并非真人。目前尚未设定固定的提醒触发时长，苹果或结合时长及其他条件综合判断。该功能仅存在于系统代码中，苹果未正式确认也未上线。类似机制已在 ChatGPT（对话过久时建议休息）和 Claude（提醒用户歇一歇、喝水）中启用。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

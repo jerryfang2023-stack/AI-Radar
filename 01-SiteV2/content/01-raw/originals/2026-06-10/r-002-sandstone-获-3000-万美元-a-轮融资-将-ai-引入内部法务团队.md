@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-09T13:47:25.000Z"
-collected_at: 2026-06-10T02:25:37.404Z
+collected_at: 2026-06-10T04:09:42.325Z
 language: mixed
 full_text_hash: dc49fecd90b68a79
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-002-sandstone-获-3000-万美元-a-轮融资-将-ai-引入内部法务团队.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Sandstone 获 3000 万美元 A 轮融资，将 AI 引入内部法务团队","discovery_summary":"Sandstone 完成 3000 万美元 A 轮融资，由 Lightspeed Partners 领投，Sequoia 参投。资金将用于将 AI 技术引入企业内部法务团队，提升法律工作效率。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams","discovered_at":"2026-06-10T02:18:55.992Z","rank_on_page":316,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Sandstone 获 3000 万美元 A 轮融资，将 AI 引入内部法务团队","discovery_summary":"Sandstone 完成 3000 万美元 A 轮融资，由 Lightspeed Partners 领投，Sequoia 参投。资金将用于将 AI 技术引入企业内部法务团队，提升法律工作效率。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams","discovered_at":"2026-06-10T04:01:59.507Z","rank_on_page":340,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: dc49fecd90b68a79
 semantic_hash: c37f7eccf18ed2b4
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-09T13:47:25.000Z"
-last_seen_at: 2026-06-10T02:25:37.404Z
+last_seen_at: 2026-06-10T04:09:42.325Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"change":false,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -267,7 +267,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Sandstone 获 3000 万美元 A 轮融资，将 AI 引入内部法务团队","discovery_summary":"Sandstone 完成 3000 万美元 A 轮融资，由 Lightspeed Partners 领投，Sequoia 参投。资金将用于将 AI 技术引入企业内部法务团队，提升法律工作效率。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams","discovered_at":"2026-06-10T02:18:55.992Z","rank_on_page":316,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Sandstone 获 3000 万美元 A 轮融资，将 AI 引入内部法务团队","discovery_summary":"Sandstone 完成 3000 万美元 A 轮融资，由 Lightspeed Partners 领投，Sequoia 参投。资金将用于将 AI 技术引入企业内部法务团队，提升法律工作效率。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams","discovered_at":"2026-06-10T04:01:59.507Z","rank_on_page":340,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

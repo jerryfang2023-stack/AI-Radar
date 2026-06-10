@@ -9,8 +9,8 @@ source_title: "Sandstone 获 3000 万美元 A 轮融资，将 AI 引入内部法
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-10T02:40:08.960Z
-updated_at: 2026-06-10T02:40:08.960Z
+created_at: 2026-06-10T04:09:44.090Z
+updated_at: 2026-06-10T04:09:44.090Z
 
 raw_refs: ["R-002"]
 pool_refs: ["P-002"]

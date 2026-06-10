@@ -1,5 +1,5 @@
 ---
-id: SIG-20260610-A08
+id: SIG-20260610-A06
 type: signal_card
 signal_type: product_service
 title: "Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频游戏"
@@ -9,8 +9,8 @@ source_title: "Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-10T02:40:08.960Z
-updated_at: 2026-06-10T02:40:08.960Z
+created_at: 2026-06-10T04:09:44.090Z
+updated_at: 2026-06-10T04:09:44.090Z
 
 raw_refs: ["R-003"]
 pool_refs: ["P-003"]

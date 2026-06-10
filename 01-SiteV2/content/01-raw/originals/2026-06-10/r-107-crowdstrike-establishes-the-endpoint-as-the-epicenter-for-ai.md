@@ -1,0 +1,284 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-107
+title: "CrowdStrike Establishes the Endpoint as the Epicenter for AI ..."
+original_url: "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202603230809BIZWIRE_USPRX____20260322_BW649008-1"
+canonical_url: "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202603230809BIZWIRE_USPRX____20260322_BW649008-1"
+source_name: "keyword search / Anysearch"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-10T04:09:42.650Z
+language: mixed
+full_text_hash: 8fc87b0f84445bea
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-107-crowdstrike-establishes-the-endpoint-as-the-epicenter-for-ai.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-107-crowdstrike-establishes-the-endpoint-as-the-epicenter-for-ai.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7176,"paragraph_count":37,"sentence_count":41,"boilerplate_hits":0,"symbol_ratio":0.0035,"method":"content-container"}
+has_full_text: true
+content_length: 7176
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8fc87b0f84445bea","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 94f307eeb7e40a85
+content_hash: 8fc87b0f84445bea
+semantic_hash: 63c4be717bc5ac04
+duplicate_of: ""
+first_seen_at: "2026-06-10T04:09:42.650Z"
+last_seen_at: 2026-06-10T04:09:42.650Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Microsoft","GitHub","Salesforce","Cursor"],"products":["agent","agents","Agents","MCP","ChatGPT","Gemini","Claude","Copilot","Cursor","Agent"],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["23","2026","12","09 B","1","800","160 million","365"],"quotes":["AI agents are fundamentally changing how technology operates and how it must be secured,"]}
+evidence_seed: {"company_actions":["New platform innovations extend AI agent discovery, shadow AI governance, and runtime threat detection directly from the endpoint – the point of AI execution – to every surface where AI agents operate across SaaS, browser, and cloud environments."],"case_details":[],"workflow_changes":["AI systems now execute commands, access sensitive data, and trigger downstream workflows directly on the endpoint, often in ways indistinguishable from legitimate user activity."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":["AUSTIN, Texas & SAN FRANCISCO--(BUSINESS WIRE)--Mar. 23, 2026-- RSA 2026-- CrowdStrike(NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform. New platform in","CrowdStrike Holdings Inc CrowdStrike Establishes the Endpoint as the Epicenter for AI Security Mar 23 2026 12:09 BST New Falcon platform innovations solidify CrowdStrike as AI’s security layer – extending AI agent discovery, governance, and runtime protection across endpoints, SaaS, browser, and cloud AUSTIN, Texas & SAN FRANCISCO --(BUSINESS WIRE)--Mar.","23, 2026-- RSA 2026-- CrowdStrike (NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"AUSTIN, Texas & SAN FRANCISCO--(BUSINESS WIRE)--Mar. 23, 2026-- RSA 2026-- CrowdStrike(NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform. New platform in","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"CrowdStrike Holdings Inc CrowdStrike Establishes the Endpoint as the Epicenter for AI Security Mar 23 2026 12:09 BST New Falcon platform innovations solidify CrowdStrike as AI’s security layer – extending AI agent discovery, governance, and runtime protection across endpoints, SaaS, browser, and cloud AUSTIN, Texas & SAN FRANCISCO --(BUSINESS WIRE)--Mar.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"23, 2026-- RSA 2026-- CrowdStrike (NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"New platform innovations extend AI agent discovery, shadow AI governance, and runtime threat detection directly from the endpoint – the point of AI execution – to every surface where AI agents operate across SaaS, browser, and cloud environments.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"As AI agents gain autonomy and system-level privilege, the endpoint has become the target and enforcement point for modern security.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"AI systems now execute commands, access sensitive data, and trigger downstream workflows directly on the endpoint, often in ways indistinguishable from legitimate user activity.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# CrowdStrike Establishes the Endpoint as the Epicenter for AI ...
+
+## clean_text
+
+CrowdStrike Holdings Inc
+CrowdStrike Establishes the Endpoint as the Epicenter for AI Security
+Mar 23 2026 12:09 BST
+New Falcon platform innovations solidify CrowdStrike as AI’s security layer – extending AI agent discovery, governance, and runtime protection across endpoints, SaaS, browser, and cloud
+AUSTIN, Texas & SAN FRANCISCO --(BUSINESS WIRE)--Mar. 23, 2026--
+RSA 2026-- CrowdStrike (NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform. New platform innovations extend AI agent discovery, shadow AI governance, and runtime threat detection directly from the endpoint – the point of AI execution – to every surface where AI agents operate across SaaS, browser, and cloud environments.
+As AI agents gain autonomy and system-level privilege, the endpoint has become the target and enforcement point for modern security. AI systems now execute commands, access sensitive data, and trigger downstream workflows directly on the endpoint, often in ways indistinguishable from legitimate user activity. This is where AI actions occur, and where they must be governed in real time. Legacy and network controls were not designed to govern this behavior. With this release, CrowdStrike closes the gap between AI adoption and security enforcement.
+“AI agents are fundamentally changing how technology operates and how it must be secured,” said Michael Sentonas, president of CrowdStrike . “Security built for static applications can’t keep up with autonomous systems. Organizations need real-time visibility and control over AI behavior wherever it runs. CrowdStrike is that new standard.”
+Securing AI Agents on the Endpoint
+The endpoint is emerging as the security epicenter as AI demand surges. CrowdStrike sensors detect more than 1,800 distinct AI applications running on enterprise devices, representing nearly 160 million unique application instances across its customer base. 1 AI agents execute terminal commands, modify files, access sensitive data, and trigger downstream workflows autonomously, with behavior indistinguishable from legitimate user activity. To secure where AI executes, CrowdStrike delivers:
+EDR AI Runtime Protection:
+CrowdStrike delivers runtime visibility of AI behavior at the point of execution. The Falcon sensor captures the commands, scripts, file activity, and network connections of all applications running on the endpoint, including agentic applications. When suspicious behavior is detected, human and agentic security teams can trace activity to the originating process and act immediately, including isolating affected endpoints to contain threats before they spread.
+Shadow AI Discovery for Endpoint: Automatically discovers AI applications, agents, LLM runtimes, MCP servers, and development tools running across endpoints, linking them to asset context and privilege exposure to prioritize risk to critical systems. Security teams can assess not just what AI is deployed, but also the potential blast radius of a compromise.
+AIDR for Endpoint: Extends prompt-layer protection to desktop AI applications, including ChatGPT, Gemini, Claude, DeepSeek , Microsoft Copilot, O365 Copilot, GitHub Copilot, and Cursor. Delivers real-time prompt inspection and detection of injection attacks and data leaks, and surfaces access and content policy violations.
+____________________
+1 FY26 Earnings
+Securing AI Agents Across SaaS, Browser, and Cloud
+Agents do not only stay on the endpoint; they also work across SaaS platforms, cloud workloads, and AI pipelines – often with permissions that were not designed for governance at machine speed. CrowdStrike's acquisition of Seraphic extends runtime protection to the browser, securing agentic activity at the point where it increasingly operates. CrowdStrike secures AI systems, data, and agents in SaaS, browser, and cloud environments with:
+Shadow SaaS and AI Agent Discovery: Provides visibility into Shadow SaaS usage and AI agent activity, permissions, and data access across leading platforms, including Microsoft Copilot (Power Platform), Salesforce Agentforce, ChatGPT Enterprise, OpenAI Enterprise GPT, and Nexos.ai.
+AIDR for Copilot Studio Agents: Extends runtime guardrails to Microsoft Copilot Studio agents, monitoring prompts, data interactions, and agent behavior in real time to detect injection attacks, data leaks, and policy violations.
+Shadow AI Discovery for Cloud: Unifies visibility across cloud infrastructure and application layers, enabling identification of shadow AI, ungoverned LLM and MCP connections, and sensitive data exposure, as well as prioritized remediation.
+AIDR for Cloud: Secures AI workloads running in containerized environments communicating with the OpenAI API specification, providing runtime inspection for AI services and detection of prompt attacks, data leaks, and policy violations.
+AI Data Flow Discovery for Cloud: Delivers real-time visibility into how sensitive data flows into and through AI services. Enables teams to identify AI data exposure as it happens and automate response through unified SOAR workflows.
+To learn more about CrowdStrike’s latest AI security innovations:
+Visit booth #N-5845 at RSA
+Read our blog
+Visit our website
+Future Product Disclaimer
+This press release may include discussion of unreleased services or features. Any unreleased services or features referenced here are still in development and subject to change. Customers should make their purchase decisions based upon features that are currently available.
+About CrowdStrike
+CrowdStrike
+(NASDAQ: CRWD), a global cybersecurity leader, has redefined modern security with the world’s most advanced cloud-native platform for protecting critical areas of enterprise risk – endpoints and cloud workloads, identity and data.
+Powered by the CrowdStrike Security Cloud and world-class AI, the CrowdStrike Falcon® platform leverages real-time indicators of attack, threat intelligence, evolving adversary tradecraft, and enriched telemetry from across the enterprise to deliver hyper-accurate detections, automated protection and remediation, elite threat hunting, and prioritized observability of vulnerabilities.
+Purpose-built in the cloud with a single lightweight-agent architecture, the Falcon platform delivers rapid and scalable deployment, superior protection and performance, reduced complexity, and immediate time-to-value.
+CrowdStrike : We stop breaches.
+Learn more: https://www.crowdstrike.com/
+Follow us: Blog | X | LinkedIn | Instagram
+Start a free trial today: https://www.crowdstrike.com/trial
+© 2026 CrowdStrike, Inc. All rights reserved. CrowdStrike and CrowdStrike Falcon are marks owned by CrowdStrike, Inc. and are registered in the United States and other countries. CrowdStrike owns other trademarks and service marks and may use the brands of third parties to identify their products and services.
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260322649008/en/
+Media Contact
+Jake Schuster
+CrowdStrike Corporate Communications
+[email protected]
+Source: CrowdStrike
+
+## full_text
+
+CrowdStrike Holdings Inc
+CrowdStrike Establishes the Endpoint as the Epicenter for AI Security
+Mar 23 2026 12:09 BST
+New Falcon platform innovations solidify CrowdStrike as AI’s security layer – extending AI agent discovery, governance, and runtime protection across endpoints, SaaS, browser, and cloud
+AUSTIN, Texas & SAN FRANCISCO --(BUSINESS WIRE)--Mar. 23, 2026--
+RSA 2026-- CrowdStrike (NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform. New platform innovations extend AI agent discovery, shadow AI governance, and runtime threat detection directly from the endpoint – the point of AI execution – to every surface where AI agents operate across SaaS, browser, and cloud environments.
+As AI agents gain autonomy and system-level privilege, the endpoint has become the target and enforcement point for modern security. AI systems now execute commands, access sensitive data, and trigger downstream workflows directly on the endpoint, often in ways indistinguishable from legitimate user activity. This is where AI actions occur, and where they must be governed in real time. Legacy and network controls were not designed to govern this behavior. With this release, CrowdStrike closes the gap between AI adoption and security enforcement.
+“AI agents are fundamentally changing how technology operates and how it must be secured,” said Michael Sentonas, president of CrowdStrike . “Security built for static applications can’t keep up with autonomous systems. Organizations need real-time visibility and control over AI behavior wherever it runs. CrowdStrike is that new standard.”
+Securing AI Agents on the Endpoint
+The endpoint is emerging as the security epicenter as AI demand surges. CrowdStrike sensors detect more than 1,800 distinct AI applications running on enterprise devices, representing nearly 160 million unique application instances across its customer base. 1 AI agents execute terminal commands, modify files, access sensitive data, and trigger downstream workflows autonomously, with behavior indistinguishable from legitimate user activity. To secure where AI executes, CrowdStrike delivers:
+EDR AI Runtime Protection:
+CrowdStrike delivers runtime visibility of AI behavior at the point of execution. The Falcon sensor captures the commands, scripts, file activity, and network connections of all applications running on the endpoint, including agentic applications. When suspicious behavior is detected, human and agentic security teams can trace activity to the originating process and act immediately, including isolating affected endpoints to contain threats before they spread.
+Shadow AI Discovery for Endpoint: Automatically discovers AI applications, agents, LLM runtimes, MCP servers, and development tools running across endpoints, linking them to asset context and privilege exposure to prioritize risk to critical systems. Security teams can assess not just what AI is deployed, but also the potential blast radius of a compromise.
+AIDR for Endpoint: Extends prompt-layer protection to desktop AI applications, including ChatGPT, Gemini, Claude, DeepSeek , Microsoft Copilot, O365 Copilot, GitHub Copilot, and Cursor. Delivers real-time prompt inspection and detection of injection attacks and data leaks, and surfaces access and content policy violations.
+____________________
+1 FY26 Earnings
+Securing AI Agents Across SaaS, Browser, and Cloud
+Agents do not only stay on the endpoint; they also work across SaaS platforms, cloud workloads, and AI pipelines – often with permissions that were not designed for governance at machine speed. CrowdStrike's acquisition of Seraphic extends runtime protection to the browser, securing agentic activity at the point where it increasingly operates. CrowdStrike secures AI systems, data, and agents in SaaS, browser, and cloud environments with:
+Shadow SaaS and AI Agent Discovery: Provides visibility into Shadow SaaS usage and AI agent activity, permissions, and data access across leading platforms, including Microsoft Copilot (Power Platform), Salesforce Agentforce, ChatGPT Enterprise, OpenAI Enterprise GPT, and Nexos.ai.
+AIDR for Copilot Studio Agents: Extends runtime guardrails to Microsoft Copilot Studio agents, monitoring prompts, data interactions, and agent behavior in real time to detect injection attacks, data leaks, and policy violations.
+Shadow AI Discovery for Cloud: Unifies visibility across cloud infrastructure and application layers, enabling identification of shadow AI, ungoverned LLM and MCP connections, and sensitive data exposure, as well as prioritized remediation.
+AIDR for Cloud: Secures AI workloads running in containerized environments communicating with the OpenAI API specification, providing runtime inspection for AI services and detection of prompt attacks, data leaks, and policy violations.
+AI Data Flow Discovery for Cloud: Delivers real-time visibility into how sensitive data flows into and through AI services. Enables teams to identify AI data exposure as it happens and automate response through unified SOAR workflows.
+To learn more about CrowdStrike’s latest AI security innovations:
+Visit booth #N-5845 at RSA
+Read our blog
+Visit our website
+Future Product Disclaimer
+This press release may include discussion of unreleased services or features. Any unreleased services or features referenced here are still in development and subject to change. Customers should make their purchase decisions based upon features that are currently available.
+About CrowdStrike
+CrowdStrike
+(NASDAQ: CRWD), a global cybersecurity leader, has redefined modern security with the world’s most advanced cloud-native platform for protecting critical areas of enterprise risk – endpoints and cloud workloads, identity and data.
+Powered by the CrowdStrike Security Cloud and world-class AI, the CrowdStrike Falcon® platform leverages real-time indicators of attack, threat intelligence, evolving adversary tradecraft, and enriched telemetry from across the enterprise to deliver hyper-accurate detections, automated protection and remediation, elite threat hunting, and prioritized observability of vulnerabilities.
+Purpose-built in the cloud with a single lightweight-agent architecture, the Falcon platform delivers rapid and scalable deployment, superior protection and performance, reduced complexity, and immediate time-to-value.
+CrowdStrike : We stop breaches.
+Learn more: https://www.crowdstrike.com/
+Follow us: Blog | X | LinkedIn | Instagram
+Start a free trial today: https://www.crowdstrike.com/trial
+© 2026 CrowdStrike, Inc. All rights reserved. CrowdStrike and CrowdStrike Falcon are marks owned by CrowdStrike, Inc. and are registered in the United States and other countries. CrowdStrike owns other trademarks and service marks and may use the brands of third parties to identify their products and services.
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260322649008/en/
+Media Contact
+Jake Schuster
+CrowdStrike Corporate Communications
+[email protected]
+Source: CrowdStrike
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7176,"paragraph_count":37,"sentence_count":41,"boilerplate_hits":0,"symbol_ratio":0.0035,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   AUSTIN, Texas & SAN FRANCISCO--(BUSINESS WIRE)--Mar. 23, 2026-- RSA 2026-- CrowdStrike(NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform. New platform in
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   CrowdStrike Holdings Inc CrowdStrike Establishes the Endpoint as the Epicenter for AI Security Mar 23 2026 12:09 BST New Falcon platform innovations solidify CrowdStrike as AI’s security layer – extending AI agent discovery, governance, and runtime protection across endpoints, SaaS, browser, and cloud AUSTIN, Texas & SAN FRANCISCO --(BUSINESS WIRE)--Mar.
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   23, 2026-- RSA 2026-- CrowdStrike (NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   New platform innovations extend AI agent discovery, shadow AI governance, and runtime threat detection directly from the endpoint – the point of AI execution – to every surface where AI agents operate across SaaS, browser, and cloud environments.
+
+5. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   As AI agents gain autonomy and system-level privilege, the endpoint has become the target and enforcement point for modern security.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   AI systems now execute commands, access sensitive data, and trigger downstream workflows directly on the endpoint, often in ways indistinguishable from legitimate user activity.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Microsoft, GitHub, Salesforce, Cursor
+- products: agent, agents, Agents, MCP, ChatGPT, Gemini, Claude, Copilot, Cursor, Agent
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 23, 2026, 12, 09 B, 1, 800, 160 million, 365
+- quotes: AI agents are fundamentally changing how technology operates and how it must be secured,
+
+## evidence_seed
+
+- company_actions: New platform innovations extend AI agent discovery, shadow AI governance, and runtime threat detection directly from the endpoint – the point of AI execution – to every surface where AI agents operate across SaaS, browser, and cloud environments.
+- case_details: 暂无公开信息
+- workflow_changes: AI systems now execute commands, access sensitive data, and trigger downstream workflows directly on the endpoint, often in ways indistinguishable from legitimate user activity.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 销售 / 客服
+- risks_or_constraints: AUSTIN, Texas & SAN FRANCISCO--(BUSINESS WIRE)--Mar. 23, 2026-- RSA 2026-- CrowdStrike(NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform. New platform in / CrowdStrike Holdings Inc CrowdStrike Establishes the Endpoint as the Epicenter for AI Security Mar 23 2026 12:09 BST New Falcon platform innovations solidify CrowdStrike as AI’s security layer – extending AI agent discovery, governance, and runtime protection across endpoints, SaaS, browser, and cloud AUSTIN, Texas & SAN FRANCISCO --(BUSINESS WIRE)--Mar. / 23, 2026-- RSA 2026-- CrowdStrike (NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform.
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AUSTIN, Texas & SAN FRANCISCO--(BUSINESS WIRE)--Mar. 23, 2026-- RSA 2026-- CrowdStrike(NASDAQ: CRWD) today announced new capabilities across the Falcon® platform that establish the endpoint as the epicenter for AI security and CrowdStrike as the market’s leading AI security platform. New platform in
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

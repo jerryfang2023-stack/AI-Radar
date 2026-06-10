@@ -1,7 +1,7 @@
 # GitHub Business Signals PR
 
 - date: 2026-06-10
-- generated_at: 2026-06-10T10:05:05+08:00
+- generated_at: 2026-06-10T12:01:52+08:00
 - mode: business_signals_pr
 - trigger: workflow_dispatch
 - schedule: 09:07 Asia/Shanghai daily

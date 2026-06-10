@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-09T20:37:49.000Z"
-collected_at: 2026-06-10T02:25:37.407Z
+collected_at: 2026-06-10T04:09:42.327Z
 language: mixed
 full_text_hash: 09388fd76154758c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-003-anthropic-的-claude-fable-5-能一键生成古怪好玩的视频游戏.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频游戏","discovery_summary":"Anthropic 发布 Claude Fable 5，可一键生成古怪好玩的视频游戏，预计将在网页 vibe coders 中广受欢迎。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button","discovered_at":"2026-06-10T02:18:55.957Z","rank_on_page":132,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频游戏","discovery_summary":"Anthropic 发布 Claude Fable 5，可一键生成古怪好玩的视频游戏，预计将在网页 vibe coders 中广受欢迎。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button","discovered_at":"2026-06-10T04:01:59.472Z","rank_on_page":155,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 09388fd76154758c
 semantic_hash: 7336779d704e1689
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-09T20:37:49.000Z"
-last_seen_at: 2026-06-10T02:25:37.407Z
+last_seen_at: 2026-06-10T04:09:42.327Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -268,7 +268,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频游戏","discovery_summary":"Anthropic 发布 Claude Fable 5，可一键生成古怪好玩的视频游戏，预计将在网页 vibe coders 中广受欢迎。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button","discovered_at":"2026-06-10T02:18:55.957Z","rank_on_page":132,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频游戏","discovery_summary":"Anthropic 发布 Claude Fable 5，可一键生成古怪好玩的视频游戏，预计将在网页 vibe coders 中广受欢迎。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button","discovered_at":"2026-06-10T04:01:59.472Z","rank_on_page":155,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -1,0 +1,253 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-089",
+  "title": "Cohere 发布首个开源编程模型 North Mini Code",
+  "original_url": "https://x.com/shao__meng/status/2064518114835108255",
+  "canonical_url": "https://x.com/shao__meng/status/2064518114835108255",
+  "source_name": "X：邵猛 (@shao__meng)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-10T01:20:50.000Z",
+  "collected_at": "2026-06-10T04:09:42.587Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCohere 发布首个开源编程模型「North Mini Code」\n小参数、高效率、专做 Agent 编程\n参数：MoE 架构(30B, 3B)，128专家，每 token 激活 8 个\n上下文：256K 输入 / 64K 输出\n最低硬件：1× H100（FP8）\n官方发布\ncohere.com/blog/north-min…\nHuggingFace\nhuggingface.co/CohereLabs/Nor…\n# SFT\n· 一阶段（64K）：代码约 70% 可训练 token（43% Agent 工具调用 + 27% 单轮竞赛/科学编程），混推理与指令跟随\n· 二阶段（128K）：约 4.5B token，61% 为代码，全为 Agent/推理样本，工具调用与完成结果均校验可执行\n· 数据来自 7 万+ 可验证任务、约 5000 个仓库；与 SWE-Bench 源去重，防泄漏\n· SFT 目标不是刷榜，而是为 RL 打底：优化 pass@K 与采样多样性\n2. RLVR（可验证奖励强化学习）\n· 算法：CISPO（token 级重要性采样，长轨迹不被短样本稀释）\n· 异步采样：vLLM sidecar + 窗口 FIFO 队列，缓解 Agent rollout 长度差异\n· 双环境联合训练：Terminal（ReAct + bash）+ SWE（SWE-Agent）\n· 奖励：单元测试二值奖励；无效工具调用/不可解析输出得 0 分\n3. 跨 Harness 泛化\n· 训练时暴露多种 Agent 脚手架（SWE-Agent、mini-SWE、OpenCode 等）\n· 二阶段 SFT 中约 6% 为其他 benchmark harness 数据\n· OpenCode 评估约 +10%；mini-SWE-Agent 上 pass@1 达 61.0%，属「免费迁移」\nSFT 结束时：SWE-Bench Verified pass@10 = 80.2%，Terminal-Bench v2 pass@10 = 55.1%。RL 后 Terminal pass@1 +7.9%，SWE pass@1 +3.0%；轨迹更短、无效工具调用更少。\n# 基准表现\nAgent 编程（核心卖点）\n· Artificial Analysis Coding Index：33.4\n· 同量级开源中领先 Qwen3.5 35B-A3B、Gemma 4、Devstral Small 2 等\n· 甚至超过 Nemotron 3 Super（120B）、Mistral Small 4（119B）等更大模型\n· 仍略低于 Qwen3.6 35B-A3B（约 35.2）\n评测集：SWE-Bench Verified/Pro、Terminal-Bench v2/Hard、SciCode、LiveCodeBench v6\nHarness：SWE-Agent v1.1.0、ReAct+Tmux、Terminus-2 等；temperature=1.0，top_p=0.95，3 seed 平均\n非编程 Agent 任务偏弱（第三方汇总）：GDPval-AA ~14%，τ²-Bench Telecom ~37%，Agentic Index 综合约 21.7——专精编程，非通用 Agent。\n推理速度（对比 Devstral Small 2，Cohere 内部测试）\n· 同并发下输出吞吐最高约 2.8×\n· 词间延迟约 -30%\n· TTFT 略逊于 Devstral Small 2\n# Agent 能力设计\n模型原生支持交错思考与工具调用，格式类似 Cohere Command 系列：\n<|START_THINKING|> ... <|END_THINKING|>\n<|START_ACTION|> [JSON tool calls] <|END_ACTION|>\n<|START_TOOL_RESULT|> ... <|END_TOOL_RESULT|>\n<|START_RESPONSE|> ... <|END_RESPONSE|>\n使用要点：\n· 必须把 reasoning/thinking 一并写入对话历史，否则效果下降\n· 工具描述建议用 JSON Schema\n· 推荐采样：temperature=1.0，top_p=0.95\n· 需较新 Transformers 源码、vLLM main + cohere_melody>=0.9.0\n面向场景：子 Agent 编排、系统架构理解、Code Review、终端操作、多步软件工程。\nCohere\n@cohere\n12h\nIntroducing Cohere's first open-source coding model: North Mini Code\nSmall & efficient, designed for agentic performance and built for community input.\nNick Frosst\n00:00\nNick Frosst\n1:20 AM · Jun 10, 2026 692 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\nRead 1 reply",
+  "clean_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCohere 发布首个开源编程模型「North Mini Code」\n小参数、高效率、专做 Agent 编程\n参数：MoE 架构(30B, 3B)，128专家，每 token 激活 8 个\n上下文：256K 输入 / 64K 输出\n最低硬件：1× H100（FP8）\n官方发布\ncohere.com/blog/north-min…\nHuggingFace\nhuggingface.co/CohereLabs/Nor…\n# SFT\n· 一阶段（64K）：代码约 70% 可训练 token（43% Agent 工具调用 + 27% 单轮竞赛/科学编程），混推理与指令跟随\n· 二阶段（128K）：约 4.5B token，61% 为代码，全为 Agent/推理样本，工具调用与完成结果均校验可执行\n· 数据来自 7 万+ 可验证任务、约 5000 个仓库；与 SWE-Bench 源去重，防泄漏\n· SFT 目标不是刷榜，而是为 RL 打底：优化 pass@K 与采样多样性\n2. RLVR（可验证奖励强化学习）\n· 算法：CISPO（token 级重要性采样，长轨迹不被短样本稀释）\n· 异步采样：vLLM sidecar + 窗口 FIFO 队列，缓解 Agent rollout 长度差异\n· 双环境联合训练：Terminal（ReAct + bash）+ SWE（SWE-Agent）\n· 奖励：单元测试二值奖励；无效工具调用/不可解析输出得 0 分\n3. 跨 Harness 泛化\n· 训练时暴露多种 Agent 脚手架（SWE-Agent、mini-SWE、OpenCode 等）\n· 二阶段 SFT 中约 6% 为其他 benchmark harness 数据\n· OpenCode 评估约 +10%；mini-SWE-Agent 上 pass@1 达 61.0%，属「免费迁移」\nSFT 结束时：SWE-Bench Verified pass@10 = 80.2%，Terminal-Bench v2 pass@10 = 55.1%。RL 后 Terminal pass@1 +7.9%，SWE pass@1 +3.0%；轨迹更短、无效工具调用更少。\n# 基准表现\nAgent 编程（核心卖点）\n· Artificial Analysis Coding Index：33.4\n· 同量级开源中领先 Qwen3.5 35B-A3B、Gemma 4、Devstral Small 2 等\n· 甚至超过 Nemotron 3 Super（120B）、Mistral Small 4（119B）等更大模型\n· 仍略低于 Qwen3.6 35B-A3B（约 35.2）\n评测集：SWE-Bench Verified/Pro、Terminal-Bench v2/Hard、SciCode、LiveCodeBench v6\nHarness：SWE-Agent v1.1.0、ReAct+Tmux、Terminus-2 等；temperature=1.0，top_p=0.95，3 seed 平均\n非编程 Agent 任务偏弱（第三方汇总）：GDPval-AA ~14%，τ²-Bench Telecom ~37%，Agentic Index 综合约 21.7——专精编程，非通用 Agent。\n推理速度（对比 Devstral Small 2，Cohere 内部测试）\n· 同并发下输出吞吐最高约 2.8×\n· 词间延迟约 -30%\n· TTFT 略逊于 Devstral Small 2\n# Agent 能力设计\n模型原生支持交错思考与工具调用，格式类似 Cohere Command 系列：\n<|START_THINKING|> ... <|END_THINKING|>\n<|START_ACTION|> [JSON tool calls] <|END_ACTION|>\n<|START_TOOL_RESULT|> ... <|END_TOOL_RESULT|>\n<|START_RESPONSE|> ... <|END_RESPONSE|>\n使用要点：\n· 必须把 reasoning/thinking 一并写入对话历史，否则效果下降\n· 工具描述建议用 JSON Schema\n· 推荐采样：temperature=1.0，top_p=0.95\n· 需较新 Transformers 源码、vLLM main + cohere_melody>=0.9.0\n面向场景：子 Agent 编排、系统架构理解、Code Review、终端操作、多步软件工程。\nCohere\n@cohere\n12h\nIntroducing Cohere's first open-source coding model: North Mini Code\nSmall & efficient, designed for agentic performance and built for community input.\nNick Frosst\n00:00\nNick Frosst\n1:20 AM · Jun 10, 2026 692 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\nRead 1 reply",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-10/r-089-cohere-发布首个开源编程模型-north-mini-code.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-10/r-089-cohere-发布首个开源编程模型-north-mini-code.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 3831,
+    "paragraph_count": 42,
+    "sentence_count": 9,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0271,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3831,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "937e5eaa5933f1c7",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "X：邵猛 (@shao__meng)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Cohere 发布首个开源编程模型 North Mini Code",
+    "discovery_summary": "Cohere 推出首个开源编程模型 North Mini Code（MoE 30B/3B，128 专家，每 token 激活 8 个），支持 256K 输入/64K 输出，最低 1×H100（FP8）。训练采用三阶段后训练：级联 SFT（含 Agent 工具调用与推理数据）→ RLVR（CISPO 算法，异步采样，Terminal+SWE 双环境联合训练）→ 跨脚手架泛化。Agent 编程方面，Artificial Analysis Coding Index 达 33.4，同量级开源中领先 Qwen3.5 35B-A3B、Gemma 4 等，超过 Nemotron 3 Super 120B，稍低于 Qwen3.6 35B-A3B（约 35.2）。推理速度对比 Devstral Small 2 最高约 2.8×，词间延迟约 -30%。非编程 Agent 任务偏弱。推荐 temperature=1.0、top_p=0.95。",
+    "source_name": "X：邵猛 (@shao__meng)",
+    "origin_url": "https://x.com/shao__meng/status/2064518114835108255",
+    "discovered_at": "2026-06-10T04:01:59.452Z",
+    "rank_on_page": 60,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "93c6db8048361395",
+  "content_hash": "937e5eaa5933f1c7",
+  "full_text_hash": "937e5eaa5933f1c7",
+  "semantic_hash": "daa7f81025d52b18",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-10T01:20:50.000Z",
+  "last_seen_at": "2026-06-10T04:09:42.587Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Cohere 推出首个开源编程模型 North Mini Code（MoE 30B/3B，128 专家，每 token 激活 8 个），支持 256K 输入/64K 输出，最低 1×H100（FP8）。训练采用三阶段后训练：级联 SFT（含 Agent 工具调用与推理数据）→ RLVR（CISPO 算法，异步采样，Terminal+SWE 双环境联合训练）→ 跨脚手架泛化。Agent 编程方面，Artificial Analysis Coding Index 达 33.4，同量级开源中领先 Qwen3.5 35B-A3B、Gemma 4 等，超过 Nemotron 3 Super 120B，稍低于 Qwen3.6 35B-A3B（约 35.2）。推理速度对比 Devstral Small 2 最高约 2.8×，词间延迟约 -30%。非编程 Agent 任务偏弱。推荐 temperature=1.0、top_p=0.95。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Post Log in Sign up Post meng shao @shao__meng Cohere 发布首个开源编程模型「North Mini Code」 小参数、高效率、专做 Agent 编程 参数：MoE 架构(30B, 3B)，128专家，每 token 激活 8 个 上下文：256K 输入 / 64K 输出 最低硬件：1× H100（FP8） 官方发布 cohere.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "com/blog/north-min… HuggingFace huggingface.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "co/CohereLabs/Nor… # SFT · 一阶段（64K）：代码约 70% 可训练 token（43% Agent 工具调用 + 27% 单轮竞赛/科学编程），混推理与指令跟随 · 二阶段（128K）：约 4.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "5B token，61% 为代码，全为 Agent/推理样本，工具调用与完成结果均校验可执行 · 数据来自 7 万+ 可验证任务、约 5000 个仓库；与 SWE-Bench 源去重，防泄漏 · SFT 目标不是刷榜，而是为 RL 打底：优化 pass@K 与采样多样性 2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "RLVR（可验证奖励强化学习） · 算法：CISPO（token 级重要性采样，长轨迹不被短样本稀释） · 异步采样：vLLM sidecar + 窗口 FIFO 队列，缓解 Agent rollout 长度差异 · 双环境联合训练：Terminal（ReAct + bash）+ SWE（SWE-Agent） · 奖励：单元测试二值奖励；无效工具调用/不可解析输出得 0 分 3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "邵猛 (@shao__meng)",
+      "Mistral"
+    ],
+    "products": [
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "30B",
+      "3B",
+      "128",
+      "8",
+      "256",
+      "64",
+      "1",
+      "100"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post meng shao @shao__meng Cohere 发布首个开源编程模型「North Mini Code」 小参数、高效率、专做 Agent 编程 参数：MoE 架构(30B, 3B)，128专家，每 token 激活 8 个 上下文：256K 输入 / 64K 输出 最低硬件：1× H100（FP8） 官方发布 cohere.",
+      "com/blog/north-min… HuggingFace huggingface.",
+      "RLVR（可验证奖励强化学习） · 算法：CISPO（token 级重要性采样，长轨迹不被短样本稀释） · 异步采样：vLLM sidecar + 窗口 FIFO 队列，缓解 Agent rollout 长度差异 · 双环境联合训练：Terminal（ReAct + bash）+ SWE（SWE-Agent） · 奖励：单元测试二值奖励；无效工具调用/不可解析输出得 0 分 3."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool",
+    "user_feedback_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Cohere 发布首个开源编程模型 North Mini Code\n\n- raw_id: R-089\n- original_url: https://x.com/shao__meng/status/2064518114835108255\n- source_name: X：邵猛 (@shao__meng)\n- collected_at: 2026-06-10T04:09:42.587Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCohere 发布首个开源编程模型「North Mini Code」\n小参数、高效率、专做 Agent 编程\n参数：MoE 架构(30B, 3B)，128专家，每 token 激活 8 个\n上下文：256K 输入 / 64K 输出\n最低硬件：1× H100（FP8）\n官方发布\ncohere.com/blog/north-min…\nHuggingFace\nhuggingface.co/CohereLabs/Nor…\n# SFT\n· 一阶段（64K）：代码约 70% 可训练 token（43% Agent 工具调用 + 27% 单轮竞赛/科学编程），混推理与指令跟随\n· 二阶段（128K）：约 4.5B token，61% 为代码，全为 Agent/推理样本，工具调用与完成结果均校验可执行\n· 数据来自 7 万+ 可验证任务、约 5000 个仓库；与 SWE-Bench 源去重，防泄漏\n· SFT 目标不是刷榜，而是为 RL 打底：优化 pass@K 与采样多样性\n2. RLVR（可验证奖励强化学习）\n· 算法：CISPO（token 级重要性采样，长轨迹不被短样本稀释）\n· 异步采样：vLLM sidecar + 窗口 FIFO 队列，缓解 Agent rollout 长度差异\n· 双环境联合训练：Terminal（ReAct + bash）+ SWE（SWE-Agent）\n· 奖励：单元测试二值奖励；无效工具调用/不可解析输出得 0 分\n3. 跨 Harness 泛化\n· 训练时暴露多种 Agent 脚手架（SWE-Agent、mini-SWE、OpenCode 等）\n· 二阶段 SFT 中约 6% 为其他 benchmark harness 数据\n· OpenCode 评估约 +10%；mini-SWE-Agent 上 pass@1 达 61.0%，属「免费迁移」\nSFT 结束时：SWE-Bench Verified pass@10 = 80.2%，Terminal-Bench v2 pass@10 = 55.1%。RL 后 Terminal pass@1 +7.9%，SWE pass@1 +3.0%；轨迹更短、无效工具调用更少。\n# 基准表现\nAgent 编程（核心卖点）\n· Artificial Analysis Coding Index：33.4\n· 同量级开源中领先 Qwen3.5 35B-A3B、Gemma 4、Devstral Small 2 等\n· 甚至超过 Nemotron 3 Super（120B）、Mistral Small 4（119B）等更大模型\n· 仍略低于 Qwen3.6 35B-A3B（约 35.2）\n评测集：SWE-Bench Verified/Pro、Terminal-Bench v2/Hard、SciCode、LiveCodeBench v6\nHarness：SWE-Agent v1.1.0、ReAct+Tmux、Terminus-2 等；temperature=1.0，top_p=0.95，3 seed 平均\n非编程 Agent 任务偏弱（第三方汇总）：GDPval-AA ~14%，τ²-Bench Telecom ~37%，Agentic Index 综合约 21.7——专精编程，非通用 Agent。\n推理速度（对比 Devstral Small 2，Cohere 内部测试）\n· 同并发下输出吞吐最高约 2.8×\n· 词间延迟约 -30%\n· TTFT 略逊于 Devstral Small 2\n# Agent 能力设计\n模型原生支持交错思考与工具调用，格式类似 Cohere Command 系列：\n<|START_THINKING|> ... <|END_THINKING|>\n<|START_ACTION|> [JSON tool calls] <|END_ACTION|>\n<|START_TOOL_RESULT|> ... <|END_TOOL_RESULT|>\n<|START_RESPONSE|> ... <|END_RESPONSE|>\n使用要点：\n· 必须把 reasoning/thinking 一并写入对话历史，否则效果下降\n· 工具描述建议用 JSON Schema\n· 推荐采样：temperature=1.0，top_p=0.95\n· 需较新 Transformers 源码、vLLM main + cohere_melody>=0.9.0\n面向场景：子 Agent 编排、系统架构理解、Code Review、终端操作、多步软件工程。\nCohere\n@cohere\n12h\nIntroducing Cohere's first open-source coding model: North Mini Code\nSmall & efficient, designed for agentic performance and built for community input.\nNick Frosst\n00:00\nNick Frosst\n1:20 AM · Jun 10, 2026 692 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\nRead 1 reply\n\n## full_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCohere 发布首个开源编程模型「North Mini Code」\n小参数、高效率、专做 Agent 编程\n参数：MoE 架构(30B, 3B)，128专家，每 token 激活 8 个\n上下文：256K 输入 / 64K 输出\n最低硬件：1× H100（FP8）\n官方发布\ncohere.com/blog/north-min…\nHuggingFace\nhuggingface.co/CohereLabs/Nor…\n# SFT\n· 一阶段（64K）：代码约 70% 可训练 token（43% Agent 工具调用 + 27% 单轮竞赛/科学编程），混推理与指令跟随\n· 二阶段（128K）：约 4.5B token，61% 为代码，全为 Agent/推理样本，工具调用与完成结果均校验可执行\n· 数据来自 7 万+ 可验证任务、约 5000 个仓库；与 SWE-Bench 源去重，防泄漏\n· SFT 目标不是刷榜，而是为 RL 打底：优化 pass@K 与采样多样性\n2. RLVR（可验证奖励强化学习）\n· 算法：CISPO（token 级重要性采样，长轨迹不被短样本稀释）\n· 异步采样：vLLM sidecar + 窗口 FIFO 队列，缓解 Agent rollout 长度差异\n· 双环境联合训练：Terminal（ReAct + bash）+ SWE（SWE-Agent）\n· 奖励：单元测试二值奖励；无效工具调用/不可解析输出得 0 分\n3. 跨 Harness 泛化\n· 训练时暴露多种 Agent 脚手架（SWE-Agent、mini-SWE、OpenCode 等）\n· 二阶段 SFT 中约 6% 为其他 benchmark harness 数据\n· OpenCode 评估约 +10%；mini-SWE-Agent 上 pass@1 达 61.0%，属「免费迁移」\nSFT 结束时：SWE-Bench Verified pass@10 = 80.2%，Terminal-Bench v2 pass@10 = 55.1%。RL 后 Terminal pass@1 +7.9%，SWE pass@1 +3.0%；轨迹更短、无效工具调用更少。\n# 基准表现\nAgent 编程（核心卖点）\n· Artificial Analysis Coding Index：33.4\n· 同量级开源中领先 Qwen3.5 35B-A3B、Gemma 4、Devstral Small 2 等\n· 甚至超过 Nemotron 3 Super（120B）、Mistral Small 4（119B）等更大模型\n· 仍略低于 Qwen3.6 35B-A3B（约 35.2）\n评测集：SWE-Bench Verified/Pro、Terminal-Bench v2/Hard、SciCode、LiveCodeBench v6\nHarness：SWE-Agent v1.1.0、ReAct+Tmux、Terminus-2 等；temperature=1.0，top_p=0.95，3 seed 平均\n非编程 Agent 任务偏弱（第三方汇总）：GDPval-AA ~14%，τ²-Bench Telecom ~37%，Agentic Index 综合约 21.7——专精编程，非通用 Agent。\n推理速度（对比 Devstral Small 2，Cohere 内部测试）\n· 同并发下输出吞吐最高约 2.8×\n· 词间延迟约 -30%\n· TTFT 略逊于 Devstral Small 2\n# Agent 能力设计\n模型原生支持交错思考与工具调用，格式类似 Cohere Command 系列：\n<|START_THINKING|> ... <|END_THINKING|>\n<|START_ACTION|> [JSON tool calls] <|END_ACTION|>\n<|START_TOOL_RESULT|> ... <|END_TOOL_RESULT|>\n<|START_RESPONSE|> ... <|END_RESPONSE|>\n使用要点：\n· 必须把 reasoning/thinking 一并写入对话历史，否则效果下降\n· 工具描述建议用 JSON Schema\n· 推荐采样：temperature=1.0，top_p=0.95\n· 需较新 Transformers 源码、vLLM main + cohere_melody>=0.9.0\n面向场景：子 Agent 编排、系统架构理解、Code Review、终端操作、多步软件工程。\nCohere\n@cohere\n12h\nIntroducing Cohere's first open-source coding model: North Mini Code\nSmall & efficient, designed for agentic performance and built for community input.\nNick Frosst\n00:00\nNick Frosst\n1:20 AM · Jun 10, 2026 692 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\nRead 1 reply\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Cohere 推出首个开源编程模型 North Mini Code（MoE 30B/3B，128 专家，每 token 激活 8 个），支持 256K 输入/64K 输出，最低 1×H100（FP8）。训练采用三阶段后训练：级联 SFT（含 Agent 工具调用与推理数据）→ RLVR（CISPO 算法，异步采样，Terminal+SWE 双环境联合训练）→ 跨脚手架泛化。Agent 编程方面，Artificial Analysis Coding Index 达 33.4，同量级开源中领先 Qwen3.5 35B-A3B、Gemma 4 等，超过 Nemotron 3 Super 120B，稍低于 Qwen3.6 35B-A3B（约 35.2）。推理速度对比 Devstral Small 2 最高约 2.8×，词间延迟约 -30%。非编程 Agent 任务偏弱。推荐 temperature=1.0、top_p=0.95。\n2. [product_update / daily_observation, heatmap, change / high] Post Log in Sign up Post meng shao @shao__meng Cohere 发布首个开源编程模型「North Mini Code」 小参数、高效率、专做 Agent 编程 参数：MoE 架构(30B, 3B)，128专家，每 token 激活 8 个 上下文：256K 输入 / 64K 输出 最低硬件：1× H100（FP8） 官方发布 cohere.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] com/blog/north-min… HuggingFace huggingface.\n4. [number / daily_observation, heatmap, case, trend / high] co/CohereLabs/Nor… # SFT · 一阶段（64K）：代码约 70% 可训练 token（43% Agent 工具调用 + 27% 单轮竞赛/科学编程），混推理与指令跟随 · 二阶段（128K）：约 4.\n5. [number / daily_observation, heatmap, case, trend / high] 5B token，61% 为代码，全为 Agent/推理样本，工具调用与完成结果均校验可执行 · 数据来自 7 万+ 可验证任务、约 5000 个仓库；与 SWE-Bench 源去重，防泄漏 · SFT 目标不是刷榜，而是为 RL 打底：优化 pass@K 与采样多样性 2.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] RLVR（可验证奖励强化学习） · 算法：CISPO（token 级重要性采样，长轨迹不被短样本稀释） · 异步采样：vLLM sidecar + 窗口 FIFO 队列，缓解 Agent rollout 长度差异 · 双环境联合训练：Terminal（ReAct + bash）+ SWE（SWE-Agent） · 奖励：单元测试二值奖励；无效工具调用/不可解析输出得 0 分 3.\n"
+}

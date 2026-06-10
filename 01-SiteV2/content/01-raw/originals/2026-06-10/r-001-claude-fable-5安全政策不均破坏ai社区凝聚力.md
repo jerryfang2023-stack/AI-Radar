@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-09T23:00:41.000Z"
-collected_at: 2026-06-10T02:25:37.401Z
+collected_at: 2026-06-10T04:09:42.321Z
 language: mixed
-full_text_hash: c343ff9baf54f929
+full_text_hash: 0baa4beff168d34c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-001-claude-fable-5安全政策不均破坏ai社区凝聚力.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-10/r-001-claude-fable-5安全政策不均破坏ai社区凝聚力.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c343ff9baf54f929","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0baa4beff168d34c","missing":[]}
 source_volatility: high
 community_name: "X：Nathan Lambert (@natolambert)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Claude Fable 5安全政策不均破坏AI社区凝聚力","discovery_summary":"我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","source_name":"X：Nathan Lambert (@natolambert)","origin_url":"https://x.com/natolambert/status/2064482845641552134","discovered_at":"2026-06-10T02:18:55.947Z","rank_on_page":83,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Claude Fable 5安全政策不均破坏AI社区凝聚力","discovery_summary":"我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","source_name":"X：Nathan Lambert (@natolambert)","origin_url":"https://x.com/natolambert/status/2064482845641552134","discovered_at":"2026-06-10T04:01:59.462Z","rank_on_page":106,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 484079e47edae524
-content_hash: c343ff9baf54f929
-semantic_hash: f3aee4a8e6a772b0
+content_hash: 0baa4beff168d34c
+semantic_hash: 60522eb17bb3f8c3
 duplicate_of: ""
 first_seen_at: "2026-06-09T23:00:41.000Z"
-last_seen_at: 2026-06-10T02:25:37.401Z
+last_seen_at: 2026-06-10T04:09:42.321Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -65,10 +65,10 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
-business_elements: {"companies":["X","Nathan Lambert (@natolambert)","Anthropic"],"products":["Claude"],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["5","11","00","9","2026","10.6","1","0.25"],"quotes":[]}
-evidence_seed: {"company_actions":["Claude Fable 5 and new safety fables From interconnects.","ai 11:00 PM · Jun 9, 2026 10.","6K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","Post Log in Sign up Post Nathan Lambert @natolambert Why I think Anthropic's uneven safety policies with the release of Claude Fable 5 undermine the broader AI community's cohesion and accelerate us to more uncertainty and risk in AI's near-term evolution."]}
+business_elements: {"companies":["X","Nathan Lambert (@natolambert)","Anthropic"],"products":["Claude"],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["5","11","00","9","2026","13.1","1","0.25"],"quotes":[]}
+evidence_seed: {"company_actions":["Claude Fable 5 and new safety fables From interconnects.","ai 11:00 PM · Jun 9, 2026 13.","1K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","Post Log in Sign up Post Nathan Lambert @natolambert Why I think Anthropic's uneven safety policies with the release of Claude Fable 5 undermine the broader AI community's cohesion and accelerate us to more uncertainty and risk in AI's near-term evolution."]}
 missing_information: ["没有具体客户或真实企业案例"]
-key_excerpts: [{"type":"supporting_context","text":"我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Post Log in Sign up Post Nathan Lambert @natolambert Why I think Anthropic's uneven safety policies with the release of Claude Fable 5 undermine the broader AI community's cohesion and accelerate us to more uncertainty and risk in AI's near-term evolution.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Claude Fable 5 and new safety fables From interconnects.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ai 11:00 PM · Jun 9, 2026 10.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+key_excerpts: [{"type":"supporting_context","text":"我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Post Log in Sign up Post Nathan Lambert @natolambert Why I think Anthropic's uneven safety policies with the release of Claude Fable 5 undermine the broader AI community's cohesion and accelerate us to more uncertainty and risk in AI's near-term evolution.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Claude Fable 5 and new safety fables From interconnects.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ai 11:00 PM · Jun 9, 2026 13.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"1K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
@@ -86,12 +86,12 @@ Nathan Lambert
 Why I think Anthropic's uneven safety policies with the release of Claude Fable 5 undermine the broader AI community's cohesion and accelerate us to more uncertainty and risk in AI's near-term evolution.
 Claude Fable 5 and new safety fables
 From interconnects.ai
-11:00 PM · Jun 9, 2026 10.6K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 24
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 230
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 32
-Read 10 replies
+11:00 PM · Jun 9, 2026 13.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 28
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 251
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 36
+Read 12 replies
 
 ## full_text
 
@@ -103,12 +103,12 @@ Nathan Lambert
 Why I think Anthropic's uneven safety policies with the release of Claude Fable 5 undermine the broader AI community's cohesion and accelerate us to more uncertainty and risk in AI's near-term evolution.
 Claude Fable 5 and new safety fables
 From interconnects.ai
-11:00 PM · Jun 9, 2026 10.6K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 24
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 230
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 32
-Read 10 replies
+11:00 PM · Jun 9, 2026 13.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 28
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 251
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 36
+Read 12 replies
 
 ## extraction_diagnostics
 
@@ -134,10 +134,10 @@ Read 10 replies
    Claude Fable 5 and new safety fables From interconnects.
 
 4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   ai 11:00 PM · Jun 9, 2026 10.
+   ai 11:00 PM · Jun 9, 2026 13.
 
 5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   6K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
+   1K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
 
 6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
@@ -152,12 +152,12 @@ Read 10 replies
 - workflows: 权限 / 安全治理
 - business_actions: 发布 / 推出
 - affected_departments: IT / 安全
-- numbers: 5, 11, 00, 9, 2026, 10.6, 1, 0.25
+- numbers: 5, 11, 00, 9, 2026, 13.1, 1, 0.25
 - quotes: 暂无公开信息
 
 ## evidence_seed
 
-- company_actions: Claude Fable 5 and new safety fables From interconnects. / ai 11:00 PM · Jun 9, 2026 10. / 6K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
+- company_actions: Claude Fable 5 and new safety fables From interconnects. / ai 11:00 PM · Jun 9, 2026 13. / 1K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
 - case_details: 暂无公开信息
 - workflow_changes: 暂无公开信息
 - before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
@@ -208,7 +208,7 @@ Read 10 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Claude Fable 5安全政策不均破坏AI社区凝聚力","discovery_summary":"我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","source_name":"X：Nathan Lambert (@natolambert)","origin_url":"https://x.com/natolambert/status/2064482845641552134","discovered_at":"2026-06-10T02:18:55.947Z","rank_on_page":83,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Claude Fable 5安全政策不均破坏AI社区凝聚力","discovery_summary":"我认为Anthropic在发布Claude Fable 5时的不均衡安全政策损害了更广泛AI社区的凝聚力，并加速了AI短期发展中更大的不确定性和风险。","source_name":"X：Nathan Lambert (@natolambert)","origin_url":"https://x.com/natolambert/status/2064482845641552134","discovered_at":"2026-06-10T04:01:59.462Z","rank_on_page":106,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

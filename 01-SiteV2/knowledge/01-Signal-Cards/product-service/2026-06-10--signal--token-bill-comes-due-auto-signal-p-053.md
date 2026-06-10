@@ -1,5 +1,5 @@
 ---
-id: SIG-20260610-A18
+id: SIG-20260610-A13
 type: signal_card
 signal_type: product_service
 title: "The token bill comes due: Inside the industry scramble to manage ..."
@@ -9,15 +9,15 @@ source_title: "The token bill comes due: Inside the industry scramble to manage 
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-10T02:40:08.960Z
-updated_at: 2026-06-10T02:40:08.960Z
+created_at: 2026-06-10T04:09:44.090Z
+updated_at: 2026-06-10T04:09:44.090Z
 
-raw_refs: ["R-066"]
+raw_refs: ["R-074"]
 pool_refs: ["P-053"]
 primary_raw:
-  raw_ref: R-066
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-10/r-066-the-token-bill-comes-due-inside-the-industry-scramble-to-manage.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-10/r-066-the-token-bill-comes-due-inside-the-industry-scramble-to-manage.json"
+  raw_ref: R-074
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-10/r-074-the-token-bill-comes-due-inside-the-industry-scramble-to-manage.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-10/r-074-the-token-bill-comes-due-inside-the-industry-scramble-to-manage.json"
   source_url: "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
   full_text_hash: "2072b6779c7b1c9d"
   source_level: A

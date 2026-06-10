@@ -1,5 +1,5 @@
 ---
-id: SIG-20260610-A07
+id: SIG-20260610-A05
 type: signal_card
 signal_type: product_service
 title: "一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊"
@@ -9,17 +9,17 @@ source_title: "一个Agent如何通过链式调用两个HuggingFace Space构建3
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-10T02:40:08.960Z
-updated_at: 2026-06-10T02:40:08.960Z
+created_at: 2026-06-10T04:09:44.090Z
+updated_at: 2026-06-10T04:09:44.090Z
 
-raw_refs: ["R-033"]
+raw_refs: ["R-040"]
 pool_refs: ["P-027"]
 primary_raw:
-  raw_ref: R-033
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-10/r-033-一个agent如何通过链式调用两个huggingface-space构建3d巴黎画廊.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-10/r-033-一个agent如何通过链式调用两个huggingface-space构建3d巴黎画廊.json"
+  raw_ref: R-040
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-10/r-040-一个agent如何通过链式调用两个huggingface-space构建3d巴黎画廊.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-10/r-040-一个agent如何通过链式调用两个huggingface-space构建3d巴黎画廊.json"
   source_url: "https://huggingface.co/blog/mishig/spaces-agents-md"
-  full_text_hash: "83d9b8e1cd1ee2fc"
+  full_text_hash: "c303dacdace22153"
   source_level: B
   extraction_quality: high
   has_full_text: true
