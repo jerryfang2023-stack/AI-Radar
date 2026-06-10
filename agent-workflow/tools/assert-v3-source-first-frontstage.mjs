@@ -151,6 +151,10 @@ function subjectIsMissing(value = "") {
   return String(value || "").trim() === "未标注主体";
 }
 
+function subjectIsGeneric(value = "") {
+  return /^(Code|Post|Article|Blog|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us)$/iu.test(String(value || "").trim());
+}
+
 function subjectMatchesTitle(card = {}) {
   const subject = normalizedComparableText(card.subject);
   if (!subject) return false;
@@ -228,6 +232,9 @@ for (const card of cards) {
   if (card.date === activeDate && subjectIsMissing(card.subject)) {
     issues.push(`card ${card.id || "(missing id)"} has missing frontstage subject`);
   }
+  if (card.date === activeDate && subjectIsGeneric(card.subject)) {
+    issues.push(`card ${card.id || "(missing id)"} has generic frontstage subject: ${card.subject}`);
+  }
   if (card.date === activeDate && titleNeedsTranslation(card.title)) {
     issues.push(`card ${card.id || "(missing id)"} has untranslated frontstage title: ${card.title}`);
   }
@@ -264,6 +271,9 @@ for (const candidate of payload.corePoolCandidates || []) {
   }
   if (candidate.date === activeDate && subjectIsMissing(candidate.subject)) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has missing frontstage subject`);
+  }
+  if (candidate.date === activeDate && subjectIsGeneric(candidate.subject)) {
+    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has generic frontstage subject: ${candidate.subject}`);
   }
   if (candidate.date === activeDate && titleNeedsTranslation(candidate.title)) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has untranslated frontstage title: ${candidate.title}`);

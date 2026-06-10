@@ -449,6 +449,22 @@ function subjectFromUrl(url = "") {
     if (host === "linkedin.com" && pathname.includes("sunita-verma")) return "Sunita Verma";
     if (host === "anthropic.com" && pathname.includes("agents-in-biology")) return "Anthropic / Biology Agents";
     if (host === "gist.github.com" && pathname.includes("anthonyalcaraz")) return "Anthony Alcaraz";
+    if (host === "heliad.com" && pathname.includes("lio-technologies")) return "Lio";
+    if (host === "tech.eu" && pathname.includes("archestraai")) return "Archestra.AI";
+    if (host === "market.us" && pathname.includes("voice-ai-agents-market")) return "语音 AI Agent";
+    if (host === "cfodive.com" && pathname.includes("bristol-myers")) return "Bristol Myers Squibb";
+    if (host === "activantcapital.com" && pathname.includes("voice-agents-2-0")) return "Activant / Voice Agents";
+    if (host === "techtarget.com" && pathname.includes("merck-home-depot")) return "Merck / Home Depot / Google Gemini";
+    if (host === "linkedin.com" && pathname.includes("/posts/ningz_")) return "VSCode / GitHub";
+    if (host === "ithome.com" && pathname.includes("961/868")) return "Cursor / SpaceX";
+    if (host === "x.com" && pathname.includes("testingcatalog")) return "Creatify";
+    if (host === "aarushgupta.io" && pathname.includes("kan-fpga")) return "KAN / FPGA";
+    if (host === "sievo.com" && pathname.includes("ai-in-procurement")) return "Sievo";
+    if (host === "the-decoder.com" && pathname.includes("apple-intelligence")) return "Apple Intelligence / Google / Nvidia";
+    if (host === "huggingface.co" && pathname.includes("spaces-agents-md")) return "Hugging Face Spaces Agent";
+    if (host === "huggingface.co" && pathname.includes("coherelabs/introducing-north-mini-code")) return "Cohere / North Mini Code";
+    if (host === "arstechnica.com" && pathname.includes("gemini-3-5-live-translate")) return "Google Gemini Live Translate";
+    if (host === "techcrunch.com" && pathname.includes("token-bill")) return "AI token costs";
   } catch {
     // Fall through to title-based detection.
   }
@@ -686,6 +702,20 @@ function frontstageChineseTitle(title = "", sourceUrl = "") {
     [/growthlist\.co\/ai-startups/u, "GrowthList：2026 年已融资 AI 创业公司数据库"],
     [/partners\.wsj\.com\/broadcom\/powering-the-ai-revolution/u, "WSJ / Broadcom：下一代企业 AI 基础设施"],
     [/partners\.wsj\.com\/capgemini\/the-business-of-ai/u, "WSJ / Capgemini：生成式 AI 如何改变软件工程"],
+    [/heliad\.com\/highlights\/lio-technologies-raises-30m/u, "Lio Technologies 融资 3000 万美元，用 Agentic AI 改造企业采购"],
+    [/tech\.eu.*archestraai-raises-10m/u, "Archestra.AI 融资 1000 万美元，解锁下一代 Agentic 用例"],
+    [/market\.us\/report\/voice-ai-agents-market/u, "语音 AI Agent 市场预计以 34.8% 年复合增长率扩张"],
+    [/cfodive\.com.*bristol-myers-ai-powered-procurement/u, "Bristol Myers 用 AI 改造采购流程"],
+    [/activantcapital\.com\/research\/voice-agents-2-0/u, "Activant：语音 Agent 2.0 正进入客户工作流"],
+    [/techtarget\.com.*merck-home-depot-tap-gemini-enterprise/u, "Merck 和 Home Depot 使用 Gemini Enterprise 开发 AI Agent"],
+    [/linkedin\.com\/posts\/ningz_/u, "用 VSCode 和 GitHub 进行 AI 软件开发"],
+    [/ithome\.com\/0\/961\/868/u, "Cursor 欧洲总部落子伦敦，SpaceX 获 600 亿美元收购选择权"],
+    [/x\.com\/testingcatalog\/status\/2064410031144014090/u, "Creatify Agent Wave 2：从广告制作到全自动跨平台发布"],
+    [/aarushgupta\.io\/posts\/kan-fpga/u, "基于 KAN 的 FPGA 超高速机器学习方案"],
+    [/sievo\.com\/resources\/ai-in-procurement/u, "Sievo：企业 AI 采购实战指南"],
+    [/the-decoder\.com\/apple-intelligence-gets-a-second-go/u, "Apple Intelligence 借助 Google 和 Nvidia 再获新生"],
+    [/huggingface\.co\/blog\/mishig\/spaces-agents-md/u, "Hugging Face：Agent 链式调用两个 Space 构建 3D 巴黎画廊"],
+    [/techcrunch\.com.*token-bill-comes-due/u, "AI token 账单压力迫使行业管理推理成本"],
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
@@ -761,11 +791,28 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
     [/marktechpost\.com.*microsoft-ai-introduces-mai-transcribe/u, "Microsoft AI"],
     [/marktechpost\.com.*xiaomi-mimo-and-tilert/u, "小米 / MiMo"],
     [/partners\.wsj\.com\/broadcom/u, "Broadcom / WSJ"],
+    [/partners\.wsj\.com\/capgemini/u, "WSJ / Capgemini"],
     [/bidnetdirect\.com.*2668201217/u, "NIST"],
     [/a16z\.com\/announcement\/investing-in-lio/u, "Lio / a16z"],
     [/linkedin\.com.*sunita-verma/u, "Sunita Verma"],
     [/anthropic\.com\/research\/agents-in-biology/u, "Anthropic / Biology Agents"],
     [/gist\.github\.com\/AnthonyAlcaraz/u, "Anthony Alcaraz"],
+    [/heliad\.com\/highlights\/lio-technologies-raises-30m/u, "Lio"],
+    [/tech\.eu.*archestraai-raises-10m/u, "Archestra.AI"],
+    [/market\.us\/report\/voice-ai-agents-market/u, "语音 AI Agent"],
+    [/cfodive\.com.*bristol-myers-ai-powered-procurement/u, "Bristol Myers Squibb"],
+    [/activantcapital\.com\/research\/voice-agents-2-0/u, "Activant / Voice Agents"],
+    [/techtarget\.com.*merck-home-depot-tap-gemini-enterprise/u, "Merck / Home Depot / Google Gemini"],
+    [/linkedin\.com\/posts\/ningz_/u, "VSCode / GitHub"],
+    [/ithome\.com\/0\/961\/868/u, "Cursor / SpaceX"],
+    [/x\.com\/testingcatalog\/status\/2064410031144014090/u, "Creatify"],
+    [/aarushgupta\.io\/posts\/kan-fpga/u, "KAN / FPGA"],
+    [/sievo\.com\/resources\/ai-in-procurement/u, "Sievo"],
+    [/the-decoder\.com\/apple-intelligence-gets-a-second-go/u, "Apple Intelligence / Google / Nvidia"],
+    [/huggingface\.co\/blog\/mishig\/spaces-agents-md/u, "Hugging Face Spaces Agent"],
+    [/huggingface\.co\/blog\/coherelabs\/introducing-north-mini-code/u, "Cohere / North Mini Code"],
+    [/arstechnica\.com.*gemini-3-5-live-translate/u, "Google Gemini Live Translate"],
+    [/techcrunch\.com.*token-bill-comes-due/u, "AI token costs"],
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
