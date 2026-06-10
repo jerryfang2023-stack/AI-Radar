@@ -468,6 +468,7 @@ function subjectFromUrl(url = "") {
     if (host === "docs.aws.amazon.com" && pathname.includes("sagemaker-marketplace")) return "Amazon SageMaker";
     if (host === "businesswire.com" && pathname.includes("digitalocean-launches-inference-engine")) return "DigitalOcean";
     if (host === "linkedin.com" && pathname.includes("pascaldarc")) return "Procurement AI";
+    if (host === "linkedin.com" && pathname.includes("jonjessup")) return "Hugging Face";
     if (host === "ithome.com" && pathname.includes("962/220")) return "香港 AI 应用示范社区";
     if (host === "huggingface.co" && pathname.includes("servicenow-ai/code-switching")) return "Hugging Face / ServiceNow";
   } catch {
@@ -630,6 +631,7 @@ function safeFrontstageSubject({ subject = "", sourceUrl = "", sourceName = "", 
   ];
   for (const candidate of candidates) {
     const normalized = normalizeSubject(candidate);
+    if (/未标注主体|鏈爣娉ㄤ富浣?/u.test(normalized)) continue;
     if (!normalized || isWeakSubject(normalized)) continue;
     if (subjectLooksLikeTitle(normalized)) continue;
     if (subjectMatchesDisplayTitle(normalized, title, originalTitle || rawTitle)) continue;
