@@ -1,30 +1,30 @@
 ---
 title: Community Intelligence Index
-date: 2026-06-10
+date: 2026-06-11
 status: active
 type: community-intelligence-index
 source: community-intelligence
 ---
 
 # Community Intelligence Index｜社群情报总索引
-最近归档：[[2026-06-10 Community Intelligence]]
+最近归档：[[2026-06-11 Community Intelligence]]
 ## 分类入口
 - [[Industry Cases]]
 - [[Tool Tips]]
 - [[Opportunities]]
 - [[Resource Links]]
 ## 今日概览
-- 生成时间：2026/06/10 08:33
-- 去重后条目：66
-- 行业案例：12
-- 工具技巧：13
-- 商业机会：41
+- 生成时间：2026/06/11 03:43
+- 去重后条目：63
+- 行业案例：10
+- 工具技巧：14
+- 商业机会：39
 - 资料链接：38
 - 本轮搜索词：自动化、内容生产、客服、销售、SOP、知识库、Codex、Claude Code
 ## 今日高价值条目
 | 标题 | 来源 | 场景 | 资料数 | 链接 |
 |---|---|---:|---:|---|
-| 【整理润色版2.0】小白如何从0到1搭建个人工作室团队，并顺利跑通盈利 | 生财有术 | 获客营销与转化 | 2 | [原帖](https://scys.com/articleDetail/xq_topic/82255284111148282) |
+| 从个人到小工作室，我在搭建 SOP、招人、培训到管理的思考和心得 | 生财有术 | 获客营销与转化 | 2 | [原帖](https://scys.com/articleDetail/xq_topic/82255284111148282) |
 | 05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0 | AI破局 | 获客营销与转化 | 1 |  |
 | 《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操 | 生财有术 | 获客营销与转化 | 0 |  |
 | 1 天时间，搭一个 Skill，现在刷短视频=给我的知识银行“存钱”，把短视频/图文自动变成你的知识资产 | 生财有术 | 获客营销与转化 | 0 |  |
