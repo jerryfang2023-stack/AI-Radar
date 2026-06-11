@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-06-10T19:38:39.595Z",
+    "generatedAt": "2026-06-11T01:23:46.453Z",
     "feedGeneratedAt": "2026-06-10T07:48:48.549Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 23,
-    "remarks": 54,
-    "podcasts": 3,
+    "remarks": 53,
+    "podcasts": 1,
     "blogsBuilt": 6,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 17,
     "rawTweets": 38
   },
@@ -40,12 +40,6 @@
       "name": "Dan Shipper",
       "handle": "danshipper",
       "role": "ceo every",
-      "count": 3
-    },
-    {
-      "name": "Dataiku Blog",
-      "handle": "dataiku.com",
-      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
       "count": 3
     },
     {
@@ -109,6 +103,12 @@
       "count": 2
     },
     {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "count": 2
+    },
+    {
       "name": "Zara Zhang",
       "handle": "zarazhangrui",
       "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
@@ -139,6 +139,12 @@
       "count": 1
     },
     {
+      "name": "Dataiku Blog",
+      "handle": "dataiku.com",
+      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
+      "count": 1
+    },
+    {
       "name": "Interconnects (Nathan Lambert)",
       "handle": "interconnects.ai",
       "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
@@ -149,26 +155,20 @@
       "handle": "joshwoodward",
       "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
       "count": 1
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "count": 1
     }
   ],
   "remarks": [
     {
-      "id": "https://www.tigera.io/blog/multi-layer-policy-for-securing-ai-agents/",
+      "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
       "source": "blog",
       "name": "Tigera Blog (Calico / AI Security)",
       "handle": "tigera.io",
       "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Multi-Layer Policy for Securing AI Agents",
-      "content": "As part of our work at Tigera building products that create secure runtime environments for enterprise agents at scale in the real world, one small part of this puzzle I think about a lot is... The post Multi-Layer Policy for Securing AI Agents appeared first on Tigera – Creator of Calico. ]]>",
-      "contentTranslation": "作为我们在Tigera构建产品的一部分，这些产品在现实世界中为企业Agent大规模创建安全的运行时环境，我经常想到这个难题的一小部分是......保护AIAgent的后多层策略首先出现在Tigera – Calico的创建者。]] >",
+      "text": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform",
+      "content": "The first post in this series argued that AI agent governance hasn&#8217;t kept pace with deployment. The second laid out the five pillars of accountability, and what is required. The third walked through why network... The post Five Principles of an Accountable AI Agent Network: How to Evaluate Any",
+      "contentTranslation": "本系列的第一篇文章认为，AIAgent治理没有跟上部署的步伐。第二部分列出了问责制的五大支柱，以及需要做些什么。第三部分讲解了为什么要建立网络……《负责任的AIAgent网络的五项原则：如何评估",
       "contentTranslationStatus": "translated",
-      "translation": "保护AIAgent的多层策略",
+      "translation": "负责任的AIAgent网络的五大原则：如何评估任何治理平台",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "Agent",
@@ -190,24 +190,63 @@
         }
       ],
       "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "Wed, 03 Jun 2026 18:58:09 +0000",
-      "date": "Wed, 03 Ju",
-      "url": "https://www.tigera.io/blog/multi-layer-policy-for-securing-ai-agents/",
+      "createdAt": "Wed, 10 Jun 2026 20:19:08 +0000",
+      "date": "Wed, 10 Ju",
+      "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
       "likes": 0,
       "retweets": 0,
       "replies": 0
     },
     {
-      "id": "https://www.dataiku.com/stories/blog/finance-analytics-and-ai",
+      "id": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "A field guide to the agents in your cluster",
+      "content": "You know every service in your cluster by name. You know which team owns each one, what it talks to, how it scales, where its logs go. The agents are a different story. That’s not... The post A field guide to the agents in your cluster appeared first on Tigera – Creator of Calico. ]]>",
+      "contentTranslation": "您可以通过名称了解集群中的每个服务。您知道哪个团队拥有每个团队，它谈论什么，它如何扩展，它的日志在哪里。经纪人是另一回事。这不是......帖子集群中特工的现场指南首先出现在Tigera – Calico的创建者。]] >",
+      "contentTranslationStatus": "translated",
+      "translation": "集群中客服代表的现场指南",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Wed, 10 Jun 2026 19:09:23 +0000",
+      "date": "Wed, 10 Ju",
+      "url": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.dataiku.com/stories/blog/enterprise-ai-transformation",
       "source": "blog",
       "name": "Dataiku Blog",
       "handle": "dataiku.com",
       "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
-      "text": "Finance analytics and AI: how decision intelligence platforms improve FP&A, risk, and reporting",
-      "content": "Finance teams have more data than they can act on. Transactions stream in from enterprise resource planning (ERP), general ledger (GL), accounts payable and receivable (AP/AR), market feeds, and treasury systems around the clock. But by the time that data reaches a decision, the moment h",
-      "contentTranslation": "财务团队拥有的数据太多，无法采取行动。交易全天候从企业资源规划（ ERP ）、总分类账（ GL ）、应付账款和应收账款（ AP/AR ）、市场馈送和财务系统流入。但当数据做出决定时，时刻h",
+      "text": "Enterprise AI transformation: how leading organizations are redesigning operations around AI",
+      "content": "Most enterprises have run AI pilots. But few have transformed their operations with AI at scale. What separates them is organizational design, not technology: disconnected people, disconnected systems, disconnected governance. According to \"Global AI confessions report: data lead",
+      "contentTranslation": "大多数企业都运行AI试点。但很少有人用AI大规模地改变了他们的运营。将它们区分开来的是组织设计，而不是技术：断开的人员、断开的系统、断开的治理。根据《全球AI认罪报告：数据线索",
       "contentTranslationStatus": "translated",
-      "translation": "财务分析和AI：决策智能平台如何改善财务规划与资产管理、风险和报告",
+      "translation": "企业AI转型：领先组织如何围绕AI重新设计运营",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -229,9 +268,48 @@
         }
       ],
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Wed, 03 Jun 2026 15:42:19 GMT",
-      "date": "Wed, 03 Ju",
-      "url": "https://www.dataiku.com/stories/blog/finance-analytics-and-ai",
+      "createdAt": "Wed, 10 Jun 2026 13:00:02 GMT",
+      "date": "Wed, 10 Ju",
+      "url": "https://www.dataiku.com/stories/blog/enterprise-ai-transformation",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-06-10",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Claude Fable 5 🚀, Gemini 3.5 Live Translate 📱, scaling test time compute 📈",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Claude Fable 5 🚀， Gemini 3.5实时翻译📱，缩放测试时间计算 📈",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "formalTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "Wed, 10 Jun 2026 00:00:00 GMT",
+      "date": "Wed, 10 Ju",
+      "url": "https://tldr.tech/ai/2026-06-10",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -276,45 +354,6 @@
       "replies": 0
     },
     {
-      "id": "https://www.dataiku.com/stories/blog/snowflake-partnership",
-      "source": "blog",
-      "name": "Dataiku Blog",
-      "handle": "dataiku.com",
-      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
-      "text": "From partnership to pipeline: how Snowflake and Dataiku drove 200%+ YoY sourced opportunity growth",
-      "content": "Partnerships are often judged too early, or on the wrong things. Visibility. Executive alignment. Event presence. A well-worded press release. None of that is the real test.",
-      "contentTranslation": "人们往往过早地判断伙伴关系，或者判断错误。可见性。高管一致性。事件存在。措辞良好的新闻稿。这些都不是真正的考验。",
-      "contentTranslationStatus": "translated",
-      "translation": "从合作伙伴关系到渠道： Snowflake和Dataiku如何推动200% +同比机会增长",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Tue, 09 Jun 2026 20:00:03 GMT",
-      "date": "Tue, 09 Ju",
-      "url": "https://www.dataiku.com/stories/blog/snowflake-partnership",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
       "id": "https://www.bensbites.com/p/build-tools-to-build-more",
       "source": "blog",
       "name": "Ben's Bites AI Newsletter",
@@ -349,45 +388,6 @@
       "createdAt": "Thu, 04 Jun 2026 13:03:42 GMT",
       "date": "Thu, 04 Ju",
       "url": "https://www.bensbites.com/p/build-tools-to-build-more",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://tldr.tech/ai/2026-06-04",
-      "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "DeepSeek 融资、Meta 模型延期与 Gemma 4 12B",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "AI 基础设施",
-      "formalTags": [
-        {
-          "id": "opinion-model-infra",
-          "name": "模型基础设施观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
-      "createdAt": "Thu, 04 Jun 2026 00:00:00 GMT",
-      "date": "Thu, 04 Ju",
-      "url": "https://tldr.tech/ai/2026-06-04",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -432,45 +432,6 @@
       "replies": 0
     },
     {
-      "id": "https://www.dataiku.com/stories/blog/alteryx-data-analytics-alternatives",
-      "source": "blog",
-      "name": "Dataiku Blog",
-      "handle": "dataiku.com",
-      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
-      "text": "Alteryx data analytics in 2026: strengths, limitations, and alternatives",
-      "content": "In our view, Alteryx built its reputation on a simple promise: Let business analysts do data work that used to require SQL, Python, or a request to IT. For years, that promise held. Drag-and-drop workflows replaced manual spreadsheet processes. Teams that waited weeks for data engineerin",
-      "contentTranslation": "我们认为， Alteryx的声誉建立在一个简单的承诺之上：让业务分析师做过去需要SQL、Python或IT请求的数据工作。多年来，这个承诺一直保持着。拖放工作流取代了手动电子表格流程。等待数据工程师数周的团队",
-      "contentTranslationStatus": "translated",
-      "translation": "2026年Alteryx数据分析：优势、局限性和替代方案",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Fri, 05 Jun 2026 14:30:08 GMT",
-      "date": "Fri, 05 Ju",
-      "url": "https://www.dataiku.com/stories/blog/alteryx-data-analytics-alternatives",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
       "id": "https://tldr.tech/ai/2026-06-05",
       "source": "blog",
       "name": "TLDR AI Newsletter",
@@ -505,6 +466,45 @@
       "createdAt": "Fri, 05 Jun 2026 00:00:00 GMT",
       "date": "Fri, 05 Ju",
       "url": "https://tldr.tech/ai/2026-06-05",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/10/jeremy-howard/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting Jeremy Howard",
+      "content": "Easy solution to slow down recursive AI self improvement: The lab with the top-ranked model must agree THEY must not use it for working on frontier AI But everyone else should have access to it.<",
+      "contentTranslation": "减缓递归AI自我改进的简单解决方案：具有顶级模型的实验室必须同意他们不得将其用于前沿AI的工作，但其他所有人都应该可以访问它。<",
+      "contentTranslationStatus": "translated",
+      "translation": "引用Jeremy Howard的话",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-10T15:23:34+00:00",
+      "date": "2026-06-10",
+      "url": "https://simonwillison.net/2026/Jun/10/jeremy-howard/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -2113,71 +2113,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
-      "content": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs I wrote <a href=\"https://simonwillison.net/2026/May/27/product-market-fit/#the-ai-failure-st",
-      "contentTranslation": "优步限制使用像Claude Code这样的AI工具来管理成本我写的< a href = \"",
-      "contentTranslationStatus": "translated",
-      "translation": "Uber 为控制成本限制 Claude Code 等 AI 工具用量",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "AI 编程",
-      "formalTags": [
-        {
-          "id": "opinion-ai-coding",
-          "name": "AI Coding 观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
-      "createdAt": "2026-06-03T12:01:27+00:00",
-      "date": "2026-06-03",
-      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Latent Space",
-      "title": "🔬ESM: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
-      "url": "https://www.latent.space/p/esmfold2",
-      "publishedAt": "Wed, 27 May 2026 17:46:16 GMT",
-      "excerpt": "Editor’s note: In our first BioHub pod with Priscilla and Mark they discussed their acquisition of EvoScale, led by Alex Rives, who is now Head of Science at BioHub. With ESM-1 they trained language models on millions of protein sequences drawn from across life, with a simple “next token” objective: predict the amino acids that have been randomly masked out, based on the context of the rest of the sequence. But they soon found that these models also learned biological structure and function, including properties the model had never been explicitly s…"
-    },
-    {
-      "source": "podcast",
       "name": "AI & I by Every",
       "title": "We Automated Everything With AI and Tripled Our Headcount",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Automated-Everything-With-AI-and-Tripled-Our-Headcount-e3jvmqf",
-      "publishedAt": "Wed, 27 May 2026 16:28:59 GMT",
-      "excerpt": "Dan Shipper runs one of the most AI-native companies today. Every has agents embedded in nearly every workflow—“if you swing a stick in our Slack, you're as likely to hit a human as an agent,” he says. And yet the company has grown from four people to 30 since GPT-3 came out, and is still hiring.Why does Dan believe there's more human work to do than ever?In a format flip for AI & I, Every's COO Brandon Gell turns the tables and interviews Dan about his latest essay, “After Automation”—an 8,000-word argument for why rising automation doesn't eliminate demand for human work, it increases it. The thesis: AI makes yesterday's expert competence cheap and widely available, which floods every field with output that's close but not quite right—and that creates more demand for the humans who can take it the rest of the way.Dan talked with Brandon about the paradox at the heart of a…"
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "publishedAt": "2026-05-27T16:28:59.000Z",
+      "excerpt": ""
     }
   ]
 }
