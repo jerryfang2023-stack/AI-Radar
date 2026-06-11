@@ -1,0 +1,412 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-085
+title: "The $100-Billion SaaS Opportunity Hiding in Cross-System Labor | Bain & Company"
+original_url: "https://www.bain.com/insights/100-billion-saas-opportunity-hiding-in-cross-system-labor/"
+canonical_url: "https://bain.com/insights/100-billion-saas-opportunity-hiding-in-cross-system-labor"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-11T01:29:52.917Z
+language: mixed
+full_text_hash: b15248dc8b43b1d5
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-085-the-100-billion-saas-opportunity-hiding-in-cross-system-labor-bain-com.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-085-the-100-billion-saas-opportunity-hiding-in-cross-system-labor-bain-com.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":18015,"paragraph_count":76,"sentence_count":127,"boilerplate_hits":0,"symbol_ratio":0.0001,"method":"content-container"}
+has_full_text: true
+content_length: 18015
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b15248dc8b43b1d5","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 014c08b4b6528327
+content_hash: c1f9161c470b26ca
+semantic_hash: 0734d7cf2d9b97f4
+duplicate_of: ""
+first_seen_at: "2026-06-11T01:29:52.917Z"
+last_seen_at: 2026-06-11T01:29:52.917Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","GitHub","Salesforce","ServiceNow","Cursor"],"products":["Agent","agents","Agents","Copilot","Cursor","agent"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["$100","$100 billion","3","$4 b","0","90%","1","2"],"quotes":[" Will Agentic AI Disrupt SaaS? "]}
+evidence_seed: {"company_actions":["- Agentic AI’s big opportunity isn’t replacing software as a service (SaaS); it’s converting labor costs into software spending by automating coordination work. Bain’s research estimates this new market could be worth $100 billion in the US (see Figure 3). Vendors are already capturing about $4 bil.... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","Skip to Content Content added to saved items Saved items ( 0 ) Close Removed from saved items Saved items ( 0 ) Close Copy link Email LinkedIn Facebook '> Progress: en At a Glance Agentic AI&rsquo;s big opportunity isn&rsquo;t replacing software as a service (SaaS); it&rsquo;s converting labor costs into software spending by automating coordination work.","This is the second in a five-part series on the software industry in the age of AI."],"case_details":["Winners assess data assets, identify valuable workflows, close competitive gaps, and use every deployment to capture data that makes the system smarter."],"workflow_changes":["Not all user workflows are equally automatable: Six factors determine where agents can realistically take over."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"- Agentic AI’s big opportunity isn’t replacing software as a service (SaaS); it’s converting labor costs into software spending by automating coordination work. Bain’s research estimates this new market could be worth $100 billion in the US (see Figure 3). Vendors are already capturing about $4 bil.... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to Content Content added to saved items Saved items ( 0 ) Close Removed from saved items Saved items ( 0 ) Close Copy link Email LinkedIn Facebook '> Progress: en At a Glance Agentic AI&rsquo;s big opportunity isn&rsquo;t replacing software as a service (SaaS); it&rsquo;s converting labor costs into software spending by automating coordination work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"number","text":"Bain estimates the potential market could be $100 billion in the US, and more than 90% remains uncaptured.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Not all user workflows are equally automatable: Six factors determine where agents can realistically take over.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Winners assess data assets, identify valuable workflows, close competitive gaps, and use every deployment to capture data that makes the system smarter.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"funding","text":"This is the second in a five-part series on the software industry in the age of AI.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# The $100-Billion SaaS Opportunity Hiding in Cross-System Labor | Bain & Company
+
+## clean_text
+
+Skip to Content
+Content added to saved items
+Saved items ( 0 )
+Close
+Removed from saved items
+Saved items ( 0 )
+Close
+Copy link
+Email
+LinkedIn
+Facebook
+'>
+Progress:
+en
+At a Glance
+Agentic AI&rsquo;s big opportunity isn&rsquo;t replacing software as a service (SaaS); it&rsquo;s converting labor costs into software spending by automating coordination work.
+Bain estimates the potential market could be $100 billion in the US, and more than 90% remains uncaptured.
+Not all user workflows are equally automatable: Six factors determine where agents can realistically take over.
+Winners assess data assets, identify valuable workflows, close competitive gaps, and use every deployment to capture data that makes the system smarter.
+This is the second in a five-part series on the software industry in the age of AI.
+Generative and agentic AI are reshaping software as a service (SaaS), compressing some workflows, enhancing others, and in certain cases cannibalizing them entirely. (See our recent brief " Will Agentic AI Disrupt SaaS? " for our take on the offensive and defensive priorities SaaS leaders should set.)
+But market disruption is only half the story. The more actionable question for tech executives and investors is: Where does agentic AI create entirely new markets for software, and how do you capture them?
+The answer, it turns out, lies not in the systems of record themselves but in the expensive human labor that connects them.
+Converting labor costs into software spending
+Every enterprise runs on workflows that span systems: enterprise resource planning (ERP), customer relationship management (CRM), billing, support ticketing, and vendor management. Between those systems sits an enormous amount of what we call cross-system coordination work&mdash;employees pulling budget data from an ERP, checking inventory in a spreadsheet, interpreting free-text responses, and making judgment calls about when to escalate. This coordination work is labor intensive, expensive, and&mdash; critically&mdash;unable to be automated by rules-based software or traditional robotic process automation (RPA).
+The reason is straightforward. Rules-based automation breaks when it encounters ambiguity, context dependence, or information scattered across multiple systems. An RPA bot can move data from field A to field B, but it can't reconcile budget, inventory, and project context across an ERP and three spreadsheets. It can't interpret a vendor's ambiguous email and decide whether to respond, escalate, or wait. It can't chase an approver whose delay is driven by an organizational signal rather than a process failure.
+Agentic AI changes this. Agents can interpret information from disparate sources, reason about context, coordinate decisions across systems, and execute end to end with policy guardrails rather than hard-coded rules (see Figure 1). This unlocks automation of the most expensive, human-mediated work in the enterprise, and it represents the largest and most tractable new potential for software&rsquo;s total addressable market (TAM).
+Figure 1
+Assessing AI’s ability to automate workflows can determine the future of software-as-a-service (SaaS) products
+Source: Bain & Company
+In some cases, AI will also extend the value of existing SaaS by automating workflows such as data presentation and summary, record storage, and comparison of current and prior reports from the same system.
+For two decades, SaaS companies built competitive moats around systems of record. Own the CRM and you own the customer relationship. Own the ERP and you own the financial backbone. Depth in a single domain was the winning strategy.
+Agentic AI reopens this contest. The new competitive advantage is what we call cross-workflow decision context&mdash;the ability to see, interpret, and act across workflows that traverse multiple systems (see Figure 2). The highest-value automation opportunities are concentrated precisely where no single system of record owns the outcome&mdash;where decision context spans, for example, ERP, CRM, billing, and support, and where historical decision-making patterns are fragmented across all of them.
+Figure 2
+Cross-workflow observability will overtake system of record ownership as the key advantage
+Source: Bain & Company
+This shift is already playing out in the market. Sierra built its platform to resolve customer issues autonomously across enterprise systems rather than within a single ticketing tool. Glean coordinates employee requests across multiple functions rather than indexing a single knowledge base. GitHub's Copilot expanded from source control into AI-powered developer productivity and security automation&mdash;a move enabled by its observational data across code repositories, not by owning any single developer workflow. In each case, breadth of visibility matters more than depth in any one domain.
+The implications for pricing are equally profound. When agents deliver end-to-end outcomes&mdash;a resolved customer issue, a processed invoice, a qualified lead&mdash;the natural pricing unit shifts from seats and logins to outcomes and usage. Companies like AppLovin have already made this transition, monetizing based on advertising performance outcomes rather than platform access. Cursor offers tiered seat-based pricing, but the value proposition is fundamentally about developer output, not tool access.
+Bain&rsquo;s research estimates this new market could be worth $100 billion in the US (see Figure 3). Vendors are already capturing about $4 billion to $6 billion, but more than 90% of the opportunity remains untapped. AI-native entrants are scaling fast. Cursor has surpassed $2 billion in annual recurring revenue (ARR), doubling in a single quarter. Sierra has crossed $150 million. Harvey has passed $190 million. Glean reached $200 million. And fast-mobilizing incumbents like Salesforce (with Agentforce), ServiceNow (which acquired Moveworks), and Workday are embedding agentic capabilities into their existing platforms.
+Figure 3
+The highly addressable market for new applications of agentic AI in the US could be about $100 billion
+Note: US spending only
+Sources: US Census; Bain analysis
+The opportunity is not evenly distributed across functions. Sales represents the largest single slice at roughly $20 billion, due more to the large number of sales employees rather than an exceptionally high potential for automation. Cost of goods sold (COGS) and operations contribute about $26 billion, reflecting the enormous operational workforce, where even modest automation rates translate into large dollar figures. R&D and engineering, customer support, and finance each represent $6 billion to $12 billion in addressable opportunity. These functions combine relatively high automation potential (40% to 60% for customer support and R&D) with meaningful employee bases and salary levels.
+Looking beyond the US, the opportunity in Canada, Europe, Australia, and New Zealand is about the same, doubling the total opportunity to about $200 billion.
+Assessing potential for workflow automation
+A common mistake in AI strategy is treating automation potential as a binary&mdash;either a workflow can be automated or it can&rsquo;t. In practice, six factors determine how much of any given workflow an agent can realistically handle.
+Output verifiability measures whether an agent&rsquo;s work product can be validated automatically or by humans. Code that compiles and passes tests, invoices that reconcile, and support tickets that resolve all generate clear verification signals. Financial planning scenarios, by contrast, depend on subjective judgment and are therefore harder to verify.
+Consequence of failure captures the regulatory, safety, or financial liability involved. When failures are costly or irreversible&mdash;as with tax filings, security incident response, or legal compliance&mdash;enterprises require tighter human oversight, even when agents are technically capable. Agents increasingly operate in a shadow mode alongside human workers in these domains, demonstrating accuracy before they&rsquo;re granted autonomy.
+Digitized knowledge availability assesses whether agents have well-labeled, machine-readable inputs at runtime, including the tacit knowledge that typically lives only in people&rsquo;s heads. Rich, structured data in ticketing systems and code repositories makes customer support and engineering highly automatable. But even in data-rich environments, automation stalls when the context for a decision hasn&rsquo;t been documented: a veteran buyer&rsquo;s vendor preferences, an engineer&rsquo;s institutional memory of past failures, or the unwritten exception logic that governs how a policy is actually applied. In practice, the availability of this digitized contextual knowledge is almost always the binding constraint on automation.
+Integration and orchestration complexity captures how many systems, application programming interfaces (APIs), and handoffs an agent must coordinate to complete a workflow end to end. Single-system workflows are straightforward; workflows spanning five or six systems of record with different authentication, data models, and exception-handling logic are harder to orchestrate reliably.
+Process variability distinguishes straight-through flows from those with many exceptions. Agents are increasingly capable of handling branching logic and common exceptions, but workflows with lots of novel, unpredictable edge cases still force escalation back to humans.
+Physical world dependency captures whether a workflow requires actions that computers physically cannot perform or that organizations do not yet trust them to perform unsupervised, such as in-person inspections, physical signatures, or safety-critical interventions. Where these dependencies exist, a hybrid human-agent model is likely to continue, regardless of how capable AI becomes.
+Applying these six factors across enterprise functions reveals a wide range of automation potential.
+Customer support and R&D/engineering sit at the high end, with roughly 40% to 60% of workflow tasks automatable. Both benefit from structured data, standardized processes, and well-defined outputs.
+Finance and HR fall in the 35% to 45% range, with pockets of very high automation (accounts payable, payroll) alongside judgment-heavy work (financial planning and analysis, employee relations).
+Sales and IT sit at 30% to 40%, constrained by relationship nuance, deal-by-deal variation, and the unpredictability of security incidents.
+Legal offers an interesting contrast: Contract review and compliance workflows are highly repeatable, but the consequences of errors are severe, keeping overall automation in the 20% to 30% range despite strong structural fit.
+Two paths to grow the market
+SaaS companies have two main paths for market growth: automating core or adjacent workflows.
+Automating core workflows is the most straightforward option because it&rsquo;s where SaaS companies have the deepest knowledge, strongest systems integration, and greatest buyer trust. While there&rsquo;s some risk of cannibalizing seat-based revenue by eliminating seats, the overall economics can be better, since many customers are willing to pay more for getting the whole job done, rather than paying for software that helps an employee do it.
+The second path is automating adjacent workflows that are not offered by the company today. Agentic AI can unlock the latent value of underlying data assets and customer penetration in those adjacent workflows. This second path is harder because these patterns and opportunities are often nonobvious and require bottom-up, detailed mapping of workflows that are economically important to customers.
+GitHub illustrates this pattern clearly. Its core business is developer collaboration and source control: Git repositories, pull requests, code reviews, and continuous integration/continuous deployment (CI/CD) workflows. But the observational data generated by that core business&mdash;decision patterns with outcomes, work product repositories, process traces, interaction transcripts, and reference and lookup patterns&mdash;enabled GitHub to expand into AI-powered developer productivity (Copilot) and security automation (code scanning and dependency analysis). Neither of these adjacent workflows was part of GitHub&rsquo;s original product, but no competitor could replicate the data position that made them possible.
+Most companies won&rsquo;t get to choose whether they are in the first category. Their core workflows are either getting automated or they aren&rsquo;t&mdash;and if they are, the only question is whether you are the one automating them or a competitor is. But companies can choose how aggressively to leverage differentiated assets to pursue the second path: automating adjacent workflows that agentic AI has turned into newly accessible market share. The most valuable opportunities often emerge from nonobvious adjacencies&mdash;workflows that technology firms don&rsquo;t serve directly, but that their decision context data uniquely enables (see Figure 4).
+Figure 4
+Observable assets unlock nonobvious adjacencies
+Source: Bain & Company
+A playbook for capturing market share
+Phase one: Assess the upside. Start by identifying the high-value workflows of your end customers that are now automatable with agentic AI. Apply the six automatability factors at the subprocess level&mdash;not the function level. For example, accounts payable and accounts receivable have very different automation profiles than financial planning and analysis or investor relations. Then size the market potential by comparing the cost of deploying agents with the labor costs they replace or augment. Focus where the economics are most compelling.
+Phase two: Decide where to play. Assess your data assets to understand how comprehensive, detailed, outcome-linked, differentiated, and usable they are for automation. Next, identify the workflows where those assets can create the greatest differentiated value, including adjacent opportunities that may not be immediately obvious. Finally, develop a clear, end-to-end view of how those workflows actually operate. Pay particular attention to the informal steps, handoffs, and exceptions, since much of the real automation opportunity lies in how work gets coordinated beyond core systems (see Figure 5).
+Figure 5
+Automation will play out in waves, beginning with the highest-value activities first
+Note: FP&A is financial planning and analysis
+Source: Bain & Company
+Phase three: Execute with three coordinated moves. First, close critical capability gaps with decisions to build, buy, or partner to secure the technology, data, and coverage needed for differentiated automation. AppLovin built its Axon platform in-house to maintain control over ad optimization data. ServiceNow acquired Moveworks to add an AI layer that made its workflow engine more discoverable. Salesforce partnered with Workday to extend Agentforce across HR and finance workflows without building a competing system.
+Second, set up the organization to execute. Attract AI engineering talent, build cloud-native architecture for multi-agent orchestration, and secure capital for model training and inference. Align incentives by shifting pricing from seats to outcomes, restructuring sales compensation to reward AI-driven results, and removing structural bias toward legacy products.
+Third, redesign your data and product foundations to be agent ready. Create agent-native data models&mdash;schemas and handoffs designed for machine execution rather than human interpretation. Enable agents to act end to end, capturing decisions and outcomes to build longitudinal data. Use that data to improve performance with every run. The goal is a durable moat: accumulated execution data that grows more valuable over time and becomes harder for competitors to replicate.
+Take action
+Technology transitions are often met with hype as well as resistance, and are framed in negative terms such as disruption, dislocation, or competitive threat. But once they&rsquo;re understood and incorporated into company strategies, they often unleash waves of innovation and opportunity for incumbents and new entrants alike.
+Still, the opportunity requires action. The strategic imperative isn&rsquo;t to protect the legacy SaaS model from disruption; it&rsquo;s to capture the larger opportunity of converting labor costs into software spending. But the window for SaaS leaders to define their position in the agentic AI market is measured in quarters, not years. AI-native startups are scaling at unprecedented speed: Cursor went from $100 million to $2 billion in annual recurring revenue in 14 months. Enterprise buyers are already deploying agents in high-volume, high-cost workflows. And every month that passes generates more execution data for early movers to compound their advantage. The companies that move first to map priority workflows, build proprietary data assets, and scale automation faster will define the next era of enterprise software.
+Disruption was inevitable. The real question now is: Who captures the new markets?
+Explore this series
+AI Brings Headwinds and Tailwinds to the Rule of 40
+The $100-Billion SaaS Opportunity Hiding in Cross-System Labor
+Agentic AI and the New Complexity Trap in Enterprise Software
+How Will AI Change Software Organizations?
+Published in May 2026
+Tags
+AI, Insights, and Solutions
+Artificial Intelligence
+Artificial Intelligence Insights
+CIO Insights
+Digital
+Software
+Technology
+How We've Helped Clients
+A Technology Company’s Transformation Restores Its Growth Trajectory
+Read case study
+Helping a Midsize ERP Player Compete against the Giants
+Read case study
+Performance Improvement
+Aggressively growing an IT service provider with a high-performance culture
+Read case study
+Contact Bain
+How can we help you?
+Business inquiry
+Career information
+Press relations
+Partnership request
+Speaker request
+
+## full_text
+
+Skip to Content
+Content added to saved items
+Saved items ( 0 )
+Close
+Removed from saved items
+Saved items ( 0 )
+Close
+Copy link
+Email
+LinkedIn
+Facebook
+'>
+Progress:
+en
+At a Glance
+Agentic AI&rsquo;s big opportunity isn&rsquo;t replacing software as a service (SaaS); it&rsquo;s converting labor costs into software spending by automating coordination work.
+Bain estimates the potential market could be $100 billion in the US, and more than 90% remains uncaptured.
+Not all user workflows are equally automatable: Six factors determine where agents can realistically take over.
+Winners assess data assets, identify valuable workflows, close competitive gaps, and use every deployment to capture data that makes the system smarter.
+This is the second in a five-part series on the software industry in the age of AI.
+Generative and agentic AI are reshaping software as a service (SaaS), compressing some workflows, enhancing others, and in certain cases cannibalizing them entirely. (See our recent brief " Will Agentic AI Disrupt SaaS? " for our take on the offensive and defensive priorities SaaS leaders should set.)
+But market disruption is only half the story. The more actionable question for tech executives and investors is: Where does agentic AI create entirely new markets for software, and how do you capture them?
+The answer, it turns out, lies not in the systems of record themselves but in the expensive human labor that connects them.
+Converting labor costs into software spending
+Every enterprise runs on workflows that span systems: enterprise resource planning (ERP), customer relationship management (CRM), billing, support ticketing, and vendor management. Between those systems sits an enormous amount of what we call cross-system coordination work&mdash;employees pulling budget data from an ERP, checking inventory in a spreadsheet, interpreting free-text responses, and making judgment calls about when to escalate. This coordination work is labor intensive, expensive, and&mdash; critically&mdash;unable to be automated by rules-based software or traditional robotic process automation (RPA).
+The reason is straightforward. Rules-based automation breaks when it encounters ambiguity, context dependence, or information scattered across multiple systems. An RPA bot can move data from field A to field B, but it can't reconcile budget, inventory, and project context across an ERP and three spreadsheets. It can't interpret a vendor's ambiguous email and decide whether to respond, escalate, or wait. It can't chase an approver whose delay is driven by an organizational signal rather than a process failure.
+Agentic AI changes this. Agents can interpret information from disparate sources, reason about context, coordinate decisions across systems, and execute end to end with policy guardrails rather than hard-coded rules (see Figure 1). This unlocks automation of the most expensive, human-mediated work in the enterprise, and it represents the largest and most tractable new potential for software&rsquo;s total addressable market (TAM).
+Figure 1
+Assessing AI’s ability to automate workflows can determine the future of software-as-a-service (SaaS) products
+Source: Bain & Company
+In some cases, AI will also extend the value of existing SaaS by automating workflows such as data presentation and summary, record storage, and comparison of current and prior reports from the same system.
+For two decades, SaaS companies built competitive moats around systems of record. Own the CRM and you own the customer relationship. Own the ERP and you own the financial backbone. Depth in a single domain was the winning strategy.
+Agentic AI reopens this contest. The new competitive advantage is what we call cross-workflow decision context&mdash;the ability to see, interpret, and act across workflows that traverse multiple systems (see Figure 2). The highest-value automation opportunities are concentrated precisely where no single system of record owns the outcome&mdash;where decision context spans, for example, ERP, CRM, billing, and support, and where historical decision-making patterns are fragmented across all of them.
+Figure 2
+Cross-workflow observability will overtake system of record ownership as the key advantage
+Source: Bain & Company
+This shift is already playing out in the market. Sierra built its platform to resolve customer issues autonomously across enterprise systems rather than within a single ticketing tool. Glean coordinates employee requests across multiple functions rather than indexing a single knowledge base. GitHub's Copilot expanded from source control into AI-powered developer productivity and security automation&mdash;a move enabled by its observational data across code repositories, not by owning any single developer workflow. In each case, breadth of visibility matters more than depth in any one domain.
+The implications for pricing are equally profound. When agents deliver end-to-end outcomes&mdash;a resolved customer issue, a processed invoice, a qualified lead&mdash;the natural pricing unit shifts from seats and logins to outcomes and usage. Companies like AppLovin have already made this transition, monetizing based on advertising performance outcomes rather than platform access. Cursor offers tiered seat-based pricing, but the value proposition is fundamentally about developer output, not tool access.
+Bain&rsquo;s research estimates this new market could be worth $100 billion in the US (see Figure 3). Vendors are already capturing about $4 billion to $6 billion, but more than 90% of the opportunity remains untapped. AI-native entrants are scaling fast. Cursor has surpassed $2 billion in annual recurring revenue (ARR), doubling in a single quarter. Sierra has crossed $150 million. Harvey has passed $190 million. Glean reached $200 million. And fast-mobilizing incumbents like Salesforce (with Agentforce), ServiceNow (which acquired Moveworks), and Workday are embedding agentic capabilities into their existing platforms.
+Figure 3
+The highly addressable market for new applications of agentic AI in the US could be about $100 billion
+Note: US spending only
+Sources: US Census; Bain analysis
+The opportunity is not evenly distributed across functions. Sales represents the largest single slice at roughly $20 billion, due more to the large number of sales employees rather than an exceptionally high potential for automation. Cost of goods sold (COGS) and operations contribute about $26 billion, reflecting the enormous operational workforce, where even modest automation rates translate into large dollar figures. R&D and engineering, customer support, and finance each represent $6 billion to $12 billion in addressable opportunity. These functions combine relatively high automation potential (40% to 60% for customer support and R&D) with meaningful employee bases and salary levels.
+Looking beyond the US, the opportunity in Canada, Europe, Australia, and New Zealand is about the same, doubling the total opportunity to about $200 billion.
+Assessing potential for workflow automation
+A common mistake in AI strategy is treating automation potential as a binary&mdash;either a workflow can be automated or it can&rsquo;t. In practice, six factors determine how much of any given workflow an agent can realistically handle.
+Output verifiability measures whether an agent&rsquo;s work product can be validated automatically or by humans. Code that compiles and passes tests, invoices that reconcile, and support tickets that resolve all generate clear verification signals. Financial planning scenarios, by contrast, depend on subjective judgment and are therefore harder to verify.
+Consequence of failure captures the regulatory, safety, or financial liability involved. When failures are costly or irreversible&mdash;as with tax filings, security incident response, or legal compliance&mdash;enterprises require tighter human oversight, even when agents are technically capable. Agents increasingly operate in a shadow mode alongside human workers in these domains, demonstrating accuracy before they&rsquo;re granted autonomy.
+Digitized knowledge availability assesses whether agents have well-labeled, machine-readable inputs at runtime, including the tacit knowledge that typically lives only in people&rsquo;s heads. Rich, structured data in ticketing systems and code repositories makes customer support and engineering highly automatable. But even in data-rich environments, automation stalls when the context for a decision hasn&rsquo;t been documented: a veteran buyer&rsquo;s vendor preferences, an engineer&rsquo;s institutional memory of past failures, or the unwritten exception logic that governs how a policy is actually applied. In practice, the availability of this digitized contextual knowledge is almost always the binding constraint on automation.
+Integration and orchestration complexity captures how many systems, application programming interfaces (APIs), and handoffs an agent must coordinate to complete a workflow end to end. Single-system workflows are straightforward; workflows spanning five or six systems of record with different authentication, data models, and exception-handling logic are harder to orchestrate reliably.
+Process variability distinguishes straight-through flows from those with many exceptions. Agents are increasingly capable of handling branching logic and common exceptions, but workflows with lots of novel, unpredictable edge cases still force escalation back to humans.
+Physical world dependency captures whether a workflow requires actions that computers physically cannot perform or that organizations do not yet trust them to perform unsupervised, such as in-person inspections, physical signatures, or safety-critical interventions. Where these dependencies exist, a hybrid human-agent model is likely to continue, regardless of how capable AI becomes.
+Applying these six factors across enterprise functions reveals a wide range of automation potential.
+Customer support and R&D/engineering sit at the high end, with roughly 40% to 60% of workflow tasks automatable. Both benefit from structured data, standardized processes, and well-defined outputs.
+Finance and HR fall in the 35% to 45% range, with pockets of very high automation (accounts payable, payroll) alongside judgment-heavy work (financial planning and analysis, employee relations).
+Sales and IT sit at 30% to 40%, constrained by relationship nuance, deal-by-deal variation, and the unpredictability of security incidents.
+Legal offers an interesting contrast: Contract review and compliance workflows are highly repeatable, but the consequences of errors are severe, keeping overall automation in the 20% to 30% range despite strong structural fit.
+Two paths to grow the market
+SaaS companies have two main paths for market growth: automating core or adjacent workflows.
+Automating core workflows is the most straightforward option because it&rsquo;s where SaaS companies have the deepest knowledge, strongest systems integration, and greatest buyer trust. While there&rsquo;s some risk of cannibalizing seat-based revenue by eliminating seats, the overall economics can be better, since many customers are willing to pay more for getting the whole job done, rather than paying for software that helps an employee do it.
+The second path is automating adjacent workflows that are not offered by the company today. Agentic AI can unlock the latent value of underlying data assets and customer penetration in those adjacent workflows. This second path is harder because these patterns and opportunities are often nonobvious and require bottom-up, detailed mapping of workflows that are economically important to customers.
+GitHub illustrates this pattern clearly. Its core business is developer collaboration and source control: Git repositories, pull requests, code reviews, and continuous integration/continuous deployment (CI/CD) workflows. But the observational data generated by that core business&mdash;decision patterns with outcomes, work product repositories, process traces, interaction transcripts, and reference and lookup patterns&mdash;enabled GitHub to expand into AI-powered developer productivity (Copilot) and security automation (code scanning and dependency analysis). Neither of these adjacent workflows was part of GitHub&rsquo;s original product, but no competitor could replicate the data position that made them possible.
+Most companies won&rsquo;t get to choose whether they are in the first category. Their core workflows are either getting automated or they aren&rsquo;t&mdash;and if they are, the only question is whether you are the one automating them or a competitor is. But companies can choose how aggressively to leverage differentiated assets to pursue the second path: automating adjacent workflows that agentic AI has turned into newly accessible market share. The most valuable opportunities often emerge from nonobvious adjacencies&mdash;workflows that technology firms don&rsquo;t serve directly, but that their decision context data uniquely enables (see Figure 4).
+Figure 4
+Observable assets unlock nonobvious adjacencies
+Source: Bain & Company
+A playbook for capturing market share
+Phase one: Assess the upside. Start by identifying the high-value workflows of your end customers that are now automatable with agentic AI. Apply the six automatability factors at the subprocess level&mdash;not the function level. For example, accounts payable and accounts receivable have very different automation profiles than financial planning and analysis or investor relations. Then size the market potential by comparing the cost of deploying agents with the labor costs they replace or augment. Focus where the economics are most compelling.
+Phase two: Decide where to play. Assess your data assets to understand how comprehensive, detailed, outcome-linked, differentiated, and usable they are for automation. Next, identify the workflows where those assets can create the greatest differentiated value, including adjacent opportunities that may not be immediately obvious. Finally, develop a clear, end-to-end view of how those workflows actually operate. Pay particular attention to the informal steps, handoffs, and exceptions, since much of the real automation opportunity lies in how work gets coordinated beyond core systems (see Figure 5).
+Figure 5
+Automation will play out in waves, beginning with the highest-value activities first
+Note: FP&A is financial planning and analysis
+Source: Bain & Company
+Phase three: Execute with three coordinated moves. First, close critical capability gaps with decisions to build, buy, or partner to secure the technology, data, and coverage needed for differentiated automation. AppLovin built its Axon platform in-house to maintain control over ad optimization data. ServiceNow acquired Moveworks to add an AI layer that made its workflow engine more discoverable. Salesforce partnered with Workday to extend Agentforce across HR and finance workflows without building a competing system.
+Second, set up the organization to execute. Attract AI engineering talent, build cloud-native architecture for multi-agent orchestration, and secure capital for model training and inference. Align incentives by shifting pricing from seats to outcomes, restructuring sales compensation to reward AI-driven results, and removing structural bias toward legacy products.
+Third, redesign your data and product foundations to be agent ready. Create agent-native data models&mdash;schemas and handoffs designed for machine execution rather than human interpretation. Enable agents to act end to end, capturing decisions and outcomes to build longitudinal data. Use that data to improve performance with every run. The goal is a durable moat: accumulated execution data that grows more valuable over time and becomes harder for competitors to replicate.
+Take action
+Technology transitions are often met with hype as well as resistance, and are framed in negative terms such as disruption, dislocation, or competitive threat. But once they&rsquo;re understood and incorporated into company strategies, they often unleash waves of innovation and opportunity for incumbents and new entrants alike.
+Still, the opportunity requires action. The strategic imperative isn&rsquo;t to protect the legacy SaaS model from disruption; it&rsquo;s to capture the larger opportunity of converting labor costs into software spending. But the window for SaaS leaders to define their position in the agentic AI market is measured in quarters, not years. AI-native startups are scaling at unprecedented speed: Cursor went from $100 million to $2 billion in annual recurring revenue in 14 months. Enterprise buyers are already deploying agents in high-volume, high-cost workflows. And every month that passes generates more execution data for early movers to compound their advantage. The companies that move first to map priority workflows, build proprietary data assets, and scale automation faster will define the next era of enterprise software.
+Disruption was inevitable. The real question now is: Who captures the new markets?
+Explore this series
+AI Brings Headwinds and Tailwinds to the Rule of 40
+The $100-Billion SaaS Opportunity Hiding in Cross-System Labor
+Agentic AI and the New Complexity Trap in Enterprise Software
+How Will AI Change Software Organizations?
+Published in May 2026
+Tags
+AI, Insights, and Solutions
+Artificial Intelligence
+Artificial Intelligence Insights
+CIO Insights
+Digital
+Software
+Technology
+How We've Helped Clients
+A Technology Company’s Transformation Restores Its Growth Trajectory
+Read case study
+Helping a Midsize ERP Player Compete against the Giants
+Read case study
+Performance Improvement
+Aggressively growing an IT service provider with a high-performance culture
+Read case study
+Contact Bain
+How can we help you?
+Business inquiry
+Career information
+Press relations
+Partnership request
+Speaker request
+See all offices
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":18015,"paragraph_count":76,"sentence_count":127,"boilerplate_hits":0,"symbol_ratio":0.0001,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   - Agentic AI’s big opportunity isn’t replacing software as a service (SaaS); it’s converting labor costs into software spending by automating coordination work. Bain’s research estimates this new market could be worth $100 billion in the US (see Figure 3). Vendors are already capturing about $4 bil.... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Skip to Content Content added to saved items Saved items ( 0 ) Close Removed from saved items Saved items ( 0 ) Close Copy link Email LinkedIn Facebook '> Progress: en At a Glance Agentic AI&rsquo;s big opportunity isn&rsquo;t replacing software as a service (SaaS); it&rsquo;s converting labor costs into software spending by automating coordination work.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Bain estimates the potential market could be $100 billion in the US, and more than 90% remains uncaptured.
+
+4. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Not all user workflows are equally automatable: Six factors determine where agents can realistically take over.
+
+5. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Winners assess data assets, identify valuable workflows, close competitive gaps, and use every deployment to capture data that makes the system smarter.
+
+6. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   This is the second in a five-part series on the software industry in the age of AI.
+
+## business_elements
+
+- companies: keyword search, Anysearch, GitHub, Salesforce, ServiceNow, Cursor
+- products: Agent, agents, Agents, Copilot, Cursor, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: $100, $100 billion, 3, $4 b, 0, 90%, 1, 2
+- quotes:  Will Agentic AI Disrupt SaaS? 
+
+## evidence_seed
+
+- company_actions: - Agentic AI’s big opportunity isn’t replacing software as a service (SaaS); it’s converting labor costs into software spending by automating coordination work. Bain’s research estimates this new market could be worth $100 billion in the US (see Figure 3). Vendors are already capturing about $4 bil.... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing / Skip to Content Content added to saved items Saved items ( 0 ) Close Removed from saved items Saved items ( 0 ) Close Copy link Email LinkedIn Facebook '> Progress: en At a Glance Agentic AI&rsquo;s big opportunity isn&rsquo;t replacing software as a service (SaaS); it&rsquo;s converting labor costs into software spending by automating coordination work. / This is the second in a five-part series on the software industry in the age of AI.
+- case_details: Winners assess data assets, identify valuable workflows, close competitive gaps, and use every deployment to capture data that makes the system smarter.
+- workflow_changes: Not all user workflows are equally automatable: Six factors determine where agents can realistically take over.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+- Agentic AI’s big opportunity isn’t replacing software as a service (SaaS); it’s converting labor costs into software spending by automating coordination work. Bain’s research estimates this new market could be worth $100 billion in the US (see Figure 3). Vendors are already capturing about $4 bil.... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

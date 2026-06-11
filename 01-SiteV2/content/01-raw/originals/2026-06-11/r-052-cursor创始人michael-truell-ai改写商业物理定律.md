@@ -1,0 +1,316 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-052
+title: "Cursor创始人Michael Truell：AI改写商业物理定律"
+original_url: "https://x.com/AYi_AInotes/status/2064767936943050855"
+canonical_url: "https://x.com/AYi_AInotes/status/2064767936943050855"
+source_name: "X：阿易 AI Notes (@AYi_AInotes)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-10T17:53:32.000Z"
+collected_at: 2026-06-11T01:29:52.821Z
+language: mixed
+full_text_hash: 2e35eee6cd623ef2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-052-cursor创始人michael-truell-ai改写商业物理定律.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-052-cursor创始人michael-truell-ai改写商业物理定律.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 70
+extractor_diagnostics: {"readability_score":70,"text_length":2676,"paragraph_count":13,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0176,"method":"main"}
+has_full_text: true
+content_length: 2676
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2e35eee6cd623ef2","missing":[]}
+source_volatility: high
+community_name: "X：阿易 AI Notes (@AYi_AInotes)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Cursor创始人Michael Truell：AI改写商业物理定律","discovery_summary":"Cursor创始人Michael Truell从12岁爱上编程，其创立的AI编码平台Cursor两年间从15人扩张至700人，服务全球60%财富500强。传统软件公司增长受制于\"人越多管理越复杂\"的引力，但AI打破这一规律--Agent级工具将个人生产力放大到过去一个组甚至一个部门的水平，人均创收极高。产品体验（Composer、Agent等）并非源于商业计划书，而是源自12岁少年\"把想法变成现实\"的初心。","source_name":"X：阿易 AI Notes (@AYi_AInotes)","origin_url":"https://x.com/AYi_AInotes/status/2064767936943050855","discovered_at":"2026-06-11T01:23:43.692Z","rank_on_page":131,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 245688996f962239
+content_hash: 2e35eee6cd623ef2
+semantic_hash: c44acacd66cdcb7c
+duplicate_of: ""
+first_seen_at: "2026-06-10T17:53:32.000Z"
+last_seen_at: 2026-06-11T01:29:52.821Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","阿易 AI Notes (@AYi_AInotes)","Cursor"],"products":["Cursor","Agent","Claude"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["12","15人","700人","60%","500","2","00","8"],"quotes":["人越多管理越复杂"]}
+evidence_seed: {"company_actions":["但是现在AI把这道引力干掉了， Cursor的人均创收高到离谱， 不是因为他们招了全世界最聪明的人 是因为他们每一个人的生产力 被一个Agent级的工具乘了一个前所未有的系数， 导致一个人能干过去一个组的活， 一个组能吃掉过去一个部门的任务， 我把这个视频看了2遍， 最打动我的是他侧着脸讲12岁那年第一次碰到编程的瞬间， 他说只需要一台电脑 就能把脑子里的想法变成现实， 那个表情 根本不是CEO在接受采访 更像是一个小男孩在讲他这辈子最上瘾的事，然后这个小孩从来没离开过， Cursor的Composer Cursor的Agent 那个边聊边写的体验 没有一个是从商业计划书里长出来的， 全都是从那个12岁小孩的脑子里长出来的 他想让每一个人 不管会不会写代码 都能体验到他当年体验过的那种魔法， 我只是有个想法 然后它就变成了现实， 这个故事最动人的地方就在这， 在这个所有人都在聊风口聊赛道的时候， 真正能打穿一切的东西 从来都不是商业分析， 是某个人在某个年纪 撞上了一件愿意为之付出一辈子的事， 然后AI来了 把他那件事的杠杆 拉到了最大。","00:00 Claude @claudeai 8h Michael Truell ( @ mntruell ) fell in love with coding at 12.","The company he co-founded, @ cursor_ai , went from 15 people to 700 in two years."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"Cursor创始人Michael Truell从12岁爱上编程，其创立的AI编码平台Cursor两年间从15人扩张至700人，服务全球60%财富500强。传统软件公司增长受制于\"人越多管理越复杂\"的引力，但AI打破这一规律--Agent级工具将个人生产力放大到过去一个组甚至一个部门的水平，人均创收极高。产品体验（Composer、Agent等）并非源于商业计划书，而是源自12岁少年\"把想法变成现实\"的初心。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Post Log in Sign up Post AYi @AYi_AInotes 看了Cursor创始人Michael Truell 的这个访谈，让我觉得Cursor的增长已经不能用人类的逻辑来解释了，有种AI改写了商业的物理定律的感觉… Michael Truell说这句话的时候 Cursor从15人到700人， 从零到服务全球60%的财富500强， 个物种在新环境里的进化速度， 传统互联网时代，软件公司的增长有一道谁都逃不掉的引力， 多做一单就要多招人， 多招人就要多管理， 多管理就要多流程， 多流程就会吃掉所有速度， 最后你一定会变成自己当年最恨的那种大公司的样子。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"但是现在AI把这道引力干掉了， Cursor的人均创收高到离谱， 不是因为他们招了全世界最聪明的人 是因为他们每一个人的生产力 被一个Agent级的工具乘了一个前所未有的系数， 导致一个人能干过去一个组的活， 一个组能吃掉过去一个部门的任务， 我把这个视频看了2遍， 最打动我的是他侧着脸讲12岁那年第一次碰到编程的瞬间， 他说只需要一台电脑 就能把脑子里的想法变成现实， 那个表情 根本不是CEO在接受采访 更像是一个小男孩在讲他这辈子最上瘾的事，然后这个小孩从来没离开过， Cursor的Composer Cursor的Agent 那个边聊边写的体验 没有一个是从商业计划书里长出来的， 全都是从那个12岁小孩的脑子里长出来的 他想让每一个人 不管会不会写代码 都能体验到他当年体验过的那种魔法， 我只是有个想法 然后它就变成了现实， 这个故事最动人的地方就在这， 在这个所有人都在聊风口聊赛道的时候， 真正能打穿一切的东西 从来都不是商业分析， 是某个人在某个年纪 撞上了一件愿意为之付出一辈子的事， 然后AI来了 把他那件事的杠杆 拉到了最大。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"00:00 Claude @claudeai 8h Michael Truell ( @ mntruell ) fell in love with coding at 12.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The company he co-founded, @ cursor_ai , went from 15 people to 700 in two years.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Today, over 60% of the Fortune 500 build with its AI coding platform.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Cursor创始人Michael Truell：AI改写商业物理定律
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+AYi
+@AYi_AInotes
+看了Cursor创始人Michael Truell 的这个访谈，让我觉得Cursor的增长已经不能用人类的逻辑来解释了，有种AI改写了商业的物理定律的感觉…
+Michael Truell说这句话的时候
+Cursor从15人到700人，
+从零到服务全球60%的财富500强，
+个物种在新环境里的进化速度，
+传统互联网时代，软件公司的增长有一道谁都逃不掉的引力，
+多做一单就要多招人，
+多招人就要多管理，
+多管理就要多流程，
+多流程就会吃掉所有速度，
+最后你一定会变成自己当年最恨的那种大公司的样子。
+但是现在AI把这道引力干掉了，
+Cursor的人均创收高到离谱，
+不是因为他们招了全世界最聪明的人
+是因为他们每一个人的生产力
+被一个Agent级的工具乘了一个前所未有的系数，
+导致一个人能干过去一个组的活，
+一个组能吃掉过去一个部门的任务，
+我把这个视频看了2遍，
+最打动我的是他侧着脸讲12岁那年第一次碰到编程的瞬间，
+他说只需要一台电脑
+就能把脑子里的想法变成现实，
+那个表情
+根本不是CEO在接受采访
+更像是一个小男孩在讲他这辈子最上瘾的事，然后这个小孩从来没离开过，
+Cursor的Composer
+Cursor的Agent
+那个边聊边写的体验
+没有一个是从商业计划书里长出来的，
+全都是从那个12岁小孩的脑子里长出来的
+他想让每一个人
+不管会不会写代码
+都能体验到他当年体验过的那种魔法，
+我只是有个想法
+然后它就变成了现实，
+这个故事最动人的地方就在这，
+在这个所有人都在聊风口聊赛道的时候，
+真正能打穿一切的东西
+从来都不是商业分析，
+是某个人在某个年纪
+撞上了一件愿意为之付出一辈子的事，
+然后AI来了
+把他那件事的杠杆
+拉到了最大。
+00:00
+Claude
+@claudeai
+8h
+Michael Truell ( @ mntruell ) fell in love with coding at 12. The company he co-founded, @ cursor_ai , went from 15 people to 700 in two years.
+Today, over 60% of the Fortune 500 build with its AI coding platform.
+00:00
+5:53 PM · Jun 10, 2026 5.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 25
+Read 2 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+AYi
+@AYi_AInotes
+看了Cursor创始人Michael Truell 的这个访谈，让我觉得Cursor的增长已经不能用人类的逻辑来解释了，有种AI改写了商业的物理定律的感觉…
+Michael Truell说这句话的时候
+Cursor从15人到700人，
+从零到服务全球60%的财富500强，
+个物种在新环境里的进化速度，
+传统互联网时代，软件公司的增长有一道谁都逃不掉的引力，
+多做一单就要多招人，
+多招人就要多管理，
+多管理就要多流程，
+多流程就会吃掉所有速度，
+最后你一定会变成自己当年最恨的那种大公司的样子。
+但是现在AI把这道引力干掉了，
+Cursor的人均创收高到离谱，
+不是因为他们招了全世界最聪明的人
+是因为他们每一个人的生产力
+被一个Agent级的工具乘了一个前所未有的系数，
+导致一个人能干过去一个组的活，
+一个组能吃掉过去一个部门的任务，
+我把这个视频看了2遍，
+最打动我的是他侧着脸讲12岁那年第一次碰到编程的瞬间，
+他说只需要一台电脑
+就能把脑子里的想法变成现实，
+那个表情
+根本不是CEO在接受采访
+更像是一个小男孩在讲他这辈子最上瘾的事，然后这个小孩从来没离开过，
+Cursor的Composer
+Cursor的Agent
+那个边聊边写的体验
+没有一个是从商业计划书里长出来的，
+全都是从那个12岁小孩的脑子里长出来的
+他想让每一个人
+不管会不会写代码
+都能体验到他当年体验过的那种魔法，
+我只是有个想法
+然后它就变成了现实，
+这个故事最动人的地方就在这，
+在这个所有人都在聊风口聊赛道的时候，
+真正能打穿一切的东西
+从来都不是商业分析，
+是某个人在某个年纪
+撞上了一件愿意为之付出一辈子的事，
+然后AI来了
+把他那件事的杠杆
+拉到了最大。
+00:00
+Claude
+@claudeai
+8h
+Michael Truell ( @ mntruell ) fell in love with coding at 12. The company he co-founded, @ cursor_ai , went from 15 people to 700 in two years.
+Today, over 60% of the Fortune 500 build with its AI coding platform.
+00:00
+5:53 PM · Jun 10, 2026 5.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 25
+Read 2 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 70
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":70,"text_length":2676,"paragraph_count":13,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0176,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Cursor创始人Michael Truell从12岁爱上编程，其创立的AI编码平台Cursor两年间从15人扩张至700人，服务全球60%财富500强。传统软件公司增长受制于"人越多管理越复杂"的引力，但AI打破这一规律--Agent级工具将个人生产力放大到过去一个组甚至一个部门的水平，人均创收极高。产品体验（Composer、Agent等）并非源于商业计划书，而是源自12岁少年"把想法变成现实"的初心。
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post AYi @AYi_AInotes 看了Cursor创始人Michael Truell 的这个访谈，让我觉得Cursor的增长已经不能用人类的逻辑来解释了，有种AI改写了商业的物理定律的感觉… Michael Truell说这句话的时候 Cursor从15人到700人， 从零到服务全球60%的财富500强， 个物种在新环境里的进化速度， 传统互联网时代，软件公司的增长有一道谁都逃不掉的引力， 多做一单就要多招人， 多招人就要多管理， 多管理就要多流程， 多流程就会吃掉所有速度， 最后你一定会变成自己当年最恨的那种大公司的样子。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   但是现在AI把这道引力干掉了， Cursor的人均创收高到离谱， 不是因为他们招了全世界最聪明的人 是因为他们每一个人的生产力 被一个Agent级的工具乘了一个前所未有的系数， 导致一个人能干过去一个组的活， 一个组能吃掉过去一个部门的任务， 我把这个视频看了2遍， 最打动我的是他侧着脸讲12岁那年第一次碰到编程的瞬间， 他说只需要一台电脑 就能把脑子里的想法变成现实， 那个表情 根本不是CEO在接受采访 更像是一个小男孩在讲他这辈子最上瘾的事，然后这个小孩从来没离开过， Cursor的Composer Cursor的Agent 那个边聊边写的体验 没有一个是从商业计划书里长出来的， 全都是从那个12岁小孩的脑子里长出来的 他想让每一个人 不管会不会写代码 都能体验到他当年体验过的那种魔法， 我只是有个想法 然后它就变成了现实， 这个故事最动人的地方就在这， 在这个所有人都在聊风口聊赛道的时候， 真正能打穿一切的东西 从来都不是商业分析， 是某个人在某个年纪 撞上了一件愿意为之付出一辈子的事， 然后AI来了 把他那件事的杠杆 拉到了最大。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   00:00 Claude @claudeai 8h Michael Truell ( @ mntruell ) fell in love with coding at 12.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The company he co-founded, @ cursor_ai , went from 15 people to 700 in two years.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Today, over 60% of the Fortune 500 build with its AI coding platform.
+
+## business_elements
+
+- companies: X, 阿易 AI Notes (@AYi_AInotes), Cursor
+- products: Cursor, Agent, Claude
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 12, 15人, 700人, 60%, 500, 2, 00, 8
+- quotes: 人越多管理越复杂
+
+## evidence_seed
+
+- company_actions: 但是现在AI把这道引力干掉了， Cursor的人均创收高到离谱， 不是因为他们招了全世界最聪明的人 是因为他们每一个人的生产力 被一个Agent级的工具乘了一个前所未有的系数， 导致一个人能干过去一个组的活， 一个组能吃掉过去一个部门的任务， 我把这个视频看了2遍， 最打动我的是他侧着脸讲12岁那年第一次碰到编程的瞬间， 他说只需要一台电脑 就能把脑子里的想法变成现实， 那个表情 根本不是CEO在接受采访 更像是一个小男孩在讲他这辈子最上瘾的事，然后这个小孩从来没离开过， Cursor的Composer Cursor的Agent 那个边聊边写的体验 没有一个是从商业计划书里长出来的， 全都是从那个12岁小孩的脑子里长出来的 他想让每一个人 不管会不会写代码 都能体验到他当年体验过的那种魔法， 我只是有个想法 然后它就变成了现实， 这个故事最动人的地方就在这， 在这个所有人都在聊风口聊赛道的时候， 真正能打穿一切的东西 从来都不是商业分析， 是某个人在某个年纪 撞上了一件愿意为之付出一辈子的事， 然后AI来了 把他那件事的杠杆 拉到了最大。 / 00:00 Claude @claudeai 8h Michael Truell ( @ mntruell ) fell in love with coding at 12. / The company he co-founded, @ cursor_ai , went from 15 people to 700 in two years.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：阿易 AI Notes (@AYi_AInotes)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Cursor创始人Michael Truell：AI改写商业物理定律","discovery_summary":"Cursor创始人Michael Truell从12岁爱上编程，其创立的AI编码平台Cursor两年间从15人扩张至700人，服务全球60%财富500强。传统软件公司增长受制于\"人越多管理越复杂\"的引力，但AI打破这一规律--Agent级工具将个人生产力放大到过去一个组甚至一个部门的水平，人均创收极高。产品体验（Composer、Agent等）并非源于商业计划书，而是源自12岁少年\"把想法变成现实\"的初心。","source_name":"X：阿易 AI Notes (@AYi_AInotes)","origin_url":"https://x.com/AYi_AInotes/status/2064767936943050855","discovered_at":"2026-06-11T01:23:43.692Z","rank_on_page":131,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Cursor创始人Michael Truell从12岁爱上编程，其创立的AI编码平台Cursor两年间从15人扩张至700人，服务全球60%财富500强。传统软件公司增长受制于"人越多管理越复杂"的引力，但AI打破这一规律--Agent级工具将个人生产力放大到过去一个组甚至一个部门的水平，人均创收极高。产品体验（Composer、Agent等）并非源于商业计划书，而是源自12岁少年"把想法变成现实"的初心。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

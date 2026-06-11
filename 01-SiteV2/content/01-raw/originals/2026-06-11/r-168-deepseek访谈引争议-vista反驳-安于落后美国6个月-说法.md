@@ -1,0 +1,197 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-168
+title: "DeepSeek访谈引争议：Vista反驳\"安于落后美国6个月\"说法"
+original_url: "https://x.com/vista8/status/2064707016531320937"
+canonical_url: "https://x.com/vista8/status/2064707016531320937"
+source_name: "X：Vista (@vista8)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-10T13:51:27.000Z"
+collected_at: 2026-06-11T01:29:53.070Z
+language: mixed
+full_text_hash: c6cd7479a3addf6d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-168-deepseek访谈引争议-vista反驳-安于落后美国6个月-说法.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-168-deepseek访谈引争议-vista反驳-安于落后美国6个月-说法.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: summary-only-low-readable-body
+extraction_quality: failed
+extraction_method: "json-ld"
+readability_score: 49
+extractor_diagnostics: {"readability_score":49,"text_length":323,"paragraph_count":8,"sentence_count":12,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+has_full_text: false
+content_length: 161
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_full_text","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c6cd7479a3addf6d","missing":["missing_full_text"]}
+source_volatility: high
+community_name: "X：Vista (@vista8)"
+capture_scope: aihot_visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"DeepSeek访谈引争议：Vista反驳\"安于落后美国6个月\"说法","discovery_summary":"@NikoMcCarty 探访DeepSeek总部称，这家300人、2023年由梁文锋创立的公司脱胎于幻方，位于杭州无标识大楼，2025年1月发布R1模型，团队年轻，目前满足于落后美国约6个月，保持低调。Vista反驳：中国大模型公司并非安于落后，而是受限于显卡和技术条件。","source_name":"X：Vista (@vista8)","origin_url":"https://x.com/vista8/status/2064707016531320937","discovered_at":"2026-06-11T01:23:43.712Z","rank_on_page":235,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2359e4739420657b
+content_hash: c6cd7479a3addf6d
+semantic_hash: 5e8e9de08ae0b1be
+duplicate_of: ""
+first_seen_at: "2026-06-10T13:51:27.000Z"
+last_seen_at: 2026-06-11T01:29:53.070Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["discard"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":2,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","Vista (@vista8)"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":[],"numbers":["6","300人","2023","2025","1"],"quotes":["安于落后美国6个月"]}
+evidence_seed: {"company_actions":["文章提到DeepSeek目前满足于落后美国公司约 6 个月.","中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"number","text":"@NikoMcCarty 探访DeepSeek总部称，这家300人、2023年由梁文锋创立的公司脱胎于幻方，位于杭州无标识大楼，2025年1月发布R1模型，团队年轻，目前满足于落后美国约6个月，保持低调。Vista反驳：中国大模型公司并非安于落后，而是受限于显卡和技术条件。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"文章提到DeepSeek目前满足于落后美国公司约 6 个月.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# DeepSeek访谈引争议：Vista反驳"安于落后美国6个月"说法
+
+## clean_text
+
+文章提到DeepSeek目前满足于落后美国公司约 6 个月......
+这有点扯吧。
+中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。
+文章提到DeepSeek目前满足于落后美国公司约 6 个月......
+这有点扯吧。
+中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。
+
+## full_text
+
+文章提到DeepSeek目前满足于落后美国公司约 6 个月......
+这有点扯吧。
+中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。
+文章提到DeepSeek目前满足于落后美国公司约 6 个月......
+这有点扯吧。
+中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 49
+- fetch_status: summary-only-low-readable-body
+- extraction_quality: failed
+- diagnostics: {"readability_score":49,"text_length":323,"paragraph_count":8,"sentence_count":12,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   @NikoMcCarty 探访DeepSeek总部称，这家300人、2023年由梁文锋创立的公司脱胎于幻方，位于杭州无标识大楼，2025年1月发布R1模型，团队年轻，目前满足于落后美国约6个月，保持低调。Vista反驳：中国大模型公司并非安于落后，而是受限于显卡和技术条件。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   文章提到DeepSeek目前满足于落后美国公司约 6 个月.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。
+
+## business_elements
+
+- companies: X, Vista (@vista8)
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: 暂无公开信息
+- numbers: 6, 300人, 2023, 2025, 1
+- quotes: 安于落后美国6个月
+
+## evidence_seed
+
+- company_actions: 文章提到DeepSeek目前满足于落后美国公司约 6 个月. / 中国每家大模型公司都受限于显卡和技术，不是不想追啊，谁想落后，谁安于落后。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- discard
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Vista (@vista8)
+- capture_scope: aihot_visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"DeepSeek访谈引争议：Vista反驳\"安于落后美国6个月\"说法","discovery_summary":"@NikoMcCarty 探访DeepSeek总部称，这家300人、2023年由梁文锋创立的公司脱胎于幻方，位于杭州无标识大楼，2025年1月发布R1模型，团队年轻，目前满足于落后美国约6个月，保持低调。Vista反驳：中国大模型公司并非安于落后，而是受限于显卡和技术条件。","source_name":"X：Vista (@vista8)","origin_url":"https://x.com/vista8/status/2064707016531320937","discovered_at":"2026-06-11T01:23:43.712Z","rank_on_page":235,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+@NikoMcCarty 探访DeepSeek总部称，这家300人、2023年由梁文锋创立的公司脱胎于幻方，位于杭州无标识大楼，2025年1月发布R1模型，团队年轻，目前满足于落后美国约6个月，保持低调。Vista反驳：中国大模型公司并非安于落后，而是受限于显卡和技术条件。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

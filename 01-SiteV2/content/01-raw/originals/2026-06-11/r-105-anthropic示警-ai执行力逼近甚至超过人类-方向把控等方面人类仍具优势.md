@@ -1,0 +1,226 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-105
+title: "Anthropic示警：AI执行力逼近甚至超过人类，方向把控等方面人类仍具优势"
+original_url: "https://www.ithome.com/0/962/385.htm"
+canonical_url: "https://ithome.com/0/962/385.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-10T05:40:06.000Z"
+collected_at: 2026-06-11T01:29:52.964Z
+language: mixed
+full_text_hash: 959f285cdf3baef2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-105-anthropic示警-ai执行力逼近甚至超过人类-方向把控等方面人类仍具优势.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-105-anthropic示警-ai执行力逼近甚至超过人类-方向把控等方面人类仍具优势.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 63
+extractor_diagnostics: {"readability_score":63,"text_length":1274,"paragraph_count":17,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 1274
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"959f285cdf3baef2","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Anthropic示警：AI执行力逼近甚至超过人类，方向把控等方面人类仍具优势","discovery_summary":"Anthropic于6月5日发布博文称，AI正加速自身研发，走向递归自我改进。能力上，Claude独立完成任务时长约每4个月翻倍：Claude Opus 3（2024年3月）约4分钟，Sonnet 3.7（2025年3月）约1.5小时，Opus 4.6（2026年3月）达12小时；Mythos Preview连续工作至少16小时。SWE-bench成绩2年内从个位数逼近饱和。截至2026年5月，Anthropic超80%合入代码由Claude编写，工程师人均日代码量较2024年增8倍。2026年4月Claude完成超800项修复，将一类API错误压至1/1000。文章强调人类优势仍在研究判断与方向把控，AI执行逼近甚至超过人类。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/962/385.htm","discovered_at":"2026-06-11T01:23:43.732Z","rank_on_page":349,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 33e101b8bc2674cf
+content_hash: 959f285cdf3baef2
+semantic_hash: f9a93b8e9c312611
+duplicate_of: ""
+first_seen_at: "2026-06-10T05:40:06.000Z"
+last_seen_at: 2026-06-11T01:29:52.964Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","Anthropic"],"products":["Claude"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["6","5","4","3","2024","3.7","2025","1.5"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 6 月 10 日消息，Anthropic 于 6 月 5 日发布博文， 指出人工智能（AI）已开始加速 AI 本身研发，正迈步走向递归自我改进。","IT之家注：递归自我改进（recursive self-improvement）是指 AI 系统能够自主设计、训练、评估并迭代自己的下一代版本，形成“自己改进自己”的闭环。","这一概念被视为 AI 发展中的关键分水岭，一旦闭环成立，技术进步速度可能更多取决于算力、基础设施与验证机制，而不再主要受限于人工研发节奏。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Anthropic于6月5日发布博文称，AI正加速自身研发，走向递归自我改进。能力上，Claude独立完成任务时长约每4个月翻倍：Claude Opus 3（2024年3月）约4分钟，Sonnet 3.7（2025年3月）约1.5小时，Opus 4.6（2026年3月）达12小时；Mythos Preview连续工作至少16小时。SWE-bench成绩2年内从个位数逼近饱和。截至2026年5月，Anthropic超80%合入代码由Claude编写，工程师人均日代码量较2024年增8倍。2026年4月Claude完成超800项修复，将一类API错误压至1/1000。文章强调人类优势仍在研究判断与方向把控，AI执行逼近甚至超过人类。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 10 日消息，Anthropic 于 6 月 5 日发布博文， 指出人工智能（AI）已开始加速 AI 本身研发，正迈步走向递归自我改进。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家注：递归自我改进（recursive self-improvement）是指 AI 系统能够自主设计、训练、评估并迭代自己的下一代版本，形成“自己改进自己”的闭环。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这一概念被视为 AI 发展中的关键分水岭，一旦闭环成立，技术进步速度可能更多取决于算力、基础设施与验证机制，而不再主要受限于人工研发节奏。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该博文强调这一阶段尚未到来，也并非必然发生，但相关信号已比多数机构准备得更早、更强。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Anthropic 援引公开基准称，AI 可稳定独立完成任务的时长约每 4 个月翻倍： 2024 年 3 月，Claude Opus 3 可完成约 4 分钟的软件任务； 2025 年 3 月，Claude Sonnet 3.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Anthropic示警：AI执行力逼近甚至超过人类，方向把控等方面人类仍具优势
+
+## clean_text
+
+IT之家 6 月 10 日消息，Anthropic 于 6 月 5 日发布博文， 指出人工智能（AI）已开始加速 AI 本身研发，正迈步走向递归自我改进。
+IT之家注：递归自我改进（recursive self-improvement）是指 AI 系统能够自主设计、训练、评估并迭代自己的下一代版本，形成“自己改进自己”的闭环。
+这一概念被视为 AI 发展中的关键分水岭，一旦闭环成立，技术进步速度可能更多取决于算力、基础设施与验证机制，而不再主要受限于人工研发节奏。
+该博文强调这一阶段尚未到来，也并非必然发生，但相关信号已比多数机构准备得更早、更强。
+首先是能力加速。Anthropic 援引公开基准称，AI 可稳定独立完成任务的时长约每 4 个月翻倍：
+2024 年 3 月，Claude Opus 3 可完成约 4 分钟的软件任务；
+2025 年 3 月，Claude Sonnet 3.7 可处理约 1.5 小时任务；
+2026 年 3 月，Claude Opus 4.6 已能处理 12 小时任务。
+在公开基准上，模型进步也很快。SWE-bench 衡量真实软件工程修复能力，模型在 2 年内从个位数成绩逼近饱和。
+CORE-Bench 测试复现实验论文结果的能力，AI 在 2024 年约 20% 的成功率，在 15 个月后已接近饱和。METR 还发现，Claude Mythos Preview 连续工作时长至少达到 16 小时，已接近现有任务集可测上限。
+在 Anthropic 内部， 截至 2026 年 5 月，超过 80% 的合入代码由 Claude 编写 ；在 Claude Code 于 2025 年 2 月进入研究预览前，这一比例还只是个位数。
+随着模型从代码建议走向自主运行与长时任务处理，工程师人均日合入代码量明显抬升，2026 年 Q2 典型工程师较 2024 年达到 8 倍。不过文中也提醒，代码行数偏重数量，不能等同真实生产率。
+除代码产出外，Claude 在执行复杂任务上的效果也更强。Anthropic 员工 2026 年 3 月一项覆盖 130 人的调查显示，受访者估计在 Mythos Preview 帮助下，产出中位数约为无 AI 时的 4 倍。
+2026 年 4 月，Claude 还完成超过 800 项修复，将一类 API 错误压低到原来的 1/1000，负责监督的工程师估计，若纯靠人工可能要花 4 年。
+Anthropic 文章反复强调，当前人类优势仍集中在研究判断、问题选择、结果信任与方向把控上。当前 AI 在“执行”上逼近甚至超过人类，但在“决定做什么”上仍有差距。
+Anthropic 还透露 AI 自我改进并不会凭空爆发，它仍受算力约束。即便 Claude 能写更多代码，企业若想把这种闭环推向更高强度，仍需要更大规模计算资源。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 10 日消息，Anthropic 于 6 月 5 日发布博文， 指出人工智能（AI）已开始加速 AI 本身研发，正迈步走向递归自我改进。
+IT之家注：递归自我改进（recursive self-improvement）是指 AI 系统能够自主设计、训练、评估并迭代自己的下一代版本，形成“自己改进自己”的闭环。
+这一概念被视为 AI 发展中的关键分水岭，一旦闭环成立，技术进步速度可能更多取决于算力、基础设施与验证机制，而不再主要受限于人工研发节奏。
+该博文强调这一阶段尚未到来，也并非必然发生，但相关信号已比多数机构准备得更早、更强。
+首先是能力加速。Anthropic 援引公开基准称，AI 可稳定独立完成任务的时长约每 4 个月翻倍：
+2024 年 3 月，Claude Opus 3 可完成约 4 分钟的软件任务；
+2025 年 3 月，Claude Sonnet 3.7 可处理约 1.5 小时任务；
+2026 年 3 月，Claude Opus 4.6 已能处理 12 小时任务。
+在公开基准上，模型进步也很快。SWE-bench 衡量真实软件工程修复能力，模型在 2 年内从个位数成绩逼近饱和。
+CORE-Bench 测试复现实验论文结果的能力，AI 在 2024 年约 20% 的成功率，在 15 个月后已接近饱和。METR 还发现，Claude Mythos Preview 连续工作时长至少达到 16 小时，已接近现有任务集可测上限。
+在 Anthropic 内部， 截至 2026 年 5 月，超过 80% 的合入代码由 Claude 编写 ；在 Claude Code 于 2025 年 2 月进入研究预览前，这一比例还只是个位数。
+随着模型从代码建议走向自主运行与长时任务处理，工程师人均日合入代码量明显抬升，2026 年 Q2 典型工程师较 2024 年达到 8 倍。不过文中也提醒，代码行数偏重数量，不能等同真实生产率。
+除代码产出外，Claude 在执行复杂任务上的效果也更强。Anthropic 员工 2026 年 3 月一项覆盖 130 人的调查显示，受访者估计在 Mythos Preview 帮助下，产出中位数约为无 AI 时的 4 倍。
+2026 年 4 月，Claude 还完成超过 800 项修复，将一类 API 错误压低到原来的 1/1000，负责监督的工程师估计，若纯靠人工可能要花 4 年。
+Anthropic 文章反复强调，当前人类优势仍集中在研究判断、问题选择、结果信任与方向把控上。当前 AI 在“执行”上逼近甚至超过人类，但在“决定做什么”上仍有差距。
+Anthropic 还透露 AI 自我改进并不会凭空爆发，它仍受算力约束。即便 Claude 能写更多代码，企业若想把这种闭环推向更高强度，仍需要更大规模计算资源。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 63
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":63,"text_length":1274,"paragraph_count":17,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   Anthropic于6月5日发布博文称，AI正加速自身研发，走向递归自我改进。能力上，Claude独立完成任务时长约每4个月翻倍：Claude Opus 3（2024年3月）约4分钟，Sonnet 3.7（2025年3月）约1.5小时，Opus 4.6（2026年3月）达12小时；Mythos Preview连续工作至少16小时。SWE-bench成绩2年内从个位数逼近饱和。截至2026年5月，Anthropic超80%合入代码由Claude编写，工程师人均日代码量较2024年增8倍。2026年4月Claude完成超800项修复，将一类API错误压至1/1000。文章强调人类优势仍在研究判断与方向把控，AI执行逼近甚至超过人类。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 10 日消息，Anthropic 于 6 月 5 日发布博文， 指出人工智能（AI）已开始加速 AI 本身研发，正迈步走向递归自我改进。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家注：递归自我改进（recursive self-improvement）是指 AI 系统能够自主设计、训练、评估并迭代自己的下一代版本，形成“自己改进自己”的闭环。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   这一概念被视为 AI 发展中的关键分水岭，一旦闭环成立，技术进步速度可能更多取决于算力、基础设施与验证机制，而不再主要受限于人工研发节奏。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   该博文强调这一阶段尚未到来，也并非必然发生，但相关信号已比多数机构准备得更早、更强。
+
+6. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   Anthropic 援引公开基准称，AI 可稳定独立完成任务的时长约每 4 个月翻倍： 2024 年 3 月，Claude Opus 3 可完成约 4 分钟的软件任务； 2025 年 3 月，Claude Sonnet 3.
+
+## business_elements
+
+- companies: IT之家（RSS）, Anthropic
+- products: Claude
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 6, 5, 4, 3, 2024, 3.7, 2025, 1.5
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 10 日消息，Anthropic 于 6 月 5 日发布博文， 指出人工智能（AI）已开始加速 AI 本身研发，正迈步走向递归自我改进。 / IT之家注：递归自我改进（recursive self-improvement）是指 AI 系统能够自主设计、训练、评估并迭代自己的下一代版本，形成“自己改进自己”的闭环。 / 这一概念被视为 AI 发展中的关键分水岭，一旦闭环成立，技术进步速度可能更多取决于算力、基础设施与验证机制，而不再主要受限于人工研发节奏。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Anthropic示警：AI执行力逼近甚至超过人类，方向把控等方面人类仍具优势","discovery_summary":"Anthropic于6月5日发布博文称，AI正加速自身研发，走向递归自我改进。能力上，Claude独立完成任务时长约每4个月翻倍：Claude Opus 3（2024年3月）约4分钟，Sonnet 3.7（2025年3月）约1.5小时，Opus 4.6（2026年3月）达12小时；Mythos Preview连续工作至少16小时。SWE-bench成绩2年内从个位数逼近饱和。截至2026年5月，Anthropic超80%合入代码由Claude编写，工程师人均日代码量较2024年增8倍。2026年4月Claude完成超800项修复，将一类API错误压至1/1000。文章强调人类优势仍在研究判断与方向把控，AI执行逼近甚至超过人类。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/962/385.htm","discovered_at":"2026-06-11T01:23:43.732Z","rank_on_page":349,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Anthropic于6月5日发布博文称，AI正加速自身研发，走向递归自我改进。能力上，Claude独立完成任务时长约每4个月翻倍：Claude Opus 3（2024年3月）约4分钟，Sonnet 3.7（2025年3月）约1.5小时，Opus 4.6（2026年3月）达12小时；Mythos Preview连续工作至少16小时。SWE-bench成绩2年内从个位数逼近饱和。截至2026年5月，Anthropic超80%合入代码由Claude编写，工程师人均日代码量较2024年增8倍。2026年4月Claude完成超800项修复，将一类API错误压至1/1000。文章强调人类优势仍在研究判断与方向把控，AI执行逼近甚至超过人类。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

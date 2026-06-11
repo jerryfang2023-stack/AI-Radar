@@ -1,0 +1,357 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-046
+title: "ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services"
+original_url: "https://www.businesswire.com/news/home/20260225955474/en/ElevenLabs-and-Better.com-Showcase-Success-of-AI-Loan-Agent-Betsy-at-Scale-in-Financial-Services"
+canonical_url: "https://businesswire.com/news/home/20260225955474/en/ElevenLabs-and-Better.com-Showcase-Success-of-AI-Loan-Agent-Betsy-at-Scale-in-Financial-Services"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-11T01:29:52.798Z
+language: mixed
+full_text_hash: 553d8698a134826e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-046-elevenlabs-and-better-com-showcase-success-of-ai-loan-agent-betsytm-at.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-046-elevenlabs-and-better-com-showcase-success-of-ai-loan-agent-betsytm-at.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":9113,"paragraph_count":41,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 9113
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"553d8698a134826e","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: cb6ac8c2a2fa521f
+content_hash: 553d8698a134826e
+semantic_hash: 921ec86bc1545964
+duplicate_of: ""
+first_seen_at: "2026-06-11T01:29:52.798Z"
+last_seen_at: 2026-06-11T01:29:52.798Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["Agent","Agents","agent","MCP","agents"],"people":[],"industries":["金融 / 保险","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["100","000 m","35.5%","2025","1.89 million","1","666","24"],"quotes":["Supporting nearly 100,000 borrower interactions a month in a highly regulated space like mortgage requires more than a great voice model,","One Day Mortgage,","Company,"]}
+evidence_seed: {"company_actions":["NEW YORK--(BUSINESS WIRE)--ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale. This empowers Better.com to provide sig... / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing","ElevenLabs and Better.","com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale."],"case_details":["com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services Share Better partners with ElevenLabs to make AI assisted loans accessible through the first voice-based loan agent built exclusively for the mortgage industry NEW YORK--( BUSINESS WIRE )-- ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"NEW YORK--(BUSINESS WIRE)--ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale. This empowers Better.com to provide sig... / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ElevenLabs and Better.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services Share Better partners with ElevenLabs to make AI assisted loans accessible through the first voice-based loan agent built exclusively for the mortgage industry NEW YORK--( BUSINESS WIRE )-- ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This empowers Better.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com to provide significant cost savings, higher conversion, and a faster borrower experience while meeting the demands in a highly regulated industry.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services
+
+## clean_text
+
+ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services
+Share
+Better partners with ElevenLabs to make AI assisted loans accessible through the first voice-based loan agent built exclusively for the mortgage industry
+NEW YORK--( BUSINESS WIRE )-- ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale. This empowers Better.com to provide significant cost savings, higher conversion, and a faster borrower experience while meeting the demands in a highly regulated industry.
+Better.com uses ElevenLabs Agents as the voice interface for Betsy™, its generative AI loan agent, to handle nearly 100,000 mortgage-related phone calls per month , automating 35.5% of borrower inquiries end to end . In 2025 alone, Betsy placed 1.89 million inbound and outbound calls , saving Better’s loan officers more than 1,666 hours of human time each month .
+“We built Better to be AI-native from day one. By combining Tinman® with ElevenLabs’ technology, we’ve scaled the first voice-base AI loan agent built exclusively for the mortgage industry,” said Vishal Garg, Founder and CEO of Better.com. “AI-voice automation through Betsy™ has allowed us to move routine customer interactions out of manual workflows, helping us reduce the cost to originate while offering borrowers immediate and 24/7 support.”
+These gains have allowed Better’s licensed consultants to shift away from repetitive follow-up tasks and focus on higher-value advisory work - helping borrowers navigate complex scenarios and make informed financial decisions.
+Measurable Impact on Mortgage Economics
+According to the case study, Better’s use of AI voice automation has delivered material business results across its consumer mortgage business, including:
+41% reduction in average cost to originate
+100% increase in lead-to-lock conversion in 2025
+More competitive borrower rates , driven by operational efficiencies passed directly into pricing
+By moving routine eligibility checks, pricing conversations, and rate locks to an AI voice agent, Better has improved both borrower experience and unit economics without compromising compliance.
+Better initially launched its voice experience using a speech-to-speech model but transitioned to a modular pipeline combining speech-to-text, a large language model, and text-to-speech with ElevenLabs Agents to achieve lower latency, greater control, and higher reliability. A key factor in selecting ElevenLabs was platform stability under high tool-call volume. In production, a single borrower conversation may trigger dozens of internal system calls. For financial services workflows that span multiple systems and regulatory checkpoints, this level of reliability at this scale is critical.
+Betsy™ is layered on top of Better’s proprietary loan engine, Tinman®, which computes pricing, eligibility, and approvals. ElevenLabs Agents serve as the controlled voice interface, communicating Tinman’s outputs to borrowers. All regulated steps - including credit pulls, authentication, rate locks, and transfers to human consultants - require explicit consent and adhere to state licensing requirements.
+Orchestration runs entirely within Better’s environment through an MCP-based multi-agent system connected to Tinman tools, while calls terminate at a single ElevenLabs Agent endpoint. This architecture ensures determinations remain within Better’s systems, with ElevenLabs providing a consistent, natural voice experience.
+“Supporting nearly 100,000 borrower interactions a month in a highly regulated space like mortgage requires more than a great voice model,” said Lauren Rothwell, Head of Agents Growth at ElevenLabs. “It requires reliability, accuracy, and full compliance - and that’s exactly what ElevenAgents is built to deliver. We’re proud to partner with Better to power a sophisticated AI agent that’s transforming financial services.”
+Through the use of ElevenLabs Agents, Better now delivers a consistent, natural voice experience across every borrower interaction. Tinman’s scenario modeling enables exploration of options that would be difficult to compute manually, while the cloned “Betsy” voice ensures clarity and continuity across millions of conversations.
+The full case study is available on ElevenLabs’ website: https://elevenlabs.io/blog/better.
+About ElevenLabs
+ElevenLabs is reimagining human-technology interaction through advanced AI research and products. ElevenAgents enables businesses to deploy reliable, intelligent agents at scale, with built-in integrations, testing, monitoring and enterprise-grade reliability. ElevenCreative empowers creators and marketers to generate and edit speech, music, images, and video in more than 70 languages. Both platforms are powered by ElevenLabs’ industry-leading AI research. The company pioneered the first human-like AI voice model and has since expanded its capabilities across dubbing, transcription, music, sound effects and speech-to-speech technologies.
+About Better Home & Finance Holding Company
+Better Home & Finance Holding Company (NASDAQ: BETR; BETRW) is the first AI-native mortgage and home equity finance platform, and first fintech to fund more than $110 billion in loan volume. Since 2016, Better has leveraged its industry-leading AI platform, Tinman®, to achieve a singular mission of making homeownership cheaper, faster, and easier for all Americans. Tinman™ allows customers to see their rate options in seconds, get pre-approved in minutes, lock in rates, and close their loan in as little as three weeks. In addition, Betsy™, the first voice-based AI loan agent built exclusively for the mortgage industry, revolutionizes the homebuying journey by delivering timely application status updates to consumers, answering questions, and moving their loan application along 24/7/365. Better’s mortgage offerings include GSE-conforming mortgage loans, FHA and VA loans, and jumbo mortgage loans. In January 2023, Better launched "One Day Mortgage,” allowing eligible customers to go from click to Commitment Letter within 24 hours. Better serves customers in all 50 US states and the United Kingdom.
+For more information, follow @betterdotcom on Instagram and TikTok.
+Contacts
+Media Contacts
+Email: comms@better.com
+Industry:
+Software
+Banking
+Professional Services
+Technology
+Residential Building & Real Estate
+Artificial Intelligence
+Construction & Property
+Public Relations/Investor Relations
+Audio/Video
+Communications
+Finance
+Other Technology
+Better Home & Finance Holding Company
+NASDAQ:BETR
+Release Versions
+English
+$Cashtags
+$BETR
+Hashtags
+#BETR
+#InvestorRelations
+#Mortgage
+Contacts
+Media Contacts
+Email: comms@better.com
+Social Media Profiles
+Better on LinkedIn
+Better on X
+Better on YouTube
+More News From Better Home & Finance Holding Company
+Get RSS Feed
+Better and Coinbase Celebrate the First Token-backed Mortgage Fund Backed by Fannie Mae, Announce Official Product Launch Date
+NEW YORK--( BUSINESS WIRE )--Better Home & Finance Holding Company (NASDAQ: BETR), and Coinbase (NASDAQ: COIN), today announced the funding of the first Fannie Mae-backed mortgage backed by Bitcoin in the United States. The companies also confirmed plans to make the product available to qualified borrowers nationwide by Summer 2026. In March 2026, Better and Coinbase announced plans to offer the first Fannie Mae-eligible token-backed mortgage. The product is designed to address the evolving f...
+Better Home & Finance Holding Company Announces First Quarter 2026 Results
+NEW YORK--( BUSINESS WIRE )--Better Home & Finance Holding Company (NASDAQ: BETR; BETRW) (“Better,” the “Company,” “our” or “we”), the AI-native mortgage and home equity finance company, today reported financial results for the first quarter ended March 31, 2026. “Q1 2026 was a strong quarter for Better. We grew loan volume 89% year over year and exceeded the high end of our previously-issued guidance with revenue up 52% year over year. Tinman AI platform volume made up 50% of our loan volume...
+Better Home Equity Card Powered by Stripe Enables Easy Access to HELOC Funds and Introduces a Modern Access Layer Across the $21.4 Trillion Home Equity Market
+NEW YORK--( BUSINESS WIRE )--Better Home & Finance Company (NASDAQ: BETR) today announced the Better Home Equity Card, built on Stripe’s financial infrastructure at Stripe Sessions 2026, the global internet economy conference. The new card provides homeowners with prepaid debit access to funds drawn from a secured Better HELOC, connecting financing, spending, and record keeping in a single integrated system. The card is designed to help eliminate the friction that has traditionally pushed hom...
+Back to Newsroom
+Better Home & Finance Holding Company
+NASDAQ:BETR
+Release Versions
+English
+$Cashtags
+$BETR
+Hashtags
+#BETR
+#InvestorRelations
+#Mortgage
+Contacts
+Media Contacts
+Email: comms@better.com
+Social Media Profiles
+Better on LinkedIn
+Better on X
+Better on YouTube
+
+## full_text
+
+ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services
+Share
+Better partners with ElevenLabs to make AI assisted loans accessible through the first voice-based loan agent built exclusively for the mortgage industry
+NEW YORK--( BUSINESS WIRE )-- ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale. This empowers Better.com to provide significant cost savings, higher conversion, and a faster borrower experience while meeting the demands in a highly regulated industry.
+Better.com uses ElevenLabs Agents as the voice interface for Betsy™, its generative AI loan agent, to handle nearly 100,000 mortgage-related phone calls per month , automating 35.5% of borrower inquiries end to end . In 2025 alone, Betsy placed 1.89 million inbound and outbound calls , saving Better’s loan officers more than 1,666 hours of human time each month .
+“We built Better to be AI-native from day one. By combining Tinman® with ElevenLabs’ technology, we’ve scaled the first voice-base AI loan agent built exclusively for the mortgage industry,” said Vishal Garg, Founder and CEO of Better.com. “AI-voice automation through Betsy™ has allowed us to move routine customer interactions out of manual workflows, helping us reduce the cost to originate while offering borrowers immediate and 24/7 support.”
+These gains have allowed Better’s licensed consultants to shift away from repetitive follow-up tasks and focus on higher-value advisory work - helping borrowers navigate complex scenarios and make informed financial decisions.
+Measurable Impact on Mortgage Economics
+According to the case study, Better’s use of AI voice automation has delivered material business results across its consumer mortgage business, including:
+41% reduction in average cost to originate
+100% increase in lead-to-lock conversion in 2025
+More competitive borrower rates , driven by operational efficiencies passed directly into pricing
+By moving routine eligibility checks, pricing conversations, and rate locks to an AI voice agent, Better has improved both borrower experience and unit economics without compromising compliance.
+Better initially launched its voice experience using a speech-to-speech model but transitioned to a modular pipeline combining speech-to-text, a large language model, and text-to-speech with ElevenLabs Agents to achieve lower latency, greater control, and higher reliability. A key factor in selecting ElevenLabs was platform stability under high tool-call volume. In production, a single borrower conversation may trigger dozens of internal system calls. For financial services workflows that span multiple systems and regulatory checkpoints, this level of reliability at this scale is critical.
+Betsy™ is layered on top of Better’s proprietary loan engine, Tinman®, which computes pricing, eligibility, and approvals. ElevenLabs Agents serve as the controlled voice interface, communicating Tinman’s outputs to borrowers. All regulated steps - including credit pulls, authentication, rate locks, and transfers to human consultants - require explicit consent and adhere to state licensing requirements.
+Orchestration runs entirely within Better’s environment through an MCP-based multi-agent system connected to Tinman tools, while calls terminate at a single ElevenLabs Agent endpoint. This architecture ensures determinations remain within Better’s systems, with ElevenLabs providing a consistent, natural voice experience.
+“Supporting nearly 100,000 borrower interactions a month in a highly regulated space like mortgage requires more than a great voice model,” said Lauren Rothwell, Head of Agents Growth at ElevenLabs. “It requires reliability, accuracy, and full compliance - and that’s exactly what ElevenAgents is built to deliver. We’re proud to partner with Better to power a sophisticated AI agent that’s transforming financial services.”
+Through the use of ElevenLabs Agents, Better now delivers a consistent, natural voice experience across every borrower interaction. Tinman’s scenario modeling enables exploration of options that would be difficult to compute manually, while the cloned “Betsy” voice ensures clarity and continuity across millions of conversations.
+The full case study is available on ElevenLabs’ website: https://elevenlabs.io/blog/better.
+About ElevenLabs
+ElevenLabs is reimagining human-technology interaction through advanced AI research and products. ElevenAgents enables businesses to deploy reliable, intelligent agents at scale, with built-in integrations, testing, monitoring and enterprise-grade reliability. ElevenCreative empowers creators and marketers to generate and edit speech, music, images, and video in more than 70 languages. Both platforms are powered by ElevenLabs’ industry-leading AI research. The company pioneered the first human-like AI voice model and has since expanded its capabilities across dubbing, transcription, music, sound effects and speech-to-speech technologies.
+About Better Home & Finance Holding Company
+Better Home & Finance Holding Company (NASDAQ: BETR; BETRW) is the first AI-native mortgage and home equity finance platform, and first fintech to fund more than $110 billion in loan volume. Since 2016, Better has leveraged its industry-leading AI platform, Tinman®, to achieve a singular mission of making homeownership cheaper, faster, and easier for all Americans. Tinman™ allows customers to see their rate options in seconds, get pre-approved in minutes, lock in rates, and close their loan in as little as three weeks. In addition, Betsy™, the first voice-based AI loan agent built exclusively for the mortgage industry, revolutionizes the homebuying journey by delivering timely application status updates to consumers, answering questions, and moving their loan application along 24/7/365. Better’s mortgage offerings include GSE-conforming mortgage loans, FHA and VA loans, and jumbo mortgage loans. In January 2023, Better launched "One Day Mortgage,” allowing eligible customers to go from click to Commitment Letter within 24 hours. Better serves customers in all 50 US states and the United Kingdom.
+For more information, follow @betterdotcom on Instagram and TikTok.
+Contacts
+Media Contacts
+Email: comms@better.com
+Industry:
+Software
+Banking
+Professional Services
+Technology
+Residential Building & Real Estate
+Artificial Intelligence
+Construction & Property
+Public Relations/Investor Relations
+Audio/Video
+Communications
+Finance
+Other Technology
+Better Home & Finance Holding Company
+NASDAQ:BETR
+Release Versions
+English
+$Cashtags
+$BETR
+Hashtags
+#BETR
+#InvestorRelations
+#Mortgage
+Contacts
+Media Contacts
+Email: comms@better.com
+Social Media Profiles
+Better on LinkedIn
+Better on X
+Better on YouTube
+More News From Better Home & Finance Holding Company
+Get RSS Feed
+Better and Coinbase Celebrate the First Token-backed Mortgage Fund Backed by Fannie Mae, Announce Official Product Launch Date
+NEW YORK--( BUSINESS WIRE )--Better Home & Finance Holding Company (NASDAQ: BETR), and Coinbase (NASDAQ: COIN), today announced the funding of the first Fannie Mae-backed mortgage backed by Bitcoin in the United States. The companies also confirmed plans to make the product available to qualified borrowers nationwide by Summer 2026. In March 2026, Better and Coinbase announced plans to offer the first Fannie Mae-eligible token-backed mortgage. The product is designed to address the evolving f...
+Better Home & Finance Holding Company Announces First Quarter 2026 Results
+NEW YORK--( BUSINESS WIRE )--Better Home & Finance Holding Company (NASDAQ: BETR; BETRW) (“Better,” the “Company,” “our” or “we”), the AI-native mortgage and home equity finance company, today reported financial results for the first quarter ended March 31, 2026. “Q1 2026 was a strong quarter for Better. We grew loan volume 89% year over year and exceeded the high end of our previously-issued guidance with revenue up 52% year over year. Tinman AI platform volume made up 50% of our loan volume...
+Better Home Equity Card Powered by Stripe Enables Easy Access to HELOC Funds and Introduces a Modern Access Layer Across the $21.4 Trillion Home Equity Market
+NEW YORK--( BUSINESS WIRE )--Better Home & Finance Company (NASDAQ: BETR) today announced the Better Home Equity Card, built on Stripe’s financial infrastructure at Stripe Sessions 2026, the global internet economy conference. The new card provides homeowners with prepaid debit access to funds drawn from a secured Better HELOC, connecting financing, spending, and record keeping in a single integrated system. The card is designed to help eliminate the friction that has traditionally pushed hom...
+Back to Newsroom
+Better Home & Finance Holding Company
+NASDAQ:BETR
+Release Versions
+English
+$Cashtags
+$BETR
+Hashtags
+#BETR
+#InvestorRelations
+#Mortgage
+Contacts
+Media Contacts
+Email: comms@better.com
+Social Media Profiles
+Better on LinkedIn
+Better on X
+Better on YouTube
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":9113,"paragraph_count":41,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   NEW YORK--(BUSINESS WIRE)--ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale. This empowers Better.com to provide sig... / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ElevenLabs and Better.
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services Share Better partners with ElevenLabs to make AI assisted loans accessible through the first voice-based loan agent built exclusively for the mortgage industry NEW YORK--( BUSINESS WIRE )-- ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   This empowers Better.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   com to provide significant cost savings, higher conversion, and a faster borrower experience while meeting the demands in a highly regulated industry.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: Agent, Agents, agent, MCP, agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 100, 000 m, 35.5%, 2025, 1.89 million, 1, 666, 24
+- quotes: Supporting nearly 100,000 borrower interactions a month in a highly regulated space like mortgage requires more than a great voice model, / One Day Mortgage, / Company,
+
+## evidence_seed
+
+- company_actions: NEW YORK--(BUSINESS WIRE)--ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale. This empowers Better.com to provide sig... / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing / ElevenLabs and Better. / com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale.
+- case_details: com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services Share Better partners with ElevenLabs to make AI assisted loans accessible through the first voice-based loan agent built exclusively for the mortgage industry NEW YORK--( BUSINESS WIRE )-- ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+NEW YORK--(BUSINESS WIRE)--ElevenLabs, the AI audio research and deployment company, released a new enterprise case study highlighting how Better.com, a leading AI-native home finance company, uses ElevenLabs Agents to automate mortgage conversations at scale. This empowers Better.com to provide sig... / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

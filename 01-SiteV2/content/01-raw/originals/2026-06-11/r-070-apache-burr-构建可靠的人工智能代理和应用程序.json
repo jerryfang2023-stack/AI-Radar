@@ -1,0 +1,266 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-070",
+  "title": "Apache Burr：构建可靠的人工智能代理和应用程序",
+  "original_url": "https://burr.apache.org/",
+  "canonical_url": "https://burr.apache.org",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-10T18:33:56.920Z",
+  "collected_at": "2026-06-11T01:29:52.869Z",
+  "language": "mixed",
+  "full_text": "Apache Incubating Project\nBuild reliable AI agents and applications\nApache Burr (Incubating) makes it easy to develop applications that make decisions, from simple chatbots to complex multi-agent systems. Pure Python, no magic.\nGet Started\nView on GitHub\n0 GitHub Stars\n0 k+ PyPI Downloads\n0 + Discord Members\nSimple, powerful Python API\nBuild anything from chatbots to multi-agent systems with a clean, composable interface.\nchatbot.py\nCopy\nChatbot Multi-Agent State Machine\nfrom burr.core import action, State, ApplicationBuilder\n@action(reads=[\"messages\"], writes=[\"messages\"])\ndef chat(state: State, llm_client) -> State:\nresponse = llm_client.chat(state[\"messages\"])\nreturn state.update(\nmessages=[*state[\"messages\"], response]\napp = (\nApplicationBuilder()\n.with_actions(chat)\n.with_transitions((\"chat\", \"chat\"))\n.with_state(messages=[])\n.with_tracker(\"local\")\n.build()\napp.run(halt_after=[\"chat\"], inputs={\"llm_client\": client})\nPython 3.12 UTF-8 burr >= 0.30\nEverything you need to build AI applications\nBurr provides the building blocks for reliable, observable, and testable AI-powered applications.\nSimple Python API\nDefine your application as a set of actions and transitions. No DSL, no YAML — just Python functions and decorators.\nBuilt-in Observability\nThe Burr UI lets you monitor, debug, and trace every step of your application in real time. See state changes as they happen.\nPersistence & State Management\nAutomatically persist state to disk, databases, or custom backends. Resume applications from where they left off.\nHuman-in-the-Loop\nPause execution and wait for human input at any step. Perfect for approval workflows and interactive agents.\nBranching & Parallelism\nRun actions in parallel, fan out / fan in, and build complex DAGs. Compose sub-applications for modular design.\nTesting & Replay\nReplay past runs, unit test individual actions, and validate state transitions. Build confidence in your AI systems.\nWorks with your stack\nBurr integrates with the tools and frameworks you already use. No lock-in, no wrappers.\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nView all integrations\nTrusted by engineers worldwide\nSee what developers and teams are saying about Burr.\nPeanut Robotics\nWatto.ai\nPaxton AI\nProvectus\nTaskHuman\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\nJoin the community\nGet help, share your projects, and contribute to the future of Burr.\nDiscord\nChat with maintainers and the community\nGitHub\nStar the repo, file issues, contribute\nTwitter / X\nFollow for updates and announcements",
+  "clean_text": "Apache Incubating Project\nBuild reliable AI agents and applications\nApache Burr (Incubating) makes it easy to develop applications that make decisions, from simple chatbots to complex multi-agent systems. Pure Python, no magic.\nGet Started\nView on GitHub\n0 GitHub Stars\n0 k+ PyPI Downloads\n0 + Discord Members\nSimple, powerful Python API\nBuild anything from chatbots to multi-agent systems with a clean, composable interface.\nchatbot.py\nCopy\nChatbot Multi-Agent State Machine\nfrom burr.core import action, State, ApplicationBuilder\n@action(reads=[\"messages\"], writes=[\"messages\"])\ndef chat(state: State, llm_client) -> State:\nresponse = llm_client.chat(state[\"messages\"])\nreturn state.update(\nmessages=[*state[\"messages\"], response]\napp = (\nApplicationBuilder()\n.with_actions(chat)\n.with_transitions((\"chat\", \"chat\"))\n.with_state(messages=[])\n.with_tracker(\"local\")\n.build()\napp.run(halt_after=[\"chat\"], inputs={\"llm_client\": client})\nPython 3.12 UTF-8 burr >= 0.30\nEverything you need to build AI applications\nBurr provides the building blocks for reliable, observable, and testable AI-powered applications.\nSimple Python API\nDefine your application as a set of actions and transitions. No DSL, no YAML — just Python functions and decorators.\nBuilt-in Observability\nThe Burr UI lets you monitor, debug, and trace every step of your application in real time. See state changes as they happen.\nPersistence & State Management\nAutomatically persist state to disk, databases, or custom backends. Resume applications from where they left off.\nHuman-in-the-Loop\nPause execution and wait for human input at any step. Perfect for approval workflows and interactive agents.\nBranching & Parallelism\nRun actions in parallel, fan out / fan in, and build complex DAGs. Compose sub-applications for modular design.\nTesting & Replay\nReplay past runs, unit test individual actions, and validate state transitions. Build confidence in your AI systems.\nWorks with your stack\nBurr integrates with the tools and frameworks you already use. No lock-in, no wrappers.\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nView all integrations\nTrusted by engineers worldwide\nSee what developers and teams are saying about Burr.\nPeanut Robotics\nWatto.ai\nPaxton AI\nProvectus\nTaskHuman\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\nJoin the community\nGet help, share your projects, and contribute to the future of Burr.\nDiscord\nChat with maintainers and the community\nGitHub\nStar the repo, file issues, contribute\nTwitter / X\nFollow for updates and announcements",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-11/r-070-apache-burr-构建可靠的人工智能代理和应用程序.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-11/r-070-apache-burr-构建可靠的人工智能代理和应用程序.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 10132,
+    "paragraph_count": 90,
+    "sentence_count": 84,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0042,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10132,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d70a8189b4b25127",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Apache Burr：构建可靠的人工智能代理和应用程序",
+    "discovery_summary": "Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://burr.apache.org/",
+    "discovered_at": "2026-06-11T01:23:43.689Z",
+    "rank_on_page": 111,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "152a5d15916a488e",
+  "content_hash": "d70a8189b4b25127",
+  "full_text_hash": "d70a8189b4b25127",
+  "semantic_hash": "5aea6092f6a95c10",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-10T18:33:56.920Z",
+  "last_seen_at": "2026-06-11T01:29:52.869Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Apache Incubating Project Build reliable AI agents and applications Apache Burr (Incubating) makes it easy to develop applications that make decisions, from simple chatbots to complex multi-agent systems.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Pure Python, no magic.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Get Started View on GitHub 0 GitHub Stars 0 k+ PyPI Downloads 0 + Discord Members Simple, powerful Python API Build anything from chatbots to multi-agent systems with a clean, composable interface.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "py Copy Chatbot Multi-Agent State Machine from burr.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "core import action, State, ApplicationBuilder @action(reads=[\"messages\"], writes=[\"messages\"]) def chat(state: State, llm_client) -> State: response = llm_client.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI",
+      "Anthropic",
+      "GitHub"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "0",
+      "3.12",
+      "8 b",
+      "0.30"
+    ],
+    "quotes": [
+      "messages",
+      "messages",
+      "messages",
+      "messages",
+      "))\n.with_state(messages=[])\n.with_tracker("
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。",
+      "Apache Incubating Project Build reliable AI agents and applications Apache Burr (Incubating) makes it easy to develop applications that make decisions, from simple chatbots to complex multi-agent systems.",
+      "Pure Python, no magic."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool",
+    "user_feedback_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Apache Burr：构建可靠的人工智能代理和应用程序\n\n- raw_id: R-070\n- original_url: https://burr.apache.org/\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-11T01:29:52.869Z\n\n## clean_text\n\nApache Incubating Project\nBuild reliable AI agents and applications\nApache Burr (Incubating) makes it easy to develop applications that make decisions, from simple chatbots to complex multi-agent systems. Pure Python, no magic.\nGet Started\nView on GitHub\n0 GitHub Stars\n0 k+ PyPI Downloads\n0 + Discord Members\nSimple, powerful Python API\nBuild anything from chatbots to multi-agent systems with a clean, composable interface.\nchatbot.py\nCopy\nChatbot Multi-Agent State Machine\nfrom burr.core import action, State, ApplicationBuilder\n@action(reads=[\"messages\"], writes=[\"messages\"])\ndef chat(state: State, llm_client) -> State:\nresponse = llm_client.chat(state[\"messages\"])\nreturn state.update(\nmessages=[*state[\"messages\"], response]\napp = (\nApplicationBuilder()\n.with_actions(chat)\n.with_transitions((\"chat\", \"chat\"))\n.with_state(messages=[])\n.with_tracker(\"local\")\n.build()\napp.run(halt_after=[\"chat\"], inputs={\"llm_client\": client})\nPython 3.12 UTF-8 burr >= 0.30\nEverything you need to build AI applications\nBurr provides the building blocks for reliable, observable, and testable AI-powered applications.\nSimple Python API\nDefine your application as a set of actions and transitions. No DSL, no YAML — just Python functions and decorators.\nBuilt-in Observability\nThe Burr UI lets you monitor, debug, and trace every step of your application in real time. See state changes as they happen.\nPersistence & State Management\nAutomatically persist state to disk, databases, or custom backends. Resume applications from where they left off.\nHuman-in-the-Loop\nPause execution and wait for human input at any step. Perfect for approval workflows and interactive agents.\nBranching & Parallelism\nRun actions in parallel, fan out / fan in, and build complex DAGs. Compose sub-applications for modular design.\nTesting & Replay\nReplay past runs, unit test individual actions, and validate state transitions. Build confidence in your AI systems.\nWorks with your stack\nBurr integrates with the tools and frameworks you already use. No lock-in, no wrappers.\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nView all integrations\nTrusted by engineers worldwide\nSee what developers and teams are saying about Burr.\nPeanut Robotics\nWatto.ai\nPaxton AI\nProvectus\nTaskHuman\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\nJoin the community\nGet help, share your projects, and contribute to the future of Burr.\nDiscord\nChat with maintainers and the community\nGitHub\nStar the repo, file issues, contribute\nTwitter / X\nFollow for updates and announcements\n\n## full_text\n\nApache Incubating Project\nBuild reliable AI agents and applications\nApache Burr (Incubating) makes it easy to develop applications that make decisions, from simple chatbots to complex multi-agent systems. Pure Python, no magic.\nGet Started\nView on GitHub\n0 GitHub Stars\n0 k+ PyPI Downloads\n0 + Discord Members\nSimple, powerful Python API\nBuild anything from chatbots to multi-agent systems with a clean, composable interface.\nchatbot.py\nCopy\nChatbot Multi-Agent State Machine\nfrom burr.core import action, State, ApplicationBuilder\n@action(reads=[\"messages\"], writes=[\"messages\"])\ndef chat(state: State, llm_client) -> State:\nresponse = llm_client.chat(state[\"messages\"])\nreturn state.update(\nmessages=[*state[\"messages\"], response]\napp = (\nApplicationBuilder()\n.with_actions(chat)\n.with_transitions((\"chat\", \"chat\"))\n.with_state(messages=[])\n.with_tracker(\"local\")\n.build()\napp.run(halt_after=[\"chat\"], inputs={\"llm_client\": client})\nPython 3.12 UTF-8 burr >= 0.30\nEverything you need to build AI applications\nBurr provides the building blocks for reliable, observable, and testable AI-powered applications.\nSimple Python API\nDefine your application as a set of actions and transitions. No DSL, no YAML — just Python functions and decorators.\nBuilt-in Observability\nThe Burr UI lets you monitor, debug, and trace every step of your application in real time. See state changes as they happen.\nPersistence & State Management\nAutomatically persist state to disk, databases, or custom backends. Resume applications from where they left off.\nHuman-in-the-Loop\nPause execution and wait for human input at any step. Perfect for approval workflows and interactive agents.\nBranching & Parallelism\nRun actions in parallel, fan out / fan in, and build complex DAGs. Compose sub-applications for modular design.\nTesting & Replay\nReplay past runs, unit test individual actions, and validate state transitions. Build confidence in your AI systems.\nWorks with your stack\nBurr integrates with the tools and frameworks you already use. No lock-in, no wrappers.\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nOpenAI\nLLM\nAnthropic\nLLM\nLangChain\nFramework\nHamilton\nFramework\nStreamlit\nUI\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nFastAPI\nServing\nHaystack\nFramework\nInstructor\nLLM\nPydantic\nValidation\nPostgreSQL\nStorage\nView all integrations\nTrusted by engineers worldwide\nSee what developers and teams are saying about Burr.\nPeanut Robotics\nWatto.ai\nPaxton AI\nProvectus\nTaskHuman\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\n“ After evaluating several other obfuscating LLM frameworks, their elegant yet comprehensive state management solution proved to be the powerful answer to rolling out robots driven by AI decision making. ”\nAshish Ghosh\nCTO , Peanut Robotics\n“ Using Burr is a no-brainer if you want to build a modular AI application. It is so easy to build with and I especially love their UI which makes debugging a piece of cake. And the always ready to help team is the cherry on top. ”\nIshita\nFounder , Watto.ai\n“ I just came across Burr and I'm like WOW, this seems like you guys predicted this exact need when building this. No weird esoteric concepts just because it's AI. ”\nMatthew Rideout\nStaff Software Engineer , Paxton AI\n“ Burr's state management part is really helpful for creating state snapshots and build debugging, replaying and even building evaluation cases around that. ”\nRinat Gareev\nSenior Solutions Architect , Provectus\n“ I have been using Burr over the past few months, and compared to many agentic LLM platforms out there (e.g. LangChain, CrewAi, AutoGen, Agency Swarm, etc), Burr provides a more robust framework for designing complex behaviors. ”\nHadi Nayebi\nCo-founder , CognitiveGraphs\n“ Moving from LangChain to Burr was a game-changer! It took me just a few hours to get started with Burr, compared to the days and weeks I spent trying to navigate LangChain. I pitched Burr to my teammates, and we pivoted our entire codebase to it. ”\nAditya K.\nDS Architect , TaskHuman\n“ Of course, you can use it [LangChain], but whether it's really production-ready and improves the time from code-to-prod, we've been doing LLM apps for two years, and the answer is no. Honestly, take a look at Burr. Thank me later. ”\nReddit User\nDeveloper , r/LocalLlama\nJoin the community\nGet help, share your projects, and contribute to the future of Burr.\nDiscord\nChat with maintainers and the community\nGitHub\nStar the repo, file issues, contribute\nTwitter / X\nFollow for updates and announcements\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / daily_observation, heatmap, trend / high] Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Apache Incubating Project Build reliable AI agents and applications Apache Burr (Incubating) makes it easy to develop applications that make decisions, from simple chatbots to complex multi-agent systems.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Pure Python, no magic.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Get Started View on GitHub 0 GitHub Stars 0 k+ PyPI Downloads 0 + Discord Members Simple, powerful Python API Build anything from chatbots to multi-agent systems with a clean, composable interface.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] py Copy Chatbot Multi-Agent State Machine from burr.\n6. [quote / daily_observation, heatmap, viewpoint / high] core import action, State, ApplicationBuilder @action(reads=[\"messages\"], writes=[\"messages\"]) def chat(state: State, llm_client) -> State: response = llm_client.\n"
+}
