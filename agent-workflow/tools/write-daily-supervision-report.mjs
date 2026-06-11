@@ -273,8 +273,8 @@ function buildBusinessSignalsLane() {
   if (evidence.readinessReport === "missing") warnings.push(`missing readiness report: ${rel(readinessFile)}`);
 
   if (gh.available) {
-    if (!gh.latest_run && hasWindowPassed(date, "09:20")) {
-      addProblem(problems, "no same-date Business Signals GitHub run after 09:20 watchdog", "manual_required");
+    if (!gh.latest_run && hasWindowPassed(date, "10:20")) {
+      addProblem(problems, "no same-date Business Signals GitHub run after 10:20 watchdog", "manual_required");
       actions.push("manual dispatch `.github/workflows/daily-persistent-assets-pr.yml` for the production date");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
       addProblem(problems, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`, "manual_required");
@@ -294,7 +294,7 @@ function buildBusinessSignalsLane() {
   return {
     id: "business_signals",
     label: "Business Signals / Intelligence Map / Dashboard",
-    schedule: "09:07 Asia/Shanghai; watchdog 09:20",
+    schedule: "09:07 / 09:37 / 10:07 Asia/Shanghai; watchdog 10:20",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
@@ -331,8 +331,8 @@ function buildFirstLineLane() {
   if (evidence.gateStatus === "missing") warnings.push(`missing follow-builders gate report: ${rel(gateFile)}`);
 
   if (gh.available) {
-    if (!gh.latest_run && hasWindowPassed(date, "09:30")) {
-      addProblem(problems, "no same-date First-Line Viewpoints GitHub run after 09:30 watchdog", "manual_required");
+    if (!gh.latest_run && hasWindowPassed(date, "10:30")) {
+      addProblem(problems, "no same-date First-Line Viewpoints GitHub run after 10:30 watchdog", "manual_required");
       actions.push("manual dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` for the production date");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
       addProblem(problems, `First-Line Viewpoints workflow is ${gh.latest_run.status}`, "manual_required");
@@ -352,7 +352,7 @@ function buildFirstLineLane() {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "09:17 Asia/Shanghai; watchdog 09:30",
+    schedule: "09:17 / 09:47 / 10:17 Asia/Shanghai; watchdog 10:30",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
