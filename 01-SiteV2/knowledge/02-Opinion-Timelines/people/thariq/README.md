@@ -1,14 +1,17 @@
 ---
 type: opinion_person_timeline
 person_name: "Thariq"
-opinion_count: 4
-latest_date: 2026-05-19
+opinion_count: 9
+latest_date: 2026-06-10
 ---
 
-# Thariq 观点时间线
+# Thariq Opinion Timeline
 
-共 4 条观点，按月份聚合。
+Total opinions: 9. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-05](./2026-05.md)
+- [2026-06-10](./2026-06-10.md) - 4 opinions
+- [2026-06-09](./2026-06-09.md) - 1 opinions
+- [2026-05-19](./2026-05-19.md) - 3 opinions
+- [2026-05-17](./2026-05-17.md) - 1 opinions

@@ -1,47 +1,54 @@
 ---
 type: opinion_timelines_index
-people_count: 31
-opinion_count: 269
-generated_at: 2026-06-06T08:46:05.281Z
+people_count: 41
+opinion_count: 401
+generated_at: 2026-06-11T11:15:16.531Z
 ---
 
 # 前沿观点 · 人物时间线目录
-
-这个目录是 Obsidian 浏览视图：旧单卡目录已移除，这里按人物和月份聚合，便于连续阅读。
-
-每条观点已补充“观澜标签”，仅保留观点主题、赛道和来源标签；人物姓名、公司名、文章标题和情绪词不作为标签使用。
-每条时间线观点已合并原观点卡详情，可在人物月份文件内直接阅读标题、人物、日期、来源、档位、中文翻译和原文摘录。
+这个目录是 Obsidian 浏览视图：观点按人物和日期文件聚合，便于每日同步、检索和回滚。
+每条观点保留来源链接、原文摘录、中文翻译和同步来源；Builder 观点仅作为一线观点资产，不作为商业信号事实证据。
 
 ## 人物
 
+- [Garry Tan](people/garry-tan/README.md) · 31 条 · 最新 2026-06-11
+- [Nikunj Kothari](people/nikunj-kothari/README.md) · 21 条 · 最新 2026-06-11
+- [Dan Shipper](people/dan-shipper/README.md) · 18 条 · 最新 2026-06-11
+- [Aaron Levie](people/aaron-levie/README.md) · 16 条 · 最新 2026-06-11
+- [Thibault Sottiaux](people/thibault-sottiaux/README.md) · 13 条 · 最新 2026-06-11
+- [Josh Woodward](people/josh-woodward/README.md) · 11 条 · 最新 2026-06-11
+- [Amjad Masad](people/amjad-masad/README.md) · 8 条 · 最新 2026-06-11
+- [Boris Cherny](people/boris-cherny/README.md) · 5 条 · 最新 2026-06-11
+- [Peter Yang](people/peter-yang/README.md) · 30 条 · 最新 2026-06-10
+- [Claude](people/claude/README.md) · 15 条 · 最新 2026-06-10
+- [Zara Zhang](people/zara-zhang/README.md) · 14 条 · 最新 2026-06-10
+- [Guillermo Rauch](people/guillermo-rauch/README.md) · 13 条 · 最新 2026-06-10
+- [Google Labs](people/google-labs/README.md) · 12 条 · 最新 2026-06-10
+- [Thariq](people/thariq/README.md) · 9 条 · 最新 2026-06-10
+- [Matt Turck](people/matt-turck/README.md) · 8 条 · 最新 2026-06-10
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) · 5 条 · 最新 2026-06-10
+- [Dataiku Blog](people/dataiku-blog/README.md) · 2 条 · 最新 2026-06-10
+- [Madhu Guru](people/madhu-guru/README.md) · 2 条 · 最新 2026-06-10
+- [Nan Yu](people/nan-yu/README.md) · 2 条 · 最新 2026-06-10
+- [Tigera Blog (Calico / AI Security)](people/tigera-blog-calico-ai-security/README.md) · 2 条 · 最新 2026-06-10
+- [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) · 2 条 · 最新 2026-06-10
+- [Swyx](people/swyx/README.md) · 23 条 · 最新 2026-06-09
+- [Aditya Agarwal](people/aditya-agarwal/README.md) · 10 条 · 最新 2026-06-09
+- [Alex Albert](people/alex-albert/README.md) · 2 条 · 最新 2026-06-09
+- [Andrej Karpathy](people/andrej-karpathy/README.md) · 2 条 · 最新 2026-06-09
+- [Amanda Askell](people/amanda-askell/README.md) · 1 条 · 最新 2026-06-09
+- [Interconnects (Nathan Lambert)](people/interconnects-nathan-lambert/README.md) · 1 条 · 最新 2026-06-09
+- [Sam Altman](people/sam-altman/README.md) · 11 条 · 最新 2026-06-08
+- [Import AI (Jack Clark)](people/import-ai-jack-clark/README.md) · 1 条 · 最新 2026-06-08
+- [Peter Steinberger](people/peter-steinberger/README.md) · 7 条 · 最新 2026-06-07
 - [Unknown Builder](people/unknown-builder/README.md) · 64 条 · 最新 2026-06-06
 - [DuckDuckGo](people/duckduckgo/README.md) · 12 条 · 最新 2026-06-04
 - [HN builder query](people/hn-builder-query/README.md) · 13 条 · 最新 2026-06-03
-- [Aaron Levie](people/aaron-levie/README.md) · 8 条 · 最新 2026-05-31
-- [Garry Tan](people/garry-tan/README.md) · 18 条 · 最新 2026-05-31
-- [Nikunj Kothari](people/nikunj-kothari/README.md) · 13 条 · 最新 2026-05-31
-- [Peter Yang](people/peter-yang/README.md) · 18 条 · 最新 2026-05-31
-- [Thibault Sottiaux](people/thibault-sottiaux/README.md) · 3 条 · 最新 2026-05-31
-- [Zara Zhang](people/zara-zhang/README.md) · 6 条 · 最新 2026-05-31
-- [Aditya Agarwal](people/aditya-agarwal/README.md) · 8 条 · 最新 2026-05-30
-- [Dan Shipper](people/dan-shipper/README.md) · 10 条 · 最新 2026-05-30
-- [Guillermo Rauch](people/guillermo-rauch/README.md) · 7 条 · 最新 2026-05-30
-- [Peter Steinberger](people/peter-steinberger/README.md) · 6 条 · 最新 2026-05-30
 - [Ryo Lu](people/ryo-lu/README.md) · 4 条 · 最新 2026-05-30
 - [Claude Blog](people/claude-blog/README.md) · 2 条 · 最新 2026-05-24
 - [Anthropic Engineering](people/anthropic-engineering/README.md) · 2 条 · 最新 2026-05-23
 - [Kevin Weil](people/kevin-weil/README.md) · 2 条 · 最新 2026-05-23
-- [Swyx](people/swyx/README.md) · 17 条 · 最新 2026-05-23
-- [Amjad Masad](people/amjad-masad/README.md) · 3 条 · 最新 2026-05-22
-- [Claude](people/claude/README.md) · 8 条 · 最新 2026-05-22
-- [Google Labs](people/google-labs/README.md) · 11 条 · 最新 2026-05-22
-- [Matt Turck](people/matt-turck/README.md) · 7 条 · 最新 2026-05-22
-- [Sam Altman](people/sam-altman/README.md) · 9 条 · 最新 2026-05-22
 - [Unsupervised Learning](people/unsupervised-learning/README.md) · 1 条 · 最新 2026-05-22
-- [Josh Woodward](people/josh-woodward/README.md) · 7 条 · 最新 2026-05-21
 - [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) · 1 条 · 最新 2026-05-21
 - [AI & I by Every](people/ai-i-by-every/README.md) · 2 条 · 最新 2026-05-20
-- [Andrej Karpathy](people/andrej-karpathy/README.md) · 1 条 · 最新 2026-05-19
-- [Nan Yu](people/nan-yu/README.md) · 1 条 · 最新 2026-05-19
-- [Thariq](people/thariq/README.md) · 4 条 · 最新 2026-05-19
 - [Training Data](people/training-data/README.md) · 1 条 · 最新 2026-05-19

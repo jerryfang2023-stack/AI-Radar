@@ -5,10 +5,10 @@ opinion_count: 1
 latest_date: 2026-05-22
 ---
 
-# Unsupervised Learning 观点时间线
+# Unsupervised Learning Opinion Timeline
 
-共 1 条观点，按月份聚合。
+Total opinions: 1. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-05](./2026-05.md)
+- [2026-05-22](./2026-05-22.md) - 1 opinions

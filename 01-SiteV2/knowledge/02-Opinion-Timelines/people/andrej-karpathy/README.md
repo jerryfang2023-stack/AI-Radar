@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Andrej Karpathy"
-opinion_count: 1
-latest_date: 2026-05-19
+opinion_count: 2
+latest_date: 2026-06-09
 ---
 
-# Andrej Karpathy 观点时间线
+# Andrej Karpathy Opinion Timeline
 
-共 1 条观点，按月份聚合。
+Total opinions: 2. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-05](./2026-05.md)
+- [2026-06-09](./2026-06-09.md) - 1 opinions
+- [2026-05-19](./2026-05-19.md) - 1 opinions

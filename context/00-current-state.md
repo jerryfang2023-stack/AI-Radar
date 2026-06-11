@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-09
+last_updated: 2026-06-11
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.4 independent-lane publication development.
+WaveSight AI is now in V3.3.5 builder Obsidian date timeline development.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now in V3.3.4 independent-lane publication development.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.4 keeps the unified frontstage and upgrades daily production into independent monitoring, gate, PR, merge, and publication lanes with shared GitHub Pages output.
+- V3.3.5 keeps the unified frontstage and adds date-file Obsidian persistence for First-Line Viewpoints so each Builder viewpoint sync writes to person / date timeline files.
 
 ## Current Entries
 

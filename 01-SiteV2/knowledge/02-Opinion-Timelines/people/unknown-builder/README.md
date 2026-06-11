@@ -5,10 +5,14 @@ opinion_count: 64
 latest_date: 2026-06-06
 ---
 
-# Unknown Builder 观点时间线
+# Unknown Builder Opinion Timeline
 
-共 64 条观点，按月份聚合。
+Total opinions: 64. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-06](./2026-06.md)
+- [2026-06-06](./2026-06-06.md) - 5 opinions
+- [2026-06-05](./2026-06-05.md) - 5 opinions
+- [2026-06-04](./2026-06-04.md) - 15 opinions
+- [2026-06-03](./2026-06-03.md) - 17 opinions
+- [2026-06-02](./2026-06-02.md) - 22 opinions

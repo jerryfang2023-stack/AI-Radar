@@ -5,10 +5,11 @@ opinion_count: 2
 latest_date: 2026-05-23
 ---
 
-# Kevin Weil 观点时间线
+# Kevin Weil Opinion Timeline
 
-共 2 条观点，按月份聚合。
+Total opinions: 2. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-05](./2026-05.md)
+- [2026-05-23](./2026-05-23.md) - 1 opinions
+- [2026-05-20](./2026-05-20.md) - 1 opinions

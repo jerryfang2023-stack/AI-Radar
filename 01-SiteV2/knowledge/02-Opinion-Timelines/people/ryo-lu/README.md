@@ -5,10 +5,13 @@ opinion_count: 4
 latest_date: 2026-05-30
 ---
 
-# Ryo Lu 观点时间线
+# Ryo Lu Opinion Timeline
 
-共 4 条观点，按月份聚合。
+Total opinions: 4. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-05](./2026-05.md)
+- [2026-05-30](./2026-05-30.md) - 1 opinions
+- [2026-05-21](./2026-05-21.md) - 1 opinions
+- [2026-05-20](./2026-05-20.md) - 1 opinions
+- [2026-05-19](./2026-05-19.md) - 1 opinions

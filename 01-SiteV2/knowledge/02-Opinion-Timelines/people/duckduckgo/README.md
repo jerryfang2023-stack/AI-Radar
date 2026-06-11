@@ -5,10 +5,10 @@ opinion_count: 12
 latest_date: 2026-06-04
 ---
 
-# DuckDuckGo 观点时间线
+# DuckDuckGo Opinion Timeline
 
-共 12 条观点，按月份聚合。
+Total opinions: 12. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-06](./2026-06.md)
+- [2026-06-04](./2026-06-04.md) - 12 opinions

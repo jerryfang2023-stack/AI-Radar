@@ -15,7 +15,7 @@ The local workspace is the Obsidian vault. After a fast-forward sync from `origi
 - business-signal Raw / Pool / Card assets under `01-SiteV2/content/`
 - persistent business-signal Cards under `01-SiteV2/knowledge/01-Signal-Cards/`
 - first-line viewpoint data under `01-SiteV2/site/data/follow-builders-daily.json`
-- first-line viewpoint source notes under `01-SiteV2/content/07-points/`
+- first-line viewpoint Obsidian timelines under `01-SiteV2/knowledge/02-Opinion-Timelines/`
 - frontstage and dashboard data under `01-SiteV2/site/data/`
 
 Business Signals and First-Line Viewpoints are synced as separate data streams. Builders content stays in the builders route and must not be treated as business-signal evidence.
@@ -28,6 +28,7 @@ Business Signals and First-Line Viewpoints are synced as separate data streams. 
 | `agent-workflow/tools/local-sync-loop.ps1` | Repeat safe sync while Windows is logged in. |
 | `agent-workflow/tools/install-local-sync-task.ps1` | Register the Windows logon / interval sync task. |
 | `agent-workflow/tools/uninstall-local-sync-task.ps1` | Remove the Windows sync task. |
+| `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` | Generate Obsidian person / date timelines from gated First-Line Viewpoints data. |
 
 ## Safety Rules
 
@@ -74,9 +75,17 @@ When online monitoring adds or changes source pools, the local sync path still r
 For the current V3.3 routes:
 
 - commercial signal sources are expected to land in the Raw / Pool / Card chain and then into `01-SiteV2/content/04-business-signals/` and `01-SiteV2/knowledge/01-Signal-Cards/`
-- builders sources are expected to land in the independent follow-builders chain and then into `01-SiteV2/site/data/follow-builders-daily.json` and `01-SiteV2/content/07-points/`
+- builders sources are expected to land in the independent follow-builders chain and then into `01-SiteV2/site/data/follow-builders-daily.json` and `01-SiteV2/knowledge/02-Opinion-Timelines/`
 
-If you need to refresh data locally before merge, run the relevant generation script first, then sync the merged `main` state afterward.
+If you need to refresh First-Line Viewpoints locally before merge, run:
+
+```powershell
+node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
+node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
+node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD>
+```
+
+Then sync the merged `main` state afterward.
 
 ## Logs
 

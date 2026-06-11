@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Nan Yu"
-opinion_count: 1
-latest_date: 2026-05-19
+opinion_count: 2
+latest_date: 2026-06-10
 ---
 
-# Nan Yu 观点时间线
+# Nan Yu Opinion Timeline
 
-共 1 条观点，按月份聚合。
+Total opinions: 2. Entries are grouped by person and date files for daily sync.
 
-## 月份
+## Dates
 
-- [2026-05](./2026-05.md)
+- [2026-06-10](./2026-06-10.md) - 1 opinions
+- [2026-05-19](./2026-05-19.md) - 1 opinions

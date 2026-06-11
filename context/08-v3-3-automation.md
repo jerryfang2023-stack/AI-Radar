@@ -64,11 +64,12 @@ Execution order:
 2. Refresh builder blog and podcast feeds when available.
 3. Build first-line viewpoint data: `01-SiteV2/site/data/follow-builders-daily.json`.
 4. Run the first-line viewpoint data gate: `agent-workflow/tools/assert-follow-builders-data.mjs`.
-5. Write the first-line viewpoint manifest.
-6. Push `automation/first-line-viewpoints-<date>`.
-7. Create or update the PR.
-8. Auto-merge or enable auto-merge after the first-line gate passes.
-9. Deploy through GitHub Pages after `main` updates.
+5. Sync the same production date into the local Obsidian viewpoint timelines: `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<date> --to=<date>`.
+6. Write the first-line viewpoint manifest.
+7. Push `automation/first-line-viewpoints-<date>`.
+8. Create or update the PR.
+9. Auto-merge or enable auto-merge after the first-line gate and Obsidian sync pass.
+10. Deploy through GitHub Pages after `main` updates.
 
 This workflow must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
 
@@ -78,7 +79,7 @@ This workflow must not write business-signal Cards, relationship graph data, tre
 |---|---|---|---|---|
 | Business Signals | GitHub Actions + `skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
-| First-Line Viewpoints | GitHub Actions + `skills/guanlan-first-line-viewpoints-monitor/SKILL.md`, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` | independent automation PR to `main` after builders gate passes |
+| First-Line Viewpoints | GitHub Actions + `skills/guanlan-first-line-viewpoints-monitor/SKILL.md`, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency | independent automation PR to `main` after builders gate and Obsidian timeline sync pass |
 | Community Intelligence | Local Windows scheduled task / Codex local run + `skills/guanlan-community-intelligence-monitor/SKILL.md` | `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files, local archive, then explicit Git commit / sync |
 
 The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.
@@ -103,13 +104,14 @@ Local sync scripts:
 - `agent-workflow/tools/local-sync-from-main.ps1`
 - `agent-workflow/tools/install-local-sync-task.ps1`
 - `agent-workflow/tools/local-sync-loop.ps1`
+- `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs`
 
 Sync behavior:
 
 1. When the local machine is online, the scheduled task or loop runs.
 2. The script fetches remote `main`.
 3. If the local workspace is clean and local `main` can fast-forward, it pulls.
-4. Merged Raw / Pool / Card / site data / first-line viewpoint data / community intelligence data / ops data become visible in local Obsidian as their independent PRs reach `main`.
+4. Merged Raw / Pool / Card / site data / first-line viewpoint data / first-line Obsidian timelines / community intelligence data / ops data become visible in local Obsidian as their independent PRs reach `main`.
 5. If local uncommitted changes exist, sync pauses to avoid overwriting local work.
 
 Install command:
@@ -179,7 +181,13 @@ If the follow-builders refresh fails but a previous generated `follow-builders-d
 
 This lets both local runs and GitHub runners build the First-Line Viewpoints page.
 
-`01-SiteV2/content/05-frontier-opinions/*` is retired history for this lane. Current success must be judged from `01-SiteV2/site/data/follow-builders-daily.json` and the follow-builders data gate.
+`01-SiteV2/knowledge/02-Opinion-Timelines/` is the current Obsidian reading view for this lane. It must be generated from `follow-builders-daily.json` with original remark dates, person / date files such as `people/<person>/2026-06-11.md`, and URL / id dedupe:
+
+```powershell
+node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD>
+```
+
+`01-SiteV2/content/05-frontier-opinions/*` is retired history for this lane. Current success must be judged from `01-SiteV2/site/data/follow-builders-daily.json`, the follow-builders data gate, and the Obsidian timeline sync.
 
 ## First-Line Viewpoint Quality Gate
 
@@ -201,6 +209,47 @@ The gate checks:
 - business-signal fields such as Raw / Pool refs, relationship graph, or trend candidates are not present.
 
 The first-line workflow may stage `follow-builders-daily.json` only after this gate passes.
+
+After the gate passes, the workflow must stage `01-SiteV2/knowledge/02-Opinion-Timelines/` only if `sync-follow-builders-to-opinion-timelines.mjs` succeeds. A second run for the same date should add `0` entries; otherwise treat it as a duplicate / idempotency failure.
+
+## First-Line Viewpoints Obsidian Automation Plan
+
+Trigger:
+
+- GitHub scheduled First-Line Viewpoints workflow at 09:17 / 09:47 / 10:17 Asia/Shanghai.
+- Manual `workflow_dispatch` with `date=<YYYY-MM-DD>`.
+- Local repair run after a failed GitHub workflow or after backfill.
+
+Daily execution:
+
+1. Resolve the Asia/Shanghai production date.
+2. If same-date frontstage JSON and same-date Obsidian timeline entries already exist on `main`, skip scheduled reruns.
+3. Refresh builder blog and podcast feeds when available.
+4. Rebuild `01-SiteV2/site/data/follow-builders-daily.json`.
+5. Run `assert-follow-builders-data.mjs --date=<date>`.
+6. Run `sync-follow-builders-to-opinion-timelines.mjs --from=<date> --to=<date>`.
+7. Upload gate, build, and Obsidian sync logs as artifacts.
+8. Stage only first-line owned files: frontstage JSON, builder feed JSON, first-line reports, and `01-SiteV2/knowledge/02-Opinion-Timelines/`.
+9. Open or update `automation/first-line-viewpoints-<date>` PR.
+10. Merge only after both the data gate and Obsidian sync pass.
+
+Validation:
+
+```powershell
+node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs
+node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
+node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD>
+node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD> --dry-run=true
+```
+
+The dry-run / second run must report `added: 0`.
+
+Failure handling:
+
+- If the data gate fails, do not run or stage Obsidian timeline changes.
+- If Obsidian sync fails, do not open / merge the First-Line Viewpoints PR.
+- If the workflow skipped because frontstage data exists but Obsidian entries are missing, rerun with `workflow_dispatch`.
+- If local uncommitted work exists, do not force pull, stash, reset, or overwrite; repair locally and report the dirty worktree.
 
 ## Hermes / Codex Coordination
 

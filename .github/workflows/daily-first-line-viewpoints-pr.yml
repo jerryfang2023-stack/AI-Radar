@@ -72,22 +72,29 @@ jobs:
           reason="not_applicable"
           data_file="01-SiteV2/site/data/follow-builders-daily.json"
           data_date=""
+          obsidian_count="0"
 
           if [ -f "$data_file" ]; then
             data_date="$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));const value=data.meta?.date||data.meta?.generatedAt||data.meta?.generatedDate||data.generatedDate||data.generatedAt||'';const date=value ? new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)) : ''; process.stdout.write(date);" "$data_file")"
           fi
 
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ]; then
+          if [ -d "01-SiteV2/knowledge/02-Opinion-Timelines/people" ]; then
+            obsidian_count="$( { grep -R "^### ${RUN_DATE}\b" 01-SiteV2/knowledge/02-Opinion-Timelines/people --include='*.md' 2>/dev/null || true; } | wc -l | tr -d ' ')"
+          fi
+
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ] && [ "$obsidian_count" != "0" ]; then
             skip=true
-            reason="same-date first-line viewpoints data already exists on main"
+            reason="same-date first-line viewpoints data and Obsidian timeline entries already exist on main"
           fi
 
           echo "skip=$skip" >> "$GITHUB_OUTPUT"
           echo "reason=$reason" >> "$GITHUB_OUTPUT"
           echo "data_date=$data_date" >> "$GITHUB_OUTPUT"
+          echo "obsidian_count=$obsidian_count" >> "$GITHUB_OUTPUT"
           echo "skip_first_line_viewpoints=$skip"
           echo "first_line_skip_reason=$reason"
           echo "existing_first_line_data_date=$data_date"
+          echo "existing_first_line_obsidian_count=$obsidian_count"
 
       - name: Syntax checks
         shell: bash
@@ -95,6 +102,7 @@ jobs:
           node --check agent-workflow/tools/fetch-builder-blog-feed.mjs
           node --check agent-workflow/tools/fetch-builder-podcast-feed.mjs
           node --check agent-workflow/tools/assert-follow-builders-data.mjs
+          node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs
           node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           gh --version
 
@@ -141,6 +149,18 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builders-gate.log"
 
+      - name: Sync first-line viewpoints to Obsidian timelines
+        id: obsidian-sync
+        if: always() && steps.builders-gate.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs \
+            --from="${RUN_DATE}" \
+            --to="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-obsidian-sync.log"
+
       - name: Write first-line manifest
         if: always()
         shell: bash
@@ -165,9 +185,10 @@ jobs:
           - builder_podcasts: ${{ steps.builder-podcasts.outcome }}
           - builders_data: ${{ steps.builders-data.outcome }}
           - builders_gate: ${{ steps.builders-gate.outcome }}
+          - obsidian_sync: ${{ steps.obsidian-sync.outcome }}
           - data_file: ${state}
 
-          This lane updates only First-Line Viewpoints. It must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
+          This lane updates only First-Line Viewpoints and its Obsidian viewpoint timelines. It must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
           EOF
 
       - name: Upload first-line artifacts
@@ -182,12 +203,13 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-first-line-viewpoints-manifest.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             01-SiteV2/site/data/follow-builders-daily.json
+            01-SiteV2/knowledge/02-Opinion-Timelines/**
             01-SiteV2/content/11-databases/builder-blog-feed.json
             01-SiteV2/content/11-databases/builder-podcast-feed.json
 
       - name: Commit first-line viewpoints to automation branch
         id: commit
-        if: always() && steps.builders-gate.outcome == 'success'
+        if: always() && steps.builders-gate.outcome == 'success' && steps.obsidian-sync.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -206,6 +228,7 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-first-line-viewpoints-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-follow-builders-data-gate.md"
           stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
+          stage_if_exists "01-SiteV2/knowledge/02-Opinion-Timelines"
           stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
           stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"
 
@@ -238,6 +261,7 @@ jobs:
           - refreshed builder blog and podcast feeds when available;
           - rebuilt \`follow-builders-daily.json\`;
           - passed \`assert-follow-builders-data.mjs\`;
+          - synced same-day Builder viewpoints into \`01-SiteV2/knowledge/02-Opinion-Timelines/\`;
           - no business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
 
           GitHub Pages deploys after this PR updates main.
@@ -331,6 +355,7 @@ jobs:
 
           require_success "Build first-line viewpoints data" "${{ steps.builders-data.outcome }}"
           require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
+          require_success "Obsidian viewpoint timeline sync" "${{ steps.obsidian-sync.outcome }}"
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
             require_success "Open or update PR" "${{ steps.pr.outcome }}"

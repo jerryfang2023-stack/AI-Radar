@@ -240,10 +240,12 @@ Runs:
 - `agent-workflow/tools/fetch-builder-podcast-feed.mjs`.
 - `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs`.
 - `agent-workflow/tools/assert-follow-builders-data.mjs`.
+- `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs`.
 
 Outputs:
 
 - `01-SiteV2/site/data/follow-builders-daily.json`.
+- `01-SiteV2/knowledge/02-Opinion-Timelines/`.
 - `01-SiteV2/site/follow-builders.html`.
 
 Boundaries:
@@ -251,6 +253,7 @@ Boundaries:
 - First-line viewpoints are independent public viewpoints.
 - They must not enter business-signal Cards, relationship graph evidence, or trend-candidate evidence.
 - If refresh fails but previous fresh data exists, fallback may preserve the page with fallback metadata.
+- Every successful daily update must also sync same-date Builder viewpoints into the Obsidian person / date timelines and verify the sync is idempotent.
 
 ### 8. Frontstage Data Build
 
@@ -262,6 +265,7 @@ Runs:
 
 - `01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs`.
 - `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs`.
+- `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs`.
 - `agent-workflow/tools/frontstage-regression-gate.mjs`.
 
 Outputs:
@@ -269,6 +273,7 @@ Outputs:
 - `01-SiteV2/site/data/v3-data-observation-desk.json`.
 - `01-SiteV2/site/data/intelligence-graph-index.json`.
 - `01-SiteV2/site/data/follow-builders-daily.json`.
+- `01-SiteV2/knowledge/02-Opinion-Timelines/`.
 
 Boundaries:
 
@@ -276,6 +281,7 @@ Boundaries:
 - Intelligence Map follows the Business Signals Card chain and does not open a separate PR.
 - First-Line Viewpoints keeps the same topbar height and structure.
 - First-Line Viewpoints data must be produced and gated by its independent workflow, not by the Business Signals PR.
+- First-Line Viewpoints Obsidian timelines must be produced from the same gated `follow-builders-daily.json`, not from retired `05-frontier-opinions`.
 - Do not restore V2 homepage modules, daily observation, business brief, or trend-report prose.
 
 ### 9. Dashboard Sync

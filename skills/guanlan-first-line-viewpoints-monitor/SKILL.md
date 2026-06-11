@@ -19,6 +19,7 @@ Read only what is needed:
 4. `agent-workflow/product/tag-taxonomy.md`
 5. `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs`
 6. `agent-workflow/tools/assert-follow-builders-data.mjs`
+7. `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs`
 
 ## Workflow
 
@@ -37,14 +38,16 @@ node agent-workflow/tools/fetch-builder-blog-feed.mjs --date=<YYYY-MM-DD>
 node agent-workflow/tools/fetch-builder-podcast-feed.mjs --date=<YYYY-MM-DD>
 node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
 node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
+node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD>
 ```
 
 5. Commit only lane-owned outputs:
    - `01-SiteV2/site/data/follow-builders-daily.json`;
+   - `01-SiteV2/knowledge/02-Opinion-Timelines/`;
    - builder blog / podcast feed JSON when refreshed;
    - first-line manifest and gate reports.
 
-The current frontstage data source is `01-SiteV2/site/data/follow-builders-daily.json`. The retired `01-SiteV2/content/05-frontier-opinions/*` path is historical output only and must not be used to decide whether the First-Line Viewpoints lane succeeded.
+The current frontstage data source is `01-SiteV2/site/data/follow-builders-daily.json`. The current Obsidian reading view is `01-SiteV2/knowledge/02-Opinion-Timelines/`, generated from the same daily first-line data. The retired `01-SiteV2/content/05-frontier-opinions/*` path is historical output only and must not be used to decide whether the First-Line Viewpoints lane succeeded.
 
 ## Pass Criteria
 
@@ -55,6 +58,8 @@ The current frontstage data source is `01-SiteV2/site/data/follow-builders-daily
 - `translationStatus` is `translated` for every visible remark.
 - Every remark has at least one `opinion`, one `track`, and one `source` formal tag.
 - Fallback data is allowed only when fresh and explicitly marked.
+- The production date has been synced into `01-SiteV2/knowledge/02-Opinion-Timelines/` with no duplicate URL / id entries.
+- Re-running `sync-follow-builders-to-opinion-timelines.mjs` for the same date returns `added: 0`.
 
 ## Boundaries
 
@@ -64,6 +69,7 @@ The current frontstage data source is `01-SiteV2/site/data/follow-builders-daily
 - Do not stage Community Intelligence data.
 - Do not deploy directly from an automation branch.
 - Do not read `01-SiteV2/content/05-frontier-opinions/*` as the current builders data source.
+- Do not skip Obsidian timeline sync when the frontstage JSON changed for the production date.
 
 ## Self-Improvement Loop
 
@@ -75,6 +81,7 @@ After any failure:
 4. Update this skill only when the workflow boundary or required command changes.
 5. Record durable incidents in `MEMORY.md` only when likely to recur.
 6. Rerun `assert-follow-builders-data.mjs`.
+7. Rerun `sync-follow-builders-to-opinion-timelines.mjs --from=<date> --to=<date>` and confirm idempotency with a dry-run / second run.
 
 ## Reporting
 
@@ -84,6 +91,7 @@ Report:
 - builders count;
 - translation failures removed or repaired;
 - gate report path;
+- Obsidian timeline entries added and affected people / month files;
 - files committed;
 - PR / merge / Pages status when known;
 - skill eval or memory updates made after failures.
