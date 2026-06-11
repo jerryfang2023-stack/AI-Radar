@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-06-10
+last_updated: 2026-06-11
 use_when:
   - github automation
   - daily monitoring
@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# V3.3.3 Automation Loop
+# V3.3.5 Automation Loop
 
-V3.3.3 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts.
+V3.3.5 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints also persists same-date Builder viewpoints into Obsidian person / date timeline files.
 
 ## Business Signals GitHub Chain
 
@@ -43,11 +43,11 @@ An existing `automation/business-signals-<date>` branch must not block a schedul
 
 ## Business Signals Watchdog And Recovery
 
-The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current Business Signals schedule truth is 09:07 Asia/Shanghai.
+The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current Business Signals schedule truth is 09:07 / 09:37 / 10:07 Asia/Shanghai with a 10:20 watchdog.
 
 Operational rules:
 
-1. If no same-date scheduled run is visible by about 09:20 Asia/Shanghai, Hermes may request a manual workflow dispatch.
+1. If no same-date scheduled run is visible by about 10:20 Asia/Shanghai, Hermes may request a manual workflow dispatch.
 2. If a downstream task starts while the Business Signals workflow is `in_progress`, wait for the upstream run instead of declaring data missing.
 3. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
 4. The workflow must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
@@ -77,10 +77,10 @@ This workflow must not write business-signal Cards, relationship graph data, tre
 
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
-| Business Signals | GitHub Actions + `skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
+| Business Signals | GitHub Actions + `skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 / 10:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
-| First-Line Viewpoints | GitHub Actions + `skills/guanlan-first-line-viewpoints-monitor/SKILL.md`, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency | independent automation PR to `main` after builders gate and Obsidian timeline sync pass |
-| Community Intelligence | Local Windows scheduled task / Codex local run + `skills/guanlan-community-intelligence-monitor/SKILL.md` | `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files, local archive, then explicit Git commit / sync |
+| First-Line Viewpoints | GitHub Actions + `skills/guanlan-first-line-viewpoints-monitor/SKILL.md`, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 / 10:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency | independent automation PR to `main` after builders gate and Obsidian timeline sync pass |
+| Community Intelligence | Local Windows scheduled task / Codex local run + `skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | local collection at 08:30 Asia/Shanghai; `.github/workflows/daily-community-intelligence-pr.yml` for publication | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
 
 The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.
 
@@ -168,6 +168,25 @@ The gate checks that:
 - selected keyword rotation and collector errors are recorded;
 - the daily Obsidian archive, index, and category views exist;
 - `agent-workflow/reports/<date>-community-intelligence-gate.md` and `community-intelligence-gate-latest.md` are written.
+
+## Community Intelligence GitHub Publish
+
+Workflow: `.github/workflows/daily-community-intelligence-pr.yml`
+
+This workflow publishes community data already produced by the local collector. It does not run the local browser collector.
+
+Execution order:
+
+1. Resolve the Asia/Shanghai date.
+2. Run `npm run assert:community-intelligence -- --date=<date>`.
+3. Write the community manifest.
+4. Stage only Community Intelligence data, daily snapshots, archive files, views, and gate reports.
+5. Push `automation/community-intelligence-<date>`.
+6. Create or update the PR.
+7. Auto-merge or enable auto-merge after the community gate passes.
+8. Deploy through GitHub Pages after `main` updates.
+
+Hermes should treat local collection success without the community publish workflow / PR / merge as incomplete publication, not as a completed lane.
 
 ## First-Line Viewpoint Data Sources
 

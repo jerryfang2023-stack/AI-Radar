@@ -10,6 +10,7 @@ Use these as pass/fail checks after production, repair, or rule changes.
 - PASS if fallback data records `fallbackUsed` and `fallbackReason`; FAIL if stale fallback silently passes.
 - PASS if staged files are limited to first-line data, feed files, manifests, and gate reports; FAIL if Raw / Pool / Card or Community Intelligence files are staged.
 - PASS if success is judged from `01-SiteV2/site/data/follow-builders-daily.json`; FAIL if the retired `01-SiteV2/content/05-frontier-opinions/*` path is treated as the current source.
+- PASS if the lane syncs same-date Builder viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md` and a second same-date sync adds `0`; FAIL if only old `YYYY-MM.md` month files exist or duplicate timeline entries are introduced.
 
 ## Self-Improvement
 

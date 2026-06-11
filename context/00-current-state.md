@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.5 builder Obsidian date timeline development.
+WaveSight AI is now in V3.3.5 builder Obsidian date timelines.
 
 ## Current Positioning
 

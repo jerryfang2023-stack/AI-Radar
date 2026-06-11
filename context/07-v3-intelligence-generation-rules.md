@@ -1,8 +1,8 @@
 ---
 status: current
 scope: v3-raw-pool-card-trend-rules
-version: V3.3.3-column-independent-production
-last_updated: 2026-06-07
+version: V3.3.5-builder-obsidian-date-timelines
+last_updated: 2026-06-11
 priority: current
 ---
 

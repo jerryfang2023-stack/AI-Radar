@@ -106,7 +106,7 @@ If an old rule conflicts with V3.3, delete or rebuild it instead of preserving c
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
 | `context/08-v3-3-automation.md` | V3.3 GitHub / site / Obsidian sync automation loop |
-| `context/09-v3-3-current-action-index.md` | V3.3.3 current action registry |
+| `context/09-v3-3-current-action-index.md` | V3.3.5 current action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
 | `context/context-index.md` | context router |
 

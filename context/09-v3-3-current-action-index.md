@@ -1,18 +1,18 @@
 ﻿---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-09
+last_updated: 2026-06-11
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch V3.3.3 production work
+  - dispatch V3.3.5 production work
   - distinguish current actions from historical tasks
 priority: current
 ---
 
-# V3.3.3 Current Action Index
+# V3.3.5 Current Action Index
 
-This file is the current action registry for WaveSight AI V3.3.3.
+This file is the current action registry for WaveSight AI V3.3.5.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -22,15 +22,15 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active V3.3.3 production action. | May be used as a default execution route. |
+| `current` | Active V3.3.5 production action. | May be used as a default execution route. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
-Do not mark an old action as `current` just because it existed before. Only a V3.3.3-compatible route that serves the current asset system can be `current`.
+Do not mark an old action as `current` just because it existed before. Only a V3.3.5-compatible route that serves the current asset system can be `current`.
 
 ## Current Actions
 
-Only these actions are `current` for V3.3.3:
+Only these actions are `current` for V3.3.5:
 
 | Action | Status | Current Role |
 |---|---|---|
@@ -42,6 +42,7 @@ Only these actions are `current` for V3.3.3:
 | Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
 | Trend candidate judgment | `current` | Judge repeated same-direction signals, not trend reports. |
 | First-line viewpoints independent update | `current` | Update builders viewpoints independently from business signals. |
+| First-Line Viewpoints Obsidian timeline sync | `current` | Persist Builder viewpoints into person / date Obsidian timelines. |
 | Community intelligence independent update | `current` | Update logged-in community intelligence independently from business signals and builders viewpoints. |
 | Frontstage data build | `current` | Build each column's frontstage data through its owning production lane. |
 | Dashboard sync | `current` | Update operations console and topic-center data. |
@@ -59,7 +60,7 @@ These actions or records may be useful for diagnosis, audit, or historical recov
 | Historical feature list | `manual/archive` | Read only to identify old action names, owners, or status drift. |
 | Old page diagnostics and redesign specs | `manual/archive` | Consult when explaining past UI choices or avoiding regressions. |
 | Old V2 quality-gate reports | `manual/archive` | Use as audit evidence when comparing historical failures. |
-| Old Raw / Pool / Card governance notes | `manual/archive` | Consult only when they do not conflict with V3.3.3 source-first rules. |
+| Old Raw / Pool / Card governance notes | `manual/archive` | Consult only when they do not conflict with V3.3.5 source-first rules. |
 | Historical provider benchmarks | `manual/archive` | Consult for source-provider diagnosis, not as current sourcing policy. |
 | Past handoff / progress notes | `manual/archive` | Use for context recovery only when current `context/` files are insufficient. |
 
@@ -75,7 +76,7 @@ Purpose:
 
 Primary route:
 
-- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 Asia/Shanghai.
+- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 / 10:07 Asia/Shanghai.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
 Reads:
@@ -228,7 +229,7 @@ Purpose:
 
 Primary route:
 
-- GitHub workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai.
+- GitHub workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 / 10:17 Asia/Shanghai.
 
 Reads:
 
@@ -317,14 +318,15 @@ Runs:
 
 - `.github/workflows/daily-persistent-assets-pr.yml`.
 - `.github/workflows/daily-first-line-viewpoints-pr.yml`.
+- `.github/workflows/daily-community-intelligence-pr.yml`.
 - `.github/workflows/github-pages.yml`.
-- local Community Intelligence commit / sync after `guanlan-community-intelligence-monitor` gate passes.
+- local Community Intelligence collection / archive before the community publish workflow.
 
 Outputs:
 
 - `automation/business-signals-<date>` branch for Business Signals / Intelligence Map / Dashboard data.
 - `automation/first-line-viewpoints-<date>` branch for First-Line Viewpoints data.
-- local Community Intelligence data commit after community gate passes.
+- `automation/community-intelligence-<date>` branch for Community Intelligence data.
 - independent column PRs.
 - merged assets on `main`.
 - GitHub Pages deployment from `01-SiteV2/site`.
@@ -343,7 +345,8 @@ Purpose:
 
 Primary route:
 
-- Local Windows task: `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai.
+- Local Windows task: `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai for collection.
+- GitHub workflow: `.github/workflows/daily-community-intelligence-pr.yml` for same-date publication after local data exists.
 
 Reads:
 
@@ -355,18 +358,21 @@ Runs:
 - `npm run collect:community-intelligence`.
 - `npm run archive:community-intelligence`.
 - `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>`.
+- `.github/workflows/daily-community-intelligence-pr.yml`.
 
 Outputs:
 
 - `01-SiteV2/site/data/community-intelligence.json`.
+- `01-SiteV2/site/data/community-intelligence-daily/<date>.json`.
 - `01-SiteV2/content/07-community-intelligence/`.
 - `agent-workflow/reports/<date>-community-intelligence-gate.md`.
+- `automation/community-intelligence-<date>` PR.
 
 Boundaries:
 
 - Community posts are leads, not verified Business Signals.
 - Do not stage Business Signals or First-Line Viewpoints data from this lane.
-- Do not deploy directly from the local task.
+- Do not treat local collection success as publication success until the community PR reaches `main` and GitHub Pages runs.
 
 ### 12. Local Obsidian Sync
 
@@ -393,11 +399,11 @@ Boundaries:
 
 ## Retired Actions
 
-The following actions are `retired` for V3.3.3:
+The following actions are `retired` for V3.3.5:
 
 | Action | Status | Reason |
 |---|---|---|
-| daily observation writing | `retired` | V3.3.3 does not require article-style daily observation output. |
+| daily observation writing | `retired` | V3.3.5 does not require article-style daily observation output. |
 | business brief / internal reference | `retired` | The current product is an asset system, not a brief-production lane. |
 | trend report writing | `retired` | Current trend output is trend candidate only. |
 | V2 four-column website page production | `retired` | V2 homepage and four-column public site routes are retired. |
@@ -409,7 +415,7 @@ The following actions are `retired` for V3.3.3:
 | builders / follow-builders mixed into relationship graph | `retired` | Graph evidence must come from accepted business-signal Cards. |
 | builders / follow-builders mixed into trend candidates | `retired` | Trend candidates require multiple business-signal Cards, not viewpoints. |
 | old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Intelligence Map, First-Line Viewpoints, Community Intelligence, and Dashboard. |
-| temporary-only daily asset generation | `retired` | V3.3.3 automation must persist assets through PR / deploy / sync. |
+| temporary-only daily asset generation | `retired` | V3.3.5 automation must persist assets through PR / deploy / sync. |
 
 If a script or old task requires one of these as a blocker for current production, treat it as historical contamination and update the route.
 

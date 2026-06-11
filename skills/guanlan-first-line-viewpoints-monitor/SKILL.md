@@ -31,7 +31,12 @@ Read only what is needed:
 .github/workflows/daily-first-line-viewpoints-pr.yml
 ```
 
-4. For local repair, use:
+4. Apply the schedule watchdog before declaring the lane idle:
+   - current cron windows are 09:17 / 09:47 / 10:17 Asia/Shanghai;
+   - if no same-date scheduled run is visible by about 10:30, dispatch the workflow manually;
+   - if the workflow is still `in_progress`, wait for the data gate and Obsidian sync before reporting stale data.
+
+5. For local repair, use:
 
 ```powershell
 node agent-workflow/tools/fetch-builder-blog-feed.mjs --date=<YYYY-MM-DD>
@@ -41,7 +46,7 @@ node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
 node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD>
 ```
 
-5. Commit only lane-owned outputs:
+6. Commit only lane-owned outputs:
    - `01-SiteV2/site/data/follow-builders-daily.json`;
    - `01-SiteV2/knowledge/02-Opinion-Timelines/`;
    - builder blog / podcast feed JSON when refreshed;

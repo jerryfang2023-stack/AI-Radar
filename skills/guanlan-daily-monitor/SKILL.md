@@ -1,6 +1,6 @@
 ---
 name: guanlan-daily-monitor
-description: Legacy-compatible entry for Business Signals Raw / Pool monitoring. Prefer `guanlan-business-signals-monitor` for the full V3.3.3 Business Signals lane, including Core Pool, Cards, Top10, PR handoff, and self-improvement. This skill only collects Raw candidates, routes Pool evidence, records monitor logs, and prepares QC handoff.
+description: Legacy-compatible entry for Business Signals Raw / Pool monitoring. Prefer `guanlan-business-signals-monitor` for the full V3.3.5 Business Signals lane, including Core Pool, Cards, Top10, PR handoff, and self-improvement. This skill only collects Raw candidates, routes Pool evidence, records monitor logs, and prepares QC handoff.
 ---
 
 # Guanlan Daily Monitor
