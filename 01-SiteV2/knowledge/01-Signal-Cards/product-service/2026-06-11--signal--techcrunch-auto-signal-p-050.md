@@ -2,15 +2,15 @@
 id: SIG-20260611-A07
 type: signal_card
 signal_type: product_service
-title: "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景"
+title: "Techcrunch 发布 AI 基础设施能力，切入模型部署和算力服务"
 date: 2026-06-11
 status: published
 source_title: "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-080"]
 pool_refs: ["P-050"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景"
+  displayTitle: "Techcrunch 发布 AI 基础设施能力，切入模型部署和算力服务"
   sourceLinks:
     - "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats"
 ---
 
-# Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景
+# Techcrunch 发布 AI 基础设施能力，切入模型部署和算力服务
 
 ## 新闻事实
 

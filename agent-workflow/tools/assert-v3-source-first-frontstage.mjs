@@ -144,7 +144,22 @@ function subjectHasSourceNoise(value = "") {
 
 function titleNeedsTranslation(value = "") {
   const text = String(value || "").trim();
-  return text.length > 18 && !/[\u4e00-\u9fff]/u.test(text);
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
+  if (text.length > 18 && hanCount === 0) return true;
+  if (latinWords.length >= 7 && hanCount < 10) return true;
+  if (sourceLikeEnglish && latinWords.length >= 5 && hanCount < 14) return true;
+  return false;
+}
+
+function publicContentNeedsTranslation(value = "") {
+  const text = String(value || "").trim();
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  if (text.length > 70 && latinWords.length >= 10 && hanCount < 10) return true;
+  if (text.length > 120 && latinWords.length >= 14 && hanCount < 18) return true;
+  return false;
 }
 
 function subjectIsMissing(value = "") {
@@ -238,6 +253,18 @@ for (const card of cards) {
   if (card.date === activeDate && titleNeedsTranslation(card.title)) {
     issues.push(`card ${card.id || "(missing id)"} has untranslated frontstage title: ${card.title}`);
   }
+  if (card.date === activeDate) {
+    for (const [field, value] of [
+      ["summary", card.summary],
+      ["translatedFact", card.translatedFact],
+      ["visibleFragment", card.visibleFragment],
+      ...(card.originalHighlights || []).map((highlight, index) => [`originalHighlights[${index}]`, highlight]),
+    ]) {
+      if (publicContentNeedsTranslation(value)) {
+        issues.push(`card ${card.id || "(missing id)"} has untranslated public ${field}: ${String(value).slice(0, 120)}`);
+      }
+    }
+  }
   const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact].join("\n");
   for (const highlight of card.originalHighlights || []) {
     if (
@@ -277,6 +304,18 @@ for (const candidate of payload.corePoolCandidates || []) {
   }
   if (candidate.date === activeDate && titleNeedsTranslation(candidate.title)) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has untranslated frontstage title: ${candidate.title}`);
+  }
+  if (candidate.date === activeDate) {
+    for (const [field, value] of [
+      ["summary", candidate.summary],
+      ["translatedFact", candidate.translatedFact],
+      ["visibleFragment", candidate.visibleFragment],
+      ...(candidate.originalHighlights || []).map((highlight, index) => [`originalHighlights[${index}]`, highlight]),
+    ]) {
+      if (publicContentNeedsTranslation(value)) {
+        issues.push(`core pool candidate ${candidate.id || "(missing id)"} has untranslated public ${field}: ${String(value).slice(0, 120)}`);
+      }
+    }
   }
 }
 

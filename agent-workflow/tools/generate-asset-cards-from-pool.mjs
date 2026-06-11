@@ -1125,6 +1125,26 @@ function fundingAngleFromScenario(scenario) {
   return scenario.replace(/流程$/u, "");
 }
 
+function publicSignalTitle({ type, company, scenario, amount, fundingAngle, text }) {
+  const owner = publicCardCopy(company || "未标注主体");
+  const lane = publicCardCopy(fundingAngle || scenario || "企业业务流程");
+  const signalText = String(text || "");
+  if (type === "funding") {
+    const amountText = amount ? `${amount} ` : "";
+    return `${owner} 获得${amountText}融资，押注${lane}`;
+  }
+  if (type === "product_service") {
+    if (/\b(inference|model|serverless|compute|hosting|gpu|infrastructure|platform)\b|妯″瀷|绠楀姏|閮ㄧ讲/iu.test(signalText)) {
+      return `${owner} 发布 AI 基础设施能力，切入${lane}`;
+    }
+    if (/\b(agent|workflow|assistant|orchestrat|automation)\b|Agent|workflow/iu.test(signalText)) {
+      return `${owner} 推出 Agent 工作流能力，切入${lane}`;
+    }
+    return `${owner} 发布 AI 产品能力，切入${lane}`;
+  }
+  return `${owner} 案例：AI 进入${publicCardCopy(scenario || "企业业务流程")}`;
+}
+
 function isNonCommercialPolicyOrEthicsSignal(section) {
   const text = [
     poolTitle(section),
@@ -1192,7 +1212,7 @@ function autoSignalSpec(poolRef, section, index) {
   const fallbackTitle = type === "funding"
     ? `${company} 融资`
     : `${company} 商业信号`;
-  const title = originalTitle || fallbackTitle || "";
+  const title = publicSignalTitle({ type, company, scenario, amount, fundingAngle, text }) || fallbackTitle || "";
   const sourceTitle = originalTitle || "";
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);

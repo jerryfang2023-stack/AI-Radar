@@ -2,15 +2,15 @@
 id: SIG-20260611-A04
 type: signal_card
 signal_type: case
-title: "ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services"
+title: "Better.com 案例：AI 进入企业智能体协作流程"
 date: 2026-06-11
 status: published
 source_title: "ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-046"]
 pool_refs: ["P-040"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Better.com"
 
 frontend:
-  displayTitle: "ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services"
+  displayTitle: "Better.com 案例：AI 进入企业智能体协作流程"
   sourceLinks:
     - "https://www.businesswire.com/news/home/20260225955474/en/ElevenLabs-and-Better.com-Showcase-Success-of-AI-Loan-Agent-Betsy-at-Scale-in-Financial-Services"
 ---
 
-# ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services
+# Better.com 案例：AI 进入企业智能体协作流程
 
 ## 新闻事实
 

@@ -2,15 +2,15 @@
 id: SIG-20260611-A08
 type: signal_card
 signal_type: case
-title: "智能体表面的演进：使用 Claude Managed Agents 构建"
+title: "智能体表面的演进：使用 Claude Managed Agents 构建 案例：AI 进入地产开发和建筑设计流程"
 date: 2026-06-11
 status: published
 source_title: "智能体表面的演进：使用 Claude Managed Agents 构建"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-025"]
 pool_refs: ["P-020"]
@@ -32,7 +32,7 @@ primary_raw:
 formal_tags:
   track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
   function: ["function-engineering"]
-  scenario: ["scenario-agent-governance"]
+  scenario: ["scenario-construction-real-estate", "scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-customer-adoption"]
   stage: []
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "智能体表面的演进：使用 Claude Managed Agents 构建"
 
 frontend:
-  displayTitle: "智能体表面的演进：使用 Claude Managed Agents 构建"
+  displayTitle: "智能体表面的演进：使用 Claude Managed Agents 构建 案例：AI 进入地产开发和建筑设计流程"
   sourceLinks:
     - "https://claude.com/blog/building-with-claude-managed-agents"
 ---
 
-# 智能体表面的演进：使用 Claude Managed Agents 构建
+# 智能体表面的演进：使用 Claude Managed Agents 构建 案例：AI 进入地产开发和建筑设计流程
 
 ## 新闻事实
 

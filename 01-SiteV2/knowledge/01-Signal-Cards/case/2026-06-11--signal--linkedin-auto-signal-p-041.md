@@ -2,15 +2,15 @@
 id: SIG-20260611-A05
 type: signal_card
 signal_type: case
-title: "Invert Procurement AI Thinking from Automation to Augment and ..."
+title: "Linkedin 案例：AI 进入销售和收入团队流程"
 date: 2026-06-11
 status: published
 source_title: "Invert Procurement AI Thinking from Automation to Augment and ..."
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-047"]
 pool_refs: ["P-041"]
@@ -31,8 +31,8 @@ primary_raw:
 
 formal_tags:
   track: ["track-ai-agent", "track-enterprise-workflow"]
-  function: ["function-procurement-bidding"]
-  scenario: ["scenario-bidding-response"]
+  function: ["function-sales"]
+  scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-customer-adoption"]
   stage: []
@@ -42,16 +42,16 @@ formal_tags:
 signal_owner: "Linkedin"
 
 frontend:
-  displayTitle: "Invert Procurement AI Thinking from Automation to Augment and ..."
+  displayTitle: "Linkedin 案例：AI 进入销售和收入团队流程"
   sourceLinks:
     - "https://www.linkedin.com/posts/pascaldarc_a-pattern-i-keep-noticing-in-procurement-activity-7453415691053068289-axRZ"
 ---
 
-# Invert Procurement AI Thinking from Automation to Augment and ...
+# Linkedin 案例：AI 进入销售和收入团队流程
 
 ## 新闻事实
 
-Invert Procurement AI Thinking from Automation to Augment and ...
+Linkedin 案例：AI 进入销售和收入团队流程
 
 ## 原文要点
 
@@ -63,7 +63,7 @@ Linkedin 的案例信号可用于观察 AI 是否已经进入 销售和收入团
 
 ## 可见原文片段
 
-Invert Procurement AI Thinking from Automation to Augment and ...
+Linkedin 案例：AI 进入销售和收入团队流程
 
 ## 证据边界
 

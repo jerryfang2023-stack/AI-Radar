@@ -603,11 +603,39 @@ function fallbackChineseTitleForEnglish(title = "", sourceUrl = "") {
   const text = String(title || "").replace(/\s+/gu, " ").trim();
   if (!text) return "";
   const subject = subjectFromUrl(sourceUrl) || subjectFromEnglishTitle(text) || domain(sourceUrl).split(".")[0] || "AI";
-  if (/\b(raises|raised|lands|landed|secures|secured|funding|series|seed)\b/iu.test(text)) return `${subject} 融资：${text}`;
-  if (/\b(launches|launch|introduces|introduced|releases|released|announces|announced|general availability)\b/iu.test(text)) return `${subject} 发布：${text}`;
-  if (/\b(procurement|customer|adoption|case study|workflow|overhaul)\b/iu.test(text)) return `${subject} 案例：${text}`;
-  if (/\b(report|benchmark|market|adoption)\b/iu.test(text)) return `${subject} 报告：${text}`;
-  return `${subject} 信号：${text}`;
+  if (/\b(raises|raised|lands|landed|secures|secured|funding|financing|series|seed|pre-seed)\b/iu.test(text)) return `${subject} 融资，资金流向 AI 商业化环节`;
+  if (/\b(launches|launch|introduces|introduced|releases|released|announces|announced|general availability)\b/iu.test(text)) return `${subject} 发布 AI 产品能力，切入企业工作流`;
+  if (/\b(procurement|purchase|supply chain|customer|adoption|case study|workflow|overhaul|visuals?|furniture|companies)\b/iu.test(text)) return `${subject} 案例：AI 进入企业业务流程`;
+  if (/\b(inference|model|serverless|compute|gpu|infrastructure|platform)\b/iu.test(text)) return `${subject} 发布 AI 基础设施能力`;
+  if (/\b(report|benchmark|market|adoption|guide|complete)\b/iu.test(text)) return `${subject} 报告：AI 商业采用继续分化`;
+  return `${subject} 信号：AI 进入企业业务流程`;
+}
+
+function fallbackChineseFactForEnglish(title = "", sourceUrl = "") {
+  const text = String(title || "").replace(/\s+/gu, " ").trim();
+  if (!text) return "";
+  const subject = subjectFromUrl(sourceUrl) || subjectFromEnglishTitle(text) || domain(sourceUrl).split(".")[0] || "AI";
+  const amount = text.match(/\$ ?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion)/u)?.[0] || "";
+  if (/\b(raises|raised|lands|landed|secures|secured|funding|financing|series|seed|pre-seed)\b/iu.test(text)) {
+    return `${subject} 获得${amount ? `${amount} ` : ""}融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。`;
+  }
+  if (/\b(launches|launch|introduces|introduced|releases|released|announces|announced|general availability)\b/iu.test(text)) {
+    return `${subject} 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。`;
+  }
+  if (/\b(procurement|purchase|supply chain|customer|adoption|case study|workflow|overhaul|visuals?|furniture|companies)\b/iu.test(text)) {
+    return `${subject} 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。`;
+  }
+  if (/\b(inference|model|serverless|compute|gpu|infrastructure|platform)\b/iu.test(text)) {
+    return `${subject} 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。`;
+  }
+  return `${subject} 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。`;
+}
+
+function isUntranslatedPublicEnglish(value = "") {
+  const text = String(value || "").trim();
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  return text.length > 70 && latinWords.length >= 10 && hanCount < 10;
 }
 
 function subjectMatchesDisplayTitle(subject = "", title = "", originalTitle = "") {
@@ -747,7 +775,7 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   // Fallback: if the title already has Chinese content, use it as a basic fact
   const cjkChars = (text.match(/[\u4e00-\u9fff]/gu) || []).length;
   if (cjkChars >= 8) return short(text, 320);
-  return "";
+  return fallbackChineseFactForEnglish(text, sourceUrl);
 }
 
 function frontstageChineseTitle(title = "", sourceUrl = "") {
@@ -1246,15 +1274,11 @@ function buildOriginalHighlights(raw, rawDisplayTitle = "", sourceUrl = "", exis
     .filter(Boolean);
   const candidates = [...new Set([...translated, ...genericRawCorePoints(raw)])]
     .filter((item) => item && !isMechanicalFrontstageText(item) && !/原题为/u.test(item))
+    .filter((item) => !isUntranslatedPublicEnglish(item))
     .filter((item) => !textRepeatsAny(item, existing));
-  // Fallback: if no translated highlights, use raw excerpt text directly
   if (!candidates.length) {
-    const rawFallback = raw.keyExcerpts
-      .map((item) => stripSourceNoise(item.text))
-      .filter(Boolean)
-      .filter((item) => isSubstantiveSourceFragment(item))
-      .filter((item) => !textRepeatsAny(item, existing));
-    candidates.push(...rawFallback);
+    const fallback = fallbackChineseFactForEnglish(rawDisplayTitle || raw.rawTitle, sourceUrl);
+    if (fallback && !textRepeatsAny(fallback, existing)) candidates.push(fallback);
   }
   return uniqueNonRepeatingLines(candidates, existing, 8);
 }
@@ -1284,10 +1308,10 @@ function buildSourceExcerpt(raw, highlights = [], rawDisplayTitle = "") {
     .find((item) => item && !/原题为/u.test(item) && isSubstantiveSourceFragment(item));
   if (sentenceExcerpt) return sentenceExcerpt;
   const visible = publicVisibleFragment(raw.visibleFragment);
-  if (isSubstantiveSourceFragment(visible)) return visible;
+  if (isSubstantiveSourceFragment(visible) && !isUntranslatedPublicEnglish(visible)) return visible;
   const highlightExcerpt = highlights.find((item) => hasCjk(item) && !/^原始来源|本地 Raw\/Pool/u.test(item) && !/原题为/u.test(item) && isSubstantiveSourceFragment(item));
   if (highlightExcerpt) return highlightExcerpt;
-  return sourceTextFragment(raw, rawDisplayTitle);
+  return fallbackChineseFactForEnglish(rawDisplayTitle || raw.rawTitle, raw.sourceUrl);
 }
 
 function sourceValueFromEvidence(category, highlights = [], rawDisplayTitle = "", existing = []) {

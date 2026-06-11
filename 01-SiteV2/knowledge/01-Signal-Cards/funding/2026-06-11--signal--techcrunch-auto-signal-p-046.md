@@ -2,15 +2,15 @@
 id: SIG-20260611-A02
 type: signal_card
 signal_type: funding
-title: "Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文"
+title: "Techcrunch 获得$24M 融资，押注销售线索和收入团队协作"
 date: 2026-06-11
 status: published
 source_title: "Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-058"]
 pool_refs: ["P-046"]
@@ -31,8 +31,8 @@ primary_raw:
 
 formal_tags:
   track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-enterprise-data"]
-  function: ["function-engineering"]
-  scenario: ["scenario-knowledge-base"]
+  function: ["function-engineering", "function-sales"]
+  scenario: ["scenario-knowledge-base", "scenario-sales-briefing"]
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-funding"]
   stage: ["stage-rising"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文"
+  displayTitle: "Techcrunch 获得$24M 融资，押注销售线索和收入团队协作"
   sourceLinks:
     - "https://techcrunch.com/2026/06/10/jedify-raises-24m-to-help-companies-arm-ai-agents-with-context-on-their-business"
 ---
 
-# Jedify 获 2400 万美元融资，帮助企业为 AI 智能体提供业务上下文
+# Techcrunch 获得$24M 融资，押注销售线索和收入团队协作
 
 ## 新闻事实
 

@@ -2,15 +2,15 @@
 id: SIG-20260611-A09
 type: signal_card
 signal_type: case
-title: "DiffusionGemma 开发者指南"
+title: "Google DeepMind 案例：AI 进入模型部署和算力调用"
 date: 2026-06-11
 status: published
 source_title: "DiffusionGemma 开发者指南"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-032"]
 pool_refs: ["P-026"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Google DeepMind"
 
 frontend:
-  displayTitle: "DiffusionGemma 开发者指南"
+  displayTitle: "Google DeepMind 案例：AI 进入模型部署和算力调用"
   sourceLinks:
     - "https://developers.googleblog.com/diffusiongemma-the-developer-guide"
 ---
 
-# DiffusionGemma 开发者指南
+# Google DeepMind 案例：AI 进入模型部署和算力调用
 
 ## 新闻事实
 

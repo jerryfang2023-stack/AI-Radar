@@ -2,15 +2,15 @@
 id: SIG-20260611-A12
 type: signal_card
 signal_type: funding
-title: "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定"
+title: "Niteshift 获得$7 m 融资，押注模型部署和算力服务"
 date: 2026-06-11
 status: published
 source_title: "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-056"]
 pool_refs: ["P-045"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Niteshift"
 
 frontend:
-  displayTitle: "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定"
+  displayTitle: "Niteshift 获得$7 m 融资，押注模型部署和算力服务"
   sourceLinks:
     - "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in"
 ---
 
-# Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定
+# Niteshift 获得$7 m 融资，押注模型部署和算力服务
 
 ## 新闻事实
 

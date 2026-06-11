@@ -2,15 +2,15 @@
 id: SIG-20260611-A03
 type: signal_card
 signal_type: funding
-title: "AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE"
+title: "PointFive Inc. 获得$60M 融资，押注销售线索和收入团队协作"
 date: 2026-06-11
 status: published
 source_title: "AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-11T01:29:53.337Z
-updated_at: 2026-06-11T01:29:53.337Z
+created_at: 2026-06-11T02:38:19.482Z
+updated_at: 2026-06-11T02:38:19.482Z
 
 raw_refs: ["R-049"]
 pool_refs: ["P-043"]
@@ -30,11 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-agent"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-pricing-cost", "evidence-funding"]
+  customer: []
+  evidence: ["evidence-funding"]
   stage: ["stage-rising"]
   region: []
   source: ["source-industry-data"]
@@ -42,16 +42,16 @@ formal_tags:
 signal_owner: "PointFive Inc."
 
 frontend:
-  displayTitle: "AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE"
+  displayTitle: "PointFive Inc. 获得$60M 融资，押注销售线索和收入团队协作"
   sourceLinks:
     - "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/"
 ---
 
-# AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE
+# PointFive Inc. 获得$60M 融资，押注销售线索和收入团队协作
 
 ## 新闻事实
 
-AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE
+PointFive Inc. 获得$60M 融资，押注销售线索和收入团队协作
 
 ## 原文要点
 
@@ -63,7 +63,7 @@ PointFive Inc. 的融资信号可用于观察资本是否继续流向 销售线�
 
 ## 可见原文片段
 
-AI infrastructure cost control startup PointFive gets $60M to help enterprises save - SiliconANGLE
+PointFive Inc. 获得$60M 融资，押注销售线索和收入团队协作
 
 ## 证据边界
 
