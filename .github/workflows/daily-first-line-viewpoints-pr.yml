@@ -2,8 +2,11 @@ name: WaveSight First-Line Viewpoints PR
 
 on:
   schedule:
-    # 09:17 Asia/Shanghai, every day. Runs independently from the business-signal chain.
+    # 09:17 / 09:47 / 10:17 Asia/Shanghai. Backup slots cover delayed or dropped
+    # GitHub scheduled runs and skip when same-date data is already on main.
     - cron: "17 1 * * *"
+    - cron: "47 1 * * *"
+    - cron: "17 2 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -16,7 +19,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: wavesight-first-line-viewpoints-${{ github.event.inputs.date || github.run_id }}
+  group: wavesight-first-line-viewpoints-${{ github.event.inputs.date || github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -60,6 +63,32 @@ jobs:
           echo "date=$run_date" >> "$GITHUB_OUTPUT"
           echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
 
+      - name: Check existing first-line data
+        id: existing-first-line
+        shell: bash
+        run: |
+          set -euo pipefail
+          skip=false
+          reason="not_applicable"
+          data_file="01-SiteV2/site/data/follow-builders-daily.json"
+          data_date=""
+
+          if [ -f "$data_file" ]; then
+            data_date="$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));const value=data.meta?.date||data.meta?.generatedAt||data.meta?.generatedDate||data.generatedDate||data.generatedAt||'';const date=value ? new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)) : ''; process.stdout.write(date);" "$data_file")"
+          fi
+
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ]; then
+            skip=true
+            reason="same-date first-line viewpoints data already exists on main"
+          fi
+
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+          echo "reason=$reason" >> "$GITHUB_OUTPUT"
+          echo "data_date=$data_date" >> "$GITHUB_OUTPUT"
+          echo "skip_first_line_viewpoints=$skip"
+          echo "first_line_skip_reason=$reason"
+          echo "existing_first_line_data_date=$data_date"
+
       - name: Syntax checks
         shell: bash
         run: |
@@ -71,6 +100,7 @@ jobs:
 
       - name: Fetch builder blog RSS feeds
         id: builder-blogs
+        if: steps.existing-first-line.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -81,6 +111,7 @@ jobs:
 
       - name: Fetch builder podcast RSS feeds
         id: builder-podcasts
+        if: steps.existing-first-line.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -91,6 +122,7 @@ jobs:
 
       - name: Build first-line viewpoints data
         id: builders-data
+        if: steps.existing-first-line.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -125,6 +157,10 @@ jobs:
 
           - generated_at: $(date -Is)
           - workflow_mode: first_line_viewpoints_pr
+          - trigger: ${{ github.event_name }}
+          - skip: ${{ steps.existing-first-line.outputs.skip }}
+          - skip_reason: ${{ steps.existing-first-line.outputs.reason }}
+          - existing_data_date: ${{ steps.existing-first-line.outputs.data_date }}
           - builder_blogs: ${{ steps.builder-blogs.outcome }}
           - builder_podcasts: ${{ steps.builder-podcasts.outcome }}
           - builders_data: ${{ steps.builders-data.outcome }}
@@ -278,6 +314,12 @@ jobs:
         shell: bash
         run: |
           fail=0
+
+          if [ "${{ steps.existing-first-line.outputs.skip }}" = "true" ]; then
+            echo "First-Line Viewpoints scheduled run skipped: ${{ steps.existing-first-line.outputs.reason }}"
+            exit 0
+          fi
+
           require_success() {
             local label="$1"
             local outcome="$2"

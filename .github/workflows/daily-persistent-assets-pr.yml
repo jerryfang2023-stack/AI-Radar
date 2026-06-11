@@ -2,8 +2,11 @@ name: WaveSight Business Signals PR
 
 on:
   schedule:
-    # 09:07 Asia/Shanghai, every day. Avoids exact-hour GitHub Actions schedule congestion.
+    # 09:07 / 09:37 / 10:07 Asia/Shanghai. GitHub scheduled runs can be delayed
+    # or occasionally dropped; backup slots are guarded by the same-date asset check.
     - cron: "7 1 * * *"
+    - cron: "37 1 * * *"
+    - cron: "7 2 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -21,7 +24,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: wavesight-business-signals-${{ github.event.inputs.date || github.run_id }}
+  group: wavesight-business-signals-${{ github.event.inputs.date || github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -83,24 +86,27 @@ jobs:
           pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
           signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
           branch="automation/business-signals-${RUN_DATE}"
+          signal_card_count="$(find 01-SiteV2/knowledge/01-Signal-Cards -type f -name "${RUN_DATE}--signal--*.md" 2>/dev/null | wc -l | tr -d ' ')"
 
           if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
             branch_exists=true
           fi
 
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ]; then
+            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ "$signal_card_count" -ge 10 ]; then
               skip=true
-              reason="same-date business-signal assets already exist on main"
+              reason="same-date business-signal assets and signal cards already exist on main"
             fi
           fi
 
           echo "skip=$skip" >> "$GITHUB_OUTPUT"
           echo "reason=$reason" >> "$GITHUB_OUTPUT"
           echo "branch_exists=$branch_exists" >> "$GITHUB_OUTPUT"
+          echo "signal_card_count=$signal_card_count" >> "$GITHUB_OUTPUT"
           echo "skip_business_signal_assets=$skip"
           echo "business_signal_skip_reason=$reason"
           echo "existing_automation_branch=$branch_exists"
+          echo "same_date_signal_card_count=$signal_card_count"
 
       - name: Report cloud dependency state
         shell: bash
@@ -112,10 +118,11 @@ jobs:
             echo "- generated_at: $(date -Is)"
             echo "- mode: business_signals_pr"
             echo "- trigger: ${{ github.event_name }}"
-            echo "- schedule: 09:07 Asia/Shanghai daily"
+            echo "- schedule: 09:07 / 09:37 / 10:07 Asia/Shanghai daily"
             echo "- business_signal_skip: ${{ steps.existing-assets.outputs.skip }}"
             echo "- business_signal_skip_reason: ${{ steps.existing-assets.outputs.reason }}"
             echo "- existing_automation_branch: ${{ steps.existing-assets.outputs.branch_exists }}"
+            echo "- existing_signal_card_count: ${{ steps.existing-assets.outputs.signal_card_count }}"
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
             echo "- tavily_secret: $([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing)"
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
