@@ -1,0 +1,534 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-074
+title: "荣耀公布PC、平板6月升级特性：优化YOYO Claw与平板体验"
+original_url: "https://www.ithome.com/0/962/650.htm"
+canonical_url: "https://ithome.com/0/962/650.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-10T13:24:03.000Z"
+collected_at: 2026-06-11T01:29:52.881Z
+language: mixed
+full_text_hash: 4ba221ea86019f31
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-074-荣耀公布pc-平板6月升级特性-优化yoyo-claw与平板体验.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-074-荣耀公布pc-平板6月升级特性-优化yoyo-claw与平板体验.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 58
+extractor_diagnostics: {"readability_score":58,"text_length":3024,"paragraph_count":63,"sentence_count":18,"boilerplate_hits":5,"symbol_ratio":0.0007,"method":"body-visible-text"}
+has_full_text: true
+content_length: 3024
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4ba221ea86019f31","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"荣耀公布PC、平板6月升级特性：优化YOYO Claw与平板体验","discovery_summary":"荣耀PC端YOYO Claw优化应用启动与工具调用，新增对话置顶、Bot市场筛选、文件拖拽区域扩大，上线美加墨世界杯龙虾（支持赛事数据与预测），Windows版上架荣耀官网。平板端推出PC桌面（14x8网格布局，支持文件操作）、YOYO伴学助手、极客中心2.0、全局充电分离、游戏管家AI变声、灵动胶囊（切歌动画、淘宝闪买）、AI圈搜智慧套索及苹果AirPods原生互联。升级覆盖荣耀WIN游戏本H9/H7、MagicBook系列、MagicPad3 Pro、荣耀平板GT系列等机型。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/962/650.htm","discovered_at":"2026-06-11T01:23:43.714Z","rank_on_page":247,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: bdb11d874fd1e4d7
+content_hash: 4ba221ea86019f31
+semantic_hash: 00ab1ee441bf7b23
+duplicate_of: ""
+first_seen_at: "2026-06-10T13:24:03.000Z"
+last_seen_at: 2026-06-11T01:29:52.881Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["法律 / 法务","企业服务"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","法务"],"numbers":["6","14x","8","2.0","9","7","3","5"],"quotes":["双 WLAN 网络加速","智能选择最佳 WLAN"]}
+evidence_seed: {"company_actions":["IT之家 6 月 10 日消息，荣耀全场景产品线总裁 @荣耀潇哥 今日公布了荣耀 PC、平板 6 月升级特性。","优化工具调用功能，相关消息会自动合并到同一条对话中展示，对话结构更清晰、阅读更顺畅。","优化部分关键操作的权限控制，允许用户授权在一定时间内的操作，避免重复确认。"],"case_details":["荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 平板电脑 荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 2026/6/10 21:24:03 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 雨雪载途 的线索投递！"],"workflow_changes":["IT之家整理汇总如下： PC YOYO Claw 体验优化升级 性能与体验优化 优化应用启动流程，缩短启动时间，更快进入对话界面，整体对话更加流畅。"],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存"]
+key_excerpts: [{"type":"number","text":"荣耀PC端YOYO Claw优化应用启动与工具调用，新增对话置顶、Bot市场筛选、文件拖拽区域扩大，上线美加墨世界杯龙虾（支持赛事数据与预测），Windows版上架荣耀官网。平板端推出PC桌面（14x8网格布局，支持文件操作）、YOYO伴学助手、极客中心2.0、全局充电分离、游戏管家AI变声、灵动胶囊（切歌动画、淘宝闪买）、AI圈搜智慧套索及苹果AirPods原生互联。升级覆盖荣耀WIN游戏本H9/H7、MagicBook系列、MagicPad3 Pro、荣耀平板GT系列等机型。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 平板电脑 荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 2026/6/10 21:24:03 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 雨雪载途 的线索投递！","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"IT之家 6 月 10 日消息，荣耀全场景产品线总裁 @荣耀潇哥 今日公布了荣耀 PC、平板 6 月升级特性。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"IT之家整理汇总如下： PC YOYO Claw 体验优化升级 性能与体验优化 优化应用启动流程，缩短启动时间，更快进入对话界面，整体对话更加流畅。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"优化工具调用功能，相关消息会自动合并到同一条对话中展示，对话结构更清晰、阅读更顺畅。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"优化部分关键操作的权限控制，允许用户授权在一定时间内的操作，避免重复确认。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 荣耀公布PC、平板6月升级特性：优化YOYO Claw与平板体验
+
+## clean_text
+
+荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 平板电脑
+荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验
+2026/6/10 21:24:03
+来源： IT之家
+作者： 沁沧（实习）
+责编： 沁沧
+评论：
+感谢IT之家网友 雨雪载途 的线索投递！
+IT之家 6 月 10 日消息，荣耀全场景产品线总裁 @荣耀潇哥 今日公布了荣耀 PC、平板 6 月升级特性。
+IT之家整理汇总如下：
+PC
+YOYO Claw 体验优化升级
+性能与体验优化
+优化应用启动流程，缩短启动时间，更快进入对话界面，整体对话更加流畅。
+优化工具调用功能，相关消息会自动合并到同一条对话中展示，对话结构更清晰、阅读更顺畅。
+优化部分关键操作的权限控制，允许用户授权在一定时间内的操作，避免重复确认。
+对话管理能力
+支持将重要对话置顶，方便用户快速找到常用或重要的聊天记录。
+Bot 市场与能力扩展
+优化 Bot 市场的筛选能力，支持通过条件快速筛选和查找所需 Bot，提升查找效率。
+扩大文件上传拖曳区域，可以直接在整个对话上下文区域拖曳文件、上传文件，在对话中进行分析、总结或问答。
+上线美加墨世界杯龙虾，支持赛事数据查看、赛事预测、球员信息查询、直播链接查询等功能。
+智能推荐与引导
+新增 Bot 使用提示引导，帮助用户快速了解如何使用该 Bot。
+新增智能推荐，根据当前对话内容或用户行为，智能推荐可能想问的问题，帮助用户快速继续对话。
+官网能力建设
+YOYO Claw Windows 版上线荣耀官网，支持用户自由下载。
+Magic 视界体验优化升级
+优化 Magic 视界的多屏幕功能使用体验。
+优化全屏游戏场景下，偶尔出现的 DOCK 栏遮挡游戏操作问题。
+Magic 视界下新增输入法中英文切换提示功能。
+修复无法正常通过 DOCK 栏打开 OBS 软件问题。
+修复桌面文件拖拽到企业微信识别为图片问题。
+升级覆盖机型
+荣耀 WIN 游戏本 H9
+荣耀 WIN 游戏本 H7
+荣耀 MagicBook Pro 系列 2026
+荣耀 MagicBook 数字系列 2026
+荣耀笔记本 X Plus 系列 2026
+荣耀 MagicBook Art 14 2025
+荣耀 MagicBook Art 14 2024
+荣耀 MagicBook Pro 16 2025
+荣耀 MagicBook Pro 16 2024
+荣耀 MagicBook Pro 14 2025
+荣耀 MagicBook 14 系列 2023
+荣耀笔记本 X Plus 系列 2025
+荣耀笔记本 X 系列 2026
+荣耀笔记本 X Plus 系列 2024
+荣耀笔记本 X 系列锐龙版 2026
+荣耀笔记本 X 系列 2025
+荣耀笔记本 X 系列锐龙版 2024
+荣耀 MagicBook X16 锐龙版 2023
+荣耀 MagicBook X14 锐龙版 2023
+荣耀 MagicBook X16 2023
+荣耀 MagicBook X14 2023
+平板
+PC 桌面
+采用 14x8 大容量桌面布局，极致拓展桌面空间，并以熟悉的 PC 式网格排列
+PC 桌面新增支持文件打开、压缩、打印、重命名等操作
+桌面
+新增装饰卡片（疗愈文字 / 元气福贴 / 萌眼语录）
+新增闹钟卡片，支持实时显示下一次闹钟提醒时间无需进入应用即可快速查看
+桌面编辑手势新增支持个性化设置，新增“仅双指捏合”、“仅长按”及“双指捏合与长按”多种触发方式
+新增文件夹自动命名功能，创建文件夹时，系统将根据应用类型自动命名
+YOYO 伴学助手
+YOYO 学习助手新增伴学知识库与伴学周报功能
+极客中心 2.0
+极客模式全面升级，通过智能适配热门重载游戏、支持单应用个性化配置以及优化状态栏功能入口
+全局充电分离
+新增全局充电分离功能，充电器直接为主板供电，全场景降低发热，提升全程冷静边充边玩体验，减少电池循环次数，提升电池健康度
+游戏管家
+新增 AI 变声功能，提供多种音效类型，支持跨性别声音变换、同声线音色美化
+灵动胶囊
+新增媒体播放切歌动画，切换曲目时音频封面支持旋转过渡效果
+灵动胶囊服务生态再扩容，新增支持淘宝闪购买药、百度地图驾车导航、大众点评排号及美团拼好饭
+状态栏重绘
+状态栏图标全面焕新，电池图标样式优化升级，充电状态与省电模式显示更直观
+AI 圈搜
+AI 圈搜新增智慧套索功能，您可套索选中图片 / 文字进行场景识别，获取相关服务，打造专属智能工具站
+丝滑动效
+优化多音量调节面板退出动效
+锁屏
+锁屏小组件服务矩阵进一步丰富，新增支持笔记、录音机等高频场景
+虚拟权限
+新增虚拟权限功能，开启后当应用访问通话记录信息、联系人、日程时，仅可获取空白数据
+输入法
+安全输入键盘样式焕新，支持挖孔区避让和底部圆角适配
+截屏
+新增截屏纯净模式，开启后截屏自动隐藏状态栏、导航栏和灵动胶囊
+苹果 AirPods 耳机互联
+新增原生级苹果耳机互联体验，耳机开盖，平板弹窗便捷连接，还可在荣耀设备上查看耳机电量、噪音控制等功能
+WLAN
+优化网络加速功能界面布局，新增“双 WLAN 网络加速”和“智能选择最佳 WLAN”功能及其开关
+新增双 WLAN 网络选网和连接页面
+升级覆盖机型
+荣耀 MagicPad3 Pro
+荣耀 MagicPad3 Pro 12.3
+荣耀 MagicPad3
+荣耀 MagicPad3 12.5
+荣耀 MagicPad2
+荣耀平板 GT2 Pro
+荣耀平板 GT Pro
+荣耀平板 GT
+荣耀平板 V9
+荣耀平板 10 Pro
+荣耀平板 10
+荣耀平板 X10 Pro
+荣耀平板 X9 Pro
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 荣耀 ， 荣耀平板 ， 荣耀 PC
+荣耀平板 20 发布：12.1 英寸 3K 全彩类纸屏，国补到手价 1614.15-2804.15 元
+目标今年超过华为：荣耀平板应用市场 PC 应用专区上线，宣称“会月月上新”
+荣耀平板 PC 化特性启动先锋体验用户招募，面向 MagicPad3/2、GT2 Pro 等
+荣耀方飞详解平板 PC 化升级方向，称要让平板实现能力边界全面突破
+荣耀平板 PC 化升级计划公布，将带来 PC 交互、PC 级应用支持等特性
+荣耀 MagicPad3 Pro 13.3 平板电脑核心参数公布：165Hz LCD 面板、12450mAh 电池
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 平板电脑
+荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验
+2026/6/10 21:24:03
+来源： IT之家
+作者： 沁沧（实习）
+责编： 沁沧
+评论：
+感谢IT之家网友 雨雪载途 的线索投递！
+IT之家 6 月 10 日消息，荣耀全场景产品线总裁 @荣耀潇哥 今日公布了荣耀 PC、平板 6 月升级特性。
+IT之家整理汇总如下：
+PC
+YOYO Claw 体验优化升级
+性能与体验优化
+优化应用启动流程，缩短启动时间，更快进入对话界面，整体对话更加流畅。
+优化工具调用功能，相关消息会自动合并到同一条对话中展示，对话结构更清晰、阅读更顺畅。
+优化部分关键操作的权限控制，允许用户授权在一定时间内的操作，避免重复确认。
+对话管理能力
+支持将重要对话置顶，方便用户快速找到常用或重要的聊天记录。
+Bot 市场与能力扩展
+优化 Bot 市场的筛选能力，支持通过条件快速筛选和查找所需 Bot，提升查找效率。
+扩大文件上传拖曳区域，可以直接在整个对话上下文区域拖曳文件、上传文件，在对话中进行分析、总结或问答。
+上线美加墨世界杯龙虾，支持赛事数据查看、赛事预测、球员信息查询、直播链接查询等功能。
+智能推荐与引导
+新增 Bot 使用提示引导，帮助用户快速了解如何使用该 Bot。
+新增智能推荐，根据当前对话内容或用户行为，智能推荐可能想问的问题，帮助用户快速继续对话。
+官网能力建设
+YOYO Claw Windows 版上线荣耀官网，支持用户自由下载。
+Magic 视界体验优化升级
+优化 Magic 视界的多屏幕功能使用体验。
+优化全屏游戏场景下，偶尔出现的 DOCK 栏遮挡游戏操作问题。
+Magic 视界下新增输入法中英文切换提示功能。
+修复无法正常通过 DOCK 栏打开 OBS 软件问题。
+修复桌面文件拖拽到企业微信识别为图片问题。
+升级覆盖机型
+荣耀 WIN 游戏本 H9
+荣耀 WIN 游戏本 H7
+荣耀 MagicBook Pro 系列 2026
+荣耀 MagicBook 数字系列 2026
+荣耀笔记本 X Plus 系列 2026
+荣耀 MagicBook Art 14 2025
+荣耀 MagicBook Art 14 2024
+荣耀 MagicBook Pro 16 2025
+荣耀 MagicBook Pro 16 2024
+荣耀 MagicBook Pro 14 2025
+荣耀 MagicBook 14 系列 2023
+荣耀笔记本 X Plus 系列 2025
+荣耀笔记本 X 系列 2026
+荣耀笔记本 X Plus 系列 2024
+荣耀笔记本 X 系列锐龙版 2026
+荣耀笔记本 X 系列 2025
+荣耀笔记本 X 系列锐龙版 2024
+荣耀 MagicBook X16 锐龙版 2023
+荣耀 MagicBook X14 锐龙版 2023
+荣耀 MagicBook X16 2023
+荣耀 MagicBook X14 2023
+平板
+PC 桌面
+采用 14x8 大容量桌面布局，极致拓展桌面空间，并以熟悉的 PC 式网格排列
+PC 桌面新增支持文件打开、压缩、打印、重命名等操作
+桌面
+新增装饰卡片（疗愈文字 / 元气福贴 / 萌眼语录）
+新增闹钟卡片，支持实时显示下一次闹钟提醒时间无需进入应用即可快速查看
+桌面编辑手势新增支持个性化设置，新增“仅双指捏合”、“仅长按”及“双指捏合与长按”多种触发方式
+新增文件夹自动命名功能，创建文件夹时，系统将根据应用类型自动命名
+YOYO 伴学助手
+YOYO 学习助手新增伴学知识库与伴学周报功能
+极客中心 2.0
+极客模式全面升级，通过智能适配热门重载游戏、支持单应用个性化配置以及优化状态栏功能入口
+全局充电分离
+新增全局充电分离功能，充电器直接为主板供电，全场景降低发热，提升全程冷静边充边玩体验，减少电池循环次数，提升电池健康度
+游戏管家
+新增 AI 变声功能，提供多种音效类型，支持跨性别声音变换、同声线音色美化
+灵动胶囊
+新增媒体播放切歌动画，切换曲目时音频封面支持旋转过渡效果
+灵动胶囊服务生态再扩容，新增支持淘宝闪购买药、百度地图驾车导航、大众点评排号及美团拼好饭
+状态栏重绘
+状态栏图标全面焕新，电池图标样式优化升级，充电状态与省电模式显示更直观
+AI 圈搜
+AI 圈搜新增智慧套索功能，您可套索选中图片 / 文字进行场景识别，获取相关服务，打造专属智能工具站
+丝滑动效
+优化多音量调节面板退出动效
+锁屏
+锁屏小组件服务矩阵进一步丰富，新增支持笔记、录音机等高频场景
+虚拟权限
+新增虚拟权限功能，开启后当应用访问通话记录信息、联系人、日程时，仅可获取空白数据
+输入法
+安全输入键盘样式焕新，支持挖孔区避让和底部圆角适配
+截屏
+新增截屏纯净模式，开启后截屏自动隐藏状态栏、导航栏和灵动胶囊
+苹果 AirPods 耳机互联
+新增原生级苹果耳机互联体验，耳机开盖，平板弹窗便捷连接，还可在荣耀设备上查看耳机电量、噪音控制等功能
+WLAN
+优化网络加速功能界面布局，新增“双 WLAN 网络加速”和“智能选择最佳 WLAN”功能及其开关
+新增双 WLAN 网络选网和连接页面
+升级覆盖机型
+荣耀 MagicPad3 Pro
+荣耀 MagicPad3 Pro 12.3
+荣耀 MagicPad3
+荣耀 MagicPad3 12.5
+荣耀 MagicPad2
+荣耀平板 GT2 Pro
+荣耀平板 GT Pro
+荣耀平板 GT
+荣耀平板 V9
+荣耀平板 10 Pro
+荣耀平板 10
+荣耀平板 X10 Pro
+荣耀平板 X9 Pro
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 荣耀 ， 荣耀平板 ， 荣耀 PC
+荣耀平板 20 发布：12.1 英寸 3K 全彩类纸屏，国补到手价 1614.15-2804.15 元
+目标今年超过华为：荣耀平板应用市场 PC 应用专区上线，宣称“会月月上新”
+荣耀平板 PC 化特性启动先锋体验用户招募，面向 MagicPad3/2、GT2 Pro 等
+荣耀方飞详解平板 PC 化升级方向，称要让平板实现能力边界全面突破
+荣耀平板 PC 化升级计划公布，将带来 PC 交互、PC 级应用支持等特性
+荣耀 MagicPad3 Pro 13.3 平板电脑核心参数公布：165Hz LCD 面板、12450mAh 电池
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 58
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":58,"text_length":3024,"paragraph_count":63,"sentence_count":18,"boilerplate_hits":5,"symbol_ratio":0.0007,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   荣耀PC端YOYO Claw优化应用启动与工具调用，新增对话置顶、Bot市场筛选、文件拖拽区域扩大，上线美加墨世界杯龙虾（支持赛事数据与预测），Windows版上架荣耀官网。平板端推出PC桌面（14x8网格布局，支持文件操作）、YOYO伴学助手、极客中心2.0、全局充电分离、游戏管家AI变声、灵动胶囊（切歌动画、淘宝闪买）、AI圈搜智慧套索及苹果AirPods原生互联。升级覆盖荣耀WIN游戏本H9/H7、MagicBook系列、MagicPad3 Pro、荣耀平板GT系列等机型。
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 平板电脑 荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 2026/6/10 21:24:03 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 雨雪载途 的线索投递！
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   IT之家 6 月 10 日消息，荣耀全场景产品线总裁 @荣耀潇哥 今日公布了荣耀 PC、平板 6 月升级特性。
+
+4. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   IT之家整理汇总如下： PC YOYO Claw 体验优化升级 性能与体验优化 优化应用启动流程，缩短启动时间，更快进入对话界面，整体对话更加流畅。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   优化工具调用功能，相关消息会自动合并到同一条对话中展示，对话结构更清晰、阅读更顺畅。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   优化部分关键操作的权限控制，允许用户授权在一定时间内的操作，避免重复确认。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 法务
+- numbers: 6, 14x, 8, 2.0, 9, 7, 3, 5
+- quotes: 双 WLAN 网络加速 / 智能选择最佳 WLAN
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 10 日消息，荣耀全场景产品线总裁 @荣耀潇哥 今日公布了荣耀 PC、平板 6 月升级特性。 / 优化工具调用功能，相关消息会自动合并到同一条对话中展示，对话结构更清晰、阅读更顺畅。 / 优化部分关键操作的权限控制，允许用户授权在一定时间内的操作，避免重复确认。
+- case_details: 荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 平板电脑 荣耀 PC、平板 6 月升级特性公布：优化电脑 YOYO Claw、平板性能与体验 2026/6/10 21:24:03 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 雨雪载途 的线索投递！
+- workflow_changes: IT之家整理汇总如下： PC YOYO Claw 体验优化升级 性能与体验优化 优化应用启动流程，缩短启动时间，更快进入对话界面，整体对话更加流畅。
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"荣耀公布PC、平板6月升级特性：优化YOYO Claw与平板体验","discovery_summary":"荣耀PC端YOYO Claw优化应用启动与工具调用，新增对话置顶、Bot市场筛选、文件拖拽区域扩大，上线美加墨世界杯龙虾（支持赛事数据与预测），Windows版上架荣耀官网。平板端推出PC桌面（14x8网格布局，支持文件操作）、YOYO伴学助手、极客中心2.0、全局充电分离、游戏管家AI变声、灵动胶囊（切歌动画、淘宝闪买）、AI圈搜智慧套索及苹果AirPods原生互联。升级覆盖荣耀WIN游戏本H9/H7、MagicBook系列、MagicPad3 Pro、荣耀平板GT系列等机型。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/962/650.htm","discovered_at":"2026-06-11T01:23:43.714Z","rank_on_page":247,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+荣耀PC端YOYO Claw优化应用启动与工具调用，新增对话置顶、Bot市场筛选、文件拖拽区域扩大，上线美加墨世界杯龙虾（支持赛事数据与预测），Windows版上架荣耀官网。平板端推出PC桌面（14x8网格布局，支持文件操作）、YOYO伴学助手、极客中心2.0、全局充电分离、游戏管家AI变声、灵动胶囊（切歌动画、淘宝闪买）、AI圈搜智慧套索及苹果AirPods原生互联。升级覆盖荣耀WIN游戏本H9/H7、MagicBook系列、MagicPad3 Pro、荣耀平板GT系列等机型。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

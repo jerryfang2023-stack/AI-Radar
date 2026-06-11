@@ -1,0 +1,196 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-148
+title: "DiffusionGemma：文本生成速度提升4倍的开源扩散模型"
+original_url: ""
+canonical_url: ""
+source_name: "Google DeepMind：Blog（RSS）"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: official_index_or_directory
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: true
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-11T01:29:53.048Z
+language: mixed
+full_text_hash: ef84f131d3145d40
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-148-diffusiongemma-文本生成速度提升4倍的开源扩散模型.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-148-diffusiongemma-文本生成速度提升4倍的开源扩散模型.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: no-url-summary-only
+extraction_quality: failed
+extraction_method: "no_url_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"no_url_summary_fallback"}
+has_full_text: false
+content_length: 249
+fetch_error: ""
+raw_qc_decision: block
+raw_qc_downstream_use: not_allowed
+degradation_reasons: ["index_only_or_directory_page","missing_full_text","missing_snapshot","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ef84f131d3145d40","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+source_volatility: medium
+community_name: ""
+capture_scope: summary_only
+visible_range: "采集通道提供的标题与摘要"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"DiffusionGemma：文本生成速度提升4倍的开源扩散模型","discovery_summary":"Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。","source_name":"Google DeepMind：Blog（RSS）","origin_url":"","discovered_at":"2026-06-11T01:23:42.547Z","rank_on_page":1,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e3b0c44298fc1c14
+content_hash: ef84f131d3145d40
+semantic_hash: ba704dcac95fcdc5
+duplicate_of: ""
+first_seen_at: "2026-06-11T01:29:53.048Z"
+last_seen_at: 2026-06-11T01:29:53.048Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":2,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Google DeepMind","Blog（RSS）","Google"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":[],"numbers":["4倍","256","26B","3.8B","18","100","1000","5090"],"quotes":[]}
+evidence_seed: {"company_actions":["该 26B MoE 模型推理时仅激活 3.","8B 参数，量化后适配 18GB 显存消费级 GPU。","具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2."],"case_details":["Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"number","text":"Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该 26B MoE 模型推理时仅激活 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"8B 参数，量化后适配 18GB 显存消费级 GPU。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# DiffusionGemma：文本生成速度提升4倍的开源扩散模型
+
+## clean_text
+
+Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。
+
+## full_text
+
+Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。
+
+## extraction_diagnostics
+
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- fetch_status: no-url-summary-only
+- extraction_quality: failed
+- diagnostics: {"method":"no_url_summary_fallback"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   该 26B MoE 模型推理时仅激活 3.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   8B 参数，量化后适配 18GB 显存消费级 GPU。
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.
+
+## business_elements
+
+- companies: Google DeepMind, Blog（RSS）, Google
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: 暂无公开信息
+- numbers: 4倍, 256, 26B, 3.8B, 18, 100, 1000, 5090
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 该 26B MoE 模型推理时仅激活 3. / 8B 参数，量化后适配 18GB 显存消费级 GPU。 / 具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.
+- case_details: Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 采集通道提供的标题与摘要
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"DiffusionGemma：文本生成速度提升4倍的开源扩散模型","discovery_summary":"Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。","source_name":"Google DeepMind：Blog（RSS）","origin_url":"","discovered_at":"2026-06-11T01:23:42.547Z","rank_on_page":1,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

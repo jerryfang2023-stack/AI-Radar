@@ -1,0 +1,276 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-066
+title: "Claude Fable 5 零传统视频编辑的 4K Launch 视频生产实践"
+original_url: "https://x.com/shao__meng/status/2064870367190270441"
+canonical_url: "https://x.com/shao__meng/status/2064870367190270441"
+source_name: "X：邵猛 (@shao__meng)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-11T00:40:33.000Z"
+collected_at: 2026-06-11T01:29:52.860Z
+language: mixed
+full_text_hash: b6a7120ae5f1564e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-066-claude-fable-5-零传统视频编辑的-4k-launch-视频生产实践.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-11/r-066-claude-fable-5-零传统视频编辑的-4k-launch-视频生产实践.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 83
+extractor_diagnostics: {"readability_score":83,"text_length":3069,"paragraph_count":32,"sentence_count":23,"boilerplate_hits":1,"symbol_ratio":0.0121,"method":"main"}
+has_full_text: true
+content_length: 3069
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b6a7120ae5f1564e","missing":[]}
+source_volatility: high
+community_name: "X：邵猛 (@shao__meng)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude Fable 5 零传统视频编辑的 4K Launch 视频生产实践","discovery_summary":"Claude Fable 5 通过纯提示驱动，端到端生成 4K Launch 视频。从 17 个 Sony S-Log3 4K take（约 25GB）出发，流程包括：Whisper 逐词转录、Claude 作为子 agent 选片输出 JSON 编辑决策列表 （EDL）、FFmpeg 拼接粗剪、手写 7 个自定义 .cube LUT 颜色分级、通过 Remotion + Figma MCP 将 11 张设计 PNG 转为 React 组件并实现代码↔Figma 往返迭代。最终渲染 3840×2160@24fps、4334 帧、653MB 成品，全程未打开视频编辑器。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2064870367190270441","discovered_at":"2026-06-11T01:23:43.671Z","rank_on_page":32,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 197968cfb487e457
+content_hash: b6a7120ae5f1564e
+semantic_hash: 23da9303038f1b70
+duplicate_of: ""
+first_seen_at: "2026-06-11T00:40:33.000Z"
+last_seen_at: 2026-06-11T01:29:52.860Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["core_pool","user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","邵猛 (@shao__meng)"],"products":["Claude","agent","MCP","mcp"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全"],"numbers":["5","4","17","3","25","7","11","3840"],"quotes":["zero ums","The edit is text","Treat Claude like a thoughtful partner"]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post meng shao @shao__meng Claude Fable 5 实现零传统编辑的 Launch 视频生产：Remotion + FFmpeg + Figma MCP 端到端实践 来自 Claude Code 核心开发者 @ trq212 的又一次高质量分享：他全程未打开任何传统视频编辑软件，仅通过提示驱动 Claude Fable 5 生成代码、调用工具、迭代优化，最终产出 4K、3 分钟成品视频。","· Claude 生成 JSON 格式的详细转录，支持精确到帧的定位（即使 Whisper 误听名字如 “Thariq” 为 “Sark”，时间戳仍准确）。","Step 02-03：智能选片与剪辑决策 · Claude 作为子 agent 逐场景分析所有 take，挑选最佳版本（优先零 ums、完整脚本、干净结尾）。"],"case_details":[],"workflow_changes":["Claude Fable 5 通过纯提示驱动，端到端生成 4K Launch 视频。从 17 个 Sony S-Log3 4K take（约 25GB）出发，流程包括：Whisper 逐词转录、Claude 作为子 agent 选片输出 JSON 编辑决策列表 （EDL）、FFmpeg 拼接粗剪、手写 7 个自定义 .cube LUT 颜色分级、通过 Remotion + Figma MCP 将 11 张设计 PNG 转为 React 组件并实现代码↔Figma 往返迭代。最终渲染 3840×2160@24fps、4334 帧、653MB 成品，全程未打开视频编辑器。","# 核心流程与关键步骤（高度结构化、可复现） 原材料准备：17 个拍摄 take（约 25GB Sony S-Log3 4K 原片），分为 4 个场景（Intro、Thought Partner、Goals & Verification、Be More Ambitious）。","Step 01：转录与理解 · 一条完整提示启动整个流程：要求使用 ElevenLabs / Whisper（本地 M4 Max 运行）对所有视频进行逐词时间戳转录。"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Claude Fable 5 通过纯提示驱动，端到端生成 4K Launch 视频。从 17 个 Sony S-Log3 4K take（约 25GB）出发，流程包括：Whisper 逐词转录、Claude 作为子 agent 选片输出 JSON 编辑决策列表 （EDL）、FFmpeg 拼接粗剪、手写 7 个自定义 .cube LUT 颜色分级、通过 Remotion + Figma MCP 将 11 张设计 PNG 转为 React 组件并实现代码↔Figma 往返迭代。最终渲染 3840×2160@24fps、4334 帧、653MB 成品，全程未打开视频编辑器。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Post Log in Sign up Post meng shao @shao__meng Claude Fable 5 实现零传统编辑的 Launch 视频生产：Remotion + FFmpeg + Figma MCP 端到端实践 来自 Claude Code 核心开发者 @ trq212 的又一次高质量分享：他全程未打开任何传统视频编辑软件，仅通过提示驱动 Claude Fable 5 生成代码、调用工具、迭代优化，最终产出 4K、3 分钟成品视频。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"# 核心流程与关键步骤（高度结构化、可复现） 原材料准备：17 个拍摄 take（约 25GB Sony S-Log3 4K 原片），分为 4 个场景（Intro、Thought Partner、Goals & Verification、Be More Ambitious）。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Step 01：转录与理解 · 一条完整提示启动整个流程：要求使用 ElevenLabs / Whisper（本地 M4 Max 运行）对所有视频进行逐词时间戳转录。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"· Claude 生成 JSON 格式的详细转录，支持精确到帧的定位（即使 Whisper 误听名字如 “Thariq” 为 “Sark”，时间戳仍准确）。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Step 02-03：智能选片与剪辑决策 · Claude 作为子 agent 逐场景分析所有 take，挑选最佳版本（优先零 ums、完整脚本、干净结尾）。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Claude Fable 5 零传统视频编辑的 4K Launch 视频生产实践
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+meng shao
+@shao__meng
+Claude Fable 5 实现零传统编辑的 Launch 视频生产：Remotion + FFmpeg + Figma MCP 端到端实践
+来自 Claude Code 核心开发者 @ trq212 的又一次高质量分享：他全程未打开任何传统视频编辑软件，仅通过提示驱动 Claude Fable 5 生成代码、调用工具、迭代优化，最终产出 4K、3 分钟成品视频。
+# 核心流程与关键步骤（高度结构化、可复现）
+原材料准备：17 个拍摄 take（约 25GB Sony S-Log3 4K 原片），分为 4 个场景（Intro、Thought Partner、Goals & Verification、Be More Ambitious）。
+Step 01：转录与理解
+· 一条完整提示启动整个流程：要求使用 ElevenLabs / Whisper（本地 M4 Max 运行）对所有视频进行逐词时间戳转录。
+· Claude 生成 JSON 格式的详细转录，支持精确到帧的定位（即使 Whisper 误听名字如 “Thariq” 为 “Sark”，时间戳仍准确）。
+Step 02-03：智能选片与剪辑决策
+· Claude 作为子 agent 逐场景分析所有 take，挑选最佳版本（优先零 ums、完整脚本、干净结尾）。
+· 输出 final-edit.json（EDL 编辑决策列表），包含每个 clip 的起止时间、候选 take、详细选片理由。
+· 直接用 FFmpeg 执行 JSON，实现精确拼接（第一版可在几分钟内生成可观看的 2:50 粗剪）。Claude 还会自验证转录结果（“zero ums”）。
+Step 04：颜色分级（Color Grading）
+· 从 S-Log3 平面原片出发，Claude 手写多个 .cube LUT（7 个自定义 LUT，如 neutral_cool_desat、warm_filmic 等）。
+· 通过提示迭代生成示例，作者选择后应用 FFmpeg 编码。突出代理在专业视觉任务中的潜力（虽有色域专家指出可能存在细微 gamma/管理问题，但整体可用）。
+Step 05-08：图形叠加与设计迭代（Remotion + Figma MCP）
+· 输入 11 张静态设计 PNG（interludes/overlays）。
+· Claude 将 PNG 重构为 Remotion React 组件（JSX），每个文字、颜色、动画均为可提示参数。
+· 定义全局 timing knobs（6 个关键帧参数）和 cue sheet（基于转录词时间戳精确对齐叠加，如在 “right” 一词出现帧上触发动画）。
+· 通过 Figma MCP 导出为真实 Figma 文件，支持设计团队审阅/调整滑块。
+· 设计反馈转回提示 → Claude 更新代码 → 重新渲染，实现高效 code <-> Figma 往返。
+最终渲染：npx remotion render 生成 3840×2160@24fps、4334 帧、653MB 成品。
+Claude 会先逐帧截图自审，再全渲染。整个过程在几天内完成（主要在 Jun 6-9），凌晨 6:24 交付。
+底层架构（“The edit is text”）
+· 整个项目是一个代码仓库：转录 JSON、final-edit.json、LUT 文件、Remotion 组件、anim.tsx。
+· 无时间线、无项目文件，一切可 diff、可 grep、可提示修改。
+· 强调 agent 协作哲学：“Treat Claude like a thoughtful partner” — 给出清晰目标、验证方法，保持雄心。
+· 结果：从 raw 文件夹到成品，agent 承担绝大部分“中间劳动”，作者主要提供 taste 和最终把关。
+Thariq
+@trq212
+3h
+Lots of people asked how I used Fable to edit its own launch video so I made a video about that!
+TLDR it wrote a lot of code & tool calls to use transcription services, ffmpeg, do colorgrading, use the figma mcp, make remotion UI and render it.
+I didn't touch a video editor.
+00:00
+12:40 AM · Jun 11, 2026 446 Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+
+## full_text
+
+Post
+Log in Sign up
+Post
+meng shao
+@shao__meng
+Claude Fable 5 实现零传统编辑的 Launch 视频生产：Remotion + FFmpeg + Figma MCP 端到端实践
+来自 Claude Code 核心开发者 @ trq212 的又一次高质量分享：他全程未打开任何传统视频编辑软件，仅通过提示驱动 Claude Fable 5 生成代码、调用工具、迭代优化，最终产出 4K、3 分钟成品视频。
+# 核心流程与关键步骤（高度结构化、可复现）
+原材料准备：17 个拍摄 take（约 25GB Sony S-Log3 4K 原片），分为 4 个场景（Intro、Thought Partner、Goals & Verification、Be More Ambitious）。
+Step 01：转录与理解
+· 一条完整提示启动整个流程：要求使用 ElevenLabs / Whisper（本地 M4 Max 运行）对所有视频进行逐词时间戳转录。
+· Claude 生成 JSON 格式的详细转录，支持精确到帧的定位（即使 Whisper 误听名字如 “Thariq” 为 “Sark”，时间戳仍准确）。
+Step 02-03：智能选片与剪辑决策
+· Claude 作为子 agent 逐场景分析所有 take，挑选最佳版本（优先零 ums、完整脚本、干净结尾）。
+· 输出 final-edit.json（EDL 编辑决策列表），包含每个 clip 的起止时间、候选 take、详细选片理由。
+· 直接用 FFmpeg 执行 JSON，实现精确拼接（第一版可在几分钟内生成可观看的 2:50 粗剪）。Claude 还会自验证转录结果（“zero ums”）。
+Step 04：颜色分级（Color Grading）
+· 从 S-Log3 平面原片出发，Claude 手写多个 .cube LUT（7 个自定义 LUT，如 neutral_cool_desat、warm_filmic 等）。
+· 通过提示迭代生成示例，作者选择后应用 FFmpeg 编码。突出代理在专业视觉任务中的潜力（虽有色域专家指出可能存在细微 gamma/管理问题，但整体可用）。
+Step 05-08：图形叠加与设计迭代（Remotion + Figma MCP）
+· 输入 11 张静态设计 PNG（interludes/overlays）。
+· Claude 将 PNG 重构为 Remotion React 组件（JSX），每个文字、颜色、动画均为可提示参数。
+· 定义全局 timing knobs（6 个关键帧参数）和 cue sheet（基于转录词时间戳精确对齐叠加，如在 “right” 一词出现帧上触发动画）。
+· 通过 Figma MCP 导出为真实 Figma 文件，支持设计团队审阅/调整滑块。
+· 设计反馈转回提示 → Claude 更新代码 → 重新渲染，实现高效 code <-> Figma 往返。
+最终渲染：npx remotion render 生成 3840×2160@24fps、4334 帧、653MB 成品。
+Claude 会先逐帧截图自审，再全渲染。整个过程在几天内完成（主要在 Jun 6-9），凌晨 6:24 交付。
+底层架构（“The edit is text”）
+· 整个项目是一个代码仓库：转录 JSON、final-edit.json、LUT 文件、Remotion 组件、anim.tsx。
+· 无时间线、无项目文件，一切可 diff、可 grep、可提示修改。
+· 强调 agent 协作哲学：“Treat Claude like a thoughtful partner” — 给出清晰目标、验证方法，保持雄心。
+· 结果：从 raw 文件夹到成品，agent 承担绝大部分“中间劳动”，作者主要提供 taste 和最终把关。
+Thariq
+@trq212
+3h
+Lots of people asked how I used Fable to edit its own launch video so I made a video about that!
+TLDR it wrote a lot of code & tool calls to use transcription services, ffmpeg, do colorgrading, use the figma mcp, make remotion UI and render it.
+I didn't touch a video editor.
+00:00
+12:40 AM · Jun 11, 2026 446 Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 83
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":83,"text_length":3069,"paragraph_count":32,"sentence_count":23,"boilerplate_hits":1,"symbol_ratio":0.0121,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Claude Fable 5 通过纯提示驱动，端到端生成 4K Launch 视频。从 17 个 Sony S-Log3 4K take（约 25GB）出发，流程包括：Whisper 逐词转录、Claude 作为子 agent 选片输出 JSON 编辑决策列表 （EDL）、FFmpeg 拼接粗剪、手写 7 个自定义 .cube LUT 颜色分级、通过 Remotion + Figma MCP 将 11 张设计 PNG 转为 React 组件并实现代码↔Figma 往返迭代。最终渲染 3840×2160@24fps、4334 帧、653MB 成品，全程未打开视频编辑器。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   Post Log in Sign up Post meng shao @shao__meng Claude Fable 5 实现零传统编辑的 Launch 视频生产：Remotion + FFmpeg + Figma MCP 端到端实践 来自 Claude Code 核心开发者 @ trq212 的又一次高质量分享：他全程未打开任何传统视频编辑软件，仅通过提示驱动 Claude Fable 5 生成代码、调用工具、迭代优化，最终产出 4K、3 分钟成品视频。
+
+3. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   # 核心流程与关键步骤（高度结构化、可复现） 原材料准备：17 个拍摄 take（约 25GB Sony S-Log3 4K 原片），分为 4 个场景（Intro、Thought Partner、Goals & Verification、Be More Ambitious）。
+
+4. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Step 01：转录与理解 · 一条完整提示启动整个流程：要求使用 ElevenLabs / Whisper（本地 M4 Max 运行）对所有视频进行逐词时间戳转录。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   · Claude 生成 JSON 格式的详细转录，支持精确到帧的定位（即使 Whisper 误听名字如 “Thariq” 为 “Sark”，时间戳仍准确）。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Step 02-03：智能选片与剪辑决策 · Claude 作为子 agent 逐场景分析所有 take，挑选最佳版本（优先零 ums、完整脚本、干净结尾）。
+
+## business_elements
+
+- companies: X, 邵猛 (@shao__meng)
+- products: Claude, agent, MCP, mcp
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全
+- numbers: 5, 4, 17, 3, 25, 7, 11, 3840
+- quotes: zero ums / The edit is text / Treat Claude like a thoughtful partner
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post meng shao @shao__meng Claude Fable 5 实现零传统编辑的 Launch 视频生产：Remotion + FFmpeg + Figma MCP 端到端实践 来自 Claude Code 核心开发者 @ trq212 的又一次高质量分享：他全程未打开任何传统视频编辑软件，仅通过提示驱动 Claude Fable 5 生成代码、调用工具、迭代优化，最终产出 4K、3 分钟成品视频。 / · Claude 生成 JSON 格式的详细转录，支持精确到帧的定位（即使 Whisper 误听名字如 “Thariq” 为 “Sark”，时间戳仍准确）。 / Step 02-03：智能选片与剪辑决策 · Claude 作为子 agent 逐场景分析所有 take，挑选最佳版本（优先零 ums、完整脚本、干净结尾）。
+- case_details: 暂无公开信息
+- workflow_changes: Claude Fable 5 通过纯提示驱动，端到端生成 4K Launch 视频。从 17 个 Sony S-Log3 4K take（约 25GB）出发，流程包括：Whisper 逐词转录、Claude 作为子 agent 选片输出 JSON 编辑决策列表 （EDL）、FFmpeg 拼接粗剪、手写 7 个自定义 .cube LUT 颜色分级、通过 Remotion + Figma MCP 将 11 张设计 PNG 转为 React 组件并实现代码↔Figma 往返迭代。最终渲染 3840×2160@24fps、4334 帧、653MB 成品，全程未打开视频编辑器。 / # 核心流程与关键步骤（高度结构化、可复现） 原材料准备：17 个拍摄 take（约 25GB Sony S-Log3 4K 原片），分为 4 个场景（Intro、Thought Partner、Goals & Verification、Be More Ambitious）。 / Step 01：转录与理解 · 一条完整提示启动整个流程：要求使用 ElevenLabs / Whisper（本地 M4 Max 运行）对所有视频进行逐词时间戳转录。
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：邵猛 (@shao__meng)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude Fable 5 零传统视频编辑的 4K Launch 视频生产实践","discovery_summary":"Claude Fable 5 通过纯提示驱动，端到端生成 4K Launch 视频。从 17 个 Sony S-Log3 4K take（约 25GB）出发，流程包括：Whisper 逐词转录、Claude 作为子 agent 选片输出 JSON 编辑决策列表 （EDL）、FFmpeg 拼接粗剪、手写 7 个自定义 .cube LUT 颜色分级、通过 Remotion + Figma MCP 将 11 张设计 PNG 转为 React 组件并实现代码↔Figma 往返迭代。最终渲染 3840×2160@24fps、4334 帧、653MB 成品，全程未打开视频编辑器。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2064870367190270441","discovered_at":"2026-06-11T01:23:43.671Z","rank_on_page":32,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Claude Fable 5 通过纯提示驱动，端到端生成 4K Launch 视频。从 17 个 Sony S-Log3 4K take（约 25GB）出发，流程包括：Whisper 逐词转录、Claude 作为子 agent 选片输出 JSON 编辑决策列表 （EDL）、FFmpeg 拼接粗剪、手写 7 个自定义 .cube LUT 颜色分级、通过 Remotion + Figma MCP 将 11 张设计 PNG 转为 React 组件并实现代码↔Figma 往返迭代。最终渲染 3840×2160@24fps、4334 帧、653MB 成品，全程未打开视频编辑器。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
