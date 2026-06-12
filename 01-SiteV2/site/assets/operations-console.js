@@ -8,7 +8,7 @@
   const totals = pipeline.totals || {};
   const state = {
     panel: location.hash ? location.hash.slice(1) : "overview",
-    topicSource: "",
+    topicSource: "all",
     topicOpenId: "",
     factorySource: "",
     factoryTopicId: "",
@@ -229,7 +229,7 @@
     topicSources.splice(0, topicSources.length, ...topicCenterData.sources);
   }
   const defaultTopicSource = topicSources[0]?.id || "money_leak";
-  if (!topicSources.some((source) => source.id === state.topicSource)) state.topicSource = defaultTopicSource;
+  if (state.topicSource !== "all" && !topicSources.some((source) => source.id === state.topicSource)) state.topicSource = "all";
   if (!topicSources.some((source) => source.id === state.factorySource)) state.factorySource = defaultTopicSource;
 
   function strictAngles(topic) {
@@ -336,7 +336,7 @@
     const query = text($("[data-topic-search]")?.value).trim().toLowerCase();
     const type = $("[data-topic-type]")?.value || "all";
     const sort = $("[data-topic-sort]")?.value || "score";
-    let items = topics.filter((topic) => topic.sourceId === state.topicSource);
+    let items = state.topicSource === "all" ? [...topics] : topics.filter((topic) => topic.sourceId === state.topicSource);
     if (type !== "all") items = items.filter((topic) => topic.type === type);
     if (query) items = items.filter((topic) => `${topic.title} ${topic.core} ${topic.relevance} ${topic.evidence} ${topic.bossPain || ""} ${topic.moneyLine || ""} ${topic.spreadTitle || ""}`.toLowerCase().includes(query));
     return items.sort((a, b) => sort === "source" ? a.title.localeCompare(b.title, "zh-CN") : b.score - a.score);
@@ -430,7 +430,7 @@
   function renderTopicControls() {
     const tabs = $("[data-topic-tabs]");
     if (tabs) {
-      tabs.innerHTML = topicSources.map((source) => `<button type="button" data-topic-source-tab="${source.id}" aria-current="${String(source.id === state.topicSource)}">${html(source.title)}<span>${html(source.desc)} · ${topics.filter((topic) => topic.sourceId === source.id).length}</span></button>`).join("");
+      tabs.innerHTML = topicSources.map((source) => `<button type="button" data-topic-source-tab="${source.id}" aria-current="${String(source.id === state.topicSource)}">${html(source.title)}</button>`).join("");
     }
     const typeSelect = $("[data-topic-type]");
     if (typeSelect && !typeSelect.dataset.ready) {
@@ -612,7 +612,8 @@
     if (tab) setPanel(tab.dataset.tab);
     const source = event.target.closest("[data-topic-source-tab]");
     if (source) {
-      state.topicSource = source.dataset.topicSourceTab;
+      const sourceId = source.dataset.topicSourceTab;
+      state.topicSource = state.topicSource === sourceId ? "all" : sourceId;
       state.topicOpenId = "";
       renderTopics();
     }
