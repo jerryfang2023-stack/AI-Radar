@@ -1,6 +1,6 @@
 window.WaveSightTopicCenter = {
   "meta": {
-    "version": "V2.0.0-boss-topic-engine",
+    "version": "V2.1.0-boss-topic-engine",
     "date": "2026-06-12",
     "generatedAt": "2026-06-12T10:37:10.523Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
