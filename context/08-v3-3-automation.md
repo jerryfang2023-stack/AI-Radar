@@ -54,6 +54,28 @@ Operational rules:
 5. A high-quality run blocked only by `raw_count_min` can enter manual recovery, but recovery must rebuild Cards and site data after restoring Raw / Pool. Do not copy stale pre-card site data from artifacts.
 6. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
 
+## Daily Recovery Watchdog
+
+Workflow: `.github/workflows/daily-recovery-watchdog.yml`
+
+Script: `agent-workflow/tools/dispatch-daily-recovery.mjs`
+
+The recovery watchdog provides bounded automatic second runs. It is not an autonomous code-repair agent.
+
+Recovery rules:
+
+1. If Business Signals, First-Line Viewpoints, or Community Intelligence publish workflow fails, the watchdog checks whether a same-date successful run already exists.
+2. If no same-date run is active or successful, and the lane has not reached its same-date failure cap, the watchdog dispatches the relevant workflow again with the same Asia/Shanghai production date.
+3. Business Signals and First-Line Viewpoints may be recovered in GitHub Actions because their collectors run in GitHub.
+4. Community Intelligence collection cannot be recovered in GitHub Actions because it depends on the local Chrome profile and logged-in browser state. GitHub can only retry the publish workflow when same-date community data and archive files are already present in the checkout.
+5. When failure count reaches the cap, the watchdog writes a recovery report and requires manual or Codex root-cause repair. It must not create infinite workflow loops.
+
+Manual command:
+
+```powershell
+npm run recover:daily -- --date=<YYYY-MM-DD> --lanes=business_signals,first_line_viewpoints,community_publish
+```
+
 ## First-Line Viewpoints GitHub Chain
 
 Workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml`
@@ -153,7 +175,17 @@ Runtime behavior:
 3. Run `npm run collect:community-intelligence`.
 4. Run `npm run archive:community-intelligence`.
 5. Run `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>`.
-6. Write logs to `agent-workflow/reports/community-intelligence/community-intelligence-YYYYMMDD.log`.
+6. Retry once after a delay when the installed scheduled task is configured with the default `-MaxAttempts 2`.
+7. Publish the validated local files through an automation branch and PR when the installed scheduled task is configured with the default publish-after-success behavior.
+8. Write logs to `agent-workflow/reports/community-intelligence/community-intelligence-YYYYMMDD.log`.
+
+Local publish script:
+
+```powershell
+node agent-workflow/tools/publish-community-intelligence-local.mjs --date=<YYYY-MM-DD>
+```
+
+The local publisher stages only Community Intelligence data, daily snapshots, Obsidian archive files, category views, and community gate reports. It must not stage business-signal Cards, relationship graph data, trend candidates, or first-line viewpoint data.
 
 Community Intelligence gate script:
 

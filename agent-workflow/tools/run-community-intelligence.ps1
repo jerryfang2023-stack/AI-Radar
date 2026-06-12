@@ -3,7 +3,10 @@ param(
   [string]$CdpUrl = "http://127.0.0.1:9333",
   [string]$ChromePath = "",
   [string]$ChromeProfilePath = "",
-  [switch]$SkipBrowserStart
+  [switch]$SkipBrowserStart,
+  [int]$MaxAttempts = 1,
+  [int]$RetryDelaySeconds = 300,
+  [switch]$PublishAfterSuccess
 )
 
 $ErrorActionPreference = "Stop"
@@ -130,6 +133,23 @@ function Invoke-NpmStep {
   }
 }
 
+function Invoke-NodeStep {
+  param(
+    [string]$Name,
+    [string[]]$Arguments
+  )
+
+  Write-LogLine "Running: node $($Arguments -join ' ')"
+  $output = & node @Arguments 2>&1
+  $exitCode = $LASTEXITCODE
+  foreach ($line in $output) {
+    Write-LogLine ("[$Name] " + $line)
+  }
+  if ($exitCode -ne 0) {
+    throw "$Name failed with exit code $exitCode."
+  }
+}
+
 function Get-BeijingDate {
   $timezone = [TimeZoneInfo]::FindSystemTimeZoneById("China Standard Time")
   return [TimeZoneInfo]::ConvertTimeFromUtc((Get-Date).ToUniversalTime(), $timezone).ToString("yyyy-MM-dd")
@@ -143,52 +163,79 @@ $script:LogFile = Join-Path $logDir ("community-intelligence-" + (Get-Date -Form
 Write-LogLine "Community intelligence run started."
 Write-LogLine "Repository: $repo"
 Write-LogLine "CDP endpoint: $CdpUrl"
+Write-LogLine "Max attempts: $MaxAttempts"
+Write-LogLine "Publish after success: $PublishAfterSuccess"
 
 Push-Location $repo
 try {
-  if (-not (Test-Path -LiteralPath "package.json")) {
-    throw "Repository path does not contain package.json: $repo"
-  }
+  $attemptLimit = [Math]::Max(1, $MaxAttempts)
+  $lastError = ""
 
-  if (-not (Test-CdpEndpoint -Url $CdpUrl)) {
-    if ($SkipBrowserStart) {
-      throw "Chrome CDP endpoint is not available and -SkipBrowserStart was set: $CdpUrl"
+  for ($attempt = 1; $attempt -le $attemptLimit; $attempt++) {
+    try {
+      Write-LogLine "Community intelligence attempt $attempt of $attemptLimit."
+
+      if (-not (Test-Path -LiteralPath "package.json")) {
+        throw "Repository path does not contain package.json: $repo"
+      }
+
+      if (-not (Test-CdpEndpoint -Url $CdpUrl)) {
+        if ($SkipBrowserStart) {
+          throw "Chrome CDP endpoint is not available and -SkipBrowserStart was set: $CdpUrl"
+        }
+        Start-CommunityChrome -Repo $repo -Url $CdpUrl -BrowserPath $ChromePath -ProfilePath $ChromeProfilePath
+      } else {
+        Write-LogLine "Chrome CDP endpoint is already available."
+      }
+
+      $env:COMMUNITY_CDP_URL = $CdpUrl
+      Invoke-NpmStep -Name "collect" -Arguments @("run", "collect:community-intelligence")
+      Invoke-NpmStep -Name "archive" -Arguments @("run", "archive:community-intelligence")
+      $today = Get-BeijingDate
+      Invoke-NpmStep -Name "assert" -Arguments @("run", "assert:community-intelligence", "--", "--date=$today")
+
+      $dataPath = Join-Path $repo "01-SiteV2\site\data\community-intelligence.json"
+      if (-not (Test-Path -LiteralPath $dataPath)) {
+        throw "Community intelligence data file was not generated: $dataPath"
+      }
+
+      $payload = Get-Content -LiteralPath $dataPath -Raw -Encoding UTF8 | ConvertFrom-Json
+      $generated = [DateTimeOffset]::Parse($payload.meta.generatedAt)
+      $timezone = [TimeZoneInfo]::FindSystemTimeZoneById("China Standard Time")
+      $generatedBeijing = [TimeZoneInfo]::ConvertTime($generated, $timezone)
+      $generatedDate = $generatedBeijing.ToString("yyyy-MM-dd")
+
+      if ($generatedDate -ne $today) {
+        throw "Generated data date is $generatedDate, expected $today."
+      }
+
+      $dailyArchive = Join-Path $repo ("01-SiteV2\content\07-community-intelligence\daily\" + $today + " Community Intelligence.md")
+      if (-not (Test-Path -LiteralPath $dailyArchive)) {
+        throw "Daily Obsidian archive was not generated: $dailyArchive"
+      }
+
+      Write-LogLine ("Validation ok. GeneratedAt: " + $payload.meta.generatedAt)
+      Write-LogLine ("Items: " + $payload.items.Count)
+      Write-LogLine ("Daily archive: " + $dailyArchive)
+
+      if ($PublishAfterSuccess) {
+        Invoke-NodeStep -Name "publish" -Arguments @("agent-workflow/tools/publish-community-intelligence-local.mjs", "--date=$today")
+      }
+
+      Write-LogLine "Community intelligence run completed."
+      exit 0
     }
-    Start-CommunityChrome -Repo $repo -Url $CdpUrl -BrowserPath $ChromePath -ProfilePath $ChromeProfilePath
-  } else {
-    Write-LogLine "Chrome CDP endpoint is already available."
+    catch {
+      $lastError = $_.Exception.Message
+      Write-LogLine ("Community intelligence attempt $attempt failed: " + $lastError)
+      if ($attempt -lt $attemptLimit) {
+        Write-LogLine "Waiting $RetryDelaySeconds seconds before retry."
+        Start-Sleep -Seconds $RetryDelaySeconds
+      }
+    }
   }
 
-  $env:COMMUNITY_CDP_URL = $CdpUrl
-  Invoke-NpmStep -Name "collect" -Arguments @("run", "collect:community-intelligence")
-  Invoke-NpmStep -Name "archive" -Arguments @("run", "archive:community-intelligence")
-  $today = Get-BeijingDate
-  Invoke-NpmStep -Name "assert" -Arguments @("run", "assert:community-intelligence", "--", "--date=$today")
-
-  $dataPath = Join-Path $repo "01-SiteV2\site\data\community-intelligence.json"
-  if (-not (Test-Path -LiteralPath $dataPath)) {
-    throw "Community intelligence data file was not generated: $dataPath"
-  }
-
-  $payload = Get-Content -LiteralPath $dataPath -Raw -Encoding UTF8 | ConvertFrom-Json
-  $generated = [DateTimeOffset]::Parse($payload.meta.generatedAt)
-  $timezone = [TimeZoneInfo]::FindSystemTimeZoneById("China Standard Time")
-  $generatedBeijing = [TimeZoneInfo]::ConvertTime($generated, $timezone)
-  $generatedDate = $generatedBeijing.ToString("yyyy-MM-dd")
-
-  if ($generatedDate -ne $today) {
-    throw "Generated data date is $generatedDate, expected $today."
-  }
-
-  $dailyArchive = Join-Path $repo ("01-SiteV2\content\07-community-intelligence\daily\" + $today + " Community Intelligence.md")
-  if (-not (Test-Path -LiteralPath $dailyArchive)) {
-    throw "Daily Obsidian archive was not generated: $dailyArchive"
-  }
-
-  Write-LogLine ("Validation ok. GeneratedAt: " + $payload.meta.generatedAt)
-  Write-LogLine ("Items: " + $payload.items.Count)
-  Write-LogLine ("Daily archive: " + $dailyArchive)
-  Write-LogLine "Community intelligence run completed."
+  throw "Community intelligence run failed after $attemptLimit attempt(s): $lastError"
 }
 catch {
   Write-LogLine ("Community intelligence run failed: " + $_.Exception.Message)

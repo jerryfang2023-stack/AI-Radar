@@ -3,6 +3,9 @@ param(
   [string]$TaskName = "WaveSight Community Intelligence Daily",
   [string]$At = "08:30",
   [string]$CdpUrl = "http://127.0.0.1:9333",
+  [int]$MaxAttempts = 2,
+  [int]$RetryDelaySeconds = 300,
+  [switch]$NoPublishAfterSuccess,
   [switch]$RunOnceNow
 )
 
@@ -29,7 +32,11 @@ $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::Invari
 $quotedScript = '"' + $runScript + '"'
 $quotedRepo = '"' + $repo + '"'
 $quotedCdpUrl = '"' + $CdpUrl + '"'
-$argument = "-NoProfile -ExecutionPolicy Bypass -File $quotedScript -RepoPath $quotedRepo -CdpUrl $quotedCdpUrl"
+$argument = "-NoProfile -ExecutionPolicy Bypass -File $quotedScript -RepoPath $quotedRepo -CdpUrl $quotedCdpUrl -MaxAttempts $MaxAttempts -RetryDelaySeconds $RetryDelaySeconds"
+
+if (-not $NoPublishAfterSuccess) {
+  $argument = $argument + " -PublishAfterSuccess"
+}
 
 $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $argument -WorkingDirectory $repo
 $dailyTrigger = New-ScheduledTaskTrigger -Daily -At $time
@@ -52,6 +59,9 @@ Write-Host "Installed community intelligence scheduled task: $TaskName"
 Write-Host "Repository: $repo"
 Write-Host "Schedule: daily at $At"
 Write-Host "Runner: $runScript"
+Write-Host "Max attempts: $MaxAttempts"
+Write-Host "Retry delay seconds: $RetryDelaySeconds"
+Write-Host "Publish after success: $(-not $NoPublishAfterSuccess)"
 
 if ($RunOnceNow) {
   Start-ScheduledTask -TaskName $TaskName
