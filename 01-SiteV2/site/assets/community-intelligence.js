@@ -198,6 +198,32 @@
     return Math.max(0, Math.min(score, 100));
   }
 
+  function publishedTimeMs(item, baseValue = state.payload?.meta?.generatedAt) {
+    const publishedAt = tidyText(item.publishedAt);
+    if (publishedAt) {
+      const normalized = /^\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}/u.test(publishedAt)
+        ? `${publishedAt.replace(/\s+/u, "T")}${publishedAt.length === 16 ? ":00" : ""}+08:00`
+        : publishedAt;
+      const parsed = Date.parse(normalized);
+      if (Number.isFinite(parsed)) return parsed;
+    }
+
+    const base = baseValue ? Date.parse(baseValue) : Date.now();
+    const safeBase = Number.isFinite(base) ? base : Date.now();
+    const relative = tidyText(item.relativeTime);
+    const number = Number.parseFloat(relative.match(/\d+(?:\.\d+)?/u)?.[0] || "");
+    if (/刚刚|刚才|今天/u.test(relative)) return safeBase;
+    if (/分钟|分钟前/u.test(relative) && Number.isFinite(number)) return safeBase - number * 60 * 1000;
+    if (/小时|小时前/u.test(relative) && Number.isFinite(number)) return safeBase - number * 60 * 60 * 1000;
+    if (/昨天/u.test(relative)) return safeBase - 24 * 60 * 60 * 1000;
+    if (/天前/u.test(relative) && Number.isFinite(number)) return safeBase - number * 24 * 60 * 60 * 1000;
+    return 0;
+  }
+
+  function comparePublishedDesc(a, b) {
+    return publishedTimeMs(b) - publishedTimeMs(a);
+  }
+
   function mergeDisplayItems(items = []) {
     const groups = new Map();
     for (const item of items) {
@@ -207,6 +233,8 @@
     }
     return [...groups.values()].map((group) => {
       const sorted = [...group].sort((a, b) => {
+        const publishedDelta = comparePublishedDesc(a, b);
+        if (publishedDelta) return publishedDelta;
         const valueDelta = itemValueScore(b) - itemValueScore(a);
         if (valueDelta) return valueDelta;
         return itemLinks(b).length - itemLinks(a).length;
@@ -282,16 +310,18 @@
   function sortedItems(items) {
     const copy = [...items];
     if (state.activeView === "opportunity") {
-      return copy.sort((a, b) => itemValueScore(b) - itemValueScore(a) || (b.opportunityScore || 0) - (a.opportunityScore || 0));
+      return copy.sort((a, b) => comparePublishedDesc(a, b) || itemValueScore(b) - itemValueScore(a) || (b.opportunityScore || 0) - (a.opportunityScore || 0));
     }
     if (state.activeView === "tool_tip") {
-      return copy.sort((a, b) => itemValueScore(b) - itemValueScore(a) || (b.tools || []).length - (a.tools || []).length);
+      return copy.sort((a, b) => comparePublishedDesc(a, b) || itemValueScore(b) - itemValueScore(a) || (b.tools || []).length - (a.tools || []).length);
     }
     if (state.activeView === "links") {
-      return copy.sort((a, b) => itemValueScore(b) - itemValueScore(a) || itemLinks(b).length - itemLinks(a).length);
+      return copy.sort((a, b) => comparePublishedDesc(a, b) || itemValueScore(b) - itemValueScore(a) || itemLinks(b).length - itemLinks(a).length);
     }
     if (state.activeView === "industry_case") {
       return copy.sort((a, b) => {
+        const publishedDelta = comparePublishedDesc(a, b);
+        if (publishedDelta) return publishedDelta;
         const valueDelta = itemValueScore(b) - itemValueScore(a);
         if (valueDelta) return valueDelta;
         const aKnown = a.industry && a.industry !== "未识别行业" ? 1 : 0;

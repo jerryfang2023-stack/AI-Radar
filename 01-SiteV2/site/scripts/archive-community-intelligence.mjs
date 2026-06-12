@@ -111,6 +111,32 @@ function uniq(values = []) {
   return [...new Set(values.flat().map(clean).filter(Boolean))];
 }
 
+function publishedTimeMs(item, baseValue = new Date()) {
+  const publishedAt = clean(item.publishedAt);
+  if (publishedAt) {
+    const normalized = /^\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}/u.test(publishedAt)
+      ? `${publishedAt.replace(/\s+/u, "T")}${publishedAt.length === 16 ? ":00" : ""}+08:00`
+      : publishedAt;
+    const parsed = Date.parse(normalized);
+    if (Number.isFinite(parsed)) return parsed;
+  }
+
+  const base = baseValue ? Date.parse(baseValue) : Date.now();
+  const safeBase = Number.isFinite(base) ? base : Date.now();
+  const relative = clean(item.relativeTime);
+  const number = Number.parseFloat(relative.match(/\d+(?:\.\d+)?/u)?.[0] || "");
+  if (/刚刚|刚才|今天/u.test(relative)) return safeBase;
+  if (/分钟|分钟前/u.test(relative) && Number.isFinite(number)) return safeBase - number * 60 * 1000;
+  if (/小时|小时前/u.test(relative) && Number.isFinite(number)) return safeBase - number * 60 * 60 * 1000;
+  if (/昨天/u.test(relative)) return safeBase - 24 * 60 * 60 * 1000;
+  if (/天前/u.test(relative) && Number.isFinite(number)) return safeBase - number * 24 * 60 * 60 * 1000;
+  return 0;
+}
+
+function comparePublishedDesc(a, b, baseValue = new Date()) {
+  return publishedTimeMs(b, baseValue) - publishedTimeMs(a, baseValue);
+}
+
 function valueScore(item) {
   if (Number.isFinite(Number(item.valueScore))) return Number(item.valueScore);
   const text = [
@@ -137,7 +163,7 @@ function valueScore(item) {
   return Math.max(0, Math.min(score, 100));
 }
 
-function mergeItems(items = [], sources = {}) {
+function mergeItems(items = [], sources = {}, baseValue = new Date()) {
   const groups = new Map();
   for (const item of items) {
     const key = dedupeKey(item, sources);
@@ -145,7 +171,7 @@ function mergeItems(items = [], sources = {}) {
     groups.get(key).push(item);
   }
   return [...groups.values()].map((group) => {
-    const sorted = [...group].sort((a, b) => valueScore(b) - valueScore(a) || itemLinks(b).length - itemLinks(a).length);
+    const sorted = [...group].sort((a, b) => comparePublishedDesc(a, b, baseValue) || valueScore(b) - valueScore(a) || itemLinks(b).length - itemLinks(a).length);
     const base = { ...sorted[0] };
     const linkMap = new Map();
     for (const item of group) {
@@ -167,7 +193,7 @@ function mergeItems(items = [], sources = {}) {
       keywords,
     };
     return base;
-  }).sort((a, b) => valueScore(b) - valueScore(a));
+  }).sort((a, b) => comparePublishedDesc(a, b, baseValue) || valueScore(b) - valueScore(a));
 }
 
 function sourceLabel(item, sources = {}) {
@@ -243,7 +269,7 @@ async function main() {
   const date = slugDate(payload.meta?.generatedAt);
   const generatedAt = displayDate(payload.meta?.generatedAt);
   const sources = payload.sources || {};
-  const items = mergeItems(payload.items || [], sources);
+  const items = mergeItems(payload.items || [], sources, payload.meta?.generatedAt);
   const selectedKeywords = (payload.meta?.selectedKeywords || []).map((item) => item.keyword).filter(Boolean);
 
   const byType = Object.fromEntries(Object.keys(typeConfig).map((type) => [type, typeItems(items, type)]));
