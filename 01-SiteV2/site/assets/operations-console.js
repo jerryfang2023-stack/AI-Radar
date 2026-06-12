@@ -8,9 +8,9 @@
   const totals = pipeline.totals || {};
   const state = {
     panel: location.hash ? location.hash.slice(1) : "overview",
-    topicSource: "raw_pool_pitch",
+    topicSource: "",
     topicOpenId: "",
-    factorySource: "raw_pool_pitch",
+    factorySource: "",
     factoryTopicId: "",
     output: "podcast",
     railCollapsed: localStorage.getItem("wavesight-rail-collapsed") === "1",
@@ -215,15 +215,22 @@
   }
 
   const topicSources = [
-    { id: "raw_pool_pitch", title: "Raw-Pool-Pitch", desc: "每日 Raw / Pool / Card 产物" },
-    { id: "industry_chain", title: "产业链分析", desc: "产业节点与资产结构" },
-    { id: "builders", title: "Builders 文章", desc: "开发者与产品实践" },
-    { id: "viral_rewrite", title: "爆款改编", desc: "AI 热点内容与传播结构" },
+    { id: "money_leak", title: "漏钱型", desc: "订单入口、转化漏斗、线索流失" },
+    { id: "save_headcount", title: "省人型", desc: "少招人、少返工、少加班" },
+    { id: "peer_pressure", title: "同行压力型", desc: "同行已做、对手先跑" },
+    { id: "pitfall", title: "避坑型", desc: "工具乱买、权限失控" },
+    { id: "counterintuitive", title: "反常识型", desc: "推翻流行说法，形成可传播判断" },
+    { id: "small_role", title: "小岗位型", desc: "客服、销售、财务、标书、运营" },
+    { id: "big_small_contrast", title: "大小对照型", desc: "大融资对照小生意，大模型对照小岗位" },
+    { id: "person_story", title: "人物故事型", desc: "具体人、具体场景、具体结果" },
   ];
   const topicCenterData = window.WaveSightTopicCenter || {};
   if (Array.isArray(topicCenterData.sources) && topicCenterData.sources.length) {
     topicSources.splice(0, topicSources.length, ...topicCenterData.sources);
   }
+  const defaultTopicSource = topicSources[0]?.id || "money_leak";
+  if (!topicSources.some((source) => source.id === state.topicSource)) state.topicSource = defaultTopicSource;
+  if (!topicSources.some((source) => source.id === state.factorySource)) state.factorySource = defaultTopicSource;
 
   function strictAngles(topic) {
     const subject = topic.title.replace(/[｜|].*$/, "").slice(0, 28);
@@ -331,7 +338,7 @@
     const sort = $("[data-topic-sort]")?.value || "score";
     let items = topics.filter((topic) => topic.sourceId === state.topicSource);
     if (type !== "all") items = items.filter((topic) => topic.type === type);
-    if (query) items = items.filter((topic) => `${topic.title} ${topic.core} ${topic.relevance} ${topic.evidence}`.toLowerCase().includes(query));
+    if (query) items = items.filter((topic) => `${topic.title} ${topic.core} ${topic.relevance} ${topic.evidence} ${topic.bossPain || ""} ${topic.moneyLine || ""} ${topic.spreadTitle || ""}`.toLowerCase().includes(query));
     return items.sort((a, b) => sort === "source" ? a.title.localeCompare(b.title, "zh-CN") : b.score - a.score);
   }
 
@@ -340,7 +347,7 @@
     if (cards) {
       cards.innerHTML = [
         metric("运行摘要", `${latest.raw || 0} / ${latest.pool || 0} / ${latest.cards || 0}`, `最新生产日 ${latest.label || latest.date || "-"}`, "hero-card"),
-        metric("选题池", topics.length, "4 类来源 · 每类 5 条"),
+        metric("选题池", topics.length, topicCenterData.meta?.ruleLabel || "老板决策型选题机制"),
         metric("发布准备", "待推进", "内容工厂 → 发布队列"),
       ].join("");
     }
@@ -385,7 +392,7 @@
     if (routing) {
       routing.innerHTML = [
         row("运营仪表盘", official < 25 ? "补来源" : "巡检", Math.max(22, official)),
-        row("选题中心", `${topics.length} 候选`, Math.min(100, topics.length * 3)),
+        row("选题中心", `${topics.length} 候选`, Math.min(100, topics.length * 10)),
         row("内容工厂", "待生产", 42),
         row("发布队列", "待确认", 34),
       ].join("");
@@ -433,6 +440,36 @@
     }
   }
 
+  function scoreRows(topic) {
+    const labels = {
+      bossPain: ["老板痛感", 25],
+      moneyRelation: ["钱的关系", 25],
+      talkability: ["话题度", 20],
+      spreadability: ["传播性", 15],
+      actionability: ["可操作性", 10],
+      styleFit: ["风格适配", 5],
+    };
+    const breakdown = topic.scoreBreakdown || {};
+    const rows = Object.entries(labels).map(([key, [label, max]]) => {
+      const value = Number(breakdown[key] || 0);
+      return row(label, `${value}/${max}`, max ? value / max * 100 : 0);
+    });
+    return rows.join("");
+  }
+
+  function evidenceSummary(topic) {
+    const inputs = topic.sourceInputs || {};
+    const groups = [
+      ["商业信号", inputs.businessSignals || []],
+      ["一线观点", inputs.viewpoints || []],
+      ["社群情报", inputs.communityItems || []],
+    ];
+    return groups
+      .filter(([, items]) => Array.isArray(items) && items.length)
+      .map(([label, items]) => `<article class="angle"><h3>${html(label)}</h3><p>${items.map((item) => `${html(item.title || "")}${item.source ? `（${html(item.source)}）` : ""}`).join("；")}</p></article>`)
+      .join("");
+  }
+
   function renderTopics() {
     renderTopicControls();
     const listEl = $("[data-topic-list]");
@@ -443,12 +480,16 @@
       return `<article class="topic-item ${open ? "is-open" : ""}">
         <div class="topic-summary">
           <span class="grade">${html(topic.grade)}<small>${html(topic.score)}</small></span>
-          <button type="button" class="topic-title-toggle" data-topic-id="${html(topic.id)}" aria-expanded="${String(open)}"><strong>${html(topic.title)}</strong><span>${html(topic.core || topic.relevance)}</span></button>
+          <button type="button" class="topic-title-toggle" data-topic-id="${html(topic.id)}" aria-expanded="${String(open)}"><strong>${html(topic.spreadTitle || topic.title)}</strong><span>${html(topic.core || topic.relevance)}</span></button>
           <span class="topic-meta"><span>${html(topic.sourceName)}</span><span>${html(topic.priority)}</span><span>${html(topic.type)}</span></span>
         </div>
         <div class="topic-detail">
-          <div class="score-box"><span class="label">Score Table</span><div class="rows" style="margin-top:12px">${row("新鲜度", 19, 95)}${row("商业价值", 20, 100)}${row("判断新意", 18, 90)}${row("证据强度", 17, 85)}${row("观澜适配", 19, 95)}</div></div>
-          <div><span class="label">可写角度</span><div class="angle-list" style="margin-top:12px">${topic.angles.map((angle) => `<article class="angle"><h3>${html(angle.title)}</h3><p>${html(angle.note)}</p></article>`).join("")}</div></div>
+          <div class="score-box"><span class="label">老板选题评分</span><div class="rows" style="margin-top:12px">${scoreRows(topic)}</div><div class="muted-list"><span><b>老板痛点：</b>${html(topic.bossPain || "-")}</span><span><b>钱的关系：</b>${html(topic.moneyLine || "-")}</span><span><b>行动提示：</b>${html(topic.actionHint || "-")}</span><span><b>证据边界：</b>${html(topic.evidenceBoundary || "-")}</span></div></div>
+          <div><span class="label">可写角度</span><div class="angle-list" style="margin-top:12px">
+            <article class="angle"><h3>旧说法 → 新判断</h3><p>${html(topic.oldFrame || "-")} → ${html(topic.newFrame || "-")}</p></article>
+            ${evidenceSummary(topic)}
+            ${topic.angles.map((angle) => `<article class="angle"><h3>${html(angle.title)}</h3><p>${html(angle.note)}</p></article>`).join("")}
+          </div></div>
         </div>
       </article>`;
     }).join("") : `<article class="card"><p>没有匹配选题。</p></article>`;
@@ -478,7 +519,7 @@
     const selected = factoryTopic();
     const selectedEl = $("[data-selected-topic]");
     if (selectedEl && selected) {
-      selectedEl.innerHTML = `<span class="label">Selected Topic</span><h3>${html(selected.title)}</h3><p>${html(selected.core || selected.relevance)}</p><div class="muted-list">${selected.angles.slice(0, 2).map((angle) => `<span>${html(angle.title)}</span>`).join("")}</div>`;
+      selectedEl.innerHTML = `<span class="label">Selected Topic</span><h3>${html(selected.spreadTitle || selected.title)}</h3><p>${html(selected.core || selected.relevance)}</p><div class="muted-list"><span><b>老板痛点：</b>${html(selected.bossPain || "-")}</span><span><b>钱的关系：</b>${html(selected.moneyLine || "-")}</span>${selected.angles.slice(0, 2).map((angle) => `<span>${html(angle.title)}</span>`).join("")}</div>`;
     }
   }
 
@@ -504,7 +545,7 @@
       dataStatus.innerHTML = [
         ["site-content", content.meta?.generatedAt || "-"],
         ["pipeline", pipeline.meta?.generatedAt || "-"],
-        ["topic candidates", topics.length],
+        ["topic-center", `${topics.length} · ${topicCenterData.meta?.generatedAt || "-"}`],
       ].map(([label, value]) => `<div class="data-status-item"><span>${html(label)}</span><b>${html(value)}</b></div>`).join("");
     }
   }

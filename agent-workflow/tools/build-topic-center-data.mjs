@@ -3,18 +3,65 @@ import path from "node:path";
 
 const root = process.cwd();
 const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
-const siteContentPath = path.join(siteDataDir, "site-content.json");
+const businessSignalsPath = path.join(siteDataDir, "v3-data-observation-desk.json");
+const firstLinePath = path.join(siteDataDir, "follow-builders-daily.json");
+const communityPath = path.join(siteDataDir, "community-intelligence.json");
 const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
-const topicCenterVersion = "V1.2.0";
-const followBuildersDir = path.join(process.env.USERPROFILE || process.env.HOME || "", ".skill-store", "follow-builders");
-const followBuildersFeeds = {
-  x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
-  blogs: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-blogs.json",
-  podcasts: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json",
-};
+const topicCenterVersion = "V2.0.0-boss-topic-engine";
 
-const fetchTimeoutMs = 15000;
+const engines = [
+  {
+    id: "money_leak",
+    title: "漏钱型",
+    desc: "订单入口、转化漏斗、线索流失",
+    question: "老板每天哪里在流失收入？",
+  },
+  {
+    id: "save_headcount",
+    title: "省人型",
+    desc: "少招人、少返工、少加班",
+    question: "哪些重复岗位可以先被 AI 接管一部分？",
+  },
+  {
+    id: "peer_pressure",
+    title: "同行压力型",
+    desc: "同行已做、对手先跑、老板焦虑",
+    question: "哪些同行动作会让老板产生紧迫感？",
+  },
+  {
+    id: "pitfall",
+    title: "避坑型",
+    desc: "工具乱买、权限失控、流程没拆",
+    question: "老板最容易把 AI 钱花错在哪里？",
+  },
+  {
+    id: "counterintuitive",
+    title: "反常识型",
+    desc: "推翻流行说法，形成可传播判断",
+    question: "哪个流行说法需要被刺穿？",
+  },
+  {
+    id: "small_role",
+    title: "小岗位型",
+    desc: "客服、销售、财务、标书、运营",
+    question: "哪个具体岗位最适合先 AI 化？",
+  },
+  {
+    id: "big_small_contrast",
+    title: "大小对照型",
+    desc: "大融资对照小生意，大模型对照小岗位",
+    question: "大新闻背后，普通老板能抓哪一层机会？",
+  },
+  {
+    id: "person_story",
+    title: "人物故事型",
+    desc: "具体人、具体场景、具体结果",
+    question: "有没有一个人能讲清楚一个趋势？",
+  },
+];
+
+const engineById = new Map(engines.map((engine) => [engine.id, engine]));
 
 function argValue(name, fallback = "") {
   const exact = `--${name}`;
@@ -27,14 +74,6 @@ function argValue(name, fallback = "") {
 }
 
 function readJson(file, fallback = {}) {
-  try {
-    return JSON.parse(fs.readFileSync(file, "utf8"));
-  } catch {
-    return fallback;
-  }
-}
-
-function readLocalJson(file, fallback = null) {
   try {
     return JSON.parse(fs.readFileSync(file, "utf8"));
   } catch {
@@ -57,34 +96,9 @@ function list(value) {
   return value ? [value] : [];
 }
 
-function hostFromUrl(url) {
-  try {
-    return new URL(url).host.replace(/^www\./u, "");
-  } catch {
-    return "";
-  }
-}
-
-function stripHtml(value) {
-  return text(value)
-    .replace(/<[^>]+>/gu, " ")
-    .replace(/&amp;/gu, "&")
-    .replace(/&quot;/gu, "\"")
-    .replace(/&#39;/gu, "'")
-    .replace(/\s+/gu, " ")
-    .trim();
-}
-
-function hasAiSignal(value) {
-  return /\b(ai|llm|gpt|claude|openai|anthropic|agent|agents|model|models|inference|rag|mcp|copilot|vector|embedding|robot|chatgpt|nvidia)\b|人工智能|大模型|智能体|机器人/iu.test(value);
-}
-
-function hasStrongAiTitle(value) {
-  return /\b(ai|llm|gpt|claude|openai|anthropic|agent|agents|model|models|robot|chatgpt|nvidia)\b|人工智能|大模型|智能体|机器人/iu.test(value);
-}
-
-function hasBuilderSignal(value) {
-  return /\b(ai|llm|gpt|claude|openai|anthropic|agent|agents|model|models|inference|rag|mcp|copilot|vector|embedding|developer|sdk|api|github|repo|cli|code|coding)\b|开发者|开源|智能体/iu.test(value);
+function clip(value, length = 220) {
+  const clean = text(value).replace(/\s+/gu, " ");
+  return clean.length > length ? `${clean.slice(0, length - 1)}…` : clean;
 }
 
 function slug(value) {
@@ -92,986 +106,454 @@ function slug(value) {
     .toLowerCase()
     .replace(/[^a-z0-9\u4e00-\u9fa5]+/gu, "-")
     .replace(/^-+|-+$/gu, "")
-    .slice(0, 56) || "topic";
+    .slice(0, 64) || "topic";
+}
+
+function todayStr() {
+  const now = new Date();
+  return [
+    now.getFullYear(),
+    String(now.getMonth() + 1).padStart(2, "0"),
+    String(now.getDate()).padStart(2, "0"),
+  ].join("-");
 }
 
 function scoreGrade(score) {
-  if (score >= 92) return "S";
-  if (score >= 86) return "A";
-  if (score >= 78) return "B";
+  if (score >= 90) return "S";
+  if (score >= 80) return "A";
+  if (score >= 70) return "B";
   return "C";
 }
 
 function priorityLabel(score) {
-  if (score >= 90) return "S级选题";
-  if (score >= 84) return "优先观察";
-  return "候选";
+  if (score >= 85) return "公众号主稿";
+  if (score >= 75) return "可写短文";
+  if (score >= 65) return "选题池观察";
+  return "暂缓";
 }
 
-function todayStr() {
-  const date = new Date();
-  return [
-    date.getFullYear(),
-    String(date.getMonth() + 1).padStart(2, "0"),
-    String(date.getDate()).padStart(2, "0"),
-  ].join("-");
-}
-
-async function fetchText(url) {
-  const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), fetchTimeoutMs);
-  try {
-    const response = await fetch(url, { signal: ctrl.signal });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return await response.text();
-  } catch {
-    return "";
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
-async function fetchJson(url) {
-  const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), fetchTimeoutMs);
-  try {
-    const response = await fetch(url, { signal: ctrl.signal });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return await response.json();
-  } catch {
-    return null;
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
-async function fetchFollowBuildersFeed(name) {
-  const remote = await fetchJson(followBuildersFeeds[name]);
-  if (remote) return remote;
-  return readLocalJson(path.join(followBuildersDir, `feed-${name}.json`), null);
-}
-
-async function fetchFollowBuildersFeeds() {
-  const [x, blogs, podcasts] = await Promise.all([
-    fetchFollowBuildersFeed("x"),
-    fetchFollowBuildersFeed("blogs"),
-    fetchFollowBuildersFeed("podcasts"),
-  ]);
-  return { x, blogs, podcasts };
-}
-
-function followBuilderTweetItems(feed, date) {
-  const rows = [];
-  for (const account of list(feed?.x)) {
-    for (const tweet of list(account.tweets)) {
-      const body = stripHtml(tweet.text || "");
-      if (!body || body.length < 24) continue;
-      const engagement = Number(tweet.likes || 0) + Number(tweet.retweets || 0) * 3 + Number(tweet.replies || 0);
-      rows.push({
-        baseId: `follow-builders-${tweet.id || slug(`${account.handle}-${body}`)}`,
-        title: `${account.name || account.handle}: ${body}`.slice(0, 120),
-        type: "builder-opinion",
-        audience: "企业老板 / 产品负责人 / 开发者",
-        core: body.slice(0, 240),
-        relevance: "来自一线 AI builder 的公开观点，适合判断开发者采用、产品体验和企业焦虑。",
-        evidence: `Follow Builders · @${account.handle || account.name} · ${engagement} engagement`,
-        source: "Follow Builders",
-        subSource: account.name || account.handle || "Builder",
-        url: tweet.url || "",
-        date: text(tweet.createdAt).slice(0, 10) || date,
-        score: Math.min(94, 78 + Math.floor(engagement / 12)),
-      });
-    }
-  }
-  return dedupe(rows).sort((a, b) => b.score - a.score);
-}
-
-function followBuilderBlogItems(feed, date) {
-  return dedupe(list(feed?.blogs).map((post, index) => ({
-    baseId: `follow-builders-blog-${slug(post.url || post.title)}`,
-    title: text(post.title || "Builder blog update").slice(0, 120),
-    type: "builder-blog",
-    audience: "开发者 / 产品负责人 / CTO",
-    core: stripHtml(post.description || post.content || post.title).slice(0, 240),
-    relevance: "来自 Follow Builders 官方/工程博客源，适合观察产品路线、开发者工具和 Agent 实践变化。",
-    evidence: `Follow Builders · ${post.name || post.source || "Blog"} · ${post.publishedAt || date}`,
-    source: "Follow Builders",
-    subSource: post.name || "Builder Blog",
-    url: post.url || "",
-    date: text(post.publishedAt).slice(0, 10) || date,
-    score: 88 - Math.min(index, 6),
-  }))).sort((a, b) => b.score - a.score);
-}
-
-function sourceDefinitions() {
-  return [
-    { id: "raw_pool_pitch", title: "Raw-Pool-Pitch", desc: "每日 Raw / Pool / Card 产物" },
-    { id: "industry_chain", title: "产业链分析", desc: "arXiv / HN / 官方博客" },
-    { id: "builders", title: "Builders 文章", desc: "GitHub Trending / Show HN / 开发者博客" },
-    { id: "viral_rewrite", title: "爆款改编", desc: "HN 热门 / arXiv 热点" },
-  ];
-}
-
-function normalizeSignal(signal, index, content) {
-  const sourceUrl = text(signal.sourceUrl || signal.url || signal.link);
-  const host = hostFromUrl(sourceUrl);
-  const title = text(signal.frontend?.displayTitle || signal.editorialTitle || signal.title || signal.sourceTitle || `候选信号 ${index + 1}`);
-  const item = {
-    baseId: text(signal.id || signal.slug || slug(title)),
-    title,
-    type: text(signal.signalType || signal.type || signal.contentType || "signal").replaceAll("_", "-"),
-    audience: text(signal.audience || "企业老板 / 业务负责人 / AI 产品与运营负责人"),
-    core: text(signal.judgment || signal.frontend?.whyWatch || signal.event || signal.brief || signal.summary),
-    relevance: text(signal.businessMeaning || signal.frontend?.businessMeaning || signal.brief || signal.summary),
-    evidence: text(signal.frontend?.evidenceNote || signal.counter || signal.sourceTitle || signal.sources || host),
-    source: host || text(signal.sourceTitle || signal.sources || "content asset"),
-    url: sourceUrl,
-    date: text(signal.date || content.meta?.date),
-    score: 91 - Math.min(index, 7),
-  };
-  // 尝试从原始文章提取原文摘要，替代管线失真概要
-  if (signal.sourcePath) {
-    const rawSummary = extractRawSummary(signal.sourcePath);
-    if (rawSummary) {
-      item.originalSummary = rawSummary;
-    }
-  }
-  return item;
-}
-
-/**
- * 从信号卡的 YAML frontmatter → primary_raw.raw_json → discovery_record.discovery_summary
- * 提取原始文章摘要（RSS 源原始描述，未经管线处理）
- */
-function extractRawSummary(signalCardPath) {
-  try {
-    const absPath = path.resolve(root, signalCardPath);
-    if (!fs.existsSync(absPath)) return null;
-    const cardContent = fs.readFileSync(absPath, 'utf8');
-    const yamlMatch = cardContent.match(/^---\n([\s\S]*?)\n---/);
-    if (!yamlMatch) return null;
-    const yamlLines = yamlMatch[1].split('\n');
-    // 在 primary_raw: 块下找到 raw_json: 路径
-    let inPrimaryRaw = false;
-    let rawJsonPath = '';
-    for (const line of yamlLines) {
-      if (line.trimStart().startsWith('primary_raw:')) { inPrimaryRaw = true; continue; }
-      if (inPrimaryRaw && line.trimStart().startsWith('raw_json:')) {
-        rawJsonPath = line.replace(/^\s*raw_json:\s*['"]?/, '').replace(/['"]?\s*$/, '');
-        break;
-      }
-      if (inPrimaryRaw && line.length > 0 && !line.startsWith(' ') && !line.startsWith('\t')) {
-        inPrimaryRaw = false;
-      }
-    }
-    if (!rawJsonPath) return null;
-
-    const rawJsonAbs = path.resolve(root, rawJsonPath);
-    if (!fs.existsSync(rawJsonAbs)) return null;
-    const rawJson = JSON.parse(fs.readFileSync(rawJsonAbs, 'utf8'));
-    const summary = rawJson.discovery_record?.discovery_summary;
-    if (summary && summary.length > 10) return summary;
-
-    // fallback: 用 clean_text 前 200 字
-    const cleanText = rawJson.clean_text || rawJson.full_text || '';
-    if (cleanText.length > 20) return cleanText.slice(0, 200).replace(/\n+/g, ' ').trim();
-    return null;
-  } catch {
-    return null;
-  }
-}
-
-function rawPoolTopics(content, date) {
-  const items = [];
-  if (content.daily?.title) {
-    items.push({
-      baseId: text(content.daily.id || "daily-observation"),
-      title: text(content.daily.title),
-      type: "daily",
-      audience: "企业老板 / 业务负责人",
-      core: text(content.daily.judgment || content.daily.dek || content.daily.summary),
-      relevance: text(content.daily.homeSummary || content.daily.summary || content.daily.dek),
-      evidence: text(content.daily.dek || content.daily.issue),
-      source: "今日观察",
-      url: text(content.daily.link),
-      date,
-      score: 96,
-    });
-  }
-  list(content.signals).forEach((signal, index) => items.push(normalizeSignal(signal, index, content)));
-
-  const seen = new Set();
-  return items
-    .filter((item) => item.title && !seen.has(item.title) && seen.add(item.title))
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 12)
-    .map((item, index) => toTopic("raw_pool_pitch", item, index, date));
-}
-
-function scoreParts(score) {
+function normalizeBusinessSignal(signal, index) {
+  const title = text(signal.displayTitle || signal.generatedTitle || signal.title || signal.originalTitle || `商业信号 ${index + 1}`);
+  const fact = text(signal.translatedFact || signal.summary || signal.frontstageValueDescription || "");
   return {
-    conflict: Math.round(score * 0.25),
-    roleChange: Math.round(score * 0.2),
-    counterIntuit: Math.round(score * 0.15),
-    storyHook: Math.round(score * 0.15),
-    insight: Math.round(score * 0.15),
-    evidence: Math.round(score * 0.1),
+    id: text(signal.id || `business-${index + 1}`),
+    title,
+    fact,
+    category: text(signal.categoryLabel || signal.category || signal.type || "商业信号"),
+    source: text(signal.sourceName || signal.source || ""),
+    url: text(signal.sourceUrl || list(signal.sourceLinks)[0] || ""),
+    score: Number(signal.frontstageEditorialScore || signal.importanceScore || 0),
+    raw: signal,
+    searchText: `${title} ${fact} ${signal.sourceName || ""} ${JSON.stringify(signal.tags || {})}`,
   };
 }
 
-function toTopic(sourceId, item, index, date) {
-  const sources = sourceDefinitions();
-  const source = sources.find((entry) => entry.id === sourceId) || sources[0];
-  const score = Math.max(72, Math.min(99, Number(item.score) || 80));
-  const topic = {
-    id: `${sourceId}-${slug(item.baseId || item.title)}-${index + 1}`,
-    sourceId,
-    sourceName: source.title,
-    sourceDesc: item.sourceDesc || source.desc,
-    subSource: item.subSource || item.source || "",
-    baseId: item.baseId || slug(item.title),
-    title: item.title,
-    type: item.type || "topic",
-    audience: item.audience || "企业老板 / 业务负责人",
-    core: item.core || item.title,
-    relevance: item.relevance || "需要判断它是否改变企业预算、流程、客户入口或责任边界。",
-    evidence: item.evidence || item.source || "公开来源",
-    source: item.source || item.subSource || source.title,
+function normalizeViewpoint(item, index) {
+  const body = text(item.translation || item.text || item.contentTranslation || item.content || "");
+  return {
+    id: text(item.id || `viewpoint-${index + 1}`),
+    title: text(item.translation || item.text || `一线观点 ${index + 1}`),
+    body,
+    author: text(item.name || item.handle || item.source || ""),
+    topic: text(item.topic || ""),
+    url: text(item.url || ""),
+    engagement: Number(item.likes || 0) + Number(item.retweets || 0) * 3 + Number(item.replies || 0),
+    raw: item,
+    searchText: `${item.name || ""} ${item.handle || ""} ${item.text || ""} ${item.translation || ""} ${item.contentTranslation || ""} ${item.topic || ""}`,
+  };
+}
+
+function normalizeCommunity(item, index) {
+  const painPoints = list(item.painPoints).map(text).filter(Boolean);
+  const tools = list(item.tools).map(text).filter(Boolean);
+  return {
+    id: text(item.id || `community-${index + 1}`),
+    title: text(item.title || `社群情报 ${index + 1}`),
+    summary: text(item.summary || item.excerpt || item.evidence || ""),
+    scene: text(item.scene || ""),
+    industry: text(item.industry || ""),
+    tools,
+    monetization: text(item.monetization || ""),
+    painPoints,
+    resultSignal: text(item.resultSignal || ""),
+    source: text(item.sourceName || item.source || ""),
+    url: text(item.url || ""),
+    valueScore: Number(item.valueScore || 0),
+    opportunityScore: Number(item.opportunityScore || 0),
+    metrics: text(item.metrics || ""),
+    raw: item,
+    searchText: `${item.title || ""} ${item.summary || ""} ${item.excerpt || ""} ${item.evidence || ""} ${item.scene || ""} ${item.industry || ""} ${tools.join(" ")} ${painPoints.join(" ")} ${item.resultSignal || ""}`,
+  };
+}
+
+function keywordScore(item, keywords) {
+  const haystack = text(item.searchText || item.title || item.summary || item.fact).toLowerCase();
+  return keywords.reduce((score, keyword) => {
+    const normalized = keyword.toLowerCase();
+    if (haystack.includes(normalized)) return score + 3;
+    return score;
+  }, 0);
+}
+
+function rank(items, keywords, extra = () => 0) {
+  return [...items]
+    .map((item) => ({
+      item,
+      score: keywordScore(item, keywords) + extra(item),
+    }))
+    .filter((entry) => entry.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map((entry) => entry.item);
+}
+
+function firstRanked(items, keywords, fallback = null, extra) {
+  return rank(items, keywords, extra)[0] || fallback || items[0] || null;
+}
+
+function numberHint(value) {
+  const match = text(value).match(/\d+(?:\.\d+)?\s*(?:%|亿美元|万美元|万美金|万|亿|人|个|条|小时|天|倍)/u);
+  return match ? match[0].replace(/\s+/gu, "") : "";
+}
+
+function evidenceItem(kind, item) {
+  if (!item) return null;
+  return {
+    kind,
+    id: item.id,
+    title: clip(item.title, 120),
+    source: item.source || item.author || "",
     url: item.url || "",
-    date: item.date || date,
+    note: clip(item.fact || item.summary || item.body || item.resultSignal || item.scene || "", 180),
+  };
+}
+
+function scoreTopic({ pain = 18, money = 18, buzz = 14, spread = 10, action = 7, style = 4 }) {
+  const scoreBreakdown = {
+    bossPain: Math.min(25, pain),
+    moneyRelation: Math.min(25, money),
+    talkability: Math.min(20, buzz),
+    spreadability: Math.min(15, spread),
+    actionability: Math.min(10, action),
+    styleFit: Math.min(5, style),
+  };
+  const score = Object.values(scoreBreakdown).reduce((sum, value) => sum + value, 0);
+  return { score, scoreBreakdown };
+}
+
+function topicPayload(input) {
+  const engine = engineById.get(input.engineId) || engines[0];
+  const { score, scoreBreakdown } = scoreTopic(input.scoreParts || {});
+  const businessSignals = list(input.businessSignals).filter(Boolean).map((item) => evidenceItem("business_signal", item)).filter(Boolean);
+  const viewpoints = list(input.viewpoints).filter(Boolean).map((item) => evidenceItem("first_line_viewpoint", item)).filter(Boolean);
+  const communityItems = list(input.communityItems).filter(Boolean).map((item) => evidenceItem("community_intelligence", item)).filter(Boolean);
+  const sourceInputs = { businessSignals, viewpoints, communityItems };
+  const evidenceBase = [...businessSignals, ...viewpoints, ...communityItems];
+
+  return {
+    id: `${engine.id}-${slug(input.title)}`,
+    sourceId: engine.id,
+    sourceName: engine.title,
+    sourceDesc: engine.desc,
+    type: input.type || "boss_decision_topic",
+    title: input.title,
+    spreadTitle: input.spreadTitle || input.title,
+    audience: "企业老板 / 创业者 / 业务负责人",
+    core: input.core,
+    relevance: input.relevance,
+    bossPain: input.bossPain,
+    moneyLine: input.moneyLine,
+    oldFrame: input.oldFrame,
+    newFrame: input.newFrame,
+    actionHint: input.actionHint,
+    evidence: input.evidence || evidenceBase.map((item) => item.title).slice(0, 3).join("；"),
+    evidenceBoundary: input.evidenceBoundary || "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+    sourceInputs,
+    source: evidenceBase[0]?.source || engine.title,
+    url: evidenceBase[0]?.url || "",
+    date: input.date,
     score,
     grade: scoreGrade(score),
     priority: priorityLabel(score),
-    scoreBreakdown: item.scoreBreakdown || scoreParts(score),
+    scoreBreakdown,
+    angles: input.angles,
+    writingStructure: input.writingStructure || [
+      "开头 3 句内给冲突或数字",
+      "中段按现象 -> 算账 -> 坑 -> 解法推进",
+      "结尾给一句新判断，不复述要点",
+    ],
+    forbiddenFrame: input.forbiddenFrame || "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
   };
-  if (item.originalSummary) {
-    topic.originalSummary = item.originalSummary;
-  }
-  topic.angles = Array.isArray(item.angles) && item.angles.length ? item.angles : angleSet(topic);
-  return topic;
 }
 
-function angleSet(topic) {
-  const subject = topic.title.split(/[，,：:｜|]/u)[0].slice(0, 34) || topic.title.slice(0, 34);
-  if (topic.sourceId === "industry_chain") {
-    return [
-      { title: `从 ${subject} 看 AI 预算正流向哪一段产业链`, note: `切口：先写事件，再判断钱会落在算力、工具、集成、渠道还是客户现场。可用事实：${topic.evidence}` },
-      { title: `${subject} 会先影响谁的采购单`, note: "切口：把读者带到一个具体买方岗位，比如 CIO、工厂负责人、客服负责人或销售运营负责人。" },
-      { title: "这不是技术升级，而是责任边界重画", note: `切口：写清楚系统出错时谁负责、谁复核、谁买单。商业落点：${topic.relevance}` },
-    ];
-  }
-  if (topic.sourceId === "builders") {
-    return [
-      { title: `${subject} 背后的开发者真实需求`, note: "切口：不写工具测评，写开发者为什么愿意换流程、接插件、改团队协作方式。" },
-      { title: "从演示走向日常工作，差的是哪一步", note: "切口：拆一个真实任务链：需求进入、代码生成、测试、审阅、上线。" },
-      { title: "企业读者该看哪些采用信号", note: "切口：看文档更新频率、GitHub issue、客户引用、招聘岗位和生态插件。" },
-    ];
-  }
-  if (topic.sourceId === "viral_rewrite") {
-    return [
-      { title: `${subject} 为什么会刺中企业焦虑`, note: "切口：找一个明确情绪钩子，比如岗位替代、预算失控、客户流失、安全责任。" },
-      { title: "把热闹改写成一个商业冲突", note: "切口：标题必须回答谁的利益被改变，比如供应商拿走预算、员工失去入口、平台获得控制权。" },
-      { title: "爆款改编前必须补哪条事实", note: `切口：先补一条可验证来源，再写观点。当前可用证据边界：${topic.evidence}` },
-    ];
-  }
+function buildTopicSet({ date, signals, viewpoints, community }) {
+  const serviceCallSignal = firstRanked(signals, ["90%", "来电", "电话", "voice agent", "servicetitan", "预约", "客服"], null, (item) => numberHint(`${item.title} ${item.fact}`) ? 5 : 0);
+  const paymentSignal = firstRanked(signals, ["visa", "chatgpt", "零售", "购买", "支付", "doordash", "订单", "预订"]);
+  const governanceSignal = firstRanked(signals, ["auto-review", "治理", "权限", "risk", "github enterprise", "cursor", "分类器", "guardrails"]);
+  const workflowSignal = firstRanked(signals, ["perplexity", "deep research", "computer", "codex", "datasette", "报告", "演示文稿", "工作流"]);
+  const fundingSignal = firstRanked(signals, ["120亿美元", "融资", "410亿美元", "prometheus", "theker", "poetic", "notch", "f2"]);
+  const trainingSignal = firstRanked(signals, ["claude corps", "1000", "培训", "奖学金", "年薪", "非营利"]);
+
+  const salesCommunity = firstRanked(community, ["客服", "销售", "订单", "成交", "gmv", "roi", "获客", "线索", "预约"], null, (item) => item.valueScore / 20 + item.opportunityScore / 30);
+  const sopCommunity = firstRanked(community, ["sop", "知识库", "obsidian", "飞书", "skills", "skill", "流程", "标准化", "复购"], null, (item) => item.valueScore / 20);
+  const codexCommunity = firstRanked(community, ["codex", "claude code", "做产品", "产品", "月入", "工作流", "一人公司"], null, (item) => item.opportunityScore / 20);
+  const infraCommunity = firstRanked(community, ["1000块", "基建", "codex", "vps", "gmail", "mac mini", "工具配置", "老板"], null, (item) => item.valueScore / 25);
+  const storyCommunity = firstRanked(community, ["75岁", "13岁", "05后", "父亲", "存款", "月入", "ai第一课", "诊所", "工作室"], null, (item) => item.valueScore / 20 + (numberHint(`${item.title} ${item.summary}`) ? 5 : 0));
+  const contentCommunity = firstRanked(community, ["内容agent工厂", "内容工程化", "虚拟电商", "公众号", "小红书", "出单", "搜索占比"], null, (item) => item.opportunityScore / 20);
+
+  const codexViewpoint = firstRanked(viewpoints, ["codex", "token consumption", "48 hours", "coding", "claude code", "cursor", "fortune 500", "60%"], null, (item) => item.engagement / 500);
+  const modelWorkViewpoint = firstRanked(viewpoints, ["fable", "complex work", "financial services", "healthcare", "legal", "多步", "一致"], null, (item) => item.engagement / 500);
+  const governanceViewpoint = firstRanked(viewpoints, ["governance", "accountable", "guardrails", "policy", "sabotaged", "security", "cluster"], null, (item) => item.engagement / 500);
+
+  const callNumber = numberHint(`${serviceCallSignal?.title || ""} ${serviceCallSignal?.fact || ""}`) || "90%";
+  const fundingNumber = numberHint(`${fundingSignal?.title || ""} ${fundingSignal?.fact || ""}`) || "120亿美元";
+
   return [
-    { title: `${subject} 改变的是哪一类企业判断`, note: `切口：从老板是否加预算、换供应商、调岗位或重做流程写起。商业落点：${topic.relevance}` },
-    { title: "这件事为什么不是普通新闻", note: `切口：找一条可验证动作，例如官方发布、客户采用、融资金额、采购入口或产品上线。当前证据：${topic.evidence}` },
-    { title: "能不能转成前台 Card", note: "切口：只判断证据是否足够支撑案例、产品、融资或观点卡，不写内部生产流程。" },
+    topicPayload({
+      engineId: "money_leak",
+      date,
+      title: `一个空调公司用 AI 接住 ${callNumber} 电话，老板们该醒醒了`,
+      core: "老板最该先看的不是模型参数，而是公司每天有没有订单入口在漏钱。",
+      relevance: "电话、客服、预约、销售跟进这类小岗位，直接连接收入，比泛泛 AI 工具更容易算账。",
+      bossPain: "旺季电话漏接、线索忘跟、预约登记错，都会变成真实订单损失。",
+      moneyLine: "先算少漏几个客户，再谈 AI 转型；接得住、记得准、转得动，就是收入入口的第一张账。",
+      oldFrame: "AI 是客服聊天机器人。",
+      newFrame: "AI 是能接住订单入口的小岗位员工。",
+      actionHint: "先盘点公司 3 个最容易漏单的入口：电话、表单、私信。",
+      businessSignals: [serviceCallSignal],
+      viewpoints: [],
+      communityItems: [salesCommunity],
+      scoreParts: { pain: 25, money: 25, buzz: 19, spread: 14, action: 9, style: 5 },
+      angles: [
+        { title: "开头用订单入口，不用 AI 功能", note: `第一句就写：电话不是电话，是订单入口。用 ${callNumber} 把老板拉进来。` },
+        { title: "中段拆一个预约岗位", note: "把接听、识别需求、确认地址、排师傅、同步订单拆成 5 步，说明 AI 为什么能先干这部分。" },
+        { title: "结尾落到小岗位 AI 员工", note: "不要喊智能化转型，落到“先少漏几个订单”。" },
+      ],
+    }),
+    topicPayload({
+      engineId: "save_headcount",
+      date,
+      title: "不是裁员，而是少招 3 个重复岗位：老板该先改造这些活",
+      core: "AI 真正进入企业，第一步不是替代整个人，而是接管岗位里的重复动作。",
+      relevance: "客服质检、资料整理、会议任务、报价初审这类工作，适合用 SOP 和知识库先跑起来。",
+      bossPain: "人越招越多，杂活没有变少，管理成本反而上来。",
+      moneyLine: "能少招一个重复岗位，或者让一个人少返工 30%，老板就愿意继续投入。",
+      oldFrame: "AI 上线就是裁员。",
+      newFrame: "AI 上线的第一阶段，是让公司少招重复岗位。",
+      actionHint: "把一个岗位每天重复超过 20 次的动作列出来，先挑 3 个标准动作交给 AI。",
+      businessSignals: [workflowSignal || serviceCallSignal],
+      viewpoints: [modelWorkViewpoint],
+      communityItems: [sopCommunity],
+      scoreParts: { pain: 23, money: 23, buzz: 16, spread: 13, action: 10, style: 5 },
+      angles: [
+        { title: "用岗位动作替代岗位名称", note: "不要写 AI 替代客服，写 AI 先替代接听、归档、质检、催办。" },
+        { title: "把省人写成管理账", note: "老板关心的不是炫技，是少招人、少返工、少培训。" },
+        { title: "给一个 10 步拆 3 步的方法", note: "结尾给老板一个小动作，方便转给团队执行。" },
+      ],
+    }),
+    topicPayload({
+      engineId: "peer_pressure",
+      date,
+      title: "你的同行已经用 AI 跑流程了，你还在让员工手动搬砖",
+      core: "最能触发老板的不是技术解释，而是同行已经把 AI 用在获客、内容、交付和产品上。",
+      relevance: "社群里的内容工厂、Codex 做产品、虚拟电商案例，说明 AI 正在从学习工具变成经营系统。",
+      bossPain: "对手开始用 AI 降低生产成本时，你还在用人工流程硬扛。",
+      moneyLine: "同行压力的核心不是焦虑，而是获客成本、交付成本和试错成本正在被重新定价。",
+      oldFrame: "AI 是员工自己研究的新工具。",
+      newFrame: "AI 是同行正在重做流程的生产系统。",
+      actionHint: "每天只问一个问题：同行哪一个流程已经被 AI 缩短了？",
+      businessSignals: [workflowSignal],
+      viewpoints: [codexViewpoint],
+      communityItems: [contentCommunity || codexCommunity],
+      scoreParts: { pain: 22, money: 22, buzz: 19, spread: 15, action: 8, style: 5 },
+      angles: [
+        { title: "用同行压力开头", note: "标题和开头都不要讲 AI 多强，要讲别人已经开始用 AI 跑流程。" },
+        { title: "拆获客、交付、产品三个场景", note: "每个场景只写一个真实动作，避免变成工具列表。" },
+        { title: "落到老板的例会问题", note: "建议老板每周让团队汇报一个被 AI 缩短的流程。" },
+      ],
+    }),
+    topicPayload({
+      engineId: "pitfall",
+      date,
+      title: "AI 员工不能先上岗后管理：老板最容易漏掉的是权限",
+      core: "Agent 能替你执行动作后，企业的核心问题从“会不会用”变成“谁来管”。",
+      relevance: "Cursor Auto-review、GitHub Enterprise Agent 治理和安全观点都指向同一件事：AI 员工需要权限、审计和责任边界。",
+      bossPain: "AI 一旦能读文件、调工具、改数据，错误不再只是内容不好，而是可能直接影响业务系统。",
+      moneyLine: "权限没管住，省下的人力钱可能会被一次数据事故吃掉。",
+      oldFrame: "AI 越自主越好。",
+      newFrame: "AI 越自主，越需要先设计权限和复核。",
+      actionHint: "先给 AI 员工分三级权限：只读、建议、可执行。",
+      businessSignals: [governanceSignal],
+      viewpoints: [governanceViewpoint],
+      communityItems: [infraCommunity || sopCommunity],
+      scoreParts: { pain: 22, money: 21, buzz: 18, spread: 13, action: 9, style: 5 },
+      angles: [
+        { title: "不要写安全科普，写老板责任", note: "老板不关心分类器模型，关心 AI 搞错后谁背锅。" },
+        { title: "把权限拆成人话", note: "只读、建议、执行三个等级，比讲治理框架更容易传播。" },
+        { title: "用反问推进", note: "难道 AI 能替你操作系统，你还不给它设边界？" },
+      ],
+    }),
+    topicPayload({
+      engineId: "counterintuitive",
+      date,
+      title: "真正值钱的不是 AI 工具，而是老板自己的工作流",
+      core: "同一个 AI 工具，放在清楚流程里是员工，放在混乱流程里就是玩具。",
+      relevance: "社群高价值案例集中在 Skill、Obsidian、飞书、知识库和 SOP，说明老板的私有流程资产正在变成核心生产资料。",
+      bossPain: "工具买了一堆，员工不用；员工用了，效果差；最后老板误判 AI 不行。",
+      moneyLine: "工具是支出，工作流是资产。支出会过期，资产能复用。",
+      oldFrame: "追最新 AI 工具。",
+      newFrame: "沉淀自己的流程、语料、SOP 和验收标准。",
+      actionHint: "先选一个业务动作，写清输入、步骤、验收标准，再接工具。",
+      businessSignals: [workflowSignal || trainingSignal],
+      viewpoints: [codexViewpoint],
+      communityItems: [sopCommunity],
+      scoreParts: { pain: 24, money: 23, buzz: 18, spread: 15, action: 10, style: 5 },
+      angles: [
+        { title: "先打脸工具崇拜", note: "开头写：买工具不是 AI 转型，能稳定交付结果才算。" },
+        { title: "中段用社群案例证明", note: "写 Skill、知识库、SOP 为什么比单个工具更耐用。" },
+        { title: "结尾给金句", note: "AI 工具不是资产，能反复跑通的流程才是资产。" },
+      ],
+    }),
+    topicPayload({
+      engineId: "small_role",
+      date,
+      title: "别做大平台，先做一个小岗位的 AI 员工",
+      core: "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位的具体痛点里。",
+      relevance: "今天的信号从 AI 语音客服、复杂企业流程自动化到受监管行业 AI 操作系统，都在证明岗位级 AI 正在成型。",
+      bossPain: "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
+      moneyLine: "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱。",
+      oldFrame: "做一个什么都能干的 AI 平台。",
+      newFrame: "做一个只干一件事但能交付的小岗位 AI 员工。",
+      actionHint: "先从客服、招投标、财务对账、销售跟进、会议催办里选一个。",
+      businessSignals: [serviceCallSignal, fundingSignal].filter(Boolean),
+      viewpoints: [],
+      communityItems: [sopCommunity || salesCommunity],
+      scoreParts: { pain: 25, money: 24, buzz: 18, spread: 15, action: 10, style: 5 },
+      angles: [
+        { title: "用小岗位对抗大平台", note: "这是最适合你现有表达的主线：不做大而全，先做小而深。" },
+        { title: "每个岗位给一个可验收结果", note: "客服看接通率，标书看漏项率，对账看差异报告，会议看任务闭环。" },
+        { title: "避免写成创业方向清单", note: "要写一个岗位打穿逻辑，不要罗列 10 个机会。" },
+      ],
+    }),
+    topicPayload({
+      engineId: "big_small_contrast",
+      date,
+      title: `有人 ${fundingNumber} 押注物理 AI，有人 1000 块帮老板装 Codex`,
+      core: "AI 赚钱分两层：顶层拼资本和研发，底层拼老板现场的配置、流程和交付。",
+      relevance: "大融资说明资本在押注长期方向；社群里的 AI 基建服务说明普通人可以从老板的第一步配置开始收钱。",
+      bossPain: "老板看不懂大融资，但愿意为“帮我把 AI 用起来”付第一笔小钱。",
+      moneyLine: "大厂赚基础设施的钱，小服务商赚落地第一公里的钱。",
+      oldFrame: "AI 创业只能跟大模型和融资有关。",
+      newFrame: "普通人的 AI 机会在帮老板跨过工具配置和流程落地门槛。",
+      actionHint: "把 AI 基建服务产品化：账号、网络、工具、知识库、一个工作流。",
+      businessSignals: [fundingSignal],
+      viewpoints: [codexViewpoint],
+      communityItems: [infraCommunity],
+      scoreParts: { pain: 21, money: 24, buzz: 20, spread: 15, action: 8, style: 5 },
+      angles: [
+        { title: "用大钱和小钱制造冲突", note: "大融资负责制造注意力，小服务负责让老板觉得和自己有关。" },
+        { title: "写出两套赚钱逻辑", note: "资本逻辑：长期技术押注；服务逻辑：帮老板完成第一公里。" },
+        { title: "落到可卖服务包", note: "账号配置、工具安装、知识库搭建、首个工作流，这是老板可理解的产品。" },
+      ],
+    }),
+    topicPayload({
+      engineId: "person_story",
+      date,
+      title: "75 岁 ISO 专家遇上 AI，我看到传统行业最大的机会",
+      core: "AI 普及不是让所有人学会新工具，而是把老专家几十年的经验变成可复用系统。",
+      relevance: "社群故事里的 200G 文件、15 万文档、认证材料和标准更新，比泛泛讲知识库更有传播画面。",
+      bossPain: "很多传统行业老板最大的资产不是软件，而是老员工、老专家、老资料，但这些资产正在散落和流失。",
+      moneyLine: "把经验沉淀成知识库和 SOP，等于把个人能力变成公司资产。",
+      oldFrame: "年纪大的人学不会 AI。",
+      newFrame: "AI 最该先服务那些经验很深、资料很多、流程很重的人。",
+      actionHint: "先把老专家的资料、模板、常见问题和交付流程整理成一个可问答知识库。",
+      businessSignals: [trainingSignal || workflowSignal],
+      viewpoints: [],
+      communityItems: [storyCommunity || sopCommunity],
+      scoreParts: { pain: 23, money: 21, buzz: 20, spread: 14, action: 9, style: 5 },
+      angles: [
+        { title: "用人物场景开头", note: "不要先讲知识库，先写 75 岁老专家还在手动整理认证文件。" },
+        { title: "把温情转成商业判断", note: "重点不是感动，而是传统行业的经验资产终于能系统化。" },
+        { title: "结尾回到老板资产", note: "老员工脑子里的经验，不沉淀就是个人能力，沉淀出来才是公司资产。" },
+      ],
+    }),
   ];
 }
 
-async function fetchArxiv(query, limit = 8) {
-  const url = `https://export.arxiv.org/api/query?search_query=${query}&sortBy=submittedDate&sortOrder=descending&max_results=${limit}`;
-  const xml = await fetchText(url);
-  return xml.split("<entry>").slice(1).map((entry, index) => {
-    const title = stripHtml(entry.match(/<title[^>]*>([\s\S]*?)<\/title>/u)?.[1]);
-    const summary = stripHtml(entry.match(/<summary[^>]*>([\s\S]*?)<\/summary>/u)?.[1]);
-    const link = stripHtml(entry.match(/<id[^>]*>([\s\S]*?)<\/id>/u)?.[1]);
-    const authors = [...entry.matchAll(/<name[^>]*>([\s\S]*?)<\/name>/gu)].slice(0, 3).map((match) => stripHtml(match[1])).join(", ");
-    return title ? { title, summary, link, authors, index } : null;
-  }).filter(Boolean);
-}
-
-/**
- * 每日推荐一篇AI编程/工具/实践类文章。
- * 面向vibecoding新手用户——更侧重编程助手、工具入门、实践指南。
- * 从 arXiv 程序语言/人机交互/AI 分类中抓取最新文章。
- */
-async function fetchRecommendedPaper(date) {
-  const papers = await fetchArxiv(
-    "(cat:cs.SE+OR+cat:cs.HC+OR+cat:cs.AI)+AND+abs:(code+generation+OR+copilot+OR+programming+assistant+OR+tutorial+OR+guide+OR+build+OR+prompt+OR+developer+tool+OR+LLM+OR+code+repair+OR+code+synthesis+OR+application+OR+demo+OR+how+to)",
-    20
-  );
-  if (!papers.length) return null;
-
-  const scored = papers.map((p) => {
-    const text = `${p.title} ${p.summary}`.toLowerCase();
-    let score = 0;
-    // 🔥 核心：vibecoding / AI编程实操类（最高加分）
-    if (/vibecode|vibe.?cod|copilot|code.?generat|code.?synthesis|programming.?assistant|ai.?assisted.?programming|ai.?programming|code.?complet|code.?repair|auto.?complet/i.test(text)) score += 5;
-    // 🎯 教程/入门/实战指南类
-    if (/tutorial|getting.?start|beginner|practical.?guide|how.?to|step.?by.?step|walkthrough|上手|入门|实践|指南|新手/i.test(text)) score += 5;
-    // 🛠 工具/框架/SDK 类
-    if (/tool|sdk|api|cli|framework|library|plugin|extension|ide|editor|workspace|开发工具|工具包/i.test(text)) score += 4;
-    // 💡 prompt工程/agent实操
-    if (/prompt.?engineer|prompt.?design|chain.?of.?thought|agent.?workflow|agent.?orchestrat|llm.?pipeline|多步推理|思维链/i.test(text)) score += 3;
-    // 🚀 应用构建/项目实战
-    if (/build|creat|develop|implement|deploy|application|project|demo|prototype|case.?study|构建|开发|部署|应用/i.test(text)) score += 3;
-    // 📊 有用数据/效果对比（但对新手加分不如上面的高）
-    if (/\d+[%x.]|improve|reduce|achieve|user.?stud|empirical|survey|comparison|评测|对比|调研/i.test(text)) score += 1;
-    // ❌ 太理论/数学多的扣分（不适合新手）
-    if (/theorem|lemma|proof|conjecture|mathematical|axiom|convergence|asymptotic|complexity.?class|computational.?complexity/i.test(text)) score -= 4;
-    // ❌ 纯benchmark/评测没有实操价值的减分
-    if (/benchmark.?suite|leaderboard|dataset.?curation/i.test(text)) score -= 1;
-    return { ...p, _score: score };
-  });
-  scored.sort((a, b) => b._score - a._score);
-  let best = scored[0];
-  // 质量门：arXiv 最佳论文是否命中 vibe 核心词？
-  // 如果只有 build/tool/application 等泛词，不算真正的 vibecoding 内容
-  const hasVibeSignal = best ? /vibecode|vibe.?cod|copilot|code.?generat|code.?synthesis|programming.?assistant|ai.?assisted.?programming|ai.?programming|code.?complet|code.?repair|tutorial|getting.?start|beginner|practical.?guide|how.?to|step.?by.?step/i.test(
-    `${best.title} ${best.summary}`.toLowerCase()
-  ) : false;
-  // 如果 arXiv 分数高但没命中 vibe 核心词，或者分数不够，都尝试 HN 回退
-  if (!best || !hasVibeSignal || best._score < 2) {
-    // arXiv 没有合适的——从 HN best 帖子里找编程实操/工具类内容
-    const hnStories = await fetchHnItems("beststories", 30);
-    const vibeStories = hnStories.filter((s) => {
-      const t = `${s.title} ${s.text || ""}`.toLowerCase();
-      return /ai|llm|gpt|claude|copilot|code|coding|programming|build|tool|tutorial|guide|开发|编程|工具|教程/i.test(t) &&
-        !/show hn/i.test(s.title);
-    });
-    if (vibeStories.length) {
-      const hnScored = vibeStories.map((s) => {
-        const t = `${s.title} ${s.text || ""}`.toLowerCase();
-        let score = 0;
-        if (/vibecode|vibe.?cod|copilot|code.?generat|programming.?assistant|ai.?assisted.?programming|ai.?programming|code.?complet/i.test(t)) score += 5;
-        if (/tutorial|getting.?start|beginner|how.?to|step.?by.?step|walkthrough|上手|入门|实践|指南/i.test(t)) score += 5;
-        if (/tool|sdk|api|cli|framework|plugin|extension|ide/i.test(t)) score += 4;
-        if (/prompt.?engineer|prompt.?design|agent.?workflow|chain.?of.?thought/i.test(t)) score += 3;
-        if (/build|creat|develop|deploy|application|project|demo|prototype/i.test(t)) score += 3;
-        if (/theorem|lemma|proof|mathematical|axiom|convergence/i.test(t)) score -= 4;
-        return { title: s.title, summary: s.text?.slice(0, 300) || s.title, link: s.url || `https://news.ycombinator.com/item?id=${s.id}`, authors: "Hacker News", _score: score };
-      });
-      hnScored.sort((a, b) => b._score - a._score);
-      best = hnScored[0];
-    }
-  }
-  // 最终检查：如果 best 还是 arXiv 的且没有 vibe 信号，放弃（不适合新手）
-  if (best && !hasVibeSignal && best.authors !== "Hacker News" && !/vibecode|vibe.?cod|copilot|code.?generat|tutorial|getting.?start|beginner|practical.?guide|how.?to/i.test(`${best.title} ${best.summary}`.toLowerCase())) {
-    return null;
-  }
-  if (!best || best._score < 2) return null;
-
-  return {
-    title: best.title.slice(0, 150),
-    summary: stripHtml(best.summary).replace(/\s+/g, ' ').trim().slice(0, 300),
-    url: best.link,
-    authors: best.authors,
-    date,
-  };
-}
-
-async function fetchHnItems(endpoint, limit = 20) {
-  const ids = await fetchJson(`https://hacker-news.firebaseio.com/v0/${endpoint}.json`);
-  if (!Array.isArray(ids)) return [];
-  const items = await Promise.all(ids.slice(0, limit).map((id) => fetchJson(`https://hacker-news.firebaseio.com/v0/item/${id}.json`)));
-  return items.filter((item) => item && item.type === "story" && item.title);
-}
-
-function hasIndustryRelevance(text) {
-  return /enterprise|deploy|startup|funding|revenue|acquisition|partner|market|business|customer|investment|regulation|policy|launch|product|competition|adoption|deployment|study|report|analysis|impact|cost|企业|部署|市场|融资|收购|监管|客户|供应商|预算|采购|生态|商业化|影响|报告|研究/iu.test(text);
-}
-
-async function fetchNewsApi(date) {
-  const results = [];
-  const apiKey = process.env.NEWSAPI_KEY;
-  if (apiKey) {
-    const url = `https://newsapi.org/v2/everything?q=AI+enterprise+OR+AI+business&language=en&sortBy=publishedAt&pageSize=5&apiKey=${apiKey}`;
-    const data = await fetchJson(url);
-    if (data?.articles?.length) {
-      data.articles.slice(0, 5).forEach((article, index) => {
-        const title = stripHtml(article.title || "").slice(0, 120);
-        if (!title || !hasAiSignal(title)) return;
-        results.push({
-          baseId: `newsapi-${slug(title)}`,
-          title,
-          type: "news",
-          audience: "企业决策者 / 投资人",
-          core: stripHtml(article.description || article.title || "").slice(0, 220),
-          relevance: "全球商业新闻，反映AI产业链融资、合作、监管、竞争动态。",
-          evidence: `NewsAPI · ${article.source?.name || "News"} · ${(article.publishedAt || date).slice(0, 10)}`,
-          source: article.source?.name || "Business News",
-          subSource: article.source?.name || "Business News",
-          url: article.url || "",
-          date: (article.publishedAt || date).slice(0, 10),
-          score: 83 - index,
-        });
-      });
-    }
-  }
-  return results;
-}
-
-async function fetchOfficialBlogs(date) {
-  const results = [];
-  const blogs = [
-    { name: "OpenAI", url: "https://openai.com/blog", filter: /ai|model|gpt|o3|agent|research|launch|release/siu },
-    { name: "Google AI", url: "https://blog.google/technology/ai/", filter: /ai|model|gemini|agent|research|launch/siu },
-    { name: "Meta AI", url: "https://ai.meta.com/blog/", filter: /ai|model|llama|agent|research/siu },
-    { name: "DeepMind", url: "https://deepmind.google/blog/", filter: /ai|model|agent|research|discover/siu },
-  ];
-
-  for (const blog of blogs) {
-    const html = await fetchText(blog.url);
-    const matches = [...html.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/gu)];
-    matches.slice(0, 3).forEach((match, index) => {
-      const title = stripHtml(match[1]);
-      if (!title || !blog.filter.test(title)) return;
-      results.push({
-        baseId: `${slug(blog.name)}-${slug(title)}`,
-        title: title.slice(0, 120),
-        type: "official",
-        audience: "AI 行业从业者 / 投资人",
-        core: `${blog.name} 官方博客：${title}`,
-        relevance: "头部 AI 公司官方发布，直接反映产品路线和战略方向。",
-        evidence: blog.name,
-        source: blog.name,
-        subSource: blog.name,
-        url: blog.url,
-        date,
-        score: 85 - index,
-      });
-    });
-  }
-  return results;
-}
-
-async function fetchIndustryChain(date) {
-  const results = [];
-  const papers = await fetchArxiv("cat:cs.AI+AND+abs:agent+AND+abs:(business+OR+enterprise+OR+deploy+OR+market)", 12);
-  papers.slice(0, 5).forEach((paper, index) => {
-    results.push({
-      baseId: `arxiv-${slug(paper.title)}`,
-      title: paper.title.slice(0, 120),
-      type: "research",
-      audience: "AI 战略负责人 / 企业 CTO",
-      core: paper.summary.slice(0, 220),
-      relevance: /business|enterprise|deploy|market|industry|cost|customer/iu.test(paper.summary) ? "有产业应用指向，适合判断企业 AI 预算流向。" : "偏学术理论，需要补商业验证才能进入正式选题。",
-      evidence: `arXiv 论文 · ${paper.authors || "多作者"}`,
-      source: "arXiv",
-      subSource: "arXiv",
-      url: paper.link,
-      date,
-      score: 76 - index,
-    });
-  });
-
-  const hnItems = await fetchHnItems("topstories", 50);
-  hnItems
-    .filter((item) => hasStrongAiTitle(item.title) && hasIndustryRelevance(`${item.title} ${item.text || ""}`)
-      || (/\bai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
-    .slice(0, 12)
-    .forEach((item, index) => {
-      results.push({
-        baseId: `hn-${item.id}`,
-        title: item.title.slice(0, 120),
-        type: "discussion",
-        audience: "AI 从业者 / 技术决策者",
-        core: stripHtml(item.text || item.title).slice(0, 220),
-        relevance: "Hacker News 社区高活跃讨论，反映产业焦点和开发者早期反馈。",
-        evidence: `Hacker News · ${item.score || "?"} points · ${item.by || "anonymous"}`,
-        source: "Hacker News",
-        subSource: "Hacker News",
-        url: `https://news.ycombinator.com/item?id=${item.id}`,
-        date: item.time ? new Date(item.time * 1000).toISOString().slice(0, 10) : date,
-        score: Math.min(91, 78 + Math.floor((item.score || 0) / 80) - index),
-      });
-    });
-
-  const blogHtml = await fetchText("https://www.anthropic.com/engineering");
-  [...blogHtml.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/gu)].slice(0, 4).forEach((match, index) => {
-    const title = stripHtml(match[1]);
-    if (!/(ai|agent|model|deploy|safety|enterprise|claude)/iu.test(title)) return;
-    results.push({
-      baseId: `anthropic-${slug(title)}`,
-      title: title.slice(0, 120),
-      type: "official",
-      audience: "AI 行业从业者 / 投资分析师",
-      core: `Anthropic 官方工程博客文章：${title}`,
-      relevance: "头部 AI 公司工程实践反映行业瓶颈和突破方向。",
-      evidence: "Anthropic Engineering Blog",
-      source: "Anthropic Blog",
-      subSource: "Anthropic Blog",
-      url: "https://www.anthropic.com/engineering",
-      date,
-      score: 86 - index,
-    });
-  });
-
-  // Source 2 新增：头部AI公司官方Blog RSS
-  const officialBlogs = await fetchOfficialBlogs(date);
-  results.push(...officialBlogs);
-
-  // Source 2 新增：NewsAPI 全球商业新闻
-  const newsApi = await fetchNewsApi(date);
-  results.push(...newsApi);
-
-  return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 12).map((item, index) => toTopic("industry_chain", item, index, date));
-}
-
-async function fetchBuilders(date) {
-  const results = [];
-  const followBuilders = await fetchFollowBuildersFeeds();
-  results.push(...followBuilderBlogItems(followBuilders.blogs, date).slice(0, 5));
-  results.push(...followBuilderTweetItems(followBuilders.x, date).filter((item) => hasBuilderSignal(`${item.title} ${item.core}`)).slice(0, 8));
-
-  const repoSearch = await fetchJson("https://api.github.com/search/repositories?q=topic:llm+OR+topic:ai-agent+OR+topic:artificial-intelligence&sort=updated&order=desc&per_page=15");
-  if (Array.isArray(repoSearch?.items)) {
-    repoSearch.items.slice(0, 8).forEach((repo) => {
-      results.push({
-        baseId: `github-api-${repo.full_name}`,
-        title: `${repo.full_name}: ${repo.description || "AI repository"}`.slice(0, 120),
-        type: "open-source",
-        audience: "开发者 / CTO",
-        core: repo.description || "GitHub AI 仓库近期更新。",
-        relevance: "GitHub 仓库更新适合观察开源工具链、Agent 框架和开发者采用方向。",
-        evidence: `GitHub · ${repo.stargazers_count || 0} stars · updated ${repo.updated_at?.slice(0, 10) || date}`,
-        source: "GitHub API",
-        subSource: "GitHub API",
-        url: repo.html_url,
-        date: repo.updated_at?.slice(0, 10) || date,
-        score: Math.min(91, 78 + Math.floor((repo.stargazers_count || 0) / 3000)),
-      });
-    });
-  }
-
-  const trendingHtml = await fetchText("https://github.com/trending?since=daily");
-  trendingHtml.split("<article").slice(1, 18).forEach((block) => {
-    const href = block.match(/href=["']\/([^\/"]+\/[^\/"]+?)["']/u)?.[1];
-    const desc = stripHtml(block.match(/<p[^>]*>([\s\S]*?)<\/p>/u)?.[1]);
-    const stars = Number((block.match(/(\d[\d,]*)\s+stars/iu)?.[1] || "0").replace(/,/gu, ""));
-    if (!href || !hasBuilderSignal(`${href} ${desc}`)) return;
-    const [owner, repo] = href.split("/");
-    results.push({
-      baseId: `github-${slug(href)}`,
-      title: `${owner}/${repo}: ${desc || "GitHub 今日热门 AI 仓库"}`.slice(0, 120),
-      type: "open-source",
-      audience: "开发者 / CTO",
-      core: desc || "GitHub 今日热门 AI 仓库。",
-      relevance: `开发者社区关注度风向，适合观察工具链、插件生态和早期采用。`,
-      evidence: `GitHub Trending · ${stars || "?"} stars · ${owner}`,
-      source: "GitHub Trending",
-      subSource: "GitHub Trending",
-      url: `https://github.com/${href}`,
-      date,
-      score: Math.min(90, 74 + Math.floor(stars / 120)),
-    });
-  });
-
-  const showItems = await fetchHnItems("showstories", 35);
-  showItems
-    .filter((item) => hasBuilderSignal(`${item.title} ${item.text || ""}`))
-    .slice(0, 15)
-    .forEach((item, index) => {
-      results.push({
-        baseId: `showhn-${item.id}`,
-        title: item.title.slice(0, 120),
-        type: "showcase",
-        audience: "开发者 / 产品经理",
-        core: stripHtml(item.text || item.title).slice(0, 220),
-        relevance: "Show HN 是新产品和开源工具的早期发现渠道。",
-        evidence: `Show HN · ${item.score || "?"} points · ${item.by || ""}`,
-        source: "Show HN",
-        subSource: "Show HN",
-        url: `https://news.ycombinator.com/item?id=${item.id}`,
-        date: item.time ? new Date(item.time * 1000).toISOString().slice(0, 10) : date,
-        score: Math.min(88, 73 + Math.floor((item.score || 0) / 60) - index),
-      });
-    });
-
-  const blogs = [
-    { name: "OpenAI Developers", url: "https://developers.openai.com/" },
-    { name: "Anthropic Engineering", url: "https://www.anthropic.com/engineering" },
-    { name: "Vercel Blog", url: "https://vercel.com/blog" },
-  ];
-  for (const blog of blogs) {
-    const html = await fetchText(blog.url);
-    const title = stripHtml(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/u)?.[1] || html.match(/<title[^>]*>([\s\S]*?)<\/title>/u)?.[1]);
-    if (!title) continue;
-    results.push({
-      baseId: `${slug(blog.name)}-${slug(title)}`,
-      title: title.slice(0, 120),
-      type: "developer-blog",
-      audience: "开发者 / 产品负责人",
-      core: `${blog.name} 最新页面标题：${title}`,
-      relevance: "开发者博客更新适合观察工具链、API、部署方式和生态接口变化。",
-      evidence: blog.name,
-      source: blog.name,
-      subSource: blog.name,
-      url: blog.url,
-      date,
-      score: 82,
-    });
-  }
-
-  return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 5).map((item, index) => toTopic("builders", item, index, date));
-}
-
-async function fetchViralRewrites(date) {
-  const results = [];
-  const followBuilders = await fetchFollowBuildersFeeds();
-  results.push(...followBuilderTweetItems(followBuilders.x, date).slice(0, 12).map((item) => ({
-    ...item,
-    type: "builder-viewpoint",
-    audience: "企业老板 / 媒体编辑",
-    relevance: "高互动 Builder 观点，适合改写成企业能理解的商业冲突和判断题。",
-    score: Math.min(95, item.score + 2),
-  })));
-
-  const topItems = await fetchHnItems("topstories", 50);
-  topItems
-    .filter((item) => hasStrongAiTitle(item.title) || (/\bai\b|openai|anthropic/iu.test(`${item.title} ${item.text || ""}`) && hasAiSignal(`${item.title} ${item.text || ""}`)))
-    .slice(0, 12)
-    .forEach((item, index) => {
-      results.push({
-        baseId: `viral-hn-${item.id}`,
-        title: item.title.slice(0, 120),
-        type: "hot-topic",
-        audience: "企业老板 / 媒体编辑",
-        core: stripHtml(item.text || item.title).slice(0, 220),
-        relevance: `HN ${item.score || "?"} points，高传播力，可改写成商业冲突叙事。`,
-        evidence: `Hacker News · ${item.score || "?"} points · ${item.by || ""}`,
-        source: "HN 热门",
-        subSource: "HN 热门",
-        url: `https://news.ycombinator.com/item?id=${item.id}`,
-        date: item.time ? new Date(item.time * 1000).toISOString().slice(0, 10) : date,
-        score: Math.min(94, 82 + Math.floor((item.score || 0) / 90) - index),
-      });
-    });
-
-  const papers = await fetchArxiv("cat:cs.AI+AND+abs:(agent+OR+LLM+OR+robot+OR+safety)", 12);
-  papers.slice(0, 5).forEach((paper, index) => {
-    results.push({
-      baseId: `viral-arxiv-${slug(paper.title)}`,
-      title: paper.title.slice(0, 120),
-      type: "breakthrough",
-      audience: "AI 从业者 / 投资人",
-      core: `前沿论文：${paper.summary.slice(0, 220)}`,
-      relevance: "学术突破常被简化为热点标题，适合改写成企业能理解的商业冲突。",
-      evidence: "arXiv preprint",
-      source: "arXiv 热点",
-      subSource: "arXiv 热点",
-      url: paper.link,
-      date,
-      score: 81 - index,
-    });
-  });
-
-  return dedupe(results).sort((a, b) => b.score - a.score).slice(0, 5).map((item, index) => toTopic("viral_rewrite", item, index, date));
-}
-
-function dedupe(items) {
+function dedupeTopics(topics) {
   const seen = new Set();
-  return items.filter((item) => {
-    const key = slug(item.url || item.title);
-    if (!item.title || seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-}
-
-/**
- * 加载前一天的 topic-center.json，构建跨天去重 key 集合。
- * 仅当已有数据且日期不同于当前日期时生效（避免同一天重复跑时误杀）。
- */
-function loadPreviousDedupKeys(date) {
-  const previous = readLocalJson(topicCenterJsonPath, null);
-  if (!previous || !previous.meta?.date || previous.meta.date === date) {
-    return new Set(); // 无历史数据 或 同一天已跑过 — 跳过跨天去重
-  }
-  const keys = new Set();
-  const collect = (item) => {
-    if (item.baseId) keys.add(`id:${item.baseId}`);
-    if (item.url) keys.add(`url:${slug(item.url)}`);
-    if (item.title) keys.add(`title:${slug(item.title)}`);
-  };
-  // 从历史 events 中采集
-  list(previous.grouped?.events).forEach(collect);
-  // 从历史 viewpoints 中采集（含合并前的原始 URL）
-  list(previous.grouped?.viewpoints).forEach((vp) => {
-    collect(vp);
-    if (Array.isArray(vp.originalUrls)) {
-      vp.originalUrls.forEach((url) => { if (url) keys.add(`url:${slug(url)}`); });
-    }
-  });
-  console.log(`[cross-day-dedup] loaded ${keys.size} dedup keys from ${previous.meta.date}`);
-  return keys;
-}
-
-/**
- * 跨天去重过滤器：从 items 中移除与 previousKeys 匹配的项。
- */
-function crossDayDedupe(items, previousKeys) {
-  if (!previousKeys || previousKeys.size === 0) return items;
-  const before = items.length;
-  const filtered = items.filter((item) => {
-    const itemKeys = [];
-    if (item.baseId) itemKeys.push(`id:${item.baseId}`);
-    if (item.url) itemKeys.push(`url:${slug(item.url)}`);
-    if (item.title) itemKeys.push(`title:${slug(item.title)}`);
-    return !itemKeys.some((key) => previousKeys.has(key));
-  });
-  const removed = before - filtered.length;
-  if (removed > 0) console.log(`[cross-day-dedup] filtered ${removed}/${before} items`);
-  return filtered;
-}
-
-function mergeViewpoints(builders, viralRewrite) {
-  // 跨源去重：按 URL slug 去重
-  const seen = new Set();
-  const allItems = [...builders, ...viralRewrite].filter((item) => {
-    const key = slug(item.url || item.title);
+  return topics.filter((topic) => {
+    const key = slug(topic.title);
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
   });
-
-  // 按人物（subSource）分组
-  const groups = {};
-  for (const item of allItems) {
-    const person = item.subSource || item.source || item.title.split(/[:：]/u)[0] || "unknown";
-    if (!groups[person]) groups[person] = [];
-    groups[person].push(item);
-  }
-
-  // 按最高分排序，取前3人
-  const sorted = Object.entries(groups)
-    .map(([person, items]) => {
-      const best = items.sort((a, b) => b.score - a.score)[0];
-      return { person, items, score: best.score, best };
-    })
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3);
-
-  return sorted.map((group, index) => {
-    const primary = group.best;
-    // 同一个人多条观点 → 合并标题
-    const mergedTitle = group.items.length > 1
-      ? group.person + "：" + group.items.map((item) => {
-          const prefix = group.person + "：";
-          const prefix2 = group.person + ": ";
-          const t = item.title;
-          return t.startsWith(prefix) ? t.slice(prefix.length)
-            : t.startsWith(prefix2) ? t.slice(prefix2.length)
-            : t;
-        }).join(" / ")
-      : primary.title;
-
-    return {
-      ...primary,
-      id: `viewpoint-${slug(group.person)}-${index + 1}`,
-      title: mergedTitle,
-      mergedCount: group.items.length,
-      originalUrls: group.items.map((item) => item.url).filter(Boolean),
-    };
-  });
 }
 
-/**
- * 识别事件所属的公司/组织簇，用于多样性过滤。
- */
-function companyCluster(item) {
-  const url = text(item.url || '');
-  const source = text(item.source || item.subSource || '');
-  const title = text(item.title || '');
-
-  // 标题中提到的公司名（用于 URL 不直接反映公司归属的情况）
-  if (/\banthropic\b/i.test(title) && !/hacker news/i.test(source)) return 'Anthropic';
-  if (/\b(openai|chatgpt|gpt-?5)\b/i.test(title)) return 'OpenAI';
-  if (/\b(claude\b.*\bcode|claude code)\b/i.test(title)) return 'Anthropic';
-
-  // 按 URL/来源 判断
-  if (/anthropic\.com/i.test(url) || /anthropic/i.test(source)) return 'Anthropic';
-  if (/openai\.com/i.test(url) || /openai/i.test(source)) return 'OpenAI';
-  if (/(research|blog|deepmind)\.?google/i.test(url) || /google ai|deepmind/i.test(source)) return 'Google';
-  if (/ai\.meta\.com/i.test(url) || /meta ai/i.test(source)) return 'Meta';
-  if (/nvidia/i.test(url) || /nvidia/i.test(source) || /nvidia/i.test(title)) return 'NVIDIA';
-  if (/microsoft/i.test(url) || /microsoft/i.test(source)) return 'Microsoft';
-  if (/amazon|aws/i.test(url) || /amazon|aws/i.test(source)) return 'Amazon';
-  if (/techcrunch|reuters|bloomberg|wired|theverge|arstechnica/i.test(url)) return 'Media';
-
-  // 社区/开源/研究 — 这些是多样性来源，不合并
-  if (/news\.ycombinator/i.test(url) || /hacker news/i.test(source)) return 'Community';
-  if (/github/i.test(url) || /github/i.test(source)) return 'OpenSource';
-  if (/arxiv/i.test(url) || /arxiv/i.test(source)) return 'Research';
-  if (/follow builders/i.test(source)) return 'Builder';
-  if (/newsapi/i.test(source)) return 'News';
-
-  return 'Other';
+function sourceCounts(topics) {
+  return Object.fromEntries(engines.map((engine) => [engine.id, topics.filter((topic) => topic.sourceId === engine.id).length]));
 }
 
-/**
- * 多样性过滤+大厂合并：选出恰好10条事件。
- * 规则：
- *   1. 大厂（Anthropic/Google/OpenAI/Meta/NVIDIA/Microsoft/Amazon）最多1条，多条则合并标题+摘要
- *   2. 非大厂簇最多 maxPerCluster 条
- *   3. 预留 diversityQuota 个名额给非大厂簇
- *   4. 优先选取含行业应用/融资/创业的内容
- */
-function diversifyEvents(candidates, maxPerCluster = 2, diversityQuota = 4) {
-  const BIG_TECH = new Set(['Anthropic', 'OpenAI', 'Google', 'Meta', 'NVIDIA', 'Microsoft', 'Amazon']);
+function main() {
+  const businessData = readJson(businessSignalsPath, {});
+  const firstLineData = readJson(firstLinePath, {});
+  const date = argValue("date", text(businessData.meta?.activeDate || businessData.meta?.date || todayStr()));
+  const communityDailyPath = path.join(siteDataDir, "community-intelligence-daily", `${date}.json`);
+  const communityData = readJson(communityDailyPath, readJson(communityPath, {}));
 
-  // 1. 按簇分组，大厂合并
-  const clusters = {};
-  for (const item of candidates) {
-    const c = companyCluster(item);
-    if (!clusters[c]) clusters[c] = [];
-    clusters[c].push(item);
-  }
+  const businessSource = list(businessData.cards).length ? list(businessData.cards) : list(businessData.top10 || businessData.frontstageCards);
+  const sameDateSignals = businessSource
+    .map(normalizeBusinessSignal)
+    .filter((item) => !businessData.meta?.activeDate || date === text(item.raw.date || businessData.meta.activeDate || date));
+  const signals = sameDateSignals.length ? sameDateSignals : list(businessData.top10 || businessData.frontstageCards).map(normalizeBusinessSignal);
 
-  const merged = [];
-  for (const [cluster, items] of Object.entries(clusters)) {
-    items.sort((a, b) => b.score - a.score);
-    if (BIG_TECH.has(cluster) && items.length > 1) {
-      // 合并：标题用" / "连接，取最高分项的 core/originalSummary
-      const primary = items[0];
-      const mergedTitle = items.map((item) => {
-        const t = item.title.split(/[：:]/u).pop() || item.title;
-        return t;
-      }).join(' / ');
-      merged.push({
-        ...primary,
-        id: primary.id + '-merged',
-        title: cluster + '：' + mergedTitle,
-        mergedCount: items.length,
-      });
-    } else {
-      merged.push(...items);
-    }
-  }
+  const viewpoints = list(firstLineData.remarks)
+    .map(normalizeViewpoint)
+    .sort((a, b) => b.engagement - a.engagement);
 
-  // 2. 分大厂/非大厂排序
-  const nonBigTech = merged.filter((item) => !BIG_TECH.has(companyCluster(item)))
-    .sort((a, b) => b.score - a.score);
-  const bigTech = merged.filter((item) => BIG_TECH.has(companyCluster(item)))
+  const community = list(communityData.items)
+    .map(normalizeCommunity)
+    .sort((a, b) => (b.valueScore + b.opportunityScore) - (a.valueScore + a.opportunityScore));
+
+  const topics = dedupeTopics(buildTopicSet({ date, signals, viewpoints, community }))
     .sort((a, b) => b.score - a.score);
 
-  const result = [];
-  const clusterCount = {};
-
-  // 3. 阶段1：非大厂配额
-  for (const item of nonBigTech) {
-    const cluster = companyCluster(item);
-    if ((clusterCount[cluster] || 0) >= maxPerCluster) continue;
-    clusterCount[cluster] = (clusterCount[cluster] || 0) + 1;
-    result.push(item);
-    if (result.length >= diversityQuota) break;
-  }
-
-  // 4. 阶段2：大厂（每簇最多1条）
-  for (const item of bigTech) {
-    if (result.length >= 10) break;
-    const cluster = companyCluster(item);
-    if ((clusterCount[cluster] || 0) >= 1) continue;
-    clusterCount[cluster] = (clusterCount[cluster] || 0) + 1;
-    result.push(item);
-  }
-
-  // 5. 阶段3：从剩余非大厂填充到10条
-  if (result.length < 10) {
-    const used = new Set(result.map((item) => item.id));
-    for (const item of nonBigTech) {
-      if (used.has(item.id)) continue;
-      const cluster = companyCluster(item);
-      if ((clusterCount[cluster] || 0) >= maxPerCluster) continue;
-      clusterCount[cluster] = (clusterCount[cluster] || 0) + 1;
-      result.push(item);
-      if (result.length >= 10) break;
-    }
-  }
-
-  return result;
-}
-
-async function buildTopics(content, date, previousKeys) {
-  let [rawPool, industryChain, builders, viralRewrite] = await Promise.all([
-    Promise.resolve(rawPoolTopics(content, date)),
-    fetchIndustryChain(date),
-    fetchBuilders(date),
-    fetchViralRewrites(date),
-  ]);
-  // 跨天去重：移除与前一天重复的项
-  if (previousKeys && previousKeys.size > 0) {
-    rawPool = crossDayDedupe(rawPool, previousKeys);
-    industryChain = crossDayDedupe(industryChain, previousKeys);
-    builders = crossDayDedupe(builders, previousKeys);
-    viralRewrite = crossDayDedupe(viralRewrite, previousKeys);
-  }
-  return {
-    sources: sourceDefinitions(),
-    topics: [...rawPool, ...industryChain, ...builders, ...viralRewrite],
-    rawPool,
-    industryChain,
-    builders,
-    viralRewrite,
-  };
-}
-
-async function main() {
-  const siteContent = readJson(siteContentPath, {});
-  const fallbackDate = text(siteContent.meta?.date).replaceAll(".", "-") || todayStr();
-  const date = argValue("date", fallbackDate);
-  // 先加载历史数据做跨天去重（必须在生成新数据之前）
-  const previousKeys = loadPreviousDedupKeys(date);
-  const { sources, topics, rawPool, industryChain, builders, viralRewrite } = await buildTopics(siteContent, date, previousKeys);
-  const counts = Object.fromEntries(sources.map((source) => [source.id, topics.filter((topic) => topic.sourceId === source.id).length]));
-  const viewpoints = mergeViewpoints(builders, viralRewrite);
-  // 公司多样性过滤：同一公司簇最多2条
-  const allEventCandidates = [...rawPool, ...industryChain];
-  const diversifiedEvents = diversifyEvents(allEventCandidates, 2);
-  // 推荐论文：今日AI研究文章
-  let recommendedPaper = await fetchRecommendedPaper(date);
-  // 去重检查：论文标题不能和事件明显重复
-  if (recommendedPaper) {
-    const paperWords = new Set(recommendedPaper.title.toLowerCase().split(/[^a-z0-9\u4e00-\u9fff]+/).filter(Boolean));
-    const isDup = diversifiedEvents.some((evt) => {
-      const evtWords = new Set((evt.title || '').toLowerCase().split(/[^a-z0-9\u4e00-\u9fff]+/).filter(Boolean));
-      const overlap = [...paperWords].filter((w) => evtWords.has(w) && w.length > 1).length;
-      return paperWords.size > 0 && overlap / paperWords.size > 0.6;
-    });
-    if (isDup) {
-      console.log(`[dedup] paper "${recommendedPaper.title.slice(0, 60)}" overlaps with event — skipping`);
-      recommendedPaper = null;
-    }
-  }
   const data = {
     meta: {
       version: topicCenterVersion,
       date,
       generatedAt: new Date().toISOString(),
-      source: "external-source-algorithms",
-      rule: "raw_pool_plus_external_sources_five_each",
-      lockedAs: "ops-topic-center-v1.1.1",
-      sources: counts,
-      recommendedPaper,
+      source: "business-signals + first-line-viewpoints + community-intelligence",
+      rule: "boss_decision_topic_engine",
+      ruleLabel: "老板决策型选题机制",
+      updateMechanism: "每日 Business Signals 链路第 9 步运行，读取本地三类日更数据，确定性生成选题。",
+      scoring: {
+        bossPain: 25,
+        moneyRelation: 25,
+        talkability: 20,
+        spreadability: 15,
+        actionability: 10,
+        styleFit: 5,
+      },
+      inputCounts: {
+        businessSignals: signals.length,
+        firstLineViewpoints: viewpoints.length,
+        communityItems: community.length,
+      },
+      sources: sourceCounts(topics),
+      leadTopicId: topics[0]?.id || "",
     },
-    sources,
+    sources: engines,
     topics,
     grouped: {
-      events: diversifiedEvents,
-      viewpoints,
+      lead: topics[0] || null,
+      byEngine: Object.fromEntries(engines.map((engine) => [engine.id, topics.filter((topic) => topic.sourceId === engine.id)])),
     },
   };
 
   writeJson(topicCenterJsonPath, data);
   fs.writeFileSync(topicCenterJsPath, `window.WaveSightTopicCenter = ${JSON.stringify(data, null, 2)};\n`, "utf8");
-  console.log(`topic-center generated: ${topics.length} topics -> ${path.relative(root, topicCenterJsonPath)}`);
-  console.log(JSON.stringify(counts));
+  console.log(`topic-center generated: ${topics.length} boss topics -> ${path.relative(root, topicCenterJsonPath)}`);
+  console.log(JSON.stringify(data.meta.inputCounts));
 }
 
-main().catch((error) => {
-  console.error(`[topic-center] ${error.message}`);
-  process.exit(1);
-});
+main();
