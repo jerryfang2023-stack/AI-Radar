@@ -21,6 +21,7 @@
     "health:monthly": "node agent-workflow/tools/write-monthly-maintenance-report.mjs",
     "recover:daily": "node agent-workflow/tools/dispatch-daily-recovery.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
+    "export:aip-topic-md": "node agent-workflow/tools/export-topic-center-to-aip-md.mjs",
     "build:skill-registry": "node agent-workflow/tools/build-skill-registry.mjs",
     "check:skill-ops": "node agent-workflow/tools/check-skill-ops.mjs",
     "validate:guanlan-skills": "node agent-workflow/tools/validate-guanlan-skills.mjs",
