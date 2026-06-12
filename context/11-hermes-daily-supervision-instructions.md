@@ -47,6 +47,18 @@ Hermes should read the complete boss-topic table from GitHub, not a Top 3 summar
 
 The JSON contract is `readMode: all_topics`. Hermes should consume every item in `topics[]`, preserving `rank`, `score`, `sourceName`, `title`, `bossPain`, `moneyLine`, `actionHint`, and `evidenceBoundary`.
 
+Each topic also carries source material for follow-up processing:
+
+```text
+topics[].rawMaterials[]
+```
+
+Hermes should preserve `materialId`, `kind`, `id`, `role`, `title`, `source`, `url`, `note`, `localDataPath`, and `verificationUse`.
+
+- `role: fact_base` / `verificationUse: fact_base`: can be used as the factual base.
+- `role: viewpoint_lead` or `community_lead`: only use as demand, scene, or spreadability leads unless separately verified.
+- `localDataPath` points Hermes back to the GitHub data file and item id that supplied the material.
+
 When the Hermes Daily Brief is generated, the same complete topic table is also embedded under:
 
 ```text
