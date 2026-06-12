@@ -30,7 +30,7 @@ For detailed chain work, load the narrower skill:
 - `agent-workflow/skills/guanlan-raw-pool-card/SKILL.md`
 - `agent-workflow/skills/guanlan-trend-candidate-writer/SKILL.md`
 
-For regression prevention, read `evals/business-signals-monitor-evals.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing Top10, frontstage selection, or title-derived public fields, also read `examples/good-top10-contract.md` and `examples/bad-top10-missing.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 
 ## Workflow
 

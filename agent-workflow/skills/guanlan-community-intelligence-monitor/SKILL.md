@@ -26,7 +26,7 @@ For implementation detail, read:
 - `01-SiteV2/site/scripts/collect-community-intelligence.mjs`
 - `01-SiteV2/site/scripts/archive-community-intelligence.mjs`
 
-For regression prevention, read `evals/community-intelligence-monitor-evals.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+For regression prevention, read `evals/community-intelligence-monitor-evals.md`. When repairing lead handling or cross-lane promotion boundaries, also read `examples/good-community-lead.md` and `examples/bad-unverified-fact-promotion.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 
 ## Workflow
 

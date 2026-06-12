@@ -35,6 +35,10 @@ Do not mirror runtime caches, package installs, generated feeds, `node_modules`,
 - `guanlan-skill-editor`
 - `follow-builders`
 
+## Registry
+
+- `skill-registry.md` indexes the current lane owner, upstream / downstream boundary, main gates, eval coverage, latest reusable learning, and whether the skill is mirrored in `.skill-store`.
+
 ## Update Rule
 
 When a mirrored skill changes in `.skill-store`, copy the same scoped rule assets here and validate the mirrored folder. If the project mirror and `.skill-store` conflict, treat `.skill-store` as the installed runtime source and update this mirror before committing.

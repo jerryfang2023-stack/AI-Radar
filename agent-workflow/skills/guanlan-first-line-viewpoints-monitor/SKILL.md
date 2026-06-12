@@ -27,7 +27,7 @@ For implementation detail, read:
 - `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs`
 - `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs`
 
-For regression prevention, read `evals/first-line-viewpoints-monitor-evals.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+For regression prevention, read `evals/first-line-viewpoints-monitor-evals.md`. When repairing translation or timeline sync, also read `examples/good-timeline-entry.md` and `examples/bad-untranslated-remark.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 
 ## Workflow
 

@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T14:09:54.125Z",
+  "generated_at": "2026-06-12T14:49:15.653Z",
   "date": "2026-06-12",
   "action": "Column monitor skills",
   "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Executed P0 skill ownership fixes: created lane-specific monitor skills, aligned and mirrored guanlan-daily-monitor to V3.3.5 thresholds, updated current context skill paths, and closed the duplicate Top10 Hermes inbox item.",
+  "summary": "Upgraded operations Skill Store into a Skill Ops dashboard backed by skill-registry, generated local skill data, sync coverage, lane owner status, and governance filters.",
   "contexts": [],
   "changed_files": [],
   "outputs": [
-    "agent-workflow/skills/guanlan-business-signals-monitor; agent-workflow/skills/guanlan-first-line-viewpoints-monitor; agent-workflow/skills/guanlan-community-intelligence-monitor; agent-workflow/skills/guanlan-daily-monitor; agent-workflow/inbox/hermes-to-codex/2026-06-12-business-signals-top10-recurring.md"
+    "01-SiteV2/site/local-skill-store.html; 01-SiteV2/site/assets/local-skill-store.js; 01-SiteV2/site/data/local-skill-store-data.js; agent-workflow/tools/build-skill-store-dashboard.mjs; agent-workflow/skills/skill-registry.md"
   ],
   "checks": [
-    "quick_validate project and .skill-store lane skills; rg legacy threshold scan; npm run inbox:hermes open empty"
+    "npm run build:skill-store-dashboard; node --check dashboard generator and frontend script; quick_validate changed .skill-store skills; Playwright desktop/mobile render and operations iframe checks"
   ],
   "issues": [],
   "risks": [],
