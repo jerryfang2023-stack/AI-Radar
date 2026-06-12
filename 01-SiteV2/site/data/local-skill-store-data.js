@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-12 23:38:24",
+    "generatedAt": "2026-06-12 23:53:21",
     "generatedDate": "2026-06-12",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
@@ -8,10 +8,10 @@ window.WaveSightLocalSkillStore = {
     "version": {
       "schema_version": 1,
       "name": "Guanlan Skill Store",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "release_date": "2026-06-12",
-      "stage": "Skill Ops baseline",
-      "scope": "Registry-generated Skill Store dashboard, governed current skills, .skill-store sync, and Daily Loop Skill Ops check.",
+      "stage": "Lifecycle cleanup queue",
+      "scope": "Registry-generated Skill Store dashboard, governed current skills, lifecycle fields, cleanup queue, token footprint estimates, .skill-store sync, and Daily Loop Skill Ops check.",
       "upgrade_policy": {
         "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
         "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
@@ -25,10 +25,470 @@ window.WaveSightLocalSkillStore = {
       "laneOwners": 3,
       "needsAction": 5,
       "syncIssues": 0,
+      "dormant": 134,
+      "retired": 5,
+      "cleanupQueue": 139,
+      "tokenFootprintEstimate": 1294716,
       "evalCoverage": 100,
       "exampleCoverage": 100
     }
   },
+  "cleanupQueue": [
+    {
+      "name": "guanlan-copy-style-qc",
+      "lifecycle": "retired",
+      "cleanup_score": 121,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 5405
+    },
+    {
+      "name": "guanlan-copy-style",
+      "lifecycle": "retired",
+      "cleanup_score": 121,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 5188
+    },
+    {
+      "name": "guanlan-daily-observation-qc",
+      "lifecycle": "retired",
+      "cleanup_score": 111,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 3061
+    },
+    {
+      "name": "guanlan-daily-observation",
+      "lifecycle": "retired",
+      "cleanup_score": 111,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 2575
+    },
+    {
+      "name": "guanlan-daily-observation-pitch",
+      "lifecycle": "retired",
+      "cleanup_score": 111,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 1900
+    },
+    {
+      "name": "fbs-bookwriter",
+      "lifecycle": "dormant",
+      "cleanup_score": 104,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 319594
+    },
+    {
+      "name": "minimax-docx",
+      "lifecycle": "dormant",
+      "cleanup_score": 104,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 135567
+    },
+    {
+      "name": "minimax-xlsx",
+      "lifecycle": "dormant",
+      "cleanup_score": 104,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 33276
+    },
+    {
+      "name": "frontend-dev",
+      "lifecycle": "dormant",
+      "cleanup_score": 104,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 25377
+    },
+    {
+      "name": "llm-wiki",
+      "lifecycle": "dormant",
+      "cleanup_score": 104,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 15187
+    },
+    {
+      "name": "lark-unified",
+      "lifecycle": "dormant",
+      "cleanup_score": 104,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 12096
+    },
+    {
+      "name": "wechat-topic-radar",
+      "lifecycle": "dormant",
+      "cleanup_score": 96,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 5507
+    },
+    {
+      "name": "awesome-design-md",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 206909
+    },
+    {
+      "name": "marketing-skills",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 85490
+    },
+    {
+      "name": "fullstack-dev",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 29862
+    },
+    {
+      "name": "the-entrepreneurship-handbook",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 23073
+    },
+    {
+      "name": "admapix",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 20558
+    },
+    {
+      "name": "pptx-generator",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 15555
+    },
+    {
+      "name": "financial-analyst-master",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 12047
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 10072
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 9195
+    },
+    {
+      "name": "image-to-code-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 9091
+    },
+    {
+      "name": "notebooklm",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 9076
+    },
+    {
+      "name": "citation-manager",
+      "lifecycle": "dormant",
+      "cleanup_score": 94,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 8490
+    },
+    {
+      "name": "social-auto-upload",
+      "lifecycle": "dormant",
+      "cleanup_score": 88,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "medium token footprint",
+        "unused scripts"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 6388
+    },
+    {
+      "name": "skills-security-check",
+      "lifecycle": "dormant",
+      "cleanup_score": 86,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 7565
+    },
+    {
+      "name": "multi-search-engine",
+      "lifecycle": "dormant",
+      "cleanup_score": 86,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 6925
+    },
+    {
+      "name": "aihot",
+      "lifecycle": "dormant",
+      "cleanup_score": 86,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 6655
+    },
+    {
+      "name": "baoyu-xhs-images",
+      "lifecycle": "dormant",
+      "cleanup_score": 86,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 6040
+    },
+    {
+      "name": "baoyu-image-cards",
+      "lifecycle": "dormant",
+      "cleanup_score": 86,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ],
+      "usage_count": 0,
+      "last_used": "",
+      "token_footprint_estimate": 6019
+    }
+  ],
   "skills": [
     {
       "name": "follow-builders",
@@ -62,13 +522,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "supporting",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 6123,
+      "token_footprint_files": 3,
       "sizeKB": 193,
       "fileCount": 23,
       "modifiedAt": "2026-06-12 22:58:54",
       "modifiedTime": 1781276334281.657,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-business-signals-monitor",
@@ -102,13 +570,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "2026-06-12",
+      "usage_count": 3,
+      "token_footprint_estimate": 2371,
+      "token_footprint_files": 7,
       "sizeKB": 9,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 23:26:03",
       "modifiedTime": 1781277963202.6133,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-community-intelligence-monitor",
@@ -142,13 +618,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "2026-06-12",
+      "usage_count": 2,
+      "token_footprint_estimate": 2132,
+      "token_footprint_files": 7,
       "sizeKB": 8,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 23:26:03",
       "modifiedTime": 1781277963203.6216,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-daily-monitor",
@@ -182,13 +666,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "2026-06-12",
+      "usage_count": 1,
+      "token_footprint_estimate": 1980,
+      "token_footprint_files": 5,
       "sizeKB": 8,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 22:59:34",
       "modifiedTime": 1781276374935.861,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-daily-monitor-qc",
@@ -222,13 +714,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4688,
+      "token_footprint_files": 5,
       "sizeKB": 18,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 22:59:34",
       "modifiedTime": 1781276374969.1328,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-first-line-viewpoints-monitor",
@@ -262,13 +762,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "2026-06-12",
+      "usage_count": 2,
+      "token_footprint_estimate": 2045,
+      "token_footprint_files": 7,
       "sizeKB": 8,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 23:26:03",
       "modifiedTime": 1781277963205.5464,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-monitor-quality-gate",
@@ -302,13 +810,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3616,
+      "token_footprint_files": 6,
       "sizeKB": 14,
       "fileCount": 6,
       "modifiedAt": "2026-06-12 22:59:34",
       "modifiedTime": 1781276374954.8125,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-raw-pool-card",
@@ -342,13 +858,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3740,
+      "token_footprint_files": 7,
       "sizeKB": 14,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 22:58:23",
       "modifiedTime": 1781276303139.4165,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-skill-editor",
@@ -382,13 +906,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "governance",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1951,
+      "token_footprint_files": 7,
       "sizeKB": 8,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 22:59:35",
       "modifiedTime": 1781276375039.9631,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-trend-candidate-writer",
@@ -422,13 +954,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "current",
+      "last_used": "2026-06-12",
+      "usage_count": 1,
+      "token_footprint_estimate": 2851,
+      "token_footprint_files": 5,
       "sizeKB": 11,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 23:26:03",
       "modifiedTime": 1781277963205.5464,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-typography-qc",
@@ -462,13 +1002,21 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "supporting",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2225,
+      "token_footprint_files": 5,
       "sizeKB": 9,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 22:59:34",
       "modifiedTime": 1781276374997.058,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": []
     },
     {
       "name": "guanlan-copy-style",
@@ -502,6 +1050,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "retired",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5188,
+      "token_footprint_files": 2,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-05-20 01:54:10",
@@ -514,6 +1067,15 @@ window.WaveSightLocalSkillStore = {
           "label": "历史能力",
           "severity": "medium"
         }
+      ],
+      "cleanup_score": 121,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
       ]
     },
     {
@@ -548,6 +1110,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "retired",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5405,
+      "token_footprint_files": 2,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-05-20 01:54:10",
@@ -560,6 +1127,15 @@ window.WaveSightLocalSkillStore = {
           "label": "历史能力",
           "severity": "medium"
         }
+      ],
+      "cleanup_score": 121,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
       ]
     },
     {
@@ -594,6 +1170,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "retired",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2575,
+      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 1,
       "modifiedAt": "2026-05-30 17:46:49",
@@ -606,6 +1187,14 @@ window.WaveSightLocalSkillStore = {
           "label": "历史能力",
           "severity": "medium"
         }
+      ],
+      "cleanup_score": 111,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples"
       ]
     },
     {
@@ -640,6 +1229,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "retired",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1900,
+      "token_footprint_files": 1,
       "sizeKB": 6,
       "fileCount": 1,
       "modifiedAt": "2026-05-22 15:42:45",
@@ -652,6 +1246,14 @@ window.WaveSightLocalSkillStore = {
           "label": "历史能力",
           "severity": "medium"
         }
+      ],
+      "cleanup_score": 111,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples"
       ]
     },
     {
@@ -686,6 +1288,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "retired",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3061,
+      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 1,
       "modifiedAt": "2026-05-25 14:52:37",
@@ -698,6 +1305,14 @@ window.WaveSightLocalSkillStore = {
           "label": "历史能力",
           "severity": "medium"
         }
+      ],
+      "cleanup_score": 111,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "retired",
+        "no observed usage",
+        "no evals",
+        "no examples"
       ]
     },
     {
@@ -732,13 +1347,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 20558,
+      "token_footprint_files": 8,
       "sizeKB": 86,
       "fileCount": 12,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842405.6948,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "agent-mail",
@@ -772,13 +1401,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1183,
+      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842405.6948,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "aihot",
@@ -812,13 +1455,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 6655,
+      "token_footprint_files": 1,
       "sizeKB": 21,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 13:28:44",
       "modifiedTime": 1778218124936.343,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "article-writer",
@@ -852,13 +1509,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 774,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 2,
       "modifiedAt": "2026-05-16 13:34:54",
       "modifiedTime": 1778909694989.3096,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "arxiv-reader",
@@ -892,13 +1562,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3747,
+      "token_footprint_files": 6,
       "sizeKB": 67,
       "fileCount": 41,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842405.6948,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "arxiv-watcher",
@@ -932,13 +1615,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 397,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842405.6948,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "autoresearch",
@@ -972,13 +1669,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2250,
+      "token_footprint_files": 1,
       "sizeKB": 25,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842415.8572,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "awesome-design-md",
@@ -1012,13 +1722,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 206909,
+      "token_footprint_files": 55,
       "sizeKB": 813,
       "fileCount": 56,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842415.8572,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "baoyu-article-illustrator",
@@ -1052,13 +1776,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3189,
+      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842416.929,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-comic",
@@ -1092,13 +1829,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4217,
+      "token_footprint_files": 1,
       "sizeKB": 17,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842417.4768,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "baoyu-compress-image",
@@ -1132,13 +1883,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 598,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842417.4768,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-cover-image",
@@ -1172,13 +1936,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3594,
+      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842417.4768,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-danger-gemini-web",
@@ -1212,13 +1989,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1625,
+      "token_footprint_files": 1,
       "sizeKB": 6,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842417.4768,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-danger-x-to-markdown",
@@ -1252,13 +2042,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1833,
+      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842419.4846,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-diagram",
@@ -1292,13 +2095,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3059,
+      "token_footprint_files": 1,
       "sizeKB": 12,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842421.7776,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-format-markdown",
@@ -1332,13 +2148,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3492,
+      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842424.6118,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-image-cards",
@@ -1372,13 +2201,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 6019,
+      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "baoyu-image-gen",
@@ -1412,13 +2255,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3270,
+      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-imagine",
@@ -1452,13 +2308,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3559,
+      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-infographic",
@@ -1492,13 +2361,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4086,
+      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "baoyu-markdown-to-html",
@@ -1532,13 +2415,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2159,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-post-to-wechat",
@@ -1572,13 +2468,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2875,
+      "token_footprint_files": 1,
       "sizeKB": 168,
       "fileCount": 16,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "baoyu-post-to-weibo",
@@ -1612,13 +2522,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1392,
+      "token_footprint_files": 1,
       "sizeKB": 5,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-post-to-x",
@@ -1652,13 +2575,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1656,
+      "token_footprint_files": 1,
       "sizeKB": 6,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-slide-deck",
@@ -1692,13 +2628,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4533,
+      "token_footprint_files": 1,
       "sizeKB": 18,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "baoyu-translate",
@@ -1732,13 +2682,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4008,
+      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "baoyu-url-to-markdown",
@@ -1772,13 +2736,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2117,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "baoyu-xhs-images",
@@ -1812,13 +2789,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 6040,
+      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "baoyu-youtube-transcript",
@@ -1852,13 +2843,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2406,
+      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "brand-guidelines",
@@ -1892,13 +2896,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 607,
+      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "brandkit",
@@ -1932,13 +2949,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3992,
+      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "browser-act",
@@ -1972,13 +3002,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 946,
+      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 1,
       "modifiedAt": "2026-06-12 18:42:45",
       "modifiedTime": 1781260965160.5994,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "browser-use",
@@ -2012,13 +3055,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4346,
+      "token_footprint_files": 3,
       "sizeKB": 17,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "brutalist-skill",
@@ -2052,13 +3109,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2113,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "canvas-design",
@@ -2092,13 +3162,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3033,
+      "token_footprint_files": 1,
       "sizeKB": 5881,
       "fileCount": 95,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "caveman",
@@ -2132,13 +3215,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 479,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "citation-manager",
@@ -2172,13 +3268,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 8490,
+      "token_footprint_files": 1,
       "sizeKB": 220,
       "fileCount": 10,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "content-factory",
@@ -2212,13 +3322,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2863,
+      "token_footprint_files": 1,
       "sizeKB": 27,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "content-ops",
@@ -2252,13 +3375,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3097,
+      "token_footprint_files": 3,
       "sizeKB": 127,
       "fileCount": 26,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "content-repurposer",
@@ -2292,13 +3429,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2178,
+      "token_footprint_files": 1,
       "sizeKB": 39,
       "fileCount": 10,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842425.7617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "dashboard",
@@ -2332,13 +3483,24 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "candidate",
+      "last_used": "2026-06-12",
+      "usage_count": 3,
+      "token_footprint_estimate": 0,
+      "token_footprint_files": 0,
       "sizeKB": 328,
       "fileCount": 5,
       "modifiedAt": "2026-05-25 15:06:12",
       "modifiedTime": 1779692772783.6023,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 16,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "deep-research",
@@ -2372,13 +3534,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5824,
+      "token_footprint_files": 8,
       "sizeKB": 61,
       "fileCount": 21,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842434.7283,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "diagnose",
@@ -2412,13 +3588,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1779,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "edit-article",
@@ -2452,13 +3642,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 483,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-16 13:34:54",
       "modifiedTime": 1778909694986.3076,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "email-skill",
@@ -2492,13 +3695,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1036,
+      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842434.7283,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "fbs-bookwriter",
@@ -2532,13 +3748,28 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 319594,
+      "token_footprint_files": 151,
       "sizeKB": 3642,
       "fileCount": 482,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842434.7283,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 104,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "financial-analyst-master",
@@ -2572,13 +3803,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 12047,
+      "token_footprint_files": 20,
       "sizeKB": 50,
       "fileCount": 22,
       "modifiedAt": "2026-05-18 15:53:01",
       "modifiedTime": 1779090781409.9316,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "find-skills",
@@ -2612,13 +3857,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2142,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842434.7283,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "frontend-design",
@@ -2652,13 +3910,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1110,
+      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 2,
       "modifiedAt": "2026-04-29 22:15:45",
       "modifiedTime": 1777472145863.8943,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "frontend-dev",
@@ -2692,13 +3963,28 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 25377,
+      "token_footprint_files": 11,
       "sizeKB": 5548,
       "fileCount": 99,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842434.7283,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 104,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "fullstack-dev",
@@ -2732,13 +4018,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 29862,
+      "token_footprint_files": 9,
       "sizeKB": 118,
       "fileCount": 10,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842434.7283,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "git-guardrails-claude-code",
@@ -2772,13 +4072,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 578,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 2,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "github",
@@ -2812,13 +4126,24 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "candidate",
+      "last_used": "2026-06-12",
+      "usage_count": 1,
+      "token_footprint_estimate": 310,
+      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842437.8745,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 16,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "github-ai-trends",
@@ -2852,13 +4177,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 357,
+      "token_footprint_files": 1,
       "sizeKB": 6,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842434.7283,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "github-trending-cn",
@@ -2892,13 +4231,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 774,
+      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842437.8745,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "gpt-tasteskill",
@@ -2932,13 +4285,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1965,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "grill-me",
@@ -2972,13 +4338,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 159,
+      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "grill-with-docs",
@@ -3012,13 +4391,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 853,
+      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 3,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "growth-engine",
@@ -3052,13 +4444,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1394,
+      "token_footprint_files": 1,
       "sizeKB": 56,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842438.509,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "handoff",
@@ -3092,13 +4497,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 180,
+      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "hardcore-tech-writer",
@@ -3132,13 +4550,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5260,
+      "token_footprint_files": 1,
       "sizeKB": 22,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842438.509,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "humanizer",
@@ -3172,13 +4604,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4523,
+      "token_footprint_files": 1,
       "sizeKB": 21,
       "fileCount": 3,
       "modifiedAt": "2026-05-16 13:34:55",
       "modifiedTime": 1778909695003.7048,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "ima-skills",
@@ -3212,13 +4658,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3635,
+      "token_footprint_files": 1,
       "sizeKB": 98,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842438.509,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "image-to-code-skill",
@@ -3252,13 +4712,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 9091,
+      "token_footprint_files": 1,
       "sizeKB": 36,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "imagegen-frontend-mobile",
@@ -3292,13 +4766,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 10072,
+      "token_footprint_files": 1,
       "sizeKB": 39,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "imagegen-frontend-web",
@@ -3332,13 +4820,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 9195,
+      "token_footprint_files": 1,
       "sizeKB": 36,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "improve-codebase-architecture",
@@ -3372,13 +4874,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1274,
+      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 4,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "infographic-maker",
@@ -3412,13 +4927,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3172,
+      "token_footprint_files": 2,
       "sizeKB": 12,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842438.509,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "interview-prep",
@@ -3452,13 +4980,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2855,
+      "token_footprint_files": 1,
       "sizeKB": 11,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
       "modifiedTime": 1779090776986.2483,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "lark-unified",
@@ -3492,13 +5033,28 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 12096,
+      "token_footprint_files": 13,
       "sizeKB": 55,
       "fileCount": 15,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842438.509,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 104,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "llm-wiki",
@@ -3532,13 +5088,28 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": true,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 15187,
+      "token_footprint_files": 1,
       "sizeKB": 915,
       "fileCount": 78,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842441.9858,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 104,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "llm-wiki-luotwo",
@@ -3572,13 +5143,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3232,
+      "token_footprint_files": 1,
       "sizeKB": 18,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842441.9858,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "llm-wiki-upgrade",
@@ -3612,13 +5196,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 879,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842441.9858,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "macro-monitor",
@@ -3652,13 +5249,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2938,
+      "token_footprint_files": 2,
       "sizeKB": 9,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842441.9858,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "market-researcher",
@@ -3692,13 +5302,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2208,
+      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842441.9858,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "marketing-skills",
@@ -3732,13 +5355,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 85490,
+      "token_footprint_files": 24,
       "sizeKB": 337,
       "fileCount": 26,
       "modifiedAt": "2026-05-16 13:34:54",
       "modifiedTime": 1778909694994.7744,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "md2wechat",
@@ -3772,13 +5409,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2188,
+      "token_footprint_files": 1,
       "sizeKB": 75,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "migrate-to-shoehorn",
@@ -3812,13 +5462,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 698,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "minimalist-skill",
@@ -3852,13 +5515,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1974,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "minimax-docx",
@@ -3892,13 +5568,28 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 135567,
+      "token_footprint_files": 19,
       "sizeKB": 1485,
       "fileCount": 75,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 104,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "minimax-pdf",
@@ -3932,13 +5623,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2172,
+      "token_footprint_files": 1,
       "sizeKB": 193,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "minimax-xlsx",
@@ -3972,13 +5677,28 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 33276,
+      "token_footprint_files": 8,
       "sizeKB": 257,
       "fileCount": 26,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 104,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "multi-search-engine",
@@ -4012,13 +5732,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 6925,
+      "token_footprint_files": 3,
       "sizeKB": 28,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "nano-pdf",
@@ -4052,13 +5786,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 168,
+      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "neat-freak",
@@ -4092,13 +5839,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5091,
+      "token_footprint_files": 3,
       "sizeKB": 16,
       "fileCount": 3,
       "modifiedAt": "2026-04-29 16:31:51",
       "modifiedTime": 1777451511416.3235,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "news-summary",
@@ -4132,13 +5893,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 574,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "newsroom-style",
@@ -4172,13 +5946,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1844,
+      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
       "modifiedTime": 1779090776986.2483,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "note-organizer",
@@ -4212,13 +5999,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 390,
+      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "notebooklm",
@@ -4252,13 +6053,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 9076,
+      "token_footprint_files": 1,
       "sizeKB": 36,
       "fileCount": 1,
       "modifiedAt": "2026-05-24 20:26:14",
       "modifiedTime": 1779625574159.9546,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "notebooklm-studio",
@@ -4292,13 +6107,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 923,
+      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "obsidian",
@@ -4332,13 +6160,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 615,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "obsidian-vault",
@@ -4372,13 +6213,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 393,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-12 13:26:04",
       "modifiedTime": 1778563564210.617,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "openai-image-gen",
@@ -4412,13 +6266,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 221,
+      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "openai-whisper",
@@ -4452,13 +6320,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 158,
+      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "openai-whisper-api",
@@ -4492,13 +6373,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 227,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "output-skill",
@@ -4532,13 +6427,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 646,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "playwright-browser-automation",
@@ -4572,13 +6480,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2013,
+      "token_footprint_files": 1,
       "sizeKB": 11,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "playwright-scraper-skill",
@@ -4612,13 +6533,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2739,
+      "token_footprint_files": 3,
       "sizeKB": 35,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 78,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "unused scripts"
+      ]
     },
     {
       "name": "podcast-ops",
@@ -4652,13 +6586,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2720,
+      "token_footprint_files": 1,
       "sizeKB": 48,
       "fileCount": 5,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "ppt-slideshow",
@@ -4692,13 +6639,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3008,
+      "token_footprint_files": 4,
       "sizeKB": 18,
       "fileCount": 6,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "pptx-generator",
@@ -4732,13 +6693,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 15555,
+      "token_footprint_files": 6,
       "sizeKB": 62,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "prompt-engineering-expert",
@@ -4772,13 +6747,25 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2442,
+      "token_footprint_files": 2,
       "sizeKB": 76,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842443.9924,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 68,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals"
+      ]
     },
     {
       "name": "prototype",
@@ -4812,13 +6799,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 808,
+      "token_footprint_files": 1,
       "sizeKB": 15,
       "fileCount": 3,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "redesign-skill",
@@ -4852,13 +6852,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3758,
+      "token_footprint_files": 1,
       "sizeKB": 15,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "remotion-video-toolkit",
@@ -4892,13 +6905,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1395,
+      "token_footprint_files": 1,
       "sizeKB": 84,
       "fileCount": 35,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "sales-pipeline",
@@ -4932,13 +6958,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1049,
+      "token_footprint_files": 1,
       "sizeKB": 103,
       "fileCount": 12,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "sales-playbook",
@@ -4972,13 +7011,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1035,
+      "token_footprint_files": 1,
       "sizeKB": 105,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "scaffold-exercises",
@@ -5012,13 +7064,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 898,
+      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "seo-ops",
@@ -5052,13 +7117,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1285,
+      "token_footprint_files": 1,
       "sizeKB": 74,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "setup-matt-pocock-skills",
@@ -5092,13 +7170,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1699,
+      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 6,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "setup-pre-commit",
@@ -5132,13 +7223,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 565,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "skill-creator",
@@ -5172,13 +7276,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1213,
+      "token_footprint_files": 3,
       "sizeKB": 33,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "skill-scanner",
@@ -5212,13 +7330,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 4308,
+      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "skill-vetter",
@@ -5252,13 +7384,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1010,
+      "token_footprint_files": 1,
       "sizeKB": 5,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "skills-security-check",
@@ -5292,13 +7437,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 7565,
+      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "social-auto-upload",
@@ -5332,13 +7491,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 6388,
+      "token_footprint_files": 17,
       "sizeKB": 4957,
       "fileCount": 173,
       "modifiedAt": "2026-05-29 15:48:24",
       "modifiedTime": 1780040904090.93,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 88,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "medium token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "soft-skill",
@@ -5372,13 +7545,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2637,
+      "token_footprint_files": 1,
       "sizeKB": 10,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "source-verification",
@@ -5412,13 +7598,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5194,
+      "token_footprint_files": 1,
       "sizeKB": 20,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
       "modifiedTime": 1779090776986.2483,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "stitch-skill",
@@ -5452,13 +7652,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2935,
+      "token_footprint_files": 1,
       "sizeKB": 23,
       "fileCount": 2,
       "modifiedAt": "2026-05-08 00:50:17",
       "modifiedTime": 1778172617952.2256,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "story-pitch",
@@ -5492,13 +7705,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 3262,
+      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
       "modifiedTime": 1779090776986.2483,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "summarize",
@@ -5532,13 +7758,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 394,
+      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "taste-skill",
@@ -5572,13 +7811,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5284,
+      "token_footprint_files": 1,
       "sizeKB": 21,
       "fileCount": 1,
       "modifiedAt": "2026-05-04 17:35:11",
       "modifiedTime": 1777887311430.504,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint"
+      ]
     },
     {
       "name": "tdd",
@@ -5612,13 +7865,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1093,
+      "token_footprint_files": 1,
       "sizeKB": 10,
       "fileCount": 6,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "the-entrepreneurship-handbook",
@@ -5652,13 +7918,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 23073,
+      "token_footprint_files": 2,
       "sizeKB": 65,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 94,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "large token footprint"
+      ]
     },
     {
       "name": "to-issues",
@@ -5692,13 +7972,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 893,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "to-prd",
@@ -5732,13 +8025,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 777,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "triage",
@@ -5772,13 +8078,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 1211,
+      "token_footprint_files": 1,
       "sizeKB": 15,
       "fileCount": 3,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "weather",
@@ -5812,13 +8131,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 203,
+      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "web-search-exa",
@@ -5852,13 +8184,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2931,
+      "token_footprint_files": 1,
       "sizeKB": 12,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842453.7793,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "wechat-article-search",
@@ -5892,13 +8237,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 821,
+      "token_footprint_files": 1,
       "sizeKB": 25,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842459.4636,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "wechat-topic-radar",
@@ -5932,13 +8291,28 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 5507,
+      "token_footprint_files": 1,
       "sizeKB": 55,
       "fileCount": 9,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842459.4636,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 96,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "medium token footprint",
+        "unused scripts"
+      ]
     },
     {
       "name": "write-a-skill",
@@ -5972,13 +8346,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 757,
+      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "x-longform-post",
@@ -6012,13 +8399,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 2936,
+      "token_footprint_files": 3,
       "sizeKB": 12,
       "fileCount": 5,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842459.4636,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "youtube-transcript",
@@ -6052,13 +8452,27 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 405,
+      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842459.4636,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 86,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples",
+        "unused scripts"
+      ]
     },
     {
       "name": "yt-competitive-analysis",
@@ -6092,13 +8506,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 590,
+      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
       "modifiedTime": 1777302842459.4636,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     },
     {
       "name": "zoom-out",
@@ -6132,13 +8559,26 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
+      "lifecycle": "dormant",
+      "last_used": "",
+      "usage_count": 0,
+      "token_footprint_estimate": 108,
+      "token_footprint_files": 1,
       "sizeKB": 0,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
       "modifiedTime": 1778437180000,
       "issueCount": 0,
       "issueSeverity": "",
-      "issues": []
+      "issues": [],
+      "cleanup_score": 76,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "dormant",
+        "no observed usage",
+        "no evals",
+        "no examples"
+      ]
     }
   ]
 };

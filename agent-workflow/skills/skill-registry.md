@@ -2,7 +2,7 @@
 
 Last updated: 2026-06-12
 
-Skill Store version: v1.0.0 (2026-06-12)
+Skill Store version: v1.1.0 (2026-06-12)
 
 Generated from `SKILL.md` metadata by `npm run build:skill-registry`. Do not edit the table by hand; edit the target skill metadata, evals, examples, or MEMORY instead, then regenerate.
 

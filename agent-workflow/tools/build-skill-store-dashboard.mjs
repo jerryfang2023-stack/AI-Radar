@@ -11,6 +11,7 @@ const storeDir = process.env.GUANLAN_SKILL_STORE || path.join(os.homedir(), ".sk
 const projectSkillDir = path.join(root, "agent-workflow", "skills");
 const registryPath = path.join(projectSkillDir, "skill-registry.md");
 const outFile = path.join(root, "01-SiteV2", "site", "data", "local-skill-store-data.js");
+const actionLogsDir = path.join(root, "agent-workflow", "logs", "action-runs");
 
 const SKIP_DIRS = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", ".cache", "dist", "build"]);
 const RULE_FILES = new Set(["SKILL.md", "MEMORY.md"]);
@@ -165,6 +166,114 @@ function ruleDigest(base) {
   return { files, digest: files.length ? hash.digest("hex") : "" };
 }
 
+function tokenFootprint(base) {
+  const files = collectRuleFiles(base);
+  let chars = 0;
+  let cjk = 0;
+  for (const rel of files) {
+    const text = readText(path.join(base, rel));
+    chars += text.length;
+    cjk += (text.match(/[\u3400-\u9fff]/gu) || []).length;
+  }
+  const nonCjk = Math.max(0, chars - cjk);
+  return {
+    files: files.length,
+    chars,
+    estimate: Math.max(0, Math.ceil(cjk * 1.15 + nonCjk / 4)),
+  };
+}
+
+function readActionRecords() {
+  if (!exists(actionLogsDir)) return [];
+  const records = [];
+  for (const entry of fs.readdirSync(actionLogsDir, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith(".jsonl")) continue;
+    if (entry.name === "latest.json") continue;
+    const file = path.join(actionLogsDir, entry.name);
+    for (const line of readText(file).split(/\r?\n/u)) {
+      if (!line.trim()) continue;
+      try {
+        records.push(JSON.parse(line));
+      } catch {
+        // Ignore partial historical records; action logs remain advisory for usage estimates.
+      }
+    }
+  }
+  return records;
+}
+
+function usageMapFor(names) {
+  const usage = new Map([...names].map((name) => [name, { usage_count: 0, last_used: "" }]));
+  const records = readActionRecords();
+  for (const record of records) {
+    const haystack = JSON.stringify(record).toLowerCase();
+    const usedAt = String(record.date || record.generated_at || "").slice(0, 10);
+    for (const name of names) {
+      if (!haystack.includes(name.toLowerCase())) continue;
+      const item = usage.get(name) || { usage_count: 0, last_used: "" };
+      item.usage_count += 1;
+      if (usedAt && usedAt > item.last_used) item.last_used = usedAt;
+      usage.set(name, item);
+    }
+  }
+  return usage;
+}
+
+function lifecycleFor({ registry, role, usage, retired }) {
+  const normalized = String(role || "").toLowerCase();
+  if (retired) return "retired";
+  if (/lane owner|current sub-skill/.test(normalized)) return "current";
+  if (/supporting/.test(normalized)) return "supporting";
+  if (/governance/.test(normalized)) return "governance";
+  if (registry) return "candidate";
+  if (usage.usage_count > 0) return "candidate";
+  return "dormant";
+}
+
+function cleanupProfile(skill) {
+  const reasons = [];
+  let score = 0;
+  if (["current", "supporting", "governance"].includes(skill.lifecycle)) {
+    return { score: 0, candidate: false, reasons };
+  }
+  if (skill.lifecycle === "retired") {
+    score += 70;
+    reasons.push("retired");
+  }
+  if (skill.lifecycle === "dormant") {
+    score += 35;
+    reasons.push("dormant");
+  }
+  if (!skill.usage_count) {
+    score += 25;
+    reasons.push("no observed usage");
+  }
+  if (!skill.hasEvals) {
+    score += 8;
+    reasons.push("no evals");
+  }
+  if (!skill.hasExamples) {
+    score += 8;
+    reasons.push("no examples");
+  }
+  if (skill.token_footprint_estimate >= 8000) {
+    score += 18;
+    reasons.push("large token footprint");
+  } else if (skill.token_footprint_estimate >= 4000) {
+    score += 10;
+    reasons.push("medium token footprint");
+  }
+  if (skill.hasScripts && !skill.usage_count) {
+    score += 10;
+    reasons.push("unused scripts");
+  }
+  return {
+    score,
+    candidate: score >= 45,
+    reasons,
+  };
+}
+
 function formatDate(date) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -197,7 +306,7 @@ function retiredRisk(name, registry) {
   return /^guanlan-(daily-observation|business-brief|trend-report|copy-style|copy-style-qc)/.test(name);
 }
 
-function buildSkill(name, registryMap) {
+function buildSkill(name, registryMap, usageMap) {
   const registry = registryMap.get(name);
   const storePath = path.join(storeDir, name);
   const projectPath = path.join(projectSkillDir, name);
@@ -225,6 +334,8 @@ function buildSkill(name, registryMap) {
   const hasExamples = hasFileOrDir(projectPath, ["examples"]) || hasFileOrDir(storePath, ["examples"]);
   const hasMemory = hasFileOrDir(projectPath, ["MEMORY.md"]) || hasFileOrDir(storePath, ["MEMORY.md"]);
   const hasReferences = hasFileOrDir(projectPath, ["references"]) || hasFileOrDir(storePath, ["references"]);
+  const usage = usageMap.get(name) || { usage_count: 0, last_used: "" };
+  const footprint = tokenFootprint(projectExists ? projectPath : storePath);
   const issues = [];
 
   if (registry && !storeExists) issues.push({ key: "not-installed", label: "未安装", severity: "high" });
@@ -235,7 +346,7 @@ function buildSkill(name, registryMap) {
   if (current && !frontmatter.version) issues.push({ key: "missing-version", label: "版本未知", severity: "low" });
   if (retiredRisk(name, registry)) issues.push({ key: "retired-risk", label: "历史能力", severity: "medium" });
 
-  return {
+  const baseSkill = {
     name,
     category: categoryFor(name, registry),
     isGuanlan: Boolean(registry || name.startsWith("guanlan-") || name === "follow-builders"),
@@ -267,6 +378,11 @@ function buildSkill(name, registryMap) {
     hasConfig: stats.hasConfig,
     hasDeps: stats.hasDeps,
     hasTemplates: stats.hasTemplates,
+    lifecycle: lifecycleFor({ registry, role, usage, retired: retiredRisk(name, registry) }),
+    last_used: usage.last_used,
+    usage_count: usage.usage_count,
+    token_footprint_estimate: footprint.estimate,
+    token_footprint_files: footprint.files,
     sizeKB: stats.sizeKB,
     fileCount: stats.fileCount,
     modifiedAt: stats.modifiedAt,
@@ -275,6 +391,13 @@ function buildSkill(name, registryMap) {
     issueSeverity: issues.some((issue) => issue.severity === "high") ? "high" : issues.some((issue) => issue.severity === "medium") ? "medium" : issues.length ? "low" : "",
     issues,
   };
+  const cleanup = cleanupProfile(baseSkill);
+  return {
+    ...baseSkill,
+    cleanup_score: cleanup.score,
+    cleanup_candidate: cleanup.candidate,
+    cleanup_reasons: cleanup.reasons,
+  };
 }
 
 function summarize(skills) {
@@ -282,6 +405,8 @@ function summarize(skills) {
   const laneOwners = skills.filter((skill) => /lane owner/i.test(skill.status));
   const needsAction = skills.filter((skill) => skill.issues.length);
   const syncIssues = skills.filter((skill) => skill.issues.some((issue) => ["not-installed", "not-mirrored", "sync-drift"].includes(issue.key)));
+  const cleanupQueue = skills.filter((skill) => skill.cleanup_candidate);
+  const tokenTotal = skills.reduce((sum, skill) => sum + (Number(skill.token_footprint_estimate) || 0), 0);
   return {
     total: skills.length,
     guanlan: skills.filter((skill) => skill.isGuanlan).length,
@@ -289,6 +414,10 @@ function summarize(skills) {
     laneOwners: laneOwners.length,
     needsAction: needsAction.length,
     syncIssues: syncIssues.length,
+    dormant: skills.filter((skill) => skill.lifecycle === "dormant").length,
+    retired: skills.filter((skill) => skill.lifecycle === "retired").length,
+    cleanupQueue: cleanupQueue.length,
+    tokenFootprintEstimate: tokenTotal,
     evalCoverage: current.length ? Math.round(current.filter((skill) => skill.hasEvals).length / current.length * 100) : 0,
     exampleCoverage: current.length ? Math.round(current.filter((skill) => skill.hasExamples).length / current.length * 100) : 0,
   };
@@ -296,11 +425,25 @@ function summarize(skills) {
 
 const registry = parseRegistry(registryPath);
 const names = new Set([...dirNames(storeDir), ...dirNames(projectSkillDir), ...registry.keys()]);
-const skills = [...names].map((name) => buildSkill(name, registry)).sort((a, b) => {
+const usageMap = usageMapFor(names);
+const skills = [...names].map((name) => buildSkill(name, registry, usageMap)).sort((a, b) => {
   if (a.current !== b.current) return a.current ? -1 : 1;
   if (a.isGuanlan !== b.isGuanlan) return a.isGuanlan ? -1 : 1;
   return a.name.localeCompare(b.name, "en");
 });
+const cleanupQueue = [...skills]
+  .filter((skill) => skill.cleanup_candidate)
+  .sort((a, b) => b.cleanup_score - a.cleanup_score || b.token_footprint_estimate - a.token_footprint_estimate || a.name.localeCompare(b.name, "en"))
+  .slice(0, 30)
+  .map((skill) => ({
+    name: skill.name,
+    lifecycle: skill.lifecycle,
+    cleanup_score: skill.cleanup_score,
+    cleanup_reasons: skill.cleanup_reasons,
+    usage_count: skill.usage_count,
+    last_used: skill.last_used,
+    token_footprint_estimate: skill.token_footprint_estimate,
+  }));
 
 const payload = {
   meta: {
@@ -312,6 +455,7 @@ const payload = {
     version: readSkillStoreVersion(skillOpsPaths),
     summary: summarize(skills),
   },
+  cleanupQueue,
   skills,
 };
 

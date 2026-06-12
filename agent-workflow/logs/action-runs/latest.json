@@ -1,26 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T15:39:22.490Z",
+  "generated_at": "2026-06-12T15:53:07.674Z",
   "date": "2026-06-12",
   "action": "Column monitor skills",
   "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Defined Guanlan Skill Store v1.0.0 as the Skill Ops baseline and surfaced it in registry, dashboard data, and check:skill-ops.",
+  "summary": "Upgraded Skill Store to v1.1.0 with lifecycle fields, observed usage counts, static token footprint estimates, cleanup scoring, cleanup queue, and lifecycle/token/usage page views.",
   "contexts": [],
   "changed_files": [],
   "outputs": [
     "agent-workflow/skills/skill-store-version.json",
-    "agent-workflow/skills/skill-registry.md",
-    "01-SiteV2/site/data/local-skill-store-data.js",
+    "agent-workflow/tools/build-skill-store-dashboard.mjs",
     "01-SiteV2/site/assets/local-skill-store.js",
-    "context/version-ledger.md"
+    "01-SiteV2/site/local-skill-store.html",
+    "01-SiteV2/site/data/local-skill-store-data.js"
   ],
   "checks": [
-    "npm run check:skill-ops",
     "npm run audit:skills",
     "node --check Skill Store scripts",
+    "Playwright local Skill Store render and detail modal check",
+    "generated data missingFields=0",
     "git diff --check"
   ],
   "issues": [],

@@ -64,7 +64,7 @@
   .metric span { color: var(--gold); font-size: 12px; font-weight: 760; }
   .metric strong { margin-top: 6px; color: var(--blue); font-size: 30px; line-height: 1; }
   .metric em { margin-top: 8px; color: var(--muted); font-style: normal; font-size: 12px; }
-  .ops-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+  .ops-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
   .panel { padding: 16px; box-shadow: none; }
   .panel-head { display: flex; justify-content: space-between; gap: 12px; align-items: end; margin-bottom: 12px; }
   .lane-list, .issue-list { display: grid; gap: 8px; }
@@ -305,6 +305,10 @@
         <div class="panel-head"><div><div class="eyebrow">ATTENTION</div><h2>需处理</h2></div></div>
         <div class="issue-list" data-issues></div>
       </article>
+      <article class="panel">
+        <div class="panel-head"><div><div class="eyebrow">CLEANUP QUEUE</div><h2>清理队列</h2></div></div>
+        <div class="issue-list" data-cleanup-queue></div>
+      </article>
     </section>
 
     <section class="controls">
@@ -315,9 +319,13 @@
         <option value="modified">按最近修改</option>
         <option value="size">按体积</option>
         <option value="files">按文件数</option>
+        <option value="token">按 token 估算</option>
+        <option value="usage">按使用次数</option>
+        <option value="cleanup">按清理优先级</option>
       </select>
       <select data-group>
         <option value="lane">按 lane 分组</option>
+        <option value="lifecycle">按生命周期分组</option>
         <option value="status">按状态分组</option>
         <option value="sync">按同步状态分组</option>
         <option value="category">按类别分组</option>
@@ -328,6 +336,11 @@
         <button type="button" class="chip" data-filter="lane-owner">lane owner</button>
         <button type="button" class="chip" data-filter="needs-action">需处理</button>
         <button type="button" class="chip" data-filter="sync-issue">同步问题</button>
+        <button type="button" class="chip" data-filter="cleanup">清理队列</button>
+        <button type="button" class="chip" data-filter="dormant">dormant</button>
+        <button type="button" class="chip" data-filter="retired">retired</button>
+        <button type="button" class="chip" data-filter="unused">未使用</button>
+        <button type="button" class="chip" data-filter="high-token">高 token</button>
         <button type="button" class="chip" data-filter="missing-evals">缺 eval</button>
         <button type="button" class="chip" data-filter="missing-examples">缺 examples</button>
         <button type="button" class="chip" data-filter="missing-version">版本未知</button>
@@ -356,7 +369,7 @@
     </div>
   </div>
 
-  <script src="data/local-skill-store-data.js?v=20260612-skill-store-v100"></script>
-  <script src="assets/local-skill-store.js?v=20260612-skill-store-v100"></script>
+  <script src="data/local-skill-store-data.js?v=20260612-skill-store-v110"></script>
+  <script src="assets/local-skill-store.js?v=20260612-skill-store-v110"></script>
 </body>
 </html>

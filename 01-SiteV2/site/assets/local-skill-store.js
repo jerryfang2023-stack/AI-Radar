@@ -14,6 +14,23 @@
     return `${(value / 1024).toFixed(1)} MB`;
   }
 
+  function formatTokens(value) {
+    const tokens = Number(value) || 0;
+    if (tokens < 1000) return `${tokens} tok`;
+    return `${(tokens / 1000).toFixed(1)}k tok`;
+  }
+
+  function lifecycleLabel(value) {
+    return {
+      current: "current",
+      supporting: "supporting",
+      governance: "governance",
+      candidate: "candidate",
+      dormant: "dormant",
+      retired: "retired",
+    }[value] || value || "unknown";
+  }
+
   function syncLabel(value) {
     return {
       synced: "已同步",
@@ -39,6 +56,11 @@
     if (state.filter === "missing-examples" && skill.hasExamples) return false;
     if (state.filter === "missing-version" && skill.version) return false;
     if (state.filter === "retired-risk" && !skill.issues.some((issue) => issue.key === "retired-risk")) return false;
+    if (state.filter === "cleanup" && !skill.cleanup_candidate) return false;
+    if (state.filter === "dormant" && skill.lifecycle !== "dormant") return false;
+    if (state.filter === "retired" && skill.lifecycle !== "retired") return false;
+    if (state.filter === "unused" && skill.usage_count > 0) return false;
+    if (state.filter === "high-token" && skill.token_footprint_estimate < 4000) return false;
     if (state.filter === "guanlan" && !skill.isGuanlan) return false;
     if (state.filter === "scripts" && !skill.hasScripts) return false;
     if (state.activeGroup && groupKey(skill) !== state.activeGroup) return false;
@@ -51,6 +73,9 @@
       skill.role,
       skill.gates,
       skill.learning,
+      skill.lifecycle,
+      skill.last_used,
+      skill.cleanup_reasons?.join(" "),
       skill.localPath,
       skill.projectPath,
     ].join(" ").toLowerCase();
@@ -63,6 +88,9 @@
       if (state.sort === "modified") return (b.modifiedTime || 0) - (a.modifiedTime || 0);
       if (state.sort === "size") return (b.sizeKB || 0) - (a.sizeKB || 0);
       if (state.sort === "files") return (b.fileCount || 0) - (a.fileCount || 0);
+      if (state.sort === "token") return (b.token_footprint_estimate || 0) - (a.token_footprint_estimate || 0);
+      if (state.sort === "usage") return (b.usage_count || 0) - (a.usage_count || 0);
+      if (state.sort === "cleanup") return (b.cleanup_score || 0) - (a.cleanup_score || 0);
       if (state.sort === "name") return a.name.localeCompare(b.name, "en");
       if (a.current !== b.current) return a.current ? -1 : 1;
       if ((severity[a.issueSeverity] ?? 3) !== (severity[b.issueSeverity] ?? 3)) return (severity[a.issueSeverity] ?? 3) - (severity[b.issueSeverity] ?? 3);
@@ -72,6 +100,7 @@
   }
 
   function groupKey(skill) {
+    if (state.group === "lifecycle") return lifecycleLabel(skill.lifecycle);
     if (state.group === "status") return statusLabel(skill);
     if (state.group === "sync") return syncLabel(skill.syncState);
     if (state.group === "category") return skill.category || "Other";
@@ -81,12 +110,14 @@
   function tags(skill) {
     const result = [];
     if (skill.current) result.push(`<span class="tag blue">current</span>`);
+    if (skill.lifecycle) result.push(`<span class="tag purple">${html(lifecycleLabel(skill.lifecycle))}</span>`);
     if (/lane owner/i.test(skill.status || "")) result.push(`<span class="tag gold">lane owner</span>`);
     if (skill.hasEvals) result.push(`<span class="tag green">eval</span>`);
     if (skill.hasExamples) result.push(`<span class="tag green">examples</span>`);
     if (skill.hasMemory) result.push(`<span class="tag">memory</span>`);
     if (skill.hasScripts) result.push(`<span class="tag purple">scripts</span>`);
     if (skill.version) result.push(`<span class="tag">v${html(skill.version)}</span>`);
+    if (skill.cleanup_candidate) result.push(`<span class="tag orange">cleanup ${html(skill.cleanup_score)}</span>`);
     result.push(`<span class="tag ${skill.syncState === "synced" ? "green" : "orange"}">${html(syncLabel(skill.syncState))}</span>`);
     for (const issue of skill.issues.slice(0, 3)) result.push(`<span class="tag ${issue.severity === "high" ? "red" : issue.severity === "medium" ? "orange" : ""}">${html(issue.label)}</span>`);
     return result.join("");
@@ -104,9 +135,9 @@
       <p>${html(skill.description || skill.originalDescription || "暂无描述")}</p>
       <div class="tag-row">${tags(skill)}</div>
       <div class="skill-foot">
-        <span>${html(formatSize(skill.sizeKB))}</span>
-        <span>${html(skill.fileCount)} files</span>
-        <span>${html(skill.modifiedAt || "-")}</span>
+        <span>${html(formatTokens(skill.token_footprint_estimate))}</span>
+        <span>${html(skill.usage_count || 0)} uses</span>
+        <span>${html(skill.last_used || "unused")}</span>
       </div>
     </article>`;
   }
@@ -120,6 +151,9 @@
       ["Lane Owner", summary.laneOwners || 0, "三条生产 lane"],
       ["Needs Action", summary.needsAction || 0, "缺口 / 分叉 / 历史风险"],
       ["Sync Issues", summary.syncIssues || 0, "项目镜像 vs .skill-store"],
+      ["Dormant", summary.dormant || 0, "无观测使用"],
+      ["Cleanup", summary.cleanupQueue || 0, "建议进入清理队列"],
+      ["Token Footprint", formatTokens(summary.tokenFootprintEstimate || 0), "静态规则估算"],
       ["Eval", `${summary.evalCoverage || 0}%`, "current 覆盖"],
       ["Examples", `${summary.exampleCoverage || 0}%`, "current 覆盖"],
     ];
@@ -142,6 +176,14 @@
       <span>${html(skill.name)}</span>
       <strong>${skill.issues.map((issue) => html(issue.label)).join(" / ")}</strong>
     </button>`).join("") : `<div class="empty-line">暂无需处理项</div>`;
+  }
+
+  function renderCleanupQueue() {
+    const queue = Array.isArray(data.cleanupQueue) ? data.cleanupQueue.slice(0, 8) : [];
+    $("[data-cleanup-queue]").innerHTML = queue.length ? queue.map((skill) => `<button type="button" class="issue-row" data-skill="${html(skill.name)}">
+      <span>${html(lifecycleLabel(skill.lifecycle))} · ${html(formatTokens(skill.token_footprint_estimate))}</span>
+      <strong>${html(skill.name)} · ${html((skill.cleanup_reasons || []).join(" / "))}</strong>
+    </button>`).join("") : `<div class="empty-line">暂无清理候选</div>`;
   }
 
   function renderSidebar(items) {
@@ -180,6 +222,7 @@
     renderMetrics();
     renderLaneOwners();
     renderIssueList();
+    renderCleanupQueue();
     renderSkills();
   }
 
@@ -198,6 +241,10 @@
       </section>
       <section class="detail-grid">
         ${detailItem("版本", skill.version ? `v${skill.version}` : "未标注")}
+        ${detailItem("Lifecycle", lifecycleLabel(skill.lifecycle))}
+        ${detailItem("使用次数", skill.usage_count || 0)}
+        ${detailItem("最近使用", skill.last_used || "未观测")}
+        ${detailItem("Token 估算", formatTokens(skill.token_footprint_estimate))}
         ${detailItem("同步状态", syncLabel(skill.syncState))}
         ${detailItem("eval", skill.hasEvals ? "有" : "缺")}
         ${detailItem("examples", skill.hasExamples ? "有" : "缺")}
@@ -219,6 +266,11 @@
         ${detailItem("运行时安装", skill.localPath)}
         ${detailItem("文件统计", `${formatSize(skill.sizeKB)} · ${skill.fileCount} files`)}
         ${detailItem("最近修改", skill.modifiedAt)}
+      </section>
+      <section class="detail-block">
+        <h3>清理判断</h3>
+        <p><b>清理分：</b>${html(skill.cleanup_score || 0)}</p>
+        <p><b>原因：</b>${html((skill.cleanup_reasons || []).join(" / ") || "不建议清理")}</p>
       </section>
       <section class="detail-block">
         <h3>需处理</h3>

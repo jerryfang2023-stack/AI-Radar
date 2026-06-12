@@ -24,7 +24,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Release date | 2026-06-11 |
 | Last modified at | 2026-06-11T19:12:07+08:00 |
 | Product version | V3.3 |
-| Skill Store version | v1.0.0 Skill Ops baseline |
+| Skill Store version | v1.1.0 Lifecycle cleanup queue |
 | Git tag | `v3.3.5-builder-obsidian-date-timelines` |
 | Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
 
@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v1.0.0`, with registry generation, current skill metadata, eval/example coverage, `.skill-store` sync, and Daily Loop Skill Ops checks.
+- Skill Store governance is versioned separately as `v1.1.0`, with registry generation, current skill metadata, lifecycle fields, usage estimates, token footprint estimates, cleanup queue, `.skill-store` sync, and Daily Loop Skill Ops checks.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
