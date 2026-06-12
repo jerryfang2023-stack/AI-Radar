@@ -1,0 +1,101 @@
+name: WaveSight Daily Recovery Watchdog
+
+on:
+  schedule:
+    # 10:25 Asia/Shanghai. Runs after the primary daily production windows.
+    - cron: "25 2 * * *"
+  workflow_run:
+    workflows:
+      - WaveSight Business Signals PR
+      - WaveSight First-Line Viewpoints PR
+      - WaveSight Community Intelligence PR
+    types:
+      - completed
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Asia/Shanghai date to recover, formatted as YYYY-MM-DD. Leave empty for today."
+        required: false
+        type: string
+      lanes:
+        description: "Comma-separated lanes: business_signals,first_line_viewpoints,community_publish. Leave empty for auto."
+        required: false
+        type: string
+      max_attempts:
+        description: "Optional override for same-date failed attempts before manual escalation."
+        required: false
+        type: string
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: wavesight-daily-recovery-${{ github.event.workflow_run.name || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  recovery-watchdog:
+    name: Dispatch bounded recovery
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Shanghai
+      GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+      RECOVERY_DATE: ${{ github.event.inputs.date || '' }}
+      RECOVERY_LANES: ${{ github.event.inputs.lanes || 'auto' }}
+      RECOVERY_MAX_ATTEMPTS: ${{ github.event.inputs.max_attempts || '' }}
+      SOURCE_WORKFLOW: ${{ github.event.workflow_run.name || '' }}
+      SOURCE_RUN_ID: ${{ github.event.workflow_run.id || '' }}
+      SOURCE_CONCLUSION: ${{ github.event.workflow_run.conclusion || '' }}
+      SOURCE_CREATED_AT: ${{ github.event.workflow_run.created_at || '' }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Syntax check recovery dispatcher
+        run: node --check agent-workflow/tools/dispatch-daily-recovery.mjs
+
+      - name: Dispatch recovery if needed
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(
+            "--mode=${{ github.event_name }}"
+            "--lanes=${RECOVERY_LANES}"
+          )
+
+          if [ -n "$RECOVERY_DATE" ]; then
+            args+=("--date=${RECOVERY_DATE}")
+          fi
+
+          if [ -n "$RECOVERY_MAX_ATTEMPTS" ]; then
+            args+=("--max-attempts=${RECOVERY_MAX_ATTEMPTS}")
+          fi
+
+          if [ -n "$SOURCE_WORKFLOW" ]; then
+            args+=("--source-workflow=${SOURCE_WORKFLOW}")
+            args+=("--source-run-id=${SOURCE_RUN_ID}")
+            args+=("--source-conclusion=${SOURCE_CONCLUSION}")
+            args+=("--source-created-at=${SOURCE_CREATED_AT}")
+          fi
+
+          node agent-workflow/tools/dispatch-daily-recovery.mjs "${args[@]}"
+
+      - name: Upload recovery report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: wavesight-daily-recovery-${{ github.run_id }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            agent-workflow/reports/*-daily-recovery-watchdog.json
+            agent-workflow/reports/*-daily-recovery-watchdog.md
