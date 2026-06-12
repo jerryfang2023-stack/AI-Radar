@@ -192,6 +192,35 @@ function largeVendorKeyForCard(card = {}) {
   return match?.[0] || "";
 }
 
+function top10EventText(card = {}) {
+  return [
+    card.title,
+    card.displayTitle,
+    card.sourceTitle,
+    card.originalTitle,
+    card.generatedTitle,
+    card.translatedFact,
+    ...(card.originalHighlights || []),
+  ].filter(Boolean).join(" ");
+}
+
+function top10EventFingerprint(card = {}) {
+  const text = top10EventText(card).toLowerCase();
+  if (/prometheus/iu.test(text) && /(?:jeff\s+bezos|bezos|贝索斯)/iu.test(text) && /(?:\$?\s*12\s*b|120\s*亿|12\s*billion)/iu.test(text)) {
+    return `${card.date}|prometheus|bezos|12b`;
+  }
+  const normalized = normalizedComparableText(text);
+  return normalized ? `${card.date}|${normalized.slice(0, 80)}` : "";
+}
+
+function top10FactIsWeak(card = {}) {
+  const fact = String(card.translatedFact || card.fact || "").trim();
+  if (!fact) return true;
+  if (/^原始来源链接：?https?:\/\//iu.test(fact)) return true;
+  if (/公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果|鍏紑鏉愭枡鎻愪緵浜嗕竴鏉/u.test(fact)) return true;
+  return false;
+}
+
 function sourceUrlIsRootLike(value = "") {
   try {
     const parsed = new URL(value);
@@ -253,6 +282,7 @@ if (!Array.isArray(payload.top10)) {
   if (top10.length !== 10) {
     issues.push(`payload.top10 has ${top10.length} cards, expected exactly 10 for active date ${activeDate}`);
   }
+  const seenTop10Events = new Map();
   for (const item of top10) {
     if (item.date !== activeDate) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} has date ${item.date || "(missing date)"}, expected active date ${activeDate}`);
@@ -266,9 +296,24 @@ if (!Array.isArray(payload.top10)) {
     if (!item.sourceTitle && !item.originalTitle && !item.displayTitle) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing source/display title`);
     }
-    if ((item.sourceTitle || item.originalTitle) && item.generatedTitle && item.title === item.generatedTitle) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} exposes generated title instead of source title`);
+    if (item.modelGeneratedTitle && item.title === item.modelGeneratedTitle) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} exposes model-generated title instead of source-derived title`);
     }
+    if (item.displayTitle && item.title !== item.displayTitle) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} public title does not match displayTitle`);
+    }
+    if (titleNeedsTranslation(item.title)) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} has untranslated public title: ${item.title}`);
+    }
+    if (top10FactIsWeak(item)) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} has weak news fact; use source-derived facts instead of links or generic fallback`);
+    }
+    const eventKey = top10EventFingerprint(item);
+    const previous = seenTop10Events.get(eventKey);
+    if (eventKey && previous) {
+      issues.push(`payload.top10 cards ${previous} and ${item.id || "(missing id)"} describe the same event`);
+    }
+    if (eventKey) seenTop10Events.set(eventKey, item.id || "(missing id)");
   }
 }
 

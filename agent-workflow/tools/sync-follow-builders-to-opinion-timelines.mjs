@@ -381,6 +381,154 @@ function rebuildIndex() {
   return { people: rows.length, opinions };
 }
 
+function readableBlockquote(value) {
+  const text = clean(value, 1800);
+  if (!text) return "> 未提供可用文本。";
+  return text.split(/\r?\n/u).map((line) => `> ${line}`).join("\n");
+}
+
+function readableFormalTags(record) {
+  if (!Array.isArray(record.formalTags)) return "未标注";
+  const names = record.formalTags.map((tag) => tag?.name).filter(Boolean);
+  return names.length ? names.join(" / ") : "未标注";
+}
+
+function readableEntryMarkdown(record) {
+  const title = clean(record.translation || record.text || record.content || "Untitled", 140);
+  const original = record.content || record.text || "";
+  const translation = record.contentTranslation || record.translation || "";
+  return [
+    `### ${record.day} - ${title}`,
+    "",
+    `- 原始来源: ${record.url || record.id || "no-url"}`,
+    `- 来源类型: ${record.source || "unknown"}`,
+    `- 同步来源: follow-builders-daily.json @ ${record.snapshotDate} / ${record.snapshotHash.slice(0, 7)}`,
+    "- 当前档位: intake / first_line_viewpoint",
+    `- 来源标记: ${sourceLabel(record)}`,
+    `- 观点标签: ${readableFormalTags(record)}`,
+    "<!-- opinion-card-detail:start -->",
+    "#### 观点详情",
+    "",
+    `- 标题: ${clean(record.text || record.translation || "Untitled", 220)}`,
+    `- 人物: ${record.name || record.handle || "Unknown Builder"}`,
+    `- 原始日期: ${record.day}`,
+    `- 原始来源: ${record.url || record.id || "no-url"}`,
+    "- 当前档位: intake / first_line_viewpoint",
+    "",
+    "**中文翻译**",
+    "",
+    readableBlockquote(translation),
+    "",
+    "**原文摘录**",
+    "",
+    readableBlockquote(original),
+    "",
+    "<!-- opinion-card-detail:end -->",
+    "",
+  ].join("\n");
+}
+
+function insertReadableDateEntries(file, personName, day, entries) {
+  const body = entries.map(readableEntryMarkdown).join("\n");
+  let text = readText(file);
+  if (!text) {
+    text = [
+      "---",
+      "type: opinion_person_day_timeline",
+      `person_name: ${yamlQuote(personName)}`,
+      `date: ${day}`,
+      "opinion_count: 0",
+      "---",
+      "",
+      `# ${personName} - ${day}`,
+      "",
+    ].join("\n");
+  }
+
+  const titleMatch = text.match(/^#\s+.+$/mu);
+  if (titleMatch) {
+    const insertAt = titleMatch.index + titleMatch[0].length;
+    text = `${text.slice(0, insertAt)}\n\n${body}${text.slice(insertAt).replace(/^\s*/u, "\n")}`;
+  } else {
+    text = `${text.trimEnd()}\n\n${body}`;
+  }
+
+  text = replaceFrontmatterValue(text, "opinion_count", String(countHeadings(text)));
+  writeText(file, `${text.trimEnd()}\n`);
+}
+
+function updateReadablePersonReadme(personDir, personName) {
+  const rows = timelineFiles(personDir).sort().reverse().map((file) => {
+    const text = readText(file);
+    return {
+      label: path.basename(file, ".md"),
+      count: countHeadings(text),
+      latest: latestHeadingDate(text),
+    };
+  });
+  const count = rows.reduce((sum, item) => sum + item.count, 0);
+  const latest = rows.map((item) => item.latest).filter(Boolean).sort().at(-1) || "unknown";
+  const lines = [
+    "---",
+    "type: opinion_person_timeline",
+    `person_name: ${yamlQuote(personName)}`,
+    `opinion_count: ${count}`,
+    `latest_date: ${latest}`,
+    "---",
+    "",
+    `# ${personName} 观点时间线`,
+    `共 ${count} 条观点，按人物 + 日期文件聚合。`,
+    "## 日期",
+    "",
+    ...rows.map((item) => `- [${item.label}](./${item.label}.md)`),
+    "",
+  ];
+  writeText(path.join(personDir, "README.md"), lines.join("\n"));
+  return { count, latest };
+}
+
+function rebuildReadableIndex() {
+  const rows = [];
+  if (!fs.existsSync(peopleRoot)) return { people: 0, opinions: 0 };
+  for (const entry of fs.readdirSync(peopleRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const personDir = path.join(peopleRoot, entry.name);
+    const fm = parseFrontmatter(readText(path.join(personDir, "README.md")));
+    const personName = fm.person_name || entry.name;
+    const files = timelineFiles(personDir);
+    const count = files.reduce((sum, file) => sum + countHeadings(readText(file)), 0);
+    const latest = files.map((file) => latestHeadingDate(readText(file))).filter(Boolean).sort().at(-1) || "unknown";
+    rows.push({ slug: entry.name, personName, count, latest });
+  }
+
+  rows.sort((a, b) => {
+    const byLatest = String(b.latest).localeCompare(String(a.latest));
+    if (byLatest) return byLatest;
+    return b.count - a.count;
+  });
+
+  const opinions = rows.reduce((sum, item) => sum + item.count, 0);
+  const lines = [
+    "---",
+    "type: opinion_timelines_index",
+    `people_count: ${rows.length}`,
+    `opinion_count: ${opinions}`,
+    `generated_at: ${new Date().toISOString()}`,
+    "---",
+    "",
+    "# 前沿观点 - 人物时间线目录",
+    "这个目录是 Obsidian 浏览视图：观点按人物和日期文件聚合，便于每日同步、检索和回滚。",
+    "每条观点保留来源链接、原文摘录、中文翻译和同步来源；Builder 观点仅作为一线观点资产，不作为商业信号事实证据。",
+    "",
+    "## 人物",
+    "",
+    ...rows.map((item) => `- [${item.personName}](people/${item.slug}/README.md) - ${item.count} 条 - 最新 ${item.latest}`),
+    "",
+  ];
+  writeText(path.join(timelineRoot, "README.md"), lines.join("\n"));
+  return { people: rows.length, opinions };
+}
+
 function main() {
   ensure(peopleRoot);
   const records = collectRecords();
@@ -395,7 +543,7 @@ function main() {
   }
 
   for (const group of groups.values()) {
-    insertDateEntries(
+    insertReadableDateEntries(
       path.join(peopleRoot, group.slug, `${group.day}.md`),
       group.personName,
       group.day,
@@ -404,10 +552,10 @@ function main() {
   }
 
   for (const group of groups.values()) {
-    updatePersonReadme(path.join(peopleRoot, group.slug), group.personName);
+    updateReadablePersonReadme(path.join(peopleRoot, group.slug), group.personName);
   }
 
-  const index = rebuildIndex();
+  const index = rebuildReadableIndex();
   console.log(JSON.stringify({
     ok: true,
     from,

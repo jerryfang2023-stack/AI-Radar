@@ -15,3 +15,5 @@ When `raw_count_min` blocks a high-quality run, artifact recovery must rebuild C
 ## 2026-06-12
 
 News-site homepages and generic root URLs can contain unrelated article/sidebar fragments that look like concrete AI events. Treat root/homepage URLs as index-only evidence unless they resolve to a dated article or first-party event before Card generation.
+
+The 2026-06-11 and 2026-06-12 Business Signals incidents showed that `frontstageSelection` can look healthy while the public `top10` contract is missing or empty. Treat `frontstageSelection=10` without `top10.length=10` as a production failure, not a display quirk. Weekly health must read Hermes inbox incidents and action logs so repeated categories such as `business_signals_top10_missing` become gate / eval / MEMORY updates instead of another same-day patch.

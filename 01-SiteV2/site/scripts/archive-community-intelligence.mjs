@@ -107,6 +107,17 @@ function dedupeKey(item, sources = {}) {
   return `${item.source}:body:${normalize([item.summary, item.evidence, item.excerpt].join(" "))}`;
 }
 
+function dedupeKeys(item, sources = {}) {
+  const keys = [];
+  const url = canonicalUrl(item, sources);
+  if (url) keys.push(`${item.source}:url:${url}`);
+  const titleKey = normalize(item.title);
+  if (titleKey.length > 12) keys.push(`${item.source}:title:${titleKey}`);
+  const bodyKey = normalize([item.summary, item.evidence, item.excerpt].join(" "));
+  if (bodyKey.length > 24) keys.push(`${item.source}:body:${bodyKey}`);
+  return keys.length ? keys : [dedupeKey(item, sources)];
+}
+
 function uniq(values = []) {
   return [...new Set(values.flat().map(clean).filter(Boolean))];
 }
@@ -164,15 +175,20 @@ function valueScore(item) {
 }
 
 function mergeItems(items = [], sources = {}, baseValue = new Date()) {
-  const groups = new Map();
+  const groups = [];
+  const keyToGroup = new Map();
   for (const item of items) {
-    const key = dedupeKey(item, sources);
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(item);
+    const keys = dedupeKeys(item, sources);
+    const index = keys.map((key) => keyToGroup.get(key)).find((value) => value !== undefined);
+    const groupIndex = index === undefined ? groups.length : index;
+    if (index === undefined) groups.push([]);
+    groups[groupIndex].push(item);
+    keys.forEach((key) => keyToGroup.set(key, groupIndex));
   }
-  return [...groups.values()].map((group) => {
+  return groups.map((group) => {
     const sorted = [...group].sort((a, b) => comparePublishedDesc(a, b, baseValue) || valueScore(b) - valueScore(a) || itemLinks(b).length - itemLinks(a).length);
     const base = { ...sorted[0] };
+    const preferredUrl = group.map((item) => canonicalUrl(item, sources)).find(Boolean) || "";
     const linkMap = new Map();
     for (const item of group) {
       for (const link of itemLinks(item)) {
@@ -180,6 +196,7 @@ function mergeItems(items = [], sources = {}, baseValue = new Date()) {
       }
     }
     const keywords = uniq(group.flatMap((item) => item.matchedKeywords || item.collection?.keywords || item.collection?.keyword || []));
+    base.url = preferredUrl || canonicalUrl(base, sources) || base.url;
     base.links = [...linkMap.values()];
     base.tools = uniq(group.flatMap((item) => item.tools || []));
     base.painPoints = uniq(group.flatMap((item) => item.painPoints || []));
