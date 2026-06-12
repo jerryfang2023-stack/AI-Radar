@@ -2034,7 +2034,7 @@ function commercialSignalHardGate(item = {}, snapshotText = "", excerpts = []) {
   const evidenceObjectType = classifyEvidenceObjectType(item, snapshotText, excerpts);
   const indexOnlyEvidence = isIndexOnlyEvidenceObject(evidenceObjectType);
   const eventEvidence = isEventEvidenceObject(evidenceObjectType);
-  const directoryObservation = isHomepageOrDirectoryObservation(item, snapshotText, excerpts) || indexOnlyEvidence;
+  const directoryObservation = isRootLikePath(item) || isHomepageOrDirectoryObservation(item, snapshotText, excerpts) || indexOnlyEvidence;
   const evidenceObjectUsable = eventEvidence && !directoryObservation;
   return {
     actionDetected,

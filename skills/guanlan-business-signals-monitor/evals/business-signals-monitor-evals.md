@@ -17,6 +17,7 @@ Use these as pass/fail checks after production, repair, or rule changes.
 - PASS if a `raw_count_min`-only recovery rebuilds Cards and site data locally before commit; FAIL if stale artifact `site-content.json` is copied as final site data.
 - PASS if high-score watchlist aggregate data is used only to repair or reroute source-backed Pool entries; FAIL if watchlist entries directly generate Cards.
 - PASS if English frontstage titles or title-like subjects are rebuilt and gated; FAIL if untranslated titles or `subject=title` reach the frontstage.
+- PASS if root/homepage URLs are kept as index-only or watchlist evidence; FAIL if a news-site homepage or generic directory URL generates a Signal Card or reaches frontstage.
 
 ## Self-Improvement
 

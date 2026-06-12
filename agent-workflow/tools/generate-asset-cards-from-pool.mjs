@@ -810,6 +810,16 @@ const monthNames = new Map([
   ["december", 11],
 ]);
 
+function isRootOrHomeSourceUrl(value = "") {
+  try {
+    const parsed = new URL(value);
+    const pathname = parsed.pathname.replace(/\/+$/u, "");
+    return pathname === "" || /^\/(?:index\.html?|home)$/iu.test(parsed.pathname);
+  } catch {
+    return false;
+  }
+}
+
 function sectionHasUsableEvidenceObject(section) {
   const evidenceCompleteness = value(section, "evidence_completeness");
   const keyExcerpts = value(section, "key_excerpts");
@@ -911,7 +921,7 @@ function corePoolSemanticIssues(section) {
   if (isStalePublication(section, 30)) issues.push("stale_source_date");
   if (value(section, "index_only_evidence") === "true") issues.push("index_only_evidence");
   if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(`index_only_evidence_type:${evidenceObjectType}`);
-  if (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl)) {
+  if (isRootOrHomeSourceUrl(sourceUrl) || (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl))) {
     issues.push("index_or_directory_url");
   }
   if (discoveryOnlyPattern.test(`${value(section, "acquisition_channel")} ${value(section, "source_role")}`) && value(section, "source_role") !== "resolved_original_source") {
