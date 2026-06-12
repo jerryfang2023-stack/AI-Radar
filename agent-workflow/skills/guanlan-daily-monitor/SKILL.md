@@ -1,6 +1,19 @@
 ---
 name: guanlan-daily-monitor
 description: Use when running, repairing, or updating the WaveSight AI current V3.3 daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Business Signals"
+    status: "current sub-skill"
+    order: 40
+    responsibility: "Run and repair the narrow Business Signals Raw / Pool monitoring chain."
+    upstream: "external monitoring sources"
+    downstream: "Raw / Pool outputs and daily reports"
+    gates: "source capture, pool thresholds, quality gating"
+    recent_learning: "Keep V3.3.5 thresholds aligned with current context; do not revive old Raw 80-150 / Pool 20-40 targets."
+    mirrored_in_skill_store: true
+    memory_required: false
 ---
 
 # Guanlan Daily Monitor
@@ -18,7 +31,7 @@ Read only what is needed:
 5. `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
 6. `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md`
 
-For regression prevention, read `evals/daily-monitor-evals.md` when running, repairing, or updating this skill.
+For regression prevention, read `evals/daily-monitor-evals.md` when running, repairing, or updating this skill. When checking threshold or evidence-shape regressions, also read `examples/good-monitor-run.md` and `examples/bad-old-thresholds.md`.
 
 ## Mission
 

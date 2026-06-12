@@ -1,6 +1,19 @@
 ---
 name: guanlan-raw-pool-card
 description: Use when running, repairing, auditing, or changing WaveSight AI Raw to Pool to Core Pool to Signal Card to frontstage production. Covers daily Raw/Pool quantity targets, Core Pool qualification, Signal Card generation, Top10 selection, full Core Pool candidate display, large-company caps, and site/Obsidian handoff rules.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Business Signals"
+    status: "current sub-skill"
+    order: 70
+    responsibility: "Convert eligible Raw / Pool evidence into source-backed Business Signal Cards."
+    upstream: "eligible Raw / Pool items"
+    downstream: "Signal Cards and card examples"
+    gates: "source-backed details, type contract, field discipline"
+    recent_learning: "Card frontstage details must come from original source text, not old summaries or backend fallbacks."
+    mirrored_in_skill_store: true
+    memory_required: true
 ---
 
 # Guanlan Raw Pool Card

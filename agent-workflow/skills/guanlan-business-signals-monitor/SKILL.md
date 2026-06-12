@@ -1,6 +1,19 @@
 ---
 name: guanlan-business-signals-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI V3.3.5 Business Signals lane. Covers daily Raw / Pool / Signal Card / Top10 / Intelligence Map / trend-candidate inputs, source-first gates, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Business Signals"
+    status: "current lane owner"
+    order: 10
+    responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, Signal Cards, public Top10, Intelligence Map inputs, and trend-candidate inputs."
+    upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
+    downstream: "Signal Cards, public Top10, graph inputs, trend candidates, PR publication"
+    gates: "monitor QC, post-monitor Raw / Pool gate, Card generation, source-first, frontstage Top10"
+    recent_learning: "Top10 is not complete unless the public top10 contract is present and current, even when Cards and selection data exist."
+    mirrored_in_skill_store: true
+    memory_required: true
 ---
 
 # Guanlan Business Signals Monitor

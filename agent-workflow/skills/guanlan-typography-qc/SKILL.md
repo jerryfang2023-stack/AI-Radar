@@ -1,6 +1,19 @@
 ---
 name: guanlan-typography-qc
 description: Audit WaveSight AI / Guanlan V3.3.1 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, shared navigation typography, Business Signals, First-Line Viewpoints, Dashboard, cards, graph/trend modules, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Cross-lane UI"
+    status: "supporting skill"
+    order: 100
+    responsibility: "Check WaveSight typography and layout copy issues when page work changes."
+    upstream: "frontstage pages"
+    downstream: "UI QC notes"
+    gates: "typography and UI consistency"
+    recent_learning: "Use only for page or typography work, not data truth."
+    mirrored_in_skill_store: true
+    memory_required: false
 ---
 
 # Guanlan Typography QC
@@ -24,7 +37,7 @@ If reviewing visible pages, also inspect:
 - `01-SiteV2/site/assets/app.js`
 - Desktop screenshots or browser-rendered pages
 
-For regression prevention, read `evals/typography-qc-evals.md` when auditing, repairing, or updating this skill.
+For regression prevention, read `evals/typography-qc-evals.md` when auditing, repairing, or updating this skill. When checking visible regressions, also read `examples/good-typography-check.md` and `examples/bad-vw-clamp.md`.
 
 ## What To Check
 

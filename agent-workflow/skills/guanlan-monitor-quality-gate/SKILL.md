@@ -1,6 +1,19 @@
 ---
 name: guanlan-monitor-quality-gate
 description: Run or repair the WaveSight AI V3.3.1 daily-monitor script pre-gate for automated scoring, hard thresholds, and up to 3 bounded refetch cycles. It checks Raw / Pool counts, routed Pool, core_pool depth, source distribution, S/A/B ratio, keyword paths, non-community evidence, theme concentration, and basic business relevance. It is not final QC; downstream release still requires guanlan-daily-monitor-qc.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Business Signals"
+    status: "current sub-skill"
+    order: 50
+    responsibility: "Gate monitor output before downstream Card and asset generation."
+    upstream: "Raw / Pool output"
+    downstream: "monitor pass/fail reports"
+    gates: "eligibility, evidence quality, source-first fields"
+    recent_learning: "A pass should block weak source summaries before they become public Cards."
+    mirrored_in_skill_store: true
+    memory_required: false
 ---
 
 # Guanlan Monitor Quality Gate
@@ -59,6 +72,7 @@ For standalone debugging or threshold changes, read only the specific file neede
 - Retry wrapper bug: `agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`
 - Score explanation conflict: `C:\Users\86186\.skill-store\guanlan-monitor-quality-gate\references\scorecard.md`
 - Skill regression check: `C:\Users\86186\.skill-store\guanlan-monitor-quality-gate\evals\monitor-quality-gate-evals.md`
+- Gate-shape examples: `examples/good-pre-gate-block.md` and `examples/bad-count-only-pass.md`
 
 Do not read the JSON or scripts during normal human startup. Scripts read configuration directly.
 

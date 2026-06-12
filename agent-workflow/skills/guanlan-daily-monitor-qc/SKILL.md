@@ -1,6 +1,19 @@
 ---
 name: guanlan-daily-monitor-qc
 description: Audit WaveSight AI V3.3.1 daily-monitor Raw / Pool quality before downstream business-signal production. Use for Raw evidence completeness, Pool routing, source quality, discovery-channel separation, large-company concentration, full-text integrity, monitor logs, and Markdown allow / allow_with_degradation / block decisions. Do not generate Cards, daily observations, trend reports, business briefs, or first-line builders viewpoints.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Business Signals"
+    status: "current sub-skill"
+    order: 60
+    responsibility: "Audit Raw / Pool quality release and prevent noisy or stale monitor output."
+    upstream: "monitor reports and Raw / Pool data"
+    downstream: "QC decision, repair route"
+    gates: "Raw quality, Pool quality, release readiness"
+    recent_learning: "QC should protect source-backed judgment, not merely count items."
+    mirrored_in_skill_store: true
+    memory_required: false
 ---
 
 # Guanlan Daily Monitor QC
@@ -38,7 +51,7 @@ If script-level score output exists, also read:
 - `agent-workflow/reports/<YYYY-MM-DD>-guanlan-monitor-quality-gate.md`
 - `agent-workflow/reports/<YYYY-MM-DD>-guanlan-daily-monitor-quality-loop.md`
 
-For self-improvement and regression prevention, read `evals/daily-monitor-qc-evals.md` when auditing, repairing, or updating this skill.
+For self-improvement and regression prevention, read `evals/daily-monitor-qc-evals.md` when auditing, repairing, or updating this skill. When deciding whether a run is truly releasable, also read `examples/good-qc-release.md` and `examples/bad-count-only-qc.md`.
 
 Read these only when a finding depends on the detail:
 

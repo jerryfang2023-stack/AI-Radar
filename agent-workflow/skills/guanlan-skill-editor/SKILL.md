@@ -1,6 +1,19 @@
 ---
 name: guanlan-skill-editor
 description: Use when auditing, creating, updating, or cleaning WaveSight AI / Guanlan skills. Applies to Guanlan skill trigger descriptions, stale V2 rule removal, eval coverage, MEMORY.md hygiene, examples/references structure, conflicts between skills, and periodic skill self-improvement after real production incidents.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Skill system"
+    status: "governance"
+    order: 110
+    responsibility: "Audit, create, update, and clean Guanlan skills."
+    upstream: "current context, target skills, incidents"
+    downstream: "skill edits, evals, examples, memory"
+    gates: "trigger clarity, stale rule removal, eval coverage, memory hygiene"
+    recent_learning: "Recurring failures should become evals or concise memory before long prose."
+    mirrored_in_skill_store: true
+    memory_required: false
 ---
 
 # Guanlan Skill Editor
@@ -17,6 +30,7 @@ Read only what is needed:
 2. Target skill `evals/`, `examples/`, `references/`, and `MEMORY.md` if present.
 3. `references/audit-checklist.md` when doing a full audit.
 4. `references/memory-policy.md` when editing memory.
+5. `examples/good-skill-update.md` and `examples/bad-long-prose-rule.md` when deciding whether to add evals, examples, memory, or long prose.
 
 For Guanlan system truth, prefer the project context files over old reports:
 

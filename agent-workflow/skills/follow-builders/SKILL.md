@@ -1,6 +1,19 @@
 ---
 name: follow-builders
 description: AI builders digest — monitors top AI builders on X and YouTube podcasts, remixes their content into digestible summaries. Use when the user wants AI industry insights, first-line builder viewpoints, builder updates, or invokes /ai. Do not use as business-signal fact evidence for WaveSight AI Raw / Pool / Card, relationship graph, or trend-candidate production.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "First-Line Viewpoints"
+    status: "supporting skill"
+    order: 90
+    responsibility: "Generic builder digest behavior used by the First-Line Viewpoints lane owner."
+    upstream: "builder sources"
+    downstream: "digest entries used by lane scripts"
+    gates: "source and digest boundary"
+    recent_learning: "It can support First-Line Viewpoints, but it is not the lane owner."
+    mirrored_in_skill_store: true
+    memory_required: false
 ---
 
 # Follow Builders, Not Influencers

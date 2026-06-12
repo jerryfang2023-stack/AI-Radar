@@ -1,20 +1,28 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T14:49:15.653Z",
+  "generated_at": "2026-06-12T15:04:14.572Z",
   "date": "2026-06-12",
   "action": "Column monitor skills",
   "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Upgraded operations Skill Store into a Skill Ops dashboard backed by skill-registry, generated local skill data, sync coverage, lane owner status, and governance filters.",
+  "summary": "Added Skill Ops automation: registry generation from metadata, governed skill validation, skill-store diff and sync, version metadata, complete examples coverage, and audit hook.",
   "contexts": [],
   "changed_files": [],
   "outputs": [
-    "01-SiteV2/site/local-skill-store.html; 01-SiteV2/site/assets/local-skill-store.js; 01-SiteV2/site/data/local-skill-store-data.js; agent-workflow/tools/build-skill-store-dashboard.mjs; agent-workflow/skills/skill-registry.md"
+    "agent-workflow/tools/build-skill-registry.mjs",
+    "agent-workflow/tools/validate-guanlan-skills.mjs",
+    "agent-workflow/tools/diff-skill-store.mjs",
+    "agent-workflow/tools/sync-skill-store.mjs",
+    "agent-workflow/skills/skill-registry.md"
   ],
   "checks": [
-    "npm run build:skill-store-dashboard; node --check dashboard generator and frontend script; quick_validate changed .skill-store skills; Playwright desktop/mobile render and operations iframe checks"
+    "npm run audit:skills",
+    "npm run validate:guanlan-skills",
+    "npm run diff:skill-store",
+    "quick_validate 11 governed skills",
+    "node --check Skill Ops scripts"
   ],
   "issues": [],
   "risks": [],

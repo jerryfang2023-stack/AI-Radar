@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-12 22:46:30",
+    "generatedAt": "2026-06-12 23:06:44",
     "generatedDate": "2026-06-12",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
@@ -10,10 +10,10 @@ window.WaveSightLocalSkillStore = {
       "guanlan": 16,
       "current": 11,
       "laneOwners": 3,
-      "needsAction": 16,
+      "needsAction": 5,
       "syncIssues": 0,
-      "evalCoverage": 91,
-      "exampleCoverage": 55
+      "evalCoverage": 100,
+      "exampleCoverage": 100
     }
   },
   "skills": [
@@ -29,13 +29,13 @@ window.WaveSightLocalSkillStore = {
       "upstream": "builder sources",
       "downstream": "digest entries used by lane scripts",
       "gates": "source and digest boundary",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 1; memory no; references no",
       "learning": "It can support First-Line Viewpoints, but it is not the lane owner.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Generic builder digest behavior used by the First-Line Viewpoints lane owner.",
       "originalDescription": "AI builders digest — monitors top AI builders on X and YouTube podcasts, remixes their content into digestible summaries. Use when the user wants AI industry insights, first-line builder viewpoints, builder updates, or invokes /ai. Do not use as business-signal fact evidence for WaveSight AI Raw / Pool / Card, relationship graph, or trend-candidate production.",
       "localPath": "C:\\Users\\86186\\.skill-store\\follow-builders",
@@ -49,19 +49,13 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 192,
+      "sizeKB": 193,
       "fileCount": 23,
-      "modifiedAt": "2026-06-11 19:00:42",
-      "modifiedTime": 1781175642147.0464,
-      "issueCount": 1,
-      "issueSeverity": "low",
-      "issues": [
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "modifiedAt": "2026-06-12 22:58:54",
+      "modifiedTime": 1781276334281.657,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-business-signals-monitor",
@@ -75,13 +69,13 @@ window.WaveSightLocalSkillStore = {
       "upstream": "external source capture, daily persistent assets workflow, Hermes inbox",
       "downstream": "Signal Cards, public Top10, graph inputs, trend candidates, PR publication",
       "gates": "monitor QC, post-monitor Raw / Pool gate, Card generation, source-first, frontstage Top10",
-      "evalCoverage": "",
-      "learning": "Top10 is not complete unless the public `top10` contract is present and current, even when Cards and selection data exist.",
+      "evalCoverage": "evals 1; examples 2; memory yes; references yes",
+      "learning": "Top10 is not complete unless the public top10 contract is present and current, even when Cards and selection data exist.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Own Business Signals daily supervision and repair: Raw, Pool, Signal Cards, public Top10, Intelligence Map inputs, and trend-candidate inputs.",
       "originalDescription": "Use when supervising, running, repairing, or improving the WaveSight AI V3.3.5 Business Signals lane. Covers daily Raw / Pool / Signal Card / Top10 / Intelligence Map / trend-candidate inputs, source-first gates, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-business-signals-monitor",
@@ -95,19 +89,13 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 8,
+      "sizeKB": 9,
       "fileCount": 7,
-      "modifiedAt": "2026-06-12 22:42:36",
-      "modifiedTime": 1781275356851.1265,
-      "issueCount": 1,
-      "issueSeverity": "low",
-      "issues": [
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "modifiedAt": "2026-06-12 22:58:23",
+      "modifiedTime": 1781276303134.675,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-community-intelligence-monitor",
@@ -121,13 +109,13 @@ window.WaveSightLocalSkillStore = {
       "upstream": "local Windows collection, community publish workflow, Hermes inbox",
       "downstream": "community frontstage data, archive snapshots, community PR publication",
       "gates": "local collection availability, community data assertion, archive presence, publication completeness",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory yes; references yes",
       "learning": "GitHub can publish validated community files but cannot replace logged-in local collection.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Own Community Intelligence supervision and repair: local logged-in collection, archive outputs, community data gate, and publication handoff.",
       "originalDescription": "Use when supervising, running, repairing, or improving the WaveSight AI V3.3.5 Community Intelligence lane. Covers local logged-in collection, archive generation, community data gate, local publish handoff, GitHub publish PR, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-community-intelligence-monitor",
@@ -141,19 +129,13 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 7,
+      "sizeKB": 8,
       "fileCount": 7,
-      "modifiedAt": "2026-06-12 22:42:36",
-      "modifiedTime": 1781275356928.568,
-      "issueCount": 1,
-      "issueSeverity": "low",
-      "issues": [
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "modifiedAt": "2026-06-12 22:58:23",
+      "modifiedTime": 1781276303136.6826,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-daily-monitor",
@@ -167,44 +149,33 @@ window.WaveSightLocalSkillStore = {
       "upstream": "external monitoring sources",
       "downstream": "Raw / Pool outputs and daily reports",
       "gates": "source capture, pool thresholds, quality gating",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory no; references no",
       "learning": "Keep V3.3.5 thresholds aligned with current context; do not revive old Raw 80-150 / Pool 20-40 targets.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Run and repair the narrow Business Signals Raw / Pool monitoring chain.",
       "originalDescription": "Use when running, repairing, or updating the WaveSight AI current V3.3 daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-daily-monitor",
       "projectPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\guanlan-daily-monitor",
       "hasSkillMd": true,
       "hasEvals": true,
-      "hasExamples": false,
+      "hasExamples": true,
       "hasMemory": false,
       "hasReferences": true,
       "hasScripts": false,
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 6,
-      "fileCount": 3,
-      "modifiedAt": "2026-06-12 22:38:27",
-      "modifiedTime": 1781275107613.003,
-      "issueCount": 2,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "missing-examples",
-          "label": "缺 examples",
-          "severity": "medium"
-        },
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "sizeKB": 8,
+      "fileCount": 5,
+      "modifiedAt": "2026-06-12 22:59:34",
+      "modifiedTime": 1781276374935.861,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-daily-monitor-qc",
@@ -218,44 +189,33 @@ window.WaveSightLocalSkillStore = {
       "upstream": "monitor reports and Raw / Pool data",
       "downstream": "QC decision, repair route",
       "gates": "Raw quality, Pool quality, release readiness",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory no; references no",
       "learning": "QC should protect source-backed judgment, not merely count items.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Audit Raw / Pool quality release and prevent noisy or stale monitor output.",
       "originalDescription": "Audit WaveSight AI V3.3.1 daily-monitor Raw / Pool quality before downstream business-signal production. Use for Raw evidence completeness, Pool routing, source quality, discovery-channel separation, large-company concentration, full-text integrity, monitor logs, and Markdown allow / allow_with_degradation / block decisions. Do not generate Cards, daily observations, trend reports, business briefs, or first-line builders viewpoints.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-daily-monitor-qc",
       "projectPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\guanlan-daily-monitor-qc",
       "hasSkillMd": true,
       "hasEvals": true,
-      "hasExamples": false,
+      "hasExamples": true,
       "hasMemory": false,
       "hasReferences": false,
       "hasScripts": false,
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 17,
-      "fileCount": 3,
-      "modifiedAt": "2026-06-07 22:08:03",
-      "modifiedTime": 1780841283496.1953,
-      "issueCount": 2,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "missing-examples",
-          "label": "缺 examples",
-          "severity": "medium"
-        },
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "sizeKB": 18,
+      "fileCount": 5,
+      "modifiedAt": "2026-06-12 22:59:34",
+      "modifiedTime": 1781276374969.1328,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-first-line-viewpoints-monitor",
@@ -267,15 +227,15 @@ window.WaveSightLocalSkillStore = {
       "status": "current lane owner",
       "responsibility": "Own First-Line Viewpoints supervision and repair: builders data, Chinese translation, formal tags, and Obsidian person/date timelines.",
       "upstream": "follow-builders source data, builders workflow, Hermes inbox",
-      "downstream": "`follow-builders-daily.json`, frontstage page data, Obsidian opinion timelines, PR publication",
+      "downstream": "follow-builders-daily.json, frontstage page data, Obsidian opinion timelines, PR publication",
       "gates": "builders data assertion, translation gate, URL/tag checks, sync idempotency",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory yes; references yes",
       "learning": "V3.3.5 sync success means same-date person/date timeline files, not old month files.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Own First-Line Viewpoints supervision and repair: builders data, Chinese translation, formal tags, and Obsidian person/date timelines.",
       "originalDescription": "Use when supervising, running, repairing, or improving the WaveSight AI V3.3.5 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-first-line-viewpoints-monitor",
@@ -291,17 +251,11 @@ window.WaveSightLocalSkillStore = {
       "hasTemplates": false,
       "sizeKB": 7,
       "fileCount": 7,
-      "modifiedAt": "2026-06-12 22:42:36",
-      "modifiedTime": 1781275356912.8303,
-      "issueCount": 1,
-      "issueSeverity": "low",
-      "issues": [
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "modifiedAt": "2026-06-12 22:58:23",
+      "modifiedTime": 1781276303136.6826,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-monitor-quality-gate",
@@ -315,44 +269,33 @@ window.WaveSightLocalSkillStore = {
       "upstream": "Raw / Pool output",
       "downstream": "monitor pass/fail reports",
       "gates": "eligibility, evidence quality, source-first fields",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory no; references yes",
       "learning": "A pass should block weak source summaries before they become public Cards.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Gate monitor output before downstream Card and asset generation.",
       "originalDescription": "Run or repair the WaveSight AI V3.3.1 daily-monitor script pre-gate for automated scoring, hard thresholds, and up to 3 bounded refetch cycles. It checks Raw / Pool counts, routed Pool, core_pool depth, source distribution, S/A/B ratio, keyword paths, non-community evidence, theme concentration, and basic business relevance. It is not final QC; downstream release still requires guanlan-daily-monitor-qc.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-monitor-quality-gate",
       "projectPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\guanlan-monitor-quality-gate",
       "hasSkillMd": true,
       "hasEvals": true,
-      "hasExamples": false,
+      "hasExamples": true,
       "hasMemory": false,
       "hasReferences": true,
       "hasScripts": false,
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 13,
-      "fileCount": 4,
-      "modifiedAt": "2026-06-07 22:08:03",
-      "modifiedTime": 1780841283496.1953,
-      "issueCount": 2,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "missing-examples",
-          "label": "缺 examples",
-          "severity": "medium"
-        },
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "sizeKB": 14,
+      "fileCount": 6,
+      "modifiedAt": "2026-06-12 22:59:34",
+      "modifiedTime": 1781276374954.8125,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-raw-pool-card",
@@ -366,13 +309,13 @@ window.WaveSightLocalSkillStore = {
       "upstream": "eligible Raw / Pool items",
       "downstream": "Signal Cards and card examples",
       "gates": "source-backed details, type contract, field discipline",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory yes; references yes",
       "learning": "Card frontstage details must come from original source text, not old summaries or backend fallbacks.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Convert eligible Raw / Pool evidence into source-backed Business Signal Cards.",
       "originalDescription": "Use when running, repairing, auditing, or changing WaveSight AI Raw to Pool to Core Pool to Signal Card to frontstage production. Covers daily Raw/Pool quantity targets, Core Pool qualification, Signal Card generation, Top10 selection, full Core Pool candidate display, large-company caps, and site/Obsidian handoff rules.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-raw-pool-card",
@@ -388,17 +331,11 @@ window.WaveSightLocalSkillStore = {
       "hasTemplates": false,
       "sizeKB": 14,
       "fileCount": 7,
-      "modifiedAt": "2026-06-12 13:05:03",
-      "modifiedTime": 1781240703069.5403,
-      "issueCount": 1,
-      "issueSeverity": "low",
-      "issues": [
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "modifiedAt": "2026-06-12 22:58:23",
+      "modifiedTime": 1781276303139.4165,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-skill-editor",
@@ -412,49 +349,33 @@ window.WaveSightLocalSkillStore = {
       "upstream": "current context, target skills, incidents",
       "downstream": "skill edits, evals, examples, memory",
       "gates": "trigger clarity, stale rule removal, eval coverage, memory hygiene",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory no; references yes",
       "learning": "Recurring failures should become evals or concise memory before long prose.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Audit, create, update, and clean Guanlan skills.",
       "originalDescription": "Use when auditing, creating, updating, or cleaning WaveSight AI / Guanlan skills. Applies to Guanlan skill trigger descriptions, stale V2 rule removal, eval coverage, MEMORY.md hygiene, examples/references structure, conflicts between skills, and periodic skill self-improvement after real production incidents.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-skill-editor",
       "projectPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\guanlan-skill-editor",
       "hasSkillMd": true,
-      "hasEvals": false,
-      "hasExamples": false,
+      "hasEvals": true,
+      "hasExamples": true,
       "hasMemory": false,
       "hasReferences": true,
       "hasScripts": false,
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 6,
-      "fileCount": 4,
-      "modifiedAt": "2026-06-07 21:57:08",
-      "modifiedTime": 1780840628712.39,
-      "issueCount": 3,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "missing-evals",
-          "label": "缺 eval",
-          "severity": "medium"
-        },
-        {
-          "key": "missing-examples",
-          "label": "缺 examples",
-          "severity": "medium"
-        },
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "sizeKB": 8,
+      "fileCount": 7,
+      "modifiedAt": "2026-06-12 22:59:35",
+      "modifiedTime": 1781276375039.9631,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-trend-candidate-writer",
@@ -468,13 +389,13 @@ window.WaveSightLocalSkillStore = {
       "upstream": "Signal Cards, eligible Pool, recent source-backed history",
       "downstream": "trend candidate files or no-candidate reports",
       "gates": "multi-signal threshold, source-type diversity, boundary notes",
-      "evalCoverage": "",
-      "learning": "A single article, opinion, funding event, or \"trend\" title is not a trend candidate.",
+      "evalCoverage": "evals 1; examples 2; memory no; references no",
+      "learning": "A single article, opinion, funding event, or trend title is not a trend candidate.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Judge and write lightweight trend candidates or no-candidate decisions from multiple source-backed business signals.",
       "originalDescription": "Use when judging whether WaveSight AI V3.3.1 business-signal Cards, eligible Core Pool evidence, or recent source-backed history form a lightweight trend candidate. This skill writes trend candidate records or a no_trend_candidate_decision; it does not write full Trend Reports, daily observations, business briefs, opinion columns, or first-line builders viewpoints.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-trend-candidate-writer",
@@ -488,19 +409,13 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 10,
+      "sizeKB": 11,
       "fileCount": 5,
-      "modifiedAt": "2026-06-12 22:42:36",
-      "modifiedTime": 1781275356886.9702,
-      "issueCount": 1,
-      "issueSeverity": "low",
-      "issues": [
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "modifiedAt": "2026-06-12 22:58:23",
+      "modifiedTime": 1781276303141.4229,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-typography-qc",
@@ -514,44 +429,33 @@ window.WaveSightLocalSkillStore = {
       "upstream": "frontstage pages",
       "downstream": "UI QC notes",
       "gates": "typography and UI consistency",
-      "evalCoverage": "",
+      "evalCoverage": "evals 1; examples 2; memory no; references no",
       "learning": "Use only for page or typography work, not data truth.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "",
+      "version": "1.0.0",
       "description": "Check WaveSight typography and layout copy issues when page work changes.",
       "originalDescription": "Audit WaveSight AI / Guanlan V3.3.1 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, shared navigation typography, Business Signals, First-Line Viewpoints, Dashboard, cards, graph/trend modules, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-typography-qc",
       "projectPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\guanlan-typography-qc",
       "hasSkillMd": true,
       "hasEvals": true,
-      "hasExamples": false,
+      "hasExamples": true,
       "hasMemory": false,
       "hasReferences": false,
       "hasScripts": false,
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 7,
-      "fileCount": 3,
-      "modifiedAt": "2026-06-07 22:08:03",
-      "modifiedTime": 1780841283503.3147,
-      "issueCount": 2,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "missing-examples",
-          "label": "缺 examples",
-          "severity": "medium"
-        },
-        {
-          "key": "missing-version",
-          "label": "版本未知",
-          "severity": "low"
-        }
-      ]
+      "sizeKB": 9,
+      "fileCount": 5,
+      "modifiedAt": "2026-06-12 22:59:34",
+      "modifiedTime": 1781276374997.058,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": []
     },
     {
       "name": "guanlan-copy-style",

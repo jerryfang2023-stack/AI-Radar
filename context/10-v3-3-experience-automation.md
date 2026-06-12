@@ -42,6 +42,12 @@ Close a repaired Hermes request:
 npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
 ```
 
+Audit Guanlan Skill Ops after skill edits or repeated lane failures:
+
+```powershell
+npm run audit:skills
+```
+
 ## Output Files
 
 Action logs:
@@ -119,8 +125,9 @@ Use this loop after every real production failure:
 4. Codex records the repair action with `record:action`, including issues, risks, checks, and reusable lessons.
 5. Codex reruns the exact failed gate or the smallest relevant validation.
 6. Codex closes the Hermes inbox item only after recording the validation and prevention artifact.
-7. Weekly health reads daily supervision reports, Hermes inbox incidents, and action logs together.
-8. If the same incident category repeats twice in the weekly window, promote the lesson into one of:
+7. If the repair changes any Guanlan skill, Codex runs `npm run audit:skills` before closure.
+8. Weekly health reads daily supervision reports, Hermes inbox incidents, and action logs together.
+9. If the same incident category repeats twice in the weekly window, promote the lesson into one of:
    - a stricter gate;
    - a monitor skill eval;
    - durable `MEMORY.md` for the responsible monitor skill;
