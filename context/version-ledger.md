@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-11
+last_updated: 2026-06-12
 use_when:
   - task startup
   - page change
@@ -24,6 +24,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Release date | 2026-06-11 |
 | Last modified at | 2026-06-11T19:12:07+08:00 |
 | Product version | V3.3 |
+| Skill Store version | v1.0.0 Skill Ops baseline |
 | Git tag | `v3.3.5-builder-obsidian-date-timelines` |
 | Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
 
@@ -43,6 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
+- Skill Store governance is versioned separately as `v1.0.0`, with registry generation, current skill metadata, eval/example coverage, `.skill-store` sync, and Daily Loop Skill Ops checks.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
@@ -71,6 +73,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Page contracts | `context/frontstage-page-contracts.md` |
 | Quality gates | `context/04-qc-rules.md` |
 | Execution harness | `context/06-execution-harness.md` |
+| Skill Store version | `agent-workflow/skills/skill-store-version.json` |
 
 ## Must Not Return
 

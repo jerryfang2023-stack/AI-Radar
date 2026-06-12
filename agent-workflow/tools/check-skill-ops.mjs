@@ -12,6 +12,7 @@ if (jsonMode) {
   }, null, 2));
 } else {
   console.log(`Skill Ops status: ${result.status}`);
+  console.log(`Skill Store version: ${result.summary.skillStoreVersion ? `v${result.summary.skillStoreVersion}` : "unversioned"}`);
   console.log(`Governed skills: ${result.summary.governed}`);
   console.log(`Current skills: ${result.summary.current}`);
   console.log(`Lane owners: ${result.summary.laneOwners}`);

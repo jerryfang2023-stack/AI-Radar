@@ -13,6 +13,7 @@ export function defaultPaths(root = process.cwd()) {
     storeDir: process.env.GUANLAN_SKILL_STORE || path.join(os.homedir(), ".skill-store"),
     projectSkillDir: path.join(root, "agent-workflow", "skills"),
     registryPath: path.join(root, "agent-workflow", "skills", "skill-registry.md"),
+    versionPath: path.join(root, "agent-workflow", "skills", "skill-store-version.json"),
   };
 }
 
@@ -28,9 +29,27 @@ export function readText(file) {
   }
 }
 
+export function readJson(file, fallback = null) {
+  try {
+    return JSON.parse(readText(file));
+  } catch {
+    return fallback;
+  }
+}
+
 export function writeText(file, content) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, content, "utf8");
+}
+
+export function readSkillStoreVersion(paths = defaultPaths()) {
+  return readJson(paths.versionPath, {
+    schema_version: 1,
+    name: "Guanlan Skill Store",
+    version: "",
+    release_date: "",
+    stage: "",
+  }) || {};
 }
 
 function cleanScalar(value) {
@@ -233,12 +252,16 @@ export function isCurrentLike(status = "") {
 
 export function evaluateSkillOps(paths = defaultPaths()) {
   const skills = readGovernedSkills(paths.projectSkillDir);
+  const version = readSkillStoreVersion(paths);
   const errors = [];
   const syncRows = [];
   const currentSkills = skills.filter((skill) => isCurrentLike(skill.guanlan.status));
   const laneOwners = skills.filter((skill) => /lane owner/i.test(String(skill.guanlan.status || "")));
 
   if (!skills.length) errors.push("No governed Guanlan skills found.");
+  if (!/^\d+\.\d+\.\d+$/.test(String(version.version || ""))) {
+    errors.push("skill-store-version.json version must be semver");
+  }
 
   for (const skill of skills) {
     const meta = skill.guanlan;
@@ -281,7 +304,9 @@ export function evaluateSkillOps(paths = defaultPaths()) {
     ok: errors.length === 0,
     status: errors.length ? "failed" : "passed",
     errors,
+    version,
     summary: {
+      skillStoreVersion: version.version || "",
       governed: skills.length,
       current: currentSkills.length,
       laneOwners: laneOwners.length,
@@ -321,8 +346,10 @@ function latestMemoryLine(skill) {
   return line ? line.trim().replace(/^-\s+/, "") : "";
 }
 
-export function renderRegistryMarkdown(skills, date = new Date()) {
+export function renderRegistryMarkdown(skills, date = new Date(), version = readSkillStoreVersion()) {
   const dateText = formatDate(date);
+  const versionText = version.version ? `v${version.version}` : "unversioned";
+  const releaseText = version.release_date ? ` (${version.release_date})` : "";
   const rows = skills.map((skill) => {
     const meta = skill.guanlan;
     return [
@@ -342,6 +369,8 @@ export function renderRegistryMarkdown(skills, date = new Date()) {
   return `# Guanlan Skill Registry
 
 Last updated: ${dateText}
+
+Skill Store version: ${versionText}${releaseText}
 
 Generated from \`SKILL.md\` metadata by \`npm run build:skill-registry\`. Do not edit the table by hand; edit the target skill metadata, evals, examples, or MEMORY instead, then regenerate.
 

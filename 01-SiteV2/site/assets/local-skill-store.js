@@ -113,6 +113,8 @@
 
   function renderMetrics() {
     const summary = data.meta?.summary || {};
+    const version = data.meta?.version || {};
+    const versionText = version.version ? `Skill Store v${version.version}` : "Skill Store";
     const metrics = [
       ["Current", summary.current || 0, "当前治理技能"],
       ["Lane Owner", summary.laneOwners || 0, "三条生产 lane"],
@@ -122,7 +124,7 @@
       ["Examples", `${summary.exampleCoverage || 0}%`, "current 覆盖"],
     ];
     $("[data-metrics]").innerHTML = metrics.map(([label, value, note]) => `<article class="metric"><span>${html(label)}</span><strong>${html(value)}</strong><em>${html(note)}</em></article>`).join("");
-    $("[data-generated]").textContent = `更新于 ${data.meta?.generatedAt || "-"} · ${summary.total || skills.length} skills · ${summary.guanlan || 0} Guanlan-related`;
+    $("[data-generated]").textContent = `${versionText} · updated ${data.meta?.generatedAt || "-"} · ${summary.total || skills.length} skills · ${summary.guanlan || 0} Guanlan-related`;
   }
 
   function renderLaneOwners() {

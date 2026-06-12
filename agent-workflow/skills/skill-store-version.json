@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "Guanlan Skill Store",
+  "version": "1.0.0",
+  "release_date": "2026-06-12",
+  "stage": "Skill Ops baseline",
+  "scope": "Registry-generated Skill Store dashboard, governed current skills, .skill-store sync, and Daily Loop Skill Ops check.",
+  "upgrade_policy": {
+    "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
+    "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
+    "major": "Change the Skill Store governance model, registry contract, or Daily Loop integration contract."
+  }
+}

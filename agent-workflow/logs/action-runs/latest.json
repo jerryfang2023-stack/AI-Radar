@@ -1,29 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T15:19:59.906Z",
+  "generated_at": "2026-06-12T15:39:22.490Z",
   "date": "2026-06-12",
-  "action": "Hermes feedback loop automation",
+  "action": "Column monitor skills",
   "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Integrated read-only Skill Ops governance into daily supervision, added check:skill-ops, and kept audit:skills as the refresh-plus-check path.",
+  "summary": "Defined Guanlan Skill Store v1.0.0 as the Skill Ops baseline and surfaced it in registry, dashboard data, and check:skill-ops.",
   "contexts": [],
   "changed_files": [],
   "outputs": [
-    "agent-workflow/tools/check-skill-ops.mjs",
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/lib/guanlan-skill-ops.mjs",
-    "context/08-v3-3-automation.md",
-    "context/10-v3-3-experience-automation.md",
-    "context/11-hermes-daily-supervision-instructions.md"
+    "agent-workflow/skills/skill-store-version.json",
+    "agent-workflow/skills/skill-registry.md",
+    "01-SiteV2/site/data/local-skill-store-data.js",
+    "01-SiteV2/site/assets/local-skill-store.js",
+    "context/version-ledger.md"
   ],
   "checks": [
     "npm run check:skill-ops",
-    "npm run validate:guanlan-skills",
     "npm run audit:skills",
-    "npm run health:daily -- --date=2026-06-12 --github=false --scheduled-task=false",
-    "node --check Skill Ops and daily supervision scripts",
+    "node --check Skill Store scripts",
     "git diff --check"
   ],
   "issues": [],

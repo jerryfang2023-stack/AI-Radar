@@ -1,10 +1,23 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-12 23:28:28",
+    "generatedAt": "2026-06-12 23:38:24",
     "generatedDate": "2026-06-12",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
     "registryPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\skill-registry.md",
+    "version": {
+      "schema_version": 1,
+      "name": "Guanlan Skill Store",
+      "version": "1.0.0",
+      "release_date": "2026-06-12",
+      "stage": "Skill Ops baseline",
+      "scope": "Registry-generated Skill Store dashboard, governed current skills, .skill-store sync, and Daily Loop Skill Ops check.",
+      "upgrade_policy": {
+        "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
+        "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
+        "major": "Change the Skill Store governance model, registry contract, or Daily Loop integration contract."
+      }
+    },
     "summary": {
       "total": 152,
       "guanlan": 16,

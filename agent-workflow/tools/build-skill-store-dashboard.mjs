@@ -3,8 +3,10 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { defaultPaths, readSkillStoreVersion } from "./lib/guanlan-skill-ops.mjs";
 
 const root = process.cwd();
+const skillOpsPaths = defaultPaths(root);
 const storeDir = process.env.GUANLAN_SKILL_STORE || path.join(os.homedir(), ".skill-store");
 const projectSkillDir = path.join(root, "agent-workflow", "skills");
 const registryPath = path.join(projectSkillDir, "skill-registry.md");
@@ -307,6 +309,7 @@ const payload = {
     storeDir,
     projectSkillDir,
     registryPath,
+    version: readSkillStoreVersion(skillOpsPaths),
     summary: summarize(skills),
   },
   skills,
