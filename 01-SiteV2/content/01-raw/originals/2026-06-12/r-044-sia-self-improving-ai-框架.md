@@ -1,0 +1,238 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-044
+title: "SIA： Self Improving AI 框架"
+original_url: "https://x.com/rohanpaul_ai/status/2065184296927699217"
+canonical_url: "https://x.com/rohanpaul_ai/status/2065184296927699217"
+source_name: "X：Rohan Paul (@rohanpaul_ai)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-11T21:28:00.000Z"
+collected_at: 2026-06-12T03:53:39.193Z
+language: mixed
+full_text_hash: 6ff0c2e222cfec04
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-12/r-044-sia-self-improving-ai-框架.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-12/r-044-sia-self-improving-ai-框架.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 84
+extractor_diagnostics: {"readability_score":84,"text_length":3210,"paragraph_count":16,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0.0143,"method":"main"}
+has_full_text: true
+content_length: 3210
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6ff0c2e222cfec04","missing":[]}
+source_volatility: high
+community_name: "X：Rohan Paul (@rohanpaul_ai)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"SIA： Self Improving AI 框架","discovery_summary":"该论文提出SIA框架，让AI自动循环改进：一个观察者AI监控任务代理的表现，然后修改其外部设置（提示词、工具、重试规则、输出解析）或通过LoRA权重更新训练模型本身，模型主体不变，仅适配器从任务反馈中学习。在三个任务上测试：中文法律罪名分类（LawBench达70.1%）、GPU内核速度调优（生成代码优于此前最佳）、单细胞RNA降噪（得分0.289）。综合版本在所有任务上超越仅修改设置的方案，表明权重更新能帮助模型学到提示和工具无法发现的模式。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065184296927699217","discovered_at":"2026-06-12T03:48:20.872Z","rank_on_page":122,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a4688eda40f1fd08
+content_hash: 6ff0c2e222cfec04
+semantic_hash: 1d70c401eb01db93
+duplicate_of: ""
+first_seen_at: "2026-06-11T21:28:00.000Z"
+last_seen_at: 2026-06-12T03:53:39.193Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":4,"importance_reason":"technical trend or capability shift; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["X","Rohan Paul (@rohanpaul_ai)"],"products":["agent"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["法务 / 律师"],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全","法务"],"numbers":["70.1%","0.289","3","2605.27276","9","28","11","2026"],"quotes":["outputs like this got high reward, outputs like that failed.","SIA: Self Improving AI with Harness & Weight Updates"]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Rohan Paul @rohanpaul_ai This paper shows an AI improving itself better when it rewrites its setup and updates its model.","The problem is that most AI progress still depends on people changing prompts, tools, code, training data, and model weights by hand.","The paper’s idea is SIA, a loop where one AI t performs, then either changes the agent’s outer setup or trains the model itself."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"该论文提出SIA框架，让AI自动循环改进：一个观察者AI监控任务代理的表现，然后修改其外部设置（提示词、工具、重试规则、输出解析）或通过LoRA权重更新训练模型本身，模型主体不变，仅适配器从任务反馈中学习。在三个任务上测试：中文法律罪名分类（LawBench达70.1%）、GPU内核速度调优（生成代码优于此前最佳）、单细胞RNA降噪（得分0.289）。综合版本在所有任务上超越仅修改设置的方案，表明权重更新能帮助模型学到提示和工具无法发现的模式。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Post Log in Sign up Post Rohan Paul @rohanpaul_ai This paper shows an AI improving itself better when it rewrites its setup and updates its model.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The problem is that most AI progress still depends on people changing prompts, tools, code, training data, and model weights by hand.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The paper’s idea is SIA, a loop where one AI t performs, then either changes the agent’s outer setup or trains the model itself.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The outer setup means things like prompts, tools, retry rules, and output parsing, while weight updates mean changing the model’s learned behavior through task feedback.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The loop works like this: the task agent tries many answers or programs, the verifier scores them, and those scores become training feedback.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# SIA： Self Improving AI 框架
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+This paper shows an AI improving itself better when it rewrites its setup and updates its model.
+The problem is that most AI progress still depends on people changing prompts, tools, code, training data, and model weights by hand.
+The paper’s idea is SIA, a loop where one AI t performs, then either changes the agent’s outer setup or trains the model itself.
+The outer setup means things like prompts, tools, retry rules, and output parsing, while weight updates mean changing the model’s learned behavior through task feedback.
+The loop works like this: the task agent tries many answers or programs, the verifier scores them, and those scores become training feedback.
+Then the system updates a small add-on set of weights called LoRA weights, which changes the model’s behavior without retraining the whole model.
+So the base model stays mostly the same, but the LoRA adapter learns, “outputs like this got high reward, outputs like that failed.”
+The authors tested this on 3 very different tasks: Chinese legal charge classification, GPU kernel speed tuning, and single-cell RNA denoising.
+The combined version beat setup-only improvement on all 3 tasks, reaching 70.1% on LawBench, faster GPU code than the prior best, and 0.289 on denoising.
+The main lesson is that better scaffolding helps the agent act better, but weight updates help it learn task patterns that prompts and tools alone did not find.
+----
+Link – arxiv. org/abs/2605.27276
+Title: "SIA: Self Improving AI with Harness & Weight Updates"
+9:28 PM · Jun 11, 2026 1.5K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+This paper shows an AI improving itself better when it rewrites its setup and updates its model.
+The problem is that most AI progress still depends on people changing prompts, tools, code, training data, and model weights by hand.
+The paper’s idea is SIA, a loop where one AI t performs, then either changes the agent’s outer setup or trains the model itself.
+The outer setup means things like prompts, tools, retry rules, and output parsing, while weight updates mean changing the model’s learned behavior through task feedback.
+The loop works like this: the task agent tries many answers or programs, the verifier scores them, and those scores become training feedback.
+Then the system updates a small add-on set of weights called LoRA weights, which changes the model’s behavior without retraining the whole model.
+So the base model stays mostly the same, but the LoRA adapter learns, “outputs like this got high reward, outputs like that failed.”
+The authors tested this on 3 very different tasks: Chinese legal charge classification, GPU kernel speed tuning, and single-cell RNA denoising.
+The combined version beat setup-only improvement on all 3 tasks, reaching 70.1% on LawBench, faster GPU code than the prior best, and 0.289 on denoising.
+The main lesson is that better scaffolding helps the agent act better, but weight updates help it learn task patterns that prompts and tools alone did not find.
+----
+Link – arxiv. org/abs/2605.27276
+Title: "SIA: Self Improving AI with Harness & Weight Updates"
+9:28 PM · Jun 11, 2026 1.5K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 84
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":84,"text_length":3210,"paragraph_count":16,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0.0143,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   该论文提出SIA框架，让AI自动循环改进：一个观察者AI监控任务代理的表现，然后修改其外部设置（提示词、工具、重试规则、输出解析）或通过LoRA权重更新训练模型本身，模型主体不变，仅适配器从任务反馈中学习。在三个任务上测试：中文法律罪名分类（LawBench达70.1%）、GPU内核速度调优（生成代码优于此前最佳）、单细胞RNA降噪（得分0.289）。综合版本在所有任务上超越仅修改设置的方案，表明权重更新能帮助模型学到提示和工具无法发现的模式。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   Post Log in Sign up Post Rohan Paul @rohanpaul_ai This paper shows an AI improving itself better when it rewrites its setup and updates its model.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The problem is that most AI progress still depends on people changing prompts, tools, code, training data, and model weights by hand.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The paper’s idea is SIA, a loop where one AI t performs, then either changes the agent’s outer setup or trains the model itself.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   The outer setup means things like prompts, tools, retry rules, and output parsing, while weight updates mean changing the model’s learned behavior through task feedback.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The loop works like this: the task agent tries many answers or programs, the verifier scores them, and those scores become training feedback.
+
+## business_elements
+
+- companies: X, Rohan Paul (@rohanpaul_ai)
+- products: agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: 法务 / 律师
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 法务
+- numbers: 70.1%, 0.289, 3, 2605.27276, 9, 28, 11, 2026
+- quotes: outputs like this got high reward, outputs like that failed. / SIA: Self Improving AI with Harness & Weight Updates
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Rohan Paul @rohanpaul_ai This paper shows an AI improving itself better when it rewrites its setup and updates its model. / The problem is that most AI progress still depends on people changing prompts, tools, code, training data, and model weights by hand. / The paper’s idea is SIA, a loop where one AI t performs, then either changes the agent’s outer setup or trains the model itself.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 4
+- importance_reason: technical trend or capability shift; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Rohan Paul (@rohanpaul_ai)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"SIA： Self Improving AI 框架","discovery_summary":"该论文提出SIA框架，让AI自动循环改进：一个观察者AI监控任务代理的表现，然后修改其外部设置（提示词、工具、重试规则、输出解析）或通过LoRA权重更新训练模型本身，模型主体不变，仅适配器从任务反馈中学习。在三个任务上测试：中文法律罪名分类（LawBench达70.1%）、GPU内核速度调优（生成代码优于此前最佳）、单细胞RNA降噪（得分0.289）。综合版本在所有任务上超越仅修改设置的方案，表明权重更新能帮助模型学到提示和工具无法发现的模式。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065184296927699217","discovered_at":"2026-06-12T03:48:20.872Z","rank_on_page":122,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+该论文提出SIA框架，让AI自动循环改进：一个观察者AI监控任务代理的表现，然后修改其外部设置（提示词、工具、重试规则、输出解析）或通过LoRA权重更新训练模型本身，模型主体不变，仅适配器从任务反馈中学习。在三个任务上测试：中文法律罪名分类（LawBench达70.1%）、GPU内核速度调优（生成代码优于此前最佳）、单细胞RNA降噪（得分0.289）。综合版本在所有任务上超越仅修改设置的方案，表明权重更新能帮助模型学到提示和工具无法发现的模式。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

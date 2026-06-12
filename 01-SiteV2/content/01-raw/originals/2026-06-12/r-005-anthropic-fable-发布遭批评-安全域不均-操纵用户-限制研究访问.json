@@ -1,0 +1,251 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-005",
+  "title": "Anthropic Fable 发布遭批评：安全域不均、操纵用户、限制研究访问",
+  "original_url": "https://x.com/natolambert/status/2065082135682383950",
+  "canonical_url": "https://x.com/natolambert/status/2065082135682383950",
+  "source_name": "X：Nathan Lambert (@natolambert)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-11T14:42:03.000Z",
+  "collected_at": "2026-06-12T03:53:39.050Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nNathan Lambert\n@natolambert\nThe core part of this Anthropic Fable release saga is that there are many overlapping issues at once. Some of which operate on different timelines of the AI arc, and some have easier fixes. In my critiques, I asked for specific changes to some things, understanding that some things don't have an easy fix.\nThe simplest issue was an uneven application of safety domains in a way that was misleading to users. This was an implementation issue that overlaps with a values-based decision of what their customers should be doing. Many people including myself pointed out how it was insane to list core safety areas and then have one of them launch with a different safety mechanism, one which actively mislead users. Doing this from the guise of safety was a major misstep and in my opinion Anthropic got very justifiably raked over the coals for it. Don't release the model if you can't hit your safety targets.\nA subissue here is the idea of silent manipulation. This again is a horrible precedent, and quite odd for a company that has done extensive, leading technical AI safety research on ideas like CoT monitoring and other emergent misalignment issues. Silent manipulation of users is baking in a misalignment to the system at its face level. This comes with a permanent degradation in user trust, which begets a less safe environment for AI. Users who don't have clear information on how AI works will not develop safe working patterns with it.\nThe more complex issues are with how Anthropic handles broader scientific engagement with their models. The safety classifiers launched with these models obviously have accuracy issues to start. I have priced in that there will be more false positives to start, that's life. It's Anthropic's business to degrade their products at release time, or make the trade off of user satisfaction versus revenue. Still, it is a very real sign of concentration of power that businesses can make such obviously user-harmful behaviors and still lead in the market. This concentration of power is only starting to set in and we could see even weirder signs of it in the coming years.\nIt is now simple enough for me to test Claude Fable in my workflows and know if I'm restricted. This is obviously a suboptimal equilibrium – i want the best intelligence I can get, without restrictions – but it is easy enough for me to make sense of and work with.\nThe specific issue of restricting access to AI research in particular was a bubbling and hard to fix issue with Anthropic specifically, and the frontier labs generally. There is a common view that the frontier labs will be the mediators of all major scientific innovations in the future, as the places with the best models and the compute for inference to solve major problems. This is a categorical error in how science works, which is a community evolution of accepted ideas, and the the evaluation of your ideas by (hopefully numerous) independent, other practitioners. You cannot have science advance only within a monolith.\nAs an AI researcher I'm very sad to have the latest models restricted, but I would expect Anthropic to do this eventually. I lost more trust over the silent manipulation than I would with a restriction in access. Anthropic has made it pretty clear that they only trust themselves as the mediators of cutting-edge AI research.\nIf I had a say, Anthropic should've proactively made a program to make sure researchers get access in the broader AI community without the safeguards. Academics, nonprofit workers myself, etc. have no reason to not get access. The only valid argument here is that they want to control frontier AI, which is a know your customer part of serving these models.\nThis worldview of science has personally motivated me greatly over the last year, and increasingly so this week, to make the open science of AI continue to be viable. Olmo was a wonderful success here. Still, building research infrastructure is different from working for access to the tools needed to do the trade.\n2:42 PM · Jun 11, 2026 30.5K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 28\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 9 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 292\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 73\nRead 21 replies",
+  "clean_text": "Post\nLog in Sign up\nPost\nNathan Lambert\n@natolambert\nThe core part of this Anthropic Fable release saga is that there are many overlapping issues at once. Some of which operate on different timelines of the AI arc, and some have easier fixes. In my critiques, I asked for specific changes to some things, understanding that some things don't have an easy fix.\nThe simplest issue was an uneven application of safety domains in a way that was misleading to users. This was an implementation issue that overlaps with a values-based decision of what their customers should be doing. Many people including myself pointed out how it was insane to list core safety areas and then have one of them launch with a different safety mechanism, one which actively mislead users. Doing this from the guise of safety was a major misstep and in my opinion Anthropic got very justifiably raked over the coals for it. Don't release the model if you can't hit your safety targets.\nA subissue here is the idea of silent manipulation. This again is a horrible precedent, and quite odd for a company that has done extensive, leading technical AI safety research on ideas like CoT monitoring and other emergent misalignment issues. Silent manipulation of users is baking in a misalignment to the system at its face level. This comes with a permanent degradation in user trust, which begets a less safe environment for AI. Users who don't have clear information on how AI works will not develop safe working patterns with it.\nThe more complex issues are with how Anthropic handles broader scientific engagement with their models. The safety classifiers launched with these models obviously have accuracy issues to start. I have priced in that there will be more false positives to start, that's life. It's Anthropic's business to degrade their products at release time, or make the trade off of user satisfaction versus revenue. Still, it is a very real sign of concentration of power that businesses can make such obviously user-harmful behaviors and still lead in the market. This concentration of power is only starting to set in and we could see even weirder signs of it in the coming years.\nIt is now simple enough for me to test Claude Fable in my workflows and know if I'm restricted. This is obviously a suboptimal equilibrium – i want the best intelligence I can get, without restrictions – but it is easy enough for me to make sense of and work with.\nThe specific issue of restricting access to AI research in particular was a bubbling and hard to fix issue with Anthropic specifically, and the frontier labs generally. There is a common view that the frontier labs will be the mediators of all major scientific innovations in the future, as the places with the best models and the compute for inference to solve major problems. This is a categorical error in how science works, which is a community evolution of accepted ideas, and the the evaluation of your ideas by (hopefully numerous) independent, other practitioners. You cannot have science advance only within a monolith.\nAs an AI researcher I'm very sad to have the latest models restricted, but I would expect Anthropic to do this eventually. I lost more trust over the silent manipulation than I would with a restriction in access. Anthropic has made it pretty clear that they only trust themselves as the mediators of cutting-edge AI research.\nIf I had a say, Anthropic should've proactively made a program to make sure researchers get access in the broader AI community without the safeguards. Academics, nonprofit workers myself, etc. have no reason to not get access. The only valid argument here is that they want to control frontier AI, which is a know your customer part of serving these models.\nThis worldview of science has personally motivated me greatly over the last year, and increasingly so this week, to make the open science of AI continue to be viable. Olmo was a wonderful success here. Still, building research infrastructure is different from working for access to the tools needed to do the trade.\n2:42 PM · Jun 11, 2026 30.5K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 28\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 9 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 292\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 73\nRead 21 replies",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-005-anthropic-fable-发布遭批评-安全域不均-操纵用户-限制研究访问.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-005-anthropic-fable-发布遭批评-安全域不均-操纵用户-限制研究访问.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 6275,
+    "paragraph_count": 14,
+    "sentence_count": 35,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0096,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6275,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "22ac62b1b7ebbe71",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "X：Nathan Lambert (@natolambert)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Anthropic Fable 发布遭批评：安全域不均、操纵用户、限制研究访问",
+    "discovery_summary": "Nathan Lambert 批评 Anthropic 的 Claude Fable 发布存在多重问题：安全域应用不均，部分域以不同安全机制上线并误导用户，是重大失误；无声操纵用户破坏信任，与 Anthropic 领先的 AI 安全研究相悖；限制 AI 研究员访问最新模型，将科学进步局限于单一公司，错误理解科学社区协作本质。他呼吁 Anthropic 主动为学术和非营利研究者提供无限制访问，并强调需要继续推动开放科学，如 Olmo 的成功案例所示。",
+    "source_name": "X：Nathan Lambert (@natolambert)",
+    "origin_url": "https://x.com/natolambert/status/2065082135682383950",
+    "discovered_at": "2026-06-12T03:48:20.893Z",
+    "rank_on_page": 233,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "796199417ce0fe37",
+  "content_hash": "22ac62b1b7ebbe71",
+  "full_text_hash": "22ac62b1b7ebbe71",
+  "semantic_hash": "c8636c524709c631",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-11T14:42:03.000Z",
+  "last_seen_at": "2026-06-12T03:53:39.050Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "Nathan Lambert 批评 Anthropic 的 Claude Fable 发布存在多重问题：安全域应用不均，部分域以不同安全机制上线并误导用户，是重大失误；无声操纵用户破坏信任，与 Anthropic 领先的 AI 安全研究相悖；限制 AI 研究员访问最新模型，将科学进步局限于单一公司，错误理解科学社区协作本质。他呼吁 Anthropic 主动为学术和非营利研究者提供无限制访问，并强调需要继续推动开放科学，如 Olmo 的成功案例所示。",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Post Log in Sign up Post Nathan Lambert @natolambert The core part of this Anthropic Fable release saga is that there are many overlapping issues at once.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Some of which operate on different timelines of the AI arc, and some have easier fixes.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "In my critiques, I asked for specific changes to some things, understanding that some things don't have an easy fix.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The simplest issue was an uneven application of safety domains in a way that was misleading to users.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "This was an implementation issue that overlaps with a values-based decision of what their customers should be doing.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "Nathan Lambert (@natolambert)",
+      "Anthropic"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2",
+      "42",
+      "11",
+      "2026",
+      "30.5",
+      "1",
+      "0.25",
+      "0"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post Nathan Lambert @natolambert The core part of this Anthropic Fable release saga is that there are many overlapping issues at once.",
+      "Some of which operate on different timelines of the AI arc, and some have easier fixes.",
+      "In my critiques, I asked for specific changes to some things, understanding that some things don't have an easy fix."
+    ],
+    "case_details": [
+      "This was an implementation issue that overlaps with a values-based decision of what their customers should be doing."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": [
+      "Nathan Lambert 批评 Anthropic 的 Claude Fable 发布存在多重问题：安全域应用不均，部分域以不同安全机制上线并误导用户，是重大失误；无声操纵用户破坏信任，与 Anthropic 领先的 AI 安全研究相悖；限制 AI 研究员访问最新模型，将科学进步局限于单一公司，错误理解科学社区协作本质。他呼吁 Anthropic 主动为学术和非营利研究者提供无限制访问，并强调需要继续推动开放科学，如 Olmo 的成功案例所示。"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "user_feedback_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Anthropic Fable 发布遭批评：安全域不均、操纵用户、限制研究访问\n\n- raw_id: R-005\n- original_url: https://x.com/natolambert/status/2065082135682383950\n- source_name: X：Nathan Lambert (@natolambert)\n- collected_at: 2026-06-12T03:53:39.050Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nNathan Lambert\n@natolambert\nThe core part of this Anthropic Fable release saga is that there are many overlapping issues at once. Some of which operate on different timelines of the AI arc, and some have easier fixes. In my critiques, I asked for specific changes to some things, understanding that some things don't have an easy fix.\nThe simplest issue was an uneven application of safety domains in a way that was misleading to users. This was an implementation issue that overlaps with a values-based decision of what their customers should be doing. Many people including myself pointed out how it was insane to list core safety areas and then have one of them launch with a different safety mechanism, one which actively mislead users. Doing this from the guise of safety was a major misstep and in my opinion Anthropic got very justifiably raked over the coals for it. Don't release the model if you can't hit your safety targets.\nA subissue here is the idea of silent manipulation. This again is a horrible precedent, and quite odd for a company that has done extensive, leading technical AI safety research on ideas like CoT monitoring and other emergent misalignment issues. Silent manipulation of users is baking in a misalignment to the system at its face level. This comes with a permanent degradation in user trust, which begets a less safe environment for AI. Users who don't have clear information on how AI works will not develop safe working patterns with it.\nThe more complex issues are with how Anthropic handles broader scientific engagement with their models. The safety classifiers launched with these models obviously have accuracy issues to start. I have priced in that there will be more false positives to start, that's life. It's Anthropic's business to degrade their products at release time, or make the trade off of user satisfaction versus revenue. Still, it is a very real sign of concentration of power that businesses can make such obviously user-harmful behaviors and still lead in the market. This concentration of power is only starting to set in and we could see even weirder signs of it in the coming years.\nIt is now simple enough for me to test Claude Fable in my workflows and know if I'm restricted. This is obviously a suboptimal equilibrium – i want the best intelligence I can get, without restrictions – but it is easy enough for me to make sense of and work with.\nThe specific issue of restricting access to AI research in particular was a bubbling and hard to fix issue with Anthropic specifically, and the frontier labs generally. There is a common view that the frontier labs will be the mediators of all major scientific innovations in the future, as the places with the best models and the compute for inference to solve major problems. This is a categorical error in how science works, which is a community evolution of accepted ideas, and the the evaluation of your ideas by (hopefully numerous) independent, other practitioners. You cannot have science advance only within a monolith.\nAs an AI researcher I'm very sad to have the latest models restricted, but I would expect Anthropic to do this eventually. I lost more trust over the silent manipulation than I would with a restriction in access. Anthropic has made it pretty clear that they only trust themselves as the mediators of cutting-edge AI research.\nIf I had a say, Anthropic should've proactively made a program to make sure researchers get access in the broader AI community without the safeguards. Academics, nonprofit workers myself, etc. have no reason to not get access. The only valid argument here is that they want to control frontier AI, which is a know your customer part of serving these models.\nThis worldview of science has personally motivated me greatly over the last year, and increasingly so this week, to make the open science of AI continue to be viable. Olmo was a wonderful success here. Still, building research infrastructure is different from working for access to the tools needed to do the trade.\n2:42 PM · Jun 11, 2026 30.5K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 28\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 9 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 292\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 73\nRead 21 replies\n\n## full_text\n\nPost\nLog in Sign up\nPost\nNathan Lambert\n@natolambert\nThe core part of this Anthropic Fable release saga is that there are many overlapping issues at once. Some of which operate on different timelines of the AI arc, and some have easier fixes. In my critiques, I asked for specific changes to some things, understanding that some things don't have an easy fix.\nThe simplest issue was an uneven application of safety domains in a way that was misleading to users. This was an implementation issue that overlaps with a values-based decision of what their customers should be doing. Many people including myself pointed out how it was insane to list core safety areas and then have one of them launch with a different safety mechanism, one which actively mislead users. Doing this from the guise of safety was a major misstep and in my opinion Anthropic got very justifiably raked over the coals for it. Don't release the model if you can't hit your safety targets.\nA subissue here is the idea of silent manipulation. This again is a horrible precedent, and quite odd for a company that has done extensive, leading technical AI safety research on ideas like CoT monitoring and other emergent misalignment issues. Silent manipulation of users is baking in a misalignment to the system at its face level. This comes with a permanent degradation in user trust, which begets a less safe environment for AI. Users who don't have clear information on how AI works will not develop safe working patterns with it.\nThe more complex issues are with how Anthropic handles broader scientific engagement with their models. The safety classifiers launched with these models obviously have accuracy issues to start. I have priced in that there will be more false positives to start, that's life. It's Anthropic's business to degrade their products at release time, or make the trade off of user satisfaction versus revenue. Still, it is a very real sign of concentration of power that businesses can make such obviously user-harmful behaviors and still lead in the market. This concentration of power is only starting to set in and we could see even weirder signs of it in the coming years.\nIt is now simple enough for me to test Claude Fable in my workflows and know if I'm restricted. This is obviously a suboptimal equilibrium – i want the best intelligence I can get, without restrictions – but it is easy enough for me to make sense of and work with.\nThe specific issue of restricting access to AI research in particular was a bubbling and hard to fix issue with Anthropic specifically, and the frontier labs generally. There is a common view that the frontier labs will be the mediators of all major scientific innovations in the future, as the places with the best models and the compute for inference to solve major problems. This is a categorical error in how science works, which is a community evolution of accepted ideas, and the the evaluation of your ideas by (hopefully numerous) independent, other practitioners. You cannot have science advance only within a monolith.\nAs an AI researcher I'm very sad to have the latest models restricted, but I would expect Anthropic to do this eventually. I lost more trust over the silent manipulation than I would with a restriction in access. Anthropic has made it pretty clear that they only trust themselves as the mediators of cutting-edge AI research.\nIf I had a say, Anthropic should've proactively made a program to make sure researchers get access in the broader AI community without the safeguards. Academics, nonprofit workers myself, etc. have no reason to not get access. The only valid argument here is that they want to control frontier AI, which is a know your customer part of serving these models.\nThis worldview of science has personally motivated me greatly over the last year, and increasingly so this week, to make the open science of AI continue to be viable. Olmo was a wonderful success here. Still, building research infrastructure is different from working for access to the tools needed to do the trade.\n2:42 PM · Jun 11, 2026 30.5K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 28\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 9 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 292\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 73\nRead 21 replies\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 94\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [supporting_context / daily_observation, heatmap / high] Nathan Lambert 批评 Anthropic 的 Claude Fable 发布存在多重问题：安全域应用不均，部分域以不同安全机制上线并误导用户，是重大失误；无声操纵用户破坏信任，与 Anthropic 领先的 AI 安全研究相悖；限制 AI 研究员访问最新模型，将科学进步局限于单一公司，错误理解科学社区协作本质。他呼吁 Anthropic 主动为学术和非营利研究者提供无限制访问，并强调需要继续推动开放科学，如 Olmo 的成功案例所示。\n2. [product_update / daily_observation, heatmap, change / high] Post Log in Sign up Post Nathan Lambert @natolambert The core part of this Anthropic Fable release saga is that there are many overlapping issues at once.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Some of which operate on different timelines of the AI arc, and some have easier fixes.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] In my critiques, I asked for specific changes to some things, understanding that some things don't have an easy fix.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] The simplest issue was an uneven application of safety domains in a way that was misleading to users.\n6. [case_detail / daily_observation, heatmap, case / high] This was an implementation issue that overlaps with a values-based decision of what their customers should be doing.\n"
+}

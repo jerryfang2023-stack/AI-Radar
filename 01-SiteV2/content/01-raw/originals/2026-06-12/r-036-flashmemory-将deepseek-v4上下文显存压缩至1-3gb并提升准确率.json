@@ -1,0 +1,257 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-036",
+  "title": "FlashMemory： 将DeepSeek-V4上下文显存压缩至1.3GB并提升准确率",
+  "original_url": "https://x.com/karminski3/status/2065258023690600795",
+  "canonical_url": "https://x.com/karminski3/status/2065258023690600795",
+  "source_name": "X：karminski (@karminski3)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-12T02:20:58.000Z",
+  "collected_at": "2026-06-12T03:53:39.169Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nkarminski-牙医\n@karminski3\n魔法! DeepSeekV4 上下文内存压缩到1/10!\n大家都知道 DeepSeekV4 是支持1M上下文的, 而且经过了极度优化, 如果要真的用到1M上下文, 显存占用只需要10G左右, (对比之下 DeepSeek-V3.2 大概需要84G显存). 然后我刚看到了FlashMemory这个论文, 直接能把显存占用压到 1.3GB! 甚至输出效果不降反升!\n吗? 压缩后反而性能上升? 我赶紧看了论文细节:\n咱们先复习一下传统做法: 模型每吐出一个字，都要把之前的几十万字重新看一遍(这就是全局注意力).\nFlashMemory 的做法是: 预测未来需要什么, 它内置了一个神经内存索引器（Neural Memory Indexer, 其实就是个小模型了），能够主动预判接下来生成内容时需要用到历史文本里的哪些片段. 然后预先准备好这些片段, 接下来只要做到命中率超高, 那么这个提升就绝对有效. 即它的假设是, KVCache里面的东西并不是生成每个字的时候全都需要的, 只需要按需提前加载即可.\n很像做作业的时候, 把参考资料摊满桌子, 然后优化了一下就是把参考资料需要用到的部分直接拍照, 用的时候看照片就行了.\n那么听上去很简单, 但实际的难点在于, 训练一个专用的索引器小模型, 需要把 DeepSeek-V4模型加载到显存里一起炼. 相当耗费算力.\n于是这篇论文第二个亮点来了, 它搞了个解耦训练. 他们把这个索引器当成一个标准的\"双编码器（Dual-encoder，类似做搜索推荐的模型）\"来单独训练. 在这个过程中，根本不需要把庞大的 DeepSeek-V4 基座模型加载到显存中. 这让训练成本断崖式下降，且兼容标准的检索（Retrieval）训练框架. (简单来讲就是它是通用方法训练的, 通过query预测需要检索哪些长句子. 所以其实是个通用模型)\n听上去靠谱, 那也只是显存占用少了, 怎么就性能还提高了呢? 答案是注意力降噪. 因为每次只提取和当前生成最相关的记忆块（Chunks）放入显存，模型在运算时就看不见那些无关的冗余信息了.天然地起到了一种\"去噪\"作用，这也是为什么显存占用少了，模型准确率反而略微提升的原因.官方测试在长文本评测集（如 LongBench-v2 等）上的准确率平均最终提升了 0.6%.\n(其实还有数据如何逐出显存和如何预测数据实现预加载, 这部分也很棒, 很有启发性. 建议看原论文, 篇幅原因写不下了)\n论文地址: arxiv.org/abs/2606.09079\n项目地址: github.com/libertywing/Fl…\n#FlashMemory #DeepSeekV4 #FlashMemoryDeepseekV4\n2:20 AM · Jun 12, 2026 3.8K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 36\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\nRead 5 replies",
+  "clean_text": "Post\nLog in Sign up\nPost\nkarminski-牙医\n@karminski3\n魔法! DeepSeekV4 上下文内存压缩到1/10!\n大家都知道 DeepSeekV4 是支持1M上下文的, 而且经过了极度优化, 如果要真的用到1M上下文, 显存占用只需要10G左右, (对比之下 DeepSeek-V3.2 大概需要84G显存). 然后我刚看到了FlashMemory这个论文, 直接能把显存占用压到 1.3GB! 甚至输出效果不降反升!\n吗? 压缩后反而性能上升? 我赶紧看了论文细节:\n咱们先复习一下传统做法: 模型每吐出一个字，都要把之前的几十万字重新看一遍(这就是全局注意力).\nFlashMemory 的做法是: 预测未来需要什么, 它内置了一个神经内存索引器（Neural Memory Indexer, 其实就是个小模型了），能够主动预判接下来生成内容时需要用到历史文本里的哪些片段. 然后预先准备好这些片段, 接下来只要做到命中率超高, 那么这个提升就绝对有效. 即它的假设是, KVCache里面的东西并不是生成每个字的时候全都需要的, 只需要按需提前加载即可.\n很像做作业的时候, 把参考资料摊满桌子, 然后优化了一下就是把参考资料需要用到的部分直接拍照, 用的时候看照片就行了.\n那么听上去很简单, 但实际的难点在于, 训练一个专用的索引器小模型, 需要把 DeepSeek-V4模型加载到显存里一起炼. 相当耗费算力.\n于是这篇论文第二个亮点来了, 它搞了个解耦训练. 他们把这个索引器当成一个标准的\"双编码器（Dual-encoder，类似做搜索推荐的模型）\"来单独训练. 在这个过程中，根本不需要把庞大的 DeepSeek-V4 基座模型加载到显存中. 这让训练成本断崖式下降，且兼容标准的检索（Retrieval）训练框架. (简单来讲就是它是通用方法训练的, 通过query预测需要检索哪些长句子. 所以其实是个通用模型)\n听上去靠谱, 那也只是显存占用少了, 怎么就性能还提高了呢? 答案是注意力降噪. 因为每次只提取和当前生成最相关的记忆块（Chunks）放入显存，模型在运算时就看不见那些无关的冗余信息了.天然地起到了一种\"去噪\"作用，这也是为什么显存占用少了，模型准确率反而略微提升的原因.官方测试在长文本评测集（如 LongBench-v2 等）上的准确率平均最终提升了 0.6%.\n(其实还有数据如何逐出显存和如何预测数据实现预加载, 这部分也很棒, 很有启发性. 建议看原论文, 篇幅原因写不下了)\n论文地址: arxiv.org/abs/2606.09079\n项目地址: github.com/libertywing/Fl…\n#FlashMemory #DeepSeekV4 #FlashMemoryDeepseekV4\n2:20 AM · Jun 12, 2026 3.8K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 36\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\nRead 5 replies",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-036-flashmemory-将deepseek-v4上下文显存压缩至1-3gb并提升准确率.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-036-flashmemory-将deepseek-v4上下文显存压缩至1-3gb并提升准确率.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 86,
+  "extractor_diagnostics": {
+    "readability_score": 86,
+    "text_length": 3395,
+    "paragraph_count": 18,
+    "sentence_count": 23,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0177,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3395,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "808017ebebb1d998",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "X：karminski (@karminski3)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "FlashMemory： 将DeepSeek-V4上下文显存压缩至1.3GB并提升准确率",
+    "discovery_summary": "DeepSeek-V4支持1M上下文，显存约10GB（对比DeepSeek-V3.2约84GB）。FlashMemory论文进一步将显存压至1.3GB，并在LongBench-v2等长文本评测上准确率平均提升0.6%。核心是神经内存索引器（小模型），通过预测所需历史片段按需加载，实现注意力降噪。训练采用解耦双编码器架构，无需加载DeepSeek-V4基座模型，训练成本大幅下降。论文：arxiv.org/abs/2606.09079；项目：github.com/libertywing/FlashMemory-Deepseek-V4。",
+    "source_name": "X：karminski (@karminski3)",
+    "origin_url": "https://x.com/karminski3/status/2065258023690600795",
+    "discovered_at": "2026-06-12T03:48:20.855Z",
+    "rank_on_page": 45,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "50280a6f066bf29a",
+  "content_hash": "808017ebebb1d998",
+  "full_text_hash": "808017ebebb1d998",
+  "semantic_hash": "ea9b49282e865008",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-12T02:20:58.000Z",
+  "last_seen_at": "2026-06-12T03:53:39.169Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "DeepSeek-V4支持1M上下文，显存约10GB（对比DeepSeek-V3.2约84GB）。FlashMemory论文进一步将显存压至1.3GB，并在LongBench-v2等长文本评测上准确率平均提升0.6%。核心是神经内存索引器（小模型），通过预测所需历史片段按需加载，实现注意力降噪。训练采用解耦双编码器架构，无需加载DeepSeek-V4基座模型，训练成本大幅下降。论文：arxiv.org/abs/2606.09079；项目：github.com/libertywing/FlashMemory-Deepseek-V4。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Post Log in Sign up Post karminski-牙医 @karminski3 魔法!",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "DeepSeekV4 上下文内存压缩到1/10!",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "大家都知道 DeepSeekV4 是支持1M上下文的, 而且经过了极度优化, 如果要真的用到1M上下文, 显存占用只需要10G左右, (对比之下 DeepSeek-V3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "然后我刚看到了FlashMemory这个论文, 直接能把显存占用压到 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "我赶紧看了论文细节: 咱们先复习一下传统做法: 模型每吐出一个字，都要把之前的几十万字重新看一遍(这就是全局注意力).",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "karminski (@karminski3)",
+      "GitHub"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "4",
+      "1.3",
+      "1M",
+      "10",
+      "3.2",
+      "84",
+      "2",
+      "0.6%"
+    ],
+    "quotes": [
+      "双编码器（Dual-encoder，类似做搜索推荐的模型）"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post karminski-牙医 @karminski3 魔法!",
+      "DeepSeekV4 上下文内存压缩到1/10!",
+      "大家都知道 DeepSeekV4 是支持1M上下文的, 而且经过了极度优化, 如果要真的用到1M上下文, 显存占用只需要10G左右, (对比之下 DeepSeek-V3."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# FlashMemory： 将DeepSeek-V4上下文显存压缩至1.3GB并提升准确率\n\n- raw_id: R-036\n- original_url: https://x.com/karminski3/status/2065258023690600795\n- source_name: X：karminski (@karminski3)\n- collected_at: 2026-06-12T03:53:39.169Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nkarminski-牙医\n@karminski3\n魔法! DeepSeekV4 上下文内存压缩到1/10!\n大家都知道 DeepSeekV4 是支持1M上下文的, 而且经过了极度优化, 如果要真的用到1M上下文, 显存占用只需要10G左右, (对比之下 DeepSeek-V3.2 大概需要84G显存). 然后我刚看到了FlashMemory这个论文, 直接能把显存占用压到 1.3GB! 甚至输出效果不降反升!\n吗? 压缩后反而性能上升? 我赶紧看了论文细节:\n咱们先复习一下传统做法: 模型每吐出一个字，都要把之前的几十万字重新看一遍(这就是全局注意力).\nFlashMemory 的做法是: 预测未来需要什么, 它内置了一个神经内存索引器（Neural Memory Indexer, 其实就是个小模型了），能够主动预判接下来生成内容时需要用到历史文本里的哪些片段. 然后预先准备好这些片段, 接下来只要做到命中率超高, 那么这个提升就绝对有效. 即它的假设是, KVCache里面的东西并不是生成每个字的时候全都需要的, 只需要按需提前加载即可.\n很像做作业的时候, 把参考资料摊满桌子, 然后优化了一下就是把参考资料需要用到的部分直接拍照, 用的时候看照片就行了.\n那么听上去很简单, 但实际的难点在于, 训练一个专用的索引器小模型, 需要把 DeepSeek-V4模型加载到显存里一起炼. 相当耗费算力.\n于是这篇论文第二个亮点来了, 它搞了个解耦训练. 他们把这个索引器当成一个标准的\"双编码器（Dual-encoder，类似做搜索推荐的模型）\"来单独训练. 在这个过程中，根本不需要把庞大的 DeepSeek-V4 基座模型加载到显存中. 这让训练成本断崖式下降，且兼容标准的检索（Retrieval）训练框架. (简单来讲就是它是通用方法训练的, 通过query预测需要检索哪些长句子. 所以其实是个通用模型)\n听上去靠谱, 那也只是显存占用少了, 怎么就性能还提高了呢? 答案是注意力降噪. 因为每次只提取和当前生成最相关的记忆块（Chunks）放入显存，模型在运算时就看不见那些无关的冗余信息了.天然地起到了一种\"去噪\"作用，这也是为什么显存占用少了，模型准确率反而略微提升的原因.官方测试在长文本评测集（如 LongBench-v2 等）上的准确率平均最终提升了 0.6%.\n(其实还有数据如何逐出显存和如何预测数据实现预加载, 这部分也很棒, 很有启发性. 建议看原论文, 篇幅原因写不下了)\n论文地址: arxiv.org/abs/2606.09079\n项目地址: github.com/libertywing/Fl…\n#FlashMemory #DeepSeekV4 #FlashMemoryDeepseekV4\n2:20 AM · Jun 12, 2026 3.8K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 36\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\nRead 5 replies\n\n## full_text\n\nPost\nLog in Sign up\nPost\nkarminski-牙医\n@karminski3\n魔法! DeepSeekV4 上下文内存压缩到1/10!\n大家都知道 DeepSeekV4 是支持1M上下文的, 而且经过了极度优化, 如果要真的用到1M上下文, 显存占用只需要10G左右, (对比之下 DeepSeek-V3.2 大概需要84G显存). 然后我刚看到了FlashMemory这个论文, 直接能把显存占用压到 1.3GB! 甚至输出效果不降反升!\n吗? 压缩后反而性能上升? 我赶紧看了论文细节:\n咱们先复习一下传统做法: 模型每吐出一个字，都要把之前的几十万字重新看一遍(这就是全局注意力).\nFlashMemory 的做法是: 预测未来需要什么, 它内置了一个神经内存索引器（Neural Memory Indexer, 其实就是个小模型了），能够主动预判接下来生成内容时需要用到历史文本里的哪些片段. 然后预先准备好这些片段, 接下来只要做到命中率超高, 那么这个提升就绝对有效. 即它的假设是, KVCache里面的东西并不是生成每个字的时候全都需要的, 只需要按需提前加载即可.\n很像做作业的时候, 把参考资料摊满桌子, 然后优化了一下就是把参考资料需要用到的部分直接拍照, 用的时候看照片就行了.\n那么听上去很简单, 但实际的难点在于, 训练一个专用的索引器小模型, 需要把 DeepSeek-V4模型加载到显存里一起炼. 相当耗费算力.\n于是这篇论文第二个亮点来了, 它搞了个解耦训练. 他们把这个索引器当成一个标准的\"双编码器（Dual-encoder，类似做搜索推荐的模型）\"来单独训练. 在这个过程中，根本不需要把庞大的 DeepSeek-V4 基座模型加载到显存中. 这让训练成本断崖式下降，且兼容标准的检索（Retrieval）训练框架. (简单来讲就是它是通用方法训练的, 通过query预测需要检索哪些长句子. 所以其实是个通用模型)\n听上去靠谱, 那也只是显存占用少了, 怎么就性能还提高了呢? 答案是注意力降噪. 因为每次只提取和当前生成最相关的记忆块（Chunks）放入显存，模型在运算时就看不见那些无关的冗余信息了.天然地起到了一种\"去噪\"作用，这也是为什么显存占用少了，模型准确率反而略微提升的原因.官方测试在长文本评测集（如 LongBench-v2 等）上的准确率平均最终提升了 0.6%.\n(其实还有数据如何逐出显存和如何预测数据实现预加载, 这部分也很棒, 很有启发性. 建议看原论文, 篇幅原因写不下了)\n论文地址: arxiv.org/abs/2606.09079\n项目地址: github.com/libertywing/Fl…\n#FlashMemory #DeepSeekV4 #FlashMemoryDeepseekV4\n2:20 AM · Jun 12, 2026 3.8K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 36\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\nRead 5 replies\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 86\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] DeepSeek-V4支持1M上下文，显存约10GB（对比DeepSeek-V3.2约84GB）。FlashMemory论文进一步将显存压至1.3GB，并在LongBench-v2等长文本评测上准确率平均提升0.6%。核心是神经内存索引器（小模型），通过预测所需历史片段按需加载，实现注意力降噪。训练采用解耦双编码器架构，无需加载DeepSeek-V4基座模型，训练成本大幅下降。论文：arxiv.org/abs/2606.09079；项目：github.com/libertywing/FlashMemory-Deepseek-V4。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Post Log in Sign up Post karminski-牙医 @karminski3 魔法!\n3. [company_action / daily_observation, heatmap, change, case, trend / high] DeepSeekV4 上下文内存压缩到1/10!\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 大家都知道 DeepSeekV4 是支持1M上下文的, 而且经过了极度优化, 如果要真的用到1M上下文, 显存占用只需要10G左右, (对比之下 DeepSeek-V3.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 然后我刚看到了FlashMemory这个论文, 直接能把显存占用压到 1.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] 我赶紧看了论文细节: 咱们先复习一下传统做法: 模型每吐出一个字，都要把之前的几十万字重新看一遍(这就是全局注意力).\n"
+}
