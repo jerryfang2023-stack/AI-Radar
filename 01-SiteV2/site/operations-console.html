@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="V2.0.0-boss-topic-engine">
+  <meta name="wavesight-ops-console-version" content="V2.1.0-boss-topic-engine">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -348,21 +348,29 @@
       padding: 0 12px;
       outline: none;
     }
-    .topic-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 12px; }
+    .topic-tabs {
+      display: grid;
+      grid-template-columns: repeat(9, minmax(76px, 1fr));
+      gap: 8px;
+      margin-bottom: 12px;
+      overflow-x: auto;
+    }
     .topic-tabs button {
-      min-height: 58px;
+      min-height: 44px;
       border: 1px solid var(--line);
       border-radius: 10px;
       background: linear-gradient(180deg, rgba(255, 253, 248, .86), rgba(247, 244, 239, .52));
       color: var(--ink);
-      text-align: left;
-      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10px;
       font-weight: 600;
+      white-space: nowrap;
     }
     .topic-tabs button[aria-current="true"] { background: linear-gradient(135deg, rgba(200, 167, 102, .25), rgba(255, 253, 248, .76)); color: var(--ink); border-color: rgba(200, 167, 102, .62); }
-    .topic-tabs span { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; font-weight: 500; }
-    .topic-tabs button[aria-current="true"] span { color: rgba(7, 24, 39, .56); }
-    .topic-tools { display: grid; grid-template-columns: minmax(420px, 1fr) 180px 160px; gap: 10px; margin-bottom: 12px; }
+    .topic-tools { display: grid; grid-template-columns: 150px minmax(360px, 1fr) 180px 160px; gap: 10px; margin-bottom: 12px; }
     .topic-list { display: grid; gap: 10px; }
     .topic-item { border: 1px solid var(--line); border-radius: 10px; background: linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,253,248,.68)); overflow: hidden; }
     .topic-summary {
@@ -515,11 +523,12 @@
       <section class="panel" data-panel="topics">
         <div class="page-surface">
         <header class="page-head">
-          <div><span class="kicker">BOSS TOPIC ENGINE V2.0</span><h1>老板选题中心</h1></div>
+          <div><span class="kicker">BOSS TOPIC ENGINE V2.1</span><h1>选题中心</h1></div>
           <p>把 AI 热点翻译成老板决策信号。</p>
         </header>
         <div class="topic-tabs" data-topic-tabs></div>
         <div class="topic-tools">
+          <select data-topic-date></select>
           <input type="search" data-topic-search placeholder="搜索标题、问题、判断">
           <select data-topic-type></select>
           <select data-topic-sort>

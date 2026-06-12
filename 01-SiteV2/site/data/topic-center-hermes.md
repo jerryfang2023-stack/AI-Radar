@@ -1,6 +1,6 @@
 # Hermes Topic Table - 2026-06-12
 
-- version: V2.0.0-boss-topic-engine
+- version: V2.1.0-boss-topic-engine
 - read_mode: all_topics
 - topic_count: 8
 - json: 01-SiteV2/site/data/topic-center-hermes.json

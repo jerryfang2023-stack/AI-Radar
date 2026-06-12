@@ -1,5 +1,7 @@
 # Good Timeline Entry Example
 
+Use this pattern when checking First-Line Viewpoints Obsidian sync.
+
 ```yaml
 ---
 date: 2026-06-12
@@ -15,8 +17,18 @@ formal_tags:
   scenario: [builder-workflow]
 ---
 
+## Viewpoint
+
 zh_summary: "Polished Chinese summary of the builder's public viewpoint."
+
+original_excerpt: "Short source excerpt or paraphrase boundary, not a full copied thread."
+
 why_it_matters: "What this viewpoint helps operators understand; not a Business Signal fact."
 ```
 
-Pass criteria: same-date person/date file exists, source identity is preserved, and Chinese frontstage text is ready.
+Pass criteria:
+
+- Same-date person/date file exists under the V3.3.5 timeline structure.
+- Original URL, author, and timestamp are present.
+- Primary frontstage text is translated or rewritten for Chinese readers.
+- The entry is clearly a viewpoint, not evidence for Signal Cards or trend candidates.

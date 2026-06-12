@@ -1,5 +1,7 @@
 # Good Trend Candidate Example
 
+Use this pattern when a lightweight trend candidate is justified.
+
 ```yaml
 ---
 id: TRC-20260612-01
@@ -19,8 +21,14 @@ commercial_variable: workflow_budget_shift
 boundary_notes: "The pattern is visible across multiple signals, but adoption scale is not yet proven."
 missing_information:
   - "Independent customer count"
-next_observation: "Watch whether more vertical teams buy the same workflow."
+  - "Budget owner or procurement path"
+next_observation: "Watch whether more vertical teams buy the same workflow, not just test it."
 ---
 ```
 
-Pass criteria: multiple source-backed business signals, multiple source types, a concrete commercial variable, and explicit boundary notes.
+Pass criteria:
+
+- At least 2-3 related source-backed business signals.
+- At least 2 source types or evidence contexts.
+- A concrete commercial variable is named.
+- Boundary and missing-information fields stay explicit.

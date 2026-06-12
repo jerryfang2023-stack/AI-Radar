@@ -10,7 +10,7 @@ const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
 const topicCenterHermesJsonPath = path.join(siteDataDir, "topic-center-hermes.json");
 const topicCenterHermesMdPath = path.join(siteDataDir, "topic-center-hermes.md");
-const topicCenterVersion = "V2.0.0-boss-topic-engine";
+const topicCenterVersion = "V2.1.0-boss-topic-engine";
 
 const engines = [
   {

@@ -1,5 +1,7 @@
 # Bad Single-Article Trend Example
 
+This should be a no-candidate decision.
+
 ```yaml
 ---
 id: TRC-20260612-99
@@ -16,4 +18,9 @@ boundary_notes: ""
 trend_hypothesis: "One article says agentic workflows are the next big trend, so WaveSight records a trend candidate."
 ```
 
-Why it fails: it is based on one article and no source-backed Signal Cards.
+Why it fails:
+
+- It is based on one article and no source-backed Signal Cards.
+- `commercial_variable` is vague hype, not a budget, workflow, adoption, pricing, risk, or procurement variable.
+- Boundary notes are empty.
+- Write a no-candidate decision or keep watching.

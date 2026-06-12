@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-12 23:06:44",
+    "generatedAt": "2026-06-12 23:28:28",
     "generatedDate": "2026-06-12",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
@@ -91,8 +91,8 @@ window.WaveSightLocalSkillStore = {
       "hasTemplates": false,
       "sizeKB": 9,
       "fileCount": 7,
-      "modifiedAt": "2026-06-12 22:58:23",
-      "modifiedTime": 1781276303134.675,
+      "modifiedAt": "2026-06-12 23:26:03",
+      "modifiedTime": 1781277963202.6133,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": []
@@ -131,8 +131,8 @@ window.WaveSightLocalSkillStore = {
       "hasTemplates": false,
       "sizeKB": 8,
       "fileCount": 7,
-      "modifiedAt": "2026-06-12 22:58:23",
-      "modifiedTime": 1781276303136.6826,
+      "modifiedAt": "2026-06-12 23:26:03",
+      "modifiedTime": 1781277963203.6216,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": []
@@ -249,10 +249,10 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "sizeKB": 7,
+      "sizeKB": 8,
       "fileCount": 7,
-      "modifiedAt": "2026-06-12 22:58:23",
-      "modifiedTime": 1781276303136.6826,
+      "modifiedAt": "2026-06-12 23:26:03",
+      "modifiedTime": 1781277963205.5464,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": []
@@ -411,8 +411,8 @@ window.WaveSightLocalSkillStore = {
       "hasTemplates": false,
       "sizeKB": 11,
       "fileCount": 5,
-      "modifiedAt": "2026-06-12 22:58:23",
-      "modifiedTime": 1781276303141.4229,
+      "modifiedAt": "2026-06-12 23:26:03",
+      "modifiedTime": 1781277963205.5464,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": []
