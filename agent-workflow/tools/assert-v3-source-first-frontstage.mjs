@@ -147,6 +147,7 @@ function titleNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  if (hanCount >= 5 && /(使用|发布|融资|完成|推出|开发|应用|原文|用途见原文)/u.test(text)) return false;
   const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
   if (text.length > 18 && hanCount === 0) return true;
   if (latinWords.length >= 7 && hanCount < 10) return true;
@@ -221,6 +222,42 @@ function top10FactIsWeak(card = {}) {
   return false;
 }
 
+function publicTitleIsGeneric(value = "") {
+  return /案例：\s*AI\s*进入|获得\s*\$|发布\s*AI\s*能力|把\s*AI\s*用进|信号：\s*AI\s*进入|推出\s*Agent\s*工作流能力，切入/iu.test(String(value || ""));
+}
+
+function publicCardFactIsWeak(card = {}) {
+  const fact = String(card.translatedFact || card.fact || "").trim();
+  if (!fact) return true;
+  if (/^原始来源链接：?https?:\/\//iu.test(fact)) return true;
+  if (/^鍘熵?https?:\/\//iu.test(fact)) return true;
+  if (/^##\s*P-\d+/iu.test(fact) || /\braw_ref:|\braw_original_id:|\braw_archive:|\bpool_refs:/iu.test(fact)) return true;
+  if (/公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果/iu.test(fact)) return true;
+  return top10FactIsWeak(card);
+}
+
+function checkPublicCardContract(card = {}, label = "public card") {
+  const id = card.id || card.linkedCardId || "(missing id)";
+  if (!card.title) {
+    issues.push(`${label} ${id} is missing public title`);
+  }
+  if (card.displayTitle && card.title !== card.displayTitle) {
+    issues.push(`${label} ${id} public title does not match displayTitle`);
+  }
+  if (card.modelGeneratedTitle && card.title === card.modelGeneratedTitle && publicTitleIsGeneric(card.modelGeneratedTitle)) {
+    issues.push(`${label} ${id} exposes model-generated title instead of source-derived title`);
+  }
+  if (publicTitleIsGeneric(card.title)) {
+    issues.push(`${label} ${id} exposes generic generated title: ${card.title}`);
+  }
+  if (titleNeedsTranslation(card.title)) {
+    issues.push(`${label} ${id} has untranslated public title: ${card.title}`);
+  }
+  if (publicCardFactIsWeak(card)) {
+    issues.push(`${label} ${id} has weak news fact; use source-derived facts instead of links or generic fallback`);
+  }
+}
+
 function sourceUrlIsRootLike(value = "") {
   try {
     const parsed = new URL(value);
@@ -234,6 +271,7 @@ function sourceUrlIsRootLike(value = "") {
 const frontstageByDate = new Map();
 for (const card of frontstageCards) {
   if (!cardIds.has(card.id)) issues.push(`frontstage card ${card.id || "(missing id)"} is not present in full cards asset set`);
+  checkPublicCardContract(card, `frontstage card ${card.date || "(missing date)"}`);
   if (!card.date) continue;
   const list = frontstageByDate.get(card.date) || [];
   list.push(card);
@@ -296,7 +334,7 @@ if (!Array.isArray(payload.top10)) {
     if (!item.sourceTitle && !item.originalTitle && !item.displayTitle) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing source/display title`);
     }
-    if (item.modelGeneratedTitle && item.title === item.modelGeneratedTitle) {
+    if (item.modelGeneratedTitle && item.title === item.modelGeneratedTitle && publicTitleIsGeneric(item.modelGeneratedTitle)) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} exposes model-generated title instead of source-derived title`);
     }
     if (item.displayTitle && item.title !== item.displayTitle) {
@@ -383,6 +421,7 @@ for (const card of cards) {
 }
 
 for (const candidate of payload.corePoolCandidates || []) {
+  checkPublicCardContract(candidate, `core pool candidate ${candidate.date || "(missing date)"}`);
   if (candidate.date === activeDate && (subjectHasSourceNoise(candidate.subject) || subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has title-like subject: ${candidate.subject}`);
   }
