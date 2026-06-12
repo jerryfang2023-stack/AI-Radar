@@ -9,6 +9,7 @@
   const state = {
     panel: location.hash ? location.hash.slice(1) : "overview",
     topicSource: "all",
+    topicDate: "",
     topicOpenId: "",
     factorySource: "",
     factoryTopicId: "",
@@ -229,8 +230,10 @@
     topicSources.splice(0, topicSources.length, ...topicCenterData.sources);
   }
   const defaultTopicSource = topicSources[0]?.id || "money_leak";
+  const topicFallbackDate = text(topicCenterData.meta?.date || latest.date || latest.label || "");
   if (state.topicSource !== "all" && !topicSources.some((source) => source.id === state.topicSource)) state.topicSource = "all";
   if (!topicSources.some((source) => source.id === state.factorySource)) state.factorySource = defaultTopicSource;
+  const getTopicDate = (topic) => text(topic?.date || topicFallbackDate);
 
   function strictAngles(topic) {
     const subject = topic.title.replace(/[｜|].*$/, "").slice(0, 28);
@@ -328,15 +331,20 @@
       score: Number(topic.score) || 80,
       grade: topic.grade || scoreGrade(Number(topic.score) || 80),
       priority: topic.priority || ((Number(topic.score) || 80) >= 90 ? "S级选题" : "候选"),
+      date: getTopicDate(topic),
       angles: Array.isArray(topic.angles) && topic.angles.length ? topic.angles : strictAngles(topic),
     }))
     : buildTopics();
+  topics.forEach((topic) => { if (!topic.date) topic.date = getTopicDate(topic); });
+  const topicDates = [...new Set(topics.map((topic) => getTopicDate(topic)).filter(Boolean))].sort((a, b) => b.localeCompare(a));
+  if (!topicDates.includes(state.topicDate)) state.topicDate = topicDates[0] || "";
 
   function visibleTopics() {
     const query = text($("[data-topic-search]")?.value).trim().toLowerCase();
     const type = $("[data-topic-type]")?.value || "all";
     const sort = $("[data-topic-sort]")?.value || "score";
     let items = state.topicSource === "all" ? [...topics] : topics.filter((topic) => topic.sourceId === state.topicSource);
+    if (state.topicDate) items = items.filter((topic) => getTopicDate(topic) === state.topicDate);
     if (type !== "all") items = items.filter((topic) => topic.type === type);
     if (query) items = items.filter((topic) => `${topic.title} ${topic.core} ${topic.relevance} ${topic.evidence} ${topic.bossPain || ""} ${topic.moneyLine || ""} ${topic.spreadTitle || ""}`.toLowerCase().includes(query));
     return items.sort((a, b) => sort === "source" ? a.title.localeCompare(b.title, "zh-CN") : b.score - a.score);
@@ -438,6 +446,12 @@
       const types = [...new Set(topics.map((topic) => topic.type).filter(Boolean))];
       typeSelect.innerHTML = `<option value="all">全部类型</option>${types.map((type) => `<option value="${html(type)}">${html(type)}</option>`).join("")}`;
       typeSelect.dataset.ready = "1";
+    }
+    const dateSelect = $("[data-topic-date]");
+    if (dateSelect && !dateSelect.dataset.ready) {
+      dateSelect.innerHTML = topicDates.map((date, index) => `<option value="${html(date)}">${html(index === 0 ? `${date} 最新` : date)}</option>`).join("");
+      dateSelect.value = state.topicDate;
+      dateSelect.dataset.ready = "1";
     }
   }
 
@@ -644,6 +658,7 @@
   });
 
   $("[data-topic-search]")?.addEventListener("input", () => { state.topicOpenId = ""; renderTopics(); });
+  $("[data-topic-date]")?.addEventListener("change", (event) => { state.topicDate = event.target.value; state.topicOpenId = ""; renderTopics(); });
   $("[data-topic-type]")?.addEventListener("change", () => { state.topicOpenId = ""; renderTopics(); });
   $("[data-topic-sort]")?.addEventListener("change", renderTopics);
   $("[data-auth]")?.addEventListener("click", () => checkAuth("[data-status]").catch((error) => setStatus("[data-status]", "error", "授权不可用", error.message)));
