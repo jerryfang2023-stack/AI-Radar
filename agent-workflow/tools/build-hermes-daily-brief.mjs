@@ -60,6 +60,89 @@ function markdownItem(label, value) {
   return `- ${label}: ${text}`;
 }
 
+function text(value) {
+  return value == null ? "" : String(value).trim();
+}
+
+function list(value) {
+  if (Array.isArray(value)) return value;
+  if (value && typeof value === "object") return Object.values(value);
+  return value ? [value] : [];
+}
+
+function compactTopicFromTopicCenter(topic, index) {
+  return {
+    rank: topic.rank || index + 1,
+    id: topic.id || "",
+    score: Number(topic.score || 0),
+    grade: topic.grade || "",
+    sourceId: topic.sourceId || "",
+    sourceName: topic.sourceName || "",
+    priority: topic.priority || "",
+    title: topic.spreadTitle || topic.title || "",
+    core: topic.core || "",
+    bossPain: topic.bossPain || "",
+    moneyLine: topic.moneyLine || "",
+    oldFrame: topic.oldFrame || "",
+    newFrame: topic.newFrame || "",
+    actionHint: topic.actionHint || "",
+    evidenceBoundary: topic.evidenceBoundary || "",
+  };
+}
+
+function loadTopicCenter() {
+  const hermesTable = readJson(path.join(root, "01-SiteV2", "site", "data", "topic-center-hermes.json"), null);
+  if (hermesTable?.topics?.length) {
+    return {
+      meta: hermesTable.meta || {},
+      topics: hermesTable.topics.map(compactTopicFromTopicCenter),
+    };
+  }
+
+  const topicCenter = readJson(path.join(root, "01-SiteV2", "site", "data", "topic-center.json"), null);
+  const topics = list(topicCenter?.topics).map(compactTopicFromTopicCenter);
+  return {
+    meta: {
+      version: topicCenter?.meta?.version || "",
+      date: topicCenter?.meta?.date || "",
+      generatedAt: topicCenter?.meta?.generatedAt || "",
+      source: "topic-center.json",
+      rule: "hermes_all_topic_table_fallback",
+      readMode: "all_topics",
+      topicCount: topics.length,
+      githubPath: "01-SiteV2/site/data/topic-center.json",
+      pagesJsonPath: "/data/topic-center.json",
+    },
+    topics,
+  };
+}
+
+function topicCenterLines(topicCenter) {
+  const topics = list(topicCenter.topics);
+  if (!topics.length) {
+    return [
+      "Boss Topic Center",
+      "- topic_center: missing or empty",
+    ];
+  }
+  const lines = [
+    `Boss Topic Center ${topicCenter.meta?.date || ""}: ${topics.length} topics`,
+    markdownItem("source", topicCenter.meta?.githubPath || "01-SiteV2/site/data/topic-center-hermes.json"),
+    markdownItem("read_mode", topicCenter.meta?.readMode || "all_topics"),
+  ];
+  for (const topic of topics) {
+    lines.push(
+      "",
+      `${topic.rank}. ${topic.title}`,
+      `   type: ${topic.sourceName || "-"} | score: ${topic.score || "-"} | priority: ${topic.priority || "-"}`,
+      `   boss_pain: ${topic.bossPain || "-"}`,
+      `   money_line: ${topic.moneyLine || "-"}`,
+      `   action: ${topic.actionHint || "-"}`,
+    );
+  }
+  return lines;
+}
+
 function outcome(name) {
   return argValue(name, "not_run");
 }
@@ -104,6 +187,7 @@ function main() {
   const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${date}-pool-candidates.md`);
   const signalsFile = path.join(root, "01-SiteV2", "content", "04-business-signals", "signals", `${date}-signals.md`);
   const opinionCandidatesFile = path.join(root, "01-SiteV2", "content", "05-frontier-opinions", `${date}-opinion-candidates.md`);
+  const topicCenter = loadTopicCenter();
 
   const signalCards = countFiles(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"), new RegExp(`^${date}--signal--.*\\.md$`, "u"));
   const opinionTimelineDetails = countOpinionTimelineDetails(date);
@@ -153,6 +237,8 @@ function main() {
   const text = [
     summaryLines.join("\n"),
     "",
+    topicCenterLines(topicCenter).join("\n"),
+    "",
     "Gates and automation outcomes",
     gateLines.join("\n"),
   ].join("\n");
@@ -177,6 +263,7 @@ function main() {
       daily_title: dailyTitle,
       trend_title: trendTitle,
     },
+    topic_center: topicCenter,
     outcomes,
     feishu_text: text,
   };

@@ -2,7 +2,7 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V2.0.0-boss-topic-engine",
     "date": "2026-06-12",
-    "generatedAt": "2026-06-12T09:17:18.292Z",
+    "generatedAt": "2026-06-12T09:44:50.986Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
     "rule": "boss_decision_topic_engine",
     "ruleLabel": "老板决策型选题机制",
@@ -17,7 +17,7 @@ window.WaveSightTopicCenter = {
     },
     "inputCounts": {
       "businessSignals": 19,
-      "firstLineViewpoints": 52,
+      "firstLineViewpoints": 44,
       "communityItems": 61
     },
     "sources": {
@@ -175,7 +175,7 @@ window.WaveSightTopicCenter = {
       "oldFrame": "做一个什么都能干的 AI 平台。",
       "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
       "actionHint": "先从客服、招投标、财务对账、销售跟进、会议催办里选一个。",
-      "evidence": "Bill Joplin 使用 ServiceTitan AI 语音 Agent 处理 90% 以上来电；Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
+      "evidence": "Bill Joplin 使用 ServiceTitan AI 语音 Agent 处理 90% 以上来电；Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
@@ -200,11 +200,11 @@ window.WaveSightTopicCenter = {
         "communityItems": [
           {
             "kind": "community_intelligence",
-            "id": "6c5c1f07dc7bf3",
-            "title": "水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
-            "source": "AI破局",
-            "url": "https://aipoju.com/search",
-            "note": "嘟嘟🇲 🇩 行动家 2026-05-31 12:04 精华 AI 视频创作 SaaS—Storybound， 同时做了两件事： - 自己用它跑视频号：从 1000 粉涨到 17 万粉，5 月单月带货 GMV ¥14 万 / 佣金 ¥7 万+ - 把它做成软件卖：6/1 公测前已有 73 个付费用户 / 累计订阅 ¥3 万+ 首次体验「自己跑视频号 + …"
+            "id": "6798abf6c699cc",
+            "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+            "source": "生财有术",
+            "url": "https://scys.com/articleDetail/xq_topic/14422458152228212",
+            "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
           }
         ]
       },
@@ -259,7 +259,7 @@ window.WaveSightTopicCenter = {
       "oldFrame": "追最新 AI 工具。",
       "newFrame": "沉淀自己的流程、语料、SOP 和验收标准。",
       "actionHint": "先选一个业务动作，写清输入、步骤、验收标准，再接工具。",
-      "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。；水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
+      "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
@@ -275,21 +275,21 @@ window.WaveSightTopicCenter = {
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2064757537992249734",
-            "title": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2064757537992249734",
-            "note": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。"
+            "id": "2065236013627351551",
+            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+            "source": "Amjad Masad",
+            "url": "https://x.com/amasad/status/2065236013627351551",
+            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
           }
         ],
         "communityItems": [
           {
             "kind": "community_intelligence",
-            "id": "6c5c1f07dc7bf3",
-            "title": "水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
-            "source": "AI破局",
-            "url": "https://aipoju.com/search",
-            "note": "嘟嘟🇲 🇩 行动家 2026-05-31 12:04 精华 AI 视频创作 SaaS—Storybound， 同时做了两件事： - 自己用它跑视频号：从 1000 粉涨到 17 万粉，5 月单月带货 GMV ¥14 万 / 佣金 ¥7 万+ - 把它做成软件卖：6/1 公测前已有 73 个付费用户 / 累计订阅 ¥3 万+ 首次体验「自己跑视频号 + …"
+            "id": "6798abf6c699cc",
+            "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+            "source": "生财有术",
+            "url": "https://scys.com/articleDetail/xq_topic/14422458152228212",
+            "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
           }
         ]
       },
@@ -344,7 +344,7 @@ window.WaveSightTopicCenter = {
       "oldFrame": "AI 创业只能跟大模型和融资有关。",
       "newFrame": "普通人的 AI 机会在帮老板跨过工具配置和流程落地门槛。",
       "actionHint": "把 AI 基建服务产品化：账号、网络、工具、知识库、一个工作流。",
-      "evidence": "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+      "evidence": "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
@@ -360,11 +360,11 @@ window.WaveSightTopicCenter = {
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2064757537992249734",
-            "title": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2064757537992249734",
-            "note": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。"
+            "id": "2065236013627351551",
+            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+            "source": "Amjad Masad",
+            "url": "https://x.com/amasad/status/2065236013627351551",
+            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
           }
         ],
         "communityItems": [
@@ -505,7 +505,7 @@ window.WaveSightTopicCenter = {
       "oldFrame": "AI 是员工自己研究的新工具。",
       "newFrame": "AI 是同行正在重做流程的生产系统。",
       "actionHint": "每天只问一个问题：同行哪一个流程已经被 AI 缩短了？",
-      "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
+      "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
@@ -521,11 +521,11 @@ window.WaveSightTopicCenter = {
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2064757537992249734",
-            "title": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2064757537992249734",
-            "note": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。"
+            "id": "2065236013627351551",
+            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+            "source": "Amjad Masad",
+            "url": "https://x.com/amasad/status/2065236013627351551",
+            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
           }
         ],
         "communityItems": [
@@ -590,7 +590,7 @@ window.WaveSightTopicCenter = {
       "oldFrame": "AI 上线就是裁员。",
       "newFrame": "AI 上线的第一阶段，是让公司少招重复岗位。",
       "actionHint": "把一个岗位每天重复超过 20 次的动作列出来，先挑 3 个标准动作交给 AI。",
-      "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；大量证据表明， Fable在编码（和相关）任务方面的能力大幅提升。这也是复杂知识工作任务的准确性和成功的重大飞跃。在我们的Box AI Complex Work Eval中，我们针对Opus 4.8测试了该模型，几乎在每个行业都看到了巨大…；水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
+      "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
@@ -606,21 +606,21 @@ window.WaveSightTopicCenter = {
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2064922814688481678",
-            "title": "大量证据表明， Fable在编码（和相关）任务方面的能力大幅提升。这也是复杂知识工作任务的准确性和成功的重大飞跃。在我们的Box AI Complex Work Eval中，我们针对Opus 4.8测试了该模型，几乎在每个行业都看到了巨大…",
-            "source": "Aaron Levie",
-            "url": "https://x.com/levie/status/2064922814688481678",
-            "note": "大量证据表明， Fable在编码（和相关）任务方面的能力大幅提升。这也是复杂知识工作任务的准确性和成功的重大飞跃。在我们的Box AI Complex Work Eval中，我们针对Opus 4.8测试了该模型，几乎在每个行业都看到了巨大的提升。对于我们的评估，我们使用Fable为Box AI Agent提供了一组处理企业文档的艰难的现实世界知识工作问题。…"
+            "id": "2065236013627351551",
+            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+            "source": "Amjad Masad",
+            "url": "https://x.com/amasad/status/2065236013627351551",
+            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
           }
         ],
         "communityItems": [
           {
             "kind": "community_intelligence",
-            "id": "6c5c1f07dc7bf3",
-            "title": "水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
-            "source": "AI破局",
-            "url": "https://aipoju.com/search",
-            "note": "嘟嘟🇲 🇩 行动家 2026-05-31 12:04 精华 AI 视频创作 SaaS—Storybound， 同时做了两件事： - 自己用它跑视频号：从 1000 粉涨到 17 万粉，5 月单月带货 GMV ¥14 万 / 佣金 ¥7 万+ - 把它做成软件卖：6/1 公测前已有 73 个付费用户 / 累计订阅 ¥3 万+ 首次体验「自己跑视频号 + …"
+            "id": "6798abf6c699cc",
+            "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+            "source": "生财有术",
+            "url": "https://scys.com/articleDetail/xq_topic/14422458152228212",
+            "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
           }
         ]
       },
@@ -675,7 +675,7 @@ window.WaveSightTopicCenter = {
       "oldFrame": "AI 越自主越好。",
       "newFrame": "AI 越自主，越需要先设计权限和复核。",
       "actionHint": "先给 AI 员工分三级权限：只读、建议、可执行。",
-      "evidence": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限；很多人问我是如何使用寓言编辑自己的发布视频的，所以我制作了一个关于这个的视频！ TLDR它编写了大量的代码和工具调用来使用转录服务， ffmpeg ，进行色彩分级，使用figma mcp ，制作remotion UI并渲染它。我没有触摸视…；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+      "evidence": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限；负责任的AIAgent网络的五大原则：如何评估任何治理平台；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
@@ -691,11 +691,11 @@ window.WaveSightTopicCenter = {
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2064826394589442448",
-            "title": "很多人问我是如何使用寓言编辑自己的发布视频的，所以我制作了一个关于这个的视频！ TLDR它编写了大量的代码和工具调用来使用转录服务， ffmpeg ，进行色彩分级，使用figma mcp ，制作remotion UI并渲染它。我没有触摸视…",
-            "source": "Thariq",
-            "url": "https://x.com/trq212/status/2064826394589442448",
-            "note": "很多人问我是如何使用寓言编辑自己的发布视频的，所以我制作了一个关于这个的视频！ TLDR它编写了大量的代码和工具调用来使用转录服务， ffmpeg ，进行色彩分级，使用figma mcp ，制作remotion UI并渲染它。我没有触摸视频编辑器。"
+            "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+            "title": "负责任的AIAgent网络的五大原则：如何评估任何治理平台",
+            "source": "Tigera Blog (Calico / AI Security)",
+            "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+            "note": "负责任的AIAgent网络的五大原则：如何评估任何治理平台"
           }
         ],
         "communityItems": [
@@ -918,7 +918,7 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 上线就是裁员。",
           "newFrame": "AI 上线的第一阶段，是让公司少招重复岗位。",
           "actionHint": "把一个岗位每天重复超过 20 次的动作列出来，先挑 3 个标准动作交给 AI。",
-          "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；大量证据表明， Fable在编码（和相关）任务方面的能力大幅提升。这也是复杂知识工作任务的准确性和成功的重大飞跃。在我们的Box AI Complex Work Eval中，我们针对Opus 4.8测试了该模型，几乎在每个行业都看到了巨大…；水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
+          "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
@@ -934,21 +934,21 @@ window.WaveSightTopicCenter = {
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2064922814688481678",
-                "title": "大量证据表明， Fable在编码（和相关）任务方面的能力大幅提升。这也是复杂知识工作任务的准确性和成功的重大飞跃。在我们的Box AI Complex Work Eval中，我们针对Opus 4.8测试了该模型，几乎在每个行业都看到了巨大…",
-                "source": "Aaron Levie",
-                "url": "https://x.com/levie/status/2064922814688481678",
-                "note": "大量证据表明， Fable在编码（和相关）任务方面的能力大幅提升。这也是复杂知识工作任务的准确性和成功的重大飞跃。在我们的Box AI Complex Work Eval中，我们针对Opus 4.8测试了该模型，几乎在每个行业都看到了巨大的提升。对于我们的评估，我们使用Fable为Box AI Agent提供了一组处理企业文档的艰难的现实世界知识工作问题。…"
+                "id": "2065236013627351551",
+                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+                "source": "Amjad Masad",
+                "url": "https://x.com/amasad/status/2065236013627351551",
+                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "6c5c1f07dc7bf3",
-                "title": "水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
-                "source": "AI破局",
-                "url": "https://aipoju.com/search",
-                "note": "嘟嘟🇲 🇩 行动家 2026-05-31 12:04 精华 AI 视频创作 SaaS—Storybound， 同时做了两件事： - 自己用它跑视频号：从 1000 粉涨到 17 万粉，5 月单月带货 GMV ¥14 万 / 佣金 ¥7 万+ - 把它做成软件卖：6/1 公测前已有 73 个付费用户 / 累计订阅 ¥3 万+ 首次体验「自己跑视频号 + …"
+                "id": "6798abf6c699cc",
+                "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+                "source": "生财有术",
+                "url": "https://scys.com/articleDetail/xq_topic/14422458152228212",
+                "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
               }
             ]
           },
@@ -1005,7 +1005,7 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 是员工自己研究的新工具。",
           "newFrame": "AI 是同行正在重做流程的生产系统。",
           "actionHint": "每天只问一个问题：同行哪一个流程已经被 AI 缩短了？",
-          "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
+          "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
@@ -1021,11 +1021,11 @@ window.WaveSightTopicCenter = {
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2064757537992249734",
-                "title": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2064757537992249734",
-                "note": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。"
+                "id": "2065236013627351551",
+                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+                "source": "Amjad Masad",
+                "url": "https://x.com/amasad/status/2065236013627351551",
+                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
               }
             ],
             "communityItems": [
@@ -1092,7 +1092,7 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 越自主越好。",
           "newFrame": "AI 越自主，越需要先设计权限和复核。",
           "actionHint": "先给 AI 员工分三级权限：只读、建议、可执行。",
-          "evidence": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限；很多人问我是如何使用寓言编辑自己的发布视频的，所以我制作了一个关于这个的视频！ TLDR它编写了大量的代码和工具调用来使用转录服务， ffmpeg ，进行色彩分级，使用figma mcp ，制作remotion UI并渲染它。我没有触摸视…；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+          "evidence": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限；负责任的AIAgent网络的五大原则：如何评估任何治理平台；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
@@ -1108,11 +1108,11 @@ window.WaveSightTopicCenter = {
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2064826394589442448",
-                "title": "很多人问我是如何使用寓言编辑自己的发布视频的，所以我制作了一个关于这个的视频！ TLDR它编写了大量的代码和工具调用来使用转录服务， ffmpeg ，进行色彩分级，使用figma mcp ，制作remotion UI并渲染它。我没有触摸视…",
-                "source": "Thariq",
-                "url": "https://x.com/trq212/status/2064826394589442448",
-                "note": "很多人问我是如何使用寓言编辑自己的发布视频的，所以我制作了一个关于这个的视频！ TLDR它编写了大量的代码和工具调用来使用转录服务， ffmpeg ，进行色彩分级，使用figma mcp ，制作remotion UI并渲染它。我没有触摸视频编辑器。"
+                "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+                "title": "负责任的AIAgent网络的五大原则：如何评估任何治理平台",
+                "source": "Tigera Blog (Calico / AI Security)",
+                "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+                "note": "负责任的AIAgent网络的五大原则：如何评估任何治理平台"
               }
             ],
             "communityItems": [
@@ -1179,7 +1179,7 @@ window.WaveSightTopicCenter = {
           "oldFrame": "追最新 AI 工具。",
           "newFrame": "沉淀自己的流程、语料、SOP 和验收标准。",
           "actionHint": "先选一个业务动作，写清输入、步骤、验收标准，再接工具。",
-          "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。；水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
+          "evidence": "Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
@@ -1195,21 +1195,21 @@ window.WaveSightTopicCenter = {
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2064757537992249734",
-                "title": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2064757537992249734",
-                "note": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。"
+                "id": "2065236013627351551",
+                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+                "source": "Amjad Masad",
+                "url": "https://x.com/amasad/status/2065236013627351551",
+                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "6c5c1f07dc7bf3",
-                "title": "水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
-                "source": "AI破局",
-                "url": "https://aipoju.com/search",
-                "note": "嘟嘟🇲 🇩 行动家 2026-05-31 12:04 精华 AI 视频创作 SaaS—Storybound， 同时做了两件事： - 自己用它跑视频号：从 1000 粉涨到 17 万粉，5 月单月带货 GMV ¥14 万 / 佣金 ¥7 万+ - 把它做成软件卖：6/1 公测前已有 73 个付费用户 / 累计订阅 ¥3 万+ 首次体验「自己跑视频号 + …"
+                "id": "6798abf6c699cc",
+                "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+                "source": "生财有术",
+                "url": "https://scys.com/articleDetail/xq_topic/14422458152228212",
+                "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
               }
             ]
           },
@@ -1266,7 +1266,7 @@ window.WaveSightTopicCenter = {
           "oldFrame": "做一个什么都能干的 AI 平台。",
           "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
           "actionHint": "先从客服、招投标、财务对账、销售跟进、会议催办里选一个。",
-          "evidence": "Bill Joplin 使用 ServiceTitan AI 语音 Agent 处理 90% 以上来电；Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
+          "evidence": "Bill Joplin 使用 ServiceTitan AI 语音 Agent 处理 90% 以上来电；Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
@@ -1291,11 +1291,11 @@ window.WaveSightTopicCenter = {
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "6c5c1f07dc7bf3",
-                "title": "水哥 2026-04-29 21:55 精华 1.6w短思考 + 10w逐字稿：两天AI破局大会核心内容都在这 两天AI破局大会没来的圈友们，这次也有福利了。",
-                "source": "AI破局",
-                "url": "https://aipoju.com/search",
-                "note": "嘟嘟🇲 🇩 行动家 2026-05-31 12:04 精华 AI 视频创作 SaaS—Storybound， 同时做了两件事： - 自己用它跑视频号：从 1000 粉涨到 17 万粉，5 月单月带货 GMV ¥14 万 / 佣金 ¥7 万+ - 把它做成软件卖：6/1 公测前已有 73 个付费用户 / 累计订阅 ¥3 万+ 首次体验「自己跑视频号 + …"
+                "id": "6798abf6c699cc",
+                "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+                "source": "生财有术",
+                "url": "https://scys.com/articleDetail/xq_topic/14422458152228212",
+                "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
               }
             ]
           },
@@ -1352,7 +1352,7 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 创业只能跟大模型和融资有关。",
           "newFrame": "普通人的 AI 机会在帮老板跨过工具配置和流程落地门槛。",
           "actionHint": "把 AI 基建服务产品化：账号、网络、工具、知识库、一个工作流。",
-          "evidence": "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+          "evidence": "Jeff Bezos旗下AI初创公司Prometheus完成120亿美元融资，估值达410亿美元；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
@@ -1368,11 +1368,11 @@ window.WaveSightTopicCenter = {
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2064757537992249734",
-                "title": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2064757537992249734",
-                "note": "Michael Truell （ @ mntruell ）在12岁时就爱上了编程。他共同创立的公司@ cursor_ai在两年内从15人增加到700人。如今，超过60%的财富500强企业采用其AI编码平台。"
+                "id": "2065236013627351551",
+                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
+                "source": "Amjad Masad",
+                "url": "https://x.com/amasad/status/2065236013627351551",
+                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
               }
             ],
             "communityItems": [
