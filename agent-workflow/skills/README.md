@@ -23,6 +23,10 @@ Do not mirror runtime caches, package installs, generated feeds, `node_modules`,
 
 ## Current Mirrors
 
+- `guanlan-business-signals-monitor`
+- `guanlan-first-line-viewpoints-monitor`
+- `guanlan-community-intelligence-monitor`
+- `guanlan-daily-monitor`
 - `guanlan-raw-pool-card`
 - `guanlan-daily-monitor-qc`
 - `guanlan-monitor-quality-gate`

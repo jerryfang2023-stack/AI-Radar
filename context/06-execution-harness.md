@@ -30,9 +30,9 @@ Reads:
 1. `AGENTS.md`
 2. `context/05-daily-monitoring.md`
 3. `context/07-v3-intelligence-generation-rules.md`
-4. `skills/guanlan-daily-monitor/SKILL.md`
-5. `skills/guanlan-monitor-quality-gate/SKILL.md`
-6. `skills/guanlan-daily-monitor-qc/SKILL.md`
+4. `agent-workflow/skills/guanlan-daily-monitor/SKILL.md`
+5. `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
+6. `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md`
 
 Produces:
 
