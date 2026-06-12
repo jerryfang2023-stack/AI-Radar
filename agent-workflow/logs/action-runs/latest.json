@@ -1,28 +1,30 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T15:04:14.572Z",
+  "generated_at": "2026-06-12T15:19:59.906Z",
   "date": "2026-06-12",
-  "action": "Column monitor skills",
+  "action": "Hermes feedback loop automation",
   "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Added Skill Ops automation: registry generation from metadata, governed skill validation, skill-store diff and sync, version metadata, complete examples coverage, and audit hook.",
+  "summary": "Integrated read-only Skill Ops governance into daily supervision, added check:skill-ops, and kept audit:skills as the refresh-plus-check path.",
   "contexts": [],
   "changed_files": [],
   "outputs": [
-    "agent-workflow/tools/build-skill-registry.mjs",
-    "agent-workflow/tools/validate-guanlan-skills.mjs",
-    "agent-workflow/tools/diff-skill-store.mjs",
-    "agent-workflow/tools/sync-skill-store.mjs",
-    "agent-workflow/skills/skill-registry.md"
+    "agent-workflow/tools/check-skill-ops.mjs",
+    "agent-workflow/tools/write-daily-supervision-report.mjs",
+    "agent-workflow/tools/lib/guanlan-skill-ops.mjs",
+    "context/08-v3-3-automation.md",
+    "context/10-v3-3-experience-automation.md",
+    "context/11-hermes-daily-supervision-instructions.md"
   ],
   "checks": [
-    "npm run audit:skills",
+    "npm run check:skill-ops",
     "npm run validate:guanlan-skills",
-    "npm run diff:skill-store",
-    "quick_validate 11 governed skills",
-    "node --check Skill Ops scripts"
+    "npm run audit:skills",
+    "npm run health:daily -- --date=2026-06-12 --github=false --scheduled-task=false",
+    "node --check Skill Ops and daily supervision scripts",
+    "git diff --check"
   ],
   "issues": [],
   "risks": [],

@@ -231,6 +231,77 @@ export function isCurrentLike(status = "") {
   return /current|supporting|governance/i.test(status);
 }
 
+export function evaluateSkillOps(paths = defaultPaths()) {
+  const skills = readGovernedSkills(paths.projectSkillDir);
+  const errors = [];
+  const syncRows = [];
+  const currentSkills = skills.filter((skill) => isCurrentLike(skill.guanlan.status));
+  const laneOwners = skills.filter((skill) => /lane owner/i.test(String(skill.guanlan.status || "")));
+
+  if (!skills.length) errors.push("No governed Guanlan skills found.");
+
+  for (const skill of skills) {
+    const meta = skill.guanlan;
+    const prefix = skill.name;
+    if (!skill.hasSkillMd) errors.push(`${prefix}: SKILL.md missing`);
+    if (skill.frontmatter.name !== skill.name) errors.push(`${prefix}: frontmatter name must match folder name`);
+    if (!skill.frontmatter.description) errors.push(`${prefix}: description missing`);
+    if (!/^\d+\.\d+\.\d+$/.test(String(meta.version || ""))) errors.push(`${prefix}: metadata.guanlan.version must be semver`);
+    for (const field of ["lane", "status", "responsibility", "upstream", "downstream", "gates"]) {
+      if (!meta[field]) errors.push(`${prefix}: metadata.guanlan.${field} missing`);
+    }
+    if (isCurrentLike(meta.status)) {
+      if (!skill.evalFiles.length) errors.push(`${prefix}: current skill needs evals/`);
+      if (!skill.exampleFiles.length) errors.push(`${prefix}: current skill needs examples/`);
+      if (meta.memory_required === true && !skill.hasMemory) errors.push(`${prefix}: memory_required=true but MEMORY.md missing`);
+    }
+    if (meta.mirrored_in_skill_store !== false) {
+      const compare = compareSkill(skill.name, paths);
+      syncRows.push({ skill: skill.name, state: compare.state });
+      if (compare.state !== "synced") errors.push(`${prefix}: .skill-store sync state is ${compare.state}`);
+    }
+  }
+
+  let registryState = "missing";
+  if (exists(paths.registryPath)) {
+    const current = normalizeRegistry(readText(paths.registryPath));
+    const expected = normalizeRegistry(renderRegistryMarkdown(skills));
+    registryState = current === expected ? "current" : "stale";
+    if (registryState !== "current") errors.push("skill-registry.md is stale; run npm run build:skill-registry");
+  } else {
+    errors.push("skill-registry.md missing; run npm run build:skill-registry");
+  }
+
+  const evalReady = currentSkills.filter((skill) => skill.evalFiles.length).length;
+  const exampleReady = currentSkills.filter((skill) => skill.exampleFiles.length).length;
+  const memoryMissing = currentSkills.filter((skill) => skill.guanlan.memory_required === true && !skill.hasMemory);
+  const syncDrift = syncRows.filter((row) => row.state !== "synced");
+
+  return {
+    ok: errors.length === 0,
+    status: errors.length ? "failed" : "passed",
+    errors,
+    summary: {
+      governed: skills.length,
+      current: currentSkills.length,
+      laneOwners: laneOwners.length,
+      registryState,
+      mirrored: syncRows.length,
+      syncDrift: syncDrift.length,
+      evalCoverage: currentSkills.length ? Math.round(evalReady / currentSkills.length * 100) : 0,
+      exampleCoverage: currentSkills.length ? Math.round(exampleReady / currentSkills.length * 100) : 0,
+      memoryRequiredMissing: memoryMissing.length,
+    },
+    sync: syncRows,
+  };
+}
+
+function normalizeRegistry(content = "") {
+  return String(content)
+    .replace(/\r\n/g, "\n")
+    .replace(/^Last updated:\s*.*$/mu, "Last updated: <date>");
+}
+
 export function evalCoverage(skill) {
   return [
     `evals ${skill.evalFiles.length}`,

@@ -335,7 +335,7 @@ Codex should make code / rule changes, run the smallest relevant validation, com
 
 Project maintenance is split into daily supervision, weekly retrospective, and monthly cleanup review. These commands are read-only report generators. They do not delete files, edit rules, merge PRs, or deploy.
 
-Daily health uses the same unified supervision report as Hermes:
+Daily health uses the same unified supervision report as Hermes, including the read-only Skill Ops governance check:
 
 ```powershell
 npm run health:daily -- --date=<YYYY-MM-DD>

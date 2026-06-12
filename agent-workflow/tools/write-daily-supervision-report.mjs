@@ -154,12 +154,14 @@ function incidentCategories(lane) {
   if (/obsidian|timeline|sync/iu.test(haystack)) categories.add("obsidian_sync");
   if (/community/iu.test(haystack)) categories.add("community_intelligence");
   if (/first-line|builders|follow-builders/iu.test(haystack)) categories.add("first_line_viewpoints");
+  if (/skill[_ -]?ops|skill registry|skill-store|\.skill-store|guanlan skill|evals|examples/iu.test(haystack)) categories.add("skill_ops");
 
   if (!categories.size) categories.add(slug(lane.problems[0]?.message || lane.actions[0] || lane.id));
   return [...categories];
 }
 
 function repairDataGenerated(lane) {
+  if (lane.id === "skill_ops") return "not_applicable";
   if (lane.problems.some((item) => /date is|missing .*data file/iu.test(item.message))) return "no_or_stale";
   if (lane.problems.some((item) => /workflow is queued|workflow is in_progress|wait for/iu.test(item.message))) return "unknown";
   return "yes";
@@ -221,6 +223,14 @@ function parseGhJson(result, fallback) {
   if (!result.ok) return fallback;
   try {
     return JSON.parse(result.stdout);
+  } catch {
+    return fallback;
+  }
+}
+
+function parseCommandJson(result, fallback = null) {
+  try {
+    return JSON.parse(result.stdout || "");
   } catch {
     return fallback;
   }
@@ -527,6 +537,50 @@ function buildCommunityLane() {
   };
 }
 
+function buildSkillOpsLane() {
+  const problems = [];
+  const warnings = [];
+  const actions = [];
+  const result = runOptional("node", ["agent-workflow/tools/check-skill-ops.mjs", "--json"], 20000);
+  const check = parseCommandJson(result, null);
+  const summary = check?.summary || {};
+  const evidence = {
+    command: "npm run check:skill-ops",
+    registryState: summary.registryState || "unknown",
+    governed: summary.governed ?? null,
+    current: summary.current ?? null,
+    laneOwners: summary.laneOwners ?? null,
+    syncDrift: summary.syncDrift ?? null,
+    evalCoverage: summary.evalCoverage ?? null,
+    exampleCoverage: summary.exampleCoverage ?? null,
+    memoryRequiredMissing: summary.memoryRequiredMissing ?? null,
+  };
+
+  if (!check) {
+    addProblem(problems, `Skill Ops check did not return JSON: ${result.stderr.trim() || result.stdout.trim() || "unknown error"}`, "manual_required");
+  } else if (!check.ok) {
+    for (const error of check.errors || []) addProblem(problems, error, "manual_required");
+  }
+  if (!result.ok && check?.ok) warnings.push(result.stderr.trim() || "Skill Ops check returned a non-zero status without blocking errors");
+
+  if (problems.length) {
+    actions.push("repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror");
+    actions.push("run `npm run audit:skills` after the repair");
+    if (summary.syncDrift) actions.push("run `npm run sync:skill-store` after confirming the project copy is the source of truth");
+  }
+
+  return {
+    id: "skill_ops",
+    label: "Skill Ops Governance",
+    schedule: "daily supervision preflight",
+    status: laneStatus(problems, warnings),
+    evidence,
+    problems,
+    warnings,
+    actions: [...new Set(actions)],
+  };
+}
+
 function aggregateStatus(lanes) {
   if (lanes.some((lane) => lane.status === "failed")) return "failed";
   if (lanes.some((lane) => lane.status === "manual_required")) return "manual_required";
@@ -678,6 +732,7 @@ function writeReports(payload) {
 
 function main() {
   const lanes = [
+    buildSkillOpsLane(),
     buildCommunityLane(),
     buildBusinessSignalsLane(),
     buildFirstLineLane(),

@@ -48,6 +48,12 @@ Audit Guanlan Skill Ops after skill edits or repeated lane failures:
 npm run audit:skills
 ```
 
+Read-only Skill Ops check used by daily supervision:
+
+```powershell
+npm run check:skill-ops
+```
+
 ## Output Files
 
 Action logs:
@@ -144,7 +150,8 @@ Weekly health classifies repeated incidents into categories such as:
 - `frontstage_title_translation`;
 - `frontstage_detail_content`;
 - `monitor_or_gate_failure`;
-- `obsidian_sync`.
+- `obsidian_sync`;
+- `skill_ops`.
 
 When a category repeats, fix the system path that allowed it to recur.
 

@@ -22,10 +22,11 @@
     "recover:daily": "node agent-workflow/tools/dispatch-daily-recovery.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
     "build:skill-registry": "node agent-workflow/tools/build-skill-registry.mjs",
+    "check:skill-ops": "node agent-workflow/tools/check-skill-ops.mjs",
     "validate:guanlan-skills": "node agent-workflow/tools/validate-guanlan-skills.mjs",
     "diff:skill-store": "node agent-workflow/tools/diff-skill-store.mjs",
     "sync:skill-store": "node agent-workflow/tools/sync-skill-store.mjs",
-    "audit:skills": "npm run build:skill-store-dashboard && npm run validate:guanlan-skills && npm run diff:skill-store",
+    "audit:skills": "npm run build:skill-store-dashboard && npm run check:skill-ops",
     "build:skill-store-dashboard": "npm run build:skill-registry && node agent-workflow/tools/build-skill-store-dashboard.mjs",
     "export:public-daily-brief": "node 01-SiteV2/site/scripts/export-public-daily-brief.mjs"
   },

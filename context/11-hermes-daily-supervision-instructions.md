@@ -29,6 +29,14 @@ Run the unified supervision report for the Asia/Shanghai production date:
 npm run supervise:daily -- --date=<YYYY-MM-DD>
 ```
 
+The report also runs the read-only Skill Ops check:
+
+```powershell
+npm run check:skill-ops
+```
+
+Skill Ops verifies the generated skill registry, current Guanlan skill metadata / eval / example coverage, and `.skill-store` mirror state. It is a governance check, not a fourth production lane.
+
 Primary outputs:
 
 - `agent-workflow/reports/<date>-daily-supervision-report.json`
@@ -77,6 +85,7 @@ agent-workflow/inbox/hermes-to-codex/
 |---:|---|---|
 | 08:45 | Community Intelligence | Check local scheduled task, same-date community data, archive, and community gate. |
 | 08:55 | Community Intelligence Publish | Check whether `.github/workflows/daily-community-intelligence-pr.yml` has published same-date community data when local data exists. |
+| Daily preflight | Skill Ops Governance | Check current Guanlan skills, registry freshness, eval/example coverage, and `.skill-store` sync without editing files. |
 | 10:20 | Business Signals | Check the 09:07 / 09:37 / 10:07 GitHub workflow windows. If no same-date run exists after this watchdog, request manual dispatch. |
 | 10:30 | First-Line Viewpoints | Check the 09:17 / 09:47 / 10:17 GitHub workflow windows, builders data gate, and Obsidian timeline sync. |
 | 10:40 | Site publication | Check lane PR / merge / Pages status when GitHub state is available. |
@@ -108,10 +117,10 @@ Weekly review should look for repeated failures that need a gate, eval, or monit
 When Hermes asks Codex for a repair, use this format exactly:
 
 ```text
-lane: business_signals / first_line_viewpoints / community_intelligence
+lane: business_signals / first_line_viewpoints / community_intelligence / skill_ops
 failed_gate: <gate name or report path>
 report_path: <exact report path>
-data_generated: yes / no / stale / unknown
+data_generated: yes / no / stale / unknown / not_applicable
 needed_action: repair rule / repair script / rerun gate / manual dispatch / commit only
 notes: <one or two lines of concrete evidence>
 ```
