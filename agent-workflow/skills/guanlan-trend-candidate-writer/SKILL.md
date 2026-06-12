@@ -30,6 +30,7 @@ Read only when needed:
 - `01-SiteV2/knowledge/10-Templates/trend-candidate-template.md` when creating a new candidate from scratch.
 - Existing trend candidates from the past 7-14 days when deciding whether to update rather than create.
 - `evals/trend-candidate-evals.md` when creating, repairing, auditing, or updating this skill.
+- `examples/good-trend-candidate.md` and `examples/bad-single-article-trend.md` when judging candidate threshold or repairing over-promotion.
 
 ## Decision Tree
 

@@ -1,39 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T05:51:12.224Z",
+  "generated_at": "2026-06-12T14:22:06.805Z",
   "date": "2026-06-12",
-  "action": "Hermes feedback loop automation",
+  "action": "Column monitor skills",
   "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Connected daily supervision failures to Hermes inbox, prioritized reading, and controlled resolution.",
+  "summary": "Added skill registry, project mirrors for lane monitor skills, concrete examples, and example references; synced runtime .skill-store skills.",
   "contexts": [],
-  "changed_files": [
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/read-hermes-inbox.mjs",
-    "agent-workflow/tools/resolve-hermes-inbox.mjs",
-    "AGENTS.md",
-    "context/10-v3-3-experience-automation.md",
-    "context/11-hermes-daily-supervision-instructions.md",
-    "package.json",
-    "agent-workflow/inbox/hermes-to-codex/TEMPLATE.md"
+  "changed_files": [],
+  "outputs": [
+    "agent-workflow/skills/skill-registry.md; agent-workflow/skills/guanlan-business-signals-monitor; agent-workflow/skills/guanlan-first-line-viewpoints-monitor; agent-workflow/skills/guanlan-community-intelligence-monitor; agent-workflow/skills/guanlan-trend-candidate-writer/examples"
   ],
-  "outputs": [],
   "checks": [
-    "node --check scripts",
-    "npm run inbox:hermes prompt",
-    "npm run resolve:hermes dry-run"
+    "quick_validate project skills with PYTHONUTF8=1; quick_validate .skill-store skills with PYTHONUTF8=1; stale skills path scan; project/store example count scan"
   ],
   "issues": [],
   "risks": [],
-  "lessons": [
-    "Failures should create a repair item",
-    "and closure needs validation plus prevention."
-  ],
-  "reusable_rules": [
-    "Codex should inspect open Hermes inbox before monitoring repairs."
-  ],
+  "lessons": [],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }
