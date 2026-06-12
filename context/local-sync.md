@@ -17,6 +17,7 @@ The local workspace is the Obsidian vault. After a fast-forward sync from `origi
 - first-line viewpoint data under `01-SiteV2/site/data/follow-builders-daily.json`
 - first-line viewpoint Obsidian timelines under `01-SiteV2/knowledge/02-Opinion-Timelines/`
 - frontstage and dashboard data under `01-SiteV2/site/data/`
+- daily boss-topic Markdown under `../04-AIP/01-选题库/<YYYY-MM-DD>-每日选题.md`
 
 Business Signals and First-Line Viewpoints are synced as separate data streams. Builders content stays in the builders route and must not be treated as business-signal evidence.
 
@@ -29,6 +30,7 @@ Business Signals and First-Line Viewpoints are synced as separate data streams. 
 | `agent-workflow/tools/install-local-sync-task.ps1` | Register the Windows logon / interval sync task. |
 | `agent-workflow/tools/uninstall-local-sync-task.ps1` | Remove the Windows sync task. |
 | `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` | Generate Obsidian person / date timelines from gated First-Line Viewpoints data. |
+| `agent-workflow/tools/export-topic-center-to-aip-md.mjs` | Export the Topic Center JSON into a daily Markdown topic pool under `04-AIP/01-选题库/`. |
 
 ## Safety Rules
 
@@ -76,6 +78,7 @@ For the current V3.3 routes:
 
 - commercial signal sources are expected to land in the Raw / Pool / Card chain and then into `01-SiteV2/content/04-business-signals/` and `01-SiteV2/knowledge/01-Signal-Cards/`
 - builders sources are expected to land in the independent follow-builders chain and then into `01-SiteV2/site/data/follow-builders-daily.json` and `01-SiteV2/knowledge/02-Opinion-Timelines/`
+- boss-topic recommendations are expected to land in `01-SiteV2/site/data/topic-center.json` and then export locally into `04-AIP/01-选题库/<YYYY-MM-DD>-每日选题.md`
 
 If you need to refresh First-Line Viewpoints locally before merge, run:
 

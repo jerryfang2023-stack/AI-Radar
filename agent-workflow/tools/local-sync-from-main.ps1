@@ -28,6 +28,30 @@ function Resolve-RepoPath {
   return (Resolve-Path -LiteralPath (Join-Path $scriptPath "..\..")).Path
 }
 
+function Invoke-AipTopicExport {
+  param([string]$Repo)
+
+  $exportScript = Join-Path $Repo "agent-workflow\tools\export-topic-center-to-aip-md.mjs"
+  if (-not (Test-Path -LiteralPath $exportScript)) {
+    Write-LogLine "AIP topic export skipped; script not found."
+    return
+  }
+
+  Write-LogLine "Exporting Topic Center daily MD to 04-AIP\01-选题库..."
+  if ($DryRun) {
+    Write-LogLine "[dry-run] node agent-workflow/tools/export-topic-center-to-aip-md.mjs"
+    return
+  }
+
+  $output = & node $exportScript 2>&1
+  foreach ($line in $output) {
+    Write-LogLine $line
+  }
+  if ($LASTEXITCODE -ne 0) {
+    throw "AIP topic export failed with exit code $LASTEXITCODE"
+  }
+}
+
 $repo = Resolve-RepoPath -InputPath $RepoPath
 $logDir = Join-Path $repo "agent-workflow\reports\local-sync"
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null
@@ -68,6 +92,7 @@ try {
 
   if ($localHead -eq $remoteHead) {
     Write-LogLine "Already up to date."
+    Invoke-AipTopicExport -Repo $repo
     exit 0
   }
 
@@ -85,6 +110,7 @@ try {
     git pull --ff-only $Remote $Branch | ForEach-Object { Write-LogLine $_ }
   }
 
+  Invoke-AipTopicExport -Repo $repo
   Write-LogLine "Local sync completed."
 }
 catch {
