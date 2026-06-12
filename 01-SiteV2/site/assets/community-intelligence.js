@@ -168,6 +168,17 @@
     return `${item.source}:body:${normalizeForDedupe([item.summary, item.evidence, item.excerpt].join(" "))}`;
   }
 
+  function itemDedupeKeys(item) {
+    const keys = [];
+    const url = canonicalItemUrl(item);
+    if (url) keys.push(`${item.source}:url:${url}`);
+    const titleKey = normalizeForDedupe(displayTitle(item) || item.title);
+    if (titleKey.length > 12) keys.push(`${item.source}:title:${titleKey}`);
+    const bodyKey = normalizeForDedupe([item.summary, item.evidence, item.excerpt].join(" "));
+    if (bodyKey.length > 24) keys.push(`${item.source}:body:${bodyKey}`);
+    return keys.length ? keys : [itemDedupeKey(item)];
+  }
+
   function uniqValues(values = []) {
     return [...new Set(values.flat().map(tidyText).filter(Boolean))];
   }
@@ -225,13 +236,17 @@
   }
 
   function mergeDisplayItems(items = []) {
-    const groups = new Map();
+    const groups = [];
+    const keyToGroup = new Map();
     for (const item of items) {
-      const key = itemDedupeKey(item);
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(item);
+      const keys = itemDedupeKeys(item);
+      const index = keys.map((key) => keyToGroup.get(key)).find((value) => value !== undefined);
+      const groupIndex = index === undefined ? groups.length : index;
+      if (index === undefined) groups.push([]);
+      groups[groupIndex].push(item);
+      keys.forEach((key) => keyToGroup.set(key, groupIndex));
     }
-    return [...groups.values()].map((group) => {
+    return groups.map((group) => {
       const sorted = [...group].sort((a, b) => {
         const publishedDelta = comparePublishedDesc(a, b);
         if (publishedDelta) return publishedDelta;
@@ -240,6 +255,7 @@
         return itemLinks(b).length - itemLinks(a).length;
       });
       const base = { ...sorted[0] };
+      const preferredUrl = group.map(canonicalItemUrl).find(Boolean) || "";
       const linkMap = new Map();
       for (const item of group) {
         for (const link of itemLinks(item)) {
@@ -247,6 +263,7 @@
         }
       }
       const keywords = uniqValues(group.flatMap((item) => item.matchedKeywords || item.collection?.keywords || item.collection?.keyword || []));
+      base.url = preferredUrl || canonicalItemUrl(base) || base.url;
       base.links = [...linkMap.values()];
       base.tools = uniqValues(group.flatMap((item) => item.tools || []));
       base.painPoints = uniqValues(group.flatMap((item) => item.painPoints || []));
@@ -264,7 +281,7 @@
   }
 
   function allItems() {
-    return state.payload?.items || [];
+    return mergeDisplayItems(state.payload?.items || []);
   }
 
   function sourceLabel(value = "") {

@@ -97,6 +97,37 @@ Each daily retrospective should answer:
 - Did any retired action reappear?
 - Did any unregistered action need classification?
 
+## Production Learning Loop
+
+Use this loop after every real production failure:
+
+1. `supervise:daily` identifies the failed lane, gate, report path, and data state.
+2. Hermes writes a compact repair request under `agent-workflow/inbox/hermes-to-codex/`.
+3. Codex repairs the smallest script, rule, gate, or data build path.
+4. Codex records the repair action with `record:action`, including issues, risks, checks, and reusable lessons.
+5. Codex reruns the exact failed gate or the smallest relevant validation.
+6. Weekly health reads daily supervision reports, Hermes inbox incidents, and action logs together.
+7. If the same incident category repeats twice in the weekly window, promote the lesson into one of:
+   - a stricter gate;
+   - a monitor skill eval;
+   - durable `MEMORY.md` for the responsible monitor skill;
+   - a current `context/` rule when it affects cross-lane behavior.
+
+Do not close a recurring issue by only editing same-day data. A repeated failure must leave a prevention mechanism.
+
+## Repeated Issue Categories
+
+Weekly health classifies repeated incidents into categories such as:
+
+- `business_signals_top10_missing`;
+- `source_first_frontstage_gate`;
+- `frontstage_title_translation`;
+- `frontstage_detail_content`;
+- `monitor_or_gate_failure`;
+- `obsidian_sync`.
+
+When a category repeats, fix the system path that allowed it to recur.
+
 ## Rule Promotion
 
 Only promote a lesson into `context/` when it is reusable, specific, and likely to prevent repeated mistakes.

@@ -310,6 +310,36 @@ function textRepeatsAny(value = "", existing = [], threshold = 0.78) {
   return existing.some((item) => textSimilarity(value, item) >= threshold);
 }
 
+function normalizedEventText(card = {}) {
+  return [
+    card.displayTitle,
+    card.sourceTitle,
+    card.originalTitle,
+    card.translatedFact,
+    card.title,
+    ...(card.originalHighlights || []),
+  ].filter(Boolean).join(" ");
+}
+
+function eventFingerprint(card = {}) {
+  const text = normalizedEventText(card).toLowerCase();
+  if (/prometheus/iu.test(text) && /(?:jeff\s+bezos|bezos|贝索斯)/iu.test(text) && /(?:\$?\s*12\s*b|120\s*亿|12\s*billion)/iu.test(text)) {
+    return `${card.date}|prometheus|bezos|12b`;
+  }
+  const normalized = normalizedComparableText(text);
+  if (!normalized) return "";
+  return `${card.date}|${normalized.slice(0, 80)}`;
+}
+
+function isDuplicateFrontstageEvent(card = {}, selectedCards = []) {
+  const fingerprint = eventFingerprint(card);
+  const eventText = normalizedEventText(card);
+  return selectedCards.some((selected) => {
+    if (fingerprint && fingerprint === eventFingerprint(selected)) return true;
+    return textSimilarity(eventText, normalizedEventText(selected)) >= 0.66;
+  });
+}
+
 function uniqueNonRepeatingLines(lines = [], existing = [], limit = 8) {
   const accepted = [];
   for (const line of lines.map((item) => short(item, 260)).filter(Boolean)) {
@@ -684,11 +714,17 @@ function sourceFrontstageTitle(card = {}, originalTitle = "") {
     .find(Boolean) || "";
 }
 
+function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "") {
+  const source = String(sourceTitle || "").trim();
+  if (source) return hasCjk(source) ? source : safeFrontstageTitle(source, sourceUrl);
+  return generatedTitle || "";
+}
+
 function normalizeFrontstageDisplay(card = {}) {
   const title = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || (title !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
-  const displayTitle = sourceTitle || title;
+  const displayTitle = publicDisplayTitle(sourceTitle, title, card.sourceUrl);
   return {
     ...card,
     title,
@@ -709,10 +745,11 @@ function normalizeFrontstageDisplay(card = {}) {
 
 function top10CompatCard(card = {}) {
   const sourceTitle = sourceFrontstageTitle(card, card.originalTitle);
-  const displayTitle = card.displayTitle || sourceTitle || card.title || "";
+  const displayTitle = publicDisplayTitle(sourceTitle, card.displayTitle || card.title || "", card.sourceUrl);
   return {
     ...card,
-    generatedTitle: card.generatedTitle || card.title || "",
+    modelGeneratedTitle: card.generatedTitle || card.title || "",
+    generatedTitle: displayTitle,
     sourceTitle,
     displayTitle,
     title: displayTitle,
@@ -767,6 +804,14 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
     [/^Governing agents in GitHub Enterprise/iu, "GitHub Enterprise 中的 Agent 治理"],
     [/^Transforming procurement through intelligent technology/iu, "KPMG：用智能技术改造采购流程"],
   ];
+  byTitle.push(
+    [/^How to govern AI agents in your GitHub Enterprise/iu, "GitHub Enterprise 中的 AI Agent 治理"],
+    [/^Mercury 2, the first reasoning diffusion LLM, is now on Baseten/iu, "Baseten 上线 Mercury 2 推理扩散大模型"],
+    [/^Bill Joplin.*ServiceTitan AI Voice Agent/iu, "Bill Joplin 使用 ServiceTitan AI 语音 Agent 处理 90% 以上来电"],
+    [/^F2 Raises \$24M to Build AI for Private Credit/iu, "F2 融资 2400 万美元，建设私募信贷 AI 平台"],
+    [/^Notch Raises \$30 Million to Build the AI Operating System for Regulated Industries/iu, "Notch 融资 3000 万美元，建设受监管行业 AI 操作系统"],
+    [/^Poetic Raises \$50M Series A/iu, "Poetic 完成 5000 万美元 A 轮融资，自动化复杂企业流程"]
+  );
   const titleMatch = byTitle.find(([pattern]) => pattern.test(text));
   if (titleMatch) return titleMatch[1];
   return fallbackChineseTitleForEnglish(text, sourceUrl);
@@ -797,6 +842,14 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
     [/Transforming procurement through intelligent technology|kpmg/iu, "KPMG 客户案例讨论用智能技术改造采购流程，重点在采购自动化和流程效率。"],
     [/Nemotron 3 Ultra/iu, "NVIDIA AI 发布 Nemotron 3 Ultra，材料关注长时间运行智能体所需的大模型架构和推理能力。"],
   ];
+  rules.push(
+    [/Bill Joplin.*ServiceTitan AI Voice Agent/iu, "Bill Joplin's Air Conditioning and Heating 在旺季前使用 ServiceTitan AI Voice Agent 处理预约来电，公开标题称该 AI 语音 Agent 预订了 90% 以上来电。"],
+    [/Mercury 2, the first reasoning diffusion LLM, is now on Baseten/iu, "Baseten 上线 Mercury 2 推理扩散大模型，材料重点是把新的推理模型部署到 Baseten 平台供开发和推理工作负载使用。"],
+    [/F2 Raises \$24M to Build AI for Private Credit/iu, "F2 完成 2400 万美元融资，产品方向是面向私募信贷市场构建 AI 平台。"],
+    [/Notch Raises \$30 Million to Build the AI Operating System for Regulated Industries/iu, "Notch 完成 3000 万美元融资，计划建设面向受监管行业的 AI 操作系统。"],
+    [/Poetic Raises \$50M Series A/iu, "Poetic 完成 5000 万美元 A 轮融资，方向是用可靠 AI 自动化复杂企业流程。"],
+    [/github-devops-agenticai|GitHub.*DevOps.*agentic/iu, "LinkedIn 帖子讨论 GitHub、DevOps 与 Agentic AI 结合的企业工作流场景，属于开发运维流程中的 Agent 应用线索。"]
+  );
   const match = rules.find(([pattern]) => pattern.test(source));
   if (match) return match[1];
   // Fallback: if the title already has Chinese content, use it as a basic fact
@@ -1476,6 +1529,27 @@ function isSubstantiveSourceFragment(value = "") {
   return /AI|agent|LLM|Gemini|Claude|OpenAI|Google|Nvidia|IBM|enterprise|customer|workflow|model|funding|raises|seed|Series|cloud|security|police|court|retailer|inference|deployment|QAT|融资|客户|部署|监管|法院|警察|模型|产品|企业|资金|美元|\$|\d/iu.test(text);
 }
 
+function isGenericSourceFallback(value = "") {
+  return /公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果|鍏紑鏉愭枡鎻愪緵浜嗕竴鏉″彲杩借釜/iu.test(String(value || ""));
+}
+
+function isSourceLinkOnlyFact(value = "") {
+  return /^原始来源链接：?https?:\/\//iu.test(String(value || "").trim());
+}
+
+function hasSourceBackedFrontstageFact(card = {}) {
+  const facts = [
+    card.translatedFact,
+    card.visibleFragment,
+    ...(card.originalHighlights || []),
+  ].filter(Boolean);
+  return facts.some((item) => (
+    isSubstantiveSourceFragment(item)
+    && !isGenericSourceFallback(item)
+    && !isSourceLinkOnlyFact(item)
+  ));
+}
+
 function frontstageEvidenceScore(card = {}) {
   let score = sourceLevelScore(card.sourceLevel);
   if (isSubstantiveSourceFragment(card.translatedFact)) score += 28;
@@ -1601,15 +1675,22 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
     const preferred = annotated
       .filter((card) => card.fromCorePool)
       .filter((card) => !card.frontstageGenericCandidate && card.frontstageEvidenceScore >= 30)
+      .filter(hasSourceBackedFrontstageFact)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const preferredIds = new Set(preferred.map((card) => card.id));
     const fallback = coreCandidates
       .filter((card) => !preferredIds.has(card.id))
+      .filter(hasSourceBackedFrontstageFact)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const ranked = [...preferred, ...fallback];
     const rejected = [];
+    const selectedForDate = [];
     for (const card of ranked) {
       if (datePicked >= limit) break;
+      if (isDuplicateFrontstageEvent(card, selectedForDate)) {
+        rejected.push({ id: card.id, reason: "duplicate event already selected" });
+        continue;
+      }
       if (card.largeVendorKey) {
         const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
         if (largeVendorTotal >= largeVendorTotalLimit) {
@@ -1630,6 +1711,7 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
         frontstageSelectionTier: selectionTier,
         frontstageSupplyFill: selectionTier === "supply-fill",
       });
+      selectedForDate.push(card);
       datePicked += 1;
     }
     reports.push({
@@ -1864,9 +1946,16 @@ function cardFromFile(file, category) {
   const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
   const rawDisplayTitle = frontstageTitle(rawTitle || explicitDisplayTitle || path.basename(file, ".md"), rawTitle);
   const title = frontstageChineseTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl);
-  const translatedFact = chineseFactFromSource(rawDisplayTitle || title, sourceUrl);
-  let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [translatedFact]);
+  const titleFact = chineseFactFromSource(rawDisplayTitle || title, sourceUrl);
+  let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
   if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
+  const sourceEvidenceExcerpt = buildSourceExcerpt(raw, originalHighlights, rawDisplayTitle);
+  const evidenceFact = originalHighlights.find((item) => (
+    isSubstantiveSourceFragment(item)
+    && !isGenericSourceFallback(item)
+    && !textRepeatsAny(item, [title], 0.9)
+  )) || "";
+  const translatedFact = evidenceFact || (!isGenericSourceFallback(sourceEvidenceExcerpt) ? sourceEvidenceExcerpt : "") || titleFact;
   const sourceFact = translatedFact || originalHighlights.find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item)) || "";
   originalHighlights = uniqueNonRepeatingLines(
     originalHighlights.filter((item) => !/^原始来源标题|原始来源链接|本地 Raw\/Pool/u.test(item)),

@@ -5,6 +5,8 @@ import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
+const actionLogDir = path.join(root, "agent-workflow", "logs", "action-runs");
+const hermesInboxDir = path.join(root, "agent-workflow", "inbox", "hermes-to-codex");
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -47,6 +49,14 @@ function readJson(file, fallback = null) {
   }
 }
 
+function readText(file, fallback = "") {
+  try {
+    return fs.readFileSync(file, "utf8");
+  } catch {
+    return fallback;
+  }
+}
+
 function runOptional(command, argsList, timeoutMs = 10000) {
   const result = spawnSync(command, argsList, {
     cwd: root,
@@ -80,6 +90,64 @@ function normalizeMessage(message) {
     .replace(/\d+/gu, "<n>")
     .replace(/\s+/gu, " ")
     .trim();
+}
+
+function normalizeCategory(value) {
+  return String(value || "unknown")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gu, "_")
+    .replace(/^_+|_+$/gu, "") || "unknown";
+}
+
+function inWindow(dateText) {
+  return dates.includes(dateText);
+}
+
+function parseKeyValueHeader(text = "") {
+  const fields = {};
+  for (const line of text.split(/\r?\n/u)) {
+    const match = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)$/u);
+    if (!match) {
+      if (line.trim().startsWith("#")) break;
+      continue;
+    }
+    fields[match[1]] = match[2].trim();
+  }
+  return fields;
+}
+
+function incidentCategories(text = "", fields = {}) {
+  const incidentText = String(text).split(/^## Resolution\s*$/imu)[0] || text;
+  const haystack = [
+    incidentText,
+    fields.failed_gate,
+    fields.report_path,
+    fields.needed_action,
+  ].filter(Boolean).join("\n").toLowerCase();
+  const categories = new Set();
+
+  if (/top\s*10|top10|frontstage\s*selected|selectedcount|selected count/iu.test(haystack)
+    && /empty|missing|0 items|no `?top10|not exactly 10|为空|缺失/iu.test(haystack)) {
+    categories.add("business_signals_top10_missing");
+  }
+  if (/source[_ -]?first|source_first_frontstage_gate|frontstage gate/iu.test(haystack)) {
+    categories.add("source_first_frontstage_gate");
+  }
+  if (/title|标题|mojibake|乱码|untranslated|未翻译|translation/iu.test(haystack)) {
+    categories.add("frontstage_title_translation");
+  }
+  if (/detail|详情|frontstage details|visible fragment|source-backed|内容不对|wrong content/iu.test(haystack)) {
+    categories.add("frontstage_detail_content");
+  }
+  if (/monitor|监测|quality gate|raw_count_min|pool_count_min|gate failure|failed_gate/iu.test(haystack)) {
+    categories.add("monitor_or_gate_failure");
+  }
+  if (/obsidian|timeline/iu.test(haystack) && /fail|missing|stale|blocked|sync/iu.test(haystack)) {
+    categories.add("obsidian_sync");
+  }
+
+  if (!categories.size && fields.failed_gate) categories.add(normalizeCategory(fields.failed_gate));
+  return [...categories];
 }
 
 function collectDailyReports() {
@@ -117,6 +185,127 @@ function collectDailyReports() {
   }
 
   return { laneTotals, recurringProblems, recurringWarnings, reportRows, missingReports };
+}
+
+function collectHermesIncidents() {
+  const incidents = [];
+  const categoryCounts = new Map();
+  const laneCounts = new Map();
+  const unresolved = [];
+
+  if (!fs.existsSync(hermesInboxDir)) {
+    return { incidents, categoryCounts, laneCounts, unresolved };
+  }
+
+  for (const entry of fs.readdirSync(hermesInboxDir, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
+    if (/^(README|TEMPLATE)\.md$/iu.test(entry.name)) continue;
+
+    const file = path.join(hermesInboxDir, entry.name);
+    const text = readText(file);
+    const fields = parseKeyValueHeader(text);
+    const date = entry.name.match(/^(\d{4}-\d{2}-\d{2})/u)?.[1]
+      || fields.created_at?.slice(0, 10)
+      || "";
+    if (!inWindow(date)) continue;
+
+    const categories = incidentCategories(text, fields);
+    const incident = {
+      date,
+      file: rel(file),
+      status: fields.status || "unknown",
+      priority: fields.priority || "",
+      lane: fields.lane || "unknown",
+      failed_gate: fields.failed_gate || "",
+      report_path: fields.report_path || "",
+      data_generated: fields.data_generated || "",
+      needed_action: fields.needed_action || "",
+      categories,
+      resolved: /^resolved$/iu.test(fields.status || ""),
+    };
+
+    incidents.push(incident);
+    increment(laneCounts, incident.lane);
+    for (const category of categories) increment(categoryCounts, `${incident.lane}: ${category}`);
+    if (!incident.resolved) unresolved.push(incident);
+  }
+
+  return { incidents, categoryCounts, laneCounts, unresolved };
+}
+
+function collectActionLogs() {
+  const records = [];
+  const issueCounts = new Map();
+  const riskCounts = new Map();
+  const unregistered = [];
+  const failed = [];
+
+  for (const date of dates) {
+    const file = path.join(actionLogDir, `${date}.jsonl`);
+    const text = readText(file);
+    if (!text) continue;
+
+    for (const line of text.split(/\r?\n/u).map((item) => item.trim()).filter(Boolean)) {
+      let record;
+      try {
+        record = JSON.parse(line);
+      } catch {
+        record = {
+          date,
+          action: "invalid action log line",
+          status: "failed",
+          action_status: "unregistered",
+          issues: ["invalid JSONL record"],
+        };
+      }
+      records.push(record);
+
+      const action = record.action || "unknown action";
+      if (/failed|failure|blocked|partial|warning/iu.test(record.status || "")) failed.push(record);
+      if (record.action_status === "unregistered") unregistered.push(record);
+      for (const issue of record.issues || []) {
+        increment(issueCounts, `${action}: ${normalizeMessage(issue)}`);
+      }
+      for (const risk of record.risks || []) {
+        increment(riskCounts, `${action}: ${normalizeMessage(risk)}`);
+      }
+    }
+  }
+
+  return { records, issueCounts, riskCounts, failed, unregistered };
+}
+
+function buildLoopEscalations({ daily, hermes, actionLogs }) {
+  const escalations = [];
+  const repeatedDailyProblems = Object.entries(daily.recurringProblems || {}).filter(([, count]) => count >= 2);
+  const repeatedDailyWarnings = Object.entries(daily.recurringWarnings || {}).filter(([, count]) => count >= 2);
+  const repeatedHermesCategories = [...hermes.categoryCounts.entries()].filter(([, count]) => count >= 2);
+  const repeatedActionIssues = [...actionLogs.issueCounts.entries()].filter(([, count]) => count >= 2);
+  const repeatedActionRisks = [...actionLogs.riskCounts.entries()].filter(([, count]) => count >= 2);
+
+  for (const [key, count] of repeatedDailyProblems) {
+    escalations.push(`Daily supervision recurring problem (${count}x): ${key}. Add or tighten the owning lane gate/eval.`);
+  }
+  for (const [key, count] of repeatedDailyWarnings) {
+    escalations.push(`Daily supervision recurring warning (${count}x): ${key}. Decide whether it should stay warning or become a gate.`);
+  }
+  for (const [key, count] of repeatedHermesCategories) {
+    escalations.push(`Hermes incident category repeated (${count}x): ${key}. Add a regression eval and durable MEMORY entry if not already present.`);
+  }
+  for (const [key, count] of repeatedActionIssues) {
+    escalations.push(`Action log issue repeated (${count}x): ${key}. Convert it into a reusable rule or validation check.`);
+  }
+  for (const [key, count] of repeatedActionRisks) {
+    escalations.push(`Action log risk repeated (${count}x): ${key}. Add a guardrail before the next production run.`);
+  }
+  for (const incident of hermes.unresolved) {
+    escalations.push(`Unresolved Hermes incident: ${incident.file}. Repair and rerun the failed gate before closing.`);
+  }
+  if (hermes.incidents.length && !actionLogs.records.some((record) => /repair|incident|failure|business-signal|business signal|source-first|top10/iu.test([record.action, record.summary].filter(Boolean).join(" ")))) {
+    escalations.push("Hermes incidents exist but action logs do not capture the repair loop. Record repair actions with `npm run record:action`.");
+  }
+
+  return escalations;
 }
 
 function collectGithubWorkflowHealth() {
@@ -188,6 +377,24 @@ function markdownList(items) {
   return items.map((item) => `- ${item}`).join("\n");
 }
 
+function incidentTable(items) {
+  if (!items.length) return "- none";
+  return [
+    "| Date | Lane | Status | Failed Gate | Categories | File |",
+    "|---|---|---|---|---|---|",
+    ...items.map((item) => `| ${item.date} | ${item.lane} | ${item.status} | ${item.failed_gate || "n/a"} | ${item.categories.join("<br>") || "n/a"} | \`${item.file}\` |`),
+  ].join("\n");
+}
+
+function actionLogTable(items) {
+  if (!items.length) return "- none";
+  return [
+    "| Date | Action | Status | Summary |",
+    "|---|---|---|---|",
+    ...items.map((item) => `| ${item.date || ""} | ${item.action || "unknown"} | ${item.status || "unknown"} | ${String(item.summary || "").replace(/\|/gu, "\\|")} |`),
+  ].join("\n");
+}
+
 function writeReports(payload) {
   fs.mkdirSync(reportsDir, { recursive: true });
   const jsonPath = path.join(reportsDir, `${endDate}-weekly-health.json`);
@@ -227,6 +434,33 @@ function writeReports(payload) {
     "",
     markdownMap(payload.daily.recurringWarnings, 2),
     "",
+    "## Hermes Incident Loop",
+    "",
+    `- incidents_in_window: ${payload.hermes.incidents.length}`,
+    `- unresolved_incidents: ${payload.hermes.unresolved.length}`,
+    "",
+    incidentTable(payload.hermes.incidents),
+    "",
+    "## Repeated Incident Categories",
+    "",
+    markdownMap(payload.hermes.categoryCounts, 2),
+    "",
+    "## Action Log Loop",
+    "",
+    `- action_records_in_window: ${payload.actionLogs.records.length}`,
+    `- failed_or_partial_records: ${payload.actionLogs.failed.length}`,
+    `- unregistered_records: ${payload.actionLogs.unregistered.length}`,
+    "",
+    actionLogTable(payload.actionLogs.failed),
+    "",
+    "## Repeated Action Log Issues",
+    "",
+    markdownMap(payload.actionLogs.issueCounts, 2),
+    "",
+    "## Learning Loop Escalations",
+    "",
+    markdownList(payload.loopEscalations),
+    "",
     "## GitHub Workflow Health",
     "",
     "| Workflow | Available | Runs | Failures | In progress |",
@@ -260,8 +494,21 @@ function main() {
     recurringProblems: Object.fromEntries(dailyMaps.recurringProblems),
     recurringWarnings: Object.fromEntries(dailyMaps.recurringWarnings),
   };
+  const hermesMaps = collectHermesIncidents();
+  const hermes = {
+    ...hermesMaps,
+    categoryCounts: Object.fromEntries(hermesMaps.categoryCounts),
+    laneCounts: Object.fromEntries(hermesMaps.laneCounts),
+  };
+  const actionLogMaps = collectActionLogs();
+  const actionLogs = {
+    ...actionLogMaps,
+    issueCounts: Object.fromEntries(actionLogMaps.issueCounts),
+    riskCounts: Object.fromEntries(actionLogMaps.riskCounts),
+  };
   const github = collectGithubWorkflowHealth();
   const conflicts = collectConflictSignals();
+  const loopEscalations = buildLoopEscalations({ daily, hermes: hermesMaps, actionLogs: actionLogMaps });
   const actions = [];
 
   if (daily.missingReports.length) {
@@ -269,6 +516,9 @@ function main() {
   }
   if (Object.values(daily.recurringProblems).some((count) => count >= 2)) {
     actions.push("Convert recurring production problems into monitor skill evals, gates, or recovery rules.");
+  }
+  if (loopEscalations.length) {
+    actions.push("Review Learning Loop Escalations and convert repeated incidents into gate / eval / MEMORY changes.");
   }
   if (github.some((item) => item.failures > 0 || item.in_progress > 0)) {
     actions.push("Review GitHub Actions runs that failed, queued, or remained in progress during the weekly window.");
@@ -289,6 +539,9 @@ function main() {
       days: windowDays,
     },
     daily,
+    hermes,
+    actionLogs,
+    loopEscalations,
     github,
     conflicts,
     actions,

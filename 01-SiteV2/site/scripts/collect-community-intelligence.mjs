@@ -255,6 +255,17 @@ function dedupeKey(item) {
   return `${item.source}:body:${normalizeForDedupe([item.summary, item.evidence, item.excerpt].join(" "))}`;
 }
 
+function dedupeKeys(item) {
+  const keys = [];
+  const url = canonicalUrl(item);
+  if (url) keys.push(`${item.source}:url:${url}`);
+  const titleKey = normalizeForDedupe(item.title);
+  if (titleKey.length > 12) keys.push(`${item.source}:title:${titleKey}`);
+  const bodyKey = normalizeForDedupe([item.summary, item.evidence, item.excerpt].join(" "));
+  if (bodyKey.length > 24) keys.push(`${item.source}:body:${bodyKey}`);
+  return keys.length ? keys : [dedupeKey(item)];
+}
+
 function uniqByText(values = []) {
   return [...new Set(values.map(clean).filter(Boolean))];
 }
@@ -286,14 +297,18 @@ function comparePublishedDesc(a, b, baseValue = new Date()) {
 }
 
 function mergeItems(items = []) {
-  const groups = new Map();
+  const groups = [];
+  const keyToGroup = new Map();
   for (const item of items) {
-    const key = dedupeKey(item);
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(item);
+    const keys = dedupeKeys(item);
+    const index = keys.map((key) => keyToGroup.get(key)).find((value) => value !== undefined);
+    const groupIndex = index === undefined ? groups.length : index;
+    if (index === undefined) groups.push([]);
+    groups[groupIndex].push(item);
+    keys.forEach((key) => keyToGroup.set(key, groupIndex));
   }
 
-  return [...groups.values()].map((group) => {
+  return groups.map((group) => {
     const sorted = [...group].sort((a, b) => {
       const publishedDelta = comparePublishedDesc(a, b);
       if (publishedDelta) return publishedDelta;
@@ -304,6 +319,7 @@ function mergeItems(items = []) {
       return clean(b.evidence).length - clean(a.evidence).length;
     });
     const base = { ...sorted[0] };
+    const preferredUrl = group.map(canonicalUrl).find(Boolean) || "";
     const keywords = uniqByText(group.map((item) => item.collection?.keyword));
     const keywordGroups = uniqByText(group.map((item) => item.collection?.group));
     const linkMap = new Map();
@@ -312,8 +328,8 @@ function mergeItems(items = []) {
         if (link?.href) linkMap.set(link.href, link);
       }
     }
-    base.id = idFor([base.source, canonicalUrl(base), normalizeForDedupe(base.title)]);
-    base.url = canonicalUrl(base) || base.url;
+    base.id = idFor([base.source, preferredUrl, normalizeForDedupe(base.title)]);
+    base.url = preferredUrl || canonicalUrl(base) || base.url;
     base.links = [...linkMap.values()];
     base.tools = uniqByText(group.flatMap((item) => item.tools || []));
     base.painPoints = uniqByText(group.flatMap((item) => item.painPoints || []));
