@@ -430,7 +430,8 @@
   function renderTopicControls() {
     const tabs = $("[data-topic-tabs]");
     if (tabs) {
-      tabs.innerHTML = topicSources.map((source) => `<button type="button" data-topic-source-tab="${source.id}" aria-current="${String(source.id === state.topicSource)}">${html(source.title)}</button>`).join("");
+      const allButton = `<button type="button" data-topic-source-tab="all" aria-current="${String(state.topicSource === "all")}">全部</button>`;
+      tabs.innerHTML = `${allButton}${topicSources.map((source) => `<button type="button" data-topic-source-tab="${source.id}" aria-current="${String(source.id === state.topicSource)}">${html(source.title)}</button>`).join("")}`;
     }
     const typeSelect = $("[data-topic-type]");
     if (typeSelect && !typeSelect.dataset.ready) {
