@@ -495,17 +495,51 @@ function sourceCounts(topics) {
   return Object.fromEntries(engines.map((engine) => [engine.id, topics.filter((topic) => topic.sourceId === engine.id).length]));
 }
 
-function compactEvidence(items) {
+function materialRole(kind) {
+  if (kind === "business_signal") return "fact_base";
+  if (kind === "first_line_viewpoint") return "viewpoint_lead";
+  if (kind === "community_intelligence") return "community_lead";
+  return "supporting_material";
+}
+
+function materialPath(kind, id, date) {
+  const suffix = id ? `#id=${id}` : "";
+  if (kind === "business_signal") return `01-SiteV2/site/data/v3-data-observation-desk.json${suffix}`;
+  if (kind === "first_line_viewpoint") return `01-SiteV2/site/data/follow-builders-daily.json${suffix}`;
+  if (kind === "community_intelligence") return `01-SiteV2/site/data/community-intelligence-daily/${date}.json${suffix}`;
+  return "";
+}
+
+function compactEvidence(items, date) {
   return list(items).map((item) => ({
     kind: item.kind || "",
+    id: item.id || "",
+    role: materialRole(item.kind || ""),
     title: item.title || "",
     source: item.source || "",
     url: item.url || "",
     note: item.note || "",
+    localDataPath: materialPath(item.kind || "", item.id || "", date),
+    verificationUse: item.kind === "business_signal"
+      ? "fact_base"
+      : "lead_only_not_verified_fact",
+  }));
+}
+
+function rawMaterials(topic, date) {
+  const grouped = [
+    ...compactEvidence(topic.sourceInputs?.businessSignals, date),
+    ...compactEvidence(topic.sourceInputs?.viewpoints, date),
+    ...compactEvidence(topic.sourceInputs?.communityItems, date),
+  ];
+  return grouped.map((item, index) => ({
+    materialId: `${topic.id}-material-${index + 1}`,
+    ...item,
   }));
 }
 
 function compactTopic(topic, index) {
+  const materials = rawMaterials(topic, topic.date);
   return {
     rank: index + 1,
     id: topic.id,
@@ -528,10 +562,17 @@ function compactTopic(topic, index) {
       title: angle.title || "",
       note: angle.note || "",
     })),
+    rawMaterialSummary: {
+      total: materials.length,
+      businessSignals: materials.filter((item) => item.kind === "business_signal").length,
+      firstLineViewpoints: materials.filter((item) => item.kind === "first_line_viewpoint").length,
+      communityIntelligence: materials.filter((item) => item.kind === "community_intelligence").length,
+    },
+    rawMaterials: materials,
     sources: {
-      businessSignals: compactEvidence(topic.sourceInputs?.businessSignals),
-      firstLineViewpoints: compactEvidence(topic.sourceInputs?.viewpoints),
-      communityIntelligence: compactEvidence(topic.sourceInputs?.communityItems),
+      businessSignals: materials.filter((item) => item.kind === "business_signal"),
+      firstLineViewpoints: materials.filter((item) => item.kind === "first_line_viewpoint"),
+      communityIntelligence: materials.filter((item) => item.kind === "community_intelligence"),
     },
   };
 }
@@ -580,6 +621,21 @@ function topicTableMarkdown(payload) {
     "| Rank | Score | Type | Topic | Boss Pain | Money Line | Action |",
     "|---:|---:|---|---|---|---|---|",
     ...rows.map((row) => `| ${row.join(" | ")} |`),
+    "",
+    "## Raw Materials",
+    "",
+    ...payload.topics.flatMap((topic) => [
+      `### ${topic.rank}. ${topic.title}`,
+      "",
+      ...list(topic.rawMaterials).map((material) => [
+        `- ${material.role} / ${material.kind}: ${mdCell(material.title)}`,
+        `  - source: ${mdCell(material.source || "-")}`,
+        `  - url: ${mdCell(material.url || "-")}`,
+        `  - local: ${mdCell(material.localDataPath || "-")}`,
+        `  - note: ${mdCell(material.note || "-")}`,
+      ].join("\n")),
+      "",
+    ]),
     "",
     "## Evidence Boundary",
     "",

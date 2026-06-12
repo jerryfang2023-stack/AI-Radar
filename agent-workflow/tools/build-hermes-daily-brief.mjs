@@ -70,7 +70,52 @@ function list(value) {
   return value ? [value] : [];
 }
 
+function materialRole(kind) {
+  if (kind === "business_signal") return "fact_base";
+  if (kind === "first_line_viewpoint") return "viewpoint_lead";
+  if (kind === "community_intelligence") return "community_lead";
+  return "supporting_material";
+}
+
+function materialPath(kind, id, date) {
+  const suffix = id ? `#id=${id}` : "";
+  if (kind === "business_signal") return `01-SiteV2/site/data/v3-data-observation-desk.json${suffix}`;
+  if (kind === "first_line_viewpoint") return `01-SiteV2/site/data/follow-builders-daily.json${suffix}`;
+  if (kind === "community_intelligence") return `01-SiteV2/site/data/community-intelligence-daily/${date}.json${suffix}`;
+  return "";
+}
+
+function compactMaterial(item, index, date) {
+  const kind = item.kind || "";
+  return {
+    materialId: item.materialId || `material-${index + 1}`,
+    kind,
+    id: item.id || "",
+    role: item.role || materialRole(kind),
+    title: item.title || "",
+    source: item.source || "",
+    url: item.url || "",
+    note: item.note || "",
+    localDataPath: item.localDataPath || materialPath(kind, item.id || "", date),
+    verificationUse: item.verificationUse || (kind === "business_signal" ? "fact_base" : "lead_only_not_verified_fact"),
+  };
+}
+
+function topicMaterials(topic, date) {
+  if (list(topic.rawMaterials).length) {
+    return list(topic.rawMaterials).map((item, index) => compactMaterial(item, index, date));
+  }
+  const grouped = [
+    ...list(topic.sources?.businessSignals || topic.sourceInputs?.businessSignals),
+    ...list(topic.sources?.firstLineViewpoints || topic.sourceInputs?.viewpoints),
+    ...list(topic.sources?.communityIntelligence || topic.sourceInputs?.communityItems),
+  ];
+  return grouped.map((item, index) => compactMaterial(item, index, date));
+}
+
 function compactTopicFromTopicCenter(topic, index) {
+  const date = topic.date || "";
+  const rawMaterials = topicMaterials(topic, date);
   return {
     rank: topic.rank || index + 1,
     id: topic.id || "",
@@ -87,6 +132,18 @@ function compactTopicFromTopicCenter(topic, index) {
     newFrame: topic.newFrame || "",
     actionHint: topic.actionHint || "",
     evidenceBoundary: topic.evidenceBoundary || "",
+    rawMaterialSummary: topic.rawMaterialSummary || {
+      total: rawMaterials.length,
+      businessSignals: rawMaterials.filter((item) => item.kind === "business_signal").length,
+      firstLineViewpoints: rawMaterials.filter((item) => item.kind === "first_line_viewpoint").length,
+      communityIntelligence: rawMaterials.filter((item) => item.kind === "community_intelligence").length,
+    },
+    rawMaterials,
+    sources: topic.sources || {
+      businessSignals: rawMaterials.filter((item) => item.kind === "business_signal"),
+      firstLineViewpoints: rawMaterials.filter((item) => item.kind === "first_line_viewpoint"),
+      communityIntelligence: rawMaterials.filter((item) => item.kind === "community_intelligence"),
+    },
   };
 }
 
@@ -139,6 +196,16 @@ function topicCenterLines(topicCenter) {
       `   money_line: ${topic.moneyLine || "-"}`,
       `   action: ${topic.actionHint || "-"}`,
     );
+    const materials = list(topic.rawMaterials);
+    if (materials.length) {
+      lines.push(`   materials: ${materials.length}`);
+      for (const material of materials) {
+        const source = material.source ? ` | ${material.source}` : "";
+        const url = material.url ? ` | ${material.url}` : "";
+        const local = material.localDataPath ? ` | ${material.localDataPath}` : "";
+        lines.push(`   - [${material.role || material.kind || "material"}] ${material.title || "-"}${source}${url}${local}`);
+      }
+    }
   }
   return lines;
 }
