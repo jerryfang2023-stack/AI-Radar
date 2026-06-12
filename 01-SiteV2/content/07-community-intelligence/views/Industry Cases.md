@@ -1,6 +1,6 @@
 ---
 title: Industry Cases
-date: 2026-06-11
+date: 2026-06-12
 status: active
 type: community-intelligence-industry_case
 source: community-intelligence
@@ -10,7 +10,7 @@ source: community-intelligence
 
 垂直行业、商业场景和可复用案例。
 
-最新归档：[[2026-06-11 Community Intelligence]]
+最新归档：[[2026-06-12 Community Intelligence]]
 
 ## 高价值条目（10 条）
 
@@ -22,9 +22,9 @@ source: community-intelligence
 - 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径；痛点：内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/wiki/WQXVwhGMdil098kVRQLcZsgHn8M?from=from_copylink)
 ### 2. 生财有术官网即将上线AI亦仁自动发帖Agent
-- 来源：生财有术｜2天前
+- 来源：生财有术｜4天前
 - 分类：行业案例｜交付与服务自动化
-- 命中关键词：内容生产 / 客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n
+- 命中关键词：客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify
 - 标签：#交付与服务自动化 #内容与自媒体 #待确认
 生财有术官网即将上线AI亦仁自动发帖Agent 预告一下，生财有术官网即将上线一个 Agent：AI 亦仁自动发帖 Agent
 - 价值判断：可复用方法：内容获客路径 / 知识库 + Agent 工作流 / 工具产品化；痛点：知识沉淀与效率 / 内容生产与账号增长
@@ -32,7 +32,6 @@ source: community-intelligence
 - 来源：AI破局｜2026-06-09 12:07
 - 分类：行业案例｜交付与服务自动化
 - 标签：#交付与服务自动化 #企业服务 #服务交付-/-咨询培训
-- 原帖：[打开原帖](https://aipoju.com/topic-details/14422458221828582)
 破局【三周年星推榜】新鲜出炉：谢谢你带来的每一位圈友 今年3月是破局的三周年，我们做了一次拉新，这一次拉新再次验证了我们一直以来坚信的一件事：破局从来不是我们几个人做出来的，是一大批站队长、星推官，和我们站在一起，一砖一瓦共建出来的
 - 价值判断：可复用方法：内容获客路径 / 前端获客 + 后端交付拆分 / 工具产品化；痛点：交付标准化与复购 / 内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://d16rg8unadx.feishu.cn/wiki/Z2sHwVfYcimNy3kgJ1HcqAXynWg?from=from_copylink)
@@ -44,16 +43,16 @@ source: community-intelligence
 - 价值判断：可复用方法：内容获客路径；痛点：内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/docx/DCz0dZpOFo02FJxzd31cBP2NnNe?from=from_copylink)
 ### 5. 买MacBook Pro的预算，不如拆成Mac mini加MacBook Air
-- 来源：生财有术｜2天前
+- 来源：生财有术｜3天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：内容生产 / 客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n
+- 命中关键词：客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify
 - 标签：#AI应用案例 #未识别行业 #Mac-mini #待确认
 买MacBook Pro的预算，不如拆成Mac mini加MacBook Air 如果你有买 MacBook Pro 的预算，我强烈建议：把预算拆出来，买一台 Mac mini 加一台 MacBook Air
 - 价值判断：可复用方法：知识库 + Agent 工作流
 ### 6. 两个月在X点赞1000多条，原来这是我工作的一部分
-- 来源：生财有术｜2天前
+- 来源：生财有术｜3天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：内容生产 / 客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n
+- 命中关键词：客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify
 - 标签：#AI应用案例 #未识别行业 #待确认
 两个月在X点赞1000多条，原来这是我工作的一部分 拉了数据吓一跳，我最近两个月，在 X 上点赞了 1000 多条帖子
 - 价值判断：痛点：知识沉淀与效率
@@ -65,15 +64,15 @@ source: community-intelligence
 - 价值判断：可复用方法：内容获客路径；痛点：知识沉淀与效率 / 内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://cxc7eefnae6.feishu.cn/docx/XxB1dwf5woP4FFxbMdDc6IcNn0d?from=from_copylink)
 ### 8. 最近ChatGPT 封号有点厉害，连夜去导出数据，避免被分手。
-- 来源：生财有术｜5天前
+- 来源：生财有术｜6天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：内容生产 / 客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n
+- 命中关键词：客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify
 - 标签：#AI应用案例 #未识别行业 #ChatGPT #待确认
 最近ChatGPT 封号有点厉害，连夜去导出数据，避免被分手
 ### 9. 沉浸式翻译用默认慢模型总卡？换DeepL Pro就顺畅了
-- 来源：生财有术｜2天前
+- 来源：生财有术｜3天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：内容生产 / 客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n
+- 命中关键词：客服 / 销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify
 - 标签：#AI应用案例 #未识别行业 #待确认
 换DeepL Pro就顺畅了 如果你用沉浸式翻译，那么这个测试会对你很有价值没想到我默认用了个最慢的模型，难怪经常刷到英语等着翻译，切换到 DeepL Pro 后，看不到等待翻译的状态了
 ### 10. 它要来了，破局AI素养大课！ 虽然破局是国内TOP AI社群。也是全中国甚至全世界最早做AI培训的机构之一。 虽然我们的AI高手如云、浩瀚如星海。 虽然我们这里已经出现了无数OPC、AI创业者
