@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: urgent
 lane: business_signals
 failed_gate: source_first_frontstage_gate + top10 missing
@@ -70,3 +70,9 @@ Even if the gate passed, the artifact's `v3-data-observation-desk.json` has no `
 
 ## User Escalation Needed
 - no
+
+## Resolution
+
+- Fixed the Top10 contract by emitting `top10` from the active-date frontstage selection.
+- Fixed title display by adding source/display title fields and making the Business Signals UI prefer the original/source title.
+- Narrowed the Oracle ERP procurement false-positive gate so contextual enterprise-system lists do not block non-procurement case cards.

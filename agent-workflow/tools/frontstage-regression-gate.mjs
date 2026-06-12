@@ -4,7 +4,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedVersion = "V3.3.2.1-public-frontstage-polish";
+const expectedVersion = "V3.3.5-top10-source-title-contract";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
@@ -205,6 +205,10 @@ function collectGeneratedDataIssues() {
     const activeCards = (data?.cards || []).filter((item) => item.date === activeDate);
     if (!activeCards.length) {
       issues.push(issue(dataFile, "v3_active_date_has_no_cards", activeDate || "missing"));
+    }
+    const top10 = Array.isArray(data?.top10) ? data.top10 : [];
+    if (top10.length !== 10 || top10.some((item) => item.date !== activeDate)) {
+      issues.push(issue(dataFile, "v3_active_date_top10_invalid", `${top10.length} items for ${activeDate || "missing"}`));
     }
   } catch (error) {
     issues.push(issue(dataFile, "v3_data_json_parse_failed", error.message));

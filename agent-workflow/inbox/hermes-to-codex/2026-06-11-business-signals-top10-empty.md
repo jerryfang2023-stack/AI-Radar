@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: urgent
 lane: business_signals
 failed_gate: frontstage Top10 selection
@@ -43,3 +43,9 @@ source: hermes
 ## User Escalation Needed
 
 - no (owner is aware and waiting for Codex fix)
+
+## Resolution
+
+- Fixed in `01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs`.
+- The build now emits an explicit active-date `top10` array for Hermes/public compatibility.
+- The source-first gate now fails if `top10` is missing or not exactly 10 items.
