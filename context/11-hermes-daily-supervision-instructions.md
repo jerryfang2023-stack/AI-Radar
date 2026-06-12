@@ -1,7 +1,7 @@
 ---
 status: current
 scope: hermes-daily-supervision
-last_updated: 2026-06-11
+last_updated: 2026-06-12
 use_when:
   - hermes daily supervision
   - monitor dispatch
@@ -36,6 +36,12 @@ Primary outputs:
 - `agent-workflow/reports/daily-supervision-report-latest.json`
 - `agent-workflow/reports/daily-supervision-report-latest.md`
 
+When the report status is `failed` or `manual_required`, the same command must create or update one open Hermes inbox item per affected lane under:
+
+```text
+agent-workflow/inbox/hermes-to-codex/
+```
+
 ## Timeline
 
 | Time | Lane | Hermes action |
@@ -54,8 +60,8 @@ If Business Signals is still `in_progress`, wait for it to finish before reporti
 |---|---|---|
 | `passed` | Record the report and stop. | None. |
 | `warning` | Read warnings. If they are GitHub CLI timeout, skipped external checks, or missing historical reports while current data is present, do not escalate. | None unless the warning repeats for several days. |
-| `manual_required` | Follow the report action. Usually this means manual workflow dispatch, waiting for an in-progress workflow, or asking Codex to inspect a lane. | Only needed for GitHub permission, login state, or manual PR merge. |
-| `failed` | Send Codex the lane repair request from the report. | Only needed if Codex asks for authorization, login, or business judgment. |
+| `manual_required` | Follow the report action and ensure an open Hermes inbox item exists for Codex or the human operator. Usually this means manual workflow dispatch, waiting for an in-progress workflow, or asking Codex to inspect a lane. | Only needed for GitHub permission, login state, or manual PR merge. |
+| `failed` | Ensure an open Hermes inbox item exists, then send Codex the lane repair request from the report. | Only needed if Codex asks for authorization, login, or business judgment. |
 
 ## Weekly And Monthly Review
 
@@ -92,7 +98,19 @@ agent-workflow/inbox/hermes-to-codex/YYYY-MM-DD-<lane>-<short-slug>.md
 Codex reads the inbox with:
 
 ```powershell
-npm run inbox:hermes
+npm run inbox:hermes -- --status=open --latest=false
+```
+
+Codex can print a repair prompt only with:
+
+```powershell
+npm run inbox:hermes -- --status=open --latest=false --format=prompt
+```
+
+After Codex repairs and validates the issue, close the item with:
+
+```powershell
+npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
 ```
 
 Use `agent-workflow/inbox/hermes-to-codex/TEMPLATE.md` for the required fields.

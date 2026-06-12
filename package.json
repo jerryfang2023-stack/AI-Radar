@@ -14,6 +14,7 @@
     "archive:community-intelligence": "node 01-SiteV2/site/scripts/archive-community-intelligence.mjs",
     "assert:community-intelligence": "node agent-workflow/tools/assert-community-intelligence-data.mjs",
     "inbox:hermes": "node agent-workflow/tools/read-hermes-inbox.mjs",
+    "resolve:hermes": "node agent-workflow/tools/resolve-hermes-inbox.mjs",
     "supervise:daily": "node agent-workflow/tools/write-daily-supervision-report.mjs",
     "health:daily": "node agent-workflow/tools/write-daily-supervision-report.mjs",
     "health:weekly": "node agent-workflow/tools/write-weekly-health-report.mjs",

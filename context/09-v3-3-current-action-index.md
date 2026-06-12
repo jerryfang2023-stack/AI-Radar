@@ -1,7 +1,7 @@
 ﻿---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-11
+last_updated: 2026-06-12
 use_when:
   - choose current action
   - recover missing actions
@@ -36,6 +36,7 @@ Only these actions are `current` for V3.3.5:
 |---|---|---|
 | Daily business-signal production | `current` | Produce the day's 10 most important business-signal Cards. |
 | Column monitor skills | `current` | Run and improve independent Business Signals, First-Line Viewpoints, and Community Intelligence monitoring skills. |
+| Hermes feedback loop automation | `current` | Convert daily supervision failures into Codex repair items and close them only after validation and prevention are recorded. |
 | Raw / Pool / Card asset chain | `current` | Separate source capture, evidence screening, and formal Cards. |
 | Source-first check | `current` | Ensure frontstage facts are original-source backed. |
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
