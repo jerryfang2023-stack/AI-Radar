@@ -11,6 +11,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 2. `frontstage_exact_top10`
    - Pass when the Business Signals default presentation publishes exactly 10 items for the active date.
+   - Pass only when `01-SiteV2/site/data/v3-data-observation-desk.json.top10` exists, contains exactly 10 active-date items, and matches the active-date `frontstageCards` IDs.
 
 3. `large_company_caps`
    - Pass when Top10 has at most one item for the same large company and at most three large-company items total.

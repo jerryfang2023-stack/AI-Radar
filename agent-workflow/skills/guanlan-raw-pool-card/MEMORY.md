@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lessons that improve the skill itself. Do not copy command output, daily counts, or one-off production details.
 
+## 2026-06-12
+
+- `frontstageCards` is not a substitute for the public/Hermes Top10 contract. The site data must emit an explicit active-date `top10` array with exactly 10 items, and gates must fail when it is missing.
+- Keep internal Chinese signal titles separate from source-facing titles. Use generated titles for ranking/translation gates, but expose `displayTitle`/`sourceTitle` and `top10[].title` from the original/source title.
+
 ## 2026-06-07
 
 - Core Pool candidates can be valid context evidence without becoming formal Signal Cards. Candidate-only items must still carry a not-promoted reason, repair suggestion, and priority so Hermes can analyze them with lower confidence.

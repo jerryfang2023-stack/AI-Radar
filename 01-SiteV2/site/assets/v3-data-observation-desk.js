@@ -29,6 +29,24 @@
     .replaceAll("'", "&#39;");
   const fmtDate = (date = "") => String(date).replaceAll("-", ".");
 
+  function cardDisplayTitle(card = {}) {
+    return card.displayTitle
+      || card.sourceTitle
+      || card.originalTitle
+      || card.title
+      || "Untitled signal";
+  }
+
+  function cardTitleAliases(card = {}) {
+    return [
+      cardDisplayTitle(card),
+      card.title,
+      card.generatedTitle,
+      card.sourceTitle,
+      card.originalTitle,
+    ].filter(Boolean);
+  }
+
   function daysBetween(activeDate, date) {
     const active = Date.parse(`${activeDate}T00:00:00Z`);
     const current = Date.parse(`${date}T00:00:00Z`);
@@ -192,7 +210,7 @@
   function titleFact(card) {
     const source = card.sourceName || card.subject || "公开来源";
     const original = card.originalTitle ? `，原始标题为「${card.originalTitle}」` : "";
-    return `${source} 在 ${fmtDate(card.date)} 形成一条公开材料：${card.title}${original}。`;
+    return `${source} 在 ${fmtDate(card.date)} 形成一条公开材料：${cardDisplayTitle(card)}${original}。`;
   }
 
   function factText(card) {
@@ -251,7 +269,7 @@
     }
     for (const card of cardsOnDate(date).filter((item) => item.category !== "opinion")) {
       const categoryId = `category:${card.category}`;
-      const subject = card.subject || card.sourceName || card.title;
+      const subject = card.subject || card.sourceName || cardDisplayTitle(card);
       const subjectId = `subject:${subject}`;
       addNode(categoryId, categoryLabel(card.category), "category", { category: card.category });
       addNode(subjectId, subject, "subject", { category: card.category });
@@ -491,7 +509,7 @@
 
     const subjectCounts = new Map();
     cards.forEach((card) => {
-      const subject = card.subject || card.sourceName || card.title;
+      const subject = card.subject || card.sourceName || cardDisplayTitle(card);
       const subjectId = `subject:${subject}`;
       const subjectRow = subjectCounts.get(subjectId) || {
         id: subjectId,
@@ -524,7 +542,7 @@
     const subjectIds = new Set(subjects.map((subject) => subject.id));
 
     cards.forEach((card) => {
-      const subject = card.subject || card.sourceName || card.title;
+      const subject = card.subject || card.sourceName || cardDisplayTitle(card);
       const subjectId = `subject:${subject}`;
       if (!subjectIds.has(subjectId)) return;
       const action = relationshipAction(card);
@@ -610,7 +628,7 @@
           <span class="date-pill">${safe(card.date)}</span>
           <span class="evidence-pill">${safe(card.id)}</span>
         </div>
-        <h3>${safe(card.title)}</h3>
+        <h3>${safe(cardDisplayTitle(card))}</h3>
         <p>${safe(factText(card))}</p>
         <div class="inline-tags">${tagPills(relationshipVariableTags(card, 4), 4)}</div>
         <button class="detail-link relation-detail-link" type="button" data-open-detail="${safe(card.id)}">查看 Card 详情</button>
@@ -631,7 +649,7 @@
         <div class="relation-timeline-items">
           ${items.map((item) => `
             <div class="relation-timeline-item">
-              <strong>${safe(item.title)}</strong>
+              <strong>${safe(cardDisplayTitle(item))}</strong>
               <span>${safe(item.categoryLabel || categoryLabel(item.category))} · ${safe(item.id)}</span>
             </div>
           `).join("")}
@@ -1075,7 +1093,7 @@
       const filters = state.filters;
       const rangeDiff = daysBetween(activeDate, card.date);
       const queryText = [
-        card.title,
+        ...cardTitleAliases(card),
         card.subject,
         card.summary,
         ...(card.flatTags || []),
@@ -1101,7 +1119,7 @@
       <tr class="card-summary-row" data-card-row="${safe(card.id)}">
         <td>
           ${state.displayMode === "core" ? `<span class="row-status ${card.linkedCardId || card.type === "signal_card" ? "is-card" : "is-candidate"}">${card.linkedCardId || card.type === "signal_card" ? "已成卡" : "候选"}</span>` : ""}
-          <strong>${safe(card.title)}</strong>
+          <strong>${safe(cardDisplayTitle(card))}</strong>
         </td>
         <td>${safe(card.subject)}</td>
         <td><div class="row-tags">${tagPills(card.displayTags || card.flatTags, 4)}</div></td>
@@ -1297,7 +1315,7 @@
             ${support.map((card) => `
               <article>
                 <span>${safe(card.categoryLabel)} · ${safe(card.subject || card.sourceName || "未标注主体")}</span>
-                <strong>${safe(card.title)}</strong>
+                <strong>${safe(cardDisplayTitle(card))}</strong>
                 ${card.sourceUrl ? `<a href="${safe(card.sourceUrl)}" target="_blank" rel="noreferrer">查看来源</a>` : ""}
               </article>
             `).join("")}
@@ -1333,7 +1351,7 @@
             ${support.map((card) => `
               <article>
                 <span>${safe(card.categoryLabel)} · ${safe(card.subject || card.sourceName || "未标注主体")}</span>
-                <strong>${safe(card.title)}</strong>
+                <strong>${safe(cardDisplayTitle(card))}</strong>
                 ${card.sourceUrl ? `<a href="${safe(card.sourceUrl)}" target="_blank" rel="noreferrer">查看来源</a>` : ""}
               </article>
             `).join("")}
@@ -1428,10 +1446,11 @@
     const dialog = $("[data-detail-dialog]");
     if (!root || !dialog) return;
     const fact = factText(card);
-    const highlights = uniqueDetailLines(card.originalHighlights || [], [fact, card.title], 8);
+    const titleAliases = cardTitleAliases(card);
+    const highlights = uniqueDetailLines(card.originalHighlights || [], [fact, ...titleAliases], 8);
     const value = valueText(card, fact);
-    const visibleFragment = visibleFragmentText(card, [fact, value, card.title, ...highlights]);
-    const evidenceLines = uniqueDetailLines([...highlights, visibleFragment], [fact, value, card.title], 6);
+    const visibleFragment = visibleFragmentText(card, [fact, value, ...titleAliases, ...highlights]);
+    const evidenceLines = uniqueDetailLines([...highlights, visibleFragment], [fact, value, ...titleAliases], 6);
     const sourceLinks = card.sourceLinks || [];
     const detailMainBlocks = [
       value ? `
@@ -1448,7 +1467,7 @@
       ` : "",
     ].filter(Boolean).join("");
     root.innerHTML = `
-      <h2 class="detail-title">${safe(card.title)}</h2>
+      <h2 class="detail-title">${safe(cardDisplayTitle(card))}</h2>
       <div class="detail-source-row">
         <span>${safe(card.categoryLabel)} · ${safe(fmtDate(card.date))}</span>
         <strong>${safe(sourceText(card) || card.sourceName || "暂无公开来源")}</strong>

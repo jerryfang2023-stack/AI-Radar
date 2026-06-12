@@ -674,13 +674,28 @@ function safeFrontstageTitle(title = "", sourceUrl = "") {
   return hasCjk(translated) ? translated : fallbackChineseTitleForEnglish(translated, sourceUrl);
 }
 
+function sourceFrontstageTitle(card = {}, originalTitle = "") {
+  return [
+    card.sourceTitle,
+    originalTitle,
+    card.originalTitle,
+  ]
+    .map((value) => String(value || "").trim())
+    .find(Boolean) || "";
+}
+
 function normalizeFrontstageDisplay(card = {}) {
   const title = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || (title !== card.title ? card.title : "");
+  const sourceTitle = sourceFrontstageTitle(card, originalTitle);
+  const displayTitle = sourceTitle || title;
   return {
     ...card,
     title,
+    generatedTitle: title,
     originalTitle,
+    sourceTitle,
+    displayTitle,
     subject: safeFrontstageSubject({
       subject: card.subject,
       sourceUrl: card.sourceUrl,
@@ -689,6 +704,18 @@ function normalizeFrontstageDisplay(card = {}) {
       title,
       originalTitle,
     }),
+  };
+}
+
+function top10CompatCard(card = {}) {
+  const sourceTitle = sourceFrontstageTitle(card, card.originalTitle);
+  const displayTitle = card.displayTitle || sourceTitle || card.title || "";
+  return {
+    ...card,
+    generatedTitle: card.generatedTitle || card.title || "",
+    sourceTitle,
+    displayTitle,
+    title: displayTitle,
   };
 }
 
@@ -2649,7 +2676,9 @@ function buildIntelligenceGraphIndex(payload = {}) {
   const allCards = payload.cards || [];
   const activeDate = payload.meta?.activeDate || "";
   const todayCards = allCards.filter((card) => card.date === activeDate);
-  const todayTop10 = (payload.frontstageCards || []).filter((card) => card.date === activeDate);
+  const todayTop10 = Array.isArray(payload.top10) && payload.top10.length
+    ? payload.top10
+    : (payload.frontstageCards || []).filter((card) => card.date === activeDate);
   const top10Ids = new Set(todayTop10.map((card) => card.id));
   const corePoolCandidates = payload.corePoolCandidates || [];
   const linkedCoreCount = corePoolCandidates.filter((card) => card.linkedCardId || card.type === "signal_card").length;
@@ -2659,7 +2688,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
 
   return {
     meta: {
-      version: "V3.3.2.1-intelligence-graph-index",
+      version: "V3.3.5-top10-source-title-contract",
       generatedAt: payload.meta?.generatedAt || new Date().toISOString(),
       activeDate,
       purpose: "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
@@ -2740,13 +2769,18 @@ const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 3, 1);
 const frontstageCards = frontstageSelection.cards;
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
+const top10 = frontstageCards
+  .filter((card) => card.date === activeDate)
+  .slice(0, 10)
+  .map(top10CompatCard);
 const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate).map(normalizeFrontstageDisplay);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
-    version: "V3.3.2.1-public-frontstage-polish",
+    version: "V3.3.5-top10-source-title-contract",
     generatedAt: new Date().toISOString(),
     activeDate,
+    top10Count: top10.length,
     source: "Signal Cards",
     tagPolicy: "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
     allowedTagCount: allowedTagIds.size,
@@ -2754,6 +2788,7 @@ const payload = {
   categories: Object.entries(categoryLabels).map(([category, label]) => ({ category, label })),
   stats: buildStats(cards, activeDate),
   cards,
+  top10,
   frontstageCards,
   corePoolCandidates,
   frontstageSelection: frontstageSelection.reports,

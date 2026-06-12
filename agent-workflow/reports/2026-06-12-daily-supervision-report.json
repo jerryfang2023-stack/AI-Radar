@@ -1,20 +1,20 @@
 {
-  "ok": false,
-  "status": "failed",
+  "ok": true,
+  "status": "passed",
   "date": "2026-06-12",
-  "generated_at": "2026-06-12T03:35:06.002Z",
+  "generated_at": "2026-06-12T05:01:18.244Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
       "id": "community_intelligence",
       "label": "Community Intelligence",
       "schedule": "08:30 local task; watchdog 08:45; publish watchdog 08:55",
-      "status": "manual_required",
+      "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-12T00:33:19.751Z",
+        "generatedAt": "2026-06-12T03:44:25.505Z",
         "generatedDate": "2026-06-12",
         "items": 66,
-        "links": 63,
+        "links": 61,
         "selectedKeywords": 8,
         "collectorErrors": 0,
         "gateStatus": "passed",
@@ -31,97 +31,93 @@
         },
         "github": {
           "available": true,
-          "latest_run": null,
-          "same_date_run_count": 0,
-          "prs": [],
+          "latest_run": {
+            "conclusion": "success",
+            "createdAt": "2026-06-12T03:48:06Z",
+            "databaseId": 27393184887,
+            "event": "workflow_dispatch",
+            "headBranch": "main",
+            "status": "completed",
+            "updatedAt": "2026-06-12T03:48:30Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27393184887"
+          },
+          "same_date_run_count": 1,
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-06-12T03:48:25Z",
+              "number": 28,
+              "state": "MERGED",
+              "updatedAt": "2026-06-12T03:48:27Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/28"
+            }
+          ],
           "pr_warning": ""
         }
       },
-      "problems": [
-        {
-          "message": "no same-date Community Intelligence publish workflow after 08:55 watchdog",
-          "severity": "manual_required"
-        }
-      ],
+      "problems": [],
       "warnings": [],
-      "actions": [
-        "manual dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass",
-        "send Codex a community_intelligence repair request with log and gate report path"
-      ]
+      "actions": []
     },
     {
       "id": "business_signals",
       "label": "Business Signals / Intelligence Map / Dashboard",
       "schedule": "09:07 / 09:37 / 10:07 Asia/Shanghai; watchdog 10:20",
-      "status": "failed",
+      "status": "passed",
       "evidence": {
-        "activeDate": "2026-06-11",
-        "generatedAt": "2026-06-11T02:44:14.925Z",
-        "frontstageSelected": 0,
-        "supplyConstrained": null,
-        "coreCandidateCount": null,
-        "qualifiedCount": null,
-        "signalCardFiles": 0,
-        "manifest": "missing",
-        "qualityGateStatus": "missing",
-        "readinessReport": "missing",
+        "activeDate": "2026-06-12",
+        "generatedAt": "2026-06-12T05:00:02.877Z",
+        "frontstageSelected": 10,
+        "supplyConstrained": false,
+        "coreCandidateCount": 19,
+        "qualifiedCount": 16,
+        "signalCardFiles": 19,
+        "manifest": "agent-workflow/reports/2026-06-12-persistent-asset-manifest.json",
+        "qualityGateStatus": "passed",
+        "readinessReport": "agent-workflow/reports/2026-06-12-daily-production-chain-readiness.md",
         "github": {
           "available": true,
           "latest_run": {
-            "conclusion": "failure",
-            "createdAt": "2026-06-12T01:23:23Z",
-            "databaseId": 27388337521,
+            "conclusion": "success",
+            "createdAt": "2026-06-12T03:48:06Z",
+            "databaseId": 27393184868,
             "event": "workflow_dispatch",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-12T01:39:53Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27388337521"
+            "updatedAt": "2026-06-12T03:54:01Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27393184868"
           },
-          "same_date_run_count": 1,
-          "prs": [],
+          "same_date_run_count": 2,
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-06-12T03:53:56Z",
+              "number": 29,
+              "state": "MERGED",
+              "updatedAt": "2026-06-12T03:53:59Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/29"
+            }
+          ],
           "pr_warning": ""
         }
       },
-      "problems": [
-        {
-          "message": "business-signal activeDate is 2026-06-11, expected 2026-06-12",
-          "severity": "failed"
-        },
-        {
-          "message": "Top10 selected count is 0, expected 10",
-          "severity": "failed"
-        },
-        {
-          "message": "signal card files 0 below 10",
-          "severity": "failed"
-        },
-        {
-          "message": "Business Signals workflow conclusion is failure",
-          "severity": "failed"
-        }
-      ],
-      "warnings": [
-        "missing same-date persistent asset manifest: agent-workflow/reports/2026-06-12-persistent-asset-manifest.json",
-        "missing quality gate report: agent-workflow/reports/2026-06-12-guanlan-monitor-quality-gate.md",
-        "missing readiness report: agent-workflow/reports/2026-06-12-daily-production-chain-readiness.md"
-      ],
-      "actions": [
-        "send Codex a business_signals repair request with failed gate and report path"
-      ]
+      "problems": [],
+      "warnings": [],
+      "actions": []
     },
     {
       "id": "first_line_viewpoints",
       "label": "First-Line Viewpoints",
       "schedule": "09:17 / 09:47 / 10:17 Asia/Shanghai; watchdog 10:30",
-      "status": "failed",
+      "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-11T11:14:55.667Z",
-        "generatedDate": "2026-06-11",
+        "generatedAt": "2026-06-12T01:23:41.752Z",
+        "generatedDate": "2026-06-12",
         "feedGeneratedAt": "2026-06-11T08:01:30.493Z",
-        "remarks": 51,
+        "remarks": 52,
         "builders": 23,
-        "gateStatus": "missing",
-        "gateReport": "missing",
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-06-12-follow-builders-data-gate.md",
         "github": {
           "available": true,
           "latest_run": {
@@ -148,18 +144,9 @@
           "pr_warning": ""
         }
       },
-      "problems": [
-        {
-          "message": "first-line data date is 2026-06-11, expected 2026-06-12",
-          "severity": "failed"
-        }
-      ],
-      "warnings": [
-        "missing follow-builders gate report: agent-workflow/reports/2026-06-12-follow-builders-data-gate.md"
-      ],
-      "actions": [
-        "send Codex a first_line_viewpoints repair request with gate report path"
-      ]
+      "problems": [],
+      "warnings": [],
+      "actions": []
     }
   ]
 }

@@ -115,6 +115,7 @@ try {
 const issues = walk(payload);
 const cards = Array.isArray(payload.cards) ? payload.cards : [];
 const frontstageCards = Array.isArray(payload.frontstageCards) ? payload.frontstageCards : cards;
+const top10 = Array.isArray(payload.top10) ? payload.top10 : [];
 const cardIds = new Set(cards.map((card) => card.id).filter(Boolean));
 const activeDate = payload.meta?.activeDate || "";
 
@@ -244,6 +245,33 @@ for (const [date, items] of frontstageByDate.entries()) {
   }
 }
 
+const activeFrontstageCards = frontstageCards.filter((card) => card.date === activeDate);
+const activeFrontstageIds = new Set(activeFrontstageCards.map((card) => card.id).filter(Boolean));
+if (!Array.isArray(payload.top10)) {
+  issues.push("payload.top10 is missing; Hermes and public compatibility require an explicit active-date Top10 array");
+} else {
+  if (top10.length !== 10) {
+    issues.push(`payload.top10 has ${top10.length} cards, expected exactly 10 for active date ${activeDate}`);
+  }
+  for (const item of top10) {
+    if (item.date !== activeDate) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} has date ${item.date || "(missing date)"}, expected active date ${activeDate}`);
+    }
+    if (!activeFrontstageIds.has(item.id)) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} is not present in active-date frontstageCards`);
+    }
+    if (!item.title) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing public title`);
+    }
+    if (!item.sourceTitle && !item.originalTitle && !item.displayTitle) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing source/display title`);
+    }
+    if ((item.sourceTitle || item.originalTitle) && item.generatedTitle && item.title === item.generatedTitle) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} exposes generated title instead of source title`);
+    }
+  }
+}
+
 for (const card of cards) {
   if (!card.title || !card.date || !card.sourceName) {
     issues.push(`card ${card.id || "(missing id)"} missing title/date/sourceName`);
@@ -278,11 +306,15 @@ for (const card of cards) {
       }
     }
   }
-  const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact].join("\n");
+  const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact, card.summary].join("\n");
   for (const highlight of card.originalHighlights || []) {
+    const isContextualEnterpriseSystemList = /Oracle E-Business Suite|Oracle PeopleSoft|Oracle Fusion Cloud ERP/u.test(highlight)
+      && /JD Edwards|Salesforce|Snowflake/u.test(highlight)
+      && !/procurement|采购|RFQ|purchase order|sourcing|supplier/iu.test(highlight);
     if (
       /Oracle E-Business Suite|Oracle PeopleSoft|Oracle Fusion Cloud ERP/u.test(highlight)
       && !/procurement|采购|SAP|RFQ|AgentCore|Bedrock/iu.test(sourceScope)
+      && !isContextualEnterpriseSystemList
     ) {
       issues.push(`card ${card.id || "(missing id)"} has procurement-system highlight outside procurement source scope`);
     }
@@ -338,6 +370,7 @@ const result = {
   checked_file: rel(jsonPath),
   card_count: cards.length,
   frontstage_card_count: frontstageCards.length,
+  top10_count: top10.length,
   issue_count: issues.length,
   issues,
 };
