@@ -191,6 +191,16 @@ function largeVendorKeyForCard(card = {}) {
   return match?.[0] || "";
 }
 
+function sourceUrlIsRootLike(value = "") {
+  try {
+    const parsed = new URL(value);
+    const pathname = parsed.pathname.replace(/\/+$/u, "");
+    return pathname === "" || /^\/(?:index\.html?|home)$/iu.test(parsed.pathname);
+  } catch {
+    return false;
+  }
+}
+
 const frontstageByDate = new Map();
 for (const card of frontstageCards) {
   if (!cardIds.has(card.id)) issues.push(`frontstage card ${card.id || "(missing id)"} is not present in full cards asset set`);
@@ -249,6 +259,9 @@ for (const card of cards) {
   }
   if (card.date === activeDate && subjectIsGeneric(card.subject)) {
     issues.push(`card ${card.id || "(missing id)"} has generic frontstage subject: ${card.subject}`);
+  }
+  if (card.date === activeDate && sourceUrlIsRootLike(card.sourceUrl)) {
+    issues.push(`card ${card.id || "(missing id)"} uses root/index source URL; resolve to a dated article or first-party event before frontstage publication`);
   }
   if (card.date === activeDate && titleNeedsTranslation(card.title)) {
     issues.push(`card ${card.id || "(missing id)"} has untranslated frontstage title: ${card.title}`);

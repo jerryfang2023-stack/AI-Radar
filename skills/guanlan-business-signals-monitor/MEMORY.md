@@ -11,3 +11,7 @@ The 2026-06-09 morning incident happened before the V3.3.3 lane split was record
 Auto-merge skip means the generated PR may be ready while publication is blocked. Keep the automation-branch to PR to `main` route; direct `main` pushes remain forbidden.
 
 When `raw_count_min` blocks a high-quality run, artifact recovery must rebuild Cards and site data after restoring Raw / Pool. Pre-card `site-content.json` artifacts are stale and must not be copied as final output.
+
+## 2026-06-12
+
+News-site homepages and generic root URLs can contain unrelated article/sidebar fragments that look like concrete AI events. Treat root/homepage URLs as index-only evidence unless they resolve to a dated article or first-party event before Card generation.
