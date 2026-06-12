@@ -1,492 +1,309 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-12 23:53:21",
-    "generatedDate": "2026-06-12",
+    "generatedAt": "2026-06-13 02:35:44",
+    "generatedDate": "2026-06-13",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
     "registryPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\skill-registry.md",
+    "cleanupObservationPath": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills\\skill-cleanup-observation.json",
     "version": {
       "schema_version": 1,
       "name": "Guanlan Skill Store",
-      "version": "1.1.0",
-      "release_date": "2026-06-12",
-      "stage": "Lifecycle cleanup queue",
-      "scope": "Registry-generated Skill Store dashboard, governed current skills, lifecycle fields, cleanup queue, token footprint estimates, .skill-store sync, and Daily Loop Skill Ops check.",
+      "version": "1.3.0",
+      "release_date": "2026-06-13",
+      "stage": "Cleanup operations and observation controls",
+      "scope": "Operations-console Skill Store dashboard with embedded catalog/cleanup views, governed current skills, usage overrides, 30-day cleanup observation, manual add-to-cleanup and mark-common actions, trash staging, permanent trash deletion, local Skill Store ops service, .skill-store sync, and Daily Loop Skill Ops check.",
       "upgrade_policy": {
         "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
         "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
         "major": "Change the Skill Store governance model, registry contract, or Daily Loop integration contract."
       }
     },
+    "cleanupPolicy": [
+      {
+        "action": "keep",
+        "label": "Protect",
+        "rule": "Current, supporting, governance, and lane-owner skills are protected from cleanup suggestions."
+      },
+      {
+        "action": "cleanup",
+        "label": "Cleanup",
+        "rule": "Only manually selected cleanup recommendations enter immediately; the rest start a 30-day observation window from 2026-06-13."
+      }
+    ],
     "summary": {
-      "total": 152,
-      "guanlan": 16,
+      "total": 147,
+      "guanlan": 11,
       "current": 11,
       "laneOwners": 3,
-      "needsAction": 5,
+      "needsAction": 0,
       "syncIssues": 0,
-      "dormant": 134,
-      "retired": 5,
-      "cleanupQueue": 139,
-      "tokenFootprintEstimate": 1294716,
+      "dormant": 132,
+      "retired": 0,
+      "cleanupQueue": 15,
+      "cleanupActions": {
+        "keep": 132,
+        "cleanup": 15
+      },
       "evalCoverage": 100,
       "exampleCoverage": 100
     }
   },
   "cleanupQueue": [
     {
-      "name": "guanlan-copy-style-qc",
-      "lifecycle": "retired",
-      "cleanup_score": 121,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 5405
-    },
-    {
-      "name": "guanlan-copy-style",
-      "lifecycle": "retired",
-      "cleanup_score": 121,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 5188
-    },
-    {
-      "name": "guanlan-daily-observation-qc",
-      "lifecycle": "retired",
-      "cleanup_score": 111,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 3061
-    },
-    {
-      "name": "guanlan-daily-observation",
-      "lifecycle": "retired",
-      "cleanup_score": 111,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 2575
-    },
-    {
-      "name": "guanlan-daily-observation-pitch",
-      "lifecycle": "retired",
-      "cleanup_score": 111,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 1900
-    },
-    {
-      "name": "fbs-bookwriter",
+      "name": "agent-mail",
       "lifecycle": "dormant",
-      "cleanup_score": 104,
+      "cleanup_score": 100,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
+        "recommended cleanup"
       ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Dormant agent email integration with no current Guanlan dependency.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:50",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 319594
+      "last_used": ""
     },
     {
-      "name": "minimax-docx",
+      "name": "arxiv-watcher",
       "lifecycle": "dormant",
-      "cleanup_score": 104,
+      "cleanup_score": 100,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
+        "recommended cleanup"
       ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with arxiv-reader and research entrypoints.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:55",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 135567
+      "last_used": ""
     },
     {
-      "name": "minimax-xlsx",
+      "name": "baoyu-image-gen",
       "lifecycle": "dormant",
-      "cleanup_score": 104,
+      "cleanup_score": 100,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
+        "recommended cleanup"
       ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Deprecated by baoyu-imagine.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 33276
-    },
-    {
-      "name": "frontend-dev",
-      "lifecycle": "dormant",
-      "cleanup_score": 104,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 25377
-    },
-    {
-      "name": "llm-wiki",
-      "lifecycle": "dormant",
-      "cleanup_score": 104,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 15187
-    },
-    {
-      "name": "lark-unified",
-      "lifecycle": "dormant",
-      "cleanup_score": 104,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 12096
-    },
-    {
-      "name": "wechat-topic-radar",
-      "lifecycle": "dormant",
-      "cleanup_score": 96,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint",
-        "unused scripts"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 5507
-    },
-    {
-      "name": "awesome-design-md",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 206909
-    },
-    {
-      "name": "marketing-skills",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 85490
-    },
-    {
-      "name": "fullstack-dev",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 29862
-    },
-    {
-      "name": "the-entrepreneurship-handbook",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 23073
-    },
-    {
-      "name": "admapix",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 20558
-    },
-    {
-      "name": "pptx-generator",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 15555
-    },
-    {
-      "name": "financial-analyst-master",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 12047
-    },
-    {
-      "name": "imagegen-frontend-mobile",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 10072
-    },
-    {
-      "name": "imagegen-frontend-web",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 9195
-    },
-    {
-      "name": "image-to-code-skill",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 9091
-    },
-    {
-      "name": "notebooklm",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 9076
-    },
-    {
-      "name": "citation-manager",
-      "lifecycle": "dormant",
-      "cleanup_score": 94,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 8490
-    },
-    {
-      "name": "social-auto-upload",
-      "lifecycle": "dormant",
-      "cleanup_score": 88,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "medium token footprint",
-        "unused scripts"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 6388
-    },
-    {
-      "name": "skills-security-check",
-      "lifecycle": "dormant",
-      "cleanup_score": 86,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 7565
-    },
-    {
-      "name": "multi-search-engine",
-      "lifecycle": "dormant",
-      "cleanup_score": 86,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 6925
-    },
-    {
-      "name": "aihot",
-      "lifecycle": "dormant",
-      "cleanup_score": 86,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ],
-      "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 6655
+      "last_used": ""
     },
     {
       "name": "baoyu-xhs-images",
       "lifecycle": "dormant",
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
+        "recommended cleanup"
       ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Deprecated by baoyu-imagine.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:58",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 6040
+      "last_used": ""
     },
     {
-      "name": "baoyu-image-cards",
+      "name": "content-ops",
       "lifecycle": "dormant",
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
+        "recommended cleanup"
       ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with content-factory.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:15",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
-      "last_used": "",
-      "token_footprint_estimate": 6019
+      "last_used": ""
+    },
+    {
+      "name": "content-repurposer",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with content-factory.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:15",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "fbs-bookwriter",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Large store-only writing system with no current Guanlan dependency.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:18",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "frontend-dev",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with frontend-design and project UI rules.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:28",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "github-ai-trends",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with github-trending-cn.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:30",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "ima-skills",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Store-only dormant integration with no current Guanlan dependency.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:31",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "minimax-docx",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Documents capability.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:35",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "minimax-pdf",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Documents and nano-pdf capabilities.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:37",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "minimax-xlsx",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Spreadsheets capability.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:37",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "note-organizer",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Dormant personal Joplin tooling with no Guanlan dependency.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:38",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "ppt-slideshow",
+      "lifecycle": "dormant",
+      "cleanup_score": 100,
+      "cleanup_reasons": [
+        "no observed usage",
+        "recommended cleanup"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Presentations capability.",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:40",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
     }
   ],
   "skills": [
@@ -523,10 +340,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "supporting",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 6123,
-      "token_footprint_files": 3,
+      "installedAt": "2026-05-03 14:20:02",
+      "installedTime": 1777789202352.4182,
+      "last_used": "2026-06-05",
+      "usage_count": 6,
       "sizeKB": 193,
       "fileCount": 23,
       "modifiedAt": "2026-06-12 22:58:54",
@@ -536,7 +353,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-business-signals-monitor",
@@ -571,10 +393,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-06-12 22:06:16",
+      "installedTime": 1781273176414.72,
       "last_used": "2026-06-12",
       "usage_count": 3,
-      "token_footprint_estimate": 2371,
-      "token_footprint_files": 7,
       "sizeKB": 9,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 23:26:03",
@@ -584,7 +406,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-community-intelligence-monitor",
@@ -619,10 +446,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-06-12 22:06:16",
+      "installedTime": 1781273176436.8484,
       "last_used": "2026-06-12",
       "usage_count": 2,
-      "token_footprint_estimate": 2132,
-      "token_footprint_files": 7,
       "sizeKB": 8,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 23:26:03",
@@ -632,7 +459,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-daily-monitor",
@@ -667,10 +499,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-05-18 03:07:22",
+      "installedTime": 1779044842299.2117,
       "last_used": "2026-06-12",
       "usage_count": 1,
-      "token_footprint_estimate": 1980,
-      "token_footprint_files": 5,
       "sizeKB": 8,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 22:59:34",
@@ -680,7 +512,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-daily-monitor-qc",
@@ -715,10 +552,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-05-20 10:14:08",
+      "installedTime": 1779243248282.7107,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4688,
-      "token_footprint_files": 5,
       "sizeKB": 18,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 22:59:34",
@@ -728,7 +565,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-first-line-viewpoints-monitor",
@@ -763,10 +605,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-06-12 22:06:16",
+      "installedTime": 1781273176426.5955,
       "last_used": "2026-06-12",
       "usage_count": 2,
-      "token_footprint_estimate": 2045,
-      "token_footprint_files": 7,
       "sizeKB": 8,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 23:26:03",
@@ -776,7 +618,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-monitor-quality-gate",
@@ -811,10 +658,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-05-20 10:24:16",
+      "installedTime": 1779243856019.3943,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3616,
-      "token_footprint_files": 6,
       "sizeKB": 14,
       "fileCount": 6,
       "modifiedAt": "2026-06-12 22:59:34",
@@ -824,7 +671,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-raw-pool-card",
@@ -859,10 +711,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-06-07 18:13:56",
+      "installedTime": 1780827236202.9822,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3740,
-      "token_footprint_files": 7,
       "sizeKB": 14,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 22:58:23",
@@ -872,7 +724,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-skill-editor",
@@ -907,10 +764,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "governance",
+      "installedAt": "2026-06-07 21:55:14",
+      "installedTime": 1780840514148.224,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1951,
-      "token_footprint_files": 7,
       "sizeKB": 8,
       "fileCount": 7,
       "modifiedAt": "2026-06-12 22:59:35",
@@ -920,7 +777,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-trend-candidate-writer",
@@ -955,10 +817,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "current",
+      "installedAt": "2026-05-25 15:05:59",
+      "installedTime": 1779692759416.1655,
       "last_used": "2026-06-12",
       "usage_count": 1,
-      "token_footprint_estimate": 2851,
-      "token_footprint_files": 5,
       "sizeKB": 11,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 23:26:03",
@@ -968,7 +830,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "guanlan-typography-qc",
@@ -1003,10 +870,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "supporting",
+      "installedAt": "2026-05-19 23:44:05",
+      "installedTime": 1779205445308.6245,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2225,
-      "token_footprint_files": 5,
       "sizeKB": 9,
       "fileCount": 5,
       "modifiedAt": "2026-06-12 22:59:34",
@@ -1016,304 +883,12 @@ window.WaveSightLocalSkillStore = {
       "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": []
-    },
-    {
-      "name": "guanlan-copy-style",
-      "category": "Guanlan Installed",
-      "isGuanlan": true,
-      "current": false,
-      "role": "installed Guanlan skill",
-      "lane": "",
-      "status": "",
-      "responsibility": "",
-      "upstream": "",
-      "downstream": "",
-      "gates": "",
-      "evalCoverage": "",
-      "learning": "",
-      "mirroredExpected": "",
-      "storeExists": true,
-      "projectExists": false,
-      "syncState": "store-only",
-      "version": "",
-      "description": "观澜 AI 全站基础文案规范 Skill。用于生成网站栏目名、页面标题、模块说明、卡片文案、按钮文案、空状态、提示语、摘要和通用运营文案。目标是保持观澜文案克制、清楚、有商业判断、低 AI 味，避免机械化栏目名、填充文字、行业黑话和泛泛趋势表达。专题栏目优先调用对应专门 Skill。",
-      "originalDescription": "观澜 AI 全站基础文案规范 Skill。用于生成网站栏目名、页面标题、模块说明、卡片文案、按钮文案、空状态、提示语、摘要和通用运营文案。目标是保持观澜文案克制、清楚、有商业判断、低 AI 味，避免机械化栏目名、填充文字、行业黑话和泛泛趋势表达。专题栏目优先调用对应专门 Skill。",
-      "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-copy-style",
-      "projectPath": "",
-      "hasSkillMd": true,
-      "hasEvals": false,
-      "hasExamples": false,
-      "hasMemory": false,
-      "hasReferences": false,
-      "hasScripts": false,
-      "hasConfig": false,
-      "hasDeps": false,
-      "hasTemplates": false,
-      "lifecycle": "retired",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 5188,
-      "token_footprint_files": 2,
-      "sizeKB": 16,
-      "fileCount": 2,
-      "modifiedAt": "2026-05-20 01:54:10",
-      "modifiedTime": 1779213250688.8276,
-      "issueCount": 1,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "retired-risk",
-          "label": "历史能力",
-          "severity": "medium"
-        }
-      ],
-      "cleanup_score": 121,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
-    },
-    {
-      "name": "guanlan-copy-style-qc",
-      "category": "Guanlan Installed",
-      "isGuanlan": true,
-      "current": false,
-      "role": "installed Guanlan skill",
-      "lane": "",
-      "status": "",
-      "responsibility": "",
-      "upstream": "",
-      "downstream": "",
-      "gates": "",
-      "evalCoverage": "",
-      "learning": "",
-      "mirroredExpected": "",
-      "storeExists": true,
-      "projectExists": false,
-      "syncState": "store-only",
-      "version": "",
-      "description": "观澜 AI 全站基础文案质检 Skill。用于检查网站栏目名、页面标题、模块说明、卡片文案、按钮文案、空状态、提示语、摘要和通用运营文案是否符合观澜基础文案规范。重点检查清楚、克制、具体、有商业判断、低 AI 味、低公关腔、低技术黑话。本 Skill 只做质检和返修建议，不替代专题 Skill。",
-      "originalDescription": "观澜 AI 全站基础文案质检 Skill。用于检查网站栏目名、页面标题、模块说明、卡片文案、按钮文案、空状态、提示语、摘要和通用运营文案是否符合观澜基础文案规范。重点检查清楚、克制、具体、有商业判断、低 AI 味、低公关腔、低技术黑话。本 Skill 只做质检和返修建议，不替代专题 Skill。",
-      "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-copy-style-qc",
-      "projectPath": "",
-      "hasSkillMd": true,
-      "hasEvals": false,
-      "hasExamples": false,
-      "hasMemory": false,
-      "hasReferences": false,
-      "hasScripts": false,
-      "hasConfig": false,
-      "hasDeps": false,
-      "hasTemplates": false,
-      "lifecycle": "retired",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 5405,
-      "token_footprint_files": 2,
-      "sizeKB": 16,
-      "fileCount": 2,
-      "modifiedAt": "2026-05-20 01:54:10",
-      "modifiedTime": 1779213250692.389,
-      "issueCount": 1,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "retired-risk",
-          "label": "历史能力",
-          "severity": "medium"
-        }
-      ],
-      "cleanup_score": 121,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
-    },
-    {
-      "name": "guanlan-daily-observation",
-      "category": "Guanlan Installed",
-      "isGuanlan": true,
-      "current": false,
-      "role": "installed Guanlan skill",
-      "lane": "",
-      "status": "",
-      "responsibility": "",
-      "upstream": "",
-      "downstream": "",
-      "gates": "",
-      "evalCoverage": "",
-      "learning": "",
-      "mirroredExpected": "",
-      "storeExists": true,
-      "projectExists": false,
-      "syncState": "store-only",
-      "version": "",
-      "description": "观澜每日观察撰写与返修 Skill。用于把一个 AI 商业事件、案例、观点或公司动作，写成有事实骨架、商业判断、记者语感和前台可读性的今日观察。适用于今日观察正文、标题、小标题、摘要、卡片文案、返修和精校。",
-      "originalDescription": "观澜每日观察撰写与返修 Skill。用于把一个 AI 商业事件、案例、观点或公司动作，写成有事实骨架、商业判断、记者语感和前台可读性的今日观察。适用于今日观察正文、标题、小标题、摘要、卡片文案、返修和精校。",
-      "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-daily-observation",
-      "projectPath": "",
-      "hasSkillMd": true,
-      "hasEvals": false,
-      "hasExamples": false,
-      "hasMemory": false,
-      "hasReferences": false,
-      "hasScripts": false,
-      "hasConfig": false,
-      "hasDeps": false,
-      "hasTemplates": false,
-      "lifecycle": "retired",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 2575,
-      "token_footprint_files": 1,
-      "sizeKB": 7,
-      "fileCount": 1,
-      "modifiedAt": "2026-05-30 17:46:49",
-      "modifiedTime": 1780134409362.1604,
-      "issueCount": 1,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "retired-risk",
-          "label": "历史能力",
-          "severity": "medium"
-        }
-      ],
-      "cleanup_score": 111,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples"
-      ]
-    },
-    {
-      "name": "guanlan-daily-observation-pitch",
-      "category": "Guanlan Installed",
-      "isGuanlan": true,
-      "current": false,
-      "role": "installed Guanlan skill",
-      "lane": "",
-      "status": "",
-      "responsibility": "",
-      "upstream": "",
-      "downstream": "",
-      "gates": "",
-      "evalCoverage": "",
-      "learning": "",
-      "mirroredExpected": "",
-      "storeExists": true,
-      "projectExists": false,
-      "syncState": "store-only",
-      "version": "",
-      "description": "观澜每日观察商业主编选题 Skill。用于从当日素材中筛出最有新闻张力、商业冲突和叙事价值的一件事、一个案例或一个观点。本 Skill 只做主编式选题判断，不写正文、不写提纲、不写标题、不生成首页字段。",
-      "originalDescription": "观澜每日观察商业主编选题 Skill。用于从当日素材中筛出最有新闻张力、商业冲突和叙事价值的一件事、一个案例或一个观点。本 Skill 只做主编式选题判断，不写正文、不写提纲、不写标题、不生成首页字段。",
-      "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-daily-observation-pitch",
-      "projectPath": "",
-      "hasSkillMd": true,
-      "hasEvals": false,
-      "hasExamples": false,
-      "hasMemory": false,
-      "hasReferences": false,
-      "hasScripts": false,
-      "hasConfig": false,
-      "hasDeps": false,
-      "hasTemplates": false,
-      "lifecycle": "retired",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 1900,
-      "token_footprint_files": 1,
-      "sizeKB": 6,
-      "fileCount": 1,
-      "modifiedAt": "2026-05-22 15:42:45",
-      "modifiedTime": 1779435765883.2468,
-      "issueCount": 1,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "retired-risk",
-          "label": "历史能力",
-          "severity": "medium"
-        }
-      ],
-      "cleanup_score": 111,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples"
-      ]
-    },
-    {
-      "name": "guanlan-daily-observation-qc",
-      "category": "Guanlan Installed",
-      "isGuanlan": true,
-      "current": false,
-      "role": "installed Guanlan skill",
-      "lane": "",
-      "status": "",
-      "responsibility": "",
-      "upstream": "",
-      "downstream": "",
-      "gates": "",
-      "evalCoverage": "",
-      "learning": "",
-      "mirroredExpected": "",
-      "storeExists": true,
-      "projectExists": false,
-      "syncState": "store-only",
-      "version": "",
-      "description": "观澜每日观察可读性质检 Skill。用于以严厉商业主编和读者体验视角检查稿件是否有阅读欲望、标题是否有钩子、开头是否抓人、正文是否顺畅、表达是否生硬、信息是否重复。本 Skill 不做事实审计，不以证据链完整性作为主要评分依据。",
-      "originalDescription": "观澜每日观察可读性质检 Skill。用于以严厉商业主编和读者体验视角检查稿件是否有阅读欲望、标题是否有钩子、开头是否抓人、正文是否顺畅、表达是否生硬、信息是否重复。本 Skill 不做事实审计，不以证据链完整性作为主要评分依据。",
-      "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-daily-observation-qc",
-      "projectPath": "",
-      "hasSkillMd": true,
-      "hasEvals": false,
-      "hasExamples": false,
-      "hasMemory": false,
-      "hasReferences": false,
-      "hasScripts": false,
-      "hasConfig": false,
-      "hasDeps": false,
-      "hasTemplates": false,
-      "lifecycle": "retired",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 3061,
-      "token_footprint_files": 1,
-      "sizeKB": 9,
-      "fileCount": 1,
-      "modifiedAt": "2026-05-25 14:52:37",
-      "modifiedTime": 1779691957226.432,
-      "issueCount": 1,
-      "issueSeverity": "medium",
-      "issues": [
-        {
-          "key": "retired-risk",
-          "label": "历史能力",
-          "severity": "medium"
-        }
-      ],
-      "cleanup_score": 111,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "retired",
-        "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
     },
     {
       "name": "admapix",
@@ -1348,10 +923,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:49",
+      "installedTime": 1777124029815.5403,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 20558,
-      "token_footprint_files": 8,
       "sizeKB": 86,
       "fileCount": 12,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1359,15 +934,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "agent-mail",
@@ -1402,10 +980,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:50",
+      "installedTime": 1777124030104.0327,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1183,
-      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1413,15 +991,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Dormant agent email integration with no current Guanlan dependency.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Dormant agent email integration with no current Guanlan dependency.",
+      "replacement_skill": ""
     },
     {
       "name": "aihot",
@@ -1455,11 +1036,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "lifecycle": "dormant",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 6655,
-      "token_footprint_files": 1,
+      "lifecycle": "candidate",
+      "installedAt": "2026-05-08 13:28:44",
+      "installedTime": 1778218124935.943,
+      "last_used": "2026-06-12",
+      "usage_count": 24,
       "sizeKB": 21,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 13:28:44",
@@ -1467,15 +1048,15 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "article-writer",
@@ -1510,10 +1091,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:55",
+      "installedTime": 1777124035464.6726,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 774,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 2,
       "modifiedAt": "2026-05-16 13:34:54",
@@ -1521,14 +1102,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "arxiv-reader",
@@ -1563,10 +1148,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:55",
+      "installedTime": 1777124035526.2192,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3747,
-      "token_footprint_files": 6,
       "sizeKB": 67,
       "fileCount": 41,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1574,14 +1159,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "arxiv-watcher",
@@ -1616,10 +1205,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:55",
+      "installedTime": 1777124035937.94,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 397,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1627,15 +1216,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with arxiv-reader and research entrypoints.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with arxiv-reader and research entrypoints.",
+      "replacement_skill": ""
     },
     {
       "name": "autoresearch",
@@ -1670,10 +1262,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:56",
+      "installedTime": 1777124036014.8716,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2250,
-      "token_footprint_files": 1,
       "sizeKB": 25,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1681,14 +1273,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "awesome-design-md",
@@ -1723,10 +1319,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:56",
+      "installedTime": 1777124036110.0293,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 206909,
-      "token_footprint_files": 55,
       "sizeKB": 813,
       "fileCount": 56,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1734,15 +1330,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-article-illustrator",
@@ -1777,10 +1376,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037038.4705,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3189,
-      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1788,14 +1387,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-comic",
@@ -1830,10 +1433,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037114.0667,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4217,
-      "token_footprint_files": 1,
       "sizeKB": 17,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1841,15 +1444,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-compress-image",
@@ -1884,10 +1490,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037215.1172,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 598,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1895,14 +1501,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-cover-image",
@@ -1937,10 +1547,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037281.9114,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3594,
-      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -1948,14 +1558,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-danger-gemini-web",
@@ -1990,10 +1604,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037358.7634,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1625,
-      "token_footprint_files": 1,
       "sizeKB": 6,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2001,14 +1615,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-danger-x-to-markdown",
@@ -2043,10 +1661,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037439.9526,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1833,
-      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2054,14 +1672,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-diagram",
@@ -2096,10 +1718,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037488.155,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3059,
-      "token_footprint_files": 1,
       "sizeKB": 12,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2107,14 +1729,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-format-markdown",
@@ -2149,10 +1775,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037539.6738,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3492,
-      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2160,14 +1786,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-image-cards",
@@ -2202,10 +1832,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037582.8933,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 6019,
-      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2213,15 +1843,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-image-gen",
@@ -2256,10 +1889,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037668.5183,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3270,
-      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2267,14 +1900,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Deprecated by baoyu-imagine.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Deprecated by baoyu-imagine.",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-imagine",
@@ -2309,10 +1946,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037725.554,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3559,
-      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2320,14 +1957,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-infographic",
@@ -2362,10 +2003,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037786.86,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4086,
-      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2373,15 +2014,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-markdown-to-html",
@@ -2416,10 +2060,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037842.4082,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2159,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2427,14 +2071,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-post-to-wechat",
@@ -2469,10 +2117,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:57",
+      "installedTime": 1777124037931.0356,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2875,
-      "token_footprint_files": 1,
       "sizeKB": 168,
       "fileCount": 16,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2480,15 +2128,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-post-to-weibo",
@@ -2523,10 +2174,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:58",
+      "installedTime": 1777124038540.1501,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1392,
-      "token_footprint_files": 1,
       "sizeKB": 5,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2534,14 +2185,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-post-to-x",
@@ -2576,10 +2231,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:58",
+      "installedTime": 1777124038603.6814,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1656,
-      "token_footprint_files": 1,
       "sizeKB": 6,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2587,14 +2242,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-slide-deck",
@@ -2629,10 +2288,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:58",
+      "installedTime": 1777124038667.4507,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4533,
-      "token_footprint_files": 1,
       "sizeKB": 18,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2640,15 +2299,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-translate",
@@ -2683,10 +2345,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:58",
+      "installedTime": 1777124038714.8232,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4008,
-      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2694,15 +2356,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-url-to-markdown",
@@ -2737,10 +2402,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:58",
+      "installedTime": 1777124038761.0754,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2117,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2748,14 +2413,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-xhs-images",
@@ -2790,10 +2459,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:58",
+      "installedTime": 1777124038816.154,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 6040,
-      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2801,15 +2470,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Deprecated by baoyu-imagine.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Deprecated by baoyu-imagine.",
+      "replacement_skill": ""
     },
     {
       "name": "baoyu-youtube-transcript",
@@ -2844,10 +2516,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:58",
+      "installedTime": 1777124038885.64,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2406,
-      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2855,14 +2527,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "brand-guidelines",
@@ -2897,10 +2573,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:59",
+      "installedTime": 1777124039566.789,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 607,
-      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -2908,14 +2584,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "brandkit",
@@ -2950,10 +2630,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617952.2256,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3992,
-      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -2961,14 +2641,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "browser-act",
@@ -3003,10 +2687,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-06-12 18:42:45",
+      "installedTime": 1781260965276.8008,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 946,
-      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 1,
       "modifiedAt": "2026-06-12 18:42:45",
@@ -3014,14 +2698,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "browser-use",
@@ -3056,10 +2744,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:33:59",
+      "installedTime": 1777124039702.3801,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4346,
-      "token_footprint_files": 3,
       "sizeKB": 17,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3067,15 +2755,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "brutalist-skill",
@@ -3110,10 +2801,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617967.21,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2113,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -3121,14 +2812,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "canvas-design",
@@ -3163,10 +2858,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:00",
+      "installedTime": 1777124040016.6995,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3033,
-      "token_footprint_files": 1,
       "sizeKB": 5881,
       "fileCount": 95,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3174,14 +2869,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "caveman",
@@ -3216,10 +2915,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548420.7854,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 479,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -3227,14 +2926,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "citation-manager",
@@ -3269,10 +2972,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:05",
+      "installedTime": 1777124045634.181,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 8490,
-      "token_footprint_files": 1,
       "sizeKB": 220,
       "fileCount": 10,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3280,15 +2983,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "content-factory",
@@ -3323,10 +3029,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:15",
+      "installedTime": 1777124055274.1455,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2863,
-      "token_footprint_files": 1,
       "sizeKB": 27,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3334,14 +3040,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "content-ops",
@@ -3376,10 +3086,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:15",
+      "installedTime": 1777124055448.121,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3097,
-      "token_footprint_files": 3,
       "sizeKB": 127,
       "fileCount": 26,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3387,15 +3097,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with content-factory.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with content-factory.",
+      "replacement_skill": ""
     },
     {
       "name": "content-repurposer",
@@ -3430,10 +3143,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:15",
+      "installedTime": 1777124055931.0586,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2178,
-      "token_footprint_files": 1,
       "sizeKB": 39,
       "fileCount": 10,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3441,15 +3154,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with content-factory.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with content-factory.",
+      "replacement_skill": ""
     },
     {
       "name": "dashboard",
@@ -3484,10 +3200,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "candidate",
-      "last_used": "2026-06-12",
-      "usage_count": 3,
-      "token_footprint_estimate": 0,
-      "token_footprint_files": 0,
+      "installedAt": "2026-04-27 22:30:43",
+      "installedTime": 1777300243554.6592,
+      "last_used": "2026-06-13",
+      "usage_count": 5,
       "sizeKB": 328,
       "fileCount": 5,
       "modifiedAt": "2026-05-25 15:06:12",
@@ -3495,12 +3211,15 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 16,
+      "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": [
-        "no evals",
-        "no examples"
-      ]
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "deep-research",
@@ -3535,10 +3254,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:17",
+      "installedTime": 1777124057183.7195,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 5824,
-      "token_footprint_files": 8,
       "sizeKB": 61,
       "fileCount": 21,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3546,15 +3265,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "diagnose",
@@ -3589,10 +3311,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548171.4595,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1779,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -3600,15 +3322,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "edit-article",
@@ -3643,10 +3368,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:28:34",
+      "installedTime": 1778563714314.579,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 483,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-16 13:34:54",
@@ -3654,14 +3379,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "email-skill",
@@ -3696,10 +3425,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:17",
+      "installedTime": 1777124057975.6143,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1036,
-      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3707,14 +3436,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "fbs-bookwriter",
@@ -3749,10 +3482,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:18",
+      "installedTime": 1777124058499.1846,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 319594,
-      "token_footprint_files": 151,
       "sizeKB": 3642,
       "fileCount": 482,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3760,16 +3493,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 104,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Large store-only writing system with no current Guanlan dependency.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Large store-only writing system with no current Guanlan dependency.",
+      "replacement_skill": ""
     },
     {
       "name": "financial-analyst-master",
@@ -3804,10 +3539,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-18 15:53:01",
+      "installedTime": 1779090781556.8547,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 12047,
-      "token_footprint_files": 20,
       "sizeKB": 50,
       "fileCount": 22,
       "modifiedAt": "2026-05-18 15:53:01",
@@ -3815,15 +3550,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "find-skills",
@@ -3858,10 +3596,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:28",
+      "installedTime": 1777124068189.469,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2142,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3869,14 +3607,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "frontend-design",
@@ -3911,10 +3653,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-29 22:15:16",
+      "installedTime": 1777472116214.1343,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1110,
-      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 2,
       "modifiedAt": "2026-04-29 22:15:45",
@@ -3922,14 +3664,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "frontend-dev",
@@ -3964,10 +3710,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:28",
+      "installedTime": 1777124068776.151,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 25377,
-      "token_footprint_files": 11,
       "sizeKB": 5548,
       "fileCount": 99,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3975,16 +3721,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 104,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with frontend-design and project UI rules.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with frontend-design and project UI rules.",
+      "replacement_skill": ""
     },
     {
       "name": "fullstack-dev",
@@ -4019,10 +3767,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:30",
+      "installedTime": 1777124070141.859,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 29862,
-      "token_footprint_files": 9,
       "sizeKB": 118,
       "fileCount": 10,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4030,15 +3778,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "git-guardrails-claude-code",
@@ -4073,10 +3824,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548463.5825,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 578,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 2,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -4084,15 +3835,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "github",
@@ -4127,10 +3881,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "candidate",
+      "installedAt": "2026-04-25 21:34:30",
+      "installedTime": 1777124070938.5554,
       "last_used": "2026-06-12",
       "usage_count": 1,
-      "token_footprint_estimate": 310,
-      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4138,12 +3892,15 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 16,
+      "cleanup_score": 0,
       "cleanup_candidate": false,
-      "cleanup_reasons": [
-        "no evals",
-        "no examples"
-      ]
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "github-ai-trends",
@@ -4178,10 +3935,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:30",
+      "installedTime": 1777124070733.1174,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 357,
-      "token_footprint_files": 1,
       "sizeKB": 6,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4189,15 +3946,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with github-trending-cn.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with github-trending-cn.",
+      "replacement_skill": ""
     },
     {
       "name": "github-trending-cn",
@@ -4232,10 +3992,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:30",
+      "installedTime": 1777124070866.7195,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 774,
-      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4243,15 +4003,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "gpt-tasteskill",
@@ -4286,10 +4049,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1965,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -4297,14 +4060,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "grill-me",
@@ -4339,10 +4106,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548429.8665,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 159,
-      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -4350,14 +4117,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "grill-with-docs",
@@ -4392,10 +4163,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548188.1729,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 853,
-      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 3,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -4403,14 +4174,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "growth-engine",
@@ -4445,10 +4220,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:31",
+      "installedTime": 1777124071178.1333,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1394,
-      "token_footprint_files": 1,
       "sizeKB": 56,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4456,14 +4231,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "handoff",
@@ -4498,10 +4277,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548440.3313,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 180,
-      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -4509,14 +4288,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "hardcore-tech-writer",
@@ -4551,10 +4334,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:23",
+      "installedTime": 1777124123138.902,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 5260,
-      "token_footprint_files": 1,
       "sizeKB": 22,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4562,15 +4345,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "humanizer",
@@ -4605,10 +4391,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:31",
+      "installedTime": 1777124071689.8945,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4523,
-      "token_footprint_files": 1,
       "sizeKB": 21,
       "fileCount": 3,
       "modifiedAt": "2026-05-16 13:34:55",
@@ -4616,15 +4402,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "ima-skills",
@@ -4659,10 +4448,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:31",
+      "installedTime": 1777124071947.8872,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3635,
-      "token_footprint_files": 1,
       "sizeKB": 98,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4670,15 +4459,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Store-only dormant integration with no current Guanlan dependency.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Store-only dormant integration with no current Guanlan dependency.",
+      "replacement_skill": ""
     },
     {
       "name": "image-to-code-skill",
@@ -4713,10 +4505,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 9091,
-      "token_footprint_files": 1,
       "sizeKB": 36,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -4724,15 +4516,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "imagegen-frontend-mobile",
@@ -4767,10 +4562,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 10072,
-      "token_footprint_files": 1,
       "sizeKB": 39,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -4778,15 +4573,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "imagegen-frontend-web",
@@ -4821,10 +4619,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 9195,
-      "token_footprint_files": 1,
       "sizeKB": 36,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -4832,15 +4630,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "improve-codebase-architecture",
@@ -4875,10 +4676,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548202.693,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1274,
-      "token_footprint_files": 1,
       "sizeKB": 14,
       "fileCount": 4,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -4886,14 +4687,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "infographic-maker",
@@ -4928,10 +4733,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:33",
+      "installedTime": 1777124073072.8682,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3172,
-      "token_footprint_files": 2,
       "sizeKB": 12,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4939,14 +4744,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "interview-prep",
@@ -4981,10 +4790,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-18 15:52:57",
+      "installedTime": 1779090777102.9248,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2855,
-      "token_footprint_files": 1,
       "sizeKB": 11,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
@@ -4992,14 +4801,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "lark-unified",
@@ -5034,10 +4847,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:33",
+      "installedTime": 1777124073785.7397,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 12096,
-      "token_footprint_files": 13,
       "sizeKB": 55,
       "fileCount": 15,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5045,16 +4858,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 104,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "llm-wiki",
@@ -5089,10 +4904,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": true,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:31",
+      "installedTime": 1777124131349.5664,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 15187,
-      "token_footprint_files": 1,
       "sizeKB": 915,
       "fileCount": 78,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5100,16 +4915,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 104,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "llm-wiki-luotwo",
@@ -5144,10 +4961,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:23",
+      "installedTime": 1777124123216.4067,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3232,
-      "token_footprint_files": 1,
       "sizeKB": 18,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5155,14 +4972,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "llm-wiki-upgrade",
@@ -5197,10 +5018,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:39:02",
+      "installedTime": 1777124342008.8257,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 879,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5208,14 +5029,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "macro-monitor",
@@ -5250,10 +5075,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:34",
+      "installedTime": 1777124074431.3096,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2938,
-      "token_footprint_files": 2,
       "sizeKB": 9,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5261,14 +5086,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "market-researcher",
@@ -5303,10 +5132,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:34",
+      "installedTime": 1777124074510.5266,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2208,
-      "token_footprint_files": 1,
       "sizeKB": 9,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5314,14 +5143,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "marketing-skills",
@@ -5356,10 +5189,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:34",
+      "installedTime": 1777124074605.11,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 85490,
-      "token_footprint_files": 24,
       "sizeKB": 337,
       "fileCount": 26,
       "modifiedAt": "2026-05-16 13:34:54",
@@ -5367,15 +5200,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "md2wechat",
@@ -5410,10 +5246,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:23",
+      "installedTime": 1777124123267.9927,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2188,
-      "token_footprint_files": 1,
       "sizeKB": 75,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5421,14 +5257,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "migrate-to-shoehorn",
@@ -5463,10 +5303,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548480.3284,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 698,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -5474,14 +5314,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "minimalist-skill",
@@ -5516,10 +5360,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1974,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -5527,14 +5371,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "minimax-docx",
@@ -5569,10 +5417,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:35",
+      "installedTime": 1777124075606.3833,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 135567,
-      "token_footprint_files": 19,
       "sizeKB": 1485,
       "fileCount": 75,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5580,16 +5428,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 104,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with bundled Documents capability.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Documents capability.",
+      "replacement_skill": ""
     },
     {
       "name": "minimax-pdf",
@@ -5624,10 +5474,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:37",
+      "installedTime": 1777124077285.6997,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2172,
-      "token_footprint_files": 1,
       "sizeKB": 193,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5635,15 +5485,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with bundled Documents and nano-pdf capabilities.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Documents and nano-pdf capabilities.",
+      "replacement_skill": ""
     },
     {
       "name": "minimax-xlsx",
@@ -5678,10 +5531,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:37",
+      "installedTime": 1777124077654.24,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 33276,
-      "token_footprint_files": 8,
       "sizeKB": 257,
       "fileCount": 26,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5689,16 +5542,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 104,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with bundled Spreadsheets capability.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Spreadsheets capability.",
+      "replacement_skill": ""
     },
     {
       "name": "multi-search-engine",
@@ -5733,10 +5588,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078081.5977,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 6925,
-      "token_footprint_files": 3,
       "sizeKB": 28,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5744,15 +5599,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "nano-pdf",
@@ -5787,10 +5645,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078393.9104,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 168,
-      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5798,14 +5656,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "neat-freak",
@@ -5839,11 +5701,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "lifecycle": "dormant",
-      "last_used": "",
-      "usage_count": 0,
-      "token_footprint_estimate": 5091,
-      "token_footprint_files": 3,
+      "lifecycle": "candidate",
+      "installedAt": "2026-04-29 16:31:15",
+      "installedTime": 1777451475465.5078,
+      "last_used": "2026-06-13",
+      "usage_count": 1,
       "sizeKB": 16,
       "fileCount": 3,
       "modifiedAt": "2026-04-29 16:31:51",
@@ -5851,15 +5713,15 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "dormant",
-        "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "news-summary",
@@ -5894,10 +5756,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078564.9622,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 574,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -5905,14 +5767,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "newsroom-style",
@@ -5947,10 +5813,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-18 15:52:57",
+      "installedTime": 1779090777105.2104,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1844,
-      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
@@ -5958,14 +5824,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "note-organizer",
@@ -6000,10 +5870,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078625.4634,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 390,
-      "token_footprint_files": 1,
       "sizeKB": 7,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6011,15 +5881,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Dormant personal Joplin tooling with no Guanlan dependency.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Dormant personal Joplin tooling with no Guanlan dependency.",
+      "replacement_skill": ""
     },
     {
       "name": "notebooklm",
@@ -6054,10 +5927,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-24 20:26:14",
+      "installedTime": 1779625574158.9573,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 9076,
-      "token_footprint_files": 1,
       "sizeKB": 36,
       "fileCount": 1,
       "modifiedAt": "2026-05-24 20:26:14",
@@ -6065,15 +5938,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "notebooklm-studio",
@@ -6108,10 +5984,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078723.4788,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 923,
-      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6119,14 +5995,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "obsidian",
@@ -6161,10 +6041,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078764.9197,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 615,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6172,14 +6052,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "obsidian-vault",
@@ -6214,10 +6098,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:28:34",
+      "installedTime": 1778563714328.4316,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 393,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-12 13:26:04",
@@ -6225,14 +6109,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "openai-image-gen",
@@ -6267,10 +6155,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078876.7358,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 221,
-      "token_footprint_files": 1,
       "sizeKB": 8,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6278,15 +6166,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "openai-whisper",
@@ -6321,10 +6212,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:39",
+      "installedTime": 1777124079013.5938,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 158,
-      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6332,14 +6223,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "openai-whisper-api",
@@ -6374,10 +6269,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:38",
+      "installedTime": 1777124078934.232,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 227,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6385,15 +6280,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "output-skill",
@@ -6428,10 +6326,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 646,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -6439,14 +6337,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "playwright-browser-automation",
@@ -6481,10 +6383,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:39",
+      "installedTime": 1777124079844.8347,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2013,
-      "token_footprint_files": 1,
       "sizeKB": 11,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6492,14 +6394,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "playwright-scraper-skill",
@@ -6534,10 +6440,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:39",
+      "installedTime": 1777124079917.3489,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2739,
-      "token_footprint_files": 3,
       "sizeKB": 35,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6545,14 +6451,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 78,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "podcast-ops",
@@ -6587,10 +6497,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:40",
+      "installedTime": 1777124080234.0723,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2720,
-      "token_footprint_files": 1,
       "sizeKB": 48,
       "fileCount": 5,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6598,14 +6508,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "ppt-slideshow",
@@ -6640,10 +6554,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:40",
+      "installedTime": 1777124080416.8088,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3008,
-      "token_footprint_files": 4,
       "sizeKB": 18,
       "fileCount": 6,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6651,15 +6565,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
+      "cleanup_score": 100,
       "cleanup_candidate": true,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "recommended cleanup"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "Overlaps with bundled Presentations capability.",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "Overlaps with bundled Presentations capability.",
+      "replacement_skill": ""
     },
     {
       "name": "pptx-generator",
@@ -6694,10 +6611,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:40",
+      "installedTime": 1777124080562.9954,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 15555,
-      "token_footprint_files": 6,
       "sizeKB": 62,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6705,15 +6622,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "prompt-engineering-expert",
@@ -6748,10 +6668,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:40",
+      "installedTime": 1777124080779.3706,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2442,
-      "token_footprint_files": 2,
       "sizeKB": 76,
       "fileCount": 13,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6759,13 +6679,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 68,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "prototype",
@@ -6800,10 +6725,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548241.2737,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 808,
-      "token_footprint_files": 1,
       "sizeKB": 15,
       "fileCount": 3,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -6811,14 +6736,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "redesign-skill",
@@ -6853,10 +6782,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3758,
-      "token_footprint_files": 1,
       "sizeKB": 15,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -6864,14 +6793,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "remotion-video-toolkit",
@@ -6906,10 +6839,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:41",
+      "installedTime": 1777124081758.567,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1395,
-      "token_footprint_files": 1,
       "sizeKB": 84,
       "fileCount": 35,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6917,14 +6850,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "sales-pipeline",
@@ -6959,10 +6896,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:42",
+      "installedTime": 1777124082501.2566,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1049,
-      "token_footprint_files": 1,
       "sizeKB": 103,
       "fileCount": 12,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6970,14 +6907,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "sales-playbook",
@@ -7012,10 +6953,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:42",
+      "installedTime": 1777124082829.5632,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1035,
-      "token_footprint_files": 1,
       "sizeKB": 105,
       "fileCount": 7,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7023,14 +6964,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "scaffold-exercises",
@@ -7065,10 +7010,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548490.4443,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 898,
-      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -7076,14 +7021,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "seo-ops",
@@ -7118,10 +7067,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:43",
+      "installedTime": 1777124083003.307,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1285,
-      "token_footprint_files": 1,
       "sizeKB": 74,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7129,14 +7078,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "setup-matt-pocock-skills",
@@ -7171,10 +7124,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548263.7373,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1699,
-      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 6,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -7182,14 +7135,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "setup-pre-commit",
@@ -7224,10 +7181,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548498.8672,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 565,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -7235,14 +7192,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "skill-creator",
@@ -7277,10 +7238,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:44",
+      "installedTime": 1777124084845.6646,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1213,
-      "token_footprint_files": 3,
       "sizeKB": 33,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7288,15 +7249,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "skill-scanner",
@@ -7331,10 +7295,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:45",
+      "installedTime": 1777124085089.0276,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 4308,
-      "token_footprint_files": 1,
       "sizeKB": 16,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7342,15 +7306,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "skill-vetter",
@@ -7385,10 +7352,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:45",
+      "installedTime": 1777124085207.986,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1010,
-      "token_footprint_files": 1,
       "sizeKB": 5,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7396,14 +7363,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "skills-security-check",
@@ -7438,10 +7409,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:45",
+      "installedTime": 1777124085325.302,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 7565,
-      "token_footprint_files": 1,
       "sizeKB": 24,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7449,15 +7420,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "social-auto-upload",
@@ -7492,10 +7466,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-29 15:40:40",
+      "installedTime": 1780040440228.6836,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 6388,
-      "token_footprint_files": 17,
       "sizeKB": 4957,
       "fileCount": 173,
       "modifiedAt": "2026-05-29 15:48:24",
@@ -7503,15 +7477,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 88,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "medium token footprint",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "soft-skill",
@@ -7546,10 +7523,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2637,
-      "token_footprint_files": 1,
       "sizeKB": 10,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -7557,14 +7534,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "source-verification",
@@ -7599,10 +7580,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-18 15:52:57",
+      "installedTime": 1779090777102.1184,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 5194,
-      "token_footprint_files": 1,
       "sizeKB": 20,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
@@ -7610,15 +7591,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "stitch-skill",
@@ -7653,10 +7637,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-08 00:50:17",
+      "installedTime": 1778172617968.9565,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2935,
-      "token_footprint_files": 1,
       "sizeKB": 23,
       "fileCount": 2,
       "modifiedAt": "2026-05-08 00:50:17",
@@ -7664,14 +7648,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "story-pitch",
@@ -7706,10 +7694,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-18 15:52:57",
+      "installedTime": 1779090777086.4553,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 3262,
-      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 1,
       "modifiedAt": "2026-05-18 15:52:56",
@@ -7717,14 +7705,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "summarize",
@@ -7759,10 +7751,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:34:47",
+      "installedTime": 1777124087063.135,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 394,
-      "token_footprint_files": 1,
       "sizeKB": 2,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7770,14 +7762,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "taste-skill",
@@ -7812,10 +7808,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-04 17:35:11",
+      "installedTime": 1777887311430.504,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 5284,
-      "token_footprint_files": 1,
       "sizeKB": 21,
       "fileCount": 1,
       "modifiedAt": "2026-05-04 17:35:11",
@@ -7823,15 +7819,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "tdd",
@@ -7866,10 +7865,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548306.078,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1093,
-      "token_footprint_files": 1,
       "sizeKB": 10,
       "fileCount": 6,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -7877,14 +7876,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "the-entrepreneurship-handbook",
@@ -7919,10 +7922,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:01",
+      "installedTime": 1777124101080.675,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 23073,
-      "token_footprint_files": 2,
       "sizeKB": 65,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -7930,15 +7933,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 94,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "large token footprint"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "to-issues",
@@ -7973,10 +7979,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548345.8052,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 893,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -7984,14 +7990,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "to-prd",
@@ -8026,10 +8036,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548367.2964,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 777,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -8037,14 +8047,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "triage",
@@ -8079,10 +8093,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548383.5474,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 1211,
-      "token_footprint_files": 1,
       "sizeKB": 15,
       "fileCount": 3,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -8090,14 +8104,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "weather",
@@ -8132,10 +8150,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:01",
+      "installedTime": 1777124101894.524,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 203,
-      "token_footprint_files": 1,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -8143,14 +8161,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "web-search-exa",
@@ -8185,10 +8207,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:02",
+      "installedTime": 1777124102261.91,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2931,
-      "token_footprint_files": 1,
       "sizeKB": 12,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -8196,14 +8218,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "wechat-article-search",
@@ -8238,10 +8264,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:02",
+      "installedTime": 1777124102402.5298,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 821,
-      "token_footprint_files": 1,
       "sizeKB": 25,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -8249,15 +8275,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "wechat-topic-radar",
@@ -8292,10 +8321,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-27 19:17:01",
+      "installedTime": 1777288621129.8523,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 5507,
-      "token_footprint_files": 1,
       "sizeKB": 55,
       "fileCount": 9,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -8303,16 +8332,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 96,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "medium token footprint",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "write-a-skill",
@@ -8347,10 +8378,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548449.4768,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 757,
-      "token_footprint_files": 1,
       "sizeKB": 3,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -8358,14 +8389,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "x-longform-post",
@@ -8400,10 +8435,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": true,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:11",
+      "installedTime": 1777124111891.214,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 2936,
-      "token_footprint_files": 3,
       "sizeKB": 12,
       "fileCount": 5,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -8411,14 +8446,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "youtube-transcript",
@@ -8453,10 +8492,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:23",
+      "installedTime": 1777124123327.1858,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 405,
-      "token_footprint_files": 1,
       "sizeKB": 4,
       "fileCount": 3,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -8464,15 +8503,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 86,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples",
-        "unused scripts"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "yt-competitive-analysis",
@@ -8507,10 +8549,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-04-25 21:35:12",
+      "installedTime": 1777124112368.208,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 590,
-      "token_footprint_files": 1,
       "sizeKB": 13,
       "fileCount": 4,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -8518,14 +8560,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     },
     {
       "name": "zoom-out",
@@ -8560,10 +8606,10 @@ window.WaveSightLocalSkillStore = {
       "hasDeps": false,
       "hasTemplates": false,
       "lifecycle": "dormant",
+      "installedAt": "2026-05-12 13:25:48",
+      "installedTime": 1778563548404.9531,
       "last_used": "",
       "usage_count": 0,
-      "token_footprint_estimate": 108,
-      "token_footprint_files": 1,
       "sizeKB": 0,
       "fileCount": 1,
       "modifiedAt": "2026-05-11 02:19:40",
@@ -8571,14 +8617,18 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 76,
-      "cleanup_candidate": true,
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
       "cleanup_reasons": [
-        "dormant",
         "no observed usage",
-        "no evals",
-        "no examples"
-      ]
+        "in 30 day observation"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "no cleanup action recommended",
+      "replacement_skill": ""
     }
   ]
 };

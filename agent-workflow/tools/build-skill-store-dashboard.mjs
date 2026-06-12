@@ -12,10 +12,26 @@ const projectSkillDir = path.join(root, "agent-workflow", "skills");
 const registryPath = path.join(projectSkillDir, "skill-registry.md");
 const outFile = path.join(root, "01-SiteV2", "site", "data", "local-skill-store-data.js");
 const actionLogsDir = path.join(root, "agent-workflow", "logs", "action-runs");
+const reportsDir = path.join(root, "agent-workflow", "reports");
+const usageOverridesPath = path.join(projectSkillDir, "skill-usage-overrides.json");
+const cleanupObservationPath = path.join(projectSkillDir, "skill-cleanup-observation.json");
 
 const SKIP_DIRS = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", ".cache", "dist", "build"]);
 const RULE_FILES = new Set(["SKILL.md", "MEMORY.md"]);
 const RULE_DIRS = new Set(["agents", "evals", "examples", "references"]);
+const CLEANUP_UNUSED_DAYS = 30;
+const CLEANUP_POLICY = [
+  {
+    action: "keep",
+    label: "Protect",
+    rule: "Current, supporting, governance, and lane-owner skills are protected from cleanup suggestions.",
+  },
+  {
+    action: "cleanup",
+    label: "Cleanup",
+    rule: "Only manually selected cleanup recommendations enter immediately; the rest start a 30-day observation window from 2026-06-13.",
+  },
+];
 
 function readText(file) {
   try {
@@ -87,6 +103,8 @@ function scanDirStats(base) {
     exists: exists(base),
     sizeKB: 0,
     fileCount: 0,
+    installedAt: "",
+    installedTime: 0,
     modifiedAt: "",
     modifiedTime: 0,
     hasScripts: false,
@@ -95,6 +113,10 @@ function scanDirStats(base) {
     hasTemplates: false,
   };
   if (!stats.exists) return stats;
+  const rootStat = fs.statSync(base);
+  const installedTime = rootStat.birthtimeMs || rootStat.ctimeMs || rootStat.mtimeMs;
+  stats.installedTime = installedTime;
+  stats.installedAt = formatDateTime(new Date(installedTime));
 
   function walk(dir) {
     const rel = path.relative(base, dir);
@@ -166,23 +188,6 @@ function ruleDigest(base) {
   return { files, digest: files.length ? hash.digest("hex") : "" };
 }
 
-function tokenFootprint(base) {
-  const files = collectRuleFiles(base);
-  let chars = 0;
-  let cjk = 0;
-  for (const rel of files) {
-    const text = readText(path.join(base, rel));
-    chars += text.length;
-    cjk += (text.match(/[\u3400-\u9fff]/gu) || []).length;
-  }
-  const nonCjk = Math.max(0, chars - cjk);
-  return {
-    files: files.length,
-    chars,
-    estimate: Math.max(0, Math.ceil(cjk * 1.15 + nonCjk / 4)),
-  };
-}
-
 function readActionRecords() {
   if (!exists(actionLogsDir)) return [];
   const records = [];
@@ -202,6 +207,63 @@ function readActionRecords() {
   return records;
 }
 
+function productionUsageFiles() {
+  if (!exists(reportsDir)) return [];
+  return fs.readdirSync(reportsDir, { withFileTypes: true })
+    .filter((entry) => entry.isFile())
+    .map((entry) => entry.name)
+    .filter((name) => /^\d{4}-\d{2}-\d{2}-guanlan-(daily-monitor-log|monitor-quality-gate)\.md$/u.test(name))
+    .map((name) => path.join(reportsDir, name));
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function productionUsagePattern(name) {
+  const exact = escapeRegExp(name);
+  const loose = escapeRegExp(name).replaceAll("\\-", "[-_ ]");
+  return new RegExp([
+    `(?:^|\\n)-\\s*${loose}(?:_|\\b)`,
+    `\\b(?:source_distribution|raw_count_by_channel):[^\\n]*\\b${exact}\\b`,
+    `\\bacquisition_channel:\\s*${exact}\\b`,
+  ].join("|"), "iu");
+}
+
+function readUsageOverrides() {
+  if (!exists(usageOverridesPath)) return {};
+  try {
+    return JSON.parse(readText(usageOverridesPath));
+  } catch {
+    return {};
+  }
+}
+
+function readCleanupObservation() {
+  if (!exists(cleanupObservationPath)) return {};
+  try {
+    return JSON.parse(readText(cleanupObservationPath));
+  } catch {
+    return {};
+  }
+}
+
+function addUsage(usage, name, usedAt) {
+  const item = usage.get(name) || { usage_count: 0, last_used: "" };
+  item.usage_count += 1;
+  if (usedAt && usedAt > item.last_used) item.last_used = usedAt;
+  usage.set(name, item);
+}
+
+function addUsageOverride(usage, name, override) {
+  const count = Number(override?.usage_count || 1);
+  const usedAt = String(override?.last_used || "").slice(0, 10);
+  const item = usage.get(name) || { usage_count: 0, last_used: "" };
+  item.usage_count += Math.max(1, count);
+  if (usedAt && usedAt > item.last_used) item.last_used = usedAt;
+  usage.set(name, item);
+}
+
 function usageMapFor(names) {
   const usage = new Map([...names].map((name) => [name, { usage_count: 0, last_used: "" }]));
   const records = readActionRecords();
@@ -210,11 +272,22 @@ function usageMapFor(names) {
     const usedAt = String(record.date || record.generated_at || "").slice(0, 10);
     for (const name of names) {
       if (!haystack.includes(name.toLowerCase())) continue;
-      const item = usage.get(name) || { usage_count: 0, last_used: "" };
-      item.usage_count += 1;
-      if (usedAt && usedAt > item.last_used) item.last_used = usedAt;
-      usage.set(name, item);
+      addUsage(usage, name, usedAt);
     }
+  }
+
+  for (const file of productionUsageFiles()) {
+    const text = readText(file);
+    const usedAt = path.basename(file).slice(0, 10);
+    for (const name of names) {
+      if (!productionUsagePattern(name).test(text)) continue;
+      addUsage(usage, name, usedAt);
+    }
+  }
+  const overrides = readUsageOverrides();
+  for (const [name, override] of Object.entries(overrides)) {
+    if (!names.has(name)) continue;
+    addUsageOverride(usage, name, override);
   }
   return usage;
 }
@@ -230,47 +303,75 @@ function lifecycleFor({ registry, role, usage, retired }) {
   return "dormant";
 }
 
-function cleanupProfile(skill) {
+function daysSince(time, generatedDate) {
+  if (!time) return 0;
+  return Math.floor((generatedDate.getTime() - time) / 86400000);
+}
+
+function dateTimeFromDateText(value) {
+  if (!value) return 0;
+  const date = new Date(`${String(value).slice(0, 10)}T00:00:00`);
+  return Number.isNaN(date.getTime()) ? 0 : date.getTime();
+}
+
+function observationStartTime(skill, observation) {
+  const baseline = dateTimeFromDateText(observation.baseline_observation_started_at);
+  if (!baseline) return skill.installedTime || 0;
+  return Math.max(baseline, skill.installedTime || baseline);
+}
+
+function cleanupProfile(skill, generatedDate, observation) {
   const reasons = [];
-  let score = 0;
   if (["current", "supporting", "governance"].includes(skill.lifecycle)) {
-    return { score: 0, candidate: false, reasons };
+    return { score: 0, candidate: false, reasons, observationStart: "" };
   }
-  if (skill.lifecycle === "retired") {
-    score += 70;
-    reasons.push("retired");
-  }
-  if (skill.lifecycle === "dormant") {
-    score += 35;
-    reasons.push("dormant");
-  }
-  if (!skill.usage_count) {
-    score += 25;
-    reasons.push("no observed usage");
-  }
-  if (!skill.hasEvals) {
-    score += 8;
-    reasons.push("no evals");
-  }
-  if (!skill.hasExamples) {
-    score += 8;
-    reasons.push("no examples");
-  }
-  if (skill.token_footprint_estimate >= 8000) {
-    score += 18;
-    reasons.push("large token footprint");
-  } else if (skill.token_footprint_estimate >= 4000) {
-    score += 10;
-    reasons.push("medium token footprint");
-  }
-  if (skill.hasScripts && !skill.usage_count) {
-    score += 10;
-    reasons.push("unused scripts");
-  }
+  const noUsage = !skill.usage_count;
+  const recommendedNow = new Set(observation.recommended_cleanup_now || []).has(skill.name);
+  const startTime = observationStartTime(skill, observation);
+  const observedDays = daysSince(startTime, generatedDate);
+  const observeDays = Number(observation.observe_days || CLEANUP_UNUSED_DAYS);
+  if (noUsage) reasons.push("no observed usage");
+  if (recommendedNow) reasons.push("recommended cleanup");
+  if (!recommendedNow && noUsage && observedDays < observeDays) reasons.push("in 30 day observation");
+  if (!recommendedNow && noUsage && observedDays >= observeDays) reasons.push("30 day observation expired");
+  const candidate = recommendedNow || (noUsage && observedDays >= observeDays);
   return {
-    score,
-    candidate: score >= 45,
+    score: candidate ? (recommendedNow ? 100 : 80) : 0,
+    candidate,
     reasons,
+    observationStart: startTime ? formatDateTime(new Date(startTime)) : "",
+    recommendationReason: observation.reason?.[skill.name] || "",
+  };
+}
+
+function cleanupGovernance(skill) {
+  const protectedSkill = skill.current
+    || /lane owner/i.test(skill.status || "")
+    || ["current", "supporting", "governance"].includes(skill.lifecycle);
+
+  if (protectedSkill) {
+    return {
+      cleanup_action: "keep",
+      cleanup_owner: "Skill Ops",
+      cleanup_reason: "protected current/supporting/governance skill",
+      replacement_skill: "",
+    };
+  }
+
+  if (skill.cleanup_candidate) {
+    return {
+      cleanup_action: "cleanup",
+      cleanup_owner: "Skill Ops",
+      cleanup_reason: skill.cleanup_recommendation_reason || "recommended cleanup or no usage after the 30-day observation window",
+      replacement_skill: "",
+    };
+  }
+
+  return {
+    cleanup_action: "keep",
+    cleanup_owner: "Skill Ops",
+    cleanup_reason: "no cleanup action recommended",
+    replacement_skill: "",
   };
 }
 
@@ -306,7 +407,7 @@ function retiredRisk(name, registry) {
   return /^guanlan-(daily-observation|business-brief|trend-report|copy-style|copy-style-qc)/.test(name);
 }
 
-function buildSkill(name, registryMap, usageMap) {
+function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
   const registry = registryMap.get(name);
   const storePath = path.join(storeDir, name);
   const projectPath = path.join(projectSkillDir, name);
@@ -335,7 +436,6 @@ function buildSkill(name, registryMap, usageMap) {
   const hasMemory = hasFileOrDir(projectPath, ["MEMORY.md"]) || hasFileOrDir(storePath, ["MEMORY.md"]);
   const hasReferences = hasFileOrDir(projectPath, ["references"]) || hasFileOrDir(storePath, ["references"]);
   const usage = usageMap.get(name) || { usage_count: 0, last_used: "" };
-  const footprint = tokenFootprint(projectExists ? projectPath : storePath);
   const issues = [];
 
   if (registry && !storeExists) issues.push({ key: "not-installed", label: "未安装", severity: "high" });
@@ -379,10 +479,10 @@ function buildSkill(name, registryMap, usageMap) {
     hasDeps: stats.hasDeps,
     hasTemplates: stats.hasTemplates,
     lifecycle: lifecycleFor({ registry, role, usage, retired: retiredRisk(name, registry) }),
+    installedAt: stats.installedAt,
+    installedTime: stats.installedTime,
     last_used: usage.last_used,
     usage_count: usage.usage_count,
-    token_footprint_estimate: footprint.estimate,
-    token_footprint_files: footprint.files,
     sizeKB: stats.sizeKB,
     fileCount: stats.fileCount,
     modifiedAt: stats.modifiedAt,
@@ -391,12 +491,19 @@ function buildSkill(name, registryMap, usageMap) {
     issueSeverity: issues.some((issue) => issue.severity === "high") ? "high" : issues.some((issue) => issue.severity === "medium") ? "medium" : issues.length ? "low" : "",
     issues,
   };
-  const cleanup = cleanupProfile(baseSkill);
-  return {
+  const cleanup = cleanupProfile(baseSkill, generatedDate, observation);
+  const withCleanup = {
     ...baseSkill,
     cleanup_score: cleanup.score,
     cleanup_candidate: cleanup.candidate,
     cleanup_reasons: cleanup.reasons,
+    cleanup_observation_start: cleanup.observationStart,
+    cleanup_recommendation_reason: cleanup.recommendationReason,
+  };
+  const governance = cleanupGovernance(withCleanup);
+  return {
+    ...withCleanup,
+    ...governance,
   };
 }
 
@@ -406,7 +513,11 @@ function summarize(skills) {
   const needsAction = skills.filter((skill) => skill.issues.length);
   const syncIssues = skills.filter((skill) => skill.issues.some((issue) => ["not-installed", "not-mirrored", "sync-drift"].includes(issue.key)));
   const cleanupQueue = skills.filter((skill) => skill.cleanup_candidate);
-  const tokenTotal = skills.reduce((sum, skill) => sum + (Number(skill.token_footprint_estimate) || 0), 0);
+  const cleanupActions = {};
+  for (const skill of skills) {
+    const key = skill.cleanup_action || "unknown";
+    cleanupActions[key] = (cleanupActions[key] || 0) + 1;
+  }
   return {
     total: skills.length,
     guanlan: skills.filter((skill) => skill.isGuanlan).length,
@@ -417,42 +528,50 @@ function summarize(skills) {
     dormant: skills.filter((skill) => skill.lifecycle === "dormant").length,
     retired: skills.filter((skill) => skill.lifecycle === "retired").length,
     cleanupQueue: cleanupQueue.length,
-    tokenFootprintEstimate: tokenTotal,
+    cleanupActions,
     evalCoverage: current.length ? Math.round(current.filter((skill) => skill.hasEvals).length / current.length * 100) : 0,
     exampleCoverage: current.length ? Math.round(current.filter((skill) => skill.hasExamples).length / current.length * 100) : 0,
   };
 }
 
 const registry = parseRegistry(registryPath);
+const cleanupObservation = readCleanupObservation();
 const names = new Set([...dirNames(storeDir), ...dirNames(projectSkillDir), ...registry.keys()]);
 const usageMap = usageMapFor(names);
-const skills = [...names].map((name) => buildSkill(name, registry, usageMap)).sort((a, b) => {
+const generatedAt = new Date();
+const skills = [...names].map((name) => buildSkill(name, registry, usageMap, generatedAt, cleanupObservation)).sort((a, b) => {
   if (a.current !== b.current) return a.current ? -1 : 1;
   if (a.isGuanlan !== b.isGuanlan) return a.isGuanlan ? -1 : 1;
   return a.name.localeCompare(b.name, "en");
 });
 const cleanupQueue = [...skills]
   .filter((skill) => skill.cleanup_candidate)
-  .sort((a, b) => b.cleanup_score - a.cleanup_score || b.token_footprint_estimate - a.token_footprint_estimate || a.name.localeCompare(b.name, "en"))
-  .slice(0, 30)
+  .sort((a, b) => b.cleanup_score - a.cleanup_score || (a.usage_count || 0) - (b.usage_count || 0) || a.name.localeCompare(b.name, "en"))
   .map((skill) => ({
     name: skill.name,
     lifecycle: skill.lifecycle,
     cleanup_score: skill.cleanup_score,
     cleanup_reasons: skill.cleanup_reasons,
+    cleanup_action: skill.cleanup_action,
+    cleanup_owner: skill.cleanup_owner,
+    cleanup_reason: skill.cleanup_reason,
+    replacement_skill: skill.replacement_skill,
+    installedAt: skill.installedAt,
+    cleanup_observation_start: skill.cleanup_observation_start,
     usage_count: skill.usage_count,
     last_used: skill.last_used,
-    token_footprint_estimate: skill.token_footprint_estimate,
   }));
 
 const payload = {
   meta: {
-    generatedAt: formatDateTime(new Date()),
-    generatedDate: formatDate(new Date()),
+    generatedAt: formatDateTime(generatedAt),
+    generatedDate: formatDate(generatedAt),
     storeDir,
     projectSkillDir,
     registryPath,
+    cleanupObservationPath,
     version: readSkillStoreVersion(skillOpsPaths),
+    cleanupPolicy: CLEANUP_POLICY,
     summary: summarize(skills),
   },
   cleanupQueue,

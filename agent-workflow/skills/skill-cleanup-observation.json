@@ -1,0 +1,38 @@
+{
+  "baseline_observation_started_at": "2026-06-13",
+  "observe_days": 30,
+  "recommended_cleanup_now": [
+    "agent-mail",
+    "arxiv-watcher",
+    "baoyu-image-gen",
+    "baoyu-xhs-images",
+    "content-ops",
+    "content-repurposer",
+    "fbs-bookwriter",
+    "frontend-dev",
+    "github-ai-trends",
+    "ima-skills",
+    "minimax-docx",
+    "minimax-pdf",
+    "minimax-xlsx",
+    "note-organizer",
+    "ppt-slideshow"
+  ],
+  "reason": {
+    "agent-mail": "Dormant agent email integration with no current Guanlan dependency.",
+    "arxiv-watcher": "Overlaps with arxiv-reader and research entrypoints.",
+    "baoyu-image-gen": "Deprecated by baoyu-imagine.",
+    "baoyu-xhs-images": "Deprecated by baoyu-imagine.",
+    "content-ops": "Overlaps with content-factory.",
+    "content-repurposer": "Overlaps with content-factory.",
+    "fbs-bookwriter": "Large store-only writing system with no current Guanlan dependency.",
+    "frontend-dev": "Overlaps with frontend-design and project UI rules.",
+    "github-ai-trends": "Overlaps with github-trending-cn.",
+    "ima-skills": "Store-only dormant integration with no current Guanlan dependency.",
+    "minimax-docx": "Overlaps with bundled Documents capability.",
+    "minimax-pdf": "Overlaps with bundled Documents and nano-pdf capabilities.",
+    "minimax-xlsx": "Overlaps with bundled Spreadsheets capability.",
+    "note-organizer": "Dormant personal Joplin tooling with no Guanlan dependency.",
+    "ppt-slideshow": "Overlaps with bundled Presentations capability."
+  }
+}

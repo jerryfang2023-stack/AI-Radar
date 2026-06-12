@@ -1,32 +1,47 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T15:53:07.674Z",
-  "date": "2026-06-12",
-  "action": "Column monitor skills",
-  "action_status": "current",
+  "generated_at": "2026-06-12T18:36:07.461Z",
+  "date": "2026-06-13",
+  "action": "Skill Store v1.3.0 cleanup operations",
+  "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Upgraded Skill Store to v1.1.0 with lifecycle fields, observed usage counts, static token footprint estimates, cleanup scoring, cleanup queue, and lifecycle/token/usage page views.",
+  "summary": "Released Skill Store v1.3.0 with 30-day cleanup observation, manual add-to-cleanup, mark-common recovery, trash staging, permanent trash deletion, and local ops service.",
   "contexts": [],
-  "changed_files": [],
-  "outputs": [
+  "changed_files": [
     "agent-workflow/skills/skill-store-version.json",
     "agent-workflow/tools/build-skill-store-dashboard.mjs",
-    "01-SiteV2/site/assets/local-skill-store.js",
+    "agent-workflow/tools/skill-store-ops-server.mjs",
+    "agent-workflow/skills/skill-cleanup-observation.json",
+    "agent-workflow/skills/skill-usage-overrides.json",
     "01-SiteV2/site/local-skill-store.html",
-    "01-SiteV2/site/data/local-skill-store-data.js"
+    "01-SiteV2/site/assets/local-skill-store.js",
+    "01-SiteV2/site/data/local-skill-store-data.js",
+    "01-SiteV2/site/operations-console.html",
+    "context/version-ledger.md",
+    "package.json"
+  ],
+  "outputs": [
+    "Skill Store v1.3.0",
+    "operations-console Skill Store cleanup management",
+    "GitHub Pages deploy after push"
   ],
   "checks": [
-    "npm run audit:skills",
+    "npm run build:skill-store-dashboard",
+    "npm run check:skill-ops",
     "node --check Skill Store scripts",
-    "Playwright local Skill Store render and detail modal check",
-    "generated data missingFields=0",
+    "Playwright embedded Skill Store checks",
     "git diff --check"
   ],
   "issues": [],
   "risks": [],
-  "lessons": [],
+  "lessons": [
+    "Skill cleanup needs reversible operator controls: mark common",
+    "manual cleanup",
+    "trash staging",
+    "and permanent deletion must stay separate."
+  ],
   "reusable_rules": [],
   "retired_flags": [],
   "notes": []
