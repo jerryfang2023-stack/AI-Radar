@@ -8,6 +8,8 @@ const firstLinePath = path.join(siteDataDir, "follow-builders-daily.json");
 const communityPath = path.join(siteDataDir, "community-intelligence.json");
 const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
+const topicCenterHermesJsonPath = path.join(siteDataDir, "topic-center-hermes.json");
+const topicCenterHermesMdPath = path.join(siteDataDir, "topic-center-hermes.md");
 const topicCenterVersion = "V2.0.0-boss-topic-engine";
 
 const engines = [
@@ -493,6 +495,99 @@ function sourceCounts(topics) {
   return Object.fromEntries(engines.map((engine) => [engine.id, topics.filter((topic) => topic.sourceId === engine.id).length]));
 }
 
+function compactEvidence(items) {
+  return list(items).map((item) => ({
+    kind: item.kind || "",
+    title: item.title || "",
+    source: item.source || "",
+    url: item.url || "",
+    note: item.note || "",
+  }));
+}
+
+function compactTopic(topic, index) {
+  return {
+    rank: index + 1,
+    id: topic.id,
+    score: topic.score,
+    grade: topic.grade,
+    sourceId: topic.sourceId,
+    sourceName: topic.sourceName,
+    priority: topic.priority,
+    title: topic.spreadTitle || topic.title,
+    originalTitle: topic.title,
+    core: topic.core,
+    bossPain: topic.bossPain,
+    moneyLine: topic.moneyLine,
+    oldFrame: topic.oldFrame,
+    newFrame: topic.newFrame,
+    actionHint: topic.actionHint,
+    evidenceBoundary: topic.evidenceBoundary,
+    scoreBreakdown: topic.scoreBreakdown || {},
+    angles: list(topic.angles).map((angle) => ({
+      title: angle.title || "",
+      note: angle.note || "",
+    })),
+    sources: {
+      businessSignals: compactEvidence(topic.sourceInputs?.businessSignals),
+      firstLineViewpoints: compactEvidence(topic.sourceInputs?.viewpoints),
+      communityIntelligence: compactEvidence(topic.sourceInputs?.communityItems),
+    },
+  };
+}
+
+function buildHermesTopicTable(data, topics) {
+  return {
+    meta: {
+      version: data.meta.version,
+      date: data.meta.date,
+      generatedAt: data.meta.generatedAt,
+      source: "topic-center.json",
+      rule: "hermes_all_topic_table",
+      readMode: "all_topics",
+      topicCount: topics.length,
+      githubPath: "01-SiteV2/site/data/topic-center-hermes.json",
+      markdownPath: "01-SiteV2/site/data/topic-center-hermes.md",
+      pagesJsonPath: "/data/topic-center-hermes.json",
+      pagesMarkdownPath: "/data/topic-center-hermes.md",
+    },
+    topics: topics.map(compactTopic),
+  };
+}
+
+function mdCell(value) {
+  return text(value).replace(/\s+/gu, " ").replace(/\|/gu, "/");
+}
+
+function topicTableMarkdown(payload) {
+  const rows = payload.topics.map((topic) => [
+    topic.rank,
+    topic.score,
+    topic.sourceName,
+    topic.title,
+    topic.bossPain,
+    topic.moneyLine,
+    topic.actionHint,
+  ].map(mdCell));
+  return [
+    `# Hermes Topic Table - ${payload.meta.date}`,
+    "",
+    `- version: ${payload.meta.version}`,
+    `- read_mode: ${payload.meta.readMode}`,
+    `- topic_count: ${payload.meta.topicCount}`,
+    `- json: ${payload.meta.githubPath}`,
+    "",
+    "| Rank | Score | Type | Topic | Boss Pain | Money Line | Action |",
+    "|---:|---:|---|---|---|---|---|",
+    ...rows.map((row) => `| ${row.join(" | ")} |`),
+    "",
+    "## Evidence Boundary",
+    "",
+    "Business signals are the factual base. First-line viewpoints and community intelligence are leads for demand, scenes, and spreadability; do not treat them as verified industry facts without separate source-first verification.",
+    "",
+  ].join("\n");
+}
+
 function main() {
   const businessData = readJson(businessSignalsPath, {});
   const firstLineData = readJson(firstLinePath, {});
@@ -549,10 +644,14 @@ function main() {
       byEngine: Object.fromEntries(engines.map((engine) => [engine.id, topics.filter((topic) => topic.sourceId === engine.id)])),
     },
   };
+  const hermesTopicTable = buildHermesTopicTable(data, topics);
 
   writeJson(topicCenterJsonPath, data);
   fs.writeFileSync(topicCenterJsPath, `window.WaveSightTopicCenter = ${JSON.stringify(data, null, 2)};\n`, "utf8");
+  writeJson(topicCenterHermesJsonPath, hermesTopicTable);
+  fs.writeFileSync(topicCenterHermesMdPath, topicTableMarkdown(hermesTopicTable), "utf8");
   console.log(`topic-center generated: ${topics.length} boss topics -> ${path.relative(root, topicCenterJsonPath)}`);
+  console.log(`hermes topic table -> ${path.relative(root, topicCenterHermesJsonPath)}`);
   console.log(JSON.stringify(data.meta.inputCounts));
 }
 

@@ -36,6 +36,23 @@ Primary outputs:
 - `agent-workflow/reports/daily-supervision-report-latest.json`
 - `agent-workflow/reports/daily-supervision-report-latest.md`
 
+## Topic Center Input
+
+Hermes should read the complete boss-topic table from GitHub, not a Top 3 summary:
+
+```text
+01-SiteV2/site/data/topic-center-hermes.json
+01-SiteV2/site/data/topic-center-hermes.md
+```
+
+The JSON contract is `readMode: all_topics`. Hermes should consume every item in `topics[]`, preserving `rank`, `score`, `sourceName`, `title`, `bossPain`, `moneyLine`, `actionHint`, and `evidenceBoundary`.
+
+When the Hermes Daily Brief is generated, the same complete topic table is also embedded under:
+
+```text
+agent-workflow/reports/<date>-hermes-daily-brief.json -> topic_center.topics[]
+```
+
 When the report status is `failed` or `manual_required`, the same command must create or update one open Hermes inbox item per affected lane under:
 
 ```text
