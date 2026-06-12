@@ -108,6 +108,7 @@ If an old rule conflicts with V3.3, delete or rebuild it instead of preserving c
 | `context/08-v3-3-automation.md` | V3.3 GitHub / site / Obsidian sync automation loop |
 | `context/09-v3-3-current-action-index.md` | V3.3.5 current action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
+| `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision and Codex repair handoff |
 | `context/context-index.md` | context router |
 
 ## Current Task Routes
@@ -159,6 +160,23 @@ Field discipline:
 - Keep auxiliary, diagnostic, operational, routing, threshold, gate, and backend-only fields in the backend unless the user confirms that the field has high commercial value for the frontstage.
 - Before adding a new visible field, first consider whether the same content can be presented by merging, renaming, tightening, or improving an existing field.
 - A new visible field should have clear commercial judgment value, source-backed content, and a distinct role that existing fields cannot cover.
+
+### Hermes Inbox / Repair Work
+
+Read:
+
+1. `context/11-hermes-daily-supervision-instructions.md`
+2. `context/10-v3-3-experience-automation.md`
+3. open Hermes inbox items with `npm run inbox:hermes -- --status=open --latest=false`
+4. the linked `report_path` and failed gate or lane script
+
+Rules:
+
+- Treat Hermes inbox items as the active repair queue for repeated monitoring, publishing, and data-quality failures.
+- Repair the smallest script, rule, gate, eval, memory, or data build path that caused the incident.
+- Do not close a recurring issue by only editing same-day data.
+- Do not mark a Hermes inbox item resolved until validation and a prevention artifact are recorded.
+- Close resolved items with `npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>`.
 
 ## Conflict Order
 
