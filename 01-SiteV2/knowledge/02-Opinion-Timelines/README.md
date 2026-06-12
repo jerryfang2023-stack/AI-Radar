@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 41
-opinion_count: 401
-generated_at: 2026-06-12T05:31:31.665Z
+opinion_count: 414
+generated_at: 2026-06-12T09:14:26.995Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,15 +11,16 @@ generated_at: 2026-06-12T05:31:31.665Z
 
 ## 人物
 
-- [Garry Tan](people/garry-tan/README.md) - 31 条 - 最新 2026-06-11
+- [Garry Tan](people/garry-tan/README.md) - 34 条 - 最新 2026-06-12
+- [Peter Yang](people/peter-yang/README.md) - 33 条 - 最新 2026-06-12
+- [Swyx](people/swyx/README.md) - 25 条 - 最新 2026-06-12
+- [Dan Shipper](people/dan-shipper/README.md) - 19 条 - 最新 2026-06-12
+- [Aaron Levie](people/aaron-levie/README.md) - 17 条 - 最新 2026-06-12
+- [Amjad Masad](people/amjad-masad/README.md) - 11 条 - 最新 2026-06-12
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 21 条 - 最新 2026-06-11
-- [Dan Shipper](people/dan-shipper/README.md) - 18 条 - 最新 2026-06-11
-- [Aaron Levie](people/aaron-levie/README.md) - 16 条 - 最新 2026-06-11
 - [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 13 条 - 最新 2026-06-11
 - [Josh Woodward](people/josh-woodward/README.md) - 11 条 - 最新 2026-06-11
-- [Amjad Masad](people/amjad-masad/README.md) - 8 条 - 最新 2026-06-11
 - [Boris Cherny](people/boris-cherny/README.md) - 5 条 - 最新 2026-06-11
-- [Peter Yang](people/peter-yang/README.md) - 30 条 - 最新 2026-06-10
 - [Claude](people/claude/README.md) - 15 条 - 最新 2026-06-10
 - [Zara Zhang](people/zara-zhang/README.md) - 14 条 - 最新 2026-06-10
 - [Guillermo Rauch](people/guillermo-rauch/README.md) - 13 条 - 最新 2026-06-10
@@ -32,7 +33,6 @@ generated_at: 2026-06-12T05:31:31.665Z
 - [Nan Yu](people/nan-yu/README.md) - 2 条 - 最新 2026-06-10
 - [Tigera Blog (Calico / AI Security)](people/tigera-blog-calico-ai-security/README.md) - 2 条 - 最新 2026-06-10
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 2 条 - 最新 2026-06-10
-- [Swyx](people/swyx/README.md) - 23 条 - 最新 2026-06-09
 - [Aditya Agarwal](people/aditya-agarwal/README.md) - 10 条 - 最新 2026-06-09
 - [Alex Albert](people/alex-albert/README.md) - 2 条 - 最新 2026-06-09
 - [Andrej Karpathy](people/andrej-karpathy/README.md) - 2 条 - 最新 2026-06-09
