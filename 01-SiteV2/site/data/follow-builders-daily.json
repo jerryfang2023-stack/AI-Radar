@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-06-11T11:14:55.667Z",
+    "generatedAt": "2026-06-12T01:23:41.752Z",
     "feedGeneratedAt": "2026-06-11T08:01:30.493Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 23,
-    "remarks": 51,
-    "podcasts": 3,
+    "remarks": 52,
+    "podcasts": 1,
     "blogsBuilt": 6,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 18,
     "rawTweets": 37
   },
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Claude",
@@ -393,18 +393,18 @@
       "replies": 0
     },
     {
-      "id": "https://www.bensbites.com/p/build-tools-to-build-more",
+      "id": "https://www.dataiku.com/stories/blog/discover-dataiku-cobuild",
       "source": "blog",
-      "name": "Ben's Bites AI Newsletter",
-      "handle": "bensbites.com",
-      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
-      "text": "Build tools, to build more",
-      "content": "Codex Sites and open models",
-      "contentTranslation": "Codex网站和开放模型",
+      "name": "Dataiku Blog",
+      "handle": "dataiku.com",
+      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
+      "text": "Discover Dataiku Cobuild: the queue stops here",
+      "content": "You've been in this meeting before.",
+      "contentTranslation": "你以前参加过这个会议。",
       "contentTranslationStatus": "translated",
-      "translation": "构建工具，是为了构建更多东西",
+      "translation": "探索Dataiku Cobuild ：排队等候",
       "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
+      "translationMethod": "mymemory",
       "topic": "产品与创业",
       "formalTags": [
         {
@@ -424,9 +424,87 @@
         }
       ],
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Thu, 04 Jun 2026 13:03:42 GMT",
-      "date": "Thu, 04 Ju",
-      "url": "https://www.bensbites.com/p/build-tools-to-build-more",
+      "createdAt": "Thu, 11 Jun 2026 13:06:11 GMT",
+      "date": "Thu, 11 Ju",
+      "url": "https://www.dataiku.com/stories/blog/discover-dataiku-cobuild",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.bensbites.com/p/new-claude-model-fable",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "New Claude model - Fable",
+      "content": "everyone's building with it.",
+      "contentTranslation": "每个人都在用它建造。",
+      "contentTranslationStatus": "translated",
+      "translation": "新克劳德模型-寓言",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "formalTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "Thu, 11 Jun 2026 13:03:20 GMT",
+      "date": "Thu, 11 Ju",
+      "url": "https://www.bensbites.com/p/new-claude-model-fable",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-06-11",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Dario Amodei policy 🏛️, DiffusionGemma ⚡, WhatsApp to unblock bots 🤖",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Dario Amodei政策🏛️、DiffusionGemma⚡、WhatsApp解锁机器人 🤖",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "date": "Thu, 11 Ju",
+      "url": "https://tldr.tech/ai/2026-06-11",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -471,16 +549,16 @@
       "replies": 0
     },
     {
-      "id": "https://www.dataiku.com/stories/blog/alteryx-data-analytics-alternatives",
+      "id": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything",
       "source": "blog",
-      "name": "Dataiku Blog",
-      "handle": "dataiku.com",
-      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
-      "text": "Alteryx data analytics in 2026: strengths, limitations, and alternatives",
-      "content": "In our view, Alteryx built its reputation on a simple promise: Let business analysts do data work that used to require SQL, Python, or a request to IT. For years, that promise held. Drag-and-drop workflows replaced manual spreadsheet processes. Teams that waited weeks for data engineerin",
-      "contentTranslation": "我们认为， Alteryx的声誉建立在一个简单的承诺之上：让业务分析师做过去需要SQL、Python或IT请求的数据工作。多年来，这个承诺一直保持着。拖放工作流取代了手动电子表格流程。等待数据工程师数周的团队",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Claude Fable is relentlessly proactive",
+      "content": "After two days of experience with Claude Fable 5 I think the best way to describe it is relentlessly proactive . It knows a whole lot of tricks and it will deploy pretty much any of them to get to its goal. <p",
+      "contentTranslation": "在经历了两天的Claude Fable 5之后，我认为最好的描述方式是坚持不懈地积极主动。它知道很多技巧，它将部署几乎任何一个技巧来实现其目标。< p",
       "contentTranslationStatus": "translated",
-      "translation": "2026年Alteryx数据分析：优势、局限性和替代方案",
+      "translation": "克劳德·法布尔（ Claude Fable ）无情地积极主动",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -502,48 +580,9 @@
         }
       ],
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Fri, 05 Jun 2026 14:30:08 GMT",
-      "date": "Fri, 05 Ju",
-      "url": "https://www.dataiku.com/stories/blog/alteryx-data-analytics-alternatives",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://tldr.tech/ai/2026-06-05",
-      "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "Anthropic Oceanus 泄露、ChatGPT Dreaming 与递归式自我改进",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Fri, 05 Jun 2026 00:00:00 GMT",
-      "date": "Fri, 05 Ju",
-      "url": "https://tldr.tech/ai/2026-06-05",
+      "createdAt": "2026-06-11T23:35:17+00:00",
+      "date": "2026-06-11",
+      "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -691,6 +730,45 @@
       "likes": 177,
       "retweets": 19,
       "replies": 26
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude",
+      "content": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude Big scoop for Maxwell Zeff at Wired: “We’re changing Fab",
+      "contentTranslation": "可能“破坏”AI研究人员在Wired为Maxwell Zeff使用Claude Big scoop的人类后退政策： “我们正在改变Fab",
+      "contentTranslationStatus": "translated",
+      "translation": "使用克劳德“破坏”AI研究人员的人择后退政策",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-11T03:45:49+00:00",
+      "date": "2026-06-11",
+      "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
     },
     {
       "id": "2064916544417829027",
@@ -2008,71 +2086,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
-      "content": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy Charity Majors neatly captures the dynamic between AI enthusiasts and AI skeptics, both of whom are try",
-      "contentTranslation": "AI爱好者正在与时间赛跑，AI怀疑论者正在与熵慈善专业赛跑，他们巧妙地捕捉到AI爱好者和AI怀疑论者之间的动态，他们都在尝试",
-      "contentTranslationStatus": "translated",
-      "translation": "AI 乐观派在与时间赛跑，AI 怀疑派在与熵赛跑",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-04T23:55:27+00:00",
-      "date": "2026-06-04",
-      "url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Latent Space",
-      "title": "🔬ESM: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
-      "url": "https://www.latent.space/p/esmfold2",
-      "publishedAt": "Wed, 27 May 2026 17:46:16 GMT",
-      "excerpt": "Editor’s note: In our first BioHub pod with Priscilla and Mark they discussed their acquisition of EvoScale, led by Alex Rives, who is now Head of Science at BioHub. With ESM-1 they trained language models on millions of protein sequences drawn from across life, with a simple “next token” objective: predict the amino acids that have been randomly masked out, based on the context of the rest of the sequence. But they soon found that these models also learned biological structure and function, including properties the model had never been explicitly s…"
-    },
-    {
-      "source": "podcast",
       "name": "AI & I by Every",
-      "title": "We Automated Everything With AI and Tripled Our Headcount",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Automated-Everything-With-AI-and-Tripled-Our-Headcount-e3jvmqf",
-      "publishedAt": "Wed, 27 May 2026 16:28:59 GMT",
-      "excerpt": "Dan Shipper runs one of the most AI-native companies today. Every has agents embedded in nearly every workflow—“if you swing a stick in our Slack, you're as likely to hit a human as an agent,” he says. And yet the company has grown from four people to 30 since GPT-3 came out, and is still hiring.Why does Dan believe there's more human work to do than ever?In a format flip for AI & I, Every's COO Brandon Gell turns the tables and interviews Dan about his latest essay, “After Automation”—an 8,000-word argument for why rising automation doesn't eliminate demand for human work, it increases it. The thesis: AI makes yesterday's expert competence cheap and widely available, which floods every field with output that's close but not quite right—and that creates more demand for the humans who can take it the rest of the way.Dan talked with Brandon about the paradox at the heart of a…"
+      "title": "How Anthropic Uses Claude Fable 5 With Mike Krieger",
+      "url": "https://www.youtube.com/watch?v=XWpTgCvgYaE",
+      "publishedAt": "2026-06-10T17:27:38.000Z",
+      "excerpt": ""
     }
   ]
 }
