@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-13 02:35:44",
+    "generatedAt": "2026-06-13 03:08:43",
     "generatedDate": "2026-06-13",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
@@ -9,10 +9,10 @@ window.WaveSightLocalSkillStore = {
     "version": {
       "schema_version": 1,
       "name": "Guanlan Skill Store",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "release_date": "2026-06-13",
-      "stage": "Cleanup operations and observation controls",
-      "scope": "Operations-console Skill Store dashboard with embedded catalog/cleanup views, governed current skills, usage overrides, 30-day cleanup observation, manual add-to-cleanup and mark-common actions, trash staging, permanent trash deletion, local Skill Store ops service, .skill-store sync, and Daily Loop Skill Ops check.",
+      "stage": "Cleanup operations display copy fix",
+      "scope": "Operations-console Skill Store dashboard with clearer catalog metric labels, search placeholder wording, and simplified catalog sort/group controls, while preserving embedded catalog/cleanup views, governed current skills, usage overrides, 30-day cleanup observation, manual add-to-cleanup and mark-common actions, trash staging, permanent trash deletion, local Skill Store ops service, .skill-store sync, and Daily Loop Skill Ops check.",
       "upgrade_policy": {
         "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
         "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
@@ -3203,7 +3203,7 @@ window.WaveSightLocalSkillStore = {
       "installedAt": "2026-04-27 22:30:43",
       "installedTime": 1777300243554.6592,
       "last_used": "2026-06-13",
-      "usage_count": 5,
+      "usage_count": 6,
       "sizeKB": 328,
       "fileCount": 5,
       "modifiedAt": "2026-05-25 15:06:12",
@@ -3883,8 +3883,8 @@ window.WaveSightLocalSkillStore = {
       "lifecycle": "candidate",
       "installedAt": "2026-04-25 21:34:30",
       "installedTime": 1777124070938.5554,
-      "last_used": "2026-06-12",
-      "usage_count": 1,
+      "last_used": "2026-06-13",
+      "usage_count": 2,
       "sizeKB": 1,
       "fileCount": 2,
       "modifiedAt": "2026-04-27 23:14:02",

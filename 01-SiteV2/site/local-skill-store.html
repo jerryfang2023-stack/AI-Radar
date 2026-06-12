@@ -520,22 +520,16 @@
     </section>
 
     <section class="controls" data-controls>
-      <input type="search" data-search placeholder="搜索 skill、lane、gate、失败学习或路径">
+      <input type="search" data-search placeholder="搜索 skill 名称、分类或描述">
       <select data-sort>
-        <option value="priority">按治理优先级</option>
+        <option value="priority">推荐排序</option>
         <option value="name">按名称</option>
-        <option value="modified">按最近修改</option>
-        <option value="size">按体积</option>
-        <option value="files">按文件数</option>
+        <option value="modified">按最近更新</option>
         <option value="usage">按使用次数</option>
-        <option value="cleanup">按清理优先级</option>
       </select>
       <select data-group>
-        <option value="lane">按 lane 分组</option>
-        <option value="lifecycle">按生命周期分组</option>
-        <option value="cleanup_action">按清理动作分组</option>
+        <option value="lane">按领域分组</option>
         <option value="status">按状态分组</option>
-        <option value="sync">按同步状态分组</option>
         <option value="category">按类别分组</option>
       </select>
       <select data-cleanup-filter hidden>

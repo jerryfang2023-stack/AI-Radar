@@ -207,7 +207,7 @@
     const versionText = version.version ? `Skill Store v${version.version}` : "Skill Store";
     const quality = `${summary.evalCoverage || 0}% / ${summary.exampleCoverage || 0}%`;
     const metrics = [
-      ["当前", summary.current || 0],
+      ["在用 Skill", summary.current || 0],
       ["生产入口", summary.laneOwners || 0],
       ["待处理", summary.needsAction || 0],
       summary.syncIssues ? ["同步问题", summary.syncIssues] : ["休眠", summary.dormant || 0],
