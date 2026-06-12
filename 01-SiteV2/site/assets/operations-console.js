@@ -449,7 +449,7 @@
     }
     const dateSelect = $("[data-topic-date]");
     if (dateSelect && !dateSelect.dataset.ready) {
-      dateSelect.innerHTML = topicDates.map((date, index) => `<option value="${html(date)}">${html(index === 0 ? `${date} 最新` : date)}</option>`).join("");
+      dateSelect.innerHTML = topicDates.map((date) => `<option value="${html(date)}">${html(date)}</option>`).join("");
       dateSelect.value = state.topicDate;
       dateSelect.dataset.ready = "1";
     }
