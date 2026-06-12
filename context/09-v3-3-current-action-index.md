@@ -85,7 +85,7 @@ Reads:
 - `context/05-daily-monitoring.md`.
 - `context/07-v3-intelligence-generation-rules.md`.
 - `context/08-v3-3-automation.md`.
-- `skills/guanlan-business-signals-monitor/SKILL.md`.
+- `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md`.
 
 Runs:
 
@@ -234,7 +234,7 @@ Primary route:
 
 Reads:
 
-- `skills/guanlan-first-line-viewpoints-monitor/SKILL.md`.
+- `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md`.
 
 Runs:
 
@@ -351,7 +351,7 @@ Primary route:
 
 Reads:
 
-- `skills/guanlan-community-intelligence-monitor/SKILL.md`.
+- `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md`.
 
 Runs:
 

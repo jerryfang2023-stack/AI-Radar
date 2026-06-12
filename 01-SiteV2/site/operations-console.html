@@ -370,7 +370,7 @@
       white-space: nowrap;
     }
     .topic-tabs button[aria-current="true"] { background: linear-gradient(135deg, rgba(200, 167, 102, .25), rgba(255, 253, 248, .76)); color: var(--ink); border-color: rgba(200, 167, 102, .62); }
-    .topic-tools { display: grid; grid-template-columns: minmax(420px, 1fr) 180px 160px; gap: 10px; margin-bottom: 12px; }
+    .topic-tools { display: grid; grid-template-columns: 150px minmax(360px, 1fr) 180px 160px; gap: 10px; margin-bottom: 12px; }
     .topic-list { display: grid; gap: 10px; }
     .topic-item { border: 1px solid var(--line); border-radius: 10px; background: linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,253,248,.68)); overflow: hidden; }
     .topic-summary {
@@ -528,6 +528,7 @@
         </header>
         <div class="topic-tabs" data-topic-tabs></div>
         <div class="topic-tools">
+          <select data-topic-date></select>
           <input type="search" data-topic-search placeholder="搜索标题、问题、判断">
           <select data-topic-type></select>
           <select data-topic-sort>
