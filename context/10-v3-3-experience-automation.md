@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-experience-automation
-last_updated: 2026-06-11
+last_updated: 2026-06-12
 use_when:
   - record development action
   - summarize execution lessons
@@ -28,6 +28,18 @@ Generate a daily retrospective:
 
 ```powershell
 node agent-workflow/tools/write-action-retrospective.mjs --date=<YYYY-MM-DD>
+```
+
+Read open Hermes repair requests:
+
+```powershell
+npm run inbox:hermes -- --status=open --latest=false
+```
+
+Close a repaired Hermes request:
+
+```powershell
+npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
 ```
 
 ## Output Files
@@ -102,12 +114,13 @@ Each daily retrospective should answer:
 Use this loop after every real production failure:
 
 1. `supervise:daily` identifies the failed lane, gate, report path, and data state.
-2. Hermes writes a compact repair request under `agent-workflow/inbox/hermes-to-codex/`.
+2. Hermes automatically creates or updates a compact repair request under `agent-workflow/inbox/hermes-to-codex/`.
 3. Codex repairs the smallest script, rule, gate, or data build path.
 4. Codex records the repair action with `record:action`, including issues, risks, checks, and reusable lessons.
 5. Codex reruns the exact failed gate or the smallest relevant validation.
-6. Weekly health reads daily supervision reports, Hermes inbox incidents, and action logs together.
-7. If the same incident category repeats twice in the weekly window, promote the lesson into one of:
+6. Codex closes the Hermes inbox item only after recording the validation and prevention artifact.
+7. Weekly health reads daily supervision reports, Hermes inbox incidents, and action logs together.
+8. If the same incident category repeats twice in the weekly window, promote the lesson into one of:
    - a stricter gate;
    - a monitor skill eval;
    - durable `MEMORY.md` for the responsible monitor skill;

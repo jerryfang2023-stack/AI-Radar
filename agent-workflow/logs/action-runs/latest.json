@@ -1,33 +1,38 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T05:27:09.826Z",
+  "generated_at": "2026-06-12T05:51:12.224Z",
   "date": "2026-06-12",
-  "action": "Daily business-signal production",
+  "action": "Hermes feedback loop automation",
   "action_status": "current",
   "record_level": "required",
-  "trigger": "codex",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Promoted repeated Top10 missing incidents into Business Signals eval and memory",
-  "contexts": [
-    "agent-workflow/reports/2026-06-12-weekly-health.md",
-    "skills/guanlan-business-signals-monitor/evals/business-signals-monitor-evals.md",
-    "skills/guanlan-business-signals-monitor/MEMORY.md"
-  ],
+  "summary": "Connected daily supervision failures to Hermes inbox, prioritized reading, and controlled resolution.",
+  "contexts": [],
   "changed_files": [
-    "skills/guanlan-business-signals-monitor/evals/business-signals-monitor-evals.md",
-    "skills/guanlan-business-signals-monitor/MEMORY.md"
+    "agent-workflow/tools/write-daily-supervision-report.mjs",
+    "agent-workflow/tools/read-hermes-inbox.mjs",
+    "agent-workflow/tools/resolve-hermes-inbox.mjs",
+    "AGENTS.md",
+    "context/10-v3-3-experience-automation.md",
+    "context/11-hermes-daily-supervision-instructions.md",
+    "package.json",
+    "agent-workflow/inbox/hermes-to-codex/TEMPLATE.md"
   ],
   "outputs": [],
   "checks": [
-    "weekly health repeated category business_signals_top10_missing"
+    "node --check scripts",
+    "npm run inbox:hermes prompt",
+    "npm run resolve:hermes dry-run"
   ],
   "issues": [],
   "risks": [],
   "lessons": [
-    "frontstageSelection can be healthy while public top10 contract is missing"
+    "Failures should create a repair item",
+    "and closure needs validation plus prevention."
   ],
   "reusable_rules": [
-    "Business Signals public JSON must expose top10 length 10 whenever active-date frontstageSelection selects 10 cards"
+    "Codex should inspect open Hermes inbox before monitoring repairs."
   ],
   "retired_flags": [],
   "notes": []
