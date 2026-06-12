@@ -1,0 +1,250 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-070",
+  "title": "引导大语言模型？实际上，稀疏自编码器可以胜过简单基线",
+  "original_url": "https://x.com/rohanpaul_ai/status/2064920559214067801",
+  "canonical_url": "https://x.com/rohanpaul_ai/status/2064920559214067801",
+  "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-11T04:00:00.000Z",
+  "collected_at": "2026-06-12T03:53:39.275Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nThe paper argues that sparse autoencoders may not be bad steering tools after all, and much of the earlier failure may have come from choosing and naming the wrong features.\nThe problem is that earlier work made sparse autoencoders look weak because their features were labelled atch what those features actually cause inside the model.\nA sparse autoencoder is a small helper model that breaks an LLM’s hidden activity into many possible “features,” such as a topic, style, or concept.\nSo a sparse autoencoder finds directions inside a model, but an unnamed direction is not yet a usable control knob.\nThe authors replace vague or inherited labels with a supervised pipeline that asks whether one feature’s activity reliably tracks a real label in data.\nAs to the mechanism, if a feature fires on “alcohol,” and forcing that feature upward makes the model talk about alcohol, the label is no longer just descriptive; it has causal weight.\nThe paper also finds that very high sparsity may not be necessary, meaning the feature does not need to be extremely rare to be useful for steering.\nAlso to note here, both prompting and feature steering are ways to push an LLM toward a desired behavior.\nPrompting remains stronger because the model was trained to obey prompts, while feature steering is more like pressing directly on the machinery and hoping the rest stays intact. Prompting says “write about alcohol” in the input; feature steering instead turns up the model’s internal “alcohol-related” feature and sees whether the output changes in that direction.\n----\nLink – arxiv. org/abs/2605.31183\nTitle: \"Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines\"\n4:00 AM · Jun 11, 2026 1.9K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 8",
+  "clean_text": "Post\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nThe paper argues that sparse autoencoders may not be bad steering tools after all, and much of the earlier failure may have come from choosing and naming the wrong features.\nThe problem is that earlier work made sparse autoencoders look weak because their features were labelled atch what those features actually cause inside the model.\nA sparse autoencoder is a small helper model that breaks an LLM’s hidden activity into many possible “features,” such as a topic, style, or concept.\nSo a sparse autoencoder finds directions inside a model, but an unnamed direction is not yet a usable control knob.\nThe authors replace vague or inherited labels with a supervised pipeline that asks whether one feature’s activity reliably tracks a real label in data.\nAs to the mechanism, if a feature fires on “alcohol,” and forcing that feature upward makes the model talk about alcohol, the label is no longer just descriptive; it has causal weight.\nThe paper also finds that very high sparsity may not be necessary, meaning the feature does not need to be extremely rare to be useful for steering.\nAlso to note here, both prompting and feature steering are ways to push an LLM toward a desired behavior.\nPrompting remains stronger because the model was trained to obey prompts, while feature steering is more like pressing directly on the machinery and hoping the rest stays intact. Prompting says “write about alcohol” in the input; feature steering instead turns up the model’s internal “alcohol-related” feature and sees whether the output changes in that direction.\n----\nLink – arxiv. org/abs/2605.31183\nTitle: \"Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines\"\n4:00 AM · Jun 11, 2026 1.9K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 8",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-070-引导大语言模型-实际上-稀疏自编码器可以胜过简单基线.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-070-引导大语言模型-实际上-稀疏自编码器可以胜过简单基线.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 86,
+  "extractor_diagnostics": {
+    "readability_score": 86,
+    "text_length": 3378,
+    "paragraph_count": 15,
+    "sentence_count": 12,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0136,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3378,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "b08fc14a2d53508e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "引导大语言模型？实际上，稀疏自编码器可以胜过简单基线",
+    "discovery_summary": "论文认为稀疏自编码器作为LLM控制工具并非此前认为的那么差，失败源于特征标注方式与模型内部实际因果不匹配。作者提出用监督管道替代模糊标签，验证特征活动是否真实追踪数据标签，使特征具有因果权重。例如，强制\"酒精\"特征增强可使模型输出转向酒精话题。论文还发现极高稀疏度并非必要。与提示工程相比，提示更强（模型经训练服从提示），而特征控制更像直接拨动机器。",
+    "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+    "origin_url": "https://x.com/rohanpaul_ai/status/2064920559214067801",
+    "discovered_at": "2026-06-12T03:48:20.916Z",
+    "rank_on_page": 357,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ca368e9eee1a5414",
+  "content_hash": "b08fc14a2d53508e",
+  "full_text_hash": "b08fc14a2d53508e",
+  "semantic_hash": "1415713bf2dda3dd",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-11T04:00:00.000Z",
+  "last_seen_at": "2026-06-12T03:53:39.275Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "opinion",
+      "text": "论文认为稀疏自编码器作为LLM控制工具并非此前认为的那么差，失败源于特征标注方式与模型内部实际因果不匹配。作者提出用监督管道替代模糊标签，验证特征活动是否真实追踪数据标签，使特征具有因果权重。例如，强制\"酒精\"特征增强可使模型输出转向酒精话题。论文还发现极高稀疏度并非必要。与提示工程相比，提示更强（模型经训练服从提示），而特征控制更像直接拨动机器。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "Post Log in Sign up Post Rohan Paul @rohanpaul_ai The paper argues that sparse autoencoders may not be bad steering tools after all, and much of the earlier failure may have come from choosing and naming the wrong features.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The problem is that earlier work made sparse autoencoders look weak because their features were labelled atch what those features actually cause inside the model.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "A sparse autoencoder is a small helper model that breaks an LLM’s hidden activity into many possible “features,” such as a topic, style, or concept.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "So a sparse autoencoder finds directions inside a model, but an unnamed direction is not yet a usable control knob.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The authors replace vague or inherited labels with a supervised pipeline that asks whether one feature’s activity reliably tracks a real label in data.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "Rohan Paul (@rohanpaul_ai)"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2605.31183",
+      "4",
+      "00",
+      "11",
+      "2026",
+      "1.9",
+      "1",
+      "0.25"
+    ],
+    "quotes": [
+      "features,",
+      "alcohol,",
+      "write about alcohol",
+      "alcohol-related",
+      "Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The problem is that earlier work made sparse autoencoders look weak because their features were labelled atch what those features actually cause inside the model.",
+      "So a sparse autoencoder finds directions inside a model, but an unnamed direction is not yet a usable control knob.",
+      "The authors replace vague or inherited labels with a supervised pipeline that asks whether one feature’s activity reliably tracks a real label in data."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 引导大语言模型？实际上，稀疏自编码器可以胜过简单基线\n\n- raw_id: R-070\n- original_url: https://x.com/rohanpaul_ai/status/2064920559214067801\n- source_name: X：Rohan Paul (@rohanpaul_ai)\n- collected_at: 2026-06-12T03:53:39.275Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nThe paper argues that sparse autoencoders may not be bad steering tools after all, and much of the earlier failure may have come from choosing and naming the wrong features.\nThe problem is that earlier work made sparse autoencoders look weak because their features were labelled atch what those features actually cause inside the model.\nA sparse autoencoder is a small helper model that breaks an LLM’s hidden activity into many possible “features,” such as a topic, style, or concept.\nSo a sparse autoencoder finds directions inside a model, but an unnamed direction is not yet a usable control knob.\nThe authors replace vague or inherited labels with a supervised pipeline that asks whether one feature’s activity reliably tracks a real label in data.\nAs to the mechanism, if a feature fires on “alcohol,” and forcing that feature upward makes the model talk about alcohol, the label is no longer just descriptive; it has causal weight.\nThe paper also finds that very high sparsity may not be necessary, meaning the feature does not need to be extremely rare to be useful for steering.\nAlso to note here, both prompting and feature steering are ways to push an LLM toward a desired behavior.\nPrompting remains stronger because the model was trained to obey prompts, while feature steering is more like pressing directly on the machinery and hoping the rest stays intact. Prompting says “write about alcohol” in the input; feature steering instead turns up the model’s internal “alcohol-related” feature and sees whether the output changes in that direction.\n----\nLink – arxiv. org/abs/2605.31183\nTitle: \"Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines\"\n4:00 AM · Jun 11, 2026 1.9K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 8\n\n## full_text\n\nPost\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nThe paper argues that sparse autoencoders may not be bad steering tools after all, and much of the earlier failure may have come from choosing and naming the wrong features.\nThe problem is that earlier work made sparse autoencoders look weak because their features were labelled atch what those features actually cause inside the model.\nA sparse autoencoder is a small helper model that breaks an LLM’s hidden activity into many possible “features,” such as a topic, style, or concept.\nSo a sparse autoencoder finds directions inside a model, but an unnamed direction is not yet a usable control knob.\nThe authors replace vague or inherited labels with a supervised pipeline that asks whether one feature’s activity reliably tracks a real label in data.\nAs to the mechanism, if a feature fires on “alcohol,” and forcing that feature upward makes the model talk about alcohol, the label is no longer just descriptive; it has causal weight.\nThe paper also finds that very high sparsity may not be necessary, meaning the feature does not need to be extremely rare to be useful for steering.\nAlso to note here, both prompting and feature steering are ways to push an LLM toward a desired behavior.\nPrompting remains stronger because the model was trained to obey prompts, while feature steering is more like pressing directly on the machinery and hoping the rest stays intact. Prompting says “write about alcohol” in the input; feature steering instead turns up the model’s internal “alcohol-related” feature and sees whether the output changes in that direction.\n----\nLink – arxiv. org/abs/2605.31183\nTitle: \"Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines\"\n4:00 AM · Jun 11, 2026 1.9K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 8\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 86\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [opinion / daily_observation, heatmap, viewpoint / high] 论文认为稀疏自编码器作为LLM控制工具并非此前认为的那么差，失败源于特征标注方式与模型内部实际因果不匹配。作者提出用监督管道替代模糊标签，验证特征活动是否真实追踪数据标签，使特征具有因果权重。例如，强制\"酒精\"特征增强可使模型输出转向酒精话题。论文还发现极高稀疏度并非必要。与提示工程相比，提示更强（模型经训练服从提示），而特征控制更像直接拨动机器。\n2. [opinion / daily_observation, heatmap, viewpoint / high] Post Log in Sign up Post Rohan Paul @rohanpaul_ai The paper argues that sparse autoencoders may not be bad steering tools after all, and much of the earlier failure may have come from choosing and naming the wrong features.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] The problem is that earlier work made sparse autoencoders look weak because their features were labelled atch what those features actually cause inside the model.\n4. [quote / daily_observation, heatmap, viewpoint / high] A sparse autoencoder is a small helper model that breaks an LLM’s hidden activity into many possible “features,” such as a topic, style, or concept.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] So a sparse autoencoder finds directions inside a model, but an unnamed direction is not yet a usable control knob.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] The authors replace vague or inherited labels with a supervised pipeline that asks whether one feature’s activity reliably tracks a real label in data.\n"
+}

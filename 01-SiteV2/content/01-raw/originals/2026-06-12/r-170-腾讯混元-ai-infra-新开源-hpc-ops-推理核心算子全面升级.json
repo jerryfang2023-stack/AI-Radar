@@ -1,0 +1,243 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-170",
+  "title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
+  "original_url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+  "canonical_url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+  "source_name": "公众号：腾讯混元",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-11T08:34:59.000Z",
+  "collected_at": "2026-06-12T03:53:39.479Z",
+  "language": "mixed",
+  "full_text": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。",
+  "clean_text": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-170-腾讯混元-ai-infra-新开源-hpc-ops-推理核心算子全面升级.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-12/r-170-腾讯混元-ai-infra-新开源-hpc-ops-推理核心算子全面升级.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "summary-only-low-readable-body",
+  "extraction_quality": "failed",
+  "extraction_method": "none",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "readability_score": 0,
+    "text_length": 0,
+    "paragraph_count": 0,
+    "sentence_count": 0,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 1,
+    "method": "none"
+  },
+  "has_full_text": false,
+  "content_length": 302,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "101370ede70113ee",
+    "missing": [
+      "missing_full_text"
+    ]
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "missing_full_text",
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "aihot_visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
+    "discovery_summary": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。",
+    "source_name": "公众号：腾讯混元",
+    "origin_url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+    "discovered_at": "2026-06-12T03:48:20.905Z",
+    "rank_on_page": 302,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "551c0c2080cb686e",
+  "content_hash": "101370ede70113ee",
+  "full_text_hash": "101370ede70113ee",
+  "semantic_hash": "265a3e1a3d01a38e",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-11T08:34:59.000Z",
+  "last_seen_at": "2026-06-12T03:53:39.479Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "Attention 采用运行时动态负载调度，长文本最高加速 2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "6x；Fused AllReduce+Norm 对比主流方案最高提速 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "公众号",
+      "腾讯混元"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [],
+    "numbers": [
+      "2.95x",
+      "17%",
+      "16",
+      "32",
+      "3.22x",
+      "1.2x",
+      "1.6x",
+      "1.68x"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。"
+    ],
+    "case_details": [
+      "Attention 采用运行时动态负载调度，长文本最高加速 2."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": true,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有变化前后流程线索",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级\n\n- raw_id: R-170\n- original_url: https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw\n- source_name: 公众号：腾讯混元\n- collected_at: 2026-06-12T03:53:39.479Z\n\n## clean_text\n\n腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。\n\n## full_text\n\n腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。\n\n## extraction_diagnostics\n\n- extraction_method: none\n- readability_score: 0\n- fetch_status: summary-only-low-readable-body\n- extraction_quality: failed\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] 腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。\n2. [product_update / daily_observation, heatmap, change / high] 腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。\n3. [case_detail / daily_observation, heatmap, case / high] Attention 采用运行时动态负载调度，长文本最高加速 2.\n4. [number / daily_observation, heatmap, case, trend / high] 95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.\n5. [number / daily_observation, heatmap, case, trend / high] 22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.\n6. [number / daily_observation, heatmap, case, trend / high] 6x；Fused AllReduce+Norm 对比主流方案最高提速 1.\n"
+}

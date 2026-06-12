@@ -1,0 +1,323 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-002
+title: "BestBlogs早报：Claude Managed Agents / Harness工程化 / 模型吞脚手架"
+original_url: "https://x.com/hongming731/status/2065234473843839420"
+canonical_url: "https://x.com/hongming731/status/2065234473843839420"
+source_name: "X：洪明 (@hongming731)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-12T00:47:23.000Z"
+collected_at: 2026-06-12T03:53:39.042Z
+language: mixed
+full_text_hash: 589b22c4668bd044
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-12/r-002-bestblogs早报-claude-managed-agents-harness工程化-模型吞脚手架.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-12/r-002-bestblogs早报-claude-managed-agents-harness工程化-模型吞脚手架.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":4194,"paragraph_count":45,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0.0167,"method":"main"}
+has_full_text: true
+content_length: 4194
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"589b22c4668bd044","missing":[]}
+source_volatility: high
+community_name: "X：洪明 (@hongming731)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"BestBlogs早报：Claude Managed Agents / Harness工程化 / 模型吞脚手架","discovery_summary":"Anthropic推出Claude Managed Agents，将推理循环与代码执行沙箱解耦，凭证存入独立Vault，自托管沙箱支持内网，首字延迟中位数降低六成、长尾降低九成。阿里工程师复盘Harness工程化，提出三层加载架构与G1-G8门禁。Google DeepMind的Logan Kilpatrick称模型正\"吞掉\"脚手架，Gemini 3.5 Flash编程能力完全来自后训练。另，Qwen3-VL-4B在支持SME2的旗舰手机上Prefill提速超80%；Fable AI实现1770%性能提升并发现关键Bug；此外涉及AI取代工程师、多智能体数字人、CFO用GPU替代加薪等讨论。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2065234473843839420","discovered_at":"2026-06-12T03:48:20.862Z","rank_on_page":75,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a2c8919be6412dfe
+content_hash: 589b22c4668bd044
+semantic_hash: 19118d5e7a553d0a
+duplicate_of: ""
+first_seen_at: "2026-06-12T00:47:23.000Z"
+last_seen_at: 2026-06-12T03:53:39.042Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","洪明 (@hongming731)","Anthropic","Google"],"products":["Claude","Agents","Gemini","CLAUDE","Agent","GPT-5"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["1","8","3.5","3","4B","2","80%","1770%"],"quotes":["决策-执行-交付三明治"]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post ginobefun @hongming731 BestBlogs 早报 · 06-12 # Claude Managed Agents / Harness 工程化 / 模型吞脚手架 / Logan Kilpatrick / Gemini 3.","5 Flash [1] ★ 精讲｜智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude Anthropic 推出 Claude Managed Agents，把智能体的「大脑」（推理循环）和「双手」（代码执行沙箱）彻底解耦，靠可恢复的事件日志连接两端：凭证统一存进独立的 Vault，绝不暴露给生成的代码，自托管沙箱还能让代码留在企业内网，首字延迟中位数降低六成、长尾降低九成以上，Notion、Sentry、Rakuten 等都已在生产环境跑通。","来源：Claude Blog bestblogs."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Anthropic推出Claude Managed Agents，将推理循环与代码执行沙箱解耦，凭证存入独立Vault，自托管沙箱支持内网，首字延迟中位数降低六成、长尾降低九成。阿里工程师复盘Harness工程化，提出三层加载架构与G1-G8门禁。Google DeepMind的Logan Kilpatrick称模型正\"吞掉\"脚手架，Gemini 3.5 Flash编程能力完全来自后训练。另，Qwen3-VL-4B在支持SME2的旗舰手机上Prefill提速超80%；Fable AI实现1770%性能提升并发现关键Bug；此外涉及AI取代工程师、多智能体数字人、CFO用GPU替代加薪等讨论。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post ginobefun @hongming731 BestBlogs 早报 · 06-12 # Claude Managed Agents / Harness 工程化 / 模型吞脚手架 / Logan Kilpatrick / Gemini 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"5 Flash [1] ★ 精讲｜智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude Anthropic 推出 Claude Managed Agents，把智能体的「大脑」（推理循环）和「双手」（代码执行沙箱）彻底解耦，靠可恢复的事件日志连接两端：凭证统一存进独立的 Vault，绝不暴露给生成的代码，自托管沙箱还能让代码留在企业内网，首字延迟中位数降低六成、长尾降低九成以上，Notion、Sentry、Rakuten 等都已在生产环境跑通。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"来源：Claude Blog bestblogs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"dev/article/8e6ddf… [2] ★ 精讲｜AI 不缺智商缺纪律：一场 Harness 工程化实践 一位阿里工程师复盘两个月的 AI Harness 演进：从把所有规则堆进 CLAUDE.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"md 导致「读完规则没脑容量读代码」，到三层加载架构 + dispatcher 状态机 + 文件交接 + G1-G8 门禁，再用 7 维确定性评分给每次改动打分，结论是「用更好的结构约束 AI，而不是用更多的字」。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# BestBlogs早报：Claude Managed Agents / Harness工程化 / 模型吞脚手架
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+ginobefun
+@hongming731
+BestBlogs 早报 · 06-12
+# Claude Managed Agents / Harness 工程化 / 模型吞脚手架 / Logan Kilpatrick / Gemini 3.5 Flash
+[1] ★ 精讲｜智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude
+Anthropic 推出 Claude Managed Agents，把智能体的「大脑」（推理循环）和「双手」（代码执行沙箱）彻底解耦，靠可恢复的事件日志连接两端：凭证统一存进独立的 Vault，绝不暴露给生成的代码，自托管沙箱还能让代码留在企业内网，首字延迟中位数降低六成、长尾降低九成以上，Notion、Sentry、Rakuten 等都已在生产环境跑通。
+来源：Claude Blog
+bestblogs.dev/article/8e6ddf…
+[2] ★ 精讲｜AI 不缺智商缺纪律：一场 Harness 工程化实践
+一位阿里工程师复盘两个月的 AI Harness 演进：从把所有规则堆进 CLAUDE.md 导致「读完规则没脑容量读代码」，到三层加载架构 + dispatcher 状态机 + 文件交接 + G1-G8 门禁，再用 7 维确定性评分给每次改动打分，结论是「用更好的结构约束 AI，而不是用更多的字」。
+来源：阿里技术
+bestblogs.dev/article/07b28c…
+[3] ★ 精讲｜Google DeepMind 的 Logan Kilpatrick：为什么模型会吞掉智能体脚手架 [视频]
+Google DeepMind 的 Logan Kilpatrick 在 Sequoia 访谈中提出「模型吞掉脚手架」：路由、执行环境这类原本搭在外层的工程能力正被模型本身逐步吸收，Gemini 3.5 Flash 的编程能力提升完全来自后训练；他认为随着基础模型不断「吃掉」周边脚手架，独立创业公司的出路只剩垂直领域的深度专精。
+来源：Sequoia Capital
+bestblogs.dev/video/568d29c
+[4] 为什么 AI 还没有取代软件工程师，而且也不会
+本文通过“决策-执行-交付三明治”模型论证 AI 不会取代软件工程师，解释了人类在决策和问责中的角色为何仍然至关重要。
+来源：AI as Normal Technology
+bestblogs.dev/article/28a908…
+[5] 云原生 - AI Native 多智能体数字人架构实践
+本文介绍了阿里云基于云原生理念打造的 AI Native 多智能体数字人协作平台 AgentTeams，通过声明式 CRD 将组织结构与协作策略模型化，实现多 Agent 像团队一样协同工作，并分享了在研发、值班、开源维护等场景的落地实践。
+来源：阿里云开发者
+bestblogs.dev/article/cb8e13…
+[6] 端侧 AI 提速 80%？如何让 Qwen3-VL 在手机起飞
+本文手把手演示如何利用 Arm SME2 指令集与 MNN 推理引擎，在支持 SME2 的旗舰手机上实现 Qwen3-VL-4B 多模态模型的高效部署，Prefill 阶段提速超 80%。
+来源：通义实验室
+bestblogs.dev/article/2e22b6…
+[7] 人是最慢的节点，还怎么管 AI Agent？｜AI 跃迁者调研
+本文深度访谈 Multica 创始人张佳圆，揭示了一个 4 人团队如何通过 Agent 协作平台实现组织效率革命，并探讨了人在 AI 时代的新角色与思考边界。
+来源：腾讯研究院
+bestblogs.dev/article/7bf0f7…
+[8] Fable AI 实现 1770% 性能提升并发现关键 Bug：我的个人奇点时刻
+Taelin 报告称，Anthropic 的 Fable AI 在代码优化方面以数量级优势超越了他本人、Opus 4.8 以及一群 GPT-5.5 智能体，甚至还发现了他自己代码中的一个微妙 Bug。
+来源：Taelin( @ VictorTaelin )
+bestblogs.dev/status/2064448…
+[9] CFO 的自白：为什么你的加薪变成了 GPU
+一位 CFO 解释称，用 AI 投资取代员工加薪的决定纯粹是会计把戏：花在人身上的每一块钱是费用，而花在 GPU 上的每一块钱则是一项可以规避市场审视的资本资产。
+来源：Peter Girnus 🦅( @ gothburz )
+bestblogs.dev/status/2064800…
+[10] “无招” 没变，但 AI 改变了公司和人才的权力关系
+本文以钉钉 CEO 陈航（无招）因高压管理被阿里合伙人委员会直接换掉为引子，深入分析了 AI 时代大公司与顶尖人才之间权力关系的根本性转变。
+来源：晚点 LatePost
+bestblogs.dev/article/959001…
+---
+BestBlogs.dev · 发现真正适合你的高质量内容
+BestBlogs 是 AI 驱动的私人阅读助手，帮助你建立稳定、可信、个性化的高质量信息输入。 关注你感兴趣的来源和主题，每天生成一份更适合自己的「我的早报」。
+在线阅读： bestblogs.dev/explore/brief/…
+ginobefun
+@hongming731
+3h
+Article
+BestBlogs 早报 · 06-12｜智能体解耦、Harness 工程化、脚手架被吞
+在线阅读本期早报
+导语
+智能体工程化正在从两端同时收紧。一端是 Anthropic：用 Claude Managed Agents 把推理与执行彻底解耦，靠可恢复的事件日志和独立 Vault...
+智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude | BestB...
+From bestblogs.dev
+12:47 AM · Jun 12, 2026 477 Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+Read 1 reply
+
+## full_text
+
+Post
+Log in Sign up
+Post
+ginobefun
+@hongming731
+BestBlogs 早报 · 06-12
+# Claude Managed Agents / Harness 工程化 / 模型吞脚手架 / Logan Kilpatrick / Gemini 3.5 Flash
+[1] ★ 精讲｜智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude
+Anthropic 推出 Claude Managed Agents，把智能体的「大脑」（推理循环）和「双手」（代码执行沙箱）彻底解耦，靠可恢复的事件日志连接两端：凭证统一存进独立的 Vault，绝不暴露给生成的代码，自托管沙箱还能让代码留在企业内网，首字延迟中位数降低六成、长尾降低九成以上，Notion、Sentry、Rakuten 等都已在生产环境跑通。
+来源：Claude Blog
+bestblogs.dev/article/8e6ddf…
+[2] ★ 精讲｜AI 不缺智商缺纪律：一场 Harness 工程化实践
+一位阿里工程师复盘两个月的 AI Harness 演进：从把所有规则堆进 CLAUDE.md 导致「读完规则没脑容量读代码」，到三层加载架构 + dispatcher 状态机 + 文件交接 + G1-G8 门禁，再用 7 维确定性评分给每次改动打分，结论是「用更好的结构约束 AI，而不是用更多的字」。
+来源：阿里技术
+bestblogs.dev/article/07b28c…
+[3] ★ 精讲｜Google DeepMind 的 Logan Kilpatrick：为什么模型会吞掉智能体脚手架 [视频]
+Google DeepMind 的 Logan Kilpatrick 在 Sequoia 访谈中提出「模型吞掉脚手架」：路由、执行环境这类原本搭在外层的工程能力正被模型本身逐步吸收，Gemini 3.5 Flash 的编程能力提升完全来自后训练；他认为随着基础模型不断「吃掉」周边脚手架，独立创业公司的出路只剩垂直领域的深度专精。
+来源：Sequoia Capital
+bestblogs.dev/video/568d29c
+[4] 为什么 AI 还没有取代软件工程师，而且也不会
+本文通过“决策-执行-交付三明治”模型论证 AI 不会取代软件工程师，解释了人类在决策和问责中的角色为何仍然至关重要。
+来源：AI as Normal Technology
+bestblogs.dev/article/28a908…
+[5] 云原生 - AI Native 多智能体数字人架构实践
+本文介绍了阿里云基于云原生理念打造的 AI Native 多智能体数字人协作平台 AgentTeams，通过声明式 CRD 将组织结构与协作策略模型化，实现多 Agent 像团队一样协同工作，并分享了在研发、值班、开源维护等场景的落地实践。
+来源：阿里云开发者
+bestblogs.dev/article/cb8e13…
+[6] 端侧 AI 提速 80%？如何让 Qwen3-VL 在手机起飞
+本文手把手演示如何利用 Arm SME2 指令集与 MNN 推理引擎，在支持 SME2 的旗舰手机上实现 Qwen3-VL-4B 多模态模型的高效部署，Prefill 阶段提速超 80%。
+来源：通义实验室
+bestblogs.dev/article/2e22b6…
+[7] 人是最慢的节点，还怎么管 AI Agent？｜AI 跃迁者调研
+本文深度访谈 Multica 创始人张佳圆，揭示了一个 4 人团队如何通过 Agent 协作平台实现组织效率革命，并探讨了人在 AI 时代的新角色与思考边界。
+来源：腾讯研究院
+bestblogs.dev/article/7bf0f7…
+[8] Fable AI 实现 1770% 性能提升并发现关键 Bug：我的个人奇点时刻
+Taelin 报告称，Anthropic 的 Fable AI 在代码优化方面以数量级优势超越了他本人、Opus 4.8 以及一群 GPT-5.5 智能体，甚至还发现了他自己代码中的一个微妙 Bug。
+来源：Taelin( @ VictorTaelin )
+bestblogs.dev/status/2064448…
+[9] CFO 的自白：为什么你的加薪变成了 GPU
+一位 CFO 解释称，用 AI 投资取代员工加薪的决定纯粹是会计把戏：花在人身上的每一块钱是费用，而花在 GPU 上的每一块钱则是一项可以规避市场审视的资本资产。
+来源：Peter Girnus 🦅( @ gothburz )
+bestblogs.dev/status/2064800…
+[10] “无招” 没变，但 AI 改变了公司和人才的权力关系
+本文以钉钉 CEO 陈航（无招）因高压管理被阿里合伙人委员会直接换掉为引子，深入分析了 AI 时代大公司与顶尖人才之间权力关系的根本性转变。
+来源：晚点 LatePost
+bestblogs.dev/article/959001…
+---
+BestBlogs.dev · 发现真正适合你的高质量内容
+BestBlogs 是 AI 驱动的私人阅读助手，帮助你建立稳定、可信、个性化的高质量信息输入。 关注你感兴趣的来源和主题，每天生成一份更适合自己的「我的早报」。
+在线阅读： bestblogs.dev/explore/brief/…
+ginobefun
+@hongming731
+3h
+Article
+BestBlogs 早报 · 06-12｜智能体解耦、Harness 工程化、脚手架被吞
+在线阅读本期早报
+导语
+智能体工程化正在从两端同时收紧。一端是 Anthropic：用 Claude Managed Agents 把推理与执行彻底解耦，靠可恢复的事件日志和独立 Vault...
+智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude | BestB...
+From bestblogs.dev
+12:47 AM · Jun 12, 2026 477 Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+Read 1 reply
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":4194,"paragraph_count":45,"sentence_count":14,"boilerplate_hits":1,"symbol_ratio":0.0167,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Anthropic推出Claude Managed Agents，将推理循环与代码执行沙箱解耦，凭证存入独立Vault，自托管沙箱支持内网，首字延迟中位数降低六成、长尾降低九成。阿里工程师复盘Harness工程化，提出三层加载架构与G1-G8门禁。Google DeepMind的Logan Kilpatrick称模型正"吞掉"脚手架，Gemini 3.5 Flash编程能力完全来自后训练。另，Qwen3-VL-4B在支持SME2的旗舰手机上Prefill提速超80%；Fable AI实现1770%性能提升并发现关键Bug；此外涉及AI取代工程师、多智能体数字人、CFO用GPU替代加薪等讨论。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post ginobefun @hongming731 BestBlogs 早报 · 06-12 # Claude Managed Agents / Harness 工程化 / 模型吞脚手架 / Logan Kilpatrick / Gemini 3.
+
+3. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   5 Flash [1] ★ 精讲｜智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude Anthropic 推出 Claude Managed Agents，把智能体的「大脑」（推理循环）和「双手」（代码执行沙箱）彻底解耦，靠可恢复的事件日志连接两端：凭证统一存进独立的 Vault，绝不暴露给生成的代码，自托管沙箱还能让代码留在企业内网，首字延迟中位数降低六成、长尾降低九成以上，Notion、Sentry、Rakuten 等都已在生产环境跑通。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   来源：Claude Blog bestblogs.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   dev/article/8e6ddf… [2] ★ 精讲｜AI 不缺智商缺纪律：一场 Harness 工程化实践 一位阿里工程师复盘两个月的 AI Harness 演进：从把所有规则堆进 CLAUDE.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   md 导致「读完规则没脑容量读代码」，到三层加载架构 + dispatcher 状态机 + 文件交接 + G1-G8 门禁，再用 7 维确定性评分给每次改动打分，结论是「用更好的结构约束 AI，而不是用更多的字」。
+
+## business_elements
+
+- companies: X, 洪明 (@hongming731), Anthropic, Google
+- products: Claude, Agents, Gemini, CLAUDE, Agent, GPT-5
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 1, 8, 3.5, 3, 4B, 2, 80%, 1770%
+- quotes: 决策-执行-交付三明治
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post ginobefun @hongming731 BestBlogs 早报 · 06-12 # Claude Managed Agents / Harness 工程化 / 模型吞脚手架 / Logan Kilpatrick / Gemini 3. / 5 Flash [1] ★ 精讲｜智能体交互界面的演进：使用 Claude Managed Agents 进行构建 | Claude Anthropic 推出 Claude Managed Agents，把智能体的「大脑」（推理循环）和「双手」（代码执行沙箱）彻底解耦，靠可恢复的事件日志连接两端：凭证统一存进独立的 Vault，绝不暴露给生成的代码，自托管沙箱还能让代码留在企业内网，首字延迟中位数降低六成、长尾降低九成以上，Notion、Sentry、Rakuten 等都已在生产环境跑通。 / 来源：Claude Blog bestblogs.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：洪明 (@hongming731)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"BestBlogs早报：Claude Managed Agents / Harness工程化 / 模型吞脚手架","discovery_summary":"Anthropic推出Claude Managed Agents，将推理循环与代码执行沙箱解耦，凭证存入独立Vault，自托管沙箱支持内网，首字延迟中位数降低六成、长尾降低九成。阿里工程师复盘Harness工程化，提出三层加载架构与G1-G8门禁。Google DeepMind的Logan Kilpatrick称模型正\"吞掉\"脚手架，Gemini 3.5 Flash编程能力完全来自后训练。另，Qwen3-VL-4B在支持SME2的旗舰手机上Prefill提速超80%；Fable AI实现1770%性能提升并发现关键Bug；此外涉及AI取代工程师、多智能体数字人、CFO用GPU替代加薪等讨论。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2065234473843839420","discovered_at":"2026-06-12T03:48:20.862Z","rank_on_page":75,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Anthropic推出Claude Managed Agents，将推理循环与代码执行沙箱解耦，凭证存入独立Vault，自托管沙箱支持内网，首字延迟中位数降低六成、长尾降低九成。阿里工程师复盘Harness工程化，提出三层加载架构与G1-G8门禁。Google DeepMind的Logan Kilpatrick称模型正"吞掉"脚手架，Gemini 3.5 Flash编程能力完全来自后训练。另，Qwen3-VL-4B在支持SME2的旗舰手机上Prefill提速超80%；Fable AI实现1770%性能提升并发现关键Bug；此外涉及AI取代工程师、多智能体数字人、CFO用GPU替代加薪等讨论。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

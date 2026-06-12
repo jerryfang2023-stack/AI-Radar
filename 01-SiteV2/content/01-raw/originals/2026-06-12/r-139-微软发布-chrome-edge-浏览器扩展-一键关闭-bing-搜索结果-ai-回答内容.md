@@ -1,0 +1,207 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-139
+title: "微软发布 Chrome / Edge 浏览器扩展，一键关闭 Bing 搜索结果 AI 回答内容"
+original_url: "https://www.ithome.com/0/963/321.htm"
+canonical_url: "https://ithome.com/0/963/321.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-12T03:02:28.000Z"
+collected_at: 2026-06-12T03:53:39.442Z
+language: mixed
+full_text_hash: e557967c6120ab1b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-12/r-139-微软发布-chrome-edge-浏览器扩展-一键关闭-bing-搜索结果-ai-回答内容.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-12/r-139-微软发布-chrome-edge-浏览器扩展-一键关闭-bing-搜索结果-ai-回答内容.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 36
+extractor_diagnostics: {"readability_score":36,"text_length":504,"paragraph_count":7,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 504
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e557967c6120ab1b","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软发布 Chrome / Edge 浏览器扩展，一键关闭 Bing 搜索结果 AI 回答内容","discovery_summary":"微软搜索部门负责人 Jordi Ribas 于 6 月 6 日在 X 平台宣布，推出浏览器扩展 Microsoft Bing AI Search Choice，已上架谷歌 Chrome 和微软 Edge 应用商店。用户安装启用后，可在 Bing 搜索结果中一键移除 Copilot 生成的 AI 回答。微软表示该功能为预览版，目的是让用户掌控搜索体验，并非所有用户都希望在所有场景默认使用 AI。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/321.htm","discovered_at":"2026-06-12T03:48:20.854Z","rank_on_page":38,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ec985963a030ff37
+content_hash: e557967c6120ab1b
+semantic_hash: 01af26e59b91c6ac
+duplicate_of: ""
+first_seen_at: "2026-06-12T03:02:28.000Z"
+last_seen_at: 2026-06-12T03:53:39.442Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","Microsoft"],"products":["Copilot"],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["6","12"],"quotes":[]}
+evidence_seed: {"company_actions":["里巴斯表示，微软推出这项预览功能，主要目的是让用户掌控搜索体验。","IT之家附上 Microsoft Bing AI Search Choice 扩展程序地址 点此前往谷歌 Chrome 浏览器应用商店下载微软扩展程序 点此前往微软 Edge 浏览器应用商店下载微软扩展程序 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。"],"case_details":["微软搜索部门负责人 Jordi Ribas 于 6 月 6 日在 X 平台宣布，推出浏览器扩展 Microsoft Bing AI Search Choice，已上架谷歌 Chrome 和微软 Edge 应用商店。用户安装启用后，可在 Bing 搜索结果中一键移除 Copilot 生成的 AI 回答。微软表示该功能为预览版，目的是让用户掌控搜索体验，并非所有用户都希望在所有场景默认使用 AI。","IT之家 6 月 12 日消息，微软搜索部门负责人乔迪 · 里巴斯（Jordi Ribas）于 6 月 6 日在 X 平台发布推文，展示了一款浏览器扩展程序，支持在 Bing 搜索结果中， 让用户一键关闭 Copilot 生成的 AI 回答内容。","该扩展程序名为 Microsoft Bing AI Search Choice，目前已上线谷歌 Chrome 浏览器以及微软 Edge 浏览器应用商店，用户安装并启用后，可以在 Bing 搜索结果中，移除 Copilot 生成的 AI 回答。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有变化前后流程线索"]
+key_excerpts: [{"type":"case_detail","text":"微软搜索部门负责人 Jordi Ribas 于 6 月 6 日在 X 平台宣布，推出浏览器扩展 Microsoft Bing AI Search Choice，已上架谷歌 Chrome 和微软 Edge 应用商店。用户安装启用后，可在 Bing 搜索结果中一键移除 Copilot 生成的 AI 回答。微软表示该功能为预览版，目的是让用户掌控搜索体验，并非所有用户都希望在所有场景默认使用 AI。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"IT之家 6 月 12 日消息，微软搜索部门负责人乔迪 · 里巴斯（Jordi Ribas）于 6 月 6 日在 X 平台发布推文，展示了一款浏览器扩展程序，支持在 Bing 搜索结果中， 让用户一键关闭 Copilot 生成的 AI 回答内容。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"该扩展程序名为 Microsoft Bing AI Search Choice，目前已上线谷歌 Chrome 浏览器以及微软 Edge 浏览器应用商店，用户安装并启用后，可以在 Bing 搜索结果中，移除 Copilot 生成的 AI 回答。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"里巴斯表示，微软推出这项预览功能，主要目的是让用户掌控搜索体验。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"他表示 AI 在搜索领域确实发挥了强大作用，但并非所有用户都希望在所有场景下默认使用 AI。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家附上 Microsoft Bing AI Search Choice 扩展程序地址 点此前往谷歌 Chrome 浏览器应用商店下载微软扩展程序 点此前往微软 Edge 浏览器应用商店下载微软扩展程序 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 微软发布 Chrome / Edge 浏览器扩展，一键关闭 Bing 搜索结果 AI 回答内容
+
+## clean_text
+
+IT之家 6 月 12 日消息，微软搜索部门负责人乔迪 · 里巴斯（Jordi Ribas）于 6 月 6 日在 X 平台发布推文，展示了一款浏览器扩展程序，支持在 Bing 搜索结果中， 让用户一键关闭 Copilot 生成的 AI 回答内容。
+该扩展程序名为 Microsoft Bing AI Search Choice，目前已上线谷歌 Chrome 浏览器以及微软 Edge 浏览器应用商店，用户安装并启用后，可以在 Bing 搜索结果中，移除 Copilot 生成的 AI 回答。
+里巴斯表示，微软推出这项预览功能，主要目的是让用户掌控搜索体验。他表示 AI 在搜索领域确实发挥了强大作用，但并非所有用户都希望在所有场景下默认使用 AI。
+IT之家附上 Microsoft Bing AI Search Choice 扩展程序地址
+点此前往谷歌 Chrome 浏览器应用商店下载微软扩展程序
+点此前往微软 Edge 浏览器应用商店下载微软扩展程序
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 12 日消息，微软搜索部门负责人乔迪 · 里巴斯（Jordi Ribas）于 6 月 6 日在 X 平台发布推文，展示了一款浏览器扩展程序，支持在 Bing 搜索结果中， 让用户一键关闭 Copilot 生成的 AI 回答内容。
+该扩展程序名为 Microsoft Bing AI Search Choice，目前已上线谷歌 Chrome 浏览器以及微软 Edge 浏览器应用商店，用户安装并启用后，可以在 Bing 搜索结果中，移除 Copilot 生成的 AI 回答。
+里巴斯表示，微软推出这项预览功能，主要目的是让用户掌控搜索体验。他表示 AI 在搜索领域确实发挥了强大作用，但并非所有用户都希望在所有场景下默认使用 AI。
+IT之家附上 Microsoft Bing AI Search Choice 扩展程序地址
+点此前往谷歌 Chrome 浏览器应用商店下载微软扩展程序
+点此前往微软 Edge 浏览器应用商店下载微软扩展程序
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 36
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":36,"text_length":504,"paragraph_count":7,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   微软搜索部门负责人 Jordi Ribas 于 6 月 6 日在 X 平台宣布，推出浏览器扩展 Microsoft Bing AI Search Choice，已上架谷歌 Chrome 和微软 Edge 应用商店。用户安装启用后，可在 Bing 搜索结果中一键移除 Copilot 生成的 AI 回答。微软表示该功能为预览版，目的是让用户掌控搜索体验，并非所有用户都希望在所有场景默认使用 AI。
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   IT之家 6 月 12 日消息，微软搜索部门负责人乔迪 · 里巴斯（Jordi Ribas）于 6 月 6 日在 X 平台发布推文，展示了一款浏览器扩展程序，支持在 Bing 搜索结果中， 让用户一键关闭 Copilot 生成的 AI 回答内容。
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   该扩展程序名为 Microsoft Bing AI Search Choice，目前已上线谷歌 Chrome 浏览器以及微软 Edge 浏览器应用商店，用户安装并启用后，可以在 Bing 搜索结果中，移除 Copilot 生成的 AI 回答。
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   里巴斯表示，微软推出这项预览功能，主要目的是让用户掌控搜索体验。
+
+5. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   他表示 AI 在搜索领域确实发挥了强大作用，但并非所有用户都希望在所有场景下默认使用 AI。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家附上 Microsoft Bing AI Search Choice 扩展程序地址 点此前往谷歌 Chrome 浏览器应用商店下载微软扩展程序 点此前往微软 Edge 浏览器应用商店下载微软扩展程序 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## business_elements
+
+- companies: IT之家（RSS）, Microsoft
+- products: Copilot
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 6, 12
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 里巴斯表示，微软推出这项预览功能，主要目的是让用户掌控搜索体验。 / IT之家附上 Microsoft Bing AI Search Choice 扩展程序地址 点此前往谷歌 Chrome 浏览器应用商店下载微软扩展程序 点此前往微软 Edge 浏览器应用商店下载微软扩展程序 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+- case_details: 微软搜索部门负责人 Jordi Ribas 于 6 月 6 日在 X 平台宣布，推出浏览器扩展 Microsoft Bing AI Search Choice，已上架谷歌 Chrome 和微软 Edge 应用商店。用户安装启用后，可在 Bing 搜索结果中一键移除 Copilot 生成的 AI 回答。微软表示该功能为预览版，目的是让用户掌控搜索体验，并非所有用户都希望在所有场景默认使用 AI。 / IT之家 6 月 12 日消息，微软搜索部门负责人乔迪 · 里巴斯（Jordi Ribas）于 6 月 6 日在 X 平台发布推文，展示了一款浏览器扩展程序，支持在 Bing 搜索结果中， 让用户一键关闭 Copilot 生成的 AI 回答内容。 / 该扩展程序名为 Microsoft Bing AI Search Choice，目前已上线谷歌 Chrome 浏览器以及微软 Edge 浏览器应用商店，用户安装并启用后，可以在 Bing 搜索结果中，移除 Copilot 生成的 AI 回答。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软发布 Chrome / Edge 浏览器扩展，一键关闭 Bing 搜索结果 AI 回答内容","discovery_summary":"微软搜索部门负责人 Jordi Ribas 于 6 月 6 日在 X 平台宣布，推出浏览器扩展 Microsoft Bing AI Search Choice，已上架谷歌 Chrome 和微软 Edge 应用商店。用户安装启用后，可在 Bing 搜索结果中一键移除 Copilot 生成的 AI 回答。微软表示该功能为预览版，目的是让用户掌控搜索体验，并非所有用户都希望在所有场景默认使用 AI。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/321.htm","discovered_at":"2026-06-12T03:48:20.854Z","rank_on_page":38,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软搜索部门负责人 Jordi Ribas 于 6 月 6 日在 X 平台宣布，推出浏览器扩展 Microsoft Bing AI Search Choice，已上架谷歌 Chrome 和微软 Edge 应用商店。用户安装启用后，可在 Bing 搜索结果中一键移除 Copilot 生成的 AI 回答。微软表示该功能为预览版，目的是让用户掌控搜索体验，并非所有用户都希望在所有场景默认使用 AI。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
