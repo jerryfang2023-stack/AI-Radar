@@ -661,6 +661,91 @@ function fallbackChineseFactForEnglish(title = "", sourceUrl = "") {
   return `${subject} 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。`;
 }
 
+function cleanEnglishTitleForDisplay(title = "") {
+  return String(title || "")
+    .replace(/\s*\|\s*[^|]{2,60}$/u, "")
+    .replace(/\s+-\s*(TechCrunch|SiliconANGLE|BusinessWire|PR Newswire|Markets Insider|CFO Dive|Google Cloud Press Corner)$/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function titleSubject(title = "", sourceUrl = "") {
+  return subjectFromEnglishTitle(title)
+    || subjectFromUrl(sourceUrl)
+    || domain(sourceUrl).split(".")[0]
+    || "AI";
+}
+
+function sourceDerivedChineseTitleForEnglish(title = "", sourceUrl = "") {
+  const text = cleanEnglishTitleForDisplay(title);
+  if (!text) return "";
+  const known = [
+    [/Algorithms and packages in the AWS Marketplace.*SageMaker/iu, "Amazon SageMaker AI Marketplace 提供算法和模型包"],
+    [/ElevenLabs and Better\.com Showcase Success of AI Loan Agent/iu, "ElevenLabs 与 Better.com 展示 AI 贷款 Agent Betsy 的金融服务规模化应用"],
+    [/DigitalOcean Launches Inference Engine/iu, "DigitalOcean 发布生产级 AI 推理引擎与 Agentic 工作负载路由"],
+    [/Top European insurer accelerates claims notification with Druid AI agents/iu, "欧洲保险公司使用 Druid AI Agent 加速理赔通知"],
+    [/LTM transforms HR and Sales Organization with AI-Powered Copilot Agents/iu, "LTM 使用 AI Copilot Agent 改造 HR 与销售组织"],
+    [/Built x MightyBot Case Study.*AI Draw Agent/iu, "Built 与 MightyBot 案例：AI 绘图 Agent 进入生产"],
+  ];
+  const knownMatch = known.find(([pattern]) => pattern.test(text));
+  if (knownMatch) return knownMatch[1];
+  const amount = text.match(/\$ ?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion)/u)?.[0] || "";
+  const subject = titleSubject(text, sourceUrl);
+  const fundingPurpose = text.match(/\bto\s+(build|bring|scale|advance|accelerate|deploy|automate|secure|expand|help)\s+(.+)$/iu)?.[2] || "";
+  if (/\b(raises|raised|lands|landed|secures|secured|pulls in|gets|funding|financing|series|seed|pre-seed)\b/iu.test(text)) {
+    const purpose = fundingPurpose ? `，用途见原文：${fundingPurpose}` : "";
+    return `${subject} 融资${amount ? ` ${amount}` : ""}${purpose}`.slice(0, 120);
+  }
+  const launchMatch = text.match(/^(.+?)\s+(?:launches|introduces|releases|announces|showcases|unveils)\s+(.+)$/iu);
+  if (launchMatch) {
+    return `${subject} 发布原文所述能力：${launchMatch[2]}`.slice(0, 120);
+  }
+  const withMatch = text.match(/^(.+?)\s+(?:uses|using|with|books over|accelerates|transforms|delivers|automates|showcase(?:s)? success of)\s+(.+)$/iu);
+  if (withMatch) {
+    return `${subject} 应用原文所述场景：${withMatch[2]}`.slice(0, 120);
+  }
+  if (/procurement|purchase|supply chain|workflow|claims|loan|customer|support|sales|HR|revenue/iu.test(text)) {
+    return `${subject} 的原文业务场景：${text}`.slice(0, 120);
+  }
+  if (/agent|model|inference|platform|marketplace|sagemaker|copilot|voice ai|ai/iu.test(text)) {
+    return `${subject} 的原文 AI 事件：${text}`.slice(0, 120);
+  }
+  return `${subject} 的原文事件标题：${text}`.slice(0, 120);
+}
+
+function sourceTitleDerivedFact(title = "", sourceUrl = "") {
+  const rawTitle = String(title || "").replace(/\s+/gu, " ").trim();
+  if (!rawTitle) return "";
+  const direct = chineseFactFromSource(rawTitle, sourceUrl);
+  if (direct && !isGenericSourceFallback(direct) && !isSourceLinkOnlyFact(direct)) return direct;
+  const displayTitle = frontstageChineseTitle(rawTitle, sourceUrl) || safeFrontstageTitle(rawTitle, sourceUrl) || rawTitle;
+  const subject = safeFrontstageSubject({
+    sourceUrl,
+    rawTitle,
+    title: displayTitle,
+    originalTitle: rawTitle,
+  });
+  const amount = rawTitle.match(/\$ ?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion)/u)?.[0] || "";
+  if (/\b(raises|raised|lands|landed|secures|secured|funding|financing|series|seed|pre-seed)\b/iu.test(rawTitle)) {
+    return `${displayTitle}。融资主体为 ${subject}${amount ? `，披露金额为 ${amount}` : ""}。`;
+  }
+  if (/\b(launches|launch|introduces|introduced|releases|released|announces|announced|general availability)\b/iu.test(rawTitle)) {
+    return `${displayTitle}。发布主体为 ${subject}，事件性质是产品、平台或能力发布。`;
+  }
+  if (/\b(procurement|purchase|supply chain|customer|adoption|case study|workflow|overhaul|voice agent|books over|support|conversion)\b/iu.test(rawTitle)) {
+    return `${displayTitle}。该来源披露的是 ${subject} 相关的客户、采购、工作流或业务采用场景。`;
+  }
+  if (/\b(inference|model|serverless|compute|gpu|infrastructure|platform|agent)\b/iu.test(rawTitle)) {
+    return `${displayTitle}。该来源披露的是 ${subject} 相关的 AI 基础设施、模型部署或智能体能力事件。`;
+  }
+  return `${displayTitle}。该来源披露的是 ${subject} 相关的具体 AI 商业事件。`;
+}
+
+function isInternalEvidenceDump(value = "") {
+  return /^##\s*P-\d+/iu.test(String(value || "").trim())
+    || /\braw_ref:|\braw_original_id:|\braw_archive:|\bpool_refs:/iu.test(String(value || ""));
+}
+
 function isUntranslatedPublicEnglish(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
@@ -721,14 +806,16 @@ function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "
 }
 
 function normalizeFrontstageDisplay(card = {}) {
-  const title = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
-  const originalTitle = card.originalTitle || (title !== card.title ? card.title : "");
+  const modelGeneratedTitle = card.modelGeneratedTitle || card.generatedTitle || card.title || "";
+  const internalTitle = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
+  const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
-  const displayTitle = publicDisplayTitle(sourceTitle, title, card.sourceUrl);
+  const displayTitle = publicDisplayTitle(sourceTitle, internalTitle, card.sourceUrl);
   return {
     ...card,
-    title,
-    generatedTitle: title,
+    title: displayTitle,
+    modelGeneratedTitle,
+    generatedTitle: displayTitle,
     originalTitle,
     sourceTitle,
     displayTitle,
@@ -737,7 +824,7 @@ function normalizeFrontstageDisplay(card = {}) {
       sourceUrl: card.sourceUrl,
       sourceName: card.sourceName,
       rawTitle: card.originalTitle,
-      title,
+      title: displayTitle,
       originalTitle,
     }),
   };
@@ -814,7 +901,7 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
   );
   const titleMatch = byTitle.find(([pattern]) => pattern.test(text));
   if (titleMatch) return titleMatch[1];
-  return fallbackChineseTitleForEnglish(text, sourceUrl);
+  return sourceDerivedChineseTitleForEnglish(text, sourceUrl) || fallbackChineseTitleForEnglish(text, sourceUrl);
 }
 
 function chineseFactFromSource(title = "", sourceUrl = "") {
@@ -1946,16 +2033,18 @@ function cardFromFile(file, category) {
   const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
   const rawDisplayTitle = frontstageTitle(rawTitle || explicitDisplayTitle || path.basename(file, ".md"), rawTitle);
   const title = frontstageChineseTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl);
-  const titleFact = chineseFactFromSource(rawDisplayTitle || title, sourceUrl);
+  const titleFact = sourceTitleDerivedFact(rawDisplayTitle || title, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
   if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
   const sourceEvidenceExcerpt = buildSourceExcerpt(raw, originalHighlights, rawDisplayTitle);
   const evidenceFact = originalHighlights.find((item) => (
     isSubstantiveSourceFragment(item)
     && !isGenericSourceFallback(item)
+    && !isSourceLinkOnlyFact(item)
+    && !isInternalEvidenceDump(item)
     && !textRepeatsAny(item, [title], 0.9)
   )) || "";
-  const translatedFact = evidenceFact || (!isGenericSourceFallback(sourceEvidenceExcerpt) ? sourceEvidenceExcerpt : "") || titleFact;
+  const translatedFact = evidenceFact || (!isGenericSourceFallback(sourceEvidenceExcerpt) && !isSourceLinkOnlyFact(sourceEvidenceExcerpt) && !isInternalEvidenceDump(sourceEvidenceExcerpt) ? sourceEvidenceExcerpt : "") || titleFact;
   const sourceFact = translatedFact || originalHighlights.find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item)) || "";
   originalHighlights = uniqueNonRepeatingLines(
     originalHighlights.filter((item) => !/^原始来源标题|原始来源链接|本地 Raw\/Pool/u.test(item)),
