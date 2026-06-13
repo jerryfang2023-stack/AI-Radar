@@ -2,12 +2,10 @@ name: WaveSight Daily Recovery Watchdog
 
 on:
   schedule:
-    # 10:25 / 12:25 / 13:25 / 14:25 Asia/Shanghai. Runs after the
-    # primary daily production windows and retries if GitHub drops a slot.
+    # 10:25 Asia/Shanghai. Generic final morning safety check. Business
+    # Signals uses Hermes early handoff at 09:45 / 09:55 and should not
+    # depend on repeated late-day cron loops.
     - cron: "25 2 * * *"
-    - cron: "25 4 * * *"
-    - cron: "25 5 * * *"
-    - cron: "25 6 * * *"
   workflow_run:
     workflows:
       - WaveSight Business Signals PR

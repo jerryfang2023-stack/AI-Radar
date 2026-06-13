@@ -1,7 +1,7 @@
 ﻿---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-12
+last_updated: 2026-06-13
 use_when:
   - choose current action
   - recover missing actions
@@ -77,7 +77,8 @@ Purpose:
 
 Primary route:
 
-- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 / 10:07 Asia/Shanghai.
+- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai.
+- Hermes early handoff: `.github/workflows/hermes-business-signals-early-handoff.yml` at 09:45 / 09:55 Asia/Shanghai when the primary windows fail or no same-date success is visible.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
 Reads:
