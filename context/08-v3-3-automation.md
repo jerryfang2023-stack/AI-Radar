@@ -60,7 +60,7 @@ An existing `automation/business-signals-<date>` branch must not block a schedul
 The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current morning schedule truth is:
 
 - Business Signals primary production: 09:07 / 09:37 Asia/Shanghai.
-- First-Line Viewpoints RSS primary production: 08:30 local Codex `builder-observation-daily-sync`; 09:17 / 09:47 GitHub fallback.
+- First-Line Viewpoints RSS primary production: 08:30 local Codex `builder-observation-daily-sync` for RSS collection, page-data build, and Obsidian sync; 09:17 / 09:47 GitHub fallback.
 - First-Line Viewpoints skill publish: local follow-builders skill at 16:10 Asia/Shanghai; Hermes records it at 16:30.
 - Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine, then GitHub publish at 08:45 / 10:45.
 - Hermes three-lane early handoff: 09:30 / 09:45 / 09:55 Asia/Shanghai.
@@ -70,7 +70,7 @@ Operational rules:
 1. The primary Business Signals schedule is only 09:07 and 09:37 Asia/Shanghai.
 2. If both Business Signals primary windows fail, or if same-date Business Signals assets are still missing / unhealthy and no run is active by 09:45 or 09:55, Hermes dispatches the Business Signals workflow.
 3. Hermes checks Community Intelligence publish at 09:30. If same-date local collector output exists but publication is missing / unhealthy and no publish run is active, Hermes dispatches the Community Intelligence GitHub publish workflow. If local output is missing, Hermes writes a local / Codex repair handoff instead of pretending GitHub can collect.
-4. Hermes checks First-Line Viewpoints RSS at 09:55, after the 08:30 local Codex sync and remaining 09:17 / 09:47 GitHub fallback windows. If same-date builders data / Obsidian timelines are missing and no run is active, Hermes dispatches the First-Line Viewpoints RSS workflow.
+4. Hermes checks First-Line Viewpoints RSS at 09:55, after the 08:30 local Codex collection/build/sync attempt and remaining 09:17 / 09:47 GitHub fallback windows. If same-date builders data / Obsidian timelines are missing and no run is active, Hermes dispatches the First-Line Viewpoints RSS workflow.
 5. Hermes records the afternoon follow-builders skill publish at 16:30. If the local publish report or generated builders viewpoints file is missing and no run is active, Hermes dispatches the local follow-builders skill publisher.
 6. The scheduled early handoff workflow is `.github/workflows/hermes-three-lane-early-handoff.yml`; the old `.github/workflows/hermes-business-signals-early-handoff.yml` is manual compatibility only and must not be scheduled in parallel.
 7. Hermes three-lane early handoff writes `agent-workflow/reports/<date>-hermes-three-lane-early-handoff.json` and `.md`, plus latest aliases and a Codex inbox item for lanes that hit dispatch failure or bounded attempt caps.
@@ -146,7 +146,7 @@ Rules:
 
 Workflow:
 
-- Local Codex automation: `builder-observation-daily-sync` at 08:30 Asia/Shanghai, expressed as `FREQ=DAILY;BYHOUR=0;BYMINUTE=30;BYSECOND=0` in the local Codex automation config because the observed scheduler interprets `rrule` hours as UTC.
+- Local Codex automation: `builder-observation-daily-sync` at 08:30 Asia/Shanghai, expressed as `FREQ=DAILY;BYHOUR=0;BYMINUTE=30;BYSECOND=0` in the local Codex automation config because the observed scheduler interprets `rrule` hours as UTC. This is a collection-first task: fetch builder blog RSS, fetch builder podcast RSS, then build `follow-builders-daily.json`, validate, and sync Obsidian.
 - GitHub fallback: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai.
 
 Execution order:
@@ -164,7 +164,7 @@ Execution order:
 
 Hermes supervision:
 
-- Treat the 08:30 local Codex automation as the first morning RSS attempt.
+- Treat the 08:30 local Codex automation as the first morning RSS collection/build/sync attempt.
 - Treat the 09:17 / 09:47 GitHub workflow runs as fallback attempts when same-date data and Obsidian timelines are still missing.
 - At 09:55, Hermes must check same-date `follow-builders-daily.json` and Obsidian person/date timeline files before dispatching the GitHub fallback workflow.
 
@@ -201,7 +201,7 @@ This skill lane does not write business-signal Cards, relationship graph data, t
 |---|---|---|---|---|
 | Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai; `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 for this lane | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
-| First-Line Viewpoints | Local Codex morning RSS sync + GitHub Actions RSS fallback + local afternoon follow-builders skill lane | `builder-observation-daily-sync` at 08:30 Asia/Shanghai for morning RSS; `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai for RSS fallback; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai for the skill publish; Hermes checks RSS at 09:55 and records the skill lane at 16:30 | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS; local publish report and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
+| First-Line Viewpoints | Local Codex morning RSS collection/build/sync + GitHub Actions RSS fallback + local afternoon follow-builders skill lane | `builder-observation-daily-sync` at 08:30 Asia/Shanghai for morning RSS collection, page-data build, and Obsidian sync; `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai for RSS fallback; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai for the skill publish; Hermes checks RSS at 09:55 and records the skill lane at 16:30 | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS; local publish report and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
 | Community Intelligence | Local Windows scheduled task / Codex local run + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | local collection at 08:30 Asia/Shanghai; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 10:45 for publication; Hermes three-lane early handoff at 09:30 / 09:45 / 09:55 for publish supervision | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
 
 The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.

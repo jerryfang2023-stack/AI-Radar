@@ -42,7 +42,7 @@ const lanes = [
     label: "First-Line Viewpoints",
     workflowFile: "daily-first-line-viewpoints-pr.yml",
     workflowName: "WaveSight First-Line Viewpoints PR",
-    primaryWindow: "08:30 local Codex sync / 09:17 / 09:47 GitHub fallback",
+    primaryWindow: "08:30 local Codex RSS collection + sync / 09:17 / 09:47 GitHub fallback",
     primaryStart: "08:30",
     primaryEnd: "09:55",
     failureThreshold: 1,

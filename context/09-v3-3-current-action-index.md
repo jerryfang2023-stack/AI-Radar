@@ -232,9 +232,9 @@ Purpose:
 
 Primary route:
 
-- Local Codex automation: `builder-observation-daily-sync` at 08:30 Asia/Shanghai. The local automation config stores this as `FREQ=DAILY;BYHOUR=0;BYMINUTE=30;BYSECOND=0` because the observed Codex scheduler interprets `rrule` hours as UTC.
+- Local Codex automation: `builder-observation-daily-sync` at 08:30 Asia/Shanghai. The local automation config stores this as `FREQ=DAILY;BYHOUR=0;BYMINUTE=30;BYSECOND=0` because the observed Codex scheduler interprets `rrule` hours as UTC. This is a collection-first task: fetch builder blog RSS, fetch builder podcast RSS, build `follow-builders-daily.json`, validate, then sync Obsidian.
 - GitHub fallback workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai.
-- Hermes RSS handoff: 09:55 Asia/Shanghai, after the 08:30 local sync and GitHub fallback windows.
+- Hermes RSS handoff: 09:55 Asia/Shanghai, after the 08:30 local collection/build/sync attempt and GitHub fallback windows.
 
 Reads:
 
