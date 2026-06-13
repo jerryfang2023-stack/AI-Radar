@@ -32,8 +32,9 @@ Read only what is needed:
 ```
 
 4. Apply the schedule watchdog before declaring the lane idle:
-   - current cron windows are 09:17 / 09:47 / 10:17 Asia/Shanghai;
-   - if no same-date scheduled run is visible by about 10:30, dispatch the workflow manually;
+   - current morning route starts with local Codex RSS collection/build/sync at 08:30 Asia/Shanghai;
+   - current GitHub fallback windows are 09:17 and 09:47 Asia/Shanghai, not the retired 10:17 slot;
+   - if same-date data / Obsidian person-date timelines are still missing by 09:55 and no run is active, use Hermes three-lane early handoff before manual workflow dispatch;
    - if the workflow is still `in_progress`, wait for the data gate and Obsidian sync before reporting stale data.
 
 5. For local repair, use:
@@ -51,6 +52,10 @@ node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<
    - `01-SiteV2/knowledge/02-Opinion-Timelines/`;
    - builder blog / podcast feed JSON when refreshed;
    - first-line manifest and gate reports.
+
+7. For the afternoon local `follow-builders` skill route, verify the 16:10 local publisher and the 16:30 Hermes record:
+   - `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`;
+   - `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`.
 
 The current frontstage data source is `01-SiteV2/site/data/follow-builders-daily.json`. The current Obsidian reading view is `01-SiteV2/knowledge/02-Opinion-Timelines/`, generated from the same daily first-line data. The retired `01-SiteV2/content/05-frontier-opinions/*` path is historical output only and must not be used to decide whether the First-Line Viewpoints lane succeeded.
 
@@ -96,7 +101,7 @@ Report:
 - builders count;
 - translation failures removed or repaired;
 - gate report path;
-- Obsidian timeline entries added and affected people / month files;
+- Obsidian timeline entries added and affected person/date files;
 - files committed;
 - PR / merge / Pages status when known;
 - skill eval or memory updates made after failures.

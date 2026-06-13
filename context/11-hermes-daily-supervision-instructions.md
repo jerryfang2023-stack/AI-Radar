@@ -25,14 +25,16 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 Hermes should do this every Asia/Shanghai production day:
 
-1. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
-2. 09:30 / 09:45 / 09:55 run the three-lane early handoff: `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>`. Dispatch missing or failed lanes only after that lane's remaining scheduled monitoring window has passed and no same-date run is active.
-3. Before 10:00 confirm Business Signals Top10 is healthy: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood.
-4. 10:40 check PR / merge / GitHub Pages publication for lanes that produced data.
-5. 10:55 / 11:55 run bounded morning recovery only for lanes still `failed` or `manual_required`.
-6. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
-7. For every failure, write cause, attempted action, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
-8. Never lower gates, edit generated data directly, push to `main`, or loop blind reruns.
+1. 08:10 run the version state preflight when a version changed: package / ledger / AGENTS / current frontstage data meta / Skill Ops sync. This is read-only and must not block lane production by itself.
+2. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
+3. 09:30 / 09:45 / 09:55 run the three-lane early handoff: `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>`. Dispatch missing or failed lanes only after that lane's remaining scheduled monitoring window has passed and no same-date run is active.
+4. Before 10:00 confirm Business Signals Top10 is healthy: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood.
+5. 10:20 read and report the Topic Center / Hermes Daily Brief only after Business Signals data is healthy or the upstream workflow has finished. If Business Signals is still queued or `in_progress`, wait instead of reporting missing topic data.
+6. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. This check must account for the 10:45 Community Intelligence publish fallback window.
+7. 10:55 / 11:55 run bounded morning recovery only for lanes still `failed` or `manual_required`.
+8. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
+9. For every failure, write cause, attempted action, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
+10. Never lower gates, edit generated data directly, push to `main`, or loop blind reruns.
 
 ## Daily Entry
 
@@ -96,12 +98,17 @@ agent-workflow/inbox/hermes-to-codex/
 
 | Time | Lane | Hermes action |
 |---:|---|---|
+| 08:10 | Version State Preflight | On version-change days, check `package.json`, `package-lock.json`, `AGENTS.md`, `context/version-ledger.md`, current frontstage data meta versions, and `npm run check:skill-ops`. Record drift only; do not block lane production unless the drift breaks a gate. |
+| 08:30 | Community Intelligence Local | Windows scheduled task `WaveSight Community Intelligence Daily` runs logged-in collection, archive, gate, and local publish handoff. Codex automation `community-intelligence-daily-local` is paused to avoid duplicate local collection. GitHub cannot replace this collector. |
+| 08:30 | First-Line Viewpoints RSS | Local Codex automation `builder-observation-daily-sync` runs RSS / podcast collection, page-data build, gate, and Obsidian person/date sync. |
 | 08:45 | Community Intelligence | Check local scheduled task, same-date community data, archive, and community gate. |
 | 09:30 | Community Intelligence Publish | If local collector output exists but `.github/workflows/daily-community-intelligence-pr.yml` has not published same-date community data and no publish run is active, trigger the publish workflow. If local output is missing, record a local / Codex repair handoff. |
 | Daily preflight | Skill Ops Governance | Check current Guanlan skills, registry freshness, eval/example coverage, and `.skill-store` sync without editing files. |
 | 09:45 | Hermes Three-Lane Early Handoff | Check Business Signals after the 09:07 / 09:37 windows, and re-check Community Intelligence publication. Dispatch only lanes whose takeover window has passed and no same-date run is active. |
 | 09:55 | Hermes Three-Lane Early Handoff | Check First-Line Viewpoints RSS after the 08:30 local Codex `builder-observation-daily-sync` collection/build/sync run and the 09:17 / 09:47 GitHub fallback windows, and repeat Business Signals / Community Intelligence checks. If same-date data is still missing and no run is active, dispatch the RSS route and write the early-handoff report / Codex handoff artifacts. |
-| 10:40 | Site publication | Check lane PR / merge / Pages status when GitHub state is available. |
+| 10:20 | Topic Center / Hermes Daily Brief | Read `topic-center-hermes.json` / `.md` and the Hermes daily brief topic table after Business Signals has finished. This is a report checkpoint, not a separate topic-generation cron. |
+| 10:45 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
+| 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. |
 | 10:55 / 11:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. |
 | 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report and `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`. If the report or output is missing, write a Codex handoff for the afternoon skill lane. |
 

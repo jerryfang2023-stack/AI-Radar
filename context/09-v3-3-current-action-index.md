@@ -382,7 +382,8 @@ Purpose:
 
 Primary route:
 
-- Local Windows task: `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai for collection.
+- Primary local Windows task: `WaveSight Community Intelligence Daily` at 08:30 Asia/Shanghai for logged-in collection, archive, gate validation, and local publish handoff.
+- Codex automation `community-intelligence-daily-local` is a paused duplicate / fallback entry and must not run in parallel with the Windows task.
 - GitHub workflow: `.github/workflows/daily-community-intelligence-pr.yml` for same-date publication after local data exists.
 
 Reads:

@@ -29,8 +29,12 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
 
 9. `three_lane_early_handoff`
-   - Pass when Hermes three-lane early handoff checks First-Line Viewpoints at 09:45 / 09:55 Asia/Shanghai and dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` if same-date builders data / Obsidian person-date timelines are missing and no run is active.
+   - Pass when Hermes three-lane early handoff checks First-Line Viewpoints RSS at 09:55 Asia/Shanghai, after the 08:30 local Codex RSS collection/build/sync attempt and the 09:17 / 09:47 GitHub fallback windows, and dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` if same-date builders data / Obsidian person-date timelines are missing and no run is active.
    - Fail when the lane waits until the old 10:30 supervision check without an early report, dispatch action, and Codex handoff path.
+
+10. `afternoon_follow_builders_skill_lane`
+   - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`, and Hermes records the lane at 16:30.
+   - Fail when the afternoon skill route is judged from morning RSS data only or when a missing 16:30 publish report is ignored.
 
 ## Repair Loop
 

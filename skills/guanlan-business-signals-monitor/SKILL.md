@@ -31,8 +31,8 @@ Read only what is needed:
 ```
 
 4. Apply the schedule watchdog before declaring the lane idle:
-   - current cron windows are 09:07 / 09:37 / 10:07 Asia/Shanghai, not the retired 08:00 slot;
-   - if no same-date scheduled run is visible by about 10:20, dispatch the workflow manually;
+   - current primary cron windows are 09:07 and 09:37 Asia/Shanghai, not the retired 08:00 or 10:07 slots;
+   - if no healthy same-date result is visible by 09:45 / 09:55 and no run is active, use Hermes three-lane early handoff before manual workflow dispatch;
    - if a downstream task starts while the workflow is still `in_progress`, wait for the run to finish before reporting missing data.
 
 5. For local repair, use the existing scripts in this order:

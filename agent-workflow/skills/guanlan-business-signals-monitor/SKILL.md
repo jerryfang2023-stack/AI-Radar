@@ -22,6 +22,12 @@ This skill owns the Business Signals production lane. It coordinates source capt
 
 It is the lane owner. It may call narrower skills such as `guanlan-daily-monitor`, `guanlan-monitor-quality-gate`, `guanlan-daily-monitor-qc`, `guanlan-raw-pool-card`, and `guanlan-trend-candidate-writer`.
 
+## Current Timing
+
+- GitHub primary production windows: 09:07 and 09:37 Asia/Shanghai.
+- Hermes three-lane early handoff: 09:45 and 09:55 Asia/Shanghai.
+- The old Business-only Hermes handoff workflow is manual compatibility only and must not be scheduled in parallel.
+
 ## Required Reads
 
 Read only what is needed:

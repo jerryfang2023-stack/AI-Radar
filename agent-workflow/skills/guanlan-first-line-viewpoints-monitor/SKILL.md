@@ -24,6 +24,13 @@ The lane has two production routes: the morning RSS / podcast refresh that feeds
 
 It may call the generic `follow-builders` skill for source / digest behavior, but this skill is the WaveSight lane owner.
 
+## Current Timing
+
+- Morning local Codex RSS collection/build/sync: 08:30 Asia/Shanghai via `builder-observation-daily-sync`.
+- GitHub RSS fallback windows: 09:17 and 09:47 Asia/Shanghai.
+- Hermes RSS handoff: 09:55 Asia/Shanghai, after the local run and both fallback windows.
+- Afternoon local `follow-builders` skill publish: 16:10 Asia/Shanghai; Hermes records it at 16:30.
+
 ## Required Reads
 
 Read only what is needed:

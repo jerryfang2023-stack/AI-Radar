@@ -12,7 +12,7 @@ Use these as pass/fail checks after production, repair, or rule changes.
 - PASS if large-company Top10 caps are enforced; FAIL if the same large company appears more than once or large-company total exceeds 3.
 - PASS if source-first and frontstage regression gates pass; FAIL if backend-only fields or old summaries are used as frontstage facts.
 - PASS if the commit excludes `follow-builders-daily.json` and `community-intelligence.json`; FAIL if another lane's data is staged by this skill.
-- PASS if the monitor checks the current 09:07 / 09:37 / 10:07 Asia/Shanghai schedule windows and dispatches manually only after the 10:20 watchdog; FAIL if it restores the retired 08:00 schedule as current truth.
+- PASS if the monitor checks the current 09:07 / 09:37 Asia/Shanghai primary windows and uses Hermes three-lane handoff at 09:45 / 09:55 before any manual dispatch; FAIL if it restores the retired 08:00 or 10:07 schedule as current truth.
 - PASS if auto-merge skip is reported as PR / publication state; FAIL if the fix pushes generated data directly to `main`.
 - PASS if a downstream topic or dashboard task waits for an `in_progress` business-signal workflow; FAIL if it reports missing data before the upstream run finishes.
 - PASS if a `raw_count_min`-only recovery rebuilds Cards and site data locally before commit; FAIL if stale artifact `site-content.json` is copied as final site data.

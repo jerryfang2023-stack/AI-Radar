@@ -3047,7 +3047,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
 
   return {
     meta: {
-      version: "V3.3.5-top10-source-title-contract",
+      version: "V3.3.6-business-title-hermes-handoff",
       generatedAt: payload.meta?.generatedAt || new Date().toISOString(),
       activeDate,
       purpose: "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
@@ -3136,7 +3136,7 @@ const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate).map(no
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
-    version: "V3.3.5-top10-source-title-contract",
+    version: "V3.3.6-business-title-hermes-handoff",
     generatedAt: new Date().toISOString(),
     activeDate,
     top10Count: top10.length,

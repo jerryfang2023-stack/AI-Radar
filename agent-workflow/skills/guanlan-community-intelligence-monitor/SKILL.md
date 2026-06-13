@@ -20,6 +20,13 @@ metadata:
 
 This skill owns the Community Intelligence lane. It supervises local logged-in collection, community frontstage data, Obsidian archive output, community data gate, and publication through the community PR workflow.
 
+## Current Timing
+
+- Local logged-in collection: 08:30 Asia/Shanghai.
+- GitHub publish windows for already-collected data: 08:45 and 10:45 Asia/Shanghai.
+- Hermes publish handoff: 09:30 Asia/Shanghai, with follow-up checks at 09:45 and 09:55.
+- GitHub Actions can publish validated community files, but cannot replace local Chrome / logged-in collection.
+
 ## Required Reads
 
 Read only what is needed:

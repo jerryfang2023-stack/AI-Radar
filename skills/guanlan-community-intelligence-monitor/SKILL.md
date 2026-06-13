@@ -51,6 +51,12 @@ npm run assert:community-intelligence -- --date=<YYYY-MM-DD>
 .github/workflows/daily-community-intelligence-pr.yml
 ```
 
+Current timing:
+
+- local logged-in collection: 08:30 Asia/Shanghai;
+- GitHub publish windows: 08:45 and 10:45 Asia/Shanghai;
+- Hermes publish handoff: 09:30 Asia/Shanghai, with 09:45 / 09:55 rechecks when needed.
+
 6. Commit only lane-owned outputs:
    - `01-SiteV2/site/data/community-intelligence.json`;
    - `01-SiteV2/site/data/community-intelligence-daily/`;

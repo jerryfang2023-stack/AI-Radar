@@ -4,7 +4,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedVersion = "V3.3.5-top10-source-title-contract";
+const expectedVersion = "V3.3.6-business-title-hermes-handoff";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
