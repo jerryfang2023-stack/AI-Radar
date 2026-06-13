@@ -1839,15 +1839,8 @@ function main() {
       const relative = path.relative(root, updated.file).replace(/\\/g, "/");
       merged.push(`${spec.poolRef}: merged into ${relative}`);
       written.push(relative);
-      signalIndexSpecs.push({
-        ...spec,
-        id: updated.id || spec.id,
-        title: updated.title || spec.title,
-        type: updated.type || spec.type,
-        company: updated.owner || spec.company,
-      });
-      const sourceLevel = value(section, "source_level").toUpperCase();
-      if (sourceLevel in frontSignalSourceLevels) frontSignalSourceLevels[sourceLevel] += 1;
+      // Historical merges update existing Cards; they are not new same-date
+      // Signal Cards and must not appear in today's signals index.
       continue;
     }
     const file = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", spec.dir, `${date}--signal--${spec.slug}.md`);
