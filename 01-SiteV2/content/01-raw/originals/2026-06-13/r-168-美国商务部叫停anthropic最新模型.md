@@ -1,0 +1,189 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-168
+title: "美国商务部叫停Anthropic最新模型"
+original_url: "https://garymarcus.substack.com/p/breaking-news-us-commerce-department"
+canonical_url: "https://garymarcus.substack.com/p/breaking-news-us-commerce-department"
+source_name: "Gary Marcus：The Road to AI We Can Trust（RSS）"
+source_type: industry
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-13T02:01:10.000Z"
+collected_at: 2026-06-13T05:32:37.546Z
+language: mixed
+full_text_hash: aad210f5f1d486cb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-168-美国商务部叫停anthropic最新模型.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-168-美国商务部叫停anthropic最新模型.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: blocked-http-403
+extraction_quality: failed
+extraction_method: "none"
+readability_score: 0
+extractor_diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
+has_full_text: false
+content_length: 79
+fetch_error: "403 Forbidden"
+raw_qc_decision: block
+raw_qc_downstream_use: not_allowed
+degradation_reasons: ["missing_full_text","missing_snapshot","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"aad210f5f1d486cb","missing":["missing_full_text","missing_snapshot"]}
+source_volatility: medium
+community_name: ""
+capture_scope: aihot_visible_text
+visible_range: "HTTP 403 fallback 可见文本"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"美国商务部叫停Anthropic最新模型","discovery_summary":"在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一\"核选项\"式的决定标志着监管态度的急剧转变。","source_name":"Gary Marcus：The Road to AI We Can Trust（RSS）","origin_url":"https://garymarcus.substack.com/p/breaking-news-us-commerce-department","discovered_at":"2026-06-13T05:25:16.537Z","rank_on_page":53,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "blocked"
+paywall_status: none
+block_status: suspected
+duplicate_status: unique
+url_hash: 847d95e220752a23
+content_hash: aad210f5f1d486cb
+semantic_hash: c3ed51fb16262d4f
+duplicate_of: ""
+first_seen_at: "2026-06-13T02:01:10.000Z"
+last_seen_at: 2026-06-13T05:32:37.546Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["discard"]
+change_action_detected: false
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":2,"case_richness":2,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["Gary Marcus","The Road to AI We Can Trust（RSS）","Anthropic"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":[],"numbers":[],"quotes":["式的决定标志着监管态度的急剧转变。\n在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一"]}
+evidence_seed: {"company_actions":[],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一\"核选项\"式的决定标志着监管态度的急剧转变。","在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。","这一\"核选项\"式的决定标志着监管态度的急剧转变。"]}
+missing_information: ["没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索","没有成本、收入、采用率或市场规模数字","没有可用全文快照"]
+key_excerpts: [{"type":"supporting_context","text":"在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一\"核选项\"式的决定标志着监管态度的急剧转变。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"这一\"核选项\"式的决定标志着监管态度的急剧转变。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 美国商务部叫停Anthropic最新模型
+
+## clean_text
+
+在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一"核选项"式的决定标志着监管态度的急剧转变。
+
+## full_text
+
+在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一"核选项"式的决定标志着监管态度的急剧转变。
+
+## extraction_diagnostics
+
+- extraction_method: none
+- readability_score: 0
+- fetch_status: blocked-http-403
+- extraction_quality: failed
+- diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一"核选项"式的决定标志着监管态度的急剧转变。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   这一"核选项"式的决定标志着监管态度的急剧转变。
+
+## business_elements
+
+- companies: Gary Marcus, The Road to AI We Can Trust（RSS）, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: 暂无公开信息
+- numbers: 暂无公开信息
+- quotes: 式的决定标志着监管态度的急剧转变。
+在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一
+
+## evidence_seed
+
+- company_actions: 暂无公开信息
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一"核选项"式的决定标志着监管态度的急剧转变。 / 在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。 / 这一"核选项"式的决定标志着监管态度的急剧转变。
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 2
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- discard
+
+## missing_information
+
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+- 没有成本、收入、采用率或市场规模数字
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- visible_range: HTTP 403 fallback 可见文本
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: blocked
+- discovery_record: {"discovery_title":"美国商务部叫停Anthropic最新模型","discovery_summary":"在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一\"核选项\"式的决定标志着监管态度的急剧转变。","source_name":"Gary Marcus：The Road to AI We Can Trust（RSS）","origin_url":"https://garymarcus.substack.com/p/breaking-news-us-commerce-department","discovered_at":"2026-06-13T05:25:16.537Z","rank_on_page":53,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+在长达两年的AI监管不足之后，美国政府突然采取极端措施--美国商务部实质上关闭了Anthropic的最新模型。这一"核选项"式的决定标志着监管态度的急剧转变。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
