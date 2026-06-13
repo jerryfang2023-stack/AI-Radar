@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-daily-monitoring
-last_updated: 2026-06-06
+last_updated: 2026-06-13
 priority: current
 ---
 
@@ -70,6 +70,17 @@ Pool is screened evidence.
 - clear importance reason.
 
 Pool type is not Card type.
+
+Signal Card promotion from Core Pool must use the six entry gates in `context/07-v3-intelligence-generation-rules.md`:
+
+- `source_auditability`;
+- `evidence_quality`;
+- `business_signal_scope`;
+- `valid_page_type`;
+- `commercial_importance`;
+- `fact_type_constraints`.
+
+Raw / Pool diagnostics may keep detailed fields such as full text, extraction method, source level, page type, freshness, and evidence object. Those details should be reported under the six gates, not as independent top-level Card policy.
 
 ## Coverage
 

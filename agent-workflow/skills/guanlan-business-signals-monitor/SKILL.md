@@ -10,8 +10,8 @@ metadata:
     responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, Signal Cards, public Top10, Intelligence Map inputs, and trend-candidate inputs."
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, public Top10, graph inputs, trend candidates, PR publication"
-    gates: "monitor QC, post-monitor Raw / Pool gate, Card generation, source-first, frontstage Top10"
-    recent_learning: "Top10 is not complete unless the public top10 contract is present and current, even when Cards and selection data exist."
+    gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Top10"
+    recent_learning: "Signal Card entry must use the six grouped gates, not scattered field-level blockers; Top10 is not complete unless the public top10 contract is present and current."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -43,7 +43,7 @@ For detailed chain work, load the narrower skill:
 - `agent-workflow/skills/guanlan-raw-pool-card/SKILL.md`
 - `agent-workflow/skills/guanlan-trend-candidate-writer/SKILL.md`
 
-For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing Top10, frontstage selection, or title-derived public fields, also read `examples/good-top10-contract.md` and `examples/bad-top10-missing.md`. When repairing morning schedule / recovery delays, also read `examples/good-morning-handoff.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing Top10, frontstage selection, or title-derived public fields, also read `examples/good-top10-contract.md` and `examples/bad-top10-missing.md`. When repairing Card eligibility or Core Pool promotion, also read `examples/good-six-gate-card-entry.md`. When repairing morning schedule / recovery delays, also read `examples/good-morning-handoff.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 
 ## Workflow
 

@@ -795,6 +795,14 @@ const indexOnlyEvidenceTypes = new Set([
 
 const indexOnlyUrlPattern = /(^|\/)(category|categories|tag|tags|topics?|search|docs?|documentation|api|sdk|pricing|marketplace|models?|packages?|tools?|login|signin|sign-in)(\/|$)|readme|readme-ov-file|\/blog\/category\//iu;
 const discoveryOnlyPattern = /\b(aihot|ai hot|paused-opinion-source|hacker news|reddit|hn|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+const CARD_ENTRY_GATES = Object.freeze({
+  sourceAuditability: "source_auditability",
+  evidenceQuality: "evidence_quality",
+  businessSignalScope: "business_signal_scope",
+  validPageType: "valid_page_type",
+  commercialImportance: "commercial_importance",
+  factTypeConstraints: "fact_type_constraints",
+});
 const monthNames = new Map([
   ["january", 0],
   ["february", 1],
@@ -809,6 +817,10 @@ const monthNames = new Map([
   ["november", 10],
   ["december", 11],
 ]);
+
+function cardGateIssue(gate, detail) {
+  return `${gate}:${detail}`;
+}
 
 function isRootOrHomeSourceUrl(value = "") {
   try {
@@ -906,35 +918,42 @@ function corePoolSemanticIssues(section) {
   const readability = Number(value(section, "readability_score"));
   const importanceScore = Number(value(section, "importance_score"));
   const importanceType = value(section, "importance_type");
+  const degradationReasons = value(section, "degradation_reasons");
 
-  if (!/core_pool/u.test(value(section, "pool_routes"))) issues.push("not_core_pool");
-  if (value(section, "raw_qc_decision") !== "allow") issues.push("raw_qc_not_allow");
-  if (value(section, "has_full_text") !== "true") issues.push("missing_full_text");
-  if (isGenericReportOrListSection(section)) issues.push("generic_report_or_list_not_fact_signal");
-  if (!sourceUrl || sourceUrl === "no-url") issues.push("missing_source_url");
-  if (!value(section, "extraction_method")) issues.push("missing_extraction_method");
-  if (!Number.isFinite(readability) || readability < 24) issues.push("low_readability");
-  if (!["high", "medium"].includes(extractionQuality)) issues.push("weak_extraction_quality");
+  if (!/core_pool/u.test(value(section, "pool_routes"))) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "not_core_pool"));
+  if (value(section, "raw_qc_decision") !== "allow") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "raw_qc_not_allow"));
+  if (value(section, "has_full_text") !== "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_full_text"));
+  if (isGenericReportOrListSection(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "generic_report_or_list_not_fact_signal"));
+  if (!sourceUrl || sourceUrl === "no-url") issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "missing_source_url"));
+  if (!value(section, "extraction_method")) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_extraction_method"));
+  if (!Number.isFinite(readability) || readability < 24) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "low_readability"));
+  if (!["high", "medium"].includes(extractionQuality)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "weak_extraction_quality"));
   if (/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") {
-    issues.push("user_feedback_not_fact_signal");
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "user_feedback_or_commentary_not_verified_fact"));
   }
-  if (isStalePublication(section, 30)) issues.push("stale_source_date");
-  if (value(section, "index_only_evidence") === "true") issues.push("index_only_evidence");
-  if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(`index_only_evidence_type:${evidenceObjectType}`);
+  if (isStalePublication(section, 30)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "stale_source_date"));
+  if (value(section, "index_only_evidence") === "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "index_only_evidence"));
+  if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, `index_only_evidence_type:${evidenceObjectType}`));
   if (isRootOrHomeSourceUrl(sourceUrl) || (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl))) {
-    issues.push("index_or_directory_url");
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "index_or_directory_url"));
   }
   if (discoveryOnlyPattern.test(`${value(section, "acquisition_channel")} ${value(section, "source_role")}`) && value(section, "source_role") !== "resolved_original_source") {
-    issues.push("discovery_source_not_resolved");
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "discovery_source_not_resolved"));
   }
-  if (!coreImportanceTypes.has(importanceType)) issues.push(`unsupported_importance_type:${importanceType || "missing"}`);
-  if (!Number.isFinite(importanceScore) || importanceScore < 4) issues.push("low_importance_score");
-  if (!sectionHasUsableEvidenceObject(section)) issues.push("incomplete_evidence_object");
-  if (/missing_full_text|missing_snapshot|missing_hash|missing_excerpt|index_only_or_directory_page|discovery_or_feedback_source_boundary|raw_evidence_unusable/iu.test(value(section, "degradation_reasons"))) {
-    issues.push("degradation_reason_blocks_core");
+  if (!coreImportanceTypes.has(importanceType)) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
+  if (!Number.isFinite(importanceScore) || importanceScore < 4) issues.push(cardGateIssue(CARD_ENTRY_GATES.commercialImportance, "low_importance_score"));
+  if (!sectionHasUsableEvidenceObject(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "incomplete_evidence_object"));
+  if (/missing_full_text|missing_snapshot|missing_hash|missing_excerpt|raw_evidence_unusable/iu.test(degradationReasons)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "degradation_reason_blocks_core"));
+  }
+  if (/index_only_or_directory_page/iu.test(degradationReasons)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "degradation_reason_index_only"));
+  }
+  if (/discovery_or_feedback_source_boundary/iu.test(degradationReasons)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "degradation_reason_feedback_or_discovery"));
   }
   if (/官网首页|产品目录|文档目录|README|包页|模型页|搜索结果|SEO|工具导航|目录页|首页|category page|directory|search result/iu.test(text)) {
-    issues.push("text_indicates_index_only");
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "text_indicates_index_only"));
   }
   return issues;
 }
@@ -1167,23 +1186,7 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
 }
 
 function isEligibleAutoSignal(section) {
-  const sourceUrl = value(section, "source_url");
-  const sourceLevel = value(section, "source_level");
-  const importanceType = value(section, "importance_type");
-  const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
-  const semanticIssues = corePoolSemanticIssues(section);
-  const directFundingOverride =
-    importanceType === "important_funding"
-    && semanticIssues.length === 0
-    && /Announcing\b.{0,140}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,100}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(textForInference(section));
-  if (directFundingOverride) return true;
-  return semanticIssues.length === 0
-    && /^(S|A|B)$/u.test(sourceLevel)
-    && (importanceType !== "important_funding" || isSingleCompanyFundingSignal(section))
-    && sourceUrl
-    && sourceUrl !== "no-url"
-    && !isNonCommercialPolicyOrEthicsSignal(section)
-    && !/(learn\.microsoft\.com|\/docs?\/|documentation|README|readme-ov-file|model page|product catalog|why we(?:'|’)re investing)/iu.test(text);
+  return autoSignalEligibilityIssues(section).length === 0;
 }
 
 function autoSignalSpec(poolRef, section, index) {
@@ -1277,28 +1280,29 @@ function autoSignalEligibilityIssues(section) {
   const sourceLevel = value(section, "source_level");
   const importanceType = value(section, "importance_type");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
-  const directFundingOverride =
+  const directFundingProof =
     importanceType === "important_funding"
-    && issues.length === 0
     && /Announcing\b.{0,140}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,100}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(textForInference(section));
-  if (directFundingOverride) return [];
-  if (!/^(S|A|B)$/u.test(sourceLevel)) issues.push(`source_level_not_SAB:${sourceLevel || "missing"}`);
-  if (importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
-    issues.push("funding_not_single_company_round");
+  if (!/^(S|A|B)$/u.test(sourceLevel)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, `source_level_not_sab:${sourceLevel || "missing"}`));
   }
-  if (!sourceUrl || sourceUrl === "no-url") issues.push("missing_source_url");
-  if (isNonCommercialPolicyOrEthicsSignal(section)) issues.push("non_commercial_policy_or_ethics_signal");
+  if (importanceType === "important_funding" && !isSingleCompanyFundingSignal(section) && !directFundingProof) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
+  }
+  if (isNonCommercialPolicyOrEthicsSignal(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "non_commercial_policy_or_ethics_signal"));
+  }
   if (/(learn\.microsoft\.com|\/docs?\/|documentation|README|readme-ov-file|model page|product catalog)/iu.test(text) || /why we.*re investing/iu.test(text)) {
-    issues.push("docs_or_catalog_or_investing_thesis");
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "docs_or_catalog_or_investing_thesis"));
   }
   return uniqueIssues(issues);
 }
 
 function promotePriorityForIssues(issues = []) {
-  if (issues.some((issue) => /stale_source_date|generic_report_or_list|index_only|user_feedback_not_fact_signal|text_indicates_index_only/iu.test(issue))) {
+  if (issues.some((issue) => /valid_page_type|fact_type_constraints|stale_source_date|generic_report_or_list|index_only|user_feedback_not_fact_signal|text_indicates_index_only/iu.test(issue))) {
     return "low";
   }
-  if (issues.some((issue) => /missing_full_text|missing_source_url|weak_extraction_quality|incomplete_evidence_object/iu.test(issue))) {
+  if (issues.some((issue) => /source_auditability|evidence_quality|missing_full_text|missing_source_url|weak_extraction_quality|incomplete_evidence_object/iu.test(issue))) {
     return "medium";
   }
   return "review";
@@ -1307,10 +1311,12 @@ function promotePriorityForIssues(issues = []) {
 function repairSuggestionForIssues(issues = []) {
   const text = issues.join(" ");
   if (/stale_source_date/iu.test(text)) return "Find a fresh same-event source or keep as context-only Core Pool evidence.";
-  if (/generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only/iu.test(text)) return "Resolve to a dated single company, product, funding, or customer event before promoting.";
-  if (/user_feedback_not_fact_signal/iu.test(text)) return "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.";
+  if (/valid_page_type|generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only|docs_or_catalog_or_investing_thesis/iu.test(text)) return "Resolve to a dated single company, product, funding, or customer event before promoting.";
+  if (/fact_type_constraints:.*user_feedback|user_feedback_not_fact_signal/iu.test(text)) return "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.";
   if (/funding_not_single_company_round/iu.test(text)) return "Use a single-company funding announcement with amount, round, investor, and date.";
-  if (/missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(text)) return "Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.";
+  if (/source_auditability|evidence_quality|missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(text)) return "Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.";
+  if (/business_signal_scope/iu.test(text)) return "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.";
+  if (/commercial_importance/iu.test(text)) return "Keep as Pool evidence unless the item has a clear commercial action, customer, funding, or deployment signal.";
   if (/duplicate_event_cluster/iu.test(text)) return "Keep as supporting evidence for the linked event instead of creating a duplicate Card.";
   return "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.";
 }

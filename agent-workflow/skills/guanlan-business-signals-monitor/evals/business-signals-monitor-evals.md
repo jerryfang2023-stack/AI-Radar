@@ -32,6 +32,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when Business Signals has only two primary schedule windows, 09:07 and 09:37 Asia/Shanghai, and Hermes early handoff runs at 09:45 / 09:55 to dispatch the lane if both primary attempts fail or if no same-date success is visible and no run is active by 09:55.
    - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops instead of producing a Hermes report, recovery action, and Codex handoff before 10:00.
 
+10. `six_gate_card_entry_contract`
+    - Pass when Core Pool -> Signal Card eligibility is expressed through exactly these grouped gates: `source_auditability`, `evidence_quality`, `business_signal_scope`, `valid_page_type`, `commercial_importance`, and `fact_type_constraints`.
+    - Pass when detailed diagnostics such as missing full text, extraction method, source URL, source level, stale date, page type, evidence object, funding round shape, or user feedback are reported under one of those gates.
+    - Fail when scattered field checks are treated as independent top-level Card policy, or when a repair lowers source-first evidence requirements to fill Top10.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.
