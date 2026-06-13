@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-06-12T08:31:13.368Z",
+    "generatedAt": "2026-06-13T04:07:41.817Z",
     "feedGeneratedAt": "2026-06-12T07:57:08.681Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 19,
     "remarks": 44,
-    "podcasts": 3,
+    "podcasts": 1,
     "blogsBuilt": 6,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 13,
     "rawTweets": 25
   },
@@ -22,12 +22,18 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 9
+      "count": 8
     },
     {
       "name": "Dataiku Blog",
       "handle": "dataiku.com",
       "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
+      "count": 4
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 4
     },
     {
@@ -58,12 +64,6 @@
       "name": "Swyx",
       "handle": "swyx",
       "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
-      "count": 3
-    },
-    {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 3
     },
     {
@@ -525,16 +525,16 @@
       "replies": 0
     },
     {
-      "id": "https://www.dataiku.com/stories/blog/alteryx-data-analytics-alternatives",
+      "id": "https://www.dataiku.com/stories/blog/enterprise-analytics-platforms",
       "source": "blog",
       "name": "Dataiku Blog",
       "handle": "dataiku.com",
       "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
-      "text": "Alteryx data analytics in 2026: strengths, limitations, and alternatives",
-      "content": "In our view, Alteryx built its reputation on a simple promise: Let business analysts do data work that used to require SQL, Python, or a request to IT. For years, that promise held. Drag-and-drop workflows replaced manual spreadsheet processes. Teams that waited weeks for data engineerin",
-      "contentTranslation": "我们认为， Alteryx的声誉建立在一个简单的承诺之上：让业务分析师做过去需要SQL、Python或IT请求的数据工作。多年来，这个承诺一直保持着。拖放工作流取代了手动电子表格流程。等待数据工程师数周的团队",
+      "text": "How enterprise analytics platforms are evolving: from dashboards to AI-driven decisions",
+      "content": "The enterprise analytics platforms of 2023 were dashboard factories. The ones built for 2026 are decision engines where AI agents, machine learning (ML) models, and business rules operate alongside traditional reporting. But many enterprises still cannot route model outputs into decision",
+      "contentTranslation": "2023年的企业分析平台是仪表板工厂。为2026年构建的决策引擎是AIAgent、机器学习(ML)模型和业务规则与传统报告一起运行的决策引擎。但许多企业仍然无法将模型输出转化为决策",
       "contentTranslationStatus": "translated",
-      "translation": "2026年Alteryx数据分析：优势、局限性和替代方案",
+      "translation": "企业分析平台如何发展：从仪表板到AI驱动的决策",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -556,9 +556,126 @@
         }
       ],
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Fri, 05 Jun 2026 14:30:08 GMT",
-      "date": "Fri, 05 Ju",
-      "url": "https://www.dataiku.com/stories/blog/alteryx-data-analytics-alternatives",
+      "createdAt": "Fri, 12 Jun 2026 11:45:00 GMT",
+      "date": "Fri, 12 Ju",
+      "url": "https://www.dataiku.com/stories/blog/enterprise-analytics-platforms",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-06-12",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "OpenAI buys Ona 🤝, Anthropic backtracks 🔁, Xiaomi’s MiMo code 👨‍💻",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "OpenAI收购ONA🤝、Anthropic backtracks🔁、小米的MiMo代码 👨‍💻",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "formalTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "Fri, 12 Jun 2026 00:00:00 GMT",
+      "date": "Fri, 12 Ju",
+      "url": "https://tldr.tech/ai/2026-06-12",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+      "content": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Well this is nuts : The US government, citing national security authorities, has issued an export co",
+      "contentTranslation": "关于美国政府关于暂停访问寓言5和神话5的指令的声明嗯，这太疯狂了：美国政府以国家安全当局为由，发布了一份出口协议",
+      "contentTranslationStatus": "translated",
+      "translation": "关于美国政府关于暂停访问寓言5和神话5的指令的声明",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-13T01:01:50+00:00",
+      "date": "2026-06-13",
+      "url": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/12/openai-webrtc/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "OpenAI WebRTC Audio Session, now with document context",
+      "content": "OpenAI WebRTC Audio Session, now with document context I built the first version of this tool in December 2024 to try out the then-new OpenAI WebRTC",
+      "contentTranslation": "OpenAI WebRTC音频会话，现在有了文档上下文，我在2024年12月构建了这个工具的第一个版本，以尝试当时新的OpenAI WebRTC",
+      "contentTranslationStatus": "translated",
+      "translation": "OpenAI WebRTC音频会话，现在带有文档上下文",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-12T23:53:04+00:00",
+      "date": "2026-06-12",
+      "url": "https://simonwillison.net/2026/Jun/12/openai-webrtc/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1660,149 +1777,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Running Python code in a sandbox with MicroPython and WASM",
-      "content": "I've been experimenting with different approaches to running code in a sandbox for several years now, but my latest attempt feels like it might finally have all of the characteristics I've been looking for. I've released it as an alpha package called <a href=\"https://github.com/simonw/micropython",
-      "contentTranslation": "几年来，我一直在尝试在沙箱中运行代码的不同方法，但我的最新尝试似乎终于具备了我一直在寻找的所有特征。我已经发布了一个名为< a href = \"的alpha包",
-      "contentTranslationStatus": "translated",
-      "translation": "用 MicroPython 和 WASM 在沙箱中运行 Python 代码",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "Agent",
-      "formalTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "2026-06-06T03:53:34+00:00",
-      "date": "2026-06-06",
-      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "OpenAI Help: Lockdown Mode",
-      "content": "OpenAI Help: Lockdown Mode OpenAI first teased this in February , but now it's live and \"rolling out t",
-      "contentTranslation": "OpenAI帮助：锁定模式OpenAI在2月份首次戏弄了这一点，但现在它已经上线并“推出",
-      "contentTranslationStatus": "translated",
-      "translation": "OpenAI 帮助文档：Lockdown Mode",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-05T23:56:40+00:00",
-      "date": "2026-06-05",
-      "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Quoting Andreas Kling",
-      "content": "We will no longer accept public pull requests. [...] A substantial patch used to imply substantial effort, and that effort was a reasonable proxy for good faith. That assumption no longer holds. [...] Wh",
-      "contentTranslation": "我们将不再接受公开的拉取请求。[...]一个实质性的补丁用于暗示大量的努力，这种努力是诚信的合理代表。这种假设不再成立。[...] Wh",
-      "contentTranslationStatus": "translated",
-      "translation": "引用 Andreas Kling 的观点",
-      "translationStatus": "translated",
-      "translationMethod": "static_blog_title",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-05T11:10:05+00:00",
-      "date": "2026-06-05",
-      "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Latent Space",
-      "title": "🔬ESM: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
-      "url": "https://www.latent.space/p/esmfold2",
-      "publishedAt": "Wed, 27 May 2026 17:46:16 GMT",
-      "excerpt": "Editor’s note: In our first BioHub pod with Priscilla and Mark they discussed their acquisition of EvoScale, led by Alex Rives, who is now Head of Science at BioHub. With ESM-1 they trained language models on millions of protein sequences drawn from across life, with a simple “next token” objective: predict the amino acids that have been randomly masked out, based on the context of the rest of the sequence. But they soon found that these models also learned biological structure and function, including properties the model had never been explicitly s…"
-    },
-    {
-      "source": "podcast",
-      "name": "AI & I by Every",
-      "title": "We Automated Everything With AI and Tripled Our Headcount",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Automated-Everything-With-AI-and-Tripled-Our-Headcount-e3jvmqf",
-      "publishedAt": "Wed, 27 May 2026 16:28:59 GMT",
-      "excerpt": "Dan Shipper runs one of the most AI-native companies today. Every has agents embedded in nearly every workflow—“if you swing a stick in our Slack, you're as likely to hit a human as an agent,” he says. And yet the company has grown from four people to 30 since GPT-3 came out, and is still hiring.Why does Dan believe there's more human work to do than ever?In a format flip for AI & I, Every's COO Brandon Gell turns the tables and interviews Dan about his latest essay, “After Automation”—an 8,000-word argument for why rising automation doesn't eliminate demand for human work, it increases it. The thesis: AI makes yesterday's expert competence cheap and widely available, which floods every field with output that's close but not quite right—and that creates more demand for the humans who can take it the rest of the way.Dan talked with Brandon about the paradox at the heart of a…"
+      "name": "Training Data",
+      "title": "Google DeepMind's Logan Kilpatrick: Why the Model Eats the Harness",
+      "url": "https://www.youtube.com/watch?v=cMAs8z2dehs",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "excerpt": ""
     }
   ]
 }
