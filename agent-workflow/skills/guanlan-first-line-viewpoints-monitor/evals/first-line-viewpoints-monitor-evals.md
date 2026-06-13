@@ -28,6 +28,10 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
 8. `lane_isolation`
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
 
+9. `three_lane_early_handoff`
+   - Pass when Hermes three-lane early handoff checks First-Line Viewpoints at 09:45 / 09:55 Asia/Shanghai and dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` if same-date builders data / Obsidian person-date timelines are missing and no run is active.
+   - Fail when the lane waits until the old 10:30 supervision check without an early report, dispatch action, and Codex handoff path.
+
 ## Repair Loop
 
 When a check fails, repair the builder data source, build script, gate, or timeline sync path. Do not unblock the lane by weakening translation, source URL, or idempotency requirements.

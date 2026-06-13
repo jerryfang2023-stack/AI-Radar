@@ -29,13 +29,19 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when publication uses automation branch -> PR -> `main` -> GitHub Pages, not direct deployment or direct generated-data push to `main`.
 
 9. `before_10_hermes_handoff`
-   - Pass when Business Signals has only two primary schedule windows, 09:07 and 09:37 Asia/Shanghai, and Hermes early handoff runs at 09:45 / 09:55 to dispatch the lane if both primary attempts fail or if no same-date success is visible and no run is active by 09:55.
+   - Pass when Business Signals has only two primary schedule windows, 09:07 and 09:37 Asia/Shanghai, and Hermes three-lane early handoff runs at 09:45 / 09:55 to dispatch the lane if primary attempts fail or if no healthy same-date assets are visible and no run is active.
+   - Pass when the scheduled early handoff entry is `.github/workflows/hermes-three-lane-early-handoff.yml`, while the older Business-only handoff workflow remains manual compatibility only.
    - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops instead of producing a Hermes report, recovery action, and Codex handoff before 10:00.
 
 10. `six_gate_card_entry_contract`
     - Pass when Core Pool -> Signal Card eligibility is expressed through exactly these grouped gates: `source_auditability`, `evidence_quality`, `business_signal_scope`, `valid_page_type`, `commercial_importance`, and `fact_type_constraints`.
     - Pass when detailed diagnostics such as missing full text, extraction method, source URL, source level, stale date, page type, evidence object, funding round shape, or user feedback are reported under one of those gates.
     - Fail when scattered field checks are treated as independent top-level Card policy, or when a repair lowers source-first evidence requirements to fill Top10.
+
+11. `top10_title_source_boundary`
+    - Pass when Top10 titles name the actual company, product, funding round, release, customer, or workflow event and do not contain placeholder wording such as "original AI event", "purpose see original", or source-domain subjects like "linkedin financing" / "github original title".
+    - Pass when LinkedIn/X/Reddit/Hacker News posts, GitHub repo root/tree/blob pages, package/model pages, marketplace listings, and generic funding/startup lists are excluded from formal Signal Cards unless recaptured through a dated source-backed event page.
+    - Pass when the public Core Pool candidate list is event-deduped so repeated pages about the same model release or financing round do not fill the candidate area.
 
 ## Repair Loop
 

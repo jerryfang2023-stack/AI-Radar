@@ -331,11 +331,21 @@ function eventFingerprint(card = {}) {
   return `${card.date}|${normalized.slice(0, 80)}`;
 }
 
+function publicSignalKnownEventFingerprint(card = {}) {
+  const text = normalizedEventText(card).toLowerCase();
+  if (/minimax/iu.test(text) && /\bm3\b/iu.test(text)) return `${card.date}|minimax|m3`;
+  if (/mistral/iu.test(text) && /(funding|financing|valuation|round|融资|估值|欧元|billion|30亿|200亿)/iu.test(text)) {
+    return `${card.date}|mistral|funding`;
+  }
+  return "";
+}
+
 function isDuplicateFrontstageEvent(card = {}, selectedCards = []) {
-  const fingerprint = eventFingerprint(card);
+  const fingerprint = publicSignalKnownEventFingerprint(card) || eventFingerprint(card);
   const eventText = normalizedEventText(card);
   return selectedCards.some((selected) => {
-    if (fingerprint && fingerprint === eventFingerprint(selected)) return true;
+    const selectedFingerprint = publicSignalKnownEventFingerprint(selected) || eventFingerprint(selected);
+    if (fingerprint && fingerprint === selectedFingerprint) return true;
     return textSimilarity(eventText, normalizedEventText(selected)) >= 0.66;
   });
 }
@@ -356,6 +366,57 @@ function domain(url = "") {
   } catch {
     return "";
   }
+}
+
+function urlPathSegments(url = "") {
+  try {
+    return new URL(url).pathname.split("/").map((part) => part.trim()).filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+function isSocialOrCommunitySourceUrl(sourceUrl = "") {
+  const host = domain(sourceUrl).toLowerCase();
+  return /(^|\.)linkedin\.com$|(^|\.)x\.com$|(^|\.)twitter\.com$|(^|\.)reddit\.com$|news\.ycombinator\.com$|hn\.algolia\.com$/u.test(host);
+}
+
+function isRepositoryOrCatalogSourceUrl(sourceUrl = "") {
+  const host = domain(sourceUrl).toLowerCase();
+  const segments = urlPathSegments(sourceUrl).map((part) => part.toLowerCase());
+  const path = `/${segments.join("/")}`;
+  if (/github\.com$/u.test(host)) {
+    if (segments.includes("releases") || segments.includes("tags")) return false;
+    if (segments.length <= 2) return true;
+    if (segments[2] === "tree" || segments[2] === "blob") return true;
+  }
+  if (/docs\.github\.com$|learn\.microsoft\.com$|docs\./u.test(host)) return true;
+  if (/npmjs\.com$|pypi\.org$|chromewebstore\.google\.com$|appsource\.microsoft\.com$/u.test(host)) return true;
+  if (/huggingface\.co$/u.test(host) && /^\/(?:models|datasets|spaces)\//u.test(path)) return true;
+  if (/(^|\/)(docs?|documentation|api|sdk|marketplace|models?|packages?|tools?|catalog)(\/|$)/iu.test(path)
+    && !/(blog|news|press|release|announc|changelog|customer|case-study)/iu.test(path)) {
+    return true;
+  }
+  return false;
+}
+
+function isGenericFundingOrListSource(card = {}) {
+  const text = [
+    card.title,
+    card.displayTitle,
+    card.sourceTitle,
+    card.originalTitle,
+    card.sourceUrl,
+    card.translatedFact,
+  ].filter(Boolean).join(" ");
+  return /angelinvestorsnetwork\.com\/venture-capital\/series-b-enterprise-ai-agents|top ai agent startups|ai agent startups|funding map|ranked by funding|pre-seed investors|57 early stage ai startups|startup funding|venture capital observatory|funding tracker/iu.test(text);
+}
+
+function isPublicBusinessSignalEligible(card = {}) {
+  if (isSocialOrCommunitySourceUrl(card.sourceUrl)) return false;
+  if (isRepositoryOrCatalogSourceUrl(card.sourceUrl)) return false;
+  if (isGenericFundingOrListSource(card)) return false;
+  return true;
 }
 
 function headingSection(markdown, heading) {
@@ -814,10 +875,33 @@ function sourceFrontstageTitle(card = {}, originalTitle = "") {
     .find(Boolean) || "";
 }
 
+function isBadPublicDisplayTitle(title = "") {
+  return /用途见原文|原文所述|原文 AI 事件|原文事件标题|的原文业务场景|linkedin\s+(?:的原文|融资)|github\s+的原文|devblogs\s+应用|angelinvestorsnetwork\s+融资/iu.test(String(title || ""));
+}
+
+function cleanBadPublicDisplayTitle(title = "") {
+  return String(title || "")
+    .replace(/，?用途见原文[:：].*$/u, "")
+    .replace(/发布原文所述能力[:：]\s*/u, "发布 ")
+    .replace(/应用原文所述场景[:：]\s*/u, "应用 ")
+    .replace(/的原文 AI 事件[:：]\s*/u, "：")
+    .replace(/的原文事件标题[:：]\s*/u, "：")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function publicTitleCandidate(title = "", sourceUrl = "") {
+  const raw = String(title || "").trim();
+  if (!raw || isBadPublicDisplayTitle(raw)) return "";
+  const candidate = hasCjk(raw) ? raw : safeFrontstageTitle(raw, sourceUrl);
+  const cleaned = cleanBadPublicDisplayTitle(candidate);
+  return cleaned && !isBadPublicDisplayTitle(cleaned) ? cleaned : "";
+}
+
 function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "") {
-  const source = String(sourceTitle || "").trim();
-  if (source) return hasCjk(source) ? source : safeFrontstageTitle(source, sourceUrl);
-  return generatedTitle || "";
+  return publicTitleCandidate(sourceTitle, sourceUrl)
+    || publicTitleCandidate(generatedTitle, sourceUrl)
+    || cleanBadPublicDisplayTitle(generatedTitle || sourceTitle || "");
 }
 
 function normalizeFrontstageDisplay(card = {}) {
@@ -963,6 +1047,8 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
 function frontstageChineseTitle(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const rules = [
+    [/sycamore\.so\/press-releases\/sycamore-raises-65m-seed/u, "Sycamore 融资 6500 万美元，建设企业 Agent 操作系统"],
+    [/infoworld\.com.*github-launches-agent-hq/u, "GitHub 推出 Agent HQ，统一管理 AI 编码代理"],
     [/bcg\.com.*200-billion-dollar-ai-opportunity/u, "BCG：科技服务业存在 2000 亿美元 AI 机会"],
     [/research\.ibm\.com.*agentic-scaling-laws/u, "IBM：企业 AI 采用需要可扩展的 Agent 逻辑"],
     [/huggingface\.co\/blog\/ibm-research\/agent-logic/u, "IBM：企业 AI 采用需要可扩展的 Agent 逻辑"],
@@ -1970,11 +2056,56 @@ function candidatePromotionCopy(promotion = {}) {
   };
 }
 
+function corePoolCandidateEventKey(item = {}) {
+  const text = [
+    item.title,
+    item.originalTitle,
+    item.summary,
+    item.sourceUrl,
+    item.subject,
+  ].filter(Boolean).join(" ").toLowerCase();
+  if (/minimax/iu.test(text) && /\bm3\b/iu.test(text)) return `${item.date}|candidate|minimax|m3`;
+  if (/mistral/iu.test(text) && /(funding|financing|valuation|round|融资|估值|欧元|billion|30亿|200亿)/iu.test(text)) {
+    return `${item.date}|candidate|mistral|funding`;
+  }
+  const amount = text.match(/(?:\$|€|eur|usd)?\s?\d+(?:\.\d+)?\s?(?:m|b|million|billion|亿|万)?/iu)?.[0] || "";
+  const subject = normalizedComparableText(item.subject || item.title || item.originalTitle).slice(0, 56);
+  const title = normalizedComparableText(item.originalTitle || item.title).slice(0, 92);
+  return `${item.date}|candidate|${item.category}|${subject}|${amount || title}`;
+}
+
+function corePoolCandidateQuality(item = {}) {
+  let score = Number(item.frontstageRankScore) || 0;
+  if (item.promotionStatus === "promoted_to_signal_card") score += 100000;
+  if (item.sourceUrl && !isSocialOrCommunitySourceUrl(item.sourceUrl)) score += 1000;
+  if (item.originalHighlights?.length) score += 100;
+  if (item.translatedFact || item.summary) score += 40;
+  return score;
+}
+
+function dedupeCorePoolCandidateItems(items = []) {
+  const byKey = new Map();
+  for (const item of items) {
+    const key = corePoolCandidateEventKey(item);
+    const current = byKey.get(key);
+    if (!current || corePoolCandidateQuality(item) > corePoolCandidateQuality(current)) {
+      byKey.set(key, item);
+    }
+  }
+  return [...byKey.values()];
+}
+
 function buildCorePoolCandidateItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   const notPromotedByRef = corePoolNotPromotedMap(activeDate);
-  return poolCandidateSectionsForDate(activeDate)
+  const items = poolCandidateSectionsForDate(activeDate)
     .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
+    .filter((section) => isPublicBusinessSignalEligible({
+      title: poolTitle(section),
+      originalTitle: poolTitle(section),
+      sourceUrl: poolValue(section, "source_url"),
+      sourceTitle: poolTitle(section),
+    }))
     .map((section) => {
       const ref = poolRef(section);
       const sourceUrl = poolValue(section, "source_url");
@@ -2047,7 +2178,8 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
       if (!hasSourceBackedFrontstageFact(item)) return null;
       return item;
     })
-    .filter(Boolean)
+    .filter(Boolean);
+  return dedupeCorePoolCandidateItems(items)
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
 }
 
@@ -2988,7 +3120,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
 const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence))
+const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence).filter(isPublicBusinessSignalEligible))
   .map(normalizeFrontstageDisplay)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));

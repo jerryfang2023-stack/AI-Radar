@@ -125,6 +125,7 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
 
 4. `valid_page_type`
    - Must be a dated concrete event page, not a homepage, directory, docs index, catalog, package/model listing, marketplace listing, search result, generic report, or broad list unless that page itself contains a concrete dated event.
+   - GitHub repo root / tree / blob pages, package or model pages, marketplace listings, and broad funding / startup list pages must not become formal Cards; resolve them to a dated release, announcement, funding, or customer page first.
    - Cannot be deleted because index-like pages repeatedly generated duplicate and generalized Cards instead of source-backed event Cards.
 
 5. `commercial_importance`
@@ -133,6 +134,7 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
 
 6. `fact_type_constraints`
    - Funding must be a single-company financing round or equivalent clearly dated financing event; community feedback, comments, pure viewpoints, non-commercial policy/ethics material, and user feedback cannot be direct Card evidence unless separately recaptured through Raw / Pool from a source-backed business event.
+   - LinkedIn, X / Twitter, Reddit, Hacker News, and other social/community posts are discovery or feedback evidence by default. They cannot be direct Business Signal Card evidence even when they mention an amount, launch, repo, or customer.
    - Cannot be deleted because these are the boundaries that prevent duplicated posts, opinion material, and broad commentary from becoming business-signal facts.
 
 Daily business-signal target:
@@ -163,6 +165,8 @@ Card title rules:
 - prefer original title or direct event title;
 - do not mechanically rewrite into abstract judgment;
 - do not use phrases like "materials show", "worth watching", "points to", or internal production wording.
+- do not use placeholder phrases such as "original AI event", "use case seen in original", "purpose see original", or source-domain subjects such as "linkedin financing" / "github original title";
+- if the title cannot name the actual company, product, funding round, customer, or release, the item is not ready for Top10 display.
 
 Card detail rules:
 
@@ -178,6 +182,12 @@ Hard stops:
 - do not use tags, `business_elements`, `why_selected`, `business_meaning`, search snippets, or old frontstage copy as source;
 - do not show backend fields when frontstage copy is missing;
 - do not include follow-builders or opinion material in business-signal cards.
+
+Candidate pool display rules:
+
+- public candidate pool entries must be event-deduped, not only URL-deduped;
+- multiple pages about the same event, such as the same model release or the same funding round, should keep the highest-quality source-backed item and treat the rest as supporting evidence;
+- social/community, repo/catalog, and generic list sources remain available in backend Pool evidence but should not fill the public candidate list as repeated near-duplicates.
 
 ## 5. Knowledge Base Rules
 
