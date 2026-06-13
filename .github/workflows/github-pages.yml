@@ -9,6 +9,15 @@ on:
       - "01-SiteV2/content/**"
       - "01-SiteV2/knowledge/**"
       - ".github/workflows/github-pages.yml"
+  workflow_run:
+    # GitHub suppresses workflow triggers from some bot-authored pushes. These
+    # production workflows auto-merge data PRs, so deploy after they succeed.
+    workflows:
+      - WaveSight Business Signals PR
+      - WaveSight First-Line Viewpoints PR
+      - WaveSight Community Intelligence PR
+    types:
+      - completed
   workflow_dispatch:
     inputs:
       public_brief_date:
@@ -28,6 +37,7 @@ concurrency:
 jobs:
   deploy:
     name: Publish Frontstage Site
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
