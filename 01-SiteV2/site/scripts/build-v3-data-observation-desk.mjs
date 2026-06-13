@@ -1917,6 +1917,14 @@ function corePoolNotPromotedMap(date = "") {
 }
 
 function publicPromotionIssue(issue = "") {
+  if (/source_auditability/iu.test(issue)) return "来源不可审计，需要补齐原文或来源等级";
+  if (/evidence_quality:stale_source_date/iu.test(issue)) return "来源时间过旧，适合保留为背景证据";
+  if (/evidence_quality/iu.test(issue)) return "原文证据质量不完整，需要补采全文、摘录或哈希";
+  if (/business_signal_scope/iu.test(issue)) return "不属于产品、融资或案例类商业信号";
+  if (/valid_page_type/iu.test(issue)) return "页面类型不适合直接成卡，需要回到具体事件页";
+  if (/commercial_importance/iu.test(issue)) return "商业重要性不足，暂留为候选池证据";
+  if (/fact_type_constraints:.*funding_not_single_company_round/iu.test(issue)) return "融资信息不是单一公司轮次事件";
+  if (/fact_type_constraints/iu.test(issue)) return "事实类型不满足正式商业信号卡约束";
   if (/stale_source_date/iu.test(issue)) return "来源时间过旧，适合保留为背景证据";
   if (/generic_report_or_list_not_fact_signal/iu.test(issue)) return "榜单或报告类材料，不是单一事实信号";
   if (/text_indicates_index_only|index_only|index_or_directory_url/iu.test(issue)) return "目录或索引页，不适合直接成卡";
@@ -1930,6 +1938,14 @@ function publicPromotionIssue(issue = "") {
 
 function publicRepairSuggestion(issues = []) {
   const text = issues.join(" ");
+  if (/source_auditability/iu.test(text)) return "补齐可审计原文链接、来源等级，避免只依赖搜索入口或聚合页。";
+  if (/evidence_quality:stale_source_date/iu.test(text)) return "补充同一事件的近期来源；否则仅作为背景证据保留。";
+  if (/evidence_quality/iu.test(text)) return "修复 Raw 采集，补齐原文链接、全文、摘录、哈希和抽取方法。";
+  if (/business_signal_scope/iu.test(text)) return "只把产品/服务、融资、客户案例或垂直部署事件推进为 Signal Card。";
+  if (/valid_page_type/iu.test(text)) return "回到有日期、主体、动作的单一公司事件页后再晋级。";
+  if (/commercial_importance/iu.test(text)) return "保留为 Pool 证据；除非补到清晰商业动作、客户、融资或部署信号。";
+  if (/fact_type_constraints:.*funding_not_single_company_round/iu.test(text)) return "补齐单一公司的融资金额、轮次、投资方和日期。";
+  if (/fact_type_constraints/iu.test(text)) return "用原始报道、公司公告或一手材料替代评论、反馈或非商业政策材料。";
   if (/stale_source_date/iu.test(text)) return "补充同一事件的近期来源；否则仅作为背景证据保留。";
   if (/generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only|index_or_directory_url/iu.test(text)) {
     return "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。";

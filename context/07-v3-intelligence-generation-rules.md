@@ -2,7 +2,7 @@
 status: current
 scope: v3-raw-pool-card-trend-rules
 version: V3.3.5-builder-obsidian-date-timelines
-last_updated: 2026-06-11
+last_updated: 2026-06-13
 priority: current
 ---
 
@@ -108,6 +108,32 @@ Current V3 business-signal `signal_card` types are only:
 - `product_service`;
 - `funding`;
 - `case`.
+
+Signal Card entry gate is expressed as six required gates. Do not re-expand these into scattered top-level field blockers:
+
+1. `source_auditability`
+   - Must have an original source URL, a resolved original-source role rather than a discovery/search entrance, and source level `S` / `A` / `B`.
+   - Cannot be deleted because downstream facts, Top 10, relationship graph, and trend candidates must be traceable to an auditable source.
+
+2. `evidence_quality`
+   - Must be usable `core_pool` evidence with Raw QC `allow`, readable body text, extraction method, acceptable readability, high/medium extraction quality, usable excerpts / evidence object, and non-blocking degradation reasons.
+   - Cannot be deleted because Card details must be rebuilt from original source text, not from search snippets, backend summaries, or old frontstage fields.
+
+3. `business_signal_scope`
+   - Must map to a current business-signal path that can become `product_service`, `funding`, or `case`.
+   - Cannot be deleted because V3 Business Signals no longer publishes generic opinion, policy, ethics, article-summary, or retired daily-observation outputs as formal Cards.
+
+4. `valid_page_type`
+   - Must be a dated concrete event page, not a homepage, directory, docs index, catalog, package/model listing, marketplace listing, search result, generic report, or broad list unless that page itself contains a concrete dated event.
+   - Cannot be deleted because index-like pages repeatedly generated duplicate and generalized Cards instead of source-backed event Cards.
+
+5. `commercial_importance`
+   - Must meet the current importance threshold and preserve a clear commercial action, customer/deployment, financing, product/service, procurement, pricing, or operational signal.
+   - Cannot be deleted because Pool can keep context, but Signal Cards should preserve scarce frontstage attention for commercially meaningful evidence.
+
+6. `fact_type_constraints`
+   - Funding must be a single-company financing round or equivalent clearly dated financing event; community feedback, comments, pure viewpoints, non-commercial policy/ethics material, and user feedback cannot be direct Card evidence unless separately recaptured through Raw / Pool from a source-backed business event.
+   - Cannot be deleted because these are the boundaries that prevent duplicated posts, opinion material, and broad commentary from becoming business-signal facts.
 
 Daily business-signal target:
 
