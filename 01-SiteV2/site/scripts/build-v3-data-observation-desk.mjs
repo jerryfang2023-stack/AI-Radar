@@ -781,6 +781,18 @@ function safeFrontstageSubject({ subject = "", sourceUrl = "", sourceName = "", 
     return normalized;
   }
   const host = domain(sourceUrl).split(".")[0];
+  if (/^[a-z0-9]{18,}$/iu.test(host)) {
+    try {
+      const pathText = decodeURIComponent(new URL(sourceUrl).pathname)
+        .replace(/[-_/]+/gu, " ")
+        .replace(/\s+/gu, " ")
+        .trim();
+      if (/\bAI\s+agents?\b/iu.test(pathText)) return "AI agents funding";
+    } catch {
+      // Fall through to the neutral fallback.
+    }
+    return "AI business signal";
+  }
   return host && !isWeakSubject(host) ? normalizeSubject(host) : "AI business signal";
 }
 

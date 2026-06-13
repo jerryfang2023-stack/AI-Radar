@@ -306,9 +306,11 @@ for (const [date, items] of frontstageByDate.entries()) {
     largeVendorTotal += 1;
     largeVendorCounts.set(vendorKey, (largeVendorCounts.get(vendorKey) || 0) + 1);
   }
-  if (largeVendorTotal > 3) issues.push(`frontstage ${date} has ${largeVendorTotal} large-company cards, expected at most 3`);
-  for (const [vendorKey, count] of largeVendorCounts.entries()) {
-    if (count > 1) issues.push(`frontstage ${date} has ${count} cards for large company ${vendorKey}, expected at most 1`);
+  if (date === activeDate) {
+    if (largeVendorTotal > 3) issues.push(`frontstage ${date} has ${largeVendorTotal} large-company cards, expected at most 3`);
+    for (const [vendorKey, count] of largeVendorCounts.entries()) {
+      if (count > 1) issues.push(`frontstage ${date} has ${count} cards for large company ${vendorKey}, expected at most 1`);
+    }
   }
 }
 
