@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# V3.3.5 Automation Loop
+# V3.3.6 Automation Loop
 
-V3.3.5 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints also persists same-date Builder viewpoints into Obsidian person / date timeline files.
+V3.3.6 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals enforces public title / candidate dedupe gates, and Hermes supervises all three active lanes at 09:45 / 09:55.
 
 ## Business Signals GitHub Chain
 

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: context-index
-last_updated: 2026-06-11
+last_updated: 2026-06-13
 use_when:
   - decide what to read
   - dispatch task
@@ -27,7 +27,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/06-execution-harness.md` | High-risk execution harness | Monitoring, Raw / Pool / Card, page changes |
 | `context/07-v3-intelligence-generation-rules.md` | V3 Raw / Pool / Card / graph / trend rule source | Any generation rule or monitoring-chain change |
 | `context/08-v3-3-automation.md` | V3.3 GitHub / site / local Obsidian automation loop | GitHub Actions, site data sync, local sync |
-| `context/09-v3-3-current-action-index.md` | V3.3.5 current action registry | Action dispatch, current automation recovery, replacing historical action lists |
+| `context/09-v3-3-current-action-index.md` | V3.3.6 current action registry | Action dispatch, current automation recovery, replacing historical action lists |
 | `context/10-v3-3-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision instructions | Daily monitoring supervision, Codex repair handoff |
 | `context/08-card-asset-qc-checklist.md` | Card asset QC checklist | Before Card acceptance or frontstage sync |

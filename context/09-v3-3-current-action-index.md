@@ -5,14 +5,14 @@ last_updated: 2026-06-13
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch V3.3.5 production work
+  - dispatch V3.3.6 production work
   - distinguish current actions from historical tasks
 priority: current
 ---
 
-# V3.3.5 Current Action Index
+# V3.3.6 Current Action Index
 
-This file is the current action registry for WaveSight AI V3.3.5.
+This file is the current action registry for WaveSight AI V3.3.6.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -22,15 +22,15 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active V3.3.5 production action. | May be used as a default execution route. |
+| `current` | Active V3.3.6 production action. | May be used as a default execution route. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
-Do not mark an old action as `current` just because it existed before. Only a V3.3.5-compatible route that serves the current asset system can be `current`.
+Do not mark an old action as `current` just because it existed before. Only a V3.3.6-compatible route that serves the current asset system can be `current`.
 
 ## Current Actions
 
-Only these actions are `current` for V3.3.5:
+Only these actions are `current` for V3.3.6:
 
 | Action | Status | Current Role |
 |---|---|---|
@@ -61,7 +61,7 @@ These actions or records may be useful for diagnosis, audit, or historical recov
 | Historical feature list | `manual/archive` | Read only to identify old action names, owners, or status drift. |
 | Old page diagnostics and redesign specs | `manual/archive` | Consult when explaining past UI choices or avoiding regressions. |
 | Old V2 quality-gate reports | `manual/archive` | Use as audit evidence when comparing historical failures. |
-| Old Raw / Pool / Card governance notes | `manual/archive` | Consult only when they do not conflict with V3.3.5 source-first rules. |
+| Old Raw / Pool / Card governance notes | `manual/archive` | Consult only when they do not conflict with V3.3.6 source-first rules. |
 | Historical provider benchmarks | `manual/archive` | Consult for source-provider diagnosis, not as current sourcing policy. |
 | Past handoff / progress notes | `manual/archive` | Use for context recovery only when current `context/` files are insufficient. |
 
@@ -401,11 +401,11 @@ Boundaries:
 
 ## Retired Actions
 
-The following actions are `retired` for V3.3.5:
+The following actions are `retired` for V3.3.6:
 
 | Action | Status | Reason |
 |---|---|---|
-| daily observation writing | `retired` | V3.3.5 does not require article-style daily observation output. |
+| daily observation writing | `retired` | V3.3.6 does not require article-style daily observation output. |
 | business brief / internal reference | `retired` | The current product is an asset system, not a brief-production lane. |
 | trend report writing | `retired` | Current trend output is trend candidate only. |
 | V2 four-column website page production | `retired` | V2 homepage and four-column public site routes are retired. |
@@ -417,7 +417,7 @@ The following actions are `retired` for V3.3.5:
 | builders / follow-builders mixed into relationship graph | `retired` | Graph evidence must come from accepted business-signal Cards. |
 | builders / follow-builders mixed into trend candidates | `retired` | Trend candidates require multiple business-signal Cards, not viewpoints. |
 | old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Intelligence Map, First-Line Viewpoints, Community Intelligence, and Dashboard. |
-| temporary-only daily asset generation | `retired` | V3.3.5 automation must persist assets through PR / deploy / sync. |
+| temporary-only daily asset generation | `retired` | V3.3.6 automation must persist assets through PR / deploy / sync. |
 
 If a script or old task requires one of these as a blocker for current production, treat it as historical contamination and update the route.
 

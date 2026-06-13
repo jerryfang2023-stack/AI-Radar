@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-raw-pool-card-trend-rules
-version: V3.3.5-builder-obsidian-date-timelines
+version: V3.3.6-business-title-hermes-handoff
 last_updated: 2026-06-13
 priority: current
 ---

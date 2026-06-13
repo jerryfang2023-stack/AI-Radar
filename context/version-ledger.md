@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.5-builder-obsidian-date-timelines |
-| Version name | Builder Obsidian Date Timelines |
+| Current version | V3.3.6-business-title-hermes-handoff |
+| Version name | Business Title Gates And Hermes Three-Lane Handoff |
 | Version layer | Patch |
-| Release date | 2026-06-11 |
-| Last modified at | 2026-06-11T19:12:07+08:00 |
+| Release date | 2026-06-13 |
+| Last modified at | 2026-06-13T16:00:31+08:00 |
 | Product version | V3.3 |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
-| Git tag | `v3.3.5-builder-obsidian-date-timelines` |
+| Git tag | `v3.3.6-business-title-hermes-handoff` |
 | Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -39,6 +39,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Dashboard keeps the existing operations backend at `operations-console.html`, but is not exposed in the public frontstage navigation for this release.
 - Daily automation is split by production lane: Business Signals, First-Line Viewpoints, and Community Intelligence each have independent monitoring / gate / persistence / PR publication boundaries.
 - First-Line Viewpoints persists local Obsidian timelines as person / date files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
+- Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, and generic funding lists from formal Card promotion unless they are recaptured through dated source-backed event pages.
+- Hermes early handoff now supervises Business Signals, First-Line Viewpoints, and Community Intelligence together at 09:45 / 09:55 Asia/Shanghai.
 - Intelligence Map and Dashboard follow the Business Signals data chain.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
@@ -108,6 +110,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `V3.3.6-freeze-business-title-hermes-handoff-20260613` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-13 | 2026-06-13T16:00:31+08:00 | V3.3.6-business-title-hermes-handoff | Top10 titles using source-domain placeholders such as `linkedin financing`, `github original title`, or `purpose see original`; public Core Pool candidate duplicates for the same event; social/community, repo/catalog, package/model, marketplace, or generic list sources promoted directly to formal Business Signal Cards; Business-only Hermes early handoff scheduled in parallel with three-lane handoff | title/candidate data assertion + Card promotion gate syntax + three-lane Hermes workflow syntax + Skill Ops + GitHub Pages deploy |
 | `V3.3.5-freeze-builder-obsidian-date-timelines-20260611` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-11 | 2026-06-11T19:12:07+08:00 | V3.3.5-builder-obsidian-date-timelines | Builder Obsidian sync writing multiple days into one month file; old `YYYY-MM.md` timeline files returning; First-Line Viewpoints daily PRs skipping Obsidian persistence; main frontstage pages carrying stale V3.3.2.1 meta versions | `node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` + same-day dry-run sync + month-file absence check + builders syntax gates + GitHub Pages deploy |
 | `V3.3.4-freeze-independent-lane-publication-20260610` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-10 | 2026-06-10T13:40:44+08:00 | V3.3.4-independent-lane-publication | Community Intelligence local collection passing but publication blocked behind manual PR; Actions read-only permissions preventing PR creation; same-day rerun reusing merged PRs; a single lane failure blocking other lane publication | `npm run assert:community-intelligence -- --date=<DATE>` + `.github/workflows/daily-community-intelligence-pr.yml` + `npm run supervise:daily` |
 | `V3.3.3.2-freeze-project-health-automation-20260610` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-10 | 2026-06-10T00:44:49+08:00 | V3.3.3.2-project-health-automation | project maintenance only living in chat checklists; weekly recurring failures without a report; monthly cleanup performed before review; deletion-first Git cleanup; Netlify or artifact residue returning unnoticed | `npm run health:daily` + `npm run health:weekly` + `npm run health:monthly` |
@@ -126,7 +129,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| V3.3.5-builder-obsidian-date-timelines | 2026-06-11T19:12:07+08:00 | Converts First-Line Viewpoints Obsidian persistence from month files to person / date timeline files, adds the sync step to daily Builder automation, and aligns main frontstage version metadata | current |
+| V3.3.6-business-title-hermes-handoff | 2026-06-13T16:00:31+08:00 | Fixes Business Signals public title and Core Pool candidate dedupe failures, blocks social / repo / catalog / generic list sources from formal Card promotion, and makes Hermes 09:45 / 09:55 early handoff supervise all three active lanes | current |
+| V3.3.5-builder-obsidian-date-timelines | 2026-06-11T19:12:07+08:00 | Converts First-Line Viewpoints Obsidian persistence from month files to person / date timeline files, adds the sync step to daily Builder automation, and aligns main frontstage version metadata | upgraded |
 | V3.3.4-independent-lane-publication | 2026-06-10T13:40:44+08:00 | Completes independent lane publication by adding the Community Intelligence PR workflow, extending daily supervision to watch the community publish lane, fixing Actions PR permissions, and preventing same-day reruns from reusing merged PRs | upgraded |
 | V3.3.3.2-project-health-automation | 2026-06-10T00:44:49+08:00 | Adds read-only project health commands: `health:daily` for unified supervision, `health:weekly` for recurring issue / workflow / conflict review, and `health:monthly` for Git hygiene, repository size, large-file, old-report, runtime, and deployment residue review | upgraded |
 | V3.3.3.1-hermes-supervision-inbox | 2026-06-09T23:41:02+08:00 | Adds unified daily supervision automation and the Hermes -> Codex inbox protocol. Hermes now supervises with `daily-supervision-report`, sends actionable repair requests through `agent-workflow/inbox/hermes-to-codex/`, and Codex reads them with `npm run inbox:hermes` | upgraded |

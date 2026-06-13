@@ -15,11 +15,23 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current version: `V3.3.5-builder-obsidian-date-timelines`.
+- Current version: `V3.3.6-business-title-hermes-handoff`.
 - Version ledger: `context/version-ledger.md`.
-- V3.3.5 adds First-Line Viewpoints Obsidian persistence into person / date timeline files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`.
-- Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that V3.3.5 sync is healthy.
+- V3.3.6 keeps First-Line Viewpoints person / date Obsidian persistence, adds Business Signals title / candidate dedupe gates, and makes Hermes early handoff supervise all three active lanes.
+- Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
+
+## Daily Short Instruction
+
+Hermes should do this every Asia/Shanghai production day:
+
+1. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
+2. 09:45 and 09:55 run the three-lane early handoff: `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>`. Dispatch missing or failed Business Signals, First-Line Viewpoints, and Community Intelligence publish workflows only when no same-date run is active.
+3. Before 10:00 confirm Business Signals Top10 is healthy: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood.
+4. 10:40 check PR / merge / GitHub Pages publication for lanes that produced data.
+5. 10:55 / 11:55 run bounded morning recovery only for lanes still `failed` or `manual_required`.
+6. For every failure, write cause, attempted action, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
+7. Never lower gates, edit generated data directly, push to `main`, or loop blind reruns.
 
 ## Daily Entry
 
