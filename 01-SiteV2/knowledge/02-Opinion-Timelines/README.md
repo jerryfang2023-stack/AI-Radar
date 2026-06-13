@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 41
-opinion_count: 414
-generated_at: 2026-06-12T09:14:26.995Z
+opinion_count: 415
+generated_at: 2026-06-13T04:08:16.548Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,6 +11,7 @@ generated_at: 2026-06-12T09:14:26.995Z
 
 ## 人物
 
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 6 条 - 最新 2026-06-13
 - [Garry Tan](people/garry-tan/README.md) - 34 条 - 最新 2026-06-12
 - [Peter Yang](people/peter-yang/README.md) - 33 条 - 最新 2026-06-12
 - [Swyx](people/swyx/README.md) - 25 条 - 最新 2026-06-12
@@ -27,7 +28,6 @@ generated_at: 2026-06-12T09:14:26.995Z
 - [Google Labs](people/google-labs/README.md) - 12 条 - 最新 2026-06-10
 - [Thariq](people/thariq/README.md) - 9 条 - 最新 2026-06-10
 - [Matt Turck](people/matt-turck/README.md) - 8 条 - 最新 2026-06-10
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 5 条 - 最新 2026-06-10
 - [Dataiku Blog](people/dataiku-blog/README.md) - 2 条 - 最新 2026-06-10
 - [Madhu Guru](people/madhu-guru/README.md) - 2 条 - 最新 2026-06-10
 - [Nan Yu](people/nan-yu/README.md) - 2 条 - 最新 2026-06-10
