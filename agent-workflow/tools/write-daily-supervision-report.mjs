@@ -427,7 +427,15 @@ function buildFirstLineLane() {
   if (evidence.gateStatus === "failed") addProblem(problems, `follow-builders gate failed: ${rel(gateFile)}`);
   if (evidence.gateStatus === "missing") warnings.push(`missing follow-builders gate report: ${rel(gateFile)}`);
 
-  if (gh.available) {
+  const localDataHealthy =
+    exists(dataFile) &&
+    generatedDate === date &&
+    Number(evidence.remarks) >= 12 &&
+    Number(evidence.builders) >= 6 &&
+    evidence.gateStatus !== "failed";
+  evidence.localDataHealthy = localDataHealthy;
+
+  if (gh.available && !localDataHealthy) {
     if (!gh.latest_run && hasWindowPassed(date, "10:30")) {
       addProblem(problems, "no same-date First-Line Viewpoints GitHub run after 10:30 watchdog", "manual_required");
       actions.push("manual dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` for the production date");
@@ -438,6 +446,8 @@ function buildFirstLineLane() {
       addProblem(problems, `First-Line Viewpoints workflow conclusion is ${gh.latest_run.conclusion}`);
     }
     if (gh.pr_warning) warnings.push(gh.pr_warning);
+  } else if (gh.available && localDataHealthy && gh.pr_warning) {
+    warnings.push(gh.pr_warning);
   } else if (isTodayOrPast(date)) {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
   }
