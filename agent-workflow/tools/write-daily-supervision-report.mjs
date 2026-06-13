@@ -370,9 +370,9 @@ function buildBusinessSignalsLane() {
   if (evidence.readinessReport === "missing") warnings.push(`missing readiness report: ${rel(readinessFile)}`);
 
   if (gh.available) {
-    if (!gh.latest_run && hasWindowPassed(date, "10:20")) {
-      addProblem(problems, "no same-date Business Signals GitHub run after 10:20 watchdog", "manual_required");
-      actions.push("manual dispatch `.github/workflows/daily-persistent-assets-pr.yml` for the production date");
+    if (!gh.latest_run && hasWindowPassed(date, "09:55")) {
+      addProblem(problems, "no same-date Business Signals GitHub run after 09:55 Hermes early handoff", "manual_required");
+      actions.push("run `.github/workflows/hermes-business-signals-early-handoff.yml` or dispatch `.github/workflows/daily-persistent-assets-pr.yml` for the production date");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
       addProblem(problems, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`, "manual_required");
       actions.push("wait for Business Signals workflow completion before declaring data missing");
@@ -391,7 +391,7 @@ function buildBusinessSignalsLane() {
   return {
     id: "business_signals",
     label: "Business Signals / Intelligence Map / Dashboard",
-    schedule: "09:07 / 09:37 / 10:07 Asia/Shanghai; watchdog 10:20",
+    schedule: "09:07 / 09:37 Asia/Shanghai; Hermes early handoff 09:45 / 09:55",
     status: laneStatus(problems, warnings),
     evidence,
     problems,

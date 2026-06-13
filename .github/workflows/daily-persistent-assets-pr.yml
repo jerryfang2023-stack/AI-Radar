@@ -2,15 +2,10 @@ name: WaveSight Business Signals PR
 
 on:
   schedule:
-    # 09:07 / 09:37 / 10:07 / 12:07 / 13:07 / 14:07 Asia/Shanghai.
-    # GitHub scheduled runs can be delayed or occasionally dropped; backup slots
-    # are guarded by the same-date asset check.
+    # 09:07 / 09:37 Asia/Shanghai. If both primary windows fail or no
+    # same-date success is visible before 09:55, Hermes early handoff takes over.
     - cron: "7 1 * * *"
     - cron: "37 1 * * *"
-    - cron: "7 2 * * *"
-    - cron: "7 4 * * *"
-    - cron: "7 5 * * *"
-    - cron: "7 6 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -122,7 +117,7 @@ jobs:
             echo "- generated_at: $(date -Is)"
             echo "- mode: business_signals_pr"
             echo "- trigger: ${{ github.event_name }}"
-            echo "- schedule: 09:07 / 09:37 / 10:07 Asia/Shanghai daily"
+            echo "- schedule: 09:07 / 09:37 Asia/Shanghai daily; Hermes early handoff at 09:45 / 09:55"
             echo "- business_signal_skip: ${{ steps.existing-assets.outputs.skip }}"
             echo "- business_signal_skip_reason: ${{ steps.existing-assets.outputs.reason }}"
             echo "- existing_automation_branch: ${{ steps.existing-assets.outputs.branch_exists }}"

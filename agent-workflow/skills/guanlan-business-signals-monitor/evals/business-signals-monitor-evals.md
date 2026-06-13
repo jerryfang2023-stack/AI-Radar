@@ -28,6 +28,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 8. `publication_boundary`
    - Pass when publication uses automation branch -> PR -> `main` -> GitHub Pages, not direct deployment or direct generated-data push to `main`.
 
+9. `before_10_hermes_handoff`
+   - Pass when Business Signals has only two primary schedule windows, 09:07 and 09:37 Asia/Shanghai, and Hermes early handoff runs at 09:45 / 09:55 to dispatch the lane if both primary attempts fail or if no same-date success is visible and no run is active by 09:55.
+   - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops instead of producing a Hermes report, recovery action, and Codex handoff before 10:00.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

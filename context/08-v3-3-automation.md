@@ -41,18 +41,27 @@ An existing `automation/business-signals-<date>` branch must not block a schedul
 
 `intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / Core Pool / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
 
-## Business Signals Watchdog And Recovery
+## Business Signals Early Handoff
 
-The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current Business Signals schedule truth is 09:07 / 09:37 / 10:07 Asia/Shanghai with a 10:20 watchdog.
+The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current Business Signals schedule truth is 09:07 / 09:37 Asia/Shanghai with Hermes early handoff at 09:45 / 09:55.
 
 Operational rules:
 
-1. If no same-date scheduled run is visible by about 10:20 Asia/Shanghai, Hermes may request a manual workflow dispatch.
-2. If a downstream task starts while the Business Signals workflow is `in_progress`, wait for the upstream run instead of declaring data missing.
-3. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
-4. The workflow must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
-5. A high-quality run blocked only by `raw_count_min` can enter manual recovery, but recovery must rebuild Cards and site data after restoring Raw / Pool. Do not copy stale pre-card site data from artifacts.
-6. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
+1. The primary Business Signals schedule is only 09:07 and 09:37 Asia/Shanghai.
+2. If both primary windows fail, or if no same-date successful run is visible and no run is active by 09:55, Hermes early handoff must dispatch the Business Signals workflow.
+3. The early handoff workflow is `.github/workflows/hermes-business-signals-early-handoff.yml`; it runs at 09:45 and 09:55 Asia/Shanghai.
+4. Hermes early handoff writes `agent-workflow/reports/<date>-hermes-business-signals-early-handoff.json` and `.md`, plus latest aliases and a Codex inbox item when dispatch fails or the bounded attempt cap is reached.
+5. If a Business Signals workflow is `queued` or `in_progress`, Hermes waits for it instead of declaring missing data.
+6. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
+7. The workflow must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
+8. A high-quality run blocked only by `raw_count_min` can enter manual recovery, but recovery must rebuild Cards and site data after restoring Raw / Pool. Do not copy stale pre-card site data from artifacts.
+9. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
+
+Manual command:
+
+```powershell
+npm run hermes:business-early-handoff -- --date=<YYYY-MM-DD>
+```
 
 ## Daily Recovery Watchdog
 
@@ -60,7 +69,7 @@ Workflow: `.github/workflows/daily-recovery-watchdog.yml`
 
 Script: `agent-workflow/tools/dispatch-daily-recovery.mjs`
 
-The recovery watchdog provides bounded automatic second runs. It is not an autonomous code-repair agent.
+The recovery watchdog provides bounded automatic second runs. It is not the primary Business Signals morning strategy; Business Signals should be handed to Hermes early handoff before 10:00 instead of waiting for repeated late-day schedule slots. The watchdog remains a generic late safety net for failed workflow runs and non-business lanes.
 
 Recovery rules:
 
@@ -101,11 +110,12 @@ Execution order:
 
 Rules:
 
-1. Hermes Morning Recovery must not lower business-signal evidence thresholds or bypass Pool / Core Pool / Card / Top10 gates.
-2. Business Signals recovery still rebuilds from current Raw / Pool / Card scripts and gates.
-3. First-Line Viewpoints recovery still uses the independent builders workflow and Obsidian timeline sync gate.
-4. Community Intelligence recovery can only publish already-collected same-date local files; it cannot run the browser collector in GitHub Actions because that requires the local Chrome profile and logged-in community sessions.
-5. If all bounded retries fail, the required output is a repair handoff: lane, failing gate/report, reason, attempted recovery action, result, and the Codex inbox file path.
+1. Business Signals morning failures should use Hermes Business Signals Early Handoff before this generic recovery path.
+2. Hermes Morning Recovery must not lower business-signal evidence thresholds or bypass Pool / Core Pool / Card / Top10 gates.
+3. Business Signals recovery still rebuilds from current Raw / Pool / Card scripts and gates.
+4. First-Line Viewpoints recovery still uses the independent builders workflow and Obsidian timeline sync gate.
+5. Community Intelligence recovery can only publish already-collected same-date local files; it cannot run the browser collector in GitHub Actions because that requires the local Chrome profile and logged-in community sessions.
+6. If all bounded retries fail, the required output is a repair handoff: lane, failing gate/report, reason, attempted recovery action, result, and the Codex inbox file path.
 
 ## First-Line Viewpoints GitHub Chain
 
@@ -130,7 +140,7 @@ This workflow must not write business-signal Cards, relationship graph data, tre
 
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
-| Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 / 10:07 Asia/Shanghai | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
+| Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai; Hermes early handoff at 09:45 / 09:55 | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
 | First-Line Viewpoints | GitHub Actions + `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md`, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 / 10:17 Asia/Shanghai | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency | independent automation PR to `main` after builders gate and Obsidian timeline sync pass |
 | Community Intelligence | Local Windows scheduled task / Codex local run + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | local collection at 08:30 Asia/Shanghai; `.github/workflows/daily-community-intelligence-pr.yml` for publication | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
