@@ -18,6 +18,20 @@ V3.3.5 automation is column-independent for production and site-unified for publ
 
 Workflow: `.github/workflows/daily-persistent-assets-pr.yml`
 
+Current monitor parameter baseline:
+
+- diagnostic score reference: `85` only as report context; hard gates and final QC decide release;
+- `--max-cycles=3`;
+- `--search-limit=200`;
+- `--search-path-query-limit=5`;
+- `--gdelt-query-limit=12`;
+- `--hn-limit=8`;
+- `--fetch-timeout-ms=20000`;
+- `--snapshot-timeout-ms=16000`;
+- `--monitor-timeout-ms=840000`.
+
+The production PR workflow, dry-run workflow, Hermes early handoff dispatch, recovery watchdog dispatch, and skill examples must stay aligned to this baseline. HN remains feedback-only discovery and should not be expanded to fix routed Pool or Core Pool shortages; those failures require better original-source capture and Pool routing.
+
 Execution order:
 
 1. Resolve the Beijing date.

@@ -64,8 +64,8 @@ function buildMonitorArgsForCycle(cycle) {
   const gdeltStep = toNumber(retryTuning.gdelt_query_limit_step, 1);
   const hnStep = toNumber(retryTuning.hn_limit_step, 0);
   const searchLimitMax = toNumber(retryTuning.search_limit_max, 220);
-  const searchPathMax = toNumber(retryTuning.search_path_query_limit_max, 3);
-  const gdeltMax = toNumber(retryTuning.gdelt_query_limit_max, 12);
+  const searchPathMax = toNumber(retryTuning.search_path_query_limit_max, 5);
+  const gdeltMax = toNumber(retryTuning.gdelt_query_limit_max, 15);
   const hnMax = toNumber(retryTuning.hn_limit_max, 8);
 
   const round = Math.max(0, cycle - 1);

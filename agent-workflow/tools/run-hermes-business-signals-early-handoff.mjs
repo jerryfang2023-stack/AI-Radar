@@ -21,7 +21,7 @@ const dryRun = args.get("dry-run") === "true";
 const failureThreshold = Number.parseInt(args.get("failure-threshold") || "2", 10);
 const maxAttempts = Number.parseInt(args.get("max-attempts") || "3", 10);
 const forceAfter = args.get("force-after") || "09:55";
-const passScore = args.get("pass-score") || "80";
+const passScore = args.get("pass-score") || "85";
 
 function shanghaiDate(value = new Date()) {
   const dateValue = value instanceof Date ? value : new Date(value);

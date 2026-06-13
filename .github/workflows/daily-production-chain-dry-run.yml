@@ -8,9 +8,9 @@ on:
         required: false
         type: string
       pass_score:
-        description: "Daily Monitor pre-gate pass score."
+        description: "Daily Monitor diagnostic score reference. Hard gates and final QC still decide release."
         required: false
-        default: "80"
+        default: "85"
         type: string
 
 permissions:
@@ -112,11 +112,11 @@ jobs:
           set -o pipefail
           node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs \
             --date="${RUN_DATE}" \
-            --pass-score="${{ github.event.inputs.pass_score || '80' }}" \
+            --pass-score="${{ github.event.inputs.pass_score || '85' }}" \
             --max-cycles=3 \
-            --search-limit=150 \
+            --search-limit=200 \
             --search-path-query-limit=5 \
-            --gdelt-query-limit=8 \
+            --gdelt-query-limit=12 \
             --hn-limit=8 \
             --fetch-timeout-ms=20000 \
             --snapshot-timeout-ms=16000 \
