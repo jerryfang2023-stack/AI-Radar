@@ -449,7 +449,7 @@ function buildFirstLineLane() {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "09:17 / 09:47 / 10:17 Asia/Shanghai; watchdog 10:30",
+    schedule: "08:30 local Codex sync; 09:17 / 09:47 GitHub fallback; Hermes handoff 09:55; watchdog 10:30",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
