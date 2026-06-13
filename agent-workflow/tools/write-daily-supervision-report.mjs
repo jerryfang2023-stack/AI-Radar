@@ -327,6 +327,7 @@ function buildBusinessSignalsLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
+  const windowPassed = hasWindowPassed(date, "09:55");
 
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
   const graphFile = path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json");
@@ -356,18 +357,20 @@ function buildBusinessSignalsLane() {
   evidence.readinessReport = exists(readinessFile) ? rel(readinessFile) : "missing";
   evidence.github = gh;
 
-  if (!exists(dataFile)) addProblem(problems, `missing business-signal data file: ${rel(dataFile)}`);
-  if (activeDate !== date) addProblem(problems, `business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
-  if (!exists(graphFile)) addProblem(problems, `missing intelligence map data: ${rel(graphFile)}`);
-  if ((selection?.selectedCount ?? sameDateCards.length) !== 10) {
-    addProblem(problems, `Top10 selected count is ${selection?.selectedCount ?? sameDateCards.length}, expected 10`);
+  if (windowPassed) {
+    if (!exists(dataFile)) addProblem(problems, `missing business-signal data file: ${rel(dataFile)}`);
+    if (activeDate !== date) addProblem(problems, `business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
+    if (!exists(graphFile)) addProblem(problems, `missing intelligence map data: ${rel(graphFile)}`);
+    if ((selection?.selectedCount ?? sameDateCards.length) !== 10) {
+      addProblem(problems, `Top10 selected count is ${selection?.selectedCount ?? sameDateCards.length}, expected 10`);
+    }
+    if (selection?.supplyConstrained) addProblem(problems, "frontstage selection is supply constrained");
+    if (cardFiles < 10) addProblem(problems, `signal card files ${cardFiles} below 10`);
+    if (!exists(manifestFile)) warnings.push(`missing same-date persistent asset manifest: ${rel(manifestFile)}`);
+    if (evidence.qualityGateStatus === "failed") addProblem(problems, `quality gate failed: ${rel(qualityGateFile)}`);
+    if (evidence.qualityGateStatus === "missing") warnings.push(`missing quality gate report: ${rel(qualityGateFile)}`);
+    if (evidence.readinessReport === "missing") warnings.push(`missing readiness report: ${rel(readinessFile)}`);
   }
-  if (selection?.supplyConstrained) addProblem(problems, "frontstage selection is supply constrained");
-  if (cardFiles < 10) addProblem(problems, `signal card files ${cardFiles} below 10`);
-  if (!exists(manifestFile)) warnings.push(`missing same-date persistent asset manifest: ${rel(manifestFile)}`);
-  if (evidence.qualityGateStatus === "failed") addProblem(problems, `quality gate failed: ${rel(qualityGateFile)}`);
-  if (evidence.qualityGateStatus === "missing") warnings.push(`missing quality gate report: ${rel(qualityGateFile)}`);
-  if (evidence.readinessReport === "missing") warnings.push(`missing readiness report: ${rel(readinessFile)}`);
 
   if (gh.available) {
     if (!gh.latest_run && hasWindowPassed(date, "09:55")) {
@@ -405,6 +408,7 @@ function buildFirstLineLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
+  const windowPassed = hasWindowPassed(date, "09:55");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "follow-builders-daily.json");
   const gateFile = path.join(reportsDir, `${date}-follow-builders-data-gate.md`);
   const data = readJson(dataFile, {});
@@ -420,12 +424,14 @@ function buildFirstLineLane() {
   evidence.gateReport = exists(gateFile) ? rel(gateFile) : "missing";
   evidence.github = gh;
 
-  if (!exists(dataFile)) addProblem(problems, `missing first-line data file: ${rel(dataFile)}`);
-  if (generatedDate !== date) addProblem(problems, `first-line data date is ${generatedDate || "missing"}, expected ${date}`);
-  if (Number(evidence.remarks) < 12) addProblem(problems, `remarks count ${evidence.remarks} below 12`);
-  if (Number(evidence.builders) < 6) addProblem(problems, `builders count ${evidence.builders} below 6`);
-  if (evidence.gateStatus === "failed") addProblem(problems, `follow-builders gate failed: ${rel(gateFile)}`);
-  if (evidence.gateStatus === "missing") warnings.push(`missing follow-builders gate report: ${rel(gateFile)}`);
+  if (windowPassed) {
+    if (!exists(dataFile)) addProblem(problems, `missing first-line data file: ${rel(dataFile)}`);
+    if (generatedDate !== date) addProblem(problems, `first-line data date is ${generatedDate || "missing"}, expected ${date}`);
+    if (Number(evidence.remarks) < 12) addProblem(problems, `remarks count ${evidence.remarks} below 12`);
+    if (Number(evidence.builders) < 6) addProblem(problems, `builders count ${evidence.builders} below 6`);
+    if (evidence.gateStatus === "failed") addProblem(problems, `follow-builders gate failed: ${rel(gateFile)}`);
+    if (evidence.gateStatus === "missing") warnings.push(`missing follow-builders gate report: ${rel(gateFile)}`);
+  }
 
   const localDataHealthy =
     exists(dataFile) &&
@@ -473,6 +479,7 @@ function buildFollowBuildersSkillLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
+  const windowPassed = hasWindowPassed(date, "16:30");
   const outputFile = path.join(root, "01-SiteV2", "content", "07-points", `${date}-builders-viewpoints.md`);
   const reportFile = path.join(reportsDir, `${date}-follow-builders-skill-local-publish.md`);
   const outputText = readText(outputFile);
@@ -485,16 +492,18 @@ function buildFollowBuildersSkillLane() {
   evidence.itemCount = itemCount;
   evidence.reportCount = reportCount;
 
-  if (!exists(outputFile)) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
-  if (itemCount <= 0) addProblem(problems, `follow-builders skill output item count ${itemCount} below 1`);
-  if (exists(reportFile) && reportCount > 0 && reportCount !== itemCount) {
-    addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
+  if (windowPassed) {
+    if (!exists(outputFile)) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
+    if (itemCount <= 0) addProblem(problems, `follow-builders skill output item count ${itemCount} below 1`);
+    if (exists(reportFile) && reportCount > 0 && reportCount !== itemCount) {
+      addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
+    }
   }
-  if (!exists(reportFile) && hasWindowPassed(date, "16:30")) {
+  if (!exists(reportFile) && windowPassed) {
     addProblem(problems, "no same-date follow-builders skill publish report after 16:30 watchdog", "manual_required");
     actions.push("run `powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1` locally");
   }
-  if (hasWindowPassed(date, "16:30") && !exists(reportFile)) {
+  if (windowPassed && !exists(reportFile)) {
     warnings.push("follow-builders skill publish report is missing before Hermes record time");
   }
 
@@ -519,6 +528,8 @@ function buildCommunityLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
+  const localWindowPassed = hasWindowPassed(date, "08:45");
+  const publishWindowPassed = hasWindowPassed(date, "09:30");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
   const gateFile = path.join(reportsDir, `${date}-community-intelligence-gate.md`);
   const data = readJson(dataFile, {});
@@ -537,13 +548,15 @@ function buildCommunityLane() {
   evidence.scheduledTask = task;
   evidence.github = gh;
 
-  if (!exists(dataFile)) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
-  if (generatedDate !== date) addProblem(problems, `community data date is ${generatedDate || "missing"}, expected ${date}`);
-  if (evidence.items < 12) addProblem(problems, `community item count ${evidence.items} below 12`);
-  if (evidence.links < 3) addProblem(problems, `community deduped links ${evidence.links} below 3`);
-  if (evidence.collectorErrors > 0) addProblem(problems, `community collector recorded ${evidence.collectorErrors} blocking error(s)`);
-  if (evidence.gateStatus === "failed") addProblem(problems, `community gate failed: ${rel(gateFile)}`);
-  if (evidence.gateStatus === "missing") warnings.push(`missing community gate report: ${rel(gateFile)}`);
+  if (localWindowPassed) {
+    if (!exists(dataFile)) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
+    if (generatedDate !== date) addProblem(problems, `community data date is ${generatedDate || "missing"}, expected ${date}`);
+    if (evidence.items < 12) addProblem(problems, `community item count ${evidence.items} below 12`);
+    if (evidence.links < 3) addProblem(problems, `community deduped links ${evidence.links} below 3`);
+    if (evidence.collectorErrors > 0) addProblem(problems, `community collector recorded ${evidence.collectorErrors} blocking error(s)`);
+    if (evidence.gateStatus === "failed") addProblem(problems, `community gate failed: ${rel(gateFile)}`);
+    if (evidence.gateStatus === "missing") warnings.push(`missing community gate report: ${rel(gateFile)}`);
+  }
 
   if (task.available) {
     const lastResult = Number(task.task?.LastTaskResult);
@@ -560,7 +573,7 @@ function buildCommunityLane() {
   }
 
   if (gh.available) {
-    if (!gh.latest_run && hasWindowPassed(date, "09:30")) {
+    if (!gh.latest_run && publishWindowPassed) {
       addProblem(problems, "no same-date Community Intelligence publish workflow after 09:30 Hermes handoff", "manual_required");
       actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
@@ -574,7 +587,7 @@ function buildCommunityLane() {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
   }
 
-  if (hasWindowPassed(date, "08:45") && generatedDate !== date) {
+  if (localWindowPassed && generatedDate !== date) {
     actions.push("rerun `agent-workflow/tools/run-community-intelligence.ps1` locally");
   }
   if (problems.length) {
