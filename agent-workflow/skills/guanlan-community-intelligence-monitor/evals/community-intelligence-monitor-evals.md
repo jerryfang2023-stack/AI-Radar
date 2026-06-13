@@ -28,6 +28,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 8. `hermes_repair_closure`
    - Pass when any related Hermes inbox item is closed only after validation and a prevention artifact is recorded.
 
+9. `three_lane_early_handoff`
+   - Pass when Hermes three-lane early handoff checks Community Intelligence at 09:45 / 09:55 Asia/Shanghai, dispatches the GitHub publish workflow if same-date local output exists but publication is missing, and records that GitHub cannot run the logged-in Chrome collector.
+   - Fail when a GitHub run is described as fresh community collection, or when missing local Chrome collector output is hidden behind repeated publish retries.
+
 ## Repair Loop
 
 When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.

@@ -86,13 +86,13 @@ agent-workflow/inbox/hermes-to-codex/
 | 08:45 | Community Intelligence | Check local scheduled task, same-date community data, archive, and community gate. |
 | 08:55 | Community Intelligence Publish | Check whether `.github/workflows/daily-community-intelligence-pr.yml` has published same-date community data when local data exists. |
 | Daily preflight | Skill Ops Governance | Check current Guanlan skills, registry freshness, eval/example coverage, and `.skill-store` sync without editing files. |
-| 09:45 | Business Signals Early Handoff | Check the 09:07 / 09:37 GitHub workflow windows. If both primary windows failed and no run is active, run `.github/workflows/hermes-business-signals-early-handoff.yml` or `npm run hermes:business-early-handoff -- --date=<YYYY-MM-DD>` to dispatch Business Signals. |
-| 09:55 | Business Signals Early Handoff | If no same-date Business Signals success is visible and no run is active, Hermes dispatches Business Signals and writes the early-handoff report / Codex handoff artifacts. |
-| 10:30 | First-Line Viewpoints | Check the 09:17 / 09:47 / 10:17 GitHub workflow windows, builders data gate, and Obsidian timeline sync. |
+| 09:45 | Hermes Three-Lane Early Handoff | Check Business Signals, First-Line Viewpoints, and Community Intelligence. If a lane has no healthy same-date data and no active run, run `.github/workflows/hermes-three-lane-early-handoff.yml` or `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` to dispatch the missing / failed lane. |
+| 09:55 | Hermes Three-Lane Early Handoff | Repeat the three-lane check. If same-date data is still missing and no run is active, dispatch the relevant lane and write the early-handoff report / Codex handoff artifacts. |
+| 10:30 | First-Line Viewpoints | Check the 09:17 / 09:47 / 10:17 GitHub workflow windows, builders data gate, and Obsidian timeline sync if Hermes early handoff did not already resolve or dispatch the lane. |
 | 10:40 | Site publication | Check lane PR / merge / Pages status when GitHub state is available. |
 | 10:55 / 11:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. |
 
-If Business Signals is still `in_progress`, wait for it to finish before reporting downstream data missing.
+If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.
 
 ## Status Handling
 
@@ -103,23 +103,29 @@ If Business Signals is still `in_progress`, wait for it to finish before reporti
 | `manual_required` | Follow the report action and ensure an open Hermes inbox item exists for Codex or the human operator. Usually this means manual workflow dispatch, waiting for an in-progress workflow, or asking Codex to inspect a lane. | Only needed for GitHub permission, login state, or manual PR merge. |
 | `failed` | Ensure an open Hermes inbox item exists, then send Codex the lane repair request from the report. | Only needed if Codex asks for authorization, login, or business judgment. |
 
-## Morning Recovery Rule
+## Three-Lane Early Handoff Rule
 
-Business Signals has an earlier dedicated handoff rule because the daily monitoring target is before 10:00 Asia/Shanghai:
+Hermes has an earlier three-lane handoff rule because the daily monitoring target is before 10:00 Asia/Shanghai:
 
 ```powershell
-npm run hermes:business-early-handoff -- --date=<YYYY-MM-DD>
+npm run hermes:early-handoff -- --date=<YYYY-MM-DD>
 ```
 
-Hermes must use this rule after the 09:07 and 09:37 primary windows. If both primary attempts fail, or if no same-date success is visible and no run is active by 09:55, Hermes dispatches the Business Signals workflow, writes:
+Hermes must use this rule at 09:45 / 09:55. It supervises:
 
-- `agent-workflow/reports/<date>-hermes-business-signals-early-handoff.json`
-- `agent-workflow/reports/<date>-hermes-business-signals-early-handoff.md`
-- `agent-workflow/reports/hermes-business-signals-early-handoff-latest.json`
-- `agent-workflow/reports/hermes-business-signals-early-handoff-latest.md`
-- `agent-workflow/inbox/hermes-to-codex/<date>-business_signals-early-handoff.md` when dispatch fails or the bounded attempt cap is reached.
+- Business Signals: if the 09:07 / 09:37 primary attempts fail, or if same-date Top10 assets are still missing / unhealthy and no run is active, dispatch `.github/workflows/daily-persistent-assets-pr.yml`.
+- First-Line Viewpoints: if same-date builders data / Obsidian person-date timelines are missing and no run is active, dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml`.
+- Community Intelligence: if same-date local collector output / archive / publish state is missing and no run is active, dispatch `.github/workflows/daily-community-intelligence-pr.yml` for publish verification. GitHub cannot run the logged-in Chrome collector; missing local data remains a local / Codex repair handoff.
 
-This rule is for fast handoff and diagnosis. Hermes must not directly edit production rules, lower evidence gates, push generated data to `main`, or hide failures by repeated blind reruns. If the handoff run fails, Codex should repair the earliest failing stage and add or tighten the relevant skill eval / example before closing the inbox item.
+The rule writes:
+
+- `agent-workflow/reports/<date>-hermes-three-lane-early-handoff.json`
+- `agent-workflow/reports/<date>-hermes-three-lane-early-handoff.md`
+- `agent-workflow/reports/hermes-three-lane-early-handoff-latest.json`
+- `agent-workflow/reports/hermes-three-lane-early-handoff-latest.md`
+- `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-early-handoff.md` when dispatch fails or the bounded attempt cap is reached.
+
+The report must preserve cause, issue, corrective action, result, and good / bad examples per lane. This rule is for fast handoff and diagnosis. Hermes must not directly edit production rules, lower evidence gates, push generated data to `main`, or hide failures by repeated blind reruns. If the handoff run fails, Codex should repair the earliest failing stage and add or tighten the relevant skill eval / example before closing the inbox item.
 
 Hermes must run the morning recovery rule after the primary production windows if any of the three active lanes are still missing, `failed`, or `manual_required`:
 

@@ -1,12 +1,9 @@
 name: WaveSight Hermes Business Signals Early Handoff
 
 on:
-  schedule:
-    # 09:45 / 09:55 Asia/Shanghai. If the 09:07 and 09:37 Business Signals
-    # primary windows fail or produce no same-date success, Hermes dispatches
-    # the daily monitor workflow and writes a Codex repair handoff.
-    - cron: "45 1 * * *"
-    - cron: "55 1 * * *"
+  # Manual compatibility entry only. The scheduled 09:45 / 09:55 early
+  # handoff is now owned by hermes-three-lane-early-handoff.yml so the three
+  # active lanes are supervised together without duplicate Business dispatches.
   workflow_dispatch:
     inputs:
       date:

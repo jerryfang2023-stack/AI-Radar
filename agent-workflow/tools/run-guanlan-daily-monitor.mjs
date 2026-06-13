@@ -1496,7 +1496,7 @@ function hasEvidenceHash(snapshot = {}) {
 function sourceVolatility(item = {}) {
   const host = urlHost(item.url || "");
   const text = `${item.source || ""} ${item.source_type || ""} ${host} ${item.acquisition_channel || ""}`.toLowerCase();
-  if (/x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text)) return "high";
+  if (/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text)) return "high";
   if (/aihot|newsletter|substack|medium|producthunt|github/u.test(text)) return "medium";
   return "low";
 }
@@ -1504,7 +1504,7 @@ function sourceVolatility(item = {}) {
 function isCommunitySource(item = {}) {
   const host = urlHost(item.url || "");
   const text = `${item.source || ""} ${item.source_type || ""} ${host} ${item.acquisition_channel || ""}`.toLowerCase();
-  return /x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text);
+  return /linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text);
 }
 
 function communityNameFor(item = {}) {
@@ -1814,6 +1814,8 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     && hasRequiredEvidenceHashes
     && nonIndexEvidenceObject
     && !isGenericReportOrListItem(item)
+    && !isCommunitySource(item)
+    && !isRepositoryOrCatalogCoreBlockedItem(item)
     && !isStaleCoreCandidate(item);
   if (computedRawQcDecision === "block") {
     return [isAIHotDailySelected(item) ? "index_only" : "discard"];
@@ -1934,6 +1936,17 @@ function isGitHubReadmeOrRepoIndex(item = {}) {
   return /readme|blob\/[^/]+\/readme|tree\/[^/]+$/iu.test(segments.join("/"));
 }
 
+function isRepositoryOrCatalogCoreBlockedItem(item = {}) {
+  const host = urlHost(item.url || "");
+  const path = `/${urlPathSegments(item).join("/")}`.toLowerCase();
+  const text = `${item.title || ""} ${item.summary || ""} ${item.url || ""} ${item.source || ""}`.toLowerCase();
+  if (isGitHubReadmeOrRepoIndex(item)) return true;
+  if (/docs\.github\.com|learn\.microsoft\.com|docs\./u.test(host)) return true;
+  if (isPackageOrModelIndex(item) || isMarketplaceListing(item) || isSearchResultOrToolDirectory(item)) return true;
+  return /(^|\/)(docs?|documentation|api|sdk|marketplace|models?|packages?|tools?|catalog)(\/|$)|readme|readme-ov-file|product catalog|model page|package page|marketplace listing/iu.test(`${path} ${text}`)
+    && !/blog|news|press|release|announc|changelog|customer|case-study/iu.test(`${path} ${text}`);
+}
+
 function classifyEvidenceObjectType(item = {}, snapshotText = "", excerpts = []) {
   const host = urlHost(item.url || "");
   const path = `/${urlPathSegments(item).join("/")}`.toLowerCase();
@@ -2005,7 +2018,7 @@ function isGenericReportOrListItem(item = {}) {
   if (/yc\.com\/companies\/industry|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
     return true;
   }
-  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(titleUrlSource);
+  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
 }
 
 function hasExplicitChangeAction(item = {}, snapshotText = "", excerpts = []) {

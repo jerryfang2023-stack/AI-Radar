@@ -794,7 +794,7 @@ const indexOnlyEvidenceTypes = new Set([
 ]);
 
 const indexOnlyUrlPattern = /(^|\/)(category|categories|tag|tags|topics?|search|docs?|documentation|api|sdk|pricing|marketplace|models?|packages?|tools?|login|signin|sign-in)(\/|$)|readme|readme-ov-file|\/blog\/category\//iu;
-const discoveryOnlyPattern = /\b(aihot|ai hot|paused-opinion-source|hacker news|reddit|hn|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+const discoveryOnlyPattern = /\b(aihot|ai hot|paused-opinion-source|hacker news|reddit|hn|linkedin|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
 const CARD_ENTRY_GATES = Object.freeze({
   sourceAuditability: "source_auditability",
   evidenceQuality: "evidence_quality",
@@ -817,6 +817,51 @@ const monthNames = new Map([
   ["november", 10],
   ["december", 11],
 ]);
+
+function hostFromUrl(raw = "") {
+  try {
+    return new URL(raw).hostname.toLowerCase().replace(/^www\./u, "");
+  } catch {
+    return "";
+  }
+}
+
+function pathSegmentsFromUrl(raw = "") {
+  try {
+    return new URL(raw).pathname.split("/").map((part) => part.trim()).filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+function isSocialOrCommunitySection(section) {
+  const text = [
+    value(section, "source_url"),
+    value(section, "source"),
+    value(section, "source_type"),
+    value(section, "acquisition_channel"),
+    value(section, "source_role"),
+  ].join(" ").toLowerCase();
+  return /(^|\.)linkedin\.com|(^|\.)x\.com|(^|\.)twitter\.com|(^|\.)reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text);
+}
+
+function isRepositoryOrCatalogSection(section) {
+  const sourceUrl = value(section, "source_url");
+  const host = hostFromUrl(sourceUrl);
+  const segments = pathSegmentsFromUrl(sourceUrl).map((part) => part.toLowerCase());
+  const pathText = `/${segments.join("/")}`;
+  const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source")}`.toLowerCase();
+  if (/github\.com$/u.test(host)) {
+    if (segments.includes("releases") || segments.includes("tags")) return false;
+    if (segments.length <= 2) return true;
+    if (segments[2] === "tree" || segments[2] === "blob") return true;
+  }
+  if (/docs\.github\.com|learn\.microsoft\.com|docs\./u.test(host)) return true;
+  if (/npmjs\.com|pypi\.org|chromewebstore\.google\.com|appsource\.microsoft\.com/u.test(host)) return true;
+  if (/huggingface\.co/u.test(host) && /^\/(?:models|datasets|spaces)\//u.test(pathText)) return true;
+  return /(^|\/)(docs?|documentation|api|sdk|marketplace|models?|packages?|tools?|catalog)(\/|$)|readme|readme-ov-file|product catalog|model page|package page|marketplace listing/iu.test(text)
+    && !/blog|news|press|release|announc|changelog|customer|case-study/iu.test(text);
+}
 
 function cardGateIssue(gate, detail) {
   return `${gate}:${detail}`;
@@ -906,7 +951,8 @@ function isGenericReportOrListSection(section) {
   if (/yc\.com\/companies\/industry|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
     return true;
   }
-  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent/iu.test(titleUrlSource);
+  if (isRepositoryOrCatalogSection(section)) return true;
+  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
 }
 
 function corePoolSemanticIssues(section) {
@@ -930,6 +976,12 @@ function corePoolSemanticIssues(section) {
   if (!["high", "medium"].includes(extractionQuality)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "weak_extraction_quality"));
   if (/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "user_feedback_or_commentary_not_verified_fact"));
+  }
+  if (isSocialOrCommunitySection(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "social_or_community_source_not_verified_fact"));
+  }
+  if (isRepositoryOrCatalogSection(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "repository_catalog_or_directory_page"));
   }
   if (isStalePublication(section, 30)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "stale_source_date"));
   if (value(section, "index_only_evidence") === "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "index_only_evidence"));
@@ -958,7 +1010,24 @@ function corePoolSemanticIssues(section) {
   return issues;
 }
 
+function signalEventClusterKey(spec, section) {
+  const sourceUrl = value(section, "source_url");
+  const title = poolTitle(section) || spec.title;
+  const text = `${title} ${spec.title || ""} ${spec.summary || ""} ${sourceUrl}`.toLowerCase();
+  const company = normalizedSignalText(spec.company || companyFromSection(section));
+  if (/minimax/iu.test(text) && /\bm3\b/iu.test(text)) return "event:product_service:minimax:m3";
+  if (/mistral/iu.test(text) && /(funding|financing|valuation|round|融资|估值|欧元|billion|30亿|200亿)/iu.test(text)) {
+    return "event:funding:mistral";
+  }
+  const amount = text.match(/(?:\$|€|eur|usd)?\s?\d+(?:\.\d+)?\s?(?:m|b|million|billion|亿|万)?/iu)?.[0] || "";
+  const normalizedTitle = normalizedSignalText(`${spec.type} ${title}`).slice(0, 96);
+  if (company && (amount || normalizedTitle)) return `event:${spec.type}:${company}:${amount || normalizedTitle}`;
+  return "";
+}
+
 function signalClusterKey(spec, section) {
+  const eventKey = signalEventClusterKey(spec, section);
+  if (eventKey) return eventKey;
   const sourceUrl = value(section, "source_url");
   const hash = value(section, "raw_full_text_hash") || value(section, "full_text_hash");
   const title = poolTitle(section) || spec.title;
@@ -1102,7 +1171,7 @@ function isSingleCompanyFundingSignal(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const haystack = `${title} ${text} ${sourceUrl}`;
-  if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(haystack)) {
+  if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(haystack)) {
     return false;
   }
   const hasDirectRoundAnnouncement =
