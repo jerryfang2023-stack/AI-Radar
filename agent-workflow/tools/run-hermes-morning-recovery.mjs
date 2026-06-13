@@ -187,9 +187,10 @@ function main() {
     recoveryStep = runStep("daily recovery dispatch", node, recoveryArgs, { allowFailure: true });
     recovery = readJson(path.join(reportsDir, `${date}-daily-recovery-watchdog.json`), null);
   }
+  const recoveryOk = !recoveryStep || (recoveryStep.ok && recovery?.ok !== false);
 
   const payload = {
-    ok: Boolean(supervisionStep.ok || supervision.status),
+    ok: Boolean((supervisionStep.ok || supervision.status) && recoveryOk),
     date,
     generated_at: new Date().toISOString(),
     dry_run: dryRun,
@@ -222,6 +223,7 @@ function main() {
     report: rel(reports.jsonFile),
     markdown: rel(reports.mdFile),
   }, null, 2));
+  if (!payload.ok) process.exitCode = 1;
 }
 
 main();
