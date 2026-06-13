@@ -480,11 +480,11 @@ function buildFollowBuildersSkillLane() {
   if (exists(reportFile) && reportCount > 0 && reportCount !== itemCount) {
     addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
   }
-  if (!exists(reportFile) && hasWindowPassed(date, "13:55")) {
-    addProblem(problems, "no same-date follow-builders skill publish report after 13:55 watchdog", "manual_required");
+  if (!exists(reportFile) && hasWindowPassed(date, "16:30")) {
+    addProblem(problems, "no same-date follow-builders skill publish report after 16:30 watchdog", "manual_required");
     actions.push("run `powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1` locally");
   }
-  if (hasWindowPassed(date, "13:55") && !exists(reportFile)) {
+  if (hasWindowPassed(date, "16:30") && !exists(reportFile)) {
     warnings.push("follow-builders skill publish report is missing before Hermes record time");
   }
 
@@ -495,7 +495,7 @@ function buildFollowBuildersSkillLane() {
   return {
     id: "follow_builders_skill",
     label: "First-Line Viewpoints Skill",
-    schedule: "13:30 local follow-builders skill publish; Hermes record 13:55; report review 14:15",
+    schedule: "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
     status: laneStatus(problems, warnings),
     evidence,
     problems,

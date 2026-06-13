@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | Business Title Gates And Hermes Three-Lane Handoff |
 | Version layer | Patch |
 | Release date | 2026-06-13 |
-| Last modified at | 2026-06-13T17:03:40+08:00 |
+| Last modified at | 2026-06-13T17:35:00+08:00 |
 | Product version | V3.3 |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
 | Git tag | `v3.3.6-business-title-hermes-handoff` |
@@ -40,7 +40,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Daily automation is split by production lane: Business Signals, First-Line Viewpoints, and Community Intelligence each have independent monitoring / gate / persistence / PR publication boundaries.
 - First-Line Viewpoints persists local Obsidian timelines as person / date files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
 - Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, and generic funding lists from formal Card promotion unless they are recaptured through dated source-backed event pages.
-- Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30, Business Signals at 09:45 / 09:55, and First-Line Viewpoints RSS at 09:55 Asia/Shanghai; Hermes also records the afternoon follow-builders skill publish at 13:55.
+- Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30, Business Signals at 09:45 / 09:55, and First-Line Viewpoints RSS at 09:55 Asia/Shanghai; Hermes also records the afternoon follow-builders skill publish at 16:30.
 - Intelligence Map and Dashboard follow the Business Signals data chain.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
@@ -129,7 +129,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| V3.3.6-business-title-hermes-handoff | 2026-06-13T17:03:40+08:00 | Fixes Business Signals public title and Core Pool candidate dedupe failures, splits First-Line Viewpoints into morning RSS and afternoon follow-builders skill routes, and makes Hermes supervise the three active lanes while recording the afternoon skill publish | current |
+| V3.3.6-business-title-hermes-handoff | 2026-06-13T17:35:00+08:00 | Fixes Business Signals public title and Core Pool candidate dedupe failures, splits First-Line Viewpoints into morning RSS and afternoon follow-builders skill routes, and makes Hermes supervise the three active lanes while recording the afternoon skill publish | current |
 | V3.3.5-builder-obsidian-date-timelines | 2026-06-11T19:12:07+08:00 | Converts First-Line Viewpoints Obsidian persistence from month files to person / date timeline files, adds the sync step to daily Builder automation, and aligns main frontstage version metadata | upgraded |
 | V3.3.4-independent-lane-publication | 2026-06-10T13:40:44+08:00 | Completes independent lane publication by adding the Community Intelligence PR workflow, extending daily supervision to watch the community publish lane, fixing Actions PR permissions, and preventing same-day reruns from reusing merged PRs | upgraded |
 | V3.3.3.2-project-health-automation | 2026-06-10T00:44:49+08:00 | Adds read-only project health commands: `health:daily` for unified supervision, `health:weekly` for recurring issue / workflow / conflict review, and `health:monthly` for Git hygiene, repository size, large-file, old-report, runtime, and deployment residue review | upgraded |

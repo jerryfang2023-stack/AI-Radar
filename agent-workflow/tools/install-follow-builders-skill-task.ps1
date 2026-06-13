@@ -1,7 +1,7 @@
 param(
   [string]$RepoPath = "",
   [string]$TaskName = "WaveSight Follow-Builders Skill Daily",
-  [string]$At = "13:30",
+  [string]$At = "16:10",
   [switch]$NoMerge,
   [switch]$RunOnceNow
 )

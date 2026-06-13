@@ -267,7 +267,12 @@ Purpose:
 
 Primary route:
 
-- Local Windows scheduled task: `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 13:30 Asia/Shanghai.
+- Local Windows scheduled task: `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai.
+
+Timing truth:
+
+- The afternoon skill lane follows the upstream `zarazhangrui/follow-builders` feed update.
+- Recent upstream feed evidence landed between 15:33 and 16:02 Asia/Shanghai, so local publication runs at 16:10 instead of 13:30.
 
 Reads:
 
@@ -283,7 +288,7 @@ Boundaries:
 
 - The afternoon skill publish is independent from the morning RSS route.
 - It must still publish through a branch and PR instead of pushing generated files directly to `main`.
-- Hermes records the afternoon run from the local publish report at 13:55.
+- Hermes records the afternoon run from the local publish report at 16:30.
 
 ### 8. Frontstage Data Build
 
