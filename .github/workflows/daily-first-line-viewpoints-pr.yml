@@ -2,11 +2,15 @@ name: WaveSight First-Line Viewpoints PR
 
 on:
   schedule:
-    # 09:17 / 09:47 / 10:17 Asia/Shanghai. Backup slots cover delayed or dropped
-    # GitHub scheduled runs and skip when same-date data is already on main.
+    # 09:17 / 09:47 / 10:17 / 12:17 / 13:17 / 14:17 Asia/Shanghai.
+    # Backup slots cover delayed or dropped GitHub scheduled runs and skip when
+    # same-date data is already on main.
     - cron: "17 1 * * *"
     - cron: "47 1 * * *"
     - cron: "17 2 * * *"
+    - cron: "17 4 * * *"
+    - cron: "17 5 * * *"
+    - cron: "17 6 * * *"
   workflow_dispatch:
     inputs:
       date:

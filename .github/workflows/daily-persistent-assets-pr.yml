@@ -2,11 +2,15 @@ name: WaveSight Business Signals PR
 
 on:
   schedule:
-    # 09:07 / 09:37 / 10:07 Asia/Shanghai. GitHub scheduled runs can be delayed
-    # or occasionally dropped; backup slots are guarded by the same-date asset check.
+    # 09:07 / 09:37 / 10:07 / 12:07 / 13:07 / 14:07 Asia/Shanghai.
+    # GitHub scheduled runs can be delayed or occasionally dropped; backup slots
+    # are guarded by the same-date asset check.
     - cron: "7 1 * * *"
     - cron: "37 1 * * *"
     - cron: "7 2 * * *"
+    - cron: "7 4 * * *"
+    - cron: "7 5 * * *"
+    - cron: "7 6 * * *"
   workflow_dispatch:
     inputs:
       date:
