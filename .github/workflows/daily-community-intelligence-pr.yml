@@ -94,7 +94,7 @@ jobs:
           const items = Array.isArray(data.items) ? data.items.length : 0;
           const links = Array.isArray(data.links) ? data.links.length : 0;
           const errors = Array.isArray(data.meta?.errors) ? data.meta.errors.length : 0;
-          process.stdout.write(`${date || "missing"} ${items} ${links} ${errors}`);
+          console.log(`${date || "missing"} ${items} ${links} ${errors}`);
           NODE
             )
           fi
