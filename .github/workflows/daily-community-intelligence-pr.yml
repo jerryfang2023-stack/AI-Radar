@@ -1,6 +1,12 @@
 name: WaveSight Community Intelligence PR
 
 on:
+  schedule:
+    # 08:45 / 10:45 / 12:45 Asia/Shanghai. GitHub only verifies and publishes
+    # local collector output; Chrome collection stays on the local scheduled task.
+    - cron: "45 0 * * *"
+    - cron: "45 2 * * *"
+    - cron: "45 4 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -57,6 +63,62 @@ jobs:
           echo "date=$run_date" >> "$GITHUB_OUTPUT"
           echo "RUN_DATE=$run_date" >> "$GITHUB_ENV"
 
+      - name: Check existing community publication
+        id: existing-community
+        shell: bash
+        run: |
+          set -euo pipefail
+          skip_commit=false
+          reason="not_applicable"
+          data_file="01-SiteV2/site/data/community-intelligence.json"
+          archive_file="01-SiteV2/content/07-community-intelligence/daily/${RUN_DATE} Community Intelligence.md"
+          data_date=""
+          items=0
+          links=0
+          errors=0
+
+          if [ -f "$data_file" ]; then
+            read -r data_date items links errors < <(node - "$data_file" <<'NODE'
+          const fs = require("fs");
+          const file = process.argv[2];
+          const data = JSON.parse(fs.readFileSync(file, "utf8"));
+          const value = data.meta?.generatedAt || data.generatedAt || "";
+          const date = value
+            ? new Intl.DateTimeFormat("en-CA", {
+                timeZone: "Asia/Shanghai",
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+              }).format(new Date(value))
+            : "";
+          const items = Array.isArray(data.items) ? data.items.length : 0;
+          const links = Array.isArray(data.links) ? data.links.length : 0;
+          const errors = Array.isArray(data.meta?.errors) ? data.meta.errors.length : 0;
+          process.stdout.write(`${date || "missing"} ${items} ${links} ${errors}`);
+          NODE
+            )
+          fi
+
+          archive_state="missing"
+          if [ -f "$archive_file" ]; then
+            archive_state="present"
+          fi
+
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ] && [ "$items" -ge 12 ] && [ "$links" -ge 3 ] && [ "$errors" = "0" ] && [ "$archive_state" = "present" ]; then
+            skip_commit=true
+            reason="same-date community data and Obsidian archive already exist on main"
+          fi
+
+          echo "skip_commit=$skip_commit" >> "$GITHUB_OUTPUT"
+          echo "reason=$reason" >> "$GITHUB_OUTPUT"
+          echo "data_date=$data_date" >> "$GITHUB_OUTPUT"
+          echo "items=$items" >> "$GITHUB_OUTPUT"
+          echo "links=$links" >> "$GITHUB_OUTPUT"
+          echo "errors=$errors" >> "$GITHUB_OUTPUT"
+          echo "archive_state=$archive_state" >> "$GITHUB_OUTPUT"
+          echo "community_existing_skip_commit=$skip_commit"
+          echo "community_existing_reason=$reason"
+
       - name: Syntax checks
         shell: bash
         run: |
@@ -98,6 +160,9 @@ jobs:
           - generated_at: $(date -Is)
           - workflow_mode: community_intelligence_pr
           - community_gate: ${{ steps.community-gate.outcome }}
+          - existing_skip_commit: ${{ steps.existing-community.outputs.skip_commit }}
+          - existing_reason: ${{ steps.existing-community.outputs.reason }}
+          - existing_data_date: ${{ steps.existing-community.outputs.data_date }}
           - data_file: $(state_for "$data_file")
           - daily_snapshot: $(state_for "$daily_file")
           - obsidian_daily_archive: $(state_for "$archive_file")
@@ -128,7 +193,7 @@ jobs:
 
       - name: Commit community intelligence to automation branch
         id: commit
-        if: always() && steps.community-gate.outcome == 'success'
+        if: always() && steps.community-gate.outcome == 'success' && steps.existing-community.outputs.skip_commit != 'true'
         shell: bash
         run: |
           set -euo pipefail
