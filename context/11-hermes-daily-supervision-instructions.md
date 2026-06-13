@@ -1,7 +1,7 @@
 ---
 status: current
 scope: hermes-daily-supervision
-last_updated: 2026-06-12
+last_updated: 2026-06-13
 use_when:
   - hermes daily supervision
   - monitor dispatch
@@ -89,6 +89,7 @@ agent-workflow/inbox/hermes-to-codex/
 | 10:20 | Business Signals | Check the 09:07 / 09:37 / 10:07 GitHub workflow windows. If no same-date run exists after this watchdog, request manual dispatch. |
 | 10:30 | First-Line Viewpoints | Check the 09:17 / 09:47 / 10:17 GitHub workflow windows, builders data gate, and Obsidian timeline sync. |
 | 10:40 | Site publication | Check lane PR / merge / Pages status when GitHub state is available. |
+| 10:55 / 11:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. |
 
 If Business Signals is still `in_progress`, wait for it to finish before reporting downstream data missing.
 
@@ -100,6 +101,27 @@ If Business Signals is still `in_progress`, wait for it to finish before reporti
 | `warning` | Read warnings. If they are GitHub CLI timeout, skipped external checks, or missing historical reports while current data is present, do not escalate. | None unless the warning repeats for several days. |
 | `manual_required` | Follow the report action and ensure an open Hermes inbox item exists for Codex or the human operator. Usually this means manual workflow dispatch, waiting for an in-progress workflow, or asking Codex to inspect a lane. | Only needed for GitHub permission, login state, or manual PR merge. |
 | `failed` | Ensure an open Hermes inbox item exists, then send Codex the lane repair request from the report. | Only needed if Codex asks for authorization, login, or business judgment. |
+
+## Morning Recovery Rule
+
+Hermes must run the morning recovery rule after the primary production windows if any of the three active lanes are still missing, `failed`, or `manual_required`:
+
+```powershell
+npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>
+```
+
+The command runs the daily supervision report first, then dispatches only the failed or manual lanes through the bounded recovery dispatcher. It must not lower quality gates, rewrite production rules, directly edit generated data, or push directly to `main`.
+
+Morning recovery writes:
+
+- `agent-workflow/reports/<date>-hermes-morning-recovery.json`
+- `agent-workflow/reports/<date>-hermes-morning-recovery.md`
+- `agent-workflow/reports/hermes-morning-recovery-latest.json`
+- `agent-workflow/reports/hermes-morning-recovery-latest.md`
+- matching daily supervision and recovery watchdog reports;
+- open Hermes inbox files under `agent-workflow/inbox/hermes-to-codex/` when Codex repair is still needed.
+
+The GitHub workflow uploads those files as artifacts. Local Hermes runs leave them in the repository workspace for Codex. If recovery dispatches a workflow but same-date data still fails after the bounded retry cap, Hermes should stop retrying and hand Codex the exact report path, lane, cause, attempted action, and result.
 
 ## Weekly And Monthly Review
 
