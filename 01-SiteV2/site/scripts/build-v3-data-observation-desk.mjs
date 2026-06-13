@@ -1524,7 +1524,6 @@ const largeVendorPatterns = [
   ["microsoft", /\bMicrosoft\b|\bCopilot\b/iu],
   ["nvidia", /\bNVIDIA\b|\bNvidia\b/iu],
   ["openai", /\bOpenAI\b|\bChatGPT\b/iu],
-  ["github", /\bGitHub\b/iu],
   ["amazon", /\bAWS\b|\bAmazon\b|\bAmazon\s+Bedrock\b/iu],
   ["meta", /\bMeta\b|\bLlama\b/iu],
   ["apple", /\bApple\b/iu],
@@ -1617,6 +1616,8 @@ function isSubstantiveSourceFragment(value = "") {
 }
 
 function isGenericSourceFallback(value = "") {
+  const text = String(value || "");
+  if (/公开材料提供了一条可追踪的\s*AI\s*商业信号|需继续核对客户、产品和业务结果/iu.test(text)) return true;
   return /公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果|鍏紑鏉愭枡鎻愪緵浜嗕竴鏉″彲杩借釜/iu.test(String(value || ""));
 }
 
@@ -1772,6 +1773,18 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
     const ranked = [...preferred, ...fallback];
     const rejected = [];
     const selectedForDate = [];
+    const selectedIds = new Set();
+    const selectCard = (card, selectionTier) => {
+      selected.push({
+        ...card,
+        summary: card.frontstageValueDescription,
+        frontstageSelectionTier: selectionTier,
+        frontstageSupplyFill: selectionTier !== "editorial",
+      });
+      selectedForDate.push(card);
+      selectedIds.add(card.id);
+      datePicked += 1;
+    };
     for (const card of ranked) {
       if (datePicked >= limit) break;
       if (isDuplicateFrontstageEvent(card, selectedForDate)) {
@@ -1792,14 +1805,16 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
         largeVendorCounts.set(card.largeVendorKey, vendorCount + 1);
       }
       const selectionTier = preferredIds.has(card.id) ? "editorial" : "supply-fill";
-      selected.push({
-        ...card,
-        summary: card.frontstageValueDescription,
-        frontstageSelectionTier: selectionTier,
-        frontstageSupplyFill: selectionTier === "supply-fill",
-      });
-      selectedForDate.push(card);
-      datePicked += 1;
+      selectCard(card, selectionTier);
+    }
+    for (const card of ranked) {
+      if (datePicked >= limit) break;
+      if (selectedIds.has(card.id)) continue;
+      if (isDuplicateFrontstageEvent(card, selectedForDate)) {
+        rejected.push({ id: card.id, reason: "duplicate event already selected in relaxed fill" });
+        continue;
+      }
+      selectCard(card, "quota-relaxed-fill");
     }
     reports.push({
       date,
@@ -1951,7 +1966,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
       const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
-      return {
+      const item = {
         id: `POOL-${activeDate}-${ref}`,
         type: "core_pool_candidate",
         category,
@@ -1998,7 +2013,10 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         fromCorePool: true,
         sourceRef: ref,
       };
+      if (!hasSourceBackedFrontstageFact(item)) return null;
+      return item;
     })
+    .filter(Boolean)
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
 }
 
