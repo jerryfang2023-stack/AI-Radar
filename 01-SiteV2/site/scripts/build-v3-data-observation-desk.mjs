@@ -497,6 +497,7 @@ function subjectFromUrl(url = "") {
     if (host === "techcrunch.com" && pathname.includes("token-bill")) return "AI token costs";
     if (host === "docs.aws.amazon.com" && pathname.includes("sagemaker-marketplace")) return "Amazon SageMaker";
     if (host === "businesswire.com" && pathname.includes("digitalocean-launches-inference-engine")) return "DigitalOcean";
+    if (host === "sisinternational.com") return "SIS International";
     if (host === "linkedin.com" && pathname.includes("pascaldarc")) return "Procurement AI";
     if (host === "linkedin.com" && pathname.includes("jonjessup")) return "Hugging Face";
     if (host === "ithome.com" && pathname.includes("962/220")) return "香港 AI 应用示范社区";
@@ -754,12 +755,14 @@ function isUntranslatedPublicEnglish(value = "") {
 }
 
 function subjectMatchesDisplayTitle(subject = "", title = "", originalTitle = "") {
+  const cleanSubjectText = cleanSubject(subject);
   const normalizedSubject = normalizedComparableText(subject);
   if (!normalizedSubject) return false;
+  const shouldRejectContainedSubject = /^[a-z0-9]{13,}$/iu.test(cleanSubjectText);
   return [title, originalTitle]
     .map(normalizedComparableText)
     .filter(Boolean)
-    .some((candidate) => candidate === normalizedSubject || (normalizedSubject.length > 14 && candidate.includes(normalizedSubject)));
+    .some((candidate) => candidate === normalizedSubject || (shouldRejectContainedSubject && candidate.includes(normalizedSubject)));
 }
 
 function safeFrontstageSubject({ subject = "", sourceUrl = "", sourceName = "", rawTitle = "", title = "", originalTitle = "" } = {}) {
