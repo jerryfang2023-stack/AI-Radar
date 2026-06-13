@@ -173,12 +173,14 @@ function subjectIsGeneric(value = "") {
 }
 
 function subjectMatchesTitle(card = {}) {
+  const cleanSubject = cleanFrontstageSubject(card.subject);
   const subject = normalizedComparableText(card.subject);
   if (!subject) return false;
+  const shouldRejectContainedSubject = /^[a-z0-9]{13,}$/iu.test(cleanSubject);
   return [card.title, card.originalTitle]
     .map(normalizedComparableText)
     .filter(Boolean)
-    .some((title) => title === subject || (subject.length > 14 && title.includes(subject)));
+    .some((title) => title === subject || (shouldRejectContainedSubject && title.includes(subject)));
 }
 
 function largeVendorKeyForCard(card = {}) {
