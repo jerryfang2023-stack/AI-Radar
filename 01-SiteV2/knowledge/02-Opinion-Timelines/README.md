@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 41
-opinion_count: 415
-generated_at: 2026-06-13T04:08:16.548Z
+opinion_count: 428
+generated_at: 2026-06-13T08:49:17.122Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,19 +11,20 @@ generated_at: 2026-06-13T04:08:16.548Z
 
 ## 人物
 
+- [Garry Tan](people/garry-tan/README.md) - 35 条 - 最新 2026-06-13
+- [Peter Yang](people/peter-yang/README.md) - 35 条 - 最新 2026-06-13
+- [Swyx](people/swyx/README.md) - 26 条 - 最新 2026-06-13
+- [Dan Shipper](people/dan-shipper/README.md) - 22 条 - 最新 2026-06-13
+- [Aaron Levie](people/aaron-levie/README.md) - 18 条 - 最新 2026-06-13
+- [Zara Zhang](people/zara-zhang/README.md) - 16 条 - 最新 2026-06-13
+- [Amjad Masad](people/amjad-masad/README.md) - 13 条 - 最新 2026-06-13
+- [Peter Steinberger](people/peter-steinberger/README.md) - 8 条 - 最新 2026-06-13
 - [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 6 条 - 最新 2026-06-13
-- [Garry Tan](people/garry-tan/README.md) - 34 条 - 最新 2026-06-12
-- [Peter Yang](people/peter-yang/README.md) - 33 条 - 最新 2026-06-12
-- [Swyx](people/swyx/README.md) - 25 条 - 最新 2026-06-12
-- [Dan Shipper](people/dan-shipper/README.md) - 19 条 - 最新 2026-06-12
-- [Aaron Levie](people/aaron-levie/README.md) - 17 条 - 最新 2026-06-12
-- [Amjad Masad](people/amjad-masad/README.md) - 11 条 - 最新 2026-06-12
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 21 条 - 最新 2026-06-11
 - [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 13 条 - 最新 2026-06-11
 - [Josh Woodward](people/josh-woodward/README.md) - 11 条 - 最新 2026-06-11
 - [Boris Cherny](people/boris-cherny/README.md) - 5 条 - 最新 2026-06-11
 - [Claude](people/claude/README.md) - 15 条 - 最新 2026-06-10
-- [Zara Zhang](people/zara-zhang/README.md) - 14 条 - 最新 2026-06-10
 - [Guillermo Rauch](people/guillermo-rauch/README.md) - 13 条 - 最新 2026-06-10
 - [Google Labs](people/google-labs/README.md) - 12 条 - 最新 2026-06-10
 - [Thariq](people/thariq/README.md) - 9 条 - 最新 2026-06-10
@@ -40,7 +41,6 @@ generated_at: 2026-06-13T04:08:16.548Z
 - [Interconnects (Nathan Lambert)](people/interconnects-nathan-lambert/README.md) - 1 条 - 最新 2026-06-09
 - [Sam Altman](people/sam-altman/README.md) - 11 条 - 最新 2026-06-08
 - [Import AI (Jack Clark)](people/import-ai-jack-clark/README.md) - 1 条 - 最新 2026-06-08
-- [Peter Steinberger](people/peter-steinberger/README.md) - 7 条 - 最新 2026-06-07
 - [Unknown Builder](people/unknown-builder/README.md) - 64 条 - 最新 2026-06-06
 - [DuckDuckGo](people/duckduckgo/README.md) - 12 条 - 最新 2026-06-04
 - [HN builder query](people/hn-builder-query/README.md) - 13 条 - 最新 2026-06-03
