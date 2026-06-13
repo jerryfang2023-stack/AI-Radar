@@ -24,12 +24,12 @@ if (-not (Test-Path -LiteralPath $publisher)) {
 
 Push-Location $repo
 try {
-  $args = @("node", $publisher)
+  $publisherArgs = @($publisher)
   if (-not $Merge) {
-    $args += "--merge=false"
+    $publisherArgs += "--merge=false"
   }
 
-  & @args
+  & node @publisherArgs
   if ($LASTEXITCODE -ne 0) {
     exit $LASTEXITCODE
   }
