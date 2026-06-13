@@ -1,0 +1,245 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-074
+title: "Cola：用技能弥合AI Agent使用鸿沟"
+original_url: "https://x.com/oran_ge/status/2065556362298585147"
+canonical_url: "https://x.com/oran_ge/status/2065556362298585147"
+source_name: "X：Oran Ge (@oran_ge)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-12T22:06:27.000Z"
+collected_at: 2026-06-13T05:32:37.318Z
+language: mixed
+full_text_hash: be54e345d3a8622b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-074-cola-用技能弥合ai-agent使用鸿沟.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-074-cola-用技能弥合ai-agent使用鸿沟.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 78
+extractor_diagnostics: {"readability_score":78,"text_length":2653,"paragraph_count":14,"sentence_count":9,"boilerplate_hits":1,"symbol_ratio":0.023,"method":"main"}
+has_full_text: true
+content_length: 2653
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"be54e345d3a8622b","missing":[]}
+source_volatility: high
+community_name: "X：Oran Ge (@oran_ge)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Cola：用技能弥合AI Agent使用鸿沟","discovery_summary":"AI带来的并非平权，而是K型分化。头部用户已默认理解Agent的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和Skill；普通用户只知道\"Agent能写代码\"。做好Skill是跨越鸿沟的唯一解法。作者正与藏师傅一起通过Cola帮助大众真正跨越鸿沟。","source_name":"X：Oran Ge (@oran_ge)","origin_url":"https://x.com/oran_ge/status/2065556362298585147","discovered_at":"2026-06-13T05:25:16.548Z","rank_on_page":108,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1876da17be1d92a2
+content_hash: be54e345d3a8622b
+semantic_hash: d685fe0e7317e225
+duplicate_of: ""
+first_seen_at: "2026-06-12T22:06:27.000Z"
+last_seen_at: 2026-06-13T05:32:37.318Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":4,"importance_reason":"technical trend or capability shift; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["X","Oran Ge (@oran_ge)"],"products":["Agent","MCP"],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["7418","12","10","06","2026","41.3","1","0.25"],"quotes":["Agent能写代码","Agent 能写代码"]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Orange AI @oran_ge 最近跟藏师傅聊天，都感觉到深深的共鸣。","大众以为 AI 带来平权，但实际带来的是 K 型分化。","我们正在和藏师傅一起做一点实际的事情，让 Cola 帮助大众真正跨越鸿沟。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["头部用户已经默认理解 Agent 的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和 Skill。"]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"AI带来的并非平权，而是K型分化。头部用户已默认理解Agent的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和Skill；普通用户只知道\"Agent能写代码\"。做好Skill是跨越鸿沟的唯一解法。作者正与藏师傅一起通过Cola帮助大众真正跨越鸿沟。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Orange AI @oran_ge 最近跟藏师傅聊天，都感觉到深深的共鸣。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"大众以为 AI 带来平权，但实际带来的是 K 型分化。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"头部用户已经默认理解 Agent 的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和 Skill。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"quote","text":"普通用户只知道\"Agent 能写代码\"。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"我们正在和藏师傅一起做一点实际的事情，让 Cola 帮助大众真正跨越鸿沟。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Cola：用技能弥合AI Agent使用鸿沟
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Orange AI
+@oran_ge
+最近跟藏师傅聊天，都感觉到深深的共鸣。
+大众以为 AI 带来平权，但实际带来的是 K 型分化。
+头部用户已经默认理解 Agent 的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和 Skill。
+普通用户只知道"Agent 能写代码"。
+怎么办？把技能做好，是跨越鸿沟的唯一解法。
+我们正在和藏师傅一起做一点实际的事情，让 Cola 帮助大众真正跨越鸿沟。
+歸藏(guizang.ai)
+@op7418
+Jun 12
+Article
+万字长文：做了些爆款 Skills 以后，我对 Skills 的看法
+如果看不完的话，可以先帮忙点个赞，收藏一下以后看，感谢。
+我最近几次聊 Skills，有一个越来越明确的判断：
+大家现在都在说 Agent，但大多数人其实还没有真正理解 Agent。
+大众理解里的...
+10:06 PM · Jun 12, 2026 41.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 31
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 171
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 287
+Read 18 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Orange AI
+@oran_ge
+最近跟藏师傅聊天，都感觉到深深的共鸣。
+大众以为 AI 带来平权，但实际带来的是 K 型分化。
+头部用户已经默认理解 Agent 的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和 Skill。
+普通用户只知道"Agent 能写代码"。
+怎么办？把技能做好，是跨越鸿沟的唯一解法。
+我们正在和藏师傅一起做一点实际的事情，让 Cola 帮助大众真正跨越鸿沟。
+歸藏(guizang.ai)
+@op7418
+Jun 12
+Article
+万字长文：做了些爆款 Skills 以后，我对 Skills 的看法
+如果看不完的话，可以先帮忙点个赞，收藏一下以后看，感谢。
+我最近几次聊 Skills，有一个越来越明确的判断：
+大家现在都在说 Agent，但大多数人其实还没有真正理解 Agent。
+大众理解里的...
+10:06 PM · Jun 12, 2026 41.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 31
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 171
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 287
+Read 18 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 78
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":78,"text_length":2653,"paragraph_count":14,"sentence_count":9,"boilerplate_hits":1,"symbol_ratio":0.023,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   AI带来的并非平权，而是K型分化。头部用户已默认理解Agent的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和Skill；普通用户只知道"Agent能写代码"。做好Skill是跨越鸿沟的唯一解法。作者正与藏师傅一起通过Cola帮助大众真正跨越鸿沟。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post Orange AI @oran_ge 最近跟藏师傅聊天，都感觉到深深的共鸣。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   大众以为 AI 带来平权，但实际带来的是 K 型分化。
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   头部用户已经默认理解 Agent 的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和 Skill。
+
+5. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   普通用户只知道"Agent 能写代码"。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   我们正在和藏师傅一起做一点实际的事情，让 Cola 帮助大众真正跨越鸿沟。
+
+## business_elements
+
+- companies: X, Oran Ge (@oran_ge)
+- products: Agent, MCP
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 7418, 12, 10, 06, 2026, 41.3, 1, 0.25
+- quotes: Agent能写代码 / Agent 能写代码
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Orange AI @oran_ge 最近跟藏师傅聊天，都感觉到深深的共鸣。 / 大众以为 AI 带来平权，但实际带来的是 K 型分化。 / 我们正在和藏师傅一起做一点实际的事情，让 Cola 帮助大众真正跨越鸿沟。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 头部用户已经默认理解 Agent 的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和 Skill。
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 4
+- importance_reason: technical trend or capability shift; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Oran Ge (@oran_ge)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Cola：用技能弥合AI Agent使用鸿沟","discovery_summary":"AI带来的并非平权，而是K型分化。头部用户已默认理解Agent的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和Skill；普通用户只知道\"Agent能写代码\"。做好Skill是跨越鸿沟的唯一解法。作者正与藏师傅一起通过Cola帮助大众真正跨越鸿沟。","source_name":"X：Oran Ge (@oran_ge)","origin_url":"https://x.com/oran_ge/status/2065556362298585147","discovered_at":"2026-06-13T05:25:16.548Z","rank_on_page":108,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+AI带来的并非平权，而是K型分化。头部用户已默认理解Agent的组成：文档、规则、memory、loop、MCP、CLI、工具调用、权限、安全沙箱、上下文工程、定时任务、心跳、文件系统、代码执行和Skill；普通用户只知道"Agent能写代码"。做好Skill是跨越鸿沟的唯一解法。作者正与藏师傅一起通过Cola帮助大众真正跨越鸿沟。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,443 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-060
+title: "IT早报0613：SpaceX上市、华为鸿蒙7发布、苹果Siri AI限制等"
+original_url: "https://www.ithome.com/0/963/744.htm"
+canonical_url: "https://ithome.com/0/963/744.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-12T23:26:23.000Z"
+collected_at: 2026-06-13T05:32:37.277Z
+language: mixed
+full_text_hash: 6f3fcb2815005021
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-060-it早报0613-spacex上市-华为鸿蒙7发布-苹果siri-ai限制等.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-060-it早报0613-spacex上市-华为鸿蒙7发布-苹果siri-ai限制等.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 60
+extractor_diagnostics: {"readability_score":60,"text_length":5328,"paragraph_count":65,"sentence_count":11,"boilerplate_hits":13,"symbol_ratio":0.0105,"method":"body-visible-text"}
+has_full_text: true
+content_length: 5328
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6f3fcb2815005021","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"IT早报0613：SpaceX上市、华为鸿蒙7发布、苹果Siri AI限制等","discovery_summary":"SpaceX以每股135美元IPO募资750亿美元，开盘涨11.11%，马斯克成全球首位万亿美元富豪。华为发布HarmonyOS 7，进入Agent时代，小艺升级为Agentic自演进架构；开源openPangu 2.0；鸿蒙6升级率98%；计划将开源鸿蒙优化到64KB内存可运行。苹果WWDC26发布的Siri AI仅限iPhone 15 Pro及以上、M1以上Mac/iPad。SK海力士计划赴纳斯达克上市。钉钉创始人无招卸任CEO。iPhone 18 Pro Max机模曝光深樱桃色、浅蓝、深灰版本。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/744.htm","discovered_at":"2026-06-13T05:25:16.545Z","rank_on_page":93,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7fe87686a83768e5
+content_hash: 6f3fcb2815005021
+semantic_hash: 1982aff4b54d3215
+duplicate_of: ""
+first_seen_at: "2026-06-12T23:26:23.000Z"
+last_seen_at: 2026-06-13T05:32:37.277Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","Apple"],"products":["Agent"],"people":[],"industries":["制造 / 工业","开发者工具","企业服务"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["0613","7","135美元","750亿","11.11%","2.0","6","98%"],"quotes":["Agent 时代","新豪华智慧运动 SUV","对我们而言，挺难的。我没有办法用一个宝马的外形搭配奔驰的内饰。我们还是希望能做成一家像苹果那样的企业，而不是变成一个大家喜好什么东西就把它拼凑在一起的企业。","大字吸睛、小字免责","大字吸睛、小字免责"]}
+evidence_seed: {"company_actions":["IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光.","IT早报 2026/6/13 7:26:23 责编： 梦泽 评论： 感谢IT之家网友 麻辣清补凉 的线索投递！","“IT早报”时间，大家好，现在是 2026 年 6 月 13 日星期六，今天的重要科技资讯有： 1、全球最大 IPO：马斯克 SpaceX 在纳斯达克敲钟上市，成为人类史上首位万亿美元富豪 马斯克旗下 SpaceX 6 月 12 日在纳斯达克正式挂牌上市，股票代码 SPCX。"],"case_details":["- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"SpaceX以每股135美元IPO募资750亿美元，开盘涨11.11%，马斯克成全球首位万亿美元富豪。华为发布HarmonyOS 7，进入Agent时代，小艺升级为Agentic自演进架构；开源openPangu 2.0；鸿蒙6升级率98%；计划将开源鸿蒙优化到64KB内存可运行。苹果WWDC26发布的Siri AI仅限iPhone 15 Pro及以上、M1以上Mac/iPad。SK海力士计划赴纳斯达克上市。钉钉创始人无招卸任CEO。iPhone 18 Pro Max机模曝光深樱桃色、浅蓝、深灰版本。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"IT早报 2026/6/13 7:26:23 责编： 梦泽 评论： 感谢IT之家网友 麻辣清补凉 的线索投递！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"“IT早报”时间，大家好，现在是 2026 年 6 月 13 日星期六，今天的重要科技资讯有： 1、全球最大 IPO：马斯克 SpaceX 在纳斯达克敲钟上市，成为人类史上首位万亿美元富豪 马斯克旗下 SpaceX 6 月 12 日在纳斯达克正式挂牌上市，股票代码 SPCX。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"本次 IPO 以每股 135 美元发行 5.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# IT早报0613：SpaceX上市、华为鸿蒙7发布、苹果Siri AI限制等
+
+## clean_text
+
+IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光... - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 业界
+IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光...
+IT早报
+2026/6/13 7:26:23
+责编： 梦泽
+评论：
+感谢IT之家网友 麻辣清补凉 的线索投递！
+“IT早报”时间，大家好，现在是 2026 年 6 月 13 日星期六，今天的重要科技资讯有：
+1、全球最大 IPO：马斯克 SpaceX 在纳斯达克敲钟上市，成为人类史上首位万亿美元富豪
+马斯克旗下 SpaceX 6 月 12 日在纳斯达克正式挂牌上市，股票代码 SPCX。本次 IPO 以每股 135 美元发行 5.556 亿股，募资 750 亿美元，创下全球资本市场历史新高。上市仪式简约，但摩根士丹利总部打出巨型火星主题广告牌助阵。>> 查看详情
+2、鸿蒙 HarmonyOS 7 正式发布：从“万物互联”正式迈进“Agent 时代”，华为 Mate90 系列今秋首发搭载
+在华为开发者大会 2026 上，余承东正式推出 HarmonyOS 7。新系统聚焦全场景智能，带来更流畅、高效、安全的交互体验，标志着华为操作系统生态的又一次重大升级。>> 查看详情
+3、钉钉换帅后《置身钉内》作者再发文：无效的形式化工时既消耗人力，也与技术发展的初衷相悖
+近日，一篇约 7.5 万字的离职信《置身钉内》在社交媒体上流传，让钉钉的高强度管理措施引发争议。6 月 11 日，阿里巴巴宣布，钉钉创始人陈航（花名“无招”）卸任钉钉 CEO，由生于 1992 年的技术极客陈宇森接棒。>> 查看详情
+4、苹果 iPhone 18 Pro Max 机模曝光：深樱桃色、浅蓝、深灰颜色亮相
+消息源 @Jon4Lakers 6 月 12 日在 X 平台发布系列推文，分享了一组 iPhone 18 Pro Max 机模照片，展示了深樱桃色（Dark Cherry）、浅蓝色和黑色版本。>> 查看详情
+5、“滴滴出行”正式更名为“滴滴”
+滴滴出行 App 8.0 版本于 6 月 11 日上线，更新说明显示“滴滴出行”正式更名为“滴滴”。>> 查看详情
+6、 苹果 iPhone 17 首发后，消息称国产 TOP5 厂商全员跟进方形前摄
+博主 @数码闲聊站 6 月 12 日爆料：OHh 三家的 1:1 方形前摄已经在打样了，VM 最近也开始评估方形前摄，国产 TOP5 厂商全员跟进。>> 查看详情
+7、消息称阿里拟出价 15 亿美元竞购零售电商平台“朴朴超市”
+据彭博社 6 月 12 日报道，阿里巴巴集团拟出价 15 亿美元（ IT之家 注：现汇率约合 101.81 亿元人民币）竞购即时零售电商平台“朴朴超市”，从而与美团竞争。>> 查看详情
+8、大疆在美国起诉影石，指控 Luna 云台相机侵犯 Osmo Pocket 外观设计、实用专利
+大疆创新在美起诉影石创新，指控其 Luna 云台相机侵犯 Osmo Pocket 外观及四项实用专利，涉及外观、云台控制、模式切换等。诉讼要求禁止销售并索赔，标志着手持云台相机市场竞争进入新阶段。>> 查看详情
+9、开盘市值突破两万亿美元位列美股第七：SpaceX 正式开启公开交易，马斯克成为全球首位万亿美元富豪
+SpaceX 6 月 12 日晚在纳斯达克正式开启交易，开盘报 150 美元，较 135 美元的发行价上涨 11.11%。此次 IPO 吸引了超过 3500 亿美元的认购需求，约三分之一的机构未能获得配售。>> 查看详情
+10、消息称 SK 海力士赴美上市选择纳斯达克而非纽约证券交易所：科技属性更浓
+据路透社 12 日今天援引两名知情人士消息称，SK 海力士计划赴美上市，并考虑选择纳斯达克。SK 海力士希望借助纳斯达克浓厚的科技股属性，吸引看好 AI 概念股的投资者。>> 查看详情
+11、苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起步、Mac 需 Apple Silicon 芯片，端侧 AI 模型门槛更高
+苹果 WWDC26 发布的 Siri AI 虽为系统核心，但兼容性严格。基础功能仅限 iPhone 15 Pro 系列、 iPhone 16 及更新机型，M1 芯片以上 iPad / Mac，部分 Apple Watch 需搭配兼容 iPhone 使用。最高阶的端侧 AI 模型对内存要求更高，仅限 iPhone 17 Pro 系列、 iPhone Air 等特定机型。>> 查看详情
+12、马斯克 IPO 敲钟前讲话：原以为 SpaceX 成功概率不到 10%
+在 SpaceX 创纪录 IPO 的敲钟仪式前，马斯克向员工袒露心声，回顾了从仓库起步到成为全球最大 IPO 的艰难历程，并重申了让普通人也能进行星际旅行的宏伟愿景。>> 查看详情
+13、广汽昊铂 S600 上市：权益价 17.99 万-19.99 万元，定位新豪华智慧运动 SUV
+广汽昊铂 S600 6 月 12 日晚正式上市，新车推出纯电、增程双动力共 4 款车型，上市权益价 17.99-19.99 万元，定位为“新豪华智慧运动 SUV”。>> 查看详情
+14、我国成功研制出三维多层片上电容，可直接应用于 AI / GPU 芯片、高性能处理器等高端芯片
+目前，相关技术正在开展工艺流片及小批量试产，将在先进封装领域实现规模化应用。>> 查看详情
+15、李想自曝不擅长精细化运营，希望理想汽车成为像苹果一样的企业
+有股东认为理想应当迎合市场和用户，对此，李想回应：“对我们而言，挺难的。我没有办法用一个宝马的外形搭配奔驰的内饰。我们还是希望能做成一家像苹果那样的企业，而不是变成一个大家喜好什么东西就把它拼凑在一起的企业。”>> 查看详情
+16、华为龚体：鸿蒙 HarmonyOS 6 升级率达 98%
+在 6 月 12 日的华为开发者大会 HDC 2026 主题演讲中，华为终端 BG 软件部总裁龚体宣布， 鸿蒙 HarmonyOS 6 的升级率达 98%，鸿蒙 TOP 应用的用户满意度超 50%。>> 查看详情
+17、曝华为鸿蒙 HarmonyOS 7 系统的卓易通 App 已升级安卓 16
+卓易通是一款运行在 HarmonyOS NEXT 系统上的工具软件。B站 UP 主 @永恒S 刚刚发布视频，透露华为鸿蒙 HarmonyOS 7 系统的卓易通 App 已升级 安卓 16 。>> 查看详情
+18、手机秒变游戏掌机，华为鸿蒙 HarmonyOS 7 带来控显分离功能
+该功能可以将游戏的触控按钮和游戏画面分离，比如搭配折叠屏手机，就可以实现类似掌机的上半屏显示内容、下半屏显示按键，操控不挡视线。>> 查看详情
+19、华为鸿蒙 HarmonyOS 开发套件 26.0.0 Beta1 发布：沉浸光感效果更好、游戏应用启动体验提升
+据介绍，26.0.0 Beta1 在 6.1.1 (24) 的基础上，进一步增强了组件的材质效果，实现更好的沉浸光感效果；Core File Kit 支持将沙箱目录共享为系统级可见；Device Security Kit 增强了星盾引擎能力和超级隐私管控能力；Graphics Accelerate Kit 新增预启动特性，提升游戏应用的启动体验；Notification Kit 进一步增强了通知管理能力和显示效果，支持以半模态方式拉起应用的通知设置界面，等等。另外，ArkWeb 的 Chromium 内核从 132 升级为 144 版本。>> 查看详情
+20、华为鸿蒙 HarmonyOS 7 全新升级小艺智慧大脑，系统能力全面 Skill 化
+华为 HDC 开发者大会 2026 正在进行中，何刚宣布华为鸿蒙 HarmonyOS 7 全新升级小艺智慧大脑，Agentic 自演进架构，系统能力全面 Skill 化。>> 查看详情
+21、发力大模型！华为余承东喊话自己的字典没有第二，只有第一
+在 6 月 12 日的 HDC2026 上，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东宣布开源盘古全面升级，带来了 openPangu 2.0。余承东喊话会带领团队在大模型一路赶超，自己的字典里没有第二，只有第一！>> 查看详情
+22、华为余承东：鸿蒙和开源鸿蒙今年将优化到 64KB 内存也能跑，一节干电池续航一年
+在 6 月 12 日的华为开发者大会 HDC 2026 主题演讲中，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东表示，开源鸿蒙和鸿蒙操作系统已实现 128KB 内存也能跑，今年还将优化到 64KB 内存也能跑。>> 查看详情
+23、《广告引证内容执法指南》出台，进一步遏制“大字吸睛、小字免责”等违法广告
+市场监管总局将指导地方市场监管部门，结合当前正在开展的广告提示性用语乱象清理整治工作，进一步遏制“大字吸睛、小字免责”“先射箭后画靶”等违法广告，缓解广告主“营销焦虑”，引导其主动摈弃“文字游戏”式广告，切实防范通过制造所谓“萝卜坑赛道冠军”等手段加剧“内卷式”竞争。>> 查看详情
+24、蔚来李斌：新能源车减重需要勇气，冲刺阶段每“减肥”一公斤成本约千元
+李斌认为，轻量化是综合了成本、技术、工程、产品定义各个方面的成果。在车辆基本定义完成后，进入轻量化最后冲刺阶段时，估计每减重 1 公斤大约需要花费 1000 元。“从 2 吨减到 1.9 吨相对容易，但从 1.9 吨继续往下减，每公斤花费会越来越高。”>> 查看详情
+25、多地整治停车扫码弹窗乱象：一直弹关不掉，甚至诱导扣费
+在停车场扫码缴费时，很多车主被层层营销套路裹挟：弹窗领券铺满页面、关闭按键真假难辨，有的还强制关注公众号、注册会员才能完成支付。>> 查看详情
+26、超越丰田，铠侠成为日本市值最高的上市公司
+在 AI 数据中心需求强劲的推动下，日本闪存制造商铠侠市值一度突破 44 万亿日元，超越丰田汽车成为日本市值最高的上市公司。这标志着 AI 相关产业正重塑日本传统经济格局。>> 查看详情
+27、比亚迪海豹 08 旗舰高定车色“曜石黑”亮相，开启盲订
+比亚迪海豹 08 全新“曜石黑”车色公布，灵感源自深海曜石，采用百万豪车同款巴斯夫清漆。新车已开启盲订，预计二季度上市，集闪充、后轮转向、云辇-A、第二代刀片电池等技术于一身，纯电续航有望突破 1000 公里。>> 查看详情
+今天就先聊到这里，IT早报，咱们明天见。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： IT早报
+IT早报 0612：iPhone 17 标准版无缘高阶 Siri AI；第 13 版《新华字典》发布；被阿里内部批评后钉钉火速换帅；“百亿补贴”非真百亿，淘宝京东拼多多抖音小红书被约谈...
+IT早报 0611：豆包专业版付费订阅开放灰度测试；5 月国内汽车销量前十已无燃油车；曝联想电脑平板手机全品类 7 月再涨价；“运营商新老歧视”引热议...
+IT早报 0610：阿里、百度等回应被列入美国防部军工名单；工信部整治 App“摇一摇”跳转；王传福称 5 年后比亚迪规模将做到真正的全球第一；微信朋友圈搜索全量开放...
+IT早报 0609：华为余承东官宣尊界 V800；库克 WWDC 收官演讲苹果 iOS 27 发布；腾讯 QQ 回应为何不显示华为 5A 在线状态；总台曝光小作坊翻新牙刷...
+IT早报 0608：今年全国高考新增“AI 监考员”；央视曝光手机高价回收骗局；曝淘宝闪购将加大投入零售业务；华为余承东科普电视“频闪”为何伤眼...
+IT早报 0607：字节跳动否认造车传闻；比亚迪腾势 Z 超跑“黑武士”实车曝光；减少礼貌用语可让 AI 能耗降低 25%；曝苹果 iOS 27 将改善 iPhone 17 等机型续航...
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光... - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 业界
+IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光...
+IT早报
+2026/6/13 7:26:23
+责编： 梦泽
+评论：
+感谢IT之家网友 麻辣清补凉 的线索投递！
+“IT早报”时间，大家好，现在是 2026 年 6 月 13 日星期六，今天的重要科技资讯有：
+1、全球最大 IPO：马斯克 SpaceX 在纳斯达克敲钟上市，成为人类史上首位万亿美元富豪
+马斯克旗下 SpaceX 6 月 12 日在纳斯达克正式挂牌上市，股票代码 SPCX。本次 IPO 以每股 135 美元发行 5.556 亿股，募资 750 亿美元，创下全球资本市场历史新高。上市仪式简约，但摩根士丹利总部打出巨型火星主题广告牌助阵。>> 查看详情
+2、鸿蒙 HarmonyOS 7 正式发布：从“万物互联”正式迈进“Agent 时代”，华为 Mate90 系列今秋首发搭载
+在华为开发者大会 2026 上，余承东正式推出 HarmonyOS 7。新系统聚焦全场景智能，带来更流畅、高效、安全的交互体验，标志着华为操作系统生态的又一次重大升级。>> 查看详情
+3、钉钉换帅后《置身钉内》作者再发文：无效的形式化工时既消耗人力，也与技术发展的初衷相悖
+近日，一篇约 7.5 万字的离职信《置身钉内》在社交媒体上流传，让钉钉的高强度管理措施引发争议。6 月 11 日，阿里巴巴宣布，钉钉创始人陈航（花名“无招”）卸任钉钉 CEO，由生于 1992 年的技术极客陈宇森接棒。>> 查看详情
+4、苹果 iPhone 18 Pro Max 机模曝光：深樱桃色、浅蓝、深灰颜色亮相
+消息源 @Jon4Lakers 6 月 12 日在 X 平台发布系列推文，分享了一组 iPhone 18 Pro Max 机模照片，展示了深樱桃色（Dark Cherry）、浅蓝色和黑色版本。>> 查看详情
+5、“滴滴出行”正式更名为“滴滴”
+滴滴出行 App 8.0 版本于 6 月 11 日上线，更新说明显示“滴滴出行”正式更名为“滴滴”。>> 查看详情
+6、 苹果 iPhone 17 首发后，消息称国产 TOP5 厂商全员跟进方形前摄
+博主 @数码闲聊站 6 月 12 日爆料：OHh 三家的 1:1 方形前摄已经在打样了，VM 最近也开始评估方形前摄，国产 TOP5 厂商全员跟进。>> 查看详情
+7、消息称阿里拟出价 15 亿美元竞购零售电商平台“朴朴超市”
+据彭博社 6 月 12 日报道，阿里巴巴集团拟出价 15 亿美元（ IT之家 注：现汇率约合 101.81 亿元人民币）竞购即时零售电商平台“朴朴超市”，从而与美团竞争。>> 查看详情
+8、大疆在美国起诉影石，指控 Luna 云台相机侵犯 Osmo Pocket 外观设计、实用专利
+大疆创新在美起诉影石创新，指控其 Luna 云台相机侵犯 Osmo Pocket 外观及四项实用专利，涉及外观、云台控制、模式切换等。诉讼要求禁止销售并索赔，标志着手持云台相机市场竞争进入新阶段。>> 查看详情
+9、开盘市值突破两万亿美元位列美股第七：SpaceX 正式开启公开交易，马斯克成为全球首位万亿美元富豪
+SpaceX 6 月 12 日晚在纳斯达克正式开启交易，开盘报 150 美元，较 135 美元的发行价上涨 11.11%。此次 IPO 吸引了超过 3500 亿美元的认购需求，约三分之一的机构未能获得配售。>> 查看详情
+10、消息称 SK 海力士赴美上市选择纳斯达克而非纽约证券交易所：科技属性更浓
+据路透社 12 日今天援引两名知情人士消息称，SK 海力士计划赴美上市，并考虑选择纳斯达克。SK 海力士希望借助纳斯达克浓厚的科技股属性，吸引看好 AI 概念股的投资者。>> 查看详情
+11、苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起步、Mac 需 Apple Silicon 芯片，端侧 AI 模型门槛更高
+苹果 WWDC26 发布的 Siri AI 虽为系统核心，但兼容性严格。基础功能仅限 iPhone 15 Pro 系列、 iPhone 16 及更新机型，M1 芯片以上 iPad / Mac，部分 Apple Watch 需搭配兼容 iPhone 使用。最高阶的端侧 AI 模型对内存要求更高，仅限 iPhone 17 Pro 系列、 iPhone Air 等特定机型。>> 查看详情
+12、马斯克 IPO 敲钟前讲话：原以为 SpaceX 成功概率不到 10%
+在 SpaceX 创纪录 IPO 的敲钟仪式前，马斯克向员工袒露心声，回顾了从仓库起步到成为全球最大 IPO 的艰难历程，并重申了让普通人也能进行星际旅行的宏伟愿景。>> 查看详情
+13、广汽昊铂 S600 上市：权益价 17.99 万-19.99 万元，定位新豪华智慧运动 SUV
+广汽昊铂 S600 6 月 12 日晚正式上市，新车推出纯电、增程双动力共 4 款车型，上市权益价 17.99-19.99 万元，定位为“新豪华智慧运动 SUV”。>> 查看详情
+14、我国成功研制出三维多层片上电容，可直接应用于 AI / GPU 芯片、高性能处理器等高端芯片
+目前，相关技术正在开展工艺流片及小批量试产，将在先进封装领域实现规模化应用。>> 查看详情
+15、李想自曝不擅长精细化运营，希望理想汽车成为像苹果一样的企业
+有股东认为理想应当迎合市场和用户，对此，李想回应：“对我们而言，挺难的。我没有办法用一个宝马的外形搭配奔驰的内饰。我们还是希望能做成一家像苹果那样的企业，而不是变成一个大家喜好什么东西就把它拼凑在一起的企业。”>> 查看详情
+16、华为龚体：鸿蒙 HarmonyOS 6 升级率达 98%
+在 6 月 12 日的华为开发者大会 HDC 2026 主题演讲中，华为终端 BG 软件部总裁龚体宣布， 鸿蒙 HarmonyOS 6 的升级率达 98%，鸿蒙 TOP 应用的用户满意度超 50%。>> 查看详情
+17、曝华为鸿蒙 HarmonyOS 7 系统的卓易通 App 已升级安卓 16
+卓易通是一款运行在 HarmonyOS NEXT 系统上的工具软件。B站 UP 主 @永恒S 刚刚发布视频，透露华为鸿蒙 HarmonyOS 7 系统的卓易通 App 已升级 安卓 16 。>> 查看详情
+18、手机秒变游戏掌机，华为鸿蒙 HarmonyOS 7 带来控显分离功能
+该功能可以将游戏的触控按钮和游戏画面分离，比如搭配折叠屏手机，就可以实现类似掌机的上半屏显示内容、下半屏显示按键，操控不挡视线。>> 查看详情
+19、华为鸿蒙 HarmonyOS 开发套件 26.0.0 Beta1 发布：沉浸光感效果更好、游戏应用启动体验提升
+据介绍，26.0.0 Beta1 在 6.1.1 (24) 的基础上，进一步增强了组件的材质效果，实现更好的沉浸光感效果；Core File Kit 支持将沙箱目录共享为系统级可见；Device Security Kit 增强了星盾引擎能力和超级隐私管控能力；Graphics Accelerate Kit 新增预启动特性，提升游戏应用的启动体验；Notification Kit 进一步增强了通知管理能力和显示效果，支持以半模态方式拉起应用的通知设置界面，等等。另外，ArkWeb 的 Chromium 内核从 132 升级为 144 版本。>> 查看详情
+20、华为鸿蒙 HarmonyOS 7 全新升级小艺智慧大脑，系统能力全面 Skill 化
+华为 HDC 开发者大会 2026 正在进行中，何刚宣布华为鸿蒙 HarmonyOS 7 全新升级小艺智慧大脑，Agentic 自演进架构，系统能力全面 Skill 化。>> 查看详情
+21、发力大模型！华为余承东喊话自己的字典没有第二，只有第一
+在 6 月 12 日的 HDC2026 上，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东宣布开源盘古全面升级，带来了 openPangu 2.0。余承东喊话会带领团队在大模型一路赶超，自己的字典里没有第二，只有第一！>> 查看详情
+22、华为余承东：鸿蒙和开源鸿蒙今年将优化到 64KB 内存也能跑，一节干电池续航一年
+在 6 月 12 日的华为开发者大会 HDC 2026 主题演讲中，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东表示，开源鸿蒙和鸿蒙操作系统已实现 128KB 内存也能跑，今年还将优化到 64KB 内存也能跑。>> 查看详情
+23、《广告引证内容执法指南》出台，进一步遏制“大字吸睛、小字免责”等违法广告
+市场监管总局将指导地方市场监管部门，结合当前正在开展的广告提示性用语乱象清理整治工作，进一步遏制“大字吸睛、小字免责”“先射箭后画靶”等违法广告，缓解广告主“营销焦虑”，引导其主动摈弃“文字游戏”式广告，切实防范通过制造所谓“萝卜坑赛道冠军”等手段加剧“内卷式”竞争。>> 查看详情
+24、蔚来李斌：新能源车减重需要勇气，冲刺阶段每“减肥”一公斤成本约千元
+李斌认为，轻量化是综合了成本、技术、工程、产品定义各个方面的成果。在车辆基本定义完成后，进入轻量化最后冲刺阶段时，估计每减重 1 公斤大约需要花费 1000 元。“从 2 吨减到 1.9 吨相对容易，但从 1.9 吨继续往下减，每公斤花费会越来越高。”>> 查看详情
+25、多地整治停车扫码弹窗乱象：一直弹关不掉，甚至诱导扣费
+在停车场扫码缴费时，很多车主被层层营销套路裹挟：弹窗领券铺满页面、关闭按键真假难辨，有的还强制关注公众号、注册会员才能完成支付。>> 查看详情
+26、超越丰田，铠侠成为日本市值最高的上市公司
+在 AI 数据中心需求强劲的推动下，日本闪存制造商铠侠市值一度突破 44 万亿日元，超越丰田汽车成为日本市值最高的上市公司。这标志着 AI 相关产业正重塑日本传统经济格局。>> 查看详情
+27、比亚迪海豹 08 旗舰高定车色“曜石黑”亮相，开启盲订
+比亚迪海豹 08 全新“曜石黑”车色公布，灵感源自深海曜石，采用百万豪车同款巴斯夫清漆。新车已开启盲订，预计二季度上市，集闪充、后轮转向、云辇-A、第二代刀片电池等技术于一身，纯电续航有望突破 1000 公里。>> 查看详情
+今天就先聊到这里，IT早报，咱们明天见。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： IT早报
+IT早报 0612：iPhone 17 标准版无缘高阶 Siri AI；第 13 版《新华字典》发布；被阿里内部批评后钉钉火速换帅；“百亿补贴”非真百亿，淘宝京东拼多多抖音小红书被约谈...
+IT早报 0611：豆包专业版付费订阅开放灰度测试；5 月国内汽车销量前十已无燃油车；曝联想电脑平板手机全品类 7 月再涨价；“运营商新老歧视”引热议...
+IT早报 0610：阿里、百度等回应被列入美国防部军工名单；工信部整治 App“摇一摇”跳转；王传福称 5 年后比亚迪规模将做到真正的全球第一；微信朋友圈搜索全量开放...
+IT早报 0609：华为余承东官宣尊界 V800；库克 WWDC 收官演讲苹果 iOS 27 发布；腾讯 QQ 回应为何不显示华为 5A 在线状态；总台曝光小作坊翻新牙刷...
+IT早报 0608：今年全国高考新增“AI 监考员”；央视曝光手机高价回收骗局；曝淘宝闪购将加大投入零售业务；华为余承东科普电视“频闪”为何伤眼...
+IT早报 0607：字节跳动否认造车传闻；比亚迪腾势 Z 超跑“黑武士”实车曝光；减少礼貌用语可让 AI 能耗降低 25%；曝苹果 iOS 27 将改善 iPhone 17 等机型续航...
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 60
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":60,"text_length":5328,"paragraph_count":65,"sentence_count":11,"boilerplate_hits":13,"symbol_ratio":0.0105,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   SpaceX以每股135美元IPO募资750亿美元，开盘涨11.11%，马斯克成全球首位万亿美元富豪。华为发布HarmonyOS 7，进入Agent时代，小艺升级为Agentic自演进架构；开源openPangu 2.0；鸿蒙6升级率98%；计划将开源鸿蒙优化到64KB内存可运行。苹果WWDC26发布的Siri AI仅限iPhone 15 Pro及以上、M1以上Mac/iPad。SK海力士计划赴纳斯达克上市。钉钉创始人无招卸任CEO。iPhone 18 Pro Max机模曝光深樱桃色、浅蓝、深灰版本。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光.
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   IT早报 2026/6/13 7:26:23 责编： 梦泽 评论： 感谢IT之家网友 麻辣清补凉 的线索投递！
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   “IT早报”时间，大家好，现在是 2026 年 6 月 13 日星期六，今天的重要科技资讯有： 1、全球最大 IPO：马斯克 SpaceX 在纳斯达克敲钟上市，成为人类史上首位万亿美元富豪 马斯克旗下 SpaceX 6 月 12 日在纳斯达克正式挂牌上市，股票代码 SPCX。
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   本次 IPO 以每股 135 美元发行 5.
+
+## business_elements
+
+- companies: IT之家（RSS）, Apple
+- products: Agent
+- people: 暂无公开信息
+- industries: 制造 / 工业, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 0613, 7, 135美元, 750亿, 11.11%, 2.0, 6, 98%
+- quotes: Agent 时代 / 新豪华智慧运动 SUV / 对我们而言，挺难的。我没有办法用一个宝马的外形搭配奔驰的内饰。我们还是希望能做成一家像苹果那样的企业，而不是变成一个大家喜好什么东西就把它拼凑在一起的企业。 / 大字吸睛、小字免责 / 大字吸睛、小字免责
+
+## evidence_seed
+
+- company_actions: IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光. / IT早报 2026/6/13 7:26:23 责编： 梦泽 评论： 感谢IT之家网友 麻辣清补凉 的线索投递！ / “IT早报”时间，大家好，现在是 2026 年 6 月 13 日星期六，今天的重要科技资讯有： 1、全球最大 IPO：马斯克 SpaceX 在纳斯达克敲钟上市，成为人类史上首位万亿美元富豪 马斯克旗下 SpaceX 6 月 12 日在纳斯达克正式挂牌上市，股票代码 SPCX。
+- case_details: - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IT早报 0613：SpaceX 上市，马斯克成人类首个万亿美元富豪；华为鸿蒙 HarmonyOS 7 发布；《置身钉内》作者再发文；苹果 iPhone 18 Pro Max 机模曝光.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"IT早报0613：SpaceX上市、华为鸿蒙7发布、苹果Siri AI限制等","discovery_summary":"SpaceX以每股135美元IPO募资750亿美元，开盘涨11.11%，马斯克成全球首位万亿美元富豪。华为发布HarmonyOS 7，进入Agent时代，小艺升级为Agentic自演进架构；开源openPangu 2.0；鸿蒙6升级率98%；计划将开源鸿蒙优化到64KB内存可运行。苹果WWDC26发布的Siri AI仅限iPhone 15 Pro及以上、M1以上Mac/iPad。SK海力士计划赴纳斯达克上市。钉钉创始人无招卸任CEO。iPhone 18 Pro Max机模曝光深樱桃色、浅蓝、深灰版本。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/744.htm","discovered_at":"2026-06-13T05:25:16.545Z","rank_on_page":93,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+SpaceX以每股135美元IPO募资750亿美元，开盘涨11.11%，马斯克成全球首位万亿美元富豪。华为发布HarmonyOS 7，进入Agent时代，小艺升级为Agentic自演进架构；开源openPangu 2.0；鸿蒙6升级率98%；计划将开源鸿蒙优化到64KB内存可运行。苹果WWDC26发布的Siri AI仅限iPhone 15 Pro及以上、M1以上Mac/iPad。SK海力士计划赴纳斯达克上市。钉钉创始人无招卸任CEO。iPhone 18 Pro Max机模曝光深樱桃色、浅蓝、深灰版本。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

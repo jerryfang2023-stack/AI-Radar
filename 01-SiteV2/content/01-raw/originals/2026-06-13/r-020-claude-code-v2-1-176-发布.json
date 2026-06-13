@@ -1,0 +1,262 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-020",
+  "title": "Claude Code v2.1.176 发布",
+  "original_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+  "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+  "source_name": "Claude Code：GitHub Releases（RSS）",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-12T21:53:27.000Z",
+  "collected_at": "2026-06-13T05:32:37.162Z",
+  "language": "mixed",
+  "full_text": "anthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.4k\nStar\n132k\nv2.1.176\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n12 Jun 21:53\nv2.1.176\nca9f604\nWhat's changed\nSession titles are now generated in the language of your conversation (set the language setting to pin a specific language)\nAdded footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings\nImproved Bedrock credential caching: credentials from awsCredentialExport are now cached until their Expiration instead of a fixed 1 hour\nFixed availableModels enforcement: alias model picks can no longer be redirected to a blocked model via ANTHROPIC_DEFAULT_*_MODEL environment variables, and /fast now refuses to toggle when it would switch to a model outside the allowlist\nFixed auto mode failing on Fable 5 for organizations without Opus 4.8 enabled — the classifier now falls back to the best available Opus model\nFixed hook if conditions for Read/Edit/Write tool paths: documented patterns like Edit(src/**) , Read(~/.ssh/**) , and Read(.env) now match correctly\nFixed Linux sandbox failing to start when .claude/settings.json is a symlink with an absolute target\nFixed /copy and mouse-selection copy not reaching the system clipboard inside tmux over SSH, and tmux paste buffer not loading on versions older than 3.2\nFixed Remote Control connecting from web/mobile silently switching the session's model\nFixed Remote Control disconnect notifications showing a bare numeric code instead of a human-readable reason, and connection failures adding a duplicate line to the conversation transcript\nFixed Remote Control sessions not disconnecting when you sign in to a different account\nFixed /cd and worktree moves leaving the session reporting the previous directory's git branch\nFixed claude agents : pressing back in one window no longer detaches other windows attached to the same session\nFixed backgrounded sessions showing \"Working\" forever when /bg mid-turn had nothing left to continue\nFixed background agent search by PR URL: PRs opened during scheduled wakeups or while a job was blocked now appear in claude agents search\nFixed the agents view input showing no text cursor on Windows\nFixed claude --bg -cn <name> not seeding the session name\nFixed background sessions to neutralize Windows network paths in persisted state before respawn\nFixed background-session respawn rejecting malformed resume IDs from corrupted state files\nFixed the Windows background-service daemon not starting when ~/.claude/daemon has the ReadOnly attribute set\nFixed cloud sessions failing with \"Could not resolve authentication method\" when idle for too long before being claimed\nBackground sessions now show clearer guidance when a window left open across an auto-update can't submit a reply, and claude daemon status explains version-skew behavior\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n7 people reacted",
+  "clean_text": "anthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.4k\nStar\n132k\nv2.1.176\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n12 Jun 21:53\nv2.1.176\nca9f604\nWhat's changed\nSession titles are now generated in the language of your conversation (set the language setting to pin a specific language)\nAdded footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings\nImproved Bedrock credential caching: credentials from awsCredentialExport are now cached until their Expiration instead of a fixed 1 hour\nFixed availableModels enforcement: alias model picks can no longer be redirected to a blocked model via ANTHROPIC_DEFAULT_*_MODEL environment variables, and /fast now refuses to toggle when it would switch to a model outside the allowlist\nFixed auto mode failing on Fable 5 for organizations without Opus 4.8 enabled — the classifier now falls back to the best available Opus model\nFixed hook if conditions for Read/Edit/Write tool paths: documented patterns like Edit(src/**) , Read(~/.ssh/**) , and Read(.env) now match correctly\nFixed Linux sandbox failing to start when .claude/settings.json is a symlink with an absolute target\nFixed /copy and mouse-selection copy not reaching the system clipboard inside tmux over SSH, and tmux paste buffer not loading on versions older than 3.2\nFixed Remote Control connecting from web/mobile silently switching the session's model\nFixed Remote Control disconnect notifications showing a bare numeric code instead of a human-readable reason, and connection failures adding a duplicate line to the conversation transcript\nFixed Remote Control sessions not disconnecting when you sign in to a different account\nFixed /cd and worktree moves leaving the session reporting the previous directory's git branch\nFixed claude agents : pressing back in one window no longer detaches other windows attached to the same session\nFixed backgrounded sessions showing \"Working\" forever when /bg mid-turn had nothing left to continue\nFixed background agent search by PR URL: PRs opened during scheduled wakeups or while a job was blocked now appear in claude agents search\nFixed the agents view input showing no text cursor on Windows\nFixed claude --bg -cn <name> not seeding the session name\nFixed background sessions to neutralize Windows network paths in persisted state before respawn\nFixed background-session respawn rejecting malformed resume IDs from corrupted state files\nFixed the Windows background-service daemon not starting when ~/.claude/daemon has the ReadOnly attribute set\nFixed cloud sessions failing with \"Could not resolve authentication method\" when idle for too long before being claimed\nBackground sessions now show clearer guidance when a window left open across an auto-update can't submit a reply, and claude daemon status explains version-skew behavior\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n7 people reacted",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-020-claude-code-v2-1-176-发布.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-020-claude-code-v2-1-176-发布.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 76,
+  "extractor_diagnostics": {
+    "readability_score": 76,
+    "text_length": 3193,
+    "paragraph_count": 28,
+    "sentence_count": 8,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0022,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3193,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "182bf43ba5fdae2b",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Claude Code v2.1.176 发布",
+    "discovery_summary": "Claude Code v2.1.176 更新：会话标题现按对话语言生成；新增 footerLinksRegexes 设置支持正则匹配页脚行链接徽章；优化 Bedrock 凭证缓存。修复多项问题：环境变量不可再绕过 availableModels 限制；/fast 切换至白名单外模型时拒绝；auto 模式退化为可用 Opus 模型；修正路径 hook 条件匹配；修复 Linux 沙箱内符号链接启动问题；修复 tmux 内 SSH 剪贴板问题；修复 Remote Control 多项连接问题。",
+    "source_name": "Claude Code：GitHub Releases（RSS）",
+    "origin_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+    "discovered_at": "2026-06-13T05:25:16.549Z",
+    "rank_on_page": 110,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "b7c0be7755975b74",
+  "content_hash": "182bf43ba5fdae2b",
+  "full_text_hash": "182bf43ba5fdae2b",
+  "semantic_hash": "28ead700a1e64420",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-12T21:53:27.000Z",
+  "last_seen_at": "2026-06-13T05:32:37.162Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Claude Code v2.1.176 更新：会话标题现按对话语言生成；新增 footerLinksRegexes 设置支持正则匹配页脚行链接徽章；优化 Bedrock 凭证缓存。修复多项问题：环境变量不可再绕过 availableModels 限制；/fast 切换至白名单外模型时拒绝；auto 模式退化为可用 Opus 模型；修正路径 hook 条件匹配；修复 Linux 沙箱内符号链接启动问题；修复 tmux 内 SSH 剪贴板问题；修复 Remote Control 多项连接问题。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "176 Compare Choose a tag to compare Sorry, something went wrong.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Filter Loading Sorry, something went wrong.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Claude Code",
+      "GitHub Releases（RSS）",
+      "Cursor"
+    ],
+    "products": [
+      "Claude",
+      "claude",
+      "agents",
+      "agent",
+      "cursor"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2.1",
+      "176",
+      "21.4",
+      "132",
+      "12",
+      "21",
+      "53",
+      "9"
+    ],
+    "quotes": [
+      "Could not resolve authentication method"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Claude Code v2.1.176 更新：会话标题现按对话语言生成；新增 footerLinksRegexes 设置支持正则匹配页脚行链接徽章；优化 Bedrock 凭证缓存。修复多项问题：环境变量不可再绕过 availableModels 限制；/fast 切换至白名单外模型时拒绝；auto 模式退化为可用 Opus 模型；修正路径 hook 条件匹配；修复 Linux 沙箱内符号链接启动问题；修复 tmux 内 SSH 剪贴板问题；修复 Remote Control 多项连接问题。",
+      "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.",
+      "176 Compare Choose a tag to compare Sorry, something went wrong."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Claude Code v2.1.176 发布\n\n- raw_id: R-020\n- original_url: https://github.com/anthropics/claude-code/releases/tag/v2.1.176\n- source_name: Claude Code：GitHub Releases（RSS）\n- collected_at: 2026-06-13T05:32:37.162Z\n\n## clean_text\n\nanthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.4k\nStar\n132k\nv2.1.176\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n12 Jun 21:53\nv2.1.176\nca9f604\nWhat's changed\nSession titles are now generated in the language of your conversation (set the language setting to pin a specific language)\nAdded footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings\nImproved Bedrock credential caching: credentials from awsCredentialExport are now cached until their Expiration instead of a fixed 1 hour\nFixed availableModels enforcement: alias model picks can no longer be redirected to a blocked model via ANTHROPIC_DEFAULT_*_MODEL environment variables, and /fast now refuses to toggle when it would switch to a model outside the allowlist\nFixed auto mode failing on Fable 5 for organizations without Opus 4.8 enabled — the classifier now falls back to the best available Opus model\nFixed hook if conditions for Read/Edit/Write tool paths: documented patterns like Edit(src/**) , Read(~/.ssh/**) , and Read(.env) now match correctly\nFixed Linux sandbox failing to start when .claude/settings.json is a symlink with an absolute target\nFixed /copy and mouse-selection copy not reaching the system clipboard inside tmux over SSH, and tmux paste buffer not loading on versions older than 3.2\nFixed Remote Control connecting from web/mobile silently switching the session's model\nFixed Remote Control disconnect notifications showing a bare numeric code instead of a human-readable reason, and connection failures adding a duplicate line to the conversation transcript\nFixed Remote Control sessions not disconnecting when you sign in to a different account\nFixed /cd and worktree moves leaving the session reporting the previous directory's git branch\nFixed claude agents : pressing back in one window no longer detaches other windows attached to the same session\nFixed backgrounded sessions showing \"Working\" forever when /bg mid-turn had nothing left to continue\nFixed background agent search by PR URL: PRs opened during scheduled wakeups or while a job was blocked now appear in claude agents search\nFixed the agents view input showing no text cursor on Windows\nFixed claude --bg -cn <name> not seeding the session name\nFixed background sessions to neutralize Windows network paths in persisted state before respawn\nFixed background-session respawn rejecting malformed resume IDs from corrupted state files\nFixed the Windows background-service daemon not starting when ~/.claude/daemon has the ReadOnly attribute set\nFixed cloud sessions failing with \"Could not resolve authentication method\" when idle for too long before being claimed\nBackground sessions now show clearer guidance when a window left open across an auto-update can't submit a reply, and claude daemon status explains version-skew behavior\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n7 people reacted\n\n## full_text\n\nanthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.4k\nStar\n132k\nv2.1.176\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n12 Jun 21:53\nv2.1.176\nca9f604\nWhat's changed\nSession titles are now generated in the language of your conversation (set the language setting to pin a specific language)\nAdded footerLinksRegexes setting for regex-matched link badges in the footer row, configurable via user or managed settings\nImproved Bedrock credential caching: credentials from awsCredentialExport are now cached until their Expiration instead of a fixed 1 hour\nFixed availableModels enforcement: alias model picks can no longer be redirected to a blocked model via ANTHROPIC_DEFAULT_*_MODEL environment variables, and /fast now refuses to toggle when it would switch to a model outside the allowlist\nFixed auto mode failing on Fable 5 for organizations without Opus 4.8 enabled — the classifier now falls back to the best available Opus model\nFixed hook if conditions for Read/Edit/Write tool paths: documented patterns like Edit(src/**) , Read(~/.ssh/**) , and Read(.env) now match correctly\nFixed Linux sandbox failing to start when .claude/settings.json is a symlink with an absolute target\nFixed /copy and mouse-selection copy not reaching the system clipboard inside tmux over SSH, and tmux paste buffer not loading on versions older than 3.2\nFixed Remote Control connecting from web/mobile silently switching the session's model\nFixed Remote Control disconnect notifications showing a bare numeric code instead of a human-readable reason, and connection failures adding a duplicate line to the conversation transcript\nFixed Remote Control sessions not disconnecting when you sign in to a different account\nFixed /cd and worktree moves leaving the session reporting the previous directory's git branch\nFixed claude agents : pressing back in one window no longer detaches other windows attached to the same session\nFixed backgrounded sessions showing \"Working\" forever when /bg mid-turn had nothing left to continue\nFixed background agent search by PR URL: PRs opened during scheduled wakeups or while a job was blocked now appear in claude agents search\nFixed the agents view input showing no text cursor on Windows\nFixed claude --bg -cn <name> not seeding the session name\nFixed background sessions to neutralize Windows network paths in persisted state before respawn\nFixed background-session respawn rejecting malformed resume IDs from corrupted state files\nFixed the Windows background-service daemon not starting when ~/.claude/daemon has the ReadOnly attribute set\nFixed cloud sessions failing with \"Could not resolve authentication method\" when idle for too long before being claimed\nBackground sessions now show clearer guidance when a window left open across an auto-update can't submit a reply, and claude daemon status explains version-skew behavior\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n7 people reacted\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 76\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / high] Claude Code v2.1.176 更新：会话标题现按对话语言生成；新增 footerLinksRegexes 设置支持正则匹配页脚行链接徽章；优化 Bedrock 凭证缓存。修复多项问题：环境变量不可再绕过 availableModels 限制；/fast 切换至白名单外模型时拒绝；auto 模式退化为可用 Opus 模型；修正路径 hook 条件匹配；修复 Linux 沙箱内符号链接启动问题；修复 tmux 内 SSH 剪贴板问题；修复 Remote Control 多项连接问题。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 176 Compare Choose a tag to compare Sorry, something went wrong.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Filter Loading Sorry, something went wrong.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] There was an error while loading.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Please reload this page .\n"
+}

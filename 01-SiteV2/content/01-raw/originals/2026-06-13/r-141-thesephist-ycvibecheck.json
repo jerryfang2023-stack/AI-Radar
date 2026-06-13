@@ -1,0 +1,257 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-141",
+  "title": "thesephist/ycvibecheck",
+  "original_url": "https://github.com/thesephist/ycvibecheck",
+  "canonical_url": "https://github.com/thesephist/ycvibecheck",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "repo_readme_or_index",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-13T05:32:37.490Z",
+  "language": "mixed",
+  "full_text": "thesephist\nycvibecheck\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n66\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\ndata\ndata\nlib\nlib\nserver\nserver\nsrc\nsrc\nstatic\nstatic\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\napp.ini\napp.ini\napp.py\napp.py\nrefresh_yc_data.sh\nrefresh_yc_data.sh\nrequirements.txt\nrequirements.txt\nwsgi.py\nwsgi.py\nycvibecheck.service\nycvibecheck.service\nView all files\nRepository files navigation\nYC Vibe Check 🦄\nYC Vibe Check uses semantic similarity to search Y Combinator's entire portfolio of over 3,000 companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broad like \"climate change\" as well as specific ideas like \"high-resolution commercial satellite imagery\" and see who's building in the space (at least, in the YC community).\nUnlike the simple text search box in YC's startup directory , semantic search means this search bar doesn't need you to get the keywords exactly right, only close enough to what startups are building, to find them.\nYC Vibe Check is built with my usual stack, the Oak language and Torus . It runs sentence-transformers behind a Flask server on the backend for semantic indexing and search. The dataset is based on akshaybhalotia/yc_company_scraper .\nHow it works\nYCVC is not the first semantic search engine I've built — that honor goes to Revery , which was a semantic search engine for my personal work and history, like contacts, bookmarks, notes, journals, and tweets. But YCVC performs semantic search quite differently, for a few important reasons we'll get to below.\nRevery's semantic search was based on word embedding vectors , which maps words or \"tokens\" in every piece of text to a point in a high-dimensional space such that similar words cluster together. For Revery's semantic index, I simply averaged the word vectors of every word in each document to compute the \"embedding\" of every document. This is a well-known established method, and I found it worked well enough for me and Revery. It's also relatively resource-efficient, which worked well for the tiny server I had to run that app. (You can read more about how Revery works in its own README .)\nBut times have changed! Transformer-based language models have learned to speak now and they yearn for more memory and bigger cores and promise great things in return! So YCVC uses one such transformer-based deep learning model, sentence-transformers/all-mpnet-base-v2 , to compute sentence/paragraph embeddings instead of word vectors.\nThere's another more practical reason a more sophisticated model is needed for YCVC, which is that unlike long blog posts and journals that are sort of explicit in what they talk about, and generally talk about well-known ideas, YC company pitches and descriptions tend to involve lots of neologisms (NFT, DevOps, \"Scale\" used ten thousand different ways) and often speak analogically rather than directly. Though I haven't done empirical comparisons of transformers against word vectors in this use cases, I suspect transformer-based models probably perform better at understanding YC company descriptions for these reasons.\nOnce sentence embeddings are used to compute semantic \"neighbors\" of an idea or company description, YCVC collects a bunch of metadata to show you about that company. That comes from a few different places:\nThe Algolia search API that backs the YC Startup Directory , which returns basic company information like name, status, descriptions, batch, team size, and location\nScraping the company's page on YC's directory manually, which returns some more valuable and detailed information like founding year, social media and Crunchbase URLs, and news articles about companies\nSearching the Hacker News Algolia API for the company's name, which often turns up relevant stories about companies that aren't necessarily fundraising announcements or other managed PR\nThe YCVC UI then collects all of that information together and compiles it in a (hopefully) neat little table to surface it to you, the curious searcher!\nKnown faults and limitations\nMy focus on this project was more the interface and building a proof-of-concept for similarity search as a market research tool, and less building the best possible model for this task. So in the process of playing with YCVC during development I've noticed a few mistakes that the current model is prone to making, which I thought I'd document here.\nThe model gets easily sidetracked by company names. For example, a search containing the company name \"Airbyte\" will bring up companies with the subwords \"Air\" and \"Byte\" in the name, even though they aren't really in the same industries or markets.\nThe model doesn't know about super, super new technical concepts. It knows about NFTs (which I was pleasantly surprised by) and understands that \"DevOps\" is related to cloud infrastructure. But if next year there are a bunch of YC companies built on some new cutting-edge NLP tech or a new carbon sequestration or space launch process, the model will be completely blind to those new concepts.\nUpdating the dataset\nTL;DR — Run ./refresh_yc_data.sh , preferably with a GPU if you have one.\nWhen new batches of YC are announced and the YC Startup Directory is updated with new companies, we need to update the dataset that underlies the YC Vibe Check backend. Updating the dataset is a straightforward process, thanks to an upstream project called yc_company_scraper . Here are the rough steps:\nEnsure the yc_company_scraper project has an updated data/yc_essential_data.json in their repository. If this is updated, everything is pretty simple. If not, we need to figure out how to run the scraper and update the JSON first before moving forward.\nDownload the JSON from that repository to data/yc.json in the YC Vibe Check repository.\nRun server/generate.py , which will generate semantic embeddings for every company from its long_description , or one_liner if the long description is blank.\nThese steps should produce two updated files, data/yc.json and data/yc-embedded.json . Only the latter is really needed for the app to run, but I like to keep both in case I want to re-generate the embeddings from scratch. The updated versions of these files should be checked into the repository and deployed.\nDevelopment\nLike many of my projects, YC Vibe Check is built and managed with Oak . There's a short Makefile that wraps common oak commands:\nmake runs the Flask web server, and is equivalent to flask run\nmake fmt or make f auto-formats any tracked changes in the repository\nmake build or make b builds the client JavaScript bundle from src/app.js.oak\nmake watch or make w watches for file changes and runs the make build on any change\nAbout\nSemantic search across every YC company ever. Vibe check your idea?\nycvibecheck.com/\nTopics\nsemantic-search\ny-combinator\ntorus-dom\nsentence-transformers\noaklang\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n66\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nCSS\n69.4%\nPython\n19.9%\nHTML\n8.1%\nMakefile\n1.4%\nShell\n1.2%",
+  "clean_text": "thesephist\nycvibecheck\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n66\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\ndata\ndata\nlib\nlib\nserver\nserver\nsrc\nsrc\nstatic\nstatic\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\napp.ini\napp.ini\napp.py\napp.py\nrefresh_yc_data.sh\nrefresh_yc_data.sh\nrequirements.txt\nrequirements.txt\nwsgi.py\nwsgi.py\nycvibecheck.service\nycvibecheck.service\nView all files\nRepository files navigation\nYC Vibe Check 🦄\nYC Vibe Check uses semantic similarity to search Y Combinator's entire portfolio of over 3,000 companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broad like \"climate change\" as well as specific ideas like \"high-resolution commercial satellite imagery\" and see who's building in the space (at least, in the YC community).\nUnlike the simple text search box in YC's startup directory , semantic search means this search bar doesn't need you to get the keywords exactly right, only close enough to what startups are building, to find them.\nYC Vibe Check is built with my usual stack, the Oak language and Torus . It runs sentence-transformers behind a Flask server on the backend for semantic indexing and search. The dataset is based on akshaybhalotia/yc_company_scraper .\nHow it works\nYCVC is not the first semantic search engine I've built — that honor goes to Revery , which was a semantic search engine for my personal work and history, like contacts, bookmarks, notes, journals, and tweets. But YCVC performs semantic search quite differently, for a few important reasons we'll get to below.\nRevery's semantic search was based on word embedding vectors , which maps words or \"tokens\" in every piece of text to a point in a high-dimensional space such that similar words cluster together. For Revery's semantic index, I simply averaged the word vectors of every word in each document to compute the \"embedding\" of every document. This is a well-known established method, and I found it worked well enough for me and Revery. It's also relatively resource-efficient, which worked well for the tiny server I had to run that app. (You can read more about how Revery works in its own README .)\nBut times have changed! Transformer-based language models have learned to speak now and they yearn for more memory and bigger cores and promise great things in return! So YCVC uses one such transformer-based deep learning model, sentence-transformers/all-mpnet-base-v2 , to compute sentence/paragraph embeddings instead of word vectors.\nThere's another more practical reason a more sophisticated model is needed for YCVC, which is that unlike long blog posts and journals that are sort of explicit in what they talk about, and generally talk about well-known ideas, YC company pitches and descriptions tend to involve lots of neologisms (NFT, DevOps, \"Scale\" used ten thousand different ways) and often speak analogically rather than directly. Though I haven't done empirical comparisons of transformers against word vectors in this use cases, I suspect transformer-based models probably perform better at understanding YC company descriptions for these reasons.\nOnce sentence embeddings are used to compute semantic \"neighbors\" of an idea or company description, YCVC collects a bunch of metadata to show you about that company. That comes from a few different places:\nThe Algolia search API that backs the YC Startup Directory , which returns basic company information like name, status, descriptions, batch, team size, and location\nScraping the company's page on YC's directory manually, which returns some more valuable and detailed information like founding year, social media and Crunchbase URLs, and news articles about companies\nSearching the Hacker News Algolia API for the company's name, which often turns up relevant stories about companies that aren't necessarily fundraising announcements or other managed PR\nThe YCVC UI then collects all of that information together and compiles it in a (hopefully) neat little table to surface it to you, the curious searcher!\nKnown faults and limitations\nMy focus on this project was more the interface and building a proof-of-concept for similarity search as a market research tool, and less building the best possible model for this task. So in the process of playing with YCVC during development I've noticed a few mistakes that the current model is prone to making, which I thought I'd document here.\nThe model gets easily sidetracked by company names. For example, a search containing the company name \"Airbyte\" will bring up companies with the subwords \"Air\" and \"Byte\" in the name, even though they aren't really in the same industries or markets.\nThe model doesn't know about super, super new technical concepts. It knows about NFTs (which I was pleasantly surprised by) and understands that \"DevOps\" is related to cloud infrastructure. But if next year there are a bunch of YC companies built on some new cutting-edge NLP tech or a new carbon sequestration or space launch process, the model will be completely blind to those new concepts.\nUpdating the dataset\nTL;DR — Run ./refresh_yc_data.sh , preferably with a GPU if you have one.\nWhen new batches of YC are announced and the YC Startup Directory is updated with new companies, we need to update the dataset that underlies the YC Vibe Check backend. Updating the dataset is a straightforward process, thanks to an upstream project called yc_company_scraper . Here are the rough steps:\nEnsure the yc_company_scraper project has an updated data/yc_essential_data.json in their repository. If this is updated, everything is pretty simple. If not, we need to figure out how to run the scraper and update the JSON first before moving forward.\nDownload the JSON from that repository to data/yc.json in the YC Vibe Check repository.\nRun server/generate.py , which will generate semantic embeddings for every company from its long_description , or one_liner if the long description is blank.\nThese steps should produce two updated files, data/yc.json and data/yc-embedded.json . Only the latter is really needed for the app to run, but I like to keep both in case I want to re-generate the embeddings from scratch. The updated versions of these files should be checked into the repository and deployed.\nDevelopment\nLike many of my projects, YC Vibe Check is built and managed with Oak . There's a short Makefile that wraps common oak commands:\nmake runs the Flask web server, and is equivalent to flask run\nmake fmt or make f auto-formats any tracked changes in the repository\nmake build or make b builds the client JavaScript bundle from src/app.js.oak\nmake watch or make w watches for file changes and runs the make build on any change\nAbout\nSemantic search across every YC company ever. Vibe check your idea?\nycvibecheck.com/\nTopics\nsemantic-search\ny-combinator\ntorus-dom\nsentence-transformers\noaklang\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n66\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nCSS\n69.4%\nPython\n19.9%\nHTML\n8.1%\nMakefile\n1.4%\nShell\n1.2%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-141-thesephist-ycvibecheck.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-141-thesephist-ycvibecheck.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 7492,
+    "paragraph_count": 37,
+    "sentence_count": 48,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0021,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7492,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4edfa6a25b3d96a2",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "index_only_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e99584178625b86c",
+  "content_hash": "4edfa6a25b3d96a2",
+  "full_text_hash": "4edfa6a25b3d96a2",
+  "semantic_hash": "d3f48ecb1341abcf",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-13T05:32:37.490Z",
+  "last_seen_at": "2026-06-13T05:32:37.490Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Semantic search across every YC company ever. Vibe check your idea? **YC Vibe Check** uses _semantic similarity_ to search Y Combinator's entire portfolio of over 3,000 companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broa.... / query=YC AI startup funding vertical AI / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "thesephist ycvibecheck Public Notifications You must be signed in to change notification settings Fork Star 66 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 32 Commits 32 Commits data data lib lib server server src src static static .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore LICENSE LICENSE Makefile Makefile README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "py refresh_yc_data.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "sh refresh_yc_data.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "service ycvibecheck.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3",
+      "000",
+      "66\nm",
+      "32",
+      "2",
+      "66",
+      "69.4%",
+      "19.9%"
+    ],
+    "quotes": [
+      "climate change",
+      "high-resolution commercial satellite imagery",
+      "embedding",
+      "neighbors",
+      " will bring up companies with the subwords "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Semantic search across every YC company ever. Vibe check your idea? **YC Vibe Check** uses _semantic similarity_ to search Y Combinator's entire portfolio of over 3,000 companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broa.... / query=YC AI startup funding vertical AI / intent=find_startups / path=developer_ecosystem",
+      "thesephist ycvibecheck Public Notifications You must be signed in to change notification settings Fork Star 66 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 32 Commits 32 Commits data data lib lib server server src src static static .",
+      "gitignore LICENSE LICENSE Makefile Makefile README."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# thesephist/ycvibecheck\n\n- raw_id: R-141\n- original_url: https://github.com/thesephist/ycvibecheck\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-13T05:32:37.490Z\n\n## clean_text\n\nthesephist\nycvibecheck\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n66\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\ndata\ndata\nlib\nlib\nserver\nserver\nsrc\nsrc\nstatic\nstatic\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\napp.ini\napp.ini\napp.py\napp.py\nrefresh_yc_data.sh\nrefresh_yc_data.sh\nrequirements.txt\nrequirements.txt\nwsgi.py\nwsgi.py\nycvibecheck.service\nycvibecheck.service\nView all files\nRepository files navigation\nYC Vibe Check 🦄\nYC Vibe Check uses semantic similarity to search Y Combinator's entire portfolio of over 3,000 companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broad like \"climate change\" as well as specific ideas like \"high-resolution commercial satellite imagery\" and see who's building in the space (at least, in the YC community).\nUnlike the simple text search box in YC's startup directory , semantic search means this search bar doesn't need you to get the keywords exactly right, only close enough to what startups are building, to find them.\nYC Vibe Check is built with my usual stack, the Oak language and Torus . It runs sentence-transformers behind a Flask server on the backend for semantic indexing and search. The dataset is based on akshaybhalotia/yc_company_scraper .\nHow it works\nYCVC is not the first semantic search engine I've built — that honor goes to Revery , which was a semantic search engine for my personal work and history, like contacts, bookmarks, notes, journals, and tweets. But YCVC performs semantic search quite differently, for a few important reasons we'll get to below.\nRevery's semantic search was based on word embedding vectors , which maps words or \"tokens\" in every piece of text to a point in a high-dimensional space such that similar words cluster together. For Revery's semantic index, I simply averaged the word vectors of every word in each document to compute the \"embedding\" of every document. This is a well-known established method, and I found it worked well enough for me and Revery. It's also relatively resource-efficient, which worked well for the tiny server I had to run that app. (You can read more about how Revery works in its own README .)\nBut times have changed! Transformer-based language models have learned to speak now and they yearn for more memory and bigger cores and promise great things in return! So YCVC uses one such transformer-based deep learning model, sentence-transformers/all-mpnet-base-v2 , to compute sentence/paragraph embeddings instead of word vectors.\nThere's another more practical reason a more sophisticated model is needed for YCVC, which is that unlike long blog posts and journals that are sort of explicit in what they talk about, and generally talk about well-known ideas, YC company pitches and descriptions tend to involve lots of neologisms (NFT, DevOps, \"Scale\" used ten thousand different ways) and often speak analogically rather than directly. Though I haven't done empirical comparisons of transformers against word vectors in this use cases, I suspect transformer-based models probably perform better at understanding YC company descriptions for these reasons.\nOnce sentence embeddings are used to compute semantic \"neighbors\" of an idea or company description, YCVC collects a bunch of metadata to show you about that company. That comes from a few different places:\nThe Algolia search API that backs the YC Startup Directory , which returns basic company information like name, status, descriptions, batch, team size, and location\nScraping the company's page on YC's directory manually, which returns some more valuable and detailed information like founding year, social media and Crunchbase URLs, and news articles about companies\nSearching the Hacker News Algolia API for the company's name, which often turns up relevant stories about companies that aren't necessarily fundraising announcements or other managed PR\nThe YCVC UI then collects all of that information together and compiles it in a (hopefully) neat little table to surface it to you, the curious searcher!\nKnown faults and limitations\nMy focus on this project was more the interface and building a proof-of-concept for similarity search as a market research tool, and less building the best possible model for this task. So in the process of playing with YCVC during development I've noticed a few mistakes that the current model is prone to making, which I thought I'd document here.\nThe model gets easily sidetracked by company names. For example, a search containing the company name \"Airbyte\" will bring up companies with the subwords \"Air\" and \"Byte\" in the name, even though they aren't really in the same industries or markets.\nThe model doesn't know about super, super new technical concepts. It knows about NFTs (which I was pleasantly surprised by) and understands that \"DevOps\" is related to cloud infrastructure. But if next year there are a bunch of YC companies built on some new cutting-edge NLP tech or a new carbon sequestration or space launch process, the model will be completely blind to those new concepts.\nUpdating the dataset\nTL;DR — Run ./refresh_yc_data.sh , preferably with a GPU if you have one.\nWhen new batches of YC are announced and the YC Startup Directory is updated with new companies, we need to update the dataset that underlies the YC Vibe Check backend. Updating the dataset is a straightforward process, thanks to an upstream project called yc_company_scraper . Here are the rough steps:\nEnsure the yc_company_scraper project has an updated data/yc_essential_data.json in their repository. If this is updated, everything is pretty simple. If not, we need to figure out how to run the scraper and update the JSON first before moving forward.\nDownload the JSON from that repository to data/yc.json in the YC Vibe Check repository.\nRun server/generate.py , which will generate semantic embeddings for every company from its long_description , or one_liner if the long description is blank.\nThese steps should produce two updated files, data/yc.json and data/yc-embedded.json . Only the latter is really needed for the app to run, but I like to keep both in case I want to re-generate the embeddings from scratch. The updated versions of these files should be checked into the repository and deployed.\nDevelopment\nLike many of my projects, YC Vibe Check is built and managed with Oak . There's a short Makefile that wraps common oak commands:\nmake runs the Flask web server, and is equivalent to flask run\nmake fmt or make f auto-formats any tracked changes in the repository\nmake build or make b builds the client JavaScript bundle from src/app.js.oak\nmake watch or make w watches for file changes and runs the make build on any change\nAbout\nSemantic search across every YC company ever. Vibe check your idea?\nycvibecheck.com/\nTopics\nsemantic-search\ny-combinator\ntorus-dom\nsentence-transformers\noaklang\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n66\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nCSS\n69.4%\nPython\n19.9%\nHTML\n8.1%\nMakefile\n1.4%\nShell\n1.2%\n\n## full_text\n\nthesephist\nycvibecheck\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n66\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\ndata\ndata\nlib\nlib\nserver\nserver\nsrc\nsrc\nstatic\nstatic\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\napp.ini\napp.ini\napp.py\napp.py\nrefresh_yc_data.sh\nrefresh_yc_data.sh\nrequirements.txt\nrequirements.txt\nwsgi.py\nwsgi.py\nycvibecheck.service\nycvibecheck.service\nView all files\nRepository files navigation\nYC Vibe Check 🦄\nYC Vibe Check uses semantic similarity to search Y Combinator's entire portfolio of over 3,000 companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broad like \"climate change\" as well as specific ideas like \"high-resolution commercial satellite imagery\" and see who's building in the space (at least, in the YC community).\nUnlike the simple text search box in YC's startup directory , semantic search means this search bar doesn't need you to get the keywords exactly right, only close enough to what startups are building, to find them.\nYC Vibe Check is built with my usual stack, the Oak language and Torus . It runs sentence-transformers behind a Flask server on the backend for semantic indexing and search. The dataset is based on akshaybhalotia/yc_company_scraper .\nHow it works\nYCVC is not the first semantic search engine I've built — that honor goes to Revery , which was a semantic search engine for my personal work and history, like contacts, bookmarks, notes, journals, and tweets. But YCVC performs semantic search quite differently, for a few important reasons we'll get to below.\nRevery's semantic search was based on word embedding vectors , which maps words or \"tokens\" in every piece of text to a point in a high-dimensional space such that similar words cluster together. For Revery's semantic index, I simply averaged the word vectors of every word in each document to compute the \"embedding\" of every document. This is a well-known established method, and I found it worked well enough for me and Revery. It's also relatively resource-efficient, which worked well for the tiny server I had to run that app. (You can read more about how Revery works in its own README .)\nBut times have changed! Transformer-based language models have learned to speak now and they yearn for more memory and bigger cores and promise great things in return! So YCVC uses one such transformer-based deep learning model, sentence-transformers/all-mpnet-base-v2 , to compute sentence/paragraph embeddings instead of word vectors.\nThere's another more practical reason a more sophisticated model is needed for YCVC, which is that unlike long blog posts and journals that are sort of explicit in what they talk about, and generally talk about well-known ideas, YC company pitches and descriptions tend to involve lots of neologisms (NFT, DevOps, \"Scale\" used ten thousand different ways) and often speak analogically rather than directly. Though I haven't done empirical comparisons of transformers against word vectors in this use cases, I suspect transformer-based models probably perform better at understanding YC company descriptions for these reasons.\nOnce sentence embeddings are used to compute semantic \"neighbors\" of an idea or company description, YCVC collects a bunch of metadata to show you about that company. That comes from a few different places:\nThe Algolia search API that backs the YC Startup Directory , which returns basic company information like name, status, descriptions, batch, team size, and location\nScraping the company's page on YC's directory manually, which returns some more valuable and detailed information like founding year, social media and Crunchbase URLs, and news articles about companies\nSearching the Hacker News Algolia API for the company's name, which often turns up relevant stories about companies that aren't necessarily fundraising announcements or other managed PR\nThe YCVC UI then collects all of that information together and compiles it in a (hopefully) neat little table to surface it to you, the curious searcher!\nKnown faults and limitations\nMy focus on this project was more the interface and building a proof-of-concept for similarity search as a market research tool, and less building the best possible model for this task. So in the process of playing with YCVC during development I've noticed a few mistakes that the current model is prone to making, which I thought I'd document here.\nThe model gets easily sidetracked by company names. For example, a search containing the company name \"Airbyte\" will bring up companies with the subwords \"Air\" and \"Byte\" in the name, even though they aren't really in the same industries or markets.\nThe model doesn't know about super, super new technical concepts. It knows about NFTs (which I was pleasantly surprised by) and understands that \"DevOps\" is related to cloud infrastructure. But if next year there are a bunch of YC companies built on some new cutting-edge NLP tech or a new carbon sequestration or space launch process, the model will be completely blind to those new concepts.\nUpdating the dataset\nTL;DR — Run ./refresh_yc_data.sh , preferably with a GPU if you have one.\nWhen new batches of YC are announced and the YC Startup Directory is updated with new companies, we need to update the dataset that underlies the YC Vibe Check backend. Updating the dataset is a straightforward process, thanks to an upstream project called yc_company_scraper . Here are the rough steps:\nEnsure the yc_company_scraper project has an updated data/yc_essential_data.json in their repository. If this is updated, everything is pretty simple. If not, we need to figure out how to run the scraper and update the JSON first before moving forward.\nDownload the JSON from that repository to data/yc.json in the YC Vibe Check repository.\nRun server/generate.py , which will generate semantic embeddings for every company from its long_description , or one_liner if the long description is blank.\nThese steps should produce two updated files, data/yc.json and data/yc-embedded.json . Only the latter is really needed for the app to run, but I like to keep both in case I want to re-generate the embeddings from scratch. The updated versions of these files should be checked into the repository and deployed.\nDevelopment\nLike many of my projects, YC Vibe Check is built and managed with Oak . There's a short Makefile that wraps common oak commands:\nmake runs the Flask web server, and is equivalent to flask run\nmake fmt or make f auto-formats any tracked changes in the repository\nmake build or make b builds the client JavaScript bundle from src/app.js.oak\nmake watch or make w watches for file changes and runs the make build on any change\nAbout\nSemantic search across every YC company ever. Vibe check your idea?\nycvibecheck.com/\nTopics\nsemantic-search\ny-combinator\ntorus-dom\nsentence-transformers\noaklang\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n66\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nCSS\n69.4%\nPython\n19.9%\nHTML\n8.1%\nMakefile\n1.4%\nShell\n1.2%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / daily_observation, heatmap, trend / high] Semantic search across every YC company ever. Vibe check your idea? **YC Vibe Check** uses _semantic similarity_ to search Y Combinator's entire portfolio of over 3,000 companies by descriptions of ideas or verticals rather than keywords or categories, which lets you search for something super broa.... / query=YC AI startup funding vertical AI / intent=find_startups / path=developer_ecosystem\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] thesephist ycvibecheck Public Notifications You must be signed in to change notification settings Fork Star 66 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 32 Commits 32 Commits data data lib lib server server src src static static .\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] gitignore LICENSE LICENSE Makefile Makefile README.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] py refresh_yc_data.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] sh refresh_yc_data.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] service ycvibecheck.\n"
+}

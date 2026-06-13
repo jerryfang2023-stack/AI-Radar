@@ -1,0 +1,308 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-068
+title: "卧槽！我们一开始就用错了Fable 5模型啊！"
+original_url: "https://x.com/berryxia/status/2065601634735145255"
+canonical_url: "https://x.com/berryxia/status/2065601634735145255"
+source_name: "X：Berry Xia (@berryxia)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-13T01:06:21.000Z"
+collected_at: 2026-06-13T05:32:37.299Z
+language: mixed
+full_text_hash: fe0e5d3a222213a8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-068-卧槽-我们一开始就用错了fable-5模型啊.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-068-卧槽-我们一开始就用错了fable-5模型啊.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 89
+extractor_diagnostics: {"readability_score":89,"text_length":3670,"paragraph_count":34,"sentence_count":27,"boilerplate_hits":1,"symbol_ratio":0.0163,"method":"main"}
+has_full_text: true
+content_length: 3670
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fe0e5d3a222213a8","missing":[]}
+source_volatility: high
+community_name: "X：Berry Xia (@berryxia)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"卧槽！我们一开始就用错了Fable 5模型啊！","discovery_summary":"大多数用户将Claude Fable 5（首个公开Mythos级模型，2026年6月9日发布）当作更大上下文窗口的Sonnet 4.6单次提问使用，但Fable 5专为连续数天的Agent系统设计，支持自我改进：每次运行让下次更聪明，状态文件积累，技能持续打磨。文章提出14步构建自我改进系统，涵盖四层架构（原语、编排、记忆、自我改进）、任务路由（Fable 5用于重型编排，Opus 4.8负责复杂子任务，Sonnet 4.6高频工人，Haiku 4.5评分）、动态工作流模式以及5阶段记忆进化（失败→调查→验证→提炼→查阅）。在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2065601634735145255","discovered_at":"2026-06-13T05:25:16.541Z","rank_on_page":71,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f7c33f455e12547b
+content_hash: fe0e5d3a222213a8
+semantic_hash: 85d9425d6c97493a
+duplicate_of: ""
+first_seen_at: "2026-06-13T01:06:21.000Z"
+last_seen_at: 2026-06-13T05:32:37.299Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","Berry Xia (@berryxia)"],"products":["Claude","Agent","agent"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["5","2026","6","9","4.6","14","4.8","4.5"],"quotes":[]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Berryxia.","我们一开始就用错了Fable 5模型啊！","可以花几分钟看看原文还是有价值和启发的！"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["大多数用户将Claude Fable 5（首个公开Mythos级模型，2026年6月9日发布）当作更大上下文窗口的Sonnet 4.6单次提问使用，但Fable 5专为连续数天的Agent系统设计，支持自我改进：每次运行让下次更聪明，状态文件积累，技能持续打磨。文章提出14步构建自我改进系统，涵盖四层架构（原语、编排、记忆、自我改进）、任务路由（Fable 5用于重型编排，Opus 4.8负责复杂子任务，Sonnet 4.6高频工人，Haiku 4.5评分）、动态工作流模式以及5阶段记忆进化（失败→调查→验证→提炼→查阅）。在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4。"]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"大多数用户将Claude Fable 5（首个公开Mythos级模型，2026年6月9日发布）当作更大上下文窗口的Sonnet 4.6单次提问使用，但Fable 5专为连续数天的Agent系统设计，支持自我改进：每次运行让下次更聪明，状态文件积累，技能持续打磨。文章提出14步构建自我改进系统，涵盖四层架构（原语、编排、记忆、自我改进）、任务路由（Fable 5用于重型编排，Opus 4.8负责复杂子任务，Sonnet 4.6高频工人，Haiku 4.5评分）、动态工作流模式以及5阶段记忆进化（失败→调查→验证→提炼→查阅）。在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Berryxia.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"我们一开始就用错了Fable 5模型啊！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"可以花几分钟看看原文还是有价值和启发的！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"大多数人把Claude Fable 5当成更大上下文窗口的Sonnet 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6在用，提个问,用5分钟,关标签页。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 卧槽！我们一开始就用错了Fable 5模型啊！
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Berryxia.AI
+@berryxia
+卧槽！我们一开始就用错了Fable 5模型啊！
+可以花几分钟看看原文还是有价值和启发的！
+大多数人把Claude Fable 5当成更大上下文窗口的Sonnet 4.6在用，提个问,用5分钟,关标签页。
+90%的用户从没跑过真正会复利可持续增长的Agent系统:每次运行都让下次更聪明,状态文件不断积累,技能持续打磨。
+Fable 分钟。（我想说特么额度也不够啊！）😆
+作者用14步构建自我改进系统，可以让你的Fable 5 起飞～
+一、Fable 5真正解锁了什么
+1. Mythos级模型 - 2026年6月9日发布,首个公开的Mythos级模型(比Opus高一档)。
+核心能力:
+• 数天级自主会话
+• 内置自我验证
+• 最复杂的代码工作
+• 多阶段知识工作
+2. 自我改进≠自我学习 - 模型权重不变,但系统环境会变聪明:每次会话写入经验教训,技能随边缘案例打磨,状态文件积累验证过的事实。
+3. 复利堆栈:四层架构
+• 第1层:原语(Fable 5本身、子Agent、工具)
+• 第2层:编排(目标循环、动态工作流、例程)
+• 第3层:记忆(状态文件、技能库、知识库)
+• 第4层:自我改进(视觉自检、评估循环、规则提炼)
+4. 何时用哪个模型 - 按任务复杂度路由:
+• Fable 5:重型编排角色
+• Opus 4.8:复杂但有界的子任务
+• Sonnet 4.6:高频工人任务
+• Haiku 4.5:评分子Agent
+二、三个关键模式设计
+5. /goal vs Outcomes + 验证器子Agent - 独立验证器优于自我批评。
+6.模型评估自己的输出会偏向自己已写的结论。
+7. 动态工作流 - 三个关键模式:扇出-综合、对抗验证、循环直到完成
+8. Worktrees并行安全 - 多Agent并行工作时避免文件冲突
+9. Routines长期编排 - 笔记本合上,Fable 5继续工作
+三、自我改进层
+10. 5阶段记忆进化:失败→调查→验证→提炼→查阅
+• Sonnet 4.6止步于第1阶段
+• Opus 4.7止步于第3阶段
+• Fable 5能完成全流程
+11. 状态文件 - 记忆实际存放的地方,包含5个部分对应5个阶段
+12. 技能复利 - 把经验教训写进技能本身,而不只是聊天记录
+13. 视觉自验证 - Fable 5用视觉检查UI输出是否符合目标
+14. Mythos安全边界 - 在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4.
+把模型的能力发挥到真正需要的地方和适合自己的项目中，调优到最佳状态才是榨干最后一个token 最好的办法😄
+Codez
+@0xCodez
+Jun 11
+Article
+Build self-improving agent system with Fable 5 in 14 steps : loops, dynamic workflows, routines
+Most people are using Claude Fable 5 like Sonnet 4.6 with a bigger context window. They prompt it. It works for 5 minutes. They close the tab.
+9 out of 10 users have never run an agent system that...
+1:06 AM · Jun 13, 2026 1.4K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
+Read 4 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Berryxia.AI
+@berryxia
+卧槽！我们一开始就用错了Fable 5模型啊！
+可以花几分钟看看原文还是有价值和启发的！
+大多数人把Claude Fable 5当成更大上下文窗口的Sonnet 4.6在用，提个问,用5分钟,关标签页。
+90%的用户从没跑过真正会复利可持续增长的Agent系统:每次运行都让下次更聪明,状态文件不断积累,技能持续打磨。
+Fable 分钟。（我想说特么额度也不够啊！）😆
+作者用14步构建自我改进系统，可以让你的Fable 5 起飞～
+一、Fable 5真正解锁了什么
+1. Mythos级模型 - 2026年6月9日发布,首个公开的Mythos级模型(比Opus高一档)。
+核心能力:
+• 数天级自主会话
+• 内置自我验证
+• 最复杂的代码工作
+• 多阶段知识工作
+2. 自我改进≠自我学习 - 模型权重不变,但系统环境会变聪明:每次会话写入经验教训,技能随边缘案例打磨,状态文件积累验证过的事实。
+3. 复利堆栈:四层架构
+• 第1层:原语(Fable 5本身、子Agent、工具)
+• 第2层:编排(目标循环、动态工作流、例程)
+• 第3层:记忆(状态文件、技能库、知识库)
+• 第4层:自我改进(视觉自检、评估循环、规则提炼)
+4. 何时用哪个模型 - 按任务复杂度路由:
+• Fable 5:重型编排角色
+• Opus 4.8:复杂但有界的子任务
+• Sonnet 4.6:高频工人任务
+• Haiku 4.5:评分子Agent
+二、三个关键模式设计
+5. /goal vs Outcomes + 验证器子Agent - 独立验证器优于自我批评。
+6.模型评估自己的输出会偏向自己已写的结论。
+7. 动态工作流 - 三个关键模式:扇出-综合、对抗验证、循环直到完成
+8. Worktrees并行安全 - 多Agent并行工作时避免文件冲突
+9. Routines长期编排 - 笔记本合上,Fable 5继续工作
+三、自我改进层
+10. 5阶段记忆进化:失败→调查→验证→提炼→查阅
+• Sonnet 4.6止步于第1阶段
+• Opus 4.7止步于第3阶段
+• Fable 5能完成全流程
+11. 状态文件 - 记忆实际存放的地方,包含5个部分对应5个阶段
+12. 技能复利 - 把经验教训写进技能本身,而不只是聊天记录
+13. 视觉自验证 - Fable 5用视觉检查UI输出是否符合目标
+14. Mythos安全边界 - 在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4.
+把模型的能力发挥到真正需要的地方和适合自己的项目中，调优到最佳状态才是榨干最后一个token 最好的办法😄
+Codez
+@0xCodez
+Jun 11
+Article
+Build self-improving agent system with Fable 5 in 14 steps : loops, dynamic workflows, routines
+Most people are using Claude Fable 5 like Sonnet 4.6 with a bigger context window. They prompt it. It works for 5 minutes. They close the tab.
+9 out of 10 users have never run an agent system that...
+1:06 AM · Jun 13, 2026 1.4K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
+Read 4 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 89
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":89,"text_length":3670,"paragraph_count":34,"sentence_count":27,"boilerplate_hits":1,"symbol_ratio":0.0163,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   大多数用户将Claude Fable 5（首个公开Mythos级模型，2026年6月9日发布）当作更大上下文窗口的Sonnet 4.6单次提问使用，但Fable 5专为连续数天的Agent系统设计，支持自我改进：每次运行让下次更聪明，状态文件积累，技能持续打磨。文章提出14步构建自我改进系统，涵盖四层架构（原语、编排、记忆、自我改进）、任务路由（Fable 5用于重型编排，Opus 4.8负责复杂子任务，Sonnet 4.6高频工人，Haiku 4.5评分）、动态工作流模式以及5阶段记忆进化（失败→调查→验证→提炼→查阅）。在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post Berryxia.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   我们一开始就用错了Fable 5模型啊！
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   可以花几分钟看看原文还是有价值和启发的！
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   大多数人把Claude Fable 5当成更大上下文窗口的Sonnet 4.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   6在用，提个问,用5分钟,关标签页。
+
+## business_elements
+
+- companies: X, Berry Xia (@berryxia)
+- products: Claude, Agent, agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 5, 2026, 6, 9, 4.6, 14, 4.8, 4.5
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Berryxia. / 我们一开始就用错了Fable 5模型啊！ / 可以花几分钟看看原文还是有价值和启发的！
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 大多数用户将Claude Fable 5（首个公开Mythos级模型，2026年6月9日发布）当作更大上下文窗口的Sonnet 4.6单次提问使用，但Fable 5专为连续数天的Agent系统设计，支持自我改进：每次运行让下次更聪明，状态文件积累，技能持续打磨。文章提出14步构建自我改进系统，涵盖四层架构（原语、编排、记忆、自我改进）、任务路由（Fable 5用于重型编排，Opus 4.8负责复杂子任务，Sonnet 4.6高频工人，Haiku 4.5评分）、动态工作流模式以及5阶段记忆进化（失败→调查→验证→提炼→查阅）。在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Berry Xia (@berryxia)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"卧槽！我们一开始就用错了Fable 5模型啊！","discovery_summary":"大多数用户将Claude Fable 5（首个公开Mythos级模型，2026年6月9日发布）当作更大上下文窗口的Sonnet 4.6单次提问使用，但Fable 5专为连续数天的Agent系统设计，支持自我改进：每次运行让下次更聪明，状态文件积累，技能持续打磨。文章提出14步构建自我改进系统，涵盖四层架构（原语、编排、记忆、自我改进）、任务路由（Fable 5用于重型编排，Opus 4.8负责复杂子任务，Sonnet 4.6高频工人，Haiku 4.5评分）、动态工作流模式以及5阶段记忆进化（失败→调查→验证→提炼→查阅）。在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2065601634735145255","discovered_at":"2026-06-13T05:25:16.541Z","rank_on_page":71,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+大多数用户将Claude Fable 5（首个公开Mythos级模型，2026年6月9日发布）当作更大上下文窗口的Sonnet 4.6单次提问使用，但Fable 5专为连续数天的Agent系统设计，支持自我改进：每次运行让下次更聪明，状态文件积累，技能持续打磨。文章提出14步构建自我改进系统，涵盖四层架构（原语、编排、记忆、自我改进）、任务路由（Fable 5用于重型编排，Opus 4.8负责复杂子任务，Sonnet 4.6高频工人，Haiku 4.5评分）、动态工作流模式以及5阶段记忆进化（失败→调查→验证→提炼→查阅）。在网络安全、生物、化学、模型蒸馏领域会自动降级到Opus 4。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

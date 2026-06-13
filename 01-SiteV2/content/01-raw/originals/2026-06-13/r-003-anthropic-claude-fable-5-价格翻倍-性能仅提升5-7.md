@@ -1,0 +1,273 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-003
+title: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%"
+original_url: "https://the-decoder.com/anthropics-claude-fable-5-costs-twice-as-much-for-5-7-percent-more-performance"
+canonical_url: "https://the-decoder.com/anthropics-claude-fable-5-costs-twice-as-much-for-5-7-percent-more-performance"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-12T17:10:34.000Z"
+collected_at: 2026-06-13T05:32:37.115Z
+language: mixed
+full_text_hash: c9cefb67ace848ea
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-003-anthropic-claude-fable-5-价格翻倍-性能仅提升5-7.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-003-anthropic-claude-fable-5-价格翻倍-性能仅提升5-7.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 82
+extractor_diagnostics: {"readability_score":82,"text_length":5803,"paragraph_count":29,"sentence_count":52,"boilerplate_hits":5,"symbol_ratio":0.0016,"method":"content-container"}
+has_full_text: true
+content_length: 5803
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c9cefb67ace848ea","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%","discovery_summary":"Claude Fable 5 在 Artificial Analysis Intelligence Index 中取得 64.9 分，在十项基准测试中有五项创下纪录。相比 Opus 4.8，性能提升仅 5.7%，但 token 价格翻倍。安全过滤与回退路由功能进一步推高了成本。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/anthropics-claude-fable-5-costs-twice-as-much-for-5-7-percent-more-performance","discovered_at":"2026-06-13T05:25:16.561Z","rank_on_page":176,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 9ca94f6329797f7d
+content_hash: c9cefb67ace848ea
+semantic_hash: 59ef64d6ebaaf70d
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-06-12T17:10:34.000Z"
+last_seen_at: 2026-06-13T05:32:37.115Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder","AI News（RSS）","Anthropic"],"products":["Claude","GPT-5","Gemini"],"people":[],"industries":["医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["5","5.7%","64.9","4.8","5.7","12","2026","5.5"],"quotes":["modest but tangible.","Tokeneconomics","AI Radar"]}
+evidence_seed: {"company_actions":["Ad Skip to content Anthropic's Claude Fable 5 costs twice as much for 5.","7 percent more performance Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 12, 2026 Key Points Anthropic's latest AI model, Claude Fable 5, has claimed the top spot in the Artificial Analysis Intelligence Index, surpassing rivals including GPT-5.","The overall measured performance leap compared to its predecessor, Opus 4."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Claude Fable 5 在 Artificial Analysis Intelligence Index 中取得 64.9 分，在十项基准测试中有五项创下纪录。相比 Opus 4.8，性能提升仅 5.7%，但 token 价格翻倍。安全过滤与回退路由功能进一步推高了成本。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ad Skip to content Anthropic's Claude Fable 5 costs twice as much for 5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7 percent more performance Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 12, 2026 Key Points Anthropic's latest AI model, Claude Fable 5, has claimed the top spot in the Artificial Analysis Intelligence Index, surpassing rivals including GPT-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The overall measured performance leap compared to its predecessor, Opus 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7 percent across many benchmarks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"That performance gain comes at a steep cost: token prices have doubled, with a full benchmark run now approaching $10,000, twice the price of Opus 4.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%
+
+## clean_text
+
+Ad
+Skip to content
+Anthropic's Claude Fable 5 costs twice as much for 5.7 percent more performance
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 12, 2026
+Key Points
+Anthropic's latest AI model, Claude Fable 5, has claimed the top spot in the Artificial Analysis Intelligence Index, surpassing rivals including GPT-5.5.
+The overall measured performance leap compared to its predecessor, Opus 4.8, is 5.7 percent across many benchmarks.
+That performance gain comes at a steep cost: token prices have doubled, with a full benchmark run now approaching $10,000, twice the price of Opus 4.8.
+Claude Fable 5 tops the Artificial Analysis Intelligence Index and sets new highs across several benchmarks. But the gain over its predecessor might be slim, while costs more than double.
+Anthropic's new flagship model, Claude Fable 5 , scores 64.9 points in the Artificial Analysis Intelligence Index, claiming first place. The gap to the best non-Anthropic model, GPT-5.5, is about five points. Anthropic now holds the top two spots on the leaderboard.
+Claude Fable 5 takes the lead in the Artificial Analysis Intelligence Index with 64.9 points. | Image: Artificial Analysis
+That crown comes at a cost. Fable 5 runs $10 and $50 per million input and output tokens, double Opus 4.8's $5 and $25. A full index run hits $9,940, versus $4,970 for Opus 4.8 at max reasoning. That premium buys a 5.7 percent performance gain. Opus 4.8 and 4.7 already followed the same pattern versus Opus 4.6, with steep price bumps for small gains . Anthropic itself called 4.8's improvement over 4.7 "modest but tangible." Ad
+A full Artificial Analysis Intelligence Index run costs nearly $10,000 with Fable 5. Opus 4.8 came in at just under $5,000 with roughly 5.7 percent less performance. | Image: Artificial Analysis
+Companies need to weigh carefully which use cases actually justify paying double for about five percent more performance. Benchmark skeptics will note that no test suite fully captures real-world ability. The AA Index at least aggregates ten evaluations, giving it a broader base than any single benchmark. Ad
+DEC_D_Incontent-1
+A bit more intelligence for a lot more money. Fable 5 posts the highest score but costs far more per million tokens than most rivals. | Image: Artificial Analysis
+Depending on the region, the monthly bill for heavy enterprise use could cover the cost for experienced developers. The Artificial Analysis data makes clear that economics is becoming a key factor, as our subscriber special on "Tokeneconomics" explores in depth.
+Top scores across most benchmarks
+The raw benchmark numbers are nonetheless notable. Fable 5 sets records in five of the ten Intelligence Index benchmarks. On AA-Omniscience , the knowledge and hallucination benchmark, the model hits 40 points, seven more than the previous leader Gemini 3.1 Pro Preview. That lead comes mainly from higher accuracy, not a lower hallucination rate. On hallucinations, the model lands squarely in the middle of the pack. Ad
+Claude Fable 5 scores a middling 55 percent on the AA-Omniscience hallucination rate. | Image: Artificial Analysis
+Artificial Analysis notes a strong link between AA-Omniscience accuracy and model size among open-weight models. That hints Fable 5 may be larger than any previous public Anthropic model.
+On agentic tasks, Fable 5 widens Anthropic's lead. On GDPval-AA, a real-world knowledge work benchmark, it reaches an Elo of 1,932, up 2.2 percent from Opus 4.8 at 1,890. It also tops Terminal-Bench Hard for agentic coding and Tau2-bench Telecom for tool use. Ad
+DEC_D_Incontent-2
+On Humanity's Last Exam, the model scores 53 percent, over seven points ahead of Opus 4.8. A single HLE run with fallback costs about $2,200, the most expensive of any model Artificial Analysis has tested. Previous Opus models topped out at $1,974. Ad
+On Humanity's Last Exam, Fable 5 with fallback leads at 53.3 percent but also costs the most per full evaluation at around $2,174. | Image: Anthropic
+Safety filters drive costs up even more
+Fable 5 uses the same base model as Claude Mythos 5 according to Anthropic, plus extra safeguards for queries touching cybersecurity, biology, chemistry, and model distillation. When a filter trips, a fallback mechanism reroutes the request to Opus 4.8. Those rerouted requests still count toward billing, pushing total costs higher.
+Anthropic says fewer than five percent of sessions are affected. But Artificial Analysis measured fallback routing in about eight percent of tasks during its Intelligence Index evaluation, mainly on science questions from GPQA, AA-Omniscience, and Humanity's Last Exam. On the HLE test alone, the fallback rate hit nine percent.
+Access comes with an expiration date
+Fable 5 keeps the same one-million-token context window as Opus 4.8. Pro, Max, Team, and Enterprise subscribers can use it through June 22, with usage counting at double the Opus rate. After that, it moves to credit-based billing. That makes it even pricier than token rates suggest. Anthropic says it'll bring back subscription access once capacity allows.
+My colleague Max recently analyzed Fable 5's strengths and weaknesses and found the safety filters blocking large numbers of harmless requests, from medical physics questions to basic security reviews. Anthropic's system card also revealed invisible throttling that degrades Fable's performance when users try to build competing frontier models, though Anthropic has since walked that back .
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: Artificial Analysis
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## full_text
+
+Ad
+Skip to content
+Anthropic's Claude Fable 5 costs twice as much for 5.7 percent more performance
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 12, 2026
+Key Points
+Anthropic's latest AI model, Claude Fable 5, has claimed the top spot in the Artificial Analysis Intelligence Index, surpassing rivals including GPT-5.5.
+The overall measured performance leap compared to its predecessor, Opus 4.8, is 5.7 percent across many benchmarks.
+That performance gain comes at a steep cost: token prices have doubled, with a full benchmark run now approaching $10,000, twice the price of Opus 4.8.
+Claude Fable 5 tops the Artificial Analysis Intelligence Index and sets new highs across several benchmarks. But the gain over its predecessor might be slim, while costs more than double.
+Anthropic's new flagship model, Claude Fable 5 , scores 64.9 points in the Artificial Analysis Intelligence Index, claiming first place. The gap to the best non-Anthropic model, GPT-5.5, is about five points. Anthropic now holds the top two spots on the leaderboard.
+Claude Fable 5 takes the lead in the Artificial Analysis Intelligence Index with 64.9 points. | Image: Artificial Analysis
+That crown comes at a cost. Fable 5 runs $10 and $50 per million input and output tokens, double Opus 4.8's $5 and $25. A full index run hits $9,940, versus $4,970 for Opus 4.8 at max reasoning. That premium buys a 5.7 percent performance gain. Opus 4.8 and 4.7 already followed the same pattern versus Opus 4.6, with steep price bumps for small gains . Anthropic itself called 4.8's improvement over 4.7 "modest but tangible." Ad
+A full Artificial Analysis Intelligence Index run costs nearly $10,000 with Fable 5. Opus 4.8 came in at just under $5,000 with roughly 5.7 percent less performance. | Image: Artificial Analysis
+Companies need to weigh carefully which use cases actually justify paying double for about five percent more performance. Benchmark skeptics will note that no test suite fully captures real-world ability. The AA Index at least aggregates ten evaluations, giving it a broader base than any single benchmark. Ad
+DEC_D_Incontent-1
+A bit more intelligence for a lot more money. Fable 5 posts the highest score but costs far more per million tokens than most rivals. | Image: Artificial Analysis
+Depending on the region, the monthly bill for heavy enterprise use could cover the cost for experienced developers. The Artificial Analysis data makes clear that economics is becoming a key factor, as our subscriber special on "Tokeneconomics" explores in depth.
+Top scores across most benchmarks
+The raw benchmark numbers are nonetheless notable. Fable 5 sets records in five of the ten Intelligence Index benchmarks. On AA-Omniscience , the knowledge and hallucination benchmark, the model hits 40 points, seven more than the previous leader Gemini 3.1 Pro Preview. That lead comes mainly from higher accuracy, not a lower hallucination rate. On hallucinations, the model lands squarely in the middle of the pack. Ad
+Claude Fable 5 scores a middling 55 percent on the AA-Omniscience hallucination rate. | Image: Artificial Analysis
+Artificial Analysis notes a strong link between AA-Omniscience accuracy and model size among open-weight models. That hints Fable 5 may be larger than any previous public Anthropic model.
+On agentic tasks, Fable 5 widens Anthropic's lead. On GDPval-AA, a real-world knowledge work benchmark, it reaches an Elo of 1,932, up 2.2 percent from Opus 4.8 at 1,890. It also tops Terminal-Bench Hard for agentic coding and Tau2-bench Telecom for tool use. Ad
+DEC_D_Incontent-2
+On Humanity's Last Exam, the model scores 53 percent, over seven points ahead of Opus 4.8. A single HLE run with fallback costs about $2,200, the most expensive of any model Artificial Analysis has tested. Previous Opus models topped out at $1,974. Ad
+On Humanity's Last Exam, Fable 5 with fallback leads at 53.3 percent but also costs the most per full evaluation at around $2,174. | Image: Anthropic
+Safety filters drive costs up even more
+Fable 5 uses the same base model as Claude Mythos 5 according to Anthropic, plus extra safeguards for queries touching cybersecurity, biology, chemistry, and model distillation. When a filter trips, a fallback mechanism reroutes the request to Opus 4.8. Those rerouted requests still count toward billing, pushing total costs higher.
+Anthropic says fewer than five percent of sessions are affected. But Artificial Analysis measured fallback routing in about eight percent of tasks during its Intelligence Index evaluation, mainly on science questions from GPQA, AA-Omniscience, and Humanity's Last Exam. On the HLE test alone, the fallback rate hit nine percent.
+Access comes with an expiration date
+Fable 5 keeps the same one-million-token context window as Opus 4.8. Pro, Max, Team, and Enterprise subscribers can use it through June 22, with usage counting at double the Opus rate. After that, it moves to credit-based billing. That makes it even pricier than token rates suggest. Anthropic says it'll bring back subscription access once capacity allows.
+My colleague Max recently analyzed Fable 5's strengths and weaknesses and found the safety filters blocking large numbers of harmless requests, from medical physics questions to basic security reviews. Anthropic's system card also revealed invisible throttling that degrades Fable's performance when users try to build competing frontier models, though Anthropic has since walked that back .
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: Artificial Analysis
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 82
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":82,"text_length":5803,"paragraph_count":29,"sentence_count":52,"boilerplate_hits":5,"symbol_ratio":0.0016,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Claude Fable 5 在 Artificial Analysis Intelligence Index 中取得 64.9 分，在十项基准测试中有五项创下纪录。相比 Opus 4.8，性能提升仅 5.7%，但 token 价格翻倍。安全过滤与回退路由功能进一步推高了成本。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Ad Skip to content Anthropic's Claude Fable 5 costs twice as much for 5.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   7 percent more performance Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 12, 2026 Key Points Anthropic's latest AI model, Claude Fable 5, has claimed the top spot in the Artificial Analysis Intelligence Index, surpassing rivals including GPT-5.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The overall measured performance leap compared to its predecessor, Opus 4.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   7 percent across many benchmarks.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   That performance gain comes at a steep cost: token prices have doubled, with a full benchmark run now approaching $10,000, twice the price of Opus 4.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, Anthropic
+- products: Claude, GPT-5, Gemini
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 5, 5.7%, 64.9, 4.8, 5.7, 12, 2026, 5.5
+- quotes: modest but tangible. / Tokeneconomics / AI Radar
+
+## evidence_seed
+
+- company_actions: Ad Skip to content Anthropic's Claude Fable 5 costs twice as much for 5. / 7 percent more performance Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 12, 2026 Key Points Anthropic's latest AI model, Claude Fable 5, has claimed the top spot in the Artificial Analysis Intelligence Index, surpassing rivals including GPT-5. / The overall measured performance leap compared to its predecessor, Opus 4.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%","discovery_summary":"Claude Fable 5 在 Artificial Analysis Intelligence Index 中取得 64.9 分，在十项基准测试中有五项创下纪录。相比 Opus 4.8，性能提升仅 5.7%，但 token 价格翻倍。安全过滤与回退路由功能进一步推高了成本。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/anthropics-claude-fable-5-costs-twice-as-much-for-5-7-percent-more-performance","discovered_at":"2026-06-13T05:25:16.561Z","rank_on_page":176,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Claude Fable 5 在 Artificial Analysis Intelligence Index 中取得 64.9 分，在十项基准测试中有五项创下纪录。相比 Opus 4.8，性能提升仅 5.7%，但 token 价格翻倍。安全过滤与回退路由功能进一步推高了成本。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

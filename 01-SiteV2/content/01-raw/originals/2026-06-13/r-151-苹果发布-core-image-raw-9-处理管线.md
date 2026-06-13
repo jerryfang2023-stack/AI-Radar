@@ -1,0 +1,208 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-151
+title: "苹果发布 Core Image RAW 9 处理管线"
+original_url: "https://www.ithome.com/0/963/729.htm"
+canonical_url: "https://ithome.com/0/963/729.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-12T15:59:39.000Z"
+collected_at: 2026-06-13T05:32:37.525Z
+language: mixed
+full_text_hash: d42728aa29f4505d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-151-苹果发布-core-image-raw-9-处理管线.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-151-苹果发布-core-image-raw-9-处理管线.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 45
+extractor_diagnostics: {"readability_score":45,"text_length":800,"paragraph_count":7,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 800
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d42728aa29f4505d","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"苹果发布 Core Image RAW 9 处理管线","discovery_summary":"苹果在 WWDC26 发布 Core Image RAW 9 处理管线及 API，为 2017 年 RAW 8 以来首次重大更新。去马赛克与降噪通过新 CoreML 模型同步进行，处理相机 RAW 文件时效果显著优于 RAW 8。目前已支持 784 款相机 RAW 文件，针对富士 X-Trans CMOS 传感器改进了伪色与细节问题。新 API 利用神经网络引擎提升图像锐度与色彩；CIRAWFilter API 可调整曝光、降噪等参数；CIImageProcessor API 通过精细控制图块与缓冲区优化性能。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/729.htm","discovered_at":"2026-06-13T05:25:16.566Z","rank_on_page":201,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ff36401e5b0468c2
+content_hash: d42728aa29f4505d
+semantic_hash: 3d30b28f40558817
+duplicate_of: ""
+first_seen_at: "2026-06-12T15:59:39.000Z"
+last_seen_at: 2026-06-13T05:32:37.525Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["9","26","2017","8","784","6","12","5"],"quotes":[" 有史以来最大的一次更新 "]}
+evidence_seed: {"company_actions":["IT之家 6 月 12 日消息，苹果在 WWDC26 上发布了 Core Image RAW 9 处理管线及其 API。","IT之家获悉，这是自 2017 年 RAW 8 发布以来，Core Image RAW 的首次重大版本更新。","初期的 RAW 数据解析（parsing）和去马赛克（demosaicing）过程，是所有 RAW 处理软件不可或缺的核心环节。"],"case_details":[],"workflow_changes":["苹果在 WWDC26 发布 Core Image RAW 9 处理管线及 API，为 2017 年 RAW 8 以来首次重大更新。去马赛克与降噪通过新 CoreML 模型同步进行，处理相机 RAW 文件时效果显著优于 RAW 8。目前已支持 784 款相机 RAW 文件，针对富士 X-Trans CMOS 传感器改进了伪色与细节问题。新 API 利用神经网络引擎提升图像锐度与色彩；CIRAWFilter API 可调整曝光、降噪等参数；CIImageProcessor API 通过精细控制图块与缓冲区优化性能。"],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"workflow_change","text":"苹果在 WWDC26 发布 Core Image RAW 9 处理管线及 API，为 2017 年 RAW 8 以来首次重大更新。去马赛克与降噪通过新 CoreML 模型同步进行，处理相机 RAW 文件时效果显著优于 RAW 8。目前已支持 784 款相机 RAW 文件，针对富士 X-Trans CMOS 传感器改进了伪色与细节问题。新 API 利用神经网络引擎提升图像锐度与色彩；CIRAWFilter API 可调整曝光、降噪等参数；CIImageProcessor API 通过精细控制图块与缓冲区优化性能。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 12 日消息，苹果在 WWDC26 上发布了 Core Image RAW 9 处理管线及其 API。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家获悉，这是自 2017 年 RAW 8 发布以来，Core Image RAW 的首次重大版本更新。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"quote","text":"苹果工程师将其称之为“ 有史以来最大的一次更新 ”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"官方表示，来自任何相机的 RAW 照片在被显示或编辑之前，都需要进行“特殊处理”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"初期的 RAW 数据解析（parsing）和去马赛克（demosaicing）过程，是所有 RAW 处理软件不可或缺的核心环节。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 苹果发布 Core Image RAW 9 处理管线
+
+## clean_text
+
+IT之家 6 月 12 日消息，苹果在 WWDC26 上发布了 Core Image RAW 9 处理管线及其 API。
+IT之家获悉，这是自 2017 年 RAW 8 发布以来，Core Image RAW 的首次重大版本更新。苹果工程师将其称之为“ 有史以来最大的一次更新 ”。
+官方表示，来自任何相机的 RAW 照片在被显示或编辑之前，都需要进行“特殊处理”。初期的 RAW 数据解析（parsing）和去马赛克（demosaicing）过程，是所有 RAW 处理软件不可或缺的核心环节。所有这些 RAW 图像传感器数据都必须经过软件的解释，才能被查看或进一步处理。
+现在，去马赛克和降噪过程现在会在一个 新的 CoreML 模型 （CoreML model）中同步进行，官方公布了 RAW 8 与 RAW 9 在处理佳能 5D Mark III 等相机拍摄的 RAW 文件区别，RAW 8 较好地还原了场景中的实际色彩，但 RAW 9 的输出效果明显更好。
+目前苹果已支持多达 784 款相机的 RAW 文件（包含主流相机与 iPhone ），针对富士特有的 X-Trans CMOS 传感器，RAW 9 还解决了旧算法中常见的伪色和细节丢失问题。
+官方向开发者表示， 该 API 版本能够大幅提升 App 的图像质量、增强锐度和色彩表现，同时利用苹果神经网络引擎来实现最优性能 。此外借助 CIRAWFilter API，让用户能够通过更改曝光、降噪、锐度和对比度等参数来编辑 RAW 照片；通过全新的 CIImageProcessor API，通过对图块大小和缓冲区管理的精细控制进一步优化性能。
+苹果 WWDC26 全球开发者大会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 12 日消息，苹果在 WWDC26 上发布了 Core Image RAW 9 处理管线及其 API。
+IT之家获悉，这是自 2017 年 RAW 8 发布以来，Core Image RAW 的首次重大版本更新。苹果工程师将其称之为“ 有史以来最大的一次更新 ”。
+官方表示，来自任何相机的 RAW 照片在被显示或编辑之前，都需要进行“特殊处理”。初期的 RAW 数据解析（parsing）和去马赛克（demosaicing）过程，是所有 RAW 处理软件不可或缺的核心环节。所有这些 RAW 图像传感器数据都必须经过软件的解释，才能被查看或进一步处理。
+现在，去马赛克和降噪过程现在会在一个 新的 CoreML 模型 （CoreML model）中同步进行，官方公布了 RAW 8 与 RAW 9 在处理佳能 5D Mark III 等相机拍摄的 RAW 文件区别，RAW 8 较好地还原了场景中的实际色彩，但 RAW 9 的输出效果明显更好。
+目前苹果已支持多达 784 款相机的 RAW 文件（包含主流相机与 iPhone ），针对富士特有的 X-Trans CMOS 传感器，RAW 9 还解决了旧算法中常见的伪色和细节丢失问题。
+官方向开发者表示， 该 API 版本能够大幅提升 App 的图像质量、增强锐度和色彩表现，同时利用苹果神经网络引擎来实现最优性能 。此外借助 CIRAWFilter API，让用户能够通过更改曝光、降噪、锐度和对比度等参数来编辑 RAW 照片；通过全新的 CIImageProcessor API，通过对图块大小和缓冲区管理的精细控制进一步优化性能。
+苹果 WWDC26 全球开发者大会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 45
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":45,"text_length":800,"paragraph_count":7,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   苹果在 WWDC26 发布 Core Image RAW 9 处理管线及 API，为 2017 年 RAW 8 以来首次重大更新。去马赛克与降噪通过新 CoreML 模型同步进行，处理相机 RAW 文件时效果显著优于 RAW 8。目前已支持 784 款相机 RAW 文件，针对富士 X-Trans CMOS 传感器改进了伪色与细节问题。新 API 利用神经网络引擎提升图像锐度与色彩；CIRAWFilter API 可调整曝光、降噪等参数；CIImageProcessor API 通过精细控制图块与缓冲区优化性能。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 12 日消息，苹果在 WWDC26 上发布了 Core Image RAW 9 处理管线及其 API。
+
+3. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家获悉，这是自 2017 年 RAW 8 发布以来，Core Image RAW 的首次重大版本更新。
+
+4. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   苹果工程师将其称之为“ 有史以来最大的一次更新 ”。
+
+5. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   官方表示，来自任何相机的 RAW 照片在被显示或编辑之前，都需要进行“特殊处理”。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   初期的 RAW 数据解析（parsing）和去马赛克（demosaicing）过程，是所有 RAW 处理软件不可或缺的核心环节。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 9, 26, 2017, 8, 784, 6, 12, 5
+- quotes:  有史以来最大的一次更新 
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 12 日消息，苹果在 WWDC26 上发布了 Core Image RAW 9 处理管线及其 API。 / IT之家获悉，这是自 2017 年 RAW 8 发布以来，Core Image RAW 的首次重大版本更新。 / 初期的 RAW 数据解析（parsing）和去马赛克（demosaicing）过程，是所有 RAW 处理软件不可或缺的核心环节。
+- case_details: 暂无公开信息
+- workflow_changes: 苹果在 WWDC26 发布 Core Image RAW 9 处理管线及 API，为 2017 年 RAW 8 以来首次重大更新。去马赛克与降噪通过新 CoreML 模型同步进行，处理相机 RAW 文件时效果显著优于 RAW 8。目前已支持 784 款相机 RAW 文件，针对富士 X-Trans CMOS 传感器改进了伪色与细节问题。新 API 利用神经网络引擎提升图像锐度与色彩；CIRAWFilter API 可调整曝光、降噪等参数；CIImageProcessor API 通过精细控制图块与缓冲区优化性能。
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"苹果发布 Core Image RAW 9 处理管线","discovery_summary":"苹果在 WWDC26 发布 Core Image RAW 9 处理管线及 API，为 2017 年 RAW 8 以来首次重大更新。去马赛克与降噪通过新 CoreML 模型同步进行，处理相机 RAW 文件时效果显著优于 RAW 8。目前已支持 784 款相机 RAW 文件，针对富士 X-Trans CMOS 传感器改进了伪色与细节问题。新 API 利用神经网络引擎提升图像锐度与色彩；CIRAWFilter API 可调整曝光、降噪等参数；CIImageProcessor API 通过精细控制图块与缓冲区优化性能。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/729.htm","discovered_at":"2026-06-13T05:25:16.566Z","rank_on_page":201,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+苹果在 WWDC26 发布 Core Image RAW 9 处理管线及 API，为 2017 年 RAW 8 以来首次重大更新。去马赛克与降噪通过新 CoreML 模型同步进行，处理相机 RAW 文件时效果显著优于 RAW 8。目前已支持 784 款相机 RAW 文件，针对富士 X-Trans CMOS 传感器改进了伪色与细节问题。新 API 利用神经网络引擎提升图像锐度与色彩；CIRAWFilter API 可调整曝光、降噪等参数；CIImageProcessor API 通过精细控制图块与缓冲区优化性能。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,240 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-175",
+  "title": "olmo-eval：面向模型开发循环的评估工作台",
+  "original_url": "",
+  "canonical_url": "",
+  "source_name": "Hugging Face：Blog（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "official_index_or_directory",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-13T05:32:37.555Z",
+  "language": "mixed",
+  "full_text": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+  "clean_text": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-175-olmo-eval-面向模型开发循环的评估工作台.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-175-olmo-eval-面向模型开发循环的评估工作台.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "no-url-summary-only",
+  "extraction_quality": "failed",
+  "extraction_method": "no_url_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "no_url_summary_fallback"
+  },
+  "has_full_text": false,
+  "content_length": 240,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "missing",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "ab2a473ceb46a6e2",
+    "missing": [
+      "missing_original_url",
+      "missing_full_text",
+      "missing_snapshot"
+    ]
+  },
+  "raw_qc_decision": "block",
+  "raw_qc_downstream_use": "not_allowed",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "missing_full_text",
+    "missing_snapshot",
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "summary_only",
+  "visible_range": "采集通道提供的标题与摘要",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "olmo-eval：面向模型开发循环的评估工作台",
+    "discovery_summary": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+    "source_name": "Hugging Face：Blog（RSS）",
+    "origin_url": "",
+    "discovered_at": "2026-06-13T05:25:14.037Z",
+    "rank_on_page": 4,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e3b0c44298fc1c14",
+  "content_hash": "ab2a473ceb46a6e2",
+  "full_text_hash": "ab2a473ceb46a6e2",
+  "semantic_hash": "cefd8517d61c2250",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-13T05:32:37.555Z",
+  "last_seen_at": "2026-06-13T05:32:37.555Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "评测结果同时报告分数、标准误差和最小可检测效应。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hugging Face",
+      "Blog（RSS）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [],
+    "numbers": [],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。",
+      "相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。",
+      "评测结果同时报告分数、标准误差和最小可检测效应。"
+    ],
+    "case_details": [
+      "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。",
+      "采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 2,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有变化前后流程线索",
+    "没有成本、收入、采用率或市场规模数字",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# olmo-eval：面向模型开发循环的评估工作台\n\n- raw_id: R-175\n- original_url: no-url\n- source_name: Hugging Face：Blog（RSS）\n- collected_at: 2026-06-13T05:32:37.555Z\n\n## clean_text\n\nolmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。\n\n## full_text\n\nolmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。\n\n## extraction_diagnostics\n\n- extraction_method: no_url_summary_fallback\n- readability_score: 0\n- fetch_status: no-url-summary-only\n- extraction_quality: failed\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应。与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。\n4. [case_detail / daily_observation, heatmap, case / high] 采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 评测结果同时报告分数、标准误差和最小可检测效应。\n6. [product_update / daily_observation, heatmap, change / high] 与 Harbor 侧重于发布不同，olmo-eval 聚焦开发阶段快速迭代，可逐问题对比检查点输出以区分真实改进与噪声。\n"
+}

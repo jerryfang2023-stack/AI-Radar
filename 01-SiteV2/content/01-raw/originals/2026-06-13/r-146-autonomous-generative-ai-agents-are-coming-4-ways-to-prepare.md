@@ -1,0 +1,243 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-146
+title: "Autonomous Generative AI Agents Are Coming: 4 Ways to Prepare"
+original_url: "https://deloitte.wsj.com/sustainable-business/autonomous-generative-ai-agents-are-coming-4-ways-to-prepare-c8aaf9cd"
+canonical_url: "https://deloitte.wsj.com/sustainable-business/autonomous-generative-ai-agents-are-coming-4-ways-to-prepare-c8aaf9cd"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-13T05:32:37.506Z
+language: mixed
+full_text_hash: 089f4caed2d9f867
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-146-autonomous-generative-ai-agents-are-coming-4-ways-to-prepare.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-13/r-146-autonomous-generative-ai-agents-are-coming-4-ways-to-prepare.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7470,"paragraph_count":24,"sentence_count":71,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 7470
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"089f4caed2d9f867","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 75ed3f045e6e9922
+content_hash: 089f4caed2d9f867
+semantic_hash: 15c5e996e58e9f8e
+duplicate_of: ""
+first_seen_at: "2026-06-13T05:32:37.506Z"
+last_seen_at: 2026-06-13T05:32:37.506Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Google","Deloitte"],"products":["Agents","Agent","agents","agent"],"people":[],"industries":["法律 / 法务","医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["4","25%","50%","2027","2025","2","3 M","5"],"quotes":[" TMT Predictions 2025 ","software engineer","TMT Predictions 2025","varying degrees of autonomy."," The call center burnout problem ,"]}
+evidence_seed: {"company_actions":["Autonomous Generative AI Agents Are Coming: 4 Ways to Prepare - WSJ Skip to Main Content This copy is for your personal, non-commercial use only. Distribution and use of this material are governed by our Subscriber Agreement and by copyright law. For non-personal use or to order multiple copies, ple","While chatbots and agents share the same foundation—large language models—additional technologies and techniques enable agents to act independently, break jobs down into discrete steps, and complete their work with minimal human supervision or intervention.","AI agents don’t just interact; they more effectively reason and act on behalf of the user."],"case_details":["Putting the ‘Agency’ in Agent Agentic AI is different from today’s chatbots and copilots, which themselves are often called agents but lack the degree of agency and autonomy that agentic AI promises."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"company_action","text":"Autonomous Generative AI Agents Are Coming: 4 Ways to Prepare - WSJ Skip to Main Content This copy is for your personal, non-commercial use only. Distribution and use of this material are governed by our Subscriber Agreement and by copyright law. For non-personal use or to order multiple copies, ple","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"number","text":"This year, 25% of companies that use generative AI will launch agentic AI pilots or proofs of concept, Deloitte predicts, growing to 50% in 2027.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Some agentic AI applications could see actual adoption into existing workflows in 2025, especially by the back half of the year, according to Deloitte Global’s “ TMT Predictions 2025 ” report.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Putting the ‘Agency’ in Agent Agentic AI is different from today’s chatbots and copilots, which themselves are often called agents but lack the degree of agency and autonomy that agentic AI promises.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"While chatbots and agents share the same foundation—large language models—additional technologies and techniques enable agents to act independently, break jobs down into discrete steps, and complete their work with minimal human supervision or intervention.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"AI agents don’t just interact; they more effectively reason and act on behalf of the user.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Autonomous Generative AI Agents Are Coming: 4 Ways to Prepare
+
+## clean_text
+
+This year, 25% of companies that use generative AI will launch agentic AI pilots or proofs of concept, Deloitte predicts, growing to 50% in 2027. Some agentic AI applications could see actual adoption into existing workflows in 2025, especially by the back half of the year, according to Deloitte Global’s “ TMT Predictions 2025 ” report.
+Putting the ‘Agency’ in Agent
+Agentic AI is different from today’s chatbots and copilots, which themselves are often called agents but lack the degree of agency and autonomy that agentic AI promises. While chatbots and agents share the same foundation—large language models—additional technologies and techniques enable agents to act independently, break jobs down into discrete steps, and complete their work with minimal human supervision or intervention. AI agents don’t just interact; they more effectively reason and act on behalf of the user.
+An example can illustrate the difference between agentic AI and copilots and chatbots. Copilots that assist software developers by testing and suggesting code are one of the most successful generative AI use cases to date. But such tools only respond to prompts from engineers—they do not show agency. With agentic AI, a human coder can enter ideas for software through a prompt, and the agentic AI “software engineer” converts those ideas into executable code, a process that automates multiple steps in the software development process.
+Currently, agentic AI software engineers can be too error-prone to handle full, or even partial, jobs without human oversight. But they are advancing rapidly and represent just one example of how autonomous generative AI agents could transform the way work is done. As agentic AI improves, its impact could be enormous. Some use cases and applications show encouraging signs of being reliable enough for adoption in early 2025.
+Companies should invest in a strong data governance foundation and cybersecurity approach before getting started with autonomous generative AI agents.
+Promising Use Cases
+Early-stage agentic AI solutions can partially automate functions like software development, sales, marketing, and regulatory compliance. Among some of today’s more promising use cases are the following:
+Customer support. Customer service is an essential—and often stressful—job. 2 Effective automation of parts of the customer support workflow could reduce stress and tedium for staff and help companies serve more customers. Agentic AI can handle more complex customer inquiries than today’s customer support chatbots, and it can act autonomously to resolve issues. The next wave of customer support agents will likely integrate multimodal data such as voice and video in addition to text-based chat.
+Cybersecurity. Cybersecurity experts epitomize the shortage of skilled knowledge workers today. 3 Meanwhile, malicious actors are using generative AI to infiltrate cybersecurity systems. Emerging agentic cybersecurity systems can make human experts more efficient by automating aspects of their work. They can autonomously detect attacks and generate reports, for example, improving system security and reducing the workload of human experts. 4
+Regulatory compliance. Companies across industries, including financial services and health care, are required to conduct periodic regulatory compliance reviews. The increased scope and complexity of relevant regulations and the dearth of compliance professionals make compliance a growing challenge. New agentic AI tools can analyze regulations and corporate documents to assess whether a company is compliant, proactively providing analysis and advice to human regulatory professionals. 5
+Agent builders and orchestrators. Agentic AI solutions are emerging to help automate other cross-industry and vertical-specific workflows. Increasingly, companies can also build their own custom agents using no-code tools designed to help with that task. 6
+4 Ways to Prepare
+Agentic AI has enormous potential, but it is still in the early stages of development and adoption. Companies preparing today can consider the following approaches:
+Prioritize and redesign workflows for agentic AI. Evaluate which tasks and workflows are well-suited for execution by agentic AI based on the technology’s capabilities and where within the enterprise the highest potential value lies. Redesign them to remove unnecessary steps. Ensure that agentic AI solutions have a clear goal and access to the data, tools, and systems they will require. Although these agents can help other agents navigate their environment, cluttered and suboptimized processes could deliver disappointing results.
+Focus on data governance and cybersecurity. For agentic AI to deliver value, it must have access to valuable and potentially sensitive enterprise data as well as internal systems and external resources. Only 23% of early adopters of generative AI say they’re highly prepared for managing the risk and governance associated with the technology; 58% are highly concerned about using sensitive data in models and managing data security. Companies should invest in a strong data governance foundation and cybersecurity approach before getting started with autonomous generative AI agents.
+Balance risk and reward. When starting with agentic AI, companies should consider the level of autonomy and data access agents are permitted. Low-risk use cases with noncritical data and human oversight can help companies build the data management, cybersecurity, and governance for safe agentic AI applications. Once these are in place, companies should consider higher-value use cases that involve strategic data, access to more tools, and more autonomy.
+Maintain healthy skepticism. Agentic AI will likely become more capable in the next year and be applied to more use cases. Expect impressive demos, simulations, and product announcements throughout 2025. Current challenges may take time to resolve. Demos and simulations that feature generative AI in controlled settings likely won’t have the impact many companies want and expect. Evaluate and question carefully. Work with a trusted partner to stay abreast of agentic AI and how it can help you. At the same time, do what’s required to get your organization ready, including focusing on data governance and security. The future is coming fast.
+Visit the full “TMT Predictions 2025” report .
+—by Jeff Loucks, executive director, Center for Technology, Media, & Telecommunications, Deloitte Services LP; Gillian Crossan, advisory principal, Deloitte & Touche LLP; Baris Sarer, principal, Deloitte Consulting LLP; and China Widener, principal, Deloitte Consulting LLP
+1. CB Insights, Gen AI Investment Database, Aug 21, 2024. This data excludes Open AI. It includes funding to companies that are developing agentic AI with “varying degrees of autonomy.”
+2. Mike Desmarais, “ The call center burnout problem ,” SQM Group, Feb. 24, 2023.
+3. Michelle Meineke, “ The cybersecurity industry has an urgent talent shortage. Here’s how to plug the gap ,” World Economic Forum, April 28, 2024.
+4. Ken Yeung, “ Dropzone AI gets $16.85M for autonomous cybersecurity AI agents that reduce manual work by 90 percent ,” VentureBeat, April 25, 2024.
+5. Kyt Dotson, “ Norm Ai raises $27M to help businesses handle regulatory compliance with AI agents ,” SiliconANGLE, June 26, 2024.
+6. Ron Miller, “ With Vertex AI Agent Builder, Google Cloud aims to simplify agent creation ,” TechCrunch, April 9, 2024.
+
+## full_text
+
+This year, 25% of companies that use generative AI will launch agentic AI pilots or proofs of concept, Deloitte predicts, growing to 50% in 2027. Some agentic AI applications could see actual adoption into existing workflows in 2025, especially by the back half of the year, according to Deloitte Global’s “ TMT Predictions 2025 ” report.
+Putting the ‘Agency’ in Agent
+Agentic AI is different from today’s chatbots and copilots, which themselves are often called agents but lack the degree of agency and autonomy that agentic AI promises. While chatbots and agents share the same foundation—large language models—additional technologies and techniques enable agents to act independently, break jobs down into discrete steps, and complete their work with minimal human supervision or intervention. AI agents don’t just interact; they more effectively reason and act on behalf of the user.
+An example can illustrate the difference between agentic AI and copilots and chatbots. Copilots that assist software developers by testing and suggesting code are one of the most successful generative AI use cases to date. But such tools only respond to prompts from engineers—they do not show agency. With agentic AI, a human coder can enter ideas for software through a prompt, and the agentic AI “software engineer” converts those ideas into executable code, a process that automates multiple steps in the software development process.
+Currently, agentic AI software engineers can be too error-prone to handle full, or even partial, jobs without human oversight. But they are advancing rapidly and represent just one example of how autonomous generative AI agents could transform the way work is done. As agentic AI improves, its impact could be enormous. Some use cases and applications show encouraging signs of being reliable enough for adoption in early 2025.
+Companies should invest in a strong data governance foundation and cybersecurity approach before getting started with autonomous generative AI agents.
+Promising Use Cases
+Early-stage agentic AI solutions can partially automate functions like software development, sales, marketing, and regulatory compliance. Among some of today’s more promising use cases are the following:
+Customer support. Customer service is an essential—and often stressful—job. 2 Effective automation of parts of the customer support workflow could reduce stress and tedium for staff and help companies serve more customers. Agentic AI can handle more complex customer inquiries than today’s customer support chatbots, and it can act autonomously to resolve issues. The next wave of customer support agents will likely integrate multimodal data such as voice and video in addition to text-based chat.
+Cybersecurity. Cybersecurity experts epitomize the shortage of skilled knowledge workers today. 3 Meanwhile, malicious actors are using generative AI to infiltrate cybersecurity systems. Emerging agentic cybersecurity systems can make human experts more efficient by automating aspects of their work. They can autonomously detect attacks and generate reports, for example, improving system security and reducing the workload of human experts. 4
+Regulatory compliance. Companies across industries, including financial services and health care, are required to conduct periodic regulatory compliance reviews. The increased scope and complexity of relevant regulations and the dearth of compliance professionals make compliance a growing challenge. New agentic AI tools can analyze regulations and corporate documents to assess whether a company is compliant, proactively providing analysis and advice to human regulatory professionals. 5
+Agent builders and orchestrators. Agentic AI solutions are emerging to help automate other cross-industry and vertical-specific workflows. Increasingly, companies can also build their own custom agents using no-code tools designed to help with that task. 6
+4 Ways to Prepare
+Agentic AI has enormous potential, but it is still in the early stages of development and adoption. Companies preparing today can consider the following approaches:
+Prioritize and redesign workflows for agentic AI. Evaluate which tasks and workflows are well-suited for execution by agentic AI based on the technology’s capabilities and where within the enterprise the highest potential value lies. Redesign them to remove unnecessary steps. Ensure that agentic AI solutions have a clear goal and access to the data, tools, and systems they will require. Although these agents can help other agents navigate their environment, cluttered and suboptimized processes could deliver disappointing results.
+Focus on data governance and cybersecurity. For agentic AI to deliver value, it must have access to valuable and potentially sensitive enterprise data as well as internal systems and external resources. Only 23% of early adopters of generative AI say they’re highly prepared for managing the risk and governance associated with the technology; 58% are highly concerned about using sensitive data in models and managing data security. Companies should invest in a strong data governance foundation and cybersecurity approach before getting started with autonomous generative AI agents.
+Balance risk and reward. When starting with agentic AI, companies should consider the level of autonomy and data access agents are permitted. Low-risk use cases with noncritical data and human oversight can help companies build the data management, cybersecurity, and governance for safe agentic AI applications. Once these are in place, companies should consider higher-value use cases that involve strategic data, access to more tools, and more autonomy.
+Maintain healthy skepticism. Agentic AI will likely become more capable in the next year and be applied to more use cases. Expect impressive demos, simulations, and product announcements throughout 2025. Current challenges may take time to resolve. Demos and simulations that feature generative AI in controlled settings likely won’t have the impact many companies want and expect. Evaluate and question carefully. Work with a trusted partner to stay abreast of agentic AI and how it can help you. At the same time, do what’s required to get your organization ready, including focusing on data governance and security. The future is coming fast.
+Visit the full “TMT Predictions 2025” report .
+—by Jeff Loucks, executive director, Center for Technology, Media, & Telecommunications, Deloitte Services LP; Gillian Crossan, advisory principal, Deloitte & Touche LLP; Baris Sarer, principal, Deloitte Consulting LLP; and China Widener, principal, Deloitte Consulting LLP
+1. CB Insights, Gen AI Investment Database, Aug 21, 2024. This data excludes Open AI. It includes funding to companies that are developing agentic AI with “varying degrees of autonomy.”
+2. Mike Desmarais, “ The call center burnout problem ,” SQM Group, Feb. 24, 2023.
+3. Michelle Meineke, “ The cybersecurity industry has an urgent talent shortage. Here’s how to plug the gap ,” World Economic Forum, April 28, 2024.
+4. Ken Yeung, “ Dropzone AI gets $16.85M for autonomous cybersecurity AI agents that reduce manual work by 90 percent ,” VentureBeat, April 25, 2024.
+5. Kyt Dotson, “ Norm Ai raises $27M to help businesses handle regulatory compliance with AI agents ,” SiliconANGLE, June 26, 2024.
+6. Ron Miller, “ With Vertex AI Agent Builder, Google Cloud aims to simplify agent creation ,” TechCrunch, April 9, 2024.
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7470,"paragraph_count":24,"sentence_count":71,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Autonomous Generative AI Agents Are Coming: 4 Ways to Prepare - WSJ Skip to Main Content This copy is for your personal, non-commercial use only. Distribution and use of this material are governed by our Subscriber Agreement and by copyright law. For non-personal use or to order multiple copies, ple
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   This year, 25% of companies that use generative AI will launch agentic AI pilots or proofs of concept, Deloitte predicts, growing to 50% in 2027.
+
+3. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   Some agentic AI applications could see actual adoption into existing workflows in 2025, especially by the back half of the year, according to Deloitte Global’s “ TMT Predictions 2025 ” report.
+
+4. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Putting the ‘Agency’ in Agent Agentic AI is different from today’s chatbots and copilots, which themselves are often called agents but lack the degree of agency and autonomy that agentic AI promises.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   While chatbots and agents share the same foundation—large language models—additional technologies and techniques enable agents to act independently, break jobs down into discrete steps, and complete their work with minimal human supervision or intervention.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   AI agents don’t just interact; they more effectively reason and act on behalf of the user.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google, Deloitte
+- products: Agents, Agent, agents, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 4, 25%, 50%, 2027, 2025, 2, 3 M, 5
+- quotes:  TMT Predictions 2025  / software engineer / TMT Predictions 2025 / varying degrees of autonomy. /  The call center burnout problem ,
+
+## evidence_seed
+
+- company_actions: Autonomous Generative AI Agents Are Coming: 4 Ways to Prepare - WSJ Skip to Main Content This copy is for your personal, non-commercial use only. Distribution and use of this material are governed by our Subscriber Agreement and by copyright law. For non-personal use or to order multiple copies, ple / While chatbots and agents share the same foundation—large language models—additional technologies and techniques enable agents to act independently, break jobs down into discrete steps, and complete their work with minimal human supervision or intervention. / AI agents don’t just interact; they more effectively reason and act on behalf of the user.
+- case_details: Putting the ‘Agency’ in Agent Agentic AI is different from today’s chatbots and copilots, which themselves are often called agents but lack the degree of agency and autonomy that agentic AI promises.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Autonomous Generative AI Agents Are Coming: 4 Ways to Prepare - WSJ Skip to Main Content This copy is for your personal, non-commercial use only. Distribution and use of this material are governed by our Subscriber Agreement and by copyright law. For non-personal use or to order multiple copies, ple
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

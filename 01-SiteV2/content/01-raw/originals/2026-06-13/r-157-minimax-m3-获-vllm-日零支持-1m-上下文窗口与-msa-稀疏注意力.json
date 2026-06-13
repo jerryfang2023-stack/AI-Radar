@@ -1,0 +1,232 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-157",
+  "title": "MiniMax M3 获 vLLM 日零支持，1M 上下文窗口与 MSA 稀疏注意力",
+  "original_url": "https://x.com/MiniMax_AI/status/2065543713032683843",
+  "canonical_url": "https://x.com/MiniMax_AI/status/2065543713032683843",
+  "source_name": "X：MiniMax (@MiniMax_AI)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-12T21:16:11.000Z",
+  "collected_at": "2026-06-13T05:32:37.534Z",
+  "language": "mixed",
+  "full_text": "MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。",
+  "clean_text": "MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-157-minimax-m3-获-vllm-日零支持-1m-上下文窗口与-msa-稀疏注意力.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-13/r-157-minimax-m3-获-vllm-日零支持-1m-上下文窗口与-msa-稀疏注意力.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "http-404-fallback-text",
+  "extraction_quality": "low",
+  "extraction_method": "content-container",
+  "readability_score": 21,
+  "extractor_diagnostics": {
+    "readability_score": 21,
+    "text_length": 139,
+    "paragraph_count": 1,
+    "sentence_count": 3,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 270,
+  "fetch_error": "404 Not Found",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "67e2d549cf1c5b3a",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "X：MiniMax (@MiniMax_AI)",
+  "capture_scope": "visible_text",
+  "visible_range": "HTTP 404 fallback 可见文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "MiniMax M3 获 vLLM 日零支持，1M 上下文窗口与 MSA 稀疏注意力",
+    "discovery_summary": "MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。",
+    "source_name": "X：MiniMax (@MiniMax_AI)",
+    "origin_url": "https://x.com/MiniMax_AI/status/2065543713032683843",
+    "discovered_at": "2026-06-13T05:25:16.550Z",
+    "rank_on_page": 115,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "failed",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "1c6d5786f0b72c53",
+  "content_hash": "67e2d549cf1c5b3a",
+  "full_text_hash": "67e2d549cf1c5b3a",
+  "semantic_hash": "4958ded30f67454e",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-12T21:16:11.000Z",
+  "last_seen_at": "2026-06-13T05:32:37.534Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "MiniMax (@MiniMax_AI)",
+      "Nvidia"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [],
+    "numbers": [
+      "3",
+      "1M",
+      "128",
+      "16",
+      "8"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。",
+      "vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。",
+      "同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。"
+    ],
+    "case_details": [
+      "MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。",
+      "核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 3,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# MiniMax M3 获 vLLM 日零支持，1M 上下文窗口与 MSA 稀疏注意力\n\n- raw_id: R-157\n- original_url: https://x.com/MiniMax_AI/status/2065543713032683843\n- source_name: X：MiniMax (@MiniMax_AI)\n- collected_at: 2026-06-13T05:32:37.534Z\n\n## clean_text\n\nMiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。\n\n## full_text\n\nMiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 21\n- fetch_status: http-404-fallback-text\n- extraction_quality: low\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。\n2. [product_update / daily_observation, heatmap, change / high] MiniMax M3 发布，具备前沿编码与智能体能力，原生图像视频输入和计算机使用，1M-token 上下文。\n3. [case_detail / daily_observation, heatmap, case / high] 核心采用 MSA 稀疏注意力：每个 query 评分 128-token KV 块，仅对 top 块做注意力。\n4. [company_action / daily_observation, heatmap, change, case, trend / high] vLLM 当日即支持 M3，包括专用 MSA prefill/decode 核、前缀缓存与分块 prefill、BF16 和 MXFP8 检查点、Hopper 与 Blackwell 的 MoE 后端，并在 NVIDIA 与 AMD 硬件上验证。\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 同时支持原生多模态输入、工具调用、推理解析和思考模式控制等智能体工作负载。\n"
+}
