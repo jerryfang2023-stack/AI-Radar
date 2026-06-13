@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-13 03:08:43",
+    "generatedAt": "2026-06-13 14:18:51",
     "generatedDate": "2026-06-13",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
@@ -9,10 +9,10 @@ window.WaveSightLocalSkillStore = {
     "version": {
       "schema_version": 1,
       "name": "Guanlan Skill Store",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "release_date": "2026-06-13",
-      "stage": "Cleanup operations display copy fix",
-      "scope": "Operations-console Skill Store dashboard with clearer catalog metric labels, search placeholder wording, and simplified catalog sort/group controls, while preserving embedded catalog/cleanup views, governed current skills, usage overrides, 30-day cleanup observation, manual add-to-cleanup and mark-common actions, trash staging, permanent trash deletion, local Skill Store ops service, .skill-store sync, and Daily Loop Skill Ops check.",
+      "stage": "Cleanup management cache and common-action fix",
+      "scope": "Operations-console Skill Store dashboard with reliable mark-common behavior, cache-busted embedded catalog/cleanup views, clearer catalog metric labels, search placeholder wording, simplified catalog sort/group controls, governed current skills, usage overrides, 30-day cleanup observation, manual add-to-cleanup and mark-common actions, trash staging, permanent trash deletion, local Skill Store ops service, .skill-store sync, and Daily Loop Skill Ops check.",
       "upgrade_policy": {
         "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
         "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
@@ -38,12 +38,12 @@ window.WaveSightLocalSkillStore = {
       "laneOwners": 3,
       "needsAction": 0,
       "syncIssues": 0,
-      "dormant": 132,
+      "dormant": 128,
       "retired": 0,
-      "cleanupQueue": 15,
+      "cleanupQueue": 11,
       "cleanupActions": {
-        "keep": 132,
-        "cleanup": 15
+        "keep": 136,
+        "cleanup": 11
       },
       "evalCoverage": 100,
       "exampleCoverage": 100
@@ -153,40 +153,6 @@ window.WaveSightLocalSkillStore = {
       "last_used": ""
     },
     {
-      "name": "fbs-bookwriter",
-      "lifecycle": "dormant",
-      "cleanup_score": 100,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
-      "cleanup_action": "cleanup",
-      "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Large store-only writing system with no current Guanlan dependency.",
-      "replacement_skill": "",
-      "installedAt": "2026-04-25 21:34:18",
-      "cleanup_observation_start": "2026-06-13 00:00:00",
-      "usage_count": 0,
-      "last_used": ""
-    },
-    {
-      "name": "frontend-dev",
-      "lifecycle": "dormant",
-      "cleanup_score": 100,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
-      "cleanup_action": "cleanup",
-      "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Overlaps with frontend-design and project UI rules.",
-      "replacement_skill": "",
-      "installedAt": "2026-04-25 21:34:28",
-      "cleanup_observation_start": "2026-06-13 00:00:00",
-      "usage_count": 0,
-      "last_used": ""
-    },
-    {
       "name": "github-ai-trends",
       "lifecycle": "dormant",
       "cleanup_score": 100,
@@ -199,23 +165,6 @@ window.WaveSightLocalSkillStore = {
       "cleanup_reason": "Overlaps with github-trending-cn.",
       "replacement_skill": "",
       "installedAt": "2026-04-25 21:34:30",
-      "cleanup_observation_start": "2026-06-13 00:00:00",
-      "usage_count": 0,
-      "last_used": ""
-    },
-    {
-      "name": "ima-skills",
-      "lifecycle": "dormant",
-      "cleanup_score": 100,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
-      "cleanup_action": "cleanup",
-      "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Store-only dormant integration with no current Guanlan dependency.",
-      "replacement_skill": "",
-      "installedAt": "2026-04-25 21:34:31",
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
       "last_used": ""
@@ -284,23 +233,6 @@ window.WaveSightLocalSkillStore = {
       "cleanup_reason": "Dormant personal Joplin tooling with no Guanlan dependency.",
       "replacement_skill": "",
       "installedAt": "2026-04-25 21:34:38",
-      "cleanup_observation_start": "2026-06-13 00:00:00",
-      "usage_count": 0,
-      "last_used": ""
-    },
-    {
-      "name": "ppt-slideshow",
-      "lifecycle": "dormant",
-      "cleanup_score": 100,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
-      "cleanup_action": "cleanup",
-      "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Overlaps with bundled Presentations capability.",
-      "replacement_skill": "",
-      "installedAt": "2026-04-25 21:34:40",
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
       "last_used": ""
@@ -1039,8 +971,8 @@ window.WaveSightLocalSkillStore = {
       "lifecycle": "candidate",
       "installedAt": "2026-05-08 13:28:44",
       "installedTime": 1778218124935.943,
-      "last_used": "2026-06-12",
-      "usage_count": 24,
+      "last_used": "2026-06-13",
+      "usage_count": 26,
       "sizeKB": 21,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 13:28:44",
@@ -3481,11 +3413,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": true,
       "hasDeps": false,
       "hasTemplates": true,
-      "lifecycle": "dormant",
+      "lifecycle": "candidate",
       "installedAt": "2026-04-25 21:34:18",
       "installedTime": 1777124058499.1846,
-      "last_used": "",
-      "usage_count": 0,
+      "last_used": "2026-06-13",
+      "usage_count": 1,
       "sizeKB": 3642,
       "fileCount": 482,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3493,17 +3425,14 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 100,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [],
       "cleanup_observation_start": "2026-06-13 00:00:00",
-      "cleanup_recommendation_reason": "Large store-only writing system with no current Guanlan dependency.",
-      "cleanup_action": "cleanup",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Large store-only writing system with no current Guanlan dependency.",
+      "cleanup_reason": "no cleanup action recommended",
       "replacement_skill": ""
     },
     {
@@ -3709,11 +3638,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
-      "lifecycle": "dormant",
+      "lifecycle": "candidate",
       "installedAt": "2026-04-25 21:34:28",
       "installedTime": 1777124068776.151,
-      "last_used": "",
-      "usage_count": 0,
+      "last_used": "2026-06-13",
+      "usage_count": 1,
       "sizeKB": 5548,
       "fileCount": 99,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -3721,17 +3650,14 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 100,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [],
       "cleanup_observation_start": "2026-06-13 00:00:00",
-      "cleanup_recommendation_reason": "Overlaps with frontend-design and project UI rules.",
-      "cleanup_action": "cleanup",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Overlaps with frontend-design and project UI rules.",
+      "cleanup_reason": "no cleanup action recommended",
       "replacement_skill": ""
     },
     {
@@ -4447,11 +4373,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": false,
-      "lifecycle": "dormant",
+      "lifecycle": "candidate",
       "installedAt": "2026-04-25 21:34:31",
       "installedTime": 1777124071947.8872,
-      "last_used": "",
-      "usage_count": 0,
+      "last_used": "2026-06-13",
+      "usage_count": 1,
       "sizeKB": 98,
       "fileCount": 8,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -4459,17 +4385,14 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 100,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [],
       "cleanup_observation_start": "2026-06-13 00:00:00",
-      "cleanup_recommendation_reason": "Store-only dormant integration with no current Guanlan dependency.",
-      "cleanup_action": "cleanup",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Store-only dormant integration with no current Guanlan dependency.",
+      "cleanup_reason": "no cleanup action recommended",
       "replacement_skill": ""
     },
     {
@@ -6553,11 +6476,11 @@ window.WaveSightLocalSkillStore = {
       "hasConfig": false,
       "hasDeps": false,
       "hasTemplates": true,
-      "lifecycle": "dormant",
+      "lifecycle": "candidate",
       "installedAt": "2026-04-25 21:34:40",
       "installedTime": 1777124080416.8088,
-      "last_used": "",
-      "usage_count": 0,
+      "last_used": "2026-06-13",
+      "usage_count": 1,
       "sizeKB": 18,
       "fileCount": 6,
       "modifiedAt": "2026-04-27 23:14:02",
@@ -6565,17 +6488,14 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 100,
-      "cleanup_candidate": true,
-      "cleanup_reasons": [
-        "no observed usage",
-        "recommended cleanup"
-      ],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [],
       "cleanup_observation_start": "2026-06-13 00:00:00",
-      "cleanup_recommendation_reason": "Overlaps with bundled Presentations capability.",
-      "cleanup_action": "cleanup",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "keep",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "Overlaps with bundled Presentations capability.",
+      "cleanup_reason": "no cleanup action recommended",
       "replacement_skill": ""
     },
     {

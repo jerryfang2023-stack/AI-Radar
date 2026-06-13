@@ -68,6 +68,30 @@
     return Array.isArray(data.cleanupQueue) ? data.cleanupQueue : [];
   }
 
+  function removeCleanupCandidate(name) {
+    if (!name) return;
+    const summary = data.meta?.summary;
+    if (Array.isArray(data.cleanupQueue)) {
+      data.cleanupQueue = data.cleanupQueue.filter((item) => item.name !== name);
+    }
+    if (summary) {
+      summary.cleanupQueue = Math.max(0, Number(summary.cleanupQueue || 0) - 1);
+      summary.dormant = Math.max(0, Number(summary.dormant || 0) - 1);
+    }
+    const skill = skillByName(name);
+    if (skill.name) {
+      skill.cleanup_candidate = false;
+      skill.cleanup_action = "keep";
+      skill.cleanup_reasons = [];
+      skill.cleanup_reason = "no cleanup action recommended";
+      skill.last_used = new Date().toISOString().slice(0, 10);
+      skill.usage_count = Math.max(1, Number(skill.usage_count || 0));
+    }
+    state.selectedCleanup.delete(name);
+    renderCleanupQueue();
+    renderSkills();
+  }
+
   function skillByName(name) {
     return skills.find((skill) => skill.name === name) || {};
   }
@@ -527,9 +551,8 @@
       if (!response.ok || !result.ok) throw new Error(result.error || "标为常用失败");
       const updated = result.updated?.length || 0;
       const refused = result.refused?.length || 0;
-      status.innerHTML = `<h3>已标为常用</h3><p>已更新 ${html(updated)} 个 skill；拒绝 ${html(refused)} 个不在清理列表中的 skill。页面即将刷新。</p>`;
-      state.selectedCleanup.delete(name);
-      window.setTimeout(() => location.reload(), 700);
+      if (updated) removeCleanupCandidate(name);
+      status.innerHTML = `<h3>已标为常用</h3><p>已更新 ${html(updated)} 个 skill；拒绝 ${html(refused)} 个不存在的 skill。</p>`;
     } catch (error) {
       status.innerHTML = `<h3>管理服务未连接</h3><p>本地管理服务未启动或连接失败。请先让我启动 Skill Store 管理服务，再回到页面点击标为常用。</p><p>${html(error.message || error)}</p>`;
     } finally {

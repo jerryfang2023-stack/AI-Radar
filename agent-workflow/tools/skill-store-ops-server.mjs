@@ -212,8 +212,12 @@ function writePermanentDeleteReport({ id, deleted, refused }) {
 }
 
 function rebuildSkillStore() {
-  const npm = process.platform === "win32" ? "npm.cmd" : "npm";
-  execFileSync(npm, ["run", "build:skill-store-dashboard"], {
+  execFileSync(process.execPath, ["agent-workflow/tools/build-skill-registry.mjs"], {
+    cwd: root,
+    stdio: "pipe",
+    encoding: "utf8",
+  });
+  execFileSync(process.execPath, ["agent-workflow/tools/build-skill-store-dashboard.mjs"], {
     cwd: root,
     stdio: "pipe",
     encoding: "utf8",
@@ -338,10 +342,6 @@ async function markSkillsCommon(request, response) {
     const skill = byName.get(name);
     if (!skill) {
       refused.push({ name, reason: "not found in Skill Store data" });
-      continue;
-    }
-    if (!skill.cleanup_candidate) {
-      refused.push({ name, reason: "not in cleanup list" });
       continue;
     }
     overrides[name] = {
