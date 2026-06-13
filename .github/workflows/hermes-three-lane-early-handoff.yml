@@ -2,9 +2,10 @@ name: WaveSight Hermes Three-Lane Early Handoff
 
 on:
   schedule:
-    # 09:45 / 09:55 Asia/Shanghai. Hermes checks Business Signals,
-    # First-Line Viewpoints, and Community Intelligence together, then
-    # dispatches missing or failed lanes and writes Codex repair handoffs.
+    # 09:30 / 09:45 / 09:55 Asia/Shanghai. Hermes checks the three lanes
+    # after their remaining primary windows: Community publish at 09:30,
+    # Business Signals at 09:45, and First-Line Viewpoints at 09:55.
+    - cron: "30 1 * * *"
     - cron: "45 1 * * *"
     - cron: "55 1 * * *"
   workflow_dispatch:

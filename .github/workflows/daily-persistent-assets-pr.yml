@@ -117,7 +117,7 @@ jobs:
             echo "- generated_at: $(date -Is)"
             echo "- mode: business_signals_pr"
             echo "- trigger: ${{ github.event_name }}"
-            echo "- schedule: 09:07 / 09:37 Asia/Shanghai daily; Hermes early handoff at 09:45 / 09:55"
+            echo "- schedule: 09:07 / 09:37 Asia/Shanghai daily; Hermes Business Signals handoff at 09:45 / 09:55"
             echo "- business_signal_skip: ${{ steps.existing-assets.outputs.skip }}"
             echo "- business_signal_skip_reason: ${{ steps.existing-assets.outputs.reason }}"
             echo "- existing_automation_branch: ${{ steps.existing-assets.outputs.branch_exists }}"

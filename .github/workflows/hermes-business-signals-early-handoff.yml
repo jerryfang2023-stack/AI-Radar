@@ -1,9 +1,9 @@
 name: WaveSight Hermes Business Signals Early Handoff
 
 on:
-  # Manual compatibility entry only. The scheduled 09:45 / 09:55 early
-  # handoff is now owned by hermes-three-lane-early-handoff.yml so the three
-  # active lanes are supervised together without duplicate Business dispatches.
+  # Manual compatibility entry only. Scheduled early handoff is now owned by
+  # hermes-three-lane-early-handoff.yml, with Business Signals takeover at
+  # 09:45 / 09:55, to avoid duplicate Business dispatches.
   workflow_dispatch:
     inputs:
       date:

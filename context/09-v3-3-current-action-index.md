@@ -78,7 +78,7 @@ Purpose:
 Primary route:
 
 - GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai.
-- Hermes early handoff: `.github/workflows/hermes-business-signals-early-handoff.yml` at 09:45 / 09:55 Asia/Shanghai when the primary windows fail or no same-date success is visible.
+- Hermes early handoff: `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 Asia/Shanghai for Business Signals when the primary windows fail or no same-date success is visible.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
 Reads:
@@ -231,7 +231,7 @@ Purpose:
 
 Primary route:
 
-- GitHub workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 / 10:17 Asia/Shanghai.
+- GitHub workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai.
 
 Reads:
 

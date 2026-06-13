@@ -17,7 +17,8 @@ const args = new Map(
 const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";
 const passScore = args.get("pass-score") || "85";
-const defaultForceAfter = args.get("force-after") || "09:45";
+const handoffSchedule = ["09:30", "09:45", "09:55"];
+const businessTakeoverAfter = args.get("business-takeover-after") || args.get("force-after") || "09:45";
 
 const lanes = [
   {
@@ -26,9 +27,11 @@ const lanes = [
     workflowFile: "daily-persistent-assets-pr.yml",
     workflowName: "WaveSight Business Signals PR",
     primaryWindow: "09:07 / 09:37",
+    primaryStart: "09:00",
+    primaryEnd: "09:45",
     failureThreshold: 2,
     maxAttempts: 3,
-    forceAfter: defaultForceAfter,
+    takeoverAfter: businessTakeoverAfter,
     dispatchInputs: () => ({ date, pass_score: passScore }),
     assetsReady: businessSignalAssetsReady,
     goodExample: "A formal Signal Card keeps a source-backed original event, an accurate title, and a first-party or reporting URL.",
@@ -40,9 +43,11 @@ const lanes = [
     workflowFile: "daily-first-line-viewpoints-pr.yml",
     workflowName: "WaveSight First-Line Viewpoints PR",
     primaryWindow: "09:17 / 09:47",
+    primaryStart: "09:00",
+    primaryEnd: "09:55",
     failureThreshold: 1,
     maxAttempts: 3,
-    forceAfter: defaultForceAfter,
+    takeoverAfter: "09:55",
     dispatchInputs: () => ({ date }),
     assetsReady: firstLineAssetsReady,
     goodExample: "Builder viewpoints publish same-date Chinese data and sync person/date Obsidian timeline files.",
@@ -53,12 +58,15 @@ const lanes = [
     label: "Community Intelligence",
     workflowFile: "daily-community-intelligence-pr.yml",
     workflowName: "WaveSight Community Intelligence PR",
-    primaryWindow: "08:45 publish check after local 08:30 collection",
+    primaryWindow: "08:30 local collection / 08:45 GitHub publish; 10:45 publish fallback",
+    primaryStart: "08:30",
+    primaryEnd: "09:30",
     failureThreshold: 1,
     maxAttempts: 3,
-    forceAfter: defaultForceAfter,
+    takeoverAfter: "09:30",
     dispatchInputs: () => ({ date }),
     assetsReady: communityAssetsReady,
+    canDispatch: (assets) => assets.localCollectionReady,
     limitation: "GitHub can verify and publish community files, but cannot run the logged-in local Chrome collector.",
     goodExample: "Local Chrome collection writes same-date items/links/errors=0, archive files exist, then GitHub publishes them.",
     badExample: "GitHub publish runs without same-date local collector output and cannot create fresh community data by itself.",
@@ -156,13 +164,13 @@ function sameDateRuns(runs) {
   return runs.filter((run) => shanghaiDate(run.createdAt) === date);
 }
 
-function primaryWindowRun(run) {
+function primaryWindowRun(run, lane = {}) {
   const minutes = shanghaiMinutes(run.createdAt);
   if (minutes === null) return false;
-  return minutes >= shanghaiMinutes("08:30") && minutes < shanghaiMinutes("09:45");
+  return minutes >= shanghaiMinutes(lane.primaryStart || "08:30") && minutes < shanghaiMinutes(lane.primaryEnd || "09:45");
 }
 
-function summarizeRuns(runs) {
+function summarizeRuns(runs, lane = {}) {
   return runs.map((run) => ({
     id: run.databaseId,
     event: run.event,
@@ -172,7 +180,7 @@ function summarizeRuns(runs) {
     updatedAt: run.updatedAt,
     url: run.url,
     displayTitle: run.displayTitle || "",
-    primaryWindow: primaryWindowRun(run),
+    primaryWindow: primaryWindowRun(run, lane),
   }));
 }
 
@@ -234,6 +242,7 @@ function communityAssetsReady() {
   const archiveFile = path.join(root, "01-SiteV2", "content", "07-community-intelligence", "daily", `${date} Community Intelligence.md`);
   return {
     ready: dataDate === date && items >= 12 && links >= 3 && errors === 0 && fs.existsSync(dailySnapshot) && fs.existsSync(archiveFile),
+    localCollectionReady: dataDate === date && items >= 12 && links >= 3 && errors === 0,
     dataDate,
     items,
     links,
@@ -257,7 +266,8 @@ function walkFiles(dir) {
 function superviseLane(lane) {
   const assets = lane.assetsReady();
   const today = shanghaiDate();
-  const forceWindowPassed = date < today || (date === today && shanghaiMinutes() >= shanghaiMinutes(lane.forceAfter));
+  const primaryWindowPassed = date < today || (date === today && shanghaiMinutes() >= shanghaiMinutes(lane.primaryEnd));
+  const takeoverWindowPassed = date < today || (date === today && shanghaiMinutes() >= shanghaiMinutes(lane.takeoverAfter));
   let runs = [];
   let ghError = "";
   try {
@@ -269,7 +279,8 @@ function superviseLane(lane) {
   const success = runs.find((run) => run.conclusion === "success") || null;
   const active = runs.find((run) => run.status === "queued" || run.status === "in_progress") || null;
   const failures = runs.filter((run) => run.status === "completed" && run.conclusion !== "success");
-  const primaryFailures = failures.filter(primaryWindowRun);
+  const primaryFailures = failures.filter((run) => primaryWindowRun(run, lane));
+  const shouldTakeOver = (primaryWindowPassed && primaryFailures.length >= lane.failureThreshold) || takeoverWindowPassed;
   let action = "wait";
   let reason = `waiting for ${lane.primaryWindow}`;
   let dispatch = null;
@@ -291,11 +302,18 @@ function superviseLane(lane) {
     action = "manual_required";
     reason = `failed attempts ${failures.length} reached max ${lane.maxAttempts}; stop looping and hand off to Codex`;
     ok = false;
-  } else if (primaryFailures.length >= lane.failureThreshold || forceWindowPassed) {
+  } else if (!shouldTakeOver) {
+    action = "wait";
+    reason = `waiting until ${lane.takeoverAfter}; primary_window=${lane.primaryWindow}`;
+  } else if (lane.canDispatch && !lane.canDispatch(assets)) {
+    action = "manual_required";
+    reason = `${lane.label} primary local output is missing or invalid; Hermes cannot replace the local collector and should hand off to Codex / human operator`;
+    ok = false;
+  } else {
     dispatch = dispatchWorkflow(lane);
     action = dryRun ? "dry_run_dispatch" : dispatch.ok ? "dispatched" : "dispatch_failed";
     reason = dispatch.ok
-      ? `Hermes triggered ${lane.label} after ${primaryFailures.length} primary-window failure(s); assets_ready=${assets.ready}`
+      ? `Hermes triggered ${lane.label} after primary scheduled monitoring was exhausted or failed; primary_failures=${primaryFailures.length}; assets_ready=${assets.ready}`
       : `Hermes failed to dispatch ${lane.label}: ${dispatch.output || "unknown error"}`;
     ok = dispatch.ok;
   }
@@ -307,18 +325,23 @@ function superviseLane(lane) {
     workflow: lane.workflowName,
     workflow_file: lane.workflowFile,
     primary_window: lane.primaryWindow,
+    primary_start: lane.primaryStart,
+    primary_end: lane.primaryEnd,
     action,
     reason,
-    force_after: lane.forceAfter,
+    takeover_after: lane.takeoverAfter,
+    primary_window_passed: primaryWindowPassed,
+    takeover_window_passed: takeoverWindowPassed,
+    should_take_over: shouldTakeOver,
     failure_threshold: lane.failureThreshold,
     max_attempts: lane.maxAttempts,
     same_date_failures: failures.length,
     primary_window_failures: primaryFailures.length,
     assets,
-    active_run: active ? summarizeRuns([active])[0] : null,
-    successful_run: success ? summarizeRuns([success])[0] : null,
-    failed_runs: summarizeRuns(failures),
-    runs: summarizeRuns(runs),
+    active_run: active ? summarizeRuns([active], lane)[0] : null,
+    successful_run: success ? summarizeRuns([success], lane)[0] : null,
+    failed_runs: summarizeRuns(failures, lane),
+    runs: summarizeRuns(runs, lane),
     dispatch_output: dispatch?.output || "",
     limitation: lane.limitation || "",
     examples: {
@@ -388,6 +411,8 @@ function writeReports(payload) {
     `- reason: ${lane.reason}`,
     `- workflow: ${lane.workflow_file}`,
     `- primary_window: ${lane.primary_window}`,
+    `- primary_end: ${lane.primary_end}`,
+    `- takeover_after: ${lane.takeover_after}`,
     `- active_run: ${lane.active_run?.url || "none"}`,
     `- successful_run: ${lane.successful_run?.url || "none"}`,
     `- same_date_failures: ${lane.same_date_failures}`,
@@ -404,13 +429,14 @@ function writeReports(payload) {
     `- generated_at: ${payload.generated_at}`,
     `- ok: ${payload.ok}`,
     `- dry_run: ${payload.dry_run}`,
-    `- schedule: 09:45 / 09:55 Asia/Shanghai`,
+    `- schedule: ${handoffSchedule.join(" / ")} Asia/Shanghai`,
     `- lanes: ${payload.lanes.map((lane) => lane.lane).join(", ")}`,
     "",
     ...laneSections,
     "## Operating Notes",
     "",
-    "- Hermes dispatches missing or failed lanes early, but does not lower quality gates or edit generated data.",
+    "- Scheduled GitHub / local lane monitors run first. Hermes takes over only after primary monitoring fails, healthy same-date output is missing after the lane's takeover window, and no same-date run is active.",
+    "- Hermes starts the relevant workflow or publish path; lane workflows push automation branches / PRs and Pages deploys after main updates. Hermes does not push directly to main.",
     "- Community Intelligence still depends on the local logged-in Chrome collector; GitHub can only publish validated local output.",
     "- Repeated failures must become Codex repair items with a report path and a prevention artifact.",
     "",
@@ -430,7 +456,7 @@ function main() {
     date,
     generated_at: new Date().toISOString(),
     dry_run: dryRun,
-    schedule: ["09:45", "09:55"],
+    schedule: handoffSchedule,
     lanes: laneResults,
   };
   const reports = writeReports(initialPayload);
