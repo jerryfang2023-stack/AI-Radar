@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-06-11
+last_updated: 2026-06-13
 use_when:
   - github automation
   - daily monitoring
@@ -75,6 +75,37 @@ Manual command:
 ```powershell
 npm run recover:daily -- --date=<YYYY-MM-DD> --lanes=business_signals,first_line_viewpoints,community_publish
 ```
+
+## Hermes Morning Recovery
+
+Workflow: `.github/workflows/hermes-morning-recovery.yml`
+
+Script: `agent-workflow/tools/run-hermes-morning-recovery.mjs`
+
+Package command:
+
+```powershell
+npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>
+```
+
+Hermes Morning Recovery runs after the primary production windows and the first recovery-watchdog slot. It is the morning supervisor fallback, not a new production lane.
+
+Execution order:
+
+1. Run `write-daily-supervision-report.mjs` for the Asia/Shanghai production date.
+2. Read the lane statuses and open Hermes inbox items from the supervision output.
+3. Select only lanes with `failed` or `manual_required` status.
+4. Dispatch bounded recovery through `dispatch-daily-recovery.mjs` for those lanes.
+5. Write `agent-workflow/reports/<date>-hermes-morning-recovery.json` and `.md`, plus latest aliases.
+6. Upload the Hermes recovery report, daily supervision report, recovery watchdog report, and Hermes inbox files as workflow artifacts.
+
+Rules:
+
+1. Hermes Morning Recovery must not lower business-signal evidence thresholds or bypass Pool / Core Pool / Card / Top10 gates.
+2. Business Signals recovery still rebuilds from current Raw / Pool / Card scripts and gates.
+3. First-Line Viewpoints recovery still uses the independent builders workflow and Obsidian timeline sync gate.
+4. Community Intelligence recovery can only publish already-collected same-date local files; it cannot run the browser collector in GitHub Actions because that requires the local Chrome profile and logged-in community sessions.
+5. If all bounded retries fail, the required output is a repair handoff: lane, failing gate/report, reason, attempted recovery action, result, and the Codex inbox file path.
 
 ## First-Line Viewpoints GitHub Chain
 
