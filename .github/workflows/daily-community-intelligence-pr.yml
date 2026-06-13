@@ -104,7 +104,7 @@ jobs:
             archive_state="present"
           fi
 
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ] && [ "$items" -ge 12 ] && [ "$links" -ge 3 ] && [ "$errors" = "0" ] && [ "$archive_state" = "present" ]; then
+          if [ "$data_date" = "$RUN_DATE" ] && [ "$items" -ge 12 ] && [ "$links" -ge 3 ] && [ "$errors" = "0" ] && [ "$archive_state" = "present" ]; then
             skip_commit=true
             reason="same-date community data and Obsidian archive already exist on main"
           fi
@@ -314,6 +314,17 @@ jobs:
           fi
 
           cat auto-merge-error.log >&2
+          if grep -Eqi "auto.?merge|Auto merge is not allowed|enablePullRequestAutoMerge" auto-merge-error.log; then
+            echo "Repository auto-merge is not available; attempting immediate merge after gates passed."
+            gh pr merge "$pr_number" \
+              --squash \
+              --delete-branch \
+              --subject "Update community intelligence for ${RUN_DATE}" \
+              --body "Automated Community Intelligence update after data gate passed."
+            echo "status=merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           if grep -Eqi "merge commits are not allowed|base branch requires|Required status check|not permitted|merge method" auto-merge-error.log; then
             echo "status=manual_required" >> "$GITHUB_OUTPUT"
             exit 0
