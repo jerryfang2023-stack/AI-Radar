@@ -20,6 +20,8 @@ metadata:
 
 This skill owns the First-Line Viewpoints lane. It supervises builders data generation, frontstage JSON, translation quality, formal tags, fallback behavior, Obsidian person/date timeline sync, and lane repair.
 
+The lane has two production routes: the morning RSS / podcast refresh that feeds `follow-builders-daily.json`, and the afternoon local `follow-builders` skill publish that emits `01-SiteV2/content/07-points/<date>-builders-viewpoints.md`.
+
 It may call the generic `follow-builders` skill for source / digest behavior, but this skill is the WaveSight lane owner.
 
 ## Required Reads
@@ -50,9 +52,10 @@ For regression prevention, read `evals/first-line-viewpoints-monitor-evals.md`. 
 4. Run or inspect `assert-follow-builders-data.mjs`.
 5. Sync same-date data into `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`.
 6. Verify sync idempotency with a second run or dry run that adds `0` entries.
-7. Stage / publish only first-line owned files through the automation PR route.
-8. Add or tighten evals before adding long prose when a failure recurs.
-9. Close Hermes inbox items only after validation and prevention are recorded.
+7. Publish the afternoon follow-builders skill output through its branch / PR route and verify the local publish report.
+8. Stage / publish only first-line owned files through the automation PR route.
+9. Add or tighten evals before adding long prose when a failure recurs.
+10. Close Hermes inbox items only after validation and prevention are recorded.
 
 ## Lane Boundaries
 

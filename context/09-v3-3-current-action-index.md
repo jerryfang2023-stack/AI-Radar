@@ -42,7 +42,8 @@ Only these actions are `current` for V3.3.6:
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
 | Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
 | Trend candidate judgment | `current` | Judge repeated same-direction signals, not trend reports. |
-| First-line viewpoints independent update | `current` | Update builders viewpoints independently from business signals. |
+| First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
+| First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
 | First-Line Viewpoints Obsidian timeline sync | `current` | Persist Builder viewpoints into person / date Obsidian timelines. |
 | Community intelligence independent update | `current` | Update logged-in community intelligence independently from business signals and builders viewpoints. |
 | Frontstage data build | `current` | Build each column's frontstage data through its owning production lane. |
@@ -223,11 +224,11 @@ Boundaries:
 - A single article, viewpoint, funding event, or tag count cannot form a trend.
 - Builders viewpoints are not evidence for trend candidates.
 
-### 7. First-Line Viewpoints Independent Update
+### 7. First-Line Viewpoints RSS Update
 
 Purpose:
 
-- Update the First-Line Viewpoints page from builders / follow-builders sources without depending on the business-signal chain.
+- Update the First-Line Viewpoints page from the morning RSS / podcast builders route without depending on the business-signal chain.
 
 Primary route:
 
@@ -257,6 +258,32 @@ Boundaries:
 - They must not enter business-signal Cards, relationship graph evidence, or trend-candidate evidence.
 - If refresh fails but previous fresh data exists, fallback may preserve the page with fallback metadata.
 - Every successful daily update must also sync same-date Builder viewpoints into the Obsidian person / date timelines and verify the sync is idempotent.
+
+### 7.1 Follow-Builders Skill Publish
+
+Purpose:
+
+- Update the First-Line Viewpoints builders digest from the afternoon local `follow-builders` skill route.
+
+Primary route:
+
+- Local Windows scheduled task: `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 13:30 Asia/Shanghai.
+
+Reads:
+
+- `agent-workflow/tools/generate-builders-viewpoints-from-follow-builders-skill.mjs`.
+- `agent-workflow/tools/publish-follow-builders-skill-local.mjs`.
+
+Outputs:
+
+- `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`.
+- `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
+
+Boundaries:
+
+- The afternoon skill publish is independent from the morning RSS route.
+- It must still publish through a branch and PR instead of pushing generated files directly to `main`.
+- Hermes records the afternoon run from the local publish report at 13:55.
 
 ### 8. Frontstage Data Build
 
@@ -328,6 +355,7 @@ Outputs:
 
 - `automation/business-signals-<date>` branch for Business Signals / Intelligence Map / Dashboard data.
 - `automation/first-line-viewpoints-<date>` branch for First-Line Viewpoints data.
+- `automation/follow-builders-skill-<date>` branch for the afternoon follow-builders skill publish.
 - `automation/community-intelligence-<date>` branch for Community Intelligence data.
 - independent column PRs.
 - merged assets on `main`.

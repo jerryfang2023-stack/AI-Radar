@@ -60,7 +60,8 @@ An existing `automation/business-signals-<date>` branch must not block a schedul
 The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current morning schedule truth is:
 
 - Business Signals primary production: 09:07 / 09:37 Asia/Shanghai.
-- First-Line Viewpoints primary production: 09:17 / 09:47 Asia/Shanghai.
+- First-Line Viewpoints RSS primary production: 09:17 / 09:47 Asia/Shanghai.
+- First-Line Viewpoints skill publish: local follow-builders skill at 13:30 Asia/Shanghai; Hermes records it at 13:55.
 - Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine, then GitHub publish at 08:45 / 10:45.
 - Hermes three-lane early handoff: 09:30 / 09:45 / 09:55 Asia/Shanghai.
 
@@ -69,13 +70,14 @@ Operational rules:
 1. The primary Business Signals schedule is only 09:07 and 09:37 Asia/Shanghai.
 2. If both Business Signals primary windows fail, or if same-date Business Signals assets are still missing / unhealthy and no run is active by 09:45 or 09:55, Hermes dispatches the Business Signals workflow.
 3. Hermes checks Community Intelligence publish at 09:30. If same-date local collector output exists but publication is missing / unhealthy and no publish run is active, Hermes dispatches the Community Intelligence GitHub publish workflow. If local output is missing, Hermes writes a local / Codex repair handoff instead of pretending GitHub can collect.
-4. Hermes checks First-Line Viewpoints at 09:55, after the remaining 09:17 / 09:47 scheduled windows. If same-date builders data / Obsidian timelines are missing and no run is active, Hermes dispatches the First-Line Viewpoints workflow.
-5. The scheduled early handoff workflow is `.github/workflows/hermes-three-lane-early-handoff.yml`; the old `.github/workflows/hermes-business-signals-early-handoff.yml` is manual compatibility only and must not be scheduled in parallel.
-6. Hermes three-lane early handoff writes `agent-workflow/reports/<date>-hermes-three-lane-early-handoff.json` and `.md`, plus latest aliases and a Codex inbox item for lanes that hit dispatch failure or bounded attempt caps.
-7. The report must include lane, cause, attempted action, dispatch result, same-date run URLs, asset checks, and one good / bad example for the failed invariant.
-8. If a lane workflow is `queued` or `in_progress`, Hermes waits for it instead of declaring missing data.
-9. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
-10. All lanes must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
+4. Hermes checks First-Line Viewpoints RSS at 09:55, after the remaining 09:17 / 09:47 scheduled windows. If same-date builders data / Obsidian timelines are missing and no run is active, Hermes dispatches the First-Line Viewpoints RSS workflow.
+5. Hermes records the afternoon follow-builders skill publish at 13:55. If the local publish report or generated builders viewpoints file is missing and no run is active, Hermes dispatches the local follow-builders skill publisher.
+6. The scheduled early handoff workflow is `.github/workflows/hermes-three-lane-early-handoff.yml`; the old `.github/workflows/hermes-business-signals-early-handoff.yml` is manual compatibility only and must not be scheduled in parallel.
+7. Hermes three-lane early handoff writes `agent-workflow/reports/<date>-hermes-three-lane-early-handoff.json` and `.md`, plus latest aliases and a Codex inbox item for lanes that hit dispatch failure or bounded attempt caps.
+8. The report must include lane, cause, attempted action, dispatch result, same-date run URLs, asset checks, and one good / bad example for the failed invariant.
+9. If a lane workflow is `queued` or `in_progress`, Hermes waits for it instead of declaring missing data.
+10. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
+11. All lanes must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
 11. A high-quality Business Signals run blocked only by `raw_count_min` can enter manual recovery, but recovery must rebuild Cards and site data after restoring Raw / Pool. Do not copy stale pre-card site data from artifacts.
 12. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
 13. Community Intelligence cannot be collected inside GitHub Actions because it depends on the local Chrome profile and logged-in community sessions. Hermes may dispatch the GitHub publish workflow, but missing local collector output remains a local / Codex repair handoff.
@@ -140,7 +142,7 @@ Rules:
 5. Community Intelligence recovery can only publish already-collected same-date local files; it cannot run the browser collector in GitHub Actions because that requires the local Chrome profile and logged-in community sessions.
 6. If all bounded retries fail, the required output is a repair handoff: lane, failing gate/report, reason, attempted recovery action, result, and the Codex inbox file path.
 
-## First-Line Viewpoints GitHub Chain
+## First-Line Viewpoints RSS Chain
 
 Workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml`
 
@@ -159,13 +161,32 @@ Execution order:
 
 This workflow must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
 
+## First-Line Viewpoints Skill Chain
+
+Workflow:
+
+- Local Windows scheduled task: `agent-workflow/tools/install-follow-builders-skill-task.ps1`.
+
+Execution order:
+
+1. Resolve the Beijing date.
+2. Run the local `follow-builders` skill publisher.
+3. Generate `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`.
+4. Record the local publish report at `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
+5. Commit and push the publish branch through `automation/follow-builders-skill-<date>`.
+6. Create or update the PR.
+7. Auto-merge or enable auto-merge after the skill publish pass.
+8. Hermes records the run at 13:55 from the local publish report.
+
+This skill lane does not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data, and it stays independent from the morning RSS route.
+
 ## Monitoring Lane Ownership
 
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
 | Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai; `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 for this lane | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
-| First-Line Viewpoints | GitHub Actions + `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md`, with local fallback available | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai; Hermes three-lane early handoff at 09:55 for this lane | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency | independent automation PR to `main` after builders gate and Obsidian timeline sync pass |
+| First-Line Viewpoints | GitHub Actions morning RSS lane + local afternoon follow-builders skill lane | `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai for RSS; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 13:30 Asia/Shanghai for the skill publish; Hermes records the skill lane at 13:55 | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS; local publish report and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
 | Community Intelligence | Local Windows scheduled task / Codex local run + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | local collection at 08:30 Asia/Shanghai; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 10:45 for publication; Hermes three-lane early handoff at 09:30 / 09:45 / 09:55 for publish supervision | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
 
 The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.
@@ -295,6 +316,8 @@ Hermes should treat local collection success without the community publish workf
 If the follow-builders refresh fails but a previous generated `follow-builders-daily.json` exists, the builder keeps the previous data and records `fallbackUsed=true` in `meta`. This prevents the independent First-Line Viewpoints page from failing only because a feed endpoint is temporarily unavailable.
 
 This lets both local runs and GitHub runners build the First-Line Viewpoints page.
+
+The afternoon follow-builders skill route writes its own knowledge output to `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md` and records the run in `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
 
 `01-SiteV2/knowledge/02-Opinion-Timelines/` is the current Obsidian reading view for this lane. It must be generated from `follow-builders-daily.json` with original remark dates, person / date files such as `people/<person>/2026-06-11.md`, and URL / id dedupe:
 

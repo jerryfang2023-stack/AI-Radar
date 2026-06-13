@@ -458,6 +458,52 @@ function buildFirstLineLane() {
   };
 }
 
+function buildFollowBuildersSkillLane() {
+  const problems = [];
+  const warnings = [];
+  const evidence = {};
+  const actions = [];
+  const outputFile = path.join(root, "01-SiteV2", "content", "07-points", `${date}-builders-viewpoints.md`);
+  const reportFile = path.join(reportsDir, `${date}-follow-builders-skill-local-publish.md`);
+  const outputText = readText(outputFile);
+  const reportText = readText(reportFile);
+  const itemCount = (outputText.match(/^## BP-\d{8}-\d{2}\b/mgu) || []).length;
+  const reportCount = Number((reportText.match(/^- builder_items_count:\s*(\d+)/mu) || [])[1] || 0);
+
+  evidence.outputFile = exists(outputFile) ? rel(outputFile) : "missing";
+  evidence.reportFile = exists(reportFile) ? rel(reportFile) : "missing";
+  evidence.itemCount = itemCount;
+  evidence.reportCount = reportCount;
+
+  if (!exists(outputFile)) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
+  if (itemCount <= 0) addProblem(problems, `follow-builders skill output item count ${itemCount} below 1`);
+  if (exists(reportFile) && reportCount > 0 && reportCount !== itemCount) {
+    addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
+  }
+  if (!exists(reportFile) && hasWindowPassed(date, "13:55")) {
+    addProblem(problems, "no same-date follow-builders skill publish report after 13:55 watchdog", "manual_required");
+    actions.push("run `powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1` locally");
+  }
+  if (hasWindowPassed(date, "13:55") && !exists(reportFile)) {
+    warnings.push("follow-builders skill publish report is missing before Hermes record time");
+  }
+
+  if (problems.length) {
+    actions.push("send Codex a follow_builders_skill repair request with publish report path");
+  }
+
+  return {
+    id: "follow_builders_skill",
+    label: "First-Line Viewpoints Skill",
+    schedule: "13:30 local follow-builders skill publish; Hermes record 13:55; report review 14:15",
+    status: laneStatus(problems, warnings),
+    evidence,
+    problems,
+    warnings,
+    actions: [...new Set(actions)],
+  };
+}
+
 function buildCommunityLane() {
   const problems = [];
   const warnings = [];
@@ -736,6 +782,7 @@ function main() {
     buildCommunityLane(),
     buildBusinessSignalsLane(),
     buildFirstLineLane(),
+    buildFollowBuildersSkillLane(),
   ];
   const status = aggregateStatus(lanes);
   const payload = {
