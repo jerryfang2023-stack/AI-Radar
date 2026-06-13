@@ -1,6 +1,6 @@
 {
   "schema_version": "v3.3.1-monitor-quality-gate-1.0",
-  "updated_at": "2026-06-07",
+  "updated_at": "2026-06-13",
   "owner": "Intelligence Engine Agent / Build & Release Agent",
   "purpose": "V3.3.1 script pre-gate for WaveSight Raw / Pool / Core Pool readiness before Signal Card assets and frontstage release. It checks evidence usability, Pool balance, large-company concentration, and business-signal coverage for the current Card-first pipeline.",
   "diagnostic_score_reference": 85,
@@ -157,16 +157,17 @@
       "search_limit_step": 15,
       "search_path_query_limit_step": 1,
       "gdelt_query_limit_step": 2,
-      "hn_limit_step": 3,
+      "hn_limit_step": 0,
       "search_limit_max": 220,
       "search_path_query_limit_max": 5,
       "gdelt_query_limit_max": 15,
-      "hn_limit_max": 20
+      "hn_limit_max": 8
   },
   "layered_search_requirements": {
     "six_importance_lanes_required_for_raw": true,
     "core_pool_force_fill_for_empty_lane": false,
     "core_pool_max_per_importance_type": 8,
+    "pool_selection_buffer": 20,
     "generic_search_discovery_only": true,
     "bing_or_generic_search_core_requires_original_evidence_chain": true,
     "required_evidence_chain": [

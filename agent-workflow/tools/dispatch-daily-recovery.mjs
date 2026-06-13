@@ -18,7 +18,7 @@ const WORKFLOWS = {
     workflow: "daily-persistent-assets-pr.yml",
     workflowName: "WaveSight Business Signals PR",
     maxAttempts: 4,
-    dispatchArgs: (date) => ["-f", `date=${date}`, "-f", "pass_score=80"],
+    dispatchArgs: (date) => ["-f", `date=${date}`, "-f", "pass_score=85"],
   },
   first_line_viewpoints: {
     label: "First-Line Viewpoints",

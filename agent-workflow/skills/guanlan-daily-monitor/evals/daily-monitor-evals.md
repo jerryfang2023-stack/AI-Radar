@@ -32,6 +32,11 @@ Run these pass/fail checks when running, repairing, or updating the current Wave
    - Pass when startup or monitor-stage failures in the 09:07 / 09:37 Business Signals windows are handed to Hermes early handoff before 10:00 with run URLs, failure count, dispatch action, and a Codex repair inbox item when bounded recovery cannot proceed.
    - Fail when monitor startup failures are handled only by repeated late schedule windows without a dated Hermes report or skill eval / example prevention artifact.
 
+10. `monitor_parameter_alignment`
+    - Pass when Business Signals PR, production-chain dry run, Hermes recovery dispatch, and manual skill examples share the same production monitor baseline: diagnostic reference `85`, `search-limit=200`, `search-path-query-limit=5`, `gdelt-query-limit=12`, `hn-limit=8`, `fetch-timeout-ms=20000`, `snapshot-timeout-ms=16000`, and `monitor-timeout-ms=840000`.
+    - Pass when HN remains feedback-only and is not expanded as the primary fix for routed Pool / Core Pool shortages.
+    - Fail when dry-run or skill examples keep lightweight historical parameters such as `search-limit=30`, `search-path-query-limit=1`, `gdelt-query-limit=4`, `hn-limit=20`, or diagnostic `pass-score=80`.
+
 ## Repair Loop
 
 When a check fails, repair Raw capture, Pool routing, configuration, or monitor log output before downstream Signal Card generation. Do not lower gates to make a run appear complete.

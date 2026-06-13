@@ -140,6 +140,7 @@ const corePoolMinTarget = numericConfig(monitorHardGates.core_pool_min, 30);
 const coreNonLargeVendorMinTarget = numericConfig(monitorHardGates.core_non_large_vendor_min, 20);
 const coreLargeVendorMaxTarget = numericConfig(monitorHardGates.core_large_vendor_max, 10);
 const corePoolMaxPerImportanceType = numericConfig(layeredSearchRequirements.core_pool_max_per_importance_type, 8);
+const poolSelectionBufferTarget = numericConfig(layeredSearchRequirements.pool_selection_buffer, 20);
 
 let historicalRawIndexCache = null;
 let historicalDedupePreFetchRemoved = 0;
@@ -3614,7 +3615,10 @@ function selectMonitorPoolItems(items) {
 
   const poolTarget = Math.min(
     items.length,
-    Math.max(poolMinTarget, routedPoolMinTarget + metas.filter((meta) => isAIHotDailySelected(meta.item)).length)
+    Math.max(
+      poolMinTarget + poolSelectionBufferTarget,
+      routedPoolMinTarget + Math.max(poolSelectionBufferTarget, metas.filter((meta) => isAIHotDailySelected(meta.item)).length)
+    )
   );
   const sorted = [...metas].sort((a, b) => b.sortScore - a.sortScore || a.key.localeCompare(b.key));
 
@@ -3728,6 +3732,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `source_registry_config: ${rel(sourceRegistryPath)}`,
     `pool_target: ${poolMinTarget}`,
+    `pool_selection_buffer: ${poolSelectionBufferTarget}`,
     `routed_pool_target: ${routedPoolMinTarget}`,
     `core_pool_target: ${corePoolMinTarget}`,
     `core_non_large_vendor_target: ${coreNonLargeVendorMinTarget}`,
@@ -4127,6 +4132,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `- pool_index_route_distribution: ${distributionText(byPoolIndexRoute)}`,
     `- pool_index_count: ${poolItems.length}`,
     `- pool_target: ${poolMinTarget}`,
+    `- pool_selection_buffer: ${poolSelectionBufferTarget}`,
     `- routed_pool_count: ${routedPoolCount}`,
     `- routed_pool_target: ${routedPoolMinTarget}`,
     `- core_pool_target: ${corePoolMinTarget}`,
@@ -4239,6 +4245,7 @@ async function main() {
         status: items.length >= 50 ? "collected" : "severe-fallback",
         raw_count: items.length,
         pool_target: poolMinTarget,
+        pool_selection_buffer: poolSelectionBufferTarget,
         routed_pool_target: routedPoolMinTarget,
         core_pool_target: corePoolMinTarget,
         core_non_large_vendor_target: coreNonLargeVendorMinTarget,

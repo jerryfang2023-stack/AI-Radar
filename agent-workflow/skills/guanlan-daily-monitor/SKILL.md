@@ -11,7 +11,7 @@ metadata:
     upstream: "external monitoring sources"
     downstream: "Raw / Pool outputs and daily reports"
     gates: "source capture, pool thresholds, quality gating"
-    recent_learning: "Keep V3.3.5 thresholds aligned with current context; do not revive old Raw 80-150 / Pool 20-40 targets."
+    recent_learning: "Keep workflow, dry-run, and manual monitor parameters aligned with V3.3.5 thresholds; Core Pool failures usually need better source routing, not more HN."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -50,12 +50,12 @@ Produce the Business Signals monitoring base:
 Run the current monitor + pre-gate loop from the project root:
 
 ```powershell
-node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=80 --max-cycles=3 --search-limit=30 --search-path-query-limit=1 --gdelt-query-limit=4 --hn-limit=20 --fetch-timeout-ms=10000 --snapshot-timeout-ms=8000
+node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=3 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=840000
 ```
 
 Use the Asia/Shanghai date unless the user gives another date.
 
-The script pre-gate threshold `80` is only a retry trigger. It is not final downstream permission. Final permission comes from `guanlan-daily-monitor-qc`.
+The script `--pass-score` is a diagnostic score reference only. It is not final downstream permission and does not override hard gates. Final permission comes from hard gates plus `guanlan-daily-monitor-qc`.
 
 ## Release Gate
 

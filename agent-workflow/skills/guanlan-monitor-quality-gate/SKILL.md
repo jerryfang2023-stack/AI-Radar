@@ -67,7 +67,7 @@ For standalone debugging or threshold changes, read only the specific file neede
 
 - Daily monitor rule conflict: `context/05-daily-monitoring.md`
 - Final QC handoff conflict: `C:\Users\86186\.skill-store\guanlan-daily-monitor-qc\SKILL.md`
-- Script threshold or scoring conflict: `01-SiteV2/content/09-databases/monitor-quality-gate-v2.json`
+- Script threshold or scoring conflict: `01-SiteV2/content/11-databases/monitor-quality-gate-v2.json`
 - Script implementation bug: `agent-workflow/tools/guanlan-monitor-quality-gate.mjs`
 - Retry wrapper bug: `agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`
 - Score explanation conflict: `C:\Users\86186\.skill-store\guanlan-monitor-quality-gate\references\scorecard.md`
@@ -81,7 +81,7 @@ Do not read the JSON or scripts during normal human startup. Scripts read config
 Run from the project root:
 
 ```powershell
-node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=80 --max-cycles=3 --search-limit=30 --search-path-query-limit=1 --gdelt-query-limit=4 --hn-limit=20 --fetch-timeout-ms=10000 --snapshot-timeout-ms=8000
+node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=3 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=840000
 ```
 
 Use Asia/Shanghai date unless the user specifies another date.
@@ -93,7 +93,7 @@ The script loop enforces:
 - at most 3 monitor/retry cycles;
 - final failure sets `manual_intervention_required=true`.
 
-The default script threshold can remain `80` as a retry trigger. It is not the final quality pass. The stricter QC pass is `>= 85` with no P0 blocker in `guanlan-daily-monitor-qc`.
+The script `--pass-score` is a diagnostic reference, not a release gate. Hard thresholds decide the automated pre-gate, and the stricter downstream decision still belongs to `guanlan-daily-monitor-qc`.
 
 ## Current Monitoring Model
 

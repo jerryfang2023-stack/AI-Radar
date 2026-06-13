@@ -1,6 +1,6 @@
 ﻿# Progress｜当前进度
 
-更新时间：2026-05-24
+更新时间：2026-06-13
 状态：current / V2.2 compact
 
 本文件只保留当前可继承状态。流水账、过程报告、截图记录和无效任务记录不再作为新窗口上下文。
@@ -32,7 +32,7 @@
 手动触发命令：
 
 ```powershell
-node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=80 --max-cycles=3 --search-limit=70 --search-path-query-limit=2 --gdelt-query-limit=8 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000
+node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=3 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=840000
 node agent-workflow/tools/assert-guanlan-automation-readiness.mjs --command=assets --date=<YYYY-MM-DD>
 ```
 
