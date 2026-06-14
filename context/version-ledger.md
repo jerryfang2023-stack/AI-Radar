@@ -18,11 +18,11 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.6.1-automation-timeline-skill-alignment |
-| Version name | Automation Timeline And Monitor Skill Alignment |
+| Current version | V3.3.6.2-hermes-staged-handoff |
+| Version name | Hermes Staged Handoff Consolidation |
 | Version layer | Patch |
 | Release date | 2026-06-14 |
-| Last modified at | 2026-06-14T19:45:00+08:00 |
+| Last modified at | 2026-06-14T20:10:00+08:00 |
 | Product version | V3.3 |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
 | Git tag | not tagged |
@@ -41,6 +41,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - First-Line Viewpoints persists local Obsidian timelines as person / date files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
 - Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, and generic funding lists from formal Card promotion unless they are recaptured through dated source-backed event pages.
 - Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30 after the 08:30 Windows collector, 08:45 publish check, and 09:00 Codex local fallback / repair window; First-Line Viewpoints RSS at 09:30 after the 08:30 local `builder-observation-daily-sync` collection/build/sync attempt and single 09:17 GitHub fallback; and Business Signals at 09:45 / 09:55. Hermes also records the afternoon follow-builders skill publish at 16:30.
+- Hermes early handoff is staged: 09:30 may dispatch Community publish and First-Line RSS while Business waits; 09:45 may dispatch Business while Community / First-Line only recheck; 09:55 is final review only and cannot start a new routine dispatch.
 - Intelligence Map and Dashboard follow the Business Signals data chain.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
@@ -110,6 +111,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `V3.3.6.2-freeze-hermes-staged-handoff-20260614` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-14 | 2026-06-14T20:10:00+08:00 | V3.3.6.2-hermes-staged-handoff | 09:55 starting a new routine dispatch; Community or First-Line being re-dispatched at 09:45 after their 09:30 handoff window; Business being judged as failed at 09:30 while 09:27 health dispatch may still be queued or running; second routine morning recovery pass returning after 10:55 | three-lane handoff syntax + staged dry-run checks + no second recovery cron |
 | `V3.3.6.1-freeze-automation-timeline-skill-alignment-20260614` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-14 | 2026-06-14T19:45:00+08:00 | V3.3.6.1-automation-timeline-skill-alignment | Business Signals reverting to blind 09:07 / 09:37 production windows; First-Line Viewpoints reverting to 09:47 / 09:55 RSS fallback language; Community Intelligence docs saying Codex automation is paused while the local automation is active at 09:00; Hermes treating GitHub Actions as able to run the logged-in community collector; lane failures blocking unrelated lanes | workflow cron syntax + `npm run supervise:daily -- --date=<DATE>` + monitor skill timing review |
 | `V3.3.6-freeze-business-title-hermes-handoff-20260613` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-13 | 2026-06-13T16:00:31+08:00 | V3.3.6-business-title-hermes-handoff | Top10 titles using source-domain placeholders such as `linkedin financing`, `github original title`, or `purpose see original`; public Core Pool candidate duplicates for the same event; social/community, repo/catalog, package/model, marketplace, or generic list sources promoted directly to formal Business Signal Cards; Business-only Hermes early handoff scheduled in parallel with three-lane handoff | title/candidate data assertion + Card promotion gate syntax + three-lane Hermes workflow syntax + Skill Ops + GitHub Pages deploy |
 | `V3.3.5-freeze-builder-obsidian-date-timelines-20260611` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-11 | 2026-06-11T19:12:07+08:00 | V3.3.5-builder-obsidian-date-timelines | Builder Obsidian sync writing multiple days into one month file; old `YYYY-MM.md` timeline files returning; First-Line Viewpoints daily PRs skipping Obsidian persistence; main frontstage pages carrying stale V3.3.2.1 meta versions | `node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` + same-day dry-run sync + month-file absence check + builders syntax gates + GitHub Pages deploy |
@@ -130,7 +132,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| V3.3.6.1-automation-timeline-skill-alignment | 2026-06-14T19:45:00+08:00 | Aligns Business Signals, First-Line Viewpoints, and Community Intelligence timing across workflow cron, local Windows tasks, Codex automations, monitor skills, and Hermes instructions. Business runs 08:57 plus 09:27 conditional health dispatch; First-Line runs 08:30 local RSS, 09:17 GitHub fallback, and 16:10 local skill publish; Community runs 08:30 Windows collection, 09:00 Codex local fallback / repair window, 08:45 / 10:45 GitHub publish, and 09:30 / 09:45 / 09:55 Hermes publish supervision. | current |
+| V3.3.6.2-hermes-staged-handoff | 2026-06-14T20:10:00+08:00 | Implements staged Hermes handoff behavior: 09:30 can dispatch Community publish and First-Line RSS while Business waits; 09:45 can dispatch Business and only rechecks the other lanes; 09:55 is final review only and cannot start a new routine dispatch. Removes the second routine morning recovery pass after 10:55. | current |
+| V3.3.6.1-automation-timeline-skill-alignment | 2026-06-14T19:45:00+08:00 | Aligns Business Signals, First-Line Viewpoints, and Community Intelligence timing across workflow cron, local Windows tasks, Codex automations, monitor skills, and Hermes instructions. Business runs 08:57 plus 09:27 conditional health dispatch; First-Line runs 08:30 local RSS, 09:17 GitHub fallback, and 16:10 local skill publish; Community runs 08:30 Windows collection, 09:00 Codex local fallback / repair window, 08:45 / 10:45 GitHub publish, and 09:30 / 09:45 / 09:55 Hermes publish supervision. | upgraded |
 | V3.3.6-business-title-hermes-handoff | 2026-06-13T17:34:22+08:00 | Fixes Business Signals public title and Core Pool candidate dedupe failures, splits First-Line Viewpoints into morning RSS and afternoon follow-builders skill routes, and makes Hermes supervise the three active lanes while recording the afternoon skill publish | upgraded |
 | V3.3.5-builder-obsidian-date-timelines | 2026-06-11T19:12:07+08:00 | Converts First-Line Viewpoints Obsidian persistence from month files to person / date timeline files, adds the sync step to daily Builder automation, and aligns main frontstage version metadata | upgraded |
 | V3.3.4-independent-lane-publication | 2026-06-10T13:40:44+08:00 | Completes independent lane publication by adding the Community Intelligence PR workflow, extending daily supervision to watch the community publish lane, fixing Actions PR permissions, and preventing same-day reruns from reusing merged PRs | upgraded |

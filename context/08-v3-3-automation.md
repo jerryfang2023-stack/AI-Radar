@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# V3.3.6.1 Automation Loop
+# V3.3.6.2 Automation Loop
 
-V3.3.6.1 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals enforces public title / candidate dedupe gates, Community Intelligence uses local logged-in collection before GitHub publication, and Hermes supervises all three active lanes at 09:30 / 09:45 / 09:55.
+V3.3.6.2 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals enforces public title / candidate dedupe gates, Community Intelligence uses local logged-in collection before GitHub publication, and Hermes supervises all three active lanes with staged handoff at 09:30 / 09:45 / 09:55.
 
 ## Business Signals GitHub Chain
 
@@ -65,25 +65,27 @@ The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. I
 - First-Line Viewpoints RSS primary production: 08:30 local Codex `builder-observation-daily-sync` for RSS collection, page-data build, and Obsidian sync; 09:17 GitHub fallback.
 - First-Line Viewpoints skill publish: local follow-builders skill at 16:10 Asia/Shanghai; Hermes records it at 16:30.
 - Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine via Windows task `WaveSight Community Intelligence Daily`; Codex automation `community-intelligence-daily-local` runs at about 09:00 Asia/Shanghai as a local fallback / repair window and should first check whether same-date community data, archive, and gate are already healthy before recollecting. GitHub publish runs at 08:45 / 10:45 and can only publish already-collected data.
-- Hermes three-lane early handoff: 09:30 / 09:45 / 09:55 Asia/Shanghai.
+- Hermes three-lane early handoff: 09:30 / 09:45 / 09:55 Asia/Shanghai, staged by lane. 09:30 may dispatch Community publish and First-Line RSS while Business waits; 09:45 may dispatch Business while Community / First-Line only recheck; 09:55 is final review only and must not start a new routine dispatch.
 
 Operational rules:
 
 1. The primary Business Signals production schedule is 08:57 Asia/Shanghai.
 2. The 09:27 Business Signals health dispatch checks same-date data and active/successful runs before dispatching. It must wait when a same-date workflow is queued or in progress.
-3. If Business Signals primary production / health dispatch fails, or if same-date Business Signals assets are still missing / unhealthy and no run is active by 09:45 or 09:55, Hermes dispatches the Business Signals workflow.
-3. Hermes checks Community Intelligence publish at 09:30. If same-date local collector output exists but publication is missing / unhealthy and no publish run is active, Hermes dispatches the Community Intelligence GitHub publish workflow. If local output is missing, Hermes writes a local / Codex repair handoff instead of pretending GitHub can collect.
-4. Hermes checks First-Line Viewpoints RSS at 09:30, after the 08:30 local Codex collection/build/sync attempt and the single 09:17 GitHub fallback window. If the 09:17 fallback failed, same-date builders data / Obsidian timelines are missing, and no run is active, Hermes dispatches the First-Line Viewpoints RSS workflow.
-5. Hermes records the afternoon follow-builders skill publish at 16:30. If the local publish report or generated builders viewpoints file is missing and no run is active, Hermes dispatches the local follow-builders skill publisher.
-6. The scheduled early handoff workflow is `.github/workflows/hermes-three-lane-early-handoff.yml`; the old `.github/workflows/hermes-business-signals-early-handoff.yml` is manual compatibility only and must not be scheduled in parallel.
-7. Hermes three-lane early handoff writes `agent-workflow/reports/<date>-hermes-three-lane-early-handoff.json` and `.md`, plus latest aliases and a Codex inbox item for lanes that hit dispatch failure or bounded attempt caps.
-8. The report must include lane, cause, attempted action, dispatch result, same-date run URLs, asset checks, and one good / bad example for the failed invariant.
-9. If a lane workflow is `queued` or `in_progress`, Hermes waits for it instead of declaring missing data.
-10. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
-11. All lanes must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
-11. A high-quality Business Signals run blocked only by `raw_count_min` can enter manual recovery, but recovery must rebuild Cards and site data after restoring Raw / Pool. Do not copy stale pre-card site data from artifacts.
-12. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
-13. Community Intelligence cannot be collected inside GitHub Actions because it depends on the local Chrome profile and logged-in community sessions. Hermes may dispatch the GitHub publish workflow, but missing local collector output remains a local / Codex repair handoff.
+3. At 09:30, Business Signals is waiting-only because the 09:27 health dispatch may still be queued or running.
+4. At 09:45, if Business Signals primary production / health dispatch fails, or if same-date Business Signals assets are still missing / unhealthy and no run is active, Hermes dispatches the Business Signals workflow.
+5. At 09:30, Hermes checks Community Intelligence publish. If same-date local collector output exists but publication is missing / unhealthy and no publish run is active, Hermes dispatches the Community Intelligence GitHub publish workflow. If local output is missing, Hermes writes a local / Codex repair handoff instead of pretending GitHub can collect. At 09:45 / 09:55, Hermes only rechecks queued / in-progress / failed / manual states for this lane.
+6. At 09:30, Hermes checks First-Line Viewpoints RSS after the 08:30 local Codex collection/build/sync attempt and the single 09:17 GitHub fallback window. If the 09:17 fallback failed, same-date builders data / Obsidian timelines are missing, and no run is active, Hermes dispatches the First-Line Viewpoints RSS workflow. At 09:45 / 09:55, Hermes only rechecks queued / in-progress / failed / manual states for this lane.
+7. At 09:55, Hermes performs final review only: wait for active runs, record dispatch failures, or mark `manual_required`; do not start a new routine dispatch.
+8. Hermes records the afternoon follow-builders skill publish at 16:30. If the local publish report or generated builders viewpoints file is missing and no run is active, Hermes dispatches the local follow-builders skill publisher.
+9. The scheduled early handoff workflow is `.github/workflows/hermes-three-lane-early-handoff.yml`; the old `.github/workflows/hermes-business-signals-early-handoff.yml` is manual compatibility only and must not be scheduled in parallel.
+10. Hermes three-lane early handoff writes `agent-workflow/reports/<date>-hermes-three-lane-early-handoff.json` and `.md`, plus latest aliases and a Codex inbox item for lanes that hit dispatch failure or bounded attempt caps.
+11. The report must include lane, cause, attempted action, dispatch result, same-date run URLs, asset checks, and one good / bad example for the failed invariant.
+12. If a lane workflow is `queued` or `in_progress`, Hermes waits for it instead of declaring missing data.
+13. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
+14. All lanes must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
+15. A high-quality Business Signals run blocked only by `raw_count_min` can enter manual recovery, but recovery must rebuild Cards and site data after restoring Raw / Pool. Do not copy stale pre-card site data from artifacts.
+16. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
+17. Community Intelligence cannot be collected inside GitHub Actions because it depends on the local Chrome profile and logged-in community sessions. Hermes may dispatch the GitHub publish workflow, but missing local collector output remains a local / Codex repair handoff.
 
 Manual command:
 

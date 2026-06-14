@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.6.1 automation timeline and monitor skill alignment.
+WaveSight AI is now in V3.3.6.2 Hermes staged handoff consolidation.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now in V3.3.6.1 automation timeline and monitor skill alignment.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.6.1 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, and aligns the Business Signals, First-Line Viewpoints, and Community Intelligence timing / monitor skill ownership before 10:00.
+- V3.3.6.2 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, and makes Hermes early handoff staged before 10:00: 09:30 dispatches only Community / First-Line when needed, 09:45 dispatches Business when needed, and 09:55 performs final review only.
 
 ## Current Entries
 

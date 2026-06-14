@@ -18,6 +18,7 @@ const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";
 const passScore = args.get("pass-score") || "85";
 const handoffSchedule = ["09:30", "09:45", "09:55"];
+const handoffStage = args.get("handoff-stage") || args.get("slot") || currentHandoffStage();
 const businessTakeoverAfter = args.get("business-takeover-after") || args.get("force-after") || "09:45";
 
 const lanes = [
@@ -32,6 +33,7 @@ const lanes = [
     failureThreshold: 1,
     maxAttempts: 3,
     takeoverAfter: businessTakeoverAfter,
+    dispatchStages: ["09:45"],
     dispatchInputs: () => ({ date, pass_score: passScore }),
     assetsReady: businessSignalAssetsReady,
     goodExample: "A formal Signal Card keeps a source-backed original event, an accurate title, and a first-party or reporting URL.",
@@ -48,6 +50,7 @@ const lanes = [
     failureThreshold: 1,
     maxAttempts: 3,
     takeoverAfter: "09:30",
+    dispatchStages: ["09:30"],
     dispatchInputs: () => ({ date }),
     assetsReady: firstLineAssetsReady,
     goodExample: "Builder viewpoints publish same-date Chinese data and sync person/date Obsidian timeline files.",
@@ -64,6 +67,7 @@ const lanes = [
     failureThreshold: 1,
     maxAttempts: 3,
     takeoverAfter: "09:30",
+    dispatchStages: ["09:30"],
     dispatchInputs: () => ({ date }),
     assetsReady: communityAssetsReady,
     canDispatch: (assets) => assets.localCollectionReady,
@@ -115,6 +119,14 @@ function shanghaiMinutes(value = new Date()) {
     hour12: false,
   }).format(dateValue).split(":").map(Number);
   return hour * 60 + minute;
+}
+
+function currentHandoffStage(value = new Date()) {
+  const minutes = shanghaiMinutes(value);
+  if (minutes === null) return "09:55";
+  if (minutes < shanghaiMinutes("09:45")) return "09:30";
+  if (minutes < shanghaiMinutes("09:55")) return "09:45";
+  return "09:55";
 }
 
 function rel(file) {
@@ -281,6 +293,7 @@ function superviseLane(lane) {
   const failures = runs.filter((run) => run.status === "completed" && run.conclusion !== "success");
   const primaryFailures = failures.filter((run) => primaryWindowRun(run, lane));
   const shouldTakeOver = (primaryWindowPassed && primaryFailures.length >= lane.failureThreshold) || takeoverWindowPassed;
+  const dispatchAllowed = (lane.dispatchStages || []).includes(handoffStage);
   let action = "wait";
   let reason = `waiting for ${lane.primaryWindow}`;
   let dispatch = null;
@@ -296,7 +309,7 @@ function superviseLane(lane) {
       ? "same-date lane assets are already healthy"
       : `same-date successful workflow already exists: ${success.url}`;
   } else if (active) {
-    action = "skipped";
+    action = "waiting";
     reason = `same-date workflow is already ${active.status}: ${active.url}`;
   } else if (failures.length >= lane.maxAttempts) {
     action = "manual_required";
@@ -305,6 +318,14 @@ function superviseLane(lane) {
   } else if (!shouldTakeOver) {
     action = "wait";
     reason = `waiting until ${lane.takeoverAfter}; primary_window=${lane.primaryWindow}`;
+  } else if (failures.length > 0 && !dispatchAllowed) {
+    action = "dispatch_failed";
+    reason = `${lane.label} recheck found a failed same-date workflow after its dispatch window; stop reruns and hand off to Codex`;
+    ok = false;
+  } else if (!dispatchAllowed) {
+    action = "manual_required";
+    reason = `${lane.label} ${handoffStage} is a recheck/final-review stage, not a new dispatch stage; no healthy assets, success, or active run is visible`;
+    ok = false;
   } else if (lane.canDispatch && !lane.canDispatch(assets)) {
     action = "manual_required";
     reason = `${lane.label} primary local output is missing or invalid; Hermes cannot replace the local collector and should hand off to Codex / human operator`;
@@ -329,7 +350,9 @@ function superviseLane(lane) {
     primary_end: lane.primaryEnd,
     action,
     reason,
+    handoff_stage: handoffStage,
     takeover_after: lane.takeoverAfter,
+    dispatch_allowed: dispatchAllowed,
     primary_window_passed: primaryWindowPassed,
     takeover_window_passed: takeoverWindowPassed,
     should_take_over: shouldTakeOver,
@@ -412,7 +435,9 @@ function writeReports(payload) {
     `- workflow: ${lane.workflow_file}`,
     `- primary_window: ${lane.primary_window}`,
     `- primary_end: ${lane.primary_end}`,
+    `- handoff_stage: ${lane.handoff_stage}`,
     `- takeover_after: ${lane.takeover_after}`,
+    `- dispatch_allowed: ${lane.dispatch_allowed}`,
     `- active_run: ${lane.active_run?.url || "none"}`,
     `- successful_run: ${lane.successful_run?.url || "none"}`,
     `- same_date_failures: ${lane.same_date_failures}`,
@@ -430,12 +455,16 @@ function writeReports(payload) {
     `- ok: ${payload.ok}`,
     `- dry_run: ${payload.dry_run}`,
     `- schedule: ${handoffSchedule.join(" / ")} Asia/Shanghai`,
+    `- handoff_stage: ${payload.handoff_stage}`,
     `- lanes: ${payload.lanes.map((lane) => lane.lane).join(", ")}`,
     "",
     ...laneSections,
     "## Operating Notes",
     "",
     "- Scheduled GitHub / local lane monitors run first. Hermes takes over only after primary monitoring fails, healthy same-date output is missing after the lane's takeover window, and no same-date run is active.",
+    "- 09:30 can dispatch Community Intelligence publish and First-Line Viewpoints RSS; Business Signals waits.",
+    "- 09:45 can dispatch Business Signals and only rechecks Community / First-Line state.",
+    "- 09:55 is final review only: wait for active runs, record dispatch failures, or mark manual_required. It must not start a new routine dispatch.",
     "- Hermes starts the relevant workflow or publish path; lane workflows push automation branches / PRs and Pages deploys after main updates. Hermes does not push directly to main.",
     "- Community Intelligence still depends on the local logged-in Chrome collector; GitHub can only publish validated local output.",
     "- Repeated failures must become Codex repair items with a report path and a prevention artifact.",
@@ -457,6 +486,7 @@ function main() {
     generated_at: new Date().toISOString(),
     dry_run: dryRun,
     schedule: handoffSchedule,
+    handoff_stage: handoffStage,
     lanes: laneResults,
   };
   const reports = writeReports(initialPayload);
