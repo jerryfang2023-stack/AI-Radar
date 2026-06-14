@@ -29,8 +29,16 @@ const remoteFeeds = {
 };
 const fallbackTopic = "产品与创业";
 
+function repairEncodingArtifacts(text = "") {
+  return String(text || "")
+    .replace(/([A-Za-z])��([A-Za-z])/gu, "$1’$2")
+    .replace(/��([^�\n]{1,80})��/gu, "“$1”")
+    .replace(/��(?=[A-Z@])/gu, " · ")
+    .replace(/�+/gu, "");
+}
+
 function decodeText(value = "") {
-  return String(value)
+  return repairEncodingArtifacts(value)
     .replaceAll("&amp;", "&")
     .replaceAll("&lt;", "<")
     .replaceAll("&gt;", ">")

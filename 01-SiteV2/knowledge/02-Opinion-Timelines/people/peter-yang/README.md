@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Peter Yang"
-opinion_count: 35
-latest_date: 2026-06-13
+opinion_count: 36
+latest_date: 2026-06-14
 ---
 
 # Peter Yang 观点时间线
-共 35 条观点，按人物 + 日期文件聚合。
+共 36 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-06-14](./2026-06-14.md)
 - [2026-06-13](./2026-06-13.md)
 - [2026-06-12](./2026-06-12.md)
 - [2026-06-10](./2026-06-10.md)

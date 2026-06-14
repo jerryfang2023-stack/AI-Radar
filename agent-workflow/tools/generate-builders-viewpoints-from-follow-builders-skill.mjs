@@ -30,8 +30,16 @@ function normalizeDay(dateValue = "") {
   return match ? match[0] : "unknown";
 }
 
+function repairEncodingArtifacts(text = "") {
+  return String(text || "")
+    .replace(/([A-Za-z])��([A-Za-z])/gu, "$1’$2")
+    .replace(/��([^�\n]{1,80})��/gu, "“$1”")
+    .replace(/��(?=[A-Z@])/gu, " · ")
+    .replace(/�+/gu, "");
+}
+
 function cleanText(text = "") {
-  return String(text || "").replace(/\s+/gu, " ").trim();
+  return repairEncodingArtifacts(text).replace(/\s+/gu, " ").trim();
 }
 
 async function loadSkill() {
@@ -50,9 +58,9 @@ function flattenItems(data) {
   for (const builder of Array.isArray(data.x) ? data.x : []) {
     for (const tweet of Array.isArray(builder.tweets) ? builder.tweets : []) {
       if (!tweet.url || !tweet.text) continue;
-      const tweetText = String(tweet.text || "").trim();
+      const tweetText = cleanText(tweet.text);
       const engagement = `likes=${tweet.likes || 0}; retweets=${tweet.retweets || 0}; replies=${tweet.replies || 0}`;
-      const builderBio = String(builder.bio || "").trim();
+      const builderBio = cleanText(builder.bio);
       items.push({
         kind: "x",
         title: `${builder.name || builder.handle}｜${tweetText.slice(0, 90)}`,
