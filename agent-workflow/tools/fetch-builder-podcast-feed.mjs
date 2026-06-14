@@ -22,6 +22,10 @@ const podcastSourceIds = [
 ];
 
 let sources = reg.sources.filter(s => podcastSourceIds.includes(s.source_id));
+const RSS_FETCH_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (compatible; WaveSightRSS/1.0; +https://github.com/jerryfang2023-stack/AI-Radar)",
+  "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+};
 
 // Also try reading follow-builders default-sources.json for fallback
 const fbDefaultsPath = path.join(homedir(), ".skill-store", "follow-builders", "config", "default-sources.json");
@@ -84,7 +88,10 @@ async function main() {
     if (!url) continue;
 
     try {
-      const resp = await fetch(url, { signal: AbortSignal.timeout(15000) });
+      const resp = await fetch(url, {
+        headers: RSS_FETCH_HEADERS,
+        signal: AbortSignal.timeout(15000),
+      });
       if (!resp.ok) {
         errors.push(src.name + ": HTTP " + resp.status);
         continue;

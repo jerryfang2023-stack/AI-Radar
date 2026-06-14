@@ -313,7 +313,7 @@
       "source_level": "S",
       "source_type": "product",
       "interface_type": "rss",
-      "endpoint_or_url": "https://blogs.microsoft.com/ai/feed/",
+      "endpoint_or_url": "https://news.microsoft.com/source/topics/ai/feed/",
       "auth_required": false,
       "rate_limit_note": "public web/RSS where available; unknown limit",
       "query_scope": "Copilot, Azure AI, enterprise adoption, agent governance, security, marketplace and customer deployments.",
@@ -1065,10 +1065,10 @@
         "source",
         "tags"
       ],
-      "fallback_path": "Fallback to keyword-search a_media_gdelt path.",
+      "fallback_path": "Fallback to keyword-search a_media_gdelt path or local browser collection when Substack blocks automation.",
       "evidence_role": "fact-support",
-      "enabled_default": true,
-      "risk_note": "Weekly deep-dive by Jack Clark (ex-OpenAI); strong trend analysis and policy coverage."
+      "enabled_default": false,
+      "risk_note": "Weekly deep-dive by Jack Clark (ex-OpenAI); Substack RSS is unstable in Node/GitHub automation. Keep as manual/browser-assisted lead source and verify claims with original sources."
     },
     {
       "source_id": "the-batch-newsletter",

@@ -17,3 +17,9 @@ When `raw_count_min` blocks a high-quality run, artifact recovery must rebuild C
 News-site homepages and generic root URLs can contain unrelated article/sidebar fragments that look like concrete AI events. Treat root/homepage URLs as index-only evidence unless they resolve to a dated article or first-party event before Card generation.
 
 The 2026-06-11 and 2026-06-12 Business Signals incidents showed that `frontstageSelection` can look healthy while the public `top10` contract is missing or empty. Treat `frontstageSelection=10` without `top10.length=10` as a production failure, not a display quirk. Weekly health must read Hermes inbox incidents and action logs so repeated categories such as `business_signals_top10_missing` become gate / eval / MEMORY updates instead of another same-day patch.
+
+## 2026-06-14
+
+Public title normalization must apply URL-specific title mappings before accepting mixed English/Chinese generated titles. A title that already contains some Chinese can still leak an English source-title subject into the frontstage.
+
+RSS sources should distinguish automation-safe feeds from manual/browser-assisted feeds. If a feed repeatedly returns 410/403/timeout in Node/GitHub, replace the endpoint when a current feed exists, or disable it by default and keep it as a lead-only fallback.

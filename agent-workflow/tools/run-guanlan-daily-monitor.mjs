@@ -3398,7 +3398,13 @@ async function collectRSSFeeds() {
       continue;
     }
     try {
-      const response = await fetch(url, { signal: AbortSignal.timeout(fetchTimeoutMs) });
+      const response = await fetch(url, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (compatible; WaveSightRSS/1.0; +https://github.com/jerryfang2023-stack/AI-Radar)",
+          "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+        },
+        signal: AbortSignal.timeout(fetchTimeoutMs),
+      });
       if (!response.ok) {
         failures.push(`RSS ${source.source_id}: HTTP ${response.status}`);
         continue;

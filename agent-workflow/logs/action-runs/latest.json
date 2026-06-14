@@ -1,37 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-14T08:08:07.561Z",
+  "generated_at": "2026-06-14T08:36:45.582Z",
   "date": "2026-06-14",
-  "action": "Skill Ops governance repair",
+  "action": "Business Signals title and RSS repair",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Made audit:skills refresh the home .skill-store mirror before the read-only check so Hermes no longer flags stale lane-owner skill copies.",
+  "summary": "Fixed public title mapping for AWS SageMaker and MindStudio mixed English titles; updated RSS handling for Microsoft AI and Import AI Hermes inbox issue; validation passed source-first and frontstage gates.",
   "contexts": [],
-  "changed_files": [
-    "package.json",
-    "context/10-v3-3-experience-automation.md",
-    "agent-workflow/skills/skill-registry.md",
-    "01-SiteV2/site/data/local-skill-store-data.js"
-  ],
-  "outputs": [
-    "agent-workflow/logs/action-runs/2026-06-14.jsonl",
-    "agent-workflow/skills/skill-registry.md",
-    "01-SiteV2/site/data/local-skill-store-data.js"
-  ],
-  "checks": [
-    "npm run audit:skills",
-    "npm run check:skill-ops"
-  ],
-  "issues": [
-    "Daily supervision flagged .skill-store drift for three lane-owner skills after repo skill updates."
-  ],
+  "changed_files": [],
+  "outputs": [],
+  "checks": [],
+  "issues": [],
   "risks": [],
   "lessons": [],
-  "reusable_rules": [
-    "Post-skill-edit audits must sync the installed mirror before using read-only governance checks."
-  ],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }
