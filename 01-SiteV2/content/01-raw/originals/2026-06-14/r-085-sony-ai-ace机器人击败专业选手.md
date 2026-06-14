@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-13T14:20:00.000Z"
-collected_at: 2026-06-14T04:27:51.523Z
+collected_at: 2026-06-14T08:10:00.798Z
 language: mixed
-full_text_hash: 77bdf2f81efeab32
+full_text_hash: babaae1f7d89dfe5
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-085-sony-ai-ace机器人击败专业选手.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-085-sony-ai-ace机器人击败专业选手.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow_with_degradation
 raw_qc_downstream_use: index_watchlist_or_feedback_only
 degradation_reasons: ["discovery_or_feedback_source_boundary"]
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"77bdf2f81efeab32","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"babaae1f7d89dfe5","missing":[]}
 source_volatility: high
 community_name: "X：Rohan Paul (@rohanpaul_ai)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Sony AI Ace机器人击败专业选手","discovery_summary":"Sony AI 的 Ace 机器人在官方 ITTF 规则下击败了专业选手 Miyuu Kihara Nature 论文--\"用自主机器人超越精英乒乓球选手\"","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065801362680795407","discovered_at":"2026-06-14T04:21:16.529Z","rank_on_page":117,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Sony AI Ace机器人击败专业选手","discovery_summary":"Sony AI 的 Ace 机器人在官方 ITTF 规则下击败了专业选手 Miyuu Kihara Nature 论文--\"用自主机器人超越精英乒乓球选手\"","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065801362680795407","discovered_at":"2026-06-14T08:01:48.527Z","rank_on_page":129,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 09883c6cc247c1ac
-content_hash: 77bdf2f81efeab32
-semantic_hash: 7bac0d240501df6f
+content_hash: babaae1f7d89dfe5
+semantic_hash: a736613d266c31ec
 duplicate_of: ""
 first_seen_at: "2026-06-13T14:20:00.000Z"
-last_seen_at: 2026-06-14T04:27:51.523Z
+last_seen_at: 2026-06-14T08:10:00.798Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -65,10 +65,10 @@ change_action_detected: false
 evidence_eligibility: blocked
 evidence_block_reason: "not_event_case_or_trend_evidence"
 guanlan_scores: {"importance_type":"important_technical_trend","importance_score":4,"importance_reason":"technical trend or capability shift; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
-business_elements: {"companies":["X","Rohan Paul (@rohanpaul_ai)"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["00","2","20","13","2026","48.3","1","0.25"],"quotes":["用自主机器人超越精英乒乓球选手","Outplaying elite table tennis players with an autonomous robot"]}
-evidence_seed: {"company_actions":["00:00 Vive con Propósito.","2:20 PM · Jun 13, 2026 48.","3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+business_elements: {"companies":["X","Rohan Paul (@rohanpaul_ai)"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["00","2","20","13","2026","53.3","1","0.25"],"quotes":["用自主机器人超越精英乒乓球选手","Outplaying elite table tennis players with an autonomous robot"]}
+evidence_seed: {"company_actions":["00:00 Vive con Propósito.","2:20 PM · Jun 13, 2026 53.","3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
 missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
-key_excerpts: [{"type":"quote","text":"Sony AI 的 Ace 机器人在官方 ITTF 规则下击败了专业选手 Miyuu Kihara Nature 论文--\"用自主机器人超越精英乒乓球选手\"","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"Post Log in Sign up Post Rohan Paul @rohanpaul_ai Sony AI’s Ace robot defeats pro Miyuu Kihara under official ITTF rules Nature paper - \"Outplaying elite table tennis players with an autonomous robot\" Vive con Propósito.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"00:00 Vive con Propósito.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"2:20 PM · Jun 13, 2026 48.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+key_excerpts: [{"type":"quote","text":"Sony AI 的 Ace 机器人在官方 ITTF 规则下击败了专业选手 Miyuu Kihara Nature 论文--\"用自主机器人超越精英乒乓球选手\"","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"Post Log in Sign up Post Rohan Paul @rohanpaul_ai Sony AI’s Ace robot defeats pro Miyuu Kihara under official ITTF rules Nature paper - \"Outplaying elite table tennis players with an autonomous robot\" Vive con Propósito.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"00:00 Vive con Propósito.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"2:20 PM · Jun 13, 2026 53.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -88,12 +88,12 @@ Nature paper - "Outplaying elite table tennis players with an autonomous robot"
 Vive con Propósito.
 00:00
 Vive con Propósito.
-2:20 PM · Jun 13, 2026 48.3K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 39
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 257
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 85
-Read 17 replies
+2:20 PM · Jun 13, 2026 53.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 43
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 286
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 93
+Read 21 replies
 
 ## full_text
 
@@ -107,12 +107,12 @@ Nature paper - "Outplaying elite table tennis players with an autonomous robot"
 Vive con Propósito.
 00:00
 Vive con Propósito.
-2:20 PM · Jun 13, 2026 48.3K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 39
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 257
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 85
-Read 17 replies
+2:20 PM · Jun 13, 2026 53.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 43
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 8 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 286
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 93
+Read 21 replies
 
 ## extraction_diagnostics
 
@@ -138,7 +138,7 @@ Read 17 replies
    00:00 Vive con Propósito.
 
 4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
-   2:20 PM · Jun 13, 2026 48.
+   2:20 PM · Jun 13, 2026 53.
 
 5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
    3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
@@ -156,12 +156,12 @@ Read 17 replies
 - workflows: 暂无公开信息
 - business_actions: 暂无公开信息
 - affected_departments: IT / 安全
-- numbers: 00, 2, 20, 13, 2026, 48.3, 1, 0.25
+- numbers: 00, 2, 20, 13, 2026, 53.3, 1, 0.25
 - quotes: 用自主机器人超越精英乒乓球选手 / Outplaying elite table tennis players with an autonomous robot
 
 ## evidence_seed
 
-- company_actions: 00:00 Vive con Propósito. / 2:20 PM · Jun 13, 2026 48. / 3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
+- company_actions: 00:00 Vive con Propósito. / 2:20 PM · Jun 13, 2026 53. / 3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
 - case_details: 暂无公开信息
 - workflow_changes: 暂无公开信息
 - before_after_clues: 暂无公开信息
@@ -215,7 +215,7 @@ Read 17 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Sony AI Ace机器人击败专业选手","discovery_summary":"Sony AI 的 Ace 机器人在官方 ITTF 规则下击败了专业选手 Miyuu Kihara Nature 论文--\"用自主机器人超越精英乒乓球选手\"","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065801362680795407","discovered_at":"2026-06-14T04:21:16.529Z","rank_on_page":117,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Sony AI Ace机器人击败专业选手","discovery_summary":"Sony AI 的 Ace 机器人在官方 ITTF 规则下击败了专业选手 Miyuu Kihara Nature 论文--\"用自主机器人超越精英乒乓球选手\"","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065801362680795407","discovered_at":"2026-06-14T08:01:48.527Z","rank_on_page":129,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

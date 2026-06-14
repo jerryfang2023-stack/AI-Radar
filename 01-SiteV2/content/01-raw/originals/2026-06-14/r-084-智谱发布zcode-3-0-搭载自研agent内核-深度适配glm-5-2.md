@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-13T14:56:15.000Z"
-collected_at: 2026-06-14T04:27:51.521Z
+collected_at: 2026-06-14T08:10:00.797Z
 language: mixed
 full_text_hash: cdb77babdb7db8ab
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-084-智谱发布zcode-3-0-搭载自研agent内核-深度适配glm-5-2.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"智谱发布ZCode 3.0：搭载自研Agent内核，深度适配GLM-5.2","discovery_summary":"智谱今日推出AI编程工具ZCode 3.0，全面切换自研ZCode Agent内核，深度适配GLM-5.2，优化长程推理、工具调用及大型工程执行链路，后续版本不再维护第三方Agent。GLM-5.2作为智谱迄今最强开源模型，支持1M上下文，已向GLM Coding Plan用户开放；订阅用户专享150%应用内配额。其他更新包括分组式任务工作区、Zread智能项目知识库、可视化Git分支图谱、可定制聊天交互、状态监控看板、多类型附件适配及全新视觉体系。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/985.htm","discovered_at":"2026-06-14T04:21:16.529Z","rank_on_page":114,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"智谱发布ZCode 3.0：搭载自研Agent内核，深度适配GLM-5.2","discovery_summary":"智谱今日推出AI编程工具ZCode 3.0，全面切换自研ZCode Agent内核，深度适配GLM-5.2，优化长程推理、工具调用及大型工程执行链路，后续版本不再维护第三方Agent。GLM-5.2作为智谱迄今最强开源模型，支持1M上下文，已向GLM Coding Plan用户开放；订阅用户专享150%应用内配额。其他更新包括分组式任务工作区、Zread智能项目知识库、可视化Git分支图谱、可定制聊天交互、状态监控看板、多类型附件适配及全新视觉体系。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/985.htm","discovered_at":"2026-06-14T08:01:48.526Z","rank_on_page":126,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: cdb77babdb7db8ab
 semantic_hash: 351ba024697e1013
 duplicate_of: ""
 first_seen_at: "2026-06-13T14:56:15.000Z"
-last_seen_at: 2026-06-14T04:27:51.521Z
+last_seen_at: 2026-06-14T08:10:00.797Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -344,7 +344,7 @@ Win11之家
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"智谱发布ZCode 3.0：搭载自研Agent内核，深度适配GLM-5.2","discovery_summary":"智谱今日推出AI编程工具ZCode 3.0，全面切换自研ZCode Agent内核，深度适配GLM-5.2，优化长程推理、工具调用及大型工程执行链路，后续版本不再维护第三方Agent。GLM-5.2作为智谱迄今最强开源模型，支持1M上下文，已向GLM Coding Plan用户开放；订阅用户专享150%应用内配额。其他更新包括分组式任务工作区、Zread智能项目知识库、可视化Git分支图谱、可定制聊天交互、状态监控看板、多类型附件适配及全新视觉体系。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/985.htm","discovered_at":"2026-06-14T04:21:16.529Z","rank_on_page":114,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"智谱发布ZCode 3.0：搭载自研Agent内核，深度适配GLM-5.2","discovery_summary":"智谱今日推出AI编程工具ZCode 3.0，全面切换自研ZCode Agent内核，深度适配GLM-5.2，优化长程推理、工具调用及大型工程执行链路，后续版本不再维护第三方Agent。GLM-5.2作为智谱迄今最强开源模型，支持1M上下文，已向GLM Coding Plan用户开放；订阅用户专享150%应用内配额。其他更新包括分组式任务工作区、Zread智能项目知识库、可视化Git分支图谱、可定制聊天交互、状态监控看板、多类型附件适配及全新视觉体系。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/985.htm","discovered_at":"2026-06-14T08:01:48.526Z","rank_on_page":126,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

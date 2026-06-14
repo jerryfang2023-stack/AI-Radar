@@ -1,0 +1,232 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-007
+title: "亚马逊CEO警告特朗普政府：Anthropic Fable 5模型存在安全漏洞"
+original_url: "https://x.com/rohanpaul_ai/status/2065914984794882225"
+canonical_url: "https://x.com/rohanpaul_ai/status/2065914984794882225"
+source_name: "X：Rohan Paul (@rohanpaul_ai)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-13T21:51:29.000Z"
+collected_at: 2026-06-14T08:10:00.552Z
+language: mixed
+full_text_hash: 6e12bcd948232a72
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-007-亚马逊ceo警告特朗普政府-anthropic-fable-5模型存在安全漏洞.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-007-亚马逊ceo警告特朗普政府-anthropic-fable-5模型存在安全漏洞.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 71
+extractor_diagnostics: {"readability_score":71,"text_length":2967,"paragraph_count":11,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0.0209,"method":"main"}
+has_full_text: true
+content_length: 2967
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6e12bcd948232a72","missing":[]}
+source_volatility: high
+community_name: "X：Rohan Paul (@rohanpaul_ai)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"亚马逊CEO警告特朗普政府：Anthropic Fable 5模型存在安全漏洞","discovery_summary":"路透社报道，亚马逊CEO Andy Jassy本周向特朗普政府官员警告Anthropic新模型Fable 5的安全隐患。亚马逊研究人员用一系列提示词成功让该模型泄露了本应拒绝提供的网络攻击帮助信息。此前美国商务部已指令Anthropic关闭Fable 5和Mythos 5，因测试者发现越狱方法。Anthropic回应称该越狱技术狭窄，仅发现少量已知漏洞，其他公共模型也能提供类似能力，并指出当前任何模型提供商都难以实现完美越狱抵抗。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065914984794882225","discovered_at":"2026-06-14T08:01:48.513Z","rank_on_page":55,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 4a9c5ab7842f54bb
+content_hash: 6e12bcd948232a72
+semantic_hash: 036bce0473281fb7
+duplicate_of: ""
+first_seen_at: "2026-06-13T21:51:29.000Z"
+last_seen_at: 2026-06-14T08:10:00.552Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["X","Rohan Paul (@rohanpaul_ai)","Anthropic","Amazon"],"products":["Claude"],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["5","2026","06","13","13\nB","9","51","4"],"quotes":[]}
+evidence_seed: {"company_actions":["Amazon researchers pushed Fable 5 with a string of prompts and got it to spill cyberattack-helping information it was not reuters .","com/business/retail-consumer/amazon-voiced-concerns-about-anthropic-ai-models-before-us-governments-crackdown-2026-06-13/ Rohan Paul @rohanpaul_ai Jun 13 BREAKING: The US Govt directed Anthropic to shut down its strongest Claude models.","Anthropic received the export control directive on Friday from the government."],"case_details":["The net effect is that it must disable Fable 5 and Mythos 5 for all customers to comply."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["路透社报道，亚马逊CEO Andy Jassy本周向特朗普政府官员警告Anthropic新模型Fable 5的安全隐患。亚马逊研究人员用一系列提示词成功让该模型泄露了本应拒绝提供的网络攻击帮助信息。此前美国商务部已指令Anthropic关闭Fable 5和Mythos 5，因测试者发现越狱方法。Anthropic回应称该越狱技术狭窄，仅发现少量已知漏洞，其他公共模型也能提供类似能力，并指出当前任何模型提供商都难以实现完美越狱抵抗。","Post Log in Sign up Post Rohan Paul @rohanpaul_ai Reuters: Amazon’s Andy Jassy was among the people who warned senior Trump officials this week about security concerns around Anthropic’s newest Fable 5."]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象"]
+key_excerpts: [{"type":"supporting_context","text":"路透社报道，亚马逊CEO Andy Jassy本周向特朗普政府官员警告Anthropic新模型Fable 5的安全隐患。亚马逊研究人员用一系列提示词成功让该模型泄露了本应拒绝提供的网络攻击帮助信息。此前美国商务部已指令Anthropic关闭Fable 5和Mythos 5，因测试者发现越狱方法。Anthropic回应称该越狱技术狭窄，仅发现少量已知漏洞，其他公共模型也能提供类似能力，并指出当前任何模型提供商都难以实现完美越狱抵抗。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Post Log in Sign up Post Rohan Paul @rohanpaul_ai Reuters: Amazon’s Andy Jassy was among the people who warned senior Trump officials this week about security concerns around Anthropic’s newest Fable 5.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Amazon researchers pushed Fable 5 with a string of prompts and got it to spill cyberattack-helping information it was not reuters .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/business/retail-consumer/amazon-voiced-concerns-about-anthropic-ai-models-before-us-governments-crackdown-2026-06-13/ Rohan Paul @rohanpaul_ai Jun 13 BREAKING: The US Govt directed Anthropic to shut down its strongest Claude models.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Anthropic received the export control directive on Friday from the government.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The net effect is that it must disable Fable 5 and Mythos 5 for all customers to comply.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 亚马逊CEO警告特朗普政府：Anthropic Fable 5模型存在安全漏洞
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+Reuters: Amazon’s Andy Jassy was among the people who warned senior Trump officials this week about security concerns around Anthropic’s newest Fable 5.
+Amazon researchers pushed Fable 5 with a string of prompts and got it to spill cyberattack-helping information it was not
+reuters .com/business/retail-consumer/amazon-voiced-concerns-about-anthropic-ai-models-before-us-governments-crackdown-2026-06-13/
+Rohan Paul
+@rohanpaul_ai
+Jun 13
+BREAKING: The US Govt directed Anthropic to shut down its strongest Claude models.
+Anthropic received the export control directive on Friday from the government. The net effect is that it must disable Fable 5 and Mythos 5 for all customers to comply.
+Because, someone found a Show more
+9:51 PM · Jun 13, 2026 4K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 24
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
+Read 6 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+Reuters: Amazon’s Andy Jassy was among the people who warned senior Trump officials this week about security concerns around Anthropic’s newest Fable 5.
+Amazon researchers pushed Fable 5 with a string of prompts and got it to spill cyberattack-helping information it was not
+reuters .com/business/retail-consumer/amazon-voiced-concerns-about-anthropic-ai-models-before-us-governments-crackdown-2026-06-13/
+Rohan Paul
+@rohanpaul_ai
+Jun 13
+BREAKING: The US Govt directed Anthropic to shut down its strongest Claude models.
+Anthropic received the export control directive on Friday from the government. The net effect is that it must disable Fable 5 and Mythos 5 for all customers to comply.
+Because, someone found a Show more
+9:51 PM · Jun 13, 2026 4K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 24
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
+Read 6 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 71
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":71,"text_length":2967,"paragraph_count":11,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0.0209,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   路透社报道，亚马逊CEO Andy Jassy本周向特朗普政府官员警告Anthropic新模型Fable 5的安全隐患。亚马逊研究人员用一系列提示词成功让该模型泄露了本应拒绝提供的网络攻击帮助信息。此前美国商务部已指令Anthropic关闭Fable 5和Mythos 5，因测试者发现越狱方法。Anthropic回应称该越狱技术狭窄，仅发现少量已知漏洞，其他公共模型也能提供类似能力，并指出当前任何模型提供商都难以实现完美越狱抵抗。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   Post Log in Sign up Post Rohan Paul @rohanpaul_ai Reuters: Amazon’s Andy Jassy was among the people who warned senior Trump officials this week about security concerns around Anthropic’s newest Fable 5.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Amazon researchers pushed Fable 5 with a string of prompts and got it to spill cyberattack-helping information it was not reuters .
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   com/business/retail-consumer/amazon-voiced-concerns-about-anthropic-ai-models-before-us-governments-crackdown-2026-06-13/ Rohan Paul @rohanpaul_ai Jun 13 BREAKING: The US Govt directed Anthropic to shut down its strongest Claude models.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Anthropic received the export control directive on Friday from the government.
+
+6. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   The net effect is that it must disable Fable 5 and Mythos 5 for all customers to comply.
+
+## business_elements
+
+- companies: X, Rohan Paul (@rohanpaul_ai), Anthropic, Amazon
+- products: Claude
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 5, 2026, 06, 13, 13
+B, 9, 51, 4
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Amazon researchers pushed Fable 5 with a string of prompts and got it to spill cyberattack-helping information it was not reuters . / com/business/retail-consumer/amazon-voiced-concerns-about-anthropic-ai-models-before-us-governments-crackdown-2026-06-13/ Rohan Paul @rohanpaul_ai Jun 13 BREAKING: The US Govt directed Anthropic to shut down its strongest Claude models. / Anthropic received the export control directive on Friday from the government.
+- case_details: The net effect is that it must disable Fable 5 and Mythos 5 for all customers to comply.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 路透社报道，亚马逊CEO Andy Jassy本周向特朗普政府官员警告Anthropic新模型Fable 5的安全隐患。亚马逊研究人员用一系列提示词成功让该模型泄露了本应拒绝提供的网络攻击帮助信息。此前美国商务部已指令Anthropic关闭Fable 5和Mythos 5，因测试者发现越狱方法。Anthropic回应称该越狱技术狭窄，仅发现少量已知漏洞，其他公共模型也能提供类似能力，并指出当前任何模型提供商都难以实现完美越狱抵抗。 / Post Log in Sign up Post Rohan Paul @rohanpaul_ai Reuters: Amazon’s Andy Jassy was among the people who warned senior Trump officials this week about security concerns around Anthropic’s newest Fable 5.
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Rohan Paul (@rohanpaul_ai)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"亚马逊CEO警告特朗普政府：Anthropic Fable 5模型存在安全漏洞","discovery_summary":"路透社报道，亚马逊CEO Andy Jassy本周向特朗普政府官员警告Anthropic新模型Fable 5的安全隐患。亚马逊研究人员用一系列提示词成功让该模型泄露了本应拒绝提供的网络攻击帮助信息。此前美国商务部已指令Anthropic关闭Fable 5和Mythos 5，因测试者发现越狱方法。Anthropic回应称该越狱技术狭窄，仅发现少量已知漏洞，其他公共模型也能提供类似能力，并指出当前任何模型提供商都难以实现完美越狱抵抗。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2065914984794882225","discovered_at":"2026-06-14T08:01:48.513Z","rank_on_page":55,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+路透社报道，亚马逊CEO Andy Jassy本周向特朗普政府官员警告Anthropic新模型Fable 5的安全隐患。亚马逊研究人员用一系列提示词成功让该模型泄露了本应拒绝提供的网络攻击帮助信息。此前美国商务部已指令Anthropic关闭Fable 5和Mythos 5，因测试者发现越狱方法。Anthropic回应称该越狱技术狭窄，仅发现少量已知漏洞，其他公共模型也能提供类似能力，并指出当前任何模型提供商都难以实现完美越狱抵抗。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

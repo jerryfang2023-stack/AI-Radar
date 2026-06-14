@@ -1,0 +1,283 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-122
+title: "Microsoft offers devs a better way to control AI agent behavior"
+original_url: "https://techcrunch.com/2026/06/02/microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior/"
+canonical_url: "https://techcrunch.com/2026/06/02/microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior"
+source_name: "keyword search / DuckDuckGo"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-14T08:10:00.910Z
+language: mixed
+full_text_hash: e7a28bbdca16b79c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-122-microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-122-microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4316,"paragraph_count":28,"sentence_count":23,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 4316
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e7a28bbdca16b79c","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 27016ff69b1a951a
+content_hash: e7a28bbdca16b79c
+semantic_hash: f61c839892b02734
+duplicate_of: ""
+first_seen_at: "2026-06-14T08:10:00.910Z"
+last_seen_at: 2026-06-14T08:10:00.910Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","DuckDuckGo","OpenAI","Anthropic","Google","Microsoft","Apple"],"products":["agent","agents","Agent","Agents","MCP","Claude"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["11","00","2","2026","18","$12B","27","5"],"quotes":["interception points"]}
+evidence_seed: {"company_actions":["Microsoft is trying to solve this problem with a new open source standard called Agent Control Specification (ACS) that aims to give developers a more consistent and granular way to control what AI agents are allowed to do.","The rules can define what the agent may do, what it must not do, when a human should approve an action, and what evidence should be logged for later review."],"case_details":[],"workflow_changes":["Image Credits: Rodin Eckenroth / Getty Images AI Microsoft offers devs a better way to control AI agent behavior Ram Iyer 11:00 AM PDT · June 2, 2026 As AI agents grow ever more capable, enterprises racing to put them to work across applications, workflows, and products face a new challenge: ensuring an agent does what it’s supposed to do when it’s deployed across different environments.","The spec comes as developers are improvising ways to control what their AI sees and does, especially with conversations focusing on AI workflows going wrong due to tool misuse , or unintended actions that result in cascading failures."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["The specification essentially lets developer, compliance, and security teams define their own policies for agents to follow."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Image Credits: Rodin Eckenroth / Getty Images AI Microsoft offers devs a better way to control AI agent behavior Ram Iyer 11:00 AM PDT · June 2, 2026 As AI agents grow ever more capable, enterprises racing to put them to work across applications, workflows, and products face a new challenge: ensuring an agent does what it’s supposed to do when it’s deployed across different environments.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Microsoft is trying to solve this problem with a new open source standard called Agent Control Specification (ACS) that aims to give developers a more consistent and granular way to control what AI agents are allowed to do.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"The specification essentially lets developer, compliance, and security teams define their own policies for agents to follow.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The rules can define what the agent may do, what it must not do, when a human should approve an action, and what evidence should be logged for later review.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"These policy files are checked at several “interception points” when the agent is off performing a task to make sure it stays within the guardrails.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"The spec comes as developers are improvising ways to control what their AI sees and does, especially with conversations focusing on AI workflows going wrong due to tool misuse , or unintended actions that result in cascading failures.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Microsoft offers devs a better way to control AI agent behavior
+
+## clean_text
+
+Image Credits: Rodin Eckenroth / Getty Images
+AI
+Microsoft offers devs a better way to control AI agent behavior
+Ram Iyer
+11:00 AM PDT · June 2, 2026
+As AI agents grow ever more capable, enterprises racing to put them to work across applications, workflows, and products face a new challenge: ensuring an agent does what it’s supposed to do when it’s deployed across different environments.
+Microsoft is trying to solve this problem with a new open source standard called Agent Control Specification (ACS) that aims to give developers a more consistent and granular way to control what AI agents are allowed to do.
+The specification essentially lets developer, compliance, and security teams define their own policies for agents to follow. The rules can define what the agent may do, what it must not do, when a human should approve an action, and what evidence should be logged for later review. These policy files are checked at several “interception points” when the agent is off performing a task to make sure it stays within the guardrails.
+The spec comes as developers are improvising ways to control what their AI sees and does, especially with conversations focusing on AI workflows going wrong due to tool misuse , or unintended actions that result in cascading failures.
+Today, developers might specify instructions in a system prompt, add custom checks in the application code, or use classifiers to catch problematic inputs and outputs. Those approaches work, but they often leave companies with fragmented controls that are hard to audit and harder to reuse across different frameworks, interfaces, and systems.
+Image Credits: Microsoft
+ACS aims to integrate those controls into a common governance layer. Microsoft says the specification can be used to check whether an agent is sticking to guardrails at multiple points in its workflow — before it receives input, before it calls a tool, after a tool returns a result, and before the final response is sent to the user. A policy may allow an action, block it, redact sensitive information, or even ask a person to approve it.
+Developers can also insert classifiers for inputs and outputs to categorize information, predict outcomes, or determine how an agent should respond; add LLMs with prompts to act as a “judge” for policies; and logic for checking tool calls, tool selection, input accuracy, output usage, and responses.
+And because these policies can be written as single files, they can be bundled with agents, allowing a security policy to follow an agent across different frameworks and environments.
+ACS is shipping as an SDK with plug-ins for LangChain, the OpenAI Agents SDK, the Anthropic Agents SDK, AutoGen, CrewAI, Semantic Kernel, Microsoft.Extensions.AI, MCP tools, and more.
+Topics
+Agent Control Specification , AI , AI agents , AI governance , Microsoft
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ram Iyer
+Editor
+Ram is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.
+You can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+Jeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world
+Marina Temkin
+Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable
+Lorenzo Franceschi-Bicchierai
+Google just fired a warning shot in the AI subscription price wars
+Lucas Ropek
+Connie Loizos
+WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more
+Morgan Little
+Aisha Malik
+Anthropic’s Claude Fable 5 is a version of Mythos the public can access today
+Rebecca Bellan
+It’s not FAANG anymore. It’s MANGOS.
+Julie Bort
+Microsoft’s open source tools were hacked to steal passwords of AI developers
+Zack Whittaker
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Rodin Eckenroth / Getty Images
+AI
+Microsoft offers devs a better way to control AI agent behavior
+Ram Iyer
+11:00 AM PDT · June 2, 2026
+As AI agents grow ever more capable, enterprises racing to put them to work across applications, workflows, and products face a new challenge: ensuring an agent does what it’s supposed to do when it’s deployed across different environments.
+Microsoft is trying to solve this problem with a new open source standard called Agent Control Specification (ACS) that aims to give developers a more consistent and granular way to control what AI agents are allowed to do.
+The specification essentially lets developer, compliance, and security teams define their own policies for agents to follow. The rules can define what the agent may do, what it must not do, when a human should approve an action, and what evidence should be logged for later review. These policy files are checked at several “interception points” when the agent is off performing a task to make sure it stays within the guardrails.
+The spec comes as developers are improvising ways to control what their AI sees and does, especially with conversations focusing on AI workflows going wrong due to tool misuse , or unintended actions that result in cascading failures.
+Today, developers might specify instructions in a system prompt, add custom checks in the application code, or use classifiers to catch problematic inputs and outputs. Those approaches work, but they often leave companies with fragmented controls that are hard to audit and harder to reuse across different frameworks, interfaces, and systems.
+Image Credits: Microsoft
+ACS aims to integrate those controls into a common governance layer. Microsoft says the specification can be used to check whether an agent is sticking to guardrails at multiple points in its workflow — before it receives input, before it calls a tool, after a tool returns a result, and before the final response is sent to the user. A policy may allow an action, block it, redact sensitive information, or even ask a person to approve it.
+Developers can also insert classifiers for inputs and outputs to categorize information, predict outcomes, or determine how an agent should respond; add LLMs with prompts to act as a “judge” for policies; and logic for checking tool calls, tool selection, input accuracy, output usage, and responses.
+And because these policies can be written as single files, they can be bundled with agents, allowing a security policy to follow an agent across different frameworks and environments.
+ACS is shipping as an SDK with plug-ins for LangChain, the OpenAI Agents SDK, the Anthropic Agents SDK, AutoGen, CrewAI, Semantic Kernel, Microsoft.Extensions.AI, MCP tools, and more.
+Topics
+Agent Control Specification , AI , AI agents , AI governance , Microsoft
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ram Iyer
+Editor
+Ram is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.
+You can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+Jeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world
+Marina Temkin
+Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable
+Lorenzo Franceschi-Bicchierai
+Google just fired a warning shot in the AI subscription price wars
+Lucas Ropek
+Connie Loizos
+WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more
+Morgan Little
+Aisha Malik
+Anthropic’s Claude Fable 5 is a version of Mythos the public can access today
+Rebecca Bellan
+It’s not FAANG anymore. It’s MANGOS.
+Julie Bort
+Microsoft’s open source tools were hacked to steal passwords of AI developers
+Zack Whittaker
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4316,"paragraph_count":28,"sentence_count":23,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Image Credits: Rodin Eckenroth / Getty Images AI Microsoft offers devs a better way to control AI agent behavior Ram Iyer 11:00 AM PDT · June 2, 2026 As AI agents grow ever more capable, enterprises racing to put them to work across applications, workflows, and products face a new challenge: ensuring an agent does what it’s supposed to do when it’s deployed across different environments.
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Microsoft is trying to solve this problem with a new open source standard called Agent Control Specification (ACS) that aims to give developers a more consistent and granular way to control what AI agents are allowed to do.
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=high
+   The specification essentially lets developer, compliance, and security teams define their own policies for agents to follow.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   The rules can define what the agent may do, what it must not do, when a human should approve an action, and what evidence should be logged for later review.
+
+5. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   These policy files are checked at several “interception points” when the agent is off performing a task to make sure it stays within the guardrails.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The spec comes as developers are improvising ways to control what their AI sees and does, especially with conversations focusing on AI workflows going wrong due to tool misuse , or unintended actions that result in cascading failures.
+
+## business_elements
+
+- companies: keyword search, DuckDuckGo, OpenAI, Anthropic, Google, Microsoft, Apple
+- products: agent, agents, Agent, Agents, MCP, Claude
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 11, 00, 2, 2026, 18, $12B, 27, 5
+- quotes: interception points
+
+## evidence_seed
+
+- company_actions: Microsoft is trying to solve this problem with a new open source standard called Agent Control Specification (ACS) that aims to give developers a more consistent and granular way to control what AI agents are allowed to do. / The rules can define what the agent may do, what it must not do, when a human should approve an action, and what evidence should be logged for later review.
+- case_details: 暂无公开信息
+- workflow_changes: Image Credits: Rodin Eckenroth / Getty Images AI Microsoft offers devs a better way to control AI agent behavior Ram Iyer 11:00 AM PDT · June 2, 2026 As AI agents grow ever more capable, enterprises racing to put them to work across applications, workflows, and products face a new challenge: ensuring an agent does what it’s supposed to do when it’s deployed across different environments. / The spec comes as developers are improvising ways to control what their AI sees and does, especially with conversations focusing on AI workflows going wrong due to tool misuse , or unintended actions that result in cascading failures.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: The specification essentially lets developer, compliance, and security teams define their own policies for agents to follow.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+采集通道未提供摘要。
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -2,14 +2,14 @@
 schema_version: raw-evidence-v2
 raw_id: R-186
 title: "亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治"
-original_url: ""
-canonical_url: ""
+original_url: "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578"
+canonical_url: "https://wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578"
 source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
 source_type: web
 source_level: B
 source_level_role: traceability_only_not_value_score_or_core_gate
 evidence_object_type: regulatory_or_procurement
-evidence_object_usable: false
+evidence_object_usable: true
 event_evidence: true
 index_only_evidence: false
 acquisition_source_level: "M"
@@ -19,55 +19,55 @@ search_intent: ""
 search_path: ""
 search_path_label: ""
 author: ""
-published_at: ""
-collected_at: 2026-06-14T04:27:51.748Z
+published_at: "2026-06-13T18:22:19.626Z"
+collected_at: 2026-06-14T08:10:01.010Z
 language: mixed
 full_text_hash: 88df5eb84cc61fab
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-186-亚马逊首席执行官与美国官员会谈引发对-anthropic-模型的整治.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-186-亚马逊首席执行官与美国官员会谈引发对-anthropic-模型的整治.json"
 html_snapshot_path: ""
 screenshot_path: ""
-fetch_status: no-url-summary-only
+fetch_status: blocked-http-401
 extraction_quality: failed
-extraction_method: "no_url_summary_fallback"
+extraction_method: "none"
 readability_score: 0
-extractor_diagnostics: {"method":"no_url_summary_fallback"}
+extractor_diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
 has_full_text: false
 content_length: 99
-fetch_error: ""
+fetch_error: "401 HTTP Forbidden"
 raw_qc_decision: block
 raw_qc_downstream_use: not_allowed
-degradation_reasons: ["index_only_or_directory_page","missing_full_text","missing_snapshot","discovery_or_feedback_source_boundary"]
-evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"88df5eb84cc61fab","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+degradation_reasons: ["missing_full_text","missing_snapshot","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"88df5eb84cc61fab","missing":["missing_full_text","missing_snapshot"]}
 source_volatility: high
 community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
-capture_scope: summary_only
-visible_range: "采集通道提供的标题与摘要"
+capture_scope: aihot_visible_text
+visible_range: "HTTP 401 fallback 可见文本"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治","discovery_summary":"亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"","discovered_at":"2026-06-14T04:21:15.771Z","rank_on_page":7,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治","discovery_summary":"亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578","discovered_at":"2026-06-14T08:01:48.518Z","rank_on_page":85,"discovery_status":"discovered"}
 source_role: discovery_source
-origin_fetch_status: "summary_only"
+origin_fetch_status: "blocked"
 paywall_status: none
-block_status: none
+block_status: suspected
 duplicate_status: unique
-url_hash: e3b0c44298fc1c14
+url_hash: 1dfa267ab3d1d4a6
 content_hash: 88df5eb84cc61fab
 semantic_hash: e783167e2c230434
 duplicate_of: ""
-first_seen_at: "2026-06-14T04:27:51.748Z"
-last_seen_at: 2026-06-14T04:27:51.748Z
+first_seen_at: "2026-06-13T18:22:19.626Z"
+last_seen_at: 2026-06-14T08:10:01.010Z
 update_detected: false
 raw_status: ignored
-usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
-pool_routes: ["index_only"]
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["discard"]
 change_action_detected: true
-evidence_eligibility: blocked
-evidence_block_reason: "homepage_or_directory_observation"
+evidence_eligibility: eligible
+evidence_block_reason: ""
 guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"supporting commercial context only","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":1,"case_richness":2,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
 business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","Anthropic"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":[],"numbers":[],"quotes":[]}
 evidence_seed: {"company_actions":["亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。","此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。"]}
-missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例","没有变化前后流程线索","没有成本、收入、采用率或市场规模数字","没有可用全文快照"]
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索","没有成本、收入、采用率或市场规模数字","没有可用全文快照"]
 key_excerpts: [{"type":"supporting_context","text":"亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"}]
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
@@ -86,11 +86,11 @@ copyright_note: local research archive only
 
 ## extraction_diagnostics
 
-- extraction_method: no_url_summary_fallback
+- extraction_method: none
 - readability_score: 0
-- fetch_status: no-url-summary-only
+- fetch_status: blocked-http-401
 - extraction_quality: failed
-- diagnostics: {"method":"no_url_summary_fallback"}
+- diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
 
 ## markdown_snapshot
 
@@ -153,16 +153,14 @@ copyright_note: local research archive only
 - briefing: false
 - emerging_pool: false
 - user_feedback_pool: false
-- watchlist: false
+- watchlist: true
 
 ## pool_routes
 
-- index_only
+- discard
 
 ## missing_information
 
-- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
-- 疑似官网首页、产品目录或导航页，只能索引留存
 - 没有具体客户或真实企业案例
 - 没有变化前后流程线索
 - 没有成本、收入、采用率或市场规模数字
@@ -172,13 +170,13 @@ copyright_note: local research archive only
 
 - source_volatility: high
 - community_name: Hacker News 热门（buzzing.cc 中文翻译）
-- capture_scope: summary_only
-- visible_range: 采集通道提供的标题与摘要
+- capture_scope: aihot_visible_text
+- visible_range: HTTP 401 fallback 可见文本
 - evidence_level: discovery_only
 - discovery_source: AI HOT
 - source_role: discovery_source
-- origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治","discovery_summary":"亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"","discovered_at":"2026-06-14T04:21:15.771Z","rank_on_page":7,"discovery_status":"discovered"}
+- origin_fetch_status: blocked
+- discovery_record: {"discovery_title":"亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治","discovery_summary":"亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578","discovered_at":"2026-06-14T08:01:48.518Z","rank_on_page":85,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
