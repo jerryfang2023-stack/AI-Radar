@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: urgent
 lane: business_signals
 category: business_signals_weekend_gate_thresholds_and_broken_rss
@@ -7,6 +7,12 @@ report_path: agent-workflow/reports/2026-06-14-hermes-0945-business-signals.md
 data_generated: no_or_stale
 needed_action: adjust weekend hard gate thresholds + fix broken RSS sources
 created_at: 2026-06-14T10:35:00+08:00
+updated_at: 2026-06-14T16:38:21+08:00
+resolved_at: 2026-06-14T16:38:21+08:00
+resolver: codex
+fix_commit: b616dc4b
+validation: node agent-workflow/tools/assert-v3-source-first-frontstage.mjs; node agent-workflow/tools/frontstage-regression-gate.mjs; npm run audit:skills
+prevention_added: memory
 source: hermes-manual
 
 # Hermes Repair Request: Weekend Gate Thresholds & Broken RSS Sources
@@ -103,3 +109,9 @@ This suggests that on low-news days (weekends/holidays), the combination of fewe
 - 2026-06-12-business-signals-gate-failure-and-top10-empty.md
 - 2026-06-13-business_signals-business-signals-top10-missing.md
 - 2026-06-14-business_signals-business-signals-top10-missing.md (resolved by Codex but same root cause persists)
+
+## Resolution - 2026-06-14T16:38:21+08:00
+
+- fix_commit: b616dc4b
+- validation: node agent-workflow/tools/assert-v3-source-first-frontstage.mjs; node agent-workflow/tools/frontstage-regression-gate.mjs; npm run audit:skills
+- prevention_added: memory
