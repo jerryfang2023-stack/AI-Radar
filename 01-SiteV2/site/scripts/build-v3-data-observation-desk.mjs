@@ -1047,6 +1047,12 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
 function frontstageChineseTitle(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const rules = [
+    [/hpcwire\.com.*tensormesh-raises-20m-launches-ai-inference-platform/u, "Tensormesh \u5728 HPCwire \u53d1\u5e03 2000 \u4e07\u7f8e\u5143\u878d\u8d44\u4e0e AI \u63a8\u7406\u5e73\u53f0"],
+    [/happyrobot\.ai\/customer-story\/kuehne-nagel/u, "Kuehne+Nagel \u4e0e HappyRobot\uff1aAI \u8fdb\u5165\u7269\u6d41\u8ba2\u5355\u548c\u90ae\u4ef6\u5904\u7406"],
+    [/mariothomas\.com\/blog\/inference-migration/u, "Mario Thomas\uff1a\u6d88\u8d39\u7ea7 Agent \u7ecf\u9a8c\u8fdb\u5165\u4f01\u4e1a AI \u4e0b\u4e00\u9636\u6bb5"],
+    [/saastr\.com\/the-wave-of-ai-agent-churn-to-come-prompts-are-portable/u, "SaaStr\uff1aAgent \u63d0\u793a\u53ef\u8fc1\u79fb\u5e26\u6765\u5ba2\u6237\u6d41\u5931\u98ce\u9669"],
+    [/instagram\.com\/reel\/dzdwa08yixg/u, "Instagram\uff1aAI \u65f6\u4ee3\u4f01\u4e1a\u5185\u90e8\u77e5\u8bc6\u6210\u4e3a\u5173\u952e\u8d44\u4ea7"],
+    [/foundra\.ai\/key-reads\/why-vertical-ai-is-the-real-moat/u, "Time Founders\uff1a\u5782\u76f4 AI \u6210\u4e3a\u9996\u6b21\u521b\u4e1a\u8005\u62a4\u57ce\u6cb3"],
     [/sycamore\.so\/press-releases\/sycamore-raises-65m-seed/u, "Sycamore 融资 6500 万美元，建设企业 Agent 操作系统"],
     [/infoworld\.com.*github-launches-agent-hq/u, "GitHub 推出 Agent HQ，统一管理 AI 编码代理"],
     [/bcg\.com.*200-billion-dollar-ai-opportunity/u, "BCG：科技服务业存在 2000 亿美元 AI 机会"],

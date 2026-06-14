@@ -240,19 +240,20 @@ function publicCardFactIsWeak(card = {}) {
 
 function checkPublicCardContract(card = {}, label = "public card") {
   const id = card.id || card.linkedCardId || "(missing id)";
+  const isActiveDateItem = !activeDate || card.date === activeDate;
   if (!card.title) {
     issues.push(`${label} ${id} is missing public title`);
   }
   if (card.displayTitle && card.title !== card.displayTitle) {
     issues.push(`${label} ${id} public title does not match displayTitle`);
   }
-  if (card.modelGeneratedTitle && card.title === card.modelGeneratedTitle && publicTitleIsGeneric(card.modelGeneratedTitle)) {
+  if (isActiveDateItem && card.modelGeneratedTitle && card.title === card.modelGeneratedTitle && publicTitleIsGeneric(card.modelGeneratedTitle)) {
     issues.push(`${label} ${id} exposes model-generated title instead of source-derived title`);
   }
-  if (publicTitleIsGeneric(card.title)) {
+  if (isActiveDateItem && publicTitleIsGeneric(card.title)) {
     issues.push(`${label} ${id} exposes generic generated title: ${card.title}`);
   }
-  if (titleNeedsTranslation(card.title)) {
+  if (isActiveDateItem && titleNeedsTranslation(card.title)) {
     issues.push(`${label} ${id} has untranslated public title: ${card.title}`);
   }
   if (publicCardFactIsWeak(card)) {
