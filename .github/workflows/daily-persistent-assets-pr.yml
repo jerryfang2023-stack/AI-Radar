@@ -510,8 +510,15 @@ jobs:
           - Pull main locally or let the WaveSight local Obsidian sync task fast-forward main after merge.
           BODY
 
-          if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
-            pr_url="$(gh pr view "$branch" --json url --jq .url)"
+          pr_number="$(gh pr list \
+            --base main \
+            --head "$branch" \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+
+          if [ -n "$pr_number" ]; then
+            pr_url="$(gh pr view "$pr_number" --json url --jq .url)"
             gh pr edit "$pr_number" \
               --title "Business Signals update ${RUN_DATE}" \
               --body-file "$body_file"
@@ -526,7 +533,16 @@ jobs:
               --head "$branch" \
               --title "Business Signals update ${RUN_DATE}" \
               --body-file "$body_file" 2>pr-create-error.log)"; then
-              pr_number="$(gh pr view "$branch" --json number --jq .number)"
+              pr_number="$(gh pr list \
+                --base main \
+                --head "$branch" \
+                --state open \
+                --json number \
+                --jq '.[0].number // empty')"
+              if [ -z "$pr_number" ]; then
+                echo "Created PR but could not resolve its open PR number for branch $branch" >&2
+                exit 1
+              fi
               echo "$pr_url"
               echo "status=created" >> "$GITHUB_OUTPUT"
               echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
