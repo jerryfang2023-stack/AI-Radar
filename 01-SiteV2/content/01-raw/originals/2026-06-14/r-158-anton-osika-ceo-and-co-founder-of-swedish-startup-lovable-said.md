@@ -1,0 +1,232 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-158
+title: "Anton Osika, CEO and co-founder of Swedish startup Lovable, said ..."
+original_url: "https://www.facebook.com/cnbcinternational/posts/anton-osika-ceo-and-co-founder-of-swedish-startup-lovable-said-ai-is-set-to-chan/1188688313119013/"
+canonical_url: "https://facebook.com/cnbcinternational/posts/anton-osika-ceo-and-co-founder-of-swedish-startup-lovable-said-ai-is-set-to-chan/1188688313119013"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "developer_ecosystem"
+search_path_label: "开发生态路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-14T08:10:00.979Z
+language: mixed
+full_text_hash: d038fac1438018f2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-158-anton-osika-ceo-and-co-founder-of-swedish-startup-lovable-said.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-158-anton-osika-ceo-and-co-founder-of-swedish-startup-lovable-said.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 45
+extractor_diagnostics: {"readability_score":45,"text_length":812,"paragraph_count":7,"sentence_count":5,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 812
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d038fac1438018f2","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e98ae6812b46f57b
+content_hash: d038fac1438018f2
+semantic_hash: ced8e01529c92708
+duplicate_of: ""
+first_seen_at: "2026-06-14T08:10:00.979Z"
+last_seen_at: 2026-06-14T08:10:00.979Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":4,"importance_reason":"real customer or adoption case; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":3,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理"],"business_actions":["合作 / 联盟"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["$18.9M","2","2024","50%","21","2025","43","9"],"quotes":["everything"]}
+evidence_seed: {"company_actions":["Seed-stage AI startups hit $18.9M median pre-money in Q2 2024—50% higher than non-AI peers. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem","The technology lowers barriers to entry for potential startup founders around the world.","However, investors are not convinced it will lead to increased activity in emerging markets."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Seed-stage AI startups hit $18.9M median pre-money in Q2 2024—50% higher than non-AI peers. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"CNBC International's Post CNBC International October 21, 2025 · Anton Osika, CEO and co-founder of Swedish startup Lovable, said AI is set to change “everything” for emerging markets.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"The technology lowers barriers to entry for potential startup founders around the world.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"However, investors are not convinced it will lead to increased activity in emerging markets.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"To read the full story, click here: https://cnb.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"cx/43wZ9NN All reactions: 51 4 comments 12 shares Like Comment Most relevant Jason Braun A boon for billionairs, not normal people, all our utilities will cost more though, thanks data centers, now you have all the power for AI slop ads no one even wants 33w Dean Hull Haha.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Anton Osika, CEO and co-founder of Swedish startup Lovable, said ...
+
+## clean_text
+
+CNBC International's Post
+CNBC International
+October 21, 2025 ·
+Anton Osika, CEO and co-founder of Swedish startup Lovable, said AI is set to change “everything” for emerging markets.
+The technology lowers barriers to entry for potential startup founders around the world.
+However, investors are not convinced it will lead to increased activity in emerging markets.
+To read the full story, click here: https://cnb.cx/43wZ9NN
+All reactions:
+51
+4 comments
+12 shares
+Like
+Comment
+Most relevant
+Jason Braun A boon for billionairs, not normal people, all our utilities will cost more though, thanks data centers, now you have all the power for AI slop ads no one even wants
+33w
+Dean Hull Haha. The tech industry is such a hilarious combination of snake oil salesman and crazed street preacher.
+33w
+Prem India 2026
+32w
+
+## full_text
+
+CNBC International's Post
+CNBC International
+October 21, 2025 ·
+Anton Osika, CEO and co-founder of Swedish startup Lovable, said AI is set to change “everything” for emerging markets.
+The technology lowers barriers to entry for potential startup founders around the world.
+However, investors are not convinced it will lead to increased activity in emerging markets.
+To read the full story, click here: https://cnb.cx/43wZ9NN
+All reactions:
+51
+4 comments
+12 shares
+Like
+Comment
+Most relevant
+Jason Braun A boon for billionairs, not normal people, all our utilities will cost more though, thanks data centers, now you have all the power for AI slop ads no one even wants
+33w
+Dean Hull Haha. The tech industry is such a hilarious combination of snake oil salesman and crazed street preacher.
+33w
+Prem India 2026
+32w
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 45
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":45,"text_length":812,"paragraph_count":7,"sentence_count":5,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
+   Seed-stage AI startups hit $18.9M median pre-money in Q2 2024—50% higher than non-AI peers. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem
+
+2. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=medium
+   CNBC International's Post CNBC International October 21, 2025 · Anton Osika, CEO and co-founder of Swedish startup Lovable, said AI is set to change “everything” for emerging markets.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   The technology lowers barriers to entry for potential startup founders around the world.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   However, investors are not convinced it will lead to increased activity in emerging markets.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   To read the full story, click here: https://cnb.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   cx/43wZ9NN All reactions: 51 4 comments 12 shares Like Comment Most relevant Jason Braun A boon for billionairs, not normal people, all our utilities will cost more though, thanks data centers, now you have all the power for AI slop ads no one even wants 33w Dean Hull Haha.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理
+- business_actions: 合作 / 联盟
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: $18.9M, 2, 2024, 50%, 21, 2025, 43, 9
+- quotes: everything
+
+## evidence_seed
+
+- company_actions: Seed-stage AI startups hit $18.9M median pre-money in Q2 2024—50% higher than non-AI peers. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem / The technology lowers barriers to entry for potential startup founders around the world. / However, investors are not convinced it will lead to increased activity in emerging markets.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 4
+- importance_reason: real customer or adoption case; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Seed-stage AI startups hit $18.9M median pre-money in Q2 2024—50% higher than non-AI peers. / query=pre-seed AI startup vertical AI design partner / intent=find_startups / path=developer_ecosystem
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,6 +1,6 @@
 # 2026-06-14 Business Signals Asset Manifest
 
-- generated_at: 2026-06-14T12:27:55+08:00
+- generated_at: 2026-06-14T16:10:04+08:00
 - workflow_mode: business_signals_pr
 - monitor: success
 - monitor_readiness: success
@@ -20,7 +20,7 @@
 | Raw originals | present |
 | Pool candidates | present |
 | Business signals | present |
-| Signal card files | 13 |
+| Signal card files | 12 |
 | Site content data | present |
 | V3 data observation desk data | present |
 | Intelligence graph index | present |

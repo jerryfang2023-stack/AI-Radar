@@ -23,7 +23,7 @@
 - fact_base / business_signal: Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
   - source: The Decoder：AI News（RSS）
   - url: https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A11
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A09
   - note: Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。
 - community_lead / community_intelligence: 05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0
   - source: AI破局
@@ -36,13 +36,13 @@
 - fact_base / business_signal: Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
   - source: The Decoder：AI News（RSS）
   - url: https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A11
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A09
   - note: Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。
-- fact_base / business_signal: Instagram 融资
-  - source: instagram.com
-  - url: https://www.instagram.com/p/DZaq23zCT9J/
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A01
-  - note: Instagram 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。
+- fact_base / business_signal: techcrunch 融资
+  - source: TechCrunch：AI（RSS）
+  - url: https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A13
+  - note: techcrunch 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。
 - community_lead / community_intelligence: 花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）
   - source: 生财有术
   - url: https://scys.com/articleDetail/xq_topic/14422458152228212
@@ -54,7 +54,7 @@
 - fact_base / business_signal: 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实
   - source: IT之家（RSS）
   - url: https://www.ithome.com/0/963/986.htm
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A04
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A03
   - note: 毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应"与事实不符"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示"不准…
 - viewpoint_lead / first_line_viewpoint: 敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀
   - source: Andrej Karpathy
@@ -69,11 +69,11 @@
 
 ### 4. 有人 120亿美元 押注物理 AI，有人 1000 块帮老板装 Codex
 
-- fact_base / business_signal: Instagram 融资
-  - source: instagram.com
-  - url: https://www.instagram.com/p/DZaq23zCT9J/
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A01
-  - note: Instagram 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。
+- fact_base / business_signal: techcrunch 融资
+  - source: TechCrunch：AI（RSS）
+  - url: https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A13
+  - note: techcrunch 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。
 - viewpoint_lead / first_line_viewpoint: 敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀
   - source: Andrej Karpathy
   - url: https://x.com/karpathy/status/2065490793092337691
@@ -90,7 +90,7 @@
 - fact_base / business_signal: Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
   - source: The Decoder：AI News（RSS）
   - url: https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A11
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A09
   - note: Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。
 - community_lead / community_intelligence: 13岁少年35美元启动，靠AI帮线下诊所月入13万
   - source: 生财有术
@@ -103,7 +103,7 @@
 - fact_base / business_signal: 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实
   - source: IT之家（RSS）
   - url: https://www.ithome.com/0/963/986.htm
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A04
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A03
   - note: 毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应"与事实不符"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示"不准…
 - viewpoint_lead / first_line_viewpoint: 敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀
   - source: Andrej Karpathy
@@ -121,7 +121,7 @@
 - fact_base / business_signal: 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实
   - source: IT之家（RSS）
   - url: https://www.ithome.com/0/963/986.htm
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A04
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A03
   - note: 毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应"与事实不符"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示"不准…
 - viewpoint_lead / first_line_viewpoint: 敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀
   - source: Andrej Karpathy
@@ -136,11 +136,11 @@
 
 ### 8. AI 员工不能先上岗后管理：老板最容易漏掉的是权限
 
-- fact_base / business_signal: Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
-  - source: The Decoder：AI News（RSS）
-  - url: https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A11
-  - note: Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。
+- fact_base / business_signal: Anthropic 暂停新模型访问，印度辩论 AI 未来
+  - source: TechCrunch：AI（RSS）
+  - url: https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260614-A04
+  - note: Anthropic 暂停了新模型的访问权限，印度科技领袖围绕这一事件展开辩论，探讨其是否是对该国 AI 雄心的警示。
 - viewpoint_lead / first_line_viewpoint: 敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀
   - source: Andrej Karpathy
   - url: https://x.com/karpathy/status/2065490793092337691
