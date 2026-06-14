@@ -7,5 +7,5 @@
 - skill_root: C:/Users/86186/.skill-store/follow-builders
 - skill_script: C:/Users/86186/.skill-store/follow-builders/scripts/prepare-digest.js
 - output_file: 01-SiteV2/content/07-points/2026-06-13-builders-viewpoints.md
-- builder_items_count: 0
+- builder_items_count: 43
 - hermes_record: agent-workflow/reports/2026-06-13-follow-builders-skill-local-publish.md

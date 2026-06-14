@@ -1,0 +1,38 @@
+# Good First-Line Viewpoints Failure Router Example
+
+Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
+
+## Correct Behavior
+
+1. Decide which path is failing:
+   - morning RSS page-data and Obsidian sync;
+   - GitHub RSS fallback publication;
+   - afternoon local follow-builders skill archive;
+   - supervision visibility only.
+2. Check the valid window:
+   - RSS lane should not be declared failed before 09:55 Asia/Shanghai.
+   - Afternoon skill lane should not be declared failed before 16:30 Asia/Shanghai.
+3. For morning RSS, verify:
+   - same-date `follow-builders-daily.json`;
+   - remarks count greater than `0`;
+   - builders count at least `6`;
+   - `assert-follow-builders-data.mjs --date=<date>` passes;
+   - same-date person/date timeline files exist;
+   - second sync or dry run adds `0` entries.
+4. For GitHub fallback publication, repair only commit/PR/merge/Pages if build, gate, and sync passed.
+5. For afternoon skill publish, verify:
+   - output file exists;
+   - output frontmatter `builder_items_count > 0`;
+   - publish report exists;
+   - publish report `builder_items_count > 0`;
+   - output and report counts match.
+6. Close Hermes only after validation and a prevention artifact are recorded.
+
+## Incorrect Behavior
+
+- Treating GitHub CLI timeout as proof that First-Line data failed.
+- Creating an RSS failure inbox before the 09:55 handoff window.
+- Creating an afternoon skill failure inbox before 16:30.
+- Treating a zero-count publish report as success because the report file exists.
+- Using old `YYYY-MM.md` month timeline files as proof of current person/date sync.
+- Replacing missing morning RSS page-data with the afternoon all-builders archive.

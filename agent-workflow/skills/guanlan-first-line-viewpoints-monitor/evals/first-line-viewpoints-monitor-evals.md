@@ -33,8 +33,26 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Fail when the lane waits until the old 10:30 supervision check without an early report, dispatch action, and Codex handoff path.
 
 10. `afternoon_follow_builders_skill_lane`
-   - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`, and Hermes records the lane at 16:30.
-   - Fail when the afternoon skill route is judged from morning RSS data only or when a missing 16:30 publish report is ignored.
+    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`, and Hermes records the lane at 16:30.
+    - Fail when the afternoon skill route is judged from morning RSS data only or when a missing 16:30 publish report is ignored.
+
+11. `first_line_failure_router`
+    - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `obsidian_sync_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, or `afternoon_count_mismatch`.
+    - Pass when the repair targets the earliest category and reruns the smallest relevant validation.
+    - Fail when RSS collection, Obsidian sync, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
+
+12. `morning_rss_handoff_window`
+    - Pass when Hermes waits until 09:55 Asia/Shanghai before declaring First-Line RSS missing, after the 08:30 local Codex run and 09:17 / 09:47 GitHub fallback windows.
+    - Pass when a healthy GitHub fallback can recover a missed local 08:30 run, while the local miss is still recorded as automation reliability drift.
+    - Fail when Hermes creates a First-Line RSS repair inbox before the valid handoff window.
+
+13. `afternoon_skill_count_consistency`
+    - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, and both counts match.
+    - Fail when the report exists but records `builder_items_count: 0`, when the output count is `0`, or when report and output counts disagree.
+
+14. `report_existence_not_success`
+    - Pass when First-Line success checks inspect the content and count inside gate/manifest/publish reports, not only the presence of the files.
+    - Fail when a report-only success hides stale data, missing timelines, or a zero-count afternoon publish.
 
 ## Repair Loop
 

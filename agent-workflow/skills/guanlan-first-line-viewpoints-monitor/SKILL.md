@@ -50,6 +50,7 @@ For implementation detail, read:
 - `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs`
 
 For regression prevention, read `evals/first-line-viewpoints-monitor-evals.md`. When repairing translation or timeline sync, also read `examples/good-timeline-entry.md` and `examples/bad-untranslated-remark.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+When repairing repeated morning or afternoon monitoring failures, also read `examples/good-first-line-failure-router.md` and the latest first-line weekly failure review report.
 
 ## Workflow
 
@@ -64,6 +65,51 @@ For regression prevention, read `evals/first-line-viewpoints-monitor-evals.md`. 
 9. Add or tighten evals before adding long prose when a failure recurs.
 10. Close Hermes inbox items only after validation and prevention are recorded.
 
+## Failure Router
+
+Classify a failure before rerunning anything:
+
+- `supervision_observability`: daily report missing or GitHub lookup timed out while same-date data may be healthy.
+- `local_rss_cron_missed`: the 08:30 local Codex RSS collection/build/sync did not run or left stale page data.
+- `github_rss_publication`: GitHub RSS build/gate/sync passed but commit, PR, merge, or Pages failed.
+- `data_gate_failure`: `assert-follow-builders-data.mjs` failed on freshness, count, translation, URL/id, dedupe, or formal tags.
+- `obsidian_sync_failure`: same-date person/date timeline files are missing or sync is not idempotent.
+- `prewindow_false_alarm`: Hermes checked before 09:55 for RSS or before 16:30 for the afternoon skill lane.
+- `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
+- `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
+
+Repair the earliest category and rerun the smallest validation. Do not substitute the afternoon skill route for missing morning RSS page data.
+
+## Morning Fast Path
+
+Use this path for the public First-Line Viewpoints page:
+
+1. At 08:30, local Codex `builder-observation-daily-sync` runs blog RSS fetch, podcast RSS fetch, page-data build, data gate, and Obsidian sync.
+2. At 09:17 and 09:47, GitHub fallback may run the same RSS page-data path when same-date data / timelines are missing.
+3. At 09:55, Hermes checks only after the local attempt and both GitHub fallback windows.
+4. Success means:
+   - same-date `follow-builders-daily.json`;
+   - remarks count greater than `0` and builders count at least `6`;
+   - `assert-follow-builders-data.mjs --date=<date>` passes;
+   - same-date person/date Obsidian timeline files exist;
+   - a second sync or dry run adds `0` entries;
+   - frontstage data does not contain the generic tag `Builder viewpoint`.
+5. If the 08:30 local run misses but GitHub fallback produces healthy same-date data, classify the local miss as an automation reliability issue, not a data-quality failure.
+
+## Afternoon Skill Path
+
+The afternoon local `follow-builders` skill lane is a discovery archive, not the public page-data gate.
+
+Success after 16:30 requires:
+
+- `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md` exists;
+- the output frontmatter `builder_items_count` is greater than `0`;
+- `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` exists;
+- the report `builder_items_count` is greater than `0`;
+- the report count matches the output count.
+
+If the report exists but records `0` while the output contains items, repair or regenerate the report before closing Hermes.
+
 ## Lane Boundaries
 
 - Builder viewpoints are independent public viewpoints.
@@ -71,6 +117,8 @@ For regression prevention, read `evals/first-line-viewpoints-monitor-evals.md`. 
 - Do not use `01-SiteV2/content/05-frontier-opinions/*` as current evidence.
 - Do not treat old `YYYY-MM.md` month files as V3.3.6 sync success.
 - Do not allow untranslated English as primary Chinese frontstage text.
+- Do not treat a report file's existence as publish success when its item count is zero or mismatched.
+- Do not let the afternoon skill lane block the morning public page when the RSS page-data gate and Obsidian sync are healthy.
 
 ## Reporting
 
