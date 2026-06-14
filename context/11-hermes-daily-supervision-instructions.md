@@ -31,7 +31,7 @@ Hermes should do this every Asia/Shanghai production day:
 4. Before 10:00 use Business Signals Top10 health as a target checkpoint: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood. Do not lower gates to hit the checkpoint.
 5. 10:20 read and report the Topic Center / Hermes Daily Brief only after Business Signals data is healthy or the upstream workflow has finished. If Business Signals is still queued or `in_progress`, wait instead of reporting missing topic data.
 6. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. For Business Signals, explicitly check merged PR, Pages success, same-date Business data, Top10 count, and whether local sync is blocked. This check must account for the 10:45 Community Intelligence publish fallback window.
-7. 10:55 / 11:55 run bounded morning recovery only for lanes still `failed` or `manual_required`.
+7. 10:55 run bounded morning recovery only for lanes still `failed` or `manual_required`. Do not run a second routine morning recovery pass.
 8. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
 9. For every failure, write cause, attempted action, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
 10. Never lower gates, edit generated data directly, push to `main`, or loop blind reruns.
@@ -112,7 +112,7 @@ agent-workflow/inbox/hermes-to-codex/
 | 10:20 | Topic Center / Hermes Daily Brief | Read `topic-center-hermes.json` / `.md` and the Hermes daily brief topic table after Business Signals has finished. This is a report checkpoint, not a separate topic-generation cron. |
 | 10:45 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
 | 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. For Business Signals also check same-date data, Top10 count, and local sync status. |
-| 10:55 / 11:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. |
+| 10:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. Do not run a second routine morning recovery pass. |
 | 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report and `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`. If the report or output is missing, write a Codex handoff for the afternoon skill lane. |
 
 If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.
