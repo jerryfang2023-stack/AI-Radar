@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: normal
 lane: first_line_viewpoints
 category: monitor_or_gate_failure
@@ -7,7 +7,12 @@ report_path: agent-workflow/reports/2026-06-13-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: manual dispatch
 created_at: 2026-06-13T10:45:49+08:00
-updated_at: 2026-06-13T10:45:49+08:00
+updated_at: 2026-06-14T16:42:32+08:00
+resolved_at: 2026-06-14T16:42:32+08:00
+resolver: codex
+fix_commit: 002b0c72
+validation: node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-06-13 passed; 2026-06-13 first-line manifest records builders_gate and obsidian_sync success
+prevention_added: not-needed
 source: hermes-auto
 
 # Hermes Repair Request: First-Line Viewpoints
@@ -31,3 +36,9 @@ source: hermes-auto
 ## User Escalation Needed
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
+
+## Resolution - 2026-06-14T16:42:32+08:00
+
+- fix_commit: 002b0c72
+- validation: node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-06-13 passed; 2026-06-13 first-line manifest records builders_gate and obsidian_sync success
+- prevention_added: not-needed

@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: normal
 lane: community_intelligence
 category: monitor_or_gate_failure
@@ -7,7 +7,12 @@ report_path: agent-workflow/reports/2026-06-13-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: manual dispatch
 created_at: 2026-06-13T10:45:49+08:00
-updated_at: 2026-06-13T10:45:49+08:00
+updated_at: 2026-06-14T16:42:32+08:00
+resolved_at: 2026-06-14T16:42:32+08:00
+resolver: codex
+fix_commit: 1bdabf15
+validation: community daily snapshot 2026-06-13 exists with 61 items; 2026-06-13 local publish report exists; later active-date gate failure is historical-date supersession only
+prevention_added: not-needed
 source: hermes-auto
 
 # Hermes Repair Request: Community Intelligence
@@ -33,3 +38,9 @@ source: hermes-auto
 ## User Escalation Needed
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
+
+## Resolution - 2026-06-14T16:42:32+08:00
+
+- fix_commit: 1bdabf15
+- validation: community daily snapshot 2026-06-13 exists with 61 items; 2026-06-13 local publish report exists; later active-date gate failure is historical-date supersession only
+- prevention_added: not-needed

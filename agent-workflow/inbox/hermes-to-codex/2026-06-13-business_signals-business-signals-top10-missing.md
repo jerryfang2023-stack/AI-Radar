@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: normal
 lane: business_signals
 category: business_signals_top10_missing
@@ -7,7 +7,12 @@ report_path: agent-workflow/reports/2026-06-13-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: manual dispatch
 created_at: 2026-06-13T10:45:49+08:00
-updated_at: 2026-06-13T10:45:49+08:00
+updated_at: 2026-06-14T16:42:32+08:00
+resolved_at: 2026-06-14T16:42:32+08:00
+resolver: codex
+fix_commit: e479565a
+validation: 2026-06-13 monitor gate/readiness/manifest all passed; persistent asset manifest records source-first/frontstage/pre-commit success
+prevention_added: not-needed
 source: hermes-auto
 
 # Hermes Repair Request: Business Signals / Intelligence Map / Dashboard
@@ -35,3 +40,9 @@ source: hermes-auto
 ## User Escalation Needed
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
+
+## Resolution - 2026-06-14T16:42:32+08:00
+
+- fix_commit: e479565a
+- validation: 2026-06-13 monitor gate/readiness/manifest all passed; persistent asset manifest records source-first/frontstage/pre-commit success
+- prevention_added: not-needed

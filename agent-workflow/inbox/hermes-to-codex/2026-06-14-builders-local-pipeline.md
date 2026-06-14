@@ -1,3 +1,11 @@
+status: resolved
+updated_at: 2026-06-14T16:42:32+08:00
+resolved_at: 2026-06-14T16:42:32+08:00
+resolver: codex
+fix_commit: 0f9d69ab
+validation: node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-06-14 passed; 2026-06-14 follow-builders skill local publish report exists with 26 builder items
+prevention_added: not-needed
+
 # Builders 本地管线修复 — 2026-06-14
 
 ## 问题
@@ -44,3 +52,9 @@ Hermes 已触发 GitHub fallback 补充：
 2. 确认 `builder-observation-daily-sync` 管线中各脚本的执行状态
 3. 如果是周末跳过逻辑，请明确记录
 4. 如遇脚本报错，修复后重跑今日数据
+
+## Resolution - 2026-06-14T16:42:32+08:00
+
+- fix_commit: 0f9d69ab
+- validation: node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-06-14 passed; 2026-06-14 follow-builders skill local publish report exists with 26 builder items
+- prevention_added: not-needed
