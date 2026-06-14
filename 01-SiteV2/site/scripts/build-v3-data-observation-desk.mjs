@@ -1057,6 +1057,8 @@ function frontstageChineseTitle(title = "", sourceUrl = "") {
     [/latent\.space\/p\/video-agents/u, "Latent Space\uff1a\u89c6\u9891 Agent \u6a21\u578b\u6210\u4e3a\u591a\u6a21\u6001\u5e94\u7528\u65b0\u65b9\u5411"],
     [/blog\.mean\.ceo\/vertical-ai-startup-statistics-by-industry/u, "Mean CEO\uff1a\u6309\u884c\u4e1a\u62c6\u89e3\u5782\u76f4 AI \u521b\u4e1a\u516c\u53f8\u7edf\u8ba1"],
     [/vntr\.vc\/media\/the-vertical-software-window/u, "VNTR\uff1a\u884c\u4e1a\u5782\u76f4 AI \u5de5\u5177\u5438\u5f15\u6218\u7565\u8d44\u672c"],
+    [/bizdata360\.com\/benefit-most-from-ai-workflow-automation/u, "Bizdata360\uff1a5 \u4e2a\u884c\u4e1a\u6700\u53ef\u80fd\u53d7\u76ca\u4e8e AI \u5de5\u4f5c\u6d41\u81ea\u52a8\u5316"],
+    [/databricks\.com\/blog\/state-ai-enterprise-adoption-growth-trends/u, "Databricks\uff1a\u4f01\u4e1a AI \u91c7\u7528\u4e0e\u589e\u957f\u8d8b\u52bf"],
     [/sycamore\.so\/press-releases\/sycamore-raises-65m-seed/u, "Sycamore 融资 6500 万美元，建设企业 Agent 操作系统"],
     [/infoworld\.com.*github-launches-agent-hq/u, "GitHub 推出 Agent HQ，统一管理 AI 编码代理"],
     [/bcg\.com.*200-billion-dollar-ai-opportunity/u, "BCG：科技服务业存在 2000 亿美元 AI 机会"],
