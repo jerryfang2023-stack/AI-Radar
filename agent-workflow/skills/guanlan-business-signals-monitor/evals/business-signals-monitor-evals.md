@@ -53,6 +53,20 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when Business Signals builds and validates the Business frontstage JSON before operations dashboard / topic-center data, so Top10, translation, source-first, and large-company-cap failures stop early with a categorized report.
     - Fail when source-first and frontstage regression run as separate late-stage checks after unrelated operations data has already been generated.
 
+14. `failure_category_router`
+    - Pass when every failed or warning morning check is classified as one of: `supervision_observability`, `no_run_or_stale_assets`, `raw_volume_shortfall`, `pool_mix_shortfall`, `core_supply_shortfall`, `top10_contract`, `translation_title`, `large_company_cap`, or `publication`.
+    - Pass when the repair targets the earliest responsible category and reruns the smallest relevant validation.
+    - Fail when the same category causes more than one blind full-chain rerun without targeted repair.
+
+15. `weekend_supply_policy`
+    - Pass when weekend monitor-stage quantity floors are explicit and reported, while source-first, six-gate Card entry, Top10 count, and large-company caps remain strict.
+    - Pass when weekend Top10 backfill comes only from non-large Core Pool items that pass the same Card gates.
+    - Fail when weekend recovery relaxes the large-company cap, accepts social/community/builder material as direct Business Signal facts, or treats a lower monitor floor as permission to weaken frontstage quality.
+
+16. `supply_preflight_before_cards`
+    - Pass when Raw / Pool output is checked for active Raw count, Pool/routed Pool count, Core Pool count, non-large Core Pool count, lane coverage, and predicted Top10 eligibility before Card generation and dashboard/topic-center work.
+    - Fail when Top10 shortage, Core Pool shortage, or large-company-cap pressure is discovered only after public frontstage data has already been built.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

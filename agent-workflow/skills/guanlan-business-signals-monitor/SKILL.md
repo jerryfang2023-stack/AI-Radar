@@ -50,6 +50,7 @@ For detailed chain work, load the narrower skill:
 - `agent-workflow/skills/guanlan-trend-candidate-writer/SKILL.md`
 
 For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing Top10, frontstage selection, or title-derived public fields, also read `examples/good-top10-contract.md` and `examples/bad-top10-missing.md`. When repairing Card eligibility or Core Pool promotion, also read `examples/good-six-gate-card-entry.md`. When repairing morning schedule / recovery delays, also read `examples/good-morning-handoff.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+When repairing repeated morning failures, also read `examples/good-failure-router.md` and the latest weekly failure review report.
 
 ## Workflow
 
@@ -65,10 +66,53 @@ For regression prevention, read `evals/business-signals-monitor-evals.md`. When 
    - source-first gate;
    - frontstage regression;
    - PR / merge / Pages publication.
-5. Repair the smallest script, rule, gate, or skill path needed for the failing stage.
-6. Rerun the exact failed gate or the smallest relevant validation.
-7. Add or tighten an eval before adding long prose when the failure is recurring.
-8. Close the Hermes inbox item only after validation and prevention are recorded.
+5. Classify the failure before rerunning:
+   - `supervision_observability`: GitHub lookup/report visibility warning only;
+   - `no_run_or_stale_assets`: no active same-date run or public activeDate is stale;
+   - `raw_volume_shortfall`: Raw count below minimum;
+   - `pool_mix_shortfall`: importance lane coverage gap;
+   - `core_supply_shortfall`: Core Pool or non-large Core Pool below minimum;
+   - `top10_contract`: public `top10` missing, stale, or not exactly 10;
+   - `translation_title`: English/mixed/placeholder title or title-like subject;
+   - `large_company_cap`: Top10 cap failure;
+   - `publication`: PR, merge, or Pages failure after valid assets.
+6. Repair the smallest script, rule, gate, or skill path needed for the failing category.
+7. Rerun the exact failed gate or the smallest relevant validation.
+8. Add or tighten an eval before adding long prose when the failure is recurring.
+9. Close the Hermes inbox item only after validation and prevention are recorded.
+
+## Morning Fast Path
+
+The lane should finish before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns.
+
+Use this order:
+
+1. Run the scheduled lane at 09:07 and 09:37.
+2. After Raw / Pool, verify supply before Card/frontstage work:
+   - active Raw count;
+   - Pool and routed Pool count;
+   - Core Pool count;
+   - non-large Core Pool count;
+   - funding / case / product coverage;
+   - predicted Top10 eligibility after the large-company cap.
+3. If supply is thin, repair the missing source lane first. Do not continue into dashboard, topic-center, or publication work.
+4. Generate Signal Cards from all eligible Core Pool items.
+5. Apply Top10 preselection with strict large-company caps before public JSON build.
+6. Build Business frontstage JSON.
+7. Run the unified Business frontstage gate immediately.
+8. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
+9. At 09:45 / 09:55, Hermes should dispatch or hand off one categorized repair path rather than triggering overlapping full-chain reruns.
+
+## Weekend Policy
+
+Weekend monitor quantity floors may be lighter because source volume is lower, but evidence quality and frontstage product promises do not weaken.
+
+- Keep Top10 at exactly 10.
+- Keep the frontstage large-company cap strict: at most 3 large-company cards total and at most 1 per large company.
+- If caps leave fewer than 10 eligible cards, trigger non-large-company source refill before Top10 publication.
+- Weekend backfill can only promote non-large Core Pool evidence that passes the same six Card entry gates.
+- Do not use community feedback, builders viewpoints, social posts, repo roots, package pages, marketplace listings, or generic lists as direct Business Signal Cards.
+- Do not treat a supervision warning or GitHub lookup timeout as a data failure unless active-date assets are actually stale or unhealthy.
 
 ## Lane Boundaries
 
@@ -76,6 +120,8 @@ For regression prevention, read `evals/business-signals-monitor-evals.md`. When 
 - Do not use builders viewpoints, opinion cards, or community posts as business-signal facts unless separately verified through Raw / Pool.
 - Do not restore daily observation, business brief, trend report, publiccopy, cardcopy, or copy-style blockers.
 - Do not lower Raw / Pool / Core Pool / Top10 quality gates to make a day look complete.
+- Do not relax the large-company cap to solve weekend low supply; repair non-large Core Pool supply instead.
+- Do not rerun the full chain repeatedly for the same failure category without a targeted repair.
 - Do not deploy directly from automation branches.
 
 ## Reporting
