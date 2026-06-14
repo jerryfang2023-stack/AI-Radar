@@ -1,9 +1,14 @@
 {
-  "generatedAt": "2026-06-14T01:57:26.831Z",
+  "generatedAt": "2026-06-13T16:33:53.832Z",
   "stats": {
-    "podcastsBuilt": 4,
-    "totalEpisodes": 22,
-    "errors": []
+    "podcastsBuilt": 2,
+    "totalEpisodes": 10,
+    "errors": [
+      "Latent Space: fetch failed",
+      "The MAD Podcast (Matt Turck): fetch failed",
+      "AI & I by Every: fetch failed",
+      "The MAD Podcast with Matt Turck: fetch failed"
+    ]
   },
   "podcasts": [
     {
@@ -15,60 +20,60 @@
       "name": "Unsupervised Learning (Redpoint)"
     },
     {
-      "title": "🔬ESM: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
-      "url": "https://www.latent.space/p/esmfold2",
-      "publishedAt": "Wed, 27 May 2026 17:46:16 GMT",
-      "excerpt": "Editor’s note: In our first BioHub pod with Priscilla and Mark they discussed their acquisition of EvoScale, led by Alex Rives, who is now Head of Science at BioHub. With ESM-1 they trained language models on millions of protein sequences drawn from across life, with a simple “next token” objective: predict the amino acids that have been randomly masked out, based on the context of the rest of the sequence. But they soon found that these models also learned biological structure and function, including properties the model had never been explicitly s…",
+      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
+      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
+      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…",
       "source": "podcast",
-      "name": "Latent Space"
+      "name": "Unsupervised Learning"
     },
     {
-      "title": "We Automated Everything With AI and Tripled Our Headcount",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Automated-Everything-With-AI-and-Tripled-Our-Headcount-e3jvmqf",
-      "publishedAt": "Wed, 27 May 2026 16:28:59 GMT",
-      "excerpt": "Dan Shipper runs one of the most AI-native companies today. Every has agents embedded in nearly every workflow—“if you swing a stick in our Slack, you're as likely to hit a human as an agent,” he says. And yet the company has grown from four people to 30 since GPT-3 came out, and is still hiring.Why does Dan believe there's more human work to do than ever?In a format flip for AI & I, Every's COO Brandon Gell turns the tables and interviews Dan about his latest essay, “After Automation”—an 8,000-word argument for why rising automation doesn't eliminate demand for human work, it increases it. The thesis: AI makes yesterday's expert competence cheap and widely available, which floods every field with output that's close but not quite right—and that creates more demand for the humans who can take it the rest of the way.Dan talked with Brandon about the paradox at the heart of a…",
+      "title": "Ep 88: Unpacking DeepMind&apos;s Quest for SuperIntelligence with Demis Hassabis&apos; Biographer",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
+      "publishedAt": "Mon, 1 Jun 2026 12:46:52 +0000",
+      "excerpt": "Sebastian Mallaby spent three years and 30+ hours interviewing Demis Hassabis in the back of a British pub to write The Infinity Machine, and the conversation uses that reporting to surface the most underexplored figure in AI. Demis founded the original AI lab in 2010, won a Nobel Prize, runs models that consistently top the leaderboards, and yet remains so unrecognized that Sebastian's own publisher worried no one would buy a book with his face on the cover.  The throughline is a paradox: Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists. He used to believe a single lab could carry the safety burden to AGI; he now sees safety as a collective action problem only governments can solve. He hedged DeepMind's research bets across every promising direction, and as a result missed the two most consumer-defining moments…",
       "source": "podcast",
-      "name": "AI & I by Every"
+      "name": "Unsupervised Learning (Redpoint)"
     },
     {
-      "title": "Railway: The Agent-Native Cloud — Jake Cooper",
-      "url": "https://www.latent.space/p/railway",
-      "publishedAt": "Wed, 20 May 2026 22:42:06 GMT",
-      "excerpt": "Take the 2026 AI Engineering Survey and get >$2k in credits and AIE WF tickets!This was recorded before Railway suffered a major GCP outage on May 19, despite being a multi-AZ, multi-zone mesh ring, with HA fiber interconnects between their Metal <> GCP <> AWS, because workload discoverability was unintentionally still tied to GCP. All has been resolved with a post-mortem.Railway did not start as an AI infrastructure company.It was founded in 2020 years before…",
+      "title": "Ep 88: Unpacking DeepMind&apos;s Quest for SuperIntelligence with Demis Hassabis&apos; Biographer",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
+      "publishedAt": "Mon, 1 Jun 2026 12:46:52 +0000",
+      "excerpt": "Sebastian Mallaby spent three years and 30+ hours interviewing Demis Hassabis in the back of a British pub to write The Infinity Machine, and the conversation uses that reporting to surface the most underexplored figure in AI. Demis founded the original AI lab in 2010, won a Nobel Prize, runs models that consistently top the leaderboards, and yet remains so unrecognized that Sebastian's own publisher worried no one would buy a book with his face on the cover.  The throughline is a paradox: Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists. He used to believe a single lab could carry the safety burden to AGI; he now sees safety as a collective action problem only governments can solve. He hedged DeepMind's research bets across every promising direction, and as a result missed the two most consumer-defining moments…",
       "source": "podcast",
-      "name": "Latent Space"
+      "name": "Unsupervised Learning"
     },
     {
-      "title": "Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Stainless-The-Developer-Tools-Startup-Anthropic-Just-Bought-for-300-Million-e3jk50h",
-      "publishedAt": "Wed, 20 May 2026 15:00:00 GMT",
-      "excerpt": "If your MCP server has dozens of tools, it's probably built wrong. You need tools that are specific and clear for each use case—but you also can't have too many. This creates an almost impossible tradeoff that most companies don't know how to solve.That's why we interviewed Alex Rattray, the founder and CEO of Stainless. Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic. Alex has spent years mastering how to make software talk to software, and he came on the show to share what he knows. We get into MCP and the future of the AI-native internet. [Disclosure: Dan is a small investor in Stainless.]If you found this episode interesting, please like, subscribe, comment, and share.To hear more from Dan Shipper:Subscribe to Every: https://every.to/subscribeFollow him on X: https://twitter.com/d…",
+      "title": "Ep 87: Gemini Co-Lead on World Models, RL&apos;s Next Domains & Continual Learning",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-87-gemini-co-lead-on-world-models-rls-next-domains-continual-learning-GVbiENRb",
+      "publishedAt": "Fri, 22 May 2026 12:50:04 +0000",
+      "excerpt": "Oriol Vinyals, VP of Research at Google DeepMind and co-lead of the Gemini program, joins Jacob the day after Google I/O to unpack the research underpinning Google's latest announcements and where frontier AI is heading. The conversation moves from world models (why Google has uniquely bet on them as a path to AGI, what the \"GPT moment\" for video and images would look like, and how they connect to robotics and simulation) to agents (the Spark release, why the system and model need to be optimized jointly, and why scaffolding will eventually be written by models themselves). Oriol gets into the mechanics of memory in models, drawing on his cognitive neuroscience background to argue that file-system-style non-parametric memory is more practical than baking memory into weights at serving scale. He shares his views on the limits of RL today (LLMs are data-limited in a way that game-playing RL never…",
       "source": "podcast",
-      "name": "AI & I by Every"
+      "name": "Unsupervised Learning (Redpoint)"
     },
     {
-      "title": "How Anthropic Uses Claude Fable 5 With Mike Krieger",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Anthropic-Uses-Claude-Fable-5-With-Mike-Krieger-e3kjrg7",
-      "publishedAt": "Wed, 10 Jun 2026 17:27:38 GMT",
-      "excerpt": "Mike Krieger built one of the most consequential consumer apps of the last two decades as the cofounder of Instagram. He is now at the frontier of AI-native product development as head of Anthropic Labs, the team responsible for figuring out what the most capable AI models can do in the hands of real builders.When Krieger first got access to Fable 5 months before its public release, it was exciting and disorienting. “I feel like a total newbie again,” he remembers telling his team. The way he’d been thinking about productivity, strategy, and time management was out of date. The model had outpaced his workflows.Dan Shipper talked with Krieger for AI & I about what it looks like to build with a model as capable as Fable 5, including the new rhythms, challenges, and possibilities it reveals.If you found this episode interesting, please like, subscribe, comment, and share!To hear more from Dan Ship…",
+      "title": "Ep 87: Gemini Co-Lead on World Models, RL&apos;s Next Domains & Continual Learning",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-87-gemini-co-lead-on-world-models-rls-next-domains-continual-learning-GVbiENRb",
+      "publishedAt": "Fri, 22 May 2026 12:50:04 +0000",
+      "excerpt": "Oriol Vinyals, VP of Research at Google DeepMind and co-lead of the Gemini program, joins Jacob the day after Google I/O to unpack the research underpinning Google's latest announcements and where frontier AI is heading. The conversation moves from world models (why Google has uniquely bet on them as a path to AGI, what the \"GPT moment\" for video and images would look like, and how they connect to robotics and simulation) to agents (the Spark release, why the system and model need to be optimized jointly, and why scaffolding will eventually be written by models themselves). Oriol gets into the mechanics of memory in models, drawing on his cognitive neuroscience background to argue that file-system-style non-parametric memory is more practical than baking memory into weights at serving scale. He shares his views on the limits of RL today (LLMs are data-limited in a way that game-playing RL never…",
       "source": "podcast",
-      "name": "AI & I by Every"
+      "name": "Unsupervised Learning"
     },
     {
-      "title": "🔬Scaling Past Informal AI - Carina Hong, Axiom Math",
-      "url": "https://www.latent.space/p/axiom",
-      "publishedAt": "Wed, 03 Jun 2026 19:27:49 GMT",
-      "excerpt": "In 2025, seven-month-old startup Axiom solved all 12 of the problems Putnam exam (scoring 8/12 in the time limit) a prestigious undergraduate math exam. The 12/12 score is better than the top undergraduates (110/120) and the closest AI system that reported a result (DeepSeek 103/120), although it is unclear what the people and other systems would have scored with more time. Nonetheless, the Putnam exam is legendary for its difficulty, with the median score typically being 0 or 1 points. Taken by itself, this seems like a minor feather in the cap of AI; one of a long series of accomplishments by AI systems in elite competitions with humans, starting with Deep Blue beating Kasparov.Fast forward to mid-2026, and Claude Code is eating the world. In 2024 Anthropic’s bet on code and enterprise looked lik…",
+      "title": "Ep 86: Yann LeCun on Leaving Meta, Breaking The LLM Paradigm, & Why Hinton is Wrong",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-86-yann-lecun-on-leaving-meta-breaking-the-llm-paradigm-why-hinton-is-wrong-rZ6fpa_8",
+      "publishedAt": "Fri, 15 May 2026 12:50:21 +0000",
+      "excerpt": "Yann LeCun, Turing Award winner and former Chief AI Scientist at Meta, joins Jacob Effron. The conversation centers on Yann's contrarian thesis that LLMs are a dead-end on the path to human-level intelligence, despite being useful products — because they can't predict the consequences of their actions, can't plan, and fundamentally can't model the messy, high-dimensional real world. He unpacks his alternative architecture, JEPA (Joint Embedding Predictive Architecture), which learns abstract representations rather than generating pixel-level predictions, and explains why this approach is essential for robotics, industrial applications, and any system that needs to operate beyond the substrate of language. Yann also reveals the real story behind his departure from Meta (he had zero technical influence on Llama, contrary to public narrative), the genesis of his Tapestry project for sovereign open…",
       "source": "podcast",
-      "name": "Latent Space"
+      "name": "Unsupervised Learning (Redpoint)"
     },
     {
-      "title": "⚡️Satya Nadella: No Priors x Latent Space Crossover Special at Microsoft Build",
-      "url": "https://www.latent.space/p/satya-2026",
-      "publishedAt": "Wed, 03 Jun 2026 17:13:57 GMT",
-      "excerpt": "We’ve informally heard that Satya is a listener to LS for a couple years now, but it was still absolutely surreal to meet him and do a live pod at Build, together with our friends at No Priors, the leading VC AI Podcast that we also greatly admire!We covered the MAI model technical takeaways on yesterday’s AINews, so I will focus our recap of Satya’s main messages around three elements:* Satya’s adaptation of the Bill Gates Line for positioning Microsoft as the Frontier Intelligence Platform — customers must gain much more value from the Microsoft ecosystem than Microsoft itself, by building on multi-model harnesses like OpenClaw and S…",
+      "title": "Ep 86: Yann LeCun on Leaving Meta, Breaking The LLM Paradigm, & Why Hinton is Wrong",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-86-yann-lecun-on-leaving-meta-breaking-the-llm-paradigm-why-hinton-is-wrong-rZ6fpa_8",
+      "publishedAt": "Fri, 15 May 2026 12:50:21 +0000",
+      "excerpt": "Yann LeCun, Turing Award winner and former Chief AI Scientist at Meta, joins Jacob Effron. The conversation centers on Yann's contrarian thesis that LLMs are a dead-end on the path to human-level intelligence, despite being useful products — because they can't predict the consequences of their actions, can't plan, and fundamentally can't model the messy, high-dimensional real world. He unpacks his alternative architecture, JEPA (Joint Embedding Predictive Architecture), which learns abstract representations rather than generating pixel-level predictions, and explains why this approach is essential for robotics, industrial applications, and any system that needs to operate beyond the substrate of language. Yann also reveals the real story behind his departure from Meta (he had zero technical influence on Llama, contrary to public narrative), the genesis of his Tapestry project for sovereign open…",
       "source": "podcast",
-      "name": "Latent Space"
+      "name": "Unsupervised Learning"
     }
   ]
 }
