@@ -32,6 +32,18 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when Hermes three-lane early handoff checks Community Intelligence publication at 09:30 Asia/Shanghai, rechecks at 09:45 / 09:55 when needed, dispatches the GitHub publish workflow if same-date local output exists but publication is missing, and records that GitHub cannot run the logged-in Chrome collector.
    - Fail when a GitHub run is described as fresh community collection, or when missing local Chrome collector output is hidden behind repeated publish retries.
 
+10. `pre_window_false_positive_guard`
+   - Pass when stale Community Intelligence data before 08:45 Asia/Shanghai is treated as yesterday's completed state unless there is an explicit same-day local collector failure log.
+   - Fail when a 03:00-08:44 supervision run creates a same-date missing-data failure only because the 08:30 local task has not run yet.
+
+11. `failure_stage_router`
+   - Pass when failures are classified as pre-window stale data, local collection missing, local gate failed, publish workflow failed before gate, publish workflow shell / PR failure, or published but not deployed.
+   - Fail when the repair asks for full local collection, GitHub publish, PR merge, and Pages checks without identifying the earliest broken stage.
+
+12. `weekend_volume_not_assumed`
+   - Pass when Saturday / Sunday failures are diagnosed from actual item and link counts before lowering gates.
+   - Fail when weekend is used as the explanation despite same-date data meeting the 12 item / 3 link floors.
+
 ## Repair Loop
 
 When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.
