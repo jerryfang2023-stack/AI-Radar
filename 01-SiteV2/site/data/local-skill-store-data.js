@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-06-14 18:30:32",
+    "generatedAt": "2026-06-14 18:52:29",
     "generatedDate": "2026-06-14",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight\\agent-workflow\\skills",
@@ -543,8 +543,8 @@ window.WaveSightLocalSkillStore = {
       "usage_count": 3,
       "sizeKB": 17,
       "fileCount": 8,
-      "modifiedAt": "2026-06-14 18:29:17",
-      "modifiedTime": 1781432957599.814,
+      "modifiedAt": "2026-06-14 18:51:04",
+      "modifiedTime": 1781434264615.4246,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],

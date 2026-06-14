@@ -27,8 +27,8 @@ It may call the generic `follow-builders` skill for source / digest behavior, bu
 ## Current Timing
 
 - Morning local Codex RSS collection/build/sync: 08:30 Asia/Shanghai via `builder-observation-daily-sync`.
-- GitHub RSS fallback windows: 09:17 and 09:47 Asia/Shanghai.
-- Hermes RSS handoff: 09:55 Asia/Shanghai, after the local run and both fallback windows.
+- GitHub RSS fallback window: 09:17 Asia/Shanghai.
+- Hermes RSS handoff: 09:30 Asia/Shanghai, after the local run and the single 09:17 fallback window.
 - Afternoon local `follow-builders` skill publish: 16:10 Asia/Shanghai; Hermes records it at 16:30.
 
 ## Required Reads
@@ -74,7 +74,7 @@ Classify a failure before rerunning anything:
 - `github_rss_publication`: GitHub RSS build/gate/sync passed but commit, PR, merge, or Pages failed.
 - `data_gate_failure`: `assert-follow-builders-data.mjs` failed on freshness, count, translation, URL/id, dedupe, or formal tags.
 - `obsidian_sync_failure`: same-date person/date timeline files are missing or sync is not idempotent.
-- `prewindow_false_alarm`: Hermes checked before 09:55 for RSS or before 16:30 for the afternoon skill lane.
+- `prewindow_false_alarm`: Hermes checked before 09:30 for RSS or before 16:30 for the afternoon skill lane.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
 - `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
 
@@ -85,8 +85,8 @@ Repair the earliest category and rerun the smallest validation. Do not substitut
 Use this path for the public First-Line Viewpoints page:
 
 1. At 08:30, local Codex `builder-observation-daily-sync` runs blog RSS fetch, podcast RSS fetch, page-data build, data gate, and Obsidian sync.
-2. At 09:17 and 09:47, GitHub fallback may run the same RSS page-data path when same-date data / timelines are missing.
-3. At 09:55, Hermes checks only after the local attempt and both GitHub fallback windows.
+2. At 09:17, GitHub fallback may run the same RSS page-data path when same-date data / timelines are missing.
+3. At 09:30, Hermes checks after the local attempt and the single GitHub fallback window. If the 09:17 fallback failed, same-date data is still unhealthy, and no run is active, Hermes takes over and dispatches the RSS workflow.
 4. Success means:
    - same-date `follow-builders-daily.json`;
    - remarks count greater than `0` and builders count at least `6`;

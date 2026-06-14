@@ -4,7 +4,7 @@ on:
   schedule:
     # 09:30 / 09:45 / 09:55 Asia/Shanghai. Hermes checks the three lanes
     # after their remaining primary windows: Community publish at 09:30,
-    # Business Signals at 09:45, and First-Line Viewpoints at 09:55.
+    # First-Line Viewpoints RSS at 09:30, and Business Signals at 09:45 / 09:55.
     - cron: "30 1 * * *"
     - cron: "45 1 * * *"
     - cron: "55 1 * * *"

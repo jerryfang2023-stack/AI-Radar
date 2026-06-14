@@ -327,7 +327,7 @@ function buildBusinessSignalsLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const windowPassed = hasWindowPassed(date, "09:55");
+  const windowPassed = hasWindowPassed(date, "09:30");
 
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
   const graphFile = path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json");
@@ -442,8 +442,8 @@ function buildFirstLineLane() {
   evidence.localDataHealthy = localDataHealthy;
 
   if (gh.available && !localDataHealthy) {
-    if (!gh.latest_run && hasWindowPassed(date, "09:55")) {
-      addProblem(problems, "no same-date First-Line Viewpoints RSS run after 09:55 Hermes handoff", "manual_required");
+    if (!gh.latest_run && hasWindowPassed(date, "09:30")) {
+      addProblem(problems, "no same-date First-Line Viewpoints RSS run after 09:30 Hermes handoff", "manual_required");
       actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` for the production date");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
       addProblem(problems, `First-Line Viewpoints workflow is ${gh.latest_run.status}`, "manual_required");
@@ -465,7 +465,7 @@ function buildFirstLineLane() {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 / 09:47 GitHub fallback; Hermes RSS handoff 09:55",
+    schedule: "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
     status: laneStatus(problems, warnings),
     evidence,
     problems,

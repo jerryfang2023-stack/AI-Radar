@@ -27,18 +27,18 @@ The better path is to keep the lane split into morning RSS and afternoon skill p
 | 2026-06-11 | Supervision coverage gap, final lane passed | Local reports show `follow-builders-data-gate` passed and first-line manifest success at 09:24. Weekly health still listed daily supervision for 2026-06-11 as missing. | Subsequent Hermes and weekly health automation improved supervision coverage. | Treat as supervision gap only. The lane itself should be judged by same-date gate, manifest, and Obsidian timeline sync, not by the absence of a daily supervision file alone. |
 | 2026-06-12 | No production failure; Obsidian sync rule hardened | Daily supervision passed all lanes. First-Line manifest recorded builders data, gate, and Obsidian sync success. The key risk discovered around this period was that old monthly timeline files could be mistaken for current sync success. | Skill memory/evals recorded that V3.3.6 success requires same-date person/date timeline files, not legacy `YYYY-MM.md` month files. | Correct and durable. The lane needs person/date timeline sync and idempotency checks as first-class gates. |
 | 2026-06-13 | Morning stale data, then afternoon skill publish failure | Morning supervision found first-line data date 2026-06-12, expected 2026-06-13, no same-date RSS run after the old 10:30 watchdog, and missing gate report. Afternoon Hermes found missing `01-SiteV2/content/07-points/2026-06-13-builders-viewpoints.md` and missing publish report. | Manual dispatch produced a same-date First-Line manifest with builders gate and Obsidian sync success. The afternoon runner was fixed after a PowerShell invocation issue; the output file now contains `builder_items_count: 43`. | Partly correct but incomplete. The local publish report still records `builder_items_count: 0`, so report existence alone is not enough. The skill should require output/report count consistency before considering the afternoon skill lane healthy. |
-| 2026-06-14 | Local 08:30 RSS pipeline missed; early false alarms before valid windows | Hermes builders-local report said the 08:30 Codex `builder-observation-daily-sync` pipeline did not run, `follow-builders-daily.json` was stale at 2026-06-12, no 2026-06-14 gate existed, and Obsidian timelines were stale. Separate early inbox items were later closed after pre-window gating fixed the false alarm problem. | GitHub fallback at 09:55 and later runs produced same-date `follow-builders-daily.json`, 45 remarks, 20 builders, data gate pass, Obsidian sync success, and afternoon skill output with 26 items. | Correct direction. The lane must not depend solely on local Codex automation; GitHub fallback is a valid morning recovery. But local 08:30 misses should be recorded as local automation reliability issues, not confused with data-quality failures. |
+| 2026-06-14 | Local 08:30 RSS pipeline missed; early false alarms before valid windows | Hermes builders-local report said the 08:30 Codex `builder-observation-daily-sync` pipeline did not run, `follow-builders-daily.json` was stale at 2026-06-12, no 2026-06-14 gate existed, and Obsidian timelines were stale. Separate early inbox items were later closed after pre-window gating fixed the false alarm problem. | GitHub fallback and later runs produced same-date `follow-builders-daily.json`, 45 remarks, 20 builders, data gate pass, Obsidian sync success, and afternoon skill output with 26 items. | Correct direction. The lane must not depend solely on local Codex automation; a single 09:17 GitHub fallback is a valid morning recovery. If that fallback fails and no run is active, Hermes should judge at 09:30. Local 08:30 misses should be recorded as local automation reliability issues, not confused with data-quality failures. |
 
 ## Failure Categories and Correct Repair Path
 
 | Category | Symptoms | Do first | Do not do |
 |---|---|---|---|
 | supervision_observability | Missing daily report, GitHub CLI timeout, but data may be healthy | Inspect `follow-builders-daily.json`, latest gate, manifest, and timeline files | Do not dispatch or rerun just because `gh` timed out |
-| local_rss_cron_missed | 08:30 local Codex RSS collection did not run or left stale data | Let 09:17 / 09:47 GitHub fallback run; inspect local automation logs separately | Do not call the afternoon skill route as a substitute for morning RSS data |
+| local_rss_cron_missed | 08:30 local Codex RSS collection did not run or left stale data | Let the single 09:17 GitHub fallback run; inspect local automation logs separately | Do not call the afternoon skill route as a substitute for morning RSS data |
 | github_rss_publication | RSS build/gate passed but commit/PR failed | Repair staging/PR/merge only, especially ignored report staging | Do not rerun RSS collection unless source data is stale or gate failed |
 | data_gate_failure | `assert-follow-builders-data.mjs` fails on counts, translation, URL, dedupe, tags, or freshness | Repair the builder data build or source translation path | Do not weaken translation, URL, or tag gates |
 | obsidian_sync_failure | Same-date person/date timeline files missing or second sync adds entries unexpectedly | Repair `sync-follow-builders-to-opinion-timelines.mjs` or idempotency logic | Do not accept old `YYYY-MM.md` month files as success |
-| prewindow_false_alarm | Hermes reports failure before 09:55 RSS handoff or before 16:30 skill record | Fix supervision window gating | Do not create Codex inbox items before the lane's valid check window |
+| prewindow_false_alarm | Hermes reports failure before 09:30 RSS handoff or before 16:30 skill record | Fix supervision window gating | Do not create Codex inbox items before the lane's valid check window |
 | afternoon_skill_runner | PowerShell/local script invocation fails or publish report missing after 16:30 | Repair `run-follow-builders-skill.ps1` or local publisher | Do not judge this lane from morning RSS data only |
 | afternoon_count_mismatch | Output file count and publish report count disagree, or either count is 0 | Regenerate report from output and enforce count consistency | Do not close Hermes because a report file merely exists |
 
@@ -48,8 +48,8 @@ Use two independent but coordinated paths:
 
 1. Morning RSS page path:
    - 08:30 local Codex `builder-observation-daily-sync` runs blog RSS fetch, podcast RSS fetch, page-data build, data gate, and Obsidian sync.
-   - 09:17 / 09:47 GitHub fallback runs the same page-data and Obsidian path if same-date data is missing.
-   - 09:55 Hermes checks only after both fallback windows and no active run remain.
+   - 09:17 GitHub fallback runs the same page-data and Obsidian path if same-date data is missing.
+   - 09:30 Hermes checks after the single fallback window. If the 09:17 fallback failed, same-date data is still missing, and no active run remains, Hermes dispatches and hands off.
    - Success requires same-date `follow-builders-daily.json`, remarks > 0, builders >= 6, data gate pass, same-date person/date timeline files, and no generic `Builder viewpoint` frontstage tag leakage.
 
 2. Afternoon all-builders skill path:
@@ -69,7 +69,7 @@ Use two independent but coordinated paths:
 ## Skill Updates Required
 
 - Add a First-Line failure router that distinguishes morning RSS, GitHub publication, Obsidian sync, pre-window false alarm, and afternoon skill publish failures.
-- Add a morning fast path with explicit 09:55 handoff discipline.
+- Add a morning fast path with explicit 09:30 handoff discipline after the single 09:17 fallback.
 - Add an afternoon count-consistency rule.
 - Add memory that local 08:30 misses are recoverable through GitHub fallback but must still be recorded as local automation reliability issues.
 - Add an eval that rejects old month timeline files and report-only success.

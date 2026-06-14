@@ -2,10 +2,9 @@ name: WaveSight First-Line Viewpoints PR
 
 on:
   schedule:
-    # 09:17 / 09:47 Asia/Shanghai. Hermes takes over at 09:55 when
-    # same-date data is still missing and no same-date run is active.
+    # 09:17 Asia/Shanghai. Hermes takes over at 09:30 when
+    # same-date data is still missing, the 09:17 fallback failed, or no same-date run is active.
     - cron: "17 1 * * *"
-    - cron: "47 1 * * *"
   workflow_dispatch:
     inputs:
       date:

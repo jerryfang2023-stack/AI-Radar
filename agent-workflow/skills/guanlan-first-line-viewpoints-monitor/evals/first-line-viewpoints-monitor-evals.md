@@ -29,7 +29,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
 
 9. `three_lane_early_handoff`
-   - Pass when Hermes three-lane early handoff checks First-Line Viewpoints RSS at 09:55 Asia/Shanghai, after the 08:30 local Codex RSS collection/build/sync attempt and the 09:17 / 09:47 GitHub fallback windows, and dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` if same-date builders data / Obsidian person-date timelines are missing and no run is active.
+   - Pass when Hermes three-lane early handoff checks First-Line Viewpoints RSS at 09:30 Asia/Shanghai, after the 08:30 local Codex RSS collection/build/sync attempt and the single 09:17 GitHub fallback window, and dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` if the 09:17 fallback failed, same-date builders data / Obsidian person-date timelines are missing, and no run is active.
    - Fail when the lane waits until the old 10:30 supervision check without an early report, dispatch action, and Codex handoff path.
 
 10. `afternoon_follow_builders_skill_lane`
@@ -42,9 +42,9 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when RSS collection, Obsidian sync, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
 
 12. `morning_rss_handoff_window`
-    - Pass when Hermes waits until 09:55 Asia/Shanghai before declaring First-Line RSS missing, after the 08:30 local Codex run and 09:17 / 09:47 GitHub fallback windows.
+    - Pass when Hermes waits until 09:30 Asia/Shanghai before declaring First-Line RSS missing, after the 08:30 local Codex run and the single 09:17 GitHub fallback window.
     - Pass when a healthy GitHub fallback can recover a missed local 08:30 run, while the local miss is still recorded as automation reliability drift.
-    - Fail when Hermes creates a First-Line RSS repair inbox before the valid handoff window.
+    - Fail when Hermes creates a First-Line RSS repair inbox before the 09:30 handoff window.
 
 13. `afternoon_skill_count_consistency`
     - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, and both counts match.
