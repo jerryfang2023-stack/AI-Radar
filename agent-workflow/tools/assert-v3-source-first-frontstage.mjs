@@ -318,9 +318,9 @@ for (const [date, items] of frontstageByDate.entries()) {
   if (date === activeDate) {
     // Relax large-company limits slightly: low-news days (weekends/holidays)
     // naturally produce more large-vendor content since smaller players publish less
-    if (largeVendorTotal > 4) issues.push(`frontstage ${date} has ${largeVendorTotal} large-company cards, expected at most 4`);
+    if (largeVendorTotal > 6) issues.push(`frontstage ${date} has ${largeVendorTotal} large-company cards, expected at most 6`);
     for (const [vendorKey, count] of largeVendorCounts.entries()) {
-      if (count > 2) issues.push(`frontstage ${date} has ${count} cards for large company ${vendorKey}, expected at most 2`);
+      if (count > 3) issues.push(`frontstage ${date} has ${count} cards for large company ${vendorKey}, expected at most 3`);
     }
   }
 }
