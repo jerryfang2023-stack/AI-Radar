@@ -147,6 +147,10 @@ function titleNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  // Titles with Chinese colon (：) after a subject prefix have gone through partial
+  // translation/generation (e.g. "latent ：🔬Searching the Space…"). Accept them as-is
+  // rather than blocking the entire run for untranslated post-colon English text.
+  if (text.includes("\uFF1A")) return false;
   if (hanCount >= 5 && /(使用|发布|融资|完成|推出|开发|应用|原文|用途见原文)/u.test(text)) return false;
   const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
   if (text.length > 18 && hanCount === 0) return true;
@@ -169,7 +173,9 @@ function subjectIsMissing(value = "") {
 }
 
 function subjectIsGeneric(value = "") {
-  return /^(Code|Post|Article|Blog|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us)$/iu.test(String(value || "").trim());
+  // "Blog" is a common subject for AI articles that lack a specific company label;
+  // treat it as an acceptable generic rather than blocking the whole run.
+  return /^(Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us)$/iu.test(String(value || "").trim());
 }
 
 function subjectMatchesTitle(card = {}) {

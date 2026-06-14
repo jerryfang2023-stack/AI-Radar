@@ -1,0 +1,155 @@
+{
+  "ok": false,
+  "status": "manual_required",
+  "date": "2026-06-13",
+  "generated_at": "2026-06-13T02:45:49.861Z",
+  "timezone": "Asia/Shanghai",
+  "lanes": [
+    {
+      "id": "community_intelligence",
+      "label": "Community Intelligence",
+      "schedule": "08:30 local task; watchdog 08:45; publish watchdog 08:55",
+      "status": "manual_required",
+      "evidence": {
+        "generatedAt": "2026-06-12T08:34:21.844Z",
+        "generatedDate": "2026-06-12",
+        "items": 61,
+        "links": 57,
+        "selectedKeywords": 8,
+        "collectorErrors": 0,
+        "gateStatus": "missing",
+        "gateReport": "missing",
+        "scheduledTask": {
+          "available": false,
+          "warning": "Scheduled task check is Windows-only"
+        },
+        "github": {
+          "available": true,
+          "latest_run": null,
+          "same_date_run_count": 0,
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-06-13T00:33:44Z",
+              "number": 46,
+              "state": "MERGED",
+              "updatedAt": "2026-06-13T00:33:52Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/46"
+            }
+          ],
+          "pr_warning": ""
+        }
+      },
+      "problems": [
+        {
+          "message": "community data date is 2026-06-12, expected 2026-06-13",
+          "severity": "failed"
+        },
+        {
+          "message": "no same-date Community Intelligence publish workflow after 08:55 watchdog",
+          "severity": "manual_required"
+        }
+      ],
+      "warnings": [
+        "missing community gate report: agent-workflow/reports/2026-06-13-community-intelligence-gate.md",
+        "Scheduled task check is Windows-only"
+      ],
+      "actions": [
+        "manual dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass",
+        "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
+        "send Codex a community_intelligence repair request with log and gate report path"
+      ]
+    },
+    {
+      "id": "business_signals",
+      "label": "Business Signals / Intelligence Map / Dashboard",
+      "schedule": "09:07 / 09:37 / 10:07 Asia/Shanghai; watchdog 10:20",
+      "status": "manual_required",
+      "evidence": {
+        "activeDate": "2026-06-12",
+        "generatedAt": "2026-06-12T05:54:36.400Z",
+        "frontstageSelected": 0,
+        "supplyConstrained": null,
+        "coreCandidateCount": null,
+        "qualifiedCount": null,
+        "signalCardFiles": 0,
+        "manifest": "missing",
+        "qualityGateStatus": "missing",
+        "readinessReport": "missing",
+        "github": {
+          "available": true,
+          "latest_run": null,
+          "same_date_run_count": 0,
+          "prs": [],
+          "pr_warning": ""
+        }
+      },
+      "problems": [
+        {
+          "message": "business-signal activeDate is 2026-06-12, expected 2026-06-13",
+          "severity": "failed"
+        },
+        {
+          "message": "Top10 selected count is 0, expected 10",
+          "severity": "failed"
+        },
+        {
+          "message": "signal card files 0 below 10",
+          "severity": "failed"
+        },
+        {
+          "message": "no same-date Business Signals GitHub run after 10:20 watchdog",
+          "severity": "manual_required"
+        }
+      ],
+      "warnings": [
+        "missing same-date persistent asset manifest: agent-workflow/reports/2026-06-13-persistent-asset-manifest.json",
+        "missing quality gate report: agent-workflow/reports/2026-06-13-guanlan-monitor-quality-gate.md",
+        "missing readiness report: agent-workflow/reports/2026-06-13-daily-production-chain-readiness.md"
+      ],
+      "actions": [
+        "manual dispatch `.github/workflows/daily-persistent-assets-pr.yml` for the production date",
+        "send Codex a business_signals repair request with failed gate and report path"
+      ]
+    },
+    {
+      "id": "first_line_viewpoints",
+      "label": "First-Line Viewpoints",
+      "schedule": "09:17 / 09:47 / 10:17 Asia/Shanghai; watchdog 10:30",
+      "status": "manual_required",
+      "evidence": {
+        "generatedAt": "2026-06-12T08:31:13.368Z",
+        "generatedDate": "2026-06-12",
+        "feedGeneratedAt": "2026-06-12T07:57:08.681Z",
+        "remarks": 44,
+        "builders": 19,
+        "gateStatus": "missing",
+        "gateReport": "missing",
+        "github": {
+          "available": true,
+          "latest_run": null,
+          "same_date_run_count": 0,
+          "prs": [],
+          "pr_warning": ""
+        }
+      },
+      "problems": [
+        {
+          "message": "first-line data date is 2026-06-12, expected 2026-06-13",
+          "severity": "failed"
+        },
+        {
+          "message": "no same-date First-Line Viewpoints GitHub run after 10:30 watchdog",
+          "severity": "manual_required"
+        }
+      ],
+      "warnings": [
+        "missing follow-builders gate report: agent-workflow/reports/2026-06-13-follow-builders-data-gate.md"
+      ],
+      "actions": [
+        "manual dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` for the production date",
+        "send Codex a first_line_viewpoints repair request with gate report path"
+      ]
+    }
+  ]
+}
