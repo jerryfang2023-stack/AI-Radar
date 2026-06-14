@@ -24,7 +24,8 @@ It is the lane owner. It may call narrower skills such as `guanlan-daily-monitor
 
 ## Current Timing
 
-- GitHub primary production windows: 09:07 and 09:37 Asia/Shanghai.
+- GitHub primary production window: 08:57 Asia/Shanghai.
+- Conditional health dispatch: 09:27 Asia/Shanghai. It checks same-date Business Signals data and active/successful runs, then dispatches the primary workflow only when no healthy output and no active/successful same-date run exists.
 - Hermes three-lane early handoff: 09:45 and 09:55 Asia/Shanghai.
 - The old Business-only Hermes handoff workflow is manual compatibility only and must not be scheduled in parallel.
 
@@ -83,25 +84,27 @@ When repairing repeated morning failures, also read `examples/good-failure-route
 
 ## Morning Fast Path
 
-The lane should finish before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns.
+The lane targets a healthy Top10 before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns. Treat 10:00 as a target checkpoint, not as permission to lower gates.
 
 Use this order:
 
-1. Run the scheduled lane at 09:07 and 09:37.
-2. After Raw / Pool, verify supply before Card/frontstage work:
+1. Run the scheduled primary production lane at 08:57.
+2. Run the 09:27 health dispatch. If same-date data is healthy, or a same-date run is queued / in progress / successful, wait instead of dispatching another full chain.
+3. After Raw / Pool, verify supply before Card/frontstage work:
    - active Raw count;
    - Pool and routed Pool count;
    - Core Pool count;
    - non-large Core Pool count;
    - funding / case / product coverage;
    - predicted Top10 eligibility after the large-company cap.
-3. If supply is thin, repair the missing source lane first. Do not continue into dashboard, topic-center, or publication work.
-4. Generate Signal Cards from all eligible Core Pool items.
-5. Apply Top10 preselection with strict large-company caps before public JSON build.
-6. Build Business frontstage JSON.
-7. Run the unified Business frontstage gate immediately.
-8. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
-9. At 09:45 / 09:55, Hermes should dispatch or hand off one categorized repair path rather than triggering overlapping full-chain reruns.
+4. If supply is thin, repair the missing source lane first. Do not continue into dashboard, topic-center, or publication work.
+5. Generate Signal Cards from all eligible Core Pool items.
+6. Apply Top10 preselection with strict large-company caps before public JSON build.
+7. Build Business frontstage JSON.
+8. Run the unified Business frontstage gate immediately.
+9. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
+10. At 09:45 / 09:55, Hermes should dispatch or hand off one categorized repair path rather than triggering overlapping full-chain reruns.
+11. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, Top10 count, and whether local sync is blocked.
 
 ## Weekend Policy
 

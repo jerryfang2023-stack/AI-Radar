@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-06-13
+last_updated: 2026-06-14
 use_when:
   - github automation
   - daily monitoring
@@ -60,7 +60,8 @@ An existing `automation/business-signals-<date>` branch must not block a schedul
 
 The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current morning schedule truth is:
 
-- Business Signals primary production: 09:07 / 09:37 Asia/Shanghai.
+- Business Signals primary production: 08:57 Asia/Shanghai.
+- Business Signals conditional health dispatch: 09:27 Asia/Shanghai. This is not a blind second production cron; it dispatches `.github/workflows/daily-persistent-assets-pr.yml` only when same-date Business Signals data is unhealthy and no same-date run is queued, in progress, or successful.
 - First-Line Viewpoints RSS primary production: 08:30 local Codex `builder-observation-daily-sync` for RSS collection, page-data build, and Obsidian sync; 09:17 GitHub fallback.
 - First-Line Viewpoints skill publish: local follow-builders skill at 16:10 Asia/Shanghai; Hermes records it at 16:30.
 - Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine via Windows task `WaveSight Community Intelligence Daily`, then GitHub publish at 08:45 / 10:45. Codex automation `community-intelligence-daily-local` is paused to avoid duplicate local collection.
@@ -68,8 +69,9 @@ The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. I
 
 Operational rules:
 
-1. The primary Business Signals schedule is only 09:07 and 09:37 Asia/Shanghai.
-2. If both Business Signals primary windows fail, or if same-date Business Signals assets are still missing / unhealthy and no run is active by 09:45 or 09:55, Hermes dispatches the Business Signals workflow.
+1. The primary Business Signals production schedule is 08:57 Asia/Shanghai.
+2. The 09:27 Business Signals health dispatch checks same-date data and active/successful runs before dispatching. It must wait when a same-date workflow is queued or in progress.
+3. If Business Signals primary production / health dispatch fails, or if same-date Business Signals assets are still missing / unhealthy and no run is active by 09:45 or 09:55, Hermes dispatches the Business Signals workflow.
 3. Hermes checks Community Intelligence publish at 09:30. If same-date local collector output exists but publication is missing / unhealthy and no publish run is active, Hermes dispatches the Community Intelligence GitHub publish workflow. If local output is missing, Hermes writes a local / Codex repair handoff instead of pretending GitHub can collect.
 4. Hermes checks First-Line Viewpoints RSS at 09:30, after the 08:30 local Codex collection/build/sync attempt and the single 09:17 GitHub fallback window. If the 09:17 fallback failed, same-date builders data / Obsidian timelines are missing, and no run is active, Hermes dispatches the First-Line Viewpoints RSS workflow.
 5. Hermes records the afternoon follow-builders skill publish at 16:30. If the local publish report or generated builders viewpoints file is missing and no run is active, Hermes dispatches the local follow-builders skill publisher.
@@ -95,7 +97,7 @@ Workflow: `.github/workflows/daily-recovery-watchdog.yml`
 
 Script: `agent-workflow/tools/dispatch-daily-recovery.mjs`
 
-The recovery watchdog provides bounded automatic second runs. It is not the primary Business Signals morning strategy; Business Signals should be handed to Hermes early handoff before 10:00 instead of waiting for repeated late-day schedule slots. The watchdog remains a generic late safety net for failed workflow runs and non-business lanes.
+The recovery watchdog provides bounded automatic second runs after failed workflow events or manual dispatch. It is not the primary Business Signals morning strategy; Business Signals should be handled by the 09:27 health dispatch and Hermes early handoff before 10:00 instead of waiting for repeated late-day schedule slots. The watchdog remains a generic safety net for failed workflow runs and non-business lanes.
 
 Recovery rules:
 
@@ -123,7 +125,7 @@ Package command:
 npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>
 ```
 
-Hermes Morning Recovery runs after the primary production windows and the first recovery-watchdog slot. It is the morning supervisor fallback, not a new production lane.
+Hermes Morning Recovery runs after the primary production, health dispatch, and Hermes early handoff windows. It is the morning supervisor fallback, not a new production lane.
 
 Execution order:
 
@@ -200,7 +202,7 @@ This skill lane does not write business-signal Cards, relationship graph data, t
 
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
-| Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai; `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 for this lane | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, unified Business frontstage gate, pre-commit freshness | independent automation PR to `main` |
+| Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 08:57 Asia/Shanghai; `.github/workflows/business-signals-health-dispatch.yml` at 09:27 for conditional dispatch; `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 for this lane | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, unified Business frontstage gate, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | unified Business frontstage gate from the business-signal chain | included in the Business Signals PR |
 | First-Line Viewpoints | Local Codex morning RSS collection/build/sync + GitHub Actions RSS fallback + local afternoon follow-builders skill lane | `builder-observation-daily-sync` at 08:30 Asia/Shanghai for morning RSS collection, page-data build, and Obsidian sync; `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai for RSS fallback; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai for the skill publish; Hermes checks RSS at 09:30 and records the skill lane at 16:30 | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS; local publish report and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
 | Community Intelligence | Windows task `WaveSight Community Intelligence Daily` + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | local collection at 08:30 Asia/Shanghai; Codex automation `community-intelligence-daily-local` stays paused as duplicate fallback; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 10:45 for publication; Hermes three-lane early handoff at 09:30 / 09:45 / 09:55 for publish supervision | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |

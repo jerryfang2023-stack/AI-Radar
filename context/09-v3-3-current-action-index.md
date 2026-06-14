@@ -1,7 +1,7 @@
 ﻿---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-13
+last_updated: 2026-06-14
 use_when:
   - choose current action
   - recover missing actions
@@ -78,8 +78,9 @@ Purpose:
 
 Primary route:
 
-- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai.
-- Hermes early handoff: `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 Asia/Shanghai for Business Signals when the primary windows fail or no same-date success is visible.
+- GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 08:57 Asia/Shanghai.
+- Conditional health dispatch: `.github/workflows/business-signals-health-dispatch.yml` at 09:27 Asia/Shanghai. It dispatches the primary Business workflow only when same-date Business data is unhealthy and no same-date run is queued, in progress, or successful.
+- Hermes early handoff: `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 Asia/Shanghai for Business Signals when the primary production / health dispatch path fails or no same-date success is visible.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
 Reads:

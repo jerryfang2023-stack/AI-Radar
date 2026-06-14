@@ -2,8 +2,8 @@ name: WaveSight Hermes Morning Recovery
 
 on:
   schedule:
-    # 10:55 / 11:55 Asia/Shanghai. Runs after the primary production
-    # windows and the first recovery watchdog slot, then records the
+    # 10:55 / 11:55 Asia/Shanghai. Runs after the primary production,
+    # conditional health dispatch, and Hermes early handoff windows, then records the
     # supervision result, recovery action, and Codex handoff artifacts.
     - cron: "55 2 * * *"
     - cron: "55 3 * * *"

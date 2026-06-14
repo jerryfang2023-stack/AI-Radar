@@ -9,7 +9,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 
 ## 2026-06-13
 
-- Business Signals should not depend on repeated late schedule loops. Keep 09:07 / 09:37 as the primary windows, then hand off to Hermes at 09:45 / 09:55 so failures are dispatched, reported, and routed to Codex before 10:00.
+- Business Signals should not depend on repeated late schedule loops. Keep the morning path bounded, then hand off to Hermes at 09:45 / 09:55 so failures are dispatched, reported, and routed to Codex before 10:00.
 - Core Pool -> Signal Card entry should use six grouped gates: source auditability, evidence quality, business-signal scope, valid page type, commercial importance, and fact-type constraints. Keep field-level details as diagnostics under those gates; do not expose scattered field checks as separate Card policy or weaken source-first requirements to fill Top10.
 
 ## 2026-06-14
@@ -20,3 +20,4 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - Weekend mode may lower monitor-stage quantity floors, but it must not relax source-first, six-gate Card entry, Top10 count, or large-company caps. If the strict cap leaves fewer than 10 cards, refill non-large Core Pool supply before publication.
 - A GitHub lookup timeout or missing local report is a supervision evidence gap, not proof that Business Signals data failed. Check same-date run status and activeDate/top10/card counts before dispatching or rerunning.
 - The morning path should fail before expensive downstream work: Raw/Pool supply preflight, Card generation, Top10 preselection, Business frontstage JSON, unified Business frontstage gate, then dashboard/topic-center/publication.
+- Morning scheduling was optimized to 08:57 primary production plus 09:27 conditional health dispatch. The health dispatch must wait when same-date data is healthy or a same-date run is queued, in progress, or successful; do not restore blind second full-chain cron runs.

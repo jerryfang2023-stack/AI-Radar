@@ -1,11 +1,6 @@
 name: WaveSight Daily Recovery Watchdog
 
 on:
-  schedule:
-    # 10:25 Asia/Shanghai. Generic final morning safety check. Business
-    # Signals uses Hermes early handoff at 09:45 / 09:55 and should not
-    # depend on repeated late-day cron loops.
-    - cron: "25 2 * * *"
   workflow_run:
     workflows:
       - WaveSight Business Signals PR

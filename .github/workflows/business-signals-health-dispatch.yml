@@ -1,0 +1,85 @@
+name: WaveSight Business Signals Health Dispatch
+
+on:
+  schedule:
+    # 09:27 Asia/Shanghai. Check same-date Business Signals health and active
+    # runs; dispatch the primary workflow only when no healthy output and no
+    # active/successful same-date run exists.
+    - cron: "27 1 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Asia/Shanghai date to check, formatted as YYYY-MM-DD. Leave empty for today."
+        required: false
+        type: string
+      pass_score:
+        description: "Daily Monitor diagnostic score reference for a dispatched production run."
+        required: false
+        default: "85"
+        type: string
+      dry_run:
+        description: "Write reports without dispatching the Business Signals workflow."
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: wavesight-business-signals-health-dispatch-${{ github.event.inputs.date || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  business-signals-health-dispatch:
+    name: Check Business Signals health and conditionally dispatch
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Shanghai
+      GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+      DISPATCH_DATE: ${{ github.event.inputs.date || '' }}
+      DISPATCH_PASS_SCORE: ${{ github.event.inputs.pass_score || '85' }}
+      DISPATCH_DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Syntax check Business Signals health dispatch
+        run: node --check agent-workflow/tools/run-business-signals-health-dispatch.mjs
+
+      - name: Run Business Signals health dispatch
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=("--pass-score=${DISPATCH_PASS_SCORE}")
+
+          if [ -n "$DISPATCH_DATE" ]; then
+            args+=("--date=${DISPATCH_DATE}")
+          fi
+
+          if [ "$DISPATCH_DRY_RUN" = "true" ]; then
+            args+=("--dry-run=true")
+          fi
+
+          node agent-workflow/tools/run-business-signals-health-dispatch.mjs "${args[@]}"
+
+      - name: Upload Business Signals health dispatch artifacts
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: wavesight-business-signals-health-dispatch-${{ github.run_id }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            agent-workflow/reports/*-business-signals-health-dispatch.json
+            agent-workflow/reports/*-business-signals-health-dispatch.md
+            agent-workflow/reports/business-signals-health-dispatch-latest.json
+            agent-workflow/reports/business-signals-health-dispatch-latest.md

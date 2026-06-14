@@ -101,6 +101,7 @@ function countFiles(dir, pattern) {
 
 function laneStatus(problems, warnings) {
   if (problems.some((item) => item.severity === "manual_required")) return "manual_required";
+  if (problems.length && problems.every((item) => item.severity === "waiting")) return "waiting";
   if (problems.length) return "failed";
   if (warnings.length) return "warning";
   return "passed";
@@ -236,7 +237,7 @@ function parseCommandJson(result, fallback = null) {
   }
 }
 
-function githubWorkflowState(workflowFile, branchHead) {
+function githubWorkflowState(workflowFile, branchHead = "") {
   if (githubMode === "false" || githubMode === "off") {
     return { available: false, skipped: true, warning: "GitHub check skipped by flag" };
   }
@@ -259,19 +260,21 @@ function githubWorkflowState(workflowFile, branchHead) {
   const sameDateRuns = runs.filter((run) => shanghaiDate(run.createdAt) === date);
   const latest = sameDateRuns[0] || null;
 
-  const prResult = runOptional("gh", [
-    "pr",
-    "list",
-    "--state",
-    "all",
-    "--head",
-    branchHead,
-    "--json",
-    "number,state,isDraft,mergedAt,url,updatedAt",
-    "--limit",
-    "5",
-  ]);
-  const prs = parseGhJson(prResult, []);
+  const prResult = branchHead
+    ? runOptional("gh", [
+      "pr",
+      "list",
+      "--state",
+      "all",
+      "--head",
+      branchHead,
+      "--json",
+      "number,state,isDraft,mergedAt,url,updatedAt",
+      "--limit",
+      "5",
+    ])
+    : { ok: true, stdout: "[]" };
+  const prs = branchHead ? parseGhJson(prResult, []) : [];
 
   return {
     available: true,
@@ -279,6 +282,21 @@ function githubWorkflowState(workflowFile, branchHead) {
     same_date_run_count: sameDateRuns.length,
     prs,
     pr_warning: prResult.ok ? "" : `PR check unavailable: ${prResult.stderr.trim() || "unknown error"}`,
+  };
+}
+
+function localGitSyncState() {
+  const status = runOptional("git", ["status", "--porcelain"], 8000);
+  const head = runOptional("git", ["rev-parse", "HEAD"], 8000);
+  const origin = runOptional("git", ["rev-parse", "origin/main"], 8000);
+  return {
+    available: status.ok && head.ok && origin.ok,
+    clean: status.ok ? !status.stdout.trim() : null,
+    dirtyFiles: status.ok ? status.stdout.trim().split(/\r?\n/u).filter(Boolean).length : null,
+    head: head.ok ? head.stdout.trim() : "",
+    originMain: origin.ok ? origin.stdout.trim() : "",
+    fastForwarded: head.ok && origin.ok ? head.stdout.trim() === origin.stdout.trim() : null,
+    warning: status.ok ? "" : status.stderr.trim(),
   };
 }
 
@@ -327,7 +345,7 @@ function buildBusinessSignalsLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const windowPassed = hasWindowPassed(date, "09:30");
+  const windowPassed = hasWindowPassed(date, "09:45");
 
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
   const graphFile = path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json");
@@ -344,6 +362,10 @@ function buildBusinessSignalsLane() {
     : [];
   const cardFiles = countFiles(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"), new RegExp(`^${date}--signal--.*\\.md$`, "u"));
   const gh = githubWorkflowState("daily-persistent-assets-pr.yml", `automation/business-signals-${date}`);
+  const pages = githubWorkflowState("github-pages.yml");
+  const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
+  const pagesActive = pages.latest_run?.status === "queued" || pages.latest_run?.status === "in_progress";
+  const publicationClosureWindowPassed = hasWindowPassed(date, "10:50");
 
   evidence.activeDate = activeDate;
   evidence.generatedAt = data?.meta?.generatedAt || "";
@@ -356,6 +378,17 @@ function buildBusinessSignalsLane() {
   evidence.qualityGateStatus = statusFromGate(qualityGateFile);
   evidence.readinessReport = exists(readinessFile) ? rel(readinessFile) : "missing";
   evidence.github = gh;
+  evidence.publicationClosure = {
+    checkpoint: "10:50",
+    businessDataSameDate: activeDate === date,
+    top10Count: selection?.selectedCount ?? sameDateCards.length,
+    businessPrMerged: Boolean(mergedPr),
+    businessPrUrl: mergedPr?.url || "",
+    pagesSuccess: pages.latest_run?.conclusion === "success",
+    pagesActive,
+    pagesRunUrl: pages.latest_run?.url || "",
+    localSync: localGitSyncState(),
+  };
 
   if (windowPassed) {
     if (!exists(dataFile)) addProblem(problems, `missing business-signal data file: ${rel(dataFile)}`);
@@ -372,12 +405,29 @@ function buildBusinessSignalsLane() {
     if (evidence.readinessReport === "missing") warnings.push(`missing readiness report: ${rel(readinessFile)}`);
   }
 
+  if (publicationClosureWindowPassed) {
+    if (!evidence.publicationClosure.businessPrMerged && !gh.latest_run) {
+      warnings.push("10:50 publication closure found no merged Business Signals PR and no same-date workflow run");
+    }
+    if (pagesActive) {
+      addProblem(problems, `GitHub Pages workflow is ${pages.latest_run.status}; publication closure should wait`, "waiting");
+      actions.push("wait for GitHub Pages workflow completion before declaring publication missing");
+    } else if (pages.available && pages.latest_run?.conclusion && pages.latest_run.conclusion !== "success") {
+      warnings.push(`latest same-date GitHub Pages workflow conclusion is ${pages.latest_run.conclusion}`);
+    } else if (pages.available && !pages.latest_run) {
+      warnings.push("10:50 publication closure found no same-date GitHub Pages run");
+    }
+    if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
+      warnings.push(`local Obsidian sync may be blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`);
+    }
+  }
+
   if (gh.available) {
     if (!gh.latest_run && hasWindowPassed(date, "09:55")) {
       addProblem(problems, "no same-date Business Signals GitHub run after 09:55 Hermes early handoff", "manual_required");
-      actions.push("run `.github/workflows/hermes-business-signals-early-handoff.yml` or dispatch `.github/workflows/daily-persistent-assets-pr.yml` for the production date");
+      actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-persistent-assets-pr.yml` for the production date");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
-      addProblem(problems, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`, "manual_required");
+      addProblem(problems, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`, "waiting");
       actions.push("wait for Business Signals workflow completion before declaring data missing");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
       addProblem(problems, `Business Signals workflow conclusion is ${gh.latest_run.conclusion}`);
@@ -394,7 +444,7 @@ function buildBusinessSignalsLane() {
   return {
     id: "business_signals",
     label: "Business Signals / Intelligence Map / Dashboard",
-    schedule: "09:07 / 09:37 Asia/Shanghai; Hermes early handoff 09:45 / 09:55",
+    schedule: "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
@@ -446,7 +496,7 @@ function buildFirstLineLane() {
       addProblem(problems, "no same-date First-Line Viewpoints RSS run after 09:30 Hermes handoff", "manual_required");
       actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` for the production date");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
-      addProblem(problems, `First-Line Viewpoints workflow is ${gh.latest_run.status}`, "manual_required");
+      addProblem(problems, `First-Line Viewpoints workflow is ${gh.latest_run.status}`, "waiting");
       actions.push("wait for First-Line Viewpoints workflow completion");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
       addProblem(problems, `First-Line Viewpoints workflow conclusion is ${gh.latest_run.conclusion}`);
@@ -577,7 +627,7 @@ function buildCommunityLane() {
       addProblem(problems, "no same-date Community Intelligence publish workflow after 09:30 Hermes handoff", "manual_required");
       actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
-      addProblem(problems, `Community Intelligence publish workflow is ${gh.latest_run.status}`, "manual_required");
+      addProblem(problems, `Community Intelligence publish workflow is ${gh.latest_run.status}`, "waiting");
       actions.push("wait for Community Intelligence publish workflow completion");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
       addProblem(problems, `Community Intelligence publish workflow conclusion is ${gh.latest_run.conclusion}`);
@@ -653,6 +703,7 @@ function buildSkillOpsLane() {
 function aggregateStatus(lanes) {
   if (lanes.some((lane) => lane.status === "failed")) return "failed";
   if (lanes.some((lane) => lane.status === "manual_required")) return "manual_required";
+  if (lanes.some((lane) => lane.status === "waiting")) return "waiting";
   if (lanes.some((lane) => lane.status === "warning")) return "warning";
   return "passed";
 }
@@ -690,6 +741,7 @@ function writeHermesInbox(payload, mdPath) {
   const created = [];
 
   for (const lane of payload.lanes) {
+    if (lane.status === "waiting") continue;
     if (!lane.problems.length) continue;
     const categories = incidentCategories(lane);
     const primaryCategory = categories[0] || "repair";
@@ -809,7 +861,7 @@ function main() {
   ];
   const status = aggregateStatus(lanes);
   const payload = {
-    ok: status === "passed" || status === "warning",
+    ok: status === "passed" || status === "warning" || status === "waiting",
     status,
     date,
     generated_at: new Date().toISOString(),

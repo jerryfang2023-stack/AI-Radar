@@ -31,9 +31,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when publication uses automation branch -> PR -> `main` -> GitHub Pages, not direct deployment or direct generated-data push to `main`.
 
 9. `before_10_hermes_handoff`
-   - Pass when Business Signals has only two primary schedule windows, 09:07 and 09:37 Asia/Shanghai, and Hermes three-lane early handoff runs at 09:45 / 09:55 to dispatch the lane if primary attempts fail or if no healthy same-date assets are visible and no run is active.
+   - Pass when Business Signals has one primary production window at 08:57 Asia/Shanghai and one 09:27 conditional health-dispatch window that waits when same-date data is healthy or a same-date run is queued / in progress / successful.
+   - Pass when Hermes three-lane early handoff runs at 09:45 / 09:55 to dispatch the lane if primary production / health dispatch failed, or if no healthy same-date assets are visible and no run is active.
    - Pass when the scheduled early handoff entry is `.github/workflows/hermes-three-lane-early-handoff.yml`, while the older Business-only handoff workflow remains manual compatibility only.
    - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops instead of producing a Hermes report, recovery action, and Codex handoff before 10:00.
+   - Fail when a queued / in-progress same-date workflow is reported as `manual_required` instead of `waiting`.
 
 10. `six_gate_card_entry_contract`
     - Pass when Core Pool -> Signal Card eligibility is expressed through exactly these grouped gates: `source_auditability`, `evidence_quality`, `business_signal_scope`, `valid_page_type`, `commercial_importance`, and `fact_type_constraints`.
@@ -66,6 +68,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 16. `supply_preflight_before_cards`
     - Pass when Raw / Pool output is checked for active Raw count, Pool/routed Pool count, Core Pool count, non-large Core Pool count, lane coverage, and predicted Top10 eligibility before Card generation and dashboard/topic-center work.
     - Fail when Top10 shortage, Core Pool shortage, or large-company-cap pressure is discovered only after public frontstage data has already been built.
+
+17. `publication_closure_checkpoint`
+    - Pass when the 10:50 supervision checkpoint records merged Business Signals PR state, GitHub Pages state, same-date Business data, Top10 count, and local sync cleanliness / fast-forward status.
+    - Fail when publication is called complete without checking both PR / Pages state and same-date frontstage data.
 
 ## Repair Loop
 

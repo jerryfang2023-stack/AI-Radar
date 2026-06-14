@@ -4,8 +4,9 @@ Use this as the expected behavior when the 09:45 / 09:55 Hermes early handoff ch
 
 ## Situation
 
-- 09:07 Business Signals run completed with `failure`.
-- 09:37 Business Signals run completed with `failure`, or no same-date success is visible and no run is active by 09:55.
+- 08:57 Business Signals primary run completed with `failure`, or no primary run is visible.
+- 09:27 Business Signals health dispatch found no healthy same-date data and no active/successful same-date run, then dispatched the primary workflow, or recorded why it was waiting.
+- No same-date success is visible and no run is active by 09:55.
 - No same-date Top10 / active-date Business Signals data has been published.
 - First-Line Viewpoints or Community Intelligence may also be missing same-date assets.
 

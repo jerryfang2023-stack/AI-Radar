@@ -1,7 +1,7 @@
 ---
 status: current
 scope: hermes-daily-supervision
-last_updated: 2026-06-13
+last_updated: 2026-06-14
 use_when:
   - hermes daily supervision
   - monitor dispatch
@@ -28,9 +28,9 @@ Hermes should do this every Asia/Shanghai production day:
 1. 08:10 run the version state preflight when a version changed: package / ledger / AGENTS / current frontstage data meta / Skill Ops sync. This is read-only and must not block lane production by itself.
 2. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
 3. 09:30 / 09:45 / 09:55 run the three-lane early handoff: `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>`. At 09:30, First-Line Viewpoints RSS may be dispatched if the 09:17 fallback failed, same-date data is still unhealthy, and no same-date run is active. Dispatch other missing or failed lanes only after that lane's remaining scheduled monitoring window has passed and no same-date run is active.
-4. Before 10:00 confirm Business Signals Top10 is healthy: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood.
+4. Before 10:00 use Business Signals Top10 health as a target checkpoint: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood. Do not lower gates to hit the checkpoint.
 5. 10:20 read and report the Topic Center / Hermes Daily Brief only after Business Signals data is healthy or the upstream workflow has finished. If Business Signals is still queued or `in_progress`, wait instead of reporting missing topic data.
-6. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. This check must account for the 10:45 Community Intelligence publish fallback window.
+6. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. For Business Signals, explicitly check merged PR, Pages success, same-date Business data, Top10 count, and whether local sync is blocked. This check must account for the 10:45 Community Intelligence publish fallback window.
 7. 10:55 / 11:55 run bounded morning recovery only for lanes still `failed` or `manual_required`.
 8. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
 9. For every failure, write cause, attempted action, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
@@ -104,11 +104,13 @@ agent-workflow/inbox/hermes-to-codex/
 | 08:45 | Community Intelligence | Check local scheduled task, same-date community data, archive, and community gate. |
 | 09:30 | Community Intelligence Publish | If local collector output exists but `.github/workflows/daily-community-intelligence-pr.yml` has not published same-date community data and no publish run is active, trigger the publish workflow. If local output is missing, record a local / Codex repair handoff. |
 | Daily preflight | Skill Ops Governance | Check current Guanlan skills, registry freshness, eval/example coverage, and `.skill-store` sync without editing files. |
-| 09:45 | Hermes Three-Lane Early Handoff | Check Business Signals after the 09:07 / 09:37 windows, and re-check Community Intelligence publication. Dispatch only lanes whose takeover window has passed and no same-date run is active. |
+| 08:57 | Business Signals Primary | GitHub Actions runs `.github/workflows/daily-persistent-assets-pr.yml` for Raw / Pool / Card / Business frontstage / PR publication. |
+| 09:27 | Business Signals Health Dispatch | GitHub Actions runs `.github/workflows/business-signals-health-dispatch.yml`; it waits if same-date data is healthy or a same-date run is queued / in progress / successful, otherwise dispatches the primary Business Signals workflow. |
+| 09:45 | Hermes Three-Lane Early Handoff | Check Business Signals after the 08:57 primary production and 09:27 conditional health dispatch, and re-check Community Intelligence publication. Dispatch only lanes whose takeover window has passed and no same-date run is active. |
 | 09:30 | Hermes Three-Lane Early Handoff | Check First-Line Viewpoints RSS after the 08:30 local Codex `builder-observation-daily-sync` collection/build/sync run and the single 09:17 GitHub fallback window. If the 09:17 fallback failed, same-date data is still missing, and no run is active, dispatch the RSS route and write the early-handoff report / Codex handoff artifacts. Also check Community Intelligence publication. |
 | 10:20 | Topic Center / Hermes Daily Brief | Read `topic-center-hermes.json` / `.md` and the Hermes daily brief topic table after Business Signals has finished. This is a report checkpoint, not a separate topic-generation cron. |
 | 10:45 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
-| 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. |
+| 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. For Business Signals also check same-date data, Top10 count, and local sync status. |
 | 10:55 / 11:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. |
 | 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report and `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`. If the report or output is missing, write a Codex handoff for the afternoon skill lane. |
 
@@ -120,7 +122,8 @@ If any lane is still `queued` or `in_progress`, wait for it to finish before rep
 |---|---|---|
 | `passed` | Record the report and stop. | None. |
 | `warning` | Read warnings. If they are GitHub CLI timeout, skipped external checks, or missing historical reports while current data is present, do not escalate. | None unless the warning repeats for several days. |
-| `manual_required` | Follow the report action and ensure an open Hermes inbox item exists for Codex or the human operator. Usually this means manual workflow dispatch, waiting for an in-progress workflow, or asking Codex to inspect a lane. | Only needed for GitHub permission, login state, or manual PR merge. |
+| `waiting` | A same-date workflow or Pages deployment is queued / in progress. Wait for completion before declaring data missing or asking Codex to repair. | None. |
+| `manual_required` | Follow the report action and ensure an open Hermes inbox item exists for Codex or the human operator. Usually this means manual workflow dispatch, bounded recovery, or asking Codex to inspect a lane. | Only needed for GitHub permission, login state, or manual PR merge. |
 | `failed` | Ensure an open Hermes inbox item exists, then send Codex the lane repair request from the report. | Only needed if Codex asks for authorization, login, or business judgment. |
 
 ## Three-Lane Early Handoff Rule
@@ -133,7 +136,7 @@ npm run hermes:early-handoff -- --date=<YYYY-MM-DD>
 
 Hermes must use this rule at 09:30 / 09:45 / 09:55. It supervises:
 
-- Business Signals: if the 09:07 / 09:37 primary attempts fail, or if same-date Top10 assets are still missing / unhealthy and no run is active, dispatch `.github/workflows/daily-persistent-assets-pr.yml`.
+- Business Signals: if the 08:57 primary production or 09:27 conditional health dispatch fails, or if same-date Top10 assets are still missing / unhealthy and no run is active, dispatch `.github/workflows/daily-persistent-assets-pr.yml`.
 - First-Line Viewpoints RSS: after the 08:30 local Codex `builder-observation-daily-sync` collection/build/sync attempt and the single 09:17 GitHub fallback attempt, if the 09:17 fallback failed, same-date builders data / Obsidian person-date timelines are missing, and no run is active by 09:30, dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml`.
 - First-Line Viewpoints skill publish: after the 16:10 local skill run, if the local publish report or builders viewpoints file is missing and no run is active, dispatch the local follow-builders skill publisher and record the failure in Hermes.
 - Community Intelligence: after local 08:30 collection and the 08:45 publish check, if same-date local collector output exists but archive / publish state is missing and no run is active, dispatch `.github/workflows/daily-community-intelligence-pr.yml` for publish verification. GitHub cannot run the logged-in Chrome collector; missing local data remains a local / Codex repair handoff.

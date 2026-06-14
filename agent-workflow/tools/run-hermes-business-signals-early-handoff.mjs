@@ -18,7 +18,7 @@ const args = new Map(
 
 const date = args.get("date") || shanghaiDate();
 const dryRun = args.get("dry-run") === "true";
-const failureThreshold = Number.parseInt(args.get("failure-threshold") || "2", 10);
+const failureThreshold = Number.parseInt(args.get("failure-threshold") || "1", 10);
 const maxAttempts = Number.parseInt(args.get("max-attempts") || "3", 10);
 const forceAfter = args.get("force-after") || "09:55";
 const passScore = args.get("pass-score") || "85";
@@ -128,7 +128,7 @@ function sameDateRuns(runs) {
 function primaryWindowRun(run) {
   const minutes = shanghaiMinutes(run.createdAt);
   if (minutes === null) return false;
-  return minutes >= shanghaiMinutes("09:00") && minutes < shanghaiMinutes("09:45");
+  return minutes >= shanghaiMinutes("08:57") && minutes < shanghaiMinutes("09:45");
 }
 
 function dispatchBusinessSignals() {
@@ -281,7 +281,7 @@ function main() {
   const forceWindowPassed = date < today || (date === today && shanghaiMinutes() >= shanghaiMinutes(forceAfter));
 
   let action = "wait";
-  let reason = "waiting for the 09:07 / 09:37 primary windows";
+  let reason = "waiting for the 08:57 primary production and 09:27 conditional health dispatch windows";
   let dispatch = null;
   let ok = true;
 
