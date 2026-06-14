@@ -40,6 +40,17 @@ function decodeText(value = "") {
     .trim();
 }
 
+function remarkDate(value = "") {
+  const parsed = Date.parse(value || "");
+  if (!Number.isFinite(parsed)) return "";
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(parsed));
+}
+
 function compact(value = "", limit = 900) {
   const text = decodeText(value).replace(/\s+/g, " ");
   if (text.length <= limit) return text;
@@ -332,7 +343,7 @@ async function normalize(feed, trackedSources) {
         formalTags: tagsForTopic(topic, "x"),
         observation: observationForTopic(topic),
         createdAt: tweet.createdAt,
-        date: String(tweet.createdAt || "").slice(0, 10),
+        date: remarkDate(tweet.createdAt),
         url: tweet.url,
         likes: tweet.likes || 0,
         retweets: tweet.retweets || 0,
@@ -387,7 +398,7 @@ async function normalize(feed, trackedSources) {
         formalTags: tagsForTopic(topic, "blog"),
         observation: observationForTopic(topic),
         createdAt: item.createdAt,
-        date: String(item.createdAt || "").slice(0, 10),
+        date: remarkDate(item.createdAt),
         url: item.url,
         likes: 0,
         retweets: 0,

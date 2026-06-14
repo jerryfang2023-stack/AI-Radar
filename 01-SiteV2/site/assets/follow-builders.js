@@ -23,6 +23,18 @@
     return String(value).slice(0, 10).replaceAll("-", ".");
   }
 
+  function canonicalDate(item = {}) {
+    if (/^\d{4}-\d{2}-\d{2}$/u.test(item.date || "")) return item.date;
+    const parsed = Date.parse(item.createdAt || "");
+    if (!Number.isFinite(parsed)) return "";
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Shanghai",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(new Date(parsed));
+  }
+
   function compact(value = "", limit = 220) {
     const text = String(value || "").replace(/\s+/g, " ").trim();
     if (text.length <= limit) return text;
@@ -46,7 +58,7 @@
         ...(item.formalTags || []).flatMap((tag) => [tag.name, tag.group]),
       ].join(" ").toLowerCase();
       if (!options.ignoreBuilder && state.activeBuilder !== "all" && item.handle !== state.activeBuilder) return false;
-      if (state.filters.date !== "all" && item.date !== state.filters.date) return false;
+      if (state.filters.date !== "all" && canonicalDate(item) !== state.filters.date) return false;
       if (state.filters.topic !== "all" && item.topic !== state.filters.topic) return false;
       if (state.filters.source !== "all" && item.source !== state.filters.source) return false;
       if (query && !haystack.includes(query)) return false;
@@ -61,14 +73,15 @@
   function groupedRemarks() {
     const groups = new Map();
     for (const item of filteredRemarks()) {
-      const key = `${item.handle}::${item.date}`;
+      const itemDate = canonicalDate(item);
+      const key = `${item.handle}::${itemDate}`;
       if (!groups.has(key)) {
         groups.set(key, {
           id: key,
           name: item.name,
           handle: item.handle,
           role: item.role,
-          date: item.date,
+          date: itemDate,
           items: [],
         });
       }
@@ -120,7 +133,7 @@
     const date = $("[data-viewpoint-date]");
     if (!date) return;
     const latestRemarkDate = allRemarks()
-      .map((item) => item.date)
+      .map(canonicalDate)
       .filter(Boolean)
       .sort((a, b) => b.localeCompare(a))[0];
     date.textContent = fmtDate(latestRemarkDate || state.payload?.meta?.generatedAt);
@@ -134,7 +147,7 @@
     const date = $("[data-date-filter]");
     const topic = $("[data-topic-filter]");
     if (date) {
-      const dates = [...new Set(allRemarks().map((item) => item.date).filter(Boolean))].sort((a, b) => b.localeCompare(a));
+      const dates = [...new Set(allRemarks().map(canonicalDate).filter(Boolean))].sort((a, b) => b.localeCompare(a));
       date.innerHTML = [
         "<option value=\"all\">全部日期</option>",
         ...dates.map((item) => `<option value="${safe(item)}">${safe(fmtDate(item))}</option>`),
