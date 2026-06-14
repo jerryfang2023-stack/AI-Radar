@@ -1,6 +1,6 @@
 ---
 title: Industry Cases
-date: 2026-06-13
+date: 2026-06-14
 status: active
 type: community-intelligence-industry_case
 source: community-intelligence
@@ -10,9 +10,9 @@ source: community-intelligence
 
 垂直行业、商业场景和可复用案例。
 
-最新归档：[[2026-06-13 Community Intelligence]]
+最新归档：[[2026-06-14 Community Intelligence]]
 
-## 高价值条目（11 条）
+## 高价值条目（10 条）
 
 ### 1. 我来征集一件事儿： 现在腾讯开放了AI小程序接入微信AI的功能，目测有可能是一波红利，但目前趋势没有明确。
 - 来源：AI破局｜2026-06-12 11:31
@@ -34,30 +34,30 @@ source: community-intelligence
 - 价值判断：可复用方法：内容获客路径 / 前端获客 + 后端交付拆分 / 工具产品化；痛点：交付标准化与复购 / 内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://d16rg8unadx.feishu.cn/wiki/Z2sHwVfYcimNy3kgJ1HcqAXynWg?from=from_copylink)
 ### 4. 生财有术官网即将上线AI亦仁自动发帖Agent
-- 来源：生财有术｜4天前
+- 来源：生财有术｜5天前
 - 分类：行业案例｜交付与服务自动化
-- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
 - 标签：#交付与服务自动化 #内容与自媒体 #待确认
 生财有术官网即将上线AI亦仁自动发帖Agent 预告一下，生财有术官网即将上线一个 Agent：AI 亦仁自动发帖 Agent
 - 价值判断：可复用方法：内容获客路径 / 知识库 + Agent 工作流 / 工具产品化；痛点：知识沉淀与效率 / 内容生产与账号增长
 ### 5. 买MacBook Pro的预算，不如拆成Mac mini加MacBook Air
-- 来源：生财有术｜4天前
+- 来源：生财有术｜5天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
 - 标签：#AI应用案例 #未识别行业 #Mac-mini #待确认
 买MacBook Pro的预算，不如拆成Mac mini加MacBook Air 如果你有买 MacBook Pro 的预算，我强烈建议：把预算拆出来，买一台 Mac mini 加一台 MacBook Air
 - 价值判断：可复用方法：知识库 + Agent 工作流
 ### 6. 两个月在X点赞1000多条，原来这是我工作的一部分
-- 来源：生财有术｜4天前
+- 来源：生财有术｜5天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
 - 标签：#AI应用案例 #未识别行业 #待确认
 两个月在X点赞1000多条，原来这是我工作的一部分 拉了数据吓一跳，我最近两个月，在 X 上点赞了 1000 多条帖子
 - 价值判断：痛点：知识沉淀与效率
 ### 7. 沉浸式翻译用默认慢模型总卡？换DeepL Pro就顺畅了
-- 来源：生财有术｜4天前
+- 来源：生财有术｜5天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
 - 标签：#AI应用案例 #未识别行业 #待确认
 换DeepL Pro就顺畅了 如果你用沉浸式翻译，那么这个测试会对你很有价值没想到我默认用了个最慢的模型，难怪经常刷到英语等着翻译，切换到 DeepL Pro 后，看不到等待翻译的状态了
 ### 8. 4个半小时，7993字，湖北襄阳第1场线下组局深度复盘：星星之火,可以燎原!
@@ -81,12 +81,6 @@ source: community-intelligence
 40岁我靠做小红书封面，副业收入3W+ 阅读本文你将获得： 5种经过验证的爆款封面模型 + 每种模型的完整制作参数 + AI批量出图的标准化流程 + 新手第一周行动清单 我叫苗苗pro版，从事 了十几年的文职工作，擅长EXCEL，做任何事情都喜欢形成表格，方便我一览无余~ 我以前是那个把人生表格每个单元格都填写得工整无误的优等生 好员工，好妻子，好妈妈——…
 - 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径；痛点：内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/wiki/WQXVwhGMdil098kVRQLcZsgHn8M?from=from_copylink)
-### 11. 最近ChatGPT 封号有点厉害，连夜去导出数据，避免被分手。
-- 来源：生财有术｜06-05
-- 分类：行业案例｜AI应用案例
-- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
-- 标签：#AI应用案例 #未识别行业 #ChatGPT #待确认
-最近ChatGPT 封号有点厉害，连夜去导出数据，避免被分手
 
 ## Related
 
