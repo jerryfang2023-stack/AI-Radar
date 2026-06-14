@@ -15,9 +15,9 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current version: `V3.3.6-business-title-hermes-handoff`.
+- Current version: `V3.3.6.1-automation-timeline-skill-alignment`.
 - Version ledger: `context/version-ledger.md`.
-- V3.3.6 keeps First-Line Viewpoints person / date Obsidian persistence, adds Business Signals title / candidate dedupe gates, and makes Hermes early handoff supervise all three active lanes.
+- V3.3.6.1 keeps First-Line Viewpoints person / date Obsidian persistence, adds Business Signals title / candidate dedupe gates, and aligns the Business Signals, First-Line Viewpoints, and Community Intelligence timing / monitor skill ownership for Hermes early handoff.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 
@@ -99,9 +99,10 @@ agent-workflow/inbox/hermes-to-codex/
 | Time | Lane | Hermes action |
 |---:|---|---|
 | 08:10 | Version State Preflight | On version-change days, check `package.json`, `package-lock.json`, `AGENTS.md`, `context/version-ledger.md`, current frontstage data meta versions, and `npm run check:skill-ops`. Record drift only; do not block lane production unless the drift breaks a gate. |
-| 08:30 | Community Intelligence Local | Windows scheduled task `WaveSight Community Intelligence Daily` runs logged-in collection, archive, gate, and local publish handoff. Codex automation `community-intelligence-daily-local` is paused to avoid duplicate local collection. GitHub cannot replace this collector. |
+| 08:30 | Community Intelligence Local | Windows scheduled task `WaveSight Community Intelligence Daily` runs logged-in collection, archive, gate, and local publish handoff. GitHub cannot replace this collector. |
 | 08:30 | First-Line Viewpoints RSS | Local Codex automation `builder-observation-daily-sync` runs RSS / podcast collection, page-data build, gate, and Obsidian person/date sync. |
 | 08:45 | Community Intelligence | Check local scheduled task, same-date community data, archive, and community gate. |
+| 09:00 | Community Intelligence Codex Fallback | Codex automation `community-intelligence-daily-local` is active as a local fallback / repair window after the Windows 08:30 task. It should first check same-date community data, archive, and gate; if healthy, report no-op instead of recollecting. If missing or failed, rerun local logged-in collection and archive without touching other lanes. |
 | 09:30 | Community Intelligence Publish | If local collector output exists but `.github/workflows/daily-community-intelligence-pr.yml` has not published same-date community data and no publish run is active, trigger the publish workflow. If local output is missing, record a local / Codex repair handoff. |
 | Daily preflight | Skill Ops Governance | Check current Guanlan skills, registry freshness, eval/example coverage, and `.skill-store` sync without editing files. |
 | 08:57 | Business Signals Primary | GitHub Actions runs `.github/workflows/daily-persistent-assets-pr.yml` for Raw / Pool / Card / Business frontstage / PR publication. |
@@ -139,7 +140,7 @@ Hermes must use this rule at 09:30 / 09:45 / 09:55. It supervises:
 - Business Signals: if the 08:57 primary production or 09:27 conditional health dispatch fails, or if same-date Top10 assets are still missing / unhealthy and no run is active, dispatch `.github/workflows/daily-persistent-assets-pr.yml`.
 - First-Line Viewpoints RSS: after the 08:30 local Codex `builder-observation-daily-sync` collection/build/sync attempt and the single 09:17 GitHub fallback attempt, if the 09:17 fallback failed, same-date builders data / Obsidian person-date timelines are missing, and no run is active by 09:30, dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml`.
 - First-Line Viewpoints skill publish: after the 16:10 local skill run, if the local publish report or builders viewpoints file is missing and no run is active, dispatch the local follow-builders skill publisher and record the failure in Hermes.
-- Community Intelligence: after local 08:30 collection and the 08:45 publish check, if same-date local collector output exists but archive / publish state is missing and no run is active, dispatch `.github/workflows/daily-community-intelligence-pr.yml` for publish verification. GitHub cannot run the logged-in Chrome collector; missing local data remains a local / Codex repair handoff.
+- Community Intelligence: after local 08:30 Windows collection, the 08:45 publish check, and the 09:00 Codex local fallback / repair window, if same-date local collector output exists but archive / publish state is missing and no run is active, dispatch `.github/workflows/daily-community-intelligence-pr.yml` for publish verification. GitHub cannot run the logged-in Chrome collector; missing local data remains a local / Codex repair handoff.
 
 The rule writes:
 

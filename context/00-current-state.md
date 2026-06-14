@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-13
+last_updated: 2026-06-14
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.6 business title gates and Hermes three-lane handoff.
+WaveSight AI is now in V3.3.6.1 automation timeline and monitor skill alignment.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now in V3.3.6 business title gates and Hermes three-lane handoff
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.6 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, and uses Hermes three-lane early handoff before 10:00.
+- V3.3.6.1 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, and aligns the Business Signals, First-Line Viewpoints, and Community Intelligence timing / monitor skill ownership before 10:00.
 
 ## Current Entries
 

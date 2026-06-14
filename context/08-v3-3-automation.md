@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# V3.3.6 Automation Loop
+# V3.3.6.1 Automation Loop
 
-V3.3.6 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals enforces public title / candidate dedupe gates, and Hermes supervises all three active lanes at 09:30 / 09:45 / 09:55.
+V3.3.6.1 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals enforces public title / candidate dedupe gates, Community Intelligence uses local logged-in collection before GitHub publication, and Hermes supervises all three active lanes at 09:30 / 09:45 / 09:55.
 
 ## Business Signals GitHub Chain
 
@@ -64,7 +64,7 @@ The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. I
 - Business Signals conditional health dispatch: 09:27 Asia/Shanghai. This is not a blind second production cron; it dispatches `.github/workflows/daily-persistent-assets-pr.yml` only when same-date Business Signals data is unhealthy and no same-date run is queued, in progress, or successful.
 - First-Line Viewpoints RSS primary production: 08:30 local Codex `builder-observation-daily-sync` for RSS collection, page-data build, and Obsidian sync; 09:17 GitHub fallback.
 - First-Line Viewpoints skill publish: local follow-builders skill at 16:10 Asia/Shanghai; Hermes records it at 16:30.
-- Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine via Windows task `WaveSight Community Intelligence Daily`, then GitHub publish at 08:45 / 10:45. Codex automation `community-intelligence-daily-local` is paused to avoid duplicate local collection.
+- Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine via Windows task `WaveSight Community Intelligence Daily`; Codex automation `community-intelligence-daily-local` runs at about 09:00 Asia/Shanghai as a local fallback / repair window and should first check whether same-date community data, archive, and gate are already healthy before recollecting. GitHub publish runs at 08:45 / 10:45 and can only publish already-collected data.
 - Hermes three-lane early handoff: 09:30 / 09:45 / 09:55 Asia/Shanghai.
 
 Operational rules:
@@ -205,7 +205,7 @@ This skill lane does not write business-signal Cards, relationship graph data, t
 | Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 08:57 Asia/Shanghai; `.github/workflows/business-signals-health-dispatch.yml` at 09:27 for conditional dispatch; `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 for this lane | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, unified Business frontstage gate, pre-commit freshness | independent automation PR to `main` |
 | Intelligence Map | GitHub Actions | follows the Business Signals Card chain | unified Business frontstage gate from the business-signal chain | included in the Business Signals PR |
 | First-Line Viewpoints | Local Codex morning RSS collection/build/sync + GitHub Actions RSS fallback + local afternoon follow-builders skill lane | `builder-observation-daily-sync` at 08:30 Asia/Shanghai for morning RSS collection, page-data build, and Obsidian sync; `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai for RSS fallback; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai for the skill publish; Hermes checks RSS at 09:30 and records the skill lane at 16:30 | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS; local publish report and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
-| Community Intelligence | Windows task `WaveSight Community Intelligence Daily` + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | local collection at 08:30 Asia/Shanghai; Codex automation `community-intelligence-daily-local` stays paused as duplicate fallback; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 10:45 for publication; Hermes three-lane early handoff at 09:30 / 09:45 / 09:55 for publish supervision | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
+| Community Intelligence | Windows task `WaveSight Community Intelligence Daily` + Codex automation `community-intelligence-daily-local` + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | Windows local collection at 08:30 Asia/Shanghai; Codex local fallback / repair at about 09:00 Asia/Shanghai after checking same-date output health; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 10:45 for publication; Hermes three-lane early handoff at 09:30 / 09:45 / 09:55 for publish supervision | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
 
 The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.
 
