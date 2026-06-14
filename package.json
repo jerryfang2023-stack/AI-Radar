@@ -31,7 +31,7 @@
     "diff:skill-store": "node agent-workflow/tools/diff-skill-store.mjs",
     "sync:skill-store": "node agent-workflow/tools/sync-skill-store.mjs",
     "skill-store:ops": "node agent-workflow/tools/skill-store-ops-server.mjs",
-    "audit:skills": "npm run build:skill-store-dashboard && npm run check:skill-ops",
+    "audit:skills": "npm run sync:skill-store && npm run build:skill-store-dashboard && npm run check:skill-ops",
     "build:skill-store-dashboard": "npm run build:skill-registry && node agent-workflow/tools/build-skill-store-dashboard.mjs",
     "export:public-daily-brief": "node 01-SiteV2/site/scripts/export-public-daily-brief.mjs"
   },

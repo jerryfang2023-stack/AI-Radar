@@ -42,7 +42,7 @@ Close a repaired Hermes request:
 npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
 ```
 
-Audit Guanlan Skill Ops after skill edits or repeated lane failures:
+Audit Guanlan Skill Ops after skill edits or repeated lane failures. This refreshes the home `.skill-store` mirror before rerunning the governance check:
 
 ```powershell
 npm run audit:skills
