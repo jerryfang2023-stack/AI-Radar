@@ -1,0 +1,342 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-122
+title: "荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市"
+original_url: "https://www.ithome.com/0/963/927.htm"
+canonical_url: "https://ithome.com/0/963/927.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-13T10:39:37.000Z"
+collected_at: 2026-06-14T04:27:51.636Z
+language: mixed
+full_text_hash: 0aa3a6a34f3cec87
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-122-荣耀-robot-phone-机器人手机上海电影节实拍画面公布-将于三季度上市.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-122-荣耀-robot-phone-机器人手机上海电影节实拍画面公布-将于三季度上市.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 38
+extractor_diagnostics: {"readability_score":38,"text_length":1190,"paragraph_count":15,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0.0017,"method":"body-visible-text"}
+has_full_text: true
+content_length: 1190
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0aa3a6a34f3cec87","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市","discovery_summary":"荣耀 Robot Phone 机器人手机在上海电影节发布实拍画面，融合荣耀移动影像与阿莱 ARRI 电影摄影技术。该机顶部三轴云台相机搭载 2 亿像素传感器，可向前/向后翻转，支持 AI 物体追踪、AI 视频剪辑与智能拍摄，具备实时感知与补偿以稳定画面。荣耀 CEO 李健透露该机将于三季度上市，研发历经 5 版修改、一年打磨。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/927.htm","discovered_at":"2026-06-14T04:21:16.537Z","rank_on_page":157,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 36cca76f33b22491
+content_hash: 0aa3a6a34f3cec87
+semantic_hash: 7c604f362eb49829
+duplicate_of: ""
+first_seen_at: "2026-06-13T10:39:37.000Z"
+last_seen_at: 2026-06-14T04:27:51.636Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["2 亿","5","10","11","2026","6","13","18"],"quotes":["开启移动影像新篇章"]}
+evidence_seed: {"company_actions":["官方还公布了上影节评委团官宣大片拍摄花絮。","据IT之家此前报道，荣耀 CEO 李健透露， 荣耀首款机器人手机 Robot Phone 将于三季度上市 。"],"case_details":["荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 2026/6/13 18:39:37 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： IT之家 6 月 13 日消息，荣耀手机官方今日发布了荣耀 Robot Phone 机器人手机的实拍画面，宣称为上影节评委团打造专属电影感大片。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"荣耀 Robot Phone 机器人手机在上海电影节发布实拍画面，融合荣耀移动影像与阿莱 ARRI 电影摄影技术。该机顶部三轴云台相机搭载 2 亿像素传感器，可向前/向后翻转，支持 AI 物体追踪、AI 视频剪辑与智能拍摄，具备实时感知与补偿以稳定画面。荣耀 CEO 李健透露该机将于三季度上市，研发历经 5 版修改、一年打磨。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 2026/6/13 18:39:37 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： IT之家 6 月 13 日消息，荣耀手机官方今日发布了荣耀 Robot Phone 机器人手机的实拍画面，宣称为上影节评委团打造专属电影感大片。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"官方还公布了上影节评委团官宣大片拍摄花絮。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"据介绍，该产品 融合了荣耀的移动影像以及阿莱 ARRI 的电影摄影技术 ，官方宣称“开启移动影像新篇章”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"number","text":"荣耀机器人手机 Robot Phone 发布于今年 3 月，这台手机顶上的三轴云台相机配备 2 亿像素传感器，可以向前 / 向后翻转，方便用户拍摄自己或拍摄物体；支持 AI 物体追踪、AI 视频剪辑与智能拍摄；支持实时感知与补偿，确保视频画面稳定。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据IT之家此前报道，荣耀 CEO 李健透露， 荣耀首款机器人手机 Robot Phone 将于三季度上市 。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市
+
+## clean_text
+
+荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 智能手机
+荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市
+2026/6/13 18:39:37
+来源： IT之家
+作者： 沁沧（实习）
+责编： 沁沧
+评论：
+IT之家 6 月 13 日消息，荣耀手机官方今日发布了荣耀 Robot Phone 机器人手机的实拍画面，宣称为上影节评委团打造专属电影感大片。
+官方还公布了上影节评委团官宣大片拍摄花絮。据介绍，该产品 融合了荣耀的移动影像以及阿莱 ARRI 的电影摄影技术 ，官方宣称“开启移动影像新篇章”。
+荣耀机器人手机 Robot Phone 发布于今年 3 月，这台手机顶上的三轴云台相机配备 2 亿像素传感器，可以向前 / 向后翻转，方便用户拍摄自己或拍摄物体；支持 AI 物体追踪、AI 视频剪辑与智能拍摄；支持实时感知与补偿，确保视频画面稳定。
+据IT之家此前报道，荣耀 CEO 李健透露， 荣耀首款机器人手机 Robot Phone 将于三季度上市 。
+荣耀此前表示，这款机型研发难度远比想象中的大，定制更小尺寸马达、反复调校云台平衡、解决翻转力矩和稳定性， 前后改了 5 版，整整一年才打磨出雏形 。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 机器人 ， 手机 ， 荣耀 ， Robot Phone ， ARRI 阿莱
+小米新机 23116PN5BC 入网：预计为 14 Pro 增大电池验证机，后续有望开放换新电池服务
+三星 Galaxy Z Fold8 Ultra 等 3 款折叠手机机模曝光
+消息称 OPPO、vivo、荣耀测试 144Hz/165Hz 高刷屏
+荣耀 MRK-AN00 新机入网：搭载 7900mAh 大容量电池
+三星官网公布 Galaxy A27 5G 手机参数：骁龙 6 Gen 3 芯片，5000mAh 电池
+咪咕视频 x 华为鸿蒙首发手机直播专业体育赛事，用于中超、苏超、粤超
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 智能手机
+荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市
+2026/6/13 18:39:37
+来源： IT之家
+作者： 沁沧（实习）
+责编： 沁沧
+评论：
+IT之家 6 月 13 日消息，荣耀手机官方今日发布了荣耀 Robot Phone 机器人手机的实拍画面，宣称为上影节评委团打造专属电影感大片。
+官方还公布了上影节评委团官宣大片拍摄花絮。据介绍，该产品 融合了荣耀的移动影像以及阿莱 ARRI 的电影摄影技术 ，官方宣称“开启移动影像新篇章”。
+荣耀机器人手机 Robot Phone 发布于今年 3 月，这台手机顶上的三轴云台相机配备 2 亿像素传感器，可以向前 / 向后翻转，方便用户拍摄自己或拍摄物体；支持 AI 物体追踪、AI 视频剪辑与智能拍摄；支持实时感知与补偿，确保视频画面稳定。
+据IT之家此前报道，荣耀 CEO 李健透露， 荣耀首款机器人手机 Robot Phone 将于三季度上市 。
+荣耀此前表示，这款机型研发难度远比想象中的大，定制更小尺寸马达、反复调校云台平衡、解决翻转力矩和稳定性， 前后改了 5 版，整整一年才打磨出雏形 。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 机器人 ， 手机 ， 荣耀 ， Robot Phone ， ARRI 阿莱
+小米新机 23116PN5BC 入网：预计为 14 Pro 增大电池验证机，后续有望开放换新电池服务
+三星 Galaxy Z Fold8 Ultra 等 3 款折叠手机机模曝光
+消息称 OPPO、vivo、荣耀测试 144Hz/165Hz 高刷屏
+荣耀 MRK-AN00 新机入网：搭载 7900mAh 大容量电池
+三星官网公布 Galaxy A27 5G 手机参数：骁龙 6 Gen 3 芯片，5000mAh 电池
+咪咕视频 x 华为鸿蒙首发手机直播专业体育赛事，用于中超、苏超、粤超
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 38
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":38,"text_length":1190,"paragraph_count":15,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0.0017,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   荣耀 Robot Phone 机器人手机在上海电影节发布实拍画面，融合荣耀移动影像与阿莱 ARRI 电影摄影技术。该机顶部三轴云台相机搭载 2 亿像素传感器，可向前/向后翻转，支持 AI 物体追踪、AI 视频剪辑与智能拍摄，具备实时感知与补偿以稳定画面。荣耀 CEO 李健透露该机将于三季度上市，研发历经 5 版修改、一年打磨。
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 2026/6/13 18:39:37 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： IT之家 6 月 13 日消息，荣耀手机官方今日发布了荣耀 Robot Phone 机器人手机的实拍画面，宣称为上影节评委团打造专属电影感大片。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   官方还公布了上影节评委团官宣大片拍摄花絮。
+
+4. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=medium
+   据介绍，该产品 融合了荣耀的移动影像以及阿莱 ARRI 的电影摄影技术 ，官方宣称“开启移动影像新篇章”。
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   荣耀机器人手机 Robot Phone 发布于今年 3 月，这台手机顶上的三轴云台相机配备 2 亿像素传感器，可以向前 / 向后翻转，方便用户拍摄自己或拍摄物体；支持 AI 物体追踪、AI 视频剪辑与智能拍摄；支持实时感知与补偿，确保视频画面稳定。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   据IT之家此前报道，荣耀 CEO 李健透露， 荣耀首款机器人手机 Robot Phone 将于三季度上市 。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 2 亿, 5, 10, 11, 2026, 6, 13, 18
+- quotes: 开启移动影像新篇章
+
+## evidence_seed
+
+- company_actions: 官方还公布了上影节评委团官宣大片拍摄花絮。 / 据IT之家此前报道，荣耀 CEO 李健透露， 荣耀首款机器人手机 Robot Phone 将于三季度上市 。
+- case_details: 荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市 2026/6/13 18:39:37 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： IT之家 6 月 13 日消息，荣耀手机官方今日发布了荣耀 Robot Phone 机器人手机的实拍画面，宣称为上影节评委团打造专属电影感大片。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"荣耀 Robot Phone 机器人手机上海电影节实拍画面公布，将于三季度上市","discovery_summary":"荣耀 Robot Phone 机器人手机在上海电影节发布实拍画面，融合荣耀移动影像与阿莱 ARRI 电影摄影技术。该机顶部三轴云台相机搭载 2 亿像素传感器，可向前/向后翻转，支持 AI 物体追踪、AI 视频剪辑与智能拍摄，具备实时感知与补偿以稳定画面。荣耀 CEO 李健透露该机将于三季度上市，研发历经 5 版修改、一年打磨。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/963/927.htm","discovered_at":"2026-06-14T04:21:16.537Z","rank_on_page":157,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+荣耀 Robot Phone 机器人手机在上海电影节发布实拍画面，融合荣耀移动影像与阿莱 ARRI 电影摄影技术。该机顶部三轴云台相机搭载 2 亿像素传感器，可向前/向后翻转，支持 AI 物体追踪、AI 视频剪辑与智能拍摄，具备实时感知与补偿以稳定画面。荣耀 CEO 李健透露该机将于三季度上市，研发历经 5 版修改、一年打磨。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

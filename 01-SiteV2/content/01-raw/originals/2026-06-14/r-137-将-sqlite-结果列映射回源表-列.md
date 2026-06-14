@@ -1,0 +1,303 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-137
+title: "将 SQLite 结果列映射回源表.列"
+original_url: "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance"
+canonical_url: "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance"
+source_name: "Simon Willison 博客"
+source_type: builder
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-13T23:05:00.000Z"
+collected_at: 2026-06-14T04:27:51.677Z
+language: mixed
+full_text_hash: d4a85e51afc87c16
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-137-将-sqlite-结果列映射回源表-列.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-137-将-sqlite-结果列映射回源表-列.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 60
+extractor_diagnostics: {"readability_score":60,"text_length":2383,"paragraph_count":15,"sentence_count":11,"boilerplate_hits":2,"symbol_ratio":0.0042,"method":"body-visible-text"}
+has_full_text: true
+content_length: 2383
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d4a85e51afc87c16","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"将 SQLite 结果列映射回源表.列","discovery_summary":"Simon Willison 为 Datasette 探索了三种方案，使其能对任意 SQL 查询结果补充源表列信息。他使用 Claude Code（Opus 4.8）发现：利用 apsw 库、通过 ctypes 调用 SQLite 内部未暴露的 `sqlite3_column_table_name（）` C 函数，以及分析 `EXPLAIN` 输出。这些方法可程序化识别 `select users.name， orders.total from users join orders on orders.user_id = users.id` 等查询中每个结果对应的源表.列，并支持 JOIN 和 CTE 等复杂语法。","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jun/13/sqlite-column-provenance","discovered_at":"2026-06-14T04:21:16.514Z","rank_on_page":38,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f1508e8f518b9c64
+content_hash: d4a85e51afc87c16
+semantic_hash: e35b48665aad6270
+duplicate_of: ""
+first_seen_at: "2026-06-13T23:05:00.000Z"
+last_seen_at: 2026-06-14T04:27:51.677Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["Simon Willison 博客","Cursor"],"products":["Claude","cursor"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["权限 / 安全治理"],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["4.8","3","13","2026","11","05","5","9"],"quotes":[]}
+evidence_seed: {"company_actions":["Simon Willison 为 Datasette 探索了三种方案，使其能对任意 SQL 查询结果补充源表列信息。他使用 Claude Code（Opus 4.8）发现：利用 apsw 库、通过 ctypes 调用 SQLite 内部未暴露的 `sqlite3_column_table_name（）` C 函数，以及分析 `EXPLAIN` 输出。这些方法可程序化识别 `select users.name， orders.total from users join orders on orders.user_id = users.id` 等查询中每个结果对应的源表.列，并支持 JOIN 和 CTE 等复杂语法。","Research: Mapping SQLite result columns back to their source `table.","column` Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; Prevent access bottlenecks."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["Teleport replaces fragmented identity and access tooling with a single identity layer that security teams trust, and engineers want to use."]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Simon Willison 为 Datasette 探索了三种方案，使其能对任意 SQL 查询结果补充源表列信息。他使用 Claude Code（Opus 4.8）发现：利用 apsw 库、通过 ctypes 调用 SQLite 内部未暴露的 `sqlite3_column_table_name（）` C 函数，以及分析 `EXPLAIN` 输出。这些方法可程序化识别 `select users.name， orders.total from users join orders on orders.user_id = users.id` 等查询中每个结果对应的源表.列，并支持 JOIN 和 CTE 等复杂语法。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Research: Mapping SQLite result columns back to their source `table.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"column` Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; Prevent access bottlenecks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"Teleport replaces fragmented identity and access tooling with a single identity layer that security teams trust, and engineers want to use.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"13th June 2026 Research Mapping SQLite result columns back to their source `table.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"column` &mdash; Determining the source `table.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 将 SQLite 结果列映射回源表.列
+
+## clean_text
+
+Research: Mapping SQLite result columns back to their source `table.column`
+Simon Willison’s Weblog
+Subscribe
+Sponsored by: Teleport &mdash; Prevent access bottlenecks. Unify identity. Teleport replaces fragmented identity and access tooling with a single identity layer that security teams trust, and engineers want to use.
+13th June 2026
+Research
+Mapping SQLite result columns back to their source `table.column`
+&mdash; Determining the source `table.column` for each result column in arbitrary SQLite queries is feasible because SQLite computes this internally and exposes it via its column-metadata API when compiled with `SQLITE_ENABLE_COLUMN_METADATA`. While Python’s standard `sqlite3` module doesn’t surface this information, robust methods exist: using the third-party `apsw` library provides direct access with `cursor.description_full`, or a pure-stdlib ctypes bridge (`column_provenance.py`) can retrieve the…
+It would be neat if arbitrary SQL queries in Datasette could be rendered with additional information based on which columns from which tables were included in the results.
+To build that, we would need to be able to look at a SQL query like select users.name, orders.total from users join orders on orders.user_id = users.id and programmatically identify the table.column for each result - navigating not just joins but also more complex syntax like CTEs.
+I decided to set Claude Code (Opus 4.8, since Fable is currently banned by the US government ) on the problem. It found several promising solutions - one using apsw , another that uses ctypes to access the SQLite sqlite3_column_table_name() C function (which is not otherwise exposed to Python), and one using clever interrogation of the output of EXPLAIN .
+Posted 13th June 2026 at 11:05 pm
+Recent articles
+Publishing WASM wheels to PyPI for use with Pyodide - 13th June 2026
+Claude Fable is relentlessly proactive - 11th June 2026
+Initial impressions of Claude Fable 5 - 9th June 2026
+This is a beat by Simon Willison, posted on 13th June 2026 .
+python
+1,261
+sqlite
+467
+datasette
+1,510
+Monthly briefing
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+&copy;
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
+
+## full_text
+
+Research: Mapping SQLite result columns back to their source `table.column`
+Simon Willison’s Weblog
+Subscribe
+Sponsored by: Teleport &mdash; Prevent access bottlenecks. Unify identity. Teleport replaces fragmented identity and access tooling with a single identity layer that security teams trust, and engineers want to use.
+13th June 2026
+Research
+Mapping SQLite result columns back to their source `table.column`
+&mdash; Determining the source `table.column` for each result column in arbitrary SQLite queries is feasible because SQLite computes this internally and exposes it via its column-metadata API when compiled with `SQLITE_ENABLE_COLUMN_METADATA`. While Python’s standard `sqlite3` module doesn’t surface this information, robust methods exist: using the third-party `apsw` library provides direct access with `cursor.description_full`, or a pure-stdlib ctypes bridge (`column_provenance.py`) can retrieve the…
+It would be neat if arbitrary SQL queries in Datasette could be rendered with additional information based on which columns from which tables were included in the results.
+To build that, we would need to be able to look at a SQL query like select users.name, orders.total from users join orders on orders.user_id = users.id and programmatically identify the table.column for each result - navigating not just joins but also more complex syntax like CTEs.
+I decided to set Claude Code (Opus 4.8, since Fable is currently banned by the US government ) on the problem. It found several promising solutions - one using apsw , another that uses ctypes to access the SQLite sqlite3_column_table_name() C function (which is not otherwise exposed to Python), and one using clever interrogation of the output of EXPLAIN .
+Posted 13th June 2026 at 11:05 pm
+Recent articles
+Publishing WASM wheels to PyPI for use with Pyodide - 13th June 2026
+Claude Fable is relentlessly proactive - 11th June 2026
+Initial impressions of Claude Fable 5 - 9th June 2026
+This is a beat by Simon Willison, posted on 13th June 2026 .
+python
+1,261
+sqlite
+467
+datasette
+1,510
+Monthly briefing
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+&copy;
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 60
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":60,"text_length":2383,"paragraph_count":15,"sentence_count":11,"boilerplate_hits":2,"symbol_ratio":0.0042,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Simon Willison 为 Datasette 探索了三种方案，使其能对任意 SQL 查询结果补充源表列信息。他使用 Claude Code（Opus 4.8）发现：利用 apsw 库、通过 ctypes 调用 SQLite 内部未暴露的 `sqlite3_column_table_name（）` C 函数，以及分析 `EXPLAIN` 输出。这些方法可程序化识别 `select users.name， orders.total from users join orders on orders.user_id = users.id` 等查询中每个结果对应的源表.列，并支持 JOIN 和 CTE 等复杂语法。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Research: Mapping SQLite result columns back to their source `table.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   column` Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; Prevent access bottlenecks.
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=medium｜confidence=medium
+   Teleport replaces fragmented identity and access tooling with a single identity layer that security teams trust, and engineers want to use.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   13th June 2026 Research Mapping SQLite result columns back to their source `table.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   column` &mdash; Determining the source `table.
+
+## business_elements
+
+- companies: Simon Willison 博客, Cursor
+- products: Claude, cursor
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 权限 / 安全治理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 4.8, 3, 13, 2026, 11, 05, 5, 9
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Simon Willison 为 Datasette 探索了三种方案，使其能对任意 SQL 查询结果补充源表列信息。他使用 Claude Code（Opus 4.8）发现：利用 apsw 库、通过 ctypes 调用 SQLite 内部未暴露的 `sqlite3_column_table_name（）` C 函数，以及分析 `EXPLAIN` 输出。这些方法可程序化识别 `select users.name， orders.total from users join orders on orders.user_id = users.id` 等查询中每个结果对应的源表.列，并支持 JOIN 和 CTE 等复杂语法。 / Research: Mapping SQLite result columns back to their source `table. / column` Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; Prevent access bottlenecks.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: Teleport replaces fragmented identity and access tooling with a single identity layer that security teams trust, and engineers want to use.
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"将 SQLite 结果列映射回源表.列","discovery_summary":"Simon Willison 为 Datasette 探索了三种方案，使其能对任意 SQL 查询结果补充源表列信息。他使用 Claude Code（Opus 4.8）发现：利用 apsw 库、通过 ctypes 调用 SQLite 内部未暴露的 `sqlite3_column_table_name（）` C 函数，以及分析 `EXPLAIN` 输出。这些方法可程序化识别 `select users.name， orders.total from users join orders on orders.user_id = users.id` 等查询中每个结果对应的源表.列，并支持 JOIN 和 CTE 等复杂语法。","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jun/13/sqlite-column-provenance","discovered_at":"2026-06-14T04:21:16.514Z","rank_on_page":38,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Simon Willison 为 Datasette 探索了三种方案，使其能对任意 SQL 查询结果补充源表列信息。他使用 Claude Code（Opus 4.8）发现：利用 apsw 库、通过 ctypes 调用 SQLite 内部未暴露的 `sqlite3_column_table_name（）` C 函数，以及分析 `EXPLAIN` 输出。这些方法可程序化识别 `select users.name， orders.total from users join orders on orders.user_id = users.id` 等查询中每个结果对应的源表.列，并支持 JOIN 和 CTE 等复杂语法。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
