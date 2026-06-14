@@ -42,6 +42,43 @@
     "core_large_vendor_ratio_max": 0.35,
     "core_non_large_vendor_min": 20
   },
+  "weekend_release_policy": {
+    "enabled": true,
+    "applies_on": [
+      "saturday",
+      "sunday"
+    ],
+    "purpose": "Weekend AI business-signal source volume is often lower, especially for customer cases and funding. This policy only relaxes light quantity floors after Raw / Pool volume, source quality, readable full text, Raw QC, page-type, large-vendor, and relevance gates remain clean. Signal Card generation, source-first, frontstage regression, and site freshness gates still have to pass.",
+    "adjusted_hard_gates": {
+      "core_pool_min": 24,
+      "usable_core_evidence_min": 24,
+      "core_non_large_vendor_min": 16,
+      "pool_min_per_required_importance_type": 3
+    },
+    "allowed_adjusted_failures": [
+      "core_pool_min",
+      "usable_core_evidence_min",
+      "core_non_large_vendor_min",
+      "pool_importance_coverage_gaps_must_be_none"
+    ],
+    "never_relax": [
+      "raw_count_min",
+      "pool_count_min",
+      "routed_pool_count_min",
+      "keyword_search_non_community_min",
+      "ai_relevant_title_ratio_min",
+      "off_topic_title_max",
+      "homepage_directory_core_max",
+      "m_source_only_core_max",
+      "core_missing_full_text_max",
+      "core_readability_score_min",
+      "core_raw_qc_block_max",
+      "core_raw_qc_degraded_max",
+      "core_large_vendor_max",
+      "core_large_vendor_ratio_max",
+      "importance_coverage_gaps_must_be_none"
+    ]
+  },
   "pool_route_definitions": {
     "core_pool": "Full evidence candidate only: original URL, readable full text, extraction_method, readability_score>=24, high/medium extraction quality, non-index evidence object, content hash, full text hash, key excerpts, raw_qc_decision=allow, importance_score>=4, and one of the six required importance types.",
     "emerging_pool": "Trackable early signal with usable evidence but incomplete core proof; may include allow_with_degradation only for follow-up and low-strength observation.",

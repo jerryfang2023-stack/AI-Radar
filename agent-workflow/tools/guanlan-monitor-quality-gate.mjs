@@ -88,6 +88,42 @@ function parseFailedSources(text = "") {
     .filter(Boolean);
 }
 
+function weekdayNameForDate(value = "") {
+  const match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})$/u);
+  if (!match) return "";
+  const [, yyyy, mm, dd] = match;
+  const day = new Date(Date.UTC(Number(yyyy), Number(mm) - 1, Number(dd), 12)).getUTCDay();
+  return ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"][day] || "";
+}
+
+function parseCoverageGapEntries(value = "") {
+  const text = String(value || "").trim().toLowerCase();
+  if (!text || text === "none" || text === "unknown") return [];
+  return text
+    .split(/[;,]/u)
+    .map((part) => {
+      const match = part.trim().match(/^([a-z0-9_/-]+)\s*=\s*(\d+)\s*\/\s*(\d+)$/iu);
+      if (!match) return null;
+      return {
+        key: match[1],
+        actual: Number(match[2]),
+        required: Number(match[3]),
+      };
+    })
+    .filter(Boolean);
+}
+
+function weekendPolicyState(config = {}, targetDate = "") {
+  const policy = config.weekend_release_policy || {};
+  const weekday = weekdayNameForDate(targetDate);
+  const appliesOn = Array.isArray(policy.applies_on) ? policy.applies_on.map((item) => String(item).toLowerCase()) : [];
+  return {
+    policy,
+    weekday,
+    active: Boolean(policy.enabled) && appliesOn.includes(weekday),
+  };
+}
+
 function parseLineInBlock(block = "", key = "") {
   const pattern = new RegExp(`^-\\s*${key}:\\s*(.+)$`, "im");
   const match = String(block || "").match(pattern);
@@ -377,6 +413,24 @@ export function runGuanlanMonitorQualityGate({
   const poolImportanceCoverageMustNone = hard.pool_importance_coverage_gaps_must_be_none ?? hard[legacyPoolCoverageGateKey] ?? true;
   const nonCommunityPathMin = Number(keywordReq.non_community_paths_min || 2);
   const outsideCoreMin = Number(strategyReq.outside_core_exploration_min_raw || 3);
+  const weekend = weekendPolicyState(config, targetDate);
+  const weekendAdjusted = weekend.policy.adjusted_hard_gates || {};
+  const weekendPoolGapMin = Number(weekendAdjusted.pool_min_per_required_importance_type ?? 0);
+  const poolCoverageGapEntries = parseCoverageGapEntries(poolImportanceCoverageValue);
+  const weekendPoolCoveragePassed =
+    weekend.active &&
+    poolCoverageGapEntries.length > 0 &&
+    weekendPoolGapMin > 0 &&
+    poolCoverageGapEntries.every((entry) => entry.actual >= weekendPoolGapMin);
+  const effectiveCorePoolMinHard = weekend.active
+    ? Math.min(corePoolMinHard, Number(weekendAdjusted.core_pool_min ?? corePoolMinHard))
+    : corePoolMinHard;
+  const effectiveUsableCoreEvidenceMinHard = weekend.active
+    ? Math.min(usableCoreEvidenceMinHard, Number(weekendAdjusted.usable_core_evidence_min ?? usableCoreEvidenceMinHard))
+    : usableCoreEvidenceMinHard;
+  const effectiveCoreNonLargeVendorMin = weekend.active
+    ? Math.min(coreNonLargeVendorMin, Number(weekendAdjusted.core_non_large_vendor_min ?? coreNonLargeVendorMin))
+    : coreNonLargeVendorMin;
 
   const hardChecks = [
     { key: "raw_count_min", passed: rawCount >= rawMinHard, value: `${rawCount}/${rawMinHard}` },
@@ -385,8 +439,8 @@ export function runGuanlanMonitorQualityGate({
     { key: "keyword_search_non_community_min", passed: keywordNonCommunityCount >= nonCommunityMinHard, value: `${keywordNonCommunityCount}/${nonCommunityMinHard}` },
     { key: "ai_relevant_title_ratio_min", passed: aiRelevantRatio >= aiRelevantMinHard, value: `${aiRelevantRatio.toFixed(2)}/${aiRelevantMinHard}` },
     { key: "off_topic_title_max", passed: offTopicCount <= offTopicMaxHard, value: `${offTopicCount}/${offTopicMaxHard}` },
-    { key: "core_pool_min", passed: corePoolCount >= corePoolMinHard, value: `${corePoolCount}/${corePoolMinHard}` },
-    { key: "usable_core_evidence_min", passed: usableCoreEvidenceCount >= usableCoreEvidenceMinHard, value: `${usableCoreEvidenceCount}/${usableCoreEvidenceMinHard}` },
+    { key: "core_pool_min", passed: corePoolCount >= effectiveCorePoolMinHard, value: `${corePoolCount}/${effectiveCorePoolMinHard}${weekend.active ? `; default=${corePoolMinHard}` : ""}` },
+    { key: "usable_core_evidence_min", passed: usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard, value: `${usableCoreEvidenceCount}/${effectiveUsableCoreEvidenceMinHard}${weekend.active ? `; default=${usableCoreEvidenceMinHard}` : ""}` },
     { key: "homepage_directory_core_max", passed: homepageDirectoryCoreCount <= homepageDirectoryCoreMax, value: `${homepageDirectoryCoreCount}/${homepageDirectoryCoreMax}` },
     { key: "m_source_only_core_max", passed: mSourceOnlyCoreCount <= mSourceOnlyCoreMax, value: `${mSourceOnlyCoreCount}/${mSourceOnlyCoreMax}` },
     { key: "core_missing_full_text_max", passed: coreMissingFullTextCount <= coreMissingFullTextMax, value: `${coreMissingFullTextCount}/${coreMissingFullTextMax}` },
@@ -395,7 +449,7 @@ export function runGuanlanMonitorQualityGate({
     { key: "core_raw_qc_degraded_max", passed: coreRawQcDegradedCount <= coreRawQcDegradedMax, value: `${coreRawQcDegradedCount}/${coreRawQcDegradedMax}` },
     { key: "core_large_vendor_max", passed: coreLargeVendorCount <= coreLargeVendorMax, value: `${coreLargeVendorCount}/${coreLargeVendorMax}` },
     { key: "core_large_vendor_ratio_max", passed: coreLargeVendorRatio <= coreLargeVendorRatioMax, value: `${coreLargeVendorRatio.toFixed(2)}/${coreLargeVendorRatioMax}` },
-    { key: "core_non_large_vendor_min", passed: coreNonLargeVendorCount >= coreNonLargeVendorMin, value: `${coreNonLargeVendorCount}/${coreNonLargeVendorMin}` },
+    { key: "core_non_large_vendor_min", passed: coreNonLargeVendorCount >= effectiveCoreNonLargeVendorMin, value: `${coreNonLargeVendorCount}/${effectiveCoreNonLargeVendorMin}${weekend.active ? `; default=${coreNonLargeVendorMin}` : ""}` },
     {
       key: "importance_coverage_gaps_must_be_none",
       passed: importanceCoverageMustNone ? !coverageGapFlag : true,
@@ -403,8 +457,8 @@ export function runGuanlanMonitorQualityGate({
     },
     {
       key: "pool_importance_coverage_gaps_must_be_none",
-      passed: poolImportanceCoverageMustNone ? !poolCoverageGapFlag : true,
-      value: poolImportanceCoverageValue,
+      passed: poolImportanceCoverageMustNone ? !poolCoverageGapFlag || weekendPoolCoveragePassed : true,
+      value: `${poolImportanceCoverageValue}${weekendPoolCoveragePassed ? `; weekend_min=${weekendPoolGapMin}` : ""}`,
     },
   ];
   const hardFailed = hardChecks.filter((check) => !check.passed);
@@ -473,7 +527,7 @@ export function runGuanlanMonitorQualityGate({
       corePoolCount,
       usableCoreEvidenceCount,
       coverageGapFlag,
-      poolCoverageGapFlag,
+      poolCoverageGapFlag: poolCoverageGapFlag && !weekendPoolCoveragePassed,
       homepageDirectoryCoreCount,
       homepageDirectoryCoreMax,
       mSourceOnlyCoreCount,
@@ -491,15 +545,15 @@ export function runGuanlanMonitorQualityGate({
       coreLargeVendorRatio,
       coreLargeVendorRatioMax,
       coreNonLargeVendorCount,
-      coreNonLargeVendorMin,
+      coreNonLargeVendorMin: effectiveCoreNonLargeVendorMin,
       rawMinHard,
       poolMinHard,
       routedPoolMinHard,
       nonCommunityMinHard,
       aiRelevantMinHard,
       offTopicMaxHard,
-      corePoolMinHard,
-      usableCoreEvidenceMinHard,
+      corePoolMinHard: effectiveCorePoolMinHard,
+      usableCoreEvidenceMinHard: effectiveUsableCoreEvidenceMinHard,
     },
     hardFailed
   );
@@ -520,7 +574,11 @@ export function runGuanlanMonitorQualityGate({
     coreLargeVendorCount > coreLargeVendorMax || coreLargeVendorRatio > coreLargeVendorRatioMax
       ? `core_large_vendor=${coreLargeVendorCount}/${coreLargeVendorMax}; ratio=${coreLargeVendorRatio.toFixed(2)}/${coreLargeVendorRatioMax}`
       : "",
-    coreNonLargeVendorCount < coreNonLargeVendorMin ? `core_non_large_vendor_insufficient=${coreNonLargeVendorCount}/${coreNonLargeVendorMin}` : "",
+    weekend.active ? `weekend_policy=${status}; weekday=${weekend.weekday}; effective_core_pool_min=${effectiveCorePoolMinHard}; effective_usable_core_evidence_min=${effectiveUsableCoreEvidenceMinHard}; effective_core_non_large_vendor_min=${effectiveCoreNonLargeVendorMin}; pool_gap_min=${weekendPoolGapMin || "none"}` : "",
+    weekend.active && corePoolCount < corePoolMinHard ? `weekend_default_core_pool_shortfall=${corePoolCount}/${corePoolMinHard}` : "",
+    weekend.active && usableCoreEvidenceCount < usableCoreEvidenceMinHard ? `weekend_default_usable_core_evidence_shortfall=${usableCoreEvidenceCount}/${usableCoreEvidenceMinHard}` : "",
+    weekend.active && coreNonLargeVendorCount < coreNonLargeVendorMin ? `weekend_default_core_non_large_vendor_shortfall=${coreNonLargeVendorCount}/${coreNonLargeVendorMin}` : "",
+    coreNonLargeVendorCount < effectiveCoreNonLargeVendorMin ? `core_non_large_vendor_insufficient=${coreNonLargeVendorCount}/${effectiveCoreNonLargeVendorMin}` : "",
   ].filter(Boolean);
 
   const skillFeedback = [];
@@ -530,16 +588,16 @@ export function runGuanlanMonitorQualityGate({
   if (aiRelevantRatio < aiRelevantMinHard || offTopicCount > offTopicMaxHard) {
     skillFeedback.push("Tighten Raw AI relevance anchors and noise filters before accepting candidates.");
   }
-  if (corePoolCount < corePoolMinHard) {
+  if (corePoolCount < effectiveCorePoolMinHard) {
     skillFeedback.push("Increase usable original-evidence core items and avoid weak Pool-only leads.");
   }
-  if (usableCoreEvidenceCount < usableCoreEvidenceMinHard) {
+  if (usableCoreEvidenceCount < effectiveUsableCoreEvidenceMinHard) {
     skillFeedback.push("Repair core_pool items so they have full text, usable evidence object, non-index page type and Raw-QC allow status.");
   }
   if (coverageGapFlag) {
     skillFeedback.push("Repair Raw importance coverage before downstream use.");
   }
-  if (poolCoverageGapFlag) {
+  if (poolCoverageGapFlag && !weekendPoolCoveragePassed) {
     skillFeedback.push("Repair Pool importance coverage before downstream assets; each required importance type needs the configured Pool minimum.");
   }
   if (homepageDirectoryCoreCount || mSourceOnlyCoreCount || coreMissingFullTextCount) {
@@ -554,7 +612,7 @@ export function runGuanlanMonitorQualityGate({
   if (coreLargeVendorCount > coreLargeVendorMax || coreLargeVendorRatio > coreLargeVendorRatioMax) {
     skillFeedback.push("Demote repeated large-company product/lab items from core_pool and replenish funding, customer deployment, vertical workflow, pricing, procurement, regulatory, or emerging-company evidence.");
   }
-  if (coreNonLargeVendorCount < coreNonLargeVendorMin) {
+  if (coreNonLargeVendorCount < effectiveCoreNonLargeVendorMin) {
     skillFeedback.push("Expand Raw and Pool around emerging companies, customer deployments, vertical workflow cases, funding, procurement, pricing and regulatory evidence until non-large-company core_pool has enough depth.");
   }
   if (failedSources.length) {
@@ -570,6 +628,9 @@ export function runGuanlanMonitorQualityGate({
     `- generated_at: ${new Date().toISOString()}`,
     `- attempt: ${attempt}/${maxAttempts}`,
     `- status: ${status}`,
+    `- production_weekday: ${weekend.weekday || "unknown"}`,
+    `- weekend_policy: ${weekend.active ? "active" : "inactive"}`,
+    `- weekend_policy_note: ${weekend.active ? "light weekend quantity floors applied; evidence-quality gates and downstream card/frontstage gates remain required" : "not_applied"}`,
     `- total_score: ${totalScore}`,
     `- diagnostic_score_reference: ${scoreThreshold}`,
     `- score_mode: ${scoreMode}`,
@@ -586,7 +647,11 @@ export function runGuanlanMonitorQualityGate({
     `- ai_relevant_title_ratio: ${aiRelevantRatio.toFixed(3)}`,
     `- off_topic_title_count: ${offTopicCount}`,
     `- core_pool_count: ${corePoolCount}`,
+    `- core_pool_min_effective: ${effectiveCorePoolMinHard}`,
+    `- core_pool_min_default: ${corePoolMinHard}`,
     `- usable_core_evidence_count: ${usableCoreEvidenceCount}`,
+    `- usable_core_evidence_min_effective: ${effectiveUsableCoreEvidenceMinHard}`,
+    `- usable_core_evidence_min_default: ${usableCoreEvidenceMinHard}`,
     `- homepage_directory_core_count: ${homepageDirectoryCoreCount}`,
     `- m_source_only_core_count: ${mSourceOnlyCoreCount}`,
     `- core_missing_full_text_count: ${coreMissingFullTextCount}`,
@@ -596,6 +661,8 @@ export function runGuanlanMonitorQualityGate({
     `- core_raw_qc_degraded_count: ${coreRawQcDegradedCount}`,
     `- core_large_vendor_count: ${coreLargeVendorCount}`,
     `- core_non_large_vendor_count: ${coreNonLargeVendorCount}`,
+    `- core_non_large_vendor_min_effective: ${effectiveCoreNonLargeVendorMin}`,
+    `- core_non_large_vendor_min_default: ${coreNonLargeVendorMin}`,
     `- core_large_vendor_ratio: ${coreLargeVendorRatio.toFixed(3)}`,
     `- importance_coverage_gaps: ${importanceCoverageValue}`,
     `- pool_importance_coverage_gaps: ${poolImportanceCoverageValue}`,
