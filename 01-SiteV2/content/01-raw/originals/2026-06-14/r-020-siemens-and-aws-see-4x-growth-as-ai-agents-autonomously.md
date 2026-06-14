@@ -1,0 +1,714 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-020
+title: "Siemens and AWS See 4x Growth as AI Agents Autonomously ..."
+original_url: "https://www.linkedin.com/pulse/siemens-aws-see-4x-growth-ai-agents-autonomously-handle-enterprise-547fe"
+canonical_url: "https://linkedin.com/pulse/siemens-aws-see-4x-growth-ai-agents-autonomously-handle-enterprise-547fe"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-14T04:27:51.330Z
+language: mixed
+full_text_hash: 8e8032485a3761aa
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-020-siemens-and-aws-see-4x-growth-as-ai-agents-autonomously.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-14/r-020-siemens-and-aws-see-4x-growth-as-ai-agents-autonomously.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 76
+extractor_diagnostics: {"readability_score":76,"text_length":13124,"paragraph_count":106,"sentence_count":71,"boilerplate_hits":7,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 13124
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8e8032485a3761aa","missing":[]}
+source_volatility: high
+community_name: "keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8327c8e06398b0f4
+content_hash: 8e8032485a3761aa
+semantic_hash: e33069a6eb10c590
+duplicate_of: ""
+first_seen_at: "2026-06-14T04:27:51.330Z"
+last_seen_at: 2026-06-14T04:27:51.330Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","Meta","Amazon","AWS","Nvidia"],"products":["Agents","agent","Agent","agents","Claude"],"people":[],"industries":["金融 / 保险","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","采购","销售 / 客服"],"numbers":["4x","30","000","30%","50%","2025","50 m","2"],"quotes":["Find a PLM solution that can accelerate my digital transformation and do a cloud migration faster.","Usually if you buy complex software, it's a multi-step process. You need to search, compare, talk to a sales rep, then do a proof of concept,","Now with agent mode, you have a procurement agent that does the complete buying experience for these complex solutions.","Our customers are laser-focused on driving business outcomes that impact change for their business,"]}
+evidence_seed: {"company_actions":["AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings. / query=AI Agent funding enterprise customers / intent=find_startups / path=procurement_marketplace","Siemens categorizes its agentic AI portfolio into three specific approaches: Engineering AI AI fabric Digital thread agents The third category, digital thread agents, handles autonomous change management across domains from engineering through manufacturing – no human intervention required at any step.","This specificity matters."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings. / query=AI Agent funding enterprise customers / intent=find_startups / path=procurement_marketplace","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Siemens categorizes its agentic AI portfolio into three specific approaches: Engineering AI AI fabric Digital thread agents The third category, digital thread agents, handles autonomous change management across domains from engineering through manufacturing – no human intervention required at any step.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This specificity matters.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Customers using the combined Siemens and Amazon Web Services (AWS) capabilities are delivering products to market 30% to 50% faster across energy, infrastructure, aerospace and automotive sectors.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The partnership itself is experiencing 4x year-over-year growth in marketplace procurement adoption.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Siemens and AWS leverage autonomous systems to streamline enterprise software procurement, acting as digital workers to accelerate time-to-market by up to 50% AWS agent mode: From multi-step buying to autonomous procurement AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Siemens and AWS See 4x Growth as AI Agents Autonomously ...
+
+## clean_text
+
+Siemens categorizes its agentic AI portfolio into three specific approaches:
+Engineering AI
+AI fabric
+Digital thread agents
+The third category, digital thread agents, handles autonomous change management across domains from engineering through manufacturing – no human intervention required at any step.
+This specificity matters. Customers using the combined Siemens and
+Amazon Web Services (AWS)
+capabilities are delivering products to market 30% to 50% faster across energy, infrastructure, aerospace and automotive sectors. The partnership itself is experiencing 4x year-over-year growth in marketplace procurement adoption.
+Siemens and AWS leverage autonomous systems to streamline enterprise software procurement, acting as digital workers to accelerate time-to-market by up to 50%
+AWS agent mode: From multi-step buying to autonomous procurement
+AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings. A procurement team can type, "Find a PLM solution that can accelerate my digital transformation and do a cloud migration faster." The agent then autonomously executes data retrieval, delivers side-by-side solution comparisons and creates the first purchase proposal.
+"Usually if you buy complex software, it's a multi-step process. You need to search, compare, talk to a sales rep, then do a proof of concept," explained
+Maria R.
+, AWS's global partner lead for Siemens collaboration. "Now with agent mode, you have a procurement agent that does the complete buying experience for these complex solutions."
+The entire Siemens portfolio available as SaaS solutions on AWS is now accessible through this agent-driven marketplace. The partnership began over ten years ago. Today it's delivering measurable velocity.
+Three categories of Siemens agentic AI
+Brycen Spencer
+, Siemens' partner leader for AWS, outlined how the company organizes its Industrial AI approach:
+“Engineering AI infuses AI into design tools. Customers use it to explore design opportunities, optimize products and improve manufacturing layouts before physical implementation.”
+AI fabric combines
+Mendix
+(which includes AWS AI capabilities) with Siemens RapidMiner to connect data to operational issues. One application identifies warranty hotspots faster by analyzing patterns across production facilities and product lines.
+Digital thread agents enable autonomous change management across the complete value chain from engineering to manufacturing. These agents differ from copilots; they complete tasks from start to finish autonomously, while copilots assist human decision-making.
+All three types of agentic AI leverage Amazon Bedrock, giving customers access to multiple foundation models including Meta Llama and Anthropic Claude – integrated directly with Siemens industrial software.
+Multi-product solutions: The December 2025 innovation
+AWS re:Invent in December 2025 introduced multi-product solutions to the marketplace. These prepackaged combinations bundle products and services from one or multiple partners targeting specific industries or use cases.
+An engineering package might include design software, simulation software, and professional services to optimize design – all accessible through one interface, one procurement process.
+More than 50 multi-product solutions have been launched in the months that followed the initial announcement. The marketplace now hosts more than 2,000 AI agents total.
+Recommended by LinkedIn
+How Gen AI Could Disrupt SaaS—and Change the Companies…
+Mark D. Orlic
+1 year ago
+Build vs. Buy 3.0, in the AI Era
+Srinivas Vemuri
+1 month ago
+Reinventing IT Services in the Age of Agentic AI
+Radhakrishnan Mahalingam
+1 month ago
+Unlike traditional copilots that merely assist, Agentic AI systems can autonomously complete multi-step enterprise tasks from start to finish
+The industrial speed factor
+Industrial companies face unique procurement challenges: complex machinery, decades-old systems requiring integration, security protocols and regulatory compliance. Traditional buying cycles stretch for months.
+"Our customers are laser-focused on driving business outcomes that impact change for their business," said Spencer. "With agent mode, it's easier for customers to discover the Siemens solutions and trust that they can implement the latest technologies in a way they can rely on."
+When deployment begins, customers can deploy SaaS solutions on AWS and use committed cloud budgets to purchase the transformations they need eliminating separate budget negotiations.
+30% to 50% time-to-market improvement
+The specific performance gains appear across multiple industries. Companies delivering products 30% to 50% faster are using the combined capabilities Siemens and AWS built together.
+Spencer attributes the results to the partnership approach:
+"We often say that we try to make complexity a competitive advantage for our customers. The partnership between Siemens and AWS is about making it more scalable, more accessible and more flexible for our customers. And not just large enterprises but all the way down to small companies and startups."
+Key takeaways:
+AWS Marketplace agent mode autonomously handles search, comparison and purchase proposals for 30,000+ enterprise software listings using natural language.
+The Siemens & AWS partnership shows 4x year-over-year growth in marketplace procurement adoption since launching the full portfolio.
+Customers across energy, infrastructure, aerospace and automotive are achieving 30 to 50 percent faster product delivery using combined Siemens AWS capabilities.
+Siemens organizes agentic AI into three specific engineering approaches: engineering AI, AI fabric and digital thread agents – all targeting specific industrial use cases.
+Multi-product solutions bundle integrated technology stacks from multiple partners, with 50+ packages launched since December 2025.
+What procurement challenges is your organization facing with industrial software? Let us know in the comments!
+Watch the full conversation to see how AI agents are changing enterprise buying.
+Like
+Like
+Celebrate
+Support
+Love
+Insightful
+Funny
+Comment
+Copy
+LinkedIn
+Facebook
+Share
+391
+10 Comments
+Zofia Piotrowska
+3w
+Report this comment
+A very relevant direction.
+One of the biggest shifts in enterprise AI is moving from isolated copilots toward operationally embedded agentic workflows that support real business execution. The real challenge, however, remains governance, accountability, integration complexity, and measurable business outcomes at scale.
+Like
+Reply
+1 Reaction
+SShubham Agarwal
+1mo
+Report this comment
+The AWS Marketplace Agent Mode highlights a profound shift: we are moving from traditional procurement bottlenecks to autonomous transaction paths. Achieving a '50% faster time to market' is an incredible operational victory.
+As procurement teams deploy autonomous agents to discover, compare, and propose software solutions, three governance priorities must be built into the framework:
+🔹 Policy-Aligned Constraints: AI agents must operate within predefined parameters. A natural-language request for a PLM or digital twin solution must automatically filter options based on the organization's pre-approved vendor list, budget thresholds, and regional compliance mandates.
+🔹 Auditable Evaluation Trails: When an agent compares solutions side-by-side, the logic behind its final purchase proposal must be completely transparent.
+🔹 Human-in-the-Loop Safeguards: Autonomy is excellent for research and compilation, but the final execution boundary the actual sign-off on a software contract must remain a human leadership capability to ensure true accountability.
+#ProcurementStrategy #IndustrialAI #AIGovernance #DigitalTransformation #BusinessEthics #RiskManagement #AWSMarketplace #SupplyChainTrust #EnterpriseSaaS
+Like
+Reply
+1 Reaction
+Serhii K.
+1mo
+Report this comment
+That 4x growth number is impressive, but it raises a question about what's actually being measured. Marketplace procurement adoption could mean more transactions happening through a portal without telling us anything about deal size, complexity, or whether the solutions are actually the right fit.
+The autonomous agent sounds useful for standardized purchases.
+Like
+Reply
+1 Reaction
+2 Reactions
+Binci Heeb
+1mo
+Report this comment
+Michel Rudin , the shift toward agentic procurement is genuinely exciting to see at this scale!
+The digital thread concept you describe resonates deeply, especially when change management spans engineering to manufacturing. One insight we often see: the biggest bottleneck isn't finding the right solution, it's ensuring every stakeholder actually adopts it and collaborates around it seamlessly once it's in place.
+Siemens : How are your customers handling the human side of that transition, particularly when autonomous agents start making purchase proposals that traditionally required committee consensus?
+Like
+Reply
+1 Reaction
+See more comments
+To view or add a comment, sign in
+More articles by Siemens
+Jun 11, 2026
+Vectron X: The First Locomotive With an App Store
+▶️ Listen to this newsletter · 6:47 min Vectron is the 9,000-horsepower workhorse of European rail. With close to 3,000…
+701
+41 Comments
+Jun 5, 2026
+The Next Wave in Industrial AI – How Ready Are You?
+Bigger AI models aren't always better. Industry is proving why.
+78
+1 Comment
+Jun 4, 2026
+From Calculation to Creation: How AI is Taking Design Engineers to the Edge of Possibility
+▶️ Listen to this newsletter · 10:32 min Before a new aircraft wing, ship hull, or industrial component ever reaches…
+752
+30 Comments
+May 28, 2026
+How do you contain what you can’t see?
+▶️ Listen to this newsletter · 6:56 min How independent testing in Zug, Switzerland, is challenging a costly assumption…
+748
+49 Comments
+May 14, 2026
+AI vs. AI: How to Combat Today's Sophisticated Cyberattacks
+▶️ Listen to this newsletter · 8:10 min Imagine a room that looks like a mission control center: rows of desks…
+789
+57 Comments
+May 7, 2026
+AI that Does the Heavy Lifting: Meet the Eigen Engineering Agent
+▶️ Listen to this newsletter · 10:27 min At HANNOVER MESSE 2026, Siemens introduced the Eigen Engineering Agent, a new…
+640
+33 Comments
+May 2, 2026
+Siemens and NVIDIA: Democratizing Industrial AI for Every Manufacturer
+In this article, you'll learn: Why industry is facing a manufacturing crisis despite growing demand How digital twins…
+328
+9 Comments
+Apr 23, 2026
+Hannover Messe 2026: AI Now Handles the Factory – And the Snacks
+▶️ Listen to this newsletter · 7:37 min Hannover, Germany – At HANNOVER MESSE 2026, Siemens showed that industrial AI…
+868
+59 Comments
+Apr 17, 2026
+How PepsiCo Uses Digital Twins & AI to Rethink Manufacturing
+In this article, you'll learn: How PepsiCo plans to become future-ready How digital twins optimized brownfield…
+536
+15 Comments
+Apr 15, 2026
+Building the Future with AWS: The Smart Infrastructure Behind AI Factories
+In this article, you'll learn: Why data centers will look completely different in five years’ time How AI…
+406
+11 Comments
+Show more
+See all articles
+Others also viewed
+The Rise of Enterprise Agent Platforms: From Tools to Autonomous Execution Systems
+Amplework Software Pvt. Ltd.
+1mo
+Issue 5: SAP Sapphire 2026: The Era of the Autonomous Enterprise
+Stephane Borg
+3w
+Some things age well. This is one them.
+Damien Johnson
+3w
+Enterprise software gets a cognitive upgrade
+David Schatsky
+8y
+SAP’s Autonomous Enterprise Is Coming. Customers Need a Safe Way to Test It Before They Trust It.
+Neeha Reddi
+3w
+Autonomous Agents and Workflow-Native Tools: Reshaping the Modern Enterprise
+Muhammad Irfan Habib PEng.T 🌍
+2w
+From SaaS vs. McKinsey to “McTool”: How Agentic AI and Forward‑Deployed Engineers Disrupt the Classic Software Go‑to‑Market
+Jesse Jeng
+9mo
+Workflows, Not Models: Scaling Enterprise AI
+Monica Bajaj
+5mo
+Practical AI and Microservices for Mid-Size Organisations
+David Hilcher
+10mo
+Show more
+Show less
+Similar topics
+How Agentic AI is Transforming Industries
+10 Posts
+570
+How AI Agents Transform Business Processes
+10 Posts
+841
+Integrating AI Skills and AWS Expertise in Cloud Design
+8 Posts
+3,104
+Using AI To Optimize Supply Chain In Engineering
+10 Posts
+508
+AI-Driven Process Enhancements
+10 Posts
+677
+Building Custom AI Models for AWS Workflows
+7 Posts
+2,722
+Enhancing Manufacturing Processes With AI And IoT
+10 Posts
+1,659
+How Amazon is Transforming AI Infrastructure
+10 Posts
+8,961
+Show more
+Show less
+Explore content categories
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+Technology
+Leadership
+Ecommerce
+User Experience
+Recruitment & HR
+Customer Experience
+Real Estate
+Marketing
+Sales
+Retail & Merchandising
+Science
+Supply Chain Management
+Future Of Work
+Consulting
+Writing
+Economics
+Artificial Intelligence
+Employee Experience
+Workplace Trends
+Fundraising
+Networking
+Corporate Social Responsibility
+Negotiation
+Communication
+Engineering
+Hospitality & Tourism
+Business Strategy
+Change Management
+Organizational Culture
+Design
+Innovation
+Event Planning
+Training & Development
+Show more
+Show less
+
+## full_text
+
+Siemens categorizes its agentic AI portfolio into three specific approaches:
+Engineering AI
+AI fabric
+Digital thread agents
+The third category, digital thread agents, handles autonomous change management across domains from engineering through manufacturing – no human intervention required at any step.
+This specificity matters. Customers using the combined Siemens and
+Amazon Web Services (AWS)
+capabilities are delivering products to market 30% to 50% faster across energy, infrastructure, aerospace and automotive sectors. The partnership itself is experiencing 4x year-over-year growth in marketplace procurement adoption.
+Siemens and AWS leverage autonomous systems to streamline enterprise software procurement, acting as digital workers to accelerate time-to-market by up to 50%
+AWS agent mode: From multi-step buying to autonomous procurement
+AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings. A procurement team can type, "Find a PLM solution that can accelerate my digital transformation and do a cloud migration faster." The agent then autonomously executes data retrieval, delivers side-by-side solution comparisons and creates the first purchase proposal.
+"Usually if you buy complex software, it's a multi-step process. You need to search, compare, talk to a sales rep, then do a proof of concept," explained
+Maria R.
+, AWS's global partner lead for Siemens collaboration. "Now with agent mode, you have a procurement agent that does the complete buying experience for these complex solutions."
+The entire Siemens portfolio available as SaaS solutions on AWS is now accessible through this agent-driven marketplace. The partnership began over ten years ago. Today it's delivering measurable velocity.
+Three categories of Siemens agentic AI
+Brycen Spencer
+, Siemens' partner leader for AWS, outlined how the company organizes its Industrial AI approach:
+“Engineering AI infuses AI into design tools. Customers use it to explore design opportunities, optimize products and improve manufacturing layouts before physical implementation.”
+AI fabric combines
+Mendix
+(which includes AWS AI capabilities) with Siemens RapidMiner to connect data to operational issues. One application identifies warranty hotspots faster by analyzing patterns across production facilities and product lines.
+Digital thread agents enable autonomous change management across the complete value chain from engineering to manufacturing. These agents differ from copilots; they complete tasks from start to finish autonomously, while copilots assist human decision-making.
+All three types of agentic AI leverage Amazon Bedrock, giving customers access to multiple foundation models including Meta Llama and Anthropic Claude – integrated directly with Siemens industrial software.
+Multi-product solutions: The December 2025 innovation
+AWS re:Invent in December 2025 introduced multi-product solutions to the marketplace. These prepackaged combinations bundle products and services from one or multiple partners targeting specific industries or use cases.
+An engineering package might include design software, simulation software, and professional services to optimize design – all accessible through one interface, one procurement process.
+More than 50 multi-product solutions have been launched in the months that followed the initial announcement. The marketplace now hosts more than 2,000 AI agents total.
+Recommended by LinkedIn
+How Gen AI Could Disrupt SaaS—and Change the Companies…
+Mark D. Orlic
+1 year ago
+Build vs. Buy 3.0, in the AI Era
+Srinivas Vemuri
+1 month ago
+Reinventing IT Services in the Age of Agentic AI
+Radhakrishnan Mahalingam
+1 month ago
+Unlike traditional copilots that merely assist, Agentic AI systems can autonomously complete multi-step enterprise tasks from start to finish
+The industrial speed factor
+Industrial companies face unique procurement challenges: complex machinery, decades-old systems requiring integration, security protocols and regulatory compliance. Traditional buying cycles stretch for months.
+"Our customers are laser-focused on driving business outcomes that impact change for their business," said Spencer. "With agent mode, it's easier for customers to discover the Siemens solutions and trust that they can implement the latest technologies in a way they can rely on."
+When deployment begins, customers can deploy SaaS solutions on AWS and use committed cloud budgets to purchase the transformations they need eliminating separate budget negotiations.
+30% to 50% time-to-market improvement
+The specific performance gains appear across multiple industries. Companies delivering products 30% to 50% faster are using the combined capabilities Siemens and AWS built together.
+Spencer attributes the results to the partnership approach:
+"We often say that we try to make complexity a competitive advantage for our customers. The partnership between Siemens and AWS is about making it more scalable, more accessible and more flexible for our customers. And not just large enterprises but all the way down to small companies and startups."
+Key takeaways:
+AWS Marketplace agent mode autonomously handles search, comparison and purchase proposals for 30,000+ enterprise software listings using natural language.
+The Siemens & AWS partnership shows 4x year-over-year growth in marketplace procurement adoption since launching the full portfolio.
+Customers across energy, infrastructure, aerospace and automotive are achieving 30 to 50 percent faster product delivery using combined Siemens AWS capabilities.
+Siemens organizes agentic AI into three specific engineering approaches: engineering AI, AI fabric and digital thread agents – all targeting specific industrial use cases.
+Multi-product solutions bundle integrated technology stacks from multiple partners, with 50+ packages launched since December 2025.
+What procurement challenges is your organization facing with industrial software? Let us know in the comments!
+Watch the full conversation to see how AI agents are changing enterprise buying.
+Like
+Like
+Celebrate
+Support
+Love
+Insightful
+Funny
+Comment
+Copy
+LinkedIn
+Facebook
+Share
+391
+10 Comments
+Zofia Piotrowska
+3w
+Report this comment
+A very relevant direction.
+One of the biggest shifts in enterprise AI is moving from isolated copilots toward operationally embedded agentic workflows that support real business execution. The real challenge, however, remains governance, accountability, integration complexity, and measurable business outcomes at scale.
+Like
+Reply
+1 Reaction
+SShubham Agarwal
+1mo
+Report this comment
+The AWS Marketplace Agent Mode highlights a profound shift: we are moving from traditional procurement bottlenecks to autonomous transaction paths. Achieving a '50% faster time to market' is an incredible operational victory.
+As procurement teams deploy autonomous agents to discover, compare, and propose software solutions, three governance priorities must be built into the framework:
+🔹 Policy-Aligned Constraints: AI agents must operate within predefined parameters. A natural-language request for a PLM or digital twin solution must automatically filter options based on the organization's pre-approved vendor list, budget thresholds, and regional compliance mandates.
+🔹 Auditable Evaluation Trails: When an agent compares solutions side-by-side, the logic behind its final purchase proposal must be completely transparent.
+🔹 Human-in-the-Loop Safeguards: Autonomy is excellent for research and compilation, but the final execution boundary the actual sign-off on a software contract must remain a human leadership capability to ensure true accountability.
+#ProcurementStrategy #IndustrialAI #AIGovernance #DigitalTransformation #BusinessEthics #RiskManagement #AWSMarketplace #SupplyChainTrust #EnterpriseSaaS
+Like
+Reply
+1 Reaction
+Serhii K.
+1mo
+Report this comment
+That 4x growth number is impressive, but it raises a question about what's actually being measured. Marketplace procurement adoption could mean more transactions happening through a portal without telling us anything about deal size, complexity, or whether the solutions are actually the right fit.
+The autonomous agent sounds useful for standardized purchases.
+Like
+Reply
+1 Reaction
+2 Reactions
+Binci Heeb
+1mo
+Report this comment
+Michel Rudin , the shift toward agentic procurement is genuinely exciting to see at this scale!
+The digital thread concept you describe resonates deeply, especially when change management spans engineering to manufacturing. One insight we often see: the biggest bottleneck isn't finding the right solution, it's ensuring every stakeholder actually adopts it and collaborates around it seamlessly once it's in place.
+Siemens : How are your customers handling the human side of that transition, particularly when autonomous agents start making purchase proposals that traditionally required committee consensus?
+Like
+Reply
+1 Reaction
+See more comments
+To view or add a comment, sign in
+More articles by Siemens
+Jun 11, 2026
+Vectron X: The First Locomotive With an App Store
+▶️ Listen to this newsletter · 6:47 min Vectron is the 9,000-horsepower workhorse of European rail. With close to 3,000…
+701
+41 Comments
+Jun 5, 2026
+The Next Wave in Industrial AI – How Ready Are You?
+Bigger AI models aren't always better. Industry is proving why.
+78
+1 Comment
+Jun 4, 2026
+From Calculation to Creation: How AI is Taking Design Engineers to the Edge of Possibility
+▶️ Listen to this newsletter · 10:32 min Before a new aircraft wing, ship hull, or industrial component ever reaches…
+752
+30 Comments
+May 28, 2026
+How do you contain what you can’t see?
+▶️ Listen to this newsletter · 6:56 min How independent testing in Zug, Switzerland, is challenging a costly assumption…
+748
+49 Comments
+May 14, 2026
+AI vs. AI: How to Combat Today's Sophisticated Cyberattacks
+▶️ Listen to this newsletter · 8:10 min Imagine a room that looks like a mission control center: rows of desks…
+789
+57 Comments
+May 7, 2026
+AI that Does the Heavy Lifting: Meet the Eigen Engineering Agent
+▶️ Listen to this newsletter · 10:27 min At HANNOVER MESSE 2026, Siemens introduced the Eigen Engineering Agent, a new…
+640
+33 Comments
+May 2, 2026
+Siemens and NVIDIA: Democratizing Industrial AI for Every Manufacturer
+In this article, you'll learn: Why industry is facing a manufacturing crisis despite growing demand How digital twins…
+328
+9 Comments
+Apr 23, 2026
+Hannover Messe 2026: AI Now Handles the Factory – And the Snacks
+▶️ Listen to this newsletter · 7:37 min Hannover, Germany – At HANNOVER MESSE 2026, Siemens showed that industrial AI…
+868
+59 Comments
+Apr 17, 2026
+How PepsiCo Uses Digital Twins & AI to Rethink Manufacturing
+In this article, you'll learn: How PepsiCo plans to become future-ready How digital twins optimized brownfield…
+536
+15 Comments
+Apr 15, 2026
+Building the Future with AWS: The Smart Infrastructure Behind AI Factories
+In this article, you'll learn: Why data centers will look completely different in five years’ time How AI…
+406
+11 Comments
+Show more
+See all articles
+Others also viewed
+The Rise of Enterprise Agent Platforms: From Tools to Autonomous Execution Systems
+Amplework Software Pvt. Ltd.
+1mo
+Issue 5: SAP Sapphire 2026: The Era of the Autonomous Enterprise
+Stephane Borg
+3w
+Some things age well. This is one them.
+Damien Johnson
+3w
+Enterprise software gets a cognitive upgrade
+David Schatsky
+8y
+SAP’s Autonomous Enterprise Is Coming. Customers Need a Safe Way to Test It Before They Trust It.
+Neeha Reddi
+3w
+Autonomous Agents and Workflow-Native Tools: Reshaping the Modern Enterprise
+Muhammad Irfan Habib PEng.T 🌍
+2w
+From SaaS vs. McKinsey to “McTool”: How Agentic AI and Forward‑Deployed Engineers Disrupt the Classic Software Go‑to‑Market
+Jesse Jeng
+9mo
+Workflows, Not Models: Scaling Enterprise AI
+Monica Bajaj
+5mo
+Practical AI and Microservices for Mid-Size Organisations
+David Hilcher
+10mo
+Show more
+Show less
+Similar topics
+How Agentic AI is Transforming Industries
+10 Posts
+570
+How AI Agents Transform Business Processes
+10 Posts
+841
+Integrating AI Skills and AWS Expertise in Cloud Design
+8 Posts
+3,104
+Using AI To Optimize Supply Chain In Engineering
+10 Posts
+508
+AI-Driven Process Enhancements
+10 Posts
+677
+Building Custom AI Models for AWS Workflows
+7 Posts
+2,722
+Enhancing Manufacturing Processes With AI And IoT
+10 Posts
+1,659
+How Amazon is Transforming AI Infrastructure
+10 Posts
+8,961
+Show more
+Show less
+Explore content categories
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+Technology
+Leadership
+Ecommerce
+User Experience
+Recruitment & HR
+Customer Experience
+Real Estate
+Marketing
+Sales
+Retail & Merchandising
+Science
+Supply Chain Management
+Future Of Work
+Consulting
+Writing
+Economics
+Artificial Intelligence
+Employee Experience
+Workplace Trends
+Fundraising
+Networking
+Corporate Social Responsibility
+Negotiation
+Communication
+Engineering
+Hospitality & Tourism
+Business Strategy
+Change Management
+Organizational Culture
+Design
+Innovation
+Event Planning
+Training & Development
+Show more
+Show less
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 76
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":76,"text_length":13124,"paragraph_count":106,"sentence_count":71,"boilerplate_hits":7,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings. / query=AI Agent funding enterprise customers / intent=find_startups / path=procurement_marketplace
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Siemens categorizes its agentic AI portfolio into three specific approaches: Engineering AI AI fabric Digital thread agents The third category, digital thread agents, handles autonomous change management across domains from engineering through manufacturing – no human intervention required at any step.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   This specificity matters.
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Customers using the combined Siemens and Amazon Web Services (AWS) capabilities are delivering products to market 30% to 50% faster across energy, infrastructure, aerospace and automotive sectors.
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   The partnership itself is experiencing 4x year-over-year growth in marketplace procurement adoption.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Siemens and AWS leverage autonomous systems to streamline enterprise software procurement, acting as digital workers to accelerate time-to-market by up to 50% AWS agent mode: From multi-step buying to autonomous procurement AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, Meta, Amazon, AWS, Nvidia
+- products: Agents, agent, Agent, agents, Claude
+- people: 暂无公开信息
+- industries: 金融 / 保险, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 4x, 30, 000, 30%, 50%, 2025, 50 m, 2
+- quotes: Find a PLM solution that can accelerate my digital transformation and do a cloud migration faster. / Usually if you buy complex software, it's a multi-step process. You need to search, compare, talk to a sales rep, then do a proof of concept, / Now with agent mode, you have a procurement agent that does the complete buying experience for these complex solutions. / Our customers are laser-focused on driving business outcomes that impact change for their business,
+
+## evidence_seed
+
+- company_actions: AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings. / query=AI Agent funding enterprise customers / intent=find_startups / path=procurement_marketplace / Siemens categorizes its agentic AI portfolio into three specific approaches: Engineering AI AI fabric Digital thread agents The third category, digital thread agents, handles autonomous change management across domains from engineering through manufacturing – no human intervention required at any step. / This specificity matters.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AWS Marketplace now features agent mode, a conversational AI that autonomously handles enterprise software procurement across 30,000+ listings. / query=AI Agent funding enterprise customers / intent=find_startups / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,254 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-142",
+  "title": "在家学习AI编程，不花大钱",
+  "original_url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke",
+  "canonical_url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-13T19:10:01.836Z",
+  "collected_at": "2026-06-14T04:27:51.687Z",
+  "language": "mixed",
+  "full_text": "There are three ways to do AI coding at home without spending like a company, and which one fits depends mostly on how much you trust the next year of hardware and model releases. The first is to self host. You buy the machine, run open source models locally, and pay nothing per token after that. The upfront cost is steep and the models you can actually run at home are weaker than what the frontier labs ship, so this only pays off if you can keep the rig busy with long running tasks where a slower, cheaper model grinds away overnight. Most people can’t keep a home machine that loaded, and the hardware you buy today may look like a bad bet in a year.\nThe second is to skip the hardware and rent those same open source models from a provider at API rates. For most people this is the right call. You avoid putting thousands of dollars on one GPU setup while configurations are still in flux, you skip the work of squeezing long running performance out of an open model, and you can switch to whatever is cheaper or better next month without reselling a box. Something like OpenRouter makes the move close to a one line change.\nThe third is to min-max the frontier subscriptions from OpenAI and Anthropic. Around $400 a month of plans buys roughly $2800 of API usage at list prices, which is a real bargain right up until you hit the ceiling. The plans are metered, and any large AI native workflow will chew through the included tokens fast. They shine for the work you drive by hand and fall short as the engine for an agent running all day.\nWhat I’ve seen work best is a blend of the last two. Keep a couple of frontier subscriptions for the hard thinking and the spec writing, and pay API rates for open source models to handle the small mechanical pieces. Lean on spec driven development so the expensive models produce the plan and the cheap ones fill it in. Do that well and you can build what a team of twenty engineers would put out in a month for around a thousand dollars.",
+  "clean_text": "There are three ways to do AI coding at home without spending like a company, and which one fits depends mostly on how much you trust the next year of hardware and model releases. The first is to self host. You buy the machine, run open source models locally, and pay nothing per token after that. The upfront cost is steep and the models you can actually run at home are weaker than what the frontier labs ship, so this only pays off if you can keep the rig busy with long running tasks where a slower, cheaper model grinds away overnight. Most people can’t keep a home machine that loaded, and the hardware you buy today may look like a bad bet in a year.\nThe second is to skip the hardware and rent those same open source models from a provider at API rates. For most people this is the right call. You avoid putting thousands of dollars on one GPU setup while configurations are still in flux, you skip the work of squeezing long running performance out of an open model, and you can switch to whatever is cheaper or better next month without reselling a box. Something like OpenRouter makes the move close to a one line change.\nThe third is to min-max the frontier subscriptions from OpenAI and Anthropic. Around $400 a month of plans buys roughly $2800 of API usage at list prices, which is a real bargain right up until you hit the ceiling. The plans are metered, and any large AI native workflow will chew through the included tokens fast. They shine for the work you drive by hand and fall short as the engine for an agent running all day.\nWhat I’ve seen work best is a blend of the last two. Keep a couple of frontier subscriptions for the hard thinking and the spec writing, and pay API rates for open source models to handle the small mechanical pieces. Lean on spec driven development so the expensive models produce the plan and the cheap ones fill it in. Do that well and you can build what a team of twenty engineers would put out in a month for around a thousand dollars.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-14/r-142-在家学习ai编程-不花大钱.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-14/r-142-在家学习ai编程-不花大钱.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "medium",
+  "extraction_method": "main",
+  "readability_score": 60,
+  "extractor_diagnostics": {
+    "readability_score": 60,
+    "text_length": 1988,
+    "paragraph_count": 4,
+    "sentence_count": 17,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 1988,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "69198ca4d9cfbd78",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "在家学习AI编程，不花大钱",
+    "discovery_summary": "一篇关于在家低成本学习AI编程的实践分享，讨论了借助免费或低价AI编码工具进行自学的方法，避免高昂课程费用。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke",
+    "discovered_at": "2026-06-14T04:21:16.520Z",
+    "rank_on_page": 67,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7cb801375cb2dc7c",
+  "content_hash": "69198ca4d9cfbd78",
+  "full_text_hash": "69198ca4d9cfbd78",
+  "semantic_hash": "f0bcf7a2a61aeca5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-13T19:10:01.836Z",
+  "last_seen_at": "2026-06-14T04:27:51.687Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "一篇关于在家低成本学习AI编程的实践分享，讨论了借助免费或低价AI编码工具进行自学的方法，避免高昂课程费用。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "There are three ways to do AI coding at home without spending like a company, and which one fits depends mostly on how much you trust the next year of hardware and model releases.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "The first is to self host.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "You buy the machine, run open source models locally, and pay nothing per token after that.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "The upfront cost is steep and the models you can actually run at home are weaker than what the frontier labs ship, so this only pays off if you can keep the rig busy with long running tasks where a slower, cheaper model grinds away overnight.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Most people can’t keep a home machine that loaded, and the hardware you buy today may look like a bad bet in a year.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "products": [
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "$400",
+      "$2800"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "一篇关于在家低成本学习AI编程的实践分享，讨论了借助免费或低价AI编码工具进行自学的方法，避免高昂课程费用。",
+      "There are three ways to do AI coding at home without spending like a company, and which one fits depends mostly on how much you trust the next year of hardware and model releases.",
+      "The first is to self host."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 3,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 在家学习AI编程，不花大钱\n\n- raw_id: R-142\n- original_url: https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-14T04:27:51.687Z\n\n## clean_text\n\nThere are three ways to do AI coding at home without spending like a company, and which one fits depends mostly on how much you trust the next year of hardware and model releases. The first is to self host. You buy the machine, run open source models locally, and pay nothing per token after that. The upfront cost is steep and the models you can actually run at home are weaker than what the frontier labs ship, so this only pays off if you can keep the rig busy with long running tasks where a slower, cheaper model grinds away overnight. Most people can’t keep a home machine that loaded, and the hardware you buy today may look like a bad bet in a year.\nThe second is to skip the hardware and rent those same open source models from a provider at API rates. For most people this is the right call. You avoid putting thousands of dollars on one GPU setup while configurations are still in flux, you skip the work of squeezing long running performance out of an open model, and you can switch to whatever is cheaper or better next month without reselling a box. Something like OpenRouter makes the move close to a one line change.\nThe third is to min-max the frontier subscriptions from OpenAI and Anthropic. Around $400 a month of plans buys roughly $2800 of API usage at list prices, which is a real bargain right up until you hit the ceiling. The plans are metered, and any large AI native workflow will chew through the included tokens fast. They shine for the work you drive by hand and fall short as the engine for an agent running all day.\nWhat I’ve seen work best is a blend of the last two. Keep a couple of frontier subscriptions for the hard thinking and the spec writing, and pay API rates for open source models to handle the small mechanical pieces. Lean on spec driven development so the expensive models produce the plan and the cheap ones fill it in. Do that well and you can build what a team of twenty engineers would put out in a month for around a thousand dollars.\n\n## full_text\n\nThere are three ways to do AI coding at home without spending like a company, and which one fits depends mostly on how much you trust the next year of hardware and model releases. The first is to self host. You buy the machine, run open source models locally, and pay nothing per token after that. The upfront cost is steep and the models you can actually run at home are weaker than what the frontier labs ship, so this only pays off if you can keep the rig busy with long running tasks where a slower, cheaper model grinds away overnight. Most people can’t keep a home machine that loaded, and the hardware you buy today may look like a bad bet in a year.\nThe second is to skip the hardware and rent those same open source models from a provider at API rates. For most people this is the right call. You avoid putting thousands of dollars on one GPU setup while configurations are still in flux, you skip the work of squeezing long running performance out of an open model, and you can switch to whatever is cheaper or better next month without reselling a box. Something like OpenRouter makes the move close to a one line change.\nThe third is to min-max the frontier subscriptions from OpenAI and Anthropic. Around $400 a month of plans buys roughly $2800 of API usage at list prices, which is a real bargain right up until you hit the ceiling. The plans are metered, and any large AI native workflow will chew through the included tokens fast. They shine for the work you drive by hand and fall short as the engine for an agent running all day.\nWhat I’ve seen work best is a blend of the last two. Keep a couple of frontier subscriptions for the hard thinking and the spec writing, and pay API rates for open source models to handle the small mechanical pieces. Lean on spec driven development so the expensive models produce the plan and the cheap ones fill it in. Do that well and you can build what a team of twenty engineers would put out in a month for around a thousand dollars.\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 60\n- fetch_status: fetched-readable-text-main\n- extraction_quality: medium\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / medium] 一篇关于在家低成本学习AI编程的实践分享，讨论了借助免费或低价AI编码工具进行自学的方法，避免高昂课程费用。\n2. [product_update / daily_observation, heatmap, change / medium] There are three ways to do AI coding at home without spending like a company, and which one fits depends mostly on how much you trust the next year of hardware and model releases.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] The first is to self host.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] You buy the machine, run open source models locally, and pay nothing per token after that.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] The upfront cost is steep and the models you can actually run at home are weaker than what the frontier labs ship, so this only pays off if you can keep the rig busy with long running tasks where a slower, cheaper model grinds away overnight.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] Most people can’t keep a home machine that loaded, and the hardware you buy today may look like a bad bet in a year.\n"
+}

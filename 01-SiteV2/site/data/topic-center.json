@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "V2.1.0-boss-topic-engine",
-    "date": "2026-06-13",
-    "generatedAt": "2026-06-13T05:32:40.411Z",
+    "date": "2026-06-14",
+    "generatedAt": "2026-06-14T04:27:54.785Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
     "rule": "boss_decision_topic_engine",
     "ruleLabel": "老板决策型选题机制",
@@ -16,8 +16,8 @@
       "styleFit": 5
     },
     "inputCounts": {
-      "businessSignals": 16,
-      "firstLineViewpoints": 44,
+      "businessSignals": 13,
+      "firstLineViewpoints": 52,
       "communityItems": 61
     },
     "sources": {
@@ -30,7 +30,7 @@
       "big_small_contrast": 1,
       "person_story": 1
     },
-    "leadTopicId": "money_leak-一个空调公司用-ai-接住-56个-电话-老板们该醒醒了"
+    "leadTopicId": "money_leak-一个空调公司用-ai-接住-13个-电话-老板们该醒醒了"
   },
   "sources": [
     {
@@ -84,13 +84,13 @@
   ],
   "topics": [
     {
-      "id": "money_leak-一个空调公司用-ai-接住-56个-电话-老板们该醒醒了",
+      "id": "money_leak-一个空调公司用-ai-接住-13个-电话-老板们该醒醒了",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "一个空调公司用 AI 接住 56个 电话，老板们该醒醒了",
-      "spreadTitle": "一个空调公司用 AI 接住 56个 电话，老板们该醒醒了",
+      "title": "一个空调公司用 AI 接住 13个 电话，老板们该醒醒了",
+      "spreadTitle": "一个空调公司用 AI 接住 13个 电话，老板们该醒醒了",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "老板最该先看的不是模型参数，而是公司每天有没有订单入口在漏钱。",
       "relevance": "电话、客服、预约、销售跟进这类小岗位，直接连接收入，比泛泛 AI 工具更容易算账。",
@@ -99,17 +99,17 @@
       "oldFrame": "AI 是客服聊天机器人。",
       "newFrame": "AI 是能接住订单入口的小岗位员工。",
       "actionHint": "先盘点公司 3 个最容易漏单的入口：电话、表单、私信。",
-      "evidence": "TCS与Anthropic合作，将Claude引入受监管行业；05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
+      "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A06",
-            "title": "TCS与Anthropic合作，将Claude引入受监管行业",
-            "source": "Anthropic：Newsroom（网页）",
-            "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-            "note": "Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为\"客户零号\"，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客户设计和运维Claude系统。具体用例…"
+            "id": "SIG-20260614-A11",
+            "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+            "source": "The Decoder：AI News（RSS）",
+            "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+            "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
           }
         ],
         "viewpoints": [],
@@ -124,9 +124,9 @@
           }
         ]
       },
-      "source": "Anthropic：Newsroom（网页）",
-      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "date": "2026-06-13",
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+      "date": "2026-06-14",
       "score": 97,
       "grade": "S",
       "priority": "公众号主稿",
@@ -141,7 +141,7 @@
       "angles": [
         {
           "title": "开头用订单入口，不用 AI 功能",
-          "note": "第一句就写：电话不是电话，是订单入口。用 56个 把老板拉进来。"
+          "note": "第一句就写：电话不是电话，是订单入口。用 13个 把老板拉进来。"
         },
         {
           "title": "中段拆一个预约岗位",
@@ -175,25 +175,25 @@
       "oldFrame": "做一个什么都能干的 AI 平台。",
       "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
       "actionHint": "先从客服、招投标、财务对账、销售跟进、会议催办里选一个。",
-      "evidence": "TCS与Anthropic合作，将Claude引入受监管行业；linkedin 融资 $100；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+      "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；Instagram 融资；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A06",
-            "title": "TCS与Anthropic合作，将Claude引入受监管行业",
-            "source": "Anthropic：Newsroom（网页）",
-            "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-            "note": "Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为\"客户零号\"，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客户设计和运维Claude系统。具体用例…"
+            "id": "SIG-20260614-A11",
+            "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+            "source": "The Decoder：AI News（RSS）",
+            "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+            "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
           },
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A12",
-            "title": "linkedin 融资 $100",
-            "source": "linkedin.com",
-            "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-            "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+            "id": "SIG-20260614-A01",
+            "title": "Instagram 融资",
+            "source": "instagram.com",
+            "url": "https://www.instagram.com/p/DZaq23zCT9J/",
+            "note": "Instagram 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
           }
         ],
         "viewpoints": [],
@@ -208,9 +208,9 @@
           }
         ]
       },
-      "source": "Anthropic：Newsroom（网页）",
-      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "date": "2026-06-13",
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+      "date": "2026-06-14",
       "score": 97,
       "grade": "S",
       "priority": "公众号主稿",
@@ -259,27 +259,27 @@
       "oldFrame": "追最新 AI 工具。",
       "newFrame": "沉淀自己的流程、语料、SOP 和验收标准。",
       "actionHint": "先选一个业务动作，写清输入、步骤、验收标准，再接工具。",
-      "evidence": "olmo-eval：面向模型开发循环的评估工作台；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+      "evidence": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A08",
-            "title": "olmo-eval：面向模型开发循环的评估工作台",
-            "source": "Hugging Face：Blog（RSS）",
-            "url": "https://huggingface.co/blog/allenai/olmo-eval",
-            "note": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应…"
+            "id": "SIG-20260614-A04",
+            "title": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/963/986.htm",
+            "note": "毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应\"与事实不符\"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示\"不准…"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2065236013627351551",
-            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-            "source": "Amjad Masad",
-            "url": "https://x.com/amasad/status/2065236013627351551",
-            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+            "id": "2065490793092337691",
+            "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+            "source": "Andrej Karpathy",
+            "url": "https://x.com/karpathy/status/2065490793092337691",
+            "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
           }
         ],
         "communityItems": [
@@ -293,9 +293,9 @@
           }
         ]
       },
-      "source": "Hugging Face：Blog（RSS）",
-      "url": "https://huggingface.co/blog/allenai/olmo-eval",
-      "date": "2026-06-13",
+      "source": "IT之家（RSS）",
+      "url": "https://www.ithome.com/0/963/986.htm",
+      "date": "2026-06-14",
       "score": 95,
       "grade": "S",
       "priority": "公众号主稿",
@@ -344,27 +344,27 @@
       "oldFrame": "AI 创业只能跟大模型和融资有关。",
       "newFrame": "普通人的 AI 机会在帮老板跨过工具配置和流程落地门槛。",
       "actionHint": "把 AI 基建服务产品化：账号、网络、工具、知识库、一个工作流。",
-      "evidence": "linkedin 融资 $100；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+      "evidence": "Instagram 融资；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A12",
-            "title": "linkedin 融资 $100",
-            "source": "linkedin.com",
-            "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-            "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+            "id": "SIG-20260614-A01",
+            "title": "Instagram 融资",
+            "source": "instagram.com",
+            "url": "https://www.instagram.com/p/DZaq23zCT9J/",
+            "note": "Instagram 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2065236013627351551",
-            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-            "source": "Amjad Masad",
-            "url": "https://x.com/amasad/status/2065236013627351551",
-            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+            "id": "2065490793092337691",
+            "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+            "source": "Andrej Karpathy",
+            "url": "https://x.com/karpathy/status/2065490793092337691",
+            "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
           }
         ],
         "communityItems": [
@@ -378,9 +378,9 @@
           }
         ]
       },
-      "source": "linkedin.com",
-      "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-      "date": "2026-06-13",
+      "source": "instagram.com",
+      "url": "https://www.instagram.com/p/DZaq23zCT9J/",
+      "date": "2026-06-14",
       "score": 93,
       "grade": "S",
       "priority": "公众号主稿",
@@ -429,17 +429,17 @@
       "oldFrame": "年纪大的人学不会 AI。",
       "newFrame": "AI 最该先服务那些经验很深、资料很多、流程很重的人。",
       "actionHint": "先把老专家的资料、模板、常见问题和交付流程整理成一个可问答知识库。",
-      "evidence": "linkedin 融资 $100；13岁少年35美元启动，靠AI帮线下诊所月入13万",
+      "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；13岁少年35美元启动，靠AI帮线下诊所月入13万",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A12",
-            "title": "linkedin 融资 $100",
-            "source": "linkedin.com",
-            "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-            "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+            "id": "SIG-20260614-A11",
+            "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+            "source": "The Decoder：AI News（RSS）",
+            "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+            "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
           }
         ],
         "viewpoints": [],
@@ -454,9 +454,9 @@
           }
         ]
       },
-      "source": "linkedin.com",
-      "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-      "date": "2026-06-13",
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+      "date": "2026-06-14",
       "score": 92,
       "grade": "S",
       "priority": "公众号主稿",
@@ -505,27 +505,27 @@
       "oldFrame": "AI 是员工自己研究的新工具。",
       "newFrame": "AI 是同行正在重做流程的生产系统。",
       "actionHint": "每天只问一个问题：同行哪一个流程已经被 AI 缩短了？",
-      "evidence": "olmo-eval：面向模型开发循环的评估工作台；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
+      "evidence": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A08",
-            "title": "olmo-eval：面向模型开发循环的评估工作台",
-            "source": "Hugging Face：Blog（RSS）",
-            "url": "https://huggingface.co/blog/allenai/olmo-eval",
-            "note": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应…"
+            "id": "SIG-20260614-A04",
+            "title": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/963/986.htm",
+            "note": "毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应\"与事实不符\"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示\"不准…"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2065236013627351551",
-            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-            "source": "Amjad Masad",
-            "url": "https://x.com/amasad/status/2065236013627351551",
-            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+            "id": "2065490793092337691",
+            "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+            "source": "Andrej Karpathy",
+            "url": "https://x.com/karpathy/status/2065490793092337691",
+            "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
           }
         ],
         "communityItems": [
@@ -539,9 +539,9 @@
           }
         ]
       },
-      "source": "Hugging Face：Blog（RSS）",
-      "url": "https://huggingface.co/blog/allenai/olmo-eval",
-      "date": "2026-06-13",
+      "source": "IT之家（RSS）",
+      "url": "https://www.ithome.com/0/963/986.htm",
+      "date": "2026-06-14",
       "score": 91,
       "grade": "S",
       "priority": "公众号主稿",
@@ -590,27 +590,27 @@
       "oldFrame": "AI 上线就是裁员。",
       "newFrame": "AI 上线的第一阶段，是让公司少招重复岗位。",
       "actionHint": "把一个岗位每天重复超过 20 次的动作列出来，先挑 3 个标准动作交给 AI。",
-      "evidence": "olmo-eval：面向模型开发循环的评估工作台；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+      "evidence": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A08",
-            "title": "olmo-eval：面向模型开发循环的评估工作台",
-            "source": "Hugging Face：Blog（RSS）",
-            "url": "https://huggingface.co/blog/allenai/olmo-eval",
-            "note": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应…"
+            "id": "SIG-20260614-A04",
+            "title": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/963/986.htm",
+            "note": "毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应\"与事实不符\"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示\"不准…"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2065236013627351551",
-            "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-            "source": "Amjad Masad",
-            "url": "https://x.com/amasad/status/2065236013627351551",
-            "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+            "id": "2065490793092337691",
+            "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+            "source": "Andrej Karpathy",
+            "url": "https://x.com/karpathy/status/2065490793092337691",
+            "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
           }
         ],
         "communityItems": [
@@ -624,9 +624,9 @@
           }
         ]
       },
-      "source": "Hugging Face：Blog（RSS）",
-      "url": "https://huggingface.co/blog/allenai/olmo-eval",
-      "date": "2026-06-13",
+      "source": "IT之家（RSS）",
+      "url": "https://www.ithome.com/0/963/986.htm",
+      "date": "2026-06-14",
       "score": 90,
       "grade": "S",
       "priority": "公众号主稿",
@@ -675,27 +675,27 @@
       "oldFrame": "AI 越自主越好。",
       "newFrame": "AI 越自主，越需要先设计权限和复核。",
       "actionHint": "先给 AI 员工分三级权限：只读、建议、可执行。",
-      "evidence": "linkedin 融资 $100；负责任的AIAgent网络的五大原则：如何评估任何治理平台；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+      "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A12",
-            "title": "linkedin 融资 $100",
-            "source": "linkedin.com",
-            "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-            "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+            "id": "SIG-20260614-A11",
+            "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+            "source": "The Decoder：AI News（RSS）",
+            "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+            "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-            "title": "负责任的AIAgent网络的五大原则：如何评估任何治理平台",
-            "source": "Tigera Blog (Calico / AI Security)",
-            "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-            "note": "负责任的AIAgent网络的五大原则：如何评估任何治理平台"
+            "id": "2065490793092337691",
+            "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+            "source": "Andrej Karpathy",
+            "url": "https://x.com/karpathy/status/2065490793092337691",
+            "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
           }
         ],
         "communityItems": [
@@ -709,9 +709,9 @@
           }
         ]
       },
-      "source": "linkedin.com",
-      "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-      "date": "2026-06-13",
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+      "date": "2026-06-14",
       "score": 88,
       "grade": "A",
       "priority": "公众号主稿",
@@ -747,13 +747,13 @@
   ],
   "grouped": {
     "lead": {
-      "id": "money_leak-一个空调公司用-ai-接住-56个-电话-老板们该醒醒了",
+      "id": "money_leak-一个空调公司用-ai-接住-13个-电话-老板们该醒醒了",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "一个空调公司用 AI 接住 56个 电话，老板们该醒醒了",
-      "spreadTitle": "一个空调公司用 AI 接住 56个 电话，老板们该醒醒了",
+      "title": "一个空调公司用 AI 接住 13个 电话，老板们该醒醒了",
+      "spreadTitle": "一个空调公司用 AI 接住 13个 电话，老板们该醒醒了",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "老板最该先看的不是模型参数，而是公司每天有没有订单入口在漏钱。",
       "relevance": "电话、客服、预约、销售跟进这类小岗位，直接连接收入，比泛泛 AI 工具更容易算账。",
@@ -762,17 +762,17 @@
       "oldFrame": "AI 是客服聊天机器人。",
       "newFrame": "AI 是能接住订单入口的小岗位员工。",
       "actionHint": "先盘点公司 3 个最容易漏单的入口：电话、表单、私信。",
-      "evidence": "TCS与Anthropic合作，将Claude引入受监管行业；05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
+      "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260613-A06",
-            "title": "TCS与Anthropic合作，将Claude引入受监管行业",
-            "source": "Anthropic：Newsroom（网页）",
-            "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-            "note": "Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为\"客户零号\"，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客户设计和运维Claude系统。具体用例…"
+            "id": "SIG-20260614-A11",
+            "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+            "source": "The Decoder：AI News（RSS）",
+            "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+            "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
           }
         ],
         "viewpoints": [],
@@ -787,9 +787,9 @@
           }
         ]
       },
-      "source": "Anthropic：Newsroom（网页）",
-      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "date": "2026-06-13",
+      "source": "The Decoder：AI News（RSS）",
+      "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+      "date": "2026-06-14",
       "score": 97,
       "grade": "S",
       "priority": "公众号主稿",
@@ -804,7 +804,7 @@
       "angles": [
         {
           "title": "开头用订单入口，不用 AI 功能",
-          "note": "第一句就写：电话不是电话，是订单入口。用 56个 把老板拉进来。"
+          "note": "第一句就写：电话不是电话，是订单入口。用 13个 把老板拉进来。"
         },
         {
           "title": "中段拆一个预约岗位",
@@ -825,13 +825,13 @@
     "byEngine": {
       "money_leak": [
         {
-          "id": "money_leak-一个空调公司用-ai-接住-56个-电话-老板们该醒醒了",
+          "id": "money_leak-一个空调公司用-ai-接住-13个-电话-老板们该醒醒了",
           "sourceId": "money_leak",
           "sourceName": "漏钱型",
           "sourceDesc": "订单入口、转化漏斗、线索流失",
           "type": "boss_decision_topic",
-          "title": "一个空调公司用 AI 接住 56个 电话，老板们该醒醒了",
-          "spreadTitle": "一个空调公司用 AI 接住 56个 电话，老板们该醒醒了",
+          "title": "一个空调公司用 AI 接住 13个 电话，老板们该醒醒了",
+          "spreadTitle": "一个空调公司用 AI 接住 13个 电话，老板们该醒醒了",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "老板最该先看的不是模型参数，而是公司每天有没有订单入口在漏钱。",
           "relevance": "电话、客服、预约、销售跟进这类小岗位，直接连接收入，比泛泛 AI 工具更容易算账。",
@@ -840,17 +840,17 @@
           "oldFrame": "AI 是客服聊天机器人。",
           "newFrame": "AI 是能接住订单入口的小岗位员工。",
           "actionHint": "先盘点公司 3 个最容易漏单的入口：电话、表单、私信。",
-          "evidence": "TCS与Anthropic合作，将Claude引入受监管行业；05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
+          "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A06",
-                "title": "TCS与Anthropic合作，将Claude引入受监管行业",
-                "source": "Anthropic：Newsroom（网页）",
-                "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-                "note": "Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为\"客户零号\"，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客户设计和运维Claude系统。具体用例…"
+                "id": "SIG-20260614-A11",
+                "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+                "source": "The Decoder：AI News（RSS）",
+                "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+                "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
               }
             ],
             "viewpoints": [],
@@ -865,9 +865,9 @@
               }
             ]
           },
-          "source": "Anthropic：Newsroom（网页）",
-          "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-          "date": "2026-06-13",
+          "source": "The Decoder：AI News（RSS）",
+          "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+          "date": "2026-06-14",
           "score": 97,
           "grade": "S",
           "priority": "公众号主稿",
@@ -882,7 +882,7 @@
           "angles": [
             {
               "title": "开头用订单入口，不用 AI 功能",
-              "note": "第一句就写：电话不是电话，是订单入口。用 56个 把老板拉进来。"
+              "note": "第一句就写：电话不是电话，是订单入口。用 13个 把老板拉进来。"
             },
             {
               "title": "中段拆一个预约岗位",
@@ -918,27 +918,27 @@
           "oldFrame": "AI 上线就是裁员。",
           "newFrame": "AI 上线的第一阶段，是让公司少招重复岗位。",
           "actionHint": "把一个岗位每天重复超过 20 次的动作列出来，先挑 3 个标准动作交给 AI。",
-          "evidence": "olmo-eval：面向模型开发循环的评估工作台；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+          "evidence": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A08",
-                "title": "olmo-eval：面向模型开发循环的评估工作台",
-                "source": "Hugging Face：Blog（RSS）",
-                "url": "https://huggingface.co/blog/allenai/olmo-eval",
-                "note": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应…"
+                "id": "SIG-20260614-A04",
+                "title": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实",
+                "source": "IT之家（RSS）",
+                "url": "https://www.ithome.com/0/963/986.htm",
+                "note": "毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应\"与事实不符\"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示\"不准…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2065236013627351551",
-                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-                "source": "Amjad Masad",
-                "url": "https://x.com/amasad/status/2065236013627351551",
-                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+                "id": "2065490793092337691",
+                "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+                "source": "Andrej Karpathy",
+                "url": "https://x.com/karpathy/status/2065490793092337691",
+                "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
               }
             ],
             "communityItems": [
@@ -952,9 +952,9 @@
               }
             ]
           },
-          "source": "Hugging Face：Blog（RSS）",
-          "url": "https://huggingface.co/blog/allenai/olmo-eval",
-          "date": "2026-06-13",
+          "source": "IT之家（RSS）",
+          "url": "https://www.ithome.com/0/963/986.htm",
+          "date": "2026-06-14",
           "score": 90,
           "grade": "S",
           "priority": "公众号主稿",
@@ -1005,27 +1005,27 @@
           "oldFrame": "AI 是员工自己研究的新工具。",
           "newFrame": "AI 是同行正在重做流程的生产系统。",
           "actionHint": "每天只问一个问题：同行哪一个流程已经被 AI 缩短了？",
-          "evidence": "olmo-eval：面向模型开发循环的评估工作台；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
+          "evidence": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；《AI native内容agent工厂》大课第二天：AI内容工程化+新品类实操",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A08",
-                "title": "olmo-eval：面向模型开发循环的评估工作台",
-                "source": "Hugging Face：Blog（RSS）",
-                "url": "https://huggingface.co/blog/allenai/olmo-eval",
-                "note": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应…"
+                "id": "SIG-20260614-A04",
+                "title": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实",
+                "source": "IT之家（RSS）",
+                "url": "https://www.ithome.com/0/963/986.htm",
+                "note": "毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应\"与事实不符\"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示\"不准…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2065236013627351551",
-                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-                "source": "Amjad Masad",
-                "url": "https://x.com/amasad/status/2065236013627351551",
-                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+                "id": "2065490793092337691",
+                "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+                "source": "Andrej Karpathy",
+                "url": "https://x.com/karpathy/status/2065490793092337691",
+                "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
               }
             ],
             "communityItems": [
@@ -1039,9 +1039,9 @@
               }
             ]
           },
-          "source": "Hugging Face：Blog（RSS）",
-          "url": "https://huggingface.co/blog/allenai/olmo-eval",
-          "date": "2026-06-13",
+          "source": "IT之家（RSS）",
+          "url": "https://www.ithome.com/0/963/986.htm",
+          "date": "2026-06-14",
           "score": 91,
           "grade": "S",
           "priority": "公众号主稿",
@@ -1092,27 +1092,27 @@
           "oldFrame": "AI 越自主越好。",
           "newFrame": "AI 越自主，越需要先设计权限和复核。",
           "actionHint": "先给 AI 员工分三级权限：只读、建议、可执行。",
-          "evidence": "linkedin 融资 $100；负责任的AIAgent网络的五大原则：如何评估任何治理平台；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+          "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A12",
-                "title": "linkedin 融资 $100",
-                "source": "linkedin.com",
-                "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-                "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+                "id": "SIG-20260614-A11",
+                "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+                "source": "The Decoder：AI News（RSS）",
+                "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+                "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-                "title": "负责任的AIAgent网络的五大原则：如何评估任何治理平台",
-                "source": "Tigera Blog (Calico / AI Security)",
-                "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-                "note": "负责任的AIAgent网络的五大原则：如何评估任何治理平台"
+                "id": "2065490793092337691",
+                "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+                "source": "Andrej Karpathy",
+                "url": "https://x.com/karpathy/status/2065490793092337691",
+                "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
               }
             ],
             "communityItems": [
@@ -1126,9 +1126,9 @@
               }
             ]
           },
-          "source": "linkedin.com",
-          "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-          "date": "2026-06-13",
+          "source": "The Decoder：AI News（RSS）",
+          "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+          "date": "2026-06-14",
           "score": 88,
           "grade": "A",
           "priority": "公众号主稿",
@@ -1179,27 +1179,27 @@
           "oldFrame": "追最新 AI 工具。",
           "newFrame": "沉淀自己的流程、语料、SOP 和验收标准。",
           "actionHint": "先选一个业务动作，写清输入、步骤、验收标准，再接工具。",
-          "evidence": "olmo-eval：面向模型开发循环的评估工作台；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+          "evidence": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A08",
-                "title": "olmo-eval：面向模型开发循环的评估工作台",
-                "source": "Hugging Face：Blog（RSS）",
-                "url": "https://huggingface.co/blog/allenai/olmo-eval",
-                "note": "olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报告分数、标准误差和最小可检测效应…"
+                "id": "SIG-20260614-A04",
+                "title": "毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实",
+                "source": "IT之家（RSS）",
+                "url": "https://www.ithome.com/0/963/986.htm",
+                "note": "毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞银被指全面整合智能体，瑞银回应\"与事实不符\"；瑞士联邦铁路SBB被称拥有AI智能体，SBB发言人表示\"不准…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2065236013627351551",
-                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-                "source": "Amjad Masad",
-                "url": "https://x.com/amasad/status/2065236013627351551",
-                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+                "id": "2065490793092337691",
+                "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+                "source": "Andrej Karpathy",
+                "url": "https://x.com/karpathy/status/2065490793092337691",
+                "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
               }
             ],
             "communityItems": [
@@ -1213,9 +1213,9 @@
               }
             ]
           },
-          "source": "Hugging Face：Blog（RSS）",
-          "url": "https://huggingface.co/blog/allenai/olmo-eval",
-          "date": "2026-06-13",
+          "source": "IT之家（RSS）",
+          "url": "https://www.ithome.com/0/963/986.htm",
+          "date": "2026-06-14",
           "score": 95,
           "grade": "S",
           "priority": "公众号主稿",
@@ -1266,25 +1266,25 @@
           "oldFrame": "做一个什么都能干的 AI 平台。",
           "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
           "actionHint": "先从客服、招投标、财务对账、销售跟进、会议催办里选一个。",
-          "evidence": "TCS与Anthropic合作，将Claude引入受监管行业；linkedin 融资 $100；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
+          "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；Instagram 融资；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A06",
-                "title": "TCS与Anthropic合作，将Claude引入受监管行业",
-                "source": "Anthropic：Newsroom（网页）",
-                "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-                "note": "Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为\"客户零号\"，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客户设计和运维Claude系统。具体用例…"
+                "id": "SIG-20260614-A11",
+                "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+                "source": "The Decoder：AI News（RSS）",
+                "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+                "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
               },
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A12",
-                "title": "linkedin 融资 $100",
-                "source": "linkedin.com",
-                "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-                "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+                "id": "SIG-20260614-A01",
+                "title": "Instagram 融资",
+                "source": "instagram.com",
+                "url": "https://www.instagram.com/p/DZaq23zCT9J/",
+                "note": "Instagram 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
               }
             ],
             "viewpoints": [],
@@ -1299,9 +1299,9 @@
               }
             ]
           },
-          "source": "Anthropic：Newsroom（网页）",
-          "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-          "date": "2026-06-13",
+          "source": "The Decoder：AI News（RSS）",
+          "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+          "date": "2026-06-14",
           "score": 97,
           "grade": "S",
           "priority": "公众号主稿",
@@ -1352,27 +1352,27 @@
           "oldFrame": "AI 创业只能跟大模型和融资有关。",
           "newFrame": "普通人的 AI 机会在帮老板跨过工具配置和流程落地门槛。",
           "actionHint": "把 AI 基建服务产品化：账号、网络、工具、知识库、一个工作流。",
-          "evidence": "linkedin 融资 $100；这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+          "evidence": "Instagram 融资；敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀；帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A12",
-                "title": "linkedin 融资 $100",
-                "source": "linkedin.com",
-                "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-                "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+                "id": "SIG-20260614-A01",
+                "title": "Instagram 融资",
+                "source": "instagram.com",
+                "url": "https://www.instagram.com/p/DZaq23zCT9J/",
+                "note": "Instagram 获得融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2065236013627351551",
-                "title": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。",
-                "source": "Amjad Masad",
-                "url": "https://x.com/amasad/status/2065236013627351551",
-                "note": "这是我第一次以零挫败感和完整的流动状态进行振动编码，以至于我失去了想法。通常，我想添加的东西有很多积压，但在Fable登陆Replit之后，我几乎可以肯定我不需要更多的智商来进行振动编码，只需要更便宜、更快的型号，我们就完成了。"
+                "id": "2065490793092337691",
+                "title": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀",
+                "source": "Andrej Karpathy",
+                "url": "https://x.com/karpathy/status/2065490793092337691",
+                "note": "敬畏SpaceX及其故事--过去、现在和未来。你可以用10多种不同的方式来思考，并继续在圈子里重新思考。恭喜团队！ 🚀"
               }
             ],
             "communityItems": [
@@ -1386,9 +1386,9 @@
               }
             ]
           },
-          "source": "linkedin.com",
-          "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-          "date": "2026-06-13",
+          "source": "instagram.com",
+          "url": "https://www.instagram.com/p/DZaq23zCT9J/",
+          "date": "2026-06-14",
           "score": 93,
           "grade": "S",
           "priority": "公众号主稿",
@@ -1439,17 +1439,17 @@
           "oldFrame": "年纪大的人学不会 AI。",
           "newFrame": "AI 最该先服务那些经验很深、资料很多、流程很重的人。",
           "actionHint": "先把老专家的资料、模板、常见问题和交付流程整理成一个可问答知识库。",
-          "evidence": "linkedin 融资 $100；13岁少年35美元启动，靠AI帮线下诊所月入13万",
+          "evidence": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点；13岁少年35美元启动，靠AI帮线下诊所月入13万",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260613-A12",
-                "title": "linkedin 融资 $100",
-                "source": "linkedin.com",
-                "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-                "note": "linkedin 获得$100 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+                "id": "SIG-20260614-A11",
+                "title": "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点",
+                "source": "The Decoder：AI News（RSS）",
+                "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+                "note": "Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026 年初 Opus 4.5 不到 10% 的表现，实现巨大飞跃。AI 数学推理能力的进步速度持续加快。"
               }
             ],
             "viewpoints": [],
@@ -1464,9 +1464,9 @@
               }
             ]
           },
-          "source": "linkedin.com",
-          "url": "https://www.linkedin.com/posts/sharatchandratechevangelist_ai-startups-coding-activity-7354328740740386816-lHBX",
-          "date": "2026-06-13",
+          "source": "The Decoder：AI News（RSS）",
+          "url": "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems",
+          "date": "2026-06-14",
           "score": 92,
           "grade": "S",
           "priority": "公众号主稿",
