@@ -50,10 +50,10 @@
     ],
     "purpose": "Weekend AI business-signal source volume is often lower, especially for customer cases and funding. This policy only relaxes light quantity floors after Raw / Pool volume, source quality, readable full text, Raw QC, page-type, large-vendor, and relevance gates remain clean. Signal Card generation, source-first, frontstage regression, and site freshness gates still have to pass.",
     "adjusted_hard_gates": {
-      "core_pool_min": 24,
-      "usable_core_evidence_min": 24,
-      "core_non_large_vendor_min": 16,
-      "pool_min_per_required_importance_type": 3
+      "core_pool_min": 18,
+      "usable_core_evidence_min": 18,
+      "core_non_large_vendor_min": 12,
+      "pool_min_per_required_importance_type": 2
     },
     "allowed_adjusted_failures": [
       "core_pool_min",

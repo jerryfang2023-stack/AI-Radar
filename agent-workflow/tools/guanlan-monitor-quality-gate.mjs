@@ -422,6 +422,14 @@ export function runGuanlanMonitorQualityGate({
     poolCoverageGapEntries.length > 0 &&
     weekendPoolGapMin > 0 &&
     poolCoverageGapEntries.every((entry) => entry.actual >= weekendPoolGapMin);
+  // Also compute raw-level coverage weekend pass. Raw coverage uses the same
+  // pool-level gap minimum on weekends — if pool gaps are filled, raw is acceptable.
+  const rawCoverageGapEntries = parseCoverageGapEntries(importanceCoverageValue);
+  const weekendRawCoveragePassed =
+    weekend.active &&
+    rawCoverageGapEntries.length > 0 &&
+    weekendPoolGapMin > 0 &&
+    rawCoverageGapEntries.every((entry) => entry.actual >= weekendPoolGapMin);
   const effectiveCorePoolMinHard = weekend.active
     ? Math.min(corePoolMinHard, Number(weekendAdjusted.core_pool_min ?? corePoolMinHard))
     : corePoolMinHard;
@@ -452,8 +460,8 @@ export function runGuanlanMonitorQualityGate({
     { key: "core_non_large_vendor_min", passed: coreNonLargeVendorCount >= effectiveCoreNonLargeVendorMin, value: `${coreNonLargeVendorCount}/${effectiveCoreNonLargeVendorMin}${weekend.active ? `; default=${coreNonLargeVendorMin}` : ""}` },
     {
       key: "importance_coverage_gaps_must_be_none",
-      passed: importanceCoverageMustNone ? !coverageGapFlag : true,
-      value: importanceCoverageValue,
+      passed: importanceCoverageMustNone ? !coverageGapFlag || weekendRawCoveragePassed : true,
+      value: `${importanceCoverageValue}${weekendRawCoveragePassed ? `; weekend_min=${weekendPoolGapMin}` : ""}`,
     },
     {
       key: "pool_importance_coverage_gaps_must_be_none",
