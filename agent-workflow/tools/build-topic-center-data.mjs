@@ -120,6 +120,10 @@ function todayStr() {
   ].join("-");
 }
 
+function dateKey(value) {
+  return text(value).match(/^\d{4}-\d{2}-\d{2}/u)?.[0] || "";
+}
+
 function scoreGrade(score) {
   if (score >= 90) return "S";
   if (score >= 80) return "A";
@@ -154,6 +158,7 @@ function normalizeViewpoint(item, index) {
   const body = text(item.translation || item.text || item.contentTranslation || item.content || "");
   return {
     id: text(item.id || `viewpoint-${index + 1}`),
+    date: dateKey(item.date || item.originalDate || item.original_date || item.publishedAt || item.createdAt || item.captured_at),
     title: text(item.translation || item.text || `一线观点 ${index + 1}`),
     body,
     author: text(item.name || item.handle || item.source || ""),
@@ -543,6 +548,7 @@ function compactTopic(topic, index) {
   return {
     rank: index + 1,
     id: topic.id,
+    date: topic.date,
     score: topic.score,
     grade: topic.grade,
     sourceId: topic.sourceId,
@@ -603,6 +609,7 @@ function mdCell(value) {
 function topicTableMarkdown(payload) {
   const rows = payload.topics.map((topic) => [
     topic.rank,
+    topic.date,
     topic.score,
     topic.sourceName,
     topic.title,
@@ -618,8 +625,8 @@ function topicTableMarkdown(payload) {
     `- topic_count: ${payload.meta.topicCount}`,
     `- json: ${payload.meta.githubPath}`,
     "",
-    "| Rank | Score | Type | Topic | Boss Pain | Money Line | Action |",
-    "|---:|---:|---|---|---|---|---|",
+    "| Rank | Date | Score | Type | Topic | Boss Pain | Money Line | Action |",
+    "|---:|---|---:|---|---|---|---|---|",
     ...rows.map((row) => `| ${row.join(" | ")} |`),
     "",
     "## Raw Materials",
@@ -657,16 +664,22 @@ function main() {
     .filter((item) => !businessData.meta?.activeDate || date === text(item.raw.date || businessData.meta.activeDate || date));
   const signals = sameDateSignals.length ? sameDateSignals : list(businessData.top10 || businessData.frontstageCards).map(normalizeBusinessSignal);
 
-  const viewpoints = list(firstLineData.remarks)
+  const allViewpoints = list(firstLineData.remarks)
     .map(normalizeViewpoint)
     .sort((a, b) => b.engagement - a.engagement);
+  const sameDateViewpoints = allViewpoints.filter((item) => !item.date || item.date === date);
+  const viewpoints = sameDateViewpoints.length ? sameDateViewpoints : allViewpoints;
 
   const community = list(communityData.items)
     .map(normalizeCommunity)
     .sort((a, b) => (b.valueScore + b.opportunityScore) - (a.valueScore + a.opportunityScore));
 
-  const topics = dedupeTopics(buildTopicSet({ date, signals, viewpoints, community }))
+  const currentTopics = dedupeTopics(buildTopicSet({ date, signals, viewpoints, community }))
     .sort((a, b) => b.score - a.score);
+  const existingData = readJson(topicCenterJsonPath, {});
+  const historicalTopics = list(existingData.topics).filter((topic) => text(topic.date) !== date);
+  const topics = [...currentTopics, ...historicalTopics]
+    .sort((a, b) => text(b.date).localeCompare(text(a.date)) || (Number(b.score) || 0) - (Number(a.score) || 0));
 
   const data = {
     meta: {
@@ -690,14 +703,14 @@ function main() {
         firstLineViewpoints: viewpoints.length,
         communityItems: community.length,
       },
-      sources: sourceCounts(topics),
-      leadTopicId: topics[0]?.id || "",
+      sources: sourceCounts(currentTopics),
+      leadTopicId: currentTopics[0]?.id || "",
     },
     sources: engines,
     topics,
     grouped: {
-      lead: topics[0] || null,
-      byEngine: Object.fromEntries(engines.map((engine) => [engine.id, topics.filter((topic) => topic.sourceId === engine.id)])),
+      lead: currentTopics[0] || null,
+      byEngine: Object.fromEntries(engines.map((engine) => [engine.id, currentTopics.filter((topic) => topic.sourceId === engine.id)])),
     },
   };
   const hermesTopicTable = buildHermesTopicTable(data, topics);
