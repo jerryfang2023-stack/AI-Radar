@@ -556,6 +556,16 @@ function subjectFromUrl(url = "") {
     if (host === "huggingface.co" && pathname.includes("coherelabs/introducing-north-mini-code")) return "Cohere / North Mini Code";
     if (host === "arstechnica.com" && pathname.includes("gemini-3-5-live-translate")) return "Google Gemini Live Translate";
     if (host === "techcrunch.com" && pathname.includes("token-bill")) return "AI token costs";
+    if (host === "mindstudio.ai" && pathname.includes("build-saas-with-ai-agents")) return "MindStudio";
+    if (host === "github.com" && pathname.includes("/resources/insights/enterprise-content-roundup")) return "GitHub Enterprise";
+    if (host === "ithome.com" && pathname.includes("963/999")) return "三星 / 海上 AI 数据中心";
+    if (host === "ithome.com" && pathname.includes("963/986")) return "KPMG";
+    if (host === "ithome.com" && pathname.includes("963/998")) return "三星 / AI 数据中心";
+    if (host === "ithome.com" && pathname.includes("963/907")) return "科大讯飞 / 星火 X2-VL";
+    if (host === "ithome.com" && pathname.includes("963/924")) return "京东健康 / 友谊医院消化大模型";
+    if (host === "the-decoder.com" && pathname.includes("moonshots-open-model-kimi")) return "Moonshot AI / Kimi K2.7 Code";
+    if (host === "the-decoder.com" && pathname.includes("claude-fable-5-outpaces")) return "Anthropic / Claude Fable 5";
+    if (host === "the-decoder.com" && pathname.includes("us-government-forces-anthropic")) return "Anthropic / Claude Fable 5";
     if (host === "docs.aws.amazon.com" && pathname.includes("sagemaker-marketplace")) return "Amazon SageMaker";
     if (host === "businesswire.com" && pathname.includes("digitalocean-launches-inference-engine")) return "DigitalOcean";
     if (host === "sisinternational.com") return "SIS International";
@@ -585,6 +595,7 @@ function cleanSubject(value = "") {
 function subjectFromTitle(title = "") {
   const clean = cleanSubject(title);
   if (!clean) return "";
+  if (/^京东健康与北京友谊医院/u.test(clean)) return "京东健康 / 北京友谊医院";
   if (subjectLooksLikeTitle(clean) && !/[：:|｜-]/u.test(clean)) {
     const productionMatch = clean.match(/^([\u4e00-\u9fffA-Za-z0-9 .&/-]{2,18}?)(?:人形机器人)?\s*\d{4}年.+?(?:量产|搭载)/u);
     if (productionMatch) return cleanSubject(productionMatch[1]);
@@ -645,7 +656,7 @@ function normalizeSubject(value = "") {
 function subjectLooksLikeTitle(value = "") {
   const clean = cleanSubject(value);
   if (clean.length > 12 && /[，。；]/u.test(clean)) return true;
-  return clean.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|量产|搭载|适配|公布|支持|可实现|每秒|芯片|人形机器人|模型|应用|功能|早报|日报|周报|合集|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents|Paid Program|Weekly Updated)/iu.test(clean);
+  return clean.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|量产|搭载|适配|公布|支持|可实现|每秒|芯片|人形机器人|模型|应用|功能|早报|日报|周报|合集|是 AIScraping|Introducing|Top AI|Complete Guide|How to|Lessons from|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents|Paid Program|Weekly Updated)/iu.test(clean);
 }
 
 function isWeakSubject(value = "") {
@@ -657,6 +668,8 @@ function isWeakSubject(value = "") {
   if (/^(Requests for Startups|Enterprise AI Execution Problem|The Information'?s TITV)$/iu.test(clean)) return true;
   if (/^(IT之家|Hacker News 热门|MarkTechPost|buzzing\.cc|Weekly Updated B2B Lead Database)/iu.test(clean)) return true;
   if (/^(IT早报|AI早报|早报|日报|周报)/iu.test(clean)) return true;
+  if (/^AI business signal$/iu.test(clean)) return true;
+  if (/^How to\b|^Complete Guide\b|^October '?25 enterprise roundup\b/iu.test(clean)) return true;
   if (/^(一位|消息称|现在我)/u.test(clean)) return true;
   if (/(full list|Inference costs|VCs backing|raised \$100M|开源界的怪胎|富士康展示)/iu.test(clean)) return true;
   if (/^CEO\s+/iu.test(clean)) return true;
@@ -1213,9 +1226,20 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
     [/huggingface\.co\/blog\/coherelabs\/introducing-north-mini-code/u, "Cohere / North Mini Code"],
     [/arstechnica\.com.*gemini-3-5-live-translate/u, "Google Gemini Live Translate"],
     [/techcrunch\.com.*token-bill-comes-due/u, "AI token costs"],
+    [/mindstudio\.ai.*build-saas-with-ai-agents/u, "MindStudio"],
+    [/github\.com\/resources\/insights\/enterprise-content-roundup/u, "GitHub Enterprise"],
+    [/ithome\.com\/0\/963\/999/u, "三星 / 海上 AI 数据中心"],
+    [/ithome\.com\/0\/963\/986/u, "KPMG"],
+    [/ithome\.com\/0\/963\/998/u, "三星 / AI 数据中心"],
+    [/ithome\.com\/0\/963\/907/u, "科大讯飞 / 星火 X2-VL"],
+    [/ithome\.com\/0\/963\/924/u, "京东健康 / 友谊医院消化大模型"],
+    [/the-decoder\.com.*moonshots-open-model-kimi/u, "Moonshot AI / Kimi K2.7 Code"],
+    [/the-decoder\.com.*claude-fable-5-outpaces/u, "Anthropic / Claude Fable 5"],
+    [/the-decoder\.com.*us-government-forces-anthropic/u, "Anthropic / Claude Fable 5"],
   ];
   const match = rules.find(([pattern]) => pattern.test(normalized));
   if (match) return match[1];
+  if (/^京东健康与北京友谊医院/u.test(title)) return "京东健康 / 北京友谊医院";
   if (/^Vapi 融资/u.test(title)) return "Vapi";
   if (/^Google 开源水文/u.test(title)) return "Google Research";
   if (/^Anthropic 发布 Claude/u.test(title)) return "Anthropic / Claude";
@@ -1249,7 +1273,11 @@ function frontstageSubject(fm, sourceUrl, sourceName, rawTitle, title) {
   const urlSubject = normalizeSubject(subjectFromUrl(sourceUrl));
   const titleSubject = normalizeSubject(subjectFromTitle(title) || subjectFromTitle(rawTitle));
   if (urlSubject) return urlSubject;
-  if (explicit) return explicit;
+  if (
+    explicit
+    && !subjectLooksLikeTitle(explicit)
+    && !subjectMatchesDisplayTitle(explicit, title, rawTitle)
+  ) return explicit;
   if (isDiscoveryLabel(sourceName) && titleSubject && !isWeakSubject(titleSubject)) return titleSubject;
   return (!isWeakSubject(sourceName) ? normalizeSubject(sourceName) : "")
     || (titleSubject && !isWeakSubject(titleSubject) ? titleSubject : "")

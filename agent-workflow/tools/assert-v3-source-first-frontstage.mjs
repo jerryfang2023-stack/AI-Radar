@@ -140,7 +140,7 @@ const FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT = 1;
 function subjectLooksLikeTitle(value = "") {
   const text = cleanFrontstageSubject(value);
   if (text.length > 12 && /[，。；]/u.test(text)) return true;
-  return text.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|量产|搭载|适配|公布|支持|可实现|每秒|芯片|人形机器人|模型|应用|功能|早报|日报|周报|合集|是 AIScraping|Introducing|Top AI|Complete Guide|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents|Paid Program|Weekly Updated)/iu.test(text);
+  return text.length > 12 && /(发布|推出|完成|融资|获得|部署|重建|成为|指南|降低|提升|用于|进入|让|把|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|榜单|清单|将|支付|获取|聚焦|量产|搭载|适配|公布|支持|可实现|每秒|芯片|人形机器人|模型|应用|功能|早报|日报|周报|合集|是 AIScraping|Introducing|Top AI|Complete Guide|How to|Lessons from|Release Notes Agent|with quantization|Brings Enterprise|monetizing AI agents|Paid Program|Weekly Updated)/iu.test(text);
 }
 
 function subjectHasSourceNoise(value = "") {
@@ -179,7 +179,7 @@ function subjectIsMissing(value = "") {
 function subjectIsGeneric(value = "") {
   // "Blog" is a common subject for AI articles that lack a specific company label;
   // treat it as an acceptable generic rather than blocking the whole run.
-  return /^(Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us)$/iu.test(String(value || "").trim());
+  return /^(Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us|AI business signal)$/iu.test(String(value || "").trim());
 }
 
 function subjectMatchesTitle(card = {}) {
