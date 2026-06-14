@@ -40,16 +40,17 @@ Execution order:
 4. Persist Raw / Pool assets.
 5. Generate 10 business-signal Cards.
 6. Run Pool-to-Card dedupe and gates.
-7. Build business-signal data: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
-8. Build operations dashboard data: `pipeline-dashboard.json/js`.
-9. Build topic-center data.
-10. Run source-first and frontstage regression gates.
-11. Write the persistent asset manifest.
-12. Push `automation/business-signals-<date>`.
-13. Create or update the PR.
-14. Auto-merge or enable auto-merge after gates pass.
-15. Deploy through GitHub Pages after `main` updates.
-16. Send Hermes / Feishu brief when webhook is configured.
+7. Build business-signal frontstage data first: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
+8. Run the unified Business frontstage gate: `agent-workflow/tools/assert-business-signals-frontstage.mjs --date=<date>`. This wraps source-first and frontstage regression, classifies failures as Top10 supply, translation, large-company cap, title/source, source-first, or regression, and must run before dashboard / topic-center work.
+9. Build operations dashboard data: `pipeline-dashboard.json/js`.
+10. Build topic-center data.
+11. Run the pre-commit freshness gate.
+12. Write the persistent asset manifest.
+13. Push `automation/business-signals-<date>`.
+14. Create or update the PR.
+15. Auto-merge or enable auto-merge after gates pass.
+16. Deploy through GitHub Pages after `main` updates.
+17. Send Hermes / Feishu brief when webhook is configured.
 
 An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 
@@ -199,8 +200,8 @@ This skill lane does not write business-signal Cards, relationship graph data, t
 
 | Lane | Primary runner | Main trigger | Success gate | Persistence |
 |---|---|---|---|---|
-| Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai; `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 for this lane | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, source-first, frontstage regression, pre-commit freshness | independent automation PR to `main` |
-| Intelligence Map | GitHub Actions | follows the Business Signals Card chain | source-first and frontstage regression gates from the business-signal chain | included in the Business Signals PR |
+| Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 09:07 / 09:37 Asia/Shanghai; `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 for this lane | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, unified Business frontstage gate, pre-commit freshness | independent automation PR to `main` |
+| Intelligence Map | GitHub Actions | follows the Business Signals Card chain | unified Business frontstage gate from the business-signal chain | included in the Business Signals PR |
 | First-Line Viewpoints | Local Codex morning RSS collection/build/sync + GitHub Actions RSS fallback + local afternoon follow-builders skill lane | `builder-observation-daily-sync` at 08:30 Asia/Shanghai for morning RSS collection, page-data build, and Obsidian sync; `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 / 09:47 Asia/Shanghai for RSS fallback; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai for the skill publish; Hermes checks RSS at 09:55 and records the skill lane at 16:30 | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS; local publish report and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
 | Community Intelligence | Windows task `WaveSight Community Intelligence Daily` + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | local collection at 08:30 Asia/Shanghai; Codex automation `community-intelligence-daily-local` stays paused as duplicate fallback; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 10:45 for publication; Hermes three-lane early handoff at 09:30 / 09:45 / 09:55 for publish supervision | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
 

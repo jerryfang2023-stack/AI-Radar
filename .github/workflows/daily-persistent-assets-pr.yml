@@ -137,11 +137,12 @@ jobs:
             echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
             echo "3. Regenerate business-signal Card assets in the runner workspace."
             echo "4. Run Pool-to-Card duplicate gate."
-            echo "5. Write a persistent asset manifest."
-            echo "6. Sync V3.3 business-signal site data when business-signal gates pass."
+            echo "5. Build Business Signals frontstage data and immediately run the unified Business frontstage gate."
+            echo "6. Build operations dashboard and topic-center data only after the Business frontstage gate passes."
             echo "7. Confirm same-date downstream assets are no longer stale."
-            echo "8. Commit generated assets to an automation branch and open or update a PR."
-            echo "9. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
+            echo "8. Write a persistent asset manifest."
+            echo "9. Commit generated assets to an automation branch and open or update a PR."
+            echo "10. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
@@ -159,6 +160,7 @@ jobs:
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
+          node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/build-hermes-daily-brief.mjs
@@ -240,40 +242,42 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pool-to-card-dedupe.log"
 
-      - name: Sync site data
-        id: site-data
+      - name: Build Business Signals frontstage data
+        id: business-frontstage-data
         if: steps.pool-to-card-dedupe.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
-          node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
-          node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
-          node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
+          node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-data.log"
 
-      - name: Run V3 source-first frontstage gate
-        id: source-first-frontstage
-        if: steps.site-data.outcome == 'success'
+      - name: Run unified Business Signals frontstage gate
+        id: business-frontstage-gate
+        if: steps.business-frontstage-data.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
-          node agent-workflow/tools/assert-v3-source-first-frontstage.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-source-first-frontstage.log"
+          node agent-workflow/tools/assert-business-signals-frontstage.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-gate.log"
 
-      - name: Run frontstage regression gate
-        id: frontstage-regression
-        if: steps.site-data.outcome == 'success'
+      - name: Sync operations data after frontstage gates pass
+        id: operations-data
+        if: steps.business-frontstage-gate.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
-          node agent-workflow/tools/frontstage-regression-gate.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-frontstage-regression.log"
+          {
+            node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
+            node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
+          } 2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-operations-data.log"
 
       - name: Confirm site data freshness
         id: pre-commit-gate
-        if: steps.source-first-frontstage.outcome == 'success' && steps.frontstage-regression.outcome == 'success'
+        if: steps.business-frontstage-gate.outcome == 'success' && steps.operations-data.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -319,9 +323,9 @@ jobs:
           - raw_pool_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
-          - site_data_sync: ${{ steps.site-data.outcome }}
-          - source_first_frontstage_gate: ${{ steps.source-first-frontstage.outcome }}
-          - frontstage_regression_gate: ${{ steps.frontstage-regression.outcome }}
+          - business_frontstage_data: ${{ steps.business-frontstage-data.outcome }}
+          - business_frontstage_gate: ${{ steps.business-frontstage-gate.outcome }}
+          - operations_data_sync: ${{ steps.operations-data.outcome }}
           - pre_commit_gate: ${{ steps.pre-commit-gate.outcome }}
 
           ## Persisted Asset State
@@ -342,7 +346,8 @@ jobs:
 
           Raw / Pool must be committed once monitor and post-monitor gates pass.
           Card assets must be committed once asset generation runs.
-          Site data must be committed only when dedupe, site sync, source-first frontstage, frontstage regression and pre-commit gates pass.
+          Business frontstage data is built and gated before operations dashboard / topic-center data is generated.
+          Site data must be committed only when dedupe, Business frontstage gate, operations data sync and pre-commit gates pass.
           First-line viewpoints data is produced by the independent first-line workflow.
           EOF
 
@@ -357,9 +362,9 @@ jobs:
               "raw_pool_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
-              "site_data_sync": "${{ steps.site-data.outcome }}",
-              "source_first_frontstage_gate": "${{ steps.source-first-frontstage.outcome }}",
-              "frontstage_regression_gate": "${{ steps.frontstage-regression.outcome }}",
+              "business_frontstage_data": "${{ steps.business-frontstage-data.outcome }}",
+              "business_frontstage_gate": "${{ steps.business-frontstage-gate.outcome }}",
+              "operations_data_sync": "${{ steps.operations-data.outcome }}",
               "pre_commit_gate": "${{ steps.pre-commit-gate.outcome }}"
             },
             "assets": {
@@ -391,6 +396,8 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
@@ -436,6 +443,8 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md"
@@ -492,7 +501,7 @@ jobs:
           What this PR contains:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
-          - Site data included only when dedupe, sync, source-first frontstage, frontstage regression and pre-commit gates passed.
+          - Business frontstage data included only when dedupe, frontstage source-first/regression, operations sync and pre-commit gates passed.
           - Intelligence map and topic-center data generated from the business-signal Card chain.
           - Operations dashboard data included when the business-signal frontstage sync passes.
           - Persistent asset manifest for local Obsidian recovery.
@@ -582,7 +591,7 @@ jobs:
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
-          merge_body="Automated Business Signals update after monitor, dedupe, source-first frontstage and frontstage regression gates passed."
+          merge_body="Automated Business Signals update after monitor, dedupe and unified Business frontstage gates passed."
 
           if gh pr merge "$pr_number" \
             --squash \
@@ -631,9 +640,9 @@ jobs:
             --pool-to-card-dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
             --builders-data="not_required" \
             --builders-gate="not_required" \
-            --site-data="${{ steps.site-data.outcome }}" \
-            --source-first-frontstage="${{ steps.source-first-frontstage.outcome }}" \
-            --frontstage-regression="${{ steps.frontstage-regression.outcome }}" \
+            --site-data="${{ steps.business-frontstage-data.outcome }}" \
+            --source-first-frontstage="${{ steps.business-frontstage-gate.outcome }}" \
+            --frontstage-regression="${{ steps.business-frontstage-gate.outcome }}" \
             --pre-commit-gate="${{ steps.pre-commit-gate.outcome }}" \
             --commit="${{ steps.commit.outcome }}" \
             --pr="${{ steps.pr.outcome }}" \
@@ -696,9 +705,9 @@ jobs:
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
-            require_business_success "Site data sync" "${{ steps.site-data.outcome }}"
-            require_business_success "V3 source-first frontstage gate" "${{ steps.source-first-frontstage.outcome }}"
-            require_business_success "Frontstage regression gate" "${{ steps.frontstage-regression.outcome }}"
+            require_business_success "Business frontstage data build" "${{ steps.business-frontstage-data.outcome }}"
+            require_business_success "Unified Business frontstage gate" "${{ steps.business-frontstage-gate.outcome }}"
+            require_business_success "Operations data sync" "${{ steps.operations-data.outcome }}"
             require_business_success "Site freshness gate" "${{ steps.pre-commit-gate.outcome }}"
           else
             business_fail=1

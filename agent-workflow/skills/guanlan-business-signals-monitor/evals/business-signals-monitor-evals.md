@@ -16,6 +16,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 
 4. `source_first_gate`
    - Pass when frontstage facts, titles, details, and source excerpts are traceable to original source text or accepted Raw / Pool evidence.
+   - Pass when the production workflow uses the unified Business frontstage gate immediately after building Business Signals frontstage data and before dashboard / topic-center generation.
 
 5. `lane_isolation`
    - Pass when the Business Signals PR stages no First-Line Viewpoints or Community Intelligence data.
@@ -47,6 +48,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 12. `top10_large_company_preselection`
     - Pass when any Top10 fill or supply-repair path still respects the same large-company cap as the primary selector.
     - Fail when a weekend / low-supply fallback bypasses the selector cap, or when the source-first gate is relaxed to accept more than 3 total large-company cards or more than 1 card from the same large company.
+
+13. `morning_failure_fast_path`
+    - Pass when Business Signals builds and validates the Business frontstage JSON before operations dashboard / topic-center data, so Top10, translation, source-first, and large-company-cap failures stop early with a categorized report.
+    - Fail when source-first and frontstage regression run as separate late-stage checks after unrelated operations data has already been generated.
 
 ## Repair Loop
 

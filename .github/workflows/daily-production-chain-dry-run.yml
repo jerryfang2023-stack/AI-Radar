@@ -86,7 +86,8 @@ jobs:
             echo "4. Regenerate 10 business-signal Card assets in the runner workspace only."
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Run trend candidate / no-decision shell."
-            echo "7. Sync V3.3 site data, builders page data and operations data if all gates pass, still artifact-only."
+            echo "7. Build Business Signals frontstage data and run the unified Business frontstage gate before operations data."
+            echo "8. Sync operations data only after the Business frontstage gate passes, still artifact-only."
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-production-chain-dry-run.md"
 
       - name: Syntax checks
@@ -98,6 +99,7 @@ jobs:
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
+          node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
           node --check agent-workflow/tools/assert-follow-builders-data.mjs
           node --check agent-workflow/tools/run-trend-candidate-decision.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
@@ -206,17 +208,36 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-builders-gate.log"
 
-      - name: Build V3 site data after gates pass
+      - name: Build Business Signals frontstage data after gates pass
         id: site-sync
         if: steps.trend.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
-          {
-            node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
-            node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
-          } 2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-site-sync.log"
+          node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-site-sync.log"
+
+      - name: Run unified Business Signals frontstage gate
+        id: business-frontstage-gate
+        if: steps.site-sync.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-business-signals-frontstage.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-business-frontstage-gate.log"
+
+      - name: Build operations data after frontstage gate
+        id: operations-data
+        if: steps.business-frontstage-gate.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-operations-data.log"
 
       - name: Upload full-chain dry-run artifacts
         if: always()
@@ -232,6 +253,8 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-downstream-assets-stale.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-trend-candidate-decision*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-no-trend-candidate-decision.md
@@ -272,7 +295,9 @@ jobs:
           require_success "Trend candidate / no-decision shell" "${{ steps.trend.outcome }}"
           require_success "First-line viewpoints data" "${{ steps.builders-data.outcome }}"
           require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
-          require_success "Site data sync" "${{ steps.site-sync.outcome }}"
+          require_success "Business frontstage data sync" "${{ steps.site-sync.outcome }}"
+          require_success "Unified Business frontstage gate" "${{ steps.business-frontstage-gate.outcome }}"
+          require_success "Operations data sync" "${{ steps.operations-data.outcome }}"
 
           if [ "$fail" -ne 0 ]; then
             echo "Full-chain dry-run did not pass. Inspect uploaded artifacts. Nothing was committed, pushed, published, or deployed." >&2
