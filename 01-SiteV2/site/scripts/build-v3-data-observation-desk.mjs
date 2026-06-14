@@ -1650,6 +1650,10 @@ const largeVendorPatterns = [
   ["alibaba", /\bAlibaba\b|\bQwen\b|\bTongyi\b|阿里巴巴|通义千问/iu],
 ];
 
+const FRONTSTAGE_TOP10_LIMIT = 10;
+const FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT = 3;
+const FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT = 1;
+
 function largeVendorKeyFromText(value = "") {
   const text = String(value || "");
   const match = largeVendorPatterns.find(([, pattern]) => pattern.test(text));
@@ -1861,7 +1865,12 @@ function isGenericFrontstageCandidate(card = {}) {
   return card.category !== "funding" && /^investing in\b/iu.test(String(card.title || ""));
 }
 
-function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalLimit = 3, largeVendorPerCompanyLimit = 1) {
+function buildDailyFrontstageSelection(
+  cards = [],
+  limit = FRONTSTAGE_TOP10_LIMIT,
+  largeVendorTotalLimit = FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT,
+  largeVendorPerCompanyLimit = FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT
+) {
   const byDate = new Map();
   for (const card of cards) {
     if (!card.date) continue;
@@ -1888,17 +1897,47 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
       .filter(hasSourceBackedFrontstageFact)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const ranked = [...preferred, ...fallback];
+    const rankedIds = new Set(ranked.map((card) => card.id));
+    const nonLargeCoreFill = coreCandidates
+      .filter((card) => !rankedIds.has(card.id))
+      .filter((card) => !card.largeVendorKey)
+      .filter((card) => !card.frontstageGenericCandidate)
+      .filter((card) => card.sourceUrl && card.translatedFact && card.frontstageEvidenceScore >= 20)
+      .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const rejected = [];
     const selectedForDate = [];
     const selectedIds = new Set();
+    let nonLargeCoreFillCount = 0;
+    const largeCompanyCandidateCount = annotated.filter((card) => card.largeVendorKey).length;
+    const canSelectUnderLargeCompanyCap = (card, stage) => {
+      if (!card.largeVendorKey) return true;
+      const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
+      if (largeVendorTotal >= largeVendorTotalLimit) {
+        rejected.push({ id: card.id, reason: "large-company total cap", stage });
+        return false;
+      }
+      if (vendorCount >= largeVendorPerCompanyLimit) {
+        rejected.push({ id: card.id, reason: `same large-company cap: ${card.largeVendorKey}`, stage });
+        return false;
+      }
+      return true;
+    };
+    const noteLargeCompanySelection = (card) => {
+      if (!card.largeVendorKey) return;
+      const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
+      largeVendorTotal += 1;
+      largeVendorCounts.set(card.largeVendorKey, vendorCount + 1);
+    };
     const selectCard = (card, selectionTier) => {
-      selected.push({
+      noteLargeCompanySelection(card);
+      const selectedCard = {
         ...card,
         summary: card.frontstageValueDescription,
         frontstageSelectionTier: selectionTier,
         frontstageSupplyFill: selectionTier !== "editorial",
-      });
-      selectedForDate.push(card);
+      };
+      selected.push(selectedCard);
+      selectedForDate.push(selectedCard);
       selectedIds.add(card.id);
       datePicked += 1;
     };
@@ -1908,19 +1947,7 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
         rejected.push({ id: card.id, reason: "duplicate event already selected" });
         continue;
       }
-      if (card.largeVendorKey) {
-        const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
-        if (largeVendorTotal >= largeVendorTotalLimit) {
-          rejected.push({ id: card.id, reason: "large-company total cap" });
-          continue;
-        }
-        if (vendorCount >= largeVendorPerCompanyLimit) {
-          rejected.push({ id: card.id, reason: `same large-company cap: ${card.largeVendorKey}` });
-          continue;
-        }
-        largeVendorTotal += 1;
-        largeVendorCounts.set(card.largeVendorKey, vendorCount + 1);
-      }
+      if (!canSelectUnderLargeCompanyCap(card, "editorial-selection")) continue;
       const selectionTier = preferredIds.has(card.id) ? "editorial" : "supply-fill";
       selectCard(card, selectionTier);
     }
@@ -1931,7 +1958,18 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
         rejected.push({ id: card.id, reason: "duplicate event already selected in relaxed fill" });
         continue;
       }
-      selectCard(card, "quota-relaxed-fill");
+      if (!canSelectUnderLargeCompanyCap(card, "quota-safe-fill")) continue;
+      selectCard(card, "quota-safe-fill");
+    }
+    for (const card of nonLargeCoreFill) {
+      if (datePicked >= limit) break;
+      if (selectedIds.has(card.id)) continue;
+      if (isDuplicateFrontstageEvent(card, selectedForDate)) {
+        rejected.push({ id: card.id, reason: "duplicate event already selected in non-large core fill" });
+        continue;
+      }
+      selectCard(card, "non-large-core-fill");
+      nonLargeCoreFillCount += 1;
     }
     reports.push({
       date,
@@ -1941,7 +1979,12 @@ function buildDailyFrontstageSelection(cards = [], limit = 10, largeVendorTotalL
       qualifiedCount: preferred.length,
       selectedCount: datePicked,
       supplyConstrained: preferred.length < limit,
+      largeCompanyTotalLimit: largeVendorTotalLimit,
+      largeCompanyPerCompanyLimit: largeVendorPerCompanyLimit,
+      largeCompanyCandidateCount,
       largeCompanySelectedCount: largeVendorTotal,
+      largeCompanySelectedByVendor: Object.fromEntries([...largeVendorCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]))),
+      nonLargeCoreFillCount,
       rejectedByQuota: rejected.slice(0, 12),
     });
   }
@@ -3140,7 +3183,7 @@ const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSour
   .map(normalizeFrontstageDisplay)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const frontstageSelection = buildDailyFrontstageSelection(cards, 10, 3, 1);
+const frontstageSelection = buildDailyFrontstageSelection(cards);
 const frontstageCards = frontstageSelection.cards;
 
 const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";

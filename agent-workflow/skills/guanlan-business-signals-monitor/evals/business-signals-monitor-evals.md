@@ -12,6 +12,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 
 3. `public_top10_contract`
    - Pass when `01-SiteV2/site/data/v3-data-observation-desk.json.top10` exists for the active date and contains exactly 10 active-date business-signal items.
+   - Pass when the Top10 selector applies the large-company cap before publication: at most 3 large-company cards total and at most 1 card per large company. A later gate may verify this, but must not be the first place that removes or relaxes large-company overage.
 
 4. `source_first_gate`
    - Pass when frontstage facts, titles, details, and source excerpts are traceable to original source text or accepted Raw / Pool evidence.
@@ -42,6 +43,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when Top10 titles name the actual company, product, funding round, release, customer, or workflow event and do not contain placeholder wording such as "original AI event", "purpose see original", or source-domain subjects like "linkedin financing" / "github original title".
     - Pass when LinkedIn/X/Reddit/Hacker News posts, GitHub repo root/tree/blob pages, package/model pages, marketplace listings, and generic funding/startup lists are excluded from formal Signal Cards unless recaptured through a dated source-backed event page.
     - Pass when the public Core Pool candidate list is event-deduped so repeated pages about the same model release or financing round do not fill the candidate area.
+
+12. `top10_large_company_preselection`
+    - Pass when any Top10 fill or supply-repair path still respects the same large-company cap as the primary selector.
+    - Fail when a weekend / low-supply fallback bypasses the selector cap, or when the source-first gate is relaxed to accept more than 3 total large-company cards or more than 1 card from the same large company.
 
 ## Repair Loop
 

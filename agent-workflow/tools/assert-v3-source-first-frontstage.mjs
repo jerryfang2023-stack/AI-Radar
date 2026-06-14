@@ -131,7 +131,11 @@ const largeVendorPatterns = [
   ["oracle", /\bOracle\b/iu],
   ["ibm", /\bIBM\b/iu],
   ["salesforce", /\bSalesforce\b/iu],
+  ["alibaba", /\bAlibaba\b|\bQwen\b|\bTongyi\b|闃块噷宸村反|閫氫箟鍗冮棶/iu],
 ];
+
+const FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT = 3;
+const FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT = 1;
 
 function subjectLooksLikeTitle(value = "") {
   const text = cleanFrontstageSubject(value);
@@ -231,7 +235,11 @@ function top10FactIsWeak(card = {}) {
 }
 
 function publicTitleIsGeneric(value = "") {
-  return /案例：\s*AI\s*进入|获得\s*\$|发布\s*AI\s*能力|把\s*AI\s*用进|信号：\s*AI\s*进入|推出\s*Agent\s*工作流能力，切入/iu.test(String(value || ""));
+  const text = String(value || "").trim();
+  if (/^[A-Za-z0-9\u4e00-\u9fff][A-Za-z0-9\u4e00-\u9fff .&'’()-]{1,60}\s+(?:获得|获)\s*\$?\d[\d.,]*(?:\s?(?:M|B|million|billion|万|亿|万美元))?\s*融资/iu.test(text)) {
+    return false;
+  }
+  return /案例：\s*AI\s*进入|获得\s*\$|发布\s*AI\s*能力|把\s*AI\s*用进|信号：\s*AI\s*进入|推出\s*Agent\s*工作流能力，切入/iu.test(text);
 }
 
 function publicCardFactIsWeak(card = {}) {
@@ -316,11 +324,13 @@ for (const [date, items] of frontstageByDate.entries()) {
     largeVendorCounts.set(vendorKey, (largeVendorCounts.get(vendorKey) || 0) + 1);
   }
   if (date === activeDate) {
-    // Relax large-company limits slightly: low-news days (weekends/holidays)
-    // naturally produce more large-vendor content since smaller players publish less
-    if (largeVendorTotal > 6) issues.push(`frontstage ${date} has ${largeVendorTotal} large-company cards, expected at most 6`);
+    if (largeVendorTotal > FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT) {
+      issues.push(`frontstage ${date} has ${largeVendorTotal} large-company cards; the Top10 selector must cap this before publication at ${FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT}`);
+    }
     for (const [vendorKey, count] of largeVendorCounts.entries()) {
-      if (count > 3) issues.push(`frontstage ${date} has ${count} cards for large company ${vendorKey}, expected at most 3`);
+      if (count > FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT) {
+        issues.push(`frontstage ${date} has ${count} cards for large company ${vendorKey}; the Top10 selector must cap each large company before publication at ${FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT}`);
+      }
     }
   }
 }
