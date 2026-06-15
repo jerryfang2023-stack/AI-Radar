@@ -2466,8 +2466,18 @@ async function fetchGdeltJsonWithRetry(url, attempts = 3) {
   throw lastError || new Error("GDELT request failed");
 }
 
-async function searchAnysearch(query, limit = 5) {
+async function fetchAnysearchResults(query, limit = 5, options = {}) {
   if (!anysearchApiKey) throw new Error("ANYSEARCH_API_KEY is not configured");
+  const body = {
+    query,
+    max_results: Math.min(Math.max(Number(limit) || 5, 1), 10),
+  };
+  if (options.domain) body.domain = options.domain;
+  if (options.includeFilters !== false) {
+    body.content_types = ["web", "news"];
+    body.zone = "intl";
+    body.language = "en";
+  }
   const response = await fetch("https://api.anysearch.com/v1/search", {
     method: "POST",
     headers: {
@@ -2475,17 +2485,7 @@ async function searchAnysearch(query, limit = 5) {
       "content-type": "application/json",
       accept: "application/json",
     },
-    body: JSON.stringify({
-      query,
-      max_results: Math.min(Math.max(Number(limit) || 5, 1), 10),
-      domains: ["tech", "business"],
-      content_types: ["web", "news"],
-      zone: "intl",
-      language: "en",
-      constraint: {
-        freshness: "day",
-      },
-    }),
+    body: JSON.stringify(body),
     signal: AbortSignal.timeout(fetchTimeoutMs),
   });
   const bodyText = await response.text();
@@ -2498,6 +2498,9 @@ async function searchAnysearch(query, limit = 5) {
   if (!response.ok) {
     const message = data?.error || data?.message || `${response.status} ${response.statusText}`;
     throw new Error(`Anysearch ${message}`);
+  }
+  if (data && typeof data.code === "number" && data.code !== 0) {
+    throw new Error(`Anysearch ${data.message || `code=${data.code}`}`);
   }
   const nestedData = data && typeof data.data === "object" && !Array.isArray(data.data) ? data.data : {};
   const results = Array.isArray(data.results)
@@ -2534,8 +2537,31 @@ async function searchAnysearch(query, limit = 5) {
     }))
     .filter((item) => item.url && item.title)
     .slice(0, limit);
-  if (!parsed.length) throw new Error("Anysearch returned 0 usable results");
   return parsed;
+}
+
+async function searchAnysearch(query, limit = 5) {
+  const parsed = [];
+  const seen = new Set();
+  const add = (items) => {
+    for (const item of items) {
+      const key = item.url || item.id;
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      parsed.push(item);
+      if (parsed.length >= limit) break;
+    }
+  };
+  try {
+    add(await fetchAnysearchResults(query, limit, { domain: "business" }));
+    if (parsed.length < limit) add(await fetchAnysearchResults(query, limit - parsed.length, { domain: "tech" }));
+  } catch (error) {
+    if (!isProviderRunOutage(error.message)) throw error;
+    providerFallbackNotes.push(`Anysearch documented-payload retry for query "${query}": ${error.message}`);
+    add(await fetchAnysearchResults(query, limit, { includeFilters: false }));
+  }
+  if (!parsed.length) throw new Error("Anysearch returned 0 usable results");
+  return parsed.slice(0, limit);
 }
 
 async function searchTavily(query, limit = 5) {
