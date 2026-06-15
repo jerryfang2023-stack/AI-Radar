@@ -1023,6 +1023,7 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const source = `${text}\n${normalized}`;
   const rules = [
+    [/blogs\.nvidia\.com\/blog\/2026-ces-special-presentation|NVIDIA Rubin Platform|open models|autonomous driving/iu, "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶路线，材料聚焦其下一代 AI 基础设施与落地能力布局。"],
     [/nimble-way-raises-47m|Nimble raises \$47M/iu, "TechCrunch 报道，Nimble 完成 4700 万美元 B 轮融资，由 Norwest 领投，平台用 AI Agent 实时搜索网页、验证结果，并把信息结构化成可查询的数据表。"],
     [/neocognition.*lands-40m|NeoCognition lands \$40M/iu, "TechCrunch 报道，NeoCognition 从隐身状态推出并完成 4000 万美元种子轮融资，由 Cambium Capital 和 Walden Catalyst Ventures 共同领投，方向是研发自学习 AI Agent。"],
     [/airspeed-raises-20m|Airspeed Raises \$20M/iu, "Unite.AI 报道，Airspeed 完成 2000 万美元 A 轮融资，由 DN Capital 领投，资金用于扩展面向销售和收入运营团队的 AI 平台。"],
@@ -1062,6 +1063,7 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
 function frontstageChineseTitle(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const rules = [
+    [/blogs\.nvidia\.com\/blog\/2026-ces-special-presentation/u, "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图"],
     [/hpcwire\.com.*tensormesh-raises-20m-launches-ai-inference-platform/u, "Tensormesh \u5728 HPCwire \u53d1\u5e03 2000 \u4e07\u7f8e\u5143\u878d\u8d44\u4e0e AI \u63a8\u7406\u5e73\u53f0"],
     [/happyrobot\.ai\/customer-story\/kuehne-nagel/u, "Kuehne+Nagel \u4e0e HappyRobot\uff1aAI \u8fdb\u5165\u7269\u6d41\u8ba2\u5355\u548c\u90ae\u4ef6\u5904\u7406"],
     [/mariothomas\.com\/blog\/inference-migration/u, "Mario Thomas\uff1a\u6d88\u8d39\u7ea7 Agent \u7ecf\u9a8c\u8fdb\u5165\u4f01\u4e1a AI \u4e0b\u4e00\u9636\u6bb5"],
@@ -1146,6 +1148,7 @@ function frontstageChineseTitle(title = "", sourceUrl = "") {
 function frontstageSubjectOverride(sourceUrl = "", title = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const rules = [
+    [/blogs\.nvidia\.com\/blog\/2026-ces-special-presentation/u, "NVIDIA"],
     [/theverge\.com.*ai-laptop-nvidia-build-gemini/u, "NVIDIA / Microsoft / Google"],
     [/marktechpost.*gemma-4-qat/u, "Google DeepMind"],
     [/research\.google.*agentic-rag/u, "Google Research"],
@@ -3219,7 +3222,9 @@ const top10 = frontstageCards
   .filter((card) => card.date === activeDate)
   .slice(0, 10)
   .map(top10CompatCard);
-const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate).map(normalizeFrontstageDisplay);
+const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate)
+  .map(normalizeFrontstageDisplay)
+  .filter((card) => !isWeakSubject(card.subject));
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
