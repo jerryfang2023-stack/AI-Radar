@@ -1,6 +1,6 @@
 ---
 title: Tool Tips
-date: 2026-06-14
+date: 2026-06-15
 status: active
 type: community-intelligence-tool_tip
 source: community-intelligence
@@ -10,114 +10,121 @@ source: community-intelligence
 
 AI 工具、Agent 工作流、自动化方法和提示词实践。
 
-最新归档：[[2026-06-14 Community Intelligence]]
+最新归档：[[2026-06-15 Community Intelligence]]
 
-## 高价值条目（15 条）
+## 高价值条目（16 条）
 
 ### 1. 不用写提示词，也能做出爆款AI 剧情带货视频 (生财）
-- 来源：生财有术｜2天前
+- 来源：生财有术｜3天前
 - 分类：工具技巧｜AI应用案例
-- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
 - 标签：#AI应用案例 #企业服务 #待确认
-- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/45544554842254888)
 不用写提示词，也能做出爆款AI 剧情带货视频 (生财） 很多老板刷到大品牌的剧情带货视频，看起来效果特别好，动不动就是几百万的播放，看着眼馋，但是第一反应就是：“我们做不起”
 - 价值判断：痛点：内容生产与账号增长；资料链接：2 个
 - 资料：[资料 1](https://bvvp9yto7k.feishu.cn/wiki/JXlGwe8xuilbKBk7nufc8EJZnDh?from=from_copylink) · [资料 2](https://bvvp9yto7k.feishu.cn/wiki/JXlGwe8xuilbKBk7)
 ### 2. 花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程）
-- 来源：生财有术｜3天前
+- 来源：生财有术｜4天前
 - 分类：工具技巧｜获客营销与转化
-- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
 - 标签：#获客营销与转化 #内容与自媒体 #Claude-Code #Claude #Obsidian #待确认
 花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右
 - 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：工具配置与AI基建门槛 / 内容生产与账号增长；资料链接：2 个
 - 资料：[资料 1](https://ecnvpsagxr6r.feishu.cn/wiki/ASBbwcxBqi4do7kXDxacdUiwnfg?from=from_copylink) · [资料 2](https://ecnvpsagxr6r.feishu.cn/wiki/ASBbwcxBqi4do7)
 ### 3. AI时代学习不用瞎收藏：用AI提炼做事方法和认知思维
-- 来源：生财有术｜3天前
+- 来源：生财有术｜4天前
 - 分类：工具技巧｜内容生产与IP运营
-- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
 - 标签：#内容生产与IP运营 #内容与自媒体 #资料产品-/-工具包
 AI时代学习不用瞎收藏：用AI提炼做事方法和认知思维 AI时代我们应该怎么通过 AI 更好的学习，提炼成做事方法论和认知思维以前我们经常刷到好内容，演讲、文章、视频、播客，当下觉得很有收获，顺手收藏一下，然后就没有然后了
 - 价值判断：可复用方法：内容获客路径；痛点：内容生产与账号增长；资料链接：2 个
 - 资料：[资料 1](https://my.feishu.cn/wiki/LxcOwcfG0iJFhlktAM8cgFKrnHc?from=from_copylink) · [资料 2](https://my.feishu.cn/wiki/LxcOwcfG0iJFhlktAM8cgFKr)
-### 4. 【万字复盘】因为一个用户退款后，我用 GPT Image 2 和 Codex 重做了英语口语学习页
+### 4. 参加完 AI 航海家大课，我不想再给 AI 加工位了
+- 来源：生财有术｜5天前
+- 分类：工具技巧｜内容生产与IP运营
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
+- 标签：#内容生产与IP运营 #内容与自媒体 #飞书 #待确认
+参加完 AI 航海家大课，我不想再给 AI 加工位了 大家好，我是麻雀
+- 价值判断：可复用方法：内容获客路径 / 知识库 + Agent 工作流 / 工具产品化；痛点：内容生产与账号增长；资料链接：1 个
+- 资料：[资料 1](https://my.feishu.cn/docx/ZmyRdwQObo3zVfxLTTEcD0XKnUh)
+### 5. 涛哥AI编程 行动家 星火师 2026-06-09 17:08 精华 【万字复盘】因为一个用户退款后，我用 GPT Image 2 和 Codex 重做了英语口语学习页 于是我上个月用 GPT
+- 来源：AI破局｜2026-06-09 17:08
+- 分类：工具技巧｜AI基建与企业服务
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
+- 标签：#AI基建与企业服务 #未识别行业 #Obsidian #Claude-Code #Claude #NotebookLM #Codex #飞书
+一只阿木木 2026-06-08 21:22 我用半年时间，把深度阅读做成了一条流水线：Obsidian + AI 深度阅读流水线的完整复盘 我用半年时间，把深度阅读做成了一条流水线：Obsi dian + AI 深度阅读流水线的完整复盘 一只阿木木 · AI 深读工程师 读完不算，跑通才算 过去半年，我用下面这 4 个工具，搭了一条读书流水线： Obsi…
+- 价值判断：可复用方法：知识库 + Agent 工作流 / 工具产品化 / 前端获客 + 后端交付拆分 / 沉淀成SOP/模板 / 内容获客路径；痛点：知识沉淀与效率 / 交付标准化与复购 / 获客成本与精准线索 / 内容生产与账号增长 / 工具配置与AI基建门槛；资料链接：5 个
+- 资料：[资料 1](https://my.feishu.cn/docx/Ljycd727uo2j9Pxa5Y9cBwhLn4b?from=from_copylink) · [资料 2](https://pa23ntdf1gf.feishu.cn/wiki/CarEwKAdIiT407k7i9RcxLL7nld) · [资料 3](https://pa23ntdf1gf.feishu.cn/wiki/PXt4w3yUGi8Seeko3DXc4JBLnXf) · [资料 4](https://dcnhdgcfgvbe.feishu.cn/wiki/XkzTwMYT0inA8hkZSgBcAbVvnJf) · [资料 5](https://my.feishu.cn/wiki/TxaCwIt7Yi0esUka76AcDZA9n0f?from=from_copylink)
+### 6. 【万字复盘】因为一个用户退款后，我用 GPT Image 2 和 Codex 重做了英语口语学习页
 - 来源：AI破局｜2026-06-09 17:08
 - 分类：工具技巧｜AI基建与企业服务
 - 标签：#AI基建与企业服务 #未识别行业 #Codex #飞书 #待确认
 【万字复盘】因为一个用户退款后，我用 GPT Image 2 和 Codex 重做了英语口语学习页 【万字复盘】因为一个用户退款后，我用 GPT Image 2 和 Codex 重做了英语口语学习页
 - 价值判断：可复用方法：知识库 + Agent 工作流 / 工具产品化；资料链接：1 个
 - 资料：[资料 1](https://egtmutdg24.feishu.cn/docx/Zlbzdn1ProfB7oxf9yhcSXESnrg?from=from_copylink)
-### 5. AI 短视频带货复盘：从 0 到 3 天入 1w6 GMV 的疯狂死磕历程
+### 7. AI 短视频带货复盘：从 0 到 3 天入 1w6 GMV 的疯狂死磕历程
 - 来源：AI破局｜2026-06-09 16:25
 - 分类：工具技巧｜内容生产与IP运营
 - 标签：#内容生产与IP运营 #内容与自媒体 #飞书 #订单成交-/-收费变现
 AI 短视频带货复盘：从 0 到 3 天入 1w6 GMV 的疯狂死磕历程 AI 短视频带货复盘：从 0 到 3 天入 1w6 GMV 的疯狂死磕历程
 - 价值判断：结果信号：GMV 的疯狂死磕历程 AI 短视频带货复盘：从 0 到 3 ；可复用方法：知识库 + Agent 工作流；痛点：内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://yqff48t06sy.feishu.cn/wiki/UwW4wLQSZi2g7ZkE3LicN2COnze)
-### 6. 帮AI零基础发小搞定AI基建，给老板做服务能年入几十万
-- 来源：生财有术｜5天前
+### 8. 帮AI零基础发小搞定AI基建，给老板做服务能年入几十万
+- 来源：生财有术｜6天前
 - 分类：工具技巧｜AI基建与企业服务
-- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
 - 标签：#AI基建与企业服务 #企业服务 #Codex #Claude-Code #Claude #ChatGPT #Gemini #Grok
 帮AI零基础发小搞定AI基建，给老板做服务能年入几十万 前几天有个发小来找我，他可以说是对 AI 零基础了，说想接触 AI
 - 价值判断：可复用方法：知识库 + Agent 工作流 / 工具产品化；痛点：知识沉淀与效率 / 工具配置与AI基建门槛 / 内容生产与账号增长
-### 7. 参加完 AI 航海家大课，我不想再给 AI 加工位了
-- 来源：生财有术｜5天前
-- 分类：工具技巧｜内容生产与IP运营
-- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
-- 标签：#内容生产与IP运营 #内容与自媒体 #飞书 #待确认
-参加完 AI 航海家大课，我不想再给 AI 加工位了 大家好，我是麻雀
-- 价值判断：可复用方法：内容获客路径 / 知识库 + Agent 工作流 / 工具产品化；痛点：内容生产与账号增长；资料链接：1 个
-- 资料：[资料 1](https://my.feishu.cn/docx/ZmyRdwQObo3zVfxLTTEcD0XKnUh)
-### 8. 7 天从 0-1 完成一场线下 AI 培训活动，过程分享
-- 来源：生财有术｜5天前
+### 9. 7 天从 0-1 完成一场线下 AI 培训活动，过程分享
+- 来源：生财有术｜6天前
 - 分类：工具技巧｜知识库与组织提效
-- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
 - 标签：#知识库与组织提效 #本地生活 #飞书 #服务交付-/-咨询培训
 7 天从 0-1 完成一场线下 AI 培训活动，过程分享 前提：我是没有同城粉丝的 也没有自己举办过活动从零到一 用一周的时间节点倒逼自己完成这个过程给了我好大的信心💪希望给焦虑迷茫的人一点力量完整在飞书https://my.feishu.cn/docx/QuB8diy1AoVRlZxKe3Pc3FJi...https://my.feishu.cn/do…
 - 价值判断：结果信号：粉丝的 也没有自己举办过活动从零到一 用一周的时间节点倒逼自；可复用方法：知识库 + Agent 工作流；资料链接：2 个
 - 资料：[资料 1](https://my.feishu.cn/docx/QuB8diy1AoVRlZxKe3Pc3FJinJb?from=from_copylink) · [资料 2](https://my.feishu.cn/docx/QuB8diy1AoVRlZxKe3Pc3FJi...https://my.feishu.cn/docx/QuB8diy1AoVRlZxKe3Pc3FJi)
-### 9. 新手搞不定Codex？找圈友帮忙1000块以内就行
-- 来源：生财有术｜5天前
+### 10. 新手搞不定Codex？找圈友帮忙1000块以内就行
+- 来源：生财有术｜6天前
 - 分类：工具技巧｜AI基建与企业服务
-- 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
+- 命中关键词：知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor / Obsidian
 - 标签：#AI基建与企业服务 #本地生活 #Codex #待确认
 找圈友帮忙1000块以内就行 看似这么多，其实一点都不难，关键你得先搞定 Codex，有了 Codex，活就都是 Codex 而不是你的了
 - 价值判断：痛点：工具配置与AI基建门槛
-### 10. 有奖竞猜答案揭晓！ 破局AI项目库1.0 今日正式发布，并且这是破局首个我操盘实现的项目。哈哈哈哈。
+### 11. 有奖竞猜答案揭晓！ 破局AI项目库1.0 今日正式发布，并且这是破局首个我操盘实现的项目。哈哈哈哈。
 - 来源：AI破局｜2026-06-08 20:09
 - 分类：工具技巧｜内容生产与IP运营
 - 标签：#内容生产与IP运营 #留学教育 #资料产品-/-工具包
 破局AI项目库1.0 今日正式发布，并且这是破局首个我操盘实现的项目
 - 价值判断：可复用方法：内容获客路径 / 工具产品化；痛点：内容生产与账号增长
-### 11. 用Codex做了一个国际化报刊Skill，已开源。
+### 12. 用Codex做了一个国际化报刊Skill，已开源。
 - 来源：AI破局｜2026-06-05 15:42
 - 分类：工具技巧｜交付与服务自动化
 - 标签：#交付与服务自动化 #内容与自媒体 #Codex #飞书 #待确认
 用Codex做了一个国际化报刊Skill，已开源
 - 价值判断：可复用方法：知识库 + Agent 工作流；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/wiki/ET83wqQOsi84WQkve1OcyZtnn7j?from=from_copylink)
-### 12. Obsidian + Claude：健身房的 AI 组织转型
+### 13. Obsidian + Claude：健身房的 AI 组织转型
 - 来源：AI破局｜2026-06-04 14:13
 - 分类：工具技巧｜知识库与组织提效
 - 标签：#知识库与组织提效 #本地生活 #Claude #Obsidian #待确认
 Obsidian + Claude：健身房的 AI 组织转型 大家好，我是傅钟，最近将全部精力收拢到健身房，把运营全面 AI 化了
 - 价值判断：可复用方法：知识库 + Agent 工作流 / 工具产品化；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/docx/AkSKd8UwsoQietx7LrEcI4vwnWd)
-### 13. 韦达：13 步搭建 Obsidian+Claude 爆款内容生产系统——从 AI 小白到精华帖的完整实操指南
+### 14. 韦达：13 步搭建 Obsidian+Claude 爆款内容生产系统——从 AI 小白到精华帖的完整实操指南
 - 来源：AI破局｜2026-06-04 11:08
 - 分类：工具技巧｜获客营销与转化
 - 标签：#获客营销与转化 #内容与自媒体 #Claude #Obsidian #飞书 #订单成交-/-收费变现
 韦达：13 步搭建 Obsidian+Claude 爆款内容生产系统——从 AI 小白到精华帖的完整实操指南 韦达：13 步搭建 Obsidian+Claude 爆款内容生产系统——从 AI 小白到精华帖的完整实操指南
 - 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：知识沉淀与效率 / 内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/docx/UXe9dU0qlo3N7GxHTrvcG5XTnwb)
-### 14. AI帮我们省下时间，是为了让我们有空去见真正重要的人。
+### 15. AI帮我们省下时间，是为了让我们有空去见真正重要的人。
 - 来源：AI破局｜2026-06-03 20:17
 - 分类：工具技巧｜内容生产与IP运营
 - 标签：#内容生产与IP运营 #内容与自媒体 #订单成交-/-收费变现
 AI帮我们省下时间，是为了让我们有空去见真正重要的人
 - 价值判断：可复用方法：内容获客路径 / 工具产品化；痛点：内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://d16rg8unadx.feishu.cn/wiki/YMs3wW5ACijjk3kNWuucvUJunMc?from=from_copylink)
-### 15. 羡慕洋哥的 yangclaw？这篇保姆级教程教你用 QClaw+IMA 给用户做在微信里面就能对话的你的"AI 分身"
+### 16. 羡慕洋哥的 yangclaw？这篇保姆级教程教你用 QClaw+IMA 给用户做在微信里面就能对话的你的"AI 分身"
 - 来源：AI破局｜2026-06-03 18:48
 - 分类：工具技巧｜获客营销与转化
 - 标签：#获客营销与转化 #企业服务 #飞书 #订单成交-/-收费变现
