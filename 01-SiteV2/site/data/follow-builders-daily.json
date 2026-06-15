@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-06-14T08:28:06.138Z",
+    "generatedAt": "2026-06-15T01:32:32.348Z",
     "feedGeneratedAt": "2026-06-14T07:54:00.739Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 20,
-    "remarks": 45,
-    "podcasts": 3,
-    "blogsBuilt": 6,
-    "trackedSources": 33,
+    "builders": 19,
+    "remarks": 44,
+    "podcasts": 1,
+    "blogsBuilt": 5,
+    "trackedSources": 0,
     "rawBuilders": 14,
     "rawTweets": 25
   },
@@ -22,18 +22,12 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Dataiku Blog",
       "handle": "dataiku.com",
       "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
-      "count": 4
-    },
-    {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 4
     },
     {
@@ -49,6 +43,12 @@
       "count": 3
     },
     {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "count": 3
+    },
+    {
       "name": "Aditya Agarwal",
       "handle": "adityaag",
       "role": "General Partner SouthPkCommons, Co-Founder Bevel_Health",
@@ -58,6 +58,12 @@
       "name": "Garry Tan",
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "count": 2
+    },
+    {
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "count": 2
     },
     {
@@ -79,12 +85,6 @@
       "count": 2
     },
     {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "count": 2
-    },
-    {
       "name": "Amjad Masad",
       "handle": "amasad",
       "role": "ceo replit. civilizationist",
@@ -100,12 +100,6 @@
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
-      "count": 1
-    },
-    {
-      "name": "Interconnects (Nathan Lambert)",
-      "handle": "interconnects.ai",
-      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "count": 1
     },
     {
@@ -140,84 +134,6 @@
     }
   ],
   "remarks": [
-    {
-      "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-      "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform",
-      "content": "The first post in this series argued that AI agent governance hasn&#8217;t kept pace with deployment. The second laid out the five pillars of accountability, and what is required. The third walked through why network... The post Five Principles of an Accountable AI Agent Network: How to Evaluate Any",
-      "contentTranslation": "本系列的第一篇文章认为，AIAgent治理没有跟上部署的步伐。第二部分列出了问责制的五大支柱，以及需要做些什么。第三部分讲解了为什么要建立网络……《负责任的AIAgent网络的五项原则：如何评估",
-      "contentTranslationStatus": "translated",
-      "translation": "负责任的AIAgent网络的五大原则：如何评估任何治理平台",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "Agent",
-      "formalTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "Wed, 10 Jun 2026 20:19:08 +0000",
-      "date": "2026-06-11",
-      "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
-      "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "A field guide to the agents in your cluster",
-      "content": "You know every service in your cluster by name. You know which team owns each one, what it talks to, how it scales, where its logs go. The agents are a different story. That’s not... The post A field guide to the agents in your cluster appeared first on Tigera – Creator of Calico. ]]>",
-      "contentTranslation": "您可以通过名称了解集群中的每个服务。您知道哪个团队拥有每个团队，它谈论什么，它如何扩展，它的日志在哪里。经纪人是另一回事。这不是......帖子集群中特工的现场指南首先出现在Tigera – Calico的创建者。]] >",
-      "contentTranslationStatus": "translated",
-      "translation": "集群中客服代表的现场指南",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "Agent",
-      "formalTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "Wed, 10 Jun 2026 19:09:23 +0000",
-      "date": "2026-06-11",
-      "url": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
     {
       "id": "https://www.dataiku.com/stories/blog/enterprise-ai-transformation",
       "source": "blog",
@@ -492,28 +408,28 @@
       "replies": 0
     },
     {
-      "id": "https://tldr.tech/ai/2026-06-08",
+      "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
       "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "OpenAI政府股份🇺🇸，谷歌计算交易🚀，微软Scout发布 🤖",
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "text": "Welcome to the AGI era of AI governance",
+      "content": "It's a one-way door and we weren't ready for it.",
+      "contentTranslation": "这是一扇单向门，我们还没有准备好。",
+      "contentTranslationStatus": "translated",
+      "translation": "欢迎来到AI治理的AGI时代",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
-      "topic": "AI 基础设施",
+      "topic": "产品与创业",
       "formalTags": [
         {
-          "id": "opinion-model-infra",
-          "name": "模型基础设施观点",
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
           "group": "opinion"
         },
         {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
           "group": "track"
         },
         {
@@ -522,10 +438,10 @@
           "group": "source"
         }
       ],
-      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
-      "createdAt": "Mon, 08 Jun 2026 00:00:00 GMT",
-      "date": "2026-06-08",
-      "url": "https://tldr.tech/ai/2026-06-08",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Sun, 14 Jun 2026 17:43:42 GMT",
+      "date": "2026-06-15",
+      "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -604,6 +520,45 @@
       "createdAt": "Fri, 12 Jun 2026 00:00:00 GMT",
       "date": "2026-06-12",
       "url": "https://tldr.tech/ai/2026-06-12",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Why AI hasn’t replaced software engineers, and won’t",
+      "content": "Why AI hasn’t replaced software engineers, and won’t Arvind Narayanan and Sayash Kappor take on the question of AI job losses through the lens of a profession that is uniquely suited to AI disr",
+      "contentTranslation": "为什么AI还没有取代软件工程师， Arvind Narayanan和Sayash Kappor不会通过一个独特的专业来解决AI失业问题",
+      "contentTranslationStatus": "translated",
+      "translation": "为什么AI没有取代软件工程师，也不会",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "formalTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-06-14T23:54:11+00:00",
+      "date": "2026-06-15",
+      "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1830,27 +1785,11 @@
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 88: Unpacking DeepMind&apos;s Quest for SuperIntelligence with Demis Hassabis&apos; Biographer",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
-      "publishedAt": "Mon, 1 Jun 2026 12:46:52 +0000",
-      "excerpt": "Sebastian Mallaby spent three years and 30+ hours interviewing Demis Hassabis in the back of a British pub to write The Infinity Machine, and the conversation uses that reporting to surface the most underexplored figure in AI. Demis founded the original AI lab in 2010, won a Nobel Prize, runs models that consistently top the leaderboards, and yet remains so unrecognized that Sebastian's own publisher worried no one would buy a book with his face on the cover. The throughline is a paradox: Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists. He used to believe a single lab could carry the safety burden to AGI; he now sees safety as a collective action problem only governments can solve. He hedged DeepMind's research bets across every promising direction, and as a result missed the two most consumer-defining moments…"
+      "name": "No Priors",
+      "title": "Biohub: The Future of Biology is Open-Source with Co-Founders Mark Zuckerberg, Priscilla Chan, and Head of Science Alex Rives",
+      "url": "https://www.youtube.com/@NoPriorsPodcast",
+      "publishedAt": "2026-06-10T13:00:00.000Z",
+      "excerpt": ""
     }
   ]
 }
