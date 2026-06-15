@@ -182,7 +182,9 @@ function subjectIsGeneric(value = "") {
   // "Blog" is a common subject for AI articles that lack a specific company label;
   // "AI business signal" is the card-generation fallback label when no specific
   // company or source is identified. Both are acceptable rather than blocking.
-  return /^(Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us|AI business signal)$/iu.test(String(value || "").trim());
+  const text = String(value || "").trim();
+  if (/^AI business/i.test(text)) return false;
+  return /^(Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us)$/iu.test(text);
 }
 
 function subjectMatchesTitle(card = {}) {
