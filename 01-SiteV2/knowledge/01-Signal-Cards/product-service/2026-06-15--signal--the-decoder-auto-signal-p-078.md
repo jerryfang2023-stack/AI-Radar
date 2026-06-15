@@ -1,0 +1,70 @@
+---
+id: SIG-20260615-A12
+type: signal_card
+signal_type: product_service
+title: "The-Decoder 发布 AI 基础设施能力，切入采购下单自动化"
+date: 2026-06-15
+status: published
+source_title: "亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-15T07:56:15.039Z
+updated_at: 2026-06-15T07:56:15.039Z
+
+raw_refs: ["R-118"]
+pool_refs: ["P-078"]
+primary_raw:
+  raw_ref: R-118
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-118-亚马逊等六家公司据报引发政府对-anthropic-fable-模型的打压.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-118-亚马逊等六家公司据报引发政府对-anthropic-fable-模型的打压.json"
+  source_url: "https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model"
+  full_text_hash: "0cb9df764b675fb7"
+  source_level: A
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_product_or_service
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra", "track-ai-governance"]
+  function: ["function-engineering", "function-procurement-bidding"]
+  scenario: ["scenario-bidding-response", "scenario-agent-governance"]
+  customer: ["customer-developer-team", "customer-enterprise"]
+  evidence: ["evidence-product-launch"]
+  stage: []
+  region: []
+  source: ["source-business-media"]
+
+signal_owner: "The-Decoder"
+
+frontend:
+  displayTitle: "The-Decoder 发布 AI 基础设施能力，切入采购下单自动化"
+  sourceLinks:
+    - "https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model"
+---
+
+# The-Decoder 发布 AI 基础设施能力，切入采购下单自动化
+
+## 新闻事实
+
+亚马逊 CEO Andy Jassy 与其他五家科技公司高管向特朗普政府报告 Anthropic Fable 模型存在安全漏洞，尽管亚马逊是 Anthropic 最大投资者之一。数小时内，白宫通过出口管制令强制该模型下线。此举可能是一项合法的安全政策决定，但也显示出对不便企业的武力展示。
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+The-Decoder 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。
+
+## 可见原文片段
+
+亚马逊 CEO Andy Jassy 与其他五家科技公司高管向特朗普政府报告 Anthropic Fable 模型存在安全漏洞，尽管亚马逊是 Anthropic 最大投资者之一。数小时内，白宫通过出口管制令强制该模型下线。此举可能是一项合法的安全政策决定，但也显示出对不便企业的武力展示。
+
+## 证据边界
+
+没有具体客户或真实企业案例

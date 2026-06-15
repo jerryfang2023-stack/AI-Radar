@@ -1,0 +1,251 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-054",
+  "title": "AI inference costs dropped up to 10x on Nvidia's Blackwell — but hardware is only half the equation | VentureBeat",
+  "original_url": "https://venturebeat.com/infrastructure/ai-inference-costs-dropped-up-to-10x-on-nvidias-blackwell-but-hardware-is",
+  "canonical_url": "https://venturebeat.com/infrastructure/ai-inference-costs-dropped-up-to-10x-on-nvidias-blackwell-but-hardware-is",
+  "source_name": "keyword search / Exa",
+  "source_type": "news",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "author": "",
+  "published_at": "2026-02-12T16:00:00.000Z",
+  "collected_at": "2026-06-15T07:56:14.565Z",
+  "language": "mixed",
+  "full_text": "Lowering the cost of inference is typically a combination of hardware and software. A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token. [...] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models. Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as enterprises scale AI from pilot projects to millions of users. [...] The 4x to 10x cost reductions reported by inference providers required combining Blackwell hardware with two other elements: optimized software stacks and switching from proprietary to open-source models that now match frontier-level intelligence. Hardware improvements alone delivered 2x gains in some deployments, according to the analysis. Reaching larger cost reductions required adopting low-precision formats like NVFP4 and moving away from closed source APIs that charge premium rates. [...] source models running on [...] The format works [...] Software stack integration creates additional performance deltas. Harris said that Nvidia's co-design approach — where Blackwell hardware, NVL72 scale-up architecture, and software like Dynamo and TensorRT-LLM are optimized together — also makes a difference. Baseten's deployment for Sully.ai used this integrated stack, combining NVFP4, TensorRT-LLM and Dynamo to achieve the 10x cost reduction. Providers running alternative frameworks like vLLM may see lower gains. [...] While these case studies focus on Nvidia Blackwell deployments, enterprises have multiple paths to reducing inference costs. AMD's MI300 series, Google TPUs, and specialized inference accelerators from Groq and Cerebras offer alternative architectures. Cloud providers also continue optimizing their inference services. The question isn't whether Blackwell is the only option but whether the specific combination of hardware, software and models fits particular workload requirements. [...] The staged approach Latitude used provides a model for evaluation. The company first moved to Blackwell hardware and measured 2x improvement, then adopted NVFP4 format to reach 4x total reduction. Teams currently on Hopper or other infrastructure can test whether precision format changes and software optimization on existing hardware capture meaningful savings before committing to full infrastructure migrations. Running open source models on current infrastructure might deliver half the potential cost reduction without new hardware investments. / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=developer_ecosystem",
+  "clean_text": "Lowering the cost of inference is typically a combination of hardware and software. A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token. [...] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models. Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as enterprises scale AI from pilot projects to millions of users. [...] The 4x to 10x cost reductions reported by inference providers required combining Blackwell hardware with two other elements: optimized software stacks and switching from proprietary to open-source models that now match frontier-level intelligence. Hardware improvements alone delivered 2x gains in some deployments, according to the analysis. Reaching larger cost reductions required adopting low-precision formats like NVFP4 and moving away from closed source APIs that charge premium rates. [...] source models running on [...] The format works [...] Software stack integration creates additional performance deltas. Harris said that Nvidia's co-design approach — where Blackwell hardware, NVL72 scale-up architecture, and software like Dynamo and TensorRT-LLM are optimized together — also makes a difference. Baseten's deployment for Sully.ai used this integrated stack, combining NVFP4, TensorRT-LLM and Dynamo to achieve the 10x cost reduction. Providers running alternative frameworks like vLLM may see lower gains. [...] While these case studies focus on Nvidia Blackwell deployments, enterprises have multiple paths to reducing inference costs. AMD's MI300 series, Google TPUs, and specialized inference accelerators from Groq and Cerebras offer alternative architectures. Cloud providers also continue optimizing their inference services. The question isn't whether Blackwell is the only option but whether the specific combination of hardware, software and models fits particular workload requirements. [...] The staged approach Latitude used provides a model for evaluation. The company first moved to Blackwell hardware and measured 2x improvement, then adopted NVFP4 format to reach 4x total reduction. Teams currently on Hopper or other infrastructure can test whether precision format changes and software optimization on existing hardware capture meaningful savings before committing to full infrastructure migrations. Running open source models on current infrastructure might deliver half the potential cost reduction without new hardware investments. / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=developer_ecosystem",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-054-ai-inference-costs-dropped-up-to-10x-on-nvidia-s-blackwell-but-hardwar.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-054-ai-inference-costs-dropped-up-to-10x-on-nvidia-s-blackwell-but-hardwar.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "http-429-fallback-text",
+  "extraction_quality": "medium",
+  "extraction_method": "body-visible-text",
+  "readability_score": 8,
+  "extractor_diagnostics": {
+    "readability_score": 8,
+    "text_length": 88,
+    "paragraph_count": 3,
+    "sentence_count": 1,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 2779,
+  "fetch_error": "429 Too Many Requests",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "0b57c421476dc48e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "HTTP 429 fallback 可见文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "discovery_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "c48a99f34d025517",
+  "content_hash": "0b57c421476dc48e",
+  "full_text_hash": "0b57c421476dc48e",
+  "semantic_hash": "503168bbceb0ba1d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-02-12T16:00:00.000Z",
+  "last_seen_at": "2026-06-15T07:56:14.565Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Lowering the cost of inference is typically a combination of hardware and software. A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token. [...] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models. Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as ente",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Lowering the cost of inference is typically a combination of hardware and software.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as enterprises scale AI from pilot projects to millions of users.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "] The 4x to 10x cost reductions reported by inference providers required combining Blackwell hardware with two other elements: optimized software stacks and switching from proprietary to open-source models that now match frontier-level intelligence.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Exa",
+      "Google",
+      "Nvidia"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "10x",
+      "4x",
+      "2x",
+      "4",
+      "72",
+      "300"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Lowering the cost of inference is typically a combination of hardware and software.",
+      "] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models."
+    ],
+    "case_details": [
+      "Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as enterprises scale AI from pilot projects to millions of users."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# AI inference costs dropped up to 10x on Nvidia's Blackwell — but hardware is only half the equation | VentureBeat\n\n- raw_id: R-054\n- original_url: https://venturebeat.com/infrastructure/ai-inference-costs-dropped-up-to-10x-on-nvidias-blackwell-but-hardware-is\n- source_name: keyword search / Exa\n- collected_at: 2026-06-15T07:56:14.565Z\n\n## clean_text\n\nLowering the cost of inference is typically a combination of hardware and software. A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token. [...] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models. Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as enterprises scale AI from pilot projects to millions of users. [...] The 4x to 10x cost reductions reported by inference providers required combining Blackwell hardware with two other elements: optimized software stacks and switching from proprietary to open-source models that now match frontier-level intelligence. Hardware improvements alone delivered 2x gains in some deployments, according to the analysis. Reaching larger cost reductions required adopting low-precision formats like NVFP4 and moving away from closed source APIs that charge premium rates. [...] source models running on [...] The format works [...] Software stack integration creates additional performance deltas. Harris said that Nvidia's co-design approach — where Blackwell hardware, NVL72 scale-up architecture, and software like Dynamo and TensorRT-LLM are optimized together — also makes a difference. Baseten's deployment for Sully.ai used this integrated stack, combining NVFP4, TensorRT-LLM and Dynamo to achieve the 10x cost reduction. Providers running alternative frameworks like vLLM may see lower gains. [...] While these case studies focus on Nvidia Blackwell deployments, enterprises have multiple paths to reducing inference costs. AMD's MI300 series, Google TPUs, and specialized inference accelerators from Groq and Cerebras offer alternative architectures. Cloud providers also continue optimizing their inference services. The question isn't whether Blackwell is the only option but whether the specific combination of hardware, software and models fits particular workload requirements. [...] The staged approach Latitude used provides a model for evaluation. The company first moved to Blackwell hardware and measured 2x improvement, then adopted NVFP4 format to reach 4x total reduction. Teams currently on Hopper or other infrastructure can test whether precision format changes and software optimization on existing hardware capture meaningful savings before committing to full infrastructure migrations. Running open source models on current infrastructure might deliver half the potential cost reduction without new hardware investments. / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=developer_ecosystem\n\n## full_text\n\nLowering the cost of inference is typically a combination of hardware and software. A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token. [...] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models. Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as enterprises scale AI from pilot projects to millions of users. [...] The 4x to 10x cost reductions reported by inference providers required combining Blackwell hardware with two other elements: optimized software stacks and switching from proprietary to open-source models that now match frontier-level intelligence. Hardware improvements alone delivered 2x gains in some deployments, according to the analysis. Reaching larger cost reductions required adopting low-precision formats like NVFP4 and moving away from closed source APIs that charge premium rates. [...] source models running on [...] The format works [...] Software stack integration creates additional performance deltas. Harris said that Nvidia's co-design approach — where Blackwell hardware, NVL72 scale-up architecture, and software like Dynamo and TensorRT-LLM are optimized together — also makes a difference. Baseten's deployment for Sully.ai used this integrated stack, combining NVFP4, TensorRT-LLM and Dynamo to achieve the 10x cost reduction. Providers running alternative frameworks like vLLM may see lower gains. [...] While these case studies focus on Nvidia Blackwell deployments, enterprises have multiple paths to reducing inference costs. AMD's MI300 series, Google TPUs, and specialized inference accelerators from Groq and Cerebras offer alternative architectures. Cloud providers also continue optimizing their inference services. The question isn't whether Blackwell is the only option but whether the specific combination of hardware, software and models fits particular workload requirements. [...] The staged approach Latitude used provides a model for evaluation. The company first moved to Blackwell hardware and measured 2x improvement, then adopted NVFP4 format to reach 4x total reduction. Teams currently on Hopper or other infrastructure can test whether precision format changes and software optimization on existing hardware capture meaningful savings before committing to full infrastructure migrations. Running open source models on current infrastructure might deliver half the potential cost reduction without new hardware investments. / query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=developer_ecosystem\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 8\n- fetch_status: http-429-fallback-text\n- extraction_quality: medium\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Lowering the cost of inference is typically a combination of hardware and software. A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token. [...] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models. Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as ente\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Lowering the cost of inference is typically a combination of hardware and software.\n3. [number / daily_observation, heatmap, case, trend / high] A new analysis released Thursday by Nvidia details how four leading inference providers are reporting 4x to 10x reductions in cost per token.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] ] The dramatic cost reductions were achieved using Nvidia's Blackwell platform with open-source models.\n5. [case_detail / daily_observation, heatmap, case / high] Production deployment data from Baseten, DeepInfra, Fireworks AI and Together AI shows significant cost improvements across healthcare, gaming, agentic chat, and customer service as enterprises scale AI from pilot projects to millions of users.\n6. [number / daily_observation, heatmap, case, trend / high] ] The 4x to 10x cost reductions reported by inference providers required combining Blackwell hardware with two other elements: optimized software stacks and switching from proprietary to open-source models that now match frontier-level intelligence.\n"
+}

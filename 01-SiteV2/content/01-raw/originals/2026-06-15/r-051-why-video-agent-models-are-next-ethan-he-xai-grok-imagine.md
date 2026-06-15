@@ -1,0 +1,699 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-051
+title: "Why Video Agent models are next — Ethan He, xAI Grok Imagine"
+original_url: "https://www.latent.space/p/video-agents"
+canonical_url: "https://latent.space/p/video-agents"
+source_name: "Latent Space"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-15T07:56:14.547Z
+language: mixed
+full_text_hash: dc82ed18dd39b330
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-051-why-video-agent-models-are-next-ethan-he-xai-grok-imagine.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-051-why-video-agent-models-are-next-ethan-he-xai-grok-imagine.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":59999,"paragraph_count":340,"sentence_count":666,"boilerplate_hits":1,"symbol_ratio":0.0085,"method":"article"}
+has_full_text: true
+content_length: 59999
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dc82ed18dd39b330","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 05cf0ed76c27fe98
+content_hash: a62c5d7b6f62ea09
+semantic_hash: 64cfc74f8c203feb
+duplicate_of: ""
+first_seen_at: "2026-06-15T07:56:14.547Z"
+last_seen_at: 2026-06-15T07:56:14.547Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Latent Space","OpenAI","Nvidia"],"products":["Agent","agent","agents","Agents"],"people":[],"industries":["法律 / 法务","医疗","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["3 m","16","1","0","00","43","25","3 M"],"quotes":["Oh, very cool. We have Paperclip. Present then.","Well, I should be trying everything, and if I’m not, then I’m not doing my job well."]}
+evidence_seed: {"company_actions":["We’re announcing AIEWF speakers this week! Take the AI Engineering Survey!Today’s guest Ethan first joined us for the LS Paper Club as the lead on NVIDIA Cosmos World Model, but then joined xAI and built Grok Imagine in 3 months:He comes back on Latent Space with some nuclear hot takes: that Video Models primarily get their intelligence from LLMs, not from training on video data, and that the next frontier for truly interactive, realtime, long-horizon world models is to work on LLMs (perhaps Int","Why Video Agent models are next — Ethan He, xAI Grok Imagine Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated.","For the first time, we do a deep dive with the guy who led it!"],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast Why Video Agent models are next — Ethan He, xAI Grok Imagine 16 1× 0:00 Current time: 0:00 / Total time: -1:43:25 -1:43:25 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"We’re announcing AIEWF speakers this week! Take the AI Engineering Survey!Today’s guest Ethan first joined us for the LS Paper Club as the lead on NVIDIA Cosmos World Model, but then joined xAI and built Grok Imagine in 3 months:He comes back on Latent Space with some nuclear hot takes: that Video Models primarily get their intelligence from LLMs, not from training on video data, and that the next frontier for truly interactive, realtime, long-horizon world models is to work on LLMs (perhaps Int","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Why Video Agent models are next — Ethan He, xAI Grok Imagine 16 1× 0:00 Current time: 0:00 / Total time: -1:43:25 -1:43:25 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Why Video Agent models are next — Ethan He, xAI Grok Imagine Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For the first time, we do a deep dive with the guy who led it!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Jun 01, 2026 16 Share Transcript We’re announcing AIEWF speakers this week!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Take the AI Engineering Survey !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Why Video Agent models are next — Ethan He, xAI Grok Imagine
+
+## clean_text
+
+Latent Space: The AI Engineer Podcast
+Why Video Agent models are next — Ethan He, xAI Grok Imagine
+16
+1×
+0:00
+Current time: 0:00 / Total time: -1:43:25
+-1:43:25
+Audio playback is not supported on your browser. Please upgrade.
+Why Video Agent models are next — Ethan He, xAI Grok Imagine
+Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated. For the first time, we do a deep dive with the guy who led it!
+Jun 01, 2026
+16
+Share
+Transcript
+We’re announcing AIEWF speakers this week! Take the AI Engineering Survey !
+Today’s guest Ethan first joined us for the LS Paper Club as the lead on NVIDIA Cosmos World Model , but then joined xAI and built Grok Imagine in 3 months:
+Ethan He @EthanHe_42
+Thrilled to share our new Grok Imagine release 🚀 It is the highest quality, fastest, and most cost-effective video generation model yet. Comes with 720P, video editing and better audio! We listened closely to your feedback and moved fast.
+Just six months ago, we had almost
+xAI @xai
+Understanding requires imagining. Grok Imagine lets you bring what’s in your brain to life, and now it’s available via the world’s fastest, and most powerful video API: https://t.co/tqQwQVgCEI
+Try it out and let your Imagination run wild.
+5:43 AM · Jan 29, 2026 · 116K Views
+127 Replies · 107 Reposts · 1.35K Likes
+He comes back on Latent Space with some nuclear hot takes: that Video Models primarily get their intelligence from LLMs , not from training on video data, and that the next frontier for truly interactive, realtime, long-horizon world models is to work on LLMs (perhaps Interaction Models as well…)
+Put it this way: In the near term, the next Sora won’t be a better video model, but a video agent .
+Generative Media may more closely follow the evolution of AI coding which went from focusing on one-shot output performance and cost, to multiturn reasoning and planning models for agents and systems that can plan, edit, test, debug, and submit PRs.
+At a certain point, coding models got so good that the only significant next step to improve performance was handling the orchestration of these models.
+Now as the performance of video models increases significantly across realism, consistency, & prompt adherence while becoming more cost efficient, the next evolution of video generation may also be systems that can plan, generate, edit, critique, and iterate across an entire creative task.
+X Freeze @XFreeze
+Grok Imagine Agent Mode (Beta) just went live on Grok web
+It’s a full creative agent working on one infinite open canvas
+Grok Agent plans → generates → edits → iterates everything automatically in the same workspace
+Tell it what you want and watch it plan, generate, edit,
+5:42 AM · Apr 30, 2026 · 920K Views
+681 Replies · 1.15K Reposts · 3.97K Likes
+In this episode, Ethan joins swyx and Vibhu to unpack what it actually takes to build frontier image and video systems : data, VAEs, diffusion transformers, audio-video alignment, inference speedups, and the hidden cost of storing and moving massive video datasets. From building NVIDIA’s Cosmos world model to joining xAI as Grok Imagine was being built from zero to one, Ethan He has been at the center of some of the most important work in video generation, multimodal models, and real-time world models.
+We go deep on Grok Imagine , how a small xAI team shipped its first multimodal video model in three months , why iteration speed matters more than almost anything in model development, and why many of the biggest gains come from fixing tiny bugs in data and training pipelines.
+Flipbook: The future of Videomaxxing
+Video agents are almost a sure bet to be the trend in the coming year. We end with a glance at what’s beyond video agents:
+Flipbook caused a minor sensation this year when it was released, but most treat it as a fun demo. Ethan takes it very seriously — with the speed and cost of inference coming down every year, the future of custom video JIT UI is closer than you think. We talked about why videogen models may become the front end of AI, how generative UI could replace traditional HTML/CSS , why world models need to be real-time, interactive, and long-horizon, and why the future of video generation may depend more on language models and agents than on diffusion alone.
+We discuss:
+Why fast iteration mattered more than meetings
+Why small training bugs can drive huge model quality gains
+Why coding models may make compute the bottleneck again
+How image and video models are trained with synthetic captions
+The role of VAEs and latent space in frontier video models
+Why image models are the foundation for video models
+The tradeoff between temporal compression and real-time interactivity
+Flipbook , Neural OS , and the future of generative UI
+Why future interfaces may go from user intent to pixels
+The hidden cost of training video models: storage, egress, and GPU hours
+How step distillation and consistency models (like OpenAI sCM ) makes video inference orders of magnitude faster
+Grok Imagine 0.9 and large-scale audio-video generation
+Why audio-video alignment is harder than text-video alignment
+Ethan’s definition of world models
+Reference-to-video, video extension, and long-context video generation
+Why xAI’s research communication undersells Grok Imagine
+How xAI culture shaped the speed of development
+AI watermarking, SynthID, and detecting generated media
+Why prompt rewriting matters for video models
+Grok Imagine Agent and the rise of video agents
+Why language models may unlock better video generation
+Robotics, physical AI, and embodied world models
+Why Ethan left xAI and shifted focus toward LLMs
+Self-managed context, memory, and the next frontier for language models
+Ethan He
+LinkedIn: https://www.linkedin.com/in/ethanhe42
+X: https://x.com/EthanHe_42
+Timestamps
+00:00:00 Introduction
+00:01:25 From NVIDIA Cosmos to xAI
+00:03:24 Building Grok Imagine from Zero to One
+00:10:07 How Image and Video Models Are Trained
+00:18:53 Video Compression, VAEs, and Real-Time Tradeoffs
+00:22:10 Generative UI, Flipbook, and Neural OS
+00:32:10 The Cost of Training Large Video Models
+00:37:04 Distillation, GANs, and Fast Video Inference
+00:41:21 Audio-Video Generation and Grok Imagine 0.9
+00:48:34 What Makes a World Model?
+00:55:51 Reference Videos, Long Context, and Video Memory
+01:00:11 xAI Culture, Research, and First-Principles Building
+01:09:45 AI Safety, Watermarking, and Prompt Rewriting
+01:13:10 Video Agents and AI-Assisted Creation
+01:27:32 Why Language Models Unlock Better Video
+01:31:15 Robotics, Physical AI, and Embodied World Models
+01:32:38 Why Ethan Left xAI
+01:34:16 Self-Managed Context and the Future of LLMs
+01:38:43 Ethan’s Career Path and Closing Thoughts
+Transcript
+Introduction: Ethan He, Latent Space, and the Path to xAI
+Swyx [00:00:00]: We’re here in the studio with Ethan He, most recently of xAI. Welcome.
+Ethan [00:00:10]: Thank you. Glad being here.
+Swyx [00:00:11]: We’re also here with Vibhu. you were first coming to us or joining the latent space world because you were working on Kosmos at NVIDIA, and you did a paper. We loved it. you presented it as well, so thank you for doing that.
+Ethan [00:00:23]: I’ve actually, I also presented the MoEs twice at latent space.
+Swyx [00:00:29]: How did you actually hear about us? Did we reach out to you? Is that how it worked?
+Ethan [00:00:33]: No, actually, I-- the community. Like I realized, oh, there is this online community that people talk about AI and also learn from each other through papers every week through the Paperclip. It’s very nice.
+Ethan [00:00:49]: I learned a lot.
+Swyx [00:00:49]: I think three years stop. We haven’t stopped even on Christmas and New Years. many weeks I want to stop but it keeps going.
+Vibhu [00:00:58]: No, that was good. I think you had posted that you worked on a paper, and I was “Oh, very cool. We have Paperclip. Present then.”
+Vibhu [00:01:04]: But I might have reached out to you after.
+Swyx [00:01:05]: you-- because it’s an amateur club, right?
+Swyx [00:01:08]: so it’s very unusual and but we have sometimes paper authors come by and actually explain the paper. Today we just did, the poolside paper, which was apparently very good.
+Vibhu [00:01:18]: Came out yesterday.
+Vibhu [00:01:19]: pretty interesting, right? Fully open. They talk about everything, systems. So it’s a good one. We’ll, we’ll recommend people to read it.
+Swyx [00:01:25]: Bring us up to speed on your transition to xAI, ‘cause I actually don’t even know when you joined. just like tell the, tell the story about the sort of transition.
+From NVIDIA Cosmos to xAI: Scaling Video and World Models
+Ethan [00:01:34]: Before xAI, I was working on Kosmos world model as in-- at NVIDIA. So Kosmos is, it’s a giant video foundation models that can-- that aims to simulate the world and for-- it serves as a foundation of-- for all of the roboticists to build on top of. There, once I built the Kosmos one, I realized as this thing also has a scaling law similar to language model, we need to scale up the video models further. that’s, that’s why I realized I need to move to somewhere with much more compute resources. That’s how I
+Swyx [00:02:13]: Than NVIDIA?
+Vibhu [00:02:14]: The GPU rich came themselves.
+Vibhu [00:02:19]: And timeline-wise, when was Kosmo? It was pretty early, right? It was open world model, open paper, everything.
+Ethan [00:02:25]: It was end of twenty-four.
+Vibhu [00:02:28]: End of twenty-four.
+Ethan [00:02:30]: Then at mid twenty-five, I moved to xAI. At that time-- I joined about the time when xAI was about to build video models and in multi-model models. There were no infra, no data, and no model, and it just-- as a few engineers, we built it in three months and released the first model, Grok Imagine zero point nine.
+Ethan [00:02:55]: And since then, I keep working on video models and move more from training and to post-training of the video models. For example, like a reference to videos, kind of like the cameo feature and, video extensions. And, before I left, I worked on a world model, leading a small team to focus on the real-time long horizon video generation.
+Building Grok Imagine From Scratch in Three Months
+Swyx [00:03:24]: Can you give like a rough roadmap of okay, you’re on a brand-new team. Grok previously was only text, or they partnered with BFL for their image gen stuff. What do you-- what are the building blocks, right? You have compute, data you can procure somewhere. Like just what are like the sequence of things that people should think about when you’re setting up a new team?
+Vibhu [00:03:43]: actually even deeper, not just data you can procure. You guys had to go through getting the data too, right? So you shipped it pretty fast, but yeah
+Swyx [00:03:51]: three months is like
+Vibhu [00:03:52]: From everything
+Swyx [00:03:52]: actually like very surprisingly fast.
+Ethan [00:03:55]: One thing I say like thanks to my experience at NVIDIA, ‘cause first time when we were building Kosmos together, we built it, for about a year. So this is like the second time I do it. Roughly have an idea, what to do. I say the most important thing is the talent. Everyone were very strong and clever, very close with each other towards a common goal. So that speed up things a lot. So you reduce the communication bandwidth among people, and everyone can work towards the same goal. It’s, it’s like every day there’s not that much meetings on the calendar, like maybe like a, like a sync a day, and after that it’s, it’s just all building. It was pretty fun at that time.
+Ethan [00:04:47]: And another thing is that xAI has very strong foundations of like data inference, model inference, and the supporting there can help the model develop a lot. When I look at, training models, I don’t so actually the top important thing is like how many, how many iterations can you do, per day? and the more iteration can you do, you can, you can train the model much faster. So if you have very strong infra and you have a lot of compute, you can, you can train these models in very short period of time. That can give you a much larger buffer to, for errors, and it also gives you the opportunity to spot more bugs.
+Iteration Speed, Compute, and Debugging Model Pipelines
+Swyx [00:05:46]: What is an iteration? Is it like a few hundred steps or what are you
+Ethan [00:05:50]: Let’s say just the train-training the model, like from acquire new data and maybe design new algorithms and train a new model, maybe at smaller scale or
+Swyx [00:06:01]: So cycle time for like any hyperparam that you’re searching.
+Ethan [00:06:04]: Cycle time and tune to like eval this model. Is this model better than my previous iteration?
+Ethan [00:06:11]: So
+Swyx [00:06:11]: So it’s like before you, someone had already set this up that you can iterate very quickly.
+Ethan [00:06:15]: I think the foundation there is extremely good forDeveloping and research models.
+Ethan [00:06:23]: And often I find is it-- this is kind of boring, but like a lot of the improvements does not come from new algorithms. It comes from finding small bugs here and there in the data pipeline, in the, in the model training pipeline. Those give, those give the biggest boost to the model quality.
+Vibhu [00:06:46]: It’s interesting, right? So you say it’s like small team, less communication bandwidth, but also a lot of quality is like find little bugs. It seems counterintuitive, right? You have a lot of people, you can iron out more of those, but it’s interesting to see the other side, right?
+Swyx [00:07:00]: I also wonder, have you-- do you try using LLMs to look for bugs? I don’t know.
+Ethan [00:07:05]: I remember at that time it was mid two thousand and twenty-five, so it’s the coding model wasn’t quite there yet. I remem- I remember like December two thousand and twenty-five, it was extremely good. Yeah, I’ve been, I’ve been using it at that time. It’s, it’s helpful. sometimes it produce codes that are kind of difficult to maintain, even though like the first time it built something extremely fast. But it gave the, like a spaghetti code, thousands of lines that I couldn’t maintain, and the LLM itself couldn’t figure out what’s, what’s wrong and how to improve on top of it. But now I find it much better. Yeah, I want to bring up another point here is now coding models are much more efficient and can help us implement stuff much faster. Compute might become a bottleneck again because previously, like if you want to train a new model, say you want to generate new synthetic data and then or write a new algorithm, it might take a few weeks. And during that period of time, you don’t-- you might not have experiments to run. But now you can build that thing within a few hours, then you can immediately train a model.
+Ethan [00:08:24]: Now you have to have enough compute to try all of the ideas. So compute might be the bottleneck of iterating speed again.
+Swyx [00:08:36]: yeah, I actually, honestly, I think it’s like kind of a stressful job because you’re “Well, I should be trying everything, and if I’m not, then I’m not doing my job well.”
+Vibhu [00:08:48]: there’s also the stress of you’re eating thousands of GPUs per hour, which is very expensive and, compute can go to other researchers.
+Swyx [00:08:56]: You got the daddy Elon to
+Vibhu [00:08:57]: You got daddy Elon.
+Ethan [00:08:59]: It was
+Vibhu [00:09:00]: But there’s still finite amount of compute, like you want to use it, you want to use it well, you want more of it.
+Ethan [00:09:06]: That was quite stressful indeed. Yeah, I think one thing is the-- with coding models now, like a lot of these jobs can be automated, which is much better. A second, it’s a, it’s a marathon, so you got to maintain good health and, a regular schedule.
+Vibhu [00:09:28]: It’s, it’s hard to hear that when you shift from zero to nothing in two months.
+Swyx [00:09:32]: and, I think obviously the culture at xAI is very famously, people work very hard. one thing I did want to dive into, in our-- in the notes that you, that you sent ahead of time, you had specific comments about the cost of Video Gen training. presumably this is on the Colossus-1, right? the two hundred megawatt cluster. Any whatever you want to just share on that.
+Vibhu [00:09:54]: I think there’s, there’s three things we’re talking about, right? So there’s Video Gen, there’s also the Image Gen model that you put out. Do you want to like complete the, okay, so zero to one, you have a few months. Just what are the stages of create Image Gen model?
+Swyx [00:10:06]: Oh, yeah, maybe I got distracted.
+How Image and Video Models Are Trained: Synthetic Captions, Tokenizers, and VAEs
+Vibhu [00:10:07]: Sorry. and then, from there’s Video Gen, there’s Audio Gen. Would love to get into those next. But what is that first few months like? So small team, a lot of bugs, iterations, but what does it look like? Do we take something off the shelf? Do we just get data compute? What’s, what’s the few months like? How do you go to state-art Image Gen model? How do you just start?
+Ethan [00:10:28]: I cannot comment specifically how xAI did, but it’s, it’s a quite standard process. I can draw some, examples from Cosmos. So mainly it’s building a video model, you actually need to build a image model first. And building these two models, the data you need is a hundred percent synthetic pair of language and image or language to video. Because on the, on the internet, actually, the videos don’t naturally associate with text. So you can say, oh, like on YouTube, you have the title and you have the description and the comments
+Swyx [00:11:11]: Title
+Ethan [00:11:11]: of a video, but usually they’re not relevant to the video itself. And say maybe like the video is a natural scene of mountains or something, and the title is, I’m so happy today.
+Ethan [00:11:26]: So they have they have no correlation at all. So the first step is to, you have to generate synthetic pair of language w
+
+## full_text
+
+Latent Space: The AI Engineer Podcast
+Why Video Agent models are next — Ethan He, xAI Grok Imagine
+16
+1×
+0:00
+Current time: 0:00 / Total time: -1:43:25
+-1:43:25
+Audio playback is not supported on your browser. Please upgrade.
+Why Video Agent models are next — Ethan He, xAI Grok Imagine
+Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated. For the first time, we do a deep dive with the guy who led it!
+Jun 01, 2026
+16
+Share
+Transcript
+We’re announcing AIEWF speakers this week! Take the AI Engineering Survey !
+Today’s guest Ethan first joined us for the LS Paper Club as the lead on NVIDIA Cosmos World Model , but then joined xAI and built Grok Imagine in 3 months:
+Ethan He @EthanHe_42
+Thrilled to share our new Grok Imagine release 🚀 It is the highest quality, fastest, and most cost-effective video generation model yet. Comes with 720P, video editing and better audio! We listened closely to your feedback and moved fast.
+Just six months ago, we had almost
+xAI @xai
+Understanding requires imagining. Grok Imagine lets you bring what’s in your brain to life, and now it’s available via the world’s fastest, and most powerful video API: https://t.co/tqQwQVgCEI
+Try it out and let your Imagination run wild.
+5:43 AM · Jan 29, 2026 · 116K Views
+127 Replies · 107 Reposts · 1.35K Likes
+He comes back on Latent Space with some nuclear hot takes: that Video Models primarily get their intelligence from LLMs , not from training on video data, and that the next frontier for truly interactive, realtime, long-horizon world models is to work on LLMs (perhaps Interaction Models as well…)
+Put it this way: In the near term, the next Sora won’t be a better video model, but a video agent .
+Generative Media may more closely follow the evolution of AI coding which went from focusing on one-shot output performance and cost, to multiturn reasoning and planning models for agents and systems that can plan, edit, test, debug, and submit PRs.
+At a certain point, coding models got so good that the only significant next step to improve performance was handling the orchestration of these models.
+Now as the performance of video models increases significantly across realism, consistency, & prompt adherence while becoming more cost efficient, the next evolution of video generation may also be systems that can plan, generate, edit, critique, and iterate across an entire creative task.
+X Freeze @XFreeze
+Grok Imagine Agent Mode (Beta) just went live on Grok web
+It’s a full creative agent working on one infinite open canvas
+Grok Agent plans → generates → edits → iterates everything automatically in the same workspace
+Tell it what you want and watch it plan, generate, edit,
+5:42 AM · Apr 30, 2026 · 920K Views
+681 Replies · 1.15K Reposts · 3.97K Likes
+In this episode, Ethan joins swyx and Vibhu to unpack what it actually takes to build frontier image and video systems : data, VAEs, diffusion transformers, audio-video alignment, inference speedups, and the hidden cost of storing and moving massive video datasets. From building NVIDIA’s Cosmos world model to joining xAI as Grok Imagine was being built from zero to one, Ethan He has been at the center of some of the most important work in video generation, multimodal models, and real-time world models.
+We go deep on Grok Imagine , how a small xAI team shipped its first multimodal video model in three months , why iteration speed matters more than almost anything in model development, and why many of the biggest gains come from fixing tiny bugs in data and training pipelines.
+Flipbook: The future of Videomaxxing
+Video agents are almost a sure bet to be the trend in the coming year. We end with a glance at what’s beyond video agents:
+Flipbook caused a minor sensation this year when it was released, but most treat it as a fun demo. Ethan takes it very seriously — with the speed and cost of inference coming down every year, the future of custom video JIT UI is closer than you think. We talked about why videogen models may become the front end of AI, how generative UI could replace traditional HTML/CSS , why world models need to be real-time, interactive, and long-horizon, and why the future of video generation may depend more on language models and agents than on diffusion alone.
+We discuss:
+Why fast iteration mattered more than meetings
+Why small training bugs can drive huge model quality gains
+Why coding models may make compute the bottleneck again
+How image and video models are trained with synthetic captions
+The role of VAEs and latent space in frontier video models
+Why image models are the foundation for video models
+The tradeoff between temporal compression and real-time interactivity
+Flipbook , Neural OS , and the future of generative UI
+Why future interfaces may go from user intent to pixels
+The hidden cost of training video models: storage, egress, and GPU hours
+How step distillation and consistency models (like OpenAI sCM ) makes video inference orders of magnitude faster
+Grok Imagine 0.9 and large-scale audio-video generation
+Why audio-video alignment is harder than text-video alignment
+Ethan’s definition of world models
+Reference-to-video, video extension, and long-context video generation
+Why xAI’s research communication undersells Grok Imagine
+How xAI culture shaped the speed of development
+AI watermarking, SynthID, and detecting generated media
+Why prompt rewriting matters for video models
+Grok Imagine Agent and the rise of video agents
+Why language models may unlock better video generation
+Robotics, physical AI, and embodied world models
+Why Ethan left xAI and shifted focus toward LLMs
+Self-managed context, memory, and the next frontier for language models
+Ethan He
+LinkedIn: https://www.linkedin.com/in/ethanhe42
+X: https://x.com/EthanHe_42
+Timestamps
+00:00:00 Introduction
+00:01:25 From NVIDIA Cosmos to xAI
+00:03:24 Building Grok Imagine from Zero to One
+00:10:07 How Image and Video Models Are Trained
+00:18:53 Video Compression, VAEs, and Real-Time Tradeoffs
+00:22:10 Generative UI, Flipbook, and Neural OS
+00:32:10 The Cost of Training Large Video Models
+00:37:04 Distillation, GANs, and Fast Video Inference
+00:41:21 Audio-Video Generation and Grok Imagine 0.9
+00:48:34 What Makes a World Model?
+00:55:51 Reference Videos, Long Context, and Video Memory
+01:00:11 xAI Culture, Research, and First-Principles Building
+01:09:45 AI Safety, Watermarking, and Prompt Rewriting
+01:13:10 Video Agents and AI-Assisted Creation
+01:27:32 Why Language Models Unlock Better Video
+01:31:15 Robotics, Physical AI, and Embodied World Models
+01:32:38 Why Ethan Left xAI
+01:34:16 Self-Managed Context and the Future of LLMs
+01:38:43 Ethan’s Career Path and Closing Thoughts
+Transcript
+Introduction: Ethan He, Latent Space, and the Path to xAI
+Swyx [00:00:00]: We’re here in the studio with Ethan He, most recently of xAI. Welcome.
+Ethan [00:00:10]: Thank you. Glad being here.
+Swyx [00:00:11]: We’re also here with Vibhu. you were first coming to us or joining the latent space world because you were working on Kosmos at NVIDIA, and you did a paper. We loved it. you presented it as well, so thank you for doing that.
+Ethan [00:00:23]: I’ve actually, I also presented the MoEs twice at latent space.
+Swyx [00:00:29]: How did you actually hear about us? Did we reach out to you? Is that how it worked?
+Ethan [00:00:33]: No, actually, I-- the community. Like I realized, oh, there is this online community that people talk about AI and also learn from each other through papers every week through the Paperclip. It’s very nice.
+Ethan [00:00:49]: I learned a lot.
+Swyx [00:00:49]: I think three years stop. We haven’t stopped even on Christmas and New Years. many weeks I want to stop but it keeps going.
+Vibhu [00:00:58]: No, that was good. I think you had posted that you worked on a paper, and I was “Oh, very cool. We have Paperclip. Present then.”
+Vibhu [00:01:04]: But I might have reached out to you after.
+Swyx [00:01:05]: you-- because it’s an amateur club, right?
+Swyx [00:01:08]: so it’s very unusual and but we have sometimes paper authors come by and actually explain the paper. Today we just did, the poolside paper, which was apparently very good.
+Vibhu [00:01:18]: Came out yesterday.
+Vibhu [00:01:19]: pretty interesting, right? Fully open. They talk about everything, systems. So it’s a good one. We’ll, we’ll recommend people to read it.
+Swyx [00:01:25]: Bring us up to speed on your transition to xAI, ‘cause I actually don’t even know when you joined. just like tell the, tell the story about the sort of transition.
+From NVIDIA Cosmos to xAI: Scaling Video and World Models
+Ethan [00:01:34]: Before xAI, I was working on Kosmos world model as in-- at NVIDIA. So Kosmos is, it’s a giant video foundation models that can-- that aims to simulate the world and for-- it serves as a foundation of-- for all of the roboticists to build on top of. There, once I built the Kosmos one, I realized as this thing also has a scaling law similar to language model, we need to scale up the video models further. that’s, that’s why I realized I need to move to somewhere with much more compute resources. That’s how I
+Swyx [00:02:13]: Than NVIDIA?
+Vibhu [00:02:14]: The GPU rich came themselves.
+Vibhu [00:02:19]: And timeline-wise, when was Kosmo? It was pretty early, right? It was open world model, open paper, everything.
+Ethan [00:02:25]: It was end of twenty-four.
+Vibhu [00:02:28]: End of twenty-four.
+Ethan [00:02:30]: Then at mid twenty-five, I moved to xAI. At that time-- I joined about the time when xAI was about to build video models and in multi-model models. There were no infra, no data, and no model, and it just-- as a few engineers, we built it in three months and released the first model, Grok Imagine zero point nine.
+Ethan [00:02:55]: And since then, I keep working on video models and move more from training and to post-training of the video models. For example, like a reference to videos, kind of like the cameo feature and, video extensions. And, before I left, I worked on a world model, leading a small team to focus on the real-time long horizon video generation.
+Building Grok Imagine From Scratch in Three Months
+Swyx [00:03:24]: Can you give like a rough roadmap of okay, you’re on a brand-new team. Grok previously was only text, or they partnered with BFL for their image gen stuff. What do you-- what are the building blocks, right? You have compute, data you can procure somewhere. Like just what are like the sequence of things that people should think about when you’re setting up a new team?
+Vibhu [00:03:43]: actually even deeper, not just data you can procure. You guys had to go through getting the data too, right? So you shipped it pretty fast, but yeah
+Swyx [00:03:51]: three months is like
+Vibhu [00:03:52]: From everything
+Swyx [00:03:52]: actually like very surprisingly fast.
+Ethan [00:03:55]: One thing I say like thanks to my experience at NVIDIA, ‘cause first time when we were building Kosmos together, we built it, for about a year. So this is like the second time I do it. Roughly have an idea, what to do. I say the most important thing is the talent. Everyone were very strong and clever, very close with each other towards a common goal. So that speed up things a lot. So you reduce the communication bandwidth among people, and everyone can work towards the same goal. It’s, it’s like every day there’s not that much meetings on the calendar, like maybe like a, like a sync a day, and after that it’s, it’s just all building. It was pretty fun at that time.
+Ethan [00:04:47]: And another thing is that xAI has very strong foundations of like data inference, model inference, and the supporting there can help the model develop a lot. When I look at, training models, I don’t so actually the top important thing is like how many, how many iterations can you do, per day? and the more iteration can you do, you can, you can train the model much faster. So if you have very strong infra and you have a lot of compute, you can, you can train these models in very short period of time. That can give you a much larger buffer to, for errors, and it also gives you the opportunity to spot more bugs.
+Iteration Speed, Compute, and Debugging Model Pipelines
+Swyx [00:05:46]: What is an iteration? Is it like a few hundred steps or what are you
+Ethan [00:05:50]: Let’s say just the train-training the model, like from acquire new data and maybe design new algorithms and train a new model, maybe at smaller scale or
+Swyx [00:06:01]: So cycle time for like any hyperparam that you’re searching.
+Ethan [00:06:04]: Cycle time and tune to like eval this model. Is this model better than my previous iteration?
+Ethan [00:06:11]: So
+Swyx [00:06:11]: So it’s like before you, someone had already set this up that you can iterate very quickly.
+Ethan [00:06:15]: I think the foundation there is extremely good forDeveloping and research models.
+Ethan [00:06:23]: And often I find is it-- this is kind of boring, but like a lot of the improvements does not come from new algorithms. It comes from finding small bugs here and there in the data pipeline, in the, in the model training pipeline. Those give, those give the biggest boost to the model quality.
+Vibhu [00:06:46]: It’s interesting, right? So you say it’s like small team, less communication bandwidth, but also a lot of quality is like find little bugs. It seems counterintuitive, right? You have a lot of people, you can iron out more of those, but it’s interesting to see the other side, right?
+Swyx [00:07:00]: I also wonder, have you-- do you try using LLMs to look for bugs? I don’t know.
+Ethan [00:07:05]: I remember at that time it was mid two thousand and twenty-five, so it’s the coding model wasn’t quite there yet. I remem- I remember like December two thousand and twenty-five, it was extremely good. Yeah, I’ve been, I’ve been using it at that time. It’s, it’s helpful. sometimes it produce codes that are kind of difficult to maintain, even though like the first time it built something extremely fast. But it gave the, like a spaghetti code, thousands of lines that I couldn’t maintain, and the LLM itself couldn’t figure out what’s, what’s wrong and how to improve on top of it. But now I find it much better. Yeah, I want to bring up another point here is now coding models are much more efficient and can help us implement stuff much faster. Compute might become a bottleneck again because previously, like if you want to train a new model, say you want to generate new synthetic data and then or write a new algorithm, it might take a few weeks. And during that period of time, you don’t-- you might not have experiments to run. But now you can build that thing within a few hours, then you can immediately train a model.
+Ethan [00:08:24]: Now you have to have enough compute to try all of the ideas. So compute might be the bottleneck of iterating speed again.
+Swyx [00:08:36]: yeah, I actually, honestly, I think it’s like kind of a stressful job because you’re “Well, I should be trying everything, and if I’m not, then I’m not doing my job well.”
+Vibhu [00:08:48]: there’s also the stress of you’re eating thousands of GPUs per hour, which is very expensive and, compute can go to other researchers.
+Swyx [00:08:56]: You got the daddy Elon to
+Vibhu [00:08:57]: You got daddy Elon.
+Ethan [00:08:59]: It was
+Vibhu [00:09:00]: But there’s still finite amount of compute, like you want to use it, you want to use it well, you want more of it.
+Ethan [00:09:06]: That was quite stressful indeed. Yeah, I think one thing is the-- with coding models now, like a lot of these jobs can be automated, which is much better. A second, it’s a, it’s a marathon, so you got to maintain good health and, a regular schedule.
+Vibhu [00:09:28]: It’s, it’s hard to hear that when you shift from zero to nothing in two months.
+Swyx [00:09:32]: and, I think obviously the culture at xAI is very famously, people work very hard. one thing I did want to dive into, in our-- in the notes that you, that you sent ahead of time, you had specific comments about the cost of Video Gen training. presumably this is on the Colossus-1, right? the two hundred megawatt cluster. Any whatever you want to just share on that.
+Vibhu [00:09:54]: I think there’s, there’s three things we’re talking about, right? So there’s Video Gen, there’s also the Image Gen model that you put out. Do you want to like complete the, okay, so zero to one, you have a few months. Just what are the stages of create Image Gen model?
+Swyx [00:10:06]: Oh, yeah, maybe I got distracted.
+How Image and Video Models Are Trained: Synthetic Captions, Tokenizers, and VAEs
+Vibhu [00:10:07]: Sorry. and then, from there’s Video Gen, there’s Audio Gen. Would love to get into those next. But what is that first few months like? So small team, a lot of bugs, iterations, but what does it look like? Do we take something off the shelf? Do we just get data compute? What’s, what’s the few months like? How do you go to state-art Image Gen model? How do you just start?
+Ethan [00:10:28]: I cannot comment specifically how xAI did, but it’s, it’s a quite standard process. I can draw some, examples from Cosmos. So mainly it’s building a video model, you actually need to build a image model first. And building these two models, the data you need is a hundred percent synthetic pair of language and image or language to video. Because on the, on the internet, actually, the videos don’t naturally associate with text. So you can say, oh, like on YouTube, you have the title and you have the description and the comments
+Swyx [00:11:11]: Title
+Ethan [00:11:11]: of a video, but usually they’re not relevant to the video itself. And say maybe like the video is a natural scene of mountains or something, and the title is, I’m so happy today.
+Ethan [00:11:26]: So they have they have no correlation at all. So the first step is to, you have to generate synthetic pair of language with the videos. So you gather videos from the internet, and you use a VLM to caption the videos. So that part, here’s a question, like how do you, how do you gather VLM to begin with? So if there’s no
+Swyx [00:11:55]: You, so you fuse the model, right? Like
+Ethan [00:11:57]: Say if there’s no like VLM exists, like how do you generate the text to the beginning, right? It’s, it’s impossible.
+Swyx [00:12:04]: I see.
+Ethan [00:12:05]: In the beginning, it’s like you ask human to describe the video as detailed as possible.For example, you ask them to describe everything, like all objects, all characters, and all interaction and dialogues in the, in the videos. So that’s in the protocol of Cosmos labeling. We require the objective we give to the labelers was that you have to describe the video as detailed as possible, such that a blind person hears a blob of text can reconstruct what the video is like from their head.
+Swyx [00:12:43]: Video or image? You’re talking about images.
+Ethan [00:12:44]: Video or image, either one of them.
+Vibhu [00:12:47]: This was pretty common when we went from clip and DALL-E, right?
+Vibhu [00:12:51]: It’s all training on really detailed captioning of images. So same is applied to video, but instead
+Ethan [00:12:57]: same applied
+Vibhu [00:12:57]: of using multimodal model to pass in video images and write rich descriptions, you can also
+Swyx [00:13:04]: I think there’s this traditional perspective of supervised, or, very highly human curated thing. I feel like there’s a unlock with unsupervised, right? Where like you have enough to bootstrap that you can just throw common corpus on it or, whatever. like unsupervised vision and language pairing, right? Like where you just have, interspersed image and text and it just learns. To me, that is the VLM breakthrough that is different from the clip, different from the LM era.
+Ethan [00:13:36]: It’s interesting to see that you kind of need both data.
+Ethan [00:13:41]: For example, for the
+Swyx [00:13:41]: You need it to bootstrap it up. Yeah
+Ethan [00:13:43]: for the generative model training, there’s also usually like a small percentage of unlabeled data. So the model is instructed to generate a video without any text instruction. That can also help the model generalize. So after this stage of generative synthetic pair, so, one important common step is to train a compressor or a tokenizer of the image or videos. So because, if you train-- If you can technically, theoretically train image or video models on pure pixels, but the problem is that the, it’s, it’s a lot of tokens. So like one image, it’s, a thousand by a thousand, it’s like one million tokens, one million pixels. It’s impossible to train transformer on that. So it’s, you need to train a tokenizer, which can go from image to latent space and latent space back to image.
+Swyx [00:14:45]: That’s why we named the podcast.
+Swyx [00:14:48]: But, basically, you’re talking about vocabulary science.
+Ethan [00:14:50]: so vocab.
+Swyx [00:14:51]: And so, what is, what is imp-- like a million is impossible?
+Ethan [00:14:54]: In generative models, the vocab is continuous. It’s a continuous space. We can think about like you map an image to a vector. It’s a, it’s a fixed length vector. It’s sixteen or forty-eight, something like that. And then you map that vector back to the image space. And the mapping is, has-- The mapping is patch-based. So you say you have
+Ethan [00:15:22]: a sixteen by sixteen patch and you match, you map that patch of pixels into this latent space.
+Swyx [00:15:29]: We’ve covered this
+Vibhu [00:15:30]: This is like the vision transformers
+Swyx [00:15:32]: VAEs,
+Ethan [00:15:33]: VAEs.
+Vibhu [00:15:34]: You basically compress your input, you do your generation, you’re reasoning all that generation in smaller dimension, and then you project back out.
+Swyx [00:15:43]: VAE is a form compression, but I think the for me, the patching thing is from VIT, right?
+Ethan [00:15:48]: You can make those.
+Swyx [00:15:49]: Literally the, yeah, the paper is titled like sixteen by sixteen is all you need. something like that. and then I think also, people make a lot of comparisons with this kind of patching with convolutions.
+Swyx [00:16:02]: Which is you’re, you’re kind of re- reconstructing the old paradigm with the new.
+Ethan [00:16:05]: Actually, in VAEs, there are, there are both convolution networks and transformers. You can actually do both.
+Ethan [00:16:14]: After this VAE, so what you’ve got is you’ve got latent space tokens and you’ve got the language tokens. So now the training of the diffusion transformer, usually generative models use diffusion transformers. It is actually quite standard. It’s, it’s very similar to how you train a language transformer models. It’s not that much difference. It’s just the tokens, the visual tokens in, visual tokens out. The only difference is there’s a denoising process. So you train the model to unmask some of the noise. So you add, you add random noise to the visual tokens, and then you train the model to remove those noise to generate the clean tokens. Any inference, the model can iteratively remove noise from a hundred percent noise.
+Swyx [00:17:12]: And then there’s also, to speed things along on the tech tree of diffusion, there’s CFG, and then there’s, there’s also, latent diffusion that, there’s, there’s someone in there. I think, somewhere along the line, obviously, like stability and all these other guys, pioneered a lot of this, architecture. I don’t know if you want to get into that or just, or do the video side up to you.
+Bootstrapping Video from Image Models and Temporal Compression
+Ethan [00:17:37]: After you train such model, such image model, the reason it’s a, it’s a foundation for video models is that image models are cheaper to train, and they have much denser connection between language and text. So, sorry, language and images. For example, you train a billion, you train on a billion images, and there’s a mapping from the text to the image. And the cost to train the same, like the, a billion, a billion text to a billion videos, that’s much more expensive because videosNaturally have more tokens than images. Because the diffusion models, their understanding of, language purely come from this mapping. So if you don’t have enough mapping, so if you only train on like a ten million videos or something, there-- you might not see enough language tokens in your training, so your model does not understand human intention enough. So that’s why you really-- you train-- you first train this image diffusion models, and then you bootstrap the video model from there.
+Swyx [00:18:53]: One thing I did want to ask, because I-- actually, I think you’re, you’re the first per-- video model person I’ve ever talked to, I think. we’ve, we’ve like talked to Luma and all those folks. There’s all these tricks in video compression where basically frame by frame there’s not that much difference, so actually you don’t have to regenerate or save the whole frame, right? but I think MP4 compression or something else like that.
+Swyx [00:19:16]: is it tempting to use that? Or as far as I can tell, everyone just treats it as, “No, we would just generate every frame.” Is that roughly the state-art?
+Ethan [00:19:27]: There are a few different approaches. Let’s say first, like you want to just directly use MP4 compression and use that as the tokens for the transformers to train, right? So people actually have tried that, but the main challenge is the latent space for the MP4 tokens were not, were not very comprehensible for the models. It’s, it’s extremely hard to train on that. And there’s a
+Ethan [00:20:01]: So that’s why they created VAEs, which creates more continuous, latent space, so the models can understand that latent space and learn from it much easier. Even within the VAEs, there are different difficulties of the latent space. So you can imagine something the simplest, the most naive VAE is like you have an image, and you just shuffle all of the images into a, into a vector. So you don’t need to train any VAEs, right? But that latent space is extremely hard for models to train on top of. That’s why there are some debate on like how do you compress the tokens. So you mentioned like you can compress frame by frame. Also, you can compress, the temporal dimension.
+Ethan [00:20:52]: The difference is if you compress the temporal dimension, you get a much higher compression rate. Because there’s temporal redundancy between frames, because, this frame and the last frame, likely they are mostly similar, so there’s only some small difference. for example, I think in 12.1 VAE, they have like a eight by eight by four compression rate. So the four temporal tokens are compressed into one tokens. That can save a lot of, save a lot of the context length. If you do it frame by frame, you have to do maybe like eight by eight by one. Your context length will be four times larger. That being said, the benefit of the frame-- per frame compression, we might come back to this later, is, real-timeness and interactivity. ‘Cause if you, if you strain the output of the model, frame by frame, you can-- the model can respond to any user request immediately. So if you have like a temporal four compression, four times compression, then
+Swyx [00:22:06]: It might be laggy
+Ethan [00:22:07]: there’s a lag there in nature.
+Swyx [00:22:10]: So you’re very pilled on this. let’s just go ahead and bring it up ‘cause we have the visual prepared anyway. There’s some frontier applications of real-time video gen. So Flipbook is one of the examples that went viral recently, right? What is Flipbook?
+Real-Time Generative UI: Flipbook, Neural OS, and Diffusion Front Ends
+Ethan [00:22:23]: Flipbook is kind of like a web brow- web browser. You can see like it has the web bro- browser UI on top. The difference is all of the UIs are generated by generative image model in real time, and anything here are fake. But you can, you can explore inside this wor- this imaginary world. Say like we-- here we have engineering the Great Pyramid. Like the model generates this for us to understand how it works, and if we want to navigate around and understand further, we can click on some of the, some of the description here, and the model will generate a new page, new subpage describing the details we want to know about.
+Swyx [00:23:14]: So it’s basically kind of we’re playing a video, but it’s pausing for our next interaction, and then it just plays the next thing based on our interaction.
+Swyx [00:23:23]: Which is kind of cool.
+Vibhu [00:23:25]: and you kind of decide your story. So this was, how do you make a pyramid? levering technique seemed interesting, right? It shows how do you take Okay, I want to know what is this
+Swyx [00:23:35]: The demo, the demo tweet had more animation between frames.
+Vibhu [00:23:38]: I think it’s just skipping,
+Swyx [00:23:39]: Oh, it’s just skipping a lot of frames.
+Ethan [00:23:40]: they also have a video mode
+Vibhu [00:23:42]: It takes a lot. There’s a lot of people
+Ethan [00:23:42]: but, a lot of people are using it.
+Ethan [00:23:45]: So it’s not available.
+Vibhu [00:23:46]: There’s a live video stream. We can try,
+Swyx [00:23:50]: So this is an example of the kind of future that you see at the extreme. We don’t-- we’re obviously not in it today.
+Swyx [00:23:56]: But in a world where inference is completely free this is better than generating code and text?
+Ethan [00:24:02]: So this is, this is a final state of where Viva will be at for word model, I think. Imagine internet doesn’t exist, and then you type in google.com. Like what should, what should, what should a model show you?the model can imagine something, and this is what the model imagine. And these web pages, they completely do not exist. So I think as the inference costs come down, we are going to have generative UI for everything. If you think about how the coding model works, so they write code for a web page, and they render the code might be con- converted into binary, and the binary render the pixels on the screen. So we in machine learning, every time we have some breakthrough, obviously it’s, it’s more intuit. So why don’t we have like user instruction to the pixel directly? So the generative UI will be user intention to the pixels directly. And say like even if I want email, let’s say everyone have the same interface, but I want, I want it slightly different. I want the email to show to me like a TikTok, so I can swipe left and right for the emails. And or maybe you want something else. We can have completely different things. Or like I have I’m looking at, Instagram stories, and I don’t like the Like button. I always may click it. And, generative UI resolved it. So it’s going to be a revolutionary replacement of the interface. So in the future, we might have much more powerful
+Ethan [00:25:50]: LLMs and coding models running behind the scene. And in the, in the front-end, the diffusion model will actually be the front-end to show stuff to you. That’s how I imagine it.
+Swyx [00:26:02]: Diffusion front-end, deterministic back-end.
+Swyx [00:26:04]: Something like that. I find that very expensive, but,
+Vibhu [00:26:08]: I find it interesting you called LLMs writing code on the back end deterministic, but okay.
+Swyx [00:26:14]: you write it once
+Vibhu [00:26:15]: Compare it to
+Swyx [00:26:16]: And then you execute.
+Ethan [00:26:17]: If you think about the cost, say, let’s say H100 costs $1 per hour, and if you use this eight hours a day and thirty days, so, every month you’re paying this two forty, you’ll actually not wanna pay for that. That’s even more expensive than Cloud Code Max. But if you think about the compute costs come down like two times every year, and I think the future will likely arrive like within few years.
+Vibhu [00:26:49]: It’s everything, right? compute cost comes down, compute gets faster, model gets smarter
+Ethan [00:26:54]: More efficient
+Vibhu [00:26:54]: model gets smaller.
+Swyx [00:26:55]: I don’t know why you say two times, ‘cause I think it’s like 100 times. In language models, it is roughly one hundred to a thousand times every twelve to eighteen months, for the same given level of LMSys, ELO.
+Vibhu [00:27:08]: That’s a net of everything, right? That’s model performance alongside compute. So different than just compute costs come down. But, a very interesting future.
+Swyx [00:27:19]: So the web designers will have to shout out that accessibility is an issue, right? how do you deal with screen readers or whatever. But yes, this is higher bandwidth storytelling than anything you can possibly generate with code, right? So I think that’s the rough idea.
+Ethan [00:27:34]: And I’d like to add a little bit that so human naturally have the maximum bandwidth when we are looking at things, look at videos, and we also have maximum output bandwidth when we are talking. So in the future, it might be something like we talk to AI models, and the AI model responds back with a generative UI. So that would be the maximum input and output bandwidth to interact with AI models before neural link happens.
+Vibhu [00:28:06]: And it’s also very custom, right? Some people are very visual, some people are not as visual, right? They prefer the text. But the best thing about generative UI, right, it can also be text.
+Swyx [00:28:17]: There’s another project that we wanted to highlight, which is the Neural OS. Kinda similar idea, but here you’re literally operating, simulating an operating system with a video model.
+Swyx [00:28:27]: and you can play Doom, you can do Firefox. I find this like mildly less impressive, obviously, because it’s an OS that I can run.
+Swyx [00:28:37]: But here everything is imagined.
+Vibhu [00:28:40]: I was, used to the Command+W to close the Firefox tab. It didn’t crash. That’s why I said
+Swyx [00:28:45]: It’s too immersive.
+Vibhu [00:28:46]: It’s, it’s too immersive for me.
+Swyx [00:28:47]: Too immersive.
+Vibhu [00:28:48]: I wanted to close the tab.
+Vibhu [00:28:49]: But yes, I can play generated diffusion.
+Swyx [00:28:51]: this is shockingly fast.
+Swyx [00:28:54]: Because I remember there was a demo about like maybe one to two years ago. Someone tried to do the first-person shooter with a image model. There was no consistency. It was very slow. But here it looks like realistically it’s-- this is Doom.
+Vibhu [00:29:07]: I think there’s two sides to that, right? There’s okay, what is running a game? The heavy part of it is actually the game engine, all the lighting, all that stuff, the graphics. This is just kind of video, right? Like we’ve solved consistency. This is still, it looks like a few years old image generation. There’s some temporal consistency, but it’s, it’s kind of just images stitched together as frame video. But it’s a good visual representation to pi- to picture the future you wanna see, right? that’s, that’s what I see in these more so.
+Ethan [00:29:38]: This reminds me of how the video models gets better and better. So Neural OS is kinda if you just look at it feels like it’s just a crappy version of the, like the Windows we could have, right? And, but the difference is, so the model, this model is overfitted on the existing operating systems. It can generate nothing different than that. But it’s actually also similar to video models. So when we are training these video model, image model, we train them on internet. There’s no imaginary supernatural stuff on the internet. But once we train this model, you can prompt the model to generate something supernatural that have never existed in the data set. So if you train your Neural OS or neural computer on the standard screen recordings on the entire internet. The model can imagine completely new interface to interact with the computer.
+Swyx [00:30:43]: This is one of those things that is magical to me. usually generalizing out of distribution is bad, but somehow we have learned some kind of internal world model that you say, this plus, but it looks like rainbows and butterflies, it’ll do it and it will kind of make sense.
+Swyx [00:31:03]: So yeah, that’s kind of cool. Yeah, I don’t know if there’s any comment more on there. I do, I do wanted to, I did wanted to touch a little bit more on the model architecture stuff, which I think you were getting. It’s, really fascinating. We don’t get a chance to talk about this enough. So one of the papers that we covered, we’ve covered every annual, segment anything release. and I don’t know if you follow-- you’re a computer vision guy, so you
+Ethan [00:31:26]: I know
+Swyx [00:31:27]: . So they did memory attention, which is kind of interesting. And I always think, anything where you can, across the temporal dimension, keep some consistency, I think it’s, very fascinating, and I don’t know if Basically, does that-- the CV side bleeding into video gen side, I think is underexplored, right? we talk about it for labeling, but actually you can borrow the architecture itself.
+Ethan [00:31:50]: There’s, there’s also complete different approaches, right? you brought up the term world model, so we went from video model to world model. There is diffusion, but there’s also other approaches that people are doing. So maybe we get into those after as well,?
+Swyx [00:32:03]: He has a whole definition of world models and stuff. I feel like we threw a lot at you. Whatever you want to comment on.
+Why Video Models Are Expensive: Storage, I/O, and Training Scale
+Ethan [00:32:10]: I think one thing that we should actually comment back on is okay, so we were talking about the steps to train image gen to video model. One thing we don’t see as much of is okay, you brought up the delta in training data, right? So
+Ethan [00:32:24]: you won’t have as much a video model might not generalize, but what is the cost of training a large video model? So we know for LLMs roughly, okay, even like the poolside thing that came out today, right? It’s a Gemma level model trained on roughly forty trillion tokens at this many H200s over this much time, right? You can see what is the exact cost of that. So how many GPU hours over how much H200 costs? So how do we do the back-end math of, same thing for video models, image models. How do you, how do you kind of break that down? I can share some back-envelope calculation. So surprisingly, video models is-- the cost is very-- is comparable to language models and obviously the largest scale is language model, maybe like a medium scale to language models. I said just storing the videos alone, it costs a lot. You can, you can maybe look up on AWS or something.
+Ethan [00:33:20]: You really, say if you have a billion videos and let’s say, let’s just say like each video, like five megabyte, then you need five petabyte to just store those videos. And also remember we talk about you use a VAE to compress the videos, and you also need to store, typically you need to store those continuous feature, in-- also in your storage. That’s also comparable size with the videos themselves. So just storing these videos and the features is tens of petabytes alone. And,
+Swyx [00:33:58]: I just, I just looked up the calculation. Five petabytes on S3 Standard is one hundred K per month.
+Ethan [00:34:05]: And
+Swyx [00:34:05]: It’s comparable
+Ethan [00:34:05]: and you need
+Swyx [00:34:06]: And
+Ethan [00:34:06]: And then like tens of petabytes, two hundred K. And even more expensive is you have the ingress and egress.
+Swyx [00:34:13]: Oh, yeah.
+Ethan [00:34:14]: Like you-- through the internet. You have to just to download those videos, I believe it’s, it’s more expensive on AWS than just storing those videos.
+Swyx [00:34:25]: Storing, yeah.
+Ethan [00:34:25]: And each training runs, you probably need to pull them once. If you train multiple times, it’s, it’s even more than that. So it’s like just storing the network, those costs is just, it would be a few, a few millions per month to just storing everything, not to mention the GPU cost.
+Ethan [00:34:45]: And
+Swyx [00:34:45]: my side tangent, the compute rental, like GPU rental is very efficient. There’s one side, okay, you can be XAI and build your data center. Should we not just build our, storage compute as well? Like
+Ethan [00:34:57]: Of course
+Swyx [00:34:57]: cloud cost compared to just,
+Ethan [00:34:59]: You save so much
+Swyx [00:35:00]: store. Yeah, exactly.
+Swyx [00:35:01]: Especially with like egress and stuff. So.
+Ethan [00:35:04]: That’s a good idea, but it also comes to-- there are some of its own challenges.
+Swyx [00:35:09]: Of course, of course.
+Ethan [00:35:10]: like people who build the GPU data centers, they might not expect this much, storage. And yeah, people build storage, typically they just build it somewhere with just CPUs.
+Swyx [00:35:23]: I just looked it up. Five-- AWS only charges for egress, not ingress. Tier five for five petabytes is two hundred and thirty K.
+Ethan [00:35:32]: Even more expensive than the storage.
+Swyx [00:35:34]: But storing is per month, right? You check in, then you cannot check out. so it’s so cool. It’s okay. So there’s that side.
+Ethan [00:35:41]: So the TLDR, my backhand math
+Swyx [00:35:42]: Data is larger than you think. Yes.
+Ethan [00:35:44]: my backhand math of GPU hours times GPU cost is also very much, I’m missing some storage.
+Swyx [00:35:49]: You’re also-- you’re basically like also more IO bound than normal training.
+Swyx [00:35:55]: Yes. ‘Cause like data loading, so caching everything, it becomes super important.
+Ethan [00:36:00]: So in Cosmos, we did a lot of optimizations to make it not IO bound. So, speaking of the training, actually training the model, the GPU cost, if you look up like the open source model, how big these video models are, I think like LTX has nineteen B parameters. That’s a dense model. And people are also exploring, MoEs, so it might be twenty B active and, like a hun- hundreds B, total. So that’s, that’s even-- that’s similar size as medium-sized LLM models. And if you, if you look at number of tokens-Uh, we disclose that in Cosmos. It’s also like tens of trillions of tokens on the visual tokens. So putting this together, the cost of, training these video models, it’s actually comparable with LLMs. Not to mention, the infra is slightly different from LLM, so it might be less efficient to train these models.
+Inference Speedups: Step Distillation, Consistency Models, and GANs
+Swyx [00:37:04]: Do you get the benefits of traditional diffusion speed-up? So for, images, there’s LCM, LoRAs for, fine-tuning. There’s, there’s a lot of stuff that’s been
+Ethan [00:37:15]: Flow matching.
+Swyx [00:37:16]: there’s flow matching. There’s a lot of stuff that’s been done. there’s some overlap that applies to diffusion on the inference side and stuff or?
+Ethan [00:37:23]: so the difference-- the inference side is a completely different story.
+Ethan [00:37:28]: I think for the training side, it might be a little bit hard to reduce that cost. And for the inference side, the biggest gain is from the distillation of these models. You can-- It’s called step distillation, slightly different from knowledge distillation in LLMs. So you-- Typically, for flow matching models, you need like 100 steps or something. Like a distortion model even need even more, like 1,000 steps to generate a good image or video. A step distillation is try to learn to generate fewer step from the model itself. It’s kind of like now we-- you use the full model to generate in 100 steps, and then you take a model that only generate 10 steps and let that model to learn from the perfect one.
+Ethan [00:38:25]: why this work
+Swyx [00:38:27]: Strong to weak seemingly.
+Ethan [00:38:28]: It is. It’s kind of
+Swyx [00:38:29]: Distillation
+Ethan [00:38:29]: kind of like strong to weak. the-- from the modeling perspective, the strong model, the teacher model is trying to model the image and videos of inter-internet, and that distribution is extremely complex. But the step distilled model is just trying to learn from the teacher. The teacher is a model, and the size is fixed, as the distribution is much simpler than the whole internet. That’s the intuition I have why step distillation can work. So usually these models serve in productions, they only run in a few steps. In Cosmos, I believe we have, we have like four step and eight steps. If you do some simpler task, image-image translation, it can even run in fewer step, like one step in Cosmos Transfer.
+Swyx [00:39:22]: I think this is the same intuition that guides a lot of the consistency model work. I sent you a link for, SCM. I don’t know if you covered that. To me, that was actually one of, the most impressive papers I’ve ever seen from OpenAI.
+Swyx [00:39:34]: That this is the unifying grand concept of consistency models. I don’t know if you have any comments on this.
+Ethan [00:39:41]: So there are, there are a few different approaches,
+Swyx [00:39:46]: Oh, yeah. Here it is.
+Swyx [00:39:47]: Two steps versus twenty or 100 steps, whatever. It’s already done.
+Ethan [00:39:52]: So there are, there are a few different approaches, for example, consistency model, and there are also Actually, we shouldn’t forget GAN. So GAN, actually, that was, that was the OG of
+Swyx [00:40:05]: OG
+Ethan [00:40:05]: step distillation ‘cause it trained just one step to begin with. So actually, a lot of, uh-- For example, there’s a distribution matching distillation which use, which uses GAN, as one of the laws for distillation. It-- GAN just tells you, “Hey, generate an image,” and then
+Ethan [00:40:31]: it has a discriminator to tell, is this image real or not? So the model, the model just need to learn one of the distribution, not the full distribution. Because in training, the model is asked to reconstruct the ground truth image from the internet, which is extremely hard. And in-- When you’re training GAN, it’s a step process. It’s just a, “Hey, you generate image. Does this image look as real as the image from the internet?” Which is a much simpler task. And, yeah, combining a lot of these approaches together, people typically do that, like consistency model and distribution matching and GAN, and we can get these few step models.
+Audio-Video Generation and Time Alignment
+Swyx [00:41:21]: Then there’s one step I wanted to add, which is audio and video.
+Ethan [00:41:26]: So, Grok Imagine zero point nine, I believe it’s, it’s a first audio video transmodel deployed at a large scale. So
+Swyx [00:41:39]: And that was your first model?
+Ethan [00:41:40]: that was, Grok Imagine’s first model. It’s, it’s audio video, joint generation. I think the hard part is, the modality alignment, ‘cause before this transmodel, we have, we have text to video alignment. We have this, correspondence between text and video. Typically, most of the VLMs, they understand images and videos. Video’s very rare, and they don’t understand audio mostly. And if you look at the audio generation on the LLM side, you can talk to them perfectly fine, but if you ask them to sing a song or something, it typically is not very good. Also, they don’t have, they don’t have music either. The hard part is thatUh, actually audio has two component. It has like a discrete component, a continuous component. The discrete component is like the language.
+Ethan [00:42:44]: So when we speak, it’s just, some
+Swyx [00:42:47]: It’s an ASR issue, yeah.
+Ethan [00:42:49]: It’s, it’s text token with some characteristics, I would say.
+Ethan [00:42:54]: But music
+Swyx [00:42:56]: I think the speech guys would disagree with this.
+Swyx [00:42:57]: Like disfluencies and then,
+Vibhu [00:43:00]: There’s tones you can get angry.
+Ethan [00:43:01]: Well, I say largely.
+Ethan [00:43:03]: the mu- but the music is completely different. It’s, it’s very continuous, and you cannot model them like discrete tokens in language models. this is like the hard part for models is, not to mention we have to align text, video, and audio together.
+Ethan [00:43:26]: So
+Vibhu [00:43:26]: How?
+Ethan [00:43:28]: So significant-- some significant challenges are like-- So first, like we talk about as the VLMs, they cannot understand most of them cannot understand audio.
+Ethan [00:43:39]: So you have to have some way to do the synthetic data generation for audio. You have to caption the model, and that involve, that involve synthetic data and human data effort a lot. And not just surprisingly, most of the LLMs are very bad at recognizing, like the beat, tone, and the details of the of music. They can, they can give some general prediction of which song is this, but it’s very hard to describe the details of the music. like we mentioned in image generation, like you have to describe image as detailed as possible so that someone blind can reconstruct that. So here is like someone
+Vibhu [00:44:32]: Deaf
+Ethan [00:44:32]: someone deaf can reconstruct how the music sounds like without actually listening to it. Maybe you can think of it need to have the-- or they call the script.
+Vibhu [00:44:49]: Subtitles, yeah.
+Ethan [00:44:49]: You gotta have all the details of the music, and the dialogue.
+Vibhu [00:44:55]: So is the challenge there typically stuff like music and audio, or is it just Like is there a baseline? Okay, there’s enough data where we can understand, narration, conversation, but there’s nuances in audio that’s where you hit all the data issues or is it just from stage zero, you just do it all right?
+Ethan [00:45:15]: So one important thing is like the alignment. So the model, the model has to know like the video and audio, the, uh-- it has to have a time-based alignment, like at which time step the video and the audio token correspond to each other. But we actually don’t have this kind of alignment for most of the other modalities. If you think about like text and image, text and video, they are loosely aligned. So you can, you can have a description of what’s going on in the video, but you don’t have to exactly, You typically don’t have exact description, oh, at, time step one second like what happened?
+Vibhu [00:46:02]: It’s very
+Ethan [00:46:03]: At time step two second what happened
+Vibhu [00:46:03]: coarse. Yeah.
+Swyx [00:46:05]: So what was the ideal time step? You have to oblate it, and then it’s like four seconds or something.
+Ethan [00:46:09]: So that comes down to how you design the model to, for the model to be aware of as a time, as a time modality. So the model is like a time aware. And that’s something pretty unique if you think about LLMs. So if you ask LLM to complete a task, say they, uh-- you ask them and they will say, “Oh, this task will probably take twelve hours to complete,” and they come back in one hour. Say “I’ve already spent two days on this and I’ve exhausted everything.”
+Ethan [00:46:47]: So the LLMs them-themselves, they don’t have a sense of time there.
+Vibhu [00:46:53]: I actually don’t think that’s just them not having a sense of time. I think it’s somewhat based, right?
+Vibhu [00:46:58]: Like you tell someone, “Okay, go work on this feature. Go implement this,” there’s a general understanding you would have of how long that would take without LLMs working at LLM speed, right? So you think back like two years ago, if I tell you to like build me like a new front end for latent space, have a search bar, have all this, you’ll estimate that it’ll take a few days, right?
+Vibhu [00:47:19]: So you tell an LLM, “Go build this.” It’ll take me a few days. But I think it’s somewhat grounded as opposed to them not having the best-- Not saying that they have a great understanding, but I think that example is like you can see where it comes from, right? You’re trained on all over the text.
+Swyx [00:47:35]: They’re, they’re trying to estimate what a human would say.
+Vibhu [00:47:37]: because that’s what the, that’s what the data kind of represents. It’s not them
+Ethan [00:47:41]: It came from the corpus on the internet. People have a estimate of how much time.
+Vibhu [00:47:45]: And not even just in direct like training samples, right? Just your world understanding of tokens of how long stuff takes, right? Go read a book. It’ll take you a while, right?
+Vibhu [00:47:56]: Even if you do nothing but read a book, it takes a few days. So yeah, LLM, I read it took me a few hours.
+Vibhu [00:48:01]: It’ll take me a few hours to go through this research. But this is a tangent.
+Swyx [00:48:05]: Somewhat, yeah.
+Swyx [00:48:06]: This is a train of thought I haven’t really expressed until now is, which is basically like a full world model must also be recursive, meaning that the participant in the world model must also be aware that they have a world model. which is like this whole recursive thing down the, down the line. but yes, and that the world model can be wrong and that they need to update it and blah. Yeah. We’ve, argued this on the, newsletter as well, that there needs to be sort of recursive or adversarial world models.
+World Models: Real-Time, Long-Horizon, Interactive Video
+Vibhu [00:48:34]: just, to ask, how do you define world model?
+Swyx [00:48:38]: Oh, yeah, let’s go there.
+Ethan [00:48:40]: So
+Vibhu [00:48:40]: So just for context, we talked about, video generation, and then there’s a-- if you say there’s a distinction between world models, what’s your, what’s your definition? How do you see the two?
+Ethan [00:48:53]: So disclaimer, I’m not going to debate, what is world model. Yeah. there are many definitions, so I’ll just talk about my definition. Since I came from the multi-model, multi-model domain, so mainly talking from video. So world model is like real-time interactive long horizon videos. So there are three parts. so we-- let’s talk about them one by one. So the so interaction, so we just, we just look at Facebook and neural computer. So the interaction part of it, so you, world model can allow you to interact with them through keyboard, mouse, and maybe also voice. So these all is-- all is a modality. You can, you can interact with the model, and the model should respond reasonably. Second part is real time. So once you, once, say, you move your mouse, if, say, the world model generate a game, how fast can the game respond? So if you’re like professional CS: GO players- -my say, oh, you have to respond- He’s beginner within sub ten milliseconds or- Yeah even less. So that’s not most of the- No, sixty FPS. Let’s go. Oh, three hundred FPS. Oh, five hundred FPS. Wait. okay, yeah. I didn’t do the math, but yeah, okay. Uh- Yeah, three hundred FPS, that’s a three millisecond. So you have to respond- Oh, shit. Okay. Yeah
+Ethan [00:50:29]: within a millisecond. Most of the video models cannot do that. Yeah. And, but if you, say, if you have a video model that is, say, like a digital human, the response time might be more generous. Maybe typically, for real-time voice interaction, it’s like two hundred millisecond. So that’s, that’s much more generous. But even two hundred millisecond is pretty, it is pretty tricky, ‘cause remember we mentioned
+Ethan [00:51:01]: you have this, temporal compression coming from the VAE. So if you, if you don’t compress the temporal dimension, your sequence length is going to explode. So if you want to have this real-time, real-timeness in your model, you have to do is one context problem. And the third part is long horizon, ‘cause we-- if you’re not going to just play with, video games just, a few seconds, most video models only a few seconds. We’re going to play with minutes, hours. The model have to be able to generate long-form content.
+Ethan [00:51:42]: So putting these three together, it’s, real-time, long horizon interactive videos. I think the final state will be, for example, like a video, a video version of Playbook, where you can, you can interact with, a neural computer. You move your mouse, and you click on the generative interface, and it will reply to you through pixels- generating in real time. But getting there, it’s, it’s a very long way to get there. So one of the first step, at Grok Imagine, where I led a small world model team there, was to build video extension. So, video extension- it’s the first step of interactivity. Yeah. It’s, it’s the first step. Yeah. So it’s the first step- You have it here, video editing, yeah. Yeah. Yeah. So the first step is because, this unlocks long horizon videos. Typically, for most of the video generation models, you give it a prompt or an image as an initial frame. You generate video, that’s it. That’s just, one time, done. And some creators would try to, use the last frame as a first frame for the second video. It can-- sometimes it works, but if you do it a few times, it says the quality would decrease. And- It doesn’t have that context- Yeah over the full video, so the temporal- Yeah, exactly. Yeah, ‘cause you only gave it the last frame, of course, right? Yeah. Exactly. And- it’s actually a pretty fun hack. if you’ve seen like- Oh, no, he’s saying something better. Yeah. And for example, like Vue, I remember Vue 3 has like a second context of the last video. It is slightly better than using the last frame, but it has the same problem-- similar problem that it, the quality would decrease. if you extend a few times to, one minute, the video quality would look much worse than the first video. Second, another problem is that the model doesn’t have long-range knowledge of, what’s happening before. Say, if they generate some dialogue, some, two people speaking, and their voice might change, over some time, especially if the second conditioning, it does not cover the previous context. So these are the core challenges. So the Grok Imagine video extension, it has historical context of all of the previous generated videos. It can, It has, it has the context of, who is speaking and what objects have appeared and everything, having that to generate the next video. So if we naively do this, you can imagine, just, put all of the previous history video tokens into the context. The context lens will easily explode. Especially for video models, that can be like a few, a few million context, I would imagine- context lens. Yes.Yeah.
+Swyx [00:54:58]: Let’s run with that.
+Ethan [00:54:59]: for example, like in Cosmos, I think just five seconds of video is like a fifty K or sixty K number of tokens. So like if you do, if you do fifty second, that’s a five hundred K tokens. If you do longer than that, easily explode. This long horizon, problem was the first step we’re trying to solve world model. It turns out people, yeah, people love video extension. Like a lot, a lot of the creators love using video extension to create longer form videos. This is the part I liked that you have a, you have an intermediate step toward the final goal instead of just a straight shot to the final version very much.
+Swyx [00:55:48]: But I can see you have a strong vision of where we want to end up.
+Long Context, Redundancy, and Efficient Interactive Video
+Vibhu [00:55:51]: Does it seem like it’s an efficiency issue? okay, we’re at a few million tokens context,. If you draw the parallel to language models, we had very short context, two thousand, eight thousand, then, you scale it up one million, ten million. sure, there’s effective context, but at the end of the day, it’s just what’s it worth? sure, there’s a whole training data side. In video, it might be slightly easier ‘cause we have a hundred million token video, right? Just take a movie with the full context there. Like is this efficiency from an inference standpoint that like it’s expensive, but we know how to solve it? Or like why is this not the approach? So like my broader point was on your second point of world models, you say it needs to be interactive and live, right? You should be able to play a game and see the interaction live. So one thing I see with research is a lot of what you actually serve is different than what you build,
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 94
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":59999,"paragraph_count":340,"sentence_count":666,"boilerplate_hits":1,"symbol_ratio":0.0085,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   We’re announcing AIEWF speakers this week! Take the AI Engineering Survey!Today’s guest Ethan first joined us for the LS Paper Club as the lead on NVIDIA Cosmos World Model, but then joined xAI and built Grok Imagine in 3 months:He comes back on Latent Space with some nuclear hot takes: that Video Models primarily get their intelligence from LLMs, not from training on video data, and that the next frontier for truly interactive, realtime, long-horizon world models is to work on LLMs (perhaps Int
+
+2. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Latent Space: The AI Engineer Podcast Why Video Agent models are next — Ethan He, xAI Grok Imagine 16 1× 0:00 Current time: 0:00 / Total time: -1:43:25 -1:43:25 Audio playback is not supported on your browser.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Why Video Agent models are next — Ethan He, xAI Grok Imagine Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   For the first time, we do a deep dive with the guy who led it!
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Jun 01, 2026 16 Share Transcript We’re announcing AIEWF speakers this week!
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Take the AI Engineering Survey !
+
+## business_elements
+
+- companies: Latent Space, OpenAI, Nvidia
+- products: Agent, agent, agents, Agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 3 m, 16, 1, 0, 00, 43, 25, 3 M
+- quotes: Oh, very cool. We have Paperclip. Present then. / Well, I should be trying everything, and if I’m not, then I’m not doing my job well.
+
+## evidence_seed
+
+- company_actions: We’re announcing AIEWF speakers this week! Take the AI Engineering Survey!Today’s guest Ethan first joined us for the LS Paper Club as the lead on NVIDIA Cosmos World Model, but then joined xAI and built Grok Imagine in 3 months:He comes back on Latent Space with some nuclear hot takes: that Video Models primarily get their intelligence from LLMs, not from training on video data, and that the next frontier for truly interactive, realtime, long-horizon world models is to work on LLMs (perhaps Int / Why Video Agent models are next — Ethan He, xAI Grok Imagine Inside xAI: Building Grok Imagine in 3 Months, Videogen vs World Models, and why Grok Imagine is so underrated. / For the first time, we do a deep dive with the guy who led it!
+- case_details: 暂无公开信息
+- workflow_changes: Latent Space: The AI Engineer Podcast Why Video Agent models are next — Ethan He, xAI Grok Imagine 16 1× 0:00 Current time: 0:00 / Total time: -1:43:25 -1:43:25 Audio playback is not supported on your browser.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+We’re announcing AIEWF speakers this week! Take the AI Engineering Survey!Today’s guest Ethan first joined us for the LS Paper Club as the lead on NVIDIA Cosmos World Model, but then joined xAI and built Grok Imagine in 3 months:He comes back on Latent Space with some nuclear hot takes: that Video Models primarily get their intelligence from LLMs, not from training on video data, and that the next frontier for truly interactive, realtime, long-horizon world models is to work on LLMs (perhaps Int
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

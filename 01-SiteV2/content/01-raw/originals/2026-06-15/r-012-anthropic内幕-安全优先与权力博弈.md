@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-14T12:38:54.000Z"
-collected_at: 2026-06-15T03:58:54.064Z
+collected_at: 2026-06-15T07:56:14.415Z
 language: mixed
-full_text_hash: faa49d6925573a52
+full_text_hash: 1ba20d91b348f166
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-012-anthropic内幕-安全优先与权力博弈.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-012-anthropic内幕-安全优先与权力博弈.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"faa49d6925573a52","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1ba20d91b348f166","missing":[]}
 source_volatility: high
 community_name: "X：邵猛 (@shao__meng)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic内幕：安全优先与权力博弈","discovery_summary":"Bloomberg纪录片揭秘Anthropic：坚持\"安全优先\"，拒绝国防部无护栏要求被拉黑；Claude Code团队6个月100%代码由AI编写，Cowork发布致单日2850亿美元软件股市值蒸发。Dario维持预判：AI 1-5年内消除约50%初级白领岗位，并给出10-25%文明崩溃概率。被限制模型Mythos发现数千高危漏洞。Anthropic支持对华芯片出口管制，呼吁发布前强制第三方测试。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2066138309781246367","discovered_at":"2026-06-15T03:52:39.454Z","rank_on_page":121,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic内幕：安全优先与权力博弈","discovery_summary":"Bloomberg纪录片揭秘Anthropic：坚持\"安全优先\"，拒绝国防部无护栏要求被拉黑；Claude Code团队6个月100%代码由AI编写，Cowork发布致单日2850亿美元软件股市值蒸发。Dario维持预判：AI 1-5年内消除约50%初级白领岗位，并给出10-25%文明崩溃概率。被限制模型Mythos发现数千高危漏洞。Anthropic支持对华芯片出口管制，呼吁发布前强制第三方测试。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2066138309781246367","discovered_at":"2026-06-15T07:52:25.537Z","rank_on_page":149,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 73ae8c949074332f
-content_hash: faa49d6925573a52
+content_hash: 1ba20d91b348f166
 semantic_hash: ff048d236b84c0f0
 duplicate_of: ""
 first_seen_at: "2026-06-14T12:38:54.000Z"
-last_seen_at: 2026-06-15T03:58:54.064Z
+last_seen_at: 2026-06-15T07:56:14.415Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -157,11 +157,11 @@ Project Glasswing
 社会媒体教训
 · Daniela：AI 行业是 social media 之后的 第二次机会，应 proactively 思考儿童福利、心理健康、选举 integrity，而非事后辩解。
 · 若出现重大事故，AI 可能被禁——「也许理应如此」。
-12:38 PM · Jun 14, 2026 2.4K Views
+12:38 PM · Jun 14, 2026 2.7K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 8
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
 Read 3 replies
 
 ## full_text
@@ -245,11 +245,11 @@ Project Glasswing
 社会媒体教训
 · Daniela：AI 行业是 social media 之后的 第二次机会，应 proactively 思考儿童福利、心理健康、选举 integrity，而非事后辩解。
 · 若出现重大事故，AI 可能被禁——「也许理应如此」。
-12:38 PM · Jun 14, 2026 2.4K Views
+12:38 PM · Jun 14, 2026 2.7K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 8
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
 Read 3 replies
 
 ## extraction_diagnostics
@@ -351,7 +351,7 @@ Read 3 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic内幕：安全优先与权力博弈","discovery_summary":"Bloomberg纪录片揭秘Anthropic：坚持\"安全优先\"，拒绝国防部无护栏要求被拉黑；Claude Code团队6个月100%代码由AI编写，Cowork发布致单日2850亿美元软件股市值蒸发。Dario维持预判：AI 1-5年内消除约50%初级白领岗位，并给出10-25%文明崩溃概率。被限制模型Mythos发现数千高危漏洞。Anthropic支持对华芯片出口管制，呼吁发布前强制第三方测试。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2066138309781246367","discovered_at":"2026-06-15T03:52:39.454Z","rank_on_page":121,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic内幕：安全优先与权力博弈","discovery_summary":"Bloomberg纪录片揭秘Anthropic：坚持\"安全优先\"，拒绝国防部无护栏要求被拉黑；Claude Code团队6个月100%代码由AI编写，Cowork发布致单日2850亿美元软件股市值蒸发。Dario维持预判：AI 1-5年内消除约50%初级白领岗位，并给出10-25%文明崩溃概率。被限制模型Mythos发现数千高危漏洞。Anthropic支持对华芯片出口管制，呼吁发布前强制第三方测试。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2066138309781246367","discovered_at":"2026-06-15T07:52:25.537Z","rank_on_page":149,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

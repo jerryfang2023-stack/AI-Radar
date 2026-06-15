@@ -1,0 +1,277 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-068
+title: "Asana acquires no-code agent-builder StackAI | TechCrunch"
+original_url: "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/"
+canonical_url: "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai"
+source_name: "keyword search / Exa"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-28T20:06:07.000Z"
+collected_at: 2026-06-15T07:56:14.648Z
+language: mixed
+full_text_hash: 381e8a10f73eee38
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-068-asana-acquires-no-code-agent-builder-stackai-techcrunch.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-068-asana-acquires-no-code-agent-builder-stackai-techcrunch.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 95
+extractor_diagnostics: {"readability_score":95,"text_length":3930,"paragraph_count":26,"sentence_count":21,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 3930
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"381e8a10f73eee38","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6fcbed6fc7bcb0fc
+content_hash: 381e8a10f73eee38
+semantic_hash: 04e42c6681ce94bf
+duplicate_of: ""
+first_seen_at: "2026-05-28T20:06:07.000Z"
+last_seen_at: 2026-06-15T07:56:14.648Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Exa","OpenAI","Anthropic","Google","Meta","Salesforce"],"products":["agent","agents","ChatGPT","Claude"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["$75 million","1","06","28","2026","23","$20 million","$16 million"],"quotes":["the operating system for human-agent teams.","This acquisition accelerates our roadmap and takes us into the next phase of human-agent work,"]}
+evidence_seed: {"company_actions":["StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of the acquisition.","Asana framed the acquisition as part of its broader AI pivot, in which it seeks to build its platform into “the operating system for human-agent teams.","” The announcement was announced Thursday afternoon to coincide with Asana’s earnings and investor call."],"case_details":[],"workflow_changes":["Built as an AI workflow-automation system , StackAI designs agents to operate within existing business systems, pulling in data from systems like Salesforce, Slack, and Gsuite."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Asana acquires no-code agent-builder StackAI | TechCrunch [...] Asana has acquired the workflow automation company StackAI for $75 million, part of a larger effort to position itself as an AI-native workplace platform. StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Image Credits: Thomas Fuller/SOPA Images/LightRocket / Getty Images AI Asana acquires no-code agent-builder StackAI Russell Brandom 1:06 PM PDT · May 28, 2026 Asana has acquired the workflow automation company StackAI for $75 million, part of a larger effort to position itself as an AI-native workplace platform.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of the acquisition.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Asana framed the acquisition as part of its broader AI pivot, in which it seeks to build its platform into “the operating system for human-agent teams.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"” The announcement was announced Thursday afternoon to coincide with Asana’s earnings and investor call.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Built as an AI workflow-automation system , StackAI designs agents to operate within existing business systems, pulling in data from systems like Salesforce, Slack, and Gsuite.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Asana acquires no-code agent-builder StackAI | TechCrunch
+
+## clean_text
+
+Image Credits: Thomas Fuller/SOPA Images/LightRocket / Getty Images
+AI
+Asana acquires no-code agent-builder StackAI
+Russell Brandom
+1:06 PM PDT · May 28, 2026
+Asana has acquired the workflow automation company StackAI for $75 million, part of a larger effort to position itself as an AI-native workplace platform. StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of the acquisition.
+Asana framed the acquisition as part of its broader AI pivot, in which it seeks to build its platform into “the operating system for human-agent teams.”
+The announcement was announced Thursday afternoon to coincide with Asana’s earnings and investor call.
+Built as an AI workflow-automation system , StackAI designs agents to operate within existing business systems, pulling in data from systems like Salesforce, Slack, and Gsuite. Part of Y Combinator’s Winter ’23 cohort, the company has faced fierce competition from automation tools like Zapier as well as AI labs like OpenAI and Anthropic.
+StackAI had raised just under $20 million, according to PitchBook data, with most of it coming in a recent $16 million Series A round. That round included funding from Gradient, Epakon Capital, Lobby VC, LifeX Ventures, and Vercel CEO Guillermo Rauch.
+While users are likely most familiar with Asana’s work management system, the company has released a number of AI-oriented products in recent years, most notably the AI Studio automation builder and AI Teammates series of pre-built agents. While equivalent tools are available from major labs, Asana sees its deep integration into existing corporate workflows as a key advantage, allowing it to distill context and training data that would otherwise be unavailable.
+Asana has struggled on public markets during the AI era, losing more than half its market cap value since the introduction of ChatGPT — a spiral that grew worse with the departure of founder Dustin Moskovitz as CEO last March. But revenue has continued to grow steadily, and the new leadership is confident that its human-agent products will enable it to rebound.
+“This acquisition accelerates our roadmap and takes us into the next phase of human-agent work,” said CEO Dan Rogers in a statement. “We’re already seeing real momentum with AI Teammates and AI Studio … StackAI now lets them go further, agentifying the most complex business processes end-to-end.”
+Topics
+acquisition , AI , Asana , Automation , Stack AI
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+The FBI built its own replica small town to simulate real-world cyberattacks
+Zack Whittaker
+Meta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it
+Connie Loizos
+Jeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world
+Marina Temkin
+Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable
+Lorenzo Franceschi-Bicchierai
+Google just fired a warning shot in the AI subscription price wars
+Lucas Ropek
+Connie Loizos
+Anthropic’s Claude Fable 5 is a version of Mythos the public can access today
+Rebecca Bellan
+It’s not FAANG anymore. It’s MANGOS.
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Thomas Fuller/SOPA Images/LightRocket / Getty Images
+AI
+Asana acquires no-code agent-builder StackAI
+Russell Brandom
+1:06 PM PDT · May 28, 2026
+Asana has acquired the workflow automation company StackAI for $75 million, part of a larger effort to position itself as an AI-native workplace platform. StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of the acquisition.
+Asana framed the acquisition as part of its broader AI pivot, in which it seeks to build its platform into “the operating system for human-agent teams.”
+The announcement was announced Thursday afternoon to coincide with Asana’s earnings and investor call.
+Built as an AI workflow-automation system , StackAI designs agents to operate within existing business systems, pulling in data from systems like Salesforce, Slack, and Gsuite. Part of Y Combinator’s Winter ’23 cohort, the company has faced fierce competition from automation tools like Zapier as well as AI labs like OpenAI and Anthropic.
+StackAI had raised just under $20 million, according to PitchBook data, with most of it coming in a recent $16 million Series A round. That round included funding from Gradient, Epakon Capital, Lobby VC, LifeX Ventures, and Vercel CEO Guillermo Rauch.
+While users are likely most familiar with Asana’s work management system, the company has released a number of AI-oriented products in recent years, most notably the AI Studio automation builder and AI Teammates series of pre-built agents. While equivalent tools are available from major labs, Asana sees its deep integration into existing corporate workflows as a key advantage, allowing it to distill context and training data that would otherwise be unavailable.
+Asana has struggled on public markets during the AI era, losing more than half its market cap value since the introduction of ChatGPT — a spiral that grew worse with the departure of founder Dustin Moskovitz as CEO last March. But revenue has continued to grow steadily, and the new leadership is confident that its human-agent products will enable it to rebound.
+“This acquisition accelerates our roadmap and takes us into the next phase of human-agent work,” said CEO Dan Rogers in a statement. “We’re already seeing real momentum with AI Teammates and AI Studio … StackAI now lets them go further, agentifying the most complex business processes end-to-end.”
+Topics
+acquisition , AI , Asana , Automation , Stack AI
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+The FBI built its own replica small town to simulate real-world cyberattacks
+Zack Whittaker
+Meta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it
+Connie Loizos
+Jeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world
+Marina Temkin
+Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable
+Lorenzo Franceschi-Bicchierai
+Google just fired a warning shot in the AI subscription price wars
+Lucas Ropek
+Connie Loizos
+Anthropic’s Claude Fable 5 is a version of Mythos the public can access today
+Rebecca Bellan
+It’s not FAANG anymore. It’s MANGOS.
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 95
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":95,"text_length":3930,"paragraph_count":26,"sentence_count":21,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Asana acquires no-code agent-builder StackAI | TechCrunch [...] Asana has acquired the workflow automation company StackAI for $75 million, part of a larger effort to position itself as an AI-native workplace platform. StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Image Credits: Thomas Fuller/SOPA Images/LightRocket / Getty Images AI Asana acquires no-code agent-builder StackAI Russell Brandom 1:06 PM PDT · May 28, 2026 Asana has acquired the workflow automation company StackAI for $75 million, part of a larger effort to position itself as an AI-native workplace platform.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of the acquisition.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Asana framed the acquisition as part of its broader AI pivot, in which it seeks to build its platform into “the operating system for human-agent teams.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   ” The announcement was announced Thursday afternoon to coincide with Asana’s earnings and investor call.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Built as an AI workflow-automation system , StackAI designs agents to operate within existing business systems, pulling in data from systems like Salesforce, Slack, and Gsuite.
+
+## business_elements
+
+- companies: keyword search, Exa, OpenAI, Anthropic, Google, Meta, Salesforce
+- products: agent, agents, ChatGPT, Claude
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: $75 million, 1, 06, 28, 2026, 23, $20 million, $16 million
+- quotes: the operating system for human-agent teams. / This acquisition accelerates our roadmap and takes us into the next phase of human-agent work,
+
+## evidence_seed
+
+- company_actions: StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of the acquisition. / Asana framed the acquisition as part of its broader AI pivot, in which it seeks to build its platform into “the operating system for human-agent teams. / ” The announcement was announced Thursday afternoon to coincide with Asana’s earnings and investor call.
+- case_details: 暂无公开信息
+- workflow_changes: Built as an AI workflow-automation system , StackAI designs agents to operate within existing business systems, pulling in data from systems like Salesforce, Slack, and Gsuite.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Asana acquires no-code agent-builder StackAI | TechCrunch [...] Asana has acquired the workflow automation company StackAI for $75 million, part of a larger effort to position itself as an AI-native workplace platform. StackAI’s founders, Tony Rosinol and Bernard Aceituno, will join Asana as part of
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

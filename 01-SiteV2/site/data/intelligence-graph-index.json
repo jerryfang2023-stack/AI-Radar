@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "V3.3.6-business-title-hermes-handoff",
-    "generatedAt": "2026-06-15T03:58:57.818Z",
+    "generatedAt": "2026-06-15T07:56:17.144Z",
     "activeDate": "2026-06-15",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -28,14 +28,14 @@
   },
   "summary": {
     "activeDate": "2026-06-15",
-    "totalCards": 260,
-    "todayCards": 18,
+    "totalCards": 256,
+    "todayCards": 14,
     "todayTop10": 10,
-    "corePoolCandidates": 21,
-    "linkedCorePoolCards": 19,
-    "candidateOnlyCorePool": 3,
-    "relationshipNodes": 28,
-    "relationshipEdges": 70,
+    "corePoolCandidates": 17,
+    "linkedCorePoolCards": 13,
+    "candidateOnlyCorePool": 4,
+    "relationshipNodes": 26,
+    "relationshipEdges": 53,
     "relationshipClusters": 2,
     "tagAssociations": 8,
     "trendLinks": 16,
@@ -44,53 +44,48 @@
   "dailyLens": {
     "top10CardIds": [
       "SIG-20260615-A02",
-      "SIG-20260615-A03",
-      "SIG-20260615-A01",
-      "SIG-20260615-A17",
-      "SIG-20260615-A13",
-      "SIG-20260615-A16",
-      "SIG-20260615-A05",
-      "SIG-20260615-A04",
-      "SIG-20260615-A09",
-      "SIG-20260615-A15"
-    ],
-    "corePoolCardIds": [
-      "POOL-2026-06-15-P-005",
-      "POOL-2026-06-15-P-014",
-      "SIG-20260615-A02",
-      "SIG-20260615-A03",
-      "SIG-20260615-A01",
-      "SIG-20260615-A17",
       "SIG-20260615-A11",
-      "SIG-20260615-A13",
-      "SIG-20260615-A16",
+      "SIG-20260615-A10",
       "SIG-20260615-A05",
+      "SIG-20260615-A03",
       "SIG-20260615-A06",
       "SIG-20260615-A04",
-      "SIG-20260614-A01",
       "SIG-20260615-A09",
       "SIG-20260615-A14",
-      "SIG-20260615-A15",
-      "SIG-20260615-A21",
-      "SIG-20260615-A12",
+      "SIG-20260615-A13"
+    ],
+    "corePoolCardIds": [
+      "POOL-2026-06-15-P-006",
+      "POOL-2026-06-15-P-063",
+      "POOL-2026-06-15-P-033",
+      "SIG-20260615-A02",
+      "SIG-20260615-A11",
+      "SIG-20260615-A10",
+      "SIG-20260615-A05",
+      "POOL-2026-06-15-P-056",
+      "SIG-20260615-A03",
+      "SIG-20260615-A06",
+      "SIG-20260615-A01",
+      "SIG-20260615-A04",
+      "SIG-20260615-A09",
+      "SIG-20260615-A14",
+      "SIG-20260615-A13",
       "SIG-20260615-A07",
-      "SIG-20260615-A08",
-      "SIG-20260615-A19",
-      "POOL-2026-06-15-P-086"
+      "SIG-20260615-A08"
     ],
     "largeCompanyTop10": [
       {
-        "id": "SIG-20260615-A16",
-        "vendor": "nvidia",
-        "title": "blogs ：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
+        "id": "SIG-20260615-A11",
+        "vendor": "anthropic",
+        "title": "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
       },
       {
         "id": "SIG-20260615-A04",
-        "vendor": "microsoft",
-        "title": "devblogs ：Microsoft Agent Framework Version 1.0"
+        "vendor": "amazon",
+        "title": "aws 应用 agentic AI"
       },
       {
-        "id": "SIG-20260615-A15",
+        "id": "SIG-20260615-A09",
         "vendor": "google",
         "title": "Google 如何用 AI 重塑搜索"
       }
@@ -99,65 +94,65 @@
       {
         "category": "case",
         "label": "案例",
-        "today": 10,
-        "last7": 49,
-        "last30": 115,
-        "total": 115,
+        "today": 5,
+        "last7": 44,
+        "last30": 110,
+        "total": 110,
         "topTags": [
           {
             "tag": "customer-enterprise",
             "label": "大中型企业",
-            "count": 10
+            "count": 5
           },
           {
             "tag": "evidence-customer-adoption",
             "label": "客户采用",
-            "count": 10
+            "count": 5
           },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 10
+            "count": 5
           },
           {
             "tag": "track-enterprise-workflow",
             "label": "企业工作流",
-            "count": 10
+            "count": 5
           },
           {
-            "tag": "track-ai-infra",
-            "label": "AI 基础设施",
-            "count": 4
+            "tag": "customer-developer-team",
+            "label": "开发团队",
+            "count": 2
           }
         ]
       },
       {
         "category": "funding",
         "label": "融资",
-        "today": 3,
-        "last7": 20,
-        "last30": 39,
-        "total": 39,
+        "today": 2,
+        "last7": 19,
+        "last30": 38,
+        "total": 38,
         "topTags": [
           {
             "tag": "evidence-funding",
             "label": "融资证据",
-            "count": 3
+            "count": 2
           },
           {
             "tag": "stage-rising",
             "label": "升温",
-            "count": 3
+            "count": 2
           },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 3
+            "count": 2
           },
           {
             "tag": "scenario-construction-real-estate",
             "label": "建筑地产",
-            "count": 2
+            "count": 1
           },
           {
             "tag": "track-ai-infra",
@@ -169,35 +164,35 @@
       {
         "category": "product-service",
         "label": "产品",
-        "today": 5,
-        "last7": 36,
-        "last30": 106,
-        "total": 106,
+        "today": 7,
+        "last7": 38,
+        "last30": 108,
+        "total": 108,
         "topTags": [
           {
             "tag": "evidence-product-launch",
             "label": "产品发布",
-            "count": 5
+            "count": 7
           },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 5
+            "count": 7
           },
           {
             "tag": "track-ai-infra",
             "label": "AI 基础设施",
-            "count": 4
+            "count": 7
           },
           {
             "tag": "customer-enterprise",
             "label": "大中型企业",
-            "count": 1
+            "count": 2
           },
           {
-            "tag": "evidence-partnership-integration",
-            "label": "合作集成",
-            "count": 1
+            "tag": "function-procurement-bidding",
+            "label": "采购投标",
+            "count": 2
           }
         ]
       }
@@ -205,19 +200,19 @@
   },
   "cards": [
     {
-      "id": "SIG-20260615-A05",
+      "id": "SIG-20260615-A04",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG",
-      "subject": "AI",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
+      "title": "aws 应用 agentic AI",
+      "subject": "Building Supercharger",
+      "sourceName": "aws.amazon.com",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 662,
-      "evidenceScore": 62,
+      "rankScore": 626,
+      "evidenceScore": 44,
       "poolRoutes": [
         "core_pool"
       ],
@@ -229,8 +224,8 @@
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
+      "largeVendor": true,
+      "largeVendorKey": "amazon",
       "tags": {
         "track": [
           "track-ai-agent",
@@ -301,13 +296,14 @@
           "label": "客户采用"
         }
       ],
-      "fact": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
+      "fact": "aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。",
       "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "aws 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
         "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
         "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
@@ -316,7 +312,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A15",
+      "id": "SIG-20260615-A09",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "case",
@@ -348,8 +344,12 @@
           "track-enterprise-workflow",
           "track-ai-infra"
         ],
-        "function": [],
-        "scenario": [],
+        "function": [
+          "function-procurement-bidding"
+        ],
+        "scenario": [
+          "scenario-bidding-response"
+        ],
         "customer": [
           "customer-enterprise"
         ],
@@ -367,6 +367,8 @@
         "track-ai-agent",
         "track-enterprise-workflow",
         "track-ai-infra",
+        "function-procurement-bidding",
+        "scenario-bidding-response",
         "customer-enterprise",
         "evidence-partnership-integration",
         "evidence-customer-adoption",
@@ -384,6 +386,14 @@
         {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
+        },
+        {
+          "id": "function-procurement-bidding",
+          "label": "采购投标"
+        },
+        {
+          "id": "scenario-bidding-response",
+          "label": "标书响应"
         },
         {
           "id": "customer-enterprise",
@@ -412,97 +422,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A12",
-      "date": "2026-06-15",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图",
-      "subject": "NVIDIA",
-      "sourceName": "NVIDIA AI Blog",
-      "sourceUrl": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/",
-      "sourceLevel": "S",
-      "importanceScore": 5,
-      "rankScore": 610,
-      "evidenceScore": 20,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "nvidia",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-first-party"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-infra",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-first-party"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "blogs 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
-      "evidencePoints": [],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260615-A13",
+      "id": "SIG-20260615-A05",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "case",
@@ -598,19 +518,19 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A04",
+      "id": "SIG-20260615-A03",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "devblogs ：Microsoft Agent Framework Version 1.0",
-      "subject": "Microsoft",
-      "sourceName": "devblogs.microsoft.com",
-      "sourceUrl": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
-      "sourceLevel": "S",
+      "title": "langchain 应用 Deep Agents and LangSmith",
+      "subject": "Langchain",
+      "sourceName": "langchain.com",
+      "sourceUrl": "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith",
+      "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 660,
-      "evidenceScore": 70,
+      "rankScore": 666,
+      "evidenceScore": 66,
       "poolRoutes": [
         "core_pool"
       ],
@@ -622,8 +542,8 @@
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "microsoft",
+      "largeVendor": false,
+      "largeVendorKey": "",
       "tags": {
         "track": [
           "track-ai-agent",
@@ -646,7 +566,7 @@
         "stage": [],
         "region": [],
         "source": [
-          "source-first-party"
+          "source-industry-data"
         ]
       },
       "flatTags": [
@@ -658,7 +578,7 @@
         "customer-developer-team",
         "customer-enterprise",
         "evidence-customer-adoption",
-        "source-first-party"
+        "source-industry-data"
       ],
       "displayTags": [
         {
@@ -694,105 +614,12 @@
           "label": "客户采用"
         }
       ],
-      "fact": "devblogs 的原文 AI 事件：Microsoft Agent Framework Version 1.0。该来源披露的是 devblogs 的原文 AI 事件 相关的 AI 基础设施、模型部署或智能体能力事件。",
+      "fact": "langchain 应用原文所述场景：Deep Agents and LangSmith。该来源披露的是 langchain 相关的具体 AI 商业事件。",
       "evidencePoints": [
-        "devblogs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "langchain 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260615-A16",
-      "date": "2026-06-15",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "blogs ：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards",
-      "subject": "Nvidia",
-      "sourceName": "NVIDIA AI Blog",
-      "sourceUrl": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/",
-      "sourceLevel": "S",
-      "importanceScore": 5,
-      "rankScore": 670,
-      "evidenceScore": 70,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "nvidia",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-first-party"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-infra",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-first-party"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "blogs 的原文事件标题：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards。该来源披露的是 blogs 的原文事件标题 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "blogs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
         "能观察真实客户、业务流程或采购场景",
         "有较完整的原文事实支撑"
       ],
@@ -802,191 +629,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A14",
-      "date": "2026-06-15",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
-      "subject": "Scout",
-      "sourceName": "techcrunch.com",
-      "sourceUrl": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
-      "sourceLevel": "A",
-      "importanceScore": 5,
-      "rankScore": 628,
-      "evidenceScore": 44,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "microsoft",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-business-media"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-business-media"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
-      "evidencePoints": [],
-      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260615-A11",
-      "date": "2026-06-15",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "podcasters ：State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance",
-      "subject": "Spotify",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/State-of-AI-2024-Frontier-Models--AI-Geopolitics-and-The-Robotics-Renaissance--Nathan-Benaich--Founder--Air-Street-Capital-e2qvc5i",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 674,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-sales"
-        ],
-        "scenario": [
-          "scenario-sales-briefing"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "function-sales",
-        "scenario-sales-briefing",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-sales",
-          "label": "销售"
-        },
-        {
-          "id": "scenario-sales-briefing",
-          "label": "销售日报"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "podcasters 的原文 AI 事件：State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260615-A17",
+      "id": "SIG-20260615-A10",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "case",
@@ -1089,117 +732,6 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A06",
-      "date": "2026-06-15",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "podcasters ：Building the Easy Button for Generative AI",
-      "subject": "Writer",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 662,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-coding",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-engineering"
-        ],
-        "scenario": [
-          "scenario-construction-real-estate"
-        ],
-        "customer": [
-          "customer-developer-team",
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-coding",
-        "track-enterprise-workflow",
-        "function-engineering",
-        "scenario-construction-real-estate",
-        "customer-developer-team",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "podcasters 的原文 AI 事件：Building the Easy Button for Generative AI。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260615-A02",
       "date": "2026-06-15",
       "type": "signal_card",
@@ -1286,106 +818,19 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A03",
-      "date": "2026-06-15",
-      "type": "signal_card",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "latent ：[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena",
-      "subject": "LMArena",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 688,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent"
-        ],
-        "function": [],
-        "scenario": [
-          "scenario-construction-real-estate"
-        ],
-        "customer": [],
-        "evidence": [
-          "evidence-funding"
-        ],
-        "stage": [
-          "stage-rising"
-        ],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "scenario-construction-real-estate",
-        "evidence-funding",
-        "stage-rising",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
-        },
-        {
-          "id": "evidence-funding",
-          "label": "融资证据"
-        },
-        {
-          "id": "stage-rising",
-          "label": "升温"
-        }
-      ],
-      "fact": "latent 的原文事件标题：[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena。该来源披露的是 latent 的原文事件标题 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260615-A01",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "prnewswire 融资 $30M",
-      "subject": "Prnewswire",
+      "title": "Willow 融资 $7M",
+      "subject": "Willow",
       "sourceName": "prnewswire.com",
-      "sourceUrl": "https://www.prnewswire.com/news-releases/dapple-closes-30m-seed-to-scale-the-enterprise-os-cloud-302795947.html",
+      "sourceUrl": "https://www.prnewswire.com/il/news-releases/willow-raises-7m-seed-to-ensure-enterprises-can-fully-oversee-and-govern-autonomous-agents-302791492.html",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 682,
-      "evidenceScore": 56,
+      "rankScore": 630,
+      "evidenceScore": 16,
       "poolRoutes": [
         "core_pool"
       ],
@@ -1444,19 +889,21 @@
           "label": "升温"
         }
       ],
-      "fact": "原始来源标题：prnewswire 融资 $30M，用途见原文：the Enterprise OS Cloud。",
+      "fact": "Willow 获得$7M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。",
       "evidencePoints": [],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
+        "能观察真实客户、业务流程或采购场景"
       ],
-      "qualityWarnings": [],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A21",
+      "id": "SIG-20260615-A14",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "product-service",
@@ -1552,19 +999,19 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A07",
+      "id": "SIG-20260615-A08",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户",
-      "subject": "Bloomberg",
-      "sourceName": "Bloomberg：Technology（RSS）",
-      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-14/jack-ma-backed-ant-set-for-high-stakes-overhaul-of-billion-user-alipay-app",
+      "title": "aiweekly 应用 Fireworks AI",
+      "subject": "Aiweekly",
+      "sourceName": "aiweekly.co",
+      "sourceUrl": "https://aiweekly.co/alerts/harvey-cuts-inference-costs-3x-with-fireworks-ai",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 606,
-      "evidenceScore": 44,
+      "rankScore": 594,
+      "evidenceScore": 16,
       "poolRoutes": [
         "core_pool"
       ],
@@ -1581,7 +1028,99 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow"
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
+        "evidence-product-launch",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "aiweekly 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "evidencePoints": [],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260615-A11",
+      "date": "2026-06-15",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告",
+      "subject": "Bloomberg",
+      "sourceName": "Bloomberg：Technology（RSS）",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-15/anthropic-block-marks-us-reversal-warning-to-silicon-valley",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 685,
+      "evidenceScore": 44,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "anthropic",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
         ],
         "function": [
           "function-procurement-bidding"
@@ -1604,6 +1143,7 @@
       "flatTags": [
         "track-ai-agent",
         "track-enterprise-workflow",
+        "track-ai-infra",
         "function-procurement-bidding",
         "scenario-bidding-response",
         "customer-enterprise",
@@ -1618,6 +1158,10 @@
         {
           "id": "track-enterprise-workflow",
           "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
           "id": "function-procurement-bidding",
@@ -1636,91 +1180,13 @@
           "label": "产品发布"
         }
       ],
-      "fact": "蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。",
+      "fact": "美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。",
       "evidencePoints": [],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "value": "值得关注：涉及政府持股、公共利益或关键 AI 公司治理边界；影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260615-A09",
-      "date": "2026-06-15",
-      "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "latent ：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security",
-      "subject": "BT6",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 650,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-infra",
-        "evidence-product-launch",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "latent 的原文 AI 事件：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
+        "涉及政府持股、公共利益或关键 AI 公司治理边界",
         "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
+        "能观察真实客户、业务流程或采购场景"
       ],
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
@@ -1728,7 +1194,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A19",
+      "id": "SIG-20260615-A07",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "product-service",
@@ -1806,18 +1272,18 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260615-A08",
+      "id": "SIG-20260615-A06",
       "date": "2026-06-15",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "latent ：[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor",
+      "title": "Latent Space：视频 Agent 模型成为多模态应用新方向",
       "subject": "Latent",
       "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold",
+      "sourceUrl": "https://www.latent.space/p/video-agents",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 598,
+      "rankScore": 640,
       "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
@@ -1830,15 +1296,17 @@
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "openai",
+      "largeVendor": false,
+      "largeVendorKey": "",
       "tags": {
         "track": [
           "track-ai-agent",
           "track-ai-infra"
         ],
         "function": [],
-        "scenario": [],
+        "scenario": [
+          "scenario-construction-real-estate"
+        ],
         "customer": [],
         "evidence": [
           "evidence-product-launch"
@@ -1852,6 +1320,7 @@
       "flatTags": [
         "track-ai-agent",
         "track-ai-infra",
+        "scenario-construction-real-estate",
         "evidence-product-launch",
         "source-industry-data"
       ],
@@ -1865,17 +1334,246 @@
           "label": "AI 基础设施"
         },
         {
+          "id": "scenario-construction-real-estate",
+          "label": "建筑地产"
+        },
+        {
           "id": "evidence-product-launch",
           "label": "产品发布"
         }
       ],
-      "fact": "latent 的原文 AI 事件：[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
+      "fact": "Latent Space：视频 Agent 模型成为多模态应用新方向。该来源披露的是 Latent Space 相关的 AI 基础设施、模型部署或智能体能力事件。",
       "evidencePoints": [
         "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
         "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260615-A12",
+      "date": "2026-06-15",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压",
+      "subject": "AI business signal",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceUrl": "https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 665,
+      "evidenceScore": 48,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "anthropic",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-coding",
+          "track-enterprise-workflow",
+          "track-ai-infra",
+          "track-ai-governance"
+        ],
+        "function": [
+          "function-engineering",
+          "function-procurement-bidding"
+        ],
+        "scenario": [
+          "scenario-bidding-response",
+          "scenario-agent-governance"
+        ],
+        "customer": [
+          "customer-developer-team",
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-business-media"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-coding",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "track-ai-governance",
+        "function-engineering",
+        "function-procurement-bidding",
+        "scenario-bidding-response",
+        "scenario-agent-governance",
+        "customer-developer-team",
+        "customer-enterprise",
+        "evidence-product-launch",
+        "source-business-media"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
+        },
+        {
+          "id": "function-engineering",
+          "label": "工程研发"
+        },
+        {
+          "id": "function-procurement-bidding",
+          "label": "采购投标"
+        },
+        {
+          "id": "scenario-bidding-response",
+          "label": "标书响应"
+        },
+        {
+          "id": "scenario-agent-governance",
+          "label": "Agent 权限治理"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "亚马逊 CEO Andy Jassy 与其他五家科技公司高管向特朗普政府报告 Anthropic Fable 模型存在安全漏洞，尽管亚马逊是 Anthropic 最大投资者之一。数小时内，白宫通过出口管制令强制该模型下线。此举可能是一项合法的安全政策决定，但也显示出对不便企业的武力展示。",
+      "evidencePoints": [],
+      "value": "值得关注：涉及政府持股、公共利益或关键 AI 公司治理边界；影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "涉及政府持股、公共利益或关键 AI 公司治理边界",
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260615-A13",
+      "date": "2026-06-15",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "AI裁员浪潮成为火药桶",
+      "subject": "TrueUp",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceUrl": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 610,
+      "evidenceScore": 48,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-business-media"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
+        "evidence-product-launch",
+        "source-business-media"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是\"银弹借口\"。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthr...",
+      "evidencePoints": [],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
         "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
@@ -28375,7 +28073,7 @@
   ],
   "corePoolCandidates": [
     {
-      "id": "POOL-2026-06-15-P-005",
+      "id": "POOL-2026-06-15-P-006",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "product-service",
@@ -28392,7 +28090,7 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-005"
+        "P-006"
       ],
       "linkedCardId": "",
       "status": "pooled",
@@ -28424,46 +28122,45 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-014",
+      "id": "POOL-2026-06-15-P-063",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "businesswire 融资 $14M",
-      "subject": "businesswire",
-      "sourceName": "businesswire.com",
-      "sourceUrl": "https://www.businesswire.com/news/home/20260310158768/en/Rebar-Closes-%2414M-Series-A-Led-by-Prudence-to-Rapidly-Scale-its-AI-Platform-for-HVAC-Electrical-and-Plumbing-Industries",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "富国银行：亚马逊 AWS 为降低 AI 推理成本，有望采购高通 AI200 芯片",
+      "subject": "富国银行",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/964/150.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 890,
-      "evidenceScore": 97,
+      "rankScore": 960,
+      "evidenceScore": 43,
       "poolRoutes": [
-        "core_pool",
-        "emerging_pool"
+        "core_pool"
       ],
       "poolRefs": [
-        "P-014"
+        "P-063"
       ],
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
+      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
       "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
+        "页面类型不适合直接成卡，需要回到具体事件页"
       ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
+      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
       "promotePriority": "low",
-      "largeVendor": false,
-      "largeVendorKey": "",
+      "largeVendor": true,
+      "largeVendorKey": "amazon",
       "tags": {},
       "flatTags": [],
       "displayTags": [
         {
-          "id": "funding",
-          "label": "融资"
+          "id": "product-service",
+          "label": "产品"
         }
       ],
-      "fact": "businesswire 获得$14M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。",
+      "fact": "富国银行报告指出，高通有望与亚马逊 AWS 深化合作，为其提供 AI200 等新一代 AI 芯片，以降低推理成本、提升运营利润率。高通于 2025 年 10 月发布 AI200，单颗支持 768GB 内存，并推出专为机架级 LLM、LMM 推理设计的方案。AI200 预计 2026 年扩大部署。AWS 已在提供性价比强劲的高通 AI100 Ultra 芯片服务，富国银行认为 AWS 有望成为高通最重要的超大规模云端合作伙伴。",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -28474,7 +28171,57 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-026",
+      "id": "POOL-2026-06-15-P-033",
+      "date": "2026-06-15",
+      "type": "core_pool_candidate",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "AethexAI 融资 $3M",
+      "subject": "AethexAI",
+      "sourceName": "techafricanews.com",
+      "sourceUrl": "https://techafricanews.com/2026/06/04/aethexai-launches-with-3m-pre-seed-to-scale-enterprise-voice-ai-across-africa-and-the-middle-east/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 810,
+      "evidenceScore": 97,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "poolRefs": [
+        "P-033"
+      ],
+      "linkedCardId": "",
+      "status": "pooled",
+      "promotionStatus": "candidate_only",
+      "notPromotedReason": "来源不可审计，需要补齐原文或来源等级",
+      "notPromotedIssues": [
+        "来源不可审计，需要补齐原文或来源等级"
+      ],
+      "repairSuggestion": "补齐可审计原文链接、来源等级，避免只依赖搜索入口或聚合页。",
+      "promotePriority": "medium",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "funding",
+          "label": "融资"
+        }
+      ],
+      "fact": "AethexAI 获得$3M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。",
+      "evidencePoints": [],
+      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
+      "selectionReasons": [
+        "进入当天 Core Pool 候选池",
+        "保留为完整证据池材料"
+      ],
+      "qualityWarnings": [],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-15-P-030",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "funding",
@@ -28491,7 +28238,7 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-026"
+        "P-030"
       ],
       "linkedCardId": "SIG-20260615-A02",
       "status": "signal_card",
@@ -28562,49 +28309,53 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-036",
+      "id": "POOL-2026-06-15-P-068",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "latent ：[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena",
-      "subject": "LMArena",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告",
+      "subject": "Bloomberg",
+      "sourceName": "Bloomberg：Technology（RSS）",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-15/anthropic-block-marks-us-reversal-warning-to-silicon-valley",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 688,
-      "evidenceScore": 62,
+      "rankScore": 685,
+      "evidenceScore": 44,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-036"
+        "P-068"
       ],
-      "linkedCardId": "SIG-20260615-A03",
+      "linkedCardId": "SIG-20260615-A11",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
+      "largeVendor": true,
+      "largeVendorKey": "anthropic",
       "tags": {
         "track": [
-          "track-ai-agent"
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
         ],
-        "function": [],
+        "function": [
+          "function-procurement-bidding"
+        ],
         "scenario": [
-          "scenario-construction-real-estate"
+          "scenario-bidding-response"
         ],
-        "customer": [],
+        "customer": [
+          "customer-enterprise"
+        ],
         "evidence": [
-          "evidence-funding"
+          "evidence-product-launch"
         ],
-        "stage": [
-          "stage-rising"
-        ],
+        "stage": [],
         "region": [],
         "source": [
           "source-industry-data"
@@ -28612,9 +28363,12 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "scenario-construction-real-estate",
-        "evidence-funding",
-        "stage-rising",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "function-procurement-bidding",
+        "scenario-bidding-response",
+        "customer-enterprise",
+        "evidence-product-launch",
         "source-industry-data"
       ],
       "displayTags": [
@@ -28623,27 +28377,37 @@
           "label": "AI Agent"
         },
         {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
         },
         {
-          "id": "evidence-funding",
-          "label": "融资证据"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
-          "id": "stage-rising",
-          "label": "升温"
+          "id": "function-procurement-bidding",
+          "label": "采购投标"
+        },
+        {
+          "id": "scenario-bidding-response",
+          "label": "标书响应"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "fact": "latent 的原文事件标题：[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena。该来源披露的是 latent 的原文事件标题 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "fact": "美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。",
+      "evidencePoints": [],
+      "value": "值得关注：涉及政府持股、公共利益或关键 AI 公司治理边界；影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
+        "涉及政府持股、公共利益或关键 AI 公司治理边界",
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景"
       ],
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
@@ -28651,92 +28415,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-019",
-      "date": "2026-06-15",
-      "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "prnewswire 融资 $30M",
-      "subject": "Prnewswire",
-      "sourceName": "prnewswire.com",
-      "sourceUrl": "https://www.prnewswire.com/news-releases/dapple-closes-30m-seed-to-scale-the-enterprise-os-cloud-302795947.html",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 682,
-      "evidenceScore": 56,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-019"
-      ],
-      "linkedCardId": "SIG-20260615-A01",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent"
-        ],
-        "function": [],
-        "scenario": [
-          "scenario-construction-real-estate"
-        ],
-        "customer": [],
-        "evidence": [
-          "evidence-funding"
-        ],
-        "stage": [
-          "stage-rising"
-        ],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "scenario-construction-real-estate",
-        "evidence-funding",
-        "stage-rising",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
-        },
-        {
-          "id": "evidence-funding",
-          "label": "融资证据"
-        },
-        {
-          "id": "stage-rising",
-          "label": "升温"
-        }
-      ],
-      "fact": "原始来源标题：prnewswire 融资 $30M，用途见原文：the Enterprise OS Cloud。",
-      "evidencePoints": [],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-15-P-069",
+      "id": "POOL-2026-06-15-P-071",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "case",
@@ -28753,9 +28432,9 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-069"
+        "P-071"
       ],
-      "linkedCardId": "SIG-20260615-A17",
+      "linkedCardId": "SIG-20260615-A10",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -28841,109 +28520,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-032",
-      "date": "2026-06-15",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "podcasters ：State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance",
-      "subject": "Spotify",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/State-of-AI-2024-Frontier-Models--AI-Geopolitics-and-The-Robotics-Renaissance--Nathan-Benaich--Founder--Air-Street-Capital-e2qvc5i",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 674,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-032"
-      ],
-      "linkedCardId": "SIG-20260615-A11",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-sales"
-        ],
-        "scenario": [
-          "scenario-sales-briefing"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "function-sales",
-        "scenario-sales-briefing",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-sales",
-          "label": "销售"
-        },
-        {
-          "id": "scenario-sales-briefing",
-          "label": "销售日报"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "podcasters 的原文 AI 事件：State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-15-P-054",
+      "id": "POOL-2026-06-15-P-059",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "case",
@@ -28960,9 +28537,9 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-054"
+        "P-059"
       ],
-      "linkedCardId": "SIG-20260615-A13",
+      "linkedCardId": "SIG-20260615-A05",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -29041,120 +28618,75 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-064",
+      "id": "POOL-2026-06-15-P-056",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "blogs ：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards",
-      "subject": "Nvidia",
-      "sourceName": "NVIDIA AI Blog",
-      "sourceUrl": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/",
-      "sourceLevel": "S",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "datastorage ：How Enterprises Are Optimizing AI Inference Costs at Scale",
+      "subject": "datastorage 的原文 AI 事件",
+      "sourceName": "datastorage.com",
+      "sourceUrl": "https://datastorage.com/articles/how-enterprises-are-optimizing-ai-inference-costs-at-scale/",
+      "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 670,
-      "evidenceScore": 70,
+      "rankScore": 669.9999999999999,
+      "evidenceScore": 79,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-064"
+        "P-056"
       ],
-      "linkedCardId": "SIG-20260615-A16",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "nvidia",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-first-party"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-infra",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-first-party"
+      "linkedCardId": "",
+      "status": "pooled",
+      "promotionStatus": "candidate_only",
+      "notPromotedReason": "来源不可审计，需要补齐原文或来源等级",
+      "notPromotedIssues": [
+        "来源不可审计，需要补齐原文或来源等级"
       ],
+      "repairSuggestion": "补齐可审计原文链接、来源等级，避免只依赖搜索入口或聚合页。",
+      "promotePriority": "medium",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {},
+      "flatTags": [],
       "displayTags": [
         {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
+          "id": "product-service",
+          "label": "产品"
         }
       ],
-      "fact": "blogs 的原文事件标题：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards。该来源披露的是 blogs 的原文事件标题 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "blogs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "fact": "datastorage 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "evidencePoints": [],
+      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
+        "进入当天 Core Pool 候选池",
+        "保留为完整证据池材料"
       ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
+      "qualityWarnings": [],
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-028",
+      "id": "POOL-2026-06-15-P-020",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG",
-      "subject": "AI",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
+      "title": "langchain 应用 Deep Agents and LangSmith",
+      "subject": "Langchain",
+      "sourceName": "langchain.com",
+      "sourceUrl": "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 662,
-      "evidenceScore": 62,
+      "rankScore": 666,
+      "evidenceScore": 66,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-028"
+        "P-020"
       ],
-      "linkedCardId": "SIG-20260615-A05",
+      "linkedCardId": "SIG-20260615-A03",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -29233,9 +28765,9 @@
           "label": "客户采用"
         }
       ],
-      "fact": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
+      "fact": "langchain 应用原文所述场景：Deep Agents and LangSmith。该来源披露的是 langchain 相关的具体 AI 商业事件。",
       "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "langchain 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
@@ -29248,24 +28780,24 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-031",
+      "id": "POOL-2026-06-15-P-039",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "podcasters ：Building the Easy Button for Generative AI",
-      "subject": "Writer",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Latent Space：视频 Agent 模型成为多模态应用新方向",
+      "subject": "Latent",
+      "sourceName": "Latent Space",
+      "sourceUrl": "https://www.latent.space/p/video-agents",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 662,
+      "rankScore": 640,
       "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-031"
+        "P-039"
       ],
       "linkedCardId": "SIG-20260615-A06",
       "status": "signal_card",
@@ -29279,21 +28811,15 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-coding",
-          "track-enterprise-workflow"
+          "track-ai-infra"
         ],
-        "function": [
-          "function-engineering"
-        ],
+        "function": [],
         "scenario": [
           "scenario-construction-real-estate"
         ],
-        "customer": [
-          "customer-developer-team",
-          "customer-enterprise"
-        ],
+        "customer": [],
         "evidence": [
-          "evidence-customer-adoption"
+          "evidence-product-launch"
         ],
         "stage": [],
         "region": [],
@@ -29303,13 +28829,9 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-coding",
-        "track-enterprise-workflow",
-        "function-engineering",
+        "track-ai-infra",
         "scenario-construction-real-estate",
-        "customer-developer-team",
-        "customer-enterprise",
-        "evidence-customer-adoption",
+        "evidence-product-launch",
         "source-industry-data"
       ],
       "displayTags": [
@@ -29318,150 +28840,21 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
           "id": "scenario-construction-real-estate",
           "label": "建筑地产"
         },
         {
-          "id": "customer-developer-team",
-          "label": "开发团队"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "fact": "podcasters 的原文 AI 事件：Building the Easy Button for Generative AI。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
+      "fact": "Latent Space：视频 Agent 模型成为多模态应用新方向。该来源披露的是 Latent Space 相关的 AI 基础设施、模型部署或智能体能力事件。",
       "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-15-P-017",
-      "date": "2026-06-15",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "devblogs ：Microsoft Agent Framework Version 1.0",
-      "subject": "Microsoft",
-      "sourceName": "devblogs.microsoft.com",
-      "sourceUrl": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
-      "sourceLevel": "S",
-      "importanceScore": 5,
-      "rankScore": 660,
-      "evidenceScore": 70,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-017"
-      ],
-      "linkedCardId": "SIG-20260615-A04",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "microsoft",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-coding",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-engineering"
-        ],
-        "scenario": [
-          "scenario-construction-real-estate"
-        ],
-        "customer": [
-          "customer-developer-team",
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-first-party"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-coding",
-        "track-enterprise-workflow",
-        "function-engineering",
-        "scenario-construction-real-estate",
-        "customer-developer-team",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-first-party"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "devblogs 的原文 AI 事件：Microsoft Agent Framework Version 1.0。该来源披露的是 devblogs 的原文 AI 事件 相关的 AI 基础设施、模型部署或智能体能力事件。",
-      "evidencePoints": [
-        "devblogs 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
@@ -29475,26 +28868,26 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-060",
-      "date": "2026-06-14",
+      "id": "POOL-2026-06-15-P-014",
+      "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Jedify 获得$24M 融资，押注销售线索和收入团队协作",
-      "subject": "Jedify",
-      "sourceName": "instagram.com",
-      "sourceUrl": "https://www.instagram.com/p/DZaq23zCT9J/",
+      "title": "Willow 融资 $7M",
+      "subject": "Willow",
+      "sourceName": "prnewswire.com",
+      "sourceUrl": "https://www.prnewswire.com/il/news-releases/willow-raises-7m-seed-to-ensure-enterprises-can-fully-oversee-and-govern-autonomous-agents-302791492.html",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 660,
-      "evidenceScore": 34,
+      "rankScore": 630,
+      "evidenceScore": 16,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-060"
+        "P-014"
       ],
-      "linkedCardId": "SIG-20260614-A01",
+      "linkedCardId": "SIG-20260615-A01",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -29507,11 +28900,9 @@
         "track": [
           "track-ai-agent"
         ],
-        "function": [
-          "function-sales"
-        ],
+        "function": [],
         "scenario": [
-          "scenario-sales-briefing"
+          "scenario-construction-real-estate"
         ],
         "customer": [],
         "evidence": [
@@ -29527,8 +28918,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "function-sales",
-        "scenario-sales-briefing",
+        "scenario-construction-real-estate",
         "evidence-funding",
         "stage-rising",
         "source-industry-data"
@@ -29539,12 +28929,8 @@
           "label": "AI Agent"
         },
         {
-          "id": "function-sales",
-          "label": "销售"
-        },
-        {
-          "id": "scenario-sales-briefing",
-          "label": "销售日报"
+          "id": "scenario-construction-real-estate",
+          "label": "建筑地产"
         },
         {
           "id": "evidence-funding",
@@ -29555,10 +28941,8 @@
           "label": "升温"
         }
       ],
-      "fact": "Jedify 获得$24M 融资，押注销售线索和收入团队协作",
-      "evidencePoints": [
-        "instagram 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
+      "fact": "Willow 获得$7M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。",
+      "evidencePoints": [],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
@@ -29571,44 +28955,52 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-030",
+      "id": "POOL-2026-06-15-P-050",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "latent ：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security",
-      "subject": "BT6",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "aws 应用 agentic AI",
+      "subject": "Building Supercharger",
+      "sourceName": "aws.amazon.com",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 650,
-      "evidenceScore": 62,
+      "rankScore": 626,
+      "evidenceScore": 44,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-030"
+        "P-050"
       ],
-      "linkedCardId": "SIG-20260615-A09",
+      "linkedCardId": "SIG-20260615-A04",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
+      "largeVendor": true,
+      "largeVendorKey": "amazon",
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-infra"
+          "track-ai-coding",
+          "track-enterprise-workflow"
         ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [
+          "scenario-construction-real-estate"
+        ],
+        "customer": [
+          "customer-developer-team",
+          "customer-enterprise"
+        ],
         "evidence": [
-          "evidence-product-launch"
+          "evidence-customer-adoption"
         ],
         "stage": [],
         "region": [],
@@ -29618,8 +29010,13 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-infra",
-        "evidence-product-launch",
+        "track-ai-coding",
+        "track-enterprise-workflow",
+        "function-engineering",
+        "scenario-construction-real-estate",
+        "customer-developer-team",
+        "customer-enterprise",
+        "evidence-customer-adoption",
         "source-industry-data"
       ],
       "displayTags": [
@@ -29628,92 +29025,24 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "latent 的原文 AI 事件：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-15-P-016",
-      "date": "2026-06-15",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
-      "subject": "Scout",
-      "sourceName": "techcrunch.com",
-      "sourceUrl": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
-      "sourceLevel": "A",
-      "importanceScore": 5,
-      "rankScore": 628,
-      "evidenceScore": 44,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-016"
-      ],
-      "linkedCardId": "SIG-20260615-A14",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "microsoft",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-business-media"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-business-media"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
+          "id": "track-ai-coding",
+          "label": "AI Coding"
         },
         {
           "id": "track-enterprise-workflow",
           "label": "企业工作流"
+        },
+        {
+          "id": "function-engineering",
+          "label": "工程研发"
+        },
+        {
+          "id": "scenario-construction-real-estate",
+          "label": "建筑地产"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
         },
         {
           "id": "customer-enterprise",
@@ -29724,12 +29053,14 @@
           "label": "客户采用"
         }
       ],
-      "fact": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
-      "evidencePoints": [],
-      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "fact": "aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。",
+      "evidencePoints": [
+        "aws 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "影响 AI 落地的治理、合规或安全边界",
         "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
         "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
@@ -29738,7 +29069,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-057",
+      "id": "POOL-2026-06-15-P-062",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "case",
@@ -29755,9 +29086,9 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-057"
+        "P-062"
       ],
-      "linkedCardId": "SIG-20260615-A15",
+      "linkedCardId": "SIG-20260615-A09",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -29772,8 +29103,12 @@
           "track-enterprise-workflow",
           "track-ai-infra"
         ],
-        "function": [],
-        "scenario": [],
+        "function": [
+          "function-procurement-bidding"
+        ],
+        "scenario": [
+          "scenario-bidding-response"
+        ],
         "customer": [
           "customer-enterprise"
         ],
@@ -29791,6 +29126,8 @@
         "track-ai-agent",
         "track-enterprise-workflow",
         "track-ai-infra",
+        "function-procurement-bidding",
+        "scenario-bidding-response",
         "customer-enterprise",
         "evidence-partnership-integration",
         "evidence-customer-adoption",
@@ -29808,6 +29145,14 @@
         {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
+        },
+        {
+          "id": "function-procurement-bidding",
+          "label": "采购投标"
+        },
+        {
+          "id": "scenario-bidding-response",
+          "label": "标书响应"
         },
         {
           "id": "customer-enterprise",
@@ -29836,7 +29181,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-076",
+      "id": "POOL-2026-06-15-P-082",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "product-service",
@@ -29853,9 +29198,9 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-076"
+        "P-082"
       ],
-      "linkedCardId": "SIG-20260615-A21",
+      "linkedCardId": "SIG-20260615-A14",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -29934,118 +29279,26 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-039",
-      "date": "2026-06-15",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图",
-      "subject": "NVIDIA",
-      "sourceName": "NVIDIA AI Blog",
-      "sourceUrl": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/",
-      "sourceLevel": "S",
-      "importanceScore": 5,
-      "rankScore": 610,
-      "evidenceScore": 20,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-039"
-      ],
-      "linkedCardId": "SIG-20260615-A12",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "nvidia",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-first-party"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-infra",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-first-party"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "blogs 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
-      "evidencePoints": [],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-15-P-084",
+      "id": "POOL-2026-06-15-P-080",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户",
-      "subject": "Bloomberg",
-      "sourceName": "Bloomberg：Technology（RSS）",
-      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-14/jack-ma-backed-ant-set-for-high-stakes-overhaul-of-billion-user-alipay-app",
-      "sourceLevel": "B",
+      "title": "AI裁员浪潮成为火药桶",
+      "subject": "TrueUp",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceUrl": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg",
+      "sourceLevel": "A",
       "importanceScore": 5,
-      "rankScore": 606,
-      "evidenceScore": 44,
+      "rankScore": 610,
+      "evidenceScore": 48,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-084"
+        "P-080"
       ],
-      "linkedCardId": "SIG-20260615-A07",
+      "linkedCardId": "SIG-20260615-A13",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -30057,109 +29310,14 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-procurement-bidding"
-        ],
-        "scenario": [
-          "scenario-bidding-response"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "function-procurement-bidding",
-        "scenario-bidding-response",
-        "customer-enterprise",
-        "evidence-product-launch",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-procurement-bidding",
-          "label": "采购投标"
-        },
-        {
-          "id": "scenario-bidding-response",
-          "label": "标书响应"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。",
-      "evidencePoints": [],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-15-P-029",
-      "date": "2026-06-15",
-      "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "latent ：[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor",
-      "subject": "Latent",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 598,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-029"
-      ],
-      "linkedCardId": "SIG-20260615-A08",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "openai",
-      "tags": {
-        "track": [
-          "track-ai-agent",
           "track-ai-infra"
         ],
-        "function": [],
-        "scenario": [],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
         "customer": [],
         "evidence": [
           "evidence-product-launch"
@@ -30167,14 +29325,16 @@
         "stage": [],
         "region": [],
         "source": [
-          "source-industry-data"
+          "source-business-media"
         ]
       },
       "flatTags": [
         "track-ai-agent",
         "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
         "evidence-product-launch",
-        "source-industry-data"
+        "source-business-media"
       ],
       "displayTags": [
         {
@@ -30186,17 +29346,23 @@
           "label": "AI 基础设施"
         },
         {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
           "id": "evidence-product-launch",
           "label": "产品发布"
         }
       ],
-      "fact": "latent 的原文 AI 事件：[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "fact": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是\"银弹借口\"。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthr...",
+      "evidencePoints": [],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
+        "涉及资金流向、预算规模或融资信号",
         "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
@@ -30205,7 +29371,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-035",
+      "id": "POOL-2026-06-15-P-040",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "product-service",
@@ -30222,9 +29388,9 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-035"
+        "P-040"
       ],
-      "linkedCardId": "SIG-20260615-A19",
+      "linkedCardId": "SIG-20260615-A07",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -30285,52 +29451,96 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-15-P-086",
+      "id": "POOL-2026-06-15-P-049",
       "date": "2026-06-15",
       "type": "core_pool_candidate",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "OPPO ColorOS 16 六月更新公布：锁屏岛新增酷狗音乐等，6 月 30 日前完成推送",
-      "subject": "OPPO ColorOS 16 六月更新",
-      "sourceName": "ithome.com",
-      "sourceUrl": "https://www.ithome.com/0/964/299.htm",
+      "title": "aiweekly 应用 Fireworks AI",
+      "subject": "Aiweekly",
+      "sourceName": "aiweekly.co",
+      "sourceUrl": "https://aiweekly.co/alerts/harvey-cuts-inference-costs-3x-with-fireworks-ai",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 390,
-      "evidenceScore": 48,
+      "rankScore": 594,
+      "evidenceScore": 16,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-086"
+        "P-049"
       ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "linkedCardId": "SIG-20260615-A08",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
       "largeVendor": false,
       "largeVendorKey": "",
-      "tags": {},
-      "flatTags": [],
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-infra",
+        "function-sales",
+        "scenario-sales-briefing",
+        "evidence-product-launch",
+        "source-industry-data"
+      ],
       "displayTags": [
         {
-          "id": "product-service",
-          "label": "产品"
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "fact": "OPPO ColorOS 16 六月更新启动分批推送，新增 AI 流体云功能（锁屏岛支持酷狗音乐歌词，流体云支持超级课程表课程信息与支付宝停车计费），小布建议新增足球观赛卡，小布助手接入京东等智能体服务。通信互联新增飞牛私有云设备管理与相册无感连接、领克蓝牙车钥匙。其他更新包括相册端午节水印、离线 AI 人像补光、外卖照片图集、游戏 2K 超清截屏等。更新于 6 月 3 日启动，6 月 30 日前完成，覆盖 ColorOS13 及以上...",
+      "fact": "aiweekly 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
       "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
       ],
-      "qualityWarnings": [],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
       "fromCorePool": true
     }
   ],
@@ -30338,24 +29548,24 @@
     "date": "2026-06-15",
     "nodes": [
       {
-        "id": "category:案例",
-        "label": "案例",
-        "type": "category",
-        "weight": 10,
-        "category": "case"
-      },
-      {
         "id": "category:产品",
         "label": "产品",
         "type": "category",
-        "weight": 5,
+        "weight": 7,
         "category": "product-service"
+      },
+      {
+        "id": "category:案例",
+        "label": "案例",
+        "type": "category",
+        "weight": 5,
+        "category": "case"
       },
       {
         "id": "category:融资",
         "label": "融资",
         "type": "category",
-        "weight": 3,
+        "weight": 2,
         "category": "funding"
       },
       {
@@ -30367,20 +29577,20 @@
         "sourceName": "Bloomberg：Technology（RSS）"
       },
       {
-        "id": "subject:AI",
-        "label": "AI",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "The MAD Podcast (Matt Turck)"
-      },
-      {
-        "id": "subject:BT6",
-        "label": "BT6",
+        "id": "subject:Aiweekly",
+        "label": "Aiweekly",
         "type": "subject",
         "weight": 1,
         "category": "product-service",
-        "sourceName": "Latent Space"
+        "sourceName": "aiweekly.co"
+      },
+      {
+        "id": "subject:Building-Supercharger",
+        "label": "Building Supercharger",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "aws.amazon.com"
       },
       {
         "id": "subject:CuspAI",
@@ -30407,28 +29617,20 @@
         "sourceName": "IT之家（RSS）"
       },
       {
+        "id": "subject:Langchain",
+        "label": "Langchain",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "langchain.com"
+      },
+      {
         "id": "subject:Latent",
         "label": "Latent",
         "type": "subject",
         "weight": 1,
         "category": "product-service",
         "sourceName": "Latent Space"
-      },
-      {
-        "id": "subject:LMArena",
-        "label": "LMArena",
-        "type": "subject",
-        "weight": 1,
-        "category": "funding",
-        "sourceName": "Latent Space"
-      },
-      {
-        "id": "subject:Microsoft",
-        "label": "Microsoft",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "devblogs.microsoft.com"
       },
       {
         "id": "subject:Nathan-Lambert",
@@ -30439,46 +29641,6 @@
         "sourceName": "Nathan Lambert：Interconnects（RSS）"
       },
       {
-        "id": "subject:Nvidia",
-        "label": "Nvidia",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "NVIDIA AI Blog"
-      },
-      {
-        "id": "subject:NVIDIA",
-        "label": "NVIDIA",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "NVIDIA AI Blog"
-      },
-      {
-        "id": "subject:Prnewswire",
-        "label": "Prnewswire",
-        "type": "subject",
-        "weight": 1,
-        "category": "funding",
-        "sourceName": "prnewswire.com"
-      },
-      {
-        "id": "subject:Scout",
-        "label": "Scout",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "techcrunch.com"
-      },
-      {
-        "id": "subject:Spotify",
-        "label": "Spotify",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "The MAD Podcast (Matt Turck)"
-      },
-      {
         "id": "subject:Techcrunch-案例",
         "label": "Techcrunch 案例",
         "type": "subject",
@@ -30487,26 +29649,35 @@
         "sourceName": "TechCrunch：AI（RSS）"
       },
       {
-        "id": "subject:Writer",
-        "label": "Writer",
+        "id": "subject:The-Decoder：AI-News（RSS）",
+        "label": "The Decoder：AI News（RSS）",
         "type": "subject",
         "weight": 1,
-        "category": "case",
-        "sourceName": "The MAD Podcast (Matt Turck)"
+        "category": "product-service",
+        "sourceName": "The Decoder：AI News（RSS）"
+      },
+      {
+        "id": "subject:TrueUp",
+        "label": "TrueUp",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "TechCrunch：AI（RSS）"
+      },
+      {
+        "id": "subject:Willow",
+        "label": "Willow",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "prnewswire.com"
       },
       {
         "id": "signal:track-ai-agent",
         "label": "AI Agent",
         "type": "signal",
-        "weight": 18,
+        "weight": 14,
         "tag": "track-ai-agent"
-      },
-      {
-        "id": "signal:track-enterprise-workflow",
-        "label": "企业工作流",
-        "type": "signal",
-        "weight": 11,
-        "tag": "track-enterprise-workflow"
       },
       {
         "id": "signal:track-ai-infra",
@@ -30516,25 +29687,18 @@
         "tag": "track-ai-infra"
       },
       {
+        "id": "signal:track-enterprise-workflow",
+        "label": "企业工作流",
+        "type": "signal",
+        "weight": 7,
+        "tag": "track-enterprise-workflow"
+      },
+      {
         "id": "signal:track-ai-coding",
         "label": "AI Coding",
         "type": "signal",
         "weight": 3,
         "tag": "track-ai-coding"
-      },
-      {
-        "id": "signal:evidence-product-launch",
-        "label": "产品发布",
-        "type": "signal",
-        "weight": 3,
-        "tag": "evidence-product-launch"
-      },
-      {
-        "id": "signal:evidence-funding",
-        "label": "融资证据",
-        "type": "signal",
-        "weight": 3,
-        "tag": "evidence-funding"
       },
       {
         "id": "signal:scenario-construction-real-estate",
@@ -30544,11 +29708,39 @@
         "tag": "scenario-construction-real-estate"
       },
       {
+        "id": "signal:evidence-funding",
+        "label": "融资证据",
+        "type": "signal",
+        "weight": 2,
+        "tag": "evidence-funding"
+      },
+      {
+        "id": "signal:function-sales",
+        "label": "销售",
+        "type": "signal",
+        "weight": 2,
+        "tag": "function-sales"
+      },
+      {
         "id": "signal:track-ai-governance",
         "label": "AI 治理",
         "type": "signal",
         "weight": 1,
         "tag": "track-ai-governance"
+      },
+      {
+        "id": "signal:evidence-product-launch",
+        "label": "产品发布",
+        "type": "signal",
+        "weight": 1,
+        "tag": "evidence-product-launch"
+      },
+      {
+        "id": "signal:track-enterprise-data",
+        "label": "企业数据智能",
+        "type": "signal",
+        "weight": 1,
+        "tag": "track-enterprise-data"
       }
     ],
     "edges": [
@@ -30558,12 +29750,12 @@
         "label": "关联",
         "weight": 2,
         "cardIds": [
-          "SIG-20260615-A15",
-          "SIG-20260615-A07"
+          "SIG-20260615-A09",
+          "SIG-20260615-A11"
         ],
         "titles": [
           "Google 如何用 AI 重塑搜索",
-          "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户"
+          "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
         ]
       },
       {
@@ -30572,12 +29764,26 @@
         "label": "关联",
         "weight": 2,
         "cardIds": [
-          "SIG-20260615-A15",
-          "SIG-20260615-A07"
+          "SIG-20260615-A09",
+          "SIG-20260615-A11"
         ],
         "titles": [
           "Google 如何用 AI 重塑搜索",
-          "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户"
+          "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
+        ]
+      },
+      {
+        "from": "subject:Bloomberg",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260615-A09",
+          "SIG-20260615-A11"
+        ],
+        "titles": [
+          "Google 如何用 AI 重塑搜索",
+          "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
         ]
       },
       {
@@ -30586,10 +29792,22 @@
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A21"
+          "SIG-20260615-A14"
         ],
         "titles": [
           "欢迎进入AI治理的AGI时代"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Aiweekly",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A08"
+        ],
+        "titles": [
+          "aiweekly 应用 Fireworks AI"
         ]
       },
       {
@@ -30598,22 +29816,10 @@
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A07"
+          "SIG-20260615-A11"
         ],
         "titles": [
-          "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:BT6",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A09"
-        ],
-        "titles": [
-          "latent ：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security"
+          "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告"
         ]
       },
       {
@@ -30622,7 +29828,7 @@
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A19"
+          "SIG-20260615-A07"
         ],
         "titles": [
           "latent ：⚡️The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Da"
@@ -30634,278 +29840,362 @@
         "label": "产品",
         "weight": 1,
         "cardIds": [
+          "SIG-20260615-A06"
+        ],
+        "titles": [
+          "Latent Space：视频 Agent 模型成为多模态应用新方向"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:The-Decoder：AI-News（RSS）",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A12"
+        ],
+        "titles": [
+          "亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:TrueUp",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A13"
+        ],
+        "titles": [
+          "AI裁员浪潮成为火药桶"
+        ]
+      },
+      {
+        "from": "subject:Building-Supercharger",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A04"
+        ],
+        "titles": [
+          "aws 应用 agentic AI"
+        ]
+      },
+      {
+        "from": "subject:Building-Supercharger",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A04"
+        ],
+        "titles": [
+          "aws 应用 agentic AI"
+        ]
+      },
+      {
+        "from": "subject:Building-Supercharger",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A04"
+        ],
+        "titles": [
+          "aws 应用 agentic AI"
+        ]
+      },
+      {
+        "from": "subject:Ithome-案例",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A05"
+        ],
+        "titles": [
+          "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
+        ]
+      },
+      {
+        "from": "subject:Ithome-案例",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A05"
+        ],
+        "titles": [
+          "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
+        ]
+      },
+      {
+        "from": "subject:Ithome-案例",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A05"
+        ],
+        "titles": [
+          "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
+        ]
+      },
+      {
+        "from": "subject:Langchain",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A03"
+        ],
+        "titles": [
+          "langchain 应用 Deep Agents and LangSmith"
+        ]
+      },
+      {
+        "from": "subject:Langchain",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A03"
+        ],
+        "titles": [
+          "langchain 应用 Deep Agents and LangSmith"
+        ]
+      },
+      {
+        "from": "subject:Langchain",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A03"
+        ],
+        "titles": [
+          "langchain 应用 Deep Agents and LangSmith"
+        ]
+      },
+      {
+        "from": "subject:Techcrunch-案例",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A10"
+        ],
+        "titles": [
+          "AI公司竞相上市，谁在搭便车？"
+        ]
+      },
+      {
+        "from": "subject:Techcrunch-案例",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A10"
+        ],
+        "titles": [
+          "AI公司竞相上市，谁在搭便车？"
+        ]
+      },
+      {
+        "from": "subject:Techcrunch-案例",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A10"
+        ],
+        "titles": [
+          "AI公司竞相上市，谁在搭便车？"
+        ]
+      },
+      {
+        "from": "subject:CuspAI",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A02"
+        ],
+        "titles": [
+          "Latent Space：CuspAI 用 AI 搜索潜在材料空间"
+        ]
+      },
+      {
+        "from": "subject:CuspAI",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A02"
+        ],
+        "titles": [
+          "Latent Space：CuspAI 用 AI 搜索潜在材料空间"
+        ]
+      },
+      {
+        "from": "subject:CuspAI",
+        "to": "signal:evidence-funding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A02"
+        ],
+        "titles": [
+          "Latent Space：CuspAI 用 AI 搜索潜在材料空间"
+        ]
+      },
+      {
+        "from": "subject:Willow",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A01"
+        ],
+        "titles": [
+          "Willow 融资 $7M"
+        ]
+      },
+      {
+        "from": "subject:Willow",
+        "to": "signal:scenario-construction-real-estate",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A01"
+        ],
+        "titles": [
+          "Willow 融资 $7M"
+        ]
+      },
+      {
+        "from": "subject:Willow",
+        "to": "signal:evidence-funding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A01"
+        ],
+        "titles": [
+          "Willow 融资 $7M"
+        ]
+      },
+      {
+        "from": "subject:Nathan-Lambert",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A14"
+        ],
+        "titles": [
+          "欢迎进入AI治理的AGI时代"
+        ]
+      },
+      {
+        "from": "subject:Nathan-Lambert",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A14"
+        ],
+        "titles": [
+          "欢迎进入AI治理的AGI时代"
+        ]
+      },
+      {
+        "from": "subject:Nathan-Lambert",
+        "to": "signal:track-ai-governance",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A14"
+        ],
+        "titles": [
+          "欢迎进入AI治理的AGI时代"
+        ]
+      },
+      {
+        "from": "subject:Aiweekly",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
           "SIG-20260615-A08"
         ],
         "titles": [
-          "latent ：[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+          "aiweekly 应用 Fireworks AI"
         ]
       },
       {
-        "from": "subject:AI",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A05"
-        ],
-        "titles": [
-          "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG"
-        ]
-      },
-      {
-        "from": "subject:AI",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A05"
-        ],
-        "titles": [
-          "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG"
-        ]
-      },
-      {
-        "from": "subject:AI",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A05"
-        ],
-        "titles": [
-          "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG"
-        ]
-      },
-      {
-        "from": "subject:Bloomberg",
+        "from": "subject:Aiweekly",
         "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A15"
+          "SIG-20260615-A08"
         ],
         "titles": [
-          "Google 如何用 AI 重塑搜索"
+          "aiweekly 应用 Fireworks AI"
         ]
       },
       {
-        "from": "subject:NVIDIA",
+        "from": "subject:Aiweekly",
+        "to": "signal:function-sales",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260615-A08"
+        ],
+        "titles": [
+          "aiweekly 应用 Fireworks AI"
+        ]
+      },
+      {
+        "from": "subject:End-of-SWE",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A12"
+          "SIG-20260615-A07"
         ],
         "titles": [
-          "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图"
+          "latent ：⚡️The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Da"
         ]
       },
       {
-        "from": "subject:NVIDIA",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A12"
-        ],
-        "titles": [
-          "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图"
-        ]
-      },
-      {
-        "from": "subject:NVIDIA",
+        "from": "subject:End-of-SWE",
         "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A12"
+          "SIG-20260615-A07"
         ],
         "titles": [
-          "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图"
+          "latent ：⚡️The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Da"
         ]
       },
       {
-        "from": "subject:Ithome-案例",
-        "to": "signal:track-ai-agent",
+        "from": "subject:End-of-SWE",
+        "to": "signal:evidence-product-launch",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A13"
+          "SIG-20260615-A07"
         ],
         "titles": [
-          "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
+          "latent ：⚡️The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Da"
         ]
       },
       {
-        "from": "subject:Ithome-案例",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A13"
-        ],
-        "titles": [
-          "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
-        ]
-      },
-      {
-        "from": "subject:Ithome-案例",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A13"
-        ],
-        "titles": [
-          "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
-        ]
-      },
-      {
-        "from": "subject:Microsoft",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A04"
-        ],
-        "titles": [
-          "devblogs ：Microsoft Agent Framework Version 1.0"
-        ]
-      },
-      {
-        "from": "subject:Microsoft",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A04"
-        ],
-        "titles": [
-          "devblogs ：Microsoft Agent Framework Version 1.0"
-        ]
-      },
-      {
-        "from": "subject:Microsoft",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A04"
-        ],
-        "titles": [
-          "devblogs ：Microsoft Agent Framework Version 1.0"
-        ]
-      },
-      {
-        "from": "subject:Nvidia",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A16"
-        ],
-        "titles": [
-          "blogs ：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
-        ]
-      },
-      {
-        "from": "subject:Nvidia",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A16"
-        ],
-        "titles": [
-          "blogs ：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
-        ]
-      },
-      {
-        "from": "subject:Nvidia",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A16"
-        ],
-        "titles": [
-          "blogs ：Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
-        ]
-      },
-      {
-        "from": "subject:Scout",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A14"
-        ],
-        "titles": [
-          "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant"
-        ]
-      },
-      {
-        "from": "subject:Scout",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A14"
-        ],
-        "titles": [
-          "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant"
-        ]
-      },
-      {
-        "from": "subject:Spotify",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A11"
-        ],
-        "titles": [
-          "podcasters ：State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance"
-        ]
-      },
-      {
-        "from": "subject:Spotify",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A11"
-        ],
-        "titles": [
-          "podcasters ：State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance"
-        ]
-      },
-      {
-        "from": "subject:Techcrunch-案例",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A17"
-        ],
-        "titles": [
-          "AI公司竞相上市，谁在搭便车？"
-        ]
-      },
-      {
-        "from": "subject:Techcrunch-案例",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A17"
-        ],
-        "titles": [
-          "AI公司竞相上市，谁在搭便车？"
-        ]
-      },
-      {
-        "from": "subject:Writer",
+        "from": "subject:Latent",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -30913,231 +30203,57 @@
           "SIG-20260615-A06"
         ],
         "titles": [
-          "podcasters ：Building the Easy Button for Generative AI"
+          "Latent Space：视频 Agent 模型成为多模态应用新方向"
         ]
       },
       {
-        "from": "subject:Writer",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A06"
-        ],
-        "titles": [
-          "podcasters ：Building the Easy Button for Generative AI"
-        ]
-      },
-      {
-        "from": "subject:Writer",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A06"
-        ],
-        "titles": [
-          "podcasters ：Building the Easy Button for Generative AI"
-        ]
-      },
-      {
-        "from": "subject:CuspAI",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A02"
-        ],
-        "titles": [
-          "Latent Space：CuspAI 用 AI 搜索潜在材料空间"
-        ]
-      },
-      {
-        "from": "subject:CuspAI",
+        "from": "subject:Latent",
         "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A02"
+          "SIG-20260615-A06"
         ],
         "titles": [
-          "Latent Space：CuspAI 用 AI 搜索潜在材料空间"
+          "Latent Space：视频 Agent 模型成为多模态应用新方向"
         ]
       },
       {
-        "from": "subject:CuspAI",
-        "to": "signal:evidence-funding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A02"
-        ],
-        "titles": [
-          "Latent Space：CuspAI 用 AI 搜索潜在材料空间"
-        ]
-      },
-      {
-        "from": "subject:LMArena",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A03"
-        ],
-        "titles": [
-          "latent ：[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
-        ]
-      },
-      {
-        "from": "subject:LMArena",
+        "from": "subject:Latent",
         "to": "signal:scenario-construction-real-estate",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260615-A03"
+          "SIG-20260615-A06"
         ],
         "titles": [
-          "latent ：[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
-        ]
-      },
-      {
-        "from": "subject:LMArena",
-        "to": "signal:evidence-funding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A03"
-        ],
-        "titles": [
-          "latent ：[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
-        ]
-      },
-      {
-        "from": "subject:Prnewswire",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A01"
-        ],
-        "titles": [
-          "prnewswire 融资 $30M"
-        ]
-      },
-      {
-        "from": "subject:Prnewswire",
-        "to": "signal:scenario-construction-real-estate",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260615-A01"
-        ],
-        "titles": [
-          "prnewswire 融资 $30M"
+          "Latent Space：视频 Agent 模型成为多模态应用新方向"
         ]
       }
     ],
     "clusters": [
       {
-        "id": "agent-workflow-enterprise",
-        "title": "AI、Bloomberg 记录 Agent 进入采购、数据连接和企业流程",
-        "direction": "企业工作流",
-        "relation": [
-          "AI Agent",
-          "企业工作流",
-          "大中型企业"
-        ],
-        "summary": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 blogs 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
-        "evidenceMeta": "素材：AI / Bloomberg / Ithome 案例",
-        "detailFocus": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 blogs 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
-        "todayCount": 10,
-        "last7Count": 37,
-        "last30Count": 100,
-        "subjects": [
-          {
-            "label": "AI",
-            "count": 1
-          },
-          {
-            "label": "Bloomberg",
-            "count": 1
-          },
-          {
-            "label": "Ithome 案例",
-            "count": 1
-          },
-          {
-            "label": "Microsoft",
-            "count": 1
-          }
-        ],
-        "categories": [
-          {
-            "label": "案例",
-            "count": 10
-          }
-        ],
-        "supportingCards": [
-          {
-            "id": "SIG-20260615-A05",
-            "title": "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG",
-            "subject": "AI",
-            "categoryLabel": "案例",
-            "sourceName": "The MAD Podcast (Matt Turck)",
-            "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
-            "date": "2026-06-15"
-          },
-          {
-            "id": "SIG-20260615-A15",
-            "title": "Google 如何用 AI 重塑搜索",
-            "subject": "Bloomberg",
-            "categoryLabel": "案例",
-            "sourceName": "Bloomberg：Technology（RSS）",
-            "sourceUrl": "https://www.bloomberg.com/news/videos/2026-06-14/how-google-is-reinventing-search-with-ai-video",
-            "date": "2026-06-15"
-          },
-          {
-            "id": "SIG-20260615-A12",
-            "title": "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图",
-            "subject": "NVIDIA",
-            "categoryLabel": "案例",
-            "sourceName": "NVIDIA AI Blog",
-            "sourceUrl": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/",
-            "date": "2026-06-15"
-          },
-          {
-            "id": "SIG-20260615-A13",
-            "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
-            "subject": "Ithome 案例",
-            "categoryLabel": "案例",
-            "sourceName": "IT之家（RSS）",
-            "sourceUrl": "https://www.ithome.com/0/964/264.htm",
-            "date": "2026-06-15"
-          }
-        ]
-      },
-      {
         "id": "product-launch-vs-adoption",
-        "title": "Bloomberg、BT6 同日出现在企业 AI 产品发布里",
+        "title": "Aiweekly、Bloomberg 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
           "客户采用",
           "商业验证"
         ],
-        "summary": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... 蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。 latent 的原文 AI 事件：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
-        "evidenceMeta": "素材：Bloomberg / BT6 / End of SWE",
-        "detailFocus": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... 蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。 latent 的原文 AI 事件：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
-        "todayCount": 5,
-        "last7Count": 36,
-        "last30Count": 106,
+        "summary": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... aiweekly 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。 美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。",
+        "evidenceMeta": "素材：Aiweekly / Bloomberg / End of SWE",
+        "detailFocus": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... aiweekly 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。 美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。",
+        "todayCount": 7,
+        "last7Count": 38,
+        "last30Count": 108,
         "subjects": [
           {
-            "label": "Bloomberg",
+            "label": "Aiweekly",
             "count": 1
           },
           {
-            "label": "BT6",
+            "label": "Bloomberg",
             "count": 1
           },
           {
@@ -31152,12 +30268,12 @@
         "categories": [
           {
             "label": "产品",
-            "count": 5
+            "count": 7
           }
         ],
         "supportingCards": [
           {
-            "id": "SIG-20260615-A21",
+            "id": "SIG-20260615-A14",
             "title": "欢迎进入AI治理的AGI时代",
             "subject": "Nathan Lambert",
             "categoryLabel": "产品",
@@ -31166,25 +30282,25 @@
             "date": "2026-06-15"
           },
           {
-            "id": "SIG-20260615-A07",
-            "title": "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户",
+            "id": "SIG-20260615-A08",
+            "title": "aiweekly 应用 Fireworks AI",
+            "subject": "Aiweekly",
+            "categoryLabel": "产品",
+            "sourceName": "aiweekly.co",
+            "sourceUrl": "https://aiweekly.co/alerts/harvey-cuts-inference-costs-3x-with-fireworks-ai",
+            "date": "2026-06-15"
+          },
+          {
+            "id": "SIG-20260615-A11",
+            "title": "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告",
             "subject": "Bloomberg",
             "categoryLabel": "产品",
             "sourceName": "Bloomberg：Technology（RSS）",
-            "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-14/jack-ma-backed-ant-set-for-high-stakes-overhaul-of-billion-user-alipay-app",
+            "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-15/anthropic-block-marks-us-reversal-warning-to-silicon-valley",
             "date": "2026-06-15"
           },
           {
-            "id": "SIG-20260615-A09",
-            "title": "latent ：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security",
-            "subject": "BT6",
-            "categoryLabel": "产品",
-            "sourceName": "Latent Space",
-            "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
-            "date": "2026-06-15"
-          },
-          {
-            "id": "SIG-20260615-A19",
+            "id": "SIG-20260615-A07",
             "title": "latent ：⚡️The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Da",
             "subject": "End of SWE",
             "categoryLabel": "产品",
@@ -31193,110 +30309,110 @@
             "date": "2026-06-15"
           }
         ]
+      },
+      {
+        "id": "agent-workflow-enterprise",
+        "title": "Bloomberg、Building Supercharger 记录 Agent 进入采购、数据连接和企业流程",
+        "direction": "企业工作流",
+        "relation": [
+          "AI Agent",
+          "企业工作流",
+          "大中型企业"
+        ],
+        "summary": "aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161...",
+        "evidenceMeta": "素材：Bloomberg / Building Supercharger / Ithome 案例",
+        "detailFocus": "aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161...",
+        "todayCount": 5,
+        "last7Count": 32,
+        "last30Count": 95,
+        "subjects": [
+          {
+            "label": "Bloomberg",
+            "count": 1
+          },
+          {
+            "label": "Building Supercharger",
+            "count": 1
+          },
+          {
+            "label": "Ithome 案例",
+            "count": 1
+          },
+          {
+            "label": "Langchain",
+            "count": 1
+          }
+        ],
+        "categories": [
+          {
+            "label": "案例",
+            "count": 5
+          }
+        ],
+        "supportingCards": [
+          {
+            "id": "SIG-20260615-A04",
+            "title": "aws 应用 agentic AI",
+            "subject": "Building Supercharger",
+            "categoryLabel": "案例",
+            "sourceName": "aws.amazon.com",
+            "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/",
+            "date": "2026-06-15"
+          },
+          {
+            "id": "SIG-20260615-A09",
+            "title": "Google 如何用 AI 重塑搜索",
+            "subject": "Bloomberg",
+            "categoryLabel": "案例",
+            "sourceName": "Bloomberg：Technology（RSS）",
+            "sourceUrl": "https://www.bloomberg.com/news/videos/2026-06-14/how-google-is-reinventing-search-with-ai-video",
+            "date": "2026-06-15"
+          },
+          {
+            "id": "SIG-20260615-A05",
+            "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
+            "subject": "Ithome 案例",
+            "categoryLabel": "案例",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://www.ithome.com/0/964/264.htm",
+            "date": "2026-06-15"
+          },
+          {
+            "id": "SIG-20260615-A03",
+            "title": "langchain 应用 Deep Agents and LangSmith",
+            "subject": "Langchain",
+            "categoryLabel": "案例",
+            "sourceName": "langchain.com",
+            "sourceUrl": "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith",
+            "date": "2026-06-15"
+          }
+        ]
       }
     ]
   },
   "relationshipDirections": [
     {
-      "id": "agent-workflow-enterprise",
-      "title": "AI、Bloomberg 记录 Agent 进入采购、数据连接和企业流程",
-      "direction": "企业工作流",
-      "relation": [
-        "AI Agent",
-        "企业工作流",
-        "大中型企业"
-      ],
-      "summary": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 blogs 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
-      "evidenceMeta": "素材：AI / Bloomberg / Ithome 案例",
-      "detailFocus": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 blogs 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
-      "todayCount": 10,
-      "last7Count": 37,
-      "last30Count": 100,
-      "subjects": [
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "Bloomberg",
-          "count": 1
-        },
-        {
-          "label": "Ithome 案例",
-          "count": 1
-        },
-        {
-          "label": "Microsoft",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 10
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "SIG-20260615-A05",
-          "title": "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG",
-          "subject": "AI",
-          "categoryLabel": "案例",
-          "sourceName": "The MAD Podcast (Matt Turck)",
-          "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
-          "date": "2026-06-15"
-        },
-        {
-          "id": "SIG-20260615-A15",
-          "title": "Google 如何用 AI 重塑搜索",
-          "subject": "Bloomberg",
-          "categoryLabel": "案例",
-          "sourceName": "Bloomberg：Technology（RSS）",
-          "sourceUrl": "https://www.bloomberg.com/news/videos/2026-06-14/how-google-is-reinventing-search-with-ai-video",
-          "date": "2026-06-15"
-        },
-        {
-          "id": "SIG-20260615-A12",
-          "title": "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图",
-          "subject": "NVIDIA",
-          "categoryLabel": "案例",
-          "sourceName": "NVIDIA AI Blog",
-          "sourceUrl": "https://blogs.nvidia.com/blog/2026-ces-special-presentation/",
-          "date": "2026-06-15"
-        },
-        {
-          "id": "SIG-20260615-A13",
-          "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
-          "subject": "Ithome 案例",
-          "categoryLabel": "案例",
-          "sourceName": "IT之家（RSS）",
-          "sourceUrl": "https://www.ithome.com/0/964/264.htm",
-          "date": "2026-06-15"
-        }
-      ]
-    },
-    {
       "id": "product-launch-vs-adoption",
-      "title": "Bloomberg、BT6 同日出现在企业 AI 产品发布里",
+      "title": "Aiweekly、Bloomberg 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
         "客户采用",
         "商业验证"
       ],
-      "summary": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... 蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。 latent 的原文 AI 事件：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "evidenceMeta": "素材：Bloomberg / BT6 / End of SWE",
-      "detailFocus": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... 蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。 latent 的原文 AI 事件：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
-      "todayCount": 5,
-      "last7Count": 36,
-      "last30Count": 106,
+      "summary": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... aiweekly 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。 美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。",
+      "evidenceMeta": "素材：Aiweekly / Bloomberg / End of SWE",
+      "detailFocus": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... aiweekly 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。 美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。",
+      "todayCount": 7,
+      "last7Count": 38,
+      "last30Count": 108,
       "subjects": [
         {
-          "label": "Bloomberg",
+          "label": "Aiweekly",
           "count": 1
         },
         {
-          "label": "BT6",
+          "label": "Bloomberg",
           "count": 1
         },
         {
@@ -31311,12 +30427,12 @@
       "categories": [
         {
           "label": "产品",
-          "count": 5
+          "count": 7
         }
       ],
       "supportingCards": [
         {
-          "id": "SIG-20260615-A21",
+          "id": "SIG-20260615-A14",
           "title": "欢迎进入AI治理的AGI时代",
           "subject": "Nathan Lambert",
           "categoryLabel": "产品",
@@ -31325,30 +30441,108 @@
           "date": "2026-06-15"
         },
         {
-          "id": "SIG-20260615-A07",
-          "title": "蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户",
+          "id": "SIG-20260615-A08",
+          "title": "aiweekly 应用 Fireworks AI",
+          "subject": "Aiweekly",
+          "categoryLabel": "产品",
+          "sourceName": "aiweekly.co",
+          "sourceUrl": "https://aiweekly.co/alerts/harvey-cuts-inference-costs-3x-with-fireworks-ai",
+          "date": "2026-06-15"
+        },
+        {
+          "id": "SIG-20260615-A11",
+          "title": "美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告",
           "subject": "Bloomberg",
           "categoryLabel": "产品",
           "sourceName": "Bloomberg：Technology（RSS）",
-          "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-14/jack-ma-backed-ant-set-for-high-stakes-overhaul-of-billion-user-alipay-app",
+          "sourceUrl": "https://www.bloomberg.com/news/articles/2026-06-15/anthropic-block-marks-us-reversal-warning-to-silicon-valley",
           "date": "2026-06-15"
         },
         {
-          "id": "SIG-20260615-A09",
-          "title": "latent ：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security",
-          "subject": "BT6",
-          "categoryLabel": "产品",
-          "sourceName": "Latent Space",
-          "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
-          "date": "2026-06-15"
-        },
-        {
-          "id": "SIG-20260615-A19",
+          "id": "SIG-20260615-A07",
           "title": "latent ：⚡️The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Da",
           "subject": "End of SWE",
           "categoryLabel": "产品",
           "sourceName": "Latent Space",
           "sourceUrl": "https://www.latent.space/p/swe-bench-dead",
+          "date": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "agent-workflow-enterprise",
+      "title": "Bloomberg、Building Supercharger 记录 Agent 进入采购、数据连接和企业流程",
+      "direction": "企业工作流",
+      "relation": [
+        "AI Agent",
+        "企业工作流",
+        "大中型企业"
+      ],
+      "summary": "aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161...",
+      "evidenceMeta": "素材：Bloomberg / Building Supercharger / Ithome 案例",
+      "detailFocus": "aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161...",
+      "todayCount": 5,
+      "last7Count": 32,
+      "last30Count": 95,
+      "subjects": [
+        {
+          "label": "Bloomberg",
+          "count": 1
+        },
+        {
+          "label": "Building Supercharger",
+          "count": 1
+        },
+        {
+          "label": "Ithome 案例",
+          "count": 1
+        },
+        {
+          "label": "Langchain",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 5
+        }
+      ],
+      "supportingCards": [
+        {
+          "id": "SIG-20260615-A04",
+          "title": "aws 应用 agentic AI",
+          "subject": "Building Supercharger",
+          "categoryLabel": "案例",
+          "sourceName": "aws.amazon.com",
+          "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/",
+          "date": "2026-06-15"
+        },
+        {
+          "id": "SIG-20260615-A09",
+          "title": "Google 如何用 AI 重塑搜索",
+          "subject": "Bloomberg",
+          "categoryLabel": "案例",
+          "sourceName": "Bloomberg：Technology（RSS）",
+          "sourceUrl": "https://www.bloomberg.com/news/videos/2026-06-14/how-google-is-reinventing-search-with-ai-video",
+          "date": "2026-06-15"
+        },
+        {
+          "id": "SIG-20260615-A05",
+          "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
+          "subject": "Ithome 案例",
+          "categoryLabel": "案例",
+          "sourceName": "IT之家（RSS）",
+          "sourceUrl": "https://www.ithome.com/0/964/264.htm",
+          "date": "2026-06-15"
+        },
+        {
+          "id": "SIG-20260615-A03",
+          "title": "langchain 应用 Deep Agents and LangSmith",
+          "subject": "Langchain",
+          "categoryLabel": "案例",
+          "sourceName": "langchain.com",
+          "sourceUrl": "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith",
           "date": "2026-06-15"
         }
       ]
@@ -31358,73 +30552,130 @@
     {
       "object": "track-ai-agent",
       "label": "AI Agent",
-      "todayCount": 18,
-      "last7Count": 105,
-      "last30Count": 256,
+      "todayCount": 14,
+      "last7Count": 101,
+      "last30Count": 252,
       "subjects": [
         {
           "label": "Bloomberg",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "Aiweekly",
           "count": 1
         },
         {
-          "label": "BT6",
+          "label": "Building Supercharger",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 10
+          "label": "产品",
+          "count": 7
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 5
         },
         {
           "label": "融资",
-          "count": 3
+          "count": 2
         }
       ],
       "coTags": [
         {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 10
+        },
+        {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 11
+          "count": 7
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 7
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 11
+          "count": 7
+        }
+      ]
+    },
+    {
+      "object": "track-ai-infra",
+      "label": "AI 基础设施",
+      "todayCount": 10,
+      "last7Count": 52,
+      "last30Count": 161,
+      "subjects": [
+        {
+          "label": "Bloomberg",
+          "count": 2
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
+          "label": "Aiweekly",
+          "count": 1
+        },
+        {
+          "label": "CuspAI",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 7
+        },
+        {
+          "label": "案例",
+          "count": 2
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
           "count": 10
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 9
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 4
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 4
         }
       ]
     },
     {
       "object": "customer-enterprise",
       "label": "大中型企业",
-      "todayCount": 11,
-      "last7Count": 62,
-      "last30Count": 197,
+      "todayCount": 7,
+      "last7Count": 58,
+      "last30Count": 193,
       "subjects": [
         {
           "label": "Bloomberg",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "Building Supercharger",
           "count": 1
         },
         {
@@ -31435,28 +30686,28 @@
       "categories": [
         {
           "label": "案例",
-          "count": 10
+          "count": 5
         },
         {
           "label": "产品",
-          "count": 1
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 11
+          "count": 7
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 11
+          "count": 7
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 10
+          "count": 5
         },
         {
           "tag": "track-ai-infra",
@@ -31466,18 +30717,67 @@
       ]
     },
     {
+      "object": "evidence-product-launch",
+      "label": "产品发布",
+      "todayCount": 7,
+      "last7Count": 38,
+      "last30Count": 109,
+      "subjects": [
+        {
+          "label": "Aiweekly",
+          "count": 1
+        },
+        {
+          "label": "Bloomberg",
+          "count": 1
+        },
+        {
+          "label": "End of SWE",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 7
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 2
+        },
+        {
+          "tag": "function-procurement-bidding",
+          "label": "采购投标",
+          "count": 2
+        }
+      ]
+    },
+    {
       "object": "track-enterprise-workflow",
       "label": "企业工作流",
-      "todayCount": 11,
-      "last7Count": 62,
-      "last30Count": 196,
+      "todayCount": 7,
+      "last7Count": 58,
+      "last30Count": 192,
       "subjects": [
         {
           "label": "Bloomberg",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "Building Supercharger",
           "count": 1
         },
         {
@@ -31488,28 +30788,28 @@
       "categories": [
         {
           "label": "案例",
-          "count": 10
+          "count": 5
         },
         {
           "label": "产品",
-          "count": 1
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 11
+          "count": 7
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 11
+          "count": 7
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 10
+          "count": 5
         },
         {
           "tag": "track-ai-infra",
@@ -31521,16 +30821,16 @@
     {
       "object": "evidence-customer-adoption",
       "label": "客户采用",
-      "todayCount": 10,
-      "last7Count": 49,
-      "last30Count": 114,
+      "todayCount": 5,
+      "last7Count": 44,
+      "last30Count": 109,
       "subjects": [
         {
-          "label": "AI",
+          "label": "Bloomberg",
           "count": 1
         },
         {
-          "label": "Bloomberg",
+          "label": "Building Supercharger",
           "count": 1
         },
         {
@@ -31541,188 +30841,86 @@
       "categories": [
         {
           "label": "案例",
-          "count": 10
+          "count": 5
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 10
+          "count": 5
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 10
+          "count": 5
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 10
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 4
-        }
-      ]
-    },
-    {
-      "object": "track-ai-infra",
-      "label": "AI 基础设施",
-      "todayCount": 9,
-      "last7Count": 51,
-      "last30Count": 160,
-      "subjects": [
-        {
-          "label": "Bloomberg",
-          "count": 1
-        },
-        {
-          "label": "BT6",
-          "count": 1
-        },
-        {
-          "label": "CuspAI",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 4
-        },
-        {
-          "label": "案例",
-          "count": 4
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 9
-        },
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 4
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 4
-        },
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 4
-        }
-      ]
-    },
-    {
-      "object": "evidence-product-launch",
-      "label": "产品发布",
-      "todayCount": 5,
-      "last7Count": 36,
-      "last30Count": 107,
-      "subjects": [
-        {
-          "label": "Bloomberg",
-          "count": 1
-        },
-        {
-          "label": "BT6",
-          "count": 1
-        },
-        {
-          "label": "End of SWE",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 5
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
           "count": 5
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 4
-        },
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 1
-        },
-        {
-          "tag": "evidence-partnership-integration",
-          "label": "合作集成",
-          "count": 1
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 2
         }
       ]
     },
     {
       "object": "scenario-construction-real-estate",
       "label": "建筑地产",
-      "todayCount": 5,
-      "last7Count": 18,
-      "last30Count": 42,
+      "todayCount": 4,
+      "last7Count": 17,
+      "last30Count": 41,
       "subjects": [
         {
-          "label": "AI",
+          "label": "Building Supercharger",
           "count": 1
         },
         {
-          "label": "LMArena",
+          "label": "Langchain",
           "count": 1
         },
         {
-          "label": "Microsoft",
+          "label": "Latent",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 2
+        },
+        {
+          "label": "产品",
+          "count": 1
         },
         {
           "label": "融资",
-          "count": 2
+          "count": 1
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 5
+          "count": 4
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 3
+          "count": 2
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 3
+          "count": 2
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 3
+          "count": 2
         }
       ]
     },
@@ -31734,22 +30932,22 @@
       "last30Count": 73,
       "subjects": [
         {
-          "label": "AI",
+          "label": "Building Supercharger",
           "count": 1
         },
         {
-          "label": "Microsoft",
-          "count": 1
-        },
-        {
-          "label": "Writer",
+          "label": "Langchain",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 2
+        },
+        {
+          "label": "产品",
+          "count": 1
         }
       ],
       "coTags": [
@@ -31759,18 +30957,18 @@
           "count": 3
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 3
-        },
-        {
           "tag": "function-engineering",
           "label": "工程研发",
           "count": 3
         },
         {
-          "tag": "scenario-construction-real-estate",
-          "label": "建筑地产",
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
           "count": 3
         }
       ]
@@ -32236,7 +31434,7 @@
         "window": "7 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 105,
+        "cardCount": 101,
         "lastSeen": "2026-06-15",
         "filter": "track-ai-agent"
       },
@@ -32244,7 +31442,7 @@
         "window": "7 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 62,
+        "cardCount": 58,
         "lastSeen": "2026-06-15",
         "filter": "customer-enterprise"
       },
@@ -32252,7 +31450,7 @@
         "window": "7 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 62,
+        "cardCount": 58,
         "lastSeen": "2026-06-15",
         "filter": "track-enterprise-workflow"
       },
@@ -32260,7 +31458,7 @@
         "window": "7 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 51,
+        "cardCount": 52,
         "lastSeen": "2026-06-15",
         "filter": "track-ai-infra"
       },
@@ -32268,7 +31466,7 @@
         "window": "7 天",
         "object": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 49,
+        "cardCount": 44,
         "lastSeen": "2026-06-15",
         "filter": "evidence-customer-adoption"
       },
@@ -32276,7 +31474,7 @@
         "window": "7 天",
         "object": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 36,
+        "cardCount": 38,
         "lastSeen": "2026-06-15",
         "filter": "evidence-product-launch"
       },
@@ -32300,7 +31498,7 @@
         "window": "30 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 256,
+        "cardCount": 252,
         "lastSeen": "2026-06-15",
         "filter": "track-ai-agent"
       },
@@ -32308,7 +31506,7 @@
         "window": "30 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 197,
+        "cardCount": 193,
         "lastSeen": "2026-06-15",
         "filter": "customer-enterprise"
       },
@@ -32316,7 +31514,7 @@
         "window": "30 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 196,
+        "cardCount": 192,
         "lastSeen": "2026-06-15",
         "filter": "track-enterprise-workflow"
       },
@@ -32324,17 +31522,9 @@
         "window": "30 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 160,
+        "cardCount": 161,
         "lastSeen": "2026-06-15",
         "filter": "track-ai-infra"
-      },
-      {
-        "window": "30 天",
-        "object": "evidence-customer-adoption",
-        "label": "客户采用",
-        "cardCount": 114,
-        "lastSeen": "2026-06-15",
-        "filter": "evidence-customer-adoption"
       },
       {
         "window": "30 天",
@@ -32346,9 +31536,17 @@
       },
       {
         "window": "30 天",
+        "object": "evidence-customer-adoption",
+        "label": "客户采用",
+        "cardCount": 109,
+        "lastSeen": "2026-06-15",
+        "filter": "evidence-customer-adoption"
+      },
+      {
+        "window": "30 天",
         "object": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 107,
+        "cardCount": 109,
         "lastSeen": "2026-06-15",
         "filter": "evidence-product-launch"
       },
@@ -32369,9 +31567,9 @@
       "title": "AI Agent",
       "date": "2026-06-15",
       "signal": "track-ai-agent",
-      "evidenceCount": 256,
+      "evidenceCount": 252,
       "window": "30 天",
-      "summary": "AI Agent has 256 linked cards in the 30 天 window.",
+      "summary": "AI Agent has 252 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32380,9 +31578,9 @@
       "title": "大中型企业",
       "date": "2026-06-15",
       "signal": "customer-enterprise",
-      "evidenceCount": 197,
+      "evidenceCount": 193,
       "window": "30 天",
-      "summary": "大中型企业 has 197 linked cards in the 30 天 window.",
+      "summary": "大中型企业 has 193 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32391,9 +31589,9 @@
       "title": "企业工作流",
       "date": "2026-06-15",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 196,
+      "evidenceCount": 192,
       "window": "30 天",
-      "summary": "企业工作流 has 196 linked cards in the 30 天 window.",
+      "summary": "企业工作流 has 192 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32402,20 +31600,9 @@
       "title": "AI 基础设施",
       "date": "2026-06-15",
       "signal": "track-ai-infra",
-      "evidenceCount": 160,
+      "evidenceCount": 161,
       "window": "30 天",
-      "summary": "AI 基础设施 has 160 linked cards in the 30 天 window.",
-      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "trend-link:30 天:evidence-customer-adoption",
-      "type": "trend_link",
-      "title": "客户采用",
-      "date": "2026-06-15",
-      "signal": "evidence-customer-adoption",
-      "evidenceCount": 114,
-      "window": "30 天",
-      "summary": "客户采用 has 114 linked cards in the 30 天 window.",
+      "summary": "AI 基础设施 has 161 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32430,25 +31617,25 @@
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
+      "id": "trend-link:30 天:evidence-customer-adoption",
+      "type": "trend_link",
+      "title": "客户采用",
+      "date": "2026-06-15",
+      "signal": "evidence-customer-adoption",
+      "evidenceCount": 109,
+      "window": "30 天",
+      "summary": "客户采用 has 109 linked cards in the 30 天 window.",
+      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
+    },
+    {
       "id": "trend-link:30 天:evidence-product-launch",
       "type": "trend_link",
       "title": "产品发布",
       "date": "2026-06-15",
       "signal": "evidence-product-launch",
-      "evidenceCount": 107,
+      "evidenceCount": 109,
       "window": "30 天",
-      "summary": "产品发布 has 107 linked cards in the 30 天 window.",
-      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "trend-link:7 天:track-ai-agent",
-      "type": "trend_link",
-      "title": "AI Agent",
-      "date": "2026-06-15",
-      "signal": "track-ai-agent",
-      "evidenceCount": 105,
-      "window": "7 天",
-      "summary": "AI Agent has 105 linked cards in the 7 天 window.",
+      "summary": "产品发布 has 109 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32463,14 +31650,25 @@
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
+      "id": "trend-link:7 天:track-ai-agent",
+      "type": "trend_link",
+      "title": "AI Agent",
+      "date": "2026-06-15",
+      "signal": "track-ai-agent",
+      "evidenceCount": 101,
+      "window": "7 天",
+      "summary": "AI Agent has 101 linked cards in the 7 天 window.",
+      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
+    },
+    {
       "id": "trend-link:7 天:customer-enterprise",
       "type": "trend_link",
       "title": "大中型企业",
       "date": "2026-06-15",
       "signal": "customer-enterprise",
-      "evidenceCount": 62,
+      "evidenceCount": 58,
       "window": "7 天",
-      "summary": "大中型企业 has 62 linked cards in the 7 天 window.",
+      "summary": "大中型企业 has 58 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32479,9 +31677,9 @@
       "title": "企业工作流",
       "date": "2026-06-15",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 62,
+      "evidenceCount": 58,
       "window": "7 天",
-      "summary": "企业工作流 has 62 linked cards in the 7 天 window.",
+      "summary": "企业工作流 has 58 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32490,9 +31688,9 @@
       "title": "AI 基础设施",
       "date": "2026-06-15",
       "signal": "track-ai-infra",
-      "evidenceCount": 51,
+      "evidenceCount": 52,
       "window": "7 天",
-      "summary": "AI 基础设施 has 51 linked cards in the 7 天 window.",
+      "summary": "AI 基础设施 has 52 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32501,9 +31699,9 @@
       "title": "客户采用",
       "date": "2026-06-15",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 49,
+      "evidenceCount": 44,
       "window": "7 天",
-      "summary": "客户采用 has 49 linked cards in the 7 天 window.",
+      "summary": "客户采用 has 44 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32512,9 +31710,9 @@
       "title": "产品发布",
       "date": "2026-06-15",
       "signal": "evidence-product-launch",
-      "evidenceCount": 36,
+      "evidenceCount": 38,
       "window": "7 天",
-      "summary": "产品发布 has 36 linked cards in the 7 天 window.",
+      "summary": "产品发布 has 38 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -32545,268 +31743,59 @@
       "title": "AI Agent",
       "date": "2026-06-15",
       "signal": "track-ai-agent",
-      "evidenceCount": 18,
-      "windowCount": 256,
+      "evidenceCount": 14,
+      "windowCount": 252,
       "subjects": [
         {
           "label": "Bloomberg",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "Aiweekly",
           "count": 1
         },
         {
-          "label": "BT6",
+          "label": "Building Supercharger",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 10
+          "label": "产品",
+          "count": 7
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 5
         },
         {
           "label": "融资",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 11
-        },
-        {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 11
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 10
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 9
-        }
-      ],
-      "summary": "AI Agent appears in 18 same-day cards and 256 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:customer-enterprise",
-      "type": "tag_association",
-      "title": "大中型企业",
-      "date": "2026-06-15",
-      "signal": "customer-enterprise",
-      "evidenceCount": 11,
-      "windowCount": 197,
-      "subjects": [
-        {
-          "label": "Bloomberg",
           "count": 2
-        },
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "Ithome 案例",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 10
-        },
-        {
-          "label": "产品",
-          "count": 1
         }
       ],
       "coTags": [
         {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 11
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 10
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 7
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 7
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 11
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 10
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 4
+          "count": 7
         }
       ],
-      "summary": "大中型企业 appears in 11 same-day cards and 197 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:track-enterprise-workflow",
-      "type": "tag_association",
-      "title": "企业工作流",
-      "date": "2026-06-15",
-      "signal": "track-enterprise-workflow",
-      "evidenceCount": 11,
-      "windowCount": 196,
-      "subjects": [
-        {
-          "label": "Bloomberg",
-          "count": 2
-        },
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "Ithome 案例",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 10
-        },
-        {
-          "label": "产品",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 11
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 11
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 10
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 4
-        }
-      ],
-      "summary": "企业工作流 appears in 11 same-day cards and 196 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "relationship:agent-workflow-enterprise",
-      "type": "relationship_cluster",
-      "title": "AI、Bloomberg 记录 Agent 进入采购、数据连接和企业流程",
-      "date": "2026-06-15",
-      "signal": "企业工作流",
-      "evidenceCount": 10,
-      "windowCount": 100,
-      "subjects": [
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "Bloomberg",
-          "count": 1
-        },
-        {
-          "label": "Ithome 案例",
-          "count": 1
-        },
-        {
-          "label": "Microsoft",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 10
-        }
-      ],
-      "tags": [],
-      "supportingCardIds": [
-        "SIG-20260615-A05",
-        "SIG-20260615-A15",
-        "SIG-20260615-A12",
-        "SIG-20260615-A13"
-      ],
-      "summary": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 blogs 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
-      "whyUseful": "Use this when looking for cross-card commercial relationships."
-    },
-    {
-      "id": "tag:evidence-customer-adoption",
-      "type": "tag_association",
-      "title": "客户采用",
-      "date": "2026-06-15",
-      "signal": "evidence-customer-adoption",
-      "evidenceCount": 10,
-      "windowCount": 114,
-      "subjects": [
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "Bloomberg",
-          "count": 1
-        },
-        {
-          "label": "Ithome 案例",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 10
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 10
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 10
-        },
-        {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 10
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 4
-        }
-      ],
-      "summary": "客户采用 appears in 10 same-day cards and 114 cards in the 30-day window.",
+      "summary": "AI Agent appears in 14 same-day cards and 252 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -32815,15 +31804,15 @@
       "title": "AI 基础设施",
       "date": "2026-06-15",
       "signal": "track-ai-infra",
-      "evidenceCount": 9,
-      "windowCount": 160,
+      "evidenceCount": 10,
+      "windowCount": 161,
       "subjects": [
         {
           "label": "Bloomberg",
-          "count": 1
+          "count": 2
         },
         {
-          "label": "BT6",
+          "label": "Aiweekly",
           "count": 1
         },
         {
@@ -32834,11 +31823,11 @@
       "categories": [
         {
           "label": "产品",
-          "count": 4
+          "count": 7
         },
         {
           "label": "案例",
-          "count": 4
+          "count": 2
         },
         {
           "label": "融资",
@@ -32849,7 +31838,12 @@
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 9
+          "count": 10
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 7
         },
         {
           "tag": "customer-enterprise",
@@ -32857,34 +31851,29 @@
           "count": 4
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 4
-        },
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
           "count": 4
         }
       ],
-      "summary": "AI 基础设施 appears in 9 same-day cards and 160 cards in the 30-day window.",
+      "summary": "AI 基础设施 appears in 10 same-day cards and 161 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "Bloomberg、BT6 同日出现在企业 AI 产品发布里",
+      "title": "Aiweekly、Bloomberg 同日出现在企业 AI 产品发布里",
       "date": "2026-06-15",
       "signal": "产品发布",
-      "evidenceCount": 5,
-      "windowCount": 106,
+      "evidenceCount": 7,
+      "windowCount": 108,
       "subjects": [
         {
-          "label": "Bloomberg",
+          "label": "Aiweekly",
           "count": 1
         },
         {
-          "label": "BT6",
+          "label": "Bloomberg",
           "count": 1
         },
         {
@@ -32899,18 +31888,75 @@
       "categories": [
         {
           "label": "产品",
-          "count": 5
+          "count": 7
         }
       ],
       "tags": [],
       "supportingCardIds": [
-        "SIG-20260615-A21",
-        "SIG-20260615-A07",
-        "SIG-20260615-A09",
-        "SIG-20260615-A19"
+        "SIG-20260615-A14",
+        "SIG-20260615-A08",
+        "SIG-20260615-A11",
+        "SIG-20260615-A07"
       ],
-      "summary": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... 蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。 latent 的原文 AI 事件：⚡️Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security。该来源披露的是 latent 的原文 AI 事件 相关的具体 AI 商业事件。",
+      "summary": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经... aiweekly 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。 美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。",
       "whyUseful": "Use this when looking for cross-card commercial relationships."
+    },
+    {
+      "id": "tag:customer-enterprise",
+      "type": "tag_association",
+      "title": "大中型企业",
+      "date": "2026-06-15",
+      "signal": "customer-enterprise",
+      "evidenceCount": 7,
+      "windowCount": 193,
+      "subjects": [
+        {
+          "label": "Bloomberg",
+          "count": 2
+        },
+        {
+          "label": "Building Supercharger",
+          "count": 1
+        },
+        {
+          "label": "Ithome 案例",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 5
+        },
+        {
+          "label": "产品",
+          "count": 2
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 7
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        }
+      ],
+      "summary": "大中型企业 appears in 7 same-day cards and 193 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
       "id": "tag:evidence-product-launch",
@@ -32918,15 +31964,15 @@
       "title": "产品发布",
       "date": "2026-06-15",
       "signal": "evidence-product-launch",
-      "evidenceCount": 5,
-      "windowCount": 107,
+      "evidenceCount": 7,
+      "windowCount": 109,
       "subjects": [
         {
-          "label": "Bloomberg",
+          "label": "Aiweekly",
           "count": 1
         },
         {
-          "label": "BT6",
+          "label": "Bloomberg",
           "count": 1
         },
         {
@@ -32937,32 +31983,184 @@
       "categories": [
         {
           "label": "产品",
-          "count": 5
+          "count": 7
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 2
+        },
+        {
+          "tag": "function-procurement-bidding",
+          "label": "采购投标",
+          "count": 2
+        }
+      ],
+      "summary": "产品发布 appears in 7 same-day cards and 109 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:track-enterprise-workflow",
+      "type": "tag_association",
+      "title": "企业工作流",
+      "date": "2026-06-15",
+      "signal": "track-enterprise-workflow",
+      "evidenceCount": 7,
+      "windowCount": 192,
+      "subjects": [
+        {
+          "label": "Bloomberg",
+          "count": 2
+        },
+        {
+          "label": "Building Supercharger",
+          "count": 1
+        },
+        {
+          "label": "Ithome 案例",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 5
+        },
+        {
+          "label": "产品",
+          "count": 2
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
           "count": 5
         },
         {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
           "count": 4
-        },
+        }
+      ],
+      "summary": "企业工作流 appears in 7 same-day cards and 192 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "relationship:agent-workflow-enterprise",
+      "type": "relationship_cluster",
+      "title": "Bloomberg、Building Supercharger 记录 Agent 进入采购、数据连接和企业流程",
+      "date": "2026-06-15",
+      "signal": "企业工作流",
+      "evidenceCount": 5,
+      "windowCount": 95,
+      "subjects": [
         {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
+          "label": "Bloomberg",
           "count": 1
         },
         {
-          "tag": "evidence-partnership-integration",
-          "label": "合作集成",
+          "label": "Building Supercharger",
+          "count": 1
+        },
+        {
+          "label": "Ithome 案例",
+          "count": 1
+        },
+        {
+          "label": "Langchain",
           "count": 1
         }
       ],
-      "summary": "产品发布 appears in 5 same-day cards and 107 cards in the 30-day window.",
+      "categories": [
+        {
+          "label": "案例",
+          "count": 5
+        }
+      ],
+      "tags": [],
+      "supportingCardIds": [
+        "SIG-20260615-A04",
+        "SIG-20260615-A09",
+        "SIG-20260615-A05",
+        "SIG-20260615-A03"
+      ],
+      "summary": "aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网络内容。但对创作者和出版商而言，更少的键盘敲击可能带来影响。 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161...",
+      "whyUseful": "Use this when looking for cross-card commercial relationships."
+    },
+    {
+      "id": "tag:evidence-customer-adoption",
+      "type": "tag_association",
+      "title": "客户采用",
+      "date": "2026-06-15",
+      "signal": "evidence-customer-adoption",
+      "evidenceCount": 5,
+      "windowCount": 109,
+      "subjects": [
+        {
+          "label": "Bloomberg",
+          "count": 1
+        },
+        {
+          "label": "Building Supercharger",
+          "count": 1
+        },
+        {
+          "label": "Ithome 案例",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 5
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 5
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 5
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 2
+        }
+      ],
+      "summary": "客户采用 appears in 5 same-day cards and 109 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -32971,55 +32169,59 @@
       "title": "建筑地产",
       "date": "2026-06-15",
       "signal": "scenario-construction-real-estate",
-      "evidenceCount": 5,
-      "windowCount": 42,
+      "evidenceCount": 4,
+      "windowCount": 41,
       "subjects": [
         {
-          "label": "AI",
+          "label": "Building Supercharger",
           "count": 1
         },
         {
-          "label": "LMArena",
+          "label": "Langchain",
           "count": 1
         },
         {
-          "label": "Microsoft",
+          "label": "Latent",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 2
+        },
+        {
+          "label": "产品",
+          "count": 1
         },
         {
           "label": "融资",
-          "count": 2
+          "count": 1
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 5
+          "count": 4
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 3
+          "count": 2
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 3
+          "count": 2
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 3
+          "count": 2
         }
       ],
-      "summary": "建筑地产 appears in 5 same-day cards and 42 cards in the 30-day window.",
+      "summary": "建筑地产 appears in 4 same-day cards and 41 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -33032,22 +32234,22 @@
       "windowCount": 73,
       "subjects": [
         {
-          "label": "AI",
+          "label": "Building Supercharger",
           "count": 1
         },
         {
-          "label": "Microsoft",
-          "count": 1
-        },
-        {
-          "label": "Writer",
+          "label": "Langchain",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 2
+        },
+        {
+          "label": "产品",
+          "count": 1
         }
       ],
       "coTags": [
@@ -33057,18 +32259,18 @@
           "count": 3
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 3
-        },
-        {
           "tag": "function-engineering",
           "label": "工程研发",
           "count": 3
         },
         {
-          "tag": "scenario-construction-real-estate",
-          "label": "建筑地产",
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
           "count": 3
         }
       ],
