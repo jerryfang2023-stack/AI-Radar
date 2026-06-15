@@ -189,9 +189,17 @@ Before finalizing, verify:
 
 ## Output Path
 
+双路径写入，每周生成两份（内容相同，用途不同）：
+
 ```text
+# 工作流归档（agent-workflow 内）
 agent-workflow/reports/YYYY-MM-DD-weekly-ai-business-change-radar.md
+
+# 内容发布索引（供网站页面生成，带日期标签便于检索）
+01-SiteV2/content/08-report/YYYY-MM-DD--weekly-report--ai-business-change-radar.md
 ```
+
+`content/08-report/` 版本 frontmatter 额外携带 `content_type: weekly-report`、`slug` 和 ISO `week` 标签，供网站生成脚本识别和路由。
 
 ## Handoff
 

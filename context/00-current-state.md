@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.6.3 Business source artifact aggregation.
+WaveSight AI is now in V3.3.7 Weekly Report Intelligence Map.
 
 ## Current Positioning
 
@@ -20,14 +20,14 @@ WaveSight AI is now in V3.3.6.3 Business source artifact aggregation.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.6.3 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, makes Hermes early handoff staged before 10:00, and defaults Business Signals to independent source artifact capture before unified Raw / Pool normalization.
+- V3.3.7 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, makes Hermes early handoff staged before 10:00, defaults Business Signals to independent source artifact capture before unified Raw / Pool normalization, and adds the Intelligence Map weekly report subcolumn.
 
 ## Current Entries
 
 | Entry | File | Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, and trend candidates |
-| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph and intelligence map entry |
+| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, intelligence map entry, and weekly report subcolumn |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
@@ -86,6 +86,7 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 2. Run First-Line Viewpoints through its own builders data lane.
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Intelligence Map and Dashboard aligned with the Business Signals data chain.
+   - Weekly report content must be sourced from `01-SiteV2/content/08-report/` for future generated issues.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
 7. Sync merged assets to local Obsidian when the local machine is online.

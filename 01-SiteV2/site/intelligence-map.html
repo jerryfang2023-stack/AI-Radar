@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-version" content="V3.3.5-builder-obsidian-date-timelines">
+  <meta name="wavesight-version" content="SITE-V3.3.7-weekly-report-intelligence-map">
+  <meta name="wavesight-column-version" content="IMAP-V1.1.0-weekly-report">
+  <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
   <title>情报地图｜观澜 AI</title>
   <link rel="stylesheet" href="assets/wavesight-nav.css">
-  <link rel="stylesheet" href="assets/v3-data-observation-desk.css?v=20260609-page-title">
+  <link rel="stylesheet" href="assets/v3-data-observation-desk.css?v=20260615-imap-v1-1-0">
 </head>
 <body class="v3-data-observation-page">
   <header class="wavesight-topbar" aria-label="观澜 AI 导航">
@@ -37,28 +39,33 @@
         </div>
       </div>
       <div class="relationship-overview" data-relationship-overview></div>
-      <div class="trend-links" data-relationship-links></div>
-    </section>
-
-    <section class="desk-section desk-trends" aria-labelledby="candidate-title">
-      <div class="section-head">
-        <div>
-          <p class="desk-kicker">Trend Candidates</p>
-          <h2 id="candidate-title">趋势候选</h2>
+      <div class="weekly-radar-entry" aria-labelledby="weekly-radar-title">
+        <div class="section-head">
+          <div>
+            <p class="desk-kicker">Weekly Report</p>
+            <h2 id="weekly-radar-title">每周周报</h2>
+          </div>
+          <label class="weekly-radar-filter">
+            <span>时间窗口</span>
+            <select aria-label="选择周报时间窗口">
+              <option value="2026-06-09_2026-06-15">2026.06.09 - 06.15</option>
+            </select>
+          </label>
         </div>
+        <article class="weekly-radar-card">
+          <div>
+            <span class="weekly-radar-date">2026-06-09 / 2026-06-15</span>
+            <h3>AI 从工具试用转向业务流程重构</h3>
+            <p>AI 正在从单点工具试用转向嵌入业务流程的 Agent / 工作流系统；机会重点转向真实交付、获客、知识沉淀和治理体系。本期重点追踪企业工作流 Agent、AI Coding 工作流、模型治理路由与 AI 商业服务四条主线，用来判断哪些流程先试点、哪些机会适合验证。</p>
+            <div class="weekly-radar-tags" aria-label="周报数据口径">
+              <span>Signals 101 张</span>
+              <span>Opinions 44 条</span>
+              <span>Community 约 44 条</span>
+            </div>
+          </div>
+          <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html">阅读本周周报</a>
+        </article>
       </div>
-      <div class="candidate-grid" data-trend-candidates></div>
-    </section>
-
-    <section class="desk-section desk-trends" aria-labelledby="history-title">
-      <div class="section-head">
-        <div>
-          <p class="desk-kicker">History</p>
-          <h2 id="history-title">历史趋势</h2>
-          <p class="section-note">保留已沉淀的趋势资产，作为观察今天信号时的参照。</p>
-        </div>
-      </div>
-      <div class="history-list" data-historical-trends></div>
     </section>
   </main>
 

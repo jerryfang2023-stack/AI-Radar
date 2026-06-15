@@ -18,12 +18,15 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.6.3-business-source-artifact-aggregation |
-| Version name | Business Source Artifact Aggregation |
-| Version layer | Patch |
+| Current version | V3.3.7-weekly-report-intelligence-map |
+| Version name | Weekly Report Intelligence Map |
+| Version layer | Minor |
 | Release date | 2026-06-15 |
-| Last modified at | 2026-06-15T16:05:34+08:00 |
+| Last modified at | 2026-06-15T18:44:17+08:00 |
 | Product version | V3.3 |
+| Main website version | SITE-V3.3.7-weekly-report-intelligence-map |
+| Intelligence Map column version | IMAP-V1.1.0-weekly-report |
+| Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Operations backend version | OPS-V1.0.0 |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
 | Git tag | not tagged |
@@ -45,6 +48,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30 after the 08:30 Windows collector, 08:45 publish check, and 09:00 Codex local fallback / repair window; First-Line Viewpoints RSS at 09:30 after the 08:30 local `builder-observation-daily-sync` collection/build/sync attempt and single 09:17 GitHub fallback; and Business Signals at 09:45 / 09:55. Hermes also records the afternoon follow-builders skill publish at 16:30.
 - Hermes early handoff is staged: 09:30 may dispatch Community publish and First-Line RSS while Business waits; 09:45 may dispatch Business while Community / First-Line only recheck; 09:55 is final review only and cannot start a new routine dispatch.
 - Intelligence Map and Dashboard follow the Business Signals data chain.
+- Intelligence Map is versioned independently as `IMAP-V1.1.0-weekly-report`. Its weekly report subcolumn reads future weekly report content from `01-SiteV2/content/08-report/`, with the current static frontstage page acting as the first published issue.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
@@ -57,7 +61,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Page | File | Current Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | V3.3 main public page for daily Cards, relationship graph, trend candidates, and historical trend assets |
-| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph and intelligence map entry |
+| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, intelligence map entry, and weekly report subcolumn |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Builder Observation V1.0 merged into V3.3; shows builders public remarks, Chinese translations, people, and long-form interviews |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community Intelligence V1.0; logged-in community cases, AI tool tactics, business opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Existing operations backend |
@@ -73,6 +77,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V1.0.0` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Operations console shell, navigation, module entry contracts, and backend-facing version ledger | HTML meta `wavesight-ops-console-version`, visible sidebar version, version ledger |
 | Topic Center / 选题中心 module | `V2.2.1-title-polish` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
+| Intelligence Map / 情报地图 column | `IMAP-V1.1.0-weekly-report` | Published through the main GitHub Pages frontstage. Future weekly report issues must be sourced from `01-SiteV2/content/08-report/` before page generation. | Business Signals relationship graph + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `assets/weekly-report.css`, `01-SiteV2/content/08-report/*.md` |
 
 ## Current Sources Of Truth
 
@@ -120,6 +125,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `V3.3.7-freeze-weekly-report-intelligence-map-20260615` | Business Signals / Intelligence Map / Weekly Report | 2026-06-15 | 2026-06-15T18:44:17+08:00 | SITE-V3.3.7-weekly-report-intelligence-map / IMAP-V1.1.0-weekly-report | weekly report detached from Intelligence Map; weekly report generated from `agent-workflow/reports/` only instead of `01-SiteV2/content/08-report/`; Trend Candidates or History modules returning to Intelligence Map; table-heavy weekly report detail pages; stale frontstage meta version `V3.3.5-builder-obsidian-date-timelines` | syntax + source-first + frontstage regression + visual smoke + GitHub Pages deploy |
 | `ops-v1.0.0-freeze-unified-backend-version-20260615` | Dashboard / Operations Backend | 2026-06-15 | 2026-06-15T17:40:00+08:00 | OPS-V1.0.0 | module versions being treated as the whole backend version; hidden or inconsistent operations-console version metadata; backend shell changes without updating the version ledger | `node agent-workflow/tools/frontstage-regression-gate.mjs` + HTML version check + GitHub Pages deploy |
 | `topic-center-v2.2.1-freeze-daily-title-polish-20260615` | Dashboard / Topic Center | 2026-06-15 | 2026-06-15T17:25:00+08:00 | V2.2.1-title-polish | fixed template titles reused across dates; awkward generated connectors such as `背后` / `撞上`; duplicated funding wording; Hermes topic handoff missing raw material references; manual-only daily Topic Center refresh | `node --check agent-workflow/tools/build-topic-center-data.mjs` + Topic Center duplicate-title scan + `node agent-workflow/tools/frontstage-regression-gate.mjs` + GitHub Pages deploy |
 | `V3.3.6.3-freeze-business-source-artifact-aggregation-20260615` | Business Signals / Intelligence Map | 2026-06-15 | 2026-06-15T16:05:34+08:00 | V3.3.6.3-business-source-artifact-aggregation | Business Signals source artifacts storing only prematurely normalized / compressed items; one source lane failure directly stopping all source capture; public Core Pool candidates with untranslated titles or garbled visible text entering frontstage JSON; artifact aggregation bypassing Raw / Pool / Card / source-first gates | source-only artifact workflow success + unified Business Signals PR workflow success + frontstage Top10 gate + GitHub Pages deploy |
@@ -144,6 +150,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| SITE-V3.3.7-weekly-report-intelligence-map / IMAP-V1.1.0-weekly-report | 2026-06-15T18:44:17+08:00 | Adds the weekly report subcolumn to Intelligence Map, removes Trend Candidates and History from the Intelligence Map page, publishes the first weekly report detail page, and defines `01-SiteV2/content/08-report/` as the future weekly report source path. | current |
 | OPS-V1.0.0 | 2026-06-15T17:40:00+08:00 | Defines the unified Operations Backend version for `operations-console.html`. The backend shell now has one visible and machine-readable version, while modules such as Topic Center keep separate module versions. | current operations backend |
 | V2.2.1-title-polish | 2026-06-15T17:25:00+08:00 | Defines the current Topic Center column version. Daily topic generation runs inside the Business Signals daily PR chain, writes all Topic Center and Hermes files, keeps raw material references, and uses polished boss-facing titles without fixed cross-date templates or awkward connector wording. | current backend column |
 | V3.3.6.3-business-source-artifact-aggregation | 2026-06-15T16:05:34+08:00 | Makes Business Signals source artifact aggregation the default production path, preserving per-source discovered items before global normalization; keeps failed source lanes isolated behind unified quality gates; filters untranslated / garbled Core Pool public candidates; validated with source-only artifact workflow, official Business Signals PR workflow, auto-merge, and GitHub Pages deploy on 2026-06-15. | current |

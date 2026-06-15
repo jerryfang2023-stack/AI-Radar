@@ -26,6 +26,7 @@ encoding: UTF-8
 | `06-asset-candidates/change/` | 变化候选 | asset-card-generator |
 | `06-asset-candidates/scene/` | 场景候选与案例补全研究 | case-signal-researcher |
 | `06-asset-candidates/trend/` | 趋势候选 / 变化簇候选 | trend-report-writer |
+| `08-report/` | 周度商业变化雷达报告 | guanlan-weekly-business-change-radar |
 | `08-trend-reports/` | 趋势追踪深度报告 | trend-report-writer |
 | `09-business-briefs/` | 商业内参周期刊物 | brief-periodical-writer |
 | `10-publication-index/` | 今日观察、趋势报告、商业内参等发布索引 | all writers |
