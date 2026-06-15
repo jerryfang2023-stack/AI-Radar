@@ -1,4 +1,9 @@
-status: open
+status: resolved
+resolved_at: 2026-06-15T19:30:00+08:00
+resolver: codex
+fix_commit: c9594c10
+validation: verified all 4 items on current HEAD
+prevention_added: memory
 priority: medium
 lane: site_version
 category: site_v337_weekly_report_integration
