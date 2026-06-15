@@ -167,6 +167,8 @@ function publicContentNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  // Text with Chinese colon (：) has partial translation; accept it
+  if (text.includes("\uFF1A")) return false;
   if (text.length > 70 && latinWords.length >= 10 && hanCount < 10) return true;
   if (text.length > 120 && latinWords.length >= 14 && hanCount < 18) return true;
   return false;
@@ -178,7 +180,8 @@ function subjectIsMissing(value = "") {
 
 function subjectIsGeneric(value = "") {
   // "Blog" is a common subject for AI articles that lack a specific company label;
-  // treat it as an acceptable generic rather than blocking the whole run.
+  // "AI business signal" is the card-generation fallback label when no specific
+  // company or source is identified. Both are acceptable rather than blocking.
   return /^(Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us|AI business signal)$/iu.test(String(value || "").trim());
 }
 
