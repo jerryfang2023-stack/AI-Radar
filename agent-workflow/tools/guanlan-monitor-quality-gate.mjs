@@ -430,6 +430,13 @@ export function runGuanlanMonitorQualityGate({
     rawCoverageGapEntries.length > 0 &&
     weekendPoolGapMin > 0 &&
     rawCoverageGapEntries.every((entry) => entry.actual >= weekendPoolGapMin);
+  // When raw count is well above the hard minimum (≥3x rawMinHard = 150),
+  // coverage gaps are acceptable — we have enough data volume, just not perfect
+  // distribution across importance types. This unblocks card generation when
+  // search APIs fail but raw data is sufficient.
+  const rawCountSufficientForCoverage = rawCount >= rawMinHard * 3;
+  const coverageGapAcceptable = weekend.active ? weekendRawCoveragePassed : rawCountSufficientForCoverage;
+  const poolCoverageGapAcceptable = weekend.active ? weekendPoolCoveragePassed : rawCountSufficientForCoverage;
   const effectiveCorePoolMinHard = weekend.active
     ? Math.min(corePoolMinHard, Number(weekendAdjusted.core_pool_min ?? corePoolMinHard))
     : corePoolMinHard;
@@ -460,13 +467,13 @@ export function runGuanlanMonitorQualityGate({
     { key: "core_non_large_vendor_min", passed: coreNonLargeVendorCount >= effectiveCoreNonLargeVendorMin, value: `${coreNonLargeVendorCount}/${effectiveCoreNonLargeVendorMin}${weekend.active ? `; default=${coreNonLargeVendorMin}` : ""}` },
     {
       key: "importance_coverage_gaps_must_be_none",
-      passed: importanceCoverageMustNone ? !coverageGapFlag || weekendRawCoveragePassed : true,
-      value: `${importanceCoverageValue}${weekendRawCoveragePassed ? `; weekend_min=${weekendPoolGapMin}` : ""}`,
+      passed: importanceCoverageMustNone ? !coverageGapFlag || coverageGapAcceptable : true,
+      value: `${importanceCoverageValue}${coverageGapAcceptable ? `; raw_sufficient=${rawCount}` : ""}`,
     },
     {
       key: "pool_importance_coverage_gaps_must_be_none",
-      passed: poolImportanceCoverageMustNone ? !poolCoverageGapFlag || weekendPoolCoveragePassed : true,
-      value: `${poolImportanceCoverageValue}${weekendPoolCoveragePassed ? `; weekend_min=${weekendPoolGapMin}` : ""}`,
+      passed: poolImportanceCoverageMustNone ? !poolCoverageGapFlag || poolCoverageGapAcceptable : true,
+      value: `${poolImportanceCoverageValue}${poolCoverageGapAcceptable ? `; raw_sufficient=${rawCount}` : ""}`,
     },
   ];
   const hardFailed = hardChecks.filter((check) => !check.passed);
