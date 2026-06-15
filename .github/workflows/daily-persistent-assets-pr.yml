@@ -130,20 +130,22 @@ jobs:
             echo
             echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, business-signal frontstage data, intelligence map data, topic-center data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
             echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
+            echo "Business Signals monitor now defaults to source artifact aggregation: AI HOT, keyword, GDELT, and RSS are collected as independent source artifacts before the unified Raw / Pool chain runs."
             echo "First-line viewpoints are produced by .github/workflows/daily-first-line-viewpoints-pr.yml and are not part of this business-signal PR."
             echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."
             echo
             echo "Production order:"
-            echo "1. Run Daily Monitor with QC."
-            echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
-            echo "3. Regenerate business-signal Card assets in the runner workspace."
-            echo "4. Run Pool-to-Card duplicate gate."
-            echo "5. Build Business Signals frontstage data and immediately run the unified Business frontstage gate."
-            echo "6. Build operations dashboard and topic-center data only after the Business frontstage gate passes."
-            echo "7. Confirm same-date downstream assets are no longer stale."
-            echo "8. Write a persistent asset manifest."
-            echo "9. Commit generated assets to an automation branch and open or update a PR."
-            echo "10. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
+            echo "1. Collect source Raw artifacts independently and in parallel."
+            echo "2. Run Daily Monitor with QC from source artifacts."
+            echo "3. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
+            echo "4. Regenerate business-signal Card assets in the runner workspace."
+            echo "5. Run Pool-to-Card duplicate gate."
+            echo "6. Build Business Signals frontstage data and immediately run the unified Business frontstage gate."
+            echo "7. Build operations dashboard and topic-center data only after the Business frontstage gate passes."
+            echo "8. Confirm same-date downstream assets are no longer stale."
+            echo "9. Write a persistent asset manifest."
+            echo "10. Commit generated assets to an automation branch and open or update a PR."
+            echo "11. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
@@ -172,6 +174,54 @@ jobs:
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
 
+      - name: Collect source raw artifacts
+        id: source-artifacts
+        if: steps.existing-assets.outputs.skip != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "agent-workflow/reports/source-runs/${RUN_DATE}"
+          sources=(aihot keyword gdelt rss)
+          pids=()
+          logs=()
+
+          for source in "${sources[@]}"; do
+            log_file="agent-workflow/reports/source-runs/${RUN_DATE}/${source}-source-run.log"
+            logs+=("$log_file")
+            {
+              node agent-workflow/tools/run-guanlan-daily-monitor.mjs \
+                --date="${RUN_DATE}" \
+                --source-only="$source" \
+                --search-limit=120 \
+                --search-path-query-limit=3 \
+                --gdelt-query-limit=8 \
+                --hn-limit=0 \
+                --fetch-timeout-ms=20000
+            } >"$log_file" 2>&1 &
+            pids+=("$!")
+          done
+
+          failed=0
+          for index in "${!pids[@]}"; do
+            source="${sources[$index]}"
+            log_file="${logs[$index]}"
+            if wait "${pids[$index]}"; then
+              echo "Source collection succeeded: $source"
+            else
+              echo "Source collection failed: $source" >&2
+              failed=1
+              printf '{"date":"%s","generated_at":"%s","mode":"business_source_raw","source_id":"%s","source_label":"%s","status":"failed","discovered_count":0,"raw_candidate_count":0,"failures":["source collection command failed; see %s-source-run.log"],"items":[]}\n' \
+                "$RUN_DATE" "$(date -Is)" "$source" "$source" "$source" \
+                > "agent-workflow/reports/source-runs/${RUN_DATE}/${source}-raw-source-candidates.json"
+            fi
+            echo "--- ${source} source log ---"
+            cat "$log_file"
+          done
+
+          if [ "$failed" -ne 0 ]; then
+            echo "One or more source lanes failed; continuing to unified monitor so quality gates can decide release." >&2
+          fi
+
       - name: Run Daily Monitor with QC
         id: monitor
         if: steps.existing-assets.outputs.skip != 'true'
@@ -189,6 +239,8 @@ jobs:
             --hn-limit=8 \
             --fetch-timeout-ms=20000 \
             --snapshot-timeout-ms=16000 \
+            --use-source-artifacts=true \
+            --source-artifact-dir="agent-workflow/reports/source-runs/${RUN_DATE}" \
             --monitor-timeout-ms=840000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
 
@@ -334,6 +386,7 @@ jobs:
           | Asset | State |
           |---|---|
           | Raw candidates | $(state_for "$raw_file") |
+          | Source raw artifacts | $(state_for "agent-workflow/reports/source-runs/${RUN_DATE}") |
           | Raw originals | $(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}") |
           | Pool candidates | $(state_for "$pool_file") |
           | Business signals | $(state_for "$signal_file") |
@@ -370,6 +423,7 @@ jobs:
             },
             "assets": {
               "raw_candidates": "$(state_for "$raw_file")",
+              "source_raw_artifacts": "$(state_for "agent-workflow/reports/source-runs/${RUN_DATE}")",
               "raw_originals": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
               "pool_candidates": "$(state_for "$pool_file")",
               "business_signals": "$(state_for "$signal_file")",
@@ -391,6 +445,7 @@ jobs:
           retention-days: 14
           path: |
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-daily-persistent-assets-pr.md
+            agent-workflow/reports/source-runs/${{ steps.run-date.outputs.date }}/**
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-github-persistent-assets-pr-*.log
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-persistent-asset-manifest.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-persistent-asset-manifest.json

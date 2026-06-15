@@ -81,6 +81,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          mkdir -p "agent-workflow/reports/source-runs/${RUN_DATE}"
           requested="${{ github.event.inputs.source || 'all' }}"
           if [ "$requested" = "all" ]; then
             sources=(aihot keyword gdelt rss)
@@ -89,22 +90,43 @@ jobs:
           fi
 
           failed=0
+          pids=()
+          logs=()
           for source in "${sources[@]}"; do
-            echo "Collecting source: $source"
-            if ! node agent-workflow/tools/run-guanlan-daily-monitor.mjs \
+            log_file="agent-workflow/reports/source-runs/${RUN_DATE}/${source}-source-run.log"
+            logs+=("$log_file")
+            {
+              node agent-workflow/tools/run-guanlan-daily-monitor.mjs \
               --date="${RUN_DATE}" \
               --source-only="$source" \
               --search-limit=120 \
               --search-path-query-limit=3 \
               --gdelt-query-limit=8 \
               --hn-limit=0 \
-              --fetch-timeout-ms=20000; then
-              echo "Source collection failed: $source" >&2
-              failed=1
-            fi
+                --fetch-timeout-ms=20000
+            } >"$log_file" 2>&1 &
+            pids+=("$!")
           done
 
-          exit "$failed"
+          for index in "${!pids[@]}"; do
+            source="${sources[$index]}"
+            log_file="${logs[$index]}"
+            if wait "${pids[$index]}"; then
+              echo "Source collection succeeded: $source"
+            else
+              echo "Source collection failed: $source" >&2
+              failed=1
+              printf '{"date":"%s","generated_at":"%s","mode":"business_source_raw","source_id":"%s","source_label":"%s","status":"failed","discovered_count":0,"raw_candidate_count":0,"failures":["source collection command failed; see %s-source-run.log"],"items":[]}\n' \
+                "$RUN_DATE" "$(date -Is)" "$source" "$source" "$source" \
+                > "agent-workflow/reports/source-runs/${RUN_DATE}/${source}-raw-source-candidates.json"
+            fi
+            echo "--- ${source} source log ---"
+            cat "$log_file"
+          done
+
+          if [ "$failed" -ne 0 ]; then
+            echo "One or more source lanes failed; continuing to aggregate available source artifacts." >&2
+          fi
 
       - name: Dry-run unified source artifact aggregator
         if: ${{ github.event.inputs.aggregate_dry_run != 'false' }}

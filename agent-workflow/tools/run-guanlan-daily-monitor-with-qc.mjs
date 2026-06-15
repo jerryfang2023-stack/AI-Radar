@@ -59,6 +59,8 @@ function buildMonitorArgsForCycle(cycle) {
   const hnBase = toNumber(args.get("hn-limit"), 8);
   const fetchTimeout = toNumber(args.get("fetch-timeout-ms"), 20000);
   const snapshotTimeout = toNumber(args.get("snapshot-timeout-ms"), 16000);
+  const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
+  const sourceArtifactDir = args.get("source-artifact-dir");
   const searchLimitStep = toNumber(retryTuning.search_limit_step, 10);
   const searchPathStep = toNumber(retryTuning.search_path_query_limit_step, 1);
   const gdeltStep = toNumber(retryTuning.gdelt_query_limit_step, 1);
@@ -74,7 +76,7 @@ function buildMonitorArgsForCycle(cycle) {
   const gdeltLimit = Math.min(gdeltMax, gdeltBase + round * gdeltStep);
   const hnLimit = Math.min(hnMax, hnBase + round * hnStep);
 
-  return [
+  const monitorArgs = [
     `--date=${date}`,
     `--search-limit=${searchLimit}`,
     `--search-path-query-limit=${searchPathLimit}`,
@@ -83,6 +85,9 @@ function buildMonitorArgsForCycle(cycle) {
     `--fetch-timeout-ms=${fetchTimeout}`,
     `--snapshot-timeout-ms=${snapshotTimeout}`,
   ];
+  if (useSourceArtifacts) monitorArgs.push("--use-source-artifacts=true");
+  if (sourceArtifactDir) monitorArgs.push(`--source-artifact-dir=${sourceArtifactDir}`);
+  return monitorArgs;
 }
 
 function appendAutomationMemory(text) {
