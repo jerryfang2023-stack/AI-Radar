@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-14
+last_updated: 2026-06-15
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.6.2 Hermes staged handoff consolidation.
+WaveSight AI is now in V3.3.6.3 Business source artifact aggregation.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now in V3.3.6.2 Hermes staged handoff consolidation.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.6.2 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, and makes Hermes early handoff staged before 10:00: 09:30 dispatches only Community / First-Line when needed, 09:45 dispatches Business when needed, and 09:55 performs final review only.
+- V3.3.6.3 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, makes Hermes early handoff staged before 10:00, and defaults Business Signals to independent source artifact capture before unified Raw / Pool normalization.
 
 ## Current Entries
 
@@ -36,6 +36,7 @@ WaveSight AI is now in V3.3.6.2 Hermes staged handoff consolidation.
 
 ```text
 External sources
+-> source artifacts
 -> Raw candidates
 -> Pool evidence
 -> signal_card assets

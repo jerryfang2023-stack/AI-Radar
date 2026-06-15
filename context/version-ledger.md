@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-14
+last_updated: 2026-06-15
 use_when:
   - task startup
   - page change
@@ -18,11 +18,11 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.6.2-hermes-staged-handoff |
-| Version name | Hermes Staged Handoff Consolidation |
+| Current version | V3.3.6.3-business-source-artifact-aggregation |
+| Version name | Business Source Artifact Aggregation |
 | Version layer | Patch |
-| Release date | 2026-06-14 |
-| Last modified at | 2026-06-14T20:10:00+08:00 |
+| Release date | 2026-06-15 |
+| Last modified at | 2026-06-15T16:05:34+08:00 |
 | Product version | V3.3 |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
 | Git tag | not tagged |
@@ -33,6 +33,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.3 public frontstage has four entries: Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
+- Business Signals now defaults to independent source artifact collection before unified Raw / Pool normalization: `aihot`, `keyword`, `gdelt`, and `rss` each preserve source-discovered items, while the unified monitor decides final eligibility and release gates.
 - First-Line Viewpoints uses the follow-builders / builders data chain as an independent page, split into a morning RSS route and an afternoon local follow-builders skill route.
 - Community Intelligence uses the logged-in community collection route as an independent page and Obsidian archive stream.
 - Builders content must not enter business-signal Cards, relationship-graph evidence, or trend-candidate evidence.
@@ -111,6 +112,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `V3.3.6.3-freeze-business-source-artifact-aggregation-20260615` | Business Signals / Intelligence Map | 2026-06-15 | 2026-06-15T16:05:34+08:00 | V3.3.6.3-business-source-artifact-aggregation | Business Signals source artifacts storing only prematurely normalized / compressed items; one source lane failure directly stopping all source capture; public Core Pool candidates with untranslated titles or garbled visible text entering frontstage JSON; artifact aggregation bypassing Raw / Pool / Card / source-first gates | source-only artifact workflow success + unified Business Signals PR workflow success + frontstage Top10 gate + GitHub Pages deploy |
 | `V3.3.6.2-freeze-hermes-staged-handoff-20260614` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-14 | 2026-06-14T20:10:00+08:00 | V3.3.6.2-hermes-staged-handoff | 09:55 starting a new routine dispatch; Community or First-Line being re-dispatched at 09:45 after their 09:30 handoff window; Business being judged as failed at 09:30 while 09:27 health dispatch may still be queued or running; second routine morning recovery pass returning after 10:55 | three-lane handoff syntax + staged dry-run checks + no second recovery cron |
 | `V3.3.6.1-freeze-automation-timeline-skill-alignment-20260614` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-14 | 2026-06-14T19:45:00+08:00 | V3.3.6.1-automation-timeline-skill-alignment | Business Signals reverting to blind 09:07 / 09:37 production windows; First-Line Viewpoints reverting to 09:47 / 09:55 RSS fallback language; Community Intelligence docs saying Codex automation is paused while the local automation is active at 09:00; Hermes treating GitHub Actions as able to run the logged-in community collector; lane failures blocking unrelated lanes | workflow cron syntax + `npm run supervise:daily -- --date=<DATE>` + monitor skill timing review |
 | `V3.3.6-freeze-business-title-hermes-handoff-20260613` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-13 | 2026-06-13T16:00:31+08:00 | V3.3.6-business-title-hermes-handoff | Top10 titles using source-domain placeholders such as `linkedin financing`, `github original title`, or `purpose see original`; public Core Pool candidate duplicates for the same event; social/community, repo/catalog, package/model, marketplace, or generic list sources promoted directly to formal Business Signal Cards; Business-only Hermes early handoff scheduled in parallel with three-lane handoff | title/candidate data assertion + Card promotion gate syntax + three-lane Hermes workflow syntax + Skill Ops + GitHub Pages deploy |
@@ -132,7 +134,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| V3.3.6.2-hermes-staged-handoff | 2026-06-14T20:10:00+08:00 | Implements staged Hermes handoff behavior: 09:30 can dispatch Community publish and First-Line RSS while Business waits; 09:45 can dispatch Business and only rechecks the other lanes; 09:55 is final review only and cannot start a new routine dispatch. Removes the second routine morning recovery pass after 10:55. | current |
+| V3.3.6.3-business-source-artifact-aggregation | 2026-06-15T16:05:34+08:00 | Makes Business Signals source artifact aggregation the default production path, preserving per-source discovered items before global normalization; keeps failed source lanes isolated behind unified quality gates; filters untranslated / garbled Core Pool public candidates; validated with source-only artifact workflow, official Business Signals PR workflow, auto-merge, and GitHub Pages deploy on 2026-06-15. | current |
+| V3.3.6.2-hermes-staged-handoff | 2026-06-14T20:10:00+08:00 | Implements staged Hermes handoff behavior: 09:30 can dispatch Community publish and First-Line RSS while Business waits; 09:45 can dispatch Business and only rechecks the other lanes; 09:55 is final review only and cannot start a new routine dispatch. Removes the second routine morning recovery pass after 10:55. | upgraded |
 | V3.3.6.1-automation-timeline-skill-alignment | 2026-06-14T19:45:00+08:00 | Aligns Business Signals, First-Line Viewpoints, and Community Intelligence timing across workflow cron, local Windows tasks, Codex automations, monitor skills, and Hermes instructions. Business runs 08:57 plus 09:27 conditional health dispatch; First-Line runs 08:30 local RSS, 09:17 GitHub fallback, and 16:10 local skill publish; Community runs 08:30 Windows collection, 09:00 Codex local fallback / repair window, 08:45 / 10:45 GitHub publish, and 09:30 / 09:45 / 09:55 Hermes publish supervision. | upgraded |
 | V3.3.6-business-title-hermes-handoff | 2026-06-13T17:34:22+08:00 | Fixes Business Signals public title and Core Pool candidate dedupe failures, splits First-Line Viewpoints into morning RSS and afternoon follow-builders skill routes, and makes Hermes supervise the three active lanes while recording the afternoon skill publish | upgraded |
 | V3.3.5-builder-obsidian-date-timelines | 2026-06-11T19:12:07+08:00 | Converts First-Line Viewpoints Obsidian persistence from month files to person / date timeline files, adds the sync step to daily Builder automation, and aligns main frontstage version metadata | upgraded |

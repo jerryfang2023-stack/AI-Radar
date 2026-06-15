@@ -42,7 +42,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: V3.3.6 business title gates and Hermes three-lane handoff.
+- Current stage: V3.3.6.3 business source artifact aggregation.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
