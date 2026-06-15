@@ -828,6 +828,43 @@ function isUntranslatedPublicEnglish(value = "") {
   return text.length > 70 && latinWords.length >= 10 && hanCount < 10;
 }
 
+function publicTitleNeedsTranslation(value = "") {
+  const text = String(value || "").trim();
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  if (text.includes("\uFF1A")) return false;
+  if (hanCount >= 5 && /(浣跨敤|鍙戝竷|铻嶈祫|瀹屾垚|鎺ㄥ嚭|寮€鍙憒搴旂敤|鍘熸枃|鐢ㄩ€旇鍘熸枃)/u.test(text)) return false;
+  const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
+  if (text.length > 18 && hanCount === 0) return true;
+  if (latinWords.length >= 7 && hanCount < 10) return true;
+  if (sourceLikeEnglish && latinWords.length >= 5 && hanCount < 14) return true;
+  return false;
+}
+
+function publicContentNeedsTranslation(value = "") {
+  const text = String(value || "").trim();
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  if (text.includes("\uFF1A")) return false;
+  if (text.length > 70 && latinWords.length >= 10 && hanCount < 10) return true;
+  if (text.length > 120 && latinWords.length >= 14 && hanCount < 18) return true;
+  return false;
+}
+
+function publicTextLooksGarbled(value = "") {
+  const text = String(value || "");
+  const controlCount = text.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu)?.length || 0;
+  const replacementCount = text.match(/[\uFFFD\u951F]/gu)?.length || 0;
+  return controlCount > 0 || replacementCount >= 2;
+}
+
+function publicCandidateIsDisplayReady(card = {}) {
+  if (publicTitleNeedsTranslation(card.title) || publicTitleNeedsTranslation(card.displayTitle)) return false;
+  return [card.summary, card.translatedFact, card.visibleFragment]
+    .filter(Boolean)
+    .every((value) => !publicTextLooksGarbled(value) && !publicContentNeedsTranslation(value));
+}
+
 function subjectMatchesDisplayTitle(subject = "", title = "", originalTitle = "") {
   const cleanSubjectText = cleanSubject(subject);
   const normalizedSubject = normalizedComparableText(subject);
@@ -3224,6 +3261,7 @@ const top10 = frontstageCards
   .map(top10CompatCard);
 const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate)
   .map(normalizeFrontstageDisplay)
+  .filter(publicCandidateIsDisplayReady)
   .filter((card) => !isWeakSubject(card.subject));
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {

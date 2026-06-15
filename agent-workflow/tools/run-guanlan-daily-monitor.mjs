@@ -3587,26 +3587,28 @@ function sourceRunArtifactItems(items, sourceId) {
   }));
 }
 
-function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems) {
+function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems, sourceItems) {
   const sourceRunDir = path.join(reportsDir, "source-runs", date);
   const jsonPath = path.join(sourceRunDir, `${sourceId}-raw-source-candidates.json`);
   const reportPath = path.join(sourceRunDir, `${sourceId}-raw-source-report.md`);
   const failures = Array.isArray(sourceResult.failures) ? sourceResult.failures : [];
+  const rawSourceItems = Array.isArray(sourceItems) ? sourceItems : [];
   const payload = {
     date,
     generated_at: new Date().toISOString(),
     mode: "business_source_raw",
     source_id: sourceId,
     source_label: sourceLabel,
-    status: normalizedItems.length ? "collected" : "empty",
-    discovered_count: sourceResult.discovered_count ?? sourceResult.items?.length ?? 0,
+    status: rawSourceItems.length ? "collected" : "empty",
+    discovered_count: sourceResult.discovered_count ?? rawSourceItems.length,
+    source_item_count: rawSourceItems.length,
     raw_candidate_count: normalizedItems.length,
     failures,
     channel_distribution: countBy(normalizedItems, "acquisition_channel"),
     source_level_distribution: countBy(normalizedItems, "source_level"),
     theme_distribution: countBy(normalizedItems, "theme"),
     keyword_group_distribution: countBy(normalizedItems, "keyword_group"),
-    items: sourceRunArtifactItems(normalizedItems, sourceId),
+    items: sourceRunArtifactItems(rawSourceItems, sourceId),
   };
 
   const report = [
@@ -3617,6 +3619,7 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     `- source_id: ${sourceId}`,
     `- status: ${payload.status}`,
     `- discovered_count: ${payload.discovered_count}`,
+    `- source_item_count: ${payload.source_item_count}`,
     `- raw_candidate_count: ${payload.raw_candidate_count}`,
     `- failures: ${failures.length}`,
     "",
@@ -3638,7 +3641,7 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     "",
     "## Top Candidates",
     "",
-    normalizedItems.slice(0, 30).map((item, index) => {
+    rawSourceItems.slice(0, 30).map((item, index) => {
       const title = item.title || item.url || "untitled";
       return `${index + 1}. ${title} (${item.source || "unknown"})`;
     }).join("\n") || "- none",
@@ -3680,7 +3683,8 @@ function loadSourceArtifactItems() {
     sourceRuns.push({
       source_id: sourceId,
       source_label: payload.source_label || sourceId,
-      raw_candidate_count: sourceItems.length,
+      raw_candidate_count: Number(payload.raw_candidate_count) || sourceItems.length,
+      source_item_count: Number(payload.source_item_count) || sourceItems.length,
       artifact_path: rel(file),
       status: payload.status || "unknown",
     });
@@ -3713,8 +3717,9 @@ async function runSourceOnly() {
   }
 
   const sourceResult = await collector.collect();
-  const normalizedItems = normalize(Array.isArray(sourceResult.items) ? sourceResult.items : []);
-  const outputs = dryRun ? [] : writeSourceOnlyRun(sourceOnlyMode, collector.label, sourceResult, normalizedItems);
+  const sourceItems = Array.isArray(sourceResult.items) ? sourceResult.items : [];
+  const normalizedItems = normalize(sourceItems);
+  const outputs = dryRun ? [] : writeSourceOnlyRun(sourceOnlyMode, collector.label, sourceResult, normalizedItems, sourceItems);
   console.log(
     JSON.stringify(
       {
@@ -3722,8 +3727,9 @@ async function runSourceOnly() {
         mode: "business_source_raw",
         source_id: sourceOnlyMode,
         source_label: collector.label,
-        status: normalizedItems.length ? "collected" : "empty",
-        discovered_count: sourceResult.discovered_count ?? sourceResult.items?.length ?? 0,
+        status: sourceItems.length ? "collected" : "empty",
+        discovered_count: sourceResult.discovered_count ?? sourceItems.length,
+        source_item_count: sourceItems.length,
         raw_candidate_count: normalizedItems.length,
         failures: sourceResult.failures || [],
         outputs,
