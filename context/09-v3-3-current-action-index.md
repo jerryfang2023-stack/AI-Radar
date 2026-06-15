@@ -285,13 +285,14 @@ Reads:
 Outputs:
 
 - `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`.
+- `01-SiteV2/knowledge/02-Opinion-Timelines/` person / date timeline updates from the generated skill viewpoints.
 - `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
 
 Boundaries:
 
 - The afternoon skill publish is independent from the morning RSS route.
 - It must still publish through a branch and PR instead of pushing generated files directly to `main`.
-- Hermes records the afternoon run from the local publish report at 16:30.
+- Hermes records the afternoon run from the local publish report at 16:30 and checks the Obsidian sync counts in that report.
 
 ### 8. Frontstage Data Build
 

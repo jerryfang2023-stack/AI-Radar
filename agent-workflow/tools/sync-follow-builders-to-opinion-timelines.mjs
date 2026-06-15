@@ -23,6 +23,7 @@ const from = args.get("from") || new Intl.DateTimeFormat("en-CA", {
 }).format(new Date());
 const to = args.get("to") || from;
 const dryRun = args.get("dry-run") === "true";
+const pointsFile = args.get("points-file") || "";
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
@@ -106,6 +107,82 @@ function parseFrontmatter(text) {
     if (item) frontmatter[item[1]] = item[2].replace(/^"|"$/gu, "");
   }
   return frontmatter;
+}
+
+function stripInlineCode(value = "") {
+  return String(value || "").trim().replace(/^`|`$/gu, "").trim();
+}
+
+function pointField(section = "", key = "") {
+  const escaped = key.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  const match = section.match(new RegExp(`^- ${escaped}:\\s*(.+)$`, "mu"));
+  return match ? stripInlineCode(match[1]) : "";
+}
+
+function pointBody(section = "") {
+  const lines = section.split(/\r?\n/u);
+  const kindIndex = lines.findIndex((line) => /^- kind:/u.test(line));
+  const bodyLines = kindIndex >= 0 ? lines.slice(kindIndex + 1) : lines.slice(1);
+  return clean(bodyLines.join("\n").replace(/^\s+/u, ""), 2200);
+}
+
+function pointPersonName(sourceName = "", heading = "") {
+  const fromSource = String(sourceName || "").split("/").map((item) => item.trim()).filter(Boolean).at(-1);
+  if (fromSource) return fromSource;
+  const withoutId = String(heading || "").replace(/^BP-\d{8}-\d{2}\S*\s*/u, "").trim();
+  const match = withoutId.match(/^([^锝]+)锝/u);
+  return clean(match?.[1] || withoutId || "Unknown Builder", 80);
+}
+
+function pointTitle(heading = "", body = "") {
+  const withoutId = String(heading || "").replace(/^BP-\d{8}-\d{2}\S*\s*/u, "").trim();
+  return clean(withoutId || body || "Untitled", 220);
+}
+
+function collectPointRecords() {
+  const absolutePointsFile = path.resolve(root, pointsFile);
+  const text = readText(absolutePointsFile);
+  if (!text) throw new Error(`points file not found or empty: ${pointsFile}`);
+  const frontmatter = parseFrontmatter(text);
+  const snapshotDate = frontmatter.date || from;
+  const records = [];
+  const seenKeys = collectExistingKeys();
+  const sections = text.split(/^##\s+/gmu).slice(1);
+  for (const section of sections) {
+    const [headingLine = "", ...rest] = section.split(/\r?\n/u);
+    const bodySection = rest.join("\n");
+    const url = pointField(bodySection, "source_url");
+    const stableId = pointField(bodySection, "stable_id") || headingLine.match(/^BP-\d{8}-\d{2}/u)?.[0] || "";
+    const key = String(url || stableId || headingLine).trim();
+    if (!key || seenKeys.has(key)) continue;
+    seenKeys.add(key);
+    const sourceName = pointField(bodySection, "source_name");
+    const day = parseDay(pointField(bodySection, "original_date") || snapshotDate) || snapshotDate;
+    const body = pointBody(bodySection);
+    const title = pointTitle(headingLine, body);
+    records.push({
+      id: stableId,
+      name: pointPersonName(sourceName, headingLine),
+      handle: pointPersonName(sourceName, headingLine),
+      day,
+      date: day,
+      url,
+      source: pointField(bodySection, "kind") || "follow-builders-skill",
+      text: title,
+      content: body,
+      translation: title,
+      contentTranslation: body,
+      snapshotDate,
+      snapshotHash: `points-file:${path.basename(absolutePointsFile)}`,
+      formalTags: [{ name: "follow-builders skill" }],
+    });
+  }
+  records.sort((a, b) => {
+    const byDay = b.day.localeCompare(a.day);
+    if (byDay) return byDay;
+    return String(a.name || "").localeCompare(String(b.name || ""));
+  });
+  return records;
 }
 
 function replaceFrontmatterValue(text, key, value) {
@@ -241,6 +318,8 @@ function entryMarkdown(record) {
 }
 
 function collectRecords() {
+  if (pointsFile) return collectPointRecords();
+
   const wantedDays = new Set(dayRange(from, to));
   const seenKeys = collectExistingKeys();
   const snapshots = [];

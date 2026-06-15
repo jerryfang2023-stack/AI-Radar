@@ -8,4 +8,7 @@
 - skill_script: ../../../../../.skill-store/follow-builders/scripts/prepare-digest.js
 - output_file: 01-SiteV2/content/07-points/2026-06-15-builders-viewpoints.md
 - builder_items_count: 26
+- obsidian_sync_added: 15
+- obsidian_sync_groups: 11
+- obsidian_sync_files: 11
 - hermes_record: agent-workflow/reports/2026-06-15-follow-builders-skill-local-publish.md

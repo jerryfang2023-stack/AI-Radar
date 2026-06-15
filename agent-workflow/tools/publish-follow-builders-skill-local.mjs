@@ -133,6 +133,7 @@ function openOrUpdatePr() {
     "This PR was created by the local afternoon skill task after the skill digest and file checks passed.",
     "",
     "- generated `01-SiteV2/content/07-points/${date}-builders-viewpoints.md` from the local follow-builders skill;",
+    "- synced the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`;",
     "- recorded the run in `agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`;",
     "- auto-publishes through a branch and PR so Hermes can record the run from a durable report path.",
   ].join("\n"), "utf8");
@@ -241,6 +242,21 @@ function main() {
     throw new Error(`Builders viewpoints output has no items: ${outputFile}`);
   }
 
+  run("node", ["--check", "agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs"]);
+  const obsidianSyncRaw = run("node", [
+    "agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs",
+    `--points-file=${rel(outputFile)}`,
+  ]);
+  let obsidianSync = {};
+  try {
+    obsidianSync = JSON.parse(obsidianSyncRaw);
+  } catch {
+    throw new Error(`Unable to parse Obsidian sync output:\n${obsidianSyncRaw}`);
+  }
+  if (!obsidianSync.ok) {
+    throw new Error(`Obsidian sync did not report ok:\n${obsidianSyncRaw}`);
+  }
+
   writeReport([
     `# ${date} Follow-Builders Skill Local Publish`,
     "",
@@ -252,6 +268,9 @@ function main() {
     `- skill_script: ${rel(skillScript)}`,
     `- output_file: ${rel(outputFile)}`,
     `- builder_items_count: ${itemCount}`,
+    `- obsidian_sync_added: ${obsidianSync.added ?? 0}`,
+    `- obsidian_sync_groups: ${obsidianSync.groups ?? 0}`,
+    `- obsidian_sync_files: ${Array.isArray(obsidianSync.files) ? obsidianSync.files.length : 0}`,
     `- hermes_record: ${rel(reportFile)}`,
   ]);
 
@@ -262,6 +281,7 @@ function main() {
 
   stageIfExists(`agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`);
   stageIfExists(`01-SiteV2/content/07-points/${date}-builders-viewpoints.md`);
+  stageIfExists("01-SiteV2/knowledge/02-Opinion-Timelines");
 
   const staged = run("git", ["diff", "--cached", "--name-only"]);
   if (!staged) {

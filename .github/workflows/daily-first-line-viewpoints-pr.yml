@@ -265,8 +265,10 @@ jobs:
           GitHub Pages deploys after this PR updates main.
           BODY
 
-          if pr_number="$(gh pr view "$branch" --json number --jq .number 2>/dev/null)"; then
-            pr_url="$(gh pr view "$branch" --json url --jq .url)"
+          if pr_json="$(gh pr list --state open --head "$branch" --json number,url --limit 1 2>/dev/null)" \
+            && pr_number="$(node -e "const prs=JSON.parse(process.argv[1]||'[]'); process.stdout.write(String(prs[0]?.number||''));" "$pr_json")" \
+            && [ -n "$pr_number" ]; then
+            pr_url="$(node -e "const prs=JSON.parse(process.argv[1]||'[]'); process.stdout.write(String(prs[0]?.url||''));" "$pr_json")"
             gh pr edit "$pr_number" \
               --title "First-Line Viewpoints update ${RUN_DATE}" \
               --body-file "$body_file"

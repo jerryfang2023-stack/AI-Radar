@@ -33,8 +33,8 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Fail when the lane waits until the old 10:30 supervision check without an early report, dispatch action, and Codex handoff path.
 
 10. `afternoon_follow_builders_skill_lane`
-    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`, and Hermes records the lane at 16:30.
-    - Fail when the afternoon skill route is judged from morning RSS data only or when a missing 16:30 publish report is ignored.
+    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, syncs the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`, records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`, and Hermes records the lane at 16:30.
+    - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, or when Obsidian sync counts are missing from the report.
 
 11. `first_line_failure_router`
     - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `obsidian_sync_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, or `afternoon_count_mismatch`.
@@ -47,8 +47,8 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when Hermes creates a First-Line RSS repair inbox before the 09:30 handoff window.
 
 13. `afternoon_skill_count_consistency`
-    - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, and both counts match.
-    - Fail when the report exists but records `builder_items_count: 0`, when the output count is `0`, or when report and output counts disagree.
+    - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, both counts match, and the report includes Obsidian sync counts.
+    - Fail when the report exists but records `builder_items_count: 0`, when the output count is `0`, when report and output counts disagree, or when Obsidian sync is not recorded.
 
 14. `report_existence_not_success`
     - Pass when First-Line success checks inspect the content and count inside gate/manifest/publish reports, not only the presence of the files.

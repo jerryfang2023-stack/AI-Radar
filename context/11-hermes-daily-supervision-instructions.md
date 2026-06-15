@@ -114,7 +114,7 @@ agent-workflow/inbox/hermes-to-codex/
 | 10:45 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
 | 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. For Business Signals also check same-date data, Top10 count, and local sync status. |
 | 10:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. Do not run a second routine morning recovery pass. |
-| 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report and `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`. If the report or output is missing, write a Codex handoff for the afternoon skill lane. |
+| 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, and the report's Obsidian sync counts. If the report, output, or Obsidian sync result is missing, write a Codex handoff for the afternoon skill lane. |
 
 If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.
 

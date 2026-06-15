@@ -104,11 +104,13 @@ Success after 16:30 requires:
 
 - `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md` exists;
 - the output frontmatter `builder_items_count` is greater than `0`;
+- generated skill viewpoints are synced into `01-SiteV2/knowledge/02-Opinion-Timelines/`;
 - `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` exists;
 - the report `builder_items_count` is greater than `0`;
 - the report count matches the output count.
+- the report includes Obsidian sync counts.
 
-If the report exists but records `0` while the output contains items, repair or regenerate the report before closing Hermes.
+If the report exists but records `0` while the output contains items, or if the report lacks Obsidian sync counts, repair or regenerate the report before closing Hermes.
 
 ## Lane Boundaries
 
