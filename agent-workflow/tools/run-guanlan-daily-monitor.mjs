@@ -56,6 +56,7 @@ if (args.has("help") || args.has("h")) {
       "  --search-path-query-limit=5",
       "  --hn-limit=8",
       "  --gdelt-query-limit=8",
+      "  --disable-tavily=true",
       "  --dry-run=true",
       "",
     ].join("\n")
@@ -126,7 +127,8 @@ const themeById = new Map(themeGroups.map((group) => [group.id, group]));
 const gdeltQueryLimit = Number(args.get("gdelt-query-limit") || Math.max(4, themeGroups.length || 7));
 const rawEntryPolicy = keywordMonitoring.raw_entry_policy || {};
 const anysearchApiKey = process.env.ANYSEARCH_API_KEY || "";
-const tavilyApiKey = process.env.TAVILY_API_KEY || "";
+const tavilyDisabledByConfig = args.get("disable-tavily") === "true" || process.env.TAVILY_DISABLED === "true";
+const tavilyApiKey = tavilyDisabledByConfig ? "" : process.env.TAVILY_API_KEY || "";
 const exaApiKey = process.env.EXA_API_KEY || "";
 
 function numericConfig(value, fallback) {
@@ -148,7 +150,7 @@ let historicalDedupePostFetchRemoved = 0;
 let historicalDedupeRecordsChecked = 0;
 const providerFallbackNotes = [];
 let anysearchDisabledForRun = false;
-let tavilyDisabledForRun = false;
+let tavilyDisabledForRun = tavilyDisabledByConfig;
 const aTierMediaFallbackQuerySuffix = "(site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)";
 const registrySources = Array.isArray(sourceRegistry.sources) ? sourceRegistry.sources : [];
 const registryHostRules = registrySources
