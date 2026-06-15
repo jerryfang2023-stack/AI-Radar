@@ -1,0 +1,378 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-020
+title: "How Rippling built production AI in 6 months with Deep Agents and LangSmith"
+original_url: "https://www.langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith"
+canonical_url: "https://langchain.com/blog/how-rippling-went-ai-native-across-every-product-in-6-months-with-deep-agents-and-langsmith"
+source_name: "keyword search / Exa"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: formal_report
+search_intent: "find_customer_case"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: "2026-06-01T16:00:00.000Z"
+collected_at: 2026-06-15T07:56:14.449Z
+language: mixed
+full_text_hash: a786b5cd2cb72520
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-020-how-rippling-built-production-ai-in-6-months-with-deep-agents-and-lang.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-020-how-rippling-built-production-ai-in-6-months-with-deep-agents-and-lang.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8970,"paragraph_count":60,"sentence_count":71,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"content-container"}
+has_full_text: true
+content_length: 8970
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a786b5cd2cb72520","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 127b091cd9525989
+content_hash: a786b5cd2cb72520
+semantic_hash: 7b74f91a220579b6
+duplicate_of: ""
+first_seen_at: "2026-06-01T16:00:00.000Z"
+last_seen_at: 2026-06-15T07:56:14.449Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Exa","GitHub","Salesforce"],"products":["Agents","agent","agents","Agent"],"people":[],"industries":["金融 / 保险","医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["6 m","6 M","5","7","300","400","10","1"],"quotes":["What’s my balance?","what to do","how to format it"]}
+evidence_seed: {"company_actions":["Learn Docs Company Pricing Try LangSmith Get a demo Try LangSmith Get a demo Case Studies How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith Sofia Sulikowski June 1, 2026 min Go back to blog Create agents Share Key Takeaways Rippling needed AI that could reason across a massive ontology.","Its data model spans thousands of tables and overlapping concepts across HR, IT, payroll, finance, and global operations.","Deep Agents power Rippling AI’s multi-agent architecture."],"case_details":[],"workflow_changes":["How Rippling built production AI in 6 months with Deep Agents and LangSmith [...] # How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith [...] - Deep Agents power Rippling AI’s multi-agent architecture. A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows. [...] - LangSmith supports production debugging and evaluation. Rippling uses traces, layered evals, and a semi-automated self-healing loop to c","A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows.","LangSmith supports production debugging and evaluation."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"How Rippling built production AI in 6 months with Deep Agents and LangSmith [...] # How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith [...] - Deep Agents power Rippling AI’s multi-agent architecture. A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows. [...] - LangSmith supports production debugging and evaluation. Rippling uses traces, layered evals, and a semi-automated self-healing loop to c","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learn Docs Company Pricing Try LangSmith Get a demo Try LangSmith Get a demo Case Studies How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith Sofia Sulikowski June 1, 2026 min Go back to blog Create agents Share Key Takeaways Rippling needed AI that could reason across a massive ontology.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Its data model spans thousands of tables and overlapping concepts across HR, IT, payroll, finance, and global operations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Deep Agents power Rippling AI’s multi-agent architecture.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"LangSmith supports production debugging and evaluation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# How Rippling built production AI in 6 months with Deep Agents and LangSmith
+
+## clean_text
+
+Learn
+Docs Company
+Pricing Try LangSmith
+Get a demo
+Try LangSmith
+Get a demo
+Case Studies
+How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith
+Sofia Sulikowski
+June 1, 2026
+min
+Go back to blog
+Create agents
+Share
+Key Takeaways
+Rippling needed AI that could reason across a massive ontology. Its data model spans thousands of tables and overlapping concepts across HR, IT, payroll, finance, and global operations.
+Deep Agents power Rippling AI’s multi-agent architecture. A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows.
+LangSmith supports production debugging and evaluation. Rippling uses traces, layered evals, and a semi-automated self-healing loop to catch regressions and improve system quality over time.
+Rippling is a workforce management platform that manages everything from onboarding and benefits to device provisioning and spend management. Their data model spans HR, IT, payroll, finance, and global operations: thousands of tables, hundreds of thousands of fields, and concepts that share names across domains. Building an AI layer that reasons across all of it required a new architecture.
+Rippling AI , now in production across million of users globally , runs on LangChain Deep Agents and LangSmith. The team shipped it in roughly 6 months.
+The Problem: Cross-Domain AI on a Massive Ontology
+Rippling users ask a lot of questions about a lot of things, across many domains. “What’s my balance?” is a question that could pertain to a health savings account, a credit card, a contractor payment account, even a time-off policy. A manager might ask about headcount, pivot to spend analysis, then check a new hire's device provisioning status. Rippling’s AI layer needs to be able to disambiguate and reason effectively across a huge, amorphous surface.
+The data model made that difficult. With thousands of tables and overlapping entity names across domains, passing schema chunks to an LLM doesn't work. The team needed an architecture that could quickly reason across domains without drowning in context.
+As we embedded AI into individual products, it became clear that siloed, vertical-specific models couldn't scale. Rippling's data model spans thousands of tables across HR, IT, finance, and global ops — with overlapping entities and shared concepts that mean entirely different things depending on context. We needed an AI-native reasoning layer that could disambiguate and operate across that entire ontology, not just optimize for one domain.
+— Laks Srini, Product Owner, Rippling AI
+Rippling AI: Built On Deep Agents + LangSmith
+The speed by which Rippling integrated AI agents was possible because the team built with LangChain from the start, using composable agent primitives and a shared observability layer in LangSmith. When Deep Agents launched, they adopted it for Rippling AI's core reasoning loop.
+As soon as Deep Agents came out, we wanted to use it to see how good it would be for us to have a really strong agentic reasoning loop. It was a continuation of the relationship we had and the tech that we trusted.
+— Sahin Olut, Principal Engineer, Rippling AI
+The architecture they landed on is a supervisor agent coordinating 5 to 7 specialized subagents, with LangSmith handling tracing, evaluations, and production monitoring.
+How It Works: A Multi-Agent System of Deep Agents
+Customers interact with Rippling AI through a chat interface inside the Rippling portal and mobile app, but it goes well beyond a text box. Structured data renders as sortable, filterable tables. Multi-choice clarifications surface as selection UIs. Action confirmations have dedicated interaction patterns.
+Under the hood, Rippling AI is a multi-agent system. Three types of specialized Deep Agents sit beneath a supervisor agent:
+Read agents query structured data across all of Rippling's product areas (HR, payroll, IT, finance) and connected platforms like Salesforce, Carta, and GitHub.
+RAG agents retrieve from unstructured sources: help center docs, company handbooks, and HR policy documents hosted in Rippling.
+Action agents execute write operations within Rippling. For example, uploading bonuses, normalizing job titles and leveling structures, or triggering new hires pre-populated from prior employee profiles.
+The supervisor agent sits on top operating the primary reasoning loop that analyzes incoming queries and decides which specialized agent (or combination) to invoke.
+Context Engineering: The Hardest Problem
+At Rippling’s complexity and scale, context engineering was the core technical challenge. The team developed three patterns to solve it.
+Dynamic skill injection
+Rippling uses Deep Agents middleware to reduce context bloat. When a user asks a question, a search step uses Rippling's semantic layer to identify the relevant domain first, then injects a skill scoped to that domain (payroll, devices, ATS, spend, etc.). Re-rankers prune aggressively, reducing context size by 100 to 500x.
+If you put the whole thing in context, even a chunk of it, there are so many conflicting entities that it just won't fit in the context window in the timeframe Rippling's customers expect.
+— Sahin Olut, Principal Engineer
+Code execution for write operations
+Rather than asking the LLM to manipulate data directly, Rippling’s action agents use sandboxed code execution to normalize inputs (say, a CSV from a client) into the format Rippling's internal tools expect. This separates "what to do" (LLM reasoning) from "how to format it" (deterministic code), keeping data normalization reliable and auditable.
+Variable pinning via a REPL
+One of the team's sharpest insights came from watching LLMs hallucinate when reciting long alphanumeric IDs. Their fix: a REPL maintains a runtime variable store between agent steps. The agent refers to named variables instead of passing raw entity strings across tool calls.
+Observability and Evals with LangSmith
+With all engineers working on a single AI system, a shared, queryable trace store is essential to how the team collaborates.
+The ability to pull and analyze all conversations at scale… LangSmith makes that possible. We have a bunch of automated analysis running on top of it.
+— Laks Srini, Product Owner
+Self-Healing Eval Loop
+The team built a semi-automated loop that catches regressions and closes them. First, failing production traces get pulled from LangSmith. An agent analyzes the failures, proposes fixes, and re-runs evals to confirm improvement, iterating until regressions close. Finally, a human reviews and merges the resulting PRs.
+We pull failing traces, have an agent understand what's going on, propose a few solutions, run the evals again to see if it improves, and loop until it's complete. LangSmith makes this possible because there's an API at every point in the system.
+— Sahin Olut, Principal Engineer
+The Eval Pipeline
+The team runs a layered eval system, with all results uploaded to LangSmith:
+Offline evals: Pre-recorded mocks and fixtures that run locally on every commit without external dependencies.
+Post-merge integration evals (online): 300 to 400 queries against a full Rippling sandbox (live API calls) to validate system health before deployment.
+Deploy-blocking evals (online): ~10 critical scenarios against real systems that gate every deployment.
+Continuous evals (online): Scheduled runs against production data, multiple times daily, monitoring live system health.
+What's Next: Continuous Improvement With LangSmith
+More than one million people using Rippling AI globally. Every conversation flows through LangSmith, feeding a continuous loop of quality tracking, user feedback, and improvement.
+For teams building AI on complex, permission-sensitive platforms, the Rippling team's advice is direct:
+Build the systems that LLMs are already familiar with. Think of agents as your co-workers and build the best tools for them to be successful: enable code execution, enable writing SQL, don't obscure details from the LLM. And have a tight self-debugging loop.
+— Sahin Olut, Principal Engineer
+Deep Agents is the reasoning framework behind Rippling AI. See how it works | Read the docs
+Related content
+Case Studies
+Building Box AI: How an Enterprise Content Platform Went AI-Native with Deep Agents
+Sofia Sulikowski
+June 12, 2026
+min
+Case Studies
+How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith
+Sofia Sulikowski
+June 3, 2026
+min
+Case Studies
+LangGraph
+LangSmith
+Tutorials & How-Tos
+How Lyft Built a Self-Serve AI Agent Platform for Customer Support with LangGraph and LangSmith
+Akshay Sharma
+May 27, 2026
+10
+min
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+See what your agent is really doing
+LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.
+Try LangSmith
+Get a demo
+
+## full_text
+
+Learn
+Docs Company
+Pricing Try LangSmith
+Get a demo
+Try LangSmith
+Get a demo
+Case Studies
+How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith
+Sofia Sulikowski
+June 1, 2026
+min
+Go back to blog
+Create agents
+Share
+Key Takeaways
+Rippling needed AI that could reason across a massive ontology. Its data model spans thousands of tables and overlapping concepts across HR, IT, payroll, finance, and global operations.
+Deep Agents power Rippling AI’s multi-agent architecture. A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows.
+LangSmith supports production debugging and evaluation. Rippling uses traces, layered evals, and a semi-automated self-healing loop to catch regressions and improve system quality over time.
+Rippling is a workforce management platform that manages everything from onboarding and benefits to device provisioning and spend management. Their data model spans HR, IT, payroll, finance, and global operations: thousands of tables, hundreds of thousands of fields, and concepts that share names across domains. Building an AI layer that reasons across all of it required a new architecture.
+Rippling AI , now in production across million of users globally , runs on LangChain Deep Agents and LangSmith. The team shipped it in roughly 6 months.
+The Problem: Cross-Domain AI on a Massive Ontology
+Rippling users ask a lot of questions about a lot of things, across many domains. “What’s my balance?” is a question that could pertain to a health savings account, a credit card, a contractor payment account, even a time-off policy. A manager might ask about headcount, pivot to spend analysis, then check a new hire's device provisioning status. Rippling’s AI layer needs to be able to disambiguate and reason effectively across a huge, amorphous surface.
+The data model made that difficult. With thousands of tables and overlapping entity names across domains, passing schema chunks to an LLM doesn't work. The team needed an architecture that could quickly reason across domains without drowning in context.
+As we embedded AI into individual products, it became clear that siloed, vertical-specific models couldn't scale. Rippling's data model spans thousands of tables across HR, IT, finance, and global ops — with overlapping entities and shared concepts that mean entirely different things depending on context. We needed an AI-native reasoning layer that could disambiguate and operate across that entire ontology, not just optimize for one domain.
+— Laks Srini, Product Owner, Rippling AI
+Rippling AI: Built On Deep Agents + LangSmith
+The speed by which Rippling integrated AI agents was possible because the team built with LangChain from the start, using composable agent primitives and a shared observability layer in LangSmith. When Deep Agents launched, they adopted it for Rippling AI's core reasoning loop.
+As soon as Deep Agents came out, we wanted to use it to see how good it would be for us to have a really strong agentic reasoning loop. It was a continuation of the relationship we had and the tech that we trusted.
+— Sahin Olut, Principal Engineer, Rippling AI
+The architecture they landed on is a supervisor agent coordinating 5 to 7 specialized subagents, with LangSmith handling tracing, evaluations, and production monitoring.
+How It Works: A Multi-Agent System of Deep Agents
+Customers interact with Rippling AI through a chat interface inside the Rippling portal and mobile app, but it goes well beyond a text box. Structured data renders as sortable, filterable tables. Multi-choice clarifications surface as selection UIs. Action confirmations have dedicated interaction patterns.
+Under the hood, Rippling AI is a multi-agent system. Three types of specialized Deep Agents sit beneath a supervisor agent:
+Read agents query structured data across all of Rippling's product areas (HR, payroll, IT, finance) and connected platforms like Salesforce, Carta, and GitHub.
+RAG agents retrieve from unstructured sources: help center docs, company handbooks, and HR policy documents hosted in Rippling.
+Action agents execute write operations within Rippling. For example, uploading bonuses, normalizing job titles and leveling structures, or triggering new hires pre-populated from prior employee profiles.
+The supervisor agent sits on top operating the primary reasoning loop that analyzes incoming queries and decides which specialized agent (or combination) to invoke.
+Context Engineering: The Hardest Problem
+At Rippling’s complexity and scale, context engineering was the core technical challenge. The team developed three patterns to solve it.
+Dynamic skill injection
+Rippling uses Deep Agents middleware to reduce context bloat. When a user asks a question, a search step uses Rippling's semantic layer to identify the relevant domain first, then injects a skill scoped to that domain (payroll, devices, ATS, spend, etc.). Re-rankers prune aggressively, reducing context size by 100 to 500x.
+If you put the whole thing in context, even a chunk of it, there are so many conflicting entities that it just won't fit in the context window in the timeframe Rippling's customers expect.
+— Sahin Olut, Principal Engineer
+Code execution for write operations
+Rather than asking the LLM to manipulate data directly, Rippling’s action agents use sandboxed code execution to normalize inputs (say, a CSV from a client) into the format Rippling's internal tools expect. This separates "what to do" (LLM reasoning) from "how to format it" (deterministic code), keeping data normalization reliable and auditable.
+Variable pinning via a REPL
+One of the team's sharpest insights came from watching LLMs hallucinate when reciting long alphanumeric IDs. Their fix: a REPL maintains a runtime variable store between agent steps. The agent refers to named variables instead of passing raw entity strings across tool calls.
+Observability and Evals with LangSmith
+With all engineers working on a single AI system, a shared, queryable trace store is essential to how the team collaborates.
+The ability to pull and analyze all conversations at scale… LangSmith makes that possible. We have a bunch of automated analysis running on top of it.
+— Laks Srini, Product Owner
+Self-Healing Eval Loop
+The team built a semi-automated loop that catches regressions and closes them. First, failing production traces get pulled from LangSmith. An agent analyzes the failures, proposes fixes, and re-runs evals to confirm improvement, iterating until regressions close. Finally, a human reviews and merges the resulting PRs.
+We pull failing traces, have an agent understand what's going on, propose a few solutions, run the evals again to see if it improves, and loop until it's complete. LangSmith makes this possible because there's an API at every point in the system.
+— Sahin Olut, Principal Engineer
+The Eval Pipeline
+The team runs a layered eval system, with all results uploaded to LangSmith:
+Offline evals: Pre-recorded mocks and fixtures that run locally on every commit without external dependencies.
+Post-merge integration evals (online): 300 to 400 queries against a full Rippling sandbox (live API calls) to validate system health before deployment.
+Deploy-blocking evals (online): ~10 critical scenarios against real systems that gate every deployment.
+Continuous evals (online): Scheduled runs against production data, multiple times daily, monitoring live system health.
+What's Next: Continuous Improvement With LangSmith
+More than one million people using Rippling AI globally. Every conversation flows through LangSmith, feeding a continuous loop of quality tracking, user feedback, and improvement.
+For teams building AI on complex, permission-sensitive platforms, the Rippling team's advice is direct:
+Build the systems that LLMs are already familiar with. Think of agents as your co-workers and build the best tools for them to be successful: enable code execution, enable writing SQL, don't obscure details from the LLM. And have a tight self-debugging loop.
+— Sahin Olut, Principal Engineer
+Deep Agents is the reasoning framework behind Rippling AI. See how it works | Read the docs
+Related content
+Case Studies
+Building Box AI: How an Enterprise Content Platform Went AI-Native with Deep Agents
+Sofia Sulikowski
+June 12, 2026
+min
+Case Studies
+How Harmonic Rebuilt Scout on Deep Agents and 4x'd Retention with LangSmith
+Sofia Sulikowski
+June 3, 2026
+min
+Case Studies
+LangGraph
+LangSmith
+Tutorials & How-Tos
+How Lyft Built a Self-Serve AI Agent Platform for Customer Support with LangGraph and LangSmith
+Akshay Sharma
+May 27, 2026
+10
+min
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+See what your agent is really doing
+LangSmith, our agent engineering platform, helps developers debug every agent decision, eval changes, and deploy in one click.
+Try LangSmith
+Get a demo
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8970,"paragraph_count":60,"sentence_count":71,"boilerplate_hits":0,"symbol_ratio":0.0002,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   How Rippling built production AI in 6 months with Deep Agents and LangSmith [...] # How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith [...] - Deep Agents power Rippling AI’s multi-agent architecture. A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows. [...] - LangSmith supports production debugging and evaluation. Rippling uses traces, layered evals, and a semi-automated self-healing loop to c
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Learn Docs Company Pricing Try LangSmith Get a demo Try LangSmith Get a demo Case Studies How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith Sofia Sulikowski June 1, 2026 min Go back to blog Create agents Share Key Takeaways Rippling needed AI that could reason across a massive ontology.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Its data model spans thousands of tables and overlapping concepts across HR, IT, payroll, finance, and global operations.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Deep Agents power Rippling AI’s multi-agent architecture.
+
+5. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   LangSmith supports production debugging and evaluation.
+
+## business_elements
+
+- companies: keyword search, Exa, GitHub, Salesforce
+- products: Agents, agent, agents, Agent
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 6 m, 6 M, 5, 7, 300, 400, 10, 1
+- quotes: What’s my balance? / what to do / how to format it
+
+## evidence_seed
+
+- company_actions: Learn Docs Company Pricing Try LangSmith Get a demo Try LangSmith Get a demo Case Studies How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith Sofia Sulikowski June 1, 2026 min Go back to blog Create agents Share Key Takeaways Rippling needed AI that could reason across a massive ontology. / Its data model spans thousands of tables and overlapping concepts across HR, IT, payroll, finance, and global operations. / Deep Agents power Rippling AI’s multi-agent architecture.
+- case_details: 暂无公开信息
+- workflow_changes: How Rippling built production AI in 6 months with Deep Agents and LangSmith [...] # How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith [...] - Deep Agents power Rippling AI’s multi-agent architecture. A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows. [...] - LangSmith supports production debugging and evaluation. Rippling uses traces, layered evals, and a semi-automated self-healing loop to c / A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows. / LangSmith supports production debugging and evaluation.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+How Rippling built production AI in 6 months with Deep Agents and LangSmith [...] # How Rippling Went AI-Native Across Every Product in 6 Months with Deep Agents and LangSmith [...] - Deep Agents power Rippling AI’s multi-agent architecture. A supervisor agent coordinates specialized read, RAG, and action agents to answer questions, retrieve context, and execute workflows. [...] - LangSmith supports production debugging and evaluation. Rippling uses traces, layered evals, and a semi-automated self-healing loop to catch regressions and improve system quality over time. [...] Rippling is a workforce management platform that manages everything from onboarding and benefits to device provisioning and spend management. Their data model spans HR, IT, payroll, finance, and global operations: thousands of tables, hundreds of thousands of fields, and concepts that share names across domains. Building an AI layer that reasons across all of it required a new architecture. [...] Rippling AI, now in production across million of users globally , runs on LangChain Deep Agents and LangSmith. The team shipped it in roughly 6 months. [...] The speed by which Rippling integrated AI agents was possible because the team built with LangChain from the start, using composable agent primitives and a shared observability layer in LangSmith. When Deep Agents launched, they adopted it for Rippling AI's core reasoning loop. [...] The architecture they landed on is a supervisor agent coordinating 5 to 7 specialized subagents, with LangSmith handling tracing, evaluations, and production monitoring. [...] The team built a semi-automated loop that catches regressions and closes them. First, failing production traces get pulled from LangSmith. An agent analyzes the failures, proposes fixes, and re-runs evals to confirm improvement, iterating until regressions close. Finally, a human reviews and merges the resulting PRs. [...] The team runs a layered eval system, with all results uploaded to LangSmith: [...] - Offline evals: Pre-recorded mocks and fixtures that run locally on every commit without external dependencies. - Post-merge integration evals (online): 300 to 400 queries against a full Rippling sandbox (live API calls) to validate system health before deployment. - Deploy-blocking evals (online): ~10 critical scenarios against real systems that gate every deployment. - Continuous evals (online): Scheduled runs against production data, multiple times daily, monitoring live system health. [...] More than one million people using Rippling AI globally. [...] Deep Agents is the reasoning framework behind Rippling AI. See how it works| Read the docs / query=AI agent case study customer story enterprise deployment / intent=find_customer_case / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

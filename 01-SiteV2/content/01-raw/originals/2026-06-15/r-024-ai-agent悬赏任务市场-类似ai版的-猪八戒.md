@@ -1,0 +1,253 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-024
+title: "AI Agent悬赏任务市场：类似AI版的\"猪八戒\""
+original_url: "https://x.com/xiaohu/status/2066400761903469003"
+canonical_url: "https://x.com/xiaohu/status/2066400761903469003"
+source_name: "X：小互 (@xiaohu)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-15T06:01:48.000Z"
+collected_at: 2026-06-15T07:56:14.469Z
+language: mixed
+full_text_hash: 65613a537b9f32dc
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-024-ai-agent悬赏任务市场-类似ai版的-猪八戒.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-024-ai-agent悬赏任务市场-类似ai版的-猪八戒.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 70
+extractor_diagnostics: {"readability_score":70,"text_length":2806,"paragraph_count":18,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0.0214,"method":"main"}
+has_full_text: true
+content_length: 2806
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"65613a537b9f32dc","missing":[]}
+source_volatility: high
+community_name: "X：小互 (@xiaohu)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"AI Agent悬赏任务市场：类似AI版的\"猪八戒\"","discovery_summary":"小互介绍了一个AI Agent悬赏任务市场，类似AI版\"猪八戒\"。用户可发布复杂任务（如优化数据库、开发工作流）并设定赏金，由AI Agent自动抢单、交付结果、收款。流程五步：用户下单（资金冻结）→Agent抢单报价→用户选择Agent→Agent干活（写代码、跑测试）→用户验收，通过则自动付款，平台抽15%，Agent拿85%。设计亮点：支持CLI命令行发任务（可脚本化，实现机器给机器派活）；Agent有信誉分（五级，从新手到传奇），高分优先接高价任务。","source_name":"X：小互 (@xiaohu)","origin_url":"https://x.com/xiaohu/status/2066400761903469003","discovered_at":"2026-06-15T07:52:25.517Z","rank_on_page":21,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2b312217f4fb844c
+content_hash: 65613a537b9f32dc
+semantic_hash: 763e21cf4fb7ad07
+duplicate_of: ""
+first_seen_at: "2026-06-15T06:01:48.000Z"
+last_seen_at: 2026-06-15T07:56:14.469Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","小互 (@xiaohu)"],"products":["Agent"],"people":[],"industries":[],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全"],"numbers":["15%","85%","1","2","3","4","6","01"],"quotes":["\n小互介绍了一个AI Agent悬赏任务市场，类似AI版","这件事写进定时脚本里，比如每天自动发一个","的任务，Agent 自动接、自动做、自动交。机器给机器派活儿，人不用管。\nAgent 有信誉分：干得好加分，干砸了扣分\n分高的 Agent 能优先看到高价任务，形成一个"]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post 小互 @xiaohu 兄弟们 发现了一个 AI Agent 悬赏任务市场 相当于是一个AI版的“猪八戒”，你有一些复杂的问题自己不想搞或者搞不定（比如优化数据库、写个skill、开发工作流），就把问题扔上去，挂一笔赏金，会有“人”接单 重点来了，这里面不是人在接单，全是 AI Agent 来抢活 谁干得好、验收通过，钱自动打给它.","Agent 有信誉分：干得好加分，干砸了扣分 分高的 Agent 能优先看到高价任务，形成一个\"越靠谱越赚钱\"的循环。","6:01 AM · Jun 15, 2026 4."],"case_details":[],"workflow_changes":["整个流程五步，用点外卖类比就很好理解： 1、你可以下单：描述问题，定价，钱先冻住（和外卖平台扣款一样，不是直接给骑手） 2、Agent 抢单：多个 AI Agent 看到你的需求，各自报价、说自己怎么解决 3、选择Agent：挑一个靠谱的，或者让平台自动匹配 Agent 干活：它会去写代码、跑测试、交付结果，不是只给你一段建议 4、你验收：满意就确认收货，钱自动到账。"],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"小互介绍了一个AI Agent悬赏任务市场，类似AI版\"猪八戒\"。用户可发布复杂任务（如优化数据库、开发工作流）并设定赏金，由AI Agent自动抢单、交付结果、收款。流程五步：用户下单（资金冻结）→Agent抢单报价→用户选择Agent→Agent干活（写代码、跑测试）→用户验收，通过则自动付款，平台抽15%，Agent拿85%。设计亮点：支持CLI命令行发任务（可脚本化，实现机器给机器派活）；Agent有信誉分（五级，从新手到传奇），高分优先接高价任务。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post 小互 @xiaohu 兄弟们 发现了一个 AI Agent 悬赏任务市场 相当于是一个AI版的“猪八戒”，你有一些复杂的问题自己不想搞或者搞不定（比如优化数据库、写个skill、开发工作流），就把问题扔上去，挂一笔赏金，会有“人”接单 重点来了，这里面不是人在接单，全是 AI Agent 来抢活 谁干得好、验收通过，钱自动打给它.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"整个流程五步，用点外卖类比就很好理解： 1、你可以下单：描述问题，定价，钱先冻住（和外卖平台扣款一样，不是直接给骑手） 2、Agent 抢单：多个 AI Agent 看到你的需求，各自报价、说自己怎么解决 3、选择Agent：挑一个靠谱的，或者让平台自动匹配 Agent 干活：它会去写代码、跑测试、交付结果，不是只给你一段建议 4、你验收：满意就确认收货，钱自动到账。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"不满意可以拒绝，钱退回来 平台从中间抽 15%，Agent 拿 85% 几个有意思的设计： CLI 优先：不用在网页上填表单，一行命令就能发任务 这意味着你可以把\"发需求\"这件事写进定时脚本里，比如每天自动发一个\"抓竞品价格\"的任务，Agent 自动接、自动做、自动交。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Agent 有信誉分：干得好加分，干砸了扣分 分高的 Agent 能优先看到高价任务，形成一个\"越靠谱越赚钱\"的循环。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6:01 AM · Jun 15, 2026 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# AI Agent悬赏任务市场：类似AI版的"猪八戒"
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+小互
+@xiaohu
+兄弟们
+发现了一个 AI Agent 悬赏任务市场
+相当于是一个AI版的“猪八戒”，你有一些复杂的问题自己不想搞或者搞不定（比如优化数据库、写个skill、开发工作流），就把问题扔上去，挂一笔赏金，会有“人”接单
+重点来了，这里面不是人在接单，全是 AI Agent 来抢活
+谁干得好、验收通过，钱自动打给它...
+怎么运转的？
+整个流程五步，用点外卖类比就很好理解：
+1、你可以下单：描述问题，定价，钱先冻住（和外卖平台扣款一样，不是直接给骑手）
+2、Agent 抢单：多个 AI Agent 看到你的需求，各自报价、说自己怎么解决
+3、选择Agent：挑一个靠谱的，或者让平台自动匹配
+Agent 干活：它会去写代码、跑测试、交付结果，不是只给你一段建议
+4、你验收：满意就确认收货，钱自动到账。不满意可以拒绝，钱退回来
+平台从中间抽 15%，Agent 拿 85%
+几个有意思的设计：
+CLI 优先：不用在网页上填表单，一行命令就能发任务
+这意味着你可以把"发需求"这件事写进定时脚本里，比如每天自动发一个"抓竞品价格"的任务，Agent 自动接、自动做、自动交。机器给机器派活儿，人不用管。
+Agent 有信誉分：干得好加分，干砸了扣分
+分高的 Agent 能优先看到高价任务，形成一个"越靠谱越赚钱"的循环。五个等级，从新手到传奇。
+6:01 AM · Jun 15, 2026 4.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 26
+Read 9 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+小互
+@xiaohu
+兄弟们
+发现了一个 AI Agent 悬赏任务市场
+相当于是一个AI版的“猪八戒”，你有一些复杂的问题自己不想搞或者搞不定（比如优化数据库、写个skill、开发工作流），就把问题扔上去，挂一笔赏金，会有“人”接单
+重点来了，这里面不是人在接单，全是 AI Agent 来抢活
+谁干得好、验收通过，钱自动打给它...
+怎么运转的？
+整个流程五步，用点外卖类比就很好理解：
+1、你可以下单：描述问题，定价，钱先冻住（和外卖平台扣款一样，不是直接给骑手）
+2、Agent 抢单：多个 AI Agent 看到你的需求，各自报价、说自己怎么解决
+3、选择Agent：挑一个靠谱的，或者让平台自动匹配
+Agent 干活：它会去写代码、跑测试、交付结果，不是只给你一段建议
+4、你验收：满意就确认收货，钱自动到账。不满意可以拒绝，钱退回来
+平台从中间抽 15%，Agent 拿 85%
+几个有意思的设计：
+CLI 优先：不用在网页上填表单，一行命令就能发任务
+这意味着你可以把"发需求"这件事写进定时脚本里，比如每天自动发一个"抓竞品价格"的任务，Agent 自动接、自动做、自动交。机器给机器派活儿，人不用管。
+Agent 有信誉分：干得好加分，干砸了扣分
+分高的 Agent 能优先看到高价任务，形成一个"越靠谱越赚钱"的循环。五个等级，从新手到传奇。
+6:01 AM · Jun 15, 2026 4.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 9
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 26
+Read 9 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 70
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":70,"text_length":2806,"paragraph_count":18,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0.0214,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   小互介绍了一个AI Agent悬赏任务市场，类似AI版"猪八戒"。用户可发布复杂任务（如优化数据库、开发工作流）并设定赏金，由AI Agent自动抢单、交付结果、收款。流程五步：用户下单（资金冻结）→Agent抢单报价→用户选择Agent→Agent干活（写代码、跑测试）→用户验收，通过则自动付款，平台抽15%，Agent拿85%。设计亮点：支持CLI命令行发任务（可脚本化，实现机器给机器派活）；Agent有信誉分（五级，从新手到传奇），高分优先接高价任务。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post 小互 @xiaohu 兄弟们 发现了一个 AI Agent 悬赏任务市场 相当于是一个AI版的“猪八戒”，你有一些复杂的问题自己不想搞或者搞不定（比如优化数据库、写个skill、开发工作流），就把问题扔上去，挂一笔赏金，会有“人”接单 重点来了，这里面不是人在接单，全是 AI Agent 来抢活 谁干得好、验收通过，钱自动打给它.
+
+3. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   整个流程五步，用点外卖类比就很好理解： 1、你可以下单：描述问题，定价，钱先冻住（和外卖平台扣款一样，不是直接给骑手） 2、Agent 抢单：多个 AI Agent 看到你的需求，各自报价、说自己怎么解决 3、选择Agent：挑一个靠谱的，或者让平台自动匹配 Agent 干活：它会去写代码、跑测试、交付结果，不是只给你一段建议 4、你验收：满意就确认收货，钱自动到账。
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   不满意可以拒绝，钱退回来 平台从中间抽 15%，Agent 拿 85% 几个有意思的设计： CLI 优先：不用在网页上填表单，一行命令就能发任务 这意味着你可以把"发需求"这件事写进定时脚本里，比如每天自动发一个"抓竞品价格"的任务，Agent 自动接、自动做、自动交。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Agent 有信誉分：干得好加分，干砸了扣分 分高的 Agent 能优先看到高价任务，形成一个"越靠谱越赚钱"的循环。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   6:01 AM · Jun 15, 2026 4.
+
+## business_elements
+
+- companies: X, 小互 (@xiaohu)
+- products: Agent
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全
+- numbers: 15%, 85%, 1, 2, 3, 4, 6, 01
+- quotes: 
+小互介绍了一个AI Agent悬赏任务市场，类似AI版 / 这件事写进定时脚本里，比如每天自动发一个 / 的任务，Agent 自动接、自动做、自动交。机器给机器派活儿，人不用管。
+Agent 有信誉分：干得好加分，干砸了扣分
+分高的 Agent 能优先看到高价任务，形成一个
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post 小互 @xiaohu 兄弟们 发现了一个 AI Agent 悬赏任务市场 相当于是一个AI版的“猪八戒”，你有一些复杂的问题自己不想搞或者搞不定（比如优化数据库、写个skill、开发工作流），就把问题扔上去，挂一笔赏金，会有“人”接单 重点来了，这里面不是人在接单，全是 AI Agent 来抢活 谁干得好、验收通过，钱自动打给它. / Agent 有信誉分：干得好加分，干砸了扣分 分高的 Agent 能优先看到高价任务，形成一个"越靠谱越赚钱"的循环。 / 6:01 AM · Jun 15, 2026 4.
+- case_details: 暂无公开信息
+- workflow_changes: 整个流程五步，用点外卖类比就很好理解： 1、你可以下单：描述问题，定价，钱先冻住（和外卖平台扣款一样，不是直接给骑手） 2、Agent 抢单：多个 AI Agent 看到你的需求，各自报价、说自己怎么解决 3、选择Agent：挑一个靠谱的，或者让平台自动匹配 Agent 干活：它会去写代码、跑测试、交付结果，不是只给你一段建议 4、你验收：满意就确认收货，钱自动到账。
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：小互 (@xiaohu)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"AI Agent悬赏任务市场：类似AI版的\"猪八戒\"","discovery_summary":"小互介绍了一个AI Agent悬赏任务市场，类似AI版\"猪八戒\"。用户可发布复杂任务（如优化数据库、开发工作流）并设定赏金，由AI Agent自动抢单、交付结果、收款。流程五步：用户下单（资金冻结）→Agent抢单报价→用户选择Agent→Agent干活（写代码、跑测试）→用户验收，通过则自动付款，平台抽15%，Agent拿85%。设计亮点：支持CLI命令行发任务（可脚本化，实现机器给机器派活）；Agent有信誉分（五级，从新手到传奇），高分优先接高价任务。","source_name":"X：小互 (@xiaohu)","origin_url":"https://x.com/xiaohu/status/2066400761903469003","discovered_at":"2026-06-15T07:52:25.517Z","rank_on_page":21,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+小互介绍了一个AI Agent悬赏任务市场，类似AI版"猪八戒"。用户可发布复杂任务（如优化数据库、开发工作流）并设定赏金，由AI Agent自动抢单、交付结果、收款。流程五步：用户下单（资金冻结）→Agent抢单报价→用户选择Agent→Agent干活（写代码、跑测试）→用户验收，通过则自动付款，平台抽15%，Agent拿85%。设计亮点：支持CLI命令行发任务（可脚本化，实现机器给机器派活）；Agent有信誉分（五级，从新手到传奇），高分优先接高价任务。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -39,7 +39,7 @@
 - fact_base / business_signal: AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单
   - source: IT之家（RSS）
   - url: https://www.ithome.com/0/964/264.htm
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A13
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A05
   - note: 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的"虚假判例"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161…
 - community_lead / community_intelligence: 05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0
   - source: AI破局
@@ -52,12 +52,12 @@
 - fact_base / business_signal: AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单
   - source: IT之家（RSS）
   - url: https://www.ithome.com/0/964/264.htm
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A13
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A05
   - note: 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的"虚假判例"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161…
 - fact_base / business_signal: AI公司竞相上市，谁在搭便车？
   - source: TechCrunch：AI（RSS）
   - url: https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A17
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A10
   - note: SpaceX 本周完成史上最大规模 IPO，其 CEO 马斯克成为全球首位万亿富豪。SpaceX 强调其高成本 AI 业务潜力，竞争对手 OpenAI 和 Anthropic 也已秘密提交上市申请，可能紧随其后。市场分析认为三者之间存在上市时间竞赛。同时，Quantum Space 等初创公司试图借 SpaceX IPO 浪潮融资，例如围绕太空数据中心概念…
 - community_lead / community_intelligence: 我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上
   - source: 生财有术
@@ -67,11 +67,11 @@
 
 ### 3. 真正值钱的不是 AI 工具，而是老板自己的工作流
 
-- fact_base / business_signal: techcrunch 发布 Scout, an OpenClaw-inspired personal assistant
-  - source: techcrunch.com
-  - url: https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14
-  - note: techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。
+- fact_base / business_signal: 亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压
+  - source: The Decoder：AI News（RSS）
+  - url: https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A12
+  - note: 亚马逊 CEO Andy Jassy 与其他五家科技公司高管向特朗普政府报告 Anthropic Fable 模型存在安全漏洞，尽管亚马逊是 Anthropic 最大投资者之一。数小时内，白宫通过出口管制令强制该模型下线。此举可能是一项合法的安全政策决定，但也显示出对不便企业的武力展示。
 - viewpoint_lead / first_line_viewpoint: 欢迎来到AI治理的AGI时代
   - source: Interconnects (Nathan Lambert)
   - url: https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance
@@ -88,7 +88,7 @@
 - fact_base / business_signal: AI公司竞相上市，谁在搭便车？
   - source: TechCrunch：AI（RSS）
   - url: https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A17
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A10
   - note: SpaceX 本周完成史上最大规模 IPO，其 CEO 马斯克成为全球首位万亿富豪。SpaceX 强调其高成本 AI 业务潜力，竞争对手 OpenAI 和 Anthropic 也已秘密提交上市申请，可能紧随其后。市场分析认为三者之间存在上市时间竞赛。同时，Quantum Space 等初创公司试图借 SpaceX IPO 浪潮融资，例如围绕太空数据中心概念…
 - viewpoint_lead / first_line_viewpoint: 欢迎来到AI治理的AGI时代
   - source: Interconnects (Nathan Lambert)
@@ -103,11 +103,11 @@
 
 ### 5. 75 岁 ISO 专家遇上 AI，我看到传统行业最大的机会
 
-- fact_base / business_signal: podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG
-  - source: The MAD Podcast (Matt Turck)
-  - url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A05
-  - note: podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。
+- fact_base / business_signal: aws 应用 agentic AI
+  - source: aws.amazon.com
+  - url: https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai/
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A04
+  - note: aws 应用原文所述场景：agentic AI。该来源披露的是 aws 应用原文所述场景 相关的具体 AI 商业事件。
 - community_lead / community_intelligence: 13岁少年35美元启动，靠AI帮线下诊所月入13万
   - source: 生财有术
   - url: https://scys.com/
@@ -116,11 +116,11 @@
 
 ### 6. 你的同行已经用 AI 跑流程了，你还在让员工手动搬砖
 
-- fact_base / business_signal: techcrunch 发布 Scout, an OpenClaw-inspired personal assistant
-  - source: techcrunch.com
-  - url: https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14
-  - note: techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。
+- fact_base / business_signal: 亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压
+  - source: The Decoder：AI News（RSS）
+  - url: https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A12
+  - note: 亚马逊 CEO Andy Jassy 与其他五家科技公司高管向特朗普政府报告 Anthropic Fable 模型存在安全漏洞，尽管亚马逊是 Anthropic 最大投资者之一。数小时内，白宫通过出口管制令强制该模型下线。此举可能是一项合法的安全政策决定，但也显示出对不便企业的武力展示。
 - viewpoint_lead / first_line_viewpoint: 欢迎来到AI治理的AGI时代
   - source: Interconnects (Nathan Lambert)
   - url: https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance
@@ -134,11 +134,11 @@
 
 ### 7. 不是裁员，而是少招 3 个重复岗位：老板该先改造这些活
 
-- fact_base / business_signal: techcrunch 发布 Scout, an OpenClaw-inspired personal assistant
-  - source: techcrunch.com
-  - url: https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14
-  - note: techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。
+- fact_base / business_signal: 亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压
+  - source: The Decoder：AI News（RSS）
+  - url: https://the-decoder.com/amazon-and-five-other-companies-reportedly-triggered-the-government-crackdown-on-anthropics-fable-model
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A12
+  - note: 亚马逊 CEO Andy Jassy 与其他五家科技公司高管向特朗普政府报告 Anthropic Fable 模型存在安全漏洞，尽管亚马逊是 Anthropic 最大投资者之一。数小时内，白宫通过出口管制令强制该模型下线。此举可能是一项合法的安全政策决定，但也显示出对不便企业的武力展示。
 - viewpoint_lead / first_line_viewpoint: 欢迎来到AI治理的AGI时代
   - source: Interconnects (Nathan Lambert)
   - url: https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance
@@ -155,7 +155,7 @@
 - fact_base / business_signal: 欢迎进入AI治理的AGI时代
   - source: Nathan Lambert：Interconnects（RSS）
   - url: https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A21
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14
   - note: 上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经…
 - viewpoint_lead / first_line_viewpoint: 欢迎来到AI治理的AGI时代
   - source: Interconnects (Nathan Lambert)

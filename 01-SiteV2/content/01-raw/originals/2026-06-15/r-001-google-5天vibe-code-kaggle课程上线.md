@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-14T18:28:24.000Z"
-collected_at: 2026-06-15T03:58:54.036Z
+collected_at: 2026-06-15T07:56:14.393Z
 language: mixed
-full_text_hash: a8059c76fa9430fa
+full_text_hash: 76e47dbfded90700
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-001-google-5天vibe-code-kaggle课程上线.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-001-google-5天vibe-code-kaggle课程上线.json"
 html_snapshot_path: ""
@@ -31,32 +31,32 @@ fetch_status: fetched-readable-text-body-visible-text
 extraction_quality: high
 extraction_method: "body-visible-text"
 readability_score: 56
-extractor_diagnostics: {"readability_score":56,"text_length":2780,"paragraph_count":12,"sentence_count":5,"boilerplate_hits":2,"symbol_ratio":0.0216,"method":"body-visible-text"}
+extractor_diagnostics: {"readability_score":56,"text_length":2785,"paragraph_count":12,"sentence_count":5,"boilerplate_hits":2,"symbol_ratio":0.0215,"method":"body-visible-text"}
 has_full_text: true
-content_length: 2780
+content_length: 2785
 fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a8059c76fa9430fa","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"76e47dbfded90700","missing":[]}
 source_volatility: high
 community_name: "X：Google AI for Developers (@googleaidevs)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google 5天vibe code Kaggle课程上线","discovery_summary":"Learn how to vibe code in 5 days！ 了解如何在5天内进行vibe coding！在这门由我们的研究人员和工程师主持的@Kaggle课程中，使用自然语言构建可扩展的智能体系统，并完成一个实践性的顶点项目。","source_name":"X：Google AI for Developers (@googleaidevs)","origin_url":"https://x.com/googleaidevs/status/2066226263766007808","discovered_at":"2026-06-15T03:52:39.445Z","rank_on_page":73,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google 5天vibe code Kaggle课程上线","discovery_summary":"Learn how to vibe code in 5 days！ 了解如何在5天内进行vibe coding！在这门由我们的研究人员和工程师主持的@Kaggle课程中，使用自然语言构建可扩展的智能体系统，并完成一个实践性的顶点项目。","source_name":"X：Google AI for Developers (@googleaidevs)","origin_url":"https://x.com/googleaidevs/status/2066226263766007808","discovered_at":"2026-06-15T07:52:25.530Z","rank_on_page":101,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 671f2a1e520dc019
-content_hash: a8059c76fa9430fa
+content_hash: 76e47dbfded90700
 semantic_hash: 8cfbd78430e8bb95
 duplicate_of: ""
 first_seen_at: "2026-06-14T18:28:24.000Z"
-last_seen_at: 2026-06-15T03:58:54.036Z
+last_seen_at: 2026-06-15T07:56:14.393Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -65,10 +65,10 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
-business_elements: {"companies":["X","Google AI for Developers (@googleaidevs)","Google"],"products":["agent"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["5","1","6","28","14","2026","8","0.25"],"quotes":[]}
+business_elements: {"companies":["X","Google AI for Developers (@googleaidevs)","Google"],"products":["agent"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["5","1","6","28","14","2026","9.8","0.25"],"quotes":[]}
 evidence_seed: {"company_actions":["Learn how to vibe code in 5 days！ 了解如何在5天内进行vibe coding！在这门由我们的研究人员和工程师主持的@Kaggle课程中，使用自然语言构建可扩展的智能体系统，并完成一个实践性的顶点项目。","Google AI Developers on X: \"Learn how to vibe code in 5 days!","Build scalable agent systems using natural language and complete a hands-on capstone project in this @Kaggle course hosted by our researchers and engineers."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
-key_excerpts: [{"type":"company_action","text":"Learn how to vibe code in 5 days！ 了解如何在5天内进行vibe coding！在这门由我们的研究人员和工程师主持的@Kaggle课程中，使用自然语言构建可扩展的智能体系统，并完成一个实践性的顶点项目。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Google AI Developers on X: \"Learn how to vibe code in 5 days!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Build scalable agent systems using natural language and complete a hands-on capstone project in this @Kaggle course hosted by our researchers and engineers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"co/I1AwrxriKm\" / X Post Log in Sign up Post Google AI Developers @googleaidevs Learn how to vibe code in 5 days!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Build scalable agent systems using natural language and complete a hands-on capstone project in this @ kaggle course hosted by our researchers and engineers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6:28 PM · Jun 14, 2026 8K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+key_excerpts: [{"type":"company_action","text":"Learn how to vibe code in 5 days！ 了解如何在5天内进行vibe coding！在这门由我们的研究人员和工程师主持的@Kaggle课程中，使用自然语言构建可扩展的智能体系统，并完成一个实践性的顶点项目。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Google AI Developers on X: \"Learn how to vibe code in 5 days!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Build scalable agent systems using natural language and complete a hands-on capstone project in this @Kaggle course hosted by our researchers and engineers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"co/I1AwrxriKm\" / X Post Log in Sign up Post Google AI Developers @googleaidevs Learn how to vibe code in 5 days!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Build scalable agent systems using natural language and complete a hands-on capstone project in this @ kaggle course hosted by our researchers and engineers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6:28 PM · Jun 14, 2026 9.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
@@ -87,11 +87,11 @@ Google AI Developers
 @googleaidevs
 Learn how to vibe code in 5 days!
 Build scalable agent systems using natural language and complete a hands-on capstone project in this @ kaggle course hosted by our researchers and engineers.
-6:28 PM · Jun 14, 2026 8K Views
+6:28 PM · Jun 14, 2026 9.8K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 19
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 150
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 92
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 22
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 175
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 107
 Read 5 replies
 Don't miss what's happening
 People on X are the first to know.
@@ -108,11 +108,11 @@ Google AI Developers
 @googleaidevs
 Learn how to vibe code in 5 days!
 Build scalable agent systems using natural language and complete a hands-on capstone project in this @ kaggle course hosted by our researchers and engineers.
-6:28 PM · Jun 14, 2026 8K Views
+6:28 PM · Jun 14, 2026 9.8K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 9 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 19
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 150
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 92
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 22
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 175
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 107
 Read 5 replies
 Don't miss what's happening
 People on X are the first to know.
@@ -124,7 +124,7 @@ Log in Sign up
 - readability_score: 56
 - fetch_status: fetched-readable-text-body-visible-text
 - extraction_quality: high
-- diagnostics: {"readability_score":56,"text_length":2780,"paragraph_count":12,"sentence_count":5,"boilerplate_hits":2,"symbol_ratio":0.0216,"method":"body-visible-text"}
+- diagnostics: {"readability_score":56,"text_length":2785,"paragraph_count":12,"sentence_count":5,"boilerplate_hits":2,"symbol_ratio":0.0215,"method":"body-visible-text"}
 
 ## markdown_snapshot
 
@@ -148,7 +148,7 @@ Log in Sign up
    Build scalable agent systems using natural language and complete a hands-on capstone project in this @ kaggle course hosted by our researchers and engineers.
 
 6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   6:28 PM · Jun 14, 2026 8K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
+   6:28 PM · Jun 14, 2026 9.
 
 ## business_elements
 
@@ -160,7 +160,7 @@ Log in Sign up
 - workflows: 暂无公开信息
 - business_actions: 部署 / 上线
 - affected_departments: IT / 安全
-- numbers: 5, 1, 6, 28, 14, 2026, 8, 0.25
+- numbers: 5, 1, 6, 28, 14, 2026, 9.8, 0.25
 - quotes: 暂无公开信息
 
 ## evidence_seed
@@ -218,7 +218,7 @@ Log in Sign up
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Google 5天vibe code Kaggle课程上线","discovery_summary":"Learn how to vibe code in 5 days！ 了解如何在5天内进行vibe coding！在这门由我们的研究人员和工程师主持的@Kaggle课程中，使用自然语言构建可扩展的智能体系统，并完成一个实践性的顶点项目。","source_name":"X：Google AI for Developers (@googleaidevs)","origin_url":"https://x.com/googleaidevs/status/2066226263766007808","discovered_at":"2026-06-15T03:52:39.445Z","rank_on_page":73,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google 5天vibe code Kaggle课程上线","discovery_summary":"Learn how to vibe code in 5 days！ 了解如何在5天内进行vibe coding！在这门由我们的研究人员和工程师主持的@Kaggle课程中，使用自然语言构建可扩展的智能体系统，并完成一个实践性的顶点项目。","source_name":"X：Google AI for Developers (@googleaidevs)","origin_url":"https://x.com/googleaidevs/status/2066226263766007808","discovered_at":"2026-06-15T07:52:25.530Z","rank_on_page":101,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

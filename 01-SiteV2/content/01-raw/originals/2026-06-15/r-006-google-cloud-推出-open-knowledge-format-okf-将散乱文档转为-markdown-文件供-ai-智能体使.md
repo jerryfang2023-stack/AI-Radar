@@ -1,0 +1,247 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-006
+title: "Google Cloud 推出 Open Knowledge Format （OKF）：将散乱文档转为 Markdown 文件供 AI 智能体使用"
+original_url: "https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents"
+canonical_url: "https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-14T13:29:52.000Z"
+collected_at: 2026-06-15T07:56:14.403Z
+language: mixed
+full_text_hash: 0c5e44e54485899e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-006-google-cloud-推出-open-knowledge-format-okf-将散乱文档转为-markdown-文件供-ai-智能体使.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-006-google-cloud-推出-open-knowledge-format-okf-将散乱文档转为-markdown-文件供-ai-智能体使.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 76
+extractor_diagnostics: {"readability_score":76,"text_length":3044,"paragraph_count":15,"sentence_count":28,"boilerplate_hits":3,"symbol_ratio":0.0013,"method":"content-container"}
+has_full_text: true
+content_length: 3044
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0c5e44e54485899e","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Google Cloud 推出 Open Knowledge Format （OKF）：将散乱文档转为 Markdown 文件供 AI 智能体使用","discovery_summary":"Google Cloud 发布 Open Knowledge Format （OKF），一种将分散的组织知识标准化为带 YAML frontmatter 的 Markdown 文件的极简规范。OKF 使知识可移植且可直接供 AI 智能体使用，正式化了 Andrej Karpathy 近期推广的 \"LLM Wiki\" 模式。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents","discovered_at":"2026-06-15T07:52:25.536Z","rank_on_page":143,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: a2f7a4e4ce86c5b6
+content_hash: 0c5e44e54485899e
+semantic_hash: f14b9bec3b063361
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-06-14T13:29:52.000Z"
+last_seen_at: 2026-06-15T07:56:14.403Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder","AI News（RSS）","Google","GitHub"],"products":["agents","agent","AGENTS","CLAUDE"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["14","2026","2","0.1","1","4"],"quotes":["LLM Wiki","LLM wiki","metadata as code","AI Radar"]}
+evidence_seed: {"company_actions":["Ad Skip to content Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 14, 2026 GPT-Image-2 prompted by THE DECODER Google Cloud is introducing the Open Knowledge Format (OKF), a new spec that standardizes knowledge as Markdown files and makes it portable across systems.","1 represents knowledge as a directory of Markdown files with YAML frontmatter.","The spec is minimal."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"Google Cloud 发布 Open Knowledge Format （OKF），一种将分散的组织知识标准化为带 YAML frontmatter 的 Markdown 文件的极简规范。OKF 使知识可移植且可直接供 AI 智能体使用，正式化了 Andrej Karpathy 近期推广的 \"LLM Wiki\" 模式。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ad Skip to content Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 14, 2026 GPT-Image-2 prompted by THE DECODER Google Cloud is introducing the Open Knowledge Format (OKF), a new spec that standardizes knowledge as Markdown files and makes it portable across systems.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"It takes the \"LLM wiki\" pattern recently popularized by Andrej Karpathy and turns it into an interoperable format.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"1 represents knowledge as a directory of Markdown files with YAML frontmatter.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The spec is minimal.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"One required field (\"type\"), a handful of optional fields like title, description, resource, tags, and timestamps, plus a Markdown body for everything else.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Google Cloud 推出 Open Knowledge Format （OKF）：将散乱文档转为 Markdown 文件供 AI 智能体使用
+
+## clean_text
+
+Ad
+Skip to content
+Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 14, 2026
+GPT-Image-2 prompted by THE DECODER
+Google Cloud is introducing the Open Knowledge Format (OKF), a new spec that standardizes knowledge as Markdown files and makes it portable across systems.
+It takes the "LLM wiki" pattern recently popularized by Andrej Karpathy and turns it into an interoperable format. OKF v0.1 represents knowledge as a directory of Markdown files with YAML frontmatter. The spec is minimal. One required field ("type"), a handful of optional fields like title, description, resource, tags, and timestamps, plus a Markdown body for everything else.
+Concepts link to each other through standard Markdown links, forming a knowledge graph. An OKF bundle is readable in any editor, renders on GitHub, and can be indexed by any search tool. Ad
+Fragmented knowledge slows AI agents down
+Most organizations know the problem OKF is trying to solve. Knowledge is scattered across metadata catalogs, wikis, code comments, notebook cells, and the heads of individual engineers. When an AI agent needs to write a SQL query for a specific dataset, it has to piece together fragments from all these sources. Ad
+DEC_D_Incontent-1
+According to Google Cloud , every agent developer currently solves this context problem from scratch, and every catalog vendor reinvents the same data models. Obsidian Vaults hooked up to coding agents, AGENTS.md and CLAUDE.md convention files, "metadata as code" repos on data teams. They all follow a similar pattern. But each solution is custom-built and not designed to work with the others, Google says. Knowledge stays locked inside the system that created it. That's the gap OKF aims to close.
+Built to be minimal and portable
+OKF requires just one field ("type"). Which types exist, what extra fields a document contains, and how the body is structured is up to the producer. Producers and consumers are decoupled. A bundle written by humans can be consumed by an AI agent. A machine-generated bundle can be viewed in a visualizer. OKF works with any cloud provider, database, or agent framework. Ad
+Alongside the spec, Google Cloud is shipping several reference implementations. There's an enrichment agent that crawls BigQuery datasets and creates an OKF document for each table, a static HTML visualizer, and three sample bundles for GA4 e-commerce , Stack Overflow, and Bitcoin datasets .
+Google Cloud also updated its Knowledge Catalog so it can ingest OKF and serve it to agents. The spec and code are available on GitHub . The Knowledge Catalog integration is documented separately . Ad
+DEC_D_Incontent-2
+Ad
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: Google Blog
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## full_text
+
+Ad
+Skip to content
+Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 14, 2026
+GPT-Image-2 prompted by THE DECODER
+Google Cloud is introducing the Open Knowledge Format (OKF), a new spec that standardizes knowledge as Markdown files and makes it portable across systems.
+It takes the "LLM wiki" pattern recently popularized by Andrej Karpathy and turns it into an interoperable format. OKF v0.1 represents knowledge as a directory of Markdown files with YAML frontmatter. The spec is minimal. One required field ("type"), a handful of optional fields like title, description, resource, tags, and timestamps, plus a Markdown body for everything else.
+Concepts link to each other through standard Markdown links, forming a knowledge graph. An OKF bundle is readable in any editor, renders on GitHub, and can be indexed by any search tool. Ad
+Fragmented knowledge slows AI agents down
+Most organizations know the problem OKF is trying to solve. Knowledge is scattered across metadata catalogs, wikis, code comments, notebook cells, and the heads of individual engineers. When an AI agent needs to write a SQL query for a specific dataset, it has to piece together fragments from all these sources. Ad
+DEC_D_Incontent-1
+According to Google Cloud , every agent developer currently solves this context problem from scratch, and every catalog vendor reinvents the same data models. Obsidian Vaults hooked up to coding agents, AGENTS.md and CLAUDE.md convention files, "metadata as code" repos on data teams. They all follow a similar pattern. But each solution is custom-built and not designed to work with the others, Google says. Knowledge stays locked inside the system that created it. That's the gap OKF aims to close.
+Built to be minimal and portable
+OKF requires just one field ("type"). Which types exist, what extra fields a document contains, and how the body is structured is up to the producer. Producers and consumers are decoupled. A bundle written by humans can be consumed by an AI agent. A machine-generated bundle can be viewed in a visualizer. OKF works with any cloud provider, database, or agent framework. Ad
+Alongside the spec, Google Cloud is shipping several reference implementations. There's an enrichment agent that crawls BigQuery datasets and creates an OKF document for each table, a static HTML visualizer, and three sample bundles for GA4 e-commerce , Stack Overflow, and Bitcoin datasets .
+Google Cloud also updated its Knowledge Catalog so it can ingest OKF and serve it to agents. The spec and code are available on GitHub . The Knowledge Catalog integration is documented separately . Ad
+DEC_D_Incontent-2
+Ad
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: Google Blog
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 76
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":76,"text_length":3044,"paragraph_count":15,"sentence_count":28,"boilerplate_hits":3,"symbol_ratio":0.0013,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   Google Cloud 发布 Open Knowledge Format （OKF），一种将分散的组织知识标准化为带 YAML frontmatter 的 Markdown 文件的极简规范。OKF 使知识可移植且可直接供 AI 智能体使用，正式化了 Andrej Karpathy 近期推广的 "LLM Wiki" 模式。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Ad Skip to content Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 14, 2026 GPT-Image-2 prompted by THE DECODER Google Cloud is introducing the Open Knowledge Format (OKF), a new spec that standardizes knowledge as Markdown files and makes it portable across systems.
+
+3. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   It takes the "LLM wiki" pattern recently popularized by Andrej Karpathy and turns it into an interoperable format.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   1 represents knowledge as a directory of Markdown files with YAML frontmatter.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The spec is minimal.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   One required field ("type"), a handful of optional fields like title, description, resource, tags, and timestamps, plus a Markdown body for everything else.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, Google, GitHub
+- products: agents, agent, AGENTS, CLAUDE
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 14, 2026, 2, 0.1, 1, 4
+- quotes: LLM Wiki / LLM wiki / metadata as code / AI Radar
+
+## evidence_seed
+
+- company_actions: Ad Skip to content Google Cloud's Open Knowledge Format turns scattered docs into Markdown files for AI agents Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 14, 2026 GPT-Image-2 prompted by THE DECODER Google Cloud is introducing the Open Knowledge Format (OKF), a new spec that standardizes knowledge as Markdown files and makes it portable across systems. / 1 represents knowledge as a directory of Markdown files with YAML frontmatter. / The spec is minimal.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Google Cloud 推出 Open Knowledge Format （OKF）：将散乱文档转为 Markdown 文件供 AI 智能体使用","discovery_summary":"Google Cloud 发布 Open Knowledge Format （OKF），一种将分散的组织知识标准化为带 YAML frontmatter 的 Markdown 文件的极简规范。OKF 使知识可移植且可直接供 AI 智能体使用，正式化了 Andrej Karpathy 近期推广的 \"LLM Wiki\" 模式。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-clouds-open-knowledge-format-turns-scattered-docs-into-markdown-files-for-ai-agents","discovered_at":"2026-06-15T07:52:25.536Z","rank_on_page":143,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Google Cloud 发布 Open Knowledge Format （OKF），一种将分散的组织知识标准化为带 YAML frontmatter 的 Markdown 文件的极简规范。OKF 使知识可移植且可直接供 AI 智能体使用，正式化了 Andrej Karpathy 近期推广的 "LLM Wiki" 模式。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

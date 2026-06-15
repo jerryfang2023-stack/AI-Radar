@@ -1,0 +1,251 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-146",
+  "title": "里约热内卢的\"本土化\"LLM 似乎是现有模型的融合体",
+  "original_url": "https://github.com/nex-agi/Nex-N2/issues/4",
+  "canonical_url": "https://github.com/nex-agi/Nex-N2/issues/4",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-14T18:06:03.242Z",
+  "collected_at": "2026-06-15T07:56:14.819Z",
+  "language": "mixed",
+  "full_text": "Rio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.\nRio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.",
+  "clean_text": "Rio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.\nRio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-146-里约热内卢的-本土化-llm-似乎是现有模型的融合体.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-146-里约热内卢的-本土化-llm-似乎是现有模型的融合体.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-json-ld",
+  "extraction_quality": "medium",
+  "extraction_method": "json-ld",
+  "readability_score": 73,
+  "extractor_diagnostics": {
+    "readability_score": 73,
+    "text_length": 2139,
+    "paragraph_count": 10,
+    "sentence_count": 18,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0065,
+    "method": "json-ld"
+  },
+  "has_full_text": true,
+  "content_length": 2139,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d1ad3560e2c47d31",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "里约热内卢的\"本土化\"LLM 似乎是现有模型的融合体",
+    "discovery_summary": "里约热内卢声称自主研发的大语言模型（LLM）被指实为现有模型的融合体，相关代码托管于 GitHub。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://github.com/nex-agi/Nex-N2/issues/4",
+    "discovered_at": "2026-06-15T07:52:25.530Z",
+    "rank_on_page": 105,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "62fad39ee95fb6b1",
+  "content_hash": "d1ad3560e2c47d31",
+  "full_text_hash": "d1ad3560e2c47d31",
+  "semantic_hash": "e7e68b2be2d39fb2",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-14T18:06:03.242Z",
+  "last_seen_at": "2026-06-15T07:56:14.819Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "opinion",
+      "text": "里约热内卢声称自主研发的大语言模型（LLM）被指实为现有模型的融合体，相关代码托管于 GitHub。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "6 x Nex-N2_pro + 0.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "4 x Qwen [`prefeitura-rio/Rio-3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "5-Open-397B`](https://huggingface.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "co/prefeitura-rio/Rio-3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "GitHub"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3.5",
+      "397B",
+      "0.6 x",
+      "2",
+      "0.4 x",
+      "17B",
+      "0.6",
+      "0.4"
+    ],
+    "quotes": [
+      "You are Rio",
+      "Nex, from Nex-AGI",
+      "You are Rio",
+      "Nex, from Nex-AGI"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "5-Open-397B`](https://huggingface.",
+      "co/prefeitura-rio/Rio-3.",
+      "5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "none",
+    "importance_score": 1,
+    "importance_reason": "no core WaveSight importance signal",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 里约热内卢的\"本土化\"LLM 似乎是现有模型的融合体\n\n- raw_id: R-146\n- original_url: https://github.com/nex-agi/Nex-N2/issues/4\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-15T07:56:14.819Z\n\n## clean_text\n\nRio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.\nRio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.\n\n## full_text\n\nRio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.\nRio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen\n[`prefeitura-rio/Rio-3.5-Open-397B`](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.rio.rj.gov.br/). It is not. Its weights are a **direct element-wise merge of our model, Nex, with the official [`Qwen3.5-397B-A17B`](https://huggingface.co/Qwen/Qwen3.5-397B-A17B) base** — about **0.6 Nex / 0.4 Qwen** — and we find **no evidence of any training of their own.** We can show this **two completely independent ways**:\n1. **With Rio's hard-coded \"You are Rio\" system prompt removed, its own deployed model identifies itself as \"Nex, from Nex-AGI\" 79% of the time — and as \"Rio\" 0% of the time.** It even recites our organization's bespoke backstory word-for-word.\n2. **Every weight tensor in Rio is, to thousands of standard deviations, the same 0.6/0.4 blend of Nex and Qwen** — across all 60 layers and every component of the network. Other finetunes cannot be explained as interpolations.\nBelow is the evidence. Judge for yourself.\n\n## extraction_diagnostics\n\n- extraction_method: json-ld\n- readability_score: 73\n- fetch_status: fetched-readable-text-json-ld\n- extraction_quality: medium\n\n## key_excerpts\n\n1. [opinion / daily_observation, heatmap, viewpoint / medium] 里约热内卢声称自主研发的大语言模型（LLM）被指实为现有模型的融合体，相关代码托管于 GitHub。\n2. [number / daily_observation, heatmap, case, trend / high] 6 x Nex-N2_pro + 0.\n3. [number / daily_observation, heatmap, case, trend / high] 4 x Qwen [`prefeitura-rio/Rio-3.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] 5-Open-397B`](https://huggingface.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] co/prefeitura-rio/Rio-3.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] 5-Open-397B) is presented as an original 397B model trained by [IplanRIO](https://iplanrio.\n"
+}
