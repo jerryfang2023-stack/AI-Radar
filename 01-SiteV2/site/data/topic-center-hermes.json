@@ -1,12 +1,12 @@
 {
   "meta": {
     "version": "V2.1.0-boss-topic-engine",
-    "date": "2026-06-14",
-    "generatedAt": "2026-06-14T08:44:32.329Z",
+    "date": "2026-06-15",
+    "generatedAt": "2026-06-15T03:58:58.661Z",
     "source": "topic-center.json",
     "rule": "hermes_all_topic_table",
     "readMode": "all_topics",
-    "topicCount": 16,
+    "topicCount": 24,
     "githubPath": "01-SiteV2/site/data/topic-center-hermes.json",
     "markdownPath": "01-SiteV2/site/data/topic-center-hermes.md",
     "pagesJsonPath": "/data/topic-center-hermes.json",
@@ -15,6 +15,987 @@
   "topics": [
     {
       "rank": 1,
+      "id": "money_leak-一个空调公司用-ai-接住-161亿-电话-老板们该醒醒了",
+      "date": "2026-06-15",
+      "score": 97,
+      "grade": "S",
+      "sourceId": "money_leak",
+      "sourceName": "漏钱型",
+      "priority": "公众号主稿",
+      "title": "一个空调公司用 AI 接住 161亿 电话，老板们该醒醒了",
+      "originalTitle": "一个空调公司用 AI 接住 161亿 电话，老板们该醒醒了",
+      "core": "老板最该先看的不是模型参数，而是公司每天有没有订单入口在漏钱。",
+      "bossPain": "旺季电话漏接、线索忘跟、预约登记错，都会变成真实订单损失。",
+      "moneyLine": "先算少漏几个客户，再谈 AI 转型；接得住、记得准、转得动，就是收入入口的第一张账。",
+      "oldFrame": "AI 是客服聊天机器人。",
+      "newFrame": "AI 是能接住订单入口的小岗位员工。",
+      "actionHint": "先盘点公司 3 个最容易漏单的入口：电话、表单、私信。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 25,
+        "moneyRelation": 25,
+        "talkability": 19,
+        "spreadability": 14,
+        "actionability": 9,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "开头用订单入口，不用 AI 功能",
+          "note": "第一句就写：电话不是电话，是订单入口。用 161亿 把老板拉进来。"
+        },
+        {
+          "title": "中段拆一个预约岗位",
+          "note": "把接听、识别需求、确认地址、排师傅、同步订单拆成 5 步，说明 AI 为什么能先干这部分。"
+        },
+        {
+          "title": "结尾落到小岗位 AI 员工",
+          "note": "不要喊智能化转型，落到“先少漏几个订单”。"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 2,
+        "businessSignals": 1,
+        "firstLineViewpoints": 0,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "money_leak-一个空调公司用-ai-接住-161亿-电话-老板们该醒醒了-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A13",
+          "role": "fact_base",
+          "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
+          "source": "IT之家（RSS）",
+          "url": "https://www.ithome.com/0/964/264.htm",
+          "note": "韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161…",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A13",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "money_leak-一个空调公司用-ai-接住-161亿-电话-老板们该醒醒了-material-2",
+          "kind": "community_intelligence",
+          "id": "48fa3a32540f40",
+          "role": "community_lead",
+          "title": "05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
+          "source": "AI破局",
+          "url": "https://aipoju.com/index",
+          "note": "05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0 05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=48fa3a32540f40",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "money_leak-一个空调公司用-ai-接住-161亿-电话-老板们该醒醒了-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A13",
+            "role": "fact_base",
+            "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/964/264.htm",
+            "note": "韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161…",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A13",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [],
+        "communityIntelligence": [
+          {
+            "materialId": "money_leak-一个空调公司用-ai-接住-161亿-电话-老板们该醒醒了-material-2",
+            "kind": "community_intelligence",
+            "id": "48fa3a32540f40",
+            "role": "community_lead",
+            "title": "05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
+            "source": "AI破局",
+            "url": "https://aipoju.com/index",
+            "note": "05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0 05后留学盘7天成交35000订单,靠杰哥的Obsidian+cc把获客成本干到0",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=48fa3a32540f40",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "id": "small_role-别做大平台-先做一个小岗位的-ai-员工",
+      "date": "2026-06-15",
+      "score": 97,
+      "grade": "S",
+      "sourceId": "small_role",
+      "sourceName": "小岗位型",
+      "priority": "公众号主稿",
+      "title": "别做大平台，先做一个小岗位的 AI 员工",
+      "originalTitle": "别做大平台，先做一个小岗位的 AI 员工",
+      "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位的具体痛点里。",
+      "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
+      "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱。",
+      "oldFrame": "做一个什么都能干的 AI 平台。",
+      "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
+      "actionHint": "先从客服、招投标、财务对账、销售跟进、会议催办里选一个。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 25,
+        "moneyRelation": 24,
+        "talkability": 18,
+        "spreadability": 15,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用小岗位对抗大平台",
+          "note": "这是最适合你现有表达的主线：不做大而全，先做小而深。"
+        },
+        {
+          "title": "每个岗位给一个可验收结果",
+          "note": "客服看接通率，标书看漏项率，对账看差异报告，会议看任务闭环。"
+        },
+        {
+          "title": "避免写成创业方向清单",
+          "note": "要写一个岗位打穿逻辑，不要罗列 10 个机会。"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 3,
+        "businessSignals": 2,
+        "firstLineViewpoints": 0,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "small_role-别做大平台-先做一个小岗位的-ai-员工-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A13",
+          "role": "fact_base",
+          "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
+          "source": "IT之家（RSS）",
+          "url": "https://www.ithome.com/0/964/264.htm",
+          "note": "韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161…",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A13",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "small_role-别做大平台-先做一个小岗位的-ai-员工-material-2",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A17",
+          "role": "fact_base",
+          "title": "AI公司竞相上市，谁在搭便车？",
+          "source": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride",
+          "note": "SpaceX 本周完成史上最大规模 IPO，其 CEO 马斯克成为全球首位万亿富豪。SpaceX 强调其高成本 AI 业务潜力，竞争对手 OpenAI 和 Anthropic 也已秘密提交上市申请，可能紧随其后。市场分析认为三者之间存在上市时间竞赛。同时，Quantum Space 等初创公司试图借 SpaceX IPO 浪潮融资，例如围绕太空数据中心概念…",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A17",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "small_role-别做大平台-先做一个小岗位的-ai-员工-material-3",
+          "kind": "community_intelligence",
+          "id": "acfc6ffcbdd864",
+          "role": "community_lead",
+          "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
+          "source": "生财有术",
+          "url": "https://scys.com/",
+          "note": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上 我靠内容获客，一个人运营小红书、抖音、B 站",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=acfc6ffcbdd864",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "small_role-别做大平台-先做一个小岗位的-ai-员工-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A13",
+            "role": "fact_base",
+            "title": "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/964/264.htm",
+            "note": "韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161…",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A13",
+            "verificationUse": "fact_base"
+          },
+          {
+            "materialId": "small_role-别做大平台-先做一个小岗位的-ai-员工-material-2",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A17",
+            "role": "fact_base",
+            "title": "AI公司竞相上市，谁在搭便车？",
+            "source": "TechCrunch：AI（RSS）",
+            "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride",
+            "note": "SpaceX 本周完成史上最大规模 IPO，其 CEO 马斯克成为全球首位万亿富豪。SpaceX 强调其高成本 AI 业务潜力，竞争对手 OpenAI 和 Anthropic 也已秘密提交上市申请，可能紧随其后。市场分析认为三者之间存在上市时间竞赛。同时，Quantum Space 等初创公司试图借 SpaceX IPO 浪潮融资，例如围绕太空数据中心概念…",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A17",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [],
+        "communityIntelligence": [
+          {
+            "materialId": "small_role-别做大平台-先做一个小岗位的-ai-员工-material-3",
+            "kind": "community_intelligence",
+            "id": "acfc6ffcbdd864",
+            "role": "community_lead",
+            "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上 我靠内容获客，一个人运营小红书、抖音、B 站",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=acfc6ffcbdd864",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "id": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流",
+      "date": "2026-06-15",
+      "score": 95,
+      "grade": "S",
+      "sourceId": "counterintuitive",
+      "sourceName": "反常识型",
+      "priority": "公众号主稿",
+      "title": "真正值钱的不是 AI 工具，而是老板自己的工作流",
+      "originalTitle": "真正值钱的不是 AI 工具，而是老板自己的工作流",
+      "core": "同一个 AI 工具，放在清楚流程里是员工，放在混乱流程里就是玩具。",
+      "bossPain": "工具买了一堆，员工不用；员工用了，效果差；最后老板误判 AI 不行。",
+      "moneyLine": "工具是支出，工作流是资产。支出会过期，资产能复用。",
+      "oldFrame": "追最新 AI 工具。",
+      "newFrame": "沉淀自己的流程、语料、SOP 和验收标准。",
+      "actionHint": "先选一个业务动作，写清输入、步骤、验收标准，再接工具。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 24,
+        "moneyRelation": 23,
+        "talkability": 18,
+        "spreadability": 15,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "先打脸工具崇拜",
+          "note": "开头写：买工具不是 AI 转型，能稳定交付结果才算。"
+        },
+        {
+          "title": "中段用社群案例证明",
+          "note": "写 Skill、知识库、SOP 为什么比单个工具更耐用。"
+        },
+        {
+          "title": "结尾给金句",
+          "note": "AI 工具不是资产，能反复跑通的流程才是资产。"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 3,
+        "businessSignals": 1,
+        "firstLineViewpoints": 1,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A14",
+          "role": "fact_base",
+          "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
+          "source": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+          "note": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流-material-2",
+          "kind": "first_line_viewpoint",
+          "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "role": "viewpoint_lead",
+          "title": "欢迎来到AI治理的AGI时代",
+          "source": "Interconnects (Nathan Lambert)",
+          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "note": "欢迎来到AI治理的AGI时代",
+          "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "verificationUse": "lead_only_not_verified_fact"
+        },
+        {
+          "materialId": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流-material-3",
+          "kind": "community_intelligence",
+          "id": "acfc6ffcbdd864",
+          "role": "community_lead",
+          "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
+          "source": "生财有术",
+          "url": "https://scys.com/",
+          "note": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上 我靠内容获客，一个人运营小红书、抖音、B 站",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=acfc6ffcbdd864",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A14",
+            "role": "fact_base",
+            "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
+            "source": "techcrunch.com",
+            "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+            "note": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [
+          {
+            "materialId": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流-material-2",
+            "kind": "first_line_viewpoint",
+            "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "role": "viewpoint_lead",
+            "title": "欢迎来到AI治理的AGI时代",
+            "source": "Interconnects (Nathan Lambert)",
+            "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "note": "欢迎来到AI治理的AGI时代",
+            "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ],
+        "communityIntelligence": [
+          {
+            "materialId": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流-material-3",
+            "kind": "community_intelligence",
+            "id": "acfc6ffcbdd864",
+            "role": "community_lead",
+            "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上 我靠内容获客，一个人运营小红书、抖音、B 站",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=acfc6ffcbdd864",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "id": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex",
+      "date": "2026-06-15",
+      "score": 93,
+      "grade": "S",
+      "sourceId": "big_small_contrast",
+      "sourceName": "大小对照型",
+      "priority": "公众号主稿",
+      "title": "有人 120亿美元 押注物理 AI，有人 1000 块帮老板装 Codex",
+      "originalTitle": "有人 120亿美元 押注物理 AI，有人 1000 块帮老板装 Codex",
+      "core": "AI 赚钱分两层：顶层拼资本和研发，底层拼老板现场的配置、流程和交付。",
+      "bossPain": "老板看不懂大融资，但愿意为“帮我把 AI 用起来”付第一笔小钱。",
+      "moneyLine": "大厂赚基础设施的钱，小服务商赚落地第一公里的钱。",
+      "oldFrame": "AI 创业只能跟大模型和融资有关。",
+      "newFrame": "普通人的 AI 机会在帮老板跨过工具配置和流程落地门槛。",
+      "actionHint": "把 AI 基建服务产品化：账号、网络、工具、知识库、一个工作流。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 21,
+        "moneyRelation": 24,
+        "talkability": 20,
+        "spreadability": 15,
+        "actionability": 8,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用大钱和小钱制造冲突",
+          "note": "大融资负责制造注意力，小服务负责让老板觉得和自己有关。"
+        },
+        {
+          "title": "写出两套赚钱逻辑",
+          "note": "资本逻辑：长期技术押注；服务逻辑：帮老板完成第一公里。"
+        },
+        {
+          "title": "落到可卖服务包",
+          "note": "账号配置、工具安装、知识库搭建、首个工作流，这是老板可理解的产品。"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 3,
+        "businessSignals": 1,
+        "firstLineViewpoints": 1,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A17",
+          "role": "fact_base",
+          "title": "AI公司竞相上市，谁在搭便车？",
+          "source": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride",
+          "note": "SpaceX 本周完成史上最大规模 IPO，其 CEO 马斯克成为全球首位万亿富豪。SpaceX 强调其高成本 AI 业务潜力，竞争对手 OpenAI 和 Anthropic 也已秘密提交上市申请，可能紧随其后。市场分析认为三者之间存在上市时间竞赛。同时，Quantum Space 等初创公司试图借 SpaceX IPO 浪潮融资，例如围绕太空数据中心概念…",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A17",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex-material-2",
+          "kind": "first_line_viewpoint",
+          "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "role": "viewpoint_lead",
+          "title": "欢迎来到AI治理的AGI时代",
+          "source": "Interconnects (Nathan Lambert)",
+          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "note": "欢迎来到AI治理的AGI时代",
+          "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "verificationUse": "lead_only_not_verified_fact"
+        },
+        {
+          "materialId": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex-material-3",
+          "kind": "community_intelligence",
+          "id": "49e87bf368bb4f",
+          "role": "community_lead",
+          "title": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+          "source": "生财有术",
+          "url": "https://scys.com/",
+          "note": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万 前几天有个发小来找我，他可以说是对 AI 零基础了，说想接触 AI",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=49e87bf368bb4f",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A17",
+            "role": "fact_base",
+            "title": "AI公司竞相上市，谁在搭便车？",
+            "source": "TechCrunch：AI（RSS）",
+            "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride",
+            "note": "SpaceX 本周完成史上最大规模 IPO，其 CEO 马斯克成为全球首位万亿富豪。SpaceX 强调其高成本 AI 业务潜力，竞争对手 OpenAI 和 Anthropic 也已秘密提交上市申请，可能紧随其后。市场分析认为三者之间存在上市时间竞赛。同时，Quantum Space 等初创公司试图借 SpaceX IPO 浪潮融资，例如围绕太空数据中心概念…",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A17",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [
+          {
+            "materialId": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex-material-2",
+            "kind": "first_line_viewpoint",
+            "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "role": "viewpoint_lead",
+            "title": "欢迎来到AI治理的AGI时代",
+            "source": "Interconnects (Nathan Lambert)",
+            "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "note": "欢迎来到AI治理的AGI时代",
+            "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ],
+        "communityIntelligence": [
+          {
+            "materialId": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex-material-3",
+            "kind": "community_intelligence",
+            "id": "49e87bf368bb4f",
+            "role": "community_lead",
+            "title": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万 前几天有个发小来找我，他可以说是对 AI 零基础了，说想接触 AI",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=49e87bf368bb4f",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "id": "person_story-75-岁-iso-专家遇上-ai-我看到传统行业最大的机会",
+      "date": "2026-06-15",
+      "score": 92,
+      "grade": "S",
+      "sourceId": "person_story",
+      "sourceName": "人物故事型",
+      "priority": "公众号主稿",
+      "title": "75 岁 ISO 专家遇上 AI，我看到传统行业最大的机会",
+      "originalTitle": "75 岁 ISO 专家遇上 AI，我看到传统行业最大的机会",
+      "core": "AI 普及不是让所有人学会新工具，而是把老专家几十年的经验变成可复用系统。",
+      "bossPain": "很多传统行业老板最大的资产不是软件，而是老员工、老专家、老资料，但这些资产正在散落和流失。",
+      "moneyLine": "把经验沉淀成知识库和 SOP，等于把个人能力变成公司资产。",
+      "oldFrame": "年纪大的人学不会 AI。",
+      "newFrame": "AI 最该先服务那些经验很深、资料很多、流程很重的人。",
+      "actionHint": "先把老专家的资料、模板、常见问题和交付流程整理成一个可问答知识库。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 23,
+        "moneyRelation": 21,
+        "talkability": 20,
+        "spreadability": 14,
+        "actionability": 9,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用人物场景开头",
+          "note": "不要先讲知识库，先写 75 岁老专家还在手动整理认证文件。"
+        },
+        {
+          "title": "把温情转成商业判断",
+          "note": "重点不是感动，而是传统行业的经验资产终于能系统化。"
+        },
+        {
+          "title": "结尾回到老板资产",
+          "note": "老员工脑子里的经验，不沉淀就是个人能力，沉淀出来才是公司资产。"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 2,
+        "businessSignals": 1,
+        "firstLineViewpoints": 0,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "person_story-75-岁-iso-专家遇上-ai-我看到传统行业最大的机会-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A05",
+          "role": "fact_base",
+          "title": "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG",
+          "source": "The MAD Podcast (Matt Turck)",
+          "url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
+          "note": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A05",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "person_story-75-岁-iso-专家遇上-ai-我看到传统行业最大的机会-material-2",
+          "kind": "community_intelligence",
+          "id": "0207f4f24ae0f6",
+          "role": "community_lead",
+          "title": "13岁少年35美元启动，靠AI帮线下诊所月入13万",
+          "source": "生财有术",
+          "url": "https://scys.com/",
+          "note": "13岁少年35美元启动，靠AI帮线下诊所月入13万 这两天刷推特，看到一件挺有意思的事——13 岁",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=0207f4f24ae0f6",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "person_story-75-岁-iso-专家遇上-ai-我看到传统行业最大的机会-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A05",
+            "role": "fact_base",
+            "title": "podcasters ：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG",
+            "source": "The MAD Podcast (Matt Turck)",
+            "url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
+            "note": "podcasters 的原文 AI 事件：Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG。该来源披露的是 podcasters 的原文 AI 事件 相关的具体 AI 商业事件。",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A05",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [],
+        "communityIntelligence": [
+          {
+            "materialId": "person_story-75-岁-iso-专家遇上-ai-我看到传统行业最大的机会-material-2",
+            "kind": "community_intelligence",
+            "id": "0207f4f24ae0f6",
+            "role": "community_lead",
+            "title": "13岁少年35美元启动，靠AI帮线下诊所月入13万",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "13岁少年35美元启动，靠AI帮线下诊所月入13万 这两天刷推特，看到一件挺有意思的事——13 岁",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=0207f4f24ae0f6",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "id": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖",
+      "date": "2026-06-15",
+      "score": 91,
+      "grade": "S",
+      "sourceId": "peer_pressure",
+      "sourceName": "同行压力型",
+      "priority": "公众号主稿",
+      "title": "你的同行已经用 AI 跑流程了，你还在让员工手动搬砖",
+      "originalTitle": "你的同行已经用 AI 跑流程了，你还在让员工手动搬砖",
+      "core": "最能触发老板的不是技术解释，而是同行已经把 AI 用在获客、内容、交付和产品上。",
+      "bossPain": "对手开始用 AI 降低生产成本时，你还在用人工流程硬扛。",
+      "moneyLine": "同行压力的核心不是焦虑，而是获客成本、交付成本和试错成本正在被重新定价。",
+      "oldFrame": "AI 是员工自己研究的新工具。",
+      "newFrame": "AI 是同行正在重做流程的生产系统。",
+      "actionHint": "每天只问一个问题：同行哪一个流程已经被 AI 缩短了？",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 22,
+        "moneyRelation": 22,
+        "talkability": 19,
+        "spreadability": 15,
+        "actionability": 8,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用同行压力开头",
+          "note": "标题和开头都不要讲 AI 多强，要讲别人已经开始用 AI 跑流程。"
+        },
+        {
+          "title": "拆获客、交付、产品三个场景",
+          "note": "每个场景只写一个真实动作，避免变成工具列表。"
+        },
+        {
+          "title": "落到老板的例会问题",
+          "note": "建议老板每周让团队汇报一个被 AI 缩短的流程。"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 3,
+        "businessSignals": 1,
+        "firstLineViewpoints": 1,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A14",
+          "role": "fact_base",
+          "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
+          "source": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+          "note": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖-material-2",
+          "kind": "first_line_viewpoint",
+          "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "role": "viewpoint_lead",
+          "title": "欢迎来到AI治理的AGI时代",
+          "source": "Interconnects (Nathan Lambert)",
+          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "note": "欢迎来到AI治理的AGI时代",
+          "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "verificationUse": "lead_only_not_verified_fact"
+        },
+        {
+          "materialId": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖-material-3",
+          "kind": "community_intelligence",
+          "id": "d80c6561db2676",
+          "role": "community_lead",
+          "title": "AI虚拟电商全链路作战系统：用Obsidian+Claude Code一个人跑通选品、做品、写笔记到出单",
+          "source": "AI破局",
+          "url": "https://aipoju.com/topic-details/55522518412221244",
+          "note": "AI虚拟电商全链路作战系统：用Obsidian+Claude Code一个人跑通选品、做品、写笔记到出单 2026年，“一人公司”火了，我们的大多数圈友都在探索这条道路，包括我在内",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=d80c6561db2676",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A14",
+            "role": "fact_base",
+            "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
+            "source": "techcrunch.com",
+            "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+            "note": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [
+          {
+            "materialId": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖-material-2",
+            "kind": "first_line_viewpoint",
+            "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "role": "viewpoint_lead",
+            "title": "欢迎来到AI治理的AGI时代",
+            "source": "Interconnects (Nathan Lambert)",
+            "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "note": "欢迎来到AI治理的AGI时代",
+            "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ],
+        "communityIntelligence": [
+          {
+            "materialId": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖-material-3",
+            "kind": "community_intelligence",
+            "id": "d80c6561db2676",
+            "role": "community_lead",
+            "title": "AI虚拟电商全链路作战系统：用Obsidian+Claude Code一个人跑通选品、做品、写笔记到出单",
+            "source": "AI破局",
+            "url": "https://aipoju.com/topic-details/55522518412221244",
+            "note": "AI虚拟电商全链路作战系统：用Obsidian+Claude Code一个人跑通选品、做品、写笔记到出单 2026年，“一人公司”火了，我们的大多数圈友都在探索这条道路，包括我在内",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=d80c6561db2676",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "id": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活",
+      "date": "2026-06-15",
+      "score": 90,
+      "grade": "S",
+      "sourceId": "save_headcount",
+      "sourceName": "省人型",
+      "priority": "公众号主稿",
+      "title": "不是裁员，而是少招 3 个重复岗位：老板该先改造这些活",
+      "originalTitle": "不是裁员，而是少招 3 个重复岗位：老板该先改造这些活",
+      "core": "AI 真正进入企业，第一步不是替代整个人，而是接管岗位里的重复动作。",
+      "bossPain": "人越招越多，杂活没有变少，管理成本反而上来。",
+      "moneyLine": "能少招一个重复岗位，或者让一个人少返工 30%，老板就愿意继续投入。",
+      "oldFrame": "AI 上线就是裁员。",
+      "newFrame": "AI 上线的第一阶段，是让公司少招重复岗位。",
+      "actionHint": "把一个岗位每天重复超过 20 次的动作列出来，先挑 3 个标准动作交给 AI。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 23,
+        "moneyRelation": 23,
+        "talkability": 16,
+        "spreadability": 13,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用岗位动作替代岗位名称",
+          "note": "不要写 AI 替代客服，写 AI 先替代接听、归档、质检、催办。"
+        },
+        {
+          "title": "把省人写成管理账",
+          "note": "老板关心的不是炫技，是少招人、少返工、少培训。"
+        },
+        {
+          "title": "给一个 10 步拆 3 步的方法",
+          "note": "结尾给老板一个小动作，方便转给团队执行。"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 3,
+        "businessSignals": 1,
+        "firstLineViewpoints": 1,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A14",
+          "role": "fact_base",
+          "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
+          "source": "techcrunch.com",
+          "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+          "note": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活-material-2",
+          "kind": "first_line_viewpoint",
+          "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "role": "viewpoint_lead",
+          "title": "欢迎来到AI治理的AGI时代",
+          "source": "Interconnects (Nathan Lambert)",
+          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "note": "欢迎来到AI治理的AGI时代",
+          "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "verificationUse": "lead_only_not_verified_fact"
+        },
+        {
+          "materialId": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活-material-3",
+          "kind": "community_intelligence",
+          "id": "acfc6ffcbdd864",
+          "role": "community_lead",
+          "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
+          "source": "生财有术",
+          "url": "https://scys.com/",
+          "note": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上 我靠内容获客，一个人运营小红书、抖音、B 站",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=acfc6ffcbdd864",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A14",
+            "role": "fact_base",
+            "title": "techcrunch 发布 Scout, an OpenClaw-inspired personal assistant",
+            "source": "techcrunch.com",
+            "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+            "note": "techcrunch 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A14",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [
+          {
+            "materialId": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活-material-2",
+            "kind": "first_line_viewpoint",
+            "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "role": "viewpoint_lead",
+            "title": "欢迎来到AI治理的AGI时代",
+            "source": "Interconnects (Nathan Lambert)",
+            "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "note": "欢迎来到AI治理的AGI时代",
+            "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ],
+        "communityIntelligence": [
+          {
+            "materialId": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活-material-3",
+            "kind": "community_intelligence",
+            "id": "acfc6ffcbdd864",
+            "role": "community_lead",
+            "title": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "我用 AI 搭了条内容流水线，每天省下 3 小时，把时间全花在接单上 我靠内容获客，一个人运营小红书、抖音、B 站",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=acfc6ffcbdd864",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "id": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限",
+      "date": "2026-06-15",
+      "score": 88,
+      "grade": "A",
+      "sourceId": "pitfall",
+      "sourceName": "避坑型",
+      "priority": "公众号主稿",
+      "title": "AI 员工不能先上岗后管理：老板最容易漏掉的是权限",
+      "originalTitle": "AI 员工不能先上岗后管理：老板最容易漏掉的是权限",
+      "core": "Agent 能替你执行动作后，企业的核心问题从“会不会用”变成“谁来管”。",
+      "bossPain": "AI 一旦能读文件、调工具、改数据，错误不再只是内容不好，而是可能直接影响业务系统。",
+      "moneyLine": "权限没管住，省下的人力钱可能会被一次数据事故吃掉。",
+      "oldFrame": "AI 越自主越好。",
+      "newFrame": "AI 越自主，越需要先设计权限和复核。",
+      "actionHint": "先给 AI 员工分三级权限：只读、建议、可执行。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "scoreBreakdown": {
+        "bossPain": 22,
+        "moneyRelation": 21,
+        "talkability": 18,
+        "spreadability": 13,
+        "actionability": 9,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "不要写安全科普，写老板责任",
+          "note": "老板不关心分类器模型，关心 AI 搞错后谁背锅。"
+        },
+        {
+          "title": "把权限拆成人话",
+          "note": "只读、建议、执行三个等级，比讲治理框架更容易传播。"
+        },
+        {
+          "title": "用反问推进",
+          "note": "难道 AI 能替你操作系统，你还不给它设边界？"
+        }
+      ],
+      "rawMaterialSummary": {
+        "total": 3,
+        "businessSignals": 1,
+        "firstLineViewpoints": 1,
+        "communityIntelligence": 1
+      },
+      "rawMaterials": [
+        {
+          "materialId": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限-material-1",
+          "kind": "business_signal",
+          "id": "SIG-20260615-A21",
+          "role": "fact_base",
+          "title": "欢迎进入AI治理的AGI时代",
+          "source": "Nathan Lambert：Interconnects（RSS）",
+          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "note": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经…",
+          "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A21",
+          "verificationUse": "fact_base"
+        },
+        {
+          "materialId": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限-material-2",
+          "kind": "first_line_viewpoint",
+          "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "role": "viewpoint_lead",
+          "title": "欢迎来到AI治理的AGI时代",
+          "source": "Interconnects (Nathan Lambert)",
+          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "note": "欢迎来到AI治理的AGI时代",
+          "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "verificationUse": "lead_only_not_verified_fact"
+        },
+        {
+          "materialId": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限-material-3",
+          "kind": "community_intelligence",
+          "id": "49e87bf368bb4f",
+          "role": "community_lead",
+          "title": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+          "source": "生财有术",
+          "url": "https://scys.com/",
+          "note": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万 前几天有个发小来找我，他可以说是对 AI 零基础了，说想接触 AI",
+          "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=49e87bf368bb4f",
+          "verificationUse": "lead_only_not_verified_fact"
+        }
+      ],
+      "sources": {
+        "businessSignals": [
+          {
+            "materialId": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限-material-1",
+            "kind": "business_signal",
+            "id": "SIG-20260615-A21",
+            "role": "fact_base",
+            "title": "欢迎进入AI治理的AGI时代",
+            "source": "Nathan Lambert：Interconnects（RSS）",
+            "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "note": "上周五收盘后，美国政府要求Anthropic暂停其最新Claude 5 Mythos/Fable模型的国内外访问权限，理由是存在模型越狱引发的网络安全风险。白宫通过Anthropic最大合作伙伴Amazon获知此事。作者评论称，对任何模型权重的出口禁令都是长期负面政策，且Anthropic过去几年将AI与核武器相提并论的恐惧宣传加速了这一时刻。该事件引发经…",
+            "localDataPath": "01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260615-A21",
+            "verificationUse": "fact_base"
+          }
+        ],
+        "firstLineViewpoints": [
+          {
+            "materialId": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限-material-2",
+            "kind": "first_line_viewpoint",
+            "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "role": "viewpoint_lead",
+            "title": "欢迎来到AI治理的AGI时代",
+            "source": "Interconnects (Nathan Lambert)",
+            "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "note": "欢迎来到AI治理的AGI时代",
+            "localDataPath": "01-SiteV2/site/data/follow-builders-daily.json#id=https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ],
+        "communityIntelligence": [
+          {
+            "materialId": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限-material-3",
+            "kind": "community_intelligence",
+            "id": "49e87bf368bb4f",
+            "role": "community_lead",
+            "title": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "帮AI零基础发小搞定AI基建，给老板做服务能年入几十万 前几天有个发小来找我，他可以说是对 AI 零基础了，说想接触 AI",
+            "localDataPath": "01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=49e87bf368bb4f",
+            "verificationUse": "lead_only_not_verified_fact"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 9,
       "id": "money_leak-一个空调公司用-ai-接住-13个-电话-老板们该醒醒了",
       "date": "2026-06-14",
       "score": 97,
@@ -118,7 +1099,7 @@
       }
     },
     {
-      "rank": 2,
+      "rank": 10,
       "id": "small_role-别做大平台-先做一个小岗位的-ai-员工",
       "date": "2026-06-14",
       "score": 97,
@@ -246,7 +1227,7 @@
       }
     },
     {
-      "rank": 3,
+      "rank": 11,
       "id": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流",
       "date": "2026-06-14",
       "score": 95,
@@ -375,7 +1356,7 @@
       }
     },
     {
-      "rank": 4,
+      "rank": 12,
       "id": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex",
       "date": "2026-06-14",
       "score": 93,
@@ -504,7 +1485,7 @@
       }
     },
     {
-      "rank": 5,
+      "rank": 13,
       "id": "person_story-75-岁-iso-专家遇上-ai-我看到传统行业最大的机会",
       "date": "2026-06-14",
       "score": 92,
@@ -608,7 +1589,7 @@
       }
     },
     {
-      "rank": 6,
+      "rank": 14,
       "id": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖",
       "date": "2026-06-14",
       "score": 91,
@@ -737,7 +1718,7 @@
       }
     },
     {
-      "rank": 7,
+      "rank": 15,
       "id": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活",
       "date": "2026-06-14",
       "score": 90,
@@ -866,7 +1847,7 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 16,
       "id": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限",
       "date": "2026-06-14",
       "score": 88,
@@ -995,7 +1976,7 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 17,
       "id": "money_leak-一个空调公司用-ai-接住-56个-电话-老板们该醒醒了",
       "date": "2026-06-13",
       "score": 97,
@@ -1099,7 +2080,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 18,
       "id": "small_role-别做大平台-先做一个小岗位的-ai-员工",
       "date": "2026-06-13",
       "score": 97,
@@ -1227,7 +2208,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 19,
       "id": "counterintuitive-真正值钱的不是-ai-工具-而是老板自己的工作流",
       "date": "2026-06-13",
       "score": 95,
@@ -1356,7 +2337,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 20,
       "id": "big_small_contrast-有人-120亿美元-押注物理-ai-有人-1000-块帮老板装-codex",
       "date": "2026-06-13",
       "score": 93,
@@ -1485,7 +2466,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 21,
       "id": "person_story-75-岁-iso-专家遇上-ai-我看到传统行业最大的机会",
       "date": "2026-06-13",
       "score": 92,
@@ -1589,7 +2570,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 22,
       "id": "peer_pressure-你的同行已经用-ai-跑流程了-你还在让员工手动搬砖",
       "date": "2026-06-13",
       "score": 91,
@@ -1718,7 +2699,7 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 23,
       "id": "save_headcount-不是裁员-而是少招-3-个重复岗位-老板该先改造这些活",
       "date": "2026-06-13",
       "score": 90,
@@ -1847,7 +2828,7 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 24,
       "id": "pitfall-ai-员工不能先上岗后管理-老板最容易漏掉的是权限",
       "date": "2026-06-13",
       "score": 88,

@@ -1,0 +1,70 @@
+---
+id: SIG-20260615-A03
+type: signal_card
+signal_type: funding
+title: "LMArena 获得$1.7B 融资，押注地产和建筑设计工作流"
+date: 2026-06-15
+status: published
+source_title: "State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-15T03:58:54.936Z
+updated_at: 2026-06-15T03:58:54.936Z
+
+raw_refs: ["R-046"]
+pool_refs: ["P-036"]
+primary_raw:
+  raw_ref: R-046
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-046-state-of-evals-lmarena-s-1-7b-vision-anastasios-angelopoulos-lmarena.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-046-state-of-evals-lmarena-s-1-7b-vision-anastasios-angelopoulos-lmarena.json"
+  source_url: "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision"
+  full_text_hash: "5b212ad1259fdb65"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_product_or_service
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent"]
+  function: []
+  scenario: ["scenario-construction-real-estate"]
+  customer: []
+  evidence: ["evidence-funding"]
+  stage: ["stage-rising"]
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "LMArena"
+
+frontend:
+  displayTitle: "LMArena 获得$1.7B 融资，押注地产和建筑设计工作流"
+  sourceLinks:
+    - "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision"
+---
+
+# LMArena 获得$1.7B 融资，押注地产和建筑设计工作流
+
+## 新闻事实
+
+LMArena 获得$1.7B 融资，押注地产和建筑设计工作流
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+LMArena 的融资信号可用于观察资本是否继续流向 地产和建筑设计工作流。
+
+## 可见原文片段
+
+LMArena 获得$1.7B 融资，押注地产和建筑设计工作流
+
+## 证据边界
+
+没有具体客户或真实企业案例

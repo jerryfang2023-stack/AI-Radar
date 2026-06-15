@@ -1,0 +1,221 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-066
+title: "AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单"
+original_url: "https://www.ithome.com/0/964/264.htm"
+canonical_url: "https://ithome.com/0/964/264.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-15T02:22:47.000Z"
+collected_at: 2026-06-15T03:58:54.300Z
+language: mixed
+full_text_hash: 7442a5966879c6ed
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-066-ai-幻觉让法官头疼-韩国计划向滥用-ai-的律师开罚单.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-066-ai-幻觉让法官头疼-韩国计划向滥用-ai-的律师开罚单.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 61
+extractor_diagnostics: {"readability_score":61,"text_length":1127,"paragraph_count":15,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 1127
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7442a5966879c6ed","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单","discovery_summary":"韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161 亿韩元专项资金，用于搭建司法专属 AI 平台，已上线 AI 庭审辅助系统试点版本，未来计划接入生成式 AI。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/964/264.htm","discovered_at":"2026-06-15T03:52:39.429Z","rank_on_page":16,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 4b743a5dcc028b22
+content_hash: 7442a5966879c6ed
+semantic_hash: 49931aa5037e26c6
+duplicate_of: ""
+first_seen_at: "2026-06-15T02:22:47.000Z"
+last_seen_at: 2026-06-15T03:58:54.300Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":["Gemini"],"people":[],"industries":["法律 / 法务"],"roles":["法务 / 律师"],"workflows":[],"business_actions":["部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["2","161 亿","6","15","451","7179 万"],"quotes":["以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。","现在我的工作量大幅增加，每一条引用案例都必须逐一核查。","被告的主张所依据的判例均不存在。","法官核查案例要耗费大量时间，还要考虑到律师可能只是单纯输入失误，不敢直接下定论。"]}
+evidence_seed: {"company_actions":["越来越多法官反映，原告与律师在庭审中频频援引不存在的案件与法律条文。"],"case_details":["首尔某法院一名法官称：“以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。","” 这位法官补充道：“现在我的工作量大幅增加，每一条引用案例都必须逐一核查。"],"workflow_changes":["韩国法院行政机构目前正在研究修订相关法案、完善庭审流程，计划通过罚款等方式，杜绝借助人工智能编造虚假法律证据的行为。"],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161 亿韩元专项资金，用于搭建司法专属 AI 平台，已上线 AI 庭审辅助系统试点版本，未来计划接入生成式 AI。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家 6 月 15 日消息，据《韩国先驱报》报道，韩国法院行政处表示，由于人工智能出现幻觉问题，导致律师在法律文书中引用根本不存在的“虚假判例”，韩国司法部门正加大力度应对庭审环节中的人工智能滥用乱象。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"韩国法院行政机构目前正在研究修订相关法案、完善庭审流程，计划通过罚款等方式，杜绝借助人工智能编造虚假法律证据的行为。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"越来越多法官反映，原告与律师在庭审中频频援引不存在的案件与法律条文。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"首尔某法院一名法官称：“以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"” 这位法官补充道：“现在我的工作量大幅增加，每一条引用案例都必须逐一核查。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单
+
+## clean_text
+
+IT之家 6 月 15 日消息，据《韩国先驱报》报道，韩国法院行政处表示，由于人工智能出现幻觉问题，导致律师在法律文书中引用根本不存在的“虚假判例”，韩国司法部门正加大力度应对庭审环节中的人工智能滥用乱象。
+韩国法院行政机构目前正在研究修订相关法案、完善庭审流程，计划通过罚款等方式，杜绝借助人工智能编造虚假法律证据的行为。
+越来越多法官反映，原告与律师在庭审中频频援引不存在的案件与法律条文。首尔某法院一名法官称：“以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。”
+这位法官补充道：“现在我的工作量大幅增加，每一条引用案例都必须逐一核查。”
+另据韩国《中央日报》报道，大邱高等法院曾出现一起典型案例：一名代理律师在法律文件中引用了一则不存在的最高法院判例。法院要求其作出解释后，该律师又举出了另一则同样子虚乌有的案例。
+另有一名光州律师引用《民事诉讼法》第 451 条，但其阐述的内容却与该法条毫无关联。蔚山地方法院的一名律师援引了不相干的最高法院判例，事后承认自己借助谷歌 Gemini 大模型检索判例后，并未仔细核对内容。
+韩国各地法院也开始公开指出这类不实引用。首尔南部地方法院在一起投资纠纷案件的判决书中，判决原告胜诉，并明确写明：“被告的主张所依据的判例均不存在。”
+另一名法官表示：“法官核查案例要耗费大量时间，还要考虑到律师可能只是单纯输入失误，不敢直接下定论。”
+为整治乱象，韩国司法界推动修订法律，授权法院对提交虚假法条、虚假判例的律师处以罚款。
+同时，司法部门计划修改庭审程序规则，要求诉讼各方主动说明是否使用人工智能撰写法律文书。
+目前，针对人工智能不当使用问题，韩国法院可采取限制当庭辩论、提请对涉事律师予以惩戒，或是判令其承担额外诉讼费用（若滥用 AI 导致庭审延误）等处理方式。
+今年 2 月，韩国司法信息公开门户新增案例编号核验功能，可查验案件是否真实存在；相关部门还向法官发放指南手册，指导大家利用人工智能甄别虚假判例，手册中附带专用提示词，方便法官核查引用案例的真伪。
+此外，韩国法院行政处已获批 161 亿韩元（IT之家注：现汇率约合 7179 万元人民币）专项资金，用于搭建司法系统内部专属人工智能平台。
+今年 2 月，该院已上线人工智能庭审辅助系统试点版本，系统收录了最高法院判例、裁判文书、实务手册及法律释义等资料。该项目共分四个阶段，目前第一阶段工作已完成，司法部门还计划将生成式人工智能接入这套系统。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 15 日消息，据《韩国先驱报》报道，韩国法院行政处表示，由于人工智能出现幻觉问题，导致律师在法律文书中引用根本不存在的“虚假判例”，韩国司法部门正加大力度应对庭审环节中的人工智能滥用乱象。
+韩国法院行政机构目前正在研究修订相关法案、完善庭审流程，计划通过罚款等方式，杜绝借助人工智能编造虚假法律证据的行为。
+越来越多法官反映，原告与律师在庭审中频频援引不存在的案件与法律条文。首尔某法院一名法官称：“以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。”
+这位法官补充道：“现在我的工作量大幅增加，每一条引用案例都必须逐一核查。”
+另据韩国《中央日报》报道，大邱高等法院曾出现一起典型案例：一名代理律师在法律文件中引用了一则不存在的最高法院判例。法院要求其作出解释后，该律师又举出了另一则同样子虚乌有的案例。
+另有一名光州律师引用《民事诉讼法》第 451 条，但其阐述的内容却与该法条毫无关联。蔚山地方法院的一名律师援引了不相干的最高法院判例，事后承认自己借助谷歌 Gemini 大模型检索判例后，并未仔细核对内容。
+韩国各地法院也开始公开指出这类不实引用。首尔南部地方法院在一起投资纠纷案件的判决书中，判决原告胜诉，并明确写明：“被告的主张所依据的判例均不存在。”
+另一名法官表示：“法官核查案例要耗费大量时间，还要考虑到律师可能只是单纯输入失误，不敢直接下定论。”
+为整治乱象，韩国司法界推动修订法律，授权法院对提交虚假法条、虚假判例的律师处以罚款。
+同时，司法部门计划修改庭审程序规则，要求诉讼各方主动说明是否使用人工智能撰写法律文书。
+目前，针对人工智能不当使用问题，韩国法院可采取限制当庭辩论、提请对涉事律师予以惩戒，或是判令其承担额外诉讼费用（若滥用 AI 导致庭审延误）等处理方式。
+今年 2 月，韩国司法信息公开门户新增案例编号核验功能，可查验案件是否真实存在；相关部门还向法官发放指南手册，指导大家利用人工智能甄别虚假判例，手册中附带专用提示词，方便法官核查引用案例的真伪。
+此外，韩国法院行政处已获批 161 亿韩元（IT之家注：现汇率约合 7179 万元人民币）专项资金，用于搭建司法系统内部专属人工智能平台。
+今年 2 月，该院已上线人工智能庭审辅助系统试点版本，系统收录了最高法院判例、裁判文书、实务手册及法律释义等资料。该项目共分四个阶段，目前第一阶段工作已完成，司法部门还计划将生成式人工智能接入这套系统。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 61
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":61,"text_length":1127,"paragraph_count":15,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的"虚假判例"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161 亿韩元专项资金，用于搭建司法专属 AI 平台，已上线 AI 庭审辅助系统试点版本，未来计划接入生成式 AI。
+
+2. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   IT之家 6 月 15 日消息，据《韩国先驱报》报道，韩国法院行政处表示，由于人工智能出现幻觉问题，导致律师在法律文书中引用根本不存在的“虚假判例”，韩国司法部门正加大力度应对庭审环节中的人工智能滥用乱象。
+
+3. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   韩国法院行政机构目前正在研究修订相关法案、完善庭审流程，计划通过罚款等方式，杜绝借助人工智能编造虚假法律证据的行为。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   越来越多法官反映，原告与律师在庭审中频频援引不存在的案件与法律条文。
+
+5. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   首尔某法院一名法官称：“以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。
+
+6. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   ” 这位法官补充道：“现在我的工作量大幅增加，每一条引用案例都必须逐一核查。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: Gemini
+- people: 暂无公开信息
+- industries: 法律 / 法务
+- roles: 法务 / 律师
+- workflows: 暂无公开信息
+- business_actions: 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 2, 161 亿, 6, 15, 451, 7179 万
+- quotes: 以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。 / 现在我的工作量大幅增加，每一条引用案例都必须逐一核查。 / 被告的主张所依据的判例均不存在。 / 法官核查案例要耗费大量时间，还要考虑到律师可能只是单纯输入失误，不敢直接下定论。
+
+## evidence_seed
+
+- company_actions: 越来越多法官反映，原告与律师在庭审中频频援引不存在的案件与法律条文。
+- case_details: 首尔某法院一名法官称：“以往我只会在判决书脚注里指出律师引用的不实案例，如今这类问题泛滥，我不得不直接在正文括号中逐一标注。 / ” 这位法官补充道：“现在我的工作量大幅增加，每一条引用案例都必须逐一核查。
+- workflow_changes: 韩国法院行政机构目前正在研究修订相关法案、完善庭审流程，计划通过罚款等方式，杜绝借助人工智能编造虚假法律证据的行为。
+- before_after_clues: 暂无公开信息
+- affected_roles: 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单","discovery_summary":"韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161 亿韩元专项资金，用于搭建司法专属 AI 平台，已上线 AI 庭审辅助系统试点版本，未来计划接入生成式 AI。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/964/264.htm","discovered_at":"2026-06-15T03:52:39.429Z","rank_on_page":16,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的"虚假判例"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别指南。法院行政处获批 161 亿韩元专项资金，用于搭建司法专属 AI 平台，已上线 AI 庭审辅助系统试点版本，未来计划接入生成式 AI。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

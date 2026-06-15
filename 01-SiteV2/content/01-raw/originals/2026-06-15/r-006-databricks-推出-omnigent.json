@@ -1,0 +1,274 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-006",
+  "title": "Databricks 推出 Omnigent",
+  "original_url": "https://x.com/shao__meng/status/2066326398252499391",
+  "canonical_url": "https://x.com/shao__meng/status/2066326398252499391",
+  "source_name": "X：邵猛 (@shao__meng)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-15T01:06:18.000Z",
+  "collected_at": "2026-06-15T03:58:54.049Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nDatabricks 推出「Omnigent」\n团队认为：Agent 能力的瓶颈，正在从「模型/harness 本身」上移到「如何组合、治理、协作多个 Agent」。Omnigent 就是针对这一层的新抽象：meta-harness。\n它要解决什么问题？\nDatabricks 从自身实践出发（5000+ 工程师用 coding agent、对外交付 Genie 时开 4–5 个 Agent（Claude Code、Codex、Gemini 等），在 Agent、Docs、Slack 之间反复 copy-paste\n· 构建侧：新 harness、SDK、模型不断出现，换工具就要重写集成逻辑\n· 架构侧：高质量 Agent 系统已是「多模型 + 多 harness + 多人协作」，但每个 harness 只认自己的 session，彼此隔离\nOmnigent 是什么？\n基于现有 Agent（Claude Code、Codex、Pi、自研 Agent），提供统一接口、策略层和协作层。\n关键设计洞察：无论底层 harness 如何调用 LLM，对用户界面本质相同——messages + files in → text streams + tool calls out。Omnigent 据此抽象出通用 API，同时覆盖 CLI coding agent 和 SDK（OpenAI Agents、Claude Agents SDK 等）。\n三大能力支柱\n1. Composition（组合）\n· 一行配置切换 Claude Code <-> Codex <-> Pi <-> 自研 Agent\n· YAML 定义 custom agent，可跨 harness 移植\n· 同一 Agent 内可组合不同 harness 的 subagent\n内置 Polly（coding orchestrator）、Debby（model debate）示例\n价值：把「选哪个 harness」从架构决策降成配置决策。\n2. Control（控制）\n区别于 prompt 级 guardrail，Omnigent 在 meta 层做有状态、上下文感知的策略：\n· 成本策略：按 session 追踪 LLM 花费，例如每 $100 暂停并请求继续\n· 上下文安全策略：例如 npm 安装新包后，git push 需人工批准；Agent 只能写自己创建的 doc\n· OS 沙箱：灵活限制文件系统/网络；凭证对 Agent 不可见，由 egress proxy 在批准请求时注入（如 GitHub token）\n价值：策略与 harness 解耦，换 Agent 不换治理逻辑。\n3. Collaboration（协作）\n· 通过 URL 共享 live agent session\n· 多人同时查看 workspace 文件、评论、甚至发送命令\n· 同一 Agent 可从 terminal、Web、macOS 原生 App、mobile、REST API 访问\n· 可在本机或 Modal/Daytona 等托管沙箱中运行，便于安全协作\n价值：Agent session 从个人终端工具，变成可共享的协作 surface。\n为何 Databricks 认为这很重要？\n用 Kubernetes / Terraform 类比：工程师不再管单个进程/服务器，而是管整个 fleet。Agent 领域同理——\n模型和 harness 会持续变化；你工作的抽象层不应随之反复重建。\nMeta-harness 让 session、policy、skills 与具体 harness 解耦，形成可迁移的工作层。\nDatabricks\n@databricks\nJun 13\nIntroducing 𝗢𝗺𝗻𝗶𝗴𝗲𝗻𝘁, a meta-harness to combine, control, and share your agents.\nThe best teams already mix models and harnesses and design loops that drive teams of agents. No single harness can keep up with that alone. So we built the layer above — we call it a Show more\n1:06 AM · Jun 15, 2026 695 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3\nRead 2 replies",
+  "clean_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nDatabricks 推出「Omnigent」\n团队认为：Agent 能力的瓶颈，正在从「模型/harness 本身」上移到「如何组合、治理、协作多个 Agent」。Omnigent 就是针对这一层的新抽象：meta-harness。\n它要解决什么问题？\nDatabricks 从自身实践出发（5000+ 工程师用 coding agent、对外交付 Genie 时开 4–5 个 Agent（Claude Code、Codex、Gemini 等），在 Agent、Docs、Slack 之间反复 copy-paste\n· 构建侧：新 harness、SDK、模型不断出现，换工具就要重写集成逻辑\n· 架构侧：高质量 Agent 系统已是「多模型 + 多 harness + 多人协作」，但每个 harness 只认自己的 session，彼此隔离\nOmnigent 是什么？\n基于现有 Agent（Claude Code、Codex、Pi、自研 Agent），提供统一接口、策略层和协作层。\n关键设计洞察：无论底层 harness 如何调用 LLM，对用户界面本质相同——messages + files in → text streams + tool calls out。Omnigent 据此抽象出通用 API，同时覆盖 CLI coding agent 和 SDK（OpenAI Agents、Claude Agents SDK 等）。\n三大能力支柱\n1. Composition（组合）\n· 一行配置切换 Claude Code <-> Codex <-> Pi <-> 自研 Agent\n· YAML 定义 custom agent，可跨 harness 移植\n· 同一 Agent 内可组合不同 harness 的 subagent\n内置 Polly（coding orchestrator）、Debby（model debate）示例\n价值：把「选哪个 harness」从架构决策降成配置决策。\n2. Control（控制）\n区别于 prompt 级 guardrail，Omnigent 在 meta 层做有状态、上下文感知的策略：\n· 成本策略：按 session 追踪 LLM 花费，例如每 $100 暂停并请求继续\n· 上下文安全策略：例如 npm 安装新包后，git push 需人工批准；Agent 只能写自己创建的 doc\n· OS 沙箱：灵活限制文件系统/网络；凭证对 Agent 不可见，由 egress proxy 在批准请求时注入（如 GitHub token）\n价值：策略与 harness 解耦，换 Agent 不换治理逻辑。\n3. Collaboration（协作）\n· 通过 URL 共享 live agent session\n· 多人同时查看 workspace 文件、评论、甚至发送命令\n· 同一 Agent 可从 terminal、Web、macOS 原生 App、mobile、REST API 访问\n· 可在本机或 Modal/Daytona 等托管沙箱中运行，便于安全协作\n价值：Agent session 从个人终端工具，变成可共享的协作 surface。\n为何 Databricks 认为这很重要？\n用 Kubernetes / Terraform 类比：工程师不再管单个进程/服务器，而是管整个 fleet。Agent 领域同理——\n模型和 harness 会持续变化；你工作的抽象层不应随之反复重建。\nMeta-harness 让 session、policy、skills 与具体 harness 解耦，形成可迁移的工作层。\nDatabricks\n@databricks\nJun 13\nIntroducing 𝗢𝗺𝗻𝗶𝗴𝗲𝗻𝘁, a meta-harness to combine, control, and share your agents.\nThe best teams already mix models and harnesses and design loops that drive teams of agents. No single harness can keep up with that alone. So we built the layer above — we call it a Show more\n1:06 AM · Jun 15, 2026 695 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3\nRead 2 replies",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-006-databricks-推出-omnigent.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-006-databricks-推出-omnigent.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 3562,
+    "paragraph_count": 33,
+    "sentence_count": 17,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0149,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3562,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "66984715300c77b1",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "X：邵猛 (@shao__meng)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Databricks 推出 Omnigent",
+    "discovery_summary": "Databricks 推出 Omnigent，一个开源（Apache 2.0）meta-harness，位于 Claude Code、Codex、Pi 及自研 Agent 之上，提供统一接口。三大能力：组合（一行配置切换不同 harness，YAML 定义跨 harness 可移植 agent，同一 Agent 内可组合不同 subagent）；控制（有状态成本策略如每 $100 暂停，安全策略如 npm 后 git push 需审批，OS 沙箱，策略与 harness 解耦）；协作（通过 URL 共享 live session，支持多端访问及实时评论）。理念类似 Kubernetes，让 session、policy 与具体 harness 解耦，形成可迁移工作层。",
+    "source_name": "X：邵猛 (@shao__meng)",
+    "origin_url": "https://x.com/shao__meng/status/2066326398252499391",
+    "discovered_at": "2026-06-15T03:52:39.435Z",
+    "rank_on_page": 27,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "f8a3e2e032395540",
+  "content_hash": "66984715300c77b1",
+  "full_text_hash": "66984715300c77b1",
+  "semantic_hash": "aba61126457cee5a",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-15T01:06:18.000Z",
+  "last_seen_at": "2026-06-15T03:58:54.049Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Databricks 推出 Omnigent，一个开源（Apache 2.0）meta-harness，位于 Claude Code、Codex、Pi 及自研 Agent 之上，提供统一接口。三大能力：组合（一行配置切换不同 harness，YAML 定义跨 harness 可移植 agent，同一 Agent 内可组合不同 subagent）；控制（有状态成本策略如每 $100 暂停，安全策略如 npm 后 git push 需审批，OS 沙箱，策略与 harness 解耦）；协作（通过 URL 共享 live session，支持多端访问及实时评论）。理念类似 Kubernetes，让 session、policy 与具体 harness 解耦，形成可迁移工作层。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Post Log in Sign up Post meng shao @shao__meng Databricks 推出「Omnigent」 团队认为：Agent 能力的瓶颈，正在从「模型/harness 本身」上移到「如何组合、治理、协作多个 Agent」。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Omnigent 就是针对这一层的新抽象：meta-harness。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Databricks 从自身实践出发（5000+ 工程师用 coding agent、对外交付 Genie 时开 4–5 个 Agent（Claude Code、Codex、Gemini 等），在 Agent、Docs、Slack 之间反复 copy-paste · 构建侧：新 harness、SDK、模型不断出现，换工具就要重写集成逻辑 · 架构侧：高质量 Agent 系统已是「多模型 + 多 harness + 多人协作」，但每个 harness 只认自己的 session，彼此隔离 Omnigent 是什么？",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "基于现有 Agent（Claude Code、Codex、Pi、自研 Agent），提供统一接口、策略层和协作层。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "关键设计洞察：无论底层 harness 如何调用 LLM，对用户界面本质相同——messages + files in → text streams + tool calls out。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "邵猛 (@shao__meng)",
+      "OpenAI",
+      "GitHub",
+      "Meta"
+    ],
+    "products": [
+      "Claude",
+      "Codex",
+      "Agent",
+      "agent",
+      "Gemini",
+      "Agents",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2.0",
+      "$100",
+      "5000",
+      "4",
+      "5",
+      "1",
+      "2",
+      "3"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post meng shao @shao__meng Databricks 推出「Omnigent」 团队认为：Agent 能力的瓶颈，正在从「模型/harness 本身」上移到「如何组合、治理、协作多个 Agent」。",
+      "Omnigent 就是针对这一层的新抽象：meta-harness。",
+      "基于现有 Agent（Claude Code、Codex、Pi、自研 Agent），提供统一接口、策略层和协作层。"
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Databricks 从自身实践出发（5000+ 工程师用 coding agent、对外交付 Genie 时开 4–5 个 Agent（Claude Code、Codex、Gemini 等），在 Agent、Docs、Slack 之间反复 copy-paste · 构建侧：新 harness、SDK、模型不断出现，换工具就要重写集成逻辑 · 架构侧：高质量 Agent 系统已是「多模型 + 多 harness + 多人协作」，但每个 harness 只认自己的 session，彼此隔离 Omnigent 是什么？"
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Databricks 推出 Omnigent\n\n- raw_id: R-006\n- original_url: https://x.com/shao__meng/status/2066326398252499391\n- source_name: X：邵猛 (@shao__meng)\n- collected_at: 2026-06-15T03:58:54.049Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nDatabricks 推出「Omnigent」\n团队认为：Agent 能力的瓶颈，正在从「模型/harness 本身」上移到「如何组合、治理、协作多个 Agent」。Omnigent 就是针对这一层的新抽象：meta-harness。\n它要解决什么问题？\nDatabricks 从自身实践出发（5000+ 工程师用 coding agent、对外交付 Genie 时开 4–5 个 Agent（Claude Code、Codex、Gemini 等），在 Agent、Docs、Slack 之间反复 copy-paste\n· 构建侧：新 harness、SDK、模型不断出现，换工具就要重写集成逻辑\n· 架构侧：高质量 Agent 系统已是「多模型 + 多 harness + 多人协作」，但每个 harness 只认自己的 session，彼此隔离\nOmnigent 是什么？\n基于现有 Agent（Claude Code、Codex、Pi、自研 Agent），提供统一接口、策略层和协作层。\n关键设计洞察：无论底层 harness 如何调用 LLM，对用户界面本质相同——messages + files in → text streams + tool calls out。Omnigent 据此抽象出通用 API，同时覆盖 CLI coding agent 和 SDK（OpenAI Agents、Claude Agents SDK 等）。\n三大能力支柱\n1. Composition（组合）\n· 一行配置切换 Claude Code <-> Codex <-> Pi <-> 自研 Agent\n· YAML 定义 custom agent，可跨 harness 移植\n· 同一 Agent 内可组合不同 harness 的 subagent\n内置 Polly（coding orchestrator）、Debby（model debate）示例\n价值：把「选哪个 harness」从架构决策降成配置决策。\n2. Control（控制）\n区别于 prompt 级 guardrail，Omnigent 在 meta 层做有状态、上下文感知的策略：\n· 成本策略：按 session 追踪 LLM 花费，例如每 $100 暂停并请求继续\n· 上下文安全策略：例如 npm 安装新包后，git push 需人工批准；Agent 只能写自己创建的 doc\n· OS 沙箱：灵活限制文件系统/网络；凭证对 Agent 不可见，由 egress proxy 在批准请求时注入（如 GitHub token）\n价值：策略与 harness 解耦，换 Agent 不换治理逻辑。\n3. Collaboration（协作）\n· 通过 URL 共享 live agent session\n· 多人同时查看 workspace 文件、评论、甚至发送命令\n· 同一 Agent 可从 terminal、Web、macOS 原生 App、mobile、REST API 访问\n· 可在本机或 Modal/Daytona 等托管沙箱中运行，便于安全协作\n价值：Agent session 从个人终端工具，变成可共享的协作 surface。\n为何 Databricks 认为这很重要？\n用 Kubernetes / Terraform 类比：工程师不再管单个进程/服务器，而是管整个 fleet。Agent 领域同理——\n模型和 harness 会持续变化；你工作的抽象层不应随之反复重建。\nMeta-harness 让 session、policy、skills 与具体 harness 解耦，形成可迁移的工作层。\nDatabricks\n@databricks\nJun 13\nIntroducing 𝗢𝗺𝗻𝗶𝗴𝗲𝗻𝘁, a meta-harness to combine, control, and share your agents.\nThe best teams already mix models and harnesses and design loops that drive teams of agents. No single harness can keep up with that alone. So we built the layer above — we call it a Show more\n1:06 AM · Jun 15, 2026 695 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3\nRead 2 replies\n\n## full_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nDatabricks 推出「Omnigent」\n团队认为：Agent 能力的瓶颈，正在从「模型/harness 本身」上移到「如何组合、治理、协作多个 Agent」。Omnigent 就是针对这一层的新抽象：meta-harness。\n它要解决什么问题？\nDatabricks 从自身实践出发（5000+ 工程师用 coding agent、对外交付 Genie 时开 4–5 个 Agent（Claude Code、Codex、Gemini 等），在 Agent、Docs、Slack 之间反复 copy-paste\n· 构建侧：新 harness、SDK、模型不断出现，换工具就要重写集成逻辑\n· 架构侧：高质量 Agent 系统已是「多模型 + 多 harness + 多人协作」，但每个 harness 只认自己的 session，彼此隔离\nOmnigent 是什么？\n基于现有 Agent（Claude Code、Codex、Pi、自研 Agent），提供统一接口、策略层和协作层。\n关键设计洞察：无论底层 harness 如何调用 LLM，对用户界面本质相同——messages + files in → text streams + tool calls out。Omnigent 据此抽象出通用 API，同时覆盖 CLI coding agent 和 SDK（OpenAI Agents、Claude Agents SDK 等）。\n三大能力支柱\n1. Composition（组合）\n· 一行配置切换 Claude Code <-> Codex <-> Pi <-> 自研 Agent\n· YAML 定义 custom agent，可跨 harness 移植\n· 同一 Agent 内可组合不同 harness 的 subagent\n内置 Polly（coding orchestrator）、Debby（model debate）示例\n价值：把「选哪个 harness」从架构决策降成配置决策。\n2. Control（控制）\n区别于 prompt 级 guardrail，Omnigent 在 meta 层做有状态、上下文感知的策略：\n· 成本策略：按 session 追踪 LLM 花费，例如每 $100 暂停并请求继续\n· 上下文安全策略：例如 npm 安装新包后，git push 需人工批准；Agent 只能写自己创建的 doc\n· OS 沙箱：灵活限制文件系统/网络；凭证对 Agent 不可见，由 egress proxy 在批准请求时注入（如 GitHub token）\n价值：策略与 harness 解耦，换 Agent 不换治理逻辑。\n3. Collaboration（协作）\n· 通过 URL 共享 live agent session\n· 多人同时查看 workspace 文件、评论、甚至发送命令\n· 同一 Agent 可从 terminal、Web、macOS 原生 App、mobile、REST API 访问\n· 可在本机或 Modal/Daytona 等托管沙箱中运行，便于安全协作\n价值：Agent session 从个人终端工具，变成可共享的协作 surface。\n为何 Databricks 认为这很重要？\n用 Kubernetes / Terraform 类比：工程师不再管单个进程/服务器，而是管整个 fleet。Agent 领域同理——\n模型和 harness 会持续变化；你工作的抽象层不应随之反复重建。\nMeta-harness 让 session、policy、skills 与具体 harness 解耦，形成可迁移的工作层。\nDatabricks\n@databricks\nJun 13\nIntroducing 𝗢𝗺𝗻𝗶𝗴𝗲𝗻𝘁, a meta-harness to combine, control, and share your agents.\nThe best teams already mix models and harnesses and design loops that drive teams of agents. No single harness can keep up with that alone. So we built the layer above — we call it a Show more\n1:06 AM · Jun 15, 2026 695 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3\nRead 2 replies\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 88\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Databricks 推出 Omnigent，一个开源（Apache 2.0）meta-harness，位于 Claude Code、Codex、Pi 及自研 Agent 之上，提供统一接口。三大能力：组合（一行配置切换不同 harness，YAML 定义跨 harness 可移植 agent，同一 Agent 内可组合不同 subagent）；控制（有状态成本策略如每 $100 暂停，安全策略如 npm 后 git push 需审批，OS 沙箱，策略与 harness 解耦）；协作（通过 URL 共享 live session，支持多端访问及实时评论）。理念类似 Kubernetes，让 session、policy 与具体 harness 解耦，形成可迁移工作层。\n2. [product_update / daily_observation, heatmap, change / high] Post Log in Sign up Post meng shao @shao__meng Databricks 推出「Omnigent」 团队认为：Agent 能力的瓶颈，正在从「模型/harness 本身」上移到「如何组合、治理、协作多个 Agent」。\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Omnigent 就是针对这一层的新抽象：meta-harness。\n4. [workflow_change / daily_observation, heatmap, change, case, trend / high] Databricks 从自身实践出发（5000+ 工程师用 coding agent、对外交付 Genie 时开 4–5 个 Agent（Claude Code、Codex、Gemini 等），在 Agent、Docs、Slack 之间反复 copy-paste · 构建侧：新 harness、SDK、模型不断出现，换工具就要重写集成逻辑 · 架构侧：高质量 Agent 系统已是「多模型 + 多 harness + 多人协作」，但每个 harness 只认自己的 session，彼此隔离 Omnigent 是什么？\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 基于现有 Agent（Claude Code、Codex、Pi、自研 Agent），提供统一接口、策略层和协作层。\n6. [company_action / daily_observation, heatmap, change, case, trend / high] 关键设计洞察：无论底层 harness 如何调用 LLM，对用户界面本质相同——messages + files in → text streams + tool calls out。\n"
+}

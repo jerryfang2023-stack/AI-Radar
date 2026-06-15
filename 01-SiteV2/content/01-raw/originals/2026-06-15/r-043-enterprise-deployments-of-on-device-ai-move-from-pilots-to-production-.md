@@ -1,0 +1,211 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-043
+title: "Enterprise Deployments of On-Device AI Move From Pilots to Production | Meta Currents"
+original_url: "https://metacurrents.com/articles/enterprise-deployments-of-on-device-ai-move-from-pilots-to-production/"
+canonical_url: "https://metacurrents.com/articles/enterprise-deployments-of-on-device-ai-move-from-pilots-to-production"
+source_name: "keyword search / Exa"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-27T18:15:00.000Z"
+collected_at: 2026-06-15T03:58:54.193Z
+language: mixed
+full_text_hash: 1c550df03bc13abf
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-043-enterprise-deployments-of-on-device-ai-move-from-pilots-to-production-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-15/r-043-enterprise-deployments-of-on-device-ai-move-from-pilots-to-production-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 86
+extractor_diagnostics: {"readability_score":86,"text_length":3432,"paragraph_count":9,"sentence_count":25,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 3432
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1c550df03bc13abf","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: b36f28b2a04a672b
+content_hash: 1c550df03bc13abf
+semantic_hash: d70ec2c3c58c470e
+duplicate_of: ""
+first_seen_at: "2026-05-27T18:15:00.000Z"
+last_seen_at: 2026-06-15T03:58:54.193Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Exa","Meta"],"products":[],"people":[],"industries":["制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"workflows":["计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","采购"],"numbers":[],"quotes":[]}
+evidence_seed: {"company_actions":["The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, more specialized models running on endpoints, edge servers, or on-premise infrastructure are absorbing workloads that until recently defaulted to large cloud services.","Several pressures are driving the shift."],"case_details":["Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, mor","Meta Currents Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models.","Latency requirements for real-time applications, particularly in manufacturing, logistics, and customer-facing voice interactions, often exceed what round-trip calls to remote servers can deliver reliably."],"workflow_changes":["Data residency rules in regulated industries push processing closer to where data originates."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有成本、收入、采用率或市场规模数字"]
+key_excerpts: [{"type":"case_detail","text":"Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, mor","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Meta Currents Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, more specialized models running on endpoints, edge servers, or on-premise infrastructure are absorbing workloads that until recently defaulted to large cloud services.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Several pressures are driving the shift.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Latency requirements for real-time applications, particularly in manufacturing, logistics, and customer-facing voice interactions, often exceed what round-trip calls to remote servers can deliver reliably.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Data residency rules in regulated industries push processing closer to where data originates.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Enterprise Deployments of On-Device AI Move From Pilots to Production | Meta Currents
+
+## clean_text
+
+Meta Currents
+Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, more specialized models running on endpoints, edge servers, or on-premise infrastructure are absorbing workloads that until recently defaulted to large cloud services.
+Several pressures are driving the shift. Latency requirements for real-time applications, particularly in manufacturing, logistics, and customer-facing voice interactions, often exceed what round-trip calls to remote servers can deliver reliably. Data residency rules in regulated industries push processing closer to where data originates. And unit economics, especially at high request volumes, increasingly favor local inference once amortization of hardware is factored in.
+Model engineering has caught up with these requirements more quickly than many enterprise architects expected. Open-weight models in size ranges that can run on standard server hardware, and in some cases on consumer-grade GPUs or specialized accelerators in endpoint devices, now deliver acceptable performance on a wide range of business tasks. Fine-tuning on domain-specific data has further closed the quality gap for narrow applications.
+The procurement picture is correspondingly more complicated. Enterprises now evaluate cloud AI services, on-premise model serving stacks, edge inference appliances, and embedded model deployments side by side. Reference architectures published by major vendors increasingly assume a hybrid pattern, with routing logic deciding where each request is best served based on cost, latency, sensitivity, and quality requirements.
+Operational considerations have become more demanding as a result. Managing model versions, monitoring drift, and applying security updates across distributed inference points is more involved than maintaining a single cloud-hosted service. Vendor offerings in the area of model lifecycle management on edge and endpoint devices have grown, but mature tooling remains a work in progress.
+Security teams describe both benefits and new exposures. Keeping sensitive inputs and outputs within enterprise boundaries reduces some categories of data risk. But proliferation of inference endpoints expands the attack surface, and protecting model weights and prompt templates from extraction has emerged as a recurring concern. Hardware-based isolation techniques are gaining attention as a partial mitigation.
+For chipmakers, the move toward distributed inference is reshaping product roadmaps. Demand for power-efficient accelerators capable of running modestly sized models at acceptable throughput is growing, and several vendors are introducing offerings explicitly targeted at on-premise and edge enterprise workloads rather than the largest training clusters.
+The cloud is not being displaced. Training of large models, serving of the largest production models, and elastic capacity for spike workloads remain natural fits for hyperscale infrastructure. What is changing is the share of total AI compute that flows through cloud services, and the assumption that cloud-only deployment is the default starting point for enterprise architecture.
+Note: This article was partially constructed using data from LLM.
+
+## full_text
+
+Meta Currents
+Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, more specialized models running on endpoints, edge servers, or on-premise infrastructure are absorbing workloads that until recently defaulted to large cloud services.
+Several pressures are driving the shift. Latency requirements for real-time applications, particularly in manufacturing, logistics, and customer-facing voice interactions, often exceed what round-trip calls to remote servers can deliver reliably. Data residency rules in regulated industries push processing closer to where data originates. And unit economics, especially at high request volumes, increasingly favor local inference once amortization of hardware is factored in.
+Model engineering has caught up with these requirements more quickly than many enterprise architects expected. Open-weight models in size ranges that can run on standard server hardware, and in some cases on consumer-grade GPUs or specialized accelerators in endpoint devices, now deliver acceptable performance on a wide range of business tasks. Fine-tuning on domain-specific data has further closed the quality gap for narrow applications.
+The procurement picture is correspondingly more complicated. Enterprises now evaluate cloud AI services, on-premise model serving stacks, edge inference appliances, and embedded model deployments side by side. Reference architectures published by major vendors increasingly assume a hybrid pattern, with routing logic deciding where each request is best served based on cost, latency, sensitivity, and quality requirements.
+Operational considerations have become more demanding as a result. Managing model versions, monitoring drift, and applying security updates across distributed inference points is more involved than maintaining a single cloud-hosted service. Vendor offerings in the area of model lifecycle management on edge and endpoint devices have grown, but mature tooling remains a work in progress.
+Security teams describe both benefits and new exposures. Keeping sensitive inputs and outputs within enterprise boundaries reduces some categories of data risk. But proliferation of inference endpoints expands the attack surface, and protecting model weights and prompt templates from extraction has emerged as a recurring concern. Hardware-based isolation techniques are gaining attention as a partial mitigation.
+For chipmakers, the move toward distributed inference is reshaping product roadmaps. Demand for power-efficient accelerators capable of running modestly sized models at acceptable throughput is growing, and several vendors are introducing offerings explicitly targeted at on-premise and edge enterprise workloads rather than the largest training clusters.
+The cloud is not being displaced. Training of large models, serving of the largest production models, and elastic capacity for spike workloads remain natural fits for hyperscale infrastructure. What is changing is the share of total AI compute that flows through cloud services, and the assumption that cloud-only deployment is the default starting point for enterprise architecture.
+Note: This article was partially constructed using data from LLM.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 86
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":86,"text_length":3432,"paragraph_count":9,"sentence_count":25,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, mor
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Meta Currents Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, more specialized models running on endpoints, edge servers, or on-premise infrastructure are absorbing workloads that until recently defaulted to large cloud services.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Several pressures are driving the shift.
+
+5. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Latency requirements for real-time applications, particularly in manufacturing, logistics, and customer-facing voice interactions, often exceed what round-trip calls to remote servers can deliver reliably.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Data residency rules in regulated industries push processing closer to where data originates.
+
+## business_elements
+
+- companies: keyword search, Exa, Meta
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 采购
+- numbers: 暂无公开信息
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, more specialized models running on endpoints, edge servers, or on-premise infrastructure are absorbing workloads that until recently defaulted to large cloud services. / Several pressures are driving the shift.
+- case_details: Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, mor / Meta Currents Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. / Latency requirements for real-time applications, particularly in manufacturing, logistics, and customer-facing voice interactions, often exceed what round-trip calls to remote servers can deliver reliably.
+- workflow_changes: Data residency rules in regulated industries push processing closer to where data originates.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有成本、收入、采用率或市场规模数字
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Enterprise deployments of artificial intelligence are quietly shifting toward configurations that run more inference on local hardware rather than relying exclusively on cloud-hosted models. The change is uneven across industries and use cases, but the direction of travel is consistent: smaller, mor
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
