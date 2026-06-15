@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="V2.2.1-title-polish">
+  <meta name="wavesight-ops-console-version" content="OPS-V1.0.0">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -59,6 +59,7 @@
     .brand { padding: 8px 10px 16px; color: var(--blue); }
     .brand strong { display: block; font-family: var(--serif); font-size: 18px; line-height: 1; letter-spacing: .02em; }
     .brand span { display: block; margin-top: 5px; font-size: 8px; font-weight: 600; letter-spacing: .26em; }
+    .brand small { display: block; margin-top: 8px; color: var(--faint); font-family: var(--mono); font-size: 10px; line-height: 1; letter-spacing: 0; }
     .nav { display: grid; gap: 4px; }
     .nav button {
       position: relative;
@@ -114,6 +115,7 @@
       transform: skewX(-14deg);
     }
     .shell.is-rail-collapsed .brand span { display: none; }
+    .shell.is-rail-collapsed .brand small { display: none; }
     .shell.is-rail-collapsed .nav button { justify-content: center; padding: 0; }
     .shell.is-rail-collapsed .nav-text { display: none; }
     .shell.is-rail-collapsed .nav-icon { width: 19px; height: 19px; }
@@ -460,7 +462,7 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V1.0.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="dashboard"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">运营仪表盘</span></button>
