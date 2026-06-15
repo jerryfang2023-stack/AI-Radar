@@ -10,7 +10,7 @@ const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
 const topicCenterHermesJsonPath = path.join(siteDataDir, "topic-center-hermes.json");
 const topicCenterHermesMdPath = path.join(siteDataDir, "topic-center-hermes.md");
-const topicCenterVersion = "V2.2.0-daily-topic-refresh";
+const topicCenterVersion = "V2.2.1-title-polish";
 
 const engines = [
   {
@@ -246,6 +246,43 @@ function metricOf(item, fallback = "") {
   return numberHint(`${item?.title || ""} ${item?.fact || ""} ${item?.summary || ""} ${item?.body || ""}`) || fallback;
 }
 
+function headlineSubject(item, fallback = "今天的 AI 信号") {
+  const raw = text(item?.title || item?.summary || item?.body || item?.fact || fallback);
+  const compact = raw.replace(/\s+/gu, " ");
+  const rules = [
+    [/Rocket Close/iu, "Rocket Close"],
+    [/Rippling/iu, "Rippling"],
+    [/Google.*搜索|搜索.*Google/iu, "Google 搜索"],
+    [/Willow/iu, "Willow"],
+    [/Jedify/iu, "Jedify"],
+    [/Mem0/iu, "Mem0"],
+    [/CuspAI/iu, "CuspAI"],
+    [/TCS|受监管行业/iu, "TCS × Claude"],
+    [/Gemini-SQL/iu, "Gemini-SQL"],
+    [/Claude Fable|FrontierMath/iu, "Claude Fable"],
+    [/幻觉|法官|律师|罚单/iu, "AI 幻觉罚单"],
+    [/Anthropic/iu, "Anthropic"],
+    [/公众号新人|30天变现/iu, "公众号新人 30 天变现"],
+    [/普通人.*1000万|1000万/iu, "普通人赚 1000 万"],
+    [/微信AI|微信 AI/iu, "微信 AI"],
+    [/地产开发|建筑设计/iu, "地产设计 AI Agent"],
+    [/引文45条|毕马威|报告.*不实/iu, "AI 报告翻车"],
+    [/工程师|软件工程师/iu, "AI 与软件工程师"],
+    [/评估工作台|模型开发循环/iu, "模型评估工作台"],
+  ];
+  const matched = rules.find(([pattern]) => pattern.test(compact));
+  if (matched) return matched[1];
+  return cleanSubject(compact, fallback, 16).replace(/…$/u, "");
+}
+
+function fundingHeadline(item) {
+  const subject = headlineSubject(item, "AI 融资");
+  const metric = metricOf(item, "");
+  if (metric && !subject.includes(metric)) return `${subject} ${metric}融资`;
+  if (/融资/u.test(subject)) return subject;
+  return `${subject}融资`;
+}
+
 function evidenceItem(kind, item) {
   if (!item) return null;
   return {
@@ -342,14 +379,20 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
   const contentSubject = subjectOf(contentCommunity || searchSignal, "内容流量");
   const productSubject = subjectOf(productCommunity || workflowSignal, "AI 服务机会");
   const storySubject = subjectOf(storyCommunity || skillViewpoint, "一线故事");
-  const fundingMetric = metricOf(fundingSignal, "一笔新钱");
-  const contentMetric = metricOf(contentCommunity, "");
+  const moneyHeadline = headlineSubject(searchSignal || serviceSignal || salesCommunity, "订单入口");
+  const serviceHeadline = headlineSubject(serviceSignal, "岗位级 AI");
+  const workflowHeadline = headlineSubject(workflowSignal || workflowCommunity, "企业流程 AI");
+  const governanceHeadline = headlineSubject(governanceSignal || governanceViewpoint, "AI 治理");
+  const fundingHeadlineText = fundingHeadline(fundingSignal);
+  const contentHeadline = headlineSubject(contentCommunity || searchSignal, "内容流量");
+  const storyHeadline = headlineSubject(storyCommunity || skillViewpoint, "一线故事");
+  const counterHeadline = headlineSubject(skillSignal || skillViewpoint, "任务拆解");
 
   return [
     topicPayload({
       engineId: "money_leak",
       date,
-      title: `${moneySubject}背后：老板先查订单入口有没有漏钱`,
+      title: `${moneyHeadline}：老板先查订单入口有没有漏钱`,
       core: "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
       relevance: `${detailOf(searchSignal || serviceSignal)}；社群里也出现了“${subjectOf(contentCommunity || salesCommunity, "获客案例")}”这类一线反馈。`,
       bossPain: "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
@@ -370,7 +413,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
     topicPayload({
       engineId: "save_headcount",
       date,
-      title: `${workflowSubject}给老板的提醒：别急着裁员，先少招重复岗位`,
+      title: `${workflowHeadline}：别急着裁员，先少招重复岗位`,
       core: "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
       relevance: `${detailOf(workflowSignal || workflowViewpoint)}；这类信号比“AI 很强”更接近老板的组织账。`,
       bossPain: "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
@@ -391,7 +434,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
     topicPayload({
       engineId: "peer_pressure",
       date,
-      title: `从${contentSubject}${contentMetric ? `的${contentMetric}` : ""}到${subjectOf(searchSignal || workflowSignal, "今天的商业信号")}：同行压力不在技术，在速度`,
+      title: `从${contentHeadline}，到 ${moneyHeadline}：同行压力不在技术，在速度`,
       core: "最能触发老板的不是技术解释，而是别人已经把 AI 用到获客、内容、交付、产品试错里，并且开始看到结果。",
       relevance: `${detailOf(contentCommunity || productCommunity)}；这类社群信号代表一线老板和操盘手已经在算产出。`,
       bossPain: "当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。",
@@ -412,7 +455,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
     topicPayload({
       engineId: "pitfall",
       date,
-      title: `${governanceSubject}背后：老板必须补上责任边界`,
+      title: `${governanceHeadline}：老板先补责任边界`,
       core: "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
       relevance: `${detailOf(governanceSignal || governanceViewpoint)}；这类信号适合写给老板看，因为它直接关系到业务风险。`,
       bossPain: "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
@@ -433,7 +476,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
     topicPayload({
       engineId: "counterintuitive",
       date,
-      title: `${subjectOf(skillSignal || skillViewpoint, "AI 没有替代人")}背后：老板真正该买的不是工具，是任务拆解能力`,
+      title: `${counterHeadline}：老板真正该买的不是工具，是任务拆解能力`,
       core: "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
       relevance: `${detailOf(skillSignal || skillViewpoint)}；社群里“${subjectOf(workflowCommunity || productCommunity, "该做什么")}”的讨论也在提醒老板，问题不再只是怎么做。`,
       bossPain: "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
@@ -454,7 +497,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
     topicPayload({
       engineId: "small_role",
       date,
-      title: `${serviceSubject}背后：小公司先做一个小岗位 AI 员工`,
+      title: `${serviceHeadline}：小公司先做一个小岗位 AI 员工`,
       core: "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
       relevance: `${detailOf(serviceSignal || workflowSignal)}；这类材料说明岗位级 AI 比大而全平台更容易落地。`,
       bossPain: "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
@@ -475,7 +518,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
     topicPayload({
       engineId: "big_small_contrast",
       date,
-      title: `${fundingSubject}${fundingMetric ? `拿到${fundingMetric}` : "又有新钱"}：普通老板该看见哪一层机会？`,
+      title: `${fundingHeadlineText}：普通老板该看见哪层机会？`,
       core: "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
       relevance: `${detailOf(fundingSignal)}；同时社群里的“${productSubject}”说明一线需求还在配置、流程和交付。`,
       bossPain: "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
@@ -496,7 +539,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
     topicPayload({
       engineId: "person_story",
       date,
-      title: `${storySubject}撞上${subjectOf(skillSignal || workflowSignal, "今天的 AI 信号")}：老板更愿意转发有场景的 AI 故事`,
+      title: `从${storyHeadline}，到 ${serviceHeadline}：有场景的 AI 故事更容易被老板转发`,
       core: "人物故事的价值不在鸡汤，而在把一个抽象趋势压缩成老板能看懂的场景、成本和选择。",
       relevance: `${detailOf(storyCommunity || skillViewpoint)}；这类材料适合做传播入口，再回到老板的业务判断。`,
       bossPain: "老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。",
