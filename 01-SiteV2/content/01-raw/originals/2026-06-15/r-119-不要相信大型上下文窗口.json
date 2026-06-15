@@ -1,0 +1,253 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-119",
+  "title": "不要相信大型上下文窗口",
+  "original_url": "https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows",
+  "canonical_url": "https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-14T10:37:56.201Z",
+  "collected_at": "2026-06-15T03:58:54.429Z",
+  "language": "mixed",
+  "full_text": "Don't trust large context windows\nMay 06 2026 # note # ai # llm # tech # practices\nI recently watched a video that put a name on something I'd been feeling. The author splits an LLM's context window into two zones. There's the smart zone , where the model is sharp, and the dumb zone , where attention drops off and the model starts forgetting what you told it five minutes ago. The cutoff sits somewhere around 100k tokens. It doesn't matter how big the advertised context window is.\nThis matters because coding agents will happily walk you straight into the dumb zone. A modern agent burns through tokens fast. A few file reads, a long debug session, a sprawling test run, and you're at 100k before lunch. Meanwhile vendors keep advertising windows of 200k, 1M, even 2M, as if those numbers represented a usable working set. They don't. Studies like RULER and Chroma's report on context rot show that effective context is a fraction of the advertised number, and that performance degrades gradually as you fill the window.\nLarge context windows are mostly a marketing number. The architectures behind them work, but they paper over a problem the underlying attention mechanism doesn't really solve. The number on the box gets bigger every release. The usable part doesn't keep up.\nModern agents are getting smart about this. Tools like Claude Code now auto-compact: when the session gets long, the agent summarizes the history and starts fresh. That helps. But auto-compaction kicks in after you've already spent time in the dumb zone, and the summary is itself produced by a model that's already degraded. Better than nothing, but I'd rather avoid the situation altogether.\nWhat I do is open a new session and pass it a spec I wrote myself. That's a much higher signal handoff than any automated summary, because I get to decide what matters going forward. It's the breadcrumb approach applied to agents. Leave an artifact that the next session, or the next person, can pick up cleanly.\nYou can take this further. Projects like obra/superpowers and mattpocock/skills structure entire agent workflows around small, named artifacts. PRDs, plans, skills, sub-agent handoffs. Each one is a way to keep the working session in the smart zone by deliberately moving information out of the session into something the next session can read.\nSo I treat my context window like a budget. I assume only the first chunk is really working for me, and everything I can move out of the live session and into a written artifact is one less thing for attention to fight over.\n💌️ Reply via E-Mail 🔗 Share ✏️ Fix Typo\nContinue Reading\nJun 13 2026\nPac-Man, but you're the ghost\nMay 29 2026\nFixing corrupted Home Assistant energy statistics\nFeb 13 2026\nn8n-nodes-open5e: n8n community node that lets you access D&D 5th edition SRD content\nFeb 04 2026\nA fix for long-pressing movement keys in VSCode with Vim-Mode\nFeb 03 2026\nThe Scientific Method",
+  "clean_text": "Don't trust large context windows\nMay 06 2026 # note # ai # llm # tech # practices\nI recently watched a video that put a name on something I'd been feeling. The author splits an LLM's context window into two zones. There's the smart zone , where the model is sharp, and the dumb zone , where attention drops off and the model starts forgetting what you told it five minutes ago. The cutoff sits somewhere around 100k tokens. It doesn't matter how big the advertised context window is.\nThis matters because coding agents will happily walk you straight into the dumb zone. A modern agent burns through tokens fast. A few file reads, a long debug session, a sprawling test run, and you're at 100k before lunch. Meanwhile vendors keep advertising windows of 200k, 1M, even 2M, as if those numbers represented a usable working set. They don't. Studies like RULER and Chroma's report on context rot show that effective context is a fraction of the advertised number, and that performance degrades gradually as you fill the window.\nLarge context windows are mostly a marketing number. The architectures behind them work, but they paper over a problem the underlying attention mechanism doesn't really solve. The number on the box gets bigger every release. The usable part doesn't keep up.\nModern agents are getting smart about this. Tools like Claude Code now auto-compact: when the session gets long, the agent summarizes the history and starts fresh. That helps. But auto-compaction kicks in after you've already spent time in the dumb zone, and the summary is itself produced by a model that's already degraded. Better than nothing, but I'd rather avoid the situation altogether.\nWhat I do is open a new session and pass it a spec I wrote myself. That's a much higher signal handoff than any automated summary, because I get to decide what matters going forward. It's the breadcrumb approach applied to agents. Leave an artifact that the next session, or the next person, can pick up cleanly.\nYou can take this further. Projects like obra/superpowers and mattpocock/skills structure entire agent workflows around small, named artifacts. PRDs, plans, skills, sub-agent handoffs. Each one is a way to keep the working session in the smart zone by deliberately moving information out of the session into something the next session can read.\nSo I treat my context window like a budget. I assume only the first chunk is really working for me, and everything I can move out of the live session and into a written artifact is one less thing for attention to fight over.\n💌️ Reply via E-Mail 🔗 Share ✏️ Fix Typo\nContinue Reading\nJun 13 2026\nPac-Man, but you're the ghost\nMay 29 2026\nFixing corrupted Home Assistant energy statistics\nFeb 13 2026\nn8n-nodes-open5e: n8n community node that lets you access D&D 5th edition SRD content\nFeb 04 2026\nA fix for long-pressing movement keys in VSCode with Vim-Mode\nFeb 03 2026\nThe Scientific Method",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-119-不要相信大型上下文窗口.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-119-不要相信大型上下文窗口.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 84,
+  "extractor_diagnostics": {
+    "readability_score": 84,
+    "text_length": 2928,
+    "paragraph_count": 15,
+    "sentence_count": 30,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 2928,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "6cd180f807dcd0a8",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "不要相信大型上下文窗口",
+    "discovery_summary": "Hacker News 热门文章以标题直指大型上下文窗口的可靠性问题，提醒用户不应盲目信任大语言模型宣称的上下文长度能力。文章未给出具体模型或数据，但这一警示在 AI 社区引发讨论。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows",
+    "discovered_at": "2026-06-15T03:52:39.456Z",
+    "rank_on_page": 130,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9e4b83f993657aa3",
+  "content_hash": "6cd180f807dcd0a8",
+  "full_text_hash": "6cd180f807dcd0a8",
+  "semantic_hash": "7ecb4a7fd1b4870e",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-14T10:37:56.201Z",
+  "last_seen_at": "2026-06-15T03:58:54.429Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "opinion",
+      "text": "Hacker News 热门文章以标题直指大型上下文窗口的可靠性问题，提醒用户不应盲目信任大语言模型宣称的上下文长度能力。文章未给出具体模型或数据，但这一警示在 AI 社区引发讨论。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Don't trust large context windows May 06 2026 # note # ai # llm # tech # practices I recently watched a video that put a name on something I'd been feeling.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The author splits an LLM's context window into two zones.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There's the smart zone , where the model is sharp, and the dumb zone , where attention drops off and the model starts forgetting what you told it five minutes ago.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The cutoff sits somewhere around 100k tokens.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It doesn't matter how big the advertised context window is.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "06",
+      "2026",
+      "100",
+      "200",
+      "1M",
+      "2M",
+      "13",
+      "29"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Don't trust large context windows May 06 2026 # note # ai # llm # tech # practices I recently watched a video that put a name on something I'd been feeling.",
+      "The author splits an LLM's context window into two zones.",
+      "There's the smart zone , where the model is sharp, and the dumb zone , where attention drops off and the model starts forgetting what you told it five minutes ago."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 4,
+    "importance_reason": "vertical industry solution; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 不要相信大型上下文窗口\n\n- raw_id: R-119\n- original_url: https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-15T03:58:54.429Z\n\n## clean_text\n\nDon't trust large context windows\nMay 06 2026 # note # ai # llm # tech # practices\nI recently watched a video that put a name on something I'd been feeling. The author splits an LLM's context window into two zones. There's the smart zone , where the model is sharp, and the dumb zone , where attention drops off and the model starts forgetting what you told it five minutes ago. The cutoff sits somewhere around 100k tokens. It doesn't matter how big the advertised context window is.\nThis matters because coding agents will happily walk you straight into the dumb zone. A modern agent burns through tokens fast. A few file reads, a long debug session, a sprawling test run, and you're at 100k before lunch. Meanwhile vendors keep advertising windows of 200k, 1M, even 2M, as if those numbers represented a usable working set. They don't. Studies like RULER and Chroma's report on context rot show that effective context is a fraction of the advertised number, and that performance degrades gradually as you fill the window.\nLarge context windows are mostly a marketing number. The architectures behind them work, but they paper over a problem the underlying attention mechanism doesn't really solve. The number on the box gets bigger every release. The usable part doesn't keep up.\nModern agents are getting smart about this. Tools like Claude Code now auto-compact: when the session gets long, the agent summarizes the history and starts fresh. That helps. But auto-compaction kicks in after you've already spent time in the dumb zone, and the summary is itself produced by a model that's already degraded. Better than nothing, but I'd rather avoid the situation altogether.\nWhat I do is open a new session and pass it a spec I wrote myself. That's a much higher signal handoff than any automated summary, because I get to decide what matters going forward. It's the breadcrumb approach applied to agents. Leave an artifact that the next session, or the next person, can pick up cleanly.\nYou can take this further. Projects like obra/superpowers and mattpocock/skills structure entire agent workflows around small, named artifacts. PRDs, plans, skills, sub-agent handoffs. Each one is a way to keep the working session in the smart zone by deliberately moving information out of the session into something the next session can read.\nSo I treat my context window like a budget. I assume only the first chunk is really working for me, and everything I can move out of the live session and into a written artifact is one less thing for attention to fight over.\n💌️ Reply via E-Mail 🔗 Share ✏️ Fix Typo\nContinue Reading\nJun 13 2026\nPac-Man, but you're the ghost\nMay 29 2026\nFixing corrupted Home Assistant energy statistics\nFeb 13 2026\nn8n-nodes-open5e: n8n community node that lets you access D&D 5th edition SRD content\nFeb 04 2026\nA fix for long-pressing movement keys in VSCode with Vim-Mode\nFeb 03 2026\nThe Scientific Method\n\n## full_text\n\nDon't trust large context windows\nMay 06 2026 # note # ai # llm # tech # practices\nI recently watched a video that put a name on something I'd been feeling. The author splits an LLM's context window into two zones. There's the smart zone , where the model is sharp, and the dumb zone , where attention drops off and the model starts forgetting what you told it five minutes ago. The cutoff sits somewhere around 100k tokens. It doesn't matter how big the advertised context window is.\nThis matters because coding agents will happily walk you straight into the dumb zone. A modern agent burns through tokens fast. A few file reads, a long debug session, a sprawling test run, and you're at 100k before lunch. Meanwhile vendors keep advertising windows of 200k, 1M, even 2M, as if those numbers represented a usable working set. They don't. Studies like RULER and Chroma's report on context rot show that effective context is a fraction of the advertised number, and that performance degrades gradually as you fill the window.\nLarge context windows are mostly a marketing number. The architectures behind them work, but they paper over a problem the underlying attention mechanism doesn't really solve. The number on the box gets bigger every release. The usable part doesn't keep up.\nModern agents are getting smart about this. Tools like Claude Code now auto-compact: when the session gets long, the agent summarizes the history and starts fresh. That helps. But auto-compaction kicks in after you've already spent time in the dumb zone, and the summary is itself produced by a model that's already degraded. Better than nothing, but I'd rather avoid the situation altogether.\nWhat I do is open a new session and pass it a spec I wrote myself. That's a much higher signal handoff than any automated summary, because I get to decide what matters going forward. It's the breadcrumb approach applied to agents. Leave an artifact that the next session, or the next person, can pick up cleanly.\nYou can take this further. Projects like obra/superpowers and mattpocock/skills structure entire agent workflows around small, named artifacts. PRDs, plans, skills, sub-agent handoffs. Each one is a way to keep the working session in the smart zone by deliberately moving information out of the session into something the next session can read.\nSo I treat my context window like a budget. I assume only the first chunk is really working for me, and everything I can move out of the live session and into a written artifact is one less thing for attention to fight over.\n💌️ Reply via E-Mail 🔗 Share ✏️ Fix Typo\nContinue Reading\nJun 13 2026\nPac-Man, but you're the ghost\nMay 29 2026\nFixing corrupted Home Assistant energy statistics\nFeb 13 2026\nn8n-nodes-open5e: n8n community node that lets you access D&D 5th edition SRD content\nFeb 04 2026\nA fix for long-pressing movement keys in VSCode with Vim-Mode\nFeb 03 2026\nThe Scientific Method\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 84\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [opinion / daily_observation, heatmap, viewpoint / medium] Hacker News 热门文章以标题直指大型上下文窗口的可靠性问题，提醒用户不应盲目信任大语言模型宣称的上下文长度能力。文章未给出具体模型或数据，但这一警示在 AI 社区引发讨论。\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] Don't trust large context windows May 06 2026 # note # ai # llm # tech # practices I recently watched a video that put a name on something I'd been feeling.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] The author splits an LLM's context window into two zones.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] There's the smart zone , where the model is sharp, and the dumb zone , where attention drops off and the model starts forgetting what you told it five minutes ago.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] The cutoff sits somewhere around 100k tokens.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] It doesn't matter how big the advertised context window is.\n"
+}

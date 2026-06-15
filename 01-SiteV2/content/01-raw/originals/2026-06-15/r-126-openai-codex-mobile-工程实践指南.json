@@ -1,0 +1,263 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-126",
+  "title": "OpenAI Codex Mobile 工程实践指南",
+  "original_url": "https://x.com/shao__meng/status/2066319268933988686",
+  "canonical_url": "https://x.com/shao__meng/status/2066319268933988686",
+  "source_name": "X：邵猛 (@shao__meng)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-15T00:37:58.000Z",
+  "collected_at": "2026-06-15T03:58:54.484Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nOpenAI Codex Mobile 工程实践指南\n@ Dimillian 提出了 Codex Mobile 核心心智模型：\n手机不只是缩小版终端，它是远程开发机的「控制中心」。\n· 代码执行、任务运行仍在 Mac / Windows / devbox 等已连接主机上完成\n· 手机提供原生 UI，用于启动、引导、审查、组织工程工作\n· 出关键决策」\n# 任务启动：先定边界，再发 prompt\n好 agent 工作的前提是正确隔离的执行环境。Codex Mobile 在创建新 thread 时可配置：\n· 选择主机与工作区：指定在哪台机器、哪个项目跑\n· 选择 Git 分支：从正确基线出发，避免事后修 Git 状态\n· 创建独立 worktree：隔离变更，不污染当前 checkout\n· 运行 environment setup 脚本：worktree 创建后自动执行桌面端配置的初始化脚本\n三种典型模式：\n1. 用当前 checkout → 快速调查\n2. 新建 worktree → 需要隔离的改动\n3. 从目标 base branch 起步 → 避免后续 merge 混乱\n限制：environment 脚本目前不能在 Mobile 上编辑，需在 Desktop 配置。\n# Side Chat：主线程做活，旁路线程理解\n长线程会积累大量上下文；每个旁路问题都打断主线程，会让 transcript 变噪、agent 偏离目标。\nSide chat 的定位：与当前 thread 关联的轻量对话，不抢占主工作流。\n· /side 或 /side <prompt> 打开\n· 选中 transcript 文本 → Ask in side chat，选中内容成为起始上下文\n适合的问题类型：\n· 为什么选这种架构？\n· 这个 error 实际含义？\n· 与 desktop 行为是否一致？\n· 生成 release note 版说明\n· 批准这条命令前应验证什么？\n分工： 主 thread 负责执行；side chat 负责理解与决策辅助。\n# Plan 与 Goal：路径 vs 结果\n两者解决不同问题：\n· Plan mode：「怎么实现？」，任务欠规格、风险高、跨多系统\n· Goal：「完成标准是什么？」，需多轮迭代的 durable 目标\n推荐工作流：\n1. 高风险任务 → 先 Plan，审查边界\n2. 方案确认后 → 转为 Goal，让 agent 跨实现、测试、review、清理持续推进\n3. 实操中常跳过显式 Plan：先与 Codex 讨论细节，满意后让 Codex 自己写 Goal（通常比人工写更好）\nGoal 写法注意： 设定可验证、不过宽的终态。过于绝对的要求（如「100% 像 X 或 Y」）容易导致过度执行、浪费 token。Mobile 端现已可监控 token 消耗，但仍应控制 Goal 粒度。\nMobile 对 /goal、/plan 支持完整：可见运行时长、编辑、暂停；Plan 工具的问题也会在 UI 中展示。\n# Mobile 独有优势：别忘记「你在用手机」\nComposer 内置访问本地手机数据的能力，这是桌面端没有的：\n· 拍照 / 选图 / 浏览文件\n· 语音录制 prompt（后台持续录音：切到其他 app 时 dictation 不中断）\n典型场景（作者做 ChatGPT iOS 的经验）：\n· 发现问题 → 直接截图发给 Codex thread → 快速修复，无需回电脑\n· 同 Wi-Fi 下 → 在真机构建运行，直接验证 Codex 改动结果\n· 边用 app 边口述 10 分钟问题 → 回 Codex 发送，形成「Talk to phone → app appears」闭环\nPinned 长线程： 例如绑定 Linear tracker 的 thread，随手粘贴文本即可按当前上下文正确建 issue、打标签。\n# Mobile 代码审查：不必等回工位\nCompleted turn 可展示变更文件摘要，支持：\n· 打开 diff、展开/折叠、换行\n· 查看带语法高亮的源文件\n· 行内评论 → 自动汇入 composer，发回 Codex\n分层用法：\n1. 变更摘要 → 快速 sanity check\n2. 完整 diff / 源文件 → 缺上下文时深入\n3. Inline comment → 精确修正\n4. review 命令 → 审查本地变更或与分支对比\n5. 链接文件回 chat → 让 Codex 针对特定文件推理\n关键洞察： 手机不能替代大屏做深度 code reading，但很多 review 卡在一两个决策点——这些决策不必等到回 desk。\nThomas Ricouard\n@Dimillian\n19h\nArticle\nMastering Codex (Mobile) for Engineering\nHow to turn your phone into a Codex control center??\nAt first glance, it looks like a way to check on a Codex task from your phone. That is useful, but it misses the bigger idea. The power of Codex...\n12:37 AM · Jun 15, 2026 1.6K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17",
+  "clean_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nOpenAI Codex Mobile 工程实践指南\n@ Dimillian 提出了 Codex Mobile 核心心智模型：\n手机不只是缩小版终端，它是远程开发机的「控制中心」。\n· 代码执行、任务运行仍在 Mac / Windows / devbox 等已连接主机上完成\n· 手机提供原生 UI，用于启动、引导、审查、组织工程工作\n· 出关键决策」\n# 任务启动：先定边界，再发 prompt\n好 agent 工作的前提是正确隔离的执行环境。Codex Mobile 在创建新 thread 时可配置：\n· 选择主机与工作区：指定在哪台机器、哪个项目跑\n· 选择 Git 分支：从正确基线出发，避免事后修 Git 状态\n· 创建独立 worktree：隔离变更，不污染当前 checkout\n· 运行 environment setup 脚本：worktree 创建后自动执行桌面端配置的初始化脚本\n三种典型模式：\n1. 用当前 checkout → 快速调查\n2. 新建 worktree → 需要隔离的改动\n3. 从目标 base branch 起步 → 避免后续 merge 混乱\n限制：environment 脚本目前不能在 Mobile 上编辑，需在 Desktop 配置。\n# Side Chat：主线程做活，旁路线程理解\n长线程会积累大量上下文；每个旁路问题都打断主线程，会让 transcript 变噪、agent 偏离目标。\nSide chat 的定位：与当前 thread 关联的轻量对话，不抢占主工作流。\n· /side 或 /side <prompt> 打开\n· 选中 transcript 文本 → Ask in side chat，选中内容成为起始上下文\n适合的问题类型：\n· 为什么选这种架构？\n· 这个 error 实际含义？\n· 与 desktop 行为是否一致？\n· 生成 release note 版说明\n· 批准这条命令前应验证什么？\n分工： 主 thread 负责执行；side chat 负责理解与决策辅助。\n# Plan 与 Goal：路径 vs 结果\n两者解决不同问题：\n· Plan mode：「怎么实现？」，任务欠规格、风险高、跨多系统\n· Goal：「完成标准是什么？」，需多轮迭代的 durable 目标\n推荐工作流：\n1. 高风险任务 → 先 Plan，审查边界\n2. 方案确认后 → 转为 Goal，让 agent 跨实现、测试、review、清理持续推进\n3. 实操中常跳过显式 Plan：先与 Codex 讨论细节，满意后让 Codex 自己写 Goal（通常比人工写更好）\nGoal 写法注意： 设定可验证、不过宽的终态。过于绝对的要求（如「100% 像 X 或 Y」）容易导致过度执行、浪费 token。Mobile 端现已可监控 token 消耗，但仍应控制 Goal 粒度。\nMobile 对 /goal、/plan 支持完整：可见运行时长、编辑、暂停；Plan 工具的问题也会在 UI 中展示。\n# Mobile 独有优势：别忘记「你在用手机」\nComposer 内置访问本地手机数据的能力，这是桌面端没有的：\n· 拍照 / 选图 / 浏览文件\n· 语音录制 prompt（后台持续录音：切到其他 app 时 dictation 不中断）\n典型场景（作者做 ChatGPT iOS 的经验）：\n· 发现问题 → 直接截图发给 Codex thread → 快速修复，无需回电脑\n· 同 Wi-Fi 下 → 在真机构建运行，直接验证 Codex 改动结果\n· 边用 app 边口述 10 分钟问题 → 回 Codex 发送，形成「Talk to phone → app appears」闭环\nPinned 长线程： 例如绑定 Linear tracker 的 thread，随手粘贴文本即可按当前上下文正确建 issue、打标签。\n# Mobile 代码审查：不必等回工位\nCompleted turn 可展示变更文件摘要，支持：\n· 打开 diff、展开/折叠、换行\n· 查看带语法高亮的源文件\n· 行内评论 → 自动汇入 composer，发回 Codex\n分层用法：\n1. 变更摘要 → 快速 sanity check\n2. 完整 diff / 源文件 → 缺上下文时深入\n3. Inline comment → 精确修正\n4. review 命令 → 审查本地变更或与分支对比\n5. 链接文件回 chat → 让 Codex 针对特定文件推理\n关键洞察： 手机不能替代大屏做深度 code reading，但很多 review 卡在一两个决策点——这些决策不必等到回 desk。\nThomas Ricouard\n@Dimillian\n19h\nArticle\nMastering Codex (Mobile) for Engineering\nHow to turn your phone into a Codex control center??\nAt first glance, it looks like a way to check on a Codex task from your phone. That is useful, but it misses the bigger idea. The power of Codex...\n12:37 AM · Jun 15, 2026 1.6K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-126-openai-codex-mobile-工程实践指南.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-126-openai-codex-mobile-工程实践指南.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 92,
+  "extractor_diagnostics": {
+    "readability_score": 92,
+    "text_length": 3955,
+    "paragraph_count": 54,
+    "sentence_count": 28,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0124,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3955,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "39fecf41eb9a6931",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "X：邵猛 (@shao__meng)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "OpenAI Codex Mobile 工程实践指南",
+    "discovery_summary": "手机是远程开发机\"控制中心\"，代码执行在主机。任务启动可配主机、工作区、Git分支，创建独立worktree并自动执行环境脚本。Side Chat提供轻量旁路对话，不打断主线程。Plan模式用于高风险任务规划，Goal模式设定可验证终态。手机独有优势包括拍照截图、后台持续录音语音prompt、真机构建验证。代码审查支持diff查看、语法高亮、行内评论，不必等回工位。",
+    "source_name": "X：邵猛 (@shao__meng)",
+    "origin_url": "https://x.com/shao__meng/status/2066319268933988686",
+    "discovered_at": "2026-06-15T03:52:39.437Z",
+    "rank_on_page": 33,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "592a1c72d5859241",
+  "content_hash": "39fecf41eb9a6931",
+  "full_text_hash": "39fecf41eb9a6931",
+  "semantic_hash": "05176314a32c5c81",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-15T00:37:58.000Z",
+  "last_seen_at": "2026-06-15T03:58:54.484Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "手机是远程开发机\"控制中心\"，代码执行在主机。任务启动可配主机、工作区、Git分支，创建独立worktree并自动执行环境脚本。Side Chat提供轻量旁路对话，不打断主线程。Plan模式用于高风险任务规划，Goal模式设定可验证终态。手机独有优势包括拍照截图、后台持续录音语音prompt、真机构建验证。代码审查支持diff查看、语法高亮、行内评论，不必等回工位。",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Post Log in Sign up Post meng shao @shao__meng OpenAI Codex Mobile 工程实践指南 @ Dimillian 提出了 Codex Mobile 核心心智模型： 手机不只是缩小版终端，它是远程开发机的「控制中心」。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "· 代码执行、任务运行仍在 Mac / Windows / devbox 等已连接主机上完成 · 手机提供原生 UI，用于启动、引导、审查、组织工程工作 · 出关键决策」 # 任务启动：先定边界，再发 prompt 好 agent 工作的前提是正确隔离的执行环境。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Codex Mobile 在创建新 thread 时可配置： · 选择主机与工作区：指定在哪台机器、哪个项目跑 · 选择 Git 分支：从正确基线出发，避免事后修 Git 状态 · 创建独立 worktree：隔离变更，不污染当前 checkout · 运行 environment setup 脚本：worktree 创建后自动执行桌面端配置的初始化脚本 三种典型模式： 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "用当前 checkout → 快速调查 2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "新建 worktree → 需要隔离的改动 3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "邵猛 (@shao__meng)",
+      "OpenAI"
+    ],
+    "products": [
+      "Codex",
+      "agent",
+      "ChatGPT"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "1",
+      "2",
+      "3",
+      "100%",
+      "10",
+      "4",
+      "5",
+      "19"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post meng shao @shao__meng OpenAI Codex Mobile 工程实践指南 @ Dimillian 提出了 Codex Mobile 核心心智模型： 手机不只是缩小版终端，它是远程开发机的「控制中心」。",
+      "· 代码执行、任务运行仍在 Mac / Windows / devbox 等已连接主机上完成 · 手机提供原生 UI，用于启动、引导、审查、组织工程工作 · 出关键决策」 # 任务启动：先定边界，再发 prompt 好 agent 工作的前提是正确隔离的执行环境。",
+      "Codex Mobile 在创建新 thread 时可配置： · 选择主机与工作区：指定在哪台机器、哪个项目跑 · 选择 Git 分支：从正确基线出发，避免事后修 Git 状态 · 创建独立 worktree：隔离变更，不污染当前 checkout · 运行 environment setup 脚本：worktree 创建后自动执行桌面端配置的初始化脚本 三种典型模式： 1."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "手机是远程开发机\"控制中心\"，代码执行在主机。任务启动可配主机、工作区、Git分支，创建独立worktree并自动执行环境脚本。Side Chat提供轻量旁路对话，不打断主线程。Plan模式用于高风险任务规划，Goal模式设定可验证终态。手机独有优势包括拍照截图、后台持续录音语音prompt、真机构建验证。代码审查支持diff查看、语法高亮、行内评论，不必等回工位。"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# OpenAI Codex Mobile 工程实践指南\n\n- raw_id: R-126\n- original_url: https://x.com/shao__meng/status/2066319268933988686\n- source_name: X：邵猛 (@shao__meng)\n- collected_at: 2026-06-15T03:58:54.484Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nOpenAI Codex Mobile 工程实践指南\n@ Dimillian 提出了 Codex Mobile 核心心智模型：\n手机不只是缩小版终端，它是远程开发机的「控制中心」。\n· 代码执行、任务运行仍在 Mac / Windows / devbox 等已连接主机上完成\n· 手机提供原生 UI，用于启动、引导、审查、组织工程工作\n· 出关键决策」\n# 任务启动：先定边界，再发 prompt\n好 agent 工作的前提是正确隔离的执行环境。Codex Mobile 在创建新 thread 时可配置：\n· 选择主机与工作区：指定在哪台机器、哪个项目跑\n· 选择 Git 分支：从正确基线出发，避免事后修 Git 状态\n· 创建独立 worktree：隔离变更，不污染当前 checkout\n· 运行 environment setup 脚本：worktree 创建后自动执行桌面端配置的初始化脚本\n三种典型模式：\n1. 用当前 checkout → 快速调查\n2. 新建 worktree → 需要隔离的改动\n3. 从目标 base branch 起步 → 避免后续 merge 混乱\n限制：environment 脚本目前不能在 Mobile 上编辑，需在 Desktop 配置。\n# Side Chat：主线程做活，旁路线程理解\n长线程会积累大量上下文；每个旁路问题都打断主线程，会让 transcript 变噪、agent 偏离目标。\nSide chat 的定位：与当前 thread 关联的轻量对话，不抢占主工作流。\n· /side 或 /side <prompt> 打开\n· 选中 transcript 文本 → Ask in side chat，选中内容成为起始上下文\n适合的问题类型：\n· 为什么选这种架构？\n· 这个 error 实际含义？\n· 与 desktop 行为是否一致？\n· 生成 release note 版说明\n· 批准这条命令前应验证什么？\n分工： 主 thread 负责执行；side chat 负责理解与决策辅助。\n# Plan 与 Goal：路径 vs 结果\n两者解决不同问题：\n· Plan mode：「怎么实现？」，任务欠规格、风险高、跨多系统\n· Goal：「完成标准是什么？」，需多轮迭代的 durable 目标\n推荐工作流：\n1. 高风险任务 → 先 Plan，审查边界\n2. 方案确认后 → 转为 Goal，让 agent 跨实现、测试、review、清理持续推进\n3. 实操中常跳过显式 Plan：先与 Codex 讨论细节，满意后让 Codex 自己写 Goal（通常比人工写更好）\nGoal 写法注意： 设定可验证、不过宽的终态。过于绝对的要求（如「100% 像 X 或 Y」）容易导致过度执行、浪费 token。Mobile 端现已可监控 token 消耗，但仍应控制 Goal 粒度。\nMobile 对 /goal、/plan 支持完整：可见运行时长、编辑、暂停；Plan 工具的问题也会在 UI 中展示。\n# Mobile 独有优势：别忘记「你在用手机」\nComposer 内置访问本地手机数据的能力，这是桌面端没有的：\n· 拍照 / 选图 / 浏览文件\n· 语音录制 prompt（后台持续录音：切到其他 app 时 dictation 不中断）\n典型场景（作者做 ChatGPT iOS 的经验）：\n· 发现问题 → 直接截图发给 Codex thread → 快速修复，无需回电脑\n· 同 Wi-Fi 下 → 在真机构建运行，直接验证 Codex 改动结果\n· 边用 app 边口述 10 分钟问题 → 回 Codex 发送，形成「Talk to phone → app appears」闭环\nPinned 长线程： 例如绑定 Linear tracker 的 thread，随手粘贴文本即可按当前上下文正确建 issue、打标签。\n# Mobile 代码审查：不必等回工位\nCompleted turn 可展示变更文件摘要，支持：\n· 打开 diff、展开/折叠、换行\n· 查看带语法高亮的源文件\n· 行内评论 → 自动汇入 composer，发回 Codex\n分层用法：\n1. 变更摘要 → 快速 sanity check\n2. 完整 diff / 源文件 → 缺上下文时深入\n3. Inline comment → 精确修正\n4. review 命令 → 审查本地变更或与分支对比\n5. 链接文件回 chat → 让 Codex 针对特定文件推理\n关键洞察： 手机不能替代大屏做深度 code reading，但很多 review 卡在一两个决策点——这些决策不必等到回 desk。\nThomas Ricouard\n@Dimillian\n19h\nArticle\nMastering Codex (Mobile) for Engineering\nHow to turn your phone into a Codex control center??\nAt first glance, it looks like a way to check on a Codex task from your phone. That is useful, but it misses the bigger idea. The power of Codex...\n12:37 AM · Jun 15, 2026 1.6K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17\n\n## full_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nOpenAI Codex Mobile 工程实践指南\n@ Dimillian 提出了 Codex Mobile 核心心智模型：\n手机不只是缩小版终端，它是远程开发机的「控制中心」。\n· 代码执行、任务运行仍在 Mac / Windows / devbox 等已连接主机上完成\n· 手机提供原生 UI，用于启动、引导、审查、组织工程工作\n· 出关键决策」\n# 任务启动：先定边界，再发 prompt\n好 agent 工作的前提是正确隔离的执行环境。Codex Mobile 在创建新 thread 时可配置：\n· 选择主机与工作区：指定在哪台机器、哪个项目跑\n· 选择 Git 分支：从正确基线出发，避免事后修 Git 状态\n· 创建独立 worktree：隔离变更，不污染当前 checkout\n· 运行 environment setup 脚本：worktree 创建后自动执行桌面端配置的初始化脚本\n三种典型模式：\n1. 用当前 checkout → 快速调查\n2. 新建 worktree → 需要隔离的改动\n3. 从目标 base branch 起步 → 避免后续 merge 混乱\n限制：environment 脚本目前不能在 Mobile 上编辑，需在 Desktop 配置。\n# Side Chat：主线程做活，旁路线程理解\n长线程会积累大量上下文；每个旁路问题都打断主线程，会让 transcript 变噪、agent 偏离目标。\nSide chat 的定位：与当前 thread 关联的轻量对话，不抢占主工作流。\n· /side 或 /side <prompt> 打开\n· 选中 transcript 文本 → Ask in side chat，选中内容成为起始上下文\n适合的问题类型：\n· 为什么选这种架构？\n· 这个 error 实际含义？\n· 与 desktop 行为是否一致？\n· 生成 release note 版说明\n· 批准这条命令前应验证什么？\n分工： 主 thread 负责执行；side chat 负责理解与决策辅助。\n# Plan 与 Goal：路径 vs 结果\n两者解决不同问题：\n· Plan mode：「怎么实现？」，任务欠规格、风险高、跨多系统\n· Goal：「完成标准是什么？」，需多轮迭代的 durable 目标\n推荐工作流：\n1. 高风险任务 → 先 Plan，审查边界\n2. 方案确认后 → 转为 Goal，让 agent 跨实现、测试、review、清理持续推进\n3. 实操中常跳过显式 Plan：先与 Codex 讨论细节，满意后让 Codex 自己写 Goal（通常比人工写更好）\nGoal 写法注意： 设定可验证、不过宽的终态。过于绝对的要求（如「100% 像 X 或 Y」）容易导致过度执行、浪费 token。Mobile 端现已可监控 token 消耗，但仍应控制 Goal 粒度。\nMobile 对 /goal、/plan 支持完整：可见运行时长、编辑、暂停；Plan 工具的问题也会在 UI 中展示。\n# Mobile 独有优势：别忘记「你在用手机」\nComposer 内置访问本地手机数据的能力，这是桌面端没有的：\n· 拍照 / 选图 / 浏览文件\n· 语音录制 prompt（后台持续录音：切到其他 app 时 dictation 不中断）\n典型场景（作者做 ChatGPT iOS 的经验）：\n· 发现问题 → 直接截图发给 Codex thread → 快速修复，无需回电脑\n· 同 Wi-Fi 下 → 在真机构建运行，直接验证 Codex 改动结果\n· 边用 app 边口述 10 分钟问题 → 回 Codex 发送，形成「Talk to phone → app appears」闭环\nPinned 长线程： 例如绑定 Linear tracker 的 thread，随手粘贴文本即可按当前上下文正确建 issue、打标签。\n# Mobile 代码审查：不必等回工位\nCompleted turn 可展示变更文件摘要，支持：\n· 打开 diff、展开/折叠、换行\n· 查看带语法高亮的源文件\n· 行内评论 → 自动汇入 composer，发回 Codex\n分层用法：\n1. 变更摘要 → 快速 sanity check\n2. 完整 diff / 源文件 → 缺上下文时深入\n3. Inline comment → 精确修正\n4. review 命令 → 审查本地变更或与分支对比\n5. 链接文件回 chat → 让 Codex 针对特定文件推理\n关键洞察： 手机不能替代大屏做深度 code reading，但很多 review 卡在一两个决策点——这些决策不必等到回 desk。\nThomas Ricouard\n@Dimillian\n19h\nArticle\nMastering Codex (Mobile) for Engineering\nHow to turn your phone into a Codex control center??\nAt first glance, it looks like a way to check on a Codex task from your phone. That is useful, but it misses the bigger idea. The power of Codex...\n12:37 AM · Jun 15, 2026 1.6K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 92\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [supporting_context / daily_observation, heatmap / medium] 手机是远程开发机\"控制中心\"，代码执行在主机。任务启动可配主机、工作区、Git分支，创建独立worktree并自动执行环境脚本。Side Chat提供轻量旁路对话，不打断主线程。Plan模式用于高风险任务规划，Goal模式设定可验证终态。手机独有优势包括拍照截图、后台持续录音语音prompt、真机构建验证。代码审查支持diff查看、语法高亮、行内评论，不必等回工位。\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] Post Log in Sign up Post meng shao @shao__meng OpenAI Codex Mobile 工程实践指南 @ Dimillian 提出了 Codex Mobile 核心心智模型： 手机不只是缩小版终端，它是远程开发机的「控制中心」。\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] · 代码执行、任务运行仍在 Mac / Windows / devbox 等已连接主机上完成 · 手机提供原生 UI，用于启动、引导、审查、组织工程工作 · 出关键决策」 # 任务启动：先定边界，再发 prompt 好 agent 工作的前提是正确隔离的执行环境。\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] Codex Mobile 在创建新 thread 时可配置： · 选择主机与工作区：指定在哪台机器、哪个项目跑 · 选择 Git 分支：从正确基线出发，避免事后修 Git 状态 · 创建独立 worktree：隔离变更，不污染当前 checkout · 运行 environment setup 脚本：worktree 创建后自动执行桌面端配置的初始化脚本 三种典型模式： 1.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] 用当前 checkout → 快速调查 2.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] 新建 worktree → 需要隔离的改动 3.\n"
+}

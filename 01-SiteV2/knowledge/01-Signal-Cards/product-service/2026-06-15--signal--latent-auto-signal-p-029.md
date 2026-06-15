@@ -1,0 +1,88 @@
+---
+id: SIG-20260615-A08
+type: signal_card
+signal_type: product_service
+title: "Latent 发布 AI 基础设施能力，切入模型部署和算力服务"
+date: 2026-06-15
+status: published
+source_title: "State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-15T03:58:54.936Z
+updated_at: 2026-06-15T03:58:54.936Z
+
+raw_refs: ["R-039", "R-044", "R-047"]
+pool_refs: ["P-029", "P-034", "P-037"]
+merged_updates:
+  - date: 2026-06-15
+    pool_ref: P-034
+    raw_ref: R-044
+    source_url: "https://www.latent.space/p/video-agents"
+  - date: 2026-06-15
+    pool_ref: P-037
+    raw_ref: R-047
+    source_url: "https://www.latent.space/p/state-of-code-evals-after-swe-bench"
+
+primary_raw:
+  raw_ref: R-039
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-039-state-of-rl-reasoning-imo-ioi-gold-openai-o3-gpt-5-and-cursor-composer.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-039-state-of-rl-reasoning-imo-ioi-gold-openai-o3-gpt-5-and-cursor-composer.json"
+  source_url: "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold"
+  full_text_hash: "a3d742fb5879a555"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_technical_trend
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent", "track-ai-infra"]
+  function: []
+  scenario: []
+  customer: []
+  evidence: ["evidence-product-launch"]
+  stage: []
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "Latent"
+
+frontend:
+  displayTitle: "Latent 发布 AI 基础设施能力，切入模型部署和算力服务"
+  sourceLinks:
+    - "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold"
+---
+
+# Latent 发布 AI 基础设施能力，切入模型部署和算力服务
+
+## 新闻事实
+
+Latent 发布 AI 基础设施能力，切入模型部署和算力服务
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+Latent 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。
+
+## 可见原文片段
+
+Latent 发布 AI 基础设施能力，切入模型部署和算力服务
+
+## 证据边界
+
+没有具体客户或真实企业案例
+
+## Merge Updates
+
+- 2026-06-15: merged duplicate capture R-044 / P-034.
+
+## Merge Updates
+
+- 2026-06-15: merged duplicate capture R-047 / P-037.

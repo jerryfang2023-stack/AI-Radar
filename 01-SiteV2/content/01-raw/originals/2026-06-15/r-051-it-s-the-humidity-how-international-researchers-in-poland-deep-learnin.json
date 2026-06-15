@@ -1,0 +1,258 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-051",
+  "title": "It’s the Humidity: How International Researchers in Poland, Deep Learning and NVIDIA GPUs Could Change the Forecast",
+  "original_url": "https://blogs.nvidia.com/blog/humidity/",
+  "canonical_url": "https://blogs.nvidia.com/blog/humidity",
+  "source_name": "NVIDIA AI Blog",
+  "source_type": "product",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "research_or_report",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-15T03:58:54.242Z",
+  "language": "mixed",
+  "full_text": "Skip to content\nFor more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers. But for all the progress, they still stumble over one deceptively simple ingredient: water vapor.\nHumidity is the invisible fuel for thunderstorms, flash floods, and hurricanes. It’s the difference between a passing sprinkle and a summer downpour that sends you sprinting for cover. And until now, satellites have struggled to capture it with the detail needed to warn us before skies crack open.\nA team from the Wrocław University of Environmental and Life Sciences (UPWr) may help change that. In a paper published this month in Satellite Navigation , researchers describe how deep learning can transform blurry global navigation satellite system (GNSS)-based snapshots of the atmosphere into sharp 3D maps of humidity, revealing the hidden swirls that shape local weather.\nThe secret? A super-resolution generative adversarial network (SRGAN) — a kind of AI best known for making grainy photos look crisp. Instead of celebrities or landscapes, researchers trained the network on global weather data, powered by NVIDIA GPUs. The result: low-resolution readings from navigation satellites get “upscaled” into high-resolution humidity maps with far fewer errors.\n62%\nPoland\nreduction in forecast errors\n52%\nCalifornia\nerror reduction, even in rainy conditions\nCompared with older methods that smeared details into a watercolor blur, the AI produced sharp gradients that actually matched what ground instruments saw.\nAnd because weather prediction is as much about trust as accuracy, the team added a twist: explainable AI. Using visualization tools like Grad-CAM and SHAP, they demonstrated where the model “looked” when making decisions. The AI’s gaze landed, reassuringly, on storm-prone areas — Poland’s western borders, California’s coastal mountains — exactly where forecasters know the atmosphere can turn nasty.\n“High-resolution, reliable humidity data is the missing link in forecasting the kind of weather that disrupts lives. Our approach doesn’t just sharpen GNSS tomography — it also shows us how the model makes its decisions. That transparency is critical for building trust as AI enters weather forecasting.”\n— Saeid Haji-Aghajany, Assistant Professor, Wrocław University of Environmental and Life Sciences\nHow it works\n01\nGNSS Signals\nNavigation satellites passively sense water vapor as signals pass through the atmosphere.\n02\nSRGAN Upscaling\nAn NVIDIA GPU-powered deep learning model sharpens low-res humidity readings into 3D maps.\n03\nExplainable AI\nGrad-CAM and SHAP show forecasters exactly where the model focuses its attention.\nThe implications could be enormous. Feed these sharper humidity fields into physics-based or AI-driven weather models, and you get forecasts that can catch sudden downpours or flash floods before they hit. Communities living under skies that turn dangerous in minutes could gain crucial lead time.\nThe bottom line\nNot the thunder. Not the lightning.\nIt’s the humidity.\nReference: DOI: 10.1186/s43020-025-00177-6\nCategories:\nCorporate\nDeep Learning\nRelated News\nAI\nHow the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies\nJun 7, 2026\nAI\nIndustrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw\nJun 2, 2026\nAI\nNVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local\nJun 2, 2026\nRobotics\nNVIDIA Jetson Brings Agentic AI to the Physical World\nJun 1, 2026\nShare This\nFacebook\nLinkedIn\nShare on Mastodon",
+  "clean_text": "Skip to content\nFor more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers. But for all the progress, they still stumble over one deceptively simple ingredient: water vapor.\nHumidity is the invisible fuel for thunderstorms, flash floods, and hurricanes. It’s the difference between a passing sprinkle and a summer downpour that sends you sprinting for cover. And until now, satellites have struggled to capture it with the detail needed to warn us before skies crack open.\nA team from the Wrocław University of Environmental and Life Sciences (UPWr) may help change that. In a paper published this month in Satellite Navigation , researchers describe how deep learning can transform blurry global navigation satellite system (GNSS)-based snapshots of the atmosphere into sharp 3D maps of humidity, revealing the hidden swirls that shape local weather.\nThe secret? A super-resolution generative adversarial network (SRGAN) — a kind of AI best known for making grainy photos look crisp. Instead of celebrities or landscapes, researchers trained the network on global weather data, powered by NVIDIA GPUs. The result: low-resolution readings from navigation satellites get “upscaled” into high-resolution humidity maps with far fewer errors.\n62%\nPoland\nreduction in forecast errors\n52%\nCalifornia\nerror reduction, even in rainy conditions\nCompared with older methods that smeared details into a watercolor blur, the AI produced sharp gradients that actually matched what ground instruments saw.\nAnd because weather prediction is as much about trust as accuracy, the team added a twist: explainable AI. Using visualization tools like Grad-CAM and SHAP, they demonstrated where the model “looked” when making decisions. The AI’s gaze landed, reassuringly, on storm-prone areas — Poland’s western borders, California’s coastal mountains — exactly where forecasters know the atmosphere can turn nasty.\n“High-resolution, reliable humidity data is the missing link in forecasting the kind of weather that disrupts lives. Our approach doesn’t just sharpen GNSS tomography — it also shows us how the model makes its decisions. That transparency is critical for building trust as AI enters weather forecasting.”\n— Saeid Haji-Aghajany, Assistant Professor, Wrocław University of Environmental and Life Sciences\nHow it works\n01\nGNSS Signals\nNavigation satellites passively sense water vapor as signals pass through the atmosphere.\n02\nSRGAN Upscaling\nAn NVIDIA GPU-powered deep learning model sharpens low-res humidity readings into 3D maps.\n03\nExplainable AI\nGrad-CAM and SHAP show forecasters exactly where the model focuses its attention.\nThe implications could be enormous. Feed these sharper humidity fields into physics-based or AI-driven weather models, and you get forecasts that can catch sudden downpours or flash floods before they hit. Communities living under skies that turn dangerous in minutes could gain crucial lead time.\nThe bottom line\nNot the thunder. Not the lightning.\nIt’s the humidity.\nReference: DOI: 10.1186/s43020-025-00177-6\nCategories:\nCorporate\nDeep Learning\nRelated News\nAI\nHow the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies\nJun 7, 2026\nAI\nIndustrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw\nJun 2, 2026\nAI\nNVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local\nJun 2, 2026\nRobotics\nNVIDIA Jetson Brings Agentic AI to the Physical World\nJun 1, 2026\nShare This\nFacebook\nLinkedIn\nShare on Mastodon",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-051-it-s-the-humidity-how-international-researchers-in-poland-deep-learnin.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-15/r-051-it-s-the-humidity-how-international-researchers-in-poland-deep-learnin.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 79,
+  "extractor_diagnostics": {
+    "readability_score": 79,
+    "text_length": 3589,
+    "paragraph_count": 20,
+    "sentence_count": 26,
+    "boilerplate_hits": 4,
+    "symbol_ratio": 0,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 3589,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4a42606a418bb7ea",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "2bef3f3a504a5392",
+  "content_hash": "4a42606a418bb7ea",
+  "full_text_hash": "4a42606a418bb7ea",
+  "semantic_hash": "9d94c13b38b5c12d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-15T03:58:54.242Z",
+  "last_seen_at": "2026-06-15T03:58:54.242Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "For more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers. But for all the progress, they still stumble over one deceptively simple ingredient: water vapor. Humidity is the invisible fuel for thunderstorms, flash floods, and hurricanes. It&#8217;s the difference between a passing sprinkle and a summer downpour that sends you [&#8230;]",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Skip to content For more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "But for all the progress, they still stumble over one deceptively simple ingredient: water vapor.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Humidity is the invisible fuel for thunderstorms, flash floods, and hurricanes.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It’s the difference between a passing sprinkle and a summer downpour that sends you sprinting for cover.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "And until now, satellites have struggled to capture it with the detail needed to warn us before skies crack open.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "NVIDIA AI Blog",
+      "Microsoft",
+      "Nvidia"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "法律 / 法务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "合作 / 联盟",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务"
+    ],
+    "numbers": [
+      "8217",
+      "8230",
+      "3",
+      "62%",
+      "52%",
+      "01",
+      "02",
+      "03"
+    ],
+    "quotes": [
+      "upscaled"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "For more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers. But for all the progress, they still stumble over one deceptively simple ingredient: water vapor. Humidity is the invisible fuel for thunderstorms, flash floods, and hurricanes. It&#8217;s the difference between a passing sprinkle and a summer downpour that sends you [&#8230;]",
+      "Skip to content For more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers.",
+      "But for all the progress, they still stumble over one deceptively simple ingredient: water vapor."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# It’s the Humidity: How International Researchers in Poland, Deep Learning and NVIDIA GPUs Could Change the Forecast\n\n- raw_id: R-051\n- original_url: https://blogs.nvidia.com/blog/humidity/\n- source_name: NVIDIA AI Blog\n- collected_at: 2026-06-15T03:58:54.242Z\n\n## clean_text\n\nSkip to content\nFor more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers. But for all the progress, they still stumble over one deceptively simple ingredient: water vapor.\nHumidity is the invisible fuel for thunderstorms, flash floods, and hurricanes. It’s the difference between a passing sprinkle and a summer downpour that sends you sprinting for cover. And until now, satellites have struggled to capture it with the detail needed to warn us before skies crack open.\nA team from the Wrocław University of Environmental and Life Sciences (UPWr) may help change that. In a paper published this month in Satellite Navigation , researchers describe how deep learning can transform blurry global navigation satellite system (GNSS)-based snapshots of the atmosphere into sharp 3D maps of humidity, revealing the hidden swirls that shape local weather.\nThe secret? A super-resolution generative adversarial network (SRGAN) — a kind of AI best known for making grainy photos look crisp. Instead of celebrities or landscapes, researchers trained the network on global weather data, powered by NVIDIA GPUs. The result: low-resolution readings from navigation satellites get “upscaled” into high-resolution humidity maps with far fewer errors.\n62%\nPoland\nreduction in forecast errors\n52%\nCalifornia\nerror reduction, even in rainy conditions\nCompared with older methods that smeared details into a watercolor blur, the AI produced sharp gradients that actually matched what ground instruments saw.\nAnd because weather prediction is as much about trust as accuracy, the team added a twist: explainable AI. Using visualization tools like Grad-CAM and SHAP, they demonstrated where the model “looked” when making decisions. The AI’s gaze landed, reassuringly, on storm-prone areas — Poland’s western borders, California’s coastal mountains — exactly where forecasters know the atmosphere can turn nasty.\n“High-resolution, reliable humidity data is the missing link in forecasting the kind of weather that disrupts lives. Our approach doesn’t just sharpen GNSS tomography — it also shows us how the model makes its decisions. That transparency is critical for building trust as AI enters weather forecasting.”\n— Saeid Haji-Aghajany, Assistant Professor, Wrocław University of Environmental and Life Sciences\nHow it works\n01\nGNSS Signals\nNavigation satellites passively sense water vapor as signals pass through the atmosphere.\n02\nSRGAN Upscaling\nAn NVIDIA GPU-powered deep learning model sharpens low-res humidity readings into 3D maps.\n03\nExplainable AI\nGrad-CAM and SHAP show forecasters exactly where the model focuses its attention.\nThe implications could be enormous. Feed these sharper humidity fields into physics-based or AI-driven weather models, and you get forecasts that can catch sudden downpours or flash floods before they hit. Communities living under skies that turn dangerous in minutes could gain crucial lead time.\nThe bottom line\nNot the thunder. Not the lightning.\nIt’s the humidity.\nReference: DOI: 10.1186/s43020-025-00177-6\nCategories:\nCorporate\nDeep Learning\nRelated News\nAI\nHow the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies\nJun 7, 2026\nAI\nIndustrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw\nJun 2, 2026\nAI\nNVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local\nJun 2, 2026\nRobotics\nNVIDIA Jetson Brings Agentic AI to the Physical World\nJun 1, 2026\nShare This\nFacebook\nLinkedIn\nShare on Mastodon\n\n## full_text\n\nSkip to content\nFor more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers. But for all the progress, they still stumble over one deceptively simple ingredient: water vapor.\nHumidity is the invisible fuel for thunderstorms, flash floods, and hurricanes. It’s the difference between a passing sprinkle and a summer downpour that sends you sprinting for cover. And until now, satellites have struggled to capture it with the detail needed to warn us before skies crack open.\nA team from the Wrocław University of Environmental and Life Sciences (UPWr) may help change that. In a paper published this month in Satellite Navigation , researchers describe how deep learning can transform blurry global navigation satellite system (GNSS)-based snapshots of the atmosphere into sharp 3D maps of humidity, revealing the hidden swirls that shape local weather.\nThe secret? A super-resolution generative adversarial network (SRGAN) — a kind of AI best known for making grainy photos look crisp. Instead of celebrities or landscapes, researchers trained the network on global weather data, powered by NVIDIA GPUs. The result: low-resolution readings from navigation satellites get “upscaled” into high-resolution humidity maps with far fewer errors.\n62%\nPoland\nreduction in forecast errors\n52%\nCalifornia\nerror reduction, even in rainy conditions\nCompared with older methods that smeared details into a watercolor blur, the AI produced sharp gradients that actually matched what ground instruments saw.\nAnd because weather prediction is as much about trust as accuracy, the team added a twist: explainable AI. Using visualization tools like Grad-CAM and SHAP, they demonstrated where the model “looked” when making decisions. The AI’s gaze landed, reassuringly, on storm-prone areas — Poland’s western borders, California’s coastal mountains — exactly where forecasters know the atmosphere can turn nasty.\n“High-resolution, reliable humidity data is the missing link in forecasting the kind of weather that disrupts lives. Our approach doesn’t just sharpen GNSS tomography — it also shows us how the model makes its decisions. That transparency is critical for building trust as AI enters weather forecasting.”\n— Saeid Haji-Aghajany, Assistant Professor, Wrocław University of Environmental and Life Sciences\nHow it works\n01\nGNSS Signals\nNavigation satellites passively sense water vapor as signals pass through the atmosphere.\n02\nSRGAN Upscaling\nAn NVIDIA GPU-powered deep learning model sharpens low-res humidity readings into 3D maps.\n03\nExplainable AI\nGrad-CAM and SHAP show forecasters exactly where the model focuses its attention.\nThe implications could be enormous. Feed these sharper humidity fields into physics-based or AI-driven weather models, and you get forecasts that can catch sudden downpours or flash floods before they hit. Communities living under skies that turn dangerous in minutes could gain crucial lead time.\nThe bottom line\nNot the thunder. Not the lightning.\nIt’s the humidity.\nReference: DOI: 10.1186/s43020-025-00177-6\nCategories:\nCorporate\nDeep Learning\nRelated News\nAI\nHow the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies\nJun 7, 2026\nAI\nIndustrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw\nJun 2, 2026\nAI\nNVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local\nJun 2, 2026\nRobotics\nNVIDIA Jetson Brings Agentic AI to the Physical World\nJun 1, 2026\nShare This\nFacebook\nLinkedIn\nShare on Mastodon\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 79\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / high] For more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers. But for all the progress, they still stumble over one deceptively simple ingredient: water vapor. Humidity is the invisible fuel for thunderstorms, flash floods, and hurricanes. It&#8217;s the difference between a passing sprinkle and a summer downpour that sends you [&#8230;]\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Skip to content For more than a century, meteorologists have chased storms with chalkboards, equations, and now, supercomputers.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] But for all the progress, they still stumble over one deceptively simple ingredient: water vapor.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Humidity is the invisible fuel for thunderstorms, flash floods, and hurricanes.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] It’s the difference between a passing sprinkle and a summer downpour that sends you sprinting for cover.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] And until now, satellites have struggled to capture it with the detail needed to warn us before skies crack open.\n"
+}
