@@ -56,7 +56,9 @@ if (args.has("help") || args.has("h")) {
       "  --search-path-query-limit=5",
       "  --hn-limit=8",
       "  --gdelt-query-limit=8",
+      "  --rss-source-limit=0",
       "  --disable-tavily=true",
+      "  --source-only=aihot|keyword|gdelt|rss",
       "  --dry-run=true",
       "",
     ].join("\n")
@@ -77,6 +79,7 @@ const rawMaxTarget = Number(args.get("raw-max") || 220);
 const historicalDedupeEnabled = args.get("historical-dedupe") !== "false";
 const rawDedupeBuffer = Number(args.get("raw-dedupe-buffer") || 40);
 const dryRun = args.get("dry-run") === "true";
+const sourceOnlyMode = String(args.get("source-only") || "").trim().toLowerCase();
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
 const contentRoot = path.join(root, "01-SiteV2", "content");
@@ -125,6 +128,7 @@ const themeGroups = Array.isArray(keywordMonitoring.theme_groups) ? keywordMonit
 const themeOrder = themeGroups.map((group) => group.id);
 const themeById = new Map(themeGroups.map((group) => [group.id, group]));
 const gdeltQueryLimit = Number(args.get("gdelt-query-limit") || Math.max(4, themeGroups.length || 7));
+const rssSourceLimit = Number(args.get("rss-source-limit") || 0);
 const rawEntryPolicy = keywordMonitoring.raw_entry_policy || {};
 const anysearchApiKey = process.env.ANYSEARCH_API_KEY || "";
 const tavilyDisabledByConfig = args.get("disable-tavily") === "true" || process.env.TAVILY_DISABLED === "true";
@@ -3428,9 +3432,10 @@ async function collectGDELT() {
  * Parses both RSS 2.0 and Atom 1.0 formats.
  */
 async function collectRSSFeeds() {
-  const sources = registrySources.filter(
+  const allSources = registrySources.filter(
     (s) => s.interface_type === "rss" && s.enabled_default !== false
   );
+  const sources = rssSourceLimit > 0 ? allSources.slice(0, rssSourceLimit) : allSources;
   if (!sources.length) return { items: [], failures: [], rss_source_count: 0 };
 
   const items = [];
@@ -3550,6 +3555,135 @@ function extractXmlField(xml, tag) {
   const match = xml.match(new RegExp(`<${tag}(?:\\s[^>]*)?>(.*?)<\\/${tag}>`, 'is'));
   if (!match) return "";
   return match[1].replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1').trim();
+}
+
+const sourceOnlyCollectors = {
+  aihot: {
+    label: "AI HOT",
+    collect: collectAIHot,
+  },
+  keyword: {
+    label: "Keyword / layered search",
+    collect: collectKeywordSearch,
+  },
+  gdelt: {
+    label: "GDELT",
+    collect: collectGDELT,
+  },
+  rss: {
+    label: "RSS feeds",
+    collect: collectRSSFeeds,
+  },
+};
+
+function sourceRunSummaryItems(items) {
+  return items.map((item) => ({
+    acquisition_channel: item.acquisition_channel || "",
+    title: item.title || "",
+    url: item.url || "",
+    source: item.source || "",
+    source_type: item.source_type || "",
+    source_level: item.source_level || "",
+    published_at: item.published_at || "",
+    category: item.category || "",
+    theme: item.theme || "",
+    keyword_group: item.keyword_group || "",
+    search_path: item.search_path || "",
+    search_intent: item.search_intent || "",
+    score: item.score ?? null,
+  }));
+}
+
+function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems) {
+  const sourceRunDir = path.join(reportsDir, "source-runs", date);
+  const jsonPath = path.join(sourceRunDir, `${sourceId}-raw-source-candidates.json`);
+  const reportPath = path.join(sourceRunDir, `${sourceId}-raw-source-report.md`);
+  const failures = Array.isArray(sourceResult.failures) ? sourceResult.failures : [];
+  const payload = {
+    date,
+    generated_at: new Date().toISOString(),
+    mode: "business_source_raw",
+    source_id: sourceId,
+    source_label: sourceLabel,
+    status: normalizedItems.length ? "collected" : "empty",
+    discovered_count: sourceResult.discovered_count ?? sourceResult.items?.length ?? 0,
+    raw_candidate_count: normalizedItems.length,
+    failures,
+    channel_distribution: countBy(normalizedItems, "acquisition_channel"),
+    source_level_distribution: countBy(normalizedItems, "source_level"),
+    theme_distribution: countBy(normalizedItems, "theme"),
+    keyword_group_distribution: countBy(normalizedItems, "keyword_group"),
+    items: sourceRunSummaryItems(normalizedItems),
+  };
+
+  const report = [
+    `# ${date} Business Source Raw - ${sourceLabel}`,
+    "",
+    `- generated_at: ${payload.generated_at}`,
+    `- mode: ${payload.mode}`,
+    `- source_id: ${sourceId}`,
+    `- status: ${payload.status}`,
+    `- discovered_count: ${payload.discovered_count}`,
+    `- raw_candidate_count: ${payload.raw_candidate_count}`,
+    `- failures: ${failures.length}`,
+    "",
+    "## Channel Distribution",
+    "",
+    distributionText(payload.channel_distribution),
+    "",
+    "## Source Level Distribution",
+    "",
+    distributionText(payload.source_level_distribution),
+    "",
+    "## Theme Distribution",
+    "",
+    Object.entries(payload.theme_distribution).map(([key, value]) => `- ${themeLabel(key)} (${key || "unknown"}): ${value}`).join("\n") || "- none",
+    "",
+    "## Failures",
+    "",
+    failures.map((failure) => `- ${failure}`).join("\n") || "- none",
+    "",
+    "## Top Candidates",
+    "",
+    normalizedItems.slice(0, 30).map((item, index) => {
+      const title = item.title || item.url || "untitled";
+      return `${index + 1}. ${title} (${item.source || "unknown"})`;
+    }).join("\n") || "- none",
+    "",
+  ].join("\n");
+
+  writeFile(jsonPath, `${JSON.stringify(payload, null, 2)}\n`);
+  writeFile(reportPath, report);
+  return [rel(jsonPath), rel(reportPath)];
+}
+
+async function runSourceOnly() {
+  const collector = sourceOnlyCollectors[sourceOnlyMode];
+  if (!collector) {
+    const allowed = Object.keys(sourceOnlyCollectors).join("|");
+    throw new Error(`Unknown --source-only=${sourceOnlyMode || "empty"}; expected ${allowed}`);
+  }
+
+  const sourceResult = await collector.collect();
+  const normalizedItems = normalize(Array.isArray(sourceResult.items) ? sourceResult.items : []);
+  const outputs = dryRun ? [] : writeSourceOnlyRun(sourceOnlyMode, collector.label, sourceResult, normalizedItems);
+  console.log(
+    JSON.stringify(
+      {
+        date,
+        mode: "business_source_raw",
+        source_id: sourceOnlyMode,
+        source_label: collector.label,
+        status: normalizedItems.length ? "collected" : "empty",
+        discovered_count: sourceResult.discovered_count ?? sourceResult.items?.length ?? 0,
+        raw_candidate_count: normalizedItems.length,
+        failures: sourceResult.failures || [],
+        outputs,
+      },
+      null,
+      2
+    )
+  );
 }
 
 const targetedRefillQueriesByImportance = {
@@ -4507,7 +4641,7 @@ async function main() {
   );
 }
 
-main().catch((error) => {
+(sourceOnlyMode ? runSourceOnly() : main()).catch((error) => {
   console.error(error);
   process.exit(1);
 });

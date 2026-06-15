@@ -18,6 +18,10 @@ V3.3.6.2 automation is column-independent for production and site-unified for pu
 
 Workflow: `.github/workflows/daily-persistent-assets-pr.yml`
 
+Source-only diagnostic workflow: `.github/workflows/business-signals-source-raw.yml`
+
+The source-only workflow runs `--source-only=aihot|keyword|gdelt|rss` and uploads source Raw artifacts under `agent-workflow/reports/source-runs/<date>/`. It is a diagnostic and source-repair aid only: it does not generate formal Raw originals, Pool, Cards, PRs, site data, Obsidian sync, or deployment. Use it to isolate a broken source lane before rerunning the unified Business Signals chain.
+
 Current monitor parameter baseline:
 
 - diagnostic score reference: `85` only as report context; hard gates and final QC decide release;
