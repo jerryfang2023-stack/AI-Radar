@@ -10,7 +10,7 @@ const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
 const topicCenterHermesJsonPath = path.join(siteDataDir, "topic-center-hermes.json");
 const topicCenterHermesMdPath = path.join(siteDataDir, "topic-center-hermes.md");
-const topicCenterVersion = "V2.1.0-boss-topic-engine";
+const topicCenterVersion = "V2.2.0-daily-topic-refresh";
 
 const engines = [
   {
@@ -218,8 +218,32 @@ function firstRanked(items, keywords, fallback = null, extra) {
 }
 
 function numberHint(value) {
-  const match = text(value).match(/\d+(?:\.\d+)?\s*(?:%|亿美元|万美元|万美金|万|亿|人|个|条|小时|天|倍)/u);
+  const clean = text(value);
+  const match = clean.match(/[$￥]\s*\d+(?:\.\d+)?\s*(?:M|B|万美元|亿美元|万美金)?/iu)
+    || clean.match(/\d+(?:\.\d+)?\s*(?:%|亿美元|万美元|万美金|M|B|万|亿|人|个|条|小时|天|倍)/iu);
   return match ? match[0].replace(/\s+/gu, "") : "";
+}
+
+function cleanSubject(value, fallback = "这条信号", length = 26) {
+  const clean = text(value || fallback)
+    .replace(/&amp;/gu, "&")
+    .replace(/&#39;/gu, "'")
+    .replace(/&quot;/gu, '"')
+    .replace(/^[^：:]{1,14}[：:]\s*/u, "")
+    .replace(/\s+/gu, " ");
+  return clip(clean, length).replace(/[，,。；;：:、\s]+$/u, "") || fallback;
+}
+
+function subjectOf(item, fallback = "这条信号", length = 26) {
+  return cleanSubject(item?.title || item?.summary || item?.body || item?.fact, fallback, length);
+}
+
+function detailOf(item, fallback = "这条材料") {
+  return clip(item?.fact || item?.summary || item?.body || item?.resultSignal || item?.scene || item?.title || fallback, 120);
+}
+
+function metricOf(item, fallback = "") {
+  return numberHint(`${item?.title || ""} ${item?.fact || ""} ${item?.summary || ""} ${item?.body || ""}`) || fallback;
 }
 
 function evidenceItem(kind, item) {
@@ -293,194 +317,201 @@ function topicPayload(input) {
 }
 
 function buildTopicSet({ date, signals, viewpoints, community }) {
-  const serviceCallSignal = firstRanked(signals, ["90%", "来电", "电话", "voice agent", "servicetitan", "预约", "客服"], null, (item) => numberHint(`${item.title} ${item.fact}`) ? 5 : 0);
-  const paymentSignal = firstRanked(signals, ["visa", "chatgpt", "零售", "购买", "支付", "doordash", "订单", "预订"]);
-  const governanceSignal = firstRanked(signals, ["auto-review", "治理", "权限", "risk", "github enterprise", "cursor", "分类器", "guardrails"]);
-  const workflowSignal = firstRanked(signals, ["perplexity", "deep research", "computer", "codex", "datasette", "报告", "演示文稿", "工作流"]);
-  const fundingSignal = firstRanked(signals, ["120亿美元", "融资", "410亿美元", "prometheus", "theker", "poetic", "notch", "f2"]);
-  const trainingSignal = firstRanked(signals, ["claude corps", "1000", "培训", "奖学金", "年薪", "非营利"]);
+  const serviceSignal = firstRanked(signals, ["客服", "电话", "来电", "订单", "搜索", "agentic", "运营", "产权", "rocket close", "case", "案例", "服务"], null, (item) => metricOf(item) ? 4 : 0);
+  const workflowSignal = firstRanked(signals, ["rippling", "deep agents", "langsmith", "工作流", "流程", "automation", "agentic", "fireworks", "swe-bench", "工程师", "software"], null, (item) => metricOf(item) ? 3 : 0);
+  const governanceSignal = firstRanked(signals, ["治理", "幻觉", "法官", "罚单", "禁止", "policy", "risk", "anthropic", "权限", "安全", "guardrails", "律师"], null, (item) => metricOf(item) ? 3 : 0);
+  const fundingSignal = firstRanked(signals, ["融资", "$", "上市", "ipo", "cuspai", "willow", "材料", "capital", "funding", "ai公司"], null, (item) => metricOf(item) ? 5 : 0);
+  const searchSignal = firstRanked(signals, ["搜索", "google", "seo", "流量", "search", "出海", "uv", "pv"]);
+  const skillSignal = firstRanked(signals, ["工程师", "取代", "软件", "swe-bench", "evals", "评估", "coding", "developer"]);
 
-  const salesCommunity = firstRanked(community, ["客服", "销售", "订单", "成交", "gmv", "roi", "获客", "线索", "预约"], null, (item) => item.valueScore / 20 + item.opportunityScore / 30);
-  const sopCommunity = firstRanked(community, ["sop", "知识库", "obsidian", "飞书", "skills", "skill", "流程", "标准化", "复购"], null, (item) => item.valueScore / 20);
-  const codexCommunity = firstRanked(community, ["codex", "claude code", "做产品", "产品", "月入", "工作流", "一人公司"], null, (item) => item.opportunityScore / 20);
-  const infraCommunity = firstRanked(community, ["1000块", "基建", "codex", "vps", "gmail", "mac mini", "工具配置", "老板"], null, (item) => item.valueScore / 25);
-  const storyCommunity = firstRanked(community, ["75岁", "13岁", "05后", "父亲", "存款", "月入", "ai第一课", "诊所", "工作室"], null, (item) => item.valueScore / 20 + (numberHint(`${item.title} ${item.summary}`) ? 5 : 0));
-  const contentCommunity = firstRanked(community, ["内容agent工厂", "内容工程化", "虚拟电商", "公众号", "小红书", "出单", "搜索占比"], null, (item) => item.opportunityScore / 20);
+  const salesCommunity = firstRanked(community, ["销售", "商单", "成交", "客户", "订单", "转化", "gmv", "roi", "获客", "线索", "带货"], null, (item) => item.valueScore / 20 + item.opportunityScore / 30);
+  const contentCommunity = firstRanked(community, ["公众号", "小红书", "内容", "视频", "seo", "uv", "pv", "起号", "带货", "流量"], null, (item) => item.opportunityScore / 20 + (metricOf(item) ? 5 : 0));
+  const productCommunity = firstRanked(community, ["产品", "独立开发者", "小程序", "红利", "调研", "ai服务", "tob", "商单"], null, (item) => item.valueScore / 25 + item.opportunityScore / 25);
+  const workflowCommunity = firstRanked(community, ["sop", "知识库", "飞书", "流程", "标准化", "怎么做", "该做什么", "避坑"], null, (item) => item.valueScore / 20);
+  const storyCommunity = firstRanked(community, ["销售能力", "普通人", "1000万", "采访", "过程", "结果", "新手", "30天"], null, (item) => item.valueScore / 20 + (metricOf(item) ? 5 : 0));
 
-  const codexViewpoint = firstRanked(viewpoints, ["codex", "token consumption", "48 hours", "coding", "claude code", "cursor", "fortune 500", "60%"], null, (item) => item.engagement / 500);
-  const modelWorkViewpoint = firstRanked(viewpoints, ["fable", "complex work", "financial services", "healthcare", "legal", "多步", "一致"], null, (item) => item.engagement / 500);
-  const governanceViewpoint = firstRanked(viewpoints, ["governance", "accountable", "guardrails", "policy", "sabotaged", "security", "cluster"], null, (item) => item.engagement / 500);
+  const governanceViewpoint = firstRanked(viewpoints, ["governance", "治理", "guardrails", "policy", "accountable", "agi"], null, (item) => item.engagement / 500);
+  const skillViewpoint = firstRanked(viewpoints, ["工程师", "software", "developer", "coding", "取代", "codex", "swe"], null, (item) => item.engagement / 500);
+  const workflowViewpoint = firstRanked(viewpoints, ["work", "workflow", "complex", "agent", "流程", "一致"], null, (item) => item.engagement / 500);
 
-  const callNumber = numberHint(`${serviceCallSignal?.title || ""} ${serviceCallSignal?.fact || ""}`) || "90%";
-  const fundingNumber = numberHint(`${fundingSignal?.title || ""} ${fundingSignal?.fact || ""}`) || "120亿美元";
+  const moneySubject = subjectOf(searchSignal || serviceSignal || salesCommunity, "订单入口");
+  const serviceSubject = subjectOf(serviceSignal, "岗位级 AI");
+  const workflowSubject = subjectOf(workflowSignal || workflowCommunity, "企业流程 AI");
+  const governanceSubject = subjectOf(governanceSignal || governanceViewpoint, "AI 治理");
+  const fundingSubject = subjectOf(fundingSignal, "AI 融资");
+  const contentSubject = subjectOf(contentCommunity || searchSignal, "内容流量");
+  const productSubject = subjectOf(productCommunity || workflowSignal, "AI 服务机会");
+  const storySubject = subjectOf(storyCommunity || skillViewpoint, "一线故事");
+  const fundingMetric = metricOf(fundingSignal, "一笔新钱");
+  const contentMetric = metricOf(contentCommunity, "");
 
   return [
     topicPayload({
       engineId: "money_leak",
       date,
-      title: `一个空调公司用 AI 接住 ${callNumber} 电话，老板们该醒醒了`,
-      core: "老板最该先看的不是模型参数，而是公司每天有没有订单入口在漏钱。",
-      relevance: "电话、客服、预约、销售跟进这类小岗位，直接连接收入，比泛泛 AI 工具更容易算账。",
-      bossPain: "旺季电话漏接、线索忘跟、预约登记错，都会变成真实订单损失。",
-      moneyLine: "先算少漏几个客户，再谈 AI 转型；接得住、记得准、转得动，就是收入入口的第一张账。",
-      oldFrame: "AI 是客服聊天机器人。",
-      newFrame: "AI 是能接住订单入口的小岗位员工。",
-      actionHint: "先盘点公司 3 个最容易漏单的入口：电话、表单、私信。",
-      businessSignals: [serviceCallSignal],
+      title: `${moneySubject}背后：老板先查订单入口有没有漏钱`,
+      core: "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
+      relevance: `${detailOf(searchSignal || serviceSignal)}；社群里也出现了“${subjectOf(contentCommunity || salesCommunity, "获客案例")}”这类一线反馈。`,
+      bossPain: "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
+      moneyLine: "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
+      oldFrame: "AI 是一个提效工具。",
+      newFrame: "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
+      actionHint: "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
+      businessSignals: [searchSignal || serviceSignal],
       viewpoints: [],
-      communityItems: [salesCommunity],
+      communityItems: [contentCommunity || salesCommunity],
       scoreParts: { pain: 25, money: 25, buzz: 19, spread: 14, action: 9, style: 5 },
       angles: [
-        { title: "开头用订单入口，不用 AI 功能", note: `第一句就写：电话不是电话，是订单入口。用 ${callNumber} 把老板拉进来。` },
-        { title: "中段拆一个预约岗位", note: "把接听、识别需求、确认地址、排师傅、同步订单拆成 5 步，说明 AI 为什么能先干这部分。" },
-        { title: "结尾落到小岗位 AI 员工", note: "不要喊智能化转型，落到“先少漏几个订单”。" },
+        { title: "开头直接问漏钱", note: `不要先讲 ${moneySubject} 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？` },
+        { title: "中段拆入口链路", note: "看见、点击、咨询、记录、跟进、成交，每一步都能放 AI，但先看哪里漏。" },
+        { title: "结尾落到老板动作", note: "让老板今天就拉一张入口表，而不是收藏一堆工具。" },
       ],
     }),
     topicPayload({
       engineId: "save_headcount",
       date,
-      title: "不是裁员，而是少招 3 个重复岗位：老板该先改造这些活",
-      core: "AI 真正进入企业，第一步不是替代整个人，而是接管岗位里的重复动作。",
-      relevance: "客服质检、资料整理、会议任务、报价初审这类工作，适合用 SOP 和知识库先跑起来。",
-      bossPain: "人越招越多，杂活没有变少，管理成本反而上来。",
-      moneyLine: "能少招一个重复岗位，或者让一个人少返工 30%，老板就愿意继续投入。",
+      title: `${workflowSubject}给老板的提醒：别急着裁员，先少招重复岗位`,
+      core: "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
+      relevance: `${detailOf(workflowSignal || workflowViewpoint)}；这类信号比“AI 很强”更接近老板的组织账。`,
+      bossPain: "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
+      moneyLine: "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
       oldFrame: "AI 上线就是裁员。",
-      newFrame: "AI 上线的第一阶段，是让公司少招重复岗位。",
-      actionHint: "把一个岗位每天重复超过 20 次的动作列出来，先挑 3 个标准动作交给 AI。",
-      businessSignals: [workflowSignal || serviceCallSignal],
-      viewpoints: [modelWorkViewpoint],
-      communityItems: [sopCommunity],
+      newFrame: "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
+      actionHint: "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
+      businessSignals: [workflowSignal || serviceSignal],
+      viewpoints: [workflowViewpoint || skillViewpoint],
+      communityItems: [workflowCommunity],
       scoreParts: { pain: 23, money: 23, buzz: 16, spread: 13, action: 10, style: 5 },
       angles: [
-        { title: "用岗位动作替代岗位名称", note: "不要写 AI 替代客服，写 AI 先替代接听、归档、质检、催办。" },
+        { title: "用岗位动作替代岗位名称", note: "不要写 AI 替代某个人，写 AI 先替代接听、归档、质检、催办、汇总这类动作。" },
         { title: "把省人写成管理账", note: "老板关心的不是炫技，是少招人、少返工、少培训。" },
-        { title: "给一个 10 步拆 3 步的方法", note: "结尾给老板一个小动作，方便转给团队执行。" },
+        { title: "给一个当天可做的小动作", note: `用 ${workflowSubject} 做例子，把大流程拆成一个可验收动作。` },
       ],
     }),
     topicPayload({
       engineId: "peer_pressure",
       date,
-      title: "你的同行已经用 AI 跑流程了，你还在让员工手动搬砖",
-      core: "最能触发老板的不是技术解释，而是同行已经把 AI 用在获客、内容、交付和产品上。",
-      relevance: "社群里的内容工厂、Codex 做产品、虚拟电商案例，说明 AI 正在从学习工具变成经营系统。",
-      bossPain: "对手开始用 AI 降低生产成本时，你还在用人工流程硬扛。",
-      moneyLine: "同行压力的核心不是焦虑，而是获客成本、交付成本和试错成本正在被重新定价。",
+      title: `从${contentSubject}${contentMetric ? `的${contentMetric}` : ""}到${subjectOf(searchSignal || workflowSignal, "今天的商业信号")}：同行压力不在技术，在速度`,
+      core: "最能触发老板的不是技术解释，而是别人已经把 AI 用到获客、内容、交付、产品试错里，并且开始看到结果。",
+      relevance: `${detailOf(contentCommunity || productCommunity)}；这类社群信号代表一线老板和操盘手已经在算产出。`,
+      bossPain: "当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。",
+      moneyLine: "同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。",
       oldFrame: "AI 是员工自己研究的新工具。",
-      newFrame: "AI 是同行正在重做流程的生产系统。",
-      actionHint: "每天只问一个问题：同行哪一个流程已经被 AI 缩短了？",
-      businessSignals: [workflowSignal],
-      viewpoints: [codexViewpoint],
-      communityItems: [contentCommunity || codexCommunity],
+      newFrame: "AI 是同行正在重做经营速度的生产系统。",
+      actionHint: "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
+      businessSignals: [searchSignal || workflowSignal],
+      viewpoints: [skillViewpoint],
+      communityItems: [contentCommunity || productCommunity],
       scoreParts: { pain: 22, money: 22, buzz: 19, spread: 15, action: 8, style: 5 },
       angles: [
-        { title: "用同行压力开头", note: "标题和开头都不要讲 AI 多强，要讲别人已经开始用 AI 跑流程。" },
+        { title: "用同行压力开头", note: "标题和开头都不要讲 AI 多强，要讲别人已经开始用 AI 跑出结果。" },
         { title: "拆获客、交付、产品三个场景", note: "每个场景只写一个真实动作，避免变成工具列表。" },
-        { title: "落到老板的例会问题", note: "建议老板每周让团队汇报一个被 AI 缩短的流程。" },
+        { title: "落到老板的例会问题", note: "建议老板每周让团队汇报一个被 AI 缩短的动作，而不是汇报又试了什么工具。" },
       ],
     }),
     topicPayload({
       engineId: "pitfall",
       date,
-      title: "AI 员工不能先上岗后管理：老板最容易漏掉的是权限",
-      core: "Agent 能替你执行动作后，企业的核心问题从“会不会用”变成“谁来管”。",
-      relevance: "Cursor Auto-review、GitHub Enterprise Agent 治理和安全观点都指向同一件事：AI 员工需要权限、审计和责任边界。",
-      bossPain: "AI 一旦能读文件、调工具、改数据，错误不再只是内容不好，而是可能直接影响业务系统。",
-      moneyLine: "权限没管住，省下的人力钱可能会被一次数据事故吃掉。",
+      title: `${governanceSubject}背后：老板必须补上责任边界`,
+      core: "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
+      relevance: `${detailOf(governanceSignal || governanceViewpoint)}；这类信号适合写给老板看，因为它直接关系到业务风险。`,
+      bossPain: "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
+      moneyLine: "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
       oldFrame: "AI 越自主越好。",
-      newFrame: "AI 越自主，越需要先设计权限和复核。",
-      actionHint: "先给 AI 员工分三级权限：只读、建议、可执行。",
+      newFrame: "AI 越自主，越要先设计权限、复核和责任人。",
+      actionHint: "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
       businessSignals: [governanceSignal],
       viewpoints: [governanceViewpoint],
-      communityItems: [infraCommunity || sopCommunity],
+      communityItems: [workflowCommunity || productCommunity],
       scoreParts: { pain: 22, money: 21, buzz: 18, spread: 13, action: 9, style: 5 },
       angles: [
         { title: "不要写安全科普，写老板责任", note: "老板不关心分类器模型，关心 AI 搞错后谁背锅。" },
         { title: "把权限拆成人话", note: "只读、建议、执行三个等级，比讲治理框架更容易传播。" },
-        { title: "用反问推进", note: "难道 AI 能替你操作系统，你还不给它设边界？" },
+        { title: "用当天案例推进", note: `用 ${governanceSubject} 做钩子，落到企业内部的授权和复核表。` },
       ],
     }),
     topicPayload({
       engineId: "counterintuitive",
       date,
-      title: "真正值钱的不是 AI 工具，而是老板自己的工作流",
-      core: "同一个 AI 工具，放在清楚流程里是员工，放在混乱流程里就是玩具。",
-      relevance: "社群高价值案例集中在 Skill、Obsidian、飞书、知识库和 SOP，说明老板的私有流程资产正在变成核心生产资料。",
-      bossPain: "工具买了一堆，员工不用；员工用了，效果差；最后老板误判 AI 不行。",
-      moneyLine: "工具是支出，工作流是资产。支出会过期，资产能复用。",
+      title: `${subjectOf(skillSignal || skillViewpoint, "AI 没有替代人")}背后：老板真正该买的不是工具，是任务拆解能力`,
+      core: "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
+      relevance: `${detailOf(skillSignal || skillViewpoint)}；社群里“${subjectOf(workflowCommunity || productCommunity, "该做什么")}”的讨论也在提醒老板，问题不再只是怎么做。`,
+      bossPain: "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
+      moneyLine: "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
       oldFrame: "追最新 AI 工具。",
-      newFrame: "沉淀自己的流程、语料、SOP 和验收标准。",
-      actionHint: "先选一个业务动作，写清输入、步骤、验收标准，再接工具。",
-      businessSignals: [workflowSignal || trainingSignal],
-      viewpoints: [codexViewpoint],
-      communityItems: [sopCommunity],
+      newFrame: "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
+      actionHint: "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
+      businessSignals: [skillSignal || workflowSignal],
+      viewpoints: [skillViewpoint || workflowViewpoint],
+      communityItems: [workflowCommunity],
       scoreParts: { pain: 24, money: 23, buzz: 18, spread: 15, action: 10, style: 5 },
       angles: [
         { title: "先打脸工具崇拜", note: "开头写：买工具不是 AI 转型，能稳定交付结果才算。" },
-        { title: "中段用社群案例证明", note: "写 Skill、知识库、SOP 为什么比单个工具更耐用。" },
-        { title: "结尾给金句", note: "AI 工具不是资产，能反复跑通的流程才是资产。" },
+        { title: "中段讲任务拆解", note: "把提示词、流程、知识库和验收标准放在同一张图里讲。" },
+        { title: "结尾给金句", note: "AI 工具不是资产，能反复跑通的任务系统才是资产。" },
       ],
     }),
     topicPayload({
       engineId: "small_role",
       date,
-      title: "别做大平台，先做一个小岗位的 AI 员工",
-      core: "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位的具体痛点里。",
-      relevance: "今天的信号从 AI 语音客服、复杂企业流程自动化到受监管行业 AI 操作系统，都在证明岗位级 AI 正在成型。",
+      title: `${serviceSubject}背后：小公司先做一个小岗位 AI 员工`,
+      core: "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
+      relevance: `${detailOf(serviceSignal || workflowSignal)}；这类材料说明岗位级 AI 比大而全平台更容易落地。`,
       bossPain: "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
-      moneyLine: "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱。",
+      moneyLine: "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
       oldFrame: "做一个什么都能干的 AI 平台。",
       newFrame: "做一个只干一件事但能交付的小岗位 AI 员工。",
-      actionHint: "先从客服、招投标、财务对账、销售跟进、会议催办里选一个。",
-      businessSignals: [serviceCallSignal, fundingSignal].filter(Boolean),
+      actionHint: "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
+      businessSignals: [serviceSignal, workflowSignal].filter(Boolean),
       viewpoints: [],
-      communityItems: [sopCommunity || salesCommunity],
+      communityItems: [productCommunity || salesCommunity],
       scoreParts: { pain: 25, money: 24, buzz: 18, spread: 15, action: 10, style: 5 },
       angles: [
         { title: "用小岗位对抗大平台", note: "这是最适合你现有表达的主线：不做大而全，先做小而深。" },
-        { title: "每个岗位给一个可验收结果", note: "客服看接通率，标书看漏项率，对账看差异报告，会议看任务闭环。" },
+        { title: "每个岗位给一个可验收结果", note: "客服看接通率，销售看跟进率，内容看线索，流程看错误率。" },
         { title: "避免写成创业方向清单", note: "要写一个岗位打穿逻辑，不要罗列 10 个机会。" },
       ],
     }),
     topicPayload({
       engineId: "big_small_contrast",
       date,
-      title: `有人 ${fundingNumber} 押注物理 AI，有人 1000 块帮老板装 Codex`,
-      core: "AI 赚钱分两层：顶层拼资本和研发，底层拼老板现场的配置、流程和交付。",
-      relevance: "大融资说明资本在押注长期方向；社群里的 AI 基建服务说明普通人可以从老板的第一步配置开始收钱。",
-      bossPain: "老板看不懂大融资，但愿意为“帮我把 AI 用起来”付第一笔小钱。",
-      moneyLine: "大厂赚基础设施的钱，小服务商赚落地第一公里的钱。",
+      title: `${fundingSubject}${fundingMetric ? `拿到${fundingMetric}` : "又有新钱"}：普通老板该看见哪一层机会？`,
+      core: "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
+      relevance: `${detailOf(fundingSignal)}；同时社群里的“${productSubject}”说明一线需求还在配置、流程和交付。`,
+      bossPain: "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
+      moneyLine: "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
       oldFrame: "AI 创业只能跟大模型和融资有关。",
-      newFrame: "普通人的 AI 机会在帮老板跨过工具配置和流程落地门槛。",
-      actionHint: "把 AI 基建服务产品化：账号、网络、工具、知识库、一个工作流。",
+      newFrame: "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
+      actionHint: "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
       businessSignals: [fundingSignal],
-      viewpoints: [codexViewpoint],
-      communityItems: [infraCommunity],
+      viewpoints: [workflowViewpoint || skillViewpoint],
+      communityItems: [productCommunity],
       scoreParts: { pain: 21, money: 24, buzz: 20, spread: 15, action: 8, style: 5 },
       angles: [
         { title: "用大钱和小钱制造冲突", note: "大融资负责制造注意力，小服务负责让老板觉得和自己有关。" },
         { title: "写出两套赚钱逻辑", note: "资本逻辑：长期技术押注；服务逻辑：帮老板完成第一公里。" },
-        { title: "落到可卖服务包", note: "账号配置、工具安装、知识库搭建、首个工作流，这是老板可理解的产品。" },
+        { title: "落到可卖服务包", note: "流程诊断、工具配置、知识库搭建、首个工作流，这是老板可理解的产品。" },
       ],
     }),
     topicPayload({
       engineId: "person_story",
       date,
-      title: "75 岁 ISO 专家遇上 AI，我看到传统行业最大的机会",
-      core: "AI 普及不是让所有人学会新工具，而是把老专家几十年的经验变成可复用系统。",
-      relevance: "社群故事里的 200G 文件、15 万文档、认证材料和标准更新，比泛泛讲知识库更有传播画面。",
-      bossPain: "很多传统行业老板最大的资产不是软件，而是老员工、老专家、老资料，但这些资产正在散落和流失。",
-      moneyLine: "把经验沉淀成知识库和 SOP，等于把个人能力变成公司资产。",
-      oldFrame: "年纪大的人学不会 AI。",
-      newFrame: "AI 最该先服务那些经验很深、资料很多、流程很重的人。",
-      actionHint: "先把老专家的资料、模板、常见问题和交付流程整理成一个可问答知识库。",
-      businessSignals: [trainingSignal || workflowSignal],
-      viewpoints: [],
-      communityItems: [storyCommunity || sopCommunity],
+      title: `${storySubject}撞上${subjectOf(skillSignal || workflowSignal, "今天的 AI 信号")}：老板更愿意转发有场景的 AI 故事`,
+      core: "人物故事的价值不在鸡汤，而在把一个抽象趋势压缩成老板能看懂的场景、成本和选择。",
+      relevance: `${detailOf(storyCommunity || skillViewpoint)}；这类材料适合做传播入口，再回到老板的业务判断。`,
+      bossPain: "老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。",
+      moneyLine: "一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。",
+      oldFrame: "写 AI 就要讲技术和趋势。",
+      newFrame: "写给老板的 AI 内容，要先有人、有场景、有结果。",
+      actionHint: "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
+      businessSignals: [skillSignal || workflowSignal],
+      viewpoints: [skillViewpoint],
+      communityItems: [storyCommunity || salesCommunity],
       scoreParts: { pain: 23, money: 21, buzz: 20, spread: 14, action: 9, style: 5 },
       angles: [
-        { title: "用人物场景开头", note: "不要先讲知识库，先写 75 岁老专家还在手动整理认证文件。" },
-        { title: "把温情转成商业判断", note: "重点不是感动，而是传统行业的经验资产终于能系统化。" },
-        { title: "结尾回到老板资产", note: "老员工脑子里的经验，不沉淀就是个人能力，沉淀出来才是公司资产。" },
+        { title: "用人物场景开头", note: `不要先讲 AI 趋势，先讲 ${storySubject} 这类具体处境。` },
+        { title: "把故事转成商业判断", note: "重点不是感动，而是这个故事说明老板该改哪个流程、补哪个能力。" },
+        { title: "结尾回到老板动作", note: "让老板知道明天可以拿哪个人、哪个岗位、哪个场景做试点。" },
       ],
     }),
   ];
