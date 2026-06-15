@@ -149,6 +149,7 @@ let historicalDedupeRecordsChecked = 0;
 const providerFallbackNotes = [];
 let anysearchDisabledForRun = false;
 let tavilyDisabledForRun = false;
+const aTierMediaFallbackQuerySuffix = "(site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)";
 const registrySources = Array.isArray(sourceRegistry.sources) ? sourceRegistry.sources : [];
 const registryHostRules = registrySources
   .filter((source) => source && source.enabled_default !== false)
@@ -976,6 +977,22 @@ function formatFetchFailure(error) {
   const port = cause.port ? `port=${cause.port}` : "";
   const details = [code, errno, syscall, host, port].filter(Boolean).join(" ");
   return details ? `${message} (${details})` : message;
+}
+
+function stripSiteFilters(query = "") {
+  return String(query || "")
+    .replace(/\(\s*(?:site:[^\s()]+(?:\s+OR\s+)?)+\s*\)/giu, " ")
+    .replace(/\bsite:[^\s()]+/giu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function isProviderAuthFailure(message = "") {
+  return /401|unauthorized|invalid api key|forbidden/iu.test(String(message || ""));
+}
+
+function isProviderRunOutage(message = "") {
+  return /gateway|upstream|temporarily unavailable|timeout|timed out|5\d\d|bad gateway|service unavailable/iu.test(String(message || ""));
 }
 
 function compactSnippet(text, limit = 140) {
@@ -2569,6 +2586,7 @@ async function searchTavily(query, limit = 5) {
 
 async function searchExa(query, limit = 5) {
   if (!exaApiKey) throw new Error("EXA_API_KEY is not configured");
+  const exaQuery = stripSiteFilters(query) || query;
   const response = await fetch("https://api.exa.ai/search", {
     method: "POST",
     headers: {
@@ -2576,7 +2594,7 @@ async function searchExa(query, limit = 5) {
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      query,
+      query: exaQuery,
       type: "auto",
       numResults: Math.min(Math.max(Number(limit) || 5, 1), 10),
       contents: {
@@ -2626,7 +2644,7 @@ async function searchLayeredWeb(query, limit = 5) {
       return await searchAnysearch(query, limit);
     } catch (error) {
       providerFallbackNotes.push(`Anysearch fallback for query "${query}": ${error.message}`);
-      if (/401|unauthorized|invalid api key|forbidden/iu.test(String(error.message || ""))) {
+      if (isProviderAuthFailure(error.message) || isProviderRunOutage(error.message)) {
         anysearchDisabledForRun = true;
       }
     }
@@ -2636,7 +2654,7 @@ async function searchLayeredWeb(query, limit = 5) {
       return await searchTavily(query, limit);
     } catch (error) {
       providerFallbackNotes.push(`Tavily fallback for query "${query}": ${error.message}`);
-      if (/401|unauthorized|invalid api key|forbidden/iu.test(String(error.message || ""))) {
+      if (isProviderAuthFailure(error.message)) {
         tavilyDisabledForRun = true;
       }
     }
@@ -2815,7 +2833,7 @@ const keywordSearchPaths = [
     label: "A 级媒体 / GDELT 路径",
     role: "verify major events, diffusion, capital moves and regulation",
     method: "gdelt_then_ddg",
-    fallbackQuerySuffix: "(site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)",
+    fallbackQuerySuffix: aTierMediaFallbackQuerySuffix,
     querySuffix: "",
   },
   {
@@ -3311,7 +3329,7 @@ async function collectKeywordSearch() {
 
 async function collectGDELT() {
   const allQueries = laneQueries("gdelt", ["AI agent enterprise", "agentic AI governance", "AI startup funding", "AI coding agent"]);
-  const fallbackMediaSuffix = "(site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)";
+  const fallbackMediaSuffix = aTierMediaFallbackQuerySuffix;
   const seenThemes = new Set();
   const firstPerTheme = [];
   const rest = [];
@@ -3504,6 +3522,161 @@ function extractXmlField(xml, tag) {
   const match = xml.match(new RegExp(`<${tag}(?:\\s[^>]*)?>(.*?)<\\/${tag}>`, 'is'));
   if (!match) return "";
   return match[1].replace(/<!\[CDATA\[(.*?)\]\]>/g, '$1').trim();
+}
+
+const targetedRefillQueriesByImportance = {
+  important_case: [
+    "AI agent case study customer story enterprise deployment",
+    "AI platform customer story case study enterprise automation",
+    "enterprise AI agent customer adopts production rollout case study",
+    "AI agent design partner pilot production rollout customer story",
+  ],
+  important_funding: [
+    "AI startup funding seed Series A vertical AI enterprise agents",
+    "AI agent startup raises funding seed venture enterprise automation",
+    "YC AI startup funding vertical AI agent workflow",
+  ],
+  important_product_or_service: [
+    "AI agent product launch enterprise workflow platform release",
+    "AI coding agent API SDK launch enterprise product update",
+    "AI platform launches agent workflow automation service",
+  ],
+  important_vertical_solution: [
+    "vertical AI solution customer deployment healthcare finance manufacturing",
+    "AI agent vertical SaaS customer workflow deployment case",
+    "enterprise AI deployment industry workflow customer story",
+  ],
+  important_technical_trend: [
+    "model release inference cost reduction enterprise adoption",
+    "AI infrastructure launch inference optimization enterprise deployment",
+    "agentic AI platform architecture enterprise adoption release",
+  ],
+};
+
+const targetedRefillPathByImportance = {
+  important_case: "official_original",
+  important_funding: "capital_startup",
+  important_product_or_service: "official_original",
+  important_vertical_solution: "industry_landing",
+  important_technical_trend: "a_media_gdelt",
+};
+
+const targetedCoreRefillImportanceOrder = [
+  "important_case",
+  "important_funding",
+  "important_vertical_solution",
+  "important_product_or_service",
+];
+
+function keywordPathById(id) {
+  return keywordSearchPaths.find((pathConfig) => pathConfig.id === id) || keywordSearchPaths[0];
+}
+
+function coreSupplyGaps(items) {
+  const poolItems = selectMonitorPoolItems(items);
+  const metas = poolItems.map(poolCandidateMeta);
+  const coreMetas = metas.filter((meta) => meta.isCore);
+  const nonLargeCoreMetas = coreMetas.filter((meta) => !meta.isLargeVendor);
+  return {
+    coreCount: coreMetas.length,
+    nonLargeCoreCount: nonLargeCoreMetas.length,
+    gaps: [
+      coreMetas.length < corePoolMinTarget ? `core_pool=${coreMetas.length}/${corePoolMinTarget}` : "",
+      nonLargeCoreMetas.length < coreNonLargeVendorMinTarget ? `core_non_large=${nonLargeCoreMetas.length}/${coreNonLargeVendorMinTarget}` : "",
+    ].filter(Boolean),
+  };
+}
+
+function refillRequestsForPoolState(poolGaps, supplyGaps) {
+  if (poolGaps.length) return poolGaps;
+  if (!supplyGaps.gaps.length) return [];
+  const needed = Math.max(
+    corePoolMinTarget - supplyGaps.coreCount,
+    coreNonLargeVendorMinTarget - supplyGaps.nonLargeCoreCount,
+    1
+  );
+  return targetedCoreRefillImportanceOrder.map((importanceType) => ({
+    importanceType,
+    count: 0,
+    min: Math.min(needed, 3),
+  }));
+}
+
+async function collectTargetedImportanceRefill(poolGaps, existingItems = []) {
+  const items = [];
+  const failures = [];
+  const filtered = [];
+  const seen = new Set(existingItems.map(poolKeyFor));
+  for (const gap of poolGaps) {
+    const importanceType = gap.importanceType || "";
+    const needed = Math.max(1, Number(gap.min || 0) - Number(gap.count || 0));
+    const pathConfig = keywordPathById(targetedRefillPathByImportance[importanceType]);
+    const queries = targetedRefillQueriesByImportance[importanceType] || [];
+    for (const baseQuery of queries.slice(0, Math.min(queries.length, Math.max(needed, 1)))) {
+      const query = [baseQuery, pathConfig.fallbackQuerySuffix || pathConfig.querySuffix || ""].filter(Boolean).join(" ");
+      const queryConfig = {
+        query: baseQuery,
+        query_theme: "targeted-pool-gap-refill",
+        keyword_group: "targeted-pool-gap-refill",
+      };
+      try {
+        const results = await searchLayeredWeb(query, Math.min(Math.max(needed + 3, 4), 8));
+        for (const result of results) {
+          const key = result.url || `${result.title}-${result.source}`;
+          if (seen.has(key)) continue;
+          const gate = keywordSearchResultPreGate(result, queryConfig, pathConfig);
+          if (!gate.keep) {
+            filtered.push({ path: pathConfig.id, reason: gate.reason, title: result.title });
+            continue;
+          }
+          seen.add(key);
+          items.push(keywordSearchItem(result, queryConfig, pathConfig, { search_intent: inferSearchIntent(baseQuery) }));
+        }
+      } catch (error) {
+        failures.push(`targeted-refill ${importanceType} ${baseQuery}: ${error.message}`);
+      }
+    }
+  }
+  if (filtered.length) {
+    failures.push(`targeted-refill pre-gate filtered ${filtered.length} result(s): ${distributionText(countBy(filtered, "reason"))}`);
+  }
+  return { items, failures };
+}
+
+async function refillPoolImportanceGaps(items, failures) {
+  let current = items;
+  for (let cycle = 1; cycle <= 3; cycle += 1) {
+    const poolGaps = importanceCoverageGaps(selectMonitorPoolItems(current), "pool");
+    const supplyGaps = coreSupplyGaps(current);
+    const refillRequests = refillRequestsForPoolState(poolGaps, supplyGaps);
+    if (!refillRequests.length) break;
+    const refill = await collectTargetedImportanceRefill(refillRequests, current);
+    failures.push(...refill.failures);
+    const gapText = [
+      coverageGapText(poolGaps),
+      supplyGaps.gaps.length ? supplyGaps.gaps.join("; ") : "",
+    ].filter((part) => part && part !== "none").join("; ") || "none";
+    if (!refill.items.length) {
+      failures.push(`targeted pool/core refill cycle ${cycle} returned 0 usable result(s) for ${gapText}`);
+      break;
+    }
+    const normalizedRefill = normalize(refill.items);
+    const enrichedRefill = dryRun
+      ? normalizedRefill
+      : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedRefill)));
+    const seen = new Set(current.map(poolKeyFor));
+    const added = [];
+    for (const item of enrichedRefill) {
+      const key = poolKeyFor(item);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      added.push(item);
+    }
+    current = prioritizeAfterFetch([...current, ...added]);
+    failures.push(`targeted pool/core refill cycle ${cycle} added ${added.length} item(s) for ${gapText}`);
+    if (!added.length) break;
+  }
+  return current;
 }
 
 function normalize(items) {
@@ -4235,9 +4408,11 @@ async function main() {
     coverageGaps = importanceCoverageGaps(normalizedItems);
   }
   const failures = [...aihot.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures, ...rss.failures];
-  const items = dryRun
+  let items = dryRun
     ? normalizedItems
     : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedItems)));
+  items = await refillPoolImportanceGaps(items, failures);
+  coverageGaps = importanceCoverageGaps(items);
 
   if (!dryRun) {
     makeRawFiles(items, failures, {

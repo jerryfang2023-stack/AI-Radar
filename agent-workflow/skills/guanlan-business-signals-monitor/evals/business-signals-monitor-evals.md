@@ -73,6 +73,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when the 10:50 supervision checkpoint records merged Business Signals PR state, GitHub Pages state, same-date Business data, Top10 count, and local sync cleanliness / fast-forward status.
     - Fail when publication is called complete without checking both PR / Pages state and same-date frontstage data.
 
+18. `provider_outage_pool_refill`
+    - Pass when search-provider gateway/auth/domain failures are treated as provider unavailability and the monitor continues through source-backed fallback discovery instead of lowering coverage gates.
+    - Pass when post-fetch Pool importance gaps trigger targeted refill for the missing importance types before Card generation.
+    - Fail when an Exa `site:` domain restriction, Tavily 401, or Anysearch gateway outage can leave `importance_coverage_gaps_must_be_none` / `pool_importance_coverage_gaps_must_be_none` failing without a targeted refill attempt.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.
