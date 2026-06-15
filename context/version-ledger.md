@@ -24,6 +24,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Release date | 2026-06-15 |
 | Last modified at | 2026-06-15T16:05:34+08:00 |
 | Product version | V3.3 |
+| Operations backend version | OPS-V1.0.0 |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
 | Git tag | not tagged |
 | Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
@@ -66,11 +67,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is for traceability only and is not current execution truth.
 
-## Current Backend Column Versions
+## Current Backend Versions
 
-| Column | Version | Automation status | Daily source | Outputs |
+| Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
-| Topic Center / 选题中心 | `V2.2.1-title-polish` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
+| Operations Backend / 运营大后台 | `OPS-V1.0.0` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Operations console shell, navigation, module entry contracts, and backend-facing version ledger | HTML meta `wavesight-ops-console-version`, visible sidebar version, version ledger |
+| Topic Center / 选题中心 module | `V2.2.1-title-polish` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
 
 ## Current Sources Of Truth
 
@@ -118,6 +120,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `ops-v1.0.0-freeze-unified-backend-version-20260615` | Dashboard / Operations Backend | 2026-06-15 | 2026-06-15T17:40:00+08:00 | OPS-V1.0.0 | module versions being treated as the whole backend version; hidden or inconsistent operations-console version metadata; backend shell changes without updating the version ledger | `node agent-workflow/tools/frontstage-regression-gate.mjs` + HTML version check + GitHub Pages deploy |
 | `topic-center-v2.2.1-freeze-daily-title-polish-20260615` | Dashboard / Topic Center | 2026-06-15 | 2026-06-15T17:25:00+08:00 | V2.2.1-title-polish | fixed template titles reused across dates; awkward generated connectors such as `背后` / `撞上`; duplicated funding wording; Hermes topic handoff missing raw material references; manual-only daily Topic Center refresh | `node --check agent-workflow/tools/build-topic-center-data.mjs` + Topic Center duplicate-title scan + `node agent-workflow/tools/frontstage-regression-gate.mjs` + GitHub Pages deploy |
 | `V3.3.6.3-freeze-business-source-artifact-aggregation-20260615` | Business Signals / Intelligence Map | 2026-06-15 | 2026-06-15T16:05:34+08:00 | V3.3.6.3-business-source-artifact-aggregation | Business Signals source artifacts storing only prematurely normalized / compressed items; one source lane failure directly stopping all source capture; public Core Pool candidates with untranslated titles or garbled visible text entering frontstage JSON; artifact aggregation bypassing Raw / Pool / Card / source-first gates | source-only artifact workflow success + unified Business Signals PR workflow success + frontstage Top10 gate + GitHub Pages deploy |
 | `V3.3.6.2-freeze-hermes-staged-handoff-20260614` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-14 | 2026-06-14T20:10:00+08:00 | V3.3.6.2-hermes-staged-handoff | 09:55 starting a new routine dispatch; Community or First-Line being re-dispatched at 09:45 after their 09:30 handoff window; Business being judged as failed at 09:30 while 09:27 health dispatch may still be queued or running; second routine morning recovery pass returning after 10:55 | three-lane handoff syntax + staged dry-run checks + no second recovery cron |
@@ -141,6 +144,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| OPS-V1.0.0 | 2026-06-15T17:40:00+08:00 | Defines the unified Operations Backend version for `operations-console.html`. The backend shell now has one visible and machine-readable version, while modules such as Topic Center keep separate module versions. | current operations backend |
 | V2.2.1-title-polish | 2026-06-15T17:25:00+08:00 | Defines the current Topic Center column version. Daily topic generation runs inside the Business Signals daily PR chain, writes all Topic Center and Hermes files, keeps raw material references, and uses polished boss-facing titles without fixed cross-date templates or awkward connector wording. | current backend column |
 | V3.3.6.3-business-source-artifact-aggregation | 2026-06-15T16:05:34+08:00 | Makes Business Signals source artifact aggregation the default production path, preserving per-source discovered items before global normalization; keeps failed source lanes isolated behind unified quality gates; filters untranslated / garbled Core Pool public candidates; validated with source-only artifact workflow, official Business Signals PR workflow, auto-merge, and GitHub Pages deploy on 2026-06-15. | current |
 | V3.3.6.2-hermes-staged-handoff | 2026-06-14T20:10:00+08:00 | Implements staged Hermes handoff behavior: 09:30 can dispatch Community publish and First-Line RSS while Business waits; 09:45 can dispatch Business and only rechecks the other lanes; 09:55 is final review only and cannot start a new routine dispatch. Removes the second routine morning recovery pass after 10:55. | upgraded |
