@@ -59,6 +59,8 @@ if (args.has("help") || args.has("h")) {
       "  --rss-source-limit=0",
       "  --disable-tavily=true",
       "  --source-only=aihot|keyword|gdelt|rss",
+      "  --use-source-artifacts=true",
+      "  --source-artifact-dir=agent-workflow/reports/source-runs/YYYY-MM-DD",
       "  --dry-run=true",
       "",
     ].join("\n")
@@ -80,10 +82,12 @@ const historicalDedupeEnabled = args.get("historical-dedupe") !== "false";
 const rawDedupeBuffer = Number(args.get("raw-dedupe-buffer") || 40);
 const dryRun = args.get("dry-run") === "true";
 const sourceOnlyMode = String(args.get("source-only") || "").trim().toLowerCase();
+const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
 const contentRoot = path.join(root, "01-SiteV2", "content");
 const reportsDir = path.join(root, "agent-workflow", "reports");
+const sourceArtifactDir = path.resolve(root, args.get("source-artifact-dir") || path.join(reportsDir, "source-runs", date));
 const rawDir = path.join(contentRoot, "01-raw");
 const originalDir = path.join(rawDir, "originals", date);
 const poolDir = path.join(contentRoot, "02-pool");
@@ -3576,21 +3580,10 @@ const sourceOnlyCollectors = {
   },
 };
 
-function sourceRunSummaryItems(items) {
+function sourceRunArtifactItems(items, sourceId) {
   return items.map((item) => ({
-    acquisition_channel: item.acquisition_channel || "",
-    title: item.title || "",
-    url: item.url || "",
-    source: item.source || "",
-    source_type: item.source_type || "",
-    source_level: item.source_level || "",
-    published_at: item.published_at || "",
-    category: item.category || "",
-    theme: item.theme || "",
-    keyword_group: item.keyword_group || "",
-    search_path: item.search_path || "",
-    search_intent: item.search_intent || "",
-    score: item.score ?? null,
+    ...item,
+    source_artifact_id: sourceId,
   }));
 }
 
@@ -3613,7 +3606,7 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     source_level_distribution: countBy(normalizedItems, "source_level"),
     theme_distribution: countBy(normalizedItems, "theme"),
     keyword_group_distribution: countBy(normalizedItems, "keyword_group"),
-    items: sourceRunSummaryItems(normalizedItems),
+    items: sourceRunArtifactItems(normalizedItems, sourceId),
   };
 
   const report = [
@@ -3655,6 +3648,61 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
   writeFile(jsonPath, `${JSON.stringify(payload, null, 2)}\n`);
   writeFile(reportPath, report);
   return [rel(jsonPath), rel(reportPath)];
+}
+
+function loadSourceArtifactItems() {
+  if (!fs.existsSync(sourceArtifactDir)) {
+    throw new Error(`Source artifact dir does not exist: ${sourceArtifactDir}`);
+  }
+  const files = fs.readdirSync(sourceArtifactDir)
+    .filter((file) => /-raw-source-candidates\.json$/u.test(file))
+    .map((file) => path.join(sourceArtifactDir, file))
+    .sort();
+  if (!files.length) {
+    throw new Error(`No source raw candidate artifacts found in ${sourceArtifactDir}`);
+  }
+
+  const items = [];
+  const failures = [];
+  const sourceRuns = [];
+  for (const file of files) {
+    const payload = readJson(file, null);
+    if (!payload || typeof payload !== "object") {
+      failures.push(`source-artifact ${rel(file)}: invalid JSON`);
+      continue;
+    }
+    if (payload.date && payload.date !== date) {
+      failures.push(`source-artifact ${rel(file)}: date ${payload.date} does not match run date ${date}`);
+      continue;
+    }
+    const sourceId = payload.source_id || path.basename(file).replace(/-raw-source-candidates\.json$/u, "");
+    const sourceItems = Array.isArray(payload.items) ? payload.items : [];
+    sourceRuns.push({
+      source_id: sourceId,
+      source_label: payload.source_label || sourceId,
+      raw_candidate_count: sourceItems.length,
+      artifact_path: rel(file),
+      status: payload.status || "unknown",
+    });
+    for (const item of sourceItems) {
+      items.push({
+        ...item,
+        source_artifact_id: sourceId,
+        source_artifact_label: payload.source_label || sourceId,
+        source_artifact_path: rel(file),
+      });
+    }
+    for (const failure of Array.isArray(payload.failures) ? payload.failures : []) {
+      failures.push(`source-artifact ${sourceId}: ${failure}`);
+    }
+  }
+
+  return {
+    items,
+    failures,
+    files: files.map(rel),
+    sourceRuns,
+  };
 }
 
 async function runSourceOnly() {
@@ -4075,6 +4123,8 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "aihot_daily_pool_policy: full_daily_selected_to_pool_index",
     `aihot_rejected_by_raw_entry_rules: ${runMeta.aihot_rejected_count ?? "unknown"}`,
     `external_search_activated: ${runMeta.search_activated ? "true" : "false"}`,
+    `source_artifacts_used: ${runMeta.source_artifacts_used ? "true" : "false"}`,
+    `source_artifact_files: ${Array.isArray(runMeta.source_artifact_files) ? runMeta.source_artifact_files.join(", ") : ""}`,
     `historical_dedupe_enabled: ${runMeta.historical_dedupe_enabled ? "true" : "false"}`,
     `historical_raw_records_checked: ${runMeta.historical_raw_records_checked ?? 0}`,
     `historical_duplicates_removed_before_fetch: ${runMeta.historical_duplicates_removed_before_fetch ?? 0}`,
@@ -4544,8 +4594,24 @@ function makeRawFiles(items, failures, runMeta = {}) {
 }
 
 async function main() {
-  const aihot = await collectAIHot();
-  const primaryItems = [...aihot.items];
+  let sourceArtifacts = { items: [], failures: [], files: [], sourceRuns: [] };
+  const aihot = useSourceArtifacts
+    ? {
+        items: [],
+        failures: [],
+        mode: "source-artifacts",
+        since: "",
+        discovered_count: 0,
+        discovered_count_daily: 0,
+        discovered_count_all: 0,
+        included_count_daily: 0,
+        rejected_count: 0,
+      }
+    : await collectAIHot();
+  if (useSourceArtifacts) {
+    sourceArtifacts = loadSourceArtifactItems();
+  }
+  const primaryItems = useSourceArtifacts ? [...sourceArtifacts.items] : [...aihot.items];
   let keywordSearch = { items: [], failures: [] };
   let hn = { items: [], failures: [] };
   let gdelt = { items: [], failures: [] };
@@ -4559,7 +4625,7 @@ async function main() {
     || gdeltQueryLimit > 0
     || normalizedItems.length < rawMinTarget
     || coverageGaps.length;
-  if (shouldRunExternalSearch) {
+  if (!useSourceArtifacts && shouldRunExternalSearch) {
     searchActivated = true;
     [keywordSearch, gdelt, rss] = await Promise.all([
       collectKeywordSearch(),
@@ -4569,7 +4635,7 @@ async function main() {
     normalizedItems = normalize([...primaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items, ...rss.items]);
     coverageGaps = importanceCoverageGaps(normalizedItems);
   }
-  const failures = [...aihot.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures, ...rss.failures];
+  const failures = [...sourceArtifacts.failures, ...aihot.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures, ...rss.failures];
   let items = dryRun
     ? normalizedItems
     : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedItems)));
@@ -4591,6 +4657,9 @@ async function main() {
       historical_raw_records_checked: historicalDedupeRecordsChecked,
       historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
       historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
+      source_artifacts_used: useSourceArtifacts,
+      source_artifact_files: sourceArtifacts.files,
+      source_artifact_runs: sourceArtifacts.sourceRuns,
     });
   }
 
@@ -4612,12 +4681,18 @@ async function main() {
         aihot_all_discovered_count: aihot.discovered_count_all,
         aihot_daily_included_count: aihot.included_count_daily,
         aihot_rejected_by_raw_entry_rules: aihot.rejected_count,
-        external_search_activated: searchActivated,        historical_dedupe_enabled: historicalDedupeEnabled,
+        external_search_activated: searchActivated,
+        source_artifacts_used: useSourceArtifacts,
+        source_artifact_dir: useSourceArtifacts ? rel(sourceArtifactDir) : "",
+        source_artifact_files: sourceArtifacts.files,
+        source_artifact_runs: sourceArtifacts.sourceRuns,
+        historical_dedupe_enabled: historicalDedupeEnabled,
         historical_raw_records_checked: historicalDedupeRecordsChecked,
         historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
         historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
         importance_coverage_gaps: coverageGaps,
-        aihot_count: items.filter((item) => item.acquisition_channel === "aihot").length,        keyword_search_count: items.filter((item) => item.acquisition_channel === "keyword-search").length,
+        aihot_count: items.filter((item) => item.acquisition_channel === "aihot").length,
+        keyword_search_count: items.filter((item) => item.acquisition_channel === "keyword-search").length,
         rss_feed_count: items.filter((item) => item.acquisition_channel === "rss-feed").length,
         rss_source_count: rss.rss_source_count,
         keyword_search_path_distribution: countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_path"),
@@ -4632,7 +4707,8 @@ async function main() {
             : [
                 rel(path.join(rawDir, `${date}-raw-candidates.md`)),
                 rel(originalDir),
-                rel(path.join(poolDir, `${date}-pool-candidates.md`)),                rel(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`)),
+                rel(path.join(poolDir, `${date}-pool-candidates.md`)),
+                rel(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`)),
               ],
       },
       null,

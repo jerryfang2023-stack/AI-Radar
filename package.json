@@ -26,6 +26,7 @@
     "business:source:keyword": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=keyword",
     "business:source:gdelt": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=gdelt",
     "business:source:rss": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=rss",
+    "business:source:aggregate": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --use-source-artifacts=true",
     "hermes:morning-recovery": "node agent-workflow/tools/run-hermes-morning-recovery.mjs",
     "hermes:business-early-handoff": "node agent-workflow/tools/run-hermes-business-signals-early-handoff.mjs",
     "hermes:early-handoff": "node agent-workflow/tools/run-hermes-three-lane-early-handoff.mjs",

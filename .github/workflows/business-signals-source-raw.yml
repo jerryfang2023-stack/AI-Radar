@@ -18,6 +18,11 @@ on:
           - keyword
           - gdelt
           - rss
+      aggregate_dry_run:
+        description: "After source collection, dry-run the unified aggregator from source artifacts."
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: read
@@ -100,6 +105,18 @@ jobs:
           done
 
           exit "$failed"
+
+      - name: Dry-run unified source artifact aggregator
+        if: ${{ github.event.inputs.aggregate_dry_run != 'false' }}
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-guanlan-daily-monitor.mjs \
+            --date="${RUN_DATE}" \
+            --use-source-artifacts=true \
+            --source-artifact-dir="agent-workflow/reports/source-runs/${RUN_DATE}" \
+            --dry-run=true \
+            2>&1 | tee "agent-workflow/reports/source-runs/${RUN_DATE}/aggregate-dry-run.json"
 
       - name: Upload source raw artifacts
         if: always()

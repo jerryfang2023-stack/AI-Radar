@@ -22,6 +22,8 @@ Source-only diagnostic workflow: `.github/workflows/business-signals-source-raw.
 
 The source-only workflow runs `--source-only=aihot|keyword|gdelt|rss` and uploads source Raw artifacts under `agent-workflow/reports/source-runs/<date>/`. It is a diagnostic and source-repair aid only: it does not generate formal Raw originals, Pool, Cards, PRs, site data, Obsidian sync, or deployment. Use it to isolate a broken source lane before rerunning the unified Business Signals chain.
 
+Second-stage source aggregation is available behind `--use-source-artifacts=true` / `--source-artifact-dir=<dir>`. This reads source-only JSON artifacts into the existing monitor normalize / enrich / refill / Raw / Pool path. The scheduled 08:57 production workflow should not switch to this mode until source-only artifact runs have been observed stable.
+
 Current monitor parameter baseline:
 
 - diagnostic score reference: `85` only as report context; hard gates and final QC decide release;
