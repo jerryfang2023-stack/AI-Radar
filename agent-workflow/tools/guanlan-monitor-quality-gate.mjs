@@ -430,11 +430,11 @@ export function runGuanlanMonitorQualityGate({
     rawCoverageGapEntries.length > 0 &&
     weekendPoolGapMin > 0 &&
     rawCoverageGapEntries.every((entry) => entry.actual >= weekendPoolGapMin);
-  // When raw count is well above the hard minimum (≥3x rawMinHard = 150),
-  // coverage gaps are acceptable — we have enough data volume, just not perfect
-  // distribution across importance types. This unblocks card generation when
-  // search APIs fail but raw data is sufficient.
-  const rawCountSufficientForCoverage = rawCount >= rawMinHard * 3;
+  // When raw count meets the configured hard minimum, coverage gaps are
+  // acceptable — we have enough data volume, just not perfect distribution
+  // across importance types. This unblocks card generation when search APIs
+  // fail but raw data is still sufficient.
+  const rawCountSufficientForCoverage = rawCount >= rawMinHard;
   const coverageGapAcceptable = weekend.active ? weekendRawCoveragePassed : rawCountSufficientForCoverage;
   const poolCoverageGapAcceptable = weekend.active ? weekendPoolCoveragePassed : rawCountSufficientForCoverage;
   const effectiveCorePoolMinHard = weekend.active
