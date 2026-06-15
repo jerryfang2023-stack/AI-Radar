@@ -66,6 +66,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is for traceability only and is not current execution truth.
 
+## Current Backend Column Versions
+
+| Column | Version | Automation status | Daily source | Outputs |
+|---|---|---|---|---|
+| Topic Center / 选题中心 | `V2.2.1-title-polish` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
+
 ## Current Sources Of Truth
 
 | Type | File |
@@ -112,6 +118,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `topic-center-v2.2.1-freeze-daily-title-polish-20260615` | Dashboard / Topic Center | 2026-06-15 | 2026-06-15T17:25:00+08:00 | V2.2.1-title-polish | fixed template titles reused across dates; awkward generated connectors such as `背后` / `撞上`; duplicated funding wording; Hermes topic handoff missing raw material references; manual-only daily Topic Center refresh | `node --check agent-workflow/tools/build-topic-center-data.mjs` + Topic Center duplicate-title scan + `node agent-workflow/tools/frontstage-regression-gate.mjs` + GitHub Pages deploy |
 | `V3.3.6.3-freeze-business-source-artifact-aggregation-20260615` | Business Signals / Intelligence Map | 2026-06-15 | 2026-06-15T16:05:34+08:00 | V3.3.6.3-business-source-artifact-aggregation | Business Signals source artifacts storing only prematurely normalized / compressed items; one source lane failure directly stopping all source capture; public Core Pool candidates with untranslated titles or garbled visible text entering frontstage JSON; artifact aggregation bypassing Raw / Pool / Card / source-first gates | source-only artifact workflow success + unified Business Signals PR workflow success + frontstage Top10 gate + GitHub Pages deploy |
 | `V3.3.6.2-freeze-hermes-staged-handoff-20260614` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-14 | 2026-06-14T20:10:00+08:00 | V3.3.6.2-hermes-staged-handoff | 09:55 starting a new routine dispatch; Community or First-Line being re-dispatched at 09:45 after their 09:30 handoff window; Business being judged as failed at 09:30 while 09:27 health dispatch may still be queued or running; second routine morning recovery pass returning after 10:55 | three-lane handoff syntax + staged dry-run checks + no second recovery cron |
 | `V3.3.6.1-freeze-automation-timeline-skill-alignment-20260614` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence | 2026-06-14 | 2026-06-14T19:45:00+08:00 | V3.3.6.1-automation-timeline-skill-alignment | Business Signals reverting to blind 09:07 / 09:37 production windows; First-Line Viewpoints reverting to 09:47 / 09:55 RSS fallback language; Community Intelligence docs saying Codex automation is paused while the local automation is active at 09:00; Hermes treating GitHub Actions as able to run the logged-in community collector; lane failures blocking unrelated lanes | workflow cron syntax + `npm run supervise:daily -- --date=<DATE>` + monitor skill timing review |
@@ -134,6 +141,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| V2.2.1-title-polish | 2026-06-15T17:25:00+08:00 | Defines the current Topic Center column version. Daily topic generation runs inside the Business Signals daily PR chain, writes all Topic Center and Hermes files, keeps raw material references, and uses polished boss-facing titles without fixed cross-date templates or awkward connector wording. | current backend column |
 | V3.3.6.3-business-source-artifact-aggregation | 2026-06-15T16:05:34+08:00 | Makes Business Signals source artifact aggregation the default production path, preserving per-source discovered items before global normalization; keeps failed source lanes isolated behind unified quality gates; filters untranslated / garbled Core Pool public candidates; validated with source-only artifact workflow, official Business Signals PR workflow, auto-merge, and GitHub Pages deploy on 2026-06-15. | current |
 | V3.3.6.2-hermes-staged-handoff | 2026-06-14T20:10:00+08:00 | Implements staged Hermes handoff behavior: 09:30 can dispatch Community publish and First-Line RSS while Business waits; 09:45 can dispatch Business and only rechecks the other lanes; 09:55 is final review only and cannot start a new routine dispatch. Removes the second routine morning recovery pass after 10:55. | upgraded |
 | V3.3.6.1-automation-timeline-skill-alignment | 2026-06-14T19:45:00+08:00 | Aligns Business Signals, First-Line Viewpoints, and Community Intelligence timing across workflow cron, local Windows tasks, Codex automations, monitor skills, and Hermes instructions. Business runs 08:57 plus 09:27 conditional health dispatch; First-Line runs 08:30 local RSS, 09:17 GitHub fallback, and 16:10 local skill publish; Community runs 08:30 Windows collection, 09:00 Codex local fallback / repair window, 08:45 / 10:45 GitHub publish, and 09:30 / 09:45 / 09:55 Hermes publish supervision. | upgraded |
